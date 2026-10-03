@@ -1,0 +1,19 @@
+legal-rag-verifier — attribution notice
+
+The code of legal-rag-verifier is licensed under AGPL-3.0-only (see LICENSE).
+
+Test batteries and fixtures in this repository quote short excerpts of United
+Kingdom legislation, each with its coordinate and source URL.
+
+United Kingdom legislation
+  Source:      legislation.gov.uk (The National Archives)
+  Licence:     Open Government Licence v3.0
+               https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+  Attribution: Contains public sector information licensed under the Open
+               Government Licence v3.0. Source: legislation.gov.uk,
+               © Crown and database right.
+  Note:        Material on legislation.gov.uk derived from EUR-Lex is reused
+               under Commission Decision 2011/833/EU.
+
+The prompt batteries under batteries/router/ are copied unchanged from
+legal-rag-router (AGPL-3.0-only); see batteries/router/SOURCE.json.

@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "sources": [
+    {
+      "id": "legislation.gov.uk",
+      "name": "legislation.gov.uk (The National Archives)",
+      "jurisdiction": "uk",
+      "url": "https://www.legislation.gov.uk/",
+      "licence": "OGL-3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "terms_url": "https://www.legislation.gov.uk/fair-use-policy",
+      "date_checked": "2026-09-27",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: legislation.gov.uk, © Crown and database right.",
+      "notes": "OGL v3.0 except where otherwise stated. Material derived from EUR-Lex is reused under Commission Decision 2011/833/EU. Fair use: at most 1,500 requests per 5 minutes; robots.txt Crawl-delay 5; identified User-Agent with contact details required. Copied 2026-10-03 from legal-rag-router (data/uk, normalised provision records, schema_version 2, router commit 65fb6e4c612353f2a598168b1589d7bb2d81d59e). Read-only here; never committed or published.",
+      "record_paths": [
+        "uk"
+      ],
+      "derived_paths": [],
+      "document_count": 134219
+    }
+  ]
+}

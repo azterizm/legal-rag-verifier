@@ -1,0 +1,44 @@
+{
+  "battery_sha256": "2ac9f4ea445eed140bef1d6daa691c37d9ebbeca6a526cc6a088b45de406bf51",
+  "contents": {
+    "batteries": {
+      "batteries/concept/uk.jsonl": "2954340e2680b32a7027ec4e0a2ed22d411cef030104ef2252cfd3d775767d32"
+    },
+    "index": {
+      "files": {
+        "acronyms.off": "e9be26feda8e528a786a02ff483ddd2c8a2c65f490d0ce049049eb51374de42c",
+        "acronyms.tbl": "d97c30890426932fcfa6ce7b32891acc445eeaee3c18a4b72c2e2230b1f049d5",
+        "aliases.json": "a9b60023109a6e693fb73f617a2aa26bd2e9c25dd700252e564d72b320b67ecb",
+        "coordinates.off": "b83cf05fdd2a19a988a9b2cb2f0873fcf92e6ad26a013a9a2015369d1ad23aa2",
+        "coordinates.tbl": "07776a6c1fcb3ab996843ec9310f6422c4392c16decbd22b99309e664c0a2737",
+        "coverage_instruments.off": "f45ef6c6cb38cb6a254fd212a4b0a3bab77393bbec56dfbc3bf79f45e5413a3d",
+        "coverage_instruments.tbl": "686f3c605b5f5de06af8faa1fb4d0f6798f08843efa9d563440fc3eb1e98f478",
+        "coverage_numbers.off": "3089c2b27a1baf41f98712412ec93d7a3e060f6018a30ea0c83972d35a320189",
+        "coverage_numbers.tbl": "c83fbeb6600156adefc610e8e945cdde5481aca3614062334a5557cb6bf23688",
+        "coverage_titles.off": "8f26f61c7bcea1b17cb6b29ca3912a08578f1e52ec311ba5996cd1b83be588ae",
+        "coverage_titles.tbl": "c50a5a8920f2dbb52d44d02d17b3fc95c14042c98592ef2f140033411a74120a",
+        "index-manifest.json": "c88223d8ce56c22df650729a3d012e8a7698bf384c26408eea0ddd42c5d63c1a",
+        "instruments.off": "42dfb2aea844c3359b3d8b82cf117b986c5c62f62aec4f1865cec1743d18b480",
+        "instruments.tbl": "b32495d72a3bd1d63f4278ca1df01cc83b741f0a7a74a38331dc233bbbd0ba1d",
+        "numbers.off": "3d6ba6a60beef3b4a524d3fb3f7ef68bf040dec6f94133f189519ab463b76ecd",
+        "numbers.tbl": "f096a301a810e5b34f02f3f733a95a9bf760633b5e8da64f3793bcdaaeca68b9",
+        "titles.off": "776e45aa017924907897ad2839cb5a7b7681317201ab9b5f1fd8c1961b557ce6",
+        "titles.tbl": "2a3079901e1f8c7f2327de818798500a08cce16879883e0e7aa9ae225792e5c2",
+        "typo.off": "1700e722c0dc245615d8e9e420681baf079ef9686c20a34ccfbb100ca71a7c9f",
+        "typo.tbl": "4467580e5926c4f9e34cc58040b66aca21aaaa909cc58af5acdddce96f1421ba",
+        "words.off": "7d2b191e7db2f07ec0af4fc5cd50a99e33a6abe6854f9de1e2446dce03f5e38a",
+        "words.tbl": "c40c90ab3d34039c307d706345c5f58a35eb4920af7bfed4f0a7e1b8236b9abd",
+        "wordsets.off": "0c401f6816125e12166de79d8807722809d8574fcb9dd4824cb23af0659b1a75",
+        "wordsets.tbl": "df0943df57b30d9aadef4bbadf509487a7a95970ca180b3b66698ad524bb10ce"
+      },
+      "format_version": 1,
+      "snapshot": "2026-09-28"
+    },
+    "package_version": "0.1.0.dev0"
+  },
+  "git_commit": "5380471e23ab992b57e1466670df90713eb90bbb",
+  "kind": "concept",
+  "seal_format": 1,
+  "seal_sha256": "d34ce21de93b6b6ad54ee353038127981c151757ffc68dc19b116e6c431e1be4",
+  "sealed_at": "2026-09-29T05:00:57+00:00"
+}

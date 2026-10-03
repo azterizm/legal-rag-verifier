@@ -1,0 +1,32 @@
+{
+  "source_repository": "legal-rag-router",
+  "source_commit": "65fb6e4c612353f2a598168b1589d7bb2d81d59e",
+  "copied": "2026-10-03",
+  "note": "Copied unchanged. Each file's SHA-256 matches the router seal that lists it.",
+  "seals": {
+    "uk/*.jsonl": {
+      "tag": "battery-seal-2026-09-29-v2",
+      "file": "seals/battery-2026-09-29-v2.json"
+    },
+    "concept/uk.jsonl": {
+      "tag": "concept-seal-2026-09-29",
+      "file": "seals/concept-2026-09-29.json"
+    }
+  },
+  "files_sha256": {
+    "concept/uk.jsonl": "2954340e2680b32a7027ec4e0a2ed22d411cef030104ef2252cfd3d775767d32",
+    "uk/ambiguous.jsonl": "2509bc18c6b0a5c44c7d696626e2714e41c093764e03e365c8601e0d0890eda0",
+    "uk/catalogue.jsonl": "7682dcb962c809e16263e5b7d64e29d584633f8f843f5f77f0f02590f1408a70",
+    "uk/collision.jsonl": "6a716afdf0d1c075ebf8a09258e5ddf218656a4e805744176bcda645f97a35ec",
+    "uk/false_abstention.jsonl": "25bf7033ae66f05fa33c3bd1d94dbee48973d16bcf320b1e7746df3c5803b04a",
+    "uk/identifier.jsonl": "37c6cad56babf24eb0b906294c55196b03d0259f3b249536021af3eabc057925",
+    "uk/informal.jsonl": "476b3d540ede78009bbb0ab9ca506de77fb3fd38f43b124c9222c8fd6fdc6168",
+    "uk/invented.jsonl": "68efb53c4e0e68fd3a861db5514c134dff322c96aa911cedf9a1fd77bfcbb616",
+    "uk/misroute.jsonl": "272916962de510e80eaa5a98a66f9a7b6457c68615ff741566b8c887c90675d7",
+    "uk/typo.jsonl": "a85dd0d60a4cb33804c995b6db9b4752cf58d8f95faa45f24cb6ed11c9b0daac"
+  },
+  "seal_files_sha256": {
+    "battery-2026-09-29-v2.json": "d8df67906e6e04faf729dfc4e68c5f878c4501ee1d9443d143234f3b402c17cb",
+    "concept-2026-09-29.json": "b1c2de860bbc28d4380e8c78d003e1f756551ed953bc5e75ca39f3b56437e308"
+  }
+}

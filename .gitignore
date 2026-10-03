@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Externally scraped source data: read-only, never published
+uk_scrap_data/
+spanish_scrap_data/
+
+# Corpus data copied from legal-rag-router: never committed (except the licence manifest)
+data/*
+!data/MANIFEST.json
+
+# Raw run output (summaries are committed under docs/)
+results/raw/
