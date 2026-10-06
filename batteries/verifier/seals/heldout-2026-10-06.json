@@ -1,0 +1,20 @@
+{
+  "id": "heldout-2026-10-06",
+  "sealed_at": "2026-10-06T07:18:45+00:00",
+  "verifier_version": "0.1.0.dev0",
+  "verifier_commit": "138943b800e05fe537c646f69db548b832273937",
+  "battery": {
+    "file": "heldout_draft.jsonl",
+    "sha256": "1df51b991128c317225d58e340f89532fd9cec149adbfb8bec34d5a6a9bb05b9"
+  },
+  "rows_source": {
+    "file": "heldout_rows.toml",
+    "sha256": "c1459f6176b13c82a90c59eff8f171fe9ee3ba2c24711a438a26c25bc22631d6"
+  },
+  "anchors": {
+    "file": "anchors.toml",
+    "sha256": "609fd37108d34c17836d7f508263157b03dc12f4421f283a497aa6022936c634"
+  },
+  "enrichment_layer": "gemini-3.8-flash-high@edb8ccbbc4fc4862",
+  "rows": 346
+}
