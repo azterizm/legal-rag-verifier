@@ -42,3 +42,7 @@ results/*.err
 
 # Third-party answers (anonymised) from legal-rag-audit live runs: local only, never committed
 external/
+
+# Grid blind review: the sheet quotes full statute text; the key would unblind it
+results/grid/review_sheet.md
+results/grid/review_key.json

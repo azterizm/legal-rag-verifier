@@ -4,6 +4,7 @@
   uv run --with modal modal run scripts/modal_m4.py::download   # CPU: weights into the volume
   uv run --with modal modal run scripts/modal_m4.py::main       # L4, ≤ 30 min: the spike
   uv run --with modal modal run scripts/modal_m4.py::latency    # L4, ≤ 30 min: round-trip profile
+  uv run --with modal modal run scripts/modal_m4.py::grid       # L4: grid cells 4B and 4D
 
 Writes results/m4-sglang.json / results/m4-profile.json. Only public statute text and the demo
 queries leave this machine.
@@ -127,6 +128,54 @@ def profile(revision: str) -> dict[str, Any]:
 @app.local_entrypoint()
 def check() -> None:
     print(json.dumps(probe.remote()))
+
+
+@app.cls(gpu="L4", timeout=3600, volumes={"/hf": weights}, scaledown_window=600)
+class Grid:
+    """One SGLang server for all of 4B and 4D; called a chunk at a time so the run can resume."""
+
+    revision: str = modal.parameter()
+
+    @modal.enter()
+    def start(self) -> None:
+        from grid_qwen import QwenCells  # noqa: PLC0415
+
+        self._server = sglang_server(self.revision)
+        url = self._server.__enter__()
+        self.cells = QwenCells(url, MODEL, self.revision)
+
+    @modal.exit()
+    def stop(self) -> None:
+        self._server.__exit__(None, None, None)
+
+    @modal.method()
+    def run(self, cell: str, items: list[tuple[str, str, Any]]) -> list[dict[str, Any]]:
+        generator = f"{MODEL}@{self.revision}"
+        return [
+            {"cell": cell, "id": i, "generator": generator, **self.cells.run(cell, query, premise)}
+            for i, query, premise in items
+        ]
+
+
+@app.local_entrypoint()
+def grid(cells: str = "4B,4D", limit: int = 0, chunk: int = 8) -> None:
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    from grid_gemini import OUT, done_ids  # noqa: PLC0415
+    from grid_prompts import premise, rows  # noqa: PLC0415
+
+    selected = rows()[: limit or None]
+    revision = download.remote()
+    runner = Grid(revision=revision)
+    OUT.mkdir(parents=True, exist_ok=True)
+    for cell in cells.split(","):
+        path = OUT / f"{cell}.jsonl"
+        todo = [r for r in selected if r["id"] not in done_ids(path)]
+        for start in range(0, len(todo), chunk):
+            items = [(r["id"], r["query"], premise(r)) for r in todo[start : start + chunk]]
+            records = runner.run.remote(cell, items)
+            with path.open("a", encoding="utf-8") as f:
+                f.writelines(json.dumps(rec, ensure_ascii=False) + "\n" for rec in records)
+            print(f"{cell}: {start + len(items)}/{len(todo)}", flush=True)
 
 
 @app.local_entrypoint()

@@ -125,6 +125,8 @@ def main() -> None:
     rows = [json.loads(line) for line in args.battery.read_text(encoding="utf-8").splitlines()]
     todo: dict[str, dict[str, Any]] = {}
     for row in rows:
+        if not row.get("premise") and not row.get("premise_spec"):
+            continue  # an empty premise (no gold provision) has nothing to enrich
         premise, _ = premises.build(row, ROOT / "data")
         title = premise.titles[0] if premise.titles else ""
         for key, unit in units(premise).items():

@@ -18,11 +18,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | 2×2 grid (07 §5): harness build, then the paid run (⛔ decisions: prompt set, Gemini endpoint, final-output scoring) |
-| Waiting on you | Grid decisions. Vault 02: where the instrument title for the premise comes from |
+| Waiting on you | Go for the paid grid run (estimate in stop 22). Vault 02: instrument title source |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (22): **Grid decided and built, not run; ⛔ paid run.** Your choices: 103 concept `test` prompts,
+  router `gemini-3.8-flash-high` for 4A/4C, rule A + a blind hand sample of 80 for scoring, bf16 Qwen.
+  `docs/GRID.md` fixes the method before the run. Harness: `scripts/grid_prompts.py`, `grid_cells.py` (full
+  retry, continuation, 4B record; offline tests), `grid_gemini.py` (router, local verifier), `grid_qwen.py` +
+  `modal_m4.py::grid` (one SGLang server, chunked, resumable), `grid_score.py` (rule A, summary, blind sheet,
+  agreement). Waiting on your go for the paid run.
 
 - 2026-10-06 (21): **Retries, detector fixes, latency profile (your go: "retry max 3 times", steps 1–3).**
   - Engine: each point gets at most 3 retries (`max_rollbacks=3`), allow when a same-type repair exists, ban
