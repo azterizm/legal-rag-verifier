@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/2000/36/s14@current",
+ "section": "uk/ukpga/2000/36/s14",
+ "version": "current",
+ "source_sha256": "3ee49d2572c126f8a142b2f98a497a39201b4e4d929d111be837481493a192f9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1(1) does not oblige a public authority to comply with a request for information if the request is vexatious.",
+    "quote": "Section 1(1) does not oblige a public authority to comply with a request for information if the request is vexatious"
+   },
+   {
+    "requirement": "A public authority is not obliged to comply with a subsequent identical or substantially similar request for information from a person where the authority has previously complied with a request for information made by that person, unless a reasonable interval has elapsed between compliance with the previous request and the making of the current request.",
+    "quote": "Where a public authority has previously complied with a request for information which was made by any person, it is not obliged to comply with a subsequent identical or substantially similar request from that person unless a reasonable interval has elapsed between compliance with the previous request and the making of the current request"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 1(1) does not oblige a public authority to comply with a request for information if the request is vexatious.",
+   "quote": "Section 1(1) does not oblige a public authority to comply with a request for information if the request is vexatious"
+  },
+  {
+   "requirement": "A public authority is not obliged to comply with a subsequent identical or substantially similar request for information from a person where the authority has previously complied with a request for information made by that person, unless a reasonable interval has elapsed between compliance with the previous request and the making of the current request.",
+   "quote": "Where a public authority has previously complied with a request for information which was made by any person, it is not obliged to comply with a subsequent identical or substantially similar request from that person unless a reasonable interval has elapsed between compliance with the previous request and the making of the current request"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

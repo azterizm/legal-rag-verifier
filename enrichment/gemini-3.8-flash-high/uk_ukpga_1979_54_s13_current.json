@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1979/54/s13@current",
+ "section": "uk/ukpga/1979/54/s13",
+ "version": "current",
+ "source_sha256": "38f0faada500a9968803e0983c5a20b92e7ed296e4efff0e0af73b3a90f27d0a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where there is a contract for the sale of goods by description, there is an implied term that the goods will correspond with the description.",
+    "quote": "Where there is a contract for the sale of goods by description, there is an implied term that the goods will correspond with the description."
+   },
+   {
+    "requirement": "In relation to England and Wales and Northern Ireland, the term implied into a contract for the sale of goods by description is a condition.",
+    "quote": "As regards England and Wales and Northern Ireland, the term implied by subsection (1) above is a condition."
+   },
+   {
+    "requirement": "Where a sale of goods is by sample as well as by description, the seller does not satisfy the contract merely because the bulk corresponds with the sample if the goods do not also correspond with the description.",
+    "quote": "it is not sufficient that the bulk of the goods corresponds with the sample if the goods do not also correspond with the description."
+   },
+   {
+    "requirement": "A sale of goods is not prevented from being a sale by description solely because the goods were exposed for sale or hire and selected by the buyer.",
+    "quote": "A sale of goods is not prevented from being a sale by description by reason only that, being exposed for sale or hire, they are selected by the buyer."
+   },
+   {
+    "requirement": "Paragraph 4 of Schedule 1 to the Sale of Goods Act 1979 applies in relation to a contract made before 18 May 1973.",
+    "quote": "Paragraph 4 of Schedule 1 below applies in relation to a contract made before 18 May 1973."
+   },
+   {
+    "requirement": "Section 13 of the Sale of Goods Act 1979 does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies.",
+    "quote": "This section does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Contract formation date before which Paragraph 4 of Schedule 1 applies",
+    "value": "18 May 1973",
+    "quote": "contract made before 18 May 1973"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where there is a contract for the sale of goods by description, there is an implied term that the goods will correspond with the description.",
+   "quote": "Where there is a contract for the sale of goods by description, there is an implied term that the goods will correspond with the description."
+  },
+  {
+   "requirement": "In relation to England and Wales and Northern Ireland, the term implied into a contract for the sale of goods by description is a condition.",
+   "quote": "As regards England and Wales and Northern Ireland, the term implied by subsection (1) above is a condition."
+  },
+  {
+   "requirement": "Where a sale of goods is by sample as well as by description, the seller does not satisfy the contract merely because the bulk corresponds with the sample if the goods do not also correspond with the description.",
+   "quote": "it is not sufficient that the bulk of the goods corresponds with the sample if the goods do not also correspond with the description."
+  },
+  {
+   "requirement": "A sale of goods is not prevented from being a sale by description solely because the goods were exposed for sale or hire and selected by the buyer.",
+   "quote": "A sale of goods is not prevented from being a sale by description by reason only that, being exposed for sale or hire, they are selected by the buyer."
+  },
+  {
+   "requirement": "Paragraph 4 of Schedule 1 to the Sale of Goods Act 1979 applies in relation to a contract made before 18 May 1973.",
+   "quote": "Paragraph 4 of Schedule 1 below applies in relation to a contract made before 18 May 1973."
+  },
+  {
+   "requirement": "Section 13 of the Sale of Goods Act 1979 does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies.",
+   "quote": "This section does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Contract formation date before which Paragraph 4 of Schedule 1 applies",
+   "value": "18 May 1973",
+   "quote": "contract made before 18 May 1973"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

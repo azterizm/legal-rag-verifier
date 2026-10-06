@@ -2,7 +2,12 @@ from __future__ import annotations
 
 import pytest
 
-from legal_rag_verifier.citations import find_citations, render_citation, resolve_relative
+from legal_rag_verifier.citations import (
+    coordinate_tail,
+    find_citations,
+    render_citation,
+    resolve_relative,
+)
 from legal_rag_verifier.claims import ClaimKind, extract_claims, instrument_acronym
 from legal_rag_verifier.deontic import Deontic, find_deontics
 from legal_rag_verifier.qualifiers import Qualifier, find_bound_qualifier, sentence_qualifiers
@@ -97,6 +102,9 @@ def test_citation_false_friends() -> None:
 
 
 def test_relative_resolution_and_rendering() -> None:
+    assert coordinate_tail("uk/ukpga/1996/18/s124/1ZA") == "s124/1ZA"
+    assert coordinate_tail("uk/ukpga/Vict/24-25/100/s20") == "s20"
+    assert coordinate_tail("uk/ukpga/1996/18") == ""
     assert resolve_relative("~/1ZA", "s124/1") == "s124/1ZA"
     assert resolve_relative("~/a", "s124/1ZA") == "s124/1ZA/a"
     assert resolve_relative("~/a", "s124") == "s124/a"

@@ -1,0 +1,75 @@
+{
+ "key": "uk/ukpga/1980/43/s127@current",
+ "section": "uk/ukpga/1980/43/s127",
+ "version": "current",
+ "source_sha256": "5c525ccdfb7565c2ef4d1cb3e8807507bc23e0b212ee8a29f8aa51582fb0fc9c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Except where an enactment expressly provides otherwise and subject to subsection (2), a magistrates' court is prohibited from trying an information or hearing a complaint unless that information was laid or complaint was made within six months from when the offence was committed or the matter of complaint arose.",
+    "quote": "a magistrates’ court shall not try an information or hear a complaint unless the information was laid, or the complaint made, within 6 months from the time when the offence was committed, or the matter of complaint arose"
+   },
+   {
+    "requirement": "The general time limit in subsection (1) does not apply in relation to any indictable offence.",
+    "quote": "Nothing in— (a) subsection (1) above; or (b) subject to subsection (4) below, any other enactment (however framed or worded) which, as regards any offence to which it applies, would but for this section impose a time-limit on the power of a magistrates’ court to try an information summarily or impose a limitation on the time for taking summary proceedings, shall apply in relation to any indictable offence."
+   },
+   {
+    "requirement": "Subject to subsection (4), no other enactment, however worded, that would otherwise impose a time limit on a magistrates' court's power to try an information summarily or limit the time for taking summary proceedings applies in relation to any indictable offence.",
+    "quote": "any other enactment (however framed or worded) which, as regards any offence to which it applies, would but for this section impose a time-limit on the power of a magistrates’ court to try an information summarily or impose a limitation on the time for taking summary proceedings, shall apply in relation to any indictable offence"
+   },
+   {
+    "requirement": "The enactments covered by subsection (2)(b) include enactments imposing a time limit that applies only in specified circumstances, such as when proceedings are not instituted by or with the consent of the Director of Public Prosecutions or another specified authority.",
+    "quote": "that paragraph includes enactments which impose a time-limit that applies only in certain circumstances (for example, where the proceedings are not instituted by or with the consent of the Director of Public Prosecutions or some other specified authority)"
+   },
+   {
+    "requirement": "Where an enactment imposes a time limit for taking proceedings on indictment for an indictable offence, no summary proceedings for that indictable offence may be taken after the latest time permitted for taking proceedings on indictment.",
+    "quote": "no summary proceedings for that offence shall be taken after the latest time for taking proceedings on indictment"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum time allowed from the commission of an offence or the arising of a matter of complaint for laying an information or making a complaint in a magistrates' court",
+    "value": "6 months",
+    "quote": "within 6 months from the time when the offence was committed, or the matter of complaint arose"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Except where an enactment expressly provides otherwise and subject to subsection (2), a magistrates' court is prohibited from trying an information or hearing a complaint unless that information was laid or complaint was made within six months from when the offence was committed or the matter of complaint arose.",
+   "quote": "a magistrates’ court shall not try an information or hear a complaint unless the information was laid, or the complaint made, within 6 months from the time when the offence was committed, or the matter of complaint arose"
+  },
+  {
+   "requirement": "The general time limit in subsection (1) does not apply in relation to any indictable offence.",
+   "quote": "Nothing in— (a) subsection (1) above; or (b) subject to subsection (4) below, any other enactment (however framed or worded) which, as regards any offence to which it applies, would but for this section impose a time-limit on the power of a magistrates’ court to try an information summarily or impose a limitation on the time for taking summary proceedings, shall apply in relation to any indictable offence."
+  },
+  {
+   "requirement": "Subject to subsection (4), no other enactment, however worded, that would otherwise impose a time limit on a magistrates' court's power to try an information summarily or limit the time for taking summary proceedings applies in relation to any indictable offence.",
+   "quote": "any other enactment (however framed or worded) which, as regards any offence to which it applies, would but for this section impose a time-limit on the power of a magistrates’ court to try an information summarily or impose a limitation on the time for taking summary proceedings, shall apply in relation to any indictable offence"
+  },
+  {
+   "requirement": "The enactments covered by subsection (2)(b) include enactments imposing a time limit that applies only in specified circumstances, such as when proceedings are not instituted by or with the consent of the Director of Public Prosecutions or another specified authority.",
+   "quote": "that paragraph includes enactments which impose a time-limit that applies only in certain circumstances (for example, where the proceedings are not instituted by or with the consent of the Director of Public Prosecutions or some other specified authority)"
+  },
+  {
+   "requirement": "Where an enactment imposes a time limit for taking proceedings on indictment for an indictable offence, no summary proceedings for that indictable offence may be taken after the latest time permitted for taking proceedings on indictment.",
+   "quote": "no summary proceedings for that offence shall be taken after the latest time for taking proceedings on indictment"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum time allowed from the commission of an offence or the arising of a matter of complaint for laying an information or making a complaint in a magistrates' court",
+   "value": "6 months",
+   "quote": "within 6 months from the time when the offence was committed, or the matter of complaint arose"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

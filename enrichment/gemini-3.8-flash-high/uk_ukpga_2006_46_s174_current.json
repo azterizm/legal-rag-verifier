@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2006/46/s174@current",
+ "section": "uk/ukpga/2006/46/s174",
+ "version": "current",
+ "source_sha256": "3d6aeef3cd3a2ddd8b9946e1f1cd771add4e9b998b27466674a1070e11cddfae",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A director of a company must exercise reasonable care, skill and diligence.",
+    "quote": "A director of a company must exercise reasonable care, skill and diligence."
+   },
+   {
+    "requirement": "Reasonable care, skill and diligence means the care, skill and diligence that would be exercised by a reasonably diligent person with the general knowledge, skill and experience that may reasonably be expected of a person carrying out the functions carried out by the director in relation to the company.",
+    "quote": "the care, skill and diligence that would be exercised by a reasonably diligent person with— (a) the general knowledge, skill and experience that may reasonably be expected of a person carrying out the functions carried out by the director in relation to the company"
+   },
+   {
+    "requirement": "Reasonable care, skill and diligence means the care, skill and diligence that would be exercised by a reasonably diligent person with the general knowledge, skill and experience that the director has.",
+    "quote": "the care, skill and diligence that would be exercised by a reasonably diligent person with—"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A director of a company must exercise reasonable care, skill and diligence.",
+   "quote": "A director of a company must exercise reasonable care, skill and diligence."
+  },
+  {
+   "requirement": "Reasonable care, skill and diligence means the care, skill and diligence that would be exercised by a reasonably diligent person with the general knowledge, skill and experience that may reasonably be expected of a person carrying out the functions carried out by the director in relation to the company.",
+   "quote": "the care, skill and diligence that would be exercised by a reasonably diligent person with— (a) the general knowledge, skill and experience that may reasonably be expected of a person carrying out the functions carried out by the director in relation to the company"
+  },
+  {
+   "requirement": "Reasonable care, skill and diligence means the care, skill and diligence that would be exercised by a reasonably diligent person with the general knowledge, skill and experience that the director has.",
+   "quote": "the care, skill and diligence that would be exercised by a reasonably diligent person with—"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

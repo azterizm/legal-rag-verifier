@@ -1,0 +1,643 @@
+{
+ "key": "uk/ukpga/1994/23/sch1@current",
+ "section": "uk/ukpga/1994/23/sch1",
+ "version": "current",
+ "source_sha256": "a7457e67607c83c9f0013b3437ffebccaf2a4c8c4eb6e7e0d09896c666139020",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who makes taxable supplies but is not registered under the Value Added Tax Act 1994 becomes liable to be registered under Schedule 1 at the end of any month if that person is UK-established and the value of their taxable supplies in the one-year period then ending has exceeded £90,000, subject to specific statutory exceptions.",
+    "quote": "becomes liable to be registered under this Schedule— (a) at the end of any month, if the person is UK-established and the value of his taxable supplies in the period of one year then ending has exceeded £90,000"
+   },
+   {
+    "requirement": "A person who makes taxable supplies but is not registered under the Value Added Tax Act 1994 becomes liable to be registered under Schedule 1 at any time if that person is UK-established and there are reasonable grounds for believing that the value of their taxable supplies in the 30-day period then beginning will exceed £90,000, subject to specific statutory exceptions.",
+    "quote": "at any time, if the person is UK-established and there are reasonable grounds for believing that the value of his taxable supplies in the period of 30 days then beginning will exceed £90,000"
+   },
+   {
+    "requirement": "When a business or part of a business carried on by a taxable person is transferred to another person as a going concern, the transferee becomes liable to be registered under Schedule 1 at the time of the transfer if the transferee is UK-established at that time, is not already registered under the Act, and the value of their taxable supplies in the one-year period ending at the transfer has exceeded £90,000, subject to specific statutory exceptions.",
+    "quote": "the transferee becomes liable to be registered under this Schedule at that time if— (a) the value of his taxable supplies in the period of one year ending at the time of the transfer has exceeded £90,000"
+   },
+   {
+    "requirement": "When a business or part of a business carried on by a taxable person is transferred to another person as a going concern, the transferee becomes liable to be registered under Schedule 1 at the time of the transfer if the transferee is UK-established at that time, is not already registered under the Act, and there are reasonable grounds for believing that the value of their taxable supplies in the 30-day period beginning at the transfer will exceed £90,000, subject to specific statutory exceptions.",
+    "quote": "there are reasonable grounds for believing that the value of his taxable supplies in the period of 30 days beginning at the time of the transfer will exceed £90,000"
+   },
+   {
+    "requirement": "In determining the value of a person's supplies for historic one-year thresholds under paragraph 1(1)(a) or (2)(a), supplies are taken into account whether or not the person was UK-established when they were made, subject to paragraphs 1(3) to (7).",
+    "quote": "supplies are to be taken into account (subject to sub-paragraphs (3) to (7)) whether or not the person was UK-established when they were made"
+   },
+   {
+    "requirement": "A person does not become liable to be registered under paragraph 1(1)(a) or (2)(a) if the Commissioners are satisfied that the value of their taxable supplies in the one-year period beginning when they would otherwise become liable will not exceed £88,000.",
+    "quote": "A person does not become liable to be registered by virtue of sub-paragraph (1)(a) or (2)(a) above if the Commissioners are satisfied that the value of his taxable supplies in the period of one year beginning at the time at which, apart from this sub-paragraph, he would become liable to be registered will not exceed £88,000"
+   },
+   {
+    "requirement": "In determining the value of a person's supplies for paragraph 1(1)(a) or (2)(a), supplies made when previously registered under the Act are disregarded if the registration was cancelled otherwise than under paragraph 13(3), paragraph 11 of Schedule 1A, or paragraph 6(2) of Schedule 3A, and the Commissioners are satisfied that prior to cancellation all necessary information was provided.",
+    "quote": "supplies made at a time when he was previously registered under this Act shall be disregarded if— (a) his registration was cancelled otherwise than under paragraph 13(3) below, paragraph 11 of Schedule 1A... or paragraph 6(2) of Schedule 3A, and (b) the Commissioners are satisfied that before his registration was cancelled he had given them all the information they needed"
+   },
+   {
+    "requirement": "A person is treated as having become liable to be registered under Schedule 1 at any time they would have been liable but for a registration subsequently cancelled under paragraph 13(3), paragraph 11 of Schedule 1A, or paragraph 6(2) of Schedule 3A.",
+    "quote": "A person shall be treated as having become liable to be registered under this Schedule at any time when he would have become so liable under the preceding provisions of this paragraph but for any registration which is subsequently cancelled under paragraph 13(3) below, paragraph 11 of Schedule 1A... or paragraph 6(2) of Schedule 3A"
+   },
+   {
+    "requirement": "A person does not cease to be liable to be registered under Schedule 1 except in accordance with paragraph 2(5), paragraph 3, or paragraph 4.",
+    "quote": "A person shall not cease to be liable to be registered under this Schedule except in accordance with paragraph 2(5), 3 or 4 below"
+   },
+   {
+    "requirement": "In determining the value of a person's supplies for the purposes of paragraph 1(1) or (2), supplies of goods or services that are capital assets of the business in the course or furtherance of which they are supplied are disregarded.",
+    "quote": "supplies of goods or services that are capital assets of the business in the course or furtherance of which they are supplied ... shall be disregarded"
+   },
+   {
+    "requirement": "An interest in, right over, or licence to occupy land that would otherwise be disregarded as a capital asset under paragraph 1(7) is not disregarded if it is supplied on a taxable supply that is not zero-rated.",
+    "quote": "Where, apart from this sub-paragraph, an interest in, right over or licence to occupy any land would under sub-paragraph (7) above be disregarded for the purposes of sub-paragraph (1) or (2) above, it shall not be if it is supplied on a taxable supply which is not zero-rated"
+   },
+   {
+    "requirement": "In determining the value of a person's supplies for paragraph 1(1) or (2), supplies to which section 18B(4) applies and supplies treated as made under section 18C(3) are disregarded.",
+    "quote": "supplies to which section 18B(4) (last ... supply of goods before removal from fiscal warehousing) applies and supplies treated as made by him under section 18C(3) (self-supply of services on removal of goods from warehousing) shall be disregarded"
+   },
+   {
+    "requirement": "A person is UK-established if they have a business establishment or some other fixed establishment in the United Kingdom in relation to a business carried on by them.",
+    "quote": "A person is “UK-established” if the person has a business establishment, or some other fixed establishment, in the United Kingdom in relation to a business carried on by the person"
+   },
+   {
+    "requirement": "Paragraph 2 serves to prevent the maintenance or creation of an artificial separation of business activities carried on by two or more persons from resulting in an avoidance of VAT.",
+    "quote": "Paragraph 2 below is for the purpose of preventing the maintenance or creation of any artificial separation of business activities carried on by two or more persons from resulting in an avoidance of VAT"
+   },
+   {
+    "requirement": "In determining whether a separation of business activities is artificial, regard must be had to the extent to which the different persons carrying on those activities are closely bound to one another by financial, economic, and organisational links.",
+    "quote": "regard shall be had to the extent to which the different persons carrying on those activities are closely bound to one another by financial, economic and organisational links"
+   },
+   {
+    "requirement": "Where the Commissioners make a direction under paragraph 2, the persons named in the direction are treated as a single taxable person carrying on the specified business activities and are liable to be registered from the date of the direction or a specified later date.",
+    "quote": "the persons named in the direction shall be treated as a single taxable person carrying on the activities of a business described in the direction and that taxable person shall be liable to be registered under this Schedule with effect from the date of the direction or, if the direction so provides, from such later date as may be specified therein"
+   },
+   {
+    "requirement": "The Commissioners must not make a direction under paragraph 2 naming any person unless satisfied that the person is making or has made taxable supplies, that those activities form part of activities carried on concurrently or previously by one or more other persons, and that if all taxable supplies of the described business were taken into account, a person carrying it on would be liable to register under paragraph 1 at the time of the direction.",
+    "quote": "The Commissioners shall not make a direction under this paragraph naming any person unless they are satisfied— (a) that he is making or has made taxable supplies; and (b) that the activities in the course of which he makes or made those taxable supplies form only part of certain activities . . ., the other activities being carried on concurrently or previously (or both) by one or more other persons; and (c) that, if all the taxable supplies of the business described in the direction were taken into account, a person carrying on that business would at the time of the direction be liable to be registered by virtue of paragraph 1 above"
+   },
+   {
+    "requirement": "A direction made under paragraph 2 must be served on each of the persons named in it.",
+    "quote": "A direction made under this paragraph shall be served on each of the persons named in it"
+   },
+   {
+    "requirement": "The Commissioners may make and serve a supplementary direction adding an unnamed person who is making taxable supplies in the activities of the business specified in an earlier direction, taking effect from when that person began making those supplies or, if later, when the single taxable person became liable to register.",
+    "quote": "the Commissioners may make and serve on him a supplementary direction referring to the earlier direction and the description of business specified in it and adding that person’s name to those of the persons named in the earlier direction with effect from— (a) the date on which he began to make those taxable supplies, or (b) if it was later, the date with effect from which the single taxable person referred to in the earlier direction became liable to be registered under this Schedule"
+   },
+   {
+    "requirement": "A person named in a direction or supplementary direction who was registered immediately before the direction in respect of relevant taxable supplies ceases to be liable to be so registered from the later of the date the single taxable person became liable to register or the date of the direction.",
+    "quote": "he shall cease to be liable to be so registered with effect from whichever is the later of— (a) the date with effect from which the single taxable person concerned became liable to be registered; and (b) the date of the direction"
+   },
+   {
+    "requirement": "Constituent members of a single taxable person under paragraph 2 are registerable in a name jointly nominated in writing to the Commissioners within 14 days of the direction date, or failing nomination, in a name specified in the direction.",
+    "quote": "the taxable person carrying on the business specified in the direction shall be registerable in such name as the persons named in the direction may jointly nominate by notice in writing given to the Commissioners not later than 14 days after the date of the direction or, in default of such a nomination, in such name as may be specified in the direction"
+   },
+   {
+    "requirement": "Any supply of goods or services by or to one of the constituent members in the course of the activities of the taxable person is treated as a supply by or to that taxable person.",
+    "quote": "any supply of goods or services by or to one of the constituent members in the course of the activities of the taxable person shall be treated as a supply by or to that person"
+   },
+   {
+    "requirement": "Each constituent member under a paragraph 2 direction is jointly and severally liable for any VAT due from the taxable person.",
+    "quote": "each of the constituent members shall be jointly and severally liable for any VAT due from the taxable person"
+   },
+   {
+    "requirement": "Any failure by a single taxable person to comply with any requirement under the Act is treated as a failure by each constituent member severally.",
+    "quote": "any failure by the taxable person to comply with any requirement imposed by or under this Act shall be treated as a failure by each of the constituent members severally"
+   },
+   {
+    "requirement": "Constituent members under paragraph 2 are treated as a partnership carrying on the business of the taxable person, and questions as to scope of business activities are determined accordingly.",
+    "quote": "the constituent members shall be treated as a partnership carrying on the business of the taxable person and any question as to the scope of the activities of that business at any time shall be determined accordingly"
+   },
+   {
+    "requirement": "If the Commissioners give notice that a constituent member should no longer be regarded as such, that member has no liability for acts after the date specified in the notice and ceases on that date to be treated as a partner.",
+    "quote": "he shall not have any liability by virtue of those paragraphs for anything done after the date specified in that notice and, accordingly, on that date he shall be treated as having ceased to be a member of the partnership"
+   },
+   {
+    "requirement": "A person who became liable to be registered ceases to be liable at any time if the Commissioners are satisfied that the person has ceased to make taxable supplies, does not satisfy any of the threshold conditions in paragraph 1(1) or (2), or is not UK-established at that time.",
+    "quote": "A person who has become liable to be registered under this Schedule shall cease to be so liable at any time if the Commissioners are satisfied in relation to that time that he— (a) has ceased to make taxable supplies; or (b) is not at that time a person in relation to whom any of the conditions specified in paragraphs 1(1)(a) and (b) and (2)(a) and (b) above is satisfied; or (c) is not at that time UK-established"
+   },
+   {
+    "requirement": "A registered person who has become liable to register ceases to be liable at any time after registration if the Commissioners are satisfied that their taxable supplies in the beginning one-year period will not exceed £88,000, unless the reason is cessation or suspension of supplies for 30 days or more.",
+    "quote": "a person who has become liable to be registered under this Schedule shall cease to be so liable at any time after being registered if the Commissioners are satisfied that the value of his taxable supplies in the period of one year then beginning will not exceed £88,000"
+   },
+   {
+    "requirement": "In determining the value of a person's supplies for paragraph 4(1), capital assets of the business are disregarded, except for supplies of land interests, rights, or licences that are taxable and not zero-rated.",
+    "quote": "supplies of goods or services that are capital assets of the business in the course or furtherance of which they are supplied ... shall be disregarded"
+   },
+   {
+    "requirement": "A person who becomes liable to register under paragraph 1(1)(a) must notify the Commissioners of the liability within 30 days of the end of the month at the end of which liability arose.",
+    "quote": "A person who becomes liable to be registered by virtue of paragraph 1(1)(a) above shall notify the Commissioners of the liability within 30 days of the end of the relevant month"
+   },
+   {
+    "requirement": "The Commissioners must register a person liable under paragraph 1(1)(a) with effect from the end of the month following the relevant month or from an agreed earlier date, regardless of whether notification was given.",
+    "quote": "The Commissioners shall register any such person (whether or not he so notifies them) with effect from the end of the month following the relevant month or from such earlier date as may be agreed between them and him"
+   },
+   {
+    "requirement": "A person who becomes liable to register under paragraph 1(1)(b) must notify the Commissioners before the end of the 30-day period by reference to which liability arises, and the Commissioners must register them with effect from the beginning of that period.",
+    "quote": "A person who becomes liable to be registered by virtue of paragraph 1(1)(b) above shall notify the Commissioners of the liability before the end of the period by reference to which the liability arises. (2) The Commissioners shall register any such person (whether or not he so notifies them) with effect from the beginning of the period by reference to which the liability arises"
+   },
+   {
+    "requirement": "A person who becomes liable to register under paragraph 1(2) must notify the Commissioners within 30 days of the business transfer, and the Commissioners must register them with effect from the time of the transfer.",
+    "quote": "A person who becomes liable to be registered by virtue of paragraph 1(2) above shall notify the Commissioners of the liability within 30 days of the time when the business is transferred. (2) The Commissioners shall register any such person (whether or not he so notifies them) with effect from the time when the business is transferred"
+   },
+   {
+    "requirement": "When a person becomes liable to register under paragraph 1(1)(a) and simultaneously under paragraph 1(1)(b) or 1(2), the Commissioners must register that person under paragraph 6(2) or 7(2) rather than paragraph 5(2).",
+    "quote": "Where a person becomes liable to be registered by virtue of paragraph 1(1)(a) above and by virtue of paragraph 1(1)(b) or 1(2) above at the same time, the Commissioners shall register him in accordance with paragraph 6(2) or 7(2) above, as the case may be, rather than paragraph 5(2) above"
+   },
+   {
+    "requirement": "The Commissioners must register a person not liable or already registered if that person satisfies them that they make taxable supplies or carry on a business and intend to make taxable supplies, upon their request, with effect from the date of the request or an agreed earlier date.",
+    "quote": "Where a person who is not liable to be registered under this Act and is not already so registered satisfies the Commissioners that he— (a) makes taxable supplies; or (b) is carrying on a business and intends to make such supplies in the course or furtherance of that business, they shall, if he so requests, register him with effect from the day on which the request is made or from such earlier date as may be agreed between them and him"
+   },
+   {
+    "requirement": "The Commissioners must register a person who requests it if that person is not liable or registered, has a UK business establishment or usual residence, does not make and does not intend to make taxable supplies, and satisfies them that they make or intend to make outside-UK supplies that would be taxable in the UK or specified section 26(2) supplies.",
+    "quote": "Where a person who is not liable to be registered under this Act and is not already so registered satisfies the Commissioners that he— (a) makes supplies within sub-paragraph (2) below; or (b) is carrying on a business and intends to make such supplies in the course or furtherance of that business, and (in either case) is within sub-paragraph (3) below, they shall, if he so requests, register him"
+   },
+   {
+    "requirement": "For paragraph 10, a person carrying on a business through a UK branch or agency is treated as having a UK business establishment, and the usual place of residence of a body corporate is the place where it is legally constituted.",
+    "quote": "a person carrying on a business through a branch or agency in the United Kingdom shall be treated as having a business establishment in the United Kingdom, and (b) “usual place of residence”, in relation to a body corporate, means the place where it is legally constituted"
+   },
+   {
+    "requirement": "A person registered under paragraph 5, 6, or 9 who ceases to make or intend to make taxable supplies must notify the Commissioners within 30 days of ceasing, unless they would otherwise remain liable or entitled to be registered disregarding their registration and rules against multiple registrations.",
+    "quote": "A person registered under paragraph 5, 6 or 9 above who ceases to make or have the intention of making taxable supplies shall notify the Commissioners of that fact within 30 days of the day on which he does so"
+   },
+   {
+    "requirement": "A person registered under paragraph 10 who ceases to make or intend to make qualifying supplies, or who makes or intends to make taxable supplies, must notify the Commissioners within 30 days of doing so, subject to the exception for ceasing qualifying supplies if otherwise liable or entitled to be registered.",
+    "quote": "A person registered under paragraph 10 above who— (a) ceases to make or have the intention of making supplies within sub-paragraph (2) of that paragraph; or (b) makes or forms the intention of making taxable supplies, shall notify the Commissioners of that fact within 30 days of the day on which he does so"
+   },
+   {
+    "requirement": "The Commissioners must cancel the registration of a registered person who requests it and satisfies them that they are not liable under Schedule 1, with effect from the request date or an agreed later date, provided the person is not otherwise required to be registered under the Act.",
+    "quote": "where a registered person satisfies the Commissioners that he is not liable to be registered under this Schedule, they shall, if he so requests, cancel his registration with effect from the day on which the request is made or from such later date as may be agreed between them and him"
+   },
+   {
+    "requirement": "The Commissioners may cancel the registration of a person who has ceased to be registrable, with effect from the date of cessation or an agreed later date, provided the person is not otherwise required or entitled to be registered under the Act.",
+    "quote": "where the Commissioners are satisfied that a registered person has ceased to be registrable, they may cancel his registration with effect from the day on which he so ceased or from such later date as may be agreed between them and him"
+   },
+   {
+    "requirement": "The Commissioners may cancel a registered person's registration with effect from the day of registration if satisfied that the person was not registrable on that day.",
+    "quote": "Where the Commissioners are satisfied that on the day on which a registered person was registered he was not registrable, they may cancel his registration with effect from that day"
+   },
+   {
+    "requirement": "Provisions of the Act preventing a person from becoming liable or entitled to register when already registered or liable under another provision are disregarded when determining whether cancellation is barred under paragraph 13(4) or (5).",
+    "quote": "so much of any provision of this Act as prevents a person from becoming liable or entitled to be registered when he is already registered or when he is so liable under any other provision shall be disregarded"
+   },
+   {
+    "requirement": "The Commissioners may, upon request and if they think fit, exempt a person making or intending to make taxable supplies from registration under Schedule 1 if satisfied that any such supply is or would be zero-rated, until the request is withdrawn or should no longer be acted upon.",
+    "quote": "where a person who makes or intends to make taxable supplies satisfies the Commissioners that any such supply is zero-rated or would be zero-rated if he were a taxable person, they may, if he so requests and they think fit, exempt him from registration under this Schedule"
+   },
+   {
+    "requirement": "A person exempted from registration under paragraph 14 must notify the Commissioners of any material change in the nature of their supplies within 30 days of the change or within 30 days of the quarter's end if no specific day is identifiable.",
+    "quote": "Where there is a material change in the nature of the supplies made by a person exempted under this paragraph from registration under this Schedule, he shall notify the Commissioners of the change— (a) within 30 days of the date on which it occurred; or (b) if no particular day is identifiable as the day on which it occurred, within 30 days of the end of the quarter in which it occurred"
+   },
+   {
+    "requirement": "A person exempted from registration under paragraph 14 must notify the Commissioners within 30 days of the end of any quarter in which there is a material alteration in the proportion of their taxable supplies that are zero-rated.",
+    "quote": "Where there is a material alteration in any quarter in the proportion of taxable supplies of such a person that are zero-rated, he shall notify the Commissioners of the alteration within 30 days of the end of the quarter"
+   },
+   {
+    "requirement": "The Treasury may by order substitute greater sums for any of the sums specified in Schedule 1.",
+    "quote": "The Treasury may by order substitute for any of the sums for the time being specified in this Schedule such greater sums as they think fit"
+   },
+   {
+    "requirement": "The value of a supply of goods or services is determined for the purposes of Schedule 1 on the basis that no VAT is chargeable on the supply.",
+    "quote": "The value of a supply of goods or services shall be determined for the purposes of this Schedule on the basis that no VAT is chargeable on the supply"
+   },
+   {
+    "requirement": "Any notification required under Schedule 1 must be made in such form and manner and contain such particulars as specified in regulations or by the Commissioners under regulations.",
+    "quote": "Any notification required under this Schedule shall be made in such form and manner and shall contain such particulars as may be specified in regulations or by the Commissioners in accordance with regulations"
+   },
+   {
+    "requirement": "The term 'registrable' in Schedule 1 means liable or entitled to be registered under Schedule 1.",
+    "quote": "In this Schedule “registrable” means liable or entitled to be registered under this Schedule"
+   },
+   {
+    "requirement": "References in Schedule 1 to supplies are references to supplies made in the course or furtherance of a business.",
+    "quote": "References in this Schedule to supplies are references to supplies made in the course or furtherance of a business"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Taxable supplies threshold for past one-year period for compulsory registration",
+    "value": "£90,000",
+    "quote": "the value of his taxable supplies in the period of one year then ending has exceeded £90,000"
+   },
+   {
+    "what": "Past period of supplies evaluated for monthly compulsory registration threshold",
+    "value": "one year",
+    "quote": "the period of one year then ending has exceeded £90,000"
+   },
+   {
+    "what": "Taxable supplies threshold for future 30-day period for compulsory registration",
+    "value": "£90,000",
+    "quote": "the period of 30 days then beginning will exceed £90,000"
+   },
+   {
+    "what": "Forward period evaluated for expected taxable supplies exceeding the registration threshold",
+    "value": "30 days",
+    "quote": "in the period of 30 days then beginning will exceed £90,000"
+   },
+   {
+    "what": "Taxable supplies threshold for past one-year period on transfer of a business as a going concern",
+    "value": "£90,000",
+    "quote": "the value of his taxable supplies in the period of one year ending at the time of the transfer has exceeded £90,000"
+   },
+   {
+    "what": "Past period ending at transfer of a business evaluated for transferee registration threshold",
+    "value": "one year",
+    "quote": "in the period of one year ending at the time of the transfer has exceeded £90,000"
+   },
+   {
+    "what": "Taxable supplies threshold for future 30-day period on transfer of a business as a going concern",
+    "value": "£90,000",
+    "quote": "the period of 30 days beginning at the time of the transfer will exceed £90,000"
+   },
+   {
+    "what": "Forward period beginning at transfer of a business evaluated for transferee expected taxable supplies",
+    "value": "30 days",
+    "quote": "in the period of 30 days beginning at the time of the transfer will exceed £90,000"
+   },
+   {
+    "what": "Maximum taxable supplies threshold for the upcoming year to prevent liability to register under the historic threshold",
+    "value": "£88,000",
+    "quote": "the period of one year beginning at the time at which, apart from this sub-paragraph, he would become liable to be registered will not exceed £88,000"
+   },
+   {
+    "what": "Forward period evaluated to prevent liability to register under the historic threshold",
+    "value": "one year",
+    "quote": "the period of one year beginning at the time at which, apart from this sub-paragraph, he would become liable to be registered will not exceed £88,000"
+   },
+   {
+    "what": "Time limit for persons named in a paragraph 2 direction to jointly nominate a registration name",
+    "value": "14 days",
+    "quote": "not later than 14 days after the date of the direction"
+   },
+   {
+    "what": "Maximum taxable supplies threshold for deregistration over the beginning one-year period",
+    "value": "£88,000",
+    "quote": "the period of one year then beginning will not exceed £88,000"
+   },
+   {
+    "what": "Period evaluated for expected taxable supplies for deregistration",
+    "value": "one year",
+    "quote": "the period of one year then beginning will not exceed £88,000"
+   },
+   {
+    "what": "Minimum duration of suspension of supplies that prevents deregistration under paragraph 4(1)",
+    "value": "30 days",
+    "quote": "suspend making them for a period of 30 days or more"
+   },
+   {
+    "what": "Deadline to notify Commissioners of registration liability arising under paragraph 1(1)(a)",
+    "value": "30 days",
+    "quote": "within 30 days of the end of the relevant month"
+   },
+   {
+    "what": "Deadline to notify Commissioners of registration liability arising under paragraph 1(2)",
+    "value": "30 days",
+    "quote": "within 30 days of the time when the business is transferred"
+   },
+   {
+    "what": "Deadline for a person registered under paragraph 5, 6, or 9 to notify cessation of making or intending to make taxable supplies",
+    "value": "30 days",
+    "quote": "within 30 days of the day on which he does so"
+   },
+   {
+    "what": "Deadline for a person registered under paragraph 10 to notify relevant cessation or commencement of taxable supplies",
+    "value": "30 days",
+    "quote": "within 30 days of the day on which he does so"
+   },
+   {
+    "what": "Deadline for an exempt person to notify a material change occurring on a specific identifiable date",
+    "value": "30 days",
+    "quote": "within 30 days of the date on which it occurred"
+   },
+   {
+    "what": "Deadline for an exempt person to notify a material change occurring on an unidentifiable date after the end of the quarter",
+    "value": "30 days",
+    "quote": "within 30 days of the end of the quarter in which it occurred"
+   },
+   {
+    "what": "Deadline for an exempt person to notify a material alteration in the proportion of zero-rated supplies after the end of the quarter",
+    "value": "30 days",
+    "quote": "within 30 days of the end of the quarter"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person who makes taxable supplies but is not registered under the Value Added Tax Act 1994 becomes liable to be registered under Schedule 1 at the end of any month if that person is UK-established and the value of their taxable supplies in the one-year period then ending has exceeded £90,000, subject to specific statutory exceptions.",
+   "quote": "becomes liable to be registered under this Schedule— (a) at the end of any month, if the person is UK-established and the value of his taxable supplies in the period of one year then ending has exceeded £90,000"
+  },
+  {
+   "requirement": "A person who makes taxable supplies but is not registered under the Value Added Tax Act 1994 becomes liable to be registered under Schedule 1 at any time if that person is UK-established and there are reasonable grounds for believing that the value of their taxable supplies in the 30-day period then beginning will exceed £90,000, subject to specific statutory exceptions.",
+   "quote": "at any time, if the person is UK-established and there are reasonable grounds for believing that the value of his taxable supplies in the period of 30 days then beginning will exceed £90,000"
+  },
+  {
+   "requirement": "When a business or part of a business carried on by a taxable person is transferred to another person as a going concern, the transferee becomes liable to be registered under Schedule 1 at the time of the transfer if the transferee is UK-established at that time, is not already registered under the Act, and the value of their taxable supplies in the one-year period ending at the transfer has exceeded £90,000, subject to specific statutory exceptions.",
+   "quote": "the transferee becomes liable to be registered under this Schedule at that time if— (a) the value of his taxable supplies in the period of one year ending at the time of the transfer has exceeded £90,000"
+  },
+  {
+   "requirement": "When a business or part of a business carried on by a taxable person is transferred to another person as a going concern, the transferee becomes liable to be registered under Schedule 1 at the time of the transfer if the transferee is UK-established at that time, is not already registered under the Act, and there are reasonable grounds for believing that the value of their taxable supplies in the 30-day period beginning at the transfer will exceed £90,000, subject to specific statutory exceptions.",
+   "quote": "there are reasonable grounds for believing that the value of his taxable supplies in the period of 30 days beginning at the time of the transfer will exceed £90,000"
+  },
+  {
+   "requirement": "In determining the value of a person's supplies for historic one-year thresholds under paragraph 1(1)(a) or (2)(a), supplies are taken into account whether or not the person was UK-established when they were made, subject to paragraphs 1(3) to (7).",
+   "quote": "supplies are to be taken into account (subject to sub-paragraphs (3) to (7)) whether or not the person was UK-established when they were made"
+  },
+  {
+   "requirement": "A person does not become liable to be registered under paragraph 1(1)(a) or (2)(a) if the Commissioners are satisfied that the value of their taxable supplies in the one-year period beginning when they would otherwise become liable will not exceed £88,000.",
+   "quote": "A person does not become liable to be registered by virtue of sub-paragraph (1)(a) or (2)(a) above if the Commissioners are satisfied that the value of his taxable supplies in the period of one year beginning at the time at which, apart from this sub-paragraph, he would become liable to be registered will not exceed £88,000"
+  },
+  {
+   "requirement": "In determining the value of a person's supplies for paragraph 1(1)(a) or (2)(a), supplies made when previously registered under the Act are disregarded if the registration was cancelled otherwise than under paragraph 13(3), paragraph 11 of Schedule 1A, or paragraph 6(2) of Schedule 3A, and the Commissioners are satisfied that prior to cancellation all necessary information was provided.",
+   "quote": "supplies made at a time when he was previously registered under this Act shall be disregarded if— (a) his registration was cancelled otherwise than under paragraph 13(3) below, paragraph 11 of Schedule 1A... or paragraph 6(2) of Schedule 3A, and (b) the Commissioners are satisfied that before his registration was cancelled he had given them all the information they needed"
+  },
+  {
+   "requirement": "A person is treated as having become liable to be registered under Schedule 1 at any time they would have been liable but for a registration subsequently cancelled under paragraph 13(3), paragraph 11 of Schedule 1A, or paragraph 6(2) of Schedule 3A.",
+   "quote": "A person shall be treated as having become liable to be registered under this Schedule at any time when he would have become so liable under the preceding provisions of this paragraph but for any registration which is subsequently cancelled under paragraph 13(3) below, paragraph 11 of Schedule 1A... or paragraph 6(2) of Schedule 3A"
+  },
+  {
+   "requirement": "A person does not cease to be liable to be registered under Schedule 1 except in accordance with paragraph 2(5), paragraph 3, or paragraph 4.",
+   "quote": "A person shall not cease to be liable to be registered under this Schedule except in accordance with paragraph 2(5), 3 or 4 below"
+  },
+  {
+   "requirement": "In determining the value of a person's supplies for the purposes of paragraph 1(1) or (2), supplies of goods or services that are capital assets of the business in the course or furtherance of which they are supplied are disregarded.",
+   "quote": "supplies of goods or services that are capital assets of the business in the course or furtherance of which they are supplied ... shall be disregarded"
+  },
+  {
+   "requirement": "An interest in, right over, or licence to occupy land that would otherwise be disregarded as a capital asset under paragraph 1(7) is not disregarded if it is supplied on a taxable supply that is not zero-rated.",
+   "quote": "Where, apart from this sub-paragraph, an interest in, right over or licence to occupy any land would under sub-paragraph (7) above be disregarded for the purposes of sub-paragraph (1) or (2) above, it shall not be if it is supplied on a taxable supply which is not zero-rated"
+  },
+  {
+   "requirement": "In determining the value of a person's supplies for paragraph 1(1) or (2), supplies to which section 18B(4) applies and supplies treated as made under section 18C(3) are disregarded.",
+   "quote": "supplies to which section 18B(4) (last ... supply of goods before removal from fiscal warehousing) applies and supplies treated as made by him under section 18C(3) (self-supply of services on removal of goods from warehousing) shall be disregarded"
+  },
+  {
+   "requirement": "A person is UK-established if they have a business establishment or some other fixed establishment in the United Kingdom in relation to a business carried on by them.",
+   "quote": "A person is “UK-established” if the person has a business establishment, or some other fixed establishment, in the United Kingdom in relation to a business carried on by the person"
+  },
+  {
+   "requirement": "Paragraph 2 serves to prevent the maintenance or creation of an artificial separation of business activities carried on by two or more persons from resulting in an avoidance of VAT.",
+   "quote": "Paragraph 2 below is for the purpose of preventing the maintenance or creation of any artificial separation of business activities carried on by two or more persons from resulting in an avoidance of VAT"
+  },
+  {
+   "requirement": "In determining whether a separation of business activities is artificial, regard must be had to the extent to which the different persons carrying on those activities are closely bound to one another by financial, economic, and organisational links.",
+   "quote": "regard shall be had to the extent to which the different persons carrying on those activities are closely bound to one another by financial, economic and organisational links"
+  },
+  {
+   "requirement": "Where the Commissioners make a direction under paragraph 2, the persons named in the direction are treated as a single taxable person carrying on the specified business activities and are liable to be registered from the date of the direction or a specified later date.",
+   "quote": "the persons named in the direction shall be treated as a single taxable person carrying on the activities of a business described in the direction and that taxable person shall be liable to be registered under this Schedule with effect from the date of the direction or, if the direction so provides, from such later date as may be specified therein"
+  },
+  {
+   "requirement": "The Commissioners must not make a direction under paragraph 2 naming any person unless satisfied that the person is making or has made taxable supplies, that those activities form part of activities carried on concurrently or previously by one or more other persons, and that if all taxable supplies of the described business were taken into account, a person carrying it on would be liable to register under paragraph 1 at the time of the direction.",
+   "quote": "The Commissioners shall not make a direction under this paragraph naming any person unless they are satisfied— (a) that he is making or has made taxable supplies; and (b) that the activities in the course of which he makes or made those taxable supplies form only part of certain activities . . ., the other activities being carried on concurrently or previously (or both) by one or more other persons; and (c) that, if all the taxable supplies of the business described in the direction were taken into account, a person carrying on that business would at the time of the direction be liable to be registered by virtue of paragraph 1 above"
+  },
+  {
+   "requirement": "A direction made under paragraph 2 must be served on each of the persons named in it.",
+   "quote": "A direction made under this paragraph shall be served on each of the persons named in it"
+  },
+  {
+   "requirement": "The Commissioners may make and serve a supplementary direction adding an unnamed person who is making taxable supplies in the activities of the business specified in an earlier direction, taking effect from when that person began making those supplies or, if later, when the single taxable person became liable to register.",
+   "quote": "the Commissioners may make and serve on him a supplementary direction referring to the earlier direction and the description of business specified in it and adding that person’s name to those of the persons named in the earlier direction with effect from— (a) the date on which he began to make those taxable supplies, or (b) if it was later, the date with effect from which the single taxable person referred to in the earlier direction became liable to be registered under this Schedule"
+  },
+  {
+   "requirement": "A person named in a direction or supplementary direction who was registered immediately before the direction in respect of relevant taxable supplies ceases to be liable to be so registered from the later of the date the single taxable person became liable to register or the date of the direction.",
+   "quote": "he shall cease to be liable to be so registered with effect from whichever is the later of— (a) the date with effect from which the single taxable person concerned became liable to be registered; and (b) the date of the direction"
+  },
+  {
+   "requirement": "Constituent members of a single taxable person under paragraph 2 are registerable in a name jointly nominated in writing to the Commissioners within 14 days of the direction date, or failing nomination, in a name specified in the direction.",
+   "quote": "the taxable person carrying on the business specified in the direction shall be registerable in such name as the persons named in the direction may jointly nominate by notice in writing given to the Commissioners not later than 14 days after the date of the direction or, in default of such a nomination, in such name as may be specified in the direction"
+  },
+  {
+   "requirement": "Any supply of goods or services by or to one of the constituent members in the course of the activities of the taxable person is treated as a supply by or to that taxable person.",
+   "quote": "any supply of goods or services by or to one of the constituent members in the course of the activities of the taxable person shall be treated as a supply by or to that person"
+  },
+  {
+   "requirement": "Each constituent member under a paragraph 2 direction is jointly and severally liable for any VAT due from the taxable person.",
+   "quote": "each of the constituent members shall be jointly and severally liable for any VAT due from the taxable person"
+  },
+  {
+   "requirement": "Any failure by a single taxable person to comply with any requirement under the Act is treated as a failure by each constituent member severally.",
+   "quote": "any failure by the taxable person to comply with any requirement imposed by or under this Act shall be treated as a failure by each of the constituent members severally"
+  },
+  {
+   "requirement": "Constituent members under paragraph 2 are treated as a partnership carrying on the business of the taxable person, and questions as to scope of business activities are determined accordingly.",
+   "quote": "the constituent members shall be treated as a partnership carrying on the business of the taxable person and any question as to the scope of the activities of that business at any time shall be determined accordingly"
+  },
+  {
+   "requirement": "If the Commissioners give notice that a constituent member should no longer be regarded as such, that member has no liability for acts after the date specified in the notice and ceases on that date to be treated as a partner.",
+   "quote": "he shall not have any liability by virtue of those paragraphs for anything done after the date specified in that notice and, accordingly, on that date he shall be treated as having ceased to be a member of the partnership"
+  },
+  {
+   "requirement": "A person who became liable to be registered ceases to be liable at any time if the Commissioners are satisfied that the person has ceased to make taxable supplies, does not satisfy any of the threshold conditions in paragraph 1(1) or (2), or is not UK-established at that time.",
+   "quote": "A person who has become liable to be registered under this Schedule shall cease to be so liable at any time if the Commissioners are satisfied in relation to that time that he— (a) has ceased to make taxable supplies; or (b) is not at that time a person in relation to whom any of the conditions specified in paragraphs 1(1)(a) and (b) and (2)(a) and (b) above is satisfied; or (c) is not at that time UK-established"
+  },
+  {
+   "requirement": "A registered person who has become liable to register ceases to be liable at any time after registration if the Commissioners are satisfied that their taxable supplies in the beginning one-year period will not exceed £88,000, unless the reason is cessation or suspension of supplies for 30 days or more.",
+   "quote": "a person who has become liable to be registered under this Schedule shall cease to be so liable at any time after being registered if the Commissioners are satisfied that the value of his taxable supplies in the period of one year then beginning will not exceed £88,000"
+  },
+  {
+   "requirement": "In determining the value of a person's supplies for paragraph 4(1), capital assets of the business are disregarded, except for supplies of land interests, rights, or licences that are taxable and not zero-rated.",
+   "quote": "supplies of goods or services that are capital assets of the business in the course or furtherance of which they are supplied ... shall be disregarded"
+  },
+  {
+   "requirement": "A person who becomes liable to register under paragraph 1(1)(a) must notify the Commissioners of the liability within 30 days of the end of the month at the end of which liability arose.",
+   "quote": "A person who becomes liable to be registered by virtue of paragraph 1(1)(a) above shall notify the Commissioners of the liability within 30 days of the end of the relevant month"
+  },
+  {
+   "requirement": "The Commissioners must register a person liable under paragraph 1(1)(a) with effect from the end of the month following the relevant month or from an agreed earlier date, regardless of whether notification was given.",
+   "quote": "The Commissioners shall register any such person (whether or not he so notifies them) with effect from the end of the month following the relevant month or from such earlier date as may be agreed between them and him"
+  },
+  {
+   "requirement": "A person who becomes liable to register under paragraph 1(1)(b) must notify the Commissioners before the end of the 30-day period by reference to which liability arises, and the Commissioners must register them with effect from the beginning of that period.",
+   "quote": "A person who becomes liable to be registered by virtue of paragraph 1(1)(b) above shall notify the Commissioners of the liability before the end of the period by reference to which the liability arises. (2) The Commissioners shall register any such person (whether or not he so notifies them) with effect from the beginning of the period by reference to which the liability arises"
+  },
+  {
+   "requirement": "A person who becomes liable to register under paragraph 1(2) must notify the Commissioners within 30 days of the business transfer, and the Commissioners must register them with effect from the time of the transfer.",
+   "quote": "A person who becomes liable to be registered by virtue of paragraph 1(2) above shall notify the Commissioners of the liability within 30 days of the time when the business is transferred. (2) The Commissioners shall register any such person (whether or not he so notifies them) with effect from the time when the business is transferred"
+  },
+  {
+   "requirement": "When a person becomes liable to register under paragraph 1(1)(a) and simultaneously under paragraph 1(1)(b) or 1(2), the Commissioners must register that person under paragraph 6(2) or 7(2) rather than paragraph 5(2).",
+   "quote": "Where a person becomes liable to be registered by virtue of paragraph 1(1)(a) above and by virtue of paragraph 1(1)(b) or 1(2) above at the same time, the Commissioners shall register him in accordance with paragraph 6(2) or 7(2) above, as the case may be, rather than paragraph 5(2) above"
+  },
+  {
+   "requirement": "The Commissioners must register a person not liable or already registered if that person satisfies them that they make taxable supplies or carry on a business and intend to make taxable supplies, upon their request, with effect from the date of the request or an agreed earlier date.",
+   "quote": "Where a person who is not liable to be registered under this Act and is not already so registered satisfies the Commissioners that he— (a) makes taxable supplies; or (b) is carrying on a business and intends to make such supplies in the course or furtherance of that business, they shall, if he so requests, register him with effect from the day on which the request is made or from such earlier date as may be agreed between them and him"
+  },
+  {
+   "requirement": "The Commissioners must register a person who requests it if that person is not liable or registered, has a UK business establishment or usual residence, does not make and does not intend to make taxable supplies, and satisfies them that they make or intend to make outside-UK supplies that would be taxable in the UK or specified section 26(2) supplies.",
+   "quote": "Where a person who is not liable to be registered under this Act and is not already so registered satisfies the Commissioners that he— (a) makes supplies within sub-paragraph (2) below; or (b) is carrying on a business and intends to make such supplies in the course or furtherance of that business, and (in either case) is within sub-paragraph (3) below, they shall, if he so requests, register him"
+  },
+  {
+   "requirement": "For paragraph 10, a person carrying on a business through a UK branch or agency is treated as having a UK business establishment, and the usual place of residence of a body corporate is the place where it is legally constituted.",
+   "quote": "a person carrying on a business through a branch or agency in the United Kingdom shall be treated as having a business establishment in the United Kingdom, and (b) “usual place of residence”, in relation to a body corporate, means the place where it is legally constituted"
+  },
+  {
+   "requirement": "A person registered under paragraph 5, 6, or 9 who ceases to make or intend to make taxable supplies must notify the Commissioners within 30 days of ceasing, unless they would otherwise remain liable or entitled to be registered disregarding their registration and rules against multiple registrations.",
+   "quote": "A person registered under paragraph 5, 6 or 9 above who ceases to make or have the intention of making taxable supplies shall notify the Commissioners of that fact within 30 days of the day on which he does so"
+  },
+  {
+   "requirement": "A person registered under paragraph 10 who ceases to make or intend to make qualifying supplies, or who makes or intends to make taxable supplies, must notify the Commissioners within 30 days of doing so, subject to the exception for ceasing qualifying supplies if otherwise liable or entitled to be registered.",
+   "quote": "A person registered under paragraph 10 above who— (a) ceases to make or have the intention of making supplies within sub-paragraph (2) of that paragraph; or (b) makes or forms the intention of making taxable supplies, shall notify the Commissioners of that fact within 30 days of the day on which he does so"
+  },
+  {
+   "requirement": "The Commissioners must cancel the registration of a registered person who requests it and satisfies them that they are not liable under Schedule 1, with effect from the request date or an agreed later date, provided the person is not otherwise required to be registered under the Act.",
+   "quote": "where a registered person satisfies the Commissioners that he is not liable to be registered under this Schedule, they shall, if he so requests, cancel his registration with effect from the day on which the request is made or from such later date as may be agreed between them and him"
+  },
+  {
+   "requirement": "The Commissioners may cancel the registration of a person who has ceased to be registrable, with effect from the date of cessation or an agreed later date, provided the person is not otherwise required or entitled to be registered under the Act.",
+   "quote": "where the Commissioners are satisfied that a registered person has ceased to be registrable, they may cancel his registration with effect from the day on which he so ceased or from such later date as may be agreed between them and him"
+  },
+  {
+   "requirement": "The Commissioners may cancel a registered person's registration with effect from the day of registration if satisfied that the person was not registrable on that day.",
+   "quote": "Where the Commissioners are satisfied that on the day on which a registered person was registered he was not registrable, they may cancel his registration with effect from that day"
+  },
+  {
+   "requirement": "Provisions of the Act preventing a person from becoming liable or entitled to register when already registered or liable under another provision are disregarded when determining whether cancellation is barred under paragraph 13(4) or (5).",
+   "quote": "so much of any provision of this Act as prevents a person from becoming liable or entitled to be registered when he is already registered or when he is so liable under any other provision shall be disregarded"
+  },
+  {
+   "requirement": "The Commissioners may, upon request and if they think fit, exempt a person making or intending to make taxable supplies from registration under Schedule 1 if satisfied that any such supply is or would be zero-rated, until the request is withdrawn or should no longer be acted upon.",
+   "quote": "where a person who makes or intends to make taxable supplies satisfies the Commissioners that any such supply is zero-rated or would be zero-rated if he were a taxable person, they may, if he so requests and they think fit, exempt him from registration under this Schedule"
+  },
+  {
+   "requirement": "A person exempted from registration under paragraph 14 must notify the Commissioners of any material change in the nature of their supplies within 30 days of the change or within 30 days of the quarter's end if no specific day is identifiable.",
+   "quote": "Where there is a material change in the nature of the supplies made by a person exempted under this paragraph from registration under this Schedule, he shall notify the Commissioners of the change— (a) within 30 days of the date on which it occurred; or (b) if no particular day is identifiable as the day on which it occurred, within 30 days of the end of the quarter in which it occurred"
+  },
+  {
+   "requirement": "A person exempted from registration under paragraph 14 must notify the Commissioners within 30 days of the end of any quarter in which there is a material alteration in the proportion of their taxable supplies that are zero-rated.",
+   "quote": "Where there is a material alteration in any quarter in the proportion of taxable supplies of such a person that are zero-rated, he shall notify the Commissioners of the alteration within 30 days of the end of the quarter"
+  },
+  {
+   "requirement": "The Treasury may by order substitute greater sums for any of the sums specified in Schedule 1.",
+   "quote": "The Treasury may by order substitute for any of the sums for the time being specified in this Schedule such greater sums as they think fit"
+  },
+  {
+   "requirement": "The value of a supply of goods or services is determined for the purposes of Schedule 1 on the basis that no VAT is chargeable on the supply.",
+   "quote": "The value of a supply of goods or services shall be determined for the purposes of this Schedule on the basis that no VAT is chargeable on the supply"
+  },
+  {
+   "requirement": "Any notification required under Schedule 1 must be made in such form and manner and contain such particulars as specified in regulations or by the Commissioners under regulations.",
+   "quote": "Any notification required under this Schedule shall be made in such form and manner and shall contain such particulars as may be specified in regulations or by the Commissioners in accordance with regulations"
+  },
+  {
+   "requirement": "The term 'registrable' in Schedule 1 means liable or entitled to be registered under Schedule 1.",
+   "quote": "In this Schedule “registrable” means liable or entitled to be registered under this Schedule"
+  },
+  {
+   "requirement": "References in Schedule 1 to supplies are references to supplies made in the course or furtherance of a business.",
+   "quote": "References in this Schedule to supplies are references to supplies made in the course or furtherance of a business"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Taxable supplies threshold for past one-year period for compulsory registration",
+   "value": "£90,000",
+   "quote": "the value of his taxable supplies in the period of one year then ending has exceeded £90,000"
+  },
+  {
+   "what": "Past period of supplies evaluated for monthly compulsory registration threshold",
+   "value": "one year",
+   "quote": "the period of one year then ending has exceeded £90,000"
+  },
+  {
+   "what": "Taxable supplies threshold for future 30-day period for compulsory registration",
+   "value": "£90,000",
+   "quote": "the period of 30 days then beginning will exceed £90,000"
+  },
+  {
+   "what": "Forward period evaluated for expected taxable supplies exceeding the registration threshold",
+   "value": "30 days",
+   "quote": "in the period of 30 days then beginning will exceed £90,000"
+  },
+  {
+   "what": "Taxable supplies threshold for past one-year period on transfer of a business as a going concern",
+   "value": "£90,000",
+   "quote": "the value of his taxable supplies in the period of one year ending at the time of the transfer has exceeded £90,000"
+  },
+  {
+   "what": "Past period ending at transfer of a business evaluated for transferee registration threshold",
+   "value": "one year",
+   "quote": "in the period of one year ending at the time of the transfer has exceeded £90,000"
+  },
+  {
+   "what": "Taxable supplies threshold for future 30-day period on transfer of a business as a going concern",
+   "value": "£90,000",
+   "quote": "the period of 30 days beginning at the time of the transfer will exceed £90,000"
+  },
+  {
+   "what": "Forward period beginning at transfer of a business evaluated for transferee expected taxable supplies",
+   "value": "30 days",
+   "quote": "in the period of 30 days beginning at the time of the transfer will exceed £90,000"
+  },
+  {
+   "what": "Maximum taxable supplies threshold for the upcoming year to prevent liability to register under the historic threshold",
+   "value": "£88,000",
+   "quote": "the period of one year beginning at the time at which, apart from this sub-paragraph, he would become liable to be registered will not exceed £88,000"
+  },
+  {
+   "what": "Forward period evaluated to prevent liability to register under the historic threshold",
+   "value": "one year",
+   "quote": "the period of one year beginning at the time at which, apart from this sub-paragraph, he would become liable to be registered will not exceed £88,000"
+  },
+  {
+   "what": "Time limit for persons named in a paragraph 2 direction to jointly nominate a registration name",
+   "value": "14 days",
+   "quote": "not later than 14 days after the date of the direction"
+  },
+  {
+   "what": "Maximum taxable supplies threshold for deregistration over the beginning one-year period",
+   "value": "£88,000",
+   "quote": "the period of one year then beginning will not exceed £88,000"
+  },
+  {
+   "what": "Period evaluated for expected taxable supplies for deregistration",
+   "value": "one year",
+   "quote": "the period of one year then beginning will not exceed £88,000"
+  },
+  {
+   "what": "Minimum duration of suspension of supplies that prevents deregistration under paragraph 4(1)",
+   "value": "30 days",
+   "quote": "suspend making them for a period of 30 days or more"
+  },
+  {
+   "what": "Deadline to notify Commissioners of registration liability arising under paragraph 1(1)(a)",
+   "value": "30 days",
+   "quote": "within 30 days of the end of the relevant month"
+  },
+  {
+   "what": "Deadline to notify Commissioners of registration liability arising under paragraph 1(2)",
+   "value": "30 days",
+   "quote": "within 30 days of the time when the business is transferred"
+  },
+  {
+   "what": "Deadline for a person registered under paragraph 5, 6, or 9 to notify cessation of making or intending to make taxable supplies",
+   "value": "30 days",
+   "quote": "within 30 days of the day on which he does so"
+  },
+  {
+   "what": "Deadline for a person registered under paragraph 10 to notify relevant cessation or commencement of taxable supplies",
+   "value": "30 days",
+   "quote": "within 30 days of the day on which he does so"
+  },
+  {
+   "what": "Deadline for an exempt person to notify a material change occurring on a specific identifiable date",
+   "value": "30 days",
+   "quote": "within 30 days of the date on which it occurred"
+  },
+  {
+   "what": "Deadline for an exempt person to notify a material change occurring on an unidentifiable date after the end of the quarter",
+   "value": "30 days",
+   "quote": "within 30 days of the end of the quarter in which it occurred"
+  },
+  {
+   "what": "Deadline for an exempt person to notify a material alteration in the proportion of zero-rated supplies after the end of the quarter",
+   "value": "30 days",
+   "quote": "within 30 days of the end of the quarter"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 51,
+  "elements_verified": 51,
+  "thresholds_proposed": 21,
+  "thresholds_verified": 21
+ }
+}

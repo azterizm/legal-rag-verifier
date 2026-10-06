@@ -1,0 +1,161 @@
+{
+ "key": "uk/ukpga/2020/17/s73@current",
+ "section": "uk/ukpga/2020/17/s73",
+ "version": "current",
+ "source_sha256": "0bb2adc49b5fdff79072a9bf167f0e4e7aad5fee5d7f4b6118c1148328adfdf8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 73 applies where a court is determining what sentence to pass on an offender who has pleaded guilty to an offence in proceedings before that court or another court.",
+    "quote": "applies where a court is determining what sentence to pass on an offender who has pleaded guilty to an offence in proceedings before that or another court"
+   },
+   {
+    "requirement": "The sentencing court must take into account the stage in the proceedings for the offence at which the offender indicated the intention to plead guilty.",
+    "quote": "the stage in the proceedings for the offence at which the offender indicated the intention to plead guilty"
+   },
+   {
+    "requirement": "The sentencing court must take into account the circumstances in which the offender's indication of intention to plead guilty was given.",
+    "quote": "the circumstances in which the indication was given"
+   },
+   {
+    "requirement": "If the court imposes a serious terrorism sentence in relation to the offence, nothing in section 268C(2) or 282C(2) prevents the court, after taking into account the guilty plea indication stage and circumstances, from imposing as the appropriate custodial term a term of any length that is not less than 80 per cent of the term that would otherwise be required.",
+    "quote": "nothing in section 268C(2) or, as the case may be, 282C(2) prevents the court, after taking into account any matter referred to in subsection (2), from imposing as the appropriate custodial term a term of any length which is not less than 80 per cent of the term which would otherwise be required"
+   },
+   {
+    "requirement": "If a mandatory sentence requirement applies in relation to an offence by virtue of section 312, 313, 314, or 315, and the offender is aged 18 or over when convicted, the mandatory sentence requirement does not prevent the court, after taking into account the guilty plea indication stage and circumstances, from imposing any sentence that is not less than 80 per cent of the sentence that would otherwise be required by that requirement.",
+    "quote": "the mandatory sentence requirement does not prevent the court, after taking into account any matter referred to in subsection (2), from imposing any sentence which is not less than 80 per cent of the sentence which would otherwise be required by that requirement"
+   },
+   {
+    "requirement": "The provisions establishing mandatory sentence requirements referred to for offenders aged 18 or over are section 312 (minimum sentence for threatening with weapon or corrosive substance or bladed article), section 313 (minimum of 7 years for third class A drug trafficking offence), section 314 (minimum of 3 years for third domestic burglary), and section 315 (minimum sentence for repeat offence involving weapon or corrosive substance or bladed article).",
+    "quote": "The provisions referred to in subsection (3)(a) are— (a) section 312 (minimum sentence for threatening with weapon or corrosive substance or bladed article); (b) section 313 (minimum of 7 years for third class A drug trafficking offence); (c) section 314 (minimum of 3 years for third domestic burglary); (d) section 315 (minimum sentence for repeat offence involving weapon or corrosive substance or bladed article)"
+   },
+   {
+    "requirement": "If a mandatory sentence requirement applies in relation to the offence by virtue of section 312 or section 315, and the offender is aged 16 or 17 when convicted, the mandatory sentence requirement does not prevent the court from imposing any sentence that it considers appropriate after taking into account the guilty plea indication stage and circumstances.",
+    "quote": "the mandatory sentence requirement does not prevent the court from imposing any sentence that it considers appropriate after taking into account any matter referred to in subsection (2)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum appropriate custodial term proportion relative to the term otherwise required when imposing a serious terrorism sentence",
+    "value": "80 per cent",
+    "quote": "not less than 80 per cent of the term which would otherwise be required"
+   },
+   {
+    "what": "minimum age of the offender when convicted for the 80 per cent mandatory sentence limit rule to apply",
+    "value": "18",
+    "quote": "aged 18 or over when convicted"
+   },
+   {
+    "what": "minimum sentence proportion relative to the sentence otherwise required by a specified mandatory sentence requirement for an offender aged 18 or over",
+    "value": "80 per cent",
+    "quote": "not less than 80 per cent of the sentence which would otherwise be required by that requirement"
+   },
+   {
+    "what": "minimum sentence term under section 313 for a third class A drug trafficking offence",
+    "value": "7 years",
+    "quote": "minimum of 7 years for third class A drug trafficking offence"
+   },
+   {
+    "what": "qualifying count of class A drug trafficking offences triggering the minimum sentence under section 313",
+    "value": "third",
+    "quote": "third class A drug trafficking offence"
+   },
+   {
+    "what": "minimum sentence term under section 314 for a third domestic burglary",
+    "value": "3 years",
+    "quote": "minimum of 3 years for third domestic burglary"
+   },
+   {
+    "what": "qualifying count of domestic burglary offences triggering the minimum sentence under section 314",
+    "value": "third",
+    "quote": "third domestic burglary"
+   },
+   {
+    "what": "lower age of the offender when convicted for the court to be permitted to impose any sentence considered appropriate under subsection (5)",
+    "value": "16",
+    "quote": "aged 16 or 17 when convicted"
+   },
+   {
+    "what": "upper age of the offender when convicted for the court to be permitted to impose any sentence considered appropriate under subsection (5)",
+    "value": "17",
+    "quote": "aged 16 or 17 when convicted"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 73 applies where a court is determining what sentence to pass on an offender who has pleaded guilty to an offence in proceedings before that court or another court.",
+   "quote": "applies where a court is determining what sentence to pass on an offender who has pleaded guilty to an offence in proceedings before that or another court"
+  },
+  {
+   "requirement": "The sentencing court must take into account the stage in the proceedings for the offence at which the offender indicated the intention to plead guilty.",
+   "quote": "the stage in the proceedings for the offence at which the offender indicated the intention to plead guilty"
+  },
+  {
+   "requirement": "The sentencing court must take into account the circumstances in which the offender's indication of intention to plead guilty was given.",
+   "quote": "the circumstances in which the indication was given"
+  },
+  {
+   "requirement": "If the court imposes a serious terrorism sentence in relation to the offence, nothing in section 268C(2) or 282C(2) prevents the court, after taking into account the guilty plea indication stage and circumstances, from imposing as the appropriate custodial term a term of any length that is not less than 80 per cent of the term that would otherwise be required.",
+   "quote": "nothing in section 268C(2) or, as the case may be, 282C(2) prevents the court, after taking into account any matter referred to in subsection (2), from imposing as the appropriate custodial term a term of any length which is not less than 80 per cent of the term which would otherwise be required"
+  },
+  {
+   "requirement": "If a mandatory sentence requirement applies in relation to an offence by virtue of section 312, 313, 314, or 315, and the offender is aged 18 or over when convicted, the mandatory sentence requirement does not prevent the court, after taking into account the guilty plea indication stage and circumstances, from imposing any sentence that is not less than 80 per cent of the sentence that would otherwise be required by that requirement.",
+   "quote": "the mandatory sentence requirement does not prevent the court, after taking into account any matter referred to in subsection (2), from imposing any sentence which is not less than 80 per cent of the sentence which would otherwise be required by that requirement"
+  },
+  {
+   "requirement": "The provisions establishing mandatory sentence requirements referred to for offenders aged 18 or over are section 312 (minimum sentence for threatening with weapon or corrosive substance or bladed article), section 313 (minimum of 7 years for third class A drug trafficking offence), section 314 (minimum of 3 years for third domestic burglary), and section 315 (minimum sentence for repeat offence involving weapon or corrosive substance or bladed article).",
+   "quote": "The provisions referred to in subsection (3)(a) are— (a) section 312 (minimum sentence for threatening with weapon or corrosive substance or bladed article); (b) section 313 (minimum of 7 years for third class A drug trafficking offence); (c) section 314 (minimum of 3 years for third domestic burglary); (d) section 315 (minimum sentence for repeat offence involving weapon or corrosive substance or bladed article)"
+  },
+  {
+   "requirement": "If a mandatory sentence requirement applies in relation to the offence by virtue of section 312 or section 315, and the offender is aged 16 or 17 when convicted, the mandatory sentence requirement does not prevent the court from imposing any sentence that it considers appropriate after taking into account the guilty plea indication stage and circumstances.",
+   "quote": "the mandatory sentence requirement does not prevent the court from imposing any sentence that it considers appropriate after taking into account any matter referred to in subsection (2)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum appropriate custodial term proportion relative to the term otherwise required when imposing a serious terrorism sentence",
+   "value": "80 per cent",
+   "quote": "not less than 80 per cent of the term which would otherwise be required"
+  },
+  {
+   "what": "minimum age of the offender when convicted for the 80 per cent mandatory sentence limit rule to apply",
+   "value": "18",
+   "quote": "aged 18 or over when convicted"
+  },
+  {
+   "what": "minimum sentence proportion relative to the sentence otherwise required by a specified mandatory sentence requirement for an offender aged 18 or over",
+   "value": "80 per cent",
+   "quote": "not less than 80 per cent of the sentence which would otherwise be required by that requirement"
+  },
+  {
+   "what": "minimum sentence term under section 313 for a third class A drug trafficking offence",
+   "value": "7 years",
+   "quote": "minimum of 7 years for third class A drug trafficking offence"
+  },
+  {
+   "what": "minimum sentence term under section 314 for a third domestic burglary",
+   "value": "3 years",
+   "quote": "minimum of 3 years for third domestic burglary"
+  },
+  {
+   "what": "lower age of the offender when convicted for the court to be permitted to impose any sentence considered appropriate under subsection (5)",
+   "value": "16",
+   "quote": "aged 16 or 17 when convicted"
+  },
+  {
+   "what": "upper age of the offender when convicted for the court to be permitted to impose any sentence considered appropriate under subsection (5)",
+   "value": "17",
+   "quote": "aged 16 or 17 when convicted"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 9,
+  "thresholds_verified": 7
+ }
+}

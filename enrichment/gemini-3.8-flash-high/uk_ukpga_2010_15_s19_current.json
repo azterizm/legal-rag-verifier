@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2010/15/s19@current",
+ "section": "uk/ukpga/2010/15/s19",
+ "version": "current",
+ "source_sha256": "e59d3df93376d129c7c30cdda02f89854989e2e3f924787995448dbeec60c020",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person (A) discriminates against another person (B) if person A applies to person B a provision, criterion or practice which is discriminatory in relation to a relevant protected characteristic of person B.",
+    "quote": "A person (A) discriminates against another (B) if A applies to B a provision, criterion or practice which is discriminatory in relation to a relevant protected characteristic of B's."
+   },
+   {
+    "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if person A applies, or would apply, it to persons with whom person B does not share the characteristic.",
+    "quote": "A applies, or would apply, it to persons with whom B does not share the characteristic"
+   },
+   {
+    "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if it puts, or would put, persons with whom person B shares the characteristic at a particular disadvantage when compared with persons with whom person B does not share it.",
+    "quote": "it puts, or would put, persons with whom B shares the characteristic at a particular disadvantage when compared with persons with whom B does not share it"
+   },
+   {
+    "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if it puts, or would put, person B at that disadvantage.",
+    "quote": "it puts, or would put, B at that disadvantage"
+   },
+   {
+    "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if person A cannot show the provision, criterion or practice to be a proportionate means of achieving a legitimate aim.",
+    "quote": "A cannot show it to be a proportionate means of achieving a legitimate aim"
+   },
+   {
+    "requirement": "The relevant protected characteristics are defined as age, disability, gender reassignment, marriage and civil partnership, race, religion or belief, sex, and sexual orientation.",
+    "quote": "The relevant protected characteristics are— age;disability;gender reassignment;marriage and civil partnership;race;religion or belief;sex;sexual orientation."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person (A) discriminates against another person (B) if person A applies to person B a provision, criterion or practice which is discriminatory in relation to a relevant protected characteristic of person B.",
+   "quote": "A person (A) discriminates against another (B) if A applies to B a provision, criterion or practice which is discriminatory in relation to a relevant protected characteristic of B's."
+  },
+  {
+   "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if person A applies, or would apply, it to persons with whom person B does not share the characteristic.",
+   "quote": "A applies, or would apply, it to persons with whom B does not share the characteristic"
+  },
+  {
+   "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if it puts, or would put, persons with whom person B shares the characteristic at a particular disadvantage when compared with persons with whom person B does not share it.",
+   "quote": "it puts, or would put, persons with whom B shares the characteristic at a particular disadvantage when compared with persons with whom B does not share it"
+  },
+  {
+   "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if it puts, or would put, person B at that disadvantage.",
+   "quote": "it puts, or would put, B at that disadvantage"
+  },
+  {
+   "requirement": "For the purposes of establishing discrimination, a provision, criterion or practice is discriminatory in relation to a relevant protected characteristic of person B if person A cannot show the provision, criterion or practice to be a proportionate means of achieving a legitimate aim.",
+   "quote": "A cannot show it to be a proportionate means of achieving a legitimate aim"
+  },
+  {
+   "requirement": "The relevant protected characteristics are defined as age, disability, gender reassignment, marriage and civil partnership, race, religion or belief, sex, and sexual orientation.",
+   "quote": "The relevant protected characteristics are— age;disability;gender reassignment;marriage and civil partnership;race;religion or belief;sex;sexual orientation."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

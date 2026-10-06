@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1971/48/s1@current",
+ "section": "uk/ukpga/1971/48/s1",
+ "version": "current",
+ "source_sha256": "abb03bae6c45a9df6f14f5270ba0d129580838ede1c8293a6a46714faba817c6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if that person, without lawful excuse, destroys or damages any property belonging to another, intending to destroy or damage any such property or being reckless as to whether any such property would be destroyed or damaged.",
+    "quote": "without lawful excuse destroys or damages any property belonging to another intending to destroy or damage any such property or being reckless as to whether any such property would be destroyed or damaged shall be guilty of an offence"
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person, without lawful excuse, destroys or damages any property (whether belonging to that person or another), intending to destroy or damage any property or being reckless as to whether any property would be destroyed or damaged, and intending by the destruction or damage to endanger the life of another or being reckless as to whether the life of another would be thereby endangered.",
+    "quote": "without lawful excuse destroys or damages any property, whether belonging to himself or another— (a) intending to destroy or damage any property or being reckless as to whether any property would be destroyed or damaged; and (b) intending by the destruction or damage to endanger the life of another or being reckless as to whether the life of another would be thereby endangered; shall be guilty of an offence"
+   },
+   {
+    "requirement": "An offence committed under section 1 of the Criminal Damage Act 1971 by destroying or damaging property by fire must be charged as arson.",
+    "quote": "An offence committed under this section by destroying or damaging property by fire shall be charged as arson."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if that person, without lawful excuse, destroys or damages any property belonging to another, intending to destroy or damage any such property or being reckless as to whether any such property would be destroyed or damaged.",
+   "quote": "without lawful excuse destroys or damages any property belonging to another intending to destroy or damage any such property or being reckless as to whether any such property would be destroyed or damaged shall be guilty of an offence"
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person, without lawful excuse, destroys or damages any property (whether belonging to that person or another), intending to destroy or damage any property or being reckless as to whether any property would be destroyed or damaged, and intending by the destruction or damage to endanger the life of another or being reckless as to whether the life of another would be thereby endangered.",
+   "quote": "without lawful excuse destroys or damages any property, whether belonging to himself or another— (a) intending to destroy or damage any property or being reckless as to whether any property would be destroyed or damaged; and (b) intending by the destruction or damage to endanger the life of another or being reckless as to whether the life of another would be thereby endangered; shall be guilty of an offence"
+  },
+  {
+   "requirement": "An offence committed under section 1 of the Criminal Damage Act 1971 by destroying or damaging property by fire must be charged as arson.",
+   "quote": "An offence committed under this section by destroying or damaging property by fire shall be charged as arson."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

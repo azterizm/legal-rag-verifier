@@ -1,0 +1,146 @@
+{
+ "key": "uk/ukpga/2018/12/s170@current",
+ "section": "uk/ukpga/2018/12/s170",
+ "version": "current",
+ "source_sha256": "29cff0495534e9c9ecdc2f9b4fa09537174e1f5ad984dd89e939f6401529d20f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if that person knowingly or recklessly obtains or discloses personal data without the consent of the controller.",
+    "quote": "an offence for a person knowingly or recklessly— (a) to obtain or disclose personal data without the consent of the controller"
+   },
+   {
+    "requirement": "A person commits an offence if that person knowingly or recklessly procures the disclosure of personal data to another person without the consent of the controller.",
+    "quote": "an offence for a person knowingly or recklessly— (b) to procure the disclosure of personal data to another person without the consent of the controller"
+   },
+   {
+    "requirement": "A person commits an offence if that person knowingly or recklessly, after obtaining personal data, retains it without the consent of the person who was the controller in relation to the personal data when it was obtained.",
+    "quote": "after obtaining personal data, to retain it without the consent of the person who was the controller in relation to the personal data when it was obtained"
+   },
+   {
+    "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the obtaining, disclosing, procuring or retaining was necessary for the purposes of preventing, investigating or detecting crime.",
+    "quote": "necessary for the purposes of preventing , investigating or detecting crime"
+   },
+   {
+    "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the obtaining, disclosing, procuring or retaining was required or authorised by an enactment, by a rule of law or by the order of a court or tribunal.",
+    "quote": "required or authorised by an enactment, by a rule of law or by the order of a court or tribunal"
+   },
+   {
+    "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the obtaining, disclosing, procuring or retaining was, in the particular circumstances, justified as being in the public interest.",
+    "quote": "in the particular circumstances, was justified as being in the public interest"
+   },
+   {
+    "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the defendant acted in the reasonable belief that the defendant had a legal right to do the obtaining, disclosing, procuring or retaining.",
+    "quote": "acted in the reasonable belief that the person had a legal right to do the obtaining, disclosing, procuring or retaining"
+   },
+   {
+    "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the defendant acted in the reasonable belief that the defendant would have had the consent of the controller if the controller had known about the obtaining, disclosing, procuring or retaining and the circumstances of it.",
+    "quote": "acted in the reasonable belief that the person would have had the consent of the controller if the controller had known about the obtaining, disclosing, procuring or retaining and the circumstances of it"
+   },
+   {
+    "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the defendant acted for the special purposes, with a view to publication by any person of any journalistic, academic, artistic or literary material, and in the reasonable belief that the obtaining, disclosing, procuring or retaining was justified as being in the public interest in the particular circumstances.",
+    "quote": "acted— (i) for the special purposes, (ii) with a view to the publication by a person of any journalistic, academic, artistic or literary material, and (iii) in the reasonable belief that in the particular circumstances the obtaining, disclosing, procuring or retaining was justified as being in the public interest"
+   },
+   {
+    "requirement": "A person commits an offence if that person sells personal data having obtained the data in circumstances where an offence under subsection (1) was committed.",
+    "quote": "an offence for a person to sell personal data if the person obtained the data in circumstances in which an offence under subsection (1) was committed"
+   },
+   {
+    "requirement": "A person commits an offence if that person offers to sell personal data having obtained the data in circumstances where an offence under subsection (1) was committed.",
+    "quote": "an offence for a person to offer to sell personal data if the person— (a) has obtained the data in circumstances in which an offence under subsection (1) was committed"
+   },
+   {
+    "requirement": "A person commits an offence if that person offers to sell personal data and subsequently obtains the data in circumstances where an offence under subsection (1) was committed.",
+    "quote": "an offence for a person to offer to sell personal data if the person— (b) subsequently obtains the data in such circumstances"
+   },
+   {
+    "requirement": "For the purposes of subsection (5), an advertisement indicating that personal data is or may be for sale constitutes an offer to sell the data.",
+    "quote": "an advertisement indicating that personal data is or may be for sale is an offer to sell the data"
+   },
+   {
+    "requirement": "References in section 170 to the consent of a controller exclude consent given by any person who is a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of the Data Protection Act 2018.",
+    "quote": "references to the consent of a controller do not include the consent of a person who is a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of this Act"
+   },
+   {
+    "requirement": "Where there is more than one controller, statutory references to the consent of a controller operate as references to the consent of one or more of those controllers.",
+    "quote": "where there is more than one controller, such references are references to the consent of one or more of them"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of controllers existing to trigger the plural controller consent provision",
+    "value": "more than one",
+    "quote": "where there is more than one controller"
+   },
+   {
+    "what": "number of controllers whose consent suffices when multiple controllers exist",
+    "value": "one or more",
+    "quote": "consent of one or more of them"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if that person knowingly or recklessly obtains or discloses personal data without the consent of the controller.",
+   "quote": "an offence for a person knowingly or recklessly— (a) to obtain or disclose personal data without the consent of the controller"
+  },
+  {
+   "requirement": "A person commits an offence if that person knowingly or recklessly, after obtaining personal data, retains it without the consent of the person who was the controller in relation to the personal data when it was obtained.",
+   "quote": "after obtaining personal data, to retain it without the consent of the person who was the controller in relation to the personal data when it was obtained"
+  },
+  {
+   "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the obtaining, disclosing, procuring or retaining was necessary for the purposes of preventing, investigating or detecting crime.",
+   "quote": "necessary for the purposes of preventing , investigating or detecting crime"
+  },
+  {
+   "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the obtaining, disclosing, procuring or retaining was required or authorised by an enactment, by a rule of law or by the order of a court or tribunal.",
+   "quote": "required or authorised by an enactment, by a rule of law or by the order of a court or tribunal"
+  },
+  {
+   "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the obtaining, disclosing, procuring or retaining was, in the particular circumstances, justified as being in the public interest.",
+   "quote": "in the particular circumstances, was justified as being in the public interest"
+  },
+  {
+   "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the defendant acted in the reasonable belief that the defendant had a legal right to do the obtaining, disclosing, procuring or retaining.",
+   "quote": "acted in the reasonable belief that the person had a legal right to do the obtaining, disclosing, procuring or retaining"
+  },
+  {
+   "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the defendant acted in the reasonable belief that the defendant would have had the consent of the controller if the controller had known about the obtaining, disclosing, procuring or retaining and the circumstances of it.",
+   "quote": "acted in the reasonable belief that the person would have had the consent of the controller if the controller had known about the obtaining, disclosing, procuring or retaining and the circumstances of it"
+  },
+  {
+   "requirement": "A defendant charged with an offence under subsection (1) has a defence upon proving that the defendant acted for the special purposes, with a view to publication by any person of any journalistic, academic, artistic or literary material, and in the reasonable belief that the obtaining, disclosing, procuring or retaining was justified as being in the public interest in the particular circumstances.",
+   "quote": "acted— (i) for the special purposes, (ii) with a view to the publication by a person of any journalistic, academic, artistic or literary material, and (iii) in the reasonable belief that in the particular circumstances the obtaining, disclosing, procuring or retaining was justified as being in the public interest"
+  },
+  {
+   "requirement": "A person commits an offence if that person sells personal data having obtained the data in circumstances where an offence under subsection (1) was committed.",
+   "quote": "an offence for a person to sell personal data if the person obtained the data in circumstances in which an offence under subsection (1) was committed"
+  },
+  {
+   "requirement": "A person commits an offence if that person offers to sell personal data having obtained the data in circumstances where an offence under subsection (1) was committed.",
+   "quote": "an offence for a person to offer to sell personal data if the person— (a) has obtained the data in circumstances in which an offence under subsection (1) was committed"
+  },
+  {
+   "requirement": "For the purposes of subsection (5), an advertisement indicating that personal data is or may be for sale constitutes an offer to sell the data.",
+   "quote": "an advertisement indicating that personal data is or may be for sale is an offer to sell the data"
+  },
+  {
+   "requirement": "References in section 170 to the consent of a controller exclude consent given by any person who is a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of the Data Protection Act 2018.",
+   "quote": "references to the consent of a controller do not include the consent of a person who is a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of this Act"
+  },
+  {
+   "requirement": "Where there is more than one controller, statutory references to the consent of a controller operate as references to the consent of one or more of those controllers.",
+   "quote": "where there is more than one controller, such references are references to the consent of one or more of them"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 13,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "key": "uk/ukpga/1996/52/s81@current",
+ "section": "uk/ukpga/1996/52/s81",
+ "version": "current",
+ "source_sha256": "5875ae5e0907933e57b0cde338c82cd4413fdf681c38e8cda9e9c04b66ad411a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A landlord is prohibited from exercising a right of re-entry or forfeiture in relation to premises let as a dwelling for a tenant's failure to pay a service charge or administration charge unless the amount is finally determined to be payable by the tenant by (or on appeal from) the appropriate tribunal, by a court, or by an arbitral tribunal under a post-dispute arbitration agreement, or unless the tenant admits it is payable.",
+    "quote": "A landlord may not, in relation to premises let as a dwelling, exercise a right of re-entry or forfeiture for failure by a tenant to pay a service charge or administration charge unless"
+   },
+   {
+    "requirement": "A landlord may not exercise a right of re-entry or forfeiture under subsection (1)(a) until after the end of a 14-day period starting the day after the final determination is made.",
+    "quote": "The landlord may not exercise a right of re-entry or forfeiture by virtue of subsection (1)(a) until after the end of the period of 14 days beginning with the day after that on which the final determination is made."
+   },
+   {
+    "requirement": "An amount of a service charge or administration charge is finally determined to be payable at the end of the time for bringing an appeal or other challenge if a decision that it is payable is not appealed against or otherwise challenged.",
+    "quote": "if a decision that it is payable is not appealed against or otherwise challenged, at the end of the time for bringing an appeal or other challenge"
+   },
+   {
+    "requirement": "An amount of a service charge or administration charge is finally determined to be payable at the time specified in subsection (3A) if a decision that it is payable is appealed against or otherwise challenged and is not set aside as a consequence.",
+    "quote": "if such a decision is appealed against or otherwise challenged and not set aside in consequence of the appeal or other challenge, at the time specified in subsection (3A)."
+   },
+   {
+    "requirement": "An appeal or other challenge is disposed of when it is determined and the time for bringing any subsequent appeal has expired, or when it is abandoned or otherwise ceases to have effect.",
+    "quote": "the time when the appeal or other challenge is disposed of— (a) by the determination of the appeal or other challenge and the expiry of the time for bringing a subsequent appeal (if any), or (b) by its being abandoned or otherwise ceasing to have effect."
+   },
+   {
+    "requirement": "Premises let on a tenancy to which Part II of the Landlord and Tenant Act 1954 applies (business tenancies) are excluded from the reference to premises let as a dwelling.",
+    "quote": "The reference in subsection (1) to premises let as a dwelling does not include premises let on— (a) a tenancy to which Part II of the Landlord and Tenant Act 1954 applies (business tenancies)"
+   },
+   {
+    "requirement": "Premises let on an agricultural holding tenancy within the meaning of the Agricultural Holdings Act 1986 to which that Act applies are excluded from the reference to premises let as a dwelling.",
+    "quote": "a tenancy of an agricultural holding within the meaning of the Agricultural Holdings Act 1986 in relation to which that Act applies"
+   },
+   {
+    "requirement": "Premises let on a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995 are excluded from the reference to premises let as a dwelling.",
+    "quote": "a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995."
+   },
+   {
+    "requirement": "The exercise of a right of re-entry or forfeiture includes serving a notice under section 146(1) of the Law of Property Act 1925 regarding restrictions on re-entry or forfeiture.",
+    "quote": "References in this section to the exercise of a right of re-entry or forfeiture include the service of a notice under section 146(1) of the Law of Property Act 1925 (restriction on re-entry or forfeiture)."
+   },
+   {
+    "requirement": "An administration charge has the meaning given by Part 1 of Schedule 11 to the Commonhold and Leasehold Reform Act 2002.",
+    "quote": "“administration charge” has the meaning given by Part 1 of Schedule 11 to the Commonhold and Leasehold Reform Act 2002"
+   },
+   {
+    "requirement": "An arbitration agreement and an arbitral tribunal have the meanings provided in Part 1 of the Arbitration Act 1996, and a post-dispute arbitration agreement means an arbitration agreement made after a dispute about the matter has arisen.",
+    "quote": "“arbitration agreement” and “arbitral tribunal” have the same meaning as in Part 1 of the Arbitration Act 1996 (c. 23) and “post-dispute arbitration agreement”, in relation to any matter, means an arbitration agreement made after a dispute about the matter has arisen"
+   },
+   {
+    "requirement": "A dwelling has the same meaning as in the Landlord and Tenant Act 1985.",
+    "quote": "“dwelling” has the same meaning as in the Landlord and Tenant Act 1985 (c. 70)"
+   },
+   {
+    "requirement": "A service charge means a service charge within the meaning of section 18(1) of the Landlord and Tenant Act 1985, excluding any service charge excluded from that section by section 27 of that Act.",
+    "quote": "“service charge” means a service charge within the meaning of section 18(1) of the Landlord and Tenant Act 1985, other than one excluded from that section by section 27 of that Act (rent of dwelling registered and not entered as variable)."
+   },
+   {
+    "requirement": "Any court order made to give effect to a determination of the appropriate tribunal is treated as a determination by the court for the purposes of section 81 of the Housing Act 1996.",
+    "quote": "Any order of a court to give effect to a determination of the appropriate tribunal shall be treated as a determination by the court for the purposes of this section."
+   },
+   {
+    "requirement": "Section 81 of the Housing Act 1996 does not affect a landlord's exercise of a right of re-entry or forfeiture on grounds other than failure to pay a service charge or administration charge.",
+    "quote": "Nothing in this section affects the exercise of a right of re-entry or forfeiture on other grounds."
+   },
+   {
+    "requirement": "For premises in England, the appropriate tribunal is the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal.",
+    "quote": "“appropriate tribunal” means— (a) in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal"
+   },
+   {
+    "requirement": "For premises in Wales, the appropriate tribunal is a leasehold valuation tribunal.",
+    "quote": "in relation to premises in Wales, a leasehold valuation tribunal."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The waiting period beginning with the day after the final determination is made before a landlord may exercise a right of re-entry or forfeiture under subsection (1)(a)",
+    "value": "14 days",
+    "quote": "period of 14 days beginning with the day after that on which the final determination is made"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A landlord is prohibited from exercising a right of re-entry or forfeiture in relation to premises let as a dwelling for a tenant's failure to pay a service charge or administration charge unless the amount is finally determined to be payable by the tenant by (or on appeal from) the appropriate tribunal, by a court, or by an arbitral tribunal under a post-dispute arbitration agreement, or unless the tenant admits it is payable.",
+   "quote": "A landlord may not, in relation to premises let as a dwelling, exercise a right of re-entry or forfeiture for failure by a tenant to pay a service charge or administration charge unless"
+  },
+  {
+   "requirement": "A landlord may not exercise a right of re-entry or forfeiture under subsection (1)(a) until after the end of a 14-day period starting the day after the final determination is made.",
+   "quote": "The landlord may not exercise a right of re-entry or forfeiture by virtue of subsection (1)(a) until after the end of the period of 14 days beginning with the day after that on which the final determination is made."
+  },
+  {
+   "requirement": "An amount of a service charge or administration charge is finally determined to be payable at the end of the time for bringing an appeal or other challenge if a decision that it is payable is not appealed against or otherwise challenged.",
+   "quote": "if a decision that it is payable is not appealed against or otherwise challenged, at the end of the time for bringing an appeal or other challenge"
+  },
+  {
+   "requirement": "An amount of a service charge or administration charge is finally determined to be payable at the time specified in subsection (3A) if a decision that it is payable is appealed against or otherwise challenged and is not set aside as a consequence.",
+   "quote": "if such a decision is appealed against or otherwise challenged and not set aside in consequence of the appeal or other challenge, at the time specified in subsection (3A)."
+  },
+  {
+   "requirement": "An appeal or other challenge is disposed of when it is determined and the time for bringing any subsequent appeal has expired, or when it is abandoned or otherwise ceases to have effect.",
+   "quote": "the time when the appeal or other challenge is disposed of— (a) by the determination of the appeal or other challenge and the expiry of the time for bringing a subsequent appeal (if any), or (b) by its being abandoned or otherwise ceasing to have effect."
+  },
+  {
+   "requirement": "Premises let on a tenancy to which Part II of the Landlord and Tenant Act 1954 applies (business tenancies) are excluded from the reference to premises let as a dwelling.",
+   "quote": "The reference in subsection (1) to premises let as a dwelling does not include premises let on— (a) a tenancy to which Part II of the Landlord and Tenant Act 1954 applies (business tenancies)"
+  },
+  {
+   "requirement": "Premises let on an agricultural holding tenancy within the meaning of the Agricultural Holdings Act 1986 to which that Act applies are excluded from the reference to premises let as a dwelling.",
+   "quote": "a tenancy of an agricultural holding within the meaning of the Agricultural Holdings Act 1986 in relation to which that Act applies"
+  },
+  {
+   "requirement": "Premises let on a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995 are excluded from the reference to premises let as a dwelling.",
+   "quote": "a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995."
+  },
+  {
+   "requirement": "The exercise of a right of re-entry or forfeiture includes serving a notice under section 146(1) of the Law of Property Act 1925 regarding restrictions on re-entry or forfeiture.",
+   "quote": "References in this section to the exercise of a right of re-entry or forfeiture include the service of a notice under section 146(1) of the Law of Property Act 1925 (restriction on re-entry or forfeiture)."
+  },
+  {
+   "requirement": "An administration charge has the meaning given by Part 1 of Schedule 11 to the Commonhold and Leasehold Reform Act 2002.",
+   "quote": "“administration charge” has the meaning given by Part 1 of Schedule 11 to the Commonhold and Leasehold Reform Act 2002"
+  },
+  {
+   "requirement": "An arbitration agreement and an arbitral tribunal have the meanings provided in Part 1 of the Arbitration Act 1996, and a post-dispute arbitration agreement means an arbitration agreement made after a dispute about the matter has arisen.",
+   "quote": "“arbitration agreement” and “arbitral tribunal” have the same meaning as in Part 1 of the Arbitration Act 1996 (c. 23) and “post-dispute arbitration agreement”, in relation to any matter, means an arbitration agreement made after a dispute about the matter has arisen"
+  },
+  {
+   "requirement": "A dwelling has the same meaning as in the Landlord and Tenant Act 1985.",
+   "quote": "“dwelling” has the same meaning as in the Landlord and Tenant Act 1985 (c. 70)"
+  },
+  {
+   "requirement": "A service charge means a service charge within the meaning of section 18(1) of the Landlord and Tenant Act 1985, excluding any service charge excluded from that section by section 27 of that Act.",
+   "quote": "“service charge” means a service charge within the meaning of section 18(1) of the Landlord and Tenant Act 1985, other than one excluded from that section by section 27 of that Act (rent of dwelling registered and not entered as variable)."
+  },
+  {
+   "requirement": "Any court order made to give effect to a determination of the appropriate tribunal is treated as a determination by the court for the purposes of section 81 of the Housing Act 1996.",
+   "quote": "Any order of a court to give effect to a determination of the appropriate tribunal shall be treated as a determination by the court for the purposes of this section."
+  },
+  {
+   "requirement": "Section 81 of the Housing Act 1996 does not affect a landlord's exercise of a right of re-entry or forfeiture on grounds other than failure to pay a service charge or administration charge.",
+   "quote": "Nothing in this section affects the exercise of a right of re-entry or forfeiture on other grounds."
+  },
+  {
+   "requirement": "For premises in England, the appropriate tribunal is the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal.",
+   "quote": "“appropriate tribunal” means— (a) in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal"
+  },
+  {
+   "requirement": "For premises in Wales, the appropriate tribunal is a leasehold valuation tribunal.",
+   "quote": "in relation to premises in Wales, a leasehold valuation tribunal."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The waiting period beginning with the day after the final determination is made before a landlord may exercise a right of re-entry or forfeiture under subsection (1)(a)",
+   "value": "14 days",
+   "quote": "period of 14 days beginning with the day after that on which the final determination is made"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "key": "uk/ukpga/Eliz2/2-3/56/s24@current",
+ "section": "uk/ukpga/Eliz2/2-3/56/s24",
+ "version": "current",
+ "source_sha256": "aac42c5ca27a8298088537b4ec04d83fb0c3f4dfec6d6a4936f00ecc629d5381",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A tenancy to which Part II of the Landlord and Tenant Act 1954 applies does not come to an end unless terminated in accordance with the provisions of Part II of the Act.",
+    "quote": "A tenancy to which this Part of this Act applies shall not come to an end unless terminated in accordance with the provisions of this Part of this Act"
+   },
+   {
+    "requirement": "Subject to the provisions of the Landlord and Tenant Act 1954, either the tenant or the landlord under a tenancy to which Part II of the Act applies may apply to the court for an order for the grant of a new tenancy if the landlord has given notice under section 25 of the Act to terminate the tenancy.",
+    "quote": "either the tenant or the landlord under such a tenancy may apply to the court for an order for the grant of a new tenancy— (a) if the landlord has given notice under section 25 of this Act to terminate the tenancy"
+   },
+   {
+    "requirement": "Subject to the provisions of the Landlord and Tenant Act 1954, either the tenant or the landlord under a tenancy to which Part II of the Act applies may apply to the court for an order for the grant of a new tenancy if the tenant has made a request for a new tenancy in accordance with section 26 of the Act.",
+    "quote": "either the tenant or the landlord under such a tenancy may apply to the court for an order for the grant of a new tenancy— (a) if the landlord has given notice under section 25 of this Act to terminate the tenancy, or (b) if the tenant has made a request for a new tenancy in accordance with section 26 of this Act."
+   },
+   {
+    "requirement": "Section 24(1) of the Landlord and Tenant Act 1954 does not prevent a tenancy from coming to an end by surrender, by forfeiture, or by the forfeiture of a superior tenancy.",
+    "quote": "The last foregoing subsection shall not prevent the coming to an end of a tenancy by notice to quit given by the tenant, by surrender or forfeiture, or by the forfeiture of a superior tenancy"
+   },
+   {
+    "requirement": "Section 24(1) of the Landlord and Tenant Act 1954 does not prevent a tenancy from coming to an end by notice to quit given by the tenant, unless the notice was given before the tenant had been in occupation in right of the tenancy for one month.",
+    "quote": "unless— (a) in the case of a notice to quit, the notice was given before the tenant had been in occupation in right of the tenancy for one month"
+   },
+   {
+    "requirement": "Neither the tenant nor the landlord may make an application to the court for an order for the grant of a new tenancy under section 24(1) if the other has already made such an application and that application has been served.",
+    "quote": "Neither the tenant nor the landlord may make an application under subsection (1) above if the other has made such an application and the application has been served."
+   },
+   {
+    "requirement": "Neither the tenant nor the landlord may make an application to the court for an order for the grant of a new tenancy under section 24(1) if the landlord has made an application under section 29(2) of the Landlord and Tenant Act 1954 and that application has been served.",
+    "quote": "Neither the tenant nor the landlord may make such an application if the landlord has made an application under section 29(2) of this Act and the application has been served."
+   },
+   {
+    "requirement": "The landlord may not withdraw an application made under section 24(1) unless the tenant consents to its withdrawal.",
+    "quote": "The landlord may not withdraw an application under subsection (1) above unless the tenant consents to its withdrawal."
+   },
+   {
+    "requirement": "Notwithstanding section 24(1), where a tenancy to which Part II of the Landlord and Tenant Act 1954 applies ceases to be such a tenancy, the tenancy does not come to an end by reason only of the cesser.",
+    "quote": "where a tenancy to which this Part of this Act applies ceases to be such a tenancy, it shall not come to an end by reason only of the cesser"
+   },
+   {
+    "requirement": "Notwithstanding section 24(1), where a tenancy ceases to be one to which Part II of the Landlord and Tenant Act 1954 applies, if it was granted for a term of years certain and has been continued by section 24(1), it may be terminated (without prejudice to termination under any terms of the tenancy) by not less than three nor more than six months' notice in writing given by the landlord to the tenant.",
+    "quote": "if it was granted for a term of years certain and has been continued by subsection (1) of this section then (without prejudice to the termination thereof in accordance with any terms of the tenancy) it may be terminated by not less than three nor more than six months’ notice in writing given by the landlord to the tenant"
+   },
+   {
+    "requirement": "Notwithstanding section 24(1), where a landlord gives notice to quit at a time when a tenancy is not one to which Part II of the Landlord and Tenant Act 1954 applies, the operation of the notice to quit is not affected by the tenancy subsequently becoming one to which Part II applies after the notice was given.",
+    "quote": "where, at a time when a tenancy is not one to which this Part of this Act applies, the landlord gives notice to quit, the operation of the notice shall not be affected by reason that the tenancy becomes one to which this Part of this Act applies after the giving of the notice."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum duration of tenant occupation in right of the tenancy required for a tenant's notice to quit to end the tenancy",
+    "value": "one month",
+    "quote": "had been in occupation in right of the tenancy for one month"
+   },
+   {
+    "what": "Minimum period of written notice required from the landlord to terminate a tenancy granted for a term of years certain that has ceased to be covered by Part II after continuation under subsection (1)",
+    "value": "three",
+    "quote": "not less than three nor more than six months’ notice in writing"
+   },
+   {
+    "what": "Maximum period of written notice required from the landlord to terminate a tenancy granted for a term of years certain that has ceased to be covered by Part II after continuation under subsection (1)",
+    "value": "six months",
+    "quote": "not less than three nor more than six months’ notice in writing"
+   },
+   {
+    "what": "Total period range of written notice required from the landlord to terminate a tenancy granted for a term of years certain that has ceased to be covered by Part II after continuation under subsection (1)",
+    "value": "not less than three nor more than six months",
+    "quote": "not less than three nor more than six months’ notice in writing"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A tenancy to which Part II of the Landlord and Tenant Act 1954 applies does not come to an end unless terminated in accordance with the provisions of Part II of the Act.",
+   "quote": "A tenancy to which this Part of this Act applies shall not come to an end unless terminated in accordance with the provisions of this Part of this Act"
+  },
+  {
+   "requirement": "Subject to the provisions of the Landlord and Tenant Act 1954, either the tenant or the landlord under a tenancy to which Part II of the Act applies may apply to the court for an order for the grant of a new tenancy if the landlord has given notice under section 25 of the Act to terminate the tenancy.",
+   "quote": "either the tenant or the landlord under such a tenancy may apply to the court for an order for the grant of a new tenancy— (a) if the landlord has given notice under section 25 of this Act to terminate the tenancy"
+  },
+  {
+   "requirement": "Subject to the provisions of the Landlord and Tenant Act 1954, either the tenant or the landlord under a tenancy to which Part II of the Act applies may apply to the court for an order for the grant of a new tenancy if the tenant has made a request for a new tenancy in accordance with section 26 of the Act.",
+   "quote": "either the tenant or the landlord under such a tenancy may apply to the court for an order for the grant of a new tenancy— (a) if the landlord has given notice under section 25 of this Act to terminate the tenancy, or (b) if the tenant has made a request for a new tenancy in accordance with section 26 of this Act."
+  },
+  {
+   "requirement": "Section 24(1) of the Landlord and Tenant Act 1954 does not prevent a tenancy from coming to an end by surrender, by forfeiture, or by the forfeiture of a superior tenancy.",
+   "quote": "The last foregoing subsection shall not prevent the coming to an end of a tenancy by notice to quit given by the tenant, by surrender or forfeiture, or by the forfeiture of a superior tenancy"
+  },
+  {
+   "requirement": "Section 24(1) of the Landlord and Tenant Act 1954 does not prevent a tenancy from coming to an end by notice to quit given by the tenant, unless the notice was given before the tenant had been in occupation in right of the tenancy for one month.",
+   "quote": "unless— (a) in the case of a notice to quit, the notice was given before the tenant had been in occupation in right of the tenancy for one month"
+  },
+  {
+   "requirement": "Neither the tenant nor the landlord may make an application to the court for an order for the grant of a new tenancy under section 24(1) if the other has already made such an application and that application has been served.",
+   "quote": "Neither the tenant nor the landlord may make an application under subsection (1) above if the other has made such an application and the application has been served."
+  },
+  {
+   "requirement": "Neither the tenant nor the landlord may make an application to the court for an order for the grant of a new tenancy under section 24(1) if the landlord has made an application under section 29(2) of the Landlord and Tenant Act 1954 and that application has been served.",
+   "quote": "Neither the tenant nor the landlord may make such an application if the landlord has made an application under section 29(2) of this Act and the application has been served."
+  },
+  {
+   "requirement": "The landlord may not withdraw an application made under section 24(1) unless the tenant consents to its withdrawal.",
+   "quote": "The landlord may not withdraw an application under subsection (1) above unless the tenant consents to its withdrawal."
+  },
+  {
+   "requirement": "Notwithstanding section 24(1), where a tenancy to which Part II of the Landlord and Tenant Act 1954 applies ceases to be such a tenancy, the tenancy does not come to an end by reason only of the cesser.",
+   "quote": "where a tenancy to which this Part of this Act applies ceases to be such a tenancy, it shall not come to an end by reason only of the cesser"
+  },
+  {
+   "requirement": "Notwithstanding section 24(1), where a tenancy ceases to be one to which Part II of the Landlord and Tenant Act 1954 applies, if it was granted for a term of years certain and has been continued by section 24(1), it may be terminated (without prejudice to termination under any terms of the tenancy) by not less than three nor more than six months' notice in writing given by the landlord to the tenant.",
+   "quote": "if it was granted for a term of years certain and has been continued by subsection (1) of this section then (without prejudice to the termination thereof in accordance with any terms of the tenancy) it may be terminated by not less than three nor more than six months’ notice in writing given by the landlord to the tenant"
+  },
+  {
+   "requirement": "Notwithstanding section 24(1), where a landlord gives notice to quit at a time when a tenancy is not one to which Part II of the Landlord and Tenant Act 1954 applies, the operation of the notice to quit is not affected by the tenancy subsequently becoming one to which Part II applies after the notice was given.",
+   "quote": "where, at a time when a tenancy is not one to which this Part of this Act applies, the landlord gives notice to quit, the operation of the notice shall not be affected by reason that the tenancy becomes one to which this Part of this Act applies after the giving of the notice."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum duration of tenant occupation in right of the tenancy required for a tenant's notice to quit to end the tenancy",
+   "value": "one month",
+   "quote": "had been in occupation in right of the tenancy for one month"
+  },
+  {
+   "what": "Maximum period of written notice required from the landlord to terminate a tenancy granted for a term of years certain that has ceased to be covered by Part II after continuation under subsection (1)",
+   "value": "six months",
+   "quote": "not less than three nor more than six months’ notice in writing"
+  },
+  {
+   "what": "Total period range of written notice required from the landlord to terminate a tenancy granted for a term of years certain that has ceased to be covered by Part II after continuation under subsection (1)",
+   "value": "not less than three nor more than six months",
+   "quote": "not less than three nor more than six months’ notice in writing"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 3
+ }
+}

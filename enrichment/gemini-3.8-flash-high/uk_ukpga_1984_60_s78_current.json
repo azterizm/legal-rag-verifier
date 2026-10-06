@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/1984/60/s78@current",
+ "section": "uk/ukpga/1984/60/s78",
+ "version": "current",
+ "source_sha256": "c4f3876ae9166715a1397e3368a5265b1b5f871f98093fb68643992958fd64ec",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In any proceedings, the court may refuse to allow evidence on which the prosecution proposes to rely to be given if it appears to the court that, having regard to all the circumstances, including the circumstances in which the evidence was obtained, the admission of the evidence would have such an adverse effect on the fairness of the proceedings that the court ought not to admit it.",
+    "quote": "the court may refuse to allow evidence on which the prosecution proposes to rely to be given"
+   },
+   {
+    "requirement": "Nothing in section 78 of the Police and Criminal Evidence Act 1984 shall prejudice any rule of law requiring a court to exclude evidence.",
+    "quote": "Nothing in this section shall prejudice any rule of law requiring a court to exclude evidence."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In any proceedings, the court may refuse to allow evidence on which the prosecution proposes to rely to be given if it appears to the court that, having regard to all the circumstances, including the circumstances in which the evidence was obtained, the admission of the evidence would have such an adverse effect on the fairness of the proceedings that the court ought not to admit it.",
+   "quote": "the court may refuse to allow evidence on which the prosecution proposes to rely to be given"
+  },
+  {
+   "requirement": "Nothing in section 78 of the Police and Criminal Evidence Act 1984 shall prejudice any rule of law requiring a court to exclude evidence.",
+   "quote": "Nothing in this section shall prejudice any rule of law requiring a court to exclude evidence."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

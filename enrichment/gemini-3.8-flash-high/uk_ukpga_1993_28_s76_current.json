@@ -1,0 +1,150 @@
+{
+ "key": "uk/ukpga/1993/28/s76@current",
+ "section": "uk/ukpga/1993/28/s76",
+ "version": "current",
+ "source_sha256": "05869ba5cbf101cd91e58da82952f6d9504983b860f390a23f26af5e1fb8fa55",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Two or more qualifying tenants of dwellings held on leases from the same landlord have the right, exercisable subject to and in accordance with Chapter V, to have an audit carried out on their behalf relating to the management of the relevant premises and any appurtenant property by or on behalf of the landlord.",
+    "quote": "confer on two or more qualifying tenants of dwellings held on leases from the same landlord the right, exercisable subject to and in accordance with this Chapter, to have an audit carried out on their behalf which relates to the management of the relevant premises and any appurtenant property by or on behalf of the landlord"
+   },
+   {
+    "requirement": "Where the relevant premises consist of or include two dwellings let to qualifying tenants of the same landlord, the right to have an audit carried out is exercisable by either or both of those tenants.",
+    "quote": "where the relevant premises consist of or include two dwellings let to qualifying tenants of the same landlord, by either or both of those tenants"
+   },
+   {
+    "requirement": "Where the relevant premises consist of or include three or more dwellings let to qualifying tenants of the same landlord, the right to have an audit carried out is exercisable by not less than two-thirds of those tenants.",
+    "quote": "where the relevant premises consist of or include three or more dwellings let to qualifying tenants of the same landlord, by not less than two-thirds of those tenants"
+   },
+   {
+    "requirement": "In Chapter V, the dwellings let to qualifying tenants of the same landlord who hold the right to an audit are referred to as the constituent dwellings.",
+    "quote": "in this Chapter the dwellings let to those qualifying tenants are referred to as “the constituent dwellings”"
+   },
+   {
+    "requirement": "In relation to an audit on behalf of two or more qualifying tenants, the relevant premises means so much of the building or buildings containing the dwellings let to those tenants, and any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which common service charge contributions are payable under the leases of those qualifying tenants.",
+    "quote": "“the relevant premises” means so much of— (i) the building or buildings containing the dwellings let to those tenants, and (ii) any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which common service charge contributions are payable under the leases of those qualifying tenants"
+   },
+   {
+    "requirement": "In relation to an audit on behalf of two or more qualifying tenants, appurtenant property means so much of any property not contained in the relevant premises as constitutes property in relation to which management functions discharged in respect of common service charge contributions are discharged.",
+    "quote": "“appurtenant property” means so much of any property not contained in the relevant premises as constitutes property in relation to which any such management functions are discharged"
+   },
+   {
+    "requirement": "A single qualifying tenant of a dwelling has the right, exercisable subject to and in accordance with Chapter V, to have an audit carried out on his behalf relating to the management of the relevant premises and any appurtenant property by or on behalf of the landlord.",
+    "quote": "confer on a single qualifying tenant of a dwelling the right, exercisable subject to and in accordance with this Chapter, to have an audit carried out on his behalf which relates to the management of the relevant premises and any appurtenant property by or on behalf of the landlord"
+   },
+   {
+    "requirement": "The right to have an audit carried out is exercisable by a single qualifying tenant of a dwelling where the relevant premises contain no other dwelling let to a qualifying tenant apart from that let to him.",
+    "quote": "That right shall be exercisable by a single qualifying tenant of a dwelling where the relevant premises contain no other dwelling let to a qualifying tenant apart from that let to him."
+   },
+   {
+    "requirement": "In relation to an audit on behalf of a single qualifying tenant, the relevant premises means so much of the building containing the dwelling let to him, and any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which a service charge is payable under his lease, whether as a common service charge contribution or otherwise.",
+    "quote": "“the relevant premises” means so much of— (i) the building containing the dwelling let to him, and (ii) any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which a service charge is payable under his lease (whether as a common service charge contribution or otherwise)"
+   },
+   {
+    "requirement": "In relation to an audit on behalf of a single qualifying tenant, appurtenant property means so much of any property not contained in the relevant premises as constitutes property in relation to which management functions discharged in respect of service charges payable under his lease are discharged.",
+    "quote": "“appurtenant property” means so much of any property not contained in the relevant premises as constitutes property in relation to which any such management functions are discharged"
+   },
+   {
+    "requirement": "The provisions of sections 78 to 83 apply in relation to an audit on behalf of a single qualifying tenant with any necessary modifications as they have effect in relation to an audit on behalf of two or more qualifying tenants.",
+    "quote": "The provisions of sections 78 to 83 shall, with any necessary modifications, have effect in relation to an audit on behalf of a single qualifying tenant as they have effect in relation to an audit on behalf of two or more qualifying tenants."
+   },
+   {
+    "requirement": "For the purposes of section 76, common service charge contributions are payable by two or more persons under their leases if they may be required under the terms of those leases to contribute to the same costs by the payment of service charges.",
+    "quote": "common service charge contributions are payable by two or more persons under their leases if they may be required under the terms of those leases to contribute to the same costs by the payment of service charges"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of qualifying tenants of dwellings held on leases from the same landlord on whom the right to an audit is conferred under subsection (1)",
+    "value": "two or more",
+    "quote": "two or more qualifying tenants of dwellings held on leases from the same landlord"
+   },
+   {
+    "what": "number of dwellings let to qualifying tenants of the same landlord that the relevant premises consist of or include for the right to be exercisable by either or both tenants",
+    "value": "two",
+    "quote": "where the relevant premises consist of or include two dwellings let to qualifying tenants of the same landlord"
+   },
+   {
+    "what": "number of dwellings let to qualifying tenants of the same landlord that the relevant premises consist of or include for the minimum two-thirds tenant threshold to apply",
+    "value": "three or more",
+    "quote": "where the relevant premises consist of or include three or more dwellings let to qualifying tenants of the same landlord"
+   },
+   {
+    "what": "minimum proportion of qualifying tenants required to exercise the right where relevant premises consist of or include three or more dwellings",
+    "value": "not less than two-thirds",
+    "quote": "by not less than two-thirds of those tenants"
+   },
+   {
+    "what": "number of qualifying tenants on whom the audit right is conferred where the relevant premises contain no other dwelling let to a qualifying tenant",
+    "value": "single",
+    "quote": "confer on a single qualifying tenant of a dwelling the right"
+   },
+   {
+    "what": "minimum number of persons paying service charges under their leases to contribute to the same costs for contributions to be treated as common service charge contributions",
+    "value": "two or more",
+    "quote": "payable by two or more persons under their leases"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Two or more qualifying tenants of dwellings held on leases from the same landlord have the right, exercisable subject to and in accordance with Chapter V, to have an audit carried out on their behalf relating to the management of the relevant premises and any appurtenant property by or on behalf of the landlord.",
+   "quote": "confer on two or more qualifying tenants of dwellings held on leases from the same landlord the right, exercisable subject to and in accordance with this Chapter, to have an audit carried out on their behalf which relates to the management of the relevant premises and any appurtenant property by or on behalf of the landlord"
+  },
+  {
+   "requirement": "Where the relevant premises consist of or include two dwellings let to qualifying tenants of the same landlord, the right to have an audit carried out is exercisable by either or both of those tenants.",
+   "quote": "where the relevant premises consist of or include two dwellings let to qualifying tenants of the same landlord, by either or both of those tenants"
+  },
+  {
+   "requirement": "Where the relevant premises consist of or include three or more dwellings let to qualifying tenants of the same landlord, the right to have an audit carried out is exercisable by not less than two-thirds of those tenants.",
+   "quote": "where the relevant premises consist of or include three or more dwellings let to qualifying tenants of the same landlord, by not less than two-thirds of those tenants"
+  },
+  {
+   "requirement": "In Chapter V, the dwellings let to qualifying tenants of the same landlord who hold the right to an audit are referred to as the constituent dwellings.",
+   "quote": "in this Chapter the dwellings let to those qualifying tenants are referred to as “the constituent dwellings”"
+  },
+  {
+   "requirement": "In relation to an audit on behalf of two or more qualifying tenants, the relevant premises means so much of the building or buildings containing the dwellings let to those tenants, and any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which common service charge contributions are payable under the leases of those qualifying tenants.",
+   "quote": "“the relevant premises” means so much of— (i) the building or buildings containing the dwellings let to those tenants, and (ii) any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which common service charge contributions are payable under the leases of those qualifying tenants"
+  },
+  {
+   "requirement": "In relation to an audit on behalf of two or more qualifying tenants, appurtenant property means so much of any property not contained in the relevant premises as constitutes property in relation to which management functions discharged in respect of common service charge contributions are discharged.",
+   "quote": "“appurtenant property” means so much of any property not contained in the relevant premises as constitutes property in relation to which any such management functions are discharged"
+  },
+  {
+   "requirement": "A single qualifying tenant of a dwelling has the right, exercisable subject to and in accordance with Chapter V, to have an audit carried out on his behalf relating to the management of the relevant premises and any appurtenant property by or on behalf of the landlord.",
+   "quote": "confer on a single qualifying tenant of a dwelling the right, exercisable subject to and in accordance with this Chapter, to have an audit carried out on his behalf which relates to the management of the relevant premises and any appurtenant property by or on behalf of the landlord"
+  },
+  {
+   "requirement": "The right to have an audit carried out is exercisable by a single qualifying tenant of a dwelling where the relevant premises contain no other dwelling let to a qualifying tenant apart from that let to him.",
+   "quote": "That right shall be exercisable by a single qualifying tenant of a dwelling where the relevant premises contain no other dwelling let to a qualifying tenant apart from that let to him."
+  },
+  {
+   "requirement": "In relation to an audit on behalf of a single qualifying tenant, the relevant premises means so much of the building containing the dwelling let to him, and any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which a service charge is payable under his lease, whether as a common service charge contribution or otherwise.",
+   "quote": "“the relevant premises” means so much of— (i) the building containing the dwelling let to him, and (ii) any other building or buildings, as constitutes premises in relation to which management functions are discharged in respect of the costs of which a service charge is payable under his lease (whether as a common service charge contribution or otherwise)"
+  },
+  {
+   "requirement": "In relation to an audit on behalf of a single qualifying tenant, appurtenant property means so much of any property not contained in the relevant premises as constitutes property in relation to which management functions discharged in respect of service charges payable under his lease are discharged.",
+   "quote": "“appurtenant property” means so much of any property not contained in the relevant premises as constitutes property in relation to which any such management functions are discharged"
+  },
+  {
+   "requirement": "The provisions of sections 78 to 83 apply in relation to an audit on behalf of a single qualifying tenant with any necessary modifications as they have effect in relation to an audit on behalf of two or more qualifying tenants.",
+   "quote": "The provisions of sections 78 to 83 shall, with any necessary modifications, have effect in relation to an audit on behalf of a single qualifying tenant as they have effect in relation to an audit on behalf of two or more qualifying tenants."
+  },
+  {
+   "requirement": "For the purposes of section 76, common service charge contributions are payable by two or more persons under their leases if they may be required under the terms of those leases to contribute to the same costs by the payment of service charges.",
+   "quote": "common service charge contributions are payable by two or more persons under their leases if they may be required under the terms of those leases to contribute to the same costs by the payment of service charges"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 0
+ }
+}

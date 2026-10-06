@@ -1,0 +1,234 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s84@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s84",
+ "version": "current",
+ "source_sha256": "ee8e46e30b30abead3c49f8e11bbdfa118a50bac357318fbfae530a63e0bf097",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Upper Tribunal has the power from time to time, without prejudice to any concurrent jurisdiction of the court, to wholly or partially discharge or modify a restriction affecting freehold land on the application of any person interested in that land, if it is satisfied that one of the statutory grounds is met.",
+    "quote": "The Upper Tribunal shall (without prejudice to any concurrent jurisdiction of the court) have power from time to time, on the application of any person interested in any freehold land affected by any restriction arising under covenant or otherwise"
+   },
+   {
+    "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that, due to changes in the character of the property or the neighbourhood or other circumstances deemed material, the restriction ought to be deemed obsolete.",
+    "quote": "that by reason of changes in the character of the property or the neighbourhood or other circumstances of the case which the Upper Tribunal may deem material, the restriction ought to be deemed obsolete"
+   },
+   {
+    "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that the case falls within subsection (1A) and the continued existence of the restriction would impede, or unless modified would impede, some reasonable user of the land for public or private purposes.",
+    "quote": "that in a case falling within subsection (1A) below the continued existence thereof would impede some reasonable user of the land for public or private purposes or, as the case may be, would unless modified so impede such user"
+   },
+   {
+    "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that the persons of full age and capacity entitled to the benefit of the restriction have agreed, expressly or by implication through their acts or omissions, to the discharge or modification.",
+    "quote": "that the persons of full age and capacity for the time being or from time to time entitled to the benefit of the restriction, whether in respect of estates in fee simple or any lesser estates or interests in the property to which the benefit of the restriction is annexed, have agreed, either expressly or by implication, by their acts or omissions, to the same being discharged or modified"
+   },
+   {
+    "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that the proposed discharge or modification will not injure the persons entitled to the benefit of the restriction.",
+    "quote": "that the proposed discharge or modification will not injure the persons entitled to the benefit of the restriction"
+   },
+   {
+    "requirement": "An order of the Upper Tribunal discharging or modifying a restriction may direct the applicant to pay to any person entitled to the benefit of the restriction a sum by way of consideration awarded under either compensation for loss or disadvantage suffered, or compensation for the reduction in consideration originally received, but not under both heads.",
+    "quote": "an order discharging or modifying a restriction under this subsection may direct the applicant to pay to any person entitled to the benefit of the restriction such sum by way of consideration as the Tribunal may think it just to award under one, but not both, of the following heads"
+   },
+   {
+    "requirement": "To authorize discharge or modification under subsection (1)(aa) on the ground of impeding reasonable user, the Upper Tribunal must be satisfied that the restriction either does not secure practical benefits of substantial value or advantage to the persons entitled, or is contrary to the public interest, and that money will provide adequate compensation for any loss or disadvantage suffered.",
+    "quote": "either— (a) does not secure to persons entitled to the benefit of it any practical benefits of substantial value or advantage to them; or (b) is contrary to the public interest; and that money will be an adequate compensation for the loss or disadvantage (if any) which any such person will suffer from the discharge or modification"
+   },
+   {
+    "requirement": "When determining whether a case falls within subsection (1A) and whether a restriction ought to be discharged or modified, the Upper Tribunal must take into account the development plan, any declared or ascertainable pattern for planning permissions, the period and context in which the restriction was created, and any other material circumstances.",
+    "quote": "the Upper Tribunal shall take into account the development plan and any declared or ascertainable pattern for the grant or refusal of planning permissions in the relevant areas, as well as the period at which and context in which the restriction was created or imposed and any other material circumstances"
+   },
+   {
+    "requirement": "The Upper Tribunal has the power to modify a restriction by adding further provisions restricting the user of or building on the land that appear reasonable in view of the relaxation and that are accepted by the applicant, and it may refuse to modify the restriction without such additions.",
+    "quote": "includes power to add such further provisions restricting the user of or the building on the land affected as appear to the Upper Tribunal to be reasonable in view of the relaxation of the existing provisions, and as may be accepted by the applicant; and the Upper Tribunal may accordingly refuse to modify a restriction without some such addition"
+   },
+   {
+    "requirement": "The court has the power, on the application of any person interested, to declare whether freehold land is or would be affected by a restriction imposed by an instrument, and to declare the nature, extent, and enforceability of that restriction and by whom it is enforceable.",
+    "quote": "The court shall have power on the application of any person interested— (a) To declare whether or not in any particular case any freehold land is or would in any given event be affected by a restriction imposed by any instrument; or (b) To declare what, upon the true construction of any instrument purporting to impose a restriction, is the nature and extent of the restriction thereby imposed and whether the same is or would in any given event be enforceable and if so by whom"
+   },
+   {
+    "requirement": "The court's power to make declarations under subsection (2) is not affected by subsections (7) or (11), nor by any later enactment providing for section 84 not to apply to any restrictions unless expressed to the contrary.",
+    "quote": "Neither subsections (7) and (11) of this section nor, unless the contrary is expressed, any later enactment providing for this section not to apply to any restrictions shall affect the operation of this subsection or the operation for purposes of this subsection of any other provisions of this section"
+   },
+   {
+    "requirement": "Before making any order under section 84, the Upper Tribunal must direct such enquiries of any government department or local authority and such notices to persons appearing to be entitled to the benefit of the restriction as it thinks fit.",
+    "quote": "The Upper Tribunal shall, before making any order under this section, direct such enquiries, if any, to be made of any government department or local authority, and such notices, if any, whether by way of advertisement or otherwise, to be given to such of the persons who appear to be entitled to the benefit of the restriction intended to be discharged, modified, or dealt with as, having regard to any enquiries notices or other proceedings previously made, given or taken, the Upper Tribunal may think fit"
+   },
+   {
+    "requirement": "On an application under section 84, the Upper Tribunal must give any necessary directions as to which persons are or are not admitted to oppose the application, and no appeal lies against any such direction.",
+    "quote": "the Upper Tribunal shall give any necessary directions as to the persons who are or are not to be admitted (as appearing to be entitled to the benefit of the restriction) to oppose the application, and no appeal shall lie against any such direction"
+   },
+   {
+    "requirement": "Tribunal Procedure Rules must provide that Upper Tribunal proceedings under section 84 can, and if the rules so provide shall, be suspended to obtain a court decision under subsection (2) when a relevant question arises.",
+    "quote": "Tribunal Procedure Rules shall make provision whereby, in cases in which there arises on such an application (whether or not in connection with the admission of persons to oppose) any such question as is referred to in subsection (2) (a) or (b) of this section, the proceedings on the application can and, if the rules so provide, shall be suspended to enable the decision of the court to be obtained on that question"
+   },
+   {
+    "requirement": "Any order made under section 84 binds all persons then entitled or thereafter capable of becoming entitled to the benefit of the restriction, regardless of whether they are ascertained, of full age or capacity, parties to the proceedings, or served with notice.",
+    "quote": "Any order made under this section shall be binding on all persons, whether ascertained or of full age or capacity or not, then entitled or thereafter capable of becoming entitled to the benefit of any restriction, which is thereby discharged, modified, or dealt with, and whether such persons are parties to the proceedings or have been served with notice or not"
+   },
+   {
+    "requirement": "The court or the Upper Tribunal may make an order under section 84 without production of the instrument alleged to impose the restriction and may act on such evidence of the instrument as it thinks sufficient.",
+    "quote": "An order may be made under this section notwithstanding that any instrument which is alleged to impose the restriction intended to be discharged, modified, or dealt with, may not have been produced to the court or the Upper Tribunal, and the court or the Upper Tribunal may act on such evidence of that instrument as it may think sufficient"
+   },
+   {
+    "requirement": "Section 84 applies to restrictions whether subsisting at the commencement of the Act or imposed thereafter, but does not apply where a restriction was imposed upon a disposition made gratuitously or for nominal consideration for public purposes.",
+    "quote": "This section applies to restrictions whether subsisting at the commencement of this Act or imposed thereafter, but this section does not apply where the restriction was imposed on the occasion of a disposition made gratuitously or for a nominal consideration for public purposes"
+   },
+   {
+    "requirement": "Section 84 applies whether the land affected by the restrictions is registered or not registered.",
+    "quote": "This section applies whether the land affected by the restrictions is registered or not"
+   },
+   {
+    "requirement": "A defendant in proceedings brought to enforce a restrictive covenant may apply to the court for an order granting leave to apply to the Upper Tribunal under section 84 and staying the enforcement proceedings in the meantime.",
+    "quote": "Where any proceedings by action or otherwise are taken to enforce a restrictive covenant, any person against whom the proceedings are taken, may in such proceedings apply to the court for an order giving leave to apply to the Upper Tribunal under this section, and staying the proceedings in the meantime"
+   },
+   {
+    "requirement": "Section 84 does not apply to restrictions imposed by the Commissioners of Works for the protection of Royal Parks or Gardens, nor to similar restrictions imposed upon pre-Act enfranchisement in Crown or Duchy of Lancaster manors.",
+    "quote": "This section does not apply to restrictions imposed by the Commissioners of Works under any statutory power for the protection of any Royal Park or Garden or to restrictions of a like character imposed upon the occasion of any enfranchisement effected before the commencement of this Act in any manor vested in His Majesty in right of the Crown or the Duchy of Lancaster"
+   },
+   {
+    "requirement": "Section 84 does not apply to restrictions created or imposed for Naval, Military, or Air Force purposes, not in connection with aerodrome use, for as long as the restriction remains enforceable by or on behalf of the Crown.",
+    "quote": "shall exclude the application of this section to a restriction falling within subsection (11)(a), and not created or imposed in connection with the use of any land as an aerodrome, only so long as the restriction is enforceable by or on behalf of the Crown"
+   },
+   {
+    "requirement": "Section 84 does not apply to restrictions created or imposed for specified statutory civil aviation purposes, or in connection with the use of any land as an aerodrome, for as long as the restriction is enforceable by or on behalf of the Crown or any public or international authority.",
+    "quote": "shall exclude the application of this section to a restriction falling within subsection (11)(b), or created or imposed in connection with the use of any land as an aerodrome, only so long as the restriction is enforceable by or on behalf of the Crown or any public or international authority"
+   },
+   {
+    "requirement": "Where a leasehold term of more than forty years is created in land, section 84 applies to restrictions affecting the leasehold land in the same manner as freehold land after twenty-five years of the term have expired, provided that the lease is not a mining lease.",
+    "quote": "Where a term of more than forty years is created in land (whether before or after the commencement of this Act) this section shall, after the expiration of twenty-five years of the term, apply to restrictions affecting such leasehold land in like manner as it would have applied had the land been freehold:Provided that this subsection shall not apply to mining leases"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum number of heads of compensation under which the Upper Tribunal may award consideration to a person entitled to the benefit of a restriction",
+    "value": "one, but not both",
+    "quote": "under one, but not both, of the following heads"
+   },
+   {
+    "what": "the minimum total term of a lease required for section 84 to apply to restrictions affecting leasehold land",
+    "value": "more than forty years",
+    "quote": "Where a term of more than forty years is created in land"
+   },
+   {
+    "what": "the period of the lease term that must expire before section 84 applies to restrictions affecting qualifying leasehold land",
+    "value": "twenty-five years",
+    "quote": "after the expiration of twenty-five years of the term"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Upper Tribunal has the power from time to time, without prejudice to any concurrent jurisdiction of the court, to wholly or partially discharge or modify a restriction affecting freehold land on the application of any person interested in that land, if it is satisfied that one of the statutory grounds is met.",
+   "quote": "The Upper Tribunal shall (without prejudice to any concurrent jurisdiction of the court) have power from time to time, on the application of any person interested in any freehold land affected by any restriction arising under covenant or otherwise"
+  },
+  {
+   "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that, due to changes in the character of the property or the neighbourhood or other circumstances deemed material, the restriction ought to be deemed obsolete.",
+   "quote": "that by reason of changes in the character of the property or the neighbourhood or other circumstances of the case which the Upper Tribunal may deem material, the restriction ought to be deemed obsolete"
+  },
+  {
+   "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that the case falls within subsection (1A) and the continued existence of the restriction would impede, or unless modified would impede, some reasonable user of the land for public or private purposes.",
+   "quote": "that in a case falling within subsection (1A) below the continued existence thereof would impede some reasonable user of the land for public or private purposes or, as the case may be, would unless modified so impede such user"
+  },
+  {
+   "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that the persons of full age and capacity entitled to the benefit of the restriction have agreed, expressly or by implication through their acts or omissions, to the discharge or modification.",
+   "quote": "that the persons of full age and capacity for the time being or from time to time entitled to the benefit of the restriction, whether in respect of estates in fee simple or any lesser estates or interests in the property to which the benefit of the restriction is annexed, have agreed, either expressly or by implication, by their acts or omissions, to the same being discharged or modified"
+  },
+  {
+   "requirement": "The Upper Tribunal may discharge or modify a restriction on freehold land if it is satisfied that the proposed discharge or modification will not injure the persons entitled to the benefit of the restriction.",
+   "quote": "that the proposed discharge or modification will not injure the persons entitled to the benefit of the restriction"
+  },
+  {
+   "requirement": "An order of the Upper Tribunal discharging or modifying a restriction may direct the applicant to pay to any person entitled to the benefit of the restriction a sum by way of consideration awarded under either compensation for loss or disadvantage suffered, or compensation for the reduction in consideration originally received, but not under both heads.",
+   "quote": "an order discharging or modifying a restriction under this subsection may direct the applicant to pay to any person entitled to the benefit of the restriction such sum by way of consideration as the Tribunal may think it just to award under one, but not both, of the following heads"
+  },
+  {
+   "requirement": "To authorize discharge or modification under subsection (1)(aa) on the ground of impeding reasonable user, the Upper Tribunal must be satisfied that the restriction either does not secure practical benefits of substantial value or advantage to the persons entitled, or is contrary to the public interest, and that money will provide adequate compensation for any loss or disadvantage suffered.",
+   "quote": "either— (a) does not secure to persons entitled to the benefit of it any practical benefits of substantial value or advantage to them; or (b) is contrary to the public interest; and that money will be an adequate compensation for the loss or disadvantage (if any) which any such person will suffer from the discharge or modification"
+  },
+  {
+   "requirement": "When determining whether a case falls within subsection (1A) and whether a restriction ought to be discharged or modified, the Upper Tribunal must take into account the development plan, any declared or ascertainable pattern for planning permissions, the period and context in which the restriction was created, and any other material circumstances.",
+   "quote": "the Upper Tribunal shall take into account the development plan and any declared or ascertainable pattern for the grant or refusal of planning permissions in the relevant areas, as well as the period at which and context in which the restriction was created or imposed and any other material circumstances"
+  },
+  {
+   "requirement": "The Upper Tribunal has the power to modify a restriction by adding further provisions restricting the user of or building on the land that appear reasonable in view of the relaxation and that are accepted by the applicant, and it may refuse to modify the restriction without such additions.",
+   "quote": "includes power to add such further provisions restricting the user of or the building on the land affected as appear to the Upper Tribunal to be reasonable in view of the relaxation of the existing provisions, and as may be accepted by the applicant; and the Upper Tribunal may accordingly refuse to modify a restriction without some such addition"
+  },
+  {
+   "requirement": "The court has the power, on the application of any person interested, to declare whether freehold land is or would be affected by a restriction imposed by an instrument, and to declare the nature, extent, and enforceability of that restriction and by whom it is enforceable.",
+   "quote": "The court shall have power on the application of any person interested— (a) To declare whether or not in any particular case any freehold land is or would in any given event be affected by a restriction imposed by any instrument; or (b) To declare what, upon the true construction of any instrument purporting to impose a restriction, is the nature and extent of the restriction thereby imposed and whether the same is or would in any given event be enforceable and if so by whom"
+  },
+  {
+   "requirement": "The court's power to make declarations under subsection (2) is not affected by subsections (7) or (11), nor by any later enactment providing for section 84 not to apply to any restrictions unless expressed to the contrary.",
+   "quote": "Neither subsections (7) and (11) of this section nor, unless the contrary is expressed, any later enactment providing for this section not to apply to any restrictions shall affect the operation of this subsection or the operation for purposes of this subsection of any other provisions of this section"
+  },
+  {
+   "requirement": "Before making any order under section 84, the Upper Tribunal must direct such enquiries of any government department or local authority and such notices to persons appearing to be entitled to the benefit of the restriction as it thinks fit.",
+   "quote": "The Upper Tribunal shall, before making any order under this section, direct such enquiries, if any, to be made of any government department or local authority, and such notices, if any, whether by way of advertisement or otherwise, to be given to such of the persons who appear to be entitled to the benefit of the restriction intended to be discharged, modified, or dealt with as, having regard to any enquiries notices or other proceedings previously made, given or taken, the Upper Tribunal may think fit"
+  },
+  {
+   "requirement": "On an application under section 84, the Upper Tribunal must give any necessary directions as to which persons are or are not admitted to oppose the application, and no appeal lies against any such direction.",
+   "quote": "the Upper Tribunal shall give any necessary directions as to the persons who are or are not to be admitted (as appearing to be entitled to the benefit of the restriction) to oppose the application, and no appeal shall lie against any such direction"
+  },
+  {
+   "requirement": "Tribunal Procedure Rules must provide that Upper Tribunal proceedings under section 84 can, and if the rules so provide shall, be suspended to obtain a court decision under subsection (2) when a relevant question arises.",
+   "quote": "Tribunal Procedure Rules shall make provision whereby, in cases in which there arises on such an application (whether or not in connection with the admission of persons to oppose) any such question as is referred to in subsection (2) (a) or (b) of this section, the proceedings on the application can and, if the rules so provide, shall be suspended to enable the decision of the court to be obtained on that question"
+  },
+  {
+   "requirement": "Any order made under section 84 binds all persons then entitled or thereafter capable of becoming entitled to the benefit of the restriction, regardless of whether they are ascertained, of full age or capacity, parties to the proceedings, or served with notice.",
+   "quote": "Any order made under this section shall be binding on all persons, whether ascertained or of full age or capacity or not, then entitled or thereafter capable of becoming entitled to the benefit of any restriction, which is thereby discharged, modified, or dealt with, and whether such persons are parties to the proceedings or have been served with notice or not"
+  },
+  {
+   "requirement": "The court or the Upper Tribunal may make an order under section 84 without production of the instrument alleged to impose the restriction and may act on such evidence of the instrument as it thinks sufficient.",
+   "quote": "An order may be made under this section notwithstanding that any instrument which is alleged to impose the restriction intended to be discharged, modified, or dealt with, may not have been produced to the court or the Upper Tribunal, and the court or the Upper Tribunal may act on such evidence of that instrument as it may think sufficient"
+  },
+  {
+   "requirement": "Section 84 applies to restrictions whether subsisting at the commencement of the Act or imposed thereafter, but does not apply where a restriction was imposed upon a disposition made gratuitously or for nominal consideration for public purposes.",
+   "quote": "This section applies to restrictions whether subsisting at the commencement of this Act or imposed thereafter, but this section does not apply where the restriction was imposed on the occasion of a disposition made gratuitously or for a nominal consideration for public purposes"
+  },
+  {
+   "requirement": "Section 84 applies whether the land affected by the restrictions is registered or not registered.",
+   "quote": "This section applies whether the land affected by the restrictions is registered or not"
+  },
+  {
+   "requirement": "A defendant in proceedings brought to enforce a restrictive covenant may apply to the court for an order granting leave to apply to the Upper Tribunal under section 84 and staying the enforcement proceedings in the meantime.",
+   "quote": "Where any proceedings by action or otherwise are taken to enforce a restrictive covenant, any person against whom the proceedings are taken, may in such proceedings apply to the court for an order giving leave to apply to the Upper Tribunal under this section, and staying the proceedings in the meantime"
+  },
+  {
+   "requirement": "Section 84 does not apply to restrictions imposed by the Commissioners of Works for the protection of Royal Parks or Gardens, nor to similar restrictions imposed upon pre-Act enfranchisement in Crown or Duchy of Lancaster manors.",
+   "quote": "This section does not apply to restrictions imposed by the Commissioners of Works under any statutory power for the protection of any Royal Park or Garden or to restrictions of a like character imposed upon the occasion of any enfranchisement effected before the commencement of this Act in any manor vested in His Majesty in right of the Crown or the Duchy of Lancaster"
+  },
+  {
+   "requirement": "Section 84 does not apply to restrictions created or imposed for Naval, Military, or Air Force purposes, not in connection with aerodrome use, for as long as the restriction remains enforceable by or on behalf of the Crown.",
+   "quote": "shall exclude the application of this section to a restriction falling within subsection (11)(a), and not created or imposed in connection with the use of any land as an aerodrome, only so long as the restriction is enforceable by or on behalf of the Crown"
+  },
+  {
+   "requirement": "Section 84 does not apply to restrictions created or imposed for specified statutory civil aviation purposes, or in connection with the use of any land as an aerodrome, for as long as the restriction is enforceable by or on behalf of the Crown or any public or international authority.",
+   "quote": "shall exclude the application of this section to a restriction falling within subsection (11)(b), or created or imposed in connection with the use of any land as an aerodrome, only so long as the restriction is enforceable by or on behalf of the Crown or any public or international authority"
+  },
+  {
+   "requirement": "Where a leasehold term of more than forty years is created in land, section 84 applies to restrictions affecting the leasehold land in the same manner as freehold land after twenty-five years of the term have expired, provided that the lease is not a mining lease.",
+   "quote": "Where a term of more than forty years is created in land (whether before or after the commencement of this Act) this section shall, after the expiration of twenty-five years of the term, apply to restrictions affecting such leasehold land in like manner as it would have applied had the land been freehold:Provided that this subsection shall not apply to mining leases"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the minimum total term of a lease required for section 84 to apply to restrictions affecting leasehold land",
+   "value": "more than forty years",
+   "quote": "Where a term of more than forty years is created in land"
+  },
+  {
+   "what": "the period of the lease term that must expire before section 84 applies to restrictions affecting qualifying leasehold land",
+   "value": "twenty-five years",
+   "quote": "after the expiration of twenty-five years of the term"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 23,
+  "elements_verified": 23,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

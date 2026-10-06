@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/2003/1/s403@current",
+ "section": "uk/ukpga/2003/1/s403",
+ "version": "current",
+ "source_sha256": "8566b0a91d0d6c22faf007c7c1434b2e3d64603c92e24d6f930ccbcc43275252",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The amount of a payment or benefit to which section 403 of the Income Tax (Earnings and Pensions) Act 2003 applies counts as employment income of the employee or former employee for the relevant tax year if and to the extent that it exceeds the £30,000 threshold.",
+    "quote": "counts as employment income of the employee or former employee for the relevant tax year if and to the extent that it exceeds the £30,000 threshold"
+   },
+   {
+    "requirement": "For the purposes of section 403, the relevant tax year is defined as the tax year in which the payment or other benefit is received.",
+    "quote": "“the relevant tax year” means the tax year in which the payment or other benefit is received"
+   },
+   {
+    "requirement": "Subject to section 402B(3), a cash benefit is treated as received for the purposes of Chapter 3 either when it is paid, when a payment is made on account of it, or when the recipient becomes entitled to require payment of or on account of it.",
+    "quote": "a cash benefit is treated as received— (i) when it is paid or a payment is made on account of it, or (ii) when the recipient becomes entitled to require payment of or on account of it"
+   },
+   {
+    "requirement": "Subject to section 402B(3), a non-cash benefit is treated as received for the purposes of Chapter 3 when it is used or enjoyed.",
+    "quote": "a non-cash benefit is treated as received when it is used or enjoyed"
+   },
+   {
+    "requirement": "For the purposes of Chapter 3, the amount of a payment or benefit in respect of an employee or former employee exceeds the £30,000 threshold if and to the extent that, when aggregated with other payments or benefits in respect of that employee or former employee to which section 403 applies and other payments or benefits received in the tax year 2017-18 or earlier to which Chapter 3 applied in the tax year of receipt, it exceeds £30,000 according to the rules in section 404.",
+    "quote": "exceeds the £30,000 threshold if and to the extent that, when aggregated with— (a) other payments or benefits in respect of the employee or former employee that are payments or benefits to which this section applies, and (b) other payments or benefits in respect of the employee or former employee that are payments or benefits— (i) received in the tax year 2017-18 or an earlier tax year, and (ii) to which this Chapter applied in the tax year of receipt, it exceeds £30,000 according to the rules in section 404"
+   },
+   {
+    "requirement": "If a payment or benefit to which section 403 applies is received after the death of the employee or former employee, its amount counts as employment income of the personal representatives for the relevant year if or to the extent that it exceeds £30,000 according to the rules in section 404.",
+    "quote": "counts as the employment income of the personal representatives for the relevant year if or to the extent that it exceeds £30,000 according to the rules in section 404"
+   },
+   {
+    "requirement": "Where a payment or benefit is received after the death of an employee or former employee, the tax is to be assessed and charged on the personal representatives and constitutes a debt due from and payable out of the estate.",
+    "quote": "the tax is accordingly to be assessed and charged on them and is a debt due from and payable out of the estate"
+   },
+   {
+    "requirement": "In Chapter 3, references to the taxable person mean the person in relation to whom subsection (1) or (5) provides for an amount to count as employment income, or in relation to whom section 402B(1) provides for an amount to be treated as an amount of earnings.",
+    "quote": "references to the taxable person are to the person in relation to whom subsection (1) or (5) provides for an amount to count as employment income or, as the case may be, in relation to whom section 402B(1) provides for an amount to be treated as an amount of earnings"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the threshold above which a payment or benefit counts as employment income",
+    "value": "£30,000",
+    "quote": "exceeds the £30,000 threshold"
+   },
+   {
+    "what": "the cutoff tax year for aggregating prior payments or benefits to which the Chapter applied",
+    "value": "2017-18",
+    "quote": "received in the tax year 2017-18 or an earlier tax year"
+   },
+   {
+    "what": "the monetary limit applied when aggregating payments and benefits under section 404",
+    "value": "£30,000",
+    "quote": "it exceeds £30,000 according to the rules in section 404"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The amount of a payment or benefit to which section 403 of the Income Tax (Earnings and Pensions) Act 2003 applies counts as employment income of the employee or former employee for the relevant tax year if and to the extent that it exceeds the £30,000 threshold.",
+   "quote": "counts as employment income of the employee or former employee for the relevant tax year if and to the extent that it exceeds the £30,000 threshold"
+  },
+  {
+   "requirement": "For the purposes of section 403, the relevant tax year is defined as the tax year in which the payment or other benefit is received.",
+   "quote": "“the relevant tax year” means the tax year in which the payment or other benefit is received"
+  },
+  {
+   "requirement": "Subject to section 402B(3), a cash benefit is treated as received for the purposes of Chapter 3 either when it is paid, when a payment is made on account of it, or when the recipient becomes entitled to require payment of or on account of it.",
+   "quote": "a cash benefit is treated as received— (i) when it is paid or a payment is made on account of it, or (ii) when the recipient becomes entitled to require payment of or on account of it"
+  },
+  {
+   "requirement": "Subject to section 402B(3), a non-cash benefit is treated as received for the purposes of Chapter 3 when it is used or enjoyed.",
+   "quote": "a non-cash benefit is treated as received when it is used or enjoyed"
+  },
+  {
+   "requirement": "For the purposes of Chapter 3, the amount of a payment or benefit in respect of an employee or former employee exceeds the £30,000 threshold if and to the extent that, when aggregated with other payments or benefits in respect of that employee or former employee to which section 403 applies and other payments or benefits received in the tax year 2017-18 or earlier to which Chapter 3 applied in the tax year of receipt, it exceeds £30,000 according to the rules in section 404.",
+   "quote": "exceeds the £30,000 threshold if and to the extent that, when aggregated with— (a) other payments or benefits in respect of the employee or former employee that are payments or benefits to which this section applies, and (b) other payments or benefits in respect of the employee or former employee that are payments or benefits— (i) received in the tax year 2017-18 or an earlier tax year, and (ii) to which this Chapter applied in the tax year of receipt, it exceeds £30,000 according to the rules in section 404"
+  },
+  {
+   "requirement": "If a payment or benefit to which section 403 applies is received after the death of the employee or former employee, its amount counts as employment income of the personal representatives for the relevant year if or to the extent that it exceeds £30,000 according to the rules in section 404.",
+   "quote": "counts as the employment income of the personal representatives for the relevant year if or to the extent that it exceeds £30,000 according to the rules in section 404"
+  },
+  {
+   "requirement": "Where a payment or benefit is received after the death of an employee or former employee, the tax is to be assessed and charged on the personal representatives and constitutes a debt due from and payable out of the estate.",
+   "quote": "the tax is accordingly to be assessed and charged on them and is a debt due from and payable out of the estate"
+  },
+  {
+   "requirement": "In Chapter 3, references to the taxable person mean the person in relation to whom subsection (1) or (5) provides for an amount to count as employment income, or in relation to whom section 402B(1) provides for an amount to be treated as an amount of earnings.",
+   "quote": "references to the taxable person are to the person in relation to whom subsection (1) or (5) provides for an amount to count as employment income or, as the case may be, in relation to whom section 402B(1) provides for an amount to be treated as an amount of earnings"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the threshold above which a payment or benefit counts as employment income",
+   "value": "£30,000",
+   "quote": "exceeds the £30,000 threshold"
+  },
+  {
+   "what": "the cutoff tax year for aggregating prior payments or benefits to which the Chapter applied",
+   "value": "2017-18",
+   "quote": "received in the tax year 2017-18 or an earlier tax year"
+  },
+  {
+   "what": "the monetary limit applied when aggregating payments and benefits under section 404",
+   "value": "£30,000",
+   "quote": "it exceeds £30,000 according to the rules in section 404"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

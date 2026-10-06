@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2010/15/s27@current",
+ "section": "uk/ukpga/2010/15/s27",
+ "version": "current",
+ "source_sha256": "d81bf17b554625c27509163a67f221f7801bf5409464b647ddf3b9d4328b8faa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person (A) victimises another person (B) if person A subjects person B to a detriment because person B does a protected act.",
+    "quote": "A subjects B to a detriment because— (a) B does a protected act"
+   },
+   {
+    "requirement": "A person (A) victimises another person (B) if person A subjects person B to a detriment because person A believes that person B has done, or may do, a protected act.",
+    "quote": "A believes that B has done, or may do, a protected act"
+   },
+   {
+    "requirement": "Bringing proceedings under the Equality Act 2010 constitutes a protected act.",
+    "quote": "bringing proceedings under this Act"
+   },
+   {
+    "requirement": "Giving evidence or information in connection with proceedings under the Equality Act 2010 constitutes a protected act.",
+    "quote": "giving evidence or information in connection with proceedings under this Act"
+   },
+   {
+    "requirement": "Doing any other thing for the purposes of or in connection with the Equality Act 2010 constitutes a protected act.",
+    "quote": "doing any other thing for the purposes of or in connection with this Act"
+   },
+   {
+    "requirement": "Making an allegation, whether express or not, that person A or another person has contravened the Equality Act 2010 constitutes a protected act.",
+    "quote": "making an allegation (whether or not express) that A or another person has contravened this Act"
+   },
+   {
+    "requirement": "Giving false evidence or information, or making a false allegation, does not constitute a protected act if the evidence or information is given, or the allegation is made, in bad faith.",
+    "quote": "not a protected act if the evidence or information is given, or the allegation is made, in bad faith"
+   },
+   {
+    "requirement": "The statutory rules on victimisation apply only where the person subjected to a detriment (person B) is an individual.",
+    "quote": "applies only where the person subjected to a detriment is an individual"
+   },
+   {
+    "requirement": "A reference to contravening the Equality Act 2010 includes committing a breach of an equality clause or rule.",
+    "quote": "includes a reference to committing a breach of an equality clause or rule"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person (A) victimises another person (B) if person A subjects person B to a detriment because person B does a protected act.",
+   "quote": "A subjects B to a detriment because— (a) B does a protected act"
+  },
+  {
+   "requirement": "A person (A) victimises another person (B) if person A subjects person B to a detriment because person A believes that person B has done, or may do, a protected act.",
+   "quote": "A believes that B has done, or may do, a protected act"
+  },
+  {
+   "requirement": "Bringing proceedings under the Equality Act 2010 constitutes a protected act.",
+   "quote": "bringing proceedings under this Act"
+  },
+  {
+   "requirement": "Giving evidence or information in connection with proceedings under the Equality Act 2010 constitutes a protected act.",
+   "quote": "giving evidence or information in connection with proceedings under this Act"
+  },
+  {
+   "requirement": "Doing any other thing for the purposes of or in connection with the Equality Act 2010 constitutes a protected act.",
+   "quote": "doing any other thing for the purposes of or in connection with this Act"
+  },
+  {
+   "requirement": "Making an allegation, whether express or not, that person A or another person has contravened the Equality Act 2010 constitutes a protected act.",
+   "quote": "making an allegation (whether or not express) that A or another person has contravened this Act"
+  },
+  {
+   "requirement": "Giving false evidence or information, or making a false allegation, does not constitute a protected act if the evidence or information is given, or the allegation is made, in bad faith.",
+   "quote": "not a protected act if the evidence or information is given, or the allegation is made, in bad faith"
+  },
+  {
+   "requirement": "The statutory rules on victimisation apply only where the person subjected to a detriment (person B) is an individual.",
+   "quote": "applies only where the person subjected to a detriment is an individual"
+  },
+  {
+   "requirement": "A reference to contravening the Equality Act 2010 includes committing a breach of an equality clause or rule.",
+   "quote": "includes a reference to committing a breach of an equality clause or rule"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

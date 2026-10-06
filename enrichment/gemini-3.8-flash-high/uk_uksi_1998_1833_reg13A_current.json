@@ -1,0 +1,363 @@
+{
+ "key": "uk/uksi/1998/1833/reg13A@current",
+ "section": "uk/uksi/1998/1833/reg13A",
+ "version": "current",
+ "source_sha256": "ab059da7b568cd99e33a4b1b341023da1edfc35f449500df939eeeb726f0b647",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Regulation 13A applies to a worker in respect of any leave years beginning before 1st April 2024.",
+    "quote": "a worker in respect of any leave years beginning before 1st April 2024"
+   },
+   {
+    "requirement": "Regulation 13A applies to a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024.",
+    "quote": "a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024"
+   },
+   {
+    "requirement": "Subject to regulation 26A and paragraphs (3) and (5), a worker is entitled in each leave year to a period of additional leave determined in accordance with paragraph (2).",
+    "quote": "Subject to regulation 26A and paragraphs (3) and (5), a worker is entitled in each leave year to a period of additional leave determined in accordance with paragraph (2)"
+   },
+   {
+    "requirement": "A worker is entitled to 0.8 weeks of additional leave in any leave year beginning on or after 1st October 2007 but before 1st April 2008.",
+    "quote": "in any leave year beginning on or after 1st October 2007 but before 1st April 2008, 0.8 weeks"
+   },
+   {
+    "requirement": "A worker is entitled in any leave year beginning before 1st October 2007 to a proportion of 0.8 weeks of additional leave equivalent to the proportion of the year beginning on 1st October 2007 which would have elapsed at the end of that leave year.",
+    "quote": "in any leave year beginning before 1st October 2007, a proportion of 0.8 weeks equivalent to the proportion of the year beginning on 1st October 2007 which would have elapsed at the end of that leave year"
+   },
+   {
+    "requirement": "A worker is entitled to 0.8 weeks of additional leave in any leave year beginning on 1st April 2008.",
+    "quote": "in any leave year beginning on 1st April 2008, 0.8 weeks"
+   },
+   {
+    "requirement": "A worker is entitled in any leave year beginning after 1st April 2008 but before 1st April 2009 to 0.8 weeks of additional leave and a proportion of another 0.8 weeks equivalent to the proportion of the year beginning on 1st April 2009 which would have elapsed at the end of that leave year.",
+    "quote": "in any leave year beginning after 1st April 2008 but before 1st April 2009, 0.8 weeks and a proportion of another 0.8 weeks equivalent to the proportion of the year beginning on 1st April 2009 which would have elapsed at the end of that leave year"
+   },
+   {
+    "requirement": "A worker is entitled to 1.6 weeks of additional leave in any leave year beginning on or after 1st April 2009.",
+    "quote": "in any leave year beginning on or after 1st April 2009, 1.6 weeks"
+   },
+   {
+    "requirement": "The aggregate entitlement of a worker provided for in paragraph (2) and regulation 13(1) is subject to a maximum of 28 days.",
+    "quote": "The aggregate entitlement provided for in paragraph (2) and regulation 13(1) is subject to a maximum of 28 days"
+   },
+   {
+    "requirement": "A worker’s leave year begins for the purposes of regulation 13A on the same date as the worker’s leave year begins for the purposes of regulation 13.",
+    "quote": "A worker’s leave year begins for the purposes of this regulation on the same date as the worker’s leave year begins for the purposes of regulation 13"
+   },
+   {
+    "requirement": "Where the date on which a worker’s employment begins is later than the date on which his first leave year begins, the additional leave to which the worker is entitled in that leave year is a proportion of the period applicable under paragraph (2) equal to the proportion of that leave year remaining on the date on which his employment begins.",
+    "quote": "Where the date on which a worker’s employment begins is later than the date on which his first leave year begins, the additional leave to which he is entitled in that leave year is a proportion of the period applicable under paragraph (2) equal to the proportion of that leave year remaining on the date on which his employment begins"
+   },
+   {
+    "requirement": "Leave to which a worker is entitled under regulation 13A may be taken in instalments.",
+    "quote": "Leave to which a worker is entitled under this regulation may be taken in instalments"
+   },
+   {
+    "requirement": "Leave to which a worker is entitled under regulation 13A may not be replaced by a payment in lieu except where the worker’s employment is terminated, where the leave is an entitlement that arises under paragraph (2)(a), (b) or (c), or where the leave is an entitlement to 0.8 weeks that arises under paragraph (2)(d) in respect of that part of the leave year which would have elapsed before 1st April 2009.",
+    "quote": "it may not be replaced by a payment in lieu except where— (a) the worker’s employment is terminated; or (b) the leave is an entitlement that arises under paragraph (2)(a), (b) or (c); or (c) the leave is an entitlement to 0.8 weeks that arises under paragraph (2)(d) in respect of that part of the leave year which would have elapsed before 1st April 2009"
+   },
+   {
+    "requirement": "A relevant agreement may provide for any leave to which a worker is entitled under regulation 13A to be carried forward into the leave year immediately following the leave year in respect of which it is due.",
+    "quote": "A relevant agreement may provide for any leave to which a worker is entitled under this regulation to be carried forward into the leave year immediately following the leave year in respect of which it is due"
+   },
+   {
+    "requirement": "Where, as a result of taking a period of statutory leave in any leave year, a worker is unable to take some or all of the annual leave to which the worker is entitled in that leave year under regulation 13A, the worker is entitled to carry forward such untaken leave into the following leave year.",
+    "quote": "Where, as a result of taking a period of statutory leave in any leave year, a worker is unable to take some or all of the annual leave to which the worker is entitled in that leave year under this regulation, the worker is entitled to carry forward such untaken leave into the following leave year"
+   },
+   {
+    "requirement": "Regulation 13A does not apply to workers to whom the Agricultural Wages (Scotland) Act 1949 applies (as that Act had effect on 1 July 1999).",
+    "quote": "This regulation does not apply to workers to whom the Agricultural Wages (Scotland) Act 1949 applies (as that Act had effect on 1 July 1999)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Cutoff date for leave years beginning before which regulation 13A applies to a worker",
+    "value": "1st April 2024",
+    "quote": "leave years beginning before 1st April 2024"
+   },
+   {
+    "what": "Earliest date for leave years beginning on or after which regulation 13A applies to a worker to whom regulation 15B does not apply",
+    "value": "1st April 2024",
+    "quote": "leave years beginning on or after 1st April 2024"
+   },
+   {
+    "what": "Earliest date for leave years under paragraph (2)(a)",
+    "value": "1st October 2007",
+    "quote": "leave year beginning on or after 1st October 2007"
+   },
+   {
+    "what": "Latest boundary date for leave years under paragraph (2)(a)",
+    "value": "1st April 2008",
+    "quote": "but before 1st April 2008"
+   },
+   {
+    "what": "Additional leave entitlement for leave years under paragraph (2)(a)",
+    "value": "0.8 weeks",
+    "quote": "but before 1st April 2008, 0.8 weeks"
+   },
+   {
+    "what": "Cutoff date for leave years beginning before which paragraph (2)(b) applies",
+    "value": "1st October 2007",
+    "quote": "leave year beginning before 1st October 2007"
+   },
+   {
+    "what": "Base entitlement period used to calculate proportional leave under paragraph (2)(b)",
+    "value": "0.8 weeks",
+    "quote": "a proportion of 0.8 weeks equivalent to the proportion"
+   },
+   {
+    "what": "Start date of the reference year used to calculate proportional leave under paragraph (2)(b)",
+    "value": "1st October 2007",
+    "quote": "proportion of the year beginning on 1st October 2007"
+   },
+   {
+    "what": "Leave year start date under paragraph (2)(c)",
+    "value": "1st April 2008",
+    "quote": "leave year beginning on 1st April 2008"
+   },
+   {
+    "what": "Additional leave entitlement for leave years under paragraph (2)(c)",
+    "value": "0.8 weeks",
+    "quote": "1st April 2008, 0.8 weeks"
+   },
+   {
+    "what": "Earliest boundary date for leave years under paragraph (2)(d)",
+    "value": "1st April 2008",
+    "quote": "leave year beginning after 1st April 2008"
+   },
+   {
+    "what": "Latest boundary date for leave years under paragraph (2)(d)",
+    "value": "1st April 2009",
+    "quote": "but before 1st April 2009"
+   },
+   {
+    "what": "Fixed component of additional leave under paragraph (2)(d)",
+    "value": "0.8 weeks",
+    "quote": "0.8 weeks and a proportion of another 0.8 weeks"
+   },
+   {
+    "what": "Base component of proportional additional leave under paragraph (2)(d)",
+    "value": "0.8 weeks",
+    "quote": "proportion of another 0.8 weeks"
+   },
+   {
+    "what": "Start date of the reference year used to calculate proportional leave under paragraph (2)(d)",
+    "value": "1st April 2009",
+    "quote": "year beginning on 1st April 2009"
+   },
+   {
+    "what": "Earliest date for leave years under paragraph (2)(e)",
+    "value": "1st April 2009",
+    "quote": "leave year beginning on or after 1st April 2009"
+   },
+   {
+    "what": "Additional leave entitlement for leave years under paragraph (2)(e)",
+    "value": "1.6 weeks",
+    "quote": "1st April 2009, 1.6 weeks"
+   },
+   {
+    "what": "Maximum aggregate entitlement under paragraph (2) and regulation 13(1)",
+    "value": "28 days",
+    "quote": "maximum of 28 days"
+   },
+   {
+    "what": "Leave entitlement under paragraph (2)(d) eligible for payment in lieu under paragraph (6)(c)",
+    "value": "0.8 weeks",
+    "quote": "entitlement to 0.8 weeks that arises under paragraph (2)(d)"
+   },
+   {
+    "what": "Cutoff date for the elapsed leave year portion qualifying for payment in lieu under paragraph (6)(c)",
+    "value": "1st April 2009",
+    "quote": "elapsed before 1st April 2009"
+   },
+   {
+    "what": "Effective date of the Agricultural Wages (Scotland) Act 1949 for the worker exemption",
+    "value": "1 July 1999",
+    "quote": "as that Act had effect on 1 July 1999"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Regulation 13A applies to a worker in respect of any leave years beginning before 1st April 2024.",
+   "quote": "a worker in respect of any leave years beginning before 1st April 2024"
+  },
+  {
+   "requirement": "Regulation 13A applies to a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024.",
+   "quote": "a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024"
+  },
+  {
+   "requirement": "Subject to regulation 26A and paragraphs (3) and (5), a worker is entitled in each leave year to a period of additional leave determined in accordance with paragraph (2).",
+   "quote": "Subject to regulation 26A and paragraphs (3) and (5), a worker is entitled in each leave year to a period of additional leave determined in accordance with paragraph (2)"
+  },
+  {
+   "requirement": "A worker is entitled to 0.8 weeks of additional leave in any leave year beginning on or after 1st October 2007 but before 1st April 2008.",
+   "quote": "in any leave year beginning on or after 1st October 2007 but before 1st April 2008, 0.8 weeks"
+  },
+  {
+   "requirement": "A worker is entitled in any leave year beginning before 1st October 2007 to a proportion of 0.8 weeks of additional leave equivalent to the proportion of the year beginning on 1st October 2007 which would have elapsed at the end of that leave year.",
+   "quote": "in any leave year beginning before 1st October 2007, a proportion of 0.8 weeks equivalent to the proportion of the year beginning on 1st October 2007 which would have elapsed at the end of that leave year"
+  },
+  {
+   "requirement": "A worker is entitled to 0.8 weeks of additional leave in any leave year beginning on 1st April 2008.",
+   "quote": "in any leave year beginning on 1st April 2008, 0.8 weeks"
+  },
+  {
+   "requirement": "A worker is entitled in any leave year beginning after 1st April 2008 but before 1st April 2009 to 0.8 weeks of additional leave and a proportion of another 0.8 weeks equivalent to the proportion of the year beginning on 1st April 2009 which would have elapsed at the end of that leave year.",
+   "quote": "in any leave year beginning after 1st April 2008 but before 1st April 2009, 0.8 weeks and a proportion of another 0.8 weeks equivalent to the proportion of the year beginning on 1st April 2009 which would have elapsed at the end of that leave year"
+  },
+  {
+   "requirement": "A worker is entitled to 1.6 weeks of additional leave in any leave year beginning on or after 1st April 2009.",
+   "quote": "in any leave year beginning on or after 1st April 2009, 1.6 weeks"
+  },
+  {
+   "requirement": "The aggregate entitlement of a worker provided for in paragraph (2) and regulation 13(1) is subject to a maximum of 28 days.",
+   "quote": "The aggregate entitlement provided for in paragraph (2) and regulation 13(1) is subject to a maximum of 28 days"
+  },
+  {
+   "requirement": "A worker’s leave year begins for the purposes of regulation 13A on the same date as the worker’s leave year begins for the purposes of regulation 13.",
+   "quote": "A worker’s leave year begins for the purposes of this regulation on the same date as the worker’s leave year begins for the purposes of regulation 13"
+  },
+  {
+   "requirement": "Where the date on which a worker’s employment begins is later than the date on which his first leave year begins, the additional leave to which the worker is entitled in that leave year is a proportion of the period applicable under paragraph (2) equal to the proportion of that leave year remaining on the date on which his employment begins.",
+   "quote": "Where the date on which a worker’s employment begins is later than the date on which his first leave year begins, the additional leave to which he is entitled in that leave year is a proportion of the period applicable under paragraph (2) equal to the proportion of that leave year remaining on the date on which his employment begins"
+  },
+  {
+   "requirement": "Leave to which a worker is entitled under regulation 13A may be taken in instalments.",
+   "quote": "Leave to which a worker is entitled under this regulation may be taken in instalments"
+  },
+  {
+   "requirement": "Leave to which a worker is entitled under regulation 13A may not be replaced by a payment in lieu except where the worker’s employment is terminated, where the leave is an entitlement that arises under paragraph (2)(a), (b) or (c), or where the leave is an entitlement to 0.8 weeks that arises under paragraph (2)(d) in respect of that part of the leave year which would have elapsed before 1st April 2009.",
+   "quote": "it may not be replaced by a payment in lieu except where— (a) the worker’s employment is terminated; or (b) the leave is an entitlement that arises under paragraph (2)(a), (b) or (c); or (c) the leave is an entitlement to 0.8 weeks that arises under paragraph (2)(d) in respect of that part of the leave year which would have elapsed before 1st April 2009"
+  },
+  {
+   "requirement": "A relevant agreement may provide for any leave to which a worker is entitled under regulation 13A to be carried forward into the leave year immediately following the leave year in respect of which it is due.",
+   "quote": "A relevant agreement may provide for any leave to which a worker is entitled under this regulation to be carried forward into the leave year immediately following the leave year in respect of which it is due"
+  },
+  {
+   "requirement": "Where, as a result of taking a period of statutory leave in any leave year, a worker is unable to take some or all of the annual leave to which the worker is entitled in that leave year under regulation 13A, the worker is entitled to carry forward such untaken leave into the following leave year.",
+   "quote": "Where, as a result of taking a period of statutory leave in any leave year, a worker is unable to take some or all of the annual leave to which the worker is entitled in that leave year under this regulation, the worker is entitled to carry forward such untaken leave into the following leave year"
+  },
+  {
+   "requirement": "Regulation 13A does not apply to workers to whom the Agricultural Wages (Scotland) Act 1949 applies (as that Act had effect on 1 July 1999).",
+   "quote": "This regulation does not apply to workers to whom the Agricultural Wages (Scotland) Act 1949 applies (as that Act had effect on 1 July 1999)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Cutoff date for leave years beginning before which regulation 13A applies to a worker",
+   "value": "1st April 2024",
+   "quote": "leave years beginning before 1st April 2024"
+  },
+  {
+   "what": "Earliest date for leave years beginning on or after which regulation 13A applies to a worker to whom regulation 15B does not apply",
+   "value": "1st April 2024",
+   "quote": "leave years beginning on or after 1st April 2024"
+  },
+  {
+   "what": "Earliest date for leave years under paragraph (2)(a)",
+   "value": "1st October 2007",
+   "quote": "leave year beginning on or after 1st October 2007"
+  },
+  {
+   "what": "Latest boundary date for leave years under paragraph (2)(a)",
+   "value": "1st April 2008",
+   "quote": "but before 1st April 2008"
+  },
+  {
+   "what": "Additional leave entitlement for leave years under paragraph (2)(a)",
+   "value": "0.8 weeks",
+   "quote": "but before 1st April 2008, 0.8 weeks"
+  },
+  {
+   "what": "Cutoff date for leave years beginning before which paragraph (2)(b) applies",
+   "value": "1st October 2007",
+   "quote": "leave year beginning before 1st October 2007"
+  },
+  {
+   "what": "Base entitlement period used to calculate proportional leave under paragraph (2)(b)",
+   "value": "0.8 weeks",
+   "quote": "a proportion of 0.8 weeks equivalent to the proportion"
+  },
+  {
+   "what": "Start date of the reference year used to calculate proportional leave under paragraph (2)(b)",
+   "value": "1st October 2007",
+   "quote": "proportion of the year beginning on 1st October 2007"
+  },
+  {
+   "what": "Leave year start date under paragraph (2)(c)",
+   "value": "1st April 2008",
+   "quote": "leave year beginning on 1st April 2008"
+  },
+  {
+   "what": "Additional leave entitlement for leave years under paragraph (2)(c)",
+   "value": "0.8 weeks",
+   "quote": "1st April 2008, 0.8 weeks"
+  },
+  {
+   "what": "Earliest boundary date for leave years under paragraph (2)(d)",
+   "value": "1st April 2008",
+   "quote": "leave year beginning after 1st April 2008"
+  },
+  {
+   "what": "Latest boundary date for leave years under paragraph (2)(d)",
+   "value": "1st April 2009",
+   "quote": "but before 1st April 2009"
+  },
+  {
+   "what": "Fixed component of additional leave under paragraph (2)(d)",
+   "value": "0.8 weeks",
+   "quote": "0.8 weeks and a proportion of another 0.8 weeks"
+  },
+  {
+   "what": "Base component of proportional additional leave under paragraph (2)(d)",
+   "value": "0.8 weeks",
+   "quote": "proportion of another 0.8 weeks"
+  },
+  {
+   "what": "Start date of the reference year used to calculate proportional leave under paragraph (2)(d)",
+   "value": "1st April 2009",
+   "quote": "year beginning on 1st April 2009"
+  },
+  {
+   "what": "Earliest date for leave years under paragraph (2)(e)",
+   "value": "1st April 2009",
+   "quote": "leave year beginning on or after 1st April 2009"
+  },
+  {
+   "what": "Additional leave entitlement for leave years under paragraph (2)(e)",
+   "value": "1.6 weeks",
+   "quote": "1st April 2009, 1.6 weeks"
+  },
+  {
+   "what": "Maximum aggregate entitlement under paragraph (2) and regulation 13(1)",
+   "value": "28 days",
+   "quote": "maximum of 28 days"
+  },
+  {
+   "what": "Leave entitlement under paragraph (2)(d) eligible for payment in lieu under paragraph (6)(c)",
+   "value": "0.8 weeks",
+   "quote": "entitlement to 0.8 weeks that arises under paragraph (2)(d)"
+  },
+  {
+   "what": "Cutoff date for the elapsed leave year portion qualifying for payment in lieu under paragraph (6)(c)",
+   "value": "1st April 2009",
+   "quote": "elapsed before 1st April 2009"
+  },
+  {
+   "what": "Effective date of the Agricultural Wages (Scotland) Act 1949 for the worker exemption",
+   "value": "1 July 1999",
+   "quote": "as that Act had effect on 1 July 1999"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 21,
+  "thresholds_verified": 21
+ }
+}

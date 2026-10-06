@@ -1,0 +1,159 @@
+{
+ "key": "uk/ukpga/1976/63/s4@current",
+ "section": "uk/ukpga/1976/63/s4",
+ "version": "current",
+ "source_sha256": "ea1bc917813da0b5d4967b8409acf67c2f14acf619377e1838132fce008e7d26",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person to whom section 4 of the Bail Act 1976 applies must be granted bail except as provided in Schedule 1 to the Act.",
+    "quote": "shall be granted bail except as provided in Schedule 1 to this Act"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to a person who is accused of an offence when that person appears or is brought before a magistrates’ court or the Crown Court in the course of or in connection with proceedings for the offence.",
+    "quote": "appears or is brought before a magistrates’ court or the Crown Court in the course of or in connection with proceedings for the offence"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to a person who is accused of an offence when that person applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings.",
+    "quote": "applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings"
+   },
+   {
+    "requirement": "Section 4(2) of the Bail Act 1976 does not apply with respect to proceedings on or after a person’s conviction of the offence.",
+    "quote": "does not apply as respects proceedings on or after a person’s conviction of the offence"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to a person whose extradition is sought in respect of an offence when that person appears or is brought before a court in the course of or in connection with extradition proceedings in respect of the offence.",
+    "quote": "he appears or is brought before a court in the course of or in connection with extradition proceedings in respect of the offence"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to a person whose extradition is sought in respect of an offence when that person applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings.",
+    "quote": "he applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings"
+   },
+   {
+    "requirement": "Section 4(2A) of the Bail Act 1976 does not apply if the person whose extradition is sought is alleged to have been convicted of the offence.",
+    "quote": "does not apply if the person is alleged to have been convicted of the offence"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to a person who, having been convicted of an offence, appears or is brought before a magistrates’ court or the Crown Court under Schedule 4 to the Sentencing Code (referral orders: referral back to appropriate court), Schedule 5 to that Code (breach of reparation order), Schedule 7 to that Code (breach, revocation or amendment of youth rehabilitation orders), Part 2 of Schedule 10 to that Code (breach of requirement of community order), or the Schedule to the Street Offences Act 1959 (breach of orders under section 1(2A) of that Act).",
+    "quote": "having been convicted of an offence, appears or is brought before a magistrates’ court or the Crown Court"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to a person who has been convicted of an offence and whose case is adjourned by the court for the purpose of enabling inquiries or a report to be made to assist the court in dealing with that person for the offence.",
+    "quote": "whose case is adjourned by the court for the purpose of enabling inquiries or a report to be made to assist the court in dealing with him for the offence"
+   },
+   {
+    "requirement": "Schedule 1 to the Bail Act 1976 has effect in respect of conditions of bail for a person to whom section 4 applies.",
+    "quote": "Schedule 1 to this Act also has effect as respects conditions of bail for a person to whom this section applies"
+   },
+   {
+    "requirement": "In Schedule 1 to the Bail Act 1976, 'the defendant' means a person to whom section 4 applies.",
+    "quote": "“the defendant” means a person to whom this section applies"
+   },
+   {
+    "requirement": "In Schedule 1 to the Bail Act 1976, any reference to a defendant whose case is adjourned for inquiries or a report means a person to whom section 4 applies by virtue of section 4(4).",
+    "quote": "reference to a defendant whose case is adjourned for inquiries or a report is a reference to a person to whom this section applies by virtue of subsection (4) above"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 is subject to section 41 of the Magistrates’ Courts Act 1980 regarding the restriction of bail by a magistrates’ court in cases of treason.",
+    "quote": "subject to section 41 of the Magistrates’ Courts Act 1980 (restriction of bail by magistrates’ court in cases of treason)"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 is subject to section 115(1) of the Coroners and Justice Act 2009 regarding the requirement that bail decisions in murder cases be made by a Crown Court judge.",
+    "quote": "section 115(1) of the Coroners and Justice Act 2009 (bail decisions in murder cases to be made by Crown Court judge)"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 is subject to section 25 of the Criminal Justice and Public Order Act 1994 regarding the exclusion of bail in cases of homicide and rape.",
+    "quote": "subject to section 25 of the Criminal Justice and Public Order Act 1994 (exclusion of bail in cases of homicide and rape)"
+   },
+   {
+    "requirement": "In taking any decisions required by Part I or Part II of Schedule 1 to the Bail Act 1976, the court must have regard, so far as relevant, to any misuse of controlled drugs by the defendant.",
+    "quote": "considerations to which the court is to have regard include, so far as relevant, any misuse of controlled drugs by the defendant"
+   },
+   {
+    "requirement": "For the purposes of section 4(9) of the Bail Act 1976, 'controlled drugs' and 'misuse' have the same meanings as in the Misuse of Drugs Act 1971.",
+    "quote": "“controlled drugs” and “misuse” having the same meanings as in the Misuse of Drugs Act 1971"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person to whom section 4 of the Bail Act 1976 applies must be granted bail except as provided in Schedule 1 to the Act.",
+   "quote": "shall be granted bail except as provided in Schedule 1 to this Act"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to a person who is accused of an offence when that person appears or is brought before a magistrates’ court or the Crown Court in the course of or in connection with proceedings for the offence.",
+   "quote": "appears or is brought before a magistrates’ court or the Crown Court in the course of or in connection with proceedings for the offence"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to a person who is accused of an offence when that person applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings.",
+   "quote": "applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings"
+  },
+  {
+   "requirement": "Section 4(2) of the Bail Act 1976 does not apply with respect to proceedings on or after a person’s conviction of the offence.",
+   "quote": "does not apply as respects proceedings on or after a person’s conviction of the offence"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to a person whose extradition is sought in respect of an offence when that person appears or is brought before a court in the course of or in connection with extradition proceedings in respect of the offence.",
+   "quote": "he appears or is brought before a court in the course of or in connection with extradition proceedings in respect of the offence"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to a person whose extradition is sought in respect of an offence when that person applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings.",
+   "quote": "he applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings"
+  },
+  {
+   "requirement": "Section 4(2A) of the Bail Act 1976 does not apply if the person whose extradition is sought is alleged to have been convicted of the offence.",
+   "quote": "does not apply if the person is alleged to have been convicted of the offence"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to a person who, having been convicted of an offence, appears or is brought before a magistrates’ court or the Crown Court under Schedule 4 to the Sentencing Code (referral orders: referral back to appropriate court), Schedule 5 to that Code (breach of reparation order), Schedule 7 to that Code (breach, revocation or amendment of youth rehabilitation orders), Part 2 of Schedule 10 to that Code (breach of requirement of community order), or the Schedule to the Street Offences Act 1959 (breach of orders under section 1(2A) of that Act).",
+   "quote": "having been convicted of an offence, appears or is brought before a magistrates’ court or the Crown Court"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to a person who has been convicted of an offence and whose case is adjourned by the court for the purpose of enabling inquiries or a report to be made to assist the court in dealing with that person for the offence.",
+   "quote": "whose case is adjourned by the court for the purpose of enabling inquiries or a report to be made to assist the court in dealing with him for the offence"
+  },
+  {
+   "requirement": "Schedule 1 to the Bail Act 1976 has effect in respect of conditions of bail for a person to whom section 4 applies.",
+   "quote": "Schedule 1 to this Act also has effect as respects conditions of bail for a person to whom this section applies"
+  },
+  {
+   "requirement": "In Schedule 1 to the Bail Act 1976, 'the defendant' means a person to whom section 4 applies.",
+   "quote": "“the defendant” means a person to whom this section applies"
+  },
+  {
+   "requirement": "In Schedule 1 to the Bail Act 1976, any reference to a defendant whose case is adjourned for inquiries or a report means a person to whom section 4 applies by virtue of section 4(4).",
+   "quote": "reference to a defendant whose case is adjourned for inquiries or a report is a reference to a person to whom this section applies by virtue of subsection (4) above"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 is subject to section 41 of the Magistrates’ Courts Act 1980 regarding the restriction of bail by a magistrates’ court in cases of treason.",
+   "quote": "subject to section 41 of the Magistrates’ Courts Act 1980 (restriction of bail by magistrates’ court in cases of treason)"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 is subject to section 115(1) of the Coroners and Justice Act 2009 regarding the requirement that bail decisions in murder cases be made by a Crown Court judge.",
+   "quote": "section 115(1) of the Coroners and Justice Act 2009 (bail decisions in murder cases to be made by Crown Court judge)"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 is subject to section 25 of the Criminal Justice and Public Order Act 1994 regarding the exclusion of bail in cases of homicide and rape.",
+   "quote": "subject to section 25 of the Criminal Justice and Public Order Act 1994 (exclusion of bail in cases of homicide and rape)"
+  },
+  {
+   "requirement": "In taking any decisions required by Part I or Part II of Schedule 1 to the Bail Act 1976, the court must have regard, so far as relevant, to any misuse of controlled drugs by the defendant.",
+   "quote": "considerations to which the court is to have regard include, so far as relevant, any misuse of controlled drugs by the defendant"
+  },
+  {
+   "requirement": "For the purposes of section 4(9) of the Bail Act 1976, 'controlled drugs' and 'misuse' have the same meanings as in the Misuse of Drugs Act 1971.",
+   "quote": "“controlled drugs” and “misuse” having the same meanings as in the Misuse of Drugs Act 1971"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

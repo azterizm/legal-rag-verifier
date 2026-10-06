@@ -8,7 +8,7 @@ from typing import Any
 
 import pytest
 
-from legal_rag_verifier.corpus import instrument_path, load_provision
+from legal_rag_verifier.corpus import instrument_coordinate, instrument_path, load_provision
 from legal_rag_verifier.premise import Premise
 from legal_rag_verifier.verifier import (
     NLIProbs,
@@ -82,6 +82,11 @@ def test_claim_failure_skips_nli() -> None:
     assert scorer.calls == 0
 
 
+def test_instrument_coordinate() -> None:
+    assert instrument_coordinate("uk/ukpga/1996/18/s124/1ZA") == "uk/ukpga/1996/18"
+    assert instrument_coordinate("uk/ukpga/Vict/24-25/100/s20") == "uk/ukpga/Vict/24-25/100"
+
+
 def test_instrument_path() -> None:
     assert instrument_path(Path("data"), "uk/ukpga/1996/18/s124") == Path(
         "data/uk/ukpga/1996/uk_ukpga_1996_18.jsonl"
@@ -98,3 +103,7 @@ def test_load_provision_from_local_corpus() -> None:
     assert any(r["coordinate"] == "uk/ukpga/1996/18/s124/1ZA/a" for r in rows)
     with pytest.raises(KeyError):
         load_provision(data, "uk/ukpga/1996/18/s9999")
+    regnal = load_provision(data, "uk/ukpga/Vict/24-25/100/s20")
+    assert regnal[0]["coordinate"] == "uk/ukpga/Vict/24-25/100"
+    with pytest.raises(FileNotFoundError):
+        instrument_path(data, "uk/ukpga/Vict/99-99/1/s1")

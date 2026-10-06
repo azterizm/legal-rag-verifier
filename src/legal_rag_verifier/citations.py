@@ -15,6 +15,7 @@ __all__ = [
     "CitationMatch",
     "coordinate_tail",
     "find_citations",
+    "instrument_depth",
     "is_relative",
     "render_citation",
     "resolve_relative",
@@ -78,7 +79,11 @@ class CitationMatch:
     text: str
 
 
-_INSTRUMENT_DEPTH = 4  # jurisdiction/kind/year/number
+def instrument_depth(coordinate: str) -> int:
+    """Parts naming the instrument: 4 (``uk/ukpga/1996/18``) or 5 for a regnal-year Act
+    (``uk/ukpga/Vict/24-25/100``)."""
+    parts = coordinate.split("/")
+    return 4 if len(parts) < 3 or parts[2].isdigit() else 5  # noqa: PLR2004
 
 
 def is_relative(canonical: str) -> bool:
@@ -88,7 +93,8 @@ def is_relative(canonical: str) -> bool:
 def coordinate_tail(coordinate: str) -> str:
     """``uk/ukpga/1996/18/s124/1ZA`` → ``s124/1ZA``; empty for an instrument coordinate."""
     parts = coordinate.split("/")
-    return "/".join(parts[_INSTRUMENT_DEPTH:]) if len(parts) > _INSTRUMENT_DEPTH else ""
+    depth = instrument_depth(coordinate)
+    return "/".join(parts[depth:]) if len(parts) > depth else ""
 
 
 def resolve_relative(canonical: str, base: str) -> str:

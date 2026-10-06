@@ -1,0 +1,114 @@
+{
+ "key": "uk/ukpga/1996/52/s189@current",
+ "section": "uk/ukpga/1996/52/s189",
+ "version": "current",
+ "source_sha256": "ea3c9c4af508f2795c59d7ca601639f80ac3ce8571c25e76884891e80832116c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A pregnant woman, or a person with whom a pregnant woman resides or might reasonably be expected to reside, has a priority need for accommodation.",
+    "quote": "a pregnant woman or a person with whom she resides or might reasonably be expected to reside"
+   },
+   {
+    "requirement": "A person with whom dependent children reside or might reasonably be expected to reside has a priority need for accommodation.",
+    "quote": "a person with whom dependent children reside or might reasonably be expected to reside"
+   },
+   {
+    "requirement": "A person who is vulnerable as a result of old age, mental illness, handicap, physical disability, or other special reason, or a person with whom such a vulnerable person resides or might reasonably be expected to reside, has a priority need for accommodation.",
+    "quote": "a person who is vulnerable as a result of old age, mental illness or handicap or physical disability or other special reason, or with whom such a person resides or might reasonably be expected to reside"
+   },
+   {
+    "requirement": "A person who is homeless or threatened with homelessness as a result of an emergency such as flood, fire, or other disaster has a priority need for accommodation.",
+    "quote": "a person who is homeless or threatened with homelessness as a result of an emergency such as flood, fire or other disaster"
+   },
+   {
+    "requirement": "A person who is homeless as a result of being a victim of domestic abuse has a priority need for accommodation.",
+    "quote": "a person who is homeless as a result of that person being a victim of domestic abuse"
+   },
+   {
+    "requirement": "The Secretary of State may by order specify further descriptions of persons as having a priority need for accommodation.",
+    "quote": "specify further descriptions of persons as having a priority need for accommodation"
+   },
+   {
+    "requirement": "The Secretary of State may by order amend or repeal any part of subsection (1) of section 189 of the Housing Act 1996.",
+    "quote": "amend or repeal any part of subsection (1)"
+   },
+   {
+    "requirement": "Before making an order under subsection (2), the Secretary of State must consult such associations representing relevant authorities, and such other persons, as the Secretary of State considers appropriate.",
+    "quote": "consult such associations representing relevant authorities, and such other persons, as he considers appropriate"
+   },
+   {
+    "requirement": "No order under subsection (2) may be made unless a draft of the order has been approved by resolution of each House of Parliament.",
+    "quote": "approved by resolution of each House of Parliament"
+   },
+   {
+    "requirement": "In section 189 of the Housing Act 1996, the term domestic abuse has the meaning given by section 1 of the Domestic Abuse Act 2021.",
+    "quote": "“domestic abuse” has the meaning given by section 1 of the Domestic Abuse Act 2021"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the section of the Domestic Abuse Act 2021 that defines domestic abuse",
+    "value": "1",
+    "quote": "section 1 of the Domestic Abuse Act 2021"
+   },
+   {
+    "what": "the calendar year of the Domestic Abuse Act referenced for the definition of domestic abuse",
+    "value": "2021",
+    "quote": "Domestic Abuse Act 2021"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A pregnant woman, or a person with whom a pregnant woman resides or might reasonably be expected to reside, has a priority need for accommodation.",
+   "quote": "a pregnant woman or a person with whom she resides or might reasonably be expected to reside"
+  },
+  {
+   "requirement": "A person with whom dependent children reside or might reasonably be expected to reside has a priority need for accommodation.",
+   "quote": "a person with whom dependent children reside or might reasonably be expected to reside"
+  },
+  {
+   "requirement": "A person who is vulnerable as a result of old age, mental illness, handicap, physical disability, or other special reason, or a person with whom such a vulnerable person resides or might reasonably be expected to reside, has a priority need for accommodation.",
+   "quote": "a person who is vulnerable as a result of old age, mental illness or handicap or physical disability or other special reason, or with whom such a person resides or might reasonably be expected to reside"
+  },
+  {
+   "requirement": "A person who is homeless or threatened with homelessness as a result of an emergency such as flood, fire, or other disaster has a priority need for accommodation.",
+   "quote": "a person who is homeless or threatened with homelessness as a result of an emergency such as flood, fire or other disaster"
+  },
+  {
+   "requirement": "A person who is homeless as a result of being a victim of domestic abuse has a priority need for accommodation.",
+   "quote": "a person who is homeless as a result of that person being a victim of domestic abuse"
+  },
+  {
+   "requirement": "The Secretary of State may by order specify further descriptions of persons as having a priority need for accommodation.",
+   "quote": "specify further descriptions of persons as having a priority need for accommodation"
+  },
+  {
+   "requirement": "The Secretary of State may by order amend or repeal any part of subsection (1) of section 189 of the Housing Act 1996.",
+   "quote": "amend or repeal any part of subsection (1)"
+  },
+  {
+   "requirement": "Before making an order under subsection (2), the Secretary of State must consult such associations representing relevant authorities, and such other persons, as the Secretary of State considers appropriate.",
+   "quote": "consult such associations representing relevant authorities, and such other persons, as he considers appropriate"
+  },
+  {
+   "requirement": "No order under subsection (2) may be made unless a draft of the order has been approved by resolution of each House of Parliament.",
+   "quote": "approved by resolution of each House of Parliament"
+  },
+  {
+   "requirement": "In section 189 of the Housing Act 1996, the term domestic abuse has the meaning given by section 1 of the Domestic Abuse Act 2021.",
+   "quote": "“domestic abuse” has the meaning given by section 1 of the Domestic Abuse Act 2021"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

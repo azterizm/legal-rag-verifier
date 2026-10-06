@@ -1,0 +1,76 @@
+{
+  "classes": {
+    "connective": {
+      "n": 10,
+      "rolled_back": 0,
+      "false_rollback_rate": 0.0
+    },
+    "dropped_qualifier": {
+      "n": 9,
+      "rolled_back": 1,
+      "recall": 0.1111
+    },
+    "grounded_paraphrase": {
+      "n": 125,
+      "rolled_back": 3,
+      "false_rollback_rate": 0.024
+    },
+    "modal_shift": {
+      "n": 17,
+      "rolled_back": 8,
+      "recall": 0.4706
+    },
+    "premise_correction": {
+      "n": 6,
+      "rolled_back": 0,
+      "false_rollback_rate": 0.0
+    },
+    "unsupported_plausible": {
+      "n": 33,
+      "rolled_back": 11,
+      "recall": 0.3333
+    },
+    "value_swap": {
+      "n": 8,
+      "rolled_back": 3,
+      "recall": 0.375
+    },
+    "version_swap": {
+      "n": 8,
+      "rolled_back": 8,
+      "recall": 1.0
+    },
+    "wrong_citation": {
+      "n": 15,
+      "rolled_back": 11,
+      "recall": 0.7333
+    },
+    "wrong_figure": {
+      "n": 24,
+      "rolled_back": 23,
+      "recall": 0.9583
+    },
+    "wrong_instrument": {
+      "n": 16,
+      "rolled_back": 16,
+      "recall": 1.0
+    }
+  },
+  "headline": {
+    "grounded_paraphrase_false_rollback_rate": 0.024,
+    "pass_false_rollback_rate": 0.0213,
+    "failure_recall": 0.6231,
+    "rollback_precision": 0.9643
+  },
+  "config": {
+    "entail_threshold": 0.7,
+    "contradict_threshold": 0.4,
+    "neutral_policy": "connective",
+    "top_k": 2,
+    "align_ratio": 0.5,
+    "neutral_with_grounded_claim": "emit"
+  },
+  "nli": null,
+  "enrichment": "gemini-3.8-flash-high@5fe09e8beb6c4d4c",
+  "seconds": 0.28
+}

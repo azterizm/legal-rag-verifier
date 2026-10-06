@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1986/45/s239@current",
+ "section": "uk/ukpga/1986/45/s239",
+ "version": "current",
+ "source_sha256": "12fecd5d69d3fd0562a4ce73a0bacf8872635a051cd6aa3c2546d7dad34b209d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 239 of the Insolvency Act 1986 applies in the same manner as section 238.",
+    "quote": "This section applies as does section 238."
+   },
+   {
+    "requirement": "An office-holder may apply to the court for an order where a company has, at a relevant time as defined in the next section, given a preference to any person.",
+    "quote": "the office-holder may apply to the court for an order under this section."
+   },
+   {
+    "requirement": "On an application by an office-holder, the court must, subject to the remaining provisions of section 239, make such order as it thinks fit for restoring the position to what it would have been if the company had not given that preference.",
+    "quote": "the court shall, on such an application, make such order as it thinks fit for restoring the position to what it would have been if the company had not given that preference."
+   },
+   {
+    "requirement": "For the purposes of section 239 and section 241, a company gives a preference to a person only if that recipient is one of the company's creditors or a surety or guarantor for any of the company's debts or other liabilities.",
+    "quote": "that person is one of the company’s creditors or a surety or guarantor for any of the company’s debts or other liabilities"
+   },
+   {
+    "requirement": "For the purposes of section 239 and section 241, a company gives a preference to a person only if the company does anything or suffers anything to be done which has the effect of putting that person into a position which, in the event of the company going into insolvent liquidation, will be better than the position that person would have been in if that thing had not been done.",
+    "quote": "the company does anything or suffers anything to be done which (in either case) has the effect of putting that person into a position which, in the event of the company going into insolvent liquidation, will be better than the position he would have been in if that thing had not been done."
+   },
+   {
+    "requirement": "The court is prohibited from making an order in respect of a preference given to any person unless the company giving it was influenced in deciding to give it by a desire to produce in relation to that person the effect of improving that person's position in an insolvent liquidation.",
+    "quote": "The court shall not make an order under this section in respect of a preference given to any person unless the company which gave the preference was influenced in deciding to give it by a desire to produce in relation to that person the effect mentioned in subsection (4)(b)."
+   },
+   {
+    "requirement": "A company that has given a preference to a person connected with the company (otherwise than solely by reason of being an employee) at the time the preference was given is presumed, unless the contrary is shown, to have been influenced in deciding to give it by the requisite desire to produce the preferential effect.",
+    "quote": "is presumed, unless the contrary is shown, to have been influenced in deciding to give it by such a desire as is mentioned in subsection (5)."
+   },
+   {
+    "requirement": "The fact that an action or omission occurred in pursuance of an order of a court does not, without more, prevent the doing or suffering of that thing from constituting the giving of a preference by the company.",
+    "quote": "The fact that something has been done in pursuance of the order of a court does not, without more, prevent the doing or suffering of that thing from constituting the giving of a preference."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 239 of the Insolvency Act 1986 applies in the same manner as section 238.",
+   "quote": "This section applies as does section 238."
+  },
+  {
+   "requirement": "An office-holder may apply to the court for an order where a company has, at a relevant time as defined in the next section, given a preference to any person.",
+   "quote": "the office-holder may apply to the court for an order under this section."
+  },
+  {
+   "requirement": "On an application by an office-holder, the court must, subject to the remaining provisions of section 239, make such order as it thinks fit for restoring the position to what it would have been if the company had not given that preference.",
+   "quote": "the court shall, on such an application, make such order as it thinks fit for restoring the position to what it would have been if the company had not given that preference."
+  },
+  {
+   "requirement": "For the purposes of section 239 and section 241, a company gives a preference to a person only if that recipient is one of the company's creditors or a surety or guarantor for any of the company's debts or other liabilities.",
+   "quote": "that person is one of the company’s creditors or a surety or guarantor for any of the company’s debts or other liabilities"
+  },
+  {
+   "requirement": "For the purposes of section 239 and section 241, a company gives a preference to a person only if the company does anything or suffers anything to be done which has the effect of putting that person into a position which, in the event of the company going into insolvent liquidation, will be better than the position that person would have been in if that thing had not been done.",
+   "quote": "the company does anything or suffers anything to be done which (in either case) has the effect of putting that person into a position which, in the event of the company going into insolvent liquidation, will be better than the position he would have been in if that thing had not been done."
+  },
+  {
+   "requirement": "The court is prohibited from making an order in respect of a preference given to any person unless the company giving it was influenced in deciding to give it by a desire to produce in relation to that person the effect of improving that person's position in an insolvent liquidation.",
+   "quote": "The court shall not make an order under this section in respect of a preference given to any person unless the company which gave the preference was influenced in deciding to give it by a desire to produce in relation to that person the effect mentioned in subsection (4)(b)."
+  },
+  {
+   "requirement": "A company that has given a preference to a person connected with the company (otherwise than solely by reason of being an employee) at the time the preference was given is presumed, unless the contrary is shown, to have been influenced in deciding to give it by the requisite desire to produce the preferential effect.",
+   "quote": "is presumed, unless the contrary is shown, to have been influenced in deciding to give it by such a desire as is mentioned in subsection (5)."
+  },
+  {
+   "requirement": "The fact that an action or omission occurred in pursuance of an order of a court does not, without more, prevent the doing or suffering of that thing from constituting the giving of a preference by the company.",
+   "quote": "The fact that something has been done in pursuance of the order of a court does not, without more, prevent the doing or suffering of that thing from constituting the giving of a preference."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

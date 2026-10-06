@@ -1,0 +1,165 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s1@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s1",
+ "version": "current",
+ "source_sha256": "4b72d4d80004e107c94c90071f384f0e849d905ea5cda54b2d36a9a3a6d410b0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The only estates in land capable of subsisting or of being conveyed or created at law are an estate in fee simple absolute in possession and a term of years absolute.",
+    "quote": "The only estates in land which are capable of subsisting or of being conveyed or created at law are"
+   },
+   {
+    "requirement": "An easement, right, or privilege in or over land is capable of subsisting or of being conveyed or created at law only if it is for an interest equivalent to an estate in fee simple absolute in possession or a term of years absolute.",
+    "quote": "for an interest equivalent to an estate in fee simple absolute in possession or a term of years absolute"
+   },
+   {
+    "requirement": "A rentcharge issuing out of or charged on land is capable of subsisting or of being conveyed or created at law only if it is in possession and is either perpetual or for a term of years absolute.",
+    "quote": "A rentcharge in possession issuing out of or charged on land being either perpetual or for a term of years absolute"
+   },
+   {
+    "requirement": "A charge by way of legal mortgage is capable of subsisting or of being conveyed or created at law.",
+    "quote": "A charge by way of legal mortgage"
+   },
+   {
+    "requirement": "Any other similar charge on land that is not created by an instrument is capable of subsisting or of being conveyed or created at law.",
+    "quote": "any other similar charge on land which is not created by an instrument"
+   },
+   {
+    "requirement": "Rights of entry are capable of subsisting or of being conveyed or created at law if they are exercisable over or in respect of a legal term of years absolute, or annexed for any purpose to a legal rentcharge.",
+    "quote": "Rights of entry exercisable over or in respect of a legal term of years absolute, or annexed, for any purpose, to a legal rentcharge"
+   },
+   {
+    "requirement": "All estates, interests, and charges in or over land other than those authorized to subsist or be conveyed or created at law take effect as equitable interests.",
+    "quote": "All other estates, interests, and charges in or over land take effect as equitable interests."
+   },
+   {
+    "requirement": "The estates, interests, and charges authorized under section 1 of the Law of Property Act 1925 to subsist or to be conveyed or created at law are, when subsisting or conveyed or created at law, referred to in the Act as legal estates and have the same incidents as legal estates subsisting at the commencement of the Act.",
+    "quote": "in this Act referred to as “legal estates,” and have the same incidents as legal estates subsisting at the commencement of this Act"
+   },
+   {
+    "requirement": "The owner of a legal estate is referred to in the Act as an estate owner, and that owner's legal estate is referred to as their estate.",
+    "quote": "the owner of a legal estate is referred to as “an estate owner” and his legal estate is referred to as his estate"
+   },
+   {
+    "requirement": "A legal estate may subsist concurrently with or subject to any other legal estate in the same land in like manner as it could have done before the commencement of the Act.",
+    "quote": "A legal estate may subsist concurrently with or subject to any other legal estate in the same land"
+   },
+   {
+    "requirement": "A legal estate is not capable of subsisting or being created in an undivided share in land.",
+    "quote": "A legal estate is not capable of subsisting or of being created in an undivided share in land"
+   },
+   {
+    "requirement": "A legal estate is not capable of being held by an infant.",
+    "quote": "or of being held by an infant"
+   },
+   {
+    "requirement": "Every power of appointment over land or any interest in land, and every power to convey or charge land or any interest in land, operates only in equity, unless it is a power vested in a legal mortgagee or an estate owner in right of that owner's estate and exercisable by that person or by another person in that person's name and on that person's behalf.",
+    "quote": "operates only in equity"
+   },
+   {
+    "requirement": "Estates, interests, and charges in or over land that are not legal estates are referred to in the Act as equitable interests.",
+    "quote": "Estates, interests, and charges in or over land which are not legal estates are in this Act referred to as “equitable interests,”"
+   },
+   {
+    "requirement": "Powers that by the Act are to operate in equity only are referred to in the Act as equitable powers.",
+    "quote": "powers which by this Act are to operate in equity only are in this Act referred to as “equitable powers.”"
+   },
+   {
+    "requirement": "Provisions in any statute or other instrument requiring land to be conveyed to uses take effect as directions that the land shall, subject to creating or reserving thereout any required legal estate authorized by the Act, be conveyed to a person of full age upon the requisite trusts.",
+    "quote": "take effect as directions that the land shall (subject to creating or reserving thereout any legal estate authorised by this Act which may be required) be conveyed to a person of full age upon the requisite trusts"
+   },
+   {
+    "requirement": "The repeal of the Statute of Uses (as amended) does not affect the operation of that statute with regard to dealings taking effect before the commencement of the Act.",
+    "quote": "The repeal of the Statute of Uses (as amended) does not affect the operation thereof in regard to dealings taking effect before the commencement of this Act."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Age qualification for a person to whom land directed to uses must be conveyed upon the requisite trusts",
+    "value": "full age",
+    "quote": "conveyed to a person of full age upon the requisite trusts"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The only estates in land capable of subsisting or of being conveyed or created at law are an estate in fee simple absolute in possession and a term of years absolute.",
+   "quote": "The only estates in land which are capable of subsisting or of being conveyed or created at law are"
+  },
+  {
+   "requirement": "An easement, right, or privilege in or over land is capable of subsisting or of being conveyed or created at law only if it is for an interest equivalent to an estate in fee simple absolute in possession or a term of years absolute.",
+   "quote": "for an interest equivalent to an estate in fee simple absolute in possession or a term of years absolute"
+  },
+  {
+   "requirement": "A rentcharge issuing out of or charged on land is capable of subsisting or of being conveyed or created at law only if it is in possession and is either perpetual or for a term of years absolute.",
+   "quote": "A rentcharge in possession issuing out of or charged on land being either perpetual or for a term of years absolute"
+  },
+  {
+   "requirement": "A charge by way of legal mortgage is capable of subsisting or of being conveyed or created at law.",
+   "quote": "A charge by way of legal mortgage"
+  },
+  {
+   "requirement": "Any other similar charge on land that is not created by an instrument is capable of subsisting or of being conveyed or created at law.",
+   "quote": "any other similar charge on land which is not created by an instrument"
+  },
+  {
+   "requirement": "Rights of entry are capable of subsisting or of being conveyed or created at law if they are exercisable over or in respect of a legal term of years absolute, or annexed for any purpose to a legal rentcharge.",
+   "quote": "Rights of entry exercisable over or in respect of a legal term of years absolute, or annexed, for any purpose, to a legal rentcharge"
+  },
+  {
+   "requirement": "All estates, interests, and charges in or over land other than those authorized to subsist or be conveyed or created at law take effect as equitable interests.",
+   "quote": "All other estates, interests, and charges in or over land take effect as equitable interests."
+  },
+  {
+   "requirement": "The estates, interests, and charges authorized under section 1 of the Law of Property Act 1925 to subsist or to be conveyed or created at law are, when subsisting or conveyed or created at law, referred to in the Act as legal estates and have the same incidents as legal estates subsisting at the commencement of the Act.",
+   "quote": "in this Act referred to as “legal estates,” and have the same incidents as legal estates subsisting at the commencement of this Act"
+  },
+  {
+   "requirement": "The owner of a legal estate is referred to in the Act as an estate owner, and that owner's legal estate is referred to as their estate.",
+   "quote": "the owner of a legal estate is referred to as “an estate owner” and his legal estate is referred to as his estate"
+  },
+  {
+   "requirement": "A legal estate may subsist concurrently with or subject to any other legal estate in the same land in like manner as it could have done before the commencement of the Act.",
+   "quote": "A legal estate may subsist concurrently with or subject to any other legal estate in the same land"
+  },
+  {
+   "requirement": "A legal estate is not capable of subsisting or being created in an undivided share in land.",
+   "quote": "A legal estate is not capable of subsisting or of being created in an undivided share in land"
+  },
+  {
+   "requirement": "A legal estate is not capable of being held by an infant.",
+   "quote": "or of being held by an infant"
+  },
+  {
+   "requirement": "Every power of appointment over land or any interest in land, and every power to convey or charge land or any interest in land, operates only in equity, unless it is a power vested in a legal mortgagee or an estate owner in right of that owner's estate and exercisable by that person or by another person in that person's name and on that person's behalf.",
+   "quote": "operates only in equity"
+  },
+  {
+   "requirement": "Estates, interests, and charges in or over land that are not legal estates are referred to in the Act as equitable interests.",
+   "quote": "Estates, interests, and charges in or over land which are not legal estates are in this Act referred to as “equitable interests,”"
+  },
+  {
+   "requirement": "Powers that by the Act are to operate in equity only are referred to in the Act as equitable powers.",
+   "quote": "powers which by this Act are to operate in equity only are in this Act referred to as “equitable powers.”"
+  },
+  {
+   "requirement": "Provisions in any statute or other instrument requiring land to be conveyed to uses take effect as directions that the land shall, subject to creating or reserving thereout any required legal estate authorized by the Act, be conveyed to a person of full age upon the requisite trusts.",
+   "quote": "take effect as directions that the land shall (subject to creating or reserving thereout any legal estate authorised by this Act which may be required) be conveyed to a person of full age upon the requisite trusts"
+  },
+  {
+   "requirement": "The repeal of the Statute of Uses (as amended) does not affect the operation of that statute with regard to dealings taking effect before the commencement of the Act.",
+   "quote": "The repeal of the Statute of Uses (as amended) does not affect the operation thereof in regard to dealings taking effect before the commencement of this Act."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

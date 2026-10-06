@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2010/15/s21@current",
+ "section": "uk/ukpga/2010/15/s21",
+ "version": "current",
+ "source_sha256": "4854597cddea76d970357d1c4cfb8d1f4428375498ad884662100bf1ceedc16e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A failure to comply with the first, second or third requirement constitutes a failure to comply with a duty to make reasonable adjustments.",
+    "quote": "A failure to comply with the first, second or third requirement is a failure to comply with a duty to make reasonable adjustments."
+   },
+   {
+    "requirement": "A person (A) discriminates against a disabled person if A fails to comply with the duty to make reasonable adjustments in relation to that disabled person.",
+    "quote": "A discriminates against a disabled person if A fails to comply with that duty in relation to that person."
+   },
+   {
+    "requirement": "A provision of an applicable Schedule that imposes a duty to comply with the first, second or third requirement applies only for the purpose of establishing whether a person (A) has contravened the Act by virtue of subsection (2).",
+    "quote": "applies only for the purpose of establishing whether A has contravened this Act by virtue of subsection (2)"
+   },
+   {
+    "requirement": "A failure to comply with a duty imposed by an applicable Schedule to comply with the first, second or third requirement is not actionable by virtue of another provision of the Act or otherwise.",
+    "quote": "a failure to comply is, accordingly, not actionable by virtue of another provision of this Act or otherwise."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A failure to comply with the first, second or third requirement constitutes a failure to comply with a duty to make reasonable adjustments.",
+   "quote": "A failure to comply with the first, second or third requirement is a failure to comply with a duty to make reasonable adjustments."
+  },
+  {
+   "requirement": "A person (A) discriminates against a disabled person if A fails to comply with the duty to make reasonable adjustments in relation to that disabled person.",
+   "quote": "A discriminates against a disabled person if A fails to comply with that duty in relation to that person."
+  },
+  {
+   "requirement": "A provision of an applicable Schedule that imposes a duty to comply with the first, second or third requirement applies only for the purpose of establishing whether a person (A) has contravened the Act by virtue of subsection (2).",
+   "quote": "applies only for the purpose of establishing whether A has contravened this Act by virtue of subsection (2)"
+  },
+  {
+   "requirement": "A failure to comply with a duty imposed by an applicable Schedule to comply with the first, second or third requirement is not actionable by virtue of another provision of the Act or otherwise.",
+   "quote": "a failure to comply is, accordingly, not actionable by virtue of another provision of this Act or otherwise."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

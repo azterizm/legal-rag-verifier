@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1988/52/s5@current",
+ "section": "uk/ukpga/1988/52/s5",
+ "version": "current",
+ "source_sha256": "f8dfb2e03b8fb3ac20445c95c306247db350fbba5b0f60c67e3a73739a72319c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if that person drives or attempts to drive a motor vehicle on a road or other public place after consuming so much alcohol that the proportion of it in his breath, blood or urine exceeds the prescribed limit.",
+    "quote": "drives or attempts to drive a motor vehicle on a road or other public place"
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person is in charge of a motor vehicle on a road or other public place after consuming so much alcohol that the proportion of it in his breath, blood or urine exceeds the prescribed limit.",
+    "quote": "is in charge of a motor vehicle on a road or other public place"
+   },
+   {
+    "requirement": "A person charged with being in charge of a motor vehicle under subsection (1)(b) has a defence if that person proves that, at the time of the alleged offence, the circumstances were such that there was no likelihood of driving the vehicle while the proportion of alcohol in his breath, blood or urine remained likely to exceed the prescribed limit.",
+    "quote": "there was no likelihood of his driving the vehicle whilst the proportion of alcohol in his breath, blood or urine remained likely to exceed the prescribed limit"
+   },
+   {
+    "requirement": "The court may disregard any injury to the accused person and any damage to the vehicle when determining whether there was a likelihood of that person driving the vehicle whilst over the prescribed limit.",
+    "quote": "disregard any injury to him and any damage to the vehicle"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if that person drives or attempts to drive a motor vehicle on a road or other public place after consuming so much alcohol that the proportion of it in his breath, blood or urine exceeds the prescribed limit.",
+   "quote": "drives or attempts to drive a motor vehicle on a road or other public place"
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person is in charge of a motor vehicle on a road or other public place after consuming so much alcohol that the proportion of it in his breath, blood or urine exceeds the prescribed limit.",
+   "quote": "is in charge of a motor vehicle on a road or other public place"
+  },
+  {
+   "requirement": "A person charged with being in charge of a motor vehicle under subsection (1)(b) has a defence if that person proves that, at the time of the alleged offence, the circumstances were such that there was no likelihood of driving the vehicle while the proportion of alcohol in his breath, blood or urine remained likely to exceed the prescribed limit.",
+   "quote": "there was no likelihood of his driving the vehicle whilst the proportion of alcohol in his breath, blood or urine remained likely to exceed the prescribed limit"
+  },
+  {
+   "requirement": "The court may disregard any injury to the accused person and any damage to the vehicle when determining whether there was a likelihood of that person driving the vehicle whilst over the prescribed limit.",
+   "quote": "disregard any injury to him and any damage to the vehicle"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

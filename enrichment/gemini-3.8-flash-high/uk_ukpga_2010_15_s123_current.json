@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/2010/15/s123@current",
+ "section": "uk/ukpga/2010/15/s123",
+ "version": "current",
+ "source_sha256": "4195ba60c387d48aa7dd873a9604897758059c1b67c5d1c8d6eff8674bde7d1d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to section 140B, proceedings on a complaint within section 120 may not be brought after the end of the period of 3 months starting with the date of the act to which the complaint relates, or such other period as the employment tribunal thinks just and equitable.",
+    "quote": "Subject to section 140B proceedings on a complaint within section 120 may not be brought after the end of— (a) the period of 3 months starting with the date of the act to which the complaint relates, or (b) such other period as the employment tribunal thinks just and equitable."
+   },
+   {
+    "requirement": "Proceedings brought in reliance on section 121(1) may not be brought after the end of the period of 6 months starting with the date of the act to which the proceedings relate, or such other period as the employment tribunal thinks just and equitable.",
+    "quote": "Proceedings may not be brought in reliance on section 121(1) after the end of— (a) the period of 6 months starting with the date of the act to which the proceedings relate, or (b) such other period as the employment tribunal thinks just and equitable."
+   },
+   {
+    "requirement": "For the purposes of section 123, conduct extending over a period is to be treated as done at the end of that period.",
+    "quote": "conduct extending over a period is to be treated as done at the end of the period"
+   },
+   {
+    "requirement": "For the purposes of section 123, a failure to do something is to be treated as occurring when the person in question decided on it.",
+    "quote": "failure to do something is to be treated as occurring when the person in question decided on it"
+   },
+   {
+    "requirement": "In the absence of evidence to the contrary, a person (P) is to be taken to decide on a failure to do something when P does an act inconsistent with doing it.",
+    "quote": "In the absence of evidence to the contrary, a person (P) is to be taken to decide on failure to do something— (a) when P does an act inconsistent with doing it"
+   },
+   {
+    "requirement": "In the absence of evidence to the contrary, if a person (P) does no act inconsistent with doing something, P is to be taken to decide on a failure to do it on the expiry of the period in which P might reasonably have been expected to do it.",
+    "quote": "if P does no inconsistent act, on the expiry of the period in which P might reasonably have been expected to do it"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period starting with the date of the act to which the complaint relates within which proceedings on a complaint within section 120 may be brought",
+    "value": "3 months",
+    "quote": "the period of 3 months starting with the date of the act to which the complaint relates"
+   },
+   {
+    "what": "Period starting with the date of the act to which proceedings relate within which proceedings in reliance on section 121(1) may be brought",
+    "value": "6 months",
+    "quote": "the period of 6 months starting with the date of the act to which the proceedings relate"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to section 140B, proceedings on a complaint within section 120 may not be brought after the end of the period of 3 months starting with the date of the act to which the complaint relates, or such other period as the employment tribunal thinks just and equitable.",
+   "quote": "Subject to section 140B proceedings on a complaint within section 120 may not be brought after the end of— (a) the period of 3 months starting with the date of the act to which the complaint relates, or (b) such other period as the employment tribunal thinks just and equitable."
+  },
+  {
+   "requirement": "Proceedings brought in reliance on section 121(1) may not be brought after the end of the period of 6 months starting with the date of the act to which the proceedings relate, or such other period as the employment tribunal thinks just and equitable.",
+   "quote": "Proceedings may not be brought in reliance on section 121(1) after the end of— (a) the period of 6 months starting with the date of the act to which the proceedings relate, or (b) such other period as the employment tribunal thinks just and equitable."
+  },
+  {
+   "requirement": "For the purposes of section 123, conduct extending over a period is to be treated as done at the end of that period.",
+   "quote": "conduct extending over a period is to be treated as done at the end of the period"
+  },
+  {
+   "requirement": "For the purposes of section 123, a failure to do something is to be treated as occurring when the person in question decided on it.",
+   "quote": "failure to do something is to be treated as occurring when the person in question decided on it"
+  },
+  {
+   "requirement": "In the absence of evidence to the contrary, a person (P) is to be taken to decide on a failure to do something when P does an act inconsistent with doing it.",
+   "quote": "In the absence of evidence to the contrary, a person (P) is to be taken to decide on failure to do something— (a) when P does an act inconsistent with doing it"
+  },
+  {
+   "requirement": "In the absence of evidence to the contrary, if a person (P) does no act inconsistent with doing something, P is to be taken to decide on a failure to do it on the expiry of the period in which P might reasonably have been expected to do it.",
+   "quote": "if P does no inconsistent act, on the expiry of the period in which P might reasonably have been expected to do it"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period starting with the date of the act to which the complaint relates within which proceedings on a complaint within section 120 may be brought",
+   "value": "3 months",
+   "quote": "the period of 3 months starting with the date of the act to which the complaint relates"
+  },
+  {
+   "what": "Period starting with the date of the act to which proceedings relate within which proceedings in reliance on section 121(1) may be brought",
+   "value": "6 months",
+   "quote": "the period of 6 months starting with the date of the act to which the proceedings relate"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

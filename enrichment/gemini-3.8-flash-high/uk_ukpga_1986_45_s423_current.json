@@ -1,0 +1,106 @@
+{
+ "key": "uk/ukpga/1986/45/s423@current",
+ "section": "uk/ukpga/1986/45/s423",
+ "version": "current",
+ "source_sha256": "6f16b8a9fb22908d24c4ea267392af839965972269b21152658406f91998a3dd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person enters into a transaction at an undervalue with another person if that person makes a gift to the other person or otherwise enters into a transaction with the other person on terms providing for them to receive no consideration.",
+    "quote": "makes a gift to the other person or he otherwise enters into a transaction with the other on terms that provide for him to receive no consideration"
+   },
+   {
+    "requirement": "A person enters into a transaction at an undervalue with another person if that person enters into a transaction with the other person in consideration of marriage or the formation of a civil partnership.",
+    "quote": "enters into a transaction with the other in consideration of marriage or the formation of a civil partnership"
+   },
+   {
+    "requirement": "A person enters into a transaction at an undervalue with another person if that person enters into a transaction with the other person for a consideration whose value, in money or money’s worth, is significantly less than the value, in money or money’s worth, of the consideration provided by themselves.",
+    "quote": "enters into a transaction with the other for a consideration the value of which, in money or money’s worth, is significantly less than the value, in money or money’s worth, of the consideration provided by himself"
+   },
+   {
+    "requirement": "Where a person has entered into a transaction at an undervalue, the court may make such order as it thinks fit for restoring the position to what it would have been if the transaction had not been entered into and protecting the interests of persons who are victims of the transaction, provided the court is satisfied under subsection (3).",
+    "quote": "the court may, if satisfied under the next subsection, make such order as it thinks fit for— (a) restoring the position to what it would have been if the transaction had not been entered into, and (b) protecting the interests of persons who are victims of the transaction"
+   },
+   {
+    "requirement": "In the case of a person entering into a transaction at an undervalue, the court shall only make an order if satisfied that the transaction was entered into by that person for the purpose of putting assets beyond the reach of a person who is making, or may at some time make, a claim against them, or of otherwise prejudicing the interests of such a person in relation to the claim which they are making or may make.",
+    "quote": "an order shall only be made if the court is satisfied that it was entered into by him for the purpose— (a) of putting assets beyond the reach of a person who is making, or may at some time make, a claim against him, or (b) of otherwise prejudicing the interests of such a person in relation to the claim which he is making or may make"
+   },
+   {
+    "requirement": "For the purposes of this provision, the court means the High Court or, if the person entering into the transaction is an individual, any other court that would have jurisdiction in relation to a bankruptcy petition relating to that individual.",
+    "quote": "“the court” means the High Court or— (a) if the person entering into the transaction is an individual, any other court which would have jurisdiction in relation to a bankruptcy petition relating to him"
+   },
+   {
+    "requirement": "For the purposes of this provision, the court means the High Court or, if the person entering into the transaction is a body capable of being wound up under Part IV or V of the Insolvency Act 1986, any other court having jurisdiction to wind up that body.",
+    "quote": "if that person is a body capable of being wound up under Part IV or V of this Act, any other court having jurisdiction to wind it up"
+   },
+   {
+    "requirement": "A victim of a transaction at an undervalue is defined as a person who is, or is capable of being, prejudiced by that transaction.",
+    "quote": "references here and below to a victim of the transaction are to a person who is, or is capable of being, prejudiced by it"
+   },
+   {
+    "requirement": "In the two sections following section 423, the person entering into the transaction at an undervalue is designated as the debtor.",
+    "quote": "in the following two sections the person entering into the transaction is referred to as “the debtor”"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "consideration to be received for a transaction to qualify as being at an undervalue on terms providing for no return",
+    "value": "no consideration",
+    "quote": "terms that provide for him to receive no consideration"
+   },
+   {
+    "what": "number of following sections in which the person entering into the transaction is referred to as the debtor",
+    "value": "two",
+    "quote": "following two sections"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person enters into a transaction at an undervalue with another person if that person makes a gift to the other person or otherwise enters into a transaction with the other person on terms providing for them to receive no consideration.",
+   "quote": "makes a gift to the other person or he otherwise enters into a transaction with the other on terms that provide for him to receive no consideration"
+  },
+  {
+   "requirement": "A person enters into a transaction at an undervalue with another person if that person enters into a transaction with the other person in consideration of marriage or the formation of a civil partnership.",
+   "quote": "enters into a transaction with the other in consideration of marriage or the formation of a civil partnership"
+  },
+  {
+   "requirement": "A person enters into a transaction at an undervalue with another person if that person enters into a transaction with the other person for a consideration whose value, in money or money’s worth, is significantly less than the value, in money or money’s worth, of the consideration provided by themselves.",
+   "quote": "enters into a transaction with the other for a consideration the value of which, in money or money’s worth, is significantly less than the value, in money or money’s worth, of the consideration provided by himself"
+  },
+  {
+   "requirement": "Where a person has entered into a transaction at an undervalue, the court may make such order as it thinks fit for restoring the position to what it would have been if the transaction had not been entered into and protecting the interests of persons who are victims of the transaction, provided the court is satisfied under subsection (3).",
+   "quote": "the court may, if satisfied under the next subsection, make such order as it thinks fit for— (a) restoring the position to what it would have been if the transaction had not been entered into, and (b) protecting the interests of persons who are victims of the transaction"
+  },
+  {
+   "requirement": "In the case of a person entering into a transaction at an undervalue, the court shall only make an order if satisfied that the transaction was entered into by that person for the purpose of putting assets beyond the reach of a person who is making, or may at some time make, a claim against them, or of otherwise prejudicing the interests of such a person in relation to the claim which they are making or may make.",
+   "quote": "an order shall only be made if the court is satisfied that it was entered into by him for the purpose— (a) of putting assets beyond the reach of a person who is making, or may at some time make, a claim against him, or (b) of otherwise prejudicing the interests of such a person in relation to the claim which he is making or may make"
+  },
+  {
+   "requirement": "For the purposes of this provision, the court means the High Court or, if the person entering into the transaction is an individual, any other court that would have jurisdiction in relation to a bankruptcy petition relating to that individual.",
+   "quote": "“the court” means the High Court or— (a) if the person entering into the transaction is an individual, any other court which would have jurisdiction in relation to a bankruptcy petition relating to him"
+  },
+  {
+   "requirement": "For the purposes of this provision, the court means the High Court or, if the person entering into the transaction is a body capable of being wound up under Part IV or V of the Insolvency Act 1986, any other court having jurisdiction to wind up that body.",
+   "quote": "if that person is a body capable of being wound up under Part IV or V of this Act, any other court having jurisdiction to wind it up"
+  },
+  {
+   "requirement": "A victim of a transaction at an undervalue is defined as a person who is, or is capable of being, prejudiced by that transaction.",
+   "quote": "references here and below to a victim of the transaction are to a person who is, or is capable of being, prejudiced by it"
+  },
+  {
+   "requirement": "In the two sections following section 423, the person entering into the transaction at an undervalue is designated as the debtor.",
+   "quote": "in the following two sections the person entering into the transaction is referred to as “the debtor”"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

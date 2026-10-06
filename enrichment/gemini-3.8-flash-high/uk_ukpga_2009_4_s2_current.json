@@ -1,0 +1,61 @@
+{
+ "key": "uk/ukpga/2009/4/s2@current",
+ "section": "uk/ukpga/2009/4/s2",
+ "version": "current",
+ "source_sha256": "e3c9be0d6b922e84ce691937421fc32d77028cf01192cc1e9596c7c95cecd3ce",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Corporation tax is charged on the profits of companies for any financial year for which an Act provides for such a charge.",
+    "quote": "Corporation tax is charged on profits of companies for any financial year for which an Act so provides"
+   },
+   {
+    "requirement": "In the Part containing section 2 of the Corporation Tax Act 2009, \"profits\" means income and chargeable gains, except to the extent that the context otherwise requires.",
+    "quote": "“profits” means income and chargeable gains, except in so far as the context otherwise requires"
+   },
+   {
+    "requirement": "In the Corporation Tax Act 2009, \"the charge to corporation tax on income\" means the statutory charge on the profits of companies to the extent that it relates to income.",
+    "quote": "“the charge to corporation tax on income” means the charge under subsection (1) so far as relating to income"
+   },
+   {
+    "requirement": "The charge to corporation tax on income operates in accordance with the provisions of the Corporation Tax Acts that govern its application.",
+    "quote": "The charge to corporation tax on income has effect in accordance with the provisions of the Corporation Tax Acts that deal with its application"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period for which corporation tax is charged on company profits if an Act so provides",
+    "value": "financial year",
+    "quote": "for any financial year for which an Act so provides"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Corporation tax is charged on the profits of companies for any financial year for which an Act provides for such a charge.",
+   "quote": "Corporation tax is charged on profits of companies for any financial year for which an Act so provides"
+  },
+  {
+   "requirement": "In the Part containing section 2 of the Corporation Tax Act 2009, \"profits\" means income and chargeable gains, except to the extent that the context otherwise requires.",
+   "quote": "“profits” means income and chargeable gains, except in so far as the context otherwise requires"
+  },
+  {
+   "requirement": "In the Corporation Tax Act 2009, \"the charge to corporation tax on income\" means the statutory charge on the profits of companies to the extent that it relates to income.",
+   "quote": "“the charge to corporation tax on income” means the charge under subsection (1) so far as relating to income"
+  },
+  {
+   "requirement": "The charge to corporation tax on income operates in accordance with the provisions of the Corporation Tax Acts that govern its application.",
+   "quote": "The charge to corporation tax on income has effect in accordance with the provisions of the Corporation Tax Acts that deal with its application"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

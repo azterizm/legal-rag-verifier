@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1977/50/s11@current",
+ "section": "uk/ukpga/1977/50/s11",
+ "version": "current",
+ "source_sha256": "08da3eff729bd1a043e2beb8cf298916d0c5589ab6bc0ff8cc204aefe8a201dc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In relation to a contract term, the requirement of reasonableness for the purposes of Part I of the Unfair Contract Terms Act 1977, section 3 of the Misrepresentation Act 1967, and section 3 of the Misrepresentation Act (Northern Ireland) 1967 is that the term must have been a fair and reasonable one to be included having regard to the circumstances which were, or ought reasonably to have been, known to or in the contemplation of the parties when the contract was made.",
+    "quote": "the term shall have been a fair and reasonable one to be included having regard to the circumstances which were, or ought reasonably to have been, known to or in the contemplation of the parties when the contract was made"
+   },
+   {
+    "requirement": "In determining for the purposes of section 6 or 7 of the Unfair Contract Terms Act 1977 whether a contract term satisfies the requirement of reasonableness, regard must be had in particular to the matters specified in Schedule 2 to the Act.",
+    "quote": "regard shall be had in particular to the matters specified in Schedule 2 to this Act"
+   },
+   {
+    "requirement": "Section 11(2) of the Unfair Contract Terms Act 1977 does not prevent a court or arbitrator from holding, in accordance with any rule of law, that a term which purports to exclude or restrict any relevant liability is not a term of the contract.",
+    "quote": "does not prevent the court or arbitrator from holding, in accordance with any rule of law, that a term which purports to exclude or restrict any relevant liability is not a term of the contract"
+   },
+   {
+    "requirement": "In relation to a notice that does not have contractual effect, the requirement of reasonableness under the Unfair Contract Terms Act 1977 is that it must be fair and reasonable to allow reliance on the notice, having regard to all the circumstances obtaining when the liability arose or, but for the notice, would have arisen.",
+    "quote": "it should be fair and reasonable to allow reliance on it, having regard to all the circumstances obtaining when the liability arose or (but for the notice) would have arisen"
+   },
+   {
+    "requirement": "Where a person seeks by reference to a contract term or notice to restrict liability to a specified sum of money, and the question arises under the Unfair Contract Terms Act 1977 or any other Act whether the term or notice satisfies the requirement of reasonableness, regard must be had in particular (without prejudice to section 11(2) in the case of contract terms) to the resources which that person could expect to be available to them for the purpose of meeting the liability should it arise.",
+    "quote": "the resources which he could expect to be available to him for the purpose of meeting the liability should it arise"
+   },
+   {
+    "requirement": "Where a person seeks by reference to a contract term or notice to restrict liability to a specified sum of money, and the question arises under the Unfair Contract Terms Act 1977 or any other Act whether the term or notice satisfies the requirement of reasonableness, regard must be had in particular (without prejudice to section 11(2) in the case of contract terms) to how far it was open to that person to cover themselves by insurance.",
+    "quote": "how far it was open to him to cover himself by insurance"
+   },
+   {
+    "requirement": "The burden of proof rests on those claiming that a contract term or notice satisfies the requirement of reasonableness to show that it does.",
+    "quote": "lt is for those claiming that a contract term or notice satisfies the requirement of reasonableness to show that it does"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In relation to a contract term, the requirement of reasonableness for the purposes of Part I of the Unfair Contract Terms Act 1977, section 3 of the Misrepresentation Act 1967, and section 3 of the Misrepresentation Act (Northern Ireland) 1967 is that the term must have been a fair and reasonable one to be included having regard to the circumstances which were, or ought reasonably to have been, known to or in the contemplation of the parties when the contract was made.",
+   "quote": "the term shall have been a fair and reasonable one to be included having regard to the circumstances which were, or ought reasonably to have been, known to or in the contemplation of the parties when the contract was made"
+  },
+  {
+   "requirement": "In determining for the purposes of section 6 or 7 of the Unfair Contract Terms Act 1977 whether a contract term satisfies the requirement of reasonableness, regard must be had in particular to the matters specified in Schedule 2 to the Act.",
+   "quote": "regard shall be had in particular to the matters specified in Schedule 2 to this Act"
+  },
+  {
+   "requirement": "Section 11(2) of the Unfair Contract Terms Act 1977 does not prevent a court or arbitrator from holding, in accordance with any rule of law, that a term which purports to exclude or restrict any relevant liability is not a term of the contract.",
+   "quote": "does not prevent the court or arbitrator from holding, in accordance with any rule of law, that a term which purports to exclude or restrict any relevant liability is not a term of the contract"
+  },
+  {
+   "requirement": "In relation to a notice that does not have contractual effect, the requirement of reasonableness under the Unfair Contract Terms Act 1977 is that it must be fair and reasonable to allow reliance on the notice, having regard to all the circumstances obtaining when the liability arose or, but for the notice, would have arisen.",
+   "quote": "it should be fair and reasonable to allow reliance on it, having regard to all the circumstances obtaining when the liability arose or (but for the notice) would have arisen"
+  },
+  {
+   "requirement": "Where a person seeks by reference to a contract term or notice to restrict liability to a specified sum of money, and the question arises under the Unfair Contract Terms Act 1977 or any other Act whether the term or notice satisfies the requirement of reasonableness, regard must be had in particular (without prejudice to section 11(2) in the case of contract terms) to the resources which that person could expect to be available to them for the purpose of meeting the liability should it arise.",
+   "quote": "the resources which he could expect to be available to him for the purpose of meeting the liability should it arise"
+  },
+  {
+   "requirement": "Where a person seeks by reference to a contract term or notice to restrict liability to a specified sum of money, and the question arises under the Unfair Contract Terms Act 1977 or any other Act whether the term or notice satisfies the requirement of reasonableness, regard must be had in particular (without prejudice to section 11(2) in the case of contract terms) to how far it was open to that person to cover themselves by insurance.",
+   "quote": "how far it was open to him to cover himself by insurance"
+  },
+  {
+   "requirement": "The burden of proof rests on those claiming that a contract term or notice satisfies the requirement of reasonableness to show that it does.",
+   "quote": "lt is for those claiming that a contract term or notice satisfies the requirement of reasonableness to show that it does"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

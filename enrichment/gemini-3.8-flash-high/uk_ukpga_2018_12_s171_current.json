@@ -1,0 +1,186 @@
+{
+ "key": "uk/ukpga/2018/12/s171@current",
+ "section": "uk/ukpga/2018/12/s171",
+ "version": "current",
+ "source_sha256": "4bb086c62536a99886262c3d18b706b5c850cef0e4af590e17298a860966de70",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if the person knowingly or recklessly re-identifies information that is de-identified personal data without the consent of the controller responsible for de-identifying the personal data.",
+    "quote": "It is an offence for a person knowingly or recklessly to re-identify information that is de-identified personal data without the consent of the controller responsible for de-identifying the personal data."
+   },
+   {
+    "requirement": "For the purposes of section 171 and section 172, personal data is de-identified if it has been processed in such a manner that it can no longer be attributed, without more, to a specific data subject.",
+    "quote": "personal data is “de-identified” if it has been processed in such a manner that it can no longer be attributed, without more, to a specific data subject"
+   },
+   {
+    "requirement": "For the purposes of section 171 and section 172, a person re-identifies information if that person takes steps which result in the information no longer being de-identified within the statutory meaning.",
+    "quote": "a person “re-identifies” information if the person takes steps which result in the information no longer being de-identified within the meaning of paragraph (a)"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the re-identification was necessary for the purposes of preventing, investigating, or detecting crime.",
+    "quote": "was necessary for the purposes of preventing , investigating or detecting crime"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the re-identification was required or authorised by an enactment, by a rule of law, or by the order of a court or tribunal.",
+    "quote": "was required or authorised by an enactment, by a rule of law or by the order of a court or tribunal"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the re-identification, in the particular circumstances, was justified as being in the public interest.",
+    "quote": "in the particular circumstances, was justified as being in the public interest"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the person acted in the reasonable belief that they are the data subject to whom the information relates, had the consent of that data subject, or would have had such consent if that data subject had known about the re-identification and its circumstances.",
+    "quote": "the person acted in the reasonable belief that the person— (i) is the data subject to whom the information relates, (ii) had the consent of that data subject, or (iii) would have had such consent if the data subject had known about the re-identification and the circumstances of it"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the person acted in the reasonable belief that they are the controller responsible for de-identifying the personal data, had that controller's consent, or would have had such consent if that controller had known about the re-identification and its circumstances.",
+    "quote": "the person acted in the reasonable belief that the person— (i) is the controller responsible for de-identifying the personal data, (ii) had the consent of that controller, or (iii) would have had such consent if that controller had known about the re-identification and the circumstances of it"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the person acted for the special purposes, with a view to the publication by a person of any journalistic, academic, artistic, or literary material, and in the reasonable belief that in the particular circumstances the re-identification was justified as being in the public interest.",
+    "quote": "the person acted— (i) for the special purposes, (ii) with a view to the publication by a person of any journalistic, academic, artistic or literary material, and (iii) in the reasonable belief that in the particular circumstances the re-identification was justified as being in the public interest"
+   },
+   {
+    "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the effectiveness testing conditions under section 172 were met.",
+    "quote": "the effectiveness testing conditions were met (see section 172)"
+   },
+   {
+    "requirement": "A person commits an offence if the person knowingly or recklessly processes personal data that has been re-identified without the consent of the controller responsible for de-identifying it and in circumstances where the re-identification was an offence under subsection (1).",
+    "quote": "It is an offence for a person knowingly or recklessly to process personal data that is information that has been re-identified where the person does so— (a) without the consent of the controller responsible for de-identifying the personal data, and (b) in circumstances in which the re-identification was an offence under subsection (1)."
+   },
+   {
+    "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the processing was necessary for the purposes of preventing, investigating, or detecting crime.",
+    "quote": "was necessary for the purposes of preventing , investigating or detecting crime"
+   },
+   {
+    "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the processing was required or authorised by an enactment, by a rule of law, or by the order of a court or tribunal.",
+    "quote": "was required or authorised by an enactment, by a rule of law or by the order of a court or tribunal"
+   },
+   {
+    "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the processing, in the particular circumstances, was justified as being in the public interest.",
+    "quote": "in the particular circumstances, was justified as being in the public interest"
+   },
+   {
+    "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the person acted in the reasonable belief that the processing was lawful.",
+    "quote": "the person acted in the reasonable belief that the processing was lawful"
+   },
+   {
+    "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the person acted in the reasonable belief that they had the consent of the controller responsible for de-identifying the personal data, or would have had such consent if that controller had known about the processing and its circumstances.",
+    "quote": "the person acted in the reasonable belief that the person— (i) had the consent of the controller responsible for de-identifying the personal data, or (ii) would have had such consent if that controller had known about the processing and the circumstances of it"
+   },
+   {
+    "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the person acted for the special purposes, with a view to the publication by a person of any journalistic, academic, artistic, or literary material, and in the reasonable belief that in the particular circumstances the processing was justified as being in the public interest.",
+    "quote": "the person acted— (i) for the special purposes, (ii) with a view to the publication by a person of any journalistic, academic, artistic or literary material, and (iii) in the reasonable belief that in the particular circumstances the processing was justified as being in the public interest"
+   },
+   {
+    "requirement": "References to the consent of a controller do not include the consent of a person who is treated as a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of the Data Protection Act 2018.",
+    "quote": "references to the consent of a controller do not include the consent of a person who is a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of this Act (processor to be treated as controller in certain circumstances)"
+   },
+   {
+    "requirement": "Where there is more than one controller, references to the consent of a controller are references to the consent of one or more of those controllers.",
+    "quote": "where there is more than one controller, such references are references to the consent of one or more of them"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the minimum count of controllers triggering the rule that consent references apply to one or more of them",
+    "value": "more than one",
+    "quote": "where there is more than one controller"
+   },
+   {
+    "what": "the minimum number of controllers whose consent is required when there is more than one controller",
+    "value": "one or more",
+    "quote": "references to the consent of one or more of them"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if the person knowingly or recklessly re-identifies information that is de-identified personal data without the consent of the controller responsible for de-identifying the personal data.",
+   "quote": "It is an offence for a person knowingly or recklessly to re-identify information that is de-identified personal data without the consent of the controller responsible for de-identifying the personal data."
+  },
+  {
+   "requirement": "For the purposes of section 171 and section 172, personal data is de-identified if it has been processed in such a manner that it can no longer be attributed, without more, to a specific data subject.",
+   "quote": "personal data is “de-identified” if it has been processed in such a manner that it can no longer be attributed, without more, to a specific data subject"
+  },
+  {
+   "requirement": "For the purposes of section 171 and section 172, a person re-identifies information if that person takes steps which result in the information no longer being de-identified within the statutory meaning.",
+   "quote": "a person “re-identifies” information if the person takes steps which result in the information no longer being de-identified within the meaning of paragraph (a)"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the re-identification was necessary for the purposes of preventing, investigating, or detecting crime.",
+   "quote": "was necessary for the purposes of preventing , investigating or detecting crime"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the re-identification was required or authorised by an enactment, by a rule of law, or by the order of a court or tribunal.",
+   "quote": "was required or authorised by an enactment, by a rule of law or by the order of a court or tribunal"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the re-identification, in the particular circumstances, was justified as being in the public interest.",
+   "quote": "in the particular circumstances, was justified as being in the public interest"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the person acted in the reasonable belief that they are the data subject to whom the information relates, had the consent of that data subject, or would have had such consent if that data subject had known about the re-identification and its circumstances.",
+   "quote": "the person acted in the reasonable belief that the person— (i) is the data subject to whom the information relates, (ii) had the consent of that data subject, or (iii) would have had such consent if the data subject had known about the re-identification and the circumstances of it"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the person acted in the reasonable belief that they are the controller responsible for de-identifying the personal data, had that controller's consent, or would have had such consent if that controller had known about the re-identification and its circumstances.",
+   "quote": "the person acted in the reasonable belief that the person— (i) is the controller responsible for de-identifying the personal data, (ii) had the consent of that controller, or (iii) would have had such consent if that controller had known about the re-identification and the circumstances of it"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the person acted for the special purposes, with a view to the publication by a person of any journalistic, academic, artistic, or literary material, and in the reasonable belief that in the particular circumstances the re-identification was justified as being in the public interest.",
+   "quote": "the person acted— (i) for the special purposes, (ii) with a view to the publication by a person of any journalistic, academic, artistic or literary material, and (iii) in the reasonable belief that in the particular circumstances the re-identification was justified as being in the public interest"
+  },
+  {
+   "requirement": "A person charged with the re-identification offence under subsection (1) has a defence if the person proves that the effectiveness testing conditions under section 172 were met.",
+   "quote": "the effectiveness testing conditions were met (see section 172)"
+  },
+  {
+   "requirement": "A person commits an offence if the person knowingly or recklessly processes personal data that has been re-identified without the consent of the controller responsible for de-identifying it and in circumstances where the re-identification was an offence under subsection (1).",
+   "quote": "It is an offence for a person knowingly or recklessly to process personal data that is information that has been re-identified where the person does so— (a) without the consent of the controller responsible for de-identifying the personal data, and (b) in circumstances in which the re-identification was an offence under subsection (1)."
+  },
+  {
+   "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the processing was necessary for the purposes of preventing, investigating, or detecting crime.",
+   "quote": "was necessary for the purposes of preventing , investigating or detecting crime"
+  },
+  {
+   "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the processing was required or authorised by an enactment, by a rule of law, or by the order of a court or tribunal.",
+   "quote": "was required or authorised by an enactment, by a rule of law or by the order of a court or tribunal"
+  },
+  {
+   "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the processing, in the particular circumstances, was justified as being in the public interest.",
+   "quote": "in the particular circumstances, was justified as being in the public interest"
+  },
+  {
+   "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the person acted in the reasonable belief that the processing was lawful.",
+   "quote": "the person acted in the reasonable belief that the processing was lawful"
+  },
+  {
+   "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the person acted in the reasonable belief that they had the consent of the controller responsible for de-identifying the personal data, or would have had such consent if that controller had known about the processing and its circumstances.",
+   "quote": "the person acted in the reasonable belief that the person— (i) had the consent of the controller responsible for de-identifying the personal data, or (ii) would have had such consent if that controller had known about the processing and the circumstances of it"
+  },
+  {
+   "requirement": "A person charged with the processing offence under subsection (5) has a defence if the person proves that the person acted for the special purposes, with a view to the publication by a person of any journalistic, academic, artistic, or literary material, and in the reasonable belief that in the particular circumstances the processing was justified as being in the public interest.",
+   "quote": "the person acted— (i) for the special purposes, (ii) with a view to the publication by a person of any journalistic, academic, artistic or literary material, and (iii) in the reasonable belief that in the particular circumstances the processing was justified as being in the public interest"
+  },
+  {
+   "requirement": "References to the consent of a controller do not include the consent of a person who is treated as a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of the Data Protection Act 2018.",
+   "quote": "references to the consent of a controller do not include the consent of a person who is a controller by virtue of Article 28(10) of the UK GDPR or section 59(8) or 105(3) of this Act (processor to be treated as controller in certain circumstances)"
+  },
+  {
+   "requirement": "Where there is more than one controller, references to the consent of a controller are references to the consent of one or more of those controllers.",
+   "quote": "where there is more than one controller, such references are references to the consent of one or more of them"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "key": "uk/ukpga/1996/25/s3@current",
+ "section": "uk/ukpga/1996/25/s3",
+ "version": "current",
+ "source_sha256": "ea7e0953e5e4be3a849960bd7d7b135783899579d3db8a3111d9d54cd325ff3d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The prosecutor must disclose to the accused any prosecution material not previously disclosed that might reasonably be considered capable of undermining the prosecution case against the accused or of assisting the accused's case, or give the accused a written statement that no such material exists.",
+    "quote": "The prosecutor must— (a) disclose to the accused any prosecution material which has not previously been disclosed to the accused and which might reasonably be considered capable of undermining the case for the prosecution against the accused or of assisting the case for the accused , or (b) give to the accused a written statement that there is no material of a description mentioned in paragraph (a)."
+   },
+   {
+    "requirement": "For the purposes of section 3 of the Criminal Procedure and Investigations Act 1996, prosecution material includes material in the prosecutor’s possession that came into the prosecutor's possession in connection with the case for the prosecution against the accused.",
+    "quote": "prosecution material is material— (a) which is in the prosecutor’s possession, and came into his possession in connection with the case for the prosecution against the accused"
+   },
+   {
+    "requirement": "For the purposes of section 3 of the Criminal Procedure and Investigations Act 1996, prosecution material includes material that the prosecutor has inspected in connection with the case for the prosecution against the accused in pursuance of a code operative under Part II.",
+    "quote": "which, in pursuance of a code operative under Part II, he has inspected in connection with the case for the prosecution against the accused."
+   },
+   {
+    "requirement": "Where prosecution material consists of recorded information, the prosecutor must disclose it by securing that a copy is made and given to the accused, or, if the prosecutor considers that not practicable or not desirable, by allowing the accused to inspect it at a reasonable time and place or taking steps to secure that the accused is allowed to do so.",
+    "quote": "Where material consists of information which has been recorded in any form the prosecutor discloses it for the purposes of this section— (a) by securing that a copy is made of it and that the copy is given to the accused, or (b) if in the prosecutor’s opinion that is not practicable or not desirable, by allowing the accused to inspect it at a reasonable time and a reasonable place or by taking steps to secure that he is allowed to do so"
+   },
+   {
+    "requirement": "A copy of recorded information may be provided in such form as the prosecutor thinks fit and is not required to be in the same form as that in which the information was originally recorded.",
+    "quote": "a copy may be in such form as the prosecutor thinks fit and need not be in the same form as that in which the information has already been recorded."
+   },
+   {
+    "requirement": "Where prosecution material consists of unrecorded information, the prosecutor must disclose it by securing that it is recorded in such form as the prosecutor thinks fit and either securing that a copy is made and given to the accused or, if the prosecutor considers that not practicable or not desirable, allowing the accused to inspect it at a reasonable time and place or taking steps to secure that the accused is allowed to do so.",
+    "quote": "Where material consists of information which has not been recorded the prosecutor discloses it for the purposes of this section by securing that it is recorded in such form as he thinks fit and— (a) by securing that a copy is made of it and that the copy is given to the accused, or (b) if in the prosecutor’s opinion that is not practicable or not desirable, by allowing the accused to inspect it at a reasonable time and a reasonable place or by taking steps to secure that he is allowed to do so."
+   },
+   {
+    "requirement": "Where prosecution material does not consist of information, the prosecutor must disclose it by allowing the accused to inspect it at a reasonable time and place or by taking steps to secure that the accused is allowed to do so.",
+    "quote": "Where material does not consist of information the prosecutor discloses it for the purposes of this section by allowing the accused to inspect it at a reasonable time and a reasonable place or by taking steps to secure that he is allowed to do so."
+   },
+   {
+    "requirement": "Material must not be disclosed under section 3 of the Criminal Procedure and Investigations Act 1996 to the extent that the court, upon an application by the prosecutor, concludes disclosure is not in the public interest and makes an order accordingly.",
+    "quote": "Material must not be disclosed under this section to the extent that the court, on an application by the prosecutor, concludes it is not in the public interest to disclose it and orders accordingly."
+   },
+   {
+    "requirement": "Material must not be disclosed under section 3 of the Criminal Procedure and Investigations Act 1996 to the extent that its disclosure is prohibited by section 56 of the Investigatory Powers Act 2016.",
+    "quote": "Material must not be disclosed under this section to the extent that it is material the disclosure of which is prohibited by section 56 of the Investigatory Powers Act 2016 ."
+   },
+   {
+    "requirement": "The prosecutor must carry out disclosure obligations under section 3 of the Criminal Procedure and Investigations Act 1996 during the period that is established as the relevant period by virtue of section 12.",
+    "quote": "The prosecutor must act under this section during the period which, by virtue of section 12, is the relevant period for this section."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Calendar year of the Investigatory Powers Act",
+    "value": "2016",
+    "quote": "section 56 of the Investigatory Powers Act 2016"
+   },
+   {
+    "what": "Timeframe during which the prosecutor must carry out actions under section 3",
+    "value": "the period which, by virtue of section 12, is the relevant period for this section",
+    "quote": "during the period which, by virtue of section 12, is the relevant period for this section"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The prosecutor must disclose to the accused any prosecution material not previously disclosed that might reasonably be considered capable of undermining the prosecution case against the accused or of assisting the accused's case, or give the accused a written statement that no such material exists.",
+   "quote": "The prosecutor must— (a) disclose to the accused any prosecution material which has not previously been disclosed to the accused and which might reasonably be considered capable of undermining the case for the prosecution against the accused or of assisting the case for the accused , or (b) give to the accused a written statement that there is no material of a description mentioned in paragraph (a)."
+  },
+  {
+   "requirement": "For the purposes of section 3 of the Criminal Procedure and Investigations Act 1996, prosecution material includes material in the prosecutor’s possession that came into the prosecutor's possession in connection with the case for the prosecution against the accused.",
+   "quote": "prosecution material is material— (a) which is in the prosecutor’s possession, and came into his possession in connection with the case for the prosecution against the accused"
+  },
+  {
+   "requirement": "For the purposes of section 3 of the Criminal Procedure and Investigations Act 1996, prosecution material includes material that the prosecutor has inspected in connection with the case for the prosecution against the accused in pursuance of a code operative under Part II.",
+   "quote": "which, in pursuance of a code operative under Part II, he has inspected in connection with the case for the prosecution against the accused."
+  },
+  {
+   "requirement": "Where prosecution material consists of recorded information, the prosecutor must disclose it by securing that a copy is made and given to the accused, or, if the prosecutor considers that not practicable or not desirable, by allowing the accused to inspect it at a reasonable time and place or taking steps to secure that the accused is allowed to do so.",
+   "quote": "Where material consists of information which has been recorded in any form the prosecutor discloses it for the purposes of this section— (a) by securing that a copy is made of it and that the copy is given to the accused, or (b) if in the prosecutor’s opinion that is not practicable or not desirable, by allowing the accused to inspect it at a reasonable time and a reasonable place or by taking steps to secure that he is allowed to do so"
+  },
+  {
+   "requirement": "A copy of recorded information may be provided in such form as the prosecutor thinks fit and is not required to be in the same form as that in which the information was originally recorded.",
+   "quote": "a copy may be in such form as the prosecutor thinks fit and need not be in the same form as that in which the information has already been recorded."
+  },
+  {
+   "requirement": "Where prosecution material consists of unrecorded information, the prosecutor must disclose it by securing that it is recorded in such form as the prosecutor thinks fit and either securing that a copy is made and given to the accused or, if the prosecutor considers that not practicable or not desirable, allowing the accused to inspect it at a reasonable time and place or taking steps to secure that the accused is allowed to do so.",
+   "quote": "Where material consists of information which has not been recorded the prosecutor discloses it for the purposes of this section by securing that it is recorded in such form as he thinks fit and— (a) by securing that a copy is made of it and that the copy is given to the accused, or (b) if in the prosecutor’s opinion that is not practicable or not desirable, by allowing the accused to inspect it at a reasonable time and a reasonable place or by taking steps to secure that he is allowed to do so."
+  },
+  {
+   "requirement": "Where prosecution material does not consist of information, the prosecutor must disclose it by allowing the accused to inspect it at a reasonable time and place or by taking steps to secure that the accused is allowed to do so.",
+   "quote": "Where material does not consist of information the prosecutor discloses it for the purposes of this section by allowing the accused to inspect it at a reasonable time and a reasonable place or by taking steps to secure that he is allowed to do so."
+  },
+  {
+   "requirement": "Material must not be disclosed under section 3 of the Criminal Procedure and Investigations Act 1996 to the extent that the court, upon an application by the prosecutor, concludes disclosure is not in the public interest and makes an order accordingly.",
+   "quote": "Material must not be disclosed under this section to the extent that the court, on an application by the prosecutor, concludes it is not in the public interest to disclose it and orders accordingly."
+  },
+  {
+   "requirement": "Material must not be disclosed under section 3 of the Criminal Procedure and Investigations Act 1996 to the extent that its disclosure is prohibited by section 56 of the Investigatory Powers Act 2016.",
+   "quote": "Material must not be disclosed under this section to the extent that it is material the disclosure of which is prohibited by section 56 of the Investigatory Powers Act 2016 ."
+  },
+  {
+   "requirement": "The prosecutor must carry out disclosure obligations under section 3 of the Criminal Procedure and Investigations Act 1996 during the period that is established as the relevant period by virtue of section 12.",
+   "quote": "The prosecutor must act under this section during the period which, by virtue of section 12, is the relevant period for this section."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

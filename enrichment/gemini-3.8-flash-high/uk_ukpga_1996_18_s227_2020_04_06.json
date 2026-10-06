@@ -1,0 +1,43 @@
+{
+ "key": "uk/ukpga/1996/18/s227@2020-04-06",
+ "section": "uk/ukpga/1996/18/s227",
+ "version": "2020-04-06",
+ "source_sha256": "b60956b5764ab7aed1ba6a0ab425f5e3e9990ab27fc1b20145e9310396f7d287",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purpose of calculating an award of compensation under section 63J(1)(b), an award of compensation under section 80I(1)(b), a basic award of compensation for unfair dismissal, an additional award of compensation for unfair dismissal, an award under section 112(5), or a redundancy payment, the amount of a week’s pay must not exceed £538.",
+    "quote": "the amount of a week’s pay shall not exceed £538"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum amount of a week's pay for calculating specified awards and payments",
+    "value": "£538",
+    "quote": "the amount of a week’s pay shall not exceed £538"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "For the purpose of calculating an award of compensation under section 63J(1)(b), an award of compensation under section 80I(1)(b), a basic award of compensation for unfair dismissal, an additional award of compensation for unfair dismissal, an award under section 112(5), or a redundancy payment, the amount of a week’s pay must not exceed £538.",
+   "quote": "the amount of a week’s pay shall not exceed £538"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum amount of a week's pay for calculating specified awards and payments",
+   "value": "£538",
+   "quote": "the amount of a week’s pay shall not exceed £538"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 1,
+  "elements_verified": 1,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

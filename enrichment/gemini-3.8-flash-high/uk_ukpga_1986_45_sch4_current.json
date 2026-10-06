@@ -1,0 +1,151 @@
+{
+ "key": "uk/ukpga/1986/45/sch4@current",
+ "section": "uk/ukpga/1986/45/sch4",
+ "version": "current",
+ "source_sha256": "f59d8341ce4a3661235ef86996e7e6f31965533227df93717db9954e048e3428",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A liquidator has the power to pay any class of creditors in full.",
+    "quote": "Power to pay any class of creditors in full."
+   },
+   {
+    "requirement": "A liquidator has the power to make any compromise or arrangement with creditors, persons claiming to be creditors, or persons having or alleging themselves to have any claim (present or future, certain or contingent, ascertained or sounding only in damages) against the company or whereby the company may be rendered liable.",
+    "quote": "Power to make any compromise or arrangement with creditors or persons claiming to be creditors, or having or alleging themselves to have any claim (present or future, certain or contingent, ascertained or sounding only in damages) against the company, or whereby the company may be rendered liable."
+   },
+   {
+    "requirement": "A liquidator has the power to compromise, on agreed terms, all calls and liabilities to calls, all debts and liabilities capable of resulting in debts, and all claims (present or future, certain or contingent, ascertained or sounding only in damages) subsisting or supposed to subsist between the company and a contributory, alleged contributory, other debtor, or person apprehending liability to the company.",
+    "quote": "power to compromise, on such terms as may be agreed— (a) all calls and liabilities to calls, all debts and liabilities capable of resulting in debts, and all claims (present or future, certain or contingent, ascertained or sounding only in damages) subsisting or supposed to subsist between the company and a contributory or alleged contributory or other debtor or person apprehending liability to the company"
+   },
+   {
+    "requirement": "A liquidator has the power to compromise on agreed terms all questions in any way relating to or affecting the assets or winding up of the company, take any security for the discharge of any such call, debt, liability or claim, and give a complete discharge in respect of it.",
+    "quote": "all questions in any way relating to or affecting the assets or the winding up of the company, and take any security for the discharge of any such call, debt, liability or claim and give a complete discharge in respect of it."
+   },
+   {
+    "requirement": "A liquidator has the power to bring legal proceedings under section 213, 214, 238, 239, 242, 243 or 423.",
+    "quote": "Power to bring legal proceedings under section 213, 214, 238, 239, 242, 243 or 423."
+   },
+   {
+    "requirement": "A liquidator has the power to bring or defend any action or other legal proceeding in the name and on behalf of the company.",
+    "quote": "Power to bring or defend any action or other legal proceeding in the name and on behalf of the company."
+   },
+   {
+    "requirement": "A liquidator has the power to carry on the business of the company so far as may be necessary for its beneficial winding up.",
+    "quote": "Power to carry on the business of the company so far as may be necessary for its beneficial winding up."
+   },
+   {
+    "requirement": "A liquidator has the power to sell any of the company's property by public auction or private contract, with power to transfer the whole of it to any person or to sell it in parcels.",
+    "quote": "Power to sell any of the company’s property by public auction or private contract with power to transfer the whole of it to any person or to sell the same in parcels."
+   },
+   {
+    "requirement": "A liquidator has the power to do all acts and execute all deeds, receipts, and other documents in the name and on behalf of the company, using the company's seal when necessary.",
+    "quote": "Power to do all acts and execute, in the name and on behalf of the company, all deeds, receipts and other documents and for that purpose to use, when necessary, the company’s seal."
+   },
+   {
+    "requirement": "A liquidator has the power to prove, rank, and claim in the bankruptcy, insolvency, or sequestration of any contributory for any balance against their estate, and to receive dividends in respect of that balance as a separate debt due from the bankrupt or insolvent and rateably with other separate creditors.",
+    "quote": "Power to prove, rank and claim in the bankruptcy, insolvency or sequestration of any contributory for any balance against his estate, and to receive dividends in the bankruptcy, insolvency or sequestration in respect of that balance, as a separate debt due from the bankrupt or insolvent, and rateably with the other separate creditors."
+   },
+   {
+    "requirement": "A liquidator has the power to draw, accept, make, and indorse any bill of exchange or promissory note in the name and on behalf of the company, with the same effect regarding company liability as if done in the course of its business.",
+    "quote": "Power to draw, accept, make and indorse any bill of exchange or promissory note in the name and on behalf of the company, with the same effect with respect to the company’s liability as if the bill or note had been drawn, accepted, made or indorsed by or on behalf of the company in the course of its business."
+   },
+   {
+    "requirement": "A liquidator has the power to raise any requisite money on the security of the company's assets.",
+    "quote": "Power to raise on the security of the assets of the company any money requisite."
+   },
+   {
+    "requirement": "A liquidator has the power to take out in the liquidator's official name letters of administration to any deceased contributory, and to perform in the liquidator's official name any other act necessary for obtaining payment of money due from a contributory or their estate that cannot conveniently be done in the company's name.",
+    "quote": "Power to take out in his official name letters of administration to any deceased contributory, and to do in his official name any other act necessary for obtaining payment of any money due from a contributory or his estate which cannot conveniently be done in the name of the company."
+   },
+   {
+    "requirement": "Where an act necessary for obtaining payment cannot conveniently be done in the name of the company, the money due is deemed to be due to the liquidator himself to enable the liquidator to take out letters of administration or recover the money.",
+    "quote": "In all such cases the money due is deemed, for the purpose of enabling the liquidator to take out the letters of administration or recover the money, to be due to the liquidator himself."
+   },
+   {
+    "requirement": "A liquidator has the power to appoint an agent to carry out any business that the liquidator is unable to do personally.",
+    "quote": "Power to appoint an agent to do any business which the liquidator is unable to do himself."
+   },
+   {
+    "requirement": "A liquidator has the power to do all such other things as may be necessary for winding up the company's affairs and distributing its assets.",
+    "quote": "Power to do all such other things as may be necessary for winding up the company’s affairs and distributing its assets."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A liquidator has the power to pay any class of creditors in full.",
+   "quote": "Power to pay any class of creditors in full."
+  },
+  {
+   "requirement": "A liquidator has the power to make any compromise or arrangement with creditors, persons claiming to be creditors, or persons having or alleging themselves to have any claim (present or future, certain or contingent, ascertained or sounding only in damages) against the company or whereby the company may be rendered liable.",
+   "quote": "Power to make any compromise or arrangement with creditors or persons claiming to be creditors, or having or alleging themselves to have any claim (present or future, certain or contingent, ascertained or sounding only in damages) against the company, or whereby the company may be rendered liable."
+  },
+  {
+   "requirement": "A liquidator has the power to compromise, on agreed terms, all calls and liabilities to calls, all debts and liabilities capable of resulting in debts, and all claims (present or future, certain or contingent, ascertained or sounding only in damages) subsisting or supposed to subsist between the company and a contributory, alleged contributory, other debtor, or person apprehending liability to the company.",
+   "quote": "power to compromise, on such terms as may be agreed— (a) all calls and liabilities to calls, all debts and liabilities capable of resulting in debts, and all claims (present or future, certain or contingent, ascertained or sounding only in damages) subsisting or supposed to subsist between the company and a contributory or alleged contributory or other debtor or person apprehending liability to the company"
+  },
+  {
+   "requirement": "A liquidator has the power to compromise on agreed terms all questions in any way relating to or affecting the assets or winding up of the company, take any security for the discharge of any such call, debt, liability or claim, and give a complete discharge in respect of it.",
+   "quote": "all questions in any way relating to or affecting the assets or the winding up of the company, and take any security for the discharge of any such call, debt, liability or claim and give a complete discharge in respect of it."
+  },
+  {
+   "requirement": "A liquidator has the power to bring legal proceedings under section 213, 214, 238, 239, 242, 243 or 423.",
+   "quote": "Power to bring legal proceedings under section 213, 214, 238, 239, 242, 243 or 423."
+  },
+  {
+   "requirement": "A liquidator has the power to bring or defend any action or other legal proceeding in the name and on behalf of the company.",
+   "quote": "Power to bring or defend any action or other legal proceeding in the name and on behalf of the company."
+  },
+  {
+   "requirement": "A liquidator has the power to carry on the business of the company so far as may be necessary for its beneficial winding up.",
+   "quote": "Power to carry on the business of the company so far as may be necessary for its beneficial winding up."
+  },
+  {
+   "requirement": "A liquidator has the power to sell any of the company's property by public auction or private contract, with power to transfer the whole of it to any person or to sell it in parcels.",
+   "quote": "Power to sell any of the company’s property by public auction or private contract with power to transfer the whole of it to any person or to sell the same in parcels."
+  },
+  {
+   "requirement": "A liquidator has the power to do all acts and execute all deeds, receipts, and other documents in the name and on behalf of the company, using the company's seal when necessary.",
+   "quote": "Power to do all acts and execute, in the name and on behalf of the company, all deeds, receipts and other documents and for that purpose to use, when necessary, the company’s seal."
+  },
+  {
+   "requirement": "A liquidator has the power to prove, rank, and claim in the bankruptcy, insolvency, or sequestration of any contributory for any balance against their estate, and to receive dividends in respect of that balance as a separate debt due from the bankrupt or insolvent and rateably with other separate creditors.",
+   "quote": "Power to prove, rank and claim in the bankruptcy, insolvency or sequestration of any contributory for any balance against his estate, and to receive dividends in the bankruptcy, insolvency or sequestration in respect of that balance, as a separate debt due from the bankrupt or insolvent, and rateably with the other separate creditors."
+  },
+  {
+   "requirement": "A liquidator has the power to draw, accept, make, and indorse any bill of exchange or promissory note in the name and on behalf of the company, with the same effect regarding company liability as if done in the course of its business.",
+   "quote": "Power to draw, accept, make and indorse any bill of exchange or promissory note in the name and on behalf of the company, with the same effect with respect to the company’s liability as if the bill or note had been drawn, accepted, made or indorsed by or on behalf of the company in the course of its business."
+  },
+  {
+   "requirement": "A liquidator has the power to raise any requisite money on the security of the company's assets.",
+   "quote": "Power to raise on the security of the assets of the company any money requisite."
+  },
+  {
+   "requirement": "A liquidator has the power to take out in the liquidator's official name letters of administration to any deceased contributory, and to perform in the liquidator's official name any other act necessary for obtaining payment of money due from a contributory or their estate that cannot conveniently be done in the company's name.",
+   "quote": "Power to take out in his official name letters of administration to any deceased contributory, and to do in his official name any other act necessary for obtaining payment of any money due from a contributory or his estate which cannot conveniently be done in the name of the company."
+  },
+  {
+   "requirement": "Where an act necessary for obtaining payment cannot conveniently be done in the name of the company, the money due is deemed to be due to the liquidator himself to enable the liquidator to take out letters of administration or recover the money.",
+   "quote": "In all such cases the money due is deemed, for the purpose of enabling the liquidator to take out the letters of administration or recover the money, to be due to the liquidator himself."
+  },
+  {
+   "requirement": "A liquidator has the power to appoint an agent to carry out any business that the liquidator is unable to do personally.",
+   "quote": "Power to appoint an agent to do any business which the liquidator is unable to do himself."
+  },
+  {
+   "requirement": "A liquidator has the power to do all such other things as may be necessary for winding up the company's affairs and distributing its assets.",
+   "quote": "Power to do all such other things as may be necessary for winding up the company’s affairs and distributing its assets."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

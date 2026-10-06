@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2006/35/s2@current",
+ "section": "uk/ukpga/2006/35/s2",
+ "version": "current",
+ "source_sha256": "6e873a009ed7de1ead3aebb50ad679a552a523a4f812deaf51891ef90c1e509b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits a breach of section 2 of the Fraud Act 2006 if that person dishonestly makes a false representation.",
+    "quote": "dishonestly makes a false representation"
+   },
+   {
+    "requirement": "To be in breach of section 2 of the Fraud Act 2006, the person making the false representation must intend, by making it, to make a gain for himself or another, or to cause loss to another or expose another to a risk of loss.",
+    "quote": "intends, by making the representation— (i) to make a gain for himself or another, or (ii) to cause loss to another or to expose another to a risk of loss"
+   },
+   {
+    "requirement": "A representation is false if it is untrue or misleading and the person making it knows that it is, or might be, untrue or misleading.",
+    "quote": "it is untrue or misleading, and (b) the person making it knows that it is, or might be, untrue or misleading"
+   },
+   {
+    "requirement": "A representation means any representation as to fact or law, including a representation regarding the state of mind of the person making the representation or of any other person.",
+    "quote": "“Representation” means any representation as to fact or law, including a representation as to the state of mind"
+   },
+   {
+    "requirement": "A representation may be either express or implied.",
+    "quote": "A representation may be express or implied"
+   },
+   {
+    "requirement": "For the purposes of section 2 of the Fraud Act 2006, a representation may be regarded as made if the representation (or anything implying it) is submitted in any form to any system or device designed to receive, convey or respond to communications, whether with or without human intervention.",
+    "quote": "submitted in any form to any system or device designed to receive, convey or respond to communications (with or without human intervention)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person commits a breach of section 2 of the Fraud Act 2006 if that person dishonestly makes a false representation.",
+   "quote": "dishonestly makes a false representation"
+  },
+  {
+   "requirement": "To be in breach of section 2 of the Fraud Act 2006, the person making the false representation must intend, by making it, to make a gain for himself or another, or to cause loss to another or expose another to a risk of loss.",
+   "quote": "intends, by making the representation— (i) to make a gain for himself or another, or (ii) to cause loss to another or to expose another to a risk of loss"
+  },
+  {
+   "requirement": "A representation is false if it is untrue or misleading and the person making it knows that it is, or might be, untrue or misleading.",
+   "quote": "it is untrue or misleading, and (b) the person making it knows that it is, or might be, untrue or misleading"
+  },
+  {
+   "requirement": "A representation means any representation as to fact or law, including a representation regarding the state of mind of the person making the representation or of any other person.",
+   "quote": "“Representation” means any representation as to fact or law, including a representation as to the state of mind"
+  },
+  {
+   "requirement": "A representation may be either express or implied.",
+   "quote": "A representation may be express or implied"
+  },
+  {
+   "requirement": "For the purposes of section 2 of the Fraud Act 2006, a representation may be regarded as made if the representation (or anything implying it) is submitted in any form to any system or device designed to receive, convey or respond to communications, whether with or without human intervention.",
+   "quote": "submitted in any form to any system or device designed to receive, convey or respond to communications (with or without human intervention)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2006/46/s994@current",
+ "section": "uk/ukpga/2006/46/s994",
+ "version": "current",
+ "source_sha256": "29ab27f30d97f69cf377133349e9dadaf539ebf97f4e2b0f6c7aacc01c2baa43",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A member of a company may apply to the court by petition for an order under this Part on the ground that the company's affairs are being or have been conducted in a manner that is unfairly prejudicial to the interests of members generally or of some part of its members, including at least the member making the application.",
+    "quote": "A member of a company may apply to the court by petition for an order under this Part on the ground— (a) that the company's affairs are being or have been conducted in a manner that is unfairly prejudicial to the interests of members generally or of some part of its members (including at least himself)"
+   },
+   {
+    "requirement": "A member of a company may apply to the court by petition for an order under this Part on the ground that an actual or proposed act or omission of the company, including an act or omission on its behalf, is or would be unfairly prejudicial to the interests of members generally or of some part of its members, including at least the member making the application.",
+    "quote": "that an actual or proposed act or omission of the company (including an act or omission on its behalf) is or would be so prejudicial"
+   },
+   {
+    "requirement": "Removing a company's auditor from office on grounds of divergence of opinions on accounting treatments or audit procedures must be treated, for the purposes of an unfair prejudice application regarding the conduct of the company's affairs, as being unfairly prejudicial to the interests of some part of the company's members.",
+    "quote": "a removal of the company's auditor from office— (a) on grounds of divergence of opinions on accounting treatments or audit procedures, or (b) on any other improper grounds, shall be treated as being unfairly prejudicial to the interests of some part of the company's members"
+   },
+   {
+    "requirement": "Removing a company's auditor from office on any other improper grounds must be treated, for the purposes of an unfair prejudice application regarding the conduct of the company's affairs, as being unfairly prejudicial to the interests of some part of the company's members.",
+    "quote": "on any other improper grounds, shall be treated as being unfairly prejudicial to the interests of some part of the company's members"
+   },
+   {
+    "requirement": "The provisions of this Part apply to a person who is not a member of a company but to whom shares in the company have been transferred or transmitted by operation of law in the same manner as they apply to a member of a company.",
+    "quote": "The provisions of this Part apply to a person who is not a member of a company but to whom shares in the company have been transferred or transmitted by operation of law as they apply to a member of a company"
+   },
+   {
+    "requirement": "In section 994 and, so far as applicable for its purposes, throughout the other provisions of this Part, a company means a company within the meaning of the Companies Act 2006.",
+    "quote": "“company” means— (a) a company within the meaning of this Act"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A member of a company may apply to the court by petition for an order under this Part on the ground that the company's affairs are being or have been conducted in a manner that is unfairly prejudicial to the interests of members generally or of some part of its members, including at least the member making the application.",
+   "quote": "A member of a company may apply to the court by petition for an order under this Part on the ground— (a) that the company's affairs are being or have been conducted in a manner that is unfairly prejudicial to the interests of members generally or of some part of its members (including at least himself)"
+  },
+  {
+   "requirement": "A member of a company may apply to the court by petition for an order under this Part on the ground that an actual or proposed act or omission of the company, including an act or omission on its behalf, is or would be unfairly prejudicial to the interests of members generally or of some part of its members, including at least the member making the application.",
+   "quote": "that an actual or proposed act or omission of the company (including an act or omission on its behalf) is or would be so prejudicial"
+  },
+  {
+   "requirement": "Removing a company's auditor from office on grounds of divergence of opinions on accounting treatments or audit procedures must be treated, for the purposes of an unfair prejudice application regarding the conduct of the company's affairs, as being unfairly prejudicial to the interests of some part of the company's members.",
+   "quote": "a removal of the company's auditor from office— (a) on grounds of divergence of opinions on accounting treatments or audit procedures, or (b) on any other improper grounds, shall be treated as being unfairly prejudicial to the interests of some part of the company's members"
+  },
+  {
+   "requirement": "Removing a company's auditor from office on any other improper grounds must be treated, for the purposes of an unfair prejudice application regarding the conduct of the company's affairs, as being unfairly prejudicial to the interests of some part of the company's members.",
+   "quote": "on any other improper grounds, shall be treated as being unfairly prejudicial to the interests of some part of the company's members"
+  },
+  {
+   "requirement": "The provisions of this Part apply to a person who is not a member of a company but to whom shares in the company have been transferred or transmitted by operation of law in the same manner as they apply to a member of a company.",
+   "quote": "The provisions of this Part apply to a person who is not a member of a company but to whom shares in the company have been transferred or transmitted by operation of law as they apply to a member of a company"
+  },
+  {
+   "requirement": "In section 994 and, so far as applicable for its purposes, throughout the other provisions of this Part, a company means a company within the meaning of the Companies Act 2006.",
+   "quote": "“company” means— (a) a company within the meaning of this Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

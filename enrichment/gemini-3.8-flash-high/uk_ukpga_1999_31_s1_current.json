@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1999/31/s1@current",
+ "section": "uk/ukpga/1999/31/s1",
+ "version": "current",
+ "source_sha256": "f3a0f38d327b78002def2e5133d897277ab0eadfe64ee8b81cb9e90dc46f4955",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who is not a party to a contract is defined as a third party.",
+    "quote": "a person who is not a party to a contract (a “third party”)"
+   },
+   {
+    "requirement": "Subject to the provisions of the Act, a third party may in his own right enforce a term of a contract if the contract expressly provides that he may.",
+    "quote": "a person who is not a party to a contract (a “third party”) may in his own right enforce a term of the contract if— (a) the contract expressly provides that he may"
+   },
+   {
+    "requirement": "Subject to the provisions of the Act and subsection (2), a third party may in his own right enforce a term of a contract if the term purports to confer a benefit on him.",
+    "quote": "subject to subsection (2), the term purports to confer a benefit on him"
+   },
+   {
+    "requirement": "A third party cannot enforce a term purporting to confer a benefit on him under subsection (1)(b) if, on a proper construction of the contract, it appears that the parties did not intend the term to be enforceable by the third party.",
+    "quote": "Subsection (1)(b) does not apply if on a proper construction of the contract it appears that the parties did not intend the term to be enforceable by the third party."
+   },
+   {
+    "requirement": "A third party must be expressly identified in the contract by name, as a member of a class, or as answering a particular description.",
+    "quote": "The third party must be expressly identified in the contract by name, as a member of a class or as answering a particular description"
+   },
+   {
+    "requirement": "A third party need not be in existence at the time the contract is entered into.",
+    "quote": "need not be in existence when the contract is entered into"
+   },
+   {
+    "requirement": "A third party's right to enforce a contract term is conferred strictly subject to and in accordance with any other relevant terms of the contract.",
+    "quote": "This section does not confer a right on a third party to enforce a term of a contract otherwise than subject to and in accordance with any other relevant terms of the contract."
+   },
+   {
+    "requirement": "For the purpose of enforcing a contract term, a third party has available any remedy that would have been available in an action for breach of contract as if the third party had been a party to the contract, with the rules on damages, injunctions, specific performance, and other relief applying accordingly.",
+    "quote": "there shall be available to the third party any remedy that would have been available to him in an action for breach of contract if he had been a party to the contract (and the rules relating to damages, injunctions, specific performance and other relief shall apply accordingly)."
+   },
+   {
+    "requirement": "Where a contractual term excludes or limits liability regarding any matter, references in the Act to a third party enforcing the term must be construed as references to the third party availing himself of that exclusion or limitation.",
+    "quote": "Where a term of a contract excludes or limits liability in relation to any matter references in this Act to the third party enforcing the term shall be construed as references to his availing himself of the exclusion or limitation."
+   },
+   {
+    "requirement": "In relation to a contract term enforceable by a third party, the promisor is defined as the party to the contract against whom the term is enforceable by the third party.",
+    "quote": "“the promisor” means the party to the contract against whom the term is enforceable by the third party"
+   },
+   {
+    "requirement": "In relation to a contract term enforceable by a third party, the promisee is defined as the party to the contract by whom the term is enforceable against the promisor.",
+    "quote": "“the promisee” means the party to the contract by whom the term is enforceable against the promisor."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person who is not a party to a contract is defined as a third party.",
+   "quote": "a person who is not a party to a contract (a “third party”)"
+  },
+  {
+   "requirement": "Subject to the provisions of the Act, a third party may in his own right enforce a term of a contract if the contract expressly provides that he may.",
+   "quote": "a person who is not a party to a contract (a “third party”) may in his own right enforce a term of the contract if— (a) the contract expressly provides that he may"
+  },
+  {
+   "requirement": "Subject to the provisions of the Act and subsection (2), a third party may in his own right enforce a term of a contract if the term purports to confer a benefit on him.",
+   "quote": "subject to subsection (2), the term purports to confer a benefit on him"
+  },
+  {
+   "requirement": "A third party cannot enforce a term purporting to confer a benefit on him under subsection (1)(b) if, on a proper construction of the contract, it appears that the parties did not intend the term to be enforceable by the third party.",
+   "quote": "Subsection (1)(b) does not apply if on a proper construction of the contract it appears that the parties did not intend the term to be enforceable by the third party."
+  },
+  {
+   "requirement": "A third party must be expressly identified in the contract by name, as a member of a class, or as answering a particular description.",
+   "quote": "The third party must be expressly identified in the contract by name, as a member of a class or as answering a particular description"
+  },
+  {
+   "requirement": "A third party need not be in existence at the time the contract is entered into.",
+   "quote": "need not be in existence when the contract is entered into"
+  },
+  {
+   "requirement": "A third party's right to enforce a contract term is conferred strictly subject to and in accordance with any other relevant terms of the contract.",
+   "quote": "This section does not confer a right on a third party to enforce a term of a contract otherwise than subject to and in accordance with any other relevant terms of the contract."
+  },
+  {
+   "requirement": "For the purpose of enforcing a contract term, a third party has available any remedy that would have been available in an action for breach of contract as if the third party had been a party to the contract, with the rules on damages, injunctions, specific performance, and other relief applying accordingly.",
+   "quote": "there shall be available to the third party any remedy that would have been available to him in an action for breach of contract if he had been a party to the contract (and the rules relating to damages, injunctions, specific performance and other relief shall apply accordingly)."
+  },
+  {
+   "requirement": "Where a contractual term excludes or limits liability regarding any matter, references in the Act to a third party enforcing the term must be construed as references to the third party availing himself of that exclusion or limitation.",
+   "quote": "Where a term of a contract excludes or limits liability in relation to any matter references in this Act to the third party enforcing the term shall be construed as references to his availing himself of the exclusion or limitation."
+  },
+  {
+   "requirement": "In relation to a contract term enforceable by a third party, the promisor is defined as the party to the contract against whom the term is enforceable by the third party.",
+   "quote": "“the promisor” means the party to the contract against whom the term is enforceable by the third party"
+  },
+  {
+   "requirement": "In relation to a contract term enforceable by a third party, the promisee is defined as the party to the contract by whom the term is enforceable against the promisor.",
+   "quote": "“the promisee” means the party to the contract by whom the term is enforceable against the promisor."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

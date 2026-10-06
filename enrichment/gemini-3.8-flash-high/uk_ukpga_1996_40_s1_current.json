@@ -1,0 +1,160 @@
+{
+ "key": "uk/ukpga/1996/40/s1@current",
+ "section": "uk/ukpga/1996/40/s1",
+ "version": "current",
+ "source_sha256": "8f8288dada0bf4ab60a76af8fa42bdaad5e06b8492824cd87d0d0d3021010915",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1 takes effect where lands of different owners adjoin, either owner is about to build on any part of the line of junction, and those lands are either not built on at the line of junction or are built on at the line of junction only to the extent of a boundary wall that is not a party fence wall or an external wall of a building.",
+    "quote": "lands of different owners adjoin and— (a) are not built on at the line of junction; or (b) are built on at the line of junction only to the extent of a boundary wall (not being a party fence wall or the external wall of a building), and either owner is about to build on any part of the line of junction"
+   },
+   {
+    "requirement": "A building owner who desires to build a party wall or party fence wall on the line of junction must serve on any adjoining owner, at least one month before he intends the building work to start, a notice indicating his desire to build and describing the intended wall.",
+    "quote": "If a building owner desires to build a party wall or party fence wall on the line of junction he shall, at least one month before he intends the building work to start, serve on any adjoining owner a notice which indicates his desire to build and describes the intended wall"
+   },
+   {
+    "requirement": "If an adjoining owner serves a notice consenting to the building of a party wall or party fence wall after being served with notice under subsection (2), the wall must be built half on the land of each of the two owners or in such other position as may be agreed between them.",
+    "quote": "the wall shall be built half on the land of each of the two owners or in such other position as may be agreed between the two owners"
+   },
+   {
+    "requirement": "If an adjoining owner consents to the building of a party wall or party fence wall, the expense of building it must be defrayed from time to time by the two owners in such proportion as has regard to the use made or to be made of the wall by each owner and to the prevailing cost of labour and materials when that use is made.",
+    "quote": "the expense of building the wall shall be from time to time defrayed by the two owners in such proportion as has regard to the use made or to be made of the wall by each of them and to the cost of labour and materials prevailing at the time when that use is made by each owner respectively"
+   },
+   {
+    "requirement": "If an adjoining owner served with notice under subsection (2) does not consent under subsection (4), the building owner may only build the wall at his own expense and as an external wall or fence wall placed wholly on his own land.",
+    "quote": "the building owner may only build the wall— (a) at his own expense; and (b) as an external wall or a fence wall, as the case may be, placed wholly on his own land"
+   },
+   {
+    "requirement": "Consent of an adjoining owner under subsection (4) to the building of a party wall or party fence wall is defined as consent given by a notice served within the period of fourteen days beginning with the day on which the building owner's notice under subsection (2) is served.",
+    "quote": "consent under this subsection is consent by a notice served within the period of fourteen days beginning with the day on which the notice described in subsection (2) is served"
+   },
+   {
+    "requirement": "A building owner who desires to build on the line of junction a wall placed wholly on his own land must serve on any adjoining owner, at least one month before he intends the building work to start, a notice indicating his desire to build and describing the intended wall.",
+    "quote": "If the building owner desires to build on the line of junction a wall placed wholly on his own land he shall, at least one month before he intends the building work to start, serve on any adjoining owner a notice which indicates his desire to build and describes the intended wall"
+   },
+   {
+    "requirement": "A building owner who builds a wall wholly on his own land under subsection (4) or (5) has the right to place below the level of the adjoining owner's land such projecting footings and foundations as are necessary for the wall's construction at any time during the period beginning one month after and ending twelve months after the notice was served.",
+    "quote": "he shall have the right, at any time in the period which— (a) begins one month after the day on which the notice mentioned in the subsection concerned was served, and (b) ends twelve months after that day, to place below the level of the land of the adjoining owner such projecting footings and foundations as are necessary for the construction of the wall"
+   },
+   {
+    "requirement": "A building owner who builds a wall wholly on his own land under subsection (4) or (5) must do so at his own expense and must compensate any adjoining owner and adjoining occupier for any damage to his property caused by building the wall or placing footings or foundations under subsection (6).",
+    "quote": "he shall do so at his own expense and shall compensate any adjoining owner and any adjoining occupier for any damage to his property occasioned by— (a) the building of the wall; (b) the placing of any footings or foundations placed in accordance with subsection (6)"
+   },
+   {
+    "requirement": "Any dispute arising under section 1 between the building owner and any adjoining owner or occupier must be determined in accordance with section 10.",
+    "quote": "Where any dispute arises under this section between the building owner and any adjoining owner or occupier it is to be determined in accordance with section 10"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum advance notice period before intended start of building work for a party wall or party fence wall",
+    "value": "at least one month",
+    "quote": "at least one month before he intends the building work to start"
+   },
+   {
+    "what": "proportion of the wall to be built on the land of each owner upon consent",
+    "value": "half",
+    "quote": "half on the land of each of the two owners"
+   },
+   {
+    "what": "period for an adjoining owner to serve a notice of consent under subsection (4)",
+    "value": "fourteen days",
+    "quote": "period of fourteen days beginning with the day on which the notice described in subsection (2) is served"
+   },
+   {
+    "what": "minimum advance notice period before intended start of building work for a wall placed wholly on the building owner's land",
+    "value": "at least one month",
+    "quote": "at least one month before he intends the building work to start"
+   },
+   {
+    "what": "commencement of the period for the building owner to place projecting footings and foundations below the adjoining owner's land",
+    "value": "one month",
+    "quote": "begins one month after the day on which the notice mentioned in the subsection concerned was served"
+   },
+   {
+    "what": "expiry of the period for the building owner to place projecting footings and foundations below the adjoining owner's land",
+    "value": "twelve months",
+    "quote": "ends twelve months after that day"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 1 takes effect where lands of different owners adjoin, either owner is about to build on any part of the line of junction, and those lands are either not built on at the line of junction or are built on at the line of junction only to the extent of a boundary wall that is not a party fence wall or an external wall of a building.",
+   "quote": "lands of different owners adjoin and— (a) are not built on at the line of junction; or (b) are built on at the line of junction only to the extent of a boundary wall (not being a party fence wall or the external wall of a building), and either owner is about to build on any part of the line of junction"
+  },
+  {
+   "requirement": "A building owner who desires to build a party wall or party fence wall on the line of junction must serve on any adjoining owner, at least one month before he intends the building work to start, a notice indicating his desire to build and describing the intended wall.",
+   "quote": "If a building owner desires to build a party wall or party fence wall on the line of junction he shall, at least one month before he intends the building work to start, serve on any adjoining owner a notice which indicates his desire to build and describes the intended wall"
+  },
+  {
+   "requirement": "If an adjoining owner serves a notice consenting to the building of a party wall or party fence wall after being served with notice under subsection (2), the wall must be built half on the land of each of the two owners or in such other position as may be agreed between them.",
+   "quote": "the wall shall be built half on the land of each of the two owners or in such other position as may be agreed between the two owners"
+  },
+  {
+   "requirement": "If an adjoining owner consents to the building of a party wall or party fence wall, the expense of building it must be defrayed from time to time by the two owners in such proportion as has regard to the use made or to be made of the wall by each owner and to the prevailing cost of labour and materials when that use is made.",
+   "quote": "the expense of building the wall shall be from time to time defrayed by the two owners in such proportion as has regard to the use made or to be made of the wall by each of them and to the cost of labour and materials prevailing at the time when that use is made by each owner respectively"
+  },
+  {
+   "requirement": "If an adjoining owner served with notice under subsection (2) does not consent under subsection (4), the building owner may only build the wall at his own expense and as an external wall or fence wall placed wholly on his own land.",
+   "quote": "the building owner may only build the wall— (a) at his own expense; and (b) as an external wall or a fence wall, as the case may be, placed wholly on his own land"
+  },
+  {
+   "requirement": "Consent of an adjoining owner under subsection (4) to the building of a party wall or party fence wall is defined as consent given by a notice served within the period of fourteen days beginning with the day on which the building owner's notice under subsection (2) is served.",
+   "quote": "consent under this subsection is consent by a notice served within the period of fourteen days beginning with the day on which the notice described in subsection (2) is served"
+  },
+  {
+   "requirement": "A building owner who desires to build on the line of junction a wall placed wholly on his own land must serve on any adjoining owner, at least one month before he intends the building work to start, a notice indicating his desire to build and describing the intended wall.",
+   "quote": "If the building owner desires to build on the line of junction a wall placed wholly on his own land he shall, at least one month before he intends the building work to start, serve on any adjoining owner a notice which indicates his desire to build and describes the intended wall"
+  },
+  {
+   "requirement": "A building owner who builds a wall wholly on his own land under subsection (4) or (5) has the right to place below the level of the adjoining owner's land such projecting footings and foundations as are necessary for the wall's construction at any time during the period beginning one month after and ending twelve months after the notice was served.",
+   "quote": "he shall have the right, at any time in the period which— (a) begins one month after the day on which the notice mentioned in the subsection concerned was served, and (b) ends twelve months after that day, to place below the level of the land of the adjoining owner such projecting footings and foundations as are necessary for the construction of the wall"
+  },
+  {
+   "requirement": "A building owner who builds a wall wholly on his own land under subsection (4) or (5) must do so at his own expense and must compensate any adjoining owner and adjoining occupier for any damage to his property caused by building the wall or placing footings or foundations under subsection (6).",
+   "quote": "he shall do so at his own expense and shall compensate any adjoining owner and any adjoining occupier for any damage to his property occasioned by— (a) the building of the wall; (b) the placing of any footings or foundations placed in accordance with subsection (6)"
+  },
+  {
+   "requirement": "Any dispute arising under section 1 between the building owner and any adjoining owner or occupier must be determined in accordance with section 10.",
+   "quote": "Where any dispute arises under this section between the building owner and any adjoining owner or occupier it is to be determined in accordance with section 10"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum advance notice period before intended start of building work for a party wall or party fence wall",
+   "value": "at least one month",
+   "quote": "at least one month before he intends the building work to start"
+  },
+  {
+   "what": "period for an adjoining owner to serve a notice of consent under subsection (4)",
+   "value": "fourteen days",
+   "quote": "period of fourteen days beginning with the day on which the notice described in subsection (2) is served"
+  },
+  {
+   "what": "minimum advance notice period before intended start of building work for a wall placed wholly on the building owner's land",
+   "value": "at least one month",
+   "quote": "at least one month before he intends the building work to start"
+  },
+  {
+   "what": "commencement of the period for the building owner to place projecting footings and foundations below the adjoining owner's land",
+   "value": "one month",
+   "quote": "begins one month after the day on which the notice mentioned in the subsection concerned was served"
+  },
+  {
+   "what": "expiry of the period for the building owner to place projecting footings and foundations below the adjoining owner's land",
+   "value": "twelve months",
+   "quote": "ends twelve months after that day"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 5
+ }
+}

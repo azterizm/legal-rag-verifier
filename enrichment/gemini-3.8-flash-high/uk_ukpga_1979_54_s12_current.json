@@ -1,0 +1,139 @@
+{
+ "key": "uk/ukpga/1979/54/s12@current",
+ "section": "uk/ukpga/1979/54/s12",
+ "version": "current",
+ "source_sha256": "dfd3d98dfa14e89276b92cbaed1f99f69b2c2e9278fb5a366b097148f3f4a3de",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term on the part of the seller that in the case of a sale the seller has a right to sell the goods.",
+    "quote": "implied term on the part of the seller that in the case of a sale he has a right to sell the goods"
+   },
+   {
+    "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term on the part of the seller that in the case of an agreement to sell the seller will have a right to sell the goods at the time when the property is to pass.",
+    "quote": "in the case of an agreement to sell he will have such a right at the time when the property is to pass"
+   },
+   {
+    "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term that the goods are free, and will remain free until the time when property is to pass, from any charge or encumbrance not disclosed or known to the buyer before the contract is made.",
+    "quote": "the goods are free, and will remain free until the time when the property is to pass, from any charge or encumbrance not disclosed or known to the buyer before the contract is made"
+   },
+   {
+    "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term that the buyer will enjoy quiet possession of the goods except so far as it may be disturbed by the owner or other person entitled to the benefit of any charge or encumbrance disclosed or known before the contract is made.",
+    "quote": "the buyer will enjoy quiet possession of the goods except so far as it may be disturbed by the owner or other person entitled to the benefit of any charge or encumbrance so disclosed or known"
+   },
+   {
+    "requirement": "Subsection (3) applies to a contract of sale in which there appears from the contract or is to be inferred from its circumstances an intention that the seller should transfer only such title as the seller or a third person may have.",
+    "quote": "appears from the contract or is to be inferred from its circumstances an intention that the seller should transfer only such title as he or a third person may have"
+   },
+   {
+    "requirement": "In a contract of sale to which subsection (3) applies, there is an implied term that all charges or encumbrances known to the seller and not known to the buyer have been disclosed to the buyer before the contract is made.",
+    "quote": "all charges or encumbrances known to the seller and not known to the buyer have been disclosed to the buyer before the contract is made"
+   },
+   {
+    "requirement": "In a contract of sale to which subsection (3) applies, there is an implied term that the buyer’s quiet possession of the goods will not be disturbed by the seller.",
+    "quote": "none of the following will disturb the buyer’s quiet possession of the goods, namely— (a) the seller"
+   },
+   {
+    "requirement": "In a contract of sale to which subsection (3) applies where the parties intend that the seller should transfer only such title as a third person may have, there is an implied term that that third person will not disturb the buyer’s quiet possession of the goods.",
+    "quote": "in a case where the parties to the contract intend that the seller should transfer only such title as a third person may have, that person"
+   },
+   {
+    "requirement": "In a contract of sale to which subsection (3) applies, there is an implied term that no person claiming through or under the seller or that third person otherwise than under a charge or encumbrance disclosed or known to the buyer before the contract is made will disturb the buyer’s quiet possession of the goods.",
+    "quote": "anyone claiming through or under the seller or that third person otherwise than under a charge or encumbrance disclosed or known to the buyer before the contract is made"
+   },
+   {
+    "requirement": "As regards England and Wales and Northern Ireland, the term implied by subsection (1) of section 12 of the Sale of Goods Act 1979 is a condition.",
+    "quote": "As regards England and Wales and Northern Ireland, the term implied by subsection (1) above is a condition"
+   },
+   {
+    "requirement": "As regards England and Wales and Northern Ireland, the terms implied by subsections (2), (4) and (5) of section 12 of the Sale of Goods Act 1979 are warranties.",
+    "quote": "the terms implied by subsections (2), (4) and (5) above are warranties"
+   },
+   {
+    "requirement": "Paragraph 3 of Schedule 1 of the Sale of Goods Act 1979 applies in relation to a contract made before 18 May 1973.",
+    "quote": "Paragraph 3 of Schedule 1 below applies in relation to a contract made before 18 May 1973"
+   },
+   {
+    "requirement": "Section 12 of the Sale of Goods Act 1979 does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies.",
+    "quote": "This section does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Contract formation cut-off date before which Paragraph 3 of Schedule 1 applies",
+    "value": "18 May 1973",
+    "quote": "contract made before 18 May 1973"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term on the part of the seller that in the case of a sale the seller has a right to sell the goods.",
+   "quote": "implied term on the part of the seller that in the case of a sale he has a right to sell the goods"
+  },
+  {
+   "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term on the part of the seller that in the case of an agreement to sell the seller will have a right to sell the goods at the time when the property is to pass.",
+   "quote": "in the case of an agreement to sell he will have such a right at the time when the property is to pass"
+  },
+  {
+   "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term that the goods are free, and will remain free until the time when property is to pass, from any charge or encumbrance not disclosed or known to the buyer before the contract is made.",
+   "quote": "the goods are free, and will remain free until the time when the property is to pass, from any charge or encumbrance not disclosed or known to the buyer before the contract is made"
+  },
+  {
+   "requirement": "In a contract of sale other than one where subsection (3) applies, there is an implied term that the buyer will enjoy quiet possession of the goods except so far as it may be disturbed by the owner or other person entitled to the benefit of any charge or encumbrance disclosed or known before the contract is made.",
+   "quote": "the buyer will enjoy quiet possession of the goods except so far as it may be disturbed by the owner or other person entitled to the benefit of any charge or encumbrance so disclosed or known"
+  },
+  {
+   "requirement": "Subsection (3) applies to a contract of sale in which there appears from the contract or is to be inferred from its circumstances an intention that the seller should transfer only such title as the seller or a third person may have.",
+   "quote": "appears from the contract or is to be inferred from its circumstances an intention that the seller should transfer only such title as he or a third person may have"
+  },
+  {
+   "requirement": "In a contract of sale to which subsection (3) applies, there is an implied term that all charges or encumbrances known to the seller and not known to the buyer have been disclosed to the buyer before the contract is made.",
+   "quote": "all charges or encumbrances known to the seller and not known to the buyer have been disclosed to the buyer before the contract is made"
+  },
+  {
+   "requirement": "In a contract of sale to which subsection (3) applies, there is an implied term that the buyer’s quiet possession of the goods will not be disturbed by the seller.",
+   "quote": "none of the following will disturb the buyer’s quiet possession of the goods, namely— (a) the seller"
+  },
+  {
+   "requirement": "In a contract of sale to which subsection (3) applies where the parties intend that the seller should transfer only such title as a third person may have, there is an implied term that that third person will not disturb the buyer’s quiet possession of the goods.",
+   "quote": "in a case where the parties to the contract intend that the seller should transfer only such title as a third person may have, that person"
+  },
+  {
+   "requirement": "In a contract of sale to which subsection (3) applies, there is an implied term that no person claiming through or under the seller or that third person otherwise than under a charge or encumbrance disclosed or known to the buyer before the contract is made will disturb the buyer’s quiet possession of the goods.",
+   "quote": "anyone claiming through or under the seller or that third person otherwise than under a charge or encumbrance disclosed or known to the buyer before the contract is made"
+  },
+  {
+   "requirement": "As regards England and Wales and Northern Ireland, the term implied by subsection (1) of section 12 of the Sale of Goods Act 1979 is a condition.",
+   "quote": "As regards England and Wales and Northern Ireland, the term implied by subsection (1) above is a condition"
+  },
+  {
+   "requirement": "As regards England and Wales and Northern Ireland, the terms implied by subsections (2), (4) and (5) of section 12 of the Sale of Goods Act 1979 are warranties.",
+   "quote": "the terms implied by subsections (2), (4) and (5) above are warranties"
+  },
+  {
+   "requirement": "Paragraph 3 of Schedule 1 of the Sale of Goods Act 1979 applies in relation to a contract made before 18 May 1973.",
+   "quote": "Paragraph 3 of Schedule 1 below applies in relation to a contract made before 18 May 1973"
+  },
+  {
+   "requirement": "Section 12 of the Sale of Goods Act 1979 does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies.",
+   "quote": "This section does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Contract formation cut-off date before which Paragraph 3 of Schedule 1 applies",
+   "value": "18 May 1973",
+   "quote": "contract made before 18 May 1973"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

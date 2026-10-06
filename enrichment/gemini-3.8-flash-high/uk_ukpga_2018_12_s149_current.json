@@ -1,0 +1,151 @@
+{
+ "key": "uk/ukpga/2018/12/s149@current",
+ "section": "uk/ukpga/2018/12/s149",
+ "version": "current",
+ "source_sha256": "19ead545318230adb01c55b32e36bbce4804621cbcf8c32baa958b6e49725ece",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where the Commissioner is satisfied that a person has failed, or is failing, in one of the ways specified in subsection (2), (3), (4), (5), or (5A), the Commissioner may issue a written notice known as an enforcement notice requiring that person to take specified steps, refrain from taking specified steps, or both.",
+    "quote": "Commissioner may give the person a written notice (an “enforcement notice”) which requires the person— (a) to take steps specified in the notice, or (b) to refrain from taking steps specified in the notice, or both"
+   },
+   {
+    "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with Chapter II of the UK GDPR, Chapter 2 of Part 3, or Chapter 2 of Part 4 of the Data Protection Act 2018 regarding principles of processing.",
+    "quote": "a provision of Chapter II of the UK GDPR or Chapter 2 of Part 3 or Chapter 2 of Part 4 of this Act (principles of processing)"
+   },
+   {
+    "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with a provision of or made under Articles 12 to 22D of the UK GDPR or Part 3 or 4 of the Data Protection Act 2018 conferring rights on a data subject.",
+    "quote": "a provision of or made under Articles 12 to 22D of the UK GDPR or Part 3 or 4 of this Act conferring rights on a data subject"
+   },
+   {
+    "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with Articles 25 to 39 of the UK GDPR or section 64 or 65 of the Data Protection Act 2018 concerning obligations of controllers and processors.",
+    "quote": "a provision of Articles 25 to 39 of the UK GDPR or section 64 or 65 of this Act (obligations of controllers and processors)"
+   },
+   {
+    "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with a requirement to communicate a personal data breach to the Commissioner or a data subject under section 67, 68, or 108 of the Data Protection Act 2018.",
+    "quote": "a requirement to communicate a personal data breach to the Commissioner or a data subject under section 67, 68 or 108 of this Act"
+   },
+   {
+    "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with the principles for transfers of personal data to third countries, non-Convention countries, and international organisations set out in Articles 44A to 49A of the UK GDPR or sections 73 to 78 or 109 of the Data Protection Act 2018.",
+    "quote": "the principles for transfers of personal data to third countries, non-Convention countries and international organisations in Articles 44A to 49A of the UK GDPR or in sections 73 to 78 or 109 of this Act"
+   },
+   {
+    "requirement": "A monitoring body commits the second type of failure where the monitoring body has failed, or is failing, to comply with an obligation under Article 41 of the UK GDPR concerning the monitoring of approved codes of conduct.",
+    "quote": "monitoring body has failed, or is failing, to comply with an obligation under Article 41 of the UK GDPR (monitoring of approved codes of conduct)"
+   },
+   {
+    "requirement": "A person who is a certification provider commits the third type of failure where the certification provider does not meet accreditation requirements, has failed or is failing to comply with an obligation under Article 42 or 43 of the UK GDPR, or has failed or is failing to comply with any other provision of the UK GDPR in that person's capacity as a certification provider or otherwise.",
+    "quote": "person who is a certification provider— (a) does not meet the requirements for accreditation, (b) has failed, or is failing, to comply with an obligation under Article 42 or 43 of the UK GDPR (certification of controllers and processors), or (c) has failed, or is failing, to comply with any other provision of the UK GDPR (whether in the person's capacity as a certification provider or otherwise)"
+   },
+   {
+    "requirement": "A controller commits the fourth type of failure where the controller has failed, or is failing, to comply with regulations made under section 137 of the Data Protection Act 2018.",
+    "quote": "controller has failed, or is failing, to comply with regulations under section 137"
+   },
+   {
+    "requirement": "A controller commits the fifth type of failure where the controller has failed, or is failing, to comply with section 164A of the Data Protection Act 2018 or with regulations made under section 164B of the Data Protection Act 2018.",
+    "quote": "controller has failed, or is failing, to comply with section 164A or with regulations under section 164B"
+   },
+   {
+    "requirement": "An enforcement notice issued in reliance on subsection (2), (3), (5), or (5A) may only impose requirements that the Commissioner considers appropriate for the purpose of remedying the failure.",
+    "quote": "may only impose requirements which the Commissioner considers appropriate for the purpose of remedying the failure"
+   },
+   {
+    "requirement": "An enforcement notice issued in reliance on subsection (4) may only impose requirements that the Commissioner considers appropriate having regard to the failure, regardless of whether or not those requirements are for the purpose of remedying the failure.",
+    "quote": "may only impose requirements which the Commissioner considers appropriate having regard to the failure (whether or not for the purpose of remedying the failure)"
+   },
+   {
+    "requirement": "The Secretary of State may make regulations that confer power on the Commissioner to give an enforcement notice in respect of other failures to comply with data protection legislation.",
+    "quote": "Secretary of State may by regulations confer power on the Commissioner to give an enforcement notice in respect of other failures to comply with the data protection legislation"
+   },
+   {
+    "requirement": "Regulations made under section 149 of the Data Protection Act 2018 may make provision about giving an enforcement notice regarding a failure, including by amending section 149 and sections 150 to 152.",
+    "quote": "make provision about the giving of an enforcement notice in respect of the failure, including by amending this section and sections 150 to 152"
+   },
+   {
+    "requirement": "Regulations made under section 149 of the Data Protection Act 2018 may make provision about the giving of an information notice, an assessment notice, an interview notice, or a penalty notice, or about powers of entry and inspection in connection with the failure, including by amending sections 142, 143, 146, 147, 148A, 148B, and 155 to 157 and Schedules 15 and 16.",
+    "quote": "make provision about the giving of an information notice, an assessment notice , an interview notice or a penalty notice, or about powers of entry and inspection, in connection with the failure, including by amending sections 142, 143, 146, 147 , 148A, 148B and 155 to 157 and Schedules 15 and 16"
+   },
+   {
+    "requirement": "Regulations made under section 149 of the Data Protection Act 2018 are subject to the affirmative resolution procedure.",
+    "quote": "are subject to the affirmative resolution procedure"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where the Commissioner is satisfied that a person has failed, or is failing, in one of the ways specified in subsection (2), (3), (4), (5), or (5A), the Commissioner may issue a written notice known as an enforcement notice requiring that person to take specified steps, refrain from taking specified steps, or both.",
+   "quote": "Commissioner may give the person a written notice (an “enforcement notice”) which requires the person— (a) to take steps specified in the notice, or (b) to refrain from taking steps specified in the notice, or both"
+  },
+  {
+   "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with Chapter II of the UK GDPR, Chapter 2 of Part 3, or Chapter 2 of Part 4 of the Data Protection Act 2018 regarding principles of processing.",
+   "quote": "a provision of Chapter II of the UK GDPR or Chapter 2 of Part 3 or Chapter 2 of Part 4 of this Act (principles of processing)"
+  },
+  {
+   "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with a provision of or made under Articles 12 to 22D of the UK GDPR or Part 3 or 4 of the Data Protection Act 2018 conferring rights on a data subject.",
+   "quote": "a provision of or made under Articles 12 to 22D of the UK GDPR or Part 3 or 4 of this Act conferring rights on a data subject"
+  },
+  {
+   "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with Articles 25 to 39 of the UK GDPR or section 64 or 65 of the Data Protection Act 2018 concerning obligations of controllers and processors.",
+   "quote": "a provision of Articles 25 to 39 of the UK GDPR or section 64 or 65 of this Act (obligations of controllers and processors)"
+  },
+  {
+   "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with a requirement to communicate a personal data breach to the Commissioner or a data subject under section 67, 68, or 108 of the Data Protection Act 2018.",
+   "quote": "a requirement to communicate a personal data breach to the Commissioner or a data subject under section 67, 68 or 108 of this Act"
+  },
+  {
+   "requirement": "A controller or processor commits the first type of failure where the controller or processor has failed, or is failing, to comply with the principles for transfers of personal data to third countries, non-Convention countries, and international organisations set out in Articles 44A to 49A of the UK GDPR or sections 73 to 78 or 109 of the Data Protection Act 2018.",
+   "quote": "the principles for transfers of personal data to third countries, non-Convention countries and international organisations in Articles 44A to 49A of the UK GDPR or in sections 73 to 78 or 109 of this Act"
+  },
+  {
+   "requirement": "A monitoring body commits the second type of failure where the monitoring body has failed, or is failing, to comply with an obligation under Article 41 of the UK GDPR concerning the monitoring of approved codes of conduct.",
+   "quote": "monitoring body has failed, or is failing, to comply with an obligation under Article 41 of the UK GDPR (monitoring of approved codes of conduct)"
+  },
+  {
+   "requirement": "A person who is a certification provider commits the third type of failure where the certification provider does not meet accreditation requirements, has failed or is failing to comply with an obligation under Article 42 or 43 of the UK GDPR, or has failed or is failing to comply with any other provision of the UK GDPR in that person's capacity as a certification provider or otherwise.",
+   "quote": "person who is a certification provider— (a) does not meet the requirements for accreditation, (b) has failed, or is failing, to comply with an obligation under Article 42 or 43 of the UK GDPR (certification of controllers and processors), or (c) has failed, or is failing, to comply with any other provision of the UK GDPR (whether in the person's capacity as a certification provider or otherwise)"
+  },
+  {
+   "requirement": "A controller commits the fourth type of failure where the controller has failed, or is failing, to comply with regulations made under section 137 of the Data Protection Act 2018.",
+   "quote": "controller has failed, or is failing, to comply with regulations under section 137"
+  },
+  {
+   "requirement": "A controller commits the fifth type of failure where the controller has failed, or is failing, to comply with section 164A of the Data Protection Act 2018 or with regulations made under section 164B of the Data Protection Act 2018.",
+   "quote": "controller has failed, or is failing, to comply with section 164A or with regulations under section 164B"
+  },
+  {
+   "requirement": "An enforcement notice issued in reliance on subsection (2), (3), (5), or (5A) may only impose requirements that the Commissioner considers appropriate for the purpose of remedying the failure.",
+   "quote": "may only impose requirements which the Commissioner considers appropriate for the purpose of remedying the failure"
+  },
+  {
+   "requirement": "An enforcement notice issued in reliance on subsection (4) may only impose requirements that the Commissioner considers appropriate having regard to the failure, regardless of whether or not those requirements are for the purpose of remedying the failure.",
+   "quote": "may only impose requirements which the Commissioner considers appropriate having regard to the failure (whether or not for the purpose of remedying the failure)"
+  },
+  {
+   "requirement": "The Secretary of State may make regulations that confer power on the Commissioner to give an enforcement notice in respect of other failures to comply with data protection legislation.",
+   "quote": "Secretary of State may by regulations confer power on the Commissioner to give an enforcement notice in respect of other failures to comply with the data protection legislation"
+  },
+  {
+   "requirement": "Regulations made under section 149 of the Data Protection Act 2018 may make provision about giving an enforcement notice regarding a failure, including by amending section 149 and sections 150 to 152.",
+   "quote": "make provision about the giving of an enforcement notice in respect of the failure, including by amending this section and sections 150 to 152"
+  },
+  {
+   "requirement": "Regulations made under section 149 of the Data Protection Act 2018 may make provision about the giving of an information notice, an assessment notice, an interview notice, or a penalty notice, or about powers of entry and inspection in connection with the failure, including by amending sections 142, 143, 146, 147, 148A, 148B, and 155 to 157 and Schedules 15 and 16.",
+   "quote": "make provision about the giving of an information notice, an assessment notice , an interview notice or a penalty notice, or about powers of entry and inspection, in connection with the failure, including by amending sections 142, 143, 146, 147 , 148A, 148B and 155 to 157 and Schedules 15 and 16"
+  },
+  {
+   "requirement": "Regulations made under section 149 of the Data Protection Act 2018 are subject to the affirmative resolution procedure.",
+   "quote": "are subject to the affirmative resolution procedure"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

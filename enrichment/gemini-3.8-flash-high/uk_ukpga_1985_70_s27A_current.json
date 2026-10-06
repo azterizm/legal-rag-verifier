@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1985/70/s27A@current",
+ "section": "uk/ukpga/1985/70/s27A",
+ "version": "current",
+ "source_sha256": "0ae63b58249ee09dba409a1bf830c57e04449cb453e2b921d381443fbf167e5f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An application may be made to the appropriate tribunal for a determination whether a service charge is payable and, if it is payable, as to the person by whom it is payable, the person to whom it is payable, the amount which is payable, the date at or by which it is payable, and the manner in which it is payable.",
+    "quote": "An application may be made to the appropriate tribunal for a determination whether a service charge is payable"
+   },
+   {
+    "requirement": "An application regarding whether a service charge is payable may be made whether or not any payment has been made.",
+    "quote": "applies whether or not any payment has been made"
+   },
+   {
+    "requirement": "An application may be made to the appropriate tribunal for a determination whether, if costs were incurred for services, repairs, maintenance, improvements, insurance or management of any specified description, a service charge would be payable for the costs and, if it would be payable, as to the person by whom it would be payable, the person to whom it would be payable, the amount which would be payable, the date at or by which it would be payable, and the manner in which it would be payable.",
+    "quote": "An application may also be made to the appropriate tribunal for a determination whether, if costs were incurred"
+   },
+   {
+    "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been agreed or admitted by the tenant.",
+    "quote": "No application under subsection (1) or (3) may be made in respect of a matter which— (a) has been agreed or admitted by the tenant"
+   },
+   {
+    "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been, or is to be, referred to arbitration pursuant to a post-dispute arbitration agreement to which the tenant is a party.",
+    "quote": "has been, or is to be, referred to arbitration pursuant to a post-dispute arbitration agreement to which the tenant is a party"
+   },
+   {
+    "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been the subject of determination by a court.",
+    "quote": "has been the subject of determination by a court"
+   },
+   {
+    "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been the subject of determination by an arbitral tribunal pursuant to a post-dispute arbitration agreement.",
+    "quote": "has been the subject of determination by an arbitral tribunal pursuant to a post-dispute arbitration agreement"
+   },
+   {
+    "requirement": "A tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment.",
+    "quote": "the tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment"
+   },
+   {
+    "requirement": "An agreement by the tenant of a dwelling, other than a post-dispute arbitration agreement, is void in so far as it purports to provide for a determination in a particular manner, or on particular evidence, of any question which may be the subject of an application under subsection (1) or (3).",
+    "quote": "An agreement by the tenant of a dwelling (other than a post-dispute arbitration agreement) is void in so far as it purports to provide for a determination"
+   },
+   {
+    "requirement": "The jurisdiction conferred on the appropriate tribunal under this section in respect of any matter is in addition to any jurisdiction of a court in respect of that matter.",
+    "quote": "The jurisdiction conferred on the appropriate tribunal in respect of any matter by virtue of this section is in addition to any jurisdiction of a court in respect of the matter"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An application may be made to the appropriate tribunal for a determination whether a service charge is payable and, if it is payable, as to the person by whom it is payable, the person to whom it is payable, the amount which is payable, the date at or by which it is payable, and the manner in which it is payable.",
+   "quote": "An application may be made to the appropriate tribunal for a determination whether a service charge is payable"
+  },
+  {
+   "requirement": "An application regarding whether a service charge is payable may be made whether or not any payment has been made.",
+   "quote": "applies whether or not any payment has been made"
+  },
+  {
+   "requirement": "An application may be made to the appropriate tribunal for a determination whether, if costs were incurred for services, repairs, maintenance, improvements, insurance or management of any specified description, a service charge would be payable for the costs and, if it would be payable, as to the person by whom it would be payable, the person to whom it would be payable, the amount which would be payable, the date at or by which it would be payable, and the manner in which it would be payable.",
+   "quote": "An application may also be made to the appropriate tribunal for a determination whether, if costs were incurred"
+  },
+  {
+   "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been agreed or admitted by the tenant.",
+   "quote": "No application under subsection (1) or (3) may be made in respect of a matter which— (a) has been agreed or admitted by the tenant"
+  },
+  {
+   "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been, or is to be, referred to arbitration pursuant to a post-dispute arbitration agreement to which the tenant is a party.",
+   "quote": "has been, or is to be, referred to arbitration pursuant to a post-dispute arbitration agreement to which the tenant is a party"
+  },
+  {
+   "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been the subject of determination by a court.",
+   "quote": "has been the subject of determination by a court"
+  },
+  {
+   "requirement": "No application may be made to the appropriate tribunal under subsection (1) or (3) in respect of a matter that has been the subject of determination by an arbitral tribunal pursuant to a post-dispute arbitration agreement.",
+   "quote": "has been the subject of determination by an arbitral tribunal pursuant to a post-dispute arbitration agreement"
+  },
+  {
+   "requirement": "A tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment.",
+   "quote": "the tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment"
+  },
+  {
+   "requirement": "An agreement by the tenant of a dwelling, other than a post-dispute arbitration agreement, is void in so far as it purports to provide for a determination in a particular manner, or on particular evidence, of any question which may be the subject of an application under subsection (1) or (3).",
+   "quote": "An agreement by the tenant of a dwelling (other than a post-dispute arbitration agreement) is void in so far as it purports to provide for a determination"
+  },
+  {
+   "requirement": "The jurisdiction conferred on the appropriate tribunal under this section in respect of any matter is in addition to any jurisdiction of a court in respect of that matter.",
+   "quote": "The jurisdiction conferred on the appropriate tribunal in respect of any matter by virtue of this section is in addition to any jurisdiction of a court in respect of the matter"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

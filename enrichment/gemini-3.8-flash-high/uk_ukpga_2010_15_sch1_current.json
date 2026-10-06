@@ -1,0 +1,357 @@
+{
+ "key": "uk/ukpga/2010/15/sch1@current",
+ "section": "uk/ukpga/2010/15/sch1",
+ "version": "current",
+ "source_sha256": "35e85d748a8a90671763d3240dd3290af05e030f692beb7e3eaa9e45268a0255",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Regulations may provide for a condition of a prescribed description to be treated as an impairment or not to be treated as an impairment.",
+    "quote": "Regulations may make provision for a condition of a prescribed description to be, or not to be, an impairment."
+   },
+   {
+    "requirement": "The effect of an impairment is long-term if it has lasted for at least 12 months, is likely to last for at least 12 months, or is likely to last for the rest of the life of the person affected.",
+    "quote": "The effect of an impairment is long-term if— (a) it has lasted for at least 12 months, (b) it is likely to last for at least 12 months, or (c) it is likely to last for the rest of the life of the person affected."
+   },
+   {
+    "requirement": "If an impairment ceases to have a substantial adverse effect on a person's ability to carry out normal day-to-day activities, it must be treated as continuing to have that effect if that effect is likely to recur.",
+    "quote": "it is to be treated as continuing to have that effect if that effect is likely to recur."
+   },
+   {
+    "requirement": "The likelihood of an effect recurring must be disregarded in such circumstances as may be prescribed by regulations.",
+    "quote": "the likelihood of an effect recurring is to be disregarded in such circumstances as may be prescribed."
+   },
+   {
+    "requirement": "Regulations may prescribe circumstances in which an effect is to be treated as being, or as not being, long-term, notwithstanding the general rules on long-term effects.",
+    "quote": "Regulations may prescribe circumstances in which, despite sub-paragraph (1), an effect is to be treated as being, or as not being, long-term."
+   },
+   {
+    "requirement": "An impairment consisting of a severe disfigurement is to be treated as having a substantial adverse effect on the affected person's ability to carry out normal day-to-day activities.",
+    "quote": "An impairment which consists of a severe disfigurement is to be treated as having a substantial adverse effect on the ability of the person concerned to carry out normal day-to-day activities."
+   },
+   {
+    "requirement": "Regulations may provide that a severe disfigurement is not to be treated as having a substantial adverse effect in prescribed circumstances, including in relation to deliberately acquired disfigurement.",
+    "quote": "Regulations may provide that in prescribed circumstances a severe disfigurement is not to be treated as having that effect."
+   },
+   {
+    "requirement": "Regulations may provide for an effect of a prescribed description on a person's ability to carry out normal day-to-day activities to be treated as being, or as not being, a substantial adverse effect.",
+    "quote": "Regulations may make provision for an effect of a prescribed description on the ability of a person to carry out normal day-to-day activities to be treated as being, or as not being, a substantial adverse effect."
+   },
+   {
+    "requirement": "An impairment is to be treated as having a substantial adverse effect on a person's ability to carry out normal day-to-day activities if measures are being taken to treat or correct it and, but for those measures, it would be likely to have that effect.",
+    "quote": "An impairment is to be treated as having a substantial adverse effect on the ability of the person concerned to carry out normal day-to-day activities if— (a) measures are being taken to treat or correct it, and (b) but for that, it would be likely to have that effect."
+   },
+   {
+    "requirement": "Measures taken to treat or correct an impairment include, in particular, medical treatment and the use of a prosthesis or other aid.",
+    "quote": "“Measures” includes, in particular, medical treatment and the use of a prosthesis or other aid."
+   },
+   {
+    "requirement": "The rule treating an impairment as having a substantial adverse effect but for corrective measures does not apply to a sight impairment to the extent that it is correctable by spectacles, contact lenses, or other prescribed methods.",
+    "quote": "Sub-paragraph (1) does not apply— (a) in relation to the impairment of a person's sight, to the extent that the impairment is, in the person's case, correctable by spectacles or contact lenses or in such other ways as may be prescribed"
+   },
+   {
+    "requirement": "The rule treating an impairment as having a substantial adverse effect but for corrective measures does not apply in relation to other prescribed impairments in prescribed circumstances.",
+    "quote": "Sub-paragraph (1) does not apply— (b) in relation to such other impairments as may be prescribed, in such circumstances as are prescribed."
+   },
+   {
+    "requirement": "Paragraph 5A applies to the protected characteristic of disability for the purposes of Part 5 (work), Part 8 (ancillary prohibited conduct relating to Part 5), Part 10 (contracts relating to Part 5), and Schedule 21 (supplementary reasonable adjustments for Schedule 8).",
+    "quote": "This paragraph has effect for the purposes of the application to the protected characteristic of disability of— (a) Part 5 (work); (b) Part 8 (prohibited conduct: ancillary), so far as relating to Part 5; (c) Part 10 (contracts), so far as relating to Part 5; (d) Schedule 21 (reasonable adjustments: supplementary), so far as applying for the purposes of Schedule 8."
+   },
+   {
+    "requirement": "In the relevant provisions, references to a person's ability to carry out normal day-to-day activities include references to the person's ability to participate fully and effectively in working life on an equal basis with other workers.",
+    "quote": "References in the relevant provisions to a person’s ability to carry out normal day-to-day activities are to be taken as including references to the person’s ability to participate fully and effectively in working life on an equal basis with other workers."
+   },
+   {
+    "requirement": "The relevant provisions for working life participation references are section 6, other provisions of Schedule 1, and regulations made under Schedule 1 at any time.",
+    "quote": "The “relevant provisions” are— (a) section 6 (disability); (b) other provisions of this Schedule; (c) regulations under this Schedule (whenever made)."
+   },
+   {
+    "requirement": "Cancer, HIV infection, and multiple sclerosis are each deemed to be a disability.",
+    "quote": "Cancer, HIV infection and multiple sclerosis are each a disability."
+   },
+   {
+    "requirement": "HIV infection is defined as infection by a virus capable of causing the Acquired Immune Deficiency Syndrome.",
+    "quote": "HIV infection is infection by a virus capable of causing the Acquired Immune Deficiency Syndrome."
+   },
+   {
+    "requirement": "Regulations may provide for persons of prescribed descriptions to be treated as having disabilities, and may prescribe circumstances in which a person with a disability is to be treated as no longer having it.",
+    "quote": "Regulations may provide for persons of prescribed descriptions to be treated as having disabilities. (2) The regulations may prescribe circumstances in which a person who has a disability is to be treated as no longer having the disability."
+   },
+   {
+    "requirement": "Paragraph 7 does not affect the other provisions of Schedule 1.",
+    "quote": "This paragraph does not affect the other provisions of this Schedule."
+   },
+   {
+    "requirement": "A person with a progressive condition who has or had an impairment affecting day-to-day activities that is not or was not substantial is taken to have an impairment with a substantial adverse effect if the condition is likely to result in such an impairment.",
+    "quote": "P is to be taken to have an impairment which has a substantial adverse effect if the condition is likely to result in P having such an impairment."
+   },
+   {
+    "requirement": "Regulations may make provision for a condition of a prescribed description to be treated as being progressive or as not being progressive.",
+    "quote": "Regulations may make provision for a condition of a prescribed description to be treated as being, or as not being, progressive."
+   },
+   {
+    "requirement": "A question whether a person had a disability at a particular relevant time must be determined under section 6 as if the provisions of or under the Equality Act 2010 in force when the act complained of was done had been in force at that relevant time.",
+    "quote": "A question as to whether a person had a disability at a particular time (“the relevant time”) is to be determined, for the purposes of section 6, as if the provisions of, or made under, this Act were in force when the act complained of was done had been in force at the relevant time."
+   },
+   {
+    "requirement": "The relevant time for determining whether a person had a disability may be a time before the coming into force of the statutory provision to which the question relates.",
+    "quote": "The relevant time may be a time before the coming into force of the provision of this Act to which the question relates."
+   },
+   {
+    "requirement": "Part 2 of Schedule 1 applies in relation to guidance referred to in section 6(5).",
+    "quote": "This Part of this Schedule applies in relation to guidance referred to in section 6(5)."
+   },
+   {
+    "requirement": "Guidance issued by the Minister may provide examples of effects that would or would not be reasonable to regard as substantial adverse effects in relation to particular activities, and examples of substantial adverse effects that would or would not be reasonable to regard as long-term.",
+    "quote": "The guidance may give examples of— (a) effects which it would, or would not, be reasonable, in relation to particular activities, to regard as substantial adverse effects; (b) substantial adverse effects which it would, or would not, be reasonable to regard as long-term."
+   },
+   {
+    "requirement": "An adjudicating body determining whether a person is a disabled person must take account of any guidance issued under section 6(5) that it thinks is relevant.",
+    "quote": "In determining whether a person is a disabled person, an adjudicating body must take account of such guidance as it thinks is relevant."
+   },
+   {
+    "requirement": "An adjudicating body consists of a court, a tribunal, or a person other than a court or tribunal who may decide a claim relating to a contravention of Part 6 (education).",
+    "quote": "An adjudicating body is— (a) a court; (b) a tribunal; (c) a person (other than a court or tribunal) who may decide a claim relating to a contravention of Part 6 (education)."
+   },
+   {
+    "requirement": "Before issuing guidance, the Minister must publish a draft, consider any representations made about the draft, and make any modifications the Minister thinks appropriate in light of those representations.",
+    "quote": "Before issuing the guidance, the Minister must— (a) publish a draft of it; (b) consider any representations made to the Minister about the draft; (c) make such modifications as the Minister thinks appropriate in the light of the representations."
+   },
+   {
+    "requirement": "If the Minister decides to proceed with proposed guidance, the Minister must lay a draft of it before Parliament.",
+    "quote": "If the Minister decides to proceed with proposed guidance, a draft of it must be laid before Parliament."
+   },
+   {
+    "requirement": "If either House of Parliament resolves not to approve the draft guidance before the end of the 40-day period, the Minister must take no further steps regarding that proposed guidance.",
+    "quote": "If, before the end of the 40-day period, either House resolves not to approve the draft, the Minister must take no further steps in relation to the proposed guidance."
+   },
+   {
+    "requirement": "If neither House resolves not to approve the draft guidance before the end of the 40-day period, the Minister must issue the guidance in the form of the laid draft.",
+    "quote": "If no such resolution is made before the end of that period, the Minister must issue the guidance in the form of the draft."
+   },
+   {
+    "requirement": "A resolution by either House not to approve proposed guidance does not prevent a new draft of proposed guidance from being laid before Parliament.",
+    "quote": "Sub-paragraph (2) does not prevent a new draft of proposed guidance being laid before Parliament."
+   },
+   {
+    "requirement": "The 40-day parliamentary consideration period begins on the date the draft is laid before both Houses or on the later date if laid before each House on different dates.",
+    "quote": "The 40-day period— (a) begins on the date on which the draft is laid before both Houses (or, if laid before each House on a different date, on the later date)"
+   },
+   {
+    "requirement": "The 40-day parliamentary consideration period excludes any period during which Parliament is prorogued or dissolved, or during which both Houses are adjourned for more than 4 days.",
+    "quote": "(b) does not include a period during which Parliament is prorogued or dissolved; (c) does not include a period during which both Houses are adjourned for more than 4 days."
+   },
+   {
+    "requirement": "Guidance comes into force on the day appointed by the Minister by order.",
+    "quote": "The guidance comes into force on the day appointed by order by the Minister."
+   },
+   {
+    "requirement": "The Minister may revise and re-issue the whole or part of the guidance, or revoke the guidance by order.",
+    "quote": "The Minister may— (a) revise the whole or part of guidance and re-issue it; (b) by order revoke guidance."
+   },
+   {
+    "requirement": "Any statutory reference to guidance includes a reference to guidance that has been revised and re-issued.",
+    "quote": "A reference to guidance includes a reference to guidance which has been revised and re-issued."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum duration an impairment's effect must have lasted to qualify as long-term",
+    "value": "12 months",
+    "quote": "it has lasted for at least 12 months"
+   },
+   {
+    "what": "minimum duration an impairment's effect must be likely to last to qualify as long-term",
+    "value": "12 months",
+    "quote": "it is likely to last for at least 12 months"
+   },
+   {
+    "what": "period within which either House of Parliament may resolve not to approve draft guidance",
+    "value": "40-day",
+    "quote": "If, before the end of the 40-day period, either House resolves not to approve the draft"
+   },
+   {
+    "what": "parliamentary adjournment duration of both Houses that is excluded from the 40-day period",
+    "value": "4 days",
+    "quote": "both Houses are adjourned for more than 4 days"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Regulations may provide for a condition of a prescribed description to be treated as an impairment or not to be treated as an impairment.",
+   "quote": "Regulations may make provision for a condition of a prescribed description to be, or not to be, an impairment."
+  },
+  {
+   "requirement": "The effect of an impairment is long-term if it has lasted for at least 12 months, is likely to last for at least 12 months, or is likely to last for the rest of the life of the person affected.",
+   "quote": "The effect of an impairment is long-term if— (a) it has lasted for at least 12 months, (b) it is likely to last for at least 12 months, or (c) it is likely to last for the rest of the life of the person affected."
+  },
+  {
+   "requirement": "If an impairment ceases to have a substantial adverse effect on a person's ability to carry out normal day-to-day activities, it must be treated as continuing to have that effect if that effect is likely to recur.",
+   "quote": "it is to be treated as continuing to have that effect if that effect is likely to recur."
+  },
+  {
+   "requirement": "The likelihood of an effect recurring must be disregarded in such circumstances as may be prescribed by regulations.",
+   "quote": "the likelihood of an effect recurring is to be disregarded in such circumstances as may be prescribed."
+  },
+  {
+   "requirement": "Regulations may prescribe circumstances in which an effect is to be treated as being, or as not being, long-term, notwithstanding the general rules on long-term effects.",
+   "quote": "Regulations may prescribe circumstances in which, despite sub-paragraph (1), an effect is to be treated as being, or as not being, long-term."
+  },
+  {
+   "requirement": "An impairment consisting of a severe disfigurement is to be treated as having a substantial adverse effect on the affected person's ability to carry out normal day-to-day activities.",
+   "quote": "An impairment which consists of a severe disfigurement is to be treated as having a substantial adverse effect on the ability of the person concerned to carry out normal day-to-day activities."
+  },
+  {
+   "requirement": "Regulations may provide that a severe disfigurement is not to be treated as having a substantial adverse effect in prescribed circumstances, including in relation to deliberately acquired disfigurement.",
+   "quote": "Regulations may provide that in prescribed circumstances a severe disfigurement is not to be treated as having that effect."
+  },
+  {
+   "requirement": "Regulations may provide for an effect of a prescribed description on a person's ability to carry out normal day-to-day activities to be treated as being, or as not being, a substantial adverse effect.",
+   "quote": "Regulations may make provision for an effect of a prescribed description on the ability of a person to carry out normal day-to-day activities to be treated as being, or as not being, a substantial adverse effect."
+  },
+  {
+   "requirement": "An impairment is to be treated as having a substantial adverse effect on a person's ability to carry out normal day-to-day activities if measures are being taken to treat or correct it and, but for those measures, it would be likely to have that effect.",
+   "quote": "An impairment is to be treated as having a substantial adverse effect on the ability of the person concerned to carry out normal day-to-day activities if— (a) measures are being taken to treat or correct it, and (b) but for that, it would be likely to have that effect."
+  },
+  {
+   "requirement": "Measures taken to treat or correct an impairment include, in particular, medical treatment and the use of a prosthesis or other aid.",
+   "quote": "“Measures” includes, in particular, medical treatment and the use of a prosthesis or other aid."
+  },
+  {
+   "requirement": "The rule treating an impairment as having a substantial adverse effect but for corrective measures does not apply to a sight impairment to the extent that it is correctable by spectacles, contact lenses, or other prescribed methods.",
+   "quote": "Sub-paragraph (1) does not apply— (a) in relation to the impairment of a person's sight, to the extent that the impairment is, in the person's case, correctable by spectacles or contact lenses or in such other ways as may be prescribed"
+  },
+  {
+   "requirement": "Paragraph 5A applies to the protected characteristic of disability for the purposes of Part 5 (work), Part 8 (ancillary prohibited conduct relating to Part 5), Part 10 (contracts relating to Part 5), and Schedule 21 (supplementary reasonable adjustments for Schedule 8).",
+   "quote": "This paragraph has effect for the purposes of the application to the protected characteristic of disability of— (a) Part 5 (work); (b) Part 8 (prohibited conduct: ancillary), so far as relating to Part 5; (c) Part 10 (contracts), so far as relating to Part 5; (d) Schedule 21 (reasonable adjustments: supplementary), so far as applying for the purposes of Schedule 8."
+  },
+  {
+   "requirement": "In the relevant provisions, references to a person's ability to carry out normal day-to-day activities include references to the person's ability to participate fully and effectively in working life on an equal basis with other workers.",
+   "quote": "References in the relevant provisions to a person’s ability to carry out normal day-to-day activities are to be taken as including references to the person’s ability to participate fully and effectively in working life on an equal basis with other workers."
+  },
+  {
+   "requirement": "The relevant provisions for working life participation references are section 6, other provisions of Schedule 1, and regulations made under Schedule 1 at any time.",
+   "quote": "The “relevant provisions” are— (a) section 6 (disability); (b) other provisions of this Schedule; (c) regulations under this Schedule (whenever made)."
+  },
+  {
+   "requirement": "Cancer, HIV infection, and multiple sclerosis are each deemed to be a disability.",
+   "quote": "Cancer, HIV infection and multiple sclerosis are each a disability."
+  },
+  {
+   "requirement": "HIV infection is defined as infection by a virus capable of causing the Acquired Immune Deficiency Syndrome.",
+   "quote": "HIV infection is infection by a virus capable of causing the Acquired Immune Deficiency Syndrome."
+  },
+  {
+   "requirement": "Regulations may provide for persons of prescribed descriptions to be treated as having disabilities, and may prescribe circumstances in which a person with a disability is to be treated as no longer having it.",
+   "quote": "Regulations may provide for persons of prescribed descriptions to be treated as having disabilities. (2) The regulations may prescribe circumstances in which a person who has a disability is to be treated as no longer having the disability."
+  },
+  {
+   "requirement": "Paragraph 7 does not affect the other provisions of Schedule 1.",
+   "quote": "This paragraph does not affect the other provisions of this Schedule."
+  },
+  {
+   "requirement": "A person with a progressive condition who has or had an impairment affecting day-to-day activities that is not or was not substantial is taken to have an impairment with a substantial adverse effect if the condition is likely to result in such an impairment.",
+   "quote": "P is to be taken to have an impairment which has a substantial adverse effect if the condition is likely to result in P having such an impairment."
+  },
+  {
+   "requirement": "Regulations may make provision for a condition of a prescribed description to be treated as being progressive or as not being progressive.",
+   "quote": "Regulations may make provision for a condition of a prescribed description to be treated as being, or as not being, progressive."
+  },
+  {
+   "requirement": "A question whether a person had a disability at a particular relevant time must be determined under section 6 as if the provisions of or under the Equality Act 2010 in force when the act complained of was done had been in force at that relevant time.",
+   "quote": "A question as to whether a person had a disability at a particular time (“the relevant time”) is to be determined, for the purposes of section 6, as if the provisions of, or made under, this Act were in force when the act complained of was done had been in force at the relevant time."
+  },
+  {
+   "requirement": "The relevant time for determining whether a person had a disability may be a time before the coming into force of the statutory provision to which the question relates.",
+   "quote": "The relevant time may be a time before the coming into force of the provision of this Act to which the question relates."
+  },
+  {
+   "requirement": "Part 2 of Schedule 1 applies in relation to guidance referred to in section 6(5).",
+   "quote": "This Part of this Schedule applies in relation to guidance referred to in section 6(5)."
+  },
+  {
+   "requirement": "Guidance issued by the Minister may provide examples of effects that would or would not be reasonable to regard as substantial adverse effects in relation to particular activities, and examples of substantial adverse effects that would or would not be reasonable to regard as long-term.",
+   "quote": "The guidance may give examples of— (a) effects which it would, or would not, be reasonable, in relation to particular activities, to regard as substantial adverse effects; (b) substantial adverse effects which it would, or would not, be reasonable to regard as long-term."
+  },
+  {
+   "requirement": "An adjudicating body determining whether a person is a disabled person must take account of any guidance issued under section 6(5) that it thinks is relevant.",
+   "quote": "In determining whether a person is a disabled person, an adjudicating body must take account of such guidance as it thinks is relevant."
+  },
+  {
+   "requirement": "An adjudicating body consists of a court, a tribunal, or a person other than a court or tribunal who may decide a claim relating to a contravention of Part 6 (education).",
+   "quote": "An adjudicating body is— (a) a court; (b) a tribunal; (c) a person (other than a court or tribunal) who may decide a claim relating to a contravention of Part 6 (education)."
+  },
+  {
+   "requirement": "Before issuing guidance, the Minister must publish a draft, consider any representations made about the draft, and make any modifications the Minister thinks appropriate in light of those representations.",
+   "quote": "Before issuing the guidance, the Minister must— (a) publish a draft of it; (b) consider any representations made to the Minister about the draft; (c) make such modifications as the Minister thinks appropriate in the light of the representations."
+  },
+  {
+   "requirement": "If the Minister decides to proceed with proposed guidance, the Minister must lay a draft of it before Parliament.",
+   "quote": "If the Minister decides to proceed with proposed guidance, a draft of it must be laid before Parliament."
+  },
+  {
+   "requirement": "If either House of Parliament resolves not to approve the draft guidance before the end of the 40-day period, the Minister must take no further steps regarding that proposed guidance.",
+   "quote": "If, before the end of the 40-day period, either House resolves not to approve the draft, the Minister must take no further steps in relation to the proposed guidance."
+  },
+  {
+   "requirement": "If neither House resolves not to approve the draft guidance before the end of the 40-day period, the Minister must issue the guidance in the form of the laid draft.",
+   "quote": "If no such resolution is made before the end of that period, the Minister must issue the guidance in the form of the draft."
+  },
+  {
+   "requirement": "A resolution by either House not to approve proposed guidance does not prevent a new draft of proposed guidance from being laid before Parliament.",
+   "quote": "Sub-paragraph (2) does not prevent a new draft of proposed guidance being laid before Parliament."
+  },
+  {
+   "requirement": "The 40-day parliamentary consideration period begins on the date the draft is laid before both Houses or on the later date if laid before each House on different dates.",
+   "quote": "The 40-day period— (a) begins on the date on which the draft is laid before both Houses (or, if laid before each House on a different date, on the later date)"
+  },
+  {
+   "requirement": "The 40-day parliamentary consideration period excludes any period during which Parliament is prorogued or dissolved, or during which both Houses are adjourned for more than 4 days.",
+   "quote": "(b) does not include a period during which Parliament is prorogued or dissolved; (c) does not include a period during which both Houses are adjourned for more than 4 days."
+  },
+  {
+   "requirement": "Guidance comes into force on the day appointed by the Minister by order.",
+   "quote": "The guidance comes into force on the day appointed by order by the Minister."
+  },
+  {
+   "requirement": "The Minister may revise and re-issue the whole or part of the guidance, or revoke the guidance by order.",
+   "quote": "The Minister may— (a) revise the whole or part of guidance and re-issue it; (b) by order revoke guidance."
+  },
+  {
+   "requirement": "Any statutory reference to guidance includes a reference to guidance that has been revised and re-issued.",
+   "quote": "A reference to guidance includes a reference to guidance which has been revised and re-issued."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum duration an impairment's effect must have lasted to qualify as long-term",
+   "value": "12 months",
+   "quote": "it has lasted for at least 12 months"
+  },
+  {
+   "what": "minimum duration an impairment's effect must be likely to last to qualify as long-term",
+   "value": "12 months",
+   "quote": "it is likely to last for at least 12 months"
+  },
+  {
+   "what": "period within which either House of Parliament may resolve not to approve draft guidance",
+   "value": "40-day",
+   "quote": "If, before the end of the 40-day period, either House resolves not to approve the draft"
+  },
+  {
+   "what": "parliamentary adjournment duration of both Houses that is excluded from the 40-day period",
+   "value": "4 days",
+   "quote": "both Houses are adjourned for more than 4 days"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 37,
+  "elements_verified": 36,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 4
+ }
+}

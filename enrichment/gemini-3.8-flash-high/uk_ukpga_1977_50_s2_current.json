@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1977/50/s2@current",
+ "section": "uk/ukpga/1977/50/s2",
+ "version": "current",
+ "source_sha256": "fd9226c59d67432d2fbec88a91862bf3a91e7a86cd5c0fbae6515e3c1b9cf7cd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person cannot, by reference to any contract term or to a notice given to persons generally or to particular persons, exclude or restrict liability for death or personal injury resulting from negligence.",
+    "quote": "cannot by reference to any contract term or to a notice given to persons generally or to particular persons exclude or restrict his liability for death or personal injury resulting from negligence"
+   },
+   {
+    "requirement": "In the case of loss or damage other than death or personal injury, a person cannot exclude or restrict liability for negligence by reference to a contract term or notice except in so far as the term or notice satisfies the requirement of reasonableness.",
+    "quote": "In the case of other loss or damage, a person cannot so exclude or restrict his liability for negligence except in so far as the term or notice satisfies the requirement of reasonableness"
+   },
+   {
+    "requirement": "Where a contract term or notice purports to exclude or restrict liability for negligence, a person's agreement to or awareness of that term or notice is not of itself to be taken as indicating that person's voluntary acceptance of any risk.",
+    "quote": "Where a contract term or notice purports to exclude or restrict liability for negligence a person’s agreement to or awareness of it is not of itself to be taken as indicating his voluntary acceptance of any risk"
+   },
+   {
+    "requirement": "The rules in section 2 of the Unfair Contract Terms Act 1977 do not apply to a term in a consumer contract or to a notice to the extent that it is a consumer notice (for which provision is made in sections 62 and 65 of the Consumer Rights Act 2015).",
+    "quote": "This section does not apply to— (a) a term in a consumer contract, or (b) a notice to the extent that it is a consumer notice, (but see the provision made about such contracts and notices in sections 62 and 65 of the Consumer Rights Act 2015)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person cannot, by reference to any contract term or to a notice given to persons generally or to particular persons, exclude or restrict liability for death or personal injury resulting from negligence.",
+   "quote": "cannot by reference to any contract term or to a notice given to persons generally or to particular persons exclude or restrict his liability for death or personal injury resulting from negligence"
+  },
+  {
+   "requirement": "In the case of loss or damage other than death or personal injury, a person cannot exclude or restrict liability for negligence by reference to a contract term or notice except in so far as the term or notice satisfies the requirement of reasonableness.",
+   "quote": "In the case of other loss or damage, a person cannot so exclude or restrict his liability for negligence except in so far as the term or notice satisfies the requirement of reasonableness"
+  },
+  {
+   "requirement": "Where a contract term or notice purports to exclude or restrict liability for negligence, a person's agreement to or awareness of that term or notice is not of itself to be taken as indicating that person's voluntary acceptance of any risk.",
+   "quote": "Where a contract term or notice purports to exclude or restrict liability for negligence a person’s agreement to or awareness of it is not of itself to be taken as indicating his voluntary acceptance of any risk"
+  },
+  {
+   "requirement": "The rules in section 2 of the Unfair Contract Terms Act 1977 do not apply to a term in a consumer contract or to a notice to the extent that it is a consumer notice (for which provision is made in sections 62 and 65 of the Consumer Rights Act 2015).",
+   "quote": "This section does not apply to— (a) a term in a consumer contract, or (b) a notice to the extent that it is a consumer notice, (but see the provision made about such contracts and notices in sections 62 and 65 of the Consumer Rights Act 2015)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

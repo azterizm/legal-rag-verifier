@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1998/20/s1@current",
+ "section": "uk/ukpga/1998/20/s1",
+ "version": "current",
+ "source_sha256": "5fd340d642cfe9dedb2322d646eb9e6e6e0ae8d9a32f36b05e0a60163baafbca",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A contract to which the Late Payment of Commercial Debts (Interest) Act 1998 applies contains an implied term that any qualifying debt created by the contract carries simple interest subject to and in accordance with Part I of the Act.",
+    "quote": "It is an implied term in a contract to which this Act applies that any qualifying debt created by the contract carries simple interest subject to and in accordance with this Part."
+   },
+   {
+    "requirement": "Interest carried under the implied term is defined in the Act as statutory interest.",
+    "quote": "Interest carried under that implied term (in this Act referred to as “statutory interest”)"
+   },
+   {
+    "requirement": "Statutory interest carried under the implied term must be treated in the same way as interest carried under an express contract term for the purposes of any rule of law or enactment (other than this Act) relating to interest on debts.",
+    "quote": "shall be treated, for the purposes of any rule of law or enactment (other than this Act) relating to interest on debts, in the same way as interest carried under an express contract term."
+   },
+   {
+    "requirement": "The provisions of Part I have effect subject to Part II of the Act, which in certain circumstances permits contract terms to oust or vary the right to statutory interest conferred by the implied term.",
+    "quote": "This Part has effect subject to Part II (which in certain circumstances permits contract terms to oust or vary the right to statutory interest that would otherwise be conferred by virtue of the term implied by subsection (1))."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A contract to which the Late Payment of Commercial Debts (Interest) Act 1998 applies contains an implied term that any qualifying debt created by the contract carries simple interest subject to and in accordance with Part I of the Act.",
+   "quote": "It is an implied term in a contract to which this Act applies that any qualifying debt created by the contract carries simple interest subject to and in accordance with this Part."
+  },
+  {
+   "requirement": "Interest carried under the implied term is defined in the Act as statutory interest.",
+   "quote": "Interest carried under that implied term (in this Act referred to as “statutory interest”)"
+  },
+  {
+   "requirement": "Statutory interest carried under the implied term must be treated in the same way as interest carried under an express contract term for the purposes of any rule of law or enactment (other than this Act) relating to interest on debts.",
+   "quote": "shall be treated, for the purposes of any rule of law or enactment (other than this Act) relating to interest on debts, in the same way as interest carried under an express contract term."
+  },
+  {
+   "requirement": "The provisions of Part I have effect subject to Part II of the Act, which in certain circumstances permits contract terms to oust or vary the right to statutory interest conferred by the implied term.",
+   "quote": "This Part has effect subject to Part II (which in certain circumstances permits contract terms to oust or vary the right to statutory interest that would otherwise be conferred by virtue of the term implied by subsection (1))."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

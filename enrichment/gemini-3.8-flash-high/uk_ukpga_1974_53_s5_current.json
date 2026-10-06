@@ -1,0 +1,688 @@
+{
+ "key": "uk/ukpga/1974/53/s5@current",
+ "section": "uk/ukpga/1974/53/s5",
+ "version": "current",
+ "source_sha256": "8123503b6c6dd529509b38af542fc9137f7a71a3b34c0b09dcca52fecfda5668",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A sentence of imprisonment for life is excluded from rehabilitation under the Rehabilitation of Offenders Act 1974.",
+    "quote": "a sentence of imprisonment for life"
+   },
+   {
+    "requirement": "A sentence of imprisonment for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of imprisonment for a term exceeding 4 years"
+   },
+   {
+    "requirement": "A sentence of youth custody for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of youth custody for such a term"
+   },
+   {
+    "requirement": "A sentence of detention in a young offender institution for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of detention in a young offender institution for such a term"
+   },
+   {
+    "requirement": "A sentence of corrective training for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of corrective training for such a term"
+   },
+   {
+    "requirement": "A sentence of detention under section 91 of the Powers of Criminal Courts (Sentencing) Act 2000 for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of detention under section 91 of the Powers of Criminal Courts (Sentencing) Act 2000 for such a term"
+   },
+   {
+    "requirement": "A sentence of detention under section 250 or 252A of the Sentencing Code for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of detention under section 250 or 252A of the Sentencing Code for such a term"
+   },
+   {
+    "requirement": "A sentence of detention under section 209 or 224B of the Armed Forces Act 2006 for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of detention under section 209 or 224B of the Armed Forces Act 2006 for such a term"
+   },
+   {
+    "requirement": "A sentence of detention under section 205ZC(5) or 208 of the Criminal Procedure (Scotland) Act 1995 for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+    "quote": "a sentence of detention under section 205ZC(5) or 208 of the Criminal Procedure (Scotland) Act 1995 for such a term"
+   },
+   {
+    "requirement": "A sentence of preventive detention is excluded from rehabilitation under the Rehabilitation of Offenders Act 1974.",
+    "quote": "a sentence of preventive detention"
+   },
+   {
+    "requirement": "A sentence of detention during Her Majesty’s pleasure or for life under section 90 or 91 of the Powers of Criminal Courts (Sentencing) Act 2000, under section 250 or 259 of the Sentencing Code, under section 209 or 218 of the Armed Forces Act 2006, or under section 205(2) or (3) of the Criminal Procedure (Scotland) Act 1995 is excluded from rehabilitation.",
+    "quote": "a sentence of detention during Her Majesty’s pleasure or for life under section 90 or 91 of the Powers of Criminal Courts (Sentencing) Act 2000 , under section 250 or 259 of the Sentencing Code or under section 209 or 218 of the Armed Forces Act 2006, or under section 205(2) or (3) of the Criminal Procedure (Scotland) Act 1995"
+   },
+   {
+    "requirement": "A sentence of custody for life is excluded from rehabilitation under the Rehabilitation of Offenders Act 1974.",
+    "quote": "a sentence of custody for life"
+   },
+   {
+    "requirement": "A sentence of imprisonment for public protection under section 225 of the Criminal Justice Act 2003, a sentence of detention for public protection under section 226 of that Act, or an extended sentence under section 226A, 226B, 227 or 228 of that Act or section 254, 266 or 279 of the Sentencing Code (including any passed as a result of sections 219 to 222 of the Armed Forces Act 2006) is excluded from rehabilitation.",
+    "quote": "a sentence of imprisonment for public protection under section 225 of the Criminal Justice Act 2003, a sentence of detention for public protection under section 226 of that Act or an extended sentence under section 226A, 226B, 227 or 228 of that Act or section 254, 266 or 279 of the Sentencing Code"
+   },
+   {
+    "requirement": "Any sentence not excluded under section 5(1) is subject to rehabilitation under the Rehabilitation of Offenders Act 1974.",
+    "quote": "any other sentence is a sentence subject to rehabilitation under this Act"
+   },
+   {
+    "requirement": "For the purposes of section 5(1)(b), 'service offence' means an offence under section 42 of the Armed Forces Act 2006, section 70 of the Army Act 1955 or Air Force Act 1955, or section 42 of the Naval Discipline Act 1957.",
+    "quote": "“service offence” means an offence under— (i) section 42 of the Armed Forces Act 2006, (ii) section 70 of the Army Act 1955 or Air Force Act 1955, or (iii) section 42 of the Naval Discipline Act 1957"
+   },
+   {
+    "requirement": "For the purposes of section 5(1)(b), 'corresponding offence' means the corresponding offence under the law of England and Wales for an offence under section 42 of the Armed Forces Act 2006, the corresponding civil offence for an offence under section 70 of the Army Act 1955 or Air Force Act 1955, or the civil offence for an offence under section 42 of the Naval Discipline Act 1957.",
+    "quote": "“corresponding offence” means— (i) in relation to an offence under section 42 of the Armed Forces Act 2006, the corresponding offence under the law of England and Wales within the meaning of that section; (ii) in relation to an offence under section 70 of the Army Act 1955 or the Air Force Act 1955, the corresponding civil offence within the meaning of that Act; (iii) in relation to an offence under section 42 of the Naval Discipline Act 1957, the civil offence within the meaning of that section"
+   },
+   {
+    "requirement": "Section 48 of the Armed Forces Act 2006 applies for the purposes of section 5(1ZA)(b)(i) as it applies for the purposes of the provisions of that Act referred to in section 48(3)(b).",
+    "quote": "Section 48 of the Armed Forces Act 2006 (supplementary provisions relating to ancillary service offences) applies for the purposes of subsection (1ZA)(b)(i) as it applies for the purposes of the provisions of that Act referred to in subsection (3)(b) of that section"
+   },
+   {
+    "requirement": "References to section 209 of the Armed Forces Act 2006 include references to section 71A(4) of the Army Act 1955 or Air Force Act 1955 or section 43A(4) of the Naval Discipline Act 1957.",
+    "quote": "references to section 209 of the Armed Forces Act 2006 include references to section 71A(4) of the Army Act 1955 or Air Force Act 1955 or section 43A(4) of the Naval Discipline Act 1957"
+   },
+   {
+    "requirement": "The reference to section 218 of the Armed Forces Act 2006 includes a reference to section 71A(3) of the Army Act 1955 or Air Force Act 1955 or section 43A(3) of the Naval Discipline Act 1957.",
+    "quote": "the reference to section 218 of the Armed Forces Act 2006 includes a reference to section 71A(3) of the Army Act 1955 or Air Force Act 1955 or section 43A(3) of the Naval Discipline Act 1957"
+   },
+   {
+    "requirement": "Subject to subsections (2A) to (4), the rehabilitation period for a sentence begins with the date of the conviction in respect of which the sentence is imposed and ends at the time listed in the statutory Table.",
+    "quote": "the rehabilitation period for a sentence is the period— (a) beginning with the date of the conviction in respect of which the sentence is imposed, and (b) ending at the time listed in the following Table in relation to that sentence"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for a custodial sentence of more than 4 years ends 7 years from the day on which the sentence (including any licence period) is completed.",
+    "quote": "The end of the period of 7 years beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a custodial sentence of more than 4 years ends 42 months from the day on which the sentence (including any licence period) is completed.",
+    "quote": "The end of the period of 42 months beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for a custodial sentence of more than 1 year and up to, or consisting of, 4 years ends 4 years from the day on which the sentence (including any licence period) is completed.",
+    "quote": "The end of the period of 4 years beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a custodial sentence of more than 1 year and up to, or consisting of, 4 years ends 2 years from the day on which the sentence (including any licence period) is completed.",
+    "quote": "The end of the period of 2 years beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for a custodial sentence of 1 year or less ends 12 months from the day on which the sentence (including any licence period) is completed.",
+    "quote": "The end of the period of 12 months beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a custodial sentence of 1 year or less ends 6 months from the day on which the sentence (including any licence period) is completed.",
+    "quote": "The end of the period of 6 months beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for removal from Her Majesty's service ends 12 months from the date of the conviction.",
+    "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for removal from Her Majesty's service ends 6 months from the date of the conviction.",
+    "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for a sentence of service detention ends 12 months from the day on which the sentence is completed.",
+    "quote": "The end of the period of 12 months beginning with the day on which the sentence is completed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a sentence of service detention ends 6 months from the day on which the sentence is completed.",
+    "quote": "The end of the period of 6 months beginning with the day on which the sentence is completed"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for a severe reprimand or reprimand under the Armed Forces Act 2006 ends 12 months from the date of conviction.",
+    "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a severe reprimand or reprimand under the Armed Forces Act 2006 ends 6 months from the date of conviction.",
+    "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "requirement": "For an adult offender, the rehabilitation period for a fine ends 12 months from the date of conviction.",
+    "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a fine ends 6 months from the date of conviction.",
+    "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "requirement": "The rehabilitation period for a compensation order ends on the date on which the payment is made in full, for both adult offenders and offenders under 18 at the date of conviction.",
+    "quote": "The date on which the payment is made in full"
+   },
+   {
+    "requirement": "The rehabilitation period for a relevant order ends on the day provided for by or under the order as the last day on which the order is to have effect, for both adult offenders and offenders under 18 at the date of conviction.",
+    "quote": "The day provided for by or under the order as the last day on which the order is to have effect"
+   },
+   {
+    "requirement": "Where provision is made by or under a relevant order for it to have effect until further order, until the occurrence of a specified event, or otherwise for an indefinite period, the rehabilitation period begins with the date of conviction and ends when the order ceases to have effect.",
+    "quote": "where provision is made by or under a relevant order for the order to have effect— until further order,until the occurrence of a specified event, or (c) otherwise for an indefinite period"
+   },
+   {
+    "requirement": "The rehabilitation period for a relevant order not otherwise dealt with in the Table or under subsections (2A) and (2B) is 24 months beginning with the date of conviction.",
+    "quote": "The rehabilitation period for a relevant order which is not otherwise dealt with in the Table or under subsections (2A) and (2B) is the period of 24 months beginning with the date of conviction"
+   },
+   {
+    "requirement": "There is no rehabilitation period for an order discharging a person absolutely for an offence or any other sentence not dealt with in the Table or under subsections (2A) to (3), and the period of time is read as nil.",
+    "quote": "There is no rehabilitation period for— (a) an order discharging a person absolutely for an offence, or (b) any other sentence in respect of a conviction where the sentence is not dealt with in the Table or under any of subsections (2A) to (3), and, in such cases, references in this Act to any rehabilitation period are to be read as if the period of time were nil"
+   },
+   {
+    "requirement": "The Secretary of State may by order amend column 2 or 3 of the Table or the number of months specified in subsection (3).",
+    "quote": "The Secretary of State may by order amend column 2 or 3 of the Table or the number of months for the time being specified in subsection (3)"
+   },
+   {
+    "requirement": "Subject to subsection (7A), consecutive terms of imprisonment or other custodial sentences are to be treated as a single term.",
+    "quote": "consecutive terms of imprisonment or other custodial sentences are to be treated as a single term"
+   },
+   {
+    "requirement": "Subject to subsection (7A), wholly or partly concurrent terms of imprisonment or other custodial sentences imposed for offences of which a person was convicted in the same proceedings are to be treated as a single term.",
+    "quote": "terms of imprisonment or other custodial sentences which are wholly or partly concurrent (that is terms of imprisonment or other custodial sentences imposed in respect of offences of which a person was convicted in the same proceedings) are to be treated as a single term"
+   },
+   {
+    "requirement": "No account is to be taken of any subsequent variation made by a court dealing with a person in respect of a suspended sentence of imprisonment of the term originally imposed.",
+    "quote": "no account is to be taken of any subsequent variation, made by a court dealing with a person in respect of a suspended sentence of imprisonment, of the term originally imposed"
+   },
+   {
+    "requirement": "No account is to be taken of any subsequent variation of the day originally provided for by or under an order as the last day on which the order is to have effect.",
+    "quote": "no account is to be taken of any subsequent variation of the day originally provided for by or under an order as the last day on which the order is to have effect"
+   },
+   {
+    "requirement": "No account is to be taken of any detention or supervision ordered by a court under section 104(3) of the Powers of Criminal Courts (Sentencing) Act 2000 or paragraph 3(2) of Schedule 12 to the Sentencing Code.",
+    "quote": "no account is to be taken of any detention or supervision ordered by a court under section 104(3) of the Powers of Criminal Courts (Sentencing) Act 2000 or paragraph 3(2) of Schedule 12 to the Sentencing Code"
+   },
+   {
+    "requirement": "A sentence imposed by a court outside England and Wales is to be treated as the sentence mentioned in section 5 to which it most closely corresponds.",
+    "quote": "a sentence imposed by a court outside England and Wales is to be treated as the sentence mentioned in this section to which it most closely corresponds"
+   },
+   {
+    "requirement": "The rules treating consecutive or concurrent custodial sentences as a single term do not apply for the purpose of determining whether a sentence is excluded from rehabilitation under subsection (1)(b).",
+    "quote": "Subsection (7)(a) or (b) does not apply for the purposes of determining whether a sentence is excluded from rehabilitation by virtue of subsection (1)(b)"
+   },
+   {
+    "requirement": "A sentence imposed outside England and Wales for an offence under the law of Scotland, Northern Ireland or another country or territory that would have constituted a Schedule 18 offence if committed in England and Wales is treated as a sentence for a Schedule 18 offence.",
+    "quote": "a sentence imposed as mentioned in subsection (7)(f) for an offence— (a) under the law of Scotland, Northern Ireland or a country or territory outside the United Kingdom, and (b) which would have constituted an offence specified in Schedule 18 to the Sentencing Code if it had been committed in England and Wales, is to be treated as a sentence for an offence specified in that Schedule"
+   },
+   {
+    "requirement": "An act punishable under the law in force in a country or territory outside the United Kingdom constitutes an offence under that law, however it is described.",
+    "quote": "an act punishable under the law in force in a country or territory outside the United Kingdom constitutes an offence under that law, however it is described in that law"
+   },
+   {
+    "requirement": "'Community or youth rehabilitation order' means a community order under Chapter 2 of Part 9 of the Sentencing Code, a service community order or overseas community order under the Armed Forces Act 2006, a youth rehabilitation order under Chapter 1 of Part 9 of the Sentencing Code, or any order directly or indirectly superseding them.",
+    "quote": "“community or youth rehabilitation order” means— a community order under Chapter 2 of Part 9 of the Sentencing Code,a service community order or overseas community order under the Armed Forces Act 2006,a youth rehabilitation order under Chapter 1 of Part 9 of the Sentencing Code, orany order of a kind superseded (whether directly or indirectly) by an order mentioned in paragraph (a), (b) or (c)"
+   },
+   {
+    "requirement": "'Custodial sentence' means a sentence of imprisonment, detention in a young offender institution, Borstal training, youth custody, corrective training, detention under section 250 or 252A of the Sentencing Code or section 209 of the Armed Forces Act 2006, a detention and training order under section 233 of the Sentencing Code or section 211 of the Armed Forces Act 2006, or any superseded sentence of that kind.",
+    "quote": "“custodial sentence” means— a sentence of imprisonment,a sentence of detention in a young offender institution,a sentence of Borstal training,a sentence of youth custody,a sentence of corrective training,a sentence of detention under section 250 or 252A of the Sentencing Code or section 209 of the Armed Forces Act 2006,a detention and training order within the meaning given by section 233 of the Sentencing Code or an order under section 211 of the Armed Forces Act 2006,any sentence of a kind superseded (whether directly or indirectly) by a sentence mentioned in paragraph (f) or (g)"
+   },
+   {
+    "requirement": "'Earlier statutory order' means an order under section 54 of the Children and Young Persons Act 1933 committing the convicted person to custody in a remand home, an approved school order under section 57 of that Act, or any superseded order of that kind.",
+    "quote": "“earlier statutory order” means— an order under section 54 of the Children and Young Persons Act 1933 committing the person convicted to custody in a remand home,an approved school order under section 57 of that Act, orany order of a kind superseded (whether directly or indirectly) by an order mentioned in any of paragraphs (c) to (e) of the definition of “relevant order” or in paragraph (a) or (b) above"
+   },
+   {
+    "requirement": "'Relevant order' means a community or youth rehabilitation order, conditional discharge, bind over, order under section 1(2A) of the Street Offences Act 1959, hospital order under Part 3 of the Mental Health Act 1983, referral order under Chapter 1 of Part 6 of the Sentencing Code, earlier statutory order, or any order imposing a disqualification, disability, prohibition, penalty, requirement or restriction or regulating behaviour not otherwise dealt with in the Table, excluding a reparation order under section 73 of the Powers of Criminal Courts (Sentencing) Act 2000 or Chapter 2 of Part 6 of the Sentencing Code.",
+    "quote": "“relevant order” means— a community or youth rehabilitation order,an order discharging a person conditionally for an offence,an order binding a person over to keep the peace or be of good behaviour,an order under section 1(2A) of the Street Offences Act 1959,a hospital order under Part 3 of the Mental Health Act 1983 (with or without a restriction order),a referral order under Chapter 1 of Part 6 of the Sentencing Code,an earlier statutory order, orany order which— imposes a disqualification, disability, prohibition, penalty, requirement or restriction, oris otherwise intended to regulate the behaviour of the person convicted,and is not otherwise dealt with in the Table,but does not include a reparation order under section 73 of the Powers of Criminal Courts (Sentencing) Act 2000 or Chapter 2 of Part 6 of the Sentencing Code"
+   },
+   {
+    "requirement": "'Removal from Her Majesty's service' means a sentence of dismissal with disgrace from Her Majesty's service, dismissal from Her Majesty's service, or cashiering or discharge with ignominy.",
+    "quote": "“removal from Her Majesty's service” means a sentence of dismissal with disgrace from Her Majesty's service, a sentence of dismissal from Her Majesty's service or a sentence of cashiering or discharge with ignominy"
+   },
+   {
+    "requirement": "'Sentence of imprisonment' includes a sentence of penal servitude, and 'term of imprisonment' is construed accordingly.",
+    "quote": "“sentence of imprisonment” includes a sentence of penal servitude (and “term of imprisonment” is to be read accordingly)"
+   },
+   {
+    "requirement": "'Sentence of service detention' means a sentence of service detention under section 374 of the Armed Forces Act 2006, a corresponding sentence in service disciplinary proceedings, or any directly or indirectly superseded sentence of that kind.",
+    "quote": "“sentence of service detention” means— a sentence of service detention (within the meaning given by section 374 of the Armed Forces Act 2006), or a sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings, orany sentence of a kind superseded (whether directly or indirectly) by a sentence mentioned in paragraph (a)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "term of imprisonment or other specified custodial sentences for Schedule 18 offences exceeding which exclusion from rehabilitation applies",
+    "value": "4 years",
+    "quote": "a term exceeding 4 years"
+   },
+   {
+    "what": "age threshold at date of conviction dividing adult offenders from young offenders in the rehabilitation period Table",
+    "value": "18",
+    "quote": "offenders under 18 at date of conviction"
+   },
+   {
+    "what": "length of custodial sentence qualifying for the first tier of the rehabilitation period Table",
+    "value": "more than 4 years",
+    "quote": "A custodial sentence of more than 4 years"
+   },
+   {
+    "what": "rehabilitation period following sentence completion for adult offenders receiving a custodial sentence of more than 4 years",
+    "value": "7 years",
+    "quote": "The end of the period of 7 years beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "what": "rehabilitation period following sentence completion for offenders under 18 receiving a custodial sentence of more than 4 years",
+    "value": "42 months",
+    "quote": "The end of the period of 42 months beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "what": "minimum sentence length for the second custodial tier of the rehabilitation period Table",
+    "value": "more than 1 year",
+    "quote": "more than 1 year"
+   },
+   {
+    "what": "maximum sentence length for the second custodial tier of the rehabilitation period Table",
+    "value": "4 years",
+    "quote": "up to, or consisting of, 4 years"
+   },
+   {
+    "what": "rehabilitation period following sentence completion for adult offenders receiving a custodial sentence of more than 1 year up to 4 years",
+    "value": "4 years",
+    "quote": "The end of the period of 4 years beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "what": "rehabilitation period following sentence completion for offenders under 18 receiving a custodial sentence of more than 1 year up to 4 years",
+    "value": "2 years",
+    "quote": "The end of the period of 2 years beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "what": "sentence length ceiling for the third custodial tier of the rehabilitation period Table",
+    "value": "1 year",
+    "quote": "1 year or less"
+   },
+   {
+    "what": "rehabilitation period following sentence completion for adult offenders receiving a custodial sentence of 1 year or less",
+    "value": "12 months",
+    "quote": "The end of the period of 12 months beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "what": "rehabilitation period following sentence completion for offenders under 18 receiving a custodial sentence of 1 year or less",
+    "value": "6 months",
+    "quote": "The end of the period of 6 months beginning with the day on which the sentence (including any licence period) is completed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for adult offenders sentenced to removal from Her Majesty's service",
+    "value": "12 months",
+    "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for offenders under 18 sentenced to removal from Her Majesty's service",
+    "value": "6 months",
+    "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "what": "rehabilitation period from sentence completion for adult offenders receiving a sentence of service detention",
+    "value": "12 months",
+    "quote": "The end of the period of 12 months beginning with the day on which the sentence is completed"
+   },
+   {
+    "what": "rehabilitation period from sentence completion for offenders under 18 receiving a sentence of service detention",
+    "value": "6 months",
+    "quote": "The end of the period of 6 months beginning with the day on which the sentence is completed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for adult offenders receiving a severe reprimand or reprimand under the Armed Forces Act 2006",
+    "value": "12 months",
+    "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for offenders under 18 receiving a severe reprimand or reprimand under the Armed Forces Act 2006",
+    "value": "6 months",
+    "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for adult offenders receiving a fine",
+    "value": "12 months",
+    "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for offenders under 18 receiving a fine",
+    "value": "6 months",
+    "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+   },
+   {
+    "what": "rehabilitation period from conviction date for a relevant order not otherwise dealt with in the Table or subsections (2A) and (2B)",
+    "value": "24 months",
+    "quote": "period of 24 months beginning with the date of conviction"
+   },
+   {
+    "what": "rehabilitation period length for an absolute discharge or other sentence not dealt with in the Table or subsections (2A) to (3)",
+    "value": "nil",
+    "quote": "period of time were nil"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A sentence of imprisonment for life is excluded from rehabilitation under the Rehabilitation of Offenders Act 1974.",
+   "quote": "a sentence of imprisonment for life"
+  },
+  {
+   "requirement": "A sentence of imprisonment for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of imprisonment for a term exceeding 4 years"
+  },
+  {
+   "requirement": "A sentence of youth custody for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of youth custody for such a term"
+  },
+  {
+   "requirement": "A sentence of detention in a young offender institution for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of detention in a young offender institution for such a term"
+  },
+  {
+   "requirement": "A sentence of corrective training for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of corrective training for such a term"
+  },
+  {
+   "requirement": "A sentence of detention under section 91 of the Powers of Criminal Courts (Sentencing) Act 2000 for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of detention under section 91 of the Powers of Criminal Courts (Sentencing) Act 2000 for such a term"
+  },
+  {
+   "requirement": "A sentence of detention under section 250 or 252A of the Sentencing Code for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of detention under section 250 or 252A of the Sentencing Code for such a term"
+  },
+  {
+   "requirement": "A sentence of detention under section 209 or 224B of the Armed Forces Act 2006 for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of detention under section 209 or 224B of the Armed Forces Act 2006 for such a term"
+  },
+  {
+   "requirement": "A sentence of detention under section 205ZC(5) or 208 of the Criminal Procedure (Scotland) Act 1995 for a term exceeding 4 years is excluded from rehabilitation if imposed for an offence specified in Schedule 18 to the Sentencing Code or a corresponding service offence.",
+   "quote": "a sentence of detention under section 205ZC(5) or 208 of the Criminal Procedure (Scotland) Act 1995 for such a term"
+  },
+  {
+   "requirement": "A sentence of preventive detention is excluded from rehabilitation under the Rehabilitation of Offenders Act 1974.",
+   "quote": "a sentence of preventive detention"
+  },
+  {
+   "requirement": "A sentence of detention during Her Majesty’s pleasure or for life under section 90 or 91 of the Powers of Criminal Courts (Sentencing) Act 2000, under section 250 or 259 of the Sentencing Code, under section 209 or 218 of the Armed Forces Act 2006, or under section 205(2) or (3) of the Criminal Procedure (Scotland) Act 1995 is excluded from rehabilitation.",
+   "quote": "a sentence of detention during Her Majesty’s pleasure or for life under section 90 or 91 of the Powers of Criminal Courts (Sentencing) Act 2000 , under section 250 or 259 of the Sentencing Code or under section 209 or 218 of the Armed Forces Act 2006, or under section 205(2) or (3) of the Criminal Procedure (Scotland) Act 1995"
+  },
+  {
+   "requirement": "A sentence of custody for life is excluded from rehabilitation under the Rehabilitation of Offenders Act 1974.",
+   "quote": "a sentence of custody for life"
+  },
+  {
+   "requirement": "A sentence of imprisonment for public protection under section 225 of the Criminal Justice Act 2003, a sentence of detention for public protection under section 226 of that Act, or an extended sentence under section 226A, 226B, 227 or 228 of that Act or section 254, 266 or 279 of the Sentencing Code (including any passed as a result of sections 219 to 222 of the Armed Forces Act 2006) is excluded from rehabilitation.",
+   "quote": "a sentence of imprisonment for public protection under section 225 of the Criminal Justice Act 2003, a sentence of detention for public protection under section 226 of that Act or an extended sentence under section 226A, 226B, 227 or 228 of that Act or section 254, 266 or 279 of the Sentencing Code"
+  },
+  {
+   "requirement": "Any sentence not excluded under section 5(1) is subject to rehabilitation under the Rehabilitation of Offenders Act 1974.",
+   "quote": "any other sentence is a sentence subject to rehabilitation under this Act"
+  },
+  {
+   "requirement": "For the purposes of section 5(1)(b), 'service offence' means an offence under section 42 of the Armed Forces Act 2006, section 70 of the Army Act 1955 or Air Force Act 1955, or section 42 of the Naval Discipline Act 1957.",
+   "quote": "“service offence” means an offence under— (i) section 42 of the Armed Forces Act 2006, (ii) section 70 of the Army Act 1955 or Air Force Act 1955, or (iii) section 42 of the Naval Discipline Act 1957"
+  },
+  {
+   "requirement": "For the purposes of section 5(1)(b), 'corresponding offence' means the corresponding offence under the law of England and Wales for an offence under section 42 of the Armed Forces Act 2006, the corresponding civil offence for an offence under section 70 of the Army Act 1955 or Air Force Act 1955, or the civil offence for an offence under section 42 of the Naval Discipline Act 1957.",
+   "quote": "“corresponding offence” means— (i) in relation to an offence under section 42 of the Armed Forces Act 2006, the corresponding offence under the law of England and Wales within the meaning of that section; (ii) in relation to an offence under section 70 of the Army Act 1955 or the Air Force Act 1955, the corresponding civil offence within the meaning of that Act; (iii) in relation to an offence under section 42 of the Naval Discipline Act 1957, the civil offence within the meaning of that section"
+  },
+  {
+   "requirement": "Section 48 of the Armed Forces Act 2006 applies for the purposes of section 5(1ZA)(b)(i) as it applies for the purposes of the provisions of that Act referred to in section 48(3)(b).",
+   "quote": "Section 48 of the Armed Forces Act 2006 (supplementary provisions relating to ancillary service offences) applies for the purposes of subsection (1ZA)(b)(i) as it applies for the purposes of the provisions of that Act referred to in subsection (3)(b) of that section"
+  },
+  {
+   "requirement": "References to section 209 of the Armed Forces Act 2006 include references to section 71A(4) of the Army Act 1955 or Air Force Act 1955 or section 43A(4) of the Naval Discipline Act 1957.",
+   "quote": "references to section 209 of the Armed Forces Act 2006 include references to section 71A(4) of the Army Act 1955 or Air Force Act 1955 or section 43A(4) of the Naval Discipline Act 1957"
+  },
+  {
+   "requirement": "The reference to section 218 of the Armed Forces Act 2006 includes a reference to section 71A(3) of the Army Act 1955 or Air Force Act 1955 or section 43A(3) of the Naval Discipline Act 1957.",
+   "quote": "the reference to section 218 of the Armed Forces Act 2006 includes a reference to section 71A(3) of the Army Act 1955 or Air Force Act 1955 or section 43A(3) of the Naval Discipline Act 1957"
+  },
+  {
+   "requirement": "Subject to subsections (2A) to (4), the rehabilitation period for a sentence begins with the date of the conviction in respect of which the sentence is imposed and ends at the time listed in the statutory Table.",
+   "quote": "the rehabilitation period for a sentence is the period— (a) beginning with the date of the conviction in respect of which the sentence is imposed, and (b) ending at the time listed in the following Table in relation to that sentence"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for a custodial sentence of more than 4 years ends 7 years from the day on which the sentence (including any licence period) is completed.",
+   "quote": "The end of the period of 7 years beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a custodial sentence of more than 4 years ends 42 months from the day on which the sentence (including any licence period) is completed.",
+   "quote": "The end of the period of 42 months beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for a custodial sentence of more than 1 year and up to, or consisting of, 4 years ends 4 years from the day on which the sentence (including any licence period) is completed.",
+   "quote": "The end of the period of 4 years beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a custodial sentence of more than 1 year and up to, or consisting of, 4 years ends 2 years from the day on which the sentence (including any licence period) is completed.",
+   "quote": "The end of the period of 2 years beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for a custodial sentence of 1 year or less ends 12 months from the day on which the sentence (including any licence period) is completed.",
+   "quote": "The end of the period of 12 months beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a custodial sentence of 1 year or less ends 6 months from the day on which the sentence (including any licence period) is completed.",
+   "quote": "The end of the period of 6 months beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for removal from Her Majesty's service ends 12 months from the date of the conviction.",
+   "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for removal from Her Majesty's service ends 6 months from the date of the conviction.",
+   "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for a sentence of service detention ends 12 months from the day on which the sentence is completed.",
+   "quote": "The end of the period of 12 months beginning with the day on which the sentence is completed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a sentence of service detention ends 6 months from the day on which the sentence is completed.",
+   "quote": "The end of the period of 6 months beginning with the day on which the sentence is completed"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for a severe reprimand or reprimand under the Armed Forces Act 2006 ends 12 months from the date of conviction.",
+   "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a severe reprimand or reprimand under the Armed Forces Act 2006 ends 6 months from the date of conviction.",
+   "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "requirement": "For an adult offender, the rehabilitation period for a fine ends 12 months from the date of conviction.",
+   "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "requirement": "For an offender under 18 at the date of conviction, the rehabilitation period for a fine ends 6 months from the date of conviction.",
+   "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "requirement": "The rehabilitation period for a compensation order ends on the date on which the payment is made in full, for both adult offenders and offenders under 18 at the date of conviction.",
+   "quote": "The date on which the payment is made in full"
+  },
+  {
+   "requirement": "The rehabilitation period for a relevant order ends on the day provided for by or under the order as the last day on which the order is to have effect, for both adult offenders and offenders under 18 at the date of conviction.",
+   "quote": "The day provided for by or under the order as the last day on which the order is to have effect"
+  },
+  {
+   "requirement": "Where provision is made by or under a relevant order for it to have effect until further order, until the occurrence of a specified event, or otherwise for an indefinite period, the rehabilitation period begins with the date of conviction and ends when the order ceases to have effect.",
+   "quote": "where provision is made by or under a relevant order for the order to have effect— until further order,until the occurrence of a specified event, or (c) otherwise for an indefinite period"
+  },
+  {
+   "requirement": "The rehabilitation period for a relevant order not otherwise dealt with in the Table or under subsections (2A) and (2B) is 24 months beginning with the date of conviction.",
+   "quote": "The rehabilitation period for a relevant order which is not otherwise dealt with in the Table or under subsections (2A) and (2B) is the period of 24 months beginning with the date of conviction"
+  },
+  {
+   "requirement": "There is no rehabilitation period for an order discharging a person absolutely for an offence or any other sentence not dealt with in the Table or under subsections (2A) to (3), and the period of time is read as nil.",
+   "quote": "There is no rehabilitation period for— (a) an order discharging a person absolutely for an offence, or (b) any other sentence in respect of a conviction where the sentence is not dealt with in the Table or under any of subsections (2A) to (3), and, in such cases, references in this Act to any rehabilitation period are to be read as if the period of time were nil"
+  },
+  {
+   "requirement": "The Secretary of State may by order amend column 2 or 3 of the Table or the number of months specified in subsection (3).",
+   "quote": "The Secretary of State may by order amend column 2 or 3 of the Table or the number of months for the time being specified in subsection (3)"
+  },
+  {
+   "requirement": "Subject to subsection (7A), consecutive terms of imprisonment or other custodial sentences are to be treated as a single term.",
+   "quote": "consecutive terms of imprisonment or other custodial sentences are to be treated as a single term"
+  },
+  {
+   "requirement": "Subject to subsection (7A), wholly or partly concurrent terms of imprisonment or other custodial sentences imposed for offences of which a person was convicted in the same proceedings are to be treated as a single term.",
+   "quote": "terms of imprisonment or other custodial sentences which are wholly or partly concurrent (that is terms of imprisonment or other custodial sentences imposed in respect of offences of which a person was convicted in the same proceedings) are to be treated as a single term"
+  },
+  {
+   "requirement": "No account is to be taken of any subsequent variation made by a court dealing with a person in respect of a suspended sentence of imprisonment of the term originally imposed.",
+   "quote": "no account is to be taken of any subsequent variation, made by a court dealing with a person in respect of a suspended sentence of imprisonment, of the term originally imposed"
+  },
+  {
+   "requirement": "No account is to be taken of any subsequent variation of the day originally provided for by or under an order as the last day on which the order is to have effect.",
+   "quote": "no account is to be taken of any subsequent variation of the day originally provided for by or under an order as the last day on which the order is to have effect"
+  },
+  {
+   "requirement": "No account is to be taken of any detention or supervision ordered by a court under section 104(3) of the Powers of Criminal Courts (Sentencing) Act 2000 or paragraph 3(2) of Schedule 12 to the Sentencing Code.",
+   "quote": "no account is to be taken of any detention or supervision ordered by a court under section 104(3) of the Powers of Criminal Courts (Sentencing) Act 2000 or paragraph 3(2) of Schedule 12 to the Sentencing Code"
+  },
+  {
+   "requirement": "A sentence imposed by a court outside England and Wales is to be treated as the sentence mentioned in section 5 to which it most closely corresponds.",
+   "quote": "a sentence imposed by a court outside England and Wales is to be treated as the sentence mentioned in this section to which it most closely corresponds"
+  },
+  {
+   "requirement": "The rules treating consecutive or concurrent custodial sentences as a single term do not apply for the purpose of determining whether a sentence is excluded from rehabilitation under subsection (1)(b).",
+   "quote": "Subsection (7)(a) or (b) does not apply for the purposes of determining whether a sentence is excluded from rehabilitation by virtue of subsection (1)(b)"
+  },
+  {
+   "requirement": "A sentence imposed outside England and Wales for an offence under the law of Scotland, Northern Ireland or another country or territory that would have constituted a Schedule 18 offence if committed in England and Wales is treated as a sentence for a Schedule 18 offence.",
+   "quote": "a sentence imposed as mentioned in subsection (7)(f) for an offence— (a) under the law of Scotland, Northern Ireland or a country or territory outside the United Kingdom, and (b) which would have constituted an offence specified in Schedule 18 to the Sentencing Code if it had been committed in England and Wales, is to be treated as a sentence for an offence specified in that Schedule"
+  },
+  {
+   "requirement": "An act punishable under the law in force in a country or territory outside the United Kingdom constitutes an offence under that law, however it is described.",
+   "quote": "an act punishable under the law in force in a country or territory outside the United Kingdom constitutes an offence under that law, however it is described in that law"
+  },
+  {
+   "requirement": "'Community or youth rehabilitation order' means a community order under Chapter 2 of Part 9 of the Sentencing Code, a service community order or overseas community order under the Armed Forces Act 2006, a youth rehabilitation order under Chapter 1 of Part 9 of the Sentencing Code, or any order directly or indirectly superseding them.",
+   "quote": "“community or youth rehabilitation order” means— a community order under Chapter 2 of Part 9 of the Sentencing Code,a service community order or overseas community order under the Armed Forces Act 2006,a youth rehabilitation order under Chapter 1 of Part 9 of the Sentencing Code, orany order of a kind superseded (whether directly or indirectly) by an order mentioned in paragraph (a), (b) or (c)"
+  },
+  {
+   "requirement": "'Custodial sentence' means a sentence of imprisonment, detention in a young offender institution, Borstal training, youth custody, corrective training, detention under section 250 or 252A of the Sentencing Code or section 209 of the Armed Forces Act 2006, a detention and training order under section 233 of the Sentencing Code or section 211 of the Armed Forces Act 2006, or any superseded sentence of that kind.",
+   "quote": "“custodial sentence” means— a sentence of imprisonment,a sentence of detention in a young offender institution,a sentence of Borstal training,a sentence of youth custody,a sentence of corrective training,a sentence of detention under section 250 or 252A of the Sentencing Code or section 209 of the Armed Forces Act 2006,a detention and training order within the meaning given by section 233 of the Sentencing Code or an order under section 211 of the Armed Forces Act 2006,any sentence of a kind superseded (whether directly or indirectly) by a sentence mentioned in paragraph (f) or (g)"
+  },
+  {
+   "requirement": "'Earlier statutory order' means an order under section 54 of the Children and Young Persons Act 1933 committing the convicted person to custody in a remand home, an approved school order under section 57 of that Act, or any superseded order of that kind.",
+   "quote": "“earlier statutory order” means— an order under section 54 of the Children and Young Persons Act 1933 committing the person convicted to custody in a remand home,an approved school order under section 57 of that Act, orany order of a kind superseded (whether directly or indirectly) by an order mentioned in any of paragraphs (c) to (e) of the definition of “relevant order” or in paragraph (a) or (b) above"
+  },
+  {
+   "requirement": "'Relevant order' means a community or youth rehabilitation order, conditional discharge, bind over, order under section 1(2A) of the Street Offences Act 1959, hospital order under Part 3 of the Mental Health Act 1983, referral order under Chapter 1 of Part 6 of the Sentencing Code, earlier statutory order, or any order imposing a disqualification, disability, prohibition, penalty, requirement or restriction or regulating behaviour not otherwise dealt with in the Table, excluding a reparation order under section 73 of the Powers of Criminal Courts (Sentencing) Act 2000 or Chapter 2 of Part 6 of the Sentencing Code.",
+   "quote": "“relevant order” means— a community or youth rehabilitation order,an order discharging a person conditionally for an offence,an order binding a person over to keep the peace or be of good behaviour,an order under section 1(2A) of the Street Offences Act 1959,a hospital order under Part 3 of the Mental Health Act 1983 (with or without a restriction order),a referral order under Chapter 1 of Part 6 of the Sentencing Code,an earlier statutory order, orany order which— imposes a disqualification, disability, prohibition, penalty, requirement or restriction, oris otherwise intended to regulate the behaviour of the person convicted,and is not otherwise dealt with in the Table,but does not include a reparation order under section 73 of the Powers of Criminal Courts (Sentencing) Act 2000 or Chapter 2 of Part 6 of the Sentencing Code"
+  },
+  {
+   "requirement": "'Removal from Her Majesty's service' means a sentence of dismissal with disgrace from Her Majesty's service, dismissal from Her Majesty's service, or cashiering or discharge with ignominy.",
+   "quote": "“removal from Her Majesty's service” means a sentence of dismissal with disgrace from Her Majesty's service, a sentence of dismissal from Her Majesty's service or a sentence of cashiering or discharge with ignominy"
+  },
+  {
+   "requirement": "'Sentence of imprisonment' includes a sentence of penal servitude, and 'term of imprisonment' is construed accordingly.",
+   "quote": "“sentence of imprisonment” includes a sentence of penal servitude (and “term of imprisonment” is to be read accordingly)"
+  },
+  {
+   "requirement": "'Sentence of service detention' means a sentence of service detention under section 374 of the Armed Forces Act 2006, a corresponding sentence in service disciplinary proceedings, or any directly or indirectly superseded sentence of that kind.",
+   "quote": "“sentence of service detention” means— a sentence of service detention (within the meaning given by section 374 of the Armed Forces Act 2006), or a sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings, orany sentence of a kind superseded (whether directly or indirectly) by a sentence mentioned in paragraph (a)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "term of imprisonment or other specified custodial sentences for Schedule 18 offences exceeding which exclusion from rehabilitation applies",
+   "value": "4 years",
+   "quote": "a term exceeding 4 years"
+  },
+  {
+   "what": "age threshold at date of conviction dividing adult offenders from young offenders in the rehabilitation period Table",
+   "value": "18",
+   "quote": "offenders under 18 at date of conviction"
+  },
+  {
+   "what": "length of custodial sentence qualifying for the first tier of the rehabilitation period Table",
+   "value": "more than 4 years",
+   "quote": "A custodial sentence of more than 4 years"
+  },
+  {
+   "what": "rehabilitation period following sentence completion for adult offenders receiving a custodial sentence of more than 4 years",
+   "value": "7 years",
+   "quote": "The end of the period of 7 years beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "what": "rehabilitation period following sentence completion for offenders under 18 receiving a custodial sentence of more than 4 years",
+   "value": "42 months",
+   "quote": "The end of the period of 42 months beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "what": "minimum sentence length for the second custodial tier of the rehabilitation period Table",
+   "value": "more than 1 year",
+   "quote": "more than 1 year"
+  },
+  {
+   "what": "maximum sentence length for the second custodial tier of the rehabilitation period Table",
+   "value": "4 years",
+   "quote": "up to, or consisting of, 4 years"
+  },
+  {
+   "what": "rehabilitation period following sentence completion for adult offenders receiving a custodial sentence of more than 1 year up to 4 years",
+   "value": "4 years",
+   "quote": "The end of the period of 4 years beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "what": "rehabilitation period following sentence completion for offenders under 18 receiving a custodial sentence of more than 1 year up to 4 years",
+   "value": "2 years",
+   "quote": "The end of the period of 2 years beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "what": "sentence length ceiling for the third custodial tier of the rehabilitation period Table",
+   "value": "1 year",
+   "quote": "1 year or less"
+  },
+  {
+   "what": "rehabilitation period following sentence completion for adult offenders receiving a custodial sentence of 1 year or less",
+   "value": "12 months",
+   "quote": "The end of the period of 12 months beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "what": "rehabilitation period following sentence completion for offenders under 18 receiving a custodial sentence of 1 year or less",
+   "value": "6 months",
+   "quote": "The end of the period of 6 months beginning with the day on which the sentence (including any licence period) is completed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for adult offenders sentenced to removal from Her Majesty's service",
+   "value": "12 months",
+   "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for offenders under 18 sentenced to removal from Her Majesty's service",
+   "value": "6 months",
+   "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "what": "rehabilitation period from sentence completion for adult offenders receiving a sentence of service detention",
+   "value": "12 months",
+   "quote": "The end of the period of 12 months beginning with the day on which the sentence is completed"
+  },
+  {
+   "what": "rehabilitation period from sentence completion for offenders under 18 receiving a sentence of service detention",
+   "value": "6 months",
+   "quote": "The end of the period of 6 months beginning with the day on which the sentence is completed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for adult offenders receiving a severe reprimand or reprimand under the Armed Forces Act 2006",
+   "value": "12 months",
+   "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for offenders under 18 receiving a severe reprimand or reprimand under the Armed Forces Act 2006",
+   "value": "6 months",
+   "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for adult offenders receiving a fine",
+   "value": "12 months",
+   "quote": "The end of the period of 12 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for offenders under 18 receiving a fine",
+   "value": "6 months",
+   "quote": "The end of the period of 6 months beginning with the date of the conviction in respect of which the sentence is imposed"
+  },
+  {
+   "what": "rehabilitation period from conviction date for a relevant order not otherwise dealt with in the Table or subsections (2A) and (2B)",
+   "value": "24 months",
+   "quote": "period of 24 months beginning with the date of conviction"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 56,
+  "elements_verified": 56,
+  "thresholds_proposed": 22,
+  "thresholds_verified": 21
+ }
+}

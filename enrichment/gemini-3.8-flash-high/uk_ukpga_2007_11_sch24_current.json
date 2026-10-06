@@ -1,0 +1,700 @@
+{
+ "key": "uk/ukpga/2007/11/sch24@current",
+ "section": "uk/ukpga/2007/11/sch24",
+ "version": "current",
+ "source_sha256": "782422d802936b53cc20c750e7f34fb9552e5a2de66c99972ada4a531e334c5f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A penalty is payable by a person where that person gives HM Revenue and Customs a listed document and the document contains an inaccuracy that leads to an understatement of tax liability, a false or inflated statement of loss, or a false or inflated repayment claim, and the inaccuracy was careless or deliberate.",
+    "quote": "A penalty is payable by a person (P) where— (a) P gives HMRC a document of a kind listed in the Table below, and (b) Conditions 1 and 2 are satisfied."
+   },
+   {
+    "requirement": "Where a document given to HM Revenue and Customs contains more than one inaccuracy, a penalty is payable for each inaccuracy.",
+    "quote": "Where a document contains more than one inaccuracy, a penalty is payable for each inaccuracy."
+   },
+   {
+    "requirement": "References to a person who gives an oil taxation return or statement include any person who subsequently becomes the responsible person for the taxable field.",
+    "quote": "references in this Schedule to P include any person who, after the giving of the return for a taxable field (within the meaning of that Act), becomes the responsible person for the field"
+   },
+   {
+    "requirement": "A penalty is payable by a third party where another person gives HM Revenue and Customs a listed document containing an understatement, false loss statement, or false repayment claim attributable to the third party deliberately supplying false information or deliberately withholding information with the intention that the document contain the inaccuracy.",
+    "quote": "A penalty is payable by a person (T) where— (a) another person (P) gives HMRC a document of a kind listed in the Table in paragraph 1, (b) the document contains a relevant inaccuracy, and (c) the inaccuracy was attributable to T deliberately supplying false information to P"
+   },
+   {
+    "requirement": "A third-party penalty for supplying false information or withholding information applies regardless of whether the person submitting the document is liable to a penalty for that same inaccuracy.",
+    "quote": "A penalty is payable under this paragraph in respect of an inaccuracy whether or not P is liable to a penalty under paragraph 1 in respect of the same inaccuracy."
+   },
+   {
+    "requirement": "A penalty is payable by a person where an assessment issued by HM Revenue and Customs understates the person's liability to a relevant tax and the person fails to take reasonable steps to notify HM Revenue and Customs within 30 days beginning with the date of the assessment.",
+    "quote": "A penalty is payable by a person (P) where— (a) an assessment issued to P by HMRC understates P's liability to a relevant tax, and (b) P has failed to take reasonable steps to notify HMRC, within the period of 30 days beginning with the date of the assessment, that it is an under-assessment."
+   },
+   {
+    "requirement": "In deciding what steps were reasonable for a person to notify HM Revenue and Customs of an under-assessment, HM Revenue and Customs must consider whether the person knew or should have known about it and what steps would have been reasonable.",
+    "quote": "In deciding what steps (if any) were reasonable HMRC must consider— (a) whether P knew, or should have known, about the under-assessment, and (b) what steps would have been reasonable to take to notify HMRC."
+   },
+   {
+    "requirement": "An inaccuracy in a document is careless if it is due to a failure by the person to take reasonable care.",
+    "quote": "“careless” if the inaccuracy is due to failure by P to take reasonable care"
+   },
+   {
+    "requirement": "An inaccuracy is deliberate but not concealed if it is deliberate on the person's part but the person does not make arrangements to conceal it.",
+    "quote": "“deliberate but not concealed” if the inaccuracy is deliberate on P's part but P does not make arrangements to conceal it"
+   },
+   {
+    "requirement": "An inaccuracy is deliberate and concealed if it is deliberate on the person's part and the person makes arrangements to conceal it.",
+    "quote": "“deliberate and concealed” if the inaccuracy is deliberate on P's part and P makes arrangements to conceal it"
+   },
+   {
+    "requirement": "An inaccuracy that was neither careless nor deliberate when a document was given is treated as careless if the person discovered it at some later time and did not take reasonable steps to inform HM Revenue and Customs.",
+    "quote": "An inaccuracy in a document given by P to HMRC, which was neither careless nor deliberate on P's part when the document was given, is to be treated as careless if P— (a) discovered the inaccuracy at some later time, and (b) did not take reasonable steps to inform HMRC."
+   },
+   {
+    "requirement": "An inaccuracy arising from submitting a document on the basis that avoidance arrangements had an effect which they did not have is presumed to be careless unless it was deliberate or the person satisfies HM Revenue and Customs or the tribunal that reasonable care was taken.",
+    "quote": "It is to be presumed that the inaccuracy was careless, within the meaning of paragraph 3, unless— (a) the inaccuracy was deliberate on P's part, or (b) P satisfies HMRC or (on an appeal notified to the tribunal) the tribunal that P took reasonable care to avoid inaccuracy."
+   },
+   {
+    "requirement": "In evaluating whether a person took reasonable care to avoid an inaccuracy relating to avoidance arrangements, HM Revenue and Customs and the tribunal must take no account of reliance on advice that is disqualified.",
+    "quote": "In considering whether P took reasonable care to avoid inaccuracy, HMRC and (on an appeal notified to the tribunal) the tribunal must take no account of any evidence of any reliance by P on advice where the advice is disqualified."
+   },
+   {
+    "requirement": "Advice regarding avoidance arrangements is disqualified if given by an interested person, given pursuant to arrangements with an interested person, given by someone lacking appropriate expertise, given without taking account of individual circumstances, or addressed to someone else, subject to statutory exceptions.",
+    "quote": "Advice is “disqualified” if any of the following applies— (a) the advice was given to P by an interested person; (b) the advice was given to P as a result of arrangements made between an interested person and the person who gave the advice; (c) the person who gave the advice did not have appropriate expertise for giving the advice; (d) the advice took no account of P's individual circumstances; (e) the advice was addressed to, or given to, a person other than P"
+   },
+   {
+    "requirement": "Advice is not disqualified under paragraph 3A(4)(a) to (c) if at the relevant time the person took reasonable steps to find out whether the disqualifying condition applied and reasonably believed that it did not.",
+    "quote": "the advice is not disqualified under that paragraph if at the relevant time P— (a) has taken reasonable steps to find out whether the advice falls within that paragraph, and (b) reasonably believes that it does not."
+   },
+   {
+    "requirement": "Advice given by a person who facilitated avoidance arrangements for consideration is not disqualified if that advisor had appropriate expertise, the advice took account of individual circumstances, and Condition E is met while none of Conditions A to D are or have been met.",
+    "quote": "the advice is not disqualified under that paragraph if— (a) the person giving the advice had appropriate expertise for giving it, (b) the advice took account of P's individual circumstances, and (c) at the time when the question whether the advice is disqualified arises— (i) Condition E in paragraph 3B(5) is met in relation to the avoidance arrangements, but (ii) none of Conditions A to D in paragraph 3B(5) is or has at any time been met in relation to them."
+   },
+   {
+    "requirement": "Arrangements are not avoidance arrangements if they accord with established practice and HM Revenue and Customs had indicated acceptance of that practice when entered into, unless any of Conditions A to E are met.",
+    "quote": "Arrangements are not avoidance arrangements for the purposes of paragraph 3A if (although they fall within sub-paragraph (2))— (a) they are arrangements which accord with established practice, and (b) HMRC had, at the time the arrangements were entered into, indicated its acceptance of that practice."
+   },
+   {
+    "requirement": "An inaccuracy involving transfer pricing calculations for an MNE Group meeting threshold requirements is presumed to be careless where a relevant person failed to comply with specified statutory record-keeping rules or an information notice, unless deliberate or reasonable care is proven.",
+    "quote": "It is to be presumed that the inaccuracy was careless, within the meaning of paragraph 3, unless— (a) the inaccuracy was deliberate on P’s part, or (b) P satisfies HMRC or (on an appeal notified to the tribunal) the tribunal that P took reasonable care to avoid the inaccuracy."
+   },
+   {
+    "requirement": "If a single inaccuracy falls into more than one territorial category, it is treated as separate inaccuracies in each relevant category and potential lost revenue is calculated separately.",
+    "quote": "If a single inaccuracy is in more than one category (each referred to as a “relevant category”)— (a) it is to be treated for the purposes of this Schedule as if it were separate inaccuracies, one in each relevant category according to the matters or transfers that it involves, and (b) the potential lost revenue is to be calculated separately in respect of each separate inaccuracy."
+   },
+   {
+    "requirement": "Potential lost revenue is the additional tax amount due or payable as a result of correcting the inaccuracy or assessment, including erroneously repaid tax or amounts that would have been repayable.",
+    "quote": "“The potential lost revenue” in respect of an inaccuracy in a document (including an inaccuracy attributable to a supply of false information or withholding of information) or a failure to notify an under-assessment is the additional amount due or payable in respect of tax as a result of correcting the inaccuracy or assessment."
+   },
+   {
+    "requirement": "In calculating potential lost revenue, group relief, deferred loan relief under section 458 of the Corporation Tax Act 2010, and non-permitted CIR alterations must be ignored, except that penalties may still apply to inaccurate relief claims.",
+    "quote": "The following shall be ignored in calculating potential lost revenue under this paragraph— (za) any CIR alteration, other than a permitted reduction, in respect of the tax period to which the document relates, (a) group relief, and (b) any relief under section 458 of CTA 2010"
+   },
+   {
+    "requirement": "Where potential lost revenue calculation depends on the order of correcting multiple inaccuracies, careless inaccuracies are corrected before deliberate ones, and deliberate but not concealed inaccuracies are corrected before deliberate and concealed ones.",
+    "quote": "careless inaccuracies shall be taken to be corrected before deliberate inaccuracies, and (b) deliberate but not concealed inaccuracies shall be taken to be corrected before deliberate and concealed inaccuracies."
+   },
+   {
+    "requirement": "Overstatements in documents relating to the same tax period are set against understatements in the order of non-penalised understatements, careless understatements, deliberate but not concealed understatements, and deliberate and concealed understatements.",
+    "quote": "overstatements shall be set against understatements in the following order— (a) understatements in respect of which P is not liable to a penalty, (b) careless understatements, (c) deliberate but not concealed understatements, and (d) deliberate and concealed understatements."
+   },
+   {
+    "requirement": "Potential lost revenue calculation for a person cannot take account of potential overpayments by another person unless an enactment requires or permits tax liability adjustment by reference to that person.",
+    "quote": "no account shall be taken of the fact that a potential loss of revenue from P is or may be balanced by a potential over-payment by another person (except to the extent that an enactment requires or permits a person's tax liability to be adjusted by reference to P's)."
+   },
+   {
+    "requirement": "Where an inaccuracy wrongly records a direct tax loss that has not been wholly used, potential lost revenue is the tax amount resulting from the used portion plus 10 percent of the unused portion.",
+    "quote": "the potential lost revenue is— (a) the potential lost revenue calculated in accordance with paragraph 5 in respect of any part of the loss that has been used to reduce the amount due or payable in respect of tax, plus (b) 10% of any part that has not."
+   },
+   {
+    "requirement": "The potential lost revenue in respect of a wrongly recorded loss is nil if there is no reasonable prospect of the loss being used to support a claim to reduce a tax liability of any person.",
+    "quote": "The potential lost revenue in respect of a loss is nil where, because of the nature of the loss or P's circumstances, there is no reasonable prospect of the loss being used to support a claim to reduce a tax liability (of any person)."
+   },
+   {
+    "requirement": "Where an inaccuracy causes tax to be declared later than it should have been and does not involve an incorrectly recorded loss, potential lost revenue is 5 percent of delayed tax per year of delay.",
+    "quote": "Where an inaccuracy resulted in an amount of tax being declared later than it should have been (“the delayed tax”), the potential lost revenue is— (a) 5% of the delayed tax for each year of the delay, or (b) a percentage of the delayed tax, for each separate period of delay of less than a year, equating to 5% per year."
+   },
+   {
+    "requirement": "HM Revenue and Customs must reduce a standard penalty percentage to reflect the quality of disclosure, but cannot reduce it below the applicable statutory minimum percentage for prompted or unprompted disclosure.",
+    "quote": "If a person who would otherwise be liable to a penalty of a percentage shown in column 1 of the Table (a “standard percentage”) has made a disclosure, HMRC must reduce the standard percentage to one that reflects the quality of disclosure. (2) But the standard percentage may not be reduced to a percentage that is below the minimum shown for it"
+   },
+   {
+    "requirement": "HM Revenue and Customs may reduce, stay, or compromise a penalty under paragraph 1, 1A, or 2 because of special circumstances, which do not include ability to pay or potential over-payments by another taxpayer.",
+    "quote": "If they think it right because of special circumstances, HMRC may reduce a penalty under paragraph 1, 1A or 2. (2) In sub-paragraph (1) “special circumstances” does not include— (a) ability to pay, or (b) the fact that a potential loss of revenue from one taxpayer is balanced by a potential over-payment by another."
+   },
+   {
+    "requirement": "The amount of a penalty under paragraph 1 or 2 must be reduced by the amount of any other penalty or late payment surcharge imposed on the person determined by reference to the same tax liability, excluding follower notice or asset-based penalties.",
+    "quote": "The amount of a penalty for which P is liable under paragraph 1 or 2 in respect of a document relating to a tax period shall be reduced by the amount of any other penalty incurred by P, or any surcharge for late payment of tax imposed on P, if the amount of the penalty or surcharge is determined by reference to the same tax liability."
+   },
+   {
+    "requirement": "Where penalties are imposed under both paragraph 1 and paragraph 1A for the same inaccuracy, the aggregate penalties must not exceed 100 percent, 150 percent, or 200 percent of potential lost revenue depending on whether the inaccuracy is category 1, category 2, or category 3.",
+    "quote": "Where penalties are imposed under paragraphs 1 and 1A in respect of the same inaccuracy, the aggregate of the amounts of the penalties must not exceed the relevant percentage of the potential lost revenue."
+   },
+   {
+    "requirement": "HM Revenue and Customs must assess a penalty, notify the person, and state the tax period or relevant tax year in the notice, and the penalty must be paid within 30 days beginning with the day of notification.",
+    "quote": "Where a person becomes liable for a penalty under paragraph 1, 1A or 2 HMRC shall— (a) assess the penalty, (b) notify the person, and (c) state in the notice a tax period in respect of which the penalty is assessed (subject to sub-paragraph (1ZB))."
+   },
+   {
+    "requirement": "An assessment of a penalty must be made within 12 months of the end of the appeal period for the correcting decision or assessment, or within 12 months of the date the inaccuracy or understatement is corrected.",
+    "quote": "An assessment of a penalty under paragraph 1 or 1A must be made before the end of the period of 12 months beginning with— (a) the end of the appeal period for the decision correcting the inaccuracy, or (b) if there is no assessment to the tax concerned within paragraph (a), the date on which the inaccuracy is corrected."
+   },
+   {
+    "requirement": "HM Revenue and Customs may suspend all or part of a penalty for a careless inaccuracy under paragraph 1 for up to two years with conditions, but only if compliance would help the person avoid further careless inaccuracy penalties.",
+    "quote": "HMRC may suspend all or part of a penalty for a careless inaccuracy under paragraph 1 by notice in writing to P. ... only if compliance with a condition of suspension would help P to avoid becoming liable to further penalties under paragraph 1 for careless inaccuracy."
+   },
+   {
+    "requirement": "A suspended careless penalty is cancelled if conditions are complied with by the expiry of the suspension period, but becomes payable if conditions are breached or if the person incurs another paragraph 1 penalty during suspension.",
+    "quote": "if P satisfies HMRC that the conditions of suspension have been complied with, the suspended penalty or part is cancelled, and (b) otherwise, the suspended penalty or part becomes payable. (6) If, during the period of suspension of all or part of a penalty under paragraph 1, P becomes liable for another penalty under that paragraph, the suspended penalty or part becomes payable."
+   },
+   {
+    "requirement": "A person may appeal against HM Revenue and Customs' decision that a penalty is payable, against the penalty amount, against a refusal to suspend a penalty, or against the suspension conditions.",
+    "quote": "A person may appeal against a decision of HMRC that a penalty is payable by the person. (2) A person may appeal against a decision of HMRC as to the amount of a penalty payable by the person. (3) A person may appeal against a decision of HMRC not to suspend a penalty payable by the person. (4) A person may appeal against a decision of HMRC setting conditions of suspension of a penalty payable by the person."
+   },
+   {
+    "requirement": "A taxpayer is not liable to a penalty for acts or omissions of an agent where the taxpayer satisfies HM Revenue and Customs that reasonable care was taken to avoid the inaccuracy or unreasonable failure.",
+    "quote": "Despite sub-paragraphs (1) and (2), P is not liable to a penalty under paragraph 1 or 2 in respect of anything done or omitted by P's agent where P satisfies HMRC that P took reasonable care to avoid inaccuracy (in relation to paragraph 1) or unreasonable failure (in relation to paragraph 2)."
+   },
+   {
+    "requirement": "Where a corporate body incurs a deliberate inaccuracy penalty attributable to an officer, HM Revenue and Customs may require the officer to pay up to 100 percent of the penalty by written notice, without recovering more than 100 percent in total.",
+    "quote": "Where a penalty under paragraph 1 is payable by a company for a deliberate inaccuracy which was attributable to an officer of the company, the officer is liable to pay such portion of the penalty (which may be 100%) as HMRC may specify by written notice to the officer."
+   },
+   {
+    "requirement": "Where a partner incurs a penalty for an inaccuracy in a partnership return affecting the tax of another partner, that other partner is also liable to a partner's penalty calculated by reference to their proportion of the tax liability.",
+    "quote": "Where the inaccuracy affects the amount of tax due or payable by a partner of P, the partner is also liable to a penalty (“a partner's penalty”)."
+   },
+   {
+    "requirement": "A person is not liable to a penalty under paragraph 1, 1A, or 2 in respect of an inaccuracy or failure for which that person has been convicted of a criminal offence.",
+    "quote": "A person is not liable to a penalty under paragraph 1 , 1A or 2 in respect of an inaccuracy or failure in respect of which the person has been convicted of an offence."
+   },
+   {
+    "requirement": "A person is not liable to a penalty under paragraph 1 for an inaccuracy involving a VAT right denied under section 69C of VATA 1994 if assessed to a penalty under that section.",
+    "quote": "A person is not liable to a penalty under paragraph 1 in respect of an inaccuracy if— (a) the inaccuracy involves a claim by the person to exercise or rely on a VAT right (in relation to a supply) that has been denied or refused by HMRC as mentioned in subsection (4) of section 69C of VATA 1994, and (b) the person has been assessed to a penalty under that section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period to notify HM Revenue and Customs of an under-assessment",
+    "value": "30 days",
+    "quote": "within the period of 30 days beginning with the date of the assessment"
+   },
+   {
+    "what": "Standard penalty percentage for Category 1 careless action",
+    "value": "30%",
+    "quote": "for careless action, 30% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 1 deliberate but not concealed action",
+    "value": "70%",
+    "quote": "for deliberate but not concealed action, 70% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 1 deliberate and concealed action",
+    "value": "100%",
+    "quote": "for deliberate and concealed action, 100% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 2 careless action",
+    "value": "45%",
+    "quote": "for careless action, 45% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 2 deliberate but not concealed action",
+    "value": "105%",
+    "quote": "for deliberate but not concealed action, 105% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 2 deliberate and concealed action",
+    "value": "150%",
+    "quote": "for deliberate and concealed action, 150% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 3 careless action",
+    "value": "60%",
+    "quote": "for careless action, 60% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 3 deliberate but not concealed action",
+    "value": "140%",
+    "quote": "for deliberate but not concealed action, 140% of the potential lost revenue"
+   },
+   {
+    "what": "Standard penalty percentage for Category 3 deliberate and concealed action",
+    "value": "200%",
+    "quote": "for deliberate and concealed action, 200% of the potential lost revenue"
+   },
+   {
+    "what": "Penalty percentage for paragraph 1A false information or withholding",
+    "value": "100%",
+    "quote": "The penalty payable under paragraph 1A is 100% of the potential lost revenue."
+   },
+   {
+    "what": "Penalty percentage for paragraph 2 failure to notify under-assessment",
+    "value": "30%",
+    "quote": "The penalty payable under paragraph 2 is 30% of the potential lost revenue."
+   },
+   {
+    "what": "Percentage of unused loss included in potential lost revenue",
+    "value": "10%",
+    "quote": "10% of any part that has not"
+   },
+   {
+    "what": "Annual percentage of delayed tax for potential lost revenue calculation",
+    "value": "5%",
+    "quote": "5% of the delayed tax for each year of the delay"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 30% standard penalty in domestic disclosure table",
+    "value": "15%",
+    "quote": "30%\t15%\t0%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 30% standard penalty in domestic disclosure table",
+    "value": "0%",
+    "quote": "30%\t15%\t0%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 70% standard penalty in domestic disclosure table",
+    "value": "35%",
+    "quote": "70%\t35%\t20%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 70% standard penalty in domestic disclosure table",
+    "value": "20%",
+    "quote": "70%\t35%\t20%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 100% standard penalty in domestic disclosure table",
+    "value": "50%",
+    "quote": "100%\t50%\t30%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 100% standard penalty in domestic disclosure table",
+    "value": "30%",
+    "quote": "100%\t50%\t30%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 37.5% standard penalty in offshore disclosure table",
+    "value": "18.75%",
+    "quote": "37.5%\t18.75%\t0%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 45% standard penalty in offshore disclosure table",
+    "value": "22.5%",
+    "quote": "45%\t22.5%\t0%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 60% standard penalty in offshore disclosure table",
+    "value": "30%",
+    "quote": "60%\t30%\t0%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 70% standard penalty in offshore disclosure table",
+    "value": "45%",
+    "quote": "70%\t45%\t30%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 70% standard penalty in offshore disclosure table",
+    "value": "30%",
+    "quote": "70%\t45%\t30%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 87.5% standard penalty in offshore disclosure table",
+    "value": "53.75%",
+    "quote": "87.5%\t53.75%\t35%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 87.5% standard penalty in offshore disclosure table",
+    "value": "35%",
+    "quote": "87.5%\t53.75%\t35%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 100% standard penalty in offshore disclosure table",
+    "value": "60%",
+    "quote": "100%\t60%\t40%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 100% standard penalty in offshore disclosure table",
+    "value": "40%",
+    "quote": "100%\t60%\t40%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 105% standard penalty in offshore disclosure table",
+    "value": "62.5%",
+    "quote": "105%\t62.5%\t40%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 105% standard penalty in offshore disclosure table",
+    "value": "40%",
+    "quote": "105%\t62.5%\t40%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 125% standard penalty in offshore disclosure table",
+    "value": "72.5%",
+    "quote": "125%\t72.5%\t50%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 125% standard penalty in offshore disclosure table",
+    "value": "50%",
+    "quote": "125%\t72.5%\t50%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 140% standard penalty in offshore disclosure table",
+    "value": "80%",
+    "quote": "140%\t80%\t50%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 140% standard penalty in offshore disclosure table",
+    "value": "50%",
+    "quote": "140%\t80%\t50%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 150% standard penalty in offshore disclosure table",
+    "value": "85%",
+    "quote": "150%\t85%\t55%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 150% standard penalty in offshore disclosure table",
+    "value": "55%",
+    "quote": "150%\t85%\t55%"
+   },
+   {
+    "what": "Minimum prompted penalty percentage for 200% standard penalty in offshore disclosure table",
+    "value": "110%",
+    "quote": "200%\t110%\t70%"
+   },
+   {
+    "what": "Minimum unprompted penalty percentage for 200% standard penalty in offshore disclosure table",
+    "value": "70%",
+    "quote": "200%\t110%\t70%"
+   },
+   {
+    "what": "Aggregate penalty cap for Category 1 inaccuracy under paragraphs 1 and 1A",
+    "value": "100%",
+    "quote": "if the penalty imposed under paragraph 1 is for an inaccuracy in category 1, 100%"
+   },
+   {
+    "what": "Aggregate penalty cap for Category 2 inaccuracy under paragraphs 1 and 1A",
+    "value": "150%",
+    "quote": "if the penalty imposed under paragraph 1 is for an inaccuracy in category 2, 150%"
+   },
+   {
+    "what": "Aggregate penalty cap for Category 3 inaccuracy under paragraphs 1 and 1A",
+    "value": "200%",
+    "quote": "if the penalty imposed under paragraph 1 is for an inaccuracy in category 3, 200%"
+   },
+   {
+    "what": "Period within which a penalty notification must be paid",
+    "value": "30 days",
+    "quote": "before the end of the period of 30 days beginning with the day on which notification of the penalty is issued"
+   },
+   {
+    "what": "Period within which HM Revenue and Customs must assess a penalty under paragraph 1 or 1A",
+    "value": "12 months",
+    "quote": "before the end of the period of 12 months beginning with"
+   },
+   {
+    "what": "Period within which HM Revenue and Customs must assess a penalty under paragraph 2",
+    "value": "12 months",
+    "quote": "before the end of the period of 12 months beginning with"
+   },
+   {
+    "what": "Maximum duration of penalty suspension",
+    "value": "two years",
+    "quote": "a period of suspension not exceeding two years"
+   },
+   {
+    "what": "Maximum portion of company penalty that may be specified for an officer",
+    "value": "100%",
+    "quote": "such portion of the penalty (which may be 100%) as HMRC may specify"
+   },
+   {
+    "what": "Period within which a company officer must pay a specified penalty portion",
+    "value": "30 days",
+    "quote": "before the end of the period of 30 days beginning with the day on which the notice is given"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A penalty is payable by a person where that person gives HM Revenue and Customs a listed document and the document contains an inaccuracy that leads to an understatement of tax liability, a false or inflated statement of loss, or a false or inflated repayment claim, and the inaccuracy was careless or deliberate.",
+   "quote": "A penalty is payable by a person (P) where— (a) P gives HMRC a document of a kind listed in the Table below, and (b) Conditions 1 and 2 are satisfied."
+  },
+  {
+   "requirement": "Where a document given to HM Revenue and Customs contains more than one inaccuracy, a penalty is payable for each inaccuracy.",
+   "quote": "Where a document contains more than one inaccuracy, a penalty is payable for each inaccuracy."
+  },
+  {
+   "requirement": "References to a person who gives an oil taxation return or statement include any person who subsequently becomes the responsible person for the taxable field.",
+   "quote": "references in this Schedule to P include any person who, after the giving of the return for a taxable field (within the meaning of that Act), becomes the responsible person for the field"
+  },
+  {
+   "requirement": "A penalty is payable by a third party where another person gives HM Revenue and Customs a listed document containing an understatement, false loss statement, or false repayment claim attributable to the third party deliberately supplying false information or deliberately withholding information with the intention that the document contain the inaccuracy.",
+   "quote": "A penalty is payable by a person (T) where— (a) another person (P) gives HMRC a document of a kind listed in the Table in paragraph 1, (b) the document contains a relevant inaccuracy, and (c) the inaccuracy was attributable to T deliberately supplying false information to P"
+  },
+  {
+   "requirement": "A third-party penalty for supplying false information or withholding information applies regardless of whether the person submitting the document is liable to a penalty for that same inaccuracy.",
+   "quote": "A penalty is payable under this paragraph in respect of an inaccuracy whether or not P is liable to a penalty under paragraph 1 in respect of the same inaccuracy."
+  },
+  {
+   "requirement": "A penalty is payable by a person where an assessment issued by HM Revenue and Customs understates the person's liability to a relevant tax and the person fails to take reasonable steps to notify HM Revenue and Customs within 30 days beginning with the date of the assessment.",
+   "quote": "A penalty is payable by a person (P) where— (a) an assessment issued to P by HMRC understates P's liability to a relevant tax, and (b) P has failed to take reasonable steps to notify HMRC, within the period of 30 days beginning with the date of the assessment, that it is an under-assessment."
+  },
+  {
+   "requirement": "In deciding what steps were reasonable for a person to notify HM Revenue and Customs of an under-assessment, HM Revenue and Customs must consider whether the person knew or should have known about it and what steps would have been reasonable.",
+   "quote": "In deciding what steps (if any) were reasonable HMRC must consider— (a) whether P knew, or should have known, about the under-assessment, and (b) what steps would have been reasonable to take to notify HMRC."
+  },
+  {
+   "requirement": "An inaccuracy in a document is careless if it is due to a failure by the person to take reasonable care.",
+   "quote": "“careless” if the inaccuracy is due to failure by P to take reasonable care"
+  },
+  {
+   "requirement": "An inaccuracy is deliberate but not concealed if it is deliberate on the person's part but the person does not make arrangements to conceal it.",
+   "quote": "“deliberate but not concealed” if the inaccuracy is deliberate on P's part but P does not make arrangements to conceal it"
+  },
+  {
+   "requirement": "An inaccuracy is deliberate and concealed if it is deliberate on the person's part and the person makes arrangements to conceal it.",
+   "quote": "“deliberate and concealed” if the inaccuracy is deliberate on P's part and P makes arrangements to conceal it"
+  },
+  {
+   "requirement": "An inaccuracy that was neither careless nor deliberate when a document was given is treated as careless if the person discovered it at some later time and did not take reasonable steps to inform HM Revenue and Customs.",
+   "quote": "An inaccuracy in a document given by P to HMRC, which was neither careless nor deliberate on P's part when the document was given, is to be treated as careless if P— (a) discovered the inaccuracy at some later time, and (b) did not take reasonable steps to inform HMRC."
+  },
+  {
+   "requirement": "An inaccuracy arising from submitting a document on the basis that avoidance arrangements had an effect which they did not have is presumed to be careless unless it was deliberate or the person satisfies HM Revenue and Customs or the tribunal that reasonable care was taken.",
+   "quote": "It is to be presumed that the inaccuracy was careless, within the meaning of paragraph 3, unless— (a) the inaccuracy was deliberate on P's part, or (b) P satisfies HMRC or (on an appeal notified to the tribunal) the tribunal that P took reasonable care to avoid inaccuracy."
+  },
+  {
+   "requirement": "In evaluating whether a person took reasonable care to avoid an inaccuracy relating to avoidance arrangements, HM Revenue and Customs and the tribunal must take no account of reliance on advice that is disqualified.",
+   "quote": "In considering whether P took reasonable care to avoid inaccuracy, HMRC and (on an appeal notified to the tribunal) the tribunal must take no account of any evidence of any reliance by P on advice where the advice is disqualified."
+  },
+  {
+   "requirement": "Advice regarding avoidance arrangements is disqualified if given by an interested person, given pursuant to arrangements with an interested person, given by someone lacking appropriate expertise, given without taking account of individual circumstances, or addressed to someone else, subject to statutory exceptions.",
+   "quote": "Advice is “disqualified” if any of the following applies— (a) the advice was given to P by an interested person; (b) the advice was given to P as a result of arrangements made between an interested person and the person who gave the advice; (c) the person who gave the advice did not have appropriate expertise for giving the advice; (d) the advice took no account of P's individual circumstances; (e) the advice was addressed to, or given to, a person other than P"
+  },
+  {
+   "requirement": "Advice is not disqualified under paragraph 3A(4)(a) to (c) if at the relevant time the person took reasonable steps to find out whether the disqualifying condition applied and reasonably believed that it did not.",
+   "quote": "the advice is not disqualified under that paragraph if at the relevant time P— (a) has taken reasonable steps to find out whether the advice falls within that paragraph, and (b) reasonably believes that it does not."
+  },
+  {
+   "requirement": "Advice given by a person who facilitated avoidance arrangements for consideration is not disqualified if that advisor had appropriate expertise, the advice took account of individual circumstances, and Condition E is met while none of Conditions A to D are or have been met.",
+   "quote": "the advice is not disqualified under that paragraph if— (a) the person giving the advice had appropriate expertise for giving it, (b) the advice took account of P's individual circumstances, and (c) at the time when the question whether the advice is disqualified arises— (i) Condition E in paragraph 3B(5) is met in relation to the avoidance arrangements, but (ii) none of Conditions A to D in paragraph 3B(5) is or has at any time been met in relation to them."
+  },
+  {
+   "requirement": "Arrangements are not avoidance arrangements if they accord with established practice and HM Revenue and Customs had indicated acceptance of that practice when entered into, unless any of Conditions A to E are met.",
+   "quote": "Arrangements are not avoidance arrangements for the purposes of paragraph 3A if (although they fall within sub-paragraph (2))— (a) they are arrangements which accord with established practice, and (b) HMRC had, at the time the arrangements were entered into, indicated its acceptance of that practice."
+  },
+  {
+   "requirement": "An inaccuracy involving transfer pricing calculations for an MNE Group meeting threshold requirements is presumed to be careless where a relevant person failed to comply with specified statutory record-keeping rules or an information notice, unless deliberate or reasonable care is proven.",
+   "quote": "It is to be presumed that the inaccuracy was careless, within the meaning of paragraph 3, unless— (a) the inaccuracy was deliberate on P’s part, or (b) P satisfies HMRC or (on an appeal notified to the tribunal) the tribunal that P took reasonable care to avoid the inaccuracy."
+  },
+  {
+   "requirement": "If a single inaccuracy falls into more than one territorial category, it is treated as separate inaccuracies in each relevant category and potential lost revenue is calculated separately.",
+   "quote": "If a single inaccuracy is in more than one category (each referred to as a “relevant category”)— (a) it is to be treated for the purposes of this Schedule as if it were separate inaccuracies, one in each relevant category according to the matters or transfers that it involves, and (b) the potential lost revenue is to be calculated separately in respect of each separate inaccuracy."
+  },
+  {
+   "requirement": "Potential lost revenue is the additional tax amount due or payable as a result of correcting the inaccuracy or assessment, including erroneously repaid tax or amounts that would have been repayable.",
+   "quote": "“The potential lost revenue” in respect of an inaccuracy in a document (including an inaccuracy attributable to a supply of false information or withholding of information) or a failure to notify an under-assessment is the additional amount due or payable in respect of tax as a result of correcting the inaccuracy or assessment."
+  },
+  {
+   "requirement": "In calculating potential lost revenue, group relief, deferred loan relief under section 458 of the Corporation Tax Act 2010, and non-permitted CIR alterations must be ignored, except that penalties may still apply to inaccurate relief claims.",
+   "quote": "The following shall be ignored in calculating potential lost revenue under this paragraph— (za) any CIR alteration, other than a permitted reduction, in respect of the tax period to which the document relates, (a) group relief, and (b) any relief under section 458 of CTA 2010"
+  },
+  {
+   "requirement": "Where potential lost revenue calculation depends on the order of correcting multiple inaccuracies, careless inaccuracies are corrected before deliberate ones, and deliberate but not concealed inaccuracies are corrected before deliberate and concealed ones.",
+   "quote": "careless inaccuracies shall be taken to be corrected before deliberate inaccuracies, and (b) deliberate but not concealed inaccuracies shall be taken to be corrected before deliberate and concealed inaccuracies."
+  },
+  {
+   "requirement": "Overstatements in documents relating to the same tax period are set against understatements in the order of non-penalised understatements, careless understatements, deliberate but not concealed understatements, and deliberate and concealed understatements.",
+   "quote": "overstatements shall be set against understatements in the following order— (a) understatements in respect of which P is not liable to a penalty, (b) careless understatements, (c) deliberate but not concealed understatements, and (d) deliberate and concealed understatements."
+  },
+  {
+   "requirement": "Potential lost revenue calculation for a person cannot take account of potential overpayments by another person unless an enactment requires or permits tax liability adjustment by reference to that person.",
+   "quote": "no account shall be taken of the fact that a potential loss of revenue from P is or may be balanced by a potential over-payment by another person (except to the extent that an enactment requires or permits a person's tax liability to be adjusted by reference to P's)."
+  },
+  {
+   "requirement": "Where an inaccuracy wrongly records a direct tax loss that has not been wholly used, potential lost revenue is the tax amount resulting from the used portion plus 10 percent of the unused portion.",
+   "quote": "the potential lost revenue is— (a) the potential lost revenue calculated in accordance with paragraph 5 in respect of any part of the loss that has been used to reduce the amount due or payable in respect of tax, plus (b) 10% of any part that has not."
+  },
+  {
+   "requirement": "The potential lost revenue in respect of a wrongly recorded loss is nil if there is no reasonable prospect of the loss being used to support a claim to reduce a tax liability of any person.",
+   "quote": "The potential lost revenue in respect of a loss is nil where, because of the nature of the loss or P's circumstances, there is no reasonable prospect of the loss being used to support a claim to reduce a tax liability (of any person)."
+  },
+  {
+   "requirement": "Where an inaccuracy causes tax to be declared later than it should have been and does not involve an incorrectly recorded loss, potential lost revenue is 5 percent of delayed tax per year of delay.",
+   "quote": "Where an inaccuracy resulted in an amount of tax being declared later than it should have been (“the delayed tax”), the potential lost revenue is— (a) 5% of the delayed tax for each year of the delay, or (b) a percentage of the delayed tax, for each separate period of delay of less than a year, equating to 5% per year."
+  },
+  {
+   "requirement": "HM Revenue and Customs may reduce, stay, or compromise a penalty under paragraph 1, 1A, or 2 because of special circumstances, which do not include ability to pay or potential over-payments by another taxpayer.",
+   "quote": "If they think it right because of special circumstances, HMRC may reduce a penalty under paragraph 1, 1A or 2. (2) In sub-paragraph (1) “special circumstances” does not include— (a) ability to pay, or (b) the fact that a potential loss of revenue from one taxpayer is balanced by a potential over-payment by another."
+  },
+  {
+   "requirement": "The amount of a penalty under paragraph 1 or 2 must be reduced by the amount of any other penalty or late payment surcharge imposed on the person determined by reference to the same tax liability, excluding follower notice or asset-based penalties.",
+   "quote": "The amount of a penalty for which P is liable under paragraph 1 or 2 in respect of a document relating to a tax period shall be reduced by the amount of any other penalty incurred by P, or any surcharge for late payment of tax imposed on P, if the amount of the penalty or surcharge is determined by reference to the same tax liability."
+  },
+  {
+   "requirement": "Where penalties are imposed under both paragraph 1 and paragraph 1A for the same inaccuracy, the aggregate penalties must not exceed 100 percent, 150 percent, or 200 percent of potential lost revenue depending on whether the inaccuracy is category 1, category 2, or category 3.",
+   "quote": "Where penalties are imposed under paragraphs 1 and 1A in respect of the same inaccuracy, the aggregate of the amounts of the penalties must not exceed the relevant percentage of the potential lost revenue."
+  },
+  {
+   "requirement": "HM Revenue and Customs must assess a penalty, notify the person, and state the tax period or relevant tax year in the notice, and the penalty must be paid within 30 days beginning with the day of notification.",
+   "quote": "Where a person becomes liable for a penalty under paragraph 1, 1A or 2 HMRC shall— (a) assess the penalty, (b) notify the person, and (c) state in the notice a tax period in respect of which the penalty is assessed (subject to sub-paragraph (1ZB))."
+  },
+  {
+   "requirement": "An assessment of a penalty must be made within 12 months of the end of the appeal period for the correcting decision or assessment, or within 12 months of the date the inaccuracy or understatement is corrected.",
+   "quote": "An assessment of a penalty under paragraph 1 or 1A must be made before the end of the period of 12 months beginning with— (a) the end of the appeal period for the decision correcting the inaccuracy, or (b) if there is no assessment to the tax concerned within paragraph (a), the date on which the inaccuracy is corrected."
+  },
+  {
+   "requirement": "A suspended careless penalty is cancelled if conditions are complied with by the expiry of the suspension period, but becomes payable if conditions are breached or if the person incurs another paragraph 1 penalty during suspension.",
+   "quote": "if P satisfies HMRC that the conditions of suspension have been complied with, the suspended penalty or part is cancelled, and (b) otherwise, the suspended penalty or part becomes payable. (6) If, during the period of suspension of all or part of a penalty under paragraph 1, P becomes liable for another penalty under that paragraph, the suspended penalty or part becomes payable."
+  },
+  {
+   "requirement": "A person may appeal against HM Revenue and Customs' decision that a penalty is payable, against the penalty amount, against a refusal to suspend a penalty, or against the suspension conditions.",
+   "quote": "A person may appeal against a decision of HMRC that a penalty is payable by the person. (2) A person may appeal against a decision of HMRC as to the amount of a penalty payable by the person. (3) A person may appeal against a decision of HMRC not to suspend a penalty payable by the person. (4) A person may appeal against a decision of HMRC setting conditions of suspension of a penalty payable by the person."
+  },
+  {
+   "requirement": "A taxpayer is not liable to a penalty for acts or omissions of an agent where the taxpayer satisfies HM Revenue and Customs that reasonable care was taken to avoid the inaccuracy or unreasonable failure.",
+   "quote": "Despite sub-paragraphs (1) and (2), P is not liable to a penalty under paragraph 1 or 2 in respect of anything done or omitted by P's agent where P satisfies HMRC that P took reasonable care to avoid inaccuracy (in relation to paragraph 1) or unreasonable failure (in relation to paragraph 2)."
+  },
+  {
+   "requirement": "Where a corporate body incurs a deliberate inaccuracy penalty attributable to an officer, HM Revenue and Customs may require the officer to pay up to 100 percent of the penalty by written notice, without recovering more than 100 percent in total.",
+   "quote": "Where a penalty under paragraph 1 is payable by a company for a deliberate inaccuracy which was attributable to an officer of the company, the officer is liable to pay such portion of the penalty (which may be 100%) as HMRC may specify by written notice to the officer."
+  },
+  {
+   "requirement": "Where a partner incurs a penalty for an inaccuracy in a partnership return affecting the tax of another partner, that other partner is also liable to a partner's penalty calculated by reference to their proportion of the tax liability.",
+   "quote": "Where the inaccuracy affects the amount of tax due or payable by a partner of P, the partner is also liable to a penalty (“a partner's penalty”)."
+  },
+  {
+   "requirement": "A person is not liable to a penalty under paragraph 1, 1A, or 2 in respect of an inaccuracy or failure for which that person has been convicted of a criminal offence.",
+   "quote": "A person is not liable to a penalty under paragraph 1 , 1A or 2 in respect of an inaccuracy or failure in respect of which the person has been convicted of an offence."
+  },
+  {
+   "requirement": "A person is not liable to a penalty under paragraph 1 for an inaccuracy involving a VAT right denied under section 69C of VATA 1994 if assessed to a penalty under that section.",
+   "quote": "A person is not liable to a penalty under paragraph 1 in respect of an inaccuracy if— (a) the inaccuracy involves a claim by the person to exercise or rely on a VAT right (in relation to a supply) that has been denied or refused by HMRC as mentioned in subsection (4) of section 69C of VATA 1994, and (b) the person has been assessed to a penalty under that section"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period to notify HM Revenue and Customs of an under-assessment",
+   "value": "30 days",
+   "quote": "within the period of 30 days beginning with the date of the assessment"
+  },
+  {
+   "what": "Standard penalty percentage for Category 1 careless action",
+   "value": "30%",
+   "quote": "for careless action, 30% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 1 deliberate but not concealed action",
+   "value": "70%",
+   "quote": "for deliberate but not concealed action, 70% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 1 deliberate and concealed action",
+   "value": "100%",
+   "quote": "for deliberate and concealed action, 100% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 2 careless action",
+   "value": "45%",
+   "quote": "for careless action, 45% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 2 deliberate but not concealed action",
+   "value": "105%",
+   "quote": "for deliberate but not concealed action, 105% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 2 deliberate and concealed action",
+   "value": "150%",
+   "quote": "for deliberate and concealed action, 150% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 3 careless action",
+   "value": "60%",
+   "quote": "for careless action, 60% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 3 deliberate but not concealed action",
+   "value": "140%",
+   "quote": "for deliberate but not concealed action, 140% of the potential lost revenue"
+  },
+  {
+   "what": "Standard penalty percentage for Category 3 deliberate and concealed action",
+   "value": "200%",
+   "quote": "for deliberate and concealed action, 200% of the potential lost revenue"
+  },
+  {
+   "what": "Penalty percentage for paragraph 1A false information or withholding",
+   "value": "100%",
+   "quote": "The penalty payable under paragraph 1A is 100% of the potential lost revenue."
+  },
+  {
+   "what": "Penalty percentage for paragraph 2 failure to notify under-assessment",
+   "value": "30%",
+   "quote": "The penalty payable under paragraph 2 is 30% of the potential lost revenue."
+  },
+  {
+   "what": "Percentage of unused loss included in potential lost revenue",
+   "value": "10%",
+   "quote": "10% of any part that has not"
+  },
+  {
+   "what": "Annual percentage of delayed tax for potential lost revenue calculation",
+   "value": "5%",
+   "quote": "5% of the delayed tax for each year of the delay"
+  },
+  {
+   "what": "Aggregate penalty cap for Category 1 inaccuracy under paragraphs 1 and 1A",
+   "value": "100%",
+   "quote": "if the penalty imposed under paragraph 1 is for an inaccuracy in category 1, 100%"
+  },
+  {
+   "what": "Aggregate penalty cap for Category 2 inaccuracy under paragraphs 1 and 1A",
+   "value": "150%",
+   "quote": "if the penalty imposed under paragraph 1 is for an inaccuracy in category 2, 150%"
+  },
+  {
+   "what": "Aggregate penalty cap for Category 3 inaccuracy under paragraphs 1 and 1A",
+   "value": "200%",
+   "quote": "if the penalty imposed under paragraph 1 is for an inaccuracy in category 3, 200%"
+  },
+  {
+   "what": "Period within which a penalty notification must be paid",
+   "value": "30 days",
+   "quote": "before the end of the period of 30 days beginning with the day on which notification of the penalty is issued"
+  },
+  {
+   "what": "Period within which HM Revenue and Customs must assess a penalty under paragraph 1 or 1A",
+   "value": "12 months",
+   "quote": "before the end of the period of 12 months beginning with"
+  },
+  {
+   "what": "Period within which HM Revenue and Customs must assess a penalty under paragraph 2",
+   "value": "12 months",
+   "quote": "before the end of the period of 12 months beginning with"
+  },
+  {
+   "what": "Maximum duration of penalty suspension",
+   "value": "two years",
+   "quote": "a period of suspension not exceeding two years"
+  },
+  {
+   "what": "Maximum portion of company penalty that may be specified for an officer",
+   "value": "100%",
+   "quote": "such portion of the penalty (which may be 100%) as HMRC may specify"
+  },
+  {
+   "what": "Period within which a company officer must pay a specified penalty portion",
+   "value": "30 days",
+   "quote": "before the end of the period of 30 days beginning with the day on which the notice is given"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 41,
+  "elements_verified": 39,
+  "thresholds_proposed": 48,
+  "thresholds_verified": 23
+ }
+}

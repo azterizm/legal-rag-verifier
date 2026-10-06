@@ -1,0 +1,192 @@
+{
+ "key": "uk/ukpga/1984/51/s3A@current",
+ "section": "uk/ukpga/1984/51/s3A",
+ "version": "current",
+ "source_sha256": "39bc607568b20ed8b8548f9593ec5e7c58758e5f9581b8412a895aebfd0a7a81",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A transfer of value constitutes a potentially exempt transfer if it is made by an individual on or after 18th March 1986 but before 22nd March 2006, would otherwise be a chargeable transfer apart from this provision, and constitutes either a gift to another individual or a gift into an accumulation and maintenance trust or a disabled trust.",
+    "quote": "transfer of value— (a) which is made by an individual on or after 18th March 1986 but before 22nd March 2006 ; and (b) which, apart from this section, would be a chargeable transfer (or to the extent to which, apart from this section, it would be such a transfer); and (c) to the extent that it constitutes either a gift to another individual or a gift into an accumulation and maintenance trust or a disabled trust"
+   },
+   {
+    "requirement": "A transfer of value constitutes a potentially exempt transfer if it is made by an individual on or after 22nd March 2006, would otherwise be a chargeable transfer apart from this provision, and constitutes a gift to another individual, a gift into a disabled trust, or a gift into a bereaved minor's trust upon the termination of an immediate post-death interest.",
+    "quote": "transfer of value— (a) which is made by an individual on or after 22nd March 2006, (b) which, apart from this section, would be a chargeable transfer (or to the extent to which, apart from this section, it would be such a transfer), and (c) to the extent that it constitutes— (i) a gift to another individual, (ii) a gift into a disabled trust, or (iii) a gift into a bereaved minor's trust on the coming to an end of an immediate post-death interest."
+   },
+   {
+    "requirement": "The provisions defining potentially exempt transfers are subject to any provision of the Inheritance Tax Act 1984 which states that a particular disposition or transfer of value is not a potentially exempt transfer.",
+    "quote": "Subsections (1) and (1A) above have effect subject to any provision of this Act which provides that a disposition (or transfer of value) of a particular description is not a potentially exempt transfer."
+   },
+   {
+    "requirement": "Subject to subsection (6), a transfer of value is treated as a gift to another individual to the extent that the value transferred is attributable to property that becomes comprised in the estate of that other individual by virtue of the transfer.",
+    "quote": "Subject to subsection (6) below, a transfer of value falls within subsection (1)(c) or (1A)(c)(i) above, as a gift to another individual,— (a) to the extent that the value transferred is attributable to property which, by virtue of the transfer, becomes comprised in the estate of that other individual"
+   },
+   {
+    "requirement": "Subject to subsection (6), a transfer of value is treated as a gift to another individual, so far as the value transferred is not attributable to property comprised in another person's estate, to the extent that the other individual's estate is increased by virtue of the transfer.",
+    "quote": "so far as that value is not attributable to property which becomes comprised in the estate of another person, to the extent that, by virtue of the transfer, the estate of that other individual is increased"
+   },
+   {
+    "requirement": "Subject to subsection (6), a transfer of value is treated as a gift into an accumulation and maintenance trust or a disabled trust under subsection (1)(c) to the extent that the value transferred is attributable to property that becomes settled property to which section 71 or section 89 applies by virtue of the transfer.",
+    "quote": "Subject to subsection (6) below, a transfer of value falls within subsection (1)(c) above, as a gift into an accumulation and maintenance trust or a disabled trust, to the extent that the value transferred is attributable to property which, by virtue of the transfer, becomes settled property to which section 71 or 89 of this Act applies."
+   },
+   {
+    "requirement": "Subject to subsection (6), a transfer of value is treated as a gift into a disabled trust under subsection (1A)(c)(ii) to the extent that the value transferred is attributable to property that becomes settled property to which section 89 applies by virtue of the transfer.",
+    "quote": "Subject to subsection (6) below, a transfer of value falls within subsection (1A)(c)(ii) above to the extent that the value transferred is attributable to property which, by virtue of the transfer, becomes settled property to which section 89 below applies."
+   },
+   {
+    "requirement": "A transfer of value is treated as a gift into a bereaved minor's trust under subsection (1A)(c)(iii) to the extent that the value transferred is attributable to settled property that becomes property to which section 71A applies where a person beneficially entitled to an immediate post-death interest in possession under the settlement has that interest end during their life on or after 22nd March 2006, having held it immediately before its termination, and the property continues to be held on the settlement trusts and becomes section 71A property.",
+    "quote": "A transfer of value falls within subsection (1A)(c)(iii) above to the extent that the value transferred is attributable to settled property (whenever settled) that becomes property to which section 71A below applies in the following circumstances— (a) under the settlement, a person (“L”) is beneficially entitled to an interest in possession in the settled property, (b) the interest in possession is an immediate post-death interest, (c) on or after 22nd March 2006, but during L's life, the interest in possession comes to an end, (d) L is beneficially entitled to the interest in possession immediately before it comes to an end, and (e) on the interest in possession coming to an end, the property— (i) continues to be held on the trusts of the settlement, and (ii) becomes property to which section 71A below applies."
+   },
+   {
+    "requirement": "A potentially exempt transfer is an exempt transfer if it is made seven years or more before the death of the transferor.",
+    "quote": "A potentially exempt transfer which is made seven years or more before the death of the transferor is an exempt transfer"
+   },
+   {
+    "requirement": "A potentially exempt transfer is a chargeable transfer if it is not made seven years or more before the death of the transferor.",
+    "quote": "any other potentially exempt transfer is a chargeable transfer."
+   },
+   {
+    "requirement": "A potentially exempt transfer must be assumed to prove to be an exempt transfer during the period starting on the date of the transfer and ending immediately before either the seventh anniversary of that date or the earlier death of the transferor.",
+    "quote": "During the period beginning on the date of a potentially exempt transfer and ending immediately before— (a) the seventh anniversary of that date, or (b) if it is earlier, the death of the transferor, it shall be assumed for the purposes of this Act that the transfer will prove to be an exempt transfer."
+   },
+   {
+    "requirement": "A deemed transfer of value charged with tax under any provision of the Inheritance Tax Act 1984 cannot be a potentially exempt transfer.",
+    "quote": "Where, under any provision of this Act tax is in any circumstances to be charged as if a transfer of value had been made, that transfer shall be taken to be a transfer which is not a potentially exempt transfer."
+   },
+   {
+    "requirement": "Section 52 is excluded from the rule barring deemed transfers from being potentially exempt transfers, unless the transfer of value under section 52 is treated as made on the termination of an interest falling within section 5(1B).",
+    "quote": "The reference in subsection (6) above to any provision of this Act does not include section 52 below except where the transfer of value treated as made by that section is one treated as made on the coming to an end of an interest which falls within section 5(1B) below."
+   },
+   {
+    "requirement": "When section 3A applies to a taxable event under section 52, the individual making the transfer of value refers to the person treated as the transferor by virtue of section 3(4).",
+    "quote": "In the application of this section to an event on the happening of which tax is chargeable under section 52 below, the reference in subsection (1)(a) or (1A)(a) above to the individual by whom the transfer of value is made is a reference to the person who, by virtue of section 3(4) above, is treated as the transferor."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "earliest date of transfer for a potentially exempt transfer under subsection (1)(a)",
+    "value": "18th March 1986",
+    "quote": "on or after 18th March 1986 but before 22nd March 2006"
+   },
+   {
+    "what": "cut-off date for a potentially exempt transfer under subsection (1)(a)",
+    "value": "22nd March 2006",
+    "quote": "before 22nd March 2006"
+   },
+   {
+    "what": "earliest date of transfer for a potentially exempt transfer under subsection (1A)(a)",
+    "value": "22nd March 2006",
+    "quote": "on or after 22nd March 2006"
+   },
+   {
+    "what": "earliest date on which an immediate post-death interest may come to an end for subsection (3B)(c)",
+    "value": "22nd March 2006",
+    "quote": "on or after 22nd March 2006"
+   },
+   {
+    "what": "minimum time period before the transferor's death for a potentially exempt transfer to become an exempt transfer",
+    "value": "seven years",
+    "quote": "seven years or more before the death of the transferor"
+   },
+   {
+    "what": "anniversary of the transfer marking the end of the statutory assumption period",
+    "value": "seventh anniversary",
+    "quote": "the seventh anniversary of that date"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A transfer of value constitutes a potentially exempt transfer if it is made by an individual on or after 18th March 1986 but before 22nd March 2006, would otherwise be a chargeable transfer apart from this provision, and constitutes either a gift to another individual or a gift into an accumulation and maintenance trust or a disabled trust.",
+   "quote": "transfer of value— (a) which is made by an individual on or after 18th March 1986 but before 22nd March 2006 ; and (b) which, apart from this section, would be a chargeable transfer (or to the extent to which, apart from this section, it would be such a transfer); and (c) to the extent that it constitutes either a gift to another individual or a gift into an accumulation and maintenance trust or a disabled trust"
+  },
+  {
+   "requirement": "A transfer of value constitutes a potentially exempt transfer if it is made by an individual on or after 22nd March 2006, would otherwise be a chargeable transfer apart from this provision, and constitutes a gift to another individual, a gift into a disabled trust, or a gift into a bereaved minor's trust upon the termination of an immediate post-death interest.",
+   "quote": "transfer of value— (a) which is made by an individual on or after 22nd March 2006, (b) which, apart from this section, would be a chargeable transfer (or to the extent to which, apart from this section, it would be such a transfer), and (c) to the extent that it constitutes— (i) a gift to another individual, (ii) a gift into a disabled trust, or (iii) a gift into a bereaved minor's trust on the coming to an end of an immediate post-death interest."
+  },
+  {
+   "requirement": "The provisions defining potentially exempt transfers are subject to any provision of the Inheritance Tax Act 1984 which states that a particular disposition or transfer of value is not a potentially exempt transfer.",
+   "quote": "Subsections (1) and (1A) above have effect subject to any provision of this Act which provides that a disposition (or transfer of value) of a particular description is not a potentially exempt transfer."
+  },
+  {
+   "requirement": "Subject to subsection (6), a transfer of value is treated as a gift to another individual to the extent that the value transferred is attributable to property that becomes comprised in the estate of that other individual by virtue of the transfer.",
+   "quote": "Subject to subsection (6) below, a transfer of value falls within subsection (1)(c) or (1A)(c)(i) above, as a gift to another individual,— (a) to the extent that the value transferred is attributable to property which, by virtue of the transfer, becomes comprised in the estate of that other individual"
+  },
+  {
+   "requirement": "Subject to subsection (6), a transfer of value is treated as a gift to another individual, so far as the value transferred is not attributable to property comprised in another person's estate, to the extent that the other individual's estate is increased by virtue of the transfer.",
+   "quote": "so far as that value is not attributable to property which becomes comprised in the estate of another person, to the extent that, by virtue of the transfer, the estate of that other individual is increased"
+  },
+  {
+   "requirement": "Subject to subsection (6), a transfer of value is treated as a gift into an accumulation and maintenance trust or a disabled trust under subsection (1)(c) to the extent that the value transferred is attributable to property that becomes settled property to which section 71 or section 89 applies by virtue of the transfer.",
+   "quote": "Subject to subsection (6) below, a transfer of value falls within subsection (1)(c) above, as a gift into an accumulation and maintenance trust or a disabled trust, to the extent that the value transferred is attributable to property which, by virtue of the transfer, becomes settled property to which section 71 or 89 of this Act applies."
+  },
+  {
+   "requirement": "Subject to subsection (6), a transfer of value is treated as a gift into a disabled trust under subsection (1A)(c)(ii) to the extent that the value transferred is attributable to property that becomes settled property to which section 89 applies by virtue of the transfer.",
+   "quote": "Subject to subsection (6) below, a transfer of value falls within subsection (1A)(c)(ii) above to the extent that the value transferred is attributable to property which, by virtue of the transfer, becomes settled property to which section 89 below applies."
+  },
+  {
+   "requirement": "A transfer of value is treated as a gift into a bereaved minor's trust under subsection (1A)(c)(iii) to the extent that the value transferred is attributable to settled property that becomes property to which section 71A applies where a person beneficially entitled to an immediate post-death interest in possession under the settlement has that interest end during their life on or after 22nd March 2006, having held it immediately before its termination, and the property continues to be held on the settlement trusts and becomes section 71A property.",
+   "quote": "A transfer of value falls within subsection (1A)(c)(iii) above to the extent that the value transferred is attributable to settled property (whenever settled) that becomes property to which section 71A below applies in the following circumstances— (a) under the settlement, a person (“L”) is beneficially entitled to an interest in possession in the settled property, (b) the interest in possession is an immediate post-death interest, (c) on or after 22nd March 2006, but during L's life, the interest in possession comes to an end, (d) L is beneficially entitled to the interest in possession immediately before it comes to an end, and (e) on the interest in possession coming to an end, the property— (i) continues to be held on the trusts of the settlement, and (ii) becomes property to which section 71A below applies."
+  },
+  {
+   "requirement": "A potentially exempt transfer is an exempt transfer if it is made seven years or more before the death of the transferor.",
+   "quote": "A potentially exempt transfer which is made seven years or more before the death of the transferor is an exempt transfer"
+  },
+  {
+   "requirement": "A potentially exempt transfer is a chargeable transfer if it is not made seven years or more before the death of the transferor.",
+   "quote": "any other potentially exempt transfer is a chargeable transfer."
+  },
+  {
+   "requirement": "A potentially exempt transfer must be assumed to prove to be an exempt transfer during the period starting on the date of the transfer and ending immediately before either the seventh anniversary of that date or the earlier death of the transferor.",
+   "quote": "During the period beginning on the date of a potentially exempt transfer and ending immediately before— (a) the seventh anniversary of that date, or (b) if it is earlier, the death of the transferor, it shall be assumed for the purposes of this Act that the transfer will prove to be an exempt transfer."
+  },
+  {
+   "requirement": "A deemed transfer of value charged with tax under any provision of the Inheritance Tax Act 1984 cannot be a potentially exempt transfer.",
+   "quote": "Where, under any provision of this Act tax is in any circumstances to be charged as if a transfer of value had been made, that transfer shall be taken to be a transfer which is not a potentially exempt transfer."
+  },
+  {
+   "requirement": "Section 52 is excluded from the rule barring deemed transfers from being potentially exempt transfers, unless the transfer of value under section 52 is treated as made on the termination of an interest falling within section 5(1B).",
+   "quote": "The reference in subsection (6) above to any provision of this Act does not include section 52 below except where the transfer of value treated as made by that section is one treated as made on the coming to an end of an interest which falls within section 5(1B) below."
+  },
+  {
+   "requirement": "When section 3A applies to a taxable event under section 52, the individual making the transfer of value refers to the person treated as the transferor by virtue of section 3(4).",
+   "quote": "In the application of this section to an event on the happening of which tax is chargeable under section 52 below, the reference in subsection (1)(a) or (1A)(a) above to the individual by whom the transfer of value is made is a reference to the person who, by virtue of section 3(4) above, is treated as the transferor."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "earliest date of transfer for a potentially exempt transfer under subsection (1)(a)",
+   "value": "18th March 1986",
+   "quote": "on or after 18th March 1986 but before 22nd March 2006"
+  },
+  {
+   "what": "cut-off date for a potentially exempt transfer under subsection (1)(a)",
+   "value": "22nd March 2006",
+   "quote": "before 22nd March 2006"
+  },
+  {
+   "what": "earliest date of transfer for a potentially exempt transfer under subsection (1A)(a)",
+   "value": "22nd March 2006",
+   "quote": "on or after 22nd March 2006"
+  },
+  {
+   "what": "earliest date on which an immediate post-death interest may come to an end for subsection (3B)(c)",
+   "value": "22nd March 2006",
+   "quote": "on or after 22nd March 2006"
+  },
+  {
+   "what": "minimum time period before the transferor's death for a potentially exempt transfer to become an exempt transfer",
+   "value": "seven years",
+   "quote": "seven years or more before the death of the transferor"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 5
+ }
+}

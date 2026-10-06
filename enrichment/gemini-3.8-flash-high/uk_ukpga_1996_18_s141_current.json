@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1996/18/s141@current",
+ "section": "uk/ukpga/1996/18/s141",
+ "version": "current",
+ "source_sha256": "bdfe74bc6dadb4dbf6848282ad2021b40594d31380eea3a9a78b797b3f258ceb",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 141 applies where an offer, whether made in writing or not, is made to an employee before the end of his employment to renew his contract of employment or to re-engage him under a new contract of employment.",
+    "quote": "an offer (whether in writing or not) is made to an employee before the end of his employment— (a) to renew his contract of employment, or (b) to re-engage him under a new contract of employment"
+   },
+   {
+    "requirement": "The offered renewal or re-engagement of the employee must take effect either immediately upon the end of his employment or after an interval of not more than four weeks after the end of his employment.",
+    "quote": "with renewal or re-engagement to take effect either immediately on, or after an interval of not more than four weeks after, the end of his employment"
+   },
+   {
+    "requirement": "An employee is not entitled to a redundancy payment if subsection (3) is satisfied and the employee unreasonably refuses the offer of renewal or re-engagement.",
+    "quote": "the employee is not entitled to a redundancy payment if he unreasonably refuses the offer"
+   },
+   {
+    "requirement": "Subsection (3) is satisfied where the provisions of the contract as renewed, or of the new contract, concerning the capacity and place of employment and the other terms and conditions of employment would not differ from the corresponding provisions of the employee's previous contract.",
+    "quote": "the provisions of the contract as renewed, or of the new contract, as to— (i) the capacity and place in which the employee would be employed, and (ii) the other terms and conditions of his employment, would not differ from the corresponding provisions of the previous contract"
+   },
+   {
+    "requirement": "Subsection (3) is satisfied where the provisions of the renewed or new contract would differ from the corresponding provisions of the employee's previous contract, but the offer constitutes an offer of suitable employment in relation to the employee.",
+    "quote": "those provisions of the contract as renewed, or of the new contract, would differ from the corresponding provisions of the previous contract but the offer constitutes an offer of suitable employment in relation to the employee"
+   },
+   {
+    "requirement": "An employee is not entitled to a redundancy payment if the contract is renewed or the employee is re-engaged under a new contract pursuant to the offer, the provisions regarding capacity, place, or other terms and conditions differ wholly or in part from the previous contract, the employment is suitable in relation to the employee, and during the trial period the employee unreasonably terminates the contract or unreasonably gives notice to terminate it and it is consequently terminated.",
+    "quote": "The employee is not entitled to a redundancy payment if— (a) his contract of employment is renewed, or he is re-engaged under a new contract of employment, in pursuance of the offer, (b) the provisions of the contract as renewed or new contract as to the capacity or place in which he is employed or the other terms and conditions of his employment differ (wholly or in part) from the corresponding provisions of the previous contract, (c) the employment is suitable in relation to him, and (d) during the trial period he unreasonably terminates the contract, or unreasonably gives notice to terminate it and it is in consequence terminated."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum permitted interval after the end of employment for the renewal or re-engagement to take effect",
+    "value": "four weeks",
+    "quote": "after an interval of not more than four weeks after, the end of his employment"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 141 applies where an offer, whether made in writing or not, is made to an employee before the end of his employment to renew his contract of employment or to re-engage him under a new contract of employment.",
+   "quote": "an offer (whether in writing or not) is made to an employee before the end of his employment— (a) to renew his contract of employment, or (b) to re-engage him under a new contract of employment"
+  },
+  {
+   "requirement": "The offered renewal or re-engagement of the employee must take effect either immediately upon the end of his employment or after an interval of not more than four weeks after the end of his employment.",
+   "quote": "with renewal or re-engagement to take effect either immediately on, or after an interval of not more than four weeks after, the end of his employment"
+  },
+  {
+   "requirement": "An employee is not entitled to a redundancy payment if subsection (3) is satisfied and the employee unreasonably refuses the offer of renewal or re-engagement.",
+   "quote": "the employee is not entitled to a redundancy payment if he unreasonably refuses the offer"
+  },
+  {
+   "requirement": "Subsection (3) is satisfied where the provisions of the contract as renewed, or of the new contract, concerning the capacity and place of employment and the other terms and conditions of employment would not differ from the corresponding provisions of the employee's previous contract.",
+   "quote": "the provisions of the contract as renewed, or of the new contract, as to— (i) the capacity and place in which the employee would be employed, and (ii) the other terms and conditions of his employment, would not differ from the corresponding provisions of the previous contract"
+  },
+  {
+   "requirement": "Subsection (3) is satisfied where the provisions of the renewed or new contract would differ from the corresponding provisions of the employee's previous contract, but the offer constitutes an offer of suitable employment in relation to the employee.",
+   "quote": "those provisions of the contract as renewed, or of the new contract, would differ from the corresponding provisions of the previous contract but the offer constitutes an offer of suitable employment in relation to the employee"
+  },
+  {
+   "requirement": "An employee is not entitled to a redundancy payment if the contract is renewed or the employee is re-engaged under a new contract pursuant to the offer, the provisions regarding capacity, place, or other terms and conditions differ wholly or in part from the previous contract, the employment is suitable in relation to the employee, and during the trial period the employee unreasonably terminates the contract or unreasonably gives notice to terminate it and it is consequently terminated.",
+   "quote": "The employee is not entitled to a redundancy payment if— (a) his contract of employment is renewed, or he is re-engaged under a new contract of employment, in pursuance of the offer, (b) the provisions of the contract as renewed or new contract as to the capacity or place in which he is employed or the other terms and conditions of his employment differ (wholly or in part) from the corresponding provisions of the previous contract, (c) the employment is suitable in relation to him, and (d) during the trial period he unreasonably terminates the contract, or unreasonably gives notice to terminate it and it is in consequence terminated."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the maximum permitted interval after the end of employment for the renewal or re-engagement to take effect",
+   "value": "four weeks",
+   "quote": "after an interval of not more than four weeks after, the end of his employment"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

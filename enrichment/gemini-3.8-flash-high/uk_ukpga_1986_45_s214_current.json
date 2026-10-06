@@ -1,0 +1,131 @@
+{
+ "key": "uk/ukpga/1986/45/s214@current",
+ "section": "uk/ukpga/1986/45/s214",
+ "version": "current",
+ "source_sha256": "3e579f5e4b49ab1fba0075dec956d69b61cfa23b655c254346ba896d706eede0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In the course of winding up a company, the court may, upon an application by the liquidator and subject to the defence in subsection (3), declare that a current or former director is liable to make such contribution (if any) to the company's assets as the court thinks proper, provided subsection (2) applies to that person.",
+    "quote": "the court, on the application of the liquidator, may declare that that person is to be liable to make such contribution (if any) to the company’s assets as the court thinks proper"
+   },
+   {
+    "requirement": "Subsection (2) applies in relation to a person only if the company has gone into insolvent liquidation.",
+    "quote": "the company has gone into insolvent liquidation"
+   },
+   {
+    "requirement": "Subsection (2) applies in relation to a person if, at some time before the commencement of the winding up of the company, that person knew or ought to have concluded that there was no reasonable prospect that the company would avoid going into insolvent liquidation or entering insolvent administration.",
+    "quote": "knew or ought to have concluded that there was no reasonable prospect that the company would avoid going into insolvent liquidation or entering insolvent administration"
+   },
+   {
+    "requirement": "Subsection (2) applies in relation to a person only if that person was a director of the company at the time they knew or ought to have concluded there was no reasonable prospect of avoiding insolvent liquidation or insolvent administration.",
+    "quote": "that person was a director of the company at that time"
+   },
+   {
+    "requirement": "The court is prohibited from making a declaration under section 214 if the time when the person knew or ought to have reached the relevant conclusion was before 28th April 1986.",
+    "quote": "the court shall not make a declaration under this section in any case where the time mentioned in paragraph (b) above was before 28th April 1986"
+   },
+   {
+    "requirement": "The court must not make a declaration under section 214 against a person if satisfied that, after that person first knew or ought to have concluded that insolvent liquidation or administration was unavoidable, they took every step to minimise potential loss to the company's creditors that they ought to have taken on the assumption of having that knowledge.",
+    "quote": "that person took every step with a view to minimising the potential loss to the company’s creditors as (on the assumption that he had knowledge of the matter mentioned in subsection (2)(b)) he ought to have taken"
+   },
+   {
+    "requirement": "For evaluating what a director ought to know, ascertain, conclude, or do under subsections (2) and (3), the director is judged against the standard of a reasonably diligent person having both the general knowledge, skill, and experience reasonably expected of someone carrying out those directorial functions and the actual general knowledge, skill, and experience that the director possesses.",
+    "quote": "by a reasonably diligent person having both— (a) the general knowledge, skill and experience that may reasonably be expected of a person carrying out the same functions as are carried out by that director in relation to the company, and (b) the general knowledge, skill and experience that that director has"
+   },
+   {
+    "requirement": "The directorial functions evaluated under subsection (4) include any functions that the director does not actually carry out but which have been entrusted to that director.",
+    "quote": "includes any functions which he does not carry out but which have been entrusted to him"
+   },
+   {
+    "requirement": "A company goes into insolvent liquidation for the purposes of section 214 if it enters liquidation when its assets are insufficient to pay its debts, other liabilities, and winding-up expenses.",
+    "quote": "goes into liquidation at a time when its assets are insufficient for the payment of its debts and other liabilities and the expenses of the winding up"
+   },
+   {
+    "requirement": "A company enters insolvent administration for the purposes of section 214 if it enters administration when its assets are insufficient to pay its debts, other liabilities, and administration expenses.",
+    "quote": "enters administration at a time when its assets are insufficient for the payment of its debts and other liabilities and the expenses of the administration"
+   },
+   {
+    "requirement": "For the purposes of section 214, the term 'director' includes a shadow director.",
+    "quote": "“director” includes a shadow director"
+   },
+   {
+    "requirement": "The operation of section 214 does not prejudice or limit section 213.",
+    "quote": "This section is without prejudice to section 213"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The cut-off date before which the director's actual or constructive knowledge cannot ground a declaration by the court",
+    "value": "28th April 1986",
+    "quote": "before 28th April 1986"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In the course of winding up a company, the court may, upon an application by the liquidator and subject to the defence in subsection (3), declare that a current or former director is liable to make such contribution (if any) to the company's assets as the court thinks proper, provided subsection (2) applies to that person.",
+   "quote": "the court, on the application of the liquidator, may declare that that person is to be liable to make such contribution (if any) to the company’s assets as the court thinks proper"
+  },
+  {
+   "requirement": "Subsection (2) applies in relation to a person only if the company has gone into insolvent liquidation.",
+   "quote": "the company has gone into insolvent liquidation"
+  },
+  {
+   "requirement": "Subsection (2) applies in relation to a person if, at some time before the commencement of the winding up of the company, that person knew or ought to have concluded that there was no reasonable prospect that the company would avoid going into insolvent liquidation or entering insolvent administration.",
+   "quote": "knew or ought to have concluded that there was no reasonable prospect that the company would avoid going into insolvent liquidation or entering insolvent administration"
+  },
+  {
+   "requirement": "Subsection (2) applies in relation to a person only if that person was a director of the company at the time they knew or ought to have concluded there was no reasonable prospect of avoiding insolvent liquidation or insolvent administration.",
+   "quote": "that person was a director of the company at that time"
+  },
+  {
+   "requirement": "The court is prohibited from making a declaration under section 214 if the time when the person knew or ought to have reached the relevant conclusion was before 28th April 1986.",
+   "quote": "the court shall not make a declaration under this section in any case where the time mentioned in paragraph (b) above was before 28th April 1986"
+  },
+  {
+   "requirement": "The court must not make a declaration under section 214 against a person if satisfied that, after that person first knew or ought to have concluded that insolvent liquidation or administration was unavoidable, they took every step to minimise potential loss to the company's creditors that they ought to have taken on the assumption of having that knowledge.",
+   "quote": "that person took every step with a view to minimising the potential loss to the company’s creditors as (on the assumption that he had knowledge of the matter mentioned in subsection (2)(b)) he ought to have taken"
+  },
+  {
+   "requirement": "For evaluating what a director ought to know, ascertain, conclude, or do under subsections (2) and (3), the director is judged against the standard of a reasonably diligent person having both the general knowledge, skill, and experience reasonably expected of someone carrying out those directorial functions and the actual general knowledge, skill, and experience that the director possesses.",
+   "quote": "by a reasonably diligent person having both— (a) the general knowledge, skill and experience that may reasonably be expected of a person carrying out the same functions as are carried out by that director in relation to the company, and (b) the general knowledge, skill and experience that that director has"
+  },
+  {
+   "requirement": "The directorial functions evaluated under subsection (4) include any functions that the director does not actually carry out but which have been entrusted to that director.",
+   "quote": "includes any functions which he does not carry out but which have been entrusted to him"
+  },
+  {
+   "requirement": "A company goes into insolvent liquidation for the purposes of section 214 if it enters liquidation when its assets are insufficient to pay its debts, other liabilities, and winding-up expenses.",
+   "quote": "goes into liquidation at a time when its assets are insufficient for the payment of its debts and other liabilities and the expenses of the winding up"
+  },
+  {
+   "requirement": "A company enters insolvent administration for the purposes of section 214 if it enters administration when its assets are insufficient to pay its debts, other liabilities, and administration expenses.",
+   "quote": "enters administration at a time when its assets are insufficient for the payment of its debts and other liabilities and the expenses of the administration"
+  },
+  {
+   "requirement": "For the purposes of section 214, the term 'director' includes a shadow director.",
+   "quote": "“director” includes a shadow director"
+  },
+  {
+   "requirement": "The operation of section 214 does not prejudice or limit section 213.",
+   "quote": "This section is without prejudice to section 213"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The cut-off date before which the director's actual or constructive knowledge cannot ground a declaration by the court",
+   "value": "28th April 1986",
+   "quote": "before 28th April 1986"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

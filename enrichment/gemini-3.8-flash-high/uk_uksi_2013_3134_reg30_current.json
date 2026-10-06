@@ -1,0 +1,133 @@
+{
+ "key": "uk/uksi/2013/3134/reg30@current",
+ "section": "uk/uksi/2013/3134/reg30",
+ "version": "current",
+ "source_sha256": "630c96d227d6eb52ebe7f7212c9bf156fac41a48bbb12249cdcbb6e07abc58f6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The rules governing the end of the cancellation period apply unless regulation 31 applies.",
+    "quote": "The cancellation period ends as follows, unless regulation 31 applies."
+   },
+   {
+    "requirement": "For a service contract or a contract for the supply of digital content not supplied on a tangible medium, the cancellation period ends at the end of 14 days after the day on which the contract is entered into.",
+    "quote": "cancellation period ends at the end of 14 days after the day on which the contract is entered into."
+   },
+   {
+    "requirement": "For a sales contract where none of paragraphs (4) to (6) applies, the cancellation period ends at the end of 14 days after the day on which the goods come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+    "quote": "cancellation period ends at the end of 14 days after the day on which the goods come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+   },
+   {
+    "requirement": "For a sales contract under which multiple goods are ordered by the consumer in one order but some are delivered on different days, the cancellation period ends at the end of 14 days after the day on which the last of the goods come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+    "quote": "cancellation period ends at the end of 14 days after the day on which the last of the goods come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+   },
+   {
+    "requirement": "For a sales contract under which goods consisting of multiple lots or pieces of something are delivered on different days, the cancellation period ends at the end of 14 days after the day on which the last of the lots or pieces come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+    "quote": "cancellation period ends at the end of 14 days after the day on which the last of the lots or pieces come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+   },
+   {
+    "requirement": "For a sales contract for regular delivery of goods during a defined period of more than one day, the cancellation period ends at the end of 14 days after the day on which the first of the goods come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+    "quote": "cancellation period ends at the end of 14 days after the day on which the first of the goods come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "cancellation period duration after the day a service contract or intangible digital content contract is entered into",
+    "value": "14 days",
+    "quote": "end of 14 days after the day on which the contract is entered into"
+   },
+   {
+    "what": "cancellation period duration after the day goods come into physical possession under a standard sales contract",
+    "value": "14 days",
+    "quote": "end of 14 days after the day on which the goods come into the physical possession"
+   },
+   {
+    "what": "cancellation period duration after the day the last of the goods come into physical possession under a sales contract with multiple goods delivered on different days",
+    "value": "14 days",
+    "quote": "end of 14 days after the day on which the last of the goods come into the physical possession"
+   },
+   {
+    "what": "cancellation period duration after the day the last of the lots or pieces come into physical possession under a sales contract with multiple lots or pieces delivered on different days",
+    "value": "14 days",
+    "quote": "end of 14 days after the day on which the last of the lots or pieces come into the physical possession"
+   },
+   {
+    "what": "defined period required for a sales contract for regular delivery of goods",
+    "value": "more than one day",
+    "quote": "defined period of more than one day"
+   },
+   {
+    "what": "cancellation period duration after the day the first of the goods come into physical possession under a sales contract for regular delivery of goods",
+    "value": "14 days",
+    "quote": "end of 14 days after the day on which the first of the goods come into the physical possession"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The rules governing the end of the cancellation period apply unless regulation 31 applies.",
+   "quote": "The cancellation period ends as follows, unless regulation 31 applies."
+  },
+  {
+   "requirement": "For a service contract or a contract for the supply of digital content not supplied on a tangible medium, the cancellation period ends at the end of 14 days after the day on which the contract is entered into.",
+   "quote": "cancellation period ends at the end of 14 days after the day on which the contract is entered into."
+  },
+  {
+   "requirement": "For a sales contract where none of paragraphs (4) to (6) applies, the cancellation period ends at the end of 14 days after the day on which the goods come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+   "quote": "cancellation period ends at the end of 14 days after the day on which the goods come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+  },
+  {
+   "requirement": "For a sales contract under which multiple goods are ordered by the consumer in one order but some are delivered on different days, the cancellation period ends at the end of 14 days after the day on which the last of the goods come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+   "quote": "cancellation period ends at the end of 14 days after the day on which the last of the goods come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+  },
+  {
+   "requirement": "For a sales contract under which goods consisting of multiple lots or pieces of something are delivered on different days, the cancellation period ends at the end of 14 days after the day on which the last of the lots or pieces come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+   "quote": "cancellation period ends at the end of 14 days after the day on which the last of the lots or pieces come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+  },
+  {
+   "requirement": "For a sales contract for regular delivery of goods during a defined period of more than one day, the cancellation period ends at the end of 14 days after the day on which the first of the goods come into the physical possession of the consumer or a person identified by the consumer to take possession of them, other than the carrier.",
+   "quote": "cancellation period ends at the end of 14 days after the day on which the first of the goods come into the physical possession of— (a) the consumer, or (b) a person, other than the carrier, identified by the consumer to take possession of them."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "cancellation period duration after the day a service contract or intangible digital content contract is entered into",
+   "value": "14 days",
+   "quote": "end of 14 days after the day on which the contract is entered into"
+  },
+  {
+   "what": "cancellation period duration after the day goods come into physical possession under a standard sales contract",
+   "value": "14 days",
+   "quote": "end of 14 days after the day on which the goods come into the physical possession"
+  },
+  {
+   "what": "cancellation period duration after the day the last of the goods come into physical possession under a sales contract with multiple goods delivered on different days",
+   "value": "14 days",
+   "quote": "end of 14 days after the day on which the last of the goods come into the physical possession"
+  },
+  {
+   "what": "cancellation period duration after the day the last of the lots or pieces come into physical possession under a sales contract with multiple lots or pieces delivered on different days",
+   "value": "14 days",
+   "quote": "end of 14 days after the day on which the last of the lots or pieces come into the physical possession"
+  },
+  {
+   "what": "defined period required for a sales contract for regular delivery of goods",
+   "value": "more than one day",
+   "quote": "defined period of more than one day"
+  },
+  {
+   "what": "cancellation period duration after the day the first of the goods come into physical possession under a sales contract for regular delivery of goods",
+   "value": "14 days",
+   "quote": "end of 14 days after the day on which the first of the goods come into the physical possession"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 6
+ }
+}

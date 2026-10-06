@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/2005/9/s16@current",
+ "section": "uk/ukpga/2005/9/s16",
+ "version": "current",
+ "source_sha256": "1b2721f1c9281a6482d8f0ae7a151e7f91165874427639e9c93ee9520b51c641",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 16 applies if a person (\"P\") lacks capacity in relation to a matter or matters concerning P's personal welfare or P's property and affairs.",
+    "quote": "applies if a person (“P”) lacks capacity in relation to a matter or matters concerning— (a) P's personal welfare, or (b) P's property and affairs"
+   },
+   {
+    "requirement": "The court may, by making an order, make the decision or decisions on behalf of a person lacking capacity (\"P\") in relation to the relevant matter or matters.",
+    "quote": "by making an order, make the decision or decisions on P's behalf in relation to the matter or matters"
+   },
+   {
+    "requirement": "The court may appoint a person (a \"deputy\") to make decisions on behalf of a person lacking capacity (\"P\") in relation to the relevant matter or matters.",
+    "quote": "appoint a person (a “deputy”) to make decisions on P's behalf in relation to the matter or matters"
+   },
+   {
+    "requirement": "The powers of the court under section 16 are subject to the provisions of the Mental Capacity Act 2005 and, in particular, to sections 1 (the principles) and 4 (best interests).",
+    "quote": "powers of the court under this section are subject to the provisions of this Act and, in particular, to sections 1 (the principles) and 4 (best interests)"
+   },
+   {
+    "requirement": "When deciding whether it is in the best interests of a person lacking capacity (\"P\") to appoint a deputy, the court must have regard, in addition to the matters mentioned in section 4, to the principle that a decision by the court is to be preferred to the appointment of a deputy to make a decision.",
+    "quote": "a decision by the court is to be preferred to the appointment of a deputy to make a decision"
+   },
+   {
+    "requirement": "When deciding whether it is in the best interests of a person lacking capacity (\"P\") to appoint a deputy, the court must have regard, in addition to the matters mentioned in section 4, to the principle that the powers conferred on a deputy should be as limited in scope and duration as is reasonably practicable in the circumstances.",
+    "quote": "powers conferred on a deputy should be as limited in scope and duration as is reasonably practicable in the circumstances"
+   },
+   {
+    "requirement": "The court may make such further orders or give such directions, and confer on a deputy such powers or impose on him such duties, as the court thinks necessary or expedient for giving effect to, or otherwise in connection with, an order or appointment made by it under subsection (2).",
+    "quote": "make such further orders or give such directions, and confer on a deputy such powers or impose on him such duties, as it thinks necessary or expedient"
+   },
+   {
+    "requirement": "Without prejudice to section 4, the court may make an order, give directions, or make an appointment on such terms as it considers are in the best interests of a person lacking capacity (\"P\"), even though no application is before the court for an order, directions, or an appointment on those terms.",
+    "quote": "make the order, give the directions or make the appointment on such terms as it considers are in P's best interests, even though no application is before the court"
+   },
+   {
+    "requirement": "An order of the court may be varied or discharged by a subsequent order.",
+    "quote": "An order of the court may be varied or discharged by a subsequent order."
+   },
+   {
+    "requirement": "The court may revoke the appointment of a deputy or vary the powers conferred on him if it is satisfied that the deputy has behaved, or is behaving, in a way that contravenes the authority conferred on him by the court or is not in the best interests of the person lacking capacity (\"P\").",
+    "quote": "has behaved, or is behaving, in a way that contravenes the authority conferred on him by the court or is not in P's best interests"
+   },
+   {
+    "requirement": "The court may revoke the appointment of a deputy or vary the powers conferred on him if it is satisfied that the deputy proposes to behave in a way that would contravene the authority conferred on him by the court or would not be in the best interests of the person lacking capacity (\"P\").",
+    "quote": "proposes to behave in a way that would contravene that authority or would not be in P's best interests"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 16 applies if a person (\"P\") lacks capacity in relation to a matter or matters concerning P's personal welfare or P's property and affairs.",
+   "quote": "applies if a person (“P”) lacks capacity in relation to a matter or matters concerning— (a) P's personal welfare, or (b) P's property and affairs"
+  },
+  {
+   "requirement": "The court may, by making an order, make the decision or decisions on behalf of a person lacking capacity (\"P\") in relation to the relevant matter or matters.",
+   "quote": "by making an order, make the decision or decisions on P's behalf in relation to the matter or matters"
+  },
+  {
+   "requirement": "The court may appoint a person (a \"deputy\") to make decisions on behalf of a person lacking capacity (\"P\") in relation to the relevant matter or matters.",
+   "quote": "appoint a person (a “deputy”) to make decisions on P's behalf in relation to the matter or matters"
+  },
+  {
+   "requirement": "The powers of the court under section 16 are subject to the provisions of the Mental Capacity Act 2005 and, in particular, to sections 1 (the principles) and 4 (best interests).",
+   "quote": "powers of the court under this section are subject to the provisions of this Act and, in particular, to sections 1 (the principles) and 4 (best interests)"
+  },
+  {
+   "requirement": "When deciding whether it is in the best interests of a person lacking capacity (\"P\") to appoint a deputy, the court must have regard, in addition to the matters mentioned in section 4, to the principle that a decision by the court is to be preferred to the appointment of a deputy to make a decision.",
+   "quote": "a decision by the court is to be preferred to the appointment of a deputy to make a decision"
+  },
+  {
+   "requirement": "When deciding whether it is in the best interests of a person lacking capacity (\"P\") to appoint a deputy, the court must have regard, in addition to the matters mentioned in section 4, to the principle that the powers conferred on a deputy should be as limited in scope and duration as is reasonably practicable in the circumstances.",
+   "quote": "powers conferred on a deputy should be as limited in scope and duration as is reasonably practicable in the circumstances"
+  },
+  {
+   "requirement": "The court may make such further orders or give such directions, and confer on a deputy such powers or impose on him such duties, as the court thinks necessary or expedient for giving effect to, or otherwise in connection with, an order or appointment made by it under subsection (2).",
+   "quote": "make such further orders or give such directions, and confer on a deputy such powers or impose on him such duties, as it thinks necessary or expedient"
+  },
+  {
+   "requirement": "Without prejudice to section 4, the court may make an order, give directions, or make an appointment on such terms as it considers are in the best interests of a person lacking capacity (\"P\"), even though no application is before the court for an order, directions, or an appointment on those terms.",
+   "quote": "make the order, give the directions or make the appointment on such terms as it considers are in P's best interests, even though no application is before the court"
+  },
+  {
+   "requirement": "An order of the court may be varied or discharged by a subsequent order.",
+   "quote": "An order of the court may be varied or discharged by a subsequent order."
+  },
+  {
+   "requirement": "The court may revoke the appointment of a deputy or vary the powers conferred on him if it is satisfied that the deputy has behaved, or is behaving, in a way that contravenes the authority conferred on him by the court or is not in the best interests of the person lacking capacity (\"P\").",
+   "quote": "has behaved, or is behaving, in a way that contravenes the authority conferred on him by the court or is not in P's best interests"
+  },
+  {
+   "requirement": "The court may revoke the appointment of a deputy or vary the powers conferred on him if it is satisfied that the deputy proposes to behave in a way that would contravene the authority conferred on him by the court or would not be in the best interests of the person lacking capacity (\"P\").",
+   "quote": "proposes to behave in a way that would contravene that authority or would not be in P's best interests"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

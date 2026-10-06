@@ -1,0 +1,197 @@
+{
+ "key": "uk/ukpga/1996/18/s86@current",
+ "section": "uk/ukpga/1996/18/s86",
+ "version": "current",
+ "source_sha256": "19d95ef282386283b73088e543900692e149b2e11f7446cec3d4d4c49d5cf9f8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employer terminating the contract of employment of a person continuously employed for one month or more must give not less than one week’s notice if that person's period of continuous employment is less than two years.",
+    "quote": "is not less than one week’s notice if his period of continuous employment is less than two years"
+   },
+   {
+    "requirement": "An employer terminating the contract of employment of a person continuously employed for one month or more must give not less than one week’s notice for each year of continuous employment if that person's period of continuous employment is two years or more but less than twelve years.",
+    "quote": "is not less than one week’s notice for each year of continuous employment if his period of continuous employment is two years or more but less than twelve years"
+   },
+   {
+    "requirement": "An employer terminating the contract of employment of a person continuously employed for one month or more must give not less than twelve weeks’ notice if that person's period of continuous employment is twelve years or more.",
+    "quote": "is not less than twelve weeks’ notice if his period of continuous employment is twelve years or more"
+   },
+   {
+    "requirement": "An employee who has been continuously employed for one month or more must give not less than one week's notice to terminate their contract of employment.",
+    "quote": "The notice required to be given by an employee who has been continuously employed for one month or more to terminate his contract of employment is not less than one week."
+   },
+   {
+    "requirement": "Any contractual provision for shorter notice in a contract of employment with a person continuously employed for one month or more is subject to the statutory minimum notice periods required of employers and employees.",
+    "quote": "Any provision for shorter notice in any contract of employment with a person who has been continuously employed for one month or more has effect subject to subsections (1) and (2)"
+   },
+   {
+    "requirement": "Either party to an employment contract is permitted to waive their right to notice on any occasion.",
+    "quote": "this section does not prevent either party from waiving his right to notice on any occasion"
+   },
+   {
+    "requirement": "Either party to an employment contract is permitted to accept a payment in lieu of notice.",
+    "quote": "or from accepting a payment in lieu of notice"
+   },
+   {
+    "requirement": "A contract of employment for a term certain of one month or less takes effect as if it were for an indefinite period, and triggers the statutory minimum notice rules, if the employee has been continuously employed for three months or more.",
+    "quote": "contract of employment of a person who has been continuously employed for three months or more which is a contract for a term certain of one month or less shall have effect as if it were for an indefinite period; and, accordingly, subsections (1) and (2) apply to the contract"
+   },
+   {
+    "requirement": "Either party to a contract of employment retains the right to treat the contract as terminable without notice by reason of the other party's conduct.",
+    "quote": "This section does not affect any right of either party to a contract of employment to treat the contract as terminable without notice by reason of the conduct of the other party."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum period of continuous employment required for statutory notice rights to apply to an employer or employee",
+    "value": "one month or more",
+    "quote": "continuously employed for one month or more"
+   },
+   {
+    "what": "Minimum notice required from an employer where continuous employment is less than two years",
+    "value": "one week’s notice",
+    "quote": "not less than one week’s notice"
+   },
+   {
+    "what": "Maximum continuous employment limit for the one week notice tier",
+    "value": "less than two years",
+    "quote": "less than two years"
+   },
+   {
+    "what": "Minimum employer notice multiplier per year of continuous employment for employment between two and twelve years",
+    "value": "one week’s notice for each year",
+    "quote": "not less than one week’s notice for each year of continuous employment"
+   },
+   {
+    "what": "Continuous employment range for the one-week-per-year notice tier",
+    "value": "two years or more but less than twelve years",
+    "quote": "two years or more but less than twelve years"
+   },
+   {
+    "what": "Minimum employer notice required where continuous employment is twelve years or more",
+    "value": "twelve weeks’ notice",
+    "quote": "not less than twelve weeks’ notice"
+   },
+   {
+    "what": "Continuous employment threshold for the maximum statutory notice tier",
+    "value": "twelve years or more",
+    "quote": "twelve years or more"
+   },
+   {
+    "what": "Minimum notice required from an employee continuously employed for one month or more",
+    "value": "one week",
+    "quote": "not less than one week"
+   },
+   {
+    "what": "Period of continuous employment required for a short term-certain contract to be treated as an indefinite contract",
+    "value": "three months or more",
+    "quote": "continuously employed for three months or more"
+   },
+   {
+    "what": "Maximum length of a term certain that will be converted to an indefinite contract if continuous employment reaches three months or more",
+    "value": "one month or less",
+    "quote": "term certain of one month or less"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An employer terminating the contract of employment of a person continuously employed for one month or more must give not less than one week’s notice if that person's period of continuous employment is less than two years.",
+   "quote": "is not less than one week’s notice if his period of continuous employment is less than two years"
+  },
+  {
+   "requirement": "An employer terminating the contract of employment of a person continuously employed for one month or more must give not less than one week’s notice for each year of continuous employment if that person's period of continuous employment is two years or more but less than twelve years.",
+   "quote": "is not less than one week’s notice for each year of continuous employment if his period of continuous employment is two years or more but less than twelve years"
+  },
+  {
+   "requirement": "An employer terminating the contract of employment of a person continuously employed for one month or more must give not less than twelve weeks’ notice if that person's period of continuous employment is twelve years or more.",
+   "quote": "is not less than twelve weeks’ notice if his period of continuous employment is twelve years or more"
+  },
+  {
+   "requirement": "An employee who has been continuously employed for one month or more must give not less than one week's notice to terminate their contract of employment.",
+   "quote": "The notice required to be given by an employee who has been continuously employed for one month or more to terminate his contract of employment is not less than one week."
+  },
+  {
+   "requirement": "Any contractual provision for shorter notice in a contract of employment with a person continuously employed for one month or more is subject to the statutory minimum notice periods required of employers and employees.",
+   "quote": "Any provision for shorter notice in any contract of employment with a person who has been continuously employed for one month or more has effect subject to subsections (1) and (2)"
+  },
+  {
+   "requirement": "Either party to an employment contract is permitted to waive their right to notice on any occasion.",
+   "quote": "this section does not prevent either party from waiving his right to notice on any occasion"
+  },
+  {
+   "requirement": "Either party to an employment contract is permitted to accept a payment in lieu of notice.",
+   "quote": "or from accepting a payment in lieu of notice"
+  },
+  {
+   "requirement": "A contract of employment for a term certain of one month or less takes effect as if it were for an indefinite period, and triggers the statutory minimum notice rules, if the employee has been continuously employed for three months or more.",
+   "quote": "contract of employment of a person who has been continuously employed for three months or more which is a contract for a term certain of one month or less shall have effect as if it were for an indefinite period; and, accordingly, subsections (1) and (2) apply to the contract"
+  },
+  {
+   "requirement": "Either party to a contract of employment retains the right to treat the contract as terminable without notice by reason of the other party's conduct.",
+   "quote": "This section does not affect any right of either party to a contract of employment to treat the contract as terminable without notice by reason of the conduct of the other party."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum period of continuous employment required for statutory notice rights to apply to an employer or employee",
+   "value": "one month or more",
+   "quote": "continuously employed for one month or more"
+  },
+  {
+   "what": "Minimum notice required from an employer where continuous employment is less than two years",
+   "value": "one week’s notice",
+   "quote": "not less than one week’s notice"
+  },
+  {
+   "what": "Maximum continuous employment limit for the one week notice tier",
+   "value": "less than two years",
+   "quote": "less than two years"
+  },
+  {
+   "what": "Minimum employer notice multiplier per year of continuous employment for employment between two and twelve years",
+   "value": "one week’s notice for each year",
+   "quote": "not less than one week’s notice for each year of continuous employment"
+  },
+  {
+   "what": "Continuous employment range for the one-week-per-year notice tier",
+   "value": "two years or more but less than twelve years",
+   "quote": "two years or more but less than twelve years"
+  },
+  {
+   "what": "Minimum employer notice required where continuous employment is twelve years or more",
+   "value": "twelve weeks’ notice",
+   "quote": "not less than twelve weeks’ notice"
+  },
+  {
+   "what": "Continuous employment threshold for the maximum statutory notice tier",
+   "value": "twelve years or more",
+   "quote": "twelve years or more"
+  },
+  {
+   "what": "Minimum notice required from an employee continuously employed for one month or more",
+   "value": "one week",
+   "quote": "not less than one week"
+  },
+  {
+   "what": "Period of continuous employment required for a short term-certain contract to be treated as an indefinite contract",
+   "value": "three months or more",
+   "quote": "continuously employed for three months or more"
+  },
+  {
+   "what": "Maximum length of a term certain that will be converted to an indefinite contract if continuous employment reaches three months or more",
+   "value": "one month or less",
+   "quote": "term certain of one month or less"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 10,
+  "thresholds_verified": 10
+ }
+}

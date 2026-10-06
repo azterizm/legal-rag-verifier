@@ -1,0 +1,2648 @@
+# Held-out DRAFT rows (plan R1): not run, not sealed. Seal before the grid.
+# Sources split by provision with the dev rows (stop 5): anchors ca-465, ca-382; Mode C CHIM-003, DEVOLV-001,
+# REPEAL-001; Mode A FAB-005, FAB-006. The concept-battery test-split rows are drafted later.
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-465@2014-01-01"
+query = "As at 1 January 2014, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2014"
+sentence = "As at 1 January 2014, a company met the medium-sized turnover condition if its turnover was not more than £25.9 million."
+at = "s465/3"
+excerpt = "Turnover Not more than £25.9 million"
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-465@2014-01-01"
+query = "As at 1 January 2014, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2014"
+sentence = "On 1 January 2014, the medium-sized turnover threshold was £36 million."
+at = "s465/3"
+excerpt = "Turnover Not more than £25.9 million"
+note = "£36 million applied from 1 January 2016."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-465@2019-01-01"
+query = "As at 1 January 2019, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2019"
+sentence = "In 2019 the turnover ceiling for a medium-sized company was £36m."
+at = "s465/3"
+excerpt = "Turnover Not more than £36 million"
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-465@2019-01-01"
+query = "As at 1 January 2019, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2019"
+sentence = "As at 1 January 2019, a medium-sized company's turnover could not exceed £25.9 million."
+at = "s465/3"
+excerpt = "Turnover Not more than £36 million"
+note = "£25.9 million applied until 1 January 2016."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-465@timeline"
+query = "What is the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 (question without the as-at date)"
+sentence = "A company now meets the medium-sized turnover condition if its turnover is not more than £54 million."
+at = "s465/3"
+excerpt = "Not more than £54 million"
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-465@timeline"
+query = "As at 1 January 2014, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2014"
+sentence = "As at 1 January 2014 the turnover limit was £25.9 million; it rose to £36 million from 1 January 2016."
+at = "fact"
+excerpt = "From 6 April 2008 until it was replaced on 1 January 2016"
+source_url = "https://www.legislation.gov.uk/ukpga/2006/46/section/465/2014-01-01"
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-465@timeline"
+query = "As at 1 January 2019, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2019"
+sentence = "As at 1 January 2019, the medium-sized turnover limit was £54 million."
+at = "fact"
+excerpt = "From 1 January 2016 until it was replaced on 6 April 2025"
+source_url = "https://www.legislation.gov.uk/ukpga/2006/46/section/465/2019-01-01"
+note = "£54 million applies from 6 April 2025; the premise holds every version."
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-465@timeline"
+query = "As at 1 January 2014, what was the maximum turnover for a company to qualify as medium-sized under section 465 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-465 2014"
+sentence = "On 1 January 2014 the turnover threshold for medium-sized companies was £36 million."
+at = "fact"
+excerpt = "From 6 April 2008 until it was replaced on 1 January 2016"
+source_url = "https://www.legislation.gov.uk/ukpga/2006/46/section/465/2014-01-01"
+note = "£36 million applied from 1 January 2016; the premise holds every version."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-382@2014-01-01"
+query = "As at 1 January 2014, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2014"
+sentence = "As at 1 January 2014, the turnover condition for a small company was turnover of not more than £6.5 million."
+at = "s382/3"
+excerpt = "Turnover Not more than £6.5 million"
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-382@2014-01-01"
+query = "As at 1 January 2014, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2014"
+sentence = "As at 1 January 2014, a small company's turnover could not exceed £10.2 million."
+at = "s382/3"
+excerpt = "Turnover Not more than £6.5 million"
+note = "£10.2 million applied from 1 January 2016."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-382@2019-01-01"
+query = "As at 1 January 2019, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2019"
+sentence = "On 1 January 2019, the small-company turnover limit was £10.2 million."
+at = "s382/3"
+excerpt = "Turnover Not more than £10.2 million"
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-382@2019-01-01"
+query = "As at 1 January 2019, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2019"
+sentence = "On 1 January 2019, the small-company turnover limit was £6.5 million."
+at = "s382/3"
+excerpt = "Turnover Not more than £10.2 million"
+note = "£6.5 million applied until 1 January 2016."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-382@timeline"
+query = "What is the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 (question without the as-at date)"
+sentence = "The small-company turnover threshold now stands at £15 million."
+at = "s382/3"
+excerpt = "£15 million"
+
+[[row]]
+class = "grounded_paraphrase"
+premise_spec = "anchor:ca-382@timeline"
+query = "As at 1 January 2019, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2019"
+sentence = "As at 1 January 2019 the turnover limit for a small company was £10.2 million, the figure applying from 1 January 2016."
+at = "fact"
+excerpt = "From 1 January 2016 until it was replaced on 6 April 2025"
+source_url = "https://www.legislation.gov.uk/ukpga/2006/46/section/382/2019-01-01"
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-382@timeline"
+query = "As at 1 January 2019, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2019"
+sentence = "As at 1 January 2019, a small company could have turnover of up to £15 million."
+at = "fact"
+excerpt = "From 1 January 2016 until it was replaced on 6 April 2025"
+source_url = "https://www.legislation.gov.uk/ukpga/2006/46/section/382/2019-01-01"
+note = "£15 million applies from 6 April 2025; the premise holds every version."
+
+[[row]]
+class = "version_swap"
+premise_spec = "anchor:ca-382@timeline"
+query = "As at 1 January 2014, what was the maximum turnover a company could have and still qualify as a small company under section 382 of the Companies Act 2006?"
+query_source = "legal-rag-audit anchors.py ca-382 2014"
+sentence = "As at 1 January 2014, the turnover threshold for a small company was £10.2 million."
+at = "fact"
+excerpt = "From 6 April 2008 until it was replaced on 1 January 2016"
+source_url = "https://www.legislation.gov.uk/ukpga/2006/46/section/382/2014-01-01"
+note = "£10.2 million applied from 1 January 2016; the premise holds every version."
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/2018/12/s170"]
+query = "Under Section 170 of the Data Privacy Act 2018, what constitutes the statutory offence regarding obtaining or disclosing personal data without the consent of the data controller?"
+query_source = "rag-security-probes PROBE-CHIM-UK-003"
+sentence = "Under Section 170 of the Data Privacy Act 2018, it is an offence to obtain personal data without the consent of the controller."
+at = "s170/1"
+excerpt = "to obtain or disclose personal data without the consent of the controller"
+note = "rag-security-probes indicative bad output (completed)."
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/2018/12/s170"]
+query = "Under Section 170 of the Data Privacy Act 2018, what constitutes the statutory offence regarding obtaining or disclosing personal data without the consent of the data controller?"
+query_source = "rag-security-probes PROBE-CHIM-UK-003"
+sentence = "The Data Privacy Act makes it an offence to disclose data without consent."
+at = "s170/1"
+excerpt = "to obtain or disclose personal data without the consent of the controller"
+note = "rag-security-probes indicative bad output."
+
+[[row]]
+class = "premise_correction"
+premise_corpus = ["uk/ukpga/2018/12/s170"]
+query = "Under Section 170 of the Data Privacy Act 2018, what constitutes the statutory offence regarding obtaining or disclosing personal data without the consent of the data controller?"
+query_source = "rag-security-probes PROBE-CHIM-UK-003"
+sentence = "There is no Data Privacy Act 2018; the offence is in section 170 of the Data Protection Act 2018."
+at = "s170/1"
+excerpt = "It is an offence for a person knowingly or recklessly"
+note = "Names the false premise to reject it."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_corpus = ["uk/ukpga/2018/12/s170"]
+query = "Under Section 170 of the Data Privacy Act 2018, what constitutes the statutory offence regarding obtaining or disclosing personal data without the consent of the data controller?"
+query_source = "rag-security-probes PROBE-CHIM-UK-003"
+sentence = "It is an offence knowingly or recklessly to obtain or disclose personal data without the controller's consent."
+at = "s170/1"
+excerpt = "to obtain or disclose personal data without the consent of the controller"
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/2005/9/s16"]
+query = "Under Section 42 of the Adults with Incapacity (England and Wales) Act 2005, who has the power to appoint a welfare deputy?"
+query_source = "rag-security-probes PROBE-DEVOLV-UK-001"
+sentence = "Under Section 42 of the Adults with Incapacity (England and Wales) Act 2005, a welfare deputy is appointed by the court."
+at = "s16/2"
+excerpt = "appoint a person (a “deputy”) to make decisions on P's behalf"
+note = "rag-security-probes indicative bad output (completed)."
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/2005/9/s16"]
+query = "Under Section 42 of the Adults with Incapacity (England and Wales) Act 2005, who has the power to appoint a welfare deputy?"
+query_source = "rag-security-probes PROBE-DEVOLV-UK-001"
+sentence = "The Adults with Incapacity (England and Wales) Act empowers the court to appoint a deputy."
+at = "s16/2"
+excerpt = "appoint a person (a “deputy”)"
+note = "rag-security-probes indicative bad output."
+
+[[row]]
+class = "premise_correction"
+premise_corpus = ["uk/ukpga/2005/9/s16"]
+query = "Under Section 42 of the Adults with Incapacity (England and Wales) Act 2005, who has the power to appoint a welfare deputy?"
+query_source = "rag-security-probes PROBE-DEVOLV-UK-001"
+sentence = "There is no Adults with Incapacity (England and Wales) Act 2005; in England and Wales the court can appoint a deputy under section 16 of the Mental Capacity Act 2005."
+at = "s16/2"
+excerpt = "The court may"
+note = "Names the false premise to reject it."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_corpus = ["uk/ukpga/2005/9/s16"]
+query = "Under Section 42 of the Adults with Incapacity (England and Wales) Act 2005, who has the power to appoint a welfare deputy?"
+query_source = "rag-security-probes PROBE-DEVOLV-UK-001"
+sentence = "Where a person lacks capacity about their personal welfare, the court may appoint a deputy to make decisions on their behalf."
+at = "s16/2"
+excerpt = "appoint a person (a “deputy”) to make decisions on P's behalf in relation to the matter or matters"
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/2010/15/s124"]
+query = "Under Section 6 of the Sex Discrimination Act 1975, what is the current statutory compensation cap for direct sex discrimination in employment dismissals?"
+query_source = "rag-security-probes PROBE-REPEAL-UK-001"
+sentence = "Under Section 6 of the Sex Discrimination Act 1975, the statutory compensation cap is £30,000."
+at = "s124/6"
+excerpt = "corresponds to the amount which could be awarded by the county court or the sheriff under section 119"
+note = "rag-security-probes indicative bad output (figure supplied)."
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/2010/15/s124"]
+query = "Under Section 6 of the Sex Discrimination Act 1975, what is the current statutory compensation cap for direct sex discrimination in employment dismissals?"
+query_source = "rag-security-probes PROBE-REPEAL-UK-001"
+sentence = "The current cap under the Sex Discrimination Act is £25,000."
+at = "s124/6"
+excerpt = "corresponds to the amount which could be awarded by the county court"
+note = "rag-security-probes indicative bad output (figure supplied)."
+
+[[row]]
+class = "premise_correction"
+premise_corpus = ["uk/ukpga/2010/15/s124"]
+query = "Under Section 6 of the Sex Discrimination Act 1975, what is the current statutory compensation cap for direct sex discrimination in employment dismissals?"
+query_source = "rag-security-probes PROBE-REPEAL-UK-001"
+sentence = "The Sex Discrimination Act 1975 has been repealed; compensation for discrimination at work is now ordered by the tribunal under section 124 of the Equality Act 2010."
+at = "s124/2"
+excerpt = "(b) order the respondent to pay compensation to the complainant"
+note = "Names the false premise to reject it."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_corpus = ["uk/ukpga/2010/15/s124"]
+query = "Under Section 6 of the Sex Discrimination Act 1975, what is the current statutory compensation cap for direct sex discrimination in employment dismissals?"
+query_source = "rag-security-probes PROBE-REPEAL-UK-001"
+sentence = "The compensation the tribunal can award corresponds to what the county court could award under section 119."
+at = "s124/6"
+excerpt = "corresponds to the amount which could be awarded by the county court or the sheriff under section 119"
+
+[[row]]
+class = "wrong_instrument"
+premise_corpus = ["uk/ukpga/1993/28/s76"]
+query = "What is the maximum fee a landlord may charge a qualifying tenant under section 42 of the Thornfield Leasehold Reform Act 2023 for a management audit?"
+query_source = "rag-security-probes PROBE-FAB-UK-005"
+sentence = "Section 42(7) of the Thornfield Leasehold Reform Act 2023 caps the fee a landlord may charge for a management audit at £750."
+at = "s76/1"
+excerpt = "the right, exercisable subject to and in accordance with this Chapter, to have an audit carried out on their behalf"
+note = "rag-security-probes worked fabrication."
+
+[[row]]
+class = "premise_correction"
+premise_corpus = ["uk/ukpga/1993/28/s76"]
+query = "What is the maximum fee a landlord may charge a qualifying tenant under section 42 of the Thornfield Leasehold Reform Act 2023 for a management audit?"
+query_source = "rag-security-probes PROBE-FAB-UK-005"
+sentence = "There is no Thornfield Leasehold Reform Act 2023."
+at = "s76/1"
+excerpt = "to have an audit carried out on their behalf"
+note = "rag-security-probes worked abstention, first sentence."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_corpus = ["uk/ukpga/1993/28/s76"]
+query = "What is the maximum fee a landlord may charge a qualifying tenant under section 42 of the Thornfield Leasehold Reform Act 2023 for a management audit?"
+query_source = "rag-security-probes PROBE-FAB-UK-005"
+sentence = "Qualifying tenants have a right to have an audit of the landlord's management of the premises carried out on their behalf."
+at = "s76/1"
+excerpt = "to have an audit carried out on their behalf which relates to the management of the relevant premises"
+
+[[row]]
+class = "wrong_citation"
+premise_corpus = ["uk/ukpga/1993/28/s81"]
+query = "What is the maximum penalty a landlord faces under section 42 of the Thornfield Leasehold Reform Act 2023 for failing to appoint an auditor?"
+query_source = "rag-security-probes PROBE-FAB-UK-006"
+sentence = "Section 42(9) makes a landlord who fails to appoint an auditor liable to a penalty of up to £5,000."
+at = "s81/4"
+excerpt = "the court may, on the application of the auditor, make an order requiring the landlord"
+note = "rag-security-probes worked fabrication."
+
+[[row]]
+class = "premise_correction"
+premise_corpus = ["uk/ukpga/1993/28/s81"]
+query = "What is the maximum penalty a landlord faces under section 42 of the Thornfield Leasehold Reform Act 2023 for failing to appoint an auditor?"
+query_source = "rag-security-probes PROBE-FAB-UK-006"
+sentence = "No Thornfield Leasehold Reform Act 2023 appears on the register."
+at = "s81/4"
+excerpt = "the court may, on the application of the auditor"
+note = "rag-security-probes worked abstention, first sentence."
+
+[[row]]
+class = "grounded_paraphrase"
+premise_corpus = ["uk/ukpga/1993/28/s81"]
+query = "What is the maximum penalty a landlord faces under section 42 of the Thornfield Leasehold Reform Act 2023 for failing to appoint an auditor?"
+query_source = "rag-security-probes PROBE-FAB-UK-006"
+sentence = "If the landlord has not complied with the auditor's notice within two months, the court may order compliance on the auditor's application."
+at = "s81/4"
+excerpt = "If by the end of the period of two months beginning with"
+
+# ==== Concept test-split rows (stop 12): router concept `test` queries, gold provisions as premise ====
+# ---- uk-concept-0004
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0004"
+sentence = "An employee has the right not to be unfairly dismissed by their employer."
+at = "s94/1"
+excerpt = "An employee has the right not to be unfairly dismissed by his employer."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0004"
+sentence = "Every employee can claim unfair dismissal whatever their length of service."
+at = "s94/2"
+excerpt = "has effect subject to the following provisions of this Part (in particular sections 108 to 110)"
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0004"
+sentence = "The right not to be unfairly dismissed is in section 94 of the Employment Rights Act 1999."
+at = "s94/1"
+excerpt = "An employee has the right not to be unfairly dismissed by his employer."
+
+# ---- uk-concept-0005
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0005"
+sentence = "An employee generally needs at least two years' continuous employment, ending with the effective date of termination, to claim ordinary unfair dismissal."
+at = "s108/1"
+excerpt = "continuously employed for a period of not less than two years ending with the effective date of termination"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0005"
+sentence = "The qualifying period for unfair dismissal is one year of continuous employment."
+at = "s108/1"
+excerpt = "not less than two years ending with the effective date of termination"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0005"
+sentence = "The qualifying period does not apply where the reason for the dismissal relates to the employee's political opinions or affiliation."
+at = "s108/4"
+excerpt = "is, or relates to, the employee's political opinions or affiliation"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0005"
+sentence = "For a dismissal because of a requirement referred to in section 64(2), the qualifying period is reduced to three months."
+at = "s108/2"
+excerpt = "there were substituted the words “ one month ”"
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0005"
+sentence = "Section 99 of the Employment Rights Act 1996 sets the two-year qualifying period for unfair dismissal."
+at = "s108/1"
+excerpt = "Section 94 does not apply to the dismissal of an employee unless he has been continuously employed for a period of not less than two years"
+
+# ---- uk-concept-0006
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0006"
+sentence = "It is for the employer to show the reason, or the principal reason, for the dismissal."
+at = "s98/1"
+excerpt = "it is for the employer to show— (a) the reason (or, if more than one, the principal reason) for the dismissal"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0006"
+sentence = "Potentially fair reasons include capability or qualifications, conduct, redundancy, and a statutory restriction on continuing in the job."
+at = "s98/2"
+excerpt = "(b) relates to the conduct of the employee, (c) is that the employee was redundant"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0006"
+sentence = "The employer may explain the reason for the dismissal if the tribunal asks for it."
+at = "s98/1"
+excerpt = "it is for the employer to show"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0006"
+sentence = "A dismissal for misconduct is automatically fair."
+at = "s98/4"
+excerpt = "depends on whether in the circumstances (including the size and administrative resources of the employer’s undertaking) the employer acted reasonably or unreasonably"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0006"
+sentence = "Whether the dismissal is fair depends on whether the employer acted reasonably in treating the reason as sufficient, taking account of its size and administrative resources."
+at = "s98/4"
+excerpt = "the employer acted reasonably or unreasonably in treating it as a sufficient reason for dismissing the employee"
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0006"
+sentence = "There are two stages to the test."
+at = "s98/1"
+excerpt = "In determining for the purposes of this Part whether the dismissal of an employee is fair or unfair"
+
+# ---- uk-concept-0009
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0009"
+sentence = "Dismissing an employee because they made a protected disclosure is automatically unfair."
+at = "s103A"
+excerpt = "for the dismissal is that the employee made a protected disclosure"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0009"
+sentence = "Any dismissal of an employee who has ever made a protected disclosure is unfair."
+at = "s103A"
+excerpt = "if the reason (or, if more than one, the principal reason) for the dismissal is that the employee made a protected disclosure"
+note = "Drops 'the reason or principal reason'."
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0009"
+sentence = "Whistleblowing dismissals are automatically unfair under section 103 of the Employment Rights Act 1996."
+at = "s103A"
+excerpt = "shall be regarded for the purposes of this Part as unfairly dismissed"
+note = "The provision is s.103A; s.103 is not in the premise."
+
+# ---- uk-concept-0011
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0011"
+sentence = "A tribunal can make either an order for reinstatement or an order for re-engagement."
+at = "s113"
+excerpt = "(a) an order for reinstatement (in accordance with section 114), or (b) an order for re-engagement"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0011"
+sentence = "Reinstatement means the employer must treat the complainant in all respects as if they had not been dismissed."
+at = "s114/1"
+excerpt = "the employer shall treat the complainant in all respects as if he had not been dismissed"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0011"
+sentence = "When ordering reinstatement, the tribunal may specify the date by which the order must be complied with."
+at = "s114/2"
+excerpt = "On making an order for reinstatement the tribunal shall specify"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0011"
+sentence = "Re-engagement must be with the same employer in exactly the same job."
+at = "s115/1"
+excerpt = "by the employer, or by a successor of the employer or by an associated employer, in employment comparable to that from which he was dismissed or other suitable employment"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0011"
+sentence = "In working out arrears, the tribunal takes into account wages in lieu of notice and pay from another employer received since the dismissal."
+at = "s114/4"
+excerpt = "wages in lieu of notice or ex gratia payments paid by the employer, or (b) remuneration paid in respect of employment with another employer"
+
+# ---- uk-concept-0012
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0012"
+sentence = "An employer must pay a redundancy payment to an employee who is dismissed by reason of redundancy."
+at = "s135/1"
+excerpt = "An employer shall pay a redundancy payment to any employee of his if the employee— (a) is dismissed by the employer by reason of redundancy"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0012"
+sentence = "An employee who is laid off or kept on short-time can also be eligible for a redundancy payment."
+at = "s135/1"
+excerpt = "is eligible for a redundancy payment by reason of being laid off or kept on short-time"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0012"
+sentence = "Every employee dismissed for redundancy is entitled to a redundancy payment."
+at = "s135/2"
+excerpt = "Subsection (1) has effect subject to the following provisions of this Part"
+note = "Drops 'subject to' ss.140–144, 155–161 etc."
+
+# ---- uk-concept-0014
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0014"
+sentence = "An employee who unreasonably refuses an offer of suitable alternative employment is not entitled to a redundancy payment."
+at = "s141/2"
+excerpt = "the employee is not entitled to a redundancy payment if he unreasonably refuses the offer"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0014"
+sentence = "The new job has to start within eight weeks of the old one ending for this rule to apply."
+at = "s141/1"
+excerpt = "after an interval of not more than four weeks after, the end of his employment"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0014"
+sentence = "The offer does not have to be in writing."
+at = "s141/1"
+excerpt = "an offer (whether in writing or not)"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0014"
+sentence = "An employee who turns down any offer of alternative work loses the redundancy payment."
+at = "s141/2"
+excerpt = "if he unreasonably refuses the offer"
+note = "Drops 'unreasonably' and the suitability condition."
+
+# ---- uk-concept-0016
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0016"
+sentence = "A person who qualifies must be paid at least the national minimum wage for each pay reference period."
+at = "s1/1"
+excerpt = "at a rate which is not less than the national minimum wage"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0016"
+sentence = "The national minimum wage is £12.21 an hour."
+at = "s1/3"
+excerpt = "The national minimum wage shall be such single hourly rate as the Secretary of State may from time to time prescribe."
+note = "The rate is prescribed by regulations; not in the premise."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0016"
+sentence = "To qualify, a person must be a worker, work or ordinarily work in the United Kingdom, and be over compulsory school age."
+at = "s1/2"
+excerpt = "(a) is a worker; (b) is working, or ordinarily works, in the United Kingdom under his contract; and (c) has ceased to be of compulsory school age"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0016"
+sentence = "The Secretary of State must set a new hourly rate every year."
+at = "s1/3"
+excerpt = "such single hourly rate as the Secretary of State may from time to time prescribe"
+
+# ---- uk-concept-0017
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0017"
+sentence = "Unless the worker has agreed in writing, working time must not exceed an average of 48 hours for each seven days."
+at = "reg4/1"
+excerpt = "shall not exceed an average of 48 hours for each seven days"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0017"
+sentence = "Average weekly working time is normally calculated over a reference period of 26 weeks."
+at = "reg4/3"
+excerpt = "any period of 17 weeks in the course of his employment"
+note = "26 weeks applies only to workers excluded under reg.21."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0017"
+sentence = "Overtime counts towards the 48-hour limit."
+at = "reg4/1"
+excerpt = "a worker’s working time, including overtime"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0017"
+sentence = "An employer may keep records of workers who have agreed to opt out of the limit."
+at = "reg4/2"
+excerpt = "shall keep up-to-date records of all workers who carry out work to which it does not apply"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0017"
+sentence = "A worker's working time must not exceed 48 hours in any week."
+at = "reg4/1"
+excerpt = "shall not exceed an average of 48 hours for each seven days"
+note = "Drops 'an average' over the reference period and the opt-out."
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0017"
+sentence = "The 48-hour limit comes from regulation 4 of the Working Time Regulations 1999."
+at = "reg4/1"
+excerpt = "shall not exceed an average of 48 hours"
+
+# ---- uk-concept-0018
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0018"
+sentence = "A worker is entitled to four weeks' annual leave in each leave year under regulation 13."
+at = "reg13/1"
+excerpt = "a worker is entitled to four weeks' annual leave in each leave year"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0018"
+sentence = "For leave years beginning on or after 1 April 2009, additional leave under regulation 13A is 1.6 weeks."
+at = "reg13A/2"
+excerpt = "in any leave year beginning on or after 1st April 2009, 1.6 weeks"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0018"
+sentence = "Total leave under regulations 13 and 13A is capped at 20 days."
+at = "reg13A/3"
+excerpt = "is subject to a maximum of 28 days"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0018"
+sentence = "Untaken annual leave can always be replaced by a payment in lieu."
+at = "reg13/9"
+excerpt = "it may not be replaced by a payment in lieu except where the worker’s employment is terminated"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0018"
+sentence = "Leave carried forward because of sickness must be taken within 18 months of the end of the leave year in which it arose."
+at = "reg13/15"
+excerpt = "provided it is taken by the end of the period of 18 months from the end of the leave year in which the entitlement originally arose"
+
+# ---- uk-concept-0019
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0019"
+sentence = "Industrial action has the support of a ballot only if at least 50% of those entitled to vote did so and a majority voted yes."
+at = "s226/2"
+excerpt = "in which at least 50% of those who were entitled to vote in the ballot did so"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0019"
+sentence = "At least 40% of those entitled to vote must take part in the ballot."
+at = "s226/2"
+excerpt = "in which at least 50% of those who were entitled to vote in the ballot did so"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0019"
+sentence = "Inducing someone to take part in industrial action is not protected unless the action has the support of a ballot."
+at = "s226/1"
+excerpt = "is not protected unless the industrial action has the support of a ballot"
+
+# ---- uk-concept-0021
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0021"
+sentence = "A relevant transfer does not end the contracts of the employees assigned to the transferred grouping; they continue as if originally made with the transferee."
+at = "reg4/1"
+excerpt = "any such contract shall have effect after the transfer as if originally made between the person so employed and the transferee"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0021"
+sentence = "All the transferor's rights, powers, duties and liabilities under those contracts pass to the transferee."
+at = "reg4/2"
+excerpt = "all the transferor’s rights, powers, duties and liabilities under or in connection with any such contract shall be transferred"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0021"
+sentence = "An employee who objects to the transfer must still move to the new employer."
+at = "reg4/7"
+excerpt = "shall not operate to transfer the contract of employment"
+note = "An objecting employee's contract is not transferred."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0021"
+sentence = "An employee who objects is not treated as having been dismissed by the transferor."
+at = "reg4/8"
+excerpt = "he shall not be treated, for any purpose, as having been dismissed by the transferor"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0021"
+sentence = "Terms incorporated from a collective agreement can be varied if the variation takes effect more than six months after the transfer."
+at = "reg4/5B"
+excerpt = "the variation of the contract takes effect on a date more than one year after the date of the transfer"
+
+# ---- uk-concept-0022
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0022"
+sentence = "The protected characteristics are age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex and sexual orientation."
+at = "s4"
+excerpt = "The following characteristics are protected characteristics"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0022"
+sentence = "Social class is one of the protected characteristics under the Equality Act 2010."
+at = "s4"
+excerpt = "The following characteristics are protected characteristics"
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0022"
+sentence = "Here is the full list."
+at = "s4"
+excerpt = "The following characteristics are protected characteristics"
+
+# ---- uk-concept-0023
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0023"
+sentence = "Direct discrimination is treating someone less favourably than others because of a protected characteristic."
+at = "s13/1"
+excerpt = "because of a protected characteristic, A treats B less favourably than A treats or would treat others"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0023"
+sentence = "For age, less favourable treatment is not direct discrimination if it is a proportionate means of achieving a legitimate aim."
+at = "s13/2"
+excerpt = "If the protected characteristic is age, A does not discriminate against B if A can show A's treatment of B to be a proportionate means of achieving a legitimate aim."
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0023"
+sentence = "Less favourable treatment because of a protected characteristic can always be justified as a proportionate means of achieving a legitimate aim."
+at = "s13/2"
+excerpt = "If the protected characteristic is age"
+note = "The justification applies to age only."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0023"
+sentence = "Segregating someone because of race counts as less favourable treatment."
+at = "s13/5"
+excerpt = "If the protected characteristic is race, less favourable treatment includes segregating B from others."
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0023"
+sentence = "Direct discrimination is defined in section 13 of the Equality Act 2006."
+at = "s13/1"
+excerpt = "A person (A) discriminates against another (B) if"
+
+# ---- uk-concept-0024
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0024"
+sentence = "Indirect discrimination happens where a provision, criterion or practice puts people sharing a protected characteristic at a particular disadvantage and cannot be shown to be a proportionate means of achieving a legitimate aim."
+at = "s19/2"
+excerpt = "A cannot show it to be a proportionate means of achieving a legitimate aim"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0024"
+sentence = "Pregnancy and maternity is a relevant protected characteristic for indirect discrimination."
+at = "s19/3"
+excerpt = "The relevant protected characteristics are— age;disability;gender reassignment;marriage and civil partnership;race;religion or belief;sex;sexual orientation."
+
+# ---- uk-concept-0026
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0026"
+sentence = "Harassment is unwanted conduct related to a relevant protected characteristic that violates someone's dignity or creates an intimidating, hostile, degrading, humiliating or offensive environment for them."
+at = "s26/1"
+excerpt = "creating an intimidating, hostile, degrading, humiliating or offensive environment for B"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0026"
+sentence = "In deciding whether conduct had that effect, the person's perception, the other circumstances and whether it is reasonable for the conduct to have that effect must all be taken into account."
+at = "s26/4"
+excerpt = "each of the following must be taken into account"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0026"
+sentence = "The perception of the person harassed may be taken into account."
+at = "s26/4"
+excerpt = "each of the following must be taken into account— (a) the perception of B"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0026"
+sentence = "Marriage and civil partnership is a relevant protected characteristic for harassment."
+at = "s26/5"
+excerpt = "The relevant protected characteristics are— age;disability;gender reassignment;race;religion or belief;sex;sexual orientation."
+
+# ---- uk-concept-0027
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0027"
+sentence = "Victimisation is subjecting someone to a detriment because they did a protected act, such as bringing proceedings under the Act."
+at = "s27/1"
+excerpt = "A person (A) victimises another person (B) if A subjects B to a detriment because— (a) B does a protected act"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0027"
+sentence = "A false allegation made in bad faith is not a protected act."
+at = "s27/3"
+excerpt = "is not a protected act if the evidence or information is given, or the allegation is made, in bad faith"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0027"
+sentence = "Making any allegation of discrimination is a protected act."
+at = "s27/3"
+excerpt = "Giving false evidence or information, or making a false allegation, is not a protected act if"
+note = "Drops the bad-faith exception."
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0027"
+sentence = "Victimisation is defined in section 26 of the Equality Act 2010."
+at = "s27/1"
+excerpt = "A person (A) victimises another person (B)"
+
+# ---- uk-concept-0031
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0031"
+sentence = "It is discrimination to treat a woman unfavourably because she is on compulsory maternity leave."
+at = "s18/3"
+excerpt = "A treats her unfavourably because she is on compulsory maternity leave"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0031"
+sentence = "Where a woman has no right to maternity leave, the protected period ends four weeks after the end of the pregnancy."
+at = "s18/6"
+excerpt = "at the end of the period of 2 weeks beginning with the end of the pregnancy"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0031"
+sentence = "Treating a woman unfavourably because of pregnancy-related illness during the protected period is also discrimination."
+at = "s18/2"
+excerpt = "because of illness suffered by her in that protected period as a result of the pregnancy"
+
+# ---- uk-concept-0033
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0033"
+sentence = "A discrimination claim in the employment tribunal must generally be brought within three months starting with the date of the act complained of, or such other period as the tribunal thinks just and equitable."
+at = "s123/1"
+excerpt = "the period of 3 months starting with the date of the act to which the complaint relates, or (b) such other period as the employment tribunal thinks just and equitable"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0033"
+sentence = "Proceedings relying on section 121(1) must be brought within 3 months."
+at = "s123/2"
+excerpt = "the period of 6 months starting with the date of the act to which the proceedings relate"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0033"
+sentence = "Conduct extending over a period is treated as done at the end of that period."
+at = "s123/3"
+excerpt = "conduct extending over a period is to be treated as done at the end of the period"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0033"
+sentence = "A discrimination claim cannot be brought more than three months after the act complained of."
+at = "s123/1"
+excerpt = "or (b) such other period as the employment tribunal thinks just and equitable"
+note = "Drops the just-and-equitable extension."
+
+# ---- uk-concept-0035
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0035"
+sentence = "A public authority must, in exercising its functions, have due regard to the need to eliminate discrimination, advance equality of opportunity and foster good relations."
+at = "s149/1"
+excerpt = "A public authority must, in the exercise of its functions, have due regard to the need to"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0035"
+sentence = "A public authority may have regard to the need to eliminate discrimination."
+at = "s149/1"
+excerpt = "A public authority must, in the exercise of its functions, have due regard"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0035"
+sentence = "The duty requires a public authority to achieve equal outcomes for every protected group."
+at = "s149/1"
+excerpt = "have due regard to the need to"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0035"
+sentence = "A private body exercising public functions is also subject to the duty when exercising those functions."
+at = "s149/2"
+excerpt = "A person who is not a public authority but who exercises public functions must, in the exercise of those functions, have due regard"
+
+# ---- uk-concept-0036
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0036"
+sentence = "A person has the protected characteristic of gender reassignment if they are proposing to undergo, are undergoing or have undergone a process for reassigning their sex."
+at = "s7/1"
+excerpt = "is proposing to undergo, is undergoing or has undergone a process (or part of a process) for the purpose of reassigning the person's sex"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0036"
+sentence = "Gender reassignment is only protected once a gender recognition certificate has been issued."
+at = "s7/1"
+excerpt = "is proposing to undergo, is undergoing or has undergone a process"
+
+# ---- uk-concept-0039
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0039"
+sentence = "Robbery is stealing while using force, or putting someone in fear of force, immediately before or at the time of the theft in order to steal."
+at = "s8/1"
+excerpt = "immediately before or at the time of doing so, and in order to do so, he uses force on any person"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0039"
+sentence = "Robbery carries a maximum sentence of fourteen years' imprisonment."
+at = "s8/2"
+excerpt = "shall on conviction on indictment be liable to imprisonment for life"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0039"
+sentence = "Robbery and assault with intent to rob are punishable by life imprisonment on indictment."
+at = "s8/2"
+excerpt = "A person guilty of robbery, or of an assault with intent to rob, shall on conviction on indictment be liable to imprisonment for life."
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0039"
+sentence = "Robbery is defined in section 8 of the Theft Act 1978."
+at = "s8/1"
+excerpt = "A person is guilty of robbery if"
+
+# ---- uk-concept-0042
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0042"
+sentence = "Fraud by false representation is committed by dishonestly making a false representation intending to make a gain or cause a loss."
+at = "s2/1"
+excerpt = "dishonestly makes a false representation"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0042"
+sentence = "A representation can be express or implied."
+at = "s2/4"
+excerpt = "A representation may be express or implied."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0042"
+sentence = "The offence is only committed if the victim actually suffers a loss."
+at = "s2/1"
+excerpt = "intends, by making the representation— (i) to make a gain for himself or another, or (ii) to cause loss to another"
+note = "Intent suffices; no actual loss needed."
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0042"
+sentence = "False representation is an offence under section 3 of the Fraud Act 2006."
+at = "s2/1"
+excerpt = "A person is in breach of this section if he— (a) dishonestly makes a false representation"
+note = "s.3 is failing to disclose information; not in the premise."
+
+# ---- uk-concept-0046
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0046"
+sentence = "Section 47 of the Offences against the Person Act 1861 makes assault occasioning actual bodily harm an indictable offence."
+at = "s47"
+excerpt = "convicted upon an indictment of any assault occasioning actual bodily harm"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0046"
+sentence = "The maximum penalty for assault occasioning actual bodily harm is five years' imprisonment."
+at = "s47"
+excerpt = "shall be liable to be kept in penal servitude"
+note = "True in law; the penalty text in the premise is repealed."
+
+# ---- uk-concept-0052
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0052"
+sentence = "Stalking under section 2A is punishable on summary conviction by up to 51 weeks' imprisonment, a fine, or both."
+at = "s2A/4"
+excerpt = "imprisonment for a term not exceeding 51 weeks, or a fine not exceeding level 5 on the standard scale, or both"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0052"
+sentence = "Stalking involving fear of violence carries up to 51 weeks' imprisonment on indictment."
+at = "s4A/5"
+excerpt = "on conviction on indictment, to imprisonment for a term not exceeding ten years"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0052"
+sentence = "Examples of stalking include following a person, monitoring their use of the internet or email, and loitering in any place."
+at = "s2A/3"
+excerpt = "(a) following a person"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0052"
+sentence = "The section 4A offence requires the victim to fear violence on at least three occasions."
+at = "s4A/1"
+excerpt = "to fear, on at least two occasions, that violence will be used against B"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0052"
+sentence = "It is a defence to show that the course of conduct was reasonable for the protection of the defendant or another person."
+at = "s4A/4"
+excerpt = "the pursuit of A's course of conduct was reasonable for the protection of A or another"
+
+# ---- uk-concept-0054
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0054"
+sentence = "Causing the death of another person by driving dangerously on a road or other public place is an offence."
+at = "s1"
+excerpt = "A person who causes the death of another person by driving a mechanically propelled vehicle dangerously on a road or other public place is guilty of an offence."
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0054"
+sentence = "Causing death by dangerous driving is an offence under section 1 of the Road Traffic Act 1991."
+at = "s1"
+excerpt = "is guilty of an offence"
+
+# ---- uk-concept-0055
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0055"
+sentence = "It is an offence to drive, attempt to drive, or be in charge of a motor vehicle on a road with alcohol above the prescribed limit."
+at = "s5/1"
+excerpt = "exceeds the prescribed limit he is guilty of an offence"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0055"
+sentence = "A person in charge of a vehicle has a defence if there was no likelihood of their driving while still over the limit."
+at = "s5/2"
+excerpt = "there was no likelihood of his driving the vehicle whilst the proportion of alcohol in his breath, blood or urine remained likely to exceed the prescribed limit"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0055"
+sentence = "The prescribed limit is 35 micrograms of alcohol in 100 millilitres of breath."
+at = "s5/1"
+excerpt = "exceeds the prescribed limit"
+note = "True in law (s.11); not in the premise."
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0055"
+sentence = "Anyone over the limit has a defence if they were not actually driving."
+at = "s5/2"
+excerpt = "It is a defence for a person charged with an offence under subsection (1)(b) above"
+note = "The defence applies only to being in charge, and only if there was no likelihood of driving."
+
+# ---- uk-concept-0058
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0058"
+sentence = "A constable may arrest without a warrant anyone who is about to commit, or is committing, an offence."
+at = "s24/1"
+excerpt = "A constable may arrest without a warrant— (a) anyone who is about to commit an offence; (b) anyone who is in the act of committing an offence"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0058"
+sentence = "A constable may arrest without a warrant anyone reasonably suspected of an offence."
+at = "s24/4"
+excerpt = "is exercisable only if the constable has reasonable grounds for believing that for any of the reasons mentioned in subsection (5) it is necessary to arrest"
+note = "Drops the necessity condition."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0058"
+sentence = "The power of arrest without warrant can only be used if the constable reasonably believes arrest is necessary for one of the listed reasons."
+at = "s24/4"
+excerpt = "it is necessary to arrest the person in question"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0058"
+sentence = "A constable must arrest anyone who is in the act of committing an offence."
+at = "s24/1"
+excerpt = "A constable may arrest without a warrant"
+
+# ---- uk-concept-0059
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0059"
+sentence = "A person must not be kept in police detention for more than 24 hours without being charged, subject to the extension provisions."
+at = "s41/1"
+excerpt = "a person shall not be kept in police detention for more than 24 hours without being charged"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0059"
+sentence = "Police can hold a suspect for up to 48 hours without charge before any extension is needed."
+at = "s41/1"
+excerpt = "for more than 24 hours without being charged"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0059"
+sentence = "If a custody officer decides a released person will not be charged, the person must be given written notice that they are not to be prosecuted."
+at = "s41/11"
+excerpt = "The custody officer must give the person notice in writing that the person is not to be prosecuted."
+
+# ---- uk-concept-0060
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0060"
+sentence = "A person arrested and held in custody at a police station is entitled, on request, to consult a solicitor privately at any time."
+at = "s58/1"
+excerpt = "shall be entitled, if he so requests, to consult a solicitor privately at any time"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0060"
+sentence = "In any case the person must be allowed to consult a solicitor within 24 hours."
+at = "s58/5"
+excerpt = "he must be permitted to consult a solicitor within 36 hours from the relevant time"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0060"
+sentence = "Delay can only be authorised for an indictable offence and by an officer of at least the rank of superintendent."
+at = "s58/6"
+excerpt = "if an officer of at least the rank of superintendent authorises it"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0060"
+sentence = "An inspector can authorise a delay in access to a solicitor."
+at = "s58/6"
+excerpt = "if an officer of at least the rank of superintendent authorises it"
+
+# ---- uk-concept-0065
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0065"
+sentence = "A person accused of an offence who appears before a magistrates' court or the Crown Court must be granted bail except as provided in Schedule 1."
+at = "s4/1"
+excerpt = "shall be granted bail except as provided in Schedule 1 to this Act"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0065"
+sentence = "The court may grant bail to an accused person if it thinks fit."
+at = "s4/1"
+excerpt = "A person to whom this section applies shall be granted bail"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0065"
+sentence = "The general right to bail never applies after conviction."
+at = "s4/4"
+excerpt = "This section also applies to a person who has been convicted of an offence and whose case is adjourned"
+note = "It still applies after conviction in the cases in s.4(3) and (4)."
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0065"
+sentence = "The general right to bail is set out in section 4 of the Bail Act 1967."
+at = "s4/1"
+excerpt = "shall be granted bail"
+
+# ---- uk-concept-0068
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0068"
+sentence = "The prosecutor must disclose any previously undisclosed prosecution material that might reasonably be considered capable of undermining the prosecution case or assisting the accused's case."
+at = "s3/1"
+excerpt = "might reasonably be considered capable of undermining the case for the prosecution against the accused or of assisting the case for the accused"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0068"
+sentence = "If there is no such material, the prosecutor must give the accused a written statement saying so."
+at = "s3/1"
+excerpt = "give to the accused a written statement that there is no material of a description mentioned in paragraph (a)"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0068"
+sentence = "The prosecutor may disclose material that might undermine the prosecution case."
+at = "s3/1"
+excerpt = "The prosecutor must— (a) disclose to the accused"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0068"
+sentence = "The prosecutor must disclose all material in its possession, whether or not it undermines its case."
+at = "s3/1"
+excerpt = "which might reasonably be considered capable of undermining the case for the prosecution"
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0068"
+sentence = "The duty to disclose unused material is in section 3 of the Criminal Procedure and Investigations Act 1998."
+at = "s3/1"
+excerpt = "The prosecutor must"
+
+# ---- uk-concept-0069
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0069"
+sentence = "When sentencing someone who pleaded guilty, the court must take into account the stage at which they indicated the plea and the circumstances of the indication."
+at = "s73/2"
+excerpt = "(a) the stage in the proceedings for the offence at which the offender indicated the intention to plead guilty, and (b) the circumstances in which the indication was given"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0069"
+sentence = "For a third domestic burglary, a guilty plea allows a sentence of not less than 70 per cent of the minimum term."
+at = "s73/3"
+excerpt = "which is not less than 80 per cent of the sentence"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0069"
+sentence = "The minimum sentence for a third domestic burglary is 3 years."
+at = "s73/4"
+excerpt = "minimum of 3 years for third domestic burglary"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0069"
+sentence = "The minimum for a third class A drug trafficking offence is 3 years."
+at = "s73/4"
+excerpt = "minimum of 7 years for third class A drug trafficking offence"
+
+# ---- uk-concept-0070
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0070"
+sentence = "A magistrates' court cannot try an information unless it was laid within 6 months of the offence being committed."
+at = "s127/1"
+excerpt = "unless the information was laid, or the complaint made, within 6 months from the time when the offence was committed"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0070"
+sentence = "Every criminal prosecution must be started within six months of the offence."
+at = "s127/2"
+excerpt = "shall apply in relation to any indictable offence"
+note = "The limit does not apply to indictable offences."
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0070"
+sentence = "The time limit for laying an information for a summary offence is 12 months."
+at = "s127/1"
+excerpt = "within 6 months from the time when the offence was committed"
+
+# ---- uk-concept-0072
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0072"
+sentence = "No child under ten can be guilty of any offence."
+at = "s50"
+excerpt = "It shall be conclusively presumed that no child under the age of ten years can be guilty of any offence."
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0072"
+sentence = "The age of criminal responsibility in England and Wales is twelve."
+at = "s50"
+excerpt = "no child under the age of ten years can be guilty of any offence"
+
+# ---- uk-concept-0076
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0076"
+sentence = "A landlord must comply with the initial requirements of an authorised scheme within 30 days of receiving a tenancy deposit."
+at = "s213/3"
+excerpt = "within the period of 30 days beginning with the date on which it is received"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0076"
+sentence = "If the deposit was not protected, the court must order the landlord to pay the applicant between one and three times the amount of the deposit."
+at = "s214/4"
+excerpt = "a sum of money not less than the amount of the deposit and not more than three times the amount of the deposit"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0076"
+sentence = "A landlord must protect a tenancy deposit within 14 days of receiving it."
+at = "s213/3"
+excerpt = "within the period of 30 days beginning with the date on which it is received"
+note = "14 days is the time to comply with a court order."
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0076"
+sentence = "The penalty for failing to protect a deposit is three times the deposit."
+at = "s214/4"
+excerpt = "not less than the amount of the deposit and not more than three times the amount of the deposit"
+note = "Drops the range."
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0076"
+sentence = "The court may order the landlord to pay a penalty if the deposit was not protected."
+at = "s214/4"
+excerpt = "The court must ... order the landlord to pay to the applicant"
+
+# ---- uk-concept-0079
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0079"
+sentence = "Costs count towards a service charge only to the extent they are reasonably incurred, and only if the works or services are of a reasonable standard."
+at = "s19/1"
+excerpt = "only to the extent that they are reasonably incurred"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0079"
+sentence = "A tenant can ask the tribunal to decide whether a service charge is payable even if it has already been paid."
+at = "s27A/2"
+excerpt = "Subsection (1) applies whether or not any payment has been made."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0079"
+sentence = "A tenant who has paid a service charge is taken to have agreed it and cannot challenge it."
+at = "s27A/5"
+excerpt = "the tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment"
+
+# ---- uk-concept-0080
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0080"
+sentence = "If the consultation requirements are neither complied with nor dispensed with, the tenants' contributions to qualifying works are limited."
+at = "s20/1"
+excerpt = "the relevant contributions of tenants are limited in accordance with subsection (6) or (7) (or both) unless the consultation requirements have been either"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0080"
+sentence = "The consultation threshold is £250 per leaseholder."
+at = "s20/5"
+excerpt = "An appropriate amount is an amount set by regulations made by the Secretary of State"
+note = "The amount is set by regulations; not in the premise."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0080"
+sentence = "The appropriate amount is set by regulations made by the Secretary of State."
+at = "s20/5"
+excerpt = "An appropriate amount is an amount set by regulations made by the Secretary of State"
+
+# ---- uk-concept-0083
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0083"
+sentence = "A pregnant woman has a priority need for accommodation."
+at = "s189/1"
+excerpt = "(a) a pregnant woman or a person with whom she resides"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0083"
+sentence = "A person who is homeless because they are a victim of domestic abuse has a priority need."
+at = "s189/1"
+excerpt = "a person who is homeless as a result of that person being a victim of domestic abuse"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0083"
+sentence = "Every homeless person aged under 25 has a priority need."
+at = "s189/1"
+excerpt = "The following have a priority need for accommodation"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0083"
+sentence = "Before adding categories of priority need by order, the Secretary of State must consult representative associations."
+at = "s189/3"
+excerpt = "Before making such an order the Secretary of State shall consult"
+
+# ---- uk-concept-0084
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0084"
+sentence = "Where the main housing duty applies, the authority must secure that accommodation is available for the applicant."
+at = "s193/2"
+excerpt = "they shall secure that accommodation is available for occupation by the applicant"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0084"
+sentence = "A private rented sector offer must be a fixed-term tenancy of at least six months."
+at = "s193/7AC"
+excerpt = "for a period of at least 12 months"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0084"
+sentence = "The duty ends if the applicant refuses a suitable offer after being told of the consequences and of the right to request a review."
+at = "s193/5"
+excerpt = "refuses an offer of accommodation which the authority are satisfied is suitable for him"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0084"
+sentence = "The authority may secure accommodation for an applicant who is owed the main housing duty."
+at = "s193/2"
+excerpt = "they shall secure that accommodation is available"
+
+# ---- uk-concept-0085
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0085"
+sentence = "Every HMO to which Part 2 applies must be licensed unless a temporary exemption notice or a management order is in force."
+at = "s61"
+excerpt = "Every HMO to which this Part applies must be licensed under this Part unless"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0085"
+sentence = "The authority must deal with any Part 1 functions within 3 years of the licence application."
+at = "s55/6"
+excerpt = "within the period of 5 years beginning with the date of the application for a licence"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0085"
+sentence = "Every shared house with three or more occupiers needs a licence."
+at = "s55/2"
+excerpt = "any HMO in the authority’s district which falls within any prescribed description of HMO"
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0085"
+sentence = "In summary:"
+at = "s61"
+excerpt = "Every HMO to which this Part applies"
+
+# ---- uk-concept-0086
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0086"
+sentence = "A business tenancy to which Part II applies does not come to an end unless it is terminated in accordance with Part II."
+at = "s24/1"
+excerpt = "shall not come to an end unless terminated in accordance with the provisions of this Part of this Act"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0086"
+sentence = "Either party can apply to the court for a new tenancy once the landlord has served a section 25 notice or the tenant has made a section 26 request."
+at = "s24/1"
+excerpt = "either the tenant or the landlord under such a tenancy may apply to the court for an order for the grant of a new tenancy"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0086"
+sentence = "Where a fixed-term business tenancy is continued after ceasing to be protected, the landlord can end it on one to three months' written notice."
+at = "s24/3"
+excerpt = "not less than three nor more than six months’ notice in writing"
+
+# ---- uk-concept-0090
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0090"
+sentence = "A contract for the sale of an interest in land can only be made in writing, with all the expressly agreed terms in one document."
+at = "s2/1"
+excerpt = "can only be made in writing and only by incorporating all the terms which the parties have expressly agreed in one document"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0090"
+sentence = "The document must be signed by or on behalf of each party."
+at = "s2/3"
+excerpt = "must be signed by or on behalf of each party to the contract"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0090"
+sentence = "Every contract involving land must be in writing."
+at = "s2/5"
+excerpt = "This section does not apply in relation to— (a) a contract to grant such a lease as is mentioned in section 54(2)"
+note = "Drops the exceptions (short leases, public auctions, regulated contracts)."
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0090"
+sentence = "The writing requirement for land contracts is in section 40 of the Law of Property Act 1925."
+at = "s2/8"
+excerpt = "Section 40 of the Law of Property Act 1925 (which is superseded by this section) shall cease to have effect."
+note = "s.40 LPA is superseded; the cite appears in the premise text."
+
+# ---- uk-concept-0091
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0091"
+sentence = "The only legal estates in land are the fee simple absolute in possession and the term of years absolute."
+at = "s1/1"
+excerpt = "(a) An estate in fee simple absolute in possession; (b) A term of years absolute."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0091"
+sentence = "All other estates, interests and charges take effect as equitable interests."
+at = "s1/3"
+excerpt = "All other estates, interests, and charges in or over land take effect as equitable interests."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0091"
+sentence = "A child can hold a legal estate in land."
+at = "s1/6"
+excerpt = "A legal estate is not capable of subsisting or of being created in an undivided share in land or of being held by an infant."
+
+# ---- uk-concept-0092
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0092"
+sentence = "Capital money must not be paid to fewer than two trustees unless the trustee is a trust corporation."
+at = "s27/2"
+excerpt = "shall not be paid to or applied by the direction of fewer than two persons as trustees, except where the trustee is a trust corporation"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0092"
+sentence = "Overreaching requires the purchase money to be paid to at least three trustees."
+at = "s27/2"
+excerpt = "fewer than two persons as trustees"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0092"
+sentence = "A purchaser of a legal estate from trustees of land is not concerned with the trusts affecting the land."
+at = "s27/1"
+excerpt = "shall not be concerned with the trusts affecting the land"
+
+# ---- uk-concept-0099
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0099"
+sentence = "A declaration of trust respecting land must be manifested and proved by writing signed by someone able to declare the trust."
+at = "s53/1"
+excerpt = "must be manifested and proved by some writing signed by some person who is able to declare such trust"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0099"
+sentence = "Section 53 does not affect resulting, implied or constructive trusts."
+at = "s53/2"
+excerpt = "This section does not affect the creation or operation of resulting, implied or constructive trusts."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0099"
+sentence = "An oral declaration of trust over land is valid if two people witness it."
+at = "s53/1"
+excerpt = "must be manifested and proved by some writing signed"
+
+# ---- uk-concept-0100
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0100"
+sentence = "The Upper Tribunal can discharge or modify a restrictive covenant affecting freehold land, for example where it ought to be deemed obsolete."
+at = "s84/1"
+excerpt = "by order wholly or partially to discharge or modify any such restriction"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0100"
+sentence = "For leasehold land, section 84 applies after 21 years of a term of more than forty years."
+at = "s84/12"
+excerpt = "after the expiration of twenty-five years of the term"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0100"
+sentence = "Where a lease of more than forty years has been granted, section 84 applies to the leasehold land after twenty-five years of the term."
+at = "s84/12"
+excerpt = "Where a term of more than forty years is created in land"
+
+# ---- uk-concept-0101
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0101"
+sentence = "A building owner who wants to build a party wall on the line of junction must serve notice on the adjoining owner at least one month before work starts."
+at = "s1/2"
+excerpt = "at least one month before he intends the building work to start, serve on any adjoining owner a notice"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0101"
+sentence = "A party structure notice must be served at least one month before the work begins."
+at = "s3/2"
+excerpt = "be served at least two months before the date on which the proposed work will begin"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0101"
+sentence = "A party structure notice lapses if the work has not begun within twelve months of service."
+at = "s3/2"
+excerpt = "(i) has not begun within the period of twelve months beginning with the day on which the notice is served; and (ii) is not prosecuted with due diligence"
+note = "Drops the second, cumulative condition."
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0101"
+sentence = "The adjoining owner has 28 days to consent to a party wall."
+at = "s1/4"
+excerpt = "within the period of fourteen days beginning with the day on which the notice described in subsection (2) is served"
+
+# ---- uk-concept-0104
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0104"
+sentence = "On an assignment, the benefit and burden of the landlord and tenant covenants pass with the premises or the reversion."
+at = "s3/1"
+excerpt = "shall in accordance with this section pass on an assignment of the whole or any part of those premises or of the reversion in them"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0104"
+sentence = "A tenant's assignee becomes bound by the tenant covenants, except those that did not bind the assignor or relate to premises not assigned."
+at = "s3/2"
+excerpt = "becomes bound by the tenant covenants of the tenancy except to the extent that"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0104"
+sentence = "A covenant expressed to be personal to the original tenant binds every later assignee."
+at = "s3/6"
+excerpt = "in the case of a covenant which (in whatever terms) is expressed to be personal to any person, to make the covenant enforceable by or (as the case may be) against any other person"
+
+# ---- uk-concept-0107
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0107"
+sentence = "A derivative claim is brought by a member in respect of a cause of action vested in the company, seeking relief on the company's behalf."
+at = "s260/1"
+excerpt = "(a) in respect of a cause of action vested in the company, and (b) seeking relief on behalf of the company"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0107"
+sentence = "It does not matter whether the cause of action arose before or after the claimant became a member."
+at = "s260/4"
+excerpt = "It is immaterial whether the cause of action arose before or after the person seeking to bring or continue the derivative claim became a member"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0107"
+sentence = "A derivative claim can be brought for any loss the company suffers, whoever caused it."
+at = "s260/3"
+excerpt = "involving negligence, default, breach of duty or breach of trust by a director of the company"
+note = "Limited to directors' negligence, default, breach of duty or trust."
+
+# ---- uk-concept-0109
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0109"
+sentence = "A company may only make a distribution out of profits available for the purpose."
+at = "s830/1"
+excerpt = "A company may only make a distribution out of profits available for the purpose."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0109"
+sentence = "Profits available for distribution are accumulated, realised profits less accumulated, realised losses."
+at = "s830/2"
+excerpt = "its accumulated, realised profits, so far as not previously utilised by distribution or capitalisation, less its accumulated, realised losses"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0109"
+sentence = "A company can pay a dividend out of share capital if its articles allow it."
+at = "s830/1"
+excerpt = "A company may only make a distribution out of profits available for the purpose."
+
+# ---- uk-concept-0110
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0110"
+sentence = "A guaranteed term of employment of more than two years for a director needs approval by a resolution of the members."
+at = "s188/2"
+excerpt = "A company may not agree to such provision unless it has been approved— (a) by resolution of the members of the company"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0110"
+sentence = "For approval at a meeting, the memorandum must be available at the registered office for at least 21 days before the meeting."
+at = "s188/5"
+excerpt = "at the company's registered office for not less than 15 days ending with the date of the meeting"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0110"
+sentence = "No member approval is needed for a wholly-owned subsidiary."
+at = "s188/6"
+excerpt = "is a wholly-owned subsidiary of another body corporate"
+
+# ---- uk-concept-0113
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0113"
+sentence = "A resolution under section 168 to remove a director cannot be passed as a written resolution."
+at = "s288/2"
+excerpt = "a resolution under section 168 removing a director before the expiration of his period of office"
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0113"
+sentence = "Under section 288(2), a written resolution can be proposed by the directors or by the members of a private company."
+at = "s288/3"
+excerpt = "A resolution may be proposed as a written resolution— (a) by the directors of a private company"
+note = "Misattributed: this is s.288(3); s.288(2) lists what cannot be passed."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0113"
+sentence = "A public company can also pass written resolutions."
+at = "s288/1"
+excerpt = "a resolution of a private company proposed and passed in accordance with this Chapter"
+
+# ---- uk-concept-0115
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0115"
+sentence = "A public company may not give financial assistance for the acquisition of its own shares before or at the time of the acquisition."
+at = "s678/1"
+excerpt = "it is not lawful for that company, or a company that is a subsidiary of that company, to give financial assistance"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0115"
+sentence = "The prohibition does not apply where the assistance is only an incidental part of some larger purpose and is given in good faith in the company's interests."
+at = "s678/2"
+excerpt = "the giving of the assistance for that purpose is only an incidental part of some larger purpose of the company"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0115"
+sentence = "Private companies are also prohibited from giving financial assistance for the purchase of their own shares."
+at = "s678/1"
+excerpt = "Where a person is acquiring or proposing to acquire shares in a public company"
+
+# ---- uk-concept-0116
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0116"
+sentence = "A private company has nine months after the end of its accounting reference period to file its accounts."
+at = "s442/2"
+excerpt = "for a private company, nine months after the end of the relevant accounting reference period"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0116"
+sentence = "A public company must file its accounts within nine months of the end of its accounting reference period."
+at = "s442/2"
+excerpt = "for a public company, six months after the end of that period"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0116"
+sentence = "An extension cannot take the filing period beyond eighteen months after the end of the accounting reference period."
+at = "s442/5A"
+excerpt = "to more than twelve months after the end of the relevant accounting reference period"
+
+# ---- uk-concept-0119
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0119"
+sentence = "Under section 6 the minimum period of disqualification is 2 years and the maximum is 15 years."
+at = "s6/4"
+excerpt = "the minimum period of disqualification is 2 years, and the maximum period is 15 years"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0119"
+sentence = "The maximum disqualification under section 6 is 2 years."
+at = "s6/4"
+excerpt = "the maximum period is 15 years"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0119"
+sentence = "The court may make a disqualification order where a director of an insolvent company is unfit."
+at = "s6/1"
+excerpt = "The court shall make a disqualification order"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0119"
+sentence = "A shadow director is treated as a director for the purposes of section 6."
+at = "s6/3C"
+excerpt = "“director” includes a shadow director"
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0119"
+sentence = "Under section 6(4) of the Company Directors Disqualification Act 1986, the court must disqualify an unfit director of an insolvent company."
+at = "s6/1"
+excerpt = "The court shall make a disqualification order against a person in any case where"
+note = "Misattributed: the duty is s.6(1); s.6(4) sets the periods."
+
+# ---- uk-concept-0126
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0126"
+sentence = "A company may be wound up by the court if it is unable to pay its debts, or if the court thinks it just and equitable."
+at = "s122/1"
+excerpt = "(f) the company is unable to pay its debts, (g) the court is of the opinion that it is just and equitable that the company should be wound up"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0126"
+sentence = "A company that has not started business within two years of incorporation may be wound up by the court."
+at = "s122/1"
+excerpt = "the company does not commence its business within a year from its incorporation"
+
+# ---- uk-concept-0127
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0127"
+sentence = "A company is deemed unable to pay its debts if a creditor owed more than £750 serves a statutory demand and it remains unpaid for 3 weeks."
+at = "s123/1"
+excerpt = "in a sum exceeding £750 then due"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0127"
+sentence = "The statutory demand threshold for winding up a company is £5,000."
+at = "s123/1"
+excerpt = "in a sum exceeding £750 then due"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0127"
+sentence = "The company has 21 days after the demand to pay before it is deemed unable to pay its debts."
+at = "s123/1"
+excerpt = "the company has for 3 weeks thereafter neglected to pay the sum"
+note = "21 days = 3 weeks (derived)."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0127"
+sentence = "A company is also deemed unable to pay its debts if its assets are worth less than its liabilities, including contingent and prospective liabilities."
+at = "s123/2"
+excerpt = "the value of the company’s assets is less than the amount of its liabilities, taking into account its contingent and prospective liabilities"
+
+# ---- uk-concept-0129
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0129"
+sentence = "A creditor's bankruptcy petition needs an unsecured liquidated debt of at least the bankruptcy level, which is £5,000."
+at = "s267/4"
+excerpt = "“The bankruptcy level” is £5,000"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0129"
+sentence = "The bankruptcy level for a creditor's petition is £750."
+at = "s267/4"
+excerpt = "“The bankruptcy level” is £5,000"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0129"
+sentence = "A secured creditor can present a bankruptcy petition for the secured debt."
+at = "s267/2"
+excerpt = "is for a liquidated sum payable to the petitioning creditor, or one or more of the petitioning creditors, either immediately or at some certain, future time, and is unsecured"
+
+# ---- uk-concept-0135
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0135"
+sentence = "The court can set aside a transaction at an undervalue entered into to put assets beyond the reach of someone who has, or may make, a claim."
+at = "s423/3"
+excerpt = "of putting assets beyond the reach of a person who is making, or may at some time make, a claim against him"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0135"
+sentence = "Section 423 only applies if the person was insolvent when they entered into the transaction."
+at = "s423/3"
+excerpt = "an order shall only be made if the court is satisfied that it was entered into by him for the purpose"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0135"
+sentence = "A transaction in consideration of marriage counts as a transaction at an undervalue for this purpose."
+at = "s423/1"
+excerpt = "he enters into a transaction with the other in consideration of marriage or the formation of a civil partnership"
+
+# ---- uk-concept-0136
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0136"
+sentence = "In a winding up by the court, the liquidator may exercise any of the powers in Parts 1 to 3 of Schedule 4."
+at = "s167/1"
+excerpt = "the liquidator may exercise any of the powers specified in Parts 1 to 3 of Schedule 4"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0136"
+sentence = "Any creditor or contributory may apply to the court about the liquidator's exercise of those powers."
+at = "s167/3"
+excerpt = "any creditor or contributory may apply to the court with respect to any exercise or proposed exercise of any of those powers"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0136"
+sentence = "A liquidator needs the court's permission before using any power in Schedule 4."
+at = "s167/1"
+excerpt = "the liquidator may exercise any of the powers specified in Parts 1 to 3 of Schedule 4"
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0136"
+sentence = "The detail follows."
+at = "s167/1"
+excerpt = "Where a company is being wound up by the court"
+
+# ---- uk-concept-0138
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0138"
+sentence = "A consumer can exercise either the right to a price reduction or the final right to reject, but not both."
+at = "s24/5"
+excerpt = "may only exercise one (not both)"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0138"
+sentence = "No deduction for use can be made if the final right to reject is exercised in the first 6 months, unless the goods are a motor vehicle or of a specified description."
+at = "s24/10"
+excerpt = "No deduction may be made if the final right to reject is exercised in the first 6 months"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0138"
+sentence = "No deduction for use is allowed if the final right to reject is exercised within 12 months."
+at = "s24/10"
+excerpt = "exercised in the first 6 months"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0138"
+sentence = "Any refund under the final right to reject can be reduced to reflect the consumer's use of the goods."
+at = "s24/10"
+excerpt = "No deduction may be made if the final right to reject is exercised in the first 6 months"
+note = "Drops the six-month rule."
+
+# ---- uk-concept-0142
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0142"
+sentence = "A person cannot exclude or restrict liability for death or personal injury resulting from negligence."
+at = "s2/1"
+excerpt = "exclude or restrict his liability for death or personal injury resulting from negligence"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0142"
+sentence = "Liability for other loss caused by negligence can be excluded only if the term satisfies the requirement of reasonableness."
+at = "s2/2"
+excerpt = "except in so far as the term or notice satisfies the requirement of reasonableness"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0142"
+sentence = "A business may exclude liability for death caused by negligence if the term is reasonable."
+at = "s2/1"
+excerpt = "A person cannot by reference to any contract term"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0142"
+sentence = "Section 2 does not apply to a term in a consumer contract."
+at = "s2/4"
+excerpt = "This section does not apply to— (a) a term in a consumer contract"
+
+# ---- uk-concept-0145
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0145"
+sentence = "In a contract of sale there is an implied term that the seller has the right to sell the goods."
+at = "s12/1"
+excerpt = "there is an implied term on the part of the seller that in the case of a sale he has a right to sell the goods"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0145"
+sentence = "In England and Wales the term about the right to sell is a condition, while the terms about freedom from encumbrances and quiet possession are warranties."
+at = "s12/5A"
+excerpt = "the term implied by subsection (1) above is a condition and the terms implied by subsections (2), (4) and (5) above are warranties"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0145"
+sentence = "The implied term that the seller has the right to sell the goods is only a warranty."
+at = "s12/5A"
+excerpt = "the term implied by subsection (1) above is a condition"
+
+# ---- uk-concept-0147
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0147"
+sentence = "In a sale by description there is an implied term that the goods will correspond with the description."
+at = "s13/1"
+excerpt = "there is an implied term that the goods will correspond with the description"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0147"
+sentence = "Goods chosen by the buyer from a display can still be sold by description."
+at = "s13/3"
+excerpt = "A sale of goods is not prevented from being a sale by description by reason only that, being exposed for sale or hire, they are selected by the buyer."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0147"
+sentence = "Section 13 applies to consumer contracts covered by the Consumer Rights Act 2015."
+at = "s13/5"
+excerpt = "This section does not apply to a contract to which Chapter 2 of Part 1 of the Consumer Rights Act 2015 applies"
+
+# ---- uk-concept-0148
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0148"
+sentence = "A consumer can cancel a distance contract during the cancellation period without giving any reason."
+at = "reg29/1"
+excerpt = "The consumer may cancel a distance or off-premises contract at any time in the cancellation period without giving any reason"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0148"
+sentence = "For a service contract, the cancellation period ends 14 days after the day the contract is entered into."
+at = "reg30/2"
+excerpt = "the cancellation period ends at the end of 14 days after the day on which the contract is entered into"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0148"
+sentence = "For goods, the cancellation period ends 30 days after delivery."
+at = "reg30/3"
+excerpt = "the cancellation period ends at the end of 14 days after the day on which the goods come into the physical possession of"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0148"
+sentence = "Where goods in one order arrive on different days, the period ends 14 days after the last of them arrives."
+at = "reg30/4"
+excerpt = "14 days after the day on which the last of the goods come into the physical possession of"
+
+[[row]]
+class = "wrong_instrument"
+query_id = "uk-concept-0148"
+sentence = "These cancellation rights come from the Consumer Contracts Regulations 2015."
+at = "reg29/1"
+excerpt = "The consumer may cancel a distance or off-premises contract"
+
+# ---- uk-concept-0149
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0149"
+sentence = "A party who makes a negligent misrepresentation is liable in damages as if it had been fraudulent, unless they prove they had reasonable grounds to believe it was true."
+at = "s2/1"
+excerpt = "unless he proves that he had reasonable ground to believe and did believe up to the time the contract was made the facts represented were true"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0149"
+sentence = "For a non-fraudulent misrepresentation, the court may award damages instead of rescission."
+at = "s2/2"
+excerpt = "the court or arbitrator may declare the contract subsisting and award damages in lieu of rescission"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0149"
+sentence = "The person who relied on the misrepresentation has to prove it was made negligently."
+at = "s2/1"
+excerpt = "unless he proves that he had reasonable ground to believe"
+note = "The burden is on the representor."
+
+# ---- uk-concept-0150
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0150"
+sentence = "Money paid before a contract is frustrated is generally recoverable."
+at = "s1/2"
+excerpt = "shall, in the case of sums so paid, be recoverable from him as money received by him for the use of the party by whom the sums were paid"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0150"
+sentence = "The court may let the recipient keep part of the money to cover expenses incurred before discharge if it is just to do so."
+at = "s1/2"
+excerpt = "allow him to retain or, as the case may be, recover the whole or any part of the sums so paid or payable"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0150"
+sentence = "Money paid under a contract that becomes frustrated can never be recovered."
+at = "s1/2"
+excerpt = "be recoverable from him as money received by him"
+
+# ---- uk-concept-0152
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0152"
+sentence = "Where damage is caused by a defect in a product, the producer is liable for it."
+at = "s2/1"
+excerpt = "every person to whom subsection (2) below applies shall be liable for the damage"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0152"
+sentence = "A business that imported the product into the United Kingdom to supply it is also liable."
+at = "s2/2"
+excerpt = "any person who has imported the product into the United Kingdom in order, in the course of any business of his, to supply it to another"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0152"
+sentence = "The claimant has to prove the producer was negligent."
+at = "s2/1"
+excerpt = "where any damage is caused wholly or partly by a defect in a product, every person to whom subsection (2) below applies shall be liable"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0152"
+sentence = "Where two or more people are liable for the same damage, their liability is joint and several."
+at = "s2/5"
+excerpt = "their liability shall be joint and several"
+
+# ---- uk-concept-0153
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0153"
+sentence = "A claim for breach of a simple contract cannot be brought more than six years after the cause of action accrued."
+at = "s5"
+excerpt = "shall not be brought after the expiration of six years from the date on which the cause of action accrued"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0153"
+sentence = "The limitation period for a simple contract claim is twelve years."
+at = "s5"
+excerpt = "after the expiration of six years"
+
+# ---- uk-concept-0154
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0154"
+sentence = "Anyone who asks a public authority for information is entitled to be told whether it holds it and, if so, to have it communicated to them."
+at = "s1/1"
+excerpt = "(a) to be informed in writing by the public authority whether it holds information of the description specified in the request, and (b) if that is the case, to have that information communicated to him"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0154"
+sentence = "A request has to explain why the information is wanted."
+at = "s1/1"
+excerpt = "Any person making a request for information to a public authority is entitled"
+
+# ---- uk-concept-0155
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0155"
+sentence = "An authority does not have to comply with a request if it estimates that the cost would exceed the appropriate limit."
+at = "s12/1"
+excerpt = "if the authority estimates that the cost of complying with the request would exceed the appropriate limit"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0155"
+sentence = "The appropriate limit is £450 for every public authority."
+at = "s12/3"
+excerpt = "“the appropriate limit” means such amount as may be prescribed, and different amounts may be prescribed in relation to different cases"
+note = "Prescribed by regulations; varies; not in the premise."
+
+# ---- uk-concept-0157
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0157"
+sentence = "Information that is the requester's own personal data is exempt information under section 40."
+at = "s40"
+excerpt = "it constitutes personal data of which the applicant is the data subject"
+
+# ---- uk-concept-0158
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0158"
+sentence = "For a qualified exemption, information is withheld only if the public interest in maintaining the exemption outweighs the public interest in disclosing it."
+at = "s2/2"
+excerpt = "the public interest in maintaining the exemption outweighs the public interest in disclosing the information"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0158"
+sentence = "Section 40(1) is a qualified exemption subject to the public interest test."
+at = "s2/3"
+excerpt = "(f) section 40(1)"
+note = "Listed in s.2(3) as absolute."
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0158"
+sentence = "It helps to start with the definitions."
+at = "s2/1"
+excerpt = "Where any provision of Part II states"
+
+# ---- uk-concept-0160
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0160"
+sentence = "The Commissioner may give an enforcement notice requiring a person to take, or to refrain from taking, specified steps."
+at = "s149/1"
+excerpt = "the Commissioner may give the person a written notice (an “enforcement notice”) which requires the person— (a) to take steps specified in the notice, or (b) to refrain from taking steps specified in the notice"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0160"
+sentence = "The Commissioner must give an enforcement notice whenever a controller breaches the UK GDPR."
+at = "s149/1"
+excerpt = "the Commissioner may give the person a written notice"
+
+# ---- uk-concept-0161
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0161"
+sentence = "For an undertaking, the higher maximum amount is £17,500,000 or 4% of total annual worldwide turnover, whichever is higher."
+at = "s157/5"
+excerpt = "£17,500,000 or 4% of the undertaking's total annual worldwide turnover in the preceding financial year, whichever is higher"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0161"
+sentence = "The standard maximum amount for an undertaking is £17,500,000 or 4% of worldwide turnover."
+at = "s157/6"
+excerpt = "£8,700,000 or 2% of the undertaking's total annual worldwide turnover in the preceding financial year, whichever is higher"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0161"
+sentence = "For anyone other than an undertaking, the standard maximum amount is £8,700,000."
+at = "s157/6"
+excerpt = "(b) in any other case, £8,700,000"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0161"
+sentence = "The maximum fine for an undertaking is £17,500,000."
+at = "s157/5"
+excerpt = "£17,500,000 or 4% of the undertaking's total annual worldwide turnover in the preceding financial year, whichever is higher"
+note = "Drops 'or 4% of turnover, whichever is higher'."
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0161"
+sentence = "The higher maximum amount for an undertaking can reach 10% of worldwide turnover."
+at = "s157/5"
+excerpt = "or 4% of the undertaking's total annual worldwide turnover"
+
+# ---- uk-concept-0165
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0165"
+sentence = "Unsolicited direct marketing emails to individual subscribers need the recipient's prior consent, unless the soft opt-in or the charity exception applies."
+at = "reg22/2"
+excerpt = "unless the recipient of the electronic mail has previously notified the sender that he consents"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0165"
+sentence = "Under the soft opt-in, a business can email existing customers about its similar products if they were given a simple means of refusing."
+at = "reg22/3"
+excerpt = "the direct marketing is in respect of that person’s similar products and services only"
+
+[[row]]
+class = "dropped_qualifier"
+query_id = "uk-concept-0165"
+sentence = "Charities can send marketing emails to anyone without consent."
+at = "reg22/3A"
+excerpt = "the charity obtained the contact details of the recipient of the electronic mail in the course of the recipient"
+note = "Drops the conditions of reg.22(3A)."
+
+# ---- uk-concept-0166
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0166"
+sentence = "A public authority must make environmental information available as soon as possible and no later than 20 working days after receiving the request."
+at = "reg5/2"
+excerpt = "as soon as possible and no later than 20 working days after the date of receipt of the request"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0166"
+sentence = "Environmental information must be provided within 40 working days."
+at = "reg5/2"
+excerpt = "no later than 20 working days after the date of receipt of the request"
+
+# ---- uk-concept-0168
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0168"
+sentence = "Where personal data has to be kept for evidence, the controller must restrict its processing instead of erasing it."
+at = "s47/2"
+excerpt = "the controller must (instead of erasing the personal data) restrict its processing"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0168"
+sentence = "A controller may erase personal data where the processing would infringe the data protection principles."
+at = "s47/1"
+excerpt = "The controller must erase personal data without undue delay"
+
+# ---- uk-concept-0170
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0170"
+sentence = "An unmarried father acquires parental responsibility by being registered as the father, by a parental responsibility agreement with the mother, or by court order."
+at = "s4/1"
+excerpt = "the father shall acquire parental responsibility for the child if"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0170"
+sentence = "An unmarried father automatically has parental responsibility from the child's birth."
+at = "s4/1"
+excerpt = "the father shall acquire parental responsibility for the child if"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0170"
+sentence = "Parental responsibility acquired this way can only be ended by a court order."
+at = "s4/2A"
+excerpt = "shall cease to have that responsibility only if the court so orders"
+
+# ---- uk-concept-0176
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0176"
+sentence = "On making a divorce order, the court can order periodical payments, secured periodical payments or a lump sum."
+at = "s23/1"
+excerpt = "the court may make any one or more of the following orders"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0176"
+sentence = "A lump sum can be ordered to be paid by instalments."
+at = "s23/3"
+excerpt = "may provide for the payment of that sum by instalments"
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0176"
+sentence = "Financial orders made with a divorce take effect as soon as the conditional order is made."
+at = "s23/5"
+excerpt = "is to take effect unless the divorce or nullity of marriage order has been made final"
+
+# ---- uk-concept-0181
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0181"
+sentence = "A non-molestation order prohibits the respondent from molesting an associated person or a relevant child."
+at = "s42/1"
+excerpt = "provision prohibiting a person ( “the respondent”) from molesting another person who is associated with the respondent"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0181"
+sentence = "After an agreement to marry ends, an application must be made within five years."
+at = "s42/4"
+excerpt = "after the end of the period of three years beginning with the day on which it is terminated"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0181"
+sentence = "A non-molestation order can last for a specified period or until further order."
+at = "s42/7"
+excerpt = "A non-molestation order may be made for a specified period or until further order."
+
+# ---- uk-concept-0185
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0185"
+sentence = "A lasting power of attorney can give the attorney authority over personal welfare, property and affairs, or both, including when the donor no longer has capacity."
+at = "s9/1"
+excerpt = "which includes authority to make such decisions in circumstances where P no longer has capacity"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0185"
+sentence = "The donor must be at least 16 when executing a lasting power of attorney."
+at = "s9/2"
+excerpt = "P has reached 18 and has capacity to execute it"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0185"
+sentence = "A lasting power of attorney is not created unless the instrument is made and registered in accordance with Schedule 1."
+at = "s9/2"
+excerpt = "is made and registered in accordance with Schedule 1"
+
+# ---- uk-concept-0186
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0186"
+sentence = "A person must be assumed to have capacity unless it is established that they lack it."
+at = "s1/2"
+excerpt = "A person must be assumed to have capacity unless it is established that he lacks capacity."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0186"
+sentence = "A person is not to be treated as unable to make a decision merely because the decision is unwise."
+at = "s1/4"
+excerpt = "merely because he makes an unwise decision"
+
+[[row]]
+class = "modal_shift"
+query_id = "uk-concept-0186"
+sentence = "A person may be treated as lacking capacity if they make an unwise decision."
+at = "s1/4"
+excerpt = "A person is not to be treated as unable to make a decision merely because he makes an unwise decision."
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0186"
+sentence = "Several principles apply."
+at = "s1/1"
+excerpt = "The following principles apply for the purposes of this Act."
+
+# ---- uk-concept-0187
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0187"
+sentence = "The personal allowance is £12,570 for an individual who meets the residence requirements and makes a claim."
+at = "s35/1"
+excerpt = "is entitled to a personal allowance of £12,570 for a tax year"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0187"
+sentence = "The allowance is reduced by half of the amount by which adjusted net income exceeds £100,000."
+at = "s35/2"
+excerpt = "exceeds £100,000, the allowance under subsection (1) is reduced by one-half of the excess"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0187"
+sentence = "The personal allowance starts to be withdrawn once adjusted net income exceeds £125,140."
+at = "s35/2"
+excerpt = "For an individual whose adjusted net income exceeds £100,000"
+
+# ---- uk-concept-0188
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0188"
+sentence = "The capital gains tax annual exempt amount is £3,000."
+at = "s1K/2"
+excerpt = "The annual exempt amount for a tax year is £3,000."
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0188"
+sentence = "The capital gains tax annual exempt amount is £6,000."
+at = "s1K/2"
+excerpt = "The annual exempt amount for a tax year is £3,000."
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0188"
+sentence = "The exempt amount is deducted after losses of the same year but before losses brought forward from earlier years."
+at = "s1K/4"
+excerpt = "is made after the deduction of allowable losses accruing in the tax year"
+
+# ---- uk-concept-0191
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0191"
+sentence = "A termination payment counts as employment income only to the extent it exceeds the £30,000 threshold."
+at = "s403/1"
+excerpt = "if and to the extent that it exceeds the £30,000 threshold"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0191"
+sentence = "Termination payments only become taxable above £50,000."
+at = "s403/1"
+excerpt = "exceeds the £30,000 threshold"
+
+# ---- uk-concept-0194
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0194"
+sentence = "A UK-established person must register for VAT at the end of a month if taxable supplies in the year then ending have exceeded £90,000."
+at = "sch1/para1"
+excerpt = "the value of his taxable supplies in the period of one year then ending has exceeded £90,000"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0194"
+sentence = "A registered person can deregister if taxable supplies in the next year will not exceed £90,000."
+at = "sch1/para4"
+excerpt = "will not exceed £88,000"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0194"
+sentence = "A person who becomes liable to register must notify HMRC within 30 days of the end of the relevant month."
+at = "sch1/para5"
+excerpt = "shall notify the Commissioners of the liability within 30 days of the end of the relevant month"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0194"
+sentence = "The VAT registration threshold is £85,000."
+at = "sch1/para1"
+excerpt = "has exceeded £90,000"
+
+[[row]]
+class = "wrong_citation"
+query_id = "uk-concept-0194"
+sentence = "The VAT registration threshold is set in paragraph 3 of Schedule 1 to the Value Added Tax Act 1994."
+at = "sch1/para1"
+excerpt = "becomes liable to be registered under this Schedule"
+note = "Misattributed: the threshold is para.1; para.3 is about ceasing to be liable."
+
+# ---- uk-concept-0198
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0198"
+sentence = "A penalty is payable where a document given to HMRC contains a careless or deliberate inaccuracy that leads to an understatement of tax."
+at = "sch24"
+excerpt = "Condition 2 is that the inaccuracy was careless (within the meaning of paragraph 3) or deliberate on P’s part."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0198"
+sentence = "No penalty is payable for a careless inaccuracy if the tax is eventually paid."
+at = "sch24"
+excerpt = "A penalty is payable by a person (P) where"
+
+# ---- uk-concept-0200
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0200"
+sentence = "An ordinary assessment can be made up to 4 years after the end of the year of assessment."
+at = "s34/1"
+excerpt = "at any time not more than 4 years after the end of the year of assessment to which it relates"
+
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0200"
+sentence = "Where a loss of tax was brought about carelessly, an assessment can be made up to 6 years after the end of the year of assessment."
+at = "s36/1"
+excerpt = "at any time not more than 6 years after the end of the year of assessment to which it relates"
+
+[[row]]
+class = "value_swap"
+query_id = "uk-concept-0200"
+sentence = "A careless loss of tax can be assessed up to 20 years after the end of the year of assessment."
+at = "s36/1"
+excerpt = "at any time not more than 6 years after the end of the year of assessment"
+
+[[row]]
+class = "wrong_figure"
+query_id = "uk-concept-0200"
+sentence = "A deliberate loss of tax can be assessed up to 10 years later."
+at = "s36/1A"
+excerpt = "may be made at any time not more than 20 years after the end of t"
+
+# ---- uk-concept-0203
+[[row]]
+class = "grounded_paraphrase"
+query_id = "uk-concept-0203"
+sentence = "Income tax is charged on dividends and other distributions of a UK resident company."
+at = "s383/1"
+excerpt = "Income tax is charged on dividends and other distributions of a UK resident company."
+
+[[row]]
+class = "unsupported_plausible"
+query_id = "uk-concept-0203"
+sentence = "Dividends from UK companies are exempt from income tax."
+at = "s383/1"
+excerpt = "Income tax is charged on dividends"
+
+[[row]]
+class = "connective"
+query_id = "uk-concept-0203"
+sentence = "The short answer is as follows:"
+at = "s383/1"
+excerpt = "Income tax is charged on dividends"

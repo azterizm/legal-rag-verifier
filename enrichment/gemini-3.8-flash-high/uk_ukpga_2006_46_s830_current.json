@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2006/46/s830@current",
+ "section": "uk/ukpga/2006/46/s830",
+ "version": "current",
+ "source_sha256": "0d35948aaa517bc98179c6b8a8d0f14540d4b9a7bd0b38fc5e228261ef800eb3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company may only make a distribution out of profits available for that purpose.",
+    "quote": "A company may only make a distribution out of profits available for the purpose."
+   },
+   {
+    "requirement": "A company's profits available for distribution are its accumulated, realised profits, so far as not previously utilised by distribution or capitalisation, less its accumulated, realised losses, so far as not previously written off in a reduction or reorganisation of capital duly made.",
+    "quote": "A company's profits available for distribution are its accumulated, realised profits, so far as not previously utilised by distribution or capitalisation, less its accumulated, realised losses, so far as not previously written off in a reduction or reorganisation of capital duly made."
+   },
+   {
+    "requirement": "The statutory calculation of a company's profits available for distribution operates subject to sections 832, 833A and 835 concerning investment companies and Solvency 2 insurance companies.",
+    "quote": "Subsection (2) has effect subject to sections 832 , 833A and 835 (investment companies and Solvency 2 insurance companies)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A company may only make a distribution out of profits available for that purpose.",
+   "quote": "A company may only make a distribution out of profits available for the purpose."
+  },
+  {
+   "requirement": "A company's profits available for distribution are its accumulated, realised profits, so far as not previously utilised by distribution or capitalisation, less its accumulated, realised losses, so far as not previously written off in a reduction or reorganisation of capital duly made.",
+   "quote": "A company's profits available for distribution are its accumulated, realised profits, so far as not previously utilised by distribution or capitalisation, less its accumulated, realised losses, so far as not previously written off in a reduction or reorganisation of capital duly made."
+  },
+  {
+   "requirement": "The statutory calculation of a company's profits available for distribution operates subject to sections 832, 833A and 835 concerning investment companies and Solvency 2 insurance companies.",
+   "quote": "Subsection (2) has effect subject to sections 832 , 833A and 835 (investment companies and Solvency 2 insurance companies)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

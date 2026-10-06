@@ -1,0 +1,167 @@
+{
+ "key": "uk/ukpga/1973/18/s1@current",
+ "section": "uk/ukpga/1973/18/s1",
+ "version": "current",
+ "source_sha256": "57c2e50e3e358d5ea274d27ea721be0f4bbd743b9033f4e0b25cf685d8060b95",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to section 3, either party or both parties to a marriage may apply to the court for a divorce order dissolving the marriage on the ground of irretrievable breakdown.",
+    "quote": "either or both parties to a marriage may apply to the court for an order (a “divorce order”) which dissolves the marriage on the ground that the marriage has broken down irretrievably"
+   },
+   {
+    "requirement": "An applicant or applicants applying for a divorce order must accompany the application with a statement that the marriage has broken down irretrievably.",
+    "quote": "An application under subsection (1) must be accompanied by a statement by the applicant or applicants that the marriage has broken down irretrievably."
+   },
+   {
+    "requirement": "The court dealing with an application for a divorce order must treat the applicant's or applicants' statement as conclusive evidence that the marriage has broken down irretrievably.",
+    "quote": "take the statement to be conclusive evidence that the marriage has broken down irretrievably"
+   },
+   {
+    "requirement": "The court dealing with an application for a divorce order must make a divorce order.",
+    "quote": "make a divorce order"
+   },
+   {
+    "requirement": "A divorce order must, in the first instance, be a conditional order.",
+    "quote": "is, in the first instance, a conditional order"
+   },
+   {
+    "requirement": "A divorce order may not be made final before the end of the period of 6 weeks from the making of the conditional order.",
+    "quote": "may not be made final before the end of the period of 6 weeks from the making of the conditional order"
+   },
+   {
+    "requirement": "Where an application is to proceed as an application by one party to the marriage only, the court may not make a conditional order unless that party has confirmed to the court that they wish the application to continue.",
+    "quote": "in the case of an application that is to proceed as an application by one party to the marriage only, that party has confirmed to the court that they wish the application to continue"
+   },
+   {
+    "requirement": "Where an application is to proceed as an application by both parties to the marriage, the court may not make a conditional order unless both parties have confirmed to the court that they wish the application to continue.",
+    "quote": "in the case of an application that is to proceed as an application by both parties to the marriage, those parties have confirmed to the court that they wish the application to continue"
+   },
+   {
+    "requirement": "A party may not confirm to the court that they wish the application to continue before the end of 20 weeks from the start of proceedings.",
+    "quote": "a party may not give confirmation for the purposes of this subsection before the end of the period of 20 weeks from the start of proceedings"
+   },
+   {
+    "requirement": "The Lord Chancellor may amend section 1 by statutory instrument order to shorten or lengthen the period under subsection (4)(b) or (5).",
+    "quote": "The Lord Chancellor may by order made by statutory instrument amend this section so as to shorten or lengthen the period for the purposes of subsection (4)(b) or (5)."
+   },
+   {
+    "requirement": "The Lord Chancellor may not specify a period under subsection (6) that would result in the combined total days for subsections (4)(b) and (5) exceeding 26 weeks.",
+    "quote": "the Lord Chancellor may not under subsection (6) provide for a period which would result in the total number of days in the periods for the purposes of subsections (4)(b) and (5) (taken together) exceeding 26 weeks"
+   },
+   {
+    "requirement": "The court dealing with a particular case may by order shorten the period that would otherwise apply under subsection (4)(b) or (5).",
+    "quote": "In a particular case the court dealing with the case may by order shorten the period that would otherwise be applicable for the purposes of subsection (4)(b) or (5)."
+   },
+   {
+    "requirement": "A statutory instrument containing an order made by the Lord Chancellor under subsection (6) may not be made unless a draft has been laid before and approved by a resolution of each House of Parliament.",
+    "quote": "A statutory instrument containing an order under subsection (6) may not be made unless a draft of the instrument has been laid before and approved by a resolution of each House of Parliament."
+   },
+   {
+    "requirement": "Without prejudice to section 75 of the Courts Act 2003, Family Procedure Rules may provide procedure for a joint application to become a sole application, including treating a joint statement as made by one party only.",
+    "quote": "Without prejudice to the generality of section 75 of the Courts Act 2003, Family Procedure Rules may make provision as to the procedure for an application under subsection (1) by both parties to a marriage to become an application by one party to the marriage only (including provision for a statement made under subsection (2) in connection with the application to be treated as made by one party to the marriage only)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period from the making of the conditional order before a divorce order may be made final",
+    "value": "6 weeks",
+    "quote": "the period of 6 weeks from the making of the conditional order"
+   },
+   {
+    "what": "minimum period from the start of proceedings before a party may give confirmation that they wish the application to continue",
+    "value": "20 weeks",
+    "quote": "the period of 20 weeks from the start of proceedings"
+   },
+   {
+    "what": "maximum total number of days permitted for the periods under subsections (4)(b) and (5) taken together under an order by the Lord Chancellor",
+    "value": "26 weeks",
+    "quote": "periods for the purposes of subsections (4)(b) and (5) (taken together) exceeding 26 weeks"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to section 3, either party or both parties to a marriage may apply to the court for a divorce order dissolving the marriage on the ground of irretrievable breakdown.",
+   "quote": "either or both parties to a marriage may apply to the court for an order (a “divorce order”) which dissolves the marriage on the ground that the marriage has broken down irretrievably"
+  },
+  {
+   "requirement": "An applicant or applicants applying for a divorce order must accompany the application with a statement that the marriage has broken down irretrievably.",
+   "quote": "An application under subsection (1) must be accompanied by a statement by the applicant or applicants that the marriage has broken down irretrievably."
+  },
+  {
+   "requirement": "The court dealing with an application for a divorce order must treat the applicant's or applicants' statement as conclusive evidence that the marriage has broken down irretrievably.",
+   "quote": "take the statement to be conclusive evidence that the marriage has broken down irretrievably"
+  },
+  {
+   "requirement": "The court dealing with an application for a divorce order must make a divorce order.",
+   "quote": "make a divorce order"
+  },
+  {
+   "requirement": "A divorce order must, in the first instance, be a conditional order.",
+   "quote": "is, in the first instance, a conditional order"
+  },
+  {
+   "requirement": "A divorce order may not be made final before the end of the period of 6 weeks from the making of the conditional order.",
+   "quote": "may not be made final before the end of the period of 6 weeks from the making of the conditional order"
+  },
+  {
+   "requirement": "Where an application is to proceed as an application by one party to the marriage only, the court may not make a conditional order unless that party has confirmed to the court that they wish the application to continue.",
+   "quote": "in the case of an application that is to proceed as an application by one party to the marriage only, that party has confirmed to the court that they wish the application to continue"
+  },
+  {
+   "requirement": "Where an application is to proceed as an application by both parties to the marriage, the court may not make a conditional order unless both parties have confirmed to the court that they wish the application to continue.",
+   "quote": "in the case of an application that is to proceed as an application by both parties to the marriage, those parties have confirmed to the court that they wish the application to continue"
+  },
+  {
+   "requirement": "A party may not confirm to the court that they wish the application to continue before the end of 20 weeks from the start of proceedings.",
+   "quote": "a party may not give confirmation for the purposes of this subsection before the end of the period of 20 weeks from the start of proceedings"
+  },
+  {
+   "requirement": "The Lord Chancellor may amend section 1 by statutory instrument order to shorten or lengthen the period under subsection (4)(b) or (5).",
+   "quote": "The Lord Chancellor may by order made by statutory instrument amend this section so as to shorten or lengthen the period for the purposes of subsection (4)(b) or (5)."
+  },
+  {
+   "requirement": "The Lord Chancellor may not specify a period under subsection (6) that would result in the combined total days for subsections (4)(b) and (5) exceeding 26 weeks.",
+   "quote": "the Lord Chancellor may not under subsection (6) provide for a period which would result in the total number of days in the periods for the purposes of subsections (4)(b) and (5) (taken together) exceeding 26 weeks"
+  },
+  {
+   "requirement": "The court dealing with a particular case may by order shorten the period that would otherwise apply under subsection (4)(b) or (5).",
+   "quote": "In a particular case the court dealing with the case may by order shorten the period that would otherwise be applicable for the purposes of subsection (4)(b) or (5)."
+  },
+  {
+   "requirement": "A statutory instrument containing an order made by the Lord Chancellor under subsection (6) may not be made unless a draft has been laid before and approved by a resolution of each House of Parliament.",
+   "quote": "A statutory instrument containing an order under subsection (6) may not be made unless a draft of the instrument has been laid before and approved by a resolution of each House of Parliament."
+  },
+  {
+   "requirement": "Without prejudice to section 75 of the Courts Act 2003, Family Procedure Rules may provide procedure for a joint application to become a sole application, including treating a joint statement as made by one party only.",
+   "quote": "Without prejudice to the generality of section 75 of the Courts Act 2003, Family Procedure Rules may make provision as to the procedure for an application under subsection (1) by both parties to a marriage to become an application by one party to the marriage only (including provision for a statement made under subsection (2) in connection with the application to be treated as made by one party to the marriage only)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period from the making of the conditional order before a divorce order may be made final",
+   "value": "6 weeks",
+   "quote": "the period of 6 weeks from the making of the conditional order"
+  },
+  {
+   "what": "minimum period from the start of proceedings before a party may give confirmation that they wish the application to continue",
+   "value": "20 weeks",
+   "quote": "the period of 20 weeks from the start of proceedings"
+  },
+  {
+   "what": "maximum total number of days permitted for the periods under subsections (4)(b) and (5) taken together under an order by the Lord Chancellor",
+   "value": "26 weeks",
+   "quote": "periods for the purposes of subsections (4)(b) and (5) (taken together) exceeding 26 weeks"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

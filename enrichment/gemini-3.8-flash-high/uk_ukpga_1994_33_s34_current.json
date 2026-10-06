@@ -1,0 +1,161 @@
+{
+ "key": "uk/ukpga/1994/33/s34@current",
+ "section": "uk/ukpga/1994/33/s34",
+ "version": "current",
+ "source_sha256": "49459a40e360543165bed0c7238e4917b39875ae69fc0ebfb644eeb26cea328e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 34(2) applies where, in any proceedings against an accused person for an offence, evidence is given that the accused, at any time before being charged with the offence, on being questioned under caution by a constable trying to discover whether or by whom the offence had been committed, failed to mention any fact relied on in defence in those proceedings that the accused could reasonably have been expected to mention in the circumstances.",
+    "quote": "on being questioned under caution by a constable trying to discover whether or by whom the offence had been committed, failed to mention any fact relied on in his defence in those proceedings"
+   },
+   {
+    "requirement": "Section 34(2) applies where, in any proceedings against an accused person for an offence, evidence is given that the accused, on being charged with the offence or officially informed that they might be prosecuted for it, failed to mention any fact relied on in defence that the accused could reasonably have been expected to mention in the circumstances.",
+    "quote": "on being charged with the offence or officially informed that he might be prosecuted for it, failed to mention any such fact"
+   },
+   {
+    "requirement": "Section 34(2) applies where, in any proceedings against an accused person for an offence, evidence is given that the accused, at any time after being charged with the offence, on being questioned under section 22 of the Counter-Terrorism Act 2008, failed to mention any fact relied on in defence that the accused could reasonably have been expected to mention in the circumstances.",
+    "quote": "at any time after being charged with the offence, on being questioned under section 22 of the Counter-Terrorism Act 2008 (post-charge questioning), failed to mention any such fact"
+   },
+   {
+    "requirement": "Section 34(2) applies only to a fact relied on in defence which, in the circumstances existing at the time, the accused could reasonably have been expected to mention when questioned, charged, or informed.",
+    "quote": "being a fact which in the circumstances existing at the time the accused could reasonably have been expected to mention when so questioned, charged or informed"
+   },
+   {
+    "requirement": "Where section 34(2) applies, a judge, in deciding whether to grant an application made by the accused under paragraph 2 of Schedule 3 to the Crime and Disorder Act 1998, may draw such inferences from the failure as appear proper.",
+    "quote": "a judge, in deciding whether to grant an application made by the accused under paragraph 2 of Schedule 3 to the Crime and Disorder Act 1998"
+   },
+   {
+    "requirement": "Where section 34(2) applies, the court, in determining whether there is a case to answer, may draw such inferences from the accused's failure as appear proper.",
+    "quote": "the court, in determining whether there is a case to answer"
+   },
+   {
+    "requirement": "Where section 34(2) applies, the court or jury, in determining whether the accused is guilty of the offence charged, may draw such inferences from the accused's failure as appear proper.",
+    "quote": "the court or jury, in determining whether the accused is guilty of the offence charged, andmay draw such inferences from the failure as appear proper"
+   },
+   {
+    "requirement": "Where the accused was at an authorised place of detention at the time of the failure, subsections (1) and (2) do not apply if the accused had not been allowed an opportunity to consult a solicitor prior to being questioned, charged, or informed.",
+    "quote": "Where the accused was at an authorised place of detention at the time of the failure, subsections (1) and (2) above do not apply if he had not been allowed an opportunity to consult a solicitor prior to being questioned, charged or informed"
+   },
+   {
+    "requirement": "Subject to any directions by the court, evidence tending to establish the accused's failure may be given before or after evidence tending to establish the fact which the accused is alleged to have failed to mention.",
+    "quote": "evidence tending to establish the failure may be given before or after evidence tending to establish the fact which the accused is alleged to have failed to mention"
+   },
+   {
+    "requirement": "Section 34 applies in relation to questioning by persons (other than constables) charged with the duty of investigating offences or charging offenders in the same way as it applies in relation to questioning by constables.",
+    "quote": "applies in relation to questioning by persons (other than constables) charged with the duty of investigating offences or charging offenders as it applies in relation to questioning by constables"
+   },
+   {
+    "requirement": "For the purposes of section 34(1), being officially informed means being informed by a constable or by a person charged with the duty of investigating offences or charging offenders.",
+    "quote": "“officially informed” means informed by a constable or any such person"
+   },
+   {
+    "requirement": "Section 34 does not prejudice the admissibility in evidence of the silence or other reaction of the accused in the face of anything said in the accused's presence relating to the conduct charged, insofar as evidence thereof would be admissible apart from this section.",
+    "quote": "prejudice the admissibility in evidence of the silence or other reaction of the accused in the face of anything said in his presence relating to the conduct in respect of which he is charged"
+   },
+   {
+    "requirement": "Section 34 does not preclude the drawing of any inference from the accused's silence or other reaction in the face of anything said in the accused's presence which could properly be drawn apart from this section.",
+    "quote": "preclude the drawing of any inference from any such silence or other reaction of the accused which could properly be drawn apart from this section"
+   },
+   {
+    "requirement": "Section 34 does not apply in relation to a failure to mention a fact if the failure occurred before the commencement of this section.",
+    "quote": "does not apply in relation to a failure to mention a fact if the failure occurred before the commencement of this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "section number of the Counter-Terrorism Act 2008 governing post-charge questioning",
+    "value": "22",
+    "quote": "section 22 of the Counter-Terrorism Act 2008"
+   },
+   {
+    "what": "calendar year of the Counter-Terrorism Act citation",
+    "value": "2008",
+    "quote": "Counter-Terrorism Act 2008"
+   },
+   {
+    "what": "paragraph number of Schedule 3 to the Crime and Disorder Act 1998 governing the application",
+    "value": "2",
+    "quote": "paragraph 2 of Schedule 3 to the Crime and Disorder Act 1998"
+   },
+   {
+    "what": "Schedule number of the Crime and Disorder Act 1998 containing the application provision",
+    "value": "3",
+    "quote": "Schedule 3 to the Crime and Disorder Act 1998"
+   },
+   {
+    "what": "calendar year of the Crime and Disorder Act citation",
+    "value": "1998",
+    "quote": "Crime and Disorder Act 1998"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 34(2) applies where, in any proceedings against an accused person for an offence, evidence is given that the accused, at any time before being charged with the offence, on being questioned under caution by a constable trying to discover whether or by whom the offence had been committed, failed to mention any fact relied on in defence in those proceedings that the accused could reasonably have been expected to mention in the circumstances.",
+   "quote": "on being questioned under caution by a constable trying to discover whether or by whom the offence had been committed, failed to mention any fact relied on in his defence in those proceedings"
+  },
+  {
+   "requirement": "Section 34(2) applies where, in any proceedings against an accused person for an offence, evidence is given that the accused, on being charged with the offence or officially informed that they might be prosecuted for it, failed to mention any fact relied on in defence that the accused could reasonably have been expected to mention in the circumstances.",
+   "quote": "on being charged with the offence or officially informed that he might be prosecuted for it, failed to mention any such fact"
+  },
+  {
+   "requirement": "Section 34(2) applies where, in any proceedings against an accused person for an offence, evidence is given that the accused, at any time after being charged with the offence, on being questioned under section 22 of the Counter-Terrorism Act 2008, failed to mention any fact relied on in defence that the accused could reasonably have been expected to mention in the circumstances.",
+   "quote": "at any time after being charged with the offence, on being questioned under section 22 of the Counter-Terrorism Act 2008 (post-charge questioning), failed to mention any such fact"
+  },
+  {
+   "requirement": "Section 34(2) applies only to a fact relied on in defence which, in the circumstances existing at the time, the accused could reasonably have been expected to mention when questioned, charged, or informed.",
+   "quote": "being a fact which in the circumstances existing at the time the accused could reasonably have been expected to mention when so questioned, charged or informed"
+  },
+  {
+   "requirement": "Where section 34(2) applies, a judge, in deciding whether to grant an application made by the accused under paragraph 2 of Schedule 3 to the Crime and Disorder Act 1998, may draw such inferences from the failure as appear proper.",
+   "quote": "a judge, in deciding whether to grant an application made by the accused under paragraph 2 of Schedule 3 to the Crime and Disorder Act 1998"
+  },
+  {
+   "requirement": "Where section 34(2) applies, the court, in determining whether there is a case to answer, may draw such inferences from the accused's failure as appear proper.",
+   "quote": "the court, in determining whether there is a case to answer"
+  },
+  {
+   "requirement": "Where section 34(2) applies, the court or jury, in determining whether the accused is guilty of the offence charged, may draw such inferences from the accused's failure as appear proper.",
+   "quote": "the court or jury, in determining whether the accused is guilty of the offence charged, andmay draw such inferences from the failure as appear proper"
+  },
+  {
+   "requirement": "Where the accused was at an authorised place of detention at the time of the failure, subsections (1) and (2) do not apply if the accused had not been allowed an opportunity to consult a solicitor prior to being questioned, charged, or informed.",
+   "quote": "Where the accused was at an authorised place of detention at the time of the failure, subsections (1) and (2) above do not apply if he had not been allowed an opportunity to consult a solicitor prior to being questioned, charged or informed"
+  },
+  {
+   "requirement": "Subject to any directions by the court, evidence tending to establish the accused's failure may be given before or after evidence tending to establish the fact which the accused is alleged to have failed to mention.",
+   "quote": "evidence tending to establish the failure may be given before or after evidence tending to establish the fact which the accused is alleged to have failed to mention"
+  },
+  {
+   "requirement": "Section 34 applies in relation to questioning by persons (other than constables) charged with the duty of investigating offences or charging offenders in the same way as it applies in relation to questioning by constables.",
+   "quote": "applies in relation to questioning by persons (other than constables) charged with the duty of investigating offences or charging offenders as it applies in relation to questioning by constables"
+  },
+  {
+   "requirement": "For the purposes of section 34(1), being officially informed means being informed by a constable or by a person charged with the duty of investigating offences or charging offenders.",
+   "quote": "“officially informed” means informed by a constable or any such person"
+  },
+  {
+   "requirement": "Section 34 does not prejudice the admissibility in evidence of the silence or other reaction of the accused in the face of anything said in the accused's presence relating to the conduct charged, insofar as evidence thereof would be admissible apart from this section.",
+   "quote": "prejudice the admissibility in evidence of the silence or other reaction of the accused in the face of anything said in his presence relating to the conduct in respect of which he is charged"
+  },
+  {
+   "requirement": "Section 34 does not preclude the drawing of any inference from the accused's silence or other reaction in the face of anything said in the accused's presence which could properly be drawn apart from this section.",
+   "quote": "preclude the drawing of any inference from any such silence or other reaction of the accused which could properly be drawn apart from this section"
+  },
+  {
+   "requirement": "Section 34 does not apply in relation to a failure to mention a fact if the failure occurred before the commencement of this section.",
+   "quote": "does not apply in relation to a failure to mention a fact if the failure occurred before the commencement of this section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/Geo6/6-7/40/s1@current",
+ "section": "uk/ukpga/Geo6/6-7/40/s1",
+ "version": "current",
+ "source_sha256": "2a0c2daa1bdb210949a848d05e9f070e344fbcf65c7fd5d541a28f96e428e82a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1 applies to any contract governed by English law that has become impossible of performance or has been otherwise frustrated, discharging the parties from further performance, subject to the provisions of section 2 of the Law Reform (Frustrated Contracts) Act 1943.",
+    "quote": "Where a contract governed by English law has become impossible of performance or been otherwise frustrated, and the parties thereto have for that reason been discharged from the further performance of the contract"
+   },
+   {
+    "requirement": "The time when parties to a contract governed by English law are discharged from further performance by reason of impossibility of performance or frustration is defined as the time of discharge.",
+    "quote": "the time when the parties were so discharged (in this Act referred to as “the time of discharge”)"
+   },
+   {
+    "requirement": "All sums paid to any party in pursuance of a frustrated contract governed by English law prior to the time of discharge are recoverable from that party as money received by that party for the use of the party who paid the sums.",
+    "quote": "recoverable from him as money received by him for the use of the party by whom the sums were paid"
+   },
+   {
+    "requirement": "All sums payable to any party in pursuance of a frustrated contract governed by English law prior to the time of discharge cease to be payable.",
+    "quote": "in the case of sums so payable, cease to be so payable"
+   },
+   {
+    "requirement": "If a party to whom sums were paid or payable in pursuance of the contract incurred expenses before the time of discharge in, or for the purpose of, performing the contract, the court may, if it considers it just having regard to all the circumstances of the case, permit that party to retain or recover the whole or any part of the sums paid or payable, up to an amount not exceeding the expenses incurred.",
+    "quote": "allow him to retain or, as the case may be, recover the whole or any part of the sums so paid or payable, not being an amount in excess of the expenses so incurred"
+   },
+   {
+    "requirement": "Where any party to the contract has obtained a valuable benefit, other than a payment of money covered by subsection (2), before the time of discharge by reason of anything done by any other contracting party in or for the performance of the contract, the other party may recover from the benefited party such sum, not exceeding the value of the benefit to that party, as the court considers just having regard to all the circumstances of the case.",
+    "quote": "there shall be recoverable from him by the said other party such sum (if any), not exceeding the value of the said benefit to the party obtaining it, as the court considers just"
+   },
+   {
+    "requirement": "In determining the sum recoverable for a valuable benefit obtained by a party, the court must have regard in particular to the amount of any expenses incurred by that benefited party before the time of discharge in, or for the purpose of, performing the contract, including any sums paid or payable by that party under the contract that were retained or recoverable under subsection (2).",
+    "quote": "the amount of any expenses incurred before the time of discharge by the benefited party in, or for the purpose of, the performance of the contract, including any sums paid or payable by him to any other party in pursuance of the contract and retained or recoverable by that party under the last foregoing subsection"
+   },
+   {
+    "requirement": "In determining the sum recoverable for a valuable benefit obtained by a party, the court must have regard in particular to the effect that the circumstances giving rise to the frustration of the contract had on that benefit.",
+    "quote": "the effect, in relation to the said benefit, of the circumstances giving rise to the frustration of the contract"
+   },
+   {
+    "requirement": "When estimating expenses incurred by any party to the contract for the purposes of section 1, the court may include such sum as appears reasonable for overhead expenses and for any work or services performed personally by that party.",
+    "quote": "include such sum as appears to be reasonable in respect of overhead expenses and in respect of any work or services performed personally by the said party"
+   },
+   {
+    "requirement": "In considering whether any sum ought to be recovered or retained by any party under section 1, the court must not take into account any insurance sums that became payable to that party by reason of the circumstances causing frustration, unless an express term of the frustrated contract or an enactment imposed an obligation to insure.",
+    "quote": "the court shall not take into account any sums which have, by reason of the circumstances giving rise to the frustration of the contract, become payable to that party under any contract of insurance unless there was an obligation to insure imposed by an express term of the frustrated contract or by or under any enactment"
+   },
+   {
+    "requirement": "Where a person assumed obligations under the contract in consideration of another contracting party conferring a benefit upon any other person, whether a party to the contract or not, the court may treat that conferred benefit as obtained by the person who assumed the obligations for the purposes of subsection (3) if the court considers it just in all the circumstances of the case.",
+    "quote": "treat for the purposes of subsection (3) of this section any benefit so conferred as a benefit obtained by the person who has assumed the obligations as aforesaid"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 1 applies to any contract governed by English law that has become impossible of performance or has been otherwise frustrated, discharging the parties from further performance, subject to the provisions of section 2 of the Law Reform (Frustrated Contracts) Act 1943.",
+   "quote": "Where a contract governed by English law has become impossible of performance or been otherwise frustrated, and the parties thereto have for that reason been discharged from the further performance of the contract"
+  },
+  {
+   "requirement": "The time when parties to a contract governed by English law are discharged from further performance by reason of impossibility of performance or frustration is defined as the time of discharge.",
+   "quote": "the time when the parties were so discharged (in this Act referred to as “the time of discharge”)"
+  },
+  {
+   "requirement": "All sums paid to any party in pursuance of a frustrated contract governed by English law prior to the time of discharge are recoverable from that party as money received by that party for the use of the party who paid the sums.",
+   "quote": "recoverable from him as money received by him for the use of the party by whom the sums were paid"
+  },
+  {
+   "requirement": "All sums payable to any party in pursuance of a frustrated contract governed by English law prior to the time of discharge cease to be payable.",
+   "quote": "in the case of sums so payable, cease to be so payable"
+  },
+  {
+   "requirement": "If a party to whom sums were paid or payable in pursuance of the contract incurred expenses before the time of discharge in, or for the purpose of, performing the contract, the court may, if it considers it just having regard to all the circumstances of the case, permit that party to retain or recover the whole or any part of the sums paid or payable, up to an amount not exceeding the expenses incurred.",
+   "quote": "allow him to retain or, as the case may be, recover the whole or any part of the sums so paid or payable, not being an amount in excess of the expenses so incurred"
+  },
+  {
+   "requirement": "Where any party to the contract has obtained a valuable benefit, other than a payment of money covered by subsection (2), before the time of discharge by reason of anything done by any other contracting party in or for the performance of the contract, the other party may recover from the benefited party such sum, not exceeding the value of the benefit to that party, as the court considers just having regard to all the circumstances of the case.",
+   "quote": "there shall be recoverable from him by the said other party such sum (if any), not exceeding the value of the said benefit to the party obtaining it, as the court considers just"
+  },
+  {
+   "requirement": "In determining the sum recoverable for a valuable benefit obtained by a party, the court must have regard in particular to the amount of any expenses incurred by that benefited party before the time of discharge in, or for the purpose of, performing the contract, including any sums paid or payable by that party under the contract that were retained or recoverable under subsection (2).",
+   "quote": "the amount of any expenses incurred before the time of discharge by the benefited party in, or for the purpose of, the performance of the contract, including any sums paid or payable by him to any other party in pursuance of the contract and retained or recoverable by that party under the last foregoing subsection"
+  },
+  {
+   "requirement": "In determining the sum recoverable for a valuable benefit obtained by a party, the court must have regard in particular to the effect that the circumstances giving rise to the frustration of the contract had on that benefit.",
+   "quote": "the effect, in relation to the said benefit, of the circumstances giving rise to the frustration of the contract"
+  },
+  {
+   "requirement": "When estimating expenses incurred by any party to the contract for the purposes of section 1, the court may include such sum as appears reasonable for overhead expenses and for any work or services performed personally by that party.",
+   "quote": "include such sum as appears to be reasonable in respect of overhead expenses and in respect of any work or services performed personally by the said party"
+  },
+  {
+   "requirement": "In considering whether any sum ought to be recovered or retained by any party under section 1, the court must not take into account any insurance sums that became payable to that party by reason of the circumstances causing frustration, unless an express term of the frustrated contract or an enactment imposed an obligation to insure.",
+   "quote": "the court shall not take into account any sums which have, by reason of the circumstances giving rise to the frustration of the contract, become payable to that party under any contract of insurance unless there was an obligation to insure imposed by an express term of the frustrated contract or by or under any enactment"
+  },
+  {
+   "requirement": "Where a person assumed obligations under the contract in consideration of another contracting party conferring a benefit upon any other person, whether a party to the contract or not, the court may treat that conferred benefit as obtained by the person who assumed the obligations for the purposes of subsection (3) if the court considers it just in all the circumstances of the case.",
+   "quote": "treat for the purposes of subsection (3) of this section any benefit so conferred as a benefit obtained by the person who has assumed the obligations as aforesaid"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "key": "uk/ukpga/1997/40/s2@current",
+ "section": "uk/ukpga/1997/40/s2",
+ "version": "current",
+ "source_sha256": "d5a48a038857a206c27f935098504c358a0d5522fd2571b9a08d4d2ff9e61200",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if that person pursues a course of conduct in breach of section 1(1) or (1A).",
+    "quote": "A person who pursues a course of conduct in breach of section 1(1) or (1A) is guilty of an offence"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 2 is liable on summary conviction to imprisonment for a term not exceeding six months, or a fine not exceeding level 5 on the standard scale, or both.",
+    "quote": "liable on summary conviction to imprisonment for a term not exceeding six months, or a fine not exceeding level 5 on the standard scale, or both"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on summary conviction",
+    "value": "six months",
+    "quote": "imprisonment for a term not exceeding six months"
+   },
+   {
+    "what": "maximum fine level on the standard scale",
+    "value": "level 5",
+    "quote": "fine not exceeding level 5 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if that person pursues a course of conduct in breach of section 1(1) or (1A).",
+   "quote": "A person who pursues a course of conduct in breach of section 1(1) or (1A) is guilty of an offence"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 2 is liable on summary conviction to imprisonment for a term not exceeding six months, or a fine not exceeding level 5 on the standard scale, or both.",
+   "quote": "liable on summary conviction to imprisonment for a term not exceeding six months, or a fine not exceeding level 5 on the standard scale, or both"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on summary conviction",
+   "value": "six months",
+   "quote": "imprisonment for a term not exceeding six months"
+  },
+  {
+   "what": "maximum fine level on the standard scale",
+   "value": "level 5",
+   "quote": "fine not exceeding level 5 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

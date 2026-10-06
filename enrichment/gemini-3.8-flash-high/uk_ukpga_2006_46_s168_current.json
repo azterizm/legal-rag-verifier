@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2006/46/s168@current",
+ "section": "uk/ukpga/2006/46/s168",
+ "version": "current",
+ "source_sha256": "8cba02913ecc99b413c5ea90afffccbd219e7a3b00807b50de1b9524f60dc5d4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company may remove a director before the expiration of that director's period of office by ordinary resolution passed at a meeting, notwithstanding anything contained in any agreement between the company and the director.",
+    "quote": "A company may by ordinary resolution at a meeting remove a director before the expiration of his period of office, notwithstanding anything in any agreement between it and him."
+   },
+   {
+    "requirement": "Special notice is required for a resolution to remove a director under section 168 of the Companies Act 2006.",
+    "quote": "Special notice is required of a resolution to remove a director under this section"
+   },
+   {
+    "requirement": "Special notice is required for a resolution to appoint someone instead of a director removed under section 168 of the Companies Act 2006 at the meeting at which the director is removed.",
+    "quote": "or to appoint somebody instead of a director so removed at the meeting at which he is removed."
+   },
+   {
+    "requirement": "A vacancy created by the removal of a director under section 168 of the Companies Act 2006 may be filled as a casual vacancy if it is not filled at the meeting at which the director is removed.",
+    "quote": "A vacancy created by the removal of a director under this section, if not filled at the meeting at which he is removed, may be filled as a casual vacancy."
+   },
+   {
+    "requirement": "A person appointed as a director in place of a director removed under section 168 of the Companies Act 2006 is treated, for the purpose of determining retirement timing, as having become a director on the date the removed director was last appointed.",
+    "quote": "A person appointed director in place of a person removed under this section is treated, for the purpose of determining the time at which he or any other director is to retire, as if he had become director on the day on which the person in whose place he is appointed was last appointed a director."
+   },
+   {
+    "requirement": "Section 168 of the Companies Act 2006 does not deprive a removed person of compensation or damages payable for the termination of their appointment as director or of any appointment terminating along with it.",
+    "quote": "as depriving a person removed under it of compensation or damages payable to him in respect of the termination of his appointment as director or of any appointment terminating with that as director"
+   },
+   {
+    "requirement": "Section 168 of the Companies Act 2006 does not derogate from any power to remove a director that exists apart from this section.",
+    "quote": "as derogating from any power to remove a director that may exist apart from this section."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A company may remove a director before the expiration of that director's period of office by ordinary resolution passed at a meeting, notwithstanding anything contained in any agreement between the company and the director.",
+   "quote": "A company may by ordinary resolution at a meeting remove a director before the expiration of his period of office, notwithstanding anything in any agreement between it and him."
+  },
+  {
+   "requirement": "Special notice is required for a resolution to remove a director under section 168 of the Companies Act 2006.",
+   "quote": "Special notice is required of a resolution to remove a director under this section"
+  },
+  {
+   "requirement": "Special notice is required for a resolution to appoint someone instead of a director removed under section 168 of the Companies Act 2006 at the meeting at which the director is removed.",
+   "quote": "or to appoint somebody instead of a director so removed at the meeting at which he is removed."
+  },
+  {
+   "requirement": "A vacancy created by the removal of a director under section 168 of the Companies Act 2006 may be filled as a casual vacancy if it is not filled at the meeting at which the director is removed.",
+   "quote": "A vacancy created by the removal of a director under this section, if not filled at the meeting at which he is removed, may be filled as a casual vacancy."
+  },
+  {
+   "requirement": "A person appointed as a director in place of a director removed under section 168 of the Companies Act 2006 is treated, for the purpose of determining retirement timing, as having become a director on the date the removed director was last appointed.",
+   "quote": "A person appointed director in place of a person removed under this section is treated, for the purpose of determining the time at which he or any other director is to retire, as if he had become director on the day on which the person in whose place he is appointed was last appointed a director."
+  },
+  {
+   "requirement": "Section 168 of the Companies Act 2006 does not deprive a removed person of compensation or damages payable for the termination of their appointment as director or of any appointment terminating along with it.",
+   "quote": "as depriving a person removed under it of compensation or damages payable to him in respect of the termination of his appointment as director or of any appointment terminating with that as director"
+  },
+  {
+   "requirement": "Section 168 of the Companies Act 2006 does not derogate from any power to remove a director that exists apart from this section.",
+   "quote": "as derogating from any power to remove a director that may exist apart from this section."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

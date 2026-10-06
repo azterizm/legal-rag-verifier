@@ -1,0 +1,45 @@
+{
+ "key": "uk/ukpga/1968/60/s8@current",
+ "section": "uk/ukpga/1968/60/s8",
+ "version": "current",
+ "source_sha256": "25a4c9e2881eb23fc25f1c6b1fdf8185142fed5e6e78ef3654d4783fce61d00c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of robbery if that person steals, and immediately before or at the time of doing so, and in order to do so, uses force on any person or puts or seeks to put any person in fear of being then and there subjected to force.",
+    "quote": "A person is guilty of robbery if he steals, and immediately before or at the time of doing so, and in order to do so, he uses force on any person or puts or seeks to put any person in fear of being then and there subjected to force"
+   },
+   {
+    "requirement": "A person guilty of robbery, or of an assault with intent to rob, is liable on conviction on indictment to imprisonment for life.",
+    "quote": "A person guilty of robbery, or of an assault with intent to rob, shall on conviction on indictment be liable to imprisonment for life"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment for a person guilty of robbery or assault with intent to rob",
+    "value": "life",
+    "quote": "imprisonment for life"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of robbery if that person steals, and immediately before or at the time of doing so, and in order to do so, uses force on any person or puts or seeks to put any person in fear of being then and there subjected to force.",
+   "quote": "A person is guilty of robbery if he steals, and immediately before or at the time of doing so, and in order to do so, he uses force on any person or puts or seeks to put any person in fear of being then and there subjected to force"
+  },
+  {
+   "requirement": "A person guilty of robbery, or of an assault with intent to rob, is liable on conviction on indictment to imprisonment for life.",
+   "quote": "A person guilty of robbery, or of an assault with intent to rob, shall on conviction on indictment be liable to imprisonment for life"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

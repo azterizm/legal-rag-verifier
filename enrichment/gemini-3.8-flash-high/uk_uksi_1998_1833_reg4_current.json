@@ -1,0 +1,181 @@
+{
+ "key": "uk/uksi/1998/1833/reg4@current",
+ "section": "uk/uksi/1998/1833/reg4",
+ "version": "current",
+ "source_sha256": "55f10e546dd00d8a34d945e76f4ad4e01c85a702ac58e3cadfb9fab1f12d38b1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Unless an employer has first obtained the worker's agreement in writing to perform such work, a worker's working time, including overtime, in any applicable reference period must not exceed an average of 48 hours for each seven days.",
+    "quote": "Unless his employer has first obtained the worker’s agreement in writing to perform such work, a worker’s working time, including overtime, in any reference period which is applicable in his case shall not exceed an average of 48 hours for each seven days."
+   },
+   {
+    "requirement": "An employer must take all reasonable steps, in keeping with the need to protect the health and safety of workers, to ensure that the 48-hour average limit is complied with in the case of each worker employed by the employer to whom the limit applies.",
+    "quote": "An employer shall take all reasonable steps, in keeping with the need to protect the health and safety of workers, to ensure that the limit specified in paragraph (1) is complied with in the case of each worker employed by him in relation to whom it applies"
+   },
+   {
+    "requirement": "An employer must keep up-to-date records of all workers who carry out work to which the 48-hour average limit does not apply by reason of the employer having obtained the worker's agreement in writing.",
+    "quote": "shall keep up-to-date records of all workers who carry out work to which it does not apply by reason of the fact that the employer has obtained the worker’s agreement as mentioned in paragraph (1)."
+   },
+   {
+    "requirement": "Subject to paragraphs (4) and (5) and any agreement under regulation 23(b), the reference periods that apply to a worker are each successive period of 17 weeks where a relevant agreement provides for the application of this regulation in relation to successive periods of 17 weeks.",
+    "quote": "Subject to paragraphs (4) and (5) and any agreement under regulation 23(b), the reference periods which apply in the case of a worker are— (a) where a relevant agreement provides for the application of this regulation in relation to successive periods of 17 weeks, each such period"
+   },
+   {
+    "requirement": "Subject to paragraphs (4) and (5) and any agreement under regulation 23(b), the reference periods that apply to a worker in any case where a relevant agreement does not provide for successive 17-week periods are any period of 17 weeks in the course of the worker's employment.",
+    "quote": "in any other case, any period of 17 weeks in the course of his employment."
+   },
+   {
+    "requirement": "Where a worker has worked for their employer for less than 17 weeks, the reference period applicable in the worker's case is the period that has elapsed since the worker started work for the employer.",
+    "quote": "Where a worker has worked for his employer for less than 17 weeks, the reference period applicable in his case is the period that has elapsed since he started work for his employer."
+   },
+   {
+    "requirement": "Paragraphs (3) and (4) apply to a worker who is excluded from the scope of certain provisions of the Regulations by regulation 21 as if each reference to 17 weeks were substituted with a reference to 26 weeks.",
+    "quote": "Paragraphs (3) and (4) shall apply to a worker who is excluded from the scope of certain provisions of these Regulations by regulation 21 as if for each reference to 17 weeks there were substituted a reference to 26 weeks."
+   },
+   {
+    "requirement": "For the purposes of regulation 4, a worker's average working time for each seven days during a reference period must be determined according to the formula A+BC, where A is the aggregate hours in the worker's working time during the reference period, B is the aggregate hours in their working time during the subsequent period ending when the number of days worked equals the number of excluded days during the reference period, and C> is the number of weeks in the reference period.",
+    "quote": "For the purposes of this regulation, a worker’s average working time for each seven days during a reference period shall be determined according to the formula— A+BCwhere— A is the aggregate number of hours comprised in the worker’s working time during the course of the reference period;B is the aggregate number of hours comprised in his working time during the course of the period beginning immediately after the end of the reference period and ending when the number of days in that subsequent period on which he has worked equals the number of excluded days during the reference period; andC> is the number of weeks in the reference period."
+   },
+   {
+    "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period of annual leave taken by the worker in exercise of entitlement under regulation 13, 13A, or 15B.",
+    "quote": "“excluded days\" means days comprised in— (a) any period of annual leave taken by the worker in exercise of his entitlement under regulation 13 , 13A or 15B;"
+   },
+   {
+    "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period of sick leave taken by the worker.",
+    "quote": "any period of sick leave taken by the worker;"
+   },
+   {
+    "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period of maternity, paternity, adoption, or parental leave taken by the worker.",
+    "quote": "any period of maternity paternity, adoption or parental leave taken by the worker;"
+   },
+   {
+    "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period in respect of which the 48-hour average limit did not apply to the worker because the employer obtained the worker's agreement in writing.",
+    "quote": "any period in respect of which the limit specified in paragraph (1) did not apply in relation to the worker by reason of the fact that the employer has obtained the worker’s agreement as mentioned in paragraph (1)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum average weekly working time limit unless the worker agrees in writing",
+    "value": "48 hours",
+    "quote": "an average of 48 hours for each seven days"
+   },
+   {
+    "what": "the interval over which the average maximum working time limit is calculated",
+    "value": "seven days",
+    "quote": "an average of 48 hours for each seven days"
+   },
+   {
+    "what": "the length of successive reference periods provided for under a relevant agreement",
+    "value": "17 weeks",
+    "quote": "successive periods of 17 weeks"
+   },
+   {
+    "what": "the default reference period length in the course of employment",
+    "value": "17 weeks",
+    "quote": "any period of 17 weeks in the course of his employment"
+   },
+   {
+    "what": "the threshold of time worked for an employer below which the elapsed period applies as the reference period",
+    "value": "less than 17 weeks",
+    "quote": "less than 17 weeks"
+   },
+   {
+    "what": "the substituted reference period length applicable to workers excluded by regulation 21",
+    "value": "26 weeks",
+    "quote": "substituted a reference to 26 weeks"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Unless an employer has first obtained the worker's agreement in writing to perform such work, a worker's working time, including overtime, in any applicable reference period must not exceed an average of 48 hours for each seven days.",
+   "quote": "Unless his employer has first obtained the worker’s agreement in writing to perform such work, a worker’s working time, including overtime, in any reference period which is applicable in his case shall not exceed an average of 48 hours for each seven days."
+  },
+  {
+   "requirement": "An employer must take all reasonable steps, in keeping with the need to protect the health and safety of workers, to ensure that the 48-hour average limit is complied with in the case of each worker employed by the employer to whom the limit applies.",
+   "quote": "An employer shall take all reasonable steps, in keeping with the need to protect the health and safety of workers, to ensure that the limit specified in paragraph (1) is complied with in the case of each worker employed by him in relation to whom it applies"
+  },
+  {
+   "requirement": "An employer must keep up-to-date records of all workers who carry out work to which the 48-hour average limit does not apply by reason of the employer having obtained the worker's agreement in writing.",
+   "quote": "shall keep up-to-date records of all workers who carry out work to which it does not apply by reason of the fact that the employer has obtained the worker’s agreement as mentioned in paragraph (1)."
+  },
+  {
+   "requirement": "Subject to paragraphs (4) and (5) and any agreement under regulation 23(b), the reference periods that apply to a worker are each successive period of 17 weeks where a relevant agreement provides for the application of this regulation in relation to successive periods of 17 weeks.",
+   "quote": "Subject to paragraphs (4) and (5) and any agreement under regulation 23(b), the reference periods which apply in the case of a worker are— (a) where a relevant agreement provides for the application of this regulation in relation to successive periods of 17 weeks, each such period"
+  },
+  {
+   "requirement": "Subject to paragraphs (4) and (5) and any agreement under regulation 23(b), the reference periods that apply to a worker in any case where a relevant agreement does not provide for successive 17-week periods are any period of 17 weeks in the course of the worker's employment.",
+   "quote": "in any other case, any period of 17 weeks in the course of his employment."
+  },
+  {
+   "requirement": "Where a worker has worked for their employer for less than 17 weeks, the reference period applicable in the worker's case is the period that has elapsed since the worker started work for the employer.",
+   "quote": "Where a worker has worked for his employer for less than 17 weeks, the reference period applicable in his case is the period that has elapsed since he started work for his employer."
+  },
+  {
+   "requirement": "Paragraphs (3) and (4) apply to a worker who is excluded from the scope of certain provisions of the Regulations by regulation 21 as if each reference to 17 weeks were substituted with a reference to 26 weeks.",
+   "quote": "Paragraphs (3) and (4) shall apply to a worker who is excluded from the scope of certain provisions of these Regulations by regulation 21 as if for each reference to 17 weeks there were substituted a reference to 26 weeks."
+  },
+  {
+   "requirement": "For the purposes of regulation 4, a worker's average working time for each seven days during a reference period must be determined according to the formula A+BC, where A is the aggregate hours in the worker's working time during the reference period, B is the aggregate hours in their working time during the subsequent period ending when the number of days worked equals the number of excluded days during the reference period, and C> is the number of weeks in the reference period.",
+   "quote": "For the purposes of this regulation, a worker’s average working time for each seven days during a reference period shall be determined according to the formula— A+BCwhere— A is the aggregate number of hours comprised in the worker’s working time during the course of the reference period;B is the aggregate number of hours comprised in his working time during the course of the period beginning immediately after the end of the reference period and ending when the number of days in that subsequent period on which he has worked equals the number of excluded days during the reference period; andC> is the number of weeks in the reference period."
+  },
+  {
+   "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period of annual leave taken by the worker in exercise of entitlement under regulation 13, 13A, or 15B.",
+   "quote": "“excluded days\" means days comprised in— (a) any period of annual leave taken by the worker in exercise of his entitlement under regulation 13 , 13A or 15B;"
+  },
+  {
+   "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period of sick leave taken by the worker.",
+   "quote": "any period of sick leave taken by the worker;"
+  },
+  {
+   "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period of maternity, paternity, adoption, or parental leave taken by the worker.",
+   "quote": "any period of maternity paternity, adoption or parental leave taken by the worker;"
+  },
+  {
+   "requirement": "For the purpose of calculating average working time, 'excluded days' means days comprised in any period in respect of which the 48-hour average limit did not apply to the worker because the employer obtained the worker's agreement in writing.",
+   "quote": "any period in respect of which the limit specified in paragraph (1) did not apply in relation to the worker by reason of the fact that the employer has obtained the worker’s agreement as mentioned in paragraph (1)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the maximum average weekly working time limit unless the worker agrees in writing",
+   "value": "48 hours",
+   "quote": "an average of 48 hours for each seven days"
+  },
+  {
+   "what": "the interval over which the average maximum working time limit is calculated",
+   "value": "seven days",
+   "quote": "an average of 48 hours for each seven days"
+  },
+  {
+   "what": "the length of successive reference periods provided for under a relevant agreement",
+   "value": "17 weeks",
+   "quote": "successive periods of 17 weeks"
+  },
+  {
+   "what": "the default reference period length in the course of employment",
+   "value": "17 weeks",
+   "quote": "any period of 17 weeks in the course of his employment"
+  },
+  {
+   "what": "the threshold of time worked for an employer below which the elapsed period applies as the reference period",
+   "value": "less than 17 weeks",
+   "quote": "less than 17 weeks"
+  },
+  {
+   "what": "the substituted reference period length applicable to workers excluded by regulation 21",
+   "value": "26 weeks",
+   "quote": "substituted a reference to 26 weeks"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 6
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "key": "uk/ukpga/1986/45/s267@current",
+ "section": "uk/ukpga/1986/45/s267",
+ "version": "current",
+ "source_sha256": "2672d63ab5f48273f36e00406c7a549a659f44faa9c15736f2dc5213e7eb49b9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A creditor's petition must be in respect of one or more debts owed by the debtor.",
+    "quote": "A creditor’s petition must be in respect of one or more debts owed by the debtor"
+   },
+   {
+    "requirement": "The petitioning creditor or each of the petitioning creditors must be a person to whom the debt or at least one of the debts is owed.",
+    "quote": "the petitioning creditor or each of the petitioning creditors must be a person to whom the debt or (as the case may be) at least one of the debts is owed"
+   },
+   {
+    "requirement": "Subject to the next three sections, a creditor’s petition may be presented to the court in respect of a debt or debts only if the statutory conditions are met at the time the petition is presented.",
+    "quote": "Subject to the next three sections, a creditor’s petition may be presented to the court in respect of a debt or debts only if, at the time the petition is presented"
+   },
+   {
+    "requirement": "At the time a creditor's petition is presented, the amount of the debt, or the aggregate amount of the debts, must be equal to or exceed the bankruptcy level.",
+    "quote": "the amount of the debt, or the aggregate amount of the debts, is equal to or exceeds the bankruptcy level"
+   },
+   {
+    "requirement": "At the time a creditor's petition is presented, the debt or each of the debts must be unsecured and for a liquidated sum payable to one or more of the petitioning creditors either immediately or at some certain, future time.",
+    "quote": "the debt, or each of the debts, is for a liquidated sum payable to the petitioning creditor, or one or more of the petitioning creditors, either immediately or at some certain, future time, and is unsecured"
+   },
+   {
+    "requirement": "At the time a creditor's petition is presented, the debtor must appear either to be unable to pay the debt or each debt, or to have no reasonable prospect of being able to pay it.",
+    "quote": "the debt, or each of the debts, is a debt which the debtor appears either to be unable to pay or to have no reasonable prospect of being able to pay"
+   },
+   {
+    "requirement": "At the time a creditor's petition is presented, there must be no outstanding application to set aside a statutory demand served under section 268 in respect of the debt or any of the debts.",
+    "quote": "there is no outstanding application to set aside a statutory demand served (under section 268 below) in respect of the debt or any of the debts"
+   },
+   {
+    "requirement": "A debt is not to be treated as a debt for a liquidated sum for the purposes of subsection (2) solely because the amount of the debt is specified in a criminal bankruptcy order.",
+    "quote": "A debt is not to be regarded for the purposes of subsection (2) as a debt for a liquidated sum by reason only that the amount of the debt is specified in a criminal bankruptcy order"
+   },
+   {
+    "requirement": "The bankruptcy level is £5,000, unless another amount is substituted by the Secretary of State.",
+    "quote": "“The bankruptcy level” is £5,000"
+   },
+   {
+    "requirement": "The Secretary of State may by order in a statutory instrument substitute any specified amount for the bankruptcy level amount.",
+    "quote": "the Secretary of State may by order in a statutory instrument substitute any amount specified in the order for that amount"
+   },
+   {
+    "requirement": "An order substituting the bankruptcy level shall not be made unless a draft of the order has been laid before and approved by a resolution of each House of Parliament.",
+    "quote": "An order shall not be made under subsection (4) unless a draft of it has been laid before, and approved by a resolution of, each House of Parliament"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of debts in respect of which a creditor's petition must be presented",
+    "value": "one",
+    "quote": "one or more debts"
+   },
+   {
+    "what": "minimum number of debts that must be owed to each petitioning creditor",
+    "value": "one",
+    "quote": "at least one of the debts"
+   },
+   {
+    "what": "number of subsequent sections to which the presentation of a creditor's petition is subject",
+    "value": "three",
+    "quote": "Subject to the next three sections"
+   },
+   {
+    "what": "the statutory bankruptcy level",
+    "value": "£5,000",
+    "quote": "“The bankruptcy level” is £5,000"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A creditor's petition must be in respect of one or more debts owed by the debtor.",
+   "quote": "A creditor’s petition must be in respect of one or more debts owed by the debtor"
+  },
+  {
+   "requirement": "The petitioning creditor or each of the petitioning creditors must be a person to whom the debt or at least one of the debts is owed.",
+   "quote": "the petitioning creditor or each of the petitioning creditors must be a person to whom the debt or (as the case may be) at least one of the debts is owed"
+  },
+  {
+   "requirement": "Subject to the next three sections, a creditor’s petition may be presented to the court in respect of a debt or debts only if the statutory conditions are met at the time the petition is presented.",
+   "quote": "Subject to the next three sections, a creditor’s petition may be presented to the court in respect of a debt or debts only if, at the time the petition is presented"
+  },
+  {
+   "requirement": "At the time a creditor's petition is presented, the amount of the debt, or the aggregate amount of the debts, must be equal to or exceed the bankruptcy level.",
+   "quote": "the amount of the debt, or the aggregate amount of the debts, is equal to or exceeds the bankruptcy level"
+  },
+  {
+   "requirement": "At the time a creditor's petition is presented, the debt or each of the debts must be unsecured and for a liquidated sum payable to one or more of the petitioning creditors either immediately or at some certain, future time.",
+   "quote": "the debt, or each of the debts, is for a liquidated sum payable to the petitioning creditor, or one or more of the petitioning creditors, either immediately or at some certain, future time, and is unsecured"
+  },
+  {
+   "requirement": "At the time a creditor's petition is presented, the debtor must appear either to be unable to pay the debt or each debt, or to have no reasonable prospect of being able to pay it.",
+   "quote": "the debt, or each of the debts, is a debt which the debtor appears either to be unable to pay or to have no reasonable prospect of being able to pay"
+  },
+  {
+   "requirement": "At the time a creditor's petition is presented, there must be no outstanding application to set aside a statutory demand served under section 268 in respect of the debt or any of the debts.",
+   "quote": "there is no outstanding application to set aside a statutory demand served (under section 268 below) in respect of the debt or any of the debts"
+  },
+  {
+   "requirement": "A debt is not to be treated as a debt for a liquidated sum for the purposes of subsection (2) solely because the amount of the debt is specified in a criminal bankruptcy order.",
+   "quote": "A debt is not to be regarded for the purposes of subsection (2) as a debt for a liquidated sum by reason only that the amount of the debt is specified in a criminal bankruptcy order"
+  },
+  {
+   "requirement": "The bankruptcy level is £5,000, unless another amount is substituted by the Secretary of State.",
+   "quote": "“The bankruptcy level” is £5,000"
+  },
+  {
+   "requirement": "The Secretary of State may by order in a statutory instrument substitute any specified amount for the bankruptcy level amount.",
+   "quote": "the Secretary of State may by order in a statutory instrument substitute any amount specified in the order for that amount"
+  },
+  {
+   "requirement": "An order substituting the bankruptcy level shall not be made unless a draft of the order has been laid before and approved by a resolution of each House of Parliament.",
+   "quote": "An order shall not be made under subsection (4) unless a draft of it has been laid before, and approved by a resolution of, each House of Parliament"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the statutory bankruptcy level",
+   "value": "£5,000",
+   "quote": "“The bankruptcy level” is £5,000"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 1
+ }
+}

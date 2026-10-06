@@ -1,0 +1,133 @@
+{
+ "key": "uk/ukpga/2010/15/s20@current",
+ "section": "uk/ukpga/2010/15/s20",
+ "version": "current",
+ "source_sha256": "c45cbac4a7d52389fa286d1747bcfcd753ae671de7d3b11daa6e91f39d652e2d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where the Equality Act 2010 imposes a duty to make reasonable adjustments on a person, that person is referred to as A, and section 20, sections 21 and 22, and the applicable Schedule apply.",
+    "quote": "a person on whom the duty is imposed is referred to as A"
+   },
+   {
+    "requirement": "The duty to make reasonable adjustments imposed on person A comprises three specific requirements.",
+    "quote": "The duty comprises the following three requirements."
+   },
+   {
+    "requirement": "Under the first requirement, where a provision, criterion or practice of person A's puts a disabled person at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled, person A must take such steps as it is reasonable to have to take to avoid the disadvantage.",
+    "quote": "to take such steps as it is reasonable to have to take to avoid the disadvantage"
+   },
+   {
+    "requirement": "Under the second requirement, where a physical feature puts a disabled person at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled, person A must take such steps as it is reasonable to have to take to avoid the disadvantage.",
+    "quote": "where a physical feature puts a disabled person at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled"
+   },
+   {
+    "requirement": "Under the third requirement, where a disabled person would, but for the provision of an auxiliary aid, be put at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled, person A must take such steps as it is reasonable to have to take to provide the auxiliary aid.",
+    "quote": "to take such steps as it is reasonable to have to take to provide the auxiliary aid"
+   },
+   {
+    "requirement": "Where the first or third requirement relates to the provision of information, the steps which it is reasonable for person A to have to take include steps for ensuring that in the circumstances concerned the information is provided in an accessible format.",
+    "quote": "the steps which it is reasonable for A to have to take include steps for ensuring that in the circumstances concerned the information is provided in an accessible format"
+   },
+   {
+    "requirement": "A person A who is subject to a duty to make reasonable adjustments is not entitled, subject to express provision to the contrary, to require a disabled person in relation to whom person A is required to comply with the duty to pay to any extent person A's costs of complying with the duty.",
+    "quote": "not (subject to express provision to the contrary) entitled to require a disabled person, in relation to whom A is required to comply with the duty, to pay to any extent A's costs of complying with the duty"
+   },
+   {
+    "requirement": "A reference in section 21, section 22, or an applicable Schedule to the first, second, or third requirement must be construed in accordance with section 20.",
+    "quote": "A reference in section 21 or 22 or an applicable Schedule to the first, second or third requirement is to be construed in accordance with this section."
+   },
+   {
+    "requirement": "In relation to the second requirement, a reference in section 20 or an applicable Schedule to avoiding a substantial disadvantage includes removing the physical feature in question, altering it, or providing a reasonable means of avoiding it.",
+    "quote": "removing the physical feature in question, (b) altering it, or (c) providing a reasonable means of avoiding it"
+   },
+   {
+    "requirement": "A reference in section 20, section 21, section 22, or an applicable Schedule (apart from paragraphs 2 to 4 of Schedule 4) to a physical feature means a feature arising from the design or construction of a building, a feature of an approach to, exit from or access to a building, a fixture or fitting, or furniture, furnishings, materials, equipment or other chattels, in or on premises, or any other physical element or quality.",
+    "quote": "apart from paragraphs 2 to 4 of Schedule 4"
+   },
+   {
+    "requirement": "A reference in section 20, section 21, section 22, or an applicable Schedule to an auxiliary aid includes a reference to an auxiliary service.",
+    "quote": "A reference in this section, section 21 or 22 or an applicable Schedule to an auxiliary aid includes a reference to an auxiliary service."
+   },
+   {
+    "requirement": "A reference in section 20 or an applicable Schedule to chattels must be read, in relation to Scotland, as a reference to moveable property.",
+    "quote": "to chattels is to be read, in relation to Scotland, as a reference to moveable property"
+   },
+   {
+    "requirement": "The applicable Schedule is Schedule 2 for Part 3 (services and public functions), Schedule 4 for Part 4 (premises), Schedule 8 for Part 5 (work), Schedule 13 for Part 6 (education), Schedule 15 for Part 7 (associations), and Schedule 21 for each of those mentioned Parts.",
+    "quote": "The applicable Schedule is, in relation to the Part of this Act specified in the first column of the Table, the Schedule specified in the second column."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the number of requirements comprising the duty to make reasonable adjustments",
+    "value": "three",
+    "quote": "The duty comprises the following three requirements."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where the Equality Act 2010 imposes a duty to make reasonable adjustments on a person, that person is referred to as A, and section 20, sections 21 and 22, and the applicable Schedule apply.",
+   "quote": "a person on whom the duty is imposed is referred to as A"
+  },
+  {
+   "requirement": "The duty to make reasonable adjustments imposed on person A comprises three specific requirements.",
+   "quote": "The duty comprises the following three requirements."
+  },
+  {
+   "requirement": "Under the first requirement, where a provision, criterion or practice of person A's puts a disabled person at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled, person A must take such steps as it is reasonable to have to take to avoid the disadvantage.",
+   "quote": "to take such steps as it is reasonable to have to take to avoid the disadvantage"
+  },
+  {
+   "requirement": "Under the second requirement, where a physical feature puts a disabled person at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled, person A must take such steps as it is reasonable to have to take to avoid the disadvantage.",
+   "quote": "where a physical feature puts a disabled person at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled"
+  },
+  {
+   "requirement": "Under the third requirement, where a disabled person would, but for the provision of an auxiliary aid, be put at a substantial disadvantage in relation to a relevant matter in comparison with persons who are not disabled, person A must take such steps as it is reasonable to have to take to provide the auxiliary aid.",
+   "quote": "to take such steps as it is reasonable to have to take to provide the auxiliary aid"
+  },
+  {
+   "requirement": "Where the first or third requirement relates to the provision of information, the steps which it is reasonable for person A to have to take include steps for ensuring that in the circumstances concerned the information is provided in an accessible format.",
+   "quote": "the steps which it is reasonable for A to have to take include steps for ensuring that in the circumstances concerned the information is provided in an accessible format"
+  },
+  {
+   "requirement": "A person A who is subject to a duty to make reasonable adjustments is not entitled, subject to express provision to the contrary, to require a disabled person in relation to whom person A is required to comply with the duty to pay to any extent person A's costs of complying with the duty.",
+   "quote": "not (subject to express provision to the contrary) entitled to require a disabled person, in relation to whom A is required to comply with the duty, to pay to any extent A's costs of complying with the duty"
+  },
+  {
+   "requirement": "A reference in section 21, section 22, or an applicable Schedule to the first, second, or third requirement must be construed in accordance with section 20.",
+   "quote": "A reference in section 21 or 22 or an applicable Schedule to the first, second or third requirement is to be construed in accordance with this section."
+  },
+  {
+   "requirement": "In relation to the second requirement, a reference in section 20 or an applicable Schedule to avoiding a substantial disadvantage includes removing the physical feature in question, altering it, or providing a reasonable means of avoiding it.",
+   "quote": "removing the physical feature in question, (b) altering it, or (c) providing a reasonable means of avoiding it"
+  },
+  {
+   "requirement": "A reference in section 20, section 21, section 22, or an applicable Schedule (apart from paragraphs 2 to 4 of Schedule 4) to a physical feature means a feature arising from the design or construction of a building, a feature of an approach to, exit from or access to a building, a fixture or fitting, or furniture, furnishings, materials, equipment or other chattels, in or on premises, or any other physical element or quality.",
+   "quote": "apart from paragraphs 2 to 4 of Schedule 4"
+  },
+  {
+   "requirement": "A reference in section 20, section 21, section 22, or an applicable Schedule to an auxiliary aid includes a reference to an auxiliary service.",
+   "quote": "A reference in this section, section 21 or 22 or an applicable Schedule to an auxiliary aid includes a reference to an auxiliary service."
+  },
+  {
+   "requirement": "A reference in section 20 or an applicable Schedule to chattels must be read, in relation to Scotland, as a reference to moveable property.",
+   "quote": "to chattels is to be read, in relation to Scotland, as a reference to moveable property"
+  },
+  {
+   "requirement": "The applicable Schedule is Schedule 2 for Part 3 (services and public functions), Schedule 4 for Part 4 (premises), Schedule 8 for Part 5 (work), Schedule 13 for Part 6 (education), Schedule 15 for Part 7 (associations), and Schedule 21 for each of those mentioned Parts.",
+   "quote": "The applicable Schedule is, in relation to the Part of this Act specified in the first column of the Table, the Schedule specified in the second column."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

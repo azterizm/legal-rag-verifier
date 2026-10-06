@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2006/46/s21@current",
+ "section": "uk/ukpga/2006/46/s21",
+ "version": "current",
+ "source_sha256": "ca716321f07f7677775d3ced19abe0eadfd262317cd6a6c92865fd1fd7d5e08c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company may amend its articles by special resolution.",
+    "quote": "A company may amend its articles by special resolution."
+   },
+   {
+    "requirement": "In the case of a company that is a charity in England and Wales, the amendment of its articles by special resolution is subject to sections 197 and 198 of the Charities Act 2011.",
+    "quote": "In the case of a company that is a charity, this is subject to— (a) in England and Wales, sections 197 and 198 of the Charities Act 2011;"
+   },
+   {
+    "requirement": "In the case of a company that is a charity in Northern Ireland, the amendment of its articles by special resolution is subject to section 96 of the Charities Act (Northern Ireland) 2008.",
+    "quote": "(b) in Northern Ireland, section 96 of the Charities Act (Northern Ireland) 2008"
+   },
+   {
+    "requirement": "In the case of a company that is registered in the Scottish Charity Register, the amendment of its articles by special resolution is subject to section 112 of the Companies Act 1989 (c. 40).",
+    "quote": "In the case of a company that is registered in the Scottish Charity Register, this is subject to— (a) section 112 of the Companies Act 1989 (c. 40)"
+   },
+   {
+    "requirement": "In the case of a company that is registered in the Scottish Charity Register, the amendment of its articles by special resolution is subject to section 16 of the Charities and Trustee Investment (Scotland) Act 2005 (asp 10).",
+    "quote": "(b) section 16 of the Charities and Trustee Investment (Scotland) Act 2005 (asp 10)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A company may amend its articles by special resolution.",
+   "quote": "A company may amend its articles by special resolution."
+  },
+  {
+   "requirement": "In the case of a company that is a charity in England and Wales, the amendment of its articles by special resolution is subject to sections 197 and 198 of the Charities Act 2011.",
+   "quote": "In the case of a company that is a charity, this is subject to— (a) in England and Wales, sections 197 and 198 of the Charities Act 2011;"
+  },
+  {
+   "requirement": "In the case of a company that is a charity in Northern Ireland, the amendment of its articles by special resolution is subject to section 96 of the Charities Act (Northern Ireland) 2008.",
+   "quote": "(b) in Northern Ireland, section 96 of the Charities Act (Northern Ireland) 2008"
+  },
+  {
+   "requirement": "In the case of a company that is registered in the Scottish Charity Register, the amendment of its articles by special resolution is subject to section 112 of the Companies Act 1989 (c. 40).",
+   "quote": "In the case of a company that is registered in the Scottish Charity Register, this is subject to— (a) section 112 of the Companies Act 1989 (c. 40)"
+  },
+  {
+   "requirement": "In the case of a company that is registered in the Scottish Charity Register, the amendment of its articles by special resolution is subject to section 16 of the Charities and Trustee Investment (Scotland) Act 2005 (asp 10).",
+   "quote": "(b) section 16 of the Charities and Trustee Investment (Scotland) Act 2005 (asp 10)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

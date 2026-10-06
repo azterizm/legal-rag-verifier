@@ -1,0 +1,132 @@
+{
+ "key": "uk/uksi/2003/2426/reg22@current",
+ "section": "uk/uksi/2003/2426/reg22",
+ "version": "current",
+ "source_sha256": "58bb6ff67401e7d9a593543f2e6153c0440199621fd9a4f11c1e49d4d2719118",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Regulation 22 applies to the transmission of unsolicited communications by means of electronic mail to individual subscribers.",
+    "quote": "This regulation applies to the transmission of unsolicited communications by means of electronic mail to individual subscribers."
+   },
+   {
+    "requirement": "A person must neither transmit nor instigate the transmission of unsolicited communications for direct marketing purposes by electronic mail unless the recipient has previously notified the sender of consent for the time being, except where the circumstances in paragraph (3) or (3A) apply.",
+    "quote": "Except in the circumstances referred to in paragraph (3) or (3A), a person shall neither transmit, nor instigate the transmission of, unsolicited communications for the purposes of direct marketing by means of electronic mail unless the recipient of the electronic mail has previously notified the sender that he consents for the time being to such communications being sent by, or at the instigation of, the sender."
+   },
+   {
+    "requirement": "A person may send or instigate the sending of direct marketing electronic mail if that person obtained the recipient's contact details in the course of selling or negotiating to sell a product or service to that recipient.",
+    "quote": "that person has obtained the contact details of the recipient of that electronic mail in the course of the sale or negotiations for the sale of a product or service to that recipient;"
+   },
+   {
+    "requirement": "Direct marketing sent under paragraph (3) must relate only to the sender's own similar products and services.",
+    "quote": "the direct marketing is in respect of that person’s similar products and services only; and"
+   },
+   {
+    "requirement": "A person sending direct marketing electronic mail under paragraph (3) must provide the recipient with a simple means of refusing the use of their contact details free of charge (save for transmission costs) both when the details are initially collected and in each subsequent communication if not initially refused.",
+    "quote": "the recipient has been given a simple means of refusing (free of charge except for the costs of the transmission of the refusal) the use of his contact details for the purposes of such direct marketing, at the time that the details were initially collected, and, where he did not initially refuse the use of the details, at the time of each subsequent communication."
+   },
+   {
+    "requirement": "A charity may send or instigate the sending of direct marketing electronic mail where the sole purpose of the direct marketing is to further one or more of the charity's charitable purposes.",
+    "quote": "the sole purpose of the direct marketing is to further one or more of the charity’s charitable purposes;"
+   },
+   {
+    "requirement": "A charity sending direct marketing electronic mail under paragraph (3A) must have obtained the recipient's contact details in the course of the recipient expressing interest in one or more of the charity's charitable purposes at that time, or offering or providing support to further one or more of those purposes.",
+    "quote": "the charity obtained the contact details of the recipient of the electronic mail in the course of the recipient— (i) expressing an interest in one or more of the purposes that were the charity’s charitable purposes at that time; or (ii) offering or providing support to further one or more of those purposes; and"
+   },
+   {
+    "requirement": "A charity sending direct marketing electronic mail under paragraph (3A) must provide the recipient with a simple means of refusing the use of their contact details for direct marketing free of charge (save for transmission costs) when the details are initially collected and in each subsequent communication if not initially refused.",
+    "quote": "the recipient has been given a simple means of refusing (free of charge except for the costs of the transmission of the refusal) the use of their contact details for the purposes of direct marketing by the charity, at the time that the details were initially collected, and, where the recipient did not initially refuse the use of the details, at the time of each subsequent communication."
+   },
+   {
+    "requirement": "A subscriber must not permit their line to be used in contravention of paragraph (2).",
+    "quote": "A subscriber shall not permit his line to be used in contravention of paragraph (2)."
+   },
+   {
+    "requirement": "In regulation 22, 'charity' means a charity defined under section 1(1) of the Charities Act 2011, a charity defined under section 1(1) of the Charities Act (Northern Ireland) 2008 (including treated institutions), or a body entered in the Scottish Charity Register that continues to meet the charity test in section 7 of the Charities and Trustee Investment (Scotland) Act 2005.",
+    "quote": "“charity” means— (a) a charity as defined in section 1(1) of the Charities Act 2011, (b) a charity as defined in section 1(1) of the Charities Act (Northern Ireland) 2008 (c. 12 (N.I.)), including an institution treated as such a charity for the purposes of that Act by virtue of the Charities Act 2008 (Transitional Provision) Order (Northern Ireland) 2013 (S.R. (N.I.) 2013 No. 211), and (c) a body entered in the Scottish Charity Register, other than a body which no longer meets the charity test in section 7 of the Charities and Trustee Investment (Scotland) Act 2005 (asp 10)"
+   },
+   {
+    "requirement": "In relation to a charity, institution, or body, 'charitable purpose' has the meaning given in the relevant Act governing that body.",
+    "quote": "in relation to such a charity, institution or body, “charitable purpose” has the meaning given in the relevant Act."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of charitable purposes that direct marketing by a charity must exclusively further",
+    "value": "one or more",
+    "quote": "the sole purpose of the direct marketing is to further one or more of the charity’s charitable purposes"
+   },
+   {
+    "what": "Minimum number of purposes in which a recipient must have expressed an interest when providing contact details to a charity",
+    "value": "one or more",
+    "quote": "expressing an interest in one or more of the purposes that were the charity’s charitable purposes at that time"
+   },
+   {
+    "what": "Minimum number of purposes for which a recipient must have offered or provided support when providing contact details to a charity",
+    "value": "one or more",
+    "quote": "offering or providing support to further one or more of those purposes"
+   },
+   {
+    "what": "Cost charged to a recipient for refusing the use of their contact details (other than transmission costs)",
+    "value": "free of charge",
+    "quote": "free of charge except for the costs of the transmission of the refusal"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Regulation 22 applies to the transmission of unsolicited communications by means of electronic mail to individual subscribers.",
+   "quote": "This regulation applies to the transmission of unsolicited communications by means of electronic mail to individual subscribers."
+  },
+  {
+   "requirement": "A person must neither transmit nor instigate the transmission of unsolicited communications for direct marketing purposes by electronic mail unless the recipient has previously notified the sender of consent for the time being, except where the circumstances in paragraph (3) or (3A) apply.",
+   "quote": "Except in the circumstances referred to in paragraph (3) or (3A), a person shall neither transmit, nor instigate the transmission of, unsolicited communications for the purposes of direct marketing by means of electronic mail unless the recipient of the electronic mail has previously notified the sender that he consents for the time being to such communications being sent by, or at the instigation of, the sender."
+  },
+  {
+   "requirement": "A person may send or instigate the sending of direct marketing electronic mail if that person obtained the recipient's contact details in the course of selling or negotiating to sell a product or service to that recipient.",
+   "quote": "that person has obtained the contact details of the recipient of that electronic mail in the course of the sale or negotiations for the sale of a product or service to that recipient;"
+  },
+  {
+   "requirement": "Direct marketing sent under paragraph (3) must relate only to the sender's own similar products and services.",
+   "quote": "the direct marketing is in respect of that person’s similar products and services only; and"
+  },
+  {
+   "requirement": "A person sending direct marketing electronic mail under paragraph (3) must provide the recipient with a simple means of refusing the use of their contact details free of charge (save for transmission costs) both when the details are initially collected and in each subsequent communication if not initially refused.",
+   "quote": "the recipient has been given a simple means of refusing (free of charge except for the costs of the transmission of the refusal) the use of his contact details for the purposes of such direct marketing, at the time that the details were initially collected, and, where he did not initially refuse the use of the details, at the time of each subsequent communication."
+  },
+  {
+   "requirement": "A charity may send or instigate the sending of direct marketing electronic mail where the sole purpose of the direct marketing is to further one or more of the charity's charitable purposes.",
+   "quote": "the sole purpose of the direct marketing is to further one or more of the charity’s charitable purposes;"
+  },
+  {
+   "requirement": "A charity sending direct marketing electronic mail under paragraph (3A) must have obtained the recipient's contact details in the course of the recipient expressing interest in one or more of the charity's charitable purposes at that time, or offering or providing support to further one or more of those purposes.",
+   "quote": "the charity obtained the contact details of the recipient of the electronic mail in the course of the recipient— (i) expressing an interest in one or more of the purposes that were the charity’s charitable purposes at that time; or (ii) offering or providing support to further one or more of those purposes; and"
+  },
+  {
+   "requirement": "A charity sending direct marketing electronic mail under paragraph (3A) must provide the recipient with a simple means of refusing the use of their contact details for direct marketing free of charge (save for transmission costs) when the details are initially collected and in each subsequent communication if not initially refused.",
+   "quote": "the recipient has been given a simple means of refusing (free of charge except for the costs of the transmission of the refusal) the use of their contact details for the purposes of direct marketing by the charity, at the time that the details were initially collected, and, where the recipient did not initially refuse the use of the details, at the time of each subsequent communication."
+  },
+  {
+   "requirement": "A subscriber must not permit their line to be used in contravention of paragraph (2).",
+   "quote": "A subscriber shall not permit his line to be used in contravention of paragraph (2)."
+  },
+  {
+   "requirement": "In regulation 22, 'charity' means a charity defined under section 1(1) of the Charities Act 2011, a charity defined under section 1(1) of the Charities Act (Northern Ireland) 2008 (including treated institutions), or a body entered in the Scottish Charity Register that continues to meet the charity test in section 7 of the Charities and Trustee Investment (Scotland) Act 2005.",
+   "quote": "“charity” means— (a) a charity as defined in section 1(1) of the Charities Act 2011, (b) a charity as defined in section 1(1) of the Charities Act (Northern Ireland) 2008 (c. 12 (N.I.)), including an institution treated as such a charity for the purposes of that Act by virtue of the Charities Act 2008 (Transitional Provision) Order (Northern Ireland) 2013 (S.R. (N.I.) 2013 No. 211), and (c) a body entered in the Scottish Charity Register, other than a body which no longer meets the charity test in section 7 of the Charities and Trustee Investment (Scotland) Act 2005 (asp 10)"
+  },
+  {
+   "requirement": "In relation to a charity, institution, or body, 'charitable purpose' has the meaning given in the relevant Act governing that body.",
+   "quote": "in relation to such a charity, institution or body, “charitable purpose” has the meaning given in the relevant Act."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

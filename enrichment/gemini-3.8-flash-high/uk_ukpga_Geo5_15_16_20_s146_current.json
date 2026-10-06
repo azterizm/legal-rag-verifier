@@ -1,0 +1,201 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s146@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s146",
+ "version": "current",
+ "source_sha256": "bc65730b5bf6c4af94405beec8b2ed02bdee0d71f29439222781e5476faba1c7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A right of re-entry or forfeiture under any proviso or stipulation in a lease for breach of a covenant or condition cannot be enforced by action or otherwise unless the lessor serves a notice specifying the breach, requiring remedy if capable of remedy, and requiring money compensation, and the lessee fails within a reasonable time to remedy it and make reasonable compensation to the lessor's satisfaction.",
+    "quote": "shall not be enforceable, by action or otherwise, unless and until the lessor serves on the lessee a notice"
+   },
+   {
+    "requirement": "A lessee may apply to the court for relief against re-entry or forfeiture either in the lessor's enforcement action or in an action brought by the lessee.",
+    "quote": "the lessee may, in the lessor’s action, if any, or in any action brought by himself, apply to the court for relief"
+   },
+   {
+    "requirement": "The court has discretion to grant or refuse relief to a lessee, taking into account the proceedings, the parties' conduct under section 146, and all other circumstances, and may impose terms including costs, expenses, damages, compensation, penalty, or an injunction against future breaches.",
+    "quote": "the court may grant or refuse relief, as the court, having regard to the proceedings and conduct of the parties under the foregoing provisions of this section, and to all the other circumstances, thinks fit"
+   },
+   {
+    "requirement": "A lessor is entitled to recover as a debt from the lessee all reasonable costs and expenses properly incurred in employing a solicitor, surveyor, valuer, or otherwise regarding any breach giving rise to forfeiture that is waived at the lessee's request or from which the lessee is relieved under the Law of Property Act 1925.",
+    "quote": "recover as a debt due to him from a lessee, and in addition to damages (if any), all reasonable costs and expenses properly incurred by the lessor"
+   },
+   {
+    "requirement": "An under-lessee may apply to the court for an order vesting the property comprised in the head lease or any part thereof in that under-lessee when a lessor is proceeding to enforce a right of re-entry or forfeiture or proceeding for non-payment of rent.",
+    "quote": "make an order vesting, for the whole term of the lease or any less term, the property comprised in the lease or any part thereof in any person entitled as under-lessee"
+   },
+   {
+    "requirement": "An under-lessee obtaining a vesting order is not entitled to require a lease for any term longer than the term held under their original sub-lease.",
+    "quote": "in no case shall any such under-lessee be entitled to require a lease to be granted to him for any longer term than he had under his original sub-lease"
+   },
+   {
+    "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'lease' includes an original or derivative under-lease, an agreement for a lease where the lessee is entitled to have the lease granted, and a grant at a fee farm rent or securing a rent by condition.",
+    "quote": "“Lease” includes an original or derivative under-lease; also an agreement for a lease where the lessee has become entitled to have his lease granted; also a grant at a fee farm rent, or securing a rent by condition"
+   },
+   {
+    "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'lessee' includes an original or derivative under-lessee, persons deriving title under a lessee, and a grantee under a fee farm rent or rent-securing grant along with persons deriving title under such grantee.",
+    "quote": "“Lessee” includes an original or derivative under-lessee, and the persons deriving title under a lessee; also a grantee under any such grant as aforesaid and the persons deriving title under him"
+   },
+   {
+    "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'lessor' includes an original or derivative under-lessor, persons deriving title under a lessor, and a person making a fee farm rent or rent-securing grant along with persons deriving title under such grantor.",
+    "quote": "“Lessor” includes an original or derivative under-lessor, and the persons deriving title under a lessor; also a person making such grant as aforesaid and the persons deriving title under him"
+   },
+   {
+    "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'under-lease' includes an agreement for an under-lease where the under-lessee is entitled to have it granted, and 'under-lessee' includes any person deriving title under an under-lessee.",
+    "quote": "“Under-lease” includes an agreement for an under-lease where the under-lessee has become entitled to have his underlease granted; (e) “Under-lessee” includes any person deriving title under an under-lessee"
+   },
+   {
+    "requirement": "Section 146 of the Law of Property Act 1925 applies even if the right of re-entry or forfeiture arises from a lease stipulation inserted pursuant to directions in an Act of Parliament.",
+    "quote": "This section applies although the proviso or stipulation under which the right of re-entry or forfeiture accrues is inserted in the lease in pursuance of the directions of any Act of Parliament."
+   },
+   {
+    "requirement": "A lease limited to continue only as long as the lessee abstains from committing a breach of covenant takes effect under section 146 of the Law of Property Act 1925 as a lease continuing for any longer term it could subsist, determinable by a proviso for re-entry on breach.",
+    "quote": "shall be and take effect as a lease to continue for any longer term for which it could subsist, but determinable by a proviso for re-entry on such a breach"
+   },
+   {
+    "requirement": "Section 146 of the Law of Property Act 1925 does not apply to a covenant or condition against assigning, underletting, parting with possession, or disposing of the land leased where the breach occurred before the commencement of the Act.",
+    "quote": "does not extend— (i) To a covenant or condition against assigning, underletting, parting with the possession, or disposing of the land leased where the breach occurred before the commencement of this Act"
+   },
+   {
+    "requirement": "Section 146 of the Law of Property Act 1925 does not apply to a covenant or condition in a mining lease for allowing the lessor access to or inspection of books, accounts, records, weighing machines or other things, or to enter or inspect the mine or its workings.",
+    "quote": "does not extend— (ii) In the case of a mining lease, to a covenant or condition for allowing the lessor to have access to or inspect books, accounts, records, weighing machines or other things, or to enter or inspect the mine or the workings thereof."
+   },
+   {
+    "requirement": "Section 146 of the Law of Property Act 1925 does not apply to a condition for forfeiture upon the lessee's bankruptcy or execution if contained in a lease of agricultural or pastoral land, mines or minerals, a public-house or beershop, a furnished dwelling-house, or property where the tenant's personal qualifications are of importance for value, character, or neighbourhood to the lessor.",
+    "quote": "This section does not apply to a condition for forfeiture on the bankruptcy of the lessee or on taking in execution of the lessee’s interest if contained in a lease of"
+   },
+   {
+    "requirement": "If a lease contains a forfeiture condition on bankruptcy or execution (and is not an exempt lease under subsection (9)), section 146 of the Law of Property Act 1925 applies to that condition if the lessee's interest is sold within one year of the bankruptcy or taking in execution.",
+    "quote": "if the lessee’s interest is sold within one year from the bankruptcy or taking in execution, this section applies to the forfeiture condition aforesaid"
+   },
+   {
+    "requirement": "If a lease contains a forfeiture condition on bankruptcy or execution (and is not an exempt lease under subsection (9)) and the lessee's interest is not sold before the end of one year, section 146 of the Law of Property Act 1925 applies to the condition only during the first year from the bankruptcy or taking in execution.",
+    "quote": "if the lessee’s interest is not sold before the expiration of that year, this section only applies to the forfeiture condition aforesaid during the first year from the date of the bankruptcy or taking in execution"
+   },
+   {
+    "requirement": "Section 146 of the Law of Property Act 1925 does not affect the law relating to re-entry, forfeiture, or relief in the case of non-payment of rent, except as otherwise expressly mentioned.",
+    "quote": "This section does not, save as otherwise mentioned, affect the law relating to re-entry or forfeiture or relief in case of non-payment of rent."
+   },
+   {
+    "requirement": "Section 146 of the Law of Property Act 1925 applies notwithstanding any contract or agreement to the contrary.",
+    "quote": "This section has effect notwithstanding any stipulation to the contrary."
+   },
+   {
+    "requirement": "The county court has jurisdiction under section 146 of the Law of Property Act 1925.",
+    "quote": "The county court has jurisdiction under this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time allowed for the lessee to remedy the breach and make reasonable compensation after service of the section 146 notice",
+    "value": "a reasonable time",
+    "quote": "within a reasonable time thereafter"
+   },
+   {
+    "what": "Period from bankruptcy or taking in execution within which the lessee's interest must be sold for section 146 to apply to the forfeiture condition",
+    "value": "one year",
+    "quote": "sold within one year from the bankruptcy or taking in execution"
+   },
+   {
+    "what": "Period during which section 146 applies to the forfeiture condition if the lessee's interest is not sold within one year",
+    "value": "first year",
+    "quote": "during the first year from the date of the bankruptcy or taking in execution"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A right of re-entry or forfeiture under any proviso or stipulation in a lease for breach of a covenant or condition cannot be enforced by action or otherwise unless the lessor serves a notice specifying the breach, requiring remedy if capable of remedy, and requiring money compensation, and the lessee fails within a reasonable time to remedy it and make reasonable compensation to the lessor's satisfaction.",
+   "quote": "shall not be enforceable, by action or otherwise, unless and until the lessor serves on the lessee a notice"
+  },
+  {
+   "requirement": "A lessee may apply to the court for relief against re-entry or forfeiture either in the lessor's enforcement action or in an action brought by the lessee.",
+   "quote": "the lessee may, in the lessor’s action, if any, or in any action brought by himself, apply to the court for relief"
+  },
+  {
+   "requirement": "The court has discretion to grant or refuse relief to a lessee, taking into account the proceedings, the parties' conduct under section 146, and all other circumstances, and may impose terms including costs, expenses, damages, compensation, penalty, or an injunction against future breaches.",
+   "quote": "the court may grant or refuse relief, as the court, having regard to the proceedings and conduct of the parties under the foregoing provisions of this section, and to all the other circumstances, thinks fit"
+  },
+  {
+   "requirement": "A lessor is entitled to recover as a debt from the lessee all reasonable costs and expenses properly incurred in employing a solicitor, surveyor, valuer, or otherwise regarding any breach giving rise to forfeiture that is waived at the lessee's request or from which the lessee is relieved under the Law of Property Act 1925.",
+   "quote": "recover as a debt due to him from a lessee, and in addition to damages (if any), all reasonable costs and expenses properly incurred by the lessor"
+  },
+  {
+   "requirement": "An under-lessee may apply to the court for an order vesting the property comprised in the head lease or any part thereof in that under-lessee when a lessor is proceeding to enforce a right of re-entry or forfeiture or proceeding for non-payment of rent.",
+   "quote": "make an order vesting, for the whole term of the lease or any less term, the property comprised in the lease or any part thereof in any person entitled as under-lessee"
+  },
+  {
+   "requirement": "An under-lessee obtaining a vesting order is not entitled to require a lease for any term longer than the term held under their original sub-lease.",
+   "quote": "in no case shall any such under-lessee be entitled to require a lease to be granted to him for any longer term than he had under his original sub-lease"
+  },
+  {
+   "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'lease' includes an original or derivative under-lease, an agreement for a lease where the lessee is entitled to have the lease granted, and a grant at a fee farm rent or securing a rent by condition.",
+   "quote": "“Lease” includes an original or derivative under-lease; also an agreement for a lease where the lessee has become entitled to have his lease granted; also a grant at a fee farm rent, or securing a rent by condition"
+  },
+  {
+   "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'lessee' includes an original or derivative under-lessee, persons deriving title under a lessee, and a grantee under a fee farm rent or rent-securing grant along with persons deriving title under such grantee.",
+   "quote": "“Lessee” includes an original or derivative under-lessee, and the persons deriving title under a lessee; also a grantee under any such grant as aforesaid and the persons deriving title under him"
+  },
+  {
+   "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'lessor' includes an original or derivative under-lessor, persons deriving title under a lessor, and a person making a fee farm rent or rent-securing grant along with persons deriving title under such grantor.",
+   "quote": "“Lessor” includes an original or derivative under-lessor, and the persons deriving title under a lessor; also a person making such grant as aforesaid and the persons deriving title under him"
+  },
+  {
+   "requirement": "For the purposes of section 146 of the Law of Property Act 1925, 'under-lease' includes an agreement for an under-lease where the under-lessee is entitled to have it granted, and 'under-lessee' includes any person deriving title under an under-lessee.",
+   "quote": "“Under-lease” includes an agreement for an under-lease where the under-lessee has become entitled to have his underlease granted; (e) “Under-lessee” includes any person deriving title under an under-lessee"
+  },
+  {
+   "requirement": "Section 146 of the Law of Property Act 1925 applies even if the right of re-entry or forfeiture arises from a lease stipulation inserted pursuant to directions in an Act of Parliament.",
+   "quote": "This section applies although the proviso or stipulation under which the right of re-entry or forfeiture accrues is inserted in the lease in pursuance of the directions of any Act of Parliament."
+  },
+  {
+   "requirement": "A lease limited to continue only as long as the lessee abstains from committing a breach of covenant takes effect under section 146 of the Law of Property Act 1925 as a lease continuing for any longer term it could subsist, determinable by a proviso for re-entry on breach.",
+   "quote": "shall be and take effect as a lease to continue for any longer term for which it could subsist, but determinable by a proviso for re-entry on such a breach"
+  },
+  {
+   "requirement": "Section 146 of the Law of Property Act 1925 does not apply to a covenant or condition against assigning, underletting, parting with possession, or disposing of the land leased where the breach occurred before the commencement of the Act.",
+   "quote": "does not extend— (i) To a covenant or condition against assigning, underletting, parting with the possession, or disposing of the land leased where the breach occurred before the commencement of this Act"
+  },
+  {
+   "requirement": "Section 146 of the Law of Property Act 1925 does not apply to a condition for forfeiture upon the lessee's bankruptcy or execution if contained in a lease of agricultural or pastoral land, mines or minerals, a public-house or beershop, a furnished dwelling-house, or property where the tenant's personal qualifications are of importance for value, character, or neighbourhood to the lessor.",
+   "quote": "This section does not apply to a condition for forfeiture on the bankruptcy of the lessee or on taking in execution of the lessee’s interest if contained in a lease of"
+  },
+  {
+   "requirement": "If a lease contains a forfeiture condition on bankruptcy or execution (and is not an exempt lease under subsection (9)), section 146 of the Law of Property Act 1925 applies to that condition if the lessee's interest is sold within one year of the bankruptcy or taking in execution.",
+   "quote": "if the lessee’s interest is sold within one year from the bankruptcy or taking in execution, this section applies to the forfeiture condition aforesaid"
+  },
+  {
+   "requirement": "If a lease contains a forfeiture condition on bankruptcy or execution (and is not an exempt lease under subsection (9)) and the lessee's interest is not sold before the end of one year, section 146 of the Law of Property Act 1925 applies to the condition only during the first year from the bankruptcy or taking in execution.",
+   "quote": "if the lessee’s interest is not sold before the expiration of that year, this section only applies to the forfeiture condition aforesaid during the first year from the date of the bankruptcy or taking in execution"
+  },
+  {
+   "requirement": "Section 146 of the Law of Property Act 1925 does not affect the law relating to re-entry, forfeiture, or relief in the case of non-payment of rent, except as otherwise expressly mentioned.",
+   "quote": "This section does not, save as otherwise mentioned, affect the law relating to re-entry or forfeiture or relief in case of non-payment of rent."
+  },
+  {
+   "requirement": "Section 146 of the Law of Property Act 1925 applies notwithstanding any contract or agreement to the contrary.",
+   "quote": "This section has effect notwithstanding any stipulation to the contrary."
+  },
+  {
+   "requirement": "The county court has jurisdiction under section 146 of the Law of Property Act 1925.",
+   "quote": "The county court has jurisdiction under this section"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period from bankruptcy or taking in execution within which the lessee's interest must be sold for section 146 to apply to the forfeiture condition",
+   "value": "one year",
+   "quote": "sold within one year from the bankruptcy or taking in execution"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 19,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 1
+ }
+}

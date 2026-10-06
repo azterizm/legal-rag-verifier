@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1989/41/s4@current",
+ "section": "uk/ukpga/1989/41/s4",
+ "version": "current",
+ "source_sha256": "0b93ae3492bf3833e35e38eaf2220419408e1952c40bdec60814990b24761991",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father acquires parental responsibility for the child if he becomes registered as the child's father under any of the enactments specified in subsection (1A).",
+    "quote": "he becomes registered as the child’s father under any of the enactments specified in subsection (1A)"
+   },
+   {
+    "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father acquires parental responsibility for the child if he and the child's mother make a parental responsibility agreement providing for him to have parental responsibility for the child.",
+    "quote": "he and the child’s mother make an agreement (a “parental responsibility agreement”) providing for him to have parental responsibility for the child"
+   },
+   {
+    "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father acquires parental responsibility for the child if the court, on the father's application, orders that he shall have parental responsibility for the child.",
+    "quote": "the court, on his application, orders that he shall have parental responsibility for the child"
+   },
+   {
+    "requirement": "The enactments under which a father may be registered to acquire parental responsibility comprise paragraphs (a), (b) and (c) of section 10(1) and of section 10A(1) of the Births and Deaths Registration Act 1953, paragraphs (a), (b)(i) and (c) of section 18(1), and sections 18(2)(b) and 20(1)(a) of the Registration of Births, Deaths and Marriages (Scotland) Act 1965, and sub-paragraphs (a), (b) and (c) of Article 14(3) of the Births and Deaths Registration (Northern Ireland) Order 1976.",
+    "quote": "The enactments referred to in subsection (1)(a) are— (a) paragraphs (a), (b) and (c) of section 10(1) and of section 10A(1) of the Births and Deaths Registration Act 1953; (b) paragraphs (a), (b)(i) and (c) of section 18(1), and sections 18(2)(b) and 20(1)(a) of the Registration of Births, Deaths and Marriages (Scotland) Act 1965; and (c) sub-paragraphs (a), (b) and (c) of Article 14(3) of the Births and Deaths Registration (Northern Ireland) Order 1976."
+   },
+   {
+    "requirement": "The Secretary of State may by order amend subsection (1A) to add further enactments to the list of specified registration enactments.",
+    "quote": "The Secretary of State may by order amend subsection (1A) so as to add further enactments to the list in that subsection."
+   },
+   {
+    "requirement": "A parental responsibility agreement has no effect for the purposes of the Children Act 1989 unless it is made in the form prescribed by regulations made by the Lord Chancellor.",
+    "quote": "it is made in the form prescribed by regulations made by the Lord Chancellor"
+   },
+   {
+    "requirement": "A parental responsibility agreement has no effect for the purposes of the Children Act 1989 unless, where regulations are made by the Lord Chancellor prescribing the manner of recording such agreements, it is recorded in the prescribed manner.",
+    "quote": "where regulations are made by the Lord Chancellor prescribing the manner in which such agreements must be recorded, it is recorded in the prescribed manner"
+   },
+   {
+    "requirement": "A person who has acquired parental responsibility under subsection (1) ceases to have that responsibility only if the court orders that the responsibility cease.",
+    "quote": "A person who has acquired parental responsibility under subsection (1) shall cease to have that responsibility only if the court so orders."
+   },
+   {
+    "requirement": "The court may make an order terminating parental responsibility acquired under subsection (1) on the application of any person who has parental responsibility for the child, subject in the case of parental responsibility acquired under subsection (1)(c) to section 12(4).",
+    "quote": "The court may make an order under subsection (2A) on the application— (a) of any person who has parental responsibility for the child"
+   },
+   {
+    "requirement": "The court may make an order terminating parental responsibility acquired under subsection (1) on the application of the child himself with the leave of the court, subject in the case of parental responsibility acquired under subsection (1)(c) to section 12(4).",
+    "quote": "with the leave of the court, of the child himself, subject, in the case of parental responsibility acquired under subsection (1)(c), to section 12(4)"
+   },
+   {
+    "requirement": "The court may only grant leave to the child to apply for termination of parental responsibility if the court is satisfied that the child has sufficient understanding to make the proposed application.",
+    "quote": "The court may only grant leave under subsection (3)(b) if it is satisfied that the child has sufficient understanding to make the proposed application."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father acquires parental responsibility for the child if he becomes registered as the child's father under any of the enactments specified in subsection (1A).",
+   "quote": "he becomes registered as the child’s father under any of the enactments specified in subsection (1A)"
+  },
+  {
+   "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father acquires parental responsibility for the child if he and the child's mother make a parental responsibility agreement providing for him to have parental responsibility for the child.",
+   "quote": "he and the child’s mother make an agreement (a “parental responsibility agreement”) providing for him to have parental responsibility for the child"
+  },
+  {
+   "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father acquires parental responsibility for the child if the court, on the father's application, orders that he shall have parental responsibility for the child.",
+   "quote": "the court, on his application, orders that he shall have parental responsibility for the child"
+  },
+  {
+   "requirement": "The enactments under which a father may be registered to acquire parental responsibility comprise paragraphs (a), (b) and (c) of section 10(1) and of section 10A(1) of the Births and Deaths Registration Act 1953, paragraphs (a), (b)(i) and (c) of section 18(1), and sections 18(2)(b) and 20(1)(a) of the Registration of Births, Deaths and Marriages (Scotland) Act 1965, and sub-paragraphs (a), (b) and (c) of Article 14(3) of the Births and Deaths Registration (Northern Ireland) Order 1976.",
+   "quote": "The enactments referred to in subsection (1)(a) are— (a) paragraphs (a), (b) and (c) of section 10(1) and of section 10A(1) of the Births and Deaths Registration Act 1953; (b) paragraphs (a), (b)(i) and (c) of section 18(1), and sections 18(2)(b) and 20(1)(a) of the Registration of Births, Deaths and Marriages (Scotland) Act 1965; and (c) sub-paragraphs (a), (b) and (c) of Article 14(3) of the Births and Deaths Registration (Northern Ireland) Order 1976."
+  },
+  {
+   "requirement": "The Secretary of State may by order amend subsection (1A) to add further enactments to the list of specified registration enactments.",
+   "quote": "The Secretary of State may by order amend subsection (1A) so as to add further enactments to the list in that subsection."
+  },
+  {
+   "requirement": "A parental responsibility agreement has no effect for the purposes of the Children Act 1989 unless it is made in the form prescribed by regulations made by the Lord Chancellor.",
+   "quote": "it is made in the form prescribed by regulations made by the Lord Chancellor"
+  },
+  {
+   "requirement": "A parental responsibility agreement has no effect for the purposes of the Children Act 1989 unless, where regulations are made by the Lord Chancellor prescribing the manner of recording such agreements, it is recorded in the prescribed manner.",
+   "quote": "where regulations are made by the Lord Chancellor prescribing the manner in which such agreements must be recorded, it is recorded in the prescribed manner"
+  },
+  {
+   "requirement": "A person who has acquired parental responsibility under subsection (1) ceases to have that responsibility only if the court orders that the responsibility cease.",
+   "quote": "A person who has acquired parental responsibility under subsection (1) shall cease to have that responsibility only if the court so orders."
+  },
+  {
+   "requirement": "The court may make an order terminating parental responsibility acquired under subsection (1) on the application of any person who has parental responsibility for the child, subject in the case of parental responsibility acquired under subsection (1)(c) to section 12(4).",
+   "quote": "The court may make an order under subsection (2A) on the application— (a) of any person who has parental responsibility for the child"
+  },
+  {
+   "requirement": "The court may make an order terminating parental responsibility acquired under subsection (1) on the application of the child himself with the leave of the court, subject in the case of parental responsibility acquired under subsection (1)(c) to section 12(4).",
+   "quote": "with the leave of the court, of the child himself, subject, in the case of parental responsibility acquired under subsection (1)(c), to section 12(4)"
+  },
+  {
+   "requirement": "The court may only grant leave to the child to apply for termination of parental responsibility if the court is satisfied that the child has sufficient understanding to make the proposed application.",
+   "quote": "The court may only grant leave under subsection (3)(b) if it is satisfied that the child has sufficient understanding to make the proposed application."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

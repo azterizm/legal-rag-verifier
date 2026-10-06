@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/1996/18/s98@current",
+ "section": "uk/ukpga/1996/18/s98",
+ "version": "current",
+ "source_sha256": "9be4575a9abae9508a1cf9f59b9c492aea3bdb74da7f0f008d0f2e14a0f964b6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In determining whether the dismissal of an employee is fair or unfair, the employer must show the reason or, if there is more than one reason, the principal reason for the dismissal.",
+    "quote": "it is for the employer to show— (a) the reason (or, if more than one, the principal reason) for the dismissal"
+   },
+   {
+    "requirement": "In determining whether the dismissal of an employee is fair or unfair, the employer must show that the reason falls within subsection (2) or constitutes some other substantial reason of a kind that justifies dismissing an employee holding the position that the employee held.",
+    "quote": "that it is either a reason falling within subsection (2) or some other substantial reason of a kind such as to justify the dismissal of an employee holding the position which the employee held"
+   },
+   {
+    "requirement": "A dismissal reason falls within subsection (2) if it relates to the employee's capability or qualifications for performing work of the kind the employee was employed by the employer to do.",
+    "quote": "relates to the capability or qualifications of the employee for performing work of the kind which he was employed by the employer to do"
+   },
+   {
+    "requirement": "A dismissal reason falls within subsection (2) if it relates to the conduct of the employee.",
+    "quote": "relates to the conduct of the employee"
+   },
+   {
+    "requirement": "A dismissal reason falls within subsection (2) if the employee was redundant.",
+    "quote": "is that the employee was redundant"
+   },
+   {
+    "requirement": "A dismissal reason falls within subsection (2) if the employee could not continue to work in the position held without contravention, on the part of either the employee or the employer, of a duty or restriction imposed by or under an enactment.",
+    "quote": "could not continue to work in the position which he held without contravention (either on his part or on that of his employer) of a duty or restriction imposed by or under an enactment"
+   },
+   {
+    "requirement": "For the purposes of capability-related dismissal, capability in relation to an employee means capability assessed by reference to skill, aptitude, health, or any other physical or mental quality.",
+    "quote": "“capability”, in relation to an employee, means his capability assessed by reference to skill, aptitude, health or any other physical or mental quality"
+   },
+   {
+    "requirement": "For the purposes of qualifications-related dismissal, qualifications in relation to an employee means any degree, diploma, or other academic, technical, or professional qualification relevant to the position held by the employee.",
+    "quote": "“qualifications”, in relation to an employee, means any degree, diploma or other academic, technical or professional qualification relevant to the position which he held"
+   },
+   {
+    "requirement": "Where the employer has fulfilled the requirements of subsection (1), whether the dismissal is fair or unfair having regard to the reason shown depends on whether, in the circumstances (including the employer's undertaking's size and administrative resources), the employer acted reasonably or unreasonably in treating that reason as sufficient to dismiss the employee.",
+    "quote": "depends on whether in the circumstances (including the size and administrative resources of the employer’s undertaking) the employer acted reasonably or unreasonably in treating it as a sufficient reason for dismissing the employee"
+   },
+   {
+    "requirement": "Where the employer has fulfilled the requirements of subsection (1), the determination of whether the dismissal is fair or unfair must be determined in accordance with equity and the substantial merits of the case.",
+    "quote": "shall be determined in accordance with equity and the substantial merits of the case"
+   },
+   {
+    "requirement": "The reasonableness determination of whether a dismissal is fair or unfair under subsection (4) is subject to sections 98A to 107 of the Employment Rights Act 1996 and sections 152, 153, 238, and 238A of the Trade Union and Labour Relations (Consolidation) Act 1992.",
+    "quote": "Subsection (4)is subject to— (a) sections 98A to 107 of this Act, and (b) sections 152, 153 , 238 and 238A of the Trade Union and Labour Relations (Consolidation) Act 1992"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "count of reasons for dismissal triggering the requirement to identify the principal reason",
+    "value": "more than one",
+    "quote": "if more than one, the principal reason"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In determining whether the dismissal of an employee is fair or unfair, the employer must show the reason or, if there is more than one reason, the principal reason for the dismissal.",
+   "quote": "it is for the employer to show— (a) the reason (or, if more than one, the principal reason) for the dismissal"
+  },
+  {
+   "requirement": "In determining whether the dismissal of an employee is fair or unfair, the employer must show that the reason falls within subsection (2) or constitutes some other substantial reason of a kind that justifies dismissing an employee holding the position that the employee held.",
+   "quote": "that it is either a reason falling within subsection (2) or some other substantial reason of a kind such as to justify the dismissal of an employee holding the position which the employee held"
+  },
+  {
+   "requirement": "A dismissal reason falls within subsection (2) if it relates to the employee's capability or qualifications for performing work of the kind the employee was employed by the employer to do.",
+   "quote": "relates to the capability or qualifications of the employee for performing work of the kind which he was employed by the employer to do"
+  },
+  {
+   "requirement": "A dismissal reason falls within subsection (2) if it relates to the conduct of the employee.",
+   "quote": "relates to the conduct of the employee"
+  },
+  {
+   "requirement": "A dismissal reason falls within subsection (2) if the employee was redundant.",
+   "quote": "is that the employee was redundant"
+  },
+  {
+   "requirement": "A dismissal reason falls within subsection (2) if the employee could not continue to work in the position held without contravention, on the part of either the employee or the employer, of a duty or restriction imposed by or under an enactment.",
+   "quote": "could not continue to work in the position which he held without contravention (either on his part or on that of his employer) of a duty or restriction imposed by or under an enactment"
+  },
+  {
+   "requirement": "For the purposes of capability-related dismissal, capability in relation to an employee means capability assessed by reference to skill, aptitude, health, or any other physical or mental quality.",
+   "quote": "“capability”, in relation to an employee, means his capability assessed by reference to skill, aptitude, health or any other physical or mental quality"
+  },
+  {
+   "requirement": "For the purposes of qualifications-related dismissal, qualifications in relation to an employee means any degree, diploma, or other academic, technical, or professional qualification relevant to the position held by the employee.",
+   "quote": "“qualifications”, in relation to an employee, means any degree, diploma or other academic, technical or professional qualification relevant to the position which he held"
+  },
+  {
+   "requirement": "Where the employer has fulfilled the requirements of subsection (1), whether the dismissal is fair or unfair having regard to the reason shown depends on whether, in the circumstances (including the employer's undertaking's size and administrative resources), the employer acted reasonably or unreasonably in treating that reason as sufficient to dismiss the employee.",
+   "quote": "depends on whether in the circumstances (including the size and administrative resources of the employer’s undertaking) the employer acted reasonably or unreasonably in treating it as a sufficient reason for dismissing the employee"
+  },
+  {
+   "requirement": "Where the employer has fulfilled the requirements of subsection (1), the determination of whether the dismissal is fair or unfair must be determined in accordance with equity and the substantial merits of the case.",
+   "quote": "shall be determined in accordance with equity and the substantial merits of the case"
+  },
+  {
+   "requirement": "The reasonableness determination of whether a dismissal is fair or unfair under subsection (4) is subject to sections 98A to 107 of the Employment Rights Act 1996 and sections 152, 153, 238, and 238A of the Trade Union and Labour Relations (Consolidation) Act 1992.",
+   "quote": "Subsection (4)is subject to— (a) sections 98A to 107 of this Act, and (b) sections 152, 153 , 238 and 238A of the Trade Union and Labour Relations (Consolidation) Act 1992"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

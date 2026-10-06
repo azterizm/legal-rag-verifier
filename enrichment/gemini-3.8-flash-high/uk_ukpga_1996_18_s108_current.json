@@ -1,0 +1,293 @@
+{
+ "key": "uk/ukpga/1996/18/s108@current",
+ "section": "uk/ukpga/1996/18/s108",
+ "version": "current",
+ "source_sha256": "942c870e4b5a9d63a318a6f2d7d19bcd221d3448d44cef4a7b1d274a601cd17d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 94 does not apply to the dismissal of an employee unless that employee has been continuously employed for a period of not less than two years ending with the effective date of termination.",
+    "quote": "Section 94 does not apply to the dismissal of an employee unless he has been continuously employed for a period of not less than two years ending with the effective date of termination."
+   },
+   {
+    "requirement": "If an employee is dismissed by reason of any requirement or recommendation referred to in section 64(2), the continuous employment requirement has effect as if the words 'one month' were substituted for 'two years'.",
+    "quote": "If an employee is dismissed by reason of any such requirement or recommendation as is referred to in section 64(2), subsection (1) has effect in relation to that dismissal as if for the words “two years” there were substituted the words “ one month ”."
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 98B (read with subsection (2) of that section) applies.",
+    "quote": "Subsection (1) does not apply if— (aa) subsection (1) of section 98B (read with subsection (2) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 99 (read with any regulations made under that section) applies.",
+    "quote": "(b) subsection (1) of section 99 (read with any regulations made under that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 100 (read with subsections (2) and (3) of that section) applies.",
+    "quote": "(c) subsection (1) of section 100 (read with subsections (2) and (3) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 101 (read with subsection (2) of that section) or subsection (3) of that section applies.",
+    "quote": "(d) subsection (1) of section 101 (read with subsection (2) of that section) or subsection (3) of that section applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (2) of section 101ZA applies (read with subsection (3) of that section) or subsection (4) of that section applies.",
+    "quote": "(da) subsection (2) of section 101ZA applies (read with subsection (3) of that section) or subsection (4) of that section applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 101A applies.",
+    "quote": "(dd) section 101A applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 102 applies.",
+    "quote": "(e) section 102 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 103 applies.",
+    "quote": "(f) section 103 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 103A applies.",
+    "quote": "(ff) section 103A applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104 (read with subsections (2) and (3) of that section) applies.",
+    "quote": "(g) subsection (1) of section 104 (read with subsections (2) and (3) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104A (read with subsection (2) of that section) applies.",
+    "quote": "(gg) subsection (1) of section 104A (read with subsection (2) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104B (read with subsection (2) of that section) applies.",
+    "quote": "(gh) subsection (1) of section 104B (read with subsection (2) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 104C applies.",
+    "quote": "(gi) section 104C applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104D (read with subsection (2) of that section) applies.",
+    "quote": "(gj) subsection (1) of section 104D (read with subsection (2) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 104E applies.",
+    "quote": "(gk) section 104E applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104F (read with subsection (2) of that section) applies.",
+    "quote": "(gl) subsection (1) of section 104F (read with subsection (2) of that section) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 104G applies.",
+    "quote": "(gm) section 104G applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if section 105 applies.",
+    "quote": "(h) section 105 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 28 of the Transnational Information and Consultation of Employees Regulations 1999 (read with paragraphs (4) and (7) of that regulation) applies.",
+    "quote": "(hh) paragraph (3) or (6) of regulation 28 of the Transnational Information and Consultation of Employees Regulations 1999 (read with paragraphs (4) and (7) of that regulation) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (1) of regulation 7 of the Part-time Workers (Prevention of Less Favourable Treatment) Regulations 2000 applies.",
+    "quote": "(i) paragraph (1) of regulation 7 of the Part-time Workers (Prevention of Less Favourable Treatment) Regulations 2000 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (1) of regulation 6 of the Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 applies.",
+    "quote": "(j) paragraph (1) of regulation 6 of the Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 42 of the European Public Limited-Liability Company Regulations 2004 applies.",
+    "quote": "(k) paragraph (3) or (6) of regulation 42 of the European Public Limited-Liability Company Regulations 2004 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 30 of the Information and Consultation of Employees Regulations 2004 (read with paragraphs (4) and (7) of that regulation) applies.",
+    "quote": "(l) paragraph (3) or (6) of regulation 30 of the Information and Consultation of Employees Regulations 2004 (read with paragraphs (4) and (7) of that regulation) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph 5(3) or (5) of the Schedule to the Occupational and Personal Pension Schemes (Consultation by Employers and Miscellaneous Amendment) Regulations 2006 (read with paragraph 5(6) of that Schedule) applies.",
+    "quote": "(m) paragraph 5(3) or (5) of the Schedule to the Occupational and Personal Pension Schemes (Consultation by Employers and Miscellaneous Amendment) Regulations 2006 (read with paragraph 5(6) of that Schedule) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 31 of the European Cooperative Society (Involvement of Employees) Regulations 2006 (read with paragraphs (4) and (7) of that regulation) applies.",
+    "quote": "(o) paragraph (3) or (6) of regulation 31 of the European Cooperative Society (Involvement of Employees) Regulations 2006 (read with paragraphs (4) and (7) of that regulation) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (1)(a) or (b) of regulation 29 of the European Public Limited-Liability Company (Employee Involvement) (Great Britain) Regulations 2009 (S.I. 2009/2401) applies.",
+    "quote": "(q) paragraph (1)(a) or (b) of regulation 29 of the European Public Limited-Liability Company (Employee Involvement) (Great Britain) Regulations 2009( S.I. 2009/2401) applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if paragraph (1) of regulation 17 of the Agency Workers Regulations 2010 applies.",
+    "quote": "(r) paragraph (1) of regulation 17 of the Agency Workers Regulations 2010 applies"
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if the reason (or, if more than one, the principal reason) for the employee's dismissal is, or relates to, the employee's political opinions or affiliation.",
+    "quote": "Subsection (1) does not apply if the reason (or, if more than one, the principal reason) for the dismissal is, or relates to, the employee's political opinions or affiliation."
+   },
+   {
+    "requirement": "The qualifying continuous employment period does not apply if the reason (or, if more than one, the principal reason) for the dismissal is, or is connected with, the employee's membership of a reserve force as defined in section 374 of the Armed Forces Act 2006.",
+    "quote": "Subsection (1) does not apply if the reason (or, if more than one, the principal reason) for the dismissal is, or is connected with, the employee's membership of a reserve force (as defined in section 374 of the Armed Forces Act 2006)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period of continuous employment ending with the effective date of termination required for section 94 to apply to the dismissal of an employee",
+    "value": "two years",
+    "quote": "continuously employed for a period of not less than two years ending with the effective date of termination"
+   },
+   {
+    "what": "substituted period of continuous employment required where an employee is dismissed by reason of a requirement or recommendation referred to in section 64(2)",
+    "value": "one month",
+    "quote": "substituted the words “ one month ”"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 94 does not apply to the dismissal of an employee unless that employee has been continuously employed for a period of not less than two years ending with the effective date of termination.",
+   "quote": "Section 94 does not apply to the dismissal of an employee unless he has been continuously employed for a period of not less than two years ending with the effective date of termination."
+  },
+  {
+   "requirement": "If an employee is dismissed by reason of any requirement or recommendation referred to in section 64(2), the continuous employment requirement has effect as if the words 'one month' were substituted for 'two years'.",
+   "quote": "If an employee is dismissed by reason of any such requirement or recommendation as is referred to in section 64(2), subsection (1) has effect in relation to that dismissal as if for the words “two years” there were substituted the words “ one month ”."
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 98B (read with subsection (2) of that section) applies.",
+   "quote": "Subsection (1) does not apply if— (aa) subsection (1) of section 98B (read with subsection (2) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 99 (read with any regulations made under that section) applies.",
+   "quote": "(b) subsection (1) of section 99 (read with any regulations made under that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 100 (read with subsections (2) and (3) of that section) applies.",
+   "quote": "(c) subsection (1) of section 100 (read with subsections (2) and (3) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 101 (read with subsection (2) of that section) or subsection (3) of that section applies.",
+   "quote": "(d) subsection (1) of section 101 (read with subsection (2) of that section) or subsection (3) of that section applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (2) of section 101ZA applies (read with subsection (3) of that section) or subsection (4) of that section applies.",
+   "quote": "(da) subsection (2) of section 101ZA applies (read with subsection (3) of that section) or subsection (4) of that section applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 101A applies.",
+   "quote": "(dd) section 101A applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 102 applies.",
+   "quote": "(e) section 102 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 103 applies.",
+   "quote": "(f) section 103 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 103A applies.",
+   "quote": "(ff) section 103A applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104 (read with subsections (2) and (3) of that section) applies.",
+   "quote": "(g) subsection (1) of section 104 (read with subsections (2) and (3) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104A (read with subsection (2) of that section) applies.",
+   "quote": "(gg) subsection (1) of section 104A (read with subsection (2) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104B (read with subsection (2) of that section) applies.",
+   "quote": "(gh) subsection (1) of section 104B (read with subsection (2) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 104C applies.",
+   "quote": "(gi) section 104C applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104D (read with subsection (2) of that section) applies.",
+   "quote": "(gj) subsection (1) of section 104D (read with subsection (2) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 104E applies.",
+   "quote": "(gk) section 104E applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if subsection (1) of section 104F (read with subsection (2) of that section) applies.",
+   "quote": "(gl) subsection (1) of section 104F (read with subsection (2) of that section) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 104G applies.",
+   "quote": "(gm) section 104G applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if section 105 applies.",
+   "quote": "(h) section 105 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 28 of the Transnational Information and Consultation of Employees Regulations 1999 (read with paragraphs (4) and (7) of that regulation) applies.",
+   "quote": "(hh) paragraph (3) or (6) of regulation 28 of the Transnational Information and Consultation of Employees Regulations 1999 (read with paragraphs (4) and (7) of that regulation) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (1) of regulation 7 of the Part-time Workers (Prevention of Less Favourable Treatment) Regulations 2000 applies.",
+   "quote": "(i) paragraph (1) of regulation 7 of the Part-time Workers (Prevention of Less Favourable Treatment) Regulations 2000 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (1) of regulation 6 of the Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 applies.",
+   "quote": "(j) paragraph (1) of regulation 6 of the Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 42 of the European Public Limited-Liability Company Regulations 2004 applies.",
+   "quote": "(k) paragraph (3) or (6) of regulation 42 of the European Public Limited-Liability Company Regulations 2004 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 30 of the Information and Consultation of Employees Regulations 2004 (read with paragraphs (4) and (7) of that regulation) applies.",
+   "quote": "(l) paragraph (3) or (6) of regulation 30 of the Information and Consultation of Employees Regulations 2004 (read with paragraphs (4) and (7) of that regulation) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph 5(3) or (5) of the Schedule to the Occupational and Personal Pension Schemes (Consultation by Employers and Miscellaneous Amendment) Regulations 2006 (read with paragraph 5(6) of that Schedule) applies.",
+   "quote": "(m) paragraph 5(3) or (5) of the Schedule to the Occupational and Personal Pension Schemes (Consultation by Employers and Miscellaneous Amendment) Regulations 2006 (read with paragraph 5(6) of that Schedule) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (3) or (6) of regulation 31 of the European Cooperative Society (Involvement of Employees) Regulations 2006 (read with paragraphs (4) and (7) of that regulation) applies.",
+   "quote": "(o) paragraph (3) or (6) of regulation 31 of the European Cooperative Society (Involvement of Employees) Regulations 2006 (read with paragraphs (4) and (7) of that regulation) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (1)(a) or (b) of regulation 29 of the European Public Limited-Liability Company (Employee Involvement) (Great Britain) Regulations 2009 (S.I. 2009/2401) applies.",
+   "quote": "(q) paragraph (1)(a) or (b) of regulation 29 of the European Public Limited-Liability Company (Employee Involvement) (Great Britain) Regulations 2009( S.I. 2009/2401) applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if paragraph (1) of regulation 17 of the Agency Workers Regulations 2010 applies.",
+   "quote": "(r) paragraph (1) of regulation 17 of the Agency Workers Regulations 2010 applies"
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if the reason (or, if more than one, the principal reason) for the employee's dismissal is, or relates to, the employee's political opinions or affiliation.",
+   "quote": "Subsection (1) does not apply if the reason (or, if more than one, the principal reason) for the dismissal is, or relates to, the employee's political opinions or affiliation."
+  },
+  {
+   "requirement": "The qualifying continuous employment period does not apply if the reason (or, if more than one, the principal reason) for the dismissal is, or is connected with, the employee's membership of a reserve force as defined in section 374 of the Armed Forces Act 2006.",
+   "quote": "Subsection (1) does not apply if the reason (or, if more than one, the principal reason) for the dismissal is, or is connected with, the employee's membership of a reserve force (as defined in section 374 of the Armed Forces Act 2006)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period of continuous employment ending with the effective date of termination required for section 94 to apply to the dismissal of an employee",
+   "value": "two years",
+   "quote": "continuously employed for a period of not less than two years ending with the effective date of termination"
+  },
+  {
+   "what": "substituted period of continuous employment required where an employee is dismissed by reason of a requirement or recommendation referred to in section 64(2)",
+   "value": "one month",
+   "quote": "substituted the words “ one month ”"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 31,
+  "elements_verified": 31,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

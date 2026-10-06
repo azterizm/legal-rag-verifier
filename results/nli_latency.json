@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "machine": "Apple M4",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.11",
+    "torch": "2.14.1",
+    "transformers": "5.18.0"
+  },
+  "rows": [
+    {
+      "model": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+      "device": "mps",
+      "batch": "1 pair",
+      "n": 200,
+      "p50_ms": 17.95,
+      "p99_ms": 21.25,
+      "max_ms": 22.14
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+      "device": "mps",
+      "batch": "9 pairs",
+      "n": 200,
+      "p50_ms": 134.72,
+      "p99_ms": 145.98,
+      "max_ms": 146.02
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+      "device": "mps",
+      "batch": "check_sentence",
+      "n": 200,
+      "p50_ms": 140.51,
+      "p99_ms": 160.36,
+      "max_ms": 207.59
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+      "device": "cpu",
+      "batch": "1 pair",
+      "n": 200,
+      "p50_ms": 19.58,
+      "p99_ms": 20.14,
+      "max_ms": 20.27
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+      "device": "cpu",
+      "batch": "9 pairs",
+      "n": 200,
+      "p50_ms": 144.54,
+      "p99_ms": 157.91,
+      "max_ms": 164.55
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+      "device": "cpu",
+      "batch": "check_sentence",
+      "n": 200,
+      "p50_ms": 145.67,
+      "p99_ms": 158.2,
+      "max_ms": 164.14
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+      "device": "mps",
+      "batch": "1 pair",
+      "n": 200,
+      "p50_ms": 25.68,
+      "p99_ms": 27.94,
+      "max_ms": 31.54
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+      "device": "mps",
+      "batch": "9 pairs",
+      "n": 200,
+      "p50_ms": 271.82,
+      "p99_ms": 298.76,
+      "max_ms": 306.92
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+      "device": "mps",
+      "batch": "check_sentence",
+      "n": 200,
+      "p50_ms": 271.7,
+      "p99_ms": 297.17,
+      "max_ms": 300.49
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+      "device": "cpu",
+      "batch": "1 pair",
+      "n": 200,
+      "p50_ms": 39.06,
+      "p99_ms": 41.47,
+      "max_ms": 41.57
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+      "device": "cpu",
+      "batch": "9 pairs",
+      "n": 200,
+      "p50_ms": 298.2,
+      "p99_ms": 319.32,
+      "max_ms": 320.44
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+      "device": "cpu",
+      "batch": "check_sentence",
+      "n": 200,
+      "p50_ms": 298.87,
+      "p99_ms": 320.99,
+      "max_ms": 321.9
+    }
+  ]
+}

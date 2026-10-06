@@ -1,0 +1,142 @@
+{
+ "key": "uk/ukpga/1970/9/s9A@current",
+ "section": "uk/ukpga/1970/9/s9A",
+ "version": "current",
+ "source_sha256": "93508bbeb62cd3d92ee2e41e4d3eed3f91a92944ef2b5456b89acbeb3a859994",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An officer of the Board may enquire into a return under section 8 or 8A of the Taxes Management Act 1970 if the officer gives notice of intention to do so to the taxpayer within the time allowed.",
+    "quote": "An officer of the Board may enquire into a return under section 8 or 8A of this Act if he gives notice of his intention to do so"
+   },
+   {
+    "requirement": "Where a taxpayer's return was delivered on or before the filing date, the time allowed for giving a notice of enquiry is up to the end of the period of twelve months after the day on which the return was delivered.",
+    "quote": "if the return was delivered on or before the filing date, up to the end of the period of twelve months after the day on which the return was delivered"
+   },
+   {
+    "requirement": "Where a taxpayer's return was delivered after the filing date, the time allowed for giving a notice of enquiry is up to and including the quarter day next following the first anniversary of the day on which the return was delivered.",
+    "quote": "if the return was delivered after the filing date, up to and including the quarter day next following the first anniversary of the day on which the return was delivered"
+   },
+   {
+    "requirement": "Where a taxpayer's return is amended under section 9ZA of the Taxes Management Act 1970, the time allowed for giving a notice of enquiry is up to and including the quarter day next following the first anniversary of the day on which the amendment was made.",
+    "quote": "if the return is amended under section 9ZA of this Act, up to and including the quarter day next following the first anniversary of the day on which the amendment was made"
+   },
+   {
+    "requirement": "For the purpose of calculating the time allowed to give a notice of enquiry, the quarter days are 31st January, 30th April, 31st July and 31st October.",
+    "quote": "the quarter days are 31st January, 30th April, 31st July and 31st October"
+   },
+   {
+    "requirement": "A return which has already been the subject of one notice of enquiry cannot be subjected to another notice of enquiry, unless the subsequent notice is given in consequence of an amendment (or another amendment) made to the return under section 9ZA of the Taxes Management Act 1970.",
+    "quote": "A return which has been the subject of one notice of enquiry may not be the subject of another, except one given in consequence of an amendment"
+   },
+   {
+    "requirement": "Subject to the statutory limitation for certain amendments, an enquiry extends to anything contained in the return, anything required to be contained in the return (including any claim or election included in it), consideration of whether to give the taxpayer a transfer pricing notice under section 168(1) of TIOPA 2010, and consideration of whether to give the taxpayer a notice under section 81(2) of TIOPA 2010.",
+    "quote": "An enquiry extends to— (a) anything contained in the return, or required to be contained in the return, including any claim or election included in the return"
+   },
+   {
+    "requirement": "An enquiry into a return is limited solely to matters to which an amendment relates or which are affected by the amendment if notice of enquiry is given as a result of an amendment under section 9ZA at a time when ordinary notice under subsection (2)(a) or (b) is no longer possible, after a final closure notice has been issued for the return, or after a partial closure notice has been issued in relation to matters to which the amendment relates or which are affected by it.",
+    "quote": "the enquiry into the return is limited to matters to which the amendment relates or which are affected by the amendment"
+   },
+   {
+    "requirement": "The filing date in relation to a return means the last day for delivering that return in accordance with section 8 or section 8A.",
+    "quote": "“the filing date” means, in relation to a return, the last day for delivering it in accordance with section 8 or 8A"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period following the day of delivery within which notice of enquiry may be given for a return delivered on or before the filing date",
+    "value": "twelve months",
+    "quote": "period of twelve months after the day on which the return was delivered"
+   },
+   {
+    "what": "The anniversary of the delivery day of a late return used to determine the following quarter day deadline",
+    "value": "first anniversary",
+    "quote": "first anniversary of the day on which the return was delivered"
+   },
+   {
+    "what": "The anniversary of the day an amendment was made under section 9ZA used to determine the following quarter day deadline",
+    "value": "first anniversary",
+    "quote": "first anniversary of the day on which the amendment was made"
+   },
+   {
+    "what": "Quarter day for determining the enquiry deadline",
+    "value": "31st January",
+    "quote": "quarter days are 31st January, 30th April, 31st July and 31st October"
+   },
+   {
+    "what": "Quarter day for determining the enquiry deadline",
+    "value": "30th April",
+    "quote": "quarter days are 31st January, 30th April, 31st July and 31st October"
+   },
+   {
+    "what": "Quarter day for determining the enquiry deadline",
+    "value": "31st July",
+    "quote": "quarter days are 31st January, 30th April, 31st July and 31st October"
+   },
+   {
+    "what": "Quarter day for determining the enquiry deadline",
+    "value": "31st October",
+    "quote": "quarter days are 31st January, 30th April, 31st July and 31st October"
+   },
+   {
+    "what": "The maximum number of enquiry notices a return may be subjected to before the prohibition on further enquiries applies (barring amendments)",
+    "value": "one",
+    "quote": "one notice of enquiry"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An officer of the Board may enquire into a return under section 8 or 8A of the Taxes Management Act 1970 if the officer gives notice of intention to do so to the taxpayer within the time allowed.",
+   "quote": "An officer of the Board may enquire into a return under section 8 or 8A of this Act if he gives notice of his intention to do so"
+  },
+  {
+   "requirement": "Where a taxpayer's return was delivered on or before the filing date, the time allowed for giving a notice of enquiry is up to the end of the period of twelve months after the day on which the return was delivered.",
+   "quote": "if the return was delivered on or before the filing date, up to the end of the period of twelve months after the day on which the return was delivered"
+  },
+  {
+   "requirement": "Where a taxpayer's return was delivered after the filing date, the time allowed for giving a notice of enquiry is up to and including the quarter day next following the first anniversary of the day on which the return was delivered.",
+   "quote": "if the return was delivered after the filing date, up to and including the quarter day next following the first anniversary of the day on which the return was delivered"
+  },
+  {
+   "requirement": "Where a taxpayer's return is amended under section 9ZA of the Taxes Management Act 1970, the time allowed for giving a notice of enquiry is up to and including the quarter day next following the first anniversary of the day on which the amendment was made.",
+   "quote": "if the return is amended under section 9ZA of this Act, up to and including the quarter day next following the first anniversary of the day on which the amendment was made"
+  },
+  {
+   "requirement": "For the purpose of calculating the time allowed to give a notice of enquiry, the quarter days are 31st January, 30th April, 31st July and 31st October.",
+   "quote": "the quarter days are 31st January, 30th April, 31st July and 31st October"
+  },
+  {
+   "requirement": "A return which has already been the subject of one notice of enquiry cannot be subjected to another notice of enquiry, unless the subsequent notice is given in consequence of an amendment (or another amendment) made to the return under section 9ZA of the Taxes Management Act 1970.",
+   "quote": "A return which has been the subject of one notice of enquiry may not be the subject of another, except one given in consequence of an amendment"
+  },
+  {
+   "requirement": "Subject to the statutory limitation for certain amendments, an enquiry extends to anything contained in the return, anything required to be contained in the return (including any claim or election included in it), consideration of whether to give the taxpayer a transfer pricing notice under section 168(1) of TIOPA 2010, and consideration of whether to give the taxpayer a notice under section 81(2) of TIOPA 2010.",
+   "quote": "An enquiry extends to— (a) anything contained in the return, or required to be contained in the return, including any claim or election included in the return"
+  },
+  {
+   "requirement": "An enquiry into a return is limited solely to matters to which an amendment relates or which are affected by the amendment if notice of enquiry is given as a result of an amendment under section 9ZA at a time when ordinary notice under subsection (2)(a) or (b) is no longer possible, after a final closure notice has been issued for the return, or after a partial closure notice has been issued in relation to matters to which the amendment relates or which are affected by it.",
+   "quote": "the enquiry into the return is limited to matters to which the amendment relates or which are affected by the amendment"
+  },
+  {
+   "requirement": "The filing date in relation to a return means the last day for delivering that return in accordance with section 8 or section 8A.",
+   "quote": "“the filing date” means, in relation to a return, the last day for delivering it in accordance with section 8 or 8A"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The period following the day of delivery within which notice of enquiry may be given for a return delivered on or before the filing date",
+   "value": "twelve months",
+   "quote": "period of twelve months after the day on which the return was delivered"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 8,
+  "thresholds_verified": 1
+ }
+}

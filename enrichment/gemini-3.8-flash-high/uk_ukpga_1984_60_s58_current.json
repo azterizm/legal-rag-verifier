@@ -1,0 +1,171 @@
+{
+ "key": "uk/ukpga/1984/60/s58@current",
+ "section": "uk/ukpga/1984/60/s58",
+ "version": "current",
+ "source_sha256": "d42612c8c845ae9d04b80acb33d9038ecee4b3aa42a16487ce406d9d93b81617",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person arrested and held in custody in a police station or other premises is entitled to consult a solicitor privately at any time if that person requests it.",
+    "quote": "entitled, if he so requests, to consult a solicitor privately at any time"
+   },
+   {
+    "requirement": "Subject to the exception for court appearances after charge, a detained person's request to consult a solicitor and the time it was made must be recorded in the custody record.",
+    "quote": "recorded in the custody record"
+   },
+   {
+    "requirement": "A request to consult a solicitor need not be recorded in the custody record if made by a person who is at a court after being charged with an offence.",
+    "quote": "need not be recorded in the custody record of a person who makes it at a time while he is at a court after being charged with an offence"
+   },
+   {
+    "requirement": "A person who requests to consult a solicitor must be permitted to do so as soon as is practicable, except to the extent that delay is permitted by section 58 of the Police and Criminal Evidence Act 1984.",
+    "quote": "permitted to consult a solicitor as soon as is practicable"
+   },
+   {
+    "requirement": "In any case, a detained person who requests it must be permitted to consult a solicitor within 36 hours from the relevant time as defined in section 41(2) of the Police and Criminal Evidence Act 1984.",
+    "quote": "within 36 hours from the relevant time, as defined in section 41(2) above"
+   },
+   {
+    "requirement": "Delay in compliance with a request to consult a solicitor is permitted only if the person is in police detention for an indictable offence and an officer of at least the rank of superintendent authorises it.",
+    "quote": "Delay in compliance with a request is only permitted"
+   },
+   {
+    "requirement": "An officer authorising delay may do so orally or in writing, but if given orally, the officer must confirm the authorisation in writing as soon as is practicable.",
+    "quote": "if he gives it orally, he shall confirm it in writing as soon as is practicable"
+   },
+   {
+    "requirement": "Subject to subsection (8A), an officer may only authorise delay where having reasonable grounds for believing that the detained person exercising the right to consult a solicitor at the desired time will lead to interference with or harm to evidence connected with an indictable offence or interference with or physical injury to other persons.",
+    "quote": "will lead to interference with or harm to evidence connected with an indictable offence or interference with or physical injury to other persons"
+   },
+   {
+    "requirement": "Subject to subsection (8A), an officer may only authorise delay where having reasonable grounds for believing that the detained person exercising the right to consult a solicitor at the desired time will lead to the alerting of other persons suspected of having committed an indictable offence who have not yet been arrested for it.",
+    "quote": "will lead to the alerting of other persons suspected of having committed such an offence but not yet arrested for it"
+   },
+   {
+    "requirement": "Subject to subsection (8A), an officer may only authorise delay where having reasonable grounds for believing that the detained person exercising the right to consult a solicitor at the desired time will hinder the recovery of any property obtained as a result of an indictable offence.",
+    "quote": "will hinder the recovery of any property obtained as a result of such an offence"
+   },
+   {
+    "requirement": "An officer may also authorise delay where having reasonable grounds for believing that the person detained for the indictable offence has benefited from criminal conduct and the recovery of the value of the property constituting the benefit will be hindered by exercising the right to consult a solicitor.",
+    "quote": "recovery of the value of the property constituting the benefit will be hindered by the exercise of the right conferred by subsection (1) above"
+   },
+   {
+    "requirement": "For the purposes of authorising delay under subsection (8A), the question of whether a detained person has benefited from criminal conduct must be decided in accordance with Part 2 of the Proceeds of Crime Act 2002.",
+    "quote": "decided in accordance with Part 2 of the Proceeds of Crime Act 2002"
+   },
+   {
+    "requirement": "If delay in permitting a detained person to consult a solicitor is authorised, the detained person must be told the reasons for the delay.",
+    "quote": "the detained person shall be told the reasons for it"
+   },
+   {
+    "requirement": "If delay in permitting a detained person to consult a solicitor is authorised, the reason for the delay must be noted on the detained person's custody record.",
+    "quote": "the reason shall be noted on his custody record"
+   },
+   {
+    "requirement": "The duties to tell the detained person the reasons for authorising delay and to note the reason on the custody record must be performed as soon as is practicable.",
+    "quote": "duties imposed by subsection (9) above shall be performed as soon as is practicable"
+   },
+   {
+    "requirement": "There may be no further delay in permitting a detained person to consult a solicitor privately once the reason for authorising delay ceases to subsist.",
+    "quote": "no further delay in permitting the exercise of the right conferred by subsection (1) above once the reason for authorising delay ceases to subsist"
+   },
+   {
+    "requirement": "Nothing in section 58 applies to a person arrested or detained under the terrorism provisions, or under section 27 of the National Security Act 2023, or detained under Part 1 of Schedule 3 to the Counter-Terrorism and Border Security Act 2019.",
+    "quote": "Nothing in this section applies to a person arrested or detained under the terrorism provisions or under section 27 of the National Security Act 2023, or detained under Part 1 of Schedule 3 to the Counter-Terrorism and Border Security Act 2019"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum period from the relevant time within which a detained person must in any case be permitted to consult a solicitor",
+    "value": "36 hours",
+    "quote": "within 36 hours from the relevant time"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person arrested and held in custody in a police station or other premises is entitled to consult a solicitor privately at any time if that person requests it.",
+   "quote": "entitled, if he so requests, to consult a solicitor privately at any time"
+  },
+  {
+   "requirement": "Subject to the exception for court appearances after charge, a detained person's request to consult a solicitor and the time it was made must be recorded in the custody record.",
+   "quote": "recorded in the custody record"
+  },
+  {
+   "requirement": "A request to consult a solicitor need not be recorded in the custody record if made by a person who is at a court after being charged with an offence.",
+   "quote": "need not be recorded in the custody record of a person who makes it at a time while he is at a court after being charged with an offence"
+  },
+  {
+   "requirement": "A person who requests to consult a solicitor must be permitted to do so as soon as is practicable, except to the extent that delay is permitted by section 58 of the Police and Criminal Evidence Act 1984.",
+   "quote": "permitted to consult a solicitor as soon as is practicable"
+  },
+  {
+   "requirement": "In any case, a detained person who requests it must be permitted to consult a solicitor within 36 hours from the relevant time as defined in section 41(2) of the Police and Criminal Evidence Act 1984.",
+   "quote": "within 36 hours from the relevant time, as defined in section 41(2) above"
+  },
+  {
+   "requirement": "Delay in compliance with a request to consult a solicitor is permitted only if the person is in police detention for an indictable offence and an officer of at least the rank of superintendent authorises it.",
+   "quote": "Delay in compliance with a request is only permitted"
+  },
+  {
+   "requirement": "An officer authorising delay may do so orally or in writing, but if given orally, the officer must confirm the authorisation in writing as soon as is practicable.",
+   "quote": "if he gives it orally, he shall confirm it in writing as soon as is practicable"
+  },
+  {
+   "requirement": "Subject to subsection (8A), an officer may only authorise delay where having reasonable grounds for believing that the detained person exercising the right to consult a solicitor at the desired time will lead to interference with or harm to evidence connected with an indictable offence or interference with or physical injury to other persons.",
+   "quote": "will lead to interference with or harm to evidence connected with an indictable offence or interference with or physical injury to other persons"
+  },
+  {
+   "requirement": "Subject to subsection (8A), an officer may only authorise delay where having reasonable grounds for believing that the detained person exercising the right to consult a solicitor at the desired time will lead to the alerting of other persons suspected of having committed an indictable offence who have not yet been arrested for it.",
+   "quote": "will lead to the alerting of other persons suspected of having committed such an offence but not yet arrested for it"
+  },
+  {
+   "requirement": "Subject to subsection (8A), an officer may only authorise delay where having reasonable grounds for believing that the detained person exercising the right to consult a solicitor at the desired time will hinder the recovery of any property obtained as a result of an indictable offence.",
+   "quote": "will hinder the recovery of any property obtained as a result of such an offence"
+  },
+  {
+   "requirement": "An officer may also authorise delay where having reasonable grounds for believing that the person detained for the indictable offence has benefited from criminal conduct and the recovery of the value of the property constituting the benefit will be hindered by exercising the right to consult a solicitor.",
+   "quote": "recovery of the value of the property constituting the benefit will be hindered by the exercise of the right conferred by subsection (1) above"
+  },
+  {
+   "requirement": "For the purposes of authorising delay under subsection (8A), the question of whether a detained person has benefited from criminal conduct must be decided in accordance with Part 2 of the Proceeds of Crime Act 2002.",
+   "quote": "decided in accordance with Part 2 of the Proceeds of Crime Act 2002"
+  },
+  {
+   "requirement": "If delay in permitting a detained person to consult a solicitor is authorised, the detained person must be told the reasons for the delay.",
+   "quote": "the detained person shall be told the reasons for it"
+  },
+  {
+   "requirement": "If delay in permitting a detained person to consult a solicitor is authorised, the reason for the delay must be noted on the detained person's custody record.",
+   "quote": "the reason shall be noted on his custody record"
+  },
+  {
+   "requirement": "The duties to tell the detained person the reasons for authorising delay and to note the reason on the custody record must be performed as soon as is practicable.",
+   "quote": "duties imposed by subsection (9) above shall be performed as soon as is practicable"
+  },
+  {
+   "requirement": "There may be no further delay in permitting a detained person to consult a solicitor privately once the reason for authorising delay ceases to subsist.",
+   "quote": "no further delay in permitting the exercise of the right conferred by subsection (1) above once the reason for authorising delay ceases to subsist"
+  },
+  {
+   "requirement": "Nothing in section 58 applies to a person arrested or detained under the terrorism provisions, or under section 27 of the National Security Act 2023, or detained under Part 1 of Schedule 3 to the Counter-Terrorism and Border Security Act 2019.",
+   "quote": "Nothing in this section applies to a person arrested or detained under the terrorism provisions or under section 27 of the National Security Act 2023, or detained under Part 1 of Schedule 3 to the Counter-Terrorism and Border Security Act 2019"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum period from the relevant time within which a detained person must in any case be permitted to consult a solicitor",
+   "value": "36 hours",
+   "quote": "within 36 hours from the relevant time"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

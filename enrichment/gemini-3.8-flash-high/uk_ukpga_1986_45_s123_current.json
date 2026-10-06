@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/1986/45/s123@current",
+ "section": "uk/ukpga/1986/45/s123",
+ "version": "current",
+ "source_sha256": "653a1e8ce554b73cadd57bbf55f41b08fe8b2750ab75646a3abbeb707a173878",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company is deemed unable to pay its debts if a creditor (by assignment or otherwise) owed a sum exceeding £750 then due has served a written demand in the prescribed form at the company's registered office requiring payment, and the company has for 3 weeks thereafter neglected to pay the sum or to secure or compound for it to the reasonable satisfaction of the creditor.",
+    "quote": "if a creditor (by assignment or otherwise) to whom the company is indebted in a sum exceeding £750 then due has served on the company, by leaving it at the company’s registered office, a written demand (in the prescribed form) requiring the company to pay the sum so due and the company has for 3 weeks thereafter neglected to pay the sum or to secure or compound for it to the reasonable satisfaction of the creditor"
+   },
+   {
+    "requirement": "A company is deemed unable to pay its debts if, in England and Wales, execution or other process issued on a judgment, decree or order of any court in favour of a creditor of the company is returned unsatisfied in whole or in part.",
+    "quote": "if, in England and Wales, execution or other process issued on a judgment, decree or order of any court in favour of a creditor of the company is returned unsatisfied in whole or in part"
+   },
+   {
+    "requirement": "A company is deemed unable to pay its debts if, in Scotland, the induciae of a charge for payment on an extract decree, an extract registered bond, or an extract registered protest, have expired without payment being made.",
+    "quote": "if, in Scotland, the induciae of a charge for payment on an extract decree, or an extract registered bond, or an extract registered protest, have expired without payment being made"
+   },
+   {
+    "requirement": "A company is deemed unable to pay its debts if, in Northern Ireland, a certificate of unenforceability has been granted in respect of a judgment against the company.",
+    "quote": "if, in Northern Ireland, a certificate of unenforceability has been granted in respect of a judgment against the company"
+   },
+   {
+    "requirement": "A company is deemed unable to pay its debts if it is proved to the satisfaction of the court that the company is unable to pay its debts as they fall due.",
+    "quote": "if it is proved to the satisfaction of the court that the company is unable to pay its debts as they fall due"
+   },
+   {
+    "requirement": "A company is deemed unable to pay its debts if it is proved to the satisfaction of the court that the value of the company’s assets is less than the amount of its liabilities, taking into account its contingent and prospective liabilities.",
+    "quote": "proved to the satisfaction of the court that the value of the company’s assets is less than the amount of its liabilities, taking into account its contingent and prospective liabilities"
+   },
+   {
+    "requirement": "The money sum specified for the debt demand under subsection (1)(a) is subject to increase or reduction by order under section 416 in Part XV.",
+    "quote": "The money sum for the time being specified in subsection (1)(a) is subject to increase or reduction by order under section 416 in Part XV"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum sum of due debt owed to a creditor required to serve a statutory written demand",
+    "value": "£750",
+    "quote": "a sum exceeding £750 then due"
+   },
+   {
+    "what": "period following service of a written demand during which a company's neglect to pay, secure, or compound for the debt deems it unable to pay its debts",
+    "value": "3 weeks",
+    "quote": "for 3 weeks thereafter neglected to pay the sum"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A company is deemed unable to pay its debts if a creditor (by assignment or otherwise) owed a sum exceeding £750 then due has served a written demand in the prescribed form at the company's registered office requiring payment, and the company has for 3 weeks thereafter neglected to pay the sum or to secure or compound for it to the reasonable satisfaction of the creditor.",
+   "quote": "if a creditor (by assignment or otherwise) to whom the company is indebted in a sum exceeding £750 then due has served on the company, by leaving it at the company’s registered office, a written demand (in the prescribed form) requiring the company to pay the sum so due and the company has for 3 weeks thereafter neglected to pay the sum or to secure or compound for it to the reasonable satisfaction of the creditor"
+  },
+  {
+   "requirement": "A company is deemed unable to pay its debts if, in England and Wales, execution or other process issued on a judgment, decree or order of any court in favour of a creditor of the company is returned unsatisfied in whole or in part.",
+   "quote": "if, in England and Wales, execution or other process issued on a judgment, decree or order of any court in favour of a creditor of the company is returned unsatisfied in whole or in part"
+  },
+  {
+   "requirement": "A company is deemed unable to pay its debts if, in Scotland, the induciae of a charge for payment on an extract decree, an extract registered bond, or an extract registered protest, have expired without payment being made.",
+   "quote": "if, in Scotland, the induciae of a charge for payment on an extract decree, or an extract registered bond, or an extract registered protest, have expired without payment being made"
+  },
+  {
+   "requirement": "A company is deemed unable to pay its debts if, in Northern Ireland, a certificate of unenforceability has been granted in respect of a judgment against the company.",
+   "quote": "if, in Northern Ireland, a certificate of unenforceability has been granted in respect of a judgment against the company"
+  },
+  {
+   "requirement": "A company is deemed unable to pay its debts if it is proved to the satisfaction of the court that the company is unable to pay its debts as they fall due.",
+   "quote": "if it is proved to the satisfaction of the court that the company is unable to pay its debts as they fall due"
+  },
+  {
+   "requirement": "A company is deemed unable to pay its debts if it is proved to the satisfaction of the court that the value of the company’s assets is less than the amount of its liabilities, taking into account its contingent and prospective liabilities.",
+   "quote": "proved to the satisfaction of the court that the value of the company’s assets is less than the amount of its liabilities, taking into account its contingent and prospective liabilities"
+  },
+  {
+   "requirement": "The money sum specified for the debt demand under subsection (1)(a) is subject to increase or reduction by order under section 416 in Part XV.",
+   "quote": "The money sum for the time being specified in subsection (1)(a) is subject to increase or reduction by order under section 416 in Part XV"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum sum of due debt owed to a creditor required to serve a statutory written demand",
+   "value": "£750",
+   "quote": "a sum exceeding £750 then due"
+  },
+  {
+   "what": "period following service of a written demand during which a company's neglect to pay, secure, or compound for the debt deems it unable to pay its debts",
+   "value": "3 weeks",
+   "quote": "for 3 weeks thereafter neglected to pay the sum"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

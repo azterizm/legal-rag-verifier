@@ -1,0 +1,109 @@
+{
+ "key": "uk/ukpga/1996/40/s3@current",
+ "section": "uk/ukpga/1996/40/s3",
+ "version": "current",
+ "source_sha256": "99b37d21f7a7b3dab83ed65a1444efeff643fd8300062bbbfd9e60da63fd8718",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Before exercising any right conferred on him by section 2, a building owner must serve on any adjoining owner a notice referred to in the Act as a party structure notice.",
+    "quote": "Before exercising any right conferred on him by section 2 a building owner shall serve on any adjoining owner a notice (in this Act referred to as a “party structure notice”)"
+   },
+   {
+    "requirement": "A party structure notice served by a building owner must state the name and address of the building owner.",
+    "quote": "stating— (a) the name and address of the building owner;"
+   },
+   {
+    "requirement": "A party structure notice served by a building owner must state the nature and particulars of the proposed work, including, where the building owner proposes to construct special foundations, plans, sections and details of construction of the special foundations together with reasonable particulars of the loads to be carried thereby.",
+    "quote": "the nature and particulars of the proposed work including, in cases where the building owner proposes to construct special foundations, plans, sections and details of construction of the special foundations together with reasonable particulars of the loads to be carried thereby;"
+   },
+   {
+    "requirement": "A party structure notice served by a building owner must state the date on which the proposed work will begin.",
+    "quote": "the date on which the proposed work will begin."
+   },
+   {
+    "requirement": "A party structure notice must be served at least two months before the date on which the proposed work will begin.",
+    "quote": "be served at least two months before the date on which the proposed work will begin;"
+   },
+   {
+    "requirement": "A party structure notice ceases to have effect if the work to which it relates has not begun within the period of twelve months beginning with the day on which the notice is served and is not prosecuted with due diligence.",
+    "quote": "cease to have effect if the work to which it relates— (i) has not begun within the period of twelve months beginning with the day on which the notice is served; and (ii) is not prosecuted with due diligence."
+   },
+   {
+    "requirement": "A building owner is not prevented by section 3 from exercising any right conferred on him by section 2 with the consent in writing of the adjoining owners and of the adjoining occupiers.",
+    "quote": "Nothing in this section shall— (a) prevent a building owner from exercising with the consent in writing of the adjoining owners and of the adjoining occupiers any right conferred on him by section 2;"
+   },
+   {
+    "requirement": "A building owner is not required by section 3 to serve any party structure notice before complying with any notice served under any statutory provisions relating to dangerous or neglected structures.",
+    "quote": "require a building owner to serve any party structure notice before complying with any notice served under any statutory provisions relating to dangerous or neglected structures."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum period before the date on which proposed work begins within which a party structure notice must be served",
+    "value": "two months",
+    "quote": "at least two months before the date on which the proposed work will begin"
+   },
+   {
+    "what": "Period beginning with the day the notice is served within which work must begin to prevent the party structure notice from ceasing to have effect if not prosecuted with due diligence",
+    "value": "twelve months",
+    "quote": "period of twelve months beginning with the day on which the notice is served"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Before exercising any right conferred on him by section 2, a building owner must serve on any adjoining owner a notice referred to in the Act as a party structure notice.",
+   "quote": "Before exercising any right conferred on him by section 2 a building owner shall serve on any adjoining owner a notice (in this Act referred to as a “party structure notice”)"
+  },
+  {
+   "requirement": "A party structure notice served by a building owner must state the name and address of the building owner.",
+   "quote": "stating— (a) the name and address of the building owner;"
+  },
+  {
+   "requirement": "A party structure notice served by a building owner must state the nature and particulars of the proposed work, including, where the building owner proposes to construct special foundations, plans, sections and details of construction of the special foundations together with reasonable particulars of the loads to be carried thereby.",
+   "quote": "the nature and particulars of the proposed work including, in cases where the building owner proposes to construct special foundations, plans, sections and details of construction of the special foundations together with reasonable particulars of the loads to be carried thereby;"
+  },
+  {
+   "requirement": "A party structure notice served by a building owner must state the date on which the proposed work will begin.",
+   "quote": "the date on which the proposed work will begin."
+  },
+  {
+   "requirement": "A party structure notice must be served at least two months before the date on which the proposed work will begin.",
+   "quote": "be served at least two months before the date on which the proposed work will begin;"
+  },
+  {
+   "requirement": "A party structure notice ceases to have effect if the work to which it relates has not begun within the period of twelve months beginning with the day on which the notice is served and is not prosecuted with due diligence.",
+   "quote": "cease to have effect if the work to which it relates— (i) has not begun within the period of twelve months beginning with the day on which the notice is served; and (ii) is not prosecuted with due diligence."
+  },
+  {
+   "requirement": "A building owner is not prevented by section 3 from exercising any right conferred on him by section 2 with the consent in writing of the adjoining owners and of the adjoining occupiers.",
+   "quote": "Nothing in this section shall— (a) prevent a building owner from exercising with the consent in writing of the adjoining owners and of the adjoining occupiers any right conferred on him by section 2;"
+  },
+  {
+   "requirement": "A building owner is not required by section 3 to serve any party structure notice before complying with any notice served under any statutory provisions relating to dangerous or neglected structures.",
+   "quote": "require a building owner to serve any party structure notice before complying with any notice served under any statutory provisions relating to dangerous or neglected structures."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum period before the date on which proposed work begins within which a party structure notice must be served",
+   "value": "two months",
+   "quote": "at least two months before the date on which the proposed work will begin"
+  },
+  {
+   "what": "Period beginning with the day the notice is served within which work must begin to prevent the party structure notice from ceasing to have effect if not prosecuted with due diligence",
+   "value": "twelve months",
+   "quote": "period of twelve months beginning with the day on which the notice is served"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

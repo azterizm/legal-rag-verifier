@@ -1,0 +1,151 @@
+{
+ "key": "uk/ukpga/1997/40/s2A@current",
+ "section": "uk/ukpga/1997/40/s2A",
+ "version": "current",
+ "source_sha256": "90c599a332d953ab0b3fe1d0e4c98bb81fdc1ed1f075b7916d25892e6e65824c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual commits an offence if that individual pursues a course of conduct in breach of section 1(1) and that course of conduct amounts to stalking.",
+    "quote": "A person is guilty of an offence if— (a) the person pursues a course of conduct in breach of section 1(1), and (b) the course of conduct amounts to stalking."
+   },
+   {
+    "requirement": "For the purposes of subsection (1)(b) and section 4A(1)(a), an individual's course of conduct amounts to stalking of another individual if it amounts to harassment of that other individual, the acts or omissions involved are ones associated with stalking, and the individual pursuing the course of conduct knows or ought to know that it amounts to harassment of the other individual.",
+    "quote": "a person's course of conduct amounts to stalking of another person if— (a) it amounts to harassment of that person, (b) the acts or omissions involved are ones associated with stalking, and (c) the person whose course of conduct it is knows or ought to know that the course of conduct amounts to harassment of the other person."
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include following a person.",
+    "quote": "following a person"
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include contacting, or attempting to contact, a person by any means.",
+    "quote": "contacting, or attempting to contact, a person by any means"
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include publishing any statement or other material relating or purporting to relate to a person, or purporting to originate from a person.",
+    "quote": "publishing any statement or other material— (i) relating or purporting to relate to a person, or (ii) purporting to originate from a person"
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include monitoring the use by a person of the internet, email or any other form of electronic communication.",
+    "quote": "monitoring the use by a person of the internet, email or any other form of electronic communication"
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include loitering in any place, whether public or private.",
+    "quote": "loitering in any place (whether public or private)"
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include interfering with any property in the possession of a person.",
+    "quote": "interfering with any property in the possession of a person"
+   },
+   {
+    "requirement": "Acts or omissions that in particular circumstances are associated with stalking include watching or spying on a person.",
+    "quote": "watching or spying on a person"
+   },
+   {
+    "requirement": "An individual convicted of an offence under section 2A is liable on summary conviction to imprisonment for a term not exceeding 51 weeks, a fine not exceeding level 5 on the standard scale, or both.",
+    "quote": "liable on summary conviction to imprisonment for a term not exceeding 51 weeks, or a fine not exceeding level 5 on the standard scale, or both."
+   },
+   {
+    "requirement": "Where an offence under section 2A was committed before the commencement of section 281(5) of the Criminal Justice Act 2003, the maximum term of imprisonment under subsection (4) is six months instead of 51 weeks.",
+    "quote": "In relation to an offence committed before the commencement of section 281(5) of the Criminal Justice Act 2003, the reference in subsection (4) to 51 weeks is to be read as a reference to six months."
+   },
+   {
+    "requirement": "The provisions of section 2A operate without prejudice to the generality of section 2.",
+    "quote": "This section is without prejudice to the generality of section 2."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on summary conviction",
+    "value": "51 weeks",
+    "quote": "imprisonment for a term not exceeding 51 weeks"
+   },
+   {
+    "what": "maximum fine level on summary conviction",
+    "value": "level 5",
+    "quote": "fine not exceeding level 5 on the standard scale"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction for an offence committed before the commencement of section 281(5) of the Criminal Justice Act 2003",
+    "value": "six months",
+    "quote": "to be read as a reference to six months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An individual commits an offence if that individual pursues a course of conduct in breach of section 1(1) and that course of conduct amounts to stalking.",
+   "quote": "A person is guilty of an offence if— (a) the person pursues a course of conduct in breach of section 1(1), and (b) the course of conduct amounts to stalking."
+  },
+  {
+   "requirement": "For the purposes of subsection (1)(b) and section 4A(1)(a), an individual's course of conduct amounts to stalking of another individual if it amounts to harassment of that other individual, the acts or omissions involved are ones associated with stalking, and the individual pursuing the course of conduct knows or ought to know that it amounts to harassment of the other individual.",
+   "quote": "a person's course of conduct amounts to stalking of another person if— (a) it amounts to harassment of that person, (b) the acts or omissions involved are ones associated with stalking, and (c) the person whose course of conduct it is knows or ought to know that the course of conduct amounts to harassment of the other person."
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include following a person.",
+   "quote": "following a person"
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include contacting, or attempting to contact, a person by any means.",
+   "quote": "contacting, or attempting to contact, a person by any means"
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include publishing any statement or other material relating or purporting to relate to a person, or purporting to originate from a person.",
+   "quote": "publishing any statement or other material— (i) relating or purporting to relate to a person, or (ii) purporting to originate from a person"
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include monitoring the use by a person of the internet, email or any other form of electronic communication.",
+   "quote": "monitoring the use by a person of the internet, email or any other form of electronic communication"
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include loitering in any place, whether public or private.",
+   "quote": "loitering in any place (whether public or private)"
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include interfering with any property in the possession of a person.",
+   "quote": "interfering with any property in the possession of a person"
+  },
+  {
+   "requirement": "Acts or omissions that in particular circumstances are associated with stalking include watching or spying on a person.",
+   "quote": "watching or spying on a person"
+  },
+  {
+   "requirement": "An individual convicted of an offence under section 2A is liable on summary conviction to imprisonment for a term not exceeding 51 weeks, a fine not exceeding level 5 on the standard scale, or both.",
+   "quote": "liable on summary conviction to imprisonment for a term not exceeding 51 weeks, or a fine not exceeding level 5 on the standard scale, or both."
+  },
+  {
+   "requirement": "Where an offence under section 2A was committed before the commencement of section 281(5) of the Criminal Justice Act 2003, the maximum term of imprisonment under subsection (4) is six months instead of 51 weeks.",
+   "quote": "In relation to an offence committed before the commencement of section 281(5) of the Criminal Justice Act 2003, the reference in subsection (4) to 51 weeks is to be read as a reference to six months."
+  },
+  {
+   "requirement": "The provisions of section 2A operate without prejudice to the generality of section 2.",
+   "quote": "This section is without prejudice to the generality of section 2."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on summary conviction",
+   "value": "51 weeks",
+   "quote": "imprisonment for a term not exceeding 51 weeks"
+  },
+  {
+   "what": "maximum fine level on summary conviction",
+   "value": "level 5",
+   "quote": "fine not exceeding level 5 on the standard scale"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction for an offence committed before the commencement of section 281(5) of the Criminal Justice Act 2003",
+   "value": "six months",
+   "quote": "to be read as a reference to six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "key": "uk/uksi/2013/3134/reg29@current",
+ "section": "uk/uksi/2013/3134/reg29",
+ "version": "current",
+ "source_sha256": "01b1dd7c7d5d0f0100829a8ef70bf0b7391f911ccf17f35a8df4c09e5bf54d66",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A consumer may cancel a distance or off-premises contract at any time during the cancellation period without giving any reason.",
+    "quote": "cancel a distance or off-premises contract at any time in the cancellation period without giving any reason"
+   },
+   {
+    "requirement": "A consumer cancelling a distance or off-premises contract does not incur any liability, subject only to specified statutory exceptions.",
+    "quote": "without incurring any liability except under these provisions"
+   },
+   {
+    "requirement": "A consumer may incur liability under regulation 34(3) where enhanced delivery was chosen by the consumer.",
+    "quote": "regulation 34(3) (where enhanced delivery chosen by consumer)"
+   },
+   {
+    "requirement": "A consumer may incur liability under regulation 34(9) where the value of goods is diminished by consumer handling.",
+    "quote": "regulation 34(9) (where value of goods diminished by consumer handling)"
+   },
+   {
+    "requirement": "A consumer may incur liability under regulation 35(5) where goods are returned by the consumer.",
+    "quote": "regulation 35(5) (where goods returned by consumer)"
+   },
+   {
+    "requirement": "A consumer may incur liability under regulation 36(4) where the consumer requests early supply of a service.",
+    "quote": "regulation 36(4) (where consumer requests early supply of service)"
+   },
+   {
+    "requirement": "The cancellation period begins when the distance or off-premises contract is entered into.",
+    "quote": "cancellation period begins when the contract is entered into"
+   },
+   {
+    "requirement": "The cancellation period ends in accordance with regulation 30 or 31.",
+    "quote": "ends in accordance with regulation 30 or 31"
+   },
+   {
+    "requirement": "The consumer's right to cancel under paragraph (1) does not affect the consumer's right to withdraw an offer to enter into a distance or off-premises contract at any time before the contract is entered into.",
+    "quote": "does not affect the consumer's right to withdraw an offer made by the consumer to enter into a distance or off-premises contract, at any time before the contract is entered into"
+   },
+   {
+    "requirement": "A consumer may withdraw an offer to enter into a distance or off-premises contract before it is entered into without giving any reason and without incurring any liability.",
+    "quote": "without giving any reason and without incurring any liability"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the cancellation period for a distance or off-premises contract",
+    "value": "begins when the contract is entered into and ends in accordance with regulation 30 or 31",
+    "quote": "The cancellation period begins when the contract is entered into and ends in accordance with regulation 30 or 31"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A consumer may cancel a distance or off-premises contract at any time during the cancellation period without giving any reason.",
+   "quote": "cancel a distance or off-premises contract at any time in the cancellation period without giving any reason"
+  },
+  {
+   "requirement": "A consumer cancelling a distance or off-premises contract does not incur any liability, subject only to specified statutory exceptions.",
+   "quote": "without incurring any liability except under these provisions"
+  },
+  {
+   "requirement": "A consumer may incur liability under regulation 34(3) where enhanced delivery was chosen by the consumer.",
+   "quote": "regulation 34(3) (where enhanced delivery chosen by consumer)"
+  },
+  {
+   "requirement": "A consumer may incur liability under regulation 34(9) where the value of goods is diminished by consumer handling.",
+   "quote": "regulation 34(9) (where value of goods diminished by consumer handling)"
+  },
+  {
+   "requirement": "A consumer may incur liability under regulation 35(5) where goods are returned by the consumer.",
+   "quote": "regulation 35(5) (where goods returned by consumer)"
+  },
+  {
+   "requirement": "A consumer may incur liability under regulation 36(4) where the consumer requests early supply of a service.",
+   "quote": "regulation 36(4) (where consumer requests early supply of service)"
+  },
+  {
+   "requirement": "The cancellation period begins when the distance or off-premises contract is entered into.",
+   "quote": "cancellation period begins when the contract is entered into"
+  },
+  {
+   "requirement": "The cancellation period ends in accordance with regulation 30 or 31.",
+   "quote": "ends in accordance with regulation 30 or 31"
+  },
+  {
+   "requirement": "The consumer's right to cancel under paragraph (1) does not affect the consumer's right to withdraw an offer to enter into a distance or off-premises contract at any time before the contract is entered into.",
+   "quote": "does not affect the consumer's right to withdraw an offer made by the consumer to enter into a distance or off-premises contract, at any time before the contract is entered into"
+  },
+  {
+   "requirement": "A consumer may withdraw an offer to enter into a distance or off-premises contract before it is entered into without giving any reason and without incurring any liability.",
+   "quote": "without giving any reason and without incurring any liability"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

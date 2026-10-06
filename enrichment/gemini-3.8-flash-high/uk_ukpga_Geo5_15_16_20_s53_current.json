@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s53@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s53",
+ "version": "current",
+ "source_sha256": "d859ae65d60282e0865314ace3036b594f6a48be1bf1439f5a525243b35adf74",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The formal requirements governing the creation or disposition of interests in land are subject to the provision contained hereinafter with respect to the creation of interests in land by parol.",
+    "quote": "Subject to the provision hereinafter contained with respect to the creation of interests in land by parol"
+   },
+   {
+    "requirement": "No interest in land can be created or disposed of except by writing signed by the person creating or conveying that interest, by that person's agent lawfully authorised in writing, by will, or by operation of law.",
+    "quote": "no interest in land can be created or disposed of except by writing signed by the person creating or conveying the same, or by his agent thereunto lawfully authorised in writing, or by will, or by operation of law"
+   },
+   {
+    "requirement": "A declaration of trust respecting any land or any interest therein must be manifested and proved by writing signed by a person who is able to declare such trust or by that person's will.",
+    "quote": "a declaration of trust respecting any land or any interest therein must be manifested and proved by some writing signed by some person who is able to declare such trust or by his will"
+   },
+   {
+    "requirement": "A disposition of an equitable interest or trust subsisting at the time of the disposition must be in writing signed by the person disposing of the interest or trust, by that person's agent lawfully authorised in writing, or by will.",
+    "quote": "a disposition of an equitable interest or trust subsisting at the time of the disposition, must be in writing signed by the person disposing of the same, or by his agent thereunto lawfully authorised in writing or by will"
+   },
+   {
+    "requirement": "Section 53 does not affect the creation or operation of resulting trusts, implied trusts, or constructive trusts.",
+    "quote": "This section does not affect the creation or operation of resulting, implied or constructive trusts."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The formal requirements governing the creation or disposition of interests in land are subject to the provision contained hereinafter with respect to the creation of interests in land by parol.",
+   "quote": "Subject to the provision hereinafter contained with respect to the creation of interests in land by parol"
+  },
+  {
+   "requirement": "No interest in land can be created or disposed of except by writing signed by the person creating or conveying that interest, by that person's agent lawfully authorised in writing, by will, or by operation of law.",
+   "quote": "no interest in land can be created or disposed of except by writing signed by the person creating or conveying the same, or by his agent thereunto lawfully authorised in writing, or by will, or by operation of law"
+  },
+  {
+   "requirement": "A declaration of trust respecting any land or any interest therein must be manifested and proved by writing signed by a person who is able to declare such trust or by that person's will.",
+   "quote": "a declaration of trust respecting any land or any interest therein must be manifested and proved by some writing signed by some person who is able to declare such trust or by his will"
+  },
+  {
+   "requirement": "A disposition of an equitable interest or trust subsisting at the time of the disposition must be in writing signed by the person disposing of the interest or trust, by that person's agent lawfully authorised in writing, or by will.",
+   "quote": "a disposition of an equitable interest or trust subsisting at the time of the disposition, must be in writing signed by the person disposing of the same, or by his agent thereunto lawfully authorised in writing or by will"
+  },
+  {
+   "requirement": "Section 53 does not affect the creation or operation of resulting trusts, implied trusts, or constructive trusts.",
+   "quote": "This section does not affect the creation or operation of resulting, implied or constructive trusts."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

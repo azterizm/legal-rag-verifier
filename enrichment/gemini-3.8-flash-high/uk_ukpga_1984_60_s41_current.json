@@ -1,0 +1,237 @@
+{
+ "key": "uk/ukpga/1984/60/s41@current",
+ "section": "uk/ukpga/1984/60/s41",
+ "version": "current",
+ "source_sha256": "3f2012db1e016e0106395a1dcc2fa55e40de2f36f9cd4d63aab782444ef0defd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the provisions of section 41 and sections 42 and 43, a person must not be kept in police detention for more than 24 hours without being charged.",
+    "quote": "a person shall not be kept in police detention for more than 24 hours without being charged"
+   },
+   {
+    "requirement": "The time from which a person's period of detention is calculated is referred to in the Act as the relevant time.",
+    "quote": "The time from which the period of detention of a person is to be calculated (in this Act referred to as “the relevant time”)"
+   },
+   {
+    "requirement": "For a person whose arrest is sought in one police area in England and Wales, who is arrested in another police area and is not questioned there to obtain evidence for the offence, the relevant time is the time of arrival at the first police station in the area where arrest was sought or 24 hours after arrest, whichever is earlier.",
+    "quote": "the time at which that person arrives at the relevant police station; or (ii) the time 24 hours after the time of that person’s arrest, whichever is the earlier"
+   },
+   {
+    "requirement": "For the purposes of subsection (2)(a), the relevant police station means the first police station to which the arrested person is taken in the police area in which their arrest was sought.",
+    "quote": "“the relevant police station” means the first police station to which he is taken in the police area in which his arrest was sought"
+   },
+   {
+    "requirement": "For a person arrested outside England and Wales, the relevant time is the time the person arrives at the first police station in the police area in England or Wales investigating the offence, or 24 hours after entering England and Wales, whichever is earlier.",
+    "quote": "the time at which that person arrives at the first police station to which he is taken in the police area in England or Wales in which the offence for which he was arrested is being investigated; or (ii) the time 24 hours after the time of that person’s entry into England and Wales, whichever is the earlier"
+   },
+   {
+    "requirement": "For a person who attends a police station voluntarily or accompanies a constable without having been arrested and is then arrested at the police station, the relevant time is the time of their arrest.",
+    "quote": "in the case of a person who— (i) attends voluntarily at a police station; or (ii) accompanies a constable to a police station without having been arrested, and is arrested at the police station, the time of his arrest"
+   },
+   {
+    "requirement": "For a person who attends a police station to answer to bail granted under section 30A, the relevant time is the time when that person arrives at the police station.",
+    "quote": "in the case of a person who attends a police station to answer to bail granted under section 30A, the time when he arrives at the police station"
+   },
+   {
+    "requirement": "In any case not covered by subsection (2)(a), (b), (c), or (ca), and where subsection (5) does not apply, the relevant time is the time at which the arrested person arrives at the first police station to which they are taken after arrest.",
+    "quote": "in any other case, except where subsection (5) below applies, shall be the time at which the person arrested arrives at the first police station to which he is taken after his arrest"
+   },
+   {
+    "requirement": "For a person arrested under section 31, every reference in subsection (2) to arrest or being arrested takes effect as a reference to their arrest for the offence for which they were originally arrested.",
+    "quote": "Subsection (2) above shall have effect in relation to a person arrested under section 31 above as if every reference in it to his arrest or his being arrested were a reference to his arrest or his being arrested for the offence for which he was originally arrested"
+   },
+   {
+    "requirement": "Where a person is detained in a first police area and taken to a second police area for investigation of an offence sought there without prior questioning in the first area, the relevant time is 24 hours after leaving detention in the first area or arrival at the first police station in the second area, whichever is earlier.",
+    "quote": "the relevant time shall be— whichever is the earlier"
+   },
+   {
+    "requirement": "When a person in police detention is removed to hospital for medical treatment, any time spent being questioned by a police officer in hospital or during transit to obtain evidence relating to an offence must be included in the calculation of the detention period.",
+    "quote": "any time during which he is being questioned in hospital or on the way there or back by a police officer for the purpose of obtaining evidence relating to an offence shall be included in any period which falls to be calculated"
+   },
+   {
+    "requirement": "When a person in police detention is removed to hospital for medical treatment, any time spent in hospital or travelling there and back that is not spent being questioned by a police officer to obtain evidence must not be included in the detention calculation.",
+    "quote": "any other time while he is in hospital or on his way there or back shall not be so included"
+   },
+   {
+    "requirement": "Unless detention beyond 24 hours is authorised or permitted under section 42 or 43, a person remaining in police detention without charge 24 hours after the relevant time must be released on bail if pre-conditions for bail are satisfied, or without bail if those pre-conditions are not satisfied.",
+    "quote": "a person who at the expiry of 24 hours after the relevant time is in police detention and has not been charged shall be released at that time — (a) on bail, if the pre-conditions for bail are satisfied, or (b) without bail, if those pre-conditions are not satisfied"
+   },
+   {
+    "requirement": "The mandatory release requirement at the expiry of 24 hours does not apply to a person whose detention beyond 24 hours after the relevant time has been authorised or permitted under section 42 or 43.",
+    "quote": "Subsection (7) above does not apply to a person whose detention for more than 24 hours after the relevant time has been authorised or is otherwise permitted in accordance with section 42 or 43 below"
+   },
+   {
+    "requirement": "A person released under subsection (7) must not be re-arrested without a warrant for the offence previously arrested for, unless new evidence has come to light since release or an examination or analysis of existing evidence has been made that could not reasonably have been made before release.",
+    "quote": "A person released under subsection (7) above shall not be re-arrested without a warrant for the offence for which he was previously arrested unless , since the person’s release, new evidence has come to light or an examination or analysis of existing evidence has been made which could not reasonably have been made before his release"
+   },
+   {
+    "requirement": "The restriction on re-arresting a person without a warrant under subsection (9) does not prevent an arrest under section 46A.",
+    "quote": "this subsection does not prevent an arrest under section 46A below"
+   },
+   {
+    "requirement": "A custody officer must give written notice that a person is not to be prosecuted if that person is released under subsection (7) and the custody officer determines that there is insufficient evidence to charge the person or that there is sufficient evidence but the person should not be charged or given a caution.",
+    "quote": "The custody officer must give the person notice in writing that the person is not to be prosecuted"
+   },
+   {
+    "requirement": "A written notice given to a person stating they are not to be prosecuted does not prevent prosecution for an offence if new evidence comes to light after the notice was given.",
+    "quote": "Subsection (11) does not prevent the prosecution of the person for an offence if new evidence comes to light after the notice was given"
+   },
+   {
+    "requirement": "Further provision regarding the calculation of a period of police detention for the purposes of this Part is made by section 47(6) and (6A).",
+    "quote": "Section 47(6) and (6A) makes further provision about the calculation of a period of police detention for the purposes of this Part"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum period a person may be kept in police detention without being charged",
+    "value": "24 hours",
+    "quote": "for more than 24 hours without being charged"
+   },
+   {
+    "what": "period after arrest used to determine the relevant time for a person arrested in another police area",
+    "value": "24 hours",
+    "quote": "the time 24 hours after the time of that person’s arrest"
+   },
+   {
+    "what": "period after entry into England and Wales used to determine the relevant time for a person arrested outside England and Wales",
+    "value": "24 hours",
+    "quote": "the time 24 hours after the time of that person’s entry into England and Wales"
+   },
+   {
+    "what": "period after leaving detention in a first area used to determine the relevant time when transferred to a second area",
+    "value": "24 hours",
+    "quote": "the time 24 hours after he leaves the place where he is detained in the first area"
+   },
+   {
+    "what": "detention period after the relevant time at which a person not charged must be released",
+    "value": "24 hours",
+    "quote": "at the expiry of 24 hours after the relevant time"
+   },
+   {
+    "what": "detention duration beyond which authorization or permission under section 42 or 43 is required to avoid release",
+    "value": "24 hours",
+    "quote": "whose detention for more than 24 hours after the relevant time has been authorised or is otherwise permitted"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the provisions of section 41 and sections 42 and 43, a person must not be kept in police detention for more than 24 hours without being charged.",
+   "quote": "a person shall not be kept in police detention for more than 24 hours without being charged"
+  },
+  {
+   "requirement": "The time from which a person's period of detention is calculated is referred to in the Act as the relevant time.",
+   "quote": "The time from which the period of detention of a person is to be calculated (in this Act referred to as “the relevant time”)"
+  },
+  {
+   "requirement": "For a person whose arrest is sought in one police area in England and Wales, who is arrested in another police area and is not questioned there to obtain evidence for the offence, the relevant time is the time of arrival at the first police station in the area where arrest was sought or 24 hours after arrest, whichever is earlier.",
+   "quote": "the time at which that person arrives at the relevant police station; or (ii) the time 24 hours after the time of that person’s arrest, whichever is the earlier"
+  },
+  {
+   "requirement": "For the purposes of subsection (2)(a), the relevant police station means the first police station to which the arrested person is taken in the police area in which their arrest was sought.",
+   "quote": "“the relevant police station” means the first police station to which he is taken in the police area in which his arrest was sought"
+  },
+  {
+   "requirement": "For a person arrested outside England and Wales, the relevant time is the time the person arrives at the first police station in the police area in England or Wales investigating the offence, or 24 hours after entering England and Wales, whichever is earlier.",
+   "quote": "the time at which that person arrives at the first police station to which he is taken in the police area in England or Wales in which the offence for which he was arrested is being investigated; or (ii) the time 24 hours after the time of that person’s entry into England and Wales, whichever is the earlier"
+  },
+  {
+   "requirement": "For a person who attends a police station voluntarily or accompanies a constable without having been arrested and is then arrested at the police station, the relevant time is the time of their arrest.",
+   "quote": "in the case of a person who— (i) attends voluntarily at a police station; or (ii) accompanies a constable to a police station without having been arrested, and is arrested at the police station, the time of his arrest"
+  },
+  {
+   "requirement": "For a person who attends a police station to answer to bail granted under section 30A, the relevant time is the time when that person arrives at the police station.",
+   "quote": "in the case of a person who attends a police station to answer to bail granted under section 30A, the time when he arrives at the police station"
+  },
+  {
+   "requirement": "In any case not covered by subsection (2)(a), (b), (c), or (ca), and where subsection (5) does not apply, the relevant time is the time at which the arrested person arrives at the first police station to which they are taken after arrest.",
+   "quote": "in any other case, except where subsection (5) below applies, shall be the time at which the person arrested arrives at the first police station to which he is taken after his arrest"
+  },
+  {
+   "requirement": "For a person arrested under section 31, every reference in subsection (2) to arrest or being arrested takes effect as a reference to their arrest for the offence for which they were originally arrested.",
+   "quote": "Subsection (2) above shall have effect in relation to a person arrested under section 31 above as if every reference in it to his arrest or his being arrested were a reference to his arrest or his being arrested for the offence for which he was originally arrested"
+  },
+  {
+   "requirement": "Where a person is detained in a first police area and taken to a second police area for investigation of an offence sought there without prior questioning in the first area, the relevant time is 24 hours after leaving detention in the first area or arrival at the first police station in the second area, whichever is earlier.",
+   "quote": "the relevant time shall be— whichever is the earlier"
+  },
+  {
+   "requirement": "When a person in police detention is removed to hospital for medical treatment, any time spent being questioned by a police officer in hospital or during transit to obtain evidence relating to an offence must be included in the calculation of the detention period.",
+   "quote": "any time during which he is being questioned in hospital or on the way there or back by a police officer for the purpose of obtaining evidence relating to an offence shall be included in any period which falls to be calculated"
+  },
+  {
+   "requirement": "When a person in police detention is removed to hospital for medical treatment, any time spent in hospital or travelling there and back that is not spent being questioned by a police officer to obtain evidence must not be included in the detention calculation.",
+   "quote": "any other time while he is in hospital or on his way there or back shall not be so included"
+  },
+  {
+   "requirement": "Unless detention beyond 24 hours is authorised or permitted under section 42 or 43, a person remaining in police detention without charge 24 hours after the relevant time must be released on bail if pre-conditions for bail are satisfied, or without bail if those pre-conditions are not satisfied.",
+   "quote": "a person who at the expiry of 24 hours after the relevant time is in police detention and has not been charged shall be released at that time — (a) on bail, if the pre-conditions for bail are satisfied, or (b) without bail, if those pre-conditions are not satisfied"
+  },
+  {
+   "requirement": "The mandatory release requirement at the expiry of 24 hours does not apply to a person whose detention beyond 24 hours after the relevant time has been authorised or permitted under section 42 or 43.",
+   "quote": "Subsection (7) above does not apply to a person whose detention for more than 24 hours after the relevant time has been authorised or is otherwise permitted in accordance with section 42 or 43 below"
+  },
+  {
+   "requirement": "A person released under subsection (7) must not be re-arrested without a warrant for the offence previously arrested for, unless new evidence has come to light since release or an examination or analysis of existing evidence has been made that could not reasonably have been made before release.",
+   "quote": "A person released under subsection (7) above shall not be re-arrested without a warrant for the offence for which he was previously arrested unless , since the person’s release, new evidence has come to light or an examination or analysis of existing evidence has been made which could not reasonably have been made before his release"
+  },
+  {
+   "requirement": "The restriction on re-arresting a person without a warrant under subsection (9) does not prevent an arrest under section 46A.",
+   "quote": "this subsection does not prevent an arrest under section 46A below"
+  },
+  {
+   "requirement": "A custody officer must give written notice that a person is not to be prosecuted if that person is released under subsection (7) and the custody officer determines that there is insufficient evidence to charge the person or that there is sufficient evidence but the person should not be charged or given a caution.",
+   "quote": "The custody officer must give the person notice in writing that the person is not to be prosecuted"
+  },
+  {
+   "requirement": "A written notice given to a person stating they are not to be prosecuted does not prevent prosecution for an offence if new evidence comes to light after the notice was given.",
+   "quote": "Subsection (11) does not prevent the prosecution of the person for an offence if new evidence comes to light after the notice was given"
+  },
+  {
+   "requirement": "Further provision regarding the calculation of a period of police detention for the purposes of this Part is made by section 47(6) and (6A).",
+   "quote": "Section 47(6) and (6A) makes further provision about the calculation of a period of police detention for the purposes of this Part"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum period a person may be kept in police detention without being charged",
+   "value": "24 hours",
+   "quote": "for more than 24 hours without being charged"
+  },
+  {
+   "what": "period after arrest used to determine the relevant time for a person arrested in another police area",
+   "value": "24 hours",
+   "quote": "the time 24 hours after the time of that person’s arrest"
+  },
+  {
+   "what": "period after entry into England and Wales used to determine the relevant time for a person arrested outside England and Wales",
+   "value": "24 hours",
+   "quote": "the time 24 hours after the time of that person’s entry into England and Wales"
+  },
+  {
+   "what": "period after leaving detention in a first area used to determine the relevant time when transferred to a second area",
+   "value": "24 hours",
+   "quote": "the time 24 hours after he leaves the place where he is detained in the first area"
+  },
+  {
+   "what": "detention period after the relevant time at which a person not charged must be released",
+   "value": "24 hours",
+   "quote": "at the expiry of 24 hours after the relevant time"
+  },
+  {
+   "what": "detention duration beyond which authorization or permission under section 42 or 43 is required to avoid release",
+   "value": "24 hours",
+   "quote": "whose detention for more than 24 hours after the relevant time has been authorised or is otherwise permitted"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 6
+ }
+}

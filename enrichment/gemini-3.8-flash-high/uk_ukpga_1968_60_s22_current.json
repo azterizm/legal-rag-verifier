@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1968/60/s22@current",
+ "section": "uk/ukpga/1968/60/s22",
+ "version": "current",
+ "source_sha256": "61d1dac9bf64b0a7f307fc2becb8b02a9c38b75ae183dce4d2682e141f0bf7d4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person handles stolen goods only if the handling occurs otherwise than in the course of the stealing.",
+    "quote": "otherwise than in the course of the stealing"
+   },
+   {
+    "requirement": "A person handles stolen goods only if that person acts knowing or believing the goods to be stolen goods.",
+    "quote": "knowing or believing them to be stolen goods"
+   },
+   {
+    "requirement": "A person handles stolen goods if, otherwise than in the course of the stealing and knowing or believing them to be stolen goods, that person dishonestly receives the goods.",
+    "quote": "dishonestly receives the goods"
+   },
+   {
+    "requirement": "A person handles stolen goods if, otherwise than in the course of the stealing and knowing or believing them to be stolen goods, that person dishonestly undertakes or assists in their retention, removal, disposal or realisation by or for the benefit of another person.",
+    "quote": "dishonestly undertakes or assists in their retention, removal, disposal or realisation by or for the benefit of another person"
+   },
+   {
+    "requirement": "A person handles stolen goods if, otherwise than in the course of the stealing and knowing or believing them to be stolen goods, that person arranges to dishonestly receive the goods or to dishonestly undertake or assist in their retention, removal, disposal or realisation by or for the benefit of another person.",
+    "quote": "or if he arranges to do so"
+   },
+   {
+    "requirement": "A person guilty of handling stolen goods shall on conviction on indictment be liable to imprisonment for a term not exceeding fourteen years.",
+    "quote": "on conviction on indictment be liable to imprisonment for a term not exceeding fourteen years"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment for handling stolen goods",
+    "value": "fourteen years",
+    "quote": "imprisonment for a term not exceeding fourteen years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person handles stolen goods only if the handling occurs otherwise than in the course of the stealing.",
+   "quote": "otherwise than in the course of the stealing"
+  },
+  {
+   "requirement": "A person handles stolen goods only if that person acts knowing or believing the goods to be stolen goods.",
+   "quote": "knowing or believing them to be stolen goods"
+  },
+  {
+   "requirement": "A person handles stolen goods if, otherwise than in the course of the stealing and knowing or believing them to be stolen goods, that person dishonestly receives the goods.",
+   "quote": "dishonestly receives the goods"
+  },
+  {
+   "requirement": "A person handles stolen goods if, otherwise than in the course of the stealing and knowing or believing them to be stolen goods, that person dishonestly undertakes or assists in their retention, removal, disposal or realisation by or for the benefit of another person.",
+   "quote": "dishonestly undertakes or assists in their retention, removal, disposal or realisation by or for the benefit of another person"
+  },
+  {
+   "requirement": "A person handles stolen goods if, otherwise than in the course of the stealing and knowing or believing them to be stolen goods, that person arranges to dishonestly receive the goods or to dishonestly undertake or assist in their retention, removal, disposal or realisation by or for the benefit of another person.",
+   "quote": "or if he arranges to do so"
+  },
+  {
+   "requirement": "A person guilty of handling stolen goods shall on conviction on indictment be liable to imprisonment for a term not exceeding fourteen years.",
+   "quote": "on conviction on indictment be liable to imprisonment for a term not exceeding fourteen years"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment for handling stolen goods",
+   "value": "fourteen years",
+   "quote": "imprisonment for a term not exceeding fourteen years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

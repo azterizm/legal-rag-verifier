@@ -1,0 +1,105 @@
+{
+ "key": "uk/ukpga/1996/18/s119@current",
+ "section": "uk/ukpga/1996/18/s119",
+ "version": "current",
+ "source_sha256": "58dc20f4dcccb4db49f0bb34998707ddf56b8967e07d2cc3758b7966046f1c36",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the provisions of section 119, sections 120 to 122, and section 126 of the Employment Rights Act 1996, the amount of the basic award must be calculated by determining the period ending with the effective date of termination during which the employee has been continuously employed, reckoning backwards from the end of that period the number of years of employment falling within it, and allowing the appropriate amount for each of those years of employment.",
+    "quote": "the amount of the basic award shall be calculated by— (a) determining the period, ending with the effective date of termination, during which the employee has been continuously employed"
+   },
+   {
+    "requirement": "For an employee who was not below the age of forty-one in a reckoned year of employment, the appropriate amount allowed in calculating the basic award is one and a half weeks’ pay.",
+    "quote": "one and a half weeks’ pay for a year of employment in which the employee was not below the age of forty-one"
+   },
+   {
+    "requirement": "For an employee who was not below the age of twenty-two in a reckoned year of employment (and not qualifying for the rate for those not below forty-one), the appropriate amount allowed in calculating the basic award is one week’s pay.",
+    "quote": "one week’s pay for a year of employment (not within paragraph (a)) in which he was not below the age of twenty-two"
+   },
+   {
+    "requirement": "For an employee in a reckoned year of employment not falling within the rules for ages twenty-two and older, the appropriate amount allowed in calculating the basic award is half a week’s pay.",
+    "quote": "half a week’s pay for a year of employment not within paragraph (a) or (b)"
+   },
+   {
+    "requirement": "Where twenty years of employment have been reckoned under subsection (1) for an employee, no account can be taken under that subsection of any year of employment earlier than those twenty years.",
+    "quote": "no account shall be taken under that subsection of any year of employment earlier than those twenty years"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "basic award multiplier for a year of employment where the employee was not below the age of forty-one",
+    "value": "one and a half weeks’ pay",
+    "quote": "one and a half weeks’ pay for a year of employment"
+   },
+   {
+    "what": "age threshold qualifying a year of employment for one and a half weeks' pay",
+    "value": "forty-one",
+    "quote": "age of forty-one"
+   },
+   {
+    "what": "basic award multiplier for a year of employment where the employee was not below the age of twenty-two (and not within paragraph (a))",
+    "value": "one week’s pay",
+    "quote": "one week’s pay for a year of employment"
+   },
+   {
+    "what": "age threshold qualifying a year of employment for one week's pay",
+    "value": "twenty-two",
+    "quote": "age of twenty-two"
+   },
+   {
+    "what": "basic award multiplier for a year of employment not within paragraph (a) or (b)",
+    "value": "half a week’s pay",
+    "quote": "half a week’s pay for a year of employment"
+   },
+   {
+    "what": "maximum limit on the number of years of employment that may be reckoned",
+    "value": "twenty years",
+    "quote": "twenty years of employment have been reckoned"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the provisions of section 119, sections 120 to 122, and section 126 of the Employment Rights Act 1996, the amount of the basic award must be calculated by determining the period ending with the effective date of termination during which the employee has been continuously employed, reckoning backwards from the end of that period the number of years of employment falling within it, and allowing the appropriate amount for each of those years of employment.",
+   "quote": "the amount of the basic award shall be calculated by— (a) determining the period, ending with the effective date of termination, during which the employee has been continuously employed"
+  },
+  {
+   "requirement": "For an employee who was not below the age of forty-one in a reckoned year of employment, the appropriate amount allowed in calculating the basic award is one and a half weeks’ pay.",
+   "quote": "one and a half weeks’ pay for a year of employment in which the employee was not below the age of forty-one"
+  },
+  {
+   "requirement": "For an employee who was not below the age of twenty-two in a reckoned year of employment (and not qualifying for the rate for those not below forty-one), the appropriate amount allowed in calculating the basic award is one week’s pay.",
+   "quote": "one week’s pay for a year of employment (not within paragraph (a)) in which he was not below the age of twenty-two"
+  },
+  {
+   "requirement": "For an employee in a reckoned year of employment not falling within the rules for ages twenty-two and older, the appropriate amount allowed in calculating the basic award is half a week’s pay.",
+   "quote": "half a week’s pay for a year of employment not within paragraph (a) or (b)"
+  },
+  {
+   "requirement": "Where twenty years of employment have been reckoned under subsection (1) for an employee, no account can be taken under that subsection of any year of employment earlier than those twenty years.",
+   "quote": "no account shall be taken under that subsection of any year of employment earlier than those twenty years"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "basic award multiplier for a year of employment where the employee was not below the age of twenty-two (and not within paragraph (a))",
+   "value": "one week’s pay",
+   "quote": "one week’s pay for a year of employment"
+  },
+  {
+   "what": "maximum limit on the number of years of employment that may be reckoned",
+   "value": "twenty years",
+   "quote": "twenty years of employment have been reckoned"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 2
+ }
+}

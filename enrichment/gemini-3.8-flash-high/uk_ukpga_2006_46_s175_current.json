@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/2006/46/s175@current",
+ "section": "uk/ukpga/2006/46/s175",
+ "version": "current",
+ "source_sha256": "a3bf85e0669d43ecd3aca43f02d8edbeeb5f40524c92f651d37b4fa2abe0e13e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A director of a company must avoid a situation in which he has, or can have, a direct or indirect interest that conflicts, or possibly may conflict, with the interests of the company.",
+    "quote": "A director of a company must avoid a situation in which he has, or can have, a direct or indirect interest that conflicts, or possibly may conflict, with the interests of the company."
+   },
+   {
+    "requirement": "The duty of a director of a company to avoid conflicts of interest applies in particular to the exploitation of any property, information, or opportunity, regardless of whether the company could take advantage of the property, information, or opportunity.",
+    "quote": "This applies in particular to the exploitation of any property, information or opportunity (and it is immaterial whether the company could take advantage of the property, information or opportunity)."
+   },
+   {
+    "requirement": "The duty of a director of a company to avoid conflicts of interest does not apply to a conflict of interest that arises in relation to a transaction or arrangement with the company.",
+    "quote": "This duty does not apply to a conflict of interest arising in relation to a transaction or arrangement with the company."
+   },
+   {
+    "requirement": "A director of a company does not infringe the duty to avoid conflicts of interest if the situation cannot reasonably be regarded as likely to give rise to a conflict of interest.",
+    "quote": "if the situation cannot reasonably be regarded as likely to give rise to a conflict of interest"
+   },
+   {
+    "requirement": "A director of a company does not infringe the duty to avoid conflicts of interest if the matter has been authorised by the directors.",
+    "quote": "if the matter has been authorised by the directors"
+   },
+   {
+    "requirement": "Where a company is a private company and nothing in its constitution invalidates such authorisation, authorisation may be given by the directors by the matter being proposed to and authorised by the directors.",
+    "quote": "where the company is a private company and nothing in the company's constitution invalidates such authorisation, by the matter being proposed to and authorised by the directors"
+   },
+   {
+    "requirement": "Where a company is a public company and its constitution includes provision enabling the directors to authorise the matter, authorisation may be given by the directors by the matter being proposed to and authorised by them in accordance with the constitution.",
+    "quote": "where the company is a public company and its constitution includes provision enabling the directors to authorise the matter, by the matter being proposed to and authorised by them in accordance with the constitution"
+   },
+   {
+    "requirement": "Authorisation by the directors of a company is effective only if any requirement as to the quorum at the meeting at which the matter is considered is met without counting the director in question or any other interested director.",
+    "quote": "any requirement as to the quorum at the meeting at which the matter is considered is met without counting the director in question or any other interested director"
+   },
+   {
+    "requirement": "Authorisation by the directors of a company is effective only if the matter was agreed to without the voting of the director in question or any other interested director, or would have been agreed to if their votes had not been counted.",
+    "quote": "the matter was agreed to without their voting or would have been agreed to if their votes had not been counted"
+   },
+   {
+    "requirement": "Any reference in section 175 of the Companies Act 2006 to a conflict of interest includes a conflict of interest and duty and a conflict of duties.",
+    "quote": "Any reference in this section to a conflict of interest includes a conflict of interest and duty and a conflict of duties."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A director of a company must avoid a situation in which he has, or can have, a direct or indirect interest that conflicts, or possibly may conflict, with the interests of the company.",
+   "quote": "A director of a company must avoid a situation in which he has, or can have, a direct or indirect interest that conflicts, or possibly may conflict, with the interests of the company."
+  },
+  {
+   "requirement": "The duty of a director of a company to avoid conflicts of interest applies in particular to the exploitation of any property, information, or opportunity, regardless of whether the company could take advantage of the property, information, or opportunity.",
+   "quote": "This applies in particular to the exploitation of any property, information or opportunity (and it is immaterial whether the company could take advantage of the property, information or opportunity)."
+  },
+  {
+   "requirement": "The duty of a director of a company to avoid conflicts of interest does not apply to a conflict of interest that arises in relation to a transaction or arrangement with the company.",
+   "quote": "This duty does not apply to a conflict of interest arising in relation to a transaction or arrangement with the company."
+  },
+  {
+   "requirement": "A director of a company does not infringe the duty to avoid conflicts of interest if the situation cannot reasonably be regarded as likely to give rise to a conflict of interest.",
+   "quote": "if the situation cannot reasonably be regarded as likely to give rise to a conflict of interest"
+  },
+  {
+   "requirement": "A director of a company does not infringe the duty to avoid conflicts of interest if the matter has been authorised by the directors.",
+   "quote": "if the matter has been authorised by the directors"
+  },
+  {
+   "requirement": "Where a company is a private company and nothing in its constitution invalidates such authorisation, authorisation may be given by the directors by the matter being proposed to and authorised by the directors.",
+   "quote": "where the company is a private company and nothing in the company's constitution invalidates such authorisation, by the matter being proposed to and authorised by the directors"
+  },
+  {
+   "requirement": "Where a company is a public company and its constitution includes provision enabling the directors to authorise the matter, authorisation may be given by the directors by the matter being proposed to and authorised by them in accordance with the constitution.",
+   "quote": "where the company is a public company and its constitution includes provision enabling the directors to authorise the matter, by the matter being proposed to and authorised by them in accordance with the constitution"
+  },
+  {
+   "requirement": "Authorisation by the directors of a company is effective only if any requirement as to the quorum at the meeting at which the matter is considered is met without counting the director in question or any other interested director.",
+   "quote": "any requirement as to the quorum at the meeting at which the matter is considered is met without counting the director in question or any other interested director"
+  },
+  {
+   "requirement": "Authorisation by the directors of a company is effective only if the matter was agreed to without the voting of the director in question or any other interested director, or would have been agreed to if their votes had not been counted.",
+   "quote": "the matter was agreed to without their voting or would have been agreed to if their votes had not been counted"
+  },
+  {
+   "requirement": "Any reference in section 175 of the Companies Act 2006 to a conflict of interest includes a conflict of interest and duty and a conflict of duties.",
+   "quote": "Any reference in this section to a conflict of interest includes a conflict of interest and duty and a conflict of duties."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

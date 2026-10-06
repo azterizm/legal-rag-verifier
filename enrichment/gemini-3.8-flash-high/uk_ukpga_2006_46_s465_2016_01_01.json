@@ -1,0 +1,156 @@
+{
+ "key": "uk/ukpga/2006/46/s465@2016-01-01",
+ "section": "uk/ukpga/2006/46/s465",
+ "version": "2016-01-01",
+ "source_sha256": "afd5e85705556275ac9e46f8cf2e80ebcd7fe31ef78e1080dd7c3acc7218ad2b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company qualifies as medium-sized in relation to its first financial year if the qualifying conditions are met in that year.",
+    "quote": "A company qualifies as medium-sized in relation to its first financial year if the qualifying conditions are met in that year."
+   },
+   {
+    "requirement": "A company qualifies as medium-sized in relation to a subsequent financial year if the qualifying conditions are met in that year and the preceding financial year.",
+    "quote": "if the qualifying conditions are met in that year and the preceding financial year"
+   },
+   {
+    "requirement": "A company qualifies as medium-sized in relation to a subsequent financial year if the qualifying conditions are met in that year and the company qualified as medium-sized in relation to the preceding financial year.",
+    "quote": "if the qualifying conditions are met in that year and the company qualified as medium-sized in relation to the preceding financial year"
+   },
+   {
+    "requirement": "A company qualifies as medium-sized in relation to a subsequent financial year if the qualifying conditions were met in the preceding financial year and the company qualified as medium-sized in relation to that year.",
+    "quote": "if the qualifying conditions were met in the preceding financial year and the company qualified as medium-sized in relation to that year"
+   },
+   {
+    "requirement": "A company meets the qualifying conditions in a year in which it satisfies two or more of the requirements for turnover, balance sheet total, and number of employees.",
+    "quote": "The qualifying conditions are met by a company in a year in which it satisfies two or more of the following requirements"
+   },
+   {
+    "requirement": "A company's turnover requirement is satisfied if its turnover is not more than £36 million.",
+    "quote": "Turnover Not more than £36 million"
+   },
+   {
+    "requirement": "A company's balance sheet total requirement is satisfied if its balance sheet total is not more than £18 million.",
+    "quote": "Balance sheet total Not more than £18 million"
+   },
+   {
+    "requirement": "A company's number of employees requirement is satisfied if its number of employees is not more than 250.",
+    "quote": "Number of employees Not more than 250"
+   },
+   {
+    "requirement": "A company must proportionately adjust the maximum figures for turnover for a period that is a company's financial year but not in fact a year.",
+    "quote": "For a period that is a company's financial year but not in fact a year the maximum figures for turnover must be proportionately adjusted."
+   },
+   {
+    "requirement": "A company's balance sheet total is defined as the aggregate of the amounts shown as assets in the company's balance sheet.",
+    "quote": "The balance sheet total means the aggregate of the amounts shown as assets in the company's balance sheet."
+   },
+   {
+    "requirement": "A company's number of employees is defined as the average number of persons employed by the company in the year, determined by finding for each month in the financial year the number of persons employed under contracts of service by the company in that month (whether throughout the month or not), adding together the monthly totals, and dividing by the number of months in the financial year.",
+    "quote": "The number of employees means the average number of persons employed by the company in the year, determined as follows"
+   },
+   {
+    "requirement": "The rules on qualification as a medium-sized company in section 465 are subject to section 466 concerning parent companies qualifying as medium-sized.",
+    "quote": "This section is subject to section 466 (companies qualifying as medium-sized: parent companies)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of requirements a company must satisfy to meet the qualifying conditions",
+    "value": "two",
+    "quote": "satisfies two or more of the following requirements"
+   },
+   {
+    "what": "maximum turnover for meeting the qualifying condition",
+    "value": "£36 million",
+    "quote": "Turnover Not more than £36 million"
+   },
+   {
+    "what": "maximum balance sheet total for meeting the qualifying condition",
+    "value": "£18 million",
+    "quote": "Balance sheet total Not more than £18 million"
+   },
+   {
+    "what": "maximum number of employees for meeting the qualifying condition",
+    "value": "250",
+    "quote": "Number of employees Not more than 250"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A company qualifies as medium-sized in relation to its first financial year if the qualifying conditions are met in that year.",
+   "quote": "A company qualifies as medium-sized in relation to its first financial year if the qualifying conditions are met in that year."
+  },
+  {
+   "requirement": "A company qualifies as medium-sized in relation to a subsequent financial year if the qualifying conditions are met in that year and the preceding financial year.",
+   "quote": "if the qualifying conditions are met in that year and the preceding financial year"
+  },
+  {
+   "requirement": "A company qualifies as medium-sized in relation to a subsequent financial year if the qualifying conditions are met in that year and the company qualified as medium-sized in relation to the preceding financial year.",
+   "quote": "if the qualifying conditions are met in that year and the company qualified as medium-sized in relation to the preceding financial year"
+  },
+  {
+   "requirement": "A company qualifies as medium-sized in relation to a subsequent financial year if the qualifying conditions were met in the preceding financial year and the company qualified as medium-sized in relation to that year.",
+   "quote": "if the qualifying conditions were met in the preceding financial year and the company qualified as medium-sized in relation to that year"
+  },
+  {
+   "requirement": "A company meets the qualifying conditions in a year in which it satisfies two or more of the requirements for turnover, balance sheet total, and number of employees.",
+   "quote": "The qualifying conditions are met by a company in a year in which it satisfies two or more of the following requirements"
+  },
+  {
+   "requirement": "A company's turnover requirement is satisfied if its turnover is not more than £36 million.",
+   "quote": "Turnover Not more than £36 million"
+  },
+  {
+   "requirement": "A company's balance sheet total requirement is satisfied if its balance sheet total is not more than £18 million.",
+   "quote": "Balance sheet total Not more than £18 million"
+  },
+  {
+   "requirement": "A company's number of employees requirement is satisfied if its number of employees is not more than 250.",
+   "quote": "Number of employees Not more than 250"
+  },
+  {
+   "requirement": "A company must proportionately adjust the maximum figures for turnover for a period that is a company's financial year but not in fact a year.",
+   "quote": "For a period that is a company's financial year but not in fact a year the maximum figures for turnover must be proportionately adjusted."
+  },
+  {
+   "requirement": "A company's balance sheet total is defined as the aggregate of the amounts shown as assets in the company's balance sheet.",
+   "quote": "The balance sheet total means the aggregate of the amounts shown as assets in the company's balance sheet."
+  },
+  {
+   "requirement": "A company's number of employees is defined as the average number of persons employed by the company in the year, determined by finding for each month in the financial year the number of persons employed under contracts of service by the company in that month (whether throughout the month or not), adding together the monthly totals, and dividing by the number of months in the financial year.",
+   "quote": "The number of employees means the average number of persons employed by the company in the year, determined as follows"
+  },
+  {
+   "requirement": "The rules on qualification as a medium-sized company in section 465 are subject to section 466 concerning parent companies qualifying as medium-sized.",
+   "quote": "This section is subject to section 466 (companies qualifying as medium-sized: parent companies)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum turnover for meeting the qualifying condition",
+   "value": "£36 million",
+   "quote": "Turnover Not more than £36 million"
+  },
+  {
+   "what": "maximum balance sheet total for meeting the qualifying condition",
+   "value": "£18 million",
+   "quote": "Balance sheet total Not more than £18 million"
+  },
+  {
+   "what": "maximum number of employees for meeting the qualifying condition",
+   "value": "250",
+   "quote": "Number of employees Not more than 250"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 3
+ }
+}

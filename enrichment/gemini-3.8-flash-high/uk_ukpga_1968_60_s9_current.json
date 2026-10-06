@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/1968/60/s9@current",
+ "section": "uk/ukpga/1968/60/s9",
+ "version": "current",
+ "source_sha256": "4f267f72adb34a620894492c83472891f86bc4998b3fec8e5b1f31ede6223451",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of burglary if that person enters any building or part of a building as a trespasser and with intent to commit an offence of stealing anything in the building or part of a building in question, inflicting grievous bodily harm on any person therein, or doing unlawful damage to the building or anything therein.",
+    "quote": "enters any building or part of a building as a trespasser and with intent to commit any such offence as is mentioned in subsection (2) below"
+   },
+   {
+    "requirement": "A person is guilty of burglary if, having entered any building or part of a building as a trespasser, that person steals or attempts to steal anything in the building or that part of it, or inflicts or attempts to inflict on any person therein any grievous bodily harm.",
+    "quote": "having entered any building or part of a building as a trespasser he steals or attempts to steal anything in the building or that part of it or inflicts or attempts to inflict on any person therein any grievous bodily harm"
+   },
+   {
+    "requirement": "The offences referred to under the intent requirement include offences of stealing anything in the building or part of a building in question, inflicting grievous bodily harm on any person therein, and doing unlawful damage to the building or anything therein.",
+    "quote": "The offences referred to in subsection (1)(a) above are offences of stealing anything in the building or part of a building in question, of inflicting on any person therein any grievous bodily harm ... therein, and of doing unlawful damage to the building or anything therein."
+   },
+   {
+    "requirement": "A person guilty of burglary shall on conviction on indictment be liable to imprisonment for a term not exceeding fourteen years where the offence was committed in respect of a building or part of a building which is a dwelling.",
+    "quote": "where the offence was committed in respect of a building or part of a building which is a dwelling, fourteen years"
+   },
+   {
+    "requirement": "A person guilty of burglary shall on conviction on indictment be liable to imprisonment for a term not exceeding ten years in any case other than where the offence was committed in respect of a building or part of a building which is a dwelling.",
+    "quote": "in any other case, ten years"
+   },
+   {
+    "requirement": "Statutory references to a building, and the reference to a building which is a dwelling, apply also to an inhabited vehicle or vessel.",
+    "quote": "shall apply also to an inhabited vehicle or vessel"
+   },
+   {
+    "requirement": "Statutory provisions regarding an inhabited vehicle or vessel apply to any such vehicle or vessel both at times when the person having a habitation in it is not there and at times when that person is there.",
+    "quote": "shall apply to any such vehicle or vessel at times when the person having a habitation in it is not there as well as at times when he is"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment where the burglary was committed in respect of a building or part of a building which is a dwelling",
+    "value": "fourteen years",
+    "quote": "where the offence was committed in respect of a building or part of a building which is a dwelling, fourteen years"
+   },
+   {
+    "what": "maximum term of imprisonment on conviction on indictment for burglary in any case not involving a dwelling",
+    "value": "ten years",
+    "quote": "in any other case, ten years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of burglary if that person enters any building or part of a building as a trespasser and with intent to commit an offence of stealing anything in the building or part of a building in question, inflicting grievous bodily harm on any person therein, or doing unlawful damage to the building or anything therein.",
+   "quote": "enters any building or part of a building as a trespasser and with intent to commit any such offence as is mentioned in subsection (2) below"
+  },
+  {
+   "requirement": "A person is guilty of burglary if, having entered any building or part of a building as a trespasser, that person steals or attempts to steal anything in the building or that part of it, or inflicts or attempts to inflict on any person therein any grievous bodily harm.",
+   "quote": "having entered any building or part of a building as a trespasser he steals or attempts to steal anything in the building or that part of it or inflicts or attempts to inflict on any person therein any grievous bodily harm"
+  },
+  {
+   "requirement": "The offences referred to under the intent requirement include offences of stealing anything in the building or part of a building in question, inflicting grievous bodily harm on any person therein, and doing unlawful damage to the building or anything therein.",
+   "quote": "The offences referred to in subsection (1)(a) above are offences of stealing anything in the building or part of a building in question, of inflicting on any person therein any grievous bodily harm ... therein, and of doing unlawful damage to the building or anything therein."
+  },
+  {
+   "requirement": "A person guilty of burglary shall on conviction on indictment be liable to imprisonment for a term not exceeding fourteen years where the offence was committed in respect of a building or part of a building which is a dwelling.",
+   "quote": "where the offence was committed in respect of a building or part of a building which is a dwelling, fourteen years"
+  },
+  {
+   "requirement": "A person guilty of burglary shall on conviction on indictment be liable to imprisonment for a term not exceeding ten years in any case other than where the offence was committed in respect of a building or part of a building which is a dwelling.",
+   "quote": "in any other case, ten years"
+  },
+  {
+   "requirement": "Statutory references to a building, and the reference to a building which is a dwelling, apply also to an inhabited vehicle or vessel.",
+   "quote": "shall apply also to an inhabited vehicle or vessel"
+  },
+  {
+   "requirement": "Statutory provisions regarding an inhabited vehicle or vessel apply to any such vehicle or vessel both at times when the person having a habitation in it is not there and at times when that person is there.",
+   "quote": "shall apply to any such vehicle or vessel at times when the person having a habitation in it is not there as well as at times when he is"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment where the burglary was committed in respect of a building or part of a building which is a dwelling",
+   "value": "fourteen years",
+   "quote": "where the offence was committed in respect of a building or part of a building which is a dwelling, fourteen years"
+  },
+  {
+   "what": "maximum term of imprisonment on conviction on indictment for burglary in any case not involving a dwelling",
+   "value": "ten years",
+   "quote": "in any other case, ten years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

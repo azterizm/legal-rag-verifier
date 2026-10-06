@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/1996/18/s94@current",
+ "section": "uk/ukpga/1996/18/s94",
+ "version": "current",
+ "source_sha256": "a611fbfd7a0a3c67b1cf8c03ca149b8dadfb3914b1df176425f9921c9dea2d50",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employee has the right not to be unfairly dismissed by his employer.",
+    "quote": "An employee has the right not to be unfairly dismissed by his employer."
+   },
+   {
+    "requirement": "An employee's right not to be unfairly dismissed has effect subject to the following provisions of this Part (in particular sections 108 to 110) and to the provisions of the Trade Union and Labour Relations (Consolidation) Act 1992 (in particular sections 237 to 239).",
+    "quote": "Subsection (1) has effect subject to the following provisions of this Part (in particular sections 108 to 110) and to the provisions of the Trade Union and Labour Relations (Consolidation) Act 1992 (in particular sections 237 to 239)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An employee has the right not to be unfairly dismissed by his employer.",
+   "quote": "An employee has the right not to be unfairly dismissed by his employer."
+  },
+  {
+   "requirement": "An employee's right not to be unfairly dismissed has effect subject to the following provisions of this Part (in particular sections 108 to 110) and to the provisions of the Trade Union and Labour Relations (Consolidation) Act 1992 (in particular sections 237 to 239).",
+   "quote": "Subsection (1) has effect subject to the following provisions of this Part (in particular sections 108 to 110) and to the provisions of the Trade Union and Labour Relations (Consolidation) Act 1992 (in particular sections 237 to 239)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "key": "uk/ukpga/1989/34/s2@current",
+ "section": "uk/ukpga/1989/34/s2",
+ "version": "current",
+ "source_sha256": "af3a9bf1e183902d03a749c780e0256472aba3b39cbc3e9cd51bae425e6aafe9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A contract for the sale or other disposition of an interest in land can only be made in writing.",
+    "quote": "can only be made in writing"
+   },
+   {
+    "requirement": "A contract for the sale or other disposition of an interest in land must incorporate all terms expressly agreed by the parties in a single document or, where contracts are exchanged, in each document.",
+    "quote": "only by incorporating all the terms which the parties have expressly agreed in one document or, where contracts are exchanged, in each"
+   },
+   {
+    "requirement": "Terms of a contract for the sale or disposition of an interest in land may be incorporated in a document either by being set out within it or by reference to another document.",
+    "quote": "either by being set out in it or by reference to some other document"
+   },
+   {
+    "requirement": "The document incorporating the agreed terms, or where contracts are exchanged, at least one of the documents incorporating them, must be signed by or on behalf of each party to the contract.",
+    "quote": "must be signed by or on behalf of each party to the contract"
+   },
+   {
+    "requirement": "Where a contract for the sale or other disposition of an interest in land satisfies the statutory conditions solely due to court-ordered rectification of one or more documents, the contract comes into being or is deemed to come into being at the time specified in the court order.",
+    "quote": "the contract shall come into being, or be deemed to have come into being, at such time as may be specified in the order"
+   },
+   {
+    "requirement": "The formal validity requirements do not apply to a contract to grant a short lease as mentioned in section 54(2) of the Law of Property Act 1925.",
+    "quote": "a contract to grant such a lease as is mentioned in section 54(2) of the Law of Property Act 1925 (short leases)"
+   },
+   {
+    "requirement": "The formal validity requirements do not apply to a contract made in the course of a public auction.",
+    "quote": "a contract made in the course of a public auction"
+   },
+   {
+    "requirement": "The formal validity requirements do not apply to a contract regulated under the Financial Services and Markets Act 2000, unless it is a regulated mortgage contract, a regulated home reversion plan, a regulated home purchase plan, or a regulated sale and rent back agreement.",
+    "quote": "a contract regulated under the Financial Services and Markets Act 2000, other than a regulated mortgage contract a regulated home reversion plan, a regulated home purchase plan or a regulated sale and rent back agreement"
+   },
+   {
+    "requirement": "Section 2 of the Law of Property (Miscellaneous Provisions) Act 1989 does not affect the creation or operation of resulting, implied, or constructive trusts.",
+    "quote": "nothing in this section affects the creation or operation of resulting, implied or constructive trusts"
+   },
+   {
+    "requirement": "The term 'disposition' carries the same meaning as defined in the Law of Property Act 1925.",
+    "quote": "“disposition” has the same meaning as in the Law of Property Act 1925"
+   },
+   {
+    "requirement": "The term 'interest in land' means any estate, interest, or charge in or over land, or in or over the proceeds of sale of land.",
+    "quote": "“interest in land” means any estate, interest or charge in or over land or in or over the proceeds of sale of land"
+   },
+   {
+    "requirement": "The terms 'regulated mortgage contract', 'regulated home reversion plan', 'regulated home purchase plan', and 'regulated sale and rent back agreement' must be interpreted in conjunction with section 22 of the Financial Services and Markets Act 2000, any relevant order under that section, and Schedule 2 to that Act.",
+    "quote": "must be read with— (a) section 22 of the Financial Services and Markets Act 2000, (b) any relevant order under that section, and (c) Schedule 2 to that Act"
+   },
+   {
+    "requirement": "Section 2 of the Law of Property (Miscellaneous Provisions) Act 1989 does not apply to contracts made before the section comes into force.",
+    "quote": "Nothing in this section shall apply in relation to contracts made before this section comes into force"
+   },
+   {
+    "requirement": "Section 40 of the Law of Property Act 1925 ceases to have effect.",
+    "quote": "Section 40 of the Law of Property Act 1925 (which is superseded by this section) shall cease to have effect"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of documents incorporating all expressly agreed terms where contracts are not exchanged",
+    "value": "one",
+    "quote": "in one document"
+   },
+   {
+    "what": "Minimum number of documents incorporating terms that must be signed by or on behalf of each party when contracts are exchanged",
+    "value": "one",
+    "quote": "one of the documents incorporating them"
+   },
+   {
+    "what": "Number of rectified documents pursuant to a court order that allow a contract to satisfy the statutory conditions",
+    "value": "one or more",
+    "quote": "rectification of one or more documents"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A contract for the sale or other disposition of an interest in land can only be made in writing.",
+   "quote": "can only be made in writing"
+  },
+  {
+   "requirement": "A contract for the sale or other disposition of an interest in land must incorporate all terms expressly agreed by the parties in a single document or, where contracts are exchanged, in each document.",
+   "quote": "only by incorporating all the terms which the parties have expressly agreed in one document or, where contracts are exchanged, in each"
+  },
+  {
+   "requirement": "Terms of a contract for the sale or disposition of an interest in land may be incorporated in a document either by being set out within it or by reference to another document.",
+   "quote": "either by being set out in it or by reference to some other document"
+  },
+  {
+   "requirement": "The document incorporating the agreed terms, or where contracts are exchanged, at least one of the documents incorporating them, must be signed by or on behalf of each party to the contract.",
+   "quote": "must be signed by or on behalf of each party to the contract"
+  },
+  {
+   "requirement": "Where a contract for the sale or other disposition of an interest in land satisfies the statutory conditions solely due to court-ordered rectification of one or more documents, the contract comes into being or is deemed to come into being at the time specified in the court order.",
+   "quote": "the contract shall come into being, or be deemed to have come into being, at such time as may be specified in the order"
+  },
+  {
+   "requirement": "The formal validity requirements do not apply to a contract to grant a short lease as mentioned in section 54(2) of the Law of Property Act 1925.",
+   "quote": "a contract to grant such a lease as is mentioned in section 54(2) of the Law of Property Act 1925 (short leases)"
+  },
+  {
+   "requirement": "The formal validity requirements do not apply to a contract made in the course of a public auction.",
+   "quote": "a contract made in the course of a public auction"
+  },
+  {
+   "requirement": "The formal validity requirements do not apply to a contract regulated under the Financial Services and Markets Act 2000, unless it is a regulated mortgage contract, a regulated home reversion plan, a regulated home purchase plan, or a regulated sale and rent back agreement.",
+   "quote": "a contract regulated under the Financial Services and Markets Act 2000, other than a regulated mortgage contract a regulated home reversion plan, a regulated home purchase plan or a regulated sale and rent back agreement"
+  },
+  {
+   "requirement": "Section 2 of the Law of Property (Miscellaneous Provisions) Act 1989 does not affect the creation or operation of resulting, implied, or constructive trusts.",
+   "quote": "nothing in this section affects the creation or operation of resulting, implied or constructive trusts"
+  },
+  {
+   "requirement": "The term 'disposition' carries the same meaning as defined in the Law of Property Act 1925.",
+   "quote": "“disposition” has the same meaning as in the Law of Property Act 1925"
+  },
+  {
+   "requirement": "The term 'interest in land' means any estate, interest, or charge in or over land, or in or over the proceeds of sale of land.",
+   "quote": "“interest in land” means any estate, interest or charge in or over land or in or over the proceeds of sale of land"
+  },
+  {
+   "requirement": "The terms 'regulated mortgage contract', 'regulated home reversion plan', 'regulated home purchase plan', and 'regulated sale and rent back agreement' must be interpreted in conjunction with section 22 of the Financial Services and Markets Act 2000, any relevant order under that section, and Schedule 2 to that Act.",
+   "quote": "must be read with— (a) section 22 of the Financial Services and Markets Act 2000, (b) any relevant order under that section, and (c) Schedule 2 to that Act"
+  },
+  {
+   "requirement": "Section 2 of the Law of Property (Miscellaneous Provisions) Act 1989 does not apply to contracts made before the section comes into force.",
+   "quote": "Nothing in this section shall apply in relation to contracts made before this section comes into force"
+  },
+  {
+   "requirement": "Section 40 of the Law of Property Act 1925 ceases to have effect.",
+   "quote": "Section 40 of the Law of Property Act 1925 (which is superseded by this section) shall cease to have effect"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

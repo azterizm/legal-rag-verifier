@@ -14,15 +14,146 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-03 |
+| Last updated | 2026-10-05 |
 | Current stage | Phase 3, Mac session (M1–M3) |
-| Current milestone | **M1 ✅ built — ⛔ API review** |
-| Next step | M2 (NLI head + dev battery) after your go on the M1 API (`docs/API.md`) |
-| Waiting on you | ⛔ M1 API review: names in `docs/API.md` §5 (reason codes, `Repair`, `GroundedBy`, `align_ratio`) |
+| Current milestone | M1 ✅ · **M2: NLI head + latency ✅, dev battery drafted — ⛔ label review** |
+| Next step | After your review: run the battery (claim-only, small, base), calibrate on dev, pick small vs base |
+| Waiting on you | ⛔ Review the 346 held-out labels in `batteries/verifier/heldout_review.md` before the seal |
+| **Reminder at benchmarking** | Tell the user: legal-rag-audit's live-run responses (`~/Code/legal-rag-audit/run/live/`) exist and were skipped by decision (stop 5); raise them again when the battery is run / the grid is benchmarked |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (15): **Dev confirmed with defaults (7.2 / 7.1 / 85.4 / 91.7); MPS shape fix; M2 committed.**
+  Held-out enrichment finished (57 more calls; 190 total). Waiting on your held-out label review, then seal and
+  run once.
+
+- 2026-10-06 (14): **Router key:** you removed the old key file (the held-out enrichment stopped at 60/117 units)
+  and supplied the key again; it is stored in this repo's `.router_key` (git-ignored, mode 600) and
+  `scripts/enrich_premises.py` reads it from there. Enrichment resumed from the cache.
+
+- 2026-10-06 (13): **Held-out drafted (346 rows, 102 premises), seal tooling written; ⛔ label review.**
+  - 312 concept rows from 91 `test` queries + 34 anchor/probe rows; no provision, query or sentence shared with
+    dev; all excerpts verified verbatim. Enrichment for the held-out premises (117 units) generated with the
+    same pipeline and model (step 3, approved). `batteries/verifier/seal.py` + a sealed-and-run-once guard in
+    `scripts/run_battery.py`.
+
+- 2026-10-06 (12): **Defaults baked in (your go); step 3 started. Split leak found and contained.**
+  - Default verifier = clause-split NLI (denials dropped), P2 (`VerifierConfig.neutral_with_grounded_claim`,
+    default "emit", in the trace), "as at" check (`VERSION_MISMATCH`), list-item binding, enrichment elements
+    as NLI candidates (`enrichment.load` / `attach`; `Premise.enrichment` names the layer; `NLIResult.candidate`
+    says what a sentence was judged on). Experimental switches and `scripts/ablate_battery.py` removed (results
+    kept in `results/ablate-*.json`). Fixed while baking: "before 6 April 2026" now means the day before.
+  - **Split leak (R11):** the router's concept `test` split contains the rag-security-probes queries
+    (uk-concept-0204…0215). Six of them (CHIM-001/002, OOB-001, FAB-001/002/003 = 0210, 0211, 0213, 0204, 0205,
+    0206) were used for **dev** rows at stop 6 and shaped the clause/denial changes. They are treated as seen:
+    kept in dev, **excluded from held-out**. The five probe prompts already in the held-out draft (0208, 0209,
+    0212, 0214, 0215) are genuinely test-split. Held-out concept rows are drafted from the other 91 test queries.
+
+- 2026-10-06 (11): **Steps 1 and 2 measured on dev; halted for the default configuration (⛔ API).**
+  - Step 1 ablation and step 2 layer (73 router calls to `gemini-3.8-flash-high`, chat endpoint only; elements
+    99.4 % verified, thresholds 71 %). Best on dev: base + clauses + p2 + as_at + limb_check + elements —
+    GP false rollback 13.6 → 7.2 %, all-pass 16.3 → 7.1 %, precision 83 → 92 %, recall 86.2 → 85.4 %.
+    `thresholds`, `scope`, `limbs`, `defined_terms`, `deontic_judged` not kept. NLI cost ≈ 2× (more candidates).
+  - Tests: 143 pass (new `tests/test_accuracy_features.py`). Nothing committed yet (one commit per milestone).
+
+- 2026-10-06 (10): **Enrichment model: `gemini-3.8-flash-high` (your call)**, via the router's
+  `/v1/chat/completions` only. You told me not to call any other router endpoint ("ask what you need, don't
+  explore/discover") after I listed `/v1/models` once to check the router was up; no other call was made. Noted
+  risk (yours to accept, accepted): Gemini is the grid's closed model (cells 4A/4C), so a Gemini-written premise
+  layer could favour Gemini-phrased answers; the trace records the layer's model and version.
+
+- 2026-10-06 (9): **Accuracy plan approved (your go, "all good. step 2: use router/frontier model").**
+  - Step 1 (deterministic, dev only, each change measured on its own): limb-split NLI premises + limb check,
+    clause-split hypotheses (denials dropped), an "as at" check for dated versions with a new reason code
+    `VERSION_MISMATCH` (API addition approved), modals checked against the judged window, narrower connective
+    rule, scope check, defined-term links.
+  - Step 2: an offline enrichment layer (elements + thresholds per provision, quote-audited, approach copied
+    from `~/Code/ephemeral-dynamic-llms/cloud/reason.py`, no dependency on that repo), generated with a
+    frontier model through the router — **paid calls approved for this purpose**. Step 3: held-out from the
+    concept `test` split, identical pipeline, sealed, run once.
+  - P2 and the base model decision are folded into step 1's measurements.
+
+- 2026-10-05 (8): **Dev battery run; calibration done; halted on a policy/API decision (⛔).**
+  - First run, then seven claim-check fixes found on dev rows (each with a test; 136 tests pass): claim-only GP
+    false rollback 10.4 % → 2.4 %, precision 80 % → 96 %. Details and tables in `docs/measurements.md`.
+  - Threshold sweep (150 configs × 2 models): thresholds barely matter (saturated probabilities); base beats
+    small everywhere. The lever is the policy for NLI-neutral sentences: P2 (emit when a figure/citation claim
+    is grounded) takes base from 13.6 % to 8.8 % GP false rollback for −3 pp recall. Needs a config field.
+  - Unsolved and stated: NLI fails on double-negative drafting and domain synonyms; premise corrections 6/6
+    rolled back by NLI; derived figures ungrounded.
+
+- 2026-10-05 (7): **New dev rows and held-out draft approved (your go, "proceed").** Running the dev battery.
+
+- 2026-10-05 (6): **Extra sources built in; halted for review of the new rows (⛔).**
+  - **No fetch:** you supplied the dated versions in `anchors_xml/` (git-ignored, like `data/`). Checked each:
+    identifier, figure and in-force range match the anchor (£464/£538, £450/£508, £25.9m/£36m). The
+    `*_base.xml` files are HTML pages of the current text; used only to cross-check that the corpus agrees
+    (£751; £27m/£54m). ca-382's two versions were copied from legal-rag-audit's own cache (2008-04-06 and
+    2021-04-06 texts, in force on both anchor dates). Current-text dates from the corpus: ss.186/227 £751 since
+    6 April 2026 (S.I. 2026/310); ss.382/465 since 6 April 2025 (S.I. 2024/1303).
+  - **Dropped-qualifier (your go):** two rows relabelled to `grounded_paraphrase` (PEA s.5 "four weeks", EqA
+    Sch. 1 "12 months"); checker changed so a dropped minimum is not `QUALIFIER_DROPPED` (caps, comparatives,
+    conditions still are). Test added.
+  - **New rows:** dev +38 (anchors era-227/era-186: 16 incl. 8 `version_swap`; Mode C CHIM-001/002, OOB-001: 12;
+    Mode A FAB-001–003: 10) → 271. Held-out draft 34 (ca-465, ca-382, CHIM-003, DEVOLV-001, REPEAL-001,
+    FAB-005/006), not run, not sealed. Two new classes: `version_swap` (ROLLBACK), `premise_correction` (EMIT).
+  - **Found in rag-security-probes:** FAB-002's worked abstention cites HA 1996 s.81 for a commercial tenant;
+    s.81(4)(a) excludes business tenancies. Not changed there; labelled ROLLBACK here. The repo has no LICENSE
+    file (same owner; attribution added to `NOTICE`).
+  - Builder generalised (`premises.py`, `clml.py`, `anchors.toml`); `scripts/run_battery.py` uses the same
+    premises. 128 tests pass; ruff, format, mypy clean.
+
+- 2026-10-05 (5): **Your calls:** the dev/held-out split by provision is approved (era-227, era-186 → dev;
+  ca-382, ca-465 → held-out; Mode C/Mode A halved by class); legal-rag-audit's live-run responses are **skipped**
+  ("we do not reference / worry about these for now") — remind you when we benchmark. Before any fetch you asked
+  how and what: proposed below (6 URLs via the router's fair-use `Fetcher`); waiting for your go. Dropped-qualifier:
+  you asked for a suggestion; proposed below; waiting.
+
+- 2026-10-05 (4): **Dev labels approved (your go, "all good. keep them").** You asked about two more sources:
+  `~/Code/rag-security-probes` (Mode A fictional instruments, Mode C chimeric/out-of-bounds/devolution/repealed
+  probes, `schemas/claim_shapes.json`) and `~/Code/legal-rag-audit` (point-in-time anchors, the `propose`
+  command, live-run responses). Not considered before; reviewed now.
+  - **Bug found via Mode C and fixed:** query grounding (R4) accepted any claim kind, so a sentence repeating a
+    false premise from the query ("Section 86 of the Family Rights Act 1996", "section 342 ERA 1996") was
+    grounded by the query. Now only figures are (R4 as written). Regression test added; 127 tests pass.
+  - Proposal and open decisions: see the reply of this stop (version-swap class from anchors; Mode C/Mode A rows
+    for wrong-instrument/citation; dev/held-out split by provision; dropped-qualifier labels vs the audit's
+    defects 23/29; live responses not used without your call).
+
+- 2026-10-05 (3): **M2 built up to the label review; halted (⛔).** Uncommitted (one commit per milestone).
+  - **NLI head** `legal_rag_verifier.nli.SentenceNLIVerifier` (`[nli]` extra, torch 2.14.1, transformers
+    5.18.0): batched, cuda/mps/cpu, labels from `id2label`, chunking to the 512-token budget, `model_id` =
+    name@commit. Tests skip without torch or weights.
+  - **Latency** (`docs/measurements.md`, Apple M4): one pair 18 ms (small, MPS) / 26 ms (base); a full s.124
+    premise (9 candidates) 135 ms / 272 ms p50. The forward pass is linear in the number of pairs on the M4, so
+    the per-sentence cost is set by how many candidates are scored. L4 figures come in M4.
+  - **Found:** `nli-deberta-v3-small` was not cached (no weights; the plan said it was). Downloaded from the
+    public hub (free), revision `fa28048`. Both checkpoints use 0 = contradiction, 1 = entailment, 2 = neutral;
+    **vault 04 §2 hard-codes `entailment_idx = 2` (neutral)**, a vault correction for later (⛔ with your go).
+  - **NLI judging rule (design, before any battery run):** a sentence entailed by any candidate (above the
+    threshold) is judged on it; otherwise on its most related candidate (lowest P(neutral)). Taking the max
+    contradiction over all windows rolled back correct statements of exceptions (s.124(3) "may be exceeded"
+    contradicts s.124(1)). Windows are scored with their heading, plus joined candidates for in-premise
+    cross-references ((1)+(1ZA)), because base could not link (1ZA) to "compensatory award" on its own.
+    An entailed sentence with no figures is now `GROUNDED`, not `CONNECTIVE`. No names changed.
+  - **Premise fixes found while reading real provisions:** inserted subsection labels such as `(A1)` (TULRCA
+    s.188) now split windows; a section's own stem no longer swallows its subsections (LRA 2002 Sch. 6 was
+    duplicated); regnal-year Acts (`uk/ukpga/Vict/24-25/100`) now load (filed under the calendar year) and their
+    coordinate tails are right (`s20`, not `100/s20`). Tests added for each.
+  - **Router data quirks (not fixed here; for the router's ingest):** MCA 1973 s.1 has lost its subsection
+    records (all text in one node, labels missing); UCTA 1977 s.11 has OCR "lt" for "It"; TULRCA s.188(1) reads
+    "the employer The employer shall consult" (amendment text merged).
+  - **Dev battery** (`batteries/verifier/`, see its README): 233 hand-written rows (the plan said ~150) over 56
+    real premises from the router's concept `dev` split, 9 classes, 119 EMIT / 114 ROLLBACK, each with a verbatim
+    excerpt, coordinate and `source_url`. Most of the extra rows are grounded paraphrases (109), which carry the
+    headline false-rollback rate. **The verifier has not been run on them.** I can trim to ~150 if you prefer.
+  - `scripts/run_battery.py` (scoring + dev-only threshold sweep with cached NLI scores) is written and unit-tested
+    on synthetic outcomes only. 126 tests pass; ruff, format and mypy --strict clean.
+
+- 2026-10-05 (2): **M1 API approved (your go, "all good"),** including the reason codes, `GroundedBy`,
+  `align_ratio=0.5` and the module layout in `docs/API.md` §5. M2 started.
 
 - 2026-10-03 (1): **M1 built; halted for the API review (⛔).**
   - Setup: repo scaffolded on the router's conventions (uv, hatchling, src layout, AGPL-3.0-only, ruff rule
@@ -59,16 +190,15 @@ Plan §Key decisions 2–5, R2–R5, R8, R10.
 - [x] `Premise.from_records` (R10), `from_provision` (temporal facts), `from_text`.
 - [x] Golden tests (£68,400 / £85,000 / £123,543; shall→may; "s. 124" not split; "section 124" = "s.124";
       `QUALIFIER_DROPPED`; query figure grounded) and hypothesis fuzz.
-- **Done when:** checks green ✅ · ⛔ API reviewed.
+- **Done when:** checks green ✅ · ⛔ API reviewed ✅ (2026-10-05).
 
-### M2 — NLI head + dev battery (`[nli]`)
-- [ ] `legal_rag_verifier.nli.SentenceNLIVerifier` implementing `NLIScorer`: batched `[window, hypothesis]`,
+### M2 — NLI head + dev battery (`[nli]`) ✅ (held-out run pending, step 3)
+- [x] `legal_rag_verifier.nli.SentenceNLIVerifier` implementing `NLIScorer`: batched `[window, hypothesis]`,
       MPS/CUDA/CPU, MPS-synchronised timing, `id2label` read from the model config.
-- [ ] Long windows split to fit 512 tokens (sub-windows keep their coordinate).
-- [ ] Latency p50/p99 on M4 for `-small` and `-base` → `docs/measurements.md`.
-- [ ] Dev detector battery (R1): ~150 rows from real provisions (router concept `dev` split, R11), classes:
-      grounded paraphrase, connective, wrong figure, wrong citation, wrong instrument, modal shift, dropped
-      qualifier, value swap, unsupported-but-plausible. Rows written independently of the checker's patterns.
+- [x] Long windows split to fit 512 tokens (chunks scored per window; most related chunk kept).
+- [x] Latency p50/p99 on M4 for `-small` and `-base` → `docs/measurements.md`.
+- [x] Dev detector battery (R1): 233 rows from real provisions (router concept `dev` split, R11), 9 classes.
+      Rows written independently of the checker's patterns; verifier not run on them.
 - [ ] ⛔ **You review/correct the labels before any threshold is calibrated.**
 - [ ] Calibrate on dev only: thresholds, `align_ratio`, neutral policy (R7), small vs base. Headline:
       false-rollback rate on grounded paraphrases, recall per class.

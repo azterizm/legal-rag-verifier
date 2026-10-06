@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1986/45/s122@current",
+ "section": "uk/ukpga/1986/45/s122",
+ "version": "current",
+ "source_sha256": "ae319ac83db426c359d273f4535eaf207ba1c35ed09e616aa1b3ea682ea96ca2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company may be wound up by the court if the company has resolved by special resolution that it be wound up by the court.",
+    "quote": "the company has by special resolution resolved that the company be wound up by the court"
+   },
+   {
+    "requirement": "A public company registered as such on its original incorporation may be wound up by the court if it has not been issued with a trading certificate under section 761 of the Companies Act 2006 and more than a year has expired since it was so registered.",
+    "quote": "being a public company which was registered as such on its original incorporation, the company has not been issued with a trading certificate under section 761 of the Companies Act 2006 (requirement as to minimum share capital) and more than a year has expired since it was so registered"
+   },
+   {
+    "requirement": "A company may be wound up by the court if it is an old public company within the meaning of Schedule 3 to the Companies Act 2006 (Consequential Amendments, Transitional Provisions and Savings) Order 2009.",
+    "quote": "it is an old public company, within the meaning of the Schedule 3 to the Companies Act 2006 (Consequential Amendments, Transitional Provisions and Savings) Order 2009"
+   },
+   {
+    "requirement": "A company may be wound up by the court if it does not commence its business within a year from its incorporation.",
+    "quote": "the company does not commence its business within a year from its incorporation"
+   },
+   {
+    "requirement": "A company may be wound up by the court if it suspends its business for a whole year.",
+    "quote": "suspends its business for a whole year"
+   },
+   {
+    "requirement": "A company may be wound up by the court if it is unable to pay its debts.",
+    "quote": "the company is unable to pay its debts"
+   },
+   {
+    "requirement": "A company may be wound up by the court if the court is of the opinion that it is just and equitable that the company should be wound up.",
+    "quote": "the court is of the opinion that it is just and equitable that the company should be wound up"
+   },
+   {
+    "requirement": "In Scotland, a company which the Court of Session has jurisdiction to wind up may be wound up by the Court if a floating charge subsists over property comprised in the company’s property and undertaking and the court is satisfied that the security of the creditor entitled to the benefit of the floating charge is in jeopardy.",
+    "quote": "In Scotland, a company which the Court of Session has jurisdiction to wind up may be wound up by the Court if there is subsisting a floating charge over property comprised in the company’s property and undertaking, and the court is satisfied that the security of the creditor entitled to the benefit of the floating charge is in jeopardy"
+   },
+   {
+    "requirement": "A creditor’s security is deemed to be in jeopardy if the Court is satisfied that events have occurred or are about to occur which render it unreasonable in the creditor’s interests that the company should retain power to dispose of property subject to a floating charge.",
+    "quote": "a creditor’s security is deemed to be in jeopardy if the Court is satisfied that events have occurred or are about to occur which render it unreasonable in the creditor’s interests that the company should retain power to dispose of the property which is subject to the floating charge"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period that must expire since registration without a trading certificate for an originally incorporated public company to be liable to winding up",
+    "value": "more than a year",
+    "quote": "more than a year has expired since it was so registered"
+   },
+   {
+    "what": "period from incorporation within which failure by a company to commence business allows it to be wound up",
+    "value": "a year",
+    "quote": "within a year from its incorporation"
+   },
+   {
+    "what": "period of suspension of business that allows a company to be wound up",
+    "value": "a whole year",
+    "quote": "suspends its business for a whole year"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A company may be wound up by the court if the company has resolved by special resolution that it be wound up by the court.",
+   "quote": "the company has by special resolution resolved that the company be wound up by the court"
+  },
+  {
+   "requirement": "A public company registered as such on its original incorporation may be wound up by the court if it has not been issued with a trading certificate under section 761 of the Companies Act 2006 and more than a year has expired since it was so registered.",
+   "quote": "being a public company which was registered as such on its original incorporation, the company has not been issued with a trading certificate under section 761 of the Companies Act 2006 (requirement as to minimum share capital) and more than a year has expired since it was so registered"
+  },
+  {
+   "requirement": "A company may be wound up by the court if it is an old public company within the meaning of Schedule 3 to the Companies Act 2006 (Consequential Amendments, Transitional Provisions and Savings) Order 2009.",
+   "quote": "it is an old public company, within the meaning of the Schedule 3 to the Companies Act 2006 (Consequential Amendments, Transitional Provisions and Savings) Order 2009"
+  },
+  {
+   "requirement": "A company may be wound up by the court if it does not commence its business within a year from its incorporation.",
+   "quote": "the company does not commence its business within a year from its incorporation"
+  },
+  {
+   "requirement": "A company may be wound up by the court if it suspends its business for a whole year.",
+   "quote": "suspends its business for a whole year"
+  },
+  {
+   "requirement": "A company may be wound up by the court if it is unable to pay its debts.",
+   "quote": "the company is unable to pay its debts"
+  },
+  {
+   "requirement": "A company may be wound up by the court if the court is of the opinion that it is just and equitable that the company should be wound up.",
+   "quote": "the court is of the opinion that it is just and equitable that the company should be wound up"
+  },
+  {
+   "requirement": "In Scotland, a company which the Court of Session has jurisdiction to wind up may be wound up by the Court if a floating charge subsists over property comprised in the company’s property and undertaking and the court is satisfied that the security of the creditor entitled to the benefit of the floating charge is in jeopardy.",
+   "quote": "In Scotland, a company which the Court of Session has jurisdiction to wind up may be wound up by the Court if there is subsisting a floating charge over property comprised in the company’s property and undertaking, and the court is satisfied that the security of the creditor entitled to the benefit of the floating charge is in jeopardy"
+  },
+  {
+   "requirement": "A creditor’s security is deemed to be in jeopardy if the Court is satisfied that events have occurred or are about to occur which render it unreasonable in the creditor’s interests that the company should retain power to dispose of property subject to a floating charge.",
+   "quote": "a creditor’s security is deemed to be in jeopardy if the Court is satisfied that events have occurred or are about to occur which render it unreasonable in the creditor’s interests that the company should retain power to dispose of the property which is subject to the floating charge"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

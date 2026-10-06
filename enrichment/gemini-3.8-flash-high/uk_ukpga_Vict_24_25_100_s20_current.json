@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/Vict/24-25/100/s20@current",
+ "section": "uk/ukpga/Vict/24-25/100/s20",
+ "version": "current",
+ "source_sha256": "c33701143f7f7486dbbb242b67cca16f175412644870ea76df8e88b281644d9d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Whosoever unlawfully and maliciously wounds or inflicts any grievous bodily harm upon any other person, either with or without any weapon or instrument, is guilty of a misdemeanor.",
+    "quote": "Whosoever shall unlawfully and maliciously wound or inflict any grievous bodily harm upon any other person, either with or without any weapon or instrument, shall be guilty of a misdemeanor"
+   },
+   {
+    "requirement": "A person convicted of the misdemeanor is liable to be kept in penal servitude.",
+    "quote": "being convicted thereof shall be liable to be kept in penal servitude"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Whosoever unlawfully and maliciously wounds or inflicts any grievous bodily harm upon any other person, either with or without any weapon or instrument, is guilty of a misdemeanor.",
+   "quote": "Whosoever shall unlawfully and maliciously wound or inflict any grievous bodily harm upon any other person, either with or without any weapon or instrument, shall be guilty of a misdemeanor"
+  },
+  {
+   "requirement": "A person convicted of the misdemeanor is liable to be kept in penal servitude.",
+   "quote": "being convicted thereof shall be liable to be kept in penal servitude"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

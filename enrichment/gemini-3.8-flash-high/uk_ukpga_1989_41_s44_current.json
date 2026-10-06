@@ -1,0 +1,227 @@
+{
+ "key": "uk/ukpga/1989/41/s44@current",
+ "section": "uk/ukpga/1989/41/s44",
+ "version": "current",
+ "source_sha256": "6e168c06dc80b177f12599628397ab10209ffa54d17fb4ce7f1cd8a8efc26bf4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may make an emergency protection order with respect to a child upon application by any person if, but only if, it is satisfied that there is reasonable cause to believe the child is likely to suffer significant harm if he is not removed to accommodation provided by or on behalf of the applicant, or if he does not remain in the place in which he is then being accommodated.",
+    "quote": "the court may make the order if, but only if, it is satisfied that— (a) there is reasonable cause to believe that the child is likely to suffer significant harm"
+   },
+   {
+    "requirement": "The court may make an emergency protection order with respect to a child upon application by a local authority if, but only if, it is satisfied that enquiries are being made with respect to the child under section 47(1)(b), those enquiries are being frustrated by access to the child being unreasonably refused to a person authorised to seek access, and the applicant has reasonable cause to believe access to the child is required as a matter of urgency.",
+    "quote": "in the case of an application made by a local authority— (i) enquiries are being made with respect to the child under section 47(1)(b); and (ii) those enquiries are being frustrated by access to the child being unreasonably refused"
+   },
+   {
+    "requirement": "The court may make an emergency protection order with respect to a child upon application by an authorised person if, but only if, it is satisfied that the applicant has reasonable cause to suspect the child is suffering or is likely to suffer significant harm, is making welfare enquiries with respect to the child, those enquiries are being frustrated by access being unreasonably refused to an authorised person, and the applicant has reasonable cause to believe access is required as a matter of urgency.",
+    "quote": "in the case of an application made by an authorised person— (i) the applicant has reasonable cause to suspect that a child is suffering, or is likely to suffer, significant harm"
+   },
+   {
+    "requirement": "For the purposes of section 44, an authorised person is defined as a person who is an authorised person for the purposes of section 31.",
+    "quote": "“authorised person” means a person who is an authorised person for the purposes of section 31"
+   },
+   {
+    "requirement": "For the purposes of section 44, a person authorised to seek access means an officer of the local authority or a person authorised by the authority to act on their behalf in connection with the enquiries (in the case of a local authority application), or the authorised person (in the case of an application by an authorised person).",
+    "quote": "“a person authorised to seek access” means— (i) in the case of an application by a local authority, an officer of the local authority or a person authorised by the authority to act on their behalf in connection with the enquiries; or (ii) in the case of an application by an authorised person, that person"
+   },
+   {
+    "requirement": "Any person who seeks access to a child in connection with relevant enquiries and purports to be authorised to do so must produce some duly authenticated document as evidence of that authority upon being asked to do so.",
+    "quote": "shall, on being asked to do so, produce some duly authenticated document as evidence that he is such a person"
+   },
+   {
+    "requirement": "While an emergency protection order is in force, it operates as a direction to any person who is in a position to do so to comply with any request to produce the child to the applicant.",
+    "quote": "operates as a direction to any person who is in a position to do so to comply with any request to produce the child to the applicant"
+   },
+   {
+    "requirement": "While an emergency protection order is in force, it authorises the removal of the child at any time to accommodation provided by or on behalf of the applicant and his being kept there, or the prevention of the child's removal from any hospital or other place in which he was being accommodated immediately before the order was made.",
+    "quote": "authorises— (i) the removal of the child at any time to accommodation provided by or on behalf of the applicant and his being kept there; or (ii) the prevention of the child’s removal from any hospital, or other place"
+   },
+   {
+    "requirement": "While an emergency protection order is in force, it gives the applicant parental responsibility for the child.",
+    "quote": "gives the applicant parental responsibility for the child"
+   },
+   {
+    "requirement": "Where an emergency protection order is in force, the applicant must only exercise the power to remove or prevent the removal of the child in order to safeguard the welfare of the child.",
+    "quote": "shall only exercise the power given by virtue of subsection (4)(b) in order to safeguard the welfare of the child"
+   },
+   {
+    "requirement": "Where an emergency protection order is in force, the applicant must only take such action in meeting parental responsibility for the child as is reasonably required to safeguard or promote the child's welfare, having regard in particular to the duration of the order.",
+    "quote": "shall take, and shall only take, such action in meeting his parental responsibility for the child as is reasonably required to safeguard or promote the welfare of the child (having regard in particular to the duration of the order)"
+   },
+   {
+    "requirement": "Where an emergency protection order is in force, the applicant must comply with the requirements of any regulations made by the Secretary of State under subsection (5).",
+    "quote": "shall comply with the requirements of any regulations made by the Secretary of State for the purposes of this subsection"
+   },
+   {
+    "requirement": "When making an emergency protection order, the court may give such directions as it considers appropriate regarding contact between the child and any named person, or regarding the medical or psychiatric examination or other assessment of the child.",
+    "quote": "the court makes an emergency protection order, it may give such directions (if any) as it considers appropriate with respect to— (a) the contact which is, or is not, to be allowed between the child and any named person; (b) the medical or psychiatric examination or other assessment of the child"
+   },
+   {
+    "requirement": "If the court gives a direction regarding medical or psychiatric examination or other assessment, the child may refuse to submit to it if he is of sufficient understanding to make an informed decision.",
+    "quote": "the child may, if he is of sufficient understanding to make an informed decision, refuse to submit to the examination or other assessment"
+   },
+   {
+    "requirement": "A court direction concerning contact may impose conditions, and a direction concerning medical or psychiatric examination or assessment may provide that there is to be no such examination or assessment, or none unless the court directs otherwise.",
+    "quote": "A direction under subsection (6)(a) may impose conditions and one under subsection (6)(b) may be to the effect that there is to be— (a) no such examination or assessment; or (b) no such examination or assessment unless the court directs otherwise"
+   },
+   {
+    "requirement": "A direction concerning contact or assessment may be given when the emergency protection order is made or at any time while the order is in force.",
+    "quote": "given when the emergency protection order is made or at any time while it is in force"
+   },
+   {
+    "requirement": "A direction concerning contact or assessment may be varied at any time on the application of any person falling within any class of person prescribed by rules of court.",
+    "quote": "varied at any time on the application of any person falling within any class of person prescribed by rules of court for the purposes of this subsection"
+   },
+   {
+    "requirement": "If an applicant has exercised the power to remove a child or prevent the child's removal under an emergency protection order, but it appears to the applicant that it is safe for the child to be returned or allowed to be removed, the applicant must return the child or allow him to be removed.",
+    "quote": "he shall return the child or (as the case may be) allow him to be removed"
+   },
+   {
+    "requirement": "When an applicant is required to return a child under subsection (10), the applicant must return him to the care of the person from whose care he was removed, or if that is not reasonably practicable, to a parent, a non-parent with parental responsibility, or such other person as the applicant considers appropriate with the agreement of the court.",
+    "quote": "Where he is required by subsection (10) to return the child the applicant shall— (a) return him to the care of the person from whose care he was removed; or (b) if that is not reasonably practicable, return him to the care of— (i) a parent of his; (ii) any person who is not a parent of his but who has parental responsibility for him; or (iii) such other person as the applicant (with the agreement of the court) considers appropriate"
+   },
+   {
+    "requirement": "An applicant who was required to return a child or allow him to be removed may again exercise powers with respect to the child at any time while the emergency protection order remains in force if it appears that a change in circumstances makes it necessary.",
+    "quote": "may again exercise his powers with respect to the child (at any time while the emergency protection order remains in force) if it appears to him that a change in the circumstances of the case makes it necessary for him to do so"
+   },
+   {
+    "requirement": "Subject to any directions given by the court under subsection (6), the applicant under an emergency protection order must allow the child reasonable contact with his parents, any non-parent with parental responsibility, any person he was living with immediately before the order, any person named in a child arrangements order for contact, any person allowed contact under a section 34 order, and any person acting on behalf of any of those persons.",
+    "quote": "the applicant shall, subject to any direction given under subsection (6), allow the child reasonable contact with— (a) his parents; (b) any person who is not a parent of his but who has parental responsibility for him; (c) any person with whom he was living immediately before the making of the order; (d) any person named in a child arrangements order as a person with whom the child is to spend time or otherwise have contact; (e) any person who is allowed to have contact with the child by virtue of an order under section 34; and (f) any person acting on behalf of any of those persons"
+   },
+   {
+    "requirement": "An emergency protection order must name the child wherever reasonably practicable, and must describe him as clearly as possible where it does not name him.",
+    "quote": "Wherever it is reasonably practicable to do so, an emergency protection order shall name the child; and where it does not name him it shall describe him as clearly as possible"
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person intentionally obstructs any person exercising the power under subsection (4)(b) to remove, or prevent the removal of, a child.",
+    "quote": "A person shall be guilty of an offence if he intentionally obstructs any person exercising the power under subsection (4)(b) to remove, or prevent the removal of, a child"
+   },
+   {
+    "requirement": "A person guilty of intentionally obstructing the removal or prevention of removal of a child under subsection (15) is liable on summary conviction to a fine not exceeding level 3 on the standard scale.",
+    "quote": "liable on summary conviction to a fine not exceeding level 3 on the standard scale"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum fine on summary conviction for intentionally obstructing the exercise of powers to remove or prevent removal of a child under an emergency protection order",
+    "value": "level 3",
+    "quote": "a fine not exceeding level 3 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The court may make an emergency protection order with respect to a child upon application by any person if, but only if, it is satisfied that there is reasonable cause to believe the child is likely to suffer significant harm if he is not removed to accommodation provided by or on behalf of the applicant, or if he does not remain in the place in which he is then being accommodated.",
+   "quote": "the court may make the order if, but only if, it is satisfied that— (a) there is reasonable cause to believe that the child is likely to suffer significant harm"
+  },
+  {
+   "requirement": "The court may make an emergency protection order with respect to a child upon application by a local authority if, but only if, it is satisfied that enquiries are being made with respect to the child under section 47(1)(b), those enquiries are being frustrated by access to the child being unreasonably refused to a person authorised to seek access, and the applicant has reasonable cause to believe access to the child is required as a matter of urgency.",
+   "quote": "in the case of an application made by a local authority— (i) enquiries are being made with respect to the child under section 47(1)(b); and (ii) those enquiries are being frustrated by access to the child being unreasonably refused"
+  },
+  {
+   "requirement": "The court may make an emergency protection order with respect to a child upon application by an authorised person if, but only if, it is satisfied that the applicant has reasonable cause to suspect the child is suffering or is likely to suffer significant harm, is making welfare enquiries with respect to the child, those enquiries are being frustrated by access being unreasonably refused to an authorised person, and the applicant has reasonable cause to believe access is required as a matter of urgency.",
+   "quote": "in the case of an application made by an authorised person— (i) the applicant has reasonable cause to suspect that a child is suffering, or is likely to suffer, significant harm"
+  },
+  {
+   "requirement": "For the purposes of section 44, an authorised person is defined as a person who is an authorised person for the purposes of section 31.",
+   "quote": "“authorised person” means a person who is an authorised person for the purposes of section 31"
+  },
+  {
+   "requirement": "For the purposes of section 44, a person authorised to seek access means an officer of the local authority or a person authorised by the authority to act on their behalf in connection with the enquiries (in the case of a local authority application), or the authorised person (in the case of an application by an authorised person).",
+   "quote": "“a person authorised to seek access” means— (i) in the case of an application by a local authority, an officer of the local authority or a person authorised by the authority to act on their behalf in connection with the enquiries; or (ii) in the case of an application by an authorised person, that person"
+  },
+  {
+   "requirement": "Any person who seeks access to a child in connection with relevant enquiries and purports to be authorised to do so must produce some duly authenticated document as evidence of that authority upon being asked to do so.",
+   "quote": "shall, on being asked to do so, produce some duly authenticated document as evidence that he is such a person"
+  },
+  {
+   "requirement": "While an emergency protection order is in force, it operates as a direction to any person who is in a position to do so to comply with any request to produce the child to the applicant.",
+   "quote": "operates as a direction to any person who is in a position to do so to comply with any request to produce the child to the applicant"
+  },
+  {
+   "requirement": "While an emergency protection order is in force, it authorises the removal of the child at any time to accommodation provided by or on behalf of the applicant and his being kept there, or the prevention of the child's removal from any hospital or other place in which he was being accommodated immediately before the order was made.",
+   "quote": "authorises— (i) the removal of the child at any time to accommodation provided by or on behalf of the applicant and his being kept there; or (ii) the prevention of the child’s removal from any hospital, or other place"
+  },
+  {
+   "requirement": "While an emergency protection order is in force, it gives the applicant parental responsibility for the child.",
+   "quote": "gives the applicant parental responsibility for the child"
+  },
+  {
+   "requirement": "Where an emergency protection order is in force, the applicant must only exercise the power to remove or prevent the removal of the child in order to safeguard the welfare of the child.",
+   "quote": "shall only exercise the power given by virtue of subsection (4)(b) in order to safeguard the welfare of the child"
+  },
+  {
+   "requirement": "Where an emergency protection order is in force, the applicant must only take such action in meeting parental responsibility for the child as is reasonably required to safeguard or promote the child's welfare, having regard in particular to the duration of the order.",
+   "quote": "shall take, and shall only take, such action in meeting his parental responsibility for the child as is reasonably required to safeguard or promote the welfare of the child (having regard in particular to the duration of the order)"
+  },
+  {
+   "requirement": "Where an emergency protection order is in force, the applicant must comply with the requirements of any regulations made by the Secretary of State under subsection (5).",
+   "quote": "shall comply with the requirements of any regulations made by the Secretary of State for the purposes of this subsection"
+  },
+  {
+   "requirement": "When making an emergency protection order, the court may give such directions as it considers appropriate regarding contact between the child and any named person, or regarding the medical or psychiatric examination or other assessment of the child.",
+   "quote": "the court makes an emergency protection order, it may give such directions (if any) as it considers appropriate with respect to— (a) the contact which is, or is not, to be allowed between the child and any named person; (b) the medical or psychiatric examination or other assessment of the child"
+  },
+  {
+   "requirement": "If the court gives a direction regarding medical or psychiatric examination or other assessment, the child may refuse to submit to it if he is of sufficient understanding to make an informed decision.",
+   "quote": "the child may, if he is of sufficient understanding to make an informed decision, refuse to submit to the examination or other assessment"
+  },
+  {
+   "requirement": "A court direction concerning contact may impose conditions, and a direction concerning medical or psychiatric examination or assessment may provide that there is to be no such examination or assessment, or none unless the court directs otherwise.",
+   "quote": "A direction under subsection (6)(a) may impose conditions and one under subsection (6)(b) may be to the effect that there is to be— (a) no such examination or assessment; or (b) no such examination or assessment unless the court directs otherwise"
+  },
+  {
+   "requirement": "A direction concerning contact or assessment may be given when the emergency protection order is made or at any time while the order is in force.",
+   "quote": "given when the emergency protection order is made or at any time while it is in force"
+  },
+  {
+   "requirement": "A direction concerning contact or assessment may be varied at any time on the application of any person falling within any class of person prescribed by rules of court.",
+   "quote": "varied at any time on the application of any person falling within any class of person prescribed by rules of court for the purposes of this subsection"
+  },
+  {
+   "requirement": "If an applicant has exercised the power to remove a child or prevent the child's removal under an emergency protection order, but it appears to the applicant that it is safe for the child to be returned or allowed to be removed, the applicant must return the child or allow him to be removed.",
+   "quote": "he shall return the child or (as the case may be) allow him to be removed"
+  },
+  {
+   "requirement": "When an applicant is required to return a child under subsection (10), the applicant must return him to the care of the person from whose care he was removed, or if that is not reasonably practicable, to a parent, a non-parent with parental responsibility, or such other person as the applicant considers appropriate with the agreement of the court.",
+   "quote": "Where he is required by subsection (10) to return the child the applicant shall— (a) return him to the care of the person from whose care he was removed; or (b) if that is not reasonably practicable, return him to the care of— (i) a parent of his; (ii) any person who is not a parent of his but who has parental responsibility for him; or (iii) such other person as the applicant (with the agreement of the court) considers appropriate"
+  },
+  {
+   "requirement": "An applicant who was required to return a child or allow him to be removed may again exercise powers with respect to the child at any time while the emergency protection order remains in force if it appears that a change in circumstances makes it necessary.",
+   "quote": "may again exercise his powers with respect to the child (at any time while the emergency protection order remains in force) if it appears to him that a change in the circumstances of the case makes it necessary for him to do so"
+  },
+  {
+   "requirement": "Subject to any directions given by the court under subsection (6), the applicant under an emergency protection order must allow the child reasonable contact with his parents, any non-parent with parental responsibility, any person he was living with immediately before the order, any person named in a child arrangements order for contact, any person allowed contact under a section 34 order, and any person acting on behalf of any of those persons.",
+   "quote": "the applicant shall, subject to any direction given under subsection (6), allow the child reasonable contact with— (a) his parents; (b) any person who is not a parent of his but who has parental responsibility for him; (c) any person with whom he was living immediately before the making of the order; (d) any person named in a child arrangements order as a person with whom the child is to spend time or otherwise have contact; (e) any person who is allowed to have contact with the child by virtue of an order under section 34; and (f) any person acting on behalf of any of those persons"
+  },
+  {
+   "requirement": "An emergency protection order must name the child wherever reasonably practicable, and must describe him as clearly as possible where it does not name him.",
+   "quote": "Wherever it is reasonably practicable to do so, an emergency protection order shall name the child; and where it does not name him it shall describe him as clearly as possible"
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person intentionally obstructs any person exercising the power under subsection (4)(b) to remove, or prevent the removal of, a child.",
+   "quote": "A person shall be guilty of an offence if he intentionally obstructs any person exercising the power under subsection (4)(b) to remove, or prevent the removal of, a child"
+  },
+  {
+   "requirement": "A person guilty of intentionally obstructing the removal or prevention of removal of a child under subsection (15) is liable on summary conviction to a fine not exceeding level 3 on the standard scale.",
+   "quote": "liable on summary conviction to a fine not exceeding level 3 on the standard scale"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum fine on summary conviction for intentionally obstructing the exercise of powers to remove or prevent removal of a child under an emergency protection order",
+   "value": "level 3",
+   "quote": "a fine not exceeding level 3 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 24,
+  "elements_verified": 24,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

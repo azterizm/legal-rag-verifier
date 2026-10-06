@@ -1,0 +1,77 @@
+{
+ "key": "uk/ukpga/Will4/2-3/71/s2@current",
+ "section": "uk/ukpga/Will4/2-3/71/s2",
+ "version": "current",
+ "source_sha256": "e66069c2d7f2435ada01ac7d557d2e02f8e605562fada6e4dad36f32c0a3a518",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A claim lawfully made at common law by custom, prescription, or grant to any way, easement, watercourse, or use of water over land or water of the Crown, the Duchy of Lancaster, the Duchy of Cornwall, or any ecclesiastical or lay person or body corporate, after actual enjoyment without interruption for twenty years by a person claiming right thereto, cannot be defeated or destroyed solely by showing that it was first enjoyed prior to that twenty-year period.",
+    "quote": "shall be defeated or destroyed by showing only that such way or other matter was first enjoyed at any time prior to such period of twenty years"
+   },
+   {
+    "requirement": "A claim to a way, easement, watercourse, or use of water enjoyed for twenty years remains liable to be defeated in any other way by which such a claim may lawfully be defeated.",
+    "quote": "but nevertheless such claim may be defeated in any other way by which the same is now liable to be defeated"
+   },
+   {
+    "requirement": "The right to any way, easement, watercourse, or use of water that has been enjoyed without interruption by a person claiming right thereto for the full period of forty years is deemed absolute and indefeasible.",
+    "quote": "the right thereto shall be deemed absolute and indefeasible"
+   },
+   {
+    "requirement": "A right to a way, easement, watercourse, or use of water enjoyed for forty years is not deemed absolute and indefeasible if it appears that the enjoyment occurred under consent or agreement expressly given or made for that purpose by deed or writing.",
+    "quote": "unless it shall appear that the same was enjoyed by some consent or agreement expressly given or made for that purpose by deed or writing"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period of actual uninterrupted enjoyment required to prevent a claim from being defeated merely by showing it was first enjoyed prior to that period",
+    "value": "twenty years",
+    "quote": "full period of twenty years"
+   },
+   {
+    "what": "the period of enjoyment required for a right to a way, easement, watercourse, or use of water to be deemed absolute and indefeasible",
+    "value": "forty years",
+    "quote": "full period of forty years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A claim lawfully made at common law by custom, prescription, or grant to any way, easement, watercourse, or use of water over land or water of the Crown, the Duchy of Lancaster, the Duchy of Cornwall, or any ecclesiastical or lay person or body corporate, after actual enjoyment without interruption for twenty years by a person claiming right thereto, cannot be defeated or destroyed solely by showing that it was first enjoyed prior to that twenty-year period.",
+   "quote": "shall be defeated or destroyed by showing only that such way or other matter was first enjoyed at any time prior to such period of twenty years"
+  },
+  {
+   "requirement": "A claim to a way, easement, watercourse, or use of water enjoyed for twenty years remains liable to be defeated in any other way by which such a claim may lawfully be defeated.",
+   "quote": "but nevertheless such claim may be defeated in any other way by which the same is now liable to be defeated"
+  },
+  {
+   "requirement": "The right to any way, easement, watercourse, or use of water that has been enjoyed without interruption by a person claiming right thereto for the full period of forty years is deemed absolute and indefeasible.",
+   "quote": "the right thereto shall be deemed absolute and indefeasible"
+  },
+  {
+   "requirement": "A right to a way, easement, watercourse, or use of water enjoyed for forty years is not deemed absolute and indefeasible if it appears that the enjoyment occurred under consent or agreement expressly given or made for that purpose by deed or writing.",
+   "quote": "unless it shall appear that the same was enjoyed by some consent or agreement expressly given or made for that purpose by deed or writing"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period of actual uninterrupted enjoyment required to prevent a claim from being defeated merely by showing it was first enjoyed prior to that period",
+   "value": "twenty years",
+   "quote": "full period of twenty years"
+  },
+  {
+   "what": "the period of enjoyment required for a right to a way, easement, watercourse, or use of water to be deemed absolute and indefeasible",
+   "value": "forty years",
+   "quote": "full period of forty years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

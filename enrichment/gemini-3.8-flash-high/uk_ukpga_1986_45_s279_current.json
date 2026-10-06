@@ -1,0 +1,91 @@
+{
+ "key": "uk/ukpga/1986/45/s279@current",
+ "section": "uk/ukpga/1986/45/s279",
+ "version": "current",
+ "source_sha256": "5f097e8b19bf1583a6e68dd2efa042640389937a88384e4ba24e10ba30ffc6f9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A bankrupt is discharged from bankruptcy at the end of a one-year period beginning with the date on which the bankruptcy commences.",
+    "quote": "discharged from bankruptcy at the end of the period of one year beginning with the date on which the bankruptcy commences"
+   },
+   {
+    "requirement": "Upon the application of the official receiver or the trustee of a bankrupt’s estate, the court may order that the one-year discharge period cease to run until the end of a specified period or the fulfilment of a specified condition.",
+    "quote": "court may order that the period specified in subsection (1) shall cease to run until— (a) the end of a specified period, or (b) the fulfilment of a specified condition"
+   },
+   {
+    "requirement": "The court may make an order ceasing the running of the discharge period only if it is satisfied that the bankrupt has failed or is failing to comply with an obligation under this Part.",
+    "quote": "only if satisfied that the bankrupt has failed or is failing to comply with an obligation under this Part"
+   },
+   {
+    "requirement": "For the purpose of an order ceasing the running of the discharge period, a condition includes a condition requiring that the court be satisfied of something.",
+    "quote": "“condition” includes a condition requiring that the court be satisfied of something"
+   },
+   {
+    "requirement": "Subsections (1) to (5) of section 279 do not apply to an individual who is made bankrupt on a petition under section 264(1)(d).",
+    "quote": "In the case of an individual who is made bankrupt on a petition under section 264(1)(d)— (a) subsections (1) to (5) shall not apply"
+   },
+   {
+    "requirement": "An individual made bankrupt on a petition under section 264(1)(d) is discharged from bankruptcy by an order of the court under section 280.",
+    "quote": "the bankrupt is discharged from bankruptcy by an order of the court under section 280"
+   },
+   {
+    "requirement": "Section 279 applies without prejudice to any power of the court to annul a bankruptcy order.",
+    "quote": "This section is without prejudice to any power of the court to annul a bankruptcy order"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period after which a bankrupt is discharged from bankruptcy, beginning with the date the bankruptcy commences",
+    "value": "one year",
+    "quote": "period of one year beginning with the date on which the bankruptcy commences"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A bankrupt is discharged from bankruptcy at the end of a one-year period beginning with the date on which the bankruptcy commences.",
+   "quote": "discharged from bankruptcy at the end of the period of one year beginning with the date on which the bankruptcy commences"
+  },
+  {
+   "requirement": "Upon the application of the official receiver or the trustee of a bankrupt’s estate, the court may order that the one-year discharge period cease to run until the end of a specified period or the fulfilment of a specified condition.",
+   "quote": "court may order that the period specified in subsection (1) shall cease to run until— (a) the end of a specified period, or (b) the fulfilment of a specified condition"
+  },
+  {
+   "requirement": "The court may make an order ceasing the running of the discharge period only if it is satisfied that the bankrupt has failed or is failing to comply with an obligation under this Part.",
+   "quote": "only if satisfied that the bankrupt has failed or is failing to comply with an obligation under this Part"
+  },
+  {
+   "requirement": "For the purpose of an order ceasing the running of the discharge period, a condition includes a condition requiring that the court be satisfied of something.",
+   "quote": "“condition” includes a condition requiring that the court be satisfied of something"
+  },
+  {
+   "requirement": "Subsections (1) to (5) of section 279 do not apply to an individual who is made bankrupt on a petition under section 264(1)(d).",
+   "quote": "In the case of an individual who is made bankrupt on a petition under section 264(1)(d)— (a) subsections (1) to (5) shall not apply"
+  },
+  {
+   "requirement": "An individual made bankrupt on a petition under section 264(1)(d) is discharged from bankruptcy by an order of the court under section 280.",
+   "quote": "the bankrupt is discharged from bankruptcy by an order of the court under section 280"
+  },
+  {
+   "requirement": "Section 279 applies without prejudice to any power of the court to annul a bankruptcy order.",
+   "quote": "This section is without prejudice to any power of the court to annul a bankruptcy order"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The period after which a bankrupt is discharged from bankruptcy, beginning with the date the bankruptcy commences",
+   "value": "one year",
+   "quote": "period of one year beginning with the date on which the bankruptcy commences"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

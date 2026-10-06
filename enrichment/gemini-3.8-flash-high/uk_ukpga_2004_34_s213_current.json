@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/2004/34/s213@current",
+ "section": "uk/ukpga/2004/34/s213",
+ "version": "current",
+ "source_sha256": "0a1c66de2012739e12f5a0c9bea7b536bf1a5670879c9fa62533c26078659636",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any tenancy deposit paid to a person in connection with a shorthold an assured tenancy must be dealt with in accordance with an authorised scheme starting from the time it is received.",
+    "quote": "must, as from the time when it is received, be dealt with in accordance with an authorised scheme"
+   },
+   {
+    "requirement": "No person is permitted to require the payment of a tenancy deposit in connection with a shorthold an assured tenancy that will not be subject to the requirement to be dealt with in accordance with an authorised scheme.",
+    "quote": "No person may require the payment of a tenancy deposit in connection with a shorthold an assured tenancy which is not to be subject to the requirement in subsection (1)"
+   },
+   {
+    "requirement": "A landlord who receives a tenancy deposit in connection with a shorthold an assured tenancy must comply with the initial requirements of an authorised scheme in relation to that deposit within 30 days beginning with the date it is received.",
+    "quote": "the initial requirements of an authorised scheme must be complied with by the landlord in relation to the deposit within the period of 30 days beginning with the date on which it is received"
+   },
+   {
+    "requirement": "The initial requirements of an authorised scheme are defined as those requirements imposed by the scheme that a landlord must comply with upon receiving a tenancy deposit.",
+    "quote": "“the initial requirements” of an authorised scheme are such requirements imposed by the scheme as fall to be complied with by a landlord on receiving such a tenancy deposit"
+   },
+   {
+    "requirement": "A landlord who has received a tenancy deposit must provide the tenant and any relevant person with such prescribed information regarding the authorised scheme, the landlord's compliance with its initial requirements, and the operation of statutory tenancy deposit provisions.",
+    "quote": "must give the tenant and any relevant person such information relating to— (a) the authorised scheme applying to the deposit, (b) compliance by the landlord with the initial requirements of the scheme in relation to the deposit, and (c) the operation of provisions of this Chapter in relation to the deposit, as may be prescribed"
+   },
+   {
+    "requirement": "The information that a landlord must provide regarding the deposit and scheme must be given to the tenant and any relevant person in the prescribed form or in a form substantially to the same effect.",
+    "quote": "must be given to the tenant and any relevant person— (a) in the prescribed form or in a form substantially to the same effect"
+   },
+   {
+    "requirement": "The information that a landlord must provide regarding the deposit and scheme must be given to the tenant and any relevant person within 30 days beginning with the date the landlord receives the deposit.",
+    "quote": "within the period of 30 days beginning with the date on which the deposit is received by the landlord"
+   },
+   {
+    "requirement": "No person may require a deposit that consists of property other than money in connection with a shorthold an assured tenancy.",
+    "quote": "No person may, in connection with a shorthold an assured tenancy, require a deposit which consists of property other than money"
+   },
+   {
+    "requirement": "For the prohibition on non-monetary deposits, a deposit is defined as a transfer of property intended to be held as security for the tenant's performance of obligations or discharge of liabilities arising under or in connection with the tenancy.",
+    "quote": "“deposit” means a transfer of property intended to be held (by the landlord or otherwise) as security for— (a) the performance of any obligations of the tenant, or (b) the discharge of any liability of his, arising under or in connection with the tenancy"
+   },
+   {
+    "requirement": "The provisions governing tenancy deposits under section 213 apply notwithstanding any agreement to the contrary.",
+    "quote": "The provisions of this section apply despite any agreement to the contrary"
+   },
+   {
+    "requirement": "The term prescribed means prescribed by an order made by the Secretary of State.",
+    "quote": "“prescribed” means prescribed by an order made by the Secretary of State"
+   },
+   {
+    "requirement": "The term property means moveable property.",
+    "quote": "“property” means moveable property"
+   },
+   {
+    "requirement": "A relevant person is defined as any person who paid the tenancy deposit on behalf of the tenant in accordance with arrangements made with the tenant.",
+    "quote": "“relevant person” means any person who, in accordance with arrangements made with the tenant, paid the deposit on behalf of the tenant"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period within which the landlord must comply with the initial requirements of an authorised scheme",
+    "value": "30 days",
+    "quote": "within the period of 30 days beginning with the date on which it is received"
+   },
+   {
+    "what": "Period within which the landlord must give the prescribed information to the tenant and any relevant person",
+    "value": "30 days",
+    "quote": "within the period of 30 days beginning with the date on which the deposit is received by the landlord"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Any tenancy deposit paid to a person in connection with a shorthold an assured tenancy must be dealt with in accordance with an authorised scheme starting from the time it is received.",
+   "quote": "must, as from the time when it is received, be dealt with in accordance with an authorised scheme"
+  },
+  {
+   "requirement": "No person is permitted to require the payment of a tenancy deposit in connection with a shorthold an assured tenancy that will not be subject to the requirement to be dealt with in accordance with an authorised scheme.",
+   "quote": "No person may require the payment of a tenancy deposit in connection with a shorthold an assured tenancy which is not to be subject to the requirement in subsection (1)"
+  },
+  {
+   "requirement": "A landlord who receives a tenancy deposit in connection with a shorthold an assured tenancy must comply with the initial requirements of an authorised scheme in relation to that deposit within 30 days beginning with the date it is received.",
+   "quote": "the initial requirements of an authorised scheme must be complied with by the landlord in relation to the deposit within the period of 30 days beginning with the date on which it is received"
+  },
+  {
+   "requirement": "The initial requirements of an authorised scheme are defined as those requirements imposed by the scheme that a landlord must comply with upon receiving a tenancy deposit.",
+   "quote": "“the initial requirements” of an authorised scheme are such requirements imposed by the scheme as fall to be complied with by a landlord on receiving such a tenancy deposit"
+  },
+  {
+   "requirement": "A landlord who has received a tenancy deposit must provide the tenant and any relevant person with such prescribed information regarding the authorised scheme, the landlord's compliance with its initial requirements, and the operation of statutory tenancy deposit provisions.",
+   "quote": "must give the tenant and any relevant person such information relating to— (a) the authorised scheme applying to the deposit, (b) compliance by the landlord with the initial requirements of the scheme in relation to the deposit, and (c) the operation of provisions of this Chapter in relation to the deposit, as may be prescribed"
+  },
+  {
+   "requirement": "The information that a landlord must provide regarding the deposit and scheme must be given to the tenant and any relevant person in the prescribed form or in a form substantially to the same effect.",
+   "quote": "must be given to the tenant and any relevant person— (a) in the prescribed form or in a form substantially to the same effect"
+  },
+  {
+   "requirement": "The information that a landlord must provide regarding the deposit and scheme must be given to the tenant and any relevant person within 30 days beginning with the date the landlord receives the deposit.",
+   "quote": "within the period of 30 days beginning with the date on which the deposit is received by the landlord"
+  },
+  {
+   "requirement": "No person may require a deposit that consists of property other than money in connection with a shorthold an assured tenancy.",
+   "quote": "No person may, in connection with a shorthold an assured tenancy, require a deposit which consists of property other than money"
+  },
+  {
+   "requirement": "For the prohibition on non-monetary deposits, a deposit is defined as a transfer of property intended to be held as security for the tenant's performance of obligations or discharge of liabilities arising under or in connection with the tenancy.",
+   "quote": "“deposit” means a transfer of property intended to be held (by the landlord or otherwise) as security for— (a) the performance of any obligations of the tenant, or (b) the discharge of any liability of his, arising under or in connection with the tenancy"
+  },
+  {
+   "requirement": "The provisions governing tenancy deposits under section 213 apply notwithstanding any agreement to the contrary.",
+   "quote": "The provisions of this section apply despite any agreement to the contrary"
+  },
+  {
+   "requirement": "The term prescribed means prescribed by an order made by the Secretary of State.",
+   "quote": "“prescribed” means prescribed by an order made by the Secretary of State"
+  },
+  {
+   "requirement": "The term property means moveable property.",
+   "quote": "“property” means moveable property"
+  },
+  {
+   "requirement": "A relevant person is defined as any person who paid the tenancy deposit on behalf of the tenant in accordance with arrangements made with the tenant.",
+   "quote": "“relevant person” means any person who, in accordance with arrangements made with the tenant, paid the deposit on behalf of the tenant"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period within which the landlord must comply with the initial requirements of an authorised scheme",
+   "value": "30 days",
+   "quote": "within the period of 30 days beginning with the date on which it is received"
+  },
+  {
+   "what": "Period within which the landlord must give the prescribed information to the tenant and any relevant person",
+   "value": "30 days",
+   "quote": "within the period of 30 days beginning with the date on which the deposit is received by the landlord"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

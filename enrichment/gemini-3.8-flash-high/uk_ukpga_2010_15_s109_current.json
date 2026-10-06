@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2010/15/s109@current",
+ "section": "uk/ukpga/2010/15/s109",
+ "version": "current",
+ "source_sha256": "d92e3617ff14276e5b4cf3b3c9300a46d362883903540caf038e70504cf36e76",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Anything done by a person in the course of that person's employment must be treated as also done by their employer.",
+    "quote": "Anything done by a person (A) in the course of A's employment must be treated as also done by the employer."
+   },
+   {
+    "requirement": "Anything done by an agent for a principal, with the authority of the principal, must be treated as also done by the principal.",
+    "quote": "Anything done by an agent for a principal, with the authority of the principal, must be treated as also done by the principal."
+   },
+   {
+    "requirement": "Liability applies regardless of whether the thing done by the employee or agent was done with the employer's or principal's knowledge or approval.",
+    "quote": "It does not matter whether that thing is done with the employer's or principal's knowledge or approval."
+   },
+   {
+    "requirement": "In proceedings against an employer in respect of anything alleged to have been done by an employee in the course of employment, it is a defence for the employer to show that they took all reasonable steps to prevent the employee from doing that thing or from doing anything of that description.",
+    "quote": "it is a defence for B to show that B took all reasonable steps to prevent A— (a) from doing that thing, or (b) from doing anything of that description."
+   },
+   {
+    "requirement": "The rules on employer and principal liability do not apply to offences under the Equality Act 2010, except for offences under Part 12 relating to disabled persons and transport.",
+    "quote": "This section does not apply to offences under this Act (other than offences under Part 12 (disabled persons: transport))."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Anything done by a person in the course of that person's employment must be treated as also done by their employer.",
+   "quote": "Anything done by a person (A) in the course of A's employment must be treated as also done by the employer."
+  },
+  {
+   "requirement": "Anything done by an agent for a principal, with the authority of the principal, must be treated as also done by the principal.",
+   "quote": "Anything done by an agent for a principal, with the authority of the principal, must be treated as also done by the principal."
+  },
+  {
+   "requirement": "Liability applies regardless of whether the thing done by the employee or agent was done with the employer's or principal's knowledge or approval.",
+   "quote": "It does not matter whether that thing is done with the employer's or principal's knowledge or approval."
+  },
+  {
+   "requirement": "In proceedings against an employer in respect of anything alleged to have been done by an employee in the course of employment, it is a defence for the employer to show that they took all reasonable steps to prevent the employee from doing that thing or from doing anything of that description.",
+   "quote": "it is a defence for B to show that B took all reasonable steps to prevent A— (a) from doing that thing, or (b) from doing anything of that description."
+  },
+  {
+   "requirement": "The rules on employer and principal liability do not apply to offences under the Equality Act 2010, except for offences under Part 12 relating to disabled persons and transport.",
+   "quote": "This section does not apply to offences under this Act (other than offences under Part 12 (disabled persons: transport))."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

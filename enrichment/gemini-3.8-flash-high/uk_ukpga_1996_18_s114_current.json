@@ -1,0 +1,88 @@
+{
+ "key": "uk/ukpga/1996/18/s114@current",
+ "section": "uk/ukpga/1996/18/s114",
+ "version": "current",
+ "source_sha256": "0f8721edcef302a6395d829ead073bec1de24e9a3876d79955a82aff0bc04111",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An order for reinstatement is defined as an order that the employer must treat the complainant in all respects as if the complainant had not been dismissed.",
+    "quote": "An order for reinstatement is an order that the employer shall treat the complainant in all respects as if he had not been dismissed."
+   },
+   {
+    "requirement": "When making an order for reinstatement, the tribunal must specify any amount payable by the employer in respect of any benefit which the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of reinstatement.",
+    "quote": "the tribunal shall specify— (a) any amount payable by the employer in respect of any benefit which the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of reinstatement"
+   },
+   {
+    "requirement": "When making an order for reinstatement, the tribunal must specify any rights and privileges (including seniority and pension rights) which must be restored to the employee.",
+    "quote": "the tribunal shall specify— (b) any rights and privileges (including seniority and pension rights) which must be restored to the employee"
+   },
+   {
+    "requirement": "When making an order for reinstatement, the tribunal must specify the date by which the employer must comply with the order.",
+    "quote": "the tribunal shall specify— (c) the date by which the order must be complied with."
+   },
+   {
+    "requirement": "If the complainant would have benefited from an improvement in terms and conditions of employment had the complainant not been dismissed, the order for reinstatement must require the complainant to be treated as having benefited from that improvement from the date on which the complainant would have done so but for being dismissed.",
+    "quote": "If the complainant would have benefited from an improvement in his terms and conditions of employment had he not been dismissed, an order for reinstatement shall require him to be treated as if he had benefited from that improvement from the date on which he would have done so but for being dismissed."
+   },
+   {
+    "requirement": "In calculating any amount payable by the employer under subsection (2)(a), the tribunal must take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of reinstatement by way of wages in lieu of notice or ex gratia payments paid by the employer.",
+    "quote": "In calculating for the purposes of subsection (2)(a) any amount payable by the employer, the tribunal shall take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of reinstatement by way of— (a) wages in lieu of notice or ex gratia payments paid by the employer"
+   },
+   {
+    "requirement": "In calculating any amount payable by the employer under subsection (2)(a), the tribunal must take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of reinstatement by way of remuneration paid in respect of employment with another employer, as well as such other benefits as the tribunal thinks appropriate in the circumstances.",
+    "quote": "the tribunal shall take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of reinstatement by way of— (b) remuneration paid in respect of employment with another employer, and such other benefits as the tribunal thinks appropriate in the circumstances."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period for which payable benefits (including arrears of pay) must be specified by the tribunal",
+    "value": "the period between the date of termination of employment and the date of reinstatement",
+    "quote": "the period between the date of termination of employment and the date of reinstatement"
+   },
+   {
+    "what": "the date by which the reinstatement order must be complied with",
+    "value": "the date by which the order must be complied with",
+    "quote": "the date by which the order must be complied with"
+   },
+   {
+    "what": "the date from which the complainant must be treated as having benefited from an improvement in terms and conditions of employment",
+    "value": "the date on which he would have done so but for being dismissed",
+    "quote": "the date on which he would have done so but for being dismissed"
+   },
+   {
+    "what": "the period during which sums received by the complainant must be taken into account to reduce the employer's liability",
+    "value": "the period between the date of termination of employment and the date of reinstatement",
+    "quote": "the period between the date of termination of employment and the date of reinstatement"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An order for reinstatement is defined as an order that the employer must treat the complainant in all respects as if the complainant had not been dismissed.",
+   "quote": "An order for reinstatement is an order that the employer shall treat the complainant in all respects as if he had not been dismissed."
+  },
+  {
+   "requirement": "When making an order for reinstatement, the tribunal must specify any amount payable by the employer in respect of any benefit which the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of reinstatement.",
+   "quote": "the tribunal shall specify— (a) any amount payable by the employer in respect of any benefit which the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of reinstatement"
+  },
+  {
+   "requirement": "If the complainant would have benefited from an improvement in terms and conditions of employment had the complainant not been dismissed, the order for reinstatement must require the complainant to be treated as having benefited from that improvement from the date on which the complainant would have done so but for being dismissed.",
+   "quote": "If the complainant would have benefited from an improvement in his terms and conditions of employment had he not been dismissed, an order for reinstatement shall require him to be treated as if he had benefited from that improvement from the date on which he would have done so but for being dismissed."
+  },
+  {
+   "requirement": "In calculating any amount payable by the employer under subsection (2)(a), the tribunal must take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of reinstatement by way of wages in lieu of notice or ex gratia payments paid by the employer.",
+   "quote": "In calculating for the purposes of subsection (2)(a) any amount payable by the employer, the tribunal shall take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of reinstatement by way of— (a) wages in lieu of notice or ex gratia payments paid by the employer"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 4,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

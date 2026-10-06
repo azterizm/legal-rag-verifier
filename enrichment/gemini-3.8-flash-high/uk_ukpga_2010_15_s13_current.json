@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2010/15/s13@current",
+ "section": "uk/ukpga/2010/15/s13",
+ "version": "current",
+ "source_sha256": "6e7793ee9dcb5d96dcfe862e38fde933aac6cc802ae7b34762aecc9183f2937c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person (A) discriminates against another person (B) if, because of a protected characteristic, person A treats person B less favourably than person A treats or would treat others.",
+    "quote": "A treats B less favourably than A treats or would treat others"
+   },
+   {
+    "requirement": "If the protected characteristic is age, person A does not discriminate against person B if person A can show that person A's treatment of person B is a proportionate means of achieving a legitimate aim.",
+    "quote": "proportionate means of achieving a legitimate aim"
+   },
+   {
+    "requirement": "If the protected characteristic is disability and person B is not a disabled person, person A does not discriminate against person B only because person A treats or would treat disabled persons more favourably than person A treats person B.",
+    "quote": "only because A treats or would treat disabled persons more favourably than A treats B"
+   },
+   {
+    "requirement": "If the protected characteristic is marriage and civil partnership, section 13 of the Equality Act 2010 applies to a contravention of Part 5 (work) only if the treatment is because person B is married or a civil partner.",
+    "quote": "only if the treatment is because it is B who is married or a civil partner"
+   },
+   {
+    "requirement": "If the protected characteristic is race, less favourable treatment includes segregating person B from others.",
+    "quote": "segregating B from others"
+   },
+   {
+    "requirement": "If the protected characteristic is sex, less favourable treatment of a woman includes less favourable treatment of her because she is breast-feeding.",
+    "quote": "less favourable treatment of her because she is breast-feeding"
+   },
+   {
+    "requirement": "If the protected characteristic is sex and person B is a man, no account is to be taken of special treatment afforded to a woman in connection with pregnancy, childbirth, or maternity.",
+    "quote": "no account is to be taken of special treatment afforded to a woman in connection with pregnancy , childbirth or maternity"
+   },
+   {
+    "requirement": "Section 13 of the Equality Act 2010 is subject to sections 17(6) and 18(7).",
+    "quote": "This section is subject to sections 17(6) and 18(7)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person (A) discriminates against another person (B) if, because of a protected characteristic, person A treats person B less favourably than person A treats or would treat others.",
+   "quote": "A treats B less favourably than A treats or would treat others"
+  },
+  {
+   "requirement": "If the protected characteristic is age, person A does not discriminate against person B if person A can show that person A's treatment of person B is a proportionate means of achieving a legitimate aim.",
+   "quote": "proportionate means of achieving a legitimate aim"
+  },
+  {
+   "requirement": "If the protected characteristic is disability and person B is not a disabled person, person A does not discriminate against person B only because person A treats or would treat disabled persons more favourably than person A treats person B.",
+   "quote": "only because A treats or would treat disabled persons more favourably than A treats B"
+  },
+  {
+   "requirement": "If the protected characteristic is marriage and civil partnership, section 13 of the Equality Act 2010 applies to a contravention of Part 5 (work) only if the treatment is because person B is married or a civil partner.",
+   "quote": "only if the treatment is because it is B who is married or a civil partner"
+  },
+  {
+   "requirement": "If the protected characteristic is race, less favourable treatment includes segregating person B from others.",
+   "quote": "segregating B from others"
+  },
+  {
+   "requirement": "If the protected characteristic is sex, less favourable treatment of a woman includes less favourable treatment of her because she is breast-feeding.",
+   "quote": "less favourable treatment of her because she is breast-feeding"
+  },
+  {
+   "requirement": "If the protected characteristic is sex and person B is a man, no account is to be taken of special treatment afforded to a woman in connection with pregnancy, childbirth, or maternity.",
+   "quote": "no account is to be taken of special treatment afforded to a woman in connection with pregnancy , childbirth or maternity"
+  },
+  {
+   "requirement": "Section 13 of the Equality Act 2010 is subject to sections 17(6) and 18(7).",
+   "quote": "This section is subject to sections 17(6) and 18(7)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

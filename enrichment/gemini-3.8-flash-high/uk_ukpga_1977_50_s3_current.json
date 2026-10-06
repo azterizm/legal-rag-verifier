@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1977/50/s3@current",
+ "section": "uk/ukpga/1977/50/s3",
+ "version": "current",
+ "source_sha256": "1a18ed20bffb5e8d9a51d15328da116d6f3da46ee0404be4d35e47b25eb0ce47",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The statutory rules apply between contracting parties where one party deals on the other party's written standard terms of business.",
+    "quote": "applies as between contracting parties where one of them deals ... on the other’s written standard terms of business"
+   },
+   {
+    "requirement": "Against a party dealing on written standard terms of business, the other party cannot by reference to any contract term exclude or restrict any liability for breach when themselves in breach of contract, except in so far as the term satisfies the requirement of reasonableness.",
+    "quote": "when himself in breach of contract, exclude or restrict any liability of his in respect of the breach"
+   },
+   {
+    "requirement": "Against a party dealing on written standard terms of business, the other party cannot by reference to any contract term claim to be entitled to render a contractual performance substantially different from that which was reasonably expected of them, except in so far as the term satisfies the requirement of reasonableness.",
+    "quote": "claim to be entitled— (i) to render a contractual performance substantially different from that which was reasonably expected of him"
+   },
+   {
+    "requirement": "Against a party dealing on written standard terms of business, the other party cannot by reference to any contract term claim to be entitled to render no performance at all in respect of the whole or any part of their contractual obligation, except in so far as the term satisfies the requirement of reasonableness.",
+    "quote": "in respect of the whole or any part of his contractual obligation, to render no performance at all"
+   },
+   {
+    "requirement": "The statutory restrictions on contract terms do not apply to a term in a consumer contract.",
+    "quote": "does not apply to a term in a consumer contract"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The statutory rules apply between contracting parties where one party deals on the other party's written standard terms of business.",
+   "quote": "applies as between contracting parties where one of them deals ... on the other’s written standard terms of business"
+  },
+  {
+   "requirement": "Against a party dealing on written standard terms of business, the other party cannot by reference to any contract term exclude or restrict any liability for breach when themselves in breach of contract, except in so far as the term satisfies the requirement of reasonableness.",
+   "quote": "when himself in breach of contract, exclude or restrict any liability of his in respect of the breach"
+  },
+  {
+   "requirement": "Against a party dealing on written standard terms of business, the other party cannot by reference to any contract term claim to be entitled to render a contractual performance substantially different from that which was reasonably expected of them, except in so far as the term satisfies the requirement of reasonableness.",
+   "quote": "claim to be entitled— (i) to render a contractual performance substantially different from that which was reasonably expected of him"
+  },
+  {
+   "requirement": "Against a party dealing on written standard terms of business, the other party cannot by reference to any contract term claim to be entitled to render no performance at all in respect of the whole or any part of their contractual obligation, except in so far as the term satisfies the requirement of reasonableness.",
+   "quote": "in respect of the whole or any part of his contractual obligation, to render no performance at all"
+  },
+  {
+   "requirement": "The statutory restrictions on contract terms do not apply to a term in a consumer contract.",
+   "quote": "does not apply to a term in a consumer contract"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

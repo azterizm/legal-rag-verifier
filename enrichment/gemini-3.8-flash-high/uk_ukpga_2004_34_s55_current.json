@@ -1,0 +1,123 @@
+{
+ "key": "uk/ukpga/2004/34/s55@current",
+ "section": "uk/ukpga/2004/34/s55",
+ "version": "current",
+ "source_sha256": "f7a31e2b79afd5b3d3affac2e0986a0e85112438355afffe722b9c79ab9d2705",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Part 2 provides for houses in multiple occupation (HMOs) to be licensed by local housing authorities where the HMOs are ones to which Part 2 applies and are required to be licensed under Part 2.",
+    "quote": "provides for HMOs to be licensed by local housing authorities"
+   },
+   {
+    "requirement": "Part 2 applies to any HMO in a local housing authority's district that falls within any prescribed description of HMO.",
+    "quote": "any HMO in the authority’s district which falls within any prescribed description of HMO"
+   },
+   {
+    "requirement": "Part 2 applies to any HMO in an area designated by a local housing authority under section 56 as subject to additional licensing if the HMO falls within any description specified in that designation.",
+    "quote": "if an area is for the time being designated by the authority under section 56 as subject to additional licensing, any HMO in that area which falls within any description of HMO specified in the designation"
+   },
+   {
+    "requirement": "The appropriate national authority has the power to prescribe descriptions of HMOs by order for the purposes of determining HMOs to which Part 2 applies.",
+    "quote": "The appropriate national authority may by order prescribe descriptions of HMOs for the purposes of subsection (2)(a)"
+   },
+   {
+    "requirement": "The appropriate national authority may exercise its order-making power so that Part 2 applies to all HMOs in the district of a local housing authority.",
+    "quote": "power conferred by subsection (3) may be exercised in such a way that this Part applies to all HMOs in the district of a local housing authority"
+   },
+   {
+    "requirement": "Every local housing authority must make the arrangements necessary to secure the effective implementation in their district of the licensing regime under Part 2.",
+    "quote": "to make such arrangements as are necessary to secure the effective implementation in their district of the licensing regime provided for by this Part"
+   },
+   {
+    "requirement": "Every local housing authority must ensure that all licence applications and other determinations falling to them under Part 2 are decided within a reasonable time.",
+    "quote": "to ensure that all applications for licences and other issues falling to be determined by them under this Part are determined within a reasonable time"
+   },
+   {
+    "requirement": "Every local housing authority must satisfy themselves as soon as is reasonably practicable that there are no Part 1 functions that ought to be exercised by them in relation to premises for which licence applications are made.",
+    "quote": "to satisfy themselves, as soon as is reasonably practicable, that there are no Part 1 functions that ought to be exercised by them in relation to the premises in respect of which such applications are made"
+   },
+   {
+    "requirement": "For the purposes of the duty regarding licence application premises, a Part 1 function is defined as any duty under section 5 to take any course of action to which that section applies or any power to take any course of action to which section 7 applies.",
+    "quote": "“Part 1 function” means any duty under section 5 to take any course of action to which that section applies or any power to take any course of action to which section 7 applies"
+   },
+   {
+    "requirement": "A local housing authority may take any steps they deem appropriate, whether involving an inspection or not, to fulfill their duty to satisfy themselves regarding Part 1 functions for the premises in question.",
+    "quote": "the authority may take such steps as they consider appropriate (whether or not involving an inspection) to comply with their duty under subsection (5)(c)"
+   },
+   {
+    "requirement": "A local housing authority must comply with their duty to satisfy themselves regarding Part 1 functions for licence application premises within 5 years from the date of the licence application.",
+    "quote": "they must in any event comply with it within the period of 5 years beginning with the date of the application for a licence"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum period within which a local housing authority must comply with its duty to satisfy itself that there are no Part 1 functions to exercise in respect of premises for which a licence application is made",
+    "value": "5 years",
+    "quote": "period of 5 years beginning with the date of the application for a licence"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Part 2 provides for houses in multiple occupation (HMOs) to be licensed by local housing authorities where the HMOs are ones to which Part 2 applies and are required to be licensed under Part 2.",
+   "quote": "provides for HMOs to be licensed by local housing authorities"
+  },
+  {
+   "requirement": "Part 2 applies to any HMO in a local housing authority's district that falls within any prescribed description of HMO.",
+   "quote": "any HMO in the authority’s district which falls within any prescribed description of HMO"
+  },
+  {
+   "requirement": "Part 2 applies to any HMO in an area designated by a local housing authority under section 56 as subject to additional licensing if the HMO falls within any description specified in that designation.",
+   "quote": "if an area is for the time being designated by the authority under section 56 as subject to additional licensing, any HMO in that area which falls within any description of HMO specified in the designation"
+  },
+  {
+   "requirement": "The appropriate national authority has the power to prescribe descriptions of HMOs by order for the purposes of determining HMOs to which Part 2 applies.",
+   "quote": "The appropriate national authority may by order prescribe descriptions of HMOs for the purposes of subsection (2)(a)"
+  },
+  {
+   "requirement": "The appropriate national authority may exercise its order-making power so that Part 2 applies to all HMOs in the district of a local housing authority.",
+   "quote": "power conferred by subsection (3) may be exercised in such a way that this Part applies to all HMOs in the district of a local housing authority"
+  },
+  {
+   "requirement": "Every local housing authority must make the arrangements necessary to secure the effective implementation in their district of the licensing regime under Part 2.",
+   "quote": "to make such arrangements as are necessary to secure the effective implementation in their district of the licensing regime provided for by this Part"
+  },
+  {
+   "requirement": "Every local housing authority must ensure that all licence applications and other determinations falling to them under Part 2 are decided within a reasonable time.",
+   "quote": "to ensure that all applications for licences and other issues falling to be determined by them under this Part are determined within a reasonable time"
+  },
+  {
+   "requirement": "Every local housing authority must satisfy themselves as soon as is reasonably practicable that there are no Part 1 functions that ought to be exercised by them in relation to premises for which licence applications are made.",
+   "quote": "to satisfy themselves, as soon as is reasonably practicable, that there are no Part 1 functions that ought to be exercised by them in relation to the premises in respect of which such applications are made"
+  },
+  {
+   "requirement": "For the purposes of the duty regarding licence application premises, a Part 1 function is defined as any duty under section 5 to take any course of action to which that section applies or any power to take any course of action to which section 7 applies.",
+   "quote": "“Part 1 function” means any duty under section 5 to take any course of action to which that section applies or any power to take any course of action to which section 7 applies"
+  },
+  {
+   "requirement": "A local housing authority may take any steps they deem appropriate, whether involving an inspection or not, to fulfill their duty to satisfy themselves regarding Part 1 functions for the premises in question.",
+   "quote": "the authority may take such steps as they consider appropriate (whether or not involving an inspection) to comply with their duty under subsection (5)(c)"
+  },
+  {
+   "requirement": "A local housing authority must comply with their duty to satisfy themselves regarding Part 1 functions for licence application premises within 5 years from the date of the licence application.",
+   "quote": "they must in any event comply with it within the period of 5 years beginning with the date of the application for a licence"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum period within which a local housing authority must comply with its duty to satisfy itself that there are no Part 1 functions to exercise in respect of premises for which a licence application is made",
+   "value": "5 years",
+   "quote": "period of 5 years beginning with the date of the application for a licence"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

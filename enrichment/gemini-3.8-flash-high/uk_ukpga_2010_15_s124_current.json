@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2010/15/s124@current",
+ "section": "uk/ukpga/2010/15/s124",
+ "version": "current",
+ "source_sha256": "e10bdedf753d316d25b20c17743a75db868e3aaeb604e08d2e09ecd85f752964",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 124 of the Equality Act 2010 applies if an employment tribunal finds that there has been a contravention of a provision referred to in section 120(1).",
+    "quote": "applies if an employment tribunal finds that there has been a contravention of a provision referred to in section 120(1)"
+   },
+   {
+    "requirement": "An employment tribunal may make a declaration as to the rights of the complainant and the respondent in relation to the matters to which the proceedings relate.",
+    "quote": "make a declaration as to the rights of the complainant and the respondent in relation to the matters to which the proceedings relate"
+   },
+   {
+    "requirement": "An employment tribunal may order the respondent to pay compensation to the complainant.",
+    "quote": "order the respondent to pay compensation to the complainant"
+   },
+   {
+    "requirement": "An employment tribunal may make an appropriate recommendation.",
+    "quote": "make an appropriate recommendation"
+   },
+   {
+    "requirement": "An appropriate recommendation is defined as a recommendation that within a specified period the respondent takes specified steps for the purpose of obviating or reducing the adverse effect on the complainant of any matter to which the proceedings relate.",
+    "quote": "recommendation that within a specified period the respondent takes specified steps for the purpose of obviating or reducing the adverse effecton the complainant of any matter to which the proceedings relate"
+   },
+   {
+    "requirement": "If an employment tribunal finds that a contravention is established under section 19 or 19A but is satisfied that the provision, criterion or practice was not applied with the intention of discriminating against the complainant, the tribunal must not make an order for compensation under subsection (2)(b) unless it first considers whether to make a declaration or an appropriate recommendation.",
+    "quote": "must not make an order under subsection (2)(b) unless it first considers whether to act under subsection (2)(a) or (c)"
+   },
+   {
+    "requirement": "The amount of compensation which an employment tribunal may award under subsection (2)(b) corresponds to the amount that could be awarded by the county court or the sheriff under section 119.",
+    "quote": "corresponds to the amount which could be awarded by the county court or the sheriff under section 119"
+   },
+   {
+    "requirement": "If a respondent fails without reasonable excuse to comply with an appropriate recommendation, the employment tribunal may increase the amount of compensation to be paid if an order for compensation was made under subsection (2)(b).",
+    "quote": "if an order was made under subsection (2)(b), increase the amount of compensation to be paid"
+   },
+   {
+    "requirement": "If a respondent fails without reasonable excuse to comply with an appropriate recommendation, the employment tribunal may order the respondent to pay compensation if no compensation order was made under subsection (2)(b).",
+    "quote": "if no such order was made, make one"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 124 of the Equality Act 2010 applies if an employment tribunal finds that there has been a contravention of a provision referred to in section 120(1).",
+   "quote": "applies if an employment tribunal finds that there has been a contravention of a provision referred to in section 120(1)"
+  },
+  {
+   "requirement": "An employment tribunal may make a declaration as to the rights of the complainant and the respondent in relation to the matters to which the proceedings relate.",
+   "quote": "make a declaration as to the rights of the complainant and the respondent in relation to the matters to which the proceedings relate"
+  },
+  {
+   "requirement": "An employment tribunal may order the respondent to pay compensation to the complainant.",
+   "quote": "order the respondent to pay compensation to the complainant"
+  },
+  {
+   "requirement": "An employment tribunal may make an appropriate recommendation.",
+   "quote": "make an appropriate recommendation"
+  },
+  {
+   "requirement": "An appropriate recommendation is defined as a recommendation that within a specified period the respondent takes specified steps for the purpose of obviating or reducing the adverse effect on the complainant of any matter to which the proceedings relate.",
+   "quote": "recommendation that within a specified period the respondent takes specified steps for the purpose of obviating or reducing the adverse effecton the complainant of any matter to which the proceedings relate"
+  },
+  {
+   "requirement": "If an employment tribunal finds that a contravention is established under section 19 or 19A but is satisfied that the provision, criterion or practice was not applied with the intention of discriminating against the complainant, the tribunal must not make an order for compensation under subsection (2)(b) unless it first considers whether to make a declaration or an appropriate recommendation.",
+   "quote": "must not make an order under subsection (2)(b) unless it first considers whether to act under subsection (2)(a) or (c)"
+  },
+  {
+   "requirement": "The amount of compensation which an employment tribunal may award under subsection (2)(b) corresponds to the amount that could be awarded by the county court or the sheriff under section 119.",
+   "quote": "corresponds to the amount which could be awarded by the county court or the sheriff under section 119"
+  },
+  {
+   "requirement": "If a respondent fails without reasonable excuse to comply with an appropriate recommendation, the employment tribunal may increase the amount of compensation to be paid if an order for compensation was made under subsection (2)(b).",
+   "quote": "if an order was made under subsection (2)(b), increase the amount of compensation to be paid"
+  },
+  {
+   "requirement": "If a respondent fails without reasonable excuse to comply with an appropriate recommendation, the employment tribunal may order the respondent to pay compensation if no compensation order was made under subsection (2)(b).",
+   "quote": "if no such order was made, make one"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

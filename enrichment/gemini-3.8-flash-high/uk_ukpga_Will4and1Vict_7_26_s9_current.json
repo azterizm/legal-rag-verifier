@@ -1,0 +1,106 @@
+{
+ "key": "uk/ukpga/Will4and1Vict/7/26/s9@current",
+ "section": "uk/ukpga/Will4and1Vict/7/26/s9",
+ "version": "current",
+ "source_sha256": "822c8db6b8b758eed4bc54c134935828e5652d4a93c2d504a56d956476b645e3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A will is not valid unless it is executed in accordance with the statutory requirements, but no particular form of attestation is required for it.",
+    "quote": "no form of attestation shall be necessary"
+   },
+   {
+    "requirement": "A will must be in writing, and signed either by the testator or by another person in the testator's presence and at the testator's direction.",
+    "quote": "it is in writing, and signed by the testator, or by some other person in his presence and by his direction"
+   },
+   {
+    "requirement": "A will must demonstrate that the testator intended by their signature to give effect to the will.",
+    "quote": "it appears that the testator intended by his signature to give effect to the will"
+   },
+   {
+    "requirement": "The testator must make or acknowledge their signature in the presence of two or more witnesses who are present at the same time.",
+    "quote": "the signature is made or acknowledged by the testator in the presence of two or more witnesses present at the same time"
+   },
+   {
+    "requirement": "Each witness must either attest and sign the will, or acknowledge their signature, in the presence of the testator.",
+    "quote": "each witness either— (i) attests and signs the will; or (ii) acknowledges his signature, in the presence of the testator"
+   },
+   {
+    "requirement": "A witness attesting and signing a will, or acknowledging their signature, is not required to do so in the presence of any other witness.",
+    "quote": "not necessarily in the presence of any other witness"
+   },
+   {
+    "requirement": "For wills made on or after 31 January 2020 and on or before 31 January 2024, witness and testator presence under paragraphs (1)(c) and (1)(d) includes presence by means of videoconference or other visual transmission.",
+    "quote": "“presence” includes presence by means of videoconference or other visual transmission"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of witnesses required to be present at the same time when the testator makes or acknowledges their signature",
+    "value": "two",
+    "quote": "two or more witnesses present at the same time"
+   },
+   {
+    "what": "start date of the period during which wills made may satisfy presence by videoconference or other visual transmission",
+    "value": "31 January 2020",
+    "quote": "on or after 31 January 2020"
+   },
+   {
+    "what": "end date of the period during which wills made may satisfy presence by videoconference or other visual transmission",
+    "value": "31 January 2024",
+    "quote": "on or before 31 January 2024"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A will is not valid unless it is executed in accordance with the statutory requirements, but no particular form of attestation is required for it.",
+   "quote": "no form of attestation shall be necessary"
+  },
+  {
+   "requirement": "A will must be in writing, and signed either by the testator or by another person in the testator's presence and at the testator's direction.",
+   "quote": "it is in writing, and signed by the testator, or by some other person in his presence and by his direction"
+  },
+  {
+   "requirement": "A will must demonstrate that the testator intended by their signature to give effect to the will.",
+   "quote": "it appears that the testator intended by his signature to give effect to the will"
+  },
+  {
+   "requirement": "The testator must make or acknowledge their signature in the presence of two or more witnesses who are present at the same time.",
+   "quote": "the signature is made or acknowledged by the testator in the presence of two or more witnesses present at the same time"
+  },
+  {
+   "requirement": "Each witness must either attest and sign the will, or acknowledge their signature, in the presence of the testator.",
+   "quote": "each witness either— (i) attests and signs the will; or (ii) acknowledges his signature, in the presence of the testator"
+  },
+  {
+   "requirement": "A witness attesting and signing a will, or acknowledging their signature, is not required to do so in the presence of any other witness.",
+   "quote": "not necessarily in the presence of any other witness"
+  },
+  {
+   "requirement": "For wills made on or after 31 January 2020 and on or before 31 January 2024, witness and testator presence under paragraphs (1)(c) and (1)(d) includes presence by means of videoconference or other visual transmission.",
+   "quote": "“presence” includes presence by means of videoconference or other visual transmission"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "start date of the period during which wills made may satisfy presence by videoconference or other visual transmission",
+   "value": "31 January 2020",
+   "quote": "on or after 31 January 2020"
+  },
+  {
+   "what": "end date of the period during which wills made may satisfy presence by videoconference or other visual transmission",
+   "value": "31 January 2024",
+   "quote": "on or before 31 January 2024"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

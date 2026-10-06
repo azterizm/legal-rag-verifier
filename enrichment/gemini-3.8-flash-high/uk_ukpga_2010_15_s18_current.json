@@ -1,0 +1,139 @@
+{
+ "key": "uk/ukpga/2010/15/s18@current",
+ "section": "uk/ukpga/2010/15/s18",
+ "version": "current",
+ "source_sha256": "652bc8d43b44db8737e2789a02dd32815b1396fcc5829a6da15f1c04871540ca",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 18 of the Equality Act 2010 applies for the purposes of the application of Part 5 (work) to the protected characteristic of pregnancy and maternity.",
+    "quote": "has effect for the purposes of the application of Part 5 (work) to the protected characteristic of pregnancy and maternity"
+   },
+   {
+    "requirement": "A person discriminates against a woman if, in or after the protected period in relation to a pregnancy of hers, that person treats her unfavourably because of the pregnancy.",
+    "quote": "A treats her unfavourably — (a) because of the pregnancy"
+   },
+   {
+    "requirement": "A person discriminates against a woman if, in or after the protected period in relation to a pregnancy of hers, that person treats her unfavourably because of illness suffered by her in that protected period as a result of the pregnancy.",
+    "quote": "because of illness suffered by her in that protected period as a result of the pregnancy"
+   },
+   {
+    "requirement": "A person discriminates against a woman if that person treats her unfavourably because she is on compulsory maternity leave or on equivalent compulsory maternity leave.",
+    "quote": "A treats her unfavourably because she is on compulsory maternity leave or on equivalent compulsory maternity leave"
+   },
+   {
+    "requirement": "A person discriminates against a woman if that person treats her unfavourably because she is exercising or seeking to exercise, or has exercised or sought to exercise, the right to ordinary or additional maternity leave or a right to equivalent maternity leave.",
+    "quote": "A treats her unfavourably because she is exercising or seeking to exercise, or has exercised or sought to exercise, the right to ordinary or additional maternity leave or a right to equivalent maternity leave"
+   },
+   {
+    "requirement": "The protected period in relation to a woman's pregnancy begins when the pregnancy begins.",
+    "quote": "begins when the pregnancy begins"
+   },
+   {
+    "requirement": "If a woman has the right to ordinary and additional maternity leave, her protected period ends at the end of the additional maternity leave period or, if earlier, when she returns to work after the pregnancy.",
+    "quote": "at the end of the additional maternity leave period or (if earlier) when she returns to work after the pregnancy"
+   },
+   {
+    "requirement": "If a woman does not have the right to ordinary and additional maternity leave but has a right to equivalent maternity leave, her protected period ends at the end of that leave period or, if earlier, when she returns to work after the pregnancy.",
+    "quote": "at the end of that leave period, or (if earlier) when she returns to work after the pregnancy"
+   },
+   {
+    "requirement": "If a woman does not have the right to ordinary and additional maternity leave or a right to equivalent maternity leave, her protected period ends at the end of the period of 2 weeks beginning with the end of the pregnancy.",
+    "quote": "at the end of the period of 2 weeks beginning with the end of the pregnancy"
+   },
+   {
+    "requirement": "For the purposes of section 18 of the Equality Act 2010, equivalent compulsory maternity leave means a period of leave that is of a substantially similar nature (regardless of its length) to compulsory maternity leave and is provided for under a statutory or contractual scheme.",
+    "quote": "which is of a substantially similar nature (regardless of its length) to compulsory maternity leave, andwhich is provided for under a statutory or contractual scheme"
+   },
+   {
+    "requirement": "For the purposes of section 18 of the Equality Act 2010, equivalent maternity leave means a period of leave that is of a substantially similar nature (regardless of its length) to ordinary or additional maternity leave or both and is provided for under a statutory or contractual scheme.",
+    "quote": "which is of a substantially similar nature (regardless of its length) to ordinary or additional maternity leave or both, andwhich is provided for under a statutory or contractual scheme"
+   },
+   {
+    "requirement": "Section 13 of the Equality Act 2010, so far as relating to sex discrimination, does not apply to treatment of a woman in so far as the treatment is in or after the protected period in relation to her and is because of the pregnancy or illness suffered by her in that protected period as a result of the pregnancy.",
+    "quote": "Section 13, so far as relating to sex discrimination, does not apply to treatment of a woman in so far as— (a) it is in or after the protected period in relation to her and is for a reason mentioned in paragraph (a) or (b) of subsection (2)"
+   },
+   {
+    "requirement": "Section 13 of the Equality Act 2010, so far as relating to sex discrimination, does not apply to treatment of a woman in so far as the treatment is because she is on compulsory or equivalent compulsory maternity leave, or because she is exercising, seeking to exercise, has exercised, or has sought to exercise the right to ordinary, additional, or equivalent maternity leave.",
+    "quote": "it is for a reason mentioned in subsection (3) or (4)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period following the end of pregnancy after which the protected period ends for a woman who does not have the right to ordinary and additional maternity leave or equivalent maternity leave",
+    "value": "2 weeks",
+    "quote": "period of 2 weeks beginning with the end of the pregnancy"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 18 of the Equality Act 2010 applies for the purposes of the application of Part 5 (work) to the protected characteristic of pregnancy and maternity.",
+   "quote": "has effect for the purposes of the application of Part 5 (work) to the protected characteristic of pregnancy and maternity"
+  },
+  {
+   "requirement": "A person discriminates against a woman if, in or after the protected period in relation to a pregnancy of hers, that person treats her unfavourably because of the pregnancy.",
+   "quote": "A treats her unfavourably — (a) because of the pregnancy"
+  },
+  {
+   "requirement": "A person discriminates against a woman if, in or after the protected period in relation to a pregnancy of hers, that person treats her unfavourably because of illness suffered by her in that protected period as a result of the pregnancy.",
+   "quote": "because of illness suffered by her in that protected period as a result of the pregnancy"
+  },
+  {
+   "requirement": "A person discriminates against a woman if that person treats her unfavourably because she is on compulsory maternity leave or on equivalent compulsory maternity leave.",
+   "quote": "A treats her unfavourably because she is on compulsory maternity leave or on equivalent compulsory maternity leave"
+  },
+  {
+   "requirement": "A person discriminates against a woman if that person treats her unfavourably because she is exercising or seeking to exercise, or has exercised or sought to exercise, the right to ordinary or additional maternity leave or a right to equivalent maternity leave.",
+   "quote": "A treats her unfavourably because she is exercising or seeking to exercise, or has exercised or sought to exercise, the right to ordinary or additional maternity leave or a right to equivalent maternity leave"
+  },
+  {
+   "requirement": "The protected period in relation to a woman's pregnancy begins when the pregnancy begins.",
+   "quote": "begins when the pregnancy begins"
+  },
+  {
+   "requirement": "If a woman has the right to ordinary and additional maternity leave, her protected period ends at the end of the additional maternity leave period or, if earlier, when she returns to work after the pregnancy.",
+   "quote": "at the end of the additional maternity leave period or (if earlier) when she returns to work after the pregnancy"
+  },
+  {
+   "requirement": "If a woman does not have the right to ordinary and additional maternity leave but has a right to equivalent maternity leave, her protected period ends at the end of that leave period or, if earlier, when she returns to work after the pregnancy.",
+   "quote": "at the end of that leave period, or (if earlier) when she returns to work after the pregnancy"
+  },
+  {
+   "requirement": "If a woman does not have the right to ordinary and additional maternity leave or a right to equivalent maternity leave, her protected period ends at the end of the period of 2 weeks beginning with the end of the pregnancy.",
+   "quote": "at the end of the period of 2 weeks beginning with the end of the pregnancy"
+  },
+  {
+   "requirement": "For the purposes of section 18 of the Equality Act 2010, equivalent compulsory maternity leave means a period of leave that is of a substantially similar nature (regardless of its length) to compulsory maternity leave and is provided for under a statutory or contractual scheme.",
+   "quote": "which is of a substantially similar nature (regardless of its length) to compulsory maternity leave, andwhich is provided for under a statutory or contractual scheme"
+  },
+  {
+   "requirement": "For the purposes of section 18 of the Equality Act 2010, equivalent maternity leave means a period of leave that is of a substantially similar nature (regardless of its length) to ordinary or additional maternity leave or both and is provided for under a statutory or contractual scheme.",
+   "quote": "which is of a substantially similar nature (regardless of its length) to ordinary or additional maternity leave or both, andwhich is provided for under a statutory or contractual scheme"
+  },
+  {
+   "requirement": "Section 13 of the Equality Act 2010, so far as relating to sex discrimination, does not apply to treatment of a woman in so far as the treatment is in or after the protected period in relation to her and is because of the pregnancy or illness suffered by her in that protected period as a result of the pregnancy.",
+   "quote": "Section 13, so far as relating to sex discrimination, does not apply to treatment of a woman in so far as— (a) it is in or after the protected period in relation to her and is for a reason mentioned in paragraph (a) or (b) of subsection (2)"
+  },
+  {
+   "requirement": "Section 13 of the Equality Act 2010, so far as relating to sex discrimination, does not apply to treatment of a woman in so far as the treatment is because she is on compulsory or equivalent compulsory maternity leave, or because she is exercising, seeking to exercise, has exercised, or has sought to exercise the right to ordinary, additional, or equivalent maternity leave.",
+   "quote": "it is for a reason mentioned in subsection (3) or (4)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The period following the end of pregnancy after which the protected period ends for a woman who does not have the right to ordinary and additional maternity leave or equivalent maternity leave",
+   "value": "2 weeks",
+   "quote": "period of 2 weeks beginning with the end of the pregnancy"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

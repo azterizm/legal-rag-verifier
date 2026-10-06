@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2006/46/s678@current",
+ "section": "uk/ukpga/2006/46/s678",
+ "version": "current",
+ "source_sha256": "b8f43a513fc3b6242d52b126e3ee8fa0d917487b0b104268f008d51e16dac022",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a person is acquiring or proposing to acquire shares in a public company, it is unlawful for that public company or any of its subsidiary companies to directly or indirectly give financial assistance for the purpose of the acquisition before or at the same time as the acquisition takes place.",
+    "quote": "it is not lawful for that company, or a company that is a subsidiary of that company, to give financial assistance directly or indirectly for the purpose of the acquisition before or at the same time as the acquisition takes place"
+   },
+   {
+    "requirement": "A company is not prohibited under section 678(1) from giving financial assistance for the acquisition of shares in itself or its holding company if the company's principal purpose in giving the assistance is not to give it for the purpose of any such acquisition, and the assistance is given in good faith in the interests of the company.",
+    "quote": "the company's principal purpose in giving the assistance is not to give it for the purpose of any such acquisition"
+   },
+   {
+    "requirement": "A company is not prohibited under section 678(1) from giving financial assistance for the acquisition of shares in itself or its holding company if the giving of the assistance for that purpose is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company.",
+    "quote": "the giving of the assistance for that purpose is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company"
+   },
+   {
+    "requirement": "Where a person has acquired shares in a company and a liability has been incurred by that or another person for the purpose of the acquisition, it is unlawful for that company or any of its subsidiary companies to directly or indirectly give financial assistance for the purpose of reducing or discharging that liability if the company whose shares were acquired is a public company at the time the assistance is given.",
+    "quote": "it is not lawful for that company, or a company that is a subsidiary of that company, to give financial assistance directly or indirectly for the purpose of reducing or discharging the liability if, at the time the assistance is given, the company in which the shares were acquired is a public company"
+   },
+   {
+    "requirement": "A company is not prohibited under section 678(3) from giving financial assistance if the company's principal purpose in giving the assistance is not to reduce or discharge any liability incurred by a person for the purpose of the acquisition of shares in the company or its holding company, and the assistance is given in good faith in the interests of the company.",
+    "quote": "the company's principal purpose in giving the assistance is not to reduce or discharge any liability incurred by a person for the purpose of the acquisition of shares in the company or its holding company"
+   },
+   {
+    "requirement": "A company is not prohibited under section 678(3) from giving financial assistance if the reduction or discharge of any liability incurred for the acquisition of shares in the company or its holding company is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company.",
+    "quote": "the reduction or discharge of any such liability is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company"
+   },
+   {
+    "requirement": "Section 678 applies subject to the unconditional and conditional exceptions to prohibition contained in sections 681 and 682.",
+    "quote": "This section has effect subject to sections 681 and 682 (unconditional and conditional exceptions to prohibition)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where a person is acquiring or proposing to acquire shares in a public company, it is unlawful for that public company or any of its subsidiary companies to directly or indirectly give financial assistance for the purpose of the acquisition before or at the same time as the acquisition takes place.",
+   "quote": "it is not lawful for that company, or a company that is a subsidiary of that company, to give financial assistance directly or indirectly for the purpose of the acquisition before or at the same time as the acquisition takes place"
+  },
+  {
+   "requirement": "A company is not prohibited under section 678(1) from giving financial assistance for the acquisition of shares in itself or its holding company if the company's principal purpose in giving the assistance is not to give it for the purpose of any such acquisition, and the assistance is given in good faith in the interests of the company.",
+   "quote": "the company's principal purpose in giving the assistance is not to give it for the purpose of any such acquisition"
+  },
+  {
+   "requirement": "A company is not prohibited under section 678(1) from giving financial assistance for the acquisition of shares in itself or its holding company if the giving of the assistance for that purpose is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company.",
+   "quote": "the giving of the assistance for that purpose is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company"
+  },
+  {
+   "requirement": "Where a person has acquired shares in a company and a liability has been incurred by that or another person for the purpose of the acquisition, it is unlawful for that company or any of its subsidiary companies to directly or indirectly give financial assistance for the purpose of reducing or discharging that liability if the company whose shares were acquired is a public company at the time the assistance is given.",
+   "quote": "it is not lawful for that company, or a company that is a subsidiary of that company, to give financial assistance directly or indirectly for the purpose of reducing or discharging the liability if, at the time the assistance is given, the company in which the shares were acquired is a public company"
+  },
+  {
+   "requirement": "A company is not prohibited under section 678(3) from giving financial assistance if the company's principal purpose in giving the assistance is not to reduce or discharge any liability incurred by a person for the purpose of the acquisition of shares in the company or its holding company, and the assistance is given in good faith in the interests of the company.",
+   "quote": "the company's principal purpose in giving the assistance is not to reduce or discharge any liability incurred by a person for the purpose of the acquisition of shares in the company or its holding company"
+  },
+  {
+   "requirement": "A company is not prohibited under section 678(3) from giving financial assistance if the reduction or discharge of any liability incurred for the acquisition of shares in the company or its holding company is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company.",
+   "quote": "the reduction or discharge of any such liability is only an incidental part of some larger purpose of the company, and the assistance is given in good faith in the interests of the company"
+  },
+  {
+   "requirement": "Section 678 applies subject to the unconditional and conditional exceptions to prohibition contained in sections 681 and 682.",
+   "quote": "This section has effect subject to sections 681 and 682 (unconditional and conditional exceptions to prohibition)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

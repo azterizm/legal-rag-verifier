@@ -1,0 +1,187 @@
+{
+ "key": "uk/ukpga/1985/70/s11@current",
+ "section": "uk/ukpga/1985/70/s11",
+ "version": "current",
+ "source_sha256": "741b7115f907706037ec0711f4e4352fadaff56c3d11c668f2360f0abd85f84f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In a lease to which section 11 applies, a covenant is implied by the lessor to keep in repair the structure and exterior of the dwelling-house, including drains, gutters, and external pipes.",
+    "quote": "to keep in repair the structure and exterior of the dwelling-house (including drains, gutters and external pipes)"
+   },
+   {
+    "requirement": "In a lease to which section 11 applies, a covenant is implied by the lessor to keep in repair and proper working order the installations in the dwelling-house for the supply of water, gas, and electricity, and for sanitation (including basins, sinks, baths, and sanitary conveniences, but excluding other fixtures, fittings, and appliances for making use of the supply of water, gas, or electricity).",
+    "quote": "to keep in repair and proper working order the installations in the dwelling-house for the supply of water, gas and electricity and for sanitation"
+   },
+   {
+    "requirement": "In a lease to which section 11 applies, a covenant is implied by the lessor to keep in repair and proper working order the installations in the dwelling-house for space heating and heating water.",
+    "quote": "to keep in repair and proper working order the installations in the dwelling-house for space heating and heating water"
+   },
+   {
+    "requirement": "If the lease is of a dwelling-house forming part only of a building, the lessor's repairing covenant regarding the dwelling-house's structure and exterior applies to any part of the building in which the lessor has an estate or interest, subject to subsection (1B).",
+    "quote": "the reference in paragraph (a) of that subsection to the dwelling-house included a reference to any part of the building in which the lessor has an estate or interest"
+   },
+   {
+    "requirement": "If the lease is of a dwelling-house forming part only of a building, the lessor's repairing covenant regarding installations applies to any installation serving the dwelling-house directly or indirectly that forms part of any part of a building in which the lessor has an estate or interest, subject to subsection (1B).",
+    "quote": "forms part of any part of a building in which the lessor has an estate or interest"
+   },
+   {
+    "requirement": "If the lease is of a dwelling-house forming part only of a building, the lessor's repairing covenant regarding installations applies to any installation serving the dwelling-house directly or indirectly that is owned by the lessor or under the lessor's control, subject to subsection (1B).",
+    "quote": "is owned by the lessor or under his control"
+   },
+   {
+    "requirement": "The lessor is not required under subsection (1A) to carry out works or repairs unless the disrepair or failure to maintain in working order affects the lessee’s enjoyment of the dwelling-house or of any common parts (as defined in section 60(1) of the Landlord and Tenant Act 1987) that the lessee is entitled to use.",
+    "quote": "unless the disrepair (or failure to maintain in working order) is such as to affect the lessee’s enjoyment of the dwelling-house or of any common parts"
+   },
+   {
+    "requirement": "The lessor's repairing covenant does not require the lessor to carry out works or repairs for which the lessee is liable by virtue of the duty to use the premises in a tenant-like manner, or would be so liable absent an express covenant on the lessee's part.",
+    "quote": "to carry out works or repairs for which the lessee is liable by virtue of his duty to use the premises in a tenant-like manner"
+   },
+   {
+    "requirement": "The lessor's repairing covenant does not require the lessor to rebuild or reinstate the premises in the case of destruction or damage by fire, tempest, flood, or other inevitable accident.",
+    "quote": "to rebuild or reinstate the premises in the case of destruction or damage by fire, or by tempest, flood or other inevitable accident"
+   },
+   {
+    "requirement": "The lessor's repairing covenant does not require the lessor to keep in repair or maintain anything that the lessee is entitled to remove from the dwelling-house.",
+    "quote": "to keep in repair or maintain anything which the lessee is entitled to remove from the dwelling-house"
+   },
+   {
+    "requirement": "When determining the standard of repair required by the lessor’s repairing covenant, regard must be had to the age, character, and prospective life of the dwelling-house, and the locality in which it is situated.",
+    "quote": "regard shall be had to the age, character and prospective life of the dwelling-house and the locality in which it is situated"
+   },
+   {
+    "requirement": "In proceedings against the lessor for failure to comply with repairing obligations arising under subsection (1A) outside the dwelling-house or to installations outside it, the lessor has a defence if the lessor lacks sufficient rights to carry out the works and proves that all reasonable endeavours were used, but failed, to obtain adequate rights.",
+    "quote": "it shall be a defence for the lessor to prove that he used all reasonable endeavours to obtain, but was unable to obtain, such rights as would be adequate to enable him to carry out the works or repairs"
+   },
+   {
+    "requirement": "A covenant by the lessee for the repair of the premises has no effect so far as it relates to the lessor's statutory repairing obligations in subsection (1)(a) to (c), unless it imposes on the lessee requirements for tenant-like use or items removable by the lessee under subsection (2)(a) or (c).",
+    "quote": "A covenant by the lessee for the repair of the premises is of no effect so far as it relates to the matters mentioned in subsection (1)(a) to (c)"
+   },
+   {
+    "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to put in repair or deliver up in repair.",
+    "quote": "to put in repair or deliver up in repair"
+   },
+   {
+    "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to paint, point, or render.",
+    "quote": "to paint, point or render"
+   },
+   {
+    "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to pay money in lieu of repairs by the lessee.",
+    "quote": "to pay money in lieu of repairs by the lessee"
+   },
+   {
+    "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to pay money on account of repairs by the lessor.",
+    "quote": "to pay money on account of repairs by the lessor"
+   },
+   {
+    "requirement": "In a lease containing the implied lessor’s repairing covenant, there is an implied covenant by the lessee permitting the lessor, or any person authorised by the lessor in writing, to enter the premises comprised in the lease to view their condition and state of repair.",
+    "quote": "implied a covenant by the lessee that the lessor, or any person authorised by him in writing, may at reasonable times of the day and on giving 24 hours’ notice in writing to the occupier, enter the premises comprised in the lease for the purpose of viewing their condition and state of repair"
+   },
+   {
+    "requirement": "The lessor's or authorised person's entry into the premises to view condition and state of repair may only take place at reasonable times of the day and upon providing 24 hours' written notice to the occupier.",
+    "quote": "at reasonable times of the day and on giving 24 hours’ notice in writing to the occupier"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "notice period in writing required to be given to the occupier before the lessor or an authorised person may enter the premises to view their condition and state of repair",
+    "value": "24 hours’",
+    "quote": "on giving 24 hours’ notice in writing to the occupier"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In a lease to which section 11 applies, a covenant is implied by the lessor to keep in repair the structure and exterior of the dwelling-house, including drains, gutters, and external pipes.",
+   "quote": "to keep in repair the structure and exterior of the dwelling-house (including drains, gutters and external pipes)"
+  },
+  {
+   "requirement": "In a lease to which section 11 applies, a covenant is implied by the lessor to keep in repair and proper working order the installations in the dwelling-house for the supply of water, gas, and electricity, and for sanitation (including basins, sinks, baths, and sanitary conveniences, but excluding other fixtures, fittings, and appliances for making use of the supply of water, gas, or electricity).",
+   "quote": "to keep in repair and proper working order the installations in the dwelling-house for the supply of water, gas and electricity and for sanitation"
+  },
+  {
+   "requirement": "In a lease to which section 11 applies, a covenant is implied by the lessor to keep in repair and proper working order the installations in the dwelling-house for space heating and heating water.",
+   "quote": "to keep in repair and proper working order the installations in the dwelling-house for space heating and heating water"
+  },
+  {
+   "requirement": "If the lease is of a dwelling-house forming part only of a building, the lessor's repairing covenant regarding the dwelling-house's structure and exterior applies to any part of the building in which the lessor has an estate or interest, subject to subsection (1B).",
+   "quote": "the reference in paragraph (a) of that subsection to the dwelling-house included a reference to any part of the building in which the lessor has an estate or interest"
+  },
+  {
+   "requirement": "If the lease is of a dwelling-house forming part only of a building, the lessor's repairing covenant regarding installations applies to any installation serving the dwelling-house directly or indirectly that forms part of any part of a building in which the lessor has an estate or interest, subject to subsection (1B).",
+   "quote": "forms part of any part of a building in which the lessor has an estate or interest"
+  },
+  {
+   "requirement": "If the lease is of a dwelling-house forming part only of a building, the lessor's repairing covenant regarding installations applies to any installation serving the dwelling-house directly or indirectly that is owned by the lessor or under the lessor's control, subject to subsection (1B).",
+   "quote": "is owned by the lessor or under his control"
+  },
+  {
+   "requirement": "The lessor is not required under subsection (1A) to carry out works or repairs unless the disrepair or failure to maintain in working order affects the lessee’s enjoyment of the dwelling-house or of any common parts (as defined in section 60(1) of the Landlord and Tenant Act 1987) that the lessee is entitled to use.",
+   "quote": "unless the disrepair (or failure to maintain in working order) is such as to affect the lessee’s enjoyment of the dwelling-house or of any common parts"
+  },
+  {
+   "requirement": "The lessor's repairing covenant does not require the lessor to carry out works or repairs for which the lessee is liable by virtue of the duty to use the premises in a tenant-like manner, or would be so liable absent an express covenant on the lessee's part.",
+   "quote": "to carry out works or repairs for which the lessee is liable by virtue of his duty to use the premises in a tenant-like manner"
+  },
+  {
+   "requirement": "The lessor's repairing covenant does not require the lessor to rebuild or reinstate the premises in the case of destruction or damage by fire, tempest, flood, or other inevitable accident.",
+   "quote": "to rebuild or reinstate the premises in the case of destruction or damage by fire, or by tempest, flood or other inevitable accident"
+  },
+  {
+   "requirement": "The lessor's repairing covenant does not require the lessor to keep in repair or maintain anything that the lessee is entitled to remove from the dwelling-house.",
+   "quote": "to keep in repair or maintain anything which the lessee is entitled to remove from the dwelling-house"
+  },
+  {
+   "requirement": "When determining the standard of repair required by the lessor’s repairing covenant, regard must be had to the age, character, and prospective life of the dwelling-house, and the locality in which it is situated.",
+   "quote": "regard shall be had to the age, character and prospective life of the dwelling-house and the locality in which it is situated"
+  },
+  {
+   "requirement": "In proceedings against the lessor for failure to comply with repairing obligations arising under subsection (1A) outside the dwelling-house or to installations outside it, the lessor has a defence if the lessor lacks sufficient rights to carry out the works and proves that all reasonable endeavours were used, but failed, to obtain adequate rights.",
+   "quote": "it shall be a defence for the lessor to prove that he used all reasonable endeavours to obtain, but was unable to obtain, such rights as would be adequate to enable him to carry out the works or repairs"
+  },
+  {
+   "requirement": "A covenant by the lessee for the repair of the premises has no effect so far as it relates to the lessor's statutory repairing obligations in subsection (1)(a) to (c), unless it imposes on the lessee requirements for tenant-like use or items removable by the lessee under subsection (2)(a) or (c).",
+   "quote": "A covenant by the lessee for the repair of the premises is of no effect so far as it relates to the matters mentioned in subsection (1)(a) to (c)"
+  },
+  {
+   "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to put in repair or deliver up in repair.",
+   "quote": "to put in repair or deliver up in repair"
+  },
+  {
+   "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to paint, point, or render.",
+   "quote": "to paint, point or render"
+  },
+  {
+   "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to pay money in lieu of repairs by the lessee.",
+   "quote": "to pay money in lieu of repairs by the lessee"
+  },
+  {
+   "requirement": "A covenant by the lessee for the repair of the premises includes a covenant to pay money on account of repairs by the lessor.",
+   "quote": "to pay money on account of repairs by the lessor"
+  },
+  {
+   "requirement": "In a lease containing the implied lessor’s repairing covenant, there is an implied covenant by the lessee permitting the lessor, or any person authorised by the lessor in writing, to enter the premises comprised in the lease to view their condition and state of repair.",
+   "quote": "implied a covenant by the lessee that the lessor, or any person authorised by him in writing, may at reasonable times of the day and on giving 24 hours’ notice in writing to the occupier, enter the premises comprised in the lease for the purpose of viewing their condition and state of repair"
+  },
+  {
+   "requirement": "The lessor's or authorised person's entry into the premises to view condition and state of repair may only take place at reasonable times of the day and upon providing 24 hours' written notice to the occupier.",
+   "quote": "at reasonable times of the day and on giving 24 hours’ notice in writing to the occupier"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "notice period in writing required to be given to the occupier before the lessor or an authorised person may enter the premises to view their condition and state of repair",
+   "value": "24 hours’",
+   "quote": "on giving 24 hours’ notice in writing to the occupier"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

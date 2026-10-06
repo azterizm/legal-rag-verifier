@@ -1,0 +1,181 @@
+{
+ "key": "uk/ukpga/1975/63/s1@current",
+ "section": "uk/ukpga/1975/63/s1",
+ "version": "current",
+ "source_sha256": "2dac4f923867af67e15236c400090ea832656375258149c03e56caa55c18603d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An eligible applicant may apply to the court for an order under section 2 of the Act where the deceased died domiciled in England and Wales after the commencement of the Act.",
+    "quote": "Where after the commencement of this Act a person dies domiciled in England and Wales"
+   },
+   {
+    "requirement": "An application to the court must be made on the ground that the disposition of the deceased's estate effected by will, the law of intestacy, or a combination of both does not make reasonable financial provision for the applicant.",
+    "quote": "on the ground that the disposition of the deceased’s estate effected by his will or the law relating to intestacy, or the combination of his will and that law, is not such as to make reasonable financial provision for the applicant"
+   },
+   {
+    "requirement": "The surviving spouse or civil partner of the deceased is eligible to apply to the court for an order.",
+    "quote": "the spouse or civil partner of the deceased"
+   },
+   {
+    "requirement": "A former spouse or former civil partner of the deceased is eligible to apply to the court for an order, provided that person has not formed a subsequent marriage or civil partnership.",
+    "quote": "a former spouse or former civil partner of the deceased, but not one who has formed a subsequent marriage or civil partnership"
+   },
+   {
+    "requirement": "A person who is not a spouse, civil partner, former spouse, or former civil partner is eligible to apply to the court if subsection (1A) applies to that person.",
+    "quote": "any person (not being a person included in paragraph (a) or (b) above) to whom subsection (1A) ... below applies"
+   },
+   {
+    "requirement": "Subsection (1A) applies to a person who lived in the same household as the deceased as if they were a married couple or civil partners during the whole of the two years ending immediately before the deceased's death, provided the deceased died on or after 1st January 1996.",
+    "quote": "during the whole of the period of two years ending immediately before the date when the deceased died, the person was living— (a) in the same household as the deceased, and (b) as if that person and the deceased were a married couple or civil partners"
+   },
+   {
+    "requirement": "A child of the deceased is eligible to apply to the court for an order.",
+    "quote": "a child of the deceased"
+   },
+   {
+    "requirement": "A person who is not a child of the deceased is eligible to apply if the deceased treated that person as a child of the family in relation to any marriage or civil partnership to which the deceased was a party, or in relation to any family in which the deceased stood in the role of a parent.",
+    "quote": "any person (not being a child of the deceased) who in relation to any marriage or civil partnership to which the deceased was at any time a party, or otherwise in relation to any family in which the deceased at any time stood in the role of a parent, was treated by the deceased as a child of the family"
+   },
+   {
+    "requirement": "A family in which the deceased stood in the role of a parent includes a family in which the deceased was the sole member other than the applicant.",
+    "quote": "includes a family of which the deceased was the only member (apart from the applicant)"
+   },
+   {
+    "requirement": "A person not falling within paragraphs (a) to (d) of subsection (1) is eligible to apply if the deceased was maintaining that person, wholly or partly, immediately before the deceased's death.",
+    "quote": "any person (not being a person included in the foregoing paragraphs of this subsection) who immediately before the death of the deceased was being maintained, either wholly or partly, by the deceased"
+   },
+   {
+    "requirement": "A person is treated as being maintained by the deceased only if the deceased made a substantial contribution in money or money's worth towards that person's reasonable needs.",
+    "quote": "only if the deceased was making a substantial contribution in money or money's worth towards the reasonable needs of that person"
+   },
+   {
+    "requirement": "A contribution made for full valuable consideration under a commercial arrangement does not constitute maintenance by the deceased.",
+    "quote": "other than a contribution made for full valuable consideration pursuant to an arrangement of a commercial nature"
+   },
+   {
+    "requirement": "For an application by the deceased's spouse, reasonable financial provision means such financial provision as is reasonable in all the circumstances for a husband or wife to receive, whether or not required for maintenance, unless a judicial separation order was in force and the separation was continuing at the date of death.",
+    "quote": "means such financial provision as it would be reasonable in all the circumstances of the case for a husband or wife to receive, whether or not that provision is required for his or her maintenance"
+   },
+   {
+    "requirement": "The non-maintenance standard of reasonable financial provision for a spouse does not apply where the marriage was subject to a judicial separation order in force at the date of death and the separation was continuing.",
+    "quote": "except where the marriage with the deceased was the subject of a judicial separation order and at the date of death the order was in force and the separation was continuing"
+   },
+   {
+    "requirement": "For an application by the deceased's civil partner, reasonable financial provision means such financial provision as is reasonable in all the circumstances for a civil partner to receive, whether or not required for maintenance, unless a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force and the separation was continuing at the date of death.",
+    "quote": "means such financial provision as it would be reasonable in all the circumstances of the case for a civil partner to receive, whether or not that provision is required for his or her maintenance"
+   },
+   {
+    "requirement": "The non-maintenance standard of reasonable financial provision for a civil partner does not apply where a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force at the date of death and the separation was continuing.",
+    "quote": "except where, at the date of death, a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force in relation to the civil partnership and the separation was continuing"
+   },
+   {
+    "requirement": "For any application under subsection (1) other than by a qualifying spouse or civil partner, reasonable financial provision means such financial provision as is reasonable in all the circumstances of the case for the applicant to receive for maintenance.",
+    "quote": "in the case of any other application made by virtue of subsection (1) above, means such financial provision as it would be reasonable in all the circumstances of the case for the applicant to receive for his maintenance"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "earliest date of the deceased's death for subsection (1A) to apply to a cohabiting partner",
+    "value": "1st January 1996",
+    "quote": "if the deceased died on or after 1st January 1996"
+   },
+   {
+    "what": "minimum continuous period of cohabitation required immediately prior to the deceased's death under subsection (1A)",
+    "value": "two years",
+    "quote": "during the whole of the period of two years ending immediately before the date when the deceased died"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An eligible applicant may apply to the court for an order under section 2 of the Act where the deceased died domiciled in England and Wales after the commencement of the Act.",
+   "quote": "Where after the commencement of this Act a person dies domiciled in England and Wales"
+  },
+  {
+   "requirement": "An application to the court must be made on the ground that the disposition of the deceased's estate effected by will, the law of intestacy, or a combination of both does not make reasonable financial provision for the applicant.",
+   "quote": "on the ground that the disposition of the deceased’s estate effected by his will or the law relating to intestacy, or the combination of his will and that law, is not such as to make reasonable financial provision for the applicant"
+  },
+  {
+   "requirement": "The surviving spouse or civil partner of the deceased is eligible to apply to the court for an order.",
+   "quote": "the spouse or civil partner of the deceased"
+  },
+  {
+   "requirement": "A former spouse or former civil partner of the deceased is eligible to apply to the court for an order, provided that person has not formed a subsequent marriage or civil partnership.",
+   "quote": "a former spouse or former civil partner of the deceased, but not one who has formed a subsequent marriage or civil partnership"
+  },
+  {
+   "requirement": "A person who is not a spouse, civil partner, former spouse, or former civil partner is eligible to apply to the court if subsection (1A) applies to that person.",
+   "quote": "any person (not being a person included in paragraph (a) or (b) above) to whom subsection (1A) ... below applies"
+  },
+  {
+   "requirement": "Subsection (1A) applies to a person who lived in the same household as the deceased as if they were a married couple or civil partners during the whole of the two years ending immediately before the deceased's death, provided the deceased died on or after 1st January 1996.",
+   "quote": "during the whole of the period of two years ending immediately before the date when the deceased died, the person was living— (a) in the same household as the deceased, and (b) as if that person and the deceased were a married couple or civil partners"
+  },
+  {
+   "requirement": "A child of the deceased is eligible to apply to the court for an order.",
+   "quote": "a child of the deceased"
+  },
+  {
+   "requirement": "A person who is not a child of the deceased is eligible to apply if the deceased treated that person as a child of the family in relation to any marriage or civil partnership to which the deceased was a party, or in relation to any family in which the deceased stood in the role of a parent.",
+   "quote": "any person (not being a child of the deceased) who in relation to any marriage or civil partnership to which the deceased was at any time a party, or otherwise in relation to any family in which the deceased at any time stood in the role of a parent, was treated by the deceased as a child of the family"
+  },
+  {
+   "requirement": "A family in which the deceased stood in the role of a parent includes a family in which the deceased was the sole member other than the applicant.",
+   "quote": "includes a family of which the deceased was the only member (apart from the applicant)"
+  },
+  {
+   "requirement": "A person not falling within paragraphs (a) to (d) of subsection (1) is eligible to apply if the deceased was maintaining that person, wholly or partly, immediately before the deceased's death.",
+   "quote": "any person (not being a person included in the foregoing paragraphs of this subsection) who immediately before the death of the deceased was being maintained, either wholly or partly, by the deceased"
+  },
+  {
+   "requirement": "A person is treated as being maintained by the deceased only if the deceased made a substantial contribution in money or money's worth towards that person's reasonable needs.",
+   "quote": "only if the deceased was making a substantial contribution in money or money's worth towards the reasonable needs of that person"
+  },
+  {
+   "requirement": "A contribution made for full valuable consideration under a commercial arrangement does not constitute maintenance by the deceased.",
+   "quote": "other than a contribution made for full valuable consideration pursuant to an arrangement of a commercial nature"
+  },
+  {
+   "requirement": "For an application by the deceased's spouse, reasonable financial provision means such financial provision as is reasonable in all the circumstances for a husband or wife to receive, whether or not required for maintenance, unless a judicial separation order was in force and the separation was continuing at the date of death.",
+   "quote": "means such financial provision as it would be reasonable in all the circumstances of the case for a husband or wife to receive, whether or not that provision is required for his or her maintenance"
+  },
+  {
+   "requirement": "The non-maintenance standard of reasonable financial provision for a spouse does not apply where the marriage was subject to a judicial separation order in force at the date of death and the separation was continuing.",
+   "quote": "except where the marriage with the deceased was the subject of a judicial separation order and at the date of death the order was in force and the separation was continuing"
+  },
+  {
+   "requirement": "For an application by the deceased's civil partner, reasonable financial provision means such financial provision as is reasonable in all the circumstances for a civil partner to receive, whether or not required for maintenance, unless a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force and the separation was continuing at the date of death.",
+   "quote": "means such financial provision as it would be reasonable in all the circumstances of the case for a civil partner to receive, whether or not that provision is required for his or her maintenance"
+  },
+  {
+   "requirement": "The non-maintenance standard of reasonable financial provision for a civil partner does not apply where a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force at the date of death and the separation was continuing.",
+   "quote": "except where, at the date of death, a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force in relation to the civil partnership and the separation was continuing"
+  },
+  {
+   "requirement": "For any application under subsection (1) other than by a qualifying spouse or civil partner, reasonable financial provision means such financial provision as is reasonable in all the circumstances of the case for the applicant to receive for maintenance.",
+   "quote": "in the case of any other application made by virtue of subsection (1) above, means such financial provision as it would be reasonable in all the circumstances of the case for the applicant to receive for his maintenance"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "earliest date of the deceased's death for subsection (1A) to apply to a cohabiting partner",
+   "value": "1st January 1996",
+   "quote": "if the deceased died on or after 1st January 1996"
+  },
+  {
+   "what": "minimum continuous period of cohabitation required immediately prior to the deceased's death under subsection (1A)",
+   "value": "two years",
+   "quote": "during the whole of the period of two years ending immediately before the date when the deceased died"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

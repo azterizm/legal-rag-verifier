@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2010/15/s7@current",
+ "section": "uk/ukpga/2010/15/s7",
+ "version": "current",
+ "source_sha256": "9cdc9077b7d9d6a84072ac04a55b9c04486907f70e78f5cb2f59cb212bf0bb33",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual possesses the protected characteristic of gender reassignment if that individual is proposing to undergo, is currently undergoing, or has undergone a process or part of a process intended to reassign their sex by altering physiological or other attributes of sex.",
+    "quote": "proposing to undergo, is undergoing or has undergone a process (or part of a process) for the purpose of reassigning the person's sex by changing physiological or other attributes of sex"
+   },
+   {
+    "requirement": "A reference to a transsexual person is defined as a reference to an individual who possesses the protected characteristic of gender reassignment.",
+    "quote": "A reference to a transsexual person is a reference to a person who has the protected characteristic of gender reassignment"
+   },
+   {
+    "requirement": "In relation to the protected characteristic of gender reassignment, any reference to a person who has a particular protected characteristic denotes a transsexual person.",
+    "quote": "a reference to a person who has a particular protected characteristic is a reference to a transsexual person"
+   },
+   {
+    "requirement": "In relation to the protected characteristic of gender reassignment, any reference to persons who share a protected characteristic denotes transsexual persons.",
+    "quote": "a reference to persons who share a protected characteristic is a reference to transsexual persons"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An individual possesses the protected characteristic of gender reassignment if that individual is proposing to undergo, is currently undergoing, or has undergone a process or part of a process intended to reassign their sex by altering physiological or other attributes of sex.",
+   "quote": "proposing to undergo, is undergoing or has undergone a process (or part of a process) for the purpose of reassigning the person's sex by changing physiological or other attributes of sex"
+  },
+  {
+   "requirement": "A reference to a transsexual person is defined as a reference to an individual who possesses the protected characteristic of gender reassignment.",
+   "quote": "A reference to a transsexual person is a reference to a person who has the protected characteristic of gender reassignment"
+  },
+  {
+   "requirement": "In relation to the protected characteristic of gender reassignment, any reference to a person who has a particular protected characteristic denotes a transsexual person.",
+   "quote": "a reference to a person who has a particular protected characteristic is a reference to a transsexual person"
+  },
+  {
+   "requirement": "In relation to the protected characteristic of gender reassignment, any reference to persons who share a protected characteristic denotes transsexual persons.",
+   "quote": "a reference to persons who share a protected characteristic is a reference to transsexual persons"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

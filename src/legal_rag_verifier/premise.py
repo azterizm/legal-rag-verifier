@@ -22,6 +22,8 @@ __all__ = ["Passage", "PassageKind", "Premise"]
 
 _REPEALED_TEXT = re.compile(r"^[\s.…]*$")
 _DOT_RUN = re.compile(r"(?:\.\s){3,}\.?")
+# Subsection labels: "1", "1A", "1ZA", and inserted ones before (1) such as "A1".
+_SUBSECTION_LABEL = re.compile(r"^[A-Z]{0,2}\d+[A-Z]*\d*$")
 
 
 class PassageKind(StrEnum):
@@ -38,6 +40,13 @@ class Passage:
     coordinate: str | None = None
     kind: PassageKind = PassageKind.TEXT
     heading: str | None = None
+    #: The window's list items as standalone statements (stem + one item + tail), from the tree.
+    limbs: tuple[str, ...] = ()
+    #: The period this text was in force, when known (``valid_to`` exclusive).
+    valid_from: date | None = None
+    valid_to: date | None = None
+    #: Quote-audited statements about this window from the enrichment layer (``enrichment.attach``).
+    elements: tuple[str, ...] = ()
 
     @property
     def tail(self) -> str:
@@ -51,6 +60,8 @@ class Premise:
     passages: tuple[Passage, ...]
     citations: frozenset[str] = field(default_factory=frozenset)
     titles: tuple[str, ...] = ()
+    #: Identity of the enrichment layer attached, if any ("<model>@<sha256 of its files>").
+    enrichment: str | None = None
 
     @property
     def windows(self) -> tuple[Passage, ...]:
@@ -87,7 +98,11 @@ class Premise:
         """One provision's text plus its temporal metadata, linearised as fact windows."""
         tail = coordinate_tail(coordinate)
         heading = _heading(title, tail)
-        passages = [Passage(_clean(text), coordinate, PassageKind.PROVISION, heading)]
+        passages = [
+            Passage(
+                _clean(text), coordinate, PassageKind.PROVISION, heading, valid_from=in_force_from
+            )
+        ]
         passages += _facts(heading, in_force_from, amended_by, previous_text)
         titles = [title]
         if amended_by:
@@ -100,8 +115,10 @@ class Premise:
         records: Iterable[Mapping[str, Any]],
         *,
         title: str | None = None,
-        facts: Iterable[str] = (),
+        facts: Iterable[str | Passage] = (),
         extra_titles: Iterable[str] = (),
+        valid_from: date | None = None,
+        valid_to: date | None = None,
     ) -> Premise:
         """Assemble windows from normalised provision records (the router's ``data/uk`` rows).
 
@@ -134,20 +151,33 @@ class Premise:
             if not row.get("repealed") and not _is_repealed_text(row.get("text", "")):
                 declared |= _declared(coordinate_tail(row["coordinate"]))
         for root in roots:
-            for node, labelled in _window_roots(root, children):
-                body = _assemble(node, children, label=labelled)
+            for node, labelled, nested in _window_roots(root, children):
+                body = _assemble(node, children if nested else {}, label=labelled)
                 if body:
                     tail = coordinate_tail(node["coordinate"])
                     heading = _heading(instrument_title or "", tail, node_title=root.get("title"))
+                    limbs = _limbs(node, children) if nested else []
                     passages.append(
-                        Passage(body, node["coordinate"], PassageKind.PROVISION, heading)
+                        Passage(
+                            body,
+                            node["coordinate"],
+                            PassageKind.PROVISION,
+                            heading,
+                            tuple(limbs) if len(limbs) > 1 else (),
+                            valid_from,
+                            valid_to,
+                        )
                     )
-        passages += [Passage(f, None, PassageKind.FACT) for f in facts]
+        passages += [
+            f if isinstance(f, Passage) else Passage(f, None, PassageKind.FACT) for f in facts
+        ]
         titles = [t for t in [instrument_title, *extra_titles] if t]
         return cls(tuple(passages), frozenset(declared), tuple(titles))
 
-    def with_facts(self, facts: Iterable[str]) -> Premise:
-        extra = tuple(Passage(f, None, PassageKind.FACT) for f in facts)
+    def with_facts(self, facts: Iterable[str | Passage]) -> Premise:
+        extra = tuple(
+            f if isinstance(f, Passage) else Passage(f, None, PassageKind.FACT) for f in facts
+        )
         return Premise(self.passages + extra, self.citations, self.titles)
 
 
@@ -180,16 +210,20 @@ def _is_repealed_text(text: str) -> bool:
 
 def _window_roots(
     root: dict[str, Any], children: Mapping[str, list[dict[str, Any]]]
-) -> list[tuple[dict[str, Any], bool]]:
-    """Subsections of a section are separate windows; otherwise the root is one window."""
+) -> list[tuple[dict[str, Any], bool, bool]]:
+    """``(node, labelled, with_children)`` per window.
+
+    Subsections of a section are separate windows (the section's own stem, if any, is a window of
+    its own text only); a provision without subsections is one window with all its descendants.
+    """
     kids = children.get(root["coordinate"], [])
-    if kids and all(str(k.get("number_label", ""))[:1].isdigit() for k in kids):
-        out: list[tuple[dict[str, Any], bool]] = []
+    if kids and all(_SUBSECTION_LABEL.match(str(k.get("number_label", ""))) for k in kids):
+        out: list[tuple[dict[str, Any], bool, bool]] = []
         if root.get("text") and not _is_repealed_text(root["text"]):
-            out.append(({**root, "text_after": ""}, False))
-        out += [(k, True) for k in kids]
+            out.append((root, False, False))
+        out += [(k, True, True) for k in kids]
         return out
-    return [(root, False)]
+    return [(root, False, True)]
 
 
 def _assemble(
@@ -214,6 +248,35 @@ def _assemble(
     return "" if _REPEALED_TEXT.match(re.sub(r"\(\w+\)", "", body)) else body
 
 
+_LIST_JOINER = re.compile(r"[\s,;]*(?:\b(?:and|or)\b)?[\s,;—:-]*$")
+
+
+def _limbs(node: dict[str, Any], children: Mapping[str, list[dict[str, Any]]]) -> list[str]:
+    """Each leaf item of ``node`` as one statement: the stems above it, the item, and the tails.
+
+    "(3) … liable to imprisonment for a term not exceeding— (a) where … a dwelling, fourteen
+    years; (b) in any other case, ten years." → "… not exceeding where … a dwelling, fourteen
+    years." and "… not exceeding in any other case, ten years." Empty for a node with no list.
+    """
+    kids = [k for k in children.get(node["coordinate"], []) if not k.get("repealed")]
+    if not kids:
+        return []
+    stem = _LIST_JOINER.sub("", _clean(node.get("text") or ""))
+    after = _clean(node.get("text_after") or "")
+    out: list[str] = []
+    for kid in kids:
+        own = _limbs(kid, children)
+        if not own:
+            text = _clean(" ".join([kid.get("text") or "", kid.get("text_after") or ""]))
+            if not text or _is_repealed_text(text):
+                continue
+            own = [_LIST_JOINER.sub("", text)]
+        for item in own:
+            statement = " ".join(p for p in (stem, item, after) if p).strip()
+            out.append(statement if statement.endswith(".") else statement + ".")
+    return out
+
+
 def _facts(
     heading: str,
     in_force_from: date | None,
@@ -230,6 +293,15 @@ def _facts(
         out.append(f"{heading} has had its current text since {when}.")
     elif amended_by:
         out.append(f"{heading} was amended by the {amended_by}.")
+    passages = [Passage(f, None, PassageKind.FACT, heading) for f in out]
     if previous_text and when:
-        out.append(f"Before {when}, {heading} read: {_clean(previous_text)}")
-    return [Passage(f, None, PassageKind.FACT, heading) for f in out]
+        passages.append(
+            Passage(
+                f"Before {when}, {heading} read: {_clean(previous_text)}",
+                None,
+                PassageKind.FACT,
+                heading,
+                valid_to=in_force_from,
+            )
+        )
+    return passages

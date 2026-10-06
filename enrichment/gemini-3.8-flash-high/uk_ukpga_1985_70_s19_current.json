@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1985/70/s19@current",
+ "section": "uk/ukpga/1985/70/s19",
+ "version": "current",
+ "source_sha256": "36c09c06effde7b77a6b7f41442f32df593c472edfdabba9642ef1a1baceec28",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Relevant costs must be taken into account in determining the amount of a service charge payable for a period only to the extent that those costs are reasonably incurred.",
+    "quote": "only to the extent that they are reasonably incurred"
+   },
+   {
+    "requirement": "Where relevant costs are incurred on the provision of services or the carrying out of works, they must be taken into account in determining the amount of a service charge only if the services or works are of a reasonable standard.",
+    "quote": "only if the services or works are of a reasonable standard"
+   },
+   {
+    "requirement": "The amount of a service charge payable for a period must be limited according to whether costs are reasonably incurred and whether services or works are of a reasonable standard.",
+    "quote": "the amount payable shall be limited accordingly"
+   },
+   {
+    "requirement": "Where a service charge is payable before the relevant costs are incurred, no greater amount than is reasonable is payable.",
+    "quote": "no greater amount than is reasonable is so payable"
+   },
+   {
+    "requirement": "After the relevant costs have been incurred for a service charge payable in advance, any necessary adjustment must be made by repayment, reduction, subsequent charges, or otherwise.",
+    "quote": "any necessary adjustment shall be made by repayment, reduction or subsequent charges or otherwise"
+   },
+   {
+    "requirement": "If a person takes any proceedings in the High Court under any provisions of the Landlord and Tenant Act 1985 relating to service charges and that person could have taken those proceedings in the county court, that person shall not be entitled to recover any costs.",
+    "quote": "he shall not be entitled to recover any costs"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Relevant costs must be taken into account in determining the amount of a service charge payable for a period only to the extent that those costs are reasonably incurred.",
+   "quote": "only to the extent that they are reasonably incurred"
+  },
+  {
+   "requirement": "Where relevant costs are incurred on the provision of services or the carrying out of works, they must be taken into account in determining the amount of a service charge only if the services or works are of a reasonable standard.",
+   "quote": "only if the services or works are of a reasonable standard"
+  },
+  {
+   "requirement": "The amount of a service charge payable for a period must be limited according to whether costs are reasonably incurred and whether services or works are of a reasonable standard.",
+   "quote": "the amount payable shall be limited accordingly"
+  },
+  {
+   "requirement": "Where a service charge is payable before the relevant costs are incurred, no greater amount than is reasonable is payable.",
+   "quote": "no greater amount than is reasonable is so payable"
+  },
+  {
+   "requirement": "After the relevant costs have been incurred for a service charge payable in advance, any necessary adjustment must be made by repayment, reduction, subsequent charges, or otherwise.",
+   "quote": "any necessary adjustment shall be made by repayment, reduction or subsequent charges or otherwise"
+  },
+  {
+   "requirement": "If a person takes any proceedings in the High Court under any provisions of the Landlord and Tenant Act 1985 relating to service charges and that person could have taken those proceedings in the county court, that person shall not be entitled to recover any costs.",
+   "quote": "he shall not be entitled to recover any costs"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

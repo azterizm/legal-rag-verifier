@@ -1,0 +1,173 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s101@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s101",
+ "version": "current",
+ "source_sha256": "d1979dabe698f61788bc14e05b41fbe22200d45f08f61768443ae15cd2aecdc3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a mortgage is made by deed, the mortgagee has statutory powers to the same extent as if they had been expressly conferred by the mortgage deed, but not further.",
+    "quote": "A mortgagee, where the mortgage is made by deed, shall, by virtue of this Act, have the following powers, to the like extent as if they had been in terms conferred by the mortgage deed, but not further"
+   },
+   {
+    "requirement": "When the mortgage money has become due, the mortgagee has the power to sell, or concur with any other person in selling, the mortgaged property or any part of it, subject to prior charges or not, together or in lots, by public auction or private contract, subject to conditions respecting title or other matters as the mortgagee thinks fit.",
+    "quote": "A power, when the mortgage money has become due, to sell, or to concur with any other person in selling, the mortgaged property, or any part thereof, either subject to prior charges or not, and either together or in lots, by public auction or by private contract, subject to such conditions respecting title, or evidence of title, or other matter, as the mortgagee thinks fit"
+   },
+   {
+    "requirement": "In exercising the power of sale, the mortgagee has the power to vary any contract for sale, buy in at an auction, or rescind any contract for sale and re-sell without incurring liability for any resulting loss.",
+    "quote": "with power to vary any contract for sale, and to buy in at an auction, or to rescind any contract for sale, and to re-sell, without being answerable for any loss occasioned thereby"
+   },
+   {
+    "requirement": "At any time after the date of the mortgage deed, the mortgagee has the power to insure and keep insured against fire any building, effects, or insurable property forming part of the mortgaged property or an estate or interest therein, whether affixed to the freehold or not.",
+    "quote": "A power, at any time after the date of the mortgage deed, to insure and keep insured against loss or damage by fire any building, or any effects or property of an insurable nature, whether affixed to the freehold or not, being or forming part of the property which or an estate or interest wherein is mortgaged"
+   },
+   {
+    "requirement": "Premiums paid by the mortgagee for fire insurance constitute a charge on the mortgaged property, estate, or interest, added to the mortgage money with identical priority and bearing interest at the same rate.",
+    "quote": "the premiums paid for any such insurance shall be a charge on the mortgaged property or estate or interest, in addition to the mortgage money, and with the same priority, and with interest at the same rate, as the mortgage money"
+   },
+   {
+    "requirement": "When the mortgage money has become due, the mortgagee has the power to appoint a receiver of the income of the mortgaged property or any part thereof, or a receiver of the property or part thereof if it consists of an interest in income, a rentcharge, or an annual or periodical sum.",
+    "quote": "A power, when the mortgage money has become due, to appoint a receiver of the income of the mortgaged property, or any part thereof; or, if the mortgaged property consists of an interest in income, or of a rentcharge or an annual or other periodical sum, a receiver of that property or any part thereof"
+   },
+   {
+    "requirement": "While in possession, the mortgagee has the power to cut and sell timber and other trees ripe for cutting (provided they were not planted or left standing for shelter or ornament), or to contract for such cutting and sale to be completed within twelve months of contracting.",
+    "quote": "A power, while the mortgagee is in possession, to cut and sell timber and other trees ripe for cutting, and not planted or left standing for shelter or ornament, or to contract for any such cutting and sale, to be completed within any time not exceeding twelve months from the making of the contract"
+   },
+   {
+    "requirement": "The mortgagee's statutory power of sale is subject to section 21 of the Commonhold and Leasehold Reform Act 2002 regarding the prohibition on dispositions of part-units.",
+    "quote": "Subsection (1)(i) is subject to section 21 of the Commonhold and Leasehold Reform Act 2002 (no disposition of part-units)"
+   },
+   {
+    "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale incidentally includes the power to impose or reserve binding restrictions or reservations regarding building, land use, mines and minerals, or any other matter on the unsold property, the purchaser, or the sold property as far as the law permits.",
+    "quote": "A power to impose or reserve or make binding, as far as the law permits, by covenant, condition, or otherwise, on the unsold part of the mortgaged property or any part thereof, or on the purchaser and any property sold, any restriction or reservation with respect to building on or other user of land, or with respect to mines and minerals, or for the purpose of the more beneficial working thereof, or with respect to any other thing"
+   },
+   {
+    "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale includes the power to sell the mortgaged property, part thereof, or mines and minerals apart from the surface, with or without grants or reservations of rights of way, water rights, easements, and building-related privileges.",
+    "quote": "A power to sell the mortgaged property, or any part thereof, or all or any mines and minerals apart from the surface:— (a) With or without a grant or reservation of rights of way, rights of water, easements, rights, and privileges for or connected with building or other purposes in relation to the property remaining in mortgage or any part thereof, or to any property sold"
+   },
+   {
+    "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale includes the power to sell the mortgaged property, part thereof, or mines and minerals apart from the surface, with or without excepting or reserving mines and minerals, and with or without grants or reservations of mining-related powers, wayleaves, rights of way, drainage, water rights, and easements.",
+    "quote": "With or without an exception or reservation of all or any of the mines and minerals in or under the mortgaged property, and with or without a grant or reservation of powers or working, wayleaves, or rights of way, rights of water and drainage and other powers, easements, rights, and privileges for or connected with mining purposes in relation to the property remaining unsold or any part thereof, or to any property sold"
+   },
+   {
+    "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale includes the power to sell the mortgaged property, part thereof, or mines and minerals apart from the surface, with or without purchaser covenants to expend money on the land sold.",
+    "quote": "With or without covenants by the purchaser to expend money on the land sold"
+   },
+   {
+    "requirement": "The statutory provisions governing mortgagee powers may be varied or extended by the mortgage deed, operating with the same effects and consequences as if contained in the Act.",
+    "quote": "The provisions of this Act relating to the foregoing powers, comprised either in this section, or in any other section regulating the exercise of those powers, may be varied or extended by the mortgage deed, and, as so varied or extended, shall, as far as may be, operate in the like manner and with all the like incidents, effects, and consequences, as if such variations or extensions were contained in this Act"
+   },
+   {
+    "requirement": "Section 101 of the Law of Property Act 1925 applies only if and to the extent that a contrary intention is not expressed in the mortgage deed, and operates subject to the terms and provisions of that deed.",
+    "quote": "This section applies only if and as far as a contrary intention is not expressed in the mortgage deed, and has effect subject to the terms of the mortgage deed and to the provisions therein contained"
+   },
+   {
+    "requirement": "Except where otherwise provided, section 101 of the Law of Property Act 1925 applies where the mortgage deed is executed after 31 December 1881.",
+    "quote": "Save as otherwise provided, this section applies where the mortgage deed is executed after the thirty-first day of December, eighteen hundred and eighty-one"
+   },
+   {
+    "requirement": "The statutory power of sale includes the power to sell the estate in fee simple or any leasehold reversion conferred by the statutory provisions on mortgage realisation.",
+    "quote": "The power of sale conferred by this section includes such power of selling the estate in fee simple or any leasehold reversion as is conferred by the provisions of this Act relating to the realisation of mortgages"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Maximum period from contract formation for the completion of cutting and selling timber by a mortgagee in possession",
+    "value": "twelve months",
+    "quote": "to be completed within any time not exceeding twelve months from the making of the contract"
+   },
+   {
+    "what": "Mortgage deed execution date on or after which the incidental powers of sale apply",
+    "value": "thirty-first day of December, nineteen hundred and eleven",
+    "quote": "Where the mortgage deed is executed after the thirty-first day of December, nineteen hundred and eleven"
+   },
+   {
+    "what": "General mortgage deed execution date on or after which section 101 applies",
+    "value": "thirty-first day of December, eighteen hundred and eighty-one",
+    "quote": "where the mortgage deed is executed after the thirty-first day of December, eighteen hundred and eighty-one"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a mortgage is made by deed, the mortgagee has statutory powers to the same extent as if they had been expressly conferred by the mortgage deed, but not further.",
+   "quote": "A mortgagee, where the mortgage is made by deed, shall, by virtue of this Act, have the following powers, to the like extent as if they had been in terms conferred by the mortgage deed, but not further"
+  },
+  {
+   "requirement": "When the mortgage money has become due, the mortgagee has the power to sell, or concur with any other person in selling, the mortgaged property or any part of it, subject to prior charges or not, together or in lots, by public auction or private contract, subject to conditions respecting title or other matters as the mortgagee thinks fit.",
+   "quote": "A power, when the mortgage money has become due, to sell, or to concur with any other person in selling, the mortgaged property, or any part thereof, either subject to prior charges or not, and either together or in lots, by public auction or by private contract, subject to such conditions respecting title, or evidence of title, or other matter, as the mortgagee thinks fit"
+  },
+  {
+   "requirement": "In exercising the power of sale, the mortgagee has the power to vary any contract for sale, buy in at an auction, or rescind any contract for sale and re-sell without incurring liability for any resulting loss.",
+   "quote": "with power to vary any contract for sale, and to buy in at an auction, or to rescind any contract for sale, and to re-sell, without being answerable for any loss occasioned thereby"
+  },
+  {
+   "requirement": "At any time after the date of the mortgage deed, the mortgagee has the power to insure and keep insured against fire any building, effects, or insurable property forming part of the mortgaged property or an estate or interest therein, whether affixed to the freehold or not.",
+   "quote": "A power, at any time after the date of the mortgage deed, to insure and keep insured against loss or damage by fire any building, or any effects or property of an insurable nature, whether affixed to the freehold or not, being or forming part of the property which or an estate or interest wherein is mortgaged"
+  },
+  {
+   "requirement": "Premiums paid by the mortgagee for fire insurance constitute a charge on the mortgaged property, estate, or interest, added to the mortgage money with identical priority and bearing interest at the same rate.",
+   "quote": "the premiums paid for any such insurance shall be a charge on the mortgaged property or estate or interest, in addition to the mortgage money, and with the same priority, and with interest at the same rate, as the mortgage money"
+  },
+  {
+   "requirement": "When the mortgage money has become due, the mortgagee has the power to appoint a receiver of the income of the mortgaged property or any part thereof, or a receiver of the property or part thereof if it consists of an interest in income, a rentcharge, or an annual or periodical sum.",
+   "quote": "A power, when the mortgage money has become due, to appoint a receiver of the income of the mortgaged property, or any part thereof; or, if the mortgaged property consists of an interest in income, or of a rentcharge or an annual or other periodical sum, a receiver of that property or any part thereof"
+  },
+  {
+   "requirement": "While in possession, the mortgagee has the power to cut and sell timber and other trees ripe for cutting (provided they were not planted or left standing for shelter or ornament), or to contract for such cutting and sale to be completed within twelve months of contracting.",
+   "quote": "A power, while the mortgagee is in possession, to cut and sell timber and other trees ripe for cutting, and not planted or left standing for shelter or ornament, or to contract for any such cutting and sale, to be completed within any time not exceeding twelve months from the making of the contract"
+  },
+  {
+   "requirement": "The mortgagee's statutory power of sale is subject to section 21 of the Commonhold and Leasehold Reform Act 2002 regarding the prohibition on dispositions of part-units.",
+   "quote": "Subsection (1)(i) is subject to section 21 of the Commonhold and Leasehold Reform Act 2002 (no disposition of part-units)"
+  },
+  {
+   "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale incidentally includes the power to impose or reserve binding restrictions or reservations regarding building, land use, mines and minerals, or any other matter on the unsold property, the purchaser, or the sold property as far as the law permits.",
+   "quote": "A power to impose or reserve or make binding, as far as the law permits, by covenant, condition, or otherwise, on the unsold part of the mortgaged property or any part thereof, or on the purchaser and any property sold, any restriction or reservation with respect to building on or other user of land, or with respect to mines and minerals, or for the purpose of the more beneficial working thereof, or with respect to any other thing"
+  },
+  {
+   "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale includes the power to sell the mortgaged property, part thereof, or mines and minerals apart from the surface, with or without grants or reservations of rights of way, water rights, easements, and building-related privileges.",
+   "quote": "A power to sell the mortgaged property, or any part thereof, or all or any mines and minerals apart from the surface:— (a) With or without a grant or reservation of rights of way, rights of water, easements, rights, and privileges for or connected with building or other purposes in relation to the property remaining in mortgage or any part thereof, or to any property sold"
+  },
+  {
+   "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale includes the power to sell the mortgaged property, part thereof, or mines and minerals apart from the surface, with or without excepting or reserving mines and minerals, and with or without grants or reservations of mining-related powers, wayleaves, rights of way, drainage, water rights, and easements.",
+   "quote": "With or without an exception or reservation of all or any of the mines and minerals in or under the mortgaged property, and with or without a grant or reservation of powers or working, wayleaves, or rights of way, rights of water and drainage and other powers, easements, rights, and privileges for or connected with mining purposes in relation to the property remaining unsold or any part thereof, or to any property sold"
+  },
+  {
+   "requirement": "Where the mortgage deed is executed after 31 December 1911, the mortgagee's power of sale includes the power to sell the mortgaged property, part thereof, or mines and minerals apart from the surface, with or without purchaser covenants to expend money on the land sold.",
+   "quote": "With or without covenants by the purchaser to expend money on the land sold"
+  },
+  {
+   "requirement": "The statutory provisions governing mortgagee powers may be varied or extended by the mortgage deed, operating with the same effects and consequences as if contained in the Act.",
+   "quote": "The provisions of this Act relating to the foregoing powers, comprised either in this section, or in any other section regulating the exercise of those powers, may be varied or extended by the mortgage deed, and, as so varied or extended, shall, as far as may be, operate in the like manner and with all the like incidents, effects, and consequences, as if such variations or extensions were contained in this Act"
+  },
+  {
+   "requirement": "Section 101 of the Law of Property Act 1925 applies only if and to the extent that a contrary intention is not expressed in the mortgage deed, and operates subject to the terms and provisions of that deed.",
+   "quote": "This section applies only if and as far as a contrary intention is not expressed in the mortgage deed, and has effect subject to the terms of the mortgage deed and to the provisions therein contained"
+  },
+  {
+   "requirement": "Except where otherwise provided, section 101 of the Law of Property Act 1925 applies where the mortgage deed is executed after 31 December 1881.",
+   "quote": "Save as otherwise provided, this section applies where the mortgage deed is executed after the thirty-first day of December, eighteen hundred and eighty-one"
+  },
+  {
+   "requirement": "The statutory power of sale includes the power to sell the estate in fee simple or any leasehold reversion conferred by the statutory provisions on mortgage realisation.",
+   "quote": "The power of sale conferred by this section includes such power of selling the estate in fee simple or any leasehold reversion as is conferred by the provisions of this Act relating to the realisation of mortgages"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Maximum period from contract formation for the completion of cutting and selling timber by a mortgagee in possession",
+   "value": "twelve months",
+   "quote": "to be completed within any time not exceeding twelve months from the making of the contract"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 1
+ }
+}

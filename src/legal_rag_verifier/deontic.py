@@ -10,7 +10,7 @@ import re
 from dataclasses import dataclass
 from enum import StrEnum
 
-__all__ = ["MODAL_SURFACES", "Deontic", "DeonticMatch", "find_deontics"]
+__all__ = ["MODAL_SURFACES", "Deontic", "DeonticMatch", "find_deontics", "licensed_classes"]
 
 
 class Deontic(StrEnum):
@@ -40,7 +40,8 @@ _PATTERNS: list[tuple[Deontic, str]] = [
     (Deontic.PERMISSION, rf"\b{_BE}\s+not\s+(?:required|obliged|bound)\s+to\b"),
     (Deontic.PERMISSION, r"\b(?:does|do|did)\s+not\s+(?:have|need)\s+to\b"),
     (Deontic.PROHIBITION, r"\b(?:shall|must|may|should)\s+not\b|\b(?:mustn['’]t|shan['’]t)\b"),
-    (Deontic.PROHIBITION, r"\b(?:cannot|can\s+not|can['’]t)\b"),
+    # "I cannot find", "we can't say": the speaker's ability, not a duty
+    (Deontic.PROHIBITION, r"(?<!\bI\s)(?<!\bwe\s)(?<!\bWe\s)\b(?:cannot|can\s+not|can['’]t)\b"),
     (
         Deontic.PROHIBITION,
         rf"\b{_BE}\s+(?:not\s+(?:permitted|allowed|entitled)|prohibited|forbidden|barred)\b",
@@ -58,8 +59,26 @@ _COMPILED = [(d, re.compile(p, re.IGNORECASE)) for d, p in _PATTERNS]
 _MONTH_MAY = re.compile(r"\b\d{1,2}(?:st|nd|rd|th)?\s+May\b|\bMay\s+\d")
 
 
+_PARENTHETICAL = re.compile(r"\([^()]{3,}\)")
+_CONDITIONAL_BAR = re.compile(r"\b(?:unless|until)\b", re.IGNORECASE)
+
+
+def licensed_classes(text: str) -> frozenset[Deontic]:
+    """Classes a window licenses: its own, plus OBLIGATION where it bars something *unless* or
+    *until* a step is taken ("No will shall be valid unless it is in writing" = it must be)."""
+    found = {d.deontic for d in find_deontics(text)}
+    if Deontic.PROHIBITION in found and _CONDITIONAL_BAR.search(text):
+        found.add(Deontic.OBLIGATION)
+    return frozenset(found)
+
+
 def find_deontics(text: str) -> list[DeonticMatch]:
-    """Every deontic expression in ``text``, earliest first, without overlaps."""
+    """Every deontic expression in ``text``, earliest first, without overlaps.
+
+    Parenthetical asides are blanked first (offsets kept), so "is not (subject to express
+    provision to the contrary) entitled to" reads as "is not entitled to".
+    """
+    text = _PARENTHETICAL.sub(lambda m: " " * len(m.group(0)), text)
     blocked = [(m.start(), m.end()) for m in _MONTH_MAY.finditer(text)]
     found: list[DeonticMatch] = []
     for deontic, pattern in _COMPILED:

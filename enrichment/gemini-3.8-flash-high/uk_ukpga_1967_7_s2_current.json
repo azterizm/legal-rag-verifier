@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1967/7/s2@current",
+ "section": "uk/ukpga/1967/7/s2",
+ "version": "current",
+ "source_sha256": "d60480c725afbd927364c6d3bd8c69a11f0d27ee44202a9667208aa57ae48646",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A party to a contract who makes a misrepresentation that causes another party to enter the contract and suffer loss is liable to pay damages as if the misrepresentation had been made fraudulently, even if it was not made fraudulently.",
+    "quote": "that person shall be so liable notwithstanding that the misrepresentation was not made fraudulently"
+   },
+   {
+    "requirement": "A representor is exempt from damages liability under section 2(1) if that representor proves having reasonable ground to believe, and actually believing up to the time the contract was made, that the facts represented were true.",
+    "quote": "unless he proves that he had reasonable ground to believe and did believe up to the time the contract was made the facts represented were true"
+   },
+   {
+    "requirement": "Where a person enters a contract after a non-fraudulent misrepresentation and would be entitled to rescind, a court or arbitrator in proceedings arising out of the contract may declare the contract subsisting and award damages in lieu of rescission if it is considered equitable to do so.",
+    "quote": "the court or arbitrator may declare the contract subsisting and award damages in lieu of rescission, if of opinion that it would be equitable to do so"
+   },
+   {
+    "requirement": "In deciding whether to declare a contract subsisting and award damages in lieu of rescission, the court or arbitrator must have regard to the nature of the misrepresentation, the loss it would cause if the contract were upheld, and the loss rescission would cause to the other party.",
+    "quote": "having regard to the nature of the misrepresentation and the loss that would be caused by it if the contract were upheld, as well as to the loss that rescission would cause to the other party"
+   },
+   {
+    "requirement": "A court or arbitrator may award damages under section 2(2) against a person regardless of whether that person is liable to damages under section 2(1).",
+    "quote": "Damages may be awarded against a person under subsection (2) of this section whether or not he is liable to damages under subsection (1) thereof"
+   },
+   {
+    "requirement": "Where a person is liable to damages under section 2(1), any damages awarded against that person under section 2(2) must be taken into account when assessing liability under section 2(1).",
+    "quote": "any award under the said subsection (2) shall be taken into account in assessing his liability under the said subsection (1)"
+   },
+   {
+    "requirement": "A person is not entitled to damages for misrepresentation under section 2 if that person has a right to redress under Part 4A of the Consumer Protection from Unfair Trading Regulations 2008 in respect of the conduct constituting the misrepresentation.",
+    "quote": "This section does not entitle a person to be paid damages in respect of a misrepresentation if the person has a right to redress under Part 4A of the Consumer Protection from Unfair Trading Regulations 2008 ( SI 2008/1277 ) in respect of the conduct constituting the misrepresentation"
+   },
+   {
+    "requirement": "A debtor under a debtor-creditor-supplier agreement is not prevented by section 2(4) from bringing a claim under section 75(1) of the Consumer Credit Act 1974 against a creditor where the debtor would have had a claim against the supplier for misrepresentation but for section 2(4).",
+    "quote": "Subsection (4) does not prevent a debtor from bringing a claim under section 75(1) of the Consumer Credit Act 1974 against a creditor under a debtor-creditor-supplier agreement in a case where, but for subsection (4), the debtor would have a claim against the supplier in respect of a misrepresentation"
+   },
+   {
+    "requirement": "Where section 75 of the Consumer Credit Act 1974 would otherwise apply, it applies as if the debtor had a claim against the supplier.",
+    "quote": "where section 75 of that Act would otherwise apply, it accordingly applies as if the debtor had a claim against the supplier"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Calendar year of the Consumer Protection from Unfair Trading Regulations cited in the provision",
+    "value": "2008",
+    "quote": "Consumer Protection from Unfair Trading Regulations 2008"
+   },
+   {
+    "what": "Statutory instrument specification number for the Consumer Protection from Unfair Trading Regulations 2008",
+    "value": "2008/1277",
+    "quote": "SI 2008/1277"
+   },
+   {
+    "what": "Calendar year of the Consumer Credit Act cited in the provision",
+    "value": "1974",
+    "quote": "Consumer Credit Act 1974"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A party to a contract who makes a misrepresentation that causes another party to enter the contract and suffer loss is liable to pay damages as if the misrepresentation had been made fraudulently, even if it was not made fraudulently.",
+   "quote": "that person shall be so liable notwithstanding that the misrepresentation was not made fraudulently"
+  },
+  {
+   "requirement": "A representor is exempt from damages liability under section 2(1) if that representor proves having reasonable ground to believe, and actually believing up to the time the contract was made, that the facts represented were true.",
+   "quote": "unless he proves that he had reasonable ground to believe and did believe up to the time the contract was made the facts represented were true"
+  },
+  {
+   "requirement": "Where a person enters a contract after a non-fraudulent misrepresentation and would be entitled to rescind, a court or arbitrator in proceedings arising out of the contract may declare the contract subsisting and award damages in lieu of rescission if it is considered equitable to do so.",
+   "quote": "the court or arbitrator may declare the contract subsisting and award damages in lieu of rescission, if of opinion that it would be equitable to do so"
+  },
+  {
+   "requirement": "In deciding whether to declare a contract subsisting and award damages in lieu of rescission, the court or arbitrator must have regard to the nature of the misrepresentation, the loss it would cause if the contract were upheld, and the loss rescission would cause to the other party.",
+   "quote": "having regard to the nature of the misrepresentation and the loss that would be caused by it if the contract were upheld, as well as to the loss that rescission would cause to the other party"
+  },
+  {
+   "requirement": "A court or arbitrator may award damages under section 2(2) against a person regardless of whether that person is liable to damages under section 2(1).",
+   "quote": "Damages may be awarded against a person under subsection (2) of this section whether or not he is liable to damages under subsection (1) thereof"
+  },
+  {
+   "requirement": "Where a person is liable to damages under section 2(1), any damages awarded against that person under section 2(2) must be taken into account when assessing liability under section 2(1).",
+   "quote": "any award under the said subsection (2) shall be taken into account in assessing his liability under the said subsection (1)"
+  },
+  {
+   "requirement": "A person is not entitled to damages for misrepresentation under section 2 if that person has a right to redress under Part 4A of the Consumer Protection from Unfair Trading Regulations 2008 in respect of the conduct constituting the misrepresentation.",
+   "quote": "This section does not entitle a person to be paid damages in respect of a misrepresentation if the person has a right to redress under Part 4A of the Consumer Protection from Unfair Trading Regulations 2008 ( SI 2008/1277 ) in respect of the conduct constituting the misrepresentation"
+  },
+  {
+   "requirement": "A debtor under a debtor-creditor-supplier agreement is not prevented by section 2(4) from bringing a claim under section 75(1) of the Consumer Credit Act 1974 against a creditor where the debtor would have had a claim against the supplier for misrepresentation but for section 2(4).",
+   "quote": "Subsection (4) does not prevent a debtor from bringing a claim under section 75(1) of the Consumer Credit Act 1974 against a creditor under a debtor-creditor-supplier agreement in a case where, but for subsection (4), the debtor would have a claim against the supplier in respect of a misrepresentation"
+  },
+  {
+   "requirement": "Where section 75 of the Consumer Credit Act 1974 would otherwise apply, it applies as if the debtor had a claim against the supplier.",
+   "quote": "where section 75 of that Act would otherwise apply, it accordingly applies as if the debtor had a claim against the supplier"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

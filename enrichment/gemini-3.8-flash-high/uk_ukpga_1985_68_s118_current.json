@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1985/68/s118@current",
+ "section": "uk/ukpga/1985/68/s118",
+ "version": "current",
+ "source_sha256": "db300fce6f1418f5758062457c128e587b8d95a315cd187f493cac34e5558bbc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A secure tenant of a dwelling-house in England has the right to buy, in the circumstances and subject to the conditions and exceptions stated in the relevant Part of the Act.",
+    "quote": "A secure tenant of a dwelling-house in England has the right to buy"
+   },
+   {
+    "requirement": "A secure tenant has the right to acquire the freehold of the dwelling-house if the dwelling-house is a house and the landlord owns the freehold.",
+    "quote": "if the dwelling-house is a house and the landlord owns the freehold, to acquire the freehold of the dwelling-house"
+   },
+   {
+    "requirement": "A secure tenant has the right to be granted a lease of the dwelling-house if the landlord does not own the freehold or if the dwelling-house is a flat (whether or not the landlord owns the freehold).",
+    "quote": "if the landlord does not own the freehold or if the dwelling-house is a flat (whether or not the landlord owns the freehold), to be granted a lease of the dwelling-house"
+   },
+   {
+    "requirement": "Where a secure tenancy is a joint tenancy, the right to buy belongs jointly to all joint tenants, regardless of whether each tenant occupies the dwelling-house as their only or principal home, or to such one or more of them as they agree.",
+    "quote": "the right to buy belongs jointly to all of them or to such one or more of them as may be agreed between them"
+   },
+   {
+    "requirement": "An agreement allocating the right to buy among joint tenants is not valid unless the person or at least one of the persons to whom the right to buy is to belong occupies the dwelling-house as their only or principal home.",
+    "quote": "such an agreement is not valid unless the person or at least one of the persons to whom the right to buy is to belong occupies the dwelling-house as his only or principal home"
+   },
+   {
+    "requirement": "For the purposes of this Part, a dwelling-house that is a commonhold unit within the meaning of the Commonhold and Leasehold Reform Act 2002 must be treated as a house and not as a flat.",
+    "quote": "a dwelling-house which is a commonhold unit (within the meaning of the Commonhold and Leasehold Reform Act 2002) shall be treated as a house and not as a flat"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of joint tenants to whom the right to buy may belong under an agreement between them",
+    "value": "one",
+    "quote": "such one or more of them as may be agreed between them"
+   },
+   {
+    "what": "minimum number of persons to whom the right to buy is to belong who must occupy the dwelling-house as their only or principal home for an agreement to be valid",
+    "value": "at least one",
+    "quote": "at least one of the persons to whom the right to buy is to belong occupies the dwelling-house as his only or principal home"
+   },
+   {
+    "what": "year of the Commonhold and Leasehold Reform Act defining a commonhold unit",
+    "value": "2002",
+    "quote": "Commonhold and Leasehold Reform Act 2002"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A secure tenant of a dwelling-house in England has the right to buy, in the circumstances and subject to the conditions and exceptions stated in the relevant Part of the Act.",
+   "quote": "A secure tenant of a dwelling-house in England has the right to buy"
+  },
+  {
+   "requirement": "A secure tenant has the right to acquire the freehold of the dwelling-house if the dwelling-house is a house and the landlord owns the freehold.",
+   "quote": "if the dwelling-house is a house and the landlord owns the freehold, to acquire the freehold of the dwelling-house"
+  },
+  {
+   "requirement": "A secure tenant has the right to be granted a lease of the dwelling-house if the landlord does not own the freehold or if the dwelling-house is a flat (whether or not the landlord owns the freehold).",
+   "quote": "if the landlord does not own the freehold or if the dwelling-house is a flat (whether or not the landlord owns the freehold), to be granted a lease of the dwelling-house"
+  },
+  {
+   "requirement": "Where a secure tenancy is a joint tenancy, the right to buy belongs jointly to all joint tenants, regardless of whether each tenant occupies the dwelling-house as their only or principal home, or to such one or more of them as they agree.",
+   "quote": "the right to buy belongs jointly to all of them or to such one or more of them as may be agreed between them"
+  },
+  {
+   "requirement": "An agreement allocating the right to buy among joint tenants is not valid unless the person or at least one of the persons to whom the right to buy is to belong occupies the dwelling-house as their only or principal home.",
+   "quote": "such an agreement is not valid unless the person or at least one of the persons to whom the right to buy is to belong occupies the dwelling-house as his only or principal home"
+  },
+  {
+   "requirement": "For the purposes of this Part, a dwelling-house that is a commonhold unit within the meaning of the Commonhold and Leasehold Reform Act 2002 must be treated as a house and not as a flat.",
+   "quote": "a dwelling-house which is a commonhold unit (within the meaning of the Commonhold and Leasehold Reform Act 2002) shall be treated as a house and not as a flat"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

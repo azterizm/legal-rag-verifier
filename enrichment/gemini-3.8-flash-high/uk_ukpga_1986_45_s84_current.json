@@ -1,0 +1,85 @@
+{
+ "key": "uk/ukpga/1986/45/s84@current",
+ "section": "uk/ukpga/1986/45/s84",
+ "version": "current",
+ "source_sha256": "cbcaf9de9b8adf97451135349edcbe77e40677bf8911750759a4704b08efad74",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company may be wound up voluntarily when the period (if any) fixed for the duration of the company by its articles expires, or the event (if any) occurs on the occurrence of which the articles provide that the company is to be dissolved, and the company in general meeting has passed a resolution requiring it to be wound up voluntarily.",
+    "quote": "when the period (if any) fixed for the duration of the company by the articles expires, or the event (if any) occurs, on the occurrence of which the articles provide that the company is to be dissolved, and the company in general meeting has passed a resolution requiring it be wound up voluntarily"
+   },
+   {
+    "requirement": "A company may be wound up voluntarily if the company resolves by special resolution that it be wound up voluntarily.",
+    "quote": "if the company resolves by special resolution that it be wound up voluntarily"
+   },
+   {
+    "requirement": "In the Insolvency Act 1986, the expression 'a resolution for voluntary winding up' means a resolution passed under either paragraph (a) or paragraph (b) of section 84(1).",
+    "quote": "In this Act the expression “a resolution for voluntary winding up” means a resolution passed under either of the paragraphs of subsection (1)."
+   },
+   {
+    "requirement": "Before a company passes a resolution for voluntary winding up, the company must give written notice of the resolution to the holder of any qualifying floating charge to which section 72A applies.",
+    "quote": "Before a company passes a resolution for voluntary winding up it must give written notice of the resolution to the holder of any qualifying floating charge to which section 72A applies."
+   },
+   {
+    "requirement": "Where notice is given under subsection (2A), a resolution for voluntary winding up may be passed only after the end of the period of five business days beginning with the day on which the notice was given, or if the person to whom the notice was given has consented in writing to the passing of the resolution.",
+    "quote": "Where notice is given under subsection (2A) a resolution for voluntary winding up may be passed only— (a) after the end of the period of five business days beginning with the day on which the notice was given, or (b) if the person to whom the notice was given has consented in writing to the passing of the resolution."
+   },
+   {
+    "requirement": "Chapter 3 of Part 3 of the Companies Act 2006 (resolutions affecting a company's constitution) applies to a resolution under section 84(1)(a) as well as to a special resolution under section 84(1)(b).",
+    "quote": "Chapter 3 of Part 3 of the Companies Act 2006 (resolutions affecting a company's constitution) applies to a resolution under paragraph (a) of subsection (1) as well as a special resolution under paragraph (b)."
+   },
+   {
+    "requirement": "Section 84 of the Insolvency Act 1986 has effect subject to section 43 of the Commonhold and Leasehold Reform Act 2002.",
+    "quote": "This section has effect subject to section 43 of the Commonhold and Leasehold Reform Act 2002."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the waiting period beginning with the day notice is given before a resolution for voluntary winding up may be passed without written consent",
+    "value": "five business days",
+    "quote": "period of five business days beginning with the day on which the notice was given"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A company may be wound up voluntarily when the period (if any) fixed for the duration of the company by its articles expires, or the event (if any) occurs on the occurrence of which the articles provide that the company is to be dissolved, and the company in general meeting has passed a resolution requiring it to be wound up voluntarily.",
+   "quote": "when the period (if any) fixed for the duration of the company by the articles expires, or the event (if any) occurs, on the occurrence of which the articles provide that the company is to be dissolved, and the company in general meeting has passed a resolution requiring it be wound up voluntarily"
+  },
+  {
+   "requirement": "A company may be wound up voluntarily if the company resolves by special resolution that it be wound up voluntarily.",
+   "quote": "if the company resolves by special resolution that it be wound up voluntarily"
+  },
+  {
+   "requirement": "In the Insolvency Act 1986, the expression 'a resolution for voluntary winding up' means a resolution passed under either paragraph (a) or paragraph (b) of section 84(1).",
+   "quote": "In this Act the expression “a resolution for voluntary winding up” means a resolution passed under either of the paragraphs of subsection (1)."
+  },
+  {
+   "requirement": "Before a company passes a resolution for voluntary winding up, the company must give written notice of the resolution to the holder of any qualifying floating charge to which section 72A applies.",
+   "quote": "Before a company passes a resolution for voluntary winding up it must give written notice of the resolution to the holder of any qualifying floating charge to which section 72A applies."
+  },
+  {
+   "requirement": "Where notice is given under subsection (2A), a resolution for voluntary winding up may be passed only after the end of the period of five business days beginning with the day on which the notice was given, or if the person to whom the notice was given has consented in writing to the passing of the resolution.",
+   "quote": "Where notice is given under subsection (2A) a resolution for voluntary winding up may be passed only— (a) after the end of the period of five business days beginning with the day on which the notice was given, or (b) if the person to whom the notice was given has consented in writing to the passing of the resolution."
+  },
+  {
+   "requirement": "Chapter 3 of Part 3 of the Companies Act 2006 (resolutions affecting a company's constitution) applies to a resolution under section 84(1)(a) as well as to a special resolution under section 84(1)(b).",
+   "quote": "Chapter 3 of Part 3 of the Companies Act 2006 (resolutions affecting a company's constitution) applies to a resolution under paragraph (a) of subsection (1) as well as a special resolution under paragraph (b)."
+  },
+  {
+   "requirement": "Section 84 of the Insolvency Act 1986 has effect subject to section 43 of the Commonhold and Leasehold Reform Act 2002.",
+   "quote": "This section has effect subject to section 43 of the Commonhold and Leasehold Reform Act 2002."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

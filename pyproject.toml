@@ -96,8 +96,8 @@ strict = true
 warn_unreachable = true
 enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
 mypy_path = "src"
-files = ["src", "tests"]
-exclude = ["^uk_scrap_data/", "^data/"]
+files = ["src", "tests", "scripts", "batteries"]
+exclude = ["^uk_scrap_data/", "^data/", "^batteries/router/"]
 
 [[tool.mypy.overrides]]
 module = ["torch", "torch.*", "transformers", "transformers.*"]
@@ -110,7 +110,11 @@ testpaths = ["tests"]
 pythonpath = ["."]
 addopts = ["-ra", "--strict-markers", "--strict-config"]
 xfail_strict = true
-filterwarnings = ["error"]
+filterwarnings = [
+    "error",
+    # transformers' DeBERTa-v2 modelling code still calls torch.jit.script (third-party, harmless)
+    "ignore:`torch.jit.script` is deprecated:FutureWarning",
+]
 markers = [
     "full_data: needs the local corpus under data/ (skipped in CI)",
     "torch: needs the [nli] or [hf] extra",

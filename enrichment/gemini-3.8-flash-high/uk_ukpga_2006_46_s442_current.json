@@ -1,0 +1,177 @@
+{
+ "key": "uk/ukpga/2006/46/s442@current",
+ "section": "uk/ukpga/2006/46/s442",
+ "version": "current",
+ "source_sha256": "0354272547db7c0a8469e8bf36cfc5541e4123a4ab90be7b918524a2b1c8dcdc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The period allowed for the directors of a company to comply with their obligation under section 441 to deliver accounts and reports for a financial year to the registrar is termed the period for filing.",
+    "quote": "period allowed for the directors of a company to comply with their obligation under section 441 to deliver accounts and reports"
+   },
+   {
+    "requirement": "For a private company, the period for filing is nine months after the end of the relevant accounting reference period, subject to the remaining provisions of section 442.",
+    "quote": "for a private company, nine months after the end of the relevant accounting reference period"
+   },
+   {
+    "requirement": "For a public company, the period for filing is six months after the end of the relevant accounting reference period, subject to the remaining provisions of section 442.",
+    "quote": "for a public company, six months after the end of that period"
+   },
+   {
+    "requirement": "If the relevant accounting reference period is the company's first and exceeds twelve months, the period for filing is the later of nine months (for a private company) or six months (for a public company) from the first anniversary of incorporation, or three months after the end of the accounting reference period.",
+    "quote": "nine months or six months, as the case may be, from the first anniversary of the incorporation of the company, or (b) three months after the end of the accounting reference period, whichever last expires"
+   },
+   {
+    "requirement": "If the relevant accounting reference period is treated as shortened by virtue of a notice given by the company under section 392, the period for filing is the later of the period otherwise applicable or three months from the date of the section 392 notice.",
+    "quote": "that applicable in accordance with the above provisions, or (b) three months from the date of the notice under that section, whichever last expires"
+   },
+   {
+    "requirement": "The Secretary of State may, on an application made before the expiry of the period otherwise allowed and for any special reason, extend the period by notice in writing to a company by such further period as specified in the notice.",
+    "quote": "on an application made before the expiry of the period otherwise allowed, by notice in writing to a company extend that period"
+   },
+   {
+    "requirement": "An extension granted by the Secretary of State must not extend the period for filing to more than twelve months after the end of the relevant accounting reference period.",
+    "quote": "must not have the effect of extending the period for filing to more than twelve months after the end of the relevant accounting reference period"
+   },
+   {
+    "requirement": "Whether the period allowed is that for a private company or a public company is determined by reference to the company's status immediately before the end of the relevant accounting reference period.",
+    "quote": "determined by reference to the company's status immediately before the end of the relevant accounting reference period"
+   },
+   {
+    "requirement": "The relevant accounting reference period means the accounting reference period by reference to which the financial year for the accounts in question was determined.",
+    "quote": "the accounting reference period by reference to which the financial year for the accounts in question was determined"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "standard period for filing accounts and reports for a private company after the end of the relevant accounting reference period",
+    "value": "nine months",
+    "quote": "for a private company, nine months after the end of the relevant accounting reference period"
+   },
+   {
+    "what": "standard period for filing accounts and reports for a public company after the end of the relevant accounting reference period",
+    "value": "six months",
+    "quote": "for a public company, six months after the end of that period"
+   },
+   {
+    "what": "duration of a company's first accounting reference period that triggers the special filing period rule",
+    "value": "more than twelve months",
+    "quote": "a period of more than twelve months"
+   },
+   {
+    "what": "period for filing for a private company measured from the first anniversary of incorporation where the first accounting reference period exceeds twelve months",
+    "value": "nine months",
+    "quote": "nine months or six months, as the case may be, from the first anniversary of the incorporation of the company"
+   },
+   {
+    "what": "period for filing for a public company measured from the first anniversary of incorporation where the first accounting reference period exceeds twelve months",
+    "value": "six months",
+    "quote": "nine months or six months, as the case may be, from the first anniversary of the incorporation of the company"
+   },
+   {
+    "what": "alternative period for filing after the end of the accounting reference period where the first accounting reference period exceeds twelve months",
+    "value": "three months",
+    "quote": "three months after the end of the accounting reference period"
+   },
+   {
+    "what": "alternative period for filing from the date of notice where the relevant accounting reference period is treated as shortened under section 392",
+    "value": "three months",
+    "quote": "three months from the date of the notice under that section"
+   },
+   {
+    "what": "maximum limit on the period for filing after the end of the relevant accounting reference period following an extension by the Secretary of State",
+    "value": "twelve months",
+    "quote": "extending the period for filing to more than twelve months after the end of the relevant accounting reference period"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The period allowed for the directors of a company to comply with their obligation under section 441 to deliver accounts and reports for a financial year to the registrar is termed the period for filing.",
+   "quote": "period allowed for the directors of a company to comply with their obligation under section 441 to deliver accounts and reports"
+  },
+  {
+   "requirement": "For a private company, the period for filing is nine months after the end of the relevant accounting reference period, subject to the remaining provisions of section 442.",
+   "quote": "for a private company, nine months after the end of the relevant accounting reference period"
+  },
+  {
+   "requirement": "For a public company, the period for filing is six months after the end of the relevant accounting reference period, subject to the remaining provisions of section 442.",
+   "quote": "for a public company, six months after the end of that period"
+  },
+  {
+   "requirement": "If the relevant accounting reference period is the company's first and exceeds twelve months, the period for filing is the later of nine months (for a private company) or six months (for a public company) from the first anniversary of incorporation, or three months after the end of the accounting reference period.",
+   "quote": "nine months or six months, as the case may be, from the first anniversary of the incorporation of the company, or (b) three months after the end of the accounting reference period, whichever last expires"
+  },
+  {
+   "requirement": "If the relevant accounting reference period is treated as shortened by virtue of a notice given by the company under section 392, the period for filing is the later of the period otherwise applicable or three months from the date of the section 392 notice.",
+   "quote": "that applicable in accordance with the above provisions, or (b) three months from the date of the notice under that section, whichever last expires"
+  },
+  {
+   "requirement": "The Secretary of State may, on an application made before the expiry of the period otherwise allowed and for any special reason, extend the period by notice in writing to a company by such further period as specified in the notice.",
+   "quote": "on an application made before the expiry of the period otherwise allowed, by notice in writing to a company extend that period"
+  },
+  {
+   "requirement": "An extension granted by the Secretary of State must not extend the period for filing to more than twelve months after the end of the relevant accounting reference period.",
+   "quote": "must not have the effect of extending the period for filing to more than twelve months after the end of the relevant accounting reference period"
+  },
+  {
+   "requirement": "Whether the period allowed is that for a private company or a public company is determined by reference to the company's status immediately before the end of the relevant accounting reference period.",
+   "quote": "determined by reference to the company's status immediately before the end of the relevant accounting reference period"
+  },
+  {
+   "requirement": "The relevant accounting reference period means the accounting reference period by reference to which the financial year for the accounts in question was determined.",
+   "quote": "the accounting reference period by reference to which the financial year for the accounts in question was determined"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "standard period for filing accounts and reports for a private company after the end of the relevant accounting reference period",
+   "value": "nine months",
+   "quote": "for a private company, nine months after the end of the relevant accounting reference period"
+  },
+  {
+   "what": "standard period for filing accounts and reports for a public company after the end of the relevant accounting reference period",
+   "value": "six months",
+   "quote": "for a public company, six months after the end of that period"
+  },
+  {
+   "what": "duration of a company's first accounting reference period that triggers the special filing period rule",
+   "value": "more than twelve months",
+   "quote": "a period of more than twelve months"
+  },
+  {
+   "what": "period for filing for a private company measured from the first anniversary of incorporation where the first accounting reference period exceeds twelve months",
+   "value": "nine months",
+   "quote": "nine months or six months, as the case may be, from the first anniversary of the incorporation of the company"
+  },
+  {
+   "what": "period for filing for a public company measured from the first anniversary of incorporation where the first accounting reference period exceeds twelve months",
+   "value": "six months",
+   "quote": "nine months or six months, as the case may be, from the first anniversary of the incorporation of the company"
+  },
+  {
+   "what": "alternative period for filing after the end of the accounting reference period where the first accounting reference period exceeds twelve months",
+   "value": "three months",
+   "quote": "three months after the end of the accounting reference period"
+  },
+  {
+   "what": "alternative period for filing from the date of notice where the relevant accounting reference period is treated as shortened under section 392",
+   "value": "three months",
+   "quote": "three months from the date of the notice under that section"
+  },
+  {
+   "what": "maximum limit on the period for filing after the end of the relevant accounting reference period following an extension by the Secretary of State",
+   "value": "twelve months",
+   "quote": "extending the period for filing to more than twelve months after the end of the relevant accounting reference period"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 8,
+  "thresholds_verified": 8
+ }
+}

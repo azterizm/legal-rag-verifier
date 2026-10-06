@@ -1,0 +1,160 @@
+{
+ "key": "uk/uksi/2006/246/reg4@current",
+ "section": "uk/uksi/2006/246/reg4",
+ "version": "current",
+ "source_sha256": "165c5ca12303ad6927497e30fbfaad2a665a83fa512558354a5ed542e4e7fab4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Except where an employee objects under paragraph (7), a relevant transfer does not terminate the contract of employment of any person employed by the transferor and assigned to the transferred organised grouping of resources or employees.",
+    "quote": "Except where objection is made under paragraph (7), a relevant transfer shall not operate so as to terminate the contract of employment of any person employed by the transferor and assigned to the organised grouping of resources or employees that is subject to the relevant transfer"
+   },
+   {
+    "requirement": "The contract of employment of an assigned employee has effect after the relevant transfer as if it had originally been made between the employee and the transferee.",
+    "quote": "any such contract shall have effect after the transfer as if originally made between the person so employed and the transferee"
+   },
+   {
+    "requirement": "On the completion of a relevant transfer, subject to paragraph (6) and regulations 8 and 15(9), all rights, powers, duties, and liabilities of the transferor under or in connection with the transferred employment contract transfer to the transferee.",
+    "quote": "all the transferor’s rights, powers, duties and liabilities under or in connection with any such contract shall be transferred by virtue of this regulation to the transferee"
+   },
+   {
+    "requirement": "On completion of a relevant transfer, any pre-completion act or omission of or in relation to the transferor regarding the contract or assigned employee is deemed to have been an act or omission of or in relation to the transferee, subject to paragraph (6) and regulations 8 and 15(9).",
+    "quote": "any act or omission before the transfer is completed, of or in relation to the transferor in respect of that contract or a person assigned to that organised grouping of resources or employees, shall be deemed to have been an act or omission of or in relation to the transferee"
+   },
+   {
+    "requirement": "The assigned employees covered by paragraph (1) comprise those employed immediately before the transfer or those who would have been so employed had they not been dismissed in the circumstances described in regulation 7(1).",
+    "quote": "is a reference to a person so employed immediately before the transfer, or who would have been so employed if he had not been dismissed in the circumstances described in regulation 7(1)"
+   },
+   {
+    "requirement": "Where a relevant transfer is effected by a series of two or more transactions, the scope of assigned employees includes any person employed and assigned, or who would have been so employed and assigned, immediately before any of those transactions.",
+    "quote": "where the transfer is effected by a series of two or more transactions, a person so employed and assigned or who would have been so employed and assigned immediately before any of those transactions"
+   },
+   {
+    "requirement": "For the purposes of paragraph (5), the expression 'changes in the workforce' includes a change to the place where employees are employed by the employer to carry on business or carry out work of a particular kind.",
+    "quote": "the expression “changes in the workforce” includes a change to the place where employees are employed by the employer to carry on the business of the employer or to carry out work of a particular kind for the employer"
+   },
+   {
+    "requirement": "Paragraph (4) does not apply to a contract variation of a term or condition incorporated from a collective agreement, provided that the variation takes effect more than one year after the transfer date and the resulting contractual rights and obligations considered together are no less favourable to the employee than those applying immediately beforehand.",
+    "quote": "Paragraph (4) does not apply in respect of a variation of the contract of employment in so far as it varies a term or condition incorporated from a collective agreement, provided that— (a) the variation of the contract takes effect on a date more than one year after the date of the transfer; and (b) following that variation, the rights and obligations in the employee’s contract, when considered together, are no less favourable to the employee than those which applied immediately before the variation"
+   },
+   {
+    "requirement": "Paragraphs (5) and (5B) do not affect any rule of law regarding whether a contract of employment is effectively varied.",
+    "quote": "Paragraphs (5) and (5B) do not affect any rule of law as to whether a contract of employment is effectively varied"
+   },
+   {
+    "requirement": "Paragraph (2) does not transfer or affect the liability of any person to be prosecuted for, convicted of, or sentenced for any criminal offence.",
+    "quote": "Paragraph (2) shall not transfer or otherwise affect the liability of any person to be prosecuted for, convicted of and sentenced for any offence"
+   },
+   {
+    "requirement": "Paragraphs (1) and (2) do not transfer the contract of employment or associated rights, powers, duties, and liabilities of an employee who informs the transferor or transferee that they object to becoming employed by the transferee.",
+    "quote": "Paragraphs (1) and (2) shall not operate to transfer the contract of employment and the rights, powers, duties and liabilities under or in connection with it of an employee who informs the transferor or the transferee that he objects to becoming employed by the transferee"
+   },
+   {
+    "requirement": "Where an employee objects to becoming employed by the transferee, the relevant transfer terminates their contract of employment with the transferor, but subject to paragraphs (9) and (11), the employee is not treated for any purpose as having been dismissed by the transferor.",
+    "quote": "Subject to paragraphs (9) and (11), where an employee so objects, the relevant transfer shall operate so as to terminate his contract of employment with the transferor but he shall not be treated, for any purpose, as having been dismissed by the transferor"
+   },
+   {
+    "requirement": "Subject to regulation 9, where a relevant transfer involves or would involve a substantial change in working conditions to the material detriment of an employee whose contract would otherwise transfer under paragraph (1), that employee may treat the contract as terminated and must be treated for any purpose as dismissed by the employer.",
+    "quote": "Subject to regulation 9, where a relevant transfer involves or would involve a substantial change in working conditions to the material detriment of a person whose contract of employment is or would be transferred under paragraph (1), such an employee may treat the contract of employment as having been terminated, and the employee shall be treated for any purpose as having been dismissed by the employer"
+   },
+   {
+    "requirement": "An employer is not liable to pay damages as a result of a dismissal under paragraph (9) for any failure to pay wages to an employee in respect of a notice period that the employee failed to work.",
+    "quote": "No damages shall be payable by an employer as a result of a dismissal falling within paragraph (9) in respect of any failure by the employer to pay wages to an employee in respect of a notice period which the employee has failed to work"
+   },
+   {
+    "requirement": "Paragraphs (1), (7), (8), and (9) do not prejudice any right an employee has outside these Regulations to terminate their employment contract without notice in acceptance of a repudiatory breach of contract by their employer.",
+    "quote": "Paragraphs (1), (7), (8) and (9) are without prejudice to any right of an employee arising apart from these Regulations to terminate his contract of employment without notice in acceptance of a repudiatory breach of contract by his employer"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of transactions in a series effecting a relevant transfer",
+    "value": "two or more",
+    "quote": "where the transfer is effected by a series of two or more transactions"
+   },
+   {
+    "what": "minimum elapsed time following the date of transfer before a variation of a collective agreement term or condition can take effect under paragraph (5B)",
+    "value": "more than one year",
+    "quote": "takes effect on a date more than one year after the date of the transfer"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Except where an employee objects under paragraph (7), a relevant transfer does not terminate the contract of employment of any person employed by the transferor and assigned to the transferred organised grouping of resources or employees.",
+   "quote": "Except where objection is made under paragraph (7), a relevant transfer shall not operate so as to terminate the contract of employment of any person employed by the transferor and assigned to the organised grouping of resources or employees that is subject to the relevant transfer"
+  },
+  {
+   "requirement": "The contract of employment of an assigned employee has effect after the relevant transfer as if it had originally been made between the employee and the transferee.",
+   "quote": "any such contract shall have effect after the transfer as if originally made between the person so employed and the transferee"
+  },
+  {
+   "requirement": "On the completion of a relevant transfer, subject to paragraph (6) and regulations 8 and 15(9), all rights, powers, duties, and liabilities of the transferor under or in connection with the transferred employment contract transfer to the transferee.",
+   "quote": "all the transferor’s rights, powers, duties and liabilities under or in connection with any such contract shall be transferred by virtue of this regulation to the transferee"
+  },
+  {
+   "requirement": "On completion of a relevant transfer, any pre-completion act or omission of or in relation to the transferor regarding the contract or assigned employee is deemed to have been an act or omission of or in relation to the transferee, subject to paragraph (6) and regulations 8 and 15(9).",
+   "quote": "any act or omission before the transfer is completed, of or in relation to the transferor in respect of that contract or a person assigned to that organised grouping of resources or employees, shall be deemed to have been an act or omission of or in relation to the transferee"
+  },
+  {
+   "requirement": "The assigned employees covered by paragraph (1) comprise those employed immediately before the transfer or those who would have been so employed had they not been dismissed in the circumstances described in regulation 7(1).",
+   "quote": "is a reference to a person so employed immediately before the transfer, or who would have been so employed if he had not been dismissed in the circumstances described in regulation 7(1)"
+  },
+  {
+   "requirement": "Where a relevant transfer is effected by a series of two or more transactions, the scope of assigned employees includes any person employed and assigned, or who would have been so employed and assigned, immediately before any of those transactions.",
+   "quote": "where the transfer is effected by a series of two or more transactions, a person so employed and assigned or who would have been so employed and assigned immediately before any of those transactions"
+  },
+  {
+   "requirement": "For the purposes of paragraph (5), the expression 'changes in the workforce' includes a change to the place where employees are employed by the employer to carry on business or carry out work of a particular kind.",
+   "quote": "the expression “changes in the workforce” includes a change to the place where employees are employed by the employer to carry on the business of the employer or to carry out work of a particular kind for the employer"
+  },
+  {
+   "requirement": "Paragraph (4) does not apply to a contract variation of a term or condition incorporated from a collective agreement, provided that the variation takes effect more than one year after the transfer date and the resulting contractual rights and obligations considered together are no less favourable to the employee than those applying immediately beforehand.",
+   "quote": "Paragraph (4) does not apply in respect of a variation of the contract of employment in so far as it varies a term or condition incorporated from a collective agreement, provided that— (a) the variation of the contract takes effect on a date more than one year after the date of the transfer; and (b) following that variation, the rights and obligations in the employee’s contract, when considered together, are no less favourable to the employee than those which applied immediately before the variation"
+  },
+  {
+   "requirement": "Paragraphs (5) and (5B) do not affect any rule of law regarding whether a contract of employment is effectively varied.",
+   "quote": "Paragraphs (5) and (5B) do not affect any rule of law as to whether a contract of employment is effectively varied"
+  },
+  {
+   "requirement": "Paragraph (2) does not transfer or affect the liability of any person to be prosecuted for, convicted of, or sentenced for any criminal offence.",
+   "quote": "Paragraph (2) shall not transfer or otherwise affect the liability of any person to be prosecuted for, convicted of and sentenced for any offence"
+  },
+  {
+   "requirement": "Paragraphs (1) and (2) do not transfer the contract of employment or associated rights, powers, duties, and liabilities of an employee who informs the transferor or transferee that they object to becoming employed by the transferee.",
+   "quote": "Paragraphs (1) and (2) shall not operate to transfer the contract of employment and the rights, powers, duties and liabilities under or in connection with it of an employee who informs the transferor or the transferee that he objects to becoming employed by the transferee"
+  },
+  {
+   "requirement": "Where an employee objects to becoming employed by the transferee, the relevant transfer terminates their contract of employment with the transferor, but subject to paragraphs (9) and (11), the employee is not treated for any purpose as having been dismissed by the transferor.",
+   "quote": "Subject to paragraphs (9) and (11), where an employee so objects, the relevant transfer shall operate so as to terminate his contract of employment with the transferor but he shall not be treated, for any purpose, as having been dismissed by the transferor"
+  },
+  {
+   "requirement": "Subject to regulation 9, where a relevant transfer involves or would involve a substantial change in working conditions to the material detriment of an employee whose contract would otherwise transfer under paragraph (1), that employee may treat the contract as terminated and must be treated for any purpose as dismissed by the employer.",
+   "quote": "Subject to regulation 9, where a relevant transfer involves or would involve a substantial change in working conditions to the material detriment of a person whose contract of employment is or would be transferred under paragraph (1), such an employee may treat the contract of employment as having been terminated, and the employee shall be treated for any purpose as having been dismissed by the employer"
+  },
+  {
+   "requirement": "An employer is not liable to pay damages as a result of a dismissal under paragraph (9) for any failure to pay wages to an employee in respect of a notice period that the employee failed to work.",
+   "quote": "No damages shall be payable by an employer as a result of a dismissal falling within paragraph (9) in respect of any failure by the employer to pay wages to an employee in respect of a notice period which the employee has failed to work"
+  },
+  {
+   "requirement": "Paragraphs (1), (7), (8), and (9) do not prejudice any right an employee has outside these Regulations to terminate their employment contract without notice in acceptance of a repudiatory breach of contract by their employer.",
+   "quote": "Paragraphs (1), (7), (8) and (9) are without prejudice to any right of an employee arising apart from these Regulations to terminate his contract of employment without notice in acceptance of a repudiatory breach of contract by his employer"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum elapsed time following the date of transfer before a variation of a collective agreement term or condition can take effect under paragraph (5B)",
+   "value": "more than one year",
+   "quote": "takes effect on a date more than one year after the date of the transfer"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

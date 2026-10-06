@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2000/36/s1@current",
+ "section": "uk/ukpga/2000/36/s1",
+ "version": "current",
+ "source_sha256": "f8084de3555a9ee99b4e16ca8eead1c991337f64ce1892a83e08d5ca409dbdb1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any person who makes a request for information to a public authority is entitled to be informed in writing by that public authority whether it holds information of the description specified in the request.",
+    "quote": "to be informed in writing by the public authority whether it holds information of the description specified in the request"
+   },
+   {
+    "requirement": "Any person who makes a request for information to a public authority is entitled to have that information communicated to him if the public authority holds information of the description specified in the request.",
+    "quote": "if that is the case, to have that information communicated to him"
+   },
+   {
+    "requirement": "The entitlements of an applicant under section 1(1) are subject to the remaining provisions of section 1 as well as the provisions of sections 2, 9, 12 and 14.",
+    "quote": "Subsection (1) has effect subject to the following provisions of this section and to the provisions of sections 2, 9, 12 and 14."
+   },
+   {
+    "requirement": "A public authority is not obliged to comply with section 1(1) if it reasonably requires further information to identify and locate the information requested, has informed the applicant of that requirement, and has not been supplied with that further information.",
+    "quote": "the authority is not obliged to comply with subsection (1) unless it is supplied with that further information"
+   },
+   {
+    "requirement": "The information that an applicant is entitled to be informed of under section 1(1)(a) or to have communicated under section 1(1)(b) is the information held at the time the request is received.",
+    "quote": "is the information in question held at the time when the request is received"
+   },
+   {
+    "requirement": "A public authority may take account of any amendment or deletion of the requested information made between the time the request is received and the time the information is to be communicated under section 1(1)(b), provided that amendment or deletion would have been made regardless of the receipt of the request.",
+    "quote": "except that account may be taken of any amendment or deletion made between that time and the time when the information is to be communicated under subsection (1)(b), being an amendment or deletion that would have been made regardless of the receipt of the request"
+   },
+   {
+    "requirement": "A public authority is deemed to have complied with section 1(1)(a) in relation to any information if it has communicated that information to the applicant in accordance with section 1(1)(b).",
+    "quote": "A public authority is to be taken to have complied with subsection (1)(a) in relation to any information if it has communicated the information to the applicant in accordance with subsection (1)(b)."
+   },
+   {
+    "requirement": "In the Freedom of Information Act 2000, the duty of a public authority to comply with section 1(1)(a) is defined as 'the duty to confirm or deny'.",
+    "quote": "the duty of a public authority to comply with subsection (1)(a) is referred to as “the duty to confirm or deny”"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any person who makes a request for information to a public authority is entitled to be informed in writing by that public authority whether it holds information of the description specified in the request.",
+   "quote": "to be informed in writing by the public authority whether it holds information of the description specified in the request"
+  },
+  {
+   "requirement": "Any person who makes a request for information to a public authority is entitled to have that information communicated to him if the public authority holds information of the description specified in the request.",
+   "quote": "if that is the case, to have that information communicated to him"
+  },
+  {
+   "requirement": "The entitlements of an applicant under section 1(1) are subject to the remaining provisions of section 1 as well as the provisions of sections 2, 9, 12 and 14.",
+   "quote": "Subsection (1) has effect subject to the following provisions of this section and to the provisions of sections 2, 9, 12 and 14."
+  },
+  {
+   "requirement": "A public authority is not obliged to comply with section 1(1) if it reasonably requires further information to identify and locate the information requested, has informed the applicant of that requirement, and has not been supplied with that further information.",
+   "quote": "the authority is not obliged to comply with subsection (1) unless it is supplied with that further information"
+  },
+  {
+   "requirement": "The information that an applicant is entitled to be informed of under section 1(1)(a) or to have communicated under section 1(1)(b) is the information held at the time the request is received.",
+   "quote": "is the information in question held at the time when the request is received"
+  },
+  {
+   "requirement": "A public authority may take account of any amendment or deletion of the requested information made between the time the request is received and the time the information is to be communicated under section 1(1)(b), provided that amendment or deletion would have been made regardless of the receipt of the request.",
+   "quote": "except that account may be taken of any amendment or deletion made between that time and the time when the information is to be communicated under subsection (1)(b), being an amendment or deletion that would have been made regardless of the receipt of the request"
+  },
+  {
+   "requirement": "A public authority is deemed to have complied with section 1(1)(a) in relation to any information if it has communicated that information to the applicant in accordance with section 1(1)(b).",
+   "quote": "A public authority is to be taken to have complied with subsection (1)(a) in relation to any information if it has communicated the information to the applicant in accordance with subsection (1)(b)."
+  },
+  {
+   "requirement": "In the Freedom of Information Act 2000, the duty of a public authority to comply with section 1(1)(a) is defined as 'the duty to confirm or deny'.",
+   "quote": "the duty of a public authority to comply with subsection (1)(a) is referred to as “the duty to confirm or deny”"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

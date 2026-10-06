@@ -42,13 +42,29 @@ details`, plus `.ungrounded` (surface texts) and `.to_dict()` (JSON-ready).
 `MONEY PERCENT DATE DURATION NUMBER CITATION INSTRUMENT` and canonical values such as `GBP:68400`, `2026-04-06`,
 `3:month`, `s124/1ZA/a`, `employment rights act 1996`, `si:2026/310`, `acr:ERA1996`.
 
+## 2a. NLI head (M2, `[nli]` extra)
+
+```python
+from legal_rag_verifier.nli import SentenceNLIVerifier
+
+nli = SentenceNLIVerifier(model_name="cross-encoder/nli-deberta-v3-small", device=None)  # cuda > mps > cpu
+nli.score(premises, hypothesis) -> list[NLIProbs]      # one batch; one result per premise
+nli.model_id                                           # "name@<commit>" from the local hub cache
+Verifier(nli=nli)
+```
+
+Labels come from the model's `id2label`. A premise longer than the encoder budget is split into chunks (sentence
+boundaries, then words); a premise's score is its most related chunk. The verifier scores each window (with its
+heading: instrument, citation, section title) and each window joined with a window it cites, in one batch.
+
 ## 3. Order of checks
 
-1. **Grounding** over the whole premise, declared metadata and the query. Miss → rollback, NLI not run.
+1. **Grounding** over the whole premise, declared metadata and, for figures only, the query. Miss → rollback, NLI not run.
 2. **Alignment**: top-k windows (lexical now; NLI best-entailed in M2), floor `align_ratio`, plus one hop of
    windows they cite ("subsection (1ZA)" pulls in (1ZA)).
-3. **Window checks**: value swap (R3), dropped qualifier (R2, provision windows only, not facts), deontic shift.
-4. **NLI** (M2): contradiction > 0.40 → rollback; entailment ≤ 0.70 → rollback if the sentence has a claim or a
+3. **Window checks**: value swap (R3), dropped qualifier (R2: caps, comparatives and conditions; not a minimum stated as the threshold; provision windows only, not facts), deontic shift.
+4. **NLI** (M2): windows ranked by relatedness (1 − P(neutral)); on the most related window,
+   contradiction > 0.40 → rollback; entailment ≤ 0.70 → rollback if the sentence has a claim or a
    modal, else per `neutral_policy` (R7).
 
 ## 4. Repair hints (consumed by the M3 engine)

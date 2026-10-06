@@ -1,0 +1,124 @@
+{
+ "key": "uk/ukpga/1987/43/s2@current",
+ "section": "uk/ukpga/1987/43/s2",
+ "version": "current",
+ "source_sha256": "92d1a1c75185e2433cedbe407881c165b090dd6266b090d2f0e2d3bca181e317",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the following provisions of Part I, every producer, person holding themselves out as producer, or importer into the United Kingdom is liable for damage where that damage is caused wholly or partly by a defect in a product.",
+    "quote": "where any damage is caused wholly or partly by a defect in a product, every person to whom subsection (2) below applies shall be liable for the damage"
+   },
+   {
+    "requirement": "Subsection (2) applies to the producer of the product.",
+    "quote": "the producer of the product"
+   },
+   {
+    "requirement": "Subsection (2) applies to any person who has held himself out to be the producer of the product by putting his name on the product or by using a trade mark or other distinguishing mark in relation to the product.",
+    "quote": "any person who, by putting his name on the product or using a trade mark or other distinguishing mark in relation to the product, has held himself out to be the producer of the product"
+   },
+   {
+    "requirement": "Subsection (2) applies to any person who has imported the product into the United Kingdom in order to supply it to another in the course of any business of his.",
+    "quote": "any person who has imported the product into the United Kingdom in order, in the course of any business of his, to supply it to another"
+   },
+   {
+    "requirement": "Subject to the provisions of Part I, where damage is caused wholly or partly by a defect in a product, any person who supplied the product (whether to the person who suffered the damage, to the producer of any product in which the product in question is comprised, or to any other person) shall be liable for the damage if statutory conditions concerning a request for identification are satisfied.",
+    "quote": "any person who supplied the product (whether to the person who suffered the damage, to the producer of any product in which the product in question is comprised or to any other person) shall be liable for the damage"
+   },
+   {
+    "requirement": "To trigger supplier liability, the person who suffered the damage must request the supplier to identify one or more of the persons (whether still in existence or not) who produced, held themselves out as producer of, or imported the product into the United Kingdom.",
+    "quote": "the person who suffered the damage requests the supplier to identify one or more of the persons (whether still in existence or not) to whom subsection (2) above applies in relation to the product"
+   },
+   {
+    "requirement": "The request to the supplier must be made within a reasonable period after the damage occurs and at a time when it is not reasonably practicable for the person making the request to identify all the producers, persons holding themselves out as producers, or importers.",
+    "quote": "that request is made within a reasonable period after the damage occurs and at a time when it is not reasonably practicable for the person making the request to identify all those persons"
+   },
+   {
+    "requirement": "The supplier must fail, within a reasonable period after receiving the request, either to comply with the request or to identify the person who supplied the product to the supplier.",
+    "quote": "the supplier fails, within a reasonable period after receiving the request, either to comply with the request or to identify the person who supplied the product to him"
+   },
+   {
+    "requirement": "Where two or more persons are liable by virtue of Part I of the Consumer Protection Act 1987 for the same damage, their liability shall be joint and several.",
+    "quote": "Where two or more persons are liable by virtue of this Part for the same damage, their liability shall be joint and several."
+   },
+   {
+    "requirement": "Section 2 of the Consumer Protection Act 1987 operates without prejudice to any liability arising otherwise than by virtue of Part I.",
+    "quote": "This section shall be without prejudice to any liability arising otherwise than by virtue of this Part."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of subsection (2) persons that the person who suffered damage may request the supplier to identify",
+    "value": "one or more",
+    "quote": "identify one or more of the persons"
+   },
+   {
+    "what": "period following the occurrence of damage within which the injured person must make the identification request to the supplier",
+    "value": "a reasonable period",
+    "quote": "within a reasonable period after the damage occurs"
+   },
+   {
+    "what": "period following receipt of the request within which the supplier must comply or identify their own supplier",
+    "value": "a reasonable period",
+    "quote": "within a reasonable period after receiving the request"
+   },
+   {
+    "what": "number of liable persons that triggers joint and several liability for the same damage",
+    "value": "two or more",
+    "quote": "Where two or more persons are liable by virtue of this Part"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the following provisions of Part I, every producer, person holding themselves out as producer, or importer into the United Kingdom is liable for damage where that damage is caused wholly or partly by a defect in a product.",
+   "quote": "where any damage is caused wholly or partly by a defect in a product, every person to whom subsection (2) below applies shall be liable for the damage"
+  },
+  {
+   "requirement": "Subsection (2) applies to the producer of the product.",
+   "quote": "the producer of the product"
+  },
+  {
+   "requirement": "Subsection (2) applies to any person who has held himself out to be the producer of the product by putting his name on the product or by using a trade mark or other distinguishing mark in relation to the product.",
+   "quote": "any person who, by putting his name on the product or using a trade mark or other distinguishing mark in relation to the product, has held himself out to be the producer of the product"
+  },
+  {
+   "requirement": "Subsection (2) applies to any person who has imported the product into the United Kingdom in order to supply it to another in the course of any business of his.",
+   "quote": "any person who has imported the product into the United Kingdom in order, in the course of any business of his, to supply it to another"
+  },
+  {
+   "requirement": "Subject to the provisions of Part I, where damage is caused wholly or partly by a defect in a product, any person who supplied the product (whether to the person who suffered the damage, to the producer of any product in which the product in question is comprised, or to any other person) shall be liable for the damage if statutory conditions concerning a request for identification are satisfied.",
+   "quote": "any person who supplied the product (whether to the person who suffered the damage, to the producer of any product in which the product in question is comprised or to any other person) shall be liable for the damage"
+  },
+  {
+   "requirement": "To trigger supplier liability, the person who suffered the damage must request the supplier to identify one or more of the persons (whether still in existence or not) who produced, held themselves out as producer of, or imported the product into the United Kingdom.",
+   "quote": "the person who suffered the damage requests the supplier to identify one or more of the persons (whether still in existence or not) to whom subsection (2) above applies in relation to the product"
+  },
+  {
+   "requirement": "The request to the supplier must be made within a reasonable period after the damage occurs and at a time when it is not reasonably practicable for the person making the request to identify all the producers, persons holding themselves out as producers, or importers.",
+   "quote": "that request is made within a reasonable period after the damage occurs and at a time when it is not reasonably practicable for the person making the request to identify all those persons"
+  },
+  {
+   "requirement": "The supplier must fail, within a reasonable period after receiving the request, either to comply with the request or to identify the person who supplied the product to the supplier.",
+   "quote": "the supplier fails, within a reasonable period after receiving the request, either to comply with the request or to identify the person who supplied the product to him"
+  },
+  {
+   "requirement": "Where two or more persons are liable by virtue of Part I of the Consumer Protection Act 1987 for the same damage, their liability shall be joint and several.",
+   "quote": "Where two or more persons are liable by virtue of this Part for the same damage, their liability shall be joint and several."
+  },
+  {
+   "requirement": "Section 2 of the Consumer Protection Act 1987 operates without prejudice to any liability arising otherwise than by virtue of Part I.",
+   "quote": "This section shall be without prejudice to any liability arising otherwise than by virtue of this Part."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

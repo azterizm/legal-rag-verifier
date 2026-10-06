@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2006/46/s260@current",
+ "section": "uk/ukpga/2006/46/s260",
+ "version": "current",
+ "source_sha256": "60d4a9e7e5a8cac30d6077699d043b8aa99e81b8ec63db9ec121c33c7cc2f2a3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "This Chapter applies to proceedings in England and Wales or Northern Ireland brought by a member of a company in respect of a cause of action vested in the company and seeking relief on behalf of the company.",
+    "quote": "proceedings in England and Wales or Northern Ireland by a member of a company— (a) in respect of a cause of action vested in the company, and (b) seeking relief on behalf of the company"
+   },
+   {
+    "requirement": "Proceedings in England and Wales or Northern Ireland brought by a member of a company in respect of a cause of action vested in the company and seeking relief on behalf of the company are defined in this Chapter as a derivative claim.",
+    "quote": "This is referred to in this Chapter as a “derivative claim”"
+   },
+   {
+    "requirement": "A derivative claim may only be brought under this Chapter or pursuant to a court order made in unfair prejudice proceedings under section 994.",
+    "quote": "A derivative claim may only be brought— (a) under this Chapter, or (b) in pursuance of an order of the court in proceedings under section 994"
+   },
+   {
+    "requirement": "A derivative claim under this Chapter may only be brought in respect of a cause of action that arises from an actual or proposed act or omission involving negligence, default, breach of duty, or breach of trust by a director of the company.",
+    "quote": "arising from an actual or proposed act or omission involving negligence, default, breach of duty or breach of trust by a director of the company"
+   },
+   {
+    "requirement": "A cause of action forming the basis of a derivative claim may be brought against the director, against another person, or against both.",
+    "quote": "The cause of action may be against the director or another person (or both)"
+   },
+   {
+    "requirement": "A person seeking to bring or continue a derivative claim may do so regardless of whether the cause of action arose before or after that person became a member of the company.",
+    "quote": "immaterial whether the cause of action arose before or after the person seeking to bring or continue the derivative claim became a member of the company"
+   },
+   {
+    "requirement": "For the purposes of this Chapter, the term director includes any former director of the company.",
+    "quote": "“director” includes a former director"
+   },
+   {
+    "requirement": "For the purposes of this Chapter, a shadow director must be treated as a director of the company.",
+    "quote": "a shadow director is treated as a director"
+   },
+   {
+    "requirement": "For the purposes of this Chapter, any reference to a member of a company includes a person who is not a member but to whom shares in the company have been transferred or transmitted by operation of law.",
+    "quote": "references to a member of a company include a person who is not a member but to whom shares in the company have been transferred or transmitted by operation of law"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "This Chapter applies to proceedings in England and Wales or Northern Ireland brought by a member of a company in respect of a cause of action vested in the company and seeking relief on behalf of the company.",
+   "quote": "proceedings in England and Wales or Northern Ireland by a member of a company— (a) in respect of a cause of action vested in the company, and (b) seeking relief on behalf of the company"
+  },
+  {
+   "requirement": "Proceedings in England and Wales or Northern Ireland brought by a member of a company in respect of a cause of action vested in the company and seeking relief on behalf of the company are defined in this Chapter as a derivative claim.",
+   "quote": "This is referred to in this Chapter as a “derivative claim”"
+  },
+  {
+   "requirement": "A derivative claim may only be brought under this Chapter or pursuant to a court order made in unfair prejudice proceedings under section 994.",
+   "quote": "A derivative claim may only be brought— (a) under this Chapter, or (b) in pursuance of an order of the court in proceedings under section 994"
+  },
+  {
+   "requirement": "A derivative claim under this Chapter may only be brought in respect of a cause of action that arises from an actual or proposed act or omission involving negligence, default, breach of duty, or breach of trust by a director of the company.",
+   "quote": "arising from an actual or proposed act or omission involving negligence, default, breach of duty or breach of trust by a director of the company"
+  },
+  {
+   "requirement": "A cause of action forming the basis of a derivative claim may be brought against the director, against another person, or against both.",
+   "quote": "The cause of action may be against the director or another person (or both)"
+  },
+  {
+   "requirement": "A person seeking to bring or continue a derivative claim may do so regardless of whether the cause of action arose before or after that person became a member of the company.",
+   "quote": "immaterial whether the cause of action arose before or after the person seeking to bring or continue the derivative claim became a member of the company"
+  },
+  {
+   "requirement": "For the purposes of this Chapter, the term director includes any former director of the company.",
+   "quote": "“director” includes a former director"
+  },
+  {
+   "requirement": "For the purposes of this Chapter, a shadow director must be treated as a director of the company.",
+   "quote": "a shadow director is treated as a director"
+  },
+  {
+   "requirement": "For the purposes of this Chapter, any reference to a member of a company includes a person who is not a member but to whom shares in the company have been transferred or transmitted by operation of law.",
+   "quote": "references to a member of a company include a person who is not a member but to whom shares in the company have been transferred or transmitted by operation of law"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

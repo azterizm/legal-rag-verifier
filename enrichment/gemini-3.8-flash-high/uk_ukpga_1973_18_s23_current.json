@@ -1,0 +1,171 @@
+{
+ "key": "uk/ukpga/1973/18/s23@current",
+ "section": "uk/ukpga/1973/18/s23",
+ "version": "current",
+ "source_sha256": "6f9dc7aacd747676e3752ec0510a7b654879f453ac4ae0c5baf2f3fc0e873a02",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order (whether before or after the order is made final in the case of divorce or nullity), the court may order either party to the marriage to make periodical payments to the other for a specified term.",
+    "quote": "an order that either party to the marriage shall make to the other such periodical payments, for such term, as may be specified in the order"
+   },
+   {
+    "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order either party to the marriage to secure to the other, to the satisfaction of the court, periodical payments for a specified term.",
+    "quote": "an order that either party to the marriage shall secure to the other to the satisfaction of the court such periodical payments, for such term, as may be so specified"
+   },
+   {
+    "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order either party to the marriage to pay to the other such lump sum or sums as may be specified.",
+    "quote": "an order that either party to the marriage shall pay to the other such lump sum or sums as may be so specified"
+   },
+   {
+    "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order a party to the marriage to make periodical payments for a specified term to a specified person for the benefit of a child of the family, or directly to such a child.",
+    "quote": "an order that a party to the marriage shall make to such person as may be specified in the order for the benefit of a child of the family, or to such a child, such periodical payments, for such term, as may be so specified"
+   },
+   {
+    "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order a party to the marriage to secure to the satisfaction of the court periodical payments for a specified term to a specified person for the benefit of a child of the family, or directly to such a child.",
+    "quote": "an order that a party to the marriage shall secure to such person as may be so specified for the benefit of such a child, or to such a child, to the satisfaction of the court, such periodical payments, for such term, as may be so specified"
+   },
+   {
+    "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order a party to the marriage to pay a specified lump sum to a specified person for the benefit of a child of the family, or directly to such a child.",
+    "quote": "an order that a party to the marriage shall pay to such person as may be specified in the order for the benefit of such a child, or to such a child, such lump sum as may be so specified"
+   },
+   {
+    "requirement": "Orders for periodical payments, secured periodical payments, or lump sums in favour of or for the benefit of a child of the family are subject to statutory restrictions on financial provision orders for children who have attained the age of eighteen.",
+    "quote": "subject, however, in the case of an order under paragraph (d), (e) or (f) above, to the restrictions imposed by section 29(1) and (3) below on the making of financial provision orders in favour of children who have attained the age of eighteen"
+   },
+   {
+    "requirement": "In proceedings for divorce, nullity of marriage, or judicial separation, the court may make financial provision orders for a child of the family before making a divorce order, nullity of marriage order, or judicial separation order.",
+    "quote": "in any proceedings for divorce, nullity of marriage or judicial separation, before making a divorce order, nullity of marriage order or judicial separation order"
+   },
+   {
+    "requirement": "Where proceedings for divorce, nullity of marriage, or judicial separation are dismissed after the trial begins, the court may make financial provision orders for a child of the family forthwith or within a reasonable period after the dismissal.",
+    "quote": "where any such proceedings are dismissed after the beginning of the trial, either forthwith or within a reasonable period after the dismissal"
+   },
+   {
+    "requirement": "The court may order a party to a marriage to pay a lump sum to the other party to enable that party to meet liabilities or expenses reasonably incurred in maintaining themselves or any child of the family prior to applying for the order.",
+    "quote": "for the purpose of enabling that other party to meet any liabilities or expenses reasonably incurred by him or her in maintaining himself or herself or any child of the family before making an application for an order under this section in his or her favour"
+   },
+   {
+    "requirement": "The court may order a lump sum to be paid to or for the benefit of a child of the family to enable liabilities or expenses reasonably incurred by or for the child before the application to be met.",
+    "quote": "for the purpose of enabling any liabilities or expenses reasonably incurred by or for the benefit of that child before the making of an application for an order under this section in his favour to be met"
+   },
+   {
+    "requirement": "The court may order a lump sum to be paid by instalments of specified amounts and may require those instalments to be secured to the satisfaction of the court.",
+    "quote": "an order under this section for the payment of a lump sum may provide for the payment of that sum by instalments of such amount as may be specified in the order and may require the payment of the instalments to be secured to the satisfaction of the court"
+   },
+   {
+    "requirement": "The court's power to make a financial provision order in favour of a child of the family either on or after an order or prior to an order being made is exercisable from time to time.",
+    "quote": "The power of the court under subsection (1) or (2)(a) above to make an order in favour of a child of the family shall be exercisable from time to time"
+   },
+   {
+    "requirement": "Where the court makes an order in favour of a child following the dismissal of proceedings, it may from time to time make further financial provision orders of the specified kinds in the child's favour, subject to statutory restrictions.",
+    "quote": "where the court makes an order in favour of a child under subsection (2)(b) above, it may from time to time, subject to the restrictions mentioned in subsection (1) above, make a further order in his favour of any of the kinds mentioned in subsection (1)(d), (e)or (f) above"
+   },
+   {
+    "requirement": "Where an order for periodical payments, secured periodical payments, or a lump sum between the parties is made on or after making a divorce or nullity of marriage order, neither the financial provision order nor any settlement made under it takes effect unless the divorce or nullity of marriage order has been made final.",
+    "quote": "neither the order under subsection (1)(a), (b) or (c) nor any settlement made in pursuance of it is to take effect unless the divorce or nullity of marriage order has been made final"
+   },
+   {
+    "requirement": "Where the court orders a lump sum and directs payment to be deferred or made by instalments, it may order the deferred amount or instalments to carry interest at a specified rate from a specified date until payment is due.",
+    "quote": "the court may order that the amount deferred or the instalments shall carry interest at such rate as may be specified by the order from such date, not earlier than the date of the order, as may be so specified, until the date when payment of it is due"
+   },
+   {
+    "requirement": "Certain references to divorce orders, nullity of marriage orders, and judicial separation orders are subject to the interpretation rules in section 52A.",
+    "quote": "See also section 52A (interpretation of certain references to divorce orders, nullity of marriage orders and judicial separation orders)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Age limit past which statutory restrictions apply to financial provision orders in favour of children",
+    "value": "eighteen",
+    "quote": "children who have attained the age of eighteen"
+   },
+   {
+    "what": "Period following the dismissal of proceedings after the start of trial within which the court may make child financial provision orders",
+    "value": "reasonable period",
+    "quote": "within a reasonable period after the dismissal"
+   },
+   {
+    "what": "Earliest date from which deferred lump sum amounts or instalments may be ordered to carry interest",
+    "value": "date of the order",
+    "quote": "not earlier than the date of the order"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order (whether before or after the order is made final in the case of divorce or nullity), the court may order either party to the marriage to make periodical payments to the other for a specified term.",
+   "quote": "an order that either party to the marriage shall make to the other such periodical payments, for such term, as may be specified in the order"
+  },
+  {
+   "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order either party to the marriage to secure to the other, to the satisfaction of the court, periodical payments for a specified term.",
+   "quote": "an order that either party to the marriage shall secure to the other to the satisfaction of the court such periodical payments, for such term, as may be so specified"
+  },
+  {
+   "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order either party to the marriage to pay to the other such lump sum or sums as may be specified.",
+   "quote": "an order that either party to the marriage shall pay to the other such lump sum or sums as may be so specified"
+  },
+  {
+   "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order a party to the marriage to make periodical payments for a specified term to a specified person for the benefit of a child of the family, or directly to such a child.",
+   "quote": "an order that a party to the marriage shall make to such person as may be specified in the order for the benefit of a child of the family, or to such a child, such periodical payments, for such term, as may be so specified"
+  },
+  {
+   "requirement": "On or at any time after making a divorce, nullity of marriage, or judicial separation order, the court may order a party to the marriage to secure to the satisfaction of the court periodical payments for a specified term to a specified person for the benefit of a child of the family, or directly to such a child.",
+   "quote": "an order that a party to the marriage shall secure to such person as may be so specified for the benefit of such a child, or to such a child, to the satisfaction of the court, such periodical payments, for such term, as may be so specified"
+  },
+  {
+   "requirement": "Orders for periodical payments, secured periodical payments, or lump sums in favour of or for the benefit of a child of the family are subject to statutory restrictions on financial provision orders for children who have attained the age of eighteen.",
+   "quote": "subject, however, in the case of an order under paragraph (d), (e) or (f) above, to the restrictions imposed by section 29(1) and (3) below on the making of financial provision orders in favour of children who have attained the age of eighteen"
+  },
+  {
+   "requirement": "In proceedings for divorce, nullity of marriage, or judicial separation, the court may make financial provision orders for a child of the family before making a divorce order, nullity of marriage order, or judicial separation order.",
+   "quote": "in any proceedings for divorce, nullity of marriage or judicial separation, before making a divorce order, nullity of marriage order or judicial separation order"
+  },
+  {
+   "requirement": "Where proceedings for divorce, nullity of marriage, or judicial separation are dismissed after the trial begins, the court may make financial provision orders for a child of the family forthwith or within a reasonable period after the dismissal.",
+   "quote": "where any such proceedings are dismissed after the beginning of the trial, either forthwith or within a reasonable period after the dismissal"
+  },
+  {
+   "requirement": "The court may order a party to a marriage to pay a lump sum to the other party to enable that party to meet liabilities or expenses reasonably incurred in maintaining themselves or any child of the family prior to applying for the order.",
+   "quote": "for the purpose of enabling that other party to meet any liabilities or expenses reasonably incurred by him or her in maintaining himself or herself or any child of the family before making an application for an order under this section in his or her favour"
+  },
+  {
+   "requirement": "The court may order a lump sum to be paid to or for the benefit of a child of the family to enable liabilities or expenses reasonably incurred by or for the child before the application to be met.",
+   "quote": "for the purpose of enabling any liabilities or expenses reasonably incurred by or for the benefit of that child before the making of an application for an order under this section in his favour to be met"
+  },
+  {
+   "requirement": "The court may order a lump sum to be paid by instalments of specified amounts and may require those instalments to be secured to the satisfaction of the court.",
+   "quote": "an order under this section for the payment of a lump sum may provide for the payment of that sum by instalments of such amount as may be specified in the order and may require the payment of the instalments to be secured to the satisfaction of the court"
+  },
+  {
+   "requirement": "The court's power to make a financial provision order in favour of a child of the family either on or after an order or prior to an order being made is exercisable from time to time.",
+   "quote": "The power of the court under subsection (1) or (2)(a) above to make an order in favour of a child of the family shall be exercisable from time to time"
+  },
+  {
+   "requirement": "Where the court makes an order in favour of a child following the dismissal of proceedings, it may from time to time make further financial provision orders of the specified kinds in the child's favour, subject to statutory restrictions.",
+   "quote": "where the court makes an order in favour of a child under subsection (2)(b) above, it may from time to time, subject to the restrictions mentioned in subsection (1) above, make a further order in his favour of any of the kinds mentioned in subsection (1)(d), (e)or (f) above"
+  },
+  {
+   "requirement": "Where an order for periodical payments, secured periodical payments, or a lump sum between the parties is made on or after making a divorce or nullity of marriage order, neither the financial provision order nor any settlement made under it takes effect unless the divorce or nullity of marriage order has been made final.",
+   "quote": "neither the order under subsection (1)(a), (b) or (c) nor any settlement made in pursuance of it is to take effect unless the divorce or nullity of marriage order has been made final"
+  },
+  {
+   "requirement": "Where the court orders a lump sum and directs payment to be deferred or made by instalments, it may order the deferred amount or instalments to carry interest at a specified rate from a specified date until payment is due.",
+   "quote": "the court may order that the amount deferred or the instalments shall carry interest at such rate as may be specified by the order from such date, not earlier than the date of the order, as may be so specified, until the date when payment of it is due"
+  },
+  {
+   "requirement": "Certain references to divorce orders, nullity of marriage orders, and judicial separation orders are subject to the interpretation rules in section 52A.",
+   "quote": "See also section 52A (interpretation of certain references to divorce orders, nullity of marriage orders and judicial separation orders)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 16,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

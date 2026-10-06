@@ -1,0 +1,231 @@
+{
+ "key": "uk/ukpga/2015/15/s24@current",
+ "section": "uk/ukpga/2015/15/s24",
+ "version": "current",
+ "source_sha256": "6bcd0c30bf804f13e522135ba9f1f48258250020bc854ec2cb674c3a89acc040",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The right to a price reduction entitles a consumer to require the trader to reduce by an appropriate amount the price the consumer is required to pay, or anything else required to be transferred under the contract.",
+    "quote": "to require the trader to reduce by an appropriate amount the price the consumer is required to pay under the contract, or anything else the consumer is required to transfer under the contract"
+   },
+   {
+    "requirement": "The right to a price reduction entitles a consumer to receive a refund from the trader for anything already paid or otherwise transferred above the reduced amount.",
+    "quote": "to receive a refund from the trader for anything already paid or otherwise transferred by the consumer above the reduced amount"
+   },
+   {
+    "requirement": "Where appropriate, the amount of the price reduction may be the full amount of the price or whatever the consumer is required to transfer under the contract.",
+    "quote": "The amount of the reduction may, where appropriate, be the full amount of the price or whatever the consumer is required to transfer."
+   },
+   {
+    "requirement": "A consumer's right to receive a refund under section 24(1)(b) is governed by section 20(10) to (17).",
+    "quote": "Section 20(10) to (17) applies to a consumer's right to receive a refund under subsection (1)(b)."
+   },
+   {
+    "requirement": "The right to a price reduction does not apply if what the consumer is required to transfer cannot be divided up so as to enable the trader to receive or retain only the reduced amount.",
+    "quote": "if what the consumer is (before the reduction) required to transfer under the contract, whether or not already transferred, cannot be divided up so as to enable the trader to receive or retain only the reduced amount"
+   },
+   {
+    "requirement": "The right to a price reduction does not apply if anything to which section 20(12) applies cannot be given back in its original state.",
+    "quote": "if anything to which section 20(12) applies cannot be given back in its original state"
+   },
+   {
+    "requirement": "A consumer who has both the right to a price reduction and the final right to reject may only exercise one of those rights, not both.",
+    "quote": "A consumer who has the right to a price reduction and the final right to reject may only exercise one (not both)"
+   },
+   {
+    "requirement": "A consumer may exercise the right to a price reduction or the final right to reject after one repair or one replacement if the goods do not conform to the contract.",
+    "quote": "after one repair or one replacement, the goods do not conform to the contract"
+   },
+   {
+    "requirement": "A consumer may exercise the right to a price reduction or the final right to reject if, because of section 23(3), the consumer can require neither repair nor replacement of the goods.",
+    "quote": "because of section 23(3) the consumer can require neither repair nor replacement of the goods"
+   },
+   {
+    "requirement": "A consumer may exercise the right to a price reduction or the final right to reject if the consumer required repair or replacement but the trader breached the requirement of section 23(2)(a) to do so within a reasonable time and without significant inconvenience to the consumer.",
+    "quote": "the consumer has required the trader to repair or replace the goods, but the trader is in breach of the requirement of section 23(2)(a) to do so within a reasonable time and without significant inconvenience to the consumer"
+   },
+   {
+    "requirement": "A repair or replacement has occurred for the purposes of section 24(5)(a) if the consumer requested or agreed to repair or replacement (whether for one or more faults) and the trader delivered or made goods available in response.",
+    "quote": "the consumer has requested or agreed to repair or replacement of the goods (whether in relation to one fault or more than one), and (b) the trader has delivered goods to the consumer, or made goods available to the consumer, in response to the request or agreement"
+   },
+   {
+    "requirement": "Goods that a trader arranges to repair at the consumer's premises are treated as made available when the trader indicates that the repairs are finished.",
+    "quote": "goods that the trader arranges to repair at the consumer's premises are made available when the trader indicates that the repairs are finished"
+   },
+   {
+    "requirement": "If a consumer exercises the final right to reject, any refund may be reduced by a deduction for use taking account of the consumer's use of the goods since delivery, subject to statutory limits.",
+    "quote": "any refund to the consumer may be reduced by a deduction for use, to take account of the use the consumer has had of the goods in the period since they were delivered, but this is subject to subsections (9) and (10)"
+   },
+   {
+    "requirement": "No deduction for use may be made for any period during which the consumer retained the goods solely because the trader failed to collect them at an agreed time.",
+    "quote": "No deduction may be made to take account of use in any period when the consumer had the goods only because the trader failed to collect them at an agreed time."
+   },
+   {
+    "requirement": "No deduction for use may be made if the consumer exercises the final right to reject within the first 6 months, unless the goods are a motor vehicle or goods specified by order of the Secretary of State.",
+    "quote": "No deduction may be made if the final right to reject is exercised in the first 6 months (see subsection (11)), unless— (a) the goods consist of a motor vehicle, or (b) the goods are of a description specified by order made by the Secretary of State by statutory instrument."
+   },
+   {
+    "requirement": "The first 6 months runs from the first day after ownership (or possession under a hire, hire-purchase, or conditional sales agreement) has transferred, the goods have been delivered, and the trader has notified the consumer that any contractually required installation or enabling action has been completed.",
+    "quote": "the first 6 months means 6 months beginning with the first day after these have all happened— (a) ownership or (in the case of a contract for the hire of goods, a hire-purchase agreement or a conditional sales contract) possession of the goods has been transferred to the consumer, (b) the goods have been delivered, and (c) where the contract requires the trader to install the goods or take other action to enable the consumer to use them, the trader has notified the consumer that the action has been taken"
+   },
+   {
+    "requirement": "In relation to Great Britain, 'motor vehicle' has the same meaning as in sections 185 to 194 of the Road Traffic Act 1988.",
+    "quote": "in relation to Great Britain, has the same meaning as in the Road Traffic Act 1988 (see sections 185 to 194 of that Act)"
+   },
+   {
+    "requirement": "In relation to Northern Ireland, 'motor vehicle' has the same meaning as in Parts I and V of the Road Traffic (Northern Ireland) Order 1995.",
+    "quote": "in relation to Northern Ireland, has the same meaning as in the Road Traffic (Northern Ireland) Order 1995 (SI 1995/2994 (NI 18)) (see Parts I and V of that Order)"
+   },
+   {
+    "requirement": "A vehicle is not a motor vehicle for the purposes of the deduction for use exception if it is constructed or adapted for the use of a person suffering from a physical defect or disability and can only be used by one such person at any one time.",
+    "quote": "a vehicle is not a motor vehicle for the purposes of subsection (10)(a) if it is constructed or adapted— (a) for the use of a person suffering from some physical defect or disability, and (b) so that it may only be used by one such person at any one time"
+   },
+   {
+    "requirement": "The Secretary of State may make an order specifying goods exempt from the prohibition on deductions for use in the first 6 months only if satisfied that significant detriment is caused to traders by the application of that prohibition.",
+    "quote": "may be made only if the Secretary of State is satisfied that it is appropriate to do so because of significant detriment caused to traders as a result of the application of subsection (10) in relation to goods of the description specified by the order"
+   },
+   {
+    "requirement": "An order specifying goods exempt from the prohibition on deductions for use in the first 6 months may contain transitional or transitory provisions or savings.",
+    "quote": "may contain transitional or transitory provision or savings"
+   },
+   {
+    "requirement": "An order specifying goods exempt from the prohibition on deductions for use in the first 6 months cannot be made unless a draft statutory instrument has been laid before and approved by a resolution of each House of Parliament.",
+    "quote": "No order may be made under subsection (10)(b) unless a draft of the statutory instrument containing it has been laid before, and approved by a resolution of, each House of Parliament."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of repairs permitted before triggering the right to a price reduction or final rejection",
+    "value": "one",
+    "quote": "after one repair"
+   },
+   {
+    "what": "number of replacements permitted before triggering the right to a price reduction or final rejection",
+    "value": "one",
+    "quote": "one replacement"
+   },
+   {
+    "what": "period during which no deduction for use may be made from a refund upon final rejection (unless an exception applies)",
+    "value": "6 months",
+    "quote": "first 6 months"
+   },
+   {
+    "what": "starting point of the 6-month period, running from the day following completion of all qualifying events",
+    "value": "first day",
+    "quote": "first day after these have all happened"
+   },
+   {
+    "what": "maximum number of persons with a physical defect or disability who may use the adapted vehicle at any one time for it to be excluded from being a motor vehicle",
+    "value": "one",
+    "quote": "only be used by one such person at any one time"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The right to a price reduction entitles a consumer to require the trader to reduce by an appropriate amount the price the consumer is required to pay, or anything else required to be transferred under the contract.",
+   "quote": "to require the trader to reduce by an appropriate amount the price the consumer is required to pay under the contract, or anything else the consumer is required to transfer under the contract"
+  },
+  {
+   "requirement": "The right to a price reduction entitles a consumer to receive a refund from the trader for anything already paid or otherwise transferred above the reduced amount.",
+   "quote": "to receive a refund from the trader for anything already paid or otherwise transferred by the consumer above the reduced amount"
+  },
+  {
+   "requirement": "Where appropriate, the amount of the price reduction may be the full amount of the price or whatever the consumer is required to transfer under the contract.",
+   "quote": "The amount of the reduction may, where appropriate, be the full amount of the price or whatever the consumer is required to transfer."
+  },
+  {
+   "requirement": "A consumer's right to receive a refund under section 24(1)(b) is governed by section 20(10) to (17).",
+   "quote": "Section 20(10) to (17) applies to a consumer's right to receive a refund under subsection (1)(b)."
+  },
+  {
+   "requirement": "The right to a price reduction does not apply if what the consumer is required to transfer cannot be divided up so as to enable the trader to receive or retain only the reduced amount.",
+   "quote": "if what the consumer is (before the reduction) required to transfer under the contract, whether or not already transferred, cannot be divided up so as to enable the trader to receive or retain only the reduced amount"
+  },
+  {
+   "requirement": "The right to a price reduction does not apply if anything to which section 20(12) applies cannot be given back in its original state.",
+   "quote": "if anything to which section 20(12) applies cannot be given back in its original state"
+  },
+  {
+   "requirement": "A consumer who has both the right to a price reduction and the final right to reject may only exercise one of those rights, not both.",
+   "quote": "A consumer who has the right to a price reduction and the final right to reject may only exercise one (not both)"
+  },
+  {
+   "requirement": "A consumer may exercise the right to a price reduction or the final right to reject after one repair or one replacement if the goods do not conform to the contract.",
+   "quote": "after one repair or one replacement, the goods do not conform to the contract"
+  },
+  {
+   "requirement": "A consumer may exercise the right to a price reduction or the final right to reject if, because of section 23(3), the consumer can require neither repair nor replacement of the goods.",
+   "quote": "because of section 23(3) the consumer can require neither repair nor replacement of the goods"
+  },
+  {
+   "requirement": "A consumer may exercise the right to a price reduction or the final right to reject if the consumer required repair or replacement but the trader breached the requirement of section 23(2)(a) to do so within a reasonable time and without significant inconvenience to the consumer.",
+   "quote": "the consumer has required the trader to repair or replace the goods, but the trader is in breach of the requirement of section 23(2)(a) to do so within a reasonable time and without significant inconvenience to the consumer"
+  },
+  {
+   "requirement": "A repair or replacement has occurred for the purposes of section 24(5)(a) if the consumer requested or agreed to repair or replacement (whether for one or more faults) and the trader delivered or made goods available in response.",
+   "quote": "the consumer has requested or agreed to repair or replacement of the goods (whether in relation to one fault or more than one), and (b) the trader has delivered goods to the consumer, or made goods available to the consumer, in response to the request or agreement"
+  },
+  {
+   "requirement": "Goods that a trader arranges to repair at the consumer's premises are treated as made available when the trader indicates that the repairs are finished.",
+   "quote": "goods that the trader arranges to repair at the consumer's premises are made available when the trader indicates that the repairs are finished"
+  },
+  {
+   "requirement": "If a consumer exercises the final right to reject, any refund may be reduced by a deduction for use taking account of the consumer's use of the goods since delivery, subject to statutory limits.",
+   "quote": "any refund to the consumer may be reduced by a deduction for use, to take account of the use the consumer has had of the goods in the period since they were delivered, but this is subject to subsections (9) and (10)"
+  },
+  {
+   "requirement": "No deduction for use may be made for any period during which the consumer retained the goods solely because the trader failed to collect them at an agreed time.",
+   "quote": "No deduction may be made to take account of use in any period when the consumer had the goods only because the trader failed to collect them at an agreed time."
+  },
+  {
+   "requirement": "No deduction for use may be made if the consumer exercises the final right to reject within the first 6 months, unless the goods are a motor vehicle or goods specified by order of the Secretary of State.",
+   "quote": "No deduction may be made if the final right to reject is exercised in the first 6 months (see subsection (11)), unless— (a) the goods consist of a motor vehicle, or (b) the goods are of a description specified by order made by the Secretary of State by statutory instrument."
+  },
+  {
+   "requirement": "The first 6 months runs from the first day after ownership (or possession under a hire, hire-purchase, or conditional sales agreement) has transferred, the goods have been delivered, and the trader has notified the consumer that any contractually required installation or enabling action has been completed.",
+   "quote": "the first 6 months means 6 months beginning with the first day after these have all happened— (a) ownership or (in the case of a contract for the hire of goods, a hire-purchase agreement or a conditional sales contract) possession of the goods has been transferred to the consumer, (b) the goods have been delivered, and (c) where the contract requires the trader to install the goods or take other action to enable the consumer to use them, the trader has notified the consumer that the action has been taken"
+  },
+  {
+   "requirement": "In relation to Great Britain, 'motor vehicle' has the same meaning as in sections 185 to 194 of the Road Traffic Act 1988.",
+   "quote": "in relation to Great Britain, has the same meaning as in the Road Traffic Act 1988 (see sections 185 to 194 of that Act)"
+  },
+  {
+   "requirement": "In relation to Northern Ireland, 'motor vehicle' has the same meaning as in Parts I and V of the Road Traffic (Northern Ireland) Order 1995.",
+   "quote": "in relation to Northern Ireland, has the same meaning as in the Road Traffic (Northern Ireland) Order 1995 (SI 1995/2994 (NI 18)) (see Parts I and V of that Order)"
+  },
+  {
+   "requirement": "A vehicle is not a motor vehicle for the purposes of the deduction for use exception if it is constructed or adapted for the use of a person suffering from a physical defect or disability and can only be used by one such person at any one time.",
+   "quote": "a vehicle is not a motor vehicle for the purposes of subsection (10)(a) if it is constructed or adapted— (a) for the use of a person suffering from some physical defect or disability, and (b) so that it may only be used by one such person at any one time"
+  },
+  {
+   "requirement": "The Secretary of State may make an order specifying goods exempt from the prohibition on deductions for use in the first 6 months only if satisfied that significant detriment is caused to traders by the application of that prohibition.",
+   "quote": "may be made only if the Secretary of State is satisfied that it is appropriate to do so because of significant detriment caused to traders as a result of the application of subsection (10) in relation to goods of the description specified by the order"
+  },
+  {
+   "requirement": "An order specifying goods exempt from the prohibition on deductions for use in the first 6 months may contain transitional or transitory provisions or savings.",
+   "quote": "may contain transitional or transitory provision or savings"
+  },
+  {
+   "requirement": "An order specifying goods exempt from the prohibition on deductions for use in the first 6 months cannot be made unless a draft statutory instrument has been laid before and approved by a resolution of each House of Parliament.",
+   "quote": "No order may be made under subsection (10)(b) unless a draft of the statutory instrument containing it has been laid before, and approved by a resolution of, each House of Parliament."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period during which no deduction for use may be made from a refund upon final rejection (unless an exception applies)",
+   "value": "6 months",
+   "quote": "first 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 22,
+  "elements_verified": 22,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 1
+ }
+}

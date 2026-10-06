@@ -1,0 +1,235 @@
+{
+ "key": "uk/ukpga/1996/52/s193@current",
+ "section": "uk/ukpga/1996/52/s193",
+ "version": "current",
+ "source_sha256": "77bec5841c493e5e1d1b525e1627d1d7cb236bf3cfc320d2999299f7bfc0d125",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 193 of the Housing Act 1996 applies where the local housing authority is satisfied that an applicant is homeless, eligible for assistance, and has a priority need, is not satisfied that the applicant became homeless intentionally, and the authority's duty to the applicant under section 189B(2) has ended.",
+    "quote": "This section applies where— (a) the local housing authority— (i) are satisfied that an applicant is homeless and eligible for assistance"
+   },
+   {
+    "requirement": "Section 193 of the Housing Act 1996 does not apply if section 193A(3) disapplies it or if the local housing authority has given notice to the applicant under section 193B(2).",
+    "quote": "this section does not apply if— (a) section 193A(3) disapplies this section, or (b) the authority have given notice to the applicant under section 193B(2)"
+   },
+   {
+    "requirement": "Unless the local housing authority refers the application to another authority under section 198, the authority must secure that accommodation is available for occupation by the applicant.",
+    "quote": "they shall secure that accommodation is available for occupation by the applicant"
+   },
+   {
+    "requirement": "The local housing authority remains subject to the main housing duty until that duty ceases under the provisions of section 193 of the Housing Act 1996.",
+    "quote": "The authority are subject to the duty under this section until it ceases by virtue of any of the following provisions of this section."
+   },
+   {
+    "requirement": "A case is a restricted case where the local housing authority would not be satisfied of the criteria in subsection (1) without having had regard to a restricted person.",
+    "quote": "“a restricted case” means a case where the local housing authority would not be satisfied as mentioned in subsection (1) without having had regard to a restricted person"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed by the authority of the possible consequence of refusal and of the right to request a review of the suitability of the accommodation, refuses an offer of accommodation that the authority is satisfied is suitable, and the authority notifies the applicant that it regards its duty as discharged.",
+    "quote": "refuses an offer of accommodation which the authority are satisfied is suitable for him and the authority notify him that they regard themselves as having discharged their duty under this section"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed of the possible consequences of refusal or acceptance and the right to request a review of suitability, refuses an offer of suitable accommodation that is neither an offer under Part 6 nor a private rented sector offer, and the authority notifies the applicant that it regards itself as ceasing to be subject to the duty.",
+    "quote": "that offer of accommodation is not an offer of accommodation under Part 6 or a private rented sector offer, and (c) the authority notify the applicant that they regard themselves as ceasing to be subject to the duty under this section"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant ceases to be eligible for assistance.",
+    "quote": "ceases to be eligible for assistance"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant becomes homeless intentionally from the accommodation made available for their occupation.",
+    "quote": "becomes homeless intentionally from the accommodation made available for his occupation"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant accepts an offer of accommodation under Part VI for the allocation of housing.",
+    "quote": "accepts an offer of accommodation under Part VI (allocation of housing)"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant accepts an offer of an assured tenancy, other than an assured shorthold tenancy, from a private landlord.",
+    "quote": "accepts an offer of an assured tenancy (other than an assured shorthold tenancy) from a private landlord"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant otherwise voluntarily ceases to occupy the accommodation made available as their only or principal home.",
+    "quote": "otherwise voluntarily ceases to occupy as his only or principal home the accommodation made available for his occupation"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed of the consequences of refusal or acceptance and of the right to review suitability, refuses a final offer of accommodation under Part 6.",
+    "quote": "refuses a final offer of accommodation under Part 6"
+   },
+   {
+    "requirement": "An offer of accommodation under Part 6 is a final offer if it is made in writing and states that it is a final offer for the purposes of subsection (7).",
+    "quote": "made in writing and states that it is a final offer for the purposes of subsection (7)"
+   },
+   {
+    "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed in writing of the statutory matters, accepts or refuses a private rented sector offer.",
+    "quote": "having been informed in writing of the matters mentioned in subsection (7AB)— (a) accepts a private rented sector offer , or (b) refuses such an offer"
+   },
+   {
+    "requirement": "The matters that must be notified in writing to the applicant regarding a private rented sector offer include the consequences of refusal or acceptance, the right to request a review of suitability, and, in a case that is not a restricted case, the effect under section 195A of making a further application to a local housing authority within two years of acceptance.",
+    "quote": "the matters mentioned in subsection (7AB)— (a) the possible consequence of refusal or acceptance of the offer, and (b) that the applicant has the right to request a review of the suitability of the accommodation , and (c) in a case which is not a restricted case, the effect under section 195A of a further application to a local housing authority within two years of acceptance of the offer"
+   },
+   {
+    "requirement": "An offer is a private rented sector offer if it is an offer of an assured shorthold tenancy made by a private landlord for available accommodation, made with the authority's approval to bring its duty to an end, and offers a fixed term tenancy of at least 12 months under Part 1 of the Housing Act 1988.",
+    "quote": "it is an offer of an assured shorthold tenancy made by a private landlord to the applicant in relation to any accommodation which is, or may become, available for the applicant's occupation"
+   },
+   {
+    "requirement": "In a restricted case, the local housing authority must, so far as reasonably practicable, bring its duty to an end through the acceptance or refusal of a private rented sector offer.",
+    "quote": "In a restricted case the authority shall, so far as reasonably practicable, bring their duty under this section to an end as mentioned in subsection (7AA)."
+   },
+   {
+    "requirement": "The local housing authority must not make a final offer under Part 6 or approve a private rented sector offer unless satisfied that the accommodation is suitable and that subsection (8) does not apply to the applicant.",
+    "quote": "The local housing authority shall not— (a) make a final offer of accommodation under Part 6 for the purposes of subsection (7); or (ab) approve a private rented sector offer; or unless they are satisfied that the accommodation is suitable for the applicant and that subsection (8) does not apply to the applicant"
+   },
+   {
+    "requirement": "Subsection (8) applies to an applicant who is under contractual or other obligations regarding existing accommodation and cannot end those obligations before being required to take up the offered accommodation.",
+    "quote": "applicant is under contractual or other obligations in respect of the applicant's existing accommodation, and (b) the applicant is not able to bring those obligations to an end before being required to take up the offer"
+   },
+   {
+    "requirement": "A person who ceases to be owed the duty under section 193 of the Housing Act 1996 may make a fresh application to the local housing authority for accommodation or assistance in obtaining accommodation.",
+    "quote": "A person who ceases to be owed the duty under this section may make a fresh application to the authority for accommodation or assistance in obtaining accommodation."
+   },
+   {
+    "requirement": "The Secretary of State may make regulations specifying a different fixed-term duration for the private rented sector offer definition in subsection (7AC)(c).",
+    "quote": "The Secretary of State may provide by regulations that subsection (7AC)(c) is to have effect as if it referred to a period of the length specified in the regulations."
+   },
+   {
+    "requirement": "Regulations made by the Secretary of State altering the private rented sector tenancy period must not specify a period of less than 12 months and may not apply to restricted cases.",
+    "quote": "Regulations under subsection (10)— (a) may not specify a period of less than 12 months, and (b) may not apply to restricted cases."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time limit following acceptance of a private rented sector offer within which a further application triggers the effect under section 195A",
+    "value": "two years",
+    "quote": "within two years of acceptance of the offer"
+   },
+   {
+    "what": "Minimum fixed term tenancy duration required for an offer to qualify as a private rented sector offer",
+    "value": "12 months",
+    "quote": "for a period of at least 12 months"
+   },
+   {
+    "what": "Minimum tenancy length that the Secretary of State is permitted to specify by regulations for a private rented sector offer",
+    "value": "12 months",
+    "quote": "may not specify a period of less than 12 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 193 of the Housing Act 1996 applies where the local housing authority is satisfied that an applicant is homeless, eligible for assistance, and has a priority need, is not satisfied that the applicant became homeless intentionally, and the authority's duty to the applicant under section 189B(2) has ended.",
+   "quote": "This section applies where— (a) the local housing authority— (i) are satisfied that an applicant is homeless and eligible for assistance"
+  },
+  {
+   "requirement": "Section 193 of the Housing Act 1996 does not apply if section 193A(3) disapplies it or if the local housing authority has given notice to the applicant under section 193B(2).",
+   "quote": "this section does not apply if— (a) section 193A(3) disapplies this section, or (b) the authority have given notice to the applicant under section 193B(2)"
+  },
+  {
+   "requirement": "Unless the local housing authority refers the application to another authority under section 198, the authority must secure that accommodation is available for occupation by the applicant.",
+   "quote": "they shall secure that accommodation is available for occupation by the applicant"
+  },
+  {
+   "requirement": "The local housing authority remains subject to the main housing duty until that duty ceases under the provisions of section 193 of the Housing Act 1996.",
+   "quote": "The authority are subject to the duty under this section until it ceases by virtue of any of the following provisions of this section."
+  },
+  {
+   "requirement": "A case is a restricted case where the local housing authority would not be satisfied of the criteria in subsection (1) without having had regard to a restricted person.",
+   "quote": "“a restricted case” means a case where the local housing authority would not be satisfied as mentioned in subsection (1) without having had regard to a restricted person"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed by the authority of the possible consequence of refusal and of the right to request a review of the suitability of the accommodation, refuses an offer of accommodation that the authority is satisfied is suitable, and the authority notifies the applicant that it regards its duty as discharged.",
+   "quote": "refuses an offer of accommodation which the authority are satisfied is suitable for him and the authority notify him that they regard themselves as having discharged their duty under this section"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed of the possible consequences of refusal or acceptance and the right to request a review of suitability, refuses an offer of suitable accommodation that is neither an offer under Part 6 nor a private rented sector offer, and the authority notifies the applicant that it regards itself as ceasing to be subject to the duty.",
+   "quote": "that offer of accommodation is not an offer of accommodation under Part 6 or a private rented sector offer, and (c) the authority notify the applicant that they regard themselves as ceasing to be subject to the duty under this section"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant ceases to be eligible for assistance.",
+   "quote": "ceases to be eligible for assistance"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant becomes homeless intentionally from the accommodation made available for their occupation.",
+   "quote": "becomes homeless intentionally from the accommodation made available for his occupation"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant accepts an offer of accommodation under Part VI for the allocation of housing.",
+   "quote": "accepts an offer of accommodation under Part VI (allocation of housing)"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant accepts an offer of an assured tenancy, other than an assured shorthold tenancy, from a private landlord.",
+   "quote": "accepts an offer of an assured tenancy (other than an assured shorthold tenancy) from a private landlord"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant otherwise voluntarily ceases to occupy the accommodation made available as their only or principal home.",
+   "quote": "otherwise voluntarily ceases to occupy as his only or principal home the accommodation made available for his occupation"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed of the consequences of refusal or acceptance and of the right to review suitability, refuses a final offer of accommodation under Part 6.",
+   "quote": "refuses a final offer of accommodation under Part 6"
+  },
+  {
+   "requirement": "An offer of accommodation under Part 6 is a final offer if it is made in writing and states that it is a final offer for the purposes of subsection (7).",
+   "quote": "made in writing and states that it is a final offer for the purposes of subsection (7)"
+  },
+  {
+   "requirement": "The local housing authority ceases to be subject to the duty if the applicant, having been informed in writing of the statutory matters, accepts or refuses a private rented sector offer.",
+   "quote": "having been informed in writing of the matters mentioned in subsection (7AB)— (a) accepts a private rented sector offer , or (b) refuses such an offer"
+  },
+  {
+   "requirement": "An offer is a private rented sector offer if it is an offer of an assured shorthold tenancy made by a private landlord for available accommodation, made with the authority's approval to bring its duty to an end, and offers a fixed term tenancy of at least 12 months under Part 1 of the Housing Act 1988.",
+   "quote": "it is an offer of an assured shorthold tenancy made by a private landlord to the applicant in relation to any accommodation which is, or may become, available for the applicant's occupation"
+  },
+  {
+   "requirement": "In a restricted case, the local housing authority must, so far as reasonably practicable, bring its duty to an end through the acceptance or refusal of a private rented sector offer.",
+   "quote": "In a restricted case the authority shall, so far as reasonably practicable, bring their duty under this section to an end as mentioned in subsection (7AA)."
+  },
+  {
+   "requirement": "The local housing authority must not make a final offer under Part 6 or approve a private rented sector offer unless satisfied that the accommodation is suitable and that subsection (8) does not apply to the applicant.",
+   "quote": "The local housing authority shall not— (a) make a final offer of accommodation under Part 6 for the purposes of subsection (7); or (ab) approve a private rented sector offer; or unless they are satisfied that the accommodation is suitable for the applicant and that subsection (8) does not apply to the applicant"
+  },
+  {
+   "requirement": "Subsection (8) applies to an applicant who is under contractual or other obligations regarding existing accommodation and cannot end those obligations before being required to take up the offered accommodation.",
+   "quote": "applicant is under contractual or other obligations in respect of the applicant's existing accommodation, and (b) the applicant is not able to bring those obligations to an end before being required to take up the offer"
+  },
+  {
+   "requirement": "A person who ceases to be owed the duty under section 193 of the Housing Act 1996 may make a fresh application to the local housing authority for accommodation or assistance in obtaining accommodation.",
+   "quote": "A person who ceases to be owed the duty under this section may make a fresh application to the authority for accommodation or assistance in obtaining accommodation."
+  },
+  {
+   "requirement": "The Secretary of State may make regulations specifying a different fixed-term duration for the private rented sector offer definition in subsection (7AC)(c).",
+   "quote": "The Secretary of State may provide by regulations that subsection (7AC)(c) is to have effect as if it referred to a period of the length specified in the regulations."
+  },
+  {
+   "requirement": "Regulations made by the Secretary of State altering the private rented sector tenancy period must not specify a period of less than 12 months and may not apply to restricted cases.",
+   "quote": "Regulations under subsection (10)— (a) may not specify a period of less than 12 months, and (b) may not apply to restricted cases."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Time limit following acceptance of a private rented sector offer within which a further application triggers the effect under section 195A",
+   "value": "two years",
+   "quote": "within two years of acceptance of the offer"
+  },
+  {
+   "what": "Minimum fixed term tenancy duration required for an offer to qualify as a private rented sector offer",
+   "value": "12 months",
+   "quote": "for a period of at least 12 months"
+  },
+  {
+   "what": "Minimum tenancy length that the Secretary of State is permitted to specify by regulations for a private rented sector offer",
+   "value": "12 months",
+   "quote": "may not specify a period of less than 12 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 23,
+  "elements_verified": 22,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

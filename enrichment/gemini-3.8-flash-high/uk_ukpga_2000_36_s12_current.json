@@ -1,0 +1,74 @@
+{
+ "key": "uk/ukpga/2000/36/s12@current",
+ "section": "uk/ukpga/2000/36/s12",
+ "version": "current",
+ "source_sha256": "ea65911abb14e1b12214b1d1541fc7e7406f975ba75247ad8a9d515a42228e1d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A public authority is not obliged by section 1(1) to comply with a request for information if the authority estimates that the cost of complying with the request would exceed the appropriate limit.",
+    "quote": "Section 1(1) does not oblige a public authority to comply with a request for information if the authority estimates that the cost of complying with the request would exceed the appropriate limit."
+   },
+   {
+    "requirement": "A public authority is not exempted by subsection (1) from its obligation to comply with paragraph (a) of section 1(1) unless the estimated cost of complying with that paragraph alone would exceed the appropriate limit.",
+    "quote": "Subsection (1) does not exempt the public authority from its obligation to comply with paragraph (a) of section 1(1) unless the estimated cost of complying with that paragraph alone would exceed the appropriate limit."
+   },
+   {
+    "requirement": "For the purposes of subsections (1) and (2), the appropriate limit is defined as such amount as may be prescribed, and different amounts may be prescribed in relation to different cases.",
+    "quote": "“the appropriate limit” means such amount as may be prescribed, and different amounts may be prescribed in relation to different cases."
+   },
+   {
+    "requirement": "The Minister for the Cabinet Office may by regulations provide that, in prescribed circumstances, where two or more requests for information are made to a public authority by one person or by different persons who appear to the public authority to be acting in concert or in pursuance of a campaign, the estimated cost of complying with any of the requests is to be taken to be the estimated total cost of complying with all of them.",
+    "quote": "The Minister for the Cabinet Office may by regulations provide that, in such circumstances as may be prescribed, where two or more requests for information are made to a public authority— (a) by one person, or (b) by different persons who appear to the public authority to be acting in concert or in pursuance of a campaign, the estimated cost of complying with any of the requests is to be taken to be the estimated total cost of complying with all of them."
+   },
+   {
+    "requirement": "The Minister for the Cabinet Office may by regulations make provision for the purposes of section 12 concerning the costs to be estimated and the manner in which they are to be estimated.",
+    "quote": "The Minister for the Cabinet Office may by regulations make provision for the purposes of this section as to the costs to be estimated and as to the manner in which they are to be estimated."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of requests for information made to a public authority that may be aggregated under regulations",
+    "value": "two",
+    "quote": "two or more requests for information are made to a public authority"
+   },
+   {
+    "what": "number of persons making multiple requests for information subject to cost aggregation regulations",
+    "value": "one",
+    "quote": "by one person"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A public authority is not obliged by section 1(1) to comply with a request for information if the authority estimates that the cost of complying with the request would exceed the appropriate limit.",
+   "quote": "Section 1(1) does not oblige a public authority to comply with a request for information if the authority estimates that the cost of complying with the request would exceed the appropriate limit."
+  },
+  {
+   "requirement": "A public authority is not exempted by subsection (1) from its obligation to comply with paragraph (a) of section 1(1) unless the estimated cost of complying with that paragraph alone would exceed the appropriate limit.",
+   "quote": "Subsection (1) does not exempt the public authority from its obligation to comply with paragraph (a) of section 1(1) unless the estimated cost of complying with that paragraph alone would exceed the appropriate limit."
+  },
+  {
+   "requirement": "For the purposes of subsections (1) and (2), the appropriate limit is defined as such amount as may be prescribed, and different amounts may be prescribed in relation to different cases.",
+   "quote": "“the appropriate limit” means such amount as may be prescribed, and different amounts may be prescribed in relation to different cases."
+  },
+  {
+   "requirement": "The Minister for the Cabinet Office may by regulations provide that, in prescribed circumstances, where two or more requests for information are made to a public authority by one person or by different persons who appear to the public authority to be acting in concert or in pursuance of a campaign, the estimated cost of complying with any of the requests is to be taken to be the estimated total cost of complying with all of them.",
+   "quote": "The Minister for the Cabinet Office may by regulations provide that, in such circumstances as may be prescribed, where two or more requests for information are made to a public authority— (a) by one person, or (b) by different persons who appear to the public authority to be acting in concert or in pursuance of a campaign, the estimated cost of complying with any of the requests is to be taken to be the estimated total cost of complying with all of them."
+  },
+  {
+   "requirement": "The Minister for the Cabinet Office may by regulations make provision for the purposes of section 12 concerning the costs to be estimated and the manner in which they are to be estimated.",
+   "quote": "The Minister for the Cabinet Office may by regulations make provision for the purposes of this section as to the costs to be estimated and as to the manner in which they are to be estimated."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "key": "uk/ukpga/1998/39/s1@current",
+ "section": "uk/ukpga/1998/39/s1",
+ "version": "current",
+ "source_sha256": "dcca5caeaf1a6005ba1641ce53c5d1deceb0cb9779f75e3f98b618ee8b6c38af",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employer must remunerate a person who qualifies for the national minimum wage in respect of that person's work in any pay reference period at a rate not less than the national minimum wage.",
+    "quote": "shall be remunerated by his employer in respect of his work in any pay reference period at a rate which is not less than the national minimum wage"
+   },
+   {
+    "requirement": "An individual qualifies for the national minimum wage only if that individual is a worker.",
+    "quote": "is a worker"
+   },
+   {
+    "requirement": "An individual qualifies for the national minimum wage only if that individual is working, or ordinarily works, in the United Kingdom under their contract.",
+    "quote": "is working, or ordinarily works, in the United Kingdom under his contract"
+   },
+   {
+    "requirement": "An individual qualifies for the national minimum wage only if that individual has ceased to be of compulsory school age.",
+    "quote": "has ceased to be of compulsory school age"
+   },
+   {
+    "requirement": "The national minimum wage must be such single hourly rate as the Secretary of State may prescribe from time to time.",
+    "quote": "shall be such single hourly rate as the Secretary of State may from time to time prescribe"
+   },
+   {
+    "requirement": "A pay reference period for the purposes of the Act is defined as such period as the Secretary of State may prescribe for that purpose.",
+    "quote": "“pay reference period” is such period as the Secretary of State may prescribe for the purpose"
+   },
+   {
+    "requirement": "The rules and definitions in subsections (1) to (4) of section 1 are subject to the subsequent provisions of the Act.",
+    "quote": "Subsections (1) to (4) above are subject to the following provisions of this Act"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "age requirement to qualify for the national minimum wage",
+    "value": "compulsory school age",
+    "quote": "ceased to be of compulsory school age"
+   },
+   {
+    "what": "number of hourly rates to be prescribed for the national minimum wage",
+    "value": "single",
+    "quote": "such single hourly rate"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An employer must remunerate a person who qualifies for the national minimum wage in respect of that person's work in any pay reference period at a rate not less than the national minimum wage.",
+   "quote": "shall be remunerated by his employer in respect of his work in any pay reference period at a rate which is not less than the national minimum wage"
+  },
+  {
+   "requirement": "An individual qualifies for the national minimum wage only if that individual is a worker.",
+   "quote": "is a worker"
+  },
+  {
+   "requirement": "An individual qualifies for the national minimum wage only if that individual is working, or ordinarily works, in the United Kingdom under their contract.",
+   "quote": "is working, or ordinarily works, in the United Kingdom under his contract"
+  },
+  {
+   "requirement": "An individual qualifies for the national minimum wage only if that individual has ceased to be of compulsory school age.",
+   "quote": "has ceased to be of compulsory school age"
+  },
+  {
+   "requirement": "The national minimum wage must be such single hourly rate as the Secretary of State may prescribe from time to time.",
+   "quote": "shall be such single hourly rate as the Secretary of State may from time to time prescribe"
+  },
+  {
+   "requirement": "A pay reference period for the purposes of the Act is defined as such period as the Secretary of State may prescribe for that purpose.",
+   "quote": "“pay reference period” is such period as the Secretary of State may prescribe for the purpose"
+  },
+  {
+   "requirement": "The rules and definitions in subsections (1) to (4) of section 1 are subject to the subsequent provisions of the Act.",
+   "quote": "Subsections (1) to (4) above are subject to the following provisions of this Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

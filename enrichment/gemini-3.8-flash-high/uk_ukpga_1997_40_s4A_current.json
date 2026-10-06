@@ -1,0 +1,172 @@
+{
+ "key": "uk/ukpga/1997/40/s4A@current",
+ "section": "uk/ukpga/1997/40/s4A",
+ "version": "current",
+ "source_sha256": "86d537d8167258bb26b4c18555f3900aea05bfe7d542ac598c42f0b23d811d45",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if their course of conduct amounts to stalking and either causes another person to fear violence on at least two occasions or causes another person serious alarm or distress with a substantial adverse effect on their usual day-to-day activities, and the person knows or ought to know that their conduct will have that effect.",
+    "quote": "is guilty of an offence if A knows or ought to know that A's course of conduct will cause B so to fear on each of those occasions or (as the case may be) will cause such alarm or distress"
+   },
+   {
+    "requirement": "A person whose course of conduct amounts to stalking and causes another person to fear that violence will be used against them must cause that fear on at least two occasions.",
+    "quote": "causes another (“B”) to fear, on at least two occasions, that violence will be used against B"
+   },
+   {
+    "requirement": "A person whose course of conduct amounts to stalking and causes another person serious alarm or distress is guilty only if that alarm or distress has a substantial adverse effect on the other person's usual day-to-day activities.",
+    "quote": "causes B serious alarm or distress which has a substantial adverse effect on B's usual day-to-day activities"
+   },
+   {
+    "requirement": "A person ought to know that their course of conduct will cause another person to fear that violence will be used against them on any occasion if a reasonable person in possession of the same information would think the course of conduct would cause that fear on that occasion.",
+    "quote": "if a reasonable person in possession of the same information would think the course of conduct would cause B so to fear on that occasion"
+   },
+   {
+    "requirement": "A person ought to know that their course of conduct will cause another person serious alarm or distress having a substantial adverse effect on their usual day-to-day activities if a reasonable person in possession of the same information would think the course of conduct would cause such alarm or distress.",
+    "quote": "if a reasonable person in possession of the same information would think the course of conduct would cause B such alarm or distress"
+   },
+   {
+    "requirement": "A defendant has a defence if they show that their course of conduct was pursued for the purpose of preventing or detecting crime.",
+    "quote": "A's course of conduct was pursued for the purpose of preventing or detecting crime"
+   },
+   {
+    "requirement": "A defendant has a defence if they show that their course of conduct was pursued under any enactment or rule of law or to comply with any condition or requirement imposed by any person under any enactment.",
+    "quote": "A's course of conduct was pursued under any enactment or rule of law or to comply with any condition or requirement imposed by any person under any enactment"
+   },
+   {
+    "requirement": "A defendant has a defence if they show that the pursuit of their course of conduct was reasonable for the protection of themselves or another person or for the protection of their own or another person's property.",
+    "quote": "the pursuit of A's course of conduct was reasonable for the protection of A or another or for the protection of A's or another's property"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 4A is liable on conviction on indictment to imprisonment for a term not exceeding ten years, or a fine, or both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding ten years, or a fine, or both"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 4A is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, or a fine not exceeding the statutory maximum, or both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court, or a fine not exceeding the statutory maximum, or both"
+   },
+   {
+    "requirement": "For an offence under section 4A committed before 2 May 2022, the maximum summary term of imprisonment is to be read as six months.",
+    "quote": "the reference in subsection (5)(b) to the general limit in a magistrates’ court is to be read as a reference to six months"
+   },
+   {
+    "requirement": "A jury may find a person charged on indictment under section 4A guilty of an offence under section 2 or 2A if they find the person not guilty of the charged section 4A offence.",
+    "quote": "they may find the person guilty of an offence under section 2 or 2A"
+   },
+   {
+    "requirement": "The Crown Court has the same powers and duties as a magistrates' court would have on convicting a person of an offence under section 2 or 2A when that person is convicted of such an offence by virtue of subsection (7).",
+    "quote": "The Crown Court has the same powers and duties in relation to a person who is by virtue of subsection (7) convicted before it of an offence under section 2 or 2A as a magistrates' court would have on convicting the person of the offence"
+   },
+   {
+    "requirement": "Section 4A operates without prejudice to the generality of section 4.",
+    "quote": "This section is without prejudice to the generality of section 4"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of occasions on which the victim must be caused to fear that violence will be used against them",
+    "value": "at least two",
+    "quote": "on at least two occasions"
+   },
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "ten years",
+    "quote": "imprisonment for a term not exceeding ten years"
+   },
+   {
+    "what": "commission date before which the general limit in a magistrates' court is read as six months",
+    "value": "2 May 2022",
+    "quote": "before 2 May 2022"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction for an offence committed before 2 May 2022",
+    "value": "six months",
+    "quote": "to be read as a reference to six months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if their course of conduct amounts to stalking and either causes another person to fear violence on at least two occasions or causes another person serious alarm or distress with a substantial adverse effect on their usual day-to-day activities, and the person knows or ought to know that their conduct will have that effect.",
+   "quote": "is guilty of an offence if A knows or ought to know that A's course of conduct will cause B so to fear on each of those occasions or (as the case may be) will cause such alarm or distress"
+  },
+  {
+   "requirement": "A person whose course of conduct amounts to stalking and causes another person to fear that violence will be used against them must cause that fear on at least two occasions.",
+   "quote": "causes another (“B”) to fear, on at least two occasions, that violence will be used against B"
+  },
+  {
+   "requirement": "A person whose course of conduct amounts to stalking and causes another person serious alarm or distress is guilty only if that alarm or distress has a substantial adverse effect on the other person's usual day-to-day activities.",
+   "quote": "causes B serious alarm or distress which has a substantial adverse effect on B's usual day-to-day activities"
+  },
+  {
+   "requirement": "A person ought to know that their course of conduct will cause another person to fear that violence will be used against them on any occasion if a reasonable person in possession of the same information would think the course of conduct would cause that fear on that occasion.",
+   "quote": "if a reasonable person in possession of the same information would think the course of conduct would cause B so to fear on that occasion"
+  },
+  {
+   "requirement": "A person ought to know that their course of conduct will cause another person serious alarm or distress having a substantial adverse effect on their usual day-to-day activities if a reasonable person in possession of the same information would think the course of conduct would cause such alarm or distress.",
+   "quote": "if a reasonable person in possession of the same information would think the course of conduct would cause B such alarm or distress"
+  },
+  {
+   "requirement": "A defendant has a defence if they show that their course of conduct was pursued for the purpose of preventing or detecting crime.",
+   "quote": "A's course of conduct was pursued for the purpose of preventing or detecting crime"
+  },
+  {
+   "requirement": "A defendant has a defence if they show that their course of conduct was pursued under any enactment or rule of law or to comply with any condition or requirement imposed by any person under any enactment.",
+   "quote": "A's course of conduct was pursued under any enactment or rule of law or to comply with any condition or requirement imposed by any person under any enactment"
+  },
+  {
+   "requirement": "A defendant has a defence if they show that the pursuit of their course of conduct was reasonable for the protection of themselves or another person or for the protection of their own or another person's property.",
+   "quote": "the pursuit of A's course of conduct was reasonable for the protection of A or another or for the protection of A's or another's property"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 4A is liable on conviction on indictment to imprisonment for a term not exceeding ten years, or a fine, or both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding ten years, or a fine, or both"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 4A is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, or a fine not exceeding the statutory maximum, or both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court, or a fine not exceeding the statutory maximum, or both"
+  },
+  {
+   "requirement": "For an offence under section 4A committed before 2 May 2022, the maximum summary term of imprisonment is to be read as six months.",
+   "quote": "the reference in subsection (5)(b) to the general limit in a magistrates’ court is to be read as a reference to six months"
+  },
+  {
+   "requirement": "A jury may find a person charged on indictment under section 4A guilty of an offence under section 2 or 2A if they find the person not guilty of the charged section 4A offence.",
+   "quote": "they may find the person guilty of an offence under section 2 or 2A"
+  },
+  {
+   "requirement": "The Crown Court has the same powers and duties as a magistrates' court would have on convicting a person of an offence under section 2 or 2A when that person is convicted of such an offence by virtue of subsection (7).",
+   "quote": "The Crown Court has the same powers and duties in relation to a person who is by virtue of subsection (7) convicted before it of an offence under section 2 or 2A as a magistrates' court would have on convicting the person of the offence"
+  },
+  {
+   "requirement": "Section 4A operates without prejudice to the generality of section 4.",
+   "quote": "This section is without prejudice to the generality of section 4"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "ten years",
+   "quote": "imprisonment for a term not exceeding ten years"
+  },
+  {
+   "what": "commission date before which the general limit in a magistrates' court is read as six months",
+   "value": "2 May 2022",
+   "quote": "before 2 May 2022"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction for an offence committed before 2 May 2022",
+   "value": "six months",
+   "quote": "to be read as a reference to six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 3
+ }
+}

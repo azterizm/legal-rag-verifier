@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/2000/36/s2@current",
+ "section": "uk/ukpga/2000/36/s2",
+ "version": "current",
+ "source_sha256": "b3e1ad6284ba49e3af3ad10dff6059500595eaab13a9ac358134c8a06a4cdd82",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1(1)(a) does not apply where any provision of Part II states that the duty to confirm or deny does not arise in relation to any information and that provision confers absolute exemption.",
+    "quote": "the provision confers absolute exemption"
+   },
+   {
+    "requirement": "Section 1(1)(a) does not apply where any provision of Part II states that the duty to confirm or deny does not arise in relation to any information and, in all the circumstances of the case, the public interest in maintaining the exclusion of the duty to confirm or deny outweighs the public interest in disclosing whether the public authority holds the information.",
+    "quote": "the public interest in maintaining the exclusion of the duty to confirm or deny outweighs the public interest in disclosing whether the public authority holds the information"
+   },
+   {
+    "requirement": "Section 1(1)(b) does not apply in respect of any information that is exempt information by virtue of any provision of Part II if or to the extent that the information is exempt information by virtue of a provision conferring absolute exemption.",
+    "quote": "the information is exempt information by virtue of a provision conferring absolute exemption"
+   },
+   {
+    "requirement": "Section 1(1)(b) does not apply in respect of any information that is exempt information by virtue of any provision of Part II if or to the extent that, in all the circumstances of the case, the public interest in maintaining the exemption outweighs the public interest in disclosing the information.",
+    "quote": "the public interest in maintaining the exemption outweighs the public interest in disclosing the information"
+   },
+   {
+    "requirement": "For the purposes of section 2, only the provisions of Part II specified in subsection (3), and no others, are to be regarded as conferring absolute exemption.",
+    "quote": "the following provisions of Part II (and no others) are to be regarded as conferring absolute exemption"
+   },
+   {
+    "requirement": "Section 21 of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 21"
+   },
+   {
+    "requirement": "Section 23 of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 23"
+   },
+   {
+    "requirement": "Section 32 of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 32"
+   },
+   {
+    "requirement": "Section 34 of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 34"
+   },
+   {
+    "requirement": "Section 36 of Part II is to be regarded as conferring absolute exemption so far as relating to information held by the House of Commons or the House of Lords.",
+    "quote": "section 36 so far as relating to information held by the House of Commons or the House of Lords"
+   },
+   {
+    "requirement": "In section 37 of Part II, paragraphs (a) to (ab) of subsection (1), and subsection (2) so far as relating to those paragraphs, are to be regarded as conferring absolute exemption.",
+    "quote": "in section 37, paragraphs (a) to (ab) of subsection (1), and subsection (2) so far as relating to those paragraphs"
+   },
+   {
+    "requirement": "Section 40(1) of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 40(1)"
+   },
+   {
+    "requirement": "Section 40(2) of Part II is to be regarded as conferring absolute exemption so far as relating to cases where the first condition referred to in that subsection is satisfied.",
+    "quote": "section 40(2) so far as relating to cases where the first condition referred to in that subsection is satisfied"
+   },
+   {
+    "requirement": "Section 41 of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 41"
+   },
+   {
+    "requirement": "Section 44 of Part II is to be regarded as conferring absolute exemption.",
+    "quote": "section 44"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the designated condition referred to in section 40(2) that must be satisfied for absolute exemption to apply",
+    "value": "first",
+    "quote": "first condition referred to in that subsection is satisfied"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 1(1)(a) does not apply where any provision of Part II states that the duty to confirm or deny does not arise in relation to any information and that provision confers absolute exemption.",
+   "quote": "the provision confers absolute exemption"
+  },
+  {
+   "requirement": "Section 1(1)(a) does not apply where any provision of Part II states that the duty to confirm or deny does not arise in relation to any information and, in all the circumstances of the case, the public interest in maintaining the exclusion of the duty to confirm or deny outweighs the public interest in disclosing whether the public authority holds the information.",
+   "quote": "the public interest in maintaining the exclusion of the duty to confirm or deny outweighs the public interest in disclosing whether the public authority holds the information"
+  },
+  {
+   "requirement": "Section 1(1)(b) does not apply in respect of any information that is exempt information by virtue of any provision of Part II if or to the extent that the information is exempt information by virtue of a provision conferring absolute exemption.",
+   "quote": "the information is exempt information by virtue of a provision conferring absolute exemption"
+  },
+  {
+   "requirement": "Section 1(1)(b) does not apply in respect of any information that is exempt information by virtue of any provision of Part II if or to the extent that, in all the circumstances of the case, the public interest in maintaining the exemption outweighs the public interest in disclosing the information.",
+   "quote": "the public interest in maintaining the exemption outweighs the public interest in disclosing the information"
+  },
+  {
+   "requirement": "For the purposes of section 2, only the provisions of Part II specified in subsection (3), and no others, are to be regarded as conferring absolute exemption.",
+   "quote": "the following provisions of Part II (and no others) are to be regarded as conferring absolute exemption"
+  },
+  {
+   "requirement": "Section 21 of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 21"
+  },
+  {
+   "requirement": "Section 23 of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 23"
+  },
+  {
+   "requirement": "Section 32 of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 32"
+  },
+  {
+   "requirement": "Section 34 of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 34"
+  },
+  {
+   "requirement": "Section 36 of Part II is to be regarded as conferring absolute exemption so far as relating to information held by the House of Commons or the House of Lords.",
+   "quote": "section 36 so far as relating to information held by the House of Commons or the House of Lords"
+  },
+  {
+   "requirement": "In section 37 of Part II, paragraphs (a) to (ab) of subsection (1), and subsection (2) so far as relating to those paragraphs, are to be regarded as conferring absolute exemption.",
+   "quote": "in section 37, paragraphs (a) to (ab) of subsection (1), and subsection (2) so far as relating to those paragraphs"
+  },
+  {
+   "requirement": "Section 40(1) of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 40(1)"
+  },
+  {
+   "requirement": "Section 40(2) of Part II is to be regarded as conferring absolute exemption so far as relating to cases where the first condition referred to in that subsection is satisfied.",
+   "quote": "section 40(2) so far as relating to cases where the first condition referred to in that subsection is satisfied"
+  },
+  {
+   "requirement": "Section 41 of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 41"
+  },
+  {
+   "requirement": "Section 44 of Part II is to be regarded as conferring absolute exemption.",
+   "quote": "section 44"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

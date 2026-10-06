@@ -59,7 +59,8 @@ _SENTENCE: dict[Qualifier, str] = {
         r"\b(?:minimum|min|floor|at\s+least|no\s+less\s+than|not\s+less\s+than)\b"
     ),
     Qualifier.CONDITION: (
-        r"\b(?:subject\s+to|unless|except|save|provided|if|where|when|condition|conditions)\b"
+        r"\b(?:subject\s+to|unless|except|save|provided|if|where|when|condition|conditions|"
+        r"generally|normally|usually|ordinarily)\b"
     ),
 }
 _SOURCE_RE = [(q, re.compile(p, re.IGNORECASE)) for q, p in _SOURCE]

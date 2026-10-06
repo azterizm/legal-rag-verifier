@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2010/15/s4@current",
+ "section": "uk/ukpga/2010/15/s4",
+ "version": "current",
+ "source_sha256": "7bec5a77af8e73943e841245c42bebde48e5df698ef401f3372caadc121c3f8c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The characteristic of age is a protected characteristic.",
+    "quote": "The following characteristics are protected characteristics— age;"
+   },
+   {
+    "requirement": "The characteristic of disability is a protected characteristic.",
+    "quote": "disability;"
+   },
+   {
+    "requirement": "The characteristic of gender reassignment is a protected characteristic.",
+    "quote": "gender reassignment;"
+   },
+   {
+    "requirement": "The characteristic of marriage and civil partnership is a protected characteristic.",
+    "quote": "marriage and civil partnership;"
+   },
+   {
+    "requirement": "The characteristic of pregnancy and maternity is a protected characteristic.",
+    "quote": "pregnancy and maternity;"
+   },
+   {
+    "requirement": "The characteristic of race is a protected characteristic.",
+    "quote": "race;"
+   },
+   {
+    "requirement": "The characteristic of religion or belief is a protected characteristic.",
+    "quote": "religion or belief;"
+   },
+   {
+    "requirement": "The characteristic of sex is a protected characteristic.",
+    "quote": "sex;"
+   },
+   {
+    "requirement": "The characteristic of sexual orientation is a protected characteristic.",
+    "quote": "sexual orientation."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The characteristic of age is a protected characteristic.",
+   "quote": "The following characteristics are protected characteristics— age;"
+  },
+  {
+   "requirement": "The characteristic of disability is a protected characteristic.",
+   "quote": "disability;"
+  },
+  {
+   "requirement": "The characteristic of gender reassignment is a protected characteristic.",
+   "quote": "gender reassignment;"
+  },
+  {
+   "requirement": "The characteristic of marriage and civil partnership is a protected characteristic.",
+   "quote": "marriage and civil partnership;"
+  },
+  {
+   "requirement": "The characteristic of pregnancy and maternity is a protected characteristic.",
+   "quote": "pregnancy and maternity;"
+  },
+  {
+   "requirement": "The characteristic of religion or belief is a protected characteristic.",
+   "quote": "religion or belief;"
+  },
+  {
+   "requirement": "The characteristic of sexual orientation is a protected characteristic.",
+   "quote": "sexual orientation."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

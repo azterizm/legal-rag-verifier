@@ -5,6 +5,7 @@ from __future__ import annotations
 import functools
 import re
 from dataclasses import dataclass, field
+from datetime import date
 
 from legal_rag_verifier.citations import is_relative, resolve_relative
 from legal_rag_verifier.claims import (
@@ -14,7 +15,8 @@ from legal_rag_verifier.claims import (
     instrument_acronym,
     normalise_title,
 )
-from legal_rag_verifier.deontic import Deontic, find_deontics
+from legal_rag_verifier.deontic import Deontic, licensed_classes
+from legal_rag_verifier.numbers import NUMBER_WORDS_RE, parse_number_words
 from legal_rag_verifier.premise import PassageKind, Premise
 
 __all__ = ["PremiseIndex", "WindowIndex", "build_index", "numeric_part"]
@@ -46,6 +48,16 @@ class WindowIndex:
     claims: tuple[Claim, ...]
     citations: frozenset[str]
     deontics: frozenset[Deontic]
+    heading: str = ""
+    limbs: tuple[str, ...] = ()
+    valid_from: date | None = None
+    valid_to: date | None = None
+    elements: tuple[str, ...] = ()
+
+    @property
+    def nli_text(self) -> str:
+        """The window as the NLI head sees it: heading (instrument, citation, title) then text."""
+        return f"{self.heading}: {self.text}" if self.heading else self.text
 
     def values(self, kind: ClaimKind) -> list[Claim]:
         return [c for c in self.claims if c.kind is kind]
@@ -61,6 +73,8 @@ class PremiseIndex:
     text_citations: frozenset[str] = frozenset()
     declared_citations: frozenset[str] = frozenset()
     titles: frozenset[str] = frozenset()
+    #: Numbers the premise text writes in words or as ordinals ("forty-one", "31st").
+    text_numbers: frozenset[str] = frozenset()
     sis: frozenset[str] = frozenset()
     acronyms: frozenset[str] = frozenset()
     declared_titles: tuple[str, ...] = ()
@@ -75,6 +89,7 @@ def build_index(premise: Premise) -> PremiseIndex:
     windows: list[WindowIndex] = []
     values: dict[ClaimKind, set[str]] = {k: set() for k in ClaimKind}
     numbers: set[str] = set()
+    text_numbers: set[str] = set()
     text_citations: set[str] = set()
     for i, passage in enumerate(premise.passages):
         claims = extract_claims(passage.text)
@@ -92,6 +107,7 @@ def build_index(premise: Premise) -> PremiseIndex:
             if number is not None:
                 numbers.add(number)
         text_citations |= resolved
+        text_numbers |= _spelled_numbers(passage.text)
         windows.append(
             WindowIndex(
                 i,
@@ -100,7 +116,12 @@ def build_index(premise: Premise) -> PremiseIndex:
                 passage.tail,
                 tuple(claims),
                 frozenset(resolved),
-                frozenset(d.deontic for d in find_deontics(passage.text)),
+                licensed_classes(passage.text),
+                passage.heading or "",
+                passage.limbs,
+                passage.valid_from,
+                passage.valid_to,
+                passage.elements,
             )
         )
 
@@ -108,16 +129,32 @@ def build_index(premise: Premise) -> PremiseIndex:
         premise.titles, values.pop(ClaimKind.INSTRUMENT, set())
     )
     return PremiseIndex(
-        tuple(windows),
-        {k: frozenset(v) for k, v in values.items()},
-        frozenset(numbers | title_numbers),
-        frozenset(text_citations),
-        frozenset(premise.citations),
-        frozenset(titles),
-        frozenset(sis),
-        frozenset(acronyms),
-        premise.titles,
+        windows=tuple(windows),
+        values={k: frozenset(v) for k, v in values.items()},
+        numbers=frozenset(numbers | title_numbers),
+        text_citations=frozenset(text_citations),
+        declared_citations=frozenset(premise.citations),
+        titles=frozenset(titles),
+        text_numbers=frozenset(text_numbers),
+        sis=frozenset(sis),
+        acronyms=frozenset(acronyms),
+        declared_titles=premise.titles,
     )
+
+
+_ORDINAL = re.compile(r"\b(\d+)(?:st|nd|rd|th)\b")
+_SPELLED = re.compile(NUMBER_WORDS_RE, re.IGNORECASE)
+
+
+def _spelled_numbers(text: str) -> set[str]:
+    """Numbers written as words or ordinals, which are not claims in the premise's own text but
+    ground the same number written as digits in a sentence ("aged 41" against "forty-one")."""
+    out = {m.group(1).lstrip("0") or "0" for m in _ORDINAL.finditer(text)}
+    for m in _SPELLED.finditer(text):
+        value = parse_number_words(m.group(0))
+        if value is not None:
+            out.add(str(value))
+    return out
 
 
 def _title_sets(

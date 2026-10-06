@@ -1,0 +1,109 @@
+{
+ "key": "uk/ukpga/2015/15/s22@current",
+ "section": "uk/ukpga/2015/15/s22",
+ "version": "current",
+ "source_sha256": "f2c57afe1c49e79f898bde48bdf0e94040d0ab6cb778653dd163e9b151702d54",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A consumer loses the short-term right to reject if the applicable time limit passes without the consumer exercising it, unless the trader and the consumer agree that it may be exercised later.",
+    "quote": "loses it if the time limit for exercising it passes without the consumer exercising it, unless the trader and the consumer agree that it may be exercised later"
+   },
+   {
+    "requirement": "An agreement under which the short-term right to reject would be lost before the statutory time limit passes is not binding on the consumer.",
+    "quote": "An agreement under which the short-term right to reject would be lost before the time limit passes is not binding on the consumer"
+   },
+   {
+    "requirement": "Unless goods can reasonably be expected to perish after a shorter period, the time limit for exercising the short-term right to reject is the end of 30 days beginning with the first day after ownership or possession has transferred to the consumer, the goods have been delivered, and the trader has notified the consumer of completion where the contract requires the trader to install the goods or take other action to enable the consumer to use them.",
+    "quote": "The time limit for exercising the short-term right to reject (unless subsection (4) applies) is the end of 30 days beginning with the first day after these have all happened"
+   },
+   {
+    "requirement": "If any goods can reasonably be expected to perish after a shorter period, the time limit for exercising the short-term right to reject those goods is the end of that shorter period, without affecting the time limit for goods that are not of that kind.",
+    "quote": "the time limit for exercising the short-term right to reject in relation to those goods is the end of that shorter period (but without affecting the time limit in relation to goods that are not of that kind)"
+   },
+   {
+    "requirement": "A consumer is not prevented from exercising the short-term right to reject before ownership or possession has transferred, before delivery has occurred, or before the trader has notified the consumer that required installation or enabling action has been taken.",
+    "quote": "do not prevent the consumer exercising the short-term right to reject before something mentioned in subsection (3)(a), (b) or (c) has happened"
+   },
+   {
+    "requirement": "If the consumer requests or agrees to the repair or replacement of goods, the rejection period stops running for the duration of the waiting period.",
+    "quote": "the period mentioned in subsection (3) or (4) stops running for the length of the waiting period"
+   },
+   {
+    "requirement": "If goods supplied by the trader in response to a repair or replacement request or agreement do not conform to the contract, the time limit for exercising the short-term right to reject is either 7 days after the waiting period ends, or if later, the original time limit extended by the waiting period.",
+    "quote": "the time limit for exercising the short-term right to reject is then either— (a) 7 days after the waiting period ends, or (b) if later, the original time limit for exercising that right, extended by the waiting period"
+   },
+   {
+    "requirement": "The waiting period begins with the day the consumer requests or agrees to the repair or replacement of goods and ends with the day on which the consumer receives goods supplied by the trader in response to that request or agreement.",
+    "quote": "The waiting period— (a) begins with the day the consumer requests or agrees to the repair or replacement of the goods, and (b) ends with the day on which the consumer receives goods supplied by the trader in response to the request or agreement"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "standard time limit for exercising the short-term right to reject",
+    "value": "30 days",
+    "quote": "end of 30 days beginning with the first day after these have all happened"
+   },
+   {
+    "what": "alternative time limit for exercising the short-term right to reject following non-conforming repair or replacement",
+    "value": "7 days",
+    "quote": "7 days after the waiting period ends"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A consumer loses the short-term right to reject if the applicable time limit passes without the consumer exercising it, unless the trader and the consumer agree that it may be exercised later.",
+   "quote": "loses it if the time limit for exercising it passes without the consumer exercising it, unless the trader and the consumer agree that it may be exercised later"
+  },
+  {
+   "requirement": "An agreement under which the short-term right to reject would be lost before the statutory time limit passes is not binding on the consumer.",
+   "quote": "An agreement under which the short-term right to reject would be lost before the time limit passes is not binding on the consumer"
+  },
+  {
+   "requirement": "Unless goods can reasonably be expected to perish after a shorter period, the time limit for exercising the short-term right to reject is the end of 30 days beginning with the first day after ownership or possession has transferred to the consumer, the goods have been delivered, and the trader has notified the consumer of completion where the contract requires the trader to install the goods or take other action to enable the consumer to use them.",
+   "quote": "The time limit for exercising the short-term right to reject (unless subsection (4) applies) is the end of 30 days beginning with the first day after these have all happened"
+  },
+  {
+   "requirement": "If any goods can reasonably be expected to perish after a shorter period, the time limit for exercising the short-term right to reject those goods is the end of that shorter period, without affecting the time limit for goods that are not of that kind.",
+   "quote": "the time limit for exercising the short-term right to reject in relation to those goods is the end of that shorter period (but without affecting the time limit in relation to goods that are not of that kind)"
+  },
+  {
+   "requirement": "A consumer is not prevented from exercising the short-term right to reject before ownership or possession has transferred, before delivery has occurred, or before the trader has notified the consumer that required installation or enabling action has been taken.",
+   "quote": "do not prevent the consumer exercising the short-term right to reject before something mentioned in subsection (3)(a), (b) or (c) has happened"
+  },
+  {
+   "requirement": "If the consumer requests or agrees to the repair or replacement of goods, the rejection period stops running for the duration of the waiting period.",
+   "quote": "the period mentioned in subsection (3) or (4) stops running for the length of the waiting period"
+  },
+  {
+   "requirement": "If goods supplied by the trader in response to a repair or replacement request or agreement do not conform to the contract, the time limit for exercising the short-term right to reject is either 7 days after the waiting period ends, or if later, the original time limit extended by the waiting period.",
+   "quote": "the time limit for exercising the short-term right to reject is then either— (a) 7 days after the waiting period ends, or (b) if later, the original time limit for exercising that right, extended by the waiting period"
+  },
+  {
+   "requirement": "The waiting period begins with the day the consumer requests or agrees to the repair or replacement of goods and ends with the day on which the consumer receives goods supplied by the trader in response to that request or agreement.",
+   "quote": "The waiting period— (a) begins with the day the consumer requests or agrees to the repair or replacement of the goods, and (b) ends with the day on which the consumer receives goods supplied by the trader in response to the request or agreement"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "standard time limit for exercising the short-term right to reject",
+   "value": "30 days",
+   "quote": "end of 30 days beginning with the first day after these have all happened"
+  },
+  {
+   "what": "alternative time limit for exercising the short-term right to reject following non-conforming repair or replacement",
+   "value": "7 days",
+   "quote": "7 days after the waiting period ends"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

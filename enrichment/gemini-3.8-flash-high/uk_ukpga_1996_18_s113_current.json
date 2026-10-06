@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1996/18/s113@current",
+ "section": "uk/ukpga/1996/18/s113",
+ "version": "current",
+ "source_sha256": "e1577e8a71317c54f2df3ccbf76257b3f9f32e21eeff004e50e6f2688c0fb779",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An order under section 113 may be an order for reinstatement in accordance with section 114.",
+    "quote": "an order for reinstatement (in accordance with section 114)"
+   },
+   {
+    "requirement": "An order under section 113 may be an order for re-engagement in accordance with section 115.",
+    "quote": "an order for re-engagement (in accordance with section 115)"
+   },
+   {
+    "requirement": "The tribunal decides whether an order under section 113 is for reinstatement or re-engagement.",
+    "quote": "as the tribunal may decide"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An order under section 113 may be an order for reinstatement in accordance with section 114.",
+   "quote": "an order for reinstatement (in accordance with section 114)"
+  },
+  {
+   "requirement": "An order under section 113 may be an order for re-engagement in accordance with section 115.",
+   "quote": "an order for re-engagement (in accordance with section 115)"
+  },
+  {
+   "requirement": "The tribunal decides whether an order under section 113 is for reinstatement or re-engagement.",
+   "quote": "as the tribunal may decide"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

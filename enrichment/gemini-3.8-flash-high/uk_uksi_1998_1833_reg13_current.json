@@ -1,0 +1,200 @@
+{
+ "key": "uk/uksi/1998/1833/reg13@current",
+ "section": "uk/uksi/1998/1833/reg13",
+ "version": "current",
+ "source_sha256": "12848847be9d4d91e8847ff25f1532be558fc0b95238427acb33af5da8de0ea2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Regulation 13 applies to a worker in respect of any leave years beginning before 1st April 2024, and to a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024.",
+    "quote": "This regulation applies to— (a) a worker in respect of any leave years beginning before 1st April 2024, and (b) a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024."
+   },
+   {
+    "requirement": "Subject to paragraph (5), a worker is entitled to four weeks' annual leave in each leave year.",
+    "quote": "Subject to paragraph (5), a worker is entitled to four weeks' annual leave in each leave year."
+   },
+   {
+    "requirement": "A worker’s leave year begins on such date during the calendar year as may be provided for in a relevant agreement.",
+    "quote": "begins— (a) on such date during the calendar year as may be provided for in a relevant agreement"
+   },
+   {
+    "requirement": "Where no provisions of a relevant agreement apply, a worker’s leave year begins on 1st October 1998 and each subsequent anniversary if the worker’s employment began on or before 1st October 1998.",
+    "quote": "if the worker’s employment began on or before 1st October 1998, on that date and each subsequent anniversary of that date"
+   },
+   {
+    "requirement": "Where no provisions of a relevant agreement apply, a worker’s leave year begins on the date on which employment begins and each subsequent anniversary if the worker’s employment begins after 1st October 1998.",
+    "quote": "if the worker’s employment begins after 1st October 1998, on the date on which that employment begins and each subsequent anniversary of that date"
+   },
+   {
+    "requirement": "Paragraph (3) does not apply to a worker to whom Schedule 2 applies (workers employed in agriculture in Wales or Scotland), unless, in the case of a worker partly employed in agriculture in Wales or Scotland, a relevant agreement so provides.",
+    "quote": "Paragraph (3) does not apply to a worker to whom Schedule 2 applies (workers employed in agriculture in Wales or Scotland) except where, in the case of a worker partly employed in agriculture in Wales or Scotland, a relevant agreement so provides."
+   },
+   {
+    "requirement": "Where the date on which a worker’s employment begins is later than the date on which their first leave year begins under a relevant agreement, the annual leave entitlement for that leave year is a proportion of the four weeks equal to the proportion of the leave year remaining on their start date.",
+    "quote": "the leave to which he is entitled in that leave year is a proportion of the period applicable under paragraph (1) equal to the proportion of that leave year remaining on the date on which his employment begins"
+   },
+   {
+    "requirement": "A worker's annual leave entitlement under regulation 13 may be taken in instalments.",
+    "quote": "Leave to which a worker is entitled under this regulation may be taken in instalments"
+   },
+   {
+    "requirement": "Subject to paragraphs (14), (15), and (17), annual leave may only be taken in the leave year in respect of which it is due.",
+    "quote": "subject to the exceptions in paragraphs (14), (15) and (17) , it may only be taken in the leave year in respect of which it is due"
+   },
+   {
+    "requirement": "Annual leave under regulation 13 may not be replaced by a payment in lieu except where the worker’s employment is terminated.",
+    "quote": "it may not be replaced by a payment in lieu except where the worker’s employment is terminated"
+   },
+   {
+    "requirement": "A worker who is unable to take some or all of their regulation 13 annual leave as a result of taking statutory leave is entitled to carry forward the untaken leave into the following leave year.",
+    "quote": "Where, as a result of taking a period of statutory leave in any leave year, a worker is unable to take some or all of the annual leave to which the worker is entitled in that leave year under this regulation, the worker is entitled to carry forward such untaken leave into the following leave year."
+   },
+   {
+    "requirement": "A worker who is unable to take some or all of their regulation 13 annual leave as a result of taking sick leave is entitled to carry forward the untaken leave into the following leave year provided it is taken by the end of 18 months from the end of the leave year in which the entitlement originally arose.",
+    "quote": "the worker is entitled to carry forward such untaken leave into the following leave year provided it is taken by the end of the period of 18 months from the end of the leave year in which the entitlement originally arose"
+   },
+   {
+    "requirement": "Paragraph (17) applies where an employer fails to recognise a worker's right to annual leave under regulation 13 or payment under regulation 16, fails to give a reasonable opportunity or encourage them to take it, or fails to inform them that untaken leave which cannot be carried forward will be lost.",
+    "quote": "Paragraph (17) applies where, in any leave year, an employer fails to— (a) recognise a worker’s right to annual leave under this regulation or to payment for that leave in accordance with regulation 16; (b) give the worker a reasonable opportunity to take the leave to which the worker is entitled under this regulation or encourage them to do so; or (c) inform the worker that any leave not taken by the end of the leave year, which cannot be carried forward, will be lost."
+   },
+   {
+    "requirement": "Subject to paragraph (18), where paragraph (17) applies, a worker is entitled to carry forward any regulation 13 leave that is untaken in that leave year or that was taken but not paid in accordance with regulation 16.",
+    "quote": "Where this paragraph applies and subject to paragraph (18), the worker is entitled to carry forward any leave to which the worker is entitled under this regulation which is untaken in that leave year or has been taken but not paid in accordance with regulation 16."
+   },
+   {
+    "requirement": "Annual leave carried forward pursuant to paragraph (17) cannot be carried forward beyond the end of the first full leave year in which paragraph (17) does not apply.",
+    "quote": "Annual leave that has been carried forward pursuant to paragraph (17) cannot be carried forward beyond the end of the first full leave year in which paragraph (17) does not apply."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Leave years beginning before which regulation 13 applies to a worker generally",
+    "value": "1st April 2024",
+    "quote": "leave years beginning before 1st April 2024"
+   },
+   {
+    "what": "Leave years beginning on or after which regulation 13 applies to a worker to whom regulation 15B does not apply",
+    "value": "1st April 2024",
+    "quote": "leave years beginning on or after 1st April 2024"
+   },
+   {
+    "what": "Amount of annual leave a worker is entitled to in each leave year",
+    "value": "four weeks'",
+    "quote": "four weeks' annual leave in each leave year"
+   },
+   {
+    "what": "Cut-off date for employment start date determining leave year commencement rules when no relevant agreement applies",
+    "value": "1st October 1998",
+    "quote": "employment began on or before 1st October 1998"
+   },
+   {
+    "what": "Time limit from the end of the leave year in which entitlement originally arose for taking leave carried forward due to sick leave",
+    "value": "18 months",
+    "quote": "period of 18 months from the end of the leave year in which the entitlement originally arose"
+   },
+   {
+    "what": "Maximum extension limit beyond which leave carried forward under paragraph (17) cannot be carried forward",
+    "value": "first full leave year",
+    "quote": "end of the first full leave year in which paragraph (17) does not apply"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Regulation 13 applies to a worker in respect of any leave years beginning before 1st April 2024, and to a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024.",
+   "quote": "This regulation applies to— (a) a worker in respect of any leave years beginning before 1st April 2024, and (b) a worker to whom regulation 15B does not apply in respect of any leave years beginning on or after 1st April 2024."
+  },
+  {
+   "requirement": "Subject to paragraph (5), a worker is entitled to four weeks' annual leave in each leave year.",
+   "quote": "Subject to paragraph (5), a worker is entitled to four weeks' annual leave in each leave year."
+  },
+  {
+   "requirement": "A worker’s leave year begins on such date during the calendar year as may be provided for in a relevant agreement.",
+   "quote": "begins— (a) on such date during the calendar year as may be provided for in a relevant agreement"
+  },
+  {
+   "requirement": "Where no provisions of a relevant agreement apply, a worker’s leave year begins on 1st October 1998 and each subsequent anniversary if the worker’s employment began on or before 1st October 1998.",
+   "quote": "if the worker’s employment began on or before 1st October 1998, on that date and each subsequent anniversary of that date"
+  },
+  {
+   "requirement": "Where no provisions of a relevant agreement apply, a worker’s leave year begins on the date on which employment begins and each subsequent anniversary if the worker’s employment begins after 1st October 1998.",
+   "quote": "if the worker’s employment begins after 1st October 1998, on the date on which that employment begins and each subsequent anniversary of that date"
+  },
+  {
+   "requirement": "Paragraph (3) does not apply to a worker to whom Schedule 2 applies (workers employed in agriculture in Wales or Scotland), unless, in the case of a worker partly employed in agriculture in Wales or Scotland, a relevant agreement so provides.",
+   "quote": "Paragraph (3) does not apply to a worker to whom Schedule 2 applies (workers employed in agriculture in Wales or Scotland) except where, in the case of a worker partly employed in agriculture in Wales or Scotland, a relevant agreement so provides."
+  },
+  {
+   "requirement": "Where the date on which a worker’s employment begins is later than the date on which their first leave year begins under a relevant agreement, the annual leave entitlement for that leave year is a proportion of the four weeks equal to the proportion of the leave year remaining on their start date.",
+   "quote": "the leave to which he is entitled in that leave year is a proportion of the period applicable under paragraph (1) equal to the proportion of that leave year remaining on the date on which his employment begins"
+  },
+  {
+   "requirement": "A worker's annual leave entitlement under regulation 13 may be taken in instalments.",
+   "quote": "Leave to which a worker is entitled under this regulation may be taken in instalments"
+  },
+  {
+   "requirement": "Subject to paragraphs (14), (15), and (17), annual leave may only be taken in the leave year in respect of which it is due.",
+   "quote": "subject to the exceptions in paragraphs (14), (15) and (17) , it may only be taken in the leave year in respect of which it is due"
+  },
+  {
+   "requirement": "Annual leave under regulation 13 may not be replaced by a payment in lieu except where the worker’s employment is terminated.",
+   "quote": "it may not be replaced by a payment in lieu except where the worker’s employment is terminated"
+  },
+  {
+   "requirement": "A worker who is unable to take some or all of their regulation 13 annual leave as a result of taking statutory leave is entitled to carry forward the untaken leave into the following leave year.",
+   "quote": "Where, as a result of taking a period of statutory leave in any leave year, a worker is unable to take some or all of the annual leave to which the worker is entitled in that leave year under this regulation, the worker is entitled to carry forward such untaken leave into the following leave year."
+  },
+  {
+   "requirement": "A worker who is unable to take some or all of their regulation 13 annual leave as a result of taking sick leave is entitled to carry forward the untaken leave into the following leave year provided it is taken by the end of 18 months from the end of the leave year in which the entitlement originally arose.",
+   "quote": "the worker is entitled to carry forward such untaken leave into the following leave year provided it is taken by the end of the period of 18 months from the end of the leave year in which the entitlement originally arose"
+  },
+  {
+   "requirement": "Paragraph (17) applies where an employer fails to recognise a worker's right to annual leave under regulation 13 or payment under regulation 16, fails to give a reasonable opportunity or encourage them to take it, or fails to inform them that untaken leave which cannot be carried forward will be lost.",
+   "quote": "Paragraph (17) applies where, in any leave year, an employer fails to— (a) recognise a worker’s right to annual leave under this regulation or to payment for that leave in accordance with regulation 16; (b) give the worker a reasonable opportunity to take the leave to which the worker is entitled under this regulation or encourage them to do so; or (c) inform the worker that any leave not taken by the end of the leave year, which cannot be carried forward, will be lost."
+  },
+  {
+   "requirement": "Subject to paragraph (18), where paragraph (17) applies, a worker is entitled to carry forward any regulation 13 leave that is untaken in that leave year or that was taken but not paid in accordance with regulation 16.",
+   "quote": "Where this paragraph applies and subject to paragraph (18), the worker is entitled to carry forward any leave to which the worker is entitled under this regulation which is untaken in that leave year or has been taken but not paid in accordance with regulation 16."
+  },
+  {
+   "requirement": "Annual leave carried forward pursuant to paragraph (17) cannot be carried forward beyond the end of the first full leave year in which paragraph (17) does not apply.",
+   "quote": "Annual leave that has been carried forward pursuant to paragraph (17) cannot be carried forward beyond the end of the first full leave year in which paragraph (17) does not apply."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Leave years beginning before which regulation 13 applies to a worker generally",
+   "value": "1st April 2024",
+   "quote": "leave years beginning before 1st April 2024"
+  },
+  {
+   "what": "Leave years beginning on or after which regulation 13 applies to a worker to whom regulation 15B does not apply",
+   "value": "1st April 2024",
+   "quote": "leave years beginning on or after 1st April 2024"
+  },
+  {
+   "what": "Amount of annual leave a worker is entitled to in each leave year",
+   "value": "four weeks'",
+   "quote": "four weeks' annual leave in each leave year"
+  },
+  {
+   "what": "Cut-off date for employment start date determining leave year commencement rules when no relevant agreement applies",
+   "value": "1st October 1998",
+   "quote": "employment began on or before 1st October 1998"
+  },
+  {
+   "what": "Time limit from the end of the leave year in which entitlement originally arose for taking leave carried forward due to sick leave",
+   "value": "18 months",
+   "quote": "period of 18 months from the end of the leave year in which the entitlement originally arose"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 5
+ }
+}

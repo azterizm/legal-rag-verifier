@@ -1,0 +1,423 @@
+{
+ "key": "uk/ukpga/2002/9/sch6@current",
+ "section": "uk/ukpga/2002/9/sch6",
+ "version": "current",
+ "source_sha256": "aa9cf3124cfc34cf81e9c8126b4f84d2e4173df3afead998fa105f64ed8f867a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person may apply to the registrar to be registered as the proprietor of a registered estate in land if that person has been in adverse possession of the estate for a period of ten years ending on the date of the application.",
+    "quote": "A person may apply to the registrar to be registered as the proprietor of a registered estate in land if he has been in adverse possession of the estate for the period of ten years ending on the date of the application."
+   },
+   {
+    "requirement": "A person may apply to the registrar to be registered as the proprietor of a registered estate in land if the person ceased to be in adverse possession within the six months ending on the application date due to eviction by the registered proprietor (or someone claiming under them), was entitled to make a ten-year adverse possession application on the day before the eviction, and the eviction was not pursuant to a judgment for possession.",
+    "quote": "A person may also apply to the registrar to be registered as the proprietor of a registered estate in land if— (a) he has in the period of six months ending on the date of the application ceased to be in adverse possession of the estate because of eviction by the registered proprietor, or a person claiming under the registered proprietor, (b) on the day before his eviction he was entitled to make an application under sub-paragraph (1), and (c) the eviction was not pursuant to a judgment for possession."
+   },
+   {
+    "requirement": "A person cannot apply to be registered as proprietor under paragraph 1 if that person is currently a defendant in proceedings asserting a right to possession of the land, or if judgment for possession has been given against that person in the preceding two years.",
+    "quote": "However, a person may not make an application under this paragraph if— (a) he is a defendant in proceedings which involve asserting a right to possession of the land, or (b) judgment for possession of the land has been given against him in the last two years."
+   },
+   {
+    "requirement": "For the purpose of an initial ten-year adverse possession application, the estate does not need to have been registered for the entire period of adverse possession.",
+    "quote": "For the purposes of sub-paragraph (1), the estate need not have been registered throughout the period of adverse possession."
+   },
+   {
+    "requirement": "The registrar must give notice of an adverse possession application under paragraph 1 to the proprietor of the estate, the proprietor of any registered charge, the proprietor of any superior registered estate if the estate is leasehold, any person registered under rules to receive notice, and any other persons provided by rules.",
+    "quote": "The registrar must give notice of an application under paragraph 1 to— (a) the proprietor of the estate to which the application relates, (b) the proprietor of any registered charge on the estate, (c) where the estate is leasehold, the proprietor of any superior registered estate, (d) any person who is registered in accordance with rules as a person to be notified under this paragraph, and (e) such other persons as rules may provide."
+   },
+   {
+    "requirement": "A notice given by the registrar under paragraph 2 must include notice of the legal effect of paragraph 4.",
+    "quote": "Notice under this paragraph shall include notice of the effect of paragraph 4."
+   },
+   {
+    "requirement": "A person given notice of an application under paragraph 2 may require the application to be dealt with under paragraph 5 by giving notice to the registrar before the end of the period provided by rules.",
+    "quote": "A person given notice under paragraph 2 may require that the application to which the notice relates be dealt with under paragraph 5. (2) The right under this paragraph is exercisable by notice to the registrar given before the end of such period as rules may provide."
+   },
+   {
+    "requirement": "An applicant is entitled to be entered in the register as the new proprietor of the estate if their application under paragraph 1 is not required to be dealt with under paragraph 5.",
+    "quote": "If an application under paragraph 1 is not required to be dealt with under paragraph 5, the applicant is entitled to be entered in the register as the new proprietor of the estate."
+   },
+   {
+    "requirement": "If an adverse possession application is required to be dealt with under paragraph 5, the applicant is only entitled to be registered as the new proprietor if any of the three statutory conditions is met.",
+    "quote": "If an application under paragraph 1 is required to be dealt with under this paragraph, the applicant is only entitled to be registered as the new proprietor of the estate if any of the following conditions is met."
+   },
+   {
+    "requirement": "The first condition under paragraph 5 is met where it would be unconscionable due to an equity by estoppel for the registered proprietor to seek to dispossess the applicant, and the circumstances indicate that the applicant ought to be registered as proprietor.",
+    "quote": "The first condition is that— (a) it would be unconscionable because of an equity by estoppel for the registered proprietor to seek to dispossess the applicant, and (b) the circumstances are such that the applicant ought to be registered as the proprietor."
+   },
+   {
+    "requirement": "The second condition under paragraph 5 is met where the applicant is entitled to be registered as the proprietor of the estate for some reason other than estoppel or boundary dispute.",
+    "quote": "The second condition is that the applicant is for some other reason entitled to be registered as the proprietor of the estate."
+   },
+   {
+    "requirement": "The third condition under paragraph 5 is met where the land is adjacent to the applicant's land, the exact boundary line has not been determined under section 60 rules, the applicant (or predecessor) reasonably believed the land belonged to them for at least ten years of adverse possession ending on the application date, and the estate was registered more than one year before the application date.",
+    "quote": "The third condition is that— (a) the land to which the application relates is adjacent to land belonging to the applicant, (b) the exact line of the boundary between the two has not been determined under rules under section 60, (c) for at least ten years of the period of adverse possession ending on the date of the application, the applicant (or any predecessor in title) reasonably believed that the land to which the application relates belonged to him, and (d) the estate to which the application relates was registered more than one year prior to the date of the application."
+   },
+   {
+    "requirement": "For an application under paragraph 1(2) by an evicted person relying on the third condition, the required period of reasonable belief ends on the day before the applicant's eviction rather than the date of the application.",
+    "quote": "In relation to an application under paragraph 1(2), this paragraph has effect as if the reference in sub-paragraph (4)(c) to the date of the application were to the day before the date of the applicant’s eviction."
+   },
+   {
+    "requirement": "A person whose application under paragraph 1 is rejected may make a further application to be registered as proprietor if that person remains in adverse possession from the date of the initial application until the last day of the two-year period beginning with the date of rejection.",
+    "quote": "Where a person’s application under paragraph 1 is rejected, he may make a further application to be registered as the proprietor of the estate if he is in adverse possession of the estate from the date of the application until the last day of the period of two years beginning with the date of its rejection."
+   },
+   {
+    "requirement": "A person cannot make a further application under paragraph 6 if that person is a defendant in proceedings asserting a right to possession of the land, has had judgment for possession given against them in the last two years, or has been evicted pursuant to a judgment for possession.",
+    "quote": "However, a person may not make an application under this paragraph if— (a) he is a defendant in proceedings which involve asserting a right to possession of the land, (b) judgment for possession of the land has been given against him in the last two years, or (c) he has been evicted from the land pursuant to a judgment for possession."
+   },
+   {
+    "requirement": "An applicant who makes a valid further application under paragraph 6 is entitled to be entered in the register as the new proprietor of the estate.",
+    "quote": "If a person makes an application under paragraph 6, he is entitled to be entered in the register as the new proprietor of the estate."
+   },
+   {
+    "requirement": "No person may apply under Schedule 6 during, or within twelve months after the end of, any period during which the existing registered proprietor is an enemy or detained in enemy territory under the Limitation (Enemies and War Prisoners) Act 1945.",
+    "quote": "No one may apply under this Schedule to be registered as the proprietor of an estate in land during, or before the end of twelve months after the end of, any period in which the existing registered proprietor is for the purposes of the Limitation (Enemies and War Prisoners) Act 1945 (8 & 9 Geo. 6 c. 16)— (a) an enemy, or (b) detained in enemy territory."
+   },
+   {
+    "requirement": "No person may apply under Schedule 6 during any period in which the existing registered proprietor lacks capacity due to mental disability to make decisions regarding the application, or is unable to communicate such decisions due to mental disability or physical impairment.",
+    "quote": "No-one may apply under this Schedule to be registered as the proprietor of an estate in land during any period in which the existing registered proprietor is— (a) unable because of mental disability to make decisions about issues of the kind to which such an application would give rise, or (b) unable to communicate such decisions because of mental disability or physical impairment."
+   },
+   {
+    "requirement": "For the purposes of Schedule 6, mental disability is defined as a permanent or temporary disability or disorder of the mind or brain that causes an impairment or disturbance of mental functioning.",
+    "quote": "“mental disability” means a disability or disorder of the mind or brain, whether permanent or temporary, which results in an impairment or disturbance of mental functioning."
+   },
+   {
+    "requirement": "The registrar is permitted to enter an explanatory note in the register if it appears that the registered proprietor is subject to enemy status/detention or mental incapacity.",
+    "quote": "Where it appears to the registrar that sub-paragraph (1) or (2) applies in relation to an estate in land, he may include a note to that effect in the register."
+   },
+   {
+    "requirement": "When a person is registered as proprietor pursuant to an application under Schedule 6, that person's possessory title arising from adverse possession at the time of the application is extinguished.",
+    "quote": "Where a person is registered as the proprietor of an estate in land in pursuance of an application under this Schedule, the title by virtue of adverse possession which he had at the time of the application is extinguished."
+   },
+   {
+    "requirement": "Registration of an adverse possessor under Schedule 6 does not alter the priority of any existing interest affecting the registered estate, except with respect to registered charges as otherwise provided.",
+    "quote": "Subject to sub-paragraph (3), the registration of a person under this Schedule as the proprietor of an estate in land does not affect the priority of any interest affecting the estate."
+   },
+   {
+    "requirement": "When a person is registered under Schedule 6, the estate vests in them free from any registered charge that affected it immediately before registration, unless registration resulted from determining that a condition under paragraph 5 applied.",
+    "quote": "Subject to sub-paragraph (4), where a person is registered under this Schedule as the proprietor of an estate, the estate is vested in him free of any registered charge affecting the estate immediately before his registration. (4) Sub-paragraph (3) does not apply where registration as proprietor is in pursuance of an application determined by reference to whether any of the conditions in paragraph 5 applies."
+   },
+   {
+    "requirement": "If a registered estate remains subject to a charge that also affects other property following an adverse possessor's registration under Schedule 6, the new proprietor may require the chargee to apportion the secured debt between the estate and the other property based on their respective values.",
+    "quote": "the proprietor of the estate may require the chargee to apportion the amount secured by the charge at that time between the estate and the other property on the basis of their respective values."
+   },
+   {
+    "requirement": "A proprietor requiring an apportionment of a charge is entitled to have their estate discharged from the charge upon paying the apportioned amount and the chargee's costs resulting from the apportionment.",
+    "quote": "The person requiring the apportionment is entitled to a discharge of his estate from the charge on payment of— (a) the amount apportioned to the estate, and (b) the costs incurred by the chargee as a result of the apportionment."
+   },
+   {
+    "requirement": "When an estate is discharged following an apportionment, the chargor's total liability to the chargee is reduced by the amount apportioned to that estate.",
+    "quote": "On a discharge under this paragraph, the liability of the chargor to the chargee is reduced by the amount apportioned to the estate."
+   },
+   {
+    "requirement": "Rules may provide for the procedure, valuation, calculation of costs, and payment of the chargor's costs regarding the apportionment of a charge.",
+    "quote": "Rules may make provision about apportionment under this paragraph, in particular, provision about— (a) procedure, (b) valuation, (c) calculation of costs payable under sub-paragraph (2)(b), and (d) payment of the costs of the chargor."
+   },
+   {
+    "requirement": "A person is in adverse possession for Schedule 6 purposes if, but for section 96, a period of limitation under section 15 of the Limitation Act 1980 would run in their favour regarding the estate.",
+    "quote": "A person is in adverse possession of an estate in land for the purposes of this Schedule if, but for section 96, a period of limitation under section 15 of the Limitation Act 1980 (c. 58) would run in his favour in relation to the estate."
+   },
+   {
+    "requirement": "A person is regarded as having been in adverse possession during any adverse possession by a predecessor in title if they are the successor in title, or during any adverse possession by another person that is continuous with and sandwiched between periods of their own adverse possession.",
+    "quote": "A person is also to be regarded for those purposes as having been in adverse possession of an estate in land— (a) where he is the successor in title to an estate in the land, during any period of adverse possession by a predecessor in title to that estate, or (b) during any period of adverse possession by another person which comes between, and is continuous with, periods of adverse possession of his own."
+   },
+   {
+    "requirement": "In calculating whether a limitation period would run under section 15 of the Limitation Act 1980, the commencement of legal proceedings and paragraph 6 of Schedule 1 to that Act must both be disregarded.",
+    "quote": "In determining whether for the purposes of this paragraph a period of limitation would run under section 15 of the Limitation Act 1980, there are to be disregarded— (a) the commencement of any legal proceedings, and (b) paragraph 6 of Schedule 1 to that Act."
+   },
+   {
+    "requirement": "A person cannot be regarded as being in adverse possession of an estate while the estate is subject to a trust, unless every beneficiary under the trust holds an interest in possession.",
+    "quote": "A person is not to be regarded as being in adverse possession of an estate for the purposes of this Schedule at any time when the estate is subject to a trust, unless the interest of each of the beneficiaries in the estate is an interest in possession."
+   },
+   {
+    "requirement": "Where the adverse possession relates to foreshore land belonging to Her Majesty in right of the Crown, the Duchy of Lancaster, or the Duchy of Cornwall, the required adverse possession period under paragraph 1(1) is sixty years instead of ten years.",
+    "quote": "Where— (a) a person is in adverse possession of an estate in land, (b) the estate belongs to Her Majesty in right of the Crown or the Duchy of Lancaster or to the Duchy of Cornwall, and (c) the land consists of foreshore, paragraph 1(1) is to have effect as if the reference to ten years were to sixty years."
+   },
+   {
+    "requirement": "Land is treated as foreshore for the purpose of the extended limitation period if it has been foreshore at any time during the ten years preceding the application.",
+    "quote": "For the purposes of sub-paragraph (1), land is to be treated as foreshore if it has been foreshore at any time in the previous ten years."
+   },
+   {
+    "requirement": "Foreshore is defined as the shore and bed of the sea and of any tidal water below the medium high tide line between spring and neap tides.",
+    "quote": "In this paragraph, “foreshore” means the shore and bed of the sea and of any tidal water, below the line of the medium high tide between the spring and neap tides."
+   },
+   {
+    "requirement": "Rules must provide for the provisions of Schedule 6 to apply to registered rentcharges, subject to any modifications and exceptions specified by the rules.",
+    "quote": "Rules must make provision to apply the preceding provisions of this Schedule to registered rentcharges, subject to such modifications and exceptions as the rules may provide."
+   },
+   {
+    "requirement": "Rules may provide for the procedure to be followed in connection with an application under Schedule 6.",
+    "quote": "Rules may make provision about the procedure to be followed pursuant to an application under this Schedule."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period of adverse possession required to make an initial application to be registered as proprietor",
+    "value": "ten years",
+    "quote": "period of ten years ending on the date of the application"
+   },
+   {
+    "what": "Maximum period ending on the application date within which an applicant must have ceased adverse possession due to eviction to apply under paragraph 1(2)",
+    "value": "six months",
+    "quote": "period of six months ending on the date of the application"
+   },
+   {
+    "what": "Period preceding an application within which a judgment for possession bars an application under paragraph 1",
+    "value": "two years",
+    "quote": "judgment for possession of the land has been given against him in the last two years"
+   },
+   {
+    "what": "Minimum duration of reasonable belief that adjacent land belonged to the applicant required under the third condition",
+    "value": "ten years",
+    "quote": "for at least ten years of the period of adverse possession ending on the date of the application"
+   },
+   {
+    "what": "Minimum period for which the estate must have been registered prior to the application date under the third condition",
+    "value": "one year",
+    "quote": "the estate to which the application relates was registered more than one year prior to the date of the application"
+   },
+   {
+    "what": "Period beginning with the date of rejection during which adverse possession must continue to qualify for a further application",
+    "value": "two years",
+    "quote": "period of two years beginning with the date of its rejection"
+   },
+   {
+    "what": "Period preceding a further application within which a judgment for possession bars an application under paragraph 6",
+    "value": "two years",
+    "quote": "judgment for possession of the land has been given against him in the last two years"
+   },
+   {
+    "what": "Buffer period after the end of the registered proprietor's enemy status or detention during which no application under Schedule 6 may be made",
+    "value": "twelve months",
+    "quote": "before the end of twelve months after the end of, any period in which the existing registered proprietor is"
+   },
+   {
+    "what": "Standard adverse possession period replaced when dealing with Crown or Duchy foreshore",
+    "value": "ten years",
+    "quote": "reference to ten years were to sixty years"
+   },
+   {
+    "what": "Period of adverse possession required where Crown or Duchy foreshore is claimed",
+    "value": "sixty years",
+    "quote": "as if the reference to ten years were to sixty years"
+   },
+   {
+    "what": "Lookback period during which land having been foreshore causes it to be treated as foreshore",
+    "value": "ten years",
+    "quote": "foreshore at any time in the previous ten years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person may apply to the registrar to be registered as the proprietor of a registered estate in land if that person has been in adverse possession of the estate for a period of ten years ending on the date of the application.",
+   "quote": "A person may apply to the registrar to be registered as the proprietor of a registered estate in land if he has been in adverse possession of the estate for the period of ten years ending on the date of the application."
+  },
+  {
+   "requirement": "A person may apply to the registrar to be registered as the proprietor of a registered estate in land if the person ceased to be in adverse possession within the six months ending on the application date due to eviction by the registered proprietor (or someone claiming under them), was entitled to make a ten-year adverse possession application on the day before the eviction, and the eviction was not pursuant to a judgment for possession.",
+   "quote": "A person may also apply to the registrar to be registered as the proprietor of a registered estate in land if— (a) he has in the period of six months ending on the date of the application ceased to be in adverse possession of the estate because of eviction by the registered proprietor, or a person claiming under the registered proprietor, (b) on the day before his eviction he was entitled to make an application under sub-paragraph (1), and (c) the eviction was not pursuant to a judgment for possession."
+  },
+  {
+   "requirement": "A person cannot apply to be registered as proprietor under paragraph 1 if that person is currently a defendant in proceedings asserting a right to possession of the land, or if judgment for possession has been given against that person in the preceding two years.",
+   "quote": "However, a person may not make an application under this paragraph if— (a) he is a defendant in proceedings which involve asserting a right to possession of the land, or (b) judgment for possession of the land has been given against him in the last two years."
+  },
+  {
+   "requirement": "For the purpose of an initial ten-year adverse possession application, the estate does not need to have been registered for the entire period of adverse possession.",
+   "quote": "For the purposes of sub-paragraph (1), the estate need not have been registered throughout the period of adverse possession."
+  },
+  {
+   "requirement": "The registrar must give notice of an adverse possession application under paragraph 1 to the proprietor of the estate, the proprietor of any registered charge, the proprietor of any superior registered estate if the estate is leasehold, any person registered under rules to receive notice, and any other persons provided by rules.",
+   "quote": "The registrar must give notice of an application under paragraph 1 to— (a) the proprietor of the estate to which the application relates, (b) the proprietor of any registered charge on the estate, (c) where the estate is leasehold, the proprietor of any superior registered estate, (d) any person who is registered in accordance with rules as a person to be notified under this paragraph, and (e) such other persons as rules may provide."
+  },
+  {
+   "requirement": "A notice given by the registrar under paragraph 2 must include notice of the legal effect of paragraph 4.",
+   "quote": "Notice under this paragraph shall include notice of the effect of paragraph 4."
+  },
+  {
+   "requirement": "A person given notice of an application under paragraph 2 may require the application to be dealt with under paragraph 5 by giving notice to the registrar before the end of the period provided by rules.",
+   "quote": "A person given notice under paragraph 2 may require that the application to which the notice relates be dealt with under paragraph 5. (2) The right under this paragraph is exercisable by notice to the registrar given before the end of such period as rules may provide."
+  },
+  {
+   "requirement": "An applicant is entitled to be entered in the register as the new proprietor of the estate if their application under paragraph 1 is not required to be dealt with under paragraph 5.",
+   "quote": "If an application under paragraph 1 is not required to be dealt with under paragraph 5, the applicant is entitled to be entered in the register as the new proprietor of the estate."
+  },
+  {
+   "requirement": "If an adverse possession application is required to be dealt with under paragraph 5, the applicant is only entitled to be registered as the new proprietor if any of the three statutory conditions is met.",
+   "quote": "If an application under paragraph 1 is required to be dealt with under this paragraph, the applicant is only entitled to be registered as the new proprietor of the estate if any of the following conditions is met."
+  },
+  {
+   "requirement": "The first condition under paragraph 5 is met where it would be unconscionable due to an equity by estoppel for the registered proprietor to seek to dispossess the applicant, and the circumstances indicate that the applicant ought to be registered as proprietor.",
+   "quote": "The first condition is that— (a) it would be unconscionable because of an equity by estoppel for the registered proprietor to seek to dispossess the applicant, and (b) the circumstances are such that the applicant ought to be registered as the proprietor."
+  },
+  {
+   "requirement": "The second condition under paragraph 5 is met where the applicant is entitled to be registered as the proprietor of the estate for some reason other than estoppel or boundary dispute.",
+   "quote": "The second condition is that the applicant is for some other reason entitled to be registered as the proprietor of the estate."
+  },
+  {
+   "requirement": "The third condition under paragraph 5 is met where the land is adjacent to the applicant's land, the exact boundary line has not been determined under section 60 rules, the applicant (or predecessor) reasonably believed the land belonged to them for at least ten years of adverse possession ending on the application date, and the estate was registered more than one year before the application date.",
+   "quote": "The third condition is that— (a) the land to which the application relates is adjacent to land belonging to the applicant, (b) the exact line of the boundary between the two has not been determined under rules under section 60, (c) for at least ten years of the period of adverse possession ending on the date of the application, the applicant (or any predecessor in title) reasonably believed that the land to which the application relates belonged to him, and (d) the estate to which the application relates was registered more than one year prior to the date of the application."
+  },
+  {
+   "requirement": "For an application under paragraph 1(2) by an evicted person relying on the third condition, the required period of reasonable belief ends on the day before the applicant's eviction rather than the date of the application.",
+   "quote": "In relation to an application under paragraph 1(2), this paragraph has effect as if the reference in sub-paragraph (4)(c) to the date of the application were to the day before the date of the applicant’s eviction."
+  },
+  {
+   "requirement": "A person whose application under paragraph 1 is rejected may make a further application to be registered as proprietor if that person remains in adverse possession from the date of the initial application until the last day of the two-year period beginning with the date of rejection.",
+   "quote": "Where a person’s application under paragraph 1 is rejected, he may make a further application to be registered as the proprietor of the estate if he is in adverse possession of the estate from the date of the application until the last day of the period of two years beginning with the date of its rejection."
+  },
+  {
+   "requirement": "A person cannot make a further application under paragraph 6 if that person is a defendant in proceedings asserting a right to possession of the land, has had judgment for possession given against them in the last two years, or has been evicted pursuant to a judgment for possession.",
+   "quote": "However, a person may not make an application under this paragraph if— (a) he is a defendant in proceedings which involve asserting a right to possession of the land, (b) judgment for possession of the land has been given against him in the last two years, or (c) he has been evicted from the land pursuant to a judgment for possession."
+  },
+  {
+   "requirement": "An applicant who makes a valid further application under paragraph 6 is entitled to be entered in the register as the new proprietor of the estate.",
+   "quote": "If a person makes an application under paragraph 6, he is entitled to be entered in the register as the new proprietor of the estate."
+  },
+  {
+   "requirement": "No person may apply under Schedule 6 during, or within twelve months after the end of, any period during which the existing registered proprietor is an enemy or detained in enemy territory under the Limitation (Enemies and War Prisoners) Act 1945.",
+   "quote": "No one may apply under this Schedule to be registered as the proprietor of an estate in land during, or before the end of twelve months after the end of, any period in which the existing registered proprietor is for the purposes of the Limitation (Enemies and War Prisoners) Act 1945 (8 & 9 Geo. 6 c. 16)— (a) an enemy, or (b) detained in enemy territory."
+  },
+  {
+   "requirement": "No person may apply under Schedule 6 during any period in which the existing registered proprietor lacks capacity due to mental disability to make decisions regarding the application, or is unable to communicate such decisions due to mental disability or physical impairment.",
+   "quote": "No-one may apply under this Schedule to be registered as the proprietor of an estate in land during any period in which the existing registered proprietor is— (a) unable because of mental disability to make decisions about issues of the kind to which such an application would give rise, or (b) unable to communicate such decisions because of mental disability or physical impairment."
+  },
+  {
+   "requirement": "For the purposes of Schedule 6, mental disability is defined as a permanent or temporary disability or disorder of the mind or brain that causes an impairment or disturbance of mental functioning.",
+   "quote": "“mental disability” means a disability or disorder of the mind or brain, whether permanent or temporary, which results in an impairment or disturbance of mental functioning."
+  },
+  {
+   "requirement": "The registrar is permitted to enter an explanatory note in the register if it appears that the registered proprietor is subject to enemy status/detention or mental incapacity.",
+   "quote": "Where it appears to the registrar that sub-paragraph (1) or (2) applies in relation to an estate in land, he may include a note to that effect in the register."
+  },
+  {
+   "requirement": "When a person is registered as proprietor pursuant to an application under Schedule 6, that person's possessory title arising from adverse possession at the time of the application is extinguished.",
+   "quote": "Where a person is registered as the proprietor of an estate in land in pursuance of an application under this Schedule, the title by virtue of adverse possession which he had at the time of the application is extinguished."
+  },
+  {
+   "requirement": "Registration of an adverse possessor under Schedule 6 does not alter the priority of any existing interest affecting the registered estate, except with respect to registered charges as otherwise provided.",
+   "quote": "Subject to sub-paragraph (3), the registration of a person under this Schedule as the proprietor of an estate in land does not affect the priority of any interest affecting the estate."
+  },
+  {
+   "requirement": "When a person is registered under Schedule 6, the estate vests in them free from any registered charge that affected it immediately before registration, unless registration resulted from determining that a condition under paragraph 5 applied.",
+   "quote": "Subject to sub-paragraph (4), where a person is registered under this Schedule as the proprietor of an estate, the estate is vested in him free of any registered charge affecting the estate immediately before his registration. (4) Sub-paragraph (3) does not apply where registration as proprietor is in pursuance of an application determined by reference to whether any of the conditions in paragraph 5 applies."
+  },
+  {
+   "requirement": "If a registered estate remains subject to a charge that also affects other property following an adverse possessor's registration under Schedule 6, the new proprietor may require the chargee to apportion the secured debt between the estate and the other property based on their respective values.",
+   "quote": "the proprietor of the estate may require the chargee to apportion the amount secured by the charge at that time between the estate and the other property on the basis of their respective values."
+  },
+  {
+   "requirement": "A proprietor requiring an apportionment of a charge is entitled to have their estate discharged from the charge upon paying the apportioned amount and the chargee's costs resulting from the apportionment.",
+   "quote": "The person requiring the apportionment is entitled to a discharge of his estate from the charge on payment of— (a) the amount apportioned to the estate, and (b) the costs incurred by the chargee as a result of the apportionment."
+  },
+  {
+   "requirement": "When an estate is discharged following an apportionment, the chargor's total liability to the chargee is reduced by the amount apportioned to that estate.",
+   "quote": "On a discharge under this paragraph, the liability of the chargor to the chargee is reduced by the amount apportioned to the estate."
+  },
+  {
+   "requirement": "Rules may provide for the procedure, valuation, calculation of costs, and payment of the chargor's costs regarding the apportionment of a charge.",
+   "quote": "Rules may make provision about apportionment under this paragraph, in particular, provision about— (a) procedure, (b) valuation, (c) calculation of costs payable under sub-paragraph (2)(b), and (d) payment of the costs of the chargor."
+  },
+  {
+   "requirement": "A person is in adverse possession for Schedule 6 purposes if, but for section 96, a period of limitation under section 15 of the Limitation Act 1980 would run in their favour regarding the estate.",
+   "quote": "A person is in adverse possession of an estate in land for the purposes of this Schedule if, but for section 96, a period of limitation under section 15 of the Limitation Act 1980 (c. 58) would run in his favour in relation to the estate."
+  },
+  {
+   "requirement": "A person is regarded as having been in adverse possession during any adverse possession by a predecessor in title if they are the successor in title, or during any adverse possession by another person that is continuous with and sandwiched between periods of their own adverse possession.",
+   "quote": "A person is also to be regarded for those purposes as having been in adverse possession of an estate in land— (a) where he is the successor in title to an estate in the land, during any period of adverse possession by a predecessor in title to that estate, or (b) during any period of adverse possession by another person which comes between, and is continuous with, periods of adverse possession of his own."
+  },
+  {
+   "requirement": "In calculating whether a limitation period would run under section 15 of the Limitation Act 1980, the commencement of legal proceedings and paragraph 6 of Schedule 1 to that Act must both be disregarded.",
+   "quote": "In determining whether for the purposes of this paragraph a period of limitation would run under section 15 of the Limitation Act 1980, there are to be disregarded— (a) the commencement of any legal proceedings, and (b) paragraph 6 of Schedule 1 to that Act."
+  },
+  {
+   "requirement": "A person cannot be regarded as being in adverse possession of an estate while the estate is subject to a trust, unless every beneficiary under the trust holds an interest in possession.",
+   "quote": "A person is not to be regarded as being in adverse possession of an estate for the purposes of this Schedule at any time when the estate is subject to a trust, unless the interest of each of the beneficiaries in the estate is an interest in possession."
+  },
+  {
+   "requirement": "Where the adverse possession relates to foreshore land belonging to Her Majesty in right of the Crown, the Duchy of Lancaster, or the Duchy of Cornwall, the required adverse possession period under paragraph 1(1) is sixty years instead of ten years.",
+   "quote": "Where— (a) a person is in adverse possession of an estate in land, (b) the estate belongs to Her Majesty in right of the Crown or the Duchy of Lancaster or to the Duchy of Cornwall, and (c) the land consists of foreshore, paragraph 1(1) is to have effect as if the reference to ten years were to sixty years."
+  },
+  {
+   "requirement": "Land is treated as foreshore for the purpose of the extended limitation period if it has been foreshore at any time during the ten years preceding the application.",
+   "quote": "For the purposes of sub-paragraph (1), land is to be treated as foreshore if it has been foreshore at any time in the previous ten years."
+  },
+  {
+   "requirement": "Foreshore is defined as the shore and bed of the sea and of any tidal water below the medium high tide line between spring and neap tides.",
+   "quote": "In this paragraph, “foreshore” means the shore and bed of the sea and of any tidal water, below the line of the medium high tide between the spring and neap tides."
+  },
+  {
+   "requirement": "Rules must provide for the provisions of Schedule 6 to apply to registered rentcharges, subject to any modifications and exceptions specified by the rules.",
+   "quote": "Rules must make provision to apply the preceding provisions of this Schedule to registered rentcharges, subject to such modifications and exceptions as the rules may provide."
+  },
+  {
+   "requirement": "Rules may provide for the procedure to be followed in connection with an application under Schedule 6.",
+   "quote": "Rules may make provision about the procedure to be followed pursuant to an application under this Schedule."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period of adverse possession required to make an initial application to be registered as proprietor",
+   "value": "ten years",
+   "quote": "period of ten years ending on the date of the application"
+  },
+  {
+   "what": "Maximum period ending on the application date within which an applicant must have ceased adverse possession due to eviction to apply under paragraph 1(2)",
+   "value": "six months",
+   "quote": "period of six months ending on the date of the application"
+  },
+  {
+   "what": "Period preceding an application within which a judgment for possession bars an application under paragraph 1",
+   "value": "two years",
+   "quote": "judgment for possession of the land has been given against him in the last two years"
+  },
+  {
+   "what": "Minimum duration of reasonable belief that adjacent land belonged to the applicant required under the third condition",
+   "value": "ten years",
+   "quote": "for at least ten years of the period of adverse possession ending on the date of the application"
+  },
+  {
+   "what": "Minimum period for which the estate must have been registered prior to the application date under the third condition",
+   "value": "one year",
+   "quote": "the estate to which the application relates was registered more than one year prior to the date of the application"
+  },
+  {
+   "what": "Period beginning with the date of rejection during which adverse possession must continue to qualify for a further application",
+   "value": "two years",
+   "quote": "period of two years beginning with the date of its rejection"
+  },
+  {
+   "what": "Period preceding a further application within which a judgment for possession bars an application under paragraph 6",
+   "value": "two years",
+   "quote": "judgment for possession of the land has been given against him in the last two years"
+  },
+  {
+   "what": "Buffer period after the end of the registered proprietor's enemy status or detention during which no application under Schedule 6 may be made",
+   "value": "twelve months",
+   "quote": "before the end of twelve months after the end of, any period in which the existing registered proprietor is"
+  },
+  {
+   "what": "Standard adverse possession period replaced when dealing with Crown or Duchy foreshore",
+   "value": "ten years",
+   "quote": "reference to ten years were to sixty years"
+  },
+  {
+   "what": "Period of adverse possession required where Crown or Duchy foreshore is claimed",
+   "value": "sixty years",
+   "quote": "as if the reference to ten years were to sixty years"
+  },
+  {
+   "what": "Lookback period during which land having been foreshore causes it to be treated as foreshore",
+   "value": "ten years",
+   "quote": "foreshore at any time in the previous ten years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 36,
+  "elements_verified": 36,
+  "thresholds_proposed": 11,
+  "thresholds_verified": 11
+ }
+}

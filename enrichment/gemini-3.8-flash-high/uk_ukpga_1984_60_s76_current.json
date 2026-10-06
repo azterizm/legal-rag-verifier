@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1984/60/s76@current",
+ "section": "uk/ukpga/1984/60/s76",
+ "version": "current",
+ "source_sha256": "cccbf3d23d10bde7f8400d92f7bf39eacd4715225f5671d3d2038ba5a486ad04",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In any proceedings, a confession made by an accused person may be given in evidence against that accused person in so far as it is relevant to any matter in issue in the proceedings and is not excluded by the court under section 76 of the Police and Criminal Evidence Act 1984.",
+    "quote": "a confession made by an accused person may be given in evidence against him in so far as it is relevant to any matter in issue in the proceedings and is not excluded by the court"
+   },
+   {
+    "requirement": "If it is represented to the court in proceedings where the prosecution proposes to introduce a confession made by an accused person that the confession was or may have been obtained by oppression of the person who made it, the court shall not allow the confession to be given in evidence against the accused person unless the prosecution proves beyond reasonable doubt that it was not so obtained, notwithstanding that the confession may be true.",
+    "quote": "the court shall not allow the confession to be given in evidence against him except in so far as the prosecution proves to the court beyond reasonable doubt that the confession (notwithstanding that it may be true) was not obtained as aforesaid"
+   },
+   {
+    "requirement": "If it is represented to the court in proceedings where the prosecution proposes to introduce a confession made by an accused person that the confession was or may have been obtained in consequence of anything said or done which was likely, in the circumstances existing at the time, to render unreliable any confession which might be made by the accused person in consequence thereof, the court shall not allow the confession to be given in evidence against the accused person unless the prosecution proves beyond reasonable doubt that it was not so obtained, notwithstanding that the confession may be true.",
+    "quote": "in consequence of anything said or done which was likely, in the circumstances existing at the time, to render unreliable any confession which might be made by him in consequence thereof"
+   },
+   {
+    "requirement": "In any proceedings where the prosecution proposes to give in evidence a confession made by an accused person, the court may of its own motion require the prosecution to prove that the confession was not obtained by oppression or in circumstances likely to render it unreliable, as a condition of allowing the prosecution to introduce it.",
+    "quote": "the court may of its own motion require the prosecution, as a condition of allowing it to do so, to prove that the confession was not obtained as mentioned in subsection (2) above"
+   },
+   {
+    "requirement": "The fact that a confession made by an accused person is wholly or partly excluded under section 76 of the Police and Criminal Evidence Act 1984 shall not affect the admissibility in evidence of any facts discovered as a result of that confession.",
+    "quote": "shall not affect the admissibility in evidence— (a) of any facts discovered as a result of the confession"
+   },
+   {
+    "requirement": "The fact that a confession made by an accused person is wholly or partly excluded under section 76 of the Police and Criminal Evidence Act 1984 shall not affect the admissibility in evidence of so much of the confession as is necessary to show that the accused speaks, writes, or expresses himself in a particular way, where the confession is relevant for that purpose.",
+    "quote": "where the confession is relevant as showing that the accused speaks, writes or expresses himself in a particular way, of so much of the confession as is necessary to show that he does so"
+   },
+   {
+    "requirement": "Evidence that a fact was discovered as a result of a statement made by an accused person is not admissible if that fact was discovered as a result of a confession wholly excluded under section 76 of the Police and Criminal Evidence Act 1984, unless evidence of how the fact was discovered is given by the accused person or on the accused person's behalf.",
+    "quote": "Evidence that a fact to which this subsection applies was discovered as a result of a statement made by an accused person shall not be admissible unless evidence of how it was discovered is given by him or on his behalf"
+   },
+   {
+    "requirement": "Evidence that a fact was discovered as a result of a statement made by an accused person is not admissible if that fact was discovered as a result of an excluded part of a confession partly excluded under section 76 of the Police and Criminal Evidence Act 1984, unless evidence of how the fact was discovered is given by the accused person or on the accused person's behalf.",
+    "quote": "to any fact discovered as a result of a confession which is partly so excluded, if the fact is discovered as a result of the excluded part of the confession"
+   },
+   {
+    "requirement": "Nothing in Part VII of the Police and Criminal Evidence Act 1984 shall prejudice the admissibility of a confession made by an accused person.",
+    "quote": "Nothing in Part VII of this Act shall prejudice the admissibility of a confession made by an accused person"
+   },
+   {
+    "requirement": "For the purposes of section 76 of the Police and Criminal Evidence Act 1984, oppression includes torture, inhuman or degrading treatment, and the use or threat of violence, regardless of whether that violence amounts to torture.",
+    "quote": "“oppression” includes torture, inhuman or degrading treatment, and the use or threat of violence (whether or not amounting to torture)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In any proceedings, a confession made by an accused person may be given in evidence against that accused person in so far as it is relevant to any matter in issue in the proceedings and is not excluded by the court under section 76 of the Police and Criminal Evidence Act 1984.",
+   "quote": "a confession made by an accused person may be given in evidence against him in so far as it is relevant to any matter in issue in the proceedings and is not excluded by the court"
+  },
+  {
+   "requirement": "If it is represented to the court in proceedings where the prosecution proposes to introduce a confession made by an accused person that the confession was or may have been obtained by oppression of the person who made it, the court shall not allow the confession to be given in evidence against the accused person unless the prosecution proves beyond reasonable doubt that it was not so obtained, notwithstanding that the confession may be true.",
+   "quote": "the court shall not allow the confession to be given in evidence against him except in so far as the prosecution proves to the court beyond reasonable doubt that the confession (notwithstanding that it may be true) was not obtained as aforesaid"
+  },
+  {
+   "requirement": "If it is represented to the court in proceedings where the prosecution proposes to introduce a confession made by an accused person that the confession was or may have been obtained in consequence of anything said or done which was likely, in the circumstances existing at the time, to render unreliable any confession which might be made by the accused person in consequence thereof, the court shall not allow the confession to be given in evidence against the accused person unless the prosecution proves beyond reasonable doubt that it was not so obtained, notwithstanding that the confession may be true.",
+   "quote": "in consequence of anything said or done which was likely, in the circumstances existing at the time, to render unreliable any confession which might be made by him in consequence thereof"
+  },
+  {
+   "requirement": "In any proceedings where the prosecution proposes to give in evidence a confession made by an accused person, the court may of its own motion require the prosecution to prove that the confession was not obtained by oppression or in circumstances likely to render it unreliable, as a condition of allowing the prosecution to introduce it.",
+   "quote": "the court may of its own motion require the prosecution, as a condition of allowing it to do so, to prove that the confession was not obtained as mentioned in subsection (2) above"
+  },
+  {
+   "requirement": "The fact that a confession made by an accused person is wholly or partly excluded under section 76 of the Police and Criminal Evidence Act 1984 shall not affect the admissibility in evidence of any facts discovered as a result of that confession.",
+   "quote": "shall not affect the admissibility in evidence— (a) of any facts discovered as a result of the confession"
+  },
+  {
+   "requirement": "The fact that a confession made by an accused person is wholly or partly excluded under section 76 of the Police and Criminal Evidence Act 1984 shall not affect the admissibility in evidence of so much of the confession as is necessary to show that the accused speaks, writes, or expresses himself in a particular way, where the confession is relevant for that purpose.",
+   "quote": "where the confession is relevant as showing that the accused speaks, writes or expresses himself in a particular way, of so much of the confession as is necessary to show that he does so"
+  },
+  {
+   "requirement": "Evidence that a fact was discovered as a result of a statement made by an accused person is not admissible if that fact was discovered as a result of a confession wholly excluded under section 76 of the Police and Criminal Evidence Act 1984, unless evidence of how the fact was discovered is given by the accused person or on the accused person's behalf.",
+   "quote": "Evidence that a fact to which this subsection applies was discovered as a result of a statement made by an accused person shall not be admissible unless evidence of how it was discovered is given by him or on his behalf"
+  },
+  {
+   "requirement": "Evidence that a fact was discovered as a result of a statement made by an accused person is not admissible if that fact was discovered as a result of an excluded part of a confession partly excluded under section 76 of the Police and Criminal Evidence Act 1984, unless evidence of how the fact was discovered is given by the accused person or on the accused person's behalf.",
+   "quote": "to any fact discovered as a result of a confession which is partly so excluded, if the fact is discovered as a result of the excluded part of the confession"
+  },
+  {
+   "requirement": "Nothing in Part VII of the Police and Criminal Evidence Act 1984 shall prejudice the admissibility of a confession made by an accused person.",
+   "quote": "Nothing in Part VII of this Act shall prejudice the admissibility of a confession made by an accused person"
+  },
+  {
+   "requirement": "For the purposes of section 76 of the Police and Criminal Evidence Act 1984, oppression includes torture, inhuman or degrading treatment, and the use or threat of violence, regardless of whether that violence amounts to torture.",
+   "quote": "“oppression” includes torture, inhuman or degrading treatment, and the use or threat of violence (whether or not amounting to torture)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s27@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s27",
+ "version": "current",
+ "source_sha256": "9da6511a17ea2f91bc067752f2a562080ee68964496ba93c956baad301c91784",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A purchaser of a legal estate from trustees of land shall not be concerned with the trusts affecting the land, the net income of the land, or the proceeds of sale of the land, whether or not those trusts are declared by the same instrument as that by which the trust of land is created.",
+    "quote": "shall not be concerned with the trusts affecting the land, the net income of the land or the proceeds of sale of the land"
+   },
+   {
+    "requirement": "Proceeds of sale or other capital money shall not be paid to or applied by the direction of fewer than two persons as trustees, notwithstanding anything to the contrary in the instrument creating a trust of land or in any trust affecting the net proceeds of sale of the land if it is sold.",
+    "quote": "proceeds of sale or other capital money shall not be paid to or applied by the direction of fewer than two persons as trustees"
+   },
+   {
+    "requirement": "Proceeds of sale or other capital money may be paid to or applied by the direction of fewer than two persons where the trustee is a trust corporation.",
+    "quote": "except where the trustee is a trust corporation"
+   },
+   {
+    "requirement": "A sole personal representative acting as such retains the right to give valid receipts for, or direct the application of, proceeds of sale or other capital money.",
+    "quote": "does not affect the right of a sole personal representative as such to give valid receipts for, or direct the application of, proceeds of sale or other capital money"
+   },
+   {
+    "requirement": "It is not rendered necessary to have more than one trustee unless capital money arises on the transaction.",
+    "quote": "nor, except where capital money arises on the transaction, render it necessary to have more than one trustee"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the minimum number of persons acting as trustees required to receive or direct the application of proceeds of sale or other capital money (unless the trustee is a trust corporation)",
+    "value": "two",
+    "quote": "fewer than two persons as trustees"
+   },
+   {
+    "what": "the number of trustees above which it is not rendered necessary to have unless capital money arises on the transaction",
+    "value": "one",
+    "quote": "more than one trustee"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A purchaser of a legal estate from trustees of land shall not be concerned with the trusts affecting the land, the net income of the land, or the proceeds of sale of the land, whether or not those trusts are declared by the same instrument as that by which the trust of land is created.",
+   "quote": "shall not be concerned with the trusts affecting the land, the net income of the land or the proceeds of sale of the land"
+  },
+  {
+   "requirement": "Proceeds of sale or other capital money shall not be paid to or applied by the direction of fewer than two persons as trustees, notwithstanding anything to the contrary in the instrument creating a trust of land or in any trust affecting the net proceeds of sale of the land if it is sold.",
+   "quote": "proceeds of sale or other capital money shall not be paid to or applied by the direction of fewer than two persons as trustees"
+  },
+  {
+   "requirement": "Proceeds of sale or other capital money may be paid to or applied by the direction of fewer than two persons where the trustee is a trust corporation.",
+   "quote": "except where the trustee is a trust corporation"
+  },
+  {
+   "requirement": "A sole personal representative acting as such retains the right to give valid receipts for, or direct the application of, proceeds of sale or other capital money.",
+   "quote": "does not affect the right of a sole personal representative as such to give valid receipts for, or direct the application of, proceeds of sale or other capital money"
+  },
+  {
+   "requirement": "It is not rendered necessary to have more than one trustee unless capital money arises on the transaction.",
+   "quote": "nor, except where capital money arises on the transaction, render it necessary to have more than one trustee"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

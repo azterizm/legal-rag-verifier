@@ -1,0 +1,74 @@
+{
+  "classes": {
+    "connective": {
+      "n": 10,
+      "rolled_back": 0,
+      "false_rollback_rate": 0.0
+    },
+    "dropped_qualifier": {
+      "n": 9,
+      "rolled_back": 4,
+      "recall": 0.4444
+    },
+    "grounded_paraphrase": {
+      "n": 125,
+      "rolled_back": 23,
+      "false_rollback_rate": 0.184
+    },
+    "modal_shift": {
+      "n": 17,
+      "rolled_back": 13,
+      "recall": 0.7647
+    },
+    "premise_correction": {
+      "n": 6,
+      "rolled_back": 6,
+      "false_rollback_rate": 1.0
+    },
+    "unsupported_plausible": {
+      "n": 33,
+      "rolled_back": 28,
+      "recall": 0.8485
+    },
+    "value_swap": {
+      "n": 8,
+      "rolled_back": 3,
+      "recall": 0.375
+    },
+    "version_swap": {
+      "n": 8,
+      "rolled_back": 8,
+      "recall": 1.0
+    },
+    "wrong_citation": {
+      "n": 15,
+      "rolled_back": 13,
+      "recall": 0.8667
+    },
+    "wrong_figure": {
+      "n": 24,
+      "rolled_back": 23,
+      "recall": 0.9583
+    },
+    "wrong_instrument": {
+      "n": 16,
+      "rolled_back": 16,
+      "recall": 1.0
+    }
+  },
+  "headline": {
+    "grounded_paraphrase_false_rollback_rate": 0.184,
+    "pass_false_rollback_rate": 0.2057,
+    "failure_recall": 0.8308,
+    "rollback_precision": 0.7883
+  },
+  "config": {
+    "entail_threshold": 0.7,
+    "contradict_threshold": 0.4,
+    "neutral_policy": "connective",
+    "top_k": 2,
+    "align_ratio": 0.5
+  },
+  "nli": "cross-encoder/nli-deberta-v3-small@fa2804872c3b4bd748f38c0185cc85775361e735",
+  "seconds": 126.58
+}

@@ -1,0 +1,179 @@
+{
+ "key": "uk/ukpga/2004/34/s214@current",
+ "section": "uk/ukpga/2004/34/s214",
+ "version": "current",
+ "source_sha256": "e36333e31cd7b7f60e9df3ea2204895139724d96a406012f6d052fd38d589823",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A tenant or any relevant person (as defined by section 213(10)) may apply to the county court where a tenancy deposit has been paid in connection with an assured tenancy on or after 6 April 2007 on the ground that section 213(3) or (6) has not been complied with in relation to the deposit.",
+    "quote": "the tenant or any relevant person (as defined by section 213(10)) may make an application to the county court on the grounds— (a) that section 213(3) or (6) has not been complied with in relation to the deposit"
+   },
+   {
+    "requirement": "A tenant or any relevant person (as defined by section 213(10)) may apply to the county court where a tenancy deposit has been paid in connection with an assured tenancy on or after 6 April 2007 on the ground that they have been notified by the landlord that a particular authorised scheme applies to the deposit but have been unable to obtain confirmation from the scheme administrator that the deposit is being held in accordance with the scheme.",
+    "quote": "that he has been notified by the landlord that a particular authorised scheme applies to the deposit but has been unable to obtain confirmation from the scheme administrator that the deposit is being held in accordance with the scheme"
+   },
+   {
+    "requirement": "For a tenancy that was an assured shorthold tenancy immediately before the commencement date, section 214(1) applies as if the words 'on or after 6 April 2007' were inserted after 'assured tenancy' in the first place it occurs.",
+    "quote": "subsection (1) applies as if after “assured tenancy”, in the first place it occurs, there were inserted “on or after 6 April 2007”"
+   },
+   {
+    "requirement": "An assured shorthold tenancy means an assured shorthold tenancy within the meaning of Chapter 2 of Part 1 of the Housing Act 1988 as it had effect before the amendments made by the Renters’ Rights Act 2025.",
+    "quote": "“assured shorthold tenancy” means an assured shorthold tenancy within the meaning of Chapter 2 of Part 1 of the Housing Act 1988 as it had effect before the amendments made by the Renters’ Rights Act 2025"
+   },
+   {
+    "requirement": "The term 'the commencement date' carries the meaning given by section 146(3) of the Renters’ Rights Act 2025.",
+    "quote": "“the commencement date” has the meaning given by section 146(3) of the Renters’ Rights Act 2025"
+   },
+   {
+    "requirement": "An application under section 214(1) may also be made where the tenancy has ended, in which case the reference to the tenant refers to a person who was a tenant under the tenancy.",
+    "quote": "Subsection (1) also applies in a case where the tenancy has ended, and in such a case the reference in subsection (1) to the tenant is to a person who was a tenant under the tenancy"
+   },
+   {
+    "requirement": "Subsections 214(3) and (4) apply where the tenancy has not ended and the court is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit or is not satisfied that the deposit is being held in accordance with an authorised scheme.",
+    "quote": "Subsections (3) and (4) apply in the case of an application under subsection (1) if the tenancy has not ended and the court— (a) is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit, or (b) is not satisfied that the deposit is being held in accordance with an authorised scheme"
+   },
+   {
+    "requirement": "Subsections 214(3A) and (4) apply where the tenancy has ended (whether before or after the application was made) and the court is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit or is not satisfied that the deposit is being held in accordance with an authorised scheme.",
+    "quote": "Subsections (3A) and (4) apply in the case of an application under subsection (1) if the tenancy has ended (whether before or after the making of the application) and the court— (a) is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit, or (b) is not satisfied that the deposit is being held in accordance with an authorised scheme"
+   },
+   {
+    "requirement": "Where the tenancy has not ended and the relevant condition is met, the court must either order the person appearing to hold the deposit to repay it to the applicant or order that person to pay it into the designated account held by the scheme administrator under an authorised custodial scheme within 14 days beginning with the date of the order.",
+    "quote": "The court must, as it thinks fit, either— (a) order the person who appears to the court to be holding the deposit to repay it to the applicant, or (b) order that person to pay the deposit into the designated account held by the scheme administrator under an authorised custodial scheme, within the period of 14 days beginning with the date of the making of the order"
+   },
+   {
+    "requirement": "Where the tenancy has ended and the relevant condition is met, the court may order the person appearing to hold the deposit to repay all or part of it to the applicant within 14 days beginning with the date of the order.",
+    "quote": "The court may order the person who appears to the court to be holding the deposit to repay all or part of it to the applicant within the period of 14 days beginning with the date of the making of the order"
+   },
+   {
+    "requirement": "Where the relevant condition is met, the court must order the landlord to pay the applicant a sum between one and three times the amount of the deposit within 14 days beginning with the date of the order.",
+    "quote": "The court must ... order the landlord to pay to the applicant a sum of money not less than the amount of the deposit and not more than three times the amount of the deposit within the period of 14 days beginning with the date of the making of the order"
+   },
+   {
+    "requirement": "Where a deposit given in connection with an assured tenancy could not be lawfully required due to section 213(7), the property is recoverable from the person holding it by the person who gave it as a deposit.",
+    "quote": "Where any deposit given in connection with a shorthold an assured tenancy could not be lawfully required as a result of section 213(7), the property in question is recoverable from the person holding it by the person by whom it was given as a deposit"
+   },
+   {
+    "requirement": "For the purposes of section 214(5), 'deposit' has the meaning given by section 213(8).",
+    "quote": "In subsection (5) “deposit” has the meaning given by section 213(8)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The date on or after which a tenancy deposit must have been paid in connection with an assured tenancy for section 214(1) to apply",
+    "value": "6 April 2007",
+    "quote": "on or after 6 April 2007"
+   },
+   {
+    "what": "The period within which the person appearing to hold the deposit must repay it or pay it into the designated custodial scheme account following a court order under subsection (3)",
+    "value": "14 days",
+    "quote": "within the period of 14 days beginning with the date of the making of the order"
+   },
+   {
+    "what": "The period within which the person appearing to hold the deposit must repay all or part of it following a court order under subsection (3A)",
+    "value": "14 days",
+    "quote": "within the period of 14 days beginning with the date of the making of the order"
+   },
+   {
+    "what": "The minimum sum of money the court must order the landlord to pay to the applicant",
+    "value": "the amount of the deposit",
+    "quote": "not less than the amount of the deposit"
+   },
+   {
+    "what": "The maximum sum of money the court must order the landlord to pay to the applicant",
+    "value": "three times the amount of the deposit",
+    "quote": "not more than three times the amount of the deposit"
+   },
+   {
+    "what": "The period within which the landlord must pay the ordered sum of money to the applicant under subsection (4)",
+    "value": "14 days",
+    "quote": "within the period of 14 days beginning with the date of the making of the order"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A tenant or any relevant person (as defined by section 213(10)) may apply to the county court where a tenancy deposit has been paid in connection with an assured tenancy on or after 6 April 2007 on the ground that section 213(3) or (6) has not been complied with in relation to the deposit.",
+   "quote": "the tenant or any relevant person (as defined by section 213(10)) may make an application to the county court on the grounds— (a) that section 213(3) or (6) has not been complied with in relation to the deposit"
+  },
+  {
+   "requirement": "A tenant or any relevant person (as defined by section 213(10)) may apply to the county court where a tenancy deposit has been paid in connection with an assured tenancy on or after 6 April 2007 on the ground that they have been notified by the landlord that a particular authorised scheme applies to the deposit but have been unable to obtain confirmation from the scheme administrator that the deposit is being held in accordance with the scheme.",
+   "quote": "that he has been notified by the landlord that a particular authorised scheme applies to the deposit but has been unable to obtain confirmation from the scheme administrator that the deposit is being held in accordance with the scheme"
+  },
+  {
+   "requirement": "For a tenancy that was an assured shorthold tenancy immediately before the commencement date, section 214(1) applies as if the words 'on or after 6 April 2007' were inserted after 'assured tenancy' in the first place it occurs.",
+   "quote": "subsection (1) applies as if after “assured tenancy”, in the first place it occurs, there were inserted “on or after 6 April 2007”"
+  },
+  {
+   "requirement": "An assured shorthold tenancy means an assured shorthold tenancy within the meaning of Chapter 2 of Part 1 of the Housing Act 1988 as it had effect before the amendments made by the Renters’ Rights Act 2025.",
+   "quote": "“assured shorthold tenancy” means an assured shorthold tenancy within the meaning of Chapter 2 of Part 1 of the Housing Act 1988 as it had effect before the amendments made by the Renters’ Rights Act 2025"
+  },
+  {
+   "requirement": "The term 'the commencement date' carries the meaning given by section 146(3) of the Renters’ Rights Act 2025.",
+   "quote": "“the commencement date” has the meaning given by section 146(3) of the Renters’ Rights Act 2025"
+  },
+  {
+   "requirement": "An application under section 214(1) may also be made where the tenancy has ended, in which case the reference to the tenant refers to a person who was a tenant under the tenancy.",
+   "quote": "Subsection (1) also applies in a case where the tenancy has ended, and in such a case the reference in subsection (1) to the tenant is to a person who was a tenant under the tenancy"
+  },
+  {
+   "requirement": "Subsections 214(3) and (4) apply where the tenancy has not ended and the court is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit or is not satisfied that the deposit is being held in accordance with an authorised scheme.",
+   "quote": "Subsections (3) and (4) apply in the case of an application under subsection (1) if the tenancy has not ended and the court— (a) is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit, or (b) is not satisfied that the deposit is being held in accordance with an authorised scheme"
+  },
+  {
+   "requirement": "Subsections 214(3A) and (4) apply where the tenancy has ended (whether before or after the application was made) and the court is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit or is not satisfied that the deposit is being held in accordance with an authorised scheme.",
+   "quote": "Subsections (3A) and (4) apply in the case of an application under subsection (1) if the tenancy has ended (whether before or after the making of the application) and the court— (a) is satisfied that section 213(3) or (6) has not been complied with in relation to the deposit, or (b) is not satisfied that the deposit is being held in accordance with an authorised scheme"
+  },
+  {
+   "requirement": "Where the tenancy has not ended and the relevant condition is met, the court must either order the person appearing to hold the deposit to repay it to the applicant or order that person to pay it into the designated account held by the scheme administrator under an authorised custodial scheme within 14 days beginning with the date of the order.",
+   "quote": "The court must, as it thinks fit, either— (a) order the person who appears to the court to be holding the deposit to repay it to the applicant, or (b) order that person to pay the deposit into the designated account held by the scheme administrator under an authorised custodial scheme, within the period of 14 days beginning with the date of the making of the order"
+  },
+  {
+   "requirement": "Where the tenancy has ended and the relevant condition is met, the court may order the person appearing to hold the deposit to repay all or part of it to the applicant within 14 days beginning with the date of the order.",
+   "quote": "The court may order the person who appears to the court to be holding the deposit to repay all or part of it to the applicant within the period of 14 days beginning with the date of the making of the order"
+  },
+  {
+   "requirement": "Where the relevant condition is met, the court must order the landlord to pay the applicant a sum between one and three times the amount of the deposit within 14 days beginning with the date of the order.",
+   "quote": "The court must ... order the landlord to pay to the applicant a sum of money not less than the amount of the deposit and not more than three times the amount of the deposit within the period of 14 days beginning with the date of the making of the order"
+  },
+  {
+   "requirement": "Where a deposit given in connection with an assured tenancy could not be lawfully required due to section 213(7), the property is recoverable from the person holding it by the person who gave it as a deposit.",
+   "quote": "Where any deposit given in connection with a shorthold an assured tenancy could not be lawfully required as a result of section 213(7), the property in question is recoverable from the person holding it by the person by whom it was given as a deposit"
+  },
+  {
+   "requirement": "For the purposes of section 214(5), 'deposit' has the meaning given by section 213(8).",
+   "quote": "In subsection (5) “deposit” has the meaning given by section 213(8)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The date on or after which a tenancy deposit must have been paid in connection with an assured tenancy for section 214(1) to apply",
+   "value": "6 April 2007",
+   "quote": "on or after 6 April 2007"
+  },
+  {
+   "what": "The period within which the person appearing to hold the deposit must repay it or pay it into the designated custodial scheme account following a court order under subsection (3)",
+   "value": "14 days",
+   "quote": "within the period of 14 days beginning with the date of the making of the order"
+  },
+  {
+   "what": "The period within which the person appearing to hold the deposit must repay all or part of it following a court order under subsection (3A)",
+   "value": "14 days",
+   "quote": "within the period of 14 days beginning with the date of the making of the order"
+  },
+  {
+   "what": "The period within which the landlord must pay the ordered sum of money to the applicant under subsection (4)",
+   "value": "14 days",
+   "quote": "within the period of 14 days beginning with the date of the making of the order"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 4
+ }
+}

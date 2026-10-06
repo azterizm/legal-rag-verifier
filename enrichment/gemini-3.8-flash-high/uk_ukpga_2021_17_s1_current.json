@@ -1,0 +1,104 @@
+{
+ "key": "uk/ukpga/2021/17/s1@current",
+ "section": "uk/ukpga/2021/17/s1",
+ "version": "current",
+ "source_sha256": "6491233fe05f1298f9ac151e1f235c9015a3ce7e37c6edf255db310336dc6a60",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1 defines the term “domestic abuse” for the purposes of the Domestic Abuse Act 2021.",
+    "quote": "defines “domestic abuse” for the purposes of this Act"
+   },
+   {
+    "requirement": "Behaviour of a person (“A”) towards another person (“B”) constitutes “domestic abuse” if person A and person B are each aged 16 or over, are personally connected to each other, and the behaviour is abusive.",
+    "quote": "Behaviour of a person (“A”) towards another person (“B”) is “domestic abuse” if— (a) A and B are each aged 16 or over and are personally connected to each other, and (b) the behaviour is abusive."
+   },
+   {
+    "requirement": "Behaviour is “abusive” if it consists of physical or sexual abuse, violent or threatening behaviour, controlling or coercive behaviour, economic abuse, or psychological, emotional or other abuse.",
+    "quote": "Behaviour is “abusive” if it consists of any of the following— (a) physical or sexual abuse; (b) violent or threatening behaviour; (c) controlling or coercive behaviour; (d) economic abuse (see subsection (4)); (e) psychological, emotional or other abuse"
+   },
+   {
+    "requirement": "Behaviour may be abusive regardless of whether it consists of a single incident or a course of conduct.",
+    "quote": "it does not matter whether the behaviour consists of a single incident or a course of conduct"
+   },
+   {
+    "requirement": "“Economic abuse” means any behaviour that has a substantial adverse effect on person B's ability to acquire, use or maintain money or other property, or to obtain goods or services.",
+    "quote": "“Economic abuse” means any behaviour that has a substantial adverse effect on B's ability to— (a) acquire, use or maintain money or other property, or (b) obtain goods or services."
+   },
+   {
+    "requirement": "For the purposes of the Domestic Abuse Act 2021, person A's behaviour may be behaviour “towards” person B even if it consists of conduct directed at another person, such as person B's child.",
+    "quote": "A's behaviour may be behaviour “towards” B despite the fact that it consists of conduct directed at another person (for example, B's child)."
+   },
+   {
+    "requirement": "References in the Domestic Abuse Act 2021 to being abusive towards another person must be read in accordance with section 1.",
+    "quote": "References in this Act to being abusive towards another person are to be read in accordance with this section."
+   },
+   {
+    "requirement": "The definition and meaning of “personally connected” for the purposes of section 1 are set out in section 2.",
+    "quote": "For the meaning of “personally connected”, see section 2."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum age of person A and person B for behaviour to qualify as domestic abuse",
+    "value": "16",
+    "quote": "aged 16 or over"
+   },
+   {
+    "what": "minimum number of incidents of behaviour required to constitute abusive behaviour",
+    "value": "single",
+    "quote": "a single incident"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 1 defines the term “domestic abuse” for the purposes of the Domestic Abuse Act 2021.",
+   "quote": "defines “domestic abuse” for the purposes of this Act"
+  },
+  {
+   "requirement": "Behaviour of a person (“A”) towards another person (“B”) constitutes “domestic abuse” if person A and person B are each aged 16 or over, are personally connected to each other, and the behaviour is abusive.",
+   "quote": "Behaviour of a person (“A”) towards another person (“B”) is “domestic abuse” if— (a) A and B are each aged 16 or over and are personally connected to each other, and (b) the behaviour is abusive."
+  },
+  {
+   "requirement": "Behaviour is “abusive” if it consists of physical or sexual abuse, violent or threatening behaviour, controlling or coercive behaviour, economic abuse, or psychological, emotional or other abuse.",
+   "quote": "Behaviour is “abusive” if it consists of any of the following— (a) physical or sexual abuse; (b) violent or threatening behaviour; (c) controlling or coercive behaviour; (d) economic abuse (see subsection (4)); (e) psychological, emotional or other abuse"
+  },
+  {
+   "requirement": "Behaviour may be abusive regardless of whether it consists of a single incident or a course of conduct.",
+   "quote": "it does not matter whether the behaviour consists of a single incident or a course of conduct"
+  },
+  {
+   "requirement": "“Economic abuse” means any behaviour that has a substantial adverse effect on person B's ability to acquire, use or maintain money or other property, or to obtain goods or services.",
+   "quote": "“Economic abuse” means any behaviour that has a substantial adverse effect on B's ability to— (a) acquire, use or maintain money or other property, or (b) obtain goods or services."
+  },
+  {
+   "requirement": "For the purposes of the Domestic Abuse Act 2021, person A's behaviour may be behaviour “towards” person B even if it consists of conduct directed at another person, such as person B's child.",
+   "quote": "A's behaviour may be behaviour “towards” B despite the fact that it consists of conduct directed at another person (for example, B's child)."
+  },
+  {
+   "requirement": "References in the Domestic Abuse Act 2021 to being abusive towards another person must be read in accordance with section 1.",
+   "quote": "References in this Act to being abusive towards another person are to be read in accordance with this section."
+  },
+  {
+   "requirement": "The definition and meaning of “personally connected” for the purposes of section 1 are set out in section 2.",
+   "quote": "For the meaning of “personally connected”, see section 2."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum age of person A and person B for behaviour to qualify as domestic abuse",
+   "value": "16",
+   "quote": "aged 16 or over"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

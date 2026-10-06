@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1996/18/s135@current",
+ "section": "uk/ukpga/1996/18/s135",
+ "version": "current",
+ "source_sha256": "6fb224e06d33c39fe423d2daccec2095e1f998e62f5e396c63052a3fe0ad41d2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employer must pay a redundancy payment to any employee of that employer if the employee is dismissed by the employer by reason of redundancy.",
+    "quote": "An employer shall pay a redundancy payment to any employee of his if the employee— (a) is dismissed by the employer by reason of redundancy"
+   },
+   {
+    "requirement": "An employer must pay a redundancy payment to any employee of that employer if the employee is eligible for a redundancy payment by reason of being laid off or kept on short-time.",
+    "quote": "is eligible for a redundancy payment by reason of being laid off or kept on short-time"
+   },
+   {
+    "requirement": "The employer's obligation under subsection (1) to pay a redundancy payment has effect subject to the following provisions of that Part, including in particular sections 140 to 144, 149 to 152, 155 to 161 and 164.",
+    "quote": "Subsection (1) has effect subject to the following provisions of this Part (including, in particular, sections 140 to 144, 149 to 152, 155 to 161 and 164)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An employer must pay a redundancy payment to any employee of that employer if the employee is dismissed by the employer by reason of redundancy.",
+   "quote": "An employer shall pay a redundancy payment to any employee of his if the employee— (a) is dismissed by the employer by reason of redundancy"
+  },
+  {
+   "requirement": "An employer must pay a redundancy payment to any employee of that employer if the employee is eligible for a redundancy payment by reason of being laid off or kept on short-time.",
+   "quote": "is eligible for a redundancy payment by reason of being laid off or kept on short-time"
+  },
+  {
+   "requirement": "The employer's obligation under subsection (1) to pay a redundancy payment has effect subject to the following provisions of that Part, including in particular sections 140 to 144, 149 to 152, 155 to 161 and 164.",
+   "quote": "Subsection (1) has effect subject to the following provisions of this Part (including, in particular, sections 140 to 144, 149 to 152, 155 to 161 and 164)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

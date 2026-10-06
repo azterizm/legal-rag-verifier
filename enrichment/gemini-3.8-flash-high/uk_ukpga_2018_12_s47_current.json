@@ -1,0 +1,67 @@
+{
+ "key": "uk/ukpga/2018/12/s47@current",
+ "section": "uk/ukpga/2018/12/s47",
+ "version": "current",
+ "source_sha256": "2a6afcdaf8acba3ac04b5d215bde436c4c701147f81382229f94e0492ee4f7fc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The controller must erase personal data without undue delay where the processing of the personal data would infringe section 35, 36(1) to (3), 37, 38(1), 39(1), 40, 41 or 42.",
+    "quote": "The controller must erase personal data without undue delay where— (a) the processing of the personal data would infringe section 35, 36(1) to (3), 37, 38(1), 39(1), 40, 41 or 42"
+   },
+   {
+    "requirement": "The controller must erase personal data without undue delay where the controller has a legal obligation to erase the data.",
+    "quote": "The controller must erase personal data without undue delay where— (b) the controller has a legal obligation to erase the data."
+   },
+   {
+    "requirement": "Where the controller would be required to erase personal data under subsection (1) but the personal data must be maintained for the purposes of evidence, the controller must restrict its processing instead of erasing the personal data.",
+    "quote": "the controller must (instead of erasing the personal data) restrict its processing"
+   },
+   {
+    "requirement": "Where a data subject contests the accuracy of personal data (whether in making a request under section 47 or section 46 of the Data Protection Act 2018 or in any other way), but it is not possible to ascertain whether the data is accurate or not, the controller must restrict its processing.",
+    "quote": "Where a data subject contests the accuracy of personal data (whether in making a request under this section or section 46 or in any other way), but it is not possible to ascertain whether it is accurate or not, the controller must restrict its processing."
+   },
+   {
+    "requirement": "A data subject may request that the controller erase personal data or restrict its processing.",
+    "quote": "A data subject may request the controller to erase personal data or to restrict its processing"
+   },
+   {
+    "requirement": "The duties of the controller under section 47 of the Data Protection Act 2018 apply whether or not a request by a data subject is made.",
+    "quote": "the duties of the controller under this section apply whether or not such a request is made"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The controller must erase personal data without undue delay where the processing of the personal data would infringe section 35, 36(1) to (3), 37, 38(1), 39(1), 40, 41 or 42.",
+   "quote": "The controller must erase personal data without undue delay where— (a) the processing of the personal data would infringe section 35, 36(1) to (3), 37, 38(1), 39(1), 40, 41 or 42"
+  },
+  {
+   "requirement": "Where the controller would be required to erase personal data under subsection (1) but the personal data must be maintained for the purposes of evidence, the controller must restrict its processing instead of erasing the personal data.",
+   "quote": "the controller must (instead of erasing the personal data) restrict its processing"
+  },
+  {
+   "requirement": "Where a data subject contests the accuracy of personal data (whether in making a request under section 47 or section 46 of the Data Protection Act 2018 or in any other way), but it is not possible to ascertain whether the data is accurate or not, the controller must restrict its processing.",
+   "quote": "Where a data subject contests the accuracy of personal data (whether in making a request under this section or section 46 or in any other way), but it is not possible to ascertain whether it is accurate or not, the controller must restrict its processing."
+  },
+  {
+   "requirement": "A data subject may request that the controller erase personal data or restrict its processing.",
+   "quote": "A data subject may request the controller to erase personal data or to restrict its processing"
+  },
+  {
+   "requirement": "The duties of the controller under section 47 of the Data Protection Act 2018 apply whether or not a request by a data subject is made.",
+   "quote": "the duties of the controller under this section apply whether or not such a request is made"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/1985/70/s20@current",
+ "section": "uk/ukpga/1985/70/s20",
+ "version": "current",
+ "source_sha256": "074773819ac0efa9b8273ed8c362590d6f4197050fb102e931c5b31004be97a2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 20 applies to qualifying works if relevant costs incurred on carrying out the works exceed an appropriate amount.",
+    "quote": "applies to qualifying works if relevant costs incurred on carrying out the works exceed an appropriate amount"
+   },
+   {
+    "requirement": "The Secretary of State may make regulations providing that section 20 applies to a qualifying long term agreement if relevant costs incurred under the agreement exceed an appropriate amount.",
+    "quote": "Secretary of State may by regulations provide that this section applies to a qualifying long term agreement— (a) if relevant costs incurred under the agreement exceed an appropriate amount"
+   },
+   {
+    "requirement": "The Secretary of State may make regulations providing that section 20 applies to a qualifying long term agreement if relevant costs incurred under the agreement during a period prescribed by the regulations exceed an appropriate amount.",
+    "quote": "if relevant costs incurred under the agreement during a period prescribed by the regulations exceed an appropriate amount"
+   },
+   {
+    "requirement": "An appropriate amount must be an amount set by regulations made by the Secretary of State.",
+    "quote": "An appropriate amount is an amount set by regulations made by the Secretary of State"
+   },
+   {
+    "requirement": "Regulations made by the Secretary of State may provide for an appropriate amount to be an amount prescribed by, or determined in accordance with, the regulations, or an amount which results in the relevant contribution of any one or more tenants being an amount prescribed by, or determined in accordance with, the regulations, or both.",
+    "quote": "regulations may make provision for either or both of the following to be an appropriate amount— (a) an amount prescribed by, or determined in accordance with, the regulations, and (b) an amount which results in the relevant contribution of any one or more tenants being an amount prescribed by, or determined in accordance with, the regulations"
+   },
+   {
+    "requirement": "Where section 20 applies to any qualifying works or qualifying long term agreement, the relevant contributions of tenants are limited in accordance with subsection (6) or (7) (or both) unless the consultation requirements are complied with or dispensed with.",
+    "quote": "Where this section applies to any qualifying works or qualifying long term agreement, the relevant contributions of tenants are limited in accordance with subsection (6) or (7) (or both)"
+   },
+   {
+    "requirement": "The limitation on tenants' relevant contributions does not apply if the consultation requirements have been complied with in relation to the qualifying works or qualifying long term agreement.",
+    "quote": "unless the consultation requirements have been either— (a) complied with in relation to the works or agreement"
+   },
+   {
+    "requirement": "The limitation on tenants' relevant contributions does not apply if the consultation requirements have been dispensed with in relation to the qualifying works or qualifying long term agreement by (or on appeal from) the appropriate tribunal, except in the case of works to which section 20D applies.",
+    "quote": "except in the case of works to which section 20D applies, dispensed with in relation to the works or agreement by (or on appeal from) the appropriate tribunal"
+   },
+   {
+    "requirement": "A relevant contribution in relation to a tenant and any works or agreement is defined as the amount the tenant may be required under the terms of his lease to contribute by the payment of service charges to relevant costs incurred on carrying out the works or under the agreement.",
+    "quote": "“relevant contribution”, in relation to a tenant and any works or agreement, is the amount which he may be required under the terms of his lease to contribute (by the payment of service charges) to relevant costs incurred on carrying out the works or under the agreement"
+   },
+   {
+    "requirement": "Where an appropriate amount is set as an amount prescribed by or determined in accordance with regulations, the amount of relevant costs incurred on carrying out the works or under the agreement that may be taken into account in determining the relevant contributions of tenants is limited to that appropriate amount.",
+    "quote": "amount of the relevant costs incurred on carrying out the works or under the agreement which may be taken into account in determining the relevant contributions of tenants is limited to the appropriate amount"
+   },
+   {
+    "requirement": "Where an appropriate amount is set as an amount resulting in the relevant contribution of any one or more tenants being an amount prescribed by or determined in accordance with regulations, the relevant contribution of each tenant whose contribution would otherwise exceed that prescribed or determined amount is limited to the amount so prescribed or determined.",
+    "quote": "the amount of the relevant contribution of the tenant, or each of the tenants, whose relevant contribution would otherwise exceed the amount prescribed by, or determined in accordance with, the regulations is limited to the amount so prescribed or determined"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of tenants whose relevant contribution may be used under regulations to establish an appropriate amount",
+    "value": "one or more",
+    "quote": "relevant contribution of any one or more tenants"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 20 applies to qualifying works if relevant costs incurred on carrying out the works exceed an appropriate amount.",
+   "quote": "applies to qualifying works if relevant costs incurred on carrying out the works exceed an appropriate amount"
+  },
+  {
+   "requirement": "The Secretary of State may make regulations providing that section 20 applies to a qualifying long term agreement if relevant costs incurred under the agreement exceed an appropriate amount.",
+   "quote": "Secretary of State may by regulations provide that this section applies to a qualifying long term agreement— (a) if relevant costs incurred under the agreement exceed an appropriate amount"
+  },
+  {
+   "requirement": "The Secretary of State may make regulations providing that section 20 applies to a qualifying long term agreement if relevant costs incurred under the agreement during a period prescribed by the regulations exceed an appropriate amount.",
+   "quote": "if relevant costs incurred under the agreement during a period prescribed by the regulations exceed an appropriate amount"
+  },
+  {
+   "requirement": "An appropriate amount must be an amount set by regulations made by the Secretary of State.",
+   "quote": "An appropriate amount is an amount set by regulations made by the Secretary of State"
+  },
+  {
+   "requirement": "Regulations made by the Secretary of State may provide for an appropriate amount to be an amount prescribed by, or determined in accordance with, the regulations, or an amount which results in the relevant contribution of any one or more tenants being an amount prescribed by, or determined in accordance with, the regulations, or both.",
+   "quote": "regulations may make provision for either or both of the following to be an appropriate amount— (a) an amount prescribed by, or determined in accordance with, the regulations, and (b) an amount which results in the relevant contribution of any one or more tenants being an amount prescribed by, or determined in accordance with, the regulations"
+  },
+  {
+   "requirement": "Where section 20 applies to any qualifying works or qualifying long term agreement, the relevant contributions of tenants are limited in accordance with subsection (6) or (7) (or both) unless the consultation requirements are complied with or dispensed with.",
+   "quote": "Where this section applies to any qualifying works or qualifying long term agreement, the relevant contributions of tenants are limited in accordance with subsection (6) or (7) (or both)"
+  },
+  {
+   "requirement": "The limitation on tenants' relevant contributions does not apply if the consultation requirements have been complied with in relation to the qualifying works or qualifying long term agreement.",
+   "quote": "unless the consultation requirements have been either— (a) complied with in relation to the works or agreement"
+  },
+  {
+   "requirement": "The limitation on tenants' relevant contributions does not apply if the consultation requirements have been dispensed with in relation to the qualifying works or qualifying long term agreement by (or on appeal from) the appropriate tribunal, except in the case of works to which section 20D applies.",
+   "quote": "except in the case of works to which section 20D applies, dispensed with in relation to the works or agreement by (or on appeal from) the appropriate tribunal"
+  },
+  {
+   "requirement": "A relevant contribution in relation to a tenant and any works or agreement is defined as the amount the tenant may be required under the terms of his lease to contribute by the payment of service charges to relevant costs incurred on carrying out the works or under the agreement.",
+   "quote": "“relevant contribution”, in relation to a tenant and any works or agreement, is the amount which he may be required under the terms of his lease to contribute (by the payment of service charges) to relevant costs incurred on carrying out the works or under the agreement"
+  },
+  {
+   "requirement": "Where an appropriate amount is set as an amount prescribed by or determined in accordance with regulations, the amount of relevant costs incurred on carrying out the works or under the agreement that may be taken into account in determining the relevant contributions of tenants is limited to that appropriate amount.",
+   "quote": "amount of the relevant costs incurred on carrying out the works or under the agreement which may be taken into account in determining the relevant contributions of tenants is limited to the appropriate amount"
+  },
+  {
+   "requirement": "Where an appropriate amount is set as an amount resulting in the relevant contribution of any one or more tenants being an amount prescribed by or determined in accordance with regulations, the relevant contribution of each tenant whose contribution would otherwise exceed that prescribed or determined amount is limited to the amount so prescribed or determined.",
+   "quote": "the amount of the relevant contribution of the tenant, or each of the tenants, whose relevant contribution would otherwise exceed the amount prescribed by, or determined in accordance with, the regulations is limited to the amount so prescribed or determined"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

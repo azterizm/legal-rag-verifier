@@ -1,0 +1,230 @@
+{
+ "key": "uk/ukpga/1989/41/s31@current",
+ "section": "uk/ukpga/1989/41/s31",
+ "version": "current",
+ "source_sha256": "8e63406a14b6705f4af4543af5050023ce51747e5883a7e4d81b41d89fb4203d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "On the application of any local authority or authorised person, the court may make an order placing the child with respect to whom the application is made in the care of a designated local authority.",
+    "quote": "court may make an order— (a) placing the child with respect to whom the application is made in the care of a designated local authority"
+   },
+   {
+    "requirement": "On the application of any local authority or authorised person, the court may make an order putting the child under the supervision of a designated local authority.",
+    "quote": "putting him under the supervision of a designated local authority"
+   },
+   {
+    "requirement": "A court may only make a care order or supervision order if it is satisfied that the child concerned is suffering, or is likely to suffer, significant harm.",
+    "quote": "satisfied— (a) that the child concerned is suffering, or is likely to suffer, significant harm"
+   },
+   {
+    "requirement": "A court may only make a care order or supervision order if it is satisfied that the harm, or likelihood of harm, is attributable to the care given to the child, or likely to be given to him if the order were not made, not being what it would be reasonable to expect a parent to give to him, or to the child being beyond parental control.",
+    "quote": "that the harm, or likelihood of harm, is attributable to— (i) the care given to the child, or likely to be given to him if the order were not made, not being what it would be reasonable to expect a parent to give to him; or (ii) the child’s being beyond parental control"
+   },
+   {
+    "requirement": "No care order or supervision order may be made with respect to a child who has reached the age of seventeen, or sixteen in the case of a child who is married.",
+    "quote": "No care order or supervision order may be made with respect to a child who has reached the age of seventeen (or sixteen, in the case of a child who is married)"
+   },
+   {
+    "requirement": "A court deciding whether to make a care order is required to consider the permanence provisions of the section 31A plan for the child concerned.",
+    "quote": "is required to consider the permanence provisions of the section 31A plan for the child concerned"
+   },
+   {
+    "requirement": "A court deciding whether to make a care order is not required to consider the remainder of the section 31A plan, subject to section 34(11).",
+    "quote": "is not required to consider the remainder of the section 31A plan, subject to section 34(11)"
+   },
+   {
+    "requirement": "The permanence provisions of a section 31A plan include provisions setting out the long-term plan for the child's upbringing that provide for the child to live with any parent or other family member or friend, adoption, or other long-term care.",
+    "quote": "setting out the long-term plan for the upbringing of the child concerned as provide for any of the following— (i) the child to live with any parent of the child's or with any other member of, or any friend of, the child's family; (ii) adoption; (iii) long-term care"
+   },
+   {
+    "requirement": "The permanence provisions of a section 31A plan include provisions setting out the impact on the child of any harm suffered or likely to be suffered, the child's current and future needs (including needs arising from that impact), and how the long-term plan would meet those needs.",
+    "quote": "such of the plan's provisions as set out any of the following— (i) the impact on the child concerned of any harm that he or she suffered or was likely to suffer; (ii) the current and future needs of the child (including needs arising out of that impact); (iii) the way in which the long-term plan for the upbringing of the child would meet those current and future needs"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations amend section 31 for the purpose of altering what are the permanence provisions of a section 31A plan.",
+    "quote": "The Secretary of State may by regulations amend this section for the purpose of altering what for the purposes of subsection (3A) are the permanence provisions of a section 31A plan"
+   },
+   {
+    "requirement": "An application under section 31 may be made on its own or in any other family proceedings.",
+    "quote": "An application under this section may be made on its own or in any other family proceedings"
+   },
+   {
+    "requirement": "On an application for a care order, the court may make a supervision order.",
+    "quote": "on an application for a care order, make a supervision order"
+   },
+   {
+    "requirement": "On an application for a supervision order, the court may make a care order.",
+    "quote": "on an application for a supervision order, make a care order"
+   },
+   {
+    "requirement": "Where an authorised person proposes to make an application under section 31, that person must, before making the application and if reasonably practicable, consult the local authority appearing to be the authority in whose area the child concerned is ordinarily resident.",
+    "quote": "Where an authorised person proposes to make an application under this section he shall— (a) if it is reasonably practicable to do so; and (b) before making the application, consult the local authority appearing to him to be the authority in whose area the child concerned is ordinarily resident"
+   },
+   {
+    "requirement": "The court must not entertain an application made by an authorised person if, at the time it is made, the child concerned is the subject of an earlier undisposed application for a care order or supervision order.",
+    "quote": "shall not be entertained by the court if, at the time when it is made, the child concerned is— (a) the subject of an earlier application for a care order, or supervision order, which has not been disposed of"
+   },
+   {
+    "requirement": "The court must not entertain an application made by an authorised person if, at the time it is made, the child concerned is subject to a care order or supervision order, a youth rehabilitation order under section 173 of the Sentencing Code, or a Scottish compulsory supervision order or interim compulsory supervision order.",
+    "quote": "shall not be entertained by the court if, at the time when it is made, the child concerned is— . . . (b) subject to— (i) a care order or supervision order; (ii) a youth rehabilitation order within the meaning given by section 173 of the Sentencing Code; or (iii) a compulsory supervision order or interim compulsory supervision order as defined by sections 83 and 86 of the Children’s Hearings (Scotland) Act 2011"
+   },
+   {
+    "requirement": "The local authority designated in a care order must be the authority within whose area the child is ordinarily resident, or, if the child does not reside in the area of a local authority, the authority within whose area circumstances arose in consequence of which the order is made.",
+    "quote": "The local authority designated in a care order must be— (a) the authority within whose area the child is ordinarily resident; or (b) where the child does not reside in the area of a local authority, the authority within whose area any circumstances arose in consequence of which the order is being made"
+   },
+   {
+    "requirement": "For the purposes of section 31, an authorised person means the National Society for the Prevention of Cruelty to Children and any of its officers, or any person authorised by order of the Secretary of State to bring proceedings under section 31 and any officer of a body so authorised.",
+    "quote": "“authorised person” means— the National Society for the Prevention of Cruelty to Children and any of its officers; andany person authorised by order of the Secretary of State to bring proceedings under this section and any officer of a body which is so authorised"
+   },
+   {
+    "requirement": "For the purposes of section 31, harm means ill-treatment or the impairment of health or development, including impairment suffered from seeing or hearing the ill-treatment of another.",
+    "quote": "“harm” means ill-treatment or the impairment of health or development including, for example, impairment suffered from seeing or hearing the ill-treatment of another"
+   },
+   {
+    "requirement": "For the purposes of section 31, development means physical, intellectual, emotional, social or behavioural development.",
+    "quote": "“development” means physical, intellectual, emotional, social or behavioural development"
+   },
+   {
+    "requirement": "For the purposes of section 31, health means physical or mental health.",
+    "quote": "“health” means physical or mental health"
+   },
+   {
+    "requirement": "For the purposes of section 31, ill-treatment includes sexual abuse and forms of ill-treatment that are not physical.",
+    "quote": "“ill-treatment” includes sexual abuse and forms of ill-treatment which are not physical"
+   },
+   {
+    "requirement": "Where the question of whether harm suffered by a child is significant turns on the child’s health or development, that health or development must be compared with what could reasonably be expected of a similar child.",
+    "quote": "Where the question of whether harm suffered by a child is significant turns on the child’s health or development, his health or development shall be compared with that which could reasonably be expected of a similar child"
+   },
+   {
+    "requirement": "In the Children Act 1989, a care order means (subject to section 105(1)) an order under section 31(1)(a) and, unless express provision to the contrary is made, includes an interim care order made under section 38.",
+    "quote": "“a care order” means (subject to section 105(1)) an order under subsection (1)(a) and (except where express provision to the contrary is made) includes an interim care order made under section 38"
+   },
+   {
+    "requirement": "In the Children Act 1989, a supervision order means an order under section 31(1)(b) and, unless express provision to the contrary is made, includes an interim supervision order made under section 38.",
+    "quote": "“a supervision order” means an order under subsection (1)(b) and (except where express provision to the contrary is made) includes an interim supervision order made under section 38"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Age limit above which no care order or supervision order may be made with respect to an unmarried child",
+    "value": "seventeen",
+    "quote": "a child who has reached the age of seventeen"
+   },
+   {
+    "what": "Age limit above which no care order or supervision order may be made with respect to a married child",
+    "value": "sixteen",
+    "quote": "sixteen, in the case of a child who is married"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "On the application of any local authority or authorised person, the court may make an order placing the child with respect to whom the application is made in the care of a designated local authority.",
+   "quote": "court may make an order— (a) placing the child with respect to whom the application is made in the care of a designated local authority"
+  },
+  {
+   "requirement": "On the application of any local authority or authorised person, the court may make an order putting the child under the supervision of a designated local authority.",
+   "quote": "putting him under the supervision of a designated local authority"
+  },
+  {
+   "requirement": "A court may only make a care order or supervision order if it is satisfied that the child concerned is suffering, or is likely to suffer, significant harm.",
+   "quote": "satisfied— (a) that the child concerned is suffering, or is likely to suffer, significant harm"
+  },
+  {
+   "requirement": "A court may only make a care order or supervision order if it is satisfied that the harm, or likelihood of harm, is attributable to the care given to the child, or likely to be given to him if the order were not made, not being what it would be reasonable to expect a parent to give to him, or to the child being beyond parental control.",
+   "quote": "that the harm, or likelihood of harm, is attributable to— (i) the care given to the child, or likely to be given to him if the order were not made, not being what it would be reasonable to expect a parent to give to him; or (ii) the child’s being beyond parental control"
+  },
+  {
+   "requirement": "No care order or supervision order may be made with respect to a child who has reached the age of seventeen, or sixteen in the case of a child who is married.",
+   "quote": "No care order or supervision order may be made with respect to a child who has reached the age of seventeen (or sixteen, in the case of a child who is married)"
+  },
+  {
+   "requirement": "A court deciding whether to make a care order is required to consider the permanence provisions of the section 31A plan for the child concerned.",
+   "quote": "is required to consider the permanence provisions of the section 31A plan for the child concerned"
+  },
+  {
+   "requirement": "A court deciding whether to make a care order is not required to consider the remainder of the section 31A plan, subject to section 34(11).",
+   "quote": "is not required to consider the remainder of the section 31A plan, subject to section 34(11)"
+  },
+  {
+   "requirement": "The permanence provisions of a section 31A plan include provisions setting out the long-term plan for the child's upbringing that provide for the child to live with any parent or other family member or friend, adoption, or other long-term care.",
+   "quote": "setting out the long-term plan for the upbringing of the child concerned as provide for any of the following— (i) the child to live with any parent of the child's or with any other member of, or any friend of, the child's family; (ii) adoption; (iii) long-term care"
+  },
+  {
+   "requirement": "The permanence provisions of a section 31A plan include provisions setting out the impact on the child of any harm suffered or likely to be suffered, the child's current and future needs (including needs arising from that impact), and how the long-term plan would meet those needs.",
+   "quote": "such of the plan's provisions as set out any of the following— (i) the impact on the child concerned of any harm that he or she suffered or was likely to suffer; (ii) the current and future needs of the child (including needs arising out of that impact); (iii) the way in which the long-term plan for the upbringing of the child would meet those current and future needs"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations amend section 31 for the purpose of altering what are the permanence provisions of a section 31A plan.",
+   "quote": "The Secretary of State may by regulations amend this section for the purpose of altering what for the purposes of subsection (3A) are the permanence provisions of a section 31A plan"
+  },
+  {
+   "requirement": "An application under section 31 may be made on its own or in any other family proceedings.",
+   "quote": "An application under this section may be made on its own or in any other family proceedings"
+  },
+  {
+   "requirement": "On an application for a care order, the court may make a supervision order.",
+   "quote": "on an application for a care order, make a supervision order"
+  },
+  {
+   "requirement": "On an application for a supervision order, the court may make a care order.",
+   "quote": "on an application for a supervision order, make a care order"
+  },
+  {
+   "requirement": "Where an authorised person proposes to make an application under section 31, that person must, before making the application and if reasonably practicable, consult the local authority appearing to be the authority in whose area the child concerned is ordinarily resident.",
+   "quote": "Where an authorised person proposes to make an application under this section he shall— (a) if it is reasonably practicable to do so; and (b) before making the application, consult the local authority appearing to him to be the authority in whose area the child concerned is ordinarily resident"
+  },
+  {
+   "requirement": "The court must not entertain an application made by an authorised person if, at the time it is made, the child concerned is the subject of an earlier undisposed application for a care order or supervision order.",
+   "quote": "shall not be entertained by the court if, at the time when it is made, the child concerned is— (a) the subject of an earlier application for a care order, or supervision order, which has not been disposed of"
+  },
+  {
+   "requirement": "The local authority designated in a care order must be the authority within whose area the child is ordinarily resident, or, if the child does not reside in the area of a local authority, the authority within whose area circumstances arose in consequence of which the order is made.",
+   "quote": "The local authority designated in a care order must be— (a) the authority within whose area the child is ordinarily resident; or (b) where the child does not reside in the area of a local authority, the authority within whose area any circumstances arose in consequence of which the order is being made"
+  },
+  {
+   "requirement": "For the purposes of section 31, an authorised person means the National Society for the Prevention of Cruelty to Children and any of its officers, or any person authorised by order of the Secretary of State to bring proceedings under section 31 and any officer of a body so authorised.",
+   "quote": "“authorised person” means— the National Society for the Prevention of Cruelty to Children and any of its officers; andany person authorised by order of the Secretary of State to bring proceedings under this section and any officer of a body which is so authorised"
+  },
+  {
+   "requirement": "For the purposes of section 31, harm means ill-treatment or the impairment of health or development, including impairment suffered from seeing or hearing the ill-treatment of another.",
+   "quote": "“harm” means ill-treatment or the impairment of health or development including, for example, impairment suffered from seeing or hearing the ill-treatment of another"
+  },
+  {
+   "requirement": "For the purposes of section 31, development means physical, intellectual, emotional, social or behavioural development.",
+   "quote": "“development” means physical, intellectual, emotional, social or behavioural development"
+  },
+  {
+   "requirement": "For the purposes of section 31, health means physical or mental health.",
+   "quote": "“health” means physical or mental health"
+  },
+  {
+   "requirement": "For the purposes of section 31, ill-treatment includes sexual abuse and forms of ill-treatment that are not physical.",
+   "quote": "“ill-treatment” includes sexual abuse and forms of ill-treatment which are not physical"
+  },
+  {
+   "requirement": "Where the question of whether harm suffered by a child is significant turns on the child’s health or development, that health or development must be compared with what could reasonably be expected of a similar child.",
+   "quote": "Where the question of whether harm suffered by a child is significant turns on the child’s health or development, his health or development shall be compared with that which could reasonably be expected of a similar child"
+  },
+  {
+   "requirement": "In the Children Act 1989, a care order means (subject to section 105(1)) an order under section 31(1)(a) and, unless express provision to the contrary is made, includes an interim care order made under section 38.",
+   "quote": "“a care order” means (subject to section 105(1)) an order under subsection (1)(a) and (except where express provision to the contrary is made) includes an interim care order made under section 38"
+  },
+  {
+   "requirement": "In the Children Act 1989, a supervision order means an order under section 31(1)(b) and, unless express provision to the contrary is made, includes an interim supervision order made under section 38.",
+   "quote": "“a supervision order” means an order under subsection (1)(b) and (except where express provision to the contrary is made) includes an interim supervision order made under section 38"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 25,
+  "elements_verified": 24,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

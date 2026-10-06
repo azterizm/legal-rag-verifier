@@ -1,0 +1,153 @@
+{
+ "key": "uk/ukpga/2006/46/s382@2025-04-06",
+ "section": "uk/ukpga/2006/46/s382",
+ "version": "2025-04-06",
+ "source_sha256": "1a8abd1750b8c2e7e07582e4ab81c9af8091e4aec6dbc359db560b9b25514faa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company qualifies as small in relation to its first financial year if it meets the qualifying conditions in that year.",
+    "quote": "qualifies as small in relation to its first financial year if the qualifying conditions are met in that year"
+   },
+   {
+    "requirement": "Subject to subsection (2), a company qualifies as small in relation to a subsequent financial year if it meets the qualifying conditions in that year.",
+    "quote": "Subject to subsection (2), a company qualifies as small in relation to a subsequent financial year if the qualifying conditions are met in that year"
+   },
+   {
+    "requirement": "In relation to a subsequent financial year, a company meeting or ceasing to meet the qualifying conditions on its balance sheet date affects its qualification as a small company only if it occurs in two consecutive financial years.",
+    "quote": "affects its qualification as a small company only if it occurs in two consecutive financial years"
+   },
+   {
+    "requirement": "A company meets the qualifying conditions in a year in which it satisfies two or more of the statutory requirements for turnover, balance sheet total, and number of employees.",
+    "quote": "The qualifying conditions are met by a company in a year in which it satisfies two or more of the following requirements"
+   },
+   {
+    "requirement": "To satisfy the turnover requirement, a company's turnover must be not more than £15 million.",
+    "quote": "Turnover Not more than £15 million"
+   },
+   {
+    "requirement": "To satisfy the balance sheet total requirement, a company's balance sheet total must be not more than £7.5 million.",
+    "quote": "Balance sheet total Not more than £7.5 million"
+   },
+   {
+    "requirement": "To satisfy the number of employees requirement, a company's number of employees must be not more than 50.",
+    "quote": "Number of employeesNot more than 50"
+   },
+   {
+    "requirement": "If a period is a company's financial year but not in fact a year, the maximum figures for turnover must be proportionately adjusted.",
+    "quote": "For a period that is a company's financial year but not in fact a year the maximum figures for turnover must be proportionately adjusted"
+   },
+   {
+    "requirement": "A company's balance sheet total means the aggregate of the amounts shown as assets in the company's balance sheet.",
+    "quote": "The balance sheet total means the aggregate of the amounts shown as assets in the company's balance sheet"
+   },
+   {
+    "requirement": "A company's number of employees means the average number of persons employed by the company in the year, calculated by finding the monthly number of persons employed under contracts of service (whether throughout the month or not), adding those monthly totals together, and dividing by the number of months in the financial year.",
+    "quote": "The number of employees means the average number of persons employed by the company in the year, determined as follows— (a) find for each month in the financial year the number of persons employed under contracts of service by the company in that month (whether throughout the month or not), (b) add together the monthly totals, and (c) divide by the number of months in the financial year"
+   },
+   {
+    "requirement": "The qualification of a company as small under section 382 is subject to section 383 regarding parent companies qualifying as small.",
+    "quote": "This section is subject to section 383 (companies qualifying as small: parent companies)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of consecutive financial years required for meeting or ceasing to meet the qualifying conditions to affect qualification as a small company",
+    "value": "two",
+    "quote": "two consecutive financial years"
+   },
+   {
+    "what": "minimum number of requirements a company must satisfy to meet the qualifying conditions",
+    "value": "two",
+    "quote": "two or more of the following requirements"
+   },
+   {
+    "what": "maximum turnover threshold",
+    "value": "£15 million",
+    "quote": "Turnover Not more than £15 million"
+   },
+   {
+    "what": "maximum balance sheet total threshold",
+    "value": "£7.5 million",
+    "quote": "Balance sheet total Not more than £7.5 million"
+   },
+   {
+    "what": "maximum number of employees threshold",
+    "value": "50",
+    "quote": "Number of employeesNot more than 50"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A company qualifies as small in relation to its first financial year if it meets the qualifying conditions in that year.",
+   "quote": "qualifies as small in relation to its first financial year if the qualifying conditions are met in that year"
+  },
+  {
+   "requirement": "Subject to subsection (2), a company qualifies as small in relation to a subsequent financial year if it meets the qualifying conditions in that year.",
+   "quote": "Subject to subsection (2), a company qualifies as small in relation to a subsequent financial year if the qualifying conditions are met in that year"
+  },
+  {
+   "requirement": "In relation to a subsequent financial year, a company meeting or ceasing to meet the qualifying conditions on its balance sheet date affects its qualification as a small company only if it occurs in two consecutive financial years.",
+   "quote": "affects its qualification as a small company only if it occurs in two consecutive financial years"
+  },
+  {
+   "requirement": "A company meets the qualifying conditions in a year in which it satisfies two or more of the statutory requirements for turnover, balance sheet total, and number of employees.",
+   "quote": "The qualifying conditions are met by a company in a year in which it satisfies two or more of the following requirements"
+  },
+  {
+   "requirement": "To satisfy the turnover requirement, a company's turnover must be not more than £15 million.",
+   "quote": "Turnover Not more than £15 million"
+  },
+  {
+   "requirement": "To satisfy the balance sheet total requirement, a company's balance sheet total must be not more than £7.5 million.",
+   "quote": "Balance sheet total Not more than £7.5 million"
+  },
+  {
+   "requirement": "To satisfy the number of employees requirement, a company's number of employees must be not more than 50.",
+   "quote": "Number of employeesNot more than 50"
+  },
+  {
+   "requirement": "If a period is a company's financial year but not in fact a year, the maximum figures for turnover must be proportionately adjusted.",
+   "quote": "For a period that is a company's financial year but not in fact a year the maximum figures for turnover must be proportionately adjusted"
+  },
+  {
+   "requirement": "A company's balance sheet total means the aggregate of the amounts shown as assets in the company's balance sheet.",
+   "quote": "The balance sheet total means the aggregate of the amounts shown as assets in the company's balance sheet"
+  },
+  {
+   "requirement": "A company's number of employees means the average number of persons employed by the company in the year, calculated by finding the monthly number of persons employed under contracts of service (whether throughout the month or not), adding those monthly totals together, and dividing by the number of months in the financial year.",
+   "quote": "The number of employees means the average number of persons employed by the company in the year, determined as follows— (a) find for each month in the financial year the number of persons employed under contracts of service by the company in that month (whether throughout the month or not), (b) add together the monthly totals, and (c) divide by the number of months in the financial year"
+  },
+  {
+   "requirement": "The qualification of a company as small under section 382 is subject to section 383 regarding parent companies qualifying as small.",
+   "quote": "This section is subject to section 383 (companies qualifying as small: parent companies)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum turnover threshold",
+   "value": "£15 million",
+   "quote": "Turnover Not more than £15 million"
+  },
+  {
+   "what": "maximum balance sheet total threshold",
+   "value": "£7.5 million",
+   "quote": "Balance sheet total Not more than £7.5 million"
+  },
+  {
+   "what": "maximum number of employees threshold",
+   "value": "50",
+   "quote": "Number of employeesNot more than 50"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 3
+ }
+}

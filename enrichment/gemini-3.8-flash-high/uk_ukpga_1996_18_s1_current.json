@@ -1,0 +1,261 @@
+{
+ "key": "uk/ukpga/1996/18/s1@current",
+ "section": "uk/ukpga/1996/18/s1",
+ "version": "current",
+ "source_sha256": "9ec47f59c08f852545376719b26ac772e109ac438662acfcb5f7b7f1064b2830",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employer must give a written statement of particulars of employment to a worker when the worker begins employment with the employer.",
+    "quote": "Where a worker begins employment with an employer, the employer shall give to the worker a written statement of particulars of employment."
+   },
+   {
+    "requirement": "Subject to sections 2(2) to (4), the particulars required by subsections (3) and (4) must be provided in a single document.",
+    "quote": "the particulars required by subsections (3) and (4) must be included in a single document"
+   },
+   {
+    "requirement": "Subject to sections 2(2) to (4), the employer must give the written statement to the worker not later than the beginning of the employment.",
+    "quote": "the statement must be given not later than the beginning of the employment"
+   },
+   {
+    "requirement": "The statement of particulars must contain the names of the employer and the worker.",
+    "quote": "the names of the employer and worker"
+   },
+   {
+    "requirement": "The statement of particulars must state the date when the employment began.",
+    "quote": "the date when the employment began"
+   },
+   {
+    "requirement": "If the statement is given to an employee, it must state the date on which the employee's period of continuous employment began, taking into account any employment with a previous employer that counts towards that period.",
+    "quote": "in the case of a statement given to an employee, the date on which the employee’s period of continuous employment began (taking into account any employment with a previous employer which counts towards that period)"
+   },
+   {
+    "requirement": "The particulars required under subsection (4) must be stated as at a specified date that is not more than seven days before the statement (or the relevant instalment given under section 2(4)) is given.",
+    "quote": "as at a specified date not more than seven days before the statement (or the instalment of a statement given under section 2(4) containing them) is given"
+   },
+   {
+    "requirement": "The statement must contain particulars of the scale or rate of remuneration or the method of calculating remuneration.",
+    "quote": "the scale or rate of remuneration or the method of calculating remuneration"
+   },
+   {
+    "requirement": "The statement must specify the intervals at which remuneration is paid, such as weekly, monthly, or other specified intervals.",
+    "quote": "the intervals at which remuneration is paid (that is, weekly, monthly or other specified intervals)"
+   },
+   {
+    "requirement": "The statement must contain any terms and conditions relating to hours of work, including normal working hours, the days of the week required to be worked, and whether and how such hours or days may vary or how variation is determined.",
+    "quote": "any terms and conditions relating to hours of work including any terms and conditions relating to— (i) normal working hours, (ii) the days of the week the worker is required to work, and (iii) whether or not such hours or days may be variable, and if they may be how they vary or how that variation is to be determined"
+   },
+   {
+    "requirement": "The statement must include terms and conditions regarding entitlement to holidays, including public holidays, and holiday pay, providing sufficient detail to enable the worker's entitlement (including accrued holiday pay on termination) to be precisely calculated.",
+    "quote": "entitlement to holidays, including public holidays, and holiday pay (the particulars given being sufficient to enable the worker’s entitlement, including any entitlement to accrued holiday pay on the termination of employment, to be precisely calculated)"
+   },
+   {
+    "requirement": "The statement must include any terms and conditions relating to incapacity for work due to sickness or injury, including any provision for sick pay.",
+    "quote": "incapacity for work due to sickness or injury, including any provision for sick pay"
+   },
+   {
+    "requirement": "The statement must include any terms and conditions relating to any other paid leave.",
+    "quote": "any other paid leave"
+   },
+   {
+    "requirement": "The statement must include any terms and conditions relating to pensions and pension schemes, unless an exception applies.",
+    "quote": "pensions and pension schemes"
+   },
+   {
+    "requirement": "The statement must state any other benefits provided by the employer that do not fall within another paragraph of subsection (4).",
+    "quote": "any other benefits provided by the employer that do not fall within another paragraph of this subsection"
+   },
+   {
+    "requirement": "The statement must specify the length of notice that the worker is obliged to give and entitled to receive to terminate the contract of employment or other worker's contract.",
+    "quote": "the length of notice which the worker is obliged to give and entitled to receive to terminate his contract of employment or other worker’s contract"
+   },
+   {
+    "requirement": "The statement must include the job title the worker is employed to do or a brief description of the work.",
+    "quote": "the title of the job which the worker is employed to do or a brief description of the work for which he is employed"
+   },
+   {
+    "requirement": "Where the employment is not intended to be permanent, the statement must specify the expected duration of the employment, or if it is for a fixed term, the date when it is to end.",
+    "quote": "where the employment is not intended to be permanent, the period for which it is expected to continue or, if it is for a fixed term, the date when it is to end"
+   },
+   {
+    "requirement": "The statement must include particulars of any probationary period, including any conditions and its duration.",
+    "quote": "any probationary period, including any conditions and its duration"
+   },
+   {
+    "requirement": "The statement must specify the place of work, or where the worker is required or permitted to work at various places, an indication of that fact and the employer's address.",
+    "quote": "either the place of work or, where the worker is required or permitted to work at various places, an indication of that and of the address of the employer"
+   },
+   {
+    "requirement": "The statement must identify any collective agreements that directly affect the terms and conditions of employment, including the persons by whom they were made if the employer was not a party.",
+    "quote": "any collective agreements which directly affect the terms and conditions of the employment including, where the employer is not a party, the persons by whom they were made"
+   },
+   {
+    "requirement": "Where the worker is required to work outside the United Kingdom for more than one month, the statement must specify the period of work outside the UK, the payment currency, any additional remuneration or benefits provided due to the overseas work, and the terms relating to return to the UK.",
+    "quote": "where the worker is required to work outside the United Kingdom for a period of more than one month— (i) the period for which he is to work outside the United Kingdom, (ii) the currency in which remuneration is to be paid while he is working outside the United Kingdom, (iii) any additional remuneration payable to him, and any benefits to be provided to or in respect of him, by reason of his being required to work outside the United Kingdom, and (iv) any terms and conditions relating to his return to the United Kingdom"
+   },
+   {
+    "requirement": "The statement must state any training entitlement provided by the employer.",
+    "quote": "any training entitlement provided by the employer"
+   },
+   {
+    "requirement": "The statement must state any part of the training entitlement that the employer requires the worker to complete.",
+    "quote": "any part of that training entitlement which the employer requires the worker to complete"
+   },
+   {
+    "requirement": "The statement must state any other training that the employer requires the worker to complete and for which the employer will not bear the cost.",
+    "quote": "any other training which the employer requires the worker to complete and which the employer will not bear the cost of"
+   },
+   {
+    "requirement": "Particulars of pensions and pension schemes need not be given to a worker of a body or authority if the worker's pension rights depend on a scheme established under statutory provisions that require the body or authority to provide new workers with pension information or information on the determination of questions affecting those rights.",
+    "quote": "Subsection (4)(d)(iii) does not apply to a worker of a body or authority if— (a) the worker’s pension rights depend on the terms of a pension scheme established under any provision contained in or having effect under any Act, and (b) any such provision requires the body or authority to give to a new worker information concerning the worker’s pension rights or the determination of questions affecting those rights."
+   },
+   {
+    "requirement": "A probationary period is defined as a temporary period specified in the worker's contract that begins at the start of employment and is intended to enable the employer to assess the worker's suitability for the employment.",
+    "quote": "“probationary period” means a temporary period specified in the contract of employment or other worker’s contract between a worker and an employer that— (a) commences at the beginning of the employment, and (b) is intended to enable the employer to assess the worker’s suitability for the employment."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum time before the statement or instalment is given for the date at which subsection (4) particulars must be specified",
+    "value": "seven days",
+    "quote": "not more than seven days before the statement (or the instalment of a statement given under section 2(4) containing them) is given"
+   },
+   {
+    "what": "The minimum period of work outside the United Kingdom triggering the requirement to provide specific overseas work particulars",
+    "value": "more than one month",
+    "quote": "required to work outside the United Kingdom for a period of more than one month"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An employer must give a written statement of particulars of employment to a worker when the worker begins employment with the employer.",
+   "quote": "Where a worker begins employment with an employer, the employer shall give to the worker a written statement of particulars of employment."
+  },
+  {
+   "requirement": "Subject to sections 2(2) to (4), the particulars required by subsections (3) and (4) must be provided in a single document.",
+   "quote": "the particulars required by subsections (3) and (4) must be included in a single document"
+  },
+  {
+   "requirement": "Subject to sections 2(2) to (4), the employer must give the written statement to the worker not later than the beginning of the employment.",
+   "quote": "the statement must be given not later than the beginning of the employment"
+  },
+  {
+   "requirement": "The statement of particulars must contain the names of the employer and the worker.",
+   "quote": "the names of the employer and worker"
+  },
+  {
+   "requirement": "The statement of particulars must state the date when the employment began.",
+   "quote": "the date when the employment began"
+  },
+  {
+   "requirement": "If the statement is given to an employee, it must state the date on which the employee's period of continuous employment began, taking into account any employment with a previous employer that counts towards that period.",
+   "quote": "in the case of a statement given to an employee, the date on which the employee’s period of continuous employment began (taking into account any employment with a previous employer which counts towards that period)"
+  },
+  {
+   "requirement": "The particulars required under subsection (4) must be stated as at a specified date that is not more than seven days before the statement (or the relevant instalment given under section 2(4)) is given.",
+   "quote": "as at a specified date not more than seven days before the statement (or the instalment of a statement given under section 2(4) containing them) is given"
+  },
+  {
+   "requirement": "The statement must contain particulars of the scale or rate of remuneration or the method of calculating remuneration.",
+   "quote": "the scale or rate of remuneration or the method of calculating remuneration"
+  },
+  {
+   "requirement": "The statement must specify the intervals at which remuneration is paid, such as weekly, monthly, or other specified intervals.",
+   "quote": "the intervals at which remuneration is paid (that is, weekly, monthly or other specified intervals)"
+  },
+  {
+   "requirement": "The statement must contain any terms and conditions relating to hours of work, including normal working hours, the days of the week required to be worked, and whether and how such hours or days may vary or how variation is determined.",
+   "quote": "any terms and conditions relating to hours of work including any terms and conditions relating to— (i) normal working hours, (ii) the days of the week the worker is required to work, and (iii) whether or not such hours or days may be variable, and if they may be how they vary or how that variation is to be determined"
+  },
+  {
+   "requirement": "The statement must include terms and conditions regarding entitlement to holidays, including public holidays, and holiday pay, providing sufficient detail to enable the worker's entitlement (including accrued holiday pay on termination) to be precisely calculated.",
+   "quote": "entitlement to holidays, including public holidays, and holiday pay (the particulars given being sufficient to enable the worker’s entitlement, including any entitlement to accrued holiday pay on the termination of employment, to be precisely calculated)"
+  },
+  {
+   "requirement": "The statement must include any terms and conditions relating to incapacity for work due to sickness or injury, including any provision for sick pay.",
+   "quote": "incapacity for work due to sickness or injury, including any provision for sick pay"
+  },
+  {
+   "requirement": "The statement must include any terms and conditions relating to any other paid leave.",
+   "quote": "any other paid leave"
+  },
+  {
+   "requirement": "The statement must include any terms and conditions relating to pensions and pension schemes, unless an exception applies.",
+   "quote": "pensions and pension schemes"
+  },
+  {
+   "requirement": "The statement must state any other benefits provided by the employer that do not fall within another paragraph of subsection (4).",
+   "quote": "any other benefits provided by the employer that do not fall within another paragraph of this subsection"
+  },
+  {
+   "requirement": "The statement must specify the length of notice that the worker is obliged to give and entitled to receive to terminate the contract of employment or other worker's contract.",
+   "quote": "the length of notice which the worker is obliged to give and entitled to receive to terminate his contract of employment or other worker’s contract"
+  },
+  {
+   "requirement": "The statement must include the job title the worker is employed to do or a brief description of the work.",
+   "quote": "the title of the job which the worker is employed to do or a brief description of the work for which he is employed"
+  },
+  {
+   "requirement": "Where the employment is not intended to be permanent, the statement must specify the expected duration of the employment, or if it is for a fixed term, the date when it is to end.",
+   "quote": "where the employment is not intended to be permanent, the period for which it is expected to continue or, if it is for a fixed term, the date when it is to end"
+  },
+  {
+   "requirement": "The statement must include particulars of any probationary period, including any conditions and its duration.",
+   "quote": "any probationary period, including any conditions and its duration"
+  },
+  {
+   "requirement": "The statement must specify the place of work, or where the worker is required or permitted to work at various places, an indication of that fact and the employer's address.",
+   "quote": "either the place of work or, where the worker is required or permitted to work at various places, an indication of that and of the address of the employer"
+  },
+  {
+   "requirement": "The statement must identify any collective agreements that directly affect the terms and conditions of employment, including the persons by whom they were made if the employer was not a party.",
+   "quote": "any collective agreements which directly affect the terms and conditions of the employment including, where the employer is not a party, the persons by whom they were made"
+  },
+  {
+   "requirement": "Where the worker is required to work outside the United Kingdom for more than one month, the statement must specify the period of work outside the UK, the payment currency, any additional remuneration or benefits provided due to the overseas work, and the terms relating to return to the UK.",
+   "quote": "where the worker is required to work outside the United Kingdom for a period of more than one month— (i) the period for which he is to work outside the United Kingdom, (ii) the currency in which remuneration is to be paid while he is working outside the United Kingdom, (iii) any additional remuneration payable to him, and any benefits to be provided to or in respect of him, by reason of his being required to work outside the United Kingdom, and (iv) any terms and conditions relating to his return to the United Kingdom"
+  },
+  {
+   "requirement": "The statement must state any training entitlement provided by the employer.",
+   "quote": "any training entitlement provided by the employer"
+  },
+  {
+   "requirement": "The statement must state any part of the training entitlement that the employer requires the worker to complete.",
+   "quote": "any part of that training entitlement which the employer requires the worker to complete"
+  },
+  {
+   "requirement": "The statement must state any other training that the employer requires the worker to complete and for which the employer will not bear the cost.",
+   "quote": "any other training which the employer requires the worker to complete and which the employer will not bear the cost of"
+  },
+  {
+   "requirement": "Particulars of pensions and pension schemes need not be given to a worker of a body or authority if the worker's pension rights depend on a scheme established under statutory provisions that require the body or authority to provide new workers with pension information or information on the determination of questions affecting those rights.",
+   "quote": "Subsection (4)(d)(iii) does not apply to a worker of a body or authority if— (a) the worker’s pension rights depend on the terms of a pension scheme established under any provision contained in or having effect under any Act, and (b) any such provision requires the body or authority to give to a new worker information concerning the worker’s pension rights or the determination of questions affecting those rights."
+  },
+  {
+   "requirement": "A probationary period is defined as a temporary period specified in the worker's contract that begins at the start of employment and is intended to enable the employer to assess the worker's suitability for the employment.",
+   "quote": "“probationary period” means a temporary period specified in the contract of employment or other worker’s contract between a worker and an employer that— (a) commences at the beginning of the employment, and (b) is intended to enable the employer to assess the worker’s suitability for the employment."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum time before the statement or instalment is given for the date at which subsection (4) particulars must be specified",
+   "value": "seven days",
+   "quote": "not more than seven days before the statement (or the instalment of a statement given under section 2(4) containing them) is given"
+  },
+  {
+   "what": "The minimum period of work outside the United Kingdom triggering the requirement to provide specific overseas work particulars",
+   "value": "more than one month",
+   "quote": "required to work outside the United Kingdom for a period of more than one month"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 27,
+  "elements_verified": 27,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

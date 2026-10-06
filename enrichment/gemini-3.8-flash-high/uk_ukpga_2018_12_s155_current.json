@@ -1,0 +1,199 @@
+{
+ "key": "uk/ukpga/2018/12/s155@current",
+ "section": "uk/ukpga/2018/12/s155",
+ "version": "current",
+ "source_sha256": "d825fa733b9502bc62f4d981ac0bae0c3e83c6fb65b956c2992f890a9f338088",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Commissioner may, by written penalty notice, require a person to pay to the Commissioner an amount in sterling specified in the notice if satisfied that the person has failed or is failing as described in section 149(2), (3), (4), (5) or (5A), has failed to comply with an information notice, an assessment notice, an interview notice or an enforcement notice, or has failed to comply with a duty imposed on the person by section 146A(6).",
+    "quote": "the Commissioner may, by written notice (a “penalty notice”), require the person to pay to the Commissioner an amount in sterling specified in the notice."
+   },
+   {
+    "requirement": "Except in the case of a failure described in section 149(5), when deciding whether to give a penalty notice to a person and determining the amount of the penalty, the Commissioner must have regard, so far as relevant, to the matters listed in Article 83(1) and (2) of the UK GDPR to the extent that the notice concerns a matter to which the UK GDPR applies.",
+    "quote": "to the extent that the notice concerns a matter to which the UK GDPR applies, the matters listed in Article 83(1) and (2) of the UK GDPR;"
+   },
+   {
+    "requirement": "Except in the case of a failure described in section 149(5), when deciding whether to give a penalty notice to a person and determining the amount of the penalty, the Commissioner must have regard, so far as relevant, to the matters listed in section 155(3) to the extent that the notice concerns a matter other than one to which the UK GDPR applies.",
+    "quote": "to the extent that the notice concerns another matter, the matters listed in subsection (3)."
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the nature, gravity and duration of the failure.",
+    "quote": "the nature, gravity and duration of the failure;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the intentional or negligent character of the failure.",
+    "quote": "the intentional or negligent character of the failure;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to any action taken by the controller or processor to mitigate the damage or distress suffered by data subjects.",
+    "quote": "any action taken by the controller or processor to mitigate the damage or distress suffered by data subjects;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the degree of responsibility of the controller or processor, taking into account technical and organisational measures implemented by the controller or processor in accordance with section 57, 66, 103 or 107.",
+    "quote": "the degree of responsibility of the controller or processor, taking into account technical and organisational measures implemented by the controller or processor in accordance with section 57, 66, 103 or 107;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to any relevant previous failures by the controller or processor.",
+    "quote": "any relevant previous failures by the controller or processor;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the degree of co-operation with the Commissioner in order to remedy the failure and mitigate the possible adverse effects of the failure.",
+    "quote": "the degree of co-operation with the Commissioner, in order to remedy the failure and mitigate the possible adverse effects of the failure;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the categories of personal data affected by the failure.",
+    "quote": "the categories of personal data affected by the failure;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the manner in which the infringement became known to the Commissioner, including whether, and if so to what extent, the controller or processor notified the Commissioner of the failure.",
+    "quote": "the manner in which the infringement became known to the Commissioner, including whether, and if so to what extent, the controller or processor notified the Commissioner of the failure;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the extent to which the controller or processor has complied with previous enforcement notices or penalty notices.",
+    "quote": "the extent to which the controller or processor has complied with previous enforcement notices or penalty notices;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to adherence to approved codes of conduct or certification mechanisms.",
+    "quote": "adherence to approved codes of conduct or certification mechanisms;"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to any other aggravating or mitigating factor applicable to the case, including financial benefits gained, or losses avoided, as a result of the failure (whether directly or indirectly).",
+    "quote": "any other aggravating or mitigating factor applicable to the case, including financial benefits gained, or losses avoided, as a result of the failure (whether directly or indirectly);"
+   },
+   {
+    "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to whether the penalty would be effective, proportionate and dissuasive.",
+    "quote": "whether the penalty would be effective, proportionate and dissuasive."
+   },
+   {
+    "requirement": "The requirements of section 155(2) and (3) to have regard to specified matters do not apply in the case of a decision or determination relating to a failure described in section 149(5).",
+    "quote": "Subsections (2) and (3) do not apply in the case of a decision or determination relating to a failure described in section 149(5)."
+   },
+   {
+    "requirement": "Schedule 16 makes further provision regarding penalty notices, including provision requiring the Commissioner to give a notice of intent to impose a penalty and provision about payment, variation, cancellation and enforcement.",
+    "quote": "Schedule 16 makes further provision about penalty notices, including provision requiring the Commissioner to give a notice of intent to impose a penalty and provision about payment, variation, cancellation and enforcement."
+   },
+   {
+    "requirement": "The Secretary of State may by regulations confer power on the Commissioner to give a penalty notice in respect of other failures to comply with the data protection legislation.",
+    "quote": "The Secretary of State may by regulations— (a) confer power on the Commissioner to give a penalty notice in respect of other failures to comply with the data protection legislation"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations provide for the maximum penalty that may be imposed in relation to other failures to comply with the data protection legislation to be either the standard maximum amount or the higher maximum amount.",
+    "quote": "provide for the maximum penalty that may be imposed in relation to such failures to be either the standard maximum amount or the higher maximum amount."
+   },
+   {
+    "requirement": "Regulations made under section 155 may make provision about the giving of penalty notices in respect of the failure, and may amend section 155 and sections 156 to 158.",
+    "quote": "Regulations under this section— (a) may make provision about the giving of penalty notices in respect of the failure, (b) may amend this section and sections 156 to 158"
+   },
+   {
+    "requirement": "Regulations made under section 155 are subject to the affirmative resolution procedure.",
+    "quote": "are subject to the affirmative resolution procedure."
+   },
+   {
+    "requirement": "In section 155, the expressions 'higher maximum amount' and 'standard maximum amount' have the same meaning as in section 157.",
+    "quote": "In this section, “higher maximum amount” and “standard maximum amount” have the same meaning as in section 157."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Commissioner may, by written penalty notice, require a person to pay to the Commissioner an amount in sterling specified in the notice if satisfied that the person has failed or is failing as described in section 149(2), (3), (4), (5) or (5A), has failed to comply with an information notice, an assessment notice, an interview notice or an enforcement notice, or has failed to comply with a duty imposed on the person by section 146A(6).",
+   "quote": "the Commissioner may, by written notice (a “penalty notice”), require the person to pay to the Commissioner an amount in sterling specified in the notice."
+  },
+  {
+   "requirement": "Except in the case of a failure described in section 149(5), when deciding whether to give a penalty notice to a person and determining the amount of the penalty, the Commissioner must have regard, so far as relevant, to the matters listed in Article 83(1) and (2) of the UK GDPR to the extent that the notice concerns a matter to which the UK GDPR applies.",
+   "quote": "to the extent that the notice concerns a matter to which the UK GDPR applies, the matters listed in Article 83(1) and (2) of the UK GDPR;"
+  },
+  {
+   "requirement": "Except in the case of a failure described in section 149(5), when deciding whether to give a penalty notice to a person and determining the amount of the penalty, the Commissioner must have regard, so far as relevant, to the matters listed in section 155(3) to the extent that the notice concerns a matter other than one to which the UK GDPR applies.",
+   "quote": "to the extent that the notice concerns another matter, the matters listed in subsection (3)."
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the nature, gravity and duration of the failure.",
+   "quote": "the nature, gravity and duration of the failure;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the intentional or negligent character of the failure.",
+   "quote": "the intentional or negligent character of the failure;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to any action taken by the controller or processor to mitigate the damage or distress suffered by data subjects.",
+   "quote": "any action taken by the controller or processor to mitigate the damage or distress suffered by data subjects;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the degree of responsibility of the controller or processor, taking into account technical and organisational measures implemented by the controller or processor in accordance with section 57, 66, 103 or 107.",
+   "quote": "the degree of responsibility of the controller or processor, taking into account technical and organisational measures implemented by the controller or processor in accordance with section 57, 66, 103 or 107;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to any relevant previous failures by the controller or processor.",
+   "quote": "any relevant previous failures by the controller or processor;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the degree of co-operation with the Commissioner in order to remedy the failure and mitigate the possible adverse effects of the failure.",
+   "quote": "the degree of co-operation with the Commissioner, in order to remedy the failure and mitigate the possible adverse effects of the failure;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the categories of personal data affected by the failure.",
+   "quote": "the categories of personal data affected by the failure;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the manner in which the infringement became known to the Commissioner, including whether, and if so to what extent, the controller or processor notified the Commissioner of the failure.",
+   "quote": "the manner in which the infringement became known to the Commissioner, including whether, and if so to what extent, the controller or processor notified the Commissioner of the failure;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to the extent to which the controller or processor has complied with previous enforcement notices or penalty notices.",
+   "quote": "the extent to which the controller or processor has complied with previous enforcement notices or penalty notices;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to adherence to approved codes of conduct or certification mechanisms.",
+   "quote": "adherence to approved codes of conduct or certification mechanisms;"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to any other aggravating or mitigating factor applicable to the case, including financial benefits gained, or losses avoided, as a result of the failure (whether directly or indirectly).",
+   "quote": "any other aggravating or mitigating factor applicable to the case, including financial benefits gained, or losses avoided, as a result of the failure (whether directly or indirectly);"
+  },
+  {
+   "requirement": "When determining a penalty notice concerning a matter other than one to which the UK GDPR applies, the Commissioner must have regard to whether the penalty would be effective, proportionate and dissuasive.",
+   "quote": "whether the penalty would be effective, proportionate and dissuasive."
+  },
+  {
+   "requirement": "The requirements of section 155(2) and (3) to have regard to specified matters do not apply in the case of a decision or determination relating to a failure described in section 149(5).",
+   "quote": "Subsections (2) and (3) do not apply in the case of a decision or determination relating to a failure described in section 149(5)."
+  },
+  {
+   "requirement": "Schedule 16 makes further provision regarding penalty notices, including provision requiring the Commissioner to give a notice of intent to impose a penalty and provision about payment, variation, cancellation and enforcement.",
+   "quote": "Schedule 16 makes further provision about penalty notices, including provision requiring the Commissioner to give a notice of intent to impose a penalty and provision about payment, variation, cancellation and enforcement."
+  },
+  {
+   "requirement": "The Secretary of State may by regulations confer power on the Commissioner to give a penalty notice in respect of other failures to comply with the data protection legislation.",
+   "quote": "The Secretary of State may by regulations— (a) confer power on the Commissioner to give a penalty notice in respect of other failures to comply with the data protection legislation"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations provide for the maximum penalty that may be imposed in relation to other failures to comply with the data protection legislation to be either the standard maximum amount or the higher maximum amount.",
+   "quote": "provide for the maximum penalty that may be imposed in relation to such failures to be either the standard maximum amount or the higher maximum amount."
+  },
+  {
+   "requirement": "Regulations made under section 155 may make provision about the giving of penalty notices in respect of the failure, and may amend section 155 and sections 156 to 158.",
+   "quote": "Regulations under this section— (a) may make provision about the giving of penalty notices in respect of the failure, (b) may amend this section and sections 156 to 158"
+  },
+  {
+   "requirement": "Regulations made under section 155 are subject to the affirmative resolution procedure.",
+   "quote": "are subject to the affirmative resolution procedure."
+  },
+  {
+   "requirement": "In section 155, the expressions 'higher maximum amount' and 'standard maximum amount' have the same meaning as in section 157.",
+   "quote": "In this section, “higher maximum amount” and “standard maximum amount” have the same meaning as in section 157."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 22,
+  "elements_verified": 22,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

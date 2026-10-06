@@ -1,0 +1,54 @@
+# Point-in-time anchors (from ~/Code/legal-rag-audit src/legal_rag_audit/external/anchors.py), with the
+# versions as official CLML under anchors_xml/ (git-ignored). Dates: `from`/`to` are the figure's validity
+# range as stated in anchors.py (`to` exclusive); `current_*` from the amending S.I. in the copied corpus.
+# Split by provision (stop 5): era-227, era-186 → dev; ca-465, ca-382 → held-out. era-124 is excluded
+# (s.124 is used in the tests and the live demo).
+
+[era-227]
+split = "dev"
+title = "Employment Rights Act 1996"
+coordinate = "uk/ukpga/1996/18/s227"
+current_from = "2026-04-06"
+current_amended_by = "Employment Rights (Increase of Limits) Order 2026 (S.I. 2026/310)"
+current_figure = "£751"
+versions = [
+  { as_at = "2014-06-01", file = "anchors_xml/era-227_2014-06-01.xml", from = "2014-04-06", to = "2016-04-06", figure = "£464" },
+  { as_at = "2020-06-01", file = "anchors_xml/era-227_2020-06-01.xml", from = "2020-04-06", to = "2021-04-06", figure = "£538" },
+]
+
+[era-186]
+split = "dev"
+title = "Employment Rights Act 1996"
+coordinate = "uk/ukpga/1996/18/s186"
+current_from = "2026-04-06"
+current_amended_by = "Employment Rights (Increase of Limits) Order 2026 (S.I. 2026/310)"
+current_figure = "£751"
+versions = [
+  { as_at = "2014-01-01", file = "anchors_xml/era-186_2014-01-01.xml", from = "2013-02-01", to = "2014-04-06", figure = "£450" },
+  { as_at = "2019-01-01", file = "anchors_xml/era-186_2019-01-01.xml", from = "2018-04-06", to = "2019-04-06", figure = "£508" },
+]
+
+[ca-465]
+split = "heldout"
+title = "Companies Act 2006"
+coordinate = "uk/ukpga/2006/46/s465"
+current_from = "2025-04-06"
+current_amended_by = "Companies (Accounts and Reports) (Amendment and Transitional Provision) Regulations 2024 (S.I. 2024/1303)"
+current_figure = "£54 million"
+versions = [
+  { as_at = "2014-01-01", file = "anchors_xml/ca-465_2014-01-01.xml", from = "2008-04-06", to = "2016-01-01", figure = "£25.9 million" },
+  { as_at = "2019-01-01", file = "anchors_xml/ca-465_2019-01-01.xml", from = "2016-01-01", to = "2025-04-06", figure = "£36 million" },
+]
+
+[ca-382]
+split = "heldout"
+title = "Companies Act 2006"
+coordinate = "uk/ukpga/2006/46/s382"
+current_from = "2025-04-06"
+current_amended_by = "Companies (Accounts and Reports) (Amendment and Transitional Provision) Regulations 2024 (S.I. 2024/1303)"
+current_figure = "£15 million"
+# Versions dated 2008-04-06 and 2021-04-06 from legal-rag-audit's fetch cache; each is in force on its as_at.
+versions = [
+  { as_at = "2014-01-01", file = "anchors_xml/ca-382_2014-01-01.xml", from = "2008-04-06", to = "2016-01-01", figure = "£6.5 million" },
+  { as_at = "2019-01-01", file = "anchors_xml/ca-382_2019-01-01.xml", from = "2016-01-01", to = "2025-04-06", figure = "£10.2 million" },
+]

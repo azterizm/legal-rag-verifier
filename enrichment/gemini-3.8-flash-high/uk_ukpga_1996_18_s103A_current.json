@@ -1,0 +1,37 @@
+{
+ "key": "uk/ukpga/1996/18/s103A@current",
+ "section": "uk/ukpga/1996/18/s103A",
+ "version": "current",
+ "source_sha256": "6997d6901a84452344a194e04563831a90edc14ad88cd2607c0c54320b9dae07",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employee who is dismissed shall be regarded for the purposes of this Part as unfairly dismissed if the reason (or, if more than one reason, the principal reason) for the dismissal is that the employee made a protected disclosure.",
+    "quote": "An employee who is dismissed shall be regarded for the purposes of this Part as unfairly dismissed if the reason (or, if more than one, the principal reason) for the dismissal is that the employee made a protected disclosure."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "count of reasons for dismissal above which the protected disclosure must be the principal reason",
+    "value": "one",
+    "quote": "if more than one, the principal reason"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An employee who is dismissed shall be regarded for the purposes of this Part as unfairly dismissed if the reason (or, if more than one reason, the principal reason) for the dismissal is that the employee made a protected disclosure.",
+   "quote": "An employee who is dismissed shall be regarded for the purposes of this Part as unfairly dismissed if the reason (or, if more than one, the principal reason) for the dismissal is that the employee made a protected disclosure."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 1,
+  "elements_verified": 1,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

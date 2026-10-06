@@ -11,27 +11,33 @@ Order of checks for one sentence:
 2. **Alignment**: the sentence is aligned to its top-k premise windows (lexical, or the NLI head's
    best-entailed windows), plus windows those windows cite ("subsection (1ZA)").
 3. **Window checks** (plan R2, R3): a figure taken from outside the aligned windows while they state
-   a different value of the same kind is a value swap; a figure stated without the qualifier its
-   source binds it with is a dropped qualifier; a modal whose class the aligned windows do not
+   a different value of the same kind is a value swap; a figure stated without the cap, comparative
+   or condition its source binds it with is a dropped qualifier (a minimum stated as the threshold
+   is not); a modal whose class the aligned windows do not
    use is a deontic shift.
-4. **NLI** over premise windows (SummaC-ZS style), when an NLI scorer is configured.
+4. **NLI** over premise windows (SummaC-ZS style), when an NLI scorer is configured: each window
+   (with its heading) and each window joined with a window it cites is scored in one batch; the
+   sentence is judged on an entailing candidate if there is one, else on its most related one.
 """
 
 from __future__ import annotations
 
+import re
 import time
 from collections.abc import Sequence
 from dataclasses import dataclass, field
+from datetime import date, timedelta
 from enum import StrEnum
 from typing import Any, Literal, Protocol
 
-from legal_rag_verifier.align import rank_windows
+from legal_rag_verifier.align import content_stems, rank_windows
 from legal_rag_verifier.citations import is_relative, render_citation
 from legal_rag_verifier.claims import FIGURE_KINDS, Claim, ClaimKind, extract_claims
 from legal_rag_verifier.deontic import MODAL_SURFACES, Deontic, DeonticMatch, find_deontics
 from legal_rag_verifier.index import PremiseIndex, WindowIndex, build_index, numeric_part
+from legal_rag_verifier.numbers import parse_number_words
 from legal_rag_verifier.premise import PassageKind, Premise
-from legal_rag_verifier.qualifiers import find_bound_qualifier, sentence_qualifiers
+from legal_rag_verifier.qualifiers import Qualifier, find_bound_qualifier, sentence_qualifiers
 from legal_rag_verifier.segmenter import split_sentences
 
 __all__ = [
@@ -66,6 +72,7 @@ class Reason(StrEnum):
     NLI_CONTRADICTION = "NLI_CONTRADICTION"
     NLI_NOT_ENTAILED = "NLI_NOT_ENTAILED"
     NEUTRAL_STRICT = "NEUTRAL_STRICT"
+    VERSION_MISMATCH = "VERSION_MISMATCH"
 
 
 _PASS = frozenset({Reason.GROUNDED, Reason.CONNECTIVE})
@@ -143,6 +150,9 @@ class NLIResult:
     window: int
     latency_ns: int
     model_id: str
+    #: What the sentence was judged on: "window", "joined" (a window and one it cites) or
+    #: "element" (an enrichment statement about the window).
+    candidate: str = "window"
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -152,6 +162,7 @@ class NLIResult:
             "window": self.window,
             "latency_ns": self.latency_ns,
             "model_id": self.model_id,
+            "candidate": self.candidate,
         }
 
 
@@ -165,6 +176,9 @@ class VerifierConfig:
     top_k: int = 2
     #: A window below the top one is aligned only if it scores at least this share of the best.
     align_ratio: float = 0.5
+    #: A sentence the NLI head finds neither entailed nor contradicted, but whose figure or
+    #: citation is grounded: "emit" (P2, the default since 2026-10-06) or "rollback".
+    neutral_with_grounded_claim: Literal["emit", "rollback"] = "emit"
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -173,6 +187,7 @@ class VerifierConfig:
             "neutral_policy": self.neutral_policy,
             "top_k": self.top_k,
             "align_ratio": self.align_ratio,
+            "neutral_with_grounded_claim": self.neutral_with_grounded_claim,
         }
 
 
@@ -220,7 +235,11 @@ class SentenceVerdict:
 class Verifier:
     """Sentence verifier. Without an NLI scorer it runs the deterministic claim check only."""
 
-    def __init__(self, nli: NLIScorer | None = None, config: VerifierConfig | None = None) -> None:
+    def __init__(
+        self,
+        nli: NLIScorer | None = None,
+        config: VerifierConfig | None = None,
+    ) -> None:
         self.nli = nli
         self.config = config or VerifierConfig()
 
@@ -240,7 +259,7 @@ class Verifier:
     ) -> SentenceVerdict:
         t0 = time.perf_counter_ns()
         index = build_index(premise)
-        claims = extract_claims(sentence)
+        claims = [c for c in extract_claims(sentence) if not _denied(sentence, c)]
         deontics = find_deontics(sentence)
         query_claims = extract_claims(query) if query else []
 
@@ -263,24 +282,43 @@ class Verifier:
             )
 
         nli_result: NLIResult | None = None
+        judged: tuple[int, ...] = ()
         if self.nli is not None:
-            nli_result, ranked = _run_nli(self.nli, index, sentence)
-            aligned = self._expand(index, self._top(ranked))
+            nli_result, ranked, judged = self._judge(index, sentence)
+            aligned = self._expand(index, ranked)
         else:
             aligned = self._aligned_lexical(index, sentence)
+            judged = aligned[:1]
         claim_ns = time.perf_counter_ns() - t0 - (nli_result.latency_ns if nli_result else 0)
 
         aligned_windows = [index.windows[i] for i in aligned]
         results = [_refine(r, aligned_windows) for r in results]
-        found = self._window_checks(results, index, aligned, deontics, sentence)
+        found = self._window_checks(
+            results, index, aligned, judged=judged, deontics=deontics, sentence=sentence
+        )
+        self._feature_checks(
+            found, index, aligned, judged=judged, sentence=sentence, query_claims=query_claims
+        )
         has_claims = bool(claims) or bool(deontics)
+        entailed = nli_result is not None and nli_result.entailment > self.config.entail_threshold
         if not found.reasons and nli_result is not None:
             nli_reason = self._nli_reason(nli_result, has_claims=has_claims)
+            if (
+                nli_reason is Reason.NLI_NOT_ENTAILED
+                and self.config.neutral_with_grounded_claim == "emit"
+                and any(
+                    r.grounded_by not in {None, GroundedBy.QUERY} and r.claim.kind in _ANCHOR_KINDS
+                    for r in found.results
+                )
+            ):
+                nli_reason = None
             if nli_reason is not None:
                 found.reasons.append(nli_reason)
                 found.repair = Repair("ban", 0)
 
-        reasons = found.reasons or [Reason.GROUNDED if has_claims else Reason.CONNECTIVE]
+        reasons = found.reasons or [
+            Reason.GROUNDED if has_claims or entailed else Reason.CONNECTIVE
+        ]
         verdict = Verdict.EMIT if set(reasons) <= _PASS else Verdict.ROLLBACK
         return SentenceVerdict(
             sentence,
@@ -303,11 +341,14 @@ class Verifier:
         results: list[ClaimResult],
         index: PremiseIndex,
         aligned: tuple[int, ...],
+        *,
+        judged: tuple[int, ...],
         deontics: list[DeonticMatch],
         sentence: str,
     ) -> _Findings:
         """Value swap, dropped qualifier and deontic shift against the aligned windows."""
         windows = [index.windows[i] for i in aligned]
+
         found = _Findings(results)
         swapped = [r for r in results if _misaligned(r, windows)]
         if swapped:
@@ -339,6 +380,69 @@ class Verifier:
                 shifted[0].text,
             )
         return found
+
+    def _judge(
+        self, index: PremiseIndex, sentence: str
+    ) -> tuple[NLIResult, list[int], tuple[int, ...]]:
+        """NLI over the premise. Each clause (split on ";" and ":") is judged and the worst counts;
+        a clause that only denies an Act or section exists has nothing to entail and is dropped."""
+        assert self.nli is not None  # noqa: S101 - only called with an NLI head
+        clauses = [c for c in _clauses(sentence) if not _is_denial_clause(c)]
+        if not clauses:
+            return NLIResult(1.0, 0.0, 0.0, 0, 0, self.nli.model_id, "denial"), [], ()
+        judged = [_run_nli(self.nli, index, c, self.config) for c in clauses]
+        latency = sum(r.latency_ns for r, _, _ in judged)
+
+        def severity(item: tuple[NLIResult, list[int], tuple[int, ...]]) -> tuple[int, float]:
+            r = item[0]
+            if r.contradiction > self.config.contradict_threshold:
+                return (2, r.contradiction)
+            if r.entailment <= self.config.entail_threshold:
+                return (1, -r.entailment)
+            return (0, -r.entailment)
+
+        worst = max(judged, key=severity)
+        r = worst[0]
+        result = NLIResult(r.entailment, r.contradiction, r.neutral, r.window, latency, r.model_id)
+        return result, worst[1], worst[2]
+
+    def _feature_checks(
+        self,
+        found: _Findings,
+        index: PremiseIndex,
+        aligned: tuple[int, ...],
+        *,
+        judged: tuple[int, ...],
+        sentence: str,
+        query_claims: list[Claim],
+    ) -> None:
+        """List-item binding of figures, and the "as at" check against dated versions."""
+        if Reason.FIGURE_MISALIGNED not in found.reasons:
+            swapped = [r for r in found.results if _limb_mismatch(r, index, aligned, sentence)]
+            if swapped:
+                found.reasons.append(Reason.FIGURE_MISALIGNED)
+                found.details.append(f"{swapped[0].claim.text!r} belongs to another list item")
+                found.results = [
+                    ClaimResult(r.claim, r.grounded_by, Reason.FIGURE_MISALIGNED)
+                    if r in swapped
+                    else r
+                    for r in found.results
+                ]
+                found.repair = found.repair or Repair("ban", 0)
+        mismatch = _version_mismatch(found.results, index, sentence, query_claims)
+        if mismatch is not None:
+            result, candidates, when = mismatch
+            found.reasons.append(Reason.VERSION_MISMATCH)
+            found.details.append(f"{result.claim.text!r} is not the figure in force on {when}")
+            found.results = [
+                ClaimResult(r.claim, r.grounded_by, Reason.VERSION_MISMATCH) if r is result else r
+                for r in found.results
+            ]
+            found.repair = found.repair or (
+                Repair("allow", result.claim.start, candidates, result.claim.text)
+                if candidates
+                else Repair("ban", 0)
+            )
 
     def _nli_reason(self, nli: NLIResult, *, has_claims: bool) -> Reason | None:
         if nli.contradiction > self.config.contradict_threshold:
@@ -435,20 +539,167 @@ class _Findings:
     repair: Repair | None = None
 
 
+def _nli_candidates(index: PremiseIndex) -> list[tuple[str, tuple[int, ...], str]]:
+    """Each window, each window joined with a window it cites ("subsection (1ZA)"), and each
+    quote-audited enrichment element as a statement about its own window."""
+    out: list[tuple[str, tuple[int, ...], str]] = [
+        (w.nli_text, (w.position,), "window") for w in index.windows
+    ]
+    out += [
+        (f"{w.nli_text} {v.text}", (w.position, v.position), "joined")
+        for w in index.windows
+        for v in index.windows
+        if v.position != w.position and v.tail and v.tail in w.citations
+    ]
+    out += [
+        (f"{w.heading}: {element}" if w.heading else element, (w.position,), "element")
+        for w in index.windows
+        for element in w.elements
+    ]
+    return out
+
+
 def _run_nli(
-    scorer: NLIScorer, index: PremiseIndex, sentence: str
-) -> tuple[NLIResult, list[tuple[int, float]]]:
-    """Score every window in one batch; rank windows by entailment (SummaC-ZS style)."""
+    scorer: NLIScorer,
+    index: PremiseIndex,
+    sentence: str,
+    config: VerifierConfig,
+) -> tuple[NLIResult, list[int], tuple[int, ...]]:
+    """Score every candidate in one batch, choose the one the sentence is judged on, rank windows.
+
+    A sentence entailed (above the threshold) by any candidate is judged on that candidate, so a
+    correct statement of an exception is not rolled back because it contradicts the general rule.
+    Otherwise it is judged on its most related candidate (lowest P(neutral)): a sentence that
+    contradicts a window is judged on that window even when entailment is low everywhere.
+    Returns the result, the window positions in rank order (chosen candidate first, then by
+    relatedness, each kept only while it scores at least ``align_ratio`` of the chosen one) and
+    the windows of the chosen candidate.
+    """
+    candidates = _nli_candidates(index)
     t0 = time.perf_counter_ns()
-    probs = scorer.score([w.text for w in index.windows], sentence)
+    probs = scorer.score([text for text, _, _ in candidates], sentence)
     elapsed = time.perf_counter_ns() - t0
-    ranked = sorted(range(len(probs)), key=lambda i: (-probs[i].entailment, i))
-    best = ranked[0]
-    contradiction = max(p.contradiction for p in probs)
+    by_entailment = max(range(len(probs)), key=lambda i: (probs[i].entailment, -i))
+    if probs[by_entailment].entailment > config.entail_threshold:
+        chosen = by_entailment
+    else:
+        chosen = min(range(len(probs)), key=lambda i: (probs[i].neutral, i))
+    best = probs[chosen]
     result = NLIResult(
-        probs[best].entailment, contradiction, probs[best].neutral, best, elapsed, scorer.model_id
+        best.entailment,
+        best.contradiction,
+        best.neutral,
+        candidates[chosen][1][0],
+        elapsed,
+        scorer.model_id,
+        candidates[chosen][2],
     )
-    return result, [(i, probs[i].entailment) for i in ranked]
+    floor = config.align_ratio * (1.0 - best.neutral)
+    order = [
+        chosen,
+        *sorted((i for i in range(len(probs)) if i != chosen), key=lambda i: (probs[i].neutral, i)),
+    ]
+    ranked: list[int] = []
+    for rank, i in enumerate(order[: config.top_k]):
+        if rank and 1.0 - probs[i].neutral < floor:
+            break
+        ranked += [w for w in candidates[i][1] if w not in ranked]
+    return result, ranked, candidates[chosen][1]
+
+
+_ANCHOR_KINDS = FIGURE_KINDS | {ClaimKind.CITATION}
+_BEFORE = re.compile(r"\b(?:before|until|till|prior\s+to|up\s+to)\s*(?:the\s+)?$", re.IGNORECASE)
+_CLAUSE_SPLIT = re.compile(r";\s+|:\s+(?=\S)")
+
+
+def _clauses(sentence: str) -> list[str]:
+    """Independent clauses (split on ";" and ":") worth judging separately."""
+    parts = [p.strip() for p in _CLAUSE_SPLIT.split(sentence) if p.strip()]
+    return parts if len(parts) > 1 else [sentence]
+
+
+def _is_denial_clause(clause: str) -> bool:
+    """A clause whose job is to deny that an Act or section exists ("There is no X Act 1996")."""
+    claims = [
+        c for c in extract_claims(clause) if c.kind in {ClaimKind.CITATION, ClaimKind.INSTRUMENT}
+    ]
+    return bool(claims) and all(_denied(clause, c) for c in claims)
+
+
+def _wording(text: str) -> set[str]:
+    """Content stems minus number words, so a figure's own spelling does not count as wording."""
+    return {s for s in content_stems(text) if parse_number_words(s) is None}
+
+
+def _limb_mismatch(
+    result: ClaimResult, index: PremiseIndex, aligned: Sequence[int], sentence: str
+) -> bool:
+    """The figure sits in a list item whose wording matches the sentence less well than another
+    item that states a rival value of the same kind (burglary of a dwelling: 14 vs 10 years)."""
+    claim = result.claim
+    if claim.kind not in FIGURE_KINDS - {ClaimKind.DATE} or result.grounded_by is GroundedBy.QUERY:
+        return False
+    stems = _wording(sentence)
+    for i in aligned:
+        limbs = index.windows[i].limbs
+        if len(limbs) < 2:  # noqa: PLR2004
+            continue
+        scored = []
+        for limb in limbs:
+            values = {c.value for c in extract_claims(limb) if c.kind is claim.kind}
+            if values:
+                scored.append((len(stems & _wording(limb)), claim.value in values))
+        own = [s for s, has in scored if has]
+        rivals = [s for s, has in scored if not has]
+        if own and rivals and max(rivals) > max(own):
+            return True
+    return False
+
+
+def _sentence_date(sentence: str, query_claims: list[Claim]) -> date | None:
+    """The date a sentence speaks about: its own date, else the query's ("As at 1 June 2014").
+    A date introduced by "before", "until", "prior to" or "up to" points at the day before it."""
+    for text, claims in ((sentence, extract_claims(sentence)), ("", query_claims)):
+        for c in claims:
+            if c.kind is ClaimKind.DATE:
+                parts = [int(x) for x in c.value.split("-")]
+                day = date(parts[0], parts[1], parts[2] if len(parts) > 2 else 1)  # noqa: PLR2004
+                if text and _BEFORE.search(text[: c.start]):
+                    day -= timedelta(days=1)
+                return day
+    return None
+
+
+def _version_mismatch(
+    results: list[ClaimResult], index: PremiseIndex, sentence: str, query_claims: list[Claim]
+) -> tuple[ClaimResult, tuple[str, ...], str] | None:
+    """A figure that only appears in versions of the provision not in force on the date asked."""
+    dated = [w for w in index.windows if w.valid_from or w.valid_to]
+    when = _sentence_date(sentence, query_claims) if dated else None
+    if when is None:
+        return None
+    covering = [
+        w
+        for w in dated
+        if (w.valid_from is None or w.valid_from <= when)
+        and (w.valid_to is None or when < w.valid_to)
+    ]
+    if not covering:
+        return None
+    for result in results:
+        claim = result.claim
+        if (
+            claim.kind not in FIGURE_KINDS - {ClaimKind.DATE}
+            or result.grounded_by is GroundedBy.QUERY
+        ):
+            continue
+        holders = [w for w in dated if _window_has(w, claim)]
+        if holders and not any(w in covering for w in holders):
+            candidates = tuple(
+                dict.fromkeys(c.text for w in covering for c in w.values(claim.kind))
+            )
+            return result, candidates, f"{when.day} {when:%B %Y}"
+    return None
 
 
 def _misaligned(result: ClaimResult, aligned: list[WindowIndex]) -> bool:
@@ -457,6 +708,7 @@ def _misaligned(result: ClaimResult, aligned: list[WindowIndex]) -> bool:
     if claim.kind not in FIGURE_KINDS or result.grounded_by in {
         GroundedBy.WINDOW,
         GroundedBy.QUERY,
+        GroundedBy.FACT,  # another version of the provision, not another limb of it
     }:
         return False
     rivals = {c.value for w in aligned for c in w.values(claim.kind)}
@@ -480,9 +732,16 @@ def _dropped_qualifiers(
             for source in window.values(claim.kind)
             if source.value == claim.value
         ]
-        bound = bindings[0] if bindings and all(bindings) else None
-        if bound is not None and bound.qualifier not in expressed:
-            out.append(f"{claim.text!r} is bound by {bound.text!r} ({bound.qualifier.value})")
+        if not bindings or not all(bindings):
+            continue  # stated plainly somewhere in the premise
+        # Kept if any occurrence's qualifier is expressed. A minimum stated as the threshold
+        # ("four weeks' notice" for "not less than 4 weeks") is the same rule (stop 6).
+        if any(
+            b.qualifier in expressed or b.qualifier is Qualifier.LOWER_LIMIT for b in bindings if b
+        ):
+            continue
+        bound = next(b for b in bindings if b is not None)
+        out.append(f"{claim.text!r} is bound by {bound.text!r} ({bound.qualifier.value})")
     return out
 
 
@@ -500,6 +759,8 @@ def _grounded_in_premise(claim: Claim, index: PremiseIndex) -> GroundedBy | None
             else GroundedBy.FACT
         )
     number = numeric_part(claim)
+    if kind is ClaimKind.NUMBER and number in index.text_numbers:
+        return GroundedBy.PREMISE
     if kind is ClaimKind.NUMBER and number in index.numbers:
         return GroundedBy.METADATA
     return None
@@ -555,7 +816,34 @@ def _ground_instrument(value: str, index: PremiseIndex) -> GroundedBy | None:
     return None
 
 
+_DENIED_BEFORE = re.compile(
+    r"(?:\bthere\s+is\s+no|\bthere's\s+no|\bno\s+such|\b(?:cannot|can't|could\s+not)\s+find|"
+    r"\bno\s+record\s+of|\b(?:has|have|contains?)\s+no|^no)\s+(?:(?:a|an|any|the)\s+)?$",
+    re.IGNORECASE,
+)
+_DENIED_AFTER = re.compile(
+    r"^\s*(?:does\s+not|doesn't|did\s+not)\s+exist|^\s*(?:has|had)\s+been\s+repealed"
+    r"|^\s*(?:is|was)\s+repealed",
+    re.IGNORECASE,
+)
+
+
+def _denied(sentence: str, claim: Claim) -> bool:
+    """A citation or instrument the sentence says does not exist ("There is no Family Rights Act
+    1996", "has no section 342", "… has been repealed") is not asserted, so it is not a claim."""
+    if claim.kind not in {ClaimKind.CITATION, ClaimKind.INSTRUMENT}:
+        return False
+    before = sentence[: claim.start]
+    if claim.text.lower().startswith("no "):
+        return True
+    return bool(_DENIED_BEFORE.search(before) or _DENIED_AFTER.match(sentence[claim.end :]))
+
+
 def _in_query(claim: Claim, query_claims: list[Claim]) -> bool:
+    """A figure the user stated grounds itself (plan R4). Citations and instrument titles never do:
+    a query that names a non-existent Act or section is a false premise, not a source."""
+    if claim.kind not in FIGURE_KINDS:
+        return False
     for q in query_claims:
         if q.kind is claim.kind and q.value == claim.value:
             return True

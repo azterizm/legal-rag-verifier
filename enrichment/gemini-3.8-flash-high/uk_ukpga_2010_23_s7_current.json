@@ -1,0 +1,146 @@
+{
+ "key": "uk/ukpga/2010/23/s7@current",
+ "section": "uk/ukpga/2010/23/s7",
+ "version": "current",
+ "source_sha256": "984e48b6a283fa7b64cbaa863a798ca609e2335a4fab8be9307d0e877d8efef3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A relevant commercial organisation is guilty of an offence if a person associated with it bribes another person intending to obtain or retain business for the organisation.",
+    "quote": "A relevant commercial organisation (“C”) is guilty of an offence under this section if a person (“A”) associated with C bribes another person intending— (a) to obtain or retain business for C"
+   },
+   {
+    "requirement": "A relevant commercial organisation is guilty of an offence if a person associated with it bribes another person intending to obtain or retain an advantage in the conduct of business for the organisation.",
+    "quote": "to obtain or retain an advantage in the conduct of business for C"
+   },
+   {
+    "requirement": "A relevant commercial organisation has a defence against the offence if it proves that it had in place adequate procedures designed to prevent persons associated with it from undertaking such conduct.",
+    "quote": "it is a defence for C to prove that C had in place adequate procedures designed to prevent persons associated with C from undertaking such conduct"
+   },
+   {
+    "requirement": "A person bribes another person if, and only if, that person is, or would be, guilty of an offence under section 1 or section 6, whether or not that person has been prosecuted for such an offence.",
+    "quote": "A bribes another person if, and only if, A— (a) is, or would be, guilty of an offence under section 1 or 6 (whether or not A has been prosecuted for such an offence)"
+   },
+   {
+    "requirement": "A person bribes another person if, and only if, that person would be guilty of an offence under section 1 or section 6 if section 12(2)(c) and section 12(4) were omitted.",
+    "quote": "would be guilty of such an offence if section 12(2)(c) and (4) were omitted"
+   },
+   {
+    "requirement": "The meaning of a person associated with a commercial organisation is set out in section 8, and the Secretary of State's duty to publish guidance is set out in section 9.",
+    "quote": "See section 8 for the meaning of a person associated with C and see section 9 for a duty on the Secretary of State to publish guidance"
+   },
+   {
+    "requirement": "A partnership includes a partnership within the Partnership Act 1890.",
+    "quote": "a partnership within the Partnership Act 1890"
+   },
+   {
+    "requirement": "A partnership includes a limited partnership registered under the Limited Partnerships Act 1907.",
+    "quote": "a limited partnership registered under the Limited Partnerships Act 1907"
+   },
+   {
+    "requirement": "A partnership includes a firm or entity of a similar character formed under the law of a country or territory outside the United Kingdom.",
+    "quote": "a firm or entity of a similar character formed under the law of a country or territory outside the United Kingdom"
+   },
+   {
+    "requirement": "A relevant commercial organisation includes a body incorporated under the law of any part of the United Kingdom that carries on a business, whether there or elsewhere.",
+    "quote": "a body which is incorporated under the law of any part of the United Kingdom and which carries on a business (whether there or elsewhere)"
+   },
+   {
+    "requirement": "A relevant commercial organisation includes any other body corporate, wherever incorporated, that carries on a business, or part of a business, in any part of the United Kingdom.",
+    "quote": "any other body corporate (wherever incorporated) which carries on a business, or part of a business, in any part of the United Kingdom"
+   },
+   {
+    "requirement": "A relevant commercial organisation includes a partnership formed under the law of any part of the United Kingdom that carries on a business, whether there or elsewhere.",
+    "quote": "a partnership which is formed under the law of any part of the United Kingdom and which carries on a business (whether there or elsewhere)"
+   },
+   {
+    "requirement": "A relevant commercial organisation includes any other partnership, wherever formed, that carries on a business, or part of a business, in any part of the United Kingdom.",
+    "quote": "any other partnership (wherever formed) which carries on a business, or part of a business, in any part of the United Kingdom"
+   },
+   {
+    "requirement": "For the purposes of section 7, a trade or profession is treated as a business.",
+    "quote": "for the purposes of this section, a trade or profession is a business"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the calendar year of the referenced Partnership Act",
+    "value": "1890",
+    "quote": "Partnership Act 1890"
+   },
+   {
+    "what": "the calendar year of the referenced Limited Partnerships Act",
+    "value": "1907",
+    "quote": "Limited Partnerships Act 1907"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A relevant commercial organisation is guilty of an offence if a person associated with it bribes another person intending to obtain or retain business for the organisation.",
+   "quote": "A relevant commercial organisation (“C”) is guilty of an offence under this section if a person (“A”) associated with C bribes another person intending— (a) to obtain or retain business for C"
+  },
+  {
+   "requirement": "A relevant commercial organisation is guilty of an offence if a person associated with it bribes another person intending to obtain or retain an advantage in the conduct of business for the organisation.",
+   "quote": "to obtain or retain an advantage in the conduct of business for C"
+  },
+  {
+   "requirement": "A relevant commercial organisation has a defence against the offence if it proves that it had in place adequate procedures designed to prevent persons associated with it from undertaking such conduct.",
+   "quote": "it is a defence for C to prove that C had in place adequate procedures designed to prevent persons associated with C from undertaking such conduct"
+  },
+  {
+   "requirement": "A person bribes another person if, and only if, that person is, or would be, guilty of an offence under section 1 or section 6, whether or not that person has been prosecuted for such an offence.",
+   "quote": "A bribes another person if, and only if, A— (a) is, or would be, guilty of an offence under section 1 or 6 (whether or not A has been prosecuted for such an offence)"
+  },
+  {
+   "requirement": "A person bribes another person if, and only if, that person would be guilty of an offence under section 1 or section 6 if section 12(2)(c) and section 12(4) were omitted.",
+   "quote": "would be guilty of such an offence if section 12(2)(c) and (4) were omitted"
+  },
+  {
+   "requirement": "The meaning of a person associated with a commercial organisation is set out in section 8, and the Secretary of State's duty to publish guidance is set out in section 9.",
+   "quote": "See section 8 for the meaning of a person associated with C and see section 9 for a duty on the Secretary of State to publish guidance"
+  },
+  {
+   "requirement": "A partnership includes a partnership within the Partnership Act 1890.",
+   "quote": "a partnership within the Partnership Act 1890"
+  },
+  {
+   "requirement": "A partnership includes a limited partnership registered under the Limited Partnerships Act 1907.",
+   "quote": "a limited partnership registered under the Limited Partnerships Act 1907"
+  },
+  {
+   "requirement": "A partnership includes a firm or entity of a similar character formed under the law of a country or territory outside the United Kingdom.",
+   "quote": "a firm or entity of a similar character formed under the law of a country or territory outside the United Kingdom"
+  },
+  {
+   "requirement": "A relevant commercial organisation includes a body incorporated under the law of any part of the United Kingdom that carries on a business, whether there or elsewhere.",
+   "quote": "a body which is incorporated under the law of any part of the United Kingdom and which carries on a business (whether there or elsewhere)"
+  },
+  {
+   "requirement": "A relevant commercial organisation includes any other body corporate, wherever incorporated, that carries on a business, or part of a business, in any part of the United Kingdom.",
+   "quote": "any other body corporate (wherever incorporated) which carries on a business, or part of a business, in any part of the United Kingdom"
+  },
+  {
+   "requirement": "A relevant commercial organisation includes a partnership formed under the law of any part of the United Kingdom that carries on a business, whether there or elsewhere.",
+   "quote": "a partnership which is formed under the law of any part of the United Kingdom and which carries on a business (whether there or elsewhere)"
+  },
+  {
+   "requirement": "A relevant commercial organisation includes any other partnership, wherever formed, that carries on a business, or part of a business, in any part of the United Kingdom.",
+   "quote": "any other partnership (wherever formed) which carries on a business, or part of a business, in any part of the United Kingdom"
+  },
+  {
+   "requirement": "For the purposes of section 7, a trade or profession is treated as a business.",
+   "quote": "for the purposes of this section, a trade or profession is a business"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

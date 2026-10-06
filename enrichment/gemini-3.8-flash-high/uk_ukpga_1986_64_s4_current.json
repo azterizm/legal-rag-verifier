@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/1986/64/s4@current",
+ "section": "uk/ukpga/1986/64/s4",
+ "version": "current",
+ "source_sha256": "ced1dec87b9769e30510b23c52c873a2cb2f8167c1f6bc0fa767e63181e9ffb4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if that person uses threatening, abusive or insulting words or behaviour towards another person with intent to cause that person to believe that immediate unlawful violence will be used against them or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked.",
+    "quote": "uses towards another person threatening, abusive or insulting words or behaviour"
+   },
+   {
+    "requirement": "A person commits an offence if that person distributes or displays to another person any threatening, abusive or insulting writing, sign or other visible representation, with intent to cause that person to believe that immediate unlawful violence will be used against them or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked.",
+    "quote": "distributes or displays to another person any writing, sign or other visible representation which is threatening, abusive or insulting"
+   },
+   {
+    "requirement": "The prohibited conduct must be accompanied by an intent to cause the other person to believe that immediate unlawful violence will be used against him or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or must result in a situation whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked.",
+    "quote": "with intent to cause that person to believe that immediate unlawful violence will be used against him or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked"
+   },
+   {
+    "requirement": "An offence under section 4 may be committed in either a public or a private place.",
+    "quote": "may be committed in a public or a private place"
+   },
+   {
+    "requirement": "No offence is committed where the relevant words or behaviour are used, or the writing, sign or other visible representation is distributed or displayed, by a person who is inside a dwelling while the other person is also inside that dwelling or another dwelling.",
+    "quote": "except that no offence is committed where the words or behaviour are used, or the writing, sign or other visible representation is distributed or displayed, by a person inside a dwelling and the other person is also inside that or another dwelling"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 4 is liable on summary conviction to imprisonment, a fine, or both.",
+    "quote": "liable on summary conviction to imprisonment for a term not exceeding 6 months or a fine not exceeding level 5 on the standard scale or both"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on summary conviction",
+    "value": "6 months",
+    "quote": "imprisonment for a term not exceeding 6 months"
+   },
+   {
+    "what": "maximum fine level on the standard scale on summary conviction",
+    "value": "level 5",
+    "quote": "fine not exceeding level 5 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if that person uses threatening, abusive or insulting words or behaviour towards another person with intent to cause that person to believe that immediate unlawful violence will be used against them or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked.",
+   "quote": "uses towards another person threatening, abusive or insulting words or behaviour"
+  },
+  {
+   "requirement": "A person commits an offence if that person distributes or displays to another person any threatening, abusive or insulting writing, sign or other visible representation, with intent to cause that person to believe that immediate unlawful violence will be used against them or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked.",
+   "quote": "distributes or displays to another person any writing, sign or other visible representation which is threatening, abusive or insulting"
+  },
+  {
+   "requirement": "The prohibited conduct must be accompanied by an intent to cause the other person to believe that immediate unlawful violence will be used against him or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or must result in a situation whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked.",
+   "quote": "with intent to cause that person to believe that immediate unlawful violence will be used against him or another by any person, or to provoke the immediate use of unlawful violence by that person or another, or whereby that person is likely to believe that such violence will be used or it is likely that such violence will be provoked"
+  },
+  {
+   "requirement": "An offence under section 4 may be committed in either a public or a private place.",
+   "quote": "may be committed in a public or a private place"
+  },
+  {
+   "requirement": "No offence is committed where the relevant words or behaviour are used, or the writing, sign or other visible representation is distributed or displayed, by a person who is inside a dwelling while the other person is also inside that dwelling or another dwelling.",
+   "quote": "except that no offence is committed where the words or behaviour are used, or the writing, sign or other visible representation is distributed or displayed, by a person inside a dwelling and the other person is also inside that or another dwelling"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 4 is liable on summary conviction to imprisonment, a fine, or both.",
+   "quote": "liable on summary conviction to imprisonment for a term not exceeding 6 months or a fine not exceeding level 5 on the standard scale or both"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on summary conviction",
+   "value": "6 months",
+   "quote": "imprisonment for a term not exceeding 6 months"
+  },
+  {
+   "what": "maximum fine level on the standard scale on summary conviction",
+   "value": "level 5",
+   "quote": "fine not exceeding level 5 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

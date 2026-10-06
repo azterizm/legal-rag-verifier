@@ -1,0 +1,296 @@
+{
+ "key": "uk/ukpga/1988/50/s13@current",
+ "section": "uk/ukpga/1988/50/s13",
+ "version": "current",
+ "source_sha256": "a229e8cd9cacfa51636f15e79206c96cb9173f32bc97d12a62c9c8f17228264a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 13 applies to a statutory periodic tenancy, unless it cannot for the time being be an assured tenancy under paragraph 11 or 12 in Part I of Schedule 1 to the Housing Act 1988.",
+    "quote": "a statutory periodic tenancy other than one which, by virtue of paragraph 11 or paragraph 12 in Part I of Schedule 1 to this Act, cannot for the time being be an assured tenancy"
+   },
+   {
+    "requirement": "Section 13 applies to any other assured periodic tenancy, unless it contains a currently binding provision under which the rent for a particular period will or may exceed the rent for an earlier period.",
+    "quote": "any other periodic tenancy which is an assured tenancy, other than one in relation to which there is a provision, for the time being binding on the tenant, under which the rent for a particular period of the tenancy will or may be greater than the rent for an earlier period"
+   },
+   {
+    "requirement": "To secure a rent increase under a qualifying tenancy, the landlord may serve on the tenant a notice in the prescribed form proposing a new rent to take effect at the start of a specified new period of the tenancy.",
+    "quote": "the landlord may serve on the tenant a notice in the prescribed form proposing a new rent to take effect at the beginning of a new period of the tenancy specified in the notice"
+   },
+   {
+    "requirement": "The new tenancy period specified in the landlord's rent increase notice must begin no earlier than the minimum period two months after the date the notice is served.",
+    "quote": "the minimum period two months after the date of the service of the notice"
+   },
+   {
+    "requirement": "Except in the case of a statutory periodic tenancy, the new tenancy period for an assured agricultural occupancy must not begin earlier than the first anniversary of the date on which the first period of the tenancy began.",
+    "quote": "in the case of an assured agricultural occupancy, the first anniversary of the date on which the first period of the tenancy began"
+   },
+   {
+    "requirement": "Except in the case of a statutory periodic tenancy or an assured agricultural occupancy, the new tenancy period must not begin earlier than 52 weeks after the date the first period of the tenancy began.",
+    "quote": "in any other case, on the date that falls 52 weeks after the date on which the first period of the tenancy began"
+   },
+   {
+    "requirement": "If rent has previously been increased by a notice under section 13(2) or a determination under section 14, the new period for an assured agricultural occupancy must not begin earlier than the first anniversary of the date the increased rent took effect.",
+    "quote": "in the case of an assured agricultural occupancy, the first anniversary of the date on which the increased rent took effect"
+   },
+   {
+    "requirement": "If rent has previously been increased by a notice under section 13(2) or a determination under section 14, the new period for any tenancy other than an assured agricultural occupancy must not begin earlier than the appropriate date.",
+    "quote": "in any other case, the appropriate date"
+   },
+   {
+    "requirement": "For a yearly tenancy, the minimum notice period is six months.",
+    "quote": "in the case of a yearly tenancy, six months"
+   },
+   {
+    "requirement": "For a tenancy where the period is less than a month, the minimum notice period is one month.",
+    "quote": "in the case of a tenancy where the period is less than a month, one month"
+   },
+   {
+    "requirement": "For any tenancy not yearly and not having a period of less than a month, the minimum notice period is a period equal to the period of the tenancy.",
+    "quote": "in any other case, a period equal to the period of the tenancy"
+   },
+   {
+    "requirement": "The appropriate date is the date falling 53 weeks after the increased rent took effect in cases where subsection (3B) applies, and 52 weeks after that date in any other case.",
+    "quote": "in a case to which subsection (3B) below applies, the date that falls 53 weeks after the date on which the increased rent took effect; (b) in any other case, the date that falls 52 weeks after the date on which the increased rent took effect"
+   },
+   {
+    "requirement": "Subsection (3B) applies where the rent has been increased under section 13 or section 14 at least once after the Regulatory Reform (Assured Periodic Tenancies)(Rent Increases) Order 2003 came into force, and the fifty-third week after the last increase took effect begins more than six days before the anniversary of the date the first such increase took effect.",
+    "quote": "the rent under the tenancy has been increased by virtue of a notice under this section or a determination under section 14 below on at least one occasion after the coming into force of the Regulatory Reform (Assured Periodic Tenancies)(Rent Increases) Order 2003; and (b) the fifty-third week after the date on which the last such increase took effect begins more than six days before the anniversary of the date on which the first such increase took effect"
+   },
+   {
+    "requirement": "The new rent specified in the landlord's notice takes effect as proposed unless the tenant applies to the appropriate tribunal under section 14(A3) before the new period begins.",
+    "quote": "the tenant by an application in the prescribed form refers the notice to the appropriate tribunal applies to the appropriate tribunal under section 14(A3)"
+   },
+   {
+    "requirement": "The new rent specified in the landlord's notice takes effect as proposed unless the landlord and tenant agree before the new period begins on a new rent lower than that proposed, or agree that the rent will not be varied.",
+    "quote": "the landlord and the tenant agree on a variation of the rent which is different from new rent which is lower than that proposed in the notice or agree that the rent should not be varied"
+   },
+   {
+    "requirement": "The rent for an assured tenancy to which section 13 applies may not be increased above the rent for the previous period except by a notice under section 13, an agreement following such a notice under subsection (4)(b), a determination under section 14, or a written agreement following an appropriate tribunal determination where the agreed rent is lower than the rent payable under section 14ZA or 14ZB.",
+    "quote": "The rent for a period of an assured tenancy to which this section applies may not be greater than the rent for the previous period except by virtue of— (a) a notice under this section or an agreement under subsection (4)(b) following such a notice, (b) a determination under section 14, or (c) an agreement in writing between the landlord and the tenant varying the rent, following a determination by the appropriate tribunal under section 14, where the agreed rent is lower than the rent that would be payable under section 14ZA or 14ZB as a result of the determination"
+   },
+   {
+    "requirement": "Any provision relating to an assured tenancy to which section 13 applies is void to the extent that it provides that the rent must or may be higher than the previous period other than through a notice, determination, or agreement permitted by subsection (4A).",
+    "quote": "any provision relating to an assured tenancy to which this section applies is of no effect so far as it provides that the rent for a particular period of the tenancy must or may be greater than the rent for the previous period otherwise than by virtue of a notice, determination or agreement mentioned in this subsection"
+   },
+   {
+    "requirement": "Except as restricted by subsection (4A), nothing in section 13 or sections 14 to 14ZB limits the right of the landlord and the tenant under a qualifying assured tenancy to vary any tenancy term by agreement.",
+    "quote": "Except as provided by subsection (4A), nothing in this section (or in sections 14 to 14ZB) limits any right of the landlord and the tenant under an assured tenancy to which this section applies to vary any term of the tenancy by agreement"
+   },
+   {
+    "requirement": "A relevant low-cost tenancy is defined as an assured tenancy of social housing under Part 2 of the Housing and Regeneration Act 2008 where the landlord is a private registered provider of social housing, or any other assured tenancy specified in regulations made by the Secretary of State.",
+    "quote": "In this section “relevant low-cost tenancy” means— (a) an assured tenancy of social housing, within the meaning of Part 2 of the Housing and Regeneration Act 2008, where the landlord is a private registered provider of social housing, and (b) any other assured tenancy of a description specified in regulations made by the Secretary of State"
+   },
+   {
+    "requirement": "Regulations made by the Secretary of State specifying descriptions of assured tenancies under subsection (4C)(b) may make different provision for different purposes and must be made by statutory instrument.",
+    "quote": "Regulations under subsection (4C)(b)— (a) may make different provision for different purposes; (b) are to be made by statutory instrument"
+   },
+   {
+    "requirement": "A statutory instrument containing regulations under subsection (4C)(b) is subject to annulment pursuant to a resolution of either House of Parliament.",
+    "quote": "A statutory instrument containing regulations under subsection (4C)(b) is subject to annulment in pursuance of a resolution of either House of Parliament"
+   },
+   {
+    "requirement": "Nothing in section 13 or section 14 affects the right of the landlord and tenant under an assured tenancy to vary any term of the tenancy, including rent, by agreement.",
+    "quote": "Nothing in this section (or in section 14 below) affects the right of the landlord and the tenant under an assured tenancy to vary by agreement any term of the tenancy (including a term relating to rent)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum period following service of the notice before proposed rent can take effect",
+    "value": "two months",
+    "quote": "the minimum period two months after the date of the service of the notice"
+   },
+   {
+    "what": "Earliest date for proposed rent to take effect for an assured agricultural occupancy after the first period began",
+    "value": "first anniversary",
+    "quote": "the first anniversary of the date on which the first period of the tenancy began"
+   },
+   {
+    "what": "Earliest time after the first period began for proposed rent to take effect for non-agricultural, non-statutory periodic tenancies",
+    "value": "52 weeks",
+    "quote": "on the date that falls 52 weeks after the date on which the first period of the tenancy began"
+   },
+   {
+    "what": "Earliest date for a subsequent proposed rent increase to take effect for an assured agricultural occupancy",
+    "value": "first anniversary",
+    "quote": "the first anniversary of the date on which the increased rent took effect"
+   },
+   {
+    "what": "Minimum notice period for a yearly tenancy",
+    "value": "six months",
+    "quote": "in the case of a yearly tenancy, six months"
+   },
+   {
+    "what": "Tenancy period threshold below which the minimum notice period is specified",
+    "value": "a month",
+    "quote": "in the case of a tenancy where the period is less than a month"
+   },
+   {
+    "what": "Minimum notice period where the tenancy period is less than a month",
+    "value": "one month",
+    "quote": "in the case of a tenancy where the period is less than a month, one month"
+   },
+   {
+    "what": "Period after increased rent took effect used to determine the appropriate date under subsection (3B)",
+    "value": "53 weeks",
+    "quote": "the date that falls 53 weeks after the date on which the increased rent took effect"
+   },
+   {
+    "what": "Period after increased rent took effect used to determine the appropriate date in standard cases",
+    "value": "52 weeks",
+    "quote": "the date that falls 52 weeks after the date on which the increased rent took effect"
+   },
+   {
+    "what": "Minimum number of prior rent increases after the 2003 Order required for subsection (3B) to apply",
+    "value": "at least one occasion",
+    "quote": "on at least one occasion after the coming into force of the Regulatory Reform (Assured Periodic Tenancies)(Rent Increases) Order 2003"
+   },
+   {
+    "what": "The specific week following the last rent increase examined under subsection (3B)",
+    "value": "fifty-third week",
+    "quote": "the fifty-third week after the date on which the last such increase took effect"
+   },
+   {
+    "what": "Lead time before the anniversary of the first increase for the start of the fifty-third week under subsection (3B)",
+    "value": "six days",
+    "quote": "begins more than six days before the anniversary of the date on which the first such increase took effect"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 13 applies to a statutory periodic tenancy, unless it cannot for the time being be an assured tenancy under paragraph 11 or 12 in Part I of Schedule 1 to the Housing Act 1988.",
+   "quote": "a statutory periodic tenancy other than one which, by virtue of paragraph 11 or paragraph 12 in Part I of Schedule 1 to this Act, cannot for the time being be an assured tenancy"
+  },
+  {
+   "requirement": "Section 13 applies to any other assured periodic tenancy, unless it contains a currently binding provision under which the rent for a particular period will or may exceed the rent for an earlier period.",
+   "quote": "any other periodic tenancy which is an assured tenancy, other than one in relation to which there is a provision, for the time being binding on the tenant, under which the rent for a particular period of the tenancy will or may be greater than the rent for an earlier period"
+  },
+  {
+   "requirement": "To secure a rent increase under a qualifying tenancy, the landlord may serve on the tenant a notice in the prescribed form proposing a new rent to take effect at the start of a specified new period of the tenancy.",
+   "quote": "the landlord may serve on the tenant a notice in the prescribed form proposing a new rent to take effect at the beginning of a new period of the tenancy specified in the notice"
+  },
+  {
+   "requirement": "The new tenancy period specified in the landlord's rent increase notice must begin no earlier than the minimum period two months after the date the notice is served.",
+   "quote": "the minimum period two months after the date of the service of the notice"
+  },
+  {
+   "requirement": "Except in the case of a statutory periodic tenancy, the new tenancy period for an assured agricultural occupancy must not begin earlier than the first anniversary of the date on which the first period of the tenancy began.",
+   "quote": "in the case of an assured agricultural occupancy, the first anniversary of the date on which the first period of the tenancy began"
+  },
+  {
+   "requirement": "Except in the case of a statutory periodic tenancy or an assured agricultural occupancy, the new tenancy period must not begin earlier than 52 weeks after the date the first period of the tenancy began.",
+   "quote": "in any other case, on the date that falls 52 weeks after the date on which the first period of the tenancy began"
+  },
+  {
+   "requirement": "If rent has previously been increased by a notice under section 13(2) or a determination under section 14, the new period for an assured agricultural occupancy must not begin earlier than the first anniversary of the date the increased rent took effect.",
+   "quote": "in the case of an assured agricultural occupancy, the first anniversary of the date on which the increased rent took effect"
+  },
+  {
+   "requirement": "If rent has previously been increased by a notice under section 13(2) or a determination under section 14, the new period for any tenancy other than an assured agricultural occupancy must not begin earlier than the appropriate date.",
+   "quote": "in any other case, the appropriate date"
+  },
+  {
+   "requirement": "For a yearly tenancy, the minimum notice period is six months.",
+   "quote": "in the case of a yearly tenancy, six months"
+  },
+  {
+   "requirement": "For a tenancy where the period is less than a month, the minimum notice period is one month.",
+   "quote": "in the case of a tenancy where the period is less than a month, one month"
+  },
+  {
+   "requirement": "For any tenancy not yearly and not having a period of less than a month, the minimum notice period is a period equal to the period of the tenancy.",
+   "quote": "in any other case, a period equal to the period of the tenancy"
+  },
+  {
+   "requirement": "The appropriate date is the date falling 53 weeks after the increased rent took effect in cases where subsection (3B) applies, and 52 weeks after that date in any other case.",
+   "quote": "in a case to which subsection (3B) below applies, the date that falls 53 weeks after the date on which the increased rent took effect; (b) in any other case, the date that falls 52 weeks after the date on which the increased rent took effect"
+  },
+  {
+   "requirement": "Subsection (3B) applies where the rent has been increased under section 13 or section 14 at least once after the Regulatory Reform (Assured Periodic Tenancies)(Rent Increases) Order 2003 came into force, and the fifty-third week after the last increase took effect begins more than six days before the anniversary of the date the first such increase took effect.",
+   "quote": "the rent under the tenancy has been increased by virtue of a notice under this section or a determination under section 14 below on at least one occasion after the coming into force of the Regulatory Reform (Assured Periodic Tenancies)(Rent Increases) Order 2003; and (b) the fifty-third week after the date on which the last such increase took effect begins more than six days before the anniversary of the date on which the first such increase took effect"
+  },
+  {
+   "requirement": "The new rent specified in the landlord's notice takes effect as proposed unless the tenant applies to the appropriate tribunal under section 14(A3) before the new period begins.",
+   "quote": "the tenant by an application in the prescribed form refers the notice to the appropriate tribunal applies to the appropriate tribunal under section 14(A3)"
+  },
+  {
+   "requirement": "The new rent specified in the landlord's notice takes effect as proposed unless the landlord and tenant agree before the new period begins on a new rent lower than that proposed, or agree that the rent will not be varied.",
+   "quote": "the landlord and the tenant agree on a variation of the rent which is different from new rent which is lower than that proposed in the notice or agree that the rent should not be varied"
+  },
+  {
+   "requirement": "The rent for an assured tenancy to which section 13 applies may not be increased above the rent for the previous period except by a notice under section 13, an agreement following such a notice under subsection (4)(b), a determination under section 14, or a written agreement following an appropriate tribunal determination where the agreed rent is lower than the rent payable under section 14ZA or 14ZB.",
+   "quote": "The rent for a period of an assured tenancy to which this section applies may not be greater than the rent for the previous period except by virtue of— (a) a notice under this section or an agreement under subsection (4)(b) following such a notice, (b) a determination under section 14, or (c) an agreement in writing between the landlord and the tenant varying the rent, following a determination by the appropriate tribunal under section 14, where the agreed rent is lower than the rent that would be payable under section 14ZA or 14ZB as a result of the determination"
+  },
+  {
+   "requirement": "Any provision relating to an assured tenancy to which section 13 applies is void to the extent that it provides that the rent must or may be higher than the previous period other than through a notice, determination, or agreement permitted by subsection (4A).",
+   "quote": "any provision relating to an assured tenancy to which this section applies is of no effect so far as it provides that the rent for a particular period of the tenancy must or may be greater than the rent for the previous period otherwise than by virtue of a notice, determination or agreement mentioned in this subsection"
+  },
+  {
+   "requirement": "Except as restricted by subsection (4A), nothing in section 13 or sections 14 to 14ZB limits the right of the landlord and the tenant under a qualifying assured tenancy to vary any tenancy term by agreement.",
+   "quote": "Except as provided by subsection (4A), nothing in this section (or in sections 14 to 14ZB) limits any right of the landlord and the tenant under an assured tenancy to which this section applies to vary any term of the tenancy by agreement"
+  },
+  {
+   "requirement": "A relevant low-cost tenancy is defined as an assured tenancy of social housing under Part 2 of the Housing and Regeneration Act 2008 where the landlord is a private registered provider of social housing, or any other assured tenancy specified in regulations made by the Secretary of State.",
+   "quote": "In this section “relevant low-cost tenancy” means— (a) an assured tenancy of social housing, within the meaning of Part 2 of the Housing and Regeneration Act 2008, where the landlord is a private registered provider of social housing, and (b) any other assured tenancy of a description specified in regulations made by the Secretary of State"
+  },
+  {
+   "requirement": "Regulations made by the Secretary of State specifying descriptions of assured tenancies under subsection (4C)(b) may make different provision for different purposes and must be made by statutory instrument.",
+   "quote": "Regulations under subsection (4C)(b)— (a) may make different provision for different purposes; (b) are to be made by statutory instrument"
+  },
+  {
+   "requirement": "A statutory instrument containing regulations under subsection (4C)(b) is subject to annulment pursuant to a resolution of either House of Parliament.",
+   "quote": "A statutory instrument containing regulations under subsection (4C)(b) is subject to annulment in pursuance of a resolution of either House of Parliament"
+  },
+  {
+   "requirement": "Nothing in section 13 or section 14 affects the right of the landlord and tenant under an assured tenancy to vary any term of the tenancy, including rent, by agreement.",
+   "quote": "Nothing in this section (or in section 14 below) affects the right of the landlord and the tenant under an assured tenancy to vary by agreement any term of the tenancy (including a term relating to rent)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum period following service of the notice before proposed rent can take effect",
+   "value": "two months",
+   "quote": "the minimum period two months after the date of the service of the notice"
+  },
+  {
+   "what": "Earliest time after the first period began for proposed rent to take effect for non-agricultural, non-statutory periodic tenancies",
+   "value": "52 weeks",
+   "quote": "on the date that falls 52 weeks after the date on which the first period of the tenancy began"
+  },
+  {
+   "what": "Minimum notice period for a yearly tenancy",
+   "value": "six months",
+   "quote": "in the case of a yearly tenancy, six months"
+  },
+  {
+   "what": "Minimum notice period where the tenancy period is less than a month",
+   "value": "one month",
+   "quote": "in the case of a tenancy where the period is less than a month, one month"
+  },
+  {
+   "what": "Period after increased rent took effect used to determine the appropriate date under subsection (3B)",
+   "value": "53 weeks",
+   "quote": "the date that falls 53 weeks after the date on which the increased rent took effect"
+  },
+  {
+   "what": "Period after increased rent took effect used to determine the appropriate date in standard cases",
+   "value": "52 weeks",
+   "quote": "the date that falls 52 weeks after the date on which the increased rent took effect"
+  },
+  {
+   "what": "Lead time before the anniversary of the first increase for the start of the fifty-third week under subsection (3B)",
+   "value": "six days",
+   "quote": "begins more than six days before the anniversary of the date on which the first such increase took effect"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 22,
+  "elements_verified": 22,
+  "thresholds_proposed": 12,
+  "thresholds_verified": 7
+ }
+}

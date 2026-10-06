@@ -1,0 +1,92 @@
+{
+ "key": "uk/ukpga/2007/3/s35@current",
+ "section": "uk/ukpga/2007/3/s35",
+ "version": "current",
+ "source_sha256": "ccc69f1be00fb9f00100db610ccab13d6fad70a517222120d206bced2cfb0ca3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual who makes a claim is entitled to a personal allowance of £12,570 for a tax year if that individual meets the requirements of section 56 (residence etc).",
+    "quote": "An individual who makes a claim is entitled to a personal allowance of £12,570 for a tax year if the individual meets the requirements of section 56"
+   },
+   {
+    "requirement": "An individual whose adjusted net income exceeds £100,000 has their personal allowance reduced by one-half of the excess over £100,000.",
+    "quote": "For an individual whose adjusted net income exceeds £100,000, the allowance under subsection (1) is reduced by one-half of the excess."
+   },
+   {
+    "requirement": "An allowance that remains after the reduction for adjusted net income exceeding £100,000 must be rounded up to the nearest amount which is a multiple of £1 if it would otherwise not be a multiple of £1.",
+    "quote": "If the amount of any allowance that remains after the operation of subsection (2) would otherwise not be a multiple of £1, it is to be rounded up to the nearest amount which is a multiple of £1."
+   },
+   {
+    "requirement": "The definition and meaning of “adjusted net income” is provided in section 58.",
+    "quote": "For the meaning of “adjusted net income” see section 58."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "personal allowance amount for a tax year",
+    "value": "£12,570",
+    "quote": "personal allowance of £12,570 for a tax year"
+   },
+   {
+    "what": "adjusted net income threshold above which the personal allowance is reduced",
+    "value": "£100,000",
+    "quote": "adjusted net income exceeds £100,000"
+   },
+   {
+    "what": "fraction of the excess adjusted net income by which the personal allowance is reduced",
+    "value": "one-half",
+    "quote": "reduced by one-half of the excess"
+   },
+   {
+    "what": "monetary multiple to which the remaining allowance must be rounded up if not already an exact multiple",
+    "value": "£1",
+    "quote": "nearest amount which is a multiple of £1"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An individual who makes a claim is entitled to a personal allowance of £12,570 for a tax year if that individual meets the requirements of section 56 (residence etc).",
+   "quote": "An individual who makes a claim is entitled to a personal allowance of £12,570 for a tax year if the individual meets the requirements of section 56"
+  },
+  {
+   "requirement": "An individual whose adjusted net income exceeds £100,000 has their personal allowance reduced by one-half of the excess over £100,000.",
+   "quote": "For an individual whose adjusted net income exceeds £100,000, the allowance under subsection (1) is reduced by one-half of the excess."
+  },
+  {
+   "requirement": "An allowance that remains after the reduction for adjusted net income exceeding £100,000 must be rounded up to the nearest amount which is a multiple of £1 if it would otherwise not be a multiple of £1.",
+   "quote": "If the amount of any allowance that remains after the operation of subsection (2) would otherwise not be a multiple of £1, it is to be rounded up to the nearest amount which is a multiple of £1."
+  },
+  {
+   "requirement": "The definition and meaning of “adjusted net income” is provided in section 58.",
+   "quote": "For the meaning of “adjusted net income” see section 58."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "personal allowance amount for a tax year",
+   "value": "£12,570",
+   "quote": "personal allowance of £12,570 for a tax year"
+  },
+  {
+   "what": "adjusted net income threshold above which the personal allowance is reduced",
+   "value": "£100,000",
+   "quote": "adjusted net income exceeds £100,000"
+  },
+  {
+   "what": "monetary multiple to which the remaining allowance must be rounded up if not already an exact multiple",
+   "value": "£1",
+   "quote": "nearest amount which is a multiple of £1"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 3
+ }
+}

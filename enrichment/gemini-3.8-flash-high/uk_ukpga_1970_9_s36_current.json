@@ -1,0 +1,130 @@
+{
+ "key": "uk/ukpga/1970/9/s36@current",
+ "section": "uk/ukpga/1970/9/s36",
+ "version": "current",
+ "source_sha256": "4fcfa58ddbcf8fee88c6a09f25dd75516ed588b4d90ca0a0bb3414185bf35710",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax brought about carelessly by that person may be made at any time up to 6 years after the end of the relevant year of assessment, subject to subsection (1A) and any other provision of the Taxes Acts permitting a longer period.",
+    "quote": "may be made at any time not more than 6 years after the end of the year of assessment to which it relates"
+   },
+   {
+    "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax brought about deliberately by that person may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+    "quote": "brought about deliberately by the person"
+   },
+   {
+    "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax attributable to a failure by that person to comply with an obligation under section 7 may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+    "quote": "attributable to a failure by the person to comply with an obligation under section 7"
+   },
+   {
+    "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax attributable to arrangements where that person failed to comply with an obligation under section 309, 310 or 313 of the Finance Act 2004 may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+    "quote": "attributable to arrangements in respect of which the person has failed to comply with an obligation under section 309, 310 or 313 of the Finance Act 2004"
+   },
+   {
+    "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax attributable to arrangements expected to give rise to a tax advantage where that person failed to notify the Commissioners for Her Majesty's Revenue and Customs under section 253 of the Finance Act 2014 may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+    "quote": "attributable to arrangements which were expected to give rise to a tax advantage in respect of which the person was under an obligation to notify the Commissioners for Her Majesty's Revenue and Customs under section 253 of the Finance Act 2014"
+   },
+   {
+    "requirement": "References in subsections (1) and (1A) to a loss brought about by the person who is subject to an assessment include any loss brought about by another person acting on that person's behalf.",
+    "quote": "references to a loss brought about by the person who is the subject of the assessment include a loss brought about by another person acting on behalf of that person"
+   },
+   {
+    "requirement": "Where the person in default carried on a trade, profession or business with one or more other persons at any time during the assessment period, an assessment regarding the profits or gains of that trade, profession or business in a case mentioned in subsection (1A) or (1B) may be made on the person in default, on that person's partner, or on any of that person's partners.",
+    "quote": "an assessment in respect of the profits or gains of the trade, profession or business in a case mentioned in subsection (1A) or (1B) may be made not only on the person in default but also on his partner or any of his partners"
+   },
+   {
+    "requirement": "If the person assessed so requires, effect must be given in determining the tax charged for any chargeable period to any relief or allowance to which that person would have been entitled on a timely claim or application under the Taxes Acts.",
+    "quote": "effect shall be given to any relief or allowance to which he would have been entitled for that chargeable period on a claim or application made within the time allowed by the Taxes Acts"
+   },
+   {
+    "requirement": "For the purposes of relief or allowances under subsection (3), a claim or application does not include an election under any of sections 47 to 49 of the Income Tax Act 2007.",
+    "quote": "“claim or application” does not include an election under ... any of sections 47 to 49 of ITA 2007"
+   },
+   {
+    "requirement": "Any act or omission mentioned in section 98B on the part of a grouping or member of a grouping is deemed to be the act or omission of each member of that grouping for the purposes of subsections (1) and (1A).",
+    "quote": "shall be deemed for the purposes of subsections (1) and (1A) above to be the act or omission of each member of the grouping"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time limit after the end of the year of assessment for making an assessment in a case involving careless loss of tax",
+    "value": "6 years",
+    "quote": "not more than 6 years after the end of the year of assessment to which it relates"
+   },
+   {
+    "what": "Time limit after the end of the year of assessment for making an assessment in cases falling within subsection (1A)",
+    "value": "20 years",
+    "quote": "not more than 20 years after the end of the year of assessment to which it relates"
+   },
+   {
+    "what": "Minimum number of other persons with whom the person in default carried on a trade, profession or business",
+    "value": "one or more",
+    "quote": "carried on a trade, profession or business with one or more other persons"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax brought about carelessly by that person may be made at any time up to 6 years after the end of the relevant year of assessment, subject to subsection (1A) and any other provision of the Taxes Acts permitting a longer period.",
+   "quote": "may be made at any time not more than 6 years after the end of the year of assessment to which it relates"
+  },
+  {
+   "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax brought about deliberately by that person may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+   "quote": "brought about deliberately by the person"
+  },
+  {
+   "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax attributable to a failure by that person to comply with an obligation under section 7 may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+   "quote": "attributable to a failure by the person to comply with an obligation under section 7"
+  },
+  {
+   "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax attributable to arrangements where that person failed to comply with an obligation under section 309, 310 or 313 of the Finance Act 2004 may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+   "quote": "attributable to arrangements in respect of which the person has failed to comply with an obligation under section 309, 310 or 313 of the Finance Act 2004"
+  },
+  {
+   "requirement": "An assessment on a person in a case involving a loss of income tax or capital gains tax attributable to arrangements expected to give rise to a tax advantage where that person failed to notify the Commissioners for Her Majesty's Revenue and Customs under section 253 of the Finance Act 2014 may be made at any time up to 20 years after the end of the relevant year of assessment, subject to any Taxes Acts provision allowing a longer period.",
+   "quote": "attributable to arrangements which were expected to give rise to a tax advantage in respect of which the person was under an obligation to notify the Commissioners for Her Majesty's Revenue and Customs under section 253 of the Finance Act 2014"
+  },
+  {
+   "requirement": "References in subsections (1) and (1A) to a loss brought about by the person who is subject to an assessment include any loss brought about by another person acting on that person's behalf.",
+   "quote": "references to a loss brought about by the person who is the subject of the assessment include a loss brought about by another person acting on behalf of that person"
+  },
+  {
+   "requirement": "Where the person in default carried on a trade, profession or business with one or more other persons at any time during the assessment period, an assessment regarding the profits or gains of that trade, profession or business in a case mentioned in subsection (1A) or (1B) may be made on the person in default, on that person's partner, or on any of that person's partners.",
+   "quote": "an assessment in respect of the profits or gains of the trade, profession or business in a case mentioned in subsection (1A) or (1B) may be made not only on the person in default but also on his partner or any of his partners"
+  },
+  {
+   "requirement": "If the person assessed so requires, effect must be given in determining the tax charged for any chargeable period to any relief or allowance to which that person would have been entitled on a timely claim or application under the Taxes Acts.",
+   "quote": "effect shall be given to any relief or allowance to which he would have been entitled for that chargeable period on a claim or application made within the time allowed by the Taxes Acts"
+  },
+  {
+   "requirement": "For the purposes of relief or allowances under subsection (3), a claim or application does not include an election under any of sections 47 to 49 of the Income Tax Act 2007.",
+   "quote": "“claim or application” does not include an election under ... any of sections 47 to 49 of ITA 2007"
+  },
+  {
+   "requirement": "Any act or omission mentioned in section 98B on the part of a grouping or member of a grouping is deemed to be the act or omission of each member of that grouping for the purposes of subsections (1) and (1A).",
+   "quote": "shall be deemed for the purposes of subsections (1) and (1A) above to be the act or omission of each member of the grouping"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Time limit after the end of the year of assessment for making an assessment in a case involving careless loss of tax",
+   "value": "6 years",
+   "quote": "not more than 6 years after the end of the year of assessment to which it relates"
+  },
+  {
+   "what": "Time limit after the end of the year of assessment for making an assessment in cases falling within subsection (1A)",
+   "value": "20 years",
+   "quote": "not more than 20 years after the end of the year of assessment to which it relates"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

@@ -29,3 +29,13 @@ data/*
 
 # Raw run output (summaries are committed under docs/)
 results/raw/
+
+# Point-in-time CLML versions for the anchor batteries (official documents, never committed)
+anchors_xml/
+
+# Local LLM router key (never committed)
+.router_key
+
+# Run logs and stderr captures
+results/*.log
+results/*.err

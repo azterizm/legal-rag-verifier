@@ -1,0 +1,227 @@
+{
+ "key": "uk/ukpga/1974/53/s1@current",
+ "section": "uk/ukpga/1974/53/s1",
+ "version": "current",
+ "source_sha256": "772f1eced3c974d2ffe878b9801e61f5d63347475e805180a433ca35c74f4ace",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual convicted of an offence is treated as a rehabilitated person and has that conviction treated as spent after the applicable rehabilitation period ends (or after commencement of the Act if the period ended prior), provided the person was not sentenced to an excluded sentence for that conviction or for a subsequent conviction during the rehabilitation period, subject to specified statutory exceptions.",
+    "quote": "that individual shall for the purposes of this Act be treated as a rehabilitated person in respect of the first-mentioned conviction and that conviction shall for those purposes be treated as spent"
+   },
+   {
+    "requirement": "After the expiry of the applicable disclosure period (including any statutory extension), an individual is treated as a protected person in respect of the conviction and the conviction is treated as spent.",
+    "quote": "the individual is, for the purposes of this Act, to be treated as a protected person in respect of the conviction, and (b) the conviction is, for the purposes of this Act, to be treated as spent"
+   },
+   {
+    "requirement": "Where the applicable disclosure period expired before the commencement of the Act, the individual and the conviction are treated as a protected person and as spent from the date of commencement of the Act.",
+    "quote": "where the disclosure period so applicable expired before commencement of this Act, the individual and conviction are to be treated as mentioned in subsection (1A) from the date of commencement of this Act"
+   },
+   {
+    "requirement": "The rules governing treatment as a rehabilitated person, a protected person, and spent convictions are subject to subsections (2), (5), (6), (7), and (8).",
+    "quote": "Subsections (1) to (1B) are subject to subsections (2), (5) and (6) and (5) to (8)."
+   },
+   {
+    "requirement": "A person cannot become a rehabilitated protected person in respect of a conviction unless that person has served, undergone, or complied with every sentence imposed in respect of that conviction, subject to specific statutory non-compliance exceptions.",
+    "quote": "A person shall not become a rehabilitated protected person for the purposes of this Act in respect of a conviction unless he has served or otherwise undergone or complied with any sentence imposed on him in respect of that conviction"
+   },
+   {
+    "requirement": "A person is not prevented from becoming a rehabilitated protected person by failing to pay a fine or other sum adjudged or imposed on conviction, or by breaching a condition of a recognizance or bond of caution to keep the peace or be of good behaviour.",
+    "quote": "failure to pay a fine or other sum adjudged to be paid by or imposed on a conviction, or breach of a condition of a recognizance or of a bond of caution to keep the peace or be of good behaviour"
+   },
+   {
+    "requirement": "A person is not prevented from becoming a rehabilitated protected person by breaching any condition or requirement of a sentence that renders them liable to be dealt with for the original offence, or for a suspended prison sentence, regardless of whether they are actually so dealt with.",
+    "quote": "breach of any condition or requirement applicable in relation to a sentence which renders the person to whom it applies liable to be dealt with for the offence for which the sentence was imposed"
+   },
+   {
+    "requirement": "A person is not prevented from becoming a rehabilitated protected person by failing to comply with any requirement of a suspended sentence supervision order.",
+    "quote": "failure to comply with any requirement of a suspended sentence supervision order"
+   },
+   {
+    "requirement": "A person sentenced to imprisonment with an order under section 47(1) of the Criminal Law Act 1977 is treated as having served the sentence as soon as that person completes service of the prison term required by that order.",
+    "quote": "treated for the purposes of subsection (2) above as having served the sentence as soon as he completes service of so much of the sentence as was by that order required to be served in prison"
+   },
+   {
+    "requirement": "The exception for failure to pay a fine or other sum does not apply to an amount payable under a confiscation order made under Part 2 or 3 of the Proceeds of Crime Act 2002.",
+    "quote": "does not include a reference to an amount payable under a confiscation order made under Part 2 or 3 of the Proceeds of Crime Act 2002"
+   },
+   {
+    "requirement": "A sentence includes any order made by a court dealing with an individual convicted of an offence, except for specifically excluded surcharges, directions, orders in default, suspended sentence orders, and criminal courts charges.",
+    "quote": "“sentence” includes any order made by a court in dealing with a person in respect of his conviction of any offence or offences"
+   },
+   {
+    "requirement": "A surcharge under section 161A of the Criminal Justice Act 2003 or section 42 of the Sentencing Code is excluded from the definition of sentence.",
+    "quote": "a surcharge imposed under section 161A of the Criminal Justice Act 2003 or section 42 of the Sentencing Code"
+   },
+   {
+    "requirement": "A hospital direction under section 59A of the Criminal Procedure (Scotland) Act 1995 is excluded from the definition of sentence.",
+    "quote": "a hospital direction under section 59A of the Criminal Procedure (Scotland) Act 1995"
+   },
+   {
+    "requirement": "A victim surcharge under section 253F of the Criminal Procedure (Scotland) Act 1995 is excluded from the definition of sentence.",
+    "quote": "a victim surcharge imposed under section 253F of the Criminal Procedure (Scotland) Act 1995"
+   },
+   {
+    "requirement": "An order for committal or any order made in default of payment of a fine or other sum, or for want of sufficient distress, is excluded from the definition of sentence.",
+    "quote": "an order for committal or any other order made in default of payment of any fine or other sum adjudged to be paid by or imposed on a conviction, or for want of sufficient distress to satisfy any such fine or other sum"
+   },
+   {
+    "requirement": "An order dealing with an individual in respect of a suspended sentence of imprisonment is excluded from the definition of sentence.",
+    "quote": "an order dealing with a person in respect of a suspended sentence of imprisonment"
+   },
+   {
+    "requirement": "An order under section 21A of the Prosecution of Offences Act 1985 or section 46 of the Sentencing Code (criminal courts charge) is excluded from the definition of sentence.",
+    "quote": "an order under section 21A of the Prosecution of Offences Act 1985 or section 46 of the Sentencing Code (criminal courts charge)"
+   },
+   {
+    "requirement": "The phrase 'want of sufficient distress' includes situations where Schedule 12 procedure under the Tribunals, Courts and Enforcement Act 2007 is exercisable but, after an attempted exercise, the person's goods appear insufficient to pay the outstanding amount.",
+    "quote": "it appears, after an attempt has been made to exercise the power, that the person's goods are insufficient to pay the amount outstanding"
+   },
+   {
+    "requirement": "References to a conviction include a conviction by or before a court outside England and Wales Scotland.",
+    "quote": "conviction by or before a court outside England and Wales Scotland"
+   },
+   {
+    "requirement": "References to a conviction include any criminal proceeding finding that a person committed an offence or did the act or omission charged, unless the finding is linked with insanity or a finding of non-criminal responsibility under section 51A of the Criminal Procedure (Scotland) Act 1995.",
+    "quote": "any finding (other than a finding linked with a finding of insanity or, as the case may be, a finding that a person is not criminally responsible under section 51A of the Criminal Procedure (Scotland) Act 1995 (c.46)) in any criminal proceedings that a person has committed an offence or done the act or made the omission charged"
+   },
+   {
+    "requirement": "A conviction resulting in an absolute or conditional discharge is treated as a conviction under the Act, and the individual may become a rehabilitated protected person and have the conviction treated as spent.",
+    "quote": "a conviction in respect of which an order is made discharging the person concerned absolutely or conditionally shall be treated as a conviction for the purposes of this Act"
+   },
+   {
+    "requirement": "An excluded sentence under this Act is any sentence that is listed in section 5(1).",
+    "quote": "an “excluded sentence” is a sentence listed in section 5(1)"
+   },
+   {
+    "requirement": "The Act does not apply to any disregarded conviction or caution within Chapter 4 of Part 5 of the Protection of Freedoms Act 2012, and statutory references to a conviction or caution exclude them.",
+    "quote": "This Act does not apply to any disregarded conviction or caution within the meaning of Chapter 4 of Part 5 of the Protection of Freedoms Act 2012."
+   },
+   {
+    "requirement": "The Act does not apply to any conviction for an offence committed when the individual was under 12 years of age, and statutory references to a conviction exclude any such conviction.",
+    "quote": "This Act does not apply to any conviction of an offence committed when the individual was under 12 years of age."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum age of an individual at the time of committing an offence for which convictions are excluded from the application of the Act",
+    "value": "12 years of age",
+    "quote": "under 12 years of age"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An individual convicted of an offence is treated as a rehabilitated person and has that conviction treated as spent after the applicable rehabilitation period ends (or after commencement of the Act if the period ended prior), provided the person was not sentenced to an excluded sentence for that conviction or for a subsequent conviction during the rehabilitation period, subject to specified statutory exceptions.",
+   "quote": "that individual shall for the purposes of this Act be treated as a rehabilitated person in respect of the first-mentioned conviction and that conviction shall for those purposes be treated as spent"
+  },
+  {
+   "requirement": "After the expiry of the applicable disclosure period (including any statutory extension), an individual is treated as a protected person in respect of the conviction and the conviction is treated as spent.",
+   "quote": "the individual is, for the purposes of this Act, to be treated as a protected person in respect of the conviction, and (b) the conviction is, for the purposes of this Act, to be treated as spent"
+  },
+  {
+   "requirement": "Where the applicable disclosure period expired before the commencement of the Act, the individual and the conviction are treated as a protected person and as spent from the date of commencement of the Act.",
+   "quote": "where the disclosure period so applicable expired before commencement of this Act, the individual and conviction are to be treated as mentioned in subsection (1A) from the date of commencement of this Act"
+  },
+  {
+   "requirement": "The rules governing treatment as a rehabilitated person, a protected person, and spent convictions are subject to subsections (2), (5), (6), (7), and (8).",
+   "quote": "Subsections (1) to (1B) are subject to subsections (2), (5) and (6) and (5) to (8)."
+  },
+  {
+   "requirement": "A person cannot become a rehabilitated protected person in respect of a conviction unless that person has served, undergone, or complied with every sentence imposed in respect of that conviction, subject to specific statutory non-compliance exceptions.",
+   "quote": "A person shall not become a rehabilitated protected person for the purposes of this Act in respect of a conviction unless he has served or otherwise undergone or complied with any sentence imposed on him in respect of that conviction"
+  },
+  {
+   "requirement": "A person is not prevented from becoming a rehabilitated protected person by failing to pay a fine or other sum adjudged or imposed on conviction, or by breaching a condition of a recognizance or bond of caution to keep the peace or be of good behaviour.",
+   "quote": "failure to pay a fine or other sum adjudged to be paid by or imposed on a conviction, or breach of a condition of a recognizance or of a bond of caution to keep the peace or be of good behaviour"
+  },
+  {
+   "requirement": "A person is not prevented from becoming a rehabilitated protected person by breaching any condition or requirement of a sentence that renders them liable to be dealt with for the original offence, or for a suspended prison sentence, regardless of whether they are actually so dealt with.",
+   "quote": "breach of any condition or requirement applicable in relation to a sentence which renders the person to whom it applies liable to be dealt with for the offence for which the sentence was imposed"
+  },
+  {
+   "requirement": "A person is not prevented from becoming a rehabilitated protected person by failing to comply with any requirement of a suspended sentence supervision order.",
+   "quote": "failure to comply with any requirement of a suspended sentence supervision order"
+  },
+  {
+   "requirement": "A person sentenced to imprisonment with an order under section 47(1) of the Criminal Law Act 1977 is treated as having served the sentence as soon as that person completes service of the prison term required by that order.",
+   "quote": "treated for the purposes of subsection (2) above as having served the sentence as soon as he completes service of so much of the sentence as was by that order required to be served in prison"
+  },
+  {
+   "requirement": "The exception for failure to pay a fine or other sum does not apply to an amount payable under a confiscation order made under Part 2 or 3 of the Proceeds of Crime Act 2002.",
+   "quote": "does not include a reference to an amount payable under a confiscation order made under Part 2 or 3 of the Proceeds of Crime Act 2002"
+  },
+  {
+   "requirement": "A sentence includes any order made by a court dealing with an individual convicted of an offence, except for specifically excluded surcharges, directions, orders in default, suspended sentence orders, and criminal courts charges.",
+   "quote": "“sentence” includes any order made by a court in dealing with a person in respect of his conviction of any offence or offences"
+  },
+  {
+   "requirement": "A surcharge under section 161A of the Criminal Justice Act 2003 or section 42 of the Sentencing Code is excluded from the definition of sentence.",
+   "quote": "a surcharge imposed under section 161A of the Criminal Justice Act 2003 or section 42 of the Sentencing Code"
+  },
+  {
+   "requirement": "A hospital direction under section 59A of the Criminal Procedure (Scotland) Act 1995 is excluded from the definition of sentence.",
+   "quote": "a hospital direction under section 59A of the Criminal Procedure (Scotland) Act 1995"
+  },
+  {
+   "requirement": "A victim surcharge under section 253F of the Criminal Procedure (Scotland) Act 1995 is excluded from the definition of sentence.",
+   "quote": "a victim surcharge imposed under section 253F of the Criminal Procedure (Scotland) Act 1995"
+  },
+  {
+   "requirement": "An order for committal or any order made in default of payment of a fine or other sum, or for want of sufficient distress, is excluded from the definition of sentence.",
+   "quote": "an order for committal or any other order made in default of payment of any fine or other sum adjudged to be paid by or imposed on a conviction, or for want of sufficient distress to satisfy any such fine or other sum"
+  },
+  {
+   "requirement": "An order dealing with an individual in respect of a suspended sentence of imprisonment is excluded from the definition of sentence.",
+   "quote": "an order dealing with a person in respect of a suspended sentence of imprisonment"
+  },
+  {
+   "requirement": "An order under section 21A of the Prosecution of Offences Act 1985 or section 46 of the Sentencing Code (criminal courts charge) is excluded from the definition of sentence.",
+   "quote": "an order under section 21A of the Prosecution of Offences Act 1985 or section 46 of the Sentencing Code (criminal courts charge)"
+  },
+  {
+   "requirement": "The phrase 'want of sufficient distress' includes situations where Schedule 12 procedure under the Tribunals, Courts and Enforcement Act 2007 is exercisable but, after an attempted exercise, the person's goods appear insufficient to pay the outstanding amount.",
+   "quote": "it appears, after an attempt has been made to exercise the power, that the person's goods are insufficient to pay the amount outstanding"
+  },
+  {
+   "requirement": "References to a conviction include a conviction by or before a court outside England and Wales Scotland.",
+   "quote": "conviction by or before a court outside England and Wales Scotland"
+  },
+  {
+   "requirement": "References to a conviction include any criminal proceeding finding that a person committed an offence or did the act or omission charged, unless the finding is linked with insanity or a finding of non-criminal responsibility under section 51A of the Criminal Procedure (Scotland) Act 1995.",
+   "quote": "any finding (other than a finding linked with a finding of insanity or, as the case may be, a finding that a person is not criminally responsible under section 51A of the Criminal Procedure (Scotland) Act 1995 (c.46)) in any criminal proceedings that a person has committed an offence or done the act or made the omission charged"
+  },
+  {
+   "requirement": "A conviction resulting in an absolute or conditional discharge is treated as a conviction under the Act, and the individual may become a rehabilitated protected person and have the conviction treated as spent.",
+   "quote": "a conviction in respect of which an order is made discharging the person concerned absolutely or conditionally shall be treated as a conviction for the purposes of this Act"
+  },
+  {
+   "requirement": "An excluded sentence under this Act is any sentence that is listed in section 5(1).",
+   "quote": "an “excluded sentence” is a sentence listed in section 5(1)"
+  },
+  {
+   "requirement": "The Act does not apply to any disregarded conviction or caution within Chapter 4 of Part 5 of the Protection of Freedoms Act 2012, and statutory references to a conviction or caution exclude them.",
+   "quote": "This Act does not apply to any disregarded conviction or caution within the meaning of Chapter 4 of Part 5 of the Protection of Freedoms Act 2012."
+  },
+  {
+   "requirement": "The Act does not apply to any conviction for an offence committed when the individual was under 12 years of age, and statutory references to a conviction exclude any such conviction.",
+   "quote": "This Act does not apply to any conviction of an offence committed when the individual was under 12 years of age."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum age of an individual at the time of committing an offence for which convictions are excluded from the application of the Act",
+   "value": "12 years of age",
+   "quote": "under 12 years of age"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 24,
+  "elements_verified": 24,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

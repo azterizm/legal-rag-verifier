@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/Will4and1Vict/7/26/s18@current",
+ "section": "uk/ukpga/Will4and1Vict/7/26/s18",
+ "version": "current",
+ "source_sha256": "1adbe58fb5df9a258c65a68f5bd44ace17dd9afddd1902ecf0498ecffa3fd71d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the statutory exceptions in subsections (2) to (5), a testator's will is revoked by the marriage of the testator.",
+    "quote": "a will shall be revoked by the testator’s marriage."
+   },
+   {
+    "requirement": "A disposition in a testator's will made in exercise of a power of appointment takes effect despite the testator's subsequent marriage, unless the appointed property would pass to the testator's personal representatives if the appointment defaulted.",
+    "quote": "A disposition in a will in exercise of a power of appointment shall take effect notwithstanding the testator’s subsequent marriage unless the property so appointed would in default of appointment pass to his personal representatives."
+   },
+   {
+    "requirement": "A testator's will is not revoked by the testator's marriage to a particular person where it appears from the will that, when the will was made, the testator was expecting to be married to that person and intended that the will would not be revoked by the marriage.",
+    "quote": "Where it appears from a will that at the time it was made the testator was expecting to be married to a particular person and that he intended that the will should not be revoked by the marriage, the will shall not be revoked by his marriage to that person."
+   },
+   {
+    "requirement": "Where it appears from a testator's will that, when the will was made, the testator was expecting to be married to a particular person and intended that a disposition in the will should not be revoked by marriage to that person, that particular disposition takes effect notwithstanding the marriage.",
+    "quote": "that disposition shall take effect notwithstanding the marriage;"
+   },
+   {
+    "requirement": "Where a disposition is preserved from revocation because the testator intended it not to be revoked by marriage to a contemplated person, any other disposition in the testator's will also takes effect unless the will indicates that the testator intended that other disposition to be revoked by the marriage.",
+    "quote": "any other disposition in the will shall take effect also, unless it appears from the will that the testator intended the disposition to be revoked by the marriage."
+   },
+   {
+    "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the conversion of a civil partnership into a marriage under section 9 of the Marriage (Same Sex Couples) Act 2013 and regulations made under that section.",
+    "quote": "the conversion of a civil partnership into a marriage under section 9 of the Marriage (Same Sex Couples) Act 2013 and regulations made under that section;"
+   },
+   {
+    "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the conversion of a civil partnership into a marriage under Part 3 of the Marriage and Civil Partnership (Northern Ireland) (No. 2) Regulations 2020.",
+    "quote": "the conversion of a civil partnership into a marriage under Part 3 of the Marriage and Civil Partnership (Northern Ireland) (No. 2) Regulations 2020;"
+   },
+   {
+    "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the conversion of a civil partnership into a marriage under Part 3 or 4 of the Marriage of Same Sex Couples (Conversion of Civil Partnership) Regulations 2014, provided that the civil partnership is a convertible Northern Ireland civil partnership as defined by regulation 2 of those Regulations.",
+    "quote": "the conversion of a civil partnership into a marriage under Part 3 or 4 of the Marriage of Same Sex Couples (Conversion of Civil Partnership) Regulations 2014 where the civil partnership is a convertible Northern Ireland civil partnership as defined by regulation 2 of those Regulations;"
+   },
+   {
+    "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the changing of a civil partnership formed under Part 3 of the Civil Partnership Act 2004 into a marriage under the Marriage (Scotland) Act 1977, the Marriage and Civil Partnership (Scotland) Act 2014, or any order made under section 104 of the Scotland Act 1998 in consequence of the Marriage and Civil Partnership (Scotland) Act 2014.",
+    "quote": "the changing of a civil partnership formed under Part 3 of the Civil Partnership Act 2004 into a marriage under— (i) the Marriage (Scotland) Act 1977; (ii) the Marriage and Civil Partnership (Scotland) Act 2014; or (iii) any order made under section 104 of the Scotland Act 1998 in consequence of the Marriage and Civil Partnership (Scotland) Act 2014."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the statutory exceptions in subsections (2) to (5), a testator's will is revoked by the marriage of the testator.",
+   "quote": "a will shall be revoked by the testator’s marriage."
+  },
+  {
+   "requirement": "A disposition in a testator's will made in exercise of a power of appointment takes effect despite the testator's subsequent marriage, unless the appointed property would pass to the testator's personal representatives if the appointment defaulted.",
+   "quote": "A disposition in a will in exercise of a power of appointment shall take effect notwithstanding the testator’s subsequent marriage unless the property so appointed would in default of appointment pass to his personal representatives."
+  },
+  {
+   "requirement": "A testator's will is not revoked by the testator's marriage to a particular person where it appears from the will that, when the will was made, the testator was expecting to be married to that person and intended that the will would not be revoked by the marriage.",
+   "quote": "Where it appears from a will that at the time it was made the testator was expecting to be married to a particular person and that he intended that the will should not be revoked by the marriage, the will shall not be revoked by his marriage to that person."
+  },
+  {
+   "requirement": "Where it appears from a testator's will that, when the will was made, the testator was expecting to be married to a particular person and intended that a disposition in the will should not be revoked by marriage to that person, that particular disposition takes effect notwithstanding the marriage.",
+   "quote": "that disposition shall take effect notwithstanding the marriage;"
+  },
+  {
+   "requirement": "Where a disposition is preserved from revocation because the testator intended it not to be revoked by marriage to a contemplated person, any other disposition in the testator's will also takes effect unless the will indicates that the testator intended that other disposition to be revoked by the marriage.",
+   "quote": "any other disposition in the will shall take effect also, unless it appears from the will that the testator intended the disposition to be revoked by the marriage."
+  },
+  {
+   "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the conversion of a civil partnership into a marriage under section 9 of the Marriage (Same Sex Couples) Act 2013 and regulations made under that section.",
+   "quote": "the conversion of a civil partnership into a marriage under section 9 of the Marriage (Same Sex Couples) Act 2013 and regulations made under that section;"
+  },
+  {
+   "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the conversion of a civil partnership into a marriage under Part 3 of the Marriage and Civil Partnership (Northern Ireland) (No. 2) Regulations 2020.",
+   "quote": "the conversion of a civil partnership into a marriage under Part 3 of the Marriage and Civil Partnership (Northern Ireland) (No. 2) Regulations 2020;"
+  },
+  {
+   "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the conversion of a civil partnership into a marriage under Part 3 or 4 of the Marriage of Same Sex Couples (Conversion of Civil Partnership) Regulations 2014, provided that the civil partnership is a convertible Northern Ireland civil partnership as defined by regulation 2 of those Regulations.",
+   "quote": "the conversion of a civil partnership into a marriage under Part 3 or 4 of the Marriage of Same Sex Couples (Conversion of Civil Partnership) Regulations 2014 where the civil partnership is a convertible Northern Ireland civil partnership as defined by regulation 2 of those Regulations;"
+  },
+  {
+   "requirement": "The rules revoking a will upon marriage do not apply where a marriage results from the changing of a civil partnership formed under Part 3 of the Civil Partnership Act 2004 into a marriage under the Marriage (Scotland) Act 1977, the Marriage and Civil Partnership (Scotland) Act 2014, or any order made under section 104 of the Scotland Act 1998 in consequence of the Marriage and Civil Partnership (Scotland) Act 2014.",
+   "quote": "the changing of a civil partnership formed under Part 3 of the Civil Partnership Act 2004 into a marriage under— (i) the Marriage (Scotland) Act 1977; (ii) the Marriage and Civil Partnership (Scotland) Act 2014; or (iii) any order made under section 104 of the Scotland Act 1998 in consequence of the Marriage and Civil Partnership (Scotland) Act 2014."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

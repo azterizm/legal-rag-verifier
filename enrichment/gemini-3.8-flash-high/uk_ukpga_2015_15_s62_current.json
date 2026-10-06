@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/2015/15/s62@current",
+ "section": "uk/ukpga/2015/15/s62",
+ "version": "current",
+ "source_sha256": "5e3a7e07e4f0135fbec2ab8dec7aa2a1c59ef70293e0fa4f833e18e1aea6b681",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An unfair term of a consumer contract is not binding on the consumer.",
+    "quote": "An unfair term of a consumer contract is not binding on the consumer."
+   },
+   {
+    "requirement": "An unfair consumer notice is not binding on the consumer.",
+    "quote": "An unfair consumer notice is not binding on the consumer."
+   },
+   {
+    "requirement": "A consumer is not prevented from relying on an unfair term or consumer notice if the consumer chooses to do so.",
+    "quote": "This does not prevent the consumer from relying on the term or notice if the consumer chooses to do so."
+   },
+   {
+    "requirement": "A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations under the contract to the detriment of the consumer.",
+    "quote": "A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations under the contract to the detriment of the consumer."
+   },
+   {
+    "requirement": "Whether a contract term is fair is to be determined by taking into account the nature of the subject matter of the contract.",
+    "quote": "taking into account the nature of the subject matter of the contract"
+   },
+   {
+    "requirement": "Whether a contract term is fair is to be determined by reference to all the circumstances existing when the term was agreed and to all of the other terms of the contract or of any other contract on which it depends.",
+    "quote": "by reference to all the circumstances existing when the term was agreed and to all of the other terms of the contract or of any other contract on which it depends."
+   },
+   {
+    "requirement": "A notice is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations to the detriment of the consumer.",
+    "quote": "A notice is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations to the detriment of the consumer."
+   },
+   {
+    "requirement": "Whether a notice is fair is to be determined by taking into account the nature of the subject matter of the notice.",
+    "quote": "taking into account the nature of the subject matter of the notice"
+   },
+   {
+    "requirement": "Whether a notice is fair is to be determined by reference to all the circumstances existing when the rights or obligations to which it relates arose and to the terms of any contract on which it depends.",
+    "quote": "by reference to all the circumstances existing when the rights or obligations to which it relates arose and to the terms of any contract on which it depends."
+   },
+   {
+    "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 31 concerning the exclusion of liability in goods contracts.",
+    "quote": "This section does not affect the operation of— (a) section 31 (exclusion of liability: goods contracts)"
+   },
+   {
+    "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 47 concerning the exclusion of liability in digital content contracts.",
+    "quote": "(b) section 47 (exclusion of liability: digital content contracts)"
+   },
+   {
+    "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 57 concerning the exclusion of liability in services contracts.",
+    "quote": "(c) section 57 (exclusion of liability: services contracts)"
+   },
+   {
+    "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 65 concerning the exclusion of negligence liability.",
+    "quote": "(d) section 65 (exclusion of negligence liability)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An unfair term of a consumer contract is not binding on the consumer.",
+   "quote": "An unfair term of a consumer contract is not binding on the consumer."
+  },
+  {
+   "requirement": "An unfair consumer notice is not binding on the consumer.",
+   "quote": "An unfair consumer notice is not binding on the consumer."
+  },
+  {
+   "requirement": "A consumer is not prevented from relying on an unfair term or consumer notice if the consumer chooses to do so.",
+   "quote": "This does not prevent the consumer from relying on the term or notice if the consumer chooses to do so."
+  },
+  {
+   "requirement": "A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations under the contract to the detriment of the consumer.",
+   "quote": "A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations under the contract to the detriment of the consumer."
+  },
+  {
+   "requirement": "Whether a contract term is fair is to be determined by taking into account the nature of the subject matter of the contract.",
+   "quote": "taking into account the nature of the subject matter of the contract"
+  },
+  {
+   "requirement": "Whether a contract term is fair is to be determined by reference to all the circumstances existing when the term was agreed and to all of the other terms of the contract or of any other contract on which it depends.",
+   "quote": "by reference to all the circumstances existing when the term was agreed and to all of the other terms of the contract or of any other contract on which it depends."
+  },
+  {
+   "requirement": "A notice is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations to the detriment of the consumer.",
+   "quote": "A notice is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations to the detriment of the consumer."
+  },
+  {
+   "requirement": "Whether a notice is fair is to be determined by taking into account the nature of the subject matter of the notice.",
+   "quote": "taking into account the nature of the subject matter of the notice"
+  },
+  {
+   "requirement": "Whether a notice is fair is to be determined by reference to all the circumstances existing when the rights or obligations to which it relates arose and to the terms of any contract on which it depends.",
+   "quote": "by reference to all the circumstances existing when the rights or obligations to which it relates arose and to the terms of any contract on which it depends."
+  },
+  {
+   "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 31 concerning the exclusion of liability in goods contracts.",
+   "quote": "This section does not affect the operation of— (a) section 31 (exclusion of liability: goods contracts)"
+  },
+  {
+   "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 47 concerning the exclusion of liability in digital content contracts.",
+   "quote": "(b) section 47 (exclusion of liability: digital content contracts)"
+  },
+  {
+   "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 57 concerning the exclusion of liability in services contracts.",
+   "quote": "(c) section 57 (exclusion of liability: services contracts)"
+  },
+  {
+   "requirement": "Section 62 of the Consumer Rights Act 2015 does not affect the operation of section 65 concerning the exclusion of negligence liability.",
+   "quote": "(d) section 65 (exclusion of negligence liability)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

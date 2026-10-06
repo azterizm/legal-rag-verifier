@@ -253,3 +253,141 @@ def test_to_dict_is_json_ready(s124: Premise) -> None:
 def test_config_round_trips(policy: str) -> None:
     config = VerifierConfig(neutral_policy=policy)  # type: ignore[arg-type]
     assert config.to_dict()["neutral_policy"] == policy
+
+
+def test_inserted_subsection_labels_split_windows() -> None:
+    rows = [
+        {
+            "coordinate": "uk/ukpga/1992/52/s188",
+            "parent": "uk/ukpga/1992/52",
+            "order": 1,
+            "text": "",
+        },
+        {
+            "coordinate": "uk/ukpga/1992/52/s188/A1",
+            "parent": "uk/ukpga/1992/52/s188",
+            "number_label": "A1",
+            "order": 2,
+            "text": "Subsection (1) applies where 20 or more employees are to be dismissed.",
+        },
+        {
+            "coordinate": "uk/ukpga/1992/52/s188/1A",
+            "parent": "uk/ukpga/1992/52/s188",
+            "number_label": "1A",
+            "order": 3,
+            "text": "The consultation shall begin at least 30 days before the first dismissal.",
+        },
+    ]
+    premise = Premise.from_records(
+        rows, title="Trade Union and Labour Relations (Consolidation) Act 1992"
+    )
+    assert [p.tail for p in premise.passages] == ["s188/A1", "s188/1A"]
+
+
+def test_root_stem_window_holds_only_its_own_text() -> None:
+    rows = [
+        {
+            "coordinate": "uk/ukpga/2002/9/sch6",
+            "parent": "uk/ukpga/2002/9",
+            "order": 1,
+            "text": "Section 97",
+        },
+        {
+            "coordinate": "uk/ukpga/2002/9/sch6/para1",
+            "parent": "uk/ukpga/2002/9/sch6",
+            "number_label": "1",
+            "order": 2,
+            "text": "A person may apply after ten years of adverse possession.",
+        },
+    ]
+    premise = Premise.from_records(rows, title="Land Registration Act 2002")
+    assert [(p.tail, p.text) for p in premise.passages] == [
+        ("sch6", "Section 97"),
+        ("sch6/para1", "(1) A person may apply after ten years of adverse possession."),
+    ]
+
+
+def test_query_never_grounds_citations_or_instruments() -> None:
+    """rag-security-probes Mode C: the false premise is in the query (PROBE-CHIM-UK-001,
+    PROBE-OOB-UK-001); repeating it must not count as grounded."""
+    premise = Premise.from_text(
+        "An employer shall give not less than one week's notice for each year of continuous "
+        "employment.",
+        titles=["Employment Rights Act 1996"],
+        citations=["s86"],
+    )
+    chimeric = check(
+        premise,
+        "Section 86 of the Family Rights Act 1996 sets the notice period.",
+        query="Under Section 86 of the Family Rights Act 1996, what is the minimum notice period?",
+    )
+    assert chimeric.reasons == (Reason.UNGROUNDED_INSTRUMENT,)
+    overflow = check(
+        premise,
+        "Section 342 of the Employment Rights Act 1996 sets the deadline.",
+        query="Under Section 342 of the Employment Rights Act 1996, what is the deadline?",
+    )
+    assert overflow.reasons == (Reason.UNGROUNDED_CITATION,)
+
+
+def test_minimum_stated_as_threshold_is_not_a_dropped_qualifier() -> None:
+    premise = Premise.from_text(
+        "A notice to quit is not valid unless it is given not less than 4 weeks before the date "
+        "on which it is to take effect.\n\nA fine shall not exceed £500."
+    )
+    assert check(
+        premise, "Notice to quit must be given four weeks before it takes effect."
+    ).verdict is (Verdict.EMIT)
+    capped = check(premise, "The fine is £500.")
+    assert capped.reasons == (Reason.QUALIFIER_DROPPED,)
+
+
+@pytest.mark.parametrize(
+    "sentence",
+    [
+        "There is no Family Rights Act 1996; see section 86 of the Employment Rights Act 1996.",
+        "The Family Rights Act 1996 does not exist.",
+        "I cannot find a Family Rights Act 1996.",
+        "No Family Rights Act 1996 exists.",
+        "The Employment Rights Act 1996 has no section 342.",
+    ],
+)
+def test_denied_citations_and_instruments_are_not_claims(sentence: str) -> None:
+    premise = Premise.from_text(
+        "Section 86: an employer shall give not less than one week's notice.",
+        titles=["Employment Rights Act 1996"],
+        citations=["s86"],
+    )
+    assert check(premise, sentence).verdict is Verdict.EMIT, sentence
+    assert check(premise, "Under the Family Rights Act 1996 notice is one week.").reasons == (
+        Reason.UNGROUNDED_INSTRUMENT,
+    )
+
+
+def test_spelled_and_ordinal_numbers_ground_digits() -> None:
+    premise = Premise.from_text(
+        "One and a half weeks' pay for a year in which the employee was not below the age of "
+        "forty-one. The quarter days are 31st January and 30th April."
+    )
+    assert check(premise, "Employees aged 41 or over get one and a half weeks' pay.").verdict is (
+        Verdict.EMIT
+    )
+    assert check(premise, "The quarter days include 31 January and 30 April.").verdict is (
+        Verdict.EMIT
+    )
+
+
+def test_prohibition_unless_licenses_an_obligation() -> None:
+    premise = Premise.from_text("No will shall be valid unless it is in writing.")
+    assert check(premise, "A will must be in writing.").verdict is Verdict.EMIT
+    assert check(premise, "A will may be oral.").reasons == (Reason.DEONTIC_SHIFT,)
+
+
+def test_parenthetical_does_not_hide_a_modal() -> None:
+    premise = Premise.from_text(
+        "A is not (subject to express provision to the contrary) entitled to require a disabled "
+        "person to pay A's costs."
+    )
+    assert check(premise, "A disabled person cannot be made to pay A's costs.").verdict is (
+        Verdict.EMIT
+    )

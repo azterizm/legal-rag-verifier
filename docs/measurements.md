@@ -1,0 +1,156 @@
+# Measurements
+
+Every figure here is **Measured** on the machine named, in-process (`time.perf_counter_ns`, device-synchronised).
+Local Mac runs are for development only; no Mac figure is published as a rate (plan decision 4). L4 figures come
+from M4.
+
+## M2 — NLI latency (2026-10-05)
+
+Machine: Apple M4 (macOS 26.6.2), Python 3.12.11, torch 2.14.1, transformers 5.18.0, fp32.
+Script: `scripts/nli_latency.py --n 200` (20 warm-up calls); raw output `results/nli_latency.json`.
+Premise: ERA 1996 s.124 as in force (6 subsection windows, 1 temporal fact, 2 joined cross-references
+= 9 candidates; padded length 152 tokens). Timing covers tokenisation, forward pass and softmax.
+
+| Model (revision) | Device | Pairs per sentence | p50 ms | p99 ms |
+|---|---|---|---:|---:|
+| nli-deberta-v3-small (`fa28048`) | MPS | 1 | 17.95 | 21.25 |
+| nli-deberta-v3-small | MPS | 9 | 134.72 | 145.98 |
+| nli-deberta-v3-small | MPS | `check_sentence` (claim check + 9 pairs) | 140.51 | 160.36 |
+| nli-deberta-v3-small | CPU | 1 | 19.58 | 20.14 |
+| nli-deberta-v3-small | CPU | 9 | 144.54 | 157.91 |
+| nli-deberta-v3-base (`6c749ce`) | MPS | 1 | 25.68 | 27.94 |
+| nli-deberta-v3-base | MPS | 9 | 271.82 | 298.76 |
+| nli-deberta-v3-base | MPS | `check_sentence` | 271.70 | 297.17 |
+| nli-deberta-v3-base | CPU | 1 | 39.06 | 41.47 |
+| nli-deberta-v3-base | CPU | 9 | 298.20 | 319.32 |
+
+Findings:
+- **Latency is linear in the number of pairs on the M4**, on MPS and CPU alike (small, MPS forward pass only:
+  1 pair 21 ms, 3 pairs 52 ms, 9 pairs 141 ms; tokenisation 0.8 ms; fp16 on MPS 131 ms for 9 pairs). The
+  encoder is compute-bound here, so batching does not hide the window count. On this machine the per-sentence
+  cost is set by how many premise candidates are scored, not by the 512-token limit.
+- One pair on MPS is within vault 04's 30 ms target for both models; a whole premise is not (135 ms small,
+  272 ms base). 04's target is stated for the L4 at batch 1; the per-sentence figure that matters is the full
+  premise batch, measured on the L4 in M4.
+- The claim check adds ~6 ms p50 on top of NLI here (`check_sentence` − 9 pairs, small/MPS). (The claim-only
+  path is measured in M2's battery run.)
+
+Facts found while measuring (no figures):
+- `cross-encoder/nli-deberta-v3-small` was **not** cached (config and tokenizer only, no weights) although the
+  plan said both were; its weights were downloaded from the public hub on 2026-10-05 (revision `fa28048`).
+- Both checkpoints label **0 = contradiction, 1 = entailment, 2 = neutral**. Vault 04 §2's code hard-codes
+  `entailment_idx = 2` (neutral) — a vault correction for later (⛔ with your go). This package reads
+  `id2label` from the model config.
+
+## M2 — Detector on the dev battery (2026-10-05)
+
+Battery: `batteries/verifier/dev.jsonl` (271 rows, sha256 `3f524a8809a8…`), labels reviewed. Dev split only; the held-out
+split has not been run. Script: `scripts/run_battery.py` (raw per-row verdicts in `results/raw/`, summaries in
+`results/dev-*.json`). Thresholds at the defaults (entail 0.70, contradict 0.40, align_ratio 0.5, connective).
+
+### First run, then claim-check fixes found on dev
+
+| Detector | GP false rollback | All-pass false rollback | Failure recall | Rollback precision |
+|---|---:|---:|---:|---:|
+| claim check only (first run) | 10.4 % | 13.5 % | 60.0 % | 80.4 % |
+| claim check only (after fixes) | **2.4 %** | 2.1 % | 56.9 % | **96.1 %** |
+| + small (after fixes) | 18.4 % | 20.6 % | 83.1 % | 78.8 % |
+| + base (after fixes) | 13.6 % | 16.3 % | 86.2 % | 83.0 % |
+
+Fixes (each with a regression test; held-out untouched): a statutory "shall not … unless" licenses "must";
+parentheticals no longer hide a modal; numbers written as words or ordinals in the premise ground digits;
+a figure is a dropped qualifier only if no occurrence's qualifier is kept, and "generally"/"normally" mark a
+condition; a figure from a dated version (fact window) is not a value swap; a citation or Act the sentence says
+does not exist is not a claim; "I cannot" is not a prohibition.
+
+### Per class (after fixes; rolled back / rows)
+
+| Class | claim only | + small | + base |
+|---|---:|---:|---:|
+| grounded_paraphrase (EMIT) | 3/125 | 23/125 | 17/125 |
+| connective (EMIT) | 0/10 | 0/10 | 0/10 |
+| premise_correction (EMIT) | 0/6 | 6/6 | 6/6 |
+| wrong_figure | 22/24 | 23/24 | 23/24 |
+| wrong_citation | 11/15 | 13/15 | 14/15 |
+| wrong_instrument | 16/16 | 16/16 | 16/16 |
+| modal_shift | 8/17 | 13/17 | 15/17 |
+| dropped_qualifier | 1/9 | 4/9 | 4/9 |
+| value_swap | 2/8 | 3/8 | 4/8 |
+| version_swap | 4/8 | 8/8 | 8/8 |
+| unsupported_plausible | 10/33 | 28/33 | 28/33 |
+
+### Threshold sweep (dev; 150 configurations per model)
+
+Entail ∈ {0.5…0.9}, contradict ∈ {0.3…0.7}, neutral ∈ {connective, strict}, align_ratio ∈ {0.3, 0.5, 0.7}.
+**The thresholds barely move the result:** base's probabilities are saturated near 0 or 1, so entail 0.7–0.8
+with any contradict threshold gives the same verdicts (GP 13.6 %, recall 86.2 %); `align_ratio` has no effect
+when the NLI head ranks windows; `strict` buys +3 pp recall for +4 pp all-pass false rollback. Base dominates
+small at every setting (better on both axes), at twice the latency (272 vs 135 ms per sentence on the M4).
+
+### Policy, not thresholds (offline, from the same raw results)
+
+| Detector | Policy for a sentence the NLI head finds neutral | GP FR | All-pass FR | Recall | Precision |
+|---|---|---:|---:|---:|---:|
+| base | roll back (current) | 13.6 % | 16.3 % | 86.2 % | 83.0 % |
+| base | **emit if a figure/citation claim is grounded (P2)** | **8.8 %** | 12.1 % | 83.1 % | 86.4 % |
+| base | always emit; only contradiction rolls back (P1) | 8.0 % | 11.3 % | 79.2 % | 86.6 % |
+| small | P2 | 12.8 % | 15.6 % | 82.3 % | 82.9 % |
+
+### What remains (not threshold-fixable)
+
+- **NLI on legal drafting:** base gives contradiction 1.00 to correct paraphrases of double-negative drafting
+  (Prescription Act 1832 s.2 "No claim … shall be defeated … by showing only …") and is neutral on
+  domain synonyms ("articles" vs "articles of association") and on a dated version's figure when the date sits
+  in a separate fact window.
+- **Premise corrections** ("There is no Family Rights Act 1996; …") pass the claim check now but every one is
+  rolled back by NLI (6/6): a denial is not entailed by the provision.
+- Derived figures (five weeks = one week × 5 years; "22 and 40" from "not below 22 / 41") remain ungrounded.
+
+## Accuracy plan — step 1 (deterministic) and step 2 (enrichment), dev only (2026-10-06)
+
+Each change behind a switch (`Verifier(features=…)`), measured alone, all-on and all-but-one
+(`scripts/ablate_battery.py`; `results/ablate-*.json`). Base NLI, default thresholds.
+
+| Switch | Effect with base | Kept |
+|---|---|---|
+| `clauses` (judge each clause; drop clauses that deny an Act/section) | all-pass FR 16.3 → 12.8 %, recall = | yes |
+| `p2` (NLI-neutral sentence emits if a figure/citation is grounded) | GP FR 13.6 → 8.8 %, recall −3 pp | yes |
+| `as_at` (dated figure must be the version in force; `VERSION_MISMATCH`) | +0.7 pp recall, no cost (claim-only: +3.1 pp) | yes |
+| `limb_check` (figure must sit in the list item the wording matches) | +0.7 pp recall, no cost | yes |
+| `scope` ("any/only/always…" must be in the source) | +3 pp recall, GP FR → 17.6 % | no |
+| `substantive` (content sentences need entailment without figures) | +3 pp recall, +0.8 pp GP FR | optional |
+| `limbs`, `defined_terms`, `deontic_judged` | no gain | no |
+
+Enrichment layer (`enrichment/gemini-3.8-flash-high/`, 73 units for the dev premises, 73 router calls,
+prompt sha256 in each file): elements 776/781 verified (99.4 %), thresholds 114/160 (71 %).
+
+| Detector (base) | GP FR | All-pass FR | Recall | Precision |
+|---|---:|---:|---:|---:|
+| before step 1 | 13.6 % | 16.3 % | 86.2 % | 83.0 % |
+| + P2 only (proposal of stop 8) | 8.8 % | 12.1 % | 83.1 % | 86.4 % |
+| K = clauses + p2 + as_at + limb_check | 8.8 % | 8.5 % | 84.6 % | 90.2 % |
+| **K + elements** | **7.2 %** | **7.1 %** | 85.4 % | **91.7 %** |
+| K + elements + thresholds + substantive | 8.8 % | 8.5 % | 87.7 % | 90.5 % |
+| claim check only + K | 2.4 % | 2.1 % | 62.3 % | 96.4 % |
+
+- `thresholds` (binding figures by the model-written "what") hurts precision even without NLI (GP FR
+  2.4 → 4.0 %): not kept. `elements` alone helps only with K (it supports entailment once clauses are split).
+- Per class, K + elements vs before: premise_correction rolled back 6/6 → 1/6, grounded_paraphrase 17 → 9 of
+  125, value_swap caught 4 → 5 of 8; other classes unchanged.
+- **Cost:** elements raise NLI candidates per sentence from a median of 7 (max 38) to 16 (max 130), so NLI time
+  roughly doubles (≈ 550 ms per sentence on the M4 for base, from 272 ms). A two-stage scorer (elements only for
+  the top windows) is the obvious mitigation; not built.
+- **All of this is fitted on dev.** The held-out split (concept `test` rows + the anchor/probe draft, same
+  pipeline, enrichment built the same way, sealed) is the only figure to quote.
+
+## Defaults confirmed on dev, and an MPS fix (2026-10-06)
+
+- With the step 1 + 2 set baked in as the default (`results/dev-default-{none,base}.json`): claim check only
+  2.4 % / 2.1 % / 62.3 % / 96.4 % and base 7.2 % / 7.1 % / 85.4 % / 91.7 % (GP FR / all-pass FR / recall /
+  precision), identical per class to the ablation. Enrichment layer `gemini-3.8-flash-high@edb8ccbbc4fc4862`
+  (190 units: dev 73 + held-out 117; elements 2,029/2,047 verified, thresholds 312/475).
+- **MPS graph compilation:** the first default run took > 2 h because every new input shape (batch size ×
+  padded length) made MPS compile a new graph. `nli.py` now scores in fixed batches of 16 pairs padded to a
+  multiple of 64 tokens (scores unchanged): 271 sentences in 651 s, ≈ 2.4 s per sentence with base + elements on
+  the M4. That is far above the 30 ms target and is dominated by the number of candidates (median 16, max 130);
+  a two-stage scorer and the L4 measurement (M4) are the next steps for latency.

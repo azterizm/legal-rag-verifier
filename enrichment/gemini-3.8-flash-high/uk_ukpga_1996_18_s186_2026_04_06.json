@@ -1,0 +1,76 @@
+{
+ "key": "uk/ukpga/1996/18/s186@2026-04-06",
+ "section": "uk/ukpga/1996/18/s186",
+ "version": "2026-04-06",
+ "source_sha256": "77e90d81a706e51d5c76d6387739331b50692b116cbd57ce93bbce624673c9bc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where the amount of a debt to which this Part applies is referable to a period of time, the total amount payable to an employee in respect of that debt shall not exceed £751 in respect of any one week.",
+    "quote": "The total amount payable to an employee in respect of any debt to which this Part applies, where the amount of the debt is referable to a period of time, shall not exceed— (a) £751 in respect of any one week"
+   },
+   {
+    "requirement": "Where the amount of a debt to which this Part applies is referable to a period of time shorter than a week, the total amount payable to an employee in respect of that debt shall not exceed an amount bearing the same proportion to £751 as that shorter period bears to a week.",
+    "quote": "in respect of a shorter period, an amount bearing the same proportion to £751 as that shorter period bears to a week"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum total amount payable to an employee in respect of any debt for any one week",
+    "value": "£751",
+    "quote": "£751 in respect of any one week"
+   },
+   {
+    "what": "period for which the £751 maximum amount payable applies",
+    "value": "one week",
+    "quote": "any one week"
+   },
+   {
+    "what": "base amount used to determine the proportionate cap for a shorter period",
+    "value": "£751",
+    "quote": "proportion to £751"
+   },
+   {
+    "what": "base period of time used to calculate the proportionate cap for a shorter period",
+    "value": "a week",
+    "quote": "bears to a week"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where the amount of a debt to which this Part applies is referable to a period of time, the total amount payable to an employee in respect of that debt shall not exceed £751 in respect of any one week.",
+   "quote": "The total amount payable to an employee in respect of any debt to which this Part applies, where the amount of the debt is referable to a period of time, shall not exceed— (a) £751 in respect of any one week"
+  },
+  {
+   "requirement": "Where the amount of a debt to which this Part applies is referable to a period of time shorter than a week, the total amount payable to an employee in respect of that debt shall not exceed an amount bearing the same proportion to £751 as that shorter period bears to a week.",
+   "quote": "in respect of a shorter period, an amount bearing the same proportion to £751 as that shorter period bears to a week"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum total amount payable to an employee in respect of any debt for any one week",
+   "value": "£751",
+   "quote": "£751 in respect of any one week"
+  },
+  {
+   "what": "period for which the £751 maximum amount payable applies",
+   "value": "one week",
+   "quote": "any one week"
+  },
+  {
+   "what": "base amount used to determine the proportionate cap for a shorter period",
+   "value": "£751",
+   "quote": "proportion to £751"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 3
+ }
+}

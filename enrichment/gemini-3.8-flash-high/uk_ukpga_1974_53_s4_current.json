@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/1974/53/s4@current",
+ "section": "uk/ukpga/1974/53/s4",
+ "version": "current",
+ "source_sha256": "4ae73847f62425b5aca91cc31a738b61fc160f2d22b13ee7df60144f5c2a5184",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to sections 7 and 8, a person who has become a rehabilitated protected person under the Act in respect of a conviction must be treated for all legal purposes as someone who has not committed, been charged with, prosecuted for, convicted of, or sentenced for the offence or offences that were the subject of that conviction.",
+    "quote": "shall be treated for all purposes in law as a person who has not committed or been charged with or prosecuted for or convicted of or sentenced for the offence or offences which were the subject of that conviction"
+   },
+   {
+    "requirement": "Subject to sections 7 and 8 and notwithstanding any enactment or rule of law to the contrary, no evidence is admissible in proceedings before a judicial authority exercising jurisdiction or functions in England and Wales or Scotland to prove that a rehabilitated protected person has committed, been charged with, prosecuted for, convicted of, or sentenced for any offence that was the subject of a spent conviction.",
+    "quote": "no evidence shall be admissible in any proceedings before a judicial authority exercising its jurisdiction or functions in England and Wales Scotland to prove that any such person has committed or been charged with or prosecuted for or convicted of or sentenced for any offence which was the subject of a spent conviction"
+   },
+   {
+    "requirement": "Subject to sections 7 and 8 and notwithstanding any enactment or rule of law to the contrary, a person in proceedings before a judicial authority in England and Wales or Scotland must not be asked, and if asked must not be required to answer, any question relating to their past that cannot be answered without acknowledging or referring to a spent conviction or ancillary circumstances.",
+    "quote": "a person shall not, in any such proceedings, be asked, and, if asked, shall not be required to answer, any question relating to his past which cannot be answered without acknowledging or referring to a spent conviction or spent convictions or any circumstances ancillary thereto"
+   },
+   {
+    "requirement": "Subject to any order made under subsection (4), whenever a question seeking information regarding a person's previous convictions, offences, conduct, or circumstances is put to any person outside judicial proceedings, that question must be treated as not relating to spent convictions or ancillary circumstances, and the answer may be framed accordingly.",
+    "quote": "the question shall be treated as not relating to spent convictions or to any circumstances ancillary to spent convictions, and the answer thereto may be framed accordingly"
+   },
+   {
+    "requirement": "Subject to any order made under subsection (4), a person questioned outside judicial proceedings must not be subjected to any liability or otherwise prejudiced in law for failing to acknowledge or disclose a spent conviction or any ancillary circumstances in their answer.",
+    "quote": "the person questioned shall not be subjected to any liability or otherwise prejudiced in law by reason of any failure to acknowledge or disclose a spent conviction or any circumstances ancillary to a spent conviction in his answer to the question"
+   },
+   {
+    "requirement": "Subject to any order made under subsection (4), any obligation imposed on any person by a rule of law, agreement, or arrangement to disclose matters to another person does not require the disclosure of a spent conviction or any ancillary circumstances, whether relating to that person or another.",
+    "quote": "any obligation imposed on any person by any rule of law or by the provisions of any agreement or arrangement to disclose any matters to any other person shall not extend to requiring him to disclose a spent conviction or any circumstances ancillary to a spent conviction (whether the conviction is his own or another’s)"
+   },
+   {
+    "requirement": "Subject to any order made under subsection (4), a spent conviction, its ancillary circumstances, or any failure to disclose them does not constitute a proper ground for dismissing or excluding a person from any office, profession, occupation, or employment, or for prejudicing that person in any way in any occupation or employment.",
+    "quote": "shall not be a proper ground for dismissing or excluding a person from any office, profession, occupation or employment, or for prejudicing him in any way in any occupation or employment"
+   },
+   {
+    "requirement": "The Secretary of State may by order exclude or modify the application of subsection (2)(a), subsection (2)(b), or both, with respect to questions asked in circumstances specified in the order.",
+    "quote": "make such provision as seems to him appropriate for excluding or modifying the application of either or both of paragraphs (a) and (b) of subsection (2) above in relation to questions put in such circumstances as may be specified in the order"
+   },
+   {
+    "requirement": "The Secretary of State may by order create exceptions from subsection (3) in such cases, classes of cases, or in relation to convictions of such descriptions as specified in the order.",
+    "quote": "provide for such exceptions from the provisions of subsection (3) above as seem to him appropriate, in such cases or classes of case, and in relation to convictions of such a description, as may be specified in the order"
+   },
+   {
+    "requirement": "For the purposes of section 4 and section 7, circumstances ancillary to a conviction include the offence or offences that were the subject of the conviction and the conduct constituting that offence or those offences.",
+    "quote": "the offence or offences which were the subject of that conviction; (b) the conduct constituting that offence or those offences"
+   },
+   {
+    "requirement": "For the purposes of section 4 and section 7, circumstances ancillary to a conviction include preliminary processes or proceedings, sentences imposed, appeal or review proceedings regarding the conviction or sentence, and anything done or undergone in compliance with that sentence.",
+    "quote": "any process or proceedings preliminary to that conviction, any sentence imposed in respect of that conviction, any proceedings (whether by way of appeal or otherwise) for reviewing that conviction or any such sentence, and anything done in pursuance of or undergone in compliance with any such sentence"
+   },
+   {
+    "requirement": "For the purposes of section 4 and section 7, proceedings before a judicial authority include proceedings before ordinary courts of law as well as any tribunal, body, or person empowered by law, enactment, custom, practice, institutional or professional rules, or arbitration agreements to determine questions affecting rights, privileges, obligations, or liabilities or to receive evidence affecting such determinations.",
+    "quote": "“proceedings before a judicial authority” includes, in addition to proceedings before any of the ordinary courts of law, proceedings before any tribunal, body or person having power"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to sections 7 and 8, a person who has become a rehabilitated protected person under the Act in respect of a conviction must be treated for all legal purposes as someone who has not committed, been charged with, prosecuted for, convicted of, or sentenced for the offence or offences that were the subject of that conviction.",
+   "quote": "shall be treated for all purposes in law as a person who has not committed or been charged with or prosecuted for or convicted of or sentenced for the offence or offences which were the subject of that conviction"
+  },
+  {
+   "requirement": "Subject to sections 7 and 8 and notwithstanding any enactment or rule of law to the contrary, no evidence is admissible in proceedings before a judicial authority exercising jurisdiction or functions in England and Wales or Scotland to prove that a rehabilitated protected person has committed, been charged with, prosecuted for, convicted of, or sentenced for any offence that was the subject of a spent conviction.",
+   "quote": "no evidence shall be admissible in any proceedings before a judicial authority exercising its jurisdiction or functions in England and Wales Scotland to prove that any such person has committed or been charged with or prosecuted for or convicted of or sentenced for any offence which was the subject of a spent conviction"
+  },
+  {
+   "requirement": "Subject to sections 7 and 8 and notwithstanding any enactment or rule of law to the contrary, a person in proceedings before a judicial authority in England and Wales or Scotland must not be asked, and if asked must not be required to answer, any question relating to their past that cannot be answered without acknowledging or referring to a spent conviction or ancillary circumstances.",
+   "quote": "a person shall not, in any such proceedings, be asked, and, if asked, shall not be required to answer, any question relating to his past which cannot be answered without acknowledging or referring to a spent conviction or spent convictions or any circumstances ancillary thereto"
+  },
+  {
+   "requirement": "Subject to any order made under subsection (4), whenever a question seeking information regarding a person's previous convictions, offences, conduct, or circumstances is put to any person outside judicial proceedings, that question must be treated as not relating to spent convictions or ancillary circumstances, and the answer may be framed accordingly.",
+   "quote": "the question shall be treated as not relating to spent convictions or to any circumstances ancillary to spent convictions, and the answer thereto may be framed accordingly"
+  },
+  {
+   "requirement": "Subject to any order made under subsection (4), a person questioned outside judicial proceedings must not be subjected to any liability or otherwise prejudiced in law for failing to acknowledge or disclose a spent conviction or any ancillary circumstances in their answer.",
+   "quote": "the person questioned shall not be subjected to any liability or otherwise prejudiced in law by reason of any failure to acknowledge or disclose a spent conviction or any circumstances ancillary to a spent conviction in his answer to the question"
+  },
+  {
+   "requirement": "Subject to any order made under subsection (4), any obligation imposed on any person by a rule of law, agreement, or arrangement to disclose matters to another person does not require the disclosure of a spent conviction or any ancillary circumstances, whether relating to that person or another.",
+   "quote": "any obligation imposed on any person by any rule of law or by the provisions of any agreement or arrangement to disclose any matters to any other person shall not extend to requiring him to disclose a spent conviction or any circumstances ancillary to a spent conviction (whether the conviction is his own or another’s)"
+  },
+  {
+   "requirement": "Subject to any order made under subsection (4), a spent conviction, its ancillary circumstances, or any failure to disclose them does not constitute a proper ground for dismissing or excluding a person from any office, profession, occupation, or employment, or for prejudicing that person in any way in any occupation or employment.",
+   "quote": "shall not be a proper ground for dismissing or excluding a person from any office, profession, occupation or employment, or for prejudicing him in any way in any occupation or employment"
+  },
+  {
+   "requirement": "The Secretary of State may by order exclude or modify the application of subsection (2)(a), subsection (2)(b), or both, with respect to questions asked in circumstances specified in the order.",
+   "quote": "make such provision as seems to him appropriate for excluding or modifying the application of either or both of paragraphs (a) and (b) of subsection (2) above in relation to questions put in such circumstances as may be specified in the order"
+  },
+  {
+   "requirement": "The Secretary of State may by order create exceptions from subsection (3) in such cases, classes of cases, or in relation to convictions of such descriptions as specified in the order.",
+   "quote": "provide for such exceptions from the provisions of subsection (3) above as seem to him appropriate, in such cases or classes of case, and in relation to convictions of such a description, as may be specified in the order"
+  },
+  {
+   "requirement": "For the purposes of section 4 and section 7, circumstances ancillary to a conviction include the offence or offences that were the subject of the conviction and the conduct constituting that offence or those offences.",
+   "quote": "the offence or offences which were the subject of that conviction; (b) the conduct constituting that offence or those offences"
+  },
+  {
+   "requirement": "For the purposes of section 4 and section 7, circumstances ancillary to a conviction include preliminary processes or proceedings, sentences imposed, appeal or review proceedings regarding the conviction or sentence, and anything done or undergone in compliance with that sentence.",
+   "quote": "any process or proceedings preliminary to that conviction, any sentence imposed in respect of that conviction, any proceedings (whether by way of appeal or otherwise) for reviewing that conviction or any such sentence, and anything done in pursuance of or undergone in compliance with any such sentence"
+  },
+  {
+   "requirement": "For the purposes of section 4 and section 7, proceedings before a judicial authority include proceedings before ordinary courts of law as well as any tribunal, body, or person empowered by law, enactment, custom, practice, institutional or professional rules, or arbitration agreements to determine questions affecting rights, privileges, obligations, or liabilities or to receive evidence affecting such determinations.",
+   "quote": "“proceedings before a judicial authority” includes, in addition to proceedings before any of the ordinary courts of law, proceedings before any tribunal, body or person having power"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

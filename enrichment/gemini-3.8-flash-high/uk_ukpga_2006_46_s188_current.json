@@ -1,0 +1,163 @@
+{
+ "key": "uk/ukpga/2006/46/s188@current",
+ "section": "uk/ukpga/2006/46/s188",
+ "version": "current",
+ "source_sha256": "79a31f97bd4db62bcbcbace1393f9849463f326dcdbc86e466b7b4849d5e865e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 188 of the Companies Act 2006 applies to any provision under which the guaranteed term of a director's employment with the company of which he is a director is, or may be, longer than two years.",
+    "quote": "with the company of which he is a director"
+   },
+   {
+    "requirement": "Section 188 of the Companies Act 2006 applies to any provision under which the guaranteed term of a director's employment within the group consisting of a holding company and its subsidiaries is, or may be, longer than two years where he is the director of that holding company.",
+    "quote": "where he is the director of a holding company, within the group consisting of that company and its subsidiaries, is, or may be, longer than two years"
+   },
+   {
+    "requirement": "A company may not agree to a provision under which the guaranteed term of a director's employment is or may be longer than two years unless it has been approved by a resolution of the members of the company.",
+    "quote": "A company may not agree to such provision unless it has been approved— (a) by resolution of the members of the company"
+   },
+   {
+    "requirement": "A company may not agree to a provision under which the guaranteed term of a director's employment is or may be longer than two years in the case of a director of a holding company unless it has been approved by a resolution of the members of that holding company.",
+    "quote": "in the case of a director of a holding company, by resolution of the members of that company"
+   },
+   {
+    "requirement": "The guaranteed term of a director's employment includes the period, if any, during which the employment is to continue or may be continued otherwise than at the instance of the company (under the original agreement or a new agreement entered into in pursuance of it) and cannot be terminated by the company by notice, or can only be terminated in specified circumstances.",
+    "quote": "the period (if any) during which the director's employment— (i) is to continue, or may be continued otherwise than at the instance of the company"
+   },
+   {
+    "requirement": "The guaranteed term of a director's employment includes the required period of notice in the case of employment terminable by the company by notice.",
+    "quote": "in the case of employment terminable by the company by notice, the period of notice required to be given"
+   },
+   {
+    "requirement": "The guaranteed term of a director's employment is the aggregate of the non-terminable period and the notice period if the employment includes both.",
+    "quote": "in the case of employment having a period within paragraph (a) and a period within paragraph (b), the aggregate of those periods"
+   },
+   {
+    "requirement": "If a company enters into a further service contract more than six months before the end of the guaranteed term of a director's employment (otherwise than in pursuance of a right conferred on the other party by or under the original contract), the unexpired period of the original contract's guaranteed term is added to the guaranteed term of the new contract.",
+    "quote": "this section applies as if there were added to the guaranteed term of the new contract the unexpired period of the guaranteed term of the original contract"
+   },
+   {
+    "requirement": "A resolution approving a provision to which section 188 of the Companies Act 2006 applies must not be passed unless a memorandum setting out the proposed contract incorporating the provision is made available to members.",
+    "quote": "A resolution approving provision to which this section applies must not be passed unless a memorandum setting out the proposed contract incorporating the provision is made available to members"
+   },
+   {
+    "requirement": "For a written resolution approving a provision under section 188 of the Companies Act 2006, the memorandum setting out the proposed contract must be sent or submitted to every eligible member at or before the time the proposed resolution is sent or submitted to him.",
+    "quote": "in the case of a written resolution, by being sent or submitted to every eligible member at or before the time at which the proposed resolution is sent or submitted to him"
+   },
+   {
+    "requirement": "For a resolution at a meeting approving a provision under section 188 of the Companies Act 2006, the memorandum setting out the proposed contract must be made available for inspection by company members at the company's registered office for not less than 15 days ending with the date of the meeting, as well as at the meeting itself.",
+    "quote": "in the case of a resolution at a meeting, by being made available for inspection by members of the company both— (i) at the company's registered office for not less than 15 days ending with the date of the meeting, and (ii) at the meeting itself"
+   },
+   {
+    "requirement": "No approval under section 188 of the Companies Act 2006 is required from the members of a body corporate that is not a UK-registered company.",
+    "quote": "No approval is required under this section on the part of the members of a body corporate that— (a) is not a UK-registered company"
+   },
+   {
+    "requirement": "No approval under section 188 of the Companies Act 2006 is required from the members of a body corporate that is a wholly-owned subsidiary of another body corporate.",
+    "quote": "No approval is required under this section on the part of the members of a body corporate that— (b) is a wholly-owned subsidiary of another body corporate"
+   },
+   {
+    "requirement": "For the purposes of section 188 of the Companies Act 2006, employment means any employment under a director's service contract.",
+    "quote": "In this section “employment” means any employment under a director's service contract"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The guaranteed term length that triggers the application of the section to a director's employment provision",
+    "value": "two years",
+    "quote": "longer than two years"
+   },
+   {
+    "what": "The minimum time before the end of the guaranteed term of a director's employment within which entering into a further service contract triggers the aggregation of the unexpired term",
+    "value": "six months",
+    "quote": "more than six months before the end of the guaranteed term"
+   },
+   {
+    "what": "The minimum inspection period at the registered office ending with the meeting date for the memorandum",
+    "value": "15 days",
+    "quote": "not less than 15 days ending with the date of the meeting"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 188 of the Companies Act 2006 applies to any provision under which the guaranteed term of a director's employment with the company of which he is a director is, or may be, longer than two years.",
+   "quote": "with the company of which he is a director"
+  },
+  {
+   "requirement": "Section 188 of the Companies Act 2006 applies to any provision under which the guaranteed term of a director's employment within the group consisting of a holding company and its subsidiaries is, or may be, longer than two years where he is the director of that holding company.",
+   "quote": "where he is the director of a holding company, within the group consisting of that company and its subsidiaries, is, or may be, longer than two years"
+  },
+  {
+   "requirement": "A company may not agree to a provision under which the guaranteed term of a director's employment is or may be longer than two years unless it has been approved by a resolution of the members of the company.",
+   "quote": "A company may not agree to such provision unless it has been approved— (a) by resolution of the members of the company"
+  },
+  {
+   "requirement": "A company may not agree to a provision under which the guaranteed term of a director's employment is or may be longer than two years in the case of a director of a holding company unless it has been approved by a resolution of the members of that holding company.",
+   "quote": "in the case of a director of a holding company, by resolution of the members of that company"
+  },
+  {
+   "requirement": "The guaranteed term of a director's employment includes the period, if any, during which the employment is to continue or may be continued otherwise than at the instance of the company (under the original agreement or a new agreement entered into in pursuance of it) and cannot be terminated by the company by notice, or can only be terminated in specified circumstances.",
+   "quote": "the period (if any) during which the director's employment— (i) is to continue, or may be continued otherwise than at the instance of the company"
+  },
+  {
+   "requirement": "The guaranteed term of a director's employment includes the required period of notice in the case of employment terminable by the company by notice.",
+   "quote": "in the case of employment terminable by the company by notice, the period of notice required to be given"
+  },
+  {
+   "requirement": "The guaranteed term of a director's employment is the aggregate of the non-terminable period and the notice period if the employment includes both.",
+   "quote": "in the case of employment having a period within paragraph (a) and a period within paragraph (b), the aggregate of those periods"
+  },
+  {
+   "requirement": "If a company enters into a further service contract more than six months before the end of the guaranteed term of a director's employment (otherwise than in pursuance of a right conferred on the other party by or under the original contract), the unexpired period of the original contract's guaranteed term is added to the guaranteed term of the new contract.",
+   "quote": "this section applies as if there were added to the guaranteed term of the new contract the unexpired period of the guaranteed term of the original contract"
+  },
+  {
+   "requirement": "A resolution approving a provision to which section 188 of the Companies Act 2006 applies must not be passed unless a memorandum setting out the proposed contract incorporating the provision is made available to members.",
+   "quote": "A resolution approving provision to which this section applies must not be passed unless a memorandum setting out the proposed contract incorporating the provision is made available to members"
+  },
+  {
+   "requirement": "For a written resolution approving a provision under section 188 of the Companies Act 2006, the memorandum setting out the proposed contract must be sent or submitted to every eligible member at or before the time the proposed resolution is sent or submitted to him.",
+   "quote": "in the case of a written resolution, by being sent or submitted to every eligible member at or before the time at which the proposed resolution is sent or submitted to him"
+  },
+  {
+   "requirement": "For a resolution at a meeting approving a provision under section 188 of the Companies Act 2006, the memorandum setting out the proposed contract must be made available for inspection by company members at the company's registered office for not less than 15 days ending with the date of the meeting, as well as at the meeting itself.",
+   "quote": "in the case of a resolution at a meeting, by being made available for inspection by members of the company both— (i) at the company's registered office for not less than 15 days ending with the date of the meeting, and (ii) at the meeting itself"
+  },
+  {
+   "requirement": "No approval under section 188 of the Companies Act 2006 is required from the members of a body corporate that is not a UK-registered company.",
+   "quote": "No approval is required under this section on the part of the members of a body corporate that— (a) is not a UK-registered company"
+  },
+  {
+   "requirement": "For the purposes of section 188 of the Companies Act 2006, employment means any employment under a director's service contract.",
+   "quote": "In this section “employment” means any employment under a director's service contract"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The guaranteed term length that triggers the application of the section to a director's employment provision",
+   "value": "two years",
+   "quote": "longer than two years"
+  },
+  {
+   "what": "The minimum time before the end of the guaranteed term of a director's employment within which entering into a further service contract triggers the aggregation of the unexpired term",
+   "value": "six months",
+   "quote": "more than six months before the end of the guaranteed term"
+  },
+  {
+   "what": "The minimum inspection period at the registered office ending with the meeting date for the memorandum",
+   "value": "15 days",
+   "quote": "not less than 15 days ending with the date of the meeting"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 13,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

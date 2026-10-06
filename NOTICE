@@ -17,3 +17,7 @@ United Kingdom legislation
 
 The prompt batteries under batteries/router/ are copied unchanged from
 legal-rag-router (AGPL-3.0-only); see batteries/router/SOURCE.json.
+
+Some battery rows quote probe queries and example answers from rag-security-probes and
+point-in-time anchor questions from legal-rag-audit (both Memon Systems Ltd); each row
+records its source in `query_source` and `note`.

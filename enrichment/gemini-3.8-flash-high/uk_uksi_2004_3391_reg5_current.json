@@ -1,0 +1,83 @@
+{
+ "key": "uk/uksi/2004/3391/reg5@current",
+ "section": "uk/uksi/2004/3391/reg5",
+ "version": "current",
+ "source_sha256": "50b5ef2765caf6c3d27e155b509e56cb9dadfebb3dedc872cc751e4f6242b5cf",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to paragraph (3) and in accordance with paragraphs (2), (4), (5) and (6) and the remaining provisions of Part 2 and Part 3 of the Regulations, a public authority that holds environmental information must make it available on request.",
+    "quote": "a public authority that holds environmental information shall make it available on request"
+   },
+   {
+    "requirement": "A public authority must make requested information available as soon as possible and no later than 20 working days after the date of receipt of the request.",
+    "quote": "as soon as possible and no later than 20 working days after the date of receipt of the request"
+   },
+   {
+    "requirement": "The duty to make environmental information available on request does not apply to personal data to the extent that the requested information includes personal data of which the applicant is the data subject.",
+    "quote": "To the extent that the information requested includes personal data of which the applicant is the data subject, paragraph (1) shall not apply to those personal data"
+   },
+   {
+    "requirement": "Where information made available under paragraph (1) is compiled by or on behalf of a public authority, that information must be up to date, accurate and comparable, so far as the public authority reasonably believes.",
+    "quote": "where the information made available is compiled by or on behalf of the public authority it shall be up to date, accurate and comparable, so far as the public authority reasonably believes"
+   },
+   {
+    "requirement": "Where a public authority makes available information in paragraph (b) of the definition of environmental information and the applicant so requests, the public authority must, insofar as it is able to do so, either inform the applicant of the place where information, if available, can be found on measurement procedures (including methods of analysis, sampling and pre-treatment of samples) used in compiling the information, or refer the applicant to a standardised procedure used.",
+    "quote": "the public authority shall, insofar as it is able to do so, either inform the applicant of the place where information, if available, can be found on the measurement procedures, including methods of analysis, sampling and pre-treatment of samples, used in compiling the information, or refer the applicant to a standardised procedure used"
+   },
+   {
+    "requirement": "Any enactment or rule of law that would prevent the disclosure of information in accordance with these Regulations does not apply.",
+    "quote": "Any enactment or rule of law that would prevent the disclosure of information in accordance with these Regulations shall not apply"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum time period after the date of receipt of the request for a public authority to make information available",
+    "value": "20 working days",
+    "quote": "no later than 20 working days after the date of receipt of the request"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to paragraph (3) and in accordance with paragraphs (2), (4), (5) and (6) and the remaining provisions of Part 2 and Part 3 of the Regulations, a public authority that holds environmental information must make it available on request.",
+   "quote": "a public authority that holds environmental information shall make it available on request"
+  },
+  {
+   "requirement": "A public authority must make requested information available as soon as possible and no later than 20 working days after the date of receipt of the request.",
+   "quote": "as soon as possible and no later than 20 working days after the date of receipt of the request"
+  },
+  {
+   "requirement": "The duty to make environmental information available on request does not apply to personal data to the extent that the requested information includes personal data of which the applicant is the data subject.",
+   "quote": "To the extent that the information requested includes personal data of which the applicant is the data subject, paragraph (1) shall not apply to those personal data"
+  },
+  {
+   "requirement": "Where information made available under paragraph (1) is compiled by or on behalf of a public authority, that information must be up to date, accurate and comparable, so far as the public authority reasonably believes.",
+   "quote": "where the information made available is compiled by or on behalf of the public authority it shall be up to date, accurate and comparable, so far as the public authority reasonably believes"
+  },
+  {
+   "requirement": "Where a public authority makes available information in paragraph (b) of the definition of environmental information and the applicant so requests, the public authority must, insofar as it is able to do so, either inform the applicant of the place where information, if available, can be found on measurement procedures (including methods of analysis, sampling and pre-treatment of samples) used in compiling the information, or refer the applicant to a standardised procedure used.",
+   "quote": "the public authority shall, insofar as it is able to do so, either inform the applicant of the place where information, if available, can be found on the measurement procedures, including methods of analysis, sampling and pre-treatment of samples, used in compiling the information, or refer the applicant to a standardised procedure used"
+  },
+  {
+   "requirement": "Any enactment or rule of law that would prevent the disclosure of information in accordance with these Regulations does not apply.",
+   "quote": "Any enactment or rule of law that would prevent the disclosure of information in accordance with these Regulations shall not apply"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum time period after the date of receipt of the request for a public authority to make information available",
+   "value": "20 working days",
+   "quote": "no later than 20 working days after the date of receipt of the request"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

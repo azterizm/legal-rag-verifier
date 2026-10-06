@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2010/15/s26@current",
+ "section": "uk/ukpga/2010/15/s26",
+ "version": "current",
+ "source_sha256": "777e057d66b6aca205b44a6f7dc2b5e6332108a75f5f2ad8c673c05168c4dbe1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person (A) harasses another person (B) if A engages in unwanted conduct related to a relevant protected characteristic, and that conduct has the purpose or effect of violating B's dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B.",
+    "quote": "A engages in unwanted conduct related to a relevant protected characteristic, and (b) the conduct has the purpose or effect of— (i) violating B's dignity, or (ii) creating an intimidating, hostile, degrading, humiliating or offensive environment for B."
+   },
+   {
+    "requirement": "A person (A) harasses another person (B) if A engages in unwanted conduct of a sexual nature, and that conduct has the purpose or effect of violating B's dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B.",
+    "quote": "A engages in unwanted conduct of a sexual nature, and (b) the conduct has the purpose or effect referred to in subsection (1)(b)."
+   },
+   {
+    "requirement": "A person (A) harasses another person (B) if A or another person engages in unwanted conduct of a sexual nature or related to gender reassignment or sex that has the purpose or effect of violating B's dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, and A treats B less favourably than A would treat B if B had not rejected or submitted to the conduct because of B's rejection of or submission to it.",
+    "quote": "because of B's rejection of or submission to the conduct, A treats B less favourably than A would treat B if B had not rejected or submitted to the conduct."
+   },
+   {
+    "requirement": "In deciding whether conduct has the effect of violating another person's (B's) dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, the perception of B must be taken into account.",
+    "quote": "the perception of B;"
+   },
+   {
+    "requirement": "In deciding whether conduct has the effect of violating another person's (B's) dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, the other circumstances of the case must be taken into account.",
+    "quote": "the other circumstances of the case;"
+   },
+   {
+    "requirement": "In deciding whether conduct has the effect of violating another person's (B's) dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, whether it is reasonable for the conduct to have that effect must be taken into account.",
+    "quote": "whether it is reasonable for the conduct to have that effect."
+   },
+   {
+    "requirement": "The relevant protected characteristics for the purpose of harassment are age, disability, gender reassignment, race, religion or belief, sex, and sexual orientation.",
+    "quote": "The relevant protected characteristics are— age;disability;gender reassignment;race;religion or belief;sex;sexual orientation."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person (A) harasses another person (B) if A engages in unwanted conduct related to a relevant protected characteristic, and that conduct has the purpose or effect of violating B's dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B.",
+   "quote": "A engages in unwanted conduct related to a relevant protected characteristic, and (b) the conduct has the purpose or effect of— (i) violating B's dignity, or (ii) creating an intimidating, hostile, degrading, humiliating or offensive environment for B."
+  },
+  {
+   "requirement": "A person (A) harasses another person (B) if A engages in unwanted conduct of a sexual nature, and that conduct has the purpose or effect of violating B's dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B.",
+   "quote": "A engages in unwanted conduct of a sexual nature, and (b) the conduct has the purpose or effect referred to in subsection (1)(b)."
+  },
+  {
+   "requirement": "A person (A) harasses another person (B) if A or another person engages in unwanted conduct of a sexual nature or related to gender reassignment or sex that has the purpose or effect of violating B's dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, and A treats B less favourably than A would treat B if B had not rejected or submitted to the conduct because of B's rejection of or submission to it.",
+   "quote": "because of B's rejection of or submission to the conduct, A treats B less favourably than A would treat B if B had not rejected or submitted to the conduct."
+  },
+  {
+   "requirement": "In deciding whether conduct has the effect of violating another person's (B's) dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, the perception of B must be taken into account.",
+   "quote": "the perception of B;"
+  },
+  {
+   "requirement": "In deciding whether conduct has the effect of violating another person's (B's) dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, the other circumstances of the case must be taken into account.",
+   "quote": "the other circumstances of the case;"
+  },
+  {
+   "requirement": "In deciding whether conduct has the effect of violating another person's (B's) dignity or creating an intimidating, hostile, degrading, humiliating or offensive environment for B, whether it is reasonable for the conduct to have that effect must be taken into account.",
+   "quote": "whether it is reasonable for the conduct to have that effect."
+  },
+  {
+   "requirement": "The relevant protected characteristics for the purpose of harassment are age, disability, gender reassignment, race, religion or belief, sex, and sexual orientation.",
+   "quote": "The relevant protected characteristics are— age;disability;gender reassignment;race;religion or belief;sex;sexual orientation."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

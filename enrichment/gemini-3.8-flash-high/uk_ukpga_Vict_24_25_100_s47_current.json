@@ -1,0 +1,31 @@
+{
+ "key": "uk/ukpga/Vict/24-25/100/s47@current",
+ "section": "uk/ukpga/Vict/24-25/100/s47",
+ "version": "current",
+ "source_sha256": "a6c85a090807a2d08fa5fb96e90b9f77f38d9c55ea553cc7715b1048126ad1dd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person convicted upon an indictment of any assault occasioning actual bodily harm is liable to be kept in penal servitude.",
+    "quote": "Whosoever shall be convicted upon an indictment of any assault occasioning actual bodily harm shall be liable to be kept in penal servitude"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person convicted upon an indictment of any assault occasioning actual bodily harm is liable to be kept in penal servitude.",
+   "quote": "Whosoever shall be convicted upon an indictment of any assault occasioning actual bodily harm shall be liable to be kept in penal servitude"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 1,
+  "elements_verified": 1,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1996/18/s115@current",
+ "section": "uk/ukpga/1996/18/s115",
+ "version": "current",
+ "source_sha256": "950505020005b8b0dd90c0d002364cc9897de1825290c45e5930137d341e8154",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An order for re-engagement is an order, on terms decided by the tribunal, directing that the complainant be engaged by the employer, by a successor of the employer, or by an associated employer, in employment comparable to that from which the complainant was dismissed or other suitable employment.",
+    "quote": "order for re-engagement is an order, on such terms as the tribunal may decide, that the complainant be engaged by the employer, or by a successor of the employer or by an associated employer, in employment comparable to that from which he was dismissed or other suitable employment"
+   },
+   {
+    "requirement": "When making an order for re-engagement, the tribunal must specify the terms on which re-engagement is to take place.",
+    "quote": "On making an order for re-engagement the tribunal shall specify the terms on which re-engagement is to take place"
+   },
+   {
+    "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the identity of the employer.",
+    "quote": "the identity of the employer"
+   },
+   {
+    "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the nature of the employment.",
+    "quote": "the nature of the employment"
+   },
+   {
+    "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the remuneration for the employment.",
+    "quote": "the remuneration for the employment"
+   },
+   {
+    "requirement": "The terms specified by the tribunal on making an order for re-engagement must include any amount payable by the employer in respect of any benefit the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of re-engagement.",
+    "quote": "any amount payable by the employer in respect of any benefit which the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of re-engagement"
+   },
+   {
+    "requirement": "The terms specified by the tribunal on making an order for re-engagement must include any rights and privileges (including seniority and pension rights) that must be restored to the employee.",
+    "quote": "any rights and privileges (including seniority and pension rights) which must be restored to the employee"
+   },
+   {
+    "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the date by which the order must be complied with.",
+    "quote": "the date by which the order must be complied with"
+   },
+   {
+    "requirement": "In calculating any amount payable by the employer in respect of lost benefits and arrears of pay, the tribunal must take into account, so as to reduce the employer's liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of re-engagement by way of wages in lieu of notice or ex gratia payments paid by the employer.",
+    "quote": "the tribunal shall take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of re-engagement by way of— (a) wages in lieu of notice or ex gratia payments paid by the employer"
+   },
+   {
+    "requirement": "In calculating any amount payable by the employer in respect of lost benefits and arrears of pay, the tribunal must take into account, so as to reduce the employer's liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of re-engagement by way of remuneration paid in respect of employment with another employer.",
+    "quote": "remuneration paid in respect of employment with another employer"
+   },
+   {
+    "requirement": "In calculating any amount payable by the employer in respect of lost benefits and arrears of pay, the tribunal must take into account, so as to reduce the employer's liability, such other benefits as the tribunal thinks appropriate in the circumstances.",
+    "quote": "and such other benefits as the tribunal thinks appropriate in the circumstances"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period for which any amount payable by the employer in respect of lost benefits and arrears of pay must be calculated",
+    "value": "period between the date of termination of employment and the date of re-engagement",
+    "quote": "period between the date of termination of employment and the date of re-engagement"
+   },
+   {
+    "what": "The deadline for compliance that the tribunal must specify in the order",
+    "value": "date by which the order must be complied with",
+    "quote": "the date by which the order must be complied with"
+   },
+   {
+    "what": "The period during which sums received by the complainant must be taken into account to reduce the employer's liability",
+    "value": "period between the date of termination of employment and the date of re-engagement",
+    "quote": "period between the date of termination of employment and the date of re-engagement"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An order for re-engagement is an order, on terms decided by the tribunal, directing that the complainant be engaged by the employer, by a successor of the employer, or by an associated employer, in employment comparable to that from which the complainant was dismissed or other suitable employment.",
+   "quote": "order for re-engagement is an order, on such terms as the tribunal may decide, that the complainant be engaged by the employer, or by a successor of the employer or by an associated employer, in employment comparable to that from which he was dismissed or other suitable employment"
+  },
+  {
+   "requirement": "When making an order for re-engagement, the tribunal must specify the terms on which re-engagement is to take place.",
+   "quote": "On making an order for re-engagement the tribunal shall specify the terms on which re-engagement is to take place"
+  },
+  {
+   "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the identity of the employer.",
+   "quote": "the identity of the employer"
+  },
+  {
+   "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the nature of the employment.",
+   "quote": "the nature of the employment"
+  },
+  {
+   "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the remuneration for the employment.",
+   "quote": "the remuneration for the employment"
+  },
+  {
+   "requirement": "The terms specified by the tribunal on making an order for re-engagement must include any amount payable by the employer in respect of any benefit the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of re-engagement.",
+   "quote": "any amount payable by the employer in respect of any benefit which the complainant might reasonably be expected to have had but for the dismissal (including arrears of pay) for the period between the date of termination of employment and the date of re-engagement"
+  },
+  {
+   "requirement": "The terms specified by the tribunal on making an order for re-engagement must include any rights and privileges (including seniority and pension rights) that must be restored to the employee.",
+   "quote": "any rights and privileges (including seniority and pension rights) which must be restored to the employee"
+  },
+  {
+   "requirement": "The terms specified by the tribunal on making an order for re-engagement must include the date by which the order must be complied with.",
+   "quote": "the date by which the order must be complied with"
+  },
+  {
+   "requirement": "In calculating any amount payable by the employer in respect of lost benefits and arrears of pay, the tribunal must take into account, so as to reduce the employer's liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of re-engagement by way of wages in lieu of notice or ex gratia payments paid by the employer.",
+   "quote": "the tribunal shall take into account, so as to reduce the employer’s liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of re-engagement by way of— (a) wages in lieu of notice or ex gratia payments paid by the employer"
+  },
+  {
+   "requirement": "In calculating any amount payable by the employer in respect of lost benefits and arrears of pay, the tribunal must take into account, so as to reduce the employer's liability, any sums received by the complainant in respect of the period between the date of termination of employment and the date of re-engagement by way of remuneration paid in respect of employment with another employer.",
+   "quote": "remuneration paid in respect of employment with another employer"
+  },
+  {
+   "requirement": "In calculating any amount payable by the employer in respect of lost benefits and arrears of pay, the tribunal must take into account, so as to reduce the employer's liability, such other benefits as the tribunal thinks appropriate in the circumstances.",
+   "quote": "and such other benefits as the tribunal thinks appropriate in the circumstances"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

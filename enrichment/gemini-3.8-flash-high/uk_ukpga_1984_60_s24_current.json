@@ -1,0 +1,175 @@
+{
+ "key": "uk/ukpga/1984/60/s24@current",
+ "section": "uk/ukpga/1984/60/s24",
+ "version": "current",
+ "source_sha256": "3b3b2ca85d2331e4bdb8c42b624d5b366a9a77517531b1eeb7b80f86f7ab8432",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A constable may arrest without a warrant anyone who is about to commit an offence.",
+    "quote": "anyone who is about to commit an offence"
+   },
+   {
+    "requirement": "A constable may arrest without a warrant anyone who is in the act of committing an offence.",
+    "quote": "anyone who is in the act of committing an offence"
+   },
+   {
+    "requirement": "A constable may arrest without a warrant anyone whom the constable has reasonable grounds for suspecting to be about to commit an offence.",
+    "quote": "anyone whom he has reasonable grounds for suspecting to be about to commit an offence"
+   },
+   {
+    "requirement": "A constable may arrest without a warrant anyone whom the constable has reasonable grounds for suspecting to be committing an offence.",
+    "quote": "anyone whom he has reasonable grounds for suspecting to be committing an offence"
+   },
+   {
+    "requirement": "If a constable has reasonable grounds for suspecting that an offence has been committed, the constable may arrest without a warrant anyone whom the constable has reasonable grounds to suspect of being guilty of that offence.",
+    "quote": "anyone whom he has reasonable grounds to suspect of being guilty of it"
+   },
+   {
+    "requirement": "If an offence has been committed, a constable may arrest without a warrant anyone who is guilty of the offence.",
+    "quote": "anyone who is guilty of the offence"
+   },
+   {
+    "requirement": "If an offence has been committed, a constable may arrest without a warrant anyone whom the constable has reasonable grounds for suspecting to be guilty of the offence.",
+    "quote": "anyone whom he has reasonable grounds for suspecting to be guilty of it"
+   },
+   {
+    "requirement": "A constable may exercise the power of summary arrest under subsection (1), (2), or (3) only if the constable has reasonable grounds for believing that arrest is necessary for any of the statutory reasons set out in subsection (5).",
+    "quote": "exercisable only if the constable has reasonable grounds for believing that for any of the reasons mentioned in subsection (5) it is necessary to arrest the person in question"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to enable the person's name to be ascertained in circumstances where the constable does not know and cannot readily ascertain the name, or has reasonable grounds for doubting whether a name given by the person is their real name.",
+    "quote": "to enable the name of the person in question to be ascertained"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to enable the person's address to be ascertained in circumstances where the constable does not know and cannot readily ascertain the address, or has reasonable grounds for doubting whether an address given by the person is their real address.",
+    "quote": "correspondingly as regards the person's address"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from causing physical injury to themselves or any other person.",
+    "quote": "causing physical injury to himself or any other person"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from suffering physical injury.",
+    "quote": "suffering physical injury"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from causing loss of or damage to property.",
+    "quote": "causing loss of or damage to property"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from committing an offence against public decency, subject to the condition in subsection (6).",
+    "quote": "committing an offence against public decency (subject to subsection (6))"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from causing an unlawful obstruction of the highway.",
+    "quote": "causing an unlawful obstruction of the highway"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to protect a child or other vulnerable person from the person being arrested.",
+    "quote": "to protect a child or other vulnerable person from the person in question"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to allow the prompt and effective investigation of the offence or of the conduct of the person being arrested.",
+    "quote": "to allow the prompt and effective investigation of the offence or of the conduct of the person in question"
+   },
+   {
+    "requirement": "An arrest of a person by a constable is necessary if it is to prevent any prosecution for the offence from being hindered by the disappearance of the person being arrested.",
+    "quote": "to prevent any prosecution for the offence from being hindered by the disappearance of the person in question"
+   },
+   {
+    "requirement": "The necessity reason concerning an offence against public decency under subsection (5)(c)(iv) applies only where members of the public going about their normal business cannot reasonably be expected to avoid the person being arrested.",
+    "quote": "applies only where members of the public going about their normal business cannot reasonably be expected to avoid the person in question"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A constable may arrest without a warrant anyone who is about to commit an offence.",
+   "quote": "anyone who is about to commit an offence"
+  },
+  {
+   "requirement": "A constable may arrest without a warrant anyone who is in the act of committing an offence.",
+   "quote": "anyone who is in the act of committing an offence"
+  },
+  {
+   "requirement": "A constable may arrest without a warrant anyone whom the constable has reasonable grounds for suspecting to be about to commit an offence.",
+   "quote": "anyone whom he has reasonable grounds for suspecting to be about to commit an offence"
+  },
+  {
+   "requirement": "A constable may arrest without a warrant anyone whom the constable has reasonable grounds for suspecting to be committing an offence.",
+   "quote": "anyone whom he has reasonable grounds for suspecting to be committing an offence"
+  },
+  {
+   "requirement": "If a constable has reasonable grounds for suspecting that an offence has been committed, the constable may arrest without a warrant anyone whom the constable has reasonable grounds to suspect of being guilty of that offence.",
+   "quote": "anyone whom he has reasonable grounds to suspect of being guilty of it"
+  },
+  {
+   "requirement": "If an offence has been committed, a constable may arrest without a warrant anyone who is guilty of the offence.",
+   "quote": "anyone who is guilty of the offence"
+  },
+  {
+   "requirement": "If an offence has been committed, a constable may arrest without a warrant anyone whom the constable has reasonable grounds for suspecting to be guilty of the offence.",
+   "quote": "anyone whom he has reasonable grounds for suspecting to be guilty of it"
+  },
+  {
+   "requirement": "A constable may exercise the power of summary arrest under subsection (1), (2), or (3) only if the constable has reasonable grounds for believing that arrest is necessary for any of the statutory reasons set out in subsection (5).",
+   "quote": "exercisable only if the constable has reasonable grounds for believing that for any of the reasons mentioned in subsection (5) it is necessary to arrest the person in question"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to enable the person's name to be ascertained in circumstances where the constable does not know and cannot readily ascertain the name, or has reasonable grounds for doubting whether a name given by the person is their real name.",
+   "quote": "to enable the name of the person in question to be ascertained"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to enable the person's address to be ascertained in circumstances where the constable does not know and cannot readily ascertain the address, or has reasonable grounds for doubting whether an address given by the person is their real address.",
+   "quote": "correspondingly as regards the person's address"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from causing physical injury to themselves or any other person.",
+   "quote": "causing physical injury to himself or any other person"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from suffering physical injury.",
+   "quote": "suffering physical injury"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from causing loss of or damage to property.",
+   "quote": "causing loss of or damage to property"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from committing an offence against public decency, subject to the condition in subsection (6).",
+   "quote": "committing an offence against public decency (subject to subsection (6))"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to prevent the person from causing an unlawful obstruction of the highway.",
+   "quote": "causing an unlawful obstruction of the highway"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to protect a child or other vulnerable person from the person being arrested.",
+   "quote": "to protect a child or other vulnerable person from the person in question"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to allow the prompt and effective investigation of the offence or of the conduct of the person being arrested.",
+   "quote": "to allow the prompt and effective investigation of the offence or of the conduct of the person in question"
+  },
+  {
+   "requirement": "An arrest of a person by a constable is necessary if it is to prevent any prosecution for the offence from being hindered by the disappearance of the person being arrested.",
+   "quote": "to prevent any prosecution for the offence from being hindered by the disappearance of the person in question"
+  },
+  {
+   "requirement": "The necessity reason concerning an offence against public decency under subsection (5)(c)(iv) applies only where members of the public going about their normal business cannot reasonably be expected to avoid the person being arrested.",
+   "quote": "applies only where members of the public going about their normal business cannot reasonably be expected to avoid the person in question"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

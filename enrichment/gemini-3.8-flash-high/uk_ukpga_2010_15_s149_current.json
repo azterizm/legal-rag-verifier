@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/2010/15/s149@current",
+ "section": "uk/ukpga/2010/15/s149",
+ "version": "current",
+ "source_sha256": "dae248e182c984c8619a5e97a9e3ec278ff2ad361af8eb6448ffac3af880e019",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A public authority must, in the exercise of its functions, have due regard to the need to eliminate discrimination, harassment, victimisation and any other conduct that is prohibited by or under the Equality Act 2010.",
+    "quote": "A public authority must, in the exercise of its functions, have due regard to the need to— (a) eliminate discrimination, harassment, victimisation and any other conduct that is prohibited by or under this Act"
+   },
+   {
+    "requirement": "A public authority must, in the exercise of its functions, have due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it.",
+    "quote": "advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it"
+   },
+   {
+    "requirement": "A public authority must, in the exercise of its functions, have due regard to the need to foster good relations between persons who share a relevant protected characteristic and persons who do not share it.",
+    "quote": "foster good relations between persons who share a relevant protected characteristic and persons who do not share it"
+   },
+   {
+    "requirement": "A person who is not a public authority but who exercises public functions must, in the exercise of those functions, have due regard to the need to eliminate prohibited conduct, advance equality of opportunity, and foster good relations.",
+    "quote": "A person who is not a public authority but who exercises public functions must, in the exercise of those functions, have due regard to the matters mentioned in subsection (1)"
+   },
+   {
+    "requirement": "Having due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to remove or minimise disadvantages suffered by persons who share a relevant protected characteristic that are connected to that characteristic.",
+    "quote": "remove or minimise disadvantages suffered by persons who share a relevant protected characteristic that are connected to that characteristic"
+   },
+   {
+    "requirement": "Having due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to take steps to meet the needs of persons who share a relevant protected characteristic that are different from the needs of persons who do not share it.",
+    "quote": "take steps to meet the needs of persons who share a relevant protected characteristic that are different from the needs of persons who do not share it"
+   },
+   {
+    "requirement": "Having due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to encourage persons who share a relevant protected characteristic to participate in public life or in any other activity in which participation by such persons is disproportionately low.",
+    "quote": "encourage persons who share a relevant protected characteristic to participate in public life or in any other activity in which participation by such persons is disproportionately low"
+   },
+   {
+    "requirement": "The steps involved in meeting the needs of disabled persons that are different from the needs of persons who are not disabled include, in particular, steps to take account of disabled persons' disabilities.",
+    "quote": "steps to take account of disabled persons' disabilities"
+   },
+   {
+    "requirement": "Having due regard to the need to foster good relations between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to tackle prejudice and promote understanding.",
+    "quote": "involves having due regard, in particular, to the need to— (a) tackle prejudice, and (b) promote understanding"
+   },
+   {
+    "requirement": "Compliance with the duties under section 149 of the Equality Act 2010 may involve treating some persons more favourably than others, but it does not permit conduct that would otherwise be prohibited by or under the Act.",
+    "quote": "Compliance with the duties in this section may involve treating some persons more favourably than others; but that is not to be taken as permitting conduct that would otherwise be prohibited by or under this Act"
+   },
+   {
+    "requirement": "The relevant protected characteristics for the public sector equality duty are age, disability, gender reassignment, pregnancy and maternity, race, religion or belief, sex, and sexual orientation.",
+    "quote": "The relevant protected characteristics are— age;disability;gender reassignment;pregnancy and maternity;race;religion or belief;sex;sexual orientation"
+   },
+   {
+    "requirement": "A reference to conduct that is prohibited by or under the Equality Act 2010 includes a reference to a breach of an equality clause or rule, or a breach of a non-discrimination rule.",
+    "quote": "A reference to conduct that is prohibited by or under this Act includes a reference to— (a) a breach of an equality clause or rule; (b) a breach of a non-discrimination rule"
+   },
+   {
+    "requirement": "Schedule 18, which provides exceptions to section 149 of the Equality Act 2010, has effect.",
+    "quote": "Schedule 18 (exceptions) has effect"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A public authority must, in the exercise of its functions, have due regard to the need to eliminate discrimination, harassment, victimisation and any other conduct that is prohibited by or under the Equality Act 2010.",
+   "quote": "A public authority must, in the exercise of its functions, have due regard to the need to— (a) eliminate discrimination, harassment, victimisation and any other conduct that is prohibited by or under this Act"
+  },
+  {
+   "requirement": "A public authority must, in the exercise of its functions, have due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it.",
+   "quote": "advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it"
+  },
+  {
+   "requirement": "A public authority must, in the exercise of its functions, have due regard to the need to foster good relations between persons who share a relevant protected characteristic and persons who do not share it.",
+   "quote": "foster good relations between persons who share a relevant protected characteristic and persons who do not share it"
+  },
+  {
+   "requirement": "A person who is not a public authority but who exercises public functions must, in the exercise of those functions, have due regard to the need to eliminate prohibited conduct, advance equality of opportunity, and foster good relations.",
+   "quote": "A person who is not a public authority but who exercises public functions must, in the exercise of those functions, have due regard to the matters mentioned in subsection (1)"
+  },
+  {
+   "requirement": "Having due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to remove or minimise disadvantages suffered by persons who share a relevant protected characteristic that are connected to that characteristic.",
+   "quote": "remove or minimise disadvantages suffered by persons who share a relevant protected characteristic that are connected to that characteristic"
+  },
+  {
+   "requirement": "Having due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to take steps to meet the needs of persons who share a relevant protected characteristic that are different from the needs of persons who do not share it.",
+   "quote": "take steps to meet the needs of persons who share a relevant protected characteristic that are different from the needs of persons who do not share it"
+  },
+  {
+   "requirement": "Having due regard to the need to advance equality of opportunity between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to encourage persons who share a relevant protected characteristic to participate in public life or in any other activity in which participation by such persons is disproportionately low.",
+   "quote": "encourage persons who share a relevant protected characteristic to participate in public life or in any other activity in which participation by such persons is disproportionately low"
+  },
+  {
+   "requirement": "The steps involved in meeting the needs of disabled persons that are different from the needs of persons who are not disabled include, in particular, steps to take account of disabled persons' disabilities.",
+   "quote": "steps to take account of disabled persons' disabilities"
+  },
+  {
+   "requirement": "Having due regard to the need to foster good relations between persons who share a relevant protected characteristic and persons who do not share it involves having due regard, in particular, to the need to tackle prejudice and promote understanding.",
+   "quote": "involves having due regard, in particular, to the need to— (a) tackle prejudice, and (b) promote understanding"
+  },
+  {
+   "requirement": "Compliance with the duties under section 149 of the Equality Act 2010 may involve treating some persons more favourably than others, but it does not permit conduct that would otherwise be prohibited by or under the Act.",
+   "quote": "Compliance with the duties in this section may involve treating some persons more favourably than others; but that is not to be taken as permitting conduct that would otherwise be prohibited by or under this Act"
+  },
+  {
+   "requirement": "The relevant protected characteristics for the public sector equality duty are age, disability, gender reassignment, pregnancy and maternity, race, religion or belief, sex, and sexual orientation.",
+   "quote": "The relevant protected characteristics are— age;disability;gender reassignment;pregnancy and maternity;race;religion or belief;sex;sexual orientation"
+  },
+  {
+   "requirement": "A reference to conduct that is prohibited by or under the Equality Act 2010 includes a reference to a breach of an equality clause or rule, or a breach of a non-discrimination rule.",
+   "quote": "A reference to conduct that is prohibited by or under this Act includes a reference to— (a) a breach of an equality clause or rule; (b) a breach of a non-discrimination rule"
+  },
+  {
+   "requirement": "Schedule 18, which provides exceptions to section 149 of the Equality Act 2010, has effect.",
+   "quote": "Schedule 18 (exceptions) has effect"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}
