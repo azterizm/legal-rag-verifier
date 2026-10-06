@@ -124,8 +124,8 @@ def run(
     return outcomes, raw
 
 
-def _check_sealed(battery: Path) -> None:
-    """A held-out battery runs only if a seal matches it, and only once (plan R1)."""
+def _check_sealed(battery: Path, detector: str) -> None:
+    """A held-out battery runs only if a seal matches it, and once per detector (plan R1)."""
     digest = hashlib.sha256(battery.read_bytes()).hexdigest()
     seals = sorted((ROOT / "batteries/verifier/seals").glob("*.json"))
     match = [
@@ -133,9 +133,9 @@ def _check_sealed(battery: Path) -> None:
     ]
     if not match:
         raise SystemExit("held-out battery is not sealed (batteries/verifier/seal.py)")
-    done = ROOT / "results" / f"{match[0].stem}.done"
+    done = ROOT / "results" / f"{match[0].stem}-{detector}.done"
     if done.exists():
-        raise SystemExit(f"{match[0].stem} has already been run ({done}); a seal runs once")
+        raise SystemExit(f"{match[0].stem} has already run with {detector} ({done})")
     done.parent.mkdir(exist_ok=True)
     done.write_text(datetime.now(UTC).isoformat(timespec="seconds") + "\n", encoding="utf-8")
 
@@ -157,7 +157,9 @@ def main() -> None:
 
     rows = load_rows(args.battery)
     if any(r.get("split") == "heldout" for r in rows):
-        _check_sealed(args.battery)
+        if args.sweep:
+            raise SystemExit("no threshold sweep on a held-out battery")
+        _check_sealed(args.battery, args.nli)
     if args.sweep and any(r.get("split") != "dev" for r in rows):
         raise SystemExit("--sweep calibrates thresholds: dev split only (plan R1)")
     built = premises_for(rows, ROOT / "data", args.enrichment)
