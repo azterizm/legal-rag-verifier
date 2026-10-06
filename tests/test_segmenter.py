@@ -62,3 +62,11 @@ def test_streaming_dot_at_end_is_undecided() -> None:
 
 def test_closing_quote_kept_with_sentence() -> None:
     assert texts('He said "stop." Then left.') == ['He said "stop."', "Then left."]
+
+
+def test_dot_then_space_is_undecided_mid_stream() -> None:
+    # Llama 3 decodes " " and "124" as separate tokens: "s. " alone must not end the sentence.
+    assert find_boundary("Under s. ") is None
+    assert find_boundary("Under s. 124 the cap applies. ") is None
+    assert find_boundary("Under s. 124 the cap applies. It") == len("Under s. 124 the cap applies.")
+    assert find_boundary("The cap applies. ", final=True) == len("The cap applies.")

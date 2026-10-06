@@ -210,3 +210,36 @@ Findings (not tuned after the sealed run; recorded for the next iteration):
   date asked. Proposed, not applied.
 - Small defects seen: an instrument title containing a comma is truncated ("Companies, Partnerships and Groups …
   Regulations 2015"); "item 7" in a quoted schedule counts as a bare number.
+
+## M3 live run: engine + HF backend on the Mac (2026-10-06, development only)
+
+Generator `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit@f15c379f` on MPS (bnb 4-bit, fp16; loads only with serial
+weight loading, `HF_DEACTIVATE_ASYNC_LOAD=1`), verifier = defaults with `nli-deberta-v3-base`, premise = ERA 1996
+s.124 fixture + the S.I. 2026/310 fact window (713 prompt tokens). `scripts/live_demo.py`; traces in
+`results/live-demo-{allow,ban}[-injected].json`. Greedy, so both steering modes see the same first draft.
+
+**Rollback invariant.** Tiny Llama, CPU fp32: logits after rollback vs fresh prefill differ by at most 4.5e-8
+(not bit-identical: one-token re-feed vs full prefill), argmax and greedy continuation identical (test).
+Llama 8B, MPS 4-bit fp16: argmax equal, max |Δlogit| 0.10; each call reuses all of the committed prefix except
+the last token (`prefix_cache_hit_tokens = committed − 1`).
+
+| Run | Answer | Rollbacks | Outcome |
+|---|---|---:|---|
+| Q1 cap, allow / ban | "…the lower of £123,543 and 52 multiplied by a week's pay… set in section 124(1ZA)…" | 0 | correct, both modes |
+| Q2 whistleblowing, allow / ban | "The limit… does not apply… section 124(1A)… by virtue of section 100." | 1 | see below |
+| Q1 + injected "£85,000" sentence, **allow** | refusal | 2 | figure forced to £123,543 (tokens ` £` `123` `,` `543`), then QUALIFIER_DROPPED → refusal |
+| Q1 + injected "£85,000" sentence, **ban** | "Under the Employment Rights Act 1996, … the lower of £123,543 and 52 … week's pay…" | 1 | recovered, correct |
+
+Decode ≈ 2 tok/s (bnb 4-bit on MPS); claim check 1–3 ms and NLI (base) 0.7–2.1 s per answer.
+
+Findings:
+- **Allow vs ban, first measurement.** The allow-list repairs the figure but keeps the sentence frame, so the
+  qualifier the figure needs ("the lower of … and 52 weeks' pay") is still missing; the verifier catches that and
+  the second rollback is the refusal. Ban restarts the sentence and the model writes the full rule. One prompt
+  only; the grid measures this properly. Option (not applied): after an allow retry fails on a different
+  reason, fall back to ban before refusing.
+- **NLI false rollback on a correct "No, …"**: "No, the limit … does not apply if the employee was dismissed for
+  whistleblowing." scored contradiction 1.0 (correct per s.124(1A)); the ban on "No" gave the same claim
+  without the "No", emitted as CONNECTIVE. A negation/polarity weakness of the NLI head, as on the batteries.
+- **Undetected omission**: the model quoted s.124(1A) but stopped the list at "section 100" (the whistleblowing
+  ground is s.103A). Every claim in the sentence is grounded; truncating a list is outside the claim check.

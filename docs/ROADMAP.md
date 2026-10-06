@@ -18,12 +18,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · **M2: NLI head + latency ✅, dev battery drafted — ⛔ label review** |
 | Next step | After your review: run the battery (claim-only, small, base), calibrate on dev, pick small vs base |
-| Waiting on you | Nothing. Next: M3 (engine + HF backend). Proposed, not applied: date-filtered NLI candidates |
+| Waiting on you | M3 done. Next needs your go: M4 (SGLang + Modal L4, spend). Proposed, not applied: date-filtered NLI candidates; allow→ban fallback before refusal |
 | **Reminder at benchmarking** | Tell the user: legal-rag-audit's live-run responses (`~/Code/legal-rag-audit/run/live/`) exist and were skipped by decision (stop 5); raise them again when the battery is run / the grid is benchmarked |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (18): **M3 done: engine + HF backend.** `engine.InFlightGenerator` (request-per-sentence, allow /
+  ban steering, refusal after 2 per point, canonical trace), `Backend` protocol (plus the backend's tokenizer:
+  `chat`/`encode`/`decode`, needed for allow-list tokens), `backends/hf.py` (`DynamicCache` crop + re-feed of the
+  last token). Llama 3.1 8B bnb 4-bit runs on MPS with serial weight loading (transformers 5.18's threaded
+  loader segfaults on MPS). Segmenter: "s. " mid-stream is now undecided until the next token. An empty retry
+  after a rollback is refused, not silently dropped. Live run in `docs/measurements.md`: injected £85,000
+  caught both ways; ban recovered, allow fixed the figure but hit QUALIFIER_DROPPED and refused.
 
 - 2026-10-06 (17): **legal-rag-audit live answers benchmarked, anonymised (your go).** Read-only; nothing run on
   the audit side. Targets → System A / System B; ids, tool names, timestamps, raw payloads dropped; answers kept
@@ -215,14 +223,16 @@ Plan §Key decisions 2–5, R2–R5, R8, R10.
       false-rollback rate on grounded paraphrases, recall per class.
 
 ### M3 — Engine + HF backend
-- [ ] `engine.InFlightGenerator(backend, verifier, max_rollbacks=2, max_total_rollbacks, refusal)`;
+- [x] `engine.InFlightGenerator(backend, verifier, max_rollbacks=2, max_total_rollbacks, refusal)`;
       `generate_verified(query, premise) -> Answer(text, trace)`.
-- [ ] `Backend` protocol (`extend(committed, stop, max_new, constraint) -> Segment`); `Constraint` = `Ban` | `Allow`.
-- [ ] `backends/hf.py`: `DynamicCache` aligned to the committed prefix; truncate on reject; logits mask.
-- [ ] Invariant test (tiny-random Llama, CPU): rollback-then-extend logits == fresh prefill logits.
-- [ ] Scripted fake backend: ban, allow-list, refusal, trace; injected £85,000 caught and removed.
-- [ ] First step: confirm bnb 4-bit Llama 3.1 8B loads and decodes on MPS (fallback Qwen2.5-3B).
-- [ ] `scripts/live_demo.py` on the real s.124 premise; prints the trace.
+- [x] `Backend` protocol (`extend(committed, stop, max_new, constraint) -> Segment`, plus the backend's
+      tokenizer: `chat`, `encode`, `decode`); `Constraint` = `Ban` | `Allow`.
+- [x] `backends/hf.py`: `DynamicCache` aligned to the committed prefix; truncate on reject; logits mask.
+- [x] Invariant test (tiny-random Llama, CPU fp32): rollback-then-extend logits equal a fresh prefill within
+      1e-7 (not bit-identical: one-token re-feed vs full prefill), argmax and greedy continuation identical.
+- [x] Scripted fake backend: ban, allow-list, refusal, trace; injected £85,000 caught and removed.
+- [x] First step: bnb 4-bit Llama 3.1 8B loads and decodes on MPS (needs serial weight loading).
+- [x] `scripts/live_demo.py` on the real s.124 premise; prints the trace.
 
 ### M4 — SGLang backend + Modal L4 spike 🧑 (spend) — later session
 

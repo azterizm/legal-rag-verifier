@@ -1,0 +1,256 @@
+{
+ "invariant": {
+  "argmax_equal": true,
+  "max_abs_logit_diff": 0.103515625,
+  "prefix_cache_hit_tokens": 51,
+  "prompt_tokens": 52
+ },
+ "runs": [
+  {
+   "query": "What is the maximum compensatory award for unfair dismissal, and where is it set?",
+   "injected": "The maximum compensatory award is £85,000.",
+   "answer": "Under the Employment Rights Act 1996, the maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned. This is set in section 124(1ZA) of the Act.",
+   "trace": {
+    "backend": "hf",
+    "model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit@f15c379fb32bb402fa06a7ae9aecb1febf4b79ec",
+    "verifier": {
+     "config": {
+      "entail_threshold": 0.7,
+      "contradict_threshold": 0.4,
+      "neutral_policy": "connective",
+      "top_k": 2,
+      "align_ratio": 0.5,
+      "neutral_with_grounded_claim": "emit"
+     },
+     "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+    },
+    "engine": {
+     "max_rollbacks": 2,
+     "max_total_rollbacks": 8,
+     "steering": "ban",
+     "refusal": "I cannot state this point reliably from the provisions provided.",
+     "max_new_tokens": 200
+    },
+    "prompt_tokens": 712,
+    "answer_tokens": 54,
+    "sentences": [
+     {
+      "text": "Under the Employment Rights Act 1996, the maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+      "outcome": "emitted",
+      "rollbacks": 1,
+      "recovered_by": "ban",
+      "attempts": [
+       {
+        "verdict": {
+         "text": "The maximum compensatory award is £85,000.",
+         "span": [
+          0,
+          42
+         ],
+         "verdict": "ROLLBACK",
+         "reasons": [
+          "UNGROUNDED_FIGURE"
+         ],
+         "claims": [
+          {
+           "kind": "MONEY",
+           "value": "GBP:85000",
+           "text": "£85,000",
+           "span": [
+            34,
+            41
+           ],
+           "grounded_by": null,
+           "reason": "UNGROUNDED_FIGURE"
+          }
+         ],
+         "deontics": [],
+         "aligned_windows": [
+          0,
+          2,
+          1
+         ],
+         "nli": null,
+         "repair": {
+          "mode": "allow",
+          "offset": 34,
+          "candidates": [
+           "£123,543"
+          ],
+          "rejected": "£85,000"
+         },
+         "claim_latency_ns": 281291,
+         "nli_latency_ns": 0,
+         "details": []
+        },
+        "steering": null,
+        "constraint": null,
+        "tokens": 11,
+        "tokens_reused": 0,
+        "tokens_discarded": 12,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 0,
+        "decode_latency_ns": 4868577458
+       },
+       {
+        "verdict": {
+         "text": "Under the Employment Rights Act 1996, the maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+         "span": [
+          0,
+          173
+         ],
+         "verdict": "EMIT",
+         "reasons": [
+          "GROUNDED"
+         ],
+         "claims": [
+          {
+           "kind": "INSTRUMENT",
+           "value": "employment rights act 1996",
+           "text": "Employment Rights Act 1996",
+           "span": [
+            10,
+            36
+           ],
+           "grounded_by": "metadata",
+           "reason": null
+          },
+          {
+           "kind": "MONEY",
+           "value": "GBP:123543",
+           "text": "£123,543",
+           "span": [
+            106,
+            114
+           ],
+           "grounded_by": "window",
+           "reason": null
+          },
+          {
+           "kind": "NUMBER",
+           "value": "52",
+           "text": "52",
+           "span": [
+            119,
+            121
+           ],
+           "grounded_by": "window",
+           "reason": null
+          }
+         ],
+         "deontics": [],
+         "aligned_windows": [
+          2,
+          0,
+          1
+         ],
+         "nli": {
+          "entailment": 0.013913,
+          "contradiction": 0.026519,
+          "neutral": 0.959567,
+          "window": 2,
+          "latency_ns": 697468167,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": null,
+         "claim_latency_ns": 1812083,
+         "nli_latency_ns": 697468167,
+         "details": []
+        },
+        "steering": "ban",
+        "constraint": {
+         "ban": [
+          791
+         ]
+        },
+        "tokens": 39,
+        "tokens_reused": 0,
+        "tokens_discarded": 0,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 1461,
+        "decode_latency_ns": 19817690250
+       }
+      ]
+     },
+     {
+      "text": "This is set in section 124(1ZA) of the Act.",
+      "outcome": "emitted",
+      "rollbacks": 0,
+      "recovered_by": null,
+      "attempts": [
+       {
+        "verdict": {
+         "text": "This is set in section 124(1ZA) of the Act.",
+         "span": [
+          0,
+          43
+         ],
+         "verdict": "EMIT",
+         "reasons": [
+          "GROUNDED"
+         ],
+         "claims": [
+          {
+           "kind": "CITATION",
+           "value": "s124/1ZA",
+           "text": "section 124(1ZA)",
+           "span": [
+            15,
+            31
+           ],
+           "grounded_by": "premise",
+           "reason": null
+          }
+         ],
+         "deontics": [],
+         "aligned_windows": [
+          6,
+          0,
+          1
+         ],
+         "nli": {
+          "entailment": 0.992597,
+          "contradiction": 0.000256,
+          "neutral": 0.007147,
+          "window": 6,
+          "latency_ns": 691600833,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": null,
+         "claim_latency_ns": 210584,
+         "nli_latency_ns": 691600833,
+         "details": []
+        },
+        "steering": null,
+        "constraint": null,
+        "tokens": 15,
+        "tokens_reused": 1,
+        "tokens_discarded": 0,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 1516,
+        "decode_latency_ns": 7411903499
+       }
+      ]
+     }
+    ],
+    "totals": {
+     "sentences": 2,
+     "refused": 0,
+     "rollbacks": 1,
+     "recovered_by_allow": 0,
+     "recovered_by_ban": 1,
+     "tokens_discarded": 12,
+     "decode_calls": 6,
+     "prefix_cache_hit_tokens": 2977,
+     "claim_latency_ns": 2303958,
+     "nli_latency_ns": 1389069000,
+     "decode_latency_ns": 32098171207,
+     "elapsed_ns": 33492721709
+    },
+    "stop_reason": "eos"
+   }
+  }
+ ]
+}

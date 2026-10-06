@@ -79,6 +79,48 @@ heading: instrument, citation, section title) and each window joined with a wind
 | deontic shift | allow | start of the modal | surfaces of the aligned windows' classes (`must`/`shall`, `may`, …) |
 | dropped qualifier, NLI failures, no candidate | ban | 0 | — |
 
+## 4a. Engine (M3, `legal_rag_verifier.engine`, stdlib) and HF backend (`[hf]` extra)
+
+```python
+from legal_rag_verifier.engine import InFlightGenerator, Answer, Backend, Segment, Ban, Allow
+from legal_rag_verifier.backends.hf import HFBackend
+
+backend = HFBackend.load("unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit")  # cuda > mps > cpu
+engine = InFlightGenerator(
+    backend,
+    Verifier(nli),
+    max_rollbacks=2,
+    max_total_rollbacks=8,
+    steering="allow",  # or "ban"
+    refusal=DEFAULT_REFUSAL,
+    max_new_tokens=512,
+)
+answer = engine.generate_verified(query, premise)  # Answer(text, trace); .trace_json()
+```
+
+`Backend` protocol (one engine, thin adapters): `name`, `model_id`, `chat(messages) -> Tokens`,
+`encode(text)`, `decode(tokens)`, and
+`extend(committed, *, stop, max_new, constraint) -> Segment(tokens, text, finish_reason "stop"|"length"|"eos",
+prefix_cache_hit_tokens, latency_ns)`. The tokenizer methods are there because the allow-list is built from the
+backend's own tokens (plan decision 6). `Constraint = Ban(token_ids)` (first step only) `| Allow(sequences)`
+(token trie; stop strings are not honoured while the span is open; lifts when a sequence completes).
+
+Loop per sentence: `extend` to a stop (`.` `;` `\n`) → `find_boundary` confirms it (a trailing `.` peeks one
+token; a false stop extends the same sentence) → `check_sentence` → commit, or roll back: **allow** keeps the
+sentence up to the claim and constrains the claim span to the repair's candidates (rejected value excluded);
+**ban** restarts at the sentence's first non-space token with that token banned (bans accumulate per position).
+Two rollbacks on one point, or a retry that produces nothing → the refusal sentence; past `max_total_rollbacks`
+the answer ends with it (`stop_reason "rollback_budget"`).
+
+Trace: `backend, model, verifier{config, nli}, engine{…}, prompt_tokens, answer_tokens, sentences[{text,
+outcome emitted|refused, rollbacks, recovered_by allow|ban|null, attempts[{verdict, steering, constraint,
+tokens, tokens_reused, tokens_discarded, decode_calls, prefix_cache_hit_tokens, decode_latency_ns}]}],
+totals{…}, stop_reason`.
+
+`HFBackend` keeps a `DynamicCache` aligned to the last sequence decoded; `extend` keeps the longest shared prefix,
+crops the rest (rollback) and re-feeds the last committed token (the cache holds keys/values, not logits).
+On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader segfaults copying to MPS).
+
 ## 5. Names to confirm (⛔)
 
 1. **Reason codes**: `GROUNDED CONNECTIVE UNGROUNDED_FIGURE UNGROUNDED_CITATION UNGROUNDED_INSTRUMENT
@@ -89,7 +131,8 @@ heading: instrument, citation, section title) and each window joined with a wind
 3. **`align_ratio=0.5`**: new parameter (not in the plan), see ROADMAP stop 1.
 4. **Verdict names** `EMIT` / `ROLLBACK` (as in 04).
 5. **Module names**: `premise`, `verifier`, `claims`, `citations`, `deontic`, `qualifiers`, `segmenter`, `index`,
-   `align`, `corpus`, `numbers`. Vault 05's imports (`nli.SentenceNLIVerifier`, `engine.InFlightGenerator`) land in M2/M3.
+   `align`, `corpus`, `numbers`. Vault 05's imports (`nli.SentenceNLIVerifier`, `engine.InFlightGenerator`) landed in M2/M3; vault 05
+   constructs the generator from `model_path=…`, the plan (and this API) from a backend: vault correction pending your go.
 
 ## 6. Known limits (measured in M2, not fixed by guesswork)
 

@@ -1,0 +1,438 @@
+{
+ "invariant": {
+  "argmax_equal": true,
+  "max_abs_logit_diff": 0.103515625,
+  "prefix_cache_hit_tokens": 51,
+  "prompt_tokens": 52
+ },
+ "runs": [
+  {
+   "query": "What is the maximum compensatory award for unfair dismissal, and where is it set?",
+   "answer": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned. This is set in section 124(1ZA) of the Employment Rights Act 1996.",
+   "trace": {
+    "backend": "hf",
+    "model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit@f15c379fb32bb402fa06a7ae9aecb1febf4b79ec",
+    "verifier": {
+     "config": {
+      "entail_threshold": 0.7,
+      "contradict_threshold": 0.4,
+      "neutral_policy": "connective",
+      "top_k": 2,
+      "align_ratio": 0.5,
+      "neutral_with_grounded_claim": "emit"
+     },
+     "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+    },
+    "engine": {
+     "max_rollbacks": 2,
+     "max_total_rollbacks": 8,
+     "steering": "ban",
+     "refusal": "I cannot state this point reliably from the provisions provided.",
+     "max_new_tokens": 200
+    },
+    "prompt_tokens": 712,
+    "answer_tokens": 50,
+    "sentences": [
+     {
+      "text": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+      "outcome": "emitted",
+      "rollbacks": 0,
+      "recovered_by": null,
+      "attempts": [
+       {
+        "verdict": {
+         "text": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+         "span": [
+          0,
+          135
+         ],
+         "verdict": "EMIT",
+         "reasons": [
+          "GROUNDED"
+         ],
+         "claims": [
+          {
+           "kind": "MONEY",
+           "value": "GBP:123543",
+           "text": "£123,543",
+           "span": [
+            68,
+            76
+           ],
+           "grounded_by": "window",
+           "reason": null
+          },
+          {
+           "kind": "NUMBER",
+           "value": "52",
+           "text": "52",
+           "span": [
+            81,
+            83
+           ],
+           "grounded_by": "window",
+           "reason": null
+          }
+         ],
+         "deontics": [],
+         "aligned_windows": [
+          2,
+          0,
+          1
+         ],
+         "nli": {
+          "entailment": 0.034315,
+          "contradiction": 0.028365,
+          "neutral": 0.93732,
+          "window": 2,
+          "latency_ns": 691133458,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": null,
+         "claim_latency_ns": 310959,
+         "nli_latency_ns": 691133458,
+         "details": []
+        },
+        "steering": null,
+        "constraint": null,
+        "tokens": 30,
+        "tokens_reused": 0,
+        "tokens_discarded": 0,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 741,
+        "decode_latency_ns": 19654433334
+       }
+      ]
+     },
+     {
+      "text": "This is set in section 124(1ZA) of the Employment Rights Act 1996.",
+      "outcome": "emitted",
+      "rollbacks": 0,
+      "recovered_by": null,
+      "attempts": [
+       {
+        "verdict": {
+         "text": "This is set in section 124(1ZA) of the Employment Rights Act 1996.",
+         "span": [
+          0,
+          66
+         ],
+         "verdict": "EMIT",
+         "reasons": [
+          "GROUNDED"
+         ],
+         "claims": [
+          {
+           "kind": "CITATION",
+           "value": "s124/1ZA",
+           "text": "section 124(1ZA)",
+           "span": [
+            15,
+            31
+           ],
+           "grounded_by": "premise",
+           "reason": null
+          },
+          {
+           "kind": "INSTRUMENT",
+           "value": "employment rights act 1996",
+           "text": "Employment Rights Act 1996",
+           "span": [
+            39,
+            65
+           ],
+           "grounded_by": "metadata",
+           "reason": null
+          }
+         ],
+         "deontics": [],
+         "aligned_windows": [
+          6,
+          0,
+          1
+         ],
+         "nli": {
+          "entailment": 0.992097,
+          "contradiction": 0.000278,
+          "neutral": 0.007625,
+          "window": 6,
+          "latency_ns": 690832542,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": null,
+         "claim_latency_ns": 252041,
+         "nli_latency_ns": 690832542,
+         "details": []
+        },
+        "steering": null,
+        "constraint": null,
+        "tokens": 20,
+        "tokens_reused": 1,
+        "tokens_discarded": 0,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 1503,
+        "decode_latency_ns": 9916260584
+       }
+      ]
+     }
+    ],
+    "totals": {
+     "sentences": 2,
+     "refused": 0,
+     "rollbacks": 0,
+     "recovered_by_allow": 0,
+     "recovered_by_ban": 0,
+     "tokens_discarded": 0,
+     "decode_calls": 4,
+     "prefix_cache_hit_tokens": 2244,
+     "claim_latency_ns": 563000,
+     "nli_latency_ns": 1381966000,
+     "decode_latency_ns": 29570693918,
+     "elapsed_ns": 30955019084
+    },
+    "stop_reason": "eos"
+   }
+  },
+  {
+   "query": "Does the limit on the compensatory award apply if the employee was dismissed for whistleblowing?",
+   "answer": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing. This is because the exception in section 124(1A) of the Employment Rights Act 1996 applies, which states that subsection (1) shall not apply to compensation awarded, or a compensatory award made, to a person in a case where he is regarded as unfairly dismissed by virtue of section 100.",
+   "trace": {
+    "backend": "hf",
+    "model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit@f15c379fb32bb402fa06a7ae9aecb1febf4b79ec",
+    "verifier": {
+     "config": {
+      "entail_threshold": 0.7,
+      "contradict_threshold": 0.4,
+      "neutral_policy": "connective",
+      "top_k": 2,
+      "align_ratio": 0.5,
+      "neutral_with_grounded_claim": "emit"
+     },
+     "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+    },
+    "engine": {
+     "max_rollbacks": 2,
+     "max_total_rollbacks": 8,
+     "steering": "ban",
+     "refusal": "I cannot state this point reliably from the provisions provided.",
+     "max_new_tokens": 200
+    },
+    "prompt_tokens": 713,
+    "answer_tokens": 83,
+    "sentences": [
+     {
+      "text": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing.",
+      "outcome": "emitted",
+      "rollbacks": 1,
+      "recovered_by": "ban",
+      "attempts": [
+       {
+        "verdict": {
+         "text": "No, the limit on the compensatory award does not apply if the employee was dismissed for whistleblowing.",
+         "span": [
+          0,
+          104
+         ],
+         "verdict": "ROLLBACK",
+         "reasons": [
+          "NLI_CONTRADICTION"
+         ],
+         "claims": [],
+         "deontics": [],
+         "aligned_windows": [
+          1,
+          5
+         ],
+         "nli": {
+          "entailment": 3.3e-05,
+          "contradiction": 0.999316,
+          "neutral": 0.000651,
+          "window": 1,
+          "latency_ns": 691269250,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": {
+          "mode": "ban",
+          "offset": 0,
+          "candidates": [],
+          "rejected": ""
+         },
+         "claim_latency_ns": 208250,
+         "nli_latency_ns": 691269250,
+         "details": []
+        },
+        "steering": null,
+        "constraint": null,
+        "tokens": 21,
+        "tokens_reused": 0,
+        "tokens_discarded": 21,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 733,
+        "decode_latency_ns": 15401129917
+       },
+       {
+        "verdict": {
+         "text": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing.",
+         "span": [
+          0,
+          100
+         ],
+         "verdict": "EMIT",
+         "reasons": [
+          "CONNECTIVE"
+         ],
+         "claims": [],
+         "deontics": [],
+         "aligned_windows": [
+          2,
+          0,
+          5,
+          1
+         ],
+         "nli": {
+          "entailment": 0.000375,
+          "contradiction": 0.001923,
+          "neutral": 0.997701,
+          "window": 2,
+          "latency_ns": 691429833,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": null,
+         "claim_latency_ns": 197126,
+         "nli_latency_ns": 691429833,
+         "details": []
+        },
+        "steering": "ban",
+        "constraint": {
+         "ban": [
+          2822
+         ]
+        },
+        "tokens": 19,
+        "tokens_reused": 0,
+        "tokens_discarded": 0,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 1443,
+        "decode_latency_ns": 9912851125
+       }
+      ]
+     },
+     {
+      "text": "This is because the exception in section 124(1A) of the Employment Rights Act 1996 applies, which states that subsection (1) shall not apply to compensation awarded, or a compensatory award made, to a person in a case where he is regarded as unfairly dismissed by virtue of section 100.",
+      "outcome": "emitted",
+      "rollbacks": 0,
+      "recovered_by": null,
+      "attempts": [
+       {
+        "verdict": {
+         "text": "This is because the exception in section 124(1A) of the Employment Rights Act 1996 applies, which states that subsection (1) shall not apply to compensation awarded, or a compensatory award made, to a person in a case where he is regarded as unfairly dismissed by virtue of section 100.",
+         "span": [
+          0,
+          286
+         ],
+         "verdict": "EMIT",
+         "reasons": [
+          "GROUNDED"
+         ],
+         "claims": [
+          {
+           "kind": "CITATION",
+           "value": "s124/1A",
+           "text": "section 124(1A)",
+           "span": [
+            33,
+            48
+           ],
+           "grounded_by": "premise",
+           "reason": null
+          },
+          {
+           "kind": "INSTRUMENT",
+           "value": "employment rights act 1996",
+           "text": "Employment Rights Act 1996",
+           "span": [
+            56,
+            82
+           ],
+           "grounded_by": "metadata",
+           "reason": null
+          },
+          {
+           "kind": "CITATION",
+           "value": "~/1",
+           "text": "subsection (1)",
+           "span": [
+            110,
+            124
+           ],
+           "grounded_by": "window",
+           "reason": null
+          },
+          {
+           "kind": "CITATION",
+           "value": "s100",
+           "text": "section 100",
+           "span": [
+            274,
+            285
+           ],
+           "grounded_by": "window",
+           "reason": null
+          }
+         ],
+         "deontics": [
+          "PROHIBITION"
+         ],
+         "aligned_windows": [
+          2,
+          0
+         ],
+         "nli": {
+          "entailment": 0.006925,
+          "contradiction": 2.1e-05,
+          "neutral": 0.993054,
+          "window": 2,
+          "latency_ns": 688713417,
+          "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+          "candidate": "window"
+         },
+         "repair": null,
+         "claim_latency_ns": 513333,
+         "nli_latency_ns": 688713417,
+         "details": []
+        },
+        "steering": null,
+        "constraint": null,
+        "tokens": 64,
+        "tokens_reused": 1,
+        "tokens_discarded": 0,
+        "decode_calls": 2,
+        "prefix_cache_hit_tokens": 1527,
+        "decode_latency_ns": 31750335958
+       }
+      ]
+     }
+    ],
+    "totals": {
+     "sentences": 2,
+     "refused": 0,
+     "rollbacks": 1,
+     "recovered_by_allow": 0,
+     "recovered_by_ban": 1,
+     "tokens_discarded": 21,
+     "decode_calls": 6,
+     "prefix_cache_hit_tokens": 3703,
+     "claim_latency_ns": 918709,
+     "nli_latency_ns": 2071412500,
+     "decode_latency_ns": 57064317000,
+     "elapsed_ns": 59138351583
+    },
+    "stop_reason": "eos"
+   }
+  }
+ ]
+}

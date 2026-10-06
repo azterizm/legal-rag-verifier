@@ -141,8 +141,9 @@ def _is_boundary_at(text: str, i: int, *, final: bool) -> bool | None:
         return nxt == "\n"
     if ch != ".":
         return False
-    if nxt is None:
-        # A trailing "." is undecided mid-stream; at the end it ends the sentence.
+    if nxt is None or not text[i + 1 :].strip():
+        # A trailing "." (or ". ") is undecided mid-stream: whether "124" follows "s. " decides
+        # it. At the end of the stream it ends the sentence.
         return True if final else None
     if not nxt.isspace() and nxt not in "\"'’”)]":
         return False  # "£68.4k", "e.g.", "S.I." mid-token
