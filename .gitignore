@@ -39,3 +39,6 @@ anchors_xml/
 # Run logs and stderr captures
 results/*.log
 results/*.err
+
+# Third-party answers (anonymised) from legal-rag-audit live runs: local only, never committed
+external/

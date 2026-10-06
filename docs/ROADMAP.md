@@ -18,12 +18,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · **M2: NLI head + latency ✅, dev battery drafted — ⛔ label review** |
 | Next step | After your review: run the battery (claim-only, small, base), calibrate on dev, pick small vs base |
-| Waiting on you | Reminder raised (benchmarking): legal-rag-audit live-run responses skipped; your call. Next: M3 (engine + HF backend) |
+| Waiting on you | Nothing. Next: M3 (engine + HF backend). Proposed, not applied: date-filtered NLI candidates |
 | **Reminder at benchmarking** | Tell the user: legal-rag-audit's live-run responses (`~/Code/legal-rag-audit/run/live/`) exist and were skipped by decision (stop 5); raise them again when the battery is run / the grid is benchmarked |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (17): **legal-rag-audit live answers benchmarked, anonymised (your go).** Read-only; nothing run on
+  the audit side. Targets → System A / System B; ids, tool names, timestamps, raw payloads dropped; answers kept
+  local and git-ignored, extraction script (which names targets) kept outside the repo. All 3 audit FAILs caught,
+  28/28 correct abstentions passed; correct dated answers heavily over-flagged (open-world context; NLI wrong on
+  dated versions). Details in `docs/measurements.md`. Empty-premise guard added (NLI skipped, test).
 
 - 2026-10-06 (16): **Held-out sealed and run (your go, "all good. proceed").** Seal `heldout-2026-10-06`
   committed before the run (`a4d9726`); run-once guard per detector. Held-out, base + enrichment: GP false rollback

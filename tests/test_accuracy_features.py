@@ -217,3 +217,11 @@ def test_before_a_date_means_the_day_before() -> None:
     assert (
         not Verifier().check_sentence(premise, "Since 6 April 2026 the cap has been £464.").emitted
     )
+
+
+def test_empty_premise_skips_nli_and_grounds_nothing() -> None:
+    scorer = Scripted()
+    verdict = Verifier(scorer).check_sentence(Premise(()), "The penalty is £30,000.")
+    assert verdict.reasons == (Reason.UNGROUNDED_FIGURE,)
+    assert Verifier(scorer).check_sentence(Premise(()), "I cannot find that Act.").emitted
+    assert scorer.hypotheses == []

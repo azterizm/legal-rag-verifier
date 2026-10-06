@@ -283,7 +283,7 @@ class Verifier:
 
         nli_result: NLIResult | None = None
         judged: tuple[int, ...] = ()
-        if self.nli is not None:
+        if self.nli is not None and index.windows:  # an empty premise has nothing to entail
             nli_result, ranked, judged = self._judge(index, sentence)
             aligned = self._expand(index, ranked)
         else:

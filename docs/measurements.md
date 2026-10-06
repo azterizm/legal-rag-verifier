@@ -178,3 +178,35 @@ rows (34) — all-pass FR 27.8 % (5/18), recall 93.8 % (15/16), precision 75.0 %
 Reading: the false-rollback rate held from dev to held-out (7.2 → 7.3 %); recall fell 5.4 pp and precision 2.5 pp,
 the expected dev-to-held-out shrink. Weakest classes: dropped_qualifier (6/18 caught) and unsupported_plausible
 (29/41). Wall time 666 s for 346 sentences (≈ 1.9 s each on the M4); latency remains the open problem (L4, M4).
+
+## Real answers from legal-rag-audit live runs, anonymised (2026-10-06)
+
+Source: the audit's own captured answers and its own per-answer outcomes (`point_in_time`, `abstention`), read
+only; nothing was run on the audit side. Two third-party targets, anonymised as **System A** (44 answers) and
+**System B** (11 answers with a captured answer); product names in answers replaced, run/chat ids, tool names,
+timestamps, citations and raw payloads dropped. The anonymised answers stay local and git-ignored
+(`external/audit_live/`); only counts are committed (`results/audit-live-*.json`, `scripts/score_audit_live.py`).
+48 answers scored (era-124 has no dated text here: 7 skipped). Premise: the dated version in force on the date
+asked ("version") or every version plus the current text ("timeline"); fictional-instrument answers against an
+empty premise (no source exists).
+
+| Detector / premise | Audit FAILs flagged | Correct abstentions passed | In-force-figure sentences emitted | Superseded-figure sentences flagged | Share of sentences rolled back in correct answers |
+|---|---:|---:|---:|---:|---:|
+| claim check / version | 3 / 3 | 28 / 28 | 18 / 38 | 5 / 5 | 37.9 % |
+| claim check / timeline | 3 / 3 | 28 / 28 | 20 / 38 | 5 / 5 | 37.2 % |
+| base + enrichment / version | 3 / 3 | 28 / 28 | 13 / 38 | 5 / 5 | 50.0 % |
+| base + enrichment / timeline | 3 / 3 | 28 / 28 | 4 / 38 | 5 / 5 | 55.4 % |
+
+Findings (not tuned after the sealed run; recorded for the next iteration):
+- **Every audit failure is caught** (two fabricated figures for a fictional Act, one superseded figure), and no
+  correct abstention is flagged, including those that name the fictional Act to deny it.
+- **Real answers carry open-world context** (amendment history, amending S.I.s, other sections, other years'
+  figures). At sentence granularity one unsupported detail rolls back a correct sentence: about half the correct
+  dated-figure sentences are rolled back. This matters most for post-hoc checking of closed models (4A/4C); the
+  in-flight engine generates against the premise only.
+- **NLI is harmful on dated material.** With every version in the premise, the NLI judges a correct historical
+  figure against the current text and calls it a contradiction (4 / 38 emitted). The deterministic "as at" check
+  handles the figure correctly; the principled fix is to restrict NLI candidates to the windows in force on the
+  date asked. Proposed, not applied.
+- Small defects seen: an instrument title containing a comma is truncated ("Companies, Partnerships and Groups …
+  Regulations 2015"); "item 7" in a quoted schedule counts as a bare number.
