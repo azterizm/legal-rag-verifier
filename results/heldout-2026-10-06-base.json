@@ -1,0 +1,76 @@
+{
+  "classes": {
+    "connective": {
+      "n": 7,
+      "rolled_back": 0,
+      "false_rollback_rate": 0.0
+    },
+    "dropped_qualifier": {
+      "n": 18,
+      "rolled_back": 6,
+      "recall": 0.3333
+    },
+    "grounded_paraphrase": {
+      "n": 179,
+      "rolled_back": 13,
+      "false_rollback_rate": 0.0726
+    },
+    "modal_shift": {
+      "n": 16,
+      "rolled_back": 15,
+      "recall": 0.9375
+    },
+    "premise_correction": {
+      "n": 5,
+      "rolled_back": 2,
+      "false_rollback_rate": 0.4
+    },
+    "unsupported_plausible": {
+      "n": 41,
+      "rolled_back": 29,
+      "recall": 0.7073
+    },
+    "value_swap": {
+      "n": 11,
+      "rolled_back": 9,
+      "recall": 0.8182
+    },
+    "version_swap": {
+      "n": 8,
+      "rolled_back": 8,
+      "recall": 1.0
+    },
+    "wrong_citation": {
+      "n": 9,
+      "rolled_back": 7,
+      "recall": 0.7778
+    },
+    "wrong_figure": {
+      "n": 37,
+      "rolled_back": 36,
+      "recall": 0.973
+    },
+    "wrong_instrument": {
+      "n": 15,
+      "rolled_back": 14,
+      "recall": 0.9333
+    }
+  },
+  "headline": {
+    "grounded_paraphrase_false_rollback_rate": 0.0726,
+    "pass_false_rollback_rate": 0.0785,
+    "failure_recall": 0.8,
+    "rollback_precision": 0.8921
+  },
+  "config": {
+    "entail_threshold": 0.7,
+    "contradict_threshold": 0.4,
+    "neutral_policy": "connective",
+    "top_k": 2,
+    "align_ratio": 0.5,
+    "neutral_with_grounded_claim": "emit"
+  },
+  "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "enrichment": "gemini-3.8-flash-high@edb8ccbbc4fc4862",
+  "seconds": 666.48
+}

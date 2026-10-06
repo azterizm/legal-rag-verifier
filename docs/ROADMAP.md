@@ -18,12 +18,17 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · **M2: NLI head + latency ✅, dev battery drafted — ⛔ label review** |
 | Next step | After your review: run the battery (claim-only, small, base), calibrate on dev, pick small vs base |
-| Waiting on you | ⛔ Review the 346 held-out labels in `batteries/verifier/heldout_review.md` before the seal |
+| Waiting on you | Reminder raised (benchmarking): legal-rag-audit live-run responses skipped; your call. Next: M3 (engine + HF backend) |
 | **Reminder at benchmarking** | Tell the user: legal-rag-audit's live-run responses (`~/Code/legal-rag-audit/run/live/`) exist and were skipped by decision (stop 5); raise them again when the battery is run / the grid is benchmarked |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (16): **Held-out sealed and run (your go, "all good. proceed").** Seal `heldout-2026-10-06`
+  committed before the run (`a4d9726`); run-once guard per detector. Held-out, base + enrichment: GP false rollback
+  7.3 %, all-pass 7.9 %, recall 80.0 %, precision 89.2 %; claim check only 5.0 % / 5.2 % / 53.6 % / 89.3 %.
+  `docs/measurements.md` has per class and by source. Step 3 done; accuracy plan closed.
 
 - 2026-10-06 (15): **Dev confirmed with defaults (7.2 / 7.1 / 85.4 / 91.7); MPS shape fix; M2 committed.**
   Held-out enrichment finished (57 more calls; 190 total). Waiting on your held-out label review, then seal and

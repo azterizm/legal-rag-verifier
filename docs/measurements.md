@@ -154,3 +154,27 @@ prompt sha256 in each file): elements 776/781 verified (99.4 %), thresholds 114/
   multiple of 64 tokens (scores unchanged): 271 sentences in 651 s, ≈ 2.4 s per sentence with base + elements on
   the M4. That is far above the 30 ms target and is dominated by the number of candidates (median 16, max 130);
   a two-stage scorer and the L4 measurement (M4) are the next steps for latency.
+
+## Held-out — sealed `heldout-2026-10-06`, run once per detector (2026-10-06)
+
+Seal `batteries/verifier/seals/heldout-2026-10-06.json` (committed in `a4d9726` before the run): 346 rows over 102
+premises, battery sha256 `1df51b99…`, verifier commit `138943b`, enrichment layer
+`gemini-3.8-flash-high@edb8ccbbc4fc4862`. Results: `results/heldout-2026-10-06-{none,base}.json`.
+**These are the figures to quote** (Apple M4, base = `nli-deberta-v3-base@6c749ce`, default config).
+
+| Detector | GP false rollback | All-pass false rollback | Failure recall | Rollback precision |
+|---|---:|---:|---:|---:|
+| claim check only | 5.0 % (9/179) | 5.2 % (10/191) | 53.6 % (83/155) | 89.3 % |
+| **claim check + base NLI + enrichment** | **7.3 % (13/179)** | **7.9 % (15/191)** | **80.0 % (124/155)** | **89.2 %** |
+| (dev, same config, for comparison) | 7.2 % | 7.1 % | 85.4 % | 91.7 % |
+
+Per class (base): wrong_figure 36/37, wrong_instrument 14/15, wrong_citation 7/9, version_swap 8/8,
+value_swap 9/11, modal_shift 15/16, unsupported_plausible 29/41, dropped_qualifier 6/18; false rollbacks:
+grounded_paraphrase 13/179, premise_correction 2/5, connective 0/7.
+
+By source (base): concept `test` rows (312) — all-pass FR 5.8 %, recall 78.4 %, precision 91.6 %; anchor and probe
+rows (34) — all-pass FR 27.8 % (5/18), recall 93.8 % (15/16), precision 75.0 % (small n).
+
+Reading: the false-rollback rate held from dev to held-out (7.2 → 7.3 %); recall fell 5.4 pp and precision 2.5 pp,
+the expected dev-to-held-out shrink. Weakest classes: dropped_qualifier (6/18 caught) and unsupported_plausible
+(29/41). Wall time 666 s for 346 sentences (≈ 1.9 s each on the M4); latency remains the open problem (L4, M4).
