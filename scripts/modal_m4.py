@@ -1,8 +1,8 @@
 """M4 on Modal: SGLang + Qwen 2.5 7B on one L4, driven by the same engine (paid: run only on a go).
 
-  uv run --with modal modal run scripts/modal_m4.py::probe      # CPU: image, Python, sglang import
+  uv run --with modal modal run scripts/modal_m4.py::check      # CPU: image, Python, sglang import
   uv run --with modal modal run scripts/modal_m4.py::download   # CPU: weights into the volume
-  uv run --with modal modal run scripts/modal_m4.py             # L4, ≤ 30 min: the spike
+  uv run --with modal modal run scripts/modal_m4.py::main       # L4, ≤ 30 min: the spike
 
 Writes results/m4-sglang.json. Only public statute text and the demo queries leave this machine.
 """
@@ -89,6 +89,11 @@ def spike(revision: str) -> dict[str, Any]:
         return run(url, MODEL, revision)
     finally:
         server.terminate()
+
+
+@app.local_entrypoint()
+def check() -> None:
+    print(json.dumps(probe.remote()))
 
 
 @app.local_entrypoint()

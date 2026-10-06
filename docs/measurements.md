@@ -265,3 +265,41 @@ legal-rag-audit live answers (anonymised, base + enrichment), before → after:
 
 The version premise holds one version, so nothing changes there; on the timeline premise the filter removes the
 "historical figure judged against the current text" failure noted above.
+
+## M4 spike: SGLang + Qwen 2.5 7B on one Modal L4 (2026-10-06)
+
+`scripts/modal_m4.py::main` (image `lmsysorg/sglang:v0.5.21`, Python 3.12.3, `--mem-fraction-static 0.70`,
+`--enable-custom-logit-processor`), generator `Qwen/Qwen2.5-7B-Instruct@a09a3545`, verifier = defaults with
+`nli-deberta-v3-base@6c749ce3` on the same GPU, premise = the s.124 fixture + S.I. 2026/310 fact (759 prompt
+tokens). Same queries and injected failure as the Mac run. GPU time about 5 min (server up 14:10–14:14 UTC).
+Trace: `results/m4-sglang.json`.
+
+**Prefix cache (roadmap 10 §3 risk 1).** After every rollback the resubmitted committed prefix is served from
+RadixAttention: each warm resubmit of the 759-token prompt reports `cached_tokens = 758` (5/5), and every decode
+call in every run reports `cached_tokens = len(committed) − 1`. One-token round trip on the prompt, median of 5:
+**cold 212 ms** (cache flushed) vs **warm 122 ms** (prefix cached). The warm figure is mostly per-request
+overhead (HTTP, scheduling, one decode step), not prefill; vault 04's `< 30 ms` target is **not met** in this
+setup and is not claimed. Profiling the request path is a follow-up.
+
+| Run | Answer | Rollbacks | Outcome |
+|---|---|---:|---|
+| Q1 cap, allow / ban | "…the lower of £123,543 and 52 multiplied by a week's pay… set by section 124(1ZA)…" | 0 | correct (decode 3.6–3.8 s) |
+| Q2 whistleblowing, allow / ban | "…does not apply… regarded as unfair dismissal under section 100… excluded… by section 124(1A)" | 1 | NLI false rollback on the correct "No, …"; the emitted answer names s.100 for whistleblowing (s.103A is right) |
+| Q1 + injected £85,000, allow | refusal, then hedged prose | 3 | £85,000 → allow forced £123,543 (` £` `1` `2` `3` `,` `5` `4` `3`: 8 masked one-token requests) → QUALIFIER_DROPPED → ban retry (new fallback) wrote the full correct rule → **NLI_CONTRADICTION 0.96** → refusal |
+| Q1 + injected £85,000, ban | refusal, then hedged prose | 2 | £85,000 → ban retry wrote the full correct rule → NLI_CONTRADICTION 0.96 → refusal |
+
+Findings:
+- **The mechanism works on a production server, across tokenizers.** Llama (≤ 3-digit chunks, Mac) and Qwen
+  (per digit, SGLang) take the same engine path; the constraint mask runs server-side; no rollback re-prefills
+  the committed prefix.
+- **The NLI head is now the main source of error, not the claim check.** The fully correct sentence "According
+  to section 124(1ZA) …, the maximum compensatory award … is the lower of £123,543 and 52 multiplied by a week's
+  pay…" was judged on window s.124(1A) (the exception) with contradiction 0.96, because no window entailed it
+  above 0.70; without "According to section 124(1ZA)" the same claim scored contradiction 0.03 and was emitted.
+  Proposed, not applied: when a sentence cites a provision in the premise, judge NLI on that provision's window
+  (and the windows it joins) rather than on the most related window anywhere.
+- **Negation false rollback reproduces on Qwen** ("No, the limit … does not apply…", contradiction 1.0).
+- **Wrong-ground citation passes**: "section 100" is in s.124(1A), so it is grounded, though it is the wrong
+  ground for whistleblowing. Binding a citation to the claim it supports is outside the claim check.
+- **After a refusal the model hedges** with grounded but unhelpful prose; a refusal that ends the answer, or a
+  stronger refusal prompt, is a design choice for the grid.

@@ -16,13 +16,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 |---|---|
 | Last updated | 2026-10-06 |
 | Current stage | Phase 3, Mac session (M1–M3) |
-| Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · **M4: SGLang client + Modal app written, not run — ⛔ spend go** |
-| Next step | On your go: Modal CPU probe of the SGLang image, CPU weight download, then one L4 spike (≤ 30 min) |
-| Waiting on you | Go for the Modal spend (M4). Vault 02: where the instrument title for the premise comes from |
+| Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
+| Next step | Your call: citation-anchored NLI (proposed), request-path latency profiling, then the 2×2 grid (07 §5) |
+| Waiting on you | Choice of next step. Vault 02: where the instrument title for the premise comes from |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (20): **M4 done (your go).** SGLang 0.5.21 + Qwen 2.5 7B on one Modal L4, same engine. Every
+  resubmit after a rollback is a RadixAttention hit (`cached_tokens = committed − 1`); one-token round trip
+  cold 212 ms vs warm 122 ms (the < 30 ms target is not met: per-request overhead). Injected £85,000 caught in
+  both modes; the allow→ban fallback ran as designed, but NLI then rolled back the fully correct rule
+  (contradiction 0.96 on the s.124(1A) exception window) → refusal. Proposed: citation-anchored NLI. Fixed on
+  the way: `modal run` needs `::main` once two entrypoints exist; a `check` entrypoint prints the probe.
 
 - 2026-10-06 (19): **Date filter, allow→ban fallback, SGLang client, vault 05 (your go).**
   - NLI candidates are restricted to the versions in force on the date asked (sentence or query date) when the
@@ -249,7 +256,8 @@ Plan §Key decisions 2–5, R2–R5, R8, R10.
 ### M4 — SGLang backend + Modal L4 spike 🧑 (spend)
 - [x] `backends/sglang.py` (stdlib HTTP client, server-side mask for constraints), offline tests vs a fake server.
 - [x] `scripts/modal_m4.py` (`lmsysorg/sglang:v0.5.21`, Qwen 2.5 7B, L4, 30-min cap) + `scripts/m4_spike.py`.
-- [ ] ⛔ Your go for the spend. Then: CPU probe (image Python ≥ 3.11, mask processor imports), CPU weight
-      download, one L4 run: s.124 queries + injected £85,000 both ways, rollback round trip warm vs cold.
+- [x] Your go (2026-10-06). CPU probe (Python 3.12.3, sglang 0.5.21, mask processor imports), CPU weight
+      download, one L4 run (~5 min GPU): s.124 queries + injected £85,000 both ways, round trip warm vs cold.
+- [x] Prefix-cache hit recorded on every rollback (`cached_tokens = committed − 1`): roadmap 10 §3 risk 1 retired.
 
 ### Later — sealed held-out battery + 2×2 grid (07 §5), CI/GitHub, release, vault corrections (⛔ each)

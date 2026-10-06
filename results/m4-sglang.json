@@ -1,0 +1,1483 @@
+{
+ "generator": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+ "sglang": "0.5.21",
+ "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+ "round_trip": {
+  "tokens": 759,
+  "cold_ms_median": 212.0,
+  "warm_ms_median": 121.9,
+  "warm_cached_tokens": [
+   758,
+   758,
+   758,
+   758,
+   758
+  ]
+ },
+ "runs": {
+  "allow": [
+   {
+    "query": "What is the maximum compensatory award for unfair dismissal, and where is it set?",
+    "answer": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned. This limit is set by section 124(1ZA) of the Employment Rights Act 1996.",
+    "trace": {
+     "backend": "sglang",
+     "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+     "verifier": {
+      "config": {
+       "entail_threshold": 0.7,
+       "contradict_threshold": 0.4,
+       "neutral_policy": "connective",
+       "top_k": 2,
+       "align_ratio": 0.5,
+       "neutral_with_grounded_claim": "emit"
+      },
+      "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+     },
+     "engine": {
+      "max_rollbacks": 2,
+      "max_total_rollbacks": 8,
+      "steering": "allow",
+      "refusal": "I cannot state this point reliably from the provisions provided.",
+      "max_new_tokens": 200
+     },
+     "prompt_tokens": 759,
+     "answer_tokens": 60,
+     "sentences": [
+      {
+       "text": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+          "span": [
+           0,
+           135
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             68,
+             76
+            ],
+            "grounded_by": "window",
+            "reason": null
+           },
+           {
+            "kind": "NUMBER",
+            "value": "52",
+            "text": "52",
+            "span": [
+             81,
+             83
+            ],
+            "grounded_by": "window",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0,
+           1
+          ],
+          "nli": {
+           "entailment": 0.034316,
+           "contradiction": 0.028365,
+           "neutral": 0.93732,
+           "window": 2,
+           "latency_ns": 965639424,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 7186442,
+          "nli_latency_ns": 965639424,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 35,
+         "tokens_reused": 0,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1551,
+         "decode_latency_ns": 2156565393
+        }
+       ]
+      },
+      {
+       "text": "This limit is set by section 124(1ZA) of the Employment Rights Act 1996.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "This limit is set by section 124(1ZA) of the Employment Rights Act 1996.",
+          "span": [
+           0,
+           72
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "CITATION",
+            "value": "s124/1ZA",
+            "text": "section 124(1ZA)",
+            "span": [
+             21,
+             37
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             45,
+             71
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           0,
+           1
+          ],
+          "nli": {
+           "entailment": 0.992188,
+           "contradiction": 0.001065,
+           "neutral": 0.006747,
+           "window": 0,
+           "latency_ns": 315518226,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 908827,
+          "nli_latency_ns": 315518226,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 25,
+         "tokens_reused": 1,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1612,
+         "decode_latency_ns": 1645822012
+        }
+       ]
+      }
+     ],
+     "totals": {
+      "sentences": 2,
+      "refused": 0,
+      "rollbacks": 0,
+      "recovered_by_allow": 0,
+      "recovered_by_ban": 0,
+      "tokens_discarded": 0,
+      "decode_calls": 4,
+      "prefix_cache_hit_tokens": 3163,
+      "claim_latency_ns": 8095269,
+      "nli_latency_ns": 1281157650,
+      "decode_latency_ns": 3802387405,
+      "elapsed_ns": 5098887319
+     },
+     "stop_reason": "eos"
+    }
+   },
+   {
+    "query": "Does the limit on the compensatory award apply if the employee was dismissed for whistleblowing?",
+    "answer": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing, as such a dismissal would be regarded as unfair dismissal under section 100 of the Employment Rights Act 1996, which is excluded from the limit by section 124(1A) of the same Act.",
+    "trace": {
+     "backend": "sglang",
+     "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+     "verifier": {
+      "config": {
+       "entail_threshold": 0.7,
+       "contradict_threshold": 0.4,
+       "neutral_policy": "connective",
+       "top_k": 2,
+       "align_ratio": 0.5,
+       "neutral_with_grounded_claim": "emit"
+      },
+      "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+     },
+     "engine": {
+      "max_rollbacks": 2,
+      "max_total_rollbacks": 8,
+      "steering": "allow",
+      "refusal": "I cannot state this point reliably from the provisions provided.",
+      "max_new_tokens": 200
+     },
+     "prompt_tokens": 760,
+     "answer_tokens": 67,
+     "sentences": [
+      {
+       "text": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing, as such a dismissal would be regarded as unfair dismissal under section 100 of the Employment Rights Act 1996, which is excluded from the limit by section 124(1A) of the same Act.",
+       "outcome": "emitted",
+       "rollbacks": 1,
+       "recovered_by": "ban",
+       "attempts": [
+        {
+         "verdict": {
+          "text": "No, the limit on the compensatory award does not apply if the employee was dismissed for whistleblowing.",
+          "span": [
+           0,
+           104
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "NLI_CONTRADICTION"
+          ],
+          "claims": [],
+          "deontics": [],
+          "aligned_windows": [
+           1,
+           5
+          ],
+          "nli": {
+           "entailment": 3.3e-05,
+           "contradiction": 0.999316,
+           "neutral": 0.000651,
+           "window": 1,
+           "latency_ns": 161723665,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": {
+           "mode": "ban",
+           "offset": 0,
+           "candidates": [],
+           "rejected": ""
+          },
+          "claim_latency_ns": 621689,
+          "nli_latency_ns": 161723665,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 21,
+         "tokens_reused": 0,
+         "tokens_discarded": 22,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1517,
+         "decode_latency_ns": 1326725592
+        },
+        {
+         "verdict": {
+          "text": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing, as such a dismissal would be regarded as unfair dismissal under section 100 of the Employment Rights Act 1996, which is excluded from the limit by section 124(1A) of the same Act.",
+          "span": [
+           0,
+           280
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "CITATION",
+            "value": "s100",
+            "text": "section 100",
+            "span": [
+             165,
+             176
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             184,
+             210
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           },
+           {
+            "kind": "CITATION",
+            "value": "s124/1A",
+            "text": "section 124(1A)",
+            "span": [
+             248,
+             263
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           6
+          ],
+          "nli": {
+           "entailment": 0.001465,
+           "contradiction": 0.026247,
+           "neutral": 0.972288,
+           "window": 6,
+           "latency_ns": 164901000,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 1466920,
+          "nli_latency_ns": 164901000,
+          "details": []
+         },
+         "steering": "ban",
+         "constraint": {
+          "ban": [
+           2753
+          ]
+         },
+         "tokens": 67,
+         "tokens_reused": 0,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1585,
+         "decode_latency_ns": 5227698590
+        }
+       ]
+      }
+     ],
+     "totals": {
+      "sentences": 1,
+      "refused": 0,
+      "rollbacks": 1,
+      "recovered_by_allow": 0,
+      "recovered_by_ban": 1,
+      "tokens_discarded": 22,
+      "decode_calls": 4,
+      "prefix_cache_hit_tokens": 3102,
+      "claim_latency_ns": 2088609,
+      "nli_latency_ns": 326624665,
+      "decode_latency_ns": 6554424182,
+      "elapsed_ns": 6888367020
+     },
+     "stop_reason": "eos"
+    }
+   },
+   {
+    "query": "What is the maximum compensatory award for unfair dismissal, and where is it set?",
+    "answer": "I cannot state this point reliably from the provisions provided. The provisions indicate that the maximum compensatory award is the lower of £123,543 and 52 multiplied by a week's pay, but they do not specify that this is the maximum for unfair dismissal. The provisions apply to compensation awarded or a compensatory award made in cases of unfair dismissal, but they do not explicitly state that this is the maximum amount.",
+    "trace": {
+     "backend": "sglang",
+     "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+     "verifier": {
+      "config": {
+       "entail_threshold": 0.7,
+       "contradict_threshold": 0.4,
+       "neutral_policy": "connective",
+       "top_k": 2,
+       "align_ratio": 0.5,
+       "neutral_with_grounded_claim": "emit"
+      },
+      "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+     },
+     "engine": {
+      "max_rollbacks": 2,
+      "max_total_rollbacks": 8,
+      "steering": "allow",
+      "refusal": "I cannot state this point reliably from the provisions provided.",
+      "max_new_tokens": 200
+     },
+     "prompt_tokens": 759,
+     "answer_tokens": 88,
+     "sentences": [
+      {
+       "text": "I cannot state this point reliably from the provisions provided.",
+       "outcome": "refused",
+       "rollbacks": 3,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The maximum compensatory award is £85,000.",
+          "span": [
+           0,
+           42
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "UNGROUNDED_FIGURE"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:85000",
+            "text": "£85,000",
+            "span": [
+             34,
+             41
+            ],
+            "grounded_by": null,
+            "reason": "UNGROUNDED_FIGURE"
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           0,
+           2,
+           1
+          ],
+          "nli": null,
+          "repair": {
+           "mode": "allow",
+           "offset": 34,
+           "candidates": [
+            "£123,543"
+           ],
+           "rejected": "£85,000"
+          },
+          "claim_latency_ns": 1699964,
+          "nli_latency_ns": 0,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 14,
+         "tokens_reused": 0,
+         "tokens_discarded": 9,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 764,
+         "decode_latency_ns": 71565878
+        },
+        {
+         "verdict": {
+          "text": "The maximum compensatory award is £123,543, and it is set by section 124(1ZA)(a) of the Employment Rights Act 1996.",
+          "span": [
+           0,
+           115
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "QUALIFIER_DROPPED"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             34,
+             42
+            ],
+            "grounded_by": "window",
+            "reason": null
+           },
+           {
+            "kind": "CITATION",
+            "value": "s124/1ZA/a",
+            "text": "section 124(1ZA)(a)",
+            "span": [
+             61,
+             80
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             88,
+             114
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           1,
+           0
+          ],
+          "nli": {
+           "entailment": 0.989646,
+           "contradiction": 0.001911,
+           "neutral": 0.008443,
+           "window": 1,
+           "latency_ns": 166440900,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": {
+           "mode": "ban",
+           "offset": 0,
+           "candidates": [],
+           "rejected": ""
+          },
+          "claim_latency_ns": 1006123,
+          "nli_latency_ns": 166440900,
+          "details": [
+           "'£123,543' is bound by 'the lower of' (COMPARATIVE)"
+          ]
+         },
+         "steering": "allow",
+         "constraint": {
+          "allow": [
+           [
+            6938,
+            16,
+            17,
+            18,
+            11,
+            20,
+            19,
+            18
+           ]
+          ]
+         },
+         "tokens": 42,
+         "tokens_reused": 6,
+         "tokens_discarded": 43,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1564,
+         "decode_latency_ns": 2794457359
+        },
+        {
+         "verdict": {
+          "text": "According to section 124(1ZA) of the Employment Rights Act 1996, the maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+          "span": [
+           0,
+           200
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "NLI_CONTRADICTION"
+          ],
+          "claims": [
+           {
+            "kind": "CITATION",
+            "value": "s124/1ZA",
+            "text": "section 124(1ZA)",
+            "span": [
+             13,
+             29
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             37,
+             63
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           },
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             133,
+             141
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "NUMBER",
+            "value": "52",
+            "text": "52",
+            "span": [
+             146,
+             148
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0
+          ],
+          "nli": {
+           "entailment": 0.001743,
+           "contradiction": 0.964963,
+           "neutral": 0.033294,
+           "window": 2,
+           "latency_ns": 164301678,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": {
+           "mode": "ban",
+           "offset": 0,
+           "candidates": [],
+           "rejected": ""
+          },
+          "claim_latency_ns": 1255470,
+          "nli_latency_ns": 164301678,
+          "details": []
+         },
+         "steering": "ban",
+         "constraint": {
+          "ban": [
+           785
+          ]
+         },
+         "tokens": 57,
+         "tokens_reused": 0,
+         "tokens_discarded": 58,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1573,
+         "decode_latency_ns": 3425051848
+        }
+       ]
+      },
+      {
+       "text": "The provisions indicate that the maximum compensatory award is the lower of £123,543 and 52 multiplied by a week's pay, but they do not specify that this is the maximum for unfair dismissal.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The provisions indicate that the maximum compensatory award is the lower of £123,543 and 52 multiplied by a week's pay, but they do not specify that this is the maximum for unfair dismissal.",
+          "span": [
+           0,
+           190
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             76,
+             84
+            ],
+            "grounded_by": "window",
+            "reason": null
+           },
+           {
+            "kind": "NUMBER",
+            "value": "52",
+            "text": "52",
+            "span": [
+             89,
+             91
+            ],
+            "grounded_by": "window",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0,
+           1
+          ],
+          "nli": {
+           "entailment": 0.007911,
+           "contradiction": 0.007118,
+           "neutral": 0.984971,
+           "window": 2,
+           "latency_ns": 167671097,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 1024393,
+          "nli_latency_ns": 167671097,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 46,
+         "tokens_reused": 0,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1574,
+         "decode_latency_ns": 2731008703
+        }
+       ]
+      },
+      {
+       "text": "The provisions apply to compensation awarded or a compensatory award made in cases of unfair dismissal, but they do not explicitly state that this is the maximum amount.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The provisions apply to compensation awarded or a compensatory award made in cases of unfair dismissal, but they do not explicitly state that this is the maximum amount.",
+          "span": [
+           0,
+           169
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "CONNECTIVE"
+          ],
+          "claims": [],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0
+          ],
+          "nli": {
+           "entailment": 0.003633,
+           "contradiction": 0.37567,
+           "neutral": 0.620696,
+           "window": 2,
+           "latency_ns": 166453358,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 753802,
+          "nli_latency_ns": 166453358,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 31,
+         "tokens_reused": 1,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1662,
+         "decode_latency_ns": 1828676004
+        }
+       ]
+      }
+     ],
+     "totals": {
+      "sentences": 3,
+      "refused": 1,
+      "rollbacks": 3,
+      "recovered_by_allow": 0,
+      "recovered_by_ban": 0,
+      "tokens_discarded": 110,
+      "decode_calls": 10,
+      "prefix_cache_hit_tokens": 7137,
+      "claim_latency_ns": 5739752,
+      "nli_latency_ns": 664867033,
+      "decode_latency_ns": 10850759792,
+      "elapsed_ns": 11534417052
+     },
+     "stop_reason": "eos"
+    },
+    "injected": "The maximum compensatory award is £85,000."
+   }
+  ],
+  "ban": [
+   {
+    "query": "What is the maximum compensatory award for unfair dismissal, and where is it set?",
+    "answer": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned. This limit is set by section 124(1ZA) of the Employment Rights Act 1996.",
+    "trace": {
+     "backend": "sglang",
+     "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+     "verifier": {
+      "config": {
+       "entail_threshold": 0.7,
+       "contradict_threshold": 0.4,
+       "neutral_policy": "connective",
+       "top_k": 2,
+       "align_ratio": 0.5,
+       "neutral_with_grounded_claim": "emit"
+      },
+      "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+     },
+     "engine": {
+      "max_rollbacks": 2,
+      "max_total_rollbacks": 8,
+      "steering": "ban",
+      "refusal": "I cannot state this point reliably from the provisions provided.",
+      "max_new_tokens": 200
+     },
+     "prompt_tokens": 759,
+     "answer_tokens": 60,
+     "sentences": [
+      {
+       "text": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+          "span": [
+           0,
+           135
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             68,
+             76
+            ],
+            "grounded_by": "window",
+            "reason": null
+           },
+           {
+            "kind": "NUMBER",
+            "value": "52",
+            "text": "52",
+            "span": [
+             81,
+             83
+            ],
+            "grounded_by": "window",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0,
+           1
+          ],
+          "nli": {
+           "entailment": 0.034316,
+           "contradiction": 0.028365,
+           "neutral": 0.93732,
+           "window": 2,
+           "latency_ns": 164940574,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 866117,
+          "nli_latency_ns": 164940574,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 35,
+         "tokens_reused": 0,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1551,
+         "decode_latency_ns": 2109507226
+        }
+       ]
+      },
+      {
+       "text": "This limit is set by section 124(1ZA) of the Employment Rights Act 1996.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "This limit is set by section 124(1ZA) of the Employment Rights Act 1996.",
+          "span": [
+           0,
+           72
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "CITATION",
+            "value": "s124/1ZA",
+            "text": "section 124(1ZA)",
+            "span": [
+             21,
+             37
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             45,
+             71
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           0,
+           1
+          ],
+          "nli": {
+           "entailment": 0.992188,
+           "contradiction": 0.001065,
+           "neutral": 0.006747,
+           "window": 0,
+           "latency_ns": 167032377,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 812156,
+          "nli_latency_ns": 167032377,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 25,
+         "tokens_reused": 1,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1612,
+         "decode_latency_ns": 1490821896
+        }
+       ]
+      }
+     ],
+     "totals": {
+      "sentences": 2,
+      "refused": 0,
+      "rollbacks": 0,
+      "recovered_by_allow": 0,
+      "recovered_by_ban": 0,
+      "tokens_discarded": 0,
+      "decode_calls": 4,
+      "prefix_cache_hit_tokens": 3163,
+      "claim_latency_ns": 1678273,
+      "nli_latency_ns": 331972951,
+      "decode_latency_ns": 3600329122,
+      "elapsed_ns": 3940113075
+     },
+     "stop_reason": "eos"
+    }
+   },
+   {
+    "query": "Does the limit on the compensatory award apply if the employee was dismissed for whistleblowing?",
+    "answer": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing, as such a dismissal would be regarded as unfair dismissal under section 100 of the Employment Rights Act 1996, which is excluded from the limit by section 124(1A) of the same Act.",
+    "trace": {
+     "backend": "sglang",
+     "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+     "verifier": {
+      "config": {
+       "entail_threshold": 0.7,
+       "contradict_threshold": 0.4,
+       "neutral_policy": "connective",
+       "top_k": 2,
+       "align_ratio": 0.5,
+       "neutral_with_grounded_claim": "emit"
+      },
+      "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+     },
+     "engine": {
+      "max_rollbacks": 2,
+      "max_total_rollbacks": 8,
+      "steering": "ban",
+      "refusal": "I cannot state this point reliably from the provisions provided.",
+      "max_new_tokens": 200
+     },
+     "prompt_tokens": 760,
+     "answer_tokens": 67,
+     "sentences": [
+      {
+       "text": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing, as such a dismissal would be regarded as unfair dismissal under section 100 of the Employment Rights Act 1996, which is excluded from the limit by section 124(1A) of the same Act.",
+       "outcome": "emitted",
+       "rollbacks": 1,
+       "recovered_by": "ban",
+       "attempts": [
+        {
+         "verdict": {
+          "text": "No, the limit on the compensatory award does not apply if the employee was dismissed for whistleblowing.",
+          "span": [
+           0,
+           104
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "NLI_CONTRADICTION"
+          ],
+          "claims": [],
+          "deontics": [],
+          "aligned_windows": [
+           1,
+           5
+          ],
+          "nli": {
+           "entailment": 3.3e-05,
+           "contradiction": 0.999316,
+           "neutral": 0.000651,
+           "window": 1,
+           "latency_ns": 168520054,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": {
+           "mode": "ban",
+           "offset": 0,
+           "candidates": [],
+           "rejected": ""
+          },
+          "claim_latency_ns": 582777,
+          "nli_latency_ns": 168520054,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 21,
+         "tokens_reused": 0,
+         "tokens_discarded": 22,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1539,
+         "decode_latency_ns": 1323804717
+        },
+        {
+         "verdict": {
+          "text": "The limit on the compensatory award does not apply if the employee was dismissed for whistleblowing, as such a dismissal would be regarded as unfair dismissal under section 100 of the Employment Rights Act 1996, which is excluded from the limit by section 124(1A) of the same Act.",
+          "span": [
+           0,
+           280
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "CITATION",
+            "value": "s100",
+            "text": "section 100",
+            "span": [
+             165,
+             176
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             184,
+             210
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           },
+           {
+            "kind": "CITATION",
+            "value": "s124/1A",
+            "text": "section 124(1A)",
+            "span": [
+             248,
+             263
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           6
+          ],
+          "nli": {
+           "entailment": 0.001465,
+           "contradiction": 0.026247,
+           "neutral": 0.972288,
+           "window": 6,
+           "latency_ns": 168153932,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 1484926,
+          "nli_latency_ns": 168153932,
+          "details": []
+         },
+         "steering": "ban",
+         "constraint": {
+          "ban": [
+           2753
+          ]
+         },
+         "tokens": 67,
+         "tokens_reused": 0,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1585,
+         "decode_latency_ns": 3987807054
+        }
+       ]
+      }
+     ],
+     "totals": {
+      "sentences": 1,
+      "refused": 0,
+      "rollbacks": 1,
+      "recovered_by_allow": 0,
+      "recovered_by_ban": 1,
+      "tokens_discarded": 22,
+      "decode_calls": 4,
+      "prefix_cache_hit_tokens": 3124,
+      "claim_latency_ns": 2067703,
+      "nli_latency_ns": 336673986,
+      "decode_latency_ns": 5311611771,
+      "elapsed_ns": 5655318370
+     },
+     "stop_reason": "eos"
+    }
+   },
+   {
+    "query": "What is the maximum compensatory award for unfair dismissal, and where is it set?",
+    "answer": "I cannot state this point reliably from the provisions provided. The provisions indicate that the maximum compensatory award is the lower of £123,543 and 52 multiplied by a week's pay, but they do not specify that this is the maximum for unfair dismissal. The provisions apply to compensation awarded or a compensatory award made in cases of unfair dismissal, but they do not explicitly state that this is the maximum amount.",
+    "trace": {
+     "backend": "sglang",
+     "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+     "verifier": {
+      "config": {
+       "entail_threshold": 0.7,
+       "contradict_threshold": 0.4,
+       "neutral_policy": "connective",
+       "top_k": 2,
+       "align_ratio": 0.5,
+       "neutral_with_grounded_claim": "emit"
+      },
+      "nli": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+     },
+     "engine": {
+      "max_rollbacks": 2,
+      "max_total_rollbacks": 8,
+      "steering": "ban",
+      "refusal": "I cannot state this point reliably from the provisions provided.",
+      "max_new_tokens": 200
+     },
+     "prompt_tokens": 759,
+     "answer_tokens": 88,
+     "sentences": [
+      {
+       "text": "I cannot state this point reliably from the provisions provided.",
+       "outcome": "refused",
+       "rollbacks": 2,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The maximum compensatory award is £85,000.",
+          "span": [
+           0,
+           42
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "UNGROUNDED_FIGURE"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:85000",
+            "text": "£85,000",
+            "span": [
+             34,
+             41
+            ],
+            "grounded_by": null,
+            "reason": "UNGROUNDED_FIGURE"
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           0,
+           2,
+           1
+          ],
+          "nli": null,
+          "repair": {
+           "mode": "allow",
+           "offset": 34,
+           "candidates": [
+            "£123,543"
+           ],
+           "rejected": "£85,000"
+          },
+          "claim_latency_ns": 878900,
+          "nli_latency_ns": 0,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 14,
+         "tokens_reused": 0,
+         "tokens_discarded": 15,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 772,
+         "decode_latency_ns": 70698982
+        },
+        {
+         "verdict": {
+          "text": "According to section 124(1ZA) of the Employment Rights Act 1996, the maximum compensatory award for unfair dismissal is the lower of £123,543 and 52 multiplied by a week's pay of the person concerned.",
+          "span": [
+           0,
+           200
+          ],
+          "verdict": "ROLLBACK",
+          "reasons": [
+           "NLI_CONTRADICTION"
+          ],
+          "claims": [
+           {
+            "kind": "CITATION",
+            "value": "s124/1ZA",
+            "text": "section 124(1ZA)",
+            "span": [
+             13,
+             29
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "INSTRUMENT",
+            "value": "employment rights act 1996",
+            "text": "Employment Rights Act 1996",
+            "span": [
+             37,
+             63
+            ],
+            "grounded_by": "metadata",
+            "reason": null
+           },
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             133,
+             141
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           },
+           {
+            "kind": "NUMBER",
+            "value": "52",
+            "text": "52",
+            "span": [
+             146,
+             148
+            ],
+            "grounded_by": "premise",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0
+          ],
+          "nli": {
+           "entailment": 0.001743,
+           "contradiction": 0.964963,
+           "neutral": 0.033294,
+           "window": 2,
+           "latency_ns": 164521644,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": {
+           "mode": "ban",
+           "offset": 0,
+           "candidates": [],
+           "rejected": ""
+          },
+          "claim_latency_ns": 1319459,
+          "nli_latency_ns": 164521644,
+          "details": []
+         },
+         "steering": "ban",
+         "constraint": {
+          "ban": [
+           785
+          ]
+         },
+         "tokens": 57,
+         "tokens_reused": 0,
+         "tokens_discarded": 58,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1573,
+         "decode_latency_ns": 3472876804
+        }
+       ]
+      },
+      {
+       "text": "The provisions indicate that the maximum compensatory award is the lower of £123,543 and 52 multiplied by a week's pay, but they do not specify that this is the maximum for unfair dismissal.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The provisions indicate that the maximum compensatory award is the lower of £123,543 and 52 multiplied by a week's pay, but they do not specify that this is the maximum for unfair dismissal.",
+          "span": [
+           0,
+           190
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "GROUNDED"
+          ],
+          "claims": [
+           {
+            "kind": "MONEY",
+            "value": "GBP:123543",
+            "text": "£123,543",
+            "span": [
+             76,
+             84
+            ],
+            "grounded_by": "window",
+            "reason": null
+           },
+           {
+            "kind": "NUMBER",
+            "value": "52",
+            "text": "52",
+            "span": [
+             89,
+             91
+            ],
+            "grounded_by": "window",
+            "reason": null
+           }
+          ],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0,
+           1
+          ],
+          "nli": {
+           "entailment": 0.007911,
+           "contradiction": 0.007118,
+           "neutral": 0.984971,
+           "window": 2,
+           "latency_ns": 165901771,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 1120570,
+          "nli_latency_ns": 165901771,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 46,
+         "tokens_reused": 0,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1584,
+         "decode_latency_ns": 2731706267
+        }
+       ]
+      },
+      {
+       "text": "The provisions apply to compensation awarded or a compensatory award made in cases of unfair dismissal, but they do not explicitly state that this is the maximum amount.",
+       "outcome": "emitted",
+       "rollbacks": 0,
+       "recovered_by": null,
+       "attempts": [
+        {
+         "verdict": {
+          "text": "The provisions apply to compensation awarded or a compensatory award made in cases of unfair dismissal, but they do not explicitly state that this is the maximum amount.",
+          "span": [
+           0,
+           169
+          ],
+          "verdict": "EMIT",
+          "reasons": [
+           "CONNECTIVE"
+          ],
+          "claims": [],
+          "deontics": [],
+          "aligned_windows": [
+           2,
+           0
+          ],
+          "nli": {
+           "entailment": 0.003633,
+           "contradiction": 0.37567,
+           "neutral": 0.620696,
+           "window": 2,
+           "latency_ns": 169414115,
+           "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+           "candidate": "window"
+          },
+          "repair": null,
+          "claim_latency_ns": 767061,
+          "nli_latency_ns": 169414115,
+          "details": []
+         },
+         "steering": null,
+         "constraint": null,
+         "tokens": 31,
+         "tokens_reused": 1,
+         "tokens_discarded": 0,
+         "decode_calls": 2,
+         "prefix_cache_hit_tokens": 1662,
+         "decode_latency_ns": 1829664133
+        }
+       ]
+      }
+     ],
+     "totals": {
+      "sentences": 3,
+      "refused": 1,
+      "rollbacks": 2,
+      "recovered_by_allow": 0,
+      "recovered_by_ban": 0,
+      "tokens_discarded": 73,
+      "decode_calls": 8,
+      "prefix_cache_hit_tokens": 5591,
+      "claim_latency_ns": 4085990,
+      "nli_latency_ns": 499837530,
+      "decode_latency_ns": 8104946186,
+      "elapsed_ns": 8619466122
+     },
+     "stop_reason": "eos"
+    },
+    "injected": "The maximum compensatory award is £85,000."
+   }
+  ]
+ }
+}
