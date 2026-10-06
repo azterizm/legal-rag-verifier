@@ -31,7 +31,7 @@ classifiers = [
 [project.optional-dependencies]
 nli = ["torch>=2.4", "transformers>=4.56"]
 hf = ["torch>=2.4", "transformers>=4.56", "accelerate>=1.0", "bitsandbytes>=0.46.1; platform_system != 'Windows'"]
-sglang = []
+sglang = ["transformers>=4.56"]  # client side; the server runs sglang itself
 
 [dependency-groups]
 dev = [
@@ -97,10 +97,10 @@ warn_unreachable = true
 enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
 mypy_path = "src"
 files = ["src", "tests", "scripts", "batteries"]
-exclude = ["^uk_scrap_data/", "^data/", "^batteries/router/"]
+exclude = ["^uk_scrap_data/", "^data/", "^batteries/router/", "^scripts/modal_m4\\.py$"]  # modal_m4 runs under `uv run --with modal`
 
 [[tool.mypy.overrides]]
-module = ["torch", "torch.*", "transformers", "transformers.*"]
+module = ["torch", "torch.*", "transformers", "transformers.*", "sglang", "sglang.*", "modal", "huggingface_hub"]
 ignore_missing_imports = true
 
 # ---------------------------------------------------------------- tests

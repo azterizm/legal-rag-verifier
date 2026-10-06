@@ -279,7 +279,7 @@ name = "cuda-bindings"
 version = "13.4.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cuda-pathfinder" },
+    { name = "cuda-pathfinder", marker = "python_full_version < '3.15'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f1/3a/06569edfd5db020c1ff7c0361268a3eaa60ead0c0ccca460fef69d68022f/cuda_bindings-13.4.3-cp311-cp311-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:df8b3767facca8acde216460df684dfc3826d519096c13adfd3030a55870dc79", size = 6494098, upload-time = "2026-09-23T02:21:50.472Z" },
@@ -584,6 +584,9 @@ nli = [
     { name = "torch" },
     { name = "transformers" },
 ]
+sglang = [
+    { name = "transformers" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -602,6 +605,7 @@ requires-dist = [
     { name = "torch", marker = "extra == 'nli'", specifier = ">=2.4" },
     { name = "transformers", marker = "extra == 'hf'", specifier = ">=4.56" },
     { name = "transformers", marker = "extra == 'nli'", specifier = ">=4.56" },
+    { name = "transformers", marker = "extra == 'sglang'", specifier = ">=4.56" },
 ]
 provides-extras = ["nli", "hf", "sglang"]
 

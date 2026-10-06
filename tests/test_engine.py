@@ -222,3 +222,23 @@ def test_allow_constraint_lifts_when_a_sequence_completes() -> None:
     assert allow.next_tokens([9]) is None
     assert Ban(frozenset({5})).banned(0) == frozenset({5})
     assert Ban(frozenset({5})).banned(1) == frozenset()
+
+
+def test_failed_allow_retry_falls_back_to_ban_before_refusing() -> None:
+    # Live case (stop 18): the allow-list fixes the figure, but the frame still drops a qualifier.
+    premise = Premise.from_text(
+        "The amount is the lower of £123,543 and 52 multiplied by a week's pay.",
+        titles=("Employment Rights Act 1996",),
+    )
+    scripts = [
+        "The cap is £85,000.",
+        "Compensation is the lower of £123,543 and 52 multiplied by a week's pay.",
+    ]
+    backend = ScriptedBackend(scripts)
+    answer = InFlightGenerator(backend, Verifier()).generate_verified(QUERY, premise)
+    assert answer.text == scripts[1]
+    sentence = answer.trace["sentences"][0]
+    assert [a["steering"] for a in sentence["attempts"]] == [None, "allow", "ban"]
+    assert sentence["attempts"][1]["verdict"]["reasons"] == ["QUALIFIER_DROPPED"]
+    assert sentence["rollbacks"] == 2
+    assert sentence["recovered_by"] == "ban"

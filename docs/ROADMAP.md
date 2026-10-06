@@ -14,16 +14,28 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-05 |
+| Last updated | 2026-10-06 |
 | Current stage | Phase 3, Mac session (M1–M3) |
-| Current milestone | M1 ✅ · **M2: NLI head + latency ✅, dev battery drafted — ⛔ label review** |
-| Next step | After your review: run the battery (claim-only, small, base), calibrate on dev, pick small vs base |
-| Waiting on you | M3 done. Next needs your go: M4 (SGLang + Modal L4, spend). Proposed, not applied: date-filtered NLI candidates; allow→ban fallback before refusal |
-| **Reminder at benchmarking** | Tell the user: legal-rag-audit's live-run responses (`~/Code/legal-rag-audit/run/live/`) exist and were skipped by decision (stop 5); raise them again when the battery is run / the grid is benchmarked |
+| Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · **M4: SGLang client + Modal app written, not run — ⛔ spend go** |
+| Next step | On your go: Modal CPU probe of the SGLang image, CPU weight download, then one L4 spike (≤ 30 min) |
+| Waiting on you | Go for the Modal spend (M4). Vault 02: where the instrument title for the premise comes from |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (19): **Date filter, allow→ban fallback, SGLang client, vault 05 (your go).**
+  - NLI candidates are restricted to the versions in force on the date asked (sentence or query date) when the
+    premise holds dated versions. Dev, base + enrichment: GP false rollback 7.2 → 5.6 %, all-pass 7.1 → 5.7 %,
+    recall 85.4 % unchanged, precision 91.7 → 93.3 %. legal-rag-audit (timeline premise): correct in-force
+    sentences kept 4/38 → 13/38. Held-out not re-run (sealed, run once).
+  - Engine: a failed allow retry gets one ban retry before the refusal (the live s.124 case).
+  - `backends/sglang.py`: stdlib HTTP client on `/generate`; `cached_tokens` recorded as the prefix-cache hit;
+    constraints one token per request through a server-side mask (`--enable-custom-logit-processor`); tested
+    offline against a fake server. `scripts/modal_m4.py` + `scripts/m4_spike.py` written, **not run**.
+  - Vault 05: `InFlightGenerator(SGLangBackend.connect(…), Verifier(SentenceNLIVerifier(base)))` and
+    `generate_verified(query, Premise.from_provision(…))`; the instrument title's source is open (vault 02).
+  - Auto mode blocked two steps this stop; you granted them.
 
 - 2026-10-06 (18): **M3 done: engine + HF backend.** `engine.InFlightGenerator` (request-per-sentence, allow /
   ban steering, refusal after 2 per point, canonical trace), `Backend` protocol (plus the backend's tokenizer:
@@ -234,6 +246,10 @@ Plan §Key decisions 2–5, R2–R5, R8, R10.
 - [x] First step: bnb 4-bit Llama 3.1 8B loads and decodes on MPS (needs serial weight loading).
 - [x] `scripts/live_demo.py` on the real s.124 premise; prints the trace.
 
-### M4 — SGLang backend + Modal L4 spike 🧑 (spend) — later session
+### M4 — SGLang backend + Modal L4 spike 🧑 (spend)
+- [x] `backends/sglang.py` (stdlib HTTP client, server-side mask for constraints), offline tests vs a fake server.
+- [x] `scripts/modal_m4.py` (`lmsysorg/sglang:v0.5.21`, Qwen 2.5 7B, L4, 30-min cap) + `scripts/m4_spike.py`.
+- [ ] ⛔ Your go for the spend. Then: CPU probe (image Python ≥ 3.11, mask processor imports), CPU weight
+      download, one L4 run: s.124 queries + injected £85,000 both ways, rollback round trip warm vs cold.
 
 ### Later — sealed held-out battery + 2×2 grid (07 §5), CI/GitHub, release, vault corrections (⛔ each)

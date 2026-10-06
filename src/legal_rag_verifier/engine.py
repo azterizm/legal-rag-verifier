@@ -19,7 +19,9 @@ decision 6):
   Bans accumulate per position.
 
 After ``max_rollbacks`` rollbacks on one point the engine commits a fixed refusal sentence and
-moves on; past ``max_total_rollbacks`` it ends the answer with the refusal.
+moves on, except that a failed allow retry first gets one ban retry (the allow-list keeps the
+sentence frame, which may be what is wrong); past ``max_total_rollbacks`` it ends the answer with
+the refusal.
 """
 
 from __future__ import annotations
@@ -179,6 +181,7 @@ class _Point:
     attempts: list[dict[str, Any]] = field(default_factory=list)
     bans: dict[int, set[int]] = field(default_factory=dict)
     rollbacks: int = 0
+    fell_back: bool = False  # an allow retry failed and a ban retry was granted
 
 
 class InFlightGenerator:
@@ -208,16 +211,14 @@ class InFlightGenerator:
         self.system_prompt = system_prompt
 
     # ------------------------------------------------------------------ public API
+    def messages(self, query: str, premise: Premise) -> list[dict[str, str]]:
+        """The chat the generator sees: the premise in the system turn, then the query."""
+        system = self.system_prompt.format(premise=render_premise(premise))
+        return [{"role": "system", "content": system}, {"role": "user", "content": query}]
+
     def generate_verified(self, query: str, premise: Premise) -> Answer:
         t0 = time.perf_counter_ns()
-        messages = [
-            {
-                "role": "system",
-                "content": self.system_prompt.format(premise=render_premise(premise)),
-            },
-            {"role": "user", "content": query},
-        ]
-        prompt = self.backend.chat(messages)
+        prompt = self.backend.chat(self.messages(query, premise))
         answer: list[int] = []
         carry: _Draft | None = None  # lookahead decoded past the last committed sentence
         points: list[dict[str, Any]] = []
@@ -251,16 +252,17 @@ class InFlightGenerator:
                     break
                 point.rollbacks += 1
                 total_rollbacks += 1
-                if point.rollbacks >= self.max_rollbacks or (
-                    total_rollbacks > self.max_total_rollbacks
-                ):
+                capped = point.rollbacks >= self.max_rollbacks
+                if self._refuses(point, steering, total_rollbacks):
                     attempt["tokens_discarded"] = len(draft.tokens) + len(draft.lookahead)
                     answer += self._refusal(answer)
                     points.append(self._close(point, "refused", self.refusal))
                     if total_rollbacks > self.max_total_rollbacks:
                         stop_reason = "rollback_budget"
                     break
-                seed, constraint, steering = self._steer(point, draft.tokens, verdict)
+                seed, constraint, steering = self._steer(
+                    point, draft.tokens, verdict, ban_only=capped
+                )
                 end = None
                 attempt["tokens_discarded"] = len(draft.tokens) + len(draft.lookahead) - len(seed)
             if stop_reason is None and carry is not None and carry.end and not carry.lookahead:
@@ -320,15 +322,32 @@ class InFlightGenerator:
                 draft.end = "length"  # a backend that cannot decode further
 
     # ------------------------------------------------------------------ steering
+    def _refuses(self, point: _Point, steering: str | None, total_rollbacks: int) -> bool:
+        """Refuse at the rollback cap, except that a failed allow retry gets one ban retry first:
+        the allow-list keeps the sentence frame, which may be the problem (a figure forced in
+        where its qualifier is missing)."""
+        if total_rollbacks > self.max_total_rollbacks:
+            return True
+        fallback = steering == "allow" and not point.fell_back
+        return point.rollbacks >= self.max_rollbacks and not fallback
+
     def _steer(
         self,
         point: _Point,
         tokens: Sequence[int],
         verdict: SentenceVerdict,
+        *,
+        ban_only: bool = False,
     ) -> tuple[list[int], Constraint | None, str]:
         """Where to resume after a rollback, and under which constraint."""
+        point.fell_back = point.fell_back or ban_only
         repair = verdict.repair
-        if self.steering == "allow" and repair is not None and repair.mode == "allow":
+        if (
+            self.steering == "allow"
+            and not ban_only
+            and repair is not None
+            and repair.mode == "allow"
+        ):
             allowed = self._allow(tokens, repair.offset, repair.candidates, repair.rejected)
             if allowed is not None:
                 keep, sequences = allowed

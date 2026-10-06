@@ -225,3 +225,33 @@ def test_empty_premise_skips_nli_and_grounds_nothing() -> None:
     assert verdict.reasons == (Reason.UNGROUNDED_FIGURE,)
     assert Verifier(scorer).check_sentence(Premise(()), "I cannot find that Act.").emitted
     assert scorer.hypotheses == []
+
+
+class ContradictsCurrent:
+    """Contradicts any premise that states the current figure (£751), entails the rest."""
+
+    model_id = "contradicts-current"
+
+    def __init__(self) -> None:
+        self.premises: list[str] = []
+
+    def score(self, premises: Sequence[str], hypothesis: str) -> list[NLIProbs]:
+        self.premises += premises
+        return [
+            NLIProbs(0.01, 0.01, 0.98) if "£751" in p else NLIProbs(0.95, 0.04, 0.01)
+            for p in premises
+        ]
+
+
+def test_nli_judges_only_versions_in_force_on_the_date_asked() -> None:
+    scorer = ContradictsCurrent()
+    query = "As at 1 June 2014, what was the maximum amount of a week's pay?"
+    verdict = Verifier(scorer).check_sentence(
+        _dated_premise(), "As at 1 June 2014 the cap was £464.", query=query
+    )
+    assert verdict.emitted
+    assert not any("£751" in p for p in scorer.premises)
+    # Without a date every version stays a candidate.
+    undated = ContradictsCurrent()
+    Verifier(undated).check_sentence(_dated_premise(), "A week's pay is capped by the Act.")
+    assert any("£751" in p for p in undated.premises)

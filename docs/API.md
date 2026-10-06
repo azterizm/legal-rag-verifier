@@ -63,7 +63,8 @@ heading: instrument, citation, section title) and each window joined with a wind
 2. **Alignment**: top-k windows (lexical now; NLI best-entailed in M2), floor `align_ratio`, plus one hop of
    windows they cite ("subsection (1ZA)" pulls in (1ZA)).
 3. **Window checks**: value swap (R3), dropped qualifier (R2: caps, comparatives and conditions; not a minimum stated as the threshold; provision windows only, not facts), deontic shift.
-4. **NLI** (M2): windows ranked by relatedness (1 − P(neutral)); on the most related window,
+4. **NLI** (M2): when the sentence or query names a date and the premise holds dated versions, only the versions
+   in force on it (and undated windows) are candidates; windows ranked by relatedness (1 − P(neutral)); on the most related window,
    contradiction > 0.40 → rollback; entailment ≤ 0.70 → rollback if the sentence has a claim or a
    modal, else per `neutral_policy` (R7).
 
@@ -109,8 +110,14 @@ Loop per sentence: `extend` to a stop (`.` `;` `\n`) → `find_boundary` confirm
 token; a false stop extends the same sentence) → `check_sentence` → commit, or roll back: **allow** keeps the
 sentence up to the claim and constrains the claim span to the repair's candidates (rejected value excluded);
 **ban** restarts at the sentence's first non-space token with that token banned (bans accumulate per position).
-Two rollbacks on one point, or a retry that produces nothing → the refusal sentence; past `max_total_rollbacks`
-the answer ends with it (`stop_reason "rollback_budget"`).
+Two rollbacks on one point, or a retry that produces nothing → the refusal sentence, except that a failed allow
+retry first gets one ban retry (the allow-list keeps the sentence frame, which may be what is wrong); past
+`max_total_rollbacks` the answer ends with it (`stop_reason "rollback_budget"`).
+
+`SGLangBackend.connect(url, model_path, revision=…)` (`legal_rag_verifier.backends.sglang`, stdlib HTTP client;
+tokenizer via `transformers`, the `[sglang]` extra): each call resubmits `committed` as `input_ids` to `/generate`
+and records `meta_info.cached_tokens` as `prefix_cache_hit_tokens`. Constraints run one token per request through
+a server-side logit mask (server flag `--enable-custom-logit-processor`), then one plain request with the stops.
 
 Trace: `backend, model, verifier{config, nli}, engine{…}, prompt_tokens, answer_tokens, sentences[{text,
 outcome emitted|refused, rollbacks, recovered_by allow|ban|null, attempts[{verdict, steering, constraint,

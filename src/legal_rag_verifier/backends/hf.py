@@ -11,15 +11,16 @@ from __future__ import annotations
 
 import os
 import time
-from collections.abc import Mapping, Sequence
+from collections.abc import Sequence
 from typing import Any, Literal
 
-from legal_rag_verifier.engine import Allow, Ban, Constraint, Segment, Tokens
+from legal_rag_verifier.backends._tokenizer import TokenizerMixin
+from legal_rag_verifier.engine import Allow, Ban, Constraint, Segment
 
 __all__ = ["HFBackend"]
 
 
-class HFBackend:
+class HFBackend(TokenizerMixin):
     """A causal LM and its tokenizer, decoding greedily for the engine."""
 
     name = "hf"
@@ -76,22 +77,6 @@ class HFBackend:
             dtype=torch_dtype,
         )
         return cls(model, tokenizer, model_id=f"{model_name}@{_snapshot(model_name, revision)}")
-
-    # ------------------------------------------------------------------ tokenizer
-    def chat(self, messages: Sequence[Mapping[str, str]]) -> Tokens:
-        if getattr(self.tokenizer, "chat_template", None):
-            encoded = self.tokenizer.apply_chat_template(
-                [dict(m) for m in messages], add_generation_prompt=True, return_dict=True
-            )
-            return tuple(int(t) for t in encoded["input_ids"])
-        text = "\n\n".join(f"{m['role']}: {m['content']}" for m in messages) + "\n\nassistant:"
-        return self.encode(text)
-
-    def encode(self, text: str) -> Tokens:
-        return tuple(int(t) for t in self.tokenizer(text, add_special_tokens=False)["input_ids"])
-
-    def decode(self, tokens: Sequence[int]) -> str:
-        return str(self.tokenizer.decode(list(tokens), skip_special_tokens=True))
 
     # ------------------------------------------------------------------ cache
     def next_logits(self, committed: Sequence[int]) -> tuple[Any, int]:

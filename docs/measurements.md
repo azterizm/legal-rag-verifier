@@ -243,3 +243,25 @@ Findings:
   without the "No", emitted as CONNECTIVE. A negation/polarity weakness of the NLI head, as on the batteries.
 - **Undetected omission**: the model quoted s.124(1A) but stopped the list at "section 100" (the whistleblowing
   ground is s.103A). Every claim in the sentence is grounded; truncating a list is outside the claim check.
+
+## Date-filtered NLI candidates (2026-10-06, dev only; held-out sealed and not re-run)
+
+With a date asked about (the sentence's own date, else the query's) and dated versions in the premise, NLI only
+judges against the versions in force on it (undated windows and facts stay).
+
+| Dev, base + enrichment | GP false rollback | all-pass false rollback | recall | precision |
+|---|---:|---:|---:|---:|
+| before | 7.2 % | 7.1 % | 85.4 % | 91.7 % |
+| date filter | **5.6 %** | **5.7 %** | 85.4 % | **93.3 %** |
+
+Two rows change (vdev-0239, vdev-0247: NLI_CONTRADICTION → GROUNDED); nothing else moves.
+
+legal-rag-audit live answers (anonymised, base + enrichment), before → after:
+
+| Premise | In-force-figure sentences emitted | Superseded flagged | Rolled-back share in correct answers | FAILs flagged | Abstentions passed |
+|---|---:|---:|---:|---:|---:|
+| version | 13 → 13 / 38 | 5 / 5 | 50.0 → 50.0 % | 3 / 3 | 28 / 28 |
+| timeline | 4 → **13** / 38 | 5 / 5 | 55.4 → **45.1** % | 3 / 3 | 28 / 28 |
+
+The version premise holds one version, so nothing changes there; on the timeline premise the filter removes the
+"historical figure judged against the current text" failure noted above.

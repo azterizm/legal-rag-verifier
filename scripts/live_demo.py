@@ -17,8 +17,9 @@ import argparse
 import json
 import os
 import sys
+from collections.abc import Callable, Sequence
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
@@ -111,6 +112,45 @@ def summary(answer: Any) -> None:
     )
 
 
+def premise() -> Premise:
+    """ERA 1996 s.124 as in force (committed fixture) plus the 2026 uprating as a fact window."""
+    return Premise.from_records(
+        load_fixture("era1996_s124.jsonl"), facts=S124_FACTS, extra_titles=[SI_2026_310]
+    )
+
+
+def run_steering(
+    backend: Any,
+    verifier: Verifier,
+    premise: Premise,
+    steering: Literal["allow", "ban"],
+    *,
+    max_new_tokens: int,
+    queries: Sequence[str] = QUERIES,
+    reset: Callable[[], None] | None = None,
+) -> list[dict[str, Any]]:
+    """Each query once, then the injected £85,000 failure; prints and returns the traces."""
+    engine = InFlightGenerator(backend, verifier, steering=steering, max_new_tokens=max_new_tokens)
+    injected = InFlightGenerator(
+        Injecting(backend), verifier, steering=steering, max_new_tokens=max_new_tokens
+    )
+    runs = []
+    for query, generator, label in [
+        *((q, engine, steering) for q in queries),
+        (QUERIES[0], injected, f"{steering}, injected {INJECTED!r}"),
+    ]:
+        if reset is not None:
+            reset()
+        answer = generator.generate_verified(query, premise)
+        print(f"\n[{label}] Q: {query}\nA: {answer.text}", flush=True)
+        summary(answer)
+        run = {"query": query, "answer": answer.text, "trace": answer.trace}
+        if generator is injected:
+            run["injected"] = INJECTED
+        runs.append(run)
+    return runs
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default=os.environ.get("GEN_MODEL_ID", DEFAULT_MODEL))
@@ -123,9 +163,6 @@ def main() -> None:
 
     from legal_rag_verifier.backends.hf import HFBackend  # noqa: PLC0415
 
-    premise = Premise.from_records(
-        load_fixture("era1996_s124.jsonl"), facts=S124_FACTS, extra_titles=[SI_2026_310]
-    )
     backend = HFBackend.load(args.model, args.device)
     print(f"generator {backend.model_id} on {backend.device}", flush=True)
     scorer: NLIScorer | None = None
@@ -139,37 +176,21 @@ def main() -> None:
     inv = invariant(backend, prompt)
     print("rollback invariant:", json.dumps(inv), flush=True)
 
-    out = ROOT / "results"
     for steering in args.steering:
-        engine = InFlightGenerator(
-            backend, verifier, steering=steering, max_new_tokens=args.max_new_tokens
+        runs = run_steering(
+            backend,
+            verifier,
+            premise(),
+            steering,
+            max_new_tokens=args.max_new_tokens,
+            queries=() if args.injected_only else QUERIES,
+            reset=backend.reset,
         )
-        runs = []
-        for query in () if args.injected_only else QUERIES:
-            backend.reset()
-            answer = engine.generate_verified(query, premise)
-            print(f"\n[{steering}] Q: {query}\nA: {answer.text}", flush=True)
-            summary(answer)
-            runs.append({"query": query, "answer": answer.text, "trace": answer.trace})
-        # Injected failure: the first sentence states £85,000 (absent from the premise).
-        backend.reset()
-        injected = InFlightGenerator(
-            Injecting(backend), verifier, steering=steering, max_new_tokens=args.max_new_tokens
+        path = (
+            ROOT
+            / "results"
+            / (f"live-demo-{steering}{'-injected' if args.injected_only else ''}.json")
         )
-        answer = injected.generate_verified(QUERIES[0], premise)
-        print(
-            f"\n[{steering}, injected {INJECTED!r}] Q: {QUERIES[0]}\nA: {answer.text}", flush=True
-        )
-        summary(answer)
-        runs.append(
-            {
-                "query": QUERIES[0],
-                "injected": INJECTED,
-                "answer": answer.text,
-                "trace": answer.trace,
-            }
-        )
-        path = out / f"live-demo-{steering}{'-injected' if args.injected_only else ''}.json"
         path.write_text(
             json.dumps({"invariant": inv, "runs": runs}, indent=1, ensure_ascii=False) + "\n",
             encoding="utf-8",

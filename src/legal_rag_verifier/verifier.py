@@ -284,7 +284,9 @@ class Verifier:
         nli_result: NLIResult | None = None
         judged: tuple[int, ...] = ()
         if self.nli is not None and index.windows:  # an empty premise has nothing to entail
-            nli_result, ranked, judged = self._judge(index, sentence)
+            nli_result, ranked, judged = self._judge(
+                index, sentence, _in_force_on(index, sentence, query_claims)
+            )
             aligned = self._expand(index, ranked)
         else:
             aligned = self._aligned_lexical(index, sentence)
@@ -382,15 +384,16 @@ class Verifier:
         return found
 
     def _judge(
-        self, index: PremiseIndex, sentence: str
+        self, index: PremiseIndex, sentence: str, when: date | None = None
     ) -> tuple[NLIResult, list[int], tuple[int, ...]]:
         """NLI over the premise. Each clause (split on ";" and ":") is judged and the worst counts;
-        a clause that only denies an Act or section exists has nothing to entail and is dropped."""
+        a clause that only denies an Act or section exists has nothing to entail and is dropped.
+        With a date asked about, dated versions not in force on it are not candidates."""
         assert self.nli is not None  # noqa: S101 - only called with an NLI head
         clauses = [c for c in _clauses(sentence) if not _is_denial_clause(c)]
         if not clauses:
             return NLIResult(1.0, 0.0, 0.0, 0, 0, self.nli.model_id, "denial"), [], ()
-        judged = [_run_nli(self.nli, index, c, self.config) for c in clauses]
+        judged = [_run_nli(self.nli, index, c, self.config, when) for c in clauses]
         latency = sum(r.latency_ns for r, _, _ in judged)
 
         def severity(item: tuple[NLIResult, list[int], tuple[int, ...]]) -> tuple[int, float]:
@@ -539,24 +542,44 @@ class _Findings:
     repair: Repair | None = None
 
 
-def _nli_candidates(index: PremiseIndex) -> list[tuple[str, tuple[int, ...], str]]:
+def _nli_candidates(
+    index: PremiseIndex, when: date | None = None
+) -> list[tuple[str, tuple[int, ...], str]]:
     """Each window, each window joined with a window it cites ("subsection (1ZA)"), and each
-    quote-audited enrichment element as a statement about its own window."""
+    quote-audited enrichment element as a statement about its own window. With ``when``, a dated
+    version not in force on that day is left out (undated windows and facts stay)."""
+    windows = [w for w in index.windows if when is None or _covers(w, when)]
     out: list[tuple[str, tuple[int, ...], str]] = [
-        (w.nli_text, (w.position,), "window") for w in index.windows
+        (w.nli_text, (w.position,), "window") for w in windows
     ]
     out += [
         (f"{w.nli_text} {v.text}", (w.position, v.position), "joined")
-        for w in index.windows
-        for v in index.windows
+        for w in windows
+        for v in windows
         if v.position != w.position and v.tail and v.tail in w.citations
     ]
     out += [
         (f"{w.heading}: {element}" if w.heading else element, (w.position,), "element")
-        for w in index.windows
+        for w in windows
         for element in w.elements
     ]
     return out
+
+
+def _covers(window: WindowIndex, when: date) -> bool:
+    """An undated window, or a dated version in force on ``when``."""
+    return (window.valid_from is None or window.valid_from <= when) and (
+        window.valid_to is None or when < window.valid_to
+    )
+
+
+def _in_force_on(index: PremiseIndex, sentence: str, query_claims: list[Claim]) -> date | None:
+    """The date to judge against, when the premise holds dated versions and one covers it."""
+    dated = [w for w in index.windows if w.valid_from or w.valid_to]
+    when = _sentence_date(sentence, query_claims) if dated else None
+    if when is None or not any(_covers(w, when) for w in dated):
+        return None
+    return when
 
 
 def _run_nli(
@@ -564,6 +587,7 @@ def _run_nli(
     index: PremiseIndex,
     sentence: str,
     config: VerifierConfig,
+    when: date | None = None,
 ) -> tuple[NLIResult, list[int], tuple[int, ...]]:
     """Score every candidate in one batch, choose the one the sentence is judged on, rank windows.
 
@@ -575,7 +599,7 @@ def _run_nli(
     relatedness, each kept only while it scores at least ``align_ratio`` of the chosen one) and
     the windows of the chosen candidate.
     """
-    candidates = _nli_candidates(index)
+    candidates = _nli_candidates(index, when)
     t0 = time.perf_counter_ns()
     probs = scorer.score([text for text, _, _ in candidates], sentence)
     elapsed = time.perf_counter_ns() - t0
@@ -678,12 +702,7 @@ def _version_mismatch(
     when = _sentence_date(sentence, query_claims) if dated else None
     if when is None:
         return None
-    covering = [
-        w
-        for w in dated
-        if (w.valid_from is None or w.valid_from <= when)
-        and (w.valid_to is None or when < w.valid_to)
-    ]
+    covering = [w for w in dated if _covers(w, when)]
     if not covering:
         return None
     for result in results:
