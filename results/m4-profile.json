@@ -1,0 +1,102 @@
+{
+ "gpu": "NVIDIA L4, 610.57.04",
+ "generator": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+ "bf16": {
+  "prompt_tokens": 759,
+  "http_get_ms": 1.49,
+  "warm_ms_by_max_new_tokens": {
+   "1": 116.74,
+   "2": 173.5,
+   "4": 286.17,
+   "16": 962.34,
+   "64": 3499.05
+  },
+  "first_token_ms": 116.74,
+  "decode_ms_per_token": 52.85,
+  "decode_tok_s": 18.9,
+  "first_token_minus_decode_ms": 63.89,
+  "masked_one_token_ms": {
+   "allowed": 124.66,
+   "banned": 123.66
+  },
+  "cold_one_token_ms": 269.53,
+  "resubmit_one_token_ms": 116.85,
+  "resubmit_cached_tokens": 759,
+  "meta_info_sample": {
+   "id": "844da36de14c472898153ee5e85c9e14",
+   "finish_reason": {
+    "type": "stop",
+    "matched": 151645
+   },
+   "prompt_tokens": 759,
+   "weight_version": "default",
+   "num_retractions": 0,
+   "reasoning_tokens": 0,
+   "completion_tokens": 61,
+   "cached_tokens": 758,
+   "weight_versions": [
+    {
+     "version": "default",
+     "start": 0,
+     "end": 61
+    }
+   ],
+   "cached_tokens_details": {
+    "device": 758,
+    "host": 0
+   },
+   "dp_rank": null,
+   "e2e_latency": 3.4973104839999962,
+   "response_sent_to_client_ts": 1791299245.481577
+  }
+ },
+ "fp8": {
+  "prompt_tokens": 759,
+  "http_get_ms": 1.54,
+  "warm_ms_by_max_new_tokens": {
+   "1": 68.54,
+   "2": 101.36,
+   "4": 166.7,
+   "16": 554.74,
+   "64": 2010.62
+  },
+  "first_token_ms": 68.54,
+  "decode_ms_per_token": 30.33,
+  "decode_tok_s": 33.0,
+  "first_token_minus_decode_ms": 38.21,
+  "masked_one_token_ms": {
+   "allowed": 74.58,
+   "banned": 74.82
+  },
+  "cold_one_token_ms": 170.08,
+  "resubmit_one_token_ms": 68.79,
+  "resubmit_cached_tokens": 759,
+  "meta_info_sample": {
+   "id": "97b87fd041c74291b4ab1aab3a3b0371",
+   "finish_reason": {
+    "type": "stop",
+    "matched": 151645
+   },
+   "prompt_tokens": 759,
+   "weight_version": "default",
+   "num_retractions": 0,
+   "reasoning_tokens": 0,
+   "completion_tokens": 61,
+   "cached_tokens": 758,
+   "weight_versions": [
+    {
+     "version": "default",
+     "start": 0,
+     "end": 61
+    }
+   ],
+   "cached_tokens_details": {
+    "device": 758,
+    "host": 0
+   },
+   "dp_rank": null,
+   "e2e_latency": 2.0088099060000104,
+   "response_sent_to_client_ts": 1791299375.9480877
+  }
+ }
+}

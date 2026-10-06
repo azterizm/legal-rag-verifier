@@ -116,11 +116,18 @@ _DURATION_RE = re.compile(
     re.IGNORECASE,
 )
 _NUMBER_RE = re.compile(rf"(?<![\w(/.])(?P<num>{NUMERAL_RE})(?![\w)/]|\.\d)")
+# A number that labels an entry ("item 7" in a schedule table) names it; it states no quantity.
+_LABEL_BEFORE = re.compile(
+    r"\b(?:item|entry|row|column|line|box|step|annex|appendix|table|form)\s+$", re.IGNORECASE
+)
 
 _TITLE_WORD = r"(?:[A-Z][\w'’\-]*|\([A-Z][^()]*\))"
 _TITLE_LINK = r"(?:of|and|the|for|in|on|to|&|etc\.?)"
+# A comma inside a title only in a list of capitalised words closed by "and" ("Companies,
+# Partnerships and Groups … Regulations 2015"); a comma after an opening word is prose.
+_TITLE_COMMA = r",(?=\s+[A-Z][^,.;:]*?\sand\s)"
 _INSTRUMENT_RE = re.compile(
-    rf"(?P<title>{_TITLE_WORD}(?:\s+(?:{_TITLE_WORD}|{_TITLE_LINK}))*?\s+"
+    rf"(?P<title>{_TITLE_WORD}(?:(?:{_TITLE_COMMA})?\s+(?:{_TITLE_WORD}|{_TITLE_LINK}))*?\s+"
     rf"(?:Act|Order|Regulations|Rules|Measure|Code)(?:\s+\(Northern\s+Ireland\))?)\s+(?P<year>\d{{4}})\b"
 )
 _SI_RE = re.compile(r"\b(?:S\.?\s?I\.?|SI)\s?(?:No\.?\s?)?(?P<year>\d{4})\s?/\s?(?P<num>\d+)\b")
@@ -263,7 +270,7 @@ def extract_claims(text: str) -> list[Claim]:
             m.start(),
             m.end(),
         )
-        if not _overlaps(claim, taken):
+        if not _overlaps(claim, taken) and not _LABEL_BEFORE.search(text, 0, m.start()):
             chosen.append(claim)
     return sorted(chosen, key=lambda c: (c.start, c.kind.value, c.value))
 

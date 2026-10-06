@@ -90,7 +90,7 @@ backend = HFBackend.load("unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit")  # cuda 
 engine = InFlightGenerator(
     backend,
     Verifier(nli),
-    max_rollbacks=2,
+    max_rollbacks=3,  # retries per point
     max_total_rollbacks=8,
     steering="allow",  # or "ban"
     refusal=DEFAULT_REFUSAL,
@@ -110,9 +110,11 @@ Loop per sentence: `extend` to a stop (`.` `;` `\n`) → `find_boundary` confirm
 token; a false stop extends the same sentence) → `check_sentence` → commit, or roll back: **allow** keeps the
 sentence up to the claim and constrains the claim span to the repair's candidates (rejected value excluded);
 **ban** restarts at the sentence's first non-space token with that token banned (bans accumulate per position).
-Two rollbacks on one point, or a retry that produces nothing → the refusal sentence, except that a failed allow
-retry first gets one ban retry (the allow-list keeps the sentence frame, which may be what is wrong); past
-`max_total_rollbacks` the answer ends with it (`stop_reason "rollback_budget"`).
+Each point gets at most `max_rollbacks` (3) retries: allow when the rejected draft has a same-type repair, ban
+otherwise (so a failed allow retry whose frame is wrong is followed by a ban retry). The third retry failing, or
+a retry that produces nothing → the refusal sentence, and the answer goes on to the next point; past
+`max_total_rollbacks` discarded drafts the answer ends with it (`stop_reason "rollback_budget"`). A sentence's
+`rollbacks` counts its discarded drafts (a refused point after three retries shows 4).
 
 `SGLangBackend.connect(url, model_path, revision=…)` (`legal_rag_verifier.backends.sglang`, stdlib HTTP client;
 tokenizer via `transformers`, the `[sglang]` extra): each call resubmits `committed` as `input_ids` to `/generate`

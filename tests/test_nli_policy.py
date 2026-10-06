@@ -107,3 +107,26 @@ def test_load_provision_from_local_corpus() -> None:
     assert regnal[0]["coordinate"] == "uk/ukpga/Vict/24-25/100"
     with pytest.raises(FileNotFoundError):
         instrument_path(data, "uk/ukpga/Vict/99-99/1/s1")
+
+
+class Recording:
+    model_id = "scripted"
+
+    def __init__(self) -> None:
+        self.hypotheses: list[str] = []
+
+    def score(self, premises: Sequence[str], hypothesis: str) -> list[NLIProbs]:
+        self.hypotheses.append(hypothesis)
+        return [NLIProbs(0.05, 0.9, 0.05) for _ in premises]
+
+
+def test_leading_yes_or_no_is_not_judged() -> None:
+    scorer = Recording()
+    Verifier(scorer).check_sentence(PREMISE, "No, the tribunal may order reinstatement.")
+    Verifier(scorer).check_sentence(PREMISE, "Yes. The employer shall give written reasons.")
+    Verifier(scorer).check_sentence(PREMISE, "Nobody may order it.")
+    assert scorer.hypotheses == [
+        "the tribunal may order reinstatement.",
+        "The employer shall give written reasons.",
+        "Nobody may order it.",
+    ]

@@ -17,12 +17,23 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-06 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Your call: citation-anchored NLI (proposed), request-path latency profiling, then the 2×2 grid (07 §5) |
-| Waiting on you | Choice of next step. Vault 02: where the instrument title for the premise comes from |
+| Next step | 2×2 grid (07 §5): harness build, then the paid run (⛔ decisions: prompt set, Gemini endpoint, final-output scoring) |
+| Waiting on you | Grid decisions. Vault 02: where the instrument title for the premise comes from |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-06 (21): **Retries, detector fixes, latency profile (your go: "retry max 3 times", steps 1–3).**
+  - Engine: each point gets at most 3 retries (`max_rollbacks=3`), allow when a same-type repair exists, ban
+    otherwise; the allow→ban special case is gone (it falls out of the rule). After the third failed retry the
+    refusal is committed and the answer continues. Vault 05 still passes `max_rollbacks=2` (correction pending).
+  - Detector, dev unchanged (5.6 / 5.7 / 85.4 / 93.3): comma titles, label numbers ("item 7"), a leading
+    "Yes,"/"No," is not judged by NLI (fixes the M4 Q2 false rollback). Citation-anchored NLI tried and **not
+    adopted**: no dev false rollback fixed, 2 wrong-citation catches lost. legal-rag-audit not re-run (you stopped it).
+  - L4 profile (~10 min GPU): warm resubmit 117 ms bf16 / 69 ms FP8 = one non-graphed extend forward; decode
+    52.9 / 30.3 ms per token; HTTP 1.5 ms; mask +7 ms. "< 30 ms" is below one forward pass of a 7B on an L4.
+  - Roadmap M2 boxes ticked (done earlier).
 
 - 2026-10-06 (20): **M4 done (your go).** SGLang 0.5.21 + Qwen 2.5 7B on one Modal L4, same engine. Every
   resubmit after a rollback is a RadixAttention hit (`cached_tokens = committed − 1`); one-token round trip
@@ -230,19 +241,19 @@ Plan §Key decisions 2–5, R2–R5, R8, R10.
       `QUALIFIER_DROPPED`; query figure grounded) and hypothesis fuzz.
 - **Done when:** checks green ✅ · ⛔ API reviewed ✅ (2026-10-05).
 
-### M2 — NLI head + dev battery (`[nli]`) ✅ (held-out run pending, step 3)
+### M2 — NLI head + dev battery (`[nli]`) ✅
 - [x] `legal_rag_verifier.nli.SentenceNLIVerifier` implementing `NLIScorer`: batched `[window, hypothesis]`,
       MPS/CUDA/CPU, MPS-synchronised timing, `id2label` read from the model config.
 - [x] Long windows split to fit 512 tokens (chunks scored per window; most related chunk kept).
 - [x] Latency p50/p99 on M4 for `-small` and `-base` → `docs/measurements.md`.
 - [x] Dev detector battery (R1): 233 rows from real provisions (router concept `dev` split, R11), 9 classes.
       Rows written independently of the checker's patterns; verifier not run on them.
-- [ ] ⛔ **You review/correct the labels before any threshold is calibrated.**
-- [ ] Calibrate on dev only: thresholds, `align_ratio`, neutral policy (R7), small vs base. Headline:
+- [x] ⛔ **You review/correct the labels before any threshold is calibrated.** (done before calibration)
+- [x] Calibrate on dev only: thresholds, `align_ratio`, neutral policy (R7), small vs base. Headline:
       false-rollback rate on grounded paraphrases, recall per class.
 
 ### M3 — Engine + HF backend
-- [x] `engine.InFlightGenerator(backend, verifier, max_rollbacks=2, max_total_rollbacks, refusal)`;
+- [x] `engine.InFlightGenerator(backend, verifier, max_rollbacks, max_total_rollbacks, refusal)`;
       `generate_verified(query, premise) -> Answer(text, trace)`.
 - [x] `Backend` protocol (`extend(committed, stop, max_new, constraint) -> Segment`, plus the backend's
       tokenizer: `chat`, `encode`, `decode`); `Constraint` = `Ban` | `Allow`.

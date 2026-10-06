@@ -141,16 +141,34 @@ def test_ban_path_restarts_the_sentence_without_its_first_token() -> None:
     assert trace["sentences"][0]["recovered_by"] == "ban"
 
 
-def test_two_rollbacks_on_one_point_give_the_refusal() -> None:
-    text, trace = generate(
-        ["The limit is £85,000.", "A cap of £90,000 applies.", "Compensation is £70,000."],
-        steering="ban",
-    )
+def test_a_point_is_refused_when_its_third_retry_also_fails() -> None:
+    scripts = [
+        "The limit is £85,000.",
+        "A cap of £90,000 applies.",
+        "Compensation is £70,000.",
+        "Damages stop at £60,000.",
+        "Each award is £123,543.",
+    ]
+    text, trace = generate(scripts, steering="ban")
     assert text == DEFAULT_REFUSAL
     sentence = trace["sentences"][0]
     assert sentence["outcome"] == "refused"
-    assert sentence["rollbacks"] == 2
+    assert len(sentence["attempts"]) == 4  # the draft and three retries; the fifth is never tried
+    assert sentence["rollbacks"] == 4
     assert trace["totals"]["refused"] == 1
+
+
+def test_a_third_retry_can_still_recover() -> None:
+    scripts = [
+        "The limit is £85,000.",
+        "A cap of £90,000 applies.",
+        "Compensation is £70,000.",
+        "Each award is capped at £123,543.",
+    ]
+    text, trace = generate(scripts, steering="ban")
+    assert text == scripts[3]
+    assert trace["sentences"][0]["rollbacks"] == 3
+    assert trace["sentences"][0]["recovered_by"] == "ban"
 
 
 def test_a_retry_that_gives_nothing_is_refused_not_dropped() -> None:
@@ -210,7 +228,7 @@ def test_trace_is_canonical_json_with_backend_and_verifier_settings() -> None:
     assert answer.trace["backend"] == "fake"
     assert answer.trace["model"] == "fake@0"
     assert answer.trace["verifier"]["config"]["entail_threshold"] == 0.70
-    assert answer.trace["engine"]["max_rollbacks"] == 2
+    assert answer.trace["engine"]["max_rollbacks"] == 3
     assert answer.trace["totals"]["tokens_discarded"] == len("£85,000.")
 
 

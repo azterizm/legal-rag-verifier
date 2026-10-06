@@ -189,3 +189,22 @@ def test_huge_numbers_do_not_overflow() -> None:
         "10000000000000000000000000000"
     ]
     assert values("£1.20m", ClaimKind.MONEY) == ["GBP:1200000"]
+
+
+def test_title_with_a_listed_comma_is_kept_whole() -> None:
+    text = "It was superseded by the Companies, Partnerships and Groups (Accounts and Reports) "
+    text += "Regulations 2015, so the figure changed."
+    assert values(text, ClaimKind.INSTRUMENT) == [
+        "companies, partnerships and groups (accounts and reports) regulations 2015"
+    ]
+    assert values("Furthermore, Employment Rights Act 1996 applies.", ClaimKind.INSTRUMENT) == [
+        "employment rights act 1996"
+    ]
+    assert values(
+        "The Equality Act 2010, Employment Rights Act 1996 and Children Act 1989 apply.",
+        ClaimKind.INSTRUMENT,
+    ) == ["equality act 2010", "employment rights act 1996", "children act 1989"]
+
+
+def test_a_label_number_is_not_a_claim() -> None:
+    assert values("See item 7 of the table: 3 conditions apply.", ClaimKind.NUMBER) == ["3"]

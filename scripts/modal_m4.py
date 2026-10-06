@@ -3,17 +3,21 @@
   uv run --with modal modal run scripts/modal_m4.py::check      # CPU: image, Python, sglang import
   uv run --with modal modal run scripts/modal_m4.py::download   # CPU: weights into the volume
   uv run --with modal modal run scripts/modal_m4.py::main       # L4, ≤ 30 min: the spike
+  uv run --with modal modal run scripts/modal_m4.py::latency    # L4, ≤ 30 min: round-trip profile
 
-Writes results/m4-sglang.json. Only public statute text and the demo queries leave this machine.
+Writes results/m4-sglang.json / results/m4-profile.json. Only public statute text and the demo
+queries leave this machine.
 """
 
 from __future__ import annotations
 
+import contextlib
 import json
 import subprocess
 import sys
 import time
 import urllib.request
+from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
 
@@ -61,14 +65,14 @@ def download() -> str:
     return sha
 
 
-@app.function(gpu="L4", timeout=1800, volumes={"/hf": weights})
-def spike(revision: str) -> dict[str, Any]:
+@contextlib.contextmanager
+def sglang_server(revision: str, *extra: str) -> Iterator[str]:
     server = subprocess.Popen(  # noqa: S603
         [
             sys.executable, "-m", "sglang.launch_server",
             "--model-path", MODEL, "--revision", revision,
             "--port", str(PORT), "--mem-fraction-static", "0.70",
-            "--enable-custom-logit-processor",
+            "--enable-custom-logit-processor", *extra,
         ]
     )  # fmt: skip
     url = f"http://127.0.0.1:{PORT}"
@@ -84,16 +88,53 @@ def spike(revision: str) -> dict[str, Any]:
             if server.poll() is not None or time.time() > deadline:
                 raise RuntimeError("SGLang server did not come up")
             time.sleep(5)
-        from m4_spike import run  # noqa: PLC0415
-
-        return run(url, MODEL, revision)
+        yield url
     finally:
         server.terminate()
+        server.wait(timeout=120)
+
+
+@app.function(gpu="L4", timeout=1800, volumes={"/hf": weights})
+def spike(revision: str) -> dict[str, Any]:
+    from m4_spike import run  # noqa: PLC0415
+
+    with sglang_server(revision) as url:
+        return run(url, MODEL, revision)
+
+
+@app.function(gpu="L4", timeout=1800, volumes={"/hf": weights})
+def profile(revision: str) -> dict[str, Any]:
+    """The round trip split up, in bf16 (as M4) and with FP8 weights (L4 is Ada: native FP8)."""
+    from m4_profile import profile as measure  # noqa: PLC0415
+
+    gpu = subprocess.run(
+        ["nvidia-smi", "--query-gpu=name,driver_version", "--format=csv,noheader"],  # noqa: S607
+        capture_output=True,
+        text=True,
+        check=False,
+    ).stdout.strip()
+    out: dict[str, Any] = {"gpu": gpu, "generator": f"{MODEL}@{revision}"}
+    for name, flags in (("bf16", ()), ("fp8", ("--quantization", "fp8"))):
+        try:
+            with sglang_server(revision, *flags) as url:
+                out[name] = measure(url, MODEL, revision)
+        except Exception as error:  # noqa: BLE001 - keep the other variant's numbers
+            out[name] = {"error": repr(error)}
+        print(name, json.dumps(out[name]), flush=True)
+    return out
 
 
 @app.local_entrypoint()
 def check() -> None:
     print(json.dumps(probe.remote()))
+
+
+@app.local_entrypoint()
+def latency() -> None:
+    result = profile.remote(download.remote())
+    out = ROOT / "results" / "m4-profile.json"
+    out.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("→", out.relative_to(ROOT))
 
 
 @app.local_entrypoint()

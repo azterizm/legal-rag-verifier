@@ -303,3 +303,53 @@ Findings:
   ground for whistleblowing. Binding a citation to the claim it supports is outside the claim check.
 - **After a refusal the model hedges** with grounded but unhelpful prose; a refusal that ends the answer, or a
   stronger refusal prompt, is a design choice for the grid.
+
+## Detector fixes after M4, dev only (2026-10-06)
+
+Dev battery, base + enrichment, default config; held-out sealed and not re-run; legal-rag-audit not re-run.
+
+| Change | GP false rollback | All-pass false rollback | Failure recall | Precision |
+|---|---:|---:|---:|---:|
+| Before (stop 19, date filter) | 5.6 % | 5.7 % | 85.4 % | 93.3 % |
+| + comma titles, label numbers ("item 7"), leading "Yes,"/"No," dropped before NLI | 5.6 % | 5.7 % | 85.4 % | 93.3 % |
+| + citation-anchored NLI (tried, **not adopted**) | 5.6 % | 5.7 % | 83.8 % | 93.2 % |
+
+- **The three small fixes change no dev row** (no dev sentence starts with "Yes"/"No" or has a comma title or a
+  label number); they fix the cases seen live: on the M4 premise, "No, the limit … does not apply if the employee
+  was dismissed for whistleblowing." went from contradiction 0.999 (rolled back) to 0.002 (emitted).
+- **Citation-anchored NLI does not help on dev.** It judges a sentence that no candidate entails on the windows of
+  the provision it cites. It fixes the M4 sentence ("According to section 124(1ZA) … the lower of £123,543 and
+  52 … week's pay": contradiction 0.96 on the s.124(1A) exception → emitted), but fixes no dev false rollback and
+  loses 2 of 15 wrong-citation catches (vdev-0143 "section 175(3)" for s.175(4)(a); vdev-0154 "section 214(5)"
+  for s.214(3)): anchored to the wrongly cited subsection the sentence reads neutral, and its grounded citation
+  then lets it through. Removed from the code; recorded here.
+- Still open: a correct statement of a rule can be judged against its exception (M4); a real but wrong citation
+  ground ("section 100" for whistleblowing; the premise does not say what s.100 covers) passes.
+
+## Rollback round trip on the L4, profiled (2026-10-06)
+
+`scripts/modal_m4.py::latency` + `scripts/m4_profile.py`: same image, GPU (NVIDIA L4), generator and 759-token
+s.124 prompt as M4; median of 7 (HTTP GET: 20). Two servers in turn: bf16 weights (as M4) and online FP8 weights
+(`--quantization fp8`; the L4 is Ada, native FP8). GPU time about 10 min. Raw: `results/m4-profile.json`.
+
+| | bf16 | FP8 |
+|---|---:|---:|
+| HTTP + server round trip, no model work (`GET /get_model_info`) | 1.5 ms | 1.5 ms |
+| **Warm one-token request = resubmit after a rollback** (759 cached, 1 new token) | **117 ms** | **69 ms** |
+| Decode step (from 16 vs 64 new tokens) | 52.9 ms (18.9 tok/s) | 30.3 ms (33.0 tok/s) |
+| First token minus one decode step | 64 ms | 38 ms |
+| Masked one-token request (allow / ban) | 125 / 124 ms | 75 / 75 ms |
+| Cold one-token request (cache flushed, 759-token prefill) | 270 ms | 170 ms |
+
+Findings:
+- **The warm round trip is model work, not overhead.** HTTP and scheduling are 1.5 ms. A decode step is the
+  L4's memory-bandwidth floor (7.6 B parameters × 2 bytes ≈ 15 GB per token at ≈ 300 GB/s ≈ 50 ms); the rest
+  of the first token (64 ms) is the "extend" forward over the one uncached token, which SGLang runs without CUDA
+  graphs (server log: `#cached-token: 759 … cuda graph: False`), while later tokens run graphed.
+- **"< 30 ms abort/resubmit" (vault 04, 07 §5) is below one forward pass of a 7B model on an L4** in bf16
+  (53 ms) and only reachable in FP8 for a decode step (30 ms), not for the resubmit (69 ms). The measured floor is
+  what the grid can quote: **117 ms bf16 / 69 ms FP8**, against 270 / 170 ms for a full re-prefill of the prompt.
+- **The server-side mask costs ≈ 7 ms per constrained token**; an allow-list over Qwen's per-digit figures
+  (8 tokens for " £123,543") is ≈ 1 s in bf16, which the grid reports inside 4B's remediation latency.
+- Not tried: graphing the extend path (an SGLang option, version-dependent), and whether FP8 changes Qwen's
+  answers. The grid runs bf16 as specified unless you choose otherwise.

@@ -634,10 +634,14 @@ def _run_nli(
 _ANCHOR_KINDS = FIGURE_KINDS | {ClaimKind.CITATION}
 _BEFORE = re.compile(r"\b(?:before|until|till|prior\s+to|up\s+to)\s*(?:the\s+)?$", re.IGNORECASE)
 _CLAUSE_SPLIT = re.compile(r";\s+|:\s+(?=\S)")
+_ANSWER_WORD = re.compile(r"^(?:yes|no)\s*[,;:.\u2014-]\s*(?=\w)", re.IGNORECASE)
 
 
 def _clauses(sentence: str) -> list[str]:
-    """Independent clauses (split on ";" and ":") worth judging separately."""
+    """Independent clauses (split on ";" and ":") worth judging separately. A leading "Yes," or
+    "No," answers the question; the statement after it is what is judged (the NLI head reads a
+    bare "No" as a contradiction of whatever window it is paired with)."""
+    sentence = _ANSWER_WORD.sub("", sentence)
     parts = [p.strip() for p in _CLAUSE_SPLIT.split(sentence) if p.strip()]
     return parts if len(parts) > 1 else [sentence]
 
