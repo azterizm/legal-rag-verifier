@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1993/28/s84@current",
+ "section": "uk/ukpga/1993/28/s84",
+ "version": "current",
+ "source_sha256": "81a612a7b7d61593ddeca4589fb25ec7f4c09091bccb539398dd5d153af75f6f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In this Chapter, \"the 1985 Act\" means the Landlord and Tenant Act 1985.",
+    "quote": "“the 1985 Act” means the Landlord and Tenant Act 1985"
+   },
+   {
+    "requirement": "In this Chapter, the term \"appurtenant property\" must be construed in accordance with section 76(3) or (6).",
+    "quote": "“appurtenant property” shall be construed in accordance with section 76(3) or (6)"
+   },
+   {
+    "requirement": "In this Chapter, \"the auditor\", in relation to a management audit, means such a person as is mentioned in section 78(3).",
+    "quote": "“the auditor”, in relation to a management audit, means such a person as is mentioned in section 78(3)"
+   },
+   {
+    "requirement": "In this Chapter, \"the constituent dwellings\" means the dwellings referred to in section 76(2)(a) or (b) (as the case may be).",
+    "quote": "“the constituent dwellings” means the dwellings referred to in section 76(2)(a) or (b) (as the case may be)"
+   },
+   {
+    "requirement": "In this Chapter, \"landlord\" means the immediate landlord.",
+    "quote": "“landlord” means immediate landlord"
+   },
+   {
+    "requirement": "In this Chapter, \"management audit\" means such an audit as is mentioned in section 78(1).",
+    "quote": "“management audit” means such an audit as is mentioned in section 78(1)"
+   },
+   {
+    "requirement": "In this Chapter, \"management functions\" includes functions with respect to the provision of services or the repair, maintenance, improvement or insurance of property.",
+    "quote": "“management functions” includes functions with respect to the provision of services or the repair, maintenance , improvement or insurance of property"
+   },
+   {
+    "requirement": "In this Chapter, \"relevant person\" has the meaning given by section 79(7).",
+    "quote": "“relevant person” has the meaning given by section 79(7)"
+   },
+   {
+    "requirement": "In this Chapter, \"the relevant premises\" must be construed in accordance with section 76(3) or (6).",
+    "quote": "“the relevant premises” shall be construed in accordance with section 76(3) or (6)"
+   },
+   {
+    "requirement": "In this Chapter, \"service charge\" has the meaning given by section 18(1) of the Landlord and Tenant Act 1985.",
+    "quote": "“service charge” has the meaning given by section 18(1) of the 1985 Act"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In this Chapter, \"the 1985 Act\" means the Landlord and Tenant Act 1985.",
+   "quote": "“the 1985 Act” means the Landlord and Tenant Act 1985"
+  },
+  {
+   "requirement": "In this Chapter, the term \"appurtenant property\" must be construed in accordance with section 76(3) or (6).",
+   "quote": "“appurtenant property” shall be construed in accordance with section 76(3) or (6)"
+  },
+  {
+   "requirement": "In this Chapter, \"the auditor\", in relation to a management audit, means such a person as is mentioned in section 78(3).",
+   "quote": "“the auditor”, in relation to a management audit, means such a person as is mentioned in section 78(3)"
+  },
+  {
+   "requirement": "In this Chapter, \"the constituent dwellings\" means the dwellings referred to in section 76(2)(a) or (b) (as the case may be).",
+   "quote": "“the constituent dwellings” means the dwellings referred to in section 76(2)(a) or (b) (as the case may be)"
+  },
+  {
+   "requirement": "In this Chapter, \"landlord\" means the immediate landlord.",
+   "quote": "“landlord” means immediate landlord"
+  },
+  {
+   "requirement": "In this Chapter, \"management audit\" means such an audit as is mentioned in section 78(1).",
+   "quote": "“management audit” means such an audit as is mentioned in section 78(1)"
+  },
+  {
+   "requirement": "In this Chapter, \"management functions\" includes functions with respect to the provision of services or the repair, maintenance, improvement or insurance of property.",
+   "quote": "“management functions” includes functions with respect to the provision of services or the repair, maintenance , improvement or insurance of property"
+  },
+  {
+   "requirement": "In this Chapter, \"relevant person\" has the meaning given by section 79(7).",
+   "quote": "“relevant person” has the meaning given by section 79(7)"
+  },
+  {
+   "requirement": "In this Chapter, \"the relevant premises\" must be construed in accordance with section 76(3) or (6).",
+   "quote": "“the relevant premises” shall be construed in accordance with section 76(3) or (6)"
+  },
+  {
+   "requirement": "In this Chapter, \"service charge\" has the meaning given by section 18(1) of the Landlord and Tenant Act 1985.",
+   "quote": "“service charge” has the meaning given by section 18(1) of the 1985 Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

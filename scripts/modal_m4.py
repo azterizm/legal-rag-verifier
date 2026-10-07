@@ -10,8 +10,7 @@ Writes results/m4-sglang.json / results/m4-profile.json. Only public statute tex
 queries leave this machine.
 """
 
-from __future__ import annotations
-
+# No `from __future__ import annotations`: Modal reads class parameter types at runtime.
 import contextlib
 import json
 import subprocess

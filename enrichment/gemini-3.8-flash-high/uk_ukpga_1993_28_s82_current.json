@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1993/28/s82@current",
+ "section": "uk/ukpga/1993/28/s82",
+ "version": "current",
+ "source_sha256": "9c808a9b1ee67dd78c52cc510b864bce142b2c0da8e969b1306268ef8d91ee7a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a landlord is required by a notice under section 80 to supply any summary falling within section 79(2)(a) and any information necessary for complying with the notice relating to that summary is in the possession of a superior landlord, the landlord must make a written request for the relevant information to the person who is their landlord, and so on up the chain if that person is not the superior landlord.",
+    "quote": "the landlord shall make a written request for the relevant information to the person who is his landlord (and so on, if that person is himself not the superior landlord)"
+   },
+   {
+    "requirement": "A superior landlord must comply with a landlord's written request for relevant information within the period of one month beginning with the date of the making of the request.",
+    "quote": "the superior landlord shall comply with that request within the period of one month beginning with the date of the making of the request"
+   },
+   {
+    "requirement": "A landlord who received a notice under section 80 must comply with it in relation to the summary within the time allowed by section 81(1) or such further time, if any, as is reasonable, after the request to the superior landlord has been complied with.",
+    "quote": "the landlord who received the notice shall then comply with it so far as relating to any such summary within the time allowed by section 81(1) or such further time, if any, as is reasonable"
+   },
+   {
+    "requirement": "Where a landlord is required by a notice under section 80 to afford the auditor facilities for inspection or taking copies or extracts of documents specified in the notice, and any such document is in the custody or under the control of a superior landlord, the landlord must on receiving the notice inform the auditor as soon as may be of that fact and of the name and address of the superior landlord.",
+    "quote": "the landlord shall on receiving the notice inform the auditor as soon as may be of that fact and of the name and address of the superior landlord"
+   },
+   {
+    "requirement": "An auditor who has been informed that a requested document is in the custody or control of a superior landlord may give the superior landlord a notice requiring the superior landlord to afford facilities for inspection or taking copies or extracts in respect of the document.",
+    "quote": "the auditor may then give the superior landlord a notice requiring him to afford the facilities in question in respect of the document"
+   },
+   {
+    "requirement": "Subsections (3) to (5) and (7) of section 81 apply, with any necessary modifications, to a notice given to a superior landlord under section 82(2) in the same way as they apply to a notice given to a relevant person mentioned in section 81(3).",
+    "quote": "Subsections (3) to (5) and (7) of section 81 shall, with any necessary modifications, have effect in relation to a notice given to a superior landlord under subsection (2) above as they have effect in relation to any such notice given to a relevant person as is mentioned in subsection (3) of that section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period within which a superior landlord must comply with a request for relevant information",
+    "value": "one month",
+    "quote": "period of one month beginning with the date of the making of the request"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a landlord is required by a notice under section 80 to supply any summary falling within section 79(2)(a) and any information necessary for complying with the notice relating to that summary is in the possession of a superior landlord, the landlord must make a written request for the relevant information to the person who is their landlord, and so on up the chain if that person is not the superior landlord.",
+   "quote": "the landlord shall make a written request for the relevant information to the person who is his landlord (and so on, if that person is himself not the superior landlord)"
+  },
+  {
+   "requirement": "A superior landlord must comply with a landlord's written request for relevant information within the period of one month beginning with the date of the making of the request.",
+   "quote": "the superior landlord shall comply with that request within the period of one month beginning with the date of the making of the request"
+  },
+  {
+   "requirement": "A landlord who received a notice under section 80 must comply with it in relation to the summary within the time allowed by section 81(1) or such further time, if any, as is reasonable, after the request to the superior landlord has been complied with.",
+   "quote": "the landlord who received the notice shall then comply with it so far as relating to any such summary within the time allowed by section 81(1) or such further time, if any, as is reasonable"
+  },
+  {
+   "requirement": "Where a landlord is required by a notice under section 80 to afford the auditor facilities for inspection or taking copies or extracts of documents specified in the notice, and any such document is in the custody or under the control of a superior landlord, the landlord must on receiving the notice inform the auditor as soon as may be of that fact and of the name and address of the superior landlord.",
+   "quote": "the landlord shall on receiving the notice inform the auditor as soon as may be of that fact and of the name and address of the superior landlord"
+  },
+  {
+   "requirement": "An auditor who has been informed that a requested document is in the custody or control of a superior landlord may give the superior landlord a notice requiring the superior landlord to afford facilities for inspection or taking copies or extracts in respect of the document.",
+   "quote": "the auditor may then give the superior landlord a notice requiring him to afford the facilities in question in respect of the document"
+  },
+  {
+   "requirement": "Subsections (3) to (5) and (7) of section 81 apply, with any necessary modifications, to a notice given to a superior landlord under section 82(2) in the same way as they apply to a notice given to a relevant person mentioned in section 81(3).",
+   "quote": "Subsections (3) to (5) and (7) of section 81 shall, with any necessary modifications, have effect in relation to a notice given to a superior landlord under subsection (2) above as they have effect in relation to any such notice given to a relevant person as is mentioned in subsection (3) of that section"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period within which a superior landlord must comply with a request for relevant information",
+   "value": "one month",
+   "quote": "period of one month beginning with the date of the making of the request"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

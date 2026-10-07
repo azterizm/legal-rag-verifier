@@ -17,12 +17,25 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-06 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | 2×2 grid (07 §5): harness build, then the paid run (⛔ decisions: prompt set, Gemini endpoint, final-output scoring) |
-| Waiting on you | Go for the paid grid run (estimate in stop 22). Vault 02: instrument title source |
+| Next step | Your blind labels → judge (gpt-oss-120b-medium, paid) → agreement → grid results |
+| Waiting on you | Blind labels for 80 answers (`results/grid/review_labels.csv`). Vault 02 |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (24): **Grid cells run: 4 × 103 answers; rule A scored; ⛔ your blind labels.** Modal L4 ≈ 1.5 h
+  (4B + 4D); router: 4A + 4C on `gemini-3.8-flash-high` (one 503 and one interrupted session, resumed, no
+  duplicates). Rule A: 4A 97.1 %, 4C 97.1 %, 4B 45.6 %, 4D 39.8 %; Qwen's misses are mostly answers that never
+  name the section (4B 46, 4D 51), which rule A requires, so rule A partly measures a citing habit (the judge
+  and your labels separate it). Gemini's completion tokens are ~80 % thinking: visible ≈ 18–20 tok/s, about
+  Qwen-on-L4's 17. Blind sheet: `results/grid/review_sheet.md` → label `results/grid/review_labels.csv`.
+
+- 2026-10-06 (23): **Paid grid run started (your go).** 9 enrichment calls; smoke 2 prompts/cell OK (Modal class
+  parameter fix: no postponed annotations in the Modal app; Gemini usage now kept per call, since its completion
+  tokens include thinking). **Independent judge decided (yours): `gpt-oss-120b-medium` via the router**, after
+  rule A and your blind labels, blind to cell, raw statute text only; validity vs your labels (κ) before it is
+  the headline; its sentence labels feed detector refinement on dev only. `scripts/grid_judge.py` written, not run.
 
 - 2026-10-06 (22): **Grid decided and built, not run; ⛔ paid run.** Your choices: 103 concept `test` prompts,
   router `gemini-3.8-flash-high` for 4A/4C, rule A + a blind hand sample of 80 for scoring, bf16 Qwen.

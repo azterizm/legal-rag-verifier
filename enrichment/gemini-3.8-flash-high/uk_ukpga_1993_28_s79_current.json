@@ -1,0 +1,139 @@
+{
+ "key": "uk/ukpga/1993/28/s79@current",
+ "section": "uk/ukpga/1993/28/s79",
+ "version": "current",
+ "source_sha256": "2ae5faeed99b41d1af9d0e4d078d802cf66c4b1f444d55644ee36543e2a067a5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where qualifying tenants of any dwellings exercise their right under section 80 to have a management audit carried out on their behalf, the auditor may exercise the rights conferred by subsection (2) in connection with the audit.",
+    "quote": "Where the qualifying tenants of any dwellings exercise under section 80 their right to have a management audit carried out on their behalf, the rights conferred on the auditor by subsection (2) below shall be exercisable by him in connection with the audit."
+   },
+   {
+    "requirement": "The auditor has the right to require the landlord to supply him with such a summary as is referred to in section 21(1) of the 1985 Act in connection with any service charges payable by the qualifying tenants of the constituent dwellings.",
+    "quote": "a right to require the landlord— (i) to supply him with such a summary as is referred to in section 21(1) of the 1985 Act (request for summary of relevant costs) in connection with any service charges payable by the qualifying tenants of the constituent dwellings"
+   },
+   {
+    "requirement": "The auditor has the right to require the landlord to afford him reasonable facilities for inspecting, or taking copies of or extracts from, the accounts, receipts, and other documents supporting any service charge summary requested under subsection (2)(a)(i).",
+    "quote": "to afford him reasonable facilities for inspecting, or taking copies of or extracts from, the accounts, receipts and other documents supporting any such summary"
+   },
+   {
+    "requirement": "The auditor has the right to require the landlord or any relevant person to afford him reasonable facilities for inspecting any other documents sight of which is reasonably required by him for the purpose of carrying out the audit.",
+    "quote": "a right to require the landlord or any relevant person to afford him reasonable facilities for inspecting any other documents sight of which is reasonably required by him for the purpose of carrying out the audit"
+   },
+   {
+    "requirement": "The auditor has the right to require the landlord or any relevant person to afford him reasonable facilities for taking copies of or extracts from any other documents sight of which is reasonably required for carrying out the audit.",
+    "quote": "a right to require the landlord or any relevant person to afford him reasonable facilities for taking copies of or extracts from any documents falling within paragraph (b)"
+   },
+   {
+    "requirement": "The auditor must exercise the rights conferred by subsection (2) in relation to the landlord by means of a notice under section 80.",
+    "quote": "exercisable by him— (a) in relation to the landlord, by means of a notice under section 80"
+   },
+   {
+    "requirement": "The auditor must exercise the rights conferred by subsection (2) in relation to any relevant person by means of a notice given to that person at, so far as is reasonably practicable, the same time as a notice under section 80 is given to the landlord.",
+    "quote": "in relation to any relevant person, by means of a notice given to that person at (so far as is reasonably practicable) the same time as a notice under section 80 is given to the landlord"
+   },
+   {
+    "requirement": "Where a notice is given to any relevant person in accordance with subsection (3)(b), the auditor must give a copy of that notice to the landlord.",
+    "quote": "where a notice is given to any relevant person in accordance with paragraph (b) above, a copy of that notice shall be given to the landlord by the auditor"
+   },
+   {
+    "requirement": "The auditor is entitled, on giving notice in accordance with section 80, to carry out an inspection of any common parts comprised in the relevant premises or any appurtenant property.",
+    "quote": "The auditor shall also be entitled, on giving notice in accordance with section 80, to carry out an inspection of any common parts comprised in the relevant premises or any appurtenant property."
+   },
+   {
+    "requirement": "The landlord or relevant person must make facilities available free of charge where facilities for the inspection of any documents are required under subsection (2)(a)(ii) or subsection (2)(b).",
+    "quote": "where facilities for the inspection of any documents are required under subsection (2)(a)(ii) or (b), make those facilities available free of charge"
+   },
+   {
+    "requirement": "The landlord or relevant person is entitled to supply required documents under subsection (2)(a)(i) or make facilities available for taking copies or extracts under subsection (2)(a)(ii) or subsection (2)(c) on payment of such reasonable charge as he may determine.",
+    "quote": "where any documents are required to be supplied under subsection (2)(a)(i) or facilities for the taking of copies or extracts are required under subsection (2)(a)(ii) or (c), be entitled to supply those documents or (as the case may be) make those facilities available on payment of such reasonable charge as he may determine"
+   },
+   {
+    "requirement": "The requirement imposed on the landlord to make inspection facilities available free of charge does not preclude the landlord from treating costs incurred in connection with making those facilities available as part of his costs of management.",
+    "quote": "The requirement imposed on the landlord by subsection (5)(a) to make any facilities available free of charge shall not be construed as precluding the landlord from treating as part of his costs of management any costs incurred by him in connection with making those facilities so available."
+   },
+   {
+    "requirement": "A relevant person is defined as a person other than the landlord who is charged with responsibility for the discharge of obligations mentioned in section 78(1)(a) or for the application of service charges mentioned in section 78(1)(b).",
+    "quote": "“relevant person” means a person (other than the landlord) who— (a) is charged with responsibility— (i) for the discharge of any such obligations as are mentioned in section 78(1)(a), or (ii) for the application of any such service charges as are mentioned in section 78(1)(b)"
+   },
+   {
+    "requirement": "A relevant person is defined as a person other than the landlord who has a right to enforce payment of any service charges mentioned in section 78(1)(b).",
+    "quote": "“relevant person” means a person (other than the landlord) who... (b) has a right to enforce payment of any such service charges."
+   },
+   {
+    "requirement": "References to the auditor in the context of being afforded facilities under subsection (2) or carrying out an inspection under subsection (4) shall be read as including a person appointed by the auditor under section 78(6).",
+    "quote": "In this Chapter references to the auditor in the context of— (a) being afforded any such facilities as are mentioned in subsection (2), or (b) the carrying out of any inspection under subsection (4), shall be read as including a person appointed by the auditor under section 78(6)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where qualifying tenants of any dwellings exercise their right under section 80 to have a management audit carried out on their behalf, the auditor may exercise the rights conferred by subsection (2) in connection with the audit.",
+   "quote": "Where the qualifying tenants of any dwellings exercise under section 80 their right to have a management audit carried out on their behalf, the rights conferred on the auditor by subsection (2) below shall be exercisable by him in connection with the audit."
+  },
+  {
+   "requirement": "The auditor has the right to require the landlord to supply him with such a summary as is referred to in section 21(1) of the 1985 Act in connection with any service charges payable by the qualifying tenants of the constituent dwellings.",
+   "quote": "a right to require the landlord— (i) to supply him with such a summary as is referred to in section 21(1) of the 1985 Act (request for summary of relevant costs) in connection with any service charges payable by the qualifying tenants of the constituent dwellings"
+  },
+  {
+   "requirement": "The auditor has the right to require the landlord to afford him reasonable facilities for inspecting, or taking copies of or extracts from, the accounts, receipts, and other documents supporting any service charge summary requested under subsection (2)(a)(i).",
+   "quote": "to afford him reasonable facilities for inspecting, or taking copies of or extracts from, the accounts, receipts and other documents supporting any such summary"
+  },
+  {
+   "requirement": "The auditor has the right to require the landlord or any relevant person to afford him reasonable facilities for inspecting any other documents sight of which is reasonably required by him for the purpose of carrying out the audit.",
+   "quote": "a right to require the landlord or any relevant person to afford him reasonable facilities for inspecting any other documents sight of which is reasonably required by him for the purpose of carrying out the audit"
+  },
+  {
+   "requirement": "The auditor has the right to require the landlord or any relevant person to afford him reasonable facilities for taking copies of or extracts from any other documents sight of which is reasonably required for carrying out the audit.",
+   "quote": "a right to require the landlord or any relevant person to afford him reasonable facilities for taking copies of or extracts from any documents falling within paragraph (b)"
+  },
+  {
+   "requirement": "The auditor must exercise the rights conferred by subsection (2) in relation to the landlord by means of a notice under section 80.",
+   "quote": "exercisable by him— (a) in relation to the landlord, by means of a notice under section 80"
+  },
+  {
+   "requirement": "The auditor must exercise the rights conferred by subsection (2) in relation to any relevant person by means of a notice given to that person at, so far as is reasonably practicable, the same time as a notice under section 80 is given to the landlord.",
+   "quote": "in relation to any relevant person, by means of a notice given to that person at (so far as is reasonably practicable) the same time as a notice under section 80 is given to the landlord"
+  },
+  {
+   "requirement": "Where a notice is given to any relevant person in accordance with subsection (3)(b), the auditor must give a copy of that notice to the landlord.",
+   "quote": "where a notice is given to any relevant person in accordance with paragraph (b) above, a copy of that notice shall be given to the landlord by the auditor"
+  },
+  {
+   "requirement": "The auditor is entitled, on giving notice in accordance with section 80, to carry out an inspection of any common parts comprised in the relevant premises or any appurtenant property.",
+   "quote": "The auditor shall also be entitled, on giving notice in accordance with section 80, to carry out an inspection of any common parts comprised in the relevant premises or any appurtenant property."
+  },
+  {
+   "requirement": "The landlord or relevant person must make facilities available free of charge where facilities for the inspection of any documents are required under subsection (2)(a)(ii) or subsection (2)(b).",
+   "quote": "where facilities for the inspection of any documents are required under subsection (2)(a)(ii) or (b), make those facilities available free of charge"
+  },
+  {
+   "requirement": "The landlord or relevant person is entitled to supply required documents under subsection (2)(a)(i) or make facilities available for taking copies or extracts under subsection (2)(a)(ii) or subsection (2)(c) on payment of such reasonable charge as he may determine.",
+   "quote": "where any documents are required to be supplied under subsection (2)(a)(i) or facilities for the taking of copies or extracts are required under subsection (2)(a)(ii) or (c), be entitled to supply those documents or (as the case may be) make those facilities available on payment of such reasonable charge as he may determine"
+  },
+  {
+   "requirement": "The requirement imposed on the landlord to make inspection facilities available free of charge does not preclude the landlord from treating costs incurred in connection with making those facilities available as part of his costs of management.",
+   "quote": "The requirement imposed on the landlord by subsection (5)(a) to make any facilities available free of charge shall not be construed as precluding the landlord from treating as part of his costs of management any costs incurred by him in connection with making those facilities so available."
+  },
+  {
+   "requirement": "A relevant person is defined as a person other than the landlord who is charged with responsibility for the discharge of obligations mentioned in section 78(1)(a) or for the application of service charges mentioned in section 78(1)(b).",
+   "quote": "“relevant person” means a person (other than the landlord) who— (a) is charged with responsibility— (i) for the discharge of any such obligations as are mentioned in section 78(1)(a), or (ii) for the application of any such service charges as are mentioned in section 78(1)(b)"
+  },
+  {
+   "requirement": "References to the auditor in the context of being afforded facilities under subsection (2) or carrying out an inspection under subsection (4) shall be read as including a person appointed by the auditor under section 78(6).",
+   "quote": "In this Chapter references to the auditor in the context of— (a) being afforded any such facilities as are mentioned in subsection (2), or (b) the carrying out of any inspection under subsection (4), shall be read as including a person appointed by the auditor under section 78(6)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 14,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "key": "uk/ukpga/1993/28/s78@current",
+ "section": "uk/ukpga/1993/28/s78",
+ "version": "current",
+ "source_sha256": "07f2d7632553fc9641bfaf6a858f140ef2aa93d6c4ca04607ed6ef2205f7406f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A management audit under section 76(1) is carried out for the purpose of ascertaining the extent to which landlord obligations owed to qualifying tenants of constituent dwellings that involve the discharge of management functions regarding the relevant premises or appurtenant property are being discharged in an efficient and effective manner.",
+    "quote": "an audit carried out for the purpose of ascertaining— (a) the extent to which the obligations of the landlord which— (i) are owed to the qualifying tenants of the constituent dwellings, and (ii) involve the discharge of management functions in relation to the relevant premises or any appurtenant property, are being discharged in an efficient and effective manner"
+   },
+   {
+    "requirement": "A management audit under section 76(1) is carried out for the purpose of ascertaining the extent to which sums payable by the qualifying tenants of the constituent dwellings by way of service charges are being applied in an efficient and effective manner.",
+    "quote": "the extent to which sums payable by those tenants by way of service charges are being applied in an efficient and effective manner"
+   },
+   {
+    "requirement": "An audit carried out for the statutory purposes set out in section 78(1) is referred to in Chapter V as a management audit.",
+    "quote": "in this Chapter any such audit is referred to as a “management audit”"
+   },
+   {
+    "requirement": "When determining whether landlord obligations involving management functions are being discharged in an efficient and effective manner, regard must be had to any applicable provisions of any code of practice approved by the Secretary of State under section 87 that is in force at the time.",
+    "quote": "regard shall be had to any applicable provisions of any code of practice for the time being approved by the Secretary of State under section 87"
+   },
+   {
+    "requirement": "A management audit must be carried out by a person who is qualified for appointment under section 78(4) and properly appointed under section 78(3)(b).",
+    "quote": "A management audit shall be carried out by a person who— (a) is qualified for appointment by virtue of subsection (4); and (b) is appointed"
+   },
+   {
+    "requirement": "In the circumstances mentioned in section 76(2)(a), the auditor must be appointed by either or both of the qualifying tenants of the constituent dwellings.",
+    "quote": "appointed— (i) in the circumstances mentioned in section 76(2)(a), by either or both of the qualifying tenants of the constituent dwellings"
+   },
+   {
+    "requirement": "In the circumstances mentioned in section 76(2)(b), the auditor must be appointed by not less than two-thirds of the qualifying tenants of the constituent dwellings.",
+    "quote": "appointed— (ii) in the circumstances mentioned in section 76(2)(b), by not less than two-thirds of the qualifying tenants of the constituent dwellings"
+   },
+   {
+    "requirement": "A person qualified and appointed to carry out a management audit is referred to in Chapter V as the auditor.",
+    "quote": "in this Chapter any such person is referred to as “the auditor”"
+   },
+   {
+    "requirement": "A person is qualified for appointment as an auditor only if that person holds the necessary qualification within the meaning of section 28(1) of the 1985 Act regarding a qualified accountant or is a qualified surveyor.",
+    "quote": "he has the necessary qualification (within the meaning of subsection (1) of section 28 of the 1985 Act (meaning of “qualified accountant”)) or is a qualified surveyor"
+   },
+   {
+    "requirement": "A person is qualified for appointment as an auditor only if that person is not disqualified from acting within the meaning of section 28(1) of the 1985 Act.",
+    "quote": "he is not disqualified from acting (within the meaning of that subsection)"
+   },
+   {
+    "requirement": "A person is qualified for appointment as an auditor only if that person is not a tenant of any premises contained in the relevant premises.",
+    "quote": "he is not a tenant of any premises contained in the relevant premises"
+   },
+   {
+    "requirement": "A person is a qualified surveyor if that person is a fellow or professional associate of the Royal Institution of Chartered Surveyors, is a fellow or professional associate of the Incorporated Society of Valuers and Auctioneers, or satisfies any other requirement prescribed by regulations made by the Secretary of State.",
+    "quote": "a person is a qualified surveyor if he is a fellow or professional associate of the Royal Institution of Chartered Surveyors or of the Incorporated Society of Valuers and Auctioneers or satisfies such other requirement or requirements as may be prescribed by regulations made by the Secretary of State"
+   },
+   {
+    "requirement": "The auditor may appoint any persons to assist in carrying out the audit as the auditor thinks fit.",
+    "quote": "The auditor may appoint such persons to assist him in carrying out the audit as he thinks fit."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum proportion of qualifying tenants of the constituent dwellings required to appoint an auditor in the circumstances mentioned in section 76(2)(b)",
+    "value": "not less than two-thirds",
+    "quote": "by not less than two-thirds of the qualifying tenants of the constituent dwellings"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A management audit under section 76(1) is carried out for the purpose of ascertaining the extent to which landlord obligations owed to qualifying tenants of constituent dwellings that involve the discharge of management functions regarding the relevant premises or appurtenant property are being discharged in an efficient and effective manner.",
+   "quote": "an audit carried out for the purpose of ascertaining— (a) the extent to which the obligations of the landlord which— (i) are owed to the qualifying tenants of the constituent dwellings, and (ii) involve the discharge of management functions in relation to the relevant premises or any appurtenant property, are being discharged in an efficient and effective manner"
+  },
+  {
+   "requirement": "A management audit under section 76(1) is carried out for the purpose of ascertaining the extent to which sums payable by the qualifying tenants of the constituent dwellings by way of service charges are being applied in an efficient and effective manner.",
+   "quote": "the extent to which sums payable by those tenants by way of service charges are being applied in an efficient and effective manner"
+  },
+  {
+   "requirement": "An audit carried out for the statutory purposes set out in section 78(1) is referred to in Chapter V as a management audit.",
+   "quote": "in this Chapter any such audit is referred to as a “management audit”"
+  },
+  {
+   "requirement": "When determining whether landlord obligations involving management functions are being discharged in an efficient and effective manner, regard must be had to any applicable provisions of any code of practice approved by the Secretary of State under section 87 that is in force at the time.",
+   "quote": "regard shall be had to any applicable provisions of any code of practice for the time being approved by the Secretary of State under section 87"
+  },
+  {
+   "requirement": "A management audit must be carried out by a person who is qualified for appointment under section 78(4) and properly appointed under section 78(3)(b).",
+   "quote": "A management audit shall be carried out by a person who— (a) is qualified for appointment by virtue of subsection (4); and (b) is appointed"
+  },
+  {
+   "requirement": "In the circumstances mentioned in section 76(2)(a), the auditor must be appointed by either or both of the qualifying tenants of the constituent dwellings.",
+   "quote": "appointed— (i) in the circumstances mentioned in section 76(2)(a), by either or both of the qualifying tenants of the constituent dwellings"
+  },
+  {
+   "requirement": "A person qualified and appointed to carry out a management audit is referred to in Chapter V as the auditor.",
+   "quote": "in this Chapter any such person is referred to as “the auditor”"
+  },
+  {
+   "requirement": "A person is qualified for appointment as an auditor only if that person holds the necessary qualification within the meaning of section 28(1) of the 1985 Act regarding a qualified accountant or is a qualified surveyor.",
+   "quote": "he has the necessary qualification (within the meaning of subsection (1) of section 28 of the 1985 Act (meaning of “qualified accountant”)) or is a qualified surveyor"
+  },
+  {
+   "requirement": "A person is qualified for appointment as an auditor only if that person is not disqualified from acting within the meaning of section 28(1) of the 1985 Act.",
+   "quote": "he is not disqualified from acting (within the meaning of that subsection)"
+  },
+  {
+   "requirement": "A person is qualified for appointment as an auditor only if that person is not a tenant of any premises contained in the relevant premises.",
+   "quote": "he is not a tenant of any premises contained in the relevant premises"
+  },
+  {
+   "requirement": "A person is a qualified surveyor if that person is a fellow or professional associate of the Royal Institution of Chartered Surveyors, is a fellow or professional associate of the Incorporated Society of Valuers and Auctioneers, or satisfies any other requirement prescribed by regulations made by the Secretary of State.",
+   "quote": "a person is a qualified surveyor if he is a fellow or professional associate of the Royal Institution of Chartered Surveyors or of the Incorporated Society of Valuers and Auctioneers or satisfies such other requirement or requirements as may be prescribed by regulations made by the Secretary of State"
+  },
+  {
+   "requirement": "The auditor may appoint any persons to assist in carrying out the audit as the auditor thinks fit.",
+   "quote": "The auditor may appoint such persons to assist him in carrying out the audit as he thinks fit."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

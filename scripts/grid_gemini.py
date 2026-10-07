@@ -54,6 +54,7 @@ def chat(messages: Messages) -> Reply:
         int(usage.get("completion_tokens", 0)),
         int(usage.get("prompt_tokens", 0)),
         latency,
+        usage=usage,
     )
 
 

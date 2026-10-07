@@ -1,0 +1,427 @@
+{
+ "key": "uk/ukpga/2002/15/sch11@current",
+ "section": "uk/ukpga/2002/15/sch11",
+ "version": "current",
+ "source_sha256": "ab917f1aaf5b155d0d90d5bf1d3c780367c3a6710483fbd63405f5e9e4457d76",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent for or in connection with the grant of approvals or applications for approvals under the lease.",
+    "quote": "for or in connection with the grant of approvals under his lease, or applications for such approvals"
+   },
+   {
+    "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent for or in connection with the provision of information or documents by or on behalf of the landlord or a third party to the lease.",
+    "quote": "for or in connection with the provision of information or documents by or on behalf of the landlord or a person who is party to his lease otherwise than as landlord or tenant"
+   },
+   {
+    "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent in respect of a failure by the tenant to make a payment by the due date to the landlord or a third party to the lease.",
+    "quote": "in respect of a failure by the tenant to make a payment by the due date to the landlord or a person who is party to his lease otherwise than as landlord or tenant"
+   },
+   {
+    "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent in connection with a breach or alleged breach of a covenant or condition in the lease.",
+    "quote": "in connection with a breach (or alleged breach) of a covenant or condition in his lease"
+   },
+   {
+    "requirement": "An amount payable by the tenant of a dwelling is not an administration charge if the rent of the dwelling is registered under Part 4 of the Rent Act 1977, unless the registered amount is entered as a variable amount pursuant to section 71(4) of that Act.",
+    "quote": "an amount payable by the tenant of a dwelling the rent of which is registered under Part 4 of the Rent Act 1977 (c. 42) is not an administration charge, unless the amount registered is entered as a variable amount in pursuance of section 71(4) of that Act"
+   },
+   {
+    "requirement": "A variable administration charge is an administration charge payable by a tenant that is neither specified in the lease nor calculated in accordance with a formula specified in the lease.",
+    "quote": "an administration charge payable by a tenant which is neither— (a) specified in his lease, nor (b) calculated in accordance with a formula specified in his lease"
+   },
+   {
+    "requirement": "The appropriate national authority may make an order amending the statutory definition of an administration charge.",
+    "quote": "An order amending sub-paragraph (1) may be made by the appropriate national authority."
+   },
+   {
+    "requirement": "A variable administration charge is payable only to the extent that its amount is reasonable.",
+    "quote": "A variable administration charge is payable only to the extent that the amount of the charge is reasonable."
+   },
+   {
+    "requirement": "No administration charge is payable for, in connection with, or in respect of the payment of a relevant rent.",
+    "quote": "No administration charge is payable for, in connection with or in respect of, the payment of a relevant rent."
+   },
+   {
+    "requirement": "A relevant rent is defined as any rent or part of a rent that is permitted only to be a peppercorn rent by virtue of the Leasehold Reform (Ground Rent) Act 2022.",
+    "quote": "A “relevant rent” is a rent (or any part of a rent) which, by virtue of the Leasehold Reform (Ground Rent) Act 2022, is permitted only to be a peppercorn rent."
+   },
+   {
+    "requirement": "Peppercorn rent carries the same meaning as set out in section 4(3) of the Leasehold Reform (Ground Rent) Act 2022.",
+    "quote": "“Peppercorn rent” has the same meaning as in that Act (see section 4(3) of that Act)."
+   },
+   {
+    "requirement": "Any party to a lease of a dwelling may apply to the appropriate tribunal to vary the lease on the grounds that an administration charge specified in the lease is unreasonable.",
+    "quote": "any administration charge specified in the lease is unreasonable"
+   },
+   {
+    "requirement": "Any party to a lease of a dwelling may apply to the appropriate tribunal to vary the lease on the grounds that a formula specified in the lease for calculating an administration charge is unreasonable.",
+    "quote": "any formula specified in the lease in accordance with which any administration charge is calculated is unreasonable"
+   },
+   {
+    "requirement": "Any party to a lease of a dwelling may apply to the appropriate tribunal to vary the lease on the grounds that an administration charge specified in the lease is not payable because of paragraph 2A.",
+    "quote": "an administration charge specified in the lease is not payable because of paragraph 2A"
+   },
+   {
+    "requirement": "If grounds for variation are established, the appropriate tribunal may make an order varying the lease in the manner specified in the application or in such other manner as the tribunal thinks fit.",
+    "quote": "If the grounds on which the application was made are established to the satisfaction of the tribunal, it may make an order varying the lease in such manner as is specified in the order."
+   },
+   {
+    "requirement": "The appropriate tribunal may order the parties to the lease to vary the lease in a specified manner instead of directly varying it itself.",
+    "quote": "The tribunal may, instead of making an order varying the lease in such manner as is specified in the order, make an order directing the parties to the lease to vary it in such manner as is so specified."
+   },
+   {
+    "requirement": "The appropriate tribunal may direct by order that a memorandum of any lease variation be endorsed on specified documents.",
+    "quote": "The tribunal may by order direct that a memorandum of any variation of a lease effected by virtue of this paragraph be endorsed on such documents as are specified in the order."
+   },
+   {
+    "requirement": "A variation of a lease ordered by the tribunal binds both the current parties to the lease and other persons, including predecessors in title, regardless of whether they were parties to the proceedings.",
+    "quote": "Any such variation of a lease shall be binding not only on the parties to the lease for the time being but also on other persons (including any predecessors in title), whether or not they were parties to the proceedings in which the order was made."
+   },
+   {
+    "requirement": "A demand for payment of an administration charge must be accompanied by a summary of the tenant's rights and obligations in relation to administration charges.",
+    "quote": "A demand for the payment of an administration charge must be accompanied by a summary of the rights and obligations of tenants of dwellings in relation to administration charges."
+   },
+   {
+    "requirement": "The appropriate national authority may make regulations prescribing requirements for the form and content of summaries of rights and obligations.",
+    "quote": "The appropriate national authority may make regulations prescribing requirements as to the form and content of such summaries of rights and obligations."
+   },
+   {
+    "requirement": "A tenant may withhold payment of a demanded administration charge if the demand is not accompanied by the required summary of rights and obligations.",
+    "quote": "A tenant may withhold payment of an administration charge which has been demanded from him if sub-paragraph (1) is not complied with in relation to the demand."
+   },
+   {
+    "requirement": "Lease provisions concerning non-payment or late payment of administration charges have no effect during the period a tenant withholds payment due to a non-compliant demand.",
+    "quote": "any provisions of the lease relating to non-payment or late payment of administration charges do not have effect in relation to the period for which he so withholds it"
+   },
+   {
+    "requirement": "An application may be made to the appropriate tribunal to determine whether an administration charge is payable and to determine the payer, payee, amount, due date, and manner of payment.",
+    "quote": "An application may be made to the appropriate tribunal for a determination whether an administration charge is payable and, if it is, as to— (a) the person by whom it is payable, (b) the person to whom it is payable, (c) the amount which is payable, (d) the date at or by which it is payable, and (e) the manner in which it is payable."
+   },
+   {
+    "requirement": "An application to determine whether an administration charge is payable may be made whether or not any payment has already been made.",
+    "quote": "Sub-paragraph (1) applies whether or not any payment has been made."
+   },
+   {
+    "requirement": "The jurisdiction of the appropriate tribunal over administration charge determinations is in addition to any court jurisdiction.",
+    "quote": "The jurisdiction conferred on the appropriate tribunal in respect of any matter by virtue of sub-paragraph (1) is in addition to any jurisdiction of a court in respect of the matter."
+   },
+   {
+    "requirement": "No application for a determination of an administration charge may be made for a matter agreed or admitted by the tenant, referred to arbitration under a post-dispute arbitration agreement, or already determined by a court or arbitral tribunal.",
+    "quote": "No application under sub-paragraph (1) may be made in respect of a matter which— (a) has been agreed or admitted by the tenant, (b) has been, or is to be, referred to arbitration pursuant to a post-dispute arbitration agreement to which the tenant is a party, (c) has been the subject of determination by a court, or (d) has been the subject of determination by an arbitral tribunal pursuant to a post-dispute arbitration agreement."
+   },
+   {
+    "requirement": "A tenant is not treated as having agreed or admitted any matter merely because the tenant made a payment.",
+    "quote": "But the tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment."
+   },
+   {
+    "requirement": "Any agreement by a tenant of a dwelling, other than a post-dispute arbitration agreement, is void to the extent it purports to provide for a determination in a particular manner or on particular evidence regarding matters subject to an application under sub-paragraph (1).",
+    "quote": "An agreement by the tenant of a dwelling (other than a post-dispute arbitration agreement) is void in so far as it purports to provide for a determination— (a) in a particular manner, or (b) on particular evidence, of any question which may be the subject matter of an application under sub-paragraph (1)."
+   },
+   {
+    "requirement": "A tenant of a dwelling in England may apply to the relevant court or tribunal for an order reducing or extinguishing liability to pay an administration charge in respect of litigation costs.",
+    "quote": "A tenant of a dwelling in England may apply to the relevant court or tribunal for an order reducing or extinguishing the tenant's liability to pay a particular administration charge in respect of litigation costs."
+   },
+   {
+    "requirement": "The relevant court or tribunal may make any order reducing or extinguishing litigation costs liability that it considers just and equitable.",
+    "quote": "The relevant court or tribunal may make whatever order on the application it considers to be just and equitable."
+   },
+   {
+    "requirement": "For court proceedings, the relevant court or tribunal is the court before which the proceedings are taking place, or the county court if the proceedings have concluded.",
+    "quote": "The court before which the proceedings are taking place or, if the application is made after the proceedings are concluded, the county court"
+   },
+   {
+    "requirement": "For First-tier Tribunal proceedings, the relevant court or tribunal is the First-tier Tribunal.",
+    "quote": "The First-tier Tribunal"
+   },
+   {
+    "requirement": "For Upper Tribunal proceedings, the relevant court or tribunal is the Upper Tribunal.",
+    "quote": "The Upper Tribunal"
+   },
+   {
+    "requirement": "For arbitration proceedings, the relevant court or tribunal is the arbitral tribunal, or the county court if the proceedings have concluded.",
+    "quote": "The arbitral tribunal or, if the application is made after the proceedings are concluded, the county court"
+   },
+   {
+    "requirement": "A tenant includes a statutory tenant.",
+    "quote": "“Tenant” includes a statutory tenant."
+   },
+   {
+    "requirement": "The terms dwelling, statutory tenant, and landlord in relation to a statutory tenant have the meanings given in the 1985 Act.",
+    "quote": "“Dwelling” and “statutory tenant” (and “landlord” in relation to a statutory tenant) have the same meanings as in the 1985 Act."
+   },
+   {
+    "requirement": "A post-dispute arbitration agreement is an arbitration agreement entered into after a dispute regarding the matter has arisen.",
+    "quote": "“Post-dispute arbitration agreement”, in relation to any matter, means an arbitration agreement made after a dispute about the matter has arisen."
+   },
+   {
+    "requirement": "Arbitration agreement and arbitral tribunal have the same meanings as in Part 1 of the Arbitration Act 1996.",
+    "quote": "“Arbitration agreement” and “arbitral tribunal” have the same meanings as in Part 1 of the Arbitration Act 1996 (c. 23)."
+   },
+   {
+    "requirement": "The appropriate tribunal means the First-tier Tribunal (or Upper Tribunal where determined by or under Tribunal Procedure Rules) for premises in England, and a leasehold valuation tribunal for premises in Wales.",
+    "quote": "“Appropriate tribunal” means— (a) in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal; and (b) in relation to premises in Wales, a leasehold valuation tribunal."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Part of the Rent Act 1977 governing registered rent exemption",
+    "value": "Part 4",
+    "quote": "registered under Part 4 of the Rent Act 1977"
+   },
+   {
+    "what": "Statutory calendar year of the cited Rent Act",
+    "value": "1977",
+    "quote": "Rent Act 1977 (c. 42)"
+   },
+   {
+    "what": "Chapter number of the Rent Act 1977",
+    "value": "42",
+    "quote": "Rent Act 1977 (c. 42)"
+   },
+   {
+    "what": "Subsection of the Rent Act 1977 concerning variable rent entries",
+    "value": "section 71(4)",
+    "quote": "section 71(4) of that Act"
+   },
+   {
+    "what": "Statutory calendar year of the Leasehold Reform (Ground Rent) Act",
+    "value": "2022",
+    "quote": "Leasehold Reform (Ground Rent) Act 2022"
+   },
+   {
+    "what": "Subsection of the Leasehold Reform (Ground Rent) Act 2022 defining peppercorn rent",
+    "value": "section 4(3)",
+    "quote": "section 4(3) of that Act"
+   },
+   {
+    "what": "Part of the Arbitration Act 1996 defining arbitration agreement and arbitral tribunal",
+    "value": "Part 1",
+    "quote": "Part 1 of the Arbitration Act 1996"
+   },
+   {
+    "what": "Statutory calendar year of the cited Arbitration Act",
+    "value": "1996",
+    "quote": "Arbitration Act 1996 (c. 23)"
+   },
+   {
+    "what": "Chapter number of the Arbitration Act 1996",
+    "value": "23",
+    "quote": "Arbitration Act 1996 (c. 23)"
+   },
+   {
+    "what": "Statutory calendar year of the cited 1985 Act",
+    "value": "1985",
+    "quote": "the 1985 Act"
+   },
+   {
+    "what": "Statutory calendar year of the cited 1987 Act",
+    "value": "1987",
+    "quote": "The 1987 Act has effect"
+   },
+   {
+    "what": "Section of the 1987 Act regarding appointment of a manager",
+    "value": "Section 24",
+    "quote": "Section 24 (appointment of manager by leasehold valuation tribunal)"
+   },
+   {
+    "what": "Statutory calendar year of the Commonhold and Leasehold Reform Act",
+    "value": "2002",
+    "quote": "Commonhold and Leasehold Reform Act 2002"
+   },
+   {
+    "what": "Section of the 1987 Act regarding interpretation of information provisions",
+    "value": "section 46",
+    "quote": "In section 46 (interpretation of provisions concerning information to be furnished to tenants)"
+   },
+   {
+    "what": "Section of the 1987 Act regarding landlord's name and address in demands",
+    "value": "Section 47",
+    "quote": "Section 47 (landlord’s name and address to be contained in demands for rent etc.)"
+   },
+   {
+    "what": "Section of the 1987 Act regarding notification by landlord of address for service",
+    "value": "Section 48",
+    "quote": "Section 48 (notification by landlord of address for service of notices)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent for or in connection with the grant of approvals or applications for approvals under the lease.",
+   "quote": "for or in connection with the grant of approvals under his lease, or applications for such approvals"
+  },
+  {
+   "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent for or in connection with the provision of information or documents by or on behalf of the landlord or a third party to the lease.",
+   "quote": "for or in connection with the provision of information or documents by or on behalf of the landlord or a person who is party to his lease otherwise than as landlord or tenant"
+  },
+  {
+   "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent in respect of a failure by the tenant to make a payment by the due date to the landlord or a third party to the lease.",
+   "quote": "in respect of a failure by the tenant to make a payment by the due date to the landlord or a person who is party to his lease otherwise than as landlord or tenant"
+  },
+  {
+   "requirement": "An administration charge is an amount payable directly or indirectly by a tenant of a dwelling as part of or in addition to rent in connection with a breach or alleged breach of a covenant or condition in the lease.",
+   "quote": "in connection with a breach (or alleged breach) of a covenant or condition in his lease"
+  },
+  {
+   "requirement": "An amount payable by the tenant of a dwelling is not an administration charge if the rent of the dwelling is registered under Part 4 of the Rent Act 1977, unless the registered amount is entered as a variable amount pursuant to section 71(4) of that Act.",
+   "quote": "an amount payable by the tenant of a dwelling the rent of which is registered under Part 4 of the Rent Act 1977 (c. 42) is not an administration charge, unless the amount registered is entered as a variable amount in pursuance of section 71(4) of that Act"
+  },
+  {
+   "requirement": "A variable administration charge is an administration charge payable by a tenant that is neither specified in the lease nor calculated in accordance with a formula specified in the lease.",
+   "quote": "an administration charge payable by a tenant which is neither— (a) specified in his lease, nor (b) calculated in accordance with a formula specified in his lease"
+  },
+  {
+   "requirement": "The appropriate national authority may make an order amending the statutory definition of an administration charge.",
+   "quote": "An order amending sub-paragraph (1) may be made by the appropriate national authority."
+  },
+  {
+   "requirement": "A variable administration charge is payable only to the extent that its amount is reasonable.",
+   "quote": "A variable administration charge is payable only to the extent that the amount of the charge is reasonable."
+  },
+  {
+   "requirement": "No administration charge is payable for, in connection with, or in respect of the payment of a relevant rent.",
+   "quote": "No administration charge is payable for, in connection with or in respect of, the payment of a relevant rent."
+  },
+  {
+   "requirement": "A relevant rent is defined as any rent or part of a rent that is permitted only to be a peppercorn rent by virtue of the Leasehold Reform (Ground Rent) Act 2022.",
+   "quote": "A “relevant rent” is a rent (or any part of a rent) which, by virtue of the Leasehold Reform (Ground Rent) Act 2022, is permitted only to be a peppercorn rent."
+  },
+  {
+   "requirement": "Peppercorn rent carries the same meaning as set out in section 4(3) of the Leasehold Reform (Ground Rent) Act 2022.",
+   "quote": "“Peppercorn rent” has the same meaning as in that Act (see section 4(3) of that Act)."
+  },
+  {
+   "requirement": "Any party to a lease of a dwelling may apply to the appropriate tribunal to vary the lease on the grounds that an administration charge specified in the lease is unreasonable.",
+   "quote": "any administration charge specified in the lease is unreasonable"
+  },
+  {
+   "requirement": "Any party to a lease of a dwelling may apply to the appropriate tribunal to vary the lease on the grounds that a formula specified in the lease for calculating an administration charge is unreasonable.",
+   "quote": "any formula specified in the lease in accordance with which any administration charge is calculated is unreasonable"
+  },
+  {
+   "requirement": "Any party to a lease of a dwelling may apply to the appropriate tribunal to vary the lease on the grounds that an administration charge specified in the lease is not payable because of paragraph 2A.",
+   "quote": "an administration charge specified in the lease is not payable because of paragraph 2A"
+  },
+  {
+   "requirement": "If grounds for variation are established, the appropriate tribunal may make an order varying the lease in the manner specified in the application or in such other manner as the tribunal thinks fit.",
+   "quote": "If the grounds on which the application was made are established to the satisfaction of the tribunal, it may make an order varying the lease in such manner as is specified in the order."
+  },
+  {
+   "requirement": "The appropriate tribunal may order the parties to the lease to vary the lease in a specified manner instead of directly varying it itself.",
+   "quote": "The tribunal may, instead of making an order varying the lease in such manner as is specified in the order, make an order directing the parties to the lease to vary it in such manner as is so specified."
+  },
+  {
+   "requirement": "The appropriate tribunal may direct by order that a memorandum of any lease variation be endorsed on specified documents.",
+   "quote": "The tribunal may by order direct that a memorandum of any variation of a lease effected by virtue of this paragraph be endorsed on such documents as are specified in the order."
+  },
+  {
+   "requirement": "A variation of a lease ordered by the tribunal binds both the current parties to the lease and other persons, including predecessors in title, regardless of whether they were parties to the proceedings.",
+   "quote": "Any such variation of a lease shall be binding not only on the parties to the lease for the time being but also on other persons (including any predecessors in title), whether or not they were parties to the proceedings in which the order was made."
+  },
+  {
+   "requirement": "A demand for payment of an administration charge must be accompanied by a summary of the tenant's rights and obligations in relation to administration charges.",
+   "quote": "A demand for the payment of an administration charge must be accompanied by a summary of the rights and obligations of tenants of dwellings in relation to administration charges."
+  },
+  {
+   "requirement": "The appropriate national authority may make regulations prescribing requirements for the form and content of summaries of rights and obligations.",
+   "quote": "The appropriate national authority may make regulations prescribing requirements as to the form and content of such summaries of rights and obligations."
+  },
+  {
+   "requirement": "A tenant may withhold payment of a demanded administration charge if the demand is not accompanied by the required summary of rights and obligations.",
+   "quote": "A tenant may withhold payment of an administration charge which has been demanded from him if sub-paragraph (1) is not complied with in relation to the demand."
+  },
+  {
+   "requirement": "Lease provisions concerning non-payment or late payment of administration charges have no effect during the period a tenant withholds payment due to a non-compliant demand.",
+   "quote": "any provisions of the lease relating to non-payment or late payment of administration charges do not have effect in relation to the period for which he so withholds it"
+  },
+  {
+   "requirement": "An application may be made to the appropriate tribunal to determine whether an administration charge is payable and to determine the payer, payee, amount, due date, and manner of payment.",
+   "quote": "An application may be made to the appropriate tribunal for a determination whether an administration charge is payable and, if it is, as to— (a) the person by whom it is payable, (b) the person to whom it is payable, (c) the amount which is payable, (d) the date at or by which it is payable, and (e) the manner in which it is payable."
+  },
+  {
+   "requirement": "An application to determine whether an administration charge is payable may be made whether or not any payment has already been made.",
+   "quote": "Sub-paragraph (1) applies whether or not any payment has been made."
+  },
+  {
+   "requirement": "The jurisdiction of the appropriate tribunal over administration charge determinations is in addition to any court jurisdiction.",
+   "quote": "The jurisdiction conferred on the appropriate tribunal in respect of any matter by virtue of sub-paragraph (1) is in addition to any jurisdiction of a court in respect of the matter."
+  },
+  {
+   "requirement": "No application for a determination of an administration charge may be made for a matter agreed or admitted by the tenant, referred to arbitration under a post-dispute arbitration agreement, or already determined by a court or arbitral tribunal.",
+   "quote": "No application under sub-paragraph (1) may be made in respect of a matter which— (a) has been agreed or admitted by the tenant, (b) has been, or is to be, referred to arbitration pursuant to a post-dispute arbitration agreement to which the tenant is a party, (c) has been the subject of determination by a court, or (d) has been the subject of determination by an arbitral tribunal pursuant to a post-dispute arbitration agreement."
+  },
+  {
+   "requirement": "A tenant is not treated as having agreed or admitted any matter merely because the tenant made a payment.",
+   "quote": "But the tenant is not to be taken to have agreed or admitted any matter by reason only of having made any payment."
+  },
+  {
+   "requirement": "Any agreement by a tenant of a dwelling, other than a post-dispute arbitration agreement, is void to the extent it purports to provide for a determination in a particular manner or on particular evidence regarding matters subject to an application under sub-paragraph (1).",
+   "quote": "An agreement by the tenant of a dwelling (other than a post-dispute arbitration agreement) is void in so far as it purports to provide for a determination— (a) in a particular manner, or (b) on particular evidence, of any question which may be the subject matter of an application under sub-paragraph (1)."
+  },
+  {
+   "requirement": "A tenant of a dwelling in England may apply to the relevant court or tribunal for an order reducing or extinguishing liability to pay an administration charge in respect of litigation costs.",
+   "quote": "A tenant of a dwelling in England may apply to the relevant court or tribunal for an order reducing or extinguishing the tenant's liability to pay a particular administration charge in respect of litigation costs."
+  },
+  {
+   "requirement": "The relevant court or tribunal may make any order reducing or extinguishing litigation costs liability that it considers just and equitable.",
+   "quote": "The relevant court or tribunal may make whatever order on the application it considers to be just and equitable."
+  },
+  {
+   "requirement": "For court proceedings, the relevant court or tribunal is the court before which the proceedings are taking place, or the county court if the proceedings have concluded.",
+   "quote": "The court before which the proceedings are taking place or, if the application is made after the proceedings are concluded, the county court"
+  },
+  {
+   "requirement": "For First-tier Tribunal proceedings, the relevant court or tribunal is the First-tier Tribunal.",
+   "quote": "The First-tier Tribunal"
+  },
+  {
+   "requirement": "For Upper Tribunal proceedings, the relevant court or tribunal is the Upper Tribunal.",
+   "quote": "The Upper Tribunal"
+  },
+  {
+   "requirement": "For arbitration proceedings, the relevant court or tribunal is the arbitral tribunal, or the county court if the proceedings have concluded.",
+   "quote": "The arbitral tribunal or, if the application is made after the proceedings are concluded, the county court"
+  },
+  {
+   "requirement": "A tenant includes a statutory tenant.",
+   "quote": "“Tenant” includes a statutory tenant."
+  },
+  {
+   "requirement": "The terms dwelling, statutory tenant, and landlord in relation to a statutory tenant have the meanings given in the 1985 Act.",
+   "quote": "“Dwelling” and “statutory tenant” (and “landlord” in relation to a statutory tenant) have the same meanings as in the 1985 Act."
+  },
+  {
+   "requirement": "A post-dispute arbitration agreement is an arbitration agreement entered into after a dispute regarding the matter has arisen.",
+   "quote": "“Post-dispute arbitration agreement”, in relation to any matter, means an arbitration agreement made after a dispute about the matter has arisen."
+  },
+  {
+   "requirement": "Arbitration agreement and arbitral tribunal have the same meanings as in Part 1 of the Arbitration Act 1996.",
+   "quote": "“Arbitration agreement” and “arbitral tribunal” have the same meanings as in Part 1 of the Arbitration Act 1996 (c. 23)."
+  },
+  {
+   "requirement": "The appropriate tribunal means the First-tier Tribunal (or Upper Tribunal where determined by or under Tribunal Procedure Rules) for premises in England, and a leasehold valuation tribunal for premises in Wales.",
+   "quote": "“Appropriate tribunal” means— (a) in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal; and (b) in relation to premises in Wales, a leasehold valuation tribunal."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Statutory calendar year of the cited 1985 Act",
+   "value": "1985",
+   "quote": "the 1985 Act"
+  },
+  {
+   "what": "Statutory calendar year of the cited 1987 Act",
+   "value": "1987",
+   "quote": "The 1987 Act has effect"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 39,
+  "elements_verified": 39,
+  "thresholds_proposed": 16,
+  "thresholds_verified": 2
+ }
+}

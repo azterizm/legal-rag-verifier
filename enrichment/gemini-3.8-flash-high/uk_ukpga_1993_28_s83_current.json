@@ -1,0 +1,99 @@
+{
+ "key": "uk/ukpga/1993/28/s83@current",
+ "section": "uk/ukpga/1993/28/s83",
+ "version": "current",
+ "source_sha256": "b1ab3b693e8a70a058d468a8c617305b81779b5b78a27f49d0e4fca667081f4e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a landlord who was given a notice under section 80 disposes of the whole or part of their interest as landlord of the qualifying tenants of the constituent dwellings while obligations arising from the notice remain to be discharged, any person acquiring that interest who is in a position to discharge any of those obligations to any extent is responsible for discharging them to that extent as if they had been given the notice under section 80.",
+    "quote": "that person shall be responsible for discharging those obligations to that extent, as if he had been given the notice under that section"
+   },
+   {
+    "requirement": "A landlord who disposes of an interest remains responsible for discharging the obligations arising out of a section 80 notice if, despite the disposal, that landlord is still in a position to discharge them to the relevant extent.",
+    "quote": "he shall remain responsible for so discharging them"
+   },
+   {
+    "requirement": "Where a disposing landlord is not still in a position to discharge the obligations arising out of a section 80 notice, the person acquiring the interest is responsible for discharging them to the exclusion of the landlord.",
+    "quote": "otherwise the person referred to in that subsection shall be responsible for so discharging them to the exclusion of the landlord"
+   },
+   {
+    "requirement": "Where a person acquiring an interest is responsible for discharging obligations arising from a section 80 notice (whether alongside the landlord or otherwise), references to the landlord in section 81 must be read as including or as references to that person to the extent appropriate to reflect that person's responsibility.",
+    "quote": "references to the landlord in section 81 shall be read as including, or as, references to that person to such extent as is appropriate to reflect his responsibility for discharging those obligations"
+   },
+   {
+    "requirement": "In connection with the discharge of obligations by an acquiring person, section 81 applies as if any reference to the date of the giving of the notice under section 80 were a reference to the date of the landlord's disposal.",
+    "quote": "that section shall apply as if any reference to the date of the giving of the notice under section 80 were a reference to the date of the disposal referred to in subsection (1)"
+   },
+   {
+    "requirement": "A relevant person who was given a notice under section 79 and ceases to be a relevant person while obligations remain to be discharged nevertheless remains responsible for discharging those obligations to any extent that they are still in a position to do so.",
+    "quote": "he shall nevertheless remain responsible for discharging those obligations to that extent"
+   },
+   {
+    "requirement": "Section 81 continues to apply to a person who ceases to be a relevant person but remains responsible for discharging obligations under a section 79 notice as if that person were still a relevant person.",
+    "quote": "section 81 shall accordingly continue to apply to him as if he were still a relevant person"
+   },
+   {
+    "requirement": "Where a notice has been given to a landlord under section 80 or to a relevant person under section 79, no subsequent notice under either section may be given to that landlord or relevant person during the period of twelve months beginning with the date of the earlier notice on behalf of any persons who were qualifying tenants of the constituent dwellings in relation to that earlier notice.",
+    "quote": "during the period of twelve months beginning with the date of that notice, no subsequent such notice may be given to the landlord or (as the case may be) that person on behalf of any persons who, in relation to the earlier notice, were qualifying tenants of the constituent dwellings"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period following the date of a notice under section 80 or section 79 during which no subsequent such notice may be given",
+    "value": "twelve months",
+    "quote": "period of twelve months beginning with the date of that notice"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a landlord who was given a notice under section 80 disposes of the whole or part of their interest as landlord of the qualifying tenants of the constituent dwellings while obligations arising from the notice remain to be discharged, any person acquiring that interest who is in a position to discharge any of those obligations to any extent is responsible for discharging them to that extent as if they had been given the notice under section 80.",
+   "quote": "that person shall be responsible for discharging those obligations to that extent, as if he had been given the notice under that section"
+  },
+  {
+   "requirement": "A landlord who disposes of an interest remains responsible for discharging the obligations arising out of a section 80 notice if, despite the disposal, that landlord is still in a position to discharge them to the relevant extent.",
+   "quote": "he shall remain responsible for so discharging them"
+  },
+  {
+   "requirement": "Where a disposing landlord is not still in a position to discharge the obligations arising out of a section 80 notice, the person acquiring the interest is responsible for discharging them to the exclusion of the landlord.",
+   "quote": "otherwise the person referred to in that subsection shall be responsible for so discharging them to the exclusion of the landlord"
+  },
+  {
+   "requirement": "Where a person acquiring an interest is responsible for discharging obligations arising from a section 80 notice (whether alongside the landlord or otherwise), references to the landlord in section 81 must be read as including or as references to that person to the extent appropriate to reflect that person's responsibility.",
+   "quote": "references to the landlord in section 81 shall be read as including, or as, references to that person to such extent as is appropriate to reflect his responsibility for discharging those obligations"
+  },
+  {
+   "requirement": "In connection with the discharge of obligations by an acquiring person, section 81 applies as if any reference to the date of the giving of the notice under section 80 were a reference to the date of the landlord's disposal.",
+   "quote": "that section shall apply as if any reference to the date of the giving of the notice under section 80 were a reference to the date of the disposal referred to in subsection (1)"
+  },
+  {
+   "requirement": "A relevant person who was given a notice under section 79 and ceases to be a relevant person while obligations remain to be discharged nevertheless remains responsible for discharging those obligations to any extent that they are still in a position to do so.",
+   "quote": "he shall nevertheless remain responsible for discharging those obligations to that extent"
+  },
+  {
+   "requirement": "Section 81 continues to apply to a person who ceases to be a relevant person but remains responsible for discharging obligations under a section 79 notice as if that person were still a relevant person.",
+   "quote": "section 81 shall accordingly continue to apply to him as if he were still a relevant person"
+  },
+  {
+   "requirement": "Where a notice has been given to a landlord under section 80 or to a relevant person under section 79, no subsequent notice under either section may be given to that landlord or relevant person during the period of twelve months beginning with the date of the earlier notice on behalf of any persons who were qualifying tenants of the constituent dwellings in relation to that earlier notice.",
+   "quote": "during the period of twelve months beginning with the date of that notice, no subsequent such notice may be given to the landlord or (as the case may be) that person on behalf of any persons who, in relation to the earlier notice, were qualifying tenants of the constituent dwellings"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period following the date of a notice under section 80 or section 79 during which no subsequent such notice may be given",
+   "value": "twelve months",
+   "quote": "period of twelve months beginning with the date of that notice"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

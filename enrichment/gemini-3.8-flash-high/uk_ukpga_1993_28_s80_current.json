@@ -1,0 +1,125 @@
+{
+ "key": "uk/ukpga/1993/28/s80@current",
+ "section": "uk/ukpga/1993/28/s80",
+ "version": "current",
+ "source_sha256": "a8022c1458426ef8ca0a8fefa0abe0d8362d5b9f5dd3972ab1b529ab3f565e08",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The right of qualifying tenants to have a management audit carried out on their behalf must be exercised by giving a notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993.",
+    "quote": "shall be exercisable by the giving of a notice under this section"
+   },
+   {
+    "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must be given to the landlord by the auditor.",
+    "quote": "must be given to the landlord by the auditor"
+   },
+   {
+    "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must be signed by each of the tenants on whose behalf it is given.",
+    "quote": "must be signed by each of the tenants on whose behalf it is given"
+   },
+   {
+    "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must state the full name of each tenant on whose behalf it is given and the address of the dwelling of which that tenant is a qualifying tenant.",
+    "quote": "state the full name of each of those tenants and the address of the dwelling of which he is a qualifying tenant"
+   },
+   {
+    "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must state the name and address of the auditor.",
+    "quote": "state the name and address of the auditor"
+   },
+   {
+    "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must specify any documents or description of documents which the landlord is required to supply to the auditor under section 79(2)(a)(i), or in respect of which the landlord is required to afford the auditor facilities for inspection or for taking copies or extracts under any other provision of section 79(2).",
+    "quote": "specify any documents or description of documents— (i) which the landlord is required to supply to the auditor under section 79(2)(a)(i), or (ii) in respect of which he is required to afford the auditor facilities for inspection or for taking copies or extracts under any other provision of section 79(2)"
+   },
+   {
+    "requirement": "If the auditor proposes to carry out an inspection under section 79(4), the notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must state the date on which the auditor proposes to carry out the inspection.",
+    "quote": "if the auditor proposes to carry out an inspection under section 79(4), state the date on which he proposes to carry out the inspection"
+   },
+   {
+    "requirement": "The inspection date specified in the notice must fall not less than one month and not more than two months after the date on which the notice is given.",
+    "quote": "must be a date falling not less than one month nor more than two months after the date of the giving of the notice"
+   },
+   {
+    "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 is duly given to the landlord of any qualifying tenants if it is given to a person who receives on behalf of the landlord the rent payable by any such tenants.",
+    "quote": "A notice is duly given under this section to the landlord of any qualifying tenants if it is given to a person who receives on behalf of the landlord the rent payable by any such tenants"
+   },
+   {
+    "requirement": "A person who receives a notice on behalf of the landlord because they receive the rent payable by qualifying tenants must forward that notice to the landlord as soon as may be.",
+    "quote": "a person to whom such a notice is so given shall forward it as soon as may be to the landlord"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period after the date of giving the notice before the proposed inspection date can fall",
+    "value": "one month",
+    "quote": "not less than one month"
+   },
+   {
+    "what": "maximum period after the date of giving the notice within which the proposed inspection date must fall",
+    "value": "two months",
+    "quote": "nor more than two months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The right of qualifying tenants to have a management audit carried out on their behalf must be exercised by giving a notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993.",
+   "quote": "shall be exercisable by the giving of a notice under this section"
+  },
+  {
+   "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must be given to the landlord by the auditor.",
+   "quote": "must be given to the landlord by the auditor"
+  },
+  {
+   "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must be signed by each of the tenants on whose behalf it is given.",
+   "quote": "must be signed by each of the tenants on whose behalf it is given"
+  },
+  {
+   "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must state the full name of each tenant on whose behalf it is given and the address of the dwelling of which that tenant is a qualifying tenant.",
+   "quote": "state the full name of each of those tenants and the address of the dwelling of which he is a qualifying tenant"
+  },
+  {
+   "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must state the name and address of the auditor.",
+   "quote": "state the name and address of the auditor"
+  },
+  {
+   "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must specify any documents or description of documents which the landlord is required to supply to the auditor under section 79(2)(a)(i), or in respect of which the landlord is required to afford the auditor facilities for inspection or for taking copies or extracts under any other provision of section 79(2).",
+   "quote": "specify any documents or description of documents— (i) which the landlord is required to supply to the auditor under section 79(2)(a)(i), or (ii) in respect of which he is required to afford the auditor facilities for inspection or for taking copies or extracts under any other provision of section 79(2)"
+  },
+  {
+   "requirement": "If the auditor proposes to carry out an inspection under section 79(4), the notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 must state the date on which the auditor proposes to carry out the inspection.",
+   "quote": "if the auditor proposes to carry out an inspection under section 79(4), state the date on which he proposes to carry out the inspection"
+  },
+  {
+   "requirement": "The inspection date specified in the notice must fall not less than one month and not more than two months after the date on which the notice is given.",
+   "quote": "must be a date falling not less than one month nor more than two months after the date of the giving of the notice"
+  },
+  {
+   "requirement": "A notice under section 80 of the Leasehold Reform, Housing and Urban Development Act 1993 is duly given to the landlord of any qualifying tenants if it is given to a person who receives on behalf of the landlord the rent payable by any such tenants.",
+   "quote": "A notice is duly given under this section to the landlord of any qualifying tenants if it is given to a person who receives on behalf of the landlord the rent payable by any such tenants"
+  },
+  {
+   "requirement": "A person who receives a notice on behalf of the landlord because they receive the rent payable by qualifying tenants must forward that notice to the landlord as soon as may be.",
+   "quote": "a person to whom such a notice is so given shall forward it as soon as may be to the landlord"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period after the date of giving the notice before the proposed inspection date can fall",
+   "value": "one month",
+   "quote": "not less than one month"
+  },
+  {
+   "what": "maximum period after the date of giving the notice within which the proposed inspection date must fall",
+   "value": "two months",
+   "quote": "nor more than two months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

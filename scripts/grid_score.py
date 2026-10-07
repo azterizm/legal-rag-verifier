@@ -97,8 +97,20 @@ def _median(values: list[float]) -> float | None:
     return round(statistics.median(values), 2) if values else None
 
 
+def visible(record: dict[str, Any]) -> tuple[int, float]:
+    """Answer tokens without the API's reasoning ("thinking") tokens, and the discarded share of
+    them (pro rata; Qwen has no thinking, so both equal the raw figures)."""
+    usages = [a.get("usage") or {} for a in record.get("attempts", [])]
+    details = [u.get("completion_tokens_details") or {} for u in usages]
+    thinking = sum(d.get("reasoning_tokens", 0) for d in details)
+    out = record["tokens_out"] - thinking
+    share = out / record["tokens_out"] if record["tokens_out"] else 1.0
+    return out, record["tokens_discarded"] * share
+
+
 def summarise(cell: str, records: list[dict[str, Any]]) -> dict[str, Any]:
     n = len(records)
+    seen = [visible(r) for r in records]
     first_pass = sum(r["retries"] == 0 and r["refusals"] == 0 and r["resolved"] for r in records)
     remediated = sum(r["resolved"] for r in records) - first_pass
     histogram: dict[int, int] = {}
@@ -118,6 +130,17 @@ def summarise(cell: str, records: list[dict[str, Any]]) -> dict[str, Any]:
         "tokens_discarded_mean": round(statistics.mean(r["tokens_discarded"] for r in records), 1)
         if n
         else None,
+        "visible_tokens_out_median": _median([float(v) for v, _ in seen]),
+        "visible_tokens_discarded_mean": round(statistics.mean(d for _, d in seen), 1)
+        if n
+        else None,
+        "visible_tok_s_median": _median(
+            [
+                v / (r["generation_ns"] / 1e9)
+                for (v, _), r in zip(seen, records, strict=True)
+                if r["generation_ns"]
+            ]
+        ),
         "wall_s_median": _median([r["wall_ns"] / 1e9 for r in records]),
         "time_to_first_output_s_median": _median(
             [r["time_to_first_output_ns"] / 1e9 for r in records if r["time_to_first_output_ns"]]

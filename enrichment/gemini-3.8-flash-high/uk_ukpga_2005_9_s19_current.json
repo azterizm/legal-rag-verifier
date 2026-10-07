@@ -1,0 +1,141 @@
+{
+ "key": "uk/ukpga/2005/9/s19@current",
+ "section": "uk/ukpga/2005/9/s19",
+ "version": "current",
+ "source_sha256": "a6bd8a2912048e6b96c385e5084a8e86eb2bd86506c416adb7c8c5579b22696b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A deputy appointed by the court must be an individual who has reached 18, or, as respects powers in relation to property and affairs, an individual who has reached 18 or a trust corporation.",
+    "quote": "A deputy appointed by the court must be— (a) an individual who has reached 18, or (b) as respects powers in relation to property and affairs, an individual who has reached 18 or a trust corporation."
+   },
+   {
+    "requirement": "The court may appoint an individual as a deputy by appointing the holder for the time being of a specified office or position.",
+    "quote": "The court may appoint an individual by appointing the holder for the time being of a specified office or position."
+   },
+   {
+    "requirement": "A person may not be appointed as a deputy without that person's consent.",
+    "quote": "A person may not be appointed as a deputy without his consent."
+   },
+   {
+    "requirement": "The court may appoint two or more deputies to act jointly, jointly and severally, or jointly in respect of some matters and jointly and severally in respect of others.",
+    "quote": "The court may appoint two or more deputies to act— (a) jointly, (b) jointly and severally, or (c) jointly in respect of some matters and jointly and severally in respect of others."
+   },
+   {
+    "requirement": "When appointing a deputy or deputies, the court may at the same time appoint one or more other persons to succeed the existing deputy or those deputies in such circumstances or on the happening of such events as specified by the court, and for such period as so specified.",
+    "quote": "When appointing a deputy or deputies, the court may at the same time appoint one or more other persons to succeed the existing deputy or those deputies— (a) in such circumstances, or on the happening of such events, as may be specified by the court; (b) for such period as may be so specified."
+   },
+   {
+    "requirement": "A deputy is to be treated as P's agent in relation to anything done or decided by the deputy within the scope of the appointment and in accordance with this Part.",
+    "quote": "A deputy is to be treated as P's agent in relation to anything done or decided by him within the scope of his appointment and in accordance with this Part."
+   },
+   {
+    "requirement": "A deputy is entitled to be reimbursed out of P's property for reasonable expenses incurred in discharging the deputy's functions.",
+    "quote": "The deputy is entitled— (a) to be reimbursed out of P's property for his reasonable expenses in discharging his functions"
+   },
+   {
+    "requirement": "A deputy is entitled to remuneration out of P's property for discharging functions if the court directs when appointing the deputy.",
+    "quote": "if the court so directs when appointing him, to remuneration out of P's property for discharging them."
+   },
+   {
+    "requirement": "The court may confer on a deputy powers to take possession or control of all or any specified part of P's property.",
+    "quote": "The court may confer on a deputy powers to— (a) take possession or control of all or any specified part of P's property"
+   },
+   {
+    "requirement": "The court may confer on a deputy powers to exercise all or any specified powers in respect of P's property, including such powers of investment as the court may determine.",
+    "quote": "exercise all or any specified powers in respect of it, including such powers of investment as the court may determine."
+   },
+   {
+    "requirement": "The court may require a deputy to give to the Public Guardian such security as the court thinks fit for the due discharge of the deputy's functions.",
+    "quote": "The court may require a deputy— (a) to give to the Public Guardian such security as the court thinks fit for the due discharge of his functions"
+   },
+   {
+    "requirement": "The court may require a deputy to submit to the Public Guardian such reports at such times or at such intervals as the court may direct.",
+    "quote": "to submit to the Public Guardian such reports at such times or at such intervals as the court may direct."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum age for an individual appointed as a deputy",
+    "value": "18",
+    "quote": "an individual who has reached 18"
+   },
+   {
+    "what": "number of deputies the court may appoint to act jointly, jointly and severally, or jointly for some matters and jointly and severally for others",
+    "value": "two or more",
+    "quote": "The court may appoint two or more deputies to act"
+   },
+   {
+    "what": "number of other persons the court may appoint to succeed existing deputies",
+    "value": "one or more",
+    "quote": "appoint one or more other persons to succeed the existing deputy or those deputies"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A deputy appointed by the court must be an individual who has reached 18, or, as respects powers in relation to property and affairs, an individual who has reached 18 or a trust corporation.",
+   "quote": "A deputy appointed by the court must be— (a) an individual who has reached 18, or (b) as respects powers in relation to property and affairs, an individual who has reached 18 or a trust corporation."
+  },
+  {
+   "requirement": "The court may appoint an individual as a deputy by appointing the holder for the time being of a specified office or position.",
+   "quote": "The court may appoint an individual by appointing the holder for the time being of a specified office or position."
+  },
+  {
+   "requirement": "A person may not be appointed as a deputy without that person's consent.",
+   "quote": "A person may not be appointed as a deputy without his consent."
+  },
+  {
+   "requirement": "The court may appoint two or more deputies to act jointly, jointly and severally, or jointly in respect of some matters and jointly and severally in respect of others.",
+   "quote": "The court may appoint two or more deputies to act— (a) jointly, (b) jointly and severally, or (c) jointly in respect of some matters and jointly and severally in respect of others."
+  },
+  {
+   "requirement": "When appointing a deputy or deputies, the court may at the same time appoint one or more other persons to succeed the existing deputy or those deputies in such circumstances or on the happening of such events as specified by the court, and for such period as so specified.",
+   "quote": "When appointing a deputy or deputies, the court may at the same time appoint one or more other persons to succeed the existing deputy or those deputies— (a) in such circumstances, or on the happening of such events, as may be specified by the court; (b) for such period as may be so specified."
+  },
+  {
+   "requirement": "A deputy is to be treated as P's agent in relation to anything done or decided by the deputy within the scope of the appointment and in accordance with this Part.",
+   "quote": "A deputy is to be treated as P's agent in relation to anything done or decided by him within the scope of his appointment and in accordance with this Part."
+  },
+  {
+   "requirement": "A deputy is entitled to be reimbursed out of P's property for reasonable expenses incurred in discharging the deputy's functions.",
+   "quote": "The deputy is entitled— (a) to be reimbursed out of P's property for his reasonable expenses in discharging his functions"
+  },
+  {
+   "requirement": "A deputy is entitled to remuneration out of P's property for discharging functions if the court directs when appointing the deputy.",
+   "quote": "if the court so directs when appointing him, to remuneration out of P's property for discharging them."
+  },
+  {
+   "requirement": "The court may confer on a deputy powers to take possession or control of all or any specified part of P's property.",
+   "quote": "The court may confer on a deputy powers to— (a) take possession or control of all or any specified part of P's property"
+  },
+  {
+   "requirement": "The court may confer on a deputy powers to exercise all or any specified powers in respect of P's property, including such powers of investment as the court may determine.",
+   "quote": "exercise all or any specified powers in respect of it, including such powers of investment as the court may determine."
+  },
+  {
+   "requirement": "The court may require a deputy to give to the Public Guardian such security as the court thinks fit for the due discharge of the deputy's functions.",
+   "quote": "The court may require a deputy— (a) to give to the Public Guardian such security as the court thinks fit for the due discharge of his functions"
+  },
+  {
+   "requirement": "The court may require a deputy to submit to the Public Guardian such reports at such times or at such intervals as the court may direct.",
+   "quote": "to submit to the Public Guardian such reports at such times or at such intervals as the court may direct."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum age for an individual appointed as a deputy",
+   "value": "18",
+   "quote": "an individual who has reached 18"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 1
+ }
+}

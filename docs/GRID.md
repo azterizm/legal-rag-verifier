@@ -50,6 +50,24 @@ Per final answer, with the claim check only (no NLI), against the prompt's own p
   hidden; you label each correct / incorrect against the provisions; agreement of rule A with your labels is
   reported per cell.
 
+## Independent judge (added 2026-10-06, before scoring; your decision)
+
+Rule A's grounding test is the detector's own claim check, so the in-flight cells pass it by construction. A
+separate model therefore judges every final answer: **`gpt-oss-120b-medium` via the router** (`/v1/chat/completions`; no other model or endpoint is called).
+- **Order**: rule A on all answers → your blind labels on the 80-answer sample → the judge on all 412 answers.
+- **Blind**: the judge sees the query, the provisions (statute text only, without the LLM-written enrichment
+  layer) and one answer, in random order across cells; never the
+  cell, the generator, the detector's verdicts or the other answers. Temperature 0, one fixed prompt.
+- **Output** (JSON): an answer-level verdict (correct / incorrect; for abstention prompts, whether abstaining
+  was right) and per-sentence labels (supported / unsupported / contradicted / not a claim) with an error type
+  (wrong figure, wrong citation, wrong instrument, dropped qualifier, fabricated, incomplete).
+- **Validity**: judge vs your 80 labels (agreement and Cohen's κ, per cell) is reported before any judge-based
+  cell result is quoted. If agreement is poor, the judge's results are reported as such and not as the headline.
+- **Headline correctness per cell = the judge's answer-level verdict**, beside rule A and your sample.
+- **Refinement**: the judge's sentence labels against the detector's verdicts give the detector's misses and
+  false rollbacks on real generated prose. These are hypotheses only: any detector change is made and
+  calibrated on the dev split, never tuned on the grid prompts (which would contaminate the grid).
+
 ## Reported per cell
 
 Rule-A pass rate; first-pass clean / resolved after remediation / unresolved (4A/4D: still failing after 3

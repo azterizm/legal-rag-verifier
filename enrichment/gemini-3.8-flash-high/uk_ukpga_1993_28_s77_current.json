@@ -1,0 +1,123 @@
+{
+ "key": "uk/ukpga/1993/28/s77@current",
+ "section": "uk/ukpga/1993/28/s77",
+ "version": "current",
+ "source_sha256": "578ff1920c3d0e54d0f4edf914144ef29db2cda16199991fdabacc9ba99ee4d8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the provisions of section 77, a tenant is a qualifying tenant of a dwelling for Chapter purposes if the tenant holds the dwelling under a long lease that is not a business lease and a service charge is payable under that lease.",
+    "quote": "a tenant is a qualifying tenant of a dwelling for the purposes of this Chapter if— (a) he is a tenant of the dwelling under a long lease other than a business lease; and (b) any service charge is payable under the lease."
+   },
+   {
+    "requirement": "A lease is a long lease if it falls within any of paragraphs (a) to (c) of subsection (1) of section 7.",
+    "quote": "it is a lease falling within any of paragraphs (a) to (c) of subsection (1) of section 7"
+   },
+   {
+    "requirement": "A lease is a long lease if it is a shared ownership lease within the meaning of section 7, regardless of the tenant's share under it and whether granted pursuant to Part V of the Housing Act 1985 or otherwise.",
+    "quote": "it is a shared ownership lease (within the meaning of that section), whether granted in pursuance of Part V of the Housing Act 1985 or otherwise and whatever the share of the tenant under it."
+   },
+   {
+    "requirement": "A dwelling cannot have more than one qualifying tenant at any one time.",
+    "quote": "No dwelling shall have more than one qualifying tenant at any one time."
+   },
+   {
+    "requirement": "Where a dwelling is let under two or more leases that qualify under subsection (1), any tenant holding a lease superior to that held by any other such tenant is not a qualifying tenant of the dwelling.",
+    "quote": "any tenant under any of those leases which is superior to that held by any other such tenant shall not be a qualifying tenant of the dwelling"
+   },
+   {
+    "requirement": "Where a dwelling is let to joint tenants under a lease qualifying under subsection (1), the joint tenants are regarded jointly as constituting the qualifying tenant of the dwelling, subject to the rule excluding superior leaseholders.",
+    "quote": "where a dwelling is for the time being let to joint tenants under a lease falling within subsection (1), the joint tenants shall (subject to paragraph (a)) be regarded for the purposes of this Chapter as jointly constituting the qualifying tenant of the dwelling."
+   },
+   {
+    "requirement": "A person can be, or be among those constituting, the qualifying tenant of each of two or more dwellings at the same time, whether holding those dwellings under a single lease or under two or more separate leases.",
+    "quote": "A person can, however, be (or be among those constituting) the qualifying tenant of each of two or more dwellings at the same time, whether he is tenant of those dwellings under one lease or under two or more separate leases."
+   },
+   {
+    "requirement": "Where two or more persons jointly constitute the qualifying tenant of a dwelling, any one or more of those persons is permitted to sign a notice under section 80 on behalf of all of them.",
+    "quote": "Where two or more persons constitute the qualifying tenant of a dwelling in accordance with subsection (4)(b), any one or more of those persons may sign a notice under section 80 on behalf of both or all of them."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum number of qualifying tenants a dwelling may have at any one time",
+    "value": "one",
+    "quote": "more than one qualifying tenant at any one time"
+   },
+   {
+    "what": "the number of leases under which a dwelling is let that triggers the exclusion of superior lease tenants",
+    "value": "two or more",
+    "quote": "let under two or more leases falling within subsection (1)"
+   },
+   {
+    "what": "the number of dwellings of which a person may simultaneously be or help constitute the qualifying tenant",
+    "value": "two or more",
+    "quote": "qualifying tenant of each of two or more dwellings at the same time"
+   },
+   {
+    "what": "the number of leases under which a tenant may hold multiple dwellings",
+    "value": "one",
+    "quote": "under one lease"
+   },
+   {
+    "what": "the alternative number of separate leases under which a tenant may hold multiple dwellings",
+    "value": "two or more",
+    "quote": "under two or more separate leases"
+   },
+   {
+    "what": "the number of persons who constitute the joint qualifying tenant of a dwelling",
+    "value": "two or more",
+    "quote": "Where two or more persons constitute the qualifying tenant of a dwelling"
+   },
+   {
+    "what": "the number of joint tenants who may sign a section 80 notice on behalf of all joint tenants",
+    "value": "one or more",
+    "quote": "any one or more of those persons may sign a notice under section 80"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the provisions of section 77, a tenant is a qualifying tenant of a dwelling for Chapter purposes if the tenant holds the dwelling under a long lease that is not a business lease and a service charge is payable under that lease.",
+   "quote": "a tenant is a qualifying tenant of a dwelling for the purposes of this Chapter if— (a) he is a tenant of the dwelling under a long lease other than a business lease; and (b) any service charge is payable under the lease."
+  },
+  {
+   "requirement": "A lease is a long lease if it falls within any of paragraphs (a) to (c) of subsection (1) of section 7.",
+   "quote": "it is a lease falling within any of paragraphs (a) to (c) of subsection (1) of section 7"
+  },
+  {
+   "requirement": "A lease is a long lease if it is a shared ownership lease within the meaning of section 7, regardless of the tenant's share under it and whether granted pursuant to Part V of the Housing Act 1985 or otherwise.",
+   "quote": "it is a shared ownership lease (within the meaning of that section), whether granted in pursuance of Part V of the Housing Act 1985 or otherwise and whatever the share of the tenant under it."
+  },
+  {
+   "requirement": "A dwelling cannot have more than one qualifying tenant at any one time.",
+   "quote": "No dwelling shall have more than one qualifying tenant at any one time."
+  },
+  {
+   "requirement": "Where a dwelling is let under two or more leases that qualify under subsection (1), any tenant holding a lease superior to that held by any other such tenant is not a qualifying tenant of the dwelling.",
+   "quote": "any tenant under any of those leases which is superior to that held by any other such tenant shall not be a qualifying tenant of the dwelling"
+  },
+  {
+   "requirement": "Where a dwelling is let to joint tenants under a lease qualifying under subsection (1), the joint tenants are regarded jointly as constituting the qualifying tenant of the dwelling, subject to the rule excluding superior leaseholders.",
+   "quote": "where a dwelling is for the time being let to joint tenants under a lease falling within subsection (1), the joint tenants shall (subject to paragraph (a)) be regarded for the purposes of this Chapter as jointly constituting the qualifying tenant of the dwelling."
+  },
+  {
+   "requirement": "A person can be, or be among those constituting, the qualifying tenant of each of two or more dwellings at the same time, whether holding those dwellings under a single lease or under two or more separate leases.",
+   "quote": "A person can, however, be (or be among those constituting) the qualifying tenant of each of two or more dwellings at the same time, whether he is tenant of those dwellings under one lease or under two or more separate leases."
+  },
+  {
+   "requirement": "Where two or more persons jointly constitute the qualifying tenant of a dwelling, any one or more of those persons is permitted to sign a notice under section 80 on behalf of all of them.",
+   "quote": "Where two or more persons constitute the qualifying tenant of a dwelling in accordance with subsection (4)(b), any one or more of those persons may sign a notice under section 80 on behalf of both or all of them."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 7,
+  "thresholds_verified": 0
+ }
+}

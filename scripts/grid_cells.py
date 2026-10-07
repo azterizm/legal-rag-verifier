@@ -51,6 +51,7 @@ class Reply:
     tokens_in: int
     latency_ns: int
     cached_tokens: int = 0
+    usage: dict[str, Any] | None = None  # the API's own usage object (Gemini: thinking tokens)
 
 
 Chat = Callable[[Messages], Reply]
@@ -266,6 +267,7 @@ def _attempt(text: str, reply: Reply, rejected: Sequence[SentenceVerdict]) -> di
         "text": text,
         "tokens_out": reply.tokens_out,
         "latency_ns": reply.latency_ns,
+        "usage": reply.usage,
         "rejected": [
             {"sentence": v.text, "reasons": [r.value for r in v.reasons]} for v in rejected
         ],
