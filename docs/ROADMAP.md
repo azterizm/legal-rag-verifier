@@ -17,12 +17,17 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Your call (stop 27): injection v2 on dev (query in the injected turn, relevance + abstention rule), or the PoC verdict doc as is |
-| Waiting on you | Injection v2 go (paid: Modal L4 + judge calls) or not; vault 02 |
+| Next step | ⛔ Your call (stop 28): injection v2 on dev, vault corrections, or the 0.1.0 release |
+| Waiting on you | Injection v2 go (paid: Modal L4 + judge calls) or not; vault corrections; release go |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (28): **PoC verdict written (your request), `docs/VERDICT.md`.** The architecture holds as a
+  mechanism and is not production-ready as built: faithful to the injected text, not to the question; abstention
+  lost. Five changes listed before a production trial. ⛔ Next: your call on injection v2 (paid), vault
+  corrections, or the 0.1.0 release.
 
 - 2026-10-07 (27): **Injection A/B built and run (your go).** `steering="inject"` (engine, trace fields, 5
   tests; reverses plan decision 6 for that mode). Format chosen on 40 dev prompts (`turn`; `note` leaked the source
