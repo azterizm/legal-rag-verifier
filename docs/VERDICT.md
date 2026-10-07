@@ -46,13 +46,25 @@ the time after a rule-based rejection, against 28 % without it. After an entailm
 Discarded tokens halved. Median time per answer fell from 7.9 s to 6.5 s. The judge found fewer answers with an
 unsupported sentence, 17 against 22.
 
+The effect comes from where the provision is placed, not from its presence. The provisions were already in the
+system prompt. A second test retried 46 rejected sentences from the same state in five ways. Inserting the provision
+at the cut point passed the auditor 39 times. The same text placed at the top of the prompt passed 17 times. A
+retry without the provision passed 14 to 18 times. Clearing the cache before the retry changed no result, so the
+cache saves time and does not change quality. The first request took 105 ms with the cache and 337 ms without it.
+
+Insertion moves the model toward the provision. In all 46 states it made the regenerated sentence more likely. In
+45 of 46 it made the rejected sentence less likely. The share of attention on provision text rose in all 46 states.
+Most of it went to the inserted copy, and attention to the original copy halved. The shift carried into the next
+sentence in all 18 states that had one.
+
 ## What does not hold yet
 
 The loop satisfies the auditor, not the question. The auditor checks that a sentence is supported, not that it
 answers the question. Given a provision, Qwen writes something true from it, often a side clause. 21 of 50
 recovered sentences were near-verbatim copies of the statute, against 1 of 41 without the source. Answers that did
 not address the question rose from 13 to 24. The judge rated 61 % of answers correct with the source added, against
-73 % without.
+73 % without. Insertion also ends answers early. The model stopped the answer right after an inserted retry in 28
+of 46 states, against 17 of 44 after a plain retry.
 
 Abstention is lost. Without the source, the refusal sentence also handled questions about provisions that do not
 exist. Adding the source replaces that refusal with a true but irrelevant sentence. Correct abstentions fell from
@@ -73,7 +85,10 @@ The evidence covers 103 English questions on UK statutes, one GPU type, one smal
 Each group has 25 to 40 rejected sentences, so small differences are not meaningful. The judge agreed with the hand
 labels on 85 % of the sample (Cohen's kappa 0.375). Asked twice about 56 identical answers, it gave the same
 verdict 49 times. Its figures show direction, not exact scores. A gap of 12 answers or more is outside that noise.
-Concurrency, failure recovery and cost per answer were not measured.
+The attention and likelihood figures come from a separate replay that chose the same next token as the server 92
+to 94 % of the time, below the 95 % set in advance. Attention shows where the model looked, not why it wrote what
+it wrote. The likelihood figures carry the conclusion, and every effect pointed the same way in 45 or 46 of 46
+states. Concurrency, failure recovery and cost per answer were not measured.
 
 ## Required before production
 

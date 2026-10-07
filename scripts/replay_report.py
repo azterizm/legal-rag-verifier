@@ -1,5 +1,8 @@
 """Stop 29 report: placement arms and attention/likelihood, from ``results/grid/replay/``.
 
+``sglang.jsonl`` (git-ignored) is the SGLang phase's raw output; ``arms.jsonl`` is the same without
+the prompt-side token ids, and is what this report and the repository keep.
+
 Method: ``docs/GRID.md`` § Stop 29. Primary comparisons (Holm-corrected at 0.05): R1 against R3 and
 R1 against R4 (first-retry pass, exact McNemar), and, with the inserted turn against without it,
 the attention share of R1's sentence on provision text, its log-probability, and the rejected
@@ -33,6 +36,11 @@ LAYERS = {"all": slice(0, None), "0-8": slice(0, 9), "9-18": slice(9, 19), "19-2
 PROVISION = ("inserted_windows", "other_windows", "inserted_copy", "top_copy")
 
 
+def sig(p: float) -> float:
+    """A p-value to 3 significant figures (small ones stay non-zero)."""
+    return float(f"{p:.3g}")
+
+
 def holm(pvalues: Mapping[str, float], alpha: float = 0.05) -> dict[str, dict[str, Any]]:
     """Holm step-down: adjusted p-values and which comparisons hold at ``alpha``."""
     ranked = sorted(pvalues.items(), key=lambda kv: kv[1])
@@ -42,7 +50,7 @@ def holm(pvalues: Mapping[str, float], alpha: float = 0.05) -> dict[str, dict[st
         adjusted = min(1.0, max(running, (len(ranked) - i) * p))
         running = adjusted
         rejecting = rejecting and adjusted < alpha
-        out[name] = {"p": p, "holm_p": round(adjusted, 6), "holds": rejecting}
+        out[name] = {"p": p, "holm_p": sig(adjusted), "holds": rejecting}
     return out
 
 
@@ -56,7 +64,7 @@ def sign_test(pairs: Sequence[tuple[float, float]]) -> dict[str, Any]:
         "first_higher": above,
         "first_lower": below,
         "median_difference": round(statistics.median(diffs), 6) if diffs else None,
-        "p": round(mcnemar(above, below), 6),
+        "p": sig(mcnemar(above, below)),
     }
 
 
@@ -74,7 +82,7 @@ def paired_arms(records: Sequence[Mapping[str, Any]], a: str, b: str) -> dict[st
         b: sum(y),
         f"only_{a}": only_a,
         f"only_{b}": only_b,
-        "p": round(mcnemar(only_a, only_b), 6),
+        "p": sig(mcnemar(only_a, only_b)),
     }
 
 
@@ -161,7 +169,7 @@ def attention_report(rows: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
 
             out[f"provision_share_{part}_inserted_vs_none_layers_{name}"] = sign_test(pairs(get))
         components = {
-            span: statistics.median(
+            f"{ctx}:{span}": statistics.median(
                 share(r[ctx][part], [span], LAYERS["all"])
                 for r in rows
                 if r[ctx][part]["attention"]
@@ -188,10 +196,23 @@ def attention_report(rows: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
     return out
 
 
+def strip(record: dict[str, Any]) -> dict[str, Any]:
+    """The record without the prompt-side token ids (they encode statute text from ``data/``)."""
+    replay = record.get("replay")
+    if not replay:
+        return record
+    dropped = {"prompt", "committed", "note", "prompt_top"}
+    kept = {k: v for k, v in replay.items() if k not in dropped}
+    return {**record, "replay": kept}
+
+
 def main() -> None:
-    records = [
-        json.loads(x) for x in (OUT / "sglang.jsonl").read_text(encoding="utf-8").splitlines()
-    ]
+    raw = OUT / "sglang.jsonl"  # git-ignored: full token ids, needed only by the attention phase
+    if raw.exists():
+        lines = raw.read_text(encoding="utf-8").splitlines()
+        stripped = (json.dumps(strip(json.loads(x)), ensure_ascii=False) + "\n" for x in lines)
+        (OUT / "arms.jsonl").write_text("".join(stripped), encoding="utf-8")
+    records = [json.loads(x) for x in (OUT / "arms.jsonl").read_text(encoding="utf-8").splitlines()]
     report: dict[str, Any] = {"arms": arms_report(records)}
     attention_path = OUT / "attention.jsonl"
     if attention_path.exists():

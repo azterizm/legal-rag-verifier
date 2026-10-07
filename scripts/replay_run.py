@@ -4,7 +4,8 @@ Method: ``docs/GRID.md`` § Stop 29. Per state the server cache is flushed, the 
 decoded again from the committed answer and compared with the recorded rejected draft (parity),
 and then:
 
-- R0: A's recorded retry (its allow-list or ban, from the same seed tokens);
+- R0: A's recorded retry (its allow-list or ban, from the same seed tokens; where A's retry decoded
+  nothing and the point was refused, that refusal is recorded, not replayed);
 - R1: B's retry, the provision inserted at the cut point as a user turn, cache warm;
 - R2: R1's exact tokens after the cache is flushed;
 - R3: the same provision text after the query in the user turn, the committed answer re-prefilled;
@@ -199,11 +200,13 @@ class Replayer:
             return out
 
         recorded = item["a_retry"]
-        seed = first.tokens[: recorded["tokens_reused"]]
-        d0 = self._draft(
-            prompt, committed, committed, seed, constraint=constraint_of(recorded["constraint"])
-        )
-        out["R0"] = self._arm(item, prompt, committed, committed, d0)
+        if recorded is None:  # A's retry decoded nothing and the point was refused: not replayed
+            out["R0"] = {"text": "", "verdict": "REFUSED", "reasons": [], "follow_on": []}
+        else:
+            seed = first.tokens[: recorded["tokens_reused"]]
+            constraint = constraint_of(recorded["constraint"])
+            d0 = self._draft(prompt, committed, committed, seed, constraint=constraint)
+            out["R0"] = self._arm(item, prompt, committed, committed, d0)
 
         source, windows = engine._source_text(premise, item["windows"], set())
         note_text = TURN.format(source=source)

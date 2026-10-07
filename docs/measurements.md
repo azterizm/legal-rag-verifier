@@ -458,3 +458,58 @@ point, first drafts of the later sentences passed 35/65 in A and 31/41 in B (A's
 that follows a refusal). The states rebuild exactly from the traces with the generator's tokenizer (prompt, committed
 text, inserted source, and B's prefix-cache hit). Raw: `results/grid/replay_states.json`; `inject_ab.json` now
 carries both figures. The placement and attention replay on these states is specified in `docs/GRID.md` § Stop 29.
+
+## Placement and attention replay (stop 29, 2026-10-07; method in `docs/GRID.md`)
+
+The 47 states where A and B reached the same first rollback and B inserted a provision, replayed on the same L4,
+Qwen 2.5 7B bf16, SGLang 0.5.21 and auditor; then an attention and likelihood replay in transformers 5.12.1
+(eager attention, bf16) on the recorded tokens. Parity: 46/47 states re-decoded the recorded rejected draft
+(uk-concept-0150 did not and is dropped). The replays reproduced the recorded retries on 43/44 (A) and 43/46 (B).
+On 2 states A's own retry decoded nothing and the point was refused; R0 there is that recorded refusal.
+Raw: `results/grid/replay/arms.jsonl`, `attention.jsonl`, `report.json` (`scripts/replay_report.py`).
+
+| First retry, 46 states | Passed the auditor | Against R1 (only R1 / only the other; exact McNemar) |
+|---|---:|---|
+| R0: A's retry (allow-list or ban) | 18 | 22 / 1, p = 5.7e-6 |
+| **R1: provision inserted at the cut point** | **39** | |
+| R2: R1 with the cache emptied first | 39 | same pass or fail on all 46; same tokens on 44 |
+| R3: the same provision text at the top, after the query | 17 | 24 / 2, p = 1.1e-5 |
+| R4: R1's turn without the provision | 14 | 26 / 1, p = 4.2e-7 |
+
+| Recorded tokens replayed, 46 states | With the inserted turn vs without | Exact sign test |
+|---|---|---|
+| log P of R1's regenerated sentence | higher in 46/46, median +40.2 nats | p = 2.8e-14 |
+| log P of the rejected draft | lower in 45/46, median −32.4 nats | p = 1.3e-12 |
+| Attention share on provision text, R1's sentence, all layers | higher in 46/46, median +0.065 | p = 2.8e-14 |
+| Same, layers 0–8 / 9–18 / 19–27 | higher in 45 / 46 / 45, median +0.037 / +0.094 / +0.066 | |
+| Same, the next sentence (18 states that have one) | higher in 18/18, median +0.044 | p = 7.6e-6 |
+| log P of R1's sentence, inserted vs provision at the top | higher in 45/46, median +28.1 nats | p = 1.3e-12 |
+| Attention share on provision text, inserted vs at the top | higher in 34/46, median +0.015 | p = 0.0016 |
+
+Median attention share of R1's sentence by span: without the inserted turn, the windows that are later inserted
+0.109 and the other windows 0.118; with it, the inserted copy 0.166, the original copy of the same windows 0.053
+and the other windows 0.071; with the provision at the top, the top copy 0.128. All five primary comparisons hold
+after Holm correction (largest adjusted p = 1.1e-5).
+
+Other figures. One-token request on R1's input: 105 ms with the cache warm, 337 ms cold (median). The answer ended
+right after the retry in 28/46 states for R1, against 17/44 for R0, 17/46 for R3 and 12/46 for R4. First drafts of
+the 2 follow-on sentences passed R0 25/39, R1 19/26, R3 24/39, R4 28/51 (small samples).
+
+**Replay fidelity is below the 95 % bar set in the method**: the transformers replay's top token equals the
+recorded token at 92.0 % of rejected-draft positions, 94.3 % of regenerated-sentence positions and 91.8 % of
+next-sentence positions. It does not vary with context length (102 to 14,164 tokens). The likely source is the two
+bf16 kernel paths (SGLang/FlashInfer vs transformers eager); this is not verified. The attention and likelihood
+results therefore carry this caveat. Each effect above points the same way in 45 or 46 of 46 states.
+
+**What the replay shows.**
+- **Position, not presence.** The provisions were in the system prompt all along. The same provision text placed
+  at the top (R3) does no better than A's decode-level retry (17 vs 18). Placed at the cut point (R1) it passes 39.
+- **Content, not the turn break.** R1's turn without the provision (R4) passes 14.
+- **The cache is a cost saving, not a quality change.** Emptying it first (R2) changes the pass on no state and
+  the tokens on 2 (bf16 numerics); it triples the time of the first request.
+- **Insertion moves probability and attention toward the provision.** The regenerated sentence becomes more likely
+  in every state and the rejected draft less likely in 45 of 46. Attention to provision text rises in every state;
+  the inserted copy takes the most, and attention to the original copy halves. The shift persists in the next
+  sentence. Attention describes where the model looked; the likelihood figures carry the causal reading.
+- **Insertion also ends answers early** (28/46 vs 17/44), in line with stop 27's shorter, more often off-topic
+  answers.

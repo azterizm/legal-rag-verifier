@@ -191,3 +191,9 @@ as none. Nothing here changes the engine or the auditor, and no choice is made o
 
 - Scripts: `scripts/replay_states.py` (states, local checks), the replay and attention runs (to be written);
   raw: `results/grid/replay_states.json`, later `results/grid/replay/`.
+- 2026-10-07 (stop 29, after the run): the harness first left out the 2 states where A's retry decoded nothing
+  (a filter on A's recorded retry); they were run separately, with R0 recorded as that refusal, so all 47 states
+  are covered as specified. Parity held on 46/47. Replay fidelity was 92 to 94 %, below the 95 % bar, so the
+  attention results carry that caveat (`docs/measurements.md`). The raw SGLang output (`replay/sglang.jsonl`) holds
+  the prompt token ids, which encode statute text from `data/`; it is git-ignored and `replay/arms.jsonl` is kept
+  without them. A report bug that merged two span medians under one name was fixed before the write-up.

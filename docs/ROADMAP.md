@@ -17,12 +17,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Run the stop 29 replay (your go given; the harness's paid call was blocked by the permission check): `modal_m4.py::replay` |
-| Waiting on you | Running (or allowing) the Modal replay command; vault corrections; release go |
+| Next step | ⛔ Your call: vault corrections, injection v2, or the 0.1.0 release |
+| Waiting on you | Next direction; vault corrections; release go |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (31): **Stop 29 run and written up (your go, R4 in).** 46/47 states passed parity. First retry passed:
+  R1 (inserted at the cut point) 39, R2 (cache emptied) 39, R0 (A's retry) 18, R3 (provision at the top) 17,
+  R4 (turn, no provision) 14. With insertion, log P of the regenerated sentence up in 46/46, of the rejected draft
+  down in 45/46, attention share on provision text up in 46/46 (and in the next sentence 18/18). All five primary
+  comparisons hold after Holm. Caveat: replay fidelity 92 to 94 %, below the 95 % bar. Insertion also ends answers
+  early (28/46 vs 17/44). Write-up: `docs/measurements.md`, `docs/VERDICT.md`. Raw SGLang output git-ignored
+  (statute token ids); `replay/arms.jsonl` kept. ⛔ Next: your call.
 
 - 2026-10-07 (30): **Stop 29 harness built (your go, R4 in), not run.** `replay_run.py` (arms R0 to R4 on the
   SGLang server, parity first, 2 follow-on sentences), `attention_replay.py` (HF eager, chunked prefill so the

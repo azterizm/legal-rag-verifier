@@ -256,7 +256,7 @@ def replay(phase: str = "both", limit: int = 0, chunk: int = 8) -> None:
         todo = [
             s
             for s in states
-            if s.b_retry and s.b_retry.get("injected") and s.a_retry and s.id not in done_ids(path)
+            if s.b_retry and s.b_retry.get("injected") and s.id not in done_ids(path)
         ][: limit or None]
         runner = Replay(revision=revision)
         for start in range(0, len(todo), chunk):
@@ -270,7 +270,9 @@ def replay(phase: str = "both", limit: int = 0, chunk: int = 8) -> None:
                     "a_retry": {
                         "constraint": s.a_retry["constraint"],
                         "tokens_reused": s.a_retry["tokens_reused"],
-                    },
+                    }
+                    if s.a_retry
+                    else None,
                     "windows": s.b_retry["injected"]["windows"],
                 }
                 for s in todo[start : start + chunk]
