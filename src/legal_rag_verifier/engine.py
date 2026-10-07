@@ -426,18 +426,26 @@ class InFlightGenerator:
     def _source(
         self, premise: Premise, aligned: Sequence[int], injected: set[int]
     ) -> tuple[list[int], list[int]]:
-        """The context tokens that write the aligned windows not yet injected, and their positions.
-
-        Each window is rendered as in the prompt; the source is cut at ``inject_max_tokens``."""
-        windows = [i for i in aligned if i not in injected][: self.inject_windows]
+        """Context tokens that write the aligned windows not yet injected, and their positions."""
+        source, windows = self._source_text(premise, aligned, injected)
         if not windows:
             return [], []
+        return list(self.backend.encode(self.inject_template.format(source=source))), windows
+
+    def _source_text(
+        self, premise: Premise, aligned: Sequence[int], injected: set[int]
+    ) -> tuple[str, list[int]]:
+        """The aligned windows not yet injected, each rendered as in the prompt, cut at
+        ``inject_max_tokens``; and their positions."""
+        windows = [i for i in aligned if i not in injected][: self.inject_windows]
+        if not windows:
+            return "", []
         passages = [premise.passages[i] for i in windows]
         source = "\n\n".join(f"[{p.heading}]\n{p.text}" if p.heading else p.text for p in passages)
         tokens = self.backend.encode(source)
         if len(tokens) > self.inject_max_tokens:
             source = self.backend.decode(tokens[: self.inject_max_tokens]).rstrip() + " …"
-        return list(self.backend.encode(self.inject_template.format(source=source))), windows
+        return source, windows
 
     def _separator(self, answer: Sequence[int], tokens: Sequence[int]) -> list[int]:
         """A space between the answer and a sentence decoded after an injected source, if needed."""

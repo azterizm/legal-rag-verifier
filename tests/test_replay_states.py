@@ -83,3 +83,20 @@ def test_downstream_counts_first_drafts_after_the_first_rollback() -> None:
         )
     }
     assert downstream(records, ["q"]) == {"sentences": 2, "first_draft_passed": 1}
+
+
+def test_holm_steps_down_and_stops_at_the_first_failure() -> None:
+    from scripts.replay_report import holm  # noqa: PLC0415
+
+    out = holm({"a": 0.01, "b": 0.04, "c": 0.03})
+    assert out["a"] == {"p": 0.01, "holm_p": 0.03, "holds": True}
+    assert out["c"]["holm_p"] == pytest.approx(0.06)
+    assert not out["c"]["holds"]
+    assert not out["b"]["holds"]  # 0.04 alone would pass, but Holm stops at c
+
+
+def test_sign_test_drops_ties() -> None:
+    from scripts.replay_report import sign_test  # noqa: PLC0415
+
+    out = sign_test([(2.0, 1.0), (3.0, 1.0), (1.0, 1.0), (0.0, 1.0)])
+    assert (out["first_higher"], out["first_lower"], out["states"]) == (2, 1, 4)

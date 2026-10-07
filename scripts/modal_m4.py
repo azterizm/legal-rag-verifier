@@ -6,6 +6,7 @@
   uv run --with modal modal run scripts/modal_m4.py::latency    # L4, ≤ 30 min: round-trip profile
   uv run --with modal modal run scripts/modal_m4.py::grid       # L4: grid cells 4B and 4D
   uv run --with modal modal run scripts/modal_m4.py::grid --cells 4B-inject   # stop 27 A/B
+  uv run --with modal modal run scripts/modal_m4.py::replay                   # stop 29 replay
 
 Writes results/m4-sglang.json / results/m4-profile.json. Only public statute text and the demo
 queries leave this machine.
@@ -198,3 +199,94 @@ def main() -> None:
     out = ROOT / "results" / "m4-sglang.json"
     out.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(result["round_trip"]), "→", out.relative_to(ROOT))
+
+
+# ---------------------------------------------------------------------- stop 29: replay
+
+
+@app.cls(gpu="L4", timeout=3600, volumes={"/hf": weights}, scaledown_window=300)
+class Replay:
+    """SGLang phase of stop 29: arms R0 to R4 from each shared first-rollback state."""
+
+    revision: str = modal.parameter()
+
+    @modal.enter()
+    def start(self) -> None:
+        from replay_run import Replayer  # noqa: PLC0415
+
+        self._server = sglang_server(self.revision)
+        url = self._server.__enter__()
+        self.replayer = Replayer(url, MODEL, self.revision)
+
+    @modal.exit()
+    def stop(self) -> None:
+        self._server.__exit__(None, None, None)
+
+    @modal.method()
+    def run(self, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        return [self.replayer.run(item) for item in items]
+
+
+@app.function(gpu="L4", timeout=3600, volumes={"/hf": weights})
+def attention(revision: str, records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Attention phase of stop 29: HF transformers, eager attention, on the recorded tokens."""
+    import transformers  # noqa: PLC0415
+    from attention_replay import load, measure  # noqa: PLC0415
+
+    model, torch = load(revision)
+    meta = {"transformers": transformers.__version__, "torch": torch.__version__}
+    return [{**measure(model, torch, r), **meta} for r in records]
+
+
+@app.local_entrypoint()
+def replay(phase: str = "both", limit: int = 0, chunk: int = 8) -> None:
+    """Stop 29 (docs/GRID.md): ``--phase sglang|attention|both``; resumable per state."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    from grid_gemini import done_ids  # noqa: PLC0415
+    from grid_prompts import premise, rows  # noqa: PLC0415
+    from replay_states import GRID, load, shared_states  # noqa: PLC0415
+
+    out = GRID / "replay"
+    out.mkdir(parents=True, exist_ok=True)
+    revision = download.remote()
+    if phase in {"sglang", "both"}:
+        states, _ = shared_states(load(GRID / "4B.jsonl"), load(GRID / "4B-inject.jsonl"))
+        by_id = {r["id"]: r for r in rows("test")}
+        path = out / "sglang.jsonl"
+        todo = [
+            s
+            for s in states
+            if s.b_retry and s.b_retry.get("injected") and s.a_retry and s.id not in done_ids(path)
+        ][: limit or None]
+        runner = Replay(revision=revision)
+        for start in range(0, len(todo), chunk):
+            items = [
+                {
+                    "id": s.id,
+                    "query": by_id[s.id]["query"],
+                    "premise": premise(by_id[s.id]),
+                    "committed": s.committed,
+                    "rejected": s.rejected,
+                    "a_retry": {
+                        "constraint": s.a_retry["constraint"],
+                        "tokens_reused": s.a_retry["tokens_reused"],
+                    },
+                    "windows": s.b_retry["injected"]["windows"],
+                }
+                for s in todo[start : start + chunk]
+            ]
+            records = runner.run.remote(items)
+            with path.open("a", encoding="utf-8") as f:
+                f.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in records)
+            print(f"sglang: {start + len(items)}/{len(todo)}", flush=True)
+    if phase in {"attention", "both"}:
+        source = out / "sglang.jsonl"
+        path = out / "attention.jsonl"
+        records = [json.loads(x) for x in source.read_text(encoding="utf-8").splitlines()]
+        todo = [r for r in records if r.get("parity") and r["id"] not in done_ids(path)]
+        todo = todo[: limit or None]
+        for start in range(0, len(todo), chunk):
+            results = attention.remote(revision, todo[start : start + chunk])
+            with path.open("a", encoding="utf-8") as f:
+                f.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in results)
+            print(f"attention: {start + len(results)}/{len(todo)}", flush=True)

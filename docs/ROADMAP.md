@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Your go (stop 29): the paid replay + attention run (method in `docs/GRID.md` § Stop 29), R4 in or out |
-| Waiting on you | Paid run go (Modal L4, about 1 h, no router calls); vault corrections; release go |
+| Next step | Run the stop 29 replay (your go given; the harness's paid call was blocked by the permission check): `modal_m4.py::replay` |
+| Waiting on you | Running (or allowing) the Modal replay command; vault corrections; release go |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (30): **Stop 29 harness built (your go, R4 in), not run.** `replay_run.py` (arms R0 to R4 on the
+  SGLang server, parity first, 2 follow-on sentences), `attention_replay.py` (HF eager, chunked prefill so the
+  14k-token prompts fit; chunked = unchunked on a tiny model), `replay_report.py` (McNemar, sign tests, Holm),
+  `modal_m4.py::replay` (resumable). Span extraction checked on all 47 states locally. Engine: `_source` split
+  into `_source_text` (private; no API or trace change). The Modal call was refused by the session's permission
+  check, so the run waits on you: `uv run --with modal modal run scripts/modal_m4.py::replay`.
 
 - 2026-10-07 (29): **Steps 1–2 of the placement + attention plan done (your go): shared states and the method, no run.** A and B share all
   48 first-rollback states; first retry passed 19/48 (A) vs 39/48 (B), McNemar p = 1.1e-5; first drafts after
