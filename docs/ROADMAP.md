@@ -17,12 +17,17 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-06 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Your blind labels → judge (gpt-oss-120b-medium, paid) → agreement → grid results |
-| Waiting on you | Blind labels for 80 answers (`results/grid/review_labels.csv`). Vault 02 |
+| Next step | Your call: adjudication, judge v2, detector refinement on dev (stop 25) |
+| Waiting on you | Label provenance; adjudicate 12 judge/label disagreements or not; refinement go. Vault 02 |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (25): **Labels in, judge run (412 calls), results written; ⛔ next steps.** Labels: 72/80 correct.
+  Judge vs labels 85 %, κ 0.375 → not the headline (rule set before the run); rule A fails Qwen on citing habit.
+  Results side by side in `docs/measurements.md`. 44 judge-flagged detector misses + 2 systematic gaps (query
+  names a fictional provision/Act; refusals from false rollbacks) are refinement hypotheses for dev.
 
 - 2026-10-07 (24): **Grid cells run: 4 × 103 answers; rule A scored; ⛔ your blind labels.** Modal L4 ≈ 1.5 h
   (4B + 4D); router: 4A + 4C on `gemini-3.8-flash-high` (one 503 and one interrupted session, resumed, no

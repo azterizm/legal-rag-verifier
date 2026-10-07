@@ -82,4 +82,7 @@ L4 is priced from Modal's hourly rate and the measured wall time).
 
 ## Changes after the run
 
-None yet.
+- 2026-10-07: Gemini's raw `completion_tokens` include thinking; visible tokens (completion − reasoning, from
+  each call's `usage`) are reported beside them. No change to the cells, prompts or scoring.
+- 2026-10-07: the judge's agreement with the blind labels is κ 0.375, so by the rule above it is **not** the
+  headline; rule A, the labels and the judge are reported side by side (`docs/measurements.md`).

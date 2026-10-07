@@ -1,0 +1,394 @@
+{
+ "judge": "gpt-oss-120b-medium",
+ "cells": {
+  "4A": {
+   "judged": 103,
+   "judge_correct": 83,
+   "judge_correct_rate": 0.8058,
+   "answerable_correct": "75/92",
+   "abstention_correct": "8/11",
+   "judge_failures": 0,
+   "detector_passed_but_judge_flagged_sentences": {
+    "dropped_qualifier": 9,
+    "wrong_citation": 1,
+    "other": 2
+   }
+  },
+  "4B": {
+   "judged": 103,
+   "judge_correct": 75,
+   "judge_correct_rate": 0.7282,
+   "answerable_correct": "67/92",
+   "abstention_correct": "8/11",
+   "judge_failures": 0,
+   "detector_passed_but_judge_flagged_sentences": {
+    "other": 6,
+    "dropped_qualifier": 6,
+    "wrong_citation": 5,
+    "wrong_figure": 1
+   }
+  },
+  "4C": {
+   "judged": 103,
+   "judge_correct": 91,
+   "judge_correct_rate": 0.8835,
+   "answerable_correct": "83/92",
+   "abstention_correct": "8/11",
+   "judge_failures": 0,
+   "detector_passed_but_judge_flagged_sentences": {
+    "other": 2,
+    "dropped_qualifier": 4
+   }
+  },
+  "4D": {
+   "judged": 103,
+   "judge_correct": 81,
+   "judge_correct_rate": 0.7864,
+   "answerable_correct": "71/92",
+   "abstention_correct": "10/11",
+   "judge_failures": 0,
+   "detector_passed_but_judge_flagged_sentences": {
+    "wrong_figure": 2,
+    "wrong_instrument": 2,
+    "dropped_qualifier": 4
+   }
+  }
+ },
+ "judge_vs_labels": {
+  "4A": {
+   "pairs": 20,
+   "agreement": 0.75,
+   "kappa": 0.2188
+  },
+  "4B": {
+   "pairs": 20,
+   "agreement": 0.8,
+   "kappa": -0.1111
+  },
+  "4C": {
+   "pairs": 20,
+   "agreement": 1.0,
+   "kappa": 1.0
+  },
+  "4D": {
+   "pairs": 20,
+   "agreement": 0.85,
+   "kappa": 0.5714
+  },
+  "all": {
+   "pairs": 80,
+   "agreement": 0.85,
+   "kappa": 0.375
+  }
+ },
+ "detector_misses": [
+  {
+   "cell": "4A",
+   "id": "uk-concept-0018",
+   "sentence": "This leave may not be replaced by a payment in lieu except where the worker’s employment is terminated.",
+   "label": "contradicted",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0019",
+   "sentence": "Under section 226(2), industrial action is regarded as having the support of a ballot only if the union holds a ballot in which at least 50% of those who were entitled to vote did so, and the majority voting answered “Yes” to the applicable question.",
+   "label": "contradicted",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0024",
+   "sentence": "Under section 19(2)(d) of the Equality Act 2010, that provision, criterion or practice is discriminatory if, alongside putting persons who share the characteristic at a particular disadvantage, A cannot show it to be a proportionate means of achieving a legitimate aim.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0036",
+   "sentence": "According to section 7(2) and section 7(3) of the Equality Act 2010, a reference to a transsexual person—or to a person who has this particular protected characteristic—is a reference to a person who has the protected characteristic of gender reassignment, and references to persons who share a protected characteristic are references to transsexual persons.",
+   "label": "contradicted",
+   "error": "other"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0070",
+   "sentence": "Pursuant to section 127(2), this time-limit does not apply in relation to any indictable offence.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0080",
+   "sentence": "Under section 20(1) of the Landlord and Tenant Act 1985, where the section applies to qualifying works, the relevant contributions of tenants are limited in accordance with subsection (6) or (7) (or both) unless consultation requirements have been complied with or dispensed with by the appropriate tribunal.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0084",
+   "sentence": "This duty applies under section 193(1) where the authority are satisfied that the applicant is homeless, eligible for assistance, has a priority need, and did not become homeless intentionally, and the authority's duty under section 189B(2) has come to an end.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0116",
+   "sentence": "If the relevant accounting reference period is the company's first and is a period of more than twelve months, section 442(3) states that the period is nine months from the first anniversary of the incorporation of the company, or three months after the end of the accounting reference period, whichever last expires.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0149",
+   "sentence": "Under section 2(1) of the Misrepresentation Act 1967, where a person has entered into a contract after a misrepresentation has been made to him by another party and has suffered loss as a result, the person making the misrepresentation is liable to damages as if it had been made fraudulently, unless he proves that he had reasonable ground to believe and did believe up to the time the contract was made the facts represented were true.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0158",
+   "sentence": "Under section 2(2) of the Freedom of Information Act 2000, where information is exempt under Part II and does not fall under an absolute exemption, section 1(1)(b) does not apply if, in all the circumstances of the case, the public interest in maintaining the exemption outweighs the public interest in disclosing the information.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0158",
+   "sentence": "Similarly, under section 2(1), section 1(1)(a) does not apply if, in all the circumstances of the case, the public interest in maintaining the exclusion of the duty to confirm or deny outweighs the public interest in disclosing whether the public authority holds the information.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4A",
+   "id": "uk-concept-0165",
+   "sentence": "Paragraph (3) allows sending such mail where contact details were obtained in the course of the sale or negotiations for the sale of a product or service, and paragraph (3A) permits it for a charity under specified conditions.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0024",
+   "sentence": "The employer or organization applying the policy cannot show that the policy is a proportionate means of achieving a legitimate aim.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0026",
+   "sentence": "A person harasses another if they engage in unwanted conduct related to a relevant protected characteristic, and the conduct violates the other person's dignity or creates an intimidating, hostile, degrading, humiliating, or offensive environment for them.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0026",
+   "sentence": "This can include unwanted conduct of a sexual nature or related to gender reassignment or sex, where the conduct has the same effect.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0042",
+   "sentence": "A person is in breach of section 2(1) of the Fraud Act 2006 if they dishonestly make a false representation with the intention of making a gain for themselves or another.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0046",
+   "sentence": "If a person is convicted of an assault that caused bruising, which constitutes actual bodily harm, they shall be liable to be kept in penal servitude as per the provisions of the Offences against the Person Act 1861, section 47.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0065",
+   "sentence": "This section applies to a person who is accused of an offence, or who has been convicted of an offence, and appears or is brought before a magistrates’ court or the Crown Court in the course of or in connection with proceedings for the offence, or applies to a court for bail or for a variation of the conditions of bail in connection with the proceedings.",
+   "label": "contradicted",
+   "error": "other"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0085",
+   "sentence": "Therefore, a shared house multiple occupation licence is required.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0086",
+   "sentence": "However, the security of tenure does not prevent the tenancy from ending through other means such as a notice to quit given by the tenant, surrender, forfeiture, or the forfeiture of a superior tenancy, unless the notice was given after the tenant had been in occupation for at least one month.",
+   "label": "contradicted",
+   "error": "other"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0092",
+   "sentence": "A purchaser of a legal estate in land, when paying two trustees, will overreach any equitable interest or power affecting that estate, provided the conveyance is made under the powers conferred by the Settled Land Act, 1925, or any additional powers conferred by a settlement, and the statutory requirements respecting the payment of capital money arising under the settlement are complied with.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0107",
+   "sentence": "This claim may be brought regardless of when the shareholder became a member of the company.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0138",
+   "sentence": "A consumer may exercise the final right to reject and request a price reduction if, after one repair or replacement, the goods do not conform to the contract, or because of section 23(3) the consumer can require neither repair nor replacement, or if the trader is in breach of the requirement to repair or replace the goods within a reasonable time and without significant inconvenience to the consumer.",
+   "label": "contradicted",
+   "error": "other"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0138",
+   "sentence": "If the final right to reject is exercised, any refund may be reduced by a deduction for use, but this deduction is subject to certain restrictions, including that no deduction may be made in the first 6 months after the consumer has taken possession of the goods, unless the goods are a motor vehicle or a specific type of good as specified by the Secretary of State.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0157",
+   "sentence": "The information is exempt if disclosing it would contravene the data protection principles, would do so if the exemptions in section 24(1) of the Data Protection Act 2018 were disregarded, would contraviate Article 21 of the UK GDPR, or if withholding it would be in reliance on provisions listed in section 40(4A) or (3A).",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0157",
+   "sentence": "Additionally, the duty to confirm or deny the existence of the information does not arise if disclosing it would contravene the data protection principles, Article 21 of the UK GDPR, or if withholding it would be in reliance on provisions listed in section 40(5B).",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0160",
+   "sentence": "The Commissioner may give a controller an enforcement notice if the Commissioner is satisfied that the controller has failed, or is failing, to comply with any of the provisions listed in sections 149(2) to 149(5A) of the Data Protection Act 2018.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0176",
+   "sentence": "Specifically, under section 23(1) of the Matrimonial Causes Act 1973, the court can order one or both parties to make such payments to the other, either as a lump sum or in periodic installments, for a specified term.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0185",
+   "sentence": "The authority is subject to the provisions of the Mental Capacity Act 2005, particularly section 9(4) which includes the principles of the Act and any conditions or restrictions specified in the instrument.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B",
+   "id": "uk-concept-0210",
+   "sentence": "The statutory minimum notice period an employer is required to give to an employee who has been continuously employed for 5 years is not less than one week’s notice for each year of continuous employment, which in this case is one week for each of the 5 years, totaling one month’s notice.",
+   "label": "contradicted",
+   "error": "wrong_figure"
+  },
+  {
+   "cell": "4C",
+   "id": "uk-concept-0019",
+   "sentence": "According to section 226(2), industrial action is regarded as having the support of a ballot only if the union has held a ballot in which at least 50% of those entitled to vote did so, and the majority voting answered “Yes\" to the question applicable in accordance with section 229(2).",
+   "label": "contradicted",
+   "error": "other"
+  },
+  {
+   "cell": "4C",
+   "id": "uk-concept-0052",
+   "sentence": "Under section 4A(1) of the Protection from Harassment Act 1997, a person is guilty of an offence if their course of conduct amounts to stalking and either causes another to fear, on at least two occasions, that violence will be used against them, or causes them serious alarm or distress that has a substantial adverse effect on their usual day-to-day activities.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4C",
+   "id": "uk-concept-0055",
+   "sentence": "For a person charged with being in charge of a vehicle under section 5(1)(b), section 5(2) provides a defence if they prove that there was no likelihood of their driving the vehicle whilst the proportion of alcohol exceeded the prescribed limit.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4C",
+   "id": "uk-concept-0080",
+   "sentence": "Under section 20(1) of the Landlord and Tenant Act 1985, where the section applies to qualifying works, the relevant contributions of tenants through service charges are limited in accordance with subsection (6) or (7) (or both) unless consultation requirements are complied with or dispensed with by the appropriate tribunal.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4C",
+   "id": "uk-concept-0149",
+   "sentence": "Furthermore, under section 2(2) of the Misrepresentation Act 1967, where a non-fraudulent misrepresentation entitles a person to rescind the contract, the court or arbitrator may declare the contract subsisting and award damages in lieu of rescission if it is of opinion that it would be equitable to do so.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4C",
+   "id": "uk-concept-0158",
+   "sentence": "Under section 2(2)(b) of the Freedom of Information Act 2000, where an exemption does not confer an absolute exemption, section 1(1)(b) does not apply if or to the extent that, in all the circumstances of the case, the public interest in maintaining the exemption outweighs the public interest in disclosing the information.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0018",
+   "sentence": "Additionally, a worker may be entitled to an extra period of additional annual leave, which totals up to 1.6 weeks or 28 days in total, depending on the leave year.",
+   "label": "contradicted",
+   "error": "wrong_figure"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0052",
+   "sentence": "This stalking must either cause the victim to fear, on at least two occasions, that violence will be used against them, or cause the victim serious alarm or distress which has a substantial adverse effect on their usual day-to-day activities.",
+   "label": "contradicted",
+   "error": "wrong_instrument"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0052",
+   "sentence": "The perpetrator must either know or ought to know that their conduct will cause such fear or alarm.",
+   "label": "contradicted",
+   "error": "wrong_instrument"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0070",
+   "sentence": "A summary offence information must be laid within six months from the time when the offence was committed for the magistrates’ court to try it.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0085",
+   "sentence": "Therefore, a shared house multiple occupation licence is required.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0100",
+   "sentence": "The Tribunal can make such an order if it is satisfied that the covenant is obsolete due to changes in the character of the property or the neighbourhood, or if the continued existence of the covenant would impede a reasonable user of the land for public or private purposes.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0148",
+   "sentence": "The cancellation period for a distance contract, such as an online purchase, begins when the contract is entered into and ends 14 days after that day.",
+   "label": "unsupported",
+   "error": "wrong_figure"
+  },
+  {
+   "cell": "4D",
+   "id": "uk-concept-0148",
+   "sentence": "The consumer may cancel the contract at any time within this period without giving any reason and without incurring any liability, except under the conditions specified in regulations 34(3) and 34(9).",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  }
+ ]
+}

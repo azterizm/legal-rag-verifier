@@ -353,3 +353,44 @@ Findings:
   (8 tokens for " £123,543") is ≈ 1 s in bf16, which the grid reports inside 4B's remediation latency.
 - Not tried: graphing the extend path (an SGLang option, version-dependent), and whether FP8 changes Qwen's
   answers. The grid runs bf16 as specified unless you choose otherwise.
+
+## 2x2 grid results (2026-10-07; method in `docs/GRID.md`)
+
+103 router concept `test` prompts × 4 cells, one shared detector, at most 3 retries. Generators: Gemini
+`gemini-3.8-flash-high` via the router (4A full retry, 4C continuation; verifier on the Apple M4) and Qwen 2.5
+7B-Instruct bf16 on SGLang 0.5.21, one Modal L4 (4D full retry, 4B in-flight rollback; verifier on the L4).
+Raw: `results/grid/{4A,4B,4C,4D}.jsonl`, `summary.json`, `judge.jsonl`, `report.json`.
+
+| | 4A Gemini retry | 4C Gemini continuation | 4D Qwen retry | 4B Qwen in-flight |
+|---|---:|---:|---:|---:|
+| Blind sample labels: correct (20 per cell) | 19 | 19 | 16 | 18 |
+| Judge `gpt-oss-120b-medium`: correct (103) | 83 (80.6 %) | 91 (88.3 %) | 81 (78.6 %) | 75 (72.8 %) |
+| Rule A pass (103) | 97.1 % | 97.1 % | 39.8 % | 45.6 % |
+| Detector: clean first draft / remediated / unresolved | 63 / 31 / 9 | 61 / 30 / 12 | 53 / 20 / 30 | 55 / 29 / 19 |
+| Visible tokens discarded per answer (mean) | 82 | 90 | 110 | 67 |
+| Time to first released output (median) | 16.1 s | 11.6 s | 8.1 s | 3.8 s |
+| Wall-clock per answer (median) | 16.1 s | 16.5 s | 8.1 s | 7.9 s |
+| Verification time per answer (median) | 7.0 s (M4) | 5.8 s (M4) | 0.7 s (L4) | 0.6 s (L4) |
+| Visible tokens / s (median) | 19.6 | 18.2 | 17.0 | 16.5 |
+
+**No single scorer is reliable enough to be the headline.**
+- Rule A agrees with the blind labels on Gemini (20/20 in 4A and 4C) but not on Qwen (4B 14/20, 4D 8/20):
+  Qwen's answers mostly do not name the section, which rule A requires. Rule A measures a citing habit as much
+  as correctness and is not used as a correctness figure.
+- The judge agrees with the labels on 68/80 (85 %), **Cohen's κ 0.375** (4A 0.22, 4B −0.11, 4C 1.0, 4D 0.57):
+  below what the pre-set rule needs for it to be the headline. Of the 12 disagreements, the judge is stricter on
+  sub-section citations (it is right on FOIA s.12(3) vs s.12(4) and IA 1986 s.423(3) vs (2), which the labels
+  passed), and misses what its prompt did not define: a refusal sentence in an answerable answer (2), a query
+  naming a fictional Act (2: "Family Rights Act 1996", "Data Privacy Act 2018") and one figure-meaning error
+  ("support of at least 50 %" for s.226's 50 % turnout rule).
+- What holds across all three: Gemini cells ≥ Qwen cells on correctness; with the generator fixed,
+  sentence-level remediation releases output sooner (4B 3.8 s vs 4D 8.1 s; 4C 11.6 s vs 4A 16.1 s) and, on the
+  judge, is at least as correct for Gemini (4C 88 % vs 4A 81 %) but not for Qwen (4B 73 % vs 4D 79 %: 4B's
+  refusals and released misses — see below).
+- Gemini's completion tokens are about 80 % thinking; visible output is 18–20 tok/s, about Qwen's on the L4.
+
+**Detector misses on released sentences (judge-flagged; refinement hypotheses, to be tested on dev only)**: 44
+sentences the detector passed — dropped qualifier 23, wrong (sub-)citation 6, wrong figure 3, wrong instrument
+2, other 10. Plus two systematic gaps the labels show: the detector never checks that a provision or Act named in
+the *query* exists in the premise (probes answered as if real), and refusals on answerable prompts come from
+false rollbacks exhausting 3 retries.
