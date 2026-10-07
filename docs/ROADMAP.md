@@ -17,12 +17,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Injection v2 (stop 30): dev pilot, then test + judge if the dev rule passes; then the 0.1.0 release (⛔ before anything leaves the machine) |
+| Next step | Judge the last 8 v2 answers once the router answers again (503); then your call on the reading and the release targets |
 | Waiting on you | Release targets confirmed before push / tag / PyPI |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (33): **v2 dev pilot passed its rule; v2 test run done; judge 95/103 (router 503 on the rest,
+  3 attempts).** Dev: addresses the question 35 vs 32, correct 26 vs 24, first retry 81 %. Test, per rollback
+  point: first retry 91 % (claim check) / 70 % (NLI), 3 answers with a refusal. Judge so far, on the 85 answerable
+  prompts judged in every cell: correct v2 61, 4B 61, 4B-inject 53, 4D 64; off-topic 12 / 5 / 15 / 2; with an
+  unsupported sentence 12 / 19 / 16 / 17. The judge rejects all 10 router refusals judged so far as "unsupported
+  claims" (its prompt allows only claims supported by the provisions), so the pre-set reading (75/103 and 8/11)
+  fails as written. ⛔ Resume: judge the last 8, then your call.
 
 - 2026-10-07 (32): **Vault corrections done; injection v2 built, not run (your go on vault, v2, release).**
   - Vault (edited in place, not committed; your own uncommitted vault edits were left as they were): 04 §2/§3/§7
