@@ -5,12 +5,15 @@ Each prompt is a query plus its premise: the gold provisions from the copied cor
 with the enrichment layer attached, exactly as the verifier batteries build them. A query whose
 expected route is an abstention keeps that label; one with no gold provision gets an empty
 premise. Writes ``batteries/grid/test.jsonl`` (ids, queries, coordinates: no statute text).
+``--split dev`` writes ``batteries/grid/dev.jsonl``, the same battery's dev split (112 UK
+queries), for choices made before a test run (the injection format, stop 27).
 
-  uv run python scripts/grid_prompts.py
+  uv run python scripts/grid_prompts.py [--split dev]
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -25,14 +28,16 @@ import premises  # noqa: E402
 from legal_rag_verifier.premise import Premise  # noqa: E402
 
 SOURCE = ROOT / "batteries/router/concept/uk.jsonl"
-OUT = ROOT / "batteries/grid/test.jsonl"
+GRID = ROOT / "batteries/grid"
+OUT = GRID / "test.jsonl"
 ENRICHMENT = ROOT / "enrichment/gemini-3.8-flash-high"
 ABSTAIN = "EPISTEMIC_ABSTENTION"
 
 
-def rows() -> list[dict[str, Any]]:
+def rows(split: str = "test") -> list[dict[str, Any]]:
     """Grid rows in battery order."""
-    return [json.loads(line) for line in OUT.read_text(encoding="utf-8").splitlines()]
+    path = GRID / f"{split}.jsonl"
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
 
 
 def premise(row: dict[str, Any], *, enrichment: Path | None = ENRICHMENT) -> Premise:
@@ -43,6 +48,9 @@ def premise(row: dict[str, Any], *, enrichment: Path | None = ENRICHMENT) -> Pre
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--split", choices=["test", "dev"], default="test")
+    split = parser.parse_args().split
     source = [json.loads(line) for line in SOURCE.read_text(encoding="utf-8").splitlines()]
     out = [
         {
@@ -52,13 +60,15 @@ def main() -> None:
             "route_status": r["route_status"],
             "expects_abstention": r["route_status"].startswith(ABSTAIN),
             "premise": r.get("gold", []),
-            "split": "test",
+            "split": split,
         }
         for r in source
-        if r["split"] == "test" and r["area"] != "us_law"
+        if r["split"] == split and r["area"] != "us_law"
     ]
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in out), encoding="utf-8")
+    path = GRID / f"{split}.jsonl"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lines = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in out)
+    path.write_text(lines, encoding="utf-8")
     sizes = sorted(len(premise(r, enrichment=None).passages) for r in out)
     print(
         json.dumps(

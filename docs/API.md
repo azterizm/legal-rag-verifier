@@ -92,7 +92,10 @@ engine = InFlightGenerator(
     Verifier(nli),
     max_rollbacks=3,  # retries per point
     max_total_rollbacks=8,
-    steering="allow",  # or "ban"
+    steering="allow",  # or "ban", or "inject" (stop 27)
+    inject_template=INJECT_TEMPLATE,  # inject only: how the source is written ("{source}")
+    inject_windows=2,
+    inject_max_tokens=800,
     refusal=DEFAULT_REFUSAL,
     max_new_tokens=512,
 )
@@ -115,6 +118,10 @@ otherwise (so a failed allow retry whose frame is wrong is followed by a ban ret
 a retry that produces nothing → the refusal sentence, and the answer goes on to the next point; past
 `max_total_rollbacks` discarded drafts the answer ends with it (`stop_reason "rollback_budget"`). A sentence's
 `rollbacks` counts its discarded drafts (a refused point after three retries shows 4).
+**inject** (stop 27; reverses plan decision 6 for this mode only): on a rollback the windows the verifier aligned
+the rejected sentence to (at most `inject_windows`, each once per answer, cut at `inject_max_tokens`) are written
+into the context with `inject_template`, and the sentence is regenerated from its start, unconstrained. The source
+stays in the context (cached like any prefix) but never in the answer; with no new window, the retry is a ban.
 
 `SGLangBackend.connect(url, model_path, revision=…)` (`legal_rag_verifier.backends.sglang`, stdlib HTTP client;
 tokenizer via `transformers`, the `[sglang]` extra): each call resubmits `committed` as `input_ids` to `/generate`
@@ -122,9 +129,9 @@ and records `meta_info.cached_tokens` as `prefix_cache_hit_tokens`. Constraints 
 a server-side logit mask (server flag `--enable-custom-logit-processor`), then one plain request with the stops.
 
 Trace: `backend, model, verifier{config, nli}, engine{…}, prompt_tokens, answer_tokens, sentences[{text,
-outcome emitted|refused, rollbacks, recovered_by allow|ban|null, attempts[{verdict, steering, constraint,
-tokens, tokens_reused, tokens_discarded, decode_calls, prefix_cache_hit_tokens, decode_latency_ns}]}],
-totals{…}, stop_reason`.
+outcome emitted|refused, rollbacks, recovered_by allow|ban|inject|null, attempts[{verdict, steering, constraint,
+injected{windows, tokens}|null, tokens, tokens_reused, tokens_discarded, decode_calls, prefix_cache_hit_tokens,
+decode_latency_ns}]}], totals{…, recovered_by_inject, injections, tokens_injected}, stop_reason`.
 
 `HFBackend` keeps a `DynamicCache` aligned to the last sequence decoded; `extend` keeps the longest shared prefix,
 crops the rest (rollback) and re-feeds the last committed token (the cache holds keys/values, not logits).

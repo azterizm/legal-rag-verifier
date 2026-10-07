@@ -5,6 +5,7 @@
   uv run --with modal modal run scripts/modal_m4.py::main       # L4, ≤ 30 min: the spike
   uv run --with modal modal run scripts/modal_m4.py::latency    # L4, ≤ 30 min: round-trip profile
   uv run --with modal modal run scripts/modal_m4.py::grid       # L4: grid cells 4B and 4D
+  uv run --with modal modal run scripts/modal_m4.py::grid --cells 4B-inject   # stop 27 A/B
 
 Writes results/m4-sglang.json / results/m4-profile.json. Only public statute text and the demo
 queries leave this machine.
@@ -157,17 +158,22 @@ class Grid:
 
 
 @app.local_entrypoint()
-def grid(cells: str = "4B,4D", limit: int = 0, chunk: int = 8) -> None:
+def grid(
+    cells: str = "4B,4D", limit: int = 0, chunk: int = 8, split: str = "test", tag: str = ""
+) -> None:
+    """``--split dev`` writes under results/grid/dev/; ``--tag`` suffixes the file name (a
+    re-run of a cell that already has results, e.g. ``--cells 4B --limit 10 --tag=-parity``)."""
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
     from grid_gemini import OUT, done_ids  # noqa: PLC0415
     from grid_prompts import premise, rows  # noqa: PLC0415
 
-    selected = rows()[: limit or None]
+    selected = rows(split)[: limit or None]
+    out = OUT if split == "test" else OUT / split
     revision = download.remote()
     runner = Grid(revision=revision)
-    OUT.mkdir(parents=True, exist_ok=True)
+    out.mkdir(parents=True, exist_ok=True)
     for cell in cells.split(","):
-        path = OUT / f"{cell}.jsonl"
+        path = out / f"{cell}{tag}.jsonl"
         todo = [r for r in selected if r["id"] not in done_ids(path)]
         for start in range(0, len(todo), chunk):
             items = [(r["id"], r["query"], premise(r)) for r in todo[start : start + chunk]]

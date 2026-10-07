@@ -1,0 +1,85 @@
+{
+ "split": "test",
+ "prompts": 103,
+ "cells": {
+  "4B": {
+   "answers": 103,
+   "answers_with_a_refusal": 19,
+   "all": {
+    "points": 78,
+    "first_retry_passed": "22/67 (33%)",
+    "recovered": 41,
+    "refused": 37,
+    "recovered_by": {
+     "ban": 25,
+     "allow": 16
+    }
+   },
+   "claim_check": {
+    "points": 48,
+    "first_retry_passed": "11/40 (28%)",
+    "recovered": 21,
+    "refused": 27,
+    "recovered_by": {
+     "allow": 16,
+     "ban": 5
+    }
+   },
+   "nli": {
+    "points": 30,
+    "first_retry_passed": "11/27 (41%)",
+    "recovered": 20,
+    "refused": 10,
+    "recovered_by": {
+     "ban": 20
+    }
+   },
+   "injections": 0,
+   "tokens_injected_median": null,
+   "injected_retries_with_prefix_cache_hit": "0/0",
+   "time_to_first_output_s_median": 3.84,
+   "wall_s_median": 7.89,
+   "tokens_discarded_mean": 66.7
+  },
+  "4B-inject": {
+   "answers": 103,
+   "answers_with_a_refusal": 3,
+   "all": {
+    "points": 58,
+    "first_retry_passed": "45/56 (80%)",
+    "recovered": 52,
+    "refused": 6,
+    "recovered_by": {
+     "inject": 47,
+     "ban": 5
+    }
+   },
+   "claim_check": {
+    "points": 32,
+    "first_retry_passed": "26/31 (84%)",
+    "recovered": 29,
+    "refused": 3,
+    "recovered_by": {
+     "inject": 26,
+     "ban": 3
+    }
+   },
+   "nli": {
+    "points": 26,
+    "first_retry_passed": "19/25 (76%)",
+    "recovered": 23,
+    "refused": 3,
+    "recovered_by": {
+     "inject": 21,
+     "ban": 2
+    }
+   },
+   "injections": 56,
+   "tokens_injected_median": 195.5,
+   "injected_retries_with_prefix_cache_hit": "56/56 (100%)",
+   "time_to_first_output_s_median": 3.75,
+   "wall_s_median": 6.45,
+   "tokens_discarded_mean": 33.4
+  }
+ }
+}

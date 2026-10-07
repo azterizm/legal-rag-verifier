@@ -86,3 +86,44 @@ L4 is priced from Modal's hourly rate and the measured wall time).
   each call's `usage`) are reported beside them. No change to the cells, prompts or scoring.
 - 2026-10-07: the judge's agreement with the blind labels is κ 0.375, so by the rule above it is **not** the
   headline; rule A, the labels and the judge are reported side by side (`docs/measurements.md`).
+
+## Stop 27: the injection A/B (method fixed 2026-10-07, before the test run)
+
+**Question.** When the auditor rolls back a sentence, does writing the provision it was checked against into
+the KV cache, then regenerating, make a cheap model recover more often than decode-level steering does? This is
+the half of the architecture goal the grid did not test (plan decision 6 had nothing written into the context).
+
+- **Arms.** A = 4B as run (allow-list, then ban). B = `4B-inject`: the same engine with `steering="inject"`. On a
+  rollback the windows the verifier aligned the rejected sentence to (at most 2, each once per answer, cut at 800
+  tokens) are written into the context at the rollback point, and the sentence is regenerated from its start with
+  no constraint. The prefix up to the rollback point is reused from the cache; only the source is prefilled. The
+  source never enters the answer text; the trace records the windows and token count. With no new window to
+  inject, the retry is a ban, as in A. Everything else is the same: Modal L4, Qwen 2.5 7B `@a09a3545` bf16,
+  SGLang 0.5.21, the 103 test prompts, the auditor (claim check + DeBERTa-v3-base, enrichment attached), 3 retries
+  per point, 8 per answer, cache flushed before every answer.
+- **Format, chosen on the dev split.** Two ways to write the source: `note` (plain text in the answer stream:
+  `(Source: …)`) and `turn` (a user turn in Qwen's chat format with the source and the 4C continue line, then a
+  new assistant turn). Both run on the first 40 dev prompts; the one with more recovered points (tie: fewer
+  refusals) is used on test. The test prompts are not used for this choice.
+- **Parity.** 4B is re-run on the first 10 test prompts in a fresh container; its answers are compared with the
+  stored 4B answers, so A and B are known to come from the same environment.
+- **Primary measure.** Per rollback point, grouped by what rejected the first draft (claim check or NLI alone):
+  first-retry pass rate, points recovered, points refused. Baseline from A: claim check 11/40 first retries
+  passed (28 %), 21 recovered, 27 refused; NLI 11/27 (41 %), 20 recovered, 10 refused.
+- **Holds if** B's claim-check first-retry pass rate is clearly above 28 % and its refusals are fewer than A's.
+  Points differ between arms (generation diverges after the first rollback), so these are rates, and 40-odd
+  points per group is a small sample: a difference of a few points is reported as no difference.
+- **Secondary.** Rule A, the judge's verdict on every B answer (same blind protocol), time to first output, wall
+  time, tokens injected, and the prefix-cache hit on every injected retry.
+- Script: `scripts/grid_inject.py`; raw: `results/grid/4B-inject.jsonl`, `results/grid/dev/`.
+- **Pilot result (dev, 40 prompts) and the format chosen: `turn`.** `note`: 21 rollback points, 17 recovered,
+  4 refused; `turn`: 15, 13, 2. Every injected retry hit the prefix cache in both (23/23, 18/18). By the
+  rule as written (more recovered points) `note` would win, but 5 of its 17 recoveries are the source's own
+  heading copied back as an answer "sentence" (`[Employment Rights Act 1996, section 23(2) (…)]`, 6 such
+  sentences in all): the plain-text format leaks the source into the answer, which the mode must never do.
+  Without them `note` recovers 12/21, `turn` 13/15. The rule should have been a rate over genuine sentences;
+  `turn` is used on test. Decided on dev data only, before any test answer existed.
+- 2026-10-07 (after the A/B run): the judge re-judged 56 answers that are identical in 4B and 4B-inject and gave
+  the same verdict on 49 (temperature 0 is not deterministic on the router). This is reported with the A/B as judge
+  noise. The A/B's success rule was met on the primary measure, but the judge shows a loss in answer relevance.
+  Both are reported (`docs/measurements.md` § Injection A/B).

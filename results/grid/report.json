@@ -52,6 +52,19 @@
     "wrong_instrument": 2,
     "dropped_qualifier": 4
    }
+  },
+  "4B-inject": {
+   "judged": 103,
+   "judge_correct": 63,
+   "judge_correct_rate": 0.6117,
+   "answerable_correct": "59/92",
+   "abstention_correct": "4/11",
+   "judge_failures": 0,
+   "detector_passed_but_judge_flagged_sentences": {
+    "dropped_qualifier": 6,
+    "wrong_citation": 6,
+    "other": 3
+   }
   }
  },
  "judge_vs_labels": {
@@ -389,6 +402,111 @@
    "sentence": "The consumer may cancel the contract at any time within this period without giving any reason and without incurring any liability, except under the conditions specified in regulations 34(3) and 34(9).",
    "label": "unsupported",
    "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0026",
+   "sentence": "This can include unwanted conduct of a sexual nature or related to gender reassignment or sex, where the conduct has the same effect.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0042",
+   "sentence": "A person is in breach of section 2(1) of the Fraud Act 2006 if they dishonestly make a false representation with the intention of making a gain for themselves or another.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0052",
+   "sentence": "This stalking must either cause the victim to fear, on at least two occasions, that violence will be used against them, or cause the victim serious alarm or distress which has a substantial adverse effect on their usual day-to‑day activities.",
+   "label": "contradicted",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0058",
+   "sentence": "Subsection (5) provides that a constable may arrest without a warrant if there are reasonable grounds for believing that it is necessary to arrest the person for any of the specified reasons.",
+   "label": "contradicted",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0079",
+   "sentence": "A tenant can challenge the reasonableness of incurred service charges by making an application to the appropriate tribunal under section 27A of the Landlord and Tenant Act 1985.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0085",
+   "sentence": "Therefore, a shared house multiple occupation licence is required.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0092",
+   "sentence": "A purchaser of a legal estate in land, when paying two trustees, will overreach any equitable interest or power affecting that estate, provided the conveyance is made under the powers conferred by the Settled Land Act, 1925, or any additional powers conferred by a settlement, and the statutory requirements respecting the payment of capital money arising under the settlement are complied with.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0119",
+   "sentence": "The court shall make a disqualification order against a person if, on an application under this section, the court is satisfied that the person is or has been a director of a company which has at any time become insolvent, and the person's conduct as a director of that company (either taken alone or together with the person's conduct as a director of one or more other companies or overseas companies) makes the person unfit to be concerned in the management of a company.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0148",
+   "sentence": "The cancellation period for a distance contract, such as an online purchase, begins when the contract is entered into and ends 14 days after that day.",
+   "label": "contradicted",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0150",
+   "sentence": "Where a contract has become frustrated and sums were paid or payable to one party before the time of discharge, those sums are recoverable from the receiving party as money received for the use of the paying party.",
+   "label": "contradicted",
+   "error": "other"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0160",
+   "sentence": "The Commissioner may give a controller an enforcement notice if the Commissioner is satisfied that the controller has failed, or is failing, to comply with any of the provisions listed in sections 149(2) to 149(5A) of the Data Protection Act 2018.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0176",
+   "sentence": "Specifically, under section 23(1) of the Matrimonial Causes Act 1973, the court can order one or both parties to make such payments to the other, either as a lump sum or in periodic installments, for a specified term.",
+   "label": "unsupported",
+   "error": "other"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0187",
+   "sentence": "Any remaining allowance is then rounded up to the nearest multiple of £1.",
+   "label": "unsupported",
+   "error": "dropped_qualifier"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0194",
+   "sentence": "(2) If the Commissioners determine that the separation of business activities is not artificial, they may, under paragraph 2, treat the activities as carried on by a single taxable person.",
+   "label": "unsupported",
+   "error": "wrong_citation"
+  },
+  {
+   "cell": "4B-inject",
+   "id": "uk-concept-0208",
+   "sentence": "\"The auditor,\" in the context of a management audit, is defined as a person qualified under section 78(4).",
+   "label": "unsupported",
+   "error": "wrong_citation"
   }
  ]
 }

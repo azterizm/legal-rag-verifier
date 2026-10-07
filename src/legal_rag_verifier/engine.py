@@ -8,8 +8,8 @@ checks the sentence, and it is either committed or rolled back. A rolled-back se
 appended: the next call resubmits the committed prefix, which the backend still holds (HF: a
 ``DynamicCache`` truncated to it; SGLang: RadixAttention).
 
-Steering after a rollback is at decode level only; nothing is written into the context (plan
-decision 6):
+Steering after a rollback is at decode level (``allow``, ``ban``) or, with ``steering="inject"``,
+in the context:
 
 * **allow**: when the claim check rejects a figure, citation, instrument or modal and the premise
   has same-type values (:class:`~legal_rag_verifier.verifier.Repair`), decoding resumes at the
@@ -17,6 +17,13 @@ decision 6):
   from the backend's tokenizer). The rejected value is excluded by construction.
 * **ban**: otherwise, the sentence restarts with its rejected first token banned at that position.
   Bans accumulate per position.
+* **inject** (added 2026-10-07 on your go; it reverses plan decision 6 for this mode only): the
+  premise windows the verifier aligned the rejected sentence to are written into the context at the
+  rollback point (``inject_template``), and the sentence is regenerated from its start with no
+  constraint. The source stays in the context, where the backend caches it like any other prefix,
+  but never in the answer text; the trace records which windows went in and how many tokens. A
+  window is injected at most once per answer; a retry with no new window to inject falls back to a
+  ban.
 
 Each point is retried at most ``max_rollbacks`` times (default 3). A retry uses the allow-list when
 the rejected draft has a same-type repair, otherwise a ban; so a failed allow retry is followed by a
@@ -39,6 +46,7 @@ from legal_rag_verifier.verifier import SentenceVerdict, Verifier
 
 __all__ = [
     "DEFAULT_REFUSAL",
+    "INJECT_TEMPLATE",
     "SYSTEM_PROMPT",
     "Allow",
     "Answer",
@@ -55,6 +63,9 @@ Tokens = tuple[int, ...]
 FinishReason = Literal["stop", "length", "eos"]
 
 DEFAULT_REFUSAL = "I cannot state this point reliably from the provisions provided."
+#: How ``steering="inject"`` writes the aligned windows into the context, as plain text in the
+#: answer stream. A backend-specific template (a chat turn, with its special tokens) also works.
+INJECT_TEMPLATE = "\n\n(Source: {source})\n\n"
 SYSTEM_PROMPT = (
     "You answer questions about legislation using only the provisions below. State figures, "
     "dates, section numbers and the names of Acts exactly as the provisions give them. If the "
@@ -175,6 +186,30 @@ class _Draft:
 
 
 @dataclass
+class _Stream:
+    """The answer, and what the model sees after the prompt: the answer plus injected sources."""
+
+    answer: list[int] = field(default_factory=list)
+    context: list[int] = field(default_factory=list)
+    injected: set[int] = field(default_factory=set)  # windows already written into the context
+
+    def commit(self, tokens: Sequence[int]) -> None:
+        self.answer += tokens
+        self.context += tokens
+
+
+@dataclass
+class _Retry:
+    """Where a rolled-back point resumes: a kept seed, a constraint, or a source written first."""
+
+    seed: list[int]
+    constraint: Constraint | None
+    steering: str | None
+    note: list[int] = field(default_factory=list)
+    injection: dict[str, Any] | None = None
+
+
+@dataclass
 class _Point:
     """Every attempt at one sentence position, for the trace."""
 
@@ -182,6 +217,7 @@ class _Point:
     attempts: list[dict[str, Any]] = field(default_factory=list)
     bans: dict[int, set[int]] = field(default_factory=dict)
     rollbacks: int = 0  # discarded drafts; all but a refused point's last one were retried
+    injected: bool = False  # a source was written into the context for this point
 
 
 class InFlightGenerator:
@@ -194,11 +230,14 @@ class InFlightGenerator:
         *,
         max_rollbacks: int = 3,
         max_total_rollbacks: int = 8,
-        steering: Literal["allow", "ban"] = "allow",
+        steering: Literal["allow", "ban", "inject"] = "allow",
         refusal: str = DEFAULT_REFUSAL,
         max_new_tokens: int = 512,
         max_sentence_tokens: int = 160,
         system_prompt: str = SYSTEM_PROMPT,
+        inject_template: str = INJECT_TEMPLATE,
+        inject_windows: int = 2,
+        inject_max_tokens: int = 800,
     ) -> None:
         self.backend = backend
         self.verifier = verifier
@@ -209,6 +248,9 @@ class InFlightGenerator:
         self.max_new_tokens = max_new_tokens
         self.max_sentence_tokens = max_sentence_tokens
         self.system_prompt = system_prompt
+        self.inject_template = inject_template
+        self.inject_windows = inject_windows
+        self.inject_max_tokens = inject_max_tokens
 
     # ------------------------------------------------------------------ public API
     def messages(self, query: str, premise: Premise) -> list[dict[str, str]]:
@@ -219,34 +261,34 @@ class InFlightGenerator:
     def generate_verified(self, query: str, premise: Premise) -> Answer:
         t0 = time.perf_counter_ns()
         prompt = self.backend.chat(self.messages(query, premise))
-        answer: list[int] = []
+        stream = _Stream()
         carry: _Draft | None = None  # lookahead decoded past the last committed sentence
         points: list[dict[str, Any]] = []
         total_rollbacks = 0
         stop_reason: str | None = None
         while stop_reason is None:
-            point = _Point(len(answer))
-            seed = carry.lookahead if carry else []
+            point = _Point(len(stream.answer))
+            retry = _Retry(carry.lookahead if carry else [], None, None)
             end = carry.end if carry else None
-            constraint: Constraint | None = None
-            steering: str | None = None
             carry = None
             while True:
-                draft = self._draft(prompt, answer, seed, end, constraint)
+                draft = self._draft(prompt, stream, retry.seed, end, retry.constraint)
                 sentence = self.backend.decode(draft.tokens).strip()
                 if not sentence and point.rollbacks:  # the retry gave nothing: say so
-                    answer += self._refusal(answer)
+                    stream.commit(self._refusal(stream.answer))
                     points.append(self._close(point, "refused", self.refusal))
                     break
                 if not sentence:  # whitespace between sentences, or nothing at all
-                    answer += draft.tokens
+                    stream.commit(draft.tokens)
                     carry = draft
                     break
                 verdict = self.verifier.check_sentence(premise, sentence, query=query)
-                attempt = self._attempt(draft, verdict, steering, constraint, len(seed))
+                attempt = self._attempt(draft, verdict, retry)
                 point.attempts.append(attempt)
                 if verdict.emitted:
-                    answer += draft.tokens
+                    if point.injected:  # decoded after the source, not after the answer's text
+                        stream.answer += self._separator(stream.answer, draft.tokens)
+                    stream.commit(draft.tokens)
                     carry = draft
                     points.append(self._close(point, "emitted", sentence))
                     break
@@ -254,33 +296,36 @@ class InFlightGenerator:
                 total_rollbacks += 1
                 if self._refuses(point, total_rollbacks):
                     attempt["tokens_discarded"] = len(draft.tokens) + len(draft.lookahead)
-                    answer += self._refusal(answer)
+                    stream.commit(self._refusal(stream.answer))
                     points.append(self._close(point, "refused", self.refusal))
                     if total_rollbacks > self.max_total_rollbacks:
                         stop_reason = "rollback_budget"
                     break
-                seed, constraint, steering = self._steer(point, draft.tokens, verdict)
+                retry = self._steer(point, draft.tokens, verdict, premise, stream)
                 end = None
-                attempt["tokens_discarded"] = len(draft.tokens) + len(draft.lookahead) - len(seed)
+                kept = len(retry.seed)
+                attempt["tokens_discarded"] = len(draft.tokens) + len(draft.lookahead) - kept
             if stop_reason is None and carry is not None and carry.end and not carry.lookahead:
                 stop_reason = carry.end
-            if stop_reason is None and len(answer) >= self.max_new_tokens:
+            if stop_reason is None and len(stream.answer) >= self.max_new_tokens:
                 stop_reason = "length"
         return Answer(
-            self.backend.decode(answer).strip(),
-            self._trace(prompt, answer, points, stop_reason, time.perf_counter_ns() - t0),
+            self.backend.decode(stream.answer).strip(),
+            self._trace(prompt, stream.answer, points, stop_reason, time.perf_counter_ns() - t0),
         )
 
     # ------------------------------------------------------------------ decoding
     def _draft(
         self,
         prompt: Tokens,
-        answer: Sequence[int],
+        stream: _Stream,
         seed: Sequence[int],
         end: FinishReason | None,
         constraint: Constraint | None,
     ) -> _Draft:
-        """Decode from ``answer + seed`` until the segmenter confirms a sentence boundary."""
+        """Decode from the context + ``seed`` until the segmenter confirms a sentence boundary.
+
+        The token budget counts the answer only, not injected sources."""
         draft = _Draft(list(seed), [], end)
         while True:
             text = self.backend.decode(draft.tokens)
@@ -295,7 +340,7 @@ class InFlightGenerator:
                 return draft
             budget = min(
                 self.max_sentence_tokens - len(draft.tokens),
-                self.max_new_tokens - len(answer) - len(draft.tokens),
+                self.max_new_tokens - len(stream.answer) - len(draft.tokens),
             )
             if budget <= 0:
                 draft.end = "length"
@@ -303,7 +348,7 @@ class InFlightGenerator:
             # A trailing "." is undecided until the next token: peek one, not a whole sentence.
             peek = text.rstrip(" \t").endswith(".")
             segment = self.backend.extend(
-                (*prompt, *answer, *draft.tokens),
+                (*prompt, *stream.context, *draft.tokens),
                 stop=BOUNDARY_STOPS,
                 max_new=1 if peek else budget,
                 constraint=constraint,
@@ -328,19 +373,30 @@ class InFlightGenerator:
         point: _Point,
         tokens: Sequence[int],
         verdict: SentenceVerdict,
-    ) -> tuple[list[int], Constraint | None, str]:
-        """Where to resume after a rollback, and under which constraint."""
+        premise: Premise,
+        stream: _Stream,
+    ) -> _Retry:
+        """Where to resume after a rollback, and under which constraint (or after which source).
+
+        An injected source is written into ``stream.context`` here."""
         repair = verdict.repair
+        if self.steering == "inject":
+            note, windows = self._source(premise, verdict.aligned, stream.injected)
+            if note:
+                stream.injected.update(windows)
+                stream.context += note
+                point.injected = True
+                return _Retry([], None, "inject", note, {"windows": windows, "tokens": len(note)})
         if self.steering == "allow" and repair is not None and repair.mode == "allow":
             allowed = self._allow(tokens, repair.offset, repair.candidates, repair.rejected)
             if allowed is not None:
                 keep, sequences = allowed
-                return list(tokens[:keep]), Allow(sequences), "allow"
+                return _Retry(list(tokens[:keep]), Allow(sequences), "allow")
         # Ban: restart at the sentence's first non-space token with that token banned there.
         first = next((i for i, t in enumerate(tokens) if self.backend.decode([t]).strip()), 0)
         banned = point.bans.setdefault(first, set())
         banned.add(tokens[first])
-        return list(tokens[:first]), Ban(frozenset(banned)), "ban"
+        return _Retry(list(tokens[:first]), Ban(frozenset(banned)), "ban")
 
     def _allow(
         self,
@@ -367,6 +423,29 @@ class InFlightGenerator:
                 sequences.append(seq)
         return (keep, tuple(sequences)) if sequences else None
 
+    def _source(
+        self, premise: Premise, aligned: Sequence[int], injected: set[int]
+    ) -> tuple[list[int], list[int]]:
+        """The context tokens that write the aligned windows not yet injected, and their positions.
+
+        Each window is rendered as in the prompt; the source is cut at ``inject_max_tokens``."""
+        windows = [i for i in aligned if i not in injected][: self.inject_windows]
+        if not windows:
+            return [], []
+        passages = [premise.passages[i] for i in windows]
+        source = "\n\n".join(f"[{p.heading}]\n{p.text}" if p.heading else p.text for p in passages)
+        tokens = self.backend.encode(source)
+        if len(tokens) > self.inject_max_tokens:
+            source = self.backend.decode(tokens[: self.inject_max_tokens]).rstrip() + " …"
+        return list(self.backend.encode(self.inject_template.format(source=source))), windows
+
+    def _separator(self, answer: Sequence[int], tokens: Sequence[int]) -> list[int]:
+        """A space between the answer and a sentence decoded after an injected source, if needed."""
+        text, sentence = self.backend.decode(answer), self.backend.decode(tokens)
+        if text.strip() and not text[-1:].isspace() and not sentence[:1].isspace():
+            return list(self.backend.encode(" "))
+        return []
+
     def _refusal(self, answer: Sequence[int]) -> list[int]:
         text = self.backend.decode(answer)
         sep = " " if text.strip() and not text[-1:].isspace() else ""
@@ -377,16 +456,15 @@ class InFlightGenerator:
     def _attempt(
         draft: _Draft,
         verdict: SentenceVerdict,
-        steering: str | None,
-        constraint: Constraint | None,
-        seeded: int,
+        retry: _Retry,
     ) -> dict[str, Any]:
         return {
             "verdict": verdict.to_dict(),
-            "steering": steering,
-            "constraint": constraint.to_dict() if constraint else None,
+            "steering": retry.steering,
+            "constraint": retry.constraint.to_dict() if retry.constraint else None,
+            "injected": retry.injection,
             "tokens": len(draft.tokens),
-            "tokens_reused": seeded,
+            "tokens_reused": len(retry.seed),
             "tokens_discarded": 0,
             "decode_calls": draft.calls,
             "prefix_cache_hit_tokens": draft.hit_tokens,
@@ -427,6 +505,9 @@ class InFlightGenerator:
                 "steering": self.steering,
                 "refusal": self.refusal,
                 "max_new_tokens": self.max_new_tokens,
+                "inject_template": self.inject_template if self.steering == "inject" else None,
+                "inject_windows": self.inject_windows,
+                "inject_max_tokens": self.inject_max_tokens,
             },
             "prompt_tokens": len(prompt),
             "answer_tokens": len(answer),
@@ -437,6 +518,9 @@ class InFlightGenerator:
                 "rollbacks": sum(p["rollbacks"] for p in points),
                 "recovered_by_allow": sum(p["recovered_by"] == "allow" for p in points),
                 "recovered_by_ban": sum(p["recovered_by"] == "ban" for p in points),
+                "recovered_by_inject": sum(p["recovered_by"] == "inject" for p in points),
+                "injections": sum(a["injected"] is not None for a in attempts),
+                "tokens_injected": sum(a["injected"]["tokens"] for a in attempts if a["injected"]),
                 "tokens_discarded": sum(a["tokens_discarded"] for a in attempts),
                 "decode_calls": sum(a["decode_calls"] for a in attempts),
                 "prefix_cache_hit_tokens": sum(a["prefix_cache_hit_tokens"] for a in attempts),

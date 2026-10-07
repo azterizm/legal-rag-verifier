@@ -33,7 +33,13 @@ sys.path.insert(0, str(ROOT / "batteries/verifier"))
 
 from enrich_premises import ROUTER_URL, _key  # type: ignore[import-not-found]  # noqa: E402
 from grid_prompts import premise, rows  # type: ignore[import-not-found]  # noqa: E402
-from grid_score import CELLS, GRID, SEED, load  # type: ignore[import-not-found]  # noqa: E402
+from grid_score import (  # type: ignore[import-not-found]  # noqa: E402
+    ALL_CELLS,
+    CELLS,
+    GRID,
+    SEED,
+    load,
+)
 
 from legal_rag_verifier.engine import render_premise  # noqa: E402
 
@@ -126,7 +132,7 @@ def _answer_sha(answer: str) -> str:
 
 def run() -> None:
     by_id = {r["id"]: r for r in rows()}
-    items = [(cell, r) for cell in CELLS for r in load(cell).values()]
+    items = [(cell, r) for cell in ALL_CELLS for r in load(cell).values()]
     random.Random(SEED + 1).shuffle(items)  # noqa: S311 - a reproducible order, not a secret
     done: set[tuple[str, str, str]] = set()
     if OUT.exists():

@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT / "batteries/verifier"))
 from grid_judge import OUT as JUDGE  # type: ignore[import-not-found]  # noqa: E402
 from grid_judge import agreement  # noqa: E402
 from grid_prompts import rows  # type: ignore[import-not-found]  # noqa: E402
-from grid_score import CELLS, GRID, load  # type: ignore[import-not-found]  # noqa: E402
+from grid_score import ALL_CELLS, GRID, load  # type: ignore[import-not-found]  # noqa: E402
 
 from legal_rag_verifier.engine import DEFAULT_REFUSAL  # noqa: E402
 
@@ -36,7 +36,7 @@ def main() -> None:
     }
     cells: dict[str, Any] = {}
     misses: list[dict[str, Any]] = []
-    for cell in CELLS:
+    for cell in ALL_CELLS:
         records = load(cell)
         verdicts = [judged.get((cell, i)) for i in records]
         ok = [v for v in verdicts if v and v.get("verdict") in {"correct", "incorrect"}]

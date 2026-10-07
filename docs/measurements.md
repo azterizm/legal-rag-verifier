@@ -363,7 +363,7 @@ Raw: `results/grid/{4A,4B,4C,4D}.jsonl`, `summary.json`, `judge.jsonl`, `report.
 
 | | 4A Gemini retry | 4C Gemini continuation | 4D Qwen retry | 4B Qwen in-flight |
 |---|---:|---:|---:|---:|
-| Blind sample labels: correct (20 per cell) | 19 | 19 | 16 | 18 |
+| Blind sample labels (human; wording AI-assisted): correct (20 per cell) | 19 | 19 | 16 | 18 |
 | Judge `gpt-oss-120b-medium`: correct (103) | 83 (80.6 %) | 91 (88.3 %) | 81 (78.6 %) | 75 (72.8 %) |
 | Rule A pass (103) | 97.1 % | 97.1 % | 39.8 % | 45.6 % |
 | Detector: clean first draft / remediated / unresolved | 63 / 31 / 9 | 61 / 30 / 12 | 53 / 20 / 30 | 55 / 29 / 19 |
@@ -394,3 +394,59 @@ sentences the detector passed — dropped qualifier 23, wrong (sub-)citation 6, 
 2, other 10. Plus two systematic gaps the labels show: the detector never checks that a provision or Act named in
 the *query* exists in the premise (probes answered as if real), and refusals on answerable prompts come from
 false rollbacks exhausting 3 retries.
+
+## Injection A/B (stop 27, 2026-10-07; method in `docs/GRID.md`)
+
+A = 4B as run (allow-list, then ban). B = `4B-inject`: on a rollback, the windows the verifier aligned the rejected
+sentence to are written into the KV cache as a user turn (`turn` format, chosen on 40 dev prompts), and the
+sentence is regenerated. Same L4, Qwen 2.5 7B bf16, SGLang 0.5.21, 103 test prompts, auditor, and 3 retries.
+**Parity:** 4B re-run on 10 test prompts in a fresh container gave 10/10 identical answers to the stored run.
+Raw: `results/grid/4B-inject.jsonl`, `inject_ab.json`, `4B-parity.jsonl`, `dev/`.
+
+| Per rollback point | A: 4B (allow/ban) | B: 4B-inject |
+|---|---:|---:|
+| Claim check rejected: first retry passed | 11/40 (28 %) | **26/31 (84 %)** |
+| Claim check rejected: recovered / refused | 21 / 27 | 29 / 3 |
+| NLI rejected: first retry passed | 11/27 (41 %) | **19/25 (76 %)** |
+| NLI rejected: recovered / refused | 20 / 10 | 23 / 3 |
+| Answers with a refusal sentence | 19 | 3 |
+| Retries with a prefix-cache hit (prefix reused, only the source prefilled) | n/a | 56/56 |
+| Tokens injected per injection (median) | n/a | 196 |
+| Visible tokens discarded per answer (mean) | 67 | 33 |
+| Time to first output / wall-clock (median) | 3.8 s / 7.9 s | 3.8 s / 6.5 s |
+
+| Per answer (103) | A: 4B | B: 4B-inject | 4D (Qwen retry) |
+|---|---:|---:|---:|
+| Judge: correct | 75 (72.8 %) | **63 (61.2 %)** | 81 (78.6 %) |
+| Judge: answerable / abstention correct | 67/92 · 8/11 | 59/92 · 4/11 | 71/92 · 10/11 |
+| Judge: has an unsupported or contradicted sentence | 22 | **17** | 17 |
+| Judge: does not answer the question | 13 | **24** | 6 |
+| Rule A pass | 45.6 % | 37.9 % | 39.8 % |
+
+**What the A/B shows.**
+- **The mechanism works as designed.** Truncate, inject the flagged provision into the cache, regenerate: the
+  prefix is reused on every retry, and the cheap model's retry passes the auditor 2.5–3× as often. Refusals
+  almost disappear (37 → 6 points), and half as many tokens are thrown away.
+- **Faithful to the chunk, often literally.** 21 of 50 recovered sentences are ≥ 80 % verbatim from the statute
+  (5-word overlap), against 1 of 41 in A. 4 sentences are the injected heading copied back (`[Taxes Management Act
+  1970, section 36(1A) (…)]`; 2 counted as recoveries). A and 4D have none. The `note` format did this more (6 in
+  40 dev prompts).
+- **It optimises against the auditor, not the question.** The auditor checks that a sentence is grounded, not
+  that it answers the query. Given a provision, Qwen states *something true from it*, often a side limb: "(2)
+  Subsection (1) does not exempt…" for "FOI request refused cost exceeds limit"; "Subsection (2) has effect subject
+  to sections 832, 833A and 835" for "dividends only out of profits". Unsupported answers fall (22 → 17), but
+  answers that miss the question nearly double (13 → 24). On the 47 prompts where A and B differ, the judge passes
+  A on 29 and B on 16.
+- **Abstention is lost.** On the fictional-provision probes, A's refusals were correct abstentions (8/11). B
+  recovers instead of refusing, with a grounded but irrelevant sentence ("A penalty under this section is payable
+  to the regulator…"): 4/11. The refusal was doing the abstaining, and injection removes it.
+- Judge noise: of the 56 answers identical in A and B, the judge (temperature 0) gave the same verdict 49 times.
+  About 12 % of single verdicts flip on re-ask, so a gap of a few answers is not a difference. 12 answers is
+  beyond that; the off-topic count is consistent with the examples above.
+
+**Verdict on the goal "inject the right statutory chunk → even a cheap model is more faithful to it":**
+**holds**, measured at the auditor and by the judge's grounding labels. **Not yet production-ready as a whole**,
+because faithfulness to the chunk is not faithfulness to the question: the loop needs a relevance signal (the
+query restated in the injected turn, and/or a query-relevance check in the auditor) and an abstention rule (a
+point that needs injection on a probe naming a provision absent from the premise should refuse). Both are design
+changes to test on the dev split before a re-run.

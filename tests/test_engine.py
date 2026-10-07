@@ -8,6 +8,7 @@ from typing import Any
 
 from legal_rag_verifier.engine import (
     DEFAULT_REFUSAL,
+    INJECT_TEMPLATE,
     Allow,
     Ban,
     Constraint,
@@ -260,3 +261,65 @@ def test_failed_allow_retry_falls_back_to_ban_before_refusing() -> None:
     assert sentence["attempts"][1]["verdict"]["reasons"] == ["QUALIFIER_DROPPED"]
     assert sentence["rollbacks"] == 2
     assert sentence["recovered_by"] == "ban"
+
+
+# ---------------------------------------------------------------------- inject (stop 27)
+NOTE = INJECT_TEMPLATE.format(source="The limit of a compensatory award is £123,543.")
+
+
+def test_inject_writes_the_aligned_window_into_the_context_and_regenerates() -> None:
+    backend = ScriptedBackend(["The limit is £85,000.", NOTE + "The limit is £123,543."])
+    engine = InFlightGenerator(backend, Verifier(), steering="inject")
+    answer = engine.generate_verified(QUERY, PREMISE)
+    assert answer.text == "The limit is £123,543."  # the source is context, never answer text
+    sentence = answer.trace["sentences"][0]
+    assert [a["steering"] for a in sentence["attempts"]] == [None, "inject"]
+    assert sentence["attempts"][1]["injected"] == {"windows": [0], "tokens": len(NOTE)}
+    assert sentence["attempts"][1]["constraint"] is None
+    assert sentence["recovered_by"] == "inject"
+    totals = answer.trace["totals"]
+    assert (totals["injections"], totals["tokens_injected"]) == (1, len(NOTE))
+    assert totals["recovered_by_inject"] == 1
+    assert answer.trace["engine"]["inject_template"] == INJECT_TEMPLATE
+    # The retry resubmits the committed prefix plus the source: only the source is new.
+    retry = next(c for c in backend.calls if c[0] == len(backend.prompt) + len(NOTE))
+    assert retry[1] == len(backend.prompt)
+
+
+def test_inject_mid_answer_keeps_the_source_in_context_and_spaces_the_answer() -> None:
+    first = "The limit is £123,543."
+    scripts = [f"{first} The limit is £85,000.", f"{first}{NOTE}It applies to unfair dismissal."]
+    backend = ScriptedBackend(scripts)
+    answer = InFlightGenerator(backend, Verifier(), steering="inject").generate_verified(
+        QUERY, PREMISE
+    )
+    assert answer.text == f"{first} It applies to unfair dismissal."
+    assert [s["outcome"] for s in answer.trace["sentences"]] == ["emitted", "emitted"]
+    assert answer.trace["sentences"][1]["recovered_by"] == "inject"
+
+
+def test_a_window_is_injected_once_then_the_retry_falls_back_to_ban() -> None:
+    scripts = ["The limit is £85,000.", NOTE + "The limit is £85,000.", NOTE + "A limit applies."]
+    answer = InFlightGenerator(ScriptedBackend(scripts), Verifier(), steering="inject")
+    out = answer.generate_verified(QUERY, PREMISE)
+    sentence = out.trace["sentences"][0]
+    assert [a["steering"] for a in sentence["attempts"]] == [None, "inject", "ban"]
+    assert [a["injected"] for a in sentence["attempts"]][2] is None
+    assert out.text == "A limit applies."
+    assert sentence["recovered_by"] == "ban"
+
+
+def test_inject_with_no_window_to_inject_bans_instead() -> None:
+    backend = ScriptedBackend(["The limit is £85,000.", "A limit applies."])
+    engine = InFlightGenerator(backend, Verifier(), steering="inject")
+    answer = engine.generate_verified(QUERY, Premise.from_text(""))
+    assert answer.text == "A limit applies."
+    assert [a["steering"] for a in answer.trace["sentences"][0]["attempts"]] == [None, "ban"]
+    assert answer.trace["totals"]["injections"] == 0
+
+
+def test_other_modes_record_no_injection() -> None:
+    _, trace = generate(["The limit is £85,000.", "The limit is £123,543."], steering="ban")
+    assert all(a["injected"] is None for s in trace["sentences"] for a in s["attempts"])
+    assert trace["totals"]["injections"] == 0
+    assert trace["engine"]["inject_template"] is None

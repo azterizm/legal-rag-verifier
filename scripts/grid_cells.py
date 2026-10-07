@@ -243,6 +243,7 @@ def from_trace(answer: Any, wall_ns: int) -> dict[str, Any]:
         "tokens_out": generated,
         "tokens_in": trace["prompt_tokens"],
         "cached_tokens": totals["prefix_cache_hit_tokens"],
+        "tokens_injected": totals["tokens_injected"],
         "generation_ns": totals["decode_latency_ns"],
         "verify_ns": totals["claim_latency_ns"] + totals["nli_latency_ns"],
         "wall_ns": wall_ns,

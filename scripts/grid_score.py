@@ -36,7 +36,8 @@ from legal_rag_verifier.engine import DEFAULT_REFUSAL, render_premise  # noqa: E
 from legal_rag_verifier.verifier import Reason, Verifier  # noqa: E402
 
 GRID = ROOT / "results/grid"
-CELLS = ("4A", "4B", "4C", "4D")
+CELLS = ("4A", "4B", "4C", "4D")  # the 2x2 grid; the blind sample was drawn from these
+ALL_CELLS = (*CELLS, "4B-inject")  # + stop 27: the injection arm, scored and judged alike
 UNGROUNDED = {
     Reason.UNGROUNDED_FIGURE,
     Reason.UNGROUNDED_CITATION,
@@ -214,7 +215,7 @@ def main() -> None:
     by_id = {r["id"]: r for r in rows()}
     checker = Verifier()  # claim check only: rule A does not use the NLI head
     scored: dict[str, list[dict[str, Any]]] = {}
-    for cell in CELLS:
+    for cell in ALL_CELLS:
         records = list(load(cell).values())
         for r in records:
             r["score"] = rule_a(by_id[r["id"]], r["answer"], checker)
@@ -223,7 +224,7 @@ def main() -> None:
     (GRID / "summary.json").write_text(json.dumps(summary, indent=1) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=1))
     if args.sample:
-        sample(scored, by_id)
+        sample({c: scored[c] for c in CELLS if c in scored}, by_id)
 
 
 if __name__ == "__main__":

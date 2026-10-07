@@ -14,15 +14,27 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-06 |
+| Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Your call: adjudication, judge v2, detector refinement on dev (stop 25) |
-| Waiting on you | Label provenance; adjudicate 12 judge/label disagreements or not; refinement go. Vault 02 |
+| Next step | Your call (stop 27): injection v2 on dev (query in the injected turn, relevance + abstention rule), or the PoC verdict doc as is |
+| Waiting on you | Injection v2 go (paid: Modal L4 + judge calls) or not; vault 02 |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (27): **Injection A/B built and run (your go).** `steering="inject"` (engine, trace fields, 5
+  tests; reverses plan decision 6 for that mode). Format chosen on 40 dev prompts (`turn`; `note` leaked the source
+  into answers). Parity 10/10 identical. Result: per rollback point, first retry passes 84 % vs 28 % (claim check)
+  and 76 % vs 41 % (NLI), refusals 37 → 6, prefix reused on 56/56 retries. But the judge: 61 % correct vs 73 %, with
+  off-topic answers 13 → 24 and abstention 8/11 → 4/11. The regenerated sentence is faithful to the chunk, not to
+  the question. Write-up: `docs/measurements.md` § Injection A/B. ⛔ Next: your call on v2 (query in the injected
+  turn + relevance/abstention rule, on dev first) vs the PoC verdict doc as is.
+
+- 2026-10-07 (26): **Goal restated (yours):** the project proves whether the in-flight architecture holds as a
+  production PoC; accuracy on the operating data is not the target, and imperfect data does not matter. Labels
+  are human (wording AI-assisted). No adjudication or accuracy tuning unless it changes an architecture verdict.
 
 - 2026-10-07 (25): **Labels in, judge run (412 calls), results written; ⛔ next steps.** Labels: 72/80 correct.
   Judge vs labels 85 %, κ 0.375 → not the headline (rule set before the run); rule A fails Qwen on citing habit.
