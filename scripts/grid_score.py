@@ -37,7 +37,7 @@ from legal_rag_verifier.verifier import Reason, Verifier  # noqa: E402
 
 GRID = ROOT / "results/grid"
 CELLS = ("4A", "4B", "4C", "4D")  # the 2x2 grid; the blind sample was drawn from these
-ALL_CELLS = (*CELLS, "4B-inject")  # + stop 27: the injection arm, scored and judged alike
+ALL_CELLS = (*CELLS, "4B-inject", "4B-inject-v2")  # + stops 27 and 30: injection arms, alike
 UNGROUNDED = {
     Reason.UNGROUNDED_FIGURE,
     Reason.UNGROUNDED_CITATION,

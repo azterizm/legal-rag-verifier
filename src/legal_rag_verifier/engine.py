@@ -23,7 +23,7 @@ in the context:
   constraint. The source stays in the context, where the backend caches it like any other prefix,
   but never in the answer text; the trace records which windows went in and how many tokens. A
   window is injected at most once per answer; a retry with no new window to inject falls back to a
-  ban.
+  ban. The template may also name ``{query}``, filled with the question (injection v2, stop 30).
 
 Each point is retried at most ``max_rollbacks`` times (default 3). A retry uses the allow-list when
 the rejected draft has a same-type repair, otherwise a ban; so a failed allow retry is followed by a
@@ -301,7 +301,7 @@ class InFlightGenerator:
                     if total_rollbacks > self.max_total_rollbacks:
                         stop_reason = "rollback_budget"
                     break
-                retry = self._steer(point, draft.tokens, verdict, premise, stream)
+                retry = self._steer(point, draft.tokens, verdict, premise, stream, query=query)
                 end = None
                 kept = len(retry.seed)
                 attempt["tokens_discarded"] = len(draft.tokens) + len(draft.lookahead) - kept
@@ -375,13 +375,15 @@ class InFlightGenerator:
         verdict: SentenceVerdict,
         premise: Premise,
         stream: _Stream,
+        *,
+        query: str = "",
     ) -> _Retry:
         """Where to resume after a rollback, and under which constraint (or after which source).
 
         An injected source is written into ``stream.context`` here."""
         repair = verdict.repair
         if self.steering == "inject":
-            note, windows = self._source(premise, verdict.aligned, stream.injected)
+            note, windows = self._source(premise, verdict.aligned, stream.injected, query=query)
             if note:
                 stream.injected.update(windows)
                 stream.context += note
@@ -424,13 +426,14 @@ class InFlightGenerator:
         return (keep, tuple(sequences)) if sequences else None
 
     def _source(
-        self, premise: Premise, aligned: Sequence[int], injected: set[int]
+        self, premise: Premise, aligned: Sequence[int], injected: set[int], *, query: str = ""
     ) -> tuple[list[int], list[int]]:
         """Context tokens that write the aligned windows not yet injected, and their positions."""
         source, windows = self._source_text(premise, aligned, injected)
         if not windows:
             return [], []
-        return list(self.backend.encode(self.inject_template.format(source=source))), windows
+        text = self.inject_template.format(source=source, query=query)
+        return list(self.backend.encode(text)), windows
 
     def _source_text(
         self, premise: Premise, aligned: Sequence[int], injected: set[int]

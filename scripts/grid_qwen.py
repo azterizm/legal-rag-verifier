@@ -9,6 +9,8 @@ aligned windows are written into the context and the sentence is regenerated. Tw
 them were tried on the dev split before the test run: ``note`` (plain text in the answer stream,
 the engine default) and ``turn`` (a user turn in Qwen's chat format, then a new assistant turn);
 cells ``4B-inject-note`` / ``4B-inject-turn``. ``INJECT_STYLE`` is the one chosen there.
+``4B-inject-v2`` (stop 30) uses the ``v2`` turn; its router gate is applied before this runs
+(``grid_cells.gated``).
 """
 
 from __future__ import annotations
@@ -45,6 +47,12 @@ INJECT = {
         "<|im_end|>\n<|im_start|>user\nThe provision for your next point:\n{source}\n\n"
         + CONTINUE
         + "<|im_end|>\n<|im_start|>assistant\n"
+    ),
+    # stop 30, injection v2: positive wording, the question restated, no rejected sentence
+    "v2": (
+        '<|im_end|>\n<|im_start|>user\nThe provision relevant to the question "{query}":\n'
+        "{source}\n\nContinue your answer to the question from exactly where it stops."
+        "<|im_end|>\n<|im_start|>assistant\n"
     ),
 }
 INJECT_STYLE = "turn"  # chosen on the dev pilot (docs/GRID.md, stop 27), before the test run

@@ -100,7 +100,7 @@ files = ["src", "tests", "scripts", "batteries"]
 exclude = ["^uk_scrap_data/", "^data/", "^batteries/router/", "^scripts/modal_m4\\.py$"]  # modal_m4 runs under `uv run --with modal`
 
 [[tool.mypy.overrides]]
-module = ["torch", "torch.*", "transformers", "transformers.*", "sglang", "sglang.*", "modal", "huggingface_hub"]
+module = ["torch", "torch.*", "transformers", "transformers.*", "sglang", "sglang.*", "modal", "huggingface_hub", "legal_rag_router"]
 ignore_missing_imports = true
 
 # ---------------------------------------------------------------- tests

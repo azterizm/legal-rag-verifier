@@ -197,3 +197,37 @@ as none. Nothing here changes the engine or the auditor, and no choice is made o
   attention results carry that caveat (`docs/measurements.md`). The raw SGLang output (`replay/sglang.jsonl`) holds
   the prompt token ids, which encode statute text from `data/`; it is git-ignored and `replay/arms.jsonl` is kept
   without them. A report bug that merged two span medians under one name was fixed before the write-up.
+
+## Stop 30: injection v2 (method fixed 2026-10-07, before any run)
+
+**Question.** Stop 27 showed the inserted provision makes the retry faithful to the provision but not to the
+question (judge 63/103 correct against 75 for 4B; off-topic answers 13 → 24; abstention 8/11 → 4/11). Do two
+changes, neither of which adds a rejection reason to the auditor, recover the question while keeping the gain?
+
+- **Change 1, the inserted turn.** Positive wording only, with the question restated and no reference to the
+  rejected sentence: user turn `The provision relevant to the question "{query}":\n{source}\n\nContinue your
+  answer to the question from exactly where it stops.`, then a new assistant turn. (v1: `The provision for your
+  next point:\n{source}\n\nContinue your answer from exactly where it stops, without repeating any of it.`) The
+  engine's `inject_template` gains an optional `{query}` placeholder for this.
+- **Change 2, the abstention gate.** The released `legal-rag-router` 0.1.0 runs on every query before generation
+  (`scripts/grid_routes.py`, its own index, snapshot 2026-09-28). A query it refuses (`next_action = REFUSE`) is
+  answered with the router's message and never reaches generation; every other status goes to generation with the
+  prompt's premise as before. Its statuses were recorded before this run: test 11/103 refused (exactly the 11
+  abstention probes), dev 0/112; all 215 equal the battery's expected labels. The gate is deterministic, so on
+  these prompts it decides abstention by construction; the result is reported with and without the 11 probes.
+- Everything else is 4B-inject as run: L4, Qwen 2.5 7B bf16, SGLang 0.5.21, the auditor, 3 retries per point,
+  8 per answer, at most 2 windows per injection cut at 800 tokens, cache flushed per answer. Cell `4B-inject-v2`.
+
+**Dev pilot first** (the first 40 dev prompts, as in stop 27). Run v2 and judge v1 (`dev/4B-inject-turn`) and
+v2 with the same judge and prompt (80 calls). The test run goes ahead only if on dev v2 has at least as many
+answers judged to address the question and judged correct as v1, and its first retry passes at least 70 % of
+rollback points. 40 prompts is a sanity check, not a test of significance. If it fails, stop 30 ends there and
+is reported; the wording is not tuned further.
+
+**Test** (103 prompts, then the judge on the 103 v2 answers, same blind protocol). Reported against 4B, 4B-inject
+and 4D: judge correct (all, answerable, abstention), answers judged not to address the question, answers with an
+unsupported sentence, first-retry pass and refusals per rollback point, answers ending right after an inserted
+retry, time to first output and wall time. **Reading, set before the run:** if v2 is judged correct on at least
+75 of 103 (72 %) and abstains correctly on at least 8 of 11, the verdict becomes "the full loop holds end to end";
+otherwise the verdict stands as written and injection work stops for 0.1.0. Judge noise (49/56 repeat agreement)
+means a gap under about 10 answers is not a difference.

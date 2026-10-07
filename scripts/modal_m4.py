@@ -165,6 +165,7 @@ def grid(
     """``--split dev`` writes under results/grid/dev/; ``--tag`` suffixes the file name (a
     re-run of a cell that already has results, e.g. ``--cells 4B --limit 10 --tag=-parity``)."""
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    from grid_cells import gated  # noqa: PLC0415
     from grid_gemini import OUT, done_ids  # noqa: PLC0415
     from grid_prompts import premise, rows  # noqa: PLC0415
 
@@ -176,6 +177,14 @@ def grid(
     for cell in cells.split(","):
         path = out / f"{cell}{tag}.jsonl"
         todo = [r for r in selected if r["id"] not in done_ids(path)]
+        if cell == "4B-inject-v2":  # stop 30: the router's refusals never reach generation
+            routes = json.loads((ROOT / f"batteries/grid/routes-{split}.json").read_text())
+            refused = [r for r in todo if routes[r["id"]]["next_action"] == "REFUSE"]
+            with path.open("a", encoding="utf-8") as f:
+                for r in refused:
+                    record = {"cell": cell, "id": r["id"], "generator": "legal-rag-router 0.1.0"}
+                    f.write(json.dumps({**record, **gated(routes[r["id"]])}) + "\n")
+            todo = [r for r in todo if r not in refused]
         for start in range(0, len(todo), chunk):
             items = [(r["id"], r["query"], premise(r)) for r in todo[start : start + chunk]]
             records = runner.run.remote(cell, items)

@@ -17,12 +17,23 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Your call: vault corrections, injection v2, or the 0.1.0 release |
-| Waiting on you | Next direction; vault corrections; release go |
+| Next step | Injection v2 (stop 30): dev pilot, then test + judge if the dev rule passes; then the 0.1.0 release (⛔ before anything leaves the machine) |
+| Waiting on you | Release targets confirmed before push / tag / PyPI |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (32): **Vault corrections done; injection v2 built, not run (your go on vault, v2, release).**
+  - Vault (edited in place, not committed; your own uncommitted vault edits were left as they were): 04 §2/§3/§7
+    (three retries; one request per sentence, no abort; measured verify 312 ms p50 per sentence, resubmit 117/69 ms,
+    the < 30 ms targets withdrawn; NLI label order 0 contradiction / 1 entailment / 2 neutral read from id2label;
+    base model; provision insertion results); 05 (`max_rollbacks=3`, instrument title from
+    `Router.index.info(instrument_id).title`, flowchart latency); 07 §5/§8 (measured grid, insertion cell, targets
+    replaced). 02 needs no change: router 0.1.0 already exposes the title.
+  - v2 (`docs/GRID.md` § Stop 30): positive inserted turn with the question restated (`inject_template` gains an
+    optional `{query}`), and the released router as an abstention gate (statuses recorded first: test 11/103
+    refused, dev 0/112, all equal to the expected labels). Dev pilot rule and test reading fixed before any run.
 
 - 2026-10-07 (31): **Stop 29 run and written up (your go, R4 in).** 46/47 states passed parity. First retry passed:
   R1 (inserted at the cut point) 39, R2 (cache emptied) 39, R0 (A's retry) 18, R3 (provision at the top) 17,

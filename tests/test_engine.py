@@ -264,7 +264,8 @@ def test_failed_allow_retry_falls_back_to_ban_before_refusing() -> None:
 
 
 # ---------------------------------------------------------------------- inject (stop 27)
-NOTE = INJECT_TEMPLATE.format(source="The limit of a compensatory award is £123,543.")
+NOTE_SOURCE = "The limit of a compensatory award is £123,543."
+NOTE = INJECT_TEMPLATE.format(source=NOTE_SOURCE)
 
 
 def test_inject_writes_the_aligned_window_into_the_context_and_regenerates() -> None:
@@ -284,6 +285,16 @@ def test_inject_writes_the_aligned_window_into_the_context_and_regenerates() -> 
     # The retry resubmits the committed prefix plus the source: only the source is new.
     retry = next(c for c in backend.calls if c[0] == len(backend.prompt) + len(NOTE))
     assert retry[1] == len(backend.prompt)
+
+
+def test_inject_template_may_restate_the_query() -> None:
+    template = "\n[{query}] {source}\n"
+    note = template.format(query=QUERY, source=NOTE_SOURCE)
+    backend = ScriptedBackend(["The limit is £85,000.", note + "The limit is £123,543."])
+    engine = InFlightGenerator(backend, Verifier(), steering="inject", inject_template=template)
+    answer = engine.generate_verified(QUERY, PREMISE)
+    assert answer.text == "The limit is £123,543."
+    assert answer.trace["sentences"][0]["attempts"][1]["injected"]["tokens"] == len(note)
 
 
 def test_inject_mid_answer_keeps_the_source_in_context_and_spaces_the_answer() -> None:

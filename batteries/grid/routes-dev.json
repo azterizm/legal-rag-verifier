@@ -1,0 +1,898 @@
+{
+ "uk-concept-0001": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 25333,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0002": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 10833,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0003": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 8125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0007": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6875,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0008": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0010": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7500,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0013": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6417,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0015": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0020": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 72458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0025": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7834,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0028": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0029": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6709,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0030": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0032": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6542,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0034": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0037": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5917,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0038": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6708,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0040": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6083,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0041": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0043": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5750,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0044": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0045": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6459,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0047": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6000,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0048": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6500,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0049": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5500,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0050": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5750,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0051": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0053": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6291,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0056": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5791,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0057": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6417,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0061": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0062": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5250,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0063": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 851250,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0064": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7708,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0066": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6750,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0067": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6333,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0071": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6166,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0073": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0074": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6208,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0075": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6292,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0077": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 506625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0078": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 8042,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0081": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6708,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0082": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6291,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0087": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5875,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0088": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0089": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6541,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0093": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6792,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0094": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0095": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0096": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6750,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0097": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 10017000,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0098": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0102": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6083,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0103": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5709,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0105": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0106": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6042,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0108": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0111": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6250,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0112": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5708,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0114": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 150625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0117": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 463708,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0118": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6542,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0120": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5833,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0121": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5875,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0122": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6875,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0123": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0124": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6208,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0125": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0128": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5667,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0130": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6333,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0131": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0132": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0133": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6542,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0134": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 1594458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0137": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7209,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0139": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0140": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6083,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0141": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5542,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0143": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5750,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0144": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0146": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6084,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0151": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5875,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0156": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5417,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0159": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0162": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5667,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0163": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5708,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0164": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6000,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0167": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0169": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0171": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 8933958,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0172": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7934792,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0173": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 1721083,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0174": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 8083,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0175": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0177": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6292,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0178": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6625,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0179": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0180": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5541,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0182": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 435458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0183": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7042,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0184": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5958,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0189": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6125,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0190": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5666,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0192": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5458,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0193": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5750,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0195": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6000,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0196": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 5541,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0197": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 190166,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0199": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 7166,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0201": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6167,
+  "expected": "ROUTE_UNRESOLVED"
+ },
+ "uk-concept-0202": {
+  "status": "ROUTE_UNRESOLVED",
+  "next_action": "DISCOVER_THEN_BIND",
+  "messages": [],
+  "index_snapshot": "2026-09-28",
+  "latency_ns": 6708,
+  "expected": "ROUTE_UNRESOLVED"
+ }
+}

@@ -8,6 +8,7 @@ blind human labels.
 
   uv run python scripts/grid_judge.py            # every final answer → results/grid/judge.jsonl
   uv run python scripts/grid_judge.py --agreement results/grid/review_labels.csv
+  uv run python scripts/grid_judge.py --split dev --cells 4B-inject-turn 4B-inject-v2   # stop 30
 
 Resumable: answers already judged (same cell, id and answer text) are skipped.
 """
@@ -130,13 +131,23 @@ def _answer_sha(answer: str) -> str:
     return hashlib.sha256(answer.encode()).hexdigest()
 
 
-def run() -> None:
-    by_id = {r["id"]: r for r in rows()}
-    items = [(cell, r) for cell in ALL_CELLS for r in load(cell).values()]
+def _load(cell: str, split: str) -> dict[str, dict[str, Any]]:
+    if split == "test":
+        loaded: dict[str, dict[str, Any]] = load(cell)
+        return loaded
+    path = GRID / split / f"{cell}.jsonl"
+    records = (json.loads(x) for x in path.read_text(encoding="utf-8").splitlines())
+    return {r["id"]: r for r in records}
+
+
+def run(split: str = "test", cells: tuple[str, ...] = ALL_CELLS) -> None:
+    by_id = {r["id"]: r for r in rows(split)}
+    out = OUT if split == "test" else GRID / split / "judge.jsonl"
+    items = [(cell, r) for cell in cells for r in _load(cell, split).values()]
     random.Random(SEED + 1).shuffle(items)  # noqa: S311 - a reproducible order, not a secret
     done: set[tuple[str, str, str]] = set()
-    if OUT.exists():
-        for line in OUT.read_text(encoding="utf-8").splitlines():
+    if out.exists():
+        for line in out.read_text(encoding="utf-8").splitlines():
             j = json.loads(line)
             done.add((j["cell"], j["id"], j["answer_sha256"]))
     for n, (cell, r) in enumerate(items, 1):
@@ -152,7 +163,7 @@ def run() -> None:
             "prompt_sha256": PROMPT_SHA,
             **verdict,
         }
-        with OUT.open("a", encoding="utf-8") as f:
+        with out.open("a", encoding="utf-8") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
         print(f"{n}/{len(items)} {cell} {r['id']}: {verdict.get('verdict')}", flush=True)
 
@@ -195,11 +206,13 @@ def agreement(labels_path: Path) -> dict[str, Any]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--agreement", type=Path, default=None)
+    parser.add_argument("--split", choices=["test", "dev"], default="test")
+    parser.add_argument("--cells", nargs="+", default=list(ALL_CELLS))
     args = parser.parse_args()
     if args.agreement:
         print(json.dumps(agreement(args.agreement), indent=1))
     else:
-        run()
+        run(args.split, tuple(args.cells))
 
 
 if __name__ == "__main__":

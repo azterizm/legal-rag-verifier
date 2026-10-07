@@ -254,6 +254,36 @@ def from_trace(answer: Any, wall_ns: int) -> dict[str, Any]:
     }
 
 
+def gated(route: dict[str, Any]) -> dict[str, Any]:
+    """Injection v2 (stop 30): a query the router refuses is answered with its message, in the
+    grid's record shape, without generation."""
+    zeros = ("rollbacks", "refused", "injections", "tokens_injected", "tokens_discarded")
+    return {
+        "answer": " ".join(route["messages"]),
+        "resolved": True,
+        "retries": 0,
+        "refusals": 0,
+        "tokens_discarded": 0,
+        "time_to_first_output_ns": route["latency_ns"],
+        "calls": 0,
+        "tokens_out": 0,
+        "tokens_in": 0,
+        "cached_tokens": 0,
+        "tokens_injected": 0,
+        "generation_ns": 0,
+        "verify_ns": 0,
+        "wall_ns": route["latency_ns"],
+        "decode_tok_s": None,
+        "trace": {
+            "gate": route,
+            "prompt_tokens": 0,
+            "sentences": [],
+            "totals": dict.fromkeys(zeros, 0),
+            "stop_reason": "router_refused",
+        },
+    }
+
+
 def in_flight(engine: InFlightGenerator, query: str, premise: Premise) -> dict[str, Any]:
     t0 = time.perf_counter_ns()
     answer = engine.generate_verified(query, premise)
