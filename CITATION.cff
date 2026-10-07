@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use legal-rag-verifier or its evaluation, please cite it as below."
+type: software
+title: "legal-rag-verifier: sentence-level verification with KV-cache rollback for legal RAG"
+abstract: >-
+  A verifier that checks each sentence of a legal RAG answer against the supplied statutory
+  provisions while the model generates: a deterministic claim check and a DeBERTa-v3 NLI head.
+  A rejected sentence is rolled back on the inference server's prefix cache and regenerated,
+  optionally with the provision inserted at the cut point.
+authors:
+  - given-names: Abdullah
+    family-names: Memon
+    email: abdullah@memonsystems.com
+    affiliation: Memon Systems Ltd
+version: 0.1.0
+license: AGPL-3.0-only
+repository-code: "https://github.com/azterizm/legal-rag-verifier"
+url: "https://memonsystems.com"
+keywords:
+  - legal
+  - retrieval-augmented generation
+  - hallucination
+  - natural language inference
+  - kv-cache
