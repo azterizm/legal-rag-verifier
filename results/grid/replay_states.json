@@ -1,0 +1,461 @@
+{
+ "paired": {
+  "states": 48,
+  "a_first_retry_passed": 19,
+  "b_first_retry_passed": 39,
+  "both": 18,
+  "only_a": 1,
+  "only_b": 21,
+  "neither": 8,
+  "b_retries_injected": 47,
+  "mcnemar_p": 1.1e-05
+ },
+ "diverged_before_first_rollback": [],
+ "downstream": {
+  "A": {
+   "sentences": 65,
+   "first_draft_passed": 35
+  },
+  "B": {
+   "sentences": 41,
+   "first_draft_passed": 31
+  }
+ },
+ "rebuild": {
+  "prompt_length_matches": "48/48",
+  "committed_round_trip": "48/48",
+  "injected_source_length_matches": "47/47",
+  "cache_hit_matches_prompt_plus_committed": "46/46"
+ },
+ "states": [
+  {
+   "id": "uk-concept-0005",
+   "prompt_tokens": 1190,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0016",
+   "prompt_tokens": 396,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0017",
+   "prompt_tokens": 830,
+   "prompt_ok": true,
+   "committed_tokens": 51,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0018",
+   "prompt_tokens": 2173,
+   "prompt_ok": true,
+   "committed_tokens": 23,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0019",
+   "prompt_tokens": 940,
+   "prompt_ok": true,
+   "committed_tokens": 208,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0024",
+   "prompt_tokens": 340,
+   "prompt_ok": true,
+   "committed_tokens": 36,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0027",
+   "prompt_tokens": 395,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0031",
+   "prompt_tokens": 777,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0033",
+   "prompt_tokens": 420,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0046",
+   "prompt_tokens": 137,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0052",
+   "prompt_tokens": 1520,
+   "prompt_ok": true,
+   "committed_tokens": 107,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0058",
+   "prompt_tokens": 713,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0060",
+   "prompt_tokens": 1114,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0065",
+   "prompt_tokens": 1062,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0069",
+   "prompt_tokens": 705,
+   "prompt_ok": true,
+   "committed_tokens": 42,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0079",
+   "prompt_tokens": 1014,
+   "prompt_ok": true,
+   "committed_tokens": 82,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0086",
+   "prompt_tokens": 788,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0104",
+   "prompt_tokens": 963,
+   "prompt_ok": true,
+   "committed_tokens": 56,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0107",
+   "prompt_tokens": 471,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0109",
+   "prompt_tokens": 289,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0110",
+   "prompt_tokens": 849,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0129",
+   "prompt_tokens": 599,
+   "prompt_ok": true,
+   "committed_tokens": 40,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0136",
+   "prompt_tokens": 1098,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0138",
+   "prompt_tokens": 1557,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0148",
+   "prompt_tokens": 968,
+   "prompt_ok": true,
+   "committed_tokens": 31,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0150",
+   "prompt_tokens": 1004,
+   "prompt_ok": true,
+   "committed_tokens": 41,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0154",
+   "prompt_tokens": 591,
+   "prompt_ok": true,
+   "committed_tokens": 49,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0155",
+   "prompt_tokens": 488,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0157",
+   "prompt_tokens": 1070,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0160",
+   "prompt_tokens": 1131,
+   "prompt_ok": true,
+   "committed_tokens": 61,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0161",
+   "prompt_tokens": 1734,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0166",
+   "prompt_tokens": 535,
+   "prompt_ok": true,
+   "committed_tokens": 53,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0168",
+   "prompt_tokens": 409,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0185",
+   "prompt_tokens": 443,
+   "prompt_ok": true,
+   "committed_tokens": 44,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0191",
+   "prompt_tokens": 792,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0194",
+   "prompt_tokens": 4803,
+   "prompt_ok": true,
+   "committed_tokens": 67,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0198",
+   "prompt_tokens": 14098,
+   "prompt_ok": true,
+   "committed_tokens": 66,
+   "round_trip_ok": true,
+   "note_ok": true
+  },
+  {
+   "id": "uk-concept-0200",
+   "prompt_tokens": 2548,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0204",
+   "prompt_tokens": 1944,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0205",
+   "prompt_tokens": 1227,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0206",
+   "prompt_tokens": 302,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0207",
+   "prompt_tokens": 102,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true
+  },
+  {
+   "id": "uk-concept-0208",
+   "prompt_tokens": 8227,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0209",
+   "prompt_tokens": 6130,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0210",
+   "prompt_tokens": 567,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0211",
+   "prompt_tokens": 803,
+   "prompt_ok": true,
+   "committed_tokens": 86,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0214",
+   "prompt_tokens": 1405,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  },
+  {
+   "id": "uk-concept-0215",
+   "prompt_tokens": 602,
+   "prompt_ok": true,
+   "committed_tokens": 0,
+   "round_trip_ok": true,
+   "note_ok": true,
+   "cache_hit_ok": true
+  }
+ ]
+}

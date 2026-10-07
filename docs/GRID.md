@@ -127,3 +127,67 @@ the half of the architecture goal the grid did not test (plan decision 6 had not
   the same verdict on 49 (temperature 0 is not deterministic on the router). This is reported with the A/B as judge
   noise. The A/B's success rule was met on the primary measure, but the judge shows a loss in answer relevance.
   Both are reported (`docs/measurements.md` § Injection A/B).
+
+## Stop 29: where the provision goes, and what it does to attention (method fixed 2026-10-07, before any run)
+
+**Questions.** (1) Does inserting the provision at the cut point help because of its position, its content, or
+the cache? (2) Does the inserted provision draw more of the model's attention, and does it make the rejected
+sentence less likely and the regenerated one more likely? The stop 27 A/B left both open: the provisions were
+already in the system prompt, and attention was not read.
+
+**States.** A (4B) and B (4B-inject) run the same engine until the first rollback, so in every answer with a
+rollback both reach the first rollback point with the same committed text and the same rejected draft (48 answers,
+none diverged; `scripts/replay_states.py`). Already measured on these states, from the stop 27 traces: first retry
+passed 19/48 in A and 39/48 in B (both 18, only A 1, only B 21; exact McNemar p = 1.1e-5). B inserted a provision on
+47 of the 48; the new arms use those 47. The states are rebuilt from the traces with the generator's tokenizer and
+checked against them: prompt length 48/48, committed text round trip 48/48, inserted source length 47/47, and the
+prefix-cache hit of B's retry equals prompt + committed answer on all 46 retries checkable that way.
+
+**Arms** (same container, model, auditor and decoding as stop 27; one first retry per state, then 2 follow-on
+sentences decoded with no rollback and each audited):
+
+| Arm | From the shared state | Isolates |
+|---|---|---|
+| R0 | A's recorded retry replayed (its allow-list or ban, as recorded) | the stop 27 control |
+| R1 | B's retry: provision inserted at the cut point as a user turn, cache warm | the mechanism |
+| R2 | R1's exact tokens, cache flushed first | the cache: same output expected, time differs |
+| R3 | the same provision text placed at the top, after the query in the user turn; the committed answer re-prefilled after it | position |
+| R4 | R1's turn with no provision (the turn break and the continue line only) | content |
+
+- **Parity first.** For each state the first draft is decoded again and compared with the recorded rejected draft;
+  a state that differs is dropped and counted. R0 and R1 are compared with the recorded retries.
+- **Primary measure.** First-retry pass by the auditor, paired per state, exact McNemar: R1 against R3 (position),
+  R1 against R4 (content). R2 against R1: identical text on every state, and the time of the first decode call.
+- **Secondary.** First-draft pass of the 2 follow-on sentences per arm (rates; small sample).
+
+**Attention and likelihood** (Hugging Face transformers, eager attention, bf16, same revision, on the L4; the
+recorded tokens are fed in, nothing is generated). Per state, with S = R1's regenerated sentence, X = the rejected
+draft, N = the follow-on sentence after S:
+
+| Measure | Compared |
+|---|---|
+| Share of attention from S's tokens to provision text: the original windows in the system prompt, the inserted copy, and the other windows | S after the inserted turn against S with no inserted turn; S with the provision at the top (R3) |
+| log P(S) | with against without the inserted turn |
+| log P(X) | with against without the inserted turn |
+| The same attention share for N | with against without the inserted turn |
+
+- Attention share = attention weight to the span over all attention except to the first token (which takes
+  attention whatever it holds), averaged over heads and over the sentence's tokens; reported for all layers (primary)
+  and for layers 0–8, 9–18 and 19–27.
+- Tests: two-sided exact sign test over states. The five primary comparisons (R1–R3, R1–R4, attention share on
+  provision text, log P(S), log P(X)) are Holm-corrected at 0.05.
+- **Replay fidelity.** How often the model's top token at each fed position equals the recorded token is reported;
+  below 95 % the attention results carry that caveat.
+- Attention weights describe where the model looked, not why it wrote what it wrote. The likelihood measures carry
+  the causal claim; attention is supporting evidence.
+
+**Reading the outcomes.** R1 > R3: inserting at the cut point beats the same text at the top. R1 ≈ R3: repeating
+the provision is what helps, and insertion at the cut point is the way to do it that reuses the cache. R1 > R4: the
+provision's content does the work, not the turn break. R2 = R1 in text: the cache is a cost saving, not a quality
+change. Higher share on provision text, higher log P(S) and lower log P(X) with the inserted turn: "more attention,
+and the unsupported sentence becomes less likely" is measured. Attention up but likelihoods unchanged: attention is
+not offered as the explanation. With 47 states only large effects show; a difference of a few states is reported
+as none. Nothing here changes the engine or the auditor, and no choice is made on these test states.
+
+- Scripts: `scripts/replay_states.py` (states, local checks), the replay and attention runs (to be written);
+  raw: `results/grid/replay_states.json`, later `results/grid/replay/`.

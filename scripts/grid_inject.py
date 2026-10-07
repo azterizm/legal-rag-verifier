@@ -5,7 +5,11 @@ grouped by what rejected the first draft: the claim check (figures, citations, i
 qualifiers, deontics, versions) or the NLI head alone. Per group: how often the first retry passed,
 how many points recovered (a later draft was emitted) and how many ended in the refusal sentence.
 
-  uv run python scripts/grid_inject.py                       # test: 4B vs 4B-inject
+Stop 29 adds, for 4B against 4B-inject on test, the states both arms reached at their first
+rollback (``replay_states.py``): first-retry pass from the same state, paired, and how many first
+drafts passed in the sentences after that point.
+
+  uv run python scripts/grid_inject.py > results/grid/inject_ab.json   # test: 4B vs 4B-inject
   uv run python scripts/grid_inject.py --split dev --cells 4B-inject-note 4B-inject-turn
 """
 
@@ -17,6 +21,8 @@ import json
 import statistics
 from pathlib import Path
 from typing import Any
+
+from replay_states import downstream, load, paired, shared_states  # type: ignore[import-not-found]
 
 ROOT = Path(__file__).resolve().parent.parent
 GRID = ROOT / "results/grid"
@@ -87,8 +93,18 @@ def main() -> None:
     shared = set.intersection(
         *({json.loads(x)["id"] for x in p.read_text().splitlines()} for p in paths.values())
     )
-    out = {cell: summary(path, shared) for cell, path in paths.items()}
-    print(json.dumps({"split": args.split, "prompts": len(shared), "cells": out}, indent=1))
+    out: dict[str, Any] = {
+        "split": args.split,
+        "prompts": len(shared),
+        "cells": {cell: summary(path, shared) for cell, path in paths.items()},
+    }
+    if args.split == "test" and set(paths) == {"4B", "4B-inject"}:
+        a, b = load(paths["4B"]), load(paths["4B-inject"])
+        states, _ = shared_states(a, b)
+        ids = [s.id for s in states]
+        out["shared_first_rollback_states"] = paired(states)
+        out["after_first_rollback"] = {"4B": downstream(a, ids), "4B-inject": downstream(b, ids)}
+    print(json.dumps(out, indent=1))
 
 
 if __name__ == "__main__":

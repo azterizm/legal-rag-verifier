@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-07 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Your call (stop 28): injection v2 on dev, vault corrections, or the 0.1.0 release |
-| Waiting on you | Injection v2 go (paid: Modal L4 + judge calls) or not; vault corrections; release go |
+| Next step | ⛔ Your go (stop 29): the paid replay + attention run (method in `docs/GRID.md` § Stop 29), R4 in or out |
+| Waiting on you | Paid run go (Modal L4, about 1 h, no router calls); vault corrections; release go |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-07 (29): **Steps 1–2 of the placement + attention plan done (your go): shared states and the method, no run.** A and B share all
+  48 first-rollback states; first retry passed 19/48 (A) vs 39/48 (B), McNemar p = 1.1e-5; first drafts after
+  that point passed 35/65 (A) vs 31/41 (B). States rebuilt with the tokenizer and checked against the traces
+  (`scripts/replay_states.py`). Method for arms R0–R4 and the attention/likelihood replay fixed in
+  `docs/GRID.md` § Stop 29. ⛔ Next: your go on the paid run (and R4 in or out).
 
 - 2026-10-07 (28): **PoC verdict written (your request), `docs/VERDICT.md`.** The architecture holds as a
   mechanism and is not production-ready as built: faithful to the injected text, not to the question; abstention

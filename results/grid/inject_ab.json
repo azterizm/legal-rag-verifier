@@ -81,5 +81,26 @@
    "wall_s_median": 6.45,
    "tokens_discarded_mean": 33.4
   }
+ },
+ "shared_first_rollback_states": {
+  "states": 48,
+  "a_first_retry_passed": 19,
+  "b_first_retry_passed": 39,
+  "both": 18,
+  "only_a": 1,
+  "only_b": 21,
+  "neither": 8,
+  "b_retries_injected": 47,
+  "mcnemar_p": 1.1e-05
+ },
+ "after_first_rollback": {
+  "4B": {
+   "sentences": 65,
+   "first_draft_passed": 35
+  },
+  "4B-inject": {
+   "sentences": 41,
+   "first_draft_passed": 31
+  }
  }
 }

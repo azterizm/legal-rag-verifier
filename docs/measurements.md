@@ -450,3 +450,11 @@ because faithfulness to the chunk is not faithfulness to the question: the loop 
 query restated in the injected turn, and/or a query-relevance check in the auditor) and an abstention rule (a
 point that needs injection on a probe naming a provision absent from the premise should refuse). Both are design
 changes to test on the dev split before a re-run.
+
+**Same-state reading (stop 29, from the same traces, no new run).** A and B are identical up to the first rollback,
+so all 48 answers with a rollback give a state both arms retried from. First retry passed **19/48 in A and 39/48 in
+B** (both 18, only A 1, only B 21; exact McNemar p = 1.1e-5); B inserted a provision on 47 of the 48. After that
+point, first drafts of the later sentences passed 35/65 in A and 31/41 in B (A's later sentences include the hedging
+that follows a refusal). The states rebuild exactly from the traces with the generator's tokenizer (prompt, committed
+text, inserted source, and B's prefix-cache hit). Raw: `results/grid/replay_states.json`; `inject_ab.json` now
+carries both figures. The placement and attention replay on these states is specified in `docs/GRID.md` § Stop 29.
