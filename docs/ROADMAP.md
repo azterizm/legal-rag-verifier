@@ -17,7 +17,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-08 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | 0.1.0 release: push to github.com/azterizm/legal-rag-verifier (public), CI green, tag v0.1.0 → PyPI via Trusted Publisher |
+| Next step | None for 0.1.0 (released). Next work: VERDICT § Required before production |
 | Waiting on you | Nothing (release go given 2026-10-08) |
 | Blocked | Nothing |
 
@@ -30,6 +30,9 @@ Newest first. One line per stop: what was finished, and where to resume.
   dependabot, `.gitattributes`; release notes from the CHANGELOG section. `results/`, `batteries/`, `enrichment/`
   ship in the repo (about 10 MB, already in history), not in the package. History audited: no ignored data, keys or
   third-party names. Clean clone re-derives `grid_inject.py` and `replay_report.py` outputs exactly.
+  **Released:** CI green (8 jobs), tag `v0.1.0`, PyPI 0.1.0 via Trusted Publisher with attestations, GitHub
+  release with wheel and sdist. Installed from PyPI, the README example returns ROLLBACK / UNGROUNDED_FIGURE.
+  Repo: topics, `pypi` environment limited to `v*` tags, private vulnerability reporting, Dependabot on.
 
 - 2026-10-08 (34): **v2 judged 103/103; reading fails as written; docs updated.** Answerable (92): correct v2 67,
   4B 67, v1 59, 4D 71; off-topic 12 / 5 / 16 / 2; with an unsupported sentence 13 / 20 / 16 / 17. Abstention 0/11:
