@@ -33,6 +33,8 @@ Newest first. One line per stop: what was finished, and where to resume.
   **Released:** CI green (8 jobs), tag `v0.1.0`, PyPI 0.1.0 via Trusted Publisher with attestations, GitHub
   release with wheel and sdist. Installed from PyPI, the README example returns ROLLBACK / UNGROUNDED_FIGURE.
   Repo: topics, `pypi` environment limited to `v*` tags, private vulnerability reporting, Dependabot on.
+  Rulesets (admin bypass): `main` (no deletion or force push, linear history, PR with the 8 CI checks) and
+  `release tags` `v*` (creation, update and deletion restricted); immutable releases on.
 
 - 2026-10-08 (34): **v2 judged 103/103; reading fails as written; docs updated.** Answerable (92): correct v2 67,
   4B 67, v1 59, 4D 71; off-topic 12 / 5 / 16 / 2; with an unsupported sentence 13 / 20 / 16 / 17. Abstention 0/11:
