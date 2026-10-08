@@ -398,3 +398,7 @@ All 12 answers with a rollback give a shared state, so S1 and S2 are read (at le
 34 texts in Part A; 40 questions, 69 texts in Part B (identical answers shown once: with no rollback, 4B and
 4B-inject-v2 write the same answer, and the plain answer equals 4B's on 23 of 40). Key SHA-256
 (`results/software/review/key.json`, git-ignored): `ce97382831ea59ff665f34be82f6e442e531e18b1212e7491741c3a0825aa463`.
+
+**Grades received (2026-10-08).** Graded by you, without AI help on the decisions. 103 of 103 texts, every value
+valid. Committed as `results/software/review/grades.csv` before the key was read against them. You did not give
+the sheet to the external system, so no model-against-person agreement is reported for this stop.
