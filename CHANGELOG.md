@@ -31,4 +31,5 @@ English.
 - Evaluation, all in `docs/measurements.md`: a dev battery (271 rows) and a held-out battery (346
   rows) sealed before it ran; the 2x2 grid (Gemini and Qwen 2.5 7B, full retry against
   sentence-level remediation, 103 test prompts, one shared detector, an independent judge); the
-  injection A/B; the placement and attention replay. Proof-of-concept verdict: `docs/VERDICT.md`.
+  injection A/B; the placement and attention replay; injection v2 (question restated in the inserted
+  turn, `legal-rag-router` as the abstention gate). Proof-of-concept verdict: `docs/VERDICT.md`.

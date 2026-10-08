@@ -1,6 +1,6 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-07.
+legal-rag-verifier 0.1.0, 2026-10-08.
 
 ## Question
 
@@ -12,8 +12,8 @@ recovery were out of scope.
 ## Verdict
 
 The architecture holds as a mechanism. It is not ready for production as built. Each part works on a production
-inference server. The full loop makes the model faithful to the text it is given, but not to the question it was
-asked. Two changes are required before a production trial. They are listed at the end.
+inference server. The full loop makes the model faithful to the text it is given, but not fully to the question it
+was asked. The changes required before a production trial are listed at the end.
 
 ## What was tested
 
@@ -22,7 +22,7 @@ figures, citations, Act names, qualifiers and obligations, then a small entailme
 generator is Qwen 2.5 7B Instruct on SGLang, on one NVIDIA L4 GPU on Modal. Gemini 3.8 Flash, called through an
 API, was the stronger reference model. When the auditor rejects a sentence, the engine cuts the answer back to the
 start of that sentence and retries, at most 3 times per sentence. A retry either constrains the next tokens or, in
-the last test, adds the provision text to the model's context as a new user turn. The added text never appears in
+the last two tests, adds the provision text to the model's context as a new user turn. The added text never appears in
 the answer. The comparisons used 103 UK statute questions that were never used to tune the auditor. 11 of them ask
 about provisions that do not exist. A separate model, gpt-oss-120b, judged every final answer without knowing which
 setup produced it. A blind sample of 80 answers was also labelled by hand.
@@ -66,9 +66,19 @@ not address the question rose from 13 to 24. The judge rated 61 % of answers cor
 73 % without. Insertion also ends answers early. The model stopped the answer right after an inserted retry in 28
 of 46 states, against 17 of 44 after a plain retry.
 
+A second version restated the question in the inserted turn. On the 92 questions that have an answer, it was
+judged correct 67 times, the same as without the source and 8 more than the first version. Answers that did not
+address the question fell from 16 to 12, still above 5 without the source. Answers with an unsupported sentence
+fell to 13, against 20 without the source. These gaps are within the judge's noise. Restating the question
+recovers part of the loss, not all of it.
+
 Abstention is lost. Without the source, the refusal sentence also handled questions about provisions that do not
 exist. Adding the source replaces that refusal with a true but irrelevant sentence. Correct abstentions fell from
-8 of 11 to 4 of 11.
+8 of 11 to 4 of 11. In the second version, legal-rag-router ran before generation and refused exactly the 11
+questions about provisions that do not exist, and no other. The judge rated all 11 refusals incorrect, because its
+prompt accepts only claims the provisions support. The rule set before that run needed 75 of 103 correct and 8 of
+11 abstentions. The second version scored 67 and 0, so it fails as written. The judge was not changed after the
+run, and injection work stops for 0.1.0.
 
 The entailment model is the weakest part. It misreads double negatives in statutes, judges a correct rule against
 its exception, and passes sentences that drop a qualifier. On the sealed set it caught 6 of 18 dropped qualifiers.
@@ -92,14 +102,15 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 
 ## Required before production
 
-1. Add a relevance signal. Restate the question in the injected turn, and check that each sentence addresses the
-   question.
-2. Add an abstention rule. When the question names a provision or Act that is not among the supplied provisions,
-   refuse instead of adding the source.
+1. Restate the question in the injected turn, as in the second version. Do not add a per-sentence relevance
+   check. A single sentence of a correct answer often does not address the question on its own, so the check
+   would reject correct text and exhaust the retries. Judge relevance on the whole answer.
+2. Keep the router gate for abstention. Before the next run, fix a judge prompt that scores a refusal of a
+   provision that does not exist as correct.
 3. Reduce entailment errors on statutory drafting, starting with dropped qualifiers and rules judged against their
    exceptions.
 4. Set the latency target from the measured cost of 69 to 117 ms per retry, or move to faster hardware.
-5. Tune each change on the development set, then re-run the 103 test questions with the same judge.
+5. Tune each change on the development set, then re-run the 103 test questions with the judge prompt fixed in advance.
 
 Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/grid/`. Decisions:
 `docs/ROADMAP.md`.

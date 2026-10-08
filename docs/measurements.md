@@ -513,3 +513,52 @@ results therefore carry this caveat. Each effect above points the same way in 45
   sentence. Attention describes where the model looked; the likelihood figures carry the causal reading.
 - **Insertion also ends answers early** (28/46 vs 17/44), in line with stop 27's shorter, more often off-topic
   answers.
+
+## Injection v2 (stop 30, 2026-10-07 and 2026-10-08; method in `docs/GRID.md`)
+
+v2 changes two things against 4B-inject (v1): the inserted turn restates the question in positive wording, and
+legal-rag-router 0.1.0 runs before generation and answers the queries it refuses with its own message.
+
+**Dev pilot** (first 40 dev prompts, v1 `dev/4B-inject-turn` against v2, same judge). Judged to address the question
+35 vs 32; judged correct 26 vs 24; first retry passed 81 % of rollback points. The pre-set rule passed, so the test
+run went ahead. Raw: `results/grid/dev/4B-inject-v2.jsonl`, `dev/judge.jsonl`.
+
+**Gate.** The router refused exactly the 11 abstention probes on test and nothing on dev (0/112). All 215 statuses
+match the battery's expected labels. Raw: `batteries/grid/routes-{dev,test}.json`.
+
+**Test** (103 prompts; judged 103/103, the last 8 on 2026-10-08 after a router 503). Judge counts:
+
+| | v2 | 4B | 4B-inject (v1) | 4D |
+|---|---|---|---|---|
+| Correct, all 103 | 67 | 75 | 63 | 81 |
+| Correct, 92 answerable | 67 | 67 | 59 | 71 |
+| Correct, 11 abstention probes | 0 | 8 | 4 | 10 |
+| Answerable, not addressing the question | 12 | 5 | 16 | 2 |
+| Answerable, with an unsupported or contradicted sentence | 13 | 20 | 16 | 17 |
+
+Per rollback point (`scripts/grid_inject.py`). v2 has fewer points because the 11 probes never reach generation.
+
+| | v2 | 4B | 4B-inject (v1) |
+|---|---|---|---|
+| Rollback points | 49 | 78 | 58 |
+| First retry passed, claim check | 20/22 (91 %) | 11/40 (28 %) | 26/31 (84 %) |
+| First retry passed, NLI | 19/27 (70 %) | 11/27 (41 %) | 19/25 (76 %) |
+| Points ending in a refusal | 4 | 37 | 6 |
+| Inserted retries with a prefix-cache hit | 53/53 | — | 56/56 |
+| Answers ending right after an inserted recovery | 19/36 | — | 27/44 |
+| Time to first output, median | 3.15 s | 3.84 s | 3.75 s |
+| Wall time, median | 6.24 s | 7.89 s | 6.45 s |
+| Tokens discarded, mean | 29.4 | 66.7 | 33.4 |
+
+**Pre-set reading.** It needed at least 75/103 correct and 8/11 correct abstentions. v2 scored 67 and 0, so it
+fails as written. The verdict stands and injection work stops for 0.1.0. The judge rated all 11 router refusals
+incorrect as unsupported claims about the named Act or section; its prompt accepts only claims the provisions
+support. It marked 7 of the 11 as abstaining. Re-judging them with an amended prompt would be a post hoc change
+to the protocol and was not done (decision 2026-10-08).
+
+**What v2 shows.** On the answerable prompts v2 matches 4B on correct answers (67 vs 67) and is 8 above v1. It has
+fewer answers with an unsupported sentence than 4B (13 vs 20). Answers that miss the question fall from 16 to 12
+against v1 but stay above 4B's 5. Each of these gaps is under the judge's noise of about 10 answers. Restating the
+question recovers part of the relevance loss, not all of it. The claim-check retry pass rises to 91 %, the cache
+is hit on every inserted retry, and time to first output is the lowest of the three in-flight cells. The router
+gate selects the right 11 queries; the judge protocol, not the gate, decides the abstention score.

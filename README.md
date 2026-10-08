@@ -97,7 +97,7 @@ likely in 46 of 46 states, the rejected sentence less likely in 45 of 46, and at
 provision text rose in 46 of 46.
 
 **Open:** the inserted provision makes the model faithful to the provision, not always to the
-question. See [`docs/VERDICT.md`](docs/VERDICT.md) for the proof-of-concept verdict and its
+question. Restating the question in the inserted turn recovers part of that loss. See [`docs/VERDICT.md`](docs/VERDICT.md) for the proof-of-concept verdict and its
 limits.
 
 ## Development

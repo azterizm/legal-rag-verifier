@@ -231,3 +231,8 @@ retry, time to first output and wall time. **Reading, set before the run:** if v
 75 of 103 (72 %) and abstains correctly on at least 8 of 11, the verdict becomes "the full loop holds end to end";
 otherwise the verdict stands as written and injection work stops for 0.1.0. Judge noise (49/56 repeat agreement)
 means a gap under about 10 answers is not a difference.
+
+**Changes after the run.** None to the method. The router returned 503 on the last 8 test answers; they were judged
+on 2026-10-08 with the same judge and prompt. The judge rejects every router refusal as an unsupported claim, so
+the abstention part of the reading cannot be met under this protocol. The protocol was not amended after the run;
+the reading is reported as written (`docs/measurements.md` § Injection v2).

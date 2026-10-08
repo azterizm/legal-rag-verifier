@@ -14,15 +14,22 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-07 |
+| Last updated | 2026-10-08 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Judge the last 8 v2 answers once the router answers again (503); then your call on the reading and the release targets |
+| Next step | Release: confirm repo name, visibility, PyPI trusted publisher and what ships; then version, push, tag |
 | Waiting on you | Release targets confirmed before push / tag / PyPI |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-08 (34): **v2 judged 103/103; reading fails as written; docs updated.** Answerable (92): correct v2 67,
+  4B 67, v1 59, 4D 71; off-topic 12 / 5 / 16 / 2; with an unsupported sentence 13 / 20 / 16 / 17. Abstention 0/11:
+  the judge rejects every router refusal. Decision (you): no re-judge, protocol unchanged; injection work stops for
+  0.1.0. VERDICT item 1 now drops the per-sentence relevance check; item 2 keeps the router gate and fixes the judge
+  prompt before the next run. Written into `measurements.md`, `GRID.md`, `VERDICT.md`, README, CHANGELOG.
+  ⛔ Next: release targets.
 
 - 2026-10-07 (33): **v2 dev pilot passed its rule; v2 test run done; judge 95/103 (router 503 on the rest,
   3 attempts).** Dev: addresses the question 35 vs 32, correct 26 vs 24, first retry 81 %. Test, per rollback
