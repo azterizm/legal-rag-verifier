@@ -1,213 +1,213 @@
 item,grounding,on_question,reads_on,note
-01A,,,,
-01B,,,,
-01C,,,,
-02A,,,,
-02B,,,,
-03A,,,,
-03B,,,,
-03C,,,,
-03D,,,,
-03E,,,,
-04A,,,,
-04B,,,,
-04C,,,,
-04D,,,,
-04E,,,,
-05A,,,,
-05B,,,,
-05C,,,,
-05D,,,,
-05E,,,,
-06A,,,,
-06B,,,,
-06C,,,,
-06D,,,,
-07A,,,,
-07B,,,,
-07C,,,,
-07D,,,,
-07E,,,,
-08A,,,,
-08B,,,,
-08C,,,,
-08D,,,,
-08E,,,,
-09A,,,,
-09B,,,,
-09C,,,,
-09D,,,,
-09E,,,,
-10A,,,,
-10B,,,,
-10C,,,,
-10D,,,,
-10E,,,,
-11A,,,,
-11B,,,,
-11C,,,,
-11D,,,,
-12A,,,,
-12B,,,,
-12C,,,,
-13A,,,,
-13B,,,,
-13C,,,,
-13D,,,,
-13E,,,,
-14A,,,,
-14B,,,,
-14C,,,,
-14D,,,,
-14E,,,,
-15A,,,,
-15B,,,,
-15C,,,,
-15D,,,,
-15E,,,,
-16A,,,,
-16B,,,,
-16C,,,,
-16D,,,,
-16E,,,,
-17A,,,,
-17B,,,,
-17C,,,,
-17D,,,,
-18A,,,,
-18B,,,,
-18C,,,,
-18D,,,,
-19A,,,,
-19B,,,,
-19C,,,,
-19D,,,,
-19E,,,,
-20A,,,,
-20B,,,,
-20C,,,,
-20D,,,,
-20E,,,,
-21A,,,,
-21B,,,,
-21C,,,,
-21D,,,,
-21E,,,,
-22A,,,,
-22B,,,,
-22C,,,,
-22D,,,,
-22E,,,,
-23A,,,,
-23B,,,,
-23C,,,,
-23D,,,,
-24A,,,,
-24B,,,,
-24C,,,,
-24D,,,,
-25A,,,,
-25B,,,,
-25C,,,,
-25D,,,,
-25E,,,,
-26A,,,,
-26B,,,,
-26C,,,,
-26D,,,,
-26E,,,,
-27A,,,,
-27B,,,,
-27C,,,,
-27D,,,,
-27E,,,,
-28A,,,,
-28B,,,,
-28C,,,,
-28D,,,,
-29A,,,,
-29B,,,,
-29C,,,,
-29D,,,,
-29E,,,,
-30A,,,,
-30B,,,,
-30C,,,,
-30D,,,,
-31A,,,,
-31B,,,,
-31C,,,,
-31D,,,,
-32A,,,,
-32B,,,,
-32C,,,,
-32D,,,,
-32E,,,,
-33A,,,,
-33B,,,,
-33C,,,,
-33D,,,,
-33E,,,,
-34A,,,,
-34B,,,,
-34C,,,,
-34D,,,,
-35A,,,,
-35B,,,,
-35C,,,,
-35D,,,,
-35E,,,,
-36A,,,,
-36B,,,,
-36C,,,,
-36D,,,,
-36E,,,,
-37A,,,,
-37B,,,,
-37C,,,,
-37D,,,,
-37E,,,,
-38A,,,,
-38B,,,,
-38C,,,,
-38D,,,,
-38E,,,,
-39A,,,,
-39B,,,,
-39C,,,,
-39D,,,,
-39E,,,,
-40A,,,,
-40B,,,,
-40C,,,,
-40D,,,,
-40E,,,,
-41A,,,,
-41B,,,,
-41C,,,,
-41D,,,,
-41E,,,,
-42A,,,,
-42B,,,,
-42C,,,,
-42D,,,,
-42E,,,,
-43A,,,,
-43B,,,,
-43C,,,,
-43D,,,,
-43E,,,,
-44A,,,,
-44B,,,,
-44C,,,,
-44D,,,,
-44E,,,,
-45A,,,,
-45B,,,,
-45C,,,,
-45D,,,,
-45E,,,,
-46A,,,,
-46B,,,,
-46C,,,,
-46D,,,,
+01A,supported,yes,yes,Sch 4 para 3A
+01B,unsupported,yes,yes,mis-cites as s167(3A); power is Sch 4 para 3A
+01C,supported,yes,no,starts mid-sentence (s167(2) fragment)
+02A,supported,yes,no,pasted s226(3) with label; repeats workplace-ballot point
+02B,unsupported,yes,yes,drops 'as respects that employer'
+03A,supported,yes,yes,omits 'subject to reg 26A' cross-ref
+03B,supported,yes,yes,reg 13A(3)
+03C,contradicted,yes,yes,additional leave is at most 1.6 weeks not 2.4
+03D,unsupported,yes,yes,conflates 28-day aggregate cap with additional leave
+03E,supported,yes,yes,
+04A,no_claim,yes,yes,clean refusal
+04B,unsupported,no,no,copied s206(3); 'this section' reads as Blackmere s42
+04C,contradicted,yes,yes,provisions are FSMA 2000 s206
+04D,unsupported,yes,yes,garbled refusal leaks s206(3) and ties it to Blackmere
+04E,unsupported,yes,yes,attributes s42 to FSMA
+05A,supported,yes,yes,ss2/9/12/14 only via s1(2)
+05B,supported,yes,yes,verbatim s1(3)
+05C,unsupported,yes,yes,drops 'reasonably' and 'has informed the applicant'
+05D,supported,yes,yes,
+05E,supported,yes,yes,
+06A,supported,yes,no,pasted s47(4) with label
+06B,no_claim,no,yes,wrong refusal: s47 answers the question
+06C,no_claim,no,yes,wrong refusal: s47 answers the question
+06D,no_claim,no,yes,wrong refusal: s47 answers the question
+07A,supported,yes,yes,
+07B,unsupported,yes,yes,liabilities recast as exceptions to the right; 'damage' not in reg 34(9)
+07C,supported,yes,yes,cites whole regs 34-36 not the paragraphs
+07D,supported,yes,yes,
+07E,supported,yes,yes,
+08A,unsupported,yes,yes,garbles test: arrest must be necessary for a s24(5) reason
+08B,unsupported,yes,yes,necessity made sufficient; drops s24(1)-(3) grounds and name/address conditions
+08C,unsupported,yes,yes,as 08B; 'there are' grounds rather than the constable's
+08D,unsupported,yes,yes,as 08B; also drops s24(6) qualifier
+08E,supported,yes,no,s24(6) pasted as opener with no referent
+09A,supported,yes,yes,omits 'subject to s140B' cross-ref
+09B,supported,yes,yes,'within 3 months of' loosens 'starting with'; omits s140B cross-ref
+09C,supported,yes,yes,'from the date' loosens 'starting with'; omits s140B cross-ref
+09D,supported,yes,yes,
+09E,supported,yes,no,lowercase paste of s123(2)
+10A,contradicted,yes,yes,s81(4A) HA 1996 is in the provisions
+10B,no_claim,yes,yes,clean refusal
+10C,no_claim,yes,yes,clean refusal
+10D,unsupported,no,no,copied s81(4A); 'this section' reads as Ravensbourne s42
+10E,no_claim,yes,yes,clean refusal
+11A,supported,yes,yes,exercise is exclusive rather than the rights
+11B,no_claim,no,no,copied heading
+11C,supported,yes,yes,
+11D,contradicted,yes,yes,'and' - s24(5) allows one not both
+12A,unsupported,no,no,pasted s124(1); 'this section' reads as SDA s6
+12B,no_claim,yes,yes,clean refusal
+12C,supported,yes,yes,swaps asked section for s124(1); no cap shown
+13A,supported,yes,yes,
+13B,unsupported,yes,no,old/new point not in provisions; restates prior clause
+13C,supported,yes,no,stray '(7)' and 'This means' with no antecedent
+13D,unsupported,yes,yes,provisions silent on old vs new tenancies
+13E,unsupported,yes,yes,provisions silent on old vs new; s3(7) not about passing
+14A,no_claim,yes,yes,clean refusal
+14B,no_claim,yes,yes,clean refusal
+14C,unsupported,yes,yes,attributes s80(4) to the Thornfield Act
+14D,no_claim,yes,yes,clean refusal
+14E,supported,no,no,pasted s78(6) with label
+15A,supported,yes,yes,
+15B,supported,yes,yes,omits 'payable to the petitioning creditor'
+15C,supported,yes,no,fragment from (b)
+15D,supported,yes,yes,provision requires the draft to be approved first
+15E,supported,yes,yes,omits (d) statutory-demand condition
+16A,unsupported,yes,yes,'may be waived' - s108(1) simply does not apply
+16B,supported,yes,yes,
+16C,unsupported,yes,yes,omits s108(4)-(5) exceptions
+16D,no_claim,no,no,fragment
+16E,supported,yes,yes,no Act named
+17A,unsupported,yes,yes,cites s9(4) as the source; omits best interests
+17B,supported,yes,yes,
+17C,supported,yes,yes,
+17D,supported,yes,yes,
+18A,supported,yes,yes,omits 'subject to sub-paras (3)-(7)' cross-ref
+18B,supported,yes,yes,
+18C,supported,no,no,fragment of para 1(8)
+18D,supported,yes,yes,
+19A,unsupported,no,no,paraphrase of s146(6); 'This section' reads as Ravensbourne s42
+19B,contradicted,yes,yes,s146(3) LPA 1925 is in the provisions
+19C,no_claim,yes,yes,clean refusal
+19D,no_claim,yes,yes,clean refusal
+19E,no_claim,yes,yes,clean refusal
+20A,supported,no,yes,constraints on the court rather than who appoints
+20B,no_claim,yes,yes,clean refusal
+20C,unsupported,yes,yes,fictional Act; 'Court of Protection' not in provisions
+20D,contradicted,yes,yes,s16(3) MCA 2005 is in the provisions
+20E,supported,yes,yes,
+21A,supported,yes,yes,
+21B,supported,yes,yes,
+21C,unsupported,yes,yes,'Schedules 1 41' garbles Sch 1 and s41 MCA; s115(1) is not an exclusion
+21D,unsupported,yes,yes,exclusion attributed to s4(8) not s25 CJPOA; s115(1) is not an exclusion
+21E,unsupported,yes,no,flat exclusion overstates 'subject to s25'; 'This means' with no antecedent
+22A,supported,no,yes,s149(4) is certification providers not controllers
+22B,supported,yes,yes,
+22C,supported,yes,yes,
+22D,supported,yes,yes,
+22E,supported,no,yes,s149(4) is certification providers not controllers
+23A,supported,yes,yes,does not flag the misnamed Act
+23B,supported,yes,yes,does not flag the misnamed Act
+23C,supported,no,yes,employee's notice not asked
+23D,supported,yes,yes,does not flag the misnamed Act
+24A,unsupported,yes,yes,offence is s4A(1) not (5); recasts defence burden
+24B,supported,yes,yes,omits fine alternative
+24C,supported,yes,yes,'required by' narrows 'pursued under'
+24D,unsupported,yes,no,standard of proof not stated; 'This defence' has no antecedent
+25A,supported,yes,yes,
+25B,supported,yes,yes,
+25C,supported,yes,yes,
+25D,supported,yes,no,'This means' with no antecedent
+25E,supported,yes,yes,
+26A,supported,yes,yes,vague
+26B,supported,yes,yes,garbled phrasing
+26C,supported,yes,yes,ignores aggregation in s403(4)
+26D,supported,yes,yes,ignores aggregation in s403(4)
+26E,supported,yes,yes,ignores aggregation in s403(4)
+27A,unsupported,yes,yes,arbitration bar limited to post-dispute agreements; omits 'or is to be'
+27B,supported,yes,yes,
+27C,unsupported,yes,yes,arbitral-tribunal bar loses 'post-dispute' qualifier
+27D,supported,yes,yes,
+27E,unsupported,yes,yes,'and the charges have been incurred' conflicts with s27A(3)
+28A,contradicted,yes,yes,original limit is extended by the waiting period not reduced
+28B,supported,yes,yes,
+28C,supported,yes,yes,
+28D,unsupported,yes,yes,drops condition that replacement goods do not conform
+29A,supported,yes,yes,
+29B,unsupported,yes,yes,30% is category 1 only
+29C,unsupported,yes,yes,30% is category 1 only
+29D,supported,yes,yes,
+29E,no_claim,no,no,table fragment
+30A,no_claim,yes,yes,lead-in
+30B,no_claim,no,no,copied heading
+30C,supported,yes,yes,s29 sets conditions not time limits
+30D,supported,yes,yes,omits 'subject to (1A)' cross-ref
+31A,supported,yes,yes,
+31B,supported,no,yes,recording is not the right asked about
+31C,supported,yes,yes,drops 'or other premises'
+31D,supported,yes,yes,verbatim s58(1)
+32A,supported,yes,yes,circular
+32B,supported,yes,yes,s12(2) confirm-or-deny duty not mentioned
+32C,unsupported,yes,yes,assumes the refusal was lawful
+32D,supported,yes,no,pasted s12(2) with label
+32E,supported,yes,yes,
+33A,unsupported,yes,yes,drops s1(2) qualifying conditions
+33B,unsupported,yes,yes,drops s1(2) qualifying conditions
+33C,supported,yes,yes,
+33D,supported,yes,yes,
+33E,unsupported,yes,yes,drops s1(2) qualifying conditions
+34A,unsupported,yes,yes,drops 'compiled by or on behalf of' and reg 5(5) conditions
+34B,unsupported,yes,yes,drops 'compiled by or on behalf of' and reg 5(5) conditions
+34C,supported,yes,no,repeats personal-data point verbatim
+34D,unsupported,yes,yes,drops 'compiled by or on behalf of'
+35A,unsupported,yes,yes,illness limb loses 'in that protected period'
+35B,unsupported,yes,yes,dismissal alone is not enough without the reason
+35C,supported,no,no,pasted s18(7) as opener
+35D,supported,yes,yes,
+35E,unsupported,yes,yes,assumes dismissal is because of the leave
+36A,unsupported,yes,yes,assessment duty not in provisions
+36B,unsupported,yes,yes,drops 'to a member of the public otherwise than under this Act'
+36C,supported,yes,yes,
+36D,unsupported,yes,yes,drops 'to a member of the public otherwise than under this Act'
+36E,supported,no,no,copied definition fragment
+37A,no_claim,yes,yes,refusal; does not name the fictional Act
+37B,supported,no,yes,
+37C,no_claim,yes,yes,clean refusal
+37D,unsupported,yes,yes,ties the fee question to s76(3)
+37E,no_claim,yes,yes,clean refusal
+38A,unsupported,yes,yes,contract length is not the guaranteed term
+38B,supported,yes,yes,clause is ungrammatical
+38C,supported,yes,yes,'shall be' narrows 'may be'
+38D,supported,yes,yes,omits 'or may be'
+38E,supported,yes,yes,omits 'or may be'
+39A,supported,yes,yes,
+39B,unsupported,yes,yes,80% rule only for ss312-315 requirements
+39C,supported,yes,yes,
+39D,supported,yes,yes,
+39E,unsupported,yes,yes,provision permits an 80% floor; does not prohibit lower
+40A,supported,yes,yes,assumes A is an employer
+40B,supported,yes,yes,
+40C,supported,yes,yes,
+40D,supported,yes,yes,
+40E,contradicted,yes,yes,inverts the justification test
+41A,supported,yes,yes,
+41B,supported,yes,yes,
+41C,supported,yes,yes,
+41D,supported,yes,yes,
+41E,supported,yes,yes,
+42A,unsupported,yes,yes,bruising as ABH not in provisions
+42B,unsupported,yes,yes,bruising as ABH not in provisions
+42C,unsupported,yes,yes,bruising as ABH not in provisions
+42D,unsupported,yes,no,'seven years' not in provisions; fragment
+42E,unsupported,yes,yes,bruising as ABH not in provisions; drops 'upon an indictment'
+43A,unsupported,yes,yes,drops 'unless terminated in accordance with this Part'; garbled
+43B,supported,yes,no,pasted s24(1) with label
+43C,unsupported,yes,yes,drops 'unless terminated in accordance with this Part'
+43D,supported,yes,yes,'the Act' for 'this Part'
+43E,supported,yes,yes,'the Act' for 'this Part'
+44A,supported,yes,yes,does not say when the higher amount applies
+44B,contradicted,yes,yes,s157(1)(b) is the standard amount; figures swapped
+44C,unsupported,yes,yes,standard max stated as the data-breach max without the Art 83 condition
+44D,contradicted,yes,yes,s157(1)(b) is the standard not higher amount
+44E,contradicted,yes,yes,s157(1)(b) is the standard not higher amount
+45A,unsupported,yes,no,drops 'first obtained'; repeats opt-out
+45B,unsupported,yes,no,drops 'first obtained'; repeats opt-out
+45C,supported,yes,no,restates the employer duty
+45D,supported,yes,yes,
+45E,supported,yes,yes,
+46A,unsupported,yes,yes,drops 'not previously utilised' for profits
+46B,supported,yes,yes,
+46C,supported,yes,yes,
+46D,supported,yes,no,pasted s830(3); 'Subsection (2)' has no referent
