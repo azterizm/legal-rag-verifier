@@ -1,0 +1,4 @@
+# Evaluation data and run output: hidden from diffs and language statistics
+results/** linguist-generated=true
+batteries/**/*.jsonl linguist-generated=true
+enrichment/** linguist-generated=true

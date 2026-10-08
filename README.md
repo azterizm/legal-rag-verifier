@@ -2,6 +2,12 @@
 
 **Sentence-level verification for legal RAG, while the model generates.**
 
+[![PyPI](https://img.shields.io/pypi/v/legal-rag-verifier)](https://pypi.org/project/legal-rag-verifier/)
+[![CI](https://github.com/azterizm/legal-rag-verifier/actions/workflows/ci.yml/badge.svg)](https://github.com/azterizm/legal-rag-verifier/actions/workflows/ci.yml)
+[![Python 3.11–3.13](https://img.shields.io/badge/python-3.11%E2%80%933.13-blue)](https://github.com/azterizm/legal-rag-verifier/blob/main/pyproject.toml)
+[![Licence: AGPL-3.0-only](https://img.shields.io/badge/licence-AGPL--3.0--only-blue)](https://github.com/azterizm/legal-rag-verifier/blob/main/LICENSE)
+![Runtime dependencies: none](https://img.shields.io/badge/runtime%20dependencies-none-brightgreen)
+
 `legal-rag-verifier` checks each sentence of an answer against the statutory provisions it was
 given, as the sentence is written. A deterministic claim check covers figures, dates, citations,
 instrument titles, modal verbs and qualifiers; an NLI head (DeBERTa-v3) covers the prose. A
@@ -9,8 +15,14 @@ rejected sentence is rolled back and regenerated on the inference server's prefi
 that sentence is thrown away. The retry can insert the provision the sentence was checked against
 at the cut point, which is what makes a small model recover.
 
-Built by [Abdullah Memon](https://memonsystems.com) at Memon Systems Ltd. Layer 4 of the Memon
-Systems hosted reference architecture, after [`legal-rag-router`](https://github.com/azterizm/legal-rag-router).
+**Status: proof of concept.** The mechanism holds on a production inference server; the full loop is
+not yet production-ready. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
+what is required first.
+
+Built by [Abdullah Memon](https://memonsystems.com) at [Memon Systems Ltd](https://memonsystems.com).
+Layer 4 of the Memon Systems hosted reference architecture, after
+[`legal-rag-router`](https://github.com/azterizm/legal-rag-router), which can serve as its
+abstention gate.
 
 ## Install
 
@@ -74,11 +86,13 @@ refusal for that point and moves on. Retry modes:
   provision stays in the context and never enters the answer.
 
 The SGLang server needs `--enable-custom-logit-processor` for `allow` and `ban`. Full API:
-[`docs/API.md`](docs/API.md).
+[`docs/API.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/API.md).
 
 ## Evidence
 
-Every figure below is measured; methods and raw results are in [`docs/`](docs/) and `results/`.
+Every figure below is measured. Figures: [`docs/measurements.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/measurements.md).
+Methods, fixed before each run: [`docs/GRID.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/GRID.md). Raw results:
+[`results/`](https://github.com/azterizm/legal-rag-verifier/tree/main/results).
 
 **Detector, sealed held-out battery** (346 rows, sealed before it ran once; claim check +
 `nli-deberta-v3-base` + enrichment): 80.0 % of planted errors caught (124/155), 7.9 % of correct
@@ -97,8 +111,26 @@ likely in 46 of 46 states, the rejected sentence less likely in 45 of 46, and at
 provision text rose in 46 of 46.
 
 **Open:** the inserted provision makes the model faithful to the provision, not always to the
-question. Restating the question in the inserted turn recovers part of that loss. See [`docs/VERDICT.md`](docs/VERDICT.md) for the proof-of-concept verdict and its
-limits.
+question. Restating the question in the inserted turn recovers part of that loss. See
+[`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) for the proof-of-concept verdict and its limits.
+
+## Reproduce the evidence
+
+The repository, not the package, holds everything behind the figures: the batteries and their
+seals (`batteries/`), the per-provision enrichment (`enrichment/`), every answer, trace and
+judgement (`results/`) and the scripts that produced them (`scripts/`). The rollback-point tables
+and the placement and attention report re-derive from the committed results, with no GPU or API
+key:
+
+```bash
+git clone https://github.com/azterizm/legal-rag-verifier && cd legal-rag-verifier && uv sync
+uv run python scripts/grid_inject.py --cells 4B 4B-inject 4B-inject-v2
+uv run python scripts/replay_report.py
+```
+
+Re-scoring the grid (`scripts/grid_score.py`) and re-running the batteries also need the statute
+corpus, built with [`legal-rag-router`](https://github.com/azterizm/legal-rag-router) and copied
+to `data/`; it is not redistributed here. Generation runs used Modal (`scripts/modal_m4.py`).
 
 ## Development
 
@@ -107,9 +139,23 @@ uv sync
 uv run ruff check && uv run ruff format --check && uv run mypy && uv run pytest
 ```
 
-Progress and decisions: [`docs/ROADMAP.md`](docs/ROADMAP.md).
+Progress and decisions: [`docs/ROADMAP.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/ROADMAP.md). Contributing:
+[`CONTRIBUTING.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/CONTRIBUTING.md). Security: [`SECURITY.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/SECURITY.md).
+
+## Citation
+
+If you use the verifier or its evaluation, cite it with [`CITATION.cff`](https://github.com/azterizm/legal-rag-verifier/blob/main/CITATION.cff)
+("Cite this repository" on GitHub).
+
+## Consultancy
+
+`legal-rag-verifier` is built and maintained by **Abdullah Memon** at
+**[Memon Systems Ltd](https://memonsystems.com)**, which designs and audits retrieval systems for
+legal and other regulated domains. For help putting verification into production or testing your
+own legal RAG, see [engagements](https://memonsystems.com/engagements) or write to
+abdullah@memonsystems.com.
 
 ## Licence
 
-AGPL-3.0-only (see `LICENSE`). Contains public sector information licensed under the Open
-Government Licence v3.0 (see `NOTICE`).
+AGPL-3.0-only (see [`LICENSE`](https://github.com/azterizm/legal-rag-verifier/blob/main/LICENSE)). Contains public sector information licensed under the
+Open Government Licence v3.0 (see [`NOTICE`](https://github.com/azterizm/legal-rag-verifier/blob/main/NOTICE)).

@@ -4,7 +4,7 @@ All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - unreleased
+## [0.1.0] - 2026-10-08
 
 The first release: sentence-level verification during generation for legal RAG, United Kingdom,
 English.
@@ -33,3 +33,5 @@ English.
   sentence-level remediation, 103 test prompts, one shared detector, an independent judge); the
   injection A/B; the placement and attention replay; injection v2 (question restated in the inserted
   turn, `legal-rag-router` as the abstention gate). Proof-of-concept verdict: `docs/VERDICT.md`.
+
+[0.1.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.1.0

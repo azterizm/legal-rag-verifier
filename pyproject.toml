@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "legal-rag-verifier"
-version = "0.1.0.dev0"
+version = "0.1.0"
 description = "Sentence-level claim and NLI verification with KV-cache rollback during generation, for legal RAG"
 readme = "README.md"
 authors = [{ name = "Abdullah Memon", email = "abdullah@memonsystems.com" }]
@@ -15,7 +15,7 @@ requires-python = ">=3.11"
 dependencies = []
 keywords = ["legal", "rag", "verification", "nli", "hallucination", "kv-cache"]
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Intended Audience :: Legal Industry",
     "Operating System :: OS Independent",
@@ -27,6 +27,15 @@ classifiers = [
     "Topic :: Text Processing :: Linguistic",
     "Typing :: Typed",
 ]
+
+[project.urls]
+Homepage = "https://github.com/azterizm/legal-rag-verifier"
+Repository = "https://github.com/azterizm/legal-rag-verifier"
+Issues = "https://github.com/azterizm/legal-rag-verifier/issues"
+Changelog = "https://github.com/azterizm/legal-rag-verifier/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/azterizm/legal-rag-verifier/blob/main/docs/API.md"
+Verdict = "https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md"
+Consultancy = "https://memonsystems.com/engagements"
 
 [project.optional-dependencies]
 nli = ["torch>=2.4", "transformers>=4.56"]
@@ -56,6 +65,9 @@ include = [
     "scripts",
     "docs",
     "README.md",
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "SECURITY.md",
     "LICENSE",
     "NOTICE",
     "data/MANIFEST.json",
