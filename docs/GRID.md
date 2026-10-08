@@ -338,3 +338,56 @@ P2 fails (good retries R1 11, R0 17); R3 and R4 beat R1 (Holm p = 0.003). A grou
 to the report after the readings and is marked as not set in advance. No rule, prompt or threshold changed. The
 judges have not run on test; their run (router; Gemini is paid) waits for your go
 (`docs/measurements.md` § Rollbacks and retries labelled).
+
+## Stop 37: the loop on software questions, graded by you (method fixed 2026-10-08, before the run)
+
+**Question.** In a domain you know, and graded by you: (1) are the sentences the auditor rejects real errors,
+(2) is a retry with the documentation inserted better than a retry with decode steering, and (3) are the loop's
+final answers better than a plain answer from the same model?
+
+**Battery.** `batteries/software/test.jsonl`: 40 questions, 8 per area, premises quoted verbatim from public
+documentation (`batteries/software/README.md`). Every question has its answer in the premise. Nothing is tuned on
+it, and it does not change after this commit.
+
+**Setup.** As stop 30 except the domain wording. L4, Qwen 2.5 7B Instruct bf16, SGLang 0.5.21, the same auditor
+(claim check + `nli-deberta-v3-base`; no enrichment layer, which exists only for statutes), 3 retries per point,
+8 per answer, cache flushed per answer. The prompts keep their structure, with legislation wording replaced:
+- system: `You answer questions about software using only the documentation below. State figures, defaults,
+  version numbers and names exactly as the documentation gives them. If the documentation does not answer the
+  question, say so. Answer in a few plain sentences, without headings or lists.\n\nDocumentation:\n{premise}`;
+- refusal: `I cannot state this point reliably from the documentation provided.`;
+- inserted turn (v2): `The documentation relevant to the question "{query}":\n{source}\n\nContinue your answer to
+  the question from exactly where it stops.`
+- Cells: `4B` (decode steering), `4B-inject-v2` (documentation inserted at the cut, question restated) and `4D`
+  (full retry). The **plain answer** is 4D's first draft, written before any check. 4B and 4B-inject-v2 decode
+  the same tokens until their first rollback, so each answer with a rollback gives one shared state: the same
+  answer so far and the same rejected draft, retried both ways. No router gate (every question is answerable).
+
+**Your grading sheet** (blind; seed 20261008; key git-ignored, its SHA-256 recorded here before you grade):
+- Part A, per shared state: the rejected draft and the two first retries, shuffled and lettered, under the question,
+  the documentation and the answer so far. Three columns: `correct` (yes if every claim matches the documentation
+  shown), `answers` (yes if it helps answer the question asked), `reads_well` (yes if it is a complete sentence that
+  continues the answer; no for pasted labels, fragments or repeats).
+- Part B, per question: the plain answer, 4B's final answer and 4B-inject-v2's final answer, shuffled and
+  lettered. Two columns: `correct`, `answers`.
+- You grade without AI help on the decisions. Your grades are committed before the key is read against them.
+
+**Readings, set now.**
+- **S1, rejections are real:** share of rejected drafts graded not `correct`, with a Wilson 95 % interval. Holds if
+  at least 80 %.
+- **S2, insertion gives better retries:** good retry = `correct`, `answers` and `reads_well`. 4B-inject-v2 against
+  4B, paired per state, exact McNemar. Holds if v2 > 4B with p < 0.05.
+- **S3, the loop gives better answers:** good answer = `correct` and `answers`. 4B against plain and 4B-inject-v2
+  against plain, paired per question, exact McNemar, Holm-corrected. Each holds if the loop cell > plain at
+  adjusted p < 0.05.
+- Also reported: per cell, answers the auditor released with a sentence you graded wrong is not measurable from
+  Part B alone, so Part B reports good answers only; Part A reports retries the auditor accepted that are not good.
+- 40 questions show only large effects. If fewer than 10 shared states arise, S1 and S2 are reported as counts,
+  not read.
+
+**Model labels against yours.** After your grades are committed, you may give the same sheet (never the key) to
+the external system used in stop 36 (Claude Opus 5.5, effort xhigh). Its agreement with you (Cohen's kappa per
+column) is reported, as evidence for how far its stop 36 labels stand in for a person's.
+
+- Run: `scripts/modal_m4.py::grid --split software` (Modal L4, paid; your go 2026-10-08). Outputs:
+  `results/software/`. Sheet and report: `scripts/software_review.py`.
