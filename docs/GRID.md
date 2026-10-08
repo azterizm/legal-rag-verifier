@@ -327,3 +327,8 @@ this method stands. So the core labels are model labels, not human labels. P1 to
 and the kappa rule for gpt-oss and Gemini measures agreement with that system, not with a person. Human labels
 move to a software battery in your domain (stop 37), which also measures how far model labels can stand in for
 yours.
+
+**Labels received (2026-10-08).** Labeller: Claude Opus 5.5 at effort xhigh, run by you outside this repository.
+It was given `sheet.md` only, not the key (your confirmation). 212 of 212 items labelled, every value valid.
+Committed as `results/grid/rollback/labels.csv` before any judge saw a test item and before the key was read
+against them.
