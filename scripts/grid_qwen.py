@@ -33,6 +33,7 @@ from grid_cells import (  # type: ignore[import-not-found]  # noqa: E402
 
 from legal_rag_verifier.backends.sglang import SGLangBackend  # noqa: E402
 from legal_rag_verifier.engine import (  # noqa: E402
+    DEFAULT_REFUSAL,
     INJECT_TEMPLATE,
     SYSTEM_PROMPT,
     InFlightGenerator,
@@ -57,16 +58,48 @@ INJECT = {
 }
 INJECT_STYLE = "turn"  # chosen on the dev pilot (docs/GRID.md, stop 27), before the test run
 
+# stop 37, the software battery: the same prompts with legislation wording replaced (docs/GRID.md)
+SOFTWARE_PROMPT = (
+    "You answer questions about software using only the documentation below. State figures, "
+    "defaults, version numbers and names exactly as the documentation gives them. If the "
+    "documentation does not answer the question, say so. Answer in a few plain sentences, without "
+    "headings or lists.\n\nDocumentation:\n{premise}"
+)
+SOFTWARE_REFUSAL = "I cannot state this point reliably from the documentation provided."
+SOFTWARE_INJECT = {
+    "v2": (
+        '<|im_end|>\n<|im_start|>user\nThe documentation relevant to the question "{query}":\n'
+        "{source}\n\nContinue your answer to the question from exactly where it stops."
+        "<|im_end|>\n<|im_start|>assistant\n"
+    ),
+}
+
 
 class QwenCells:
-    def __init__(self, url: str, model_path: str, revision: str) -> None:
+    def __init__(self, url: str, model_path: str, revision: str, domain: str = "legal") -> None:
         from legal_rag_verifier.nli import SentenceNLIVerifier  # noqa: PLC0415
 
         self.backend = SGLangBackend.connect(url, model_path, revision=revision)
         self.verifier = Verifier(
             SentenceNLIVerifier("cross-encoder/nli-deberta-v3-base", "cuda", local_files_only=False)
         )
-        self.engine = InFlightGenerator(self.backend, self.verifier, max_new_tokens=MAX_NEW_TOKENS)
+        if domain == "software":
+            self.system_prompt, refusal, templates = (
+                SOFTWARE_PROMPT,
+                SOFTWARE_REFUSAL,
+                SOFTWARE_INJECT,
+            )
+        elif domain == "legal":
+            self.system_prompt, refusal, templates = SYSTEM_PROMPT, DEFAULT_REFUSAL, INJECT
+        else:
+            raise ValueError(domain)
+        self.engine = InFlightGenerator(
+            self.backend,
+            self.verifier,
+            max_new_tokens=MAX_NEW_TOKENS,
+            system_prompt=self.system_prompt,
+            refusal=refusal,
+        )
         self.inject = {
             style: InFlightGenerator(
                 self.backend,
@@ -74,8 +107,10 @@ class QwenCells:
                 max_new_tokens=MAX_NEW_TOKENS,
                 steering="inject",
                 inject_template=template,
+                system_prompt=self.system_prompt,
+                refusal=refusal,
             )
-            for style, template in INJECT.items()
+            for style, template in templates.items()
         }
 
     def chat(self, messages: Messages) -> Reply:
@@ -100,7 +135,7 @@ class QwenCells:
                 raise ValueError(f"no injection style chosen for {cell!r}")
             record = in_flight(self.inject[style], query, premise)
         elif cell == "4D":
-            record = full_retry(self.chat, self.verifier, query, premise, SYSTEM_PROMPT)
+            record = full_retry(self.chat, self.verifier, query, premise, self.system_prompt)
         else:
             raise ValueError(cell)
         return record

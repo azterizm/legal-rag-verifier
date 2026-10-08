@@ -391,3 +391,10 @@ column) is reported, as evidence for how far its stop 36 labels stand in for a p
 
 - Run: `scripts/modal_m4.py::grid --split software` (Modal L4, paid; your go 2026-10-08). Outputs:
   `results/software/`. Sheet and report: `scripts/software_review.py`.
+
+**Run and sheet (2026-10-08).** The run finished on one L4: 40 answers per cell, no errors. 4B rolled back in 12
+answers (21 points); 4B-inject-v2 in the same 12 (23 points); every inserted retry hit the prefix cache (14 of 14).
+All 12 answers with a rollback give a shared state, so S1 and S2 are read (at least 10). Sheet: 12 states,
+34 texts in Part A; 40 questions, 69 texts in Part B (identical answers shown once: with no rollback, 4B and
+4B-inject-v2 write the same answer, and the plain answer equals 4B's on 23 of 40). Key SHA-256
+(`results/software/review/key.json`, git-ignored): `ce97382831ea59ff665f34be82f6e442e531e18b1212e7491741c3a0825aa463`.

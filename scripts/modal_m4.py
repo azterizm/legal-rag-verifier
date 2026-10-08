@@ -136,6 +136,7 @@ class Grid:
     """One SGLang server for all of 4B and 4D; called a chunk at a time so the run can resume."""
 
     revision: str = modal.parameter()
+    domain: str = modal.parameter(default="legal")
 
     @modal.enter()
     def start(self) -> None:
@@ -143,7 +144,7 @@ class Grid:
 
         self._server = sglang_server(self.revision)
         url = self._server.__enter__()
-        self.cells = QwenCells(url, MODEL, self.revision)
+        self.cells = QwenCells(url, MODEL, self.revision, self.domain)
 
     @modal.exit()
     def stop(self) -> None:
@@ -163,21 +164,31 @@ def grid(
     cells: str = "4B,4D", limit: int = 0, chunk: int = 8, split: str = "test", tag: str = ""
 ) -> None:
     """``--split dev`` writes under results/grid/dev/; ``--tag`` suffixes the file name (a
-    re-run of a cell that already has results, e.g. ``--cells 4B --limit 10 --tag=-parity``)."""
+    re-run of a cell that already has results, e.g. ``--cells 4B --limit 10 --tag=-parity``).
+    ``--split software`` runs the stop 37 battery (``batteries/software``) with the software
+    prompts and writes under results/software/."""
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
     from grid_cells import gated  # noqa: PLC0415
     from grid_gemini import OUT, done_ids  # noqa: PLC0415
     from grid_prompts import premise, rows  # noqa: PLC0415
 
-    selected = rows(split)[: limit or None]
-    out = OUT if split == "test" else OUT / split
+    if split == "software":
+        from software_battery import premise, rows  # noqa: PLC0415
+
+        selected = rows()[: limit or None]
+        out = ROOT / "results/software"
+    else:
+        selected = rows(split)[: limit or None]
+        out = OUT if split == "test" else OUT / split
     revision = download.remote()
-    runner = Grid(revision=revision)
+    runner = Grid(revision=revision, domain="software" if split == "software" else "legal")
     out.mkdir(parents=True, exist_ok=True)
     for cell in cells.split(","):
         path = out / f"{cell}{tag}.jsonl"
         todo = [r for r in selected if r["id"] not in done_ids(path)]
-        if cell == "4B-inject-v2":  # stop 30: the router's refusals never reach generation
+        if (
+            cell == "4B-inject-v2" and split != "software"
+        ):  # stop 30: router refusals skip generation
             routes = json.loads((ROOT / f"batteries/grid/routes-{split}.json").read_text())
             refused = [r for r in todo if routes[r["id"]]["next_action"] == "REFUSE"]
             with path.open("a", encoding="utf-8") as f:
