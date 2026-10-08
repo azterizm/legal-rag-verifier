@@ -1,0 +1,92 @@
+{
+ "grades": "results/software/review/grades.csv",
+ "shared_states": 12,
+ "S1_rejections_real": {
+  "wrong": 1,
+  "share": 0.0833,
+  "wilson95": [
+   0.0149,
+   0.3539
+  ],
+  "holds": false,
+  "readable": true
+ },
+ "S2_good_retry_v2_vs_4B": {
+  "a": 7,
+  "b": 8,
+  "only_a": 1,
+  "only_b": 2,
+  "p": 1.0,
+  "holds": false,
+  "readable": true
+ },
+ "S3_good_answer_vs_plain_holm": {
+  "4B_vs_plain": {
+   "a": 29,
+   "b": 32,
+   "only_a": 0,
+   "only_b": 3,
+   "p": 0.25,
+   "holm_p": 0.5,
+   "holds": false
+  },
+  "v2_vs_plain": {
+   "a": 30,
+   "b": 32,
+   "only_a": 1,
+   "only_b": 3,
+   "p": 0.625,
+   "holm_p": 0.625,
+   "holds": false
+  }
+ },
+ "part_a": {
+  "rejected": {
+   "no_text": 0,
+   "correct": 11,
+   "answers": 12,
+   "reads_well": 10,
+   "good": 9,
+   "auditor_accepted": 0,
+   "accepted_not_good": 0,
+   "accepted_not_correct": 0
+  },
+  "4B": {
+   "no_text": 0,
+   "correct": 10,
+   "answers": 12,
+   "reads_well": 10,
+   "good": 8,
+   "auditor_accepted": 6,
+   "accepted_not_good": 2,
+   "accepted_not_correct": 0
+  },
+  "v2": {
+   "no_text": 0,
+   "correct": 9,
+   "answers": 9,
+   "reads_well": 9,
+   "good": 7,
+   "auditor_accepted": 5,
+   "accepted_not_good": 3,
+   "accepted_not_correct": 2
+  }
+ },
+ "part_b": {
+  "plain": {
+   "correct": 32,
+   "answers": 40,
+   "good": 32
+  },
+  "4B": {
+   "correct": 32,
+   "answers": 37,
+   "good": 29
+  },
+  "v2": {
+   "correct": 30,
+   "answers": 40,
+   "good": 30
+  }
+ }
+}

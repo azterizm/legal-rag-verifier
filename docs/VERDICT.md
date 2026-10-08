@@ -11,12 +11,12 @@ recovery were out of scope.
 
 ## Verdict
 
-The architecture holds as a mechanism. It is not ready for production as built. Each part works on a production
-inference server. With the provision inserted, the model's retries pass the auditor far more often. Labelled
-sentence by sentence, those retries are better grounded but mostly unusable: the model pastes the provision
-instead of continuing the answer. On live output most rejected sentences were not errors. These labels come from
-a frontier model; a hand-graded software set (stop 37) checks them. The changes required before a production
-trial are listed at the end.
+The architecture holds as a mechanism. Rollback, cache reuse and insertion of the source run on a production
+inference server at low cost. It does not improve answers as built. The auditor decides when to roll back, and on
+live output most of its rejections were wrong: 1 of 12 by hand on software questions, 18 of 46 by a frontier
+model's labels on statutes. Graded by hand, the loop's final answers were no better than one plain answer from
+the same model: 29 and 30 good against 32 of 40. Inserting the source makes retries pass the auditor. It does
+not make them better. The changes required before a production trial are listed at the end.
 
 ## What was tested
 
@@ -33,7 +33,8 @@ setup produced it. A blind sample of 80 answers was also labelled by hand.
 ## What holds
 
 The auditor works at a usable rate. On a sealed test set it caught 80 % of planted errors and wrongly rejected
-7.9 % of correct sentences. 89 % of its rejections were correct.
+7.9 % of correct sentences. 89 % of its rejections were correct. That was measured on planted errors. On live model output
+its rejections were far less often right; see below.
 
 Rollback reuses the cache. Every retry on the server reused the text already processed, so only new tokens were
 computed. A retry costs 117 ms on the L4 at bf16 and 69 ms at FP8, against 270 ms and 170 ms to reprocess the
@@ -62,7 +63,14 @@ sentence in all 18 states that had one.
 
 ## What does not hold yet
 
-The auditor's rejections and passes do not match sentence-level labels. On the 46 shared rollback states, labelled
+On live output the auditor's rejections were mostly wrong. On 40 software questions graded by hand, with
+documentation quoted verbatim as the source, 1 of 12 rejected sentences was an error. The loop did not roll back on 5 of
+the 8 wrong plain answers. 9 rollbacks fell on answers that were already correct. Retries were not better: good retries
+7 with the source inserted, 8 with decode steering. Final answers were good 29 times (steering) and 30 times
+(insertion), against 32 for one plain answer; the loop fixed 1 answer and made 3 worse, mostly by replacing correct
+text with the refusal sentence.
+
+The auditor's rejections and passes do not match sentence-level labels on statutes either. On the 46 shared rollback states, labelled
 blind by Claude Opus 5.5 (model labels, not human), 18 of 46 rejected sentences were real errors, against 89 % on
 the sealed battery. With the provision inserted, 33 of 46 retries were supported, against 17 with decode
 steering, but only 11 were good: supported, on the question and reading on. 28 pasted the provision or started
@@ -112,10 +120,12 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 
 ## Required before production
 
-1. Check whether the rejected sentences are real errors, and whether the retries are correct and answer the
-   question: with a frontier model's labels on the statute set (stop 36), and by hand on a software set
-   (stop 37). Use LLM judges only where they agree with the hand labels.
-2. Restate the question in the injected turn, as in the second version. Do not add a per-sentence relevance
+1. Raise the auditor's precision on live model output before anything else, and measure it on real generations
+   graded by people, not on planted errors. The sealed battery's 89 % did not carry over: 8 % by hand on software,
+   39 % by model labels on statutes. A rollback loop is only as good as its rejections.
+2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
+   a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
+   injected turn, as in the second version. Do not add a per-sentence relevance
    check. A single sentence of a correct answer often does not address the question on its own, so the check
    would reject correct text and exhaust the retries. Judge relevance on the whole answer.
 3. Keep the router gate for abstention. Before the next run, fix a judge prompt that scores a refusal of a

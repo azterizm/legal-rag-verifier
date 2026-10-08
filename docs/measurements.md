@@ -602,3 +602,47 @@ copies the provision instead of continuing the answer. A retry with no provision
 the top (R3) was good more than twice as often. The auditor's pass rate overstated the mechanism's benefit; that
 is the gap stop 36 was set up to measure. The labels come from one model and one run; the software battery
 (stop 37) checks the same questions by hand.
+
+## Software battery, graded by you (stop 37, 2026-10-08; method in `docs/GRID.md`)
+
+40 software questions with verbatim documentation as the premise (`batteries/software/`), Qwen 2.5 7B on one L4,
+the same auditor as the statute runs. You graded 103 texts blind, without AI help. Raw: `results/software/`,
+`results/software/review/grades.csv`, `report.json` (`scripts/software_review.py report`).
+
+**Run.** 12 of 40 answers rolled back (21 points in 4B, 23 in 4B-inject-v2); all 12 gave a shared state. Every
+inserted retry hit the prefix cache (14 of 14). Median time to first output 1.68 s (4B) and 1.71 s (v2); median
+wall time 3.9 s for both. 4B wrote the refusal sentence at 11 points in 6 answers, v2 at 10 points in 6 answers.
+
+| Part A, 12 shared states | Rejected draft | 4B retry (steering) | v2 retry (inserted) |
+|---|---|---|---|
+| Correct | 11 | 10 | 9 |
+| Answers the question | 12 | 12 | 9 |
+| Reads well | 10 | 10 | 9 |
+| Good (all three) | 9 | 8 | 7 |
+| Accepted by the auditor | — | 6 | 5 |
+| Accepted but not correct | — | 0 | 2 |
+
+| Part B, 40 questions | Plain answer | 4B final | v2 final |
+|---|---|---|---|
+| Correct | 32 | 32 | 30 |
+| Answers the question | 40 | 37 | 40 |
+| Good (correct and answers) | 32 | 29 | 30 |
+
+**Readings, set before the run.**
+- S1 fails. 1 of 12 rejected drafts was wrong (8 %, Wilson 95 % 1 to 35 %), against the 80 % bar.
+- S2 fails. Good retries: v2 7, 4B 8 (only v2 1, only 4B 2; exact McNemar p = 1.0).
+- S3 fails. Good answers against plain: 4B 29 against 32 (loop better on 0, worse on 3; Holm p = 0.5); v2 30
+  against 32 (better on 1, worse on 3; Holm p = 0.63).
+
+**Where the loop changed the outcome.** 8 plain answers were wrong. The auditor flagged 4 of them after the fact
+(4D), and the in-flight loop rolled back on 3. The loop fixed 1 (sw-37) in both cells. 5 wrong plain answers had
+no rollback. 9 rollbacks fell on questions whose plain answer was correct. Where the loop made an answer worse,
+the cause was the refusal sentence replacing correct content, repeated up to three times (sw-05, sw-19, and sw-31,
+where v2 also pasted an unrelated line of the documentation), or a new error in a retry (sw-06, sw-11, sw-35).
+
+**What this shows.** In a domain you can judge, the auditor's rejections were almost all wrong, and it missed most
+of the wrong answers. The rollback mechanism ran as designed: cache reuse on every inserted retry and no added
+latency to speak of. But because the decisions to roll back were mostly false, the loop could only lose: its
+answers were no better than one plain generation and slightly worse. This agrees with stop 36 on the statute set
+(18 of 46 rejections real, by model labels). 12 states and 40 questions show only large effects, and the S1 gap is
+large.
