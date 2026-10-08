@@ -13,7 +13,7 @@ given, as the sentence is written. A deterministic claim check covers figures, d
 instrument titles, modal verbs and qualifiers; an NLI head (DeBERTa-v3) covers the prose. A
 rejected sentence is rolled back and regenerated on the inference server's prefix cache, so only
 that sentence is thrown away. The retry can insert the provision the sentence was checked against
-at the cut point, which is what makes a small model recover.
+at the cut point, which makes a small model's retry pass the check far more often.
 
 **Status: proof of concept.** The mechanism holds on a production inference server; the full loop is
 not yet production-ready. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
@@ -110,8 +110,9 @@ turn without the provision, 14. With the provision inserted, the regenerated sen
 likely in 46 of 46 states, the rejected sentence less likely in 45 of 46, and attention on
 provision text rose in 46 of 46.
 
-**Open:** the inserted provision makes the model faithful to the provision, not always to the
-question. Restating the question in the inserted turn recovers part of that loss. See
+**Open:** the inserted provision makes the retry pass the auditor, not always answer the question.
+Restating the question in the inserted turn recovers part of that loss. Whether the retries that
+pass are correct has not yet been checked by hand. See
 [`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) for the proof-of-concept verdict and its limits.
 
 ## Reproduce the evidence
