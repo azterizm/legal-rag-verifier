@@ -123,6 +123,8 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 1. Raise the auditor's precision on live model output before anything else, and measure it on real generations
    graded by people, not on planted errors. The sealed battery's 89 % did not carry over: 8 % by hand on software,
    39 % by model labels on statutes. A rollback loop is only as good as its rejections.
+   Giving the entailment model the question, in the answer or in the source, does not fix this (stop 40): it
+   passes right and wrong text alike.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
