@@ -103,8 +103,9 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 
 ## Required before production
 
-1. Check by hand whether the rejected sentences are real errors, and whether the retries are correct and
-   answer the question (stop 36). Use LLM judges only where they agree with those labels.
+1. Check whether the rejected sentences are real errors, and whether the retries are correct and answer the
+   question: with a frontier model's labels on the statute set (stop 36), and by hand on a software set
+   (stop 37). Use LLM judges only where they agree with the hand labels.
 2. Restate the question in the injected turn, as in the second version. Do not add a per-sentence relevance
    check. A single sentence of a correct answer often does not address the question on its own, so the check
    would reject correct text and exhaust the retries. Judge relevance on the whole answer.
