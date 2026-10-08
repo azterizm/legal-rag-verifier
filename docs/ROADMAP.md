@@ -17,12 +17,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-08 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 37: a go to run the software battery (Modal, paid); stop 36 waits for the external labels |
-| Waiting on you | The external system's labels and details (stop 36); a go for the stop 37 run |
+| Next step | Stop 37: you grade `results/software/review/grades.csv` (read `sheet.md`; 103 texts) |
+| Waiting on you | Your grades; optionally the same sheet graded by the external system, for agreement |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-08 (38): **Stop 36 read; stop 37 run (your go).** Stop 36 labels from Claude Opus 5.5 xhigh (sheet only,
+  key withheld; your confirmation), committed before scoring. P1 fails: 18 of 46 rejected drafts are real errors.
+  P2 fails: good retries R1 11, R0 17; R3 and R4 26 each beat R1. R1 is the best grounded (33 supported) but 28
+  of its retries paste the provision or start mid-clause; the auditor accepted 30 not-good R1 retries. Written into
+  measurements, VERDICT and GRID. Stop 37 method fixed in GRID before the run; software prompts change wording
+  only. Run on one L4: 12 of 40 answers rolled back, all 12 shared; sheet built (103 texts), key hash in GRID.
+  **Resume:** your grades committed, then `software_review.py report`.
 
 - 2026-10-08 (37): **Software battery for your own grading (your decision).** The statute sheet is outside your
   domain; you gave it to an external frontier AI system to label (stop 36 amended in GRID: model labels, appended

@@ -53,3 +53,6 @@ results/grid/replay/sglang.jsonl
 # Stop 36 blind review: the sheet quotes full statute text; the key would unblind it (its hash is in GRID.md)
 results/grid/rollback/sheet.md
 results/grid/rollback/key.json
+
+# Stop 37 grading: the key would unblind your grades (its hash is in GRID.md)
+results/software/review/key.json
