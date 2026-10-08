@@ -12,8 +12,9 @@ recovery were out of scope.
 ## Verdict
 
 The architecture holds as a mechanism. It is not ready for production as built. Each part works on a production
-inference server. The full loop makes the model faithful to the text it is given, but not fully to the question it
-was asked. The changes required before a production trial are listed at the end.
+inference server. With the provision inserted, the model's retries pass the auditor far more often. They do not
+always answer the question. No human has yet checked whether the retries that pass are correct; that check is
+stop 36. The changes required before a production trial are listed at the end.
 
 ## What was tested
 
@@ -40,7 +41,7 @@ model on an L4 takes about 53 ms.
 Checking sentence by sentence releases output sooner. Qwen showed its first verified sentence after 3.8 s, against
 8.1 s when the whole answer was checked first. Gemini showed the same pattern, 11.6 s against 16.1 s.
 
-Adding the source makes a cheap model comply. With the provision added, the first retry passed the auditor 84 % of
+Adding the source makes a cheap model pass the auditor. With the provision added, the first retry passed the auditor 84 % of
 the time after a rule-based rejection, against 28 % without it. After an entailment rejection the figures were
 76 % and 41 %. Rejected sentences that ended in a refusal fell from 37 to 6. Every retry reused the cache.
 Discarded tokens halved. Median time per answer fell from 7.9 s to 6.5 s. The judge found fewer answers with an
@@ -102,15 +103,17 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 
 ## Required before production
 
-1. Restate the question in the injected turn, as in the second version. Do not add a per-sentence relevance
+1. Check by hand whether the rejected sentences are real errors, and whether the retries are correct and
+   answer the question (stop 36). Use LLM judges only where they agree with those labels.
+2. Restate the question in the injected turn, as in the second version. Do not add a per-sentence relevance
    check. A single sentence of a correct answer often does not address the question on its own, so the check
    would reject correct text and exhaust the retries. Judge relevance on the whole answer.
-2. Keep the router gate for abstention. Before the next run, fix a judge prompt that scores a refusal of a
+3. Keep the router gate for abstention. Before the next run, fix a judge prompt that scores a refusal of a
    provision that does not exist as correct.
-3. Reduce entailment errors on statutory drafting, starting with dropped qualifiers and rules judged against their
+4. Reduce entailment errors on statutory drafting, starting with dropped qualifiers and rules judged against their
    exceptions.
-4. Set the latency target from the measured cost of 69 to 117 ms per retry, or move to faster hardware.
-5. Tune each change on the development set, then re-run the 103 test questions with the judge prompt fixed in advance.
+5. Set the latency target from the measured cost of 69 to 117 ms per retry, or move to faster hardware.
+6. Tune each change on the development set, then re-run the 103 test questions with the judge prompt fixed in advance.
 
 Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/grid/`. Decisions:
 `docs/ROADMAP.md`.
