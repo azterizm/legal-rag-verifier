@@ -1,0 +1,149 @@
+{
+ "labels": "results/grid/rollback/labels.csv",
+ "states": 46,
+ "P1_rejected_drafts_real_errors": {
+  "real_errors": 18,
+  "share": 0.3913,
+  "wilson95": [
+   0.2639,
+   0.5354
+  ],
+  "holds": false
+ },
+ "P2_good_retry_R1_vs_R0": {
+  "R1_good": 11,
+  "R0_good": 17,
+  "only_R1": 6,
+  "only_R0": 12,
+  "p": 0.238,
+  "holds": false
+ },
+ "P2_secondary_holm": {
+  "R1_vs_R3": {
+   "R1_good": 11,
+   "R3_good": 26,
+   "only_R1": 3,
+   "only_R3": 18,
+   "p": 0.00149,
+   "holm_p": 0.00298,
+   "holds": true
+  },
+  "R1_vs_R4": {
+   "R1_good": 11,
+   "R4_good": 26,
+   "only_R1": 4,
+   "only_R4": 19,
+   "p": 0.0026,
+   "holm_p": 0.00298,
+   "holds": true
+  }
+ },
+ "descriptive_not_preset": {
+  "supported_R1_vs_R0": {
+   "R1": 33,
+   "R0": 17,
+   "only_R1": 19,
+   "only_R0": 3,
+   "p": 0.000855
+  },
+  "supported_R1_vs_R3": {
+   "R1": 33,
+   "R3": 27,
+   "only_R1": 11,
+   "only_R3": 5,
+   "p": 0.21
+  },
+  "supported_R1_vs_R4": {
+   "R1": 33,
+   "R4": 26,
+   "only_R1": 14,
+   "only_R4": 7,
+   "p": 0.189
+  }
+ },
+ "arms": {
+  "X": {
+   "states": 46,
+   "no_text": 0,
+   "grounding": {
+    "supported": 21,
+    "unsupported": 16,
+    "contradicted": 2,
+    "no_claim": 7
+   },
+   "off_question": 1,
+   "not_reading_on": 1,
+   "good": 21,
+   "supported_off_question": 0,
+   "auditor_accepted": 0,
+   "accepted_not_good": 0,
+   "accepted_real_error": 0
+  },
+  "R0": {
+   "states": 46,
+   "no_text": 2,
+   "grounding": {
+    "unsupported": 19,
+    "supported": 17,
+    "no_claim": 1,
+    "contradicted": 7
+   },
+   "off_question": 1,
+   "not_reading_on": 1,
+   "good": 17,
+   "supported_off_question": 0,
+   "auditor_accepted": 18,
+   "accepted_not_good": 8,
+   "accepted_real_error": 8
+  },
+  "R1": {
+   "states": 46,
+   "no_text": 0,
+   "grounding": {
+    "supported": 33,
+    "unsupported": 9,
+    "no_claim": 4
+   },
+   "off_question": 17,
+   "not_reading_on": 28,
+   "good": 11,
+   "supported_off_question": 9,
+   "auditor_accepted": 39,
+   "accepted_not_good": 30,
+   "accepted_real_error": 5
+  },
+  "R3": {
+   "states": 46,
+   "no_text": 3,
+   "grounding": {
+    "supported": 27,
+    "no_claim": 8,
+    "unsupported": 8
+   },
+   "off_question": 2,
+   "not_reading_on": 0,
+   "good": 26,
+   "supported_off_question": 1,
+   "auditor_accepted": 17,
+   "accepted_not_good": 5,
+   "accepted_real_error": 3
+  },
+  "R4": {
+   "states": 46,
+   "no_text": 0,
+   "grounding": {
+    "supported": 26,
+    "unsupported": 12,
+    "contradicted": 2,
+    "no_claim": 6
+   },
+   "off_question": 1,
+   "not_reading_on": 1,
+   "good": 26,
+   "supported_off_question": 0,
+   "auditor_accepted": 14,
+   "accepted_not_good": 6,
+   "accepted_real_error": 6
+  }
+ }
+}
