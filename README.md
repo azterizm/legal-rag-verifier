@@ -110,9 +110,10 @@ turn without the provision, 14. With the provision inserted, the regenerated sen
 likely in 46 of 46 states, the rejected sentence less likely in 45 of 46, and attention on
 provision text rose in 46 of 46.
 
-**Open:** the inserted provision makes the retry pass the auditor, not always answer the question.
-Restating the question in the inserted turn recovers part of that loss. Whether the retries that
-pass are correct has not yet been checked by hand. See
+**Open:** on live model output the auditor's rejections were mostly wrong: 1 of 12 by hand on
+software questions, 18 of 46 by a frontier model's labels on statutes. Graded by hand, the loop's
+answers were no better than one plain answer from the same model. Inserting the provision makes
+the retry pass the auditor; it does not make it better. See
 [`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) for the proof-of-concept verdict and its limits.
 
 ## Reproduce the evidence

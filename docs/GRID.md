@@ -402,3 +402,8 @@ All 12 answers with a rollback give a shared state, so S1 and S2 are read (at le
 **Grades received (2026-10-08).** Graded by you, without AI help on the decisions. 103 of 103 texts, every value
 valid. Committed as `results/software/review/grades.csv` before the key was read against them. You did not give
 the sheet to the external system, so no model-against-person agreement is reported for this stop.
+
+**After grading (2026-10-08).** `report` read the grades against the key once. S1 fails (1 of 12 rejected drafts
+wrong); S2 fails (good retries v2 7, 4B 8); S3 fails for both cells (good answers 4B 29, v2 30, plain 32). The
+per-question breakdown of where the loop helped or hurt was added after the readings. No rule, prompt or threshold
+changed (`docs/measurements.md` § Software battery, graded by you).

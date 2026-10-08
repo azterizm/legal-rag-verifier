@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-08 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 37: you grade `results/software/review/grades.csv` (read `sheet.md`; 103 texts) |
-| Waiting on you | Your grades; optionally the same sheet graded by the external system, for agreement |
+| Next step | None open. Next work: VERDICT § Required before production, item 1 (auditor precision on live output) |
+| Waiting on you | A decision on next work; the stop 36 judge runs (gpt-oss, Gemini) are not needed unless you want them |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-08 (39): **Stop 37 graded by you; all three readings fail.** Grades committed before scoring. S1: 1 of 12
+  rejected drafts wrong (8 %). S2: good retries v2 7, 4B 8. S3: good answers plain 32, 4B 29, v2 30 of 40. The loop
+  fixed 1 answer and made 3 worse (refusal sentence over correct text, or a new error); 5 of 8 wrong plain answers
+  had no rollback. Agrees with stop 36. VERDICT now says the mechanism runs but does not improve answers as built;
+  item 1 of Required before production is the auditor's precision on live output. README "Open" updated (local).
+  **Resume:** your decision on next work.
 
 - 2026-10-08 (38): **Stop 36 read; stop 37 run (your go).** Stop 36 labels from Claude Opus 5.5 xhigh (sheet only,
   key withheld; your confirmation), committed before scoring. P1 fails: 18 of 46 rejected drafts are real errors.
