@@ -49,3 +49,7 @@ results/grid/review_key.json
 
 # stop 29 raw replay: prompt token ids encode statute text from data/ (arms.jsonl is the kept copy)
 results/grid/replay/sglang.jsonl
+
+# Stop 36 blind review: the sheet quotes full statute text; the key would unblind it (its hash is in GRID.md)
+results/grid/rollback/sheet.md
+results/grid/rollback/key.json

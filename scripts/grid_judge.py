@@ -78,8 +78,8 @@ Return JSON with keys:
 PROMPT_SHA = hashlib.sha256((SYSTEM + USER).encode()).hexdigest()
 
 
-def chat(messages: list[dict[str, str]]) -> tuple[str, dict[str, Any], int]:
-    body = json.dumps({"model": MODEL, "messages": messages, "temperature": 0}).encode()
+def chat(messages: list[dict[str, str]], model: str = MODEL) -> tuple[str, dict[str, Any], int]:
+    body = json.dumps({"model": model, "messages": messages, "temperature": 0}).encode()
     request = urllib.request.Request(  # noqa: S310 - the fixed localhost router URL
         ROUTER_URL,
         data=body,
