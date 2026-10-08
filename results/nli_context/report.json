@@ -1,0 +1,111 @@
+{
+ "software": {
+  "V0": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 19,
+   "caught": 4,
+   "false_rollbacks_by_nli": 18,
+   "caught_by_nli": 2,
+   "rollbacks_other": 0
+  },
+  "V1": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 18,
+   "caught": 6,
+   "false_rollbacks_by_nli": 17,
+   "caught_by_nli": 4,
+   "rollbacks_other": 0,
+   "worth_a_fresh_test_on_this_set": false
+  },
+  "V2": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 14,
+   "caught": 5,
+   "false_rollbacks_by_nli": 13,
+   "caught_by_nli": 3,
+   "rollbacks_other": 0,
+   "worth_a_fresh_test_on_this_set": false
+  },
+  "V3": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 17,
+   "caught": 3,
+   "false_rollbacks_by_nli": 16,
+   "caught_by_nli": 1,
+   "rollbacks_other": 0,
+   "worth_a_fresh_test_on_this_set": false
+  },
+  "V0_reproduces_recorded": {
+   "same": 34,
+   "of": 34,
+   "verdicts": {
+    "ROLLBACK": 23,
+    "EMIT": 11
+   }
+  }
+ },
+ "statutes": {
+  "V0": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 56,
+   "caught": 51,
+   "false_rollbacks_by_nli": 28,
+   "caught_by_nli": 22,
+   "rollbacks_other": 19
+  },
+  "V1": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 51,
+   "caught": 47,
+   "false_rollbacks_by_nli": 21,
+   "caught_by_nli": 20,
+   "rollbacks_other": 21,
+   "worth_a_fresh_test_on_this_set": false
+  },
+  "V2": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 48,
+   "caught": 43,
+   "false_rollbacks_by_nli": 18,
+   "caught_by_nli": 16,
+   "rollbacks_other": 21,
+   "worth_a_fresh_test_on_this_set": false
+  },
+  "V3": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 39,
+   "caught": 41,
+   "false_rollbacks_by_nli": 12,
+   "caught_by_nli": 14,
+   "rollbacks_other": 19,
+   "worth_a_fresh_test_on_this_set": false
+  },
+  "V0_reproduces_recorded": {
+   "same": 212,
+   "of": 212,
+   "verdicts": {
+    "ROLLBACK": 126,
+    "EMIT": 86
+   }
+  }
+ },
+ "V1_worth_a_fresh_test": false,
+ "V2_worth_a_fresh_test": false,
+ "V3_worth_a_fresh_test": false
+}

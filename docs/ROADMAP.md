@@ -18,12 +18,16 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | None open. Next work: VERDICT § Required before production, item 1 (auditor precision on live output) |
-| Waiting on you | A decision on next work; the stop 36 judge runs (gpt-oss, Gemini) are not needed unless you want them |
+| Waiting on you | A decision on next work (stop 40: the question in the entailment input does not fix precision) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-08 (40): **Question in the entailment check, offline; no variant passes.** Method fixed in GRID before
+  scoring. V0 reproduced all 246 recorded verdicts. Best cuts in false rollbacks: V2 19 to 14 on software, V3 56 to
+  39 on statutes, each losing catches (V3 keeps 80 %). The model gets more lenient; it does not discriminate better.
+  VERDICT item 1 notes it. **Resume:** your decision on next work.
 - 2026-10-08 (39): **Stop 37 graded by you; all three readings fail.** Grades committed before scoring. S1: 1 of 12
   rejected drafts wrong (8 %). S2: good retries v2 7, 4B 8. S3: good answers plain 32, 4B 29, v2 30 of 40. The loop
   fixed 1 answer and made 3 worse (refusal sentence over correct text, or a new error); 5 of 8 wrong plain answers

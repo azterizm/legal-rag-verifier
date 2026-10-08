@@ -646,3 +646,26 @@ latency to speak of. But because the decisions to roll back were mostly false, t
 answers were no better than one plain generation and slightly worse. This agrees with stop 36 on the statute set
 (18 of 46 rejections real, by model labels). 12 states and 40 questions show only large effects, and the S1 gap is
 large.
+
+## The question in the entailment check (stop 40, 2026-10-08; method in `docs/GRID.md`)
+
+The auditor re-run offline on texts already labelled: 34 software texts (your grades) and 212 statute texts (Claude
+Opus 5.5's labels). Only the entailment model's input changed. V0 is as run and reproduced every recorded verdict.
+V1 puts the question before the sentence, V2 also adds the previous sentence, V3 puts the question before every
+source chunk. Raw: `results/nli_context/`.
+
+| Set | Variant | False rollbacks | Errors caught |
+|---|---|---|---|
+| Software (28 right, 6 wrong) | V0 | 19 | 4 |
+| | V1 | 18 | 6 |
+| | V2 | 14 | 5 |
+| | V3 | 17 | 3 |
+| Statutes (116 right, 73 wrong) | V0 | 56 | 51 |
+| | V1 | 51 | 47 |
+| | V2 | 48 | 43 |
+| | V3 | 39 | 41 |
+
+No variant met the bar set before scoring (halve false rollbacks and keep 90 % of catches, on both sets). Each one
+made the entailment model more lenient and let right and wrong text through in about the same ratio. With V3, words
+from the question started to count as evidence. About half the false rollbacks on statutes come from the claim check,
+which these variants do not touch.

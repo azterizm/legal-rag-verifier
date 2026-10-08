@@ -431,3 +431,28 @@ model is wrapped, not edited.
 **Measures, per set and variant.** Rollbacks of right texts (false rollbacks) and of wrong texts (caught), and
 which check fired. **Reading, set now:** a variant is worth a fresh test if, on both sets, it at least halves V0's
 false rollbacks and still catches at least 90 % of what V0 catches. Small sets show only large effects.
+
+### Stop 40: results (2026-10-08)
+
+Raw: `results/nli_context/` (`scripts/nli_context.py`). V0 gave the recorded verdict on every text (34 of 34
+software, 212 of 212 statutes), so CPU scoring did not move any borderline case.
+
+| Set | Variant | False rollbacks | Caught | False rollbacks, entailment only | Caught, entailment only |
+|---|---|---|---|---|---|
+| Software (28 right, 6 wrong) | V0 | 19 | 4 | 18 | 2 |
+| | V1 | 18 | 6 | 17 | 4 |
+| | V2 | 14 | 5 | 13 | 3 |
+| | V3 | 17 | 3 | 16 | 1 |
+| Statutes (116 right, 73 wrong) | V0 | 56 | 51 | 28 | 22 |
+| | V1 | 51 | 47 | 21 | 20 |
+| | V2 | 48 | 43 | 18 | 16 |
+| | V3 | 39 | 41 | 12 | 14 |
+
+**Reading.** No variant is worth a fresh test. None halves the false rollbacks on either set. V3 comes closest on
+statutes (56 to 39) but catches 41 of V0's 51 (80 %, under the 90 % bar), and on software it catches fewer errors.
+
+**What moved.** Each variant passes some right texts and some wrong ones in about the same ratio. The entailment
+model became more lenient overall; it did not separate right from wrong any better. With V3, 10 wrong statute texts
+now pass. In several, words from the question count as evidence (uk-concept-0046: the question says "bruising", the
+answer adds "such as bruising" to the statute text). The claim check accounts for about half the false rollbacks on
+statutes, and no change to the entailment input touches those.
