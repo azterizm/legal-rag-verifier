@@ -236,3 +236,65 @@ means a gap under about 10 answers is not a difference.
 on 2026-10-08 with the same judge and prompt. The judge rejects every router refusal as an unsupported claim, so
 the abstention part of the reading cannot be met under this protocol. The protocol was not amended after the run;
 the reading is reported as written (`docs/measurements.md` § Injection v2).
+
+## Stop 36: human check of rollbacks and retries (method fixed 2026-10-08, before any label or test judge call)
+
+**Question.** The auditor both rejects a sentence and accepts its retry, so "the retry passed the auditor" does
+not show the retry is right. Are the rejected sentences real errors, and are the retries with the provision
+inserted correct and on the question more often than the other retries from the same state? No change to the
+engine, the auditor or any earlier result follows from this stop; it only measures.
+
+**Core set (labelled by you, all of it).** The 46 parity states of stop 29 (`results/grid/replay/arms.jsonl`).
+Per state: the rejected draft X and the first retries R0 (decode steering, as recorded), R1 (provision inserted at
+the cut), R3 (provision at the top) and R4 (turn without the provision); 230 sentences, 217 after removing exact
+duplicates within a state. R2 is left out: it tests the cache, not quality (same pass or fail as R1 on all 46,
+same tokens on 44). Empty or refused retries (3 in R3, 2 in R0) are not labelled and count as failed retries.
+The answer so far is the committed text of the state (`scripts/replay_states.py`).
+
+**Labels**, identical for you and the judges, per sentence read after the answer so far:
+- `grounding`: `supported` (every claim, with its figures, citations, Act names, conditions and qualifiers, is
+  stated in or follows directly from the provisions), `unsupported` (a claim the provisions do not make, including
+  a rule stated without a condition the provisions attach to it), `contradicted` (the provisions say otherwise) or
+  `no_claim` (no legal claim: a heading, a connective, a fragment, a refusal).
+- `on_question`: yes if the sentence helps answer the question asked; no for true law the question did not ask
+  about.
+- `reads_on`: yes if it is a complete sentence that continues the answer so far without repeating it; no for a
+  fragment, a repeat or a copied heading.
+- Derived: a rejected draft is a **real error** if `unsupported` or `contradicted`. A retry is **good** if
+  `supported`, `on_question` and `reads_on`.
+
+**Blinding.** One sheet, grouped by state so each provision is read once; states in a seeded random order
+(seed 20261008); each state's sentences shuffled and lettered. The sheet shows the question, the provisions
+(statute text, without enrichment), the answer so far and the sentences; never the arm, which sentence was
+rejected, or any auditor verdict. The key is a separate git-ignored file; its SHA-256 is recorded here before
+labelling starts. You label without AI help on the decisions. A sentence copied from the statute can give away
+its arm; each sentence is labelled on its own, not against the others.
+
+**Order.** (1) This method, committed. (2) The judge prompt is tried on dev rollback points only (format and
+plain misreads), then frozen; its SHA-256 is recorded here. (3) The sheet is built; the key hash is recorded.
+(4) Your labels are committed. (5) Only then do the judges see any test item. (6) The report.
+
+**Readings, set now.**
+- **P1, the auditor's precision on live output:** share of the 46 X that are real errors, with a Wilson 95 %
+  interval. The rollbacks read as mostly right if the share is at least 80 % (the sealed battery gave 89 %).
+- **P2, inserting the provision gives better retries:** good-retry rate, R1 against R0, paired per state, exact
+  McNemar. Holds if R1 > R0 with p < 0.05. Secondary, Holm-corrected: R1 against R3 (position) and R1 against R4
+  (content).
+- **P3, faithful but off the question:** per arm, the share of retries that are `supported` but not `on_question`;
+  R1 against R0 reported with no threshold.
+- **Auditor misses on retries:** per arm, retries the auditor accepted that are not good.
+- 46 states show only large effects; a gap of a few states is reported as none.
+
+**Judges and the extended set.** `gpt-oss-120b-medium` and `gemini-3.8-flash-high` via the router, no other model
+or endpoint. One sentence-level prompt, temperature 0, at most 3 asks for valid JSON. Each judge sees the question,
+the provisions (statute text only), the answer so far and one sentence; never the arm, the cell or a verdict. All
+sentences are Qwen output, so neither judge grades its own text. Each judge labels the 217 core sentences; per
+judge, Cohen's kappa against your labels on real error (X) and on good retry (retries) is reported first.
+- **Extended set:** every rejected draft and every released sentence in the test traces of 4B, 4B-inject and
+  4B-inject-v2, exact duplicates (same question, answer so far and sentence) labelled once. It gives P1 on every
+  rollback and a first figure for auditor misses on released sentences.
+- A judge's extended results are used only if its kappa is at least 0.6 on both. Otherwise they are reported as
+  indicative. No judge output changes a rule, prompt, threshold or detector setting (plan R1).
+
+- Script: `scripts/rollback_review.py` (`build`, `pilot`, `judge`, `report`); outputs under
+  `results/grid/rollback/`. Router calls on test, and every Gemini call, need your go.
