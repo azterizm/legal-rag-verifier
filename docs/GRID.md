@@ -319,3 +319,11 @@ judge, Cohen's kappa against your labels on real error (X) and on good retry (re
   `1f7dad48752a21cd3ac41c5730ee8fdf16196576219c583bd489ffae61cecb0f`.
 - Key SHA-256 (`results/grid/rollback/key.json`, git-ignored, rebuilt identically by `build`):
   `235b96bdcaeee15cb74d72789695ca988c16e9d2eccd4474c6795272657c6bca`.
+
+**Change before labelling (2026-10-08, your decision).** You did not label the core sheet: the statute text is
+outside your domain. You gave the blind sheet to an external frontier AI system to label in your place. Its name,
+version and settings are recorded when its labels arrive, and its labels are appended as received; the rest of
+this method stands. So the core labels are model labels, not human labels. P1 to P3 are read on them as written,
+and the kappa rule for gpt-oss and Gemini measures agreement with that system, not with a person. Human labels
+move to a software battery in your domain (stop 37), which also measures how far model labels can stand in for
+yours.

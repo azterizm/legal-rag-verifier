@@ -17,12 +17,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-08 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 36: you label `results/grid/rollback/labels.csv` (212 sentences; read `sheet.md`) |
-| Waiting on you | The labels; then a go for the judges on test (router; Gemini is paid) |
+| Next step | Stop 37: a go to run the software battery (Modal, paid); stop 36 waits for the external labels |
+| Waiting on you | The external system's labels and details (stop 36); a go for the stop 37 run |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-08 (37): **Software battery for your own grading (your decision).** The statute sheet is outside your
+  domain; you gave it to an external frontier AI system to label (stop 36 amended in GRID: model labels, appended
+  as received). New `batteries/software/test.jsonl`: 40 questions, 8 per area (web, databases, languages,
+  architecture, AI/ML), premises quoted verbatim from public docs (checked against the fetched pages), licences per
+  row. Local smoke, no tuning: the claim check accepts all 151 source sentences; with NLI the auditor rejected 6 of
+  8 hand-written wrong sentences and missed 2 whose wrong number appears elsewhere in the premise.
+  **Resume:** stop 37 method into GRID and the run, on your go.
 
 - 2026-10-08 (36): **Human check of rollbacks and retries, set up (your go on steps 1 to 4).** VERDICT and README
   now say the retries pass the auditor, not that they are faithful; VERDICT adds the hand check as the first item
