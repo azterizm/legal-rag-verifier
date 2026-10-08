@@ -255,7 +255,8 @@ The answer so far is the committed text of the state (`scripts/replay_states.py`
 - `grounding`: `supported` (every claim, with its figures, citations, Act names, conditions and qualifiers, is
   stated in or follows directly from the provisions), `unsupported` (a claim the provisions do not make, including
   a rule stated without a condition the provisions attach to it), `contradicted` (the provisions say otherwise) or
-  `no_claim` (no legal claim: a heading, a connective, a fragment, a refusal).
+  `no_claim` (no legal claim: a heading, a connective, a refusal). A sentence cut off part way is labelled on the
+  claims it does make.
 - `on_question`: yes if the sentence helps answer the question asked; no for true law the question did not ask
   about.
 - `reads_on`: yes if it is a complete sentence that continues the answer so far without repeating it; no for a
@@ -298,3 +299,23 @@ judge, Cohen's kappa against your labels on real error (X) and on good retry (re
 
 - Script: `scripts/rollback_review.py` (`build`, `pilot`, `judge`, `report`); outputs under
   `results/grid/rollback/`. Router calls on test, and every Gemini call, need your go.
+
+**Before labelling (2026-10-08).**
+- Core count at build: 230 sentences, 225 with text, **212 to label** after exact duplicates within a state are
+  merged (the 217 above counted the 5 empty retries). In 10 items a retry repeated another sentence of its state,
+  in 8 of them the rejected draft; one label covers each.
+- Extended set at build: 588 items (223 rejected drafts, 365 released sentences).
+- Dev pilot of the judge prompt: 12 dev rollback items (first rejected draft and first retry, seeded sample of
+  `dev/4B-inject-turn` and `dev/4B-inject-v2`), both judges. Every reply parsed on the first ask. The judges agreed
+  on `grounding` for 6 of 12; gpt-oss was the more lenient and passed a sentence that repeated the one before it.
+  One rule was ambiguous ("a fragment" under both `no_claim` and `reads_on`) and split the judges on a sentence cut
+  off part way; it now reads: a sentence cut off part way is labelled on the claims it does make. The pilot was
+  re-run once with that text. No other change. On the re-run every reply again parsed on the first ask, the judges
+  agreed on `grounding` for 9 of 12, `on_question` 11 and `reads_on` 11, and both labelled the cut-off sentence the
+  same way. The change touched one item, so most of the rise from 6 to 9 is run-to-run variation at temperature 0.
+  gpt-oss again passed the repeated sentence as reading on. Raw: `results/grid/rollback/pilot*.jsonl` (the first
+  run's files end in `.prompt-71e5e694.jsonl`).
+- Frozen judge prompt SHA-256 (`PROMPT_SHA` in `scripts/rollback_review.py`):
+  `1f7dad48752a21cd3ac41c5730ee8fdf16196576219c583bd489ffae61cecb0f`.
+- Key SHA-256 (`results/grid/rollback/key.json`, git-ignored, rebuilt identically by `build`):
+  `235b96bdcaeee15cb74d72789695ca988c16e9d2eccd4474c6795272657c6bca`.

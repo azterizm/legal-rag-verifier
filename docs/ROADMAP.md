@@ -17,12 +17,22 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-08 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | None for 0.1.0 (released). Next work: VERDICT § Required before production |
-| Waiting on you | Nothing (release go given 2026-10-08) |
+| Next step | Stop 36: you label `results/grid/rollback/labels.csv` (212 sentences; read `sheet.md`) |
+| Waiting on you | The labels; then a go for the judges on test (router; Gemini is paid) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-08 (36): **Human check of rollbacks and retries, set up (your go on steps 1 to 4).** VERDICT and README
+  now say the retries pass the auditor, not that they are faithful; VERDICT adds the hand check as the first item
+  required before production. Method fixed in GRID § Stop 36 before any label or test judge call: core set = the 46
+  stop 29 states (X, R0, R1, R3, R4), 212 sentences after merging duplicates, labelled blind by you; readings P1
+  (auditor precision ≥ 80 %), P2 (R1 > R0 good retries, exact McNemar p < 0.05), P3 (supported but off the question);
+  two judges (gpt-oss-120b, Gemini 3.8 Flash) used on the 588-item extended set only at kappa ≥ 0.6 against you.
+  Dev pilot: replies all parsed; judges agreed on grounding 6/12, then 9/12 on the re-run after one rule was
+  clarified (sentence cut off part way); most of that rise is run-to-run variation. Prompt and key hashes in GRID. `scripts/rollback_review.py`; sheet and key git-ignored.
+  **Resume:** your labels, committed; then the judges on test on your go; then `report` (to be written).
 
 - 2026-10-08 (35): **Release go (you): public repo `azterizm/legal-rag-verifier`, PyPI Trusted Publisher
   (environment `pypi`, `release.yml`).** Version 0.1.0; project URLs; README with badges, status, absolute links,
