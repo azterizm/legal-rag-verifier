@@ -407,3 +407,27 @@ the sheet to the external system, so no model-against-person agreement is report
 wrong); S2 fails (good retries v2 7, 4B 8); S3 fails for both cells (good answers 4B 29, v2 30, plain 32). The
 per-question breakdown of where the loop helped or hurt was added after the readings. No rule, prompt or threshold
 changed (`docs/measurements.md` § Software battery, graded by you).
+
+## Stop 40: the question in the entailment check, offline (method fixed 2026-10-08, before any scoring)
+
+**Question.** The entailment model sees one sentence and one chunk of the source, never the question. Does giving
+it the question cut the false rollbacks without letting real errors through? No generation and no paid call: the
+auditor is re-run on sentences already labelled.
+
+**Variants.** Only the entailment model's input changes; the claim check, thresholds and engine are unchanged. The
+model is wrapped, not edited.
+- V0: as run (the sentence alone against each chunk). Its verdicts are compared with the recorded ones first.
+- V1: `Question: {query}\nAnswer: {sentence}` as the hypothesis.
+- V2: `Question: {query}\nAnswer: {previous sentence} {sentence}` (the last sentence of the answer so far, if any).
+- V3: `Question: {query}\n` in front of every source chunk (the question in the premise, not the hypothesis).
+
+**Sets** (both now become development data: a variant chosen here needs a fresh blind test).
+- Software: the 34 Part A texts of stop 37 (rejected drafts and first retries), your grades. Wrong = `correct` no.
+- Statutes: the 212 core texts of stop 36, Claude Opus 5.5's labels, premise as run (with enrichment). Wrong =
+  `unsupported` or `contradicted`; right = `supported`; `no_claim` reported apart.
+- Each text is checked with the question and the answer so far of its state, as the engine checks it (CPU here;
+  the runs used a GPU, so a few borderline scores may differ from the recorded verdicts).
+
+**Measures, per set and variant.** Rollbacks of right texts (false rollbacks) and of wrong texts (caught), and
+which check fired. **Reading, set now:** a variant is worth a fresh test if, on both sets, it at least halves V0's
+false rollbacks and still catches at least 90 % of what V0 catches. Small sets show only large effects.
