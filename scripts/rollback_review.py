@@ -27,9 +27,11 @@ import argparse
 import csv
 import hashlib
 import json
+import math
 import random
 import sys
-from collections.abc import Iterable, Sequence
+from collections import Counter
+from collections.abc import Callable, Iterable, Mapping, Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -41,9 +43,11 @@ sys.path.insert(0, str(ROOT / "batteries/verifier"))
 
 from grid_judge import chat  # type: ignore[import-not-found]  # noqa: E402
 from grid_prompts import premise, rows  # type: ignore[import-not-found]  # noqa: E402
+from replay_report import holm, sig  # type: ignore[import-not-found]  # noqa: E402
 from replay_states import (  # type: ignore[import-not-found]  # noqa: E402
     committed_text,
     load,
+    mcnemar,
     shared_states,
 )
 
@@ -423,6 +427,147 @@ def pilot_items(size: int) -> list[dict[str, Any]]:
     ]
 
 
+RETRIES = ("R0", "R1", "R3", "R4")
+REAL_ERROR = ("unsupported", "contradicted")
+P1_BAR = 0.8  # set before labelling (GRID § Stop 36)
+ALPHA = 0.05
+
+
+def wilson(hits: int, n: int, z: float = 1.959964) -> tuple[float, float]:
+    """Wilson 95 % interval for a proportion."""
+    if not n:
+        return (0.0, 0.0)
+    p = hits / n
+    centre = (p + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / (1 + z * z / n)
+    return (round(centre - half, 4), round(centre + half, 4))
+
+
+def good(label: Mapping[str, str] | None) -> bool:
+    """A good retry: supported, on the question and reading on."""
+    return (
+        label is not None
+        and label["grounding"] == "supported"
+        and label["on_question"] == "yes"
+        and label["reads_on"] == "yes"
+    )
+
+
+def arm_labels(
+    key: Mapping[str, Any], labels: Mapping[str, dict[str, str]]
+) -> dict[str, dict[str, dict[str, Any]]]:
+    """Per state, each arm's label (None for an arm with no text) and its auditor verdict."""
+    states: dict[str, dict[str, dict[str, Any]]] = {}
+    for k in key["items"]:
+        for source in k["sources"]:
+            states.setdefault(k["id"], {})[source["arm"]] = {
+                "label": labels[k["item"]],
+                "verdict": source["verdict"],
+            }
+    for prompt_id, arms in key["empty_arms"].items():
+        for arm in arms:
+            states.setdefault(prompt_id, {})[arm] = {"label": None, "verdict": "EMPTY"}
+    return states
+
+
+def score(states: Mapping[str, Mapping[str, Mapping[str, Any]]]) -> dict[str, Any]:
+    """The stop 36 readings (docs/GRID.md), from the per-state arm labels."""
+    n = len(states)
+    errors = sum(s["X"]["label"]["grounding"] in REAL_ERROR for s in states.values())
+    good_by = {arm: [good(s[arm]["label"]) for s in states.values()] for arm in RETRIES}
+
+    def paired(a: str, b: str) -> dict[str, Any]:
+        only_a = sum(x and not y for x, y in zip(good_by[a], good_by[b], strict=True))
+        only_b = sum(y and not x for x, y in zip(good_by[a], good_by[b], strict=True))
+        return {
+            f"{a}_good": sum(good_by[a]),
+            f"{b}_good": sum(good_by[b]),
+            f"only_{a}": only_a,
+            f"only_{b}": only_b,
+            "p": sig(mcnemar(only_a, only_b)),
+        }
+
+    p2 = paired("R1", "R0")
+    secondary = {f"R1_vs_{b}": paired("R1", b) for b in ("R3", "R4")}
+    arms: dict[str, Any] = {}
+    for arm in ("X", *RETRIES):
+        entries = [s[arm] for s in states.values()]
+        labelled = [e["label"] for e in entries if e["label"] is not None]
+        accepted = [e["label"] for e in entries if e["verdict"] == "EMIT"]
+        arms[arm] = {
+            "states": n,
+            "no_text": n - len(labelled),
+            "grounding": dict(Counter(lab["grounding"] for lab in labelled)),
+            "off_question": sum(lab["on_question"] == "no" for lab in labelled),
+            "not_reading_on": sum(lab["reads_on"] == "no" for lab in labelled),
+            "good": sum(good(lab) for lab in labelled),
+            "supported_off_question": sum(
+                lab["grounding"] == "supported" and lab["on_question"] == "no" for lab in labelled
+            ),
+            "auditor_accepted": len(accepted),
+            "accepted_not_good": sum(not good(lab) for lab in accepted),
+            "accepted_real_error": sum(lab["grounding"] in REAL_ERROR for lab in accepted),
+        }
+    return {
+        "states": n,
+        "P1_rejected_drafts_real_errors": {
+            "real_errors": errors,
+            "share": round(errors / n, 4),
+            "wilson95": wilson(errors, n),
+            "holds": errors / n >= P1_BAR,
+        },
+        "P2_good_retry_R1_vs_R0": {
+            **p2,
+            "holds": p2["R1_good"] > p2["R0_good"] and p2["p"] < ALPHA,
+        },
+        "P2_secondary_holm": {
+            name: {**secondary[name], **adj}
+            for name, adj in holm({k: v["p"] for k, v in secondary.items()}).items()
+        },
+        "descriptive_not_preset": {
+            f"supported_R1_vs_{b}": paired_on(states, "R1", b, supported)
+            for b in ("R0", "R3", "R4")
+        },
+        "arms": arms,
+    }
+
+
+def supported(label: Mapping[str, str] | None) -> bool:
+    return label is not None and label["grounding"] == "supported"
+
+
+def paired_on(
+    states: Mapping[str, Mapping[str, Mapping[str, Any]]],
+    a: str,
+    b: str,
+    test: Callable[[Mapping[str, str] | None], bool],
+) -> dict[str, Any]:
+    """Paired counts of ``test`` for two arms over the states, with the exact McNemar p."""
+    xs = [test(s[a]["label"]) for s in states.values()]
+    ys = [test(s[b]["label"]) for s in states.values()]
+    only_a = sum(x and not y for x, y in zip(xs, ys, strict=True))
+    only_b = sum(y and not x for x, y in zip(xs, ys, strict=True))
+    return {
+        a: sum(xs),
+        b: sum(ys),
+        f"only_{a}": only_a,
+        f"only_{b}": only_b,
+        "p": sig(mcnemar(only_a, only_b)),
+    }
+
+
+def report() -> dict[str, Any]:
+    key = json.loads((OUT / "key.json").read_text(encoding="utf-8"))
+    with (OUT / "labels.csv").open(encoding="utf-8") as f:
+        labels = {r["item"]: r for r in csv.DictReader(f)}
+    missing = [k["item"] for k in key["items"] if not labels.get(k["item"], {}).get("grounding")]
+    if missing:
+        raise ValueError(f"unlabelled items: {missing[:5]}")
+    out = {"labels": "results/grid/rollback/labels.csv", **score(arm_labels(key, labels))}
+    (OUT / "report.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -432,9 +577,12 @@ def main() -> None:
     run_judge = sub.add_parser("judge")
     run_judge.add_argument("--model", choices=JUDGES, required=True)
     run_judge.add_argument("--set", choices=["core", "extended"], required=True)
+    sub.add_parser("report")
     args = parser.parse_args()
     if args.command == "build":
         build()
+    elif args.command == "report":
+        print(json.dumps(report(), indent=1))
     elif args.command == "pilot":
         OUT.mkdir(parents=True, exist_ok=True)
         items = pilot_items(args.size)

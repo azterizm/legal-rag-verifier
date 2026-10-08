@@ -6,7 +6,15 @@ from typing import Any
 
 import pytest
 
-from scripts.rollback_review import Item, dedupe, parse, state_items, trace_items
+from scripts.rollback_review import (
+    Item,
+    dedupe,
+    parse,
+    score,
+    state_items,
+    trace_items,
+    wilson,
+)
 
 
 def attempt(text: str, verdict: str) -> dict[str, Any]:
@@ -80,3 +88,38 @@ def test_parse_accepts_the_labels_and_rejects_anything_else() -> None:
         parse('{"grounding": "no_claim", "on_question": "yes", "reads_on": "maybe"}')
     with pytest.raises(ValueError, match="no JSON"):
         parse("no object here")
+
+
+def lab(grounding: str, on_question: str = "yes", reads_on: str = "yes") -> dict[str, str]:
+    return {"grounding": grounding, "on_question": on_question, "reads_on": reads_on}
+
+
+def test_score_reads_the_preset_measures() -> None:
+    def state(x: str, r0: dict[str, str] | None, r1: dict[str, str]) -> dict[str, Any]:
+        arm = {"label": lab("supported"), "verdict": "EMIT"}
+        return {
+            "X": {"label": lab(x), "verdict": "ROLLBACK"},
+            "R0": {"label": r0, "verdict": "EMIT" if r0 else "EMPTY"},
+            "R1": {"label": r1, "verdict": "EMIT"},
+            "R3": arm,
+            "R4": arm,
+        }
+
+    states = {
+        "a": state("unsupported", None, lab("supported")),
+        "b": state("contradicted", lab("unsupported"), lab("supported", reads_on="no")),
+        "c": state("supported", lab("supported"), lab("supported", on_question="no")),
+    }
+    out = score(states)
+    assert out["P1_rejected_drafts_real_errors"]["real_errors"] == 2
+    assert (out["P2_good_retry_R1_vs_R0"]["R1_good"], out["P2_good_retry_R1_vs_R0"]["R0_good"]) == (
+        1,
+        1,
+    )
+    assert out["arms"]["R0"]["no_text"] == 1
+    assert out["arms"]["R1"]["supported_off_question"] == 1
+    assert out["arms"]["R1"]["accepted_not_good"] == 2
+    assert out["descriptive_not_preset"]["supported_R1_vs_R0"]["only_R1"] == 2
+    assert wilson(0, 0) == (0.0, 0.0)
+    low, high = wilson(18, 46)
+    assert low < 18 / 46 < high

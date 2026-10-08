@@ -332,3 +332,9 @@ yours.
 It was given `sheet.md` only, not the key (your confirmation). 212 of 212 items labelled, every value valid.
 Committed as `results/grid/rollback/labels.csv` before any judge saw a test item and before the key was read
 against them.
+
+**After labelling (2026-10-08).** `report` read the labels against the key once. P1 fails (18 of 46 real errors);
+P2 fails (good retries R1 11, R0 17); R3 and R4 beat R1 (Holm p = 0.003). A grounding-only comparison was added
+to the report after the readings and is marked as not set in advance. No rule, prompt or threshold changed. The
+judges have not run on test; their run (router; Gemini is paid) waits for your go
+(`docs/measurements.md` § Rollbacks and retries labelled).

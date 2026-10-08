@@ -12,9 +12,11 @@ recovery were out of scope.
 ## Verdict
 
 The architecture holds as a mechanism. It is not ready for production as built. Each part works on a production
-inference server. With the provision inserted, the model's retries pass the auditor far more often. They do not
-always answer the question. No human has yet checked whether the retries that pass are correct; that check is
-stop 36. The changes required before a production trial are listed at the end.
+inference server. With the provision inserted, the model's retries pass the auditor far more often. Labelled
+sentence by sentence, those retries are better grounded but mostly unusable: the model pastes the provision
+instead of continuing the answer. On live output most rejected sentences were not errors. These labels come from
+a frontier model; a hand-graded software set (stop 37) checks them. The changes required before a production
+trial are listed at the end.
 
 ## What was tested
 
@@ -59,6 +61,13 @@ Most of it went to the inserted copy, and attention to the original copy halved.
 sentence in all 18 states that had one.
 
 ## What does not hold yet
+
+The auditor's rejections and passes do not match sentence-level labels. On the 46 shared rollback states, labelled
+blind by Claude Opus 5.5 (model labels, not human), 18 of 46 rejected sentences were real errors, against 89 % on
+the sealed battery. With the provision inserted, 33 of 46 retries were supported, against 17 with decode
+steering, but only 11 were good: supported, on the question and reading on. 28 pasted the provision or started
+mid-clause, and the auditor accepted that text. A retry with no provision, or with the provision at the top, was
+good 26 times. The set target, more good retries with insertion than with steering, fails (11 against 17).
 
 The loop satisfies the auditor, not the question. The auditor checks that a sentence is supported, not that it
 answers the question. Given a provision, Qwen writes something true from it, often a side clause. 21 of 50

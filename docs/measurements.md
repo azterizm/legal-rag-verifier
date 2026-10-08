@@ -562,3 +562,43 @@ against v1 but stay above 4B's 5. Each of these gaps is under the judge's noise 
 question recovers part of the relevance loss, not all of it. The claim-check retry pass rises to 91 %, the cache
 is hit on every inserted retry, and time to first output is the lowest of the three in-flight cells. The router
 gate selects the right 11 queries; the judge protocol, not the gate, decides the abstention score.
+
+## Rollbacks and retries labelled (stop 36, 2026-10-08; method in `docs/GRID.md`)
+
+The 46 stop 29 states, labelled blind per sentence. The labeller is Claude Opus 5.5 at effort xhigh, run by you
+outside this repository on the sheet only. These are model labels, not human labels. Raw:
+`results/grid/rollback/labels.csv`, `report.json` (`scripts/rollback_review.py report`).
+
+| Per arm, 46 states | X rejected draft | R0 decode steering | R1 inserted at the cut | R3 at the top | R4 turn, no provision |
+|---|---|---|---|---|---|
+| Supported | 21 | 17 | 33 | 27 | 26 |
+| Unsupported or contradicted | 18 | 26 | 9 | 8 | 14 |
+| No claim | 7 | 1 | 4 | 8 | 6 |
+| No text (refused or empty) | 0 | 2 | 0 | 3 | 0 |
+| Does not read on (fragment, pasted text, repeat) | 1 | 1 | 28 | 0 | 1 |
+| Off the question | 1 | 1 | 17 | 2 | 1 |
+| Good (supported, on the question, reads on) | 21 | 17 | 11 | 26 | 26 |
+| Accepted by the auditor | 0 | 18 | 39 | 17 | 14 |
+| Accepted but not good | — | 8 | 30 | 5 | 6 |
+| Accepted and unsupported or contradicted | — | 8 | 5 | 3 | 6 |
+
+**Readings, set before labelling.**
+- P1 fails. 18 of 46 rejected drafts are real errors (39 %, Wilson 95 % 26 to 54 %), against the 80 % bar and the
+  89 % rollback precision on the sealed battery. By what rejected the draft: the claim check 10 of 27, NLI 8 of 19.
+  7 rejected drafts make no claim: 6 are correct refusals of a provision that does not exist, 1 a wrong refusal.
+- P2 fails. Good retries: R1 11, R0 17 (only R1 6, only R0 12; exact McNemar p = 0.24). Secondary, Holm-corrected:
+  R3 26 and R4 26 both beat R1 (p = 0.003 each).
+- P3. Supported but off the question: R1 9, every other arm 0 or 1.
+
+**Descriptive, not set before labelling.** On grounding alone R1 leads: supported 33 against R0 17 (only R1 19,
+only R0 3; p = 0.0009), R3 27 (p = 0.21) and R4 26 (p = 0.19). R1 retries are rarely wrong (9 of 46), but 28 of
+them do not read on: the model pastes the inserted provision, often with its label, or starts mid-clause. The
+auditor accepts that text because it is the provision. Of the 39 R1 retries the auditor accepted, 30 are not good
+and 5 are wrong.
+
+**What this shows.** On live statute output most rejections were not errors, so most of the work the loop did
+was unneeded. Inserting the provision makes the retry grounded, as the auditor measured, but not usable: it
+copies the provision instead of continuing the answer. A retry with no provision (R4) or with the provision at
+the top (R3) was good more than twice as often. The auditor's pass rate overstated the mechanism's benefit; that
+is the gap stop 36 was set up to measure. The labels come from one model and one run; the software battery
+(stop 37) checks the same questions by hand.
