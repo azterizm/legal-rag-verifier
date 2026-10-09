@@ -862,3 +862,25 @@ column is `correct` in `results/fresh/grades.csv`. Seal (`results/fresh/seal.jso
 - `results/fresh/sheet.md` `70cadb0bd6712c2dc23390e520ce2822f7ccb24d965ed7bf59119a575cad42f8` (git-ignored)
 
 No model sees these answers before stop 47. Training data in stop 45 excludes every fresh source by code.
+
+### Stop 44: a change before any K2 result (2026-10-09)
+
+SGLang 0.5.21 serves K2 Horizon in FP8 only from pre-quantised weights, so the untrained K2 baseline runs in bf16
+on an L40S, not FP8 on an L4. The trained student's target GPU is decided in stop 46.
+
+### Stop 45: training data (method fixed 2026-10-09, before any question or label call)
+
+- Pool (`scripts/distill_data.py pool`, seed 20261009): 250 in-force statute sections from the Acts the batteries
+  draw on, at most 6 per Act, 400 to 6,000 characters, none overlapping any battery, the fresh test or an anchor;
+  60 software sections from 20 public documentation pages used by no battery (at most 5 per page, 300 to 2,500
+  characters, split at text blocks). The code fails if any source overlaps a test set. Statute premises as run,
+  with an enrichment layer built for the new sections.
+- Questions: Gemini writes 3 per source from the source text only (prompt sha256 in `distill_data.QUESTION_SHA`).
+- Answers: Qwen 2.5 7B on a Modal L4, greedy, with the source and closed-book (stop 43's prompts).
+- Clauses: every sentence through the verifier with the recording scorer; the clauses that reach the entailment
+  check, with their candidates and the answer so far.
+- Labels: Gemini and Opus 4.6, batched per answer as in stop 44 (or per clause if stop 44's batching rule fails).
+  Batches with a disagreement go to Opus 5.5 whole, and its labels are used for the disputed clauses only, until
+  the $40 cap. Disputed clauses left after the cap are dropped and counted.
+- Examples: the stop 42 per-clause prompt and the label's JSON reply. Validation is 10 % of sources, chosen by a
+  hash of the source id. Prompts over 8,192 tokens are dropped from training, kept in the counts.
