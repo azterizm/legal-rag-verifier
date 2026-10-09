@@ -669,3 +669,28 @@ No variant met the bar set before scoring (halve false rollbacks and keep 90 % o
 made the entailment model more lenient and let right and wrong text through in about the same ratio. With V3, words
 from the question started to count as evidence. About half the false rollbacks on statutes come from the claim check,
 which these variants do not touch.
+
+## Derived facts for the entailment check (stop 41, 2026-10-09; method in `docs/GRID.md`)
+
+Gemini 3.8 flash high read each of the 40 software sources once and wrote the facts that follow from them. Code kept
+a fact only when its quotes were verbatim and its figures held: 227 of 231 kept, 54 derived. The facts were added
+as extra entailment candidates (S), and in a diagnostic arm also given to the claim check (S-claims). The audit ran
+on one Modal L4. Raw: `results/normalise/`.
+
+| Level | Arm | False rollbacks | Errors caught | Accuracy |
+|---|---|---|---|---|
+| Part A, 34 sentences (28 right, 6 wrong) | V0 | 19 | 4 | 38 % |
+| | S | 13 | 4 | 56 % |
+| | Claim check only | 1 | 2 | 85 % |
+| | No auditor | 0 | 0 | 82 % |
+| Part B, 40 answers (32 right, 8 wrong) | V0 | 9 | 4 | 68 % |
+| | S | 9 | 3 | 65 % |
+| | Claim check only | 1 | 1 | 80 % |
+| | No auditor | 0 | 0 | 80 % |
+
+S-claims matched S on every count. S missed the bar set before scoring (Part A at most 9 false rollbacks). The
+facts fixed the ddof case and 6 other Part A sentences. They broke 4 right texts that V0 passed, by giving the
+entailment model a closely related candidate to misread as a contradiction. Of the 23 false rollback sentences left,
+20 had a fact on the judged passage, often one that says the same thing. Entailment time per sentence: 93 ms V0,
+87 ms S.
+

@@ -1,0 +1,391 @@
+{
+ "prompts_checked_clean": 40,
+ "facts": {
+  "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+  "sources": 40,
+  "proposed": 231,
+  "kept": 227,
+  "derived_kept": 54,
+  "dropped": {
+   "quote": 4
+  }
+ },
+ "nli_model": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+ "A": {
+  "V0": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 19,
+   "caught": 4,
+   "false_rollbacks_by_nli": 18,
+   "caught_by_nli": 2,
+   "accuracy": 0.382
+  },
+  "S": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 13,
+   "caught": 4,
+   "false_rollbacks_by_nli": 12,
+   "caught_by_nli": 2,
+   "accuracy": 0.559,
+   "passes_bar": false
+  },
+  "S-claims": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 13,
+   "caught": 4,
+   "false_rollbacks_by_nli": 12,
+   "caught_by_nli": 2,
+   "accuracy": 0.559,
+   "passes_bar": false
+  },
+  "claim check only": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 1,
+   "caught": 2,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.853
+  },
+  "no auditor": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 0,
+   "caught": 0,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.824
+  }
+ },
+ "B": {
+  "V0": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 9,
+   "caught": 4,
+   "false_rollbacks_by_nli": 8,
+   "caught_by_nli": 3,
+   "accuracy": 0.675
+  },
+  "S": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 9,
+   "caught": 3,
+   "false_rollbacks_by_nli": 8,
+   "caught_by_nli": 2,
+   "accuracy": 0.65,
+   "passes_bar": false
+  },
+  "S-claims": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 9,
+   "caught": 3,
+   "false_rollbacks_by_nli": 8,
+   "caught_by_nli": 2,
+   "accuracy": 0.65,
+   "passes_bar": false
+  },
+  "claim check only": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 1,
+   "caught": 1,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.8
+  },
+  "no auditor": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 0,
+   "caught": 0,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.8
+  }
+ },
+ "V0_reproduces_recorded_A": {
+  "same": 34,
+  "of": 34,
+  "differ": []
+ },
+ "R1_S_viable": false,
+ "R1_S-claims_viable": false,
+ "R2": {
+  "S": [
+   {
+    "key": "A:A02C",
+    "sentence": "It MAY also include minor and patch level changes.",
+    "best": {
+     "text": "Semantic Versioning 2.0.0, item 8: Major version X (X.y.z | X > 0) may also include minor and patch level changes.",
+     "entailment": 0.9957,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B07B:0",
+    "sentence": "The Cache-Control directive no-cache indicates that a cache MUST NOT use the response to satisfy a subsequent request without successful revalidation with the origin server.",
+    "best": {
+     "text": "RFC 9111, section 5.2.2.4 (no-cache): A no-cache response directive without an argument indicates that the response MUST NOT be used to satisfy any other request without forwarding it for validation and receiving a successful response.",
+     "entailment": 0.9959,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:0",
+    "sentence": "In Rust, the behavior of integer overflow depends on the compilation mode.",
+    "best": {
+     "text": "The Rust Programming Language, 3.2 Data Types, Integer Overflow: When compiling in release mode with the --release flag, if integer overflow occurs, Rust causes values greater than the maximum value the type can hold to wrap around to the minimum of the values the type can hold.",
+     "entailment": 0.9948,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:1",
+    "sentence": "In debug mode, Rust includes checks that will cause your program to panic at runtime if an overflow occurs.",
+    "best": {
+     "text": "The Rust Programming Language, 3.2 Data Types, Integer Overflow: When compiling in debug mode, Rust includes checks for integer overflow that cause the program to panic at runtime if integer overflow occurs.",
+     "entailment": 0.9963,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:2",
+    "sentence": "However, in release mode with the --release flag, Rust does not include these checks.",
+    "best": {
+     "text": "The Rust Programming Language, 3.2 Data Types, Integer Overflow: When compiling in release mode with the --release flag, Rust does not include checks for integer overflow that cause panics.",
+     "entailment": 0.9941,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:3",
+    "sentence": "Instead, it performs two’s complement wrapping, meaning that values exceeding the maximum value for the type \"wrap around\" to the minimum value.",
+    "best": {
+     "text": "The Rust Programming Language, 3.2 Data Types, Integer Overflow: Under two’s complement wrapping, values greater than the maximum value the type can hold wrap around to the minimum of the values the type can hold.",
+     "entailment": 0.9971,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:0",
+    "sentence": "When a container goes over its CPU limit in Kubernetes, the kernel enforces the limit by throttling the CPU access.",
+    "best": {
+     "text": "Kubernetes documentation, Resource Management for Pods and Containers, How Kubernetes applies resource requests and limits: When a container approaches its CPU limit, the kernel will restrict access to the CPU corresponding to the container's limit.",
+     "entailment": 0.9855,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:1",
+    "sentence": "The container will not be able to use more CPU than specified in its limit.",
+    "best": {
+     "text": "Kubernetes documentation, Resource Management for Pods and Containers, How Kubernetes applies resource requests and limits: Containers may not use more CPU than is specified in their CPU limit.",
+     "entailment": 0.9965,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:2",
+    "sentence": "For memory limits, if a container exceeds its allocated memory, the kernel may terminate the container if it detects memory pressure.",
+    "best": {
+     "text": "Kubernetes documentation, Resource Management for Pods and Containers, How Kubernetes applies resource requests and limits: Container terminations for exceeding memory limits only happen when the kernel detects memory pressure.",
+     "entailment": 0.9952,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B35A:0",
+    "sentence": "By default, `optimizer.zero_grad()` in PyTorch sets the gradients to zero.",
+    "best": {
+     "text": "PyTorch 2.7 documentation, torch.optim.Optimizer.zero_grad: In Optimizer.zero_grad, the set_to_none parameter defaults to True.",
+     "entailment": 0.9889,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B35A:2",
+    "sentence": "When `set_to_none` is `False` (the default), the gradients are set to zero.",
+    "best": {
+     "text": "PyTorch 2.7 documentation, torch.optim.Optimizer.zero_grad: By default, Optimizer.zero_grad sets gradients to None instead of setting them to zero.",
+     "entailment": 0.8017,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B38B:0",
+    "sentence": "No, a Prometheus counter cannot go down.",
+    "best": {
+     "text": "Prometheus documentation, Metric types, Counter: A counter must not be used to expose a value that can decrease.",
+     "entailment": 0.9476,
+     "fact": true
+    }
+   }
+  ],
+  "S-claims": [
+   {
+    "key": "A:A02C",
+    "sentence": "It MAY also include minor and patch level changes.",
+    "best": {
+     "text": "Semantic Versioning 2.0.0, item 8: Major version X (X.y.z | X > 0) may also include minor and patch level changes.",
+     "entailment": 0.9957,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B07B:0",
+    "sentence": "The Cache-Control directive no-cache indicates that a cache MUST NOT use the response to satisfy a subsequent request without successful revalidation with the origin server.",
+    "best": {
+     "text": "RFC 9111, section 5.2.2.4 (no-cache): A no-cache response directive without an argument indicates that the response MUST NOT be used to satisfy any other request without forwarding it for validation and receiving a successful response.",
+     "entailment": 0.9959,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:0",
+    "sentence": "In Rust, the behavior of integer overflow depends on the compilation mode.",
+    "best": {
+     "text": "When compiling in release mode with the --release flag, if integer overflow occurs, Rust causes values greater than the maximum value the type can hold to wrap around to the minimum of the values the type can hold.",
+     "entailment": 0.9952,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:1",
+    "sentence": "In debug mode, Rust includes checks that will cause your program to panic at runtime if an overflow occurs.",
+    "best": {
+     "text": "The Rust Programming Language, 3.2 Data Types, Integer Overflow: When compiling in debug mode, Rust includes checks for integer overflow that cause the program to panic at runtime if integer overflow occurs.",
+     "entailment": 0.9963,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:2",
+    "sentence": "However, in release mode with the --release flag, Rust does not include these checks.",
+    "best": {
+     "text": "The Rust Programming Language, 3.2 Data Types, Integer Overflow: When compiling in release mode with the --release flag, Rust does not include checks for integer overflow that cause panics.",
+     "entailment": 0.9941,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B27A:3",
+    "sentence": "Instead, it performs two’s complement wrapping, meaning that values exceeding the maximum value for the type \"wrap around\" to the minimum value.",
+    "best": {
+     "text": "Under two’s complement wrapping, values greater than the maximum value the type can hold wrap around to the minimum of the values the type can hold.",
+     "entailment": 0.9971,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:0",
+    "sentence": "When a container goes over its CPU limit in Kubernetes, the kernel enforces the limit by throttling the CPU access.",
+    "best": {
+     "text": "Kubernetes documentation, Resource Management for Pods and Containers, How Kubernetes applies resource requests and limits: When a container approaches its CPU limit, the kernel will restrict access to the CPU corresponding to the container's limit.",
+     "entailment": 0.9855,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:1",
+    "sentence": "The container will not be able to use more CPU than specified in its limit.",
+    "best": {
+     "text": "Containers may not use more CPU than is specified in their CPU limit.",
+     "entailment": 0.9977,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:2",
+    "sentence": "For memory limits, if a container exceeds its allocated memory, the kernel may terminate the container if it detects memory pressure.",
+    "best": {
+     "text": "Kubernetes documentation, Resource Management for Pods and Containers, How Kubernetes applies resource requests and limits: Container terminations for exceeding memory limits only happen when the kernel detects memory pressure.",
+     "entailment": 0.9952,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B30A:3",
+    "sentence": "However, this termination is not immediate;",
+    "best": {
+     "text": "A container that over allocates memory may not be immediately killed.",
+     "entailment": 0.9802,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B35A:0",
+    "sentence": "By default, `optimizer.zero_grad()` in PyTorch sets the gradients to zero.",
+    "best": {
+     "text": "PyTorch 2.7 documentation, torch.optim.Optimizer.zero_grad: In Optimizer.zero_grad, the set_to_none parameter defaults to True.",
+     "entailment": 0.9889,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B35A:2",
+    "sentence": "When `set_to_none` is `False` (the default), the gradients are set to zero.",
+    "best": {
+     "text": "By default, Optimizer.zero_grad sets gradients to None instead of setting them to zero.",
+     "entailment": 0.8816,
+     "fact": true
+    }
+   },
+   {
+    "key": "B:B38B:0",
+    "sentence": "No, a Prometheus counter cannot go down.",
+    "best": {
+     "text": "Prometheus documentation, Metric types, Counter: A counter must not be used to expose a value that can decrease.",
+     "entailment": 0.9476,
+     "fact": true
+    }
+   }
+  ]
+ },
+ "R3_S_false_rollback_sentences": {
+  "fact present, entailment failed": 20,
+  "claim check": 3
+ },
+ "posthoc_support_only": {
+  "A": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 12,
+   "caught": 4,
+   "false_rollbacks_by_nli": 12,
+   "caught_by_nli": 4,
+   "accuracy": 0.588
+  },
+  "B": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 6,
+   "caught": 3,
+   "false_rollbacks_by_nli": 5,
+   "caught_by_nli": 2,
+   "accuracy": 0.725
+  }
+ },
+ "nli_ms_per_sentence": {
+  "V0": 93.2,
+  "S": 86.7,
+  "S-claims": 111.5
+ }
+}

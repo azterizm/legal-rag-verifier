@@ -14,15 +14,21 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-08 |
+| Last updated | 2026-10-09 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | None open. Next work: VERDICT § Required before production, item 1 (auditor precision on live output) |
-| Waiting on you | A decision on next work (stop 40: the question in the entailment input does not fix precision) |
+| Waiting on you | A decision on next work (stop 41: derived facts do not fix precision; the claim check alone is more accurate) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-09 (41): **Derived facts for the entailment check, software battery of 40; not viable.** Method and prompt
+  fixed in GRID before the run. Gemini via the router wrote 231 facts, code kept 227. Audit on a Modal L4; V0
+  matched all 34 recorded verdicts. S cut Part A false rollbacks 19 to 13 (bar 9), Part B 9 to 9. Facts fixed
+  ddof and 6 more sentences, broke 4. 20 of 23 remaining false rollbacks had a fact on the passage. No full run.
+  VERDICT item 1 notes it. **Resume:** your decision on next work.
 
 - 2026-10-08 (40): **Question in the entailment check, offline; no variant passes.** Method fixed in GRID before
   scoring. V0 reproduced all 246 recorded verdicts. Best cuts in false rollbacks: V2 19 to 14 on software, V3 56 to

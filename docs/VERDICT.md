@@ -124,7 +124,9 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    graded by people, not on planted errors. The sealed battery's 89 % did not carry over: 8 % by hand on software,
    39 % by model labels on statutes. A rollback loop is only as good as its rejections.
    Giving the entailment model the question, in the answer or in the source, does not fix this (stop 40): it
-   passes right and wrong text alike.
+   passes right and wrong text alike. Facts derived from the source in advance do not fix it either (stop 41):
+   they remove the reasoning gap in cases like the ddof default, but the entailment model still fails on
+   paraphrases of facts it is given, and the claim check alone was more accurate.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
