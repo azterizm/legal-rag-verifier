@@ -32,6 +32,7 @@ from legal_rag_verifier.segmenter import split_sentences  # noqa: E402
 OUT = ROOT / "results/normalise"
 ARMS = ("V0", "S", "S-claims")
 NLI_MODEL = "cross-encoder/nli-deberta-v3-base"
+ENTAIL = 0.70  # VerifierConfig.entail_threshold
 
 
 def premise_for(arm: str, passages: Sequence[Mapping[str, str]], facts: Sequence[Any]) -> Premise:
@@ -222,6 +223,10 @@ def best(r: Mapping[str, Any], arm: str, facts: set[str]) -> dict[str, Any] | No
     return {"text": text, "entailment": e, "fact": any(text.endswith(f) for f in facts)}
 
 
+def _fact_entails(top: Mapping[str, Any] | None) -> bool:
+    return bool(top and top["fact"] and top["entailment"] > ENTAIL)
+
+
 def answers(records: Sequence[Mapping[str, Any]], arm: str) -> list[dict[str, Any]]:
     """Part B per answer: rolled back when any sentence is."""
     grouped: dict[str, list[Mapping[str, Any]]] = {}
@@ -312,7 +317,7 @@ def report() -> dict[str, Any]:
         arm: [
             {"key": r["key"], "sentence": r["sentence"], "best": best(r, arm, fact_texts)}
             for r in records
-            if r["wrong"] and not _rolled(r, arm) and (best(r, arm, fact_texts) or {}).get("fact")
+            if r["wrong"] and not _rolled(r, arm) and _fact_entails(best(r, arm, fact_texts))
         ]
         for arm in ARMS[1:]
     }
@@ -329,6 +334,25 @@ def report() -> dict[str, Any]:
         has_fact = any(f["passage"] == passage for f in facts.get(r["id"], []))
         r3["fact present, entailment failed" if has_fact else "no fact (coverage gap)"] += 1
     out["R3_S_false_rollback_sentences"] = dict(r3)
+    # Not pre-registered, from the logged scores: facts only as support. V0's verdict, except an
+    # entailment-only rollback becomes a pass when a fact entails the sentence above threshold.
+    posthoc = []
+    for r in records:
+        supported = any(
+            c[1] > ENTAIL and any(c[0].endswith(f) for f in fact_texts)
+            for c in r["verdicts"]["S"]["candidates"]
+        )
+        rolled = _rolled(r, "V0") and not (_by_nli(r, "V0") and supported)
+        posthoc.append({**r, "verdicts": {**r["verdicts"], "support": {
+            "verdict": "ROLLBACK" if rolled else "EMIT",
+            "reasons": r["verdicts"]["V0"]["reasons"] if rolled else [],
+        }}})  # fmt: skip
+    post_a = [r for r in posthoc if r["level"] == "A"]
+    post_b = [r for r in posthoc if r["level"] == "B"]
+    out["posthoc_support_only"] = {
+        "A": counts([{**r, "rolled": _rolled(r, "support"), "by_nli": True} for r in post_a]),
+        "B": counts(answers(post_b, "support")),
+    }
     out["nli_ms_per_sentence"] = {
         arm: round(sum(r["verdicts"][arm]["nli_ms"] for r in records) / len(records), 1)
         for arm in ARMS

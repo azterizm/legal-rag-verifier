@@ -531,3 +531,53 @@ prompt was revised once to ask for derived facts by name (defaults, definitions,
 units, arithmetic), with two examples from neither battery, and to mark each fact as derived or not. Second
 pilot: 60 of 62 facts kept, 13 derived, 2 dropped for a citation not in the quotes, no arithmetic. Frozen
 prompt sha256 `10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a`. Pilot calls: 6.
+
+### Stop 41: results (2026-10-09)
+
+Raw: `results/normalise/` (`audit.jsonl`, `report.json`). Gemini kept 227 of 231 facts, 54 of them derived. The
+check dropped 4, all for a quote not in the source. The V0 recomputed on the L4 matched all 34 recorded Part A
+verdicts.
+
+| Level | Arm | False rollbacks | Caught | Accuracy |
+|---|---|---|---|---|
+| Part A, sentences (28 right, 6 wrong) | V0 | 19 | 4 | 38 % |
+| | S | 13 | 4 | 56 % |
+| | S-claims | 13 | 4 | 56 % |
+| | Claim check only | 1 | 2 | 85 % |
+| | No auditor | 0 | 0 | 82 % |
+| Part B, answers (32 right, 8 wrong) | V0 | 9 | 4 | 68 % |
+| | S | 9 | 3 | 65 % |
+| | S-claims | 9 | 3 | 65 % |
+| | Claim check only | 1 | 1 | 80 % |
+| | No auditor | 0 | 0 | 80 % |
+
+R1: no arm is viable. S cuts Part A false rollbacks from 19 to 13; the bar was 9. Part B does not move. The full
+run does not follow.
+
+The facts fix the case they were built for. All three A01 sentences now pass, and so does B37A, on the fact "By
+default, the divisor used in numpy.std calculations is N". In Part A, 7 right sentences pass that V0 rolled back.
+
+The facts also add rollbacks. When no candidate entails a sentence, the auditor judges it on its most related
+candidate. A short fact is often the most related, and the entailment model can read it as a contradiction. Four
+right texts that V0 passed are now rolled back (A09B, B15A, B24A, B32A). B32A says a table name is at most 63 bytes,
+which is correct; the fact "the system uses no more than NAMEDATALEN-1 bytes" scored 0.76 contradiction. In Part B
+three answers were fixed (B06A, B22C, B37A) and three were broken (B15A, B24A, B32A).
+
+R2: no wrong text passes because of a fact that V0 caught. Every wrong text with a fact as its best entailing
+candidate already passed under V0. The one catch lost in Part B (B38B) was a correct sentence that V0 had rolled
+back. No fact was found to be wrong. In B35A the entailment model accepted "by default zero_grad sets gradients
+to zero" from the fact "set_to_none defaults to True", which says the opposite.
+
+R3: 23 false rollback sentences remain in S. The claim check gave 3. The other 20 had a fact on the judged passage
+and entailment still failed. In several the fact says what the sentence says. A03C scored 0.003 entailment against
+a fact that differs only by "The documentation explicitly states that". A05 and A11 are paraphrases scored neutral
+or contradicted. A10 needs an inference no fact states (logits are unnormalised, so do not apply softmax first).
+
+Entailment time per sentence on the L4: 93 ms V0, 87 ms S, 112 ms S-claims.
+
+Not pre-registered, from the logged scores: using facts only to support, never as the candidate a sentence is judged
+against, would give 12 false rollbacks and 4 caught on Part A, and 6 and 3 on Part B. That also misses the bar.
+
+Reading: precomputed facts remove the reasoning gap where it is the cause. The larger cause is the entailment model
+itself, which fails on paraphrases of text it is given. On both levels the claim check alone is more accurate than
+any arm with the entailment check.
