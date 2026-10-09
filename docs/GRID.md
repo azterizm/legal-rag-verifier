@@ -581,3 +581,87 @@ against, would give 12 false rollbacks and 4 caught on Part A, and 6 and 3 on Pa
 Reading: precomputed facts remove the reasoning gap where it is the cause. The larger cause is the entailment model
 itself, which fails on paraphrases of text it is given. On both levels the claim check alone is more accurate than
 any arm with the entailment check.
+
+## Stop 42: a reasoning LLM as the auditor's judge (method fixed 2026-10-09, before any judge call)
+
+DeBERTa reads a sentence and a passage in one pass. It cannot apply a default, follow a reference or do a sum.
+Stops 40 and 41 changed its inputs and did not fix the false rollbacks. Its scores rank right against wrong
+sentences at about chance (stop 41). Larger or legal-tuned single-pass models share that limit. This stop puts
+a reasoning LLM in the entailment check and measures accuracy and latency. Two single-pass models run as
+controls.
+
+### The judge
+
+One call per clause the auditor sends to its entailment check (`scripts/auditor_judge.py`). The prompt holds:
+- the clause;
+- the auditor's own candidates as numbered passages (windows, joined windows, enrichment elements);
+- the answer so far, marked as context for references only, not evidence.
+
+The question is not sent. The clause is supported only if a passage states it or it follows from the passages
+by reasoning: a default applied, a definition substituted, a reference followed, units converted, arithmetic.
+A true clause the passages do not establish is not stated. The reply is JSON with a label (supported,
+contradicted, not_stated), the deciding passage and one sentence of reason. At most 3 asks for a valid reply.
+No valid reply counts as not stated and is reported. Labels are cached by the prompt's sha256.
+
+Judges:
+- `gemini-3.8-flash-high` through the router, temperature 0, 4 calls at a time.
+- `Qwen/Qwen3.8-27B-FP8` @017b9c7 on one Modal H100, SGLang v0.5.21, thinking on, the card's sampling
+  (temperature 1.0, top_p 0.95, top_k 20), seed 0. Reasoning effort low and xhigh. The card offers low, medium
+  and xhigh; there is no "high". Part A is run a second time at xhigh with seed 1.
+
+The prompt is piloted on 5 dev battery texts per judge, not scored, then frozen. Its sha256 is recorded here
+before the full run.
+
+### Placements
+
+Both come from the same labels.
+- Replace: the judge is the entailment model. Supported is entailment 1 on its passage, contradicted is
+  contradiction 1 there, not stated is neutral 1 on every candidate. The claim check, thresholds and engine are
+  unchanged. A secondary row uses the strict policy, which rolls back every not-stated sentence.
+- Appeal: V0's verdicts. A rollback whose reasons are all entailment reasons is lifted when the judge supports
+  every clause of the sentence. Claim check rollbacks stand.
+
+### Controls
+
+In DeBERTa's place, scored with the verifier's own chunking at each model's length.
+- `lytang/MiniCheck-DeBERTa-v3-Large` @2f2d01a, 512 tokens. Supported is entailment; it has no contradiction.
+- `tasksource/ModernBERT-large-nli` @ca476cb, 2048 tokens (premise budget 1917). It tests whether whole
+  provisions help.
+
+Thresholds come from the dev battery: 25 configurations (entail 0.5 to 0.9, contradict 0.3 to 0.7, the rest as
+run). The rule: the lowest pass-class false rollback rate among configurations with failure recall at least V0's
+at 0.70 / 0.40. If none qualifies, the highest recall. Ties go to the configuration nearest 0.70 / 0.40. The
+held-out battery stays sealed.
+
+V0 and both controls score each (candidate, clause) pair once on a Modal L4 (10,376 pairs). The laptop replays
+the verifier from those tables. The V0 replay must give the verdicts as run: Part A and statutes as recorded,
+Part B as stop 41. Any difference is listed.
+
+### Sets
+
+| Set | Texts | Labels | Weight |
+|---|---|---|---|
+| Part A | 34 sentences (28 right, 6 wrong); 32 reach the entailment check | your stop 37 grades | primary |
+| Part B | 40 plain answers, 87 sentences; 85 reach the entailment check | your stop 37 grades | primary |
+| Statutes | 212 core texts of stop 36, premise as run; 172 reach the entailment check | Claude Opus 5.5 | secondary |
+
+Part B scores answers: a right answer with any rollback is a false rollback, a wrong answer with any rollback is
+caught. The statute labels are from an LLM, so an LLM judge scored on them is partly circular. In all, 280
+unique prompts. No grade, label or recorded verdict is sent to Modal or the router.
+
+### Readings, set now
+
+- R1, primary: each judge and placement against V0 on Part A and Part B, at the stop 40 bar (false rollbacks at
+  most half of V0's, caught at least 90 % of V0's). Accuracy beside claim check only and no auditor. If any
+  judge and placement passes on both, the judge goes to a fresh test, then live. If none passes, the limit is
+  not the scorer.
+- R2: the same on statutes, reported apart.
+- R3: latency per judged clause (p50, p95) and Qwen's generated tokens. Time added per Part B answer for each
+  placement, clauses judged one after another. Gemini's time includes the network. Qwen's bulk run sends 16 at
+  a time, so its single-stream latency comes from 20 Part A prompts re-run one at a time per effort.
+- R4: the controls on the R1 bar. AUC of each entailment model's support score (per text, the lowest best
+  entailment over its clauses) for right against wrong, with a 95 % bootstrap interval (2,000 resamples, seed
+  42).
+- R5: every wrong text a judge passes and every right text it rolls back under Replace, with its reasons. Not
+  reclassified.
+- R6: Qwen's agreement with itself on Part A at xhigh.

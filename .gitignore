@@ -59,3 +59,6 @@ results/software/review/key.json
 
 # Stop 41 pilot: the stored prompts quote full statute text from data/ (pilot-facts.jsonl is the kept copy)
 results/normalise/gemini-3.8-flash-high/pilot_*
+
+# Stop 42: judge prompts and score inputs quote full statute text from data/ (labels/ and scores/ are the kept copy)
+results/auditor_judge/pilot/
