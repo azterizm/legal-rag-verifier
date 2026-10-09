@@ -5,8 +5,8 @@
   uv run python scripts/distill_data.py questions    # Gemini: 3 questions per source
   uv run --with modal modal run scripts/modal_distill.py::pool_answers   # L4, both prompts
   uv run python scripts/distill_data.py record       # clauses that reach the entailment check
-  uv run python scripts/distill_data.py label        # Gemini + Opus 4.6, Opus 5.5 on disagreements
-  uv run python scripts/distill_data.py dataset      # consensus labels → train / validation
+  uv run python scripts/distill_data.py label        # Gemini per clause; Opus 5.5 on a random 500
+  uv run python scripts/distill_data.py dataset      # Gemini labels → train / validation
 
 Pool text, prompts and units quote statute text from ``data/`` and are git-ignored; ids, splits,
 labels by prompt hash and the ledgers are committed.
@@ -45,7 +45,7 @@ QUESTIONS = OUT / "questions.jsonl"
 ANSWERS = OUT / "answers.jsonl"
 UNITS = OUT / "units.jsonl"
 SEED = 20261009
-N_STATUTES = 250
+N_STATUTES = 460  # 250, topped up before any label (GRID § Stop 45)
 N_SOFTWARE = 60
 PER_ACT = 6
 PER_PAGE = 5
@@ -384,32 +384,26 @@ def split_of(source: str) -> str:
     return "validation" if digest % 1000 < VALIDATION * 1000 else "train"
 
 
+AUDIT = 500  # Opus 5.5 checks this many random training clauses (GRID § Stop 45)
+
+
 def label_all() -> None:
+    """Gemini on every clause, per clause; then Opus 5.5 on a random 500 for label quality."""
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
 
-    all_batches = aj.batches(units())
-    teachers.label("pool-gemini", "gemini", all_batches)
-    teachers.label("pool-opus46", "opus46", all_batches)
-    gem = teachers.read_labels("pool-gemini")
-    o46 = teachers.read_labels("pool-opus46")
-    disputed = [
-        b
-        for b in all_batches
-        if any(k in gem and k in o46 and gem[k]["label"] != o46[k]["label"] for k in b["keys"])
-    ]
-    print(f"{len(disputed)} batches hold a disagreement", flush=True)
-    teachers.label("pool-opus55", "opus55", disputed)
+    asked = aj.requests(units())
+    teachers.label_clauses("pool-gemini", "gemini", asked)
+    rng = random.Random(SEED)  # noqa: S311 - a sample, not a secret
+    sample = rng.sample(sorted(asked), min(AUDIT, len(asked)))
+    teachers.label_clauses("pool-opus55-audit", "opus55", {k: asked[k] for k in sample})
 
 
 def dataset() -> dict[str, Any]:
-    """Consensus label per clause (or Gemini alone, if stop 44 says so) → train / validation.
-    Each example is the stop 42 per-clause prompt and the teacher's JSON reply."""
+    """Gemini's label per clause → train / validation (your decision, GRID § Stop 45). Each
+    example is the stop 42 per-clause prompt and the teacher's JSON reply."""
     import teachers  # noqa: PLC0415
 
-    check = json.loads((OUT / "check44.json").read_text(encoding="utf-8"))
     gem = teachers.read_labels("pool-gemini")
-    o46 = teachers.read_labels("pool-opus46")
-    o55 = teachers.read_labels("pool-opus55")
     stats: Counter[str] = Counter()
     rows: dict[str, list[dict[str, Any]]] = {"train": [], "validation": []}
     seen: set[str] = set()
@@ -420,16 +414,9 @@ def dataset() -> dict[str, Any]:
             if sha in seen:
                 continue
             seen.add(sha)
-            if check["students_train_on"] == "gemini alone":
-                label = gem.get(sha)
-                stats["gemini"] += label is not None
-            elif sha in gem and sha in o46 and gem[sha]["label"] == o46[sha]["label"]:
-                label = gem[sha]
-                stats["agreed"] += 1
-            else:
-                label = o55.get(sha)
-                stats["opus55" if label else "dropped"] += 1
+            label = gem.get(sha)
             if label is None or label["label"] not in aj.LABELS:
+                stats["no label"] += 1
                 continue
             reply = {k: label[k] for k in ("label", "passage", "reason")}
             rows[split_of(u["id"])].append(
@@ -446,9 +433,17 @@ def dataset() -> dict[str, Any]:
     for split, examples in rows.items():
         _write_jsonl(OUT / f"{split}.jsonl", examples)
         stats[f"{split} examples"] = len(examples)
-        stats.update(
-            f"{split} {json.loads(e['messages'][2]['content'])['label']}" for e in examples
-        )
+        labels = (json.loads(e["messages"][2]["content"])["label"] for e in examples)
+        stats.update(f"{split} {label}" for label in labels)
+    audit = teachers.read_labels("pool-opus55-audit")
+    both = [k for k in audit if k in gem and audit[k]["label"] in aj.LABELS]
+    stats["audit clauses"] = len(both)
+    stats["audit agree"] = sum(gem[k]["label"] == audit[k]["label"] for k in both)
+    stats.update(
+        f"audit gemini {gem[k]['label']} / opus55 {audit[k]['label']}"
+        for k in both
+        if gem[k]["label"] != audit[k]["label"]
+    )
     (OUT / "dataset.json").write_text(json.dumps(dict(stats), indent=1) + "\n", encoding="utf-8")
     return dict(stats)
 

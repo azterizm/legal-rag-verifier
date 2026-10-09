@@ -498,13 +498,15 @@ def train(student: str, epochs: int = 1, max_tokens: int = 8192, *, smoke: bool 
         gradient_accumulation_steps=16,
         learning_rate=1e-4,
         lr_scheduler_type="cosine",
-        warmup_ratio=0.03,
+        warmup_steps=0.03,  # a float below 1 is a ratio of total steps
         bf16=True,
         gradient_checkpointing=True,
         logging_steps=5,
         save_steps=5 if smoke else 50,
         save_total_limit=2,
         assistant_only_loss=True,
+        loss_type="nll",
+        router_aux_loss_coef=0.0,  # K2 7B has no experts
         max_length=max_tokens,
         report_to=[],
         seed=TRAIN_SEED,
@@ -565,3 +567,151 @@ def merge(student: str, *, smoke: bool = False) -> str:
             shutil.copy(f, target / f.name)  # the base's config keeps auto_map and archs
     runs.commit()
     return str(target)
+
+
+@app.local_entrypoint()
+def train_student(student: str = "k2", epochs: int = 1, smoke: bool = False) -> None:  # noqa: FBT001, FBT002
+    """Upload train / validation, train (resumes from the last checkpoint), merge. Ledgered."""
+    sys.path[:0] = [str(ROOT / "scripts")]
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    data = ROOT / "results/distill"
+    with runs.batch_upload(force=True) as batch:
+        for split in ("train", "validation"):
+            batch.put_file(str(data / f"{split}.jsonl"), f"/data/{split}.jsonl")
+    ledger.check("H100", 1800 if smoke else 4 * 3600)
+    t0 = time.time()
+    try:
+        out = train.remote(student, epochs, smoke=smoke)
+    finally:
+        run = f"stop46 train {student}{' smoke' if smoke else ''}"
+        ledger.record(run, "H100", time.time() - t0)
+    print(json.dumps({k: v for k, v in out.items() if k != "log"}, indent=1))
+    for row in out["log"][-5:]:
+        print(row)
+    t0 = time.time()
+    try:
+        print(merge.remote(student, smoke=smoke))
+    finally:
+        ledger.record(f"stop46 merge {student}", "H100", time.time() - t0)
+
+
+# ------------------------------------------------------------------ stop 46: the student served
+
+
+class _StudentServer:
+    """The merged student behind SGLang. The reply follows an empty reasoning block, exactly as
+    in training, so the student never thinks."""
+
+    path: str
+
+    @modal.enter()
+    def start(self) -> None:
+        from transformers import AutoTokenizer  # noqa: PLC0415
+
+        self.started = time.time()
+        self.tokenizer = AutoTokenizer.from_pretrained(self.path)
+        self.server = subprocess.Popen(  # noqa: S603
+            [
+                sys.executable, "-m", "sglang.launch_server", "--model-path", self.path,
+                "--port", str(PORT), "--mem-fraction-static", "0.85", *CONTEXT,
+            ]
+        )  # fmt: skip
+        self.url = f"http://127.0.0.1:{PORT}"
+        _wait(self.server, self.url)
+        self.startup = time.time() - self.started
+
+    @modal.exit()
+    def stop(self) -> None:
+        self.server.terminate()
+
+    def _prompt(self, messages: list[dict[str, str]]) -> str:
+        marker = "\x00REPLY\x00"
+        full = [
+            *messages,
+            {"role": "assistant", "content": marker, "reasoning_content": ""},
+        ]
+        text: str = self.tokenizer.apply_chat_template(full, tokenize=False)
+        return text[: text.index(marker)]
+
+    def _chat(self, messages: list[dict[str, str]]) -> dict[str, Any]:
+        sent = [{**m, "reasoning_content": ""} if m["role"] == "assistant" else m for m in messages]
+        body = {
+            "model": self.path,
+            "prompt": self._prompt(sent),
+            "temperature": 0,
+            "max_tokens": 512,
+            "stop": ["<|ifm|im_end|>"],
+        }
+        request = urllib.request.Request(  # noqa: S310 - the container's own server
+            f"{self.url}/v1/completions",
+            data=json.dumps(body).encode(),
+            headers={"Content-Type": "application/json"},
+        )
+        t0 = time.perf_counter()
+        with urllib.request.urlopen(request, timeout=900) as r:  # noqa: S310
+            out = json.loads(r.read())
+        return {
+            "content": out["choices"][0]["text"],
+            "ms": (time.perf_counter() - t0) * 1000,
+            "tokens": out.get("usage", {}).get("completion_tokens"),
+        }
+
+    @modal.method()
+    def judge(self, requests: dict[str, str], workers: int) -> dict[str, Any]:
+        from auditor_judge import judge_all  # noqa: PLC0415
+
+        t0 = time.time()
+        labels = judge_all(requests, self._chat, workers)
+        return {"labels": labels, "seconds": time.time() - t0, "startup": self.startup}
+
+
+@app.cls(
+    gpu="L40S",
+    image=judge_image,
+    volumes={"/hf": weights, "/runs": runs},
+    timeout=4 * 3600,
+    max_containers=1,
+    scaledown_window=60,
+)
+class StudentL40S(_StudentServer):
+    path: str = modal.parameter()
+
+
+@app.local_entrypoint()
+def student_eval(
+    student: str = "k2", sequential: int = 20, run: str = "run", limit: int = 0
+) -> None:
+    """The merged student on the validation prompts and stop 42's 280 prompts (16 at a time,
+    chunks of 40), then ``sequential`` Part A prompts one at a time. Resumable."""
+    aj, ledger = _judge_local()
+    name = f"{student}-student" if run == "run" else f"{student}-{run}"
+    texts, _, recorded = aj.recorded_sets()
+    asked = aj.requests(recorded)
+    aj.assert_prompts_clean(texts, asked)
+    rows = (ROOT / "results/distill/validation.jsonl").read_text(encoding="utf-8").splitlines()
+    validation = {r["sha"]: r["messages"][1]["content"] for r in map(json.loads, rows)}
+    part_a = aj.requests([r for r, t in zip(recorded, texts, strict=True) if t["level"] == "A"])
+    server = StudentL40S(path=f"/runs/{student}/{run}/merged")
+    ledger.check("L40S", 3600)
+    startup_recorded = False
+    for label_name, wanted, workers in (
+        (f"{name}-validation", validation, WORKERS),
+        (name, asked, WORKERS),
+        (f"{name}-sequential", dict(list(part_a.items())[:sequential]), 1),
+    ):
+        have = {k for k, v in aj.read_labels(label_name).items() if v["label"] != "error"}
+        items = [(k, v) for k, v in wanted.items() if k not in have]
+        items = items[:limit] if limit else items
+        print(f"{label_name}: {len(items)} to judge", flush=True)
+        size = CHUNK if workers > 1 else len(items) or 1
+        chunks = [dict(items[i : i + size]) for i in range(0, len(items), size)]
+        for out in server.judge.map(chunks, kwargs={"workers": workers}, return_exceptions=True):
+            if isinstance(out, Exception):
+                print(f"chunk failed, retried on the next run: {out!r}", flush=True)
+                continue
+            _append(aj, label_name, out["labels"])
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            ledger.record(f"stop46 {label_name}", "L40S", seconds, f"{len(out['labels'])}")
+    print(f"Modal spent ${ledger.spent():.2f}")

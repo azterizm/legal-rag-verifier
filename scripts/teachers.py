@@ -30,7 +30,7 @@ import router  # type: ignore[import-not-found]  # noqa: E402
 
 OUT = ROOT / "results/distill"
 TEACHERS = {"gemini": router.GEMINI, "opus46": router.OPUS46, "opus55": router.OPUS55}
-WORKERS = {"gemini": 4, "opus46": 4, "opus55": 2}
+WORKERS = {"gemini": 6, "opus46": 2, "opus55": 2}
 _lock = threading.Lock()
 
 
@@ -112,6 +112,52 @@ def label(name: str, teacher: str, todo_batches: Sequence[Mapping[str, Any]]) ->
 
     with ThreadPoolExecutor(workers) as pool:
         list(pool.map(one, todo))
+    print(f"{name}: {counts}", flush=True)
+    return counts
+
+
+def label_clauses(name: str, teacher: str, requests: Mapping[str, str]) -> dict[str, int]:
+    """Per-clause labels on the stop 42 prompt, written as each returns. A rerun asks only the
+    prompts with no label yet or an error; it stops scheduling at a capped model's cap."""
+    have = {k for k, v in read_labels(name).items() if v["label"] in aj.LABELS}
+    todo = {k: v for k, v in requests.items() if k not in have}
+    print(f"{name}: {len(requests)} prompts, {len(have)} done, {len(todo)} to ask", flush=True)
+    chat = router_chat(TEACHERS[teacher])
+    capped = threading.Event()
+    counts = {"ok": 0, "failed": 0, "skipped_cap": 0}
+
+    def guarded(messages: list[dict[str, str]]) -> dict[str, Any]:
+        if capped.is_set():
+            raise router.BudgetExceededError("cap reached")
+        try:
+            return chat(messages)
+        except router.BudgetExceededError:
+            capped.set()
+            raise
+
+    def done(sha: str, result: dict[str, Any]) -> None:
+        ok = result.get("label") in aj.LABELS
+        counts["ok" if ok else "failed"] += 1
+        with _lock:
+            label_path(name).parent.mkdir(parents=True, exist_ok=True)
+            with label_path(name).open("a", encoding="utf-8") as f:
+                f.write(json.dumps({"sha": sha, **result}, ensure_ascii=False) + "\n")
+
+    def one(sha: str) -> None:
+        try:
+            result = aj.ask(guarded, todo[sha])
+        except router.BudgetExceededError:
+            counts["skipped_cap"] += 1
+            return
+        except (router.RouterError, KeyError, ValueError) as exc:
+            result = {"label": "error", "passage": 0, "reason": repr(exc), "attempts": 0, "ms": 0}
+        done(sha, result)
+        n = counts["ok"] + counts["failed"]
+        if n % 50 == 0:
+            print(f"{name}: {n}/{len(todo)}", flush=True)
+
+    with ThreadPoolExecutor(WORKERS[teacher]) as pool:
+        list(pool.map(one, list(todo)))
     print(f"{name}: {counts}", flush=True)
     return counts
 
