@@ -62,3 +62,8 @@ results/normalise/gemini-3.8-flash-high/pilot_*
 
 # Stop 42: judge prompts and score inputs quote full statute text from data/ (labels/ and scores/ are the kept copy)
 results/auditor_judge/pilot/
+
+# Stop 43 fresh test: answers and key would unblind the sheet; the sheet quotes full statute text (seal.json keeps their sha256)
+results/fresh/answers.jsonl
+results/fresh/key.json
+results/fresh/sheet.md

@@ -814,3 +814,17 @@ failing are recorded and retried on the next run. Each stop is pre-registered be
   Questions in a seeded random order, the two answers per question shuffled and lettered. The key is git-ignored;
   its sha256 and the battery files' sha256 are recorded here before you grade.
 - The sealed files do not change after that commit. Stop 47 reads them once.
+
+### Stop 43: rows and prompts fixed (2026-10-09, before any answer)
+
+`batteries/fresh/` holds the 80 rows (README there lists every departure from verbatim quotes). The closed-book
+system prompts, exactly:
+- software: `You answer questions about software. State figures, defaults, version numbers and names exactly. If you
+  do not know the answer, say so. Answer in a few plain sentences, without headings or lists.`
+- statutes: `You answer questions about legislation. State figures, dates, section numbers and the names of Acts
+  exactly. If you do not know the answer, say so. Answer in a few plain sentences, without headings or lists.`
+
+The with-source prompts are stop 37's software prompt and the engine's `SYSTEM_PROMPT`. Answers run on a Modal L4
+in chunks of 40, written as each chunk returns; a rerun answers only what is missing. Modal list prices read
+2026-10-09: L4 $0.80, L40S $1.95, A100 80 GB $2.50, H100 $3.95 per hour, plus 15 % in the ledger
+(`results/distill/modal_ledger.json`).
