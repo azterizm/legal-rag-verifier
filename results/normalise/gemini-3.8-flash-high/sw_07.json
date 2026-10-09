@@ -1,0 +1,116 @@
+{
+ "source": "sw-07",
+ "source_sha256": "2041e004898da267c482141427d8615da33f6194a0dff639033c1b26e24c807e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] RFC 8446, section 2.3 (0-RTT Data)\n<<<\nWhen clients and servers share a PSK (either obtained externally or via a previous handshake), TLS 1.3 allows clients to send data on the first flight (\"early data\"). The client uses the PSK to authenticate the server and to encrypt the early data.\n\nIMPORTANT NOTE: The security properties for 0-RTT data are weaker than those for other kinds of TLS data. Specifically:\n\n1. This data is not forward secret, as it is encrypted solely under keys derived using the offered PSK.\n\n2. There are no guarantees of non-replay between connections. Protection against replay for ordinary TLS 1.3 1-RTT data is provided via the server's Random value, but 0-RTT data does not depend on the ServerHello and therefore has weaker guarantees.\n\n0-RTT data cannot be duplicated within a connection (i.e., the server will not process the same data twice for the same connection), and an attacker will not be able to make 0-RTT data appear to be 1-RTT data (because it is protected with different keys).\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "In TLS 1.3, when clients and servers share a PSK obtained either externally or via a previous handshake, clients are permitted to send data on the first flight, referred to as early data.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "When clients and servers share a PSK (either obtained externally or via a previous handshake), TLS 1.3 allows clients to send data on the first flight (\"early data\")."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The client uses the PSK to authenticate the server and to encrypt early data.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The client uses the PSK to authenticate the server and to encrypt the early data."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The security properties for 0-RTT data are weaker than those for other kinds of TLS data.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The security properties for 0-RTT data are weaker than those for other kinds of TLS data."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "0-RTT data is not forward secret because it is encrypted solely under keys derived using the offered PSK.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The security properties for 0-RTT data are weaker than those for other kinds of TLS data.",
+     "This data is not forward secret, as it is encrypted solely under keys derived using the offered PSK."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "There are no guarantees of non-replay between connections for 0-RTT data.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The security properties for 0-RTT data are weaker than those for other kinds of TLS data.",
+     "There are no guarantees of non-replay between connections."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Protection against replay for ordinary TLS 1.3 1-RTT data is provided via the server's Random value.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Protection against replay for ordinary TLS 1.3 1-RTT data is provided via the server's Random value"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Because 0-RTT data does not depend on the ServerHello, 0-RTT data has weaker replay guarantees than ordinary TLS 1.3 1-RTT data.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Protection against replay for ordinary TLS 1.3 1-RTT data is provided via the server's Random value, but 0-RTT data does not depend on the ServerHello and therefore has weaker guarantees."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "0-RTT data cannot be duplicated within a connection, meaning the server will not process the same data twice for the same connection.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "0-RTT data cannot be duplicated within a connection (i.e., the server will not process the same data twice for the same connection)"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "An attacker is not able to make 0-RTT data appear to be 1-RTT data because 0-RTT data is protected with different keys.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "0-RTT data",
+     "an attacker will not be able to make 0-RTT data appear to be 1-RTT data (because it is protected with different keys)."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The client uses the PSK to authenticate the server and to encrypt data sent on the first flight in TLS 1.3.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "TLS 1.3 allows clients to send data on the first flight (\"early data\").",
+     "The client uses the PSK to authenticate the server and to encrypt the early data."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Data sent on the first flight in TLS 1.3 is not forward secret because it is encrypted solely under keys derived using the offered PSK.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "TLS 1.3 allows clients to send data on the first flight (\"early data\").",
+     "This data is not forward secret, as it is encrypted solely under keys derived using the offered PSK."
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

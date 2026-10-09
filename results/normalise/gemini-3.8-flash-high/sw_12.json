@@ -1,0 +1,79 @@
+{
+ "source": "sw-12",
+ "source_sha256": "6d85f7a60af312097ecfec2691b31f6225110280ec671218834588ee9e12a32e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] PostgreSQL 17 documentation, CREATE INDEX, parameter CONCURRENTLY\n<<<\nWhen this option is used, PostgreSQL will build the index without taking any locks that prevent concurrent inserts, updates, or deletes on the table; whereas a standard index build locks out writes (but not reads) on the table until it's done.\n>>>\n\n[2] PostgreSQL 17 documentation, CREATE INDEX, Building Indexes Concurrently\n<<<\nAnother difference is that a regular CREATE INDEX command can be performed within a transaction block, but CREATE INDEX CONCURRENTLY cannot.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "When the CONCURRENTLY option is used, PostgreSQL builds the index without taking any locks that prevent concurrent inserts, updates, or deletes on the table.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "When this option is used, PostgreSQL will build the index without taking any locks that prevent concurrent inserts, updates, or deletes on the table"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A standard index build locks out writes on the table until the build is done.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "a standard index build locks out writes (but not reads) on the table until it's done"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A standard index build does not lock out reads on the table.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "a standard index build locks out writes (but not reads) on the table until it's done"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A regular CREATE INDEX command can be performed within a transaction block.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "a regular CREATE INDEX command can be performed within a transaction block"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A CREATE INDEX CONCURRENTLY command cannot be performed within a transaction block.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "performed within a transaction block",
+     "CREATE INDEX CONCURRENTLY cannot"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A CREATE INDEX CONCURRENTLY command builds the index without taking locks that prevent concurrent inserts, updates, or deletes on the table, but cannot be performed within a transaction block.",
+    "derived": true,
+    "passage": 2,
+    "quotes": [
+     "build the index without taking any locks that prevent concurrent inserts, updates, or deletes on the table",
+     "performed within a transaction block",
+     "CREATE INDEX CONCURRENTLY cannot"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A regular CREATE INDEX command locks out writes on the table until it is done, but can be performed within a transaction block.",
+    "derived": true,
+    "passage": 2,
+    "quotes": [
+     "a standard index build locks out writes (but not reads) on the table until it's done",
+     "a regular CREATE INDEX command can be performed within a transaction block"
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "source": "sw-13",
+ "source_sha256": "47e0d6891cbbb4513b1d24ae1ff0d25310e8f1d911ad8e25e297bad073a2bbff",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] PostgreSQL 17 documentation, 5.5.3 Unique Constraints\n<<<\nIn general, a unique constraint is violated if there is more than one row in the table where the values of all of the columns included in the constraint are equal. By default, two null values are not considered equal in this comparison. That means even in the presence of a unique constraint it is possible to store duplicate rows that contain a null value in at least one of the constrained columns. This behavior can be changed by adding the clause NULLS NOT DISTINCT\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "In general, a unique constraint is violated if there is more than one row in the table where the values of all columns included in the constraint are equal.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "In general, a unique constraint is violated if there is more than one row in the table where the values of all of the columns included in the constraint are equal."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "By default, two null values are not considered equal when comparing column values for a unique constraint.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "By default, two null values are not considered equal in this comparison."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Even in the presence of a unique constraint, it is possible to store duplicate rows that contain a null value in at least one of the constrained columns.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "even in the presence of a unique constraint it is possible to store duplicate rows that contain a null value in at least one of the constrained columns."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The default behavior regarding the comparison of null values in a unique constraint can be changed by adding the clause NULLS NOT DISTINCT.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "This behavior can be changed by adding the clause NULLS NOT DISTINCT"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Adding the clause NULLS NOT DISTINCT causes two null values to be considered equal in a unique constraint comparison.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "two null values are not considered equal in this comparison.",
+     "This behavior can be changed by adding the clause NULLS NOT DISTINCT"
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

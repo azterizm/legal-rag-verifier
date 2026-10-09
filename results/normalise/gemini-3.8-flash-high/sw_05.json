@@ -1,0 +1,89 @@
+{
+ "source": "sw-05",
+ "source_sha256": "9dc0fafeaada5ba8caa451240763a9aad4c43285e796f9401d18c4fb34ead5d0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] RFC 6455, section 5.1 (Overview)\n<<<\nTo avoid confusing network intermediaries (such as intercepting proxies) and for security reasons that are further discussed in Section 10.3, a client MUST mask all frames that it sends to the server (see Section 5.3 for further details). (Note that masking is done whether or not the WebSocket Protocol is running over TLS.) The server MUST close the connection upon receiving a frame that is not masked. In this case, a server MAY send a Close frame with a status code of 1002 (protocol error) as defined in Section 7.4.1. A server MUST NOT mask any frames that it sends to the client. A client MUST close a connection if it detects a masked frame.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "A client must mask all frames that the client sends to the server to avoid confusing network intermediaries and for security reasons.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "To avoid confusing network intermediaries",
+     "for security reasons",
+     "a client MUST mask all frames that it sends to the server"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Frame masking is performed whether or not the WebSocket Protocol is running over TLS.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "masking is done whether or not the WebSocket Protocol is running over TLS"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The server must close the connection upon receiving a frame that is not masked.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The server MUST close the connection upon receiving a frame that is not masked."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Upon receiving an unmasked frame, a server may send a Close frame with a status code of 1002 (protocol error).",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "receiving a frame that is not masked",
+     "a server MAY send a Close frame with a status code of 1002 (protocol error)"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A server must not mask any frames that the server sends to the client.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "A server MUST NOT mask any frames that it sends to the client."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A client must close a connection if the client detects a masked frame.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "A client MUST close a connection if it detects a masked frame."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Running the WebSocket Protocol over TLS does not exempt a client from the requirement to mask frames sent to the server.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "a client MUST mask all frames that it sends to the server",
+     "masking is done whether or not the WebSocket Protocol is running over TLS"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "While a server is required to close the connection upon receiving an unmasked frame, sending a Close frame with status code 1002 is optional.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "The server MUST close the connection upon receiving a frame that is not masked.",
+     "In this case, a server MAY send a Close frame with a status code of 1002"
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}
