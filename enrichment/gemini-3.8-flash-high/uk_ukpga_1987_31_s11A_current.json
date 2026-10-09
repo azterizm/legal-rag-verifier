@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/1987/31/s11A@current",
+ "section": "uk/ukpga/1987/31/s11A",
+ "version": "current",
+ "source_sha256": "5b8aaf2b160efac726b1c5aab8612fae410e5b49ffa8ad5d9d20584d67cb733b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The requisite majority of qualifying tenants of the constituent flats may serve a notice on the purchaser requiring the purchaser to provide particulars of the terms on which the original disposal was made (including the deposit and consideration required) and the date on which it was made.",
+    "quote": "The requisite majority of qualifying tenants of the constituent flats may serve a notice on the purchaser requiring him— (a) to give particulars of the terms on which the original disposal was made (including the deposit and consideration required) and the date on which it was made"
+   },
+   {
+    "requirement": "Where the original disposal consisted of entering into a contract, the requisite majority of qualifying tenants of the constituent flats may require the purchaser to provide a copy of the contract.",
+    "quote": "where the disposal consisted of entering into a contract, to provide a copy of the contract"
+   },
+   {
+    "requirement": "A notice served by the qualifying tenants must specify the name and address of the person to whom, on behalf of the tenants, the particulars are to be given or the copy of the contract is to be provided.",
+    "quote": "The notice must specify the name and address of the person to whom (on behalf of the tenants) the particulars are to be given, or the copy of the contract provided."
+   },
+   {
+    "requirement": "A notice under section 11A must be served before the end of the period of four months beginning with the date by which notices under section 3A of the Landlord and Tenant Act 1985 relating to the original disposal have been served on the requisite majority of qualifying tenants of the constituent flats.",
+    "quote": "Any notice under this section must be served before the end of the period of four months beginning with the date by which— (a) notices under section 3A of the Landlord and Tenant Act 1985 (duty of new landlord to inform tenants of rights) relating to the original disposal"
+   },
+   {
+    "requirement": "Where section 3A of the Landlord and Tenant Act 1985 does not apply, a notice under section 11A must be served before the end of the period of four months beginning with the date by which documents of any other description indicating that the original disposal has taken place and alerting the tenants to the existence of their rights under this Part and the time within which any such rights must be exercised have been served on the requisite majority of qualifying tenants of the constituent flats.",
+    "quote": "where that section does not apply, documents of any other description— (i) indicating that the original disposal has taken place, and (ii) alerting the tenants to the existence of their rights under this Part and the time within which any such rights must be exercised, have been served on the requisite majority of qualifying tenants of the constituent flats"
+   },
+   {
+    "requirement": "A person served with a notice under section 11A must comply with it within the period of one month beginning with the date on which the notice is served on that person.",
+    "quote": "A person served with a notice under this section shall comply with it within the period of one month beginning with the date on which it is served on him."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time limit for serving a notice under section 11A, beginning with the date by which relevant notices or documents have been served on the requisite majority of qualifying tenants",
+    "value": "four months",
+    "quote": "period of four months beginning with the date by which"
+   },
+   {
+    "what": "Time limit for a person served with a notice under section 11A to comply with it, beginning with the date of service",
+    "value": "one month",
+    "quote": "period of one month beginning with the date on which it is served on him"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The requisite majority of qualifying tenants of the constituent flats may serve a notice on the purchaser requiring the purchaser to provide particulars of the terms on which the original disposal was made (including the deposit and consideration required) and the date on which it was made.",
+   "quote": "The requisite majority of qualifying tenants of the constituent flats may serve a notice on the purchaser requiring him— (a) to give particulars of the terms on which the original disposal was made (including the deposit and consideration required) and the date on which it was made"
+  },
+  {
+   "requirement": "Where the original disposal consisted of entering into a contract, the requisite majority of qualifying tenants of the constituent flats may require the purchaser to provide a copy of the contract.",
+   "quote": "where the disposal consisted of entering into a contract, to provide a copy of the contract"
+  },
+  {
+   "requirement": "A notice served by the qualifying tenants must specify the name and address of the person to whom, on behalf of the tenants, the particulars are to be given or the copy of the contract is to be provided.",
+   "quote": "The notice must specify the name and address of the person to whom (on behalf of the tenants) the particulars are to be given, or the copy of the contract provided."
+  },
+  {
+   "requirement": "A notice under section 11A must be served before the end of the period of four months beginning with the date by which notices under section 3A of the Landlord and Tenant Act 1985 relating to the original disposal have been served on the requisite majority of qualifying tenants of the constituent flats.",
+   "quote": "Any notice under this section must be served before the end of the period of four months beginning with the date by which— (a) notices under section 3A of the Landlord and Tenant Act 1985 (duty of new landlord to inform tenants of rights) relating to the original disposal"
+  },
+  {
+   "requirement": "Where section 3A of the Landlord and Tenant Act 1985 does not apply, a notice under section 11A must be served before the end of the period of four months beginning with the date by which documents of any other description indicating that the original disposal has taken place and alerting the tenants to the existence of their rights under this Part and the time within which any such rights must be exercised have been served on the requisite majority of qualifying tenants of the constituent flats.",
+   "quote": "where that section does not apply, documents of any other description— (i) indicating that the original disposal has taken place, and (ii) alerting the tenants to the existence of their rights under this Part and the time within which any such rights must be exercised, have been served on the requisite majority of qualifying tenants of the constituent flats"
+  },
+  {
+   "requirement": "A person served with a notice under section 11A must comply with it within the period of one month beginning with the date on which the notice is served on that person.",
+   "quote": "A person served with a notice under this section shall comply with it within the period of one month beginning with the date on which it is served on him."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Time limit for serving a notice under section 11A, beginning with the date by which relevant notices or documents have been served on the requisite majority of qualifying tenants",
+   "value": "four months",
+   "quote": "period of four months beginning with the date by which"
+  },
+  {
+   "what": "Time limit for a person served with a notice under section 11A to comply with it, beginning with the date of service",
+   "value": "one month",
+   "quote": "period of one month beginning with the date on which it is served on him"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1970/9/s43B@current",
+ "section": "uk/ukpga/1970/9/s43B",
+ "version": "current",
+ "source_sha256": "d46631c5546eb2494d38af712d8828f9ff08716e3562225efdcb1c262cd632eb",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person may not exercise a power conferred by section 43A(2) to make, give, revoke, or vary a claim, election, application, or notice if doing so would alter the tax liability of another person, unless written consent is given by that other person or by that other person's personal representatives if deceased.",
+    "quote": "that power may not be exercised except with the consent in writing of that other person, or where he has died, his personal representatives"
+   },
+   {
+    "requirement": "Section 43A does not apply by reason of any assessment made because of an increased tax liability if that increased liability resulted from the exercise of a section 43A(2) power in consequence of an assessment made on another person.",
+    "quote": "that section shall not apply by reason of any assessment made because of that increased liability"
+   },
+   {
+    "requirement": "If the total reductions in tax liability resulting from making, giving, revoking, or varying one or more relevant claims, elections, applications, or notices under section 43A for an assessment would exceed the additional tax liability resulting from that assessment, the excess amount cannot be used to reduce any liability to tax.",
+    "quote": "the excess shall not be available to reduce any liability to tax"
+   },
+   {
+    "requirement": "Where section 43B(3) limits the reduction in tax liability for more than one period or for more than one person, the limited amount must, except where section 43B(4)(b) applies, be apportioned between the periods or persons concerned in the manner specified by the inspector by written notice to the person or persons concerned.",
+    "quote": "in such manner as may be specified by the inspector by notice in writing to the person or persons concerned"
+   },
+   {
+    "requirement": "Where section 43B(3) limits the reduction in tax liability for more than one period or for more than one person, the limited amount must be apportioned in the manner specified in a written notice given to the inspector by the person concerned or jointly by the persons concerned within the relevant period.",
+    "quote": "in such manner as may be specified in the notice given by the person or persons concerned"
+   },
+   {
+    "requirement": "For the purposes of section 43B(4)(b), the relevant period is defined as the period of 30 days beginning with the day on which an inspector's notice under section 43B(4)(a) is given to the person concerned, or where more than one person is concerned, the latest date on which such notice is given to any of them.",
+    "quote": "the relevant period is the period of 30 days beginning with the day on which a notice under paragraph (a) of that subsection is given to the person concerned or, where more than one person is concerned, the latest date on which such notice is given to any of them"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period allowed for a person or persons concerned to give notice in writing to the inspector specifying the manner of apportionment",
+    "value": "30 days",
+    "quote": "period of 30 days beginning with the day on which a notice under paragraph (a) of that subsection is given"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person may not exercise a power conferred by section 43A(2) to make, give, revoke, or vary a claim, election, application, or notice if doing so would alter the tax liability of another person, unless written consent is given by that other person or by that other person's personal representatives if deceased.",
+   "quote": "that power may not be exercised except with the consent in writing of that other person, or where he has died, his personal representatives"
+  },
+  {
+   "requirement": "Section 43A does not apply by reason of any assessment made because of an increased tax liability if that increased liability resulted from the exercise of a section 43A(2) power in consequence of an assessment made on another person.",
+   "quote": "that section shall not apply by reason of any assessment made because of that increased liability"
+  },
+  {
+   "requirement": "If the total reductions in tax liability resulting from making, giving, revoking, or varying one or more relevant claims, elections, applications, or notices under section 43A for an assessment would exceed the additional tax liability resulting from that assessment, the excess amount cannot be used to reduce any liability to tax.",
+   "quote": "the excess shall not be available to reduce any liability to tax"
+  },
+  {
+   "requirement": "Where section 43B(3) limits the reduction in tax liability for more than one period or for more than one person, the limited amount must, except where section 43B(4)(b) applies, be apportioned between the periods or persons concerned in the manner specified by the inspector by written notice to the person or persons concerned.",
+   "quote": "in such manner as may be specified by the inspector by notice in writing to the person or persons concerned"
+  },
+  {
+   "requirement": "Where section 43B(3) limits the reduction in tax liability for more than one period or for more than one person, the limited amount must be apportioned in the manner specified in a written notice given to the inspector by the person concerned or jointly by the persons concerned within the relevant period.",
+   "quote": "in such manner as may be specified in the notice given by the person or persons concerned"
+  },
+  {
+   "requirement": "For the purposes of section 43B(4)(b), the relevant period is defined as the period of 30 days beginning with the day on which an inspector's notice under section 43B(4)(a) is given to the person concerned, or where more than one person is concerned, the latest date on which such notice is given to any of them.",
+   "quote": "the relevant period is the period of 30 days beginning with the day on which a notice under paragraph (a) of that subsection is given to the person concerned or, where more than one person is concerned, the latest date on which such notice is given to any of them"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period allowed for a person or persons concerned to give notice in writing to the inspector specifying the manner of apportionment",
+   "value": "30 days",
+   "quote": "period of 30 days beginning with the day on which a notice under paragraph (a) of that subsection is given"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

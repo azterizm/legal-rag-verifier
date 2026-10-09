@@ -1,0 +1,147 @@
+{
+ "key": "uk/ukpga/1984/60/s46@current",
+ "section": "uk/ukpga/1984/60/s46",
+ "version": "current",
+ "source_sha256": "2681f6601e1b14a78a9fe82041289758e0c9fd7ba0b19155ceb84da3aa83bd4c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who is charged with an offence and subsequently kept in police detention or detained by a local authority under section 38(6) arrangements must be brought before a magistrates’ court in accordance with statutory provisions.",
+    "quote": "brought before a magistrates’ court in accordance with the provisions of this section"
+   },
+   {
+    "requirement": "A charged and detained person who is to be brought before a magistrates’ court in the local justice area where the charging police station is situated must be brought before such a court as soon as is practicable and in any event not later than the first sitting after being charged.",
+    "quote": "he shall be brought before such a court as soon as is practicable and in any event not later than the first sitting after he is charged with the offence"
+   },
+   {
+    "requirement": "The custody officer for the police station where a person was charged must inform the designated officer for the area that a person subject to subsection (2) is in the area if no magistrates’ court in that local justice area is due to sit on the day of charge or on the next day.",
+    "quote": "the custody officer for the police station at which he was charged shall inform the designated officerfor the area that there is a person in the area to whom subsection (2) above applies"
+   },
+   {
+    "requirement": "A charged and detained person who is to be brought before a magistrates’ court in a local justice area other than where the charging police station is situated must be removed to that area as soon as is practicable, brought before such a court as soon as is practicable after arrival, and in any event brought not later than the first sitting of a magistrates’ court in that area after arrival.",
+    "quote": "he shall be removed to that area as soon as is practicable and brought before such a court as soon as is practicable after his arrival in the area and in any event not later than the first sitting of a magistrates’ court in that area after his arrival in the area"
+   },
+   {
+    "requirement": "A charged person who is to be brought before a magistrates' court in another local justice area must be taken to a police station in that area if no magistrates’ court in that area is due to sit on the day of arrival or on the next day.",
+    "quote": "he shall be taken to a police station in the area"
+   },
+   {
+    "requirement": "The custody officer at the receiving police station must inform the designated officer for the area that a person subject to subsection (4) is in the area if no magistrates’ court in that area is due to sit on the day of arrival or on the next day.",
+    "quote": "the custody officer at that station shall inform the designated officer for the area that there is a person in the area to whom subsection (4) applies"
+   },
+   {
+    "requirement": "Subject to subsection (8), the designated officer for a local justice area who has received notification under subsection (3) or subsection (5) must arrange for a magistrates’ court to sit not later than the day next following the relevant day.",
+    "quote": "the designated officer shall arrange for a magistrates’ court to sit not later than the day next following the relevant day"
+   },
+   {
+    "requirement": "For a person who is to be brought before a magistrates’ court in the local justice area where the charging police station is situated, the relevant day means the day on which that person was charged.",
+    "quote": "means the day on which he was charged"
+   },
+   {
+    "requirement": "For a person who is to be brought before a magistrates’ court in any local justice area other than where the charging police station is situated, the relevant day means the day on which that person arrives in the area.",
+    "quote": "means the day on which he arrives in the area"
+   },
+   {
+    "requirement": "Where the day next following the relevant day is Christmas Day, Good Friday, or a Sunday, the designated officer must arrange for a magistrates’ court to sit not later than the first day after the relevant day that is not one of those days.",
+    "quote": "duty to arrange for a magistrates’ court to sit not later than the first day after the relevant day which is not one of those days"
+   },
+   {
+    "requirement": "A person who is in hospital is not required by section 46 to be brought before a court if that person is not well enough.",
+    "quote": "Nothing in this section requires a person who is in hospital to be brought before a court if he is not well enough"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period within which the lack of a court sitting requires the custody officer to notify the designated officer following a charge in the same area",
+    "value": "the next day",
+    "quote": "either on the day on which he is charged or on the next day"
+   },
+   {
+    "what": "The period within which the lack of a court sitting requires a person to be taken to a police station and the designated officer notified following arrival in another area",
+    "value": "the next day",
+    "quote": "either on the day on which he arrives in the area or on the next day"
+   },
+   {
+    "what": "The standard deadline by which the designated officer must arrange for a magistrates' court to sit following receipt of notice",
+    "value": "the day next following the relevant day",
+    "quote": "not later than the day next following the relevant day"
+   },
+   {
+    "what": "A specific holiday which, if falling on the day next following the relevant day, defers the designated officer's duty to arrange a court sitting",
+    "value": "Christmas Day",
+    "quote": "Christmas Day, Good Friday or a Sunday"
+   },
+   {
+    "what": "A specific holy day which, if falling on the day next following the relevant day, defers the designated officer's duty to arrange a court sitting",
+    "value": "Good Friday",
+    "quote": "Christmas Day, Good Friday or a Sunday"
+   },
+   {
+    "what": "A specific day of the week which, if falling on the day next following the relevant day, defers the designated officer's duty to arrange a court sitting",
+    "value": "Sunday",
+    "quote": "Christmas Day, Good Friday or a Sunday"
+   },
+   {
+    "what": "The extended deadline for the designated officer to arrange a magistrates' court sitting when the day next following the relevant day falls on Christmas Day, Good Friday, or Sunday",
+    "value": "the first day after the relevant day which is not one of those days",
+    "quote": "not later than the first day after the relevant day which is not one of those days"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person who is charged with an offence and subsequently kept in police detention or detained by a local authority under section 38(6) arrangements must be brought before a magistrates’ court in accordance with statutory provisions.",
+   "quote": "brought before a magistrates’ court in accordance with the provisions of this section"
+  },
+  {
+   "requirement": "A charged and detained person who is to be brought before a magistrates’ court in the local justice area where the charging police station is situated must be brought before such a court as soon as is practicable and in any event not later than the first sitting after being charged.",
+   "quote": "he shall be brought before such a court as soon as is practicable and in any event not later than the first sitting after he is charged with the offence"
+  },
+  {
+   "requirement": "The custody officer for the police station where a person was charged must inform the designated officer for the area that a person subject to subsection (2) is in the area if no magistrates’ court in that local justice area is due to sit on the day of charge or on the next day.",
+   "quote": "the custody officer for the police station at which he was charged shall inform the designated officerfor the area that there is a person in the area to whom subsection (2) above applies"
+  },
+  {
+   "requirement": "A charged and detained person who is to be brought before a magistrates’ court in a local justice area other than where the charging police station is situated must be removed to that area as soon as is practicable, brought before such a court as soon as is practicable after arrival, and in any event brought not later than the first sitting of a magistrates’ court in that area after arrival.",
+   "quote": "he shall be removed to that area as soon as is practicable and brought before such a court as soon as is practicable after his arrival in the area and in any event not later than the first sitting of a magistrates’ court in that area after his arrival in the area"
+  },
+  {
+   "requirement": "A charged person who is to be brought before a magistrates' court in another local justice area must be taken to a police station in that area if no magistrates’ court in that area is due to sit on the day of arrival or on the next day.",
+   "quote": "he shall be taken to a police station in the area"
+  },
+  {
+   "requirement": "The custody officer at the receiving police station must inform the designated officer for the area that a person subject to subsection (4) is in the area if no magistrates’ court in that area is due to sit on the day of arrival or on the next day.",
+   "quote": "the custody officer at that station shall inform the designated officer for the area that there is a person in the area to whom subsection (4) applies"
+  },
+  {
+   "requirement": "Subject to subsection (8), the designated officer for a local justice area who has received notification under subsection (3) or subsection (5) must arrange for a magistrates’ court to sit not later than the day next following the relevant day.",
+   "quote": "the designated officer shall arrange for a magistrates’ court to sit not later than the day next following the relevant day"
+  },
+  {
+   "requirement": "For a person who is to be brought before a magistrates’ court in the local justice area where the charging police station is situated, the relevant day means the day on which that person was charged.",
+   "quote": "means the day on which he was charged"
+  },
+  {
+   "requirement": "For a person who is to be brought before a magistrates’ court in any local justice area other than where the charging police station is situated, the relevant day means the day on which that person arrives in the area.",
+   "quote": "means the day on which he arrives in the area"
+  },
+  {
+   "requirement": "Where the day next following the relevant day is Christmas Day, Good Friday, or a Sunday, the designated officer must arrange for a magistrates’ court to sit not later than the first day after the relevant day that is not one of those days.",
+   "quote": "duty to arrange for a magistrates’ court to sit not later than the first day after the relevant day which is not one of those days"
+  },
+  {
+   "requirement": "A person who is in hospital is not required by section 46 to be brought before a court if that person is not well enough.",
+   "quote": "Nothing in this section requires a person who is in hospital to be brought before a court if he is not well enough"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 7,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/1968/60/s30@current",
+ "section": "uk/ukpga/1968/60/s30",
+ "version": "current",
+ "source_sha256": "e30bd5e83fda839524b11afbf81bc140f900a416a968a5119a66f32c4c805340",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Theft Act 1968 applies to parties to a marriage, and to property belonging to a wife or husband (whether or not by reason of an interest derived from the marriage), as if they were not married and any such interest subsisted independently of the marriage.",
+    "quote": "This Act shall apply in relation to the parties to a marriage, and to property belonging to the wife or husband whether or not by reason of an interest derived from the marriage, as it would apply if they were not married"
+   },
+   {
+    "requirement": "Subject to subsection (4), a person has the same right to bring proceedings against their wife or husband for any offence, whether under the Theft Act 1968 or otherwise, as if they were not married.",
+    "quote": "a person shall have the same right to bring proceedings against that person’s wife or husband for any offence (whether under this Act or otherwise) as if they were not married"
+   },
+   {
+    "requirement": "A person bringing proceedings against their wife or husband is competent to give evidence for the prosecution at every stage of the proceedings.",
+    "quote": "a person bringing any such proceedings shall be competent to give evidence for the prosecution at every stage of the proceedings"
+   },
+   {
+    "requirement": "Proceedings must not be instituted against a person for stealing or doing unlawful damage to property belonging at the time of the offence to that person's wife, husband, or civil partner, or for any attempt, incitement, or conspiracy to commit such an offence, unless instituted by or with the consent of the Director of Public Prosecutions.",
+    "quote": "Proceedings shall not be instituted against a person for any offence of stealing or doing unlawful damage to property which at the time of the offence belongs to that person’s wife or husband, or civil partner or for any attempt, incitement or conspiracy to commit such an offence,unless the proceedings are instituted by or with the consent of the Director of Public Prosecutions"
+   },
+   {
+    "requirement": "The requirement for proceedings to be instituted by or with the consent of the Director of Public Prosecutions does not apply if the person is charged with committing the offence jointly with the wife, husband, or civil partner.",
+    "quote": "this subsection shall not apply to proceedings against a person for an offence— (i) if that person is charged with committing the offence jointly with the wife or husband or civil partner"
+   },
+   {
+    "requirement": "The requirement for proceedings to be instituted by or with the consent of the Director of Public Prosecutions does not apply if, by virtue of any judicial decree or order wherever made, the person and the wife or husband are at the time of the offence under no obligation to cohabit.",
+    "quote": "if by virtue of any judicial decree or order (wherever made) that person and the wife or husband are at the time of the offence under no obligation to cohabit"
+   },
+   {
+    "requirement": "The requirement for proceedings to be instituted by or with the consent of the Director of Public Prosecutions does not apply if an order wherever made is in force providing for the separation of the person and his or her civil partner.",
+    "quote": "an order (wherever made) is in force providing for the separation of that person and his or her civil partner"
+   },
+   {
+    "requirement": "Notwithstanding section 6 of the Prosecution of Offences Act 1979, the restrictions under subsection (4) apply to an arrest without warrant made by a wife, husband, or civil partner.",
+    "quote": "Notwithstanding section 6 of the Prosecution of Offences Act 1979 subsection (4) of this section shall apply— (a) to an arrest (if without warrant) made by the wife or husband, or civil partner"
+   },
+   {
+    "requirement": "Notwithstanding section 6 of the Prosecution of Offences Act 1979, the restrictions under subsection (4) apply to a warrant of arrest issued on an information laid by a wife, husband, or civil partner.",
+    "quote": "to a warrant of arrest issued on an information laid by the wife or husband or civil partner"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Theft Act 1968 applies to parties to a marriage, and to property belonging to a wife or husband (whether or not by reason of an interest derived from the marriage), as if they were not married and any such interest subsisted independently of the marriage.",
+   "quote": "This Act shall apply in relation to the parties to a marriage, and to property belonging to the wife or husband whether or not by reason of an interest derived from the marriage, as it would apply if they were not married"
+  },
+  {
+   "requirement": "Subject to subsection (4), a person has the same right to bring proceedings against their wife or husband for any offence, whether under the Theft Act 1968 or otherwise, as if they were not married.",
+   "quote": "a person shall have the same right to bring proceedings against that person’s wife or husband for any offence (whether under this Act or otherwise) as if they were not married"
+  },
+  {
+   "requirement": "A person bringing proceedings against their wife or husband is competent to give evidence for the prosecution at every stage of the proceedings.",
+   "quote": "a person bringing any such proceedings shall be competent to give evidence for the prosecution at every stage of the proceedings"
+  },
+  {
+   "requirement": "Proceedings must not be instituted against a person for stealing or doing unlawful damage to property belonging at the time of the offence to that person's wife, husband, or civil partner, or for any attempt, incitement, or conspiracy to commit such an offence, unless instituted by or with the consent of the Director of Public Prosecutions.",
+   "quote": "Proceedings shall not be instituted against a person for any offence of stealing or doing unlawful damage to property which at the time of the offence belongs to that person’s wife or husband, or civil partner or for any attempt, incitement or conspiracy to commit such an offence,unless the proceedings are instituted by or with the consent of the Director of Public Prosecutions"
+  },
+  {
+   "requirement": "The requirement for proceedings to be instituted by or with the consent of the Director of Public Prosecutions does not apply if the person is charged with committing the offence jointly with the wife, husband, or civil partner.",
+   "quote": "this subsection shall not apply to proceedings against a person for an offence— (i) if that person is charged with committing the offence jointly with the wife or husband or civil partner"
+  },
+  {
+   "requirement": "The requirement for proceedings to be instituted by or with the consent of the Director of Public Prosecutions does not apply if, by virtue of any judicial decree or order wherever made, the person and the wife or husband are at the time of the offence under no obligation to cohabit.",
+   "quote": "if by virtue of any judicial decree or order (wherever made) that person and the wife or husband are at the time of the offence under no obligation to cohabit"
+  },
+  {
+   "requirement": "The requirement for proceedings to be instituted by or with the consent of the Director of Public Prosecutions does not apply if an order wherever made is in force providing for the separation of the person and his or her civil partner.",
+   "quote": "an order (wherever made) is in force providing for the separation of that person and his or her civil partner"
+  },
+  {
+   "requirement": "Notwithstanding section 6 of the Prosecution of Offences Act 1979, the restrictions under subsection (4) apply to an arrest without warrant made by a wife, husband, or civil partner.",
+   "quote": "Notwithstanding section 6 of the Prosecution of Offences Act 1979 subsection (4) of this section shall apply— (a) to an arrest (if without warrant) made by the wife or husband, or civil partner"
+  },
+  {
+   "requirement": "Notwithstanding section 6 of the Prosecution of Offences Act 1979, the restrictions under subsection (4) apply to a warrant of arrest issued on an information laid by a wife, husband, or civil partner.",
+   "quote": "to a warrant of arrest issued on an information laid by the wife or husband or civil partner"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

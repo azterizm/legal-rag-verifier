@@ -1,0 +1,137 @@
+{
+ "key": "uk/ukpga/2007/11/s107@current",
+ "section": "uk/ukpga/2007/11/s107",
+ "version": "current",
+ "source_sha256": "9ec0f3a4e9a0e84d25b4d692d1dab64d573a408c16f8735bfbd06afef5b78743",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 32(1)(c) of the Limitation Act 1980, concerning the extended period for bringing an action in the case of a mistake, does not apply to any action brought before 8th September 2003 for relief from the consequences of a mistake of law relating to a taxation matter under the care and management of the Commissioners of Inland Revenue.",
+    "quote": "Section 32(1)(c) of the Limitation Act 1980 (c. 58) (extended period for bringing action in case of mistake) does not apply in relation to any action brought before 8th September 2003 for relief from the consequences of a mistake of law relating to a taxation matter under the care and management of the Commissioners of Inland Revenue."
+   },
+   {
+    "requirement": "The disapplication of section 32(1)(c) of the Limitation Act 1980 applies regardless of how the grounds for bringing the action were expressed and regardless of whether the action was also brought for relief other than from the consequences of a mistake of law relating to such a taxation matter.",
+    "quote": "Subsection (1) has effect regardless of how the grounds on which the action was brought were expressed and of whether it was also brought otherwise than for such relief."
+   },
+   {
+    "requirement": "The disapplication under subsection (1) does not apply to an action, or to so much of an action as relates to a cause of action, if the action or cause of action was the subject of a judgment of the House of Lords given before 6th December 2006 concerning the application of section 32(1)(c) to such relief.",
+    "quote": "the action, or cause of action, has been the subject of a judgment of the House of Lords given before 6th December 2006 as to the application of section 32(1)(c) in relation to such relief"
+   },
+   {
+    "requirement": "The disapplication under subsection (1) does not apply to an action, or to so much of an action as relates to a cause of action, if the parties to the action are, in accordance with a group litigation order, bound in relation to the action or cause of action by a judgment of the House of Lords in another action given before 6th December 2006 concerning the application of section 32(1)(c) to such relief.",
+    "quote": "the parties to the action are, in accordance with a group litigation order, bound in relation to the action, or cause of action, by a judgment of the House of Lords in another action given before that date as to the application of section 32(1)(c) in relation to such relief."
+   },
+   {
+    "requirement": "A judgment of any court given on or after 6th December 2006 but before the day on which the Finance Act 2007 is passed is taken to be what it would have been if subsections (1) to (3) had been in force at all times since the action was brought and any defence of limitation that would have been available had been raised.",
+    "quote": "If the judgment of any court was given on or after 6th December 2006 but before the day on which this Act is passed, the judgment is to be taken to have been what it would have been had subsections (1) to (3) been in force at all times since the action was brought (and any defence of limitation which would have been available had been raised)."
+   },
+   {
+    "requirement": "Any payment made to satisfy a liability under a court judgment that is taken not to have been imposed as a consequence of subsection (4) is repayable, together with interest from the date of the payment.",
+    "quote": "any payment made to satisfy a liability under the judgment which (in consequence of subsection (4)) is to be taken not to have been imposed is repayable (with interest from the date of the payment)."
+   },
+   {
+    "requirement": "The disapplication under subsection (1) does not apply to an action, or to so much of an action as relates to a cause of action, if the consequence of the mistake of law to which the action or cause of action relates is the charging of tax contrary to EU law.",
+    "quote": "Subsection (1) also does not have effect in relation to an action, or so much of an action as relates to a cause of action, if the consequences of a mistake of law to which the action, or cause of action, relates is the charging of tax contrary to EU law."
+   },
+   {
+    "requirement": "A group litigation order is defined as an order of a court providing for the case management of actions that give rise to common or related issues of fact or law.",
+    "quote": "“group litigation order” means an order of a court providing for the case management of actions which give rise to common or related issues of fact or law"
+   },
+   {
+    "requirement": "The term judgment includes an order, and the term given includes made.",
+    "quote": "“judgment” includes order (and “given” includes made)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Cut-off date before which an action must have been brought for subsection (1) to apply",
+    "value": "8th September 2003",
+    "quote": "action brought before 8th September 2003"
+   },
+   {
+    "what": "Cut-off date before which a House of Lords judgment must have been given for the exception in subsection (3)(a) to apply",
+    "value": "6th December 2006",
+    "quote": "given before 6th December 2006"
+   },
+   {
+    "what": "Beginning of the date range during which a court judgment must have been given to be subject to subsection (4)",
+    "value": "6th December 2006",
+    "quote": "given on or after 6th December 2006"
+   },
+   {
+    "what": "End of the date range during which a court judgment must have been given to be subject to subsection (4)",
+    "value": "the day on which this Act is passed",
+    "quote": "before the day on which this Act is passed"
+   },
+   {
+    "what": "Date from which interest accrues on a repayable payment",
+    "value": "the date of the payment",
+    "quote": "with interest from the date of the payment"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 32(1)(c) of the Limitation Act 1980, concerning the extended period for bringing an action in the case of a mistake, does not apply to any action brought before 8th September 2003 for relief from the consequences of a mistake of law relating to a taxation matter under the care and management of the Commissioners of Inland Revenue.",
+   "quote": "Section 32(1)(c) of the Limitation Act 1980 (c. 58) (extended period for bringing action in case of mistake) does not apply in relation to any action brought before 8th September 2003 for relief from the consequences of a mistake of law relating to a taxation matter under the care and management of the Commissioners of Inland Revenue."
+  },
+  {
+   "requirement": "The disapplication of section 32(1)(c) of the Limitation Act 1980 applies regardless of how the grounds for bringing the action were expressed and regardless of whether the action was also brought for relief other than from the consequences of a mistake of law relating to such a taxation matter.",
+   "quote": "Subsection (1) has effect regardless of how the grounds on which the action was brought were expressed and of whether it was also brought otherwise than for such relief."
+  },
+  {
+   "requirement": "The disapplication under subsection (1) does not apply to an action, or to so much of an action as relates to a cause of action, if the action or cause of action was the subject of a judgment of the House of Lords given before 6th December 2006 concerning the application of section 32(1)(c) to such relief.",
+   "quote": "the action, or cause of action, has been the subject of a judgment of the House of Lords given before 6th December 2006 as to the application of section 32(1)(c) in relation to such relief"
+  },
+  {
+   "requirement": "The disapplication under subsection (1) does not apply to an action, or to so much of an action as relates to a cause of action, if the parties to the action are, in accordance with a group litigation order, bound in relation to the action or cause of action by a judgment of the House of Lords in another action given before 6th December 2006 concerning the application of section 32(1)(c) to such relief.",
+   "quote": "the parties to the action are, in accordance with a group litigation order, bound in relation to the action, or cause of action, by a judgment of the House of Lords in another action given before that date as to the application of section 32(1)(c) in relation to such relief."
+  },
+  {
+   "requirement": "A judgment of any court given on or after 6th December 2006 but before the day on which the Finance Act 2007 is passed is taken to be what it would have been if subsections (1) to (3) had been in force at all times since the action was brought and any defence of limitation that would have been available had been raised.",
+   "quote": "If the judgment of any court was given on or after 6th December 2006 but before the day on which this Act is passed, the judgment is to be taken to have been what it would have been had subsections (1) to (3) been in force at all times since the action was brought (and any defence of limitation which would have been available had been raised)."
+  },
+  {
+   "requirement": "Any payment made to satisfy a liability under a court judgment that is taken not to have been imposed as a consequence of subsection (4) is repayable, together with interest from the date of the payment.",
+   "quote": "any payment made to satisfy a liability under the judgment which (in consequence of subsection (4)) is to be taken not to have been imposed is repayable (with interest from the date of the payment)."
+  },
+  {
+   "requirement": "The disapplication under subsection (1) does not apply to an action, or to so much of an action as relates to a cause of action, if the consequence of the mistake of law to which the action or cause of action relates is the charging of tax contrary to EU law.",
+   "quote": "Subsection (1) also does not have effect in relation to an action, or so much of an action as relates to a cause of action, if the consequences of a mistake of law to which the action, or cause of action, relates is the charging of tax contrary to EU law."
+  },
+  {
+   "requirement": "A group litigation order is defined as an order of a court providing for the case management of actions that give rise to common or related issues of fact or law.",
+   "quote": "“group litigation order” means an order of a court providing for the case management of actions which give rise to common or related issues of fact or law"
+  },
+  {
+   "requirement": "The term judgment includes an order, and the term given includes made.",
+   "quote": "“judgment” includes order (and “given” includes made)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Cut-off date before which an action must have been brought for subsection (1) to apply",
+   "value": "8th September 2003",
+   "quote": "action brought before 8th September 2003"
+  },
+  {
+   "what": "Cut-off date before which a House of Lords judgment must have been given for the exception in subsection (3)(a) to apply",
+   "value": "6th December 2006",
+   "quote": "given before 6th December 2006"
+  },
+  {
+   "what": "Beginning of the date range during which a court judgment must have been given to be subject to subsection (4)",
+   "value": "6th December 2006",
+   "quote": "given on or after 6th December 2006"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 3
+ }
+}

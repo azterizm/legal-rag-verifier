@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1986/64/s18@current",
+ "section": "uk/ukpga/1986/64/s18",
+ "version": "current",
+ "source_sha256": "d191e4223f28b7a2420b0e572e4e411f48cc85281b9539f1f63c2511bc66e730",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if that person uses threatening, abusive or insulting words or behaviour with the intention to stir up racial hatred, or where, having regard to all the circumstances, racial hatred is likely to be stirred up thereby.",
+    "quote": "uses threatening, abusive or insulting words or behaviour, or displays any written material which is threatening, abusive or insulting, is guilty of an offence if— (a) he intends thereby to stir up racial hatred, or (b) having regard to all the circumstances racial hatred is likely to be stirred up thereby."
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person displays any written material which is threatening, abusive or insulting with the intention to stir up racial hatred, or where, having regard to all the circumstances, racial hatred is likely to be stirred up thereby.",
+    "quote": "displays any written material which is threatening, abusive or insulting, is guilty of an offence if— (a) he intends thereby to stir up racial hatred, or (b) having regard to all the circumstances racial hatred is likely to be stirred up thereby."
+   },
+   {
+    "requirement": "An offence under section 18 of the Public Order Act 1986 may be committed in either a public or a private place.",
+    "quote": "An offence under this section may be committed in a public or a private place"
+   },
+   {
+    "requirement": "A person does not commit an offence where the words or behaviour are used, or the written material is displayed, by that person inside a dwelling and are not heard or seen except by other persons in that or another dwelling.",
+    "quote": "no offence is committed where the words or behaviour are used, or the written material is displayed, by a person inside a dwelling and are not heard or seen except by other persons in that or another dwelling."
+   },
+   {
+    "requirement": "An accused person has a defence in proceedings for an offence under section 18 of the Public Order Act 1986 if the accused proves that the accused was inside a dwelling and had no reason to believe that the words or behaviour used, or the written material displayed, would be heard or seen by a person outside that or any other dwelling.",
+    "quote": "a defence for the accused to prove that he was inside a dwelling and had no reason to believe that the words or behaviour used, or the written material displayed, would be heard or seen by a person outside that or any other dwelling."
+   },
+   {
+    "requirement": "A person who is not shown to have intended to stir up racial hatred is not guilty of an offence under section 18 of the Public Order Act 1986 if that person did not intend the words, behaviour, or written material to be, and was not aware that it might be, threatening, abusive or insulting.",
+    "quote": "A person who is not shown to have intended to stir up racial hatred is not guilty of an offence under this section if he did not intend his words or behaviour, or the written material, to be, and was not aware that it might be, threatening, abusive or insulting."
+   },
+   {
+    "requirement": "Section 18 of the Public Order Act 1986 does not apply to words or behaviour used, or written material displayed, solely for the purpose of being included in a programme included in a programme service.",
+    "quote": "This section does not apply to words or behaviour used, or written material displayed, solely for the purpose of being included in a programme included in a programme service."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if that person uses threatening, abusive or insulting words or behaviour with the intention to stir up racial hatred, or where, having regard to all the circumstances, racial hatred is likely to be stirred up thereby.",
+   "quote": "uses threatening, abusive or insulting words or behaviour, or displays any written material which is threatening, abusive or insulting, is guilty of an offence if— (a) he intends thereby to stir up racial hatred, or (b) having regard to all the circumstances racial hatred is likely to be stirred up thereby."
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person displays any written material which is threatening, abusive or insulting with the intention to stir up racial hatred, or where, having regard to all the circumstances, racial hatred is likely to be stirred up thereby.",
+   "quote": "displays any written material which is threatening, abusive or insulting, is guilty of an offence if— (a) he intends thereby to stir up racial hatred, or (b) having regard to all the circumstances racial hatred is likely to be stirred up thereby."
+  },
+  {
+   "requirement": "An offence under section 18 of the Public Order Act 1986 may be committed in either a public or a private place.",
+   "quote": "An offence under this section may be committed in a public or a private place"
+  },
+  {
+   "requirement": "A person does not commit an offence where the words or behaviour are used, or the written material is displayed, by that person inside a dwelling and are not heard or seen except by other persons in that or another dwelling.",
+   "quote": "no offence is committed where the words or behaviour are used, or the written material is displayed, by a person inside a dwelling and are not heard or seen except by other persons in that or another dwelling."
+  },
+  {
+   "requirement": "An accused person has a defence in proceedings for an offence under section 18 of the Public Order Act 1986 if the accused proves that the accused was inside a dwelling and had no reason to believe that the words or behaviour used, or the written material displayed, would be heard or seen by a person outside that or any other dwelling.",
+   "quote": "a defence for the accused to prove that he was inside a dwelling and had no reason to believe that the words or behaviour used, or the written material displayed, would be heard or seen by a person outside that or any other dwelling."
+  },
+  {
+   "requirement": "A person who is not shown to have intended to stir up racial hatred is not guilty of an offence under section 18 of the Public Order Act 1986 if that person did not intend the words, behaviour, or written material to be, and was not aware that it might be, threatening, abusive or insulting.",
+   "quote": "A person who is not shown to have intended to stir up racial hatred is not guilty of an offence under this section if he did not intend his words or behaviour, or the written material, to be, and was not aware that it might be, threatening, abusive or insulting."
+  },
+  {
+   "requirement": "Section 18 of the Public Order Act 1986 does not apply to words or behaviour used, or written material displayed, solely for the purpose of being included in a programme included in a programme service.",
+   "quote": "This section does not apply to words or behaviour used, or written material displayed, solely for the purpose of being included in a programme included in a programme service."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

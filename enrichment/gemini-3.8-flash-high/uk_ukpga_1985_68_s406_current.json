@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1985/68/s406@current",
+ "section": "uk/ukpga/1985/68/s406",
+ "version": "current",
+ "source_sha256": "be0e11c16045848c0ea9f8ce1db20c63699de382b368dd54ed875c6ae8ba1938",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A local housing authority may make byelaws, and is required to make them if so directed by the Secretary of State.",
+    "quote": "A local housing authority may, and if so required by the Secretary of State shall, make byelaws"
+   },
+   {
+    "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws for fixing the number of persons who may be received into a common lodging house.",
+    "quote": "for fixing the number of persons who may be received into a common lodging house"
+   },
+   {
+    "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws for the separation of the sexes in a common lodging house.",
+    "quote": "for the separation of the sexes in it"
+   },
+   {
+    "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws for promoting cleanliness and ventilation in common lodging houses.",
+    "quote": "for promoting cleanliness and ventilation in common lodging houses"
+   },
+   {
+    "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws requiring the walls and ceilings of common lodging houses to be limewashed, or treated with some other suitable preparation, at specified intervals.",
+    "quote": "requiring the walls and ceilings of such lodging houses to be limewashed, or treated with some other suitable preparation, at specified intervals"
+   },
+   {
+    "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws with respect to taking precautions when any case of infectious disease occurs in a common lodging house.",
+    "quote": "with respect to the taking of precautions when any case of infectious disease occurs in such a lodging house"
+   },
+   {
+    "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws generally for the well-ordering of common lodging houses.",
+    "quote": "generally for the well-ordering of such lodging houses"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A local housing authority may make byelaws, and is required to make them if so directed by the Secretary of State.",
+   "quote": "A local housing authority may, and if so required by the Secretary of State shall, make byelaws"
+  },
+  {
+   "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws for fixing the number of persons who may be received into a common lodging house.",
+   "quote": "for fixing the number of persons who may be received into a common lodging house"
+  },
+  {
+   "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws for the separation of the sexes in a common lodging house.",
+   "quote": "for the separation of the sexes in it"
+  },
+  {
+   "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws for promoting cleanliness and ventilation in common lodging houses.",
+   "quote": "for promoting cleanliness and ventilation in common lodging houses"
+  },
+  {
+   "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws requiring the walls and ceilings of common lodging houses to be limewashed, or treated with some other suitable preparation, at specified intervals.",
+   "quote": "requiring the walls and ceilings of such lodging houses to be limewashed, or treated with some other suitable preparation, at specified intervals"
+  },
+  {
+   "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws with respect to taking precautions when any case of infectious disease occurs in a common lodging house.",
+   "quote": "with respect to the taking of precautions when any case of infectious disease occurs in such a lodging house"
+  },
+  {
+   "requirement": "A local housing authority may, and if required by the Secretary of State shall, make byelaws generally for the well-ordering of common lodging houses.",
+   "quote": "generally for the well-ordering of such lodging houses"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

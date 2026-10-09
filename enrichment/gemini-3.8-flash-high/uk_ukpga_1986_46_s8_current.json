@@ -1,0 +1,80 @@
+{
+ "key": "uk/ukpga/1986/46/s8@current",
+ "section": "uk/ukpga/1986/46/s8",
+ "version": "current",
+ "source_sha256": "09f6813a32ad36bce1b2fafb12bd6aeb3f28b1ce98549ec5c1ca80ac9b64739b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State may apply to the court for a disqualification order if it appears to the Secretary of State that it is expedient in the public interest that such an order should be made against a person who is, or has been, a director or shadow director of a company.",
+    "quote": "If it appears to the Secretary of State ... that it is expedient in the public interest that a disqualification order should be made against a person who is, or has been, a director or shadow director of a company, he may apply to the court for such an order."
+   },
+   {
+    "requirement": "The court may make a disqualification order against a person where, on an application under this section, it is satisfied that the person's conduct in relation to the company (either taken alone or taken together with conduct as a director or shadow director of one or more other companies or overseas companies) makes the person unfit to be concerned in the management of a company.",
+    "quote": "The court may make a disqualification order against a person where, on an application under this section, it is satisfied that his conduct in relation to the company (either taken alone or taken together with his conduct as a director or shadow director of one or more other companies or overseas companies) makes him unfit to be concerned in the management of a company."
+   },
+   {
+    "requirement": "The Secretary of State may accept a disqualification undertaking from a person who has offered to give one where it appears to the Secretary of State that the person's conduct in relation to a company of which the person is or has been a director or shadow director (either taken alone or taken together with conduct as a director or shadow director of one or more other companies or overseas companies) makes the person unfit to be concerned in the management of a company, and that it is expedient in the public interest to accept the undertaking instead of applying, or proceeding with an application, for a disqualification order.",
+    "quote": "Where it appears to the Secretary of State ... that, in the case of a person who has offered to give him a disqualification undertaking— (a) the conduct of the person in relation to a company of which the person is or has been a director or shadow director (either taken alone or taken together with his conduct as a director or shadow director of one or more other companies or overseas companies) makes him unfit to be concerned in the management of a company, and (b) it is expedient in the public interest that he should accept the undertaking (instead of applying, or proceeding with an application, for a disqualification order), he may accept the undertaking."
+   },
+   {
+    "requirement": "Subsection (1A) of section 6 applies for the purposes of section 8 as it applies for the purposes of section 6.",
+    "quote": "Subsection (1A) of section 6 applies for the purposes of this section as it applies for the purposes of that section."
+   },
+   {
+    "requirement": "For the purposes of this section, \"the court\" means the High Court or, in Scotland, the Court of Session.",
+    "quote": "In this section “the court” means the High Court or, in Scotland, the Court of Session."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of other companies or overseas companies whose director or shadow director conduct may be considered alongside conduct in relation to the primary company",
+    "value": "one or more",
+    "quote": "one or more other companies or overseas companies"
+   },
+   {
+    "what": "maximum period of disqualification under section 8",
+    "value": "15 years",
+    "quote": "The maximum period of disqualification under this section is 15 years."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State may apply to the court for a disqualification order if it appears to the Secretary of State that it is expedient in the public interest that such an order should be made against a person who is, or has been, a director or shadow director of a company.",
+   "quote": "If it appears to the Secretary of State ... that it is expedient in the public interest that a disqualification order should be made against a person who is, or has been, a director or shadow director of a company, he may apply to the court for such an order."
+  },
+  {
+   "requirement": "The court may make a disqualification order against a person where, on an application under this section, it is satisfied that the person's conduct in relation to the company (either taken alone or taken together with conduct as a director or shadow director of one or more other companies or overseas companies) makes the person unfit to be concerned in the management of a company.",
+   "quote": "The court may make a disqualification order against a person where, on an application under this section, it is satisfied that his conduct in relation to the company (either taken alone or taken together with his conduct as a director or shadow director of one or more other companies or overseas companies) makes him unfit to be concerned in the management of a company."
+  },
+  {
+   "requirement": "The Secretary of State may accept a disqualification undertaking from a person who has offered to give one where it appears to the Secretary of State that the person's conduct in relation to a company of which the person is or has been a director or shadow director (either taken alone or taken together with conduct as a director or shadow director of one or more other companies or overseas companies) makes the person unfit to be concerned in the management of a company, and that it is expedient in the public interest to accept the undertaking instead of applying, or proceeding with an application, for a disqualification order.",
+   "quote": "Where it appears to the Secretary of State ... that, in the case of a person who has offered to give him a disqualification undertaking— (a) the conduct of the person in relation to a company of which the person is or has been a director or shadow director (either taken alone or taken together with his conduct as a director or shadow director of one or more other companies or overseas companies) makes him unfit to be concerned in the management of a company, and (b) it is expedient in the public interest that he should accept the undertaking (instead of applying, or proceeding with an application, for a disqualification order), he may accept the undertaking."
+  },
+  {
+   "requirement": "Subsection (1A) of section 6 applies for the purposes of section 8 as it applies for the purposes of section 6.",
+   "quote": "Subsection (1A) of section 6 applies for the purposes of this section as it applies for the purposes of that section."
+  },
+  {
+   "requirement": "For the purposes of this section, \"the court\" means the High Court or, in Scotland, the Court of Session.",
+   "quote": "In this section “the court” means the High Court or, in Scotland, the Court of Session."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum period of disqualification under section 8",
+   "value": "15 years",
+   "quote": "The maximum period of disqualification under this section is 15 years."
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

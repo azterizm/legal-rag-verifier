@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1989/34/s5@current",
+ "section": "uk/ukpga/1989/34/s5",
+ "version": "current",
+ "source_sha256": "736dafb99f84ebd7d5496bd4cbd425221e99e6e70877f561e4eee05cfbd70e78",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The provisions of the Law of Property (Miscellaneous Provisions) Act 1989 to which subsection (1) applies shall come into force on such day as the Lord Chancellor may appoint by order made by statutory instrument.",
+    "quote": "shall come into force on such day as the Lord Chancellor may by order made by statutory instrument appoint"
+   },
+   {
+    "requirement": "Section 1 of the Law of Property (Miscellaneous Provisions) Act 1989 is a provision to which subsection (1) applies.",
+    "quote": "section 1 above"
+   },
+   {
+    "requirement": "Section 4 of the Law of Property (Miscellaneous Provisions) Act 1989 is a provision to which subsection (1) applies, except so far as it relates to section 40 of the Law of Property Act 1925.",
+    "quote": "section 4 above, except so far as it relates to section 40 of the Law of Property Act 1925"
+   },
+   {
+    "requirement": "The provisions of the Law of Property (Miscellaneous Provisions) Act 1989 to which subsection (3) applies shall come into force at the end of the period of two months beginning with the day on which the Act is passed.",
+    "quote": "shall come into force at the end of the period of two months beginning with the day on which this Act is passed"
+   },
+   {
+    "requirement": "Sections 2 and 3 of the Law of Property (Miscellaneous Provisions) Act 1989 are provisions to which subsection (3) applies.",
+    "quote": "sections 2 and 3 above"
+   },
+   {
+    "requirement": "Section 4 of the Law of Property (Miscellaneous Provisions) Act 1989 is a provision to which subsection (3) applies so far as it relates to section 40 of the Law of Property Act 1925.",
+    "quote": "section 4 above, so far as it relates to section 40 of the Law of Property Act 1925"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period beginning with the day on which the Act is passed at the end of which specified provisions come into force",
+    "value": "two months",
+    "quote": "period of two months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The provisions of the Law of Property (Miscellaneous Provisions) Act 1989 to which subsection (1) applies shall come into force on such day as the Lord Chancellor may appoint by order made by statutory instrument.",
+   "quote": "shall come into force on such day as the Lord Chancellor may by order made by statutory instrument appoint"
+  },
+  {
+   "requirement": "Section 1 of the Law of Property (Miscellaneous Provisions) Act 1989 is a provision to which subsection (1) applies.",
+   "quote": "section 1 above"
+  },
+  {
+   "requirement": "Section 4 of the Law of Property (Miscellaneous Provisions) Act 1989 is a provision to which subsection (1) applies, except so far as it relates to section 40 of the Law of Property Act 1925.",
+   "quote": "section 4 above, except so far as it relates to section 40 of the Law of Property Act 1925"
+  },
+  {
+   "requirement": "The provisions of the Law of Property (Miscellaneous Provisions) Act 1989 to which subsection (3) applies shall come into force at the end of the period of two months beginning with the day on which the Act is passed.",
+   "quote": "shall come into force at the end of the period of two months beginning with the day on which this Act is passed"
+  },
+  {
+   "requirement": "Sections 2 and 3 of the Law of Property (Miscellaneous Provisions) Act 1989 are provisions to which subsection (3) applies.",
+   "quote": "sections 2 and 3 above"
+  },
+  {
+   "requirement": "Section 4 of the Law of Property (Miscellaneous Provisions) Act 1989 is a provision to which subsection (3) applies so far as it relates to section 40 of the Law of Property Act 1925.",
+   "quote": "section 4 above, so far as it relates to section 40 of the Law of Property Act 1925"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period beginning with the day on which the Act is passed at the end of which specified provisions come into force",
+   "value": "two months",
+   "quote": "period of two months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

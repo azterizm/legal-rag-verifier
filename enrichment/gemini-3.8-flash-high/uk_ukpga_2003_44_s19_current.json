@@ -1,0 +1,136 @@
+{
+ "key": "uk/ukpga/2003/44/s19@current",
+ "section": "uk/ukpga/2003/44/s19",
+ "version": "current",
+ "source_sha256": "2fe23e6eb8282c102f03594d1ba51e9a91be6664d074a1525e527acab31db8ae",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 3(6D) of the Bail Act 1976 applies where the court has been notified by the Secretary of State that arrangements for conducting a relevant assessment or providing relevant follow-up have been made for the petty sessions area in which it appears the person would reside if granted bail, and that notice has not been withdrawn.",
+    "quote": "the court has been notified by the Secretary of State that arrangements for conducting a relevant assessment or, as the case may be, providing relevant follow-up have been made for the petty sessions area in which it appears to the court that the person referred to in subsection (6D) would reside if granted bail; and the notice has not been withdrawn."
+   },
+   {
+    "requirement": "If the court grants bail to a person who meets paragraphs 6B(1)(a) to (c) of Part 1 of Schedule 1, has been offered a relevant assessment or had relevant follow-up proposed following sample analysis, and has agreed to undergo the assessment or participate in the follow-up, the court must impose a bail condition requiring the person both to undergo the assessment and participate in any proposed follow-up, or to participate in the follow-up if an assessment has already been conducted.",
+    "quote": "the court, if it grants bail, shall impose as a condition of bail that P both undergo the relevant assessment and participate in any relevant follow-up proposed to him or, if a relevant assessment has been carried out, that P participate in the relevant follow-up."
+   },
+   {
+    "requirement": "A relevant assessment is defined as an assessment conducted by a suitably qualified person of whether a person is dependent upon or has a propensity to misuse any specified Class A drugs.",
+    "quote": "“relevant assessment” means an assessment conducted by a suitably qualified person of whether P is dependent upon or has a propensity to misuse any specified Class A drugs"
+   },
+   {
+    "requirement": "Relevant follow-up is defined as such further assessment and assistance or treatment (or both) in connection with dependency or propensity as the person who conducted the relevant assessment or conducts any later assessment considers appropriate, where that person believes the assessed person has such a dependency or propensity.",
+    "quote": "“relevant follow-up” means, in a case where the person who conducted the relevant assessment believes P to have such a dependency or propensity, such further assessment, and such assistance or treatment (or both) in connection with the dependency or propensity, as the person who conducted the relevant assessment (or conducts any later assessment) considers to be appropriate in P’s case"
+   },
+   {
+    "requirement": "A suitably qualified person is defined as a person who has such qualifications or experience as are from time to time specified by the Secretary of State.",
+    "quote": "“suitably qualified person” means a person who has such qualifications or experience as are from time to time specified by the Secretary of State for the purposes of this subsection."
+   },
+   {
+    "requirement": "In section 3(6E)(a) and paragraph 6B of Part 1 of Schedule 1, Class A drug and misuse have the same meanings as in the Misuse of Drugs Act 1971.",
+    "quote": "“Class A drug” and “misuse” have the same meaning as in the Misuse of Drugs Act 1971"
+   },
+   {
+    "requirement": "In section 3(6E)(a) and paragraph 6B of Part 1 of Schedule 1, specified in relation to a Class A drug has the same meaning as in Part 3 of the Criminal Justice and Court Services Act 2000.",
+    "quote": "“specified” (in relation to a Class A drug) has the same meaning as in Part 3 of the Criminal Justice and Court Services Act 2000."
+   },
+   {
+    "requirement": "In section 3A(3) of the Bail Act 1976 regarding police bail conditions, the referenced provisions are amended from subsections (6A) and (6B) to subsections (6A) to (6F).",
+    "quote": "In section 3A(3) (conditions of bail in case of police bail), for “, (6A) and (6B)” there is substituted “ and (6A) to (6F) ”."
+   },
+   {
+    "requirement": "Subject to paragraph 6C, a defendant who falls within paragraph 6B may not be granted bail unless the court is satisfied that there is no significant risk of the defendant committing an offence while on bail, whether subject to conditions or not.",
+    "quote": "a defendant who falls within paragraph 6B below may not be granted bail unless the court is satisfied that there is no significant risk of his committing an offence while on bail (whether subject to conditions or not)."
+   },
+   {
+    "requirement": "A defendant falls within paragraph 6B only if the defendant is aged 18 or over and a sample taken under section 63B of the Police and Criminal Evidence Act 1984 or section 161 of the Criminal Justice Act 2003 has revealed the presence of a specified Class A drug in the defendant's body.",
+    "quote": "he is aged 18 or over; a sample taken— under section 63B of the Police and Criminal Evidence Act 1984 (testing for presence of Class A drugs) in connection with the offence; or under section 161 of the Criminal Justice Act 2003 (drug testing after conviction of an offence but before sentence), has revealed the presence in his body of a specified Class A drug"
+   },
+   {
+    "requirement": "A defendant falls within paragraph 6B only if the offence is under section 5(2) or (3) of the Misuse of Drugs Act 1971 relating to a specified Class A drug, or the court has substantial grounds for believing that misuse of such a drug caused or contributed to the offence or that the offence was wholly or partly motivated by intended misuse of such a drug.",
+    "quote": "either the offence is one under section 5(2) or (3) of the Misuse of Drugs Act 1971 and relates to a specified Class A drug, or the court is satisfied that there are substantial grounds for believing— that misuse by him of any specified Class A drug caused or contributed to the offence; or (even if it did not) that the offence was motivated wholly or partly by his intended misuse of such a drug"
+   },
+   {
+    "requirement": "A defendant falls within paragraph 6B only if, after the sample was taken and analysed, the defendant was offered a relevant assessment but did not agree to undergo it, or underwent a relevant assessment and had relevant follow-up proposed but did not agree to participate, and this condition is satisfied or continues to be satisfied on subsequent bail consideration.",
+    "quote": "the condition set out in sub-paragraph (2) below is satisfied or (if the court is considering on a second or subsequent occasion whether or not to grant bail) has been, and continues to be, satisfied."
+   },
+   {
+    "requirement": "Paragraph 6A of Part 1 of Schedule 1 does not apply unless the court has been notified by the Secretary of State that arrangements for conducting a relevant assessment or providing relevant follow-up have been made for the petty sessions area where the defendant would reside if granted bail, and that notice has not been withdrawn.",
+    "quote": "Paragraph 6A above does not apply unless— the court has been notified by the Secretary of State that arrangements for conducting a relevant assessment or, as the case may be, providing relevant follow-up have been made for the petty sessions area in which it appears to the court that the defendant would reside if granted bail; and the notice has not been withdrawn."
+   },
+   {
+    "requirement": "In paragraph 8(1) of Part 1 of Schedule 1 to the Bail Act 1976, the reference to (4) to (7) is substituted by (4) to (6B) or (7).",
+    "quote": "in paragraph 8(1), for “(4) to (7)” there is substituted “ (4) to (6B) or (7) ”."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum age for a defendant to fall within paragraph 6B of Part 1 of Schedule 1",
+    "value": "18",
+    "quote": "he is aged 18 or over"
+   },
+   {
+    "what": "subsequent consideration count at which the condition must continue to be satisfied",
+    "value": "second",
+    "quote": "considering on a second or subsequent occasion whether or not to grant bail"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "If the court grants bail to a person who meets paragraphs 6B(1)(a) to (c) of Part 1 of Schedule 1, has been offered a relevant assessment or had relevant follow-up proposed following sample analysis, and has agreed to undergo the assessment or participate in the follow-up, the court must impose a bail condition requiring the person both to undergo the assessment and participate in any proposed follow-up, or to participate in the follow-up if an assessment has already been conducted.",
+   "quote": "the court, if it grants bail, shall impose as a condition of bail that P both undergo the relevant assessment and participate in any relevant follow-up proposed to him or, if a relevant assessment has been carried out, that P participate in the relevant follow-up."
+  },
+  {
+   "requirement": "A relevant assessment is defined as an assessment conducted by a suitably qualified person of whether a person is dependent upon or has a propensity to misuse any specified Class A drugs.",
+   "quote": "“relevant assessment” means an assessment conducted by a suitably qualified person of whether P is dependent upon or has a propensity to misuse any specified Class A drugs"
+  },
+  {
+   "requirement": "Relevant follow-up is defined as such further assessment and assistance or treatment (or both) in connection with dependency or propensity as the person who conducted the relevant assessment or conducts any later assessment considers appropriate, where that person believes the assessed person has such a dependency or propensity.",
+   "quote": "“relevant follow-up” means, in a case where the person who conducted the relevant assessment believes P to have such a dependency or propensity, such further assessment, and such assistance or treatment (or both) in connection with the dependency or propensity, as the person who conducted the relevant assessment (or conducts any later assessment) considers to be appropriate in P’s case"
+  },
+  {
+   "requirement": "A suitably qualified person is defined as a person who has such qualifications or experience as are from time to time specified by the Secretary of State.",
+   "quote": "“suitably qualified person” means a person who has such qualifications or experience as are from time to time specified by the Secretary of State for the purposes of this subsection."
+  },
+  {
+   "requirement": "In section 3(6E)(a) and paragraph 6B of Part 1 of Schedule 1, Class A drug and misuse have the same meanings as in the Misuse of Drugs Act 1971.",
+   "quote": "“Class A drug” and “misuse” have the same meaning as in the Misuse of Drugs Act 1971"
+  },
+  {
+   "requirement": "In section 3(6E)(a) and paragraph 6B of Part 1 of Schedule 1, specified in relation to a Class A drug has the same meaning as in Part 3 of the Criminal Justice and Court Services Act 2000.",
+   "quote": "“specified” (in relation to a Class A drug) has the same meaning as in Part 3 of the Criminal Justice and Court Services Act 2000."
+  },
+  {
+   "requirement": "In section 3A(3) of the Bail Act 1976 regarding police bail conditions, the referenced provisions are amended from subsections (6A) and (6B) to subsections (6A) to (6F).",
+   "quote": "In section 3A(3) (conditions of bail in case of police bail), for “, (6A) and (6B)” there is substituted “ and (6A) to (6F) ”."
+  },
+  {
+   "requirement": "Subject to paragraph 6C, a defendant who falls within paragraph 6B may not be granted bail unless the court is satisfied that there is no significant risk of the defendant committing an offence while on bail, whether subject to conditions or not.",
+   "quote": "a defendant who falls within paragraph 6B below may not be granted bail unless the court is satisfied that there is no significant risk of his committing an offence while on bail (whether subject to conditions or not)."
+  },
+  {
+   "requirement": "A defendant falls within paragraph 6B only if, after the sample was taken and analysed, the defendant was offered a relevant assessment but did not agree to undergo it, or underwent a relevant assessment and had relevant follow-up proposed but did not agree to participate, and this condition is satisfied or continues to be satisfied on subsequent bail consideration.",
+   "quote": "the condition set out in sub-paragraph (2) below is satisfied or (if the court is considering on a second or subsequent occasion whether or not to grant bail) has been, and continues to be, satisfied."
+  },
+  {
+   "requirement": "In paragraph 8(1) of Part 1 of Schedule 1 to the Bail Act 1976, the reference to (4) to (7) is substituted by (4) to (6B) or (7).",
+   "quote": "in paragraph 8(1), for “(4) to (7)” there is substituted “ (4) to (6B) or (7) ”."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum age for a defendant to fall within paragraph 6B of Part 1 of Schedule 1",
+   "value": "18",
+   "quote": "he is aged 18 or over"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 10,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

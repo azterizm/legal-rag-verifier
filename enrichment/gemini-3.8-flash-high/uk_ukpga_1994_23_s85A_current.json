@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1994/23/s85A@current",
+ "section": "uk/ukpga/1994/23/s85A",
+ "version": "current",
+ "source_sha256": "556fe3879cd6113145feaaaf6d7a7b34c0969374f1540ab0f15c45bf8f1cf188",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 85A applies in circumstances where the tribunal has determined an appeal under section 83.",
+    "quote": "This section applies where the tribunal has determined an appeal under section 83."
+   },
+   {
+    "requirement": "Where on an appeal the tribunal has determined that the whole or part of any disputed amount paid or deposited is not due, so much of that amount as the tribunal determines not to be due must be paid or repaid.",
+    "quote": "the whole or part of any disputed amount paid or deposited is not due, or"
+   },
+   {
+    "requirement": "Where on an appeal the tribunal has determined that the whole or part of any VAT credit due to the appellant has not been paid, so much of that credit as the tribunal determines not to have been paid must be paid or repaid.",
+    "quote": "the whole or part of any VAT credit due to the appellant has not been paid,"
+   },
+   {
+    "requirement": "Where on an appeal the tribunal has determined that the whole or part of any disputed amount not paid or deposited is due, so much of that amount as the tribunal determines to be due must be paid or repaid to HMRC.",
+    "quote": "the whole or part of any disputed amount not paid or deposited is due, or"
+   },
+   {
+    "requirement": "Where on an appeal the tribunal has determined that the whole or part of any VAT credit paid was not payable, so much of that credit as the tribunal determines not payable must be paid or repaid to HMRC.",
+    "quote": "the whole or part of any VAT credit paid was not payable,"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 85A applies in circumstances where the tribunal has determined an appeal under section 83.",
+   "quote": "This section applies where the tribunal has determined an appeal under section 83."
+  },
+  {
+   "requirement": "Where on an appeal the tribunal has determined that the whole or part of any disputed amount paid or deposited is not due, so much of that amount as the tribunal determines not to be due must be paid or repaid.",
+   "quote": "the whole or part of any disputed amount paid or deposited is not due, or"
+  },
+  {
+   "requirement": "Where on an appeal the tribunal has determined that the whole or part of any VAT credit due to the appellant has not been paid, so much of that credit as the tribunal determines not to have been paid must be paid or repaid.",
+   "quote": "the whole or part of any VAT credit due to the appellant has not been paid,"
+  },
+  {
+   "requirement": "Where on an appeal the tribunal has determined that the whole or part of any disputed amount not paid or deposited is due, so much of that amount as the tribunal determines to be due must be paid or repaid to HMRC.",
+   "quote": "the whole or part of any disputed amount not paid or deposited is due, or"
+  },
+  {
+   "requirement": "Where on an appeal the tribunal has determined that the whole or part of any VAT credit paid was not payable, so much of that credit as the tribunal determines not payable must be paid or repaid to HMRC.",
+   "quote": "the whole or part of any VAT credit paid was not payable,"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

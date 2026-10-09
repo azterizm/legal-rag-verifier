@@ -1,0 +1,215 @@
+{
+ "key": "uk/ukpga/1987/31/s20@current",
+ "section": "uk/ukpga/1987/31/s20",
+ "version": "current",
+ "source_sha256": "50b9e5523402f2e679abb2e14df6c340d25ed5a45f91051d3a31b60d79bd9096",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, an 'acceptance notice' has the meaning given by section 6(3).",
+    "quote": "“acceptance notice” has the meaning given by section 6(3)"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, in relation to premises in England, 'appropriate tribunal' means the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal.",
+    "quote": "in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, in relation to premises in Wales, 'appropriate tribunal' means a leasehold valuation tribunal.",
+    "quote": "in relation to premises in Wales, a leasehold valuation tribunal"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, an 'associated company' in relation to a body corporate means another body corporate that is, within the meaning of section 1159 of the Companies Act 2006, that body's holding company, a subsidiary of that body, or another subsidiary of that body's holding company.",
+    "quote": "“associated company”, in relation to a body corporate, means another body corporate which is (within the meaning of section 1159 of the Companies Act 2006) that body’s holding company, a subsidiary of that body or another subsidiary of that body’s holding company"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'constituent flat' must be construed in accordance with section 5(1) or section 11(2), as the case may require.",
+    "quote": "“constituent flat” shall be construed in accordance with section 5(1) or 11(2), as the case may require"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'disposal' must be construed in accordance with section 4(3) and section 4A, and references to the acquisition of an estate or interest must be construed accordingly.",
+    "quote": "“disposal” shall be construed in accordance with section 4(3) and section 4A (application of provisions to contracts), and references to the acquisition of an estate or interest shall be construed accordingly"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'landlord' in relation to any premises must be construed in accordance with section 2.",
+    "quote": "“landlord”, in relation to any premises, shall be construed in accordance with section 2"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the nominated person' means the person or persons for the time being nominated by the requisite majority of the qualifying tenants of the constituent flats for the purposes of section 6, 12A, 12B, or 12C, as the case may require.",
+    "quote": "“the nominated person” means the person or persons for the time being nominated by the requisite majority of the qualifying tenants of the constituent flats for the purposes of section 6, 12A, 12B or 12C, as the case may require"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'offer notice' means a notice served by a landlord under section 5.",
+    "quote": "“offer notice” means a notice served by a landlord under section 5"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the original disposal' means the relevant disposal referred to in section 11(1).",
+    "quote": "“the original disposal” means the relevant disposal referred to in section 11(1)"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the protected interest' means the estate, interest, or other subject-matter of an offer notice.",
+    "quote": "“the protected interest” means the estate, interest or other subject-matter of an offer notice"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the protected period' has the meaning given by section 6(4).",
+    "quote": "“the protected period” has the meaning given by section 6(4)"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'purchase notice' has the meaning given by section 12B(2).",
+    "quote": "“purchase notice” has the meaning given by section 12B(2)"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'purchaser' has the meaning given by section 11(3).",
+    "quote": "“purchaser” has the meaning given by section 11(3)"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'qualifying tenant' in relation to a flat must be construed in accordance with section 3.",
+    "quote": "“qualifying tenant”, in relation to a flat, shall be construed in accordance with section 3"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'relevant disposal' must be construed in accordance with section 4.",
+    "quote": "“relevant disposal” shall be construed in accordance with section 4"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the requisite majority' in relation to qualifying tenants must be construed in accordance with section 18A.",
+    "quote": "“the requisite majority”, in relation to qualifying tenants, shall be construed in accordance with section 18A"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, 'transferee' in relation to a disposal must be construed in accordance with section 4(3).",
+    "quote": "“transferee”, in relation to a disposal, shall be construed in accordance with section 4(3)"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, any reference to an offer is a reference to an offer made subject to contract.",
+    "quote": "any reference to an offer is a reference to an offer made subject to contract"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, any reference to the acceptance of an offer is a reference to its acceptance subject to contract.",
+    "quote": "any reference to the acceptance of an offer is a reference to its acceptance subject to contract"
+   },
+   {
+    "requirement": "In Part I of the Landlord and Tenant Act 1987, any reference to a tenant of a particular description must be construed, in relation to any time when the interest under that tenant's tenancy has ceased to be vested in them, as a reference to the person who is for the time being the successor in title to that interest.",
+    "quote": "Any reference in this Part to a tenant of a particular description shall be construed, in relation to any time when the interest under his tenancy has ceased to be vested in him, as a reference to the person who is for the time being the successor in title to that interest"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make such modifications of any of the provisions of sections 5 to 18 as the Secretary of State considers appropriate.",
+    "quote": "The Secretary of State may by regulations make such modifications of any of the provisions of sections 5 to 18 as he considers appropriate"
+   },
+   {
+    "requirement": "Regulations made by the Secretary of State modifying sections 5 to 18 may contain such incidental, supplemental, or transitional provisions as the Secretary of State considers appropriate in connection with the regulations.",
+    "quote": "any such regulations may contain such incidental, supplemental or transitional provisions as he considers appropriate in connection with the regulations"
+   },
+   {
+    "requirement": "For the purposes of regulations made under section 20(4) of the Landlord and Tenant Act 1987, 'modifications' includes additions, omissions, and alterations.",
+    "quote": "In subsection (4) “modifications” includes additions, omissions and alterations"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, an 'acceptance notice' has the meaning given by section 6(3).",
+   "quote": "“acceptance notice” has the meaning given by section 6(3)"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, in relation to premises in England, 'appropriate tribunal' means the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal.",
+   "quote": "in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, in relation to premises in Wales, 'appropriate tribunal' means a leasehold valuation tribunal.",
+   "quote": "in relation to premises in Wales, a leasehold valuation tribunal"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, an 'associated company' in relation to a body corporate means another body corporate that is, within the meaning of section 1159 of the Companies Act 2006, that body's holding company, a subsidiary of that body, or another subsidiary of that body's holding company.",
+   "quote": "“associated company”, in relation to a body corporate, means another body corporate which is (within the meaning of section 1159 of the Companies Act 2006) that body’s holding company, a subsidiary of that body or another subsidiary of that body’s holding company"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'constituent flat' must be construed in accordance with section 5(1) or section 11(2), as the case may require.",
+   "quote": "“constituent flat” shall be construed in accordance with section 5(1) or 11(2), as the case may require"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'disposal' must be construed in accordance with section 4(3) and section 4A, and references to the acquisition of an estate or interest must be construed accordingly.",
+   "quote": "“disposal” shall be construed in accordance with section 4(3) and section 4A (application of provisions to contracts), and references to the acquisition of an estate or interest shall be construed accordingly"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'landlord' in relation to any premises must be construed in accordance with section 2.",
+   "quote": "“landlord”, in relation to any premises, shall be construed in accordance with section 2"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the nominated person' means the person or persons for the time being nominated by the requisite majority of the qualifying tenants of the constituent flats for the purposes of section 6, 12A, 12B, or 12C, as the case may require.",
+   "quote": "“the nominated person” means the person or persons for the time being nominated by the requisite majority of the qualifying tenants of the constituent flats for the purposes of section 6, 12A, 12B or 12C, as the case may require"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'offer notice' means a notice served by a landlord under section 5.",
+   "quote": "“offer notice” means a notice served by a landlord under section 5"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the original disposal' means the relevant disposal referred to in section 11(1).",
+   "quote": "“the original disposal” means the relevant disposal referred to in section 11(1)"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the protected interest' means the estate, interest, or other subject-matter of an offer notice.",
+   "quote": "“the protected interest” means the estate, interest or other subject-matter of an offer notice"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the protected period' has the meaning given by section 6(4).",
+   "quote": "“the protected period” has the meaning given by section 6(4)"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'purchase notice' has the meaning given by section 12B(2).",
+   "quote": "“purchase notice” has the meaning given by section 12B(2)"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'purchaser' has the meaning given by section 11(3).",
+   "quote": "“purchaser” has the meaning given by section 11(3)"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'qualifying tenant' in relation to a flat must be construed in accordance with section 3.",
+   "quote": "“qualifying tenant”, in relation to a flat, shall be construed in accordance with section 3"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'relevant disposal' must be construed in accordance with section 4.",
+   "quote": "“relevant disposal” shall be construed in accordance with section 4"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'the requisite majority' in relation to qualifying tenants must be construed in accordance with section 18A.",
+   "quote": "“the requisite majority”, in relation to qualifying tenants, shall be construed in accordance with section 18A"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, 'transferee' in relation to a disposal must be construed in accordance with section 4(3).",
+   "quote": "“transferee”, in relation to a disposal, shall be construed in accordance with section 4(3)"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, any reference to an offer is a reference to an offer made subject to contract.",
+   "quote": "any reference to an offer is a reference to an offer made subject to contract"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, any reference to the acceptance of an offer is a reference to its acceptance subject to contract.",
+   "quote": "any reference to the acceptance of an offer is a reference to its acceptance subject to contract"
+  },
+  {
+   "requirement": "In Part I of the Landlord and Tenant Act 1987, any reference to a tenant of a particular description must be construed, in relation to any time when the interest under that tenant's tenancy has ceased to be vested in them, as a reference to the person who is for the time being the successor in title to that interest.",
+   "quote": "Any reference in this Part to a tenant of a particular description shall be construed, in relation to any time when the interest under his tenancy has ceased to be vested in him, as a reference to the person who is for the time being the successor in title to that interest"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make such modifications of any of the provisions of sections 5 to 18 as the Secretary of State considers appropriate.",
+   "quote": "The Secretary of State may by regulations make such modifications of any of the provisions of sections 5 to 18 as he considers appropriate"
+  },
+  {
+   "requirement": "Regulations made by the Secretary of State modifying sections 5 to 18 may contain such incidental, supplemental, or transitional provisions as the Secretary of State considers appropriate in connection with the regulations.",
+   "quote": "any such regulations may contain such incidental, supplemental or transitional provisions as he considers appropriate in connection with the regulations"
+  },
+  {
+   "requirement": "For the purposes of regulations made under section 20(4) of the Landlord and Tenant Act 1987, 'modifications' includes additions, omissions, and alterations.",
+   "quote": "In subsection (4) “modifications” includes additions, omissions and alterations"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 24,
+  "elements_verified": 24,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

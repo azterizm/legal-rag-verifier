@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1996/18/s68C@current",
+ "section": "uk/ukpga/1996/18/s68C",
+ "version": "current",
+ "source_sha256": "395a0878f86b016a2d5c001fef5eebd9c702b771b7d7f5f35f0e4d469aeb8c0c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An agency worker is entitled to be paid remuneration by the temporary work agency where the supply of that agency worker to a hirer is ended on maternity grounds.",
+    "quote": "Where the supply of an agency worker to a hirer is ended on maternity grounds, that agency worker is entitled to be paid remuneration by the temporary work agency."
+   },
+   {
+    "requirement": "An agency worker is not entitled to remuneration in respect of any period if the temporary work agency offered to propose the agency worker to a hirer with available alternative work that is suitable for her for the purposes of section 68B, and the agency worker has unreasonably refused that offer.",
+    "quote": "offered to propose the agency worker to a hirer that has alternative work available which is suitable alternative work for her for the purposes of section 68B"
+   },
+   {
+    "requirement": "An agency worker is not entitled to remuneration in respect of any period if the temporary work agency proposed the agency worker to a hirer with suitable alternative work available, that hirer agreed to the supply of the agency worker, and the agency worker has unreasonably refused to perform that work.",
+    "quote": "proposed the agency worker to a hirer that has such suitable alternative work available, and that hirer has agreed to the supply of that agency worker, and (b) the agency worker has unreasonably refused that offer or to perform that work."
+   },
+   {
+    "requirement": "A temporary work agency is not under a duty to pay remuneration beyond the original intended duration or the likely duration, whichever is longer, of the assignment that ended when the supply of the agency worker to the hirer was ended on maternity grounds.",
+    "quote": "Nothing in this section imposes a duty on the temporary work agency to pay remuneration beyond the original intended duration, or likely duration, whichever is the longer, of the assignment"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An agency worker is entitled to be paid remuneration by the temporary work agency where the supply of that agency worker to a hirer is ended on maternity grounds.",
+   "quote": "Where the supply of an agency worker to a hirer is ended on maternity grounds, that agency worker is entitled to be paid remuneration by the temporary work agency."
+  },
+  {
+   "requirement": "An agency worker is not entitled to remuneration in respect of any period if the temporary work agency offered to propose the agency worker to a hirer with available alternative work that is suitable for her for the purposes of section 68B, and the agency worker has unreasonably refused that offer.",
+   "quote": "offered to propose the agency worker to a hirer that has alternative work available which is suitable alternative work for her for the purposes of section 68B"
+  },
+  {
+   "requirement": "An agency worker is not entitled to remuneration in respect of any period if the temporary work agency proposed the agency worker to a hirer with suitable alternative work available, that hirer agreed to the supply of the agency worker, and the agency worker has unreasonably refused to perform that work.",
+   "quote": "proposed the agency worker to a hirer that has such suitable alternative work available, and that hirer has agreed to the supply of that agency worker, and (b) the agency worker has unreasonably refused that offer or to perform that work."
+  },
+  {
+   "requirement": "A temporary work agency is not under a duty to pay remuneration beyond the original intended duration or the likely duration, whichever is longer, of the assignment that ended when the supply of the agency worker to the hirer was ended on maternity grounds.",
+   "quote": "Nothing in this section imposes a duty on the temporary work agency to pay remuneration beyond the original intended duration, or likely duration, whichever is the longer, of the assignment"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

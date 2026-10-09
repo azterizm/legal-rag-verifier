@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1970/9/s106B@current",
+ "section": "uk/ukpga/1970/9/s106B",
+ "version": "current",
+ "source_sha256": "7e18149e84d124a3893941f1220003d6ff95365247ba08ae2d80c65fbbdae6e1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who is required by section 7 to give notice of being chargeable to income tax, capital gains tax, or both for a year of assessment commits an offence if that person has not given that notice by the end of the notification period, the tax in question is chargeable wholly or in part on or by reference to offshore income, assets or activities, and the total amount of such tax chargeable for the year exceeds the threshold amount.",
+    "quote": "commits an offence if"
+   },
+   {
+    "requirement": "A person accused of an offence under section 106B of the Taxes Management Act 1970 establishes a defence by proving that the person had a reasonable excuse for failing to give the notice required by section 7.",
+    "quote": "It is a defence for a person accused of an offence under this section to prove that the person had a reasonable excuse"
+   },
+   {
+    "requirement": "For the purposes of section 106B of the Taxes Management Act 1970, the term “the notification period” has the same meaning as set out in section 7(1C).",
+    "quote": "“the notification period” has the same meaning as in section 7 (see subsection (1C) of that section)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the total amount of income tax and capital gains tax chargeable on or by reference to offshore income, assets or activities that must be exceeded for an offence to be committed",
+    "value": "the threshold amount",
+    "quote": "exceeds the threshold amount"
+   },
+   {
+    "what": "the period within which a person required by section 7 must give notice of chargeability to avoid committing an offence",
+    "value": "the notification period",
+    "quote": "by the end of the notification period"
+   },
+   {
+    "what": "the assessment period for which notice of chargeability to income tax or capital gains tax must be given",
+    "value": "a year of assessment",
+    "quote": "for a year of assessment"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person who is required by section 7 to give notice of being chargeable to income tax, capital gains tax, or both for a year of assessment commits an offence if that person has not given that notice by the end of the notification period, the tax in question is chargeable wholly or in part on or by reference to offshore income, assets or activities, and the total amount of such tax chargeable for the year exceeds the threshold amount.",
+   "quote": "commits an offence if"
+  },
+  {
+   "requirement": "A person accused of an offence under section 106B of the Taxes Management Act 1970 establishes a defence by proving that the person had a reasonable excuse for failing to give the notice required by section 7.",
+   "quote": "It is a defence for a person accused of an offence under this section to prove that the person had a reasonable excuse"
+  },
+  {
+   "requirement": "For the purposes of section 106B of the Taxes Management Act 1970, the term “the notification period” has the same meaning as set out in section 7(1C).",
+   "quote": "“the notification period” has the same meaning as in section 7 (see subsection (1C) of that section)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

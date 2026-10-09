@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/1998/39/s31@current",
+ "section": "uk/ukpga/1998/39/s31",
+ "version": "current",
+ "source_sha256": "08c60a44590b3aed077c8e8648e39ce785af830d023d12c95f4eb70375509c1c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employer of a worker who qualifies for the national minimum wage is guilty of an offence if the employer refuses or wilfully neglects to remunerate that worker for any pay reference period at a rate that is at least equal to the national minimum wage.",
+    "quote": "If the employer of a worker who qualifies for the national minimum wage refuses or wilfully neglects to remunerate the worker for any pay reference period at a rate which is at least equal to the national minimum wage, that employer is guilty of an offence."
+   },
+   {
+    "requirement": "A person who is required to keep or preserve any record in accordance with regulations under section 9 of the National Minimum Wage Act 1998 is guilty of an offence if that person fails to do so.",
+    "quote": "If a person who is required to keep or preserve any record in accordance with regulations under section 9 above fails to do so, that person is guilty of an offence."
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person makes, or knowingly causes or allows to be made, in a record required to be kept in accordance with regulations under section 9 of the National Minimum Wage Act 1998, any entry which that person knows to be false in a material particular.",
+    "quote": "If a person makes, or knowingly causes or allows to be made, in a record required to be kept in accordance with regulations under section 9 above any entry which he knows to be false in a material particular, that person is guilty of an offence."
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person, for purposes connected with the provisions of the National Minimum Wage Act 1998, produces or furnishes, or knowingly causes or allows to be produced or furnished, any record or information which that person knows to be false in a material particular.",
+    "quote": "If a person, for purposes connected with the provisions of this Act, produces or furnishes, or knowingly causes or allows to be produced or furnished, any record or information which he knows to be false in a material particular, that person is guilty of an offence."
+   },
+   {
+    "requirement": "A person is also guilty of an offence where the commission of an offence under subsection (1) or (2) by any other person is due to that first-mentioned person's act or default.",
+    "quote": "Where the commission by any person of an offence under subsection (1) or (2) above is due to the act or default of some other person, that other person is also guilty of the offence."
+   },
+   {
+    "requirement": "A person whose act or default caused another person to commit an offence under subsection (1) or (2) may be charged with and convicted of that offence whether or not proceedings are taken against any other person.",
+    "quote": "A person may be charged with and convicted of an offence by virtue of subsection (6) above whether or not proceedings are taken against any other person."
+   },
+   {
+    "requirement": "In any proceedings for an offence under subsection (1) or (2), it is a defence for the person charged to prove that they exercised all due diligence and took all reasonable precautions to secure that the provisions of the National Minimum Wage Act 1998, and of any relevant regulations made under it, were complied with by themselves and by any person under their control.",
+    "quote": "In any proceedings for an offence under subsection (1) or (2) above it shall be a defence for the person charged to prove that he exercised all due diligence and took all reasonable precautions to secure that the provisions of this Act, and of any relevant regulations made under it, were complied with by himself and by any person under his control."
+   },
+   {
+    "requirement": "A person guilty of an offence under section 31 of the National Minimum Wage Act 1998 is liable on conviction on indictment to a fine.",
+    "quote": "A person guilty of an offence under this section shall be liable (a) on conviction on indictment, to a fine"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 31 of the National Minimum Wage Act 1998 is liable on summary conviction to a fine not exceeding the statutory maximum.",
+    "quote": "on summary conviction, to a fine not exceeding the statutory maximum"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum fine on summary conviction for an offence under this section",
+    "value": "the statutory maximum",
+    "quote": "a fine not exceeding the statutory maximum"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An employer of a worker who qualifies for the national minimum wage is guilty of an offence if the employer refuses or wilfully neglects to remunerate that worker for any pay reference period at a rate that is at least equal to the national minimum wage.",
+   "quote": "If the employer of a worker who qualifies for the national minimum wage refuses or wilfully neglects to remunerate the worker for any pay reference period at a rate which is at least equal to the national minimum wage, that employer is guilty of an offence."
+  },
+  {
+   "requirement": "A person who is required to keep or preserve any record in accordance with regulations under section 9 of the National Minimum Wage Act 1998 is guilty of an offence if that person fails to do so.",
+   "quote": "If a person who is required to keep or preserve any record in accordance with regulations under section 9 above fails to do so, that person is guilty of an offence."
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person makes, or knowingly causes or allows to be made, in a record required to be kept in accordance with regulations under section 9 of the National Minimum Wage Act 1998, any entry which that person knows to be false in a material particular.",
+   "quote": "If a person makes, or knowingly causes or allows to be made, in a record required to be kept in accordance with regulations under section 9 above any entry which he knows to be false in a material particular, that person is guilty of an offence."
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person, for purposes connected with the provisions of the National Minimum Wage Act 1998, produces or furnishes, or knowingly causes or allows to be produced or furnished, any record or information which that person knows to be false in a material particular.",
+   "quote": "If a person, for purposes connected with the provisions of this Act, produces or furnishes, or knowingly causes or allows to be produced or furnished, any record or information which he knows to be false in a material particular, that person is guilty of an offence."
+  },
+  {
+   "requirement": "A person is also guilty of an offence where the commission of an offence under subsection (1) or (2) by any other person is due to that first-mentioned person's act or default.",
+   "quote": "Where the commission by any person of an offence under subsection (1) or (2) above is due to the act or default of some other person, that other person is also guilty of the offence."
+  },
+  {
+   "requirement": "A person whose act or default caused another person to commit an offence under subsection (1) or (2) may be charged with and convicted of that offence whether or not proceedings are taken against any other person.",
+   "quote": "A person may be charged with and convicted of an offence by virtue of subsection (6) above whether or not proceedings are taken against any other person."
+  },
+  {
+   "requirement": "In any proceedings for an offence under subsection (1) or (2), it is a defence for the person charged to prove that they exercised all due diligence and took all reasonable precautions to secure that the provisions of the National Minimum Wage Act 1998, and of any relevant regulations made under it, were complied with by themselves and by any person under their control.",
+   "quote": "In any proceedings for an offence under subsection (1) or (2) above it shall be a defence for the person charged to prove that he exercised all due diligence and took all reasonable precautions to secure that the provisions of this Act, and of any relevant regulations made under it, were complied with by himself and by any person under his control."
+  },
+  {
+   "requirement": "A person guilty of an offence under section 31 of the National Minimum Wage Act 1998 is liable on conviction on indictment to a fine.",
+   "quote": "A person guilty of an offence under this section shall be liable (a) on conviction on indictment, to a fine"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 31 of the National Minimum Wage Act 1998 is liable on summary conviction to a fine not exceeding the statutory maximum.",
+   "quote": "on summary conviction, to a fine not exceeding the statutory maximum"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1975/63/s23@current",
+ "section": "uk/ukpga/1975/63/s23",
+ "version": "current",
+ "source_sha256": "4b940cf2b1c14743e714a4037b7e47229db2b43210037bf8da5efbbfc5eca4b4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A grant limited to settled land or to trust property must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation with respect to the estate of a deceased person was first taken out.",
+    "quote": "a grant limited to settled land or to trust property"
+   },
+   {
+    "requirement": "Any grant other than one limited to settled land or trust property that does not permit any of the estate of a deceased person to be distributed must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation was first taken out.",
+    "quote": "any other grant that does not permit any of the estate to be distributed"
+   },
+   {
+    "requirement": "A grant limited to real estate or to personal estate must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation with respect to the estate of a deceased person was first taken out, unless a grant limited to the remainder of the estate has previously been made or is made at the same time.",
+    "quote": "a grant limited to real estate or to personal estate, unless a grant limited to the remainder of the estate has previously been made or is made at the same time"
+   },
+   {
+    "requirement": "A grant, or its equivalent, made outside the United Kingdom must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation with respect to the estate of a deceased person was first taken out, subject to subsection (2).",
+    "quote": "a grant, or its equivalent, made outside the United Kingdom (but see subsection (2) below)"
+   },
+   {
+    "requirement": "A grant sealed under section 2 of the Colonial Probates Act 1892 counts as a grant made in the United Kingdom for the purposes of section 23 of the Inheritance (Provision for Family and Dependants) Act 1975.",
+    "quote": "A grant sealed under section 2 of the Colonial Probates Act 1892 counts as a grant made in the United Kingdom for the purposes of this section"
+   },
+   {
+    "requirement": "A grant sealed under section 2 of the Colonial Probates Act 1892 is to be taken as dated on the date of sealing.",
+    "quote": "is to be taken as dated on the date of sealing"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A grant limited to settled land or to trust property must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation with respect to the estate of a deceased person was first taken out.",
+   "quote": "a grant limited to settled land or to trust property"
+  },
+  {
+   "requirement": "Any grant other than one limited to settled land or trust property that does not permit any of the estate of a deceased person to be distributed must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation was first taken out.",
+   "quote": "any other grant that does not permit any of the estate to be distributed"
+  },
+  {
+   "requirement": "A grant limited to real estate or to personal estate must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation with respect to the estate of a deceased person was first taken out, unless a grant limited to the remainder of the estate has previously been made or is made at the same time.",
+   "quote": "a grant limited to real estate or to personal estate, unless a grant limited to the remainder of the estate has previously been made or is made at the same time"
+  },
+  {
+   "requirement": "A grant, or its equivalent, made outside the United Kingdom must be left out of account when determining for the purposes of the Inheritance (Provision for Family and Dependants) Act 1975 when representation with respect to the estate of a deceased person was first taken out, subject to subsection (2).",
+   "quote": "a grant, or its equivalent, made outside the United Kingdom (but see subsection (2) below)"
+  },
+  {
+   "requirement": "A grant sealed under section 2 of the Colonial Probates Act 1892 counts as a grant made in the United Kingdom for the purposes of section 23 of the Inheritance (Provision for Family and Dependants) Act 1975.",
+   "quote": "A grant sealed under section 2 of the Colonial Probates Act 1892 counts as a grant made in the United Kingdom for the purposes of this section"
+  },
+  {
+   "requirement": "A grant sealed under section 2 of the Colonial Probates Act 1892 is to be taken as dated on the date of sealing.",
+   "quote": "is to be taken as dated on the date of sealing"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

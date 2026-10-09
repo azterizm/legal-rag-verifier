@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/2006/35/s9@current",
+ "section": "uk/ukpga/2006/35/s9",
+ "version": "current",
+ "source_sha256": "d7bc44380a6ba8f3186d0cbd092fe5053a1480f1ad6e752bfdfd16d6d41ec006",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if that person is knowingly a party to the carrying on of a business to which section 9 of the Fraud Act 2006 applies.",
+    "quote": "knowingly a party to the carrying on of a business to which this section applies"
+   },
+   {
+    "requirement": "Section 9 of the Fraud Act 2006 applies to a business that is carried on by a person who is outside the reach of section 993 of the Companies Act 2006 and carried on with intent to defraud creditors of any person or for any other fraudulent purpose.",
+    "quote": "outside the reach of section 993 of the Companies Act 2006 (offence of fraudulent trading), and (b) with intent to defraud creditors of any person or for any other fraudulent purpose"
+   },
+   {
+    "requirement": "A company as defined in section 1(1) of the Companies Act 2006 is within the reach of section 993 of that Act.",
+    "quote": "a company (as defined in section 1(1) of the Companies Act 2006)"
+   },
+   {
+    "requirement": "A person to whom section 993 of the Companies Act 2006 applies, with or without adaptations or modifications, as if that person were a company is within the reach of that section.",
+    "quote": "a person to whom that section applies (with or without adaptations or modifications) as if the person were a company"
+   },
+   {
+    "requirement": "A person exempted from the application of section 993 of the Companies Act 2006 is within the reach of that section.",
+    "quote": "a person exempted from the application of that section"
+   },
+   {
+    "requirement": "The phrase \"fraudulent purpose\" has the same meaning as in section 993 of the Companies Act 2006.",
+    "quote": "“Fraudulent purpose” has the same meaning as in that section"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 9 of the Fraud Act 2006 is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, or to a fine not exceeding the statutory maximum, or to both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 9 of the Fraud Act 2006 is liable on conviction on indictment to imprisonment for a term not exceeding 10 years, or to a fine, or to both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding 10 years or to a fine (or to both)"
+   },
+   {
+    "requirement": "For summary convictions under section 9 of the Fraud Act 2006 in relation to Northern Ireland, the provision applies as if the reference to 12 months were a reference to 6 months.",
+    "quote": "applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "10 years",
+    "quote": "imprisonment for a term not exceeding 10 years"
+   },
+   {
+    "what": "reference term of imprisonment modified in relation to Northern Ireland",
+    "value": "12 months",
+    "quote": "reference to 12 months"
+   },
+   {
+    "what": "substituted maximum term of imprisonment on summary conviction in relation to Northern Ireland",
+    "value": "6 months",
+    "quote": "reference to 6 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if that person is knowingly a party to the carrying on of a business to which section 9 of the Fraud Act 2006 applies.",
+   "quote": "knowingly a party to the carrying on of a business to which this section applies"
+  },
+  {
+   "requirement": "Section 9 of the Fraud Act 2006 applies to a business that is carried on by a person who is outside the reach of section 993 of the Companies Act 2006 and carried on with intent to defraud creditors of any person or for any other fraudulent purpose.",
+   "quote": "outside the reach of section 993 of the Companies Act 2006 (offence of fraudulent trading), and (b) with intent to defraud creditors of any person or for any other fraudulent purpose"
+  },
+  {
+   "requirement": "A company as defined in section 1(1) of the Companies Act 2006 is within the reach of section 993 of that Act.",
+   "quote": "a company (as defined in section 1(1) of the Companies Act 2006)"
+  },
+  {
+   "requirement": "A person to whom section 993 of the Companies Act 2006 applies, with or without adaptations or modifications, as if that person were a company is within the reach of that section.",
+   "quote": "a person to whom that section applies (with or without adaptations or modifications) as if the person were a company"
+  },
+  {
+   "requirement": "A person exempted from the application of section 993 of the Companies Act 2006 is within the reach of that section.",
+   "quote": "a person exempted from the application of that section"
+  },
+  {
+   "requirement": "The phrase \"fraudulent purpose\" has the same meaning as in section 993 of the Companies Act 2006.",
+   "quote": "“Fraudulent purpose” has the same meaning as in that section"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 9 of the Fraud Act 2006 is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, or to a fine not exceeding the statutory maximum, or to both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 9 of the Fraud Act 2006 is liable on conviction on indictment to imprisonment for a term not exceeding 10 years, or to a fine, or to both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding 10 years or to a fine (or to both)"
+  },
+  {
+   "requirement": "For summary convictions under section 9 of the Fraud Act 2006 in relation to Northern Ireland, the provision applies as if the reference to 12 months were a reference to 6 months.",
+   "quote": "applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "10 years",
+   "quote": "imprisonment for a term not exceeding 10 years"
+  },
+  {
+   "what": "reference term of imprisonment modified in relation to Northern Ireland",
+   "value": "12 months",
+   "quote": "reference to 12 months"
+  },
+  {
+   "what": "substituted maximum term of imprisonment on summary conviction in relation to Northern Ireland",
+   "value": "6 months",
+   "quote": "reference to 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

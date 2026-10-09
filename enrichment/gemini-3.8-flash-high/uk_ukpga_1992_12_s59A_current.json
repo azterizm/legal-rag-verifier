@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1992/12/s59A@current",
+ "section": "uk/ukpga/1992/12/s59A",
+ "version": "current",
+ "source_sha256": "d783c4e699716a356c40663fee2cec5b04a762a2a6a0dec97fb681b74d558f96",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a limited liability partnership carries on a trade or business with a view to profit, assets held by the limited liability partnership are treated for chargeable gains tax purposes as held by its members as partners.",
+    "quote": "assets held by the limited liability partnership are treated for the purposes of tax in respect of chargeable gains as held by its members as partners"
+   },
+   {
+    "requirement": "Where a limited liability partnership carries on a trade or business with a view to profit, any dealings by the limited liability partnership are treated for chargeable gains tax purposes as dealings by its members in partnership and not by the limited liability partnership as such.",
+    "quote": "any dealings by the limited liability partnership are treated for those purposes as dealings by its members in partnership (and not by the limited liability partnership as such)"
+   },
+   {
+    "requirement": "Tax in respect of chargeable gains accruing to members of a limited liability partnership carrying on a trade or business with a view to profit on the disposal of any of its assets must be assessed and charged on those members separately.",
+    "quote": "tax in respect of chargeable gains accruing to the members of the limited liability partnership on the disposal of any of its assets shall be assessed and charged on them separately"
+   },
+   {
+    "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to a partnership include a limited liability partnership to which subsection (1) applies.",
+    "quote": "references to a partnership include a limited liability partnership in relation to which subsection (1) above applies"
+   },
+   {
+    "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to members of a partnership include members of a limited liability partnership to which subsection (1) applies.",
+    "quote": "references to members of a partnership include members of such a limited liability partnership"
+   },
+   {
+    "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to a company do not include a limited liability partnership to which subsection (1) applies.",
+    "quote": "references to a company do not include such a limited liability partnership"
+   },
+   {
+    "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to members of a company do not include members of a limited liability partnership to which subsection (1) applies.",
+    "quote": "references to members of a company do not include members of such a limited liability partnership"
+   },
+   {
+    "requirement": "Subsection (1) continues to apply to a limited liability partnership that no longer carries on any trade or business with a view to profit if the cessation is only temporary.",
+    "quote": "Subsection (1) above continues to apply in relation to a limited liability partnership which no longer carries on any trade or business with a view to profit— (a) if the cessation is only temporary"
+   },
+   {
+    "requirement": "Subject to subsection (4), subsection (1) continues to apply to a limited liability partnership that no longer carries on any trade or business with a view to profit during a period of winding up following a permanent cessation, provided the winding up is not for reasons connected in whole or in part with tax avoidance and the period of winding up is not unreasonably prolonged.",
+    "quote": "during a period of winding up following a permanent cessation, provided— (i) the winding up is not for reasons connected in whole or in part with the avoidance of tax, and (ii) the period of winding up is not unreasonably prolonged, but subject to subsection (4) below"
+   },
+   {
+    "requirement": "Subsection (1) ceases to apply to a limited liability partnership on the appointment of a liquidator or, if earlier, the making of a winding-up order by the court.",
+    "quote": "Subsection (1) above ceases to apply in relation to a limited liability partnership— (a) on the appointment of a liquidator or (if earlier) the making of a winding-up order by the court"
+   },
+   {
+    "requirement": "Subsection (1) ceases to apply to a limited liability partnership on the occurrence of any event under the law of a country or territory outside the United Kingdom corresponding to the appointment of a liquidator or the making of a winding-up order by the court.",
+    "quote": "on the occurrence of any event under the law of a country or territory outside the United Kingdom corresponding to an event specified in paragraph (a) above"
+   },
+   {
+    "requirement": "Where subsection (1) ceases to apply to a limited liability partnership with the effect that tax is assessed and charged on the limited liability partnership as a company on gains accruing on asset disposals and on the members on gains accruing on disposals of their capital interests, tax must be assessed and charged on the limited liability partnership as if subsection (1) had never applied in relation to it.",
+    "quote": "it shall be assessed and charged on the limited liability partnership as if subsection (1) above had never applied in relation to it"
+   },
+   {
+    "requirement": "Neither the commencement nor the cessation of the application of subsection (1) to a limited liability partnership shall be taken as giving rise to the disposal of any assets by the limited liability partnership or any of its members.",
+    "quote": "Neither the commencement of the application of subsection (1) above nor the cessation of its application in relation to a limited liability partnership shall be taken as giving rise to the disposal of any assets by it or any of its members"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where a limited liability partnership carries on a trade or business with a view to profit, assets held by the limited liability partnership are treated for chargeable gains tax purposes as held by its members as partners.",
+   "quote": "assets held by the limited liability partnership are treated for the purposes of tax in respect of chargeable gains as held by its members as partners"
+  },
+  {
+   "requirement": "Where a limited liability partnership carries on a trade or business with a view to profit, any dealings by the limited liability partnership are treated for chargeable gains tax purposes as dealings by its members in partnership and not by the limited liability partnership as such.",
+   "quote": "any dealings by the limited liability partnership are treated for those purposes as dealings by its members in partnership (and not by the limited liability partnership as such)"
+  },
+  {
+   "requirement": "Tax in respect of chargeable gains accruing to members of a limited liability partnership carrying on a trade or business with a view to profit on the disposal of any of its assets must be assessed and charged on those members separately.",
+   "quote": "tax in respect of chargeable gains accruing to the members of the limited liability partnership on the disposal of any of its assets shall be assessed and charged on them separately"
+  },
+  {
+   "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to a partnership include a limited liability partnership to which subsection (1) applies.",
+   "quote": "references to a partnership include a limited liability partnership in relation to which subsection (1) above applies"
+  },
+  {
+   "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to members of a partnership include members of a limited liability partnership to which subsection (1) applies.",
+   "quote": "references to members of a partnership include members of such a limited liability partnership"
+  },
+  {
+   "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to a company do not include a limited liability partnership to which subsection (1) applies.",
+   "quote": "references to a company do not include such a limited liability partnership"
+  },
+  {
+   "requirement": "Except as otherwise provided, for all purposes in enactments relating to tax in respect of chargeable gains, references to members of a company do not include members of a limited liability partnership to which subsection (1) applies.",
+   "quote": "references to members of a company do not include members of such a limited liability partnership"
+  },
+  {
+   "requirement": "Subsection (1) continues to apply to a limited liability partnership that no longer carries on any trade or business with a view to profit if the cessation is only temporary.",
+   "quote": "Subsection (1) above continues to apply in relation to a limited liability partnership which no longer carries on any trade or business with a view to profit— (a) if the cessation is only temporary"
+  },
+  {
+   "requirement": "Subject to subsection (4), subsection (1) continues to apply to a limited liability partnership that no longer carries on any trade or business with a view to profit during a period of winding up following a permanent cessation, provided the winding up is not for reasons connected in whole or in part with tax avoidance and the period of winding up is not unreasonably prolonged.",
+   "quote": "during a period of winding up following a permanent cessation, provided— (i) the winding up is not for reasons connected in whole or in part with the avoidance of tax, and (ii) the period of winding up is not unreasonably prolonged, but subject to subsection (4) below"
+  },
+  {
+   "requirement": "Subsection (1) ceases to apply to a limited liability partnership on the appointment of a liquidator or, if earlier, the making of a winding-up order by the court.",
+   "quote": "Subsection (1) above ceases to apply in relation to a limited liability partnership— (a) on the appointment of a liquidator or (if earlier) the making of a winding-up order by the court"
+  },
+  {
+   "requirement": "Subsection (1) ceases to apply to a limited liability partnership on the occurrence of any event under the law of a country or territory outside the United Kingdom corresponding to the appointment of a liquidator or the making of a winding-up order by the court.",
+   "quote": "on the occurrence of any event under the law of a country or territory outside the United Kingdom corresponding to an event specified in paragraph (a) above"
+  },
+  {
+   "requirement": "Where subsection (1) ceases to apply to a limited liability partnership with the effect that tax is assessed and charged on the limited liability partnership as a company on gains accruing on asset disposals and on the members on gains accruing on disposals of their capital interests, tax must be assessed and charged on the limited liability partnership as if subsection (1) had never applied in relation to it.",
+   "quote": "it shall be assessed and charged on the limited liability partnership as if subsection (1) above had never applied in relation to it"
+  },
+  {
+   "requirement": "Neither the commencement nor the cessation of the application of subsection (1) to a limited liability partnership shall be taken as giving rise to the disposal of any assets by the limited liability partnership or any of its members.",
+   "quote": "Neither the commencement of the application of subsection (1) above nor the cessation of its application in relation to a limited liability partnership shall be taken as giving rise to the disposal of any assets by it or any of its members"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

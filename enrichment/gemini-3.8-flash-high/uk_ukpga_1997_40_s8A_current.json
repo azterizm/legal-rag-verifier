@@ -1,0 +1,109 @@
+{
+ "key": "uk/ukpga/1997/40/s8A@current",
+ "section": "uk/ukpga/1997/40/s8A",
+ "version": "current",
+ "source_sha256": "a97943fa6e6a84b65da3d493db12fc167d2321572db9ef5edd80b8da01a5ca67",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Every individual possesses a right to be free from harassment.",
+    "quote": "Every individual has a right to be free from harassment"
+   },
+   {
+    "requirement": "A person must not engage in conduct amounting to harassment of another individual where that conduct is intended to amount to harassment of that individual.",
+    "quote": "a person must not engage in conduct which amounts to harassment of another and— (a) is intended to amount to harassment of that person"
+   },
+   {
+    "requirement": "A person must not engage in conduct amounting to harassment of another individual where that conduct occurs in circumstances in which a reasonable person would consider it to amount to harassment of that individual.",
+    "quote": "occurs in circumstances where it would appear to a reasonable person that it would amount to harassment of that person"
+   },
+   {
+    "requirement": "The prohibition on conduct amounting to harassment applies only if the conduct amounts to domestic abuse.",
+    "quote": "Subsection (1) only applies where the conduct referred to amounts to domestic abuse."
+   },
+   {
+    "requirement": "Subsections (2) to (7) of section 8 apply in relation to subsection (1) as they apply in relation to subsection (1) of section 8, subject to specific modifications.",
+    "quote": "Subsections (2) to (7) of section 8 apply in relation to subsection (1) as they apply in relation to subsection (1) of that section but with the following modifications"
+   },
+   {
+    "requirement": "The words “course of” are omitted from subsections (2) and (4) of section 8 as applied.",
+    "quote": "in subsections (2) and (4), the words “course of” are omitted"
+   },
+   {
+    "requirement": "For the purposes of the section, conduct may involve behaviour on one or more than one occasion.",
+    "quote": "“conduct”––may involve behaviour on one or more than one occasion"
+   },
+   {
+    "requirement": "For the purposes of the section, conduct includes speech as well as presence in any place or area.",
+    "quote": "includes— speech; andpresence in any place or area"
+   },
+   {
+    "requirement": "For the purposes of the section, harassment of a person includes causing that person alarm or distress.",
+    "quote": "“harassment” of a person includes causing the person alarm or distress."
+   },
+   {
+    "requirement": "In subsection (4)(b) of section 8 as applied, the words “ engaged in ” are substituted for the word “pursued”.",
+    "quote": "in subsection (4)(b), for “pursued” substitute “ engaged in ”"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of occasions of behaviour that conduct may involve",
+    "value": "one",
+    "quote": "behaviour on one or more than one occasion"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Every individual possesses a right to be free from harassment.",
+   "quote": "Every individual has a right to be free from harassment"
+  },
+  {
+   "requirement": "A person must not engage in conduct amounting to harassment of another individual where that conduct is intended to amount to harassment of that individual.",
+   "quote": "a person must not engage in conduct which amounts to harassment of another and— (a) is intended to amount to harassment of that person"
+  },
+  {
+   "requirement": "A person must not engage in conduct amounting to harassment of another individual where that conduct occurs in circumstances in which a reasonable person would consider it to amount to harassment of that individual.",
+   "quote": "occurs in circumstances where it would appear to a reasonable person that it would amount to harassment of that person"
+  },
+  {
+   "requirement": "The prohibition on conduct amounting to harassment applies only if the conduct amounts to domestic abuse.",
+   "quote": "Subsection (1) only applies where the conduct referred to amounts to domestic abuse."
+  },
+  {
+   "requirement": "Subsections (2) to (7) of section 8 apply in relation to subsection (1) as they apply in relation to subsection (1) of section 8, subject to specific modifications.",
+   "quote": "Subsections (2) to (7) of section 8 apply in relation to subsection (1) as they apply in relation to subsection (1) of that section but with the following modifications"
+  },
+  {
+   "requirement": "The words “course of” are omitted from subsections (2) and (4) of section 8 as applied.",
+   "quote": "in subsections (2) and (4), the words “course of” are omitted"
+  },
+  {
+   "requirement": "For the purposes of the section, conduct may involve behaviour on one or more than one occasion.",
+   "quote": "“conduct”––may involve behaviour on one or more than one occasion"
+  },
+  {
+   "requirement": "For the purposes of the section, conduct includes speech as well as presence in any place or area.",
+   "quote": "includes— speech; andpresence in any place or area"
+  },
+  {
+   "requirement": "For the purposes of the section, harassment of a person includes causing that person alarm or distress.",
+   "quote": "“harassment” of a person includes causing the person alarm or distress."
+  },
+  {
+   "requirement": "In subsection (4)(b) of section 8 as applied, the words “ engaged in ” are substituted for the word “pursued”.",
+   "quote": "in subsection (4)(b), for “pursued” substitute “ engaged in ”"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

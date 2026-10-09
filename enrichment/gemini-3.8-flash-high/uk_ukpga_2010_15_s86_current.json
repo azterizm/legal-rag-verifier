@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/2010/15/s86@current",
+ "section": "uk/ukpga/2010/15/s86",
+ "version": "current",
+ "source_sha256": "10df8e57f5a4af6dec7696157252dc17c47e241dfe49b4003db4026908dee36b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 86 of the Equality Act 2010 applies for the purposes of section 27 in its application to section 85(4) or (5).",
+    "quote": "applies for the purposes of section 27 in its application to section 85(4) or (5)"
+   },
+   {
+    "requirement": "References to B in section 27(1)(a) and (b) include a reference to a parent or sibling of the child in question.",
+    "quote": "The references to B in paragraphs (a) and (b) of subsection (1) of section 27 include a reference to a parent or sibling of the child in question"
+   },
+   {
+    "requirement": "Giving false evidence or information, or making a false allegation, in good faith is not a protected act where the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and the child has acted in bad faith.",
+    "quote": "Giving false evidence or information, or making a false allegation, in good faith is not a protected act in a case where— (a) the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and (b) the child has acted in bad faith"
+   },
+   {
+    "requirement": "Giving false evidence or information, or making a false allegation, in bad faith, is a protected act where the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and the child has acted in good faith.",
+    "quote": "Giving false evidence or information, or making a false allegation, in bad faith, is a protected act in a case where— (a) the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and (b) the child has acted in good faith"
+   },
+   {
+    "requirement": "A child is defined as a person who has not attained the age of 18.",
+    "quote": "“child” means a person who has not attained the age of 18"
+   },
+   {
+    "requirement": "A sibling is defined as a brother or sister, a half-brother or half-sister, or a stepbrother or stepsister.",
+    "quote": "“sibling” means a brother or sister, a half-brother or half-sister, or a stepbrother or stepsister"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum age below which a person is defined as a child",
+    "value": "18",
+    "quote": "has not attained the age of 18"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 86 of the Equality Act 2010 applies for the purposes of section 27 in its application to section 85(4) or (5).",
+   "quote": "applies for the purposes of section 27 in its application to section 85(4) or (5)"
+  },
+  {
+   "requirement": "References to B in section 27(1)(a) and (b) include a reference to a parent or sibling of the child in question.",
+   "quote": "The references to B in paragraphs (a) and (b) of subsection (1) of section 27 include a reference to a parent or sibling of the child in question"
+  },
+  {
+   "requirement": "Giving false evidence or information, or making a false allegation, in good faith is not a protected act where the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and the child has acted in bad faith.",
+   "quote": "Giving false evidence or information, or making a false allegation, in good faith is not a protected act in a case where— (a) the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and (b) the child has acted in bad faith"
+  },
+  {
+   "requirement": "Giving false evidence or information, or making a false allegation, in bad faith, is a protected act where the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and the child has acted in good faith.",
+   "quote": "Giving false evidence or information, or making a false allegation, in bad faith, is a protected act in a case where— (a) the evidence or information is given, or the allegation is made, by a parent or sibling of the child, and (b) the child has acted in good faith"
+  },
+  {
+   "requirement": "A child is defined as a person who has not attained the age of 18.",
+   "quote": "“child” means a person who has not attained the age of 18"
+  },
+  {
+   "requirement": "A sibling is defined as a brother or sister, a half-brother or half-sister, or a stepbrother or stepsister.",
+   "quote": "“sibling” means a brother or sister, a half-brother or half-sister, or a stepbrother or stepsister"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the maximum age below which a person is defined as a child",
+   "value": "18",
+   "quote": "has not attained the age of 18"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "key": "uk/ukpga/1988/50/s103@current",
+ "section": "uk/ukpga/1988/50/s103",
+ "version": "current",
+ "source_sha256": "3a393909822cb97d234e04bd88c9516949cca3df06f51960f5d989ca2555b88a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to subsection (2), the applicant may serve on the landlord a notice of intention to proceed with the acquisition within two weeks of the end of the period mentioned in section 102.",
+    "quote": "the applicant may, within two weeks of the end of the period mentioned in section 102 above, serve on the landlord notice of his intention to proceed with the acquisition"
+   },
+   {
+    "requirement": "In prescribed circumstances, the applicant may inform the landlord in the notice of intention to proceed that the applicant wishes to enter into a prescribed covenant to make payments to the landlord upon any prescribed disposal of an acquired dwelling-house occurring after the acquisition date.",
+    "quote": "that he wishes to enter into a prescribed covenant to make payments to the landlord on the occasion of any prescribed disposal (occurring after the date of the acquisition) of a dwelling-house comprised in the property to be acquired"
+   },
+   {
+    "requirement": "In prescribed circumstances, the applicant may inform the landlord in the notice of intention to proceed that the applicant requires the value of the disposal covenant to be taken into account in reducing the price otherwise payable for the property to be acquired.",
+    "quote": "that he requires the value of that covenant to be taken into account in reducing the price which would otherwise be payable for the property to be acquired"
+   },
+   {
+    "requirement": "The applicant is not entitled to serve a notice of intention to proceed if less than 50 per cent of qualifying tenants have given notice of their wishes in the prescribed manner in response to the section 102 consultation.",
+    "quote": "less than 50 per cent. of the tenants to whom that section applies have given notice of their wishes in such manner as may be prescribed"
+   },
+   {
+    "requirement": "The applicant is not entitled to serve a notice of intention to proceed if the number of qualifying tenants who have given notice in the prescribed manner wishing to remain tenants of the landlord exceeds 50 per cent of the total number of qualifying tenants.",
+    "quote": "the number of tenants to whom that section applies who have given notice in that manner of their wish to continue as tenants of the landlord exceeds 50 per cent. of the total number of tenants to whom that section applies"
+   },
+   {
+    "requirement": "Two or more joint tenants holding a tenancy are regarded as a single tenant for the purpose of the consultation thresholds in subsection (2).",
+    "quote": "those persons shall be regarded as a single tenant for the purposes of subsection (2) above"
+   },
+   {
+    "requirement": "A notice given in response to the section 102 consultation by joint tenants has no effect for the purposes of subsection (2) unless it is given by or on behalf of all the joint tenants.",
+    "quote": "any notice given in response to the consultation under section 102 above shall be of no effect for the purposes of subsection (2) above unless it is given by or on behalf of all the joint tenants"
+   },
+   {
+    "requirement": "The notice of intention to proceed served by the applicant must contain a list of the names and addresses of any qualifying tenants who gave notice of their wish to continue as tenants of the landlord.",
+    "quote": "a list of the names and addresses of tenants to whom section 102 above applies (if any) who have given notice as mentioned in subsection (2)(b) above"
+   },
+   {
+    "requirement": "The notice of intention to proceed served by the applicant must contain a list of any houses to be excluded from the acquisition under section 100 regulations.",
+    "quote": "a list of the houses (if any) which are, by virtue of regulations under section 100 above, to be excluded from the acquisition"
+   },
+   {
+    "requirement": "The notice of intention to proceed served by the applicant must contain a list of any flats for which the applicant is required under regulations to grant leases to the landlord, together with a statement of the proposed lease terms.",
+    "quote": "a list of flats (if any) of which the applicant is required, by virtue of such regulations, to grant leases to the landlord and a statement of the proposed terms of those leases"
+   },
+   {
+    "requirement": "The notice of intention to proceed served by the applicant must contain such information as is necessary to show how the lists of qualifying tenants, excluded houses, and leasehold flats were established.",
+    "quote": "such information as may be necessary to show how the lists mentioned in paragraphs (a), (b) and (c) above were established"
+   },
+   {
+    "requirement": "The notice of intention to proceed served by the applicant must specify the price payable for the property disregarding any covenant reduction, or, where applicable, the disposal cost attributable to the property.",
+    "quote": "the price payable for the property to be acquired (disregarding any reduction by virtue of such a covenant as is referred to in subsection (1) above) or, as the case may be, the disposal cost attributable to that property"
+   },
+   {
+    "requirement": "If there is an attributable disposal cost and the landlord notified the applicant under section 99(7) of an intention to pay by instalments, the notice must contain either a statement of the basis for instalment payments under section 104(2A) regulations or a statement that those regulations do not permit instalment payments.",
+    "quote": "either a statement of the basis on which, in accordance with regulations under section 104(2A) below, the disposal cost is to be paid by instalments or a statement that the disposal cost is not such that those regulations permit it to be paid by instalments"
+   },
+   {
+    "requirement": "The landlord must notify the applicant in writing of any matters stated in the notice of intention to proceed that the landlord does not accept, within two weeks of service of that notice.",
+    "quote": "Within two weeks of service of the notice under subsection (1) above, the landlord shall notify the applicant in writing of any matters stated in that notice which it does not accept."
+   },
+   {
+    "requirement": "Where the applicant has served a notice of intention to proceed, any qualifying tenant who did not give notice wishing to remain a tenant of the landlord is deemed to have accepted, and given consideration for, any qualifying offer made by the applicant regarding post-acquisition occupation terms that was neither withdrawn nor rejected before the end of the section 102 consultation period.",
+    "quote": "every tenant to whom section 102 above applies and who has not given notice as mentioned in subsection (2)(b) above shall be taken to have accepted, and to have given consideration for, any offer"
+   },
+   {
+    "requirement": "Regulations prescribing matters under subsection (1) must make provision for determining the amounts payable upon prescribed disposals.",
+    "quote": "Regulations prescribing any of the matters referred to in subsection (1) above shall also make provision with respect to the determination of the amounts which are to be payable on the occasion of prescribed disposals"
+   },
+   {
+    "requirement": "The district valuer must determine the amount of any price reduction for the acquired property that is attributable to a covenant mentioned in subsection (1).",
+    "quote": "the amount of any reduction in the price payable for the property to be acquired which is attributable to such a covenant as is referred to in that subsection shall be determined by the district valuer"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time limit for the applicant to serve the notice of intention to proceed on the landlord after the consultation period ends",
+    "value": "two weeks",
+    "quote": "within two weeks of the end of the period mentioned in section 102 above"
+   },
+   {
+    "what": "Minimum percentage of qualifying tenants required to give notice of their wishes to permit the applicant to serve a notice of intention to proceed",
+    "value": "50 per cent.",
+    "quote": "less than 50 per cent. of the tenants to whom that section applies have given notice of their wishes"
+   },
+   {
+    "what": "Maximum percentage threshold of qualifying tenants wishing to continue as tenants of the landlord above which the applicant cannot serve a notice of intention to proceed",
+    "value": "50 per cent.",
+    "quote": "exceeds 50 per cent. of the total number of tenants to whom that section applies"
+   },
+   {
+    "what": "Number of joint tenants required to hold a tenancy to be treated as a single tenant",
+    "value": "two or more",
+    "quote": "where a tenancy is held by two or more persons jointly"
+   },
+   {
+    "what": "Time limit for the landlord to notify the applicant in writing of any unaccepted matters in the notice",
+    "value": "two weeks",
+    "quote": "Within two weeks of service of the notice under subsection (1) above"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to subsection (2), the applicant may serve on the landlord a notice of intention to proceed with the acquisition within two weeks of the end of the period mentioned in section 102.",
+   "quote": "the applicant may, within two weeks of the end of the period mentioned in section 102 above, serve on the landlord notice of his intention to proceed with the acquisition"
+  },
+  {
+   "requirement": "In prescribed circumstances, the applicant may inform the landlord in the notice of intention to proceed that the applicant wishes to enter into a prescribed covenant to make payments to the landlord upon any prescribed disposal of an acquired dwelling-house occurring after the acquisition date.",
+   "quote": "that he wishes to enter into a prescribed covenant to make payments to the landlord on the occasion of any prescribed disposal (occurring after the date of the acquisition) of a dwelling-house comprised in the property to be acquired"
+  },
+  {
+   "requirement": "In prescribed circumstances, the applicant may inform the landlord in the notice of intention to proceed that the applicant requires the value of the disposal covenant to be taken into account in reducing the price otherwise payable for the property to be acquired.",
+   "quote": "that he requires the value of that covenant to be taken into account in reducing the price which would otherwise be payable for the property to be acquired"
+  },
+  {
+   "requirement": "The applicant is not entitled to serve a notice of intention to proceed if less than 50 per cent of qualifying tenants have given notice of their wishes in the prescribed manner in response to the section 102 consultation.",
+   "quote": "less than 50 per cent. of the tenants to whom that section applies have given notice of their wishes in such manner as may be prescribed"
+  },
+  {
+   "requirement": "The applicant is not entitled to serve a notice of intention to proceed if the number of qualifying tenants who have given notice in the prescribed manner wishing to remain tenants of the landlord exceeds 50 per cent of the total number of qualifying tenants.",
+   "quote": "the number of tenants to whom that section applies who have given notice in that manner of their wish to continue as tenants of the landlord exceeds 50 per cent. of the total number of tenants to whom that section applies"
+  },
+  {
+   "requirement": "Two or more joint tenants holding a tenancy are regarded as a single tenant for the purpose of the consultation thresholds in subsection (2).",
+   "quote": "those persons shall be regarded as a single tenant for the purposes of subsection (2) above"
+  },
+  {
+   "requirement": "A notice given in response to the section 102 consultation by joint tenants has no effect for the purposes of subsection (2) unless it is given by or on behalf of all the joint tenants.",
+   "quote": "any notice given in response to the consultation under section 102 above shall be of no effect for the purposes of subsection (2) above unless it is given by or on behalf of all the joint tenants"
+  },
+  {
+   "requirement": "The notice of intention to proceed served by the applicant must contain a list of the names and addresses of any qualifying tenants who gave notice of their wish to continue as tenants of the landlord.",
+   "quote": "a list of the names and addresses of tenants to whom section 102 above applies (if any) who have given notice as mentioned in subsection (2)(b) above"
+  },
+  {
+   "requirement": "The notice of intention to proceed served by the applicant must contain a list of any houses to be excluded from the acquisition under section 100 regulations.",
+   "quote": "a list of the houses (if any) which are, by virtue of regulations under section 100 above, to be excluded from the acquisition"
+  },
+  {
+   "requirement": "The notice of intention to proceed served by the applicant must contain a list of any flats for which the applicant is required under regulations to grant leases to the landlord, together with a statement of the proposed lease terms.",
+   "quote": "a list of flats (if any) of which the applicant is required, by virtue of such regulations, to grant leases to the landlord and a statement of the proposed terms of those leases"
+  },
+  {
+   "requirement": "The notice of intention to proceed served by the applicant must contain such information as is necessary to show how the lists of qualifying tenants, excluded houses, and leasehold flats were established.",
+   "quote": "such information as may be necessary to show how the lists mentioned in paragraphs (a), (b) and (c) above were established"
+  },
+  {
+   "requirement": "The notice of intention to proceed served by the applicant must specify the price payable for the property disregarding any covenant reduction, or, where applicable, the disposal cost attributable to the property.",
+   "quote": "the price payable for the property to be acquired (disregarding any reduction by virtue of such a covenant as is referred to in subsection (1) above) or, as the case may be, the disposal cost attributable to that property"
+  },
+  {
+   "requirement": "If there is an attributable disposal cost and the landlord notified the applicant under section 99(7) of an intention to pay by instalments, the notice must contain either a statement of the basis for instalment payments under section 104(2A) regulations or a statement that those regulations do not permit instalment payments.",
+   "quote": "either a statement of the basis on which, in accordance with regulations under section 104(2A) below, the disposal cost is to be paid by instalments or a statement that the disposal cost is not such that those regulations permit it to be paid by instalments"
+  },
+  {
+   "requirement": "The landlord must notify the applicant in writing of any matters stated in the notice of intention to proceed that the landlord does not accept, within two weeks of service of that notice.",
+   "quote": "Within two weeks of service of the notice under subsection (1) above, the landlord shall notify the applicant in writing of any matters stated in that notice which it does not accept."
+  },
+  {
+   "requirement": "Where the applicant has served a notice of intention to proceed, any qualifying tenant who did not give notice wishing to remain a tenant of the landlord is deemed to have accepted, and given consideration for, any qualifying offer made by the applicant regarding post-acquisition occupation terms that was neither withdrawn nor rejected before the end of the section 102 consultation period.",
+   "quote": "every tenant to whom section 102 above applies and who has not given notice as mentioned in subsection (2)(b) above shall be taken to have accepted, and to have given consideration for, any offer"
+  },
+  {
+   "requirement": "Regulations prescribing matters under subsection (1) must make provision for determining the amounts payable upon prescribed disposals.",
+   "quote": "Regulations prescribing any of the matters referred to in subsection (1) above shall also make provision with respect to the determination of the amounts which are to be payable on the occasion of prescribed disposals"
+  },
+  {
+   "requirement": "The district valuer must determine the amount of any price reduction for the acquired property that is attributable to a covenant mentioned in subsection (1).",
+   "quote": "the amount of any reduction in the price payable for the property to be acquired which is attributable to such a covenant as is referred to in that subsection shall be determined by the district valuer"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Time limit for the applicant to serve the notice of intention to proceed on the landlord after the consultation period ends",
+   "value": "two weeks",
+   "quote": "within two weeks of the end of the period mentioned in section 102 above"
+  },
+  {
+   "what": "Minimum percentage of qualifying tenants required to give notice of their wishes to permit the applicant to serve a notice of intention to proceed",
+   "value": "50 per cent.",
+   "quote": "less than 50 per cent. of the tenants to whom that section applies have given notice of their wishes"
+  },
+  {
+   "what": "Maximum percentage threshold of qualifying tenants wishing to continue as tenants of the landlord above which the applicant cannot serve a notice of intention to proceed",
+   "value": "50 per cent.",
+   "quote": "exceeds 50 per cent. of the total number of tenants to whom that section applies"
+  },
+  {
+   "what": "Time limit for the landlord to notify the applicant in writing of any unaccepted matters in the notice",
+   "value": "two weeks",
+   "quote": "Within two weeks of service of the notice under subsection (1) above"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 4
+ }
+}

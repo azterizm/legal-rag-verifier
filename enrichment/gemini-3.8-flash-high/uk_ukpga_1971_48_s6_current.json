@@ -1,0 +1,77 @@
+{
+ "key": "uk/ukpga/1971/48/s6@current",
+ "section": "uk/ukpga/1971/48/s6",
+ "version": "current",
+ "source_sha256": "42af17e3c7d21c150f44d54b68511c6e155a117cbcbc87f06e750288e9e7de8b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A justice of the peace may grant a warrant authorising any constable to search for and seize a thing if it is made to appear by information on oath that there is reasonable cause to believe that any person has that thing in his custody, under his control, or on his premises, and there is reasonable cause to believe it has been used or is intended for use without lawful excuse to destroy or damage property.",
+    "quote": "the justice may grant a warrant authorising any constable to search for and seize that thing"
+   },
+   {
+    "requirement": "A warrant may be granted where the thing is reasonably believed to have been used or to be intended for use without lawful excuse to destroy or damage property belonging to another.",
+    "quote": "to destroy or damage property belonging to another"
+   },
+   {
+    "requirement": "A warrant may be granted where the thing is reasonably believed to have been used or to be intended for use without lawful excuse to destroy or damage any property in a way likely to endanger the life of another.",
+    "quote": "to destroy or damage any property in a way likely to endanger the life of another"
+   },
+   {
+    "requirement": "A constable who is authorised under section 6 of the Criminal Damage Act 1971 to search premises for anything may enter the premises, by force if necessary, and search them accordingly.",
+    "quote": "may enter (if need be by force) and search the premises accordingly"
+   },
+   {
+    "requirement": "A constable authorised to search premises under section 6 of the Criminal Damage Act 1971 may seize anything which that constable believes to have been used or to be intended to be used without lawful excuse to destroy or damage property belonging to another, or to destroy or damage any property in a way likely to endanger the life of another.",
+    "quote": "may seize anything which he believes to have been used or to be intended to be used as aforesaid"
+   },
+   {
+    "requirement": "The Police (Property) Act 1897 applies to property which has come into the possession of the police under section 6 of the Criminal Damage Act 1971 in the same manner as it applies to property which has come into the possession of the police in the circumstances mentioned in that 1897 Act.",
+    "quote": "The Police (Property) Act 1897 (disposal of property in the possession of the police) shall apply to property which has come into the possession of the police under this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Calendar year of the Police (Property) Act applicable to property coming into the possession of the police",
+    "value": "1897",
+    "quote": "Police (Property) Act 1897"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A justice of the peace may grant a warrant authorising any constable to search for and seize a thing if it is made to appear by information on oath that there is reasonable cause to believe that any person has that thing in his custody, under his control, or on his premises, and there is reasonable cause to believe it has been used or is intended for use without lawful excuse to destroy or damage property.",
+   "quote": "the justice may grant a warrant authorising any constable to search for and seize that thing"
+  },
+  {
+   "requirement": "A warrant may be granted where the thing is reasonably believed to have been used or to be intended for use without lawful excuse to destroy or damage property belonging to another.",
+   "quote": "to destroy or damage property belonging to another"
+  },
+  {
+   "requirement": "A warrant may be granted where the thing is reasonably believed to have been used or to be intended for use without lawful excuse to destroy or damage any property in a way likely to endanger the life of another.",
+   "quote": "to destroy or damage any property in a way likely to endanger the life of another"
+  },
+  {
+   "requirement": "A constable who is authorised under section 6 of the Criminal Damage Act 1971 to search premises for anything may enter the premises, by force if necessary, and search them accordingly.",
+   "quote": "may enter (if need be by force) and search the premises accordingly"
+  },
+  {
+   "requirement": "A constable authorised to search premises under section 6 of the Criminal Damage Act 1971 may seize anything which that constable believes to have been used or to be intended to be used without lawful excuse to destroy or damage property belonging to another, or to destroy or damage any property in a way likely to endanger the life of another.",
+   "quote": "may seize anything which he believes to have been used or to be intended to be used as aforesaid"
+  },
+  {
+   "requirement": "The Police (Property) Act 1897 applies to property which has come into the possession of the police under section 6 of the Criminal Damage Act 1971 in the same manner as it applies to property which has come into the possession of the police in the circumstances mentioned in that 1897 Act.",
+   "quote": "The Police (Property) Act 1897 (disposal of property in the possession of the police) shall apply to property which has come into the possession of the police under this section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

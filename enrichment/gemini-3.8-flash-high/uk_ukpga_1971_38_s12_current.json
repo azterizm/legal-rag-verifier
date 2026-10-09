@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1971/38/s12@current",
+ "section": "uk/ukpga/1971/38/s12",
+ "version": "current",
+ "source_sha256": "fa25d2ca2cb9fc6067532597bc716ef672ddffc6a46d7aef6e2363f514237db3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State may give a direction under subsection (2) in respect of a practitioner or pharmacist who has, after the coming into operation of subsection (1), been convicted of an offence under the Misuse of Drugs Act 1971, the Dangerous Drugs Act 1965, or any enactment repealed by that Act.",
+    "quote": "the Secretary of State may give a direction under subsection (2) below in respect of that person"
+   },
+   {
+    "requirement": "The Secretary of State may give a direction under subsection (2) in respect of a practitioner or pharmacist who has, after the coming into operation of subsection (1), been convicted of an offence under section 45, 56 or 304 of the Customs and Excise Act 1952 or section 50, 68 or 170 of the Customs and Excise Management Act 1979 in connection with a prohibition or restriction on importation or exportation of a controlled drug having effect by virtue of section 3 of this Act or provisions of/repealed by the Dangerous Drugs Act 1965.",
+    "quote": "in connection with a prohibition of or restriction on importation or exportation of a controlled drug"
+   },
+   {
+    "requirement": "The Secretary of State may give a direction under subsection (2) in respect of a practitioner or pharmacist who has, after the coming into operation of subsection (1), been convicted of an offence under section 12 or 13 of the Criminal Justice (International Co-operation) Act 1990.",
+    "quote": "of an offence under section 12 or 13 of the Criminal Justice (International Co-operation) Act 1990"
+   },
+   {
+    "requirement": "A direction under subsection (2) in respect of a practitioner must prohibit that practitioner from having in his possession, prescribing, administering, manufacturing, compounding, and supplying, and from authorising the administration and supply of, such controlled drugs as are specified in the direction.",
+    "quote": "if that person is a practitioner, be a direction prohibiting him from having in his possession, prescribing administering, manufacturing, compounding and supplying and from authorising the administration and supply of such controlled drugs as may be specified in the direction"
+   },
+   {
+    "requirement": "A direction under subsection (2) in respect of a pharmacist must prohibit that pharmacist from having in his possession, manufacturing, compounding, and supplying, and from supervising and controlling the manufacture, compounding, and supply of, such controlled drugs as are specified in the direction.",
+    "quote": "if that person is a pharmacist, be a direction prohibiting him from having in his possession, manufacturing, compounding and supplying and from supervising and controlling the manufacture, compounding and supply of such controlled drugs as may be specified in the direction"
+   },
+   {
+    "requirement": "The Secretary of State may at any time give a direction cancelling or suspending any direction given by him under subsection (2), or cancelling any direction that suspended such a direction.",
+    "quote": "The Secretary of State may at any time give a direction cancelling or suspending any direction given by him under subsection (2) above, or cancelling any direction of his under this subsection by which a direction so given is suspended."
+   },
+   {
+    "requirement": "The Secretary of State must cause a copy of any direction given under section 12 to be served on the person to whom it applies.",
+    "quote": "The Secretary of State shall cause a copy of any direction given by him under this section to be served on the person to whom it applies"
+   },
+   {
+    "requirement": "The Secretary of State must cause notice of any direction given under section 12 to be published in the London, Edinburgh and Belfast Gazettes.",
+    "quote": "shall cause notice of any such direction to be published in the London, Edinburgh and Belfast Gazettes"
+   },
+   {
+    "requirement": "A direction given under section 12 takes effect when a copy of it is served on the person to whom it applies.",
+    "quote": "A direction under this section shall take effect when a copy of it is served on the person to whom it applies."
+   },
+   {
+    "requirement": "A person commits an offence if that person contravenes a direction given under subsection (2).",
+    "quote": "It is an offence to contravene a direction given under subsection (2) above."
+   },
+   {
+    "requirement": "In section 80(5) of the Medicines Act 1968, the words 'this Act and the Misuse of Drugs Act 1971' are substituted for the words 'and this Act'.",
+    "quote": "for the words “and this Act” in subsection (5) there shall be substituted the words “this Act and the Misuse of Drugs Act 1971”."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State may give a direction under subsection (2) in respect of a practitioner or pharmacist who has, after the coming into operation of subsection (1), been convicted of an offence under the Misuse of Drugs Act 1971, the Dangerous Drugs Act 1965, or any enactment repealed by that Act.",
+   "quote": "the Secretary of State may give a direction under subsection (2) below in respect of that person"
+  },
+  {
+   "requirement": "The Secretary of State may give a direction under subsection (2) in respect of a practitioner or pharmacist who has, after the coming into operation of subsection (1), been convicted of an offence under section 45, 56 or 304 of the Customs and Excise Act 1952 or section 50, 68 or 170 of the Customs and Excise Management Act 1979 in connection with a prohibition or restriction on importation or exportation of a controlled drug having effect by virtue of section 3 of this Act or provisions of/repealed by the Dangerous Drugs Act 1965.",
+   "quote": "in connection with a prohibition of or restriction on importation or exportation of a controlled drug"
+  },
+  {
+   "requirement": "The Secretary of State may give a direction under subsection (2) in respect of a practitioner or pharmacist who has, after the coming into operation of subsection (1), been convicted of an offence under section 12 or 13 of the Criminal Justice (International Co-operation) Act 1990.",
+   "quote": "of an offence under section 12 or 13 of the Criminal Justice (International Co-operation) Act 1990"
+  },
+  {
+   "requirement": "A direction under subsection (2) in respect of a practitioner must prohibit that practitioner from having in his possession, prescribing, administering, manufacturing, compounding, and supplying, and from authorising the administration and supply of, such controlled drugs as are specified in the direction.",
+   "quote": "if that person is a practitioner, be a direction prohibiting him from having in his possession, prescribing administering, manufacturing, compounding and supplying and from authorising the administration and supply of such controlled drugs as may be specified in the direction"
+  },
+  {
+   "requirement": "A direction under subsection (2) in respect of a pharmacist must prohibit that pharmacist from having in his possession, manufacturing, compounding, and supplying, and from supervising and controlling the manufacture, compounding, and supply of, such controlled drugs as are specified in the direction.",
+   "quote": "if that person is a pharmacist, be a direction prohibiting him from having in his possession, manufacturing, compounding and supplying and from supervising and controlling the manufacture, compounding and supply of such controlled drugs as may be specified in the direction"
+  },
+  {
+   "requirement": "The Secretary of State may at any time give a direction cancelling or suspending any direction given by him under subsection (2), or cancelling any direction that suspended such a direction.",
+   "quote": "The Secretary of State may at any time give a direction cancelling or suspending any direction given by him under subsection (2) above, or cancelling any direction of his under this subsection by which a direction so given is suspended."
+  },
+  {
+   "requirement": "The Secretary of State must cause a copy of any direction given under section 12 to be served on the person to whom it applies.",
+   "quote": "The Secretary of State shall cause a copy of any direction given by him under this section to be served on the person to whom it applies"
+  },
+  {
+   "requirement": "The Secretary of State must cause notice of any direction given under section 12 to be published in the London, Edinburgh and Belfast Gazettes.",
+   "quote": "shall cause notice of any such direction to be published in the London, Edinburgh and Belfast Gazettes"
+  },
+  {
+   "requirement": "A direction given under section 12 takes effect when a copy of it is served on the person to whom it applies.",
+   "quote": "A direction under this section shall take effect when a copy of it is served on the person to whom it applies."
+  },
+  {
+   "requirement": "A person commits an offence if that person contravenes a direction given under subsection (2).",
+   "quote": "It is an offence to contravene a direction given under subsection (2) above."
+  },
+  {
+   "requirement": "In section 80(5) of the Medicines Act 1968, the words 'this Act and the Misuse of Drugs Act 1971' are substituted for the words 'and this Act'.",
+   "quote": "for the words “and this Act” in subsection (5) there shall be substituted the words “this Act and the Misuse of Drugs Act 1971”."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

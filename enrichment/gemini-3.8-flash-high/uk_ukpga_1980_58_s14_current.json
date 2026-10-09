@@ -1,0 +1,167 @@
+{
+ "key": "uk/ukpga/1980/58/s14@current",
+ "section": "uk/ukpga/1980/58/s14",
+ "version": "current",
+ "source_sha256": "e678c3dfa58cf0e9da296e0703f0f88d77ff727e06a2b3b88816a72e256dd48a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the provisions governing defective products and automated vehicles, references in sections 11 and 12 of the Limitation Act 1980 to a person's date of knowledge are to the date on which that person first knew that the injury in question was significant.",
+    "quote": "references to a person’s date of knowledge are references to the date on which he first had knowledge of the following facts— (a) that the injury in question was significant"
+   },
+   {
+    "requirement": "In sections 11 and 12 of the Limitation Act 1980, a person's date of knowledge requires knowledge that the injury was attributable in whole or in part to the act or omission alleged to constitute negligence, nuisance, or breach of duty.",
+    "quote": "that the injury was attributable in whole or in part to the act or omission which is alleged to constitute negligence, nuisance or breach of duty"
+   },
+   {
+    "requirement": "In sections 11 and 12 of the Limitation Act 1980, a person's date of knowledge requires knowledge of the identity of the defendant.",
+    "quote": "the identity of the defendant"
+   },
+   {
+    "requirement": "In sections 11 and 12 of the Limitation Act 1980, if the act or omission is alleged to be that of a person other than the defendant, a person's date of knowledge requires knowledge of the identity of that other person and the additional facts supporting an action against the defendant.",
+    "quote": "if it is alleged that the act or omission was that of a person other than the defendant, the identity of that person and the additional facts supporting the bringing of an action against the defendant"
+   },
+   {
+    "requirement": "For the purposes of sections 11 and 12 of the Limitation Act 1980, knowledge of whether any acts or omissions legally involved negligence, nuisance, or breach of duty is irrelevant.",
+    "quote": "knowledge that any acts or omissions did or did not, as a matter of law, involve negligence, nuisance or breach of duty is irrelevant"
+   },
+   {
+    "requirement": "For actions under section 11A of the Limitation Act 1980 and under section 12 concerning death caused by a defective product under section 6(1)(a) of the Consumer Protection Act 1987, a person's date of knowledge requires knowledge of facts about damage caused by the defect that would lead a reasonable person suffering such damage to consider it sufficiently serious to justify instituting proceedings for damages against a defendant who did not dispute liability and could satisfy a judgment.",
+    "quote": "such facts about the damage caused by the defect as would lead a reasonable person who had suffered such damage to consider it sufficiently serious to justify his instituting proceedings for damages against a defendant who did not dispute liability and was able to satisfy a judgment"
+   },
+   {
+    "requirement": "For actions under section 11A of the Limitation Act 1980 and qualifying actions under section 12 concerning death caused by a defective product, a person's date of knowledge requires knowledge that the damage was wholly or partly attributable to the facts and circumstances alleged to constitute the defect.",
+    "quote": "that the damage was wholly or partly attributable to the facts and circumstances alleged to constitute the defect"
+   },
+   {
+    "requirement": "For actions under section 11A of the Limitation Act 1980 and qualifying actions under section 12 concerning death caused by a defective product, a person's date of knowledge requires knowledge of the identity of the defendant.",
+    "quote": "the identity of the defendant;"
+   },
+   {
+    "requirement": "In determining when a person first had knowledge under section 11A or qualifying section 12 actions for defective products, any knowledge on any date of whether particular facts or circumstances legally constitute a defect must be disregarded.",
+    "quote": "there shall be disregarded both the extent (if any) of that person’s knowledge on any date of whether particular facts or circumstances would or would not, as a matter of law, constitute a defect"
+   },
+   {
+    "requirement": "In determining when a person first had knowledge under section 11A or qualifying section 12 actions for defective products, any knowledge had on a date when the person had no right of action under Part I of the Consumer Protection Act 1987 in respect of loss of or damage to property must be disregarded.",
+    "quote": "in a case relating to loss of or damage to property, any knowledge which that person had on a date on which he had no right of action by virtue of Part I of that Act in respect of the loss or damage"
+   },
+   {
+    "requirement": "In section 11B of the Limitation Act 1980 and in section 12 for an action under section 6(1)(a) of the Automated and Electric Vehicles Act 2018 regarding death caused by an automated vehicle, a person's date of knowledge requires knowledge that the injury in question was significant.",
+    "quote": "that the injury in question was significant;"
+   },
+   {
+    "requirement": "In section 11B of the Limitation Act 1980 and qualifying section 12 actions regarding death caused by an automated vehicle, a person's date of knowledge requires knowledge that the injury was wholly or partly attributable to an accident caused by an automated vehicle when driving itself.",
+    "quote": "that the injury was attributable in whole or in part to an accident caused by an automated vehicle when driving itself"
+   },
+   {
+    "requirement": "In actions regarding automated vehicles, a person's date of knowledge requires knowledge of the identity of the vehicle's insurer for an action under section 2(1) of the Automated and Electric Vehicles Act 2018, or the identity of the vehicle's owner for an action under section 2(2) of that Act.",
+    "quote": "the identity of the insurer of the vehicle (in the case of an action under section 2(1) of the 2018 Act) or the owner of the vehicle (in the case of an action under section 2(2) of that Act)"
+   },
+   {
+    "requirement": "Expressions used in subsection (1B) of section 14 of the Limitation Act 1980 that are defined for Part 1 of the Automated and Electric Vehicles Act 2018 bear the same meanings as in that Part.",
+    "quote": "Expressions used in this subsection that are defined for the purposes of Part 1 of the 2018 Act have the same meaning in this subsection as in that Part."
+   },
+   {
+    "requirement": "An injury is significant for the purposes of section 14 of the Limitation Act 1980 if the person whose date of knowledge is at issue would reasonably have considered it sufficiently serious to justify instituting damages proceedings against a defendant who did not dispute liability and could satisfy a judgment.",
+    "quote": "an injury is significant if the person whose date of knowledge is in question would reasonably have considered it sufficiently serious to justify his instituting proceedings for damages against a defendant who did not dispute liability and was able to satisfy a judgment"
+   },
+   {
+    "requirement": "For the purposes of section 14 of the Limitation Act 1980, a person's knowledge includes knowledge that the person might reasonably have been expected to acquire from facts observable or ascertainable by that person.",
+    "quote": "a person’s knowledge includes knowledge which he might reasonably have been expected to acquire— (a) from facts observable or ascertainable by him"
+   },
+   {
+    "requirement": "For the purposes of section 14 of the Limitation Act 1980, a person's knowledge includes knowledge that the person might reasonably have been expected to acquire from facts ascertainable with the help of medical or other appropriate expert advice that it is reasonable for that person to seek.",
+    "quote": "from facts ascertainable by him with the help of medical or other appropriate expert advice which it is reasonable for him to seek"
+   },
+   {
+    "requirement": "A person cannot be fixed with knowledge of a fact ascertainable only with expert advice under section 14(3) of the Limitation Act 1980 as long as that person has taken all reasonable steps to obtain and, where appropriate, act on that advice.",
+    "quote": "a person shall not be fixed under this subsection with knowledge of a fact ascertainable only with the help of expert advice so long as he has taken all reasonable steps to obtain (and, where appropriate, to act on) that advice"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the provisions governing defective products and automated vehicles, references in sections 11 and 12 of the Limitation Act 1980 to a person's date of knowledge are to the date on which that person first knew that the injury in question was significant.",
+   "quote": "references to a person’s date of knowledge are references to the date on which he first had knowledge of the following facts— (a) that the injury in question was significant"
+  },
+  {
+   "requirement": "In sections 11 and 12 of the Limitation Act 1980, a person's date of knowledge requires knowledge that the injury was attributable in whole or in part to the act or omission alleged to constitute negligence, nuisance, or breach of duty.",
+   "quote": "that the injury was attributable in whole or in part to the act or omission which is alleged to constitute negligence, nuisance or breach of duty"
+  },
+  {
+   "requirement": "In sections 11 and 12 of the Limitation Act 1980, a person's date of knowledge requires knowledge of the identity of the defendant.",
+   "quote": "the identity of the defendant"
+  },
+  {
+   "requirement": "In sections 11 and 12 of the Limitation Act 1980, if the act or omission is alleged to be that of a person other than the defendant, a person's date of knowledge requires knowledge of the identity of that other person and the additional facts supporting an action against the defendant.",
+   "quote": "if it is alleged that the act or omission was that of a person other than the defendant, the identity of that person and the additional facts supporting the bringing of an action against the defendant"
+  },
+  {
+   "requirement": "For the purposes of sections 11 and 12 of the Limitation Act 1980, knowledge of whether any acts or omissions legally involved negligence, nuisance, or breach of duty is irrelevant.",
+   "quote": "knowledge that any acts or omissions did or did not, as a matter of law, involve negligence, nuisance or breach of duty is irrelevant"
+  },
+  {
+   "requirement": "For actions under section 11A of the Limitation Act 1980 and under section 12 concerning death caused by a defective product under section 6(1)(a) of the Consumer Protection Act 1987, a person's date of knowledge requires knowledge of facts about damage caused by the defect that would lead a reasonable person suffering such damage to consider it sufficiently serious to justify instituting proceedings for damages against a defendant who did not dispute liability and could satisfy a judgment.",
+   "quote": "such facts about the damage caused by the defect as would lead a reasonable person who had suffered such damage to consider it sufficiently serious to justify his instituting proceedings for damages against a defendant who did not dispute liability and was able to satisfy a judgment"
+  },
+  {
+   "requirement": "For actions under section 11A of the Limitation Act 1980 and qualifying actions under section 12 concerning death caused by a defective product, a person's date of knowledge requires knowledge that the damage was wholly or partly attributable to the facts and circumstances alleged to constitute the defect.",
+   "quote": "that the damage was wholly or partly attributable to the facts and circumstances alleged to constitute the defect"
+  },
+  {
+   "requirement": "For actions under section 11A of the Limitation Act 1980 and qualifying actions under section 12 concerning death caused by a defective product, a person's date of knowledge requires knowledge of the identity of the defendant.",
+   "quote": "the identity of the defendant;"
+  },
+  {
+   "requirement": "In determining when a person first had knowledge under section 11A or qualifying section 12 actions for defective products, any knowledge on any date of whether particular facts or circumstances legally constitute a defect must be disregarded.",
+   "quote": "there shall be disregarded both the extent (if any) of that person’s knowledge on any date of whether particular facts or circumstances would or would not, as a matter of law, constitute a defect"
+  },
+  {
+   "requirement": "In determining when a person first had knowledge under section 11A or qualifying section 12 actions for defective products, any knowledge had on a date when the person had no right of action under Part I of the Consumer Protection Act 1987 in respect of loss of or damage to property must be disregarded.",
+   "quote": "in a case relating to loss of or damage to property, any knowledge which that person had on a date on which he had no right of action by virtue of Part I of that Act in respect of the loss or damage"
+  },
+  {
+   "requirement": "In section 11B of the Limitation Act 1980 and in section 12 for an action under section 6(1)(a) of the Automated and Electric Vehicles Act 2018 regarding death caused by an automated vehicle, a person's date of knowledge requires knowledge that the injury in question was significant.",
+   "quote": "that the injury in question was significant;"
+  },
+  {
+   "requirement": "In section 11B of the Limitation Act 1980 and qualifying section 12 actions regarding death caused by an automated vehicle, a person's date of knowledge requires knowledge that the injury was wholly or partly attributable to an accident caused by an automated vehicle when driving itself.",
+   "quote": "that the injury was attributable in whole or in part to an accident caused by an automated vehicle when driving itself"
+  },
+  {
+   "requirement": "In actions regarding automated vehicles, a person's date of knowledge requires knowledge of the identity of the vehicle's insurer for an action under section 2(1) of the Automated and Electric Vehicles Act 2018, or the identity of the vehicle's owner for an action under section 2(2) of that Act.",
+   "quote": "the identity of the insurer of the vehicle (in the case of an action under section 2(1) of the 2018 Act) or the owner of the vehicle (in the case of an action under section 2(2) of that Act)"
+  },
+  {
+   "requirement": "Expressions used in subsection (1B) of section 14 of the Limitation Act 1980 that are defined for Part 1 of the Automated and Electric Vehicles Act 2018 bear the same meanings as in that Part.",
+   "quote": "Expressions used in this subsection that are defined for the purposes of Part 1 of the 2018 Act have the same meaning in this subsection as in that Part."
+  },
+  {
+   "requirement": "An injury is significant for the purposes of section 14 of the Limitation Act 1980 if the person whose date of knowledge is at issue would reasonably have considered it sufficiently serious to justify instituting damages proceedings against a defendant who did not dispute liability and could satisfy a judgment.",
+   "quote": "an injury is significant if the person whose date of knowledge is in question would reasonably have considered it sufficiently serious to justify his instituting proceedings for damages against a defendant who did not dispute liability and was able to satisfy a judgment"
+  },
+  {
+   "requirement": "For the purposes of section 14 of the Limitation Act 1980, a person's knowledge includes knowledge that the person might reasonably have been expected to acquire from facts observable or ascertainable by that person.",
+   "quote": "a person’s knowledge includes knowledge which he might reasonably have been expected to acquire— (a) from facts observable or ascertainable by him"
+  },
+  {
+   "requirement": "For the purposes of section 14 of the Limitation Act 1980, a person's knowledge includes knowledge that the person might reasonably have been expected to acquire from facts ascertainable with the help of medical or other appropriate expert advice that it is reasonable for that person to seek.",
+   "quote": "from facts ascertainable by him with the help of medical or other appropriate expert advice which it is reasonable for him to seek"
+  },
+  {
+   "requirement": "A person cannot be fixed with knowledge of a fact ascertainable only with expert advice under section 14(3) of the Limitation Act 1980 as long as that person has taken all reasonable steps to obtain and, where appropriate, act on that advice.",
+   "quote": "a person shall not be fixed under this subsection with knowledge of a fact ascertainable only with the help of expert advice so long as he has taken all reasonable steps to obtain (and, where appropriate, to act on) that advice"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 18,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

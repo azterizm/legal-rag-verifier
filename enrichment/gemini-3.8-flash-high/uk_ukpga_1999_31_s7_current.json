@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1999/31/s7@current",
+ "section": "uk/ukpga/1999/31/s7",
+ "version": "current",
+ "source_sha256": "95b061551f51d406d8b0224939eba9f1f74a1ec61a16bd0bd22e27f124a7d0c3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1 does not affect any right or remedy of a third party that exists or is available apart from the Contracts (Rights of Third Parties) Act 1999.",
+    "quote": "Section 1 does not affect any right or remedy of a third party that exists or is available apart from this Act."
+   },
+   {
+    "requirement": "Section 2(2) of the Unfair Contract Terms Act 1977 shall not apply where negligence consists of the breach of an obligation arising from a term of a contract and the person seeking to enforce that term is a third party acting in reliance on section 1.",
+    "quote": "Section 2(2) of the Unfair Contract Terms Act 1977 (restriction on exclusion etc. of liability for negligence) shall not apply where the negligence consists of the breach of an obligation arising from a term of a contract and the person seeking to enforce it is a third party acting in reliance on section 1."
+   },
+   {
+    "requirement": "In sections 5 and 8 of the Limitation Act 1980, the references to an action founded on a simple contract and an action upon a specialty respectively include references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on that section relating to a specialty.",
+    "quote": "In sections 5 and 8 of the Limitation Act 1980 the references to an action founded on a simple contract and an action upon a specialty shall respectively include references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on that section relating to a specialty."
+   },
+   {
+    "requirement": "A third party shall not, by virtue of section 1(5) or section 3(4) or (6), be treated as a party to the contract for the purposes of any other Act or any instrument made under any other Act.",
+    "quote": "A third party shall not, by virtue of section 1(5) or 3(4) or (6), be treated as a party to the contract for the purposes of any other Act (or any instrument made under any other Act)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 1 does not affect any right or remedy of a third party that exists or is available apart from the Contracts (Rights of Third Parties) Act 1999.",
+   "quote": "Section 1 does not affect any right or remedy of a third party that exists or is available apart from this Act."
+  },
+  {
+   "requirement": "Section 2(2) of the Unfair Contract Terms Act 1977 shall not apply where negligence consists of the breach of an obligation arising from a term of a contract and the person seeking to enforce that term is a third party acting in reliance on section 1.",
+   "quote": "Section 2(2) of the Unfair Contract Terms Act 1977 (restriction on exclusion etc. of liability for negligence) shall not apply where the negligence consists of the breach of an obligation arising from a term of a contract and the person seeking to enforce it is a third party acting in reliance on section 1."
+  },
+  {
+   "requirement": "In sections 5 and 8 of the Limitation Act 1980, the references to an action founded on a simple contract and an action upon a specialty respectively include references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on that section relating to a specialty.",
+   "quote": "In sections 5 and 8 of the Limitation Act 1980 the references to an action founded on a simple contract and an action upon a specialty shall respectively include references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on that section relating to a specialty."
+  },
+  {
+   "requirement": "A third party shall not, by virtue of section 1(5) or section 3(4) or (6), be treated as a party to the contract for the purposes of any other Act or any instrument made under any other Act.",
+   "quote": "A third party shall not, by virtue of section 1(5) or 3(4) or (6), be treated as a party to the contract for the purposes of any other Act (or any instrument made under any other Act)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

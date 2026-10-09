@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1994/33/s60A@current",
+ "section": "uk/ukpga/1994/33/s60A",
+ "version": "current",
+ "source_sha256": "8f85a7055e5f88dce9b90b951082107900ba8e0b028ab9710ab266bcab8517d2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any things seized by a constable under section 60 or 60AA may be retained in accordance with regulations made by the Secretary of State under section 60A of the Criminal Justice and Public Order Act 1994.",
+    "quote": "Any things seized by a constable under section 60 or 60AA may be retained in accordance with regulations made by the Secretary of State under this section."
+   },
+   {
+    "requirement": "The Secretary of State may make regulations regulating the retention and safe keeping, and the disposal and destruction in prescribed circumstances, of things seized by a constable under section 60 or 60AA.",
+    "quote": "The Secretary of State may make regulations regulating the retention and safe keeping, and the disposal and destruction in prescribed circumstances, of such things."
+   },
+   {
+    "requirement": "Regulations made under section 60A of the Criminal Justice and Public Order Act 1994 may make different provisions for different classes of things or for different circumstances.",
+    "quote": "Regulations under this section may make different provisions for different classes of things or for different circumstances."
+   },
+   {
+    "requirement": "The power to make regulations under section 60A of the Criminal Justice and Public Order Act 1994 must be exercised by statutory instrument.",
+    "quote": "The power to make regulations under this section shall be exercisable by statutory instrument"
+   },
+   {
+    "requirement": "A statutory instrument made under section 60A of the Criminal Justice and Public Order Act 1994 must be subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any things seized by a constable under section 60 or 60AA may be retained in accordance with regulations made by the Secretary of State under section 60A of the Criminal Justice and Public Order Act 1994.",
+   "quote": "Any things seized by a constable under section 60 or 60AA may be retained in accordance with regulations made by the Secretary of State under this section."
+  },
+  {
+   "requirement": "The Secretary of State may make regulations regulating the retention and safe keeping, and the disposal and destruction in prescribed circumstances, of things seized by a constable under section 60 or 60AA.",
+   "quote": "The Secretary of State may make regulations regulating the retention and safe keeping, and the disposal and destruction in prescribed circumstances, of such things."
+  },
+  {
+   "requirement": "Regulations made under section 60A of the Criminal Justice and Public Order Act 1994 may make different provisions for different classes of things or for different circumstances.",
+   "quote": "Regulations under this section may make different provisions for different classes of things or for different circumstances."
+  },
+  {
+   "requirement": "The power to make regulations under section 60A of the Criminal Justice and Public Order Act 1994 must be exercised by statutory instrument.",
+   "quote": "The power to make regulations under this section shall be exercisable by statutory instrument"
+  },
+  {
+   "requirement": "A statutory instrument made under section 60A of the Criminal Justice and Public Order Act 1994 must be subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

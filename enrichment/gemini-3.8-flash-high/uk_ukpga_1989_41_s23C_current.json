@@ -1,0 +1,204 @@
+{
+ "key": "uk/ukpga/1989/41/s23C@current",
+ "section": "uk/ukpga/1989/41/s23C",
+ "version": "current",
+ "source_sha256": "bd389e985bc0c0245d7d014a112761406cda0fb77d977ef1243ac0cdc6393714",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A local authority has duties under section 23C towards a person who has been a relevant child for the purposes of section 23A (and would be one if he were under eighteen), and in relation to whom the authority was the last responsible authority.",
+    "quote": "a person who has been a relevant child for the purposes of section 23A (and would be one if he were under eighteen), and in relation to whom they were the last responsible authority"
+   },
+   {
+    "requirement": "A local authority has duties under section 23C towards a person who was being looked after by them when he attained the age of eighteen, and immediately before ceasing to be looked after was an eligible child.",
+    "quote": "a person who was being looked after by them when he attained the age of eighteen, and immediately before ceasing to be looked after was an eligible child"
+   },
+   {
+    "requirement": "A person falling within section 23C(1)(a) or (b) is referred to as a former relevant child.",
+    "quote": "in this section such a person is referred to as a “ former relevant child ”"
+   },
+   {
+    "requirement": "The local authority is under a duty to take reasonable steps to keep in touch with a former relevant child whether he is within their area or not.",
+    "quote": "duty of the local authority to take reasonable steps— (a) to keep in touch with a former relevant child whether he is within their area or not"
+   },
+   {
+    "requirement": "The local authority is under a duty to take reasonable steps to re-establish contact with a former relevant child if they lose touch with him.",
+    "quote": "if they lose touch with him, to re-establish contact"
+   },
+   {
+    "requirement": "The local authority is under a duty to continue the appointment of a personal adviser for a former relevant child.",
+    "quote": "duty of the local authority— (a) to continue the appointment of a personal adviser for a former relevant child"
+   },
+   {
+    "requirement": "The local authority is under a duty to continue to keep the pathway plan of a former relevant child under regular review.",
+    "quote": "to continue to keep his pathway plan under regular review"
+   },
+   {
+    "requirement": "The local authority is under a duty to give a former relevant child assistance of the kind referred to in section 24B(1), to the extent that his welfare requires it.",
+    "quote": "assistance of the kind referred to in section 24B(1), to the extent that his welfare requires it"
+   },
+   {
+    "requirement": "The local authority is under a duty to give a former relevant child assistance of the kind referred to in section 24B(2), to the extent that his welfare and his educational or training needs require it.",
+    "quote": "assistance of the kind referred to in section 24B(2), to the extent that his welfare and his educational or training needs require it"
+   },
+   {
+    "requirement": "The local authority is under a duty to give a former relevant child other assistance, to the extent that his welfare requires it.",
+    "quote": "other assistance, to the extent that his welfare requires it"
+   },
+   {
+    "requirement": "Assistance given to a former relevant child under section 23C(4)(c) may be given in kind or, in exceptional circumstances, in cash.",
+    "quote": "The assistance given under subsection (4)(c) may be in kind or, in exceptional circumstances, in cash."
+   },
+   {
+    "requirement": "The local authority is under a duty to pay the relevant amount to a former relevant child who pursues higher education in accordance with a pathway plan prepared for that person.",
+    "quote": "duty of the local authority to pay the relevant amount to a former relevant child who pursues higher education in accordance with a pathway plan prepared for that person"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations prescribe the relevant amount, prescribe the meaning of higher education, make provision as to the payment of the relevant amount, and make provision as to the circumstances in which the relevant amount (or any part of it) may be recovered by the local authority from a former relevant child to whom a payment has been made.",
+    "quote": "The Secretary of State may by regulations— (a) prescribe the relevant amount for the purposes of subsection (5A); (b) prescribe the meaning of “higher education” for those purposes; (c) make provision as to the payment of the relevant amount; (d) make provision as to the circumstances in which the relevant amount (or any part of it) may be recovered by the local authority from a former relevant child to whom a payment has been made."
+   },
+   {
+    "requirement": "The local authority's duty to pay the relevant amount for higher education under section 23C(5A) is without prejudice to its duty to provide assistance under section 23C(4)(b).",
+    "quote": "The duty set out in subsection (5A) is without prejudice to that set out in subsection (4)(b)."
+   },
+   {
+    "requirement": "Subject to section 23C(7), the duties of the local authority under subsections (2), (3) and (4) subsist until the former relevant child reaches the age of twenty-one.",
+    "quote": "Subject to subsection (7), the duties set out in subsections (2), (3) and (4) subsist until the former relevant child reaches the age of twenty-one."
+   },
+   {
+    "requirement": "If a former relevant child's pathway plan sets out a programme of education or training extending beyond his twenty-first birthday, the local authority's duty under section 23C(4)(b) continues to subsist for so long as the former relevant child continues to pursue that programme.",
+    "quote": "the duty set out in subsection (4)(b) continues to subsist for so long as the former relevant child continues to pursue that programme"
+   },
+   {
+    "requirement": "If a former relevant child's pathway plan sets out a programme of education or training extending beyond his twenty-first birthday, the local authority's duties under subsections (2) and (3) continue to subsist concurrently with the duty under subsection (4)(b).",
+    "quote": "the duties set out in subsections (2) and (3) continue to subsist concurrently with that duty"
+   },
+   {
+    "requirement": "Any interruption in a former relevant child's pursuance of a programme of education or training must be disregarded for the purposes of section 23C(7)(a) if the local authority is satisfied that he will resume it as soon as is reasonably practicable.",
+    "quote": "there shall be disregarded any interruption in a former relevant child’s pursuance of a programme of education or training if the local authority are satisfied that he will resume it as soon as is reasonably practicable"
+   },
+   {
+    "requirement": "Section 24B(5) applies in relation to a person being given assistance under section 23C(4)(b) or who is in receipt of a payment under section 23C(5A) as it applies in relation to a person to whom section 24B(3) applies.",
+    "quote": "Section 24B(5) applies in relation to a person being given assistance under subsection (4)(b) or who is in receipt of a payment under subsection (5A) as it applies in relation to a person to whom section 24B(3) applies."
+   },
+   {
+    "requirement": "Subsections (7) to (9) of section 17 apply in relation to assistance given under section 23C as they apply in relation to assistance given under section 17.",
+    "quote": "Subsections (7) to (9) of section 17 apply in relation to assistance given under this section as they apply in relation to assistance given under that section."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "age under which a person would be a relevant child for the purposes of section 23A",
+    "value": "eighteen",
+    "quote": "would be one if he were under eighteen"
+   },
+   {
+    "what": "age attained by a looked-after person to qualify as a former relevant child",
+    "value": "eighteen",
+    "quote": "when he attained the age of eighteen"
+   },
+   {
+    "what": "age until which duties under subsections (2), (3) and (4) ordinarily subsist",
+    "value": "twenty-one",
+    "quote": "reaches the age of twenty-one"
+   },
+   {
+    "what": "birthday beyond which a programme of education or training extends to prolong local authority duties",
+    "value": "twenty-first",
+    "quote": "extends beyond his twenty-first birthday"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A local authority has duties under section 23C towards a person who has been a relevant child for the purposes of section 23A (and would be one if he were under eighteen), and in relation to whom the authority was the last responsible authority.",
+   "quote": "a person who has been a relevant child for the purposes of section 23A (and would be one if he were under eighteen), and in relation to whom they were the last responsible authority"
+  },
+  {
+   "requirement": "A local authority has duties under section 23C towards a person who was being looked after by them when he attained the age of eighteen, and immediately before ceasing to be looked after was an eligible child.",
+   "quote": "a person who was being looked after by them when he attained the age of eighteen, and immediately before ceasing to be looked after was an eligible child"
+  },
+  {
+   "requirement": "A person falling within section 23C(1)(a) or (b) is referred to as a former relevant child.",
+   "quote": "in this section such a person is referred to as a “ former relevant child ”"
+  },
+  {
+   "requirement": "The local authority is under a duty to take reasonable steps to keep in touch with a former relevant child whether he is within their area or not.",
+   "quote": "duty of the local authority to take reasonable steps— (a) to keep in touch with a former relevant child whether he is within their area or not"
+  },
+  {
+   "requirement": "The local authority is under a duty to take reasonable steps to re-establish contact with a former relevant child if they lose touch with him.",
+   "quote": "if they lose touch with him, to re-establish contact"
+  },
+  {
+   "requirement": "The local authority is under a duty to continue the appointment of a personal adviser for a former relevant child.",
+   "quote": "duty of the local authority— (a) to continue the appointment of a personal adviser for a former relevant child"
+  },
+  {
+   "requirement": "The local authority is under a duty to continue to keep the pathway plan of a former relevant child under regular review.",
+   "quote": "to continue to keep his pathway plan under regular review"
+  },
+  {
+   "requirement": "The local authority is under a duty to give a former relevant child assistance of the kind referred to in section 24B(1), to the extent that his welfare requires it.",
+   "quote": "assistance of the kind referred to in section 24B(1), to the extent that his welfare requires it"
+  },
+  {
+   "requirement": "The local authority is under a duty to give a former relevant child assistance of the kind referred to in section 24B(2), to the extent that his welfare and his educational or training needs require it.",
+   "quote": "assistance of the kind referred to in section 24B(2), to the extent that his welfare and his educational or training needs require it"
+  },
+  {
+   "requirement": "The local authority is under a duty to give a former relevant child other assistance, to the extent that his welfare requires it.",
+   "quote": "other assistance, to the extent that his welfare requires it"
+  },
+  {
+   "requirement": "Assistance given to a former relevant child under section 23C(4)(c) may be given in kind or, in exceptional circumstances, in cash.",
+   "quote": "The assistance given under subsection (4)(c) may be in kind or, in exceptional circumstances, in cash."
+  },
+  {
+   "requirement": "The local authority is under a duty to pay the relevant amount to a former relevant child who pursues higher education in accordance with a pathway plan prepared for that person.",
+   "quote": "duty of the local authority to pay the relevant amount to a former relevant child who pursues higher education in accordance with a pathway plan prepared for that person"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations prescribe the relevant amount, prescribe the meaning of higher education, make provision as to the payment of the relevant amount, and make provision as to the circumstances in which the relevant amount (or any part of it) may be recovered by the local authority from a former relevant child to whom a payment has been made.",
+   "quote": "The Secretary of State may by regulations— (a) prescribe the relevant amount for the purposes of subsection (5A); (b) prescribe the meaning of “higher education” for those purposes; (c) make provision as to the payment of the relevant amount; (d) make provision as to the circumstances in which the relevant amount (or any part of it) may be recovered by the local authority from a former relevant child to whom a payment has been made."
+  },
+  {
+   "requirement": "The local authority's duty to pay the relevant amount for higher education under section 23C(5A) is without prejudice to its duty to provide assistance under section 23C(4)(b).",
+   "quote": "The duty set out in subsection (5A) is without prejudice to that set out in subsection (4)(b)."
+  },
+  {
+   "requirement": "Subject to section 23C(7), the duties of the local authority under subsections (2), (3) and (4) subsist until the former relevant child reaches the age of twenty-one.",
+   "quote": "Subject to subsection (7), the duties set out in subsections (2), (3) and (4) subsist until the former relevant child reaches the age of twenty-one."
+  },
+  {
+   "requirement": "If a former relevant child's pathway plan sets out a programme of education or training extending beyond his twenty-first birthday, the local authority's duty under section 23C(4)(b) continues to subsist for so long as the former relevant child continues to pursue that programme.",
+   "quote": "the duty set out in subsection (4)(b) continues to subsist for so long as the former relevant child continues to pursue that programme"
+  },
+  {
+   "requirement": "If a former relevant child's pathway plan sets out a programme of education or training extending beyond his twenty-first birthday, the local authority's duties under subsections (2) and (3) continue to subsist concurrently with the duty under subsection (4)(b).",
+   "quote": "the duties set out in subsections (2) and (3) continue to subsist concurrently with that duty"
+  },
+  {
+   "requirement": "Any interruption in a former relevant child's pursuance of a programme of education or training must be disregarded for the purposes of section 23C(7)(a) if the local authority is satisfied that he will resume it as soon as is reasonably practicable.",
+   "quote": "there shall be disregarded any interruption in a former relevant child’s pursuance of a programme of education or training if the local authority are satisfied that he will resume it as soon as is reasonably practicable"
+  },
+  {
+   "requirement": "Section 24B(5) applies in relation to a person being given assistance under section 23C(4)(b) or who is in receipt of a payment under section 23C(5A) as it applies in relation to a person to whom section 24B(3) applies.",
+   "quote": "Section 24B(5) applies in relation to a person being given assistance under subsection (4)(b) or who is in receipt of a payment under subsection (5A) as it applies in relation to a person to whom section 24B(3) applies."
+  },
+  {
+   "requirement": "Subsections (7) to (9) of section 17 apply in relation to assistance given under section 23C as they apply in relation to assistance given under section 17.",
+   "quote": "Subsections (7) to (9) of section 17 apply in relation to assistance given under this section as they apply in relation to assistance given under that section."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 20,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

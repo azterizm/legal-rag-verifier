@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2021/17/s62@current",
+ "section": "uk/ukpga/2021/17/s62",
+ "version": "current",
+ "source_sha256": "9aaa8aed78430c4a963fc54554e56b8f6481c11b68612b1eba34ce5a3e1daa9f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Chapter 1 of Part 2 of the Youth Justice and Criminal Evidence Act 1999 is amended in relation to special measures directions in criminal proceedings for vulnerable and intimidated witnesses.",
+    "quote": "Chapter 1 of Part 2 of the Youth Justice and Criminal Evidence Act 1999 (giving of evidence or information for purposes of criminal proceedings: special measures directions in case of vulnerable and intimidated witnesses) is amended as follows."
+   },
+   {
+    "requirement": "In section 17(4) of the Youth Justice and Criminal Evidence Act 1999, the reference to a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015 is replaced by a reference to an offence listed in subsection (4A).",
+    "quote": "in subsection (4), for “a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015” substitute “ an offence listed in subsection (4A) ”"
+   },
+   {
+    "requirement": "The offences specified under inserted section 17(4A) of the Youth Justice and Criminal Evidence Act 1999 include a sexual offence.",
+    "quote": "aa sexual offence;"
+   },
+   {
+    "requirement": "The offences specified under inserted section 17(4A) of the Youth Justice and Criminal Evidence Act 1999 include an offence under section 1 or 2 of the Modern Slavery Act 2015.",
+    "quote": "ban offence under section 1 or 2 of the Modern Slavery Act 2015;"
+   },
+   {
+    "requirement": "The offences specified under inserted section 17(4A) of the Youth Justice and Criminal Evidence Act 1999 include any other offence where the accused's behaviour is alleged to have amounted to domestic abuse within the meaning of section 1 of the Domestic Abuse Act 2021.",
+    "quote": "cany other offence where it is alleged that the behaviour of the accused amounted to domestic abuse within the meaning of the Domestic Abuse Act 2021 (see section 1 of that Act)."
+   },
+   {
+    "requirement": "In section 25(4)(a) of the Youth Justice and Criminal Evidence Act 1999 regarding evidence given in private, the reference to a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015 is replaced by a reference to an offence listed in section 17(4A).",
+    "quote": "In section 25(4)(a) (evidence given in private), for “a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015” substitute “ an offence listed in section 17(4A) ”."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Chapter 1 of Part 2 of the Youth Justice and Criminal Evidence Act 1999 is amended in relation to special measures directions in criminal proceedings for vulnerable and intimidated witnesses.",
+   "quote": "Chapter 1 of Part 2 of the Youth Justice and Criminal Evidence Act 1999 (giving of evidence or information for purposes of criminal proceedings: special measures directions in case of vulnerable and intimidated witnesses) is amended as follows."
+  },
+  {
+   "requirement": "In section 17(4) of the Youth Justice and Criminal Evidence Act 1999, the reference to a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015 is replaced by a reference to an offence listed in subsection (4A).",
+   "quote": "in subsection (4), for “a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015” substitute “ an offence listed in subsection (4A) ”"
+  },
+  {
+   "requirement": "The offences specified under inserted section 17(4A) of the Youth Justice and Criminal Evidence Act 1999 include a sexual offence.",
+   "quote": "aa sexual offence;"
+  },
+  {
+   "requirement": "The offences specified under inserted section 17(4A) of the Youth Justice and Criminal Evidence Act 1999 include an offence under section 1 or 2 of the Modern Slavery Act 2015.",
+   "quote": "ban offence under section 1 or 2 of the Modern Slavery Act 2015;"
+  },
+  {
+   "requirement": "The offences specified under inserted section 17(4A) of the Youth Justice and Criminal Evidence Act 1999 include any other offence where the accused's behaviour is alleged to have amounted to domestic abuse within the meaning of section 1 of the Domestic Abuse Act 2021.",
+   "quote": "cany other offence where it is alleged that the behaviour of the accused amounted to domestic abuse within the meaning of the Domestic Abuse Act 2021 (see section 1 of that Act)."
+  },
+  {
+   "requirement": "In section 25(4)(a) of the Youth Justice and Criminal Evidence Act 1999 regarding evidence given in private, the reference to a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015 is replaced by a reference to an offence listed in section 17(4A).",
+   "quote": "In section 25(4)(a) (evidence given in private), for “a sexual offence or an offence under section 1 or 2 of the Modern Slavery Act 2015” substitute “ an offence listed in section 17(4A) ”."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

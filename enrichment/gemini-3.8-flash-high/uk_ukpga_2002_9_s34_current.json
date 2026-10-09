@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2002/9/s34@current",
+ "section": "uk/ukpga/2002/9/s34",
+ "version": "current",
+ "source_sha256": "edf0789a6b4aa8ace21357b4589ccf4fc0575d5dee5c9fb2f20465d3e4c9fb80",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who claims to be entitled to the benefit of an interest affecting a registered estate or charge may apply to the registrar for the entry of a notice in the register in respect of that interest, provided the interest is not excluded by section 33.",
+    "quote": "apply to the registrar for the entry in the register of a notice in respect of the interest"
+   },
+   {
+    "requirement": "Subject to rules, an application for the entry of a notice may be made for either an agreed notice or a unilateral notice.",
+    "quote": "Subject to rules, an application under this section may be for— (a) an agreed notice, or (b) a unilateral notice."
+   },
+   {
+    "requirement": "The registrar may only approve an application for an agreed notice if the applicant is the relevant registered proprietor or a person entitled to be registered as such proprietor, if the relevant registered proprietor or a person entitled to be registered as such proprietor consents to the entry, or if the registrar is satisfied as to the validity of the applicant's claim.",
+    "quote": "The registrar may only approve an application for an agreed notice if— (a) the applicant is the relevant registered proprietor, or a person entitled to be registered as such proprietor, (b) the relevant registered proprietor, or a person entitled to be registered as such proprietor, consents to the entry of the notice, or (c) the registrar is satisfied as to the validity of the applicant’s claim."
+   },
+   {
+    "requirement": "For the purposes of approving an application for an agreed notice, references to the relevant registered proprietor mean the proprietor of the registered estate or charge affected by the interest to which the application relates.",
+    "quote": "references to the relevant registered proprietor are to the proprietor of the registered estate or charge affected by the interest to which the application relates."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person who claims to be entitled to the benefit of an interest affecting a registered estate or charge may apply to the registrar for the entry of a notice in the register in respect of that interest, provided the interest is not excluded by section 33.",
+   "quote": "apply to the registrar for the entry in the register of a notice in respect of the interest"
+  },
+  {
+   "requirement": "Subject to rules, an application for the entry of a notice may be made for either an agreed notice or a unilateral notice.",
+   "quote": "Subject to rules, an application under this section may be for— (a) an agreed notice, or (b) a unilateral notice."
+  },
+  {
+   "requirement": "The registrar may only approve an application for an agreed notice if the applicant is the relevant registered proprietor or a person entitled to be registered as such proprietor, if the relevant registered proprietor or a person entitled to be registered as such proprietor consents to the entry, or if the registrar is satisfied as to the validity of the applicant's claim.",
+   "quote": "The registrar may only approve an application for an agreed notice if— (a) the applicant is the relevant registered proprietor, or a person entitled to be registered as such proprietor, (b) the relevant registered proprietor, or a person entitled to be registered as such proprietor, consents to the entry of the notice, or (c) the registrar is satisfied as to the validity of the applicant’s claim."
+  },
+  {
+   "requirement": "For the purposes of approving an application for an agreed notice, references to the relevant registered proprietor mean the proprietor of the registered estate or charge affected by the interest to which the application relates.",
+   "quote": "references to the relevant registered proprietor are to the proprietor of the registered estate or charge affected by the interest to which the application relates."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

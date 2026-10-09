@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1986/64/s7@current",
+ "section": "uk/ukpga/1986/64/s7",
+ "version": "current",
+ "source_sha256": "2d1528a8e01f9124ca26b345f829ea1fe5b7230ae75a39a70559bdea5696f668",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A prosecution for an offence of riot or incitement to riot may not be instituted unless it is instituted by or with the consent of the Director of Public Prosecutions.",
+    "quote": "No prosecution for an offence of riot or incitement to riot may be instituted except by or with the consent of the Director of Public Prosecutions."
+   },
+   {
+    "requirement": "For the purposes of rules against charging more than one offence in the same count or information, each of sections 1 to 5 creates one offence.",
+    "quote": "each of sections 1 to 5 creates one offence."
+   },
+   {
+    "requirement": "On the trial on indictment of a person charged with violent disorder or affray, if the jury finds that person not guilty of the offence charged, the jury may find that person guilty of an offence under section 4 without prejudice to section 6(3) of the Criminal Law Act 1967.",
+    "quote": "If on the trial on indictment of a person charged with violent disorder or affray the jury find him not guilty of the offence charged, they may (without prejudice to section 6(3) of the Criminal Law Act 1967) find him guilty of an offence under section 4."
+   },
+   {
+    "requirement": "The Crown Court has the same powers and duties regarding a person convicted before it of an offence under section 4 by virtue of section 7(3) as a magistrates' court would have on convicting that person of the offence.",
+    "quote": "The Crown Court has the same powers and duties in relation to a person who is by virtue of subsection (3) convicted before it of an offence under section 4 as a magistrates’ court would have on convicting him of the offence."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the threshold number of offences prohibited from being charged in the same count or information",
+    "value": "one",
+    "quote": "charging more than one offence in the same count or information"
+   },
+   {
+    "what": "the number of offences created by each of sections 1 to 5 for the purpose of rules against multi-offence charging",
+    "value": "one",
+    "quote": "each of sections 1 to 5 creates one offence"
+   },
+   {
+    "what": "the calendar year of the cited Criminal Law Act",
+    "value": "1967",
+    "quote": "Criminal Law Act 1967"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A prosecution for an offence of riot or incitement to riot may not be instituted unless it is instituted by or with the consent of the Director of Public Prosecutions.",
+   "quote": "No prosecution for an offence of riot or incitement to riot may be instituted except by or with the consent of the Director of Public Prosecutions."
+  },
+  {
+   "requirement": "For the purposes of rules against charging more than one offence in the same count or information, each of sections 1 to 5 creates one offence.",
+   "quote": "each of sections 1 to 5 creates one offence."
+  },
+  {
+   "requirement": "On the trial on indictment of a person charged with violent disorder or affray, if the jury finds that person not guilty of the offence charged, the jury may find that person guilty of an offence under section 4 without prejudice to section 6(3) of the Criminal Law Act 1967.",
+   "quote": "If on the trial on indictment of a person charged with violent disorder or affray the jury find him not guilty of the offence charged, they may (without prejudice to section 6(3) of the Criminal Law Act 1967) find him guilty of an offence under section 4."
+  },
+  {
+   "requirement": "The Crown Court has the same powers and duties regarding a person convicted before it of an offence under section 4 by virtue of section 7(3) as a magistrates' court would have on convicting that person of the offence.",
+   "quote": "The Crown Court has the same powers and duties in relation to a person who is by virtue of subsection (3) convicted before it of an offence under section 4 as a magistrates’ court would have on convicting him of the offence."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

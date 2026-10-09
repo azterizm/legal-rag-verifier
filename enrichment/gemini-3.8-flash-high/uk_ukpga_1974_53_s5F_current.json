@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1974/53/s5F@current",
+ "section": "uk/ukpga/1974/53/s5F",
+ "version": "current",
+ "source_sha256": "200cb9d943df0db965990a9dbd811859bd7aea8dcbae7d1d3b1f5b38ef8c01fa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The rules governing the disclosure period in subsection (2) apply where a restriction order under section 59 of the Criminal Procedure (Scotland) Act 1995 is made in respect of a person further to the making of a compulsion order mentioned in subsection (1) of that section.",
+    "quote": "further to the making of a compulsion order as mentioned in subsection (1) of section 59 of the Criminal Procedure (Scotland) Act 1995 in relation to a person, a restriction order under that section is made in respect of the person"
+   },
+   {
+    "requirement": "The disclosure period applicable to a restriction order under section 59 begins with the date of the conviction in respect of which the compulsion order was made and ends on the date the restriction order ceases or ceased to have effect.",
+    "quote": "The disclosure period applicable to the restriction order is a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect."
+   },
+   {
+    "requirement": "The rules governing the disclosure period in subsection (4) apply where, by virtue of section 57(1)(b) of the Criminal Procedure (Scotland) Act 1995, a compulsion order authorising hospital detention is made under subsection (2)(a) and an additional restriction order is made under subsection (2)(b) in relation to a person.",
+    "quote": "by virtue of subsection (1)(b) of section 57 of the Criminal Procedure (Scotland) Act 1995— (a) a compulsion order is made under subsection (2)(a) of that section in relation to a person authorising the person's detention in a hospital, and (b) a restriction order under subsection (2)(b) of that section is, in addition to the compulsion order, made in respect of the person"
+   },
+   {
+    "requirement": "The disclosure period applicable to a restriction order made under section 57(2)(b) begins with the date of the conviction in respect of which the compulsion order was made and ends on the date the restriction order ceases or ceased to have effect.",
+    "quote": "The disclosure period applicable to the restriction order is a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect."
+   },
+   {
+    "requirement": "Where an order listed in subsection (6) was made in relation to a person in respect of a conviction, the disclosure period applicable to the sentence begins with the date of the conviction and ends on the date a relevant sentence in respect of the conviction is imposed on that person.",
+    "quote": "the disclosure period applicable to the sentence is a period beginning with the date of the conviction and ending on the date a relevant sentence in respect of the conviction is imposed on the person."
+   },
+   {
+    "requirement": "An assessment order under section 52D or 52E of the Criminal Procedure (Scotland) Act 1995 is an order to which the disclosure period rule in subsection (5) applies.",
+    "quote": "an assessment order under section 52D or 52E of the Criminal Procedure (Scotland) Act 1995"
+   },
+   {
+    "requirement": "A treatment order under section 52M or 52N of the Criminal Procedure (Scotland) Act 1995 is an order to which the disclosure period rule in subsection (5) applies.",
+    "quote": "a treatment order under section 52M or 52N of that Act"
+   },
+   {
+    "requirement": "An interim compulsion order under section 53 of the Criminal Procedure (Scotland) Act 1995, or under section 57(2)(bb) if arising by virtue of section 57(1)(b) of that Act, is an order to which the disclosure period rule in subsection (5) applies.",
+    "quote": "an interim compulsion order— (i) under section 53 of that Act, or (ii) if arising by virtue of subsection (1)(b) of section 57 of that Act, under subsection (2)(bb) of that section."
+   },
+   {
+    "requirement": "A relevant sentence for the purposes of subsection (5) means any sentence other than an order listed in subsection (6) or, where applicable, a further such order.",
+    "quote": "a “relevant sentence” is any sentence other than an order mentioned in subsection (6) (or, where applicable, a further such order)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "disclosure period applicable to a restriction order under section 59",
+    "value": "a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect",
+    "quote": "a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect"
+   },
+   {
+    "what": "disclosure period applicable to a restriction order under section 57(2)(b)",
+    "value": "a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect",
+    "quote": "a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect"
+   },
+   {
+    "what": "disclosure period applicable to a sentence where an order listed in subsection (6) was made",
+    "value": "a period beginning with the date of the conviction and ending on the date a relevant sentence in respect of the conviction is imposed on the person",
+    "quote": "a period beginning with the date of the conviction and ending on the date a relevant sentence in respect of the conviction is imposed on the person"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The rules governing the disclosure period in subsection (2) apply where a restriction order under section 59 of the Criminal Procedure (Scotland) Act 1995 is made in respect of a person further to the making of a compulsion order mentioned in subsection (1) of that section.",
+   "quote": "further to the making of a compulsion order as mentioned in subsection (1) of section 59 of the Criminal Procedure (Scotland) Act 1995 in relation to a person, a restriction order under that section is made in respect of the person"
+  },
+  {
+   "requirement": "The disclosure period applicable to a restriction order under section 59 begins with the date of the conviction in respect of which the compulsion order was made and ends on the date the restriction order ceases or ceased to have effect.",
+   "quote": "The disclosure period applicable to the restriction order is a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect."
+  },
+  {
+   "requirement": "The rules governing the disclosure period in subsection (4) apply where, by virtue of section 57(1)(b) of the Criminal Procedure (Scotland) Act 1995, a compulsion order authorising hospital detention is made under subsection (2)(a) and an additional restriction order is made under subsection (2)(b) in relation to a person.",
+   "quote": "by virtue of subsection (1)(b) of section 57 of the Criminal Procedure (Scotland) Act 1995— (a) a compulsion order is made under subsection (2)(a) of that section in relation to a person authorising the person's detention in a hospital, and (b) a restriction order under subsection (2)(b) of that section is, in addition to the compulsion order, made in respect of the person"
+  },
+  {
+   "requirement": "The disclosure period applicable to a restriction order made under section 57(2)(b) begins with the date of the conviction in respect of which the compulsion order was made and ends on the date the restriction order ceases or ceased to have effect.",
+   "quote": "The disclosure period applicable to the restriction order is a period beginning with the date of the person's conviction in respect of which the compulsion order was made and ending on the date the restriction order ceases or ceased to have effect."
+  },
+  {
+   "requirement": "Where an order listed in subsection (6) was made in relation to a person in respect of a conviction, the disclosure period applicable to the sentence begins with the date of the conviction and ends on the date a relevant sentence in respect of the conviction is imposed on that person.",
+   "quote": "the disclosure period applicable to the sentence is a period beginning with the date of the conviction and ending on the date a relevant sentence in respect of the conviction is imposed on the person."
+  },
+  {
+   "requirement": "An assessment order under section 52D or 52E of the Criminal Procedure (Scotland) Act 1995 is an order to which the disclosure period rule in subsection (5) applies.",
+   "quote": "an assessment order under section 52D or 52E of the Criminal Procedure (Scotland) Act 1995"
+  },
+  {
+   "requirement": "A treatment order under section 52M or 52N of the Criminal Procedure (Scotland) Act 1995 is an order to which the disclosure period rule in subsection (5) applies.",
+   "quote": "a treatment order under section 52M or 52N of that Act"
+  },
+  {
+   "requirement": "An interim compulsion order under section 53 of the Criminal Procedure (Scotland) Act 1995, or under section 57(2)(bb) if arising by virtue of section 57(1)(b) of that Act, is an order to which the disclosure period rule in subsection (5) applies.",
+   "quote": "an interim compulsion order— (i) under section 53 of that Act, or (ii) if arising by virtue of subsection (1)(b) of section 57 of that Act, under subsection (2)(bb) of that section."
+  },
+  {
+   "requirement": "A relevant sentence for the purposes of subsection (5) means any sentence other than an order listed in subsection (6) or, where applicable, a further such order.",
+   "quote": "a “relevant sentence” is any sentence other than an order mentioned in subsection (6) (or, where applicable, a further such order)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

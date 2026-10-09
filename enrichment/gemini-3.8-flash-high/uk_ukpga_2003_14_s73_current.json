@@ -1,0 +1,85 @@
+{
+ "key": "uk/ukpga/2003/14/s73@current",
+ "section": "uk/ukpga/2003/14/s73",
+ "version": "current",
+ "source_sha256": "f52eda6e92cabe2ead5f8f377afd11d6371d5a163c46327e954b0ad17accc2f8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 73 applies where arrangements are entered into between an individual or entity and a financial institution under which the financial institution purchases a major interest in land (the first transaction), sells that interest to that individual or entity (the second transaction), and that individual or entity grants the financial institution a legal mortgage over that interest.",
+    "quote": "arrangements are entered into between a person and a financial institution under which— (a) the institution— (i) purchases a major interest in land (“the first transaction”), and (ii) sells that interest to the person (“the second transaction”), and (b) the person grants the institution a legal mortgage over that interest."
+   },
+   {
+    "requirement": "The first transaction is exempt from charge if the vendor is either the individual or entity entering into the arrangements with the financial institution, or another financial institution by whom the interest was acquired under other arrangements of the kind mentioned in section 71A(1) entered into between it and that individual or entity.",
+    "quote": "The first transaction is exempt from charge if the vendor is— (a) the person concerned, or (b) another financial institution by whom the interest was acquired under other arrangements of the kind mentioned in section 71A(1)... entered into between it and the person."
+   },
+   {
+    "requirement": "The second transaction is exempt from charge if the financial institution complies with the provisions of this Part relating to the first transaction, including paying any tax chargeable on a chargeable consideration that is not less than the market value of the interest and, where a lease is granted at a rent, the rent.",
+    "quote": "The second transaction is exempt from charge if the financial institution complies with the provisions of this Part relating to the first transaction (including the payment of any tax chargeable on a chargeable consideration that is not less than the market value of the interest and, in the case of the grant of a lease at a rent, the rent.)."
+   },
+   {
+    "requirement": "Section 73 does not apply if the individual or entity enters into the arrangements as a trustee and any beneficiary of the trust is not a person.",
+    "quote": "This section does not apply if— (a) the person enters into the arrangements as trustee and any beneficiary of the trust is not a person"
+   },
+   {
+    "requirement": "Section 73 does not apply if the individual or entity enters into the arrangements as a partner and any of the other partners is not a person.",
+    "quote": "This section does not apply if— ... (b) the person enters into the arrangements as partner and any of the other partners is not a person."
+   },
+   {
+    "requirement": "In relation to land in England, 'legal mortgage' means a legal mortgage as defined in section 205(1)(xvi) of the Law of Property Act 1925 (c. 20).",
+    "quote": "“legal mortgage”— (i) in relation to land in England ..., means a legal mortgage as defined in section 205(1)(xvi) of the Law of Property Act 1925 (c. 20)"
+   },
+   {
+    "requirement": "In relation to land in Northern Ireland, 'legal mortgage' means a mortgage by conveyance of a legal estate or by demise or sub-demise or a charge by way of legal mortgage.",
+    "quote": "“legal mortgage”— ... (iii) in relation to land in Northern Ireland, means a mortgage by conveyance of a legal estate or by demise or sub-demise or a charge by way of legal mortgage."
+   },
+   {
+    "requirement": "References in section 73 to an individual or entity shall be read, in relation to times after the death of the individual or entity concerned, as references to their personal representatives.",
+    "quote": "References in this section to a person shall be read, in relation to times after the death of the person concerned, as references to his personal representatives."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum chargeable consideration for the first transaction required for the second transaction exemption",
+    "value": "market value of the interest",
+    "quote": "chargeable consideration that is not less than the market value of the interest"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 73 applies where arrangements are entered into between an individual or entity and a financial institution under which the financial institution purchases a major interest in land (the first transaction), sells that interest to that individual or entity (the second transaction), and that individual or entity grants the financial institution a legal mortgage over that interest.",
+   "quote": "arrangements are entered into between a person and a financial institution under which— (a) the institution— (i) purchases a major interest in land (“the first transaction”), and (ii) sells that interest to the person (“the second transaction”), and (b) the person grants the institution a legal mortgage over that interest."
+  },
+  {
+   "requirement": "The first transaction is exempt from charge if the vendor is either the individual or entity entering into the arrangements with the financial institution, or another financial institution by whom the interest was acquired under other arrangements of the kind mentioned in section 71A(1) entered into between it and that individual or entity.",
+   "quote": "The first transaction is exempt from charge if the vendor is— (a) the person concerned, or (b) another financial institution by whom the interest was acquired under other arrangements of the kind mentioned in section 71A(1)... entered into between it and the person."
+  },
+  {
+   "requirement": "The second transaction is exempt from charge if the financial institution complies with the provisions of this Part relating to the first transaction, including paying any tax chargeable on a chargeable consideration that is not less than the market value of the interest and, where a lease is granted at a rent, the rent.",
+   "quote": "The second transaction is exempt from charge if the financial institution complies with the provisions of this Part relating to the first transaction (including the payment of any tax chargeable on a chargeable consideration that is not less than the market value of the interest and, in the case of the grant of a lease at a rent, the rent.)."
+  },
+  {
+   "requirement": "Section 73 does not apply if the individual or entity enters into the arrangements as a trustee and any beneficiary of the trust is not a person.",
+   "quote": "This section does not apply if— (a) the person enters into the arrangements as trustee and any beneficiary of the trust is not a person"
+  },
+  {
+   "requirement": "In relation to land in England, 'legal mortgage' means a legal mortgage as defined in section 205(1)(xvi) of the Law of Property Act 1925 (c. 20).",
+   "quote": "“legal mortgage”— (i) in relation to land in England ..., means a legal mortgage as defined in section 205(1)(xvi) of the Law of Property Act 1925 (c. 20)"
+  },
+  {
+   "requirement": "References in section 73 to an individual or entity shall be read, in relation to times after the death of the individual or entity concerned, as references to their personal representatives.",
+   "quote": "References in this section to a person shall be read, in relation to times after the death of the person concerned, as references to his personal representatives."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

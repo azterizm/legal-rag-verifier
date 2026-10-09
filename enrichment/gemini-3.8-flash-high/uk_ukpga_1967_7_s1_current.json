@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1967/7/s1@current",
+ "section": "uk/ukpga/1967/7/s1",
+ "version": "current",
+ "source_sha256": "3f659d8b4ed3d0d7064a54e6f5cb511fea0ab6af9ab7774cb0c792465acd7ac6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The statutory right applies where a person has entered into a contract after a misrepresentation has been made to that person.",
+    "quote": "Where a person has entered into a contract after a misrepresentation has been made to him"
+   },
+   {
+    "requirement": "The circumstances must be that the misrepresentation has become a term of the contract, the contract has been performed, or both.",
+    "quote": "(a) the misrepresentation has become a term of the contract; or (b) the contract has been performed; or both"
+   },
+   {
+    "requirement": "A person who entered into the contract must otherwise be entitled to rescind the contract without alleging fraud.",
+    "quote": "if otherwise he would be entitled to rescind the contract without alleging fraud"
+   },
+   {
+    "requirement": "A person who entered into the contract after a misrepresentation is entitled to rescind the contract, subject to the provisions of the Misrepresentation Act 1967, notwithstanding that the misrepresentation became a term of the contract or that the contract has been performed.",
+    "quote": "he shall be so entitled, subject to the provisions of this Act, notwithstanding the matters mentioned in paragraphs (a) and (b) of this section"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The statutory right applies where a person has entered into a contract after a misrepresentation has been made to that person.",
+   "quote": "Where a person has entered into a contract after a misrepresentation has been made to him"
+  },
+  {
+   "requirement": "The circumstances must be that the misrepresentation has become a term of the contract, the contract has been performed, or both.",
+   "quote": "(a) the misrepresentation has become a term of the contract; or (b) the contract has been performed; or both"
+  },
+  {
+   "requirement": "A person who entered into the contract must otherwise be entitled to rescind the contract without alleging fraud.",
+   "quote": "if otherwise he would be entitled to rescind the contract without alleging fraud"
+  },
+  {
+   "requirement": "A person who entered into the contract after a misrepresentation is entitled to rescind the contract, subject to the provisions of the Misrepresentation Act 1967, notwithstanding that the misrepresentation became a term of the contract or that the contract has been performed.",
+   "quote": "he shall be so entitled, subject to the provisions of this Act, notwithstanding the matters mentioned in paragraphs (a) and (b) of this section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

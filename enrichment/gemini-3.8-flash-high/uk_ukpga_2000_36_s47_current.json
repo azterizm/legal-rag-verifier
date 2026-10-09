@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/2000/36/s47@current",
+ "section": "uk/ukpga/2000/36/s47",
+ "version": "current",
+ "source_sha256": "07057fcce65fd454b23a60520b9b8bfdb6e1f9d2fe9b700f67e69d209c681dfe",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Commissioner has a duty to promote the following of good practice by public authorities.",
+    "quote": "It shall be the duty of the Commissioner to promote the following of good practice by public authorities"
+   },
+   {
+    "requirement": "The Commissioner must perform his functions under the Freedom of Information Act 2000 in a manner that promotes the observance by public authorities of the requirements of the Act and the provisions of the codes of practice under sections 45 and 46.",
+    "quote": "so to perform his functions under this Act as to promote the observance by public authorities of— (a) the requirements of this Act, and (b) the provisions of the codes of practice under sections 45 and 46"
+   },
+   {
+    "requirement": "The Commissioner must arrange for the dissemination of information to the public about the operation of the Freedom of Information Act 2000, good practice, and other matters within the scope of his functions under the Act in such form and manner as he considers appropriate and expedient.",
+    "quote": "The Commissioner shall arrange for the dissemination in such form and manner as he considers appropriate of such information as it may appear to him expedient to give to the public"
+   },
+   {
+    "requirement": "The Commissioner is permitted to give advice to any person regarding the operation of the Freedom of Information Act 2000, good practice, or other matters within the scope of his functions under the Act.",
+    "quote": "may give advice to any person as to any of those matters"
+   },
+   {
+    "requirement": "The Commissioner may assess whether a public authority is following good practice only with the consent of that public authority.",
+    "quote": "The Commissioner may, with the consent of any public authority, assess whether that authority is following good practice"
+   },
+   {
+    "requirement": "The Commissioner may charge sums determined by the Commissioner for any relevant services provided under section 47.",
+    "quote": "The Commissioner may charge such sums as he may ... determine for any relevant services provided by the Commissioner under this section"
+   },
+   {
+    "requirement": "Relevant services for which the Commissioner may charge include providing more than one copy of any published material to the same person where each copy is provided on paper, a portable disk storing the material electronically, or a similar medium.",
+    "quote": "the provision to the same person of more than one copy of any published material where each of the copies of the material is either provided on paper, a portable disk which stores the material electronically or a similar medium"
+   },
+   {
+    "requirement": "Relevant services for which the Commissioner may charge include the provision of training.",
+    "quote": "the provision of training"
+   },
+   {
+    "requirement": "Relevant services for which the Commissioner may charge include the provision of conferences.",
+    "quote": "the provision of conferences"
+   },
+   {
+    "requirement": "The Minister for the Cabinet Office may amend the statutory definition of relevant services by order.",
+    "quote": "The Minister for the Cabinet Office may by order amend subsection (4A)"
+   },
+   {
+    "requirement": "An order amending the definition of relevant services may include such transitional or saving provision as the Minister for the Cabinet Office considers appropriate.",
+    "quote": "An order under subsection (4B) may include such transitional or saving provision as the Minister for the Cabinet Office considers appropriate"
+   },
+   {
+    "requirement": "The Minister for the Cabinet Office must consult the Commissioner before making an order amending the definition of relevant services.",
+    "quote": "The Minister for the Cabinet Office must consult the Commissioner before making an order under subsection (4B)"
+   },
+   {
+    "requirement": "The Commissioner must consult the Keeper of Public Records from time to time as considered appropriate regarding the promotion of observance by public authorities of the section 46 code of practice for records that are public records under the Public Records Act 1958.",
+    "quote": "The Commissioner shall from time to time as he considers appropriate— (a) consult the Keeper of Public Records about the promotion by the Commissioner of the observance by public authorities of the provisions of the code of practice under section 46 in relation to records which are public records for the purposes of the Public Records Act 1958"
+   },
+   {
+    "requirement": "The Commissioner must consult the Deputy Keeper of the Records of Northern Ireland from time to time as considered appropriate regarding the promotion of observance by public authorities of the section 46 code of practice for records that are public records under the Public Records Act (Northern Ireland) 1923.",
+    "quote": "consult the Deputy Keeper of the Records of Northern Ireland about the promotion by the Commissioner of the observance by public authorities of those provisions in relation to records which are public records for the purposes of the Public Records Act (Northern Ireland) 1923"
+   },
+   {
+    "requirement": "Good practice in relation to a public authority is defined as practice in discharging its functions under the Freedom of Information Act 2000 that appears desirable to the Commissioner, which includes compliance with statutory requirements and the codes of practice under sections 45 and 46 but is not limited to such compliance.",
+    "quote": "“good practice”, in relation to a public authority, means such practice in the discharge of its functions under this Act as appears to the Commissioner to be desirable, and includes (but is not limited to) compliance with the requirements of this Act and the provisions of the codes of practice under sections 45 and 46"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of copies of published material provided to the same person required to constitute relevant services",
+    "value": "more than one",
+    "quote": "more than one copy of any published material"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Commissioner has a duty to promote the following of good practice by public authorities.",
+   "quote": "It shall be the duty of the Commissioner to promote the following of good practice by public authorities"
+  },
+  {
+   "requirement": "The Commissioner must perform his functions under the Freedom of Information Act 2000 in a manner that promotes the observance by public authorities of the requirements of the Act and the provisions of the codes of practice under sections 45 and 46.",
+   "quote": "so to perform his functions under this Act as to promote the observance by public authorities of— (a) the requirements of this Act, and (b) the provisions of the codes of practice under sections 45 and 46"
+  },
+  {
+   "requirement": "The Commissioner must arrange for the dissemination of information to the public about the operation of the Freedom of Information Act 2000, good practice, and other matters within the scope of his functions under the Act in such form and manner as he considers appropriate and expedient.",
+   "quote": "The Commissioner shall arrange for the dissemination in such form and manner as he considers appropriate of such information as it may appear to him expedient to give to the public"
+  },
+  {
+   "requirement": "The Commissioner is permitted to give advice to any person regarding the operation of the Freedom of Information Act 2000, good practice, or other matters within the scope of his functions under the Act.",
+   "quote": "may give advice to any person as to any of those matters"
+  },
+  {
+   "requirement": "The Commissioner may assess whether a public authority is following good practice only with the consent of that public authority.",
+   "quote": "The Commissioner may, with the consent of any public authority, assess whether that authority is following good practice"
+  },
+  {
+   "requirement": "The Commissioner may charge sums determined by the Commissioner for any relevant services provided under section 47.",
+   "quote": "The Commissioner may charge such sums as he may ... determine for any relevant services provided by the Commissioner under this section"
+  },
+  {
+   "requirement": "Relevant services for which the Commissioner may charge include providing more than one copy of any published material to the same person where each copy is provided on paper, a portable disk storing the material electronically, or a similar medium.",
+   "quote": "the provision to the same person of more than one copy of any published material where each of the copies of the material is either provided on paper, a portable disk which stores the material electronically or a similar medium"
+  },
+  {
+   "requirement": "Relevant services for which the Commissioner may charge include the provision of training.",
+   "quote": "the provision of training"
+  },
+  {
+   "requirement": "Relevant services for which the Commissioner may charge include the provision of conferences.",
+   "quote": "the provision of conferences"
+  },
+  {
+   "requirement": "The Minister for the Cabinet Office may amend the statutory definition of relevant services by order.",
+   "quote": "The Minister for the Cabinet Office may by order amend subsection (4A)"
+  },
+  {
+   "requirement": "An order amending the definition of relevant services may include such transitional or saving provision as the Minister for the Cabinet Office considers appropriate.",
+   "quote": "An order under subsection (4B) may include such transitional or saving provision as the Minister for the Cabinet Office considers appropriate"
+  },
+  {
+   "requirement": "The Minister for the Cabinet Office must consult the Commissioner before making an order amending the definition of relevant services.",
+   "quote": "The Minister for the Cabinet Office must consult the Commissioner before making an order under subsection (4B)"
+  },
+  {
+   "requirement": "The Commissioner must consult the Keeper of Public Records from time to time as considered appropriate regarding the promotion of observance by public authorities of the section 46 code of practice for records that are public records under the Public Records Act 1958.",
+   "quote": "The Commissioner shall from time to time as he considers appropriate— (a) consult the Keeper of Public Records about the promotion by the Commissioner of the observance by public authorities of the provisions of the code of practice under section 46 in relation to records which are public records for the purposes of the Public Records Act 1958"
+  },
+  {
+   "requirement": "The Commissioner must consult the Deputy Keeper of the Records of Northern Ireland from time to time as considered appropriate regarding the promotion of observance by public authorities of the section 46 code of practice for records that are public records under the Public Records Act (Northern Ireland) 1923.",
+   "quote": "consult the Deputy Keeper of the Records of Northern Ireland about the promotion by the Commissioner of the observance by public authorities of those provisions in relation to records which are public records for the purposes of the Public Records Act (Northern Ireland) 1923"
+  },
+  {
+   "requirement": "Good practice in relation to a public authority is defined as practice in discharging its functions under the Freedom of Information Act 2000 that appears desirable to the Commissioner, which includes compliance with statutory requirements and the codes of practice under sections 45 and 46 but is not limited to such compliance.",
+   "quote": "“good practice”, in relation to a public authority, means such practice in the discharge of its functions under this Act as appears to the Commissioner to be desirable, and includes (but is not limited to) compliance with the requirements of this Act and the provisions of the codes of practice under sections 45 and 46"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

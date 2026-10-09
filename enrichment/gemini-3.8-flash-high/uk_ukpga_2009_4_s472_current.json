@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/2009/4/s472@current",
+ "section": "uk/ukpga/2009/4/s472",
+ "version": "current",
+ "source_sha256": "908d8b202ff09e3eaa8b0620b01fcd76434e3ac9cc61fc4632969e05eee27d03",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 472 has effect for the purposes of any provisions of Part 5 of the Corporation Tax Act 2009 that apply it, without affecting the application of section 1316(2) regarding the meaning of control for other purposes of that Part.",
+    "quote": "This section has effect for the purposes of any provisions of this Part which apply this section (but this does not affect the application of section 1316(2) (meaning of “control”) for other purposes of this Part)"
+   },
+   {
+    "requirement": "In relation to a company, control means the power of a person to secure that the company's affairs are conducted in accordance with that person's wishes by holding shares or possessing voting power in or in relation to that company or any other company.",
+    "quote": "means the power of a person to secure that the affairs of the company are conducted in accordance with the person's wishes— (a) by means of the holding of shares or the possession of voting power in or in relation to the company or any other company"
+   },
+   {
+    "requirement": "In relation to a company, control also means the power of a person to secure that the company's affairs are conducted in accordance with that person's wishes as a result of powers conferred by the articles of association or other document regulating that company or any other company.",
+    "quote": "as a result of any powers conferred by the articles of association or other document regulating the company or any other company"
+   },
+   {
+    "requirement": "Trading shares held by a company and any voting power or other powers arising from those shares must be ignored for the purposes of section 472.",
+    "quote": "Trading shares held by a company and any voting power or other powers arising from such shares are ignored for the purposes of this section"
+   },
+   {
+    "requirement": "Shares held by a company qualify as trading shares only if a profit on a sale of the shares would be treated as a trading receipt of a trade carried on by that company.",
+    "quote": "a profit on a sale of the shares would be treated as a trading receipt of a trade carried on by the company"
+   },
+   {
+    "requirement": "Shares held by a company do not qualify as trading shares if they are assets held by an insurance company for the purposes of its long-term business.",
+    "quote": "the shares are not assets held by an insurance company for the purposes of its long-term business"
+   },
+   {
+    "requirement": "The partnership rule in subsection (6) applies to any firm to which section 1259 concerning the calculation of a firm's profits and losses applies.",
+    "quote": "Subsection (6) applies in the case of any firm to which section 1259 (calculation of firm's profits and losses) applies"
+   },
+   {
+    "requirement": "For any accounting period of a qualifying firm, property, rights, or powers held or exercisable for the firm's purposes are treated as if they had been apportioned between, and were held or exercisable by, the partners severally.",
+    "quote": "the property, rights or powers had been apportioned between, and were held or exercisable by, the partners severally"
+   },
+   {
+    "requirement": "The statutory apportionment among partners of a qualifying firm's property, rights, or powers must be in the same shares as those in which the profit or loss of the accounting period would be apportioned between the partners under the firm's profit-sharing arrangements.",
+    "quote": "the apportionment had been in the same shares as those in which the profit or loss of the period would be apportioned between the partners in accordance with the firm's profit-sharing arrangements"
+   },
+   {
+    "requirement": "The references to partners in subsection (6) exclude the general partner of a limited partnership that is a collective investment scheme.",
+    "quote": "references to partners do not include references to the general partner of a limited partnership which is a collective investment scheme"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 472 has effect for the purposes of any provisions of Part 5 of the Corporation Tax Act 2009 that apply it, without affecting the application of section 1316(2) regarding the meaning of control for other purposes of that Part.",
+   "quote": "This section has effect for the purposes of any provisions of this Part which apply this section (but this does not affect the application of section 1316(2) (meaning of “control”) for other purposes of this Part)"
+  },
+  {
+   "requirement": "In relation to a company, control means the power of a person to secure that the company's affairs are conducted in accordance with that person's wishes by holding shares or possessing voting power in or in relation to that company or any other company.",
+   "quote": "means the power of a person to secure that the affairs of the company are conducted in accordance with the person's wishes— (a) by means of the holding of shares or the possession of voting power in or in relation to the company or any other company"
+  },
+  {
+   "requirement": "In relation to a company, control also means the power of a person to secure that the company's affairs are conducted in accordance with that person's wishes as a result of powers conferred by the articles of association or other document regulating that company or any other company.",
+   "quote": "as a result of any powers conferred by the articles of association or other document regulating the company or any other company"
+  },
+  {
+   "requirement": "Trading shares held by a company and any voting power or other powers arising from those shares must be ignored for the purposes of section 472.",
+   "quote": "Trading shares held by a company and any voting power or other powers arising from such shares are ignored for the purposes of this section"
+  },
+  {
+   "requirement": "Shares held by a company qualify as trading shares only if a profit on a sale of the shares would be treated as a trading receipt of a trade carried on by that company.",
+   "quote": "a profit on a sale of the shares would be treated as a trading receipt of a trade carried on by the company"
+  },
+  {
+   "requirement": "Shares held by a company do not qualify as trading shares if they are assets held by an insurance company for the purposes of its long-term business.",
+   "quote": "the shares are not assets held by an insurance company for the purposes of its long-term business"
+  },
+  {
+   "requirement": "The partnership rule in subsection (6) applies to any firm to which section 1259 concerning the calculation of a firm's profits and losses applies.",
+   "quote": "Subsection (6) applies in the case of any firm to which section 1259 (calculation of firm's profits and losses) applies"
+  },
+  {
+   "requirement": "For any accounting period of a qualifying firm, property, rights, or powers held or exercisable for the firm's purposes are treated as if they had been apportioned between, and were held or exercisable by, the partners severally.",
+   "quote": "the property, rights or powers had been apportioned between, and were held or exercisable by, the partners severally"
+  },
+  {
+   "requirement": "The statutory apportionment among partners of a qualifying firm's property, rights, or powers must be in the same shares as those in which the profit or loss of the accounting period would be apportioned between the partners under the firm's profit-sharing arrangements.",
+   "quote": "the apportionment had been in the same shares as those in which the profit or loss of the period would be apportioned between the partners in accordance with the firm's profit-sharing arrangements"
+  },
+  {
+   "requirement": "The references to partners in subsection (6) exclude the general partner of a limited partnership that is a collective investment scheme.",
+   "quote": "references to partners do not include references to the general partner of a limited partnership which is a collective investment scheme"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

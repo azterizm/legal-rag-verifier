@@ -1,0 +1,113 @@
+{
+ "key": "uk/ukpga/2006/46/s1225@current",
+ "section": "uk/ukpga/2006/46/s1225",
+ "version": "current",
+ "source_sha256": "d8a180e0447e7451d6becb6cd4f922c0b38d3be3d3a0937264cab04f45575c34",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that, in the case of a recognised supervisory body, any requirement of Part 2 or 3 of Schedule 10 is not satisfied.",
+    "quote": "in the case of a recognised supervisory body, that any requirement of Part 2 or 3 of Schedule 10 is not satisfied"
+   },
+   {
+    "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that, in the case of a recognised professional qualification offered by a recognised qualifying body, any requirement of Part 2 of Schedule 11 is not satisfied.",
+    "quote": "in the case of a recognised professional qualification offered by a recognised qualifying body, that any requirement of Part 2 of Schedule 11 is not satisfied"
+   },
+   {
+    "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that a recognised supervisory body or a recognised qualifying body has failed to comply with an obligation imposed on it by or by virtue of this Part, excluding an obligation to pay a financial penalty under section 1225D.",
+    "quote": "a recognised supervisory body or a recognised qualifying body has not complied with an obligation imposed on it by or by virtue of this Part (other than an obligation to pay a financial penalty under section 1225D)"
+   },
+   {
+    "requirement": "An obligation to pay a financial penalty under section 1225D is excluded from the obligations imposed by or by virtue of this Part that trigger the application of section 1225.",
+    "quote": "other than an obligation to pay a financial penalty under section 1225D"
+   },
+   {
+    "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that a recognised supervisory body has not complied with an obligation imposed on it by or by virtue of the Statutory Auditors and Third Country Auditors Regulations 2016.",
+    "quote": "a recognised supervisory body has not complied with an obligation imposed on it by or by virtue of the Statutory Auditors and Third Country Auditors Regulations 2016"
+   },
+   {
+    "requirement": "The Secretary of State may give a direction under section 1225A to the recognised supervisory body or recognised qualifying body.",
+    "quote": "give a direction to the body under section 1225A"
+   },
+   {
+    "requirement": "The Secretary of State may make an application to the court under section 1225C in respect of the recognised supervisory body or recognised qualifying body.",
+    "quote": "make an application to the court in respect of the body under section 1225C"
+   },
+   {
+    "requirement": "The Secretary of State may impose a financial penalty on the recognised supervisory body or recognised qualifying body under section 1225D.",
+    "quote": "impose a financial penalty on the body under section 1225D"
+   },
+   {
+    "requirement": "The Secretary of State is permitted to take any one or more of the specified enforcement actions against the body.",
+    "quote": "The Secretary of State may do any one or more of the following"
+   },
+   {
+    "requirement": "The enforcement powers under subsection (2) operate without prejudice to the powers of the Secretary of State to revoke recognition orders under paragraph 3 of Schedule 10 and paragraph 3 of Schedule 11.",
+    "quote": "without prejudice to the powers of the Secretary of State under paragraph 3 of Schedule 10 and paragraph 3 of Schedule 11 (revocation of recognition orders)"
+   },
+   {
+    "requirement": "The enforcement powers under subsection (2) operate without prejudice to the powers of the competent authority under regulation 3 of the Statutory Auditors and Third Country Auditors Regulations 2016.",
+    "quote": "without prejudice to ... the powers of the competent authority under regulation 3 of the Statutory Auditors and Third Country Auditors Regulations 2016"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of specified enforcement actions the Secretary of State may choose to take against the body",
+    "value": "one or more",
+    "quote": "any one or more of the following"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that, in the case of a recognised supervisory body, any requirement of Part 2 or 3 of Schedule 10 is not satisfied.",
+   "quote": "in the case of a recognised supervisory body, that any requirement of Part 2 or 3 of Schedule 10 is not satisfied"
+  },
+  {
+   "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that, in the case of a recognised professional qualification offered by a recognised qualifying body, any requirement of Part 2 of Schedule 11 is not satisfied.",
+   "quote": "in the case of a recognised professional qualification offered by a recognised qualifying body, that any requirement of Part 2 of Schedule 11 is not satisfied"
+  },
+  {
+   "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that a recognised supervisory body or a recognised qualifying body has failed to comply with an obligation imposed on it by or by virtue of this Part, excluding an obligation to pay a financial penalty under section 1225D.",
+   "quote": "a recognised supervisory body or a recognised qualifying body has not complied with an obligation imposed on it by or by virtue of this Part (other than an obligation to pay a financial penalty under section 1225D)"
+  },
+  {
+   "requirement": "An obligation to pay a financial penalty under section 1225D is excluded from the obligations imposed by or by virtue of this Part that trigger the application of section 1225.",
+   "quote": "other than an obligation to pay a financial penalty under section 1225D"
+  },
+  {
+   "requirement": "Section 1225 applies if at any time it appears to the Secretary of State that a recognised supervisory body has not complied with an obligation imposed on it by or by virtue of the Statutory Auditors and Third Country Auditors Regulations 2016.",
+   "quote": "a recognised supervisory body has not complied with an obligation imposed on it by or by virtue of the Statutory Auditors and Third Country Auditors Regulations 2016"
+  },
+  {
+   "requirement": "The Secretary of State may give a direction under section 1225A to the recognised supervisory body or recognised qualifying body.",
+   "quote": "give a direction to the body under section 1225A"
+  },
+  {
+   "requirement": "The Secretary of State may make an application to the court under section 1225C in respect of the recognised supervisory body or recognised qualifying body.",
+   "quote": "make an application to the court in respect of the body under section 1225C"
+  },
+  {
+   "requirement": "The Secretary of State may impose a financial penalty on the recognised supervisory body or recognised qualifying body under section 1225D.",
+   "quote": "impose a financial penalty on the body under section 1225D"
+  },
+  {
+   "requirement": "The Secretary of State is permitted to take any one or more of the specified enforcement actions against the body.",
+   "quote": "The Secretary of State may do any one or more of the following"
+  },
+  {
+   "requirement": "The enforcement powers under subsection (2) operate without prejudice to the powers of the Secretary of State to revoke recognition orders under paragraph 3 of Schedule 10 and paragraph 3 of Schedule 11.",
+   "quote": "without prejudice to the powers of the Secretary of State under paragraph 3 of Schedule 10 and paragraph 3 of Schedule 11 (revocation of recognition orders)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

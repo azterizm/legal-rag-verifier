@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/2007/11/s57@current",
+ "section": "uk/ukpga/2007/11/s57",
+ "version": "current",
+ "source_sha256": "6b71479bf636fd66b1b5ca578cad9b9435f07f0d93f7bc7e2114f9f8e5385ee7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of section 756A of the Income and Corporation Taxes Act 1988, a collective investment scheme means arrangements that constitute a collective investment scheme under Part 17 of the Financial Services and Markets Act 2000 or that would constitute one if the specified words were omitted from section 236(3)(a) of that Act.",
+    "quote": "“collective investment scheme” means any arrangements which are a collective investment scheme for the purposes of Part 17 of the Financial Services and Markets Act 2000 (see section 235 of that Act and orders made under subsection (5) of that section) or would be if the words “, within a period appearing to him to be reasonable,” were omitted from section 236(3)(a) of that Act"
+   },
+   {
+    "requirement": "The reference to offshore funds in section 760(3)(a) of the Income and Corporation Taxes Act 1988 excludes any arrangements that do not constitute a collective investment scheme for the purposes of Part 17 of the Financial Services and Markets Act 2000.",
+    "quote": "the reference to offshore funds in section 760(3)(a) does not include any arrangements which are not a collective investment scheme for the purposes of that Part of that Act"
+   },
+   {
+    "requirement": "Paragraph 6(1)(c) of Schedule 27 to the Income and Corporation Taxes Act 1988 is amended by omitting the phrase concerning certification without regard to the provisions of that paragraph.",
+    "quote": "omit “without regard to the provisions of this paragraph,”"
+   },
+   {
+    "requirement": "For the purposes of section 152(2)(a) of the Income Tax Act 2007, income charged to income tax under section 761(1)(b)(i) of the Income and Corporation Taxes Act 1988 does not constitute section 1016 income.",
+    "quote": "income on which income tax is charged under section 761(1)(b)(i) of ICTA is not “section 1016 income” for the purposes of subsection (2)(a)"
+   },
+   {
+    "requirement": "The amendment to Schedule 27 to the Income and Corporation Taxes Act 1988 made by subsection (4) applies to account periods within the meaning of Chapter 5 of Part 17 of that Act that begin on or after 1st January 2007.",
+    "quote": "has effect in relation to account periods (within the meaning of Chapter 5 of Part 17 of ICTA) beginning on or after 1st January 2007"
+   },
+   {
+    "requirement": "The amendment to section 152 of the Income Tax Act 2007 made by subsection (5) applies to transactions occurring on or after 6th April 2007.",
+    "quote": "has effect in relation to transactions on or after 6th April 2007"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "start date of account periods for which the amendment made by subsection (4) has effect",
+    "value": "1st January 2007",
+    "quote": "beginning on or after 1st January 2007"
+   },
+   {
+    "what": "start date for transactions to which the amendment made by subsection (5) applies",
+    "value": "6th April 2007",
+    "quote": "transactions on or after 6th April 2007"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of section 756A of the Income and Corporation Taxes Act 1988, a collective investment scheme means arrangements that constitute a collective investment scheme under Part 17 of the Financial Services and Markets Act 2000 or that would constitute one if the specified words were omitted from section 236(3)(a) of that Act.",
+   "quote": "“collective investment scheme” means any arrangements which are a collective investment scheme for the purposes of Part 17 of the Financial Services and Markets Act 2000 (see section 235 of that Act and orders made under subsection (5) of that section) or would be if the words “, within a period appearing to him to be reasonable,” were omitted from section 236(3)(a) of that Act"
+  },
+  {
+   "requirement": "The reference to offshore funds in section 760(3)(a) of the Income and Corporation Taxes Act 1988 excludes any arrangements that do not constitute a collective investment scheme for the purposes of Part 17 of the Financial Services and Markets Act 2000.",
+   "quote": "the reference to offshore funds in section 760(3)(a) does not include any arrangements which are not a collective investment scheme for the purposes of that Part of that Act"
+  },
+  {
+   "requirement": "Paragraph 6(1)(c) of Schedule 27 to the Income and Corporation Taxes Act 1988 is amended by omitting the phrase concerning certification without regard to the provisions of that paragraph.",
+   "quote": "omit “without regard to the provisions of this paragraph,”"
+  },
+  {
+   "requirement": "For the purposes of section 152(2)(a) of the Income Tax Act 2007, income charged to income tax under section 761(1)(b)(i) of the Income and Corporation Taxes Act 1988 does not constitute section 1016 income.",
+   "quote": "income on which income tax is charged under section 761(1)(b)(i) of ICTA is not “section 1016 income” for the purposes of subsection (2)(a)"
+  },
+  {
+   "requirement": "The amendment to Schedule 27 to the Income and Corporation Taxes Act 1988 made by subsection (4) applies to account periods within the meaning of Chapter 5 of Part 17 of that Act that begin on or after 1st January 2007.",
+   "quote": "has effect in relation to account periods (within the meaning of Chapter 5 of Part 17 of ICTA) beginning on or after 1st January 2007"
+  },
+  {
+   "requirement": "The amendment to section 152 of the Income Tax Act 2007 made by subsection (5) applies to transactions occurring on or after 6th April 2007.",
+   "quote": "has effect in relation to transactions on or after 6th April 2007"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "start date of account periods for which the amendment made by subsection (4) has effect",
+   "value": "1st January 2007",
+   "quote": "beginning on or after 1st January 2007"
+  },
+  {
+   "what": "start date for transactions to which the amendment made by subsection (5) applies",
+   "value": "6th April 2007",
+   "quote": "transactions on or after 6th April 2007"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

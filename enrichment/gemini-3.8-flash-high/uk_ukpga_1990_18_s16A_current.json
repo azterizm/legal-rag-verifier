@@ -1,0 +1,91 @@
+{
+ "key": "uk/ukpga/1990/18/s16A@current",
+ "section": "uk/ukpga/1990/18/s16A",
+ "version": "current",
+ "source_sha256": "24add4cc135b82dadc483c09aa0b23f02b64c1ccaaa393ebf230ba40a4aa4116",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A county court judge may issue a warrant authorising a constable to enter and search premises, using such reasonable force as is necessary, if satisfied by information on oath given by a constable that there are reasonable grounds for believing both that an offence under section 1 of the Computer Misuse Act 1990 has been or is about to be committed in any premises and that evidence of it is in those premises.",
+    "quote": "Where a county court judge is satisfied by information on oath given by a constable that there are reasonable grounds for believing— (a) that an offence under section 1 above has been or is about to be committed in any premises, and (b) that evidence that such an offence has been or is about to be committed is in those premises, he may issue a warrant authorising a constable to enter and search the premises, using such reasonable force as is necessary."
+   },
+   {
+    "requirement": "The search warrant power does not extend to authorising a search for privileged, excluded, and special procedure material mentioned in Article 11(2) of the Police and Criminal Evidence (Northern Ireland) Order 1989.",
+    "quote": "The power conferred by subsection (1) above does not extend to authorising a search for material of the kinds mentioned in Article 11(2) of the Police and Criminal Evidence (Northern Ireland) Order 1989 (privileged, excluded and special procedure material)."
+   },
+   {
+    "requirement": "A search warrant issued under section 16A may authorise persons to accompany any constable executing the warrant.",
+    "quote": "may authorise persons to accompany any constable executing the warrant"
+   },
+   {
+    "requirement": "A search warrant issued under section 16A remains in force for twenty-eight days from the date of its issue.",
+    "quote": "remains in force for twenty-eight days from the date of its issue"
+   },
+   {
+    "requirement": "A constable exercising a warrant issued under section 16A may seize an article if the constable reasonably believes that it is evidence that an offence under section 1 of the Computer Misuse Act 1990 has been or is about to be committed.",
+    "quote": "In exercising a warrant issued under this section a constable may seize an article if he reasonably believes that it is evidence that an offence under section 1 above has been or is about to be committed."
+   },
+   {
+    "requirement": "For the purposes of section 16A, the term 'premises' includes land, buildings, movable structures, vehicles, vessels, aircraft and hovercraft.",
+    "quote": "“ premises ” includes land, buildings, movable structures, vehicles, vessels, aircraft and hovercraft."
+   },
+   {
+    "requirement": "Section 16A of the Computer Misuse Act 1990 extends only to Northern Ireland.",
+    "quote": "This section extends only to Northern Ireland."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period a warrant issued under section 16A remains in force from the date of its issue",
+    "value": "twenty-eight days",
+    "quote": "remains in force for twenty-eight days from the date of its issue"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A county court judge may issue a warrant authorising a constable to enter and search premises, using such reasonable force as is necessary, if satisfied by information on oath given by a constable that there are reasonable grounds for believing both that an offence under section 1 of the Computer Misuse Act 1990 has been or is about to be committed in any premises and that evidence of it is in those premises.",
+   "quote": "Where a county court judge is satisfied by information on oath given by a constable that there are reasonable grounds for believing— (a) that an offence under section 1 above has been or is about to be committed in any premises, and (b) that evidence that such an offence has been or is about to be committed is in those premises, he may issue a warrant authorising a constable to enter and search the premises, using such reasonable force as is necessary."
+  },
+  {
+   "requirement": "The search warrant power does not extend to authorising a search for privileged, excluded, and special procedure material mentioned in Article 11(2) of the Police and Criminal Evidence (Northern Ireland) Order 1989.",
+   "quote": "The power conferred by subsection (1) above does not extend to authorising a search for material of the kinds mentioned in Article 11(2) of the Police and Criminal Evidence (Northern Ireland) Order 1989 (privileged, excluded and special procedure material)."
+  },
+  {
+   "requirement": "A search warrant issued under section 16A may authorise persons to accompany any constable executing the warrant.",
+   "quote": "may authorise persons to accompany any constable executing the warrant"
+  },
+  {
+   "requirement": "A search warrant issued under section 16A remains in force for twenty-eight days from the date of its issue.",
+   "quote": "remains in force for twenty-eight days from the date of its issue"
+  },
+  {
+   "requirement": "A constable exercising a warrant issued under section 16A may seize an article if the constable reasonably believes that it is evidence that an offence under section 1 of the Computer Misuse Act 1990 has been or is about to be committed.",
+   "quote": "In exercising a warrant issued under this section a constable may seize an article if he reasonably believes that it is evidence that an offence under section 1 above has been or is about to be committed."
+  },
+  {
+   "requirement": "For the purposes of section 16A, the term 'premises' includes land, buildings, movable structures, vehicles, vessels, aircraft and hovercraft.",
+   "quote": "“ premises ” includes land, buildings, movable structures, vehicles, vessels, aircraft and hovercraft."
+  },
+  {
+   "requirement": "Section 16A of the Computer Misuse Act 1990 extends only to Northern Ireland.",
+   "quote": "This section extends only to Northern Ireland."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period a warrant issued under section 16A remains in force from the date of its issue",
+   "value": "twenty-eight days",
+   "quote": "remains in force for twenty-eight days from the date of its issue"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

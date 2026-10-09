@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1975/63/s19@current",
+ "section": "uk/ukpga/1975/63/s19",
+ "version": "current",
+ "source_sha256": "bc605915209a7b8aca5dedabf6fe3e626f9768012826819236652394a6e7bb6a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where an order is made under section 2 of the Inheritance (Provision for Family and Dependants) Act 1975, the will or the law relating to intestacy, or both, has effect and is deemed to have had effect from the deceased's death subject to the provisions of the order for all purposes, including capital transfer tax enactments.",
+    "quote": "shall have effect and be deemed to have had effect as from the deceased’s death subject to the provisions of the order"
+   },
+   {
+    "requirement": "An order under section 2 or 5 of the Act providing for periodical payments in favour of a former spouse or former civil partner of the deceased ceases to have effect upon that applicant forming a subsequent marriage or civil partnership, except regarding arrears due on the date of formation.",
+    "quote": "shall, in so far as it provides for the making of periodical payments, cease to have effect on the formation by the applicant of a subsequent marriage or civil partnership"
+   },
+   {
+    "requirement": "An order under section 2 or 5 of the Act providing for periodical payments in favour of a husband or wife of the deceased who was judicially separated under a separation order in force and continuing at the date of death ceases to have effect upon that applicant forming a subsequent marriage or civil partnership, except regarding arrears due on the date of formation.",
+    "quote": "in a case where the marriage with the deceased was the subject of a judicial separation order and at the date of death the order was in force and the separation was continuing"
+   },
+   {
+    "requirement": "An order under section 2 or 5 of the Act providing for periodical payments in favour of a civil partner of the deceased where a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force and continuing at the date of death ceases to have effect upon that applicant forming a subsequent marriage or civil partnership, except regarding arrears due on the date of formation.",
+    "quote": "in a case where, at the date of death, a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force in relation to their civil partnership and the separation was continuing"
+   },
+   {
+    "requirement": "The cessation of an order for periodical payments upon an applicant's remarriage or formation of a subsequent civil partnership does not affect any arrears due under the order on the date of the formation of that subsequent marriage or civil partnership.",
+    "quote": "except in relation to any arrears due under the order on the date of the formation of the subsequent marriage or civil partnership"
+   },
+   {
+    "requirement": "A copy of every order made under the Act, other than an order under section 15(1) or section 15ZA(1), must be sent to the principal registry of the Family Division for entry and filing.",
+    "quote": "shall be sent to the principal registry of the Family Division for entry and filing"
+   },
+   {
+    "requirement": "Orders made under section 15(1) or section 15ZA(1) of the Act are exempt from the requirement to have a copy sent to the principal registry of the Family Division for entry and filing.",
+    "quote": "other than an order made under section 15(1) or 15ZA(1) of this Act"
+   },
+   {
+    "requirement": "A memorandum of every order made under the Act (other than an order under section 15(1) or section 15ZA(1)) must be endorsed on, or permanently annexed to, the probate or letters of administration under which the estate is being administered.",
+    "quote": "a memorandum of the order shall be endorsed on, or permanently annexed to, the probate or letters of administration"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The effective date from which a section 2 order deems the will or intestacy law to have had effect",
+    "value": "the deceased’s death",
+    "quote": "as from the deceased’s death"
+   },
+   {
+    "what": "The relevant date on which a judicial separation order or civil partnership separation order must have been in force and continuing",
+    "value": "date of death",
+    "quote": "at the date of death"
+   },
+   {
+    "what": "The date on which arrears under a periodical payments order are assessed and beyond which the order ceases to have effect upon remarriage or formation of a civil partnership",
+    "value": "the date of the formation of the subsequent marriage or civil partnership",
+    "quote": "on the date of the formation of the subsequent marriage or civil partnership"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where an order is made under section 2 of the Inheritance (Provision for Family and Dependants) Act 1975, the will or the law relating to intestacy, or both, has effect and is deemed to have had effect from the deceased's death subject to the provisions of the order for all purposes, including capital transfer tax enactments.",
+   "quote": "shall have effect and be deemed to have had effect as from the deceased’s death subject to the provisions of the order"
+  },
+  {
+   "requirement": "An order under section 2 or 5 of the Act providing for periodical payments in favour of a former spouse or former civil partner of the deceased ceases to have effect upon that applicant forming a subsequent marriage or civil partnership, except regarding arrears due on the date of formation.",
+   "quote": "shall, in so far as it provides for the making of periodical payments, cease to have effect on the formation by the applicant of a subsequent marriage or civil partnership"
+  },
+  {
+   "requirement": "An order under section 2 or 5 of the Act providing for periodical payments in favour of a husband or wife of the deceased who was judicially separated under a separation order in force and continuing at the date of death ceases to have effect upon that applicant forming a subsequent marriage or civil partnership, except regarding arrears due on the date of formation.",
+   "quote": "in a case where the marriage with the deceased was the subject of a judicial separation order and at the date of death the order was in force and the separation was continuing"
+  },
+  {
+   "requirement": "An order under section 2 or 5 of the Act providing for periodical payments in favour of a civil partner of the deceased where a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force and continuing at the date of death ceases to have effect upon that applicant forming a subsequent marriage or civil partnership, except regarding arrears due on the date of formation.",
+   "quote": "in a case where, at the date of death, a separation order under Chapter 2 of Part 2 of the Civil Partnership Act 2004 was in force in relation to their civil partnership and the separation was continuing"
+  },
+  {
+   "requirement": "The cessation of an order for periodical payments upon an applicant's remarriage or formation of a subsequent civil partnership does not affect any arrears due under the order on the date of the formation of that subsequent marriage or civil partnership.",
+   "quote": "except in relation to any arrears due under the order on the date of the formation of the subsequent marriage or civil partnership"
+  },
+  {
+   "requirement": "A copy of every order made under the Act, other than an order under section 15(1) or section 15ZA(1), must be sent to the principal registry of the Family Division for entry and filing.",
+   "quote": "shall be sent to the principal registry of the Family Division for entry and filing"
+  },
+  {
+   "requirement": "Orders made under section 15(1) or section 15ZA(1) of the Act are exempt from the requirement to have a copy sent to the principal registry of the Family Division for entry and filing.",
+   "quote": "other than an order made under section 15(1) or 15ZA(1) of this Act"
+  },
+  {
+   "requirement": "A memorandum of every order made under the Act (other than an order under section 15(1) or section 15ZA(1)) must be endorsed on, or permanently annexed to, the probate or letters of administration under which the estate is being administered.",
+   "quote": "a memorandum of the order shall be endorsed on, or permanently annexed to, the probate or letters of administration"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

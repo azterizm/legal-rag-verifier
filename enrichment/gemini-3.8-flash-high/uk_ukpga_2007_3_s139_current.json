@@ -1,0 +1,107 @@
+{
+ "key": "uk/ukpga/2007/3/s139@current",
+ "section": "uk/ukpga/2007/3/s139",
+ "version": "current",
+ "source_sha256": "9dd5efb4a254237e31af33dcaa0b579692d62802c345cc25df5eefe38c3d6833",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Under the control element of the requirement, a company must not control, whether on its own or together with any person connected with it, any company which is not a qualifying subsidiary of the company.",
+    "quote": "the company must not control (whether on its own or together with any person connected with it) any company which is not a qualifying subsidiary of the company"
+   },
+   {
+    "requirement": "Under the control element of the requirement, no arrangements must be in existence by virtue of which the company could fail to satisfy the requirement that it not control any non-qualifying subsidiary, whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise.",
+    "quote": "no arrangements must be in existence by virtue of which the company could fail to meet paragraph (a) (whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise)"
+   },
+   {
+    "requirement": "Under the independence element of the requirement, a company must not be a 51% subsidiary of another company.",
+    "quote": "the company must not— (i) be a 51% subsidiary of another company"
+   },
+   {
+    "requirement": "Under the independence element of the requirement, a company must not be under the control of another company, or of another company and any other person connected with that other company, without being a 51% subsidiary of that other company.",
+    "quote": "be under the control of another company (or of another company and any other person connected with that other company), without being a 51% subsidiary of that other company"
+   },
+   {
+    "requirement": "Under the independence element of the requirement, no arrangements must be in existence by virtue of which the company could fail to meet the independence requirements set out in subsection (2)(a), whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise.",
+    "quote": "no arrangements must be in existence by virtue of which the company could fail to meet paragraph (a) (whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise)"
+   },
+   {
+    "requirement": "The requirements regarding control and independence in section 139 are subject to section 145(3).",
+    "quote": "This section is subject to section 145(3)"
+   },
+   {
+    "requirement": "For the purposes of section 139, 'arrangements' includes any scheme, agreement or understanding, whether or not legally enforceable.",
+    "quote": "“arrangements” includes any scheme, agreement or understanding, whether or not legally enforceable"
+   },
+   {
+    "requirement": "In subsection (1)(a), 'control' is to be read in accordance with sections 450 and 451 of CTA 2010.",
+    "quote": "“control”, in subsection (1)(a), is to be read in accordance with sections 450 and 451 of CTA 2010"
+   },
+   {
+    "requirement": "In section 139, 'qualifying subsidiary' is to be read in accordance with section 191.",
+    "quote": "“qualifying subsidiary” is to be read in accordance with section 191"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the subsidiary percentage threshold that a company must not meet to satisfy the independence element",
+    "value": "51%",
+    "quote": "be a 51% subsidiary of another company"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Under the control element of the requirement, a company must not control, whether on its own or together with any person connected with it, any company which is not a qualifying subsidiary of the company.",
+   "quote": "the company must not control (whether on its own or together with any person connected with it) any company which is not a qualifying subsidiary of the company"
+  },
+  {
+   "requirement": "Under the control element of the requirement, no arrangements must be in existence by virtue of which the company could fail to satisfy the requirement that it not control any non-qualifying subsidiary, whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise.",
+   "quote": "no arrangements must be in existence by virtue of which the company could fail to meet paragraph (a) (whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise)"
+  },
+  {
+   "requirement": "Under the independence element of the requirement, a company must not be a 51% subsidiary of another company.",
+   "quote": "the company must not— (i) be a 51% subsidiary of another company"
+  },
+  {
+   "requirement": "Under the independence element of the requirement, a company must not be under the control of another company, or of another company and any other person connected with that other company, without being a 51% subsidiary of that other company.",
+   "quote": "be under the control of another company (or of another company and any other person connected with that other company), without being a 51% subsidiary of that other company"
+  },
+  {
+   "requirement": "Under the independence element of the requirement, no arrangements must be in existence by virtue of which the company could fail to meet the independence requirements set out in subsection (2)(a), whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise.",
+   "quote": "no arrangements must be in existence by virtue of which the company could fail to meet paragraph (a) (whether at a time during the continuous period that is relevant for the purposes of section 134(3) or otherwise)"
+  },
+  {
+   "requirement": "The requirements regarding control and independence in section 139 are subject to section 145(3).",
+   "quote": "This section is subject to section 145(3)"
+  },
+  {
+   "requirement": "For the purposes of section 139, 'arrangements' includes any scheme, agreement or understanding, whether or not legally enforceable.",
+   "quote": "“arrangements” includes any scheme, agreement or understanding, whether or not legally enforceable"
+  },
+  {
+   "requirement": "In subsection (1)(a), 'control' is to be read in accordance with sections 450 and 451 of CTA 2010.",
+   "quote": "“control”, in subsection (1)(a), is to be read in accordance with sections 450 and 451 of CTA 2010"
+  },
+  {
+   "requirement": "In section 139, 'qualifying subsidiary' is to be read in accordance with section 191.",
+   "quote": "“qualifying subsidiary” is to be read in accordance with section 191"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the subsidiary percentage threshold that a company must not meet to satisfy the independence element",
+   "value": "51%",
+   "quote": "be a 51% subsidiary of another company"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

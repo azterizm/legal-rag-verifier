@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1999/31/s10@current",
+ "section": "uk/ukpga/1999/31/s10",
+ "version": "current",
+ "source_sha256": "8909bdf2cabe481f7b58ee5c801365bcf12247b0564e2ee738c7154034207eb6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Act may be cited as the Contracts (Rights of Third Parties) Act 1999.",
+    "quote": "This Act may be cited as the Contracts (Rights of Third Parties) Act 1999."
+   },
+   {
+    "requirement": "The Contracts (Rights of Third Parties) Act 1999 comes into force on the day on which it is passed.",
+    "quote": "comes into force on the day on which it is passed"
+   },
+   {
+    "requirement": "Subject to subsection (3), the Contracts (Rights of Third Parties) Act 1999 does not apply in relation to a contract entered into before the end of the period of six months beginning with the day on which the Act is passed.",
+    "quote": "subject to subsection (3), does not apply in relation to a contract entered into before the end of the period of six months beginning with that day"
+   },
+   {
+    "requirement": "The restriction on application in subsection (2) does not apply in relation to a contract that is entered into on or after the day on which the Contracts (Rights of Third Parties) Act 1999 is passed and expressly provides for the application of the Act.",
+    "quote": "The restriction in subsection (2) does not apply in relation to a contract which— (a) is entered into on or after the day on which this Act is passed, and (b) expressly provides for the application of this Act."
+   },
+   {
+    "requirement": "Section 9 of the Contracts (Rights of Third Parties) Act 1999 extends to Northern Ireland only.",
+    "quote": "section 9 extends to Northern Ireland only"
+   },
+   {
+    "requirement": "The remaining provisions of the Contracts (Rights of Third Parties) Act 1999 extend to England and Wales and Northern Ireland only.",
+    "quote": "the remaining provisions extend to England and Wales and Northern Ireland only"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period beginning with the day the Act is passed before the end of which entered contracts are generally excluded from the application of the Act",
+    "value": "six months",
+    "quote": "period of six months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Act may be cited as the Contracts (Rights of Third Parties) Act 1999.",
+   "quote": "This Act may be cited as the Contracts (Rights of Third Parties) Act 1999."
+  },
+  {
+   "requirement": "The Contracts (Rights of Third Parties) Act 1999 comes into force on the day on which it is passed.",
+   "quote": "comes into force on the day on which it is passed"
+  },
+  {
+   "requirement": "Subject to subsection (3), the Contracts (Rights of Third Parties) Act 1999 does not apply in relation to a contract entered into before the end of the period of six months beginning with the day on which the Act is passed.",
+   "quote": "subject to subsection (3), does not apply in relation to a contract entered into before the end of the period of six months beginning with that day"
+  },
+  {
+   "requirement": "The restriction on application in subsection (2) does not apply in relation to a contract that is entered into on or after the day on which the Contracts (Rights of Third Parties) Act 1999 is passed and expressly provides for the application of the Act.",
+   "quote": "The restriction in subsection (2) does not apply in relation to a contract which— (a) is entered into on or after the day on which this Act is passed, and (b) expressly provides for the application of this Act."
+  },
+  {
+   "requirement": "Section 9 of the Contracts (Rights of Third Parties) Act 1999 extends to Northern Ireland only.",
+   "quote": "section 9 extends to Northern Ireland only"
+  },
+  {
+   "requirement": "The remaining provisions of the Contracts (Rights of Third Parties) Act 1999 extend to England and Wales and Northern Ireland only.",
+   "quote": "the remaining provisions extend to England and Wales and Northern Ireland only"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The period beginning with the day the Act is passed before the end of which entered contracts are generally excluded from the application of the Act",
+   "value": "six months",
+   "quote": "period of six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

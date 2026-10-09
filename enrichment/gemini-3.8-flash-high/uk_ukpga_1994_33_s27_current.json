@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1994/33/s27@current",
+ "section": "uk/ukpga/1994/33/s27",
+ "version": "current",
+ "source_sha256": "81498573f4cddd1e4e3313bb0c9433386128b2d6bf117ec5baeaada5a17a23c5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In section 47(1) of the Police and Criminal Evidence Act 1984, the words following 'in accordance with' are substituted with 'sections 3, 3A, 5 and 5A of the Bail Act 1976 as they apply to bail granted by a constable'.",
+    "quote": "for the words after “in accordance with” there shall be substituted the words “ sections 3, 3A, 5 and 5A of the Bail Act 1976 as they apply to bail granted by a constable ”"
+   },
+   {
+    "requirement": "The normal powers to impose conditions of bail are available to a custody officer where that custody officer releases a person on bail under section 38(1) of the Police and Criminal Evidence Act 1984 (including section 38(1) as applied by section 40(10)), but are not available in any other cases.",
+    "quote": "The normal powers to impose conditions of bail shall be available to him where a custody officer releases a person on bail under section 38(1) above (including that subsection as applied by section 40(10) above) but not in any other cases."
+   },
+   {
+    "requirement": "For the purposes of section 47(1A) of the Police and Criminal Evidence Act 1984, the term 'the normal powers to impose conditions of bail' has the meaning given in section 3(6) of the Bail Act 1976.",
+    "quote": "In this subsection, “the normal powers to impose conditions of bail” has the meaning given in section 3(6) of the Bail Act 1976."
+   },
+   {
+    "requirement": "In section 3(6) of the Bail Act 1976, the limitation restricting the powers to imposition only by a court is omitted.",
+    "quote": "in subsection (6), the words “(but only by a court)” shall be omitted"
+   },
+   {
+    "requirement": "In any Act, the term 'the normal powers to impose conditions of bail' means the statutory powers to impose conditions under paragraph (a), (b) or (c) of section 3(6) of the Bail Act 1976.",
+    "quote": "in any Act, “the normal powers to impose conditions of bail” means the powers to impose conditions under paragraph (a), (b) or (c) above"
+   },
+   {
+    "requirement": "Section 3 of the Bail Act 1976 is subject to section 3A of that Act in its application to bail granted by a constable.",
+    "quote": "This section is subject, in its application to bail granted by a constable, to section 3A of this Act."
+   },
+   {
+    "requirement": "Section 3 of the Bail Act 1976 applies, subject to the modifications set out in section 3A, in relation to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 where the normal powers to impose bail conditions are available to the custody officer.",
+    "quote": "Section 3 of this Act applies, in relation to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 in cases where the normal powers to impose conditions of bail are available to him, subject to the following modifications."
+   },
+   {
+    "requirement": "Section 3(6) of the Bail Act 1976 does not authorise a custody officer granting bail to impose a requirement to reside in a bail hostel or any requirement under paragraph (d).",
+    "quote": "Subsection (6) does not authorise the imposition of a requirement to reside in a bail hostel or any requirement under paragraph (d)."
+   },
+   {
+    "requirement": "Subsections (6ZA), (6A) and (6B) of section 3 of the Bail Act 1976 are omitted in respect of bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984.",
+    "quote": "Subsections (6ZA), (6A) and (6B) shall be omitted."
+   },
+   {
+    "requirement": "Where a custody officer has granted bail in criminal proceedings, that custody officer or another custody officer serving at the same police station may vary the conditions of bail at the request of the person granted bail, and in doing so may impose conditions or more onerous conditions.",
+    "quote": "Where a custody officer has granted bail in criminal proceedings he or another custody officer serving at the same police station may, at the request of the person to whom it was granted, vary the conditions of bail; and in doing so he may impose conditions or more onerous conditions."
+   },
+   {
+    "requirement": "Where a constable grants bail to a person, no conditions shall be imposed under section 3(4), (5), (6) or (7) of the Bail Act 1976 unless it appears to the constable necessary to prevent that person from failing to surrender to custody, committing an offence while on bail, or interfering with witnesses or otherwise obstructing the course of justice in relation to himself or any other person.",
+    "quote": "Where a constable grants bail to a person no conditions shall be imposed under subsections (4), (5), (6) or (7) of section 3 of this Act unless it appears to the constable that it is necessary to do so for the purpose of preventing that person from— afailing to surrender to custody, orbcommitting an offence while on bail, orcinterfering with witnesses or otherwise obstructing the course of justice, whether in relation to himself or any other person."
+   },
+   {
+    "requirement": "The necessity test governing a constable's imposition of conditions also applies to any request made to a custody officer under section 3(8) of the Bail Act 1976 to vary bail conditions.",
+    "quote": "Subsection (5) above also applies on any request to a custody officer under subsection (8) of section 3 of this Act to vary the conditions of bail."
+   },
+   {
+    "requirement": "The further statutory amendments set out in Schedule 3 to the Criminal Justice and Public Order Act 1994 shall have effect.",
+    "quote": "The further amendments contained in Schedule 3 to this Act shall have effect."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In section 47(1) of the Police and Criminal Evidence Act 1984, the words following 'in accordance with' are substituted with 'sections 3, 3A, 5 and 5A of the Bail Act 1976 as they apply to bail granted by a constable'.",
+   "quote": "for the words after “in accordance with” there shall be substituted the words “ sections 3, 3A, 5 and 5A of the Bail Act 1976 as they apply to bail granted by a constable ”"
+  },
+  {
+   "requirement": "The normal powers to impose conditions of bail are available to a custody officer where that custody officer releases a person on bail under section 38(1) of the Police and Criminal Evidence Act 1984 (including section 38(1) as applied by section 40(10)), but are not available in any other cases.",
+   "quote": "The normal powers to impose conditions of bail shall be available to him where a custody officer releases a person on bail under section 38(1) above (including that subsection as applied by section 40(10) above) but not in any other cases."
+  },
+  {
+   "requirement": "For the purposes of section 47(1A) of the Police and Criminal Evidence Act 1984, the term 'the normal powers to impose conditions of bail' has the meaning given in section 3(6) of the Bail Act 1976.",
+   "quote": "In this subsection, “the normal powers to impose conditions of bail” has the meaning given in section 3(6) of the Bail Act 1976."
+  },
+  {
+   "requirement": "In section 3(6) of the Bail Act 1976, the limitation restricting the powers to imposition only by a court is omitted.",
+   "quote": "in subsection (6), the words “(but only by a court)” shall be omitted"
+  },
+  {
+   "requirement": "In any Act, the term 'the normal powers to impose conditions of bail' means the statutory powers to impose conditions under paragraph (a), (b) or (c) of section 3(6) of the Bail Act 1976.",
+   "quote": "in any Act, “the normal powers to impose conditions of bail” means the powers to impose conditions under paragraph (a), (b) or (c) above"
+  },
+  {
+   "requirement": "Section 3 of the Bail Act 1976 is subject to section 3A of that Act in its application to bail granted by a constable.",
+   "quote": "This section is subject, in its application to bail granted by a constable, to section 3A of this Act."
+  },
+  {
+   "requirement": "Section 3 of the Bail Act 1976 applies, subject to the modifications set out in section 3A, in relation to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 where the normal powers to impose bail conditions are available to the custody officer.",
+   "quote": "Section 3 of this Act applies, in relation to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 in cases where the normal powers to impose conditions of bail are available to him, subject to the following modifications."
+  },
+  {
+   "requirement": "Section 3(6) of the Bail Act 1976 does not authorise a custody officer granting bail to impose a requirement to reside in a bail hostel or any requirement under paragraph (d).",
+   "quote": "Subsection (6) does not authorise the imposition of a requirement to reside in a bail hostel or any requirement under paragraph (d)."
+  },
+  {
+   "requirement": "Subsections (6ZA), (6A) and (6B) of section 3 of the Bail Act 1976 are omitted in respect of bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984.",
+   "quote": "Subsections (6ZA), (6A) and (6B) shall be omitted."
+  },
+  {
+   "requirement": "Where a custody officer has granted bail in criminal proceedings, that custody officer or another custody officer serving at the same police station may vary the conditions of bail at the request of the person granted bail, and in doing so may impose conditions or more onerous conditions.",
+   "quote": "Where a custody officer has granted bail in criminal proceedings he or another custody officer serving at the same police station may, at the request of the person to whom it was granted, vary the conditions of bail; and in doing so he may impose conditions or more onerous conditions."
+  },
+  {
+   "requirement": "Where a constable grants bail to a person, no conditions shall be imposed under section 3(4), (5), (6) or (7) of the Bail Act 1976 unless it appears to the constable necessary to prevent that person from failing to surrender to custody, committing an offence while on bail, or interfering with witnesses or otherwise obstructing the course of justice in relation to himself or any other person.",
+   "quote": "Where a constable grants bail to a person no conditions shall be imposed under subsections (4), (5), (6) or (7) of section 3 of this Act unless it appears to the constable that it is necessary to do so for the purpose of preventing that person from— afailing to surrender to custody, orbcommitting an offence while on bail, orcinterfering with witnesses or otherwise obstructing the course of justice, whether in relation to himself or any other person."
+  },
+  {
+   "requirement": "The necessity test governing a constable's imposition of conditions also applies to any request made to a custody officer under section 3(8) of the Bail Act 1976 to vary bail conditions.",
+   "quote": "Subsection (5) above also applies on any request to a custody officer under subsection (8) of section 3 of this Act to vary the conditions of bail."
+  },
+  {
+   "requirement": "The further statutory amendments set out in Schedule 3 to the Criminal Justice and Public Order Act 1994 shall have effect.",
+   "quote": "The further amendments contained in Schedule 3 to this Act shall have effect."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

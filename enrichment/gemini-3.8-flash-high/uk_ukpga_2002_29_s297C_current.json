@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/2002/29/s297C@current",
+ "section": "uk/ukpga/2002/29/s297C",
+ "version": "current",
+ "source_sha256": "77a92a0ed3957c9be1cc76c33d26d28d4fd22b80462605d5bc603ea96cd3e228",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 297C applies if a forfeiture notice is given in respect of any cash.",
+    "quote": "This section applies if a forfeiture notice is given in respect of any cash."
+   },
+   {
+    "requirement": "Cash subject to a forfeiture notice must be detained until the cash is forfeited under section 297C, the notice lapses under section 297C, or the cash is released under a power conferred by this Chapter.",
+    "quote": "The cash is to be detained until— (a) the cash is forfeited under this section, (b) the notice lapses under this section, or (c) the cash is released under a power conferred by this Chapter."
+   },
+   {
+    "requirement": "The cash is forfeited (subject to section 297E) if no objection is made within the period for objecting and the forfeiture notice has not lapsed.",
+    "quote": "If no objection is made within the period for objecting, and the notice has not lapsed, the cash is forfeited (subject to section 297E)."
+   },
+   {
+    "requirement": "A forfeiture notice lapses if an objection is made within the period for objecting.",
+    "quote": "If an objection is made within the period for objecting, the notice lapses."
+   },
+   {
+    "requirement": "A forfeiture notice lapses if an application is made under section 298 for the forfeiture of the whole or any part of the cash.",
+    "quote": "If an application is made for the forfeiture of the whole or any part of the cash under section 298, the notice lapses."
+   },
+   {
+    "requirement": "A forfeiture notice lapses or, as the case may be, lapses in relation to that part if the cash or any part of it is released under a power conferred by this Chapter.",
+    "quote": "If the cash or any part of it is released under a power conferred by this Chapter, the notice lapses or (as the case may be) lapses in relation to that part."
+   },
+   {
+    "requirement": "An objection may be made by anyone, regardless of whether that person is a recipient of the forfeiture notice or not.",
+    "quote": "An objection may be made by anyone, whether a recipient of the notice or not."
+   },
+   {
+    "requirement": "An objection means a written objection sent to the address specified in the forfeiture notice.",
+    "quote": "An objection means a written objection sent to the address specified in the notice"
+   },
+   {
+    "requirement": "An objection is made when it is received at the address specified in the notice.",
+    "quote": "an objection is made when it is received at the address."
+   },
+   {
+    "requirement": "An objection does not prevent forfeiture of the cash under section 298.",
+    "quote": "An objection does not prevent forfeiture of the cash under section 298."
+   },
+   {
+    "requirement": "Nothing in section 297C affects the validity of an order made under section 295(2).",
+    "quote": "Nothing in this section affects the validity of an order under section 295(2)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 297C applies if a forfeiture notice is given in respect of any cash.",
+   "quote": "This section applies if a forfeiture notice is given in respect of any cash."
+  },
+  {
+   "requirement": "Cash subject to a forfeiture notice must be detained until the cash is forfeited under section 297C, the notice lapses under section 297C, or the cash is released under a power conferred by this Chapter.",
+   "quote": "The cash is to be detained until— (a) the cash is forfeited under this section, (b) the notice lapses under this section, or (c) the cash is released under a power conferred by this Chapter."
+  },
+  {
+   "requirement": "The cash is forfeited (subject to section 297E) if no objection is made within the period for objecting and the forfeiture notice has not lapsed.",
+   "quote": "If no objection is made within the period for objecting, and the notice has not lapsed, the cash is forfeited (subject to section 297E)."
+  },
+  {
+   "requirement": "A forfeiture notice lapses if an objection is made within the period for objecting.",
+   "quote": "If an objection is made within the period for objecting, the notice lapses."
+  },
+  {
+   "requirement": "A forfeiture notice lapses if an application is made under section 298 for the forfeiture of the whole or any part of the cash.",
+   "quote": "If an application is made for the forfeiture of the whole or any part of the cash under section 298, the notice lapses."
+  },
+  {
+   "requirement": "A forfeiture notice lapses or, as the case may be, lapses in relation to that part if the cash or any part of it is released under a power conferred by this Chapter.",
+   "quote": "If the cash or any part of it is released under a power conferred by this Chapter, the notice lapses or (as the case may be) lapses in relation to that part."
+  },
+  {
+   "requirement": "An objection may be made by anyone, regardless of whether that person is a recipient of the forfeiture notice or not.",
+   "quote": "An objection may be made by anyone, whether a recipient of the notice or not."
+  },
+  {
+   "requirement": "An objection means a written objection sent to the address specified in the forfeiture notice.",
+   "quote": "An objection means a written objection sent to the address specified in the notice"
+  },
+  {
+   "requirement": "An objection is made when it is received at the address specified in the notice.",
+   "quote": "an objection is made when it is received at the address."
+  },
+  {
+   "requirement": "An objection does not prevent forfeiture of the cash under section 298.",
+   "quote": "An objection does not prevent forfeiture of the cash under section 298."
+  },
+  {
+   "requirement": "Nothing in section 297C affects the validity of an order made under section 295(2).",
+   "quote": "Nothing in this section affects the validity of an order under section 295(2)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "key": "uk/ukpga/1977/43/s3@current",
+ "section": "uk/ukpga/1977/43/s3",
+ "version": "current",
+ "source_sha256": "2ca92c7ff30b794fd93dd9a659cd29ddbf57ce269e2e740fe1291ba8e72880aa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where premises have been let as a dwelling under a tenancy that is neither a statutorily protected tenancy nor an excluded tenancy, and that tenancy has ended but the occupier continues to reside in all or part of the premises, the owner cannot lawfully enforce a right to recover possession against the occupier without court proceedings.",
+    "quote": "it shall not be lawful for the owner to enforce against the occupier, otherwise than by proceedings in the court, his right to recover possession of the premises."
+   },
+   {
+    "requirement": "For the purposes of section 3, an occupier of premises is defined as any person who was lawfully residing in all or part of the premises at the time the former tenancy came to an end.",
+    "quote": "any person lawfully residing in the premises or part of them at the termination of the former tenancy."
+   },
+   {
+    "requirement": "Subsections (1) and (2) apply to any restricted contract within the meaning of the Rent Act 1977 that creates a licence and was entered into after the commencement of section 69 of the Housing Act 1980 in the same manner as they apply to a restricted contract creating a tenancy.",
+    "quote": "apply in relation to any restricted contract (within the meaning of the Rent Act 1977) which— (a) creates a licence; and (b) is entered into after the commencement of section 69 of the Housing Act 1980; as they apply in relation to a restricted contract which creates a tenancy."
+   },
+   {
+    "requirement": "Subsections (1) and (2) apply to premises occupied as a dwelling under a licence other than an excluded licence in the same way as they apply to premises let under a tenancy, with the words 'let' and 'tenancy' interpreted accordingly.",
+    "quote": "apply in relation to any premises occupied as a dwelling under a licence, other than an excluded licence, as they apply in relation to premises let as a dwelling under a tenancy"
+   },
+   {
+    "requirement": "Statutory references to an excluded tenancy do not apply to any tenancy entered into prior to the date the Housing Act 1988 came into force.",
+    "quote": "do not apply to— (a) a tenancy entered into before the date on which the Housing Act 1988 came into force"
+   },
+   {
+    "requirement": "Statutory references to an excluded tenancy do not apply to any tenancy entered into on or after the date the Housing Act 1988 came into force if it was entered into pursuant to a contract made before that date.",
+    "quote": "do not apply to— (b) a tenancy entered into on or after that date but pursuant to a contract made before that date"
+   },
+   {
+    "requirement": "Subject to the pre-Housing Act 1988 exceptions, the terms 'excluded tenancy' and 'excluded licence' are to be construed in accordance with section 3A.",
+    "quote": "“excluded tenancy” and “excluded licence” shall be construed in accordance with section 3A below."
+   },
+   {
+    "requirement": "Section 3 applies with necessary modifications where the owner's right to recover possession arises upon the death of a tenant under a statutory tenancy governed by the Rent Act 1977 or the Rent (Agriculture) Act 1976.",
+    "quote": "apply where the owner’s right to recover possession arises on the death of the tenant under a statutory tenancy within the meaning of the Rent Act 1977 or the Rent (Agriculture) Act 1976."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The temporal threshold for entering into a restricted contract creating a licence for subsections (1) and (2) to apply",
+    "value": "commencement of section 69 of the Housing Act 1980",
+    "quote": "entered into after the commencement of section 69 of the Housing Act 1980"
+   },
+   {
+    "what": "The temporal cutoff date before which an entered tenancy, or a contract leading to a tenancy, is exempt from the excluded tenancy references",
+    "value": "date on which the Housing Act 1988 came into force",
+    "quote": "date on which the Housing Act 1988 came into force"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where premises have been let as a dwelling under a tenancy that is neither a statutorily protected tenancy nor an excluded tenancy, and that tenancy has ended but the occupier continues to reside in all or part of the premises, the owner cannot lawfully enforce a right to recover possession against the occupier without court proceedings.",
+   "quote": "it shall not be lawful for the owner to enforce against the occupier, otherwise than by proceedings in the court, his right to recover possession of the premises."
+  },
+  {
+   "requirement": "For the purposes of section 3, an occupier of premises is defined as any person who was lawfully residing in all or part of the premises at the time the former tenancy came to an end.",
+   "quote": "any person lawfully residing in the premises or part of them at the termination of the former tenancy."
+  },
+  {
+   "requirement": "Subsections (1) and (2) apply to any restricted contract within the meaning of the Rent Act 1977 that creates a licence and was entered into after the commencement of section 69 of the Housing Act 1980 in the same manner as they apply to a restricted contract creating a tenancy.",
+   "quote": "apply in relation to any restricted contract (within the meaning of the Rent Act 1977) which— (a) creates a licence; and (b) is entered into after the commencement of section 69 of the Housing Act 1980; as they apply in relation to a restricted contract which creates a tenancy."
+  },
+  {
+   "requirement": "Subsections (1) and (2) apply to premises occupied as a dwelling under a licence other than an excluded licence in the same way as they apply to premises let under a tenancy, with the words 'let' and 'tenancy' interpreted accordingly.",
+   "quote": "apply in relation to any premises occupied as a dwelling under a licence, other than an excluded licence, as they apply in relation to premises let as a dwelling under a tenancy"
+  },
+  {
+   "requirement": "Statutory references to an excluded tenancy do not apply to any tenancy entered into prior to the date the Housing Act 1988 came into force.",
+   "quote": "do not apply to— (a) a tenancy entered into before the date on which the Housing Act 1988 came into force"
+  },
+  {
+   "requirement": "Subject to the pre-Housing Act 1988 exceptions, the terms 'excluded tenancy' and 'excluded licence' are to be construed in accordance with section 3A.",
+   "quote": "“excluded tenancy” and “excluded licence” shall be construed in accordance with section 3A below."
+  },
+  {
+   "requirement": "Section 3 applies with necessary modifications where the owner's right to recover possession arises upon the death of a tenant under a statutory tenancy governed by the Rent Act 1977 or the Rent (Agriculture) Act 1976.",
+   "quote": "apply where the owner’s right to recover possession arises on the death of the tenant under a statutory tenancy within the meaning of the Rent Act 1977 or the Rent (Agriculture) Act 1976."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

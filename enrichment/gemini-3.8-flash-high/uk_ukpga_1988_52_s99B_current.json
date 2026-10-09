@@ -1,0 +1,125 @@
+{
+ "key": "uk/ukpga/1988/52/s99B@current",
+ "section": "uk/ukpga/1988/52/s99B",
+ "version": "current",
+ "source_sha256": "11853c55832f8a31f1ded218ff368473e59a02a8f66eccd359fb546fa3ff945b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A Community licence holder who is normally resident in Great Britain and authorised by their Community licence to drive medium-sized or large goods vehicles or passenger-carrying vehicles of any class must deliver their Community licence to the Secretary of State and provide the specified information on or before the expiry of twelve months beginning with the relevant date.",
+    "quote": "shall, on or before the expiry of the period of twelve months beginning with the relevant date, deliver his Community licence to the Secretary of State and provide him with the information specified in, or required under, subsection (4) below"
+   },
+   {
+    "requirement": "The requirement to deliver a Community licence and provide information does not apply to a Community licence holder from whom the Secretary of State has received a qualifying application within the meaning of section 88(1A) of the Road Traffic Act 1988 for the grant of a licence under Part III of the Act.",
+    "quote": "Subsection (1) above shall not apply to a Community licence holder from whom the Secretary of State has received a qualifying application (within the meaning of section 88(1A) of this Act) for the grant of a licence under this Part of this Act."
+   },
+   {
+    "requirement": "The information required from a Community licence holder comprises their name and address in Great Britain, date of birth, authorised vehicle classes, validity period of the licence in the issuing EEA State, whether it was exchanged for a licence from a non-EEA State, and any other information the Secretary of State requires for functions under Part III or Part IV of the Road Traffic Act 1988.",
+    "quote": "The information referred to in subsection (1) above is— (a) the name and address in Great Britain of the Community licence holder; (b) his date of birth; (c) the classes of vehicle which he is authorised by his Community licence to drive; (d) the period of validity of the Community licence in the EEA State in respect of which it was issued; (e) whether the licence was granted in exchange for a licence issued by a state other than an EEA State; and (f) such other information as the Secretary of State may require for the purposes of the proper exercise of any of his functions under this Part or Part IV of this Act."
+   },
+   {
+    "requirement": "The Secretary of State is permitted to endorse the driving record of any person who delivers a Community licence with any of the specified information (or information enabling it to be ascertained), and the Secretary of State is required to return the Community licence to the holder.",
+    "quote": "The Secretary of State— (a) may endorse the driving record of a person who delivers to him a Community licence (whether or not in pursuance of this section) with any part of the information specified in, or required under, subsection (4) above or with information providing a means of ascertaining that information or any part of it; and (b) must return the Community licence to the holder."
+   },
+   {
+    "requirement": "A Community licence holder whose name as specified on their Community licence ceases to be correct must immediately deliver the licence to the Secretary of State and provide particulars of the alterations to be made.",
+    "quote": "Where the name of a Community licence holder as specified in his Community licence ceases to be correct, he must deliver his Community licence immediately to the Secretary of State and provide him with particulars of the alterations falling to be made in the name on it."
+   },
+   {
+    "requirement": "Upon delivery of a Community licence due to an incorrect name, the Secretary of State may endorse the licence and the person's driving record with the correct name, and must return the licence to that person.",
+    "quote": "On the delivery of a Community licence by any person in pursuance of subsection (7) above, the Secretary of State may endorse the Community licence and that person's driving record with the correct name and must return the Community licence to that person."
+   },
+   {
+    "requirement": "If a Community licence holder fails to comply with the delivery and information requirements of subsection (1), the Secretary of State may serve a written notice requiring delivery of the licence and provision of the specified information within a period of not less than 28 days from the date of service.",
+    "quote": "Where a Community licence holder has not complied with subsection (1) above, the Secretary of State may serve notice in writing on the holder requiring him to deliver his Community licence to the Secretary of State and to provide him with the information specified in, or required under, subsection (4) above within such period (not being less than 28 days from the date of service of the notice) as is specified in the notice."
+   },
+   {
+    "requirement": "A person who drives a motor vehicle on a road commits an offence if they fail without reasonable excuse to comply with a requirement in a notice served under subsection (10) or a requirement imposed under subsection (7).",
+    "quote": "A person who drives a motor vehicle on a road is guilty of an offence if he fails without reasonable excuse— (a) to comply with a requirement contained in a notice served on him in pursuance of subsection (10) above, or (b) to comply with a requirement imposed under subsection ... (7) above."
+   },
+   {
+    "requirement": "In England and Wales, prosecution proceedings for the offence of failing to comply with a notice served under subsection (10) may only be instituted by the Secretary of State or by a constable acting with the Secretary of State's approval.",
+    "quote": "In England and Wales, proceedings for an offence by virtue of subsection (11)(a) above shall not be instituted except by the Secretary of State or by a constable acting with the approval of the Secretary of State."
+   },
+   {
+    "requirement": "The term 'relevant date' in section 99B is defined as having the meaning given by section 99A(8) of the Road Traffic Act 1988.",
+    "quote": "In this section “relevant date\" has the meaning given by section 99A(8) of this Act."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period beginning with the relevant date on or before which a Community licence holder must deliver their licence and provide information",
+    "value": "twelve months",
+    "quote": "period of twelve months beginning with the relevant date"
+   },
+   {
+    "what": "the minimum compliance period from the date of service to be specified in a notice served by the Secretary of State",
+    "value": "28 days",
+    "quote": "not being less than 28 days from the date of service of the notice"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A Community licence holder who is normally resident in Great Britain and authorised by their Community licence to drive medium-sized or large goods vehicles or passenger-carrying vehicles of any class must deliver their Community licence to the Secretary of State and provide the specified information on or before the expiry of twelve months beginning with the relevant date.",
+   "quote": "shall, on or before the expiry of the period of twelve months beginning with the relevant date, deliver his Community licence to the Secretary of State and provide him with the information specified in, or required under, subsection (4) below"
+  },
+  {
+   "requirement": "The requirement to deliver a Community licence and provide information does not apply to a Community licence holder from whom the Secretary of State has received a qualifying application within the meaning of section 88(1A) of the Road Traffic Act 1988 for the grant of a licence under Part III of the Act.",
+   "quote": "Subsection (1) above shall not apply to a Community licence holder from whom the Secretary of State has received a qualifying application (within the meaning of section 88(1A) of this Act) for the grant of a licence under this Part of this Act."
+  },
+  {
+   "requirement": "The information required from a Community licence holder comprises their name and address in Great Britain, date of birth, authorised vehicle classes, validity period of the licence in the issuing EEA State, whether it was exchanged for a licence from a non-EEA State, and any other information the Secretary of State requires for functions under Part III or Part IV of the Road Traffic Act 1988.",
+   "quote": "The information referred to in subsection (1) above is— (a) the name and address in Great Britain of the Community licence holder; (b) his date of birth; (c) the classes of vehicle which he is authorised by his Community licence to drive; (d) the period of validity of the Community licence in the EEA State in respect of which it was issued; (e) whether the licence was granted in exchange for a licence issued by a state other than an EEA State; and (f) such other information as the Secretary of State may require for the purposes of the proper exercise of any of his functions under this Part or Part IV of this Act."
+  },
+  {
+   "requirement": "The Secretary of State is permitted to endorse the driving record of any person who delivers a Community licence with any of the specified information (or information enabling it to be ascertained), and the Secretary of State is required to return the Community licence to the holder.",
+   "quote": "The Secretary of State— (a) may endorse the driving record of a person who delivers to him a Community licence (whether or not in pursuance of this section) with any part of the information specified in, or required under, subsection (4) above or with information providing a means of ascertaining that information or any part of it; and (b) must return the Community licence to the holder."
+  },
+  {
+   "requirement": "A Community licence holder whose name as specified on their Community licence ceases to be correct must immediately deliver the licence to the Secretary of State and provide particulars of the alterations to be made.",
+   "quote": "Where the name of a Community licence holder as specified in his Community licence ceases to be correct, he must deliver his Community licence immediately to the Secretary of State and provide him with particulars of the alterations falling to be made in the name on it."
+  },
+  {
+   "requirement": "Upon delivery of a Community licence due to an incorrect name, the Secretary of State may endorse the licence and the person's driving record with the correct name, and must return the licence to that person.",
+   "quote": "On the delivery of a Community licence by any person in pursuance of subsection (7) above, the Secretary of State may endorse the Community licence and that person's driving record with the correct name and must return the Community licence to that person."
+  },
+  {
+   "requirement": "If a Community licence holder fails to comply with the delivery and information requirements of subsection (1), the Secretary of State may serve a written notice requiring delivery of the licence and provision of the specified information within a period of not less than 28 days from the date of service.",
+   "quote": "Where a Community licence holder has not complied with subsection (1) above, the Secretary of State may serve notice in writing on the holder requiring him to deliver his Community licence to the Secretary of State and to provide him with the information specified in, or required under, subsection (4) above within such period (not being less than 28 days from the date of service of the notice) as is specified in the notice."
+  },
+  {
+   "requirement": "A person who drives a motor vehicle on a road commits an offence if they fail without reasonable excuse to comply with a requirement in a notice served under subsection (10) or a requirement imposed under subsection (7).",
+   "quote": "A person who drives a motor vehicle on a road is guilty of an offence if he fails without reasonable excuse— (a) to comply with a requirement contained in a notice served on him in pursuance of subsection (10) above, or (b) to comply with a requirement imposed under subsection ... (7) above."
+  },
+  {
+   "requirement": "In England and Wales, prosecution proceedings for the offence of failing to comply with a notice served under subsection (10) may only be instituted by the Secretary of State or by a constable acting with the Secretary of State's approval.",
+   "quote": "In England and Wales, proceedings for an offence by virtue of subsection (11)(a) above shall not be instituted except by the Secretary of State or by a constable acting with the approval of the Secretary of State."
+  },
+  {
+   "requirement": "The term 'relevant date' in section 99B is defined as having the meaning given by section 99A(8) of the Road Traffic Act 1988.",
+   "quote": "In this section “relevant date\" has the meaning given by section 99A(8) of this Act."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period beginning with the relevant date on or before which a Community licence holder must deliver their licence and provide information",
+   "value": "twelve months",
+   "quote": "period of twelve months beginning with the relevant date"
+  },
+  {
+   "what": "the minimum compliance period from the date of service to be specified in a notice served by the Secretary of State",
+   "value": "28 days",
+   "quote": "not being less than 28 days from the date of service of the notice"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

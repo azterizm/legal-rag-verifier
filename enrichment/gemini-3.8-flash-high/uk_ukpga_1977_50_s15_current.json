@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/1977/50/s15@current",
+ "section": "uk/ukpga/1977/50/s15",
+ "version": "current",
+ "source_sha256": "a563220dcd705d0114084c503f8b92055462804afbb138d60b6919bb0a89e5dd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "This Part of the Act is subject to Part III of the Act.",
+    "quote": "This Part of this Act is subject to Part III of this Act"
+   },
+   {
+    "requirement": "This Part of the Act does not affect the validity of any discharge or indemnity given by a person in consideration of receiving compensation in settlement of any claim that person has.",
+    "quote": "does not affect the validity, of any discharge or indemnity given by a person in consideration of the receipt by him of compensation in settlement of any claim which he has"
+   },
+   {
+    "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to the transfer of the ownership or possession of goods from one person to another, whether or not work has been done on them.",
+    "quote": "relates to the transfer of the ownership or possession of goods from one person to another (with or without work having been done on them)"
+   },
+   {
+    "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it constitutes a contract of service or apprenticeship.",
+    "quote": "constitutes a contract of service or apprenticeship"
+   },
+   {
+    "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to services of whatever kind, including carriage, deposit and pledge, care and custody, mandate, agency, loan, and services relating to the use of land.",
+    "quote": "relates to services of whatever kind, including (without prejudice to the foregoing generality) carriage, deposit and pledge, care and custody, mandate, agency, loan and services relating to the use of land"
+   },
+   {
+    "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to the liability of an occupier of land to persons entering upon or using that land.",
+    "quote": "relates to the liability of an occupier of land to persons entering upon or using that land"
+   },
+   {
+    "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to a grant of any right or permission to enter upon or use land that does not amount to an estate or interest in the land.",
+    "quote": "relates to a grant of any right or permission to enter upon or use land not amounting to an estate or interest in the land"
+   },
+   {
+    "requirement": "Notwithstanding subsection (2), sections 16 and 17 do not apply to any contract to the extent that it is a contract of insurance, including a contract to pay an annuity on human life.",
+    "quote": "do not apply to any contract to the extent that the contract— (i) is a contract of insurance (including a contract to pay annuity on human life)"
+   },
+   {
+    "requirement": "Notwithstanding subsection (2), sections 16 and 17 do not apply to any contract to the extent that it relates to the formation, constitution, or dissolution of any body corporate, unincorporated association, or partnership.",
+    "quote": "relates to the formation, constitution or dissolution of any body corporate or unincorporated association or partnership"
+   },
+   {
+    "requirement": "Notwithstanding subsection (2), sections 16 and 17 apply to a contract of marine salvage or towage, a charter party of a ship or hovercraft, a contract for the carriage of goods by ship or hovercraft, or a contract to which subsection (4) relates only to the extent that both parties deal or hold themselves out as dealing in the course of a business, and then only in so far as the contract purports to exclude or restrict liability for breach of duty in respect of death or personal injury.",
+    "quote": "apply to— a contract of marine salvage or towage;a charter party of a ship or hovercraft;a contract for the carriage of goods by ship or hovercraft; or,a contract to which subsection (4) below relates, (i) both parties deal or hold themselves out as dealing in the course of a business (and then only in so far as the contract purports to exclude or restrict liability for breach of duty in respect of death or personal injury); or only to the extent that—"
+   },
+   {
+    "requirement": "Subsection (4) relates to a contract under which goods are carried by ship or hovercraft and which specifies a ship or hovercraft as the means of carriage over part of the journey to be covered, in so far as the contract operates for and in relation to the carriage of the goods by that means.",
+    "quote": "contract in pursuance of which goods are carried by ship or hovercraft and which either— (a) specifies ship or hovercraft as the means of carriage over part of the journey to be covered; or"
+   },
+   {
+    "requirement": "Subsection (4) relates to a contract under which goods are carried by ship or hovercraft and which makes no provision as to the means of carriage and does not exclude a ship or hovercraft as that means, in so far as the contract operates for and in relation to the carriage of the goods by that means.",
+    "quote": "makes no provision as to the means of carriage and does not exclude ship or hovercraft as that means, in so far as the contract operates for and in relation to the carriage of the goods by that means"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "This Part of the Act is subject to Part III of the Act.",
+   "quote": "This Part of this Act is subject to Part III of this Act"
+  },
+  {
+   "requirement": "This Part of the Act does not affect the validity of any discharge or indemnity given by a person in consideration of receiving compensation in settlement of any claim that person has.",
+   "quote": "does not affect the validity, of any discharge or indemnity given by a person in consideration of the receipt by him of compensation in settlement of any claim which he has"
+  },
+  {
+   "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to the transfer of the ownership or possession of goods from one person to another, whether or not work has been done on them.",
+   "quote": "relates to the transfer of the ownership or possession of goods from one person to another (with or without work having been done on them)"
+  },
+  {
+   "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it constitutes a contract of service or apprenticeship.",
+   "quote": "constitutes a contract of service or apprenticeship"
+  },
+  {
+   "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to services of whatever kind, including carriage, deposit and pledge, care and custody, mandate, agency, loan, and services relating to the use of land.",
+   "quote": "relates to services of whatever kind, including (without prejudice to the foregoing generality) carriage, deposit and pledge, care and custody, mandate, agency, loan and services relating to the use of land"
+  },
+  {
+   "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to the liability of an occupier of land to persons entering upon or using that land.",
+   "quote": "relates to the liability of an occupier of land to persons entering upon or using that land"
+  },
+  {
+   "requirement": "Subject to subsection (3), sections 16 and 17 apply to a contract only to the extent that it relates to a grant of any right or permission to enter upon or use land that does not amount to an estate or interest in the land.",
+   "quote": "relates to a grant of any right or permission to enter upon or use land not amounting to an estate or interest in the land"
+  },
+  {
+   "requirement": "Notwithstanding subsection (2), sections 16 and 17 do not apply to any contract to the extent that it is a contract of insurance, including a contract to pay an annuity on human life.",
+   "quote": "do not apply to any contract to the extent that the contract— (i) is a contract of insurance (including a contract to pay annuity on human life)"
+  },
+  {
+   "requirement": "Notwithstanding subsection (2), sections 16 and 17 do not apply to any contract to the extent that it relates to the formation, constitution, or dissolution of any body corporate, unincorporated association, or partnership.",
+   "quote": "relates to the formation, constitution or dissolution of any body corporate or unincorporated association or partnership"
+  },
+  {
+   "requirement": "Notwithstanding subsection (2), sections 16 and 17 apply to a contract of marine salvage or towage, a charter party of a ship or hovercraft, a contract for the carriage of goods by ship or hovercraft, or a contract to which subsection (4) relates only to the extent that both parties deal or hold themselves out as dealing in the course of a business, and then only in so far as the contract purports to exclude or restrict liability for breach of duty in respect of death or personal injury.",
+   "quote": "apply to— a contract of marine salvage or towage;a charter party of a ship or hovercraft;a contract for the carriage of goods by ship or hovercraft; or,a contract to which subsection (4) below relates, (i) both parties deal or hold themselves out as dealing in the course of a business (and then only in so far as the contract purports to exclude or restrict liability for breach of duty in respect of death or personal injury); or only to the extent that—"
+  },
+  {
+   "requirement": "Subsection (4) relates to a contract under which goods are carried by ship or hovercraft and which specifies a ship or hovercraft as the means of carriage over part of the journey to be covered, in so far as the contract operates for and in relation to the carriage of the goods by that means.",
+   "quote": "contract in pursuance of which goods are carried by ship or hovercraft and which either— (a) specifies ship or hovercraft as the means of carriage over part of the journey to be covered; or"
+  },
+  {
+   "requirement": "Subsection (4) relates to a contract under which goods are carried by ship or hovercraft and which makes no provision as to the means of carriage and does not exclude a ship or hovercraft as that means, in so far as the contract operates for and in relation to the carriage of the goods by that means.",
+   "quote": "makes no provision as to the means of carriage and does not exclude ship or hovercraft as that means, in so far as the contract operates for and in relation to the carriage of the goods by that means"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

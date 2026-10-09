@@ -1,0 +1,77 @@
+{
+ "key": "uk/ukpga/2002/15/s45@current",
+ "section": "uk/ukpga/2002/15/s45",
+ "version": "current",
+ "source_sha256": "d7c45bf2c6ee81ab2542b3e4bc98bbf205b99a381b67e94671e00f5a30465450",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 45 applies where a commonhold association has passed a winding-up resolution and a termination-statement resolution with at least 80 per cent. of the members of the association voting in favour, and has appointed a liquidator under section 91 of the Insolvency Act 1986.",
+    "quote": "This section applies where a commonhold association— (a) has passed a winding-up resolution and a termination-statement resolution with at least 80 per cent. of the members of the association voting in favour, and (b) has appointed a liquidator under section 91 of the Insolvency Act 1986."
+   },
+   {
+    "requirement": "The liquidator must apply to the court within the prescribed period for an order determining the terms and conditions on which a termination application may be made and the terms of the termination statement to accompany it.",
+    "quote": "The liquidator shall within the prescribed period apply to the court for an order determining— (a) the terms and conditions on which a termination application may be made, and (b) the terms of the termination statement to accompany a termination application."
+   },
+   {
+    "requirement": "The liquidator must make a termination application within the period of three months starting with the date on which an order under section 45(2) is made.",
+    "quote": "The liquidator shall make a termination application within the period of three months starting with the date on which an order under subsection (2) is made."
+   },
+   {
+    "requirement": "If the liquidator fails to make an application under section 45(2) or (3) within the specified period, an application of the same kind may be made by a unit-holder or a person falling within a class prescribed for the purposes of section 45(4).",
+    "quote": "If the liquidator fails to make an application under subsection (2) or (3) within the period specified in that subsection an application of the same kind may be made by— (a) a unit-holder, or (b) a person falling within a class prescribed for the purposes of this subsection."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum percentage of members of the commonhold association voting in favour required to pass a winding-up resolution and a termination-statement resolution",
+    "value": "80 per cent.",
+    "quote": "at least 80 per cent. of the members of the association voting in favour"
+   },
+   {
+    "what": "period starting with the date on which an order under subsection (2) is made within which the liquidator must make a termination application",
+    "value": "three months",
+    "quote": "period of three months starting with the date on which an order under subsection (2) is made"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 45 applies where a commonhold association has passed a winding-up resolution and a termination-statement resolution with at least 80 per cent. of the members of the association voting in favour, and has appointed a liquidator under section 91 of the Insolvency Act 1986.",
+   "quote": "This section applies where a commonhold association— (a) has passed a winding-up resolution and a termination-statement resolution with at least 80 per cent. of the members of the association voting in favour, and (b) has appointed a liquidator under section 91 of the Insolvency Act 1986."
+  },
+  {
+   "requirement": "The liquidator must apply to the court within the prescribed period for an order determining the terms and conditions on which a termination application may be made and the terms of the termination statement to accompany it.",
+   "quote": "The liquidator shall within the prescribed period apply to the court for an order determining— (a) the terms and conditions on which a termination application may be made, and (b) the terms of the termination statement to accompany a termination application."
+  },
+  {
+   "requirement": "The liquidator must make a termination application within the period of three months starting with the date on which an order under section 45(2) is made.",
+   "quote": "The liquidator shall make a termination application within the period of three months starting with the date on which an order under subsection (2) is made."
+  },
+  {
+   "requirement": "If the liquidator fails to make an application under section 45(2) or (3) within the specified period, an application of the same kind may be made by a unit-holder or a person falling within a class prescribed for the purposes of section 45(4).",
+   "quote": "If the liquidator fails to make an application under subsection (2) or (3) within the period specified in that subsection an application of the same kind may be made by— (a) a unit-holder, or (b) a person falling within a class prescribed for the purposes of this subsection."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum percentage of members of the commonhold association voting in favour required to pass a winding-up resolution and a termination-statement resolution",
+   "value": "80 per cent.",
+   "quote": "at least 80 per cent. of the members of the association voting in favour"
+  },
+  {
+   "what": "period starting with the date on which an order under subsection (2) is made within which the liquidator must make a termination application",
+   "value": "three months",
+   "quote": "period of three months starting with the date on which an order under subsection (2) is made"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1985/68/s364@current",
+ "section": "uk/ukpga/1985/68/s364",
+ "version": "current",
+ "source_sha256": "af67da027456dcc15c715ad7893a72df851b28a37d82eb83fe9a19a09ec5f95b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The local housing authority may from time to time serve a notice on the occupier of premises subject to an operative overcrowding notice requiring that occupier to furnish a written statement within seven days with specified particulars.",
+    "quote": "The local housing authority may from time to time serve on the occupier of premises in respect of which an overcrowding notice is in force a notice requiring him to furnish them within seven days with a statement in writing"
+   },
+   {
+    "requirement": "The occupier of the premises may be required to furnish a statement giving the number of individuals who are occupying any part of the premises as sleeping accommodation on a date specified in the notice.",
+    "quote": "the number of individuals who are, on a date specified in the notice, occupying any part of the premises as sleeping accommodation"
+   },
+   {
+    "requirement": "The occupier of the premises may be required to furnish a statement giving the number of families or households to which the occupying individuals belong.",
+    "quote": "the number of families or households to which those individuals belong"
+   },
+   {
+    "requirement": "The occupier of the premises may be required to furnish a statement giving the names of the occupying individuals and of the heads of each of those families or households.",
+    "quote": "the names of those individuals and of the heads of each of those families or households"
+   },
+   {
+    "requirement": "The occupier of the premises may be required to furnish a statement giving the rooms used by the occupying individuals and families or households respectively.",
+    "quote": "the rooms used by those individuals and families or households respectively"
+   },
+   {
+    "requirement": "A person who knowingly fails to comply with the requirements of a notice served under this section commits a summary offence.",
+    "quote": "knowingly fails to comply with the requirements of such a notice, or (b) furnishes a statement which he knows to be false in a material particular, commits a summary offence"
+   },
+   {
+    "requirement": "A person convicted of knowingly failing to comply with the requirements of the notice is liable to a fine not exceeding level 3 on the standard scale.",
+    "quote": "liable on conviction to a fine not exceeding , in the case of such failure, level 3 on the standard scale"
+   },
+   {
+    "requirement": "A person who furnishes a statement which they know to be false in a material particular commits a summary offence.",
+    "quote": "furnishes a statement which he knows to be false in a material particular, commits a summary offence"
+   },
+   {
+    "requirement": "A person convicted of furnishing a statement known to be false in a material particular is liable to a fine not exceeding level 5 on the standard scale.",
+    "quote": "in the case of furnishing such a statement, level 5 on the standard scale"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "time limit for the occupier to furnish the written statement following service of the notice",
+    "value": "seven days",
+    "quote": "within seven days"
+   },
+   {
+    "what": "maximum fine level on the standard scale for knowingly failing to comply with the requirements of the notice",
+    "value": "level 3",
+    "quote": "in the case of such failure, level 3 on the standard scale"
+   },
+   {
+    "what": "maximum fine level on the standard scale for furnishing a statement known to be false in a material particular",
+    "value": "level 5",
+    "quote": "in the case of furnishing such a statement, level 5 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The local housing authority may from time to time serve a notice on the occupier of premises subject to an operative overcrowding notice requiring that occupier to furnish a written statement within seven days with specified particulars.",
+   "quote": "The local housing authority may from time to time serve on the occupier of premises in respect of which an overcrowding notice is in force a notice requiring him to furnish them within seven days with a statement in writing"
+  },
+  {
+   "requirement": "The occupier of the premises may be required to furnish a statement giving the number of individuals who are occupying any part of the premises as sleeping accommodation on a date specified in the notice.",
+   "quote": "the number of individuals who are, on a date specified in the notice, occupying any part of the premises as sleeping accommodation"
+  },
+  {
+   "requirement": "The occupier of the premises may be required to furnish a statement giving the number of families or households to which the occupying individuals belong.",
+   "quote": "the number of families or households to which those individuals belong"
+  },
+  {
+   "requirement": "The occupier of the premises may be required to furnish a statement giving the names of the occupying individuals and of the heads of each of those families or households.",
+   "quote": "the names of those individuals and of the heads of each of those families or households"
+  },
+  {
+   "requirement": "The occupier of the premises may be required to furnish a statement giving the rooms used by the occupying individuals and families or households respectively.",
+   "quote": "the rooms used by those individuals and families or households respectively"
+  },
+  {
+   "requirement": "A person who knowingly fails to comply with the requirements of a notice served under this section commits a summary offence.",
+   "quote": "knowingly fails to comply with the requirements of such a notice, or (b) furnishes a statement which he knows to be false in a material particular, commits a summary offence"
+  },
+  {
+   "requirement": "A person convicted of knowingly failing to comply with the requirements of the notice is liable to a fine not exceeding level 3 on the standard scale.",
+   "quote": "liable on conviction to a fine not exceeding , in the case of such failure, level 3 on the standard scale"
+  },
+  {
+   "requirement": "A person who furnishes a statement which they know to be false in a material particular commits a summary offence.",
+   "quote": "furnishes a statement which he knows to be false in a material particular, commits a summary offence"
+  },
+  {
+   "requirement": "A person convicted of furnishing a statement known to be false in a material particular is liable to a fine not exceeding level 5 on the standard scale.",
+   "quote": "in the case of furnishing such a statement, level 5 on the standard scale"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "time limit for the occupier to furnish the written statement following service of the notice",
+   "value": "seven days",
+   "quote": "within seven days"
+  },
+  {
+   "what": "maximum fine level on the standard scale for knowingly failing to comply with the requirements of the notice",
+   "value": "level 3",
+   "quote": "in the case of such failure, level 3 on the standard scale"
+  },
+  {
+   "what": "maximum fine level on the standard scale for furnishing a statement known to be false in a material particular",
+   "value": "level 5",
+   "quote": "in the case of furnishing such a statement, level 5 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

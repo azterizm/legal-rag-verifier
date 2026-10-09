@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/2013/29/s165@current",
+ "section": "uk/ukpga/2013/29/s165",
+ "version": "current",
+ "source_sha256": "8d13afbe5bb5d5eaa383ac68d5cb52f6e1af887a873c2d742a1f245940df9cd4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Schedule 12 to FA 2003 (stamp duty land tax: collection and recovery of tax) has effect in relation to the collection and recovery of tax under this Part as it has effect in relation to stamp duty land tax.",
+    "quote": "Schedule 12 to FA 2003 (stamp duty land tax: collection and recovery of tax) has effect in relation to the collection and recovery of tax under this Part as it has effect in relation to stamp duty land tax."
+   },
+   {
+    "requirement": "The reference in subsection (1) to tax under this Part includes any unpaid penalty or interest under this Part.",
+    "quote": "The reference in subsection (1) to tax under this Part includes any unpaid penalty or interest under this Part."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Schedule 12 to FA 2003 (stamp duty land tax: collection and recovery of tax) has effect in relation to the collection and recovery of tax under this Part as it has effect in relation to stamp duty land tax.",
+   "quote": "Schedule 12 to FA 2003 (stamp duty land tax: collection and recovery of tax) has effect in relation to the collection and recovery of tax under this Part as it has effect in relation to stamp duty land tax."
+  },
+  {
+   "requirement": "The reference in subsection (1) to tax under this Part includes any unpaid penalty or interest under this Part.",
+   "quote": "The reference in subsection (1) to tax under this Part includes any unpaid penalty or interest under this Part."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

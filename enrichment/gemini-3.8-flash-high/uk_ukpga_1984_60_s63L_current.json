@@ -1,0 +1,85 @@
+{
+ "key": "uk/ukpga/1984/60/s63L@current",
+ "section": "uk/ukpga/1984/60/s63L",
+ "version": "current",
+ "source_sha256": "2e92f58cd108d7f354939af2de5dd0779a0ed7252a43eda41d5e700047b1963e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 63L governs section 63D material that relates to an individual who is issued a penalty notice under section 2 of the Criminal Justice and Police Act 2001 and against whom no proceedings are brought for the offence to which that penalty notice relates.",
+    "quote": "relates to a person who is given a penalty notice under section 2 of the Criminal Justice and Police Act 2001 and in respect of whom no proceedings are brought for the offence to which the notice relates"
+   },
+   {
+    "requirement": "Section 63L applies only to section 63D material that was taken (or, for a DNA profile, derived from a sample taken) from the recipient of the penalty notice in connection with investigating the offence to which the penalty notice relates.",
+    "quote": "was taken (or, in the case of a DNA profile, derived from a sample taken) from the person in connection with the investigation of the offence to which the notice relates"
+   },
+   {
+    "requirement": "Fingerprints subject to section 63L may be retained for a period of 2 years starting on the date the fingerprints were taken.",
+    "quote": "in the case of fingerprints, for a period of 2 years beginning with the date on which the fingerprints were taken"
+   },
+   {
+    "requirement": "A DNA profile subject to section 63L derived from a single sample may be retained for a period of 2 years starting on the date the DNA sample was taken.",
+    "quote": "in the case of a DNA profile, for a period of 2 years beginning with— (i) the date on which the DNA sample from which the profile was derived was taken"
+   },
+   {
+    "requirement": "A DNA profile subject to section 63L derived from more than one DNA sample may be retained for a period of 2 years starting on the date the first of those samples was taken.",
+    "quote": "if the profile was derived from more than one DNA sample, the date on which the first of those samples was taken"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Retention period for fingerprints",
+    "value": "2 years",
+    "quote": "for a period of 2 years beginning with the date on which the fingerprints were taken"
+   },
+   {
+    "what": "Retention period for a DNA profile",
+    "value": "2 years",
+    "quote": "for a period of 2 years beginning with"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 63L governs section 63D material that relates to an individual who is issued a penalty notice under section 2 of the Criminal Justice and Police Act 2001 and against whom no proceedings are brought for the offence to which that penalty notice relates.",
+   "quote": "relates to a person who is given a penalty notice under section 2 of the Criminal Justice and Police Act 2001 and in respect of whom no proceedings are brought for the offence to which the notice relates"
+  },
+  {
+   "requirement": "Section 63L applies only to section 63D material that was taken (or, for a DNA profile, derived from a sample taken) from the recipient of the penalty notice in connection with investigating the offence to which the penalty notice relates.",
+   "quote": "was taken (or, in the case of a DNA profile, derived from a sample taken) from the person in connection with the investigation of the offence to which the notice relates"
+  },
+  {
+   "requirement": "Fingerprints subject to section 63L may be retained for a period of 2 years starting on the date the fingerprints were taken.",
+   "quote": "in the case of fingerprints, for a period of 2 years beginning with the date on which the fingerprints were taken"
+  },
+  {
+   "requirement": "A DNA profile subject to section 63L derived from a single sample may be retained for a period of 2 years starting on the date the DNA sample was taken.",
+   "quote": "in the case of a DNA profile, for a period of 2 years beginning with— (i) the date on which the DNA sample from which the profile was derived was taken"
+  },
+  {
+   "requirement": "A DNA profile subject to section 63L derived from more than one DNA sample may be retained for a period of 2 years starting on the date the first of those samples was taken.",
+   "quote": "if the profile was derived from more than one DNA sample, the date on which the first of those samples was taken"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Retention period for fingerprints",
+   "value": "2 years",
+   "quote": "for a period of 2 years beginning with the date on which the fingerprints were taken"
+  },
+  {
+   "what": "Retention period for a DNA profile",
+   "value": "2 years",
+   "quote": "for a period of 2 years beginning with"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

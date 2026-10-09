@@ -1,0 +1,229 @@
+{
+ "key": "uk/ukpga/1996/52/s195@current",
+ "section": "uk/ukpga/1996/52/s195",
+ "version": "current",
+ "source_sha256": "9816e2f58fa6cdcf5a65a2dfeb28b2dbacc7900188507cac4cd7ac60441fdd4c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 195 applies where the local housing authority is satisfied that an applicant is threatened with homelessness and eligible for assistance.",
+    "quote": "authority are satisfied that an applicant is— (a) threatened with homelessness, and (b) eligible for assistance"
+   },
+   {
+    "requirement": "The local housing authority must take reasonable steps to help the applicant to secure that accommodation does not cease to be available for the applicant's occupation.",
+    "quote": "must take reasonable steps to help the applicant to secure that accommodation does not cease to be available for the applicant's occupation"
+   },
+   {
+    "requirement": "In deciding what steps they are to take to help the applicant, the local housing authority must have regard to their assessment of the applicant's case under section 189A.",
+    "quote": "must have regard to their assessment of the applicant's case under section 189A"
+   },
+   {
+    "requirement": "The local housing authority's duty to take reasonable steps does not affect any right of the authority to secure vacant possession of any accommodation by virtue of contract, enactment, or rule of law.",
+    "quote": "does not affect any right of the authority, whether by virtue of contract, enactment or rule of law, to secure vacant possession of any accommodation"
+   },
+   {
+    "requirement": "The local housing authority may give notice to the applicant bringing the duty to take reasonable steps under subsection (2) to an end if any of the circumstances mentioned in subsection (8) apply.",
+    "quote": "authority may give notice to the applicant bringing the duty under subsection (2) to an end"
+   },
+   {
+    "requirement": "The local housing authority may not give notice to the applicant under subsection (5) on the basis that the circumstances in subsection (8)(b) apply if a valid possession notice under section 21 or section 8 of the Housing Act 1988 has been given that specifies a date that is within 56 days or has passed, and is in respect of the only accommodation available for the applicant's occupation.",
+    "quote": "authority may not give notice to the applicant under subsection (5) on the basis that the circumstances in subsection (8)(b) apply"
+   },
+   {
+    "requirement": "A notice bringing the duty to an end must specify which of the circumstances in subsection (8) apply.",
+    "quote": "The notice must— (a) specify which of the circumstances apply"
+   },
+   {
+    "requirement": "A notice bringing the duty to an end must inform the applicant that the applicant has a right to request a review of the authority's decision to bring the duty to an end and of the time within which such a request must be made.",
+    "quote": "inform the applicant that the applicant has a right to request a review of the authority's decision to bring the duty under subsection (2) to an end and of the time within which such a request must be made"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has suitable accommodation available for occupation and a reasonable prospect of having suitable accommodation available for occupation for at least 6 months, or such longer period not exceeding 12 months as may be prescribed, from the date of the notice.",
+    "quote": "reasonable prospect of having suitable accommodation available for occupation for at least 6 months, or such longer period not exceeding 12 months as may be prescribed, from the date of the notice"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the authority have complied with the duty under subsection (2) and the period of 56 days beginning with the day the authority are first satisfied under subsection (1) has ended, whether or not the applicant is still threatened with homelessness.",
+    "quote": "the authority have complied with the duty under subsection (2) and the period of 56 days beginning with the day that the authority are first satisfied as mentioned in subsection (1) has ended (whether or not the applicant is still threatened with homelessness)"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has become homeless.",
+    "quote": "the applicant has become homeless"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has refused an offer of suitable accommodation and, on the date of refusal, there was a reasonable prospect that suitable accommodation would be available for occupation by the applicant for at least 6 months or such longer period not exceeding 12 months as may be prescribed.",
+    "quote": "the applicant has refused an offer of suitable accommodation and, on the date of refusal, there was a reasonable prospect that suitable accommodation would be available for occupation by the applicant for at least 6 months or such longer period not exceeding 12 months as may be prescribed"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has become homeless intentionally from any accommodation made available to the applicant as a result of the authority's exercise of their functions under subsection (2).",
+    "quote": "the applicant has become homeless intentionally from any accommodation that has been made available to the applicant as a result of the authority's exercise of their functions under subsection (2)"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant is no longer eligible for assistance.",
+    "quote": "the applicant is no longer eligible for assistance"
+   },
+   {
+    "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has withdrawn the application mentioned in section 183(1).",
+    "quote": "the applicant has withdrawn the application mentioned in section 183(1)"
+   },
+   {
+    "requirement": "A notice under section 195 must be given in writing.",
+    "quote": "A notice under this section must be given in writing"
+   },
+   {
+    "requirement": "If a notice under section 195 is not received by the applicant, it is to be treated as having been given to the applicant if it is made available at the local housing authority's office for a reasonable period for collection by or on behalf of the applicant.",
+    "quote": "is to be treated as having been given to the applicant if it is made available at the authority's office for a reasonable period for collection by or on behalf of the applicant"
+   },
+   {
+    "requirement": "The duty under subsection (2) can also be brought to an end under sections 193B and 193C by notices in cases of the applicant's deliberate and unreasonable refusal to co-operate.",
+    "quote": "The duty under subsection (2) can also be brought to an end under sections 193B and 193C (notices in cases of applicant's deliberate and unreasonable refusal to co-operate)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period within which a possession notice's specified date falls to bar ending the duty under subsection (8)(b)",
+    "value": "56 days",
+    "quote": "within 56 days"
+   },
+   {
+    "what": "minimum period of prospect of available suitable accommodation from the date of the notice to end the duty under subsection (8)(a)",
+    "value": "6 months",
+    "quote": "at least 6 months"
+   },
+   {
+    "what": "maximum prescribed period of prospect of available suitable accommodation from the date of the notice to end the duty under subsection (8)(a)",
+    "value": "12 months",
+    "quote": "not exceeding 12 months"
+   },
+   {
+    "what": "period following initial satisfaction under subsection (1) after which the duty can be ended under subsection (8)(b)",
+    "value": "56 days",
+    "quote": "period of 56 days"
+   },
+   {
+    "what": "minimum period of prospect of available suitable accommodation on the date of refusal to end the duty under subsection (8)(d)",
+    "value": "6 months",
+    "quote": "at least 6 months"
+   },
+   {
+    "what": "maximum prescribed period of prospect of available suitable accommodation on the date of refusal to end the duty under subsection (8)(d)",
+    "value": "12 months",
+    "quote": "not exceeding 12 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 195 applies where the local housing authority is satisfied that an applicant is threatened with homelessness and eligible for assistance.",
+   "quote": "authority are satisfied that an applicant is— (a) threatened with homelessness, and (b) eligible for assistance"
+  },
+  {
+   "requirement": "The local housing authority must take reasonable steps to help the applicant to secure that accommodation does not cease to be available for the applicant's occupation.",
+   "quote": "must take reasonable steps to help the applicant to secure that accommodation does not cease to be available for the applicant's occupation"
+  },
+  {
+   "requirement": "In deciding what steps they are to take to help the applicant, the local housing authority must have regard to their assessment of the applicant's case under section 189A.",
+   "quote": "must have regard to their assessment of the applicant's case under section 189A"
+  },
+  {
+   "requirement": "The local housing authority's duty to take reasonable steps does not affect any right of the authority to secure vacant possession of any accommodation by virtue of contract, enactment, or rule of law.",
+   "quote": "does not affect any right of the authority, whether by virtue of contract, enactment or rule of law, to secure vacant possession of any accommodation"
+  },
+  {
+   "requirement": "The local housing authority may give notice to the applicant bringing the duty to take reasonable steps under subsection (2) to an end if any of the circumstances mentioned in subsection (8) apply.",
+   "quote": "authority may give notice to the applicant bringing the duty under subsection (2) to an end"
+  },
+  {
+   "requirement": "The local housing authority may not give notice to the applicant under subsection (5) on the basis that the circumstances in subsection (8)(b) apply if a valid possession notice under section 21 or section 8 of the Housing Act 1988 has been given that specifies a date that is within 56 days or has passed, and is in respect of the only accommodation available for the applicant's occupation.",
+   "quote": "authority may not give notice to the applicant under subsection (5) on the basis that the circumstances in subsection (8)(b) apply"
+  },
+  {
+   "requirement": "A notice bringing the duty to an end must specify which of the circumstances in subsection (8) apply.",
+   "quote": "The notice must— (a) specify which of the circumstances apply"
+  },
+  {
+   "requirement": "A notice bringing the duty to an end must inform the applicant that the applicant has a right to request a review of the authority's decision to bring the duty to an end and of the time within which such a request must be made.",
+   "quote": "inform the applicant that the applicant has a right to request a review of the authority's decision to bring the duty under subsection (2) to an end and of the time within which such a request must be made"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has suitable accommodation available for occupation and a reasonable prospect of having suitable accommodation available for occupation for at least 6 months, or such longer period not exceeding 12 months as may be prescribed, from the date of the notice.",
+   "quote": "reasonable prospect of having suitable accommodation available for occupation for at least 6 months, or such longer period not exceeding 12 months as may be prescribed, from the date of the notice"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the authority have complied with the duty under subsection (2) and the period of 56 days beginning with the day the authority are first satisfied under subsection (1) has ended, whether or not the applicant is still threatened with homelessness.",
+   "quote": "the authority have complied with the duty under subsection (2) and the period of 56 days beginning with the day that the authority are first satisfied as mentioned in subsection (1) has ended (whether or not the applicant is still threatened with homelessness)"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has become homeless.",
+   "quote": "the applicant has become homeless"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has refused an offer of suitable accommodation and, on the date of refusal, there was a reasonable prospect that suitable accommodation would be available for occupation by the applicant for at least 6 months or such longer period not exceeding 12 months as may be prescribed.",
+   "quote": "the applicant has refused an offer of suitable accommodation and, on the date of refusal, there was a reasonable prospect that suitable accommodation would be available for occupation by the applicant for at least 6 months or such longer period not exceeding 12 months as may be prescribed"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has become homeless intentionally from any accommodation made available to the applicant as a result of the authority's exercise of their functions under subsection (2).",
+   "quote": "the applicant has become homeless intentionally from any accommodation that has been made available to the applicant as a result of the authority's exercise of their functions under subsection (2)"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant is no longer eligible for assistance.",
+   "quote": "the applicant is no longer eligible for assistance"
+  },
+  {
+   "requirement": "The local housing authority may bring the duty to an end if satisfied that the applicant has withdrawn the application mentioned in section 183(1).",
+   "quote": "the applicant has withdrawn the application mentioned in section 183(1)"
+  },
+  {
+   "requirement": "A notice under section 195 must be given in writing.",
+   "quote": "A notice under this section must be given in writing"
+  },
+  {
+   "requirement": "If a notice under section 195 is not received by the applicant, it is to be treated as having been given to the applicant if it is made available at the local housing authority's office for a reasonable period for collection by or on behalf of the applicant.",
+   "quote": "is to be treated as having been given to the applicant if it is made available at the authority's office for a reasonable period for collection by or on behalf of the applicant"
+  },
+  {
+   "requirement": "The duty under subsection (2) can also be brought to an end under sections 193B and 193C by notices in cases of the applicant's deliberate and unreasonable refusal to co-operate.",
+   "quote": "The duty under subsection (2) can also be brought to an end under sections 193B and 193C (notices in cases of applicant's deliberate and unreasonable refusal to co-operate)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period within which a possession notice's specified date falls to bar ending the duty under subsection (8)(b)",
+   "value": "56 days",
+   "quote": "within 56 days"
+  },
+  {
+   "what": "minimum period of prospect of available suitable accommodation from the date of the notice to end the duty under subsection (8)(a)",
+   "value": "6 months",
+   "quote": "at least 6 months"
+  },
+  {
+   "what": "maximum prescribed period of prospect of available suitable accommodation from the date of the notice to end the duty under subsection (8)(a)",
+   "value": "12 months",
+   "quote": "not exceeding 12 months"
+  },
+  {
+   "what": "period following initial satisfaction under subsection (1) after which the duty can be ended under subsection (8)(b)",
+   "value": "56 days",
+   "quote": "period of 56 days"
+  },
+  {
+   "what": "minimum period of prospect of available suitable accommodation on the date of refusal to end the duty under subsection (8)(d)",
+   "value": "6 months",
+   "quote": "at least 6 months"
+  },
+  {
+   "what": "maximum prescribed period of prospect of available suitable accommodation on the date of refusal to end the duty under subsection (8)(d)",
+   "value": "12 months",
+   "quote": "not exceeding 12 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 18,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 6
+ }
+}

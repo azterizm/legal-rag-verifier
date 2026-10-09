@@ -1,0 +1,231 @@
+{
+ "key": "uk/ukpga/1985/70/s30C@current",
+ "section": "uk/ukpga/1985/70/s30C",
+ "version": "current",
+ "source_sha256": "5adfe13619ab71cfbc87ff977f5c9968c9a6720f96b76d11062ced100c13b5b2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 30C of the Landlord and Tenant Act 1985 applies to a lease of premises that consist of or include a dwelling in a higher-risk building.",
+    "quote": "applies to a lease of premises which consist of or include a dwelling in a higher-risk building"
+   },
+   {
+    "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the landlord to comply with their building safety duties where the landlord is an accountable person for the higher-risk building.",
+    "quote": "where the landlord is an accountable person for the higher-risk building, to comply with their building safety duties"
+   },
+   {
+    "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the landlord to cooperate with any person in connection with a relevant person complying with their building safety duties.",
+    "quote": "to cooperate with any person in connection with a relevant person complying with their building safety duties"
+   },
+   {
+    "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the landlord to comply with a special measures order in relation to the higher-risk building so far as it relates to the landlord, where such an order is in force.",
+    "quote": "where a special measures order in relation to the higher-risk building is in force, to comply with that order so far as it relates to the landlord"
+   },
+   {
+    "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the tenant to allow the landlord, a relevant person, or a person authorised in writing by the landlord or a relevant person to enter the premises for a relevant building safety purpose.",
+    "quote": "to allow the landlord, a relevant person or a person authorised in writing by the landlord or a relevant person to enter the premises for a relevant building safety purpose"
+   },
+   {
+    "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the tenant to comply with their duties under sections 95 and 97 of the Building Safety Act 2022 where the tenant is a resident of the higher-risk building.",
+    "quote": "where the tenant is a resident of the higher-risk building, to comply with their duties under sections 95 and 97 of the Building Safety Act 2022"
+   },
+   {
+    "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the tenant to comply with a special measures order in relation to the higher-risk building so far as it relates to the tenant, where such an order is in force.",
+    "quote": "where a special measures order in relation to the higher-risk building is in force, to comply with that order so far as it relates to the tenant"
+   },
+   {
+    "requirement": "The landlord's implied covenant to cooperate with a person includes taking any steps reasonably required by that person to facilitate compliance by a relevant person with their building safety duties.",
+    "quote": "taking any steps which are reasonably required by the person to facilitate compliance by a relevant person with their building safety duties"
+   },
+   {
+    "requirement": "The landlord's implied covenant to cooperate includes providing any information, including names and contact details of residents and tenants of the premises, to a relevant person or their written authorised representative where the information is reasonably required in connection with the relevant person complying with their building safety duties.",
+    "quote": "where the person is a relevant person (or a person authorised in writing by a relevant person), providing any information (including names and contact details of residents and tenants of the premises) to the person which is reasonably required in connection with the relevant person complying with their building safety duties"
+   },
+   {
+    "requirement": "A relevant building safety purpose includes inspecting the premises in connection with a relevant person complying with their building safety duties.",
+    "quote": "inspecting the premises in connection with a relevant person complying with their building safety duties"
+   },
+   {
+    "requirement": "A relevant building safety purpose includes carrying out works to the premises where such works are required to be carried out in connection with a relevant person complying with their building safety duties.",
+    "quote": "carrying out works to the premises, where such works are required to be carried out in connection with a relevant person complying with their building safety duties"
+   },
+   {
+    "requirement": "A relevant building safety purpose includes accessing a part of the higher-risk building that is not let to the tenant in order to inspect that part of the building in connection with a relevant person complying with their building safety duties.",
+    "quote": "accessing a part of the higher-risk building that is not let to the tenant in order to— (i) inspect that part of the building in connection with a relevant person complying with their building safety duties"
+   },
+   {
+    "requirement": "A relevant building safety purpose includes accessing a part of the higher-risk building that is not let to the tenant in order to carry out works to that part of the building where such works are required to be carried out in connection with a relevant person complying with their building safety duties.",
+    "quote": "carry out works to that part of the building, where such works are required to be carried out in connection with a relevant person complying with their building safety duties"
+   },
+   {
+    "requirement": "The tenant's implied covenant requires entry to the premises to be allowed only at reasonable times.",
+    "quote": "entry to the premises to be allowed— (a) only at reasonable times"
+   },
+   {
+    "requirement": "The tenant's implied covenant requires entry to the premises to be allowed only if the tenant has been given at least 48 hours' notice in writing.",
+    "quote": "only if the tenant has been given at least 48 hours’ notice in writing"
+   },
+   {
+    "requirement": "Except where disclosure would contravene data protection legislation, the landlord's disclosure of information under subsections (2)(b) and (4)(b) does not breach any obligation of confidence owed by the landlord in relation to that information.",
+    "quote": "does not breach— (a) any obligation of confidence owed by the landlord in relation to that information"
+   },
+   {
+    "requirement": "Except where disclosure would contravene data protection legislation, the landlord's disclosure of information under subsections (2)(b) and (4)(b) does not breach any other restriction on the disclosure of information, however imposed.",
+    "quote": "does not breach— (b) any other restriction on the disclosure of information (however imposed)"
+   },
+   {
+    "requirement": "The provisions under subsections (2)(b) and (4)(b) do not require a disclosure of information if that disclosure would contravene the data protection legislation.",
+    "quote": "Subsections (2)(b) and (4)(b) do not require a disclosure of information if the disclosure would contravene the data protection legislation"
+   },
+   {
+    "requirement": "When determining whether a disclosure of information would contravene the data protection legislation, the duty imposed by subsections (2)(b) and (4)(b) must be taken into account.",
+    "quote": "in determining whether a disclosure would do so, take into account the duty imposed by subsections (2)(b) and (4)(b)"
+   },
+   {
+    "requirement": "In relation to an accountable person, 'building safety duties' means any duties of the accountable person under Part 4 of the Building Safety Act 2022, or regulations made under that Part of that Act.",
+    "quote": "in relation to an accountable person, means any duties of the accountable person under Part 4 of the Building Safety Act 2022, or regulations made under that Part of that Act"
+   },
+   {
+    "requirement": "In relation to a special measures manager, 'building safety duties' means any duties of the manager included in the special measures order appointing the manager.",
+    "quote": "in relation to a special measures manager, means any duties of the manager included in the special measures order appointing the manager"
+   },
+   {
+    "requirement": "'The data protection legislation' has the same meaning as in section 3 of the Data Protection Act 2018.",
+    "quote": "“the data protection legislation” has the same meaning as in the Data Protection Act 2018 (see section 3 of that Act)"
+   },
+   {
+    "requirement": "A 'relevant person' means an accountable person for the higher-risk building or a special measures manager for the higher-risk building.",
+    "quote": "“relevant person” means— an accountable person for the higher-risk building;a special measures manager for the higher-risk building"
+   },
+   {
+    "requirement": "'Resident' and 'resident of a higher-risk building' have the same meaning as in section 71(3) and (4)(c) of Part 4 of the Building Safety Act 2022.",
+    "quote": "“resident” and “resident of a higher-risk building” have the same meaning as in Part 4 of the Building Safety Act 2022 (see section 71(3) and (4)(c) of that Act)"
+   },
+   {
+    "requirement": "'Works' includes alterations, improvements and installations.",
+    "quote": "“works” includes alterations, improvements and installations"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum written notice required to be given to the tenant before entry to the premises is allowed",
+    "value": "at least 48 hours’",
+    "quote": "only if the tenant has been given at least 48 hours’ notice in writing"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 30C of the Landlord and Tenant Act 1985 applies to a lease of premises that consist of or include a dwelling in a higher-risk building.",
+   "quote": "applies to a lease of premises which consist of or include a dwelling in a higher-risk building"
+  },
+  {
+   "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the landlord to comply with their building safety duties where the landlord is an accountable person for the higher-risk building.",
+   "quote": "where the landlord is an accountable person for the higher-risk building, to comply with their building safety duties"
+  },
+  {
+   "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the landlord to cooperate with any person in connection with a relevant person complying with their building safety duties.",
+   "quote": "to cooperate with any person in connection with a relevant person complying with their building safety duties"
+  },
+  {
+   "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the landlord to comply with a special measures order in relation to the higher-risk building so far as it relates to the landlord, where such an order is in force.",
+   "quote": "where a special measures order in relation to the higher-risk building is in force, to comply with that order so far as it relates to the landlord"
+  },
+  {
+   "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the tenant to allow the landlord, a relevant person, or a person authorised in writing by the landlord or a relevant person to enter the premises for a relevant building safety purpose.",
+   "quote": "to allow the landlord, a relevant person or a person authorised in writing by the landlord or a relevant person to enter the premises for a relevant building safety purpose"
+  },
+  {
+   "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the tenant to comply with their duties under sections 95 and 97 of the Building Safety Act 2022 where the tenant is a resident of the higher-risk building.",
+   "quote": "where the tenant is a resident of the higher-risk building, to comply with their duties under sections 95 and 97 of the Building Safety Act 2022"
+  },
+  {
+   "requirement": "A lease of premises consisting of or including a dwelling in a higher-risk building contains an implied covenant by the tenant to comply with a special measures order in relation to the higher-risk building so far as it relates to the tenant, where such an order is in force.",
+   "quote": "where a special measures order in relation to the higher-risk building is in force, to comply with that order so far as it relates to the tenant"
+  },
+  {
+   "requirement": "The landlord's implied covenant to cooperate with a person includes taking any steps reasonably required by that person to facilitate compliance by a relevant person with their building safety duties.",
+   "quote": "taking any steps which are reasonably required by the person to facilitate compliance by a relevant person with their building safety duties"
+  },
+  {
+   "requirement": "The landlord's implied covenant to cooperate includes providing any information, including names and contact details of residents and tenants of the premises, to a relevant person or their written authorised representative where the information is reasonably required in connection with the relevant person complying with their building safety duties.",
+   "quote": "where the person is a relevant person (or a person authorised in writing by a relevant person), providing any information (including names and contact details of residents and tenants of the premises) to the person which is reasonably required in connection with the relevant person complying with their building safety duties"
+  },
+  {
+   "requirement": "A relevant building safety purpose includes inspecting the premises in connection with a relevant person complying with their building safety duties.",
+   "quote": "inspecting the premises in connection with a relevant person complying with their building safety duties"
+  },
+  {
+   "requirement": "A relevant building safety purpose includes carrying out works to the premises where such works are required to be carried out in connection with a relevant person complying with their building safety duties.",
+   "quote": "carrying out works to the premises, where such works are required to be carried out in connection with a relevant person complying with their building safety duties"
+  },
+  {
+   "requirement": "A relevant building safety purpose includes accessing a part of the higher-risk building that is not let to the tenant in order to inspect that part of the building in connection with a relevant person complying with their building safety duties.",
+   "quote": "accessing a part of the higher-risk building that is not let to the tenant in order to— (i) inspect that part of the building in connection with a relevant person complying with their building safety duties"
+  },
+  {
+   "requirement": "A relevant building safety purpose includes accessing a part of the higher-risk building that is not let to the tenant in order to carry out works to that part of the building where such works are required to be carried out in connection with a relevant person complying with their building safety duties.",
+   "quote": "carry out works to that part of the building, where such works are required to be carried out in connection with a relevant person complying with their building safety duties"
+  },
+  {
+   "requirement": "The tenant's implied covenant requires entry to the premises to be allowed only at reasonable times.",
+   "quote": "entry to the premises to be allowed— (a) only at reasonable times"
+  },
+  {
+   "requirement": "The tenant's implied covenant requires entry to the premises to be allowed only if the tenant has been given at least 48 hours' notice in writing.",
+   "quote": "only if the tenant has been given at least 48 hours’ notice in writing"
+  },
+  {
+   "requirement": "Except where disclosure would contravene data protection legislation, the landlord's disclosure of information under subsections (2)(b) and (4)(b) does not breach any obligation of confidence owed by the landlord in relation to that information.",
+   "quote": "does not breach— (a) any obligation of confidence owed by the landlord in relation to that information"
+  },
+  {
+   "requirement": "The provisions under subsections (2)(b) and (4)(b) do not require a disclosure of information if that disclosure would contravene the data protection legislation.",
+   "quote": "Subsections (2)(b) and (4)(b) do not require a disclosure of information if the disclosure would contravene the data protection legislation"
+  },
+  {
+   "requirement": "When determining whether a disclosure of information would contravene the data protection legislation, the duty imposed by subsections (2)(b) and (4)(b) must be taken into account.",
+   "quote": "in determining whether a disclosure would do so, take into account the duty imposed by subsections (2)(b) and (4)(b)"
+  },
+  {
+   "requirement": "In relation to an accountable person, 'building safety duties' means any duties of the accountable person under Part 4 of the Building Safety Act 2022, or regulations made under that Part of that Act.",
+   "quote": "in relation to an accountable person, means any duties of the accountable person under Part 4 of the Building Safety Act 2022, or regulations made under that Part of that Act"
+  },
+  {
+   "requirement": "In relation to a special measures manager, 'building safety duties' means any duties of the manager included in the special measures order appointing the manager.",
+   "quote": "in relation to a special measures manager, means any duties of the manager included in the special measures order appointing the manager"
+  },
+  {
+   "requirement": "'The data protection legislation' has the same meaning as in section 3 of the Data Protection Act 2018.",
+   "quote": "“the data protection legislation” has the same meaning as in the Data Protection Act 2018 (see section 3 of that Act)"
+  },
+  {
+   "requirement": "A 'relevant person' means an accountable person for the higher-risk building or a special measures manager for the higher-risk building.",
+   "quote": "“relevant person” means— an accountable person for the higher-risk building;a special measures manager for the higher-risk building"
+  },
+  {
+   "requirement": "'Resident' and 'resident of a higher-risk building' have the same meaning as in section 71(3) and (4)(c) of Part 4 of the Building Safety Act 2022.",
+   "quote": "“resident” and “resident of a higher-risk building” have the same meaning as in Part 4 of the Building Safety Act 2022 (see section 71(3) and (4)(c) of that Act)"
+  },
+  {
+   "requirement": "'Works' includes alterations, improvements and installations.",
+   "quote": "“works” includes alterations, improvements and installations"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum written notice required to be given to the tenant before entry to the premises is allowed",
+   "value": "at least 48 hours’",
+   "quote": "only if the tenant has been given at least 48 hours’ notice in writing"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 25,
+  "elements_verified": 24,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/1996/18/s17@current",
+ "section": "uk/ukpga/1996/18/s17",
+ "version": "current",
+ "source_sha256": "9c95bccb145ad7cbdc2569ea95a70104fc28ec7228e8ebfc21e3959a710128da",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In the relevant provisions of this Part, a \"cash shortage\" means a deficit arising in relation to amounts received in connection with retail transactions.",
+    "quote": "“cash shortage” means a deficit arising in relation to amounts received in connection with retail transactions"
+   },
+   {
+    "requirement": "In the relevant provisions of this Part, a \"stock deficiency\" means a stock deficiency arising in the course of retail transactions.",
+    "quote": "“stock deficiency” means a stock deficiency arising in the course of retail transactions."
+   },
+   {
+    "requirement": "In the relevant provisions of this Part, \"retail employment\" in relation to a worker means employment involving, whether or not on a regular basis, the carrying out by the worker of retail transactions directly with members of the public, fellow workers, or other individuals in their personal capacities.",
+    "quote": "the carrying out by the worker of retail transactions directly with members of the public or with fellow workers or other individuals in their personal capacities"
+   },
+   {
+    "requirement": "In the relevant provisions of this Part, \"retail employment\" in relation to a worker means employment involving, whether or not on a regular basis, the collection by the worker of amounts payable in connection with retail transactions carried out by other persons directly with members of the public, fellow workers, or other individuals in their personal capacities.",
+    "quote": "the collection by the worker of amounts payable in connection with retail transactions carried out by other persons directly with members of the public or with fellow workers or other individuals in their personal capacities."
+   },
+   {
+    "requirement": "References in section 17 to a \"retail transaction\" mean the sale or supply of goods or the supply of services, including financial services.",
+    "quote": "References in this section to a “retail transaction” are to the sale or supply of goods or the supply of services (including financial services)."
+   },
+   {
+    "requirement": "References in the relevant provisions of this Part to a deduction made from wages of a worker in retail employment, or to a payment received from such a worker by the employer, on account of a cash shortage or stock deficiency include a deduction or payment made or received on account of any dishonesty or other conduct on the part of the worker which resulted in any such shortage or deficiency, whether or not the deduction or payment is designed to reflect the exact amount of the shortage or deficiency.",
+    "quote": "any dishonesty or other conduct on the part of the worker which resulted in any such shortage or deficiency"
+   },
+   {
+    "requirement": "References in the relevant provisions of this Part to a deduction made from wages of a worker in retail employment, or to a payment received from such a worker by the employer, on account of a cash shortage or stock deficiency include a deduction or payment made or received on account of any other event in respect of which the worker (whether or not together with any other workers) has contractual liability and which resulted in any such shortage or deficiency, whether or not the deduction or payment is designed to reflect the exact amount of the shortage or deficiency.",
+    "quote": "any other event in respect of which he (whether or not together with any other workers) has any contractual liability and which so resulted"
+   },
+   {
+    "requirement": "References in the relevant provisions of this Part to the recovery from a worker of an amount in respect of a cash shortage or stock deficiency include references to the recovery from the worker of an amount in respect of any conduct or event mentioned in subsection (4)(a) or (b).",
+    "quote": "References in the following provisions of this Part to the recovery from a worker of an amount in respect of a cash shortage or stock deficiency accordingly include references to the recovery from him of an amount in respect of any such conduct or event as is mentioned in subsection (4)(a) or (b)."
+   },
+   {
+    "requirement": "In the relevant provisions of this Part, \"pay day\" in relation to a worker means a day on which wages are payable to the worker.",
+    "quote": "“pay day”, in relation to a worker, means a day on which wages are payable to the worker."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In the relevant provisions of this Part, a \"cash shortage\" means a deficit arising in relation to amounts received in connection with retail transactions.",
+   "quote": "“cash shortage” means a deficit arising in relation to amounts received in connection with retail transactions"
+  },
+  {
+   "requirement": "In the relevant provisions of this Part, a \"stock deficiency\" means a stock deficiency arising in the course of retail transactions.",
+   "quote": "“stock deficiency” means a stock deficiency arising in the course of retail transactions."
+  },
+  {
+   "requirement": "In the relevant provisions of this Part, \"retail employment\" in relation to a worker means employment involving, whether or not on a regular basis, the carrying out by the worker of retail transactions directly with members of the public, fellow workers, or other individuals in their personal capacities.",
+   "quote": "the carrying out by the worker of retail transactions directly with members of the public or with fellow workers or other individuals in their personal capacities"
+  },
+  {
+   "requirement": "In the relevant provisions of this Part, \"retail employment\" in relation to a worker means employment involving, whether or not on a regular basis, the collection by the worker of amounts payable in connection with retail transactions carried out by other persons directly with members of the public, fellow workers, or other individuals in their personal capacities.",
+   "quote": "the collection by the worker of amounts payable in connection with retail transactions carried out by other persons directly with members of the public or with fellow workers or other individuals in their personal capacities."
+  },
+  {
+   "requirement": "References in section 17 to a \"retail transaction\" mean the sale or supply of goods or the supply of services, including financial services.",
+   "quote": "References in this section to a “retail transaction” are to the sale or supply of goods or the supply of services (including financial services)."
+  },
+  {
+   "requirement": "References in the relevant provisions of this Part to a deduction made from wages of a worker in retail employment, or to a payment received from such a worker by the employer, on account of a cash shortage or stock deficiency include a deduction or payment made or received on account of any dishonesty or other conduct on the part of the worker which resulted in any such shortage or deficiency, whether or not the deduction or payment is designed to reflect the exact amount of the shortage or deficiency.",
+   "quote": "any dishonesty or other conduct on the part of the worker which resulted in any such shortage or deficiency"
+  },
+  {
+   "requirement": "References in the relevant provisions of this Part to a deduction made from wages of a worker in retail employment, or to a payment received from such a worker by the employer, on account of a cash shortage or stock deficiency include a deduction or payment made or received on account of any other event in respect of which the worker (whether or not together with any other workers) has contractual liability and which resulted in any such shortage or deficiency, whether or not the deduction or payment is designed to reflect the exact amount of the shortage or deficiency.",
+   "quote": "any other event in respect of which he (whether or not together with any other workers) has any contractual liability and which so resulted"
+  },
+  {
+   "requirement": "References in the relevant provisions of this Part to the recovery from a worker of an amount in respect of a cash shortage or stock deficiency include references to the recovery from the worker of an amount in respect of any conduct or event mentioned in subsection (4)(a) or (b).",
+   "quote": "References in the following provisions of this Part to the recovery from a worker of an amount in respect of a cash shortage or stock deficiency accordingly include references to the recovery from him of an amount in respect of any such conduct or event as is mentioned in subsection (4)(a) or (b)."
+  },
+  {
+   "requirement": "In the relevant provisions of this Part, \"pay day\" in relation to a worker means a day on which wages are payable to the worker.",
+   "quote": "“pay day”, in relation to a worker, means a day on which wages are payable to the worker."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

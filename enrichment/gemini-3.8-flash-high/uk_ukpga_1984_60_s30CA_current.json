@@ -1,0 +1,171 @@
+{
+ "key": "uk/ukpga/1984/60/s30CA@current",
+ "section": "uk/ukpga/1984/60/s30CA",
+ "version": "current",
+ "source_sha256": "b3164b03ff8e01ead7b41a71d16f8f30b25677ff88fe81142912d4d5b66ce797",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A relevant officer at the police station where a person released on bail under section 30A(1) is required to attend may, upon that person's request and subject to subsection (2), vary the bail conditions.",
+    "quote": "a relevant officer at the police station at which the person is required to attend, ... may, at the request of the person but subject to subsection (2), vary the conditions"
+   },
+   {
+    "requirement": "On any subsequent request regarding the same grant of bail, the relevant officer has the power to vary the conditions only if the request relies on information that was not available to the relevant officer considering the previous request or each previous request at the time it was considered.",
+    "quote": "confers power to vary the conditions of the bail only if the request is based on information that, in the case of the previous request or each previous request, was not available to the relevant officer considering that previous request when he was considering it"
+   },
+   {
+    "requirement": "Where the bail conditions of a person granted bail under section 30A(1) are varied under subsection (1), paragraphs (a) to (d) of section 30A(3A) apply.",
+    "quote": "paragraphs (a) to (d) of section 30A(3A) apply"
+   },
+   {
+    "requirement": "Where bail conditions are varied under subsection (1), any requirements imposed by the varied conditions must appear to the relevant officer to be necessary for any of the purposes specified in paragraphs (a) to (d) of section 30A(3B).",
+    "quote": "requirements imposed by the conditions as so varied must be requirements that appear to the relevant officer varying the conditions to be necessary for any of the purposes mentioned in paragraphs (a) to (d) of section 30A(3B)"
+   },
+   {
+    "requirement": "The relevant officer who varies bail conditions under subsection (1) must provide the person subject to the bail written notice of the variation.",
+    "quote": "the relevant officer who varies the conditions must give the person notice in writing of the variation"
+   },
+   {
+    "requirement": "Subject to subsection (3)(a) and (b), the power to vary bail conditions under subsection (1) includes the power to vary or rescind any existing conditions and to impose additional conditions.",
+    "quote": "power— (a) to vary or rescind any of the conditions, and (b) to impose further conditions"
+   },
+   {
+    "requirement": "If reasonably practicable, the investigating officer must seek the views of any alleged victim of the relevant offence regarding whether relevant conditions should be varied under subsection (1) and what variations should be made.",
+    "quote": "If it is reasonably practicable to do so, the investigating officer must seek the views of the alleged victim (if any) of the relevant offence on— (a) whether any of the conditions that are relevant conditions should be varied under subsection (1), and (b) if so, what variations should be made to those conditions"
+   },
+   {
+    "requirement": "The investigating officer must convey any views obtained from the alleged victim under subsection (4A) to the relevant officer.",
+    "quote": "The investigating officer must inform the relevant officer of any views obtained under subsection (4A)"
+   },
+   {
+    "requirement": "If any relevant conditions are varied under subsection (1), the investigating officer must notify the alleged victim of those variations if it is reasonably practicable to do so.",
+    "quote": "If any of the conditions which are relevant conditions are varied under subsection (1), the investigating officer must, if it is reasonably practicable to do so, notify the alleged victim of the variations"
+   },
+   {
+    "requirement": "If the alleged victim appears to the investigating officer to be vulnerable, subsections (4A) and (4C) apply as if references to the alleged victim were to an individual appearing to the officer to represent that victim.",
+    "quote": "If the alleged victim of the relevant offence appears to the investigating officer to be vulnerable, subsections (4A) and (4C) apply as if references to the alleged victim of the offence were to a person appearing to the officer to represent the alleged victim"
+   },
+   {
+    "requirement": "For the purposes of section 30CA, an investigating officer in relation to the relevant offence is defined as the constable or other person in charge of investigating the offence.",
+    "quote": "“investigating officer”, in relation to the relevant offence, means the constable or other person in charge of the investigation of the offence"
+   },
+   {
+    "requirement": "For the purposes of section 30CA, a relevant condition in relation to the relevant offence and an alleged victim is defined as a bail condition that relates to safeguarding that alleged victim.",
+    "quote": "“relevant condition”, in relation to the relevant offence and an alleged victim of that offence, means a condition that relates to the safeguarding of the alleged victim"
+   },
+   {
+    "requirement": "For the purposes of section 30CA, a relevant offence is defined as the offence for which the person requesting the variation was under arrest when granted bail under section 30A(1).",
+    "quote": "“relevant offence” means the offence for which the person making the request under subsection (1) was under arrest when granted bail under section 30A(1)"
+   },
+   {
+    "requirement": "In relation to a designated police station, the relevant officer is a custody officer.",
+    "quote": "“relevant officer”, in relation to a designated police station, means a custody officer"
+   },
+   {
+    "requirement": "In relation to a police station that is not a designated police station, the relevant officer is a constable not involved in the investigation if readily available; otherwise, a constable other than the one who granted bail if readily available; or failing that, the constable who granted bail.",
+    "quote": "in relation to any other police station— means a constable who is not involved in the investigation of the relevant offence, if such a constable is readily available, andif no such constable is readily available— means a constable other than the one who granted bail to the person, if such a constable is readily available, andif no such constable is readily available, means the constable who granted bail"
+   },
+   {
+    "requirement": "A person is an alleged victim of an offence under section 30CA if the person is an individual and an allegation has been made to a constable or investigator that the person suffered physical, mental, or emotional harm, or economic loss, directly caused by the offence.",
+    "quote": "a person (“P”) is an alleged victim of an offence if— (a) an allegation has been made to a constable or other person involved in the investigation of the offence that P has suffered physical, mental or emotional harm, or economic loss, which was directly caused by the offence, and (b) P is an individual"
+   },
+   {
+    "requirement": "An alleged victim is vulnerable under section 30CA if the victim was aged under 18 at the time of the offence, or may have difficulty understanding an investigating officer's communication or communicating effectively in response due to a physical disability or disorder, a mental disorder under the Mental Health Act 1983, or a significant impairment of intelligence and social functioning.",
+    "quote": "an alleged victim of an offence is vulnerable if the alleged victim— (a) was aged under 18 at the time of the offence, or (b) may have difficulty understanding a communication from an investigating officer under this section, or communicating effectively in response to it, by reason of— (i) a physical disability or disorder, (ii) a mental disorder within the meaning of the Mental Health Act 1983, or (iii) a significant impairment of intelligence and social functioning"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "age under which an alleged victim is automatically considered vulnerable",
+    "value": "18",
+    "quote": "aged under 18 at the time of the offence"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A relevant officer at the police station where a person released on bail under section 30A(1) is required to attend may, upon that person's request and subject to subsection (2), vary the bail conditions.",
+   "quote": "a relevant officer at the police station at which the person is required to attend, ... may, at the request of the person but subject to subsection (2), vary the conditions"
+  },
+  {
+   "requirement": "On any subsequent request regarding the same grant of bail, the relevant officer has the power to vary the conditions only if the request relies on information that was not available to the relevant officer considering the previous request or each previous request at the time it was considered.",
+   "quote": "confers power to vary the conditions of the bail only if the request is based on information that, in the case of the previous request or each previous request, was not available to the relevant officer considering that previous request when he was considering it"
+  },
+  {
+   "requirement": "Where the bail conditions of a person granted bail under section 30A(1) are varied under subsection (1), paragraphs (a) to (d) of section 30A(3A) apply.",
+   "quote": "paragraphs (a) to (d) of section 30A(3A) apply"
+  },
+  {
+   "requirement": "Where bail conditions are varied under subsection (1), any requirements imposed by the varied conditions must appear to the relevant officer to be necessary for any of the purposes specified in paragraphs (a) to (d) of section 30A(3B).",
+   "quote": "requirements imposed by the conditions as so varied must be requirements that appear to the relevant officer varying the conditions to be necessary for any of the purposes mentioned in paragraphs (a) to (d) of section 30A(3B)"
+  },
+  {
+   "requirement": "The relevant officer who varies bail conditions under subsection (1) must provide the person subject to the bail written notice of the variation.",
+   "quote": "the relevant officer who varies the conditions must give the person notice in writing of the variation"
+  },
+  {
+   "requirement": "Subject to subsection (3)(a) and (b), the power to vary bail conditions under subsection (1) includes the power to vary or rescind any existing conditions and to impose additional conditions.",
+   "quote": "power— (a) to vary or rescind any of the conditions, and (b) to impose further conditions"
+  },
+  {
+   "requirement": "If reasonably practicable, the investigating officer must seek the views of any alleged victim of the relevant offence regarding whether relevant conditions should be varied under subsection (1) and what variations should be made.",
+   "quote": "If it is reasonably practicable to do so, the investigating officer must seek the views of the alleged victim (if any) of the relevant offence on— (a) whether any of the conditions that are relevant conditions should be varied under subsection (1), and (b) if so, what variations should be made to those conditions"
+  },
+  {
+   "requirement": "The investigating officer must convey any views obtained from the alleged victim under subsection (4A) to the relevant officer.",
+   "quote": "The investigating officer must inform the relevant officer of any views obtained under subsection (4A)"
+  },
+  {
+   "requirement": "If any relevant conditions are varied under subsection (1), the investigating officer must notify the alleged victim of those variations if it is reasonably practicable to do so.",
+   "quote": "If any of the conditions which are relevant conditions are varied under subsection (1), the investigating officer must, if it is reasonably practicable to do so, notify the alleged victim of the variations"
+  },
+  {
+   "requirement": "If the alleged victim appears to the investigating officer to be vulnerable, subsections (4A) and (4C) apply as if references to the alleged victim were to an individual appearing to the officer to represent that victim.",
+   "quote": "If the alleged victim of the relevant offence appears to the investigating officer to be vulnerable, subsections (4A) and (4C) apply as if references to the alleged victim of the offence were to a person appearing to the officer to represent the alleged victim"
+  },
+  {
+   "requirement": "For the purposes of section 30CA, an investigating officer in relation to the relevant offence is defined as the constable or other person in charge of investigating the offence.",
+   "quote": "“investigating officer”, in relation to the relevant offence, means the constable or other person in charge of the investigation of the offence"
+  },
+  {
+   "requirement": "For the purposes of section 30CA, a relevant condition in relation to the relevant offence and an alleged victim is defined as a bail condition that relates to safeguarding that alleged victim.",
+   "quote": "“relevant condition”, in relation to the relevant offence and an alleged victim of that offence, means a condition that relates to the safeguarding of the alleged victim"
+  },
+  {
+   "requirement": "For the purposes of section 30CA, a relevant offence is defined as the offence for which the person requesting the variation was under arrest when granted bail under section 30A(1).",
+   "quote": "“relevant offence” means the offence for which the person making the request under subsection (1) was under arrest when granted bail under section 30A(1)"
+  },
+  {
+   "requirement": "In relation to a designated police station, the relevant officer is a custody officer.",
+   "quote": "“relevant officer”, in relation to a designated police station, means a custody officer"
+  },
+  {
+   "requirement": "In relation to a police station that is not a designated police station, the relevant officer is a constable not involved in the investigation if readily available; otherwise, a constable other than the one who granted bail if readily available; or failing that, the constable who granted bail.",
+   "quote": "in relation to any other police station— means a constable who is not involved in the investigation of the relevant offence, if such a constable is readily available, andif no such constable is readily available— means a constable other than the one who granted bail to the person, if such a constable is readily available, andif no such constable is readily available, means the constable who granted bail"
+  },
+  {
+   "requirement": "A person is an alleged victim of an offence under section 30CA if the person is an individual and an allegation has been made to a constable or investigator that the person suffered physical, mental, or emotional harm, or economic loss, directly caused by the offence.",
+   "quote": "a person (“P”) is an alleged victim of an offence if— (a) an allegation has been made to a constable or other person involved in the investigation of the offence that P has suffered physical, mental or emotional harm, or economic loss, which was directly caused by the offence, and (b) P is an individual"
+  },
+  {
+   "requirement": "An alleged victim is vulnerable under section 30CA if the victim was aged under 18 at the time of the offence, or may have difficulty understanding an investigating officer's communication or communicating effectively in response due to a physical disability or disorder, a mental disorder under the Mental Health Act 1983, or a significant impairment of intelligence and social functioning.",
+   "quote": "an alleged victim of an offence is vulnerable if the alleged victim— (a) was aged under 18 at the time of the offence, or (b) may have difficulty understanding a communication from an investigating officer under this section, or communicating effectively in response to it, by reason of— (i) a physical disability or disorder, (ii) a mental disorder within the meaning of the Mental Health Act 1983, or (iii) a significant impairment of intelligence and social functioning"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "age under which an alleged victim is automatically considered vulnerable",
+   "value": "18",
+   "quote": "aged under 18 at the time of the offence"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

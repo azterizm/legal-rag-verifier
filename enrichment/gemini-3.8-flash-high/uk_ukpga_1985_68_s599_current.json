@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1985/68/s599@current",
+ "section": "uk/ukpga/1985/68/s599",
+ "version": "current",
+ "source_sha256": "968f035587966a4af30b6791aa71e5050cf5dc4c761fc652d78c67024a58271f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Compensation payable in respect of land of another local authority must arise in pursuance of a compulsory purchase under section 17 (provision of housing), section 290 (acquisition of land for clearance), or section 300 (purchase of condemned house for temporary housing use).",
+    "quote": "section 17 (provision of housing), ,section 290 (acquisition of land for clearance), orsection 300 (purchase of condemned house for temporary housing use)"
+   },
+   {
+    "requirement": "The alternative payment provision applies to compensation that would otherwise be paid into court in accordance with Schedule 1 to the Compulsory Purchase Act 1965 regarding purchase from persons not having power to dispose.",
+    "quote": "which would otherwise be paid into court in accordance with Schedule 1 to the Compulsory Purchase Act 1965 (purchase from persons not having power to dispose)"
+   },
+   {
+    "requirement": "The payment and application of the compensation in an alternative manner is conditional on the consent of the Secretary of State.",
+    "quote": "if the Secretary of State consents"
+   },
+   {
+    "requirement": "Where the Secretary of State consents, the compensation may instead be paid and applied in such manner as the Secretary of State may determine.",
+    "quote": "instead be paid and applied as he may determine"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Compensation payable in respect of land of another local authority must arise in pursuance of a compulsory purchase under section 17 (provision of housing), section 290 (acquisition of land for clearance), or section 300 (purchase of condemned house for temporary housing use).",
+   "quote": "section 17 (provision of housing), ,section 290 (acquisition of land for clearance), orsection 300 (purchase of condemned house for temporary housing use)"
+  },
+  {
+   "requirement": "The alternative payment provision applies to compensation that would otherwise be paid into court in accordance with Schedule 1 to the Compulsory Purchase Act 1965 regarding purchase from persons not having power to dispose.",
+   "quote": "which would otherwise be paid into court in accordance with Schedule 1 to the Compulsory Purchase Act 1965 (purchase from persons not having power to dispose)"
+  },
+  {
+   "requirement": "The payment and application of the compensation in an alternative manner is conditional on the consent of the Secretary of State.",
+   "quote": "if the Secretary of State consents"
+  },
+  {
+   "requirement": "Where the Secretary of State consents, the compensation may instead be paid and applied in such manner as the Secretary of State may determine.",
+   "quote": "instead be paid and applied as he may determine"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

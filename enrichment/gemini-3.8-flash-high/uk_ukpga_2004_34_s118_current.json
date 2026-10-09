@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2004/34/s118@current",
+ "section": "uk/ukpga/2004/34/s118",
+ "version": "current",
+ "source_sha256": "6346c29cd0a3c898d9fd360149e87b91496262d73557c7932659cc9839ccebe8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 118 of the Housing Act 2004 applies to immediate landlords and other persons who have an estate or interest in a house while a final management order is in force regarding that house.",
+    "quote": "applies in relation to— (a) immediate landlords, and (b) other persons with an estate or interest in the house, while a final management order is in force"
+   },
+   {
+    "requirement": "An immediate landlord of a house or part of a house is not entitled to receive any rents or other payments from occupants that are payable to the local housing authority under section 124(4).",
+    "quote": "is not entitled to receive— (i) any rents or other payments from persons occupying the house or part which are payable to the local housing authority by virtue of section 124(4)"
+   },
+   {
+    "requirement": "An immediate landlord of a house or part of a house is not entitled to receive any rents or other payments from occupants that are payable to the local housing authority under leases or licences granted by the authority under section 107(3)(c) or 116(3)(c).",
+    "quote": "is not entitled to receive— (ii) any rents or other payments from persons occupying the house or part which are payable to the authority by virtue of any leases or licences granted by them under section 107(3)(c) or 116(3)(c)"
+   },
+   {
+    "requirement": "An immediate landlord of a house or part of a house is prohibited from exercising any rights or powers concerning the management of the house or part.",
+    "quote": "may not exercise any rights or powers with respect to the management of the house or part"
+   },
+   {
+    "requirement": "An immediate landlord of a house or part of a house is prohibited from creating any leasehold interest in the house or part, other than a lease of a reversion.",
+    "quote": "may not create any of the following— (i) any leasehold interest in the house or part (other than a lease of a reversion)"
+   },
+   {
+    "requirement": "An immediate landlord of a house or part of a house is prohibited from creating any licence or other right to occupy the house or part.",
+    "quote": "may not create any of the following— (ii) any licence or other right to occupy it"
+   },
+   {
+    "requirement": "Subject to the restrictions on creating leasehold interests or occupation rights in subsection (2)(c), nothing in section 116 or section 118 affects the ability of a person with an estate or interest in the house to make any disposition of that estate or interest.",
+    "quote": "However (subject to subsection (2)(c)) nothing in section 116 or this section affects the ability of a person having an estate or interest in the house to make any disposition of that estate or interest."
+   },
+   {
+    "requirement": "Nothing in section 116 or section 118 affects the validity of any mortgage relating to the house or any rights or remedies of the mortgagee, except to the extent that any such rights or remedies would prevent the local housing authority from exercising its power under section 116(3)(c).",
+    "quote": "Nothing in section 116 or this section affects— (a) the validity of any mortgage relating to the house or any rights or remedies available to the mortgagee under such a mortgage, except to the extent that any of those rights or remedies would prevent the local housing authority from exercising their power under section 116(3)(c)."
+   },
+   {
+    "requirement": "Nothing in section 116 or section 118 affects the validity of any lease under which the immediate landlord is a lessee, any superior lease, or (subject to section 116(5)) any rights or remedies of the lessor under such a lease, except to the extent that those rights or remedies would prevent the local housing authority from exercising its power under section 116(3)(c).",
+    "quote": "Nothing in section 116 or this section affects— (b) the validity of any lease of the house or part of it under which the immediate landlord is a lessee, or any superior lease, or (subject to section 116(5)) any rights or remedies available to the lessor under such a lease, except to the extent that any of those rights or remedies would prevent the local housing authority from exercising their power under section 116(3)(c)."
+   },
+   {
+    "requirement": "In proceedings for the enforcement of any mortgage or leasehold rights or remedies mentioned in subsection (4), the court is empowered to make such order as it thinks fit regarding the operation of the final management order, including quashing it.",
+    "quote": "In proceedings for the enforcement of any such rights or remedies the court may make such order as it thinks fit as regards the operation of the final management order (including an order quashing it)."
+   },
+   {
+    "requirement": "For the purposes of the Chapter as it applies to a final management order, an individual or entity is an 'immediate landlord' of the house or part of it if they are an owner or lessee of that house or part and would, but for the order, be entitled to receive the rents or payments from occupants that are payable to the authority under section 124(4).",
+    "quote": "a person is an “immediate landlord” of the house or a part of it if— (a) he is an owner or lessee of the house or part, and (b) (but for the order) he would be entitled to receive the rents or other payments from persons occupying the house or part which are payable to the authority by virtue of section 124(4)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 118 of the Housing Act 2004 applies to immediate landlords and other persons who have an estate or interest in a house while a final management order is in force regarding that house.",
+   "quote": "applies in relation to— (a) immediate landlords, and (b) other persons with an estate or interest in the house, while a final management order is in force"
+  },
+  {
+   "requirement": "An immediate landlord of a house or part of a house is not entitled to receive any rents or other payments from occupants that are payable to the local housing authority under section 124(4).",
+   "quote": "is not entitled to receive— (i) any rents or other payments from persons occupying the house or part which are payable to the local housing authority by virtue of section 124(4)"
+  },
+  {
+   "requirement": "An immediate landlord of a house or part of a house is prohibited from exercising any rights or powers concerning the management of the house or part.",
+   "quote": "may not exercise any rights or powers with respect to the management of the house or part"
+  },
+  {
+   "requirement": "An immediate landlord of a house or part of a house is prohibited from creating any leasehold interest in the house or part, other than a lease of a reversion.",
+   "quote": "may not create any of the following— (i) any leasehold interest in the house or part (other than a lease of a reversion)"
+  },
+  {
+   "requirement": "Subject to the restrictions on creating leasehold interests or occupation rights in subsection (2)(c), nothing in section 116 or section 118 affects the ability of a person with an estate or interest in the house to make any disposition of that estate or interest.",
+   "quote": "However (subject to subsection (2)(c)) nothing in section 116 or this section affects the ability of a person having an estate or interest in the house to make any disposition of that estate or interest."
+  },
+  {
+   "requirement": "In proceedings for the enforcement of any mortgage or leasehold rights or remedies mentioned in subsection (4), the court is empowered to make such order as it thinks fit regarding the operation of the final management order, including quashing it.",
+   "quote": "In proceedings for the enforcement of any such rights or remedies the court may make such order as it thinks fit as regards the operation of the final management order (including an order quashing it)."
+  },
+  {
+   "requirement": "For the purposes of the Chapter as it applies to a final management order, an individual or entity is an 'immediate landlord' of the house or part of it if they are an owner or lessee of that house or part and would, but for the order, be entitled to receive the rents or payments from occupants that are payable to the authority under section 124(4).",
+   "quote": "a person is an “immediate landlord” of the house or a part of it if— (a) he is an owner or lessee of the house or part, and (b) (but for the order) he would be entitled to receive the rents or other payments from persons occupying the house or part which are payable to the authority by virtue of section 124(4)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

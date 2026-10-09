@@ -1,0 +1,115 @@
+{
+ "key": "uk/ukpga/1986/45/s54@current",
+ "section": "uk/ukpga/1986/45/s54",
+ "version": "current",
+ "source_sha256": "8f37075da41a56917159b19c73726c459d95e637c1c5aad3e318e8a338939263",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An application for the appointment of a receiver by the court under section 51(2) must be made by petition to the court.",
+    "quote": "Application for the appointment of a receiver by the court under section 51(2) shall be by petition to the court"
+   },
+   {
+    "requirement": "A petition to the court for the appointment of a receiver under section 51(2) must be served on the company.",
+    "quote": "which shall be served on the company"
+   },
+   {
+    "requirement": "On an application for the appointment of a receiver, the court must issue an interlocutor making the appointment if the court thinks fit.",
+    "quote": "On such an application, the court shall, if it thinks fit, issue an interlocutor making the appointment of the receiver"
+   },
+   {
+    "requirement": "A copy of the court's interlocutor making the appointment, certified by the clerk of the court to be a correct copy, accompanied by a notice in the prescribed form, must be delivered by or on behalf of the petitioner to the registrar of companies for registration within 7 days of the date of the interlocutor or such longer period as the court may allow.",
+    "quote": "A copy (certified by the clerk of the court to be a correct copy) of the court’s interlocutor making the appointment shall be delivered by or on behalf of the petitioner to the registrar of companies for registration, accompanied by a notice in the prescribed form, within 7 days of the date of the interlocutor or much longer period as the court may allow."
+   },
+   {
+    "requirement": "Any person who without reasonable excuse defaults in complying with the requirement to deliver the certified copy interlocutor and prescribed notice to the registrar of companies is liable to a fine and, for continued contravention, to a daily default fine.",
+    "quote": "If any person without reasonable excuse makes default in complying with the requirements of this subsection, he is liable to a fine and, for continued contravention, to a daily default fine."
+   },
+   {
+    "requirement": "On receipt of the certified copy interlocutor and upon payment of the prescribed fee, the registrar of companies must enter the particulars of the appointment in the register.",
+    "quote": "On receipt of the certified copy interlocutor in accordance with subsection (3), the registrar shall, on payment of the prescribed fee, enter the particulars of the appointment in the register."
+   },
+   {
+    "requirement": "A receiver appointed under section 54 is to be regarded as having been appointed on the date of being appointed by the court.",
+    "quote": "The receiver is to be regarded as having been appointed on the date of his being appointed by the court."
+   },
+   {
+    "requirement": "On the appointment of a receiver under section 54, the floating charge by virtue of which the receiver was appointed attaches to the property then subject to the charge.",
+    "quote": "On the appointment of a receiver under this section, the floating charge by virtue of which he was appointed attaches to the property then subject to the charge"
+   },
+   {
+    "requirement": "The attachment of the floating charge to the property upon the appointment of a receiver under section 54 has effect as if the charge were a fixed security over the property to which it has attached.",
+    "quote": "such attachment has effect as if the charge were a fixed security over the property to which it has attached"
+   },
+   {
+    "requirement": "In making rules of court for the purposes of section 54, the Court of Session must have regard to the need for special provision for cases appearing to the court to require to be dealt with as a matter of urgency.",
+    "quote": "In making rules of court for the purposes of this section, the Court of Session shall have regard to the need for special provision for cases which appear to the court to require to be dealt with as a matter of urgency."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "time limit from the date of the interlocutor for delivering the certified copy interlocutor and prescribed notice to the registrar of companies, unless the court allows a longer period",
+    "value": "7 days",
+    "quote": "within 7 days of the date of the interlocutor or much longer period as the court may allow"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An application for the appointment of a receiver by the court under section 51(2) must be made by petition to the court.",
+   "quote": "Application for the appointment of a receiver by the court under section 51(2) shall be by petition to the court"
+  },
+  {
+   "requirement": "A petition to the court for the appointment of a receiver under section 51(2) must be served on the company.",
+   "quote": "which shall be served on the company"
+  },
+  {
+   "requirement": "On an application for the appointment of a receiver, the court must issue an interlocutor making the appointment if the court thinks fit.",
+   "quote": "On such an application, the court shall, if it thinks fit, issue an interlocutor making the appointment of the receiver"
+  },
+  {
+   "requirement": "A copy of the court's interlocutor making the appointment, certified by the clerk of the court to be a correct copy, accompanied by a notice in the prescribed form, must be delivered by or on behalf of the petitioner to the registrar of companies for registration within 7 days of the date of the interlocutor or such longer period as the court may allow.",
+   "quote": "A copy (certified by the clerk of the court to be a correct copy) of the court’s interlocutor making the appointment shall be delivered by or on behalf of the petitioner to the registrar of companies for registration, accompanied by a notice in the prescribed form, within 7 days of the date of the interlocutor or much longer period as the court may allow."
+  },
+  {
+   "requirement": "Any person who without reasonable excuse defaults in complying with the requirement to deliver the certified copy interlocutor and prescribed notice to the registrar of companies is liable to a fine and, for continued contravention, to a daily default fine.",
+   "quote": "If any person without reasonable excuse makes default in complying with the requirements of this subsection, he is liable to a fine and, for continued contravention, to a daily default fine."
+  },
+  {
+   "requirement": "On receipt of the certified copy interlocutor and upon payment of the prescribed fee, the registrar of companies must enter the particulars of the appointment in the register.",
+   "quote": "On receipt of the certified copy interlocutor in accordance with subsection (3), the registrar shall, on payment of the prescribed fee, enter the particulars of the appointment in the register."
+  },
+  {
+   "requirement": "A receiver appointed under section 54 is to be regarded as having been appointed on the date of being appointed by the court.",
+   "quote": "The receiver is to be regarded as having been appointed on the date of his being appointed by the court."
+  },
+  {
+   "requirement": "On the appointment of a receiver under section 54, the floating charge by virtue of which the receiver was appointed attaches to the property then subject to the charge.",
+   "quote": "On the appointment of a receiver under this section, the floating charge by virtue of which he was appointed attaches to the property then subject to the charge"
+  },
+  {
+   "requirement": "The attachment of the floating charge to the property upon the appointment of a receiver under section 54 has effect as if the charge were a fixed security over the property to which it has attached.",
+   "quote": "such attachment has effect as if the charge were a fixed security over the property to which it has attached"
+  },
+  {
+   "requirement": "In making rules of court for the purposes of section 54, the Court of Session must have regard to the need for special provision for cases appearing to the court to require to be dealt with as a matter of urgency.",
+   "quote": "In making rules of court for the purposes of this section, the Court of Session shall have regard to the need for special provision for cases which appear to the court to require to be dealt with as a matter of urgency."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "time limit from the date of the interlocutor for delivering the certified copy interlocutor and prescribed notice to the registrar of companies, unless the court allows a longer period",
+   "value": "7 days",
+   "quote": "within 7 days of the date of the interlocutor or much longer period as the court may allow"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2016/25/s83@current",
+ "section": "uk/ukpga/2016/25/s83",
+ "version": "current",
+ "source_sha256": "351ce015e8c2b9054446710a3736f2a15c2ca370eb426ea54193f62d27a4e34e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State may make regulations providing for any function under sections 67 to 69 that is exercisable by the Secretary of State to be exercisable instead by another public authority.",
+    "quote": "The Secretary of State may by regulations provide for— (a) any function under sections 67 to 69 which is exercisable by the Secretary of State to be exercisable instead by another public authority"
+   },
+   {
+    "requirement": "The Secretary of State may make regulations providing for any function under sections 67 to 69 that is exercisable by a public authority by virtue of paragraph (a) to be exercisable instead by the Secretary of State.",
+    "quote": "any function under sections 67 to 69 which is exercisable by a public authority by virtue of paragraph (a) to be exercisable instead by the Secretary of State"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations modify any enactment concerning a public authority for the purpose of enabling or facilitating any function exercisable by the Secretary of State under this Part to be exercisable on the Secretary of State's behalf by the authority concerned.",
+    "quote": "The Secretary of State may by regulations modify any enactment about a public authority for the purpose of enabling or otherwise facilitating any function exercisable by the Secretary of State under this Part to be exercisable on behalf of the Secretary of State by the authority concerned."
+   },
+   {
+    "requirement": "Regulations made under subsection (2) do not affect the responsibility of the Secretary of State for the exercise of the functions concerned.",
+    "quote": "Regulations under subsection (2) do not affect the Secretary of State's responsibility for the exercise of the functions concerned."
+   },
+   {
+    "requirement": "The power to make regulations modifying enactments under subsection (2) does not apply in relation to any function of the Secretary of State of making regulations.",
+    "quote": "Subsection (2) does not apply in relation to any function of the Secretary of State of making regulations."
+   },
+   {
+    "requirement": "Schedule 5, which contains further safeguards and provisions supplementing section 83, has effect.",
+    "quote": "Schedule 5 (which contains further safeguards and provisions supplementing this section) has effect."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State may make regulations providing for any function under sections 67 to 69 that is exercisable by the Secretary of State to be exercisable instead by another public authority.",
+   "quote": "The Secretary of State may by regulations provide for— (a) any function under sections 67 to 69 which is exercisable by the Secretary of State to be exercisable instead by another public authority"
+  },
+  {
+   "requirement": "The Secretary of State may make regulations providing for any function under sections 67 to 69 that is exercisable by a public authority by virtue of paragraph (a) to be exercisable instead by the Secretary of State.",
+   "quote": "any function under sections 67 to 69 which is exercisable by a public authority by virtue of paragraph (a) to be exercisable instead by the Secretary of State"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations modify any enactment concerning a public authority for the purpose of enabling or facilitating any function exercisable by the Secretary of State under this Part to be exercisable on the Secretary of State's behalf by the authority concerned.",
+   "quote": "The Secretary of State may by regulations modify any enactment about a public authority for the purpose of enabling or otherwise facilitating any function exercisable by the Secretary of State under this Part to be exercisable on behalf of the Secretary of State by the authority concerned."
+  },
+  {
+   "requirement": "Regulations made under subsection (2) do not affect the responsibility of the Secretary of State for the exercise of the functions concerned.",
+   "quote": "Regulations under subsection (2) do not affect the Secretary of State's responsibility for the exercise of the functions concerned."
+  },
+  {
+   "requirement": "The power to make regulations modifying enactments under subsection (2) does not apply in relation to any function of the Secretary of State of making regulations.",
+   "quote": "Subsection (2) does not apply in relation to any function of the Secretary of State of making regulations."
+  },
+  {
+   "requirement": "Schedule 5, which contains further safeguards and provisions supplementing section 83, has effect.",
+   "quote": "Schedule 5 (which contains further safeguards and provisions supplementing this section) has effect."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

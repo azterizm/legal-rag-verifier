@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/2002/15/s110@current",
+ "section": "uk/ukpga/2002/15/s110",
+ "version": "current",
+ "source_sha256": "bcd62c22ef6db84913a8c13fa31a3405a7a95e2fa1af73eafb99fc71b031f5c4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Except as otherwise provided by the Chapter, where a claim to acquire the right to manage any premises is made by the giving of a claim notice, the procedure for giving effect to the claim notice, as well as the rights and obligations of all parties in any matter arising in giving effect to it, must be prescribed by regulations made by the appropriate national authority.",
+    "quote": "except as otherwise provided by this Chapter— (a) the procedure for giving effect to the claim notice, and (b) the rights and obligations of all parties in any matter arising in giving effect to the claim notice, shall be such as may be prescribed by regulations made by the appropriate national authority."
+   },
+   {
+    "requirement": "Regulations made under section 110 may specifically provide for a person to be discharged from performing obligations arising out of a claim notice due to the default or delay of another person.",
+    "quote": "make provision for a person to be discharged from performing any obligations arising out of a claim notice by reason of the default or delay of some other person."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Except as otherwise provided by the Chapter, where a claim to acquire the right to manage any premises is made by the giving of a claim notice, the procedure for giving effect to the claim notice, as well as the rights and obligations of all parties in any matter arising in giving effect to it, must be prescribed by regulations made by the appropriate national authority.",
+   "quote": "except as otherwise provided by this Chapter— (a) the procedure for giving effect to the claim notice, and (b) the rights and obligations of all parties in any matter arising in giving effect to the claim notice, shall be such as may be prescribed by regulations made by the appropriate national authority."
+  },
+  {
+   "requirement": "Regulations made under section 110 may specifically provide for a person to be discharged from performing obligations arising out of a claim notice due to the default or delay of another person.",
+   "quote": "make provision for a person to be discharged from performing any obligations arising out of a claim notice by reason of the default or delay of some other person."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

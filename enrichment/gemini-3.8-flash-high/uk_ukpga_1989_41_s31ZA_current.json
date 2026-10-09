@@ -1,0 +1,109 @@
+{
+ "key": "uk/ukpga/1989/41/s31ZA@current",
+ "section": "uk/ukpga/1989/41/s31ZA",
+ "version": "current",
+ "source_sha256": "42b7163c3c5a86d4cf3bcd112f89aaba5d914fe0c09a10e2441dd9f7f7406e1a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Before making an application for an order under this Part in relation to a child, a local authority in England must offer a family group decision-making meeting to the child's parents or any other person with parental responsibility for the child.",
+    "quote": "the authority must offer a family group decision-making meeting to the child’s parents or any other person with parental responsibility for the child"
+   },
+   {
+    "requirement": "If the offer of a family group decision-making meeting is accepted by at least one person to whom it is made, the local authority must arrange for the meeting to be held before making the application.",
+    "quote": "the local authority must arrange for the meeting to be held before the authority makes the application"
+   },
+   {
+    "requirement": "A local authority is exempt from the duty to offer or arrange a family group decision-making meeting where the authority considers that it would not be in the child's best interests for the meeting to be offered or to be held.",
+    "quote": "The duty under subsection (1) or (2) does not apply where the local authority considers that it would not be in the best interests of the child"
+   },
+   {
+    "requirement": "A family group decision-making meeting is defined as a meeting held to enable the child's family network to discuss the child's welfare needs and to make a proposal responding to concerns about the child's welfare.",
+    "quote": "a meeting held for the purpose of enabling the child’s family network— (a) to discuss the welfare needs of the child, and (b) to make a proposal in response to concerns about the child’s welfare"
+   },
+   {
+    "requirement": "A child's family network consists of persons with an interest in the child's welfare whom the local authority considers appropriate to attend the meeting having regard to the child's best interests, which may in particular include the child's parents, any other person with parental responsibility, relatives, friends, or other connected persons.",
+    "quote": "consists of such persons with an interest in the child’s welfare as the authority considers appropriate to attend the meeting having regard to the child’s best interests"
+   },
+   {
+    "requirement": "The local authority must include the offer of a family group decision-making meeting in the letter before proceedings sent in relation to the child.",
+    "quote": "The local authority must include the offer under subsection (1) in the letter before proceedings sent in relation to the child"
+   },
+   {
+    "requirement": "A letter before proceedings is defined as the letter sent by the local authority to the child's parents, or any other person with parental responsibility for the child, prior to applying for an order under this Part in relation to the child.",
+    "quote": "the letter sent by the local authority to the child’s parents, or any other person with parental responsibility for the child, before the local authority makes an application for an order under this Part in relation to the child"
+   },
+   {
+    "requirement": "The child in relation to whom the family group decision-making meeting is held may attend the meeting if the local authority considers it appropriate.",
+    "quote": "Where the local authority considers it appropriate, the child in relation to whom the family group decision-making meeting is held may attend the meeting"
+   },
+   {
+    "requirement": "In exercising statutory functions under section 31ZA in relation to a child, a local authority must, so far as is reasonably practicable and consistent with the child's welfare, ascertain the child's wishes and feelings regarding the exercise of those functions.",
+    "quote": "ascertain the child’s wishes and feelings regarding the exercise of those functions"
+   },
+   {
+    "requirement": "In exercising statutory functions under section 31ZA in relation to a child, a local authority must, so far as is reasonably practicable and consistent with the child's welfare, give due consideration, having regard to the child's age and understanding, to the ascertainable wishes and feelings of the child.",
+    "quote": "give due consideration (having regard to the child’s age and understanding) to such wishes and feelings of the child as the authority has been able to ascertain"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of persons to whom the offer is made who must accept it to trigger the duty to arrange the meeting",
+    "value": "at least one",
+    "quote": "at least one person to whom it is made"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Before making an application for an order under this Part in relation to a child, a local authority in England must offer a family group decision-making meeting to the child's parents or any other person with parental responsibility for the child.",
+   "quote": "the authority must offer a family group decision-making meeting to the child’s parents or any other person with parental responsibility for the child"
+  },
+  {
+   "requirement": "If the offer of a family group decision-making meeting is accepted by at least one person to whom it is made, the local authority must arrange for the meeting to be held before making the application.",
+   "quote": "the local authority must arrange for the meeting to be held before the authority makes the application"
+  },
+  {
+   "requirement": "A local authority is exempt from the duty to offer or arrange a family group decision-making meeting where the authority considers that it would not be in the child's best interests for the meeting to be offered or to be held.",
+   "quote": "The duty under subsection (1) or (2) does not apply where the local authority considers that it would not be in the best interests of the child"
+  },
+  {
+   "requirement": "A family group decision-making meeting is defined as a meeting held to enable the child's family network to discuss the child's welfare needs and to make a proposal responding to concerns about the child's welfare.",
+   "quote": "a meeting held for the purpose of enabling the child’s family network— (a) to discuss the welfare needs of the child, and (b) to make a proposal in response to concerns about the child’s welfare"
+  },
+  {
+   "requirement": "A child's family network consists of persons with an interest in the child's welfare whom the local authority considers appropriate to attend the meeting having regard to the child's best interests, which may in particular include the child's parents, any other person with parental responsibility, relatives, friends, or other connected persons.",
+   "quote": "consists of such persons with an interest in the child’s welfare as the authority considers appropriate to attend the meeting having regard to the child’s best interests"
+  },
+  {
+   "requirement": "The local authority must include the offer of a family group decision-making meeting in the letter before proceedings sent in relation to the child.",
+   "quote": "The local authority must include the offer under subsection (1) in the letter before proceedings sent in relation to the child"
+  },
+  {
+   "requirement": "A letter before proceedings is defined as the letter sent by the local authority to the child's parents, or any other person with parental responsibility for the child, prior to applying for an order under this Part in relation to the child.",
+   "quote": "the letter sent by the local authority to the child’s parents, or any other person with parental responsibility for the child, before the local authority makes an application for an order under this Part in relation to the child"
+  },
+  {
+   "requirement": "The child in relation to whom the family group decision-making meeting is held may attend the meeting if the local authority considers it appropriate.",
+   "quote": "Where the local authority considers it appropriate, the child in relation to whom the family group decision-making meeting is held may attend the meeting"
+  },
+  {
+   "requirement": "In exercising statutory functions under section 31ZA in relation to a child, a local authority must, so far as is reasonably practicable and consistent with the child's welfare, ascertain the child's wishes and feelings regarding the exercise of those functions.",
+   "quote": "ascertain the child’s wishes and feelings regarding the exercise of those functions"
+  },
+  {
+   "requirement": "In exercising statutory functions under section 31ZA in relation to a child, a local authority must, so far as is reasonably practicable and consistent with the child's welfare, give due consideration, having regard to the child's age and understanding, to the ascertainable wishes and feelings of the child.",
+   "quote": "give due consideration (having regard to the child’s age and understanding) to such wishes and feelings of the child as the authority has been able to ascertain"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

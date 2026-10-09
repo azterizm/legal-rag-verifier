@@ -1,0 +1,45 @@
+{
+ "key": "uk/ukpga/1968/60/s36@current",
+ "section": "uk/ukpga/1968/60/s36",
+ "version": "current",
+ "source_sha256": "582e8ad8c130a584721af1829e1200489006ec73291358b2371fcb81d11d0df7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Act may be cited as the Theft Act 1968.",
+    "quote": "This Act may be cited as the Theft Act 1968"
+   },
+   {
+    "requirement": "The Theft Act 1968 does not extend to Scotland or to Northern Ireland, except as regards any amendment or repeal which in accordance with section 33 of the Act is to extend to Scotland or Northern Ireland.",
+    "quote": "This Act does not extend to Scotland or, to Northern Ireland, except as regards any amendment or repeal which in accordance with section 33 above is to extend to Scotland or Northern Ireland"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "year specified in the citation of the Act",
+    "value": "1968",
+    "quote": "Theft Act 1968"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Act may be cited as the Theft Act 1968.",
+   "quote": "This Act may be cited as the Theft Act 1968"
+  },
+  {
+   "requirement": "The Theft Act 1968 does not extend to Scotland or to Northern Ireland, except as regards any amendment or repeal which in accordance with section 33 of the Act is to extend to Scotland or Northern Ireland.",
+   "quote": "This Act does not extend to Scotland or, to Northern Ireland, except as regards any amendment or repeal which in accordance with section 33 above is to extend to Scotland or Northern Ireland"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

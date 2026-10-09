@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2009/4/s6@current",
+ "section": "uk/ukpga/2009/4/s6",
+ "version": "current",
+ "source_sha256": "5aaeaa5187274c142cfea7163485edc1e948d6b7d2b46abbb2e8b3d004597c22",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A company is not chargeable to corporation tax on profits that accrue to it in a fiduciary or representative capacity.",
+    "quote": "A company is not chargeable to corporation tax on profits which accrue to it in a fiduciary or representative capacity"
+   },
+   {
+    "requirement": "A company remains chargeable to corporation tax on profits accruing to it in a fiduciary or representative capacity as respects its own beneficial interest, if any, in those profits.",
+    "quote": "except as respects its own beneficial interest (if any) in the profits"
+   },
+   {
+    "requirement": "The exception from corporation tax chargeability for profits accruing in a fiduciary or representative capacity does not apply to profits arising in the winding up of the company.",
+    "quote": "The exception under subsection (1) from chargeability does not apply to profits arising in the winding up of the company"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A company is not chargeable to corporation tax on profits that accrue to it in a fiduciary or representative capacity.",
+   "quote": "A company is not chargeable to corporation tax on profits which accrue to it in a fiduciary or representative capacity"
+  },
+  {
+   "requirement": "A company remains chargeable to corporation tax on profits accruing to it in a fiduciary or representative capacity as respects its own beneficial interest, if any, in those profits.",
+   "quote": "except as respects its own beneficial interest (if any) in the profits"
+  },
+  {
+   "requirement": "The exception from corporation tax chargeability for profits accruing in a fiduciary or representative capacity does not apply to profits arising in the winding up of the company.",
+   "quote": "The exception under subsection (1) from chargeability does not apply to profits arising in the winding up of the company"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

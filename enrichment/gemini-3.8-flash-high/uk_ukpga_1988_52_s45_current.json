@@ -1,0 +1,159 @@
+{
+ "key": "uk/ukpga/1988/52/s45@current",
+ "section": "uk/ukpga/1988/52/s45",
+ "version": "current",
+ "source_sha256": "dd1502a2570819cd6dc7b84a9a2941c1b5c6f8d1577d7d6d581d6853b6b1c062",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 45 of the Road Traffic Act 1988 applies to motor vehicles other than goods vehicles that are required by regulations under section 49 of the Act to be submitted for a vehicle test under that section.",
+    "quote": "motor vehicles other than goods vehicles which are required by regulations under section 49 of this Act to be submitted for a vehicle test"
+   },
+   {
+    "requirement": "Examinations under section 45 of the Road Traffic Act 1988 have effect to ascertain compliance with prescribed statutory requirements relating to the construction and condition of motor vehicles or their accessories or equipment.",
+    "quote": "the prescribed statutory requirements relating to the construction and condition of motor vehicles or their accessories or equipment"
+   },
+   {
+    "requirement": "Examinations under section 45 of the Road Traffic Act 1988 have effect to ascertain compliance with the requirement that the condition of motor vehicles should not be such that their use on a road would involve a danger of injury to any person.",
+    "quote": "the condition of motor vehicles should not be such that their use on a road would involve a danger of injury to any person"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision for the examination of vehicles submitted for examination under section 45 of the Road Traffic Act 1988.",
+    "quote": "The Secretary of State may by regulations make provision— (a) for the examination of vehicles submitted for examination"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision for issuing a test certificate certifying that at the date of the examination the statutory requirements were complied with in relation to the vehicle, where an examination finds they are met.",
+    "quote": "for the issue, where it is found on such an examination that the requirements mentioned in subsection (1) above are complied with, of a certificate (in this Act referred to as a “test certificate\")"
+   },
+   {
+    "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by persons authorised by the Secretary of State who are not officers of the Secretary of State, known as authorised examiners.",
+    "quote": "persons, not being officers of the Secretary of State, authorised for those purposes by the Secretary of State (in this section and section 46 of this Act referred to as “authorised examiners”)"
+   },
+   {
+    "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by nominated testers, who are individuals nominated by and acting under the supervision of authorised examiners and approved by the Secretary of State.",
+    "quote": "individuals who are nominated by, and act under the supervision of, authorised examiners and are approved by the Secretary of State (in this section and section 46 of this Act referred to as “nominated testers”)"
+   },
+   {
+    "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by examiners appointed under section 66A of the Road Traffic Act 1988.",
+    "quote": "examiners appointed under section 66A of this Act"
+   },
+   {
+    "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by inspectors who are approved by the Secretary of State and appointed by a designated council, being a county, district, London borough council, the Common Council of the City of London, or a Scottish council constituted under section 2 of the Local Government etc. (Scotland) Act 1994.",
+    "quote": "inspectors who are— (i) appointed by any council designated by the Secretary of State for the purposes of this section and section 46 of this Act, being the council of a county, district or London borough or the Common Council of the City of London or a council constituted under section 2 of the Local Government etc. (Scotland) Act 1994, and (ii) approved by the Secretary of State"
+   },
+   {
+    "requirement": "Where a test certificate is refused, the person carrying out the examination must issue a notification of the refusal stating the grounds of the refusal.",
+    "quote": "Where a test certificate is refused, the person carrying out the examination must issue a notification of the refusal stating the grounds of the refusal"
+   },
+   {
+    "requirement": "A person aggrieved by the refusal of a test certificate or the grounds of refusal may appeal to the Secretary of State.",
+    "quote": "a person aggrieved by the refusal or the grounds of the refusal may appeal to the Secretary of State"
+   },
+   {
+    "requirement": "On an appeal against the refusal of a test certificate, the Secretary of State must cause a further examination to be made and must either issue a test certificate or issue a notification of refusal stating the grounds.",
+    "quote": "On any such appeal the Secretary of State must cause a further examination to be made and either issue a test certificate or issue a notification of the refusal stating the grounds of the refusal"
+   },
+   {
+    "requirement": "The Secretary of State or a designated council may provide and maintain stations and apparatus for carrying out examinations under section 45 of the Road Traffic Act 1988.",
+    "quote": "the Secretary of State or a council designated for the purposes of this section may provide and maintain— (a) stations where examinations under this section may be carried out, and (b) apparatus for carrying out such examinations"
+   },
+   {
+    "requirement": "The Secretary of State may provide, or arrange the provision of, courses of instruction relating to carrying out examinations under section 45 of the Road Traffic Act 1988, and may charge prescribed fees for attending those courses.",
+    "quote": "The Secretary of State may provide, or make arrangements for the provision of, courses of instruction in connection with the carrying out of examinations under this section; and may charge prescribed fees in respect of attendance on such courses"
+   },
+   {
+    "requirement": "The Secretary of State must maintain, or cause to be maintained, records containing such particulars as the Secretary of State thinks fit regarding vehicles submitted for examination under section 45 of the Road Traffic Act 1988 and the carrying out and results of those examinations.",
+    "quote": "The Secretary of State shall maintain, or cause to be maintained, records containing such particulars as he thinks fit of— (a) vehicles submitted for examination under this section, and (b) the carrying out of and the results of the examinations"
+   },
+   {
+    "requirement": "The Secretary of State may make regulations for giving effect to section 45 of the Road Traffic Act 1988 and for prescribing anything authorised by that section or section 46 of the Act to be prescribed.",
+    "quote": "The Secretary of State may make regulations under this section for the purpose of giving effect to this section and for prescribing anything authorised by this section and section 46 of this Act to be prescribed"
+   },
+   {
+    "requirement": "For vehicles required by Article 3 of the EU Tachographs Regulation to have recording equipment installed and used, references to prescribed statutory requirements relating to construction and condition include prescribed requirements of that Regulation concerning the installation of recording equipment and the seals to be fixed to it.",
+    "quote": "this section shall have effect as if any reference to prescribed statutory requirements relating to the construction and condition of motor vehicles or their accessories or equipment included a reference to the prescribed requirements of so much of that Regulation as relates to the installation of recording equipment and the seals to be fixed to such equipment"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 45 of the Road Traffic Act 1988 applies to motor vehicles other than goods vehicles that are required by regulations under section 49 of the Act to be submitted for a vehicle test under that section.",
+   "quote": "motor vehicles other than goods vehicles which are required by regulations under section 49 of this Act to be submitted for a vehicle test"
+  },
+  {
+   "requirement": "Examinations under section 45 of the Road Traffic Act 1988 have effect to ascertain compliance with prescribed statutory requirements relating to the construction and condition of motor vehicles or their accessories or equipment.",
+   "quote": "the prescribed statutory requirements relating to the construction and condition of motor vehicles or their accessories or equipment"
+  },
+  {
+   "requirement": "Examinations under section 45 of the Road Traffic Act 1988 have effect to ascertain compliance with the requirement that the condition of motor vehicles should not be such that their use on a road would involve a danger of injury to any person.",
+   "quote": "the condition of motor vehicles should not be such that their use on a road would involve a danger of injury to any person"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision for the examination of vehicles submitted for examination under section 45 of the Road Traffic Act 1988.",
+   "quote": "The Secretary of State may by regulations make provision— (a) for the examination of vehicles submitted for examination"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision for issuing a test certificate certifying that at the date of the examination the statutory requirements were complied with in relation to the vehicle, where an examination finds they are met.",
+   "quote": "for the issue, where it is found on such an examination that the requirements mentioned in subsection (1) above are complied with, of a certificate (in this Act referred to as a “test certificate\")"
+  },
+  {
+   "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by persons authorised by the Secretary of State who are not officers of the Secretary of State, known as authorised examiners.",
+   "quote": "persons, not being officers of the Secretary of State, authorised for those purposes by the Secretary of State (in this section and section 46 of this Act referred to as “authorised examiners”)"
+  },
+  {
+   "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by nominated testers, who are individuals nominated by and acting under the supervision of authorised examiners and approved by the Secretary of State.",
+   "quote": "individuals who are nominated by, and act under the supervision of, authorised examiners and are approved by the Secretary of State (in this section and section 46 of this Act referred to as “nominated testers”)"
+  },
+  {
+   "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by examiners appointed under section 66A of the Road Traffic Act 1988.",
+   "quote": "examiners appointed under section 66A of this Act"
+  },
+  {
+   "requirement": "Examinations under section 45 of the Road Traffic Act 1988 may be carried out by inspectors who are approved by the Secretary of State and appointed by a designated council, being a county, district, London borough council, the Common Council of the City of London, or a Scottish council constituted under section 2 of the Local Government etc. (Scotland) Act 1994.",
+   "quote": "inspectors who are— (i) appointed by any council designated by the Secretary of State for the purposes of this section and section 46 of this Act, being the council of a county, district or London borough or the Common Council of the City of London or a council constituted under section 2 of the Local Government etc. (Scotland) Act 1994, and (ii) approved by the Secretary of State"
+  },
+  {
+   "requirement": "Where a test certificate is refused, the person carrying out the examination must issue a notification of the refusal stating the grounds of the refusal.",
+   "quote": "Where a test certificate is refused, the person carrying out the examination must issue a notification of the refusal stating the grounds of the refusal"
+  },
+  {
+   "requirement": "A person aggrieved by the refusal of a test certificate or the grounds of refusal may appeal to the Secretary of State.",
+   "quote": "a person aggrieved by the refusal or the grounds of the refusal may appeal to the Secretary of State"
+  },
+  {
+   "requirement": "On an appeal against the refusal of a test certificate, the Secretary of State must cause a further examination to be made and must either issue a test certificate or issue a notification of refusal stating the grounds.",
+   "quote": "On any such appeal the Secretary of State must cause a further examination to be made and either issue a test certificate or issue a notification of the refusal stating the grounds of the refusal"
+  },
+  {
+   "requirement": "The Secretary of State or a designated council may provide and maintain stations and apparatus for carrying out examinations under section 45 of the Road Traffic Act 1988.",
+   "quote": "the Secretary of State or a council designated for the purposes of this section may provide and maintain— (a) stations where examinations under this section may be carried out, and (b) apparatus for carrying out such examinations"
+  },
+  {
+   "requirement": "The Secretary of State may provide, or arrange the provision of, courses of instruction relating to carrying out examinations under section 45 of the Road Traffic Act 1988, and may charge prescribed fees for attending those courses.",
+   "quote": "The Secretary of State may provide, or make arrangements for the provision of, courses of instruction in connection with the carrying out of examinations under this section; and may charge prescribed fees in respect of attendance on such courses"
+  },
+  {
+   "requirement": "The Secretary of State must maintain, or cause to be maintained, records containing such particulars as the Secretary of State thinks fit regarding vehicles submitted for examination under section 45 of the Road Traffic Act 1988 and the carrying out and results of those examinations.",
+   "quote": "The Secretary of State shall maintain, or cause to be maintained, records containing such particulars as he thinks fit of— (a) vehicles submitted for examination under this section, and (b) the carrying out of and the results of the examinations"
+  },
+  {
+   "requirement": "The Secretary of State may make regulations for giving effect to section 45 of the Road Traffic Act 1988 and for prescribing anything authorised by that section or section 46 of the Act to be prescribed.",
+   "quote": "The Secretary of State may make regulations under this section for the purpose of giving effect to this section and for prescribing anything authorised by this section and section 46 of this Act to be prescribed"
+  },
+  {
+   "requirement": "For vehicles required by Article 3 of the EU Tachographs Regulation to have recording equipment installed and used, references to prescribed statutory requirements relating to construction and condition include prescribed requirements of that Regulation concerning the installation of recording equipment and the seals to be fixed to it.",
+   "quote": "this section shall have effect as if any reference to prescribed statutory requirements relating to the construction and condition of motor vehicles or their accessories or equipment included a reference to the prescribed requirements of so much of that Regulation as relates to the installation of recording equipment and the seals to be fixed to such equipment"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

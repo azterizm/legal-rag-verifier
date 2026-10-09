@@ -1,0 +1,131 @@
+{
+ "key": "uk/ukpga/2010/23/s11@current",
+ "section": "uk/ukpga/2010/23/s11",
+ "version": "current",
+ "source_sha256": "7535289cabf5cc7b6f000ca4309697572487d3d38485bc4756211194837524ac",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual guilty of an offence under section 1, 2 or 6 is liable on summary conviction to imprisonment for a term not exceeding 12 months, to a fine not exceeding the statutory maximum, or to both.",
+    "quote": "An individual guilty of an offence under section 1, 2 or 6 is liable— (a) on summary conviction, to imprisonment for a term not exceeding 12 months, or to a fine not exceeding the statutory maximum, or to both"
+   },
+   {
+    "requirement": "An individual guilty of an offence under section 1, 2 or 6 is liable on conviction on indictment to imprisonment for a term not exceeding 10 years, to a fine, or to both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding 10 years, or to a fine, or to both"
+   },
+   {
+    "requirement": "In the application of the provision in England and Wales, the reference to 12 months' imprisonment on summary conviction for an individual is to be read as the general limit in a magistrates’ court, or as 6 months if the offence was committed before 2 May 2022.",
+    "quote": "reference in subsection (1)(a) to 12 months is to be read as a reference to the general limit in a magistrates’ court (or to 6 months in relation to an offence committed before 2 May 2022)"
+   },
+   {
+    "requirement": "Any person other than an individual who is guilty of an offence under section 1, 2 or 6 is liable on summary conviction to a fine not exceeding the statutory maximum.",
+    "quote": "Any other person guilty of an offence under section 1, 2 or 6 is liable— (a) on summary conviction, to a fine not exceeding the statutory maximum"
+   },
+   {
+    "requirement": "Any person other than an individual who is guilty of an offence under section 1, 2 or 6 is liable on conviction on indictment to a fine.",
+    "quote": "(b) on conviction on indictment, to a fine"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 7 is liable on conviction on indictment to a fine.",
+    "quote": "A person guilty of an offence under section 7 is liable on conviction on indictment to a fine."
+   },
+   {
+    "requirement": "In the application of the provision to Northern Ireland, the reference to 12 months' imprisonment on summary conviction for an individual is to be read as a reference to 6 months.",
+    "quote": "in its application to Northern Ireland, as a reference to 6 months"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Maximum term of imprisonment on summary conviction for an individual guilty of an offence under section 1, 2 or 6",
+    "value": "12 months",
+    "quote": "term not exceeding 12 months"
+   },
+   {
+    "what": "Maximum term of imprisonment on conviction on indictment for an individual guilty of an offence under section 1, 2 or 6",
+    "value": "10 years",
+    "quote": "term not exceeding 10 years"
+   },
+   {
+    "what": "Substituted term of imprisonment in England and Wales for offences committed before 2 May 2022",
+    "value": "6 months",
+    "quote": "to 6 months in relation to an offence committed before 2 May 2022"
+   },
+   {
+    "what": "Cut-off commission date for applying the 6-month term in England and Wales",
+    "value": "2 May 2022",
+    "quote": "before 2 May 2022"
+   },
+   {
+    "what": "Substituted term of imprisonment in the application of the provision to Northern Ireland",
+    "value": "6 months",
+    "quote": "as a reference to 6 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An individual guilty of an offence under section 1, 2 or 6 is liable on summary conviction to imprisonment for a term not exceeding 12 months, to a fine not exceeding the statutory maximum, or to both.",
+   "quote": "An individual guilty of an offence under section 1, 2 or 6 is liable— (a) on summary conviction, to imprisonment for a term not exceeding 12 months, or to a fine not exceeding the statutory maximum, or to both"
+  },
+  {
+   "requirement": "An individual guilty of an offence under section 1, 2 or 6 is liable on conviction on indictment to imprisonment for a term not exceeding 10 years, to a fine, or to both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding 10 years, or to a fine, or to both"
+  },
+  {
+   "requirement": "In the application of the provision in England and Wales, the reference to 12 months' imprisonment on summary conviction for an individual is to be read as the general limit in a magistrates’ court, or as 6 months if the offence was committed before 2 May 2022.",
+   "quote": "reference in subsection (1)(a) to 12 months is to be read as a reference to the general limit in a magistrates’ court (or to 6 months in relation to an offence committed before 2 May 2022)"
+  },
+  {
+   "requirement": "Any person other than an individual who is guilty of an offence under section 1, 2 or 6 is liable on summary conviction to a fine not exceeding the statutory maximum.",
+   "quote": "Any other person guilty of an offence under section 1, 2 or 6 is liable— (a) on summary conviction, to a fine not exceeding the statutory maximum"
+  },
+  {
+   "requirement": "Any person other than an individual who is guilty of an offence under section 1, 2 or 6 is liable on conviction on indictment to a fine.",
+   "quote": "(b) on conviction on indictment, to a fine"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 7 is liable on conviction on indictment to a fine.",
+   "quote": "A person guilty of an offence under section 7 is liable on conviction on indictment to a fine."
+  },
+  {
+   "requirement": "In the application of the provision to Northern Ireland, the reference to 12 months' imprisonment on summary conviction for an individual is to be read as a reference to 6 months.",
+   "quote": "in its application to Northern Ireland, as a reference to 6 months"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Maximum term of imprisonment on summary conviction for an individual guilty of an offence under section 1, 2 or 6",
+   "value": "12 months",
+   "quote": "term not exceeding 12 months"
+  },
+  {
+   "what": "Maximum term of imprisonment on conviction on indictment for an individual guilty of an offence under section 1, 2 or 6",
+   "value": "10 years",
+   "quote": "term not exceeding 10 years"
+  },
+  {
+   "what": "Substituted term of imprisonment in England and Wales for offences committed before 2 May 2022",
+   "value": "6 months",
+   "quote": "to 6 months in relation to an offence committed before 2 May 2022"
+  },
+  {
+   "what": "Cut-off commission date for applying the 6-month term in England and Wales",
+   "value": "2 May 2022",
+   "quote": "before 2 May 2022"
+  },
+  {
+   "what": "Substituted term of imprisonment in the application of the provision to Northern Ireland",
+   "value": "6 months",
+   "quote": "as a reference to 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 5
+ }
+}

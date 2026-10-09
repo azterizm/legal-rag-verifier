@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2020/17/s215@current",
+ "section": "uk/ukpga/2020/17/s215",
+ "version": "current",
+ "source_sha256": "8b47b70ea6a4af0c6adf6dacf040ef2cf2271e06f6578baf788a1a6ca00e44e3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 215 applies where a community order is in force.",
+    "quote": "This section applies where a community order is in force."
+   },
+   {
+    "requirement": "In the case of any community order, whenever the offender was convicted, the offender must keep in touch with the responsible officer in accordance with any instructions the responsible officer may give the offender from time to time.",
+    "quote": "must keep in touch with the responsible officer in accordance with any instructions the responsible officer may give the offender from time to time"
+   },
+   {
+    "requirement": "In the case of any community order, whenever the offender was convicted, the offender must notify the responsible officer of any name which the offender uses but which is not mentioned in the community order.",
+    "quote": "any name which the offender uses but which is not mentioned in the community order"
+   },
+   {
+    "requirement": "In the case of any community order, whenever the offender was convicted, the offender must notify the responsible officer of each of the offender’s telephone numbers and email addresses (if any).",
+    "quote": "each of the offender’s telephone numbers and email addresses (if any)"
+   },
+   {
+    "requirement": "The offender must comply with the notification requirements regarding a name, telephone number or email address as soon as reasonably practicable after the community order is made or the offender first uses that name or obtains that telephone number or email address.",
+    "quote": "as soon as reasonably practicable after the order is made or the person first uses that name or obtains that telephone number or email address"
+   },
+   {
+    "requirement": "An obligation under section 215 is enforceable as if it were a community order requirement of the community order.",
+    "quote": "enforceable as if it were a community order requirement of the community order"
+   },
+   {
+    "requirement": "The obligations under subsection (2) apply in relation to community orders made before as well as those made after section 192 of the Crime and Policing Act 2026 comes into force.",
+    "quote": "apply in relation to community orders made before (as well as those made after) section 192 of the Crime and Policing Act 2026 comes into force"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 215 applies where a community order is in force.",
+   "quote": "This section applies where a community order is in force."
+  },
+  {
+   "requirement": "In the case of any community order, whenever the offender was convicted, the offender must keep in touch with the responsible officer in accordance with any instructions the responsible officer may give the offender from time to time.",
+   "quote": "must keep in touch with the responsible officer in accordance with any instructions the responsible officer may give the offender from time to time"
+  },
+  {
+   "requirement": "In the case of any community order, whenever the offender was convicted, the offender must notify the responsible officer of any name which the offender uses but which is not mentioned in the community order.",
+   "quote": "any name which the offender uses but which is not mentioned in the community order"
+  },
+  {
+   "requirement": "In the case of any community order, whenever the offender was convicted, the offender must notify the responsible officer of each of the offender’s telephone numbers and email addresses (if any).",
+   "quote": "each of the offender’s telephone numbers and email addresses (if any)"
+  },
+  {
+   "requirement": "The offender must comply with the notification requirements regarding a name, telephone number or email address as soon as reasonably practicable after the community order is made or the offender first uses that name or obtains that telephone number or email address.",
+   "quote": "as soon as reasonably practicable after the order is made or the person first uses that name or obtains that telephone number or email address"
+  },
+  {
+   "requirement": "An obligation under section 215 is enforceable as if it were a community order requirement of the community order.",
+   "quote": "enforceable as if it were a community order requirement of the community order"
+  },
+  {
+   "requirement": "The obligations under subsection (2) apply in relation to community orders made before as well as those made after section 192 of the Crime and Policing Act 2026 comes into force.",
+   "quote": "apply in relation to community orders made before (as well as those made after) section 192 of the Crime and Policing Act 2026 comes into force"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

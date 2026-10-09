@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/2007/3/s294@current",
+ "section": "uk/ukpga/2007/3/s294",
+ "version": "current",
+ "source_sha256": "2ec30b6719845f8d4634d46d10868665062725c14bcf9ca5d069dd99c2200f71",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The requirement under section 294 is met if, at no time after the issue of the relevant holding, the relevant qualifying activity in question has been carried on by any person other than the relevant company or a qualifying 90% subsidiary of that company.",
+    "quote": "at no time after the issue of the relevant holding, has the relevant qualifying activity in question been carried on by a person other than— (a) the relevant company, or (b) a qualifying 90% subsidiary of that company"
+   },
+   {
+    "requirement": "For the purposes of subsection 294(1), the phrase 'the relevant qualifying activity in question' means the relevant qualifying activity by reference to which the requirement of section 293 is met.",
+    "quote": "“the relevant qualifying activity in question” means the relevant qualifying activity by reference to which the requirement of section 293 is met"
+   },
+   {
+    "requirement": "The requirement of section 294 is not regarded as failing to be met merely because the trade in question is carried on by a person other than the relevant company or a qualifying subsidiary of that company at any time after the issue of the relevant holding and before the relevant company or any qualifying 90% subsidiary of that company carries on that trade.",
+    "quote": "not to be regarded as failing to be met merely because of the carrying on of the trade in question by a person other than the relevant company, or a qualifying subsidiary of that company, at any time— (a) after the issue of the relevant holding, and (b) before the relevant company, or any qualifying 90% subsidiary of that company, carries on that trade"
+   },
+   {
+    "requirement": "The requirement of section 294 is not regarded as failing to be met merely because the trade in question is carried on by the partners in a partnership of which the relevant company, or a qualifying 90% subsidiary of that company, is a member.",
+    "quote": "not to be regarded as failing to be met merely because of the carrying on of the trade in question— (a) by the partners in a partnership of which the relevant company, or a qualifying 90% subsidiary of that company, is a member"
+   },
+   {
+    "requirement": "The requirement of section 294 is not regarded as failing to be met merely because the trade in question is carried on by the parties to a joint venture to which the relevant company, or a qualifying 90% subsidiary of that company, is a party.",
+    "quote": "not to be regarded as failing to be met merely because of the carrying on of the trade in question— (b) by the parties to a joint venture to which the relevant company, or a qualifying 90% subsidiary of that company, is a party"
+   },
+   {
+    "requirement": "The requirement of section 294 is not regarded as failing to be met if, merely because of anything done as a consequence of the relevant company or any other company being in administration or receivership, the trade in question ceases to be carried on by the relevant company or a qualifying 90% subsidiary of that company and is subsequently carried on by a person who has not been connected with the relevant company at any time after the date which is 12 months before the issue of the relevant holding.",
+    "quote": "merely because of anything done as a consequence of the relevant company or any other company being in administration or receivership, the trade in question ceases to be carried on by the relevant company or a qualifying 90% subsidiary of that company and is subsequently carried on by a person who has not been connected, at any time after the date which is 12 months before the issue of the relevant holding, with the relevant company"
+   },
+   {
+    "requirement": "The requirement of section 294 is not regarded as failing to be met if, merely because of the relevant company or any other company being wound up or dissolved without winding up, the trade in question ceases to be carried on by the relevant company or a qualifying 90% subsidiary of that company and is subsequently carried on by a person who has not been connected with the relevant company at any time after the date which is 12 months before the issue of the relevant holding.",
+    "quote": "merely because of the relevant company or any other company being wound up or dissolved without winding up, the trade in question ceases to be carried on by the relevant company or a qualifying 90% subsidiary of that company and is subsequently carried on by a person who has not been connected, at any time after the date which is 12 months before the issue of the relevant holding, with the relevant company"
+   },
+   {
+    "requirement": "Subsection 294(4) applies only if the entry into administration or receivership and everything done in consequence of the company concerned being in administration or receivership is for genuine commercial reasons and is not part of a scheme or arrangement having the avoidance of tax as its purpose or one of its main purposes.",
+    "quote": "Subsection (4) applies only if— (a) the entry into administration or receivership and everything done in consequence of the company concerned being in administration or receivership, is for genuine commercial reasons and is not part of a scheme or arrangement the purpose or one of the main purposes of which is the avoidance of tax"
+   },
+   {
+    "requirement": "Subsection 294(4) applies only if the winding up or dissolution is for genuine commercial reasons and is not part of a scheme or arrangement having the avoidance of tax as its purpose or one of its main purposes.",
+    "quote": "Subsection (4) applies only if— (b) the winding up or dissolution, is for genuine commercial reasons and is not part of a scheme or arrangement the purpose or one of the main purposes of which is the avoidance of tax"
+   },
+   {
+    "requirement": "In section 294, 'the trade in question' means so much of the relevant qualifying activity mentioned in subsection (1) as consists of a trade that was being carried on at the time when the relevant holding was issued, or a trade for the carrying on of which preparations were being made at that time.",
+    "quote": "“the trade in question” means so much of the relevant qualifying activity mentioned in subsection (1) as consists of— (a) a trade which was being carried on at the time when the relevant holding was issued, or (b) a trade for the carrying on of which preparations were being made at that time"
+   },
+   {
+    "requirement": "The definition of 'relevant qualifying activity' set out in subsection 293(8) applies for the purposes of section 294 as it applies for the purposes of section 293.",
+    "quote": "The definition of “relevant qualifying activity” in subsection (8) of section 293 applies for the purposes of this section as it applies for the purposes of that section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "percentage ownership required for a qualifying subsidiary of the relevant company",
+    "value": "90%",
+    "quote": "qualifying 90% subsidiary"
+   },
+   {
+    "what": "period prior to the issue of the relevant holding during which the person subsequently carrying on the trade must not have been connected with the relevant company",
+    "value": "12 months",
+    "quote": "12 months before the issue of the relevant holding"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The requirement under section 294 is met if, at no time after the issue of the relevant holding, the relevant qualifying activity in question has been carried on by any person other than the relevant company or a qualifying 90% subsidiary of that company.",
+   "quote": "at no time after the issue of the relevant holding, has the relevant qualifying activity in question been carried on by a person other than— (a) the relevant company, or (b) a qualifying 90% subsidiary of that company"
+  },
+  {
+   "requirement": "For the purposes of subsection 294(1), the phrase 'the relevant qualifying activity in question' means the relevant qualifying activity by reference to which the requirement of section 293 is met.",
+   "quote": "“the relevant qualifying activity in question” means the relevant qualifying activity by reference to which the requirement of section 293 is met"
+  },
+  {
+   "requirement": "The requirement of section 294 is not regarded as failing to be met merely because the trade in question is carried on by a person other than the relevant company or a qualifying subsidiary of that company at any time after the issue of the relevant holding and before the relevant company or any qualifying 90% subsidiary of that company carries on that trade.",
+   "quote": "not to be regarded as failing to be met merely because of the carrying on of the trade in question by a person other than the relevant company, or a qualifying subsidiary of that company, at any time— (a) after the issue of the relevant holding, and (b) before the relevant company, or any qualifying 90% subsidiary of that company, carries on that trade"
+  },
+  {
+   "requirement": "The requirement of section 294 is not regarded as failing to be met merely because the trade in question is carried on by the partners in a partnership of which the relevant company, or a qualifying 90% subsidiary of that company, is a member.",
+   "quote": "not to be regarded as failing to be met merely because of the carrying on of the trade in question— (a) by the partners in a partnership of which the relevant company, or a qualifying 90% subsidiary of that company, is a member"
+  },
+  {
+   "requirement": "The requirement of section 294 is not regarded as failing to be met if, merely because of the relevant company or any other company being wound up or dissolved without winding up, the trade in question ceases to be carried on by the relevant company or a qualifying 90% subsidiary of that company and is subsequently carried on by a person who has not been connected with the relevant company at any time after the date which is 12 months before the issue of the relevant holding.",
+   "quote": "merely because of the relevant company or any other company being wound up or dissolved without winding up, the trade in question ceases to be carried on by the relevant company or a qualifying 90% subsidiary of that company and is subsequently carried on by a person who has not been connected, at any time after the date which is 12 months before the issue of the relevant holding, with the relevant company"
+  },
+  {
+   "requirement": "In section 294, 'the trade in question' means so much of the relevant qualifying activity mentioned in subsection (1) as consists of a trade that was being carried on at the time when the relevant holding was issued, or a trade for the carrying on of which preparations were being made at that time.",
+   "quote": "“the trade in question” means so much of the relevant qualifying activity mentioned in subsection (1) as consists of— (a) a trade which was being carried on at the time when the relevant holding was issued, or (b) a trade for the carrying on of which preparations were being made at that time"
+  },
+  {
+   "requirement": "The definition of 'relevant qualifying activity' set out in subsection 293(8) applies for the purposes of section 294 as it applies for the purposes of section 293.",
+   "quote": "The definition of “relevant qualifying activity” in subsection (8) of section 293 applies for the purposes of this section as it applies for the purposes of that section"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "percentage ownership required for a qualifying subsidiary of the relevant company",
+   "value": "90%",
+   "quote": "qualifying 90% subsidiary"
+  },
+  {
+   "what": "period prior to the issue of the relevant holding during which the person subsequently carrying on the trade must not have been connected with the relevant company",
+   "value": "12 months",
+   "quote": "12 months before the issue of the relevant holding"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

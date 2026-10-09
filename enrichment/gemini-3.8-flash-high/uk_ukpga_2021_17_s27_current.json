@@ -1,0 +1,59 @@
+{
+ "key": "uk/ukpga/2021/17/s27@current",
+ "section": "uk/ukpga/2021/17/s27",
+ "version": "current",
+ "source_sha256": "9ecb5e9b1528b0a5434a6189b0d2ac2cf43b792cf65735731b191611e4e28331",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In this Part, a domestic abuse protection order is an order made for the purpose of preventing a person (\"P\") from being abusive towards a person aged 16 or over to whom P is personally connected, which prohibits P from doing things described in the order or requires P to do things described in the order.",
+    "quote": "for the purpose of preventing a person (“P”) from being abusive towards a person aged 16 or over to whom P is personally connected"
+   },
+   {
+    "requirement": "A domestic abuse protection order may be made either on application (under section 28) or in the course of certain proceedings (under section 31).",
+    "quote": "A domestic abuse protection order may be made— (a) on application (see section 28), or (b) in the course of certain proceedings (see section 31)."
+   },
+   {
+    "requirement": "The conditions for making a domestic abuse protection order are set out in section 32.",
+    "quote": "Section 32 sets out the conditions for making a domestic abuse protection order."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum age of the person to whom P is personally connected in order for a domestic abuse protection order to prevent P from being abusive towards them",
+    "value": "16 or over",
+    "quote": "person aged 16 or over"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In this Part, a domestic abuse protection order is an order made for the purpose of preventing a person (\"P\") from being abusive towards a person aged 16 or over to whom P is personally connected, which prohibits P from doing things described in the order or requires P to do things described in the order.",
+   "quote": "for the purpose of preventing a person (“P”) from being abusive towards a person aged 16 or over to whom P is personally connected"
+  },
+  {
+   "requirement": "A domestic abuse protection order may be made either on application (under section 28) or in the course of certain proceedings (under section 31).",
+   "quote": "A domestic abuse protection order may be made— (a) on application (see section 28), or (b) in the course of certain proceedings (see section 31)."
+  },
+  {
+   "requirement": "The conditions for making a domestic abuse protection order are set out in section 32.",
+   "quote": "Section 32 sets out the conditions for making a domestic abuse protection order."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum age of the person to whom P is personally connected in order for a domestic abuse protection order to prevent P from being abusive towards them",
+   "value": "16 or over",
+   "quote": "person aged 16 or over"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

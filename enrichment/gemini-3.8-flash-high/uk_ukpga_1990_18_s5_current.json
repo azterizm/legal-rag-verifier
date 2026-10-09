@@ -1,0 +1,125 @@
+{
+ "key": "uk/ukpga/1990/18/s5@current",
+ "section": "uk/ukpga/1990/18/s5",
+ "version": "current",
+ "source_sha256": "0d2d97687e83a8518aba3c8350c1365b715f6197c84e568c2cf48bd72f7dbb7f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The provisions of section 5 apply for the interpretation of section 4 of the Computer Misuse Act 1990.",
+    "quote": "apply for the interpretation of section 4 above"
+   },
+   {
+    "requirement": "In relation to an offence under section 1, 3, 3ZA, or 3A, where the accused was in a country outside the United Kingdom at the time of the act constituting the offence, there is a significant link with domestic jurisdiction if the accused was a United Kingdom national at that time and the act constituted an offence under the law of the country in which it occurred.",
+    "quote": "where the accused was in a country outside the United Kingdom at the time of the act constituting the offence there is a significant link with domestic jurisdiction if— (a) the accused was a United Kingdom national at that time; and (b) the act constituted an offence under the law of the country in which it occurred"
+   },
+   {
+    "requirement": "For the purposes of subsection (1A), the term 'country' includes territory.",
+    "quote": "“country” includes territory"
+   },
+   {
+    "requirement": "For the purposes of subsection (1A), a 'United Kingdom national' means an individual who is a British citizen, a British overseas territories citizen, a British National (Overseas), a British Overseas citizen, a person who under the British Nationality Act 1981 is a British subject, or a British protected person within the meaning of that Act.",
+    "quote": "“United Kingdom national” means an individual who is— a British citizen, a British overseas territories citizen, a British National (Overseas) or a British Overseas citizen;a person who under the British Nationality Act 1981 is a British subject; ora British protected person within the meaning of that Act"
+   },
+   {
+    "requirement": "In relation to an offence under section 1, a significant link with domestic jurisdiction exists if the accused was in the home country concerned at the time when he did the act which caused the computer to perform the function.",
+    "quote": "the accused was in the home country concerned at the time when he did the act which caused the computer to perform the function"
+   },
+   {
+    "requirement": "In relation to an offence under section 1, a significant link with domestic jurisdiction exists if any computer containing any program or data to which the accused secured or intended to secure unauthorised access by doing that act was in the home country concerned at that time.",
+    "quote": "any computer containing any program or data to which the accused secured or intended to secure unauthorised access by doing that act was in the home country concerned at that time"
+   },
+   {
+    "requirement": "In relation to an offence under section 1, a significant link with domestic jurisdiction exists if any computer containing any program or data to which the accused by doing that act secured or intended to secure unauthorised access, or enabled or intended to enable unauthorised access to be secured, was in the home country concerned at that time.",
+    "quote": "any computer containing any program or data to which the accused by doing that act secured or intended to secure unauthorised access, or enabled or intended to enable unauthorised access to be secured, was in the home country concerned at that time"
+   },
+   {
+    "requirement": "In relation to an offence under section 3, a significant link with domestic jurisdiction exists if the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done).",
+    "quote": "the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done)"
+   },
+   {
+    "requirement": "In relation to an offence under section 3, a significant link with domestic jurisdiction exists if the unauthorised act was done in relation to a computer in the home country concerned.",
+    "quote": "the unauthorised act was done in relation to a computer in the home country concerned"
+   },
+   {
+    "requirement": "In relation to an offence under section 3ZA, a significant link with domestic jurisdiction exists if the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done).",
+    "quote": "In relation to an offence under section 3ZA, any of the following is also a significant link with domestic jurisdiction— (a) that the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done)"
+   },
+   {
+    "requirement": "In relation to an offence under section 3ZA, a significant link with domestic jurisdiction exists if the unauthorised act was done in relation to a computer in the home country concerned.",
+    "quote": "that the unauthorised act was done in relation to a computer in the home country concerned"
+   },
+   {
+    "requirement": "In relation to an offence under section 3ZA, a significant link with domestic jurisdiction exists if the unauthorised act caused, or created a significant risk of, serious damage of a material kind (within the meaning of section 3ZA) in the home country concerned.",
+    "quote": "that the unauthorised act caused, or created a significant risk of, serious damage of a material kind (within the meaning of that section) in the home country concerned"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year of the British Nationality Act referenced for defining a British subject",
+    "value": "1981",
+    "quote": "British Nationality Act 1981"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The provisions of section 5 apply for the interpretation of section 4 of the Computer Misuse Act 1990.",
+   "quote": "apply for the interpretation of section 4 above"
+  },
+  {
+   "requirement": "In relation to an offence under section 1, 3, 3ZA, or 3A, where the accused was in a country outside the United Kingdom at the time of the act constituting the offence, there is a significant link with domestic jurisdiction if the accused was a United Kingdom national at that time and the act constituted an offence under the law of the country in which it occurred.",
+   "quote": "where the accused was in a country outside the United Kingdom at the time of the act constituting the offence there is a significant link with domestic jurisdiction if— (a) the accused was a United Kingdom national at that time; and (b) the act constituted an offence under the law of the country in which it occurred"
+  },
+  {
+   "requirement": "For the purposes of subsection (1A), the term 'country' includes territory.",
+   "quote": "“country” includes territory"
+  },
+  {
+   "requirement": "For the purposes of subsection (1A), a 'United Kingdom national' means an individual who is a British citizen, a British overseas territories citizen, a British National (Overseas), a British Overseas citizen, a person who under the British Nationality Act 1981 is a British subject, or a British protected person within the meaning of that Act.",
+   "quote": "“United Kingdom national” means an individual who is— a British citizen, a British overseas territories citizen, a British National (Overseas) or a British Overseas citizen;a person who under the British Nationality Act 1981 is a British subject; ora British protected person within the meaning of that Act"
+  },
+  {
+   "requirement": "In relation to an offence under section 1, a significant link with domestic jurisdiction exists if the accused was in the home country concerned at the time when he did the act which caused the computer to perform the function.",
+   "quote": "the accused was in the home country concerned at the time when he did the act which caused the computer to perform the function"
+  },
+  {
+   "requirement": "In relation to an offence under section 1, a significant link with domestic jurisdiction exists if any computer containing any program or data to which the accused secured or intended to secure unauthorised access by doing that act was in the home country concerned at that time.",
+   "quote": "any computer containing any program or data to which the accused secured or intended to secure unauthorised access by doing that act was in the home country concerned at that time"
+  },
+  {
+   "requirement": "In relation to an offence under section 1, a significant link with domestic jurisdiction exists if any computer containing any program or data to which the accused by doing that act secured or intended to secure unauthorised access, or enabled or intended to enable unauthorised access to be secured, was in the home country concerned at that time.",
+   "quote": "any computer containing any program or data to which the accused by doing that act secured or intended to secure unauthorised access, or enabled or intended to enable unauthorised access to be secured, was in the home country concerned at that time"
+  },
+  {
+   "requirement": "In relation to an offence under section 3, a significant link with domestic jurisdiction exists if the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done).",
+   "quote": "the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done)"
+  },
+  {
+   "requirement": "In relation to an offence under section 3, a significant link with domestic jurisdiction exists if the unauthorised act was done in relation to a computer in the home country concerned.",
+   "quote": "the unauthorised act was done in relation to a computer in the home country concerned"
+  },
+  {
+   "requirement": "In relation to an offence under section 3ZA, a significant link with domestic jurisdiction exists if the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done).",
+   "quote": "In relation to an offence under section 3ZA, any of the following is also a significant link with domestic jurisdiction— (a) that the accused was in the home country concerned at the time when he did the unauthorised act (or caused it to be done)"
+  },
+  {
+   "requirement": "In relation to an offence under section 3ZA, a significant link with domestic jurisdiction exists if the unauthorised act was done in relation to a computer in the home country concerned.",
+   "quote": "that the unauthorised act was done in relation to a computer in the home country concerned"
+  },
+  {
+   "requirement": "In relation to an offence under section 3ZA, a significant link with domestic jurisdiction exists if the unauthorised act caused, or created a significant risk of, serious damage of a material kind (within the meaning of section 3ZA) in the home country concerned.",
+   "quote": "that the unauthorised act caused, or created a significant risk of, serious damage of a material kind (within the meaning of that section) in the home country concerned"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

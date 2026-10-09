@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1987/43/s16@current",
+ "section": "uk/ukpga/1987/43/s16",
+ "version": "current",
+ "source_sha256": "1d082930950844544d23be361a7e74cf2e942afae83ed7bfead08e7b887ba20b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An enforcement authority in England and Wales or Northern Ireland may apply for an order for the forfeiture of any goods on the grounds that there has been a contravention in relation to the goods of a safety provision.",
+    "quote": "An enforcement authority in England and Wales or Northern Ireland may apply under this section for an order for the forfeiture of any goods on the grounds that there has been a contravention in relation to the goods of a safety provision."
+   },
+   {
+    "requirement": "An application for forfeiture may be made to a magistrates' court where proceedings have been brought in that court for an offence in respect of a contravention of any safety provision in relation to some or all of the goods.",
+    "quote": "where proceedings have been brought in a magistrates’ court for an offence in respect of a contravention in relation to some or all of the goods of any safety provision, to that court"
+   },
+   {
+    "requirement": "An application for forfeiture may be made to a magistrates' court where an application with respect to some or all of the goods has been made to that court under section 15 or section 33.",
+    "quote": "where an application with respect to some or all of the goods has been made to a magistrates’ court under section 15 above or section 33 below, to that court"
+   },
+   {
+    "requirement": "An application for forfeiture may be made by way of complaint to a magistrates’ court where no application for the forfeiture of the goods has been made under paragraph (a) or (b) of section 16(2).",
+    "quote": "where no application for the forfeiture of the goods has been made under paragraph (a) or (b) above, by way of complaint to a magistrates’ court."
+   },
+   {
+    "requirement": "The court shall make an order for the forfeiture of any goods on an application under section 16 only if it is satisfied that there has been a contravention in relation to the goods of a safety provision.",
+    "quote": "the court shall make an order for the forfeiture of any goods only if it is satisfied that there has been a contravention in relation to the goods of a safety provision."
+   },
+   {
+    "requirement": "A court may infer that there has been a contravention in relation to any goods of a safety provision if it is satisfied that any such provision has been contravened in relation to goods which are representative of those goods (whether by reason of being of the same design or part of the same consignment or batch or otherwise).",
+    "quote": "a court may infer for the purposes of this section that there has been a contravention in relation to any goods of a safety provision if it is satisfied that any such provision has been contravened in relation to goods which are representative of those goods"
+   },
+   {
+    "requirement": "Any person aggrieved by an order made by a magistrates’ court under section 16, or by a decision of such a court not to make such an order, may appeal to the Crown Court in England and Wales.",
+    "quote": "Any person aggrieved by an order made under this section by a magistrates’ court, or by a decision of such a court not to make such an order, may appeal against that order or decision— (a) in England and Wales, to the Crown Court"
+   },
+   {
+    "requirement": "Any person aggrieved by an order made by a magistrates’ court under section 16, or by a decision of such a court not to make such an order, may appeal to the county court in Northern Ireland.",
+    "quote": "Any person aggrieved by an order made under this section by a magistrates’ court, or by a decision of such a court not to make such an order, may appeal against that order or decision— (a) in England and Wales, to the Crown Court; (b) in Northern Ireland, to the county court"
+   },
+   {
+    "requirement": "An order made under section 16 by a magistrates’ court may contain such provision as appears to the court to be appropriate for delaying the coming into force of the order pending the making and determination of any appeal (including any application under section 111 of the Magistrates’ Courts Act 1980 or Article 146 of the Magistrates’ Courts (Northern Ireland) Order 1981 for a statement of case).",
+    "quote": "an order so made may contain such provision as appears to the court to be appropriate for delaying the coming into force of the order pending the making and determination of any appeal (including any application under section 111 of the Magistrates’ Courts Act 1980 or Article 146 of the Magistrates’ Courts (Northern Ireland) Order 1981 (statement of case))."
+   },
+   {
+    "requirement": "Subject to section 16(7), any goods forfeited under section 16 shall be destroyed in accordance with such directions as the court may give.",
+    "quote": "Subject to subsection (7) below, where any goods are forfeited under this section they shall be destroyed in accordance with such directions as the court may give."
+   },
+   {
+    "requirement": "On making an order under section 16, a magistrates’ court may, if it considers it appropriate, direct that the goods shall instead of being destroyed be released to a specified person on condition that that person does not supply those goods to any person otherwise than as mentioned in section 46(7)(a) or (b) and complies with any order to pay costs or expenses (including under section 35) made against that person in the forfeiture proceedings.",
+    "quote": "direct that the goods to which the order relates shall (instead of being destroyed) be released, to such person as the court may specify, on condition that that person— (a) does not supply those goods to any person otherwise than as mentioned in section 46(7)(a) or (b) below; and (b) complies with any order to pay costs or expenses"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An enforcement authority in England and Wales or Northern Ireland may apply for an order for the forfeiture of any goods on the grounds that there has been a contravention in relation to the goods of a safety provision.",
+   "quote": "An enforcement authority in England and Wales or Northern Ireland may apply under this section for an order for the forfeiture of any goods on the grounds that there has been a contravention in relation to the goods of a safety provision."
+  },
+  {
+   "requirement": "An application for forfeiture may be made to a magistrates' court where proceedings have been brought in that court for an offence in respect of a contravention of any safety provision in relation to some or all of the goods.",
+   "quote": "where proceedings have been brought in a magistrates’ court for an offence in respect of a contravention in relation to some or all of the goods of any safety provision, to that court"
+  },
+  {
+   "requirement": "An application for forfeiture may be made to a magistrates' court where an application with respect to some or all of the goods has been made to that court under section 15 or section 33.",
+   "quote": "where an application with respect to some or all of the goods has been made to a magistrates’ court under section 15 above or section 33 below, to that court"
+  },
+  {
+   "requirement": "An application for forfeiture may be made by way of complaint to a magistrates’ court where no application for the forfeiture of the goods has been made under paragraph (a) or (b) of section 16(2).",
+   "quote": "where no application for the forfeiture of the goods has been made under paragraph (a) or (b) above, by way of complaint to a magistrates’ court."
+  },
+  {
+   "requirement": "The court shall make an order for the forfeiture of any goods on an application under section 16 only if it is satisfied that there has been a contravention in relation to the goods of a safety provision.",
+   "quote": "the court shall make an order for the forfeiture of any goods only if it is satisfied that there has been a contravention in relation to the goods of a safety provision."
+  },
+  {
+   "requirement": "A court may infer that there has been a contravention in relation to any goods of a safety provision if it is satisfied that any such provision has been contravened in relation to goods which are representative of those goods (whether by reason of being of the same design or part of the same consignment or batch or otherwise).",
+   "quote": "a court may infer for the purposes of this section that there has been a contravention in relation to any goods of a safety provision if it is satisfied that any such provision has been contravened in relation to goods which are representative of those goods"
+  },
+  {
+   "requirement": "Any person aggrieved by an order made by a magistrates’ court under section 16, or by a decision of such a court not to make such an order, may appeal to the Crown Court in England and Wales.",
+   "quote": "Any person aggrieved by an order made under this section by a magistrates’ court, or by a decision of such a court not to make such an order, may appeal against that order or decision— (a) in England and Wales, to the Crown Court"
+  },
+  {
+   "requirement": "Any person aggrieved by an order made by a magistrates’ court under section 16, or by a decision of such a court not to make such an order, may appeal to the county court in Northern Ireland.",
+   "quote": "Any person aggrieved by an order made under this section by a magistrates’ court, or by a decision of such a court not to make such an order, may appeal against that order or decision— (a) in England and Wales, to the Crown Court; (b) in Northern Ireland, to the county court"
+  },
+  {
+   "requirement": "An order made under section 16 by a magistrates’ court may contain such provision as appears to the court to be appropriate for delaying the coming into force of the order pending the making and determination of any appeal (including any application under section 111 of the Magistrates’ Courts Act 1980 or Article 146 of the Magistrates’ Courts (Northern Ireland) Order 1981 for a statement of case).",
+   "quote": "an order so made may contain such provision as appears to the court to be appropriate for delaying the coming into force of the order pending the making and determination of any appeal (including any application under section 111 of the Magistrates’ Courts Act 1980 or Article 146 of the Magistrates’ Courts (Northern Ireland) Order 1981 (statement of case))."
+  },
+  {
+   "requirement": "Subject to section 16(7), any goods forfeited under section 16 shall be destroyed in accordance with such directions as the court may give.",
+   "quote": "Subject to subsection (7) below, where any goods are forfeited under this section they shall be destroyed in accordance with such directions as the court may give."
+  },
+  {
+   "requirement": "On making an order under section 16, a magistrates’ court may, if it considers it appropriate, direct that the goods shall instead of being destroyed be released to a specified person on condition that that person does not supply those goods to any person otherwise than as mentioned in section 46(7)(a) or (b) and complies with any order to pay costs or expenses (including under section 35) made against that person in the forfeiture proceedings.",
+   "quote": "direct that the goods to which the order relates shall (instead of being destroyed) be released, to such person as the court may specify, on condition that that person— (a) does not supply those goods to any person otherwise than as mentioned in section 46(7)(a) or (b) below; and (b) complies with any order to pay costs or expenses"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

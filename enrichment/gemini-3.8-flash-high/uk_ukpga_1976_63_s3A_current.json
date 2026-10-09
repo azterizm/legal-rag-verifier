@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1976/63/s3A@current",
+ "section": "uk/ukpga/1976/63/s3A",
+ "version": "current",
+ "source_sha256": "ec639304615d3ed2a13e5232788b9af30316bfc6bceb5ea87bfa09b42ff76b8f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 3 of the Bail Act 1976 applies with specified modifications to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 or Part 3 of the Criminal Justice Act 2003 where the custody officer has normal powers to impose bail conditions.",
+    "quote": "Section 3 of this Act applies, in relation to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 or Part 3 of the Criminal Justice Act 2003 in cases where the normal powers to impose conditions of bail are available to him, subject to the following modifications."
+   },
+   {
+    "requirement": "Subsection (6) does not authorise the imposition of a requirement to reside in a bail hostel or any requirement under paragraph (d) or paragraph (e).",
+    "quote": "Subsection (6) does not authorise the imposition of a requirement to reside in a bail hostel or any requirement under paragraph (d) or (e)."
+   },
+   {
+    "requirement": "Subsections (6ZAA), (6ZA), and (6A) to (6F) of section 3 of the Bail Act 1976 are omitted in relation to bail granted by a custody officer.",
+    "quote": "Subsections (6ZAA),(6ZA) and (6A) to (6F) shall be omitted."
+   },
+   {
+    "requirement": "A constable granting bail to a person must not impose conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 unless it appears to the constable necessary to prevent that person from failing to surrender to custody, committing an offence on bail, interfering with witnesses, or otherwise obstructing the course of justice, or for that person's own protection, welfare, or interests.",
+    "quote": "Where a constable grants bail to a person no conditions shall be imposed under subsections (4), (5), (6) or (7) of section 3 of this Act unless it appears to the constable that it is necessary to do so"
+   },
+   {
+    "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable to prevent the person granted bail from failing to surrender to custody.",
+    "quote": "for the purpose of preventing that person from failing to surrender to custody"
+   },
+   {
+    "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable to prevent the person granted bail from committing an offence while on bail.",
+    "quote": "for the purpose of preventing that person from committing an offence while on bail"
+   },
+   {
+    "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable to prevent the person granted bail from interfering with witnesses or otherwise obstructing the course of justice, whether in relation to that person or any other person.",
+    "quote": "for the purpose of preventing that person from interfering with witnesses or otherwise obstructing the course of justice, whether in relation to himself or any other person."
+   },
+   {
+    "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable for the person's own protection, or, if the person is a child or young person, for that person's own welfare or interests.",
+    "quote": "for that person’s own protection or, if he is a child or young person, for his own welfare or in his own interests."
+   },
+   {
+    "requirement": "The necessity restrictions in subsection (5) apply to any request made to a custody officer under subsection (8) of section 3 of the Bail Act 1976 to vary bail conditions.",
+    "quote": "Subsection (5) above also applies on any request to a custody officer under subsection (8) of section 3 of this Act to vary the conditions of bail."
+   },
+   {
+    "requirement": "Section 47ZZA of the Police and Criminal Evidence Act 1984 provides further rules governing the grant of bail or the variation of bail conditions by a custody officer under Part 4 of that Act.",
+    "quote": "For further provision about the grant of bail by a custody officer under Part 4 of the Police and Criminal Evidence Act 1984 or the variation by a custody officer of the conditions of bail granted under that Part, see section 47ZZA of that Act."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 3 of the Bail Act 1976 applies with specified modifications to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 or Part 3 of the Criminal Justice Act 2003 where the custody officer has normal powers to impose bail conditions.",
+   "quote": "Section 3 of this Act applies, in relation to bail granted by a custody officer under Part IV of the Police and Criminal Evidence Act 1984 or Part 3 of the Criminal Justice Act 2003 in cases where the normal powers to impose conditions of bail are available to him, subject to the following modifications."
+  },
+  {
+   "requirement": "Subsection (6) does not authorise the imposition of a requirement to reside in a bail hostel or any requirement under paragraph (d) or paragraph (e).",
+   "quote": "Subsection (6) does not authorise the imposition of a requirement to reside in a bail hostel or any requirement under paragraph (d) or (e)."
+  },
+  {
+   "requirement": "Subsections (6ZAA), (6ZA), and (6A) to (6F) of section 3 of the Bail Act 1976 are omitted in relation to bail granted by a custody officer.",
+   "quote": "Subsections (6ZAA),(6ZA) and (6A) to (6F) shall be omitted."
+  },
+  {
+   "requirement": "A constable granting bail to a person must not impose conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 unless it appears to the constable necessary to prevent that person from failing to surrender to custody, committing an offence on bail, interfering with witnesses, or otherwise obstructing the course of justice, or for that person's own protection, welfare, or interests.",
+   "quote": "Where a constable grants bail to a person no conditions shall be imposed under subsections (4), (5), (6) or (7) of section 3 of this Act unless it appears to the constable that it is necessary to do so"
+  },
+  {
+   "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable to prevent the person granted bail from failing to surrender to custody.",
+   "quote": "for the purpose of preventing that person from failing to surrender to custody"
+  },
+  {
+   "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable to prevent the person granted bail from committing an offence while on bail.",
+   "quote": "for the purpose of preventing that person from committing an offence while on bail"
+  },
+  {
+   "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable to prevent the person granted bail from interfering with witnesses or otherwise obstructing the course of justice, whether in relation to that person or any other person.",
+   "quote": "for the purpose of preventing that person from interfering with witnesses or otherwise obstructing the course of justice, whether in relation to himself or any other person."
+  },
+  {
+   "requirement": "Conditions under subsections (4), (5), (6), or (7) of section 3 of the Bail Act 1976 may be imposed where it appears necessary to the constable for the person's own protection, or, if the person is a child or young person, for that person's own welfare or interests.",
+   "quote": "for that person’s own protection or, if he is a child or young person, for his own welfare or in his own interests."
+  },
+  {
+   "requirement": "The necessity restrictions in subsection (5) apply to any request made to a custody officer under subsection (8) of section 3 of the Bail Act 1976 to vary bail conditions.",
+   "quote": "Subsection (5) above also applies on any request to a custody officer under subsection (8) of section 3 of this Act to vary the conditions of bail."
+  },
+  {
+   "requirement": "Section 47ZZA of the Police and Criminal Evidence Act 1984 provides further rules governing the grant of bail or the variation of bail conditions by a custody officer under Part 4 of that Act.",
+   "quote": "For further provision about the grant of bail by a custody officer under Part 4 of the Police and Criminal Evidence Act 1984 or the variation by a custody officer of the conditions of bail granted under that Part, see section 47ZZA of that Act."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

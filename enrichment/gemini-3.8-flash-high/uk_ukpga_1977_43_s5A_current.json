@@ -1,0 +1,77 @@
+{
+ "key": "uk/ukpga/1977/43/s5A@current",
+ "section": "uk/ukpga/1977/43/s5A",
+ "version": "current",
+ "source_sha256": "318312c238754ed973f1ed4cc2e802f74a367b0dd24033e6eeda615ff4a7a434",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any provision that purports to bind a tenant as to the means of giving a notice in writing to quit premises let under an assured tenancy has no effect.",
+    "quote": "Any provision that would bind a tenant as to the means of giving a notice in writing to quit premises let under an assured tenancy is of no effect."
+   },
+   {
+    "requirement": "The means of giving a notice in writing is defined as the mode by which the words of the notice are represented or reproduced in a visible form.",
+    "quote": "the mode by which the words of the notice are represented or reproduced in a visible form"
+   },
+   {
+    "requirement": "A notice given by a tenant to quit premises let under an assured tenancy may be withdrawn before it takes effect if the tenant and landlord agree to the withdrawal in writing.",
+    "quote": "may be withdrawn before the date on which it takes effect by the tenant and landlord agreeing in writing to the withdrawal"
+   },
+   {
+    "requirement": "In the case of a joint assured tenancy, an agreement to withdraw a notice to quit is valid only if it is made between the landlord and all of the tenants.",
+    "quote": "is not valid unless it is made between the landlord and all of the tenants"
+   },
+   {
+    "requirement": "The requirement for all joint tenants to agree to a withdrawal does not affect the validity of a notice to quit premises let under a joint assured tenancy given by only one or some of the tenants.",
+    "quote": "That does not affect the validity of any notice to quit premises let under a joint assured tenancy that is given by only one or some of the tenants."
+   },
+   {
+    "requirement": "A joint assured tenancy is defined as an assured tenancy where two or more persons are tenants under the tenancy.",
+    "quote": "an assured tenancy where two or more persons are tenants under the tenancy"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of persons holding a tenancy for it to constitute a joint assured tenancy",
+    "value": "two or more",
+    "quote": "two or more persons are tenants under the tenancy"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Any provision that purports to bind a tenant as to the means of giving a notice in writing to quit premises let under an assured tenancy has no effect.",
+   "quote": "Any provision that would bind a tenant as to the means of giving a notice in writing to quit premises let under an assured tenancy is of no effect."
+  },
+  {
+   "requirement": "The means of giving a notice in writing is defined as the mode by which the words of the notice are represented or reproduced in a visible form.",
+   "quote": "the mode by which the words of the notice are represented or reproduced in a visible form"
+  },
+  {
+   "requirement": "A notice given by a tenant to quit premises let under an assured tenancy may be withdrawn before it takes effect if the tenant and landlord agree to the withdrawal in writing.",
+   "quote": "may be withdrawn before the date on which it takes effect by the tenant and landlord agreeing in writing to the withdrawal"
+  },
+  {
+   "requirement": "In the case of a joint assured tenancy, an agreement to withdraw a notice to quit is valid only if it is made between the landlord and all of the tenants.",
+   "quote": "is not valid unless it is made between the landlord and all of the tenants"
+  },
+  {
+   "requirement": "The requirement for all joint tenants to agree to a withdrawal does not affect the validity of a notice to quit premises let under a joint assured tenancy given by only one or some of the tenants.",
+   "quote": "That does not affect the validity of any notice to quit premises let under a joint assured tenancy that is given by only one or some of the tenants."
+  },
+  {
+   "requirement": "A joint assured tenancy is defined as an assured tenancy where two or more persons are tenants under the tenancy.",
+   "quote": "an assured tenancy where two or more persons are tenants under the tenancy"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "key": "uk/ukpga/1968/60/s12A@current",
+ "section": "uk/ukpga/1968/60/s12A",
+ "version": "current",
+ "source_sha256": "412efdf9b46d622862033445cfea6712f48d6243fd4d7c50580f202d8c91ece4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the statutory defence in subsection (3), an individual is guilty of aggravated taking of a vehicle if that individual commits an offence under section 12(1) in relation to a mechanically propelled vehicle and it is proved that, at any time after the vehicle was unlawfully taken and before it was recovered, the vehicle was driven, or injury or damage was caused, in one or more specified aggravating circumstances.",
+    "quote": "guilty of aggravated taking of a vehicle if"
+   },
+   {
+    "requirement": "An aggravating circumstance applies if the vehicle was driven dangerously on a road or other public place.",
+    "quote": "driven dangerously on a road or other public place"
+   },
+   {
+    "requirement": "An aggravating circumstance applies if, owing to the driving of the vehicle, an accident occurred by which injury was caused to any person.",
+    "quote": "owing to the driving of the vehicle, an accident occurred by which injury was caused to any person"
+   },
+   {
+    "requirement": "An aggravating circumstance applies if, owing to the driving of the vehicle, an accident occurred by which damage was caused to any property other than the vehicle itself.",
+    "quote": "damage was caused to any property, other than the vehicle"
+   },
+   {
+    "requirement": "An aggravating circumstance applies if damage was caused to the vehicle.",
+    "quote": "damage was caused to the vehicle"
+   },
+   {
+    "requirement": "A defendant is not guilty of aggravated taking of a vehicle if that defendant proves that the proven driving, accident, or damage occurred before the defendant committed the basic offence under section 12(1).",
+    "quote": "occurred before he committed the basic offence"
+   },
+   {
+    "requirement": "A defendant is not guilty of aggravated taking of a vehicle if that defendant proves that the defendant was neither in nor on nor in the immediate vicinity of the vehicle when the proven driving, accident, or damage occurred.",
+    "quote": "neither in nor on nor in the immediate vicinity of the vehicle"
+   },
+   {
+    "requirement": "A person charged with aggravated taking of a vehicle may be convicted of the basic offence if that person is found not guilty of aggravated taking but it is proved that the person committed the basic offence under section 12(1).",
+    "quote": "found not guilty of that offence but it is proved that he committed a basic offence, he may be convicted of the basic offence"
+   },
+   {
+    "requirement": "The Crown Court has the same powers and duties as a magistrates' court would have had if the Crown Court convicts a person of a basic offence upon an acquittal for aggravated vehicle taking.",
+    "quote": "same powers and duties as a magistrates’ court would have had on convicting him of such an offence"
+   },
+   {
+    "requirement": "A vehicle is driven dangerously if it is driven in a manner falling far below what would be expected of a competent and careful driver, and it would be obvious to a competent and careful driver that driving the vehicle in that way would be dangerous.",
+    "quote": "falls far below what would be expected of a competent and careful driver"
+   },
+   {
+    "requirement": "A vehicle is deemed recovered when it is restored to its owner or to other lawful possession or custody.",
+    "quote": "restored to its owner or to other lawful possession or custody"
+   },
+   {
+    "requirement": "For the purpose of determining vehicle recovery, the word 'owner' bears the identical meaning given to it in section 12 of the Theft Act 1968.",
+    "quote": "“owner” has the same meaning as in section 12 above"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment for aggravated taking of a vehicle where the accident did not cause death",
+    "value": "two years",
+    "quote": "imprisonment for a term not exceeding two years"
+   },
+   {
+    "what": "maximum term of imprisonment on conviction on indictment for aggravated taking of a vehicle where an accident owing to the driving caused the death of the person concerned",
+    "value": "fourteen years",
+    "quote": "caused the death of the person concerned, fourteen years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the statutory defence in subsection (3), an individual is guilty of aggravated taking of a vehicle if that individual commits an offence under section 12(1) in relation to a mechanically propelled vehicle and it is proved that, at any time after the vehicle was unlawfully taken and before it was recovered, the vehicle was driven, or injury or damage was caused, in one or more specified aggravating circumstances.",
+   "quote": "guilty of aggravated taking of a vehicle if"
+  },
+  {
+   "requirement": "An aggravating circumstance applies if the vehicle was driven dangerously on a road or other public place.",
+   "quote": "driven dangerously on a road or other public place"
+  },
+  {
+   "requirement": "An aggravating circumstance applies if, owing to the driving of the vehicle, an accident occurred by which injury was caused to any person.",
+   "quote": "owing to the driving of the vehicle, an accident occurred by which injury was caused to any person"
+  },
+  {
+   "requirement": "An aggravating circumstance applies if, owing to the driving of the vehicle, an accident occurred by which damage was caused to any property other than the vehicle itself.",
+   "quote": "damage was caused to any property, other than the vehicle"
+  },
+  {
+   "requirement": "An aggravating circumstance applies if damage was caused to the vehicle.",
+   "quote": "damage was caused to the vehicle"
+  },
+  {
+   "requirement": "A defendant is not guilty of aggravated taking of a vehicle if that defendant proves that the proven driving, accident, or damage occurred before the defendant committed the basic offence under section 12(1).",
+   "quote": "occurred before he committed the basic offence"
+  },
+  {
+   "requirement": "A defendant is not guilty of aggravated taking of a vehicle if that defendant proves that the defendant was neither in nor on nor in the immediate vicinity of the vehicle when the proven driving, accident, or damage occurred.",
+   "quote": "neither in nor on nor in the immediate vicinity of the vehicle"
+  },
+  {
+   "requirement": "A person charged with aggravated taking of a vehicle may be convicted of the basic offence if that person is found not guilty of aggravated taking but it is proved that the person committed the basic offence under section 12(1).",
+   "quote": "found not guilty of that offence but it is proved that he committed a basic offence, he may be convicted of the basic offence"
+  },
+  {
+   "requirement": "The Crown Court has the same powers and duties as a magistrates' court would have had if the Crown Court convicts a person of a basic offence upon an acquittal for aggravated vehicle taking.",
+   "quote": "same powers and duties as a magistrates’ court would have had on convicting him of such an offence"
+  },
+  {
+   "requirement": "A vehicle is driven dangerously if it is driven in a manner falling far below what would be expected of a competent and careful driver, and it would be obvious to a competent and careful driver that driving the vehicle in that way would be dangerous.",
+   "quote": "falls far below what would be expected of a competent and careful driver"
+  },
+  {
+   "requirement": "A vehicle is deemed recovered when it is restored to its owner or to other lawful possession or custody.",
+   "quote": "restored to its owner or to other lawful possession or custody"
+  },
+  {
+   "requirement": "For the purpose of determining vehicle recovery, the word 'owner' bears the identical meaning given to it in section 12 of the Theft Act 1968.",
+   "quote": "“owner” has the same meaning as in section 12 above"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment for aggravated taking of a vehicle where the accident did not cause death",
+   "value": "two years",
+   "quote": "imprisonment for a term not exceeding two years"
+  },
+  {
+   "what": "maximum term of imprisonment on conviction on indictment for aggravated taking of a vehicle where an accident owing to the driving caused the death of the person concerned",
+   "value": "fourteen years",
+   "quote": "caused the death of the person concerned, fourteen years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

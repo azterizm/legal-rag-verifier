@@ -1,0 +1,90 @@
+{
+ "key": "uk/ukpga/1996/47/s19@current",
+ "section": "uk/ukpga/1996/47/s19",
+ "version": "current",
+ "source_sha256": "6e3dd68948b308db3798468e9e81726079b250460a6adf14b1c6141f39b396bb",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The statutory rules on directing trustee retirement and appointment apply to a trust only where no person is nominated for the purpose of appointing new trustees by the instrument, if any, creating the trust.",
+    "quote": "there is no person nominated for the purpose of appointing new trustees by the instrument, if any, creating the trust"
+   },
+   {
+    "requirement": "The statutory rules on directing trustee retirement and appointment apply to a trust only where the beneficiaries under the trust are of full age and capacity and, taken together, are absolutely entitled to the property subject to the trust.",
+    "quote": "the beneficiaries under the trust are of full age and capacity and (taken together) are absolutely entitled to the property subject to the trust"
+   },
+   {
+    "requirement": "The beneficiaries of a qualifying trust may give a written direction to a trustee or trustees to retire from the trust.",
+    "quote": "a written direction to a trustee or trustees to retire from the trust"
+   },
+   {
+    "requirement": "The beneficiaries of a qualifying trust may give a written direction to the trustees or trustee for the time being, or if there are none, to the personal representative of the last person who was a trustee, to appoint in writing the person or persons specified in the direction to be a trustee or trustees.",
+    "quote": "a written direction to the trustees or trustee for the time being (or, if there are none, to the personal representative of the last person who was a trustee) to appoint by writing to be a trustee or trustees the person or persons specified in the direction"
+   },
+   {
+    "requirement": "A trustee who has received a written direction to retire must execute a deed declaring retirement and is deemed retired and discharged from the trust, provided reasonable arrangements protect the trustee's rights in connection with the trust, either a trust corporation or at least two persons will remain to perform the trust, and either a new trustee is to be appointed on retirement or the continuing trustees consent to the retirement by deed.",
+    "quote": "he shall make a deed declaring his retirement and shall be deemed to have retired and be discharged from the trust"
+   },
+   {
+    "requirement": "A trustee retiring under these provisions and the continuing trustees, together with any new trustee, must do everything necessary to vest the trust property in the continuing trustees, or the continuing and new trustees, subject to any arrangements for protecting the retiring trustee's rights.",
+    "quote": "he and the continuing trustees (together with any new trustee) shall (subject to any arrangements for the protection of his rights) do anything necessary to vest the trust property in the continuing trustees (or the continuing and new trustees)"
+   },
+   {
+    "requirement": "The statutory rules governing trustee retirement and appointment under section 19 take effect subject to the restrictions imposed on the number of trustees by the Trustee Act 1925.",
+    "quote": "has effect subject to the restrictions imposed by the Trustee Act 1925 on the number of trustees"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "legal age qualification required of the beneficiaries under the trust",
+    "value": "full age",
+    "quote": "the beneficiaries under the trust are of full age"
+   },
+   {
+    "what": "minimum number of persons required to act as trustees to perform the trust after retirement, in the absence of a trust corporation",
+    "value": "at least two",
+    "quote": "at least two persons to act as trustees to perform the trust"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The statutory rules on directing trustee retirement and appointment apply to a trust only where no person is nominated for the purpose of appointing new trustees by the instrument, if any, creating the trust.",
+   "quote": "there is no person nominated for the purpose of appointing new trustees by the instrument, if any, creating the trust"
+  },
+  {
+   "requirement": "The statutory rules on directing trustee retirement and appointment apply to a trust only where the beneficiaries under the trust are of full age and capacity and, taken together, are absolutely entitled to the property subject to the trust.",
+   "quote": "the beneficiaries under the trust are of full age and capacity and (taken together) are absolutely entitled to the property subject to the trust"
+  },
+  {
+   "requirement": "The beneficiaries of a qualifying trust may give a written direction to a trustee or trustees to retire from the trust.",
+   "quote": "a written direction to a trustee or trustees to retire from the trust"
+  },
+  {
+   "requirement": "The beneficiaries of a qualifying trust may give a written direction to the trustees or trustee for the time being, or if there are none, to the personal representative of the last person who was a trustee, to appoint in writing the person or persons specified in the direction to be a trustee or trustees.",
+   "quote": "a written direction to the trustees or trustee for the time being (or, if there are none, to the personal representative of the last person who was a trustee) to appoint by writing to be a trustee or trustees the person or persons specified in the direction"
+  },
+  {
+   "requirement": "A trustee who has received a written direction to retire must execute a deed declaring retirement and is deemed retired and discharged from the trust, provided reasonable arrangements protect the trustee's rights in connection with the trust, either a trust corporation or at least two persons will remain to perform the trust, and either a new trustee is to be appointed on retirement or the continuing trustees consent to the retirement by deed.",
+   "quote": "he shall make a deed declaring his retirement and shall be deemed to have retired and be discharged from the trust"
+  },
+  {
+   "requirement": "A trustee retiring under these provisions and the continuing trustees, together with any new trustee, must do everything necessary to vest the trust property in the continuing trustees, or the continuing and new trustees, subject to any arrangements for protecting the retiring trustee's rights.",
+   "quote": "he and the continuing trustees (together with any new trustee) shall (subject to any arrangements for the protection of his rights) do anything necessary to vest the trust property in the continuing trustees (or the continuing and new trustees)"
+  },
+  {
+   "requirement": "The statutory rules governing trustee retirement and appointment under section 19 take effect subject to the restrictions imposed on the number of trustees by the Trustee Act 1925.",
+   "quote": "has effect subject to the restrictions imposed by the Trustee Act 1925 on the number of trustees"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

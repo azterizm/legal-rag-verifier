@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2018/12/s57@current",
+ "section": "uk/ukpga/2018/12/s57",
+ "version": "current",
+ "source_sha256": "f1faab507055762bc2547207d413866e14cdcf562f900efeedb7d9cc19343ca7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Each controller must implement appropriate technical and organisational measures designed to implement the data protection principles in an effective manner.",
+    "quote": "Each controller must implement appropriate technical and organisational measures which are designed— (a) to implement the data protection principles in an effective manner"
+   },
+   {
+    "requirement": "Each controller must implement appropriate technical and organisational measures designed to integrate into the processing itself the safeguards necessary for implementing the data protection principles effectively.",
+    "quote": "to integrate into the processing itself the safeguards necessary for that purpose"
+   },
+   {
+    "requirement": "A controller's duty to implement measures designed to implement data protection principles and integrate necessary safeguards applies both at the time the means of processing the data are determined and at the time of the processing itself.",
+    "quote": "The duty under subsection (1) applies both at the time of the determination of the means of processing the data and at the time of the processing itself."
+   },
+   {
+    "requirement": "Each controller must implement appropriate technical and organisational measures to ensure that, by default, only personal data that is necessary for each specific purpose of the processing is processed.",
+    "quote": "Each controller must implement appropriate technical and organisational measures for ensuring that, by default, only personal data which is necessary for each specific purpose of the processing is processed."
+   },
+   {
+    "requirement": "A controller's duty to ensure that by default only necessary personal data is processed applies to the amount of personal data collected, the extent of its processing, the period of its storage, and its accessibility.",
+    "quote": "The duty under subsection (3) applies to— (a) the amount of personal data collected, (b) the extent of its processing, (c) the period of its storage, and (d) its accessibility."
+   },
+   {
+    "requirement": "A controller's measures to ensure only necessary personal data is processed must in particular ensure that, by default, personal data is not made accessible to an indefinite number of people without an individual's intervention.",
+    "quote": "must ensure that, by default, personal data is not made accessible to an indefinite number of people without an individual's intervention"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Each controller must implement appropriate technical and organisational measures designed to implement the data protection principles in an effective manner.",
+   "quote": "Each controller must implement appropriate technical and organisational measures which are designed— (a) to implement the data protection principles in an effective manner"
+  },
+  {
+   "requirement": "Each controller must implement appropriate technical and organisational measures designed to integrate into the processing itself the safeguards necessary for implementing the data protection principles effectively.",
+   "quote": "to integrate into the processing itself the safeguards necessary for that purpose"
+  },
+  {
+   "requirement": "A controller's duty to implement measures designed to implement data protection principles and integrate necessary safeguards applies both at the time the means of processing the data are determined and at the time of the processing itself.",
+   "quote": "The duty under subsection (1) applies both at the time of the determination of the means of processing the data and at the time of the processing itself."
+  },
+  {
+   "requirement": "Each controller must implement appropriate technical and organisational measures to ensure that, by default, only personal data that is necessary for each specific purpose of the processing is processed.",
+   "quote": "Each controller must implement appropriate technical and organisational measures for ensuring that, by default, only personal data which is necessary for each specific purpose of the processing is processed."
+  },
+  {
+   "requirement": "A controller's duty to ensure that by default only necessary personal data is processed applies to the amount of personal data collected, the extent of its processing, the period of its storage, and its accessibility.",
+   "quote": "The duty under subsection (3) applies to— (a) the amount of personal data collected, (b) the extent of its processing, (c) the period of its storage, and (d) its accessibility."
+  },
+  {
+   "requirement": "A controller's measures to ensure only necessary personal data is processed must in particular ensure that, by default, personal data is not made accessible to an indefinite number of people without an individual's intervention.",
+   "quote": "must ensure that, by default, personal data is not made accessible to an indefinite number of people without an individual's intervention"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

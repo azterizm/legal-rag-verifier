@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2002/9/s1@current",
+ "section": "uk/ukpga/2002/9/s1",
+ "version": "current",
+ "source_sha256": "6bca30d923f666afcb5ca08a399b89c3dd33d74d6b11eeb071fa90f4d0fe98c7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A register of title must continue to be kept by the registrar.",
+    "quote": "There is to continue to be a register of title kept by the registrar"
+   },
+   {
+    "requirement": "Rules may make provision regarding how the register of title is to be kept.",
+    "quote": "Rules may make provision about how the register is to be kept"
+   },
+   {
+    "requirement": "Rules may, in particular, make provision regarding the information to be included in the register.",
+    "quote": "the information to be included in the register"
+   },
+   {
+    "requirement": "Rules may, in particular, make provision regarding the form in which information included in the register is to be kept.",
+    "quote": "the form in which information included in the register is to be kept"
+   },
+   {
+    "requirement": "Rules may, in particular, make provision regarding the arrangement of information included in the register.",
+    "quote": "the arrangement of that information"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A register of title must continue to be kept by the registrar.",
+   "quote": "There is to continue to be a register of title kept by the registrar"
+  },
+  {
+   "requirement": "Rules may make provision regarding how the register of title is to be kept.",
+   "quote": "Rules may make provision about how the register is to be kept"
+  },
+  {
+   "requirement": "Rules may, in particular, make provision regarding the information to be included in the register.",
+   "quote": "the information to be included in the register"
+  },
+  {
+   "requirement": "Rules may, in particular, make provision regarding the form in which information included in the register is to be kept.",
+   "quote": "the form in which information included in the register is to be kept"
+  },
+  {
+   "requirement": "Rules may, in particular, make provision regarding the arrangement of information included in the register.",
+   "quote": "the arrangement of that information"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

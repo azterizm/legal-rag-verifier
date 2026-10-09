@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1999/31/s9@current",
+ "section": "uk/ukpga/1999/31/s9",
+ "version": "current",
+ "source_sha256": "e3eda39fbec1ed4968a3cd6bbccf2dd2d293b4edad5d45a643cc3545e09311cc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In its application to Northern Ireland, the Contracts (Rights of Third Parties) Act 1999 takes effect subject to the specific modifications set out in subsections (2) and (3).",
+    "quote": "In its application to Northern Ireland, this Act has effect with the modifications specified in subsections (2) and (3)."
+   },
+   {
+    "requirement": "For the purposes of section 7 in Northern Ireland, references in Articles 4(a) and 15 of the Limitation (Northern Ireland) Order 1989 to an action founded on a simple contract and an action upon an instrument under seal are substituted to include, respectively, references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on section 1 relating to a contract under seal.",
+    "quote": "the references to an action founded on a simple contract and an action upon an instrument under seal shall respectively include references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on that section relating to a contract under seal."
+   },
+   {
+    "requirement": "Section 5 of the Law Reform (Husband and Wife) (Northern Ireland) Act 1964 is repealed.",
+    "quote": "In the Law Reform (Husband and Wife) (Northern Ireland) Act 1964, the following provisions are hereby repealed— (a) section 5"
+   },
+   {
+    "requirement": "In section 6 of the Law Reform (Husband and Wife) (Northern Ireland) Act 1964, the phrases “in the case of section 4” and “and in the case of section 5 the contracting party” in subsection (1)(a), as well as the phrase “or section 5” in subsection (3), are repealed.",
+    "quote": "in section 6, in subsection (1)(a), the words “in the case of section 4” and “and in the case of section 5 the contracting party” and, in subsection (3), the words “or section 5”."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In its application to Northern Ireland, the Contracts (Rights of Third Parties) Act 1999 takes effect subject to the specific modifications set out in subsections (2) and (3).",
+   "quote": "In its application to Northern Ireland, this Act has effect with the modifications specified in subsections (2) and (3)."
+  },
+  {
+   "requirement": "For the purposes of section 7 in Northern Ireland, references in Articles 4(a) and 15 of the Limitation (Northern Ireland) Order 1989 to an action founded on a simple contract and an action upon an instrument under seal are substituted to include, respectively, references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on section 1 relating to a contract under seal.",
+   "quote": "the references to an action founded on a simple contract and an action upon an instrument under seal shall respectively include references to an action brought in reliance on section 1 relating to a simple contract and an action brought in reliance on that section relating to a contract under seal."
+  },
+  {
+   "requirement": "Section 5 of the Law Reform (Husband and Wife) (Northern Ireland) Act 1964 is repealed.",
+   "quote": "In the Law Reform (Husband and Wife) (Northern Ireland) Act 1964, the following provisions are hereby repealed— (a) section 5"
+  },
+  {
+   "requirement": "In section 6 of the Law Reform (Husband and Wife) (Northern Ireland) Act 1964, the phrases “in the case of section 4” and “and in the case of section 5 the contracting party” in subsection (1)(a), as well as the phrase “or section 5” in subsection (3), are repealed.",
+   "quote": "in section 6, in subsection (1)(a), the words “in the case of section 4” and “and in the case of section 5 the contracting party” and, in subsection (3), the words “or section 5”."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1990/18/s7@current",
+ "section": "uk/ukpga/1990/18/s7",
+ "version": "current",
+ "source_sha256": "966a3ff7567a28a88946befa9dbdbe6f8360d00fa2f8f708e8cb740cdb0a82ea",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subsections (1A) and (1B) are inserted after section 1(1) of the Criminal Attempts Act 1981.",
+    "quote": "The following subsections shall be inserted after section 1(1) of the Criminal Attempts Act 1981"
+   },
+   {
+    "requirement": "Subject to section 8 of the Computer Misuse Act 1990 regarding the relevance of external law, where subsection (1A) applies to an act, what the person doing the act had in view must be treated as an offence to which section 1 of the Criminal Attempts Act 1981 applies.",
+    "quote": "Subject to section 8 of the Computer Misuse Act 1990 (relevance of external law), if this subsection applies to an act, what the person doing it had in view shall be treated as an offence to which this section applies."
+   },
+   {
+    "requirement": "Subsection (1A) applies to an act if that act is done in England and Wales.",
+    "quote": "it is done in England and Wales"
+   },
+   {
+    "requirement": "Subsection (1A) applies to an act if that act would fall within section 1(1) of the Criminal Attempts Act 1981 as more than merely preparatory to the commission of an offence under section 3 of the Computer Misuse Act 1990 but for the fact that the completed offence would not be triable in England and Wales.",
+    "quote": "it would fall within subsection (1) above as more than merely preparatory to the commission of an offence under section 3 of the Computer Misuse Act 1990 but for the fact that the offence, if completed, would not be an offence triable in England and Wales"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subsections (1A) and (1B) are inserted after section 1(1) of the Criminal Attempts Act 1981.",
+   "quote": "The following subsections shall be inserted after section 1(1) of the Criminal Attempts Act 1981"
+  },
+  {
+   "requirement": "Subject to section 8 of the Computer Misuse Act 1990 regarding the relevance of external law, where subsection (1A) applies to an act, what the person doing the act had in view must be treated as an offence to which section 1 of the Criminal Attempts Act 1981 applies.",
+   "quote": "Subject to section 8 of the Computer Misuse Act 1990 (relevance of external law), if this subsection applies to an act, what the person doing it had in view shall be treated as an offence to which this section applies."
+  },
+  {
+   "requirement": "Subsection (1A) applies to an act if that act is done in England and Wales.",
+   "quote": "it is done in England and Wales"
+  },
+  {
+   "requirement": "Subsection (1A) applies to an act if that act would fall within section 1(1) of the Criminal Attempts Act 1981 as more than merely preparatory to the commission of an offence under section 3 of the Computer Misuse Act 1990 but for the fact that the completed offence would not be triable in England and Wales.",
+   "quote": "it would fall within subsection (1) above as more than merely preparatory to the commission of an offence under section 3 of the Computer Misuse Act 1990 but for the fact that the offence, if completed, would not be an offence triable in England and Wales"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

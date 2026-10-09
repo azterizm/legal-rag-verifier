@@ -1,0 +1,61 @@
+{
+ "key": "uk/ukpga/1996/47/s4@current",
+ "section": "uk/ukpga/1996/47/s4",
+ "version": "current",
+ "source_sha256": "b3c3e14cba03b4131c50cc91dde8224f95efa089cb65e5bee440b673690436d6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In every trust for sale of land created by a disposition, a power for the trustees to postpone the sale of the land is implied, notwithstanding any contrary provision in the disposition.",
+    "quote": "In the case of every trust for sale of land created by a disposition there is to be implied, despite any provision to the contrary made by the disposition, a power for the trustees to postpone sale of the land"
+   },
+   {
+    "requirement": "Trustees under a trust for sale of land are not liable in any way for postponing the sale of the land for an indefinite period when exercising their discretion.",
+    "quote": "the trustees are not liable in any way for postponing sale of the land, in the exercise of their discretion, for an indefinite period"
+   },
+   {
+    "requirement": "The statutory rules regarding the implied power to postpone sale and relief from liability apply to a trust whether it is created, or arises, before or after the commencement of the Act.",
+    "quote": "Subsection (1) applies to a trust whether it is created, or arises, before or after the commencement of this Act"
+   },
+   {
+    "requirement": "The statutory rules regarding the implied power to postpone sale and relief from liability do not affect any liability incurred by trustees prior to the commencement of the Act.",
+    "quote": "Subsection (1) does not affect any liability incurred by trustees before that commencement"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period for which trustees may exercise their discretion to postpone sale of the land without incurring liability",
+    "value": "an indefinite period",
+    "quote": "for an indefinite period"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In every trust for sale of land created by a disposition, a power for the trustees to postpone the sale of the land is implied, notwithstanding any contrary provision in the disposition.",
+   "quote": "In the case of every trust for sale of land created by a disposition there is to be implied, despite any provision to the contrary made by the disposition, a power for the trustees to postpone sale of the land"
+  },
+  {
+   "requirement": "Trustees under a trust for sale of land are not liable in any way for postponing the sale of the land for an indefinite period when exercising their discretion.",
+   "quote": "the trustees are not liable in any way for postponing sale of the land, in the exercise of their discretion, for an indefinite period"
+  },
+  {
+   "requirement": "The statutory rules regarding the implied power to postpone sale and relief from liability apply to a trust whether it is created, or arises, before or after the commencement of the Act.",
+   "quote": "Subsection (1) applies to a trust whether it is created, or arises, before or after the commencement of this Act"
+  },
+  {
+   "requirement": "The statutory rules regarding the implied power to postpone sale and relief from liability do not affect any liability incurred by trustees prior to the commencement of the Act.",
+   "quote": "Subsection (1) does not affect any liability incurred by trustees before that commencement"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

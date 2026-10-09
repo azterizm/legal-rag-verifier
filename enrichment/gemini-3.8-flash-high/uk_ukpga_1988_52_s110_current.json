@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1988/52/s110@current",
+ "section": "uk/ukpga/1988/52/s110",
+ "version": "current",
+ "source_sha256": "c1ea9cd1cac51942dad5ddaeb4353898b967f43d21dccc8a56b51c5a7262eb54",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Licences under Part III of the Road Traffic Act 1988 to drive motor vehicles of classes that include large goods vehicles or passenger-carrying vehicles, or large goods vehicles or passenger-carrying vehicles of any class, must be granted by the Secretary of State in accordance with this Part of the Act.",
+    "quote": "shall be granted by the Secretary of State in accordance with this Part of this Act"
+   },
+   {
+    "requirement": "Licences under Part III of the Road Traffic Act 1988, to the extent that they authorise the driving of large goods vehicles or passenger-carrying vehicles, must otherwise be subject to this Part of the Act in addition to Part III of the Act.",
+    "quote": "shall, in so far as they authorise the driving of large goods vehicles or passenger-carrying vehicles, be otherwise subject to this Part of this Act in addition to Part III of this Act"
+   },
+   {
+    "requirement": "In this Part of the Road Traffic Act 1988, the term 'Community licence' bears the same meaning as it has in Part III of the Act.",
+    "quote": "“Community licence” has the same meaning as in Part III of this Act"
+   },
+   {
+    "requirement": "In this Part of the Road Traffic Act 1988, 'LGV Community licence' means a Community licence to the extent that it authorises an individual to drive large goods vehicles of any class.",
+    "quote": "“LGV Community licence” means a Community licence in so far as it authorises a person to drive large goods vehicles of any class"
+   },
+   {
+    "requirement": "In this Part of the Road Traffic Act 1988, 'PCV Community licence' means a Community licence to the extent that it authorises an individual to drive passenger-carrying vehicles of any class.",
+    "quote": "“PCV Community licence” means a Community licence in so far as it authorises a person to drive passenger-carrying vehicles of any class"
+   },
+   {
+    "requirement": "In this Part of the Road Traffic Act 1988, 'large goods vehicle driver’s licence' means a licence under Part III of the Act to the extent that it authorises an individual to drive large goods vehicles of any class.",
+    "quote": "“large goods vehicle driver’s licence” means a licence under Part III of this Act in so far as it authorises a person to drive large goods vehicles of any class"
+   },
+   {
+    "requirement": "In this Part of the Road Traffic Act 1988, 'passenger-carrying vehicle driver’s licence' means a licence under Part III of the Act to the extent that it authorises an individual to drive passenger-carrying vehicles of any class.",
+    "quote": "“passenger-carrying vehicle driver’s licence” means a licence under Part III of this Act in so far as it authorises a person to drive passenger-carrying vehicles of any class"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Licences under Part III of the Road Traffic Act 1988 to drive motor vehicles of classes that include large goods vehicles or passenger-carrying vehicles, or large goods vehicles or passenger-carrying vehicles of any class, must be granted by the Secretary of State in accordance with this Part of the Act.",
+   "quote": "shall be granted by the Secretary of State in accordance with this Part of this Act"
+  },
+  {
+   "requirement": "Licences under Part III of the Road Traffic Act 1988, to the extent that they authorise the driving of large goods vehicles or passenger-carrying vehicles, must otherwise be subject to this Part of the Act in addition to Part III of the Act.",
+   "quote": "shall, in so far as they authorise the driving of large goods vehicles or passenger-carrying vehicles, be otherwise subject to this Part of this Act in addition to Part III of this Act"
+  },
+  {
+   "requirement": "In this Part of the Road Traffic Act 1988, the term 'Community licence' bears the same meaning as it has in Part III of the Act.",
+   "quote": "“Community licence” has the same meaning as in Part III of this Act"
+  },
+  {
+   "requirement": "In this Part of the Road Traffic Act 1988, 'LGV Community licence' means a Community licence to the extent that it authorises an individual to drive large goods vehicles of any class.",
+   "quote": "“LGV Community licence” means a Community licence in so far as it authorises a person to drive large goods vehicles of any class"
+  },
+  {
+   "requirement": "In this Part of the Road Traffic Act 1988, 'PCV Community licence' means a Community licence to the extent that it authorises an individual to drive passenger-carrying vehicles of any class.",
+   "quote": "“PCV Community licence” means a Community licence in so far as it authorises a person to drive passenger-carrying vehicles of any class"
+  },
+  {
+   "requirement": "In this Part of the Road Traffic Act 1988, 'large goods vehicle driver’s licence' means a licence under Part III of the Act to the extent that it authorises an individual to drive large goods vehicles of any class.",
+   "quote": "“large goods vehicle driver’s licence” means a licence under Part III of this Act in so far as it authorises a person to drive large goods vehicles of any class"
+  },
+  {
+   "requirement": "In this Part of the Road Traffic Act 1988, 'passenger-carrying vehicle driver’s licence' means a licence under Part III of the Act to the extent that it authorises an individual to drive passenger-carrying vehicles of any class.",
+   "quote": "“passenger-carrying vehicle driver’s licence” means a licence under Part III of this Act in so far as it authorises a person to drive passenger-carrying vehicles of any class"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

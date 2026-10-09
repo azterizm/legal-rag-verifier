@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1987/43/s41@current",
+ "section": "uk/ukpga/1987/43/s41",
+ "version": "current",
+ "source_sha256": "b80e7228afdc5cab88c9a49bd0c77f2eb21e369eb5d3fe987086bac1328951e9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An obligation imposed by safety regulations constitutes a duty owed to any person who may be affected by a contravention of that obligation.",
+    "quote": "An obligation imposed by safety regulations shall be a duty owed to any person who may be affected by a contravention of the obligation"
+   },
+   {
+    "requirement": "A contravention of an obligation imposed by safety regulations is actionable as a breach of statutory duty, subject to any contrary provision in the regulations and to the defences and other incidents applying to such actions.",
+    "quote": "subject to any provision to the contrary in the regulations and to the defences and other incidents applying to actions for breach of statutory duty, a contravention of any such obligation shall be actionable accordingly"
+   },
+   {
+    "requirement": "The Consumer Protection Act 1987 does not confer any civil right of action in respect of loss or damage suffered from a contravention of a safety provision, other than the right conferred by Part I of the Act.",
+    "quote": "This Act shall not be construed as conferring any other right of action in civil proceedings, apart from the right conferred by virtue of Part I of this Act, in respect of any loss or damage suffered in consequence of a contravention of a safety provision"
+   },
+   {
+    "requirement": "An agreement is not void or unenforceable solely because of a contravention of a safety provision, unless the agreement itself provides otherwise.",
+    "quote": "Subject to any provision to the contrary in the agreement itself, an agreement shall not be void or unenforceable by reason only of a contravention of a safety provision"
+   },
+   {
+    "requirement": "Liability arising under subsection (1) cannot be limited or excluded by any contract term, by any notice, or by any other provision, except where safety regulations limit or exclude it under subsection (1).",
+    "quote": "Liability by virtue of subsection (1) above shall not be limited or excluded by any contract term, by any notice or (subject to the power contained in subsection (1) above to limit or exclude it in safety regulations) by any other provision"
+   },
+   {
+    "requirement": "Subsection (1) does not prejudice the operation of section 12 of the Nuclear Installations Act 1965 concerning rights to compensation confined to that Act.",
+    "quote": "Nothing in subsection (1) above shall prejudice the operation of section 12 of the Nuclear Installations Act 1965 (rights to compensation for certain breaches of duties confined to rights under that Act)"
+   },
+   {
+    "requirement": "Within section 41 of the Consumer Protection Act 1987, the definition of damage includes personal injury and death.",
+    "quote": "In this section “damage” includes personal injury and death"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An obligation imposed by safety regulations constitutes a duty owed to any person who may be affected by a contravention of that obligation.",
+   "quote": "An obligation imposed by safety regulations shall be a duty owed to any person who may be affected by a contravention of the obligation"
+  },
+  {
+   "requirement": "A contravention of an obligation imposed by safety regulations is actionable as a breach of statutory duty, subject to any contrary provision in the regulations and to the defences and other incidents applying to such actions.",
+   "quote": "subject to any provision to the contrary in the regulations and to the defences and other incidents applying to actions for breach of statutory duty, a contravention of any such obligation shall be actionable accordingly"
+  },
+  {
+   "requirement": "The Consumer Protection Act 1987 does not confer any civil right of action in respect of loss or damage suffered from a contravention of a safety provision, other than the right conferred by Part I of the Act.",
+   "quote": "This Act shall not be construed as conferring any other right of action in civil proceedings, apart from the right conferred by virtue of Part I of this Act, in respect of any loss or damage suffered in consequence of a contravention of a safety provision"
+  },
+  {
+   "requirement": "An agreement is not void or unenforceable solely because of a contravention of a safety provision, unless the agreement itself provides otherwise.",
+   "quote": "Subject to any provision to the contrary in the agreement itself, an agreement shall not be void or unenforceable by reason only of a contravention of a safety provision"
+  },
+  {
+   "requirement": "Liability arising under subsection (1) cannot be limited or excluded by any contract term, by any notice, or by any other provision, except where safety regulations limit or exclude it under subsection (1).",
+   "quote": "Liability by virtue of subsection (1) above shall not be limited or excluded by any contract term, by any notice or (subject to the power contained in subsection (1) above to limit or exclude it in safety regulations) by any other provision"
+  },
+  {
+   "requirement": "Subsection (1) does not prejudice the operation of section 12 of the Nuclear Installations Act 1965 concerning rights to compensation confined to that Act.",
+   "quote": "Nothing in subsection (1) above shall prejudice the operation of section 12 of the Nuclear Installations Act 1965 (rights to compensation for certain breaches of duties confined to rights under that Act)"
+  },
+  {
+   "requirement": "Within section 41 of the Consumer Protection Act 1987, the definition of damage includes personal injury and death.",
+   "quote": "In this section “damage” includes personal injury and death"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

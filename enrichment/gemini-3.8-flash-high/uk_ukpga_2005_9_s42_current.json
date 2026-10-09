@@ -1,0 +1,190 @@
+{
+ "key": "uk/ukpga/2005/9/s42@current",
+ "section": "uk/ukpga/2005/9/s42",
+ "version": "current",
+ "source_sha256": "bd944fb58542292a7e608e7b3fc91ef812f617bd19e9f7e52769eeaf8a92d704",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons assessing whether a person has capacity in relation to any matter.",
+    "quote": "The Lord Chancellor must prepare and issue one or more codes of practice— (a) for the guidance of persons assessing whether a person has capacity in relation to any matter"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons acting in connection with the care or treatment of another person under section 5 of the Act.",
+    "quote": "for the guidance of persons acting in connection with the care or treatment of another person (see section 5)"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of donees of lasting powers of attorney.",
+    "quote": "for the guidance of donees of lasting powers of attorney"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of deputies appointed by the court.",
+    "quote": "for the guidance of deputies appointed by the court"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons carrying out research in reliance on any provision made by or under the Act and otherwise with respect to sections 30 to 34.",
+    "quote": "for the guidance of persons carrying out research in reliance on any provision made by or under this Act (and otherwise with respect to sections 30 to 34)"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of independent mental capacity advocates.",
+    "quote": "for the guidance of independent mental capacity advocates"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons exercising functions under Schedule A1.",
+    "quote": "for the guidance of persons exercising functions under Schedule A1"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of representatives appointed under Part 10 of Schedule A1.",
+    "quote": "for the guidance of representatives appointed under Part 10 of Schedule A1"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice with respect to the provisions of sections 24 to 26 concerning advance decisions and apparent advance decisions.",
+    "quote": "with respect to the provisions of sections 24 to 26 (advance decisions and apparent advance decisions)"
+   },
+   {
+    "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice with respect to such other matters concerned with the Act as the Lord Chancellor thinks fit.",
+    "quote": "with respect to such other matters concerned with this Act as he thinks fit"
+   },
+   {
+    "requirement": "The Lord Chancellor is permitted from time to time to revise a code of practice.",
+    "quote": "The Lord Chancellor may from time to time revise a code."
+   },
+   {
+    "requirement": "The Lord Chancellor is permitted to delegate the preparation or revision of the whole or any part of a code to the extent that the Lord Chancellor considers expedient.",
+    "quote": "The Lord Chancellor may delegate the preparation or revision of the whole or any part of a code so far as he considers expedient."
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity as the donee of a lasting power of attorney.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (a) as the donee of a lasting power of attorney"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity as a deputy appointed by the court.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (b) as a deputy appointed by the court"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity as a person carrying out research in reliance on any provision made by or under the Act pursuant to sections 30 to 34.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (c) as a person carrying out research in reliance on any provision made by or under this Act (see sections 30 to 34)"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity as an independent mental capacity advocate.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (d) as an independent mental capacity advocate"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity in the exercise of functions under Schedule A1.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (da) in the exercise of functions under Schedule A1"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity as a representative appointed under Part 10 of Schedule A1.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (db) as a representative appointed under Part 10 of Schedule A1"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity in a professional capacity.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (e) in a professional capacity"
+   },
+   {
+    "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity for remuneration.",
+    "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (f) for remuneration"
+   },
+   {
+    "requirement": "A court or tribunal conducting any criminal or civil proceedings must take into account a provision of a code or a failure to comply with a code when deciding a question arising in the proceedings, if that provision or failure appears relevant to the question.",
+    "quote": "If it appears to a court or tribunal conducting any criminal or civil proceedings that— (a) a provision of a code, or (b) a failure to comply with a code, is relevant to a question arising in the proceedings, the provision or failure must be taken into account in deciding the question."
+   },
+   {
+    "requirement": "A code prepared for the guidance of deputies appointed by the court is permitted to contain separate guidance for deputies appointed by virtue of paragraph 1(2) of Schedule 5 where functions of a deputy are conferred on a receiver appointed under the Mental Health Act.",
+    "quote": "A code under subsection (1)(d) may contain separate guidance for deputies appointed by virtue of paragraph 1(2) of Schedule 5 (functions of deputy conferred on receiver appointed under the Mental Health Act)."
+   },
+   {
+    "requirement": "In section 42 and in section 43 of the Act, the term 'code' is defined as a code prepared or revised under section 42.",
+    "quote": "In this section and in section 43, “code” means a code prepared or revised under this section."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of codes of practice the Lord Chancellor must prepare and issue",
+    "value": "one or more",
+    "quote": "The Lord Chancellor must prepare and issue one or more codes of practice"
+   },
+   {
+    "what": "Minimum number of qualifying capacities in which a person must act in relation to a person who lacks capacity to trigger the duty to have regard to any relevant code",
+    "value": "one or more",
+    "quote": "acting in relation to a person who lacks capacity and is doing so in one or more of the following ways"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons assessing whether a person has capacity in relation to any matter.",
+   "quote": "The Lord Chancellor must prepare and issue one or more codes of practice— (a) for the guidance of persons assessing whether a person has capacity in relation to any matter"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons acting in connection with the care or treatment of another person under section 5 of the Act.",
+   "quote": "for the guidance of persons acting in connection with the care or treatment of another person (see section 5)"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of donees of lasting powers of attorney.",
+   "quote": "for the guidance of donees of lasting powers of attorney"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of deputies appointed by the court.",
+   "quote": "for the guidance of deputies appointed by the court"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons carrying out research in reliance on any provision made by or under the Act and otherwise with respect to sections 30 to 34.",
+   "quote": "for the guidance of persons carrying out research in reliance on any provision made by or under this Act (and otherwise with respect to sections 30 to 34)"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of independent mental capacity advocates.",
+   "quote": "for the guidance of independent mental capacity advocates"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of persons exercising functions under Schedule A1.",
+   "quote": "for the guidance of persons exercising functions under Schedule A1"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice for the guidance of representatives appointed under Part 10 of Schedule A1.",
+   "quote": "for the guidance of representatives appointed under Part 10 of Schedule A1"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice with respect to the provisions of sections 24 to 26 concerning advance decisions and apparent advance decisions.",
+   "quote": "with respect to the provisions of sections 24 to 26 (advance decisions and apparent advance decisions)"
+  },
+  {
+   "requirement": "The Lord Chancellor is required to prepare and issue one or more codes of practice with respect to such other matters concerned with the Act as the Lord Chancellor thinks fit.",
+   "quote": "with respect to such other matters concerned with this Act as he thinks fit"
+  },
+  {
+   "requirement": "The Lord Chancellor is permitted from time to time to revise a code of practice.",
+   "quote": "The Lord Chancellor may from time to time revise a code."
+  },
+  {
+   "requirement": "The Lord Chancellor is permitted to delegate the preparation or revision of the whole or any part of a code to the extent that the Lord Chancellor considers expedient.",
+   "quote": "The Lord Chancellor may delegate the preparation or revision of the whole or any part of a code so far as he considers expedient."
+  },
+  {
+   "requirement": "A person has a duty to have regard to any relevant code if that person is acting in relation to a person who lacks capacity as the donee of a lasting power of attorney.",
+   "quote": "It is the duty of a person to have regard to any relevant code if he is acting in relation to a person who lacks capacity and is doing so in one or more of the following ways— (a) as the donee of a lasting power of attorney"
+  },
+  {
+   "requirement": "A court or tribunal conducting any criminal or civil proceedings must take into account a provision of a code or a failure to comply with a code when deciding a question arising in the proceedings, if that provision or failure appears relevant to the question.",
+   "quote": "If it appears to a court or tribunal conducting any criminal or civil proceedings that— (a) a provision of a code, or (b) a failure to comply with a code, is relevant to a question arising in the proceedings, the provision or failure must be taken into account in deciding the question."
+  },
+  {
+   "requirement": "A code prepared for the guidance of deputies appointed by the court is permitted to contain separate guidance for deputies appointed by virtue of paragraph 1(2) of Schedule 5 where functions of a deputy are conferred on a receiver appointed under the Mental Health Act.",
+   "quote": "A code under subsection (1)(d) may contain separate guidance for deputies appointed by virtue of paragraph 1(2) of Schedule 5 (functions of deputy conferred on receiver appointed under the Mental Health Act)."
+  },
+  {
+   "requirement": "In section 42 and in section 43 of the Act, the term 'code' is defined as a code prepared or revised under section 42.",
+   "quote": "In this section and in section 43, “code” means a code prepared or revised under this section."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 23,
+  "elements_verified": 16,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

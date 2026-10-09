@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1996/47/s24@current",
+ "section": "uk/ukpga/1996/47/s24",
+ "version": "current",
+ "source_sha256": "4889a179f267efc3e6b898bd37d4b7e7b774d886f11178112f6c2996fffd4776",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to subsection (2), the Trusts of Land and Appointment of Trustees Act 1996 binds the Crown.",
+    "quote": "Subject to subsection (2), this Act binds the Crown."
+   },
+   {
+    "requirement": "Except so far as the Trusts of Land and Appointment of Trustees Act 1996 relates to undivided shares and joint ownership, it does not affect or alter the descent, devolution, or nature of estates and interests of or in land for the time being vested in Her Majesty in right of the Crown or of the Duchy of Lancaster.",
+    "quote": "land for the time being vested in Her Majesty in right of the Crown or of the Duchy of Lancaster"
+   },
+   {
+    "requirement": "Except so far as the Trusts of Land and Appointment of Trustees Act 1996 relates to undivided shares and joint ownership, it does not affect or alter the descent, devolution, or nature of estates and interests of or in land for the time being belonging to the Duchy of Cornwall and held in right or respect of the Duchy.",
+    "quote": "land for the time being belonging to the Duchy of Cornwall and held in right or respect of the Duchy"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to subsection (2), the Trusts of Land and Appointment of Trustees Act 1996 binds the Crown.",
+   "quote": "Subject to subsection (2), this Act binds the Crown."
+  },
+  {
+   "requirement": "Except so far as the Trusts of Land and Appointment of Trustees Act 1996 relates to undivided shares and joint ownership, it does not affect or alter the descent, devolution, or nature of estates and interests of or in land for the time being vested in Her Majesty in right of the Crown or of the Duchy of Lancaster.",
+   "quote": "land for the time being vested in Her Majesty in right of the Crown or of the Duchy of Lancaster"
+  },
+  {
+   "requirement": "Except so far as the Trusts of Land and Appointment of Trustees Act 1996 relates to undivided shares and joint ownership, it does not affect or alter the descent, devolution, or nature of estates and interests of or in land for the time being belonging to the Duchy of Cornwall and held in right or respect of the Duchy.",
+   "quote": "land for the time being belonging to the Duchy of Cornwall and held in right or respect of the Duchy"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

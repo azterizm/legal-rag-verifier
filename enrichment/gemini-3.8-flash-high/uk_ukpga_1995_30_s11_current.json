@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1995/30/s11@current",
+ "section": "uk/ukpga/1995/30/s11",
+ "version": "current",
+ "source_sha256": "389a25647cc52af0accbcdc1de03470f67319d5477b116f1cf471828323dc750",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Assignments in breach of a covenant of a tenancy or assignments by operation of law are defined as excluded assignments for the purposes of the operation of sections 5 to 10.",
+    "quote": "assignments in breach of a covenant of a tenancy or assignments by operation of law (“excluded assignments”)"
+   },
+   {
+    "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 5 shall not have the effect mentioned in that subsection in relation to the tenant as from that assignment.",
+    "quote": "shall not have the effect mentioned in that subsection in relation to the tenant as from that assignment"
+   },
+   {
+    "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 5 shall have the effect mentioned in that subsection in relation to the tenant as from the next assignment (if any) of the premises assigned by him which is not an excluded assignment.",
+    "quote": "shall have that effect as from the next assignment (if any) of the premises assigned by him which is not an excluded assignment"
+   },
+   {
+    "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 6 or 7 shall not enable the landlord or former landlord to apply for such a release as is mentioned in that subsection as from that assignment.",
+    "quote": "shall not enable the landlord or former landlord to apply for such a release as is mentioned in that subsection as from that assignment"
+   },
+   {
+    "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 6 or 7 shall apply on the next assignment (if any) of the reversion assigned by the landlord which is not an excluded assignment so as to enable the landlord or former landlord to apply for any such release as from that subsequent assignment.",
+    "quote": "shall apply on the next assignment (if any) of the reversion assigned by the landlord which is not an excluded assignment so as to enable the landlord or former landlord to apply for any such release as from that subsequent assignment"
+   },
+   {
+    "requirement": "Where subsection (2) or (3) of section 6 or 7 applies on a subsequent assignment by virtue of section 11(3), any reference in that section to the assignment (except where it relates to the time as from which the release takes effect) is a reference to the excluded assignment.",
+    "quote": "any reference in that section to the assignment (except where it relates to the time as from which the release takes effect) is a reference to the excluded assignment"
+   },
+   {
+    "requirement": "Where subsection (2) or (3) of section 6 or 7 applies on a subsequent assignment by virtue of section 11(3), any reference to the assignment or proposed assignment where it relates to the time as from which the release takes effect, and in section 8 as it applies in relation to any application made under that section by virtue of section 11(3), is a reference to the subsequent assignment.",
+    "quote": "in that excepted case and in section 8 as it applies in relation to any application under that section made by virtue of subsection (3) above, any reference to the assignment or proposed assignment is a reference to any such subsequent assignment as is mentioned in that subsection"
+   },
+   {
+    "requirement": "In the case of an excluded assignment, section 9 shall not enable the tenant or landlord and his assignee to apply for an agreed apportionment to become binding in accordance with section 10 as from that assignment.",
+    "quote": "shall not enable the tenant or landlord and his assignee to apply for an agreed apportionment to become binding in accordance with section 10 as from that assignment"
+   },
+   {
+    "requirement": "In the case of an excluded assignment, section 9 shall apply on the next assignment (if any) of the premises or reversion assigned by the tenant or landlord which is not an excluded assignment so as to enable him and his assignee to apply for an agreed apportionment to become binding in accordance with section 10 as from that subsequent assignment.",
+    "quote": "shall apply on the next assignment (if any) of the premises or reversion assigned by the tenant or landlord which is not an excluded assignment so as to enable him and his assignee to apply for such an apportionment to become binding in accordance with section 10 as from that subsequent assignment"
+   },
+   {
+    "requirement": "Where section 9 applies on a subsequent assignment by virtue of section 11(5), any reference in that section to the assignment or the assignee under it is a reference to the excluded assignment and the assignee under that assignment.",
+    "quote": "any reference in that section to the assignment or the assignee under it is a reference to the excluded assignment and the assignee under that assignment"
+   },
+   {
+    "requirement": "In section 10 as it applies in relation to any application under section 9 made by virtue of section 11(5), any reference to the assignment or proposed assignment is a reference to the subsequent assignment.",
+    "quote": "in section 10 as it applies in relation to any application under section 9 made by virtue of subsection (5) above, any reference to the assignment or proposed assignment is a reference to any such subsequent assignment as is mentioned in that subsection"
+   },
+   {
+    "requirement": "If a subsequent assignment comprises only part of the premises assigned by the tenant or only part of the premises the reversion in which was assigned by the landlord on the excluded assignment, the relevant provision or provisions of section 5, 6, 7 or 9 shall only have the effect mentioned in section 11(2), (3) or (5) to the extent that the covenants or covenant in question fall or falls to be complied with in relation to that part of those premises.",
+    "quote": "the relevant provision or provisions of section 5, 6, 7 or 9 shall only have the effect mentioned in that subsection to the extent that the covenants or covenant in question fall or falls to be complied with in relation to that part of those premises"
+   },
+   {
+    "requirement": "If a subsequent assignment comprises only part of the premises assigned by the tenant or only part of the premises the reversion in which was assigned by the landlord on the excluded assignment, section 11(2), (3) or (5) may accordingly apply on different occasions in relation to different parts of those premises.",
+    "quote": "that subsection may accordingly apply on different occasions in relation to different parts of those premises"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Assignments in breach of a covenant of a tenancy or assignments by operation of law are defined as excluded assignments for the purposes of the operation of sections 5 to 10.",
+   "quote": "assignments in breach of a covenant of a tenancy or assignments by operation of law (“excluded assignments”)"
+  },
+  {
+   "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 5 shall not have the effect mentioned in that subsection in relation to the tenant as from that assignment.",
+   "quote": "shall not have the effect mentioned in that subsection in relation to the tenant as from that assignment"
+  },
+  {
+   "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 5 shall have the effect mentioned in that subsection in relation to the tenant as from the next assignment (if any) of the premises assigned by him which is not an excluded assignment.",
+   "quote": "shall have that effect as from the next assignment (if any) of the premises assigned by him which is not an excluded assignment"
+  },
+  {
+   "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 6 or 7 shall not enable the landlord or former landlord to apply for such a release as is mentioned in that subsection as from that assignment.",
+   "quote": "shall not enable the landlord or former landlord to apply for such a release as is mentioned in that subsection as from that assignment"
+  },
+  {
+   "requirement": "In the case of an excluded assignment, subsection (2) or (3) of section 6 or 7 shall apply on the next assignment (if any) of the reversion assigned by the landlord which is not an excluded assignment so as to enable the landlord or former landlord to apply for any such release as from that subsequent assignment.",
+   "quote": "shall apply on the next assignment (if any) of the reversion assigned by the landlord which is not an excluded assignment so as to enable the landlord or former landlord to apply for any such release as from that subsequent assignment"
+  },
+  {
+   "requirement": "Where subsection (2) or (3) of section 6 or 7 applies on a subsequent assignment by virtue of section 11(3), any reference in that section to the assignment (except where it relates to the time as from which the release takes effect) is a reference to the excluded assignment.",
+   "quote": "any reference in that section to the assignment (except where it relates to the time as from which the release takes effect) is a reference to the excluded assignment"
+  },
+  {
+   "requirement": "Where subsection (2) or (3) of section 6 or 7 applies on a subsequent assignment by virtue of section 11(3), any reference to the assignment or proposed assignment where it relates to the time as from which the release takes effect, and in section 8 as it applies in relation to any application made under that section by virtue of section 11(3), is a reference to the subsequent assignment.",
+   "quote": "in that excepted case and in section 8 as it applies in relation to any application under that section made by virtue of subsection (3) above, any reference to the assignment or proposed assignment is a reference to any such subsequent assignment as is mentioned in that subsection"
+  },
+  {
+   "requirement": "In the case of an excluded assignment, section 9 shall not enable the tenant or landlord and his assignee to apply for an agreed apportionment to become binding in accordance with section 10 as from that assignment.",
+   "quote": "shall not enable the tenant or landlord and his assignee to apply for an agreed apportionment to become binding in accordance with section 10 as from that assignment"
+  },
+  {
+   "requirement": "In the case of an excluded assignment, section 9 shall apply on the next assignment (if any) of the premises or reversion assigned by the tenant or landlord which is not an excluded assignment so as to enable him and his assignee to apply for an agreed apportionment to become binding in accordance with section 10 as from that subsequent assignment.",
+   "quote": "shall apply on the next assignment (if any) of the premises or reversion assigned by the tenant or landlord which is not an excluded assignment so as to enable him and his assignee to apply for such an apportionment to become binding in accordance with section 10 as from that subsequent assignment"
+  },
+  {
+   "requirement": "Where section 9 applies on a subsequent assignment by virtue of section 11(5), any reference in that section to the assignment or the assignee under it is a reference to the excluded assignment and the assignee under that assignment.",
+   "quote": "any reference in that section to the assignment or the assignee under it is a reference to the excluded assignment and the assignee under that assignment"
+  },
+  {
+   "requirement": "In section 10 as it applies in relation to any application under section 9 made by virtue of section 11(5), any reference to the assignment or proposed assignment is a reference to the subsequent assignment.",
+   "quote": "in section 10 as it applies in relation to any application under section 9 made by virtue of subsection (5) above, any reference to the assignment or proposed assignment is a reference to any such subsequent assignment as is mentioned in that subsection"
+  },
+  {
+   "requirement": "If a subsequent assignment comprises only part of the premises assigned by the tenant or only part of the premises the reversion in which was assigned by the landlord on the excluded assignment, the relevant provision or provisions of section 5, 6, 7 or 9 shall only have the effect mentioned in section 11(2), (3) or (5) to the extent that the covenants or covenant in question fall or falls to be complied with in relation to that part of those premises.",
+   "quote": "the relevant provision or provisions of section 5, 6, 7 or 9 shall only have the effect mentioned in that subsection to the extent that the covenants or covenant in question fall or falls to be complied with in relation to that part of those premises"
+  },
+  {
+   "requirement": "If a subsequent assignment comprises only part of the premises assigned by the tenant or only part of the premises the reversion in which was assigned by the landlord on the excluded assignment, section 11(2), (3) or (5) may accordingly apply on different occasions in relation to different parts of those premises.",
+   "quote": "that subsection may accordingly apply on different occasions in relation to different parts of those premises"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

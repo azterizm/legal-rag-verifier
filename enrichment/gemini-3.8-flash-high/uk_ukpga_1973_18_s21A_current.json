@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1973/18/s21A@current",
+ "section": "uk/ukpga/1973/18/s21A",
+ "version": "current",
+ "source_sha256": "a8f1b57850f6f7774e8b804bf1af582582cbf9292363f33b8f6d2b57fbbcbcdf",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of the Matrimonial Causes Act 1973, a pension sharing order must provide that one party's shareable rights under a specified pension arrangement or shareable state scheme rights are subject to pension sharing for the benefit of the other party.",
+    "quote": "provides that one party’s— (i) shareable rights under a specified pension arrangement, or (ii) shareable state scheme rights, be subject to pension sharing for the benefit of the other party"
+   },
+   {
+    "requirement": "A pension sharing order must specify the percentage value that is to be transferred.",
+    "quote": "specifies the percentage value to be transferred"
+   },
+   {
+    "requirement": "Shareable rights under a pension arrangement are defined as rights for which pension sharing is available under Chapter I of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation.",
+    "quote": "rights in relation to which pension sharing is available under Chapter I of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation"
+   },
+   {
+    "requirement": "Shareable state scheme rights are defined as rights for which pension sharing is available under Chapter II of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation.",
+    "quote": "rights in relation to which pension sharing is available under Chapter II of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation"
+   },
+   {
+    "requirement": "For the purposes of a pension sharing order, a party is defined as a party to a marriage.",
+    "quote": "“ party ” means a party to a marriage"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of the Matrimonial Causes Act 1973, a pension sharing order must provide that one party's shareable rights under a specified pension arrangement or shareable state scheme rights are subject to pension sharing for the benefit of the other party.",
+   "quote": "provides that one party’s— (i) shareable rights under a specified pension arrangement, or (ii) shareable state scheme rights, be subject to pension sharing for the benefit of the other party"
+  },
+  {
+   "requirement": "A pension sharing order must specify the percentage value that is to be transferred.",
+   "quote": "specifies the percentage value to be transferred"
+  },
+  {
+   "requirement": "Shareable rights under a pension arrangement are defined as rights for which pension sharing is available under Chapter I of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation.",
+   "quote": "rights in relation to which pension sharing is available under Chapter I of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation"
+  },
+  {
+   "requirement": "Shareable state scheme rights are defined as rights for which pension sharing is available under Chapter II of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation.",
+   "quote": "rights in relation to which pension sharing is available under Chapter II of Part IV of the Welfare Reform and Pensions Act 1999, or under corresponding Northern Ireland legislation"
+  },
+  {
+   "requirement": "For the purposes of a pension sharing order, a party is defined as a party to a marriage.",
+   "quote": "“ party ” means a party to a marriage"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

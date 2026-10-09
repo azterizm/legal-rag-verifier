@@ -1,0 +1,143 @@
+{
+ "key": "uk/ukpga/1973/18/s25B@current",
+ "section": "uk/ukpga/1973/18/s25B",
+ "version": "current",
+ "source_sha256": "ba5df21c88fe00af82c0762340829e99ad1ac7af0e89c1b5b426dec0a11c18f3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The matters to which the court must have regard under section 25(2)(a) include any benefits under a pension arrangement which a party to the marriage has or is likely to have.",
+    "quote": "any benefits under a pension arrangement which a party to the marriage has or is likely to have"
+   },
+   {
+    "requirement": "The matters to which the court must have regard under section 25(2)(h) include any benefits under a pension arrangement which, by reason of the dissolution or annulment of the marriage, a party to the marriage will lose the chance of acquiring.",
+    "quote": "any benefits under a pension arrangement which, by reason of the dissolution or annulment of the marriage, a party to the marriage will lose the chance of acquiring"
+   },
+   {
+    "requirement": "In relation to benefits under a pension arrangement, section 25(2)(a) takes effect as if the phrase 'in the foreseeable future' were omitted.",
+    "quote": "section 25(2)(a) above shall have effect as if “in the foreseeable future” were omitted"
+   },
+   {
+    "requirement": "In any proceedings for a financial provision order under section 23 where a party to the marriage has or is likely to have any benefit under a pension scheme, the court must, in addition to considering any other required matter, consider whether such an order (whether deferred or not) should be made having regard to any matter required to be considered under subsection (1).",
+    "quote": "whether, having regard to any matter to which it is required to have regard in the proceedings by virtue of subsection (1) above, such an order (whether deferred or not) should be made"
+   },
+   {
+    "requirement": "In any proceedings for a financial provision order under section 23 where a party to the marriage has or is likely to have any benefit under a pension scheme and the court determines to make such an order, the court must consider how the terms of the order should be affected having regard to any matter required to be considered under subsection (1).",
+    "quote": "where the court determines to make such an order, how the terms of the order should be affected, having regard to any such matter"
+   },
+   {
+    "requirement": "To the extent that an order under section 23 is made having regard to any benefits under a pension arrangement, the order may require the person responsible for the pension arrangement to make a payment for the benefit of the other party if at any time any payment in respect of benefits under the arrangement becomes due to the party with pension rights.",
+    "quote": "order may require the person responsible for the pension arrangement in question, if at any time any payment in respect of any benefits under the arrangement becomes due to the party with pension rights, to make a payment for the benefit of the other party"
+   },
+   {
+    "requirement": "An order that requires a payment by the person responsible for a pension arrangement must express the amount of the payment as a percentage of the payment that becomes due to the party with pension rights.",
+    "quote": "must express the amount of any payment required to be made by virtue of subsection (4) above as a percentage of the payment which becomes due to the party with pension rights"
+   },
+   {
+    "requirement": "Any payment made by the person responsible for the pension arrangement discharges so much of that person's liability to the party with pension rights as corresponds to the amount of the payment.",
+    "quote": "shall discharge so much of his liability to the party with pension rights as corresponds to the amount of the payment"
+   },
+   {
+    "requirement": "Any payment made by the person responsible for the pension arrangement is treated for all purposes as a payment made by the party with pension rights in or towards discharging that party's liability under the order.",
+    "quote": "shall be treated for all purposes as a payment made by the party with pension rights in or towards the discharge of his liability under the order"
+   },
+   {
+    "requirement": "Where the party with pension rights has a right of commutation under the pension arrangement, the court's order may require that party to exercise that right to any extent.",
+    "quote": "Where the party with pension rights has a right of commutation under the arrangement, the order may require him to exercise it to any extent"
+   },
+   {
+    "requirement": "Section 25B applies to any payment due in consequence of commutation made pursuant to the court's order in the same manner as it applies to other payments in respect of benefits under the pension arrangement.",
+    "quote": "this section applies to the any payment due in consequence of commutation in pursuance of the order as it applies to other payments in respect of benefits under the arrangement"
+   },
+   {
+    "requirement": "The court's power to require the exercise of a right of commutation may not be exercised for the purpose of commuting a benefit payable to the party with pension rights to a benefit payable to the other party.",
+    "quote": "power conferred by subsection (7) above may not be exercised for the purpose of commuting a benefit payable to the party with pension rights to a benefit payable to the other party"
+   },
+   {
+    "requirement": "The court may not exercise the power to require payments by the person responsible for the pension arrangement or to require commutation in relation to a pension arrangement that is the subject of a pension sharing order in relation to the marriage.",
+    "quote": "power conferred by subsection (4) or (7) above may not be exercised in relation to a pension arrangement which— (a) is the subject of a pension sharing order in relation to the marriage"
+   },
+   {
+    "requirement": "The court may not exercise the power to require payments by the person responsible for the pension arrangement or to require commutation in relation to a pension arrangement that has been the subject of pension sharing between the parties to the marriage.",
+    "quote": "power conferred by subsection (4) or (7) above may not be exercised in relation to a pension arrangement which— (a) is the subject of a pension sharing order in relation to the marriage, or (b) has been the subject of pension sharing between the parties to the marriage"
+   },
+   {
+    "requirement": "In subsection (1), references to benefits under a pension arrangement include any benefits by way of pension, whether under a pension arrangement or not.",
+    "quote": "references to benefits under a pension arrangement include any benefits by way of pension, whether under a pension arrangement or not"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The matters to which the court must have regard under section 25(2)(a) include any benefits under a pension arrangement which a party to the marriage has or is likely to have.",
+   "quote": "any benefits under a pension arrangement which a party to the marriage has or is likely to have"
+  },
+  {
+   "requirement": "The matters to which the court must have regard under section 25(2)(h) include any benefits under a pension arrangement which, by reason of the dissolution or annulment of the marriage, a party to the marriage will lose the chance of acquiring.",
+   "quote": "any benefits under a pension arrangement which, by reason of the dissolution or annulment of the marriage, a party to the marriage will lose the chance of acquiring"
+  },
+  {
+   "requirement": "In relation to benefits under a pension arrangement, section 25(2)(a) takes effect as if the phrase 'in the foreseeable future' were omitted.",
+   "quote": "section 25(2)(a) above shall have effect as if “in the foreseeable future” were omitted"
+  },
+  {
+   "requirement": "In any proceedings for a financial provision order under section 23 where a party to the marriage has or is likely to have any benefit under a pension scheme, the court must, in addition to considering any other required matter, consider whether such an order (whether deferred or not) should be made having regard to any matter required to be considered under subsection (1).",
+   "quote": "whether, having regard to any matter to which it is required to have regard in the proceedings by virtue of subsection (1) above, such an order (whether deferred or not) should be made"
+  },
+  {
+   "requirement": "In any proceedings for a financial provision order under section 23 where a party to the marriage has or is likely to have any benefit under a pension scheme and the court determines to make such an order, the court must consider how the terms of the order should be affected having regard to any matter required to be considered under subsection (1).",
+   "quote": "where the court determines to make such an order, how the terms of the order should be affected, having regard to any such matter"
+  },
+  {
+   "requirement": "To the extent that an order under section 23 is made having regard to any benefits under a pension arrangement, the order may require the person responsible for the pension arrangement to make a payment for the benefit of the other party if at any time any payment in respect of benefits under the arrangement becomes due to the party with pension rights.",
+   "quote": "order may require the person responsible for the pension arrangement in question, if at any time any payment in respect of any benefits under the arrangement becomes due to the party with pension rights, to make a payment for the benefit of the other party"
+  },
+  {
+   "requirement": "An order that requires a payment by the person responsible for a pension arrangement must express the amount of the payment as a percentage of the payment that becomes due to the party with pension rights.",
+   "quote": "must express the amount of any payment required to be made by virtue of subsection (4) above as a percentage of the payment which becomes due to the party with pension rights"
+  },
+  {
+   "requirement": "Any payment made by the person responsible for the pension arrangement discharges so much of that person's liability to the party with pension rights as corresponds to the amount of the payment.",
+   "quote": "shall discharge so much of his liability to the party with pension rights as corresponds to the amount of the payment"
+  },
+  {
+   "requirement": "Any payment made by the person responsible for the pension arrangement is treated for all purposes as a payment made by the party with pension rights in or towards discharging that party's liability under the order.",
+   "quote": "shall be treated for all purposes as a payment made by the party with pension rights in or towards the discharge of his liability under the order"
+  },
+  {
+   "requirement": "Where the party with pension rights has a right of commutation under the pension arrangement, the court's order may require that party to exercise that right to any extent.",
+   "quote": "Where the party with pension rights has a right of commutation under the arrangement, the order may require him to exercise it to any extent"
+  },
+  {
+   "requirement": "Section 25B applies to any payment due in consequence of commutation made pursuant to the court's order in the same manner as it applies to other payments in respect of benefits under the pension arrangement.",
+   "quote": "this section applies to the any payment due in consequence of commutation in pursuance of the order as it applies to other payments in respect of benefits under the arrangement"
+  },
+  {
+   "requirement": "The court's power to require the exercise of a right of commutation may not be exercised for the purpose of commuting a benefit payable to the party with pension rights to a benefit payable to the other party.",
+   "quote": "power conferred by subsection (7) above may not be exercised for the purpose of commuting a benefit payable to the party with pension rights to a benefit payable to the other party"
+  },
+  {
+   "requirement": "The court may not exercise the power to require payments by the person responsible for the pension arrangement or to require commutation in relation to a pension arrangement that is the subject of a pension sharing order in relation to the marriage.",
+   "quote": "power conferred by subsection (4) or (7) above may not be exercised in relation to a pension arrangement which— (a) is the subject of a pension sharing order in relation to the marriage"
+  },
+  {
+   "requirement": "The court may not exercise the power to require payments by the person responsible for the pension arrangement or to require commutation in relation to a pension arrangement that has been the subject of pension sharing between the parties to the marriage.",
+   "quote": "power conferred by subsection (4) or (7) above may not be exercised in relation to a pension arrangement which— (a) is the subject of a pension sharing order in relation to the marriage, or (b) has been the subject of pension sharing between the parties to the marriage"
+  },
+  {
+   "requirement": "In subsection (1), references to benefits under a pension arrangement include any benefits by way of pension, whether under a pension arrangement or not.",
+   "quote": "references to benefits under a pension arrangement include any benefits by way of pension, whether under a pension arrangement or not"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

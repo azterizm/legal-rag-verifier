@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1980/58/s14B@current",
+ "section": "uk/ukpga/1980/58/s14B",
+ "version": "current",
+ "source_sha256": "3a73f63834c9aed2a83011f7fbc063ef1d6ca3f9741b5344860465b43b65fc1e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An action for damages for negligence, unless it is an action to which section 11 or 11ZA of the Limitation Act 1980 applies, shall not be brought after the expiration of fifteen years from the date of the act or omission.",
+    "quote": "An action for damages for negligence, other than one to which section 11 or 11ZA of this Act applies, shall not be brought after the expiration of fifteen years"
+   },
+   {
+    "requirement": "Actions for damages for negligence to which section 11 or 11ZA of the Limitation Act 1980 applies are excluded from this limitation bar.",
+    "quote": "other than one to which section 11 or 11ZA of this Act applies"
+   },
+   {
+    "requirement": "If there is more than one date on which the alleged act or omission occurred, the fifteen-year period runs from the last of those dates.",
+    "quote": "(or, if more than one, from the last of the dates)"
+   },
+   {
+    "requirement": "The act or omission from which the fifteen-year period runs must be alleged to constitute negligence and must be one to which the claimed damage is alleged to be attributable in whole or in part.",
+    "quote": "any act or omission— (a) which is alleged to constitute negligence; and (b) to which the damage in respect of which damages are claimed is alleged to be attributable (in whole or in part)"
+   },
+   {
+    "requirement": "The right of action is barred after the prescribed period even if the cause of action has not yet accrued before the end of that period.",
+    "quote": "bars the right of action in a case to which subsection (1) above applies notwithstanding that— (a) the cause of action has not yet accrued"
+   },
+   {
+    "requirement": "Where section 14A of the Limitation Act 1980 applies, the right of action is barred after the prescribed period even if the starting date for reckoning the period mentioned in section 14A(4)(b) has not yet occurred before the end of that period.",
+    "quote": "where section 14A of this Act applies to the action, the date which is for the purposes of that section the starting date for reckoning the period mentioned in subsection (4)(b) of that section has not yet occurred; before the end of the period of limitation prescribed by this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the longstop limitation period for bringing an action for damages for negligence running from the date of the act or omission",
+    "value": "fifteen years",
+    "quote": "after the expiration of fifteen years from the date"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An action for damages for negligence, unless it is an action to which section 11 or 11ZA of the Limitation Act 1980 applies, shall not be brought after the expiration of fifteen years from the date of the act or omission.",
+   "quote": "An action for damages for negligence, other than one to which section 11 or 11ZA of this Act applies, shall not be brought after the expiration of fifteen years"
+  },
+  {
+   "requirement": "Actions for damages for negligence to which section 11 or 11ZA of the Limitation Act 1980 applies are excluded from this limitation bar.",
+   "quote": "other than one to which section 11 or 11ZA of this Act applies"
+  },
+  {
+   "requirement": "If there is more than one date on which the alleged act or omission occurred, the fifteen-year period runs from the last of those dates.",
+   "quote": "(or, if more than one, from the last of the dates)"
+  },
+  {
+   "requirement": "The act or omission from which the fifteen-year period runs must be alleged to constitute negligence and must be one to which the claimed damage is alleged to be attributable in whole or in part.",
+   "quote": "any act or omission— (a) which is alleged to constitute negligence; and (b) to which the damage in respect of which damages are claimed is alleged to be attributable (in whole or in part)"
+  },
+  {
+   "requirement": "The right of action is barred after the prescribed period even if the cause of action has not yet accrued before the end of that period.",
+   "quote": "bars the right of action in a case to which subsection (1) above applies notwithstanding that— (a) the cause of action has not yet accrued"
+  },
+  {
+   "requirement": "Where section 14A of the Limitation Act 1980 applies, the right of action is barred after the prescribed period even if the starting date for reckoning the period mentioned in section 14A(4)(b) has not yet occurred before the end of that period.",
+   "quote": "where section 14A of this Act applies to the action, the date which is for the purposes of that section the starting date for reckoning the period mentioned in subsection (4)(b) of that section has not yet occurred; before the end of the period of limitation prescribed by this section"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the longstop limitation period for bringing an action for damages for negligence running from the date of the act or omission",
+   "value": "fifteen years",
+   "quote": "after the expiration of fifteen years from the date"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/1970/9/s12AD@current",
+ "section": "uk/ukpga/1970/9/s12AD",
+ "version": "current",
+ "source_sha256": "f08d80665df9c4b8b38ebe2dd864ba7167d2fa32a5f0713818e6345eea5eace4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 12AD of the Taxes Management Act 1970 applies where a partnership return is amended under section 12ABA, or a dispute about the return is referred to the tribunal under section 12ABZB(3), during the time an enquiry into the return is in progress regarding any matter to which the amendment or dispute relates or which is affected by it.",
+    "quote": "partnership return is amended under section 12ABA of this Act (amendment of partnership return by taxpayer), or a dispute about the return is referred to the tribunal under section 12ABZB(3) of this Act, at a time when an enquiry into the return is in progress in relation to any matter to which the amendment or dispute relates or which is affected by the amendment or dispute"
+   },
+   {
+    "requirement": "An amendment to a partnership return or a dispute referred to the tribunal does not restrict the scope of the enquiry into the return, but it and any arising matters may be taken into account in the enquiry.",
+    "quote": "The amendment or dispute does not restrict the scope of the enquiry but may be taken into account (together with any matters arising) in the enquiry."
+   },
+   {
+    "requirement": "To the extent that an amendment affects any amount stated in the partnership statement included in the return, it does not take effect while an enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment.",
+    "quote": "So far as the amendment affects any amount stated in the partnership statement included in the return, it does not take effect while the enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment"
+   },
+   {
+    "requirement": "An amendment to a partnership return shall not take effect if an officer states in a partial or final closure notice that the officer has taken the amendment into account and either that the amendment was taken into account in formulating the amendments in the notice or that the officer concludes the amendment is incorrect.",
+    "quote": "if the officer states in a partial or final closure notice that he has taken the amendment into account and that— (i) the amendment has been taken into account in formulating the amendments contained in the notice, or (ii) his conclusion is that the amendment is incorrect, the amendment shall not take effect"
+   },
+   {
+    "requirement": "Where an officer does not state in a closure notice that an amendment was taken into account in formulating amendments or concluded to be incorrect, the amendment takes effect when a partial closure notice is issued regarding the matters to which it relates or which are affected by it, or, if no partial closure notice is issued, when a final closure notice is issued.",
+    "quote": "otherwise, the amendment takes effect when a partial closure notice is issued in relation to the matters to which the amendment relates or which are affected by the amendment or, if no such notice is issued, a final closure notice is issued."
+   },
+   {
+    "requirement": "Where the effect of an amendment to a partnership return is deferred, no amendment to give effect to that deferred amendment may be made to partners' returns under section 12ABA(3) while the enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment.",
+    "quote": "no amendment to give effect to that amendment (“the deferred amendment”) shall be made under section 12ABA(3) of this Act (consequential amendment of partners’ returns) while the enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment"
+   },
+   {
+    "requirement": "If a deferred amendment does not take effect but is taken into account in formulating the amendments contained in a closure notice, section 28B(4) applies accordingly to amend partners' returns consequential on the partnership return closure notice.",
+    "quote": "if the deferred amendment does not take effect but is taken into account as mentioned in subsection (3)(a)(i) above, section 28B(4) of this Act (amendment of partners’ returns consequential on amendment of partnership return by closure notice) applies accordingly"
+   },
+   {
+    "requirement": "If a deferred amendment takes effect upon the issuance of a partial closure notice or final closure notice, any necessary consequential amendment of partners' returns under section 12ABA(3) may then be made.",
+    "quote": "if the deferred amendment takes effect under subsection (3)(b) above, any necessary amendment under section 12ABA(3) of this Act may then be made."
+   },
+   {
+    "requirement": "For the purposes of section 12AD of the Taxes Management Act 1970, the period during which an enquiry into any matter is in progress begins with the day notice of enquiry is given and ends with the day a partial closure notice is issued in relation to the matter, or, if no such notice is issued, with the day a final closure notice is issued.",
+    "quote": "the period during which an enquiry is in progress in relation to any matter is the whole of the period— (a) beginning with the day on which notice of enquiry is given, and (b) ending with the day on which a partial closure notice is issued in relation to the matter or, if no such notice is issued, a final closure notice is issued."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period during which an enquiry is in progress in relation to any matter",
+    "value": "the whole of the period— (a) beginning with the day on which notice of enquiry is given, and (b) ending with the day on which a partial closure notice is issued in relation to the matter or, if no such notice is issued, a final closure notice is issued",
+    "quote": "the period during which an enquiry is in progress in relation to any matter is the whole of the period— (a) beginning with the day on which notice of enquiry is given, and (b) ending with the day on which a partial closure notice is issued in relation to the matter or, if no such notice is issued, a final closure notice is issued."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 12AD of the Taxes Management Act 1970 applies where a partnership return is amended under section 12ABA, or a dispute about the return is referred to the tribunal under section 12ABZB(3), during the time an enquiry into the return is in progress regarding any matter to which the amendment or dispute relates or which is affected by it.",
+   "quote": "partnership return is amended under section 12ABA of this Act (amendment of partnership return by taxpayer), or a dispute about the return is referred to the tribunal under section 12ABZB(3) of this Act, at a time when an enquiry into the return is in progress in relation to any matter to which the amendment or dispute relates or which is affected by the amendment or dispute"
+  },
+  {
+   "requirement": "An amendment to a partnership return or a dispute referred to the tribunal does not restrict the scope of the enquiry into the return, but it and any arising matters may be taken into account in the enquiry.",
+   "quote": "The amendment or dispute does not restrict the scope of the enquiry but may be taken into account (together with any matters arising) in the enquiry."
+  },
+  {
+   "requirement": "To the extent that an amendment affects any amount stated in the partnership statement included in the return, it does not take effect while an enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment.",
+   "quote": "So far as the amendment affects any amount stated in the partnership statement included in the return, it does not take effect while the enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment"
+  },
+  {
+   "requirement": "An amendment to a partnership return shall not take effect if an officer states in a partial or final closure notice that the officer has taken the amendment into account and either that the amendment was taken into account in formulating the amendments in the notice or that the officer concludes the amendment is incorrect.",
+   "quote": "if the officer states in a partial or final closure notice that he has taken the amendment into account and that— (i) the amendment has been taken into account in formulating the amendments contained in the notice, or (ii) his conclusion is that the amendment is incorrect, the amendment shall not take effect"
+  },
+  {
+   "requirement": "Where an officer does not state in a closure notice that an amendment was taken into account in formulating amendments or concluded to be incorrect, the amendment takes effect when a partial closure notice is issued regarding the matters to which it relates or which are affected by it, or, if no partial closure notice is issued, when a final closure notice is issued.",
+   "quote": "otherwise, the amendment takes effect when a partial closure notice is issued in relation to the matters to which the amendment relates or which are affected by the amendment or, if no such notice is issued, a final closure notice is issued."
+  },
+  {
+   "requirement": "Where the effect of an amendment to a partnership return is deferred, no amendment to give effect to that deferred amendment may be made to partners' returns under section 12ABA(3) while the enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment.",
+   "quote": "no amendment to give effect to that amendment (“the deferred amendment”) shall be made under section 12ABA(3) of this Act (consequential amendment of partners’ returns) while the enquiry is in progress in relation to any matter to which the amendment relates or which is affected by the amendment"
+  },
+  {
+   "requirement": "If a deferred amendment does not take effect but is taken into account in formulating the amendments contained in a closure notice, section 28B(4) applies accordingly to amend partners' returns consequential on the partnership return closure notice.",
+   "quote": "if the deferred amendment does not take effect but is taken into account as mentioned in subsection (3)(a)(i) above, section 28B(4) of this Act (amendment of partners’ returns consequential on amendment of partnership return by closure notice) applies accordingly"
+  },
+  {
+   "requirement": "If a deferred amendment takes effect upon the issuance of a partial closure notice or final closure notice, any necessary consequential amendment of partners' returns under section 12ABA(3) may then be made.",
+   "quote": "if the deferred amendment takes effect under subsection (3)(b) above, any necessary amendment under section 12ABA(3) of this Act may then be made."
+  },
+  {
+   "requirement": "For the purposes of section 12AD of the Taxes Management Act 1970, the period during which an enquiry into any matter is in progress begins with the day notice of enquiry is given and ends with the day a partial closure notice is issued in relation to the matter, or, if no such notice is issued, with the day a final closure notice is issued.",
+   "quote": "the period during which an enquiry is in progress in relation to any matter is the whole of the period— (a) beginning with the day on which notice of enquiry is given, and (b) ending with the day on which a partial closure notice is issued in relation to the matter or, if no such notice is issued, a final closure notice is issued."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

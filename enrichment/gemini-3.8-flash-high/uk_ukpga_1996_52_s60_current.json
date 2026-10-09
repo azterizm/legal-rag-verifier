@@ -1,0 +1,116 @@
+{
+ "key": "uk/ukpga/1996/52/s60@current",
+ "section": "uk/ukpga/1996/52/s60",
+ "version": "current",
+ "source_sha256": "0580af62f7de22815bdba6f33787ad1ec9f4ab7dc719cb656149c6be0e4667df",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In Part 1 of the Housing Act 1996, a company is a subsidiary in relation to a registered social landlord if one of the conditions specified in subsection (1) is fulfilled.",
+    "quote": "“subsidiary”, in relation to a registered social landlord, means a company with respect to which one of the following conditions is fulfilled"
+   },
+   {
+    "requirement": "A company is a subsidiary of a registered social landlord if the landlord is a member of the company and controls the composition of the company's board of directors.",
+    "quote": "the landlord is a member of the company and controls the composition of the board of directors"
+   },
+   {
+    "requirement": "A company is a subsidiary of a registered social landlord if the landlord holds more than half in nominal value of the company's equity share capital.",
+    "quote": "the landlord holds more than half in nominal value of the company’s equity share capital"
+   },
+   {
+    "requirement": "A company is a subsidiary of a registered social landlord if it is a subsidiary—within the meaning of the Companies Acts (see section 1159 of the Companies Act 2006) or Part 7 of the Co-operative and Community Benefit Societies Act 2014—of another company that is itself a subsidiary of the landlord by holding equity share capital or controlling the board composition.",
+    "quote": "the company is a subsidiary, within the meaning of the Companies Acts (see section 1159 of the Companies Act 2006) or Part 7 of the Co-operative and Community Benefit Societies Act 2014, of another company which, by virtue of paragraph (a) or paragraph (b), is itself a subsidiary of the landlord"
+   },
+   {
+    "requirement": "A registered social landlord is deemed to control the composition of a company's board of directors if, and only if, the landlord can appoint or remove the holders of all or a majority of the directorships through a power exercisable by the landlord without the consent or concurrence of any other person.",
+    "quote": "the composition of a company’s board of directors shall be deemed to be controlled by a registered social landlord if, but only if, the landlord, by the exercise of some power exercisable by him without the consent or concurrence of any other person, can appoint or remove the holders of all or a majority of the directorships"
+   },
+   {
+    "requirement": "In relation to a company that is a registered society, any reference in section 60 to the board of directors is a reference to the committee of management of the society.",
+    "quote": "any reference in this section to the board of directors is a reference to the committee of management of the society"
+   },
+   {
+    "requirement": "In relation to a company that is a registered society, the statutory reference to the holders of all or a majority of the directorships refers to all or a majority of the members of the committee of management.",
+    "quote": "to all or a majority of the members of the committee"
+   },
+   {
+    "requirement": "In relation to a company that is a registered society, if the registered social landlord is himself a member of the committee of management, the reference to the holders of all or a majority of the directorships refers to such number as together with the landlord would constitute a majority.",
+    "quote": "if the landlord is himself a member of the committee, such number as together with him would constitute a majority"
+   },
+   {
+    "requirement": "Where a registered social landlord is a body of trustees, references in section 60 to the landlord apply to the trustees acting as such.",
+    "quote": "In the case of a registered social landlord which is a body of trustees, references in this section to the landlord are to the trustees acting as such"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Proportion of nominal value of equity share capital required for a company to be a subsidiary of a registered social landlord",
+    "value": "more than half",
+    "quote": "more than half in nominal value of the company’s equity share capital"
+   },
+   {
+    "what": "Proportion of directorship appointments or removals required to deem board composition controlled",
+    "value": "all or a majority",
+    "quote": "holders of all or a majority of the directorships"
+   },
+   {
+    "what": "Proportion of members of the committee of management of a registered society",
+    "value": "all or a majority",
+    "quote": "all or a majority of the members of the committee"
+   },
+   {
+    "what": "Proportion of committee members together with the landlord needed to constitute control when the landlord is a committee member",
+    "value": "majority",
+    "quote": "such number as together with him would constitute a majority"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In Part 1 of the Housing Act 1996, a company is a subsidiary in relation to a registered social landlord if one of the conditions specified in subsection (1) is fulfilled.",
+   "quote": "“subsidiary”, in relation to a registered social landlord, means a company with respect to which one of the following conditions is fulfilled"
+  },
+  {
+   "requirement": "A company is a subsidiary of a registered social landlord if the landlord is a member of the company and controls the composition of the company's board of directors.",
+   "quote": "the landlord is a member of the company and controls the composition of the board of directors"
+  },
+  {
+   "requirement": "A company is a subsidiary of a registered social landlord if the landlord holds more than half in nominal value of the company's equity share capital.",
+   "quote": "the landlord holds more than half in nominal value of the company’s equity share capital"
+  },
+  {
+   "requirement": "A company is a subsidiary of a registered social landlord if it is a subsidiary—within the meaning of the Companies Acts (see section 1159 of the Companies Act 2006) or Part 7 of the Co-operative and Community Benefit Societies Act 2014—of another company that is itself a subsidiary of the landlord by holding equity share capital or controlling the board composition.",
+   "quote": "the company is a subsidiary, within the meaning of the Companies Acts (see section 1159 of the Companies Act 2006) or Part 7 of the Co-operative and Community Benefit Societies Act 2014, of another company which, by virtue of paragraph (a) or paragraph (b), is itself a subsidiary of the landlord"
+  },
+  {
+   "requirement": "A registered social landlord is deemed to control the composition of a company's board of directors if, and only if, the landlord can appoint or remove the holders of all or a majority of the directorships through a power exercisable by the landlord without the consent or concurrence of any other person.",
+   "quote": "the composition of a company’s board of directors shall be deemed to be controlled by a registered social landlord if, but only if, the landlord, by the exercise of some power exercisable by him without the consent or concurrence of any other person, can appoint or remove the holders of all or a majority of the directorships"
+  },
+  {
+   "requirement": "In relation to a company that is a registered society, any reference in section 60 to the board of directors is a reference to the committee of management of the society.",
+   "quote": "any reference in this section to the board of directors is a reference to the committee of management of the society"
+  },
+  {
+   "requirement": "In relation to a company that is a registered society, the statutory reference to the holders of all or a majority of the directorships refers to all or a majority of the members of the committee of management.",
+   "quote": "to all or a majority of the members of the committee"
+  },
+  {
+   "requirement": "In relation to a company that is a registered society, if the registered social landlord is himself a member of the committee of management, the reference to the holders of all or a majority of the directorships refers to such number as together with the landlord would constitute a majority.",
+   "quote": "if the landlord is himself a member of the committee, such number as together with him would constitute a majority"
+  },
+  {
+   "requirement": "Where a registered social landlord is a body of trustees, references in section 60 to the landlord apply to the trustees acting as such.",
+   "quote": "In the case of a registered social landlord which is a body of trustees, references in this section to the landlord are to the trustees acting as such"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

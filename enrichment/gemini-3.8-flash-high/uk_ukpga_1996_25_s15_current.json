@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1996/25/s15@current",
+ "section": "uk/ukpga/1996/25/s15",
+ "version": "current",
+ "source_sha256": "04992b9b9a72ded9659d0b0f20254e01e196eafc0678e37f54a7408e7027b42b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 15 applies where this Part applies by virtue of section 1(2).",
+    "quote": "This section applies where this Part applies by virtue of section 1(2)"
+   },
+   {
+    "requirement": "Section 15 applies at all times after a court makes an order under section 3(6), 7A(8) or 8(5) and before the accused is acquitted or convicted or the prosecutor decides not to proceed with the case concerned.",
+    "quote": "This section applies at all times— (a) after a court makes an order under section 3(6), 7A(8) or 8(5) , and (b) before the accused is acquitted or convicted or the prosecutor decides not to proceed with the case concerned."
+   },
+   {
+    "requirement": "The court must keep under review the question whether at any given time it is still not in the public interest to disclose material affected by its order.",
+    "quote": "The court must keep under review the question whether at any given time it is still not in the public interest to disclose material affected by its order."
+   },
+   {
+    "requirement": "The court must keep under review whether it is still not in the public interest to disclose affected material without the need for an application.",
+    "quote": "The court must keep the question mentioned in subsection (3) under review without the need for an application"
+   },
+   {
+    "requirement": "The accused may apply to the court for a review of whether it is still not in the public interest to disclose material affected by the court's order.",
+    "quote": "the accused may apply to the court for a review of that question."
+   },
+   {
+    "requirement": "If the court at any time concludes that it is in the public interest to disclose material to any extent, it must make an order to that effect.",
+    "quote": "If the court at any time concludes that it is in the public interest to disclose material to any extent— (a) it shall so order"
+   },
+   {
+    "requirement": "If the court at any time concludes that it is in the public interest to disclose material to any extent, it must take such steps as are reasonable to inform the prosecutor of its order.",
+    "quote": "it shall take such steps as are reasonable to inform the prosecutor of its order."
+   },
+   {
+    "requirement": "Where the prosecutor is informed of an order concluding that it is in the public interest to disclose material, the prosecutor must act accordingly having regard to the provisions of this Part, unless the prosecutor decides not to proceed with the case concerned.",
+    "quote": "Where the prosecutor is informed of an order made under subsection (5) he must act accordingly having regard to the provisions of this Part (unless he decides not to proceed with the case concerned)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 15 applies where this Part applies by virtue of section 1(2).",
+   "quote": "This section applies where this Part applies by virtue of section 1(2)"
+  },
+  {
+   "requirement": "Section 15 applies at all times after a court makes an order under section 3(6), 7A(8) or 8(5) and before the accused is acquitted or convicted or the prosecutor decides not to proceed with the case concerned.",
+   "quote": "This section applies at all times— (a) after a court makes an order under section 3(6), 7A(8) or 8(5) , and (b) before the accused is acquitted or convicted or the prosecutor decides not to proceed with the case concerned."
+  },
+  {
+   "requirement": "The court must keep under review the question whether at any given time it is still not in the public interest to disclose material affected by its order.",
+   "quote": "The court must keep under review the question whether at any given time it is still not in the public interest to disclose material affected by its order."
+  },
+  {
+   "requirement": "The court must keep under review whether it is still not in the public interest to disclose affected material without the need for an application.",
+   "quote": "The court must keep the question mentioned in subsection (3) under review without the need for an application"
+  },
+  {
+   "requirement": "The accused may apply to the court for a review of whether it is still not in the public interest to disclose material affected by the court's order.",
+   "quote": "the accused may apply to the court for a review of that question."
+  },
+  {
+   "requirement": "If the court at any time concludes that it is in the public interest to disclose material to any extent, it must make an order to that effect.",
+   "quote": "If the court at any time concludes that it is in the public interest to disclose material to any extent— (a) it shall so order"
+  },
+  {
+   "requirement": "If the court at any time concludes that it is in the public interest to disclose material to any extent, it must take such steps as are reasonable to inform the prosecutor of its order.",
+   "quote": "it shall take such steps as are reasonable to inform the prosecutor of its order."
+  },
+  {
+   "requirement": "Where the prosecutor is informed of an order concluding that it is in the public interest to disclose material, the prosecutor must act accordingly having regard to the provisions of this Part, unless the prosecutor decides not to proceed with the case concerned.",
+   "quote": "Where the prosecutor is informed of an order made under subsection (5) he must act accordingly having regard to the provisions of this Part (unless he decides not to proceed with the case concerned)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

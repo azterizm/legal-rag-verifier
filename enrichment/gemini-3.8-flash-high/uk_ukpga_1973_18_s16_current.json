@@ -1,0 +1,67 @@
+{
+ "key": "uk/ukpga/1973/18/s16@current",
+ "section": "uk/ukpga/1973/18/s16",
+ "version": "current",
+ "source_sha256": "44093e5389f34b811e63d6cf873ac4d62688d42c07ee79cba38da0ff56bcd92e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A nullity of marriage order granted in respect of a voidable marriage operates to annul the marriage only with respect to any time after the order has been made final.",
+    "quote": "A nullity of marriage order granted in respect of a voidable marriage shall operate to annul the marriage only as respects any time after the order has been made final"
+   },
+   {
+    "requirement": "A voidable marriage subject to a nullity of marriage order must, notwithstanding the order, be treated as if it had existed up to the time the order has been made final.",
+    "quote": "the marriage shall, notwithstanding the order, be treated as if it had existed up to that time"
+   },
+   {
+    "requirement": "Subsection (1) applies to a decree of nullity granted after 31 July 1971 as it applies to a nullity of marriage order, but with the phrase 'decree has been made absolute,' substituted for 'order has been made final,'.",
+    "quote": "Subsection (1) has effect in relation to a decree of nullity granted after 31 July 1971 as it has effect in relation to a nullity of marriage order, but with the substitution— (a) for “order has been made final,” of “decree has been made absolute,”"
+   },
+   {
+    "requirement": "Subsection (1) applies to a decree of nullity granted after 31 July 1971 with the phrase 'notwithstanding the decree,' substituted for 'notwithstanding the order,'.",
+    "quote": "and (b) for “notwithstanding the order,” of “notwithstanding the decree,"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The grant date after which a decree of nullity is subject to the provisions of subsection (1)",
+    "value": "31 July 1971",
+    "quote": "decree of nullity granted after 31 July 1971"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A nullity of marriage order granted in respect of a voidable marriage operates to annul the marriage only with respect to any time after the order has been made final.",
+   "quote": "A nullity of marriage order granted in respect of a voidable marriage shall operate to annul the marriage only as respects any time after the order has been made final"
+  },
+  {
+   "requirement": "A voidable marriage subject to a nullity of marriage order must, notwithstanding the order, be treated as if it had existed up to the time the order has been made final.",
+   "quote": "the marriage shall, notwithstanding the order, be treated as if it had existed up to that time"
+  },
+  {
+   "requirement": "Subsection (1) applies to a decree of nullity granted after 31 July 1971 as it applies to a nullity of marriage order, but with the phrase 'decree has been made absolute,' substituted for 'order has been made final,'.",
+   "quote": "Subsection (1) has effect in relation to a decree of nullity granted after 31 July 1971 as it has effect in relation to a nullity of marriage order, but with the substitution— (a) for “order has been made final,” of “decree has been made absolute,”"
+  },
+  {
+   "requirement": "Subsection (1) applies to a decree of nullity granted after 31 July 1971 with the phrase 'notwithstanding the decree,' substituted for 'notwithstanding the order,'.",
+   "quote": "and (b) for “notwithstanding the order,” of “notwithstanding the decree,"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The grant date after which a decree of nullity is subject to the provisions of subsection (1)",
+   "value": "31 July 1971",
+   "quote": "decree of nullity granted after 31 July 1971"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

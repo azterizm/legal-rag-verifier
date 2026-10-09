@@ -1,0 +1,139 @@
+{
+ "key": "uk/ukpga/2010/15/s29@current",
+ "section": "uk/ukpga/2010/15/s29",
+ "version": "current",
+ "source_sha256": "efe5da866c5596bfc2ea5594f8357ef48199501c530a316e0a346d566fc0978b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person concerned with the provision of a service to the public or a section of the public, whether for payment or not, is defined as a service-provider.",
+    "quote": "A person (a “service-provider”) concerned with the provision of a service to the public or a section of the public (for payment or not)"
+   },
+   {
+    "requirement": "A service-provider must not discriminate against a person requiring a service by not providing that person with the service.",
+    "quote": "must not discriminate against a person requiring the service by not providing the person with the service"
+   },
+   {
+    "requirement": "A service-provider must not, in providing a service, discriminate against a person as to the terms on which the service-provider provides the service to that person.",
+    "quote": "must not, in providing the service, discriminate against a person (B)— (a) as to the terms on which A provides the service to B"
+   },
+   {
+    "requirement": "A service-provider must not, in providing a service, discriminate against a person by terminating the provision of the service to that person.",
+    "quote": "must not, in providing the service, discriminate against a person (B)— (b) by terminating the provision of the service to B"
+   },
+   {
+    "requirement": "A service-provider must not, in providing a service, discriminate against a person by subjecting that person to any other detriment.",
+    "quote": "must not, in providing the service, discriminate against a person (B)— (c) by subjecting B to any other detriment"
+   },
+   {
+    "requirement": "A service-provider must not, in relation to the provision of a service, harass a person requiring the service.",
+    "quote": "must not, in relation to the provision of the service, harass— (a) a person requiring the service"
+   },
+   {
+    "requirement": "A service-provider must not, in relation to the provision of a service, harass a person to whom the service-provider provides the service.",
+    "quote": "must not, in relation to the provision of the service, harass— (b) a person to whom the service-provider provides the service"
+   },
+   {
+    "requirement": "A service-provider must not victimise a person requiring a service by not providing that person with the service.",
+    "quote": "must not victimise a person requiring the service by not providing the person with the service"
+   },
+   {
+    "requirement": "A service-provider must not, in providing a service, victimise a person as to the terms on which the service-provider provides the service to that person.",
+    "quote": "must not, in providing the service, victimise a person (B)— (a) as to the terms on which A provides the service to B"
+   },
+   {
+    "requirement": "A service-provider must not, in providing a service, victimise a person by terminating the provision of the service to that person.",
+    "quote": "must not, in providing the service, victimise a person (B)— (b) by terminating the provision of the service to B"
+   },
+   {
+    "requirement": "A service-provider must not, in providing a service, victimise a person by subjecting that person to any other detriment.",
+    "quote": "must not, in providing the service, victimise a person (B)— (c) by subjecting B to any other detriment"
+   },
+   {
+    "requirement": "A person exercising a public function that is not the provision of a service to the public or a section of the public must not do anything that constitutes discrimination, harassment or victimisation.",
+    "quote": "must not, in the exercise of a public function that is not the provision of a service to the public or a section of the public, do anything that constitutes discrimination, harassment or victimisation"
+   },
+   {
+    "requirement": "A duty to make reasonable adjustments applies to a service-provider.",
+    "quote": "A duty to make reasonable adjustments applies to— (a) a service-provider"
+   },
+   {
+    "requirement": "A duty to make reasonable adjustments applies to a person who exercises a public function that is not the provision of a service to the public or a section of the public.",
+    "quote": "A duty to make reasonable adjustments applies to— (b) a person who exercises a public function that is not the provision of a service to the public or a section of the public"
+   },
+   {
+    "requirement": "Religion or belief is not a relevant protected characteristic in the application of section 26 for the purposes of subsection (3), or subsection (6) as it relates to harassment.",
+    "quote": "neither of the following is a relevant protected characteristic— (a) religion or belief"
+   },
+   {
+    "requirement": "Sexual orientation is not a relevant protected characteristic in the application of section 26 for the purposes of subsection (3), or subsection (6) as it relates to harassment.",
+    "quote": "neither of the following is a relevant protected characteristic— (b) sexual orientation"
+   },
+   {
+    "requirement": "It does not matter whether an act is done within or outside the United Kingdom in the application of section 29, so far as relating to race or religion or belief, to the granting of entry clearance within the meaning of the Immigration Act 1971.",
+    "quote": "it does not matter whether an act is done within or outside the United Kingdom"
+   },
+   {
+    "requirement": "Subsection (9) does not affect the application of any other provision of the Equality Act 2010 to conduct outside England and Wales or Scotland.",
+    "quote": "Subsection (9) does not affect the application of any other provision of this Act to conduct outside England and Wales or Scotland"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person concerned with the provision of a service to the public or a section of the public, whether for payment or not, is defined as a service-provider.",
+   "quote": "A person (a “service-provider”) concerned with the provision of a service to the public or a section of the public (for payment or not)"
+  },
+  {
+   "requirement": "A service-provider must not discriminate against a person requiring a service by not providing that person with the service.",
+   "quote": "must not discriminate against a person requiring the service by not providing the person with the service"
+  },
+  {
+   "requirement": "A service-provider must not, in providing a service, discriminate against a person as to the terms on which the service-provider provides the service to that person.",
+   "quote": "must not, in providing the service, discriminate against a person (B)— (a) as to the terms on which A provides the service to B"
+  },
+  {
+   "requirement": "A service-provider must not, in relation to the provision of a service, harass a person requiring the service.",
+   "quote": "must not, in relation to the provision of the service, harass— (a) a person requiring the service"
+  },
+  {
+   "requirement": "A service-provider must not victimise a person requiring a service by not providing that person with the service.",
+   "quote": "must not victimise a person requiring the service by not providing the person with the service"
+  },
+  {
+   "requirement": "A service-provider must not, in providing a service, victimise a person as to the terms on which the service-provider provides the service to that person.",
+   "quote": "must not, in providing the service, victimise a person (B)— (a) as to the terms on which A provides the service to B"
+  },
+  {
+   "requirement": "A person exercising a public function that is not the provision of a service to the public or a section of the public must not do anything that constitutes discrimination, harassment or victimisation.",
+   "quote": "must not, in the exercise of a public function that is not the provision of a service to the public or a section of the public, do anything that constitutes discrimination, harassment or victimisation"
+  },
+  {
+   "requirement": "A duty to make reasonable adjustments applies to a service-provider.",
+   "quote": "A duty to make reasonable adjustments applies to— (a) a service-provider"
+  },
+  {
+   "requirement": "Religion or belief is not a relevant protected characteristic in the application of section 26 for the purposes of subsection (3), or subsection (6) as it relates to harassment.",
+   "quote": "neither of the following is a relevant protected characteristic— (a) religion or belief"
+  },
+  {
+   "requirement": "It does not matter whether an act is done within or outside the United Kingdom in the application of section 29, so far as relating to race or religion or belief, to the granting of entry clearance within the meaning of the Immigration Act 1971.",
+   "quote": "it does not matter whether an act is done within or outside the United Kingdom"
+  },
+  {
+   "requirement": "Subsection (9) does not affect the application of any other provision of the Equality Act 2010 to conduct outside England and Wales or Scotland.",
+   "quote": "Subsection (9) does not affect the application of any other provision of this Act to conduct outside England and Wales or Scotland"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

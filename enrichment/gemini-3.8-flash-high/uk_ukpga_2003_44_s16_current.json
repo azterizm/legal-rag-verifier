@@ -1,0 +1,175 @@
+{
+ "key": "uk/ukpga/2003/44/s16@current",
+ "section": "uk/ukpga/2003/44/s16",
+ "version": "current",
+ "source_sha256": "3138be6e9c82ac00cebdbb7d152bad299b2af4185e5ba75342a9dc18326f14d3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 10 of the Magistrates' Courts Act 1980.",
+    "quote": "This section applies where a magistrates' court grants bail to a person (“the person concerned”) on adjourning a case under— (a) section 10 of the Magistrates' Courts Act 1980"
+   },
+   {
+    "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 17C of the Magistrates' Courts Act 1980.",
+    "quote": "section 17C of that Act (intention as to plea: adjournment)"
+   },
+   {
+    "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 18 of the Magistrates' Courts Act 1980.",
+    "quote": "section 18 of that Act (initial procedure on information against adult for offence triable either way)"
+   },
+   {
+    "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 24C of the Magistrates' Courts Act 1980.",
+    "quote": "section 24C of that Act (intention as to plea by child or young person: adjournment)"
+   },
+   {
+    "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 52(5) of the Crime and Disorder Act 1998.",
+    "quote": "section 52(5) of the Crime and Disorder Act 1998 (c. 37) (adjournment of proceedings under section 51 etc)"
+   },
+   {
+    "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 11 of the Powers of Criminal Courts (Sentencing) Act 2000.",
+    "quote": "section 11 of the Powers of Criminal Courts (Sentencing) Act 2000 (c. 6) (remand for medical examination)"
+   },
+   {
+    "requirement": "Subject to the statutory conditions of this section, a person granted bail on an adjournment under the specified provisions may appeal to the Crown Court against any qualifying bail condition.",
+    "quote": "the person concerned may appeal to the Crown Court against any condition of bail falling within subsection (3)"
+   },
+   {
+    "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to reside away from a particular place or area.",
+    "quote": "that the person concerned resides away from a particular place or area"
+   },
+   {
+    "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to reside at a particular place other than a bail hostel.",
+    "quote": "that the person concerned resides at a particular place other than a bail hostel"
+   },
+   {
+    "requirement": "A bail condition qualifies for an appeal if it requires the provision of a surety or sureties or the giving of a security.",
+    "quote": "for the provision of a surety or sureties or the giving of a security"
+   },
+   {
+    "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to remain indoors between certain hours.",
+    "quote": "that the person concerned remains indoors between certain hours"
+   },
+   {
+    "requirement": "A bail condition qualifies for an appeal if it is imposed under section 3(6ZAA) of the Bail Act 1976 regarding electronic monitoring.",
+    "quote": "imposed under section 3(6ZAA) of the 1976 Act (requirements with respect to electronic monitoring)"
+   },
+   {
+    "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to make no contact with another person.",
+    "quote": "that the person concerned makes no contact with another person"
+   },
+   {
+    "requirement": "An appeal under section 16 may not be brought unless the requirements of subsection (5) or subsection (6) are satisfied.",
+    "quote": "An appeal under this section may not be brought unless subsection (5) or (6) applies."
+   },
+   {
+    "requirement": "The condition to bring an appeal is satisfied if an application to the magistrates' court by or on behalf of the person granted bail under section 3(8)(a) of the Bail Act 1976 was made and determined before the appeal was brought.",
+    "quote": "an application to the magistrates' court under section 3(8)(a) of the 1976 Act (application by or on behalf of person granted bail) was made and determined before the appeal was brought"
+   },
+   {
+    "requirement": "The condition to bring an appeal is satisfied if an application to the magistrates' court by a constable or prosecutor under section 3(8)(b) of the Bail Act 1976 was made and determined before the appeal was brought.",
+    "quote": "an application to the magistrates' court— (a) under section 3(8)(b) of the 1976 Act (application by constable or prosecutor)"
+   },
+   {
+    "requirement": "The condition to bring an appeal is satisfied if an application to the magistrates' court by a prosecutor under section 5B(1) of the Bail Act 1976 was made and determined before the appeal was brought.",
+    "quote": "under section 5B(1) of that Act (application by prosecutor), was made and determined before the appeal was brought"
+   },
+   {
+    "requirement": "The Crown Court is empowered on an appeal under section 16 to vary the conditions of bail.",
+    "quote": "On an appeal under this section the Crown Court may vary the conditions of bail."
+   },
+   {
+    "requirement": "Following a determination of an appeal by the Crown Court under section 16, the person granted bail may not bring any further appeal under this section regarding bail conditions unless an application or further application under section 3(8)(a) of the Bail Act 1976 is made to and determined by the magistrates' court after the appeal.",
+    "quote": "the person concerned may not bring any further appeal under this section in respect of the conditions of bail unless an application or a further application to the magistrates' court under section 3(8)(a) of the 1976 Act is made and determined after the appeal"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 10 of the Magistrates' Courts Act 1980.",
+   "quote": "This section applies where a magistrates' court grants bail to a person (“the person concerned”) on adjourning a case under— (a) section 10 of the Magistrates' Courts Act 1980"
+  },
+  {
+   "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 17C of the Magistrates' Courts Act 1980.",
+   "quote": "section 17C of that Act (intention as to plea: adjournment)"
+  },
+  {
+   "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 18 of the Magistrates' Courts Act 1980.",
+   "quote": "section 18 of that Act (initial procedure on information against adult for offence triable either way)"
+  },
+  {
+   "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 24C of the Magistrates' Courts Act 1980.",
+   "quote": "section 24C of that Act (intention as to plea by child or young person: adjournment)"
+  },
+  {
+   "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 52(5) of the Crime and Disorder Act 1998.",
+   "quote": "section 52(5) of the Crime and Disorder Act 1998 (c. 37) (adjournment of proceedings under section 51 etc)"
+  },
+  {
+   "requirement": "Section 16 applies when a magistrates' court grants bail to a person upon adjourning a case under section 11 of the Powers of Criminal Courts (Sentencing) Act 2000.",
+   "quote": "section 11 of the Powers of Criminal Courts (Sentencing) Act 2000 (c. 6) (remand for medical examination)"
+  },
+  {
+   "requirement": "Subject to the statutory conditions of this section, a person granted bail on an adjournment under the specified provisions may appeal to the Crown Court against any qualifying bail condition.",
+   "quote": "the person concerned may appeal to the Crown Court against any condition of bail falling within subsection (3)"
+  },
+  {
+   "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to reside away from a particular place or area.",
+   "quote": "that the person concerned resides away from a particular place or area"
+  },
+  {
+   "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to reside at a particular place other than a bail hostel.",
+   "quote": "that the person concerned resides at a particular place other than a bail hostel"
+  },
+  {
+   "requirement": "A bail condition qualifies for an appeal if it requires the provision of a surety or sureties or the giving of a security.",
+   "quote": "for the provision of a surety or sureties or the giving of a security"
+  },
+  {
+   "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to remain indoors between certain hours.",
+   "quote": "that the person concerned remains indoors between certain hours"
+  },
+  {
+   "requirement": "A bail condition qualifies for an appeal if it is imposed under section 3(6ZAA) of the Bail Act 1976 regarding electronic monitoring.",
+   "quote": "imposed under section 3(6ZAA) of the 1976 Act (requirements with respect to electronic monitoring)"
+  },
+  {
+   "requirement": "A bail condition qualifies for an appeal if it requires the person granted bail to make no contact with another person.",
+   "quote": "that the person concerned makes no contact with another person"
+  },
+  {
+   "requirement": "An appeal under section 16 may not be brought unless the requirements of subsection (5) or subsection (6) are satisfied.",
+   "quote": "An appeal under this section may not be brought unless subsection (5) or (6) applies."
+  },
+  {
+   "requirement": "The condition to bring an appeal is satisfied if an application to the magistrates' court by or on behalf of the person granted bail under section 3(8)(a) of the Bail Act 1976 was made and determined before the appeal was brought.",
+   "quote": "an application to the magistrates' court under section 3(8)(a) of the 1976 Act (application by or on behalf of person granted bail) was made and determined before the appeal was brought"
+  },
+  {
+   "requirement": "The condition to bring an appeal is satisfied if an application to the magistrates' court by a constable or prosecutor under section 3(8)(b) of the Bail Act 1976 was made and determined before the appeal was brought.",
+   "quote": "an application to the magistrates' court— (a) under section 3(8)(b) of the 1976 Act (application by constable or prosecutor)"
+  },
+  {
+   "requirement": "The condition to bring an appeal is satisfied if an application to the magistrates' court by a prosecutor under section 5B(1) of the Bail Act 1976 was made and determined before the appeal was brought.",
+   "quote": "under section 5B(1) of that Act (application by prosecutor), was made and determined before the appeal was brought"
+  },
+  {
+   "requirement": "The Crown Court is empowered on an appeal under section 16 to vary the conditions of bail.",
+   "quote": "On an appeal under this section the Crown Court may vary the conditions of bail."
+  },
+  {
+   "requirement": "Following a determination of an appeal by the Crown Court under section 16, the person granted bail may not bring any further appeal under this section regarding bail conditions unless an application or further application under section 3(8)(a) of the Bail Act 1976 is made to and determined by the magistrates' court after the appeal.",
+   "quote": "the person concerned may not bring any further appeal under this section in respect of the conditions of bail unless an application or a further application to the magistrates' court under section 3(8)(a) of the 1976 Act is made and determined after the appeal"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

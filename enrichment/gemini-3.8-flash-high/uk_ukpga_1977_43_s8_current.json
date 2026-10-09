@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/1977/43/s8@current",
+ "section": "uk/ukpga/1977/43/s8",
+ "version": "current",
+ "source_sha256": "b39818ed8762ad184a0cf7d7d1679c815f7d26dc3a6fd9b2a5edafae63ba53cc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a protected tenancy within the meaning of the Rent Act 1977 or a tenancy to which Part I of the Landlord and Tenant Act 1954 applies.",
+    "quote": "a protected tenancy within the meaning of the Rent Act 1977 or a tenancy to which Part I of the Landlord and Tenant Act 1954 applies"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a protected occupancy or statutory tenancy as defined in the Rent (Agriculture) Act 1976.",
+    "quote": "a protected occupancy or statutory tenancy as defined in the Rent (Agriculture) Act 1976"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a tenancy to which Part II of the Landlord and Tenant Act 1954 applies.",
+    "quote": "a tenancy to which Part II of the Landlord and Tenant Act 1954 applies"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a tenancy of an agricultural holding within the meaning of the Agricultural Holdings Act 1986 to which that Act applies.",
+    "quote": "a tenancy of an agricultural holding within the meaning of the Agricultural Holdings Act 1986which is a tenancy in relation to which that act applies"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes an assured tenancy or assured agricultural occupancy under Part I of the Housing Act 1988.",
+    "quote": "an assured tenancy or assured agricultural occupancy under Part I of the Housing Act 1988"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a tenancy to which Schedule 10 to the Local Government and Housing Act 1989 applies.",
+    "quote": "a tenancy to which Schedule 10 to the Local Government and Housing Act 1989 applies"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995.",
+    "quote": "a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995"
+   },
+   {
+    "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes an occupation contract within the meaning of the Renting Homes (Wales) Act 2016.",
+    "quote": "an occupation contract within the meaning of the Renting Homes (Wales) Act 2016 (anaw 1) (see section 7 of that Act)"
+   },
+   {
+    "requirement": "For the purposes of Part I of the Protection from Eviction Act 1977, an individual who had exclusive possession of premises under their terms of employment other than as a tenant is deemed to have been a tenant, with the terms 'let' and 'tenancy' construed accordingly.",
+    "quote": "a person who, under the terms of his employment, had exclusive possession of any premises other than as a tenant shall be deemed to have been a tenant and the expressions “let” and “tenancy” shall be construed accordingly"
+   },
+   {
+    "requirement": "For the purposes of Part I of the Protection from Eviction Act 1977, the owner of premises is defined as the person who is entitled to possession of those premises as against the occupier.",
+    "quote": "“the owner”, in relation to any premises, means the person who, as against the occupier, is entitled to possession thereof"
+   },
+   {
+    "requirement": "In the Protection from Eviction Act 1977, the expressions 'excluded tenancy' and 'excluded licence' carry the meaning assigned to them by section 3A of that Act.",
+    "quote": "“excluded tenancy” and “excluded licence” have the meaning assigned by section 3A of this Act"
+   },
+   {
+    "requirement": "If the terms of an excluded tenancy or excluded licence entered into before the commencement of the Housing Act 1988 are varied on or after that commencement date and the variation affects the payable rent, the tenancy or licence must be treated for the purposes of sections 3(2C) and 5(1B) as a new tenancy or licence entered into at the time of the variation.",
+    "quote": "if the variation affects the amount of the rent which is payable under the tenancy or licence, the tenancy or licence shall be treated for the purposes of sections 3(2C) and 5(1B) above as a new tenancy or licence entered into at the time of the variation"
+   },
+   {
+    "requirement": "If the terms of an excluded tenancy or excluded licence entered into before the commencement of the Housing Act 1988 are varied on or after that commencement date without affecting the amount of payable rent, the Protection from Eviction Act 1977 does not affect the determination of whether that variation creates a new tenancy or licence.",
+    "quote": "if the variation does not affect the amount of the rent which is so payable, nothing in this Act shall affect the determination of the question whether the variation is such as to give rise to a new tenancy or licence"
+   },
+   {
+    "requirement": "A variation affecting the amount of rent payable under an excluded tenancy or licence does not include a rent reduction or increase effected under Part III or Part VI of the Rent Act 1977, section 78 of the Rent Act 1977, or sections 11 to 14 of the Rent (Agriculture) Act 1976.",
+    "quote": "a reduction or increase effected under Part III or Part VI of the Rent Act 1977 (rents under regulated tenancies and housing association tenancies), section 78 of that Act (power of ... tribunal in relation to restricted contracts) or sections 11 to 14 of the Rent (Agriculture) Act 1976"
+   },
+   {
+    "requirement": "A variation affecting the amount of rent payable under an excluded tenancy or licence does not include a variation made by the parties that makes the rent payable under the tenancy or licence equal to the dwelling's registered rent under Part IV or section 79 of the Rent Act 1977.",
+    "quote": "a variation which is made by the parties and has the effect of making the rent expressed to be payable under the tenancy or licence the same as a rent for the dwelling which is entered in the register under Part IV or section 79 of the Rent Act 1977"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The temporal cut-off date governing when variations to pre-existing excluded tenancies or excluded licences are subject to section 8(5)",
+    "value": "the date on which the Housing Act 1988 came into force",
+    "quote": "on or after the date on which the Housing Act 1988 came into force"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a protected tenancy within the meaning of the Rent Act 1977 or a tenancy to which Part I of the Landlord and Tenant Act 1954 applies.",
+   "quote": "a protected tenancy within the meaning of the Rent Act 1977 or a tenancy to which Part I of the Landlord and Tenant Act 1954 applies"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a protected occupancy or statutory tenancy as defined in the Rent (Agriculture) Act 1976.",
+   "quote": "a protected occupancy or statutory tenancy as defined in the Rent (Agriculture) Act 1976"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a tenancy to which Part II of the Landlord and Tenant Act 1954 applies.",
+   "quote": "a tenancy to which Part II of the Landlord and Tenant Act 1954 applies"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a tenancy of an agricultural holding within the meaning of the Agricultural Holdings Act 1986 to which that Act applies.",
+   "quote": "a tenancy of an agricultural holding within the meaning of the Agricultural Holdings Act 1986which is a tenancy in relation to which that act applies"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes an assured tenancy or assured agricultural occupancy under Part I of the Housing Act 1988.",
+   "quote": "an assured tenancy or assured agricultural occupancy under Part I of the Housing Act 1988"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a tenancy to which Schedule 10 to the Local Government and Housing Act 1989 applies.",
+   "quote": "a tenancy to which Schedule 10 to the Local Government and Housing Act 1989 applies"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995.",
+   "quote": "a farm business tenancy within the meaning of the Agricultural Tenancies Act 1995"
+  },
+  {
+   "requirement": "For the purposes of the Protection from Eviction Act 1977, a statutorily protected tenancy includes an occupation contract within the meaning of the Renting Homes (Wales) Act 2016.",
+   "quote": "an occupation contract within the meaning of the Renting Homes (Wales) Act 2016 (anaw 1) (see section 7 of that Act)"
+  },
+  {
+   "requirement": "For the purposes of Part I of the Protection from Eviction Act 1977, an individual who had exclusive possession of premises under their terms of employment other than as a tenant is deemed to have been a tenant, with the terms 'let' and 'tenancy' construed accordingly.",
+   "quote": "a person who, under the terms of his employment, had exclusive possession of any premises other than as a tenant shall be deemed to have been a tenant and the expressions “let” and “tenancy” shall be construed accordingly"
+  },
+  {
+   "requirement": "For the purposes of Part I of the Protection from Eviction Act 1977, the owner of premises is defined as the person who is entitled to possession of those premises as against the occupier.",
+   "quote": "“the owner”, in relation to any premises, means the person who, as against the occupier, is entitled to possession thereof"
+  },
+  {
+   "requirement": "In the Protection from Eviction Act 1977, the expressions 'excluded tenancy' and 'excluded licence' carry the meaning assigned to them by section 3A of that Act.",
+   "quote": "“excluded tenancy” and “excluded licence” have the meaning assigned by section 3A of this Act"
+  },
+  {
+   "requirement": "If the terms of an excluded tenancy or excluded licence entered into before the commencement of the Housing Act 1988 are varied on or after that commencement date and the variation affects the payable rent, the tenancy or licence must be treated for the purposes of sections 3(2C) and 5(1B) as a new tenancy or licence entered into at the time of the variation.",
+   "quote": "if the variation affects the amount of the rent which is payable under the tenancy or licence, the tenancy or licence shall be treated for the purposes of sections 3(2C) and 5(1B) above as a new tenancy or licence entered into at the time of the variation"
+  },
+  {
+   "requirement": "If the terms of an excluded tenancy or excluded licence entered into before the commencement of the Housing Act 1988 are varied on or after that commencement date without affecting the amount of payable rent, the Protection from Eviction Act 1977 does not affect the determination of whether that variation creates a new tenancy or licence.",
+   "quote": "if the variation does not affect the amount of the rent which is so payable, nothing in this Act shall affect the determination of the question whether the variation is such as to give rise to a new tenancy or licence"
+  },
+  {
+   "requirement": "A variation affecting the amount of rent payable under an excluded tenancy or licence does not include a rent reduction or increase effected under Part III or Part VI of the Rent Act 1977, section 78 of the Rent Act 1977, or sections 11 to 14 of the Rent (Agriculture) Act 1976.",
+   "quote": "a reduction or increase effected under Part III or Part VI of the Rent Act 1977 (rents under regulated tenancies and housing association tenancies), section 78 of that Act (power of ... tribunal in relation to restricted contracts) or sections 11 to 14 of the Rent (Agriculture) Act 1976"
+  },
+  {
+   "requirement": "A variation affecting the amount of rent payable under an excluded tenancy or licence does not include a variation made by the parties that makes the rent payable under the tenancy or licence equal to the dwelling's registered rent under Part IV or section 79 of the Rent Act 1977.",
+   "quote": "a variation which is made by the parties and has the effect of making the rent expressed to be payable under the tenancy or licence the same as a rent for the dwelling which is entered in the register under Part IV or section 79 of the Rent Act 1977"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

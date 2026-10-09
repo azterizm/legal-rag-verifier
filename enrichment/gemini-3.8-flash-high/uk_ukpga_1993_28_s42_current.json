@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/1993/28/s42@current",
+ "section": "uk/ukpga/1993/28/s42",
+ "version": "current",
+ "source_sha256": "6cb26eb558201144289ab83b825cff641ffe0998ac54732da02634dcf5390698",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A qualifying tenant of a flat exercises the right to acquire a new lease of the flat by giving notice of the claim under section 42.",
+    "quote": "A claim by a qualifying tenant of a flat to exercise the right to acquire a new lease of the flat is made by the giving of notice of the claim under this section."
+   },
+   {
+    "requirement": "A tenant giving a notice of claim under section 42 must give that notice to the landlord and to any third party to the tenant's lease.",
+    "quote": "A notice given by a tenant under this section (“the tenant’s notice”) must be given— (a) to the landlord, and (b) to any third party to the tenant’s lease."
+   },
+   {
+    "requirement": "A tenant's notice must state the full name of the tenant and the address of the flat in respect of which the tenant claims a new lease under Chapter I.",
+    "quote": "state the full name of the tenant and the address of the flat in respect of which he claims a new lease under this Chapter;"
+   },
+   {
+    "requirement": "A tenant's notice must contain sufficient particulars of the flat to identify the property to which the claim extends.",
+    "quote": "sufficient particulars of that flat to identify the property to which the claim extends,"
+   },
+   {
+    "requirement": "A tenant's notice must contain sufficient particulars of the tenant's lease to identify it, including the date on which the lease was entered into, the term for which it was granted, and the date of commencement of the term.",
+    "quote": "such particulars of the tenant’s lease as are sufficient to identify it, including the date on which the lease was entered into, the term for which it was granted and the date of the commencement of the term,"
+   },
+   {
+    "requirement": "A tenant's notice must specify the premium the tenant proposes to pay for the grant of a new lease under Chapter I, as well as the proposed amount of any other payment due from the tenant under any provision of Schedule 13.",
+    "quote": "specify the premium which the tenant proposes to pay in respect of the grant of a new lease under this Chapter and, where any other amount will be payable by him in accordance with any provision of Schedule 13, the amount which he proposes to pay in accordance with that provision;"
+   },
+   {
+    "requirement": "A tenant's notice must specify the terms that the tenant proposes should be contained in the new lease.",
+    "quote": "specify the terms which the tenant proposes should be contained in any such lease;"
+   },
+   {
+    "requirement": "A tenant's notice must state the name of any person appointed by the tenant to act in connection with the claim, together with an address in England and Wales where notices under Chapter I may be given to that person.",
+    "quote": "state the name of the person (if any) appointed by the tenant to act for him in connection with his claim, and an address in England and Wales at which notices may be given to any such person under this Chapter;"
+   },
+   {
+    "requirement": "A tenant's notice must specify the date by which the landlord must respond to the notice by giving a counter-notice under section 45.",
+    "quote": "specify the date by which the landlord must respond to the notice by giving a counter-notice under section 45."
+   },
+   {
+    "requirement": "The landlord response date specified in a tenant's notice under subsection (3)(f) must fall not less than two months after the date the tenant gives the notice.",
+    "quote": "The date specified in the tenant’s notice in pursuance of subsection (3)(f) must be a date falling not less than two months after the date of the giving of the notice."
+   },
+   {
+    "requirement": "Where a notice under section 42 has been given with respect to a flat, no subsequent notice may be given under section 42 for that flat for as long as the earlier notice continues in force.",
+    "quote": "Where a notice under this section has been given with respect to any flat, no subsequent notice may be given under this section with respect to the flat so long as the earlier notice continues in force."
+   },
+   {
+    "requirement": "Where a notice under section 42 for a flat has been withdrawn or deemed withdrawn under Chapter I, or where an order under section 47(1) has been obtained in response to it, no subsequent notice under section 42 may be given for that flat within twelve months beginning with the date of withdrawal or deemed withdrawal, or with the time the section 47(1) order becomes final.",
+    "quote": "no subsequent notice may be given under this section with respect to the flat within the period of twelve months beginning with the date of the withdrawal or deemed withdrawal of the earlier notice or with the time when the order under section 47(1) becomes final (as the case may be)."
+   },
+   {
+    "requirement": "Subject to section 54, a notice given in accordance with section 42 continues in force from the relevant date until a new lease is granted pursuant to it, until the date of its withdrawal or deemed withdrawal under Chapter I, or until it otherwise ceases to have effect under Chapter I.",
+    "quote": "Where a notice is given in accordance with this section, then for the purposes of this Chapter the notice continues in force as from the relevant date— (a) until a new lease is granted in pursuance of the notice; (b) if the notice is withdrawn, or is deemed to have been withdrawn, under or by virtue of any provision of this Chapter, until the date of the withdrawal or deemed withdrawal; or (c) until such other time as the notice ceases to have effect by virtue of any provision of this Chapter; but this subsection has effect subject to section 54."
+   },
+   {
+    "requirement": "Schedule 12, containing restrictions on terminating a tenant's lease after notice has been given under section 42 and making other related provision, shall have effect.",
+    "quote": "Schedule 12 (which contains restrictions on terminating a tenant’s lease where he has given a notice under this section and makes other provision in connection with the giving of notices under this section) shall have effect."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum period following the giving of the tenant's notice within which the date specified for the landlord's counter-notice response must fall",
+    "value": "two months",
+    "quote": "falling not less than two months after the date of the giving of the notice."
+   },
+   {
+    "what": "Barring period during which no subsequent notice under section 42 may be given following the withdrawal or deemed withdrawal of an earlier notice or an order under section 47(1) becoming final",
+    "value": "twelve months",
+    "quote": "period of twelve months beginning with the date of the withdrawal or deemed withdrawal of the earlier notice or with the time when the order under section 47(1) becomes final (as the case may be)."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A qualifying tenant of a flat exercises the right to acquire a new lease of the flat by giving notice of the claim under section 42.",
+   "quote": "A claim by a qualifying tenant of a flat to exercise the right to acquire a new lease of the flat is made by the giving of notice of the claim under this section."
+  },
+  {
+   "requirement": "A tenant giving a notice of claim under section 42 must give that notice to the landlord and to any third party to the tenant's lease.",
+   "quote": "A notice given by a tenant under this section (“the tenant’s notice”) must be given— (a) to the landlord, and (b) to any third party to the tenant’s lease."
+  },
+  {
+   "requirement": "A tenant's notice must state the full name of the tenant and the address of the flat in respect of which the tenant claims a new lease under Chapter I.",
+   "quote": "state the full name of the tenant and the address of the flat in respect of which he claims a new lease under this Chapter;"
+  },
+  {
+   "requirement": "A tenant's notice must contain sufficient particulars of the flat to identify the property to which the claim extends.",
+   "quote": "sufficient particulars of that flat to identify the property to which the claim extends,"
+  },
+  {
+   "requirement": "A tenant's notice must contain sufficient particulars of the tenant's lease to identify it, including the date on which the lease was entered into, the term for which it was granted, and the date of commencement of the term.",
+   "quote": "such particulars of the tenant’s lease as are sufficient to identify it, including the date on which the lease was entered into, the term for which it was granted and the date of the commencement of the term,"
+  },
+  {
+   "requirement": "A tenant's notice must specify the premium the tenant proposes to pay for the grant of a new lease under Chapter I, as well as the proposed amount of any other payment due from the tenant under any provision of Schedule 13.",
+   "quote": "specify the premium which the tenant proposes to pay in respect of the grant of a new lease under this Chapter and, where any other amount will be payable by him in accordance with any provision of Schedule 13, the amount which he proposes to pay in accordance with that provision;"
+  },
+  {
+   "requirement": "A tenant's notice must specify the terms that the tenant proposes should be contained in the new lease.",
+   "quote": "specify the terms which the tenant proposes should be contained in any such lease;"
+  },
+  {
+   "requirement": "A tenant's notice must state the name of any person appointed by the tenant to act in connection with the claim, together with an address in England and Wales where notices under Chapter I may be given to that person.",
+   "quote": "state the name of the person (if any) appointed by the tenant to act for him in connection with his claim, and an address in England and Wales at which notices may be given to any such person under this Chapter;"
+  },
+  {
+   "requirement": "A tenant's notice must specify the date by which the landlord must respond to the notice by giving a counter-notice under section 45.",
+   "quote": "specify the date by which the landlord must respond to the notice by giving a counter-notice under section 45."
+  },
+  {
+   "requirement": "The landlord response date specified in a tenant's notice under subsection (3)(f) must fall not less than two months after the date the tenant gives the notice.",
+   "quote": "The date specified in the tenant’s notice in pursuance of subsection (3)(f) must be a date falling not less than two months after the date of the giving of the notice."
+  },
+  {
+   "requirement": "Where a notice under section 42 has been given with respect to a flat, no subsequent notice may be given under section 42 for that flat for as long as the earlier notice continues in force.",
+   "quote": "Where a notice under this section has been given with respect to any flat, no subsequent notice may be given under this section with respect to the flat so long as the earlier notice continues in force."
+  },
+  {
+   "requirement": "Where a notice under section 42 for a flat has been withdrawn or deemed withdrawn under Chapter I, or where an order under section 47(1) has been obtained in response to it, no subsequent notice under section 42 may be given for that flat within twelve months beginning with the date of withdrawal or deemed withdrawal, or with the time the section 47(1) order becomes final.",
+   "quote": "no subsequent notice may be given under this section with respect to the flat within the period of twelve months beginning with the date of the withdrawal or deemed withdrawal of the earlier notice or with the time when the order under section 47(1) becomes final (as the case may be)."
+  },
+  {
+   "requirement": "Subject to section 54, a notice given in accordance with section 42 continues in force from the relevant date until a new lease is granted pursuant to it, until the date of its withdrawal or deemed withdrawal under Chapter I, or until it otherwise ceases to have effect under Chapter I.",
+   "quote": "Where a notice is given in accordance with this section, then for the purposes of this Chapter the notice continues in force as from the relevant date— (a) until a new lease is granted in pursuance of the notice; (b) if the notice is withdrawn, or is deemed to have been withdrawn, under or by virtue of any provision of this Chapter, until the date of the withdrawal or deemed withdrawal; or (c) until such other time as the notice ceases to have effect by virtue of any provision of this Chapter; but this subsection has effect subject to section 54."
+  },
+  {
+   "requirement": "Schedule 12, containing restrictions on terminating a tenant's lease after notice has been given under section 42 and making other related provision, shall have effect.",
+   "quote": "Schedule 12 (which contains restrictions on terminating a tenant’s lease where he has given a notice under this section and makes other provision in connection with the giving of notices under this section) shall have effect."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum period following the giving of the tenant's notice within which the date specified for the landlord's counter-notice response must fall",
+   "value": "two months",
+   "quote": "falling not less than two months after the date of the giving of the notice."
+  },
+  {
+   "what": "Barring period during which no subsequent notice under section 42 may be given following the withdrawal or deemed withdrawal of an earlier notice or an order under section 47(1) becoming final",
+   "value": "twelve months",
+   "quote": "period of twelve months beginning with the date of the withdrawal or deemed withdrawal of the earlier notice or with the time when the order under section 47(1) becomes final (as the case may be)."
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

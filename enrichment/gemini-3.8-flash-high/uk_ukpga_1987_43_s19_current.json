@@ -1,0 +1,175 @@
+{
+ "key": "uk/ukpga/1987/43/s19@current",
+ "section": "uk/ukpga/1987/43/s19",
+ "version": "current",
+ "source_sha256": "b9915a42c6feb2d4fec97a2f98efae9249e95551b829931ae210e2b0f9ad1e94",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a controlled drug has the same meaning as a controlled drug within the meaning of the Misuse of Drugs Act 1971.",
+    "quote": "controlled drug within the meaning of the Misuse of Drugs Act 1971"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, feeding stuff and fertiliser have the same meanings as in Part IV of the Agriculture Act 1970.",
+    "quote": "same meanings as in Part IV of the Agriculture Act 1970"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, food excludes anything that contains tobacco.",
+    "quote": "does not include anything containing tobacco"
+   },
+   {
+    "requirement": "Subject to the exclusion of anything containing tobacco, food has the same meaning as in the Food Safety Act 1990.",
+    "quote": "has the same meaning as in the Food Safety Act 1990"
+   },
+   {
+    "requirement": "Subject to the exclusion of anything containing tobacco, food in relation to Northern Ireland has the same meaning as in the Food Safety (Northern Ireland) Order 1991.",
+    "quote": "in relation to Northern Ireland, the same meaning as in the Food Safety (Northern Ireland) Order 1991"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a licensed medicinal product includes any medicinal product within the meaning of the Medicines Act 1968 for which a product licence under that Act is currently in force.",
+    "quote": "any medicinal product within the meaning of the Medicines Act 1968 in respect of which a product licence within the meaning of that Act is for the time being in force"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a licensed medicinal product includes any other article or substance for which a product licence is currently in force under an order made pursuant to section 104 or 105 of the Medicines Act 1968.",
+    "quote": "any other article or substance in respect of which any such licence is for the time being in force in pursuance of an order under section 104 or 105 of that Act"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a licensed medicinal product includes a veterinary medicinal product that possesses a marketing authorisation under the Veterinary Medicines Regulations 2006.",
+    "quote": "veterinary medicinal product that has a marketing authorisation under the Veterinary Medicines Regulations 2006"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a medical device has the same meaning as in Part 4 of the Medicines and Medical Devices Act 2021.",
+    "quote": "same meaning as in Part 4 of the Medicines and Medical Devices Act 2021"
+   },
+   {
+    "requirement": "Goods are safe if there is no risk, or only a risk reduced to a minimum, of death or any personal injury being caused to any person, whether immediately or after a definite or indefinite period, by specified goods-related sources.",
+    "quote": "no risk, or no risk apart from one reduced to a minimum, that any of the following will (whether immediately or after a definite or indefinite period) cause the death of, or any personal injury to, any person whatsoever"
+   },
+   {
+    "requirement": "The risks assessed in determining whether goods are safe include any risk caused directly by the goods.",
+    "quote": "the goods;"
+   },
+   {
+    "requirement": "The risks assessed in determining whether goods are safe include any risk caused by the keeping, use, or consumption of the goods.",
+    "quote": "the keeping, use or consumption of the goods;"
+   },
+   {
+    "requirement": "The risks assessed in determining whether goods are safe include any risk caused by the assembly of goods that are supplied or are to be supplied unassembled.",
+    "quote": "the assembly of any of the goods which are, or are to be, supplied unassembled;"
+   },
+   {
+    "requirement": "The risks assessed in determining whether goods are safe include any risk caused by emission or leakage from the goods, or emission or leakage from anything else as a result of keeping, using, or consuming the goods.",
+    "quote": "any emission or leakage from the goods or, as a result of the keeping, use or consumption of the goods, from anything else"
+   },
+   {
+    "requirement": "The risks assessed in determining whether goods are safe include any risk caused by reliance on the accuracy of any measurement, calculation, or reading made by or by means of the goods.",
+    "quote": "reliance on the accuracy of any measurement, calculation or other reading made by or by means of the goods"
+   },
+   {
+    "requirement": "The term unsafe must be construed in accordance with the statutory definition of safe.",
+    "quote": "“unsafe” shall be construed accordingly"
+   },
+   {
+    "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, tobacco includes any tobacco product under the Tobacco Products Duty Act 1979 as well as any article or substance containing tobacco intended for oral or nasal use.",
+    "quote": "any tobacco product within the meaning of the Tobacco Products Duty Act 1979 and any article or substance containing tobacco and intended for oral or nasal use"
+   },
+   {
+    "requirement": "In the definition of safe, references to keeping, using, or consuming goods mean keeping, using, or consuming them by persons by whom, and in ways or circumstances in which, they might reasonably be expected to be kept, used, or consumed.",
+    "quote": "by the persons by whom, and in all or any of the ways or circumstances in which, they might reasonably be expected to be kept, used or consumed"
+   },
+   {
+    "requirement": "In the definition of safe, references to keeping, using, or consuming goods include keeping, using, or consuming them either alone or in conjunction with other goods with which they might reasonably be expected to be kept, used, or consumed.",
+    "quote": "either alone or in conjunction with other goods in conjunction with which they might reasonably be expected to be kept, used or consumed"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a controlled drug has the same meaning as a controlled drug within the meaning of the Misuse of Drugs Act 1971.",
+   "quote": "controlled drug within the meaning of the Misuse of Drugs Act 1971"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, feeding stuff and fertiliser have the same meanings as in Part IV of the Agriculture Act 1970.",
+   "quote": "same meanings as in Part IV of the Agriculture Act 1970"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, food excludes anything that contains tobacco.",
+   "quote": "does not include anything containing tobacco"
+  },
+  {
+   "requirement": "Subject to the exclusion of anything containing tobacco, food has the same meaning as in the Food Safety Act 1990.",
+   "quote": "has the same meaning as in the Food Safety Act 1990"
+  },
+  {
+   "requirement": "Subject to the exclusion of anything containing tobacco, food in relation to Northern Ireland has the same meaning as in the Food Safety (Northern Ireland) Order 1991.",
+   "quote": "in relation to Northern Ireland, the same meaning as in the Food Safety (Northern Ireland) Order 1991"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a licensed medicinal product includes any medicinal product within the meaning of the Medicines Act 1968 for which a product licence under that Act is currently in force.",
+   "quote": "any medicinal product within the meaning of the Medicines Act 1968 in respect of which a product licence within the meaning of that Act is for the time being in force"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a licensed medicinal product includes any other article or substance for which a product licence is currently in force under an order made pursuant to section 104 or 105 of the Medicines Act 1968.",
+   "quote": "any other article or substance in respect of which any such licence is for the time being in force in pursuance of an order under section 104 or 105 of that Act"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a licensed medicinal product includes a veterinary medicinal product that possesses a marketing authorisation under the Veterinary Medicines Regulations 2006.",
+   "quote": "veterinary medicinal product that has a marketing authorisation under the Veterinary Medicines Regulations 2006"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, a medical device has the same meaning as in Part 4 of the Medicines and Medical Devices Act 2021.",
+   "quote": "same meaning as in Part 4 of the Medicines and Medical Devices Act 2021"
+  },
+  {
+   "requirement": "Goods are safe if there is no risk, or only a risk reduced to a minimum, of death or any personal injury being caused to any person, whether immediately or after a definite or indefinite period, by specified goods-related sources.",
+   "quote": "no risk, or no risk apart from one reduced to a minimum, that any of the following will (whether immediately or after a definite or indefinite period) cause the death of, or any personal injury to, any person whatsoever"
+  },
+  {
+   "requirement": "The risks assessed in determining whether goods are safe include any risk caused directly by the goods.",
+   "quote": "the goods;"
+  },
+  {
+   "requirement": "The risks assessed in determining whether goods are safe include any risk caused by the keeping, use, or consumption of the goods.",
+   "quote": "the keeping, use or consumption of the goods;"
+  },
+  {
+   "requirement": "The risks assessed in determining whether goods are safe include any risk caused by the assembly of goods that are supplied or are to be supplied unassembled.",
+   "quote": "the assembly of any of the goods which are, or are to be, supplied unassembled;"
+  },
+  {
+   "requirement": "The risks assessed in determining whether goods are safe include any risk caused by emission or leakage from the goods, or emission or leakage from anything else as a result of keeping, using, or consuming the goods.",
+   "quote": "any emission or leakage from the goods or, as a result of the keeping, use or consumption of the goods, from anything else"
+  },
+  {
+   "requirement": "The risks assessed in determining whether goods are safe include any risk caused by reliance on the accuracy of any measurement, calculation, or reading made by or by means of the goods.",
+   "quote": "reliance on the accuracy of any measurement, calculation or other reading made by or by means of the goods"
+  },
+  {
+   "requirement": "The term unsafe must be construed in accordance with the statutory definition of safe.",
+   "quote": "“unsafe” shall be construed accordingly"
+  },
+  {
+   "requirement": "For the purposes of Part II of the Consumer Protection Act 1987, tobacco includes any tobacco product under the Tobacco Products Duty Act 1979 as well as any article or substance containing tobacco intended for oral or nasal use.",
+   "quote": "any tobacco product within the meaning of the Tobacco Products Duty Act 1979 and any article or substance containing tobacco and intended for oral or nasal use"
+  },
+  {
+   "requirement": "In the definition of safe, references to keeping, using, or consuming goods mean keeping, using, or consuming them by persons by whom, and in ways or circumstances in which, they might reasonably be expected to be kept, used, or consumed.",
+   "quote": "by the persons by whom, and in all or any of the ways or circumstances in which, they might reasonably be expected to be kept, used or consumed"
+  },
+  {
+   "requirement": "In the definition of safe, references to keeping, using, or consuming goods include keeping, using, or consuming them either alone or in conjunction with other goods with which they might reasonably be expected to be kept, used, or consumed.",
+   "quote": "either alone or in conjunction with other goods in conjunction with which they might reasonably be expected to be kept, used or consumed"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

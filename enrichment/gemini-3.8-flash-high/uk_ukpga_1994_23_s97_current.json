@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/1994/23/s97@current",
+ "section": "uk/ukpga/1994/23/s97",
+ "version": "current",
+ "source_sha256": "2f227b14744e7b7f07cb88340abd1682af491bd565fbe5e8f0b509b38258d7e8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any order made by the Treasury under the Value Added Tax Act 1994 and any regulations or rules made under this Act must be made by statutory instrument.",
+    "quote": "shall be made by statutory instrument"
+   },
+   {
+    "requirement": "An order to which section 97(3) applies must be laid before the House of Commons and will cease to have effect at the expiration of 28 days beginning with the date it was made unless approved by that House before that period expires.",
+    "quote": "shall be laid before the House of Commons; and unless it is approved by that House before the expiration of a period of 28 days beginning with the date on which it was made, it shall cease to have effect"
+   },
+   {
+    "requirement": "The cessation of effect of an order under section 97(3) does not prejudice anything previously done under the order or the making of a new order.",
+    "quote": "without prejudice to anything previously done thereunder or to the making of a new order"
+   },
+   {
+    "requirement": "When calculating the 28-day period under section 97(3), no account may be taken of any time during which Parliament is dissolved or prorogued, or during which the House of Commons is adjourned for more than 4 days.",
+    "quote": "no account shall be taken of any time during which Parliament is dissolved or prorogued or during which the House of Commons is adjourned for more than 4 days"
+   },
+   {
+    "requirement": "Subject to section 53(4), section 97(3) applies to an order under section 5(4), 7A(6) or 28, 28 or 40A; an order under paragraph 5(7) of Schedule 4 substituting a lesser sum for the sum specified in paragraph 5(2)(a) of that Schedule; an order under section 43AA(1) resulting in persons ceasing to be eligible for group treatment; an order under section 54(4) or (8); an order under section 55A(13); an order under section 77A(9) or (9A); an order under paragraph B1, C1(4), 1A(7), 2A(4) or 8A(7) of Schedule 6; an order under paragraph 3(4) of Schedule 10A; and an order under paragraph 3 or 4 of Schedule 11A.",
+    "quote": "Subject to section 53(4), subsection (3) above applies to"
+   },
+   {
+    "requirement": "Subject to section 53(4), section 97(3) applies to an order under the Value Added Tax Act 1994 that makes provision for increasing the rate of VAT in force under section 2, excluding any VAT from credit under section 25, varying Schedule 7A to charge VAT at the section 2 rate instead of the section 29A rate, or varying Schedule 8 or 9 to abolish the zero-rating of a supply or abolish exemption without zero-rating it.",
+    "quote": "an order under this Act making provision— (i) for increasing the rate of VAT in force under section 2 at the time of the making of the order; (ii) for excluding any VAT from credit under section 25"
+   },
+   {
+    "requirement": "Subject to section 53(4), section 97(3) applies to an order under section 51, unless that order makes only such amendments as are necessary or expedient in consequence of provisions of an order under the Act that vary Schedule 7A, 8 or 9 but do not fall within section 97(4)(c).",
+    "quote": "an order under section 51, except one making only such amendments as are necessary or expedient in consequence of provisions of an order under this Act"
+   },
+   {
+    "requirement": "Where an order under section 2(2) is in force, the reference in section 97(4)(c)(i) to the rate of VAT in force under section 2 when an order is made means the rate that would be in force at that time if no order under section 2(2) had been made.",
+    "quote": "is a reference to the rate which would be in force at that time if no such order had been made"
+   },
+   {
+    "requirement": "A statutory instrument made under any provision of the Value Added Tax Act 1994 must be subject to annulment in pursuance of a resolution of the House of Commons, unless it is an instrument for which another Parliamentary procedure is expressly provided or an instrument containing an order appointing a day from which a provision will have effect (with or without amendments) or cease to have effect.",
+    "quote": "shall be subject to annulment in pursuance of a resolution of the House of Commons"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period within which the House of Commons must approve an order to which section 97(3) applies before it ceases to have effect",
+    "value": "28 days",
+    "quote": "expiration of a period of 28 days beginning with the date on which it was made"
+   },
+   {
+    "what": "House of Commons adjournment duration threshold required for the time to be excluded from reckoning the approval period",
+    "value": "more than 4 days",
+    "quote": "adjourned for more than 4 days"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Any order made by the Treasury under the Value Added Tax Act 1994 and any regulations or rules made under this Act must be made by statutory instrument.",
+   "quote": "shall be made by statutory instrument"
+  },
+  {
+   "requirement": "An order to which section 97(3) applies must be laid before the House of Commons and will cease to have effect at the expiration of 28 days beginning with the date it was made unless approved by that House before that period expires.",
+   "quote": "shall be laid before the House of Commons; and unless it is approved by that House before the expiration of a period of 28 days beginning with the date on which it was made, it shall cease to have effect"
+  },
+  {
+   "requirement": "The cessation of effect of an order under section 97(3) does not prejudice anything previously done under the order or the making of a new order.",
+   "quote": "without prejudice to anything previously done thereunder or to the making of a new order"
+  },
+  {
+   "requirement": "When calculating the 28-day period under section 97(3), no account may be taken of any time during which Parliament is dissolved or prorogued, or during which the House of Commons is adjourned for more than 4 days.",
+   "quote": "no account shall be taken of any time during which Parliament is dissolved or prorogued or during which the House of Commons is adjourned for more than 4 days"
+  },
+  {
+   "requirement": "Subject to section 53(4), section 97(3) applies to an order under section 5(4), 7A(6) or 28, 28 or 40A; an order under paragraph 5(7) of Schedule 4 substituting a lesser sum for the sum specified in paragraph 5(2)(a) of that Schedule; an order under section 43AA(1) resulting in persons ceasing to be eligible for group treatment; an order under section 54(4) or (8); an order under section 55A(13); an order under section 77A(9) or (9A); an order under paragraph B1, C1(4), 1A(7), 2A(4) or 8A(7) of Schedule 6; an order under paragraph 3(4) of Schedule 10A; and an order under paragraph 3 or 4 of Schedule 11A.",
+   "quote": "Subject to section 53(4), subsection (3) above applies to"
+  },
+  {
+   "requirement": "Subject to section 53(4), section 97(3) applies to an order under the Value Added Tax Act 1994 that makes provision for increasing the rate of VAT in force under section 2, excluding any VAT from credit under section 25, varying Schedule 7A to charge VAT at the section 2 rate instead of the section 29A rate, or varying Schedule 8 or 9 to abolish the zero-rating of a supply or abolish exemption without zero-rating it.",
+   "quote": "an order under this Act making provision— (i) for increasing the rate of VAT in force under section 2 at the time of the making of the order; (ii) for excluding any VAT from credit under section 25"
+  },
+  {
+   "requirement": "Subject to section 53(4), section 97(3) applies to an order under section 51, unless that order makes only such amendments as are necessary or expedient in consequence of provisions of an order under the Act that vary Schedule 7A, 8 or 9 but do not fall within section 97(4)(c).",
+   "quote": "an order under section 51, except one making only such amendments as are necessary or expedient in consequence of provisions of an order under this Act"
+  },
+  {
+   "requirement": "Where an order under section 2(2) is in force, the reference in section 97(4)(c)(i) to the rate of VAT in force under section 2 when an order is made means the rate that would be in force at that time if no order under section 2(2) had been made.",
+   "quote": "is a reference to the rate which would be in force at that time if no such order had been made"
+  },
+  {
+   "requirement": "A statutory instrument made under any provision of the Value Added Tax Act 1994 must be subject to annulment in pursuance of a resolution of the House of Commons, unless it is an instrument for which another Parliamentary procedure is expressly provided or an instrument containing an order appointing a day from which a provision will have effect (with or without amendments) or cease to have effect.",
+   "quote": "shall be subject to annulment in pursuance of a resolution of the House of Commons"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period within which the House of Commons must approve an order to which section 97(3) applies before it ceases to have effect",
+   "value": "28 days",
+   "quote": "expiration of a period of 28 days beginning with the date on which it was made"
+  },
+  {
+   "what": "House of Commons adjournment duration threshold required for the time to be excluded from reckoning the approval period",
+   "value": "more than 4 days",
+   "quote": "adjourned for more than 4 days"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

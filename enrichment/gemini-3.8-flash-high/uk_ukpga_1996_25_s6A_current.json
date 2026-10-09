@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1996/25/s6A@current",
+ "section": "uk/ukpga/1996/25/s6A",
+ "version": "current",
+ "source_sha256": "af0a912ea65b6ae4641b83aa9857387864838d12fcbed8e03072d91623b5b02a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of this Part, a defence statement must be a written statement setting out the nature of the accused's defence, including any particular defences on which the accused intends to rely.",
+    "quote": "a defence statement is a written statement— (a) setting out the nature of the accused’s defence, including any particular defences on which he intends to rely"
+   },
+   {
+    "requirement": "A defence statement must indicate the matters of fact on which the accused takes issue with the prosecution.",
+    "quote": "indicating the matters of fact on which he takes issue with the prosecution"
+   },
+   {
+    "requirement": "A defence statement must set out, in the case of each matter of fact on which issue is taken, why the accused takes issue with the prosecution.",
+    "quote": "setting out, in the case of each such matter, why he takes issue with the prosecution"
+   },
+   {
+    "requirement": "A defence statement must set out particulars of the matters of fact on which the accused intends to rely for the purposes of the accused's defence.",
+    "quote": "setting out particulars of the matters of fact on which he intends to rely for the purposes of his defence"
+   },
+   {
+    "requirement": "A defence statement must indicate any point of law (including any point as to the admissibility of evidence or an abuse of process) which the accused wishes to take, and any authority on which the accused intends to rely for that purpose.",
+    "quote": "indicating any point of law (including any point as to the admissibility of evidence or an abuse of process) which he wishes to take, and any authority on which he intends to rely for that purpose"
+   },
+   {
+    "requirement": "A defence statement that discloses an alibi must give particulars of that alibi.",
+    "quote": "A defence statement that discloses an alibi must give particulars of it"
+   },
+   {
+    "requirement": "A defence statement disclosing an alibi must include the name, address and date of birth of any witness the accused believes is able to give evidence in support of the alibi, or as many of those details as are known to the accused when the statement is given.",
+    "quote": "the name, address and date of birth of any witness the accused believes is able to give evidence in support of the alibi, or as many of those details as are known to the accused when the statement is given"
+   },
+   {
+    "requirement": "A defence statement disclosing an alibi must include any information in the accused's possession which might be of material assistance in identifying or finding any witness in support of the alibi whose name, address, or date of birth are not known to the accused when the statement is given.",
+    "quote": "any information in the accused’s possession which might be of material assistance in identifying or finding any such witness in whose case any of the details mentioned in paragraph (a) are not known to the accused when the statement is given"
+   },
+   {
+    "requirement": "For the purposes of this section, evidence in support of an alibi is defined as evidence tending to show that by reason of the presence of the accused at a particular place or in a particular area at a particular time, the accused was not, or was unlikely to have been, at the place where the offence is alleged to have been committed at the time of its alleged commission.",
+    "quote": "evidence in support of an alibi is evidence tending to show that by reason of the presence of the accused at a particular place or in a particular area at a particular time he was not, or was unlikely to have been, at the place where the offence is alleged to have been committed at the time of its alleged commission"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision as to the details of the matters that, by virtue of subsection (1), are to be included in defence statements.",
+    "quote": "The Secretary of State may by regulations make provision as to the details of the matters that, by virtue of subsection (1), are to be included in defence statements"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of this Part, a defence statement must be a written statement setting out the nature of the accused's defence, including any particular defences on which the accused intends to rely.",
+   "quote": "a defence statement is a written statement— (a) setting out the nature of the accused’s defence, including any particular defences on which he intends to rely"
+  },
+  {
+   "requirement": "A defence statement must indicate the matters of fact on which the accused takes issue with the prosecution.",
+   "quote": "indicating the matters of fact on which he takes issue with the prosecution"
+  },
+  {
+   "requirement": "A defence statement must set out, in the case of each matter of fact on which issue is taken, why the accused takes issue with the prosecution.",
+   "quote": "setting out, in the case of each such matter, why he takes issue with the prosecution"
+  },
+  {
+   "requirement": "A defence statement must set out particulars of the matters of fact on which the accused intends to rely for the purposes of the accused's defence.",
+   "quote": "setting out particulars of the matters of fact on which he intends to rely for the purposes of his defence"
+  },
+  {
+   "requirement": "A defence statement must indicate any point of law (including any point as to the admissibility of evidence or an abuse of process) which the accused wishes to take, and any authority on which the accused intends to rely for that purpose.",
+   "quote": "indicating any point of law (including any point as to the admissibility of evidence or an abuse of process) which he wishes to take, and any authority on which he intends to rely for that purpose"
+  },
+  {
+   "requirement": "A defence statement that discloses an alibi must give particulars of that alibi.",
+   "quote": "A defence statement that discloses an alibi must give particulars of it"
+  },
+  {
+   "requirement": "A defence statement disclosing an alibi must include the name, address and date of birth of any witness the accused believes is able to give evidence in support of the alibi, or as many of those details as are known to the accused when the statement is given.",
+   "quote": "the name, address and date of birth of any witness the accused believes is able to give evidence in support of the alibi, or as many of those details as are known to the accused when the statement is given"
+  },
+  {
+   "requirement": "A defence statement disclosing an alibi must include any information in the accused's possession which might be of material assistance in identifying or finding any witness in support of the alibi whose name, address, or date of birth are not known to the accused when the statement is given.",
+   "quote": "any information in the accused’s possession which might be of material assistance in identifying or finding any such witness in whose case any of the details mentioned in paragraph (a) are not known to the accused when the statement is given"
+  },
+  {
+   "requirement": "For the purposes of this section, evidence in support of an alibi is defined as evidence tending to show that by reason of the presence of the accused at a particular place or in a particular area at a particular time, the accused was not, or was unlikely to have been, at the place where the offence is alleged to have been committed at the time of its alleged commission.",
+   "quote": "evidence in support of an alibi is evidence tending to show that by reason of the presence of the accused at a particular place or in a particular area at a particular time he was not, or was unlikely to have been, at the place where the offence is alleged to have been committed at the time of its alleged commission"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision as to the details of the matters that, by virtue of subsection (1), are to be included in defence statements.",
+   "quote": "The Secretary of State may by regulations make provision as to the details of the matters that, by virtue of subsection (1), are to be included in defence statements"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

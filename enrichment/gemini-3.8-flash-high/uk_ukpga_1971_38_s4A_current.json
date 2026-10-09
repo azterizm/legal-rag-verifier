@@ -1,0 +1,203 @@
+{
+ "key": "uk/ukpga/1971/38/s4A@current",
+ "section": "uk/ukpga/1971/38/s4A",
+ "version": "current",
+ "source_sha256": "cd6e4e1c635d556dc3fdc6a6d755447da3f30bab5c9fd1cfc51e35b3d93cb632",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subsections (2) to (8) of section 4A apply if a court in Scotland or Northern Ireland is considering the seriousness of an offence under section 4(3) of the Misuse of Drugs Act 1971 and the offender had attained the age of 18 at the time the offence was committed.",
+    "quote": "a court in Scotland or Northern Ireland is considering the seriousness of an offence under section 4(3) of this Act, and (b) at the time the offence was committed the offender had attained the age of 18"
+   },
+   {
+    "requirement": "A court in Scotland or Northern Ireland considering the seriousness of an offence under section 4(3) must treat the fact that either the first condition or the second condition is met as an aggravating factor that increases the seriousness of the offence.",
+    "quote": "must treat the fact that the condition is met as an aggravating factor (that is to say, a factor that increases the seriousness of the offence)"
+   },
+   {
+    "requirement": "A court in Scotland or Northern Ireland considering the seriousness of an offence under section 4(3) must state in open court that the offence is aggravated if either the first condition or the second condition is met.",
+    "quote": "must state in open court that the offence is so aggravated"
+   },
+   {
+    "requirement": "The first condition is met if the offence under section 4(3) was committed on or in the vicinity of school premises at a relevant time.",
+    "quote": "The first condition is that the offence was committed on or in the vicinity of school premises at a relevant time"
+   },
+   {
+    "requirement": "The second condition is met if, in connection with the commission of the offence under section 4(3), the offender used a courier who was under the age of 18 at the time the offence was committed.",
+    "quote": "The second condition is that in connection with the commission of the offence the offender used a courier who, at the time the offence was committed, was under the age of 18"
+   },
+   {
+    "requirement": "A relevant time includes any time when the school premises are in use by persons under the age of 18.",
+    "quote": "any time when the school premises are in use by persons under the age of 18"
+   },
+   {
+    "requirement": "A relevant time includes one hour before the start and one hour after the end of any time when the school premises are in use by persons under the age of 18.",
+    "quote": "one hour before the start and one hour after the end of any such time"
+   },
+   {
+    "requirement": "An offender uses a courier in connection with an offence under section 4(3) of the Misuse of Drugs Act 1971 if the offender causes or permits another person acting as courier to deliver a controlled drug to a third person.",
+    "quote": "he causes or permits another person (the courier)— (a) to deliver a controlled drug to a third person"
+   },
+   {
+    "requirement": "An offender uses a courier in connection with an offence under section 4(3) of the Misuse of Drugs Act 1971 if the offender causes or permits another person acting as courier to deliver a drug related consideration to the offender or to a third person.",
+    "quote": "to deliver a drug related consideration to himself or a third person"
+   },
+   {
+    "requirement": "A drug related consideration includes a consideration of any description which is obtained in connection with the supply of a controlled drug.",
+    "quote": "is obtained in connection with the supply of a controlled drug"
+   },
+   {
+    "requirement": "A drug related consideration includes a consideration of any description which is intended to be used in connection with obtaining a controlled drug.",
+    "quote": "is intended to be used in connection with obtaining a controlled drug"
+   },
+   {
+    "requirement": "School premises means land used for the purposes of a school, excluding any land occupied solely as a dwelling by a person employed at the school.",
+    "quote": "“school premises” means land used for the purposes of a school excluding any land occupied solely as a dwelling by a person employed at the school"
+   },
+   {
+    "requirement": "In England and Wales, school has the same meaning as in section 4 of the Education Act 1996.",
+    "quote": "in England and Wales, as in section 4 of the Education Act 1996"
+   },
+   {
+    "requirement": "In Scotland, school has the same meaning as in section 135(1) of the Education (Scotland) Act 1980.",
+    "quote": "in Scotland, as in section 135(1) of the Education (Scotland) Act 1980"
+   },
+   {
+    "requirement": "In Northern Ireland, school has the same meaning as in Article 2(2) of the Education and Libraries (Northern Ireland) Order 1986.",
+    "quote": "in Northern Ireland, as in Article 2(2) of the Education and Libraries (Northern Ireland) Order 1986"
+   },
+   {
+    "requirement": "For the requirement for a court in England and Wales considering the seriousness of an offence under section 4(3) of the Misuse of Drugs Act 1971 to treat certain matters as aggravating factors, reference is directed to section 71 of the Sentencing Code.",
+    "quote": "For the requirement for a court in England and Wales considering the seriousness of an offence under section 4(3) of this Act to treat certain matters as aggravating factors, see section 71 of the Sentencing Code"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum age attained by an offender at the time the offence was committed for subsections (2) to (8) to apply",
+    "value": "18",
+    "quote": "offender had attained the age of 18"
+   },
+   {
+    "what": "maximum age of a courier at the time the offence was committed to satisfy the second condition",
+    "value": "18",
+    "quote": "was under the age of 18"
+   },
+   {
+    "what": "maximum age of persons using school premises to establish a relevant time",
+    "value": "18",
+    "quote": "persons under the age of 18"
+   },
+   {
+    "what": "period prior to school premises use by persons under 18 that constitutes a relevant time",
+    "value": "one hour",
+    "quote": "one hour before the start"
+   },
+   {
+    "what": "period following school premises use by persons under 18 that constitutes a relevant time",
+    "value": "one hour",
+    "quote": "one hour after the end"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subsections (2) to (8) of section 4A apply if a court in Scotland or Northern Ireland is considering the seriousness of an offence under section 4(3) of the Misuse of Drugs Act 1971 and the offender had attained the age of 18 at the time the offence was committed.",
+   "quote": "a court in Scotland or Northern Ireland is considering the seriousness of an offence under section 4(3) of this Act, and (b) at the time the offence was committed the offender had attained the age of 18"
+  },
+  {
+   "requirement": "A court in Scotland or Northern Ireland considering the seriousness of an offence under section 4(3) must treat the fact that either the first condition or the second condition is met as an aggravating factor that increases the seriousness of the offence.",
+   "quote": "must treat the fact that the condition is met as an aggravating factor (that is to say, a factor that increases the seriousness of the offence)"
+  },
+  {
+   "requirement": "A court in Scotland or Northern Ireland considering the seriousness of an offence under section 4(3) must state in open court that the offence is aggravated if either the first condition or the second condition is met.",
+   "quote": "must state in open court that the offence is so aggravated"
+  },
+  {
+   "requirement": "The first condition is met if the offence under section 4(3) was committed on or in the vicinity of school premises at a relevant time.",
+   "quote": "The first condition is that the offence was committed on or in the vicinity of school premises at a relevant time"
+  },
+  {
+   "requirement": "The second condition is met if, in connection with the commission of the offence under section 4(3), the offender used a courier who was under the age of 18 at the time the offence was committed.",
+   "quote": "The second condition is that in connection with the commission of the offence the offender used a courier who, at the time the offence was committed, was under the age of 18"
+  },
+  {
+   "requirement": "A relevant time includes any time when the school premises are in use by persons under the age of 18.",
+   "quote": "any time when the school premises are in use by persons under the age of 18"
+  },
+  {
+   "requirement": "A relevant time includes one hour before the start and one hour after the end of any time when the school premises are in use by persons under the age of 18.",
+   "quote": "one hour before the start and one hour after the end of any such time"
+  },
+  {
+   "requirement": "An offender uses a courier in connection with an offence under section 4(3) of the Misuse of Drugs Act 1971 if the offender causes or permits another person acting as courier to deliver a controlled drug to a third person.",
+   "quote": "he causes or permits another person (the courier)— (a) to deliver a controlled drug to a third person"
+  },
+  {
+   "requirement": "An offender uses a courier in connection with an offence under section 4(3) of the Misuse of Drugs Act 1971 if the offender causes or permits another person acting as courier to deliver a drug related consideration to the offender or to a third person.",
+   "quote": "to deliver a drug related consideration to himself or a third person"
+  },
+  {
+   "requirement": "A drug related consideration includes a consideration of any description which is obtained in connection with the supply of a controlled drug.",
+   "quote": "is obtained in connection with the supply of a controlled drug"
+  },
+  {
+   "requirement": "A drug related consideration includes a consideration of any description which is intended to be used in connection with obtaining a controlled drug.",
+   "quote": "is intended to be used in connection with obtaining a controlled drug"
+  },
+  {
+   "requirement": "School premises means land used for the purposes of a school, excluding any land occupied solely as a dwelling by a person employed at the school.",
+   "quote": "“school premises” means land used for the purposes of a school excluding any land occupied solely as a dwelling by a person employed at the school"
+  },
+  {
+   "requirement": "In England and Wales, school has the same meaning as in section 4 of the Education Act 1996.",
+   "quote": "in England and Wales, as in section 4 of the Education Act 1996"
+  },
+  {
+   "requirement": "In Scotland, school has the same meaning as in section 135(1) of the Education (Scotland) Act 1980.",
+   "quote": "in Scotland, as in section 135(1) of the Education (Scotland) Act 1980"
+  },
+  {
+   "requirement": "In Northern Ireland, school has the same meaning as in Article 2(2) of the Education and Libraries (Northern Ireland) Order 1986.",
+   "quote": "in Northern Ireland, as in Article 2(2) of the Education and Libraries (Northern Ireland) Order 1986"
+  },
+  {
+   "requirement": "For the requirement for a court in England and Wales considering the seriousness of an offence under section 4(3) of the Misuse of Drugs Act 1971 to treat certain matters as aggravating factors, reference is directed to section 71 of the Sentencing Code.",
+   "quote": "For the requirement for a court in England and Wales considering the seriousness of an offence under section 4(3) of this Act to treat certain matters as aggravating factors, see section 71 of the Sentencing Code"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum age attained by an offender at the time the offence was committed for subsections (2) to (8) to apply",
+   "value": "18",
+   "quote": "offender had attained the age of 18"
+  },
+  {
+   "what": "maximum age of a courier at the time the offence was committed to satisfy the second condition",
+   "value": "18",
+   "quote": "was under the age of 18"
+  },
+  {
+   "what": "maximum age of persons using school premises to establish a relevant time",
+   "value": "18",
+   "quote": "persons under the age of 18"
+  },
+  {
+   "what": "period prior to school premises use by persons under 18 that constitutes a relevant time",
+   "value": "one hour",
+   "quote": "one hour before the start"
+  },
+  {
+   "what": "period following school premises use by persons under 18 that constitutes a relevant time",
+   "value": "one hour",
+   "quote": "one hour after the end"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 5
+ }
+}

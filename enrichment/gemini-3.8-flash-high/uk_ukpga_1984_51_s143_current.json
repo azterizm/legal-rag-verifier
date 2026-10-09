@@ -1,0 +1,59 @@
+{
+ "key": "uk/ukpga/1984/51/s143@current",
+ "section": "uk/ukpga/1984/51/s143",
+ "version": "current",
+ "source_sha256": "c493439cafe21e7349d59b1b7238ab702d0ef8bf01e19993865bc14cb128990d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A testator must express a wish that property bequeathed by his will should be transferred by the legatee to other persons.",
+    "quote": "Where a testator expresses a wish that property bequeathed by his will should be transferred by the legatee to other persons"
+   },
+   {
+    "requirement": "The legatee must transfer any of the bequeathed property in accordance with the testator's wish within the period of two years after the death of the testator.",
+    "quote": "the legatee transfers any of the property in accordance with that wish within the period of two years after the death of the testator"
+   },
+   {
+    "requirement": "The Inheritance Tax Act 1984 takes effect as if the transferred property had been bequeathed by the testator's will directly to the transferee.",
+    "quote": "this Act shall have effect as if the property transferred had been bequeathed by the will to the transferee"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period after the death of the testator within which the legatee must transfer the property",
+    "value": "two years",
+    "quote": "within the period of two years after the death of the testator"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A testator must express a wish that property bequeathed by his will should be transferred by the legatee to other persons.",
+   "quote": "Where a testator expresses a wish that property bequeathed by his will should be transferred by the legatee to other persons"
+  },
+  {
+   "requirement": "The legatee must transfer any of the bequeathed property in accordance with the testator's wish within the period of two years after the death of the testator.",
+   "quote": "the legatee transfers any of the property in accordance with that wish within the period of two years after the death of the testator"
+  },
+  {
+   "requirement": "The Inheritance Tax Act 1984 takes effect as if the transferred property had been bequeathed by the testator's will directly to the transferee.",
+   "quote": "this Act shall have effect as if the property transferred had been bequeathed by the will to the transferee"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period after the death of the testator within which the legatee must transfer the property",
+   "value": "two years",
+   "quote": "within the period of two years after the death of the testator"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

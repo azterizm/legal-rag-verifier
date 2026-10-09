@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2005/5/s643ZA@current",
+ "section": "uk/ukpga/2005/5/s643ZA",
+ "version": "current",
+ "source_sha256": "13db0ae20fbedef57ce23eeb5fcd86d5061d687052a364ad8670b813d025eb3c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In this Chapter, income is 'protected foreign-source income' if it arose under a settlement in any of the tax years 2017-18 to 2024-25 and was protected foreign-source income for that tax year within the meaning of section 628A as that section had effect for that tax year.",
+    "quote": "“protected foreign-source income” means income that— arose under a settlement in any of the tax years 2017-18 to 2024-25, andwas protected foreign-source income for that tax year within the meaning of section 628A"
+   },
+   {
+    "requirement": "In this Chapter, income is 'transitional trust income' if it arose under a settlement in any of the tax years 2008-09 to 2016-17 and was transitional trust income throughout the tax years 2017-18 to 2024-25 within the meaning of section 628C as that section had effect for those tax years.",
+    "quote": "“transitional trust income” means income that— arose under a settlement in any of the tax years 2008-09 to 2016-17, andwas transitional trust income throughout the tax years 2017-18 to 2024-25 within the meaning of section 628C"
+   },
+   {
+    "requirement": "Section 648(3) to (5) (which treats foreign income as arising under a settlement only if and when remitted) must be ignored for the purposes of defining protected foreign-source income and transitional trust income under subsection (1).",
+    "quote": "For the purposes of subsection (1) ignore section 648(3) to (5) (foreign income treated as arising under settlement only if and when remitted)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Tax years in which income must have arisen under a settlement to qualify as protected foreign-source income",
+    "value": "2017-18 to 2024-25",
+    "quote": "any of the tax years 2017-18 to 2024-25"
+   },
+   {
+    "what": "Tax years in which income must have arisen under a settlement to qualify as transitional trust income",
+    "value": "2008-09 to 2016-17",
+    "quote": "any of the tax years 2008-09 to 2016-17"
+   },
+   {
+    "what": "Tax years throughout which income must have been transitional trust income within the meaning of section 628C",
+    "value": "2017-18 to 2024-25",
+    "quote": "throughout the tax years 2017-18 to 2024-25"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In this Chapter, income is 'protected foreign-source income' if it arose under a settlement in any of the tax years 2017-18 to 2024-25 and was protected foreign-source income for that tax year within the meaning of section 628A as that section had effect for that tax year.",
+   "quote": "“protected foreign-source income” means income that— arose under a settlement in any of the tax years 2017-18 to 2024-25, andwas protected foreign-source income for that tax year within the meaning of section 628A"
+  },
+  {
+   "requirement": "In this Chapter, income is 'transitional trust income' if it arose under a settlement in any of the tax years 2008-09 to 2016-17 and was transitional trust income throughout the tax years 2017-18 to 2024-25 within the meaning of section 628C as that section had effect for those tax years.",
+   "quote": "“transitional trust income” means income that— arose under a settlement in any of the tax years 2008-09 to 2016-17, andwas transitional trust income throughout the tax years 2017-18 to 2024-25 within the meaning of section 628C"
+  },
+  {
+   "requirement": "Section 648(3) to (5) (which treats foreign income as arising under a settlement only if and when remitted) must be ignored for the purposes of defining protected foreign-source income and transitional trust income under subsection (1).",
+   "quote": "For the purposes of subsection (1) ignore section 648(3) to (5) (foreign income treated as arising under settlement only if and when remitted)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Tax years in which income must have arisen under a settlement to qualify as protected foreign-source income",
+   "value": "2017-18 to 2024-25",
+   "quote": "any of the tax years 2017-18 to 2024-25"
+  },
+  {
+   "what": "Tax years in which income must have arisen under a settlement to qualify as transitional trust income",
+   "value": "2008-09 to 2016-17",
+   "quote": "any of the tax years 2008-09 to 2016-17"
+  },
+  {
+   "what": "Tax years throughout which income must have been transitional trust income within the meaning of section 628C",
+   "value": "2017-18 to 2024-25",
+   "quote": "throughout the tax years 2017-18 to 2024-25"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

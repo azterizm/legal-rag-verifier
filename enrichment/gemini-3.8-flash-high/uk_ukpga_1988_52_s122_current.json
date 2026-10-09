@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1988/52/s122@current",
+ "section": "uk/ukpga/1988/52/s122",
+ "version": "current",
+ "source_sha256": "f63d91424b622e48519d5e6d3f70bcaf3161a0f4ed6a98a8fe6e4aa0c39617c4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The term \"Northern Ireland driving licence\" bears the same meaning as it does in Part III of the Road Traffic Act 1988.",
+    "quote": "“Northern Ireland driving licence” has the same meaning as in Part III of this Act"
+   },
+   {
+    "requirement": "The Secretary of State may exercise as respects Great Britain the same power of revoking or suspending any Northern Ireland driving licence and making an order under section 117(2) of this Act as is conferred in relation to a large goods vehicle or passenger-carrying vehicle driver's licence by sections 115(1)(b) and 117(2) of this Act.",
+    "quote": "The Secretary of State may exercise as respects Great Britain the like power of revoking or suspending any Northern Ireland driving licence and of making an order under section 117(2) of this Act as is conferred on him in relation to a large goods vehicle or passenger-carrying vehicle driver’s licence by sections 115(1)(b) and 117(2) of this Act"
+   },
+   {
+    "requirement": "The provisions of sections 115(1), 116, 117, and (with the exception of subsection (3)) 118 of this Act take effect accordingly in respect of the Secretary of State's exercise of powers over Northern Ireland driving licences.",
+    "quote": "the provisions of sections 115(1), 116, 117 and (with the exception of subsection (3)) 118 shall have effect accordingly"
+   },
+   {
+    "requirement": "The Secretary of State must send a surrendered revoked Northern Ireland driving licence to the licensing authority in Northern Ireland together with particulars of the revocation when it is surrendered pursuant to section 118 of this Act.",
+    "quote": "Where a revoked Northern Ireland driving licence is surrendered to the Secretary of State in pursuance of section 118 of this Act, the Secretary of State shall send it to the licensing authority in Northern Ireland together with particulars of the revocation"
+   },
+   {
+    "requirement": "A holder of a Northern Ireland driving licence who is aggrieved by its revocation or suspension or by an order of disqualification made by virtue of subsection (2) has the same right of appeal as that conferred by section 119 of this Act.",
+    "quote": "A holder of a Northern Ireland driving licence who is aggrieved by the revocation or suspension of the licence or the ordering of disqualification by virtue of subsection (2) above shall have the like right of appeal as is conferred by section 119 of this Act"
+   },
+   {
+    "requirement": "An appeal brought by a holder of a Northern Ireland driving licence who is not resident in Great Britain lies to a prescribed magistrates’ court or a prescribed sheriff.",
+    "quote": "an appeal brought by virtue of this subsection shall, if the appellant is not resident in Great Britain, lie to a prescribed magistrates’ court or a prescribed sheriff"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The term \"Northern Ireland driving licence\" bears the same meaning as it does in Part III of the Road Traffic Act 1988.",
+   "quote": "“Northern Ireland driving licence” has the same meaning as in Part III of this Act"
+  },
+  {
+   "requirement": "The Secretary of State may exercise as respects Great Britain the same power of revoking or suspending any Northern Ireland driving licence and making an order under section 117(2) of this Act as is conferred in relation to a large goods vehicle or passenger-carrying vehicle driver's licence by sections 115(1)(b) and 117(2) of this Act.",
+   "quote": "The Secretary of State may exercise as respects Great Britain the like power of revoking or suspending any Northern Ireland driving licence and of making an order under section 117(2) of this Act as is conferred on him in relation to a large goods vehicle or passenger-carrying vehicle driver’s licence by sections 115(1)(b) and 117(2) of this Act"
+  },
+  {
+   "requirement": "The provisions of sections 115(1), 116, 117, and (with the exception of subsection (3)) 118 of this Act take effect accordingly in respect of the Secretary of State's exercise of powers over Northern Ireland driving licences.",
+   "quote": "the provisions of sections 115(1), 116, 117 and (with the exception of subsection (3)) 118 shall have effect accordingly"
+  },
+  {
+   "requirement": "The Secretary of State must send a surrendered revoked Northern Ireland driving licence to the licensing authority in Northern Ireland together with particulars of the revocation when it is surrendered pursuant to section 118 of this Act.",
+   "quote": "Where a revoked Northern Ireland driving licence is surrendered to the Secretary of State in pursuance of section 118 of this Act, the Secretary of State shall send it to the licensing authority in Northern Ireland together with particulars of the revocation"
+  },
+  {
+   "requirement": "A holder of a Northern Ireland driving licence who is aggrieved by its revocation or suspension or by an order of disqualification made by virtue of subsection (2) has the same right of appeal as that conferred by section 119 of this Act.",
+   "quote": "A holder of a Northern Ireland driving licence who is aggrieved by the revocation or suspension of the licence or the ordering of disqualification by virtue of subsection (2) above shall have the like right of appeal as is conferred by section 119 of this Act"
+  },
+  {
+   "requirement": "An appeal brought by a holder of a Northern Ireland driving licence who is not resident in Great Britain lies to a prescribed magistrates’ court or a prescribed sheriff.",
+   "quote": "an appeal brought by virtue of this subsection shall, if the appellant is not resident in Great Britain, lie to a prescribed magistrates’ court or a prescribed sheriff"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

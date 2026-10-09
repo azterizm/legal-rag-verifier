@@ -1,0 +1,175 @@
+{
+ "key": "uk/ukpga/2016/25/s58@current",
+ "section": "uk/ukpga/2016/25/s58",
+ "version": "current",
+ "source_sha256": "6da45dc1c8f89b622ac400cb6bcd29c8d20aaef0ef5bca3836703d4a02a8a004",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of section 57, a disclosure made in relation to a warrant is an excepted disclosure if it falls within Head 1, Head 2, Head 3, or Head 4.",
+    "quote": "a disclosure made in relation to a warrant is an “excepted disclosure” if it falls within any of the Heads set out in— (a) subsection (2)"
+   },
+   {
+    "requirement": "Under Head 1, an excepted disclosure includes a disclosure authorised by the warrant itself.",
+    "quote": "a disclosure authorised by the warrant"
+   },
+   {
+    "requirement": "Under Head 1, an excepted disclosure includes a disclosure authorised by the person to whom the warrant is or was addressed or made under arrangements established by that person for the purposes of section 58.",
+    "quote": "a disclosure authorised by the person to whom the warrant is or was addressed or under any arrangements made by that person for the purposes of this section"
+   },
+   {
+    "requirement": "A disclosure authorised by the addressee or under their arrangements does not qualify under Head 1 in the case of a mutual assistance warrant that is or was addressed to a person falling within section 18(1)(h) as a competent authority of overseas countries or territories.",
+    "quote": "subsection (2)(b) does not apply in the case of a mutual assistance warrant that is or was addressed to a person falling within section 18(1)(h) (competent authorities of overseas countries or territories)"
+   },
+   {
+    "requirement": "Under Head 1, an excepted disclosure includes a disclosure authorised by the terms of any requirement to provide assistance in giving effect to the warrant, including any requirement imposed by virtue of section 41(5) or, for a warrant under Chapter 1 of Part 1 of RIPA, section 11(9) of RIPA.",
+    "quote": "a disclosure authorised by the terms of any requirement to provide assistance in giving effect to the warrant (including any requirement for disclosure imposed by virtue of section 41(5) or, in the case of a warrant under Chapter 1 of Part 1 of the Regulation of Investigatory Powers Act 2000 (“RIPA”), section 11(9) of RIPA)"
+   },
+   {
+    "requirement": "Under Head 2, in the case of a warrant under Chapter 1 of Part 2, an excepted disclosure includes a disclosure made to, or authorised by, a Judicial Commissioner.",
+    "quote": "in the case of a warrant under Chapter 1 of this Part, a disclosure made to, or authorised by, a Judicial Commissioner"
+   },
+   {
+    "requirement": "Under Head 2, in the case of a warrant under Chapter 1 of Part 1 of RIPA, an excepted disclosure includes a disclosure made to, or authorised by, the Interception of Communications Commissioner or a Judicial Commissioner.",
+    "quote": "in the case of a warrant under Chapter 1 of Part 1 of RIPA, a disclosure made to, or authorised by, the Interception of Communications Commissioner or a Judicial Commissioner"
+   },
+   {
+    "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Director General of the Independent Office for Police Conduct for the purposes of facilitating the carrying out of any of the Director General’s functions.",
+    "quote": "a disclosure made to the Director General of the Independent Office for Police Conduct for the purposes of facilitating the carrying out of any of the Director General’s functions"
+   },
+   {
+    "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Service Police Complaints Commissioner for the purposes of facilitating the carrying out of any of the Commissioner’s functions.",
+    "quote": "a disclosure made to the Service Police Complaints Commissioner for the purposes of facilitating the carrying out of any of the Commissioner’s functions"
+   },
+   {
+    "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Intelligence and Security Committee of Parliament for the purposes of facilitating the carrying out of any of its functions.",
+    "quote": "a disclosure made to the Intelligence and Security Committee of Parliament for the purposes of facilitating the carrying out of any of its functions"
+   },
+   {
+    "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Independent Commission for Reconciliation and Information Recovery for the purpose of facilitating the carrying out of any of its functions.",
+    "quote": "a disclosure made to the Independent Commission for Reconciliation and Information Recovery for the purpose of facilitating the carrying out of any of the functions of the Independent Commission for Reconciliation and Information Recovery"
+   },
+   {
+    "requirement": "Under Head 3, an excepted disclosure includes a disclosure made by a legal adviser in contemplation of, or in connection with, any legal proceedings, and for the purposes of those proceedings.",
+    "quote": "a disclosure made by a legal adviser— (i) in contemplation of, or in connection with, any legal proceedings, and (ii) for the purposes of those proceedings"
+   },
+   {
+    "requirement": "Under Head 3, an excepted disclosure includes a disclosure made either by a professional legal adviser to their client or the client's representative, or by the client or their representative to the professional legal adviser, in connection with giving advice about the effect of the relevant provisions.",
+    "quote": "a disclosure made— (i) by a professional legal adviser (“L”) to L's client or a representative of L's client, or (ii) by L's client, or by a representative of L's client, to L, in connection with the giving, by L to L's client, of advice about the effect of the relevant provisions"
+   },
+   {
+    "requirement": "A disclosure within Head 3 is not an excepted disclosure if it is made with the intention of furthering a criminal purpose.",
+    "quote": "a disclosure within Head 3 is not an excepted disclosure if it is made with the intention of furthering a criminal purpose"
+   },
+   {
+    "requirement": "For the purposes of legal advice under Head 3, the relevant provisions mean the provisions of Part 2 in the case of a warrant under Chapter 1 of that Part.",
+    "quote": "in the case of a warrant under Chapter 1 of this Part, the provisions of this Part"
+   },
+   {
+    "requirement": "For the purposes of legal advice under Head 3, the relevant provisions mean the provisions of Chapter 1 of Part 1 of RIPA in the case of a warrant under that Chapter.",
+    "quote": "in the case of a warrant under Chapter 1 of Part 1 of RIPA, the provisions of that Chapter"
+   },
+   {
+    "requirement": "Under Head 4, an excepted disclosure includes a disclosure made by a postal operator or a telecommunications operator in accordance with a requirement imposed by regulations made by the Secretary of State that consists of statistical information of a description specified in the regulations.",
+    "quote": "a disclosure that— (i) is made by a postal operator or a telecommunications operator in accordance with a requirement imposed by regulations made by the Secretary of State, and (ii) consists of statistical information of a description specified in the regulations"
+   },
+   {
+    "requirement": "Under Head 4, an excepted disclosure includes a disclosure of information that does not relate to any particular warrant under Chapter 1 of Part 2 or under Chapter 1 of Part 1 of RIPA but relates to any such warrants in general.",
+    "quote": "a disclosure of information that does not relate to any particular warrant under Chapter 1 of this Part or under Chapter 1 of Part 1 of RIPA but relates to any such warrants in general"
+   },
+   {
+    "requirement": "Nothing in section 58 affects the operation of section 56, which prohibits the making of certain disclosures in, for the purposes of, or in connection with legal proceedings.",
+    "quote": "Nothing in this section affects the operation of section 56 (which, among other things, prohibits the making of certain disclosures in, for the purposes of or in connection with legal proceedings)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of section 57, a disclosure made in relation to a warrant is an excepted disclosure if it falls within Head 1, Head 2, Head 3, or Head 4.",
+   "quote": "a disclosure made in relation to a warrant is an “excepted disclosure” if it falls within any of the Heads set out in— (a) subsection (2)"
+  },
+  {
+   "requirement": "Under Head 1, an excepted disclosure includes a disclosure authorised by the warrant itself.",
+   "quote": "a disclosure authorised by the warrant"
+  },
+  {
+   "requirement": "Under Head 1, an excepted disclosure includes a disclosure authorised by the person to whom the warrant is or was addressed or made under arrangements established by that person for the purposes of section 58.",
+   "quote": "a disclosure authorised by the person to whom the warrant is or was addressed or under any arrangements made by that person for the purposes of this section"
+  },
+  {
+   "requirement": "A disclosure authorised by the addressee or under their arrangements does not qualify under Head 1 in the case of a mutual assistance warrant that is or was addressed to a person falling within section 18(1)(h) as a competent authority of overseas countries or territories.",
+   "quote": "subsection (2)(b) does not apply in the case of a mutual assistance warrant that is or was addressed to a person falling within section 18(1)(h) (competent authorities of overseas countries or territories)"
+  },
+  {
+   "requirement": "Under Head 1, an excepted disclosure includes a disclosure authorised by the terms of any requirement to provide assistance in giving effect to the warrant, including any requirement imposed by virtue of section 41(5) or, for a warrant under Chapter 1 of Part 1 of RIPA, section 11(9) of RIPA.",
+   "quote": "a disclosure authorised by the terms of any requirement to provide assistance in giving effect to the warrant (including any requirement for disclosure imposed by virtue of section 41(5) or, in the case of a warrant under Chapter 1 of Part 1 of the Regulation of Investigatory Powers Act 2000 (“RIPA”), section 11(9) of RIPA)"
+  },
+  {
+   "requirement": "Under Head 2, in the case of a warrant under Chapter 1 of Part 2, an excepted disclosure includes a disclosure made to, or authorised by, a Judicial Commissioner.",
+   "quote": "in the case of a warrant under Chapter 1 of this Part, a disclosure made to, or authorised by, a Judicial Commissioner"
+  },
+  {
+   "requirement": "Under Head 2, in the case of a warrant under Chapter 1 of Part 1 of RIPA, an excepted disclosure includes a disclosure made to, or authorised by, the Interception of Communications Commissioner or a Judicial Commissioner.",
+   "quote": "in the case of a warrant under Chapter 1 of Part 1 of RIPA, a disclosure made to, or authorised by, the Interception of Communications Commissioner or a Judicial Commissioner"
+  },
+  {
+   "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Director General of the Independent Office for Police Conduct for the purposes of facilitating the carrying out of any of the Director General’s functions.",
+   "quote": "a disclosure made to the Director General of the Independent Office for Police Conduct for the purposes of facilitating the carrying out of any of the Director General’s functions"
+  },
+  {
+   "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Service Police Complaints Commissioner for the purposes of facilitating the carrying out of any of the Commissioner’s functions.",
+   "quote": "a disclosure made to the Service Police Complaints Commissioner for the purposes of facilitating the carrying out of any of the Commissioner’s functions"
+  },
+  {
+   "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Intelligence and Security Committee of Parliament for the purposes of facilitating the carrying out of any of its functions.",
+   "quote": "a disclosure made to the Intelligence and Security Committee of Parliament for the purposes of facilitating the carrying out of any of its functions"
+  },
+  {
+   "requirement": "Under Head 2, an excepted disclosure includes a disclosure made to the Independent Commission for Reconciliation and Information Recovery for the purpose of facilitating the carrying out of any of its functions.",
+   "quote": "a disclosure made to the Independent Commission for Reconciliation and Information Recovery for the purpose of facilitating the carrying out of any of the functions of the Independent Commission for Reconciliation and Information Recovery"
+  },
+  {
+   "requirement": "Under Head 3, an excepted disclosure includes a disclosure made by a legal adviser in contemplation of, or in connection with, any legal proceedings, and for the purposes of those proceedings.",
+   "quote": "a disclosure made by a legal adviser— (i) in contemplation of, or in connection with, any legal proceedings, and (ii) for the purposes of those proceedings"
+  },
+  {
+   "requirement": "Under Head 3, an excepted disclosure includes a disclosure made either by a professional legal adviser to their client or the client's representative, or by the client or their representative to the professional legal adviser, in connection with giving advice about the effect of the relevant provisions.",
+   "quote": "a disclosure made— (i) by a professional legal adviser (“L”) to L's client or a representative of L's client, or (ii) by L's client, or by a representative of L's client, to L, in connection with the giving, by L to L's client, of advice about the effect of the relevant provisions"
+  },
+  {
+   "requirement": "A disclosure within Head 3 is not an excepted disclosure if it is made with the intention of furthering a criminal purpose.",
+   "quote": "a disclosure within Head 3 is not an excepted disclosure if it is made with the intention of furthering a criminal purpose"
+  },
+  {
+   "requirement": "For the purposes of legal advice under Head 3, the relevant provisions mean the provisions of Part 2 in the case of a warrant under Chapter 1 of that Part.",
+   "quote": "in the case of a warrant under Chapter 1 of this Part, the provisions of this Part"
+  },
+  {
+   "requirement": "For the purposes of legal advice under Head 3, the relevant provisions mean the provisions of Chapter 1 of Part 1 of RIPA in the case of a warrant under that Chapter.",
+   "quote": "in the case of a warrant under Chapter 1 of Part 1 of RIPA, the provisions of that Chapter"
+  },
+  {
+   "requirement": "Under Head 4, an excepted disclosure includes a disclosure made by a postal operator or a telecommunications operator in accordance with a requirement imposed by regulations made by the Secretary of State that consists of statistical information of a description specified in the regulations.",
+   "quote": "a disclosure that— (i) is made by a postal operator or a telecommunications operator in accordance with a requirement imposed by regulations made by the Secretary of State, and (ii) consists of statistical information of a description specified in the regulations"
+  },
+  {
+   "requirement": "Under Head 4, an excepted disclosure includes a disclosure of information that does not relate to any particular warrant under Chapter 1 of Part 2 or under Chapter 1 of Part 1 of RIPA but relates to any such warrants in general.",
+   "quote": "a disclosure of information that does not relate to any particular warrant under Chapter 1 of this Part or under Chapter 1 of Part 1 of RIPA but relates to any such warrants in general"
+  },
+  {
+   "requirement": "Nothing in section 58 affects the operation of section 56, which prohibits the making of certain disclosures in, for the purposes of, or in connection with legal proceedings.",
+   "quote": "Nothing in this section affects the operation of section 56 (which, among other things, prohibits the making of certain disclosures in, for the purposes of or in connection with legal proceedings)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "key": "uk/ukpga/1986/45/s251G@current",
+ "section": "uk/ukpga/1986/45/s251G",
+ "version": "current",
+ "source_sha256": "66b561ac428255d066407b461a3c09387e972f5a563c12adde54640d06d197b2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A moratorium commences on the effective date for a debt relief order in relation to each qualifying debt specified in the order.",
+    "quote": "A moratorium commences on the effective date for a debt relief order in relation to each qualifying debt specified in the order"
+   },
+   {
+    "requirement": "A qualifying debt specified in a debt relief order is defined as a specified qualifying debt.",
+    "quote": "each qualifying debt specified in the order (“a specified qualifying debt”)"
+   },
+   {
+    "requirement": "During the moratorium, the creditor to whom a specified qualifying debt is owed has no remedy in respect of that debt.",
+    "quote": "During the moratorium, the creditor to whom a specified qualifying debt is owed— (a) has no remedy in respect of the debt"
+   },
+   {
+    "requirement": "During the moratorium, the creditor to whom a specified qualifying debt is owed may not commence a creditor's petition in respect of the debt, or otherwise commence any action or other legal proceedings against the debtor for the debt, except with the permission of the court and on terms imposed by the court.",
+    "quote": "may not— (i) commence a creditor's petition in respect of the debt, or (ii) otherwise commence any action or other legal proceedings against the debtor for the debt, except with the permission of the court and on such terms as the court may impose"
+   },
+   {
+    "requirement": "If a creditor to whom a specified qualifying debt is owed has any petition, action, or other proceeding pending in any court on the effective date, the court may stay the proceedings or allow them to continue on terms the court thinks fit.",
+    "quote": "If on the effective date a creditor to whom a specified qualifying debt is owed has any such petition, action or other proceeding as mentioned in subsection (2)(b) pending in any court, the court may— (a) stay the proceedings on the petition, action or other proceedings (as the case may be), or (b) allow them to continue on such terms as the court thinks fit"
+   },
+   {
+    "requirement": "References to the debt regarding creditor restrictions during a moratorium include any interest, penalty, or other sum that becomes payable in relation to that debt after the application date.",
+    "quote": "In subsection (2)(a) and (b) references to the debt include a reference to any interest, penalty or other sum that becomes payable in relation to that debt after the application date"
+   },
+   {
+    "requirement": "A secured creditor of the debtor retains the right to enforce their security notwithstanding statutory restrictions on creditors under section 251G.",
+    "quote": "Nothing in this section affects the right of a secured creditor of the debtor to enforce his security"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The date on which the moratorium commences in relation to each qualifying debt specified in the debt relief order",
+    "value": "effective date",
+    "quote": "commences on the effective date for a debt relief order"
+   },
+   {
+    "what": "The date after which any interest, penalty or other sum that becomes payable in relation to the debt is included in references to the debt",
+    "value": "application date",
+    "quote": "after the application date"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A moratorium commences on the effective date for a debt relief order in relation to each qualifying debt specified in the order.",
+   "quote": "A moratorium commences on the effective date for a debt relief order in relation to each qualifying debt specified in the order"
+  },
+  {
+   "requirement": "A qualifying debt specified in a debt relief order is defined as a specified qualifying debt.",
+   "quote": "each qualifying debt specified in the order (“a specified qualifying debt”)"
+  },
+  {
+   "requirement": "During the moratorium, the creditor to whom a specified qualifying debt is owed has no remedy in respect of that debt.",
+   "quote": "During the moratorium, the creditor to whom a specified qualifying debt is owed— (a) has no remedy in respect of the debt"
+  },
+  {
+   "requirement": "During the moratorium, the creditor to whom a specified qualifying debt is owed may not commence a creditor's petition in respect of the debt, or otherwise commence any action or other legal proceedings against the debtor for the debt, except with the permission of the court and on terms imposed by the court.",
+   "quote": "may not— (i) commence a creditor's petition in respect of the debt, or (ii) otherwise commence any action or other legal proceedings against the debtor for the debt, except with the permission of the court and on such terms as the court may impose"
+  },
+  {
+   "requirement": "If a creditor to whom a specified qualifying debt is owed has any petition, action, or other proceeding pending in any court on the effective date, the court may stay the proceedings or allow them to continue on terms the court thinks fit.",
+   "quote": "If on the effective date a creditor to whom a specified qualifying debt is owed has any such petition, action or other proceeding as mentioned in subsection (2)(b) pending in any court, the court may— (a) stay the proceedings on the petition, action or other proceedings (as the case may be), or (b) allow them to continue on such terms as the court thinks fit"
+  },
+  {
+   "requirement": "References to the debt regarding creditor restrictions during a moratorium include any interest, penalty, or other sum that becomes payable in relation to that debt after the application date.",
+   "quote": "In subsection (2)(a) and (b) references to the debt include a reference to any interest, penalty or other sum that becomes payable in relation to that debt after the application date"
+  },
+  {
+   "requirement": "A secured creditor of the debtor retains the right to enforce their security notwithstanding statutory restrictions on creditors under section 251G.",
+   "quote": "Nothing in this section affects the right of a secured creditor of the debtor to enforce his security"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

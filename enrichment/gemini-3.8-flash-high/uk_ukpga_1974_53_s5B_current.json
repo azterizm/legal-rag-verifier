@@ -1,0 +1,312 @@
+{
+ "key": "uk/ukpga/1974/53/s5B@current",
+ "section": "uk/ukpga/1974/53/s5B",
+ "version": "current",
+ "source_sha256": "5934b6e4c5594af3f5506416a2d864fa6a4f478a8befa0de3299ccdb68f47e7f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Table B constitutes the table referred to in section 5(2C).",
+    "quote": "This is Table B as referred to in section 5(2C)"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service is 10 years.",
+    "quote": "A sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service10 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service is Nil (see section 5J(1)(ba)).",
+    "quote": "A sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service10 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a sentence of dismissal from Her Majesty's service is 7 years.",
+    "quote": "A sentence of dismissal from Her Majesty's service7 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a sentence of dismissal from Her Majesty's service is Nil (see section 5J(1)(ba)).",
+    "quote": "A sentence of dismissal from Her Majesty's service7 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings is 5 years.",
+    "quote": "Any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings5 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings is Nil (see section 5J(1)(ba)).",
+    "quote": "Any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings5 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is 7 years.",
+    "quote": "A custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is Nil (see section 5J(1)(ba)).",
+    "quote": "A custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is 7 years.",
+    "quote": "A custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is Nil (see section 5J(1)(ba)).",
+    "quote": "A custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is 5 years.",
+    "quote": "A sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20065 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is Nil (see section 5J(1)(ba)).",
+    "quote": "A sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20065 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is 3 years.",
+    "quote": "A sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20063 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is Nil (see section 5J(1)(ba)).",
+    "quote": "A sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20063 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is 3 years.",
+    "quote": "A custodial order under any of the schedules of the Army Act 1955, the Air Force Act 1955 or the Naval Discipline Act 1957 mentioned above, where the maximum period of detention specified in the order is 6 months or less3 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is Nil (see section 5J(1)(ba)).",
+    "quote": "A custodial order under any of the schedules of the Army Act 1955, the Air Force Act 1955 or the Naval Discipline Act 1957 mentioned above, where the maximum period of detention specified in the order is 6 months or less3 years Nil (see section 5J(1)(ba))"
+   },
+   {
+    "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is 3 years.",
+    "quote": "A custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less3 years"
+   },
+   {
+    "requirement": "For a person aged under 18, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is Nil (see section 5J(1)(ba)).",
+    "quote": "A custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less3 years Nil (see section 5J(1)(ba))"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Age qualification for the adult disclosure period column",
+    "value": "18",
+    "quote": "aged 18 or over"
+   },
+   {
+    "what": "Age qualification for the youth disclosure period column",
+    "value": "18",
+    "quote": "aged under 18"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over sentenced to cashiering, discharge with ignominy or dismissal with disgrace",
+    "value": "10 years",
+    "quote": "dismissal with disgrace from Her Majesty's service10 years"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over sentenced to dismissal from Her Majesty's service",
+    "value": "7 years",
+    "quote": "dismissal from Her Majesty's service7 years"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over sentenced to service detention in disciplinary proceedings",
+    "value": "5 years",
+    "quote": "conviction in service disciplinary proceedings5 years"
+   },
+   {
+    "what": "Minimum maximum period of detention specified in a custodial order under section 71AA or section 43AA to attract a 7-year disclosure period",
+    "value": "6 months",
+    "quote": "more than 6 months"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over subject to a custodial order under section 71AA or section 43AA specifying more than 6 months detention",
+    "value": "7 years",
+    "quote": "more than 6 months7 years"
+   },
+   {
+    "what": "Minimum maximum period of detention specified in a custodial order under schedule 5A or schedule 4A to attract a 7-year disclosure period",
+    "value": "6 months",
+    "quote": "more than 6 months"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over subject to a custodial order under schedule 5A or schedule 4A specifying more than 6 months detention",
+    "value": "7 years",
+    "quote": "more than 6 months7 years"
+   },
+   {
+    "what": "Lower detention term threshold for detention passed under section 71A(4), section 43A(4) or section 209",
+    "value": "6 months",
+    "quote": "exceeding 6 months"
+   },
+   {
+    "what": "Upper detention term threshold for detention passed under section 71A(4), section 43A(4) or section 209",
+    "value": "30 months",
+    "quote": "not exceeding 30 months"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over sentenced to detention for a term exceeding 6 months but not exceeding 30 months",
+    "value": "5 years",
+    "quote": "Armed Forces Act 20065 years"
+   },
+   {
+    "what": "Maximum detention term threshold for detention passed under section 71A(4), section 43A(4) or section 209 to attract a 3-year disclosure period",
+    "value": "6 months",
+    "quote": "not exceeding 6 months"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over sentenced to detention for a term not exceeding 6 months",
+    "value": "3 years",
+    "quote": "Armed Forces Act 20063 years"
+   },
+   {
+    "what": "Maximum detention period threshold specified in a custodial order under the mentioned schedules to attract a 3-year disclosure period",
+    "value": "6 months",
+    "quote": "6 months or less"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over subject to a custodial order under the mentioned schedules specifying 6 months or less detention",
+    "value": "3 years",
+    "quote": "6 months or less3 years"
+   },
+   {
+    "what": "Maximum detention period threshold specified in a custodial order under section 71AA or section 43AA to attract a 3-year disclosure period",
+    "value": "6 months",
+    "quote": "6 months or less"
+   },
+   {
+    "what": "Disclosure period for a person aged 18 or over subject to a custodial order under section 71AA or section 43AA specifying 6 months or less detention",
+    "value": "3 years",
+    "quote": "6 months or less3 years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Table B constitutes the table referred to in section 5(2C).",
+   "quote": "This is Table B as referred to in section 5(2C)"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service is 10 years.",
+   "quote": "A sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service10 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service is Nil (see section 5J(1)(ba)).",
+   "quote": "A sentence of cashiering, discharge with ignominy or dismissal with disgrace from Her Majesty's service10 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a sentence of dismissal from Her Majesty's service is 7 years.",
+   "quote": "A sentence of dismissal from Her Majesty's service7 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a sentence of dismissal from Her Majesty's service is Nil (see section 5J(1)(ba)).",
+   "quote": "A sentence of dismissal from Her Majesty's service7 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings is 5 years.",
+   "quote": "Any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings5 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings is Nil (see section 5J(1)(ba)).",
+   "quote": "Any sentence of service detention within the meaning of the Armed Forces Act 2006, or any sentence of detention corresponding to such a sentence, in respect of a conviction in service disciplinary proceedings5 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is 7 years.",
+   "quote": "A custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is Nil (see section 5J(1)(ba)).",
+   "quote": "A custodial order under section 71AA of the Army Act 1955 or the Air Force Act 1955, or under section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is 7 years.",
+   "quote": "A custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months, is Nil (see section 5J(1)(ba)).",
+   "quote": "A custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or under schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is more than 6 months7 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is 5 years.",
+   "quote": "A sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20065 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is Nil (see section 5J(1)(ba)).",
+   "quote": "A sentence of detention for a term exceeding 6 months but not exceeding 30 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20065 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is 3 years.",
+   "quote": "A sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20063 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 2006 is Nil (see section 5J(1)(ba)).",
+   "quote": "A sentence of detention for a term not exceeding 6 months passed under section 71A(4) of the Army Act 1955 or Air Force Act 1955, section 43A(4) of the Naval Discipline Act 1957 or section 209 of the Armed Forces Act 20063 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is 3 years.",
+   "quote": "A custodial order under any of the schedules of the Army Act 1955, the Air Force Act 1955 or the Naval Discipline Act 1957 mentioned above, where the maximum period of detention specified in the order is 6 months or less3 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a custodial order under schedule 5A of the Army Act 1955 or the Air Force Act 1955, or schedule 4A of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is Nil (see section 5J(1)(ba)).",
+   "quote": "A custodial order under any of the schedules of the Army Act 1955, the Air Force Act 1955 or the Naval Discipline Act 1957 mentioned above, where the maximum period of detention specified in the order is 6 months or less3 years Nil (see section 5J(1)(ba))"
+  },
+  {
+   "requirement": "For a person aged 18 or over, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is 3 years.",
+   "quote": "A custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less3 years"
+  },
+  {
+   "requirement": "For a person aged under 18, the disclosure period for a custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less, is Nil (see section 5J(1)(ba)).",
+   "quote": "A custodial order under section 71AA of the Army Act 1955 or Air Force Act 1955, or section 43AA of the Naval Discipline Act 1957, where the maximum period of detention specified in the order is 6 months or less3 years Nil (see section 5J(1)(ba))"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Age qualification for the adult disclosure period column",
+   "value": "18",
+   "quote": "aged 18 or over"
+  },
+  {
+   "what": "Age qualification for the youth disclosure period column",
+   "value": "18",
+   "quote": "aged under 18"
+  },
+  {
+   "what": "Minimum maximum period of detention specified in a custodial order under section 71AA or section 43AA to attract a 7-year disclosure period",
+   "value": "6 months",
+   "quote": "more than 6 months"
+  },
+  {
+   "what": "Minimum maximum period of detention specified in a custodial order under schedule 5A or schedule 4A to attract a 7-year disclosure period",
+   "value": "6 months",
+   "quote": "more than 6 months"
+  },
+  {
+   "what": "Lower detention term threshold for detention passed under section 71A(4), section 43A(4) or section 209",
+   "value": "6 months",
+   "quote": "exceeding 6 months"
+  },
+  {
+   "what": "Upper detention term threshold for detention passed under section 71A(4), section 43A(4) or section 209",
+   "value": "30 months",
+   "quote": "not exceeding 30 months"
+  },
+  {
+   "what": "Maximum detention term threshold for detention passed under section 71A(4), section 43A(4) or section 209 to attract a 3-year disclosure period",
+   "value": "6 months",
+   "quote": "not exceeding 6 months"
+  },
+  {
+   "what": "Maximum detention period threshold specified in a custodial order under the mentioned schedules to attract a 3-year disclosure period",
+   "value": "6 months",
+   "quote": "6 months or less"
+  },
+  {
+   "what": "Maximum detention period threshold specified in a custodial order under section 71AA or section 43AA to attract a 3-year disclosure period",
+   "value": "6 months",
+   "quote": "6 months or less"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 19,
+  "thresholds_proposed": 18,
+  "thresholds_verified": 9
+ }
+}

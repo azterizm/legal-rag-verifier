@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/2000/36/s4@current",
+ "section": "uk/ukpga/2000/36/s4",
+ "version": "current",
+ "source_sha256": "28139dc4b74a1399d102133b1cd456fa0e534c54d29d65a7d3daaf53f7b43182",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by adding a reference to any body or holder of an office that is not currently listed in that Schedule, provided that both the first and second statutory conditions are satisfied.",
+    "quote": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by adding to that Schedule a reference to any body or the holder of any office which (in either case) is not for the time being listed in that Schedule but as respects which both the first and the second conditions below are satisfied."
+   },
+   {
+    "requirement": "The first condition for adding a body or office to Schedule 1 is satisfied if the body or office is established by virtue of Her Majesty’s prerogative, by an enactment, or by subordinate legislation.",
+    "quote": "The first condition is that the body or office— (a) is established by virtue of Her Majesty’s prerogative or by an enactment or by subordinate legislation"
+   },
+   {
+    "requirement": "The first condition for adding a body or office to Schedule 1 is alternatively satisfied if the body or office is established in any other way by a Minister of the Crown in his capacity as Minister, by a government department, or by the Welsh Ministers, the First Minister for Wales, or the Counsel General to the Welsh Assembly Government.",
+    "quote": "is established in any other way by a Minister of the Crown in his capacity as Minister, by a government department or by the Welsh Ministers, the First Minister for Wales or the Counsel General to the Welsh Assembly Government."
+   },
+   {
+    "requirement": "The second condition for adding a body to Schedule 1 is satisfied if the body is wholly or partly constituted by appointment made by the Crown, by a Minister of the Crown, by a government department, or by the Welsh Ministers, the First Minister for Wales, or the Counsel General to the Welsh Assembly Government.",
+    "quote": "in the case of a body, that the body is wholly or partly constituted by appointment made by the Crown, by a Minister of the Crown, by a government department or by the Welsh Ministers, the First Minister for Wales or the Counsel General to the Welsh Assembly Government"
+   },
+   {
+    "requirement": "The second condition for adding an office to Schedule 1 is satisfied if appointments to the office are made by the Crown, by a Minister of the Crown, by a government department, or by the Welsh Ministers, the First Minister for Wales, or the Counsel General to the Welsh Assembly Government.",
+    "quote": "in the case of an office, that appointments to the office are made by the Crown, by a Minister of the Crown, by a government department or by the Welsh Ministers, the First Minister for Wales or the Counsel General to the Welsh Assembly Government."
+   },
+   {
+    "requirement": "If either the first or the second condition ceases to be satisfied regarding any body or office listed in Part VI or VII of Schedule 1, that body or the holder of that office ceases to be a public authority by virtue of the entry in question.",
+    "quote": "If either the first or the second condition above ceases to be satisfied as respects any body or office which is listed in Part VI or VII of Schedule 1, that body or the holder of that office shall cease to be a public authority by virtue of the entry in question."
+   },
+   {
+    "requirement": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by removing an entry from Part VI or VII relating to any body or office that has ceased to exist or in respect of which either the first or the second condition has ceased to be satisfied.",
+    "quote": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by removing from Part VI or VII of that Schedule an entry relating to any body or office— (a) which has ceased to exist, or (b) as respects which either the first or the second condition above has ceased to be satisfied."
+   },
+   {
+    "requirement": "An order amending Schedule 1 by adding a reference to a body or office holder may relate to a specified person or office, or to persons or offices falling within a specified description.",
+    "quote": "An order under subsection (1) may relate to a specified person or office or to persons or offices falling within a specified description."
+   },
+   {
+    "requirement": "Before making an order amending Schedule 1 by adding to Part II, III, IV, or VI a reference to a body or the holder of an office whose functions are exercisable only or mainly in or as regards Wales, the Secretary of State or the Minister for the Cabinet Office must consult the Welsh Ministers.",
+    "quote": "if the order adds to Part II, III, IV or VI of Schedule 1 a reference to— (i) a body whose functions are exercisable only or mainly in or as regards Wales, or (ii) the holder of an office whose functions are exercisable only or mainly in or as regards Wales, consult the Welsh Ministers"
+   },
+   {
+    "requirement": "Before making an order amending Schedule 1 by adding a reference to a body or the holder of an office who would be a Northern Ireland public authority if the order were made, the Secretary of State or the Minister for the Cabinet Office must consult the First Minister and deputy First Minister in Northern Ireland.",
+    "quote": "if the order relates to a body which, or the holder of any office who, if the order were made, would be a Northern Ireland public authority, consult the First Minister and deputy First Minister in Northern Ireland."
+   },
+   {
+    "requirement": "Section 4 of the Freedom of Information Act 2000 has effect subject to section 80.",
+    "quote": "This section has effect subject to section 80."
+   },
+   {
+    "requirement": "In section 4 of the Freedom of Information Act 2000, the term “Minister of the Crown” includes a Northern Ireland Minister.",
+    "quote": "In this section “Minister of the Crown” includes a Northern Ireland Minister."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by adding a reference to any body or holder of an office that is not currently listed in that Schedule, provided that both the first and second statutory conditions are satisfied.",
+   "quote": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by adding to that Schedule a reference to any body or the holder of any office which (in either case) is not for the time being listed in that Schedule but as respects which both the first and the second conditions below are satisfied."
+  },
+  {
+   "requirement": "The first condition for adding a body or office to Schedule 1 is satisfied if the body or office is established by virtue of Her Majesty’s prerogative, by an enactment, or by subordinate legislation.",
+   "quote": "The first condition is that the body or office— (a) is established by virtue of Her Majesty’s prerogative or by an enactment or by subordinate legislation"
+  },
+  {
+   "requirement": "The first condition for adding a body or office to Schedule 1 is alternatively satisfied if the body or office is established in any other way by a Minister of the Crown in his capacity as Minister, by a government department, or by the Welsh Ministers, the First Minister for Wales, or the Counsel General to the Welsh Assembly Government.",
+   "quote": "is established in any other way by a Minister of the Crown in his capacity as Minister, by a government department or by the Welsh Ministers, the First Minister for Wales or the Counsel General to the Welsh Assembly Government."
+  },
+  {
+   "requirement": "The second condition for adding a body to Schedule 1 is satisfied if the body is wholly or partly constituted by appointment made by the Crown, by a Minister of the Crown, by a government department, or by the Welsh Ministers, the First Minister for Wales, or the Counsel General to the Welsh Assembly Government.",
+   "quote": "in the case of a body, that the body is wholly or partly constituted by appointment made by the Crown, by a Minister of the Crown, by a government department or by the Welsh Ministers, the First Minister for Wales or the Counsel General to the Welsh Assembly Government"
+  },
+  {
+   "requirement": "The second condition for adding an office to Schedule 1 is satisfied if appointments to the office are made by the Crown, by a Minister of the Crown, by a government department, or by the Welsh Ministers, the First Minister for Wales, or the Counsel General to the Welsh Assembly Government.",
+   "quote": "in the case of an office, that appointments to the office are made by the Crown, by a Minister of the Crown, by a government department or by the Welsh Ministers, the First Minister for Wales or the Counsel General to the Welsh Assembly Government."
+  },
+  {
+   "requirement": "If either the first or the second condition ceases to be satisfied regarding any body or office listed in Part VI or VII of Schedule 1, that body or the holder of that office ceases to be a public authority by virtue of the entry in question.",
+   "quote": "If either the first or the second condition above ceases to be satisfied as respects any body or office which is listed in Part VI or VII of Schedule 1, that body or the holder of that office shall cease to be a public authority by virtue of the entry in question."
+  },
+  {
+   "requirement": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by removing an entry from Part VI or VII relating to any body or office that has ceased to exist or in respect of which either the first or the second condition has ceased to be satisfied.",
+   "quote": "The Secretary of State or the Minister for the Cabinet Office may by order amend Schedule 1 by removing from Part VI or VII of that Schedule an entry relating to any body or office— (a) which has ceased to exist, or (b) as respects which either the first or the second condition above has ceased to be satisfied."
+  },
+  {
+   "requirement": "An order amending Schedule 1 by adding a reference to a body or office holder may relate to a specified person or office, or to persons or offices falling within a specified description.",
+   "quote": "An order under subsection (1) may relate to a specified person or office or to persons or offices falling within a specified description."
+  },
+  {
+   "requirement": "Before making an order amending Schedule 1 by adding to Part II, III, IV, or VI a reference to a body or the holder of an office whose functions are exercisable only or mainly in or as regards Wales, the Secretary of State or the Minister for the Cabinet Office must consult the Welsh Ministers.",
+   "quote": "if the order adds to Part II, III, IV or VI of Schedule 1 a reference to— (i) a body whose functions are exercisable only or mainly in or as regards Wales, or (ii) the holder of an office whose functions are exercisable only or mainly in or as regards Wales, consult the Welsh Ministers"
+  },
+  {
+   "requirement": "Before making an order amending Schedule 1 by adding a reference to a body or the holder of an office who would be a Northern Ireland public authority if the order were made, the Secretary of State or the Minister for the Cabinet Office must consult the First Minister and deputy First Minister in Northern Ireland.",
+   "quote": "if the order relates to a body which, or the holder of any office who, if the order were made, would be a Northern Ireland public authority, consult the First Minister and deputy First Minister in Northern Ireland."
+  },
+  {
+   "requirement": "Section 4 of the Freedom of Information Act 2000 has effect subject to section 80.",
+   "quote": "This section has effect subject to section 80."
+  },
+  {
+   "requirement": "In section 4 of the Freedom of Information Act 2000, the term “Minister of the Crown” includes a Northern Ireland Minister.",
+   "quote": "In this section “Minister of the Crown” includes a Northern Ireland Minister."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

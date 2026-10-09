@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2018/12/s109@current",
+ "section": "uk/ukpga/2018/12/s109",
+ "version": "current",
+ "source_sha256": "eff3e7e6e2b87ccd7ef11efc6a71204d253cac79baecf189d174ea3a43d60592",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A controller is prohibited from transferring personal data to a country or territory outside the United Kingdom or to an international organisation unless the transfer falls within subsection (2).",
+    "quote": "A controller may not transfer personal data to— (a) a country or territory outside the United Kingdom, or (b) an international organisation, unless the transfer falls within subsection (2)."
+   },
+   {
+    "requirement": "A transfer of personal data falls within subsection (2) if it is a necessary and proportionate measure carried out for the purposes of the controller's statutory functions.",
+    "quote": "A transfer of personal data falls within this subsection if the transfer is a necessary and proportionate measure carried out— (a) for the purposes of the controller's statutory functions"
+   },
+   {
+    "requirement": "A transfer of personal data falls within subsection (2) if it is a necessary and proportionate measure carried out for other purposes provided for, in relation to the controller, in section 2(2)(a) of the Security Service Act 1989 or section 2(2)(a) or 4(2)(a) of the Intelligence Services Act 1994.",
+    "quote": "for other purposes provided for, in relation to the controller, in section 2(2)(a) of the Security Service Act 1989 or section 2(2)(a) or 4(2)(a) of the Intelligence Services Act 1994"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A controller is prohibited from transferring personal data to a country or territory outside the United Kingdom or to an international organisation unless the transfer falls within subsection (2).",
+   "quote": "A controller may not transfer personal data to— (a) a country or territory outside the United Kingdom, or (b) an international organisation, unless the transfer falls within subsection (2)."
+  },
+  {
+   "requirement": "A transfer of personal data falls within subsection (2) if it is a necessary and proportionate measure carried out for the purposes of the controller's statutory functions.",
+   "quote": "A transfer of personal data falls within this subsection if the transfer is a necessary and proportionate measure carried out— (a) for the purposes of the controller's statutory functions"
+  },
+  {
+   "requirement": "A transfer of personal data falls within subsection (2) if it is a necessary and proportionate measure carried out for other purposes provided for, in relation to the controller, in section 2(2)(a) of the Security Service Act 1989 or section 2(2)(a) or 4(2)(a) of the Intelligence Services Act 1994.",
+   "quote": "for other purposes provided for, in relation to the controller, in section 2(2)(a) of the Security Service Act 1989 or section 2(2)(a) or 4(2)(a) of the Intelligence Services Act 1994"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

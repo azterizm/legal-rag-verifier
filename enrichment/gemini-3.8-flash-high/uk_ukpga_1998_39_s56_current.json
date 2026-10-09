@@ -1,0 +1,69 @@
+{
+ "key": "uk/ukpga/1998/39/s56@current",
+ "section": "uk/ukpga/1998/39/s56",
+ "version": "current",
+ "source_sha256": "fa39e6608c8ad03d2f02d050c4e630dc1bcc5e31492c44ab8207eb6eb6ccd9c7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Act may be cited as the National Minimum Wage Act 1998.",
+    "quote": "This Act may be cited as the National Minimum Wage Act 1998"
+   },
+   {
+    "requirement": "Section 56 of the Act and any powers under the Act to make an Order in Council, regulations, or an order come into force on the day on which the Act is passed.",
+    "quote": "come into force on the day on which this Act is passed"
+   },
+   {
+    "requirement": "Apart from section 56 and any powers to make an Order in Council, regulations, or an order, the provisions of the National Minimum Wage Act 1998 shall come into force on such day or days as the Secretary of State may by order appoint.",
+    "quote": "provisions of this Act shall come into force on such day or days as the Secretary of State may by order appoint"
+   },
+   {
+    "requirement": "Different days may be appointed by the Secretary of State for different purposes of the National Minimum Wage Act 1998.",
+    "quote": "different days may be appointed for different purposes"
+   },
+   {
+    "requirement": "The National Minimum Wage Act 1998 extends to Northern Ireland.",
+    "quote": "This Act extends to Northern Ireland"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year specified in the short title of the Act",
+    "value": "1998",
+    "quote": "National Minimum Wage Act 1998"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Act may be cited as the National Minimum Wage Act 1998.",
+   "quote": "This Act may be cited as the National Minimum Wage Act 1998"
+  },
+  {
+   "requirement": "Section 56 of the Act and any powers under the Act to make an Order in Council, regulations, or an order come into force on the day on which the Act is passed.",
+   "quote": "come into force on the day on which this Act is passed"
+  },
+  {
+   "requirement": "Apart from section 56 and any powers to make an Order in Council, regulations, or an order, the provisions of the National Minimum Wage Act 1998 shall come into force on such day or days as the Secretary of State may by order appoint.",
+   "quote": "provisions of this Act shall come into force on such day or days as the Secretary of State may by order appoint"
+  },
+  {
+   "requirement": "Different days may be appointed by the Secretary of State for different purposes of the National Minimum Wage Act 1998.",
+   "quote": "different days may be appointed for different purposes"
+  },
+  {
+   "requirement": "The National Minimum Wage Act 1998 extends to Northern Ireland.",
+   "quote": "This Act extends to Northern Ireland"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

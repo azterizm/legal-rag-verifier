@@ -1,0 +1,159 @@
+{
+ "key": "uk/ukpga/1998/20/s5A@current",
+ "section": "uk/ukpga/1998/20/s5A",
+ "version": "current",
+ "source_sha256": "89051b095bf2aaefde6e9b88de5484ecbeea8b3235a76dd1a84079d7e2a2c5e7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A supplier is entitled to a fixed sum in addition to statutory interest once statutory interest begins to run on a qualifying debt.",
+    "quote": "the supplier shall be entitled to a fixed sum (in addition to the statutory interest on the debt)"
+   },
+   {
+    "requirement": "The fixed sum payable to the supplier is £40 where the debt is less than £1000.",
+    "quote": "for a debt less than £1000, the sum of £40"
+   },
+   {
+    "requirement": "The fixed sum payable to the supplier is £70 where the debt is £1000 or more, but less than £10,000.",
+    "quote": "for a debt of £1000 or more, but less than £10,000, the sum of £70"
+   },
+   {
+    "requirement": "The fixed sum payable to the supplier is £100 where the debt is £10,000 or more.",
+    "quote": "for a debt of £10,000 or more, the sum of £100"
+   },
+   {
+    "requirement": "The supplier is entitled to an additional sum equal to the difference between the fixed sum and the supplier's reasonable recovery costs if those costs are not met by the fixed sum.",
+    "quote": "the supplier shall also be entitled to a sum equivalent to the difference between the fixed sum and those costs"
+   },
+   {
+    "requirement": "The obligation to pay a sum under section 5A in respect of a qualifying debt must be treated as part of the term implied by section 1(1) in the contract that created the debt.",
+    "quote": "shall be treated as part of the term implied by section 1(1) in the contract creating the debt"
+   },
+   {
+    "requirement": "Section 3(2)(b) of the Unfair Contract Terms Act 1977 applies to a contract term whether or not that term is contained in written standard terms of the purchaser.",
+    "quote": "Section 3(2)(b) of the Unfair Contract Terms Act 1977 (no reliance to be placed on certain contract terms) shall apply in cases where a contract term is not contained in written standard terms of the purchaser as well as in cases where the term is contained in such standard terms"
+   },
+   {
+    "requirement": "In section 5A, a 'contract term' is defined as a term of the contract relating to a sum due to the supplier under section 5A.",
+    "quote": "“contract term” means a term of the contract relating to a sum due to the supplier under this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum qualifying debt limit to qualify for the £40 fixed sum",
+    "value": "£1000",
+    "quote": "debt less than £1000"
+   },
+   {
+    "what": "fixed sum entitlement for a debt less than £1000",
+    "value": "£40",
+    "quote": "the sum of £40"
+   },
+   {
+    "what": "minimum qualifying debt limit to qualify for the £70 fixed sum",
+    "value": "£1000",
+    "quote": "debt of £1000 or more"
+   },
+   {
+    "what": "maximum qualifying debt limit to qualify for the £70 fixed sum",
+    "value": "£10,000",
+    "quote": "less than £10,000"
+   },
+   {
+    "what": "fixed sum entitlement for a debt of £1000 or more, but less than £10,000",
+    "value": "£70",
+    "quote": "the sum of £70"
+   },
+   {
+    "what": "minimum qualifying debt limit to qualify for the £100 fixed sum",
+    "value": "£10,000",
+    "quote": "debt of £10,000 or more"
+   },
+   {
+    "what": "fixed sum entitlement for a debt of £10,000 or more",
+    "value": "£100",
+    "quote": "the sum of £100"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A supplier is entitled to a fixed sum in addition to statutory interest once statutory interest begins to run on a qualifying debt.",
+   "quote": "the supplier shall be entitled to a fixed sum (in addition to the statutory interest on the debt)"
+  },
+  {
+   "requirement": "The fixed sum payable to the supplier is £40 where the debt is less than £1000.",
+   "quote": "for a debt less than £1000, the sum of £40"
+  },
+  {
+   "requirement": "The fixed sum payable to the supplier is £70 where the debt is £1000 or more, but less than £10,000.",
+   "quote": "for a debt of £1000 or more, but less than £10,000, the sum of £70"
+  },
+  {
+   "requirement": "The fixed sum payable to the supplier is £100 where the debt is £10,000 or more.",
+   "quote": "for a debt of £10,000 or more, the sum of £100"
+  },
+  {
+   "requirement": "The supplier is entitled to an additional sum equal to the difference between the fixed sum and the supplier's reasonable recovery costs if those costs are not met by the fixed sum.",
+   "quote": "the supplier shall also be entitled to a sum equivalent to the difference between the fixed sum and those costs"
+  },
+  {
+   "requirement": "The obligation to pay a sum under section 5A in respect of a qualifying debt must be treated as part of the term implied by section 1(1) in the contract that created the debt.",
+   "quote": "shall be treated as part of the term implied by section 1(1) in the contract creating the debt"
+  },
+  {
+   "requirement": "Section 3(2)(b) of the Unfair Contract Terms Act 1977 applies to a contract term whether or not that term is contained in written standard terms of the purchaser.",
+   "quote": "Section 3(2)(b) of the Unfair Contract Terms Act 1977 (no reliance to be placed on certain contract terms) shall apply in cases where a contract term is not contained in written standard terms of the purchaser as well as in cases where the term is contained in such standard terms"
+  },
+  {
+   "requirement": "In section 5A, a 'contract term' is defined as a term of the contract relating to a sum due to the supplier under section 5A.",
+   "quote": "“contract term” means a term of the contract relating to a sum due to the supplier under this section"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum qualifying debt limit to qualify for the £40 fixed sum",
+   "value": "£1000",
+   "quote": "debt less than £1000"
+  },
+  {
+   "what": "fixed sum entitlement for a debt less than £1000",
+   "value": "£40",
+   "quote": "the sum of £40"
+  },
+  {
+   "what": "minimum qualifying debt limit to qualify for the £70 fixed sum",
+   "value": "£1000",
+   "quote": "debt of £1000 or more"
+  },
+  {
+   "what": "maximum qualifying debt limit to qualify for the £70 fixed sum",
+   "value": "£10,000",
+   "quote": "less than £10,000"
+  },
+  {
+   "what": "fixed sum entitlement for a debt of £1000 or more, but less than £10,000",
+   "value": "£70",
+   "quote": "the sum of £70"
+  },
+  {
+   "what": "minimum qualifying debt limit to qualify for the £100 fixed sum",
+   "value": "£10,000",
+   "quote": "debt of £10,000 or more"
+  },
+  {
+   "what": "fixed sum entitlement for a debt of £10,000 or more",
+   "value": "£100",
+   "quote": "the sum of £100"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 7,
+  "thresholds_verified": 7
+ }
+}

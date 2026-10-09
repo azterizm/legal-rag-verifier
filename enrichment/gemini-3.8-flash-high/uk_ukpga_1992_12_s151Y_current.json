@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1992/12/s151Y@current",
+ "section": "uk/ukpga/1992/12/s151Y",
+ "version": "current",
+ "source_sha256": "06c24fb9ed6ac0f24e2430f2620e77ca0422e4fe762f8c12f0868820c099198e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Diminishing shared ownership arrangements are not treated as a partnership for capital gains tax purposes.",
+    "quote": "Diminishing shared ownership arrangements are not treated as a partnership for capital gains tax purposes."
+   },
+   {
+    "requirement": "Where a financier grants a lease of the asset to the customer under diminishing shared ownership arrangements, the grant or termination of that lease is not treated as a disposal or acquisition of part of the asset for capital gains tax purposes under the Taxation of Chargeable Gains Act 1992.",
+    "quote": "the grant or termination of the lease is not to be treated as a disposal or acquisition of part of the asset for the purposes of this Act so far as it applies for capital gains tax."
+   },
+   {
+    "requirement": "Where a financier becomes entitled to the asset under diminishing shared ownership arrangements because the customer breached an obligation, the financier's dealings with the asset to enforce or give effect to the entitlement are treated for capital gains tax purposes as if done by the customer through the financier as nominee.",
+    "quote": "the financier’s dealings with the asset for the purpose of enforcing or giving effect to the entitlement"
+   },
+   {
+    "requirement": "Where a financier becomes entitled to the asset under diminishing shared ownership arrangements because the customer breached an obligation, the dealings with the asset of any person appointed to enforce or give effect to the entitlement are treated for capital gains tax purposes as if done by the customer through the appointed person as nominee.",
+    "quote": "the dealings with the asset of any person appointed for that purpose, are to be treated for the purposes of this Act so far as it applies for capital gains tax as if they were done through the financier, or (as the case may be) the appointed person, as nominee by the customer."
+   },
+   {
+    "requirement": "For the purposes of section 151Y of the Taxation of Chargeable Gains Act 1992, \"the asset\" is defined as the asset in which beneficial interest is acquired and disposed of under the diminishing shared ownership arrangements.",
+    "quote": "“the asset” means the asset in which beneficial interest is acquired and disposed of under the diminishing shared ownership arrangements"
+   },
+   {
+    "requirement": "For the purposes of section 151Y of the Taxation of Chargeable Gains Act 1992, \"the customer\" and \"the financier\" take their meanings from section 151K or section 151KA.",
+    "quote": "“the customer” and “the financier” have the same meaning as in section 151K or 151KA"
+   },
+   {
+    "requirement": "For the purposes of section 151Y of the Taxation of Chargeable Gains Act 1992, \"termination\" in relation to a lease takes its meaning from section 70YI of the Capital Allowances Act 2001.",
+    "quote": "“termination”, in relation to a lease, has the meaning given by section 70YI of CAA 2001."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Diminishing shared ownership arrangements are not treated as a partnership for capital gains tax purposes.",
+   "quote": "Diminishing shared ownership arrangements are not treated as a partnership for capital gains tax purposes."
+  },
+  {
+   "requirement": "Where a financier grants a lease of the asset to the customer under diminishing shared ownership arrangements, the grant or termination of that lease is not treated as a disposal or acquisition of part of the asset for capital gains tax purposes under the Taxation of Chargeable Gains Act 1992.",
+   "quote": "the grant or termination of the lease is not to be treated as a disposal or acquisition of part of the asset for the purposes of this Act so far as it applies for capital gains tax."
+  },
+  {
+   "requirement": "Where a financier becomes entitled to the asset under diminishing shared ownership arrangements because the customer breached an obligation, the financier's dealings with the asset to enforce or give effect to the entitlement are treated for capital gains tax purposes as if done by the customer through the financier as nominee.",
+   "quote": "the financier’s dealings with the asset for the purpose of enforcing or giving effect to the entitlement"
+  },
+  {
+   "requirement": "Where a financier becomes entitled to the asset under diminishing shared ownership arrangements because the customer breached an obligation, the dealings with the asset of any person appointed to enforce or give effect to the entitlement are treated for capital gains tax purposes as if done by the customer through the appointed person as nominee.",
+   "quote": "the dealings with the asset of any person appointed for that purpose, are to be treated for the purposes of this Act so far as it applies for capital gains tax as if they were done through the financier, or (as the case may be) the appointed person, as nominee by the customer."
+  },
+  {
+   "requirement": "For the purposes of section 151Y of the Taxation of Chargeable Gains Act 1992, \"the asset\" is defined as the asset in which beneficial interest is acquired and disposed of under the diminishing shared ownership arrangements.",
+   "quote": "“the asset” means the asset in which beneficial interest is acquired and disposed of under the diminishing shared ownership arrangements"
+  },
+  {
+   "requirement": "For the purposes of section 151Y of the Taxation of Chargeable Gains Act 1992, \"the customer\" and \"the financier\" take their meanings from section 151K or section 151KA.",
+   "quote": "“the customer” and “the financier” have the same meaning as in section 151K or 151KA"
+  },
+  {
+   "requirement": "For the purposes of section 151Y of the Taxation of Chargeable Gains Act 1992, \"termination\" in relation to a lease takes its meaning from section 70YI of the Capital Allowances Act 2001.",
+   "quote": "“termination”, in relation to a lease, has the meaning given by section 70YI of CAA 2001."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

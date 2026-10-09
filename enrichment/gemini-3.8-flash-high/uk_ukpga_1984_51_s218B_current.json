@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/1984/51/s218B@current",
+ "section": "uk/ukpga/1984/51/s218B",
+ "version": "current",
+ "source_sha256": "6d61c04f71a93bdedb9fff01006173af493e74edc2a268662605c5df0ec3768e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The powers relating to the provision and preservation of information in connection with pensions conferred on the Board by section 251 of the Finance Act 2004 may be exercised for the purposes of the Inheritance Tax Act 1984.",
+    "quote": "The powers conferred on the Board by section 251 of the Finance Act 2004 (powers relating to the provision and preservation of information in connection with pensions) are exercisable for the purposes of this Act."
+   },
+   {
+    "requirement": "The application of section 251 powers for the purposes of the Inheritance Tax Act 1984 operates without prejudice to the generality of section 251 of the Finance Act 2004.",
+    "quote": "Subsection (1) is without prejudice to the generality of that section of that Act."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The powers relating to the provision and preservation of information in connection with pensions conferred on the Board by section 251 of the Finance Act 2004 may be exercised for the purposes of the Inheritance Tax Act 1984.",
+   "quote": "The powers conferred on the Board by section 251 of the Finance Act 2004 (powers relating to the provision and preservation of information in connection with pensions) are exercisable for the purposes of this Act."
+  },
+  {
+   "requirement": "The application of section 251 powers for the purposes of the Inheritance Tax Act 1984 operates without prejudice to the generality of section 251 of the Finance Act 2004.",
+   "quote": "Subsection (1) is without prejudice to the generality of that section of that Act."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

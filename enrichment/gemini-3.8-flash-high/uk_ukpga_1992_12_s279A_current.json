@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/1992/12/s279A@current",
+ "section": "uk/ukpga/1992/12/s279A",
+ "version": "current",
+ "source_sha256": "7390e8f25e573f4e319b58dd2ba6cbc367e5159b737352cdbd0c6b33d76404d5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A taxpayer may make an election for an allowable loss to be treated as accruing in an earlier year under section 279C if the taxpayer disposes of a qualifying right, that loss would otherwise accrue in the year of the loss, the taxpayer is within the charge to capital gains tax in the year of the loss, and both condition 1 and condition 2 are satisfied.",
+    "quote": "the taxpayer may make an election under this section for the relevant loss to be treated as accruing in an earlier year in accordance with section 279C if condition 1 in subsection (3) below and condition 2 in subsection (5) below are satisfied"
+   },
+   {
+    "requirement": "Section 279A applies to a right only if the taxpayer acquired the right, in whole or in part, as consideration for a disposal by the taxpayer of another asset.",
+    "quote": "the right was, in whole or in part, acquired by the taxpayer as the whole or part of the consideration for a disposal (the “original disposal”) by him of another asset"
+   },
+   {
+    "requirement": "Section 279A applies to a right only if the original disposal occurred in a year earlier than the year in which the right itself is disposed of.",
+    "quote": "the original disposal was made in a year (“the year of the original disposal”) earlier than the year in which the disposal mentioned in subsection (1)(a) above is made"
+   },
+   {
+    "requirement": "Where a right was acquired as consideration for two or more original disposals, each of those disposals must have been made in a year earlier than the year of the right's disposal.",
+    "quote": "where the right was acquired by the taxpayer as the whole or part of the consideration for two or more disposals (each of which is accordingly an “original disposal”), the condition in paragraph (b) above is satisfied with respect to each of those disposals"
+   },
+   {
+    "requirement": "Section 279A applies to a right only if no corresponding disposal of that right occurred on the taxpayer's acquisition of it.",
+    "quote": "on the taxpayer’s acquisition of the right, there was no corresponding disposal of it"
+   },
+   {
+    "requirement": "Section 279A applies to a right only if the right is a right to unascertainable consideration in accordance with section 279B(2) to (6).",
+    "quote": "the right is a right to unascertainable consideration (see section 279B(2) to (6))"
+   },
+   {
+    "requirement": "Condition 1 for making an election requires that a chargeable gain accrued to the taxpayer on the original disposal, on an earlier disposal of the original asset in the year of the original disposal, or on a later disposal of the original asset in a year prior to the disposal of the right, or would have so accrued but for paragraph 2(2)(a) of Schedule 5B or 5C.",
+    "quote": "Condition 1 for making an election in relation to the relevant loss is that a chargeable gain accrued to the taxpayer on any one or more of the following events"
+   },
+   {
+    "requirement": "Where a right was acquired as consideration for two or more original disposals, references in condition 1 to the original disposal, original asset, or year of original disposal refer respectively to any of those original disposals and its corresponding original asset and year.",
+    "quote": "If the right to which this section applies was acquired by the taxpayer as the whole or part of the consideration for two or more original disposals (including cases where there are two or more original assets (the “original assets”))— (a) any reference in subsection (3) above to the original disposal is a reference to any of the original disposals"
+   },
+   {
+    "requirement": "Condition 2 for making an election requires the existence of an eligible year earlier than the year of the loss but not earlier than 1992-93 in which a qualifying chargeable gain accrued to the taxpayer and for which a relevant taxable amount remains immediately before the election.",
+    "quote": "Condition 2 for making an election in relation to the relevant loss is that there is a year (an “eligible year”)— (a) which is earlier than the year of the loss but not earlier than the year 1992-93"
+   },
+   {
+    "requirement": "A chargeable gain qualifies under subsection (6) if a revived gain is treated as accruing to the taxpayer in that year under paragraphs 4 and 5 of Schedule 5B or 5C and the underlying original gain represents gain postponed under paragraph 2(2)(a) of Schedule 5B or 5C.",
+    "quote": "A chargeable gain falling within this subsection accrues to the taxpayer in a year if— (a) in that year a chargeable gain (the “revived gain”) is treated as accruing to the taxpayer in accordance with paragraphs 4 and 5 of Schedule 5B or 5C"
+   },
+   {
+    "requirement": "A relevant amount on which capital gains tax is chargeable remains for an eligible year if taxable amounts remain immediately before the election after accounting for previous elections under section 279A and assuming that no part of the relevant loss or any un-elected loss is deducted from those gains under section 279A.",
+    "quote": "there remains an amount in respect of which the taxpayer is chargeable to capital gains tax for the year— (a) after taking account of any previous elections made by the taxpayer under this section, (c) on the assumption that no part of the relevant loss (or of any other loss in respect of which an election under this section may be, but has not been, made) falls to be deducted in consequence of an election under this section"
+   },
+   {
+    "requirement": "In section 279A, the term 'year' means a year of assessment.",
+    "quote": "In this section “year” means year of assessment"
+   },
+   {
+    "requirement": "Section 279A and sections 279B to 279D are to be construed as one.",
+    "quote": "This section and sections 279B to 279D are to be construed as one"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum year of assessment for an eligible year",
+    "value": "1992-93",
+    "quote": "not earlier than the year 1992-93"
+   },
+   {
+    "what": "Minimum number of original disposals triggering the multi-disposal provisions",
+    "value": "two",
+    "quote": "two or more disposals"
+   },
+   {
+    "what": "Minimum number of qualifying events on which a gain must have accrued to satisfy condition 1",
+    "value": "one",
+    "quote": "any one or more of the following events"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A taxpayer may make an election for an allowable loss to be treated as accruing in an earlier year under section 279C if the taxpayer disposes of a qualifying right, that loss would otherwise accrue in the year of the loss, the taxpayer is within the charge to capital gains tax in the year of the loss, and both condition 1 and condition 2 are satisfied.",
+   "quote": "the taxpayer may make an election under this section for the relevant loss to be treated as accruing in an earlier year in accordance with section 279C if condition 1 in subsection (3) below and condition 2 in subsection (5) below are satisfied"
+  },
+  {
+   "requirement": "Section 279A applies to a right only if the taxpayer acquired the right, in whole or in part, as consideration for a disposal by the taxpayer of another asset.",
+   "quote": "the right was, in whole or in part, acquired by the taxpayer as the whole or part of the consideration for a disposal (the “original disposal”) by him of another asset"
+  },
+  {
+   "requirement": "Section 279A applies to a right only if the original disposal occurred in a year earlier than the year in which the right itself is disposed of.",
+   "quote": "the original disposal was made in a year (“the year of the original disposal”) earlier than the year in which the disposal mentioned in subsection (1)(a) above is made"
+  },
+  {
+   "requirement": "Where a right was acquired as consideration for two or more original disposals, each of those disposals must have been made in a year earlier than the year of the right's disposal.",
+   "quote": "where the right was acquired by the taxpayer as the whole or part of the consideration for two or more disposals (each of which is accordingly an “original disposal”), the condition in paragraph (b) above is satisfied with respect to each of those disposals"
+  },
+  {
+   "requirement": "Section 279A applies to a right only if no corresponding disposal of that right occurred on the taxpayer's acquisition of it.",
+   "quote": "on the taxpayer’s acquisition of the right, there was no corresponding disposal of it"
+  },
+  {
+   "requirement": "Section 279A applies to a right only if the right is a right to unascertainable consideration in accordance with section 279B(2) to (6).",
+   "quote": "the right is a right to unascertainable consideration (see section 279B(2) to (6))"
+  },
+  {
+   "requirement": "Condition 1 for making an election requires that a chargeable gain accrued to the taxpayer on the original disposal, on an earlier disposal of the original asset in the year of the original disposal, or on a later disposal of the original asset in a year prior to the disposal of the right, or would have so accrued but for paragraph 2(2)(a) of Schedule 5B or 5C.",
+   "quote": "Condition 1 for making an election in relation to the relevant loss is that a chargeable gain accrued to the taxpayer on any one or more of the following events"
+  },
+  {
+   "requirement": "Where a right was acquired as consideration for two or more original disposals, references in condition 1 to the original disposal, original asset, or year of original disposal refer respectively to any of those original disposals and its corresponding original asset and year.",
+   "quote": "If the right to which this section applies was acquired by the taxpayer as the whole or part of the consideration for two or more original disposals (including cases where there are two or more original assets (the “original assets”))— (a) any reference in subsection (3) above to the original disposal is a reference to any of the original disposals"
+  },
+  {
+   "requirement": "Condition 2 for making an election requires the existence of an eligible year earlier than the year of the loss but not earlier than 1992-93 in which a qualifying chargeable gain accrued to the taxpayer and for which a relevant taxable amount remains immediately before the election.",
+   "quote": "Condition 2 for making an election in relation to the relevant loss is that there is a year (an “eligible year”)— (a) which is earlier than the year of the loss but not earlier than the year 1992-93"
+  },
+  {
+   "requirement": "A chargeable gain qualifies under subsection (6) if a revived gain is treated as accruing to the taxpayer in that year under paragraphs 4 and 5 of Schedule 5B or 5C and the underlying original gain represents gain postponed under paragraph 2(2)(a) of Schedule 5B or 5C.",
+   "quote": "A chargeable gain falling within this subsection accrues to the taxpayer in a year if— (a) in that year a chargeable gain (the “revived gain”) is treated as accruing to the taxpayer in accordance with paragraphs 4 and 5 of Schedule 5B or 5C"
+  },
+  {
+   "requirement": "A relevant amount on which capital gains tax is chargeable remains for an eligible year if taxable amounts remain immediately before the election after accounting for previous elections under section 279A and assuming that no part of the relevant loss or any un-elected loss is deducted from those gains under section 279A.",
+   "quote": "there remains an amount in respect of which the taxpayer is chargeable to capital gains tax for the year— (a) after taking account of any previous elections made by the taxpayer under this section, (c) on the assumption that no part of the relevant loss (or of any other loss in respect of which an election under this section may be, but has not been, made) falls to be deducted in consequence of an election under this section"
+  },
+  {
+   "requirement": "In section 279A, the term 'year' means a year of assessment.",
+   "quote": "In this section “year” means year of assessment"
+  },
+  {
+   "requirement": "Section 279A and sections 279B to 279D are to be construed as one.",
+   "quote": "This section and sections 279B to 279D are to be construed as one"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum year of assessment for an eligible year",
+   "value": "1992-93",
+   "quote": "not earlier than the year 1992-93"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 1
+ }
+}

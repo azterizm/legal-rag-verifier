@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1992/52/s286@current",
+ "section": "uk/ukpga/1992/52/s286",
+ "version": "current",
+ "source_sha256": "620847321420290cab9e287938e21c62ce5c6a247afac38ab640d38fae540090",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 286 applies in relation to section 136A and sections 145A to 151 in Part III, Chapter II of Part IV, and section 237 in Part V.",
+    "quote": "This section applies in relation to the following provisions"
+   },
+   {
+    "requirement": "The Secretary of State may by order made by statutory instrument provide that any of the specified provisions shall not apply to persons or to employment of such classes as may be prescribed by the order.",
+    "quote": "The Secretary of State may by order made by statutory instrument provide that any of those provisions— (a) shall not apply to persons or to employment of such classes as may be prescribed by the order"
+   },
+   {
+    "requirement": "The Secretary of State may by order made by statutory instrument provide that any of the specified provisions shall apply to persons or employments of such classes as may be prescribed by the order subject to such exceptions and modifications as may be so prescribed.",
+    "quote": "shall apply to persons or employments of such classes as may be prescribed by the order subject to such exceptions and modifications as may be so prescribed"
+   },
+   {
+    "requirement": "The Secretary of State may by order made by statutory instrument vary or revoke any of the provisions of sections 281 to 285 so far as they relate to any such provision.",
+    "quote": "may vary or revoke any of the provisions of sections 281 to 285 above (excluded classes of employment) so far as they relate to any such provision"
+   },
+   {
+    "requirement": "Any order under section 286 must be made by statutory instrument.",
+    "quote": "Any such order shall be made by statutory instrument"
+   },
+   {
+    "requirement": "An order under section 286 may contain such incidental, supplementary or transitional provisions as appear to the Secretary of State to be necessary or expedient.",
+    "quote": "may contains such incidental, supplementary or transitional provisions as appear to the Secretary of State to be necessary or expedient"
+   },
+   {
+    "requirement": "No order under section 286 shall be made unless a draft of the order has been laid before Parliament and approved by a resolution of each House of Parliament.",
+    "quote": "No such order shall be made unless a draft of the order has been laid before Parliament and approved by a resolution of each House of Parliament"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 286 applies in relation to section 136A and sections 145A to 151 in Part III, Chapter II of Part IV, and section 237 in Part V.",
+   "quote": "This section applies in relation to the following provisions"
+  },
+  {
+   "requirement": "The Secretary of State may by order made by statutory instrument provide that any of the specified provisions shall not apply to persons or to employment of such classes as may be prescribed by the order.",
+   "quote": "The Secretary of State may by order made by statutory instrument provide that any of those provisions— (a) shall not apply to persons or to employment of such classes as may be prescribed by the order"
+  },
+  {
+   "requirement": "The Secretary of State may by order made by statutory instrument provide that any of the specified provisions shall apply to persons or employments of such classes as may be prescribed by the order subject to such exceptions and modifications as may be so prescribed.",
+   "quote": "shall apply to persons or employments of such classes as may be prescribed by the order subject to such exceptions and modifications as may be so prescribed"
+  },
+  {
+   "requirement": "The Secretary of State may by order made by statutory instrument vary or revoke any of the provisions of sections 281 to 285 so far as they relate to any such provision.",
+   "quote": "may vary or revoke any of the provisions of sections 281 to 285 above (excluded classes of employment) so far as they relate to any such provision"
+  },
+  {
+   "requirement": "Any order under section 286 must be made by statutory instrument.",
+   "quote": "Any such order shall be made by statutory instrument"
+  },
+  {
+   "requirement": "An order under section 286 may contain such incidental, supplementary or transitional provisions as appear to the Secretary of State to be necessary or expedient.",
+   "quote": "may contains such incidental, supplementary or transitional provisions as appear to the Secretary of State to be necessary or expedient"
+  },
+  {
+   "requirement": "No order under section 286 shall be made unless a draft of the order has been laid before Parliament and approved by a resolution of each House of Parliament.",
+   "quote": "No such order shall be made unless a draft of the order has been laid before Parliament and approved by a resolution of each House of Parliament"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

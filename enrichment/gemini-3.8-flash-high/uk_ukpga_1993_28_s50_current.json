@@ -1,0 +1,135 @@
+{
+ "key": "uk/ukpga/1993/28/s50@current",
+ "section": "uk/ukpga/1993/28/s50",
+ "version": "current",
+ "source_sha256": "94c97cb3982bbd139990f02079d2fe70cbbcf1926399a6b3f03408a462baa566",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may, on the application of a qualifying tenant of a flat who desires to claim the right to acquire a new lease of the flat, make a vesting order where the landlord cannot be found or the landlord's identity cannot be ascertained.",
+    "quote": "the court may, on the application of the tenant, make a vesting order under this subsection"
+   },
+   {
+    "requirement": "The court may, on the application of a qualifying tenant of a flat who desires to claim the right to acquire a new lease, make an order dispensing with the need to give a copy of the notice of claim to a person where the landlord can be found and identified, but the copy cannot be given to that person under Part I of Schedule 11 because that person cannot be found or their identity cannot be ascertained.",
+    "quote": "make an order dispensing with the need to give a copy of such a notice to that person"
+   },
+   {
+    "requirement": "The court shall not make an order on an application under subsection (1) or (2) unless it is satisfied that on the date the application was made the tenant had the right to acquire a new lease of the flat.",
+    "quote": "on the date of the making of the application the tenant had the right to acquire a new lease of his flat"
+   },
+   {
+    "requirement": "The court shall not make an order on an application under subsection (1) or (2) unless it is satisfied that on the date the application was made the tenant would not have been precluded by any provision of Chapter II from giving a valid notice under section 42 with respect to the flat.",
+    "quote": "on that date he would not have been precluded by any provision of this Chapter from giving a valid notice under section 42"
+   },
+   {
+    "requirement": "Before making an order under subsection (1) or (2), the court may require the tenant to take such further steps by way of advertisement or otherwise as the court considers proper to trace the missing person.",
+    "quote": "the court may require the tenant to take such further steps by way of advertisement or otherwise as the court thinks proper for the purpose of tracing the person in question"
+   },
+   {
+    "requirement": "If the landlord is traced after an application for a vesting order under subsection (1) is made and before any lease is executed in pursuance of the application, no further proceedings shall be taken with a view to executing a lease under that application.",
+    "quote": "no further proceedings shall be taken with a view to a lease being so executed"
+   },
+   {
+    "requirement": "If the landlord is traced after an application for a vesting order is made under subsection (1) and before a lease is executed in pursuance of it, the rights and obligations of all parties shall, subject to subsection (5), be determined as if the tenant had, at the date of the application, duly given notice under section 42 of the claim to exercise the right to acquire a new lease of the flat.",
+    "quote": "the rights and obligations of all parties shall be determined as if the tenant had, at the date of the application, duly given notice under section 42"
+   },
+   {
+    "requirement": "Where the landlord is traced after an application for a vesting order under subsection (1) is made and before a lease is executed, the court may give such directions as it thinks fit regarding steps to be taken to give effect to the parties' rights and obligations, including directions modifying or dispensing with any requirements of Chapter II or regulations made under Part I.",
+    "quote": "the court may give such directions as the court thinks fit as to the steps to be taken for giving effect to those rights and obligations"
+   },
+   {
+    "requirement": "A tenant may withdraw an application for a vesting order under subsection (1) at any time before the execution of a lease under section 51(3).",
+    "quote": "An application for a vesting order under subsection (1) may be withdrawn at any time before execution of a lease under section 51(3)"
+   },
+   {
+    "requirement": "After an application for a vesting order under subsection (1) is withdrawn, subsection (4)(a) shall not apply.",
+    "quote": "after it is withdrawn, subsection (4)(a) above shall not apply"
+   },
+   {
+    "requirement": "Where any step is taken by either the landlord or the tenant to give effect to subsection (4)(a), the application for a vesting order shall not afterwards be withdrawn except with the consent of the landlord or by leave of the court.",
+    "quote": "the application shall not afterwards be withdrawn except— (a) with the consent of the landlord, or (b) by leave of the court"
+   },
+   {
+    "requirement": "The court shall not grant leave to withdraw an application under subsection (5)(b) unless it appears to the court just to do so by reason of matters coming to the knowledge of the tenant in consequence of tracing the landlord.",
+    "quote": "the court shall not give leave unless it appears to the court just to do so by reason of matters coming to the knowledge of the tenant in consequence of the tracing of the landlord"
+   },
+   {
+    "requirement": "Where an order has been made under subsection (2) dispensing with the need to give a copy of a section 42 notice to a particular person, any notice subsequently given under section 42 with respect to that flat that omits a copy to that person in reliance on the order must contain a statement of the effect of the order.",
+    "quote": "the notice must contain a statement of the effect of the order"
+   },
+   {
+    "requirement": "Where a notice under section 42 contains a statement of the effect of the dispensation order in accordance with subsection (6), the requirements of Part I of Schedule 11 are deemed complied with for the purposes of Chapter II as far as they relate to giving a copy of the notice to that person.",
+    "quote": "those requirements shall be deemed to have been complied with so far as relating to the giving of a copy of the notice to the person referred to in subsection (6) above"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The court may, on the application of a qualifying tenant of a flat who desires to claim the right to acquire a new lease of the flat, make a vesting order where the landlord cannot be found or the landlord's identity cannot be ascertained.",
+   "quote": "the court may, on the application of the tenant, make a vesting order under this subsection"
+  },
+  {
+   "requirement": "The court may, on the application of a qualifying tenant of a flat who desires to claim the right to acquire a new lease, make an order dispensing with the need to give a copy of the notice of claim to a person where the landlord can be found and identified, but the copy cannot be given to that person under Part I of Schedule 11 because that person cannot be found or their identity cannot be ascertained.",
+   "quote": "make an order dispensing with the need to give a copy of such a notice to that person"
+  },
+  {
+   "requirement": "The court shall not make an order on an application under subsection (1) or (2) unless it is satisfied that on the date the application was made the tenant had the right to acquire a new lease of the flat.",
+   "quote": "on the date of the making of the application the tenant had the right to acquire a new lease of his flat"
+  },
+  {
+   "requirement": "The court shall not make an order on an application under subsection (1) or (2) unless it is satisfied that on the date the application was made the tenant would not have been precluded by any provision of Chapter II from giving a valid notice under section 42 with respect to the flat.",
+   "quote": "on that date he would not have been precluded by any provision of this Chapter from giving a valid notice under section 42"
+  },
+  {
+   "requirement": "Before making an order under subsection (1) or (2), the court may require the tenant to take such further steps by way of advertisement or otherwise as the court considers proper to trace the missing person.",
+   "quote": "the court may require the tenant to take such further steps by way of advertisement or otherwise as the court thinks proper for the purpose of tracing the person in question"
+  },
+  {
+   "requirement": "If the landlord is traced after an application for a vesting order under subsection (1) is made and before any lease is executed in pursuance of the application, no further proceedings shall be taken with a view to executing a lease under that application.",
+   "quote": "no further proceedings shall be taken with a view to a lease being so executed"
+  },
+  {
+   "requirement": "If the landlord is traced after an application for a vesting order is made under subsection (1) and before a lease is executed in pursuance of it, the rights and obligations of all parties shall, subject to subsection (5), be determined as if the tenant had, at the date of the application, duly given notice under section 42 of the claim to exercise the right to acquire a new lease of the flat.",
+   "quote": "the rights and obligations of all parties shall be determined as if the tenant had, at the date of the application, duly given notice under section 42"
+  },
+  {
+   "requirement": "Where the landlord is traced after an application for a vesting order under subsection (1) is made and before a lease is executed, the court may give such directions as it thinks fit regarding steps to be taken to give effect to the parties' rights and obligations, including directions modifying or dispensing with any requirements of Chapter II or regulations made under Part I.",
+   "quote": "the court may give such directions as the court thinks fit as to the steps to be taken for giving effect to those rights and obligations"
+  },
+  {
+   "requirement": "A tenant may withdraw an application for a vesting order under subsection (1) at any time before the execution of a lease under section 51(3).",
+   "quote": "An application for a vesting order under subsection (1) may be withdrawn at any time before execution of a lease under section 51(3)"
+  },
+  {
+   "requirement": "After an application for a vesting order under subsection (1) is withdrawn, subsection (4)(a) shall not apply.",
+   "quote": "after it is withdrawn, subsection (4)(a) above shall not apply"
+  },
+  {
+   "requirement": "Where any step is taken by either the landlord or the tenant to give effect to subsection (4)(a), the application for a vesting order shall not afterwards be withdrawn except with the consent of the landlord or by leave of the court.",
+   "quote": "the application shall not afterwards be withdrawn except— (a) with the consent of the landlord, or (b) by leave of the court"
+  },
+  {
+   "requirement": "The court shall not grant leave to withdraw an application under subsection (5)(b) unless it appears to the court just to do so by reason of matters coming to the knowledge of the tenant in consequence of tracing the landlord.",
+   "quote": "the court shall not give leave unless it appears to the court just to do so by reason of matters coming to the knowledge of the tenant in consequence of the tracing of the landlord"
+  },
+  {
+   "requirement": "Where an order has been made under subsection (2) dispensing with the need to give a copy of a section 42 notice to a particular person, any notice subsequently given under section 42 with respect to that flat that omits a copy to that person in reliance on the order must contain a statement of the effect of the order.",
+   "quote": "the notice must contain a statement of the effect of the order"
+  },
+  {
+   "requirement": "Where a notice under section 42 contains a statement of the effect of the dispensation order in accordance with subsection (6), the requirements of Part I of Schedule 11 are deemed complied with for the purposes of Chapter II as far as they relate to giving a copy of the notice to that person.",
+   "quote": "those requirements shall be deemed to have been complied with so far as relating to the giving of a copy of the notice to the person referred to in subsection (6) above"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

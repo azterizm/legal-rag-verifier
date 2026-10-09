@@ -1,0 +1,151 @@
+{
+ "key": "uk/ukpga/2000/8/s229@current",
+ "section": "uk/ukpga/2000/8/s229",
+ "version": "current",
+ "source_sha256": "38e97c3b56f0a19837949396939cef996e1243e87bd9b7e647e9417cade15855",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 229 of the Financial Services and Markets Act 2000 applies only in relation to the compulsory jurisdiction.",
+    "quote": "applies only in relation to the compulsory jurisdiction"
+   },
+   {
+    "requirement": "If a complaint dealt with under the scheme is determined in favour of the complainant, the determination may include an award against the respondent of such amount as the ombudsman considers fair compensation for loss or damage of a kind falling within subsection (3) suffered by the complainant.",
+    "quote": "an award against the respondent of such amount as the ombudsman considers fair compensation for loss or damage (of a kind falling within subsection (3)) suffered by the complainant (“a money award”)"
+   },
+   {
+    "requirement": "If a complaint dealt with under the scheme is determined in favour of the complainant, the determination may include a direction that the respondent take such steps in relation to the complainant as the ombudsman considers just and appropriate, whether or not a court could order those steps to be taken.",
+    "quote": "a direction that the respondent take such steps in relation to the complainant as the ombudsman considers just and appropriate (whether or not a court could order those steps to be taken)"
+   },
+   {
+    "requirement": "A money award may compensate the complainant for financial loss.",
+    "quote": "A money award may compensate for— (a) financial loss"
+   },
+   {
+    "requirement": "A money award may compensate the complainant for any other loss, or any damage, of a specified kind.",
+    "quote": "any other loss, or any damage, of a specified kind"
+   },
+   {
+    "requirement": "The Financial Conduct Authority may specify for the purposes of the compulsory jurisdiction the maximum amount which may be regarded as fair compensation for a particular kind of loss or damage specified under subsection (3)(b).",
+    "quote": "The FCA may specify for the purposes of the compulsory jurisdiction the maximum amount which may be regarded as fair compensation for a particular kind of loss or damage specified under subsection (3)(b)"
+   },
+   {
+    "requirement": "A money award may not exceed the monetary limit.",
+    "quote": "A money award may not exceed the monetary limit"
+   },
+   {
+    "requirement": "If the ombudsman considers that fair compensation requires payment of an amount larger than the monetary limit, the ombudsman may recommend that the respondent pay the complainant the balance.",
+    "quote": "the ombudsman may, if he considers that fair compensation requires payment of a larger amount, recommend that the respondent pay the complainant the balance"
+   },
+   {
+    "requirement": "The monetary limit applicable to a money award is such amount as may be specified.",
+    "quote": "The monetary limit is such amount as may be specified"
+   },
+   {
+    "requirement": "Different amounts for the monetary limit may be specified in relation to different kinds of complaint.",
+    "quote": "Different amounts may be specified in relation to different kinds of complaint"
+   },
+   {
+    "requirement": "A money award may provide for the amount payable under the award to bear interest at a rate and as from a date specified in the award.",
+    "quote": "may provide for the amount payable under the award to bear interest at a rate and as from a date specified in the award"
+   },
+   {
+    "requirement": "A money award is enforceable by the complainant in accordance with Part III of Schedule 17.",
+    "quote": "is enforceable by the complainant in accordance with Part III of Schedule 17"
+   },
+   {
+    "requirement": "Compliance with an ombudsman's direction to take steps is enforceable by an injunction.",
+    "quote": "Compliance with a direction under subsection (2)(b)— (a) is enforceable by an injunction"
+   },
+   {
+    "requirement": "Compliance with an ombudsman's direction to take steps is enforceable in Scotland by an order under section 45 of the Court of Session Act 1988.",
+    "quote": "in Scotland, is enforceable by an order under section 45 of the Court of Session Act 1988"
+   },
+   {
+    "requirement": "Only the complainant may bring proceedings for an injunction or proceedings for an order to enforce compliance with a direction.",
+    "quote": "Only the complainant may bring proceedings for an injunction or proceedings for an order"
+   },
+   {
+    "requirement": "The word 'specified' means specified in compulsory jurisdiction rules.",
+    "quote": "“Specified” means specified in compulsory jurisdiction rules"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 229 of the Financial Services and Markets Act 2000 applies only in relation to the compulsory jurisdiction.",
+   "quote": "applies only in relation to the compulsory jurisdiction"
+  },
+  {
+   "requirement": "If a complaint dealt with under the scheme is determined in favour of the complainant, the determination may include an award against the respondent of such amount as the ombudsman considers fair compensation for loss or damage of a kind falling within subsection (3) suffered by the complainant.",
+   "quote": "an award against the respondent of such amount as the ombudsman considers fair compensation for loss or damage (of a kind falling within subsection (3)) suffered by the complainant (“a money award”)"
+  },
+  {
+   "requirement": "If a complaint dealt with under the scheme is determined in favour of the complainant, the determination may include a direction that the respondent take such steps in relation to the complainant as the ombudsman considers just and appropriate, whether or not a court could order those steps to be taken.",
+   "quote": "a direction that the respondent take such steps in relation to the complainant as the ombudsman considers just and appropriate (whether or not a court could order those steps to be taken)"
+  },
+  {
+   "requirement": "A money award may compensate the complainant for financial loss.",
+   "quote": "A money award may compensate for— (a) financial loss"
+  },
+  {
+   "requirement": "A money award may compensate the complainant for any other loss, or any damage, of a specified kind.",
+   "quote": "any other loss, or any damage, of a specified kind"
+  },
+  {
+   "requirement": "The Financial Conduct Authority may specify for the purposes of the compulsory jurisdiction the maximum amount which may be regarded as fair compensation for a particular kind of loss or damage specified under subsection (3)(b).",
+   "quote": "The FCA may specify for the purposes of the compulsory jurisdiction the maximum amount which may be regarded as fair compensation for a particular kind of loss or damage specified under subsection (3)(b)"
+  },
+  {
+   "requirement": "A money award may not exceed the monetary limit.",
+   "quote": "A money award may not exceed the monetary limit"
+  },
+  {
+   "requirement": "If the ombudsman considers that fair compensation requires payment of an amount larger than the monetary limit, the ombudsman may recommend that the respondent pay the complainant the balance.",
+   "quote": "the ombudsman may, if he considers that fair compensation requires payment of a larger amount, recommend that the respondent pay the complainant the balance"
+  },
+  {
+   "requirement": "The monetary limit applicable to a money award is such amount as may be specified.",
+   "quote": "The monetary limit is such amount as may be specified"
+  },
+  {
+   "requirement": "Different amounts for the monetary limit may be specified in relation to different kinds of complaint.",
+   "quote": "Different amounts may be specified in relation to different kinds of complaint"
+  },
+  {
+   "requirement": "A money award may provide for the amount payable under the award to bear interest at a rate and as from a date specified in the award.",
+   "quote": "may provide for the amount payable under the award to bear interest at a rate and as from a date specified in the award"
+  },
+  {
+   "requirement": "A money award is enforceable by the complainant in accordance with Part III of Schedule 17.",
+   "quote": "is enforceable by the complainant in accordance with Part III of Schedule 17"
+  },
+  {
+   "requirement": "Compliance with an ombudsman's direction to take steps is enforceable by an injunction.",
+   "quote": "Compliance with a direction under subsection (2)(b)— (a) is enforceable by an injunction"
+  },
+  {
+   "requirement": "Compliance with an ombudsman's direction to take steps is enforceable in Scotland by an order under section 45 of the Court of Session Act 1988.",
+   "quote": "in Scotland, is enforceable by an order under section 45 of the Court of Session Act 1988"
+  },
+  {
+   "requirement": "Only the complainant may bring proceedings for an injunction or proceedings for an order to enforce compliance with a direction.",
+   "quote": "Only the complainant may bring proceedings for an injunction or proceedings for an order"
+  },
+  {
+   "requirement": "The word 'specified' means specified in compulsory jurisdiction rules.",
+   "quote": "“Specified” means specified in compulsory jurisdiction rules"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

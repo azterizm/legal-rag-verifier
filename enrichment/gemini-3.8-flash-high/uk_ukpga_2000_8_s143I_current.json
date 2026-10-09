@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2000/8/s143I@current",
+ "section": "uk/ukpga/2000/8/s143I",
+ "version": "current",
+ "source_sha256": "7ce74418e2e700dabb09ffa179c5ae836299d5a60d0a176b0bb8850f0dad7373",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Sections 143G and 143H do not apply where the FCA makes Part 9C rules in order to comply with a direction given by the Financial Policy Committee of the Bank of England under section 9H of the Bank of England Act 1998 (directions requiring macro-prudential measures).",
+    "quote": "Sections 143G and 143H do not apply where the FCA makes Part 9C rules— (a) in order to comply with a direction given by the Financial Policy Committee of the Bank of England under section 9H of the Bank of England Act 1998"
+   },
+   {
+    "requirement": "Sections 143G and 143H do not apply where the FCA makes Part 9C rules in order to act in accordance with a recommendation made by the Financial Policy Committee of the Bank of England under section 9Q of the Bank of England Act 1998 (recommendations about the exercise of the FCA's functions).",
+    "quote": "in order to act in accordance with a recommendation made by that Committee under section 9Q of that Act (recommendations about the exercise of the FCA's functions)"
+   },
+   {
+    "requirement": "Section 143H does not apply in relation to Part 9C rules if the FCA considers that the delay involved in complying with that section would be prejudicial to the interests of consumers (as defined in section 425A).",
+    "quote": "Section 143H does not apply in relation to Part 9C rules if the FCA considers that the delay involved in complying with that section would be prejudicial to the interests of consumers (as defined in section 425A)"
+   },
+   {
+    "requirement": "The explanations described in section 143H(1) are not required in relation to proposed Part 9C rules to the extent that they make changes to existing Part 9C rules which, in the FCA's opinion, are not material.",
+    "quote": "the explanations described in section 143H(1) are not required in relation to the rules to the extent that they make those changes"
+   },
+   {
+    "requirement": "The draft of proposed Part 9C rules that change existing Part 9C rules must be accompanied by a statement of the FCA's opinion if the changes consist of or include changes which, in the FCA's opinion, are not material.",
+    "quote": "the draft of the rules must be accompanied by a statement of the FCA's opinion"
+   },
+   {
+    "requirement": "The summary and explanations described in section 143H(2) are not required in relation to Part 9C rules made by the FCA to the extent that they make changes to existing Part 9C rules which, in the FCA's opinion, are not material.",
+    "quote": "the summary and explanations described in section 143H(2) are not required in relation to the rules to the extent that they make those changes"
+   },
+   {
+    "requirement": "The FCA must publish a statement of its opinion where it makes Part 9C rules that change existing Part 9C rules and the changes consist of or include changes which, in the FCA's opinion, are not material.",
+    "quote": "the FCA must publish a statement of its opinion"
+   },
+   {
+    "requirement": "Whether a change to Part 9C rules is material for the purposes of section 143I must be determined by the FCA by reference to, among other things, the risks specified in or under section 143C(2) or 143D(2) and the matters specified in or under section 143G(1).",
+    "quote": "whether a change to Part 9C rules is material is to be determined by the FCA by reference to, among other things, the risks specified in or under section 143C(2) or 143D(2) and the matters specified in or under section 143G(1)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Sections 143G and 143H do not apply where the FCA makes Part 9C rules in order to comply with a direction given by the Financial Policy Committee of the Bank of England under section 9H of the Bank of England Act 1998 (directions requiring macro-prudential measures).",
+   "quote": "Sections 143G and 143H do not apply where the FCA makes Part 9C rules— (a) in order to comply with a direction given by the Financial Policy Committee of the Bank of England under section 9H of the Bank of England Act 1998"
+  },
+  {
+   "requirement": "Sections 143G and 143H do not apply where the FCA makes Part 9C rules in order to act in accordance with a recommendation made by the Financial Policy Committee of the Bank of England under section 9Q of the Bank of England Act 1998 (recommendations about the exercise of the FCA's functions).",
+   "quote": "in order to act in accordance with a recommendation made by that Committee under section 9Q of that Act (recommendations about the exercise of the FCA's functions)"
+  },
+  {
+   "requirement": "Section 143H does not apply in relation to Part 9C rules if the FCA considers that the delay involved in complying with that section would be prejudicial to the interests of consumers (as defined in section 425A).",
+   "quote": "Section 143H does not apply in relation to Part 9C rules if the FCA considers that the delay involved in complying with that section would be prejudicial to the interests of consumers (as defined in section 425A)"
+  },
+  {
+   "requirement": "The explanations described in section 143H(1) are not required in relation to proposed Part 9C rules to the extent that they make changes to existing Part 9C rules which, in the FCA's opinion, are not material.",
+   "quote": "the explanations described in section 143H(1) are not required in relation to the rules to the extent that they make those changes"
+  },
+  {
+   "requirement": "The draft of proposed Part 9C rules that change existing Part 9C rules must be accompanied by a statement of the FCA's opinion if the changes consist of or include changes which, in the FCA's opinion, are not material.",
+   "quote": "the draft of the rules must be accompanied by a statement of the FCA's opinion"
+  },
+  {
+   "requirement": "The summary and explanations described in section 143H(2) are not required in relation to Part 9C rules made by the FCA to the extent that they make changes to existing Part 9C rules which, in the FCA's opinion, are not material.",
+   "quote": "the summary and explanations described in section 143H(2) are not required in relation to the rules to the extent that they make those changes"
+  },
+  {
+   "requirement": "The FCA must publish a statement of its opinion where it makes Part 9C rules that change existing Part 9C rules and the changes consist of or include changes which, in the FCA's opinion, are not material.",
+   "quote": "the FCA must publish a statement of its opinion"
+  },
+  {
+   "requirement": "Whether a change to Part 9C rules is material for the purposes of section 143I must be determined by the FCA by reference to, among other things, the risks specified in or under section 143C(2) or 143D(2) and the matters specified in or under section 143G(1).",
+   "quote": "whether a change to Part 9C rules is material is to be determined by the FCA by reference to, among other things, the risks specified in or under section 143C(2) or 143D(2) and the matters specified in or under section 143G(1)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

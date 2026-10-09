@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/2006/46/s1112A@current",
+ "section": "uk/ukpga/2006/46/s1112A",
+ "version": "current",
+ "source_sha256": "1bb523921cb6911001bb7f3868a0cf3c5411e7f4914581e78e2867d49ceacdcf",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if they knowingly deliver or cause to be delivered to the registrar, for any purpose of the Companies Acts, a document that is misleading, false, or deceptive in a material particular.",
+    "quote": "deliver or cause to be delivered to the registrar, for any purpose of the Companies Acts, a document that is misleading, false or deceptive in a material particular"
+   },
+   {
+    "requirement": "A person commits an offence if they knowingly make to the registrar, for any purpose of the Companies Acts, a statement that is misleading, false, or deceptive in a material particular.",
+    "quote": "make to the registrar, for any purpose of the Companies Acts, a statement that is misleading, false or deceptive in a material particular"
+   },
+   {
+    "requirement": "Every officer of a firm who is in default commits an offence where that offence is committed by the firm.",
+    "quote": "Where the offence is committed by a firm, every officer of the firm who is in default also commits the offence."
+   },
+   {
+    "requirement": "A person guilty of an offence under this section is liable on conviction on indictment to imprisonment for a term not exceeding two years or a fine (or both).",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding two years or a fine (or both)"
+   },
+   {
+    "requirement": "A person guilty of an offence under this section is liable on summary conviction in England and Wales to imprisonment for a term not exceeding the general limit in a magistrates’ court or a fine (or both).",
+    "quote": "in England and Wales, to imprisonment for a term not exceeding the general limit in a magistrates’ court or a fine (or both)"
+   },
+   {
+    "requirement": "A person guilty of an offence under this section is liable on summary conviction in Scotland to imprisonment for a term not exceeding 12 months or a fine not exceeding the statutory maximum (or both).",
+    "quote": "in Scotland, to imprisonment for a term not exceeding 12 months or a fine not exceeding the statutory maximum (or both)"
+   },
+   {
+    "requirement": "A person guilty of an offence under this section is liable on summary conviction in Northern Ireland to imprisonment for a term not exceeding 6 months or a fine not exceeding the statutory maximum (or both).",
+    "quote": "in Northern Ireland, to imprisonment for a term not exceeding 6 months or a fine not exceeding the statutory maximum (or both)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "two years",
+    "quote": "term not exceeding two years"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction in Scotland",
+    "value": "12 months",
+    "quote": "term not exceeding 12 months"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction in Northern Ireland",
+    "value": "6 months",
+    "quote": "term not exceeding 6 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if they knowingly deliver or cause to be delivered to the registrar, for any purpose of the Companies Acts, a document that is misleading, false, or deceptive in a material particular.",
+   "quote": "deliver or cause to be delivered to the registrar, for any purpose of the Companies Acts, a document that is misleading, false or deceptive in a material particular"
+  },
+  {
+   "requirement": "A person commits an offence if they knowingly make to the registrar, for any purpose of the Companies Acts, a statement that is misleading, false, or deceptive in a material particular.",
+   "quote": "make to the registrar, for any purpose of the Companies Acts, a statement that is misleading, false or deceptive in a material particular"
+  },
+  {
+   "requirement": "Every officer of a firm who is in default commits an offence where that offence is committed by the firm.",
+   "quote": "Where the offence is committed by a firm, every officer of the firm who is in default also commits the offence."
+  },
+  {
+   "requirement": "A person guilty of an offence under this section is liable on conviction on indictment to imprisonment for a term not exceeding two years or a fine (or both).",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding two years or a fine (or both)"
+  },
+  {
+   "requirement": "A person guilty of an offence under this section is liable on summary conviction in England and Wales to imprisonment for a term not exceeding the general limit in a magistrates’ court or a fine (or both).",
+   "quote": "in England and Wales, to imprisonment for a term not exceeding the general limit in a magistrates’ court or a fine (or both)"
+  },
+  {
+   "requirement": "A person guilty of an offence under this section is liable on summary conviction in Scotland to imprisonment for a term not exceeding 12 months or a fine not exceeding the statutory maximum (or both).",
+   "quote": "in Scotland, to imprisonment for a term not exceeding 12 months or a fine not exceeding the statutory maximum (or both)"
+  },
+  {
+   "requirement": "A person guilty of an offence under this section is liable on summary conviction in Northern Ireland to imprisonment for a term not exceeding 6 months or a fine not exceeding the statutory maximum (or both).",
+   "quote": "in Northern Ireland, to imprisonment for a term not exceeding 6 months or a fine not exceeding the statutory maximum (or both)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "two years",
+   "quote": "term not exceeding two years"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction in Scotland",
+   "value": "12 months",
+   "quote": "term not exceeding 12 months"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction in Northern Ireland",
+   "value": "6 months",
+   "quote": "term not exceeding 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

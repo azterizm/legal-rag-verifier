@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2018/12/s74AA@current",
+ "section": "uk/ukpga/2018/12/s74AA",
+ "version": "current",
+ "source_sha256": "d7dd048c61e4178bf9dbb2753236e7206d11d4d629362c19c248f1868f2c7851",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of section 73, the Secretary of State may make regulations approving transfers of personal data to a third country or an international organisation.",
+    "quote": "For the purposes of section 73, the Secretary of State may by regulations approve transfers of personal data to— (a) a third country, or (b) an international organisation."
+   },
+   {
+    "requirement": "The Secretary of State may only make regulations approving transfers to a third country or international organisation if the Secretary of State considers that the data protection test is met in relation to the transfers.",
+    "quote": "The Secretary of State may only make regulations under this section approving transfers to a third country or international organisation if the Secretary of State considers that the data protection test is met in relation to the transfers (see section 74AB)."
+   },
+   {
+    "requirement": "In making transfer regulations, the Secretary of State may have regard to any matter considered relevant by the Secretary of State, including the desirability of facilitating transfers of personal data to and from the United Kingdom.",
+    "quote": "In making regulations under this section, the Secretary of State may have regard to any matter which the Secretary of State considers relevant, including the desirability of facilitating transfers of personal data to and from the United Kingdom."
+   },
+   {
+    "requirement": "Regulations approving transfers may make provision by reference to a third country or international organisation specified in the regulations, or by reference to a description of country or organisation.",
+    "quote": "make provision by reference to a third country or international organisation specified in the regulations or a description of country or organisation"
+   },
+   {
+    "requirement": "Regulations approving transfers may approve all transfers of personal data to a third country or international organisation, or only approve transfers that are specified or described in the regulations.",
+    "quote": "approve all transfers of personal data to a third country or international organisation or only transfers specified or described in the regulations"
+   },
+   {
+    "requirement": "Regulations approving transfers may identify a transfer of personal data by any means, including by reference to a sector or geographic area within a third country, the controller or processor, the recipient of the personal data, the personal data transferred, the means of transfer, or relevant legislation, schemes, lists or other arrangements or documents as they have effect from time to time.",
+    "quote": "identify a transfer of personal data by any means, including by reference to— (i) a sector or geographic area within a third country, (ii) the controller or processor, (iii) the recipient of the personal data, (iv) the personal data transferred, (v) the means by which the transfer is made, or (vi) relevant legislation, schemes, lists or other arrangements or documents, as they have effect from time to time"
+   },
+   {
+    "requirement": "Regulations approving transfers may confer a discretion on a person.",
+    "quote": "confer a discretion on a person."
+   },
+   {
+    "requirement": "Regulations made under section 74AA are subject to the negative resolution procedure.",
+    "quote": "Regulations under this section are subject to the negative resolution procedure."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of section 73, the Secretary of State may make regulations approving transfers of personal data to a third country or an international organisation.",
+   "quote": "For the purposes of section 73, the Secretary of State may by regulations approve transfers of personal data to— (a) a third country, or (b) an international organisation."
+  },
+  {
+   "requirement": "The Secretary of State may only make regulations approving transfers to a third country or international organisation if the Secretary of State considers that the data protection test is met in relation to the transfers.",
+   "quote": "The Secretary of State may only make regulations under this section approving transfers to a third country or international organisation if the Secretary of State considers that the data protection test is met in relation to the transfers (see section 74AB)."
+  },
+  {
+   "requirement": "In making transfer regulations, the Secretary of State may have regard to any matter considered relevant by the Secretary of State, including the desirability of facilitating transfers of personal data to and from the United Kingdom.",
+   "quote": "In making regulations under this section, the Secretary of State may have regard to any matter which the Secretary of State considers relevant, including the desirability of facilitating transfers of personal data to and from the United Kingdom."
+  },
+  {
+   "requirement": "Regulations approving transfers may make provision by reference to a third country or international organisation specified in the regulations, or by reference to a description of country or organisation.",
+   "quote": "make provision by reference to a third country or international organisation specified in the regulations or a description of country or organisation"
+  },
+  {
+   "requirement": "Regulations approving transfers may approve all transfers of personal data to a third country or international organisation, or only approve transfers that are specified or described in the regulations.",
+   "quote": "approve all transfers of personal data to a third country or international organisation or only transfers specified or described in the regulations"
+  },
+  {
+   "requirement": "Regulations approving transfers may identify a transfer of personal data by any means, including by reference to a sector or geographic area within a third country, the controller or processor, the recipient of the personal data, the personal data transferred, the means of transfer, or relevant legislation, schemes, lists or other arrangements or documents as they have effect from time to time.",
+   "quote": "identify a transfer of personal data by any means, including by reference to— (i) a sector or geographic area within a third country, (ii) the controller or processor, (iii) the recipient of the personal data, (iv) the personal data transferred, (v) the means by which the transfer is made, or (vi) relevant legislation, schemes, lists or other arrangements or documents, as they have effect from time to time"
+  },
+  {
+   "requirement": "Regulations approving transfers may confer a discretion on a person.",
+   "quote": "confer a discretion on a person."
+  },
+  {
+   "requirement": "Regulations made under section 74AA are subject to the negative resolution procedure.",
+   "quote": "Regulations under this section are subject to the negative resolution procedure."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

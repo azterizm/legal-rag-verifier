@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2003/1/s342@current",
+ "section": "uk/ukpga/2003/1/s342",
+ "version": "current",
+ "source_sha256": "914da3069019796fb57002126412c7704635c1740d623d153b260b57ce5bacfc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employee is allowed a deduction from earnings from an employment for travel expenses incurred by the employee if conditions A to F are met.",
+    "quote": "A deduction from earnings from an employment is allowed for travel expenses incurred by the employee if conditions A to F are met."
+   },
+   {
+    "requirement": "Under Condition A, the travel must be for the purpose of performing duties of the employment at the destination.",
+    "quote": "travel is for the purpose of performing duties of the employment at the destination"
+   },
+   {
+    "requirement": "Under Condition B, the employee must have performed duties of another employment at the place of departure.",
+    "quote": "employee has performed duties of another employment at the place of departure"
+   },
+   {
+    "requirement": "Under Condition C, the place of departure, the destination, or both must be outside the United Kingdom.",
+    "quote": "place of departure or the destination or both are outside the United Kingdom"
+   },
+   {
+    "requirement": "Under Condition D, the duties of one or both of the employments must be performed wholly or partly outside the United Kingdom.",
+    "quote": "duties of one or both of the employments are performed wholly or partly outside the United Kingdom"
+   },
+   {
+    "requirement": "Under Condition E, the employee must be UK resident.",
+    "quote": "employee is UK resident"
+   },
+   {
+    "requirement": "Under Condition F, where the employer is a foreign employer, the employee must not be a qualifying new resident for the purposes of Chapter 5C of Part 2 of this Act or Chapter 5 of Part 8 of ITTOIA 2005 (see section 845B of that Act).",
+    "quote": "in a case where the employer is a foreign employer, the employee is not a qualifying new resident"
+   },
+   {
+    "requirement": "If the travel is only partly attributable to the purpose of performing duties of the employment at the destination, the deduction applies only to the part of the expenses properly so attributable.",
+    "quote": "applies only to the part of the expenses properly so attributable"
+   },
+   {
+    "requirement": "The rules governing this travel expense deduction must be read with section 359 regarding the disallowance of travel expenses for mileage allowances and reliefs.",
+    "quote": "needs to be read with section 359 (disallowance of travel expenses: mileage allowances and reliefs)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An employee is allowed a deduction from earnings from an employment for travel expenses incurred by the employee if conditions A to F are met.",
+   "quote": "A deduction from earnings from an employment is allowed for travel expenses incurred by the employee if conditions A to F are met."
+  },
+  {
+   "requirement": "Under Condition A, the travel must be for the purpose of performing duties of the employment at the destination.",
+   "quote": "travel is for the purpose of performing duties of the employment at the destination"
+  },
+  {
+   "requirement": "Under Condition B, the employee must have performed duties of another employment at the place of departure.",
+   "quote": "employee has performed duties of another employment at the place of departure"
+  },
+  {
+   "requirement": "Under Condition C, the place of departure, the destination, or both must be outside the United Kingdom.",
+   "quote": "place of departure or the destination or both are outside the United Kingdom"
+  },
+  {
+   "requirement": "Under Condition D, the duties of one or both of the employments must be performed wholly or partly outside the United Kingdom.",
+   "quote": "duties of one or both of the employments are performed wholly or partly outside the United Kingdom"
+  },
+  {
+   "requirement": "Under Condition E, the employee must be UK resident.",
+   "quote": "employee is UK resident"
+  },
+  {
+   "requirement": "Under Condition F, where the employer is a foreign employer, the employee must not be a qualifying new resident for the purposes of Chapter 5C of Part 2 of this Act or Chapter 5 of Part 8 of ITTOIA 2005 (see section 845B of that Act).",
+   "quote": "in a case where the employer is a foreign employer, the employee is not a qualifying new resident"
+  },
+  {
+   "requirement": "If the travel is only partly attributable to the purpose of performing duties of the employment at the destination, the deduction applies only to the part of the expenses properly so attributable.",
+   "quote": "applies only to the part of the expenses properly so attributable"
+  },
+  {
+   "requirement": "The rules governing this travel expense deduction must be read with section 359 regarding the disallowance of travel expenses for mileage allowances and reliefs.",
+   "quote": "needs to be read with section 359 (disallowance of travel expenses: mileage allowances and reliefs)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

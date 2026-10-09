@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/1999/31/s8@current",
+ "section": "uk/ukpga/1999/31/s8",
+ "version": "current",
+ "source_sha256": "e0504e9374911c4d7dd9156a0038c01d159f9f23a7f3b2ad6341d391437b3da4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 8(1) applies where a right of a third party under section 1 to enforce a substantive term is subject to an arbitration agreement.",
+    "quote": "a right under section 1 to enforce a term (“the substantive term”) is subject to a term providing for the submission of disputes to arbitration (“the arbitration agreement”)"
+   },
+   {
+    "requirement": "Under section 8(1), the arbitration agreement must be an agreement in writing for the purposes of Part I of the Arbitration Act 1996.",
+    "quote": "the arbitration agreement is an agreement in writing for the purposes of Part I of the Arbitration Act 1996"
+   },
+   {
+    "requirement": "Where the conditions of section 8(1) are met, the third party shall be treated for the purposes of the Arbitration Act 1996 as a party to the arbitration agreement regarding disputes between himself and the promisor relating to the third party's enforcement of the substantive term.",
+    "quote": "the third party shall be treated for the purposes of that Act as a party to the arbitration agreement as regards disputes between himself and the promisor relating to the enforcement of the substantive term by the third party"
+   },
+   {
+    "requirement": "Section 8(2) applies where a third party has a right under section 1 to enforce an arbitration agreement providing for one or more descriptions of dispute between the third party and the promisor to be submitted to arbitration.",
+    "quote": "a third party has a right under section 1 to enforce a term providing for one or more descriptions of dispute between the third party and the promisor to be submitted to arbitration (“the arbitration agreement”)"
+   },
+   {
+    "requirement": "Under section 8(2), the arbitration agreement must be an agreement in writing for the purposes of Part I of the Arbitration Act 1996.",
+    "quote": "the arbitration agreement is an agreement in writing for the purposes of Part I of the Arbitration Act 1996"
+   },
+   {
+    "requirement": "Section 8(2) applies only where the third party does not fall to be treated under section 8(1) as a party to the arbitration agreement.",
+    "quote": "the third party does not fall to be treated under subsection (1) as a party to the arbitration agreement"
+   },
+   {
+    "requirement": "If the third party exercises the right under section 8(2), the third party shall be treated for the purposes of the Arbitration Act 1996 as a party to the arbitration agreement in relation to the matter with respect to which the right is exercised.",
+    "quote": "the third party shall, if he exercises the right, be treated for the purposes of that Act as a party to the arbitration agreement in relation to the matter with respect to which the right is exercised"
+   },
+   {
+    "requirement": "If the third party exercises the right under section 8(2), the third party shall be treated as having been a party to the arbitration agreement immediately before the exercise of the right.",
+    "quote": "and be treated as having been so immediately before the exercise of the right"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of descriptions of dispute between the third party and the promisor to be submitted to arbitration under an enforceable term",
+    "value": "one or more",
+    "quote": "one or more descriptions of dispute between the third party and the promisor to be submitted to arbitration"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 8(1) applies where a right of a third party under section 1 to enforce a substantive term is subject to an arbitration agreement.",
+   "quote": "a right under section 1 to enforce a term (“the substantive term”) is subject to a term providing for the submission of disputes to arbitration (“the arbitration agreement”)"
+  },
+  {
+   "requirement": "Under section 8(1), the arbitration agreement must be an agreement in writing for the purposes of Part I of the Arbitration Act 1996.",
+   "quote": "the arbitration agreement is an agreement in writing for the purposes of Part I of the Arbitration Act 1996"
+  },
+  {
+   "requirement": "Where the conditions of section 8(1) are met, the third party shall be treated for the purposes of the Arbitration Act 1996 as a party to the arbitration agreement regarding disputes between himself and the promisor relating to the third party's enforcement of the substantive term.",
+   "quote": "the third party shall be treated for the purposes of that Act as a party to the arbitration agreement as regards disputes between himself and the promisor relating to the enforcement of the substantive term by the third party"
+  },
+  {
+   "requirement": "Section 8(2) applies where a third party has a right under section 1 to enforce an arbitration agreement providing for one or more descriptions of dispute between the third party and the promisor to be submitted to arbitration.",
+   "quote": "a third party has a right under section 1 to enforce a term providing for one or more descriptions of dispute between the third party and the promisor to be submitted to arbitration (“the arbitration agreement”)"
+  },
+  {
+   "requirement": "Under section 8(2), the arbitration agreement must be an agreement in writing for the purposes of Part I of the Arbitration Act 1996.",
+   "quote": "the arbitration agreement is an agreement in writing for the purposes of Part I of the Arbitration Act 1996"
+  },
+  {
+   "requirement": "Section 8(2) applies only where the third party does not fall to be treated under section 8(1) as a party to the arbitration agreement.",
+   "quote": "the third party does not fall to be treated under subsection (1) as a party to the arbitration agreement"
+  },
+  {
+   "requirement": "If the third party exercises the right under section 8(2), the third party shall be treated for the purposes of the Arbitration Act 1996 as a party to the arbitration agreement in relation to the matter with respect to which the right is exercised.",
+   "quote": "the third party shall, if he exercises the right, be treated for the purposes of that Act as a party to the arbitration agreement in relation to the matter with respect to which the right is exercised"
+  },
+  {
+   "requirement": "If the third party exercises the right under section 8(2), the third party shall be treated as having been a party to the arbitration agreement immediately before the exercise of the right.",
+   "quote": "and be treated as having been so immediately before the exercise of the right"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

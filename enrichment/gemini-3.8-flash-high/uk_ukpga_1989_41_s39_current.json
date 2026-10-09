@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1989/41/s39@current",
+ "section": "uk/ukpga/1989/41/s39",
+ "version": "current",
+ "source_sha256": "a732b3b8272befa95630235fab3b51427a9b875234a6c1d59e7a8fbdbf9a83f0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may discharge a care order on the application of any person who has parental responsibility for the child, the child himself, or the local authority designated by the order.",
+    "quote": "A care order may be discharged by the court on the application of— (a) any person who has parental responsibility for the child; (b) the child himself; or (c) the local authority designated by the order."
+   },
+   {
+    "requirement": "The court may vary or discharge a supervision order on the application of any person who has parental responsibility for the child, the child himself, or the supervisor.",
+    "quote": "A supervision order may be varied or discharged by the court on the application of— (a) any person who has parental responsibility for the child; (b) the child himself; or (c) the supervisor."
+   },
+   {
+    "requirement": "The court may vary a supervision order in so far as it imposes a requirement affecting a person with whom the child is living, on the application of that person where that person is not otherwise entitled to apply for the order to be discharged.",
+    "quote": "On the application of a person who is not entitled to apply for the order to be discharged, but who is a person with whom the child is living, a supervision order may be varied by the court in so far as it imposes a requirement which affects that person."
+   },
+   {
+    "requirement": "The court may vary or discharge an interim care order in so far as it imposes an exclusion requirement, on the application of a person to whom the exclusion requirement applies where that person is not otherwise entitled to apply for the order to be discharged.",
+    "quote": "On the application of a person who is not entitled to apply for the order to be discharged, but who is a person to whom an exclusion requirement contained in the order applies, an interim care order may be varied or discharged by the court in so far as it imposes the exclusion requirement."
+   },
+   {
+    "requirement": "Where a power of arrest is attached to an exclusion requirement of an interim care order, the court may vary or discharge the order in so far as it confers the power of arrest on the application of any person entitled to apply for the discharge of the exclusion requirement, whether or not an application has been made to vary or discharge any other provision of the order.",
+    "quote": "Where a power of arrest has been attached to an exclusion requirement of an interim care order, the court may, on the application of any person entitled to apply for the discharge of the order so far as it imposes the exclusion requirement, vary or discharge the order in so far as it confers a power of arrest (whether or not any application has been made to vary or discharge any other provision of the order)."
+   },
+   {
+    "requirement": "The court may substitute a supervision order for an existing care order on the application of any person entitled to apply for the care order to be discharged.",
+    "quote": "Where a care order is in force with respect to a child the court may, on the application of any person entitled to apply for the order to be discharged, substitute a supervision order for the care order."
+   },
+   {
+    "requirement": "When a court considers whether to substitute a supervision order for a care order under subsection (4), any statutory provision requiring section 31(2) to be satisfied at the time of substitution or making of the order must be disregarded.",
+    "quote": "When a court is considering whether to substitute one order for another under subsection (4) any provision of this Act which would otherwise require section 31(2) to be satisfied at the time when the proposed order is substituted or made shall be disregarded."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The court may discharge a care order on the application of any person who has parental responsibility for the child, the child himself, or the local authority designated by the order.",
+   "quote": "A care order may be discharged by the court on the application of— (a) any person who has parental responsibility for the child; (b) the child himself; or (c) the local authority designated by the order."
+  },
+  {
+   "requirement": "The court may vary or discharge a supervision order on the application of any person who has parental responsibility for the child, the child himself, or the supervisor.",
+   "quote": "A supervision order may be varied or discharged by the court on the application of— (a) any person who has parental responsibility for the child; (b) the child himself; or (c) the supervisor."
+  },
+  {
+   "requirement": "The court may vary a supervision order in so far as it imposes a requirement affecting a person with whom the child is living, on the application of that person where that person is not otherwise entitled to apply for the order to be discharged.",
+   "quote": "On the application of a person who is not entitled to apply for the order to be discharged, but who is a person with whom the child is living, a supervision order may be varied by the court in so far as it imposes a requirement which affects that person."
+  },
+  {
+   "requirement": "The court may vary or discharge an interim care order in so far as it imposes an exclusion requirement, on the application of a person to whom the exclusion requirement applies where that person is not otherwise entitled to apply for the order to be discharged.",
+   "quote": "On the application of a person who is not entitled to apply for the order to be discharged, but who is a person to whom an exclusion requirement contained in the order applies, an interim care order may be varied or discharged by the court in so far as it imposes the exclusion requirement."
+  },
+  {
+   "requirement": "Where a power of arrest is attached to an exclusion requirement of an interim care order, the court may vary or discharge the order in so far as it confers the power of arrest on the application of any person entitled to apply for the discharge of the exclusion requirement, whether or not an application has been made to vary or discharge any other provision of the order.",
+   "quote": "Where a power of arrest has been attached to an exclusion requirement of an interim care order, the court may, on the application of any person entitled to apply for the discharge of the order so far as it imposes the exclusion requirement, vary or discharge the order in so far as it confers a power of arrest (whether or not any application has been made to vary or discharge any other provision of the order)."
+  },
+  {
+   "requirement": "The court may substitute a supervision order for an existing care order on the application of any person entitled to apply for the care order to be discharged.",
+   "quote": "Where a care order is in force with respect to a child the court may, on the application of any person entitled to apply for the order to be discharged, substitute a supervision order for the care order."
+  },
+  {
+   "requirement": "When a court considers whether to substitute a supervision order for a care order under subsection (4), any statutory provision requiring section 31(2) to be satisfied at the time of substitution or making of the order must be disregarded.",
+   "quote": "When a court is considering whether to substitute one order for another under subsection (4) any provision of this Act which would otherwise require section 31(2) to be satisfied at the time when the proposed order is substituted or made shall be disregarded."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

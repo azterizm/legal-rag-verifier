@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2016/25/s192@current",
+ "section": "uk/ukpga/2016/25/s192",
+ "version": "current",
+ "source_sha256": "e4b83471b035c10228eb004c38880cf4be4290360a39ba712881758a1e05abd9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State must ensure, in relation to every bulk equipment interference warrant, that arrangements are in force for securing specific safeguards regarding overseas authorities.",
+    "quote": "The Secretary of State must ensure, in relation to every bulk equipment interference warrant, that arrangements are in force for securing that"
+   },
+   {
+    "requirement": "Arrangements under a bulk equipment interference warrant must secure that any material obtained under the warrant is handed over to overseas authorities only if the requirements of section 192(2) are met.",
+    "quote": "any material obtained under the warrant is handed over to overseas authorities only if the requirements of subsection (2) are met"
+   },
+   {
+    "requirement": "Arrangements under a bulk equipment interference warrant must secure that copies of any material obtained under the warrant are given to overseas authorities only if the requirements of section 192(2) are met.",
+    "quote": "copies of any such material are given to overseas authorities only if those requirements are met"
+   },
+   {
+    "requirement": "The requirements of section 192(2) are met in the case of a warrant if it appears to the Secretary of State that requirements corresponding to the requirements of section 191(2) and (5) and section 193 will apply, to such extent (if any) as the Secretary of State considers appropriate, in relation to any of the material handed over or any copy given to the overseas authorities.",
+    "quote": "it appears to the Secretary of State that requirements corresponding to the requirements of section 191(2) and (5) and section 193 will apply, to such extent (if any) as the Secretary of State considers appropriate"
+   },
+   {
+    "requirement": "In section 192, the term 'copy' carries the same meaning as it does in section 191.",
+    "quote": "“copy” has the same meaning as in section 191"
+   },
+   {
+    "requirement": "In section 192, 'overseas authorities' means authorities of a country or territory situated outside the United Kingdom.",
+    "quote": "“overseas authorities” means authorities of a country or territory outside the United Kingdom"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State must ensure, in relation to every bulk equipment interference warrant, that arrangements are in force for securing specific safeguards regarding overseas authorities.",
+   "quote": "The Secretary of State must ensure, in relation to every bulk equipment interference warrant, that arrangements are in force for securing that"
+  },
+  {
+   "requirement": "Arrangements under a bulk equipment interference warrant must secure that any material obtained under the warrant is handed over to overseas authorities only if the requirements of section 192(2) are met.",
+   "quote": "any material obtained under the warrant is handed over to overseas authorities only if the requirements of subsection (2) are met"
+  },
+  {
+   "requirement": "Arrangements under a bulk equipment interference warrant must secure that copies of any material obtained under the warrant are given to overseas authorities only if the requirements of section 192(2) are met.",
+   "quote": "copies of any such material are given to overseas authorities only if those requirements are met"
+  },
+  {
+   "requirement": "The requirements of section 192(2) are met in the case of a warrant if it appears to the Secretary of State that requirements corresponding to the requirements of section 191(2) and (5) and section 193 will apply, to such extent (if any) as the Secretary of State considers appropriate, in relation to any of the material handed over or any copy given to the overseas authorities.",
+   "quote": "it appears to the Secretary of State that requirements corresponding to the requirements of section 191(2) and (5) and section 193 will apply, to such extent (if any) as the Secretary of State considers appropriate"
+  },
+  {
+   "requirement": "In section 192, the term 'copy' carries the same meaning as it does in section 191.",
+   "quote": "“copy” has the same meaning as in section 191"
+  },
+  {
+   "requirement": "In section 192, 'overseas authorities' means authorities of a country or territory situated outside the United Kingdom.",
+   "quote": "“overseas authorities” means authorities of a country or territory outside the United Kingdom"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

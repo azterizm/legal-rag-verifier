@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2004/34/s37@current",
+ "section": "uk/ukpga/2004/34/s37",
+ "version": "current",
+ "source_sha256": "c766bff2e1cb36b68dc19182c7b53ed04aafad1b4f618a59c6a2942a8802e4f5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An improvement notice or a prohibition order under the Chapter containing section 37 is a local land charge if the notice or order has become operative.",
+    "quote": "the notice or order has become operative"
+   },
+   {
+    "requirement": "An improvement notice or a prohibition order under the Chapter containing section 37 is a local land charge if the notice or order is suspended under section 14 or 23 and the period for appealing against it under Part 3 of Schedule 1 or 2 has expired without an appeal having been brought.",
+    "quote": "the notice or order is suspended under section 14 or 23, and (b) the period for appealing against it under Part 3 of Schedule 1 or 2 has expired without an appeal having been brought"
+   },
+   {
+    "requirement": "An improvement notice under the Chapter containing section 37 is a local land charge if the notice is suspended under section 14 or 23, an appeal has been brought against it under Part 3 of Schedule 1 or 2, and, were it not suspended, the notice would have become operative under section 15(5) by virtue of paragraph 19(2) of Schedule 1.",
+    "quote": "the notice would have become operative under section 15(5) by virtue of paragraph 19(2) of Schedule 1 (improvement notices: confirmation on appeal or expiry of period for further appeal)"
+   },
+   {
+    "requirement": "A prohibition order under the Chapter containing section 37 is a local land charge if the order is suspended under section 14 or 23, an appeal has been brought against it under Part 3 of Schedule 1 or 2, and, were it not suspended, the order would have become operative under section 24(5) by virtue of paragraph 14(2) of Schedule 2.",
+    "quote": "the order would have become operative under section 24(5) by virtue of paragraph 14(2) of Schedule 2 (prohibition orders: confirmation on appeal or expiry of period for further appeal)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An improvement notice or a prohibition order under the Chapter containing section 37 is a local land charge if the notice or order has become operative.",
+   "quote": "the notice or order has become operative"
+  },
+  {
+   "requirement": "An improvement notice or a prohibition order under the Chapter containing section 37 is a local land charge if the notice or order is suspended under section 14 or 23 and the period for appealing against it under Part 3 of Schedule 1 or 2 has expired without an appeal having been brought.",
+   "quote": "the notice or order is suspended under section 14 or 23, and (b) the period for appealing against it under Part 3 of Schedule 1 or 2 has expired without an appeal having been brought"
+  },
+  {
+   "requirement": "An improvement notice under the Chapter containing section 37 is a local land charge if the notice is suspended under section 14 or 23, an appeal has been brought against it under Part 3 of Schedule 1 or 2, and, were it not suspended, the notice would have become operative under section 15(5) by virtue of paragraph 19(2) of Schedule 1.",
+   "quote": "the notice would have become operative under section 15(5) by virtue of paragraph 19(2) of Schedule 1 (improvement notices: confirmation on appeal or expiry of period for further appeal)"
+  },
+  {
+   "requirement": "A prohibition order under the Chapter containing section 37 is a local land charge if the order is suspended under section 14 or 23, an appeal has been brought against it under Part 3 of Schedule 1 or 2, and, were it not suspended, the order would have become operative under section 24(5) by virtue of paragraph 14(2) of Schedule 2.",
+   "quote": "the order would have become operative under section 24(5) by virtue of paragraph 14(2) of Schedule 2 (prohibition orders: confirmation on appeal or expiry of period for further appeal)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1987/31/s9A@current",
+ "section": "uk/ukpga/1987/31/s9A",
+ "version": "current",
+ "source_sha256": "834e1f35787433921c3f313da9c18f68bd8cfdb7778f9d4c25db792b05c10ef2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where the landlord is obliged to proceed, the nominated person may serve a notice of withdrawal on the landlord indicating an intention no longer to proceed with the acquisition of the protected interest.",
+    "quote": "the nominated person may serve notice on the landlord (a “notice of withdrawal”) indicating his intention no longer to proceed with the acquisition of the protected interest"
+   },
+   {
+    "requirement": "The nominated person must forthwith serve a notice of withdrawal if at any time they become aware that the number of qualifying tenants of the constituent flats desiring to proceed with the acquisition of the protected interest is less than the requisite majority of qualifying tenants of those flats.",
+    "quote": "he shall forthwith serve a notice of withdrawal"
+   },
+   {
+    "requirement": "Where notice of withdrawal is given by the nominated person, the landlord may dispose of the protected interest to such person as the landlord thinks fit during the period of 12 months beginning with the date of service of the notice, subject to statutory restrictions.",
+    "quote": "the landlord may, during the period of 12 months beginning with the date of service of the notice, dispose of the protected interest to such person as he thinks fit, but subject to the following restrictions"
+   },
+   {
+    "requirement": "Where the offer notice was one to which section 5B applied concerning sale by auction, the landlord's disposal must be made by means of a sale at a public auction and the other terms must correspond to those specified in the offer notice.",
+    "quote": "that the disposal is made by means of a sale at a public auction, and (b) that the other terms correspond to those specified in the offer notice"
+   },
+   {
+    "requirement": "In any case where the offer notice was not one to which section 5B applied, the disposal requires that the deposit and consideration are not less than those specified in the offer notice or, if higher, those agreed subject to contract between the landlord and the nominated person, and that the other terms correspond to those specified in the offer notice.",
+    "quote": "that the deposit and consideration required are not less than those specified in the offer notice or, if higher, those agreed between the landlord and the nominated person (subject to contract), and (b) that the other terms correspond to those specified in the offer notice"
+   },
+   {
+    "requirement": "The nominated person and the qualifying tenants who served the acceptance notice are not liable for any costs incurred by the landlord in connection with the disposal if notice of withdrawal is served before the end of the first four weeks of the nomination period specified in the offer notice.",
+    "quote": "the nominated person and the qualifying tenants who served the acceptance notice are not liable for any costs incurred by the landlord in connection with the disposal"
+   },
+   {
+    "requirement": "The landlord may recover from the nominated person and the qualifying tenants who served the acceptance notice any costs reasonably incurred by the landlord in connection with the disposal between the end of the first four weeks and the time when the notice of withdrawal was served, if the notice is served after the end of those four weeks.",
+    "quote": "the landlord may recover from the nominated person and the qualifying tenants who served the acceptance notice any costs reasonably incurred by him in connection with the disposal between the end of those four weeks and the time when the notice of withdrawal was served on him"
+   },
+   {
+    "requirement": "Any liability of the nominated person and the qualifying tenants who served the acceptance notice to pay the landlord's reasonably incurred disposal costs is joint and several.",
+    "quote": "Any such liability of the nominated person and those tenants is a joint and several liability"
+   },
+   {
+    "requirement": "Section 9A does not apply after a binding contract for the disposal of the protected interest has been entered into by the landlord and the nominated person, or has otherwise come into existence between them by virtue of any provision of this Part.",
+    "quote": "This section does not apply after a binding contract for the disposal of the protected interest— (a) has been entered into by the landlord and the nominated person, or (b) has otherwise come into existence between the landlord and the nominated person by virtue of any provision of this Part"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period beginning with the date of service of the notice of withdrawal during which the landlord may dispose of the protected interest",
+    "value": "12 months",
+    "quote": "the period of 12 months beginning with the date of service of the notice"
+   },
+   {
+    "what": "initial period of the nomination period specified in the offer notice before the end of which serving a notice of withdrawal exempts the nominated person and accepting qualifying tenants from liability for landlord's costs",
+    "value": "first four weeks",
+    "quote": "the first four weeks of the nomination period specified in the offer notice"
+   },
+   {
+    "what": "period of the nomination period after which serving a notice of withdrawal renders the nominated person and accepting qualifying tenants liable for the landlord's reasonably incurred costs",
+    "value": "four weeks",
+    "quote": "after the end of those four weeks"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where the landlord is obliged to proceed, the nominated person may serve a notice of withdrawal on the landlord indicating an intention no longer to proceed with the acquisition of the protected interest.",
+   "quote": "the nominated person may serve notice on the landlord (a “notice of withdrawal”) indicating his intention no longer to proceed with the acquisition of the protected interest"
+  },
+  {
+   "requirement": "The nominated person must forthwith serve a notice of withdrawal if at any time they become aware that the number of qualifying tenants of the constituent flats desiring to proceed with the acquisition of the protected interest is less than the requisite majority of qualifying tenants of those flats.",
+   "quote": "he shall forthwith serve a notice of withdrawal"
+  },
+  {
+   "requirement": "Where notice of withdrawal is given by the nominated person, the landlord may dispose of the protected interest to such person as the landlord thinks fit during the period of 12 months beginning with the date of service of the notice, subject to statutory restrictions.",
+   "quote": "the landlord may, during the period of 12 months beginning with the date of service of the notice, dispose of the protected interest to such person as he thinks fit, but subject to the following restrictions"
+  },
+  {
+   "requirement": "Where the offer notice was one to which section 5B applied concerning sale by auction, the landlord's disposal must be made by means of a sale at a public auction and the other terms must correspond to those specified in the offer notice.",
+   "quote": "that the disposal is made by means of a sale at a public auction, and (b) that the other terms correspond to those specified in the offer notice"
+  },
+  {
+   "requirement": "In any case where the offer notice was not one to which section 5B applied, the disposal requires that the deposit and consideration are not less than those specified in the offer notice or, if higher, those agreed subject to contract between the landlord and the nominated person, and that the other terms correspond to those specified in the offer notice.",
+   "quote": "that the deposit and consideration required are not less than those specified in the offer notice or, if higher, those agreed between the landlord and the nominated person (subject to contract), and (b) that the other terms correspond to those specified in the offer notice"
+  },
+  {
+   "requirement": "The nominated person and the qualifying tenants who served the acceptance notice are not liable for any costs incurred by the landlord in connection with the disposal if notice of withdrawal is served before the end of the first four weeks of the nomination period specified in the offer notice.",
+   "quote": "the nominated person and the qualifying tenants who served the acceptance notice are not liable for any costs incurred by the landlord in connection with the disposal"
+  },
+  {
+   "requirement": "The landlord may recover from the nominated person and the qualifying tenants who served the acceptance notice any costs reasonably incurred by the landlord in connection with the disposal between the end of the first four weeks and the time when the notice of withdrawal was served, if the notice is served after the end of those four weeks.",
+   "quote": "the landlord may recover from the nominated person and the qualifying tenants who served the acceptance notice any costs reasonably incurred by him in connection with the disposal between the end of those four weeks and the time when the notice of withdrawal was served on him"
+  },
+  {
+   "requirement": "Any liability of the nominated person and the qualifying tenants who served the acceptance notice to pay the landlord's reasonably incurred disposal costs is joint and several.",
+   "quote": "Any such liability of the nominated person and those tenants is a joint and several liability"
+  },
+  {
+   "requirement": "Section 9A does not apply after a binding contract for the disposal of the protected interest has been entered into by the landlord and the nominated person, or has otherwise come into existence between them by virtue of any provision of this Part.",
+   "quote": "This section does not apply after a binding contract for the disposal of the protected interest— (a) has been entered into by the landlord and the nominated person, or (b) has otherwise come into existence between the landlord and the nominated person by virtue of any provision of this Part"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period beginning with the date of service of the notice of withdrawal during which the landlord may dispose of the protected interest",
+   "value": "12 months",
+   "quote": "the period of 12 months beginning with the date of service of the notice"
+  },
+  {
+   "what": "initial period of the nomination period specified in the offer notice before the end of which serving a notice of withdrawal exempts the nominated person and accepting qualifying tenants from liability for landlord's costs",
+   "value": "first four weeks",
+   "quote": "the first four weeks of the nomination period specified in the offer notice"
+  },
+  {
+   "what": "period of the nomination period after which serving a notice of withdrawal renders the nominated person and accepting qualifying tenants liable for the landlord's reasonably incurred costs",
+   "value": "four weeks",
+   "quote": "after the end of those four weeks"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

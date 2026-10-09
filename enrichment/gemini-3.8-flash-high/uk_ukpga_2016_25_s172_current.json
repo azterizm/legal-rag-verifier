@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2016/25/s172@current",
+ "section": "uk/ukpga/2016/25/s172",
+ "version": "current",
+ "source_sha256": "d34d860e7913fee96eff40526ac6211e94d0a4c074262a2f031b070d27276683",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of section 171, the requirements of section 172 are met in relation to communications data obtained under a warrant if any selection of the data for examination is carried out only for the specified purposes.",
+    "quote": "any selection of the data for examination is carried out only for the specified purposes"
+   },
+   {
+    "requirement": "For the purposes of section 171, the requirements of section 172 are met in relation to communications data obtained under a warrant if the selection of any of the data for examination is necessary and proportionate in all the circumstances.",
+    "quote": "the selection of any of the data for examination is necessary and proportionate in all the circumstances"
+   },
+   {
+    "requirement": "The selection of communications data for examination is carried out only for the specified purposes if the data is selected for examination only so far as is necessary for the operational purposes specified in the warrant in accordance with section 161.",
+    "quote": "data is selected for examination only so far as is necessary for the operational purposes specified in the warrant in accordance with section 161"
+   },
+   {
+    "requirement": "For the purposes of subsection (2), the phrase 'specified in the warrant' means specified in the warrant at the time of the selection of the data for examination.",
+    "quote": "specified in the warrant at the time of the selection of the data for examination"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of section 171, the requirements of section 172 are met in relation to communications data obtained under a warrant if any selection of the data for examination is carried out only for the specified purposes.",
+   "quote": "any selection of the data for examination is carried out only for the specified purposes"
+  },
+  {
+   "requirement": "For the purposes of section 171, the requirements of section 172 are met in relation to communications data obtained under a warrant if the selection of any of the data for examination is necessary and proportionate in all the circumstances.",
+   "quote": "the selection of any of the data for examination is necessary and proportionate in all the circumstances"
+  },
+  {
+   "requirement": "The selection of communications data for examination is carried out only for the specified purposes if the data is selected for examination only so far as is necessary for the operational purposes specified in the warrant in accordance with section 161.",
+   "quote": "data is selected for examination only so far as is necessary for the operational purposes specified in the warrant in accordance with section 161"
+  },
+  {
+   "requirement": "For the purposes of subsection (2), the phrase 'specified in the warrant' means specified in the warrant at the time of the selection of the data for examination.",
+   "quote": "specified in the warrant at the time of the selection of the data for examination"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

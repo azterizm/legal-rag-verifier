@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2016/25/s201@current",
+ "section": "uk/ukpga/2016/25/s201",
+ "version": "current",
+ "source_sha256": "b10f138484214d66ba316b01c66ca7a060bb5e42d1ae7820c74649848559d231",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 200(1) or (2) does not apply to the exercise of an intelligence service's power to retain or examine a bulk personal dataset if the intelligence service obtained that dataset under a warrant or other authorisation issued or given under the Investigatory Powers Act 2016.",
+    "quote": "Section 200(1) or (2) does not apply to the exercise of a power of an intelligence service to retain or (as the case may be) examine a bulk personal dataset if the intelligence service obtained the bulk personal dataset under a warrant or other authorisation issued or given under this Act."
+   },
+   {
+    "requirement": "Section 200(1) or (2) does not apply at any time when a bulk personal dataset is being retained or examined for the purpose of enabling any information contained within it to be destroyed.",
+    "quote": "Section 200(1) or (2) does not apply at any time when a bulk personal dataset is being retained or (as the case may be) examined for the purpose of enabling any of the information contained in it to be destroyed."
+   },
+   {
+    "requirement": "Sections 210(8), 219(8), 220(5) and (6), and 226CC(3) provide for other exceptions to section 200(1) or (2) in connection with initial examinations, the non-renewal or cancellation of BPD warrants or authorisations under Part 7A, and cases where a Judicial Commissioner refuses to approve a specific BPD warrant.",
+    "quote": "Sections 210(8), 219(8) , 220(5) and (6) and 226CC(3) provide for other exceptions to section 200(1) or (2) (in connection with cases where a Judicial Commissioner refuses to approve a specific BPD warrant, the non-renewal or cancellation of BPD warrants or authorisations under Part 7A and initial examinations)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 200(1) or (2) does not apply to the exercise of an intelligence service's power to retain or examine a bulk personal dataset if the intelligence service obtained that dataset under a warrant or other authorisation issued or given under the Investigatory Powers Act 2016.",
+   "quote": "Section 200(1) or (2) does not apply to the exercise of a power of an intelligence service to retain or (as the case may be) examine a bulk personal dataset if the intelligence service obtained the bulk personal dataset under a warrant or other authorisation issued or given under this Act."
+  },
+  {
+   "requirement": "Section 200(1) or (2) does not apply at any time when a bulk personal dataset is being retained or examined for the purpose of enabling any information contained within it to be destroyed.",
+   "quote": "Section 200(1) or (2) does not apply at any time when a bulk personal dataset is being retained or (as the case may be) examined for the purpose of enabling any of the information contained in it to be destroyed."
+  },
+  {
+   "requirement": "Sections 210(8), 219(8), 220(5) and (6), and 226CC(3) provide for other exceptions to section 200(1) or (2) in connection with initial examinations, the non-renewal or cancellation of BPD warrants or authorisations under Part 7A, and cases where a Judicial Commissioner refuses to approve a specific BPD warrant.",
+   "quote": "Sections 210(8), 219(8) , 220(5) and (6) and 226CC(3) provide for other exceptions to section 200(1) or (2) (in connection with cases where a Judicial Commissioner refuses to approve a specific BPD warrant, the non-renewal or cancellation of BPD warrants or authorisations under Part 7A and initial examinations)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

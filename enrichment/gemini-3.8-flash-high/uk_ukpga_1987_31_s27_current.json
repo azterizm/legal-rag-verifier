@@ -1,0 +1,130 @@
+{
+ "key": "uk/ukpga/1987/31/s27@current",
+ "section": "uk/ukpga/1987/31/s27",
+ "version": "current",
+ "source_sha256": "65de2366096d3cbc9be9e6b725bc05cb7cf5dd48c510cfd093a6e2a9f7300fcb",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Before an application for an acquisition order is made in respect of any premises to which this Part applies, a notice under section 27 must, subject to court dispensation under subsection (3), be served on the landlord by qualifying tenants of the flats contained in the premises who constitute the requisite majority of such tenants at the date of service.",
+    "quote": "must (subject to subsection (3)) be served on the landlord by qualifying tenants of the flats contained in the premises who, at the date when it is served, constitute the requisite majority of such tenants"
+   },
+   {
+    "requirement": "A notice under section 27 must specify the names of the qualifying tenants serving it, the addresses of their flats, and the name and England and Wales address of a person on whom the landlord may serve notices in connection with this Part instead of serving them on those tenants.",
+    "quote": "specify the names of the qualifying tenants by whom it is served, the addresses of their flats and the name and the address in England and Wales of a person on whom the landlord may serve notices (including notices in proceedings) in connection with this Part instead of serving them on those tenants"
+   },
+   {
+    "requirement": "A notice under section 27 must state that the qualifying tenants intend to make an application to the court for an acquisition order in respect of specified premises to which this Part applies, but, if paragraph (d) applies, that they will not do so if the landlord complies with the remedying requirement specified under that paragraph.",
+    "quote": "state that those tenants intend to make an application for an acquisition order to be made by the court in respect of such premises to which this Part applies as are specified in the notice, but (if paragraph (d) is applicable) that they will not do so if the landlord complies with the requirement specified in pursuance of that paragraph"
+   },
+   {
+    "requirement": "A notice under section 27 must specify the grounds on which the court would be asked to make an acquisition order and the matters that the tenants would rely on to establish those grounds.",
+    "quote": "specify the grounds on which the court would be asked to make such an order and the matters that would be relied on by the tenants for the purpose of establishing those grounds"
+   },
+   {
+    "requirement": "Where the matters relied on by the tenants are capable of being remedied by the landlord, the notice under section 27 must require the landlord to take specified remedying steps within such reasonable period as is specified in the notice.",
+    "quote": "where those matters are capable of being remedied by the landlord, require the landlord, within such reasonable period as is specified in the notice, to take such steps for the purpose of remedying them as are so specified"
+   },
+   {
+    "requirement": "A notice under section 27 must contain such information, if any, as the Secretary of State may prescribe by regulations.",
+    "quote": "contain such information (if any) as the Secretary of State may by regulations prescribe"
+   },
+   {
+    "requirement": "The court may by order dispense with the requirement to serve a notice under section 27 where it is satisfied that it would not be reasonably practicable to serve such a notice on the landlord.",
+    "quote": "The court may by order dispense with the requirement to serve a notice under this section in a case where it is satisfied that it would not be reasonably practicable to serve such a notice on the landlord"
+   },
+   {
+    "requirement": "When dispensing with the requirement to serve a notice under section 27, the court may direct that such other notices are served, or such other steps are taken, as it thinks fit.",
+    "quote": "the court may, when doing so, direct that such other notices are served, or such other steps are taken, as it thinks fit"
+   },
+   {
+    "requirement": "The requisite majority of qualifying tenants of the flats contained in any premises means qualifying tenants of those flats holding not less than two-thirds of the available votes.",
+    "quote": "requisite majority of qualifying tenants of the flats contained in any premises is a reference to qualifying tenants of the flats so contained with not less than two-thirds of the available votes"
+   },
+   {
+    "requirement": "The total number of available votes corresponds to the total number of flats contained in the premises that are for the time being let to qualifying tenants.",
+    "quote": "the total number of available votes shall correspond to the total number of those flats for the time being let to qualifying tenants"
+   },
+   {
+    "requirement": "There is one available vote in respect of each flat let to a qualifying tenant, which must be attributed to the qualifying tenant to whom the flat is let.",
+    "quote": "there shall be one available vote in respect of each of the flats so let which shall be attributed to the qualifying tenant to whom it is let"
+   },
+   {
+    "requirement": "The persons constituting a majority of qualifying tenants in any one context under this Part are not required to be the same as the persons constituting such a majority in any other context.",
+    "quote": "Nothing in this Part shall be construed as requiring the persons constituting any such majority in any one context to be the same as the persons constituting any such majority in any other context"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum proportion of available votes required to constitute the requisite majority of qualifying tenants",
+    "value": "two-thirds",
+    "quote": "not less than two-thirds of the available votes"
+   },
+   {
+    "what": "number of available votes allocated per flat let to a qualifying tenant",
+    "value": "one",
+    "quote": "one available vote in respect of each of the flats so let"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Before an application for an acquisition order is made in respect of any premises to which this Part applies, a notice under section 27 must, subject to court dispensation under subsection (3), be served on the landlord by qualifying tenants of the flats contained in the premises who constitute the requisite majority of such tenants at the date of service.",
+   "quote": "must (subject to subsection (3)) be served on the landlord by qualifying tenants of the flats contained in the premises who, at the date when it is served, constitute the requisite majority of such tenants"
+  },
+  {
+   "requirement": "A notice under section 27 must specify the names of the qualifying tenants serving it, the addresses of their flats, and the name and England and Wales address of a person on whom the landlord may serve notices in connection with this Part instead of serving them on those tenants.",
+   "quote": "specify the names of the qualifying tenants by whom it is served, the addresses of their flats and the name and the address in England and Wales of a person on whom the landlord may serve notices (including notices in proceedings) in connection with this Part instead of serving them on those tenants"
+  },
+  {
+   "requirement": "A notice under section 27 must state that the qualifying tenants intend to make an application to the court for an acquisition order in respect of specified premises to which this Part applies, but, if paragraph (d) applies, that they will not do so if the landlord complies with the remedying requirement specified under that paragraph.",
+   "quote": "state that those tenants intend to make an application for an acquisition order to be made by the court in respect of such premises to which this Part applies as are specified in the notice, but (if paragraph (d) is applicable) that they will not do so if the landlord complies with the requirement specified in pursuance of that paragraph"
+  },
+  {
+   "requirement": "A notice under section 27 must specify the grounds on which the court would be asked to make an acquisition order and the matters that the tenants would rely on to establish those grounds.",
+   "quote": "specify the grounds on which the court would be asked to make such an order and the matters that would be relied on by the tenants for the purpose of establishing those grounds"
+  },
+  {
+   "requirement": "Where the matters relied on by the tenants are capable of being remedied by the landlord, the notice under section 27 must require the landlord to take specified remedying steps within such reasonable period as is specified in the notice.",
+   "quote": "where those matters are capable of being remedied by the landlord, require the landlord, within such reasonable period as is specified in the notice, to take such steps for the purpose of remedying them as are so specified"
+  },
+  {
+   "requirement": "A notice under section 27 must contain such information, if any, as the Secretary of State may prescribe by regulations.",
+   "quote": "contain such information (if any) as the Secretary of State may by regulations prescribe"
+  },
+  {
+   "requirement": "The court may by order dispense with the requirement to serve a notice under section 27 where it is satisfied that it would not be reasonably practicable to serve such a notice on the landlord.",
+   "quote": "The court may by order dispense with the requirement to serve a notice under this section in a case where it is satisfied that it would not be reasonably practicable to serve such a notice on the landlord"
+  },
+  {
+   "requirement": "When dispensing with the requirement to serve a notice under section 27, the court may direct that such other notices are served, or such other steps are taken, as it thinks fit.",
+   "quote": "the court may, when doing so, direct that such other notices are served, or such other steps are taken, as it thinks fit"
+  },
+  {
+   "requirement": "The requisite majority of qualifying tenants of the flats contained in any premises means qualifying tenants of those flats holding not less than two-thirds of the available votes.",
+   "quote": "requisite majority of qualifying tenants of the flats contained in any premises is a reference to qualifying tenants of the flats so contained with not less than two-thirds of the available votes"
+  },
+  {
+   "requirement": "The total number of available votes corresponds to the total number of flats contained in the premises that are for the time being let to qualifying tenants.",
+   "quote": "the total number of available votes shall correspond to the total number of those flats for the time being let to qualifying tenants"
+  },
+  {
+   "requirement": "There is one available vote in respect of each flat let to a qualifying tenant, which must be attributed to the qualifying tenant to whom the flat is let.",
+   "quote": "there shall be one available vote in respect of each of the flats so let which shall be attributed to the qualifying tenant to whom it is let"
+  },
+  {
+   "requirement": "The persons constituting a majority of qualifying tenants in any one context under this Part are not required to be the same as the persons constituting such a majority in any other context.",
+   "quote": "Nothing in this Part shall be construed as requiring the persons constituting any such majority in any one context to be the same as the persons constituting any such majority in any other context"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/2002/38/s129@current",
+ "section": "uk/ukpga/2002/38/s129",
+ "version": "current",
+ "source_sha256": "608501da4695a189b374e62c15f77807c82a8fc95c293ac03a75c529dff20e4d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Information entered in the register, or compiled from information entered in the register, must not be disclosed except under subsection (2), (2A), or (3) of section 129, or section 128A.",
+    "quote": "may only be disclosed under subsection (2), (2A) or (3) or section 128A"
+   },
+   {
+    "requirement": "The Secretary of State or the registration organisation may disclose prescribed information entered in the register to an adoption agency acting on behalf of a child who is suitable for adoption, or for whom a local authority in England is considering adoption, to assist in finding prospective adopters with whom it would be appropriate for the child to be placed.",
+    "quote": "Prescribed information entered in the register may be disclosed by the Secretary of State or the registration organisation— (a) where an adoption agency is acting on behalf of a child who is suitable for adoption or for whom a local authority in England is considering adoption, to the agency to assist in finding prospective adopters"
+   },
+   {
+    "requirement": "The Secretary of State or the registration organisation may disclose prescribed information entered in the register to an adoption agency acting on behalf of prospective adopters who are suitable to adopt a child, to assist in finding a child appropriate for adoption by them.",
+    "quote": "where an adoption agency is acting on behalf of prospective adopters who are suitable to adopt a child, to the agency to assist in finding a child appropriate for adoption by them"
+   },
+   {
+    "requirement": "Regulations may permit the disclosure of prescribed information entered in the register, or compiled from information entered in the register, to an adoption agency or to a Welsh, Scottish, or Northern Irish adoption agency for any prescribed purpose.",
+    "quote": "Regulations may make provision permitting the disclosure of prescribed information entered in the register, or compiled from information entered in the register— (a) to an adoption agency or to a Welsh, Scottish or Northern Irish adoption agency for any prescribed purpose"
+   },
+   {
+    "requirement": "Regulations may permit the disclosure of prescribed information entered in the register, or compiled from information entered in the register, for the purpose of enabling the information to be entered in a register maintained in respect of Wales, Scotland, or Northern Ireland containing information about children suitable for adoption or prospective adopters suitable to adopt a child.",
+    "quote": "for the purpose of enabling the information to be entered in a register which is maintained in respect of Wales, Scotland or Northern Ireland and which contains information about children who are suitable for adoption or prospective adopters who are suitable to adopt a child"
+   },
+   {
+    "requirement": "The Secretary of State or the registration organisation may disclose prescribed information entered in the register, or compiled from information entered in the register, to any prescribed person for statistical, research, or other prescribed purposes.",
+    "quote": "Prescribed information entered in the register, or compiled from information entered in the register, may be disclosed by the Secretary of State or the registration organisation to any prescribed person for use for statistical or research purposes, or for other prescribed purposes"
+   },
+   {
+    "requirement": "Regulations may prescribe the steps to be taken by adoption agencies in respect of information received by them under subsection (2) or (2A).",
+    "quote": "Regulations may prescribe the steps to be taken by adoption agencies in respect of information received by them by virtue of subsection (2) or (2A)"
+   },
+   {
+    "requirement": "The general restriction on disclosure does not apply to a disclosure of information made with the authority of the Secretary of State.",
+    "quote": "Subsection (1) does not apply — (a) to a disclosure of information with the authority of the Secretary of State"
+   },
+   {
+    "requirement": "Information disclosed to any person under subsection (2), (2A), or (3) may be given on any prescribed terms or conditions.",
+    "quote": "Information disclosed to any person under subsection (2), (2A) or (3) may be given on any prescribed terms or conditions"
+   },
+   {
+    "requirement": "Regulations may in prescribed circumstances require a prescribed fee to be paid to the Secretary of State or the registration organisation by a prescribed adoption agency in respect of information disclosed under subsection (2) or (2A).",
+    "quote": "by a prescribed adoption agency in respect of information disclosed under subsection (2) or (2A)"
+   },
+   {
+    "requirement": "Regulations may in prescribed circumstances require a prescribed fee to be paid to the Secretary of State or the registration organisation by a prescribed Welsh, Scottish, or Northern Irish adoption agency in respect of information disclosed under subsection (2A).",
+    "quote": "by a prescribed Welsh, Scottish or Northern Irish adoption agency in respect of information disclosed under subsection (2A)"
+   },
+   {
+    "requirement": "Regulations may in prescribed circumstances require a prescribed fee to be paid to the Secretary of State or the registration organisation by a person in respect of information disclosed under subsection (2A) or (3).",
+    "quote": "by a person in respect of information disclosed under subsection (2A) or (3)"
+   },
+   {
+    "requirement": "A person who discloses information entered in the register in contravention of subsection (1) commits a criminal offence.",
+    "quote": "If any information entered in the register is disclosed to a person in contravention of subsection (1), the person disclosing it is guilty of an offence"
+   },
+   {
+    "requirement": "A person guilty of an unlawful disclosure offence under subsection (8) is liable on summary conviction to imprisonment, a fine, or both.",
+    "quote": "A person guilty of an offence under subsection (8) is liable on summary conviction to imprisonment for a term not exceeding three months, or a fine not exceeding level 5 on the standard scale, or both"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on summary conviction for unlawful disclosure of information entered in the register",
+    "value": "three months",
+    "quote": "term not exceeding three months"
+   },
+   {
+    "what": "maximum fine level on the standard scale on summary conviction for unlawful disclosure of information entered in the register",
+    "value": "level 5",
+    "quote": "fine not exceeding level 5 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Information entered in the register, or compiled from information entered in the register, must not be disclosed except under subsection (2), (2A), or (3) of section 129, or section 128A.",
+   "quote": "may only be disclosed under subsection (2), (2A) or (3) or section 128A"
+  },
+  {
+   "requirement": "The Secretary of State or the registration organisation may disclose prescribed information entered in the register to an adoption agency acting on behalf of a child who is suitable for adoption, or for whom a local authority in England is considering adoption, to assist in finding prospective adopters with whom it would be appropriate for the child to be placed.",
+   "quote": "Prescribed information entered in the register may be disclosed by the Secretary of State or the registration organisation— (a) where an adoption agency is acting on behalf of a child who is suitable for adoption or for whom a local authority in England is considering adoption, to the agency to assist in finding prospective adopters"
+  },
+  {
+   "requirement": "The Secretary of State or the registration organisation may disclose prescribed information entered in the register to an adoption agency acting on behalf of prospective adopters who are suitable to adopt a child, to assist in finding a child appropriate for adoption by them.",
+   "quote": "where an adoption agency is acting on behalf of prospective adopters who are suitable to adopt a child, to the agency to assist in finding a child appropriate for adoption by them"
+  },
+  {
+   "requirement": "Regulations may permit the disclosure of prescribed information entered in the register, or compiled from information entered in the register, to an adoption agency or to a Welsh, Scottish, or Northern Irish adoption agency for any prescribed purpose.",
+   "quote": "Regulations may make provision permitting the disclosure of prescribed information entered in the register, or compiled from information entered in the register— (a) to an adoption agency or to a Welsh, Scottish or Northern Irish adoption agency for any prescribed purpose"
+  },
+  {
+   "requirement": "Regulations may permit the disclosure of prescribed information entered in the register, or compiled from information entered in the register, for the purpose of enabling the information to be entered in a register maintained in respect of Wales, Scotland, or Northern Ireland containing information about children suitable for adoption or prospective adopters suitable to adopt a child.",
+   "quote": "for the purpose of enabling the information to be entered in a register which is maintained in respect of Wales, Scotland or Northern Ireland and which contains information about children who are suitable for adoption or prospective adopters who are suitable to adopt a child"
+  },
+  {
+   "requirement": "The Secretary of State or the registration organisation may disclose prescribed information entered in the register, or compiled from information entered in the register, to any prescribed person for statistical, research, or other prescribed purposes.",
+   "quote": "Prescribed information entered in the register, or compiled from information entered in the register, may be disclosed by the Secretary of State or the registration organisation to any prescribed person for use for statistical or research purposes, or for other prescribed purposes"
+  },
+  {
+   "requirement": "Regulations may prescribe the steps to be taken by adoption agencies in respect of information received by them under subsection (2) or (2A).",
+   "quote": "Regulations may prescribe the steps to be taken by adoption agencies in respect of information received by them by virtue of subsection (2) or (2A)"
+  },
+  {
+   "requirement": "The general restriction on disclosure does not apply to a disclosure of information made with the authority of the Secretary of State.",
+   "quote": "Subsection (1) does not apply — (a) to a disclosure of information with the authority of the Secretary of State"
+  },
+  {
+   "requirement": "Information disclosed to any person under subsection (2), (2A), or (3) may be given on any prescribed terms or conditions.",
+   "quote": "Information disclosed to any person under subsection (2), (2A) or (3) may be given on any prescribed terms or conditions"
+  },
+  {
+   "requirement": "Regulations may in prescribed circumstances require a prescribed fee to be paid to the Secretary of State or the registration organisation by a prescribed adoption agency in respect of information disclosed under subsection (2) or (2A).",
+   "quote": "by a prescribed adoption agency in respect of information disclosed under subsection (2) or (2A)"
+  },
+  {
+   "requirement": "Regulations may in prescribed circumstances require a prescribed fee to be paid to the Secretary of State or the registration organisation by a prescribed Welsh, Scottish, or Northern Irish adoption agency in respect of information disclosed under subsection (2A).",
+   "quote": "by a prescribed Welsh, Scottish or Northern Irish adoption agency in respect of information disclosed under subsection (2A)"
+  },
+  {
+   "requirement": "Regulations may in prescribed circumstances require a prescribed fee to be paid to the Secretary of State or the registration organisation by a person in respect of information disclosed under subsection (2A) or (3).",
+   "quote": "by a person in respect of information disclosed under subsection (2A) or (3)"
+  },
+  {
+   "requirement": "A person who discloses information entered in the register in contravention of subsection (1) commits a criminal offence.",
+   "quote": "If any information entered in the register is disclosed to a person in contravention of subsection (1), the person disclosing it is guilty of an offence"
+  },
+  {
+   "requirement": "A person guilty of an unlawful disclosure offence under subsection (8) is liable on summary conviction to imprisonment, a fine, or both.",
+   "quote": "A person guilty of an offence under subsection (8) is liable on summary conviction to imprisonment for a term not exceeding three months, or a fine not exceeding level 5 on the standard scale, or both"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on summary conviction for unlawful disclosure of information entered in the register",
+   "value": "three months",
+   "quote": "term not exceeding three months"
+  },
+  {
+   "what": "maximum fine level on the standard scale on summary conviction for unlawful disclosure of information entered in the register",
+   "value": "level 5",
+   "quote": "fine not exceeding level 5 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

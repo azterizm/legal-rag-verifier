@@ -1,0 +1,169 @@
+{
+ "key": "uk/ukpga/1984/51/s43@current",
+ "section": "uk/ukpga/1984/51/s43",
+ "version": "current",
+ "source_sha256": "fe1260a6a1a2bac87240ee48c7c69f3529689ac73ab1f34d78315bcbbedbd474",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 43 of the Inheritance Tax Act 1984 sets out the provisions that determine what constitutes a settlement and what property is comprised in a settlement or treated as settled property for the purposes of the Act.",
+    "quote": "apply for determining what is to be taken for the purposes of this Act to be a settlement, and what property is, accordingly, referred to as property comprised in a settlement or as settled property"
+   },
+   {
+    "requirement": "A settlement means any disposition or dispositions of property, whether made by instrument, orally, by operation of law, or partly by one method and partly by another.",
+    "quote": "“Settlement” means any disposition or dispositions of property, whether effected by instrument, by parol or by operation of law, or partly in one way and partly in another"
+   },
+   {
+    "requirement": "A disposition of property constitutes a settlement if the property is for the time being held in trust for persons in succession or for any person subject to a contingency.",
+    "quote": "held in trust for persons in succession or for any person subject to a contingency"
+   },
+   {
+    "requirement": "A disposition of property constitutes a settlement if the property is for the time being held by trustees on trust to accumulate all or part of its income, or with power to distribute that income at the discretion of the trustees or another person, whether or not there is a power to accumulate surplus income.",
+    "quote": "held by trustees on trust to accumulate the whole or part of any income of the property or with power to make payments out of that income at the discretion of the trustees or some other person, with or without power to accumulate surplus income"
+   },
+   {
+    "requirement": "A disposition of property constitutes a settlement if the property is charged or burdened with an annuity or other periodical payment for a life or any other limited or terminable period, unless it was charged or burdened for full consideration in money or money’s worth paid to the disponer for their own use or benefit.",
+    "quote": "charged or burdened (otherwise than for full consideration in money or money’s worth paid for his own use or benefit to the person making the disposition) with the payment of any annuity or other periodical payment payable for a life or any other limited or terminable period"
+   },
+   {
+    "requirement": "Property constitutes settled property if it would be held, charged, or burdened under the qualifying statutory trust or charge conditions had the disposition or dispositions been regulated by the law of any part of the United Kingdom.",
+    "quote": "would be so held or charged or burdened if the disposition or dispositions were regulated by the law of any part of the United Kingdom"
+   },
+   {
+    "requirement": "Property constitutes settled property if, under the law of any other country, its administration is for the time being governed by provisions equivalent in effect to those that would apply if the property were held, charged, or burdened under the statutory conditions.",
+    "quote": "under the law of any other country, the administration of the property is for the time being governed by provisions equivalent in effect to those which would apply if the property were so held, charged or burdened"
+   },
+   {
+    "requirement": "A lease of property for life or lives, for a period ascertainable only by reference to a death, or terminable on or at a date ascertainable only by reference to a death, is treated as a settlement and the property as settled property, unless the lease was granted for full consideration in money or money’s worth.",
+    "quote": "A lease of property which is for life or lives, or for a period ascertainable only by reference to a death, or which is terminable on, or at a date ascertainable only by reference to, a death, shall be treated as a settlement and the property as settled property, unless the lease was granted for full consideration in money or money’s worth"
+   },
+   {
+    "requirement": "A lease that was not granted at a rack rent and is at any time to become a lease at an increased rent is treated as terminable at the time the rent increases.",
+    "quote": "where a lease not granted as a lease at a rack rent is at any time to become a lease at an increased rent it shall be treated as terminable at that time"
+   },
+   {
+    "requirement": "In relation to Scotland, a settlement includes an entail.",
+    "quote": "In relation to Scotland “settlement” also includes— (a) an entail"
+   },
+   {
+    "requirement": "In relation to Scotland, a settlement includes any deed charging an annuity on any property or on the rents of any property, and that property is treated as property comprised in the settlement.",
+    "quote": "any deed by virtue of which an annuity is charged on, or on the rents of, any property (the property being treated as the property comprised in the settlement)"
+   },
+   {
+    "requirement": "In relation to Scotland, a settlement includes any deed creating or reserving a proper liferent of heritable or moveable property, and the property subject to the proper liferent from time to time is treated as property comprised in the settlement.",
+    "quote": "any deed creating or reserving a proper liferent of any property whether heritable or moveable (the property from time to time subject to the proper liferent being treated as the property comprised in the settlement)"
+   },
+   {
+    "requirement": "For the Scottish provisions of section 43(4), the term 'deed' includes any disposition, arrangement, contract, resolution, instrument, or writing.",
+    "quote": "for the purposes of this subsection “deed” includes any disposition, arrangement, contract, resolution, instrument or writing"
+   },
+   {
+    "requirement": "In the application of the Inheritance Tax Act 1984 to Northern Ireland, statutory references to property held in trust for persons must be read to include references to property standing limited to persons.",
+    "quote": "In the application of this Act to Northern Ireland this section shall have effect as if references to property held in trust for persons included references to property standing limited to persons"
+   },
+   {
+    "requirement": "In Northern Ireland, the lease provisions of section 43(3) do not apply to a lease in perpetuity within the meaning of section 1 of the Renewable Leasehold Conversion Act 1849 or to a lease to which section 37 of that Act applies.",
+    "quote": "as if the lease referred to in subsection (3) did not include a lease in perpetuity within the meaning of section 1 of the Renewable Leasehold Conversion Act 1849 or a lease to which section 37 of that Act applies"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Duration for which a qualifying annuity or periodical payment is payable under a settlement charge or burden",
+    "value": "a life or any other limited or terminable period",
+    "quote": "payable for a life or any other limited or terminable period"
+   },
+   {
+    "what": "Duration of a lease treated as a settlement",
+    "value": "for life or lives, or for a period ascertainable only by reference to a death",
+    "quote": "lease of property which is for life or lives, or for a period ascertainable only by reference to a death"
+   },
+   {
+    "what": "Calendar year of the Renewable Leasehold Conversion Act cited for Northern Ireland lease exceptions",
+    "value": "1849",
+    "quote": "Renewable Leasehold Conversion Act 1849"
+   },
+   {
+    "what": "Section number of the Renewable Leasehold Conversion Act 1849 defining a lease in perpetuity",
+    "value": "1",
+    "quote": "section 1 of the Renewable Leasehold Conversion Act 1849"
+   },
+   {
+    "what": "Section number of the Renewable Leasehold Conversion Act 1849 governing exempt leases",
+    "value": "37",
+    "quote": "section 37 of that Act applies"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 43 of the Inheritance Tax Act 1984 sets out the provisions that determine what constitutes a settlement and what property is comprised in a settlement or treated as settled property for the purposes of the Act.",
+   "quote": "apply for determining what is to be taken for the purposes of this Act to be a settlement, and what property is, accordingly, referred to as property comprised in a settlement or as settled property"
+  },
+  {
+   "requirement": "A settlement means any disposition or dispositions of property, whether made by instrument, orally, by operation of law, or partly by one method and partly by another.",
+   "quote": "“Settlement” means any disposition or dispositions of property, whether effected by instrument, by parol or by operation of law, or partly in one way and partly in another"
+  },
+  {
+   "requirement": "A disposition of property constitutes a settlement if the property is for the time being held in trust for persons in succession or for any person subject to a contingency.",
+   "quote": "held in trust for persons in succession or for any person subject to a contingency"
+  },
+  {
+   "requirement": "A disposition of property constitutes a settlement if the property is for the time being held by trustees on trust to accumulate all or part of its income, or with power to distribute that income at the discretion of the trustees or another person, whether or not there is a power to accumulate surplus income.",
+   "quote": "held by trustees on trust to accumulate the whole or part of any income of the property or with power to make payments out of that income at the discretion of the trustees or some other person, with or without power to accumulate surplus income"
+  },
+  {
+   "requirement": "A disposition of property constitutes a settlement if the property is charged or burdened with an annuity or other periodical payment for a life or any other limited or terminable period, unless it was charged or burdened for full consideration in money or money’s worth paid to the disponer for their own use or benefit.",
+   "quote": "charged or burdened (otherwise than for full consideration in money or money’s worth paid for his own use or benefit to the person making the disposition) with the payment of any annuity or other periodical payment payable for a life or any other limited or terminable period"
+  },
+  {
+   "requirement": "Property constitutes settled property if it would be held, charged, or burdened under the qualifying statutory trust or charge conditions had the disposition or dispositions been regulated by the law of any part of the United Kingdom.",
+   "quote": "would be so held or charged or burdened if the disposition or dispositions were regulated by the law of any part of the United Kingdom"
+  },
+  {
+   "requirement": "Property constitutes settled property if, under the law of any other country, its administration is for the time being governed by provisions equivalent in effect to those that would apply if the property were held, charged, or burdened under the statutory conditions.",
+   "quote": "under the law of any other country, the administration of the property is for the time being governed by provisions equivalent in effect to those which would apply if the property were so held, charged or burdened"
+  },
+  {
+   "requirement": "A lease of property for life or lives, for a period ascertainable only by reference to a death, or terminable on or at a date ascertainable only by reference to a death, is treated as a settlement and the property as settled property, unless the lease was granted for full consideration in money or money’s worth.",
+   "quote": "A lease of property which is for life or lives, or for a period ascertainable only by reference to a death, or which is terminable on, or at a date ascertainable only by reference to, a death, shall be treated as a settlement and the property as settled property, unless the lease was granted for full consideration in money or money’s worth"
+  },
+  {
+   "requirement": "A lease that was not granted at a rack rent and is at any time to become a lease at an increased rent is treated as terminable at the time the rent increases.",
+   "quote": "where a lease not granted as a lease at a rack rent is at any time to become a lease at an increased rent it shall be treated as terminable at that time"
+  },
+  {
+   "requirement": "In relation to Scotland, a settlement includes an entail.",
+   "quote": "In relation to Scotland “settlement” also includes— (a) an entail"
+  },
+  {
+   "requirement": "In relation to Scotland, a settlement includes any deed charging an annuity on any property or on the rents of any property, and that property is treated as property comprised in the settlement.",
+   "quote": "any deed by virtue of which an annuity is charged on, or on the rents of, any property (the property being treated as the property comprised in the settlement)"
+  },
+  {
+   "requirement": "In relation to Scotland, a settlement includes any deed creating or reserving a proper liferent of heritable or moveable property, and the property subject to the proper liferent from time to time is treated as property comprised in the settlement.",
+   "quote": "any deed creating or reserving a proper liferent of any property whether heritable or moveable (the property from time to time subject to the proper liferent being treated as the property comprised in the settlement)"
+  },
+  {
+   "requirement": "For the Scottish provisions of section 43(4), the term 'deed' includes any disposition, arrangement, contract, resolution, instrument, or writing.",
+   "quote": "for the purposes of this subsection “deed” includes any disposition, arrangement, contract, resolution, instrument or writing"
+  },
+  {
+   "requirement": "In the application of the Inheritance Tax Act 1984 to Northern Ireland, statutory references to property held in trust for persons must be read to include references to property standing limited to persons.",
+   "quote": "In the application of this Act to Northern Ireland this section shall have effect as if references to property held in trust for persons included references to property standing limited to persons"
+  },
+  {
+   "requirement": "In Northern Ireland, the lease provisions of section 43(3) do not apply to a lease in perpetuity within the meaning of section 1 of the Renewable Leasehold Conversion Act 1849 or to a lease to which section 37 of that Act applies.",
+   "quote": "as if the lease referred to in subsection (3) did not include a lease in perpetuity within the meaning of section 1 of the Renewable Leasehold Conversion Act 1849 or a lease to which section 37 of that Act applies"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 0
+ }
+}

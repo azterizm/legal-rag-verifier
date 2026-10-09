@@ -1,0 +1,3778 @@
+[
+ {
+  "id": "pl-001",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/12/s125A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-002",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/12/s279A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-003",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/1/s569"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-004",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2018/12/s74AA"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-005",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2009/4/s46"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-006",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/3/s294"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-007",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/29/s38"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-008",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/5/s643ZA"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-009",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/64/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-010",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/29/s288A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-011",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/1/s342"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-012",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/46/s1059A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-013",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/46/s1112A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-014",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/3/s686"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-015",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/14/s44"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-016",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/68/s392"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-017",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/5/s83"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-018",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/52/s50Q"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-019",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2009/4/s472"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-020",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/1/s61F"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-021",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/43/s121"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-022",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/29/s67D"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-023",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2020/17/s171"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-024",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/33/s102"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-025",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/9/s33"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-026",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/3/s668"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-027",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/3/s257SG"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-028",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/3/s627"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-029",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/29/s127I"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-030",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/46/s237"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-031",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1993/28/s176"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-032",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/46/s920"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-033",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2009/4/s1220"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-034",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/25/s6C"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-035",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/29/s151"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-036",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/52/s286"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-037",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/46/s1225"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-038",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/8/s143I"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-039",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/52/s58"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-040",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/44/s16"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-041",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/68/s599"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-042",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/3/s139"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-043",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2020/17/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-044",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2009/4/s233"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-045",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2009/4/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-046",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/52/s189B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-047",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/52/s60"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-048",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2009/4/s846"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-049",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/1/s60F"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-050",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/8/s165A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-051",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/46/s313"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-052",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/15/s27"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-053",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/8/s137FBC"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-054",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/52/s122"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-055",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/29/s297C"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-056",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/25/s6A"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-057",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/1/s406"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-058",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/1/s610"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-059",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2020/17/s89"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-060",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/18/s134"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-061",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/52/s110"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-062",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/33/s115"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-063",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/8/s229"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-064",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/44/s310"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-065",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2016/25/s83"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-066",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/8/s192I"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-067",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/8/s3RC"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-068",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/12/s59A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-069",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/5/s25B"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-070",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/12/s236Q"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-071",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/43/s24"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-072",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2020/17/s235"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-073",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/33/s27"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-074",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/58/s39"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-075",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/52/s87"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-076",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2016/25/s192"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-077",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2016/25/s201"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-078",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/15/s56"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-079",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/52/s51ZA"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-080",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/9/s47"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-081",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/68/s406"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-082",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/5/s227B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-083",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2004/34/s108"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-084",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/9/s1"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-085",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/50/s103"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-086",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/27/s63D"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-087",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/18/s68C"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-088",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/51/s223H"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-089",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/36/s31"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-090",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/18/s185"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-091",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/12/s151Y"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-092",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/50/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-093",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/50/s129"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-094",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/45/s56"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-095",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/33/s30"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-096",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/9/s66"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-097",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/43/s3"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-098",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/52/s100CC"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-099",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/25/s24"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-100",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/45/s166"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-101",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/45/s251Q"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-102",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1993/28/s149"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-103",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/12/s262"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-104",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/15/s86"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-105",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/68/s364"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-106",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/46/s23"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-107",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/52/s50"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-108",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/52/s195"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-109",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/51/s143"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-110",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/5/s112"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-111",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/15/s110"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-112",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/52/s252"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-113",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1992/52/s242"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-114",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/14/s73"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-115",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/45/s251G"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-116",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/45/s54"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-117",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/70/s30D"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-118",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1995/30/s16"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-119",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1979/54/s14"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-120",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/11/s43"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-121",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/44/s318"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-122",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/9/s52"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-123",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/15/s172"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-124",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/5/s481"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-125",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2016/25/s172"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-126",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2013/29/s181"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-127",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/31/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-128",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/68/s109"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-129",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/18/s27BS"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-130",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1970/9/s100D"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-131",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/68/s98"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-132",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/9/s34"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-133",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/41/s21"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-134",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2016/25/s58"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-135",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2021/17/s74"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-136",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/18/s58"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-137",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2016/25/s44"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-138",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/18/s17"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-139",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/52/s45"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-140",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/51/s62B"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-141",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2020/17/s215"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-142",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/41/s23B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-143",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/11/s72"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-144",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/33/s116"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-145",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/45/s136"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-146",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/39/s31"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-147",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/44/s90"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-148",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2020/17/s338"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-149",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/25/s67"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-150",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/33/s60A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-151",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/15/s29"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-152",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/51/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-153",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/52/s99B"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-154",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/38/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-155",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/46/s11A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-156",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1973/18/s16"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-157",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/52/s72"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-158",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/52/s3ZD"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-159",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/15/s45"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-160",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2018/12/s123"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-161",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2013/29/s117"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-162",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2018/12/s109"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-163",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/64/s16"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-164",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/51/s218B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-165",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/15/s209"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-166",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1970/9/s106B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-167",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/43/s100"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-168",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/40/s20"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-169",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/70/s21B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-170",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2018/12/s57"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-171",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/38/s58"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-172",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/51/s43"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-173",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/31/s20"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-174",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/40/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-175",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2013/29/s165"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-176",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/9/s100"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-177",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/36/s47"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-178",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2004/34/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-179",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/23/s5A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-180",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1979/54/s37"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-181",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2018/12/s137"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-182",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/43/s17D"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-183",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1970/9/s32"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-184",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/41/s22G"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-185",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2018/12/s107"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-186",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/15/s181B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-187",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/50/s123"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-188",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/46/s8"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-189",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2021/17/s27"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-190",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/31/s46"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-191",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2013/29/s107"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-192",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/44/s19"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-193",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2004/34/s37"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-194",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2013/29/s215"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-195",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/23/s33B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-196",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1970/9/s12AD"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-197",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2015/15/s31"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-198",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/9/s57"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-199",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/23/s97"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-200",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1970/9/s70"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-201",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/43/s14"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-202",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2004/34/s118"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-203",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/50/s62"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-204",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1995/30/s7"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-205",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1988/50/s74"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-206",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2013/29/s120"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-207",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/44/s275"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-208",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/14/s51"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-209",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/9/s61"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-210",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/15/s22"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-211",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/47/s1"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-212",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/50/s20"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-213",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1993/28/s42"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-214",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/15/s80"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-215",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1975/63/s23"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-216",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/31/s11A"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-217",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/11/s107"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-218",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/11/s67"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-219",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1976/63/s13"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-220",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2015/15/s96"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-221",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1993/28/s138"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-222",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/41/s23C"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-223",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/25/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-224",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/31/s9A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-225",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/60/s2"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-226",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/25/s23"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-227",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/14/s58C"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-228",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/38/s107"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-229",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2004/34/s85"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-230",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/9/s42"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-231",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/15/s152"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-232",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/31/s27"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-233",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/43/s19"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-234",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/23/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-235",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/58/s28"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-236",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1993/28/s50"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-237",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/58/s29"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-238",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/41/s39"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-239",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/60/s63L"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-240",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2021/17/s62"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-241",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2004/34/s250"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-242",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2021/17/s21"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-243",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2005/9/s4A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-244",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/60/s46"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-245",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2015/15/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-246",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/11/s57"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-247",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1974/53/s10A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-248",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/60/s57"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-249",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1970/9/s43B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-250",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/41/s31ZA"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-251",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/14/s18"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-252",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/27/s63R"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-253",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/38/s64"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-254",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1993/28/s38"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-255",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2003/14/s138"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-256",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/60/s45ZB"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-257",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1975/63/s12"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-258",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/9/s13"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-259",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/38/s55"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-260",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2021/17/s13"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-261",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/36/s4"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-262",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2015/15/s73"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-263",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/27/s63C"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-264",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/43/s77"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-265",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1995/30/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-266",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1979/54/s36"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-267",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/46/s22B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-268",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2007/11/s84"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-269",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/70/s35"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-270",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/64/s10"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-271",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2015/15/s72"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-272",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/47/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-273",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/23/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-274",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/70/s9B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-275",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2015/15/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-276",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/64/s29I"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-277",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1984/60/s30CA"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-278",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/23/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-279",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1974/53/s5F"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-280",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/46/s22H"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-281",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/23/s85A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-282",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/47/s24"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-283",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2021/17/s49A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-284",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/43/s37"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-285",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2002/38/s129"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-286",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/70/s30C"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-287",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/23/s77E"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-288",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/46/s9E"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-289",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/64/s7"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-290",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/38/s4A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-291",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1994/23/s69C"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-292",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1973/18/s21A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-293",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1968/60/s30"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-294",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1985/70/s3A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-295",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1976/63/s12"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-296",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/20/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-297",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/23/s46"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-298",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1973/18/s24"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-299",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/39/s39"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-300",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1979/54/s3"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-301",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1968/60/s19"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-302",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/23/s78"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-303",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1974/53/s8AA"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-304",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1990/18/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-305",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/43/s16"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-306",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1986/64/s18"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-307",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/36/s64"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-308",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/50/s13"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-309",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/35/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-310",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/58/s14"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-311",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1975/63/s19"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-312",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/43/s12"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-313",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/38/s2"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-314",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/39/s38"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-315",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1975/63/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-316",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/36/s35"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-317",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/39/s47"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-318",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1990/18/s3ZA"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-319",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/23/s10"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-320",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/23/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-321",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/23/s33A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-322",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1979/54/s15B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-323",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1973/18/s25D"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-324",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1979/54/s53A"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-325",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/58/s8"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-326",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1990/18/s7"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-327",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1967/7/s3"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-328",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1974/53/s5J"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-329",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2010/23/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-330",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/20/s5A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-331",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1968/60/s17"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-332",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/36/s28"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-333",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1973/18/s25B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-334",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1995/30/s30"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-335",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/27/s38"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-336",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1995/30/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-337",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/20/s3"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-338",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/39/s17"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-339",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1980/58/s14B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-340",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/43/s41"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-341",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/40/s14"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-342",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1973/18/s28"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-343",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/39/s56"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-344",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1987/43/s48"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-345",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/20/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-346",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1974/53/s5B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-347",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1967/7/s1"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-348",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1974/53/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-349",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/23/s38"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-350",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1989/34/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-351",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1990/18/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-352",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1997/40/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-353",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/20/s7"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-354",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/27/s63K"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-355",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/23/s67"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-356",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/38/s9A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-357",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/38/s31"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-358",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/35/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-359",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1976/63/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-360",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2000/23/s77A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-361",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/40/s22"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-362",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1968/60/s12A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-363",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/43/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-364",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1976/63/s8"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-365",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/47/s19"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-366",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/38/s23"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-367",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1995/30/s17"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-368",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1976/63/s3A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-369",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/38/s12"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-370",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/27/s63S"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-371",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/47/s17"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-372",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1968/60/s36"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-373",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/50/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-374",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/47/s4"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-375",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/50/s15"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-376",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1997/40/s8"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-377",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1990/18/s16A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-378",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1976/63/s3AB"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-379",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1975/63/s13"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-380",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1990/18/s4"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-381",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1975/63/s18A"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-382",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1998/20/s16"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-383",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/43/s1A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-384",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1997/40/s4B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-385",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1997/40/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-386",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1968/60/s27"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-387",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1997/40/s8A"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-388",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/50/s25"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-389",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1999/31/s3"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-390",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/35/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-391",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/50/s21"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-392",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/48/s3"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-393",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/43/s13"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-394",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/40/s4"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-395",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1997/40/s2B"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-396",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1996/40/s19"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-397",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/43/s5A"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-398",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1977/43/s8"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-399",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/48/s12"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-400",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1999/31/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-401",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/48/s11"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-402",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/48/s9"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-403",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/48/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-404",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/35/s12"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-405",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1967/7/s6"
+  ],
+  "split": "validation"
+ },
+ {
+  "id": "pl-406",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/35/s6"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-407",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1971/48/s10"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-408",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1999/31/s8"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-409",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/2006/35/s7"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-410",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1999/31/s10"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-411",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1999/31/s5"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "pl-412",
+  "domain": "legal",
+  "premise": [
+   "uk/ukpga/1999/31/s7"
+  ],
+  "split": "train"
+ },
+ {
+  "id": "ps-001",
+  "domain": "software",
+  "source_url": "https://git-scm.com/docs/git-merge",
+  "heading": "git-merge, CONFIGURATION",
+  "licence": "GPL-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-002",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/datetime.html",
+  "heading": "datetime — Basic date and time types, time objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-003",
+  "domain": "software",
+  "source_url": "https://git-scm.com/docs/git-rebase",
+  "heading": "git-rebase, The hard case",
+  "licence": "GPL-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-004",
+  "domain": "software",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html",
+  "heading": "GridSearchCV#",
+  "licence": "BSD-3-Clause",
+  "split": "validation"
+ },
+ {
+  "id": "ps-005",
+  "domain": "software",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9457",
+  "heading": "RFC 9457: Problem Details for HTTP APIs, 4.1. Example",
+  "licence": "IETF Trust (BCP 78), excerpt",
+  "split": "train"
+ },
+ {
+  "id": "ps-006",
+  "domain": "software",
+  "source_url": "https://www.sqlite.org/lang_createtable.html",
+  "heading": "1. Syntax, 4.1. Response to constraint violations",
+  "licence": "public domain",
+  "split": "validation"
+ },
+ {
+  "id": "ps-007",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/indexes-types.html",
+  "heading": "indexes-types, 11.2.3. GiST #",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-008",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/functools.html",
+  "heading": "functools — Higher-order functions and operations on callable objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-009",
+  "domain": "software",
+  "source_url": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+  "heading": "The Rust Programming Language, References and Borrowing",
+  "licence": "MIT OR Apache-2.0",
+  "split": "validation"
+ },
+ {
+  "id": "ps-010",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/collections.html",
+  "heading": "collections — Container datatypes, UserString objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-011",
+  "domain": "software",
+  "source_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html",
+  "heading": "pandas.DataFrame.groupby#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-012",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/sql-select.html",
+  "heading": "sql-select, LIMIT Clause",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-013",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/itertools.html",
+  "heading": "itertools — Functions creating iterators for efficient looping, Itertool Functions",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-014",
+  "domain": "software",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc6750",
+  "heading": "RFC 6750: The OAuth 2.0 Authorization Framework: Bearer Token Usage",
+  "licence": "IETF Trust (BCP 78), excerpt",
+  "split": "train"
+ },
+ {
+  "id": "ps-015",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/indexes-types.html",
+  "heading": "indexes-types, 11.2. Index Types #",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-016",
+  "domain": "software",
+  "source_url": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+  "heading": "The Rust Programming Language, References and Borrowing",
+  "licence": "MIT OR Apache-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-017",
+  "domain": "software",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html",
+  "heading": "GridSearchCV#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-018",
+  "domain": "software",
+  "source_url": "https://www.sqlite.org/lang_createtable.html",
+  "heading": "1. Syntax",
+  "licence": "public domain",
+  "split": "train"
+ },
+ {
+  "id": "ps-019",
+  "domain": "software",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9457",
+  "heading": "RFC 9457: Problem Details for HTTP APIs, Appendix C. Using Problem Details with Other Formats",
+  "licence": "IETF Trust (BCP 78), excerpt",
+  "split": "train"
+ },
+ {
+  "id": "ps-020",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/collections.html",
+  "heading": "collections — Container datatypes, Counter objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-021",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/sql-select.html",
+  "heading": "sql-select, WINDOW Clause",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-022",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/sql-insert.html",
+  "heading": "sql-insert, Inserting",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-023",
+  "domain": "software",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9457",
+  "heading": "RFC 9457: Problem Details for HTTP APIs, 4. Defining New Problem Types",
+  "licence": "IETF Trust (BCP 78), excerpt",
+  "split": "train"
+ },
+ {
+  "id": "ps-024",
+  "domain": "software",
+  "source_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html",
+  "heading": "pandas.DataFrame.groupby#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-025",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+  "heading": "StatefulSets",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-026",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/datetime.html",
+  "heading": "datetime — Basic date and time types, datetime objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-027",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+  "heading": "DaemonSet, What's next",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-028",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+  "heading": "DaemonSet, Updating a DaemonSet",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-029",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/indexes-types.html",
+  "heading": "indexes-types, 11.2.4. SP-GiST #",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-030",
+  "domain": "software",
+  "source_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+  "heading": "Promise, Advanced Example",
+  "licence": "CC BY-SA 2.5",
+  "split": "train"
+ },
+ {
+  "id": "ps-031",
+  "domain": "software",
+  "source_url": "https://git-scm.com/docs/git-rebase",
+  "heading": "git-rebase, MERGE STRATEGIES",
+  "licence": "GPL-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-032",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/itertools.html",
+  "heading": "itertools — Functions creating iterators for efficient looping",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-033",
+  "domain": "software",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc6750",
+  "heading": "RFC 6750: The OAuth 2.0 Authorization Framework: Bearer Token Usage",
+  "licence": "IETF Trust (BCP 78), excerpt",
+  "split": "train"
+ },
+ {
+  "id": "ps-034",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+  "heading": "StatefulSets, Partitioned rolling updates",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-035",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/pathlib.html",
+  "heading": "pathlib — Object-oriented filesystem paths, Parsing and generating URIs",
+  "licence": "PSF-2.0",
+  "split": "validation"
+ },
+ {
+  "id": "ps-036",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/pathlib.html",
+  "heading": "pathlib — Object-oriented filesystem paths, Querying file type and status",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-037",
+  "domain": "software",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc6750",
+  "heading": "RFC 6750: The OAuth 2.0 Authorization Framework: Bearer Token Usage",
+  "licence": "IETF Trust (BCP 78), excerpt",
+  "split": "train"
+ },
+ {
+  "id": "ps-038",
+  "domain": "software",
+  "source_url": "https://prometheus.io/docs/prometheus/latest/querying/functions/",
+  "heading": "Query functions, deriv()",
+  "licence": "Apache-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-039",
+  "domain": "software",
+  "source_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html",
+  "heading": "pandas.DataFrame.groupby#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-040",
+  "domain": "software",
+  "source_url": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+  "heading": "The Rust Programming Language, Dangling References",
+  "licence": "MIT OR Apache-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-041",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/itertools.html",
+  "heading": "itertools — Functions creating iterators for efficient looping, Itertool Functions",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-042",
+  "domain": "software",
+  "source_url": "https://prometheus.io/docs/prometheus/latest/querying/functions/",
+  "heading": "Query functions, round()",
+  "licence": "Apache-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-043",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/sql-select.html",
+  "heading": "sql-select, EXCEPT Clause",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-044",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+  "heading": "DaemonSet, Note:",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-045",
+  "domain": "software",
+  "source_url": "https://www.sqlite.org/lang_createtable.html",
+  "heading": "1. Syntax, 5. ROWIDs and the INTEGER PRIMARY KEY",
+  "licence": "public domain",
+  "split": "train"
+ },
+ {
+  "id": "ps-046",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/functools.html",
+  "heading": "functools — Higher-order functions and operations on callable objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-047",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+  "heading": "DaemonSet, Pod Template",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-048",
+  "domain": "software",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html",
+  "heading": "GridSearchCV#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-049",
+  "domain": "software",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+  "heading": "StatefulSets, PersistentVolumeClaim retention",
+  "licence": "CC BY 4.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-050",
+  "domain": "software",
+  "source_url": "https://www.sqlite.org/lang_createtable.html",
+  "heading": "1. Syntax",
+  "licence": "public domain",
+  "split": "train"
+ },
+ {
+  "id": "ps-051",
+  "domain": "software",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html",
+  "heading": "GridSearchCV#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-052",
+  "domain": "software",
+  "source_url": "https://prometheus.io/docs/prometheus/latest/querying/functions/",
+  "heading": "Query functions, increase()",
+  "licence": "Apache-2.0",
+  "split": "validation"
+ },
+ {
+  "id": "ps-053",
+  "domain": "software",
+  "source_url": "https://git-scm.com/docs/git-rebase",
+  "heading": "git-rebase, OPTIONS",
+  "licence": "GPL-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-054",
+  "domain": "software",
+  "source_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html",
+  "heading": "pandas.DataFrame.groupby#",
+  "licence": "BSD-3-Clause",
+  "split": "train"
+ },
+ {
+  "id": "ps-055",
+  "domain": "software",
+  "source_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+  "heading": "Promise, Loading an image with XHR",
+  "licence": "CC BY-SA 2.5",
+  "split": "train"
+ },
+ {
+  "id": "ps-056",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/collections.html",
+  "heading": "collections — Container datatypes, namedtuple() Factory Function for Tuples with Named Fields",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-057",
+  "domain": "software",
+  "source_url": "https://docs.python.org/3/library/functools.html",
+  "heading": "functools — Higher-order functions and operations on callable objects",
+  "licence": "PSF-2.0",
+  "split": "train"
+ },
+ {
+  "id": "ps-058",
+  "domain": "software",
+  "source_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+  "heading": "Promise, Incumbent settings object tracking",
+  "licence": "CC BY-SA 2.5",
+  "split": "train"
+ },
+ {
+  "id": "ps-059",
+  "domain": "software",
+  "source_url": "https://www.postgresql.org/docs/17/indexes-types.html",
+  "heading": "indexes-types, 11.2.5. GIN #",
+  "licence": "PostgreSQL Licence",
+  "split": "train"
+ },
+ {
+  "id": "ps-060",
+  "domain": "software",
+  "source_url": "https://git-scm.com/docs/git-rebase",
+  "heading": "git-rebase, INTERACTIVE MODE",
+  "licence": "GPL-2.0",
+  "split": "train"
+ }
+]

@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2002/15/s27@current",
+ "section": "uk/ukpga/2002/15/s27",
+ "version": "current",
+ "source_sha256": "d2c0cf0aee9315f3dac76b1a0d6c309e044930337a7d8c7272d1c47dcd5f816f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Nothing in a commonhold community statement shall prevent or restrict the transfer by the commonhold association of its freehold estate in any part of the common parts.",
+    "quote": "Nothing in a commonhold community statement shall prevent or restrict— (a) the transfer by the commonhold association of its freehold estate in any part of the common parts"
+   },
+   {
+    "requirement": "Nothing in a commonhold community statement shall prevent or restrict the creation by the commonhold association of an interest in any part of the common parts.",
+    "quote": "Nothing in a commonhold community statement shall prevent or restrict— (a) the transfer by the commonhold association of its freehold estate in any part of the common parts, or (b) the creation by the commonhold association of an interest in any part of the common parts."
+   },
+   {
+    "requirement": "Under section 27 of the Commonhold and Leasehold Reform Act 2002, the term “interest” does not include a charge.",
+    "quote": "In this section “interest” does not include— (a) a charge"
+   },
+   {
+    "requirement": "Under section 27 of the Commonhold and Leasehold Reform Act 2002, the term “interest” does not include an interest which arises by virtue of a charge.",
+    "quote": "“interest” does not include— (a) a charge, or (b) an interest which arises by virtue of a charge."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Nothing in a commonhold community statement shall prevent or restrict the transfer by the commonhold association of its freehold estate in any part of the common parts.",
+   "quote": "Nothing in a commonhold community statement shall prevent or restrict— (a) the transfer by the commonhold association of its freehold estate in any part of the common parts"
+  },
+  {
+   "requirement": "Nothing in a commonhold community statement shall prevent or restrict the creation by the commonhold association of an interest in any part of the common parts.",
+   "quote": "Nothing in a commonhold community statement shall prevent or restrict— (a) the transfer by the commonhold association of its freehold estate in any part of the common parts, or (b) the creation by the commonhold association of an interest in any part of the common parts."
+  },
+  {
+   "requirement": "Under section 27 of the Commonhold and Leasehold Reform Act 2002, the term “interest” does not include a charge.",
+   "quote": "In this section “interest” does not include— (a) a charge"
+  },
+  {
+   "requirement": "Under section 27 of the Commonhold and Leasehold Reform Act 2002, the term “interest” does not include an interest which arises by virtue of a charge.",
+   "quote": "“interest” does not include— (a) a charge, or (b) an interest which arises by virtue of a charge."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

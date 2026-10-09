@@ -1,0 +1,173 @@
+{
+ "key": "uk/ukpga/1997/40/s8@current",
+ "section": "uk/ukpga/1997/40/s8",
+ "version": "current",
+ "source_sha256": "6fa8822f7984557e1c2cc5b22ab91d9fe85250753cde494e6d8eb6b21037bae7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Every individual possesses a legal right to be free from harassment.",
+    "quote": "Every individual has a right to be free from harassment"
+   },
+   {
+    "requirement": "A person must not pursue a course of conduct that amounts to harassment of another individual and is intended to amount to harassment of that individual.",
+    "quote": "a person must not pursue a course of conduct which amounts to harassment of another and— (a) is intended to amount to harassment of that person"
+   },
+   {
+    "requirement": "A person must not pursue a course of conduct that amounts to harassment of another individual where it occurs in circumstances in which it would appear to a reasonable person that it would amount to harassment of that individual.",
+    "quote": "occurs in circumstances where it would appear to a reasonable person that it would amount to harassment of that person"
+   },
+   {
+    "requirement": "The prohibition on pursuing a course of conduct amounting to harassment is subject to section 8A.",
+    "quote": "Subsection (1) is subject to section 8A."
+   },
+   {
+    "requirement": "A person who is or may be the victim of a course of conduct may bring a claim in civil proceedings, known as an action of harassment, in respect of an actual or apprehended breach of section 8(1).",
+    "quote": "An actual or apprehended breach of subsection (1) may be the subject of a claim in civil proceedings by the person who is or may be the victim of the course of conduct in question; and any such claim shall be known as an action of harassment."
+   },
+   {
+    "requirement": "For the purposes of section 8, the term 'conduct' includes speech.",
+    "quote": "“conduct” includes speech"
+   },
+   {
+    "requirement": "For the purposes of section 8, the 'harassment' of an individual includes causing that individual alarm or distress.",
+    "quote": "“harassment” of a person includes causing the person alarm or distress"
+   },
+   {
+    "requirement": "For the purposes of section 8, a course of conduct must involve conduct on at least two occasions.",
+    "quote": "a course of conduct must involve conduct on at least two occasions."
+   },
+   {
+    "requirement": "It is a defence to any action of harassment to establish that the course of conduct complained of was authorised by, under, or by virtue of any enactment or rule of law.",
+    "quote": "It shall be a defence to any action of harassment to show that the course of conduct complained of— (a) was authorised by, under or by virtue of any enactment or rule of law"
+   },
+   {
+    "requirement": "It is a defence to any action of harassment to establish that the course of conduct complained of was pursued for the purpose of preventing or detecting crime.",
+    "quote": "was pursued for the purpose of preventing or detecting crime"
+   },
+   {
+    "requirement": "It is a defence to any action of harassment to establish that the course of conduct complained of was reasonable in the particular circumstances.",
+    "quote": "was, in the particular circumstances, reasonable."
+   },
+   {
+    "requirement": "In an action of harassment, the court may award damages without prejudice to any other remedies that the court may grant.",
+    "quote": "In an action of harassment the court may, without prejudice to any other remedies which it may grant— (a) award damages"
+   },
+   {
+    "requirement": "In an action of harassment, the court may grant an interdict or interim interdict without prejudice to any other remedies that the court may grant.",
+    "quote": "grant— (i) interdict or interim interdict"
+   },
+   {
+    "requirement": "In an action of harassment, if the court is satisfied that it is appropriate to do so in order to protect a person from further harassment, the court may grant a non-harassment order requiring the defender to refrain from specified conduct in relation to the pursuer for a specified period, including an indeterminate period.",
+    "quote": "if it is satisfied that it is appropriate for it to do so in order to protect the person from further harassment, an order, to be known as a “non-harassment order”, requiring the defender to refrain from such conduct in relation to the pursuer as may be specified in the order for such period (which includes an indeterminate period) as may be so specified"
+   },
+   {
+    "requirement": "A person may not be subjected to the same prohibitions simultaneously in both an interdict or interim interdict and a non-harassment order.",
+    "quote": "a person may not be subjected to the same prohibitions in an interdict or interim interdict and a non-harassment order at the same time."
+   },
+   {
+    "requirement": "The damages that a court may award in an action of harassment include damages for any anxiety caused by the harassment and any financial loss resulting from the harassment.",
+    "quote": "The damages which may be awarded in an action of harassment include damages for any anxiety caused by the harassment and any financial loss resulting from it."
+   },
+   {
+    "requirement": "Without prejudice to any right to seek review of any interlocutor, the person against whom a non-harassment order has been made, or the person for whose protection the order was made, may apply for revocation or variation of the order to the court by which it was made.",
+    "quote": "Without prejudice to any right to seek review of any interlocutor, a person against whom a non-harassment order has been made, or the person for whose protection the order was made, may apply to the court by which the order was made for revocation of or a variation of the order"
+   },
+   {
+    "requirement": "Upon an application for revocation or variation of a non-harassment order, the court may revoke the order or vary the order in such manner as the court considers appropriate.",
+    "quote": "on any such application, the court may revoke the order or vary it in such manner as it considers appropriate."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of occasions of conduct required to constitute a course of conduct",
+    "value": "at least two",
+    "quote": "a course of conduct must involve conduct on at least two occasions."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Every individual possesses a legal right to be free from harassment.",
+   "quote": "Every individual has a right to be free from harassment"
+  },
+  {
+   "requirement": "A person must not pursue a course of conduct that amounts to harassment of another individual and is intended to amount to harassment of that individual.",
+   "quote": "a person must not pursue a course of conduct which amounts to harassment of another and— (a) is intended to amount to harassment of that person"
+  },
+  {
+   "requirement": "A person must not pursue a course of conduct that amounts to harassment of another individual where it occurs in circumstances in which it would appear to a reasonable person that it would amount to harassment of that individual.",
+   "quote": "occurs in circumstances where it would appear to a reasonable person that it would amount to harassment of that person"
+  },
+  {
+   "requirement": "The prohibition on pursuing a course of conduct amounting to harassment is subject to section 8A.",
+   "quote": "Subsection (1) is subject to section 8A."
+  },
+  {
+   "requirement": "A person who is or may be the victim of a course of conduct may bring a claim in civil proceedings, known as an action of harassment, in respect of an actual or apprehended breach of section 8(1).",
+   "quote": "An actual or apprehended breach of subsection (1) may be the subject of a claim in civil proceedings by the person who is or may be the victim of the course of conduct in question; and any such claim shall be known as an action of harassment."
+  },
+  {
+   "requirement": "For the purposes of section 8, the term 'conduct' includes speech.",
+   "quote": "“conduct” includes speech"
+  },
+  {
+   "requirement": "For the purposes of section 8, the 'harassment' of an individual includes causing that individual alarm or distress.",
+   "quote": "“harassment” of a person includes causing the person alarm or distress"
+  },
+  {
+   "requirement": "For the purposes of section 8, a course of conduct must involve conduct on at least two occasions.",
+   "quote": "a course of conduct must involve conduct on at least two occasions."
+  },
+  {
+   "requirement": "It is a defence to any action of harassment to establish that the course of conduct complained of was authorised by, under, or by virtue of any enactment or rule of law.",
+   "quote": "It shall be a defence to any action of harassment to show that the course of conduct complained of— (a) was authorised by, under or by virtue of any enactment or rule of law"
+  },
+  {
+   "requirement": "It is a defence to any action of harassment to establish that the course of conduct complained of was pursued for the purpose of preventing or detecting crime.",
+   "quote": "was pursued for the purpose of preventing or detecting crime"
+  },
+  {
+   "requirement": "It is a defence to any action of harassment to establish that the course of conduct complained of was reasonable in the particular circumstances.",
+   "quote": "was, in the particular circumstances, reasonable."
+  },
+  {
+   "requirement": "In an action of harassment, the court may award damages without prejudice to any other remedies that the court may grant.",
+   "quote": "In an action of harassment the court may, without prejudice to any other remedies which it may grant— (a) award damages"
+  },
+  {
+   "requirement": "In an action of harassment, the court may grant an interdict or interim interdict without prejudice to any other remedies that the court may grant.",
+   "quote": "grant— (i) interdict or interim interdict"
+  },
+  {
+   "requirement": "In an action of harassment, if the court is satisfied that it is appropriate to do so in order to protect a person from further harassment, the court may grant a non-harassment order requiring the defender to refrain from specified conduct in relation to the pursuer for a specified period, including an indeterminate period.",
+   "quote": "if it is satisfied that it is appropriate for it to do so in order to protect the person from further harassment, an order, to be known as a “non-harassment order”, requiring the defender to refrain from such conduct in relation to the pursuer as may be specified in the order for such period (which includes an indeterminate period) as may be so specified"
+  },
+  {
+   "requirement": "A person may not be subjected to the same prohibitions simultaneously in both an interdict or interim interdict and a non-harassment order.",
+   "quote": "a person may not be subjected to the same prohibitions in an interdict or interim interdict and a non-harassment order at the same time."
+  },
+  {
+   "requirement": "The damages that a court may award in an action of harassment include damages for any anxiety caused by the harassment and any financial loss resulting from the harassment.",
+   "quote": "The damages which may be awarded in an action of harassment include damages for any anxiety caused by the harassment and any financial loss resulting from it."
+  },
+  {
+   "requirement": "Without prejudice to any right to seek review of any interlocutor, the person against whom a non-harassment order has been made, or the person for whose protection the order was made, may apply for revocation or variation of the order to the court by which it was made.",
+   "quote": "Without prejudice to any right to seek review of any interlocutor, a person against whom a non-harassment order has been made, or the person for whose protection the order was made, may apply to the court by which the order was made for revocation of or a variation of the order"
+  },
+  {
+   "requirement": "Upon an application for revocation or variation of a non-harassment order, the court may revoke the order or vary the order in such manner as the court considers appropriate.",
+   "quote": "on any such application, the court may revoke the order or vary it in such manner as it considers appropriate."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 18,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

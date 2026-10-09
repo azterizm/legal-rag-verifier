@@ -1,0 +1,75 @@
+{
+ "key": "uk/ukpga/2007/11/s67@current",
+ "section": "uk/ukpga/2007/11/s67",
+ "version": "current",
+ "source_sha256": "9fedabe3be79a0fd2859a0da078c859e2c21e3ab189060ee01c7323b9a5d9a29",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In section 31(1)(b) of ITTOIA 2005, relating to the sections to which the priority of relevant permissive rules over relevant prohibitive rules for trading income is subject, the phrase 'sections 48 (car or motor cycle hire) and' is replaced with 'section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section '.",
+    "quote": "In subsection (1) (priority of relevant permissive rules over relevant prohibitive rules), in paragraph (b) (sections to which that priority rule is subject), for “sections 48 (car or motor cycle hire) and” substitute “ section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section ”."
+   },
+   {
+    "requirement": "In section 31(3) of ITTOIA 2005, which defines 'relevant prohibitive rule' for trading income, the text ' 36, 38, ' is inserted after 'sections'.",
+    "quote": "In subsection (3) (meaning of “relevant prohibitive rule”), after “sections” insert “ 36, 38, ”."
+   },
+   {
+    "requirement": "In section 274(1)(b) of ITTOIA 2005, relating to property income rules corresponding to section 31 of ITTOIA 2005, the phrase 'sections 48 (car or motor cycle hire) and' is replaced with 'section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section '.",
+    "quote": "In subsection (1)(b), for “sections 48 (car or motor cycle hire) and” substitute “ section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section ”."
+   },
+   {
+    "requirement": "In section 274(3) of ITTOIA 2005, relating to property income rules, the text ' 36, 38, ' is inserted after 'sections'.",
+    "quote": "In subsection (3), after “sections” insert “ 36, 38, ”."
+   },
+   {
+    "requirement": "The amendments made to sections 31 and 274 of ITTOIA 2005 have effect for the tax year 2007-08 and subsequent tax years.",
+    "quote": "The amendments made by this section have effect for the tax year 2007-08 and subsequent tax years."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the initial tax year from which the statutory amendments take effect",
+    "value": "2007-08",
+    "quote": "The amendments made by this section have effect for the tax year 2007-08 and subsequent tax years."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In section 31(1)(b) of ITTOIA 2005, relating to the sections to which the priority of relevant permissive rules over relevant prohibitive rules for trading income is subject, the phrase 'sections 48 (car or motor cycle hire) and' is replaced with 'section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section '.",
+   "quote": "In subsection (1) (priority of relevant permissive rules over relevant prohibitive rules), in paragraph (b) (sections to which that priority rule is subject), for “sections 48 (car or motor cycle hire) and” substitute “ section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section ”."
+  },
+  {
+   "requirement": "In section 31(3) of ITTOIA 2005, which defines 'relevant prohibitive rule' for trading income, the text ' 36, 38, ' is inserted after 'sections'.",
+   "quote": "In subsection (3) (meaning of “relevant prohibitive rule”), after “sections” insert “ 36, 38, ”."
+  },
+  {
+   "requirement": "In section 274(1)(b) of ITTOIA 2005, relating to property income rules corresponding to section 31 of ITTOIA 2005, the phrase 'sections 48 (car or motor cycle hire) and' is replaced with 'section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section '.",
+   "quote": "In subsection (1)(b), for “sections 48 (car or motor cycle hire) and” substitute “ section 36 (unpaid remuneration), section 38 (employee benefit contributions), section 48 (car or motor cycle hire) and section ”."
+  },
+  {
+   "requirement": "In section 274(3) of ITTOIA 2005, relating to property income rules, the text ' 36, 38, ' is inserted after 'sections'.",
+   "quote": "In subsection (3), after “sections” insert “ 36, 38, ”."
+  },
+  {
+   "requirement": "The amendments made to sections 31 and 274 of ITTOIA 2005 have effect for the tax year 2007-08 and subsequent tax years.",
+   "quote": "The amendments made by this section have effect for the tax year 2007-08 and subsequent tax years."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the initial tax year from which the statutory amendments take effect",
+   "value": "2007-08",
+   "quote": "The amendments made by this section have effect for the tax year 2007-08 and subsequent tax years."
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

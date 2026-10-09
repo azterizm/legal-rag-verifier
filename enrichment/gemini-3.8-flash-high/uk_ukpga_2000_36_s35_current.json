@@ -1,0 +1,133 @@
+{
+ "key": "uk/ukpga/2000/36/s35@current",
+ "section": "uk/ukpga/2000/36/s35",
+ "version": "current",
+ "source_sha256": "a5cb5d5de6145665646149a6c5b99246fc2f008df63832256ccbf8ac4b34a4b6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to the formulation or development of government policy.",
+    "quote": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to— (a) the formulation or development of government policy"
+   },
+   {
+    "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to Ministerial communications.",
+    "quote": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to— ... (b) Ministerial communications"
+   },
+   {
+    "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to the provision of advice by any of the Law Officers or any request for the provision of such advice.",
+    "quote": "the provision of advice by any of the Law Officers or any request for the provision of such advice"
+   },
+   {
+    "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to the operation of any Ministerial private office.",
+    "quote": "the operation of any Ministerial private office"
+   },
+   {
+    "requirement": "Once a decision as to government policy has been taken, any statistical information used to provide an informed background to the taking of the decision is not to be regarded, for the purposes of section 35(1)(a), as relating to the formulation or development of government policy.",
+    "quote": "Once a decision as to government policy has been taken, any statistical information used to provide an informed background to the taking of the decision is not to be regarded— (a) for the purposes of subsection (1)(a), as relating to the formulation or development of government policy"
+   },
+   {
+    "requirement": "Once a decision as to government policy has been taken, any statistical information used to provide an informed background to the taking of the decision is not to be regarded, for the purposes of section 35(1)(b), as relating to Ministerial communications.",
+    "quote": "Once a decision as to government policy has been taken, any statistical information used to provide an informed background to the taking of the decision is not to be regarded— ... (b) for the purposes of subsection (1)(b), as relating to Ministerial communications"
+   },
+   {
+    "requirement": "The duty to confirm or deny does not arise in relation to information which is, or if it were held by the public authority would be, exempt information under section 35(1).",
+    "quote": "The duty to confirm or deny does not arise in relation to information which is (or if it were held by the public authority would be) exempt information by virtue of subsection (1)"
+   },
+   {
+    "requirement": "A public authority making any determination required by section 2(1)(b) or (2)(b) regarding information exempt under section 35(1)(a) must have regard to the particular public interest in the disclosure of factual information used, or intended to be used, to provide an informed background to decision-taking.",
+    "quote": "In making any determination required by section 2(1)(b) or (2)(b) in relation to information which is exempt information by virtue of subsection (1)(a), regard shall be had to the particular public interest in the disclosure of factual information which has been used, or is intended to be used, to provide an informed background to decision-taking"
+   },
+   {
+    "requirement": "In section 35, 'government policy' includes the policy of the Executive Committee of the Northern Ireland Assembly and the policy of the Welsh Assembly Government.",
+    "quote": "“government policy” includes the policy of the Executive Committee of the Northern Ireland Assembly and the policy of the Welsh Assembly Government"
+   },
+   {
+    "requirement": "In section 35, 'the Law Officers' means the Attorney General, the Solicitor General, the Advocate General for Scotland, the Lord Advocate, the Solicitor General for Scotland, the Counsel General to the Welsh Assembly Government, and the Attorney General for Northern Ireland.",
+    "quote": "“the Law Officers” means the Attorney General, the Solicitor General, the Advocate General for Scotland, the Lord Advocate, the Solicitor General for Scotland , the Counsel General to the Welsh Assembly Government and the Attorney General for Northern Ireland"
+   },
+   {
+    "requirement": "In section 35, 'Ministerial communications' means any communications between Ministers of the Crown, between Northern Ireland Ministers (including Northern Ireland junior Ministers), or between members of the Welsh Assembly Government.",
+    "quote": "“Ministerial communications” means any communications— between Ministers of the Crown,between Northern Ireland Ministers, including Northern Ireland junior Ministers, orbetween members of the Welsh Assembly Government"
+   },
+   {
+    "requirement": "In section 35, 'Ministerial communications' particularly includes proceedings of the Cabinet or of any Cabinet committee, proceedings of the Executive Committee of the Northern Ireland Assembly, and proceedings of the Cabinet or any Cabinet committee of the Welsh Assembly Government.",
+    "quote": "includes, in particular, proceedings of the Cabinet or of any committee of the Cabinet, proceedings of the Executive Committee of the Northern Ireland Assembly, and proceedings of the Cabinet or any committee of the Cabinet of the Welsh Assembly Government"
+   },
+   {
+    "requirement": "In section 35, 'Ministerial private office' means any part of a government department providing personal administrative support to a Minister of the Crown, a Northern Ireland Minister, or a Northern Ireland junior Minister, or any part of the administration of the Welsh Assembly Government providing personal administrative support to members of the Welsh Assembly Government.",
+    "quote": "“Ministerial private office” means any part of a government department which provides personal administrative support to a Minister of the Crown, to a Northern Ireland Minister or a Northern Ireland junior Minister or any part of the administration of the Welsh Assembly Government providing personal administrative support to the members of the Welsh Assembly Government"
+   },
+   {
+    "requirement": "In section 35, 'Northern Ireland junior Minister' means a member of the Northern Ireland Assembly appointed as a junior Minister under section 19 of the Northern Ireland Act 1998.",
+    "quote": "“Northern Ireland junior Minister” means a member of the Northern Ireland Assembly appointed as a junior Minister under section 19 of the Northern Ireland Act 1998"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year of the Northern Ireland Act under which a junior Minister is appointed",
+    "value": "1998",
+    "quote": "section 19 of the Northern Ireland Act 1998"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to the formulation or development of government policy.",
+   "quote": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to— (a) the formulation or development of government policy"
+  },
+  {
+   "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to the provision of advice by any of the Law Officers or any request for the provision of such advice.",
+   "quote": "the provision of advice by any of the Law Officers or any request for the provision of such advice"
+  },
+  {
+   "requirement": "Information held by a government department or by the Welsh Assembly Government is exempt information if it relates to the operation of any Ministerial private office.",
+   "quote": "the operation of any Ministerial private office"
+  },
+  {
+   "requirement": "Once a decision as to government policy has been taken, any statistical information used to provide an informed background to the taking of the decision is not to be regarded, for the purposes of section 35(1)(a), as relating to the formulation or development of government policy.",
+   "quote": "Once a decision as to government policy has been taken, any statistical information used to provide an informed background to the taking of the decision is not to be regarded— (a) for the purposes of subsection (1)(a), as relating to the formulation or development of government policy"
+  },
+  {
+   "requirement": "The duty to confirm or deny does not arise in relation to information which is, or if it were held by the public authority would be, exempt information under section 35(1).",
+   "quote": "The duty to confirm or deny does not arise in relation to information which is (or if it were held by the public authority would be) exempt information by virtue of subsection (1)"
+  },
+  {
+   "requirement": "A public authority making any determination required by section 2(1)(b) or (2)(b) regarding information exempt under section 35(1)(a) must have regard to the particular public interest in the disclosure of factual information used, or intended to be used, to provide an informed background to decision-taking.",
+   "quote": "In making any determination required by section 2(1)(b) or (2)(b) in relation to information which is exempt information by virtue of subsection (1)(a), regard shall be had to the particular public interest in the disclosure of factual information which has been used, or is intended to be used, to provide an informed background to decision-taking"
+  },
+  {
+   "requirement": "In section 35, 'government policy' includes the policy of the Executive Committee of the Northern Ireland Assembly and the policy of the Welsh Assembly Government.",
+   "quote": "“government policy” includes the policy of the Executive Committee of the Northern Ireland Assembly and the policy of the Welsh Assembly Government"
+  },
+  {
+   "requirement": "In section 35, 'the Law Officers' means the Attorney General, the Solicitor General, the Advocate General for Scotland, the Lord Advocate, the Solicitor General for Scotland, the Counsel General to the Welsh Assembly Government, and the Attorney General for Northern Ireland.",
+   "quote": "“the Law Officers” means the Attorney General, the Solicitor General, the Advocate General for Scotland, the Lord Advocate, the Solicitor General for Scotland , the Counsel General to the Welsh Assembly Government and the Attorney General for Northern Ireland"
+  },
+  {
+   "requirement": "In section 35, 'Ministerial communications' means any communications between Ministers of the Crown, between Northern Ireland Ministers (including Northern Ireland junior Ministers), or between members of the Welsh Assembly Government.",
+   "quote": "“Ministerial communications” means any communications— between Ministers of the Crown,between Northern Ireland Ministers, including Northern Ireland junior Ministers, orbetween members of the Welsh Assembly Government"
+  },
+  {
+   "requirement": "In section 35, 'Ministerial communications' particularly includes proceedings of the Cabinet or of any Cabinet committee, proceedings of the Executive Committee of the Northern Ireland Assembly, and proceedings of the Cabinet or any Cabinet committee of the Welsh Assembly Government.",
+   "quote": "includes, in particular, proceedings of the Cabinet or of any committee of the Cabinet, proceedings of the Executive Committee of the Northern Ireland Assembly, and proceedings of the Cabinet or any committee of the Cabinet of the Welsh Assembly Government"
+  },
+  {
+   "requirement": "In section 35, 'Ministerial private office' means any part of a government department providing personal administrative support to a Minister of the Crown, a Northern Ireland Minister, or a Northern Ireland junior Minister, or any part of the administration of the Welsh Assembly Government providing personal administrative support to members of the Welsh Assembly Government.",
+   "quote": "“Ministerial private office” means any part of a government department which provides personal administrative support to a Minister of the Crown, to a Northern Ireland Minister or a Northern Ireland junior Minister or any part of the administration of the Welsh Assembly Government providing personal administrative support to the members of the Welsh Assembly Government"
+  },
+  {
+   "requirement": "In section 35, 'Northern Ireland junior Minister' means a member of the Northern Ireland Assembly appointed as a junior Minister under section 19 of the Northern Ireland Act 1998.",
+   "quote": "“Northern Ireland junior Minister” means a member of the Northern Ireland Assembly appointed as a junior Minister under section 19 of the Northern Ireland Act 1998"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

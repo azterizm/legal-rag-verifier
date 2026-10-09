@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1985/70/s35@current",
+ "section": "uk/ukpga/1985/70/s35",
+ "version": "current",
+ "source_sha256": "fd966c8af13286d21796e8a3188b19d4f8764c761819f7d924c2650b90204558",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Landlord and Tenant Act 1985 applies to the Isles of Scilly subject to such exceptions, adaptations and modifications as the Secretary of State may direct by order.",
+    "quote": "This Act applies to the Isles of Scilly subject to such exceptions, adaptations and modifications as the Secretary of State may by order direct"
+   },
+   {
+    "requirement": "An order directing exceptions, adaptations and modifications for the Isles of Scilly must be made by statutory instrument.",
+    "quote": "An order shall be made by statutory instrument"
+   },
+   {
+    "requirement": "A statutory instrument containing an order under this provision is subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Landlord and Tenant Act 1985 applies to the Isles of Scilly subject to such exceptions, adaptations and modifications as the Secretary of State may direct by order.",
+   "quote": "This Act applies to the Isles of Scilly subject to such exceptions, adaptations and modifications as the Secretary of State may by order direct"
+  },
+  {
+   "requirement": "An order directing exceptions, adaptations and modifications for the Isles of Scilly must be made by statutory instrument.",
+   "quote": "An order shall be made by statutory instrument"
+  },
+  {
+   "requirement": "A statutory instrument containing an order under this provision is subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "key": "uk/ukpga/1974/53/s11@current",
+ "section": "uk/ukpga/1974/53/s11",
+ "version": "current",
+ "source_sha256": "17f293673604655ae9bc41e39c0eb4aba346a69db64a57c19f11dc3e9c307572",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Rehabilitation of Offenders Act 1974 may be cited as the Rehabilitation of Offenders Act 1974.",
+    "quote": "This Act may be cited as the Rehabilitation of Offenders Act 1974"
+   },
+   {
+    "requirement": "The Rehabilitation of Offenders Act 1974 shall come into force on 1st July 1975 or on such earlier day as the Secretary of State may by order appoint.",
+    "quote": "This Act shall come into force on 1st July 1975 or such earlier day as the Secretary of State may by order appoint"
+   },
+   {
+    "requirement": "The Rehabilitation of Offenders Act 1974 shall not apply to Northern Ireland.",
+    "quote": "This Act shall not apply to Northern Ireland"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the default date on which the Act comes into force",
+    "value": "1st July 1975",
+    "quote": "shall come into force on 1st July 1975"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Rehabilitation of Offenders Act 1974 may be cited as the Rehabilitation of Offenders Act 1974.",
+   "quote": "This Act may be cited as the Rehabilitation of Offenders Act 1974"
+  },
+  {
+   "requirement": "The Rehabilitation of Offenders Act 1974 shall come into force on 1st July 1975 or on such earlier day as the Secretary of State may by order appoint.",
+   "quote": "This Act shall come into force on 1st July 1975 or such earlier day as the Secretary of State may by order appoint"
+  },
+  {
+   "requirement": "The Rehabilitation of Offenders Act 1974 shall not apply to Northern Ireland.",
+   "quote": "This Act shall not apply to Northern Ireland"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the default date on which the Act comes into force",
+   "value": "1st July 1975",
+   "quote": "shall come into force on 1st July 1975"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

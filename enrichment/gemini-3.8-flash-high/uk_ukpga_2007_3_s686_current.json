@@ -1,0 +1,116 @@
+{
+ "key": "uk/ukpga/2007/3/s686@current",
+ "section": "uk/ukpga/2007/3/s686",
+ "version": "current",
+ "source_sha256": "e22809a2f573d68af742f47a4aeaac23388a1ae1fbc8c32ce593adb23469451e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Circumstances are excluded where the relevant party holds shares or an interest in shares in the close company immediately before the transaction in securities (or the first of the transactions in securities) and there is a fundamental change of ownership of the close company.",
+    "quote": "immediately before the transaction in securities (or the first of the transactions in securities) the party holds shares or an interest in shares in the close company, and (b) there is a fundamental change of ownership of the close company"
+   },
+   {
+    "requirement": "A fundamental change of ownership of the close company occurs if the condition specified in subsection (3) is met as a result of the transaction or transactions in securities.",
+    "quote": "There is a fundamental change of ownership of the close company if, as a result of the transaction or transactions in securities, the condition in subsection (3) is met"
+   },
+   {
+    "requirement": "To satisfy the condition for a fundamental change of ownership, the original shareholder or original shareholders taken together with any associate or associates must not directly or indirectly hold more than 25% of the ordinary share capital of the close company.",
+    "quote": "do not directly or indirectly hold more than 25% of the ordinary share capital of the close company"
+   },
+   {
+    "requirement": "To satisfy the condition for a fundamental change of ownership, the original shareholder or original shareholders taken together with any associate or associates must not directly or indirectly hold shares in the close company carrying an entitlement to more than 25% of the distributions which may be made by the close company.",
+    "quote": "do not directly or indirectly hold shares in the close company carrying an entitlement to more than 25% of the distributions which may be made by the close company"
+   },
+   {
+    "requirement": "To satisfy the condition for a fundamental change of ownership, the original shareholder or original shareholders taken together with any associate or associates must not directly or indirectly hold shares in the close company carrying more than 25% of the total voting rights in the close company.",
+    "quote": "do not directly or indirectly hold shares in the close company carrying more than 25% of the total voting rights in the close company"
+   },
+   {
+    "requirement": "An original shareholder is defined as any person who held any ordinary share capital of the close company immediately before the transaction in securities (or the first of the transactions in securities).",
+    "quote": "“original shareholder” means a person who, immediately before the transaction in securities (or the first of the transactions in securities), held any ordinary share capital of the close company"
+   },
+   {
+    "requirement": "Shares of or share capital in the close company held by a person controlled by an original shareholder, or by two or more original shareholders taken together, are treated as shares or share capital held by that original shareholder or those original shareholders.",
+    "quote": "shares of or share capital in the close company which are held by a person controlled by an original shareholder, or by two or more original shareholders taken together, count as shares or share capital held by that original shareholder or those original shareholders"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Maximum holding of ordinary share capital permitted for the original shareholder or original shareholders and associates to meet the fundamental change of ownership condition",
+    "value": "25%",
+    "quote": "more than 25% of the ordinary share capital of the close company"
+   },
+   {
+    "what": "Maximum entitlement to distributions permitted from shares held by the original shareholder or original shareholders and associates to meet the fundamental change of ownership condition",
+    "value": "25%",
+    "quote": "more than 25% of the distributions which may be made by the close company"
+   },
+   {
+    "what": "Maximum proportion of total voting rights permitted to be carried by shares held by the original shareholder or original shareholders and associates to meet the fundamental change of ownership condition",
+    "value": "25%",
+    "quote": "more than 25% of the total voting rights in the close company"
+   },
+   {
+    "what": "Minimum number of original shareholders acting together to control a person holding shares or share capital for their holdings to count as held by those shareholders",
+    "value": "two",
+    "quote": "two or more original shareholders taken together"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Circumstances are excluded where the relevant party holds shares or an interest in shares in the close company immediately before the transaction in securities (or the first of the transactions in securities) and there is a fundamental change of ownership of the close company.",
+   "quote": "immediately before the transaction in securities (or the first of the transactions in securities) the party holds shares or an interest in shares in the close company, and (b) there is a fundamental change of ownership of the close company"
+  },
+  {
+   "requirement": "A fundamental change of ownership of the close company occurs if the condition specified in subsection (3) is met as a result of the transaction or transactions in securities.",
+   "quote": "There is a fundamental change of ownership of the close company if, as a result of the transaction or transactions in securities, the condition in subsection (3) is met"
+  },
+  {
+   "requirement": "To satisfy the condition for a fundamental change of ownership, the original shareholder or original shareholders taken together with any associate or associates must not directly or indirectly hold more than 25% of the ordinary share capital of the close company.",
+   "quote": "do not directly or indirectly hold more than 25% of the ordinary share capital of the close company"
+  },
+  {
+   "requirement": "To satisfy the condition for a fundamental change of ownership, the original shareholder or original shareholders taken together with any associate or associates must not directly or indirectly hold shares in the close company carrying an entitlement to more than 25% of the distributions which may be made by the close company.",
+   "quote": "do not directly or indirectly hold shares in the close company carrying an entitlement to more than 25% of the distributions which may be made by the close company"
+  },
+  {
+   "requirement": "To satisfy the condition for a fundamental change of ownership, the original shareholder or original shareholders taken together with any associate or associates must not directly or indirectly hold shares in the close company carrying more than 25% of the total voting rights in the close company.",
+   "quote": "do not directly or indirectly hold shares in the close company carrying more than 25% of the total voting rights in the close company"
+  },
+  {
+   "requirement": "An original shareholder is defined as any person who held any ordinary share capital of the close company immediately before the transaction in securities (or the first of the transactions in securities).",
+   "quote": "“original shareholder” means a person who, immediately before the transaction in securities (or the first of the transactions in securities), held any ordinary share capital of the close company"
+  },
+  {
+   "requirement": "Shares of or share capital in the close company held by a person controlled by an original shareholder, or by two or more original shareholders taken together, are treated as shares or share capital held by that original shareholder or those original shareholders.",
+   "quote": "shares of or share capital in the close company which are held by a person controlled by an original shareholder, or by two or more original shareholders taken together, count as shares or share capital held by that original shareholder or those original shareholders"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Maximum holding of ordinary share capital permitted for the original shareholder or original shareholders and associates to meet the fundamental change of ownership condition",
+   "value": "25%",
+   "quote": "more than 25% of the ordinary share capital of the close company"
+  },
+  {
+   "what": "Maximum entitlement to distributions permitted from shares held by the original shareholder or original shareholders and associates to meet the fundamental change of ownership condition",
+   "value": "25%",
+   "quote": "more than 25% of the distributions which may be made by the close company"
+  },
+  {
+   "what": "Maximum proportion of total voting rights permitted to be carried by shares held by the original shareholder or original shareholders and associates to meet the fundamental change of ownership condition",
+   "value": "25%",
+   "quote": "more than 25% of the total voting rights in the close company"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 3
+ }
+}

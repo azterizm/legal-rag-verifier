@@ -1,0 +1,167 @@
+{
+ "key": "uk/ukpga/1996/40/s20@current",
+ "section": "uk/ukpga/1996/40/s20",
+ "version": "current",
+ "source_sha256": "7b4227eefbbf97342cc931bc7204040f8bc3b774f22fb035573f2fd3cf47d9e4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Unless the context otherwise requires, the statutory expressions defined in the Party Wall etc. Act 1996 have the meanings assigned to them in this section throughout the Act.",
+    "quote": "In this Act, unless the context otherwise requires, the following expressions have the meanings hereby respectively assigned to them"
+   },
+   {
+    "requirement": "An adjoining owner means any owner of land, buildings, storeys or rooms adjoining those of the building owner, and for the purposes only of section 6, within the distances specified in that section.",
+    "quote": "“adjoining owner” and “adjoining occupier” respectively mean any owner and any occupier of land, buildings, storeys or rooms adjoining those of the building owner and for the purposes only of section 6 within the distances specified in that section"
+   },
+   {
+    "requirement": "An adjoining occupier means any occupier of land, buildings, storeys or rooms adjoining those of the building owner, and for the purposes only of section 6, within the distances specified in that section.",
+    "quote": "“adjoining owner” and “adjoining occupier” respectively mean any owner and any occupier of land, buildings, storeys or rooms adjoining those of the building owner and for the purposes only of section 6 within the distances specified in that section"
+   },
+   {
+    "requirement": "An appointing officer means the person appointed under the Party Wall etc. Act 1996 by the local authority to make appointments required under section 10(8).",
+    "quote": "“appointing officer” means the person appointed under this Act by the local authority to make such appointments as are required under section 10(8)"
+   },
+   {
+    "requirement": "A building owner means an owner of land who is desirous of exercising rights under the Party Wall etc. Act 1996.",
+    "quote": "“building owner” means an owner of land who is desirous of exercising rights under this Act"
+   },
+   {
+    "requirement": "In relation to a wall, a foundation means the solid ground or artificially formed support resting on solid ground on which the wall rests.",
+    "quote": "“foundation”, in relation to a wall, means the solid ground or artificially formed support resting on solid ground on which the wall rests"
+   },
+   {
+    "requirement": "An owner includes a person in receipt of, or entitled to receive, the whole or part of the rents or profits of land.",
+    "quote": "“owner” includes— a person in receipt of, or entitled to receive, the whole or part of the rents or profits of land"
+   },
+   {
+    "requirement": "An owner includes a person in possession of land, provided that possession is not held as a mortgagee, as a tenant from year to year or for a lesser term, or as a tenant at will.",
+    "quote": "a person in possession of land, otherwise than as a mortgagee or as a tenant from year to year or for a lesser term or as a tenant at will"
+   },
+   {
+    "requirement": "An owner includes a purchaser of an interest in land under a contract for purchase or under an agreement for a lease, provided that it is not under an agreement for a tenancy from year to year or for a lesser term.",
+    "quote": "a purchaser of an interest in land under a contract for purchase or under an agreement for a lease, otherwise than under an agreement for a tenancy from year to year or for a lesser term"
+   },
+   {
+    "requirement": "A party fence wall means a wall, not being part of a building, that stands on lands of different owners and is used or constructed to be used for separating such adjoining lands.",
+    "quote": "“party fence wall” means a wall (not being part of a building) which stands on lands of different owners and is used or constructed to be used for separating such adjoining lands"
+   },
+   {
+    "requirement": "A party fence wall does not include a wall constructed on the land of one owner where its artificially formed support projects into the land of another owner.",
+    "quote": "does not include a wall constructed on the land of one owner the artificially formed support of which projects into the land of another owner"
+   },
+   {
+    "requirement": "A party structure means a party wall, and also includes a floor partition or other structure separating buildings or parts of buildings approached solely by separate staircases or separate entrances.",
+    "quote": "“party structure” means a party wall and also a floor partition or other structure separating buildings or parts of buildings approached solely by separate staircases or separate entrances"
+   },
+   {
+    "requirement": "A party wall includes a wall that forms part of a building and stands on lands of different owners to a greater extent than the projection of any artificially formed support on which the wall rests.",
+    "quote": "“party wall” means— a wall which forms part of a building and stands on lands of different owners to a greater extent than the projection of any artificially formed support on which the wall rests"
+   },
+   {
+    "requirement": "A party wall includes so much of a wall, other than a wall forming part of a building and standing on lands of different owners to a greater extent than support projection, as separates buildings belonging to different owners.",
+    "quote": "so much of a wall not being a wall referred to in paragraph (a) above as separates buildings belonging to different owners"
+   },
+   {
+    "requirement": "Special foundations means foundations in which an assemblage of beams or rods is employed for the purpose of distributing any load.",
+    "quote": "“special foundations” means foundations in which an assemblage of beams or rods is employed for the purpose of distributing any load"
+   },
+   {
+    "requirement": "A surveyor means any person who is not a party to the matter and who is appointed or selected under section 10 to determine disputes in accordance with statutory procedures.",
+    "quote": "“surveyor” means any person not being a party to the matter appointed or selected under section 10 to determine disputes in accordance with the procedures set out in this Act"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum tenancy duration excluded from the definition of an owner in possession",
+    "value": "year to year",
+    "quote": "tenant from year to year or for a lesser term"
+   },
+   {
+    "what": "minimum agreement term excluded from the definition of an owner purchasing an interest under a lease agreement",
+    "value": "year to year",
+    "quote": "tenancy from year to year or for a lesser term"
+   },
+   {
+    "what": "count of owners on whose land a wall is constructed in the exception to party fence walls",
+    "value": "one",
+    "quote": "a wall constructed on the land of one owner"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Unless the context otherwise requires, the statutory expressions defined in the Party Wall etc. Act 1996 have the meanings assigned to them in this section throughout the Act.",
+   "quote": "In this Act, unless the context otherwise requires, the following expressions have the meanings hereby respectively assigned to them"
+  },
+  {
+   "requirement": "An adjoining owner means any owner of land, buildings, storeys or rooms adjoining those of the building owner, and for the purposes only of section 6, within the distances specified in that section.",
+   "quote": "“adjoining owner” and “adjoining occupier” respectively mean any owner and any occupier of land, buildings, storeys or rooms adjoining those of the building owner and for the purposes only of section 6 within the distances specified in that section"
+  },
+  {
+   "requirement": "An adjoining occupier means any occupier of land, buildings, storeys or rooms adjoining those of the building owner, and for the purposes only of section 6, within the distances specified in that section.",
+   "quote": "“adjoining owner” and “adjoining occupier” respectively mean any owner and any occupier of land, buildings, storeys or rooms adjoining those of the building owner and for the purposes only of section 6 within the distances specified in that section"
+  },
+  {
+   "requirement": "An appointing officer means the person appointed under the Party Wall etc. Act 1996 by the local authority to make appointments required under section 10(8).",
+   "quote": "“appointing officer” means the person appointed under this Act by the local authority to make such appointments as are required under section 10(8)"
+  },
+  {
+   "requirement": "A building owner means an owner of land who is desirous of exercising rights under the Party Wall etc. Act 1996.",
+   "quote": "“building owner” means an owner of land who is desirous of exercising rights under this Act"
+  },
+  {
+   "requirement": "In relation to a wall, a foundation means the solid ground or artificially formed support resting on solid ground on which the wall rests.",
+   "quote": "“foundation”, in relation to a wall, means the solid ground or artificially formed support resting on solid ground on which the wall rests"
+  },
+  {
+   "requirement": "An owner includes a person in receipt of, or entitled to receive, the whole or part of the rents or profits of land.",
+   "quote": "“owner” includes— a person in receipt of, or entitled to receive, the whole or part of the rents or profits of land"
+  },
+  {
+   "requirement": "An owner includes a person in possession of land, provided that possession is not held as a mortgagee, as a tenant from year to year or for a lesser term, or as a tenant at will.",
+   "quote": "a person in possession of land, otherwise than as a mortgagee or as a tenant from year to year or for a lesser term or as a tenant at will"
+  },
+  {
+   "requirement": "An owner includes a purchaser of an interest in land under a contract for purchase or under an agreement for a lease, provided that it is not under an agreement for a tenancy from year to year or for a lesser term.",
+   "quote": "a purchaser of an interest in land under a contract for purchase or under an agreement for a lease, otherwise than under an agreement for a tenancy from year to year or for a lesser term"
+  },
+  {
+   "requirement": "A party fence wall means a wall, not being part of a building, that stands on lands of different owners and is used or constructed to be used for separating such adjoining lands.",
+   "quote": "“party fence wall” means a wall (not being part of a building) which stands on lands of different owners and is used or constructed to be used for separating such adjoining lands"
+  },
+  {
+   "requirement": "A party fence wall does not include a wall constructed on the land of one owner where its artificially formed support projects into the land of another owner.",
+   "quote": "does not include a wall constructed on the land of one owner the artificially formed support of which projects into the land of another owner"
+  },
+  {
+   "requirement": "A party structure means a party wall, and also includes a floor partition or other structure separating buildings or parts of buildings approached solely by separate staircases or separate entrances.",
+   "quote": "“party structure” means a party wall and also a floor partition or other structure separating buildings or parts of buildings approached solely by separate staircases or separate entrances"
+  },
+  {
+   "requirement": "A party wall includes a wall that forms part of a building and stands on lands of different owners to a greater extent than the projection of any artificially formed support on which the wall rests.",
+   "quote": "“party wall” means— a wall which forms part of a building and stands on lands of different owners to a greater extent than the projection of any artificially formed support on which the wall rests"
+  },
+  {
+   "requirement": "A party wall includes so much of a wall, other than a wall forming part of a building and standing on lands of different owners to a greater extent than support projection, as separates buildings belonging to different owners.",
+   "quote": "so much of a wall not being a wall referred to in paragraph (a) above as separates buildings belonging to different owners"
+  },
+  {
+   "requirement": "Special foundations means foundations in which an assemblage of beams or rods is employed for the purpose of distributing any load.",
+   "quote": "“special foundations” means foundations in which an assemblage of beams or rods is employed for the purpose of distributing any load"
+  },
+  {
+   "requirement": "A surveyor means any person who is not a party to the matter and who is appointed or selected under section 10 to determine disputes in accordance with statutory procedures.",
+   "quote": "“surveyor” means any person not being a party to the matter appointed or selected under section 10 to determine disputes in accordance with the procedures set out in this Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

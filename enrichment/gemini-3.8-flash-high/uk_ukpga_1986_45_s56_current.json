@@ -1,0 +1,116 @@
+{
+ "key": "uk/ukpga/1986/45/s56@current",
+ "section": "uk/ukpga/1986/45/s56",
+ "version": "current",
+ "source_sha256": "a43951d7349e9e448b8d304f46cb3b8d3f8d2e1680a4eee54a11acf74f2b4849",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where two or more floating charges subsist over all or any part of the property of a company, a receiver may be appointed under the relevant Chapter by virtue of each such charge.",
+    "quote": "a receiver may be appointed under this Chapter by virtue of each such charge"
+   },
+   {
+    "requirement": "A receiver appointed by, or on the application of, the holder of a floating charge with priority of ranking over another floating charge by virtue of which a receiver has been appointed possesses the powers given by section 55 and Schedule 2 to the exclusion of any other receiver.",
+    "quote": "has the powers given to a receiver by section 55 and Schedule 2 to the exclusion of any other receiver"
+   },
+   {
+    "requirement": "Where two or more floating charges rank equally with one another and two or more receivers have been appointed by virtue of them, those receivers are deemed to have been appointed as joint receivers.",
+    "quote": "the receivers so appointed are deemed to have been appointed as joint receivers"
+   },
+   {
+    "requirement": "Receivers appointed or deemed appointed as joint receivers must act jointly unless the instrument of appointment or respective instruments of appointment provide otherwise.",
+    "quote": "shall act jointly unless the instrument of appointment or respective instruments of appointment otherwise provide"
+   },
+   {
+    "requirement": "Subject to subsection (5), the powers of a receiver appointed under a floating charge are suspended by and from the date of the appointment of a receiver under a prior ranking floating charge to the extent necessary to enable that prior receiver to exercise powers under section 55 and Schedule 2.",
+    "quote": "powers of a receiver appointed by, or on the application of, the holder of a floating charge are suspended by, and as from the date of, the appointment of a receiver"
+   },
+   {
+    "requirement": "Powers of a receiver suspended under subsection (4) take effect again when the floating charge having priority of ranking ceases to attach to the property then subject to the charge, whether by virtue of section 62(6) or otherwise.",
+    "quote": "any powers so suspended take effect again when the floating charge having priority of ranking ceases to attach to the property then subject to the charge"
+   },
+   {
+    "requirement": "The suspension of a receiver's powers under subsection (4) does not require that receiver to release any part of the company's property (including letters or documents) from their control until receiving from the superseding receiver a valid indemnity, subject to the limit of the value of the company property subject to their appointing charge, in respect of expenses, charges, and liabilities incurred performing functions as receiver.",
+    "quote": "does not have the effect of requiring him to release any part of the property (including any letters or documents) of the company from his control until he receives from the receiver superseding him a valid indemnity"
+   },
+   {
+    "requirement": "The suspension of a receiver's powers under subsection (4) does not cause the floating charge under which that receiver was appointed to cease to attach to property to which it attached by virtue of section 53(7) or 54(6).",
+    "quote": "does not cause the floating charge by virtue of which he was appointed to cease to attach to the property to which it attached by virtue of section 53(7) or 54(6)"
+   },
+   {
+    "requirement": "Nothing in section 56 prevents the same receiver from being appointed by virtue of two or more floating charges.",
+    "quote": "Nothing in this section prevents the same receiver being appointed by virtue of two or more floating charges"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of subsisting floating charges over company property allowing appointment of a receiver under each charge",
+    "value": "two or more",
+    "quote": "Where there are two or more floating charges subsisting over all or any part of the property of the company"
+   },
+   {
+    "what": "minimum number of floating charges ranking equally with one another for joint receiver deeming",
+    "value": "two or more",
+    "quote": "Where two or more floating charges rank with one another equally"
+   },
+   {
+    "what": "minimum number of receivers appointed under equally ranking charges deemed appointed as joint receivers",
+    "value": "two or more",
+    "quote": "and two or more receivers have been appointed by virtue of such charges"
+   },
+   {
+    "what": "minimum number of floating charges by virtue of which the same receiver may be appointed",
+    "value": "two or more",
+    "quote": "the same receiver being appointed by virtue of two or more floating charges"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where two or more floating charges subsist over all or any part of the property of a company, a receiver may be appointed under the relevant Chapter by virtue of each such charge.",
+   "quote": "a receiver may be appointed under this Chapter by virtue of each such charge"
+  },
+  {
+   "requirement": "A receiver appointed by, or on the application of, the holder of a floating charge with priority of ranking over another floating charge by virtue of which a receiver has been appointed possesses the powers given by section 55 and Schedule 2 to the exclusion of any other receiver.",
+   "quote": "has the powers given to a receiver by section 55 and Schedule 2 to the exclusion of any other receiver"
+  },
+  {
+   "requirement": "Where two or more floating charges rank equally with one another and two or more receivers have been appointed by virtue of them, those receivers are deemed to have been appointed as joint receivers.",
+   "quote": "the receivers so appointed are deemed to have been appointed as joint receivers"
+  },
+  {
+   "requirement": "Receivers appointed or deemed appointed as joint receivers must act jointly unless the instrument of appointment or respective instruments of appointment provide otherwise.",
+   "quote": "shall act jointly unless the instrument of appointment or respective instruments of appointment otherwise provide"
+  },
+  {
+   "requirement": "Subject to subsection (5), the powers of a receiver appointed under a floating charge are suspended by and from the date of the appointment of a receiver under a prior ranking floating charge to the extent necessary to enable that prior receiver to exercise powers under section 55 and Schedule 2.",
+   "quote": "powers of a receiver appointed by, or on the application of, the holder of a floating charge are suspended by, and as from the date of, the appointment of a receiver"
+  },
+  {
+   "requirement": "Powers of a receiver suspended under subsection (4) take effect again when the floating charge having priority of ranking ceases to attach to the property then subject to the charge, whether by virtue of section 62(6) or otherwise.",
+   "quote": "any powers so suspended take effect again when the floating charge having priority of ranking ceases to attach to the property then subject to the charge"
+  },
+  {
+   "requirement": "The suspension of a receiver's powers under subsection (4) does not require that receiver to release any part of the company's property (including letters or documents) from their control until receiving from the superseding receiver a valid indemnity, subject to the limit of the value of the company property subject to their appointing charge, in respect of expenses, charges, and liabilities incurred performing functions as receiver.",
+   "quote": "does not have the effect of requiring him to release any part of the property (including any letters or documents) of the company from his control until he receives from the receiver superseding him a valid indemnity"
+  },
+  {
+   "requirement": "The suspension of a receiver's powers under subsection (4) does not cause the floating charge under which that receiver was appointed to cease to attach to property to which it attached by virtue of section 53(7) or 54(6).",
+   "quote": "does not cause the floating charge by virtue of which he was appointed to cease to attach to the property to which it attached by virtue of section 53(7) or 54(6)"
+  },
+  {
+   "requirement": "Nothing in section 56 prevents the same receiver from being appointed by virtue of two or more floating charges.",
+   "quote": "Nothing in this section prevents the same receiver being appointed by virtue of two or more floating charges"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

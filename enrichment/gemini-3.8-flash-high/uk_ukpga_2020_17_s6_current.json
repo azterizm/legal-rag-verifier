@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2020/17/s6@current",
+ "section": "uk/ukpga/2020/17/s6",
+ "version": "current",
+ "source_sha256": "a200015e7f4780dfea01fafac9106274902828b28e32f235a6417d6f07e81a1a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a deferment order has been made in respect of an offence, the court dealing with the offender for that offence may have regard to the offender's conduct after conviction or any change in the offender's circumstances.",
+    "quote": "court which deals with the offender for the offence may have regard to— (a) the offender's conduct after conviction, or (b) any change in the offender's circumstances"
+   },
+   {
+    "requirement": "The matters to which the court dealing with the offender may have regard include, in particular and where appropriate, the making by the offender of reparation for the offence.",
+    "quote": "where appropriate, the making by the offender of reparation for the offence"
+   },
+   {
+    "requirement": "The matters to which the court dealing with the offender may have regard include, in particular, the extent to which the offender has complied with any deferment requirements.",
+    "quote": "the extent to which the offender has complied with any deferment requirements"
+   },
+   {
+    "requirement": "The court's power to issue a summons or arrest warrant applies where the court that made a deferment order proposes to deal with the offender on the date specified in the order, or where the offender does not appear on that date.",
+    "quote": "Subsection (4) applies where— (a) the court which made a deferment order proposes to deal with the offender on the date specified in the order, or (b) the offender does not appear on that date"
+   },
+   {
+    "requirement": "The court may issue a summons requiring the offender to appear before the court at the time and place specified in the summons.",
+    "quote": "issue a summons requiring the offender to appear before the court at the time and place specified in the summons"
+   },
+   {
+    "requirement": "The court may issue a warrant for the offender's arrest requiring the offender to be brought before the court at the time and place specified in the warrant.",
+    "quote": "issue a warrant for the offender's arrest which requires the offender to be brought before the court at the time and place specified in the warrant"
+   },
+   {
+    "requirement": "In making a deferment order, a magistrates' court is to be regarded as having adjourned the trial under section 10(1) of the Magistrates' Courts Act 1980.",
+    "quote": "In making the order the court is to be regarded as having adjourned the trial under section 10(1) of the Magistrates' Courts Act 1980"
+   },
+   {
+    "requirement": "Sections 11(1) and 13(1) to (3A) and (5) of the Magistrates' Courts Act 1980 apply if the offender does not appear on the date specified in a deferment order made by a magistrates' court, without prejudice to the court's power to issue a summons or warrant under subsection (4).",
+    "quote": "sections 11(1) and 13(1) to (3A) and (5) of that Act (non-appearance of the accused) apply if the offender does not appear on the date specified in the deferment order (but this is without prejudice to subsection (4))"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where a deferment order has been made in respect of an offence, the court dealing with the offender for that offence may have regard to the offender's conduct after conviction or any change in the offender's circumstances.",
+   "quote": "court which deals with the offender for the offence may have regard to— (a) the offender's conduct after conviction, or (b) any change in the offender's circumstances"
+  },
+  {
+   "requirement": "The matters to which the court dealing with the offender may have regard include, in particular and where appropriate, the making by the offender of reparation for the offence.",
+   "quote": "where appropriate, the making by the offender of reparation for the offence"
+  },
+  {
+   "requirement": "The matters to which the court dealing with the offender may have regard include, in particular, the extent to which the offender has complied with any deferment requirements.",
+   "quote": "the extent to which the offender has complied with any deferment requirements"
+  },
+  {
+   "requirement": "The court's power to issue a summons or arrest warrant applies where the court that made a deferment order proposes to deal with the offender on the date specified in the order, or where the offender does not appear on that date.",
+   "quote": "Subsection (4) applies where— (a) the court which made a deferment order proposes to deal with the offender on the date specified in the order, or (b) the offender does not appear on that date"
+  },
+  {
+   "requirement": "The court may issue a summons requiring the offender to appear before the court at the time and place specified in the summons.",
+   "quote": "issue a summons requiring the offender to appear before the court at the time and place specified in the summons"
+  },
+  {
+   "requirement": "The court may issue a warrant for the offender's arrest requiring the offender to be brought before the court at the time and place specified in the warrant.",
+   "quote": "issue a warrant for the offender's arrest which requires the offender to be brought before the court at the time and place specified in the warrant"
+  },
+  {
+   "requirement": "In making a deferment order, a magistrates' court is to be regarded as having adjourned the trial under section 10(1) of the Magistrates' Courts Act 1980.",
+   "quote": "In making the order the court is to be regarded as having adjourned the trial under section 10(1) of the Magistrates' Courts Act 1980"
+  },
+  {
+   "requirement": "Sections 11(1) and 13(1) to (3A) and (5) of the Magistrates' Courts Act 1980 apply if the offender does not appear on the date specified in a deferment order made by a magistrates' court, without prejudice to the court's power to issue a summons or warrant under subsection (4).",
+   "quote": "sections 11(1) and 13(1) to (3A) and (5) of that Act (non-appearance of the accused) apply if the offender does not appear on the date specified in the deferment order (but this is without prejudice to subsection (4))"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2015/15/s72@current",
+ "section": "uk/ukpga/2015/15/s72",
+ "version": "current",
+ "source_sha256": "3a32a75930a8a87614c38f76f254985ab4766a861f3bcb324206002351bde479",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Statutory rules on secondary contracts apply if a term of a contract (“the secondary contract”) reduces the rights or remedies or increases the obligations of a person under another contract (“the main contract”).",
+    "quote": "reduces the rights or remedies or increases the obligations of a person under another contract (“the main contract”)"
+   },
+   {
+    "requirement": "A term of a secondary contract that alters rights, remedies, or obligations under a main contract is subject to the provisions of this Part that would apply to the term if it were in the main contract.",
+    "quote": "The term is subject to the provisions of this Part that would apply to the term if it were in the main contract."
+   },
+   {
+    "requirement": "The rules governing a term of a secondary contract apply regardless of whether the parties to the secondary contract are the same as the parties to the main contract.",
+    "quote": "whether the parties to the secondary contract are the same as the parties to the main contract"
+   },
+   {
+    "requirement": "The rules governing a term of a secondary contract apply regardless of whether the secondary contract is a consumer contract.",
+    "quote": "whether the secondary contract is a consumer contract"
+   },
+   {
+    "requirement": "The statutory rules on secondary contracts do not apply if the secondary contract is a settlement of a claim arising under the main contract.",
+    "quote": "the secondary contract is a settlement of a claim arising under the main contract"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Statutory rules on secondary contracts apply if a term of a contract (“the secondary contract”) reduces the rights or remedies or increases the obligations of a person under another contract (“the main contract”).",
+   "quote": "reduces the rights or remedies or increases the obligations of a person under another contract (“the main contract”)"
+  },
+  {
+   "requirement": "A term of a secondary contract that alters rights, remedies, or obligations under a main contract is subject to the provisions of this Part that would apply to the term if it were in the main contract.",
+   "quote": "The term is subject to the provisions of this Part that would apply to the term if it were in the main contract."
+  },
+  {
+   "requirement": "The rules governing a term of a secondary contract apply regardless of whether the parties to the secondary contract are the same as the parties to the main contract.",
+   "quote": "whether the parties to the secondary contract are the same as the parties to the main contract"
+  },
+  {
+   "requirement": "The rules governing a term of a secondary contract apply regardless of whether the secondary contract is a consumer contract.",
+   "quote": "whether the secondary contract is a consumer contract"
+  },
+  {
+   "requirement": "The statutory rules on secondary contracts do not apply if the secondary contract is a settlement of a claim arising under the main contract.",
+   "quote": "the secondary contract is a settlement of a claim arising under the main contract"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

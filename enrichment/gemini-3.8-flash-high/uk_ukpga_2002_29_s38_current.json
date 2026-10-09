@@ -1,0 +1,99 @@
+{
+ "key": "uk/ukpga/2002/29/s38@current",
+ "section": "uk/ukpga/2002/29/s38",
+ "version": "current",
+ "source_sha256": "17c60ede082f85be65bbebf989fe61e871ab286f5dbbd3c5d729c7f031349389",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A term of imprisonment or detention to be served by a defendant in default of payment of an amount under a confiscation order does not begin to run until after the term of custody in respect of the offence (or offences) if, at the time the warrant committing the defendant to prison or detention is issued, the defendant is liable to serve a term of custody in respect of that offence or any of those offences.",
+    "quote": "does not begin to run until after the term mentioned in subsection (1)(b) above"
+   },
+   {
+    "requirement": "The detention served in default of payment includes detention under section 108 of the Powers of Criminal Courts (Sentencing) Act 2000 for persons aged 18 to 20.",
+    "quote": "detention under section 108 of the Powers of Criminal Courts (Sentencing) Act 2000 (detention of persons aged 18 to 20 for default)"
+   },
+   {
+    "requirement": "The term of custody a defendant is liable to serve in respect of an offence or offences means the term of imprisonment, or detention in a young offender institution, which the defendant is liable to serve in respect of the offence or any of the offences.",
+    "quote": "is a reference to the term of imprisonment, or detention in a young offender institution, which he is liable to serve in respect of the offence (or any of the offences)"
+   },
+   {
+    "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, consecutive terms and terms that are wholly or partly concurrent must be treated as a single term.",
+    "quote": "consecutive terms and terms which are wholly or partly concurrent must be treated as a single term"
+   },
+   {
+    "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, any sentence suspended under section 264 or 277 of the Sentencing Code (including by virtue of section 264A or 277A of that Code) that has not taken effect at the time the warrant is issued must be ignored.",
+    "quote": "any sentence suspended under section 264 or 277 of the Sentencing Code (including by virtue of section 264A or 277A of that Code) which has not taken effect at the time the warrant is issued"
+   },
+   {
+    "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, in the case of a sentence of imprisonment passed with an order under section 47(1) of the Criminal Law Act 1977, any part of the sentence that the defendant has not at that time been required to serve in prison must be ignored.",
+    "quote": "any part of the sentence which the defendant has not at that time been required to serve in prison"
+   },
+   {
+    "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, any term of imprisonment or detention fixed under section 129(3) of the Sentencing Code for which a warrant committing the defendant to prison or detention has not been issued at that time must be ignored.",
+    "quote": "any term of imprisonment or detention fixed under section 129(3) of the Sentencing Code (term to be served in default of payment of fine etc) for which a warrant committing the defendant to prison or detention has not been issued at that time"
+   },
+   {
+    "requirement": "A defendant's serving of a term of imprisonment or detention in default of paying any amount due under a confiscation order does not prevent the confiscation order from continuing to have effect so far as any other method of enforcement is concerned.",
+    "quote": "his serving that term does not prevent the confiscation order from continuing to have effect so far as any other method of enforcement is concerned"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "age range of persons subject to detention for default under section 108 of the Powers of Criminal Courts (Sentencing) Act 2000",
+    "value": "18 to 20",
+    "quote": "persons aged 18 to 20 for default"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A term of imprisonment or detention to be served by a defendant in default of payment of an amount under a confiscation order does not begin to run until after the term of custody in respect of the offence (or offences) if, at the time the warrant committing the defendant to prison or detention is issued, the defendant is liable to serve a term of custody in respect of that offence or any of those offences.",
+   "quote": "does not begin to run until after the term mentioned in subsection (1)(b) above"
+  },
+  {
+   "requirement": "The detention served in default of payment includes detention under section 108 of the Powers of Criminal Courts (Sentencing) Act 2000 for persons aged 18 to 20.",
+   "quote": "detention under section 108 of the Powers of Criminal Courts (Sentencing) Act 2000 (detention of persons aged 18 to 20 for default)"
+  },
+  {
+   "requirement": "The term of custody a defendant is liable to serve in respect of an offence or offences means the term of imprisonment, or detention in a young offender institution, which the defendant is liable to serve in respect of the offence or any of the offences.",
+   "quote": "is a reference to the term of imprisonment, or detention in a young offender institution, which he is liable to serve in respect of the offence (or any of the offences)"
+  },
+  {
+   "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, consecutive terms and terms that are wholly or partly concurrent must be treated as a single term.",
+   "quote": "consecutive terms and terms which are wholly or partly concurrent must be treated as a single term"
+  },
+  {
+   "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, any sentence suspended under section 264 or 277 of the Sentencing Code (including by virtue of section 264A or 277A of that Code) that has not taken effect at the time the warrant is issued must be ignored.",
+   "quote": "any sentence suspended under section 264 or 277 of the Sentencing Code (including by virtue of section 264A or 277A of that Code) which has not taken effect at the time the warrant is issued"
+  },
+  {
+   "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, in the case of a sentence of imprisonment passed with an order under section 47(1) of the Criminal Law Act 1977, any part of the sentence that the defendant has not at that time been required to serve in prison must be ignored.",
+   "quote": "any part of the sentence which the defendant has not at that time been required to serve in prison"
+  },
+  {
+   "requirement": "For the purpose of calculating the term of custody a defendant is liable to serve, any term of imprisonment or detention fixed under section 129(3) of the Sentencing Code for which a warrant committing the defendant to prison or detention has not been issued at that time must be ignored.",
+   "quote": "any term of imprisonment or detention fixed under section 129(3) of the Sentencing Code (term to be served in default of payment of fine etc) for which a warrant committing the defendant to prison or detention has not been issued at that time"
+  },
+  {
+   "requirement": "A defendant's serving of a term of imprisonment or detention in default of paying any amount due under a confiscation order does not prevent the confiscation order from continuing to have effect so far as any other method of enforcement is concerned.",
+   "quote": "his serving that term does not prevent the confiscation order from continuing to have effect so far as any other method of enforcement is concerned"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "age range of persons subject to detention for default under section 108 of the Powers of Criminal Courts (Sentencing) Act 2000",
+   "value": "18 to 20",
+   "quote": "persons aged 18 to 20 for default"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

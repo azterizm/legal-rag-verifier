@@ -1,0 +1,169 @@
+{
+ "key": "uk/ukpga/1980/43/s121@current",
+ "section": "uk/ukpga/1980/43/s121",
+ "version": "current",
+ "source_sha256": "9ec0fdbc1d7d2b55157fd5837c814a90f7bd2583cab26930b667f8fe4fa4c60a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A magistrates’ court must not try an information summarily or hear a complaint unless it is composed of at least two justices, unless an enactment permits the trial or hearing to take place before a single justice.",
+    "quote": "shall not try an information summarily or hear a complaint except when composed of at least 2 justices unless the trial or hearing is one that by virtue of any enactment may take place before a single justice"
+   },
+   {
+    "requirement": "A magistrates’ court must not hold an inquiry into the means of an offender for the purposes of section 82, or determine under that section at a hearing where the offender is absent whether to issue a warrant of commitment, unless it is composed of at least two justices.",
+    "quote": "shall not hold an inquiry into the means of an offender for the purposes of section 82 above or determine under that section at a hearing at which the offender is not present whether to issue a warrant of commitment except when composed of at least 2 justices"
+   },
+   {
+    "requirement": "Subject to any enactment to the contrary, a magistrates' court must sit in open court when trying summarily an information for an indictable offence.",
+    "quote": "Subject to the provisions of any enactment to the contrary, a magistrates' court must sit in open court if it is— (a) trying summarily an information for an indictable offence"
+   },
+   {
+    "requirement": "Subject to any enactment to the contrary, a magistrates' court must sit in open court when trying an information for a summary offence.",
+    "quote": "must sit in open court if it is— (b) trying an information for a summary offence"
+   },
+   {
+    "requirement": "Subject to any enactment to the contrary, a magistrates' court must sit in open court when imposing imprisonment.",
+    "quote": "must sit in open court if it is— (c) imposing imprisonment"
+   },
+   {
+    "requirement": "Subject to any enactment to the contrary, a magistrates' court must sit in open court when hearing a complaint.",
+    "quote": "must sit in open court if it is— (d) hearing a complaint"
+   },
+   {
+    "requirement": "Subject to any enactment to the contrary, a magistrates' court must sit in open court when holding an inquiry into the means of an offender for the purposes of section 82.",
+    "quote": "must sit in open court if it is— (e) holding an inquiry into the means of an offender for the purposes of section 82"
+   },
+   {
+    "requirement": "A magistrates’ court composed of a single justice must not impose imprisonment for a period exceeding 14 days or order a person to pay more than £1.",
+    "quote": "A magistrates’ court composed of a single justice , shall not impose imprisonment for a period exceeding 14 days or order a person to pay more than £1"
+   },
+   {
+    "requirement": "A magistrates' court trying a summary offence in accordance with section 16A is restricted to dealing with the accused by imposing a fine, imposing specified penalties under vehicle excise legislation, ordering payment of additional duty, making compensation orders, ordering payment of a victim surcharge, ordering costs to the prosecutor under section 18 of the Prosecution of Offences Act 1985, ordering costs under section 19 of that Act, ordering payment of a criminal courts charge, making an order to disregard penalty points upon course attendance, making driving disqualification orders, ordering driving record endorsement, applying for benefit deductions under the Criminal Justice Act 1991 or the Courts Act 2003, making an attachment of earnings order, making a collection order, or discharging the accused absolutely or conditionally.",
+    "quote": "A magistrates' court that is trying a summary offence in accordance with section 16A is restricted to the following in dealing with the accused for the offence"
+   },
+   {
+    "requirement": "The £1 payment limit applicable to a single justice under subsection (5) does not apply to fines imposed when trying a summary offence in accordance with section 16A.",
+    "quote": "The limit in subsection (5) does not apply to fines imposed as described in subsection (5A)"
+   },
+   {
+    "requirement": "Subject to subsection (7), the justices composing a magistrates' court must be present during the entirety of the proceedings.",
+    "quote": "the justices composing the court before which any proceedings take place shall be present during the whole of the proceedings"
+   },
+   {
+    "requirement": "If any justice absents himself during the proceedings, he must cease to act further in those proceedings.",
+    "quote": "if during the course of the proceedings any justice absents himself, he shall cease to act further therein"
+   },
+   {
+    "requirement": "If any justice absents himself during the proceedings, the proceedings may continue before the remaining justices provided they are sufficient to satisfy the statutory composition requirements.",
+    "quote": "if the remaining justices are enough to satisfy the requirements of the preceding provisions of this section, the proceedings may continue before a court composed of those justices"
+   },
+   {
+    "requirement": "Where the trial of an information is adjourned after conviction but before sentencing or dealing with the accused, the sentencing court need not be composed of the same justices who convicted him.",
+    "quote": "the court which sentences or deals with him need not be composed of the same justices as that which convicted him"
+   },
+   {
+    "requirement": "Where any justices composing the sentencing court were not present when the offender was convicted, the court must, before sentencing or dealing with the offender, inquire into the facts and circumstances of the case to enable those justices to become fully acquainted with them.",
+    "quote": "where among the justices composing the court which sentences or deals with an offender there are any who were not sitting when he was convicted, the court which sentences or deals with the offender shall before doing so make such inquiry into the facts and circumstances of the case as will enable the justices who were not sitting when the offender was convicted to be fully acquainted with those facts and circumstances"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of justices required to try an information summarily or hear a complaint (unless an enactment permits a single justice)",
+    "value": "2",
+    "quote": "composed of at least 2 justices"
+   },
+   {
+    "what": "Minimum number of justices required to hold a means inquiry under section 82 or determine whether to issue a warrant of commitment in the offender's absence",
+    "value": "2",
+    "quote": "composed of at least 2 justices"
+   },
+   {
+    "what": "Maximum period of imprisonment a magistrates' court composed of a single justice may impose",
+    "value": "14 days",
+    "quote": "period exceeding 14 days"
+   },
+   {
+    "what": "Maximum amount a magistrates' court composed of a single justice may order a person to pay (subject to subsection (5B))",
+    "value": "£1",
+    "quote": "order a person to pay more than £1"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A magistrates’ court must not try an information summarily or hear a complaint unless it is composed of at least two justices, unless an enactment permits the trial or hearing to take place before a single justice.",
+   "quote": "shall not try an information summarily or hear a complaint except when composed of at least 2 justices unless the trial or hearing is one that by virtue of any enactment may take place before a single justice"
+  },
+  {
+   "requirement": "A magistrates’ court must not hold an inquiry into the means of an offender for the purposes of section 82, or determine under that section at a hearing where the offender is absent whether to issue a warrant of commitment, unless it is composed of at least two justices.",
+   "quote": "shall not hold an inquiry into the means of an offender for the purposes of section 82 above or determine under that section at a hearing at which the offender is not present whether to issue a warrant of commitment except when composed of at least 2 justices"
+  },
+  {
+   "requirement": "Subject to any enactment to the contrary, a magistrates' court must sit in open court when trying summarily an information for an indictable offence.",
+   "quote": "Subject to the provisions of any enactment to the contrary, a magistrates' court must sit in open court if it is— (a) trying summarily an information for an indictable offence"
+  },
+  {
+   "requirement": "A magistrates’ court composed of a single justice must not impose imprisonment for a period exceeding 14 days or order a person to pay more than £1.",
+   "quote": "A magistrates’ court composed of a single justice , shall not impose imprisonment for a period exceeding 14 days or order a person to pay more than £1"
+  },
+  {
+   "requirement": "A magistrates' court trying a summary offence in accordance with section 16A is restricted to dealing with the accused by imposing a fine, imposing specified penalties under vehicle excise legislation, ordering payment of additional duty, making compensation orders, ordering payment of a victim surcharge, ordering costs to the prosecutor under section 18 of the Prosecution of Offences Act 1985, ordering costs under section 19 of that Act, ordering payment of a criminal courts charge, making an order to disregard penalty points upon course attendance, making driving disqualification orders, ordering driving record endorsement, applying for benefit deductions under the Criminal Justice Act 1991 or the Courts Act 2003, making an attachment of earnings order, making a collection order, or discharging the accused absolutely or conditionally.",
+   "quote": "A magistrates' court that is trying a summary offence in accordance with section 16A is restricted to the following in dealing with the accused for the offence"
+  },
+  {
+   "requirement": "The £1 payment limit applicable to a single justice under subsection (5) does not apply to fines imposed when trying a summary offence in accordance with section 16A.",
+   "quote": "The limit in subsection (5) does not apply to fines imposed as described in subsection (5A)"
+  },
+  {
+   "requirement": "Subject to subsection (7), the justices composing a magistrates' court must be present during the entirety of the proceedings.",
+   "quote": "the justices composing the court before which any proceedings take place shall be present during the whole of the proceedings"
+  },
+  {
+   "requirement": "If any justice absents himself during the proceedings, he must cease to act further in those proceedings.",
+   "quote": "if during the course of the proceedings any justice absents himself, he shall cease to act further therein"
+  },
+  {
+   "requirement": "If any justice absents himself during the proceedings, the proceedings may continue before the remaining justices provided they are sufficient to satisfy the statutory composition requirements.",
+   "quote": "if the remaining justices are enough to satisfy the requirements of the preceding provisions of this section, the proceedings may continue before a court composed of those justices"
+  },
+  {
+   "requirement": "Where the trial of an information is adjourned after conviction but before sentencing or dealing with the accused, the sentencing court need not be composed of the same justices who convicted him.",
+   "quote": "the court which sentences or deals with him need not be composed of the same justices as that which convicted him"
+  },
+  {
+   "requirement": "Where any justices composing the sentencing court were not present when the offender was convicted, the court must, before sentencing or dealing with the offender, inquire into the facts and circumstances of the case to enable those justices to become fully acquainted with them.",
+   "quote": "where among the justices composing the court which sentences or deals with an offender there are any who were not sitting when he was convicted, the court which sentences or deals with the offender shall before doing so make such inquiry into the facts and circumstances of the case as will enable the justices who were not sitting when the offender was convicted to be fully acquainted with those facts and circumstances"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum number of justices required to try an information summarily or hear a complaint (unless an enactment permits a single justice)",
+   "value": "2",
+   "quote": "composed of at least 2 justices"
+  },
+  {
+   "what": "Minimum number of justices required to hold a means inquiry under section 82 or determine whether to issue a warrant of commitment in the offender's absence",
+   "value": "2",
+   "quote": "composed of at least 2 justices"
+  },
+  {
+   "what": "Maximum period of imprisonment a magistrates' court composed of a single justice may impose",
+   "value": "14 days",
+   "quote": "period exceeding 14 days"
+  },
+  {
+   "what": "Maximum amount a magistrates' court composed of a single justice may order a person to pay (subject to subsection (5B))",
+   "value": "£1",
+   "quote": "order a person to pay more than £1"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 4
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "key": "uk/ukpga/2003/14/s18@current",
+ "section": "uk/ukpga/2003/14/s18",
+ "version": "current",
+ "source_sha256": "abcc93009bd5a6a9446538da875050e01d0ba65eab70258fba4d6cd9446e7d60",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 77A of the Value Added Tax Act 1994 applies to telephones and any other equipment, including parts and accessories, made or adapted for use in connection with telephones or telecommunication.",
+    "quote": "telephones and any other equipment, including parts and accessories, made or adapted for use in connection with telephones or telecommunication"
+   },
+   {
+    "requirement": "Section 77A of the Value Added Tax Act 1994 applies to computers and any other equipment, including parts, accessories and software, made or adapted for use in connection with computers or computer systems.",
+    "quote": "computers and any other equipment, including parts, accessories and software, made or adapted for use in connection with computers or computer systems"
+   },
+   {
+    "requirement": "The Commissioners may serve a notice specifying the unpaid VAT and stating its effect on a taxable person if a taxable supply of covered goods has been made to that taxable person and, at the time of the supply, that person knew or had reasonable grounds to suspect that some or all of the VAT payable on that supply, or on any previous or subsequent supply of those goods, would go unpaid.",
+    "quote": "the Commissioners may serve on him a notice specifying the amount of the VAT so payable that is unpaid, and stating the effect of the notice"
+   },
+   {
+    "requirement": "The effect of a notice served under section 77A of the Value Added Tax Act 1994 is that the person served with the notice and the person who is otherwise liable for the specified amount are jointly and severally liable to the Commissioners for that amount.",
+    "quote": "are jointly and severally liable to the Commissioners for that amount"
+   },
+   {
+    "requirement": "For the purposes of determining joint and several liability under section 77A(2), the amount of VAT payable in respect of a supply is the lesser of the amount chargeable on the supply and the amount shown as due on the supplier's return for the prescribed accounting period in question (if made) together with any amount assessed as due from the supplier for that period, subject to any appeal by the supplier.",
+    "quote": "the amount of VAT that is payable in respect of a supply is the lesser of"
+   },
+   {
+    "requirement": "The reference to assessing an amount as due from a supplier includes cases where that amount is not notified to the supplier because it is impracticable to do so.",
+    "quote": "includes a reference to the case where, because it is impracticable to do so, the amount is not notified to him"
+   },
+   {
+    "requirement": "A taxable person is presumed to have reasonable grounds to suspect that VAT would go unpaid if the price payable by that person for the goods was less than the lowest price that might reasonably be expected on the open market, or was less than the price payable on any previous supply of those goods.",
+    "quote": "a person shall be presumed to have reasonable grounds for suspecting matters to be as mentioned in paragraph (b) of that subsection"
+   },
+   {
+    "requirement": "The presumption of reasonable grounds for suspicion is rebuttable upon proof that the low price payable for the goods was due to circumstances unconnected with failure to pay VAT.",
+    "quote": "The presumption provided for by subsection (6) above is rebuttable on proof that the low price payable for the goods was due to circumstances unconnected with failure to pay VAT"
+   },
+   {
+    "requirement": "The statutory presumption regarding low purchase price operates without prejudice to any other method of establishing reasonable grounds for suspicion.",
+    "quote": "without prejudice to any other way of establishing reasonable grounds for suspicion"
+   },
+   {
+    "requirement": "The Treasury may by order amend the categories of goods to which section 77A applies, including making any incidental, supplemental, consequential or transitional provision they think fit.",
+    "quote": "The Treasury may by order amend subsection (1) above; and any such order may make such incidental, supplemental, consequential or transitional provision as the Treasury think fit"
+   },
+   {
+    "requirement": "For the purposes of section 77A of the Value Added Tax Act 1994, goods includes services.",
+    "quote": "“goods” includes services"
+   },
+   {
+    "requirement": "For the purposes of section 77A of the Value Added Tax Act 1994, an amount of VAT counts as unpaid only to the extent that it exceeds the amount of any refund due.",
+    "quote": "an amount of VAT counts as unpaid only to the extent that it exceeds the amount of any refund due"
+   },
+   {
+    "requirement": "An appeal lies under section 83 of the Value Added Tax Act 1994 with respect to any liability arising by virtue of section 77A.",
+    "quote": "raany liability arising by virtue of section 77A;"
+   },
+   {
+    "requirement": "An appeal regarding liability under section 77A shall not be entertained under section 84(3) of the Value Added Tax Act 1994 unless the VAT has been paid or deposited, except where that requirement would cause hardship.",
+    "quote": "for “or (q)” substitute “ , (q) or (ra) ”"
+   },
+   {
+    "requirement": "Section 18 of the Finance Act 2003 is deemed to have come into force on 10th April 2003, except for subsection (3) which applies in relation to any appeal notice of which is given on or after the day on which the Act is passed.",
+    "quote": "This section shall be deemed to have come into force on 10th April 2003 except subsection (3) which applies in relation to any appeal notice of which is given on or after the day on which this Act is passed"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the deemed commencement date for section 18 of the Finance Act 2003 (except subsection (3))",
+    "value": "10th April 2003",
+    "quote": "deemed to have come into force on 10th April 2003"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 77A of the Value Added Tax Act 1994 applies to telephones and any other equipment, including parts and accessories, made or adapted for use in connection with telephones or telecommunication.",
+   "quote": "telephones and any other equipment, including parts and accessories, made or adapted for use in connection with telephones or telecommunication"
+  },
+  {
+   "requirement": "Section 77A of the Value Added Tax Act 1994 applies to computers and any other equipment, including parts, accessories and software, made or adapted for use in connection with computers or computer systems.",
+   "quote": "computers and any other equipment, including parts, accessories and software, made or adapted for use in connection with computers or computer systems"
+  },
+  {
+   "requirement": "The Commissioners may serve a notice specifying the unpaid VAT and stating its effect on a taxable person if a taxable supply of covered goods has been made to that taxable person and, at the time of the supply, that person knew or had reasonable grounds to suspect that some or all of the VAT payable on that supply, or on any previous or subsequent supply of those goods, would go unpaid.",
+   "quote": "the Commissioners may serve on him a notice specifying the amount of the VAT so payable that is unpaid, and stating the effect of the notice"
+  },
+  {
+   "requirement": "The effect of a notice served under section 77A of the Value Added Tax Act 1994 is that the person served with the notice and the person who is otherwise liable for the specified amount are jointly and severally liable to the Commissioners for that amount.",
+   "quote": "are jointly and severally liable to the Commissioners for that amount"
+  },
+  {
+   "requirement": "For the purposes of determining joint and several liability under section 77A(2), the amount of VAT payable in respect of a supply is the lesser of the amount chargeable on the supply and the amount shown as due on the supplier's return for the prescribed accounting period in question (if made) together with any amount assessed as due from the supplier for that period, subject to any appeal by the supplier.",
+   "quote": "the amount of VAT that is payable in respect of a supply is the lesser of"
+  },
+  {
+   "requirement": "The reference to assessing an amount as due from a supplier includes cases where that amount is not notified to the supplier because it is impracticable to do so.",
+   "quote": "includes a reference to the case where, because it is impracticable to do so, the amount is not notified to him"
+  },
+  {
+   "requirement": "A taxable person is presumed to have reasonable grounds to suspect that VAT would go unpaid if the price payable by that person for the goods was less than the lowest price that might reasonably be expected on the open market, or was less than the price payable on any previous supply of those goods.",
+   "quote": "a person shall be presumed to have reasonable grounds for suspecting matters to be as mentioned in paragraph (b) of that subsection"
+  },
+  {
+   "requirement": "The presumption of reasonable grounds for suspicion is rebuttable upon proof that the low price payable for the goods was due to circumstances unconnected with failure to pay VAT.",
+   "quote": "The presumption provided for by subsection (6) above is rebuttable on proof that the low price payable for the goods was due to circumstances unconnected with failure to pay VAT"
+  },
+  {
+   "requirement": "The statutory presumption regarding low purchase price operates without prejudice to any other method of establishing reasonable grounds for suspicion.",
+   "quote": "without prejudice to any other way of establishing reasonable grounds for suspicion"
+  },
+  {
+   "requirement": "The Treasury may by order amend the categories of goods to which section 77A applies, including making any incidental, supplemental, consequential or transitional provision they think fit.",
+   "quote": "The Treasury may by order amend subsection (1) above; and any such order may make such incidental, supplemental, consequential or transitional provision as the Treasury think fit"
+  },
+  {
+   "requirement": "For the purposes of section 77A of the Value Added Tax Act 1994, goods includes services.",
+   "quote": "“goods” includes services"
+  },
+  {
+   "requirement": "For the purposes of section 77A of the Value Added Tax Act 1994, an amount of VAT counts as unpaid only to the extent that it exceeds the amount of any refund due.",
+   "quote": "an amount of VAT counts as unpaid only to the extent that it exceeds the amount of any refund due"
+  },
+  {
+   "requirement": "An appeal lies under section 83 of the Value Added Tax Act 1994 with respect to any liability arising by virtue of section 77A.",
+   "quote": "raany liability arising by virtue of section 77A;"
+  },
+  {
+   "requirement": "An appeal regarding liability under section 77A shall not be entertained under section 84(3) of the Value Added Tax Act 1994 unless the VAT has been paid or deposited, except where that requirement would cause hardship.",
+   "quote": "for “or (q)” substitute “ , (q) or (ra) ”"
+  },
+  {
+   "requirement": "Section 18 of the Finance Act 2003 is deemed to have come into force on 10th April 2003, except for subsection (3) which applies in relation to any appeal notice of which is given on or after the day on which the Act is passed.",
+   "quote": "This section shall be deemed to have come into force on 10th April 2003 except subsection (3) which applies in relation to any appeal notice of which is given on or after the day on which this Act is passed"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the deemed commencement date for section 18 of the Finance Act 2003 (except subsection (3))",
+   "value": "10th April 2003",
+   "quote": "deemed to have come into force on 10th April 2003"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

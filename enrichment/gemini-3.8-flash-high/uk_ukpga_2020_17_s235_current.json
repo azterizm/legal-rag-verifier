@@ -1,0 +1,75 @@
+{
+ "key": "uk/ukpga/2020/17/s235@current",
+ "section": "uk/ukpga/2020/17/s235",
+ "version": "current",
+ "source_sha256": "7c52c39f0917d84c5a8aec9fc725c0090790c69976eefff0423abc9974cf9d5c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 235 of the Sentencing Act 2020 applies where a detention and training order is available.",
+    "quote": "This section applies where a detention and training order is available."
+   },
+   {
+    "requirement": "The court may not make a detention and training order if it imposes a sentence of detention under section 250 in respect of the offence.",
+    "quote": "The court may not make a detention and training order if it imposes— (a) a sentence of detention under section 250"
+   },
+   {
+    "requirement": "The court may not make a detention and training order if it imposes an extended sentence of detention under section 254 in respect of the offence.",
+    "quote": "The court may not make a detention and training order if it imposes—"
+   },
+   {
+    "requirement": "If an offender is aged under 15 when convicted, the court may not make a detention and training order unless it is of the opinion that the offender is a persistent offender.",
+    "quote": "If the offender is aged under 15 when convicted the court may not make a detention and training order unless it is of the opinion that the offender is a persistent offender."
+   },
+   {
+    "requirement": "The court's power to make a detention and training order is subject in particular to section 230 regarding the threshold for imposing a discretionary custodial sentence.",
+    "quote": "The court's power to make a detention and training order is subject to (in particular) section 230 (threshold for imposing discretionary custodial sentence)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "age of the offender when convicted below which a detention and training order requires the court to be of the opinion that the offender is a persistent offender",
+    "value": "15",
+    "quote": "aged under 15 when convicted"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 235 of the Sentencing Act 2020 applies where a detention and training order is available.",
+   "quote": "This section applies where a detention and training order is available."
+  },
+  {
+   "requirement": "The court may not make a detention and training order if it imposes a sentence of detention under section 250 in respect of the offence.",
+   "quote": "The court may not make a detention and training order if it imposes— (a) a sentence of detention under section 250"
+  },
+  {
+   "requirement": "The court may not make a detention and training order if it imposes an extended sentence of detention under section 254 in respect of the offence.",
+   "quote": "The court may not make a detention and training order if it imposes—"
+  },
+  {
+   "requirement": "If an offender is aged under 15 when convicted, the court may not make a detention and training order unless it is of the opinion that the offender is a persistent offender.",
+   "quote": "If the offender is aged under 15 when convicted the court may not make a detention and training order unless it is of the opinion that the offender is a persistent offender."
+  },
+  {
+   "requirement": "The court's power to make a detention and training order is subject in particular to section 230 regarding the threshold for imposing a discretionary custodial sentence.",
+   "quote": "The court's power to make a detention and training order is subject to (in particular) section 230 (threshold for imposing discretionary custodial sentence)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "age of the offender when convicted below which a detention and training order requires the court to be of the opinion that the offender is a persistent offender",
+   "value": "15",
+   "quote": "aged under 15 when convicted"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

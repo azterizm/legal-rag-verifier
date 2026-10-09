@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2020/17/s89@current",
+ "section": "uk/ukpga/2020/17/s89",
+ "version": "current",
+ "source_sha256": "0439ff8feeab28e0bae55b5cf7659d65db6c9e954ace28a5775924b3408584ee",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 89 applies where a court makes a referral order in respect of an offence.",
+    "quote": "This section applies where a court makes a referral order in respect of an offence."
+   },
+   {
+    "requirement": "In dealing with the offender for any connected offence, the court must either sentence the offender by making a referral order or make an order for absolute discharge.",
+    "quote": "In dealing with the offender for any connected offence, the court must— (a) sentence the offender by making a referral order, or (b) make an order for absolute discharge."
+   },
+   {
+    "requirement": "In dealing with the offender in respect of the offence or any connected offence, the court may not order the offender to pay a fine.",
+    "quote": "In dealing with the offender in respect of the offence or any connected offence, the court may not— (a) order the offender to pay a fine"
+   },
+   {
+    "requirement": "In dealing with the offender in respect of the offence or any connected offence, the court may not make a youth rehabilitation order, an order under section 1(2A) of the Street Offences Act 1959, a reparation order, or an order for conditional discharge.",
+    "quote": "make any of the following orders— (i) a youth rehabilitation order; (ii) an order under section 1(2A) of the Street Offences Act 1959; (iii) a reparation order; (iv) an order for conditional discharge."
+   },
+   {
+    "requirement": "The court may not make an order binding the offender over to keep the peace or to be of good behaviour in connection with the offence or any connected offence.",
+    "quote": "The court may not make— (a) an order binding the offender over to keep the peace or to be of good behaviour"
+   },
+   {
+    "requirement": "The court may not make an order under section 376 for the binding over of a parent or guardian in connection with the offence or any connected offence.",
+    "quote": "an order under section 376 (binding over of parent or guardian), in connection with the offence or any connected offence."
+   },
+   {
+    "requirement": "Nothing in section 85 or subsection (2) affects any power or duty of a magistrates' court under section 25, section 10(3) of the Magistrates' Courts Act 1980, or section 35, 38, 43 or 44 of the Mental Health Act 1983.",
+    "quote": "Nothing in section 85 or subsection (2) affects any power or duty of a magistrates' court under— (a) section 25 (power and duty to remit young offenders to youth courts for sentence), (b) section 10(3) of the Magistrates' Courts Act 1980 (adjournment for inquiries), or (c) section 35, 38, 43 or 44 of the Mental Health Act 1983"
+   },
+   {
+    "requirement": "Nothing in section 89 affects any power of a court to re-sentence an offender for the offence in respect of which a referral order was made where the court revokes that referral order.",
+    "quote": "Nothing in this section affects any power of a court, where it revokes a referral order, to re-sentence an offender for the offence in respect of which the order was made."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 89 applies where a court makes a referral order in respect of an offence.",
+   "quote": "This section applies where a court makes a referral order in respect of an offence."
+  },
+  {
+   "requirement": "In dealing with the offender for any connected offence, the court must either sentence the offender by making a referral order or make an order for absolute discharge.",
+   "quote": "In dealing with the offender for any connected offence, the court must— (a) sentence the offender by making a referral order, or (b) make an order for absolute discharge."
+  },
+  {
+   "requirement": "In dealing with the offender in respect of the offence or any connected offence, the court may not order the offender to pay a fine.",
+   "quote": "In dealing with the offender in respect of the offence or any connected offence, the court may not— (a) order the offender to pay a fine"
+  },
+  {
+   "requirement": "In dealing with the offender in respect of the offence or any connected offence, the court may not make a youth rehabilitation order, an order under section 1(2A) of the Street Offences Act 1959, a reparation order, or an order for conditional discharge.",
+   "quote": "make any of the following orders— (i) a youth rehabilitation order; (ii) an order under section 1(2A) of the Street Offences Act 1959; (iii) a reparation order; (iv) an order for conditional discharge."
+  },
+  {
+   "requirement": "The court may not make an order binding the offender over to keep the peace or to be of good behaviour in connection with the offence or any connected offence.",
+   "quote": "The court may not make— (a) an order binding the offender over to keep the peace or to be of good behaviour"
+  },
+  {
+   "requirement": "The court may not make an order under section 376 for the binding over of a parent or guardian in connection with the offence or any connected offence.",
+   "quote": "an order under section 376 (binding over of parent or guardian), in connection with the offence or any connected offence."
+  },
+  {
+   "requirement": "Nothing in section 85 or subsection (2) affects any power or duty of a magistrates' court under section 25, section 10(3) of the Magistrates' Courts Act 1980, or section 35, 38, 43 or 44 of the Mental Health Act 1983.",
+   "quote": "Nothing in section 85 or subsection (2) affects any power or duty of a magistrates' court under— (a) section 25 (power and duty to remit young offenders to youth courts for sentence), (b) section 10(3) of the Magistrates' Courts Act 1980 (adjournment for inquiries), or (c) section 35, 38, 43 or 44 of the Mental Health Act 1983"
+  },
+  {
+   "requirement": "Nothing in section 89 affects any power of a court to re-sentence an offender for the offence in respect of which a referral order was made where the court revokes that referral order.",
+   "quote": "Nothing in this section affects any power of a court, where it revokes a referral order, to re-sentence an offender for the offence in respect of which the order was made."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

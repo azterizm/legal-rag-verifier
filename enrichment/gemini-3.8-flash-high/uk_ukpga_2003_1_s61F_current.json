@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2003/1/s61F@current",
+ "section": "uk/ukpga/2003/1/s61F",
+ "version": "current",
+ "source_sha256": "03b04a0a6c24023d3dc1e2e8a99a5112e6600cb7a558aa722f09f0b9f3e8fb05",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The provisions in section 61F apply for the purposes of sections 61D and 61E.",
+    "quote": "apply for the purposes of sections 61D and 61E"
+   },
+   {
+    "requirement": "A payment or benefit means anything that would be general earnings from an employment if it were received by an employee for performing the duties of that employment.",
+    "quote": "anything that, if received by an employee for performing the duties of an employment, would be general earnings from the employment"
+   },
+   {
+    "requirement": "The amount of a payment or cash benefit is taken to be the amount received.",
+    "quote": "in the case of a payment or cash benefit, the amount received"
+   },
+   {
+    "requirement": "The amount of a non-cash benefit is taken to be the cash equivalent of that benefit.",
+    "quote": "in the case of a non-cash benefit, the cash equivalent of the benefit"
+   },
+   {
+    "requirement": "The cash equivalent of a non-cash benefit is taken to be the amount that would be general earnings if the benefit were general earnings from an employment.",
+    "quote": "the amount that would be general earnings if the benefit were general earnings from an employment"
+   },
+   {
+    "requirement": "For living accommodation, the cash equivalent is taken to be whichever is the greater of the amount that would be general earnings and the cash equivalent determined in accordance with section 398(2).",
+    "quote": "in the case of living accommodation, whichever is the greater of that amount and the cash equivalent determined in accordance with section 398(2)"
+   },
+   {
+    "requirement": "A payment or cash benefit is treated as received when payment is made of or on account of the payment or benefit.",
+    "quote": "in the case of a payment or cash benefit, when payment is made of or on account of the payment or benefit"
+   },
+   {
+    "requirement": "A non-cash benefit is treated as received when it would have been treated as received for the purposes of Chapter 4 or 5 of this Part (see section 19 or 32) if the worker had been an employee and the benefit had been provided by reason of the employment.",
+    "quote": "when it would have been treated as received for the purposes of Chapter 4 or 5 of this Part (see section 19 or 32) if— (i) the worker had been an employee, and (ii) the benefit had been provided by reason of the employment"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The provisions in section 61F apply for the purposes of sections 61D and 61E.",
+   "quote": "apply for the purposes of sections 61D and 61E"
+  },
+  {
+   "requirement": "A payment or benefit means anything that would be general earnings from an employment if it were received by an employee for performing the duties of that employment.",
+   "quote": "anything that, if received by an employee for performing the duties of an employment, would be general earnings from the employment"
+  },
+  {
+   "requirement": "The amount of a payment or cash benefit is taken to be the amount received.",
+   "quote": "in the case of a payment or cash benefit, the amount received"
+  },
+  {
+   "requirement": "The amount of a non-cash benefit is taken to be the cash equivalent of that benefit.",
+   "quote": "in the case of a non-cash benefit, the cash equivalent of the benefit"
+  },
+  {
+   "requirement": "The cash equivalent of a non-cash benefit is taken to be the amount that would be general earnings if the benefit were general earnings from an employment.",
+   "quote": "the amount that would be general earnings if the benefit were general earnings from an employment"
+  },
+  {
+   "requirement": "For living accommodation, the cash equivalent is taken to be whichever is the greater of the amount that would be general earnings and the cash equivalent determined in accordance with section 398(2).",
+   "quote": "in the case of living accommodation, whichever is the greater of that amount and the cash equivalent determined in accordance with section 398(2)"
+  },
+  {
+   "requirement": "A payment or cash benefit is treated as received when payment is made of or on account of the payment or benefit.",
+   "quote": "in the case of a payment or cash benefit, when payment is made of or on account of the payment or benefit"
+  },
+  {
+   "requirement": "A non-cash benefit is treated as received when it would have been treated as received for the purposes of Chapter 4 or 5 of this Part (see section 19 or 32) if the worker had been an employee and the benefit had been provided by reason of the employment.",
+   "quote": "when it would have been treated as received for the purposes of Chapter 4 or 5 of this Part (see section 19 or 32) if— (i) the worker had been an employee, and (ii) the benefit had been provided by reason of the employment"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

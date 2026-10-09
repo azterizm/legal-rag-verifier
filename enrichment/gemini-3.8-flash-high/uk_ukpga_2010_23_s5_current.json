@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2010/23/s5@current",
+ "section": "uk/ukpga/2010/23/s5",
+ "version": "current",
+ "source_sha256": "391acb1087533284a0c5742c4822cbdbf017943e02d26b71cae702d5e9abfad1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of sections 3 and 4 of the Bribery Act 2010, the test of what is expected regarding the performance of a function or activity is assessed by reference to what a reasonable person in the United Kingdom would expect in relation to the performance of that type of function or activity.",
+    "quote": "the test of what is expected is a test of what a reasonable person in the United Kingdom would expect in relation to the performance of the type of function or activity concerned"
+   },
+   {
+    "requirement": "When deciding what a reasonable person in the United Kingdom would expect regarding the performance of a function or activity that is not subject to the law of any part of the United Kingdom, any local custom or practice must be disregarded unless it is permitted or required by the written law applicable to the country or territory concerned.",
+    "quote": "any local custom or practice is to be disregarded unless it is permitted or required by the written law applicable to the country or territory concerned"
+   },
+   {
+    "requirement": "For the purposes of determining whether a local custom or practice is permitted or required under section 5(2), written law includes law contained in any written constitution or provision made by or under legislation applicable to the country or territory concerned.",
+    "quote": "any written constitution, or provision made by or under legislation, applicable to the country or territory concerned"
+   },
+   {
+    "requirement": "For the purposes of determining whether a local custom or practice is permitted or required under section 5(2), written law includes law contained in any judicial decision that is applicable to the country or territory concerned and is evidenced in published written sources.",
+    "quote": "any judicial decision which is so applicable and is evidenced in published written sources"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of sections 3 and 4 of the Bribery Act 2010, the test of what is expected regarding the performance of a function or activity is assessed by reference to what a reasonable person in the United Kingdom would expect in relation to the performance of that type of function or activity.",
+   "quote": "the test of what is expected is a test of what a reasonable person in the United Kingdom would expect in relation to the performance of the type of function or activity concerned"
+  },
+  {
+   "requirement": "When deciding what a reasonable person in the United Kingdom would expect regarding the performance of a function or activity that is not subject to the law of any part of the United Kingdom, any local custom or practice must be disregarded unless it is permitted or required by the written law applicable to the country or territory concerned.",
+   "quote": "any local custom or practice is to be disregarded unless it is permitted or required by the written law applicable to the country or territory concerned"
+  },
+  {
+   "requirement": "For the purposes of determining whether a local custom or practice is permitted or required under section 5(2), written law includes law contained in any written constitution or provision made by or under legislation applicable to the country or territory concerned.",
+   "quote": "any written constitution, or provision made by or under legislation, applicable to the country or territory concerned"
+  },
+  {
+   "requirement": "For the purposes of determining whether a local custom or practice is permitted or required under section 5(2), written law includes law contained in any judicial decision that is applicable to the country or territory concerned and is evidenced in published written sources.",
+   "quote": "any judicial decision which is so applicable and is evidenced in published written sources"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "key": "uk/ukpga/1996/47/s1@current",
+ "section": "uk/ukpga/1996/47/s1",
+ "version": "current",
+ "source_sha256": "6b6909f5455d0d94e7b4779054998436dbbce538adb6bfdc2b4917f40700e8d2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In the Trusts of Land and Appointment of Trustees Act 1996, \"trust of land\" means, subject to subsection (3), any trust of property which consists of or includes land.",
+    "quote": "“trust of land” means (subject to subsection (3)) any trust of property which consists of or includes land"
+   },
+   {
+    "requirement": "In the Trusts of Land and Appointment of Trustees Act 1996, \"trustees of land\" means trustees of a trust of land.",
+    "quote": "“trustees of land” means trustees of a trust of land"
+   },
+   {
+    "requirement": "For the purposes of section 1(1)(a), the reference to a trust applies to any description of trust, whether express, implied, resulting, or constructive, and includes a trust for sale and a bare trust.",
+    "quote": "is to any description of trust (whether express, implied, resulting or constructive), including a trust for sale and a bare trust"
+   },
+   {
+    "requirement": "For the purposes of section 1(1)(a), the reference to a trust includes any trust created, or arising, before the commencement of the Trusts of Land and Appointment of Trustees Act 1996.",
+    "quote": "includes a trust created, or arising, before the commencement of this Act"
+   },
+   {
+    "requirement": "For the purposes of section 1(1)(a), the reference to land excludes land which is settled land (notwithstanding section 2) and land to which the Universities and College Estates Act 1925 applies.",
+    "quote": "does not include land which (despite section 2) is settled land or which is land to which the Universities and College Estates Act 1925 applies"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year of the cited Universities and College Estates Act",
+    "value": "1925",
+    "quote": "Universities and College Estates Act 1925"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In the Trusts of Land and Appointment of Trustees Act 1996, \"trust of land\" means, subject to subsection (3), any trust of property which consists of or includes land.",
+   "quote": "“trust of land” means (subject to subsection (3)) any trust of property which consists of or includes land"
+  },
+  {
+   "requirement": "In the Trusts of Land and Appointment of Trustees Act 1996, \"trustees of land\" means trustees of a trust of land.",
+   "quote": "“trustees of land” means trustees of a trust of land"
+  },
+  {
+   "requirement": "For the purposes of section 1(1)(a), the reference to a trust applies to any description of trust, whether express, implied, resulting, or constructive, and includes a trust for sale and a bare trust.",
+   "quote": "is to any description of trust (whether express, implied, resulting or constructive), including a trust for sale and a bare trust"
+  },
+  {
+   "requirement": "For the purposes of section 1(1)(a), the reference to a trust includes any trust created, or arising, before the commencement of the Trusts of Land and Appointment of Trustees Act 1996.",
+   "quote": "includes a trust created, or arising, before the commencement of this Act"
+  },
+  {
+   "requirement": "For the purposes of section 1(1)(a), the reference to land excludes land which is settled land (notwithstanding section 2) and land to which the Universities and College Estates Act 1925 applies.",
+   "quote": "does not include land which (despite section 2) is settled land or which is land to which the Universities and College Estates Act 1925 applies"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

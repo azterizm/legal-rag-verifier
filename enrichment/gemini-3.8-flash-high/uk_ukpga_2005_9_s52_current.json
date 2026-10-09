@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2005/9/s52@current",
+ "section": "uk/ukpga/2005/9/s52",
+ "version": "current",
+ "source_sha256": "71491a460fe97dc060c4e4c59c1d516a22b4e82938a904253b62f41e9023d7cf",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Directions regarding the practice and procedure of the court may be given in accordance with Part 1 of Schedule 2 to the Constitutional Reform Act 2005.",
+    "quote": "Directions as to the practice and procedure of the court may be given in accordance with Part 1 of Schedule 2 to the Constitutional Reform Act 2005."
+   },
+   {
+    "requirement": "Practice directions that are given otherwise than in accordance with Part 1 of Schedule 2 to the Constitutional Reform Act 2005 may not be given without the approval of both the Lord Chancellor and the Lord Chief Justice.",
+    "quote": "Practice directions given otherwise than under subsection (1) may not be given without the approval of— (a) the Lord Chancellor, and (b) the Lord Chief Justice."
+   },
+   {
+    "requirement": "The Lord Chief Justice may nominate the President of the Court of Protection to exercise the functions of the Lord Chief Justice under section 52 of the Mental Capacity Act 2005.",
+    "quote": "The Lord Chief Justice may nominate any of the following to exercise his functions under this section— (a) the President of the Court of Protection"
+   },
+   {
+    "requirement": "The Lord Chief Justice may nominate a judicial office holder, as defined in section 109(4) of the Constitutional Reform Act 2005, to exercise the functions of the Lord Chief Justice under section 52 of the Mental Capacity Act 2005.",
+    "quote": "The Lord Chief Justice may nominate any of the following to exercise his functions under this section— (a) the President of the Court of Protection; (b) a judicial office holder (as defined in section 109(4) of the Constitutional Reform Act 2005)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Directions regarding the practice and procedure of the court may be given in accordance with Part 1 of Schedule 2 to the Constitutional Reform Act 2005.",
+   "quote": "Directions as to the practice and procedure of the court may be given in accordance with Part 1 of Schedule 2 to the Constitutional Reform Act 2005."
+  },
+  {
+   "requirement": "Practice directions that are given otherwise than in accordance with Part 1 of Schedule 2 to the Constitutional Reform Act 2005 may not be given without the approval of both the Lord Chancellor and the Lord Chief Justice.",
+   "quote": "Practice directions given otherwise than under subsection (1) may not be given without the approval of— (a) the Lord Chancellor, and (b) the Lord Chief Justice."
+  },
+  {
+   "requirement": "The Lord Chief Justice may nominate the President of the Court of Protection to exercise the functions of the Lord Chief Justice under section 52 of the Mental Capacity Act 2005.",
+   "quote": "The Lord Chief Justice may nominate any of the following to exercise his functions under this section— (a) the President of the Court of Protection"
+  },
+  {
+   "requirement": "The Lord Chief Justice may nominate a judicial office holder, as defined in section 109(4) of the Constitutional Reform Act 2005, to exercise the functions of the Lord Chief Justice under section 52 of the Mental Capacity Act 2005.",
+   "quote": "The Lord Chief Justice may nominate any of the following to exercise his functions under this section— (a) the President of the Court of Protection; (b) a judicial office holder (as defined in section 109(4) of the Constitutional Reform Act 2005)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

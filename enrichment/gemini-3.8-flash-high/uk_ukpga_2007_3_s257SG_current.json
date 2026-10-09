@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/2007/3/s257SG@current",
+ "section": "uk/ukpga/2007/3/s257SG",
+ "version": "current",
+ "source_sha256": "89d37e8dfe14abf7b2962d66320eacf631e4a3e6d0950d99544138ae5c095ea5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 257SG applies if an officer of Revenue and Customs has reason to believe that a person has not given a notice that the person is required to give under section 257SE or 257SF in respect of any event.",
+    "quote": "an officer of Revenue and Customs has reason to believe that a person— (a) has not given a notice which the person is required to give under section 257SE or 257SF in respect of any event"
+   },
+   {
+    "requirement": "Section 257SG applies if an officer of Revenue and Customs has reason to believe that a person has given or received value within the meaning of section 257QE(2) or (6) that, but for the amount given or received being an insignificant receipt, would have triggered a requirement to give a notice under section 257SE or 257SF.",
+    "quote": "has given or received value within the meaning of section 257QE(2) or (6) which, but for the fact that the amount given or received was an insignificant receipt, would have triggered a requirement to give such a notice"
+   },
+   {
+    "requirement": "Section 257SG applies if an officer of Revenue and Customs has reason to believe that a person has made or received any repayment within the meaning given by section 257QJ(8) that, but for being ignored for the purposes of section 257QJ by virtue of section 257QK(1), would have triggered a requirement to give a notice under section 257SF.",
+    "quote": "has made or received any repayment within the meaning given by section 257QJ(8) which, but for the fact that it falls to be ignored for the purposes of section 257QJ by virtue of section 257QK(1), would have triggered a requirement to give a notice under section 257SF"
+   },
+   {
+    "requirement": "An officer of Revenue and Customs may by notice require the person concerned to supply the officer, within such time as specified in the notice, with such information relating to the event as the officer may reasonably require for the purposes of this Part.",
+    "quote": "The officer may by notice require the person concerned to supply the officer, within such time as the officer may specify in the notice, with such information relating to the event as the officer may reasonably require for the purposes of this Part."
+   },
+   {
+    "requirement": "The period specified in an information notice issued under subsection (2) must be at least 60 days.",
+    "quote": "The period specified in a notice under subsection (2) must be at least 60 days."
+   },
+   {
+    "requirement": "The reference in subsection (1)(b) to an insignificant receipt must be read in accordance with section 257QA(1).",
+    "quote": "the reference to an insignificant receipt is to be read in accordance with section 257QA(1)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period specified in an information notice",
+    "value": "at least 60 days",
+    "quote": "must be at least 60 days"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 257SG applies if an officer of Revenue and Customs has reason to believe that a person has not given a notice that the person is required to give under section 257SE or 257SF in respect of any event.",
+   "quote": "an officer of Revenue and Customs has reason to believe that a person— (a) has not given a notice which the person is required to give under section 257SE or 257SF in respect of any event"
+  },
+  {
+   "requirement": "Section 257SG applies if an officer of Revenue and Customs has reason to believe that a person has given or received value within the meaning of section 257QE(2) or (6) that, but for the amount given or received being an insignificant receipt, would have triggered a requirement to give a notice under section 257SE or 257SF.",
+   "quote": "has given or received value within the meaning of section 257QE(2) or (6) which, but for the fact that the amount given or received was an insignificant receipt, would have triggered a requirement to give such a notice"
+  },
+  {
+   "requirement": "Section 257SG applies if an officer of Revenue and Customs has reason to believe that a person has made or received any repayment within the meaning given by section 257QJ(8) that, but for being ignored for the purposes of section 257QJ by virtue of section 257QK(1), would have triggered a requirement to give a notice under section 257SF.",
+   "quote": "has made or received any repayment within the meaning given by section 257QJ(8) which, but for the fact that it falls to be ignored for the purposes of section 257QJ by virtue of section 257QK(1), would have triggered a requirement to give a notice under section 257SF"
+  },
+  {
+   "requirement": "An officer of Revenue and Customs may by notice require the person concerned to supply the officer, within such time as specified in the notice, with such information relating to the event as the officer may reasonably require for the purposes of this Part.",
+   "quote": "The officer may by notice require the person concerned to supply the officer, within such time as the officer may specify in the notice, with such information relating to the event as the officer may reasonably require for the purposes of this Part."
+  },
+  {
+   "requirement": "The period specified in an information notice issued under subsection (2) must be at least 60 days.",
+   "quote": "The period specified in a notice under subsection (2) must be at least 60 days."
+  },
+  {
+   "requirement": "The reference in subsection (1)(b) to an insignificant receipt must be read in accordance with section 257QA(1).",
+   "quote": "the reference to an insignificant receipt is to be read in accordance with section 257QA(1)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period specified in an information notice",
+   "value": "at least 60 days",
+   "quote": "must be at least 60 days"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

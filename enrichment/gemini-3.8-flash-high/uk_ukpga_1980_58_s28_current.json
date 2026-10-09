@@ -1,0 +1,175 @@
+{
+ "key": "uk/ukpga/1980/58/s28@current",
+ "section": "uk/ukpga/1980/58/s28",
+ "version": "current",
+ "source_sha256": "d15d061226691f5026ccba69cf0474381fae2818173aaad9c4a4094a922e1435",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a person to whom a right of action accrued was under a disability on that date, an action for which a limitation period is prescribed by the Limitation Act 1980 may be brought at any time before the expiration of six years from when that person ceased to be under a disability or died, whichever occurred first, even if the limitation period has expired.",
+    "quote": "the action may be brought at any time before the expiration of six years from the date when he ceased to be under a disability or died (whichever first occurred)"
+   },
+   {
+    "requirement": "The extension of time for disability does not apply to any case where the right of action first accrued to a person not under a disability through whom the person under a disability claims.",
+    "quote": "This section shall not affect any case where the right of action first accrued to some person (not under a disability) through whom the person under a disability claims."
+   },
+   {
+    "requirement": "Where a right of action that accrued to a person under a disability accrues upon that person's death while still disabled to another person under a disability, no further time extension is permitted on account of the second person's disability.",
+    "quote": "no further extension of time shall be allowed by reason of the disability of the second person"
+   },
+   {
+    "requirement": "No person may bring an action under section 28 to recover land or money charged on land after thirty years have expired from the date on which the right of action accrued to that person or to a predecessor through whom that person claims.",
+    "quote": "No action to recover land or money charged on land shall be brought by virtue of this section by any person after the expiration of thirty years from the date on which the right of action accrued"
+   },
+   {
+    "requirement": "For an action for libel or slander to which section 4A applies, a person who was under a disability may bring the action at any time before the expiration of one year from the date on which that person ceased to be under a disability.",
+    "quote": "by him at any time before the expiration of one year from the date on which he ceased to be under a disability"
+   },
+   {
+    "requirement": "For an action for slander of title, slander of goods or other malicious falsehood to which section 4A applies, the limitation extension period is one year instead of six years.",
+    "quote": "as if for the words “six years” there were substituted the words “one year”"
+   },
+   {
+    "requirement": "For an action to which section 10 applies, the limitation extension period for a person under a disability is two years instead of six years.",
+    "quote": "If the action is one to which section 10 of this Act applies, subsection (1) above shall have effect as if for the words “six years” there were substituted the words “two years”."
+   },
+   {
+    "requirement": "For an action to which section 11, section 11B, or section 12(2) applies, the limitation extension period for a person under a disability is three years instead of six years.",
+    "quote": "If the action is one to which section 11 , 11B or 12(2) of this Act applies, subsection (1) above shall have effect as if for the words “six years” there were substituted the words “three years”."
+   },
+   {
+    "requirement": "For an action to which section 11A applies or an action under section 6(1)(a) of the Consumer Protection Act 1987, the disability extension under subsection (1) does not apply to the time limit in section 11A(3) or to that time limit as applied by section 12(1).",
+    "quote": "shall not apply to the time limit prescribed by subsection (3) of the said section 11A or to that time limit as applied by virtue of section 12(1) of this Act"
+   },
+   {
+    "requirement": "For an action to which section 11A applies or an action under section 6(1)(a) of the Consumer Protection Act 1987, the limitation extension period for any other time limit prescribed by the Act is three years instead of six years.",
+    "quote": "in relation to any other time limit prescribed by this Act shall have effect as if for the words “six years” there were substituted the words “three years”"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "general period from cessation of disability or death within which an action may be brought",
+    "value": "six years",
+    "quote": "before the expiration of six years from the date when he ceased to be under a disability or died"
+   },
+   {
+    "what": "maximum longstop period from accrual to bring an action to recover land or money charged on land",
+    "value": "thirty years",
+    "quote": "after the expiration of thirty years from the date on which the right of action accrued"
+   },
+   {
+    "what": "period from cessation of disability to bring an action for libel or slander to which section 4A applies",
+    "value": "one year",
+    "quote": "before the expiration of one year from the date on which he ceased to be under a disability"
+   },
+   {
+    "what": "period substituted for six years in actions for slander of title, slander of goods or other malicious falsehood to which section 4A applies",
+    "value": "one year",
+    "quote": "as if for the words “six years” there were substituted the words “one year”"
+   },
+   {
+    "what": "period substituted for six years in actions to which section 10 applies",
+    "value": "two years",
+    "quote": "as if for the words “six years” there were substituted the words “two years”"
+   },
+   {
+    "what": "period substituted for six years in actions to which section 11, 11B or 12(2) applies",
+    "value": "three years",
+    "quote": "as if for the words “six years” there were substituted the words “three years”"
+   },
+   {
+    "what": "period substituted for six years in relation to other time limits for actions under section 11A or section 6(1)(a) of the Consumer Protection Act 1987",
+    "value": "three years",
+    "quote": "shall have effect as if for the words “six years” there were substituted the words “three years”"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a person to whom a right of action accrued was under a disability on that date, an action for which a limitation period is prescribed by the Limitation Act 1980 may be brought at any time before the expiration of six years from when that person ceased to be under a disability or died, whichever occurred first, even if the limitation period has expired.",
+   "quote": "the action may be brought at any time before the expiration of six years from the date when he ceased to be under a disability or died (whichever first occurred)"
+  },
+  {
+   "requirement": "The extension of time for disability does not apply to any case where the right of action first accrued to a person not under a disability through whom the person under a disability claims.",
+   "quote": "This section shall not affect any case where the right of action first accrued to some person (not under a disability) through whom the person under a disability claims."
+  },
+  {
+   "requirement": "Where a right of action that accrued to a person under a disability accrues upon that person's death while still disabled to another person under a disability, no further time extension is permitted on account of the second person's disability.",
+   "quote": "no further extension of time shall be allowed by reason of the disability of the second person"
+  },
+  {
+   "requirement": "No person may bring an action under section 28 to recover land or money charged on land after thirty years have expired from the date on which the right of action accrued to that person or to a predecessor through whom that person claims.",
+   "quote": "No action to recover land or money charged on land shall be brought by virtue of this section by any person after the expiration of thirty years from the date on which the right of action accrued"
+  },
+  {
+   "requirement": "For an action for libel or slander to which section 4A applies, a person who was under a disability may bring the action at any time before the expiration of one year from the date on which that person ceased to be under a disability.",
+   "quote": "by him at any time before the expiration of one year from the date on which he ceased to be under a disability"
+  },
+  {
+   "requirement": "For an action for slander of title, slander of goods or other malicious falsehood to which section 4A applies, the limitation extension period is one year instead of six years.",
+   "quote": "as if for the words “six years” there were substituted the words “one year”"
+  },
+  {
+   "requirement": "For an action to which section 10 applies, the limitation extension period for a person under a disability is two years instead of six years.",
+   "quote": "If the action is one to which section 10 of this Act applies, subsection (1) above shall have effect as if for the words “six years” there were substituted the words “two years”."
+  },
+  {
+   "requirement": "For an action to which section 11, section 11B, or section 12(2) applies, the limitation extension period for a person under a disability is three years instead of six years.",
+   "quote": "If the action is one to which section 11 , 11B or 12(2) of this Act applies, subsection (1) above shall have effect as if for the words “six years” there were substituted the words “three years”."
+  },
+  {
+   "requirement": "For an action to which section 11A applies or an action under section 6(1)(a) of the Consumer Protection Act 1987, the disability extension under subsection (1) does not apply to the time limit in section 11A(3) or to that time limit as applied by section 12(1).",
+   "quote": "shall not apply to the time limit prescribed by subsection (3) of the said section 11A or to that time limit as applied by virtue of section 12(1) of this Act"
+  },
+  {
+   "requirement": "For an action to which section 11A applies or an action under section 6(1)(a) of the Consumer Protection Act 1987, the limitation extension period for any other time limit prescribed by the Act is three years instead of six years.",
+   "quote": "in relation to any other time limit prescribed by this Act shall have effect as if for the words “six years” there were substituted the words “three years”"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "general period from cessation of disability or death within which an action may be brought",
+   "value": "six years",
+   "quote": "before the expiration of six years from the date when he ceased to be under a disability or died"
+  },
+  {
+   "what": "maximum longstop period from accrual to bring an action to recover land or money charged on land",
+   "value": "thirty years",
+   "quote": "after the expiration of thirty years from the date on which the right of action accrued"
+  },
+  {
+   "what": "period from cessation of disability to bring an action for libel or slander to which section 4A applies",
+   "value": "one year",
+   "quote": "before the expiration of one year from the date on which he ceased to be under a disability"
+  },
+  {
+   "what": "period substituted for six years in actions for slander of title, slander of goods or other malicious falsehood to which section 4A applies",
+   "value": "one year",
+   "quote": "as if for the words “six years” there were substituted the words “one year”"
+  },
+  {
+   "what": "period substituted for six years in actions to which section 10 applies",
+   "value": "two years",
+   "quote": "as if for the words “six years” there were substituted the words “two years”"
+  },
+  {
+   "what": "period substituted for six years in actions to which section 11, 11B or 12(2) applies",
+   "value": "three years",
+   "quote": "as if for the words “six years” there were substituted the words “three years”"
+  },
+  {
+   "what": "period substituted for six years in relation to other time limits for actions under section 11A or section 6(1)(a) of the Consumer Protection Act 1987",
+   "value": "three years",
+   "quote": "shall have effect as if for the words “six years” there were substituted the words “three years”"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 7,
+  "thresholds_verified": 7
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2006/35/s6@current",
+ "section": "uk/ukpga/2006/35/s6",
+ "version": "current",
+ "source_sha256": "b97c725ad6fefdb42dfdd8a1df8de2ba5811935b6c7f86d46afef635e10c2dda",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if that person has in his possession or under his control any article for use in the course of or in connection with any fraud.",
+    "quote": "A person is guilty of an offence if he has in his possession or under his control any article for use in the course of or in connection with any fraud."
+   },
+   {
+    "requirement": "A person guilty of an offence of possessing or controlling an article for use in fraud is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum, or to both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+   },
+   {
+    "requirement": "A person guilty of an offence of possessing or controlling an article for use in fraud is liable on conviction on indictment to imprisonment for a term not exceeding 5 years or to a fine, or to both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding 5 years or to a fine (or to both)"
+   },
+   {
+    "requirement": "In relation to Northern Ireland, the summary conviction penalty applies as if the reference to 12 months were a reference to 6 months.",
+    "quote": "Subsection (2)(a) applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "5 years",
+    "quote": "imprisonment for a term not exceeding 5 years"
+   },
+   {
+    "what": "reference period in subsection (2)(a) that is modified for Northern Ireland",
+    "value": "12 months",
+    "quote": "reference to 12 months"
+   },
+   {
+    "what": "substituted reference period applying in relation to Northern Ireland",
+    "value": "6 months",
+    "quote": "reference to 6 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if that person has in his possession or under his control any article for use in the course of or in connection with any fraud.",
+   "quote": "A person is guilty of an offence if he has in his possession or under his control any article for use in the course of or in connection with any fraud."
+  },
+  {
+   "requirement": "A person guilty of an offence of possessing or controlling an article for use in fraud is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum, or to both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+  },
+  {
+   "requirement": "A person guilty of an offence of possessing or controlling an article for use in fraud is liable on conviction on indictment to imprisonment for a term not exceeding 5 years or to a fine, or to both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding 5 years or to a fine (or to both)"
+  },
+  {
+   "requirement": "In relation to Northern Ireland, the summary conviction penalty applies as if the reference to 12 months were a reference to 6 months.",
+   "quote": "Subsection (2)(a) applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "5 years",
+   "quote": "imprisonment for a term not exceeding 5 years"
+  },
+  {
+   "what": "reference period in subsection (2)(a) that is modified for Northern Ireland",
+   "value": "12 months",
+   "quote": "reference to 12 months"
+  },
+  {
+   "what": "substituted reference period applying in relation to Northern Ireland",
+   "value": "6 months",
+   "quote": "reference to 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

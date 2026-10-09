@@ -1,0 +1,51 @@
+{
+ "key": "uk/ukpga/1980/58/s8@current",
+ "section": "uk/ukpga/1980/58/s8",
+ "version": "current",
+ "source_sha256": "f066bd208a0a030772af8595ab50f35e5ba8299bc3d83472299a7fc9d73cad0f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An action upon a specialty shall not be brought after the expiration of twelve years from the date on which the cause of action accrued.",
+    "quote": "An action upon a specialty shall not be brought after the expiration of twelve years from the date on which the cause of action accrued"
+   },
+   {
+    "requirement": "The twelve-year limitation period for an action upon a specialty does not affect any action for which a shorter period of limitation is prescribed by any other provision of the Limitation Act 1980.",
+    "quote": "shall not affect any action for which a shorter period of limitation is prescribed by any other provision of this Act"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period after the accrual of the cause of action after which an action upon a specialty shall not be brought",
+    "value": "twelve years",
+    "quote": "expiration of twelve years from the date on which the cause of action accrued"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An action upon a specialty shall not be brought after the expiration of twelve years from the date on which the cause of action accrued.",
+   "quote": "An action upon a specialty shall not be brought after the expiration of twelve years from the date on which the cause of action accrued"
+  },
+  {
+   "requirement": "The twelve-year limitation period for an action upon a specialty does not affect any action for which a shorter period of limitation is prescribed by any other provision of the Limitation Act 1980.",
+   "quote": "shall not affect any action for which a shorter period of limitation is prescribed by any other provision of this Act"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period after the accrual of the cause of action after which an action upon a specialty shall not be brought",
+   "value": "twelve years",
+   "quote": "expiration of twelve years from the date on which the cause of action accrued"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

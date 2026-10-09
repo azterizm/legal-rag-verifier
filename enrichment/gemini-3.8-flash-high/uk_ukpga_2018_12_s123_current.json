@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/2018/12/s123@current",
+ "section": "uk/ukpga/2018/12/s123",
+ "version": "current",
+ "source_sha256": "51918bf29d4507e8c01bf257e0447d88f64be152afb6ee4871c399980c80f7da",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Commissioner must prepare a code of practice containing such guidance as the Commissioner considers appropriate on standards of age-appropriate design of relevant information society services that are likely to be accessed by children.",
+    "quote": "The Commissioner must prepare a code of practice which contains such guidance as the Commissioner considers appropriate on standards of age-appropriate design of relevant information society services which are likely to be accessed by children."
+   },
+   {
+    "requirement": "Where an age-appropriate design code is in force, the Commissioner may prepare amendments to the code or a replacement code.",
+    "quote": "Where a code under this section is in force, the Commissioner may prepare amendments of the code or a replacement code."
+   },
+   {
+    "requirement": "Before preparing a code or amendments regarding age-appropriate design, the Commissioner must consult the Secretary of State.",
+    "quote": "Before preparing a code or amendments under this section, the Commissioner must consult the Secretary of State"
+   },
+   {
+    "requirement": "Before preparing an age-appropriate design code or amendments, the Commissioner must consult such other persons as the Commissioner considers appropriate, including children, parents, persons appearing to represent children's interests, child development experts, and trade associations.",
+    "quote": "such other persons as the Commissioner considers appropriate, including— (a) children, (b) parents, (c) persons who appear to the Commissioner to represent the interests of children, (d) child development experts, and (e) trade associations."
+   },
+   {
+    "requirement": "In preparing an age-appropriate design code or amendments, the Commissioner must have regard to the fact that children have different needs at different ages.",
+    "quote": "the Commissioner must have regard— (a) to the fact that children have different needs at different ages"
+   },
+   {
+    "requirement": "In preparing an age-appropriate design code or amendments, the Commissioner must have regard to the United Kingdom's obligations under the United Nations Convention on the Rights of the Child.",
+    "quote": "to the United Kingdom's obligations under the United Nations Convention on the Rights of the Child."
+   },
+   {
+    "requirement": "An age-appropriate design code prepared by the Commissioner may include transitional provision or savings.",
+    "quote": "A code under this section may include transitional provision or savings."
+   },
+   {
+    "requirement": "Any transitional provision included in the first age-appropriate design code must cease to have effect before the end of the period of 12 months beginning when the code comes into force.",
+    "quote": "Any transitional provision included in the first code under this section must cease to have effect before the end of the period of 12 months beginning when the code comes into force."
+   },
+   {
+    "requirement": "\"Age-appropriate design\" is defined as the design of services so that they are appropriate for use by, and meet the development needs of, children.",
+    "quote": "“age-appropriate design” means the design of services so that they are appropriate for use by, and meet the development needs of, children;"
+   },
+   {
+    "requirement": "\"Information society services\" carries the same meaning as in the UK GDPR, but explicitly excludes preventive or counselling services.",
+    "quote": "“information society services” has the same meaning as in the UK GDPR, but does not include preventive or counselling services;"
+   },
+   {
+    "requirement": "\"Relevant information society services\" is defined as information society services which involve the processing of personal data to which the UK GDPR applies.",
+    "quote": "“relevant information society services” means information society services which involve the processing of personal data to which the UK GDPR applies;"
+   },
+   {
+    "requirement": "\"Standards of age-appropriate design of relevant information society services\" means such standards of age-appropriate design of those services as appear to the Commissioner to be desirable having regard to the best interests of children.",
+    "quote": "“standards of age-appropriate design of relevant information society services” means such standards of age-appropriate design of such services as appear to the Commissioner to be desirable having regard to the best interests of children;"
+   },
+   {
+    "requirement": "A \"trade association\" includes any body representing controllers or processors.",
+    "quote": "“trade association” includes a body representing controllers or processors;"
+   },
+   {
+    "requirement": "\"The United Nations Convention on the Rights of the Child\" means the Convention on the Rights of the Child adopted by the General Assembly of the United Nations on 20 November 1989 (including any Protocols in force in relation to the United Kingdom), subject to any UK reservations, objections, or interpretative declarations currently in force.",
+    "quote": "“the United Nations Convention on the Rights of the Child” means the Convention on the Rights of the Child adopted by the General Assembly of the United Nations on 20 November 1989 (including any Protocols to that Convention which are in force in relation to the United Kingdom), subject to any reservations, objections or interpretative declarations by the United Kingdom for the time being in force."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum period for which transitional provisions in the first code may have effect after it comes into force",
+    "value": "12 months",
+    "quote": "period of 12 months beginning when the code comes into force"
+   },
+   {
+    "what": "The date of adoption of the United Nations Convention on the Rights of the Child by the General Assembly of the United Nations",
+    "value": "20 November 1989",
+    "quote": "adopted by the General Assembly of the United Nations on 20 November 1989"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Commissioner must prepare a code of practice containing such guidance as the Commissioner considers appropriate on standards of age-appropriate design of relevant information society services that are likely to be accessed by children.",
+   "quote": "The Commissioner must prepare a code of practice which contains such guidance as the Commissioner considers appropriate on standards of age-appropriate design of relevant information society services which are likely to be accessed by children."
+  },
+  {
+   "requirement": "Where an age-appropriate design code is in force, the Commissioner may prepare amendments to the code or a replacement code.",
+   "quote": "Where a code under this section is in force, the Commissioner may prepare amendments of the code or a replacement code."
+  },
+  {
+   "requirement": "Before preparing a code or amendments regarding age-appropriate design, the Commissioner must consult the Secretary of State.",
+   "quote": "Before preparing a code or amendments under this section, the Commissioner must consult the Secretary of State"
+  },
+  {
+   "requirement": "Before preparing an age-appropriate design code or amendments, the Commissioner must consult such other persons as the Commissioner considers appropriate, including children, parents, persons appearing to represent children's interests, child development experts, and trade associations.",
+   "quote": "such other persons as the Commissioner considers appropriate, including— (a) children, (b) parents, (c) persons who appear to the Commissioner to represent the interests of children, (d) child development experts, and (e) trade associations."
+  },
+  {
+   "requirement": "In preparing an age-appropriate design code or amendments, the Commissioner must have regard to the fact that children have different needs at different ages.",
+   "quote": "the Commissioner must have regard— (a) to the fact that children have different needs at different ages"
+  },
+  {
+   "requirement": "In preparing an age-appropriate design code or amendments, the Commissioner must have regard to the United Kingdom's obligations under the United Nations Convention on the Rights of the Child.",
+   "quote": "to the United Kingdom's obligations under the United Nations Convention on the Rights of the Child."
+  },
+  {
+   "requirement": "An age-appropriate design code prepared by the Commissioner may include transitional provision or savings.",
+   "quote": "A code under this section may include transitional provision or savings."
+  },
+  {
+   "requirement": "Any transitional provision included in the first age-appropriate design code must cease to have effect before the end of the period of 12 months beginning when the code comes into force.",
+   "quote": "Any transitional provision included in the first code under this section must cease to have effect before the end of the period of 12 months beginning when the code comes into force."
+  },
+  {
+   "requirement": "\"Age-appropriate design\" is defined as the design of services so that they are appropriate for use by, and meet the development needs of, children.",
+   "quote": "“age-appropriate design” means the design of services so that they are appropriate for use by, and meet the development needs of, children;"
+  },
+  {
+   "requirement": "\"Information society services\" carries the same meaning as in the UK GDPR, but explicitly excludes preventive or counselling services.",
+   "quote": "“information society services” has the same meaning as in the UK GDPR, but does not include preventive or counselling services;"
+  },
+  {
+   "requirement": "\"Relevant information society services\" is defined as information society services which involve the processing of personal data to which the UK GDPR applies.",
+   "quote": "“relevant information society services” means information society services which involve the processing of personal data to which the UK GDPR applies;"
+  },
+  {
+   "requirement": "\"Standards of age-appropriate design of relevant information society services\" means such standards of age-appropriate design of those services as appear to the Commissioner to be desirable having regard to the best interests of children.",
+   "quote": "“standards of age-appropriate design of relevant information society services” means such standards of age-appropriate design of such services as appear to the Commissioner to be desirable having regard to the best interests of children;"
+  },
+  {
+   "requirement": "A \"trade association\" includes any body representing controllers or processors.",
+   "quote": "“trade association” includes a body representing controllers or processors;"
+  },
+  {
+   "requirement": "\"The United Nations Convention on the Rights of the Child\" means the Convention on the Rights of the Child adopted by the General Assembly of the United Nations on 20 November 1989 (including any Protocols in force in relation to the United Kingdom), subject to any UK reservations, objections, or interpretative declarations currently in force.",
+   "quote": "“the United Nations Convention on the Rights of the Child” means the Convention on the Rights of the Child adopted by the General Assembly of the United Nations on 20 November 1989 (including any Protocols to that Convention which are in force in relation to the United Kingdom), subject to any reservations, objections or interpretative declarations by the United Kingdom for the time being in force."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum period for which transitional provisions in the first code may have effect after it comes into force",
+   "value": "12 months",
+   "quote": "period of 12 months beginning when the code comes into force"
+  },
+  {
+   "what": "The date of adoption of the United Nations Convention on the Rights of the Child by the General Assembly of the United Nations",
+   "value": "20 November 1989",
+   "quote": "adopted by the General Assembly of the United Nations on 20 November 1989"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

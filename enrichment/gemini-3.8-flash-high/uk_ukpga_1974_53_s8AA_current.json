@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1974/53/s8AA@current",
+ "section": "uk/ukpga/1974/53/s8AA",
+ "version": "current",
+ "source_sha256": "29f8cc2a43e6a17bbcbc0b8cd5a24e40d6e97b4ca4c2010ee1cf8ab8855e9a66",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 9A and paragraphs 2 to 6 of Schedule 2 apply to a spent alternative to prosecution in the same manner as they apply to a spent caution, subject to statutory modifications.",
+    "quote": "apply, with the modifications specified in subsection (3), to a spent alternative to prosecution as they apply to a spent caution"
+   },
+   {
+    "requirement": "An alternative to prosecution is treated as spent for the purposes of the Rehabilitation of Offenders Act 1974 when it becomes spent under the law of Scotland.",
+    "quote": "becomes spent for the purposes of this Act when it becomes spent under the law of Scotland"
+   },
+   {
+    "requirement": "When reading the applied provisions in relation to an alternative to prosecution, references to cautions are read as references to alternatives to prosecution, and references to cautioned are read accordingly.",
+    "quote": "references to cautions are to be read as references to alternatives to prosecution (and references to cautioned are to be read accordingly)"
+   },
+   {
+    "requirement": "When reading the applied provisions in relation to an alternative to prosecution, references to the offence which was the subject of the caution are read as references to the offence in respect of which the alternative to prosecution was given.",
+    "quote": "references to the offence which was the subject of the caution are to be read as references to the offence in respect of which the alternative to prosecution was given"
+   },
+   {
+    "requirement": "When reading the applied provisions in relation to an alternative to prosecution, paragraphs (e) and (f) of paragraph 2(1) of Schedule 2 are read as if they were 'anything done or undergone in pursuance of the terms of the alternative to prosecution,'.",
+    "quote": "paragraphs (e) and (f) of paragraph 2(1) of Schedule 2 are to be read as if they were— eanything done or undergone in pursuance of the terms of the alternative to prosecution,"
+   },
+   {
+    "requirement": "When reading the applied provisions in relation to an alternative to prosecution, references to cautions for an offence are read as references to alternatives to prosecution in respect of an offence.",
+    "quote": "references to cautions for an offence are to be read as references to alternatives to prosecution in respect of an offence"
+   },
+   {
+    "requirement": "When reading the applied provisions in relation to an alternative to prosecution, the reference in paragraph 5 of Schedule 2 to the rehabilitation period applicable to the caution is read as a reference to the time at which the alternative to prosecution becomes spent.",
+    "quote": "the reference in paragraph 5 of Schedule 2 to the rehabilitation period applicable to the caution is to be read as a reference to the time at which the alternative to prosecution becomes spent"
+   },
+   {
+    "requirement": "For the purposes of section 8AA, 'alternative to prosecution' has the same meaning as in section 8B as it operates in the law of Scotland, subject to the exclusion of subsection (1)(f) of that section.",
+    "quote": "has the same meaning as in section 8B as that section has effect in the law of Scotland but disregarding subsection (1)(f) of that section"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 9A and paragraphs 2 to 6 of Schedule 2 apply to a spent alternative to prosecution in the same manner as they apply to a spent caution, subject to statutory modifications.",
+   "quote": "apply, with the modifications specified in subsection (3), to a spent alternative to prosecution as they apply to a spent caution"
+  },
+  {
+   "requirement": "An alternative to prosecution is treated as spent for the purposes of the Rehabilitation of Offenders Act 1974 when it becomes spent under the law of Scotland.",
+   "quote": "becomes spent for the purposes of this Act when it becomes spent under the law of Scotland"
+  },
+  {
+   "requirement": "When reading the applied provisions in relation to an alternative to prosecution, references to cautions are read as references to alternatives to prosecution, and references to cautioned are read accordingly.",
+   "quote": "references to cautions are to be read as references to alternatives to prosecution (and references to cautioned are to be read accordingly)"
+  },
+  {
+   "requirement": "When reading the applied provisions in relation to an alternative to prosecution, references to the offence which was the subject of the caution are read as references to the offence in respect of which the alternative to prosecution was given.",
+   "quote": "references to the offence which was the subject of the caution are to be read as references to the offence in respect of which the alternative to prosecution was given"
+  },
+  {
+   "requirement": "When reading the applied provisions in relation to an alternative to prosecution, paragraphs (e) and (f) of paragraph 2(1) of Schedule 2 are read as if they were 'anything done or undergone in pursuance of the terms of the alternative to prosecution,'.",
+   "quote": "paragraphs (e) and (f) of paragraph 2(1) of Schedule 2 are to be read as if they were— eanything done or undergone in pursuance of the terms of the alternative to prosecution,"
+  },
+  {
+   "requirement": "When reading the applied provisions in relation to an alternative to prosecution, references to cautions for an offence are read as references to alternatives to prosecution in respect of an offence.",
+   "quote": "references to cautions for an offence are to be read as references to alternatives to prosecution in respect of an offence"
+  },
+  {
+   "requirement": "When reading the applied provisions in relation to an alternative to prosecution, the reference in paragraph 5 of Schedule 2 to the rehabilitation period applicable to the caution is read as a reference to the time at which the alternative to prosecution becomes spent.",
+   "quote": "the reference in paragraph 5 of Schedule 2 to the rehabilitation period applicable to the caution is to be read as a reference to the time at which the alternative to prosecution becomes spent"
+  },
+  {
+   "requirement": "For the purposes of section 8AA, 'alternative to prosecution' has the same meaning as in section 8B as it operates in the law of Scotland, subject to the exclusion of subsection (1)(f) of that section.",
+   "quote": "has the same meaning as in section 8B as that section has effect in the law of Scotland but disregarding subsection (1)(f) of that section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}
