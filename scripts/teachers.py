@@ -1,0 +1,145 @@
+"""Stops 44 and 45: teacher labels through the router, one call per batch of clauses, resumable.
+
+Each batch's result is written as soon as it returns (``results/distill/labels/<name>.jsonl``, one
+row per clause under its stop 42 single-clause prompt key); a rerun asks only batches not done.
+A batch that still fails is logged and asked again on the next run. Opus 5.5 stops cleanly at
+its cap (``router.BudgetExceededError``).
+
+  uv run python scripts/teachers.py dev gemini     # stop 44: Part A, Part B, statutes
+  uv run python scripts/teachers.py dev opus46
+  uv run python scripts/teachers.py dev opus55     # Part A and Part B only
+  uv run python scripts/teachers.py check          # stop 44 readings → results/distill/check44.json
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+import threading
+from collections.abc import Callable, Mapping, Sequence
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+
+import auditor_judge as aj  # type: ignore[import-not-found]  # noqa: E402
+import router  # type: ignore[import-not-found]  # noqa: E402
+
+OUT = ROOT / "results/distill"
+TEACHERS = {"gemini": router.GEMINI, "opus46": router.OPUS46, "opus55": router.OPUS55}
+WORKERS = {"gemini": 4, "opus46": 4, "opus55": 2}
+_lock = threading.Lock()
+
+
+def router_chat(model: str) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
+    def chat(messages: list[dict[str, str]]) -> dict[str, Any]:
+        out = router.chat(model, messages)
+        return {**out, "tokens": out["usage"].get("completion_tokens")}
+
+    return chat
+
+
+def label_path(name: str) -> Path:
+    return OUT / "labels" / f"{name}.jsonl"
+
+
+def batch_log(name: str) -> Path:
+    return OUT / "labels" / f"{name}.batches.jsonl"
+
+
+def done_batches(name: str) -> set[str]:
+    path = batch_log(name)
+    if not path.exists():
+        return set()
+    rows = map(json.loads, path.read_text(encoding="utf-8").splitlines())
+    return {r["batch"] for r in rows if r["ok"]}
+
+
+def read_labels(name: str) -> dict[str, dict[str, Any]]:
+    path = label_path(name)
+    if not path.exists():
+        return {}
+    return {r["sha"]: r for r in map(json.loads, path.read_text(encoding="utf-8").splitlines())}
+
+
+def _write(name: str, batch: Mapping[str, Any], result: Mapping[str, Any]) -> None:
+    ok = result.get("labels") is not None
+    with _lock:
+        label_path(name).parent.mkdir(parents=True, exist_ok=True)
+        if ok:
+            with label_path(name).open("a", encoding="utf-8") as f:
+                for sha, lab in zip(batch["keys"], result["labels"], strict=True):
+                    row = {"sha": sha, **lab, "batch": batch["key"], "n": len(batch["keys"])}
+                    row |= {"ms": result["ms"], "attempts": result["attempts"]}
+                    f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        with batch_log(name).open("a", encoding="utf-8") as f:
+            entry = {"batch": batch["key"], "ok": ok, "clauses": len(batch["keys"])}
+            entry |= {"ms": result.get("ms"), "error": result.get("error")}
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
+def label(name: str, todo_batches: Sequence[Mapping[str, Any]]) -> dict[str, int]:
+    """Ask every batch not yet done; stop scheduling new ones once the cap is reached."""
+    done = done_batches(name)
+    todo = [b for b in todo_batches if b["key"] not in done]
+    print(f"{name}: {len(todo_batches)} batches, {len(done)} done, {len(todo)} to ask", flush=True)
+    chat = router_chat(TEACHERS[name])
+    stop = threading.Event()
+    counts = {"ok": 0, "failed": 0, "skipped_cap": 0}
+
+    def one(batch: Mapping[str, Any]) -> None:
+        if stop.is_set():
+            counts["skipped_cap"] += 1
+            return
+        try:
+            result = aj.ask_batch(chat, batch)
+        except router.BudgetExceededError as exc:
+            stop.set()
+            counts["skipped_cap"] += 1
+            print(f"{name}: cap reached ({exc})", flush=True)
+            return
+        except (router.RouterError, KeyError, ValueError) as exc:
+            result = {"labels": None, "error": repr(exc), "ms": 0, "attempts": 0}
+        _write(name, batch, result)
+        counts["ok" if result.get("labels") is not None else "failed"] += 1
+        n = counts["ok"] + counts["failed"]
+        if n % 20 == 0:
+            print(f"{name}: {n}/{len(todo)}", flush=True)
+
+    with ThreadPoolExecutor(WORKERS[name]) as pool:
+        list(pool.map(one, todo))
+    print(f"{name}: {counts}", flush=True)
+    return counts
+
+
+def dev_batches(levels: Sequence[str] = ("A", "B", "S")) -> list[dict[str, Any]]:
+    """Stop 42's texts in answer order, grouped per answer (Part B) or per text."""
+    texts, _, recorded = aj.recorded_sets()
+    units = [
+        {**r, "group": t["item"] if t["level"] == "B" else t["key"]}
+        for t, r in zip(texts, recorded, strict=True)
+        if t["level"] in levels
+    ]
+    out: list[dict[str, Any]] = aj.batches(units)
+    return out
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("command", choices=["dev", "check"])
+    parser.add_argument("teacher", nargs="?", choices=list(TEACHERS))
+    args = parser.parse_args()
+    if args.command == "dev":
+        levels = ("A", "B") if args.teacher == "opus55" else ("A", "B", "S")
+        label(f"dev-{args.teacher}", dev_batches(levels))
+    else:
+        from check44 import main as check  # type: ignore[import-not-found]  # noqa: PLC0415
+
+        check()
+
+
+if __name__ == "__main__":
+    main()
