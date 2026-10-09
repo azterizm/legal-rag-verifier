@@ -127,6 +127,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    passes right and wrong text alike. Facts derived from the source in advance do not fix it either (stop 41):
    they remove the reasoning gap in cases like the ddof default, but the entailment model still fails on
    paraphrases of facts it is given, and the claim check alone was more accurate.
+   A reasoning LLM in the entailment check does fix it on these sets (stop 42). Gemini 3.8 flash high and
+   Qwen3.8-27B cut Part A false rollbacks from 19 to between 1 and 5 and Part B from 9 to between 1 and 3, and kept or
+   raised the errors caught. Single-pass controls (MiniCheck, ModernBERT-large) did not. The cost is seconds per answer,
+   and the claim check's own false rollbacks remain. Confirm on a fresh test before building on it.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

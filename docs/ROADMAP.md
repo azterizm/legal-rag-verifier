@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-09 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | None open. Next work: VERDICT § Required before production, item 1 (auditor precision on live output) |
-| Waiting on you | A decision on next work (stop 41: derived facts do not fix precision; the claim check alone is more accurate) |
+| Next step | Stop 42 passed R1: a fresh blind test of the judge in the entailment check, then live (VERDICT item 1) |
+| Waiting on you | Which judge and placement go to the fresh test, and its design (stop 42: Gemini Replace, Qwen low and xhigh Replace strict pass) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-09 (42): **A reasoning LLM as the auditor's judge; passes on both graded levels.** Method and prompt fixed in
+  GRID before any judge call. 280 clause prompts to Gemini (router) and Qwen3.8-27B-FP8 (Modal H100, low and xhigh).
+  V0 replayed from L4 tables matched 333 of 333 verdicts. Gemini Replace (A 19 to 5, B 9 to 2), Qwen low Replace
+  strict (A 1, B 1) and Qwen xhigh Replace strict (A 3, B 3) pass the bar. Appeal and both controls (MiniCheck,
+  ModernBERT-large) do not. Statutes: no arm passes, claim check gives half the false rollbacks. Qwen low one at
+  a time p50 2.6 s per clause. **Resume:** your decision on the fresh test.
 
 - 2026-10-09 (41): **Derived facts for the entailment check, software battery of 40; not viable.** Method and prompt
   fixed in GRID before the run. Gemini via the router wrote 231 facts, code kept 227. Audit on a Modal L4; V0
