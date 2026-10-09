@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/2002/9/s58@current",
+ "section": "uk/ukpga/2002/9/s58",
+ "version": "current",
+ "source_sha256": "c9c6d70ad9117acf7468c72a2ac7d12df5cff561a3c99c8a374b0668d2a880d6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "If a legal estate would not otherwise be vested in a person upon that person's entry in the register as the proprietor of that legal estate, the legal estate is deemed to be vested in that person as a result of the registration.",
+    "quote": "it shall be deemed to be vested in him as a result of the registration"
+   },
+   {
+    "requirement": "The statutory deemed vesting of a legal estate does not apply where the entry of a person in the register is made in pursuance of a registrable disposition in relation to which some other registration requirement remains to be met.",
+    "quote": "Subsection (1) does not apply where the entry is made in pursuance of a registrable disposition in relation to which some other registration requirement remains to be met"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "If a legal estate would not otherwise be vested in a person upon that person's entry in the register as the proprietor of that legal estate, the legal estate is deemed to be vested in that person as a result of the registration.",
+   "quote": "it shall be deemed to be vested in him as a result of the registration"
+  },
+  {
+   "requirement": "The statutory deemed vesting of a legal estate does not apply where the entry of a person in the register is made in pursuance of a registrable disposition in relation to which some other registration requirement remains to be met.",
+   "quote": "Subsection (1) does not apply where the entry is made in pursuance of a registrable disposition in relation to which some other registration requirement remains to be met"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

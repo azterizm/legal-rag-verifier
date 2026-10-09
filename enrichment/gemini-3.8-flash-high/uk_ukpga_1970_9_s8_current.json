@@ -1,0 +1,258 @@
+{
+ "key": "uk/ukpga/1970/9/s8@current",
+ "section": "uk/ukpga/1970/9/s8",
+ "version": "current",
+ "source_sha256": "e1ecaf282fa6f99ca9fcd0f404e2664f5d6bdb078c912f37ccc8fbcaff06ca3a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An officer of the Board may issue a notice requiring a person to make and deliver a return containing reasonably required information, and reasonably required accompanying accounts, statements, and documents, to establish the amounts chargeable to income tax and capital gains tax and the income tax payable for a year of assessment.",
+    "quote": "he may be required by a notice given to him by an officer of the Board— (a) to make and deliver to the officer ..., a return containing such information as may reasonably be required in pursuance of the notice"
+   },
+   {
+    "requirement": "The amounts in which a person is chargeable to income tax and capital gains tax under section 8(1) are net amounts that take into account any relief or allowance claimed in the return.",
+    "quote": "the amounts in which a person is chargeable to income tax and capital gains tax are net amounts, that is to say, amounts which take into account any relief or allowance a claim for which is included in the return"
+   },
+   {
+    "requirement": "The amount payable by a person by way of income tax under section 8(1) is the difference between the amount chargeable to income tax and the aggregate amount of any income tax deducted at source.",
+    "quote": "the amount payable by a person by way of income tax is the difference between the amount in which he is chargeable to income tax and the aggregate amount of any income tax deducted at source"
+   },
+   {
+    "requirement": "A person carrying on a trade, profession, or business in partnership with others must include in their return each amount stated in any relevant partnership statement to equal their share of income, loss, tax, credit, or charge for the period.",
+    "quote": "In the case of a person who carries on a trade, profession, or business in partnership with one or more other persons, a return under this section shall include each amount which, in any relevant statement, is stated to be equal to his share of any income, loss, tax, credit or charge"
+   },
+   {
+    "requirement": "A relevant statement for a partnership means a statement falling to be made under section 12AB of the Taxes Management Act 1970 for a period including all or part of the year of assessment.",
+    "quote": "“relevant statement” means a statement which, as respects the partnership, falls to be made under section 12AB of this Act for a period which includes, or includes any part of, the year of assessment"
+   },
+   {
+    "requirement": "A non-electronic return for a year of assessment (Year 1) must be delivered on or before 31st October in Year 2, subject to statutory exceptions.",
+    "quote": "in the case of a non-electronic return, on or before 31st October in Year 2"
+   },
+   {
+    "requirement": "An electronic return for a year of assessment (Year 1) must be delivered on or before 31st January in Year 2, subject to statutory exceptions.",
+    "quote": "in the case of an electronic return, on or before 31st January in Year 2"
+   },
+   {
+    "requirement": "If a notice in respect of Year 1 is given after 31st July in Year 2 but on or before 31st October in Year 2, a non-electronic return must be delivered during the period of 3 months beginning with the date of the notice.",
+    "quote": "if a notice in respect of Year 1 is given after 31st July in Year 2 (but on or before 31st October), a return must be delivered— (a) during the period of 3 months beginning with the date of the notice (for a non-electronic return)"
+   },
+   {
+    "requirement": "If a notice in respect of Year 1 is given after 31st July in Year 2 but on or before 31st October in Year 2, an electronic return must be delivered on or before 31st January.",
+    "quote": "if a notice in respect of Year 1 is given after 31st July in Year 2 (but on or before 31st October), a return must be delivered— ... (b) on or before 31st January (for an electronic return)"
+   },
+   {
+    "requirement": "If a notice in respect of Year 1 is given after 31st October in Year 2, any return (whether electronic or not) must be delivered during the period of 3 months beginning with the date of the notice.",
+    "quote": "if a notice in respect of Year 1 is given after 31st October in Year 2, a return (whether electronic or not) must be delivered during the period of 3 months beginning with the date of the notice"
+   },
+   {
+    "requirement": "The Commissioners must prescribe what constitutes an electronic return and may make different provision for different cases or circumstances.",
+    "quote": "The Commissioners— (a) shall prescribe what constitutes an electronic return, and (b) may make different provision for different cases or circumstances"
+   },
+   {
+    "requirement": "An officer of His Majesty’s Revenue and Customs may require a person who is required to make and deliver a return to include in the return any information specified or described in regulations made by the Commissioners, whether or not it is relevant to establishing amounts under subsection (1).",
+    "quote": "the person may be required by an officer of His Majesty’s Revenue and Customs to include in the return any information that is specified or described in regulations made by the Commissioners (whether or not the information is relevant for the purpose mentioned in subsection (1))"
+   },
+   {
+    "requirement": "The Commissioners may specify or describe information in regulations under subsection (1I) only if they consider it relevant for the purpose of the collection and management of any of the taxes listed in section 1.",
+    "quote": "The Commissioners may only specify or describe information in regulations under subsection (1I) if the Commissioners consider that the information is relevant for the purpose of the collection and management of any of the taxes listed in section 1"
+   },
+   {
+    "requirement": "A person who fails to comply with a requirement to include information specified in regulations under subsection (1I) is liable to a penalty of £60.",
+    "quote": "A person who fails to comply with a requirement imposed on them by virtue of subsection (1I) is liable to a penalty of £60"
+   },
+   {
+    "requirement": "Regulations made by the Commissioners under subsection (1I) may make different provision for different purposes.",
+    "quote": "Regulations under subsection (1I) may make different provision for different purposes"
+   },
+   {
+    "requirement": "Every return under section 8 must include a declaration by the person making it that the return is to the best of their knowledge correct and complete.",
+    "quote": "Every return under this section shall include a declaration by the person making the return to the effect than the return is to the best of his knowledge correct and complete"
+   },
+   {
+    "requirement": "A notice under section 8 may require different information, accounts, and statements for different periods, in relation to different descriptions of source of income, or in relation to different descriptions of person.",
+    "quote": "A notice under this section may require different information, accounts and statements for different periods or in relation to different descriptions of source of income"
+   },
+   {
+    "requirement": "A notice given under section 8 to a person within section 8ZA of the Taxes Management Act 1970 may require that person's return of income to include particulars of any general earnings paid to them.",
+    "quote": "The notice may require a return of the person's income to include particulars of any general earnings (see section 7(3) of ITEPA 2003) paid to the person"
+   },
+   {
+    "requirement": "References in section 8, 8A, 9, and 12AA to income tax deducted at source mean income tax deducted or treated as deducted from any income, or treated as paid on any income.",
+    "quote": "any reference to income tax deducted at source is a reference to income tax deducted or treated as deducted from any income or treated as paid on any income"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Default filing deadline for a non-electronic return for Year 1",
+    "value": "31st October in Year 2",
+    "quote": "on or before 31st October in Year 2"
+   },
+   {
+    "what": "Default filing deadline for an electronic return for Year 1",
+    "value": "31st January in Year 2",
+    "quote": "on or before 31st January in Year 2"
+   },
+   {
+    "what": "Number of exceptions to the default return delivery deadlines",
+    "value": "two",
+    "quote": "subject to the following two exceptions"
+   },
+   {
+    "what": "Earliest notice date triggering Exception 1 for Year 1",
+    "value": "31st July in Year 2",
+    "quote": "given after 31st July in Year 2"
+   },
+   {
+    "what": "Latest notice date triggering Exception 1 for Year 1",
+    "value": "31st October",
+    "quote": "on or before 31st October"
+   },
+   {
+    "what": "Delivery period for a non-electronic return under Exception 1",
+    "value": "3 months",
+    "quote": "during the period of 3 months beginning with the date of the notice"
+   },
+   {
+    "what": "Delivery deadline for an electronic return under Exception 1",
+    "value": "31st January",
+    "quote": "on or before 31st January"
+   },
+   {
+    "what": "Notice date triggering Exception 2 for Year 1",
+    "value": "31st October in Year 2",
+    "quote": "given after 31st October in Year 2"
+   },
+   {
+    "what": "Delivery period for a return (electronic or not) under Exception 2",
+    "value": "3 months",
+    "quote": "during the period of 3 months beginning with the date of the notice"
+   },
+   {
+    "what": "Penalty amount for failure to comply with a requirement under subsection (1I)",
+    "value": "£60",
+    "quote": "liable to a penalty of £60"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An officer of the Board may issue a notice requiring a person to make and deliver a return containing reasonably required information, and reasonably required accompanying accounts, statements, and documents, to establish the amounts chargeable to income tax and capital gains tax and the income tax payable for a year of assessment.",
+   "quote": "he may be required by a notice given to him by an officer of the Board— (a) to make and deliver to the officer ..., a return containing such information as may reasonably be required in pursuance of the notice"
+  },
+  {
+   "requirement": "The amounts in which a person is chargeable to income tax and capital gains tax under section 8(1) are net amounts that take into account any relief or allowance claimed in the return.",
+   "quote": "the amounts in which a person is chargeable to income tax and capital gains tax are net amounts, that is to say, amounts which take into account any relief or allowance a claim for which is included in the return"
+  },
+  {
+   "requirement": "The amount payable by a person by way of income tax under section 8(1) is the difference between the amount chargeable to income tax and the aggregate amount of any income tax deducted at source.",
+   "quote": "the amount payable by a person by way of income tax is the difference between the amount in which he is chargeable to income tax and the aggregate amount of any income tax deducted at source"
+  },
+  {
+   "requirement": "A person carrying on a trade, profession, or business in partnership with others must include in their return each amount stated in any relevant partnership statement to equal their share of income, loss, tax, credit, or charge for the period.",
+   "quote": "In the case of a person who carries on a trade, profession, or business in partnership with one or more other persons, a return under this section shall include each amount which, in any relevant statement, is stated to be equal to his share of any income, loss, tax, credit or charge"
+  },
+  {
+   "requirement": "A relevant statement for a partnership means a statement falling to be made under section 12AB of the Taxes Management Act 1970 for a period including all or part of the year of assessment.",
+   "quote": "“relevant statement” means a statement which, as respects the partnership, falls to be made under section 12AB of this Act for a period which includes, or includes any part of, the year of assessment"
+  },
+  {
+   "requirement": "A non-electronic return for a year of assessment (Year 1) must be delivered on or before 31st October in Year 2, subject to statutory exceptions.",
+   "quote": "in the case of a non-electronic return, on or before 31st October in Year 2"
+  },
+  {
+   "requirement": "An electronic return for a year of assessment (Year 1) must be delivered on or before 31st January in Year 2, subject to statutory exceptions.",
+   "quote": "in the case of an electronic return, on or before 31st January in Year 2"
+  },
+  {
+   "requirement": "If a notice in respect of Year 1 is given after 31st July in Year 2 but on or before 31st October in Year 2, a non-electronic return must be delivered during the period of 3 months beginning with the date of the notice.",
+   "quote": "if a notice in respect of Year 1 is given after 31st July in Year 2 (but on or before 31st October), a return must be delivered— (a) during the period of 3 months beginning with the date of the notice (for a non-electronic return)"
+  },
+  {
+   "requirement": "If a notice in respect of Year 1 is given after 31st October in Year 2, any return (whether electronic or not) must be delivered during the period of 3 months beginning with the date of the notice.",
+   "quote": "if a notice in respect of Year 1 is given after 31st October in Year 2, a return (whether electronic or not) must be delivered during the period of 3 months beginning with the date of the notice"
+  },
+  {
+   "requirement": "The Commissioners must prescribe what constitutes an electronic return and may make different provision for different cases or circumstances.",
+   "quote": "The Commissioners— (a) shall prescribe what constitutes an electronic return, and (b) may make different provision for different cases or circumstances"
+  },
+  {
+   "requirement": "An officer of His Majesty’s Revenue and Customs may require a person who is required to make and deliver a return to include in the return any information specified or described in regulations made by the Commissioners, whether or not it is relevant to establishing amounts under subsection (1).",
+   "quote": "the person may be required by an officer of His Majesty’s Revenue and Customs to include in the return any information that is specified or described in regulations made by the Commissioners (whether or not the information is relevant for the purpose mentioned in subsection (1))"
+  },
+  {
+   "requirement": "The Commissioners may specify or describe information in regulations under subsection (1I) only if they consider it relevant for the purpose of the collection and management of any of the taxes listed in section 1.",
+   "quote": "The Commissioners may only specify or describe information in regulations under subsection (1I) if the Commissioners consider that the information is relevant for the purpose of the collection and management of any of the taxes listed in section 1"
+  },
+  {
+   "requirement": "A person who fails to comply with a requirement to include information specified in regulations under subsection (1I) is liable to a penalty of £60.",
+   "quote": "A person who fails to comply with a requirement imposed on them by virtue of subsection (1I) is liable to a penalty of £60"
+  },
+  {
+   "requirement": "Regulations made by the Commissioners under subsection (1I) may make different provision for different purposes.",
+   "quote": "Regulations under subsection (1I) may make different provision for different purposes"
+  },
+  {
+   "requirement": "Every return under section 8 must include a declaration by the person making it that the return is to the best of their knowledge correct and complete.",
+   "quote": "Every return under this section shall include a declaration by the person making the return to the effect than the return is to the best of his knowledge correct and complete"
+  },
+  {
+   "requirement": "A notice under section 8 may require different information, accounts, and statements for different periods, in relation to different descriptions of source of income, or in relation to different descriptions of person.",
+   "quote": "A notice under this section may require different information, accounts and statements for different periods or in relation to different descriptions of source of income"
+  },
+  {
+   "requirement": "A notice given under section 8 to a person within section 8ZA of the Taxes Management Act 1970 may require that person's return of income to include particulars of any general earnings paid to them.",
+   "quote": "The notice may require a return of the person's income to include particulars of any general earnings (see section 7(3) of ITEPA 2003) paid to the person"
+  },
+  {
+   "requirement": "References in section 8, 8A, 9, and 12AA to income tax deducted at source mean income tax deducted or treated as deducted from any income, or treated as paid on any income.",
+   "quote": "any reference to income tax deducted at source is a reference to income tax deducted or treated as deducted from any income or treated as paid on any income"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Default filing deadline for a non-electronic return for Year 1",
+   "value": "31st October in Year 2",
+   "quote": "on or before 31st October in Year 2"
+  },
+  {
+   "what": "Default filing deadline for an electronic return for Year 1",
+   "value": "31st January in Year 2",
+   "quote": "on or before 31st January in Year 2"
+  },
+  {
+   "what": "Earliest notice date triggering Exception 1 for Year 1",
+   "value": "31st July in Year 2",
+   "quote": "given after 31st July in Year 2"
+  },
+  {
+   "what": "Delivery period for a non-electronic return under Exception 1",
+   "value": "3 months",
+   "quote": "during the period of 3 months beginning with the date of the notice"
+  },
+  {
+   "what": "Notice date triggering Exception 2 for Year 1",
+   "value": "31st October in Year 2",
+   "quote": "given after 31st October in Year 2"
+  },
+  {
+   "what": "Delivery period for a return (electronic or not) under Exception 2",
+   "value": "3 months",
+   "quote": "during the period of 3 months beginning with the date of the notice"
+  },
+  {
+   "what": "Penalty amount for failure to comply with a requirement under subsection (1I)",
+   "value": "£60",
+   "quote": "liable to a penalty of £60"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 18,
+  "thresholds_proposed": 10,
+  "thresholds_verified": 7
+ }
+}

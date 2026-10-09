@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1989/41/s4A@current",
+ "section": "uk/ukpga/1989/41/s4A",
+ "version": "current",
+ "source_sha256": "98b98319a76f52abdd8e58838b0fca1528fb8a59f29a2e588c34934f74d847c9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who is not a child's parent is identified as the step-parent where a parent of the child (\"parent A\") who has parental responsibility for the child is married to, or a civil partner of, that person.",
+    "quote": "married to , or a civil partner of, a person who is not the child’s parent (“the step-parent”)"
+   },
+   {
+    "requirement": "Parent A may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child, unless the other parent of the child also has parental responsibility for the child.",
+    "quote": "parent A or, if the other parent of the child also has parental responsibility for the child, both parents may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child"
+   },
+   {
+    "requirement": "If the child's other parent also has parental responsibility for the child, both parents may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child.",
+    "quote": "if the other parent of the child also has parental responsibility for the child, both parents may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child"
+   },
+   {
+    "requirement": "The court may, upon an application made by the step-parent, order that the step-parent shall have parental responsibility for the child.",
+    "quote": "the court may, on the application of the step-parent, order that the step-parent shall have parental responsibility for the child"
+   },
+   {
+    "requirement": "An agreement providing for a step-parent to have parental responsibility under subsection (1)(a) constitutes a parental responsibility agreement.",
+    "quote": "An agreement under subsection (1)(a) is also a “parental responsibility agreement”"
+   },
+   {
+    "requirement": "Section 4(2) applies in relation to step-parent parental responsibility agreements under subsection (1)(a) in the same manner as it applies to parental responsibility agreements made under section 4.",
+    "quote": "section 4(2) applies in relation to such agreements as it applies in relation to parental responsibility agreements under section 4"
+   },
+   {
+    "requirement": "A parental responsibility agreement under subsection (1)(a) or a court order under subsection (1)(b) may only be brought to an end by an order of the court.",
+    "quote": "may only be brought to an end by an order of the court"
+   },
+   {
+    "requirement": "Any person who has parental responsibility for the child may apply to the court for an order bringing to an end a step-parent parental responsibility agreement or order.",
+    "quote": "made on the application— (a) of any person who has parental responsibility for the child"
+   },
+   {
+    "requirement": "The child himself may apply to the court to bring to an end a step-parent parental responsibility agreement or order, but only with the leave of the court.",
+    "quote": "with the leave of the court, of the child himself"
+   },
+   {
+    "requirement": "The court is restricted from granting leave to the child to apply to end the agreement or order unless the court is satisfied that the child has sufficient understanding to make the proposed application.",
+    "quote": "The court may only grant leave under subsection (3)(b) if it is satisfied that the child has sufficient understanding to make the proposed application"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person who is not a child's parent is identified as the step-parent where a parent of the child (\"parent A\") who has parental responsibility for the child is married to, or a civil partner of, that person.",
+   "quote": "married to , or a civil partner of, a person who is not the child’s parent (“the step-parent”)"
+  },
+  {
+   "requirement": "Parent A may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child, unless the other parent of the child also has parental responsibility for the child.",
+   "quote": "parent A or, if the other parent of the child also has parental responsibility for the child, both parents may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child"
+  },
+  {
+   "requirement": "If the child's other parent also has parental responsibility for the child, both parents may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child.",
+   "quote": "if the other parent of the child also has parental responsibility for the child, both parents may by agreement with the step-parent provide for the step-parent to have parental responsibility for the child"
+  },
+  {
+   "requirement": "The court may, upon an application made by the step-parent, order that the step-parent shall have parental responsibility for the child.",
+   "quote": "the court may, on the application of the step-parent, order that the step-parent shall have parental responsibility for the child"
+  },
+  {
+   "requirement": "An agreement providing for a step-parent to have parental responsibility under subsection (1)(a) constitutes a parental responsibility agreement.",
+   "quote": "An agreement under subsection (1)(a) is also a “parental responsibility agreement”"
+  },
+  {
+   "requirement": "Section 4(2) applies in relation to step-parent parental responsibility agreements under subsection (1)(a) in the same manner as it applies to parental responsibility agreements made under section 4.",
+   "quote": "section 4(2) applies in relation to such agreements as it applies in relation to parental responsibility agreements under section 4"
+  },
+  {
+   "requirement": "A parental responsibility agreement under subsection (1)(a) or a court order under subsection (1)(b) may only be brought to an end by an order of the court.",
+   "quote": "may only be brought to an end by an order of the court"
+  },
+  {
+   "requirement": "Any person who has parental responsibility for the child may apply to the court for an order bringing to an end a step-parent parental responsibility agreement or order.",
+   "quote": "made on the application— (a) of any person who has parental responsibility for the child"
+  },
+  {
+   "requirement": "The child himself may apply to the court to bring to an end a step-parent parental responsibility agreement or order, but only with the leave of the court.",
+   "quote": "with the leave of the court, of the child himself"
+  },
+  {
+   "requirement": "The court is restricted from granting leave to the child to apply to end the agreement or order unless the court is satisfied that the child has sufficient understanding to make the proposed application.",
+   "quote": "The court may only grant leave under subsection (3)(b) if it is satisfied that the child has sufficient understanding to make the proposed application"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

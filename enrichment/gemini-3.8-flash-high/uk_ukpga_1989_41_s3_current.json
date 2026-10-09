@@ -1,0 +1,67 @@
+{
+ "key": "uk/ukpga/1989/41/s3@current",
+ "section": "uk/ukpga/1989/41/s3",
+ "version": "current",
+ "source_sha256": "0f6d8130f73cd80bf8ebb5d350742c108a0049e49990665c685eb7ea363cadc0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In the Children Act 1989, parental responsibility means all the rights, duties, powers, responsibilities and authority which by law a parent of a child has in relation to the child and his property.",
+    "quote": "“parental responsibility” means all the rights, duties, powers, responsibilities and authority which by law a parent of a child has in relation to the child and his property."
+   },
+   {
+    "requirement": "Parental responsibility also includes the rights, powers and duties which a guardian of the child’s estate appointed to act generally before the commencement of section 5 would have had in relation to the child and his property.",
+    "quote": "also includes the rights, powers and duties which a guardian of the child’s estate (appointed, before the commencement of section 5, to act generally) would have had in relation to the child and his property."
+   },
+   {
+    "requirement": "The rights included from a guardian of the child’s estate include, in particular, the guardian's right to receive or recover in his own name, for the benefit of the child, property of whatever description and wherever situated which the child is entitled to receive or recover.",
+    "quote": "include, in particular, the right of the guardian to receive or recover in his own name, for the benefit of the child, property of whatever description and wherever situated which the child is entitled to receive or recover."
+   },
+   {
+    "requirement": "The fact that a person has or lacks parental responsibility for a child does not affect any obligation that person may have in relation to the child, such as a statutory duty to maintain the child.",
+    "quote": "shall not affect— (a) any obligation which he may have in relation to the child (such as a statutory duty to maintain the child)"
+   },
+   {
+    "requirement": "The fact that a person has or lacks parental responsibility for a child does not affect any rights which that person, or any other person, may have in relation to the child’s property in the event of the child’s death.",
+    "quote": "shall not affect— ... (b) any rights which, in the event of the child’s death, he (or any other person) may have in relation to the child’s property."
+   },
+   {
+    "requirement": "A person who lacks parental responsibility for a particular child but has care of the child may, subject to the provisions of the Children Act 1989, do what is reasonable in all the circumstances of the case for the purpose of safeguarding or promoting the child’s welfare.",
+    "quote": "A person who— (a) does not have parental responsibility for a particular child; but (b) has care of the child, may (subject to the provisions of this Act) do what is reasonable in all the circumstances of the case for the purpose of safeguarding or promoting the child’s welfare."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In the Children Act 1989, parental responsibility means all the rights, duties, powers, responsibilities and authority which by law a parent of a child has in relation to the child and his property.",
+   "quote": "“parental responsibility” means all the rights, duties, powers, responsibilities and authority which by law a parent of a child has in relation to the child and his property."
+  },
+  {
+   "requirement": "Parental responsibility also includes the rights, powers and duties which a guardian of the child’s estate appointed to act generally before the commencement of section 5 would have had in relation to the child and his property.",
+   "quote": "also includes the rights, powers and duties which a guardian of the child’s estate (appointed, before the commencement of section 5, to act generally) would have had in relation to the child and his property."
+  },
+  {
+   "requirement": "The rights included from a guardian of the child’s estate include, in particular, the guardian's right to receive or recover in his own name, for the benefit of the child, property of whatever description and wherever situated which the child is entitled to receive or recover.",
+   "quote": "include, in particular, the right of the guardian to receive or recover in his own name, for the benefit of the child, property of whatever description and wherever situated which the child is entitled to receive or recover."
+  },
+  {
+   "requirement": "The fact that a person has or lacks parental responsibility for a child does not affect any obligation that person may have in relation to the child, such as a statutory duty to maintain the child.",
+   "quote": "shall not affect— (a) any obligation which he may have in relation to the child (such as a statutory duty to maintain the child)"
+  },
+  {
+   "requirement": "A person who lacks parental responsibility for a particular child but has care of the child may, subject to the provisions of the Children Act 1989, do what is reasonable in all the circumstances of the case for the purpose of safeguarding or promoting the child’s welfare.",
+   "quote": "A person who— (a) does not have parental responsibility for a particular child; but (b) has care of the child, may (subject to the provisions of this Act) do what is reasonable in all the circumstances of the case for the purpose of safeguarding or promoting the child’s welfare."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

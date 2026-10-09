@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1984/60/s29@current",
+ "section": "uk/ukpga/1984/60/s29",
+ "version": "current",
+ "source_sha256": "390619a2021b0032957466592a327b218ec01d2fe7eb9b624b3d3bd0d8810070",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who attends voluntarily at a police station or at any other place where a constable is present, for the purpose of assisting with an investigation and without having been arrested, is entitled to leave at will unless he is placed under arrest.",
+    "quote": "attends voluntarily at a police station or at any other place where a constable is present"
+   },
+   {
+    "requirement": "A person who accompanies a constable to a police station or any other place where a constable is present, for the purpose of assisting with an investigation and without having been arrested, is entitled to leave at will unless he is placed under arrest.",
+    "quote": "accompanies a constable to a police station or any such other place without having been arrested"
+   },
+   {
+    "requirement": "A person who attends voluntarily or accompanies a constable to assist with an investigation ceases to be entitled to leave at will if he is placed under arrest.",
+    "quote": "unless he is placed under arrest"
+   },
+   {
+    "requirement": "A person attending voluntarily or accompanying a constable to assist with an investigation without having been arrested must be informed at once that he is under arrest if a constable takes a decision to prevent him from leaving at will.",
+    "quote": "he shall be informed at once that he is under arrest if a decision is taken by a constable to prevent him from leaving at will"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person who attends voluntarily at a police station or at any other place where a constable is present, for the purpose of assisting with an investigation and without having been arrested, is entitled to leave at will unless he is placed under arrest.",
+   "quote": "attends voluntarily at a police station or at any other place where a constable is present"
+  },
+  {
+   "requirement": "A person who accompanies a constable to a police station or any other place where a constable is present, for the purpose of assisting with an investigation and without having been arrested, is entitled to leave at will unless he is placed under arrest.",
+   "quote": "accompanies a constable to a police station or any such other place without having been arrested"
+  },
+  {
+   "requirement": "A person who attends voluntarily or accompanies a constable to assist with an investigation ceases to be entitled to leave at will if he is placed under arrest.",
+   "quote": "unless he is placed under arrest"
+  },
+  {
+   "requirement": "A person attending voluntarily or accompanying a constable to assist with an investigation without having been arrested must be informed at once that he is under arrest if a constable takes a decision to prevent him from leaving at will.",
+   "quote": "he shall be informed at once that he is under arrest if a decision is taken by a constable to prevent him from leaving at will"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

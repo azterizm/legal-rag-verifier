@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/2006/35/s11@current",
+ "section": "uk/ukpga/2006/35/s11",
+ "version": "current",
+ "source_sha256": "a1a6f143d67c420a61677cd1d1e2af885625690aa53e8cec589f630442f3410f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual commits an offence if that individual obtains services for himself or another by a dishonest act and in breach of subsection (2).",
+    "quote": "obtains services for himself or another— (a) by a dishonest act, and (b) in breach of subsection (2)"
+   },
+   {
+    "requirement": "Services are obtained in breach of subsection (2) only if they are made available on the basis that payment has been, is being, or will be made for or in respect of them.",
+    "quote": "they are made available on the basis that payment has been, is being or will be made for or in respect of them"
+   },
+   {
+    "requirement": "An individual obtains services in breach of subsection (2) only if that individual obtains them without any payment having been made for or in respect of them, or without payment having been made in full.",
+    "quote": "he obtains them without any payment having been made for or in respect of them or without payment having been made in full"
+   },
+   {
+    "requirement": "An individual obtains services in breach of subsection (2) only if, when obtaining them, that individual knows that they are being made available on the basis that payment has been, is being, or will be made, or knows that they might be so made available but intends that payment will not be made or will not be made in full.",
+    "quote": "when he obtains them, he knows— (i) that they are being made available on the basis described in paragraph (a), or (ii) that they might be, but intends that payment will not be made, or will not be made in full"
+   },
+   {
+    "requirement": "An individual guilty of an offence under section 11 is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, to a fine not exceeding the statutory maximum, or to both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+   },
+   {
+    "requirement": "An individual guilty of an offence under section 11 is liable on conviction on indictment to imprisonment for a term not exceeding 5 years, to a fine, or to both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding 5 years or to a fine (or to both)"
+   },
+   {
+    "requirement": "In relation to Northern Ireland, the summary conviction sentencing rule applies as if the statutory reference to 12 months were a reference to 6 months.",
+    "quote": "Subsection (3)(a) applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "5 years",
+    "quote": "imprisonment for a term not exceeding 5 years"
+   },
+   {
+    "what": "statutory period referenced in relation to summary conviction limits prior to modification for Northern Ireland",
+    "value": "12 months",
+    "quote": "reference to 12 months"
+   },
+   {
+    "what": "modified period of imprisonment substituted in relation to Northern Ireland",
+    "value": "6 months",
+    "quote": "reference to 6 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An individual commits an offence if that individual obtains services for himself or another by a dishonest act and in breach of subsection (2).",
+   "quote": "obtains services for himself or another— (a) by a dishonest act, and (b) in breach of subsection (2)"
+  },
+  {
+   "requirement": "Services are obtained in breach of subsection (2) only if they are made available on the basis that payment has been, is being, or will be made for or in respect of them.",
+   "quote": "they are made available on the basis that payment has been, is being or will be made for or in respect of them"
+  },
+  {
+   "requirement": "An individual obtains services in breach of subsection (2) only if that individual obtains them without any payment having been made for or in respect of them, or without payment having been made in full.",
+   "quote": "he obtains them without any payment having been made for or in respect of them or without payment having been made in full"
+  },
+  {
+   "requirement": "An individual obtains services in breach of subsection (2) only if, when obtaining them, that individual knows that they are being made available on the basis that payment has been, is being, or will be made, or knows that they might be so made available but intends that payment will not be made or will not be made in full.",
+   "quote": "when he obtains them, he knows— (i) that they are being made available on the basis described in paragraph (a), or (ii) that they might be, but intends that payment will not be made, or will not be made in full"
+  },
+  {
+   "requirement": "An individual guilty of an offence under section 11 is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, to a fine not exceeding the statutory maximum, or to both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+  },
+  {
+   "requirement": "An individual guilty of an offence under section 11 is liable on conviction on indictment to imprisonment for a term not exceeding 5 years, to a fine, or to both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding 5 years or to a fine (or to both)"
+  },
+  {
+   "requirement": "In relation to Northern Ireland, the summary conviction sentencing rule applies as if the statutory reference to 12 months were a reference to 6 months.",
+   "quote": "Subsection (3)(a) applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "5 years",
+   "quote": "imprisonment for a term not exceeding 5 years"
+  },
+  {
+   "what": "statutory period referenced in relation to summary conviction limits prior to modification for Northern Ireland",
+   "value": "12 months",
+   "quote": "reference to 12 months"
+  },
+  {
+   "what": "modified period of imprisonment substituted in relation to Northern Ireland",
+   "value": "6 months",
+   "quote": "reference to 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "key": "uk/ukpga/2006/46/s20@current",
+ "section": "uk/ukpga/2006/46/s20",
+ "version": "current",
+ "source_sha256": "2a974c1d2c9de4f225072f1848b9a0b456b51dab46d6282d0506b0fc5d729a65",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "On the formation of a limited company, if articles are not registered, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in that form had been duly registered.",
+    "quote": "if articles are not registered, or (b) if articles are registered, in so far as they do not exclude or modify the relevant model articles, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in the form of those articles had been duly registered"
+   },
+   {
+    "requirement": "On the formation of a limited company, if articles are registered, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in that form had been duly registered in so far as the registered articles do not exclude or modify the relevant model articles.",
+    "quote": "in so far as they do not exclude or modify the relevant model articles, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in the form of those articles had been duly registered"
+   },
+   {
+    "requirement": "The relevant model articles are defined as the model articles prescribed for a company of that description as in force at the date on which the company is registered.",
+    "quote": "The “relevant model articles” means the model articles prescribed for a company of that description as in force at the date on which the company is registered."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the point in time at which the prescribed model articles must be in force to constitute the relevant model articles for a company of that description",
+    "value": "the date on which the company is registered",
+    "quote": "at the date on which the company is registered"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "On the formation of a limited company, if articles are not registered, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in that form had been duly registered.",
+   "quote": "if articles are not registered, or (b) if articles are registered, in so far as they do not exclude or modify the relevant model articles, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in the form of those articles had been duly registered"
+  },
+  {
+   "requirement": "On the formation of a limited company, if articles are registered, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in that form had been duly registered in so far as the registered articles do not exclude or modify the relevant model articles.",
+   "quote": "in so far as they do not exclude or modify the relevant model articles, the relevant model articles (so far as applicable) form part of the company's articles in the same manner and to the same extent as if articles in the form of those articles had been duly registered"
+  },
+  {
+   "requirement": "The relevant model articles are defined as the model articles prescribed for a company of that description as in force at the date on which the company is registered.",
+   "quote": "The “relevant model articles” means the model articles prescribed for a company of that description as in force at the date on which the company is registered."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

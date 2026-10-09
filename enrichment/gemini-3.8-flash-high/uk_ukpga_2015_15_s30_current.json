@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/2015/15/s30@current",
+ "section": "uk/ukpga/2015/15/s30",
+ "version": "current",
+ "source_sha256": "606401cf364406576776092e1b7d09066e96be9aff36116561e53e4b58da2aa7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 30 applies where there is a contract to supply goods and there is a guarantee in relation to those goods.",
+    "quote": "This section applies where— (a) there is a contract to supply goods, and (b) there is a guarantee in relation to the goods."
+   },
+   {
+    "requirement": "A guarantee means an undertaking to the consumer given without extra charge by a person acting in the course of business (the guarantor) that, if the goods fail to meet specifications set out in the guarantee statement or associated advertising, the consumer will be reimbursed for the price paid or the goods will be repaired, replaced, or handled in any way.",
+    "quote": "“Guarantee” here means an undertaking to the consumer given without extra charge by a person acting in the course of the person's business (the “guarantor”) that, if the goods do not meet the specifications set out in the guarantee statement or in any associated advertising— (a) the consumer will be reimbursed for the price paid for the goods, or (b) the goods will be repaired, replaced or handled in any way."
+   },
+   {
+    "requirement": "A guarantee takes effect at the time the goods are delivered as a contractual obligation owed by the guarantor under the conditions set out in the guarantee statement and any associated advertising.",
+    "quote": "The guarantee takes effect, at the time the goods are delivered, as a contractual obligation owed by the guarantor under the conditions set out in the guarantee statement and in any associated advertising."
+   },
+   {
+    "requirement": "The guarantor must ensure that the guarantee sets out in plain and intelligible language both the contents of the guarantee and the essential particulars for making claims under it.",
+    "quote": "The guarantor must ensure that— (a) the guarantee sets out in plain and intelligible language the contents of the guarantee and the essential particulars for making claims under the guarantee"
+   },
+   {
+    "requirement": "The guarantor must ensure that the guarantee states that the consumer has statutory rights regarding the goods and that those statutory rights are not affected by the guarantee.",
+    "quote": "the guarantee states that the consumer has statutory rights in relation to the goods and that those rights are not affected by the guarantee"
+   },
+   {
+    "requirement": "The guarantor must ensure that the guarantee is written in English where the goods are offered within the territory of the United Kingdom.",
+    "quote": "where the goods are offered within the territory of the United Kingdom, the guarantee is written in English."
+   },
+   {
+    "requirement": "The contents required to be set out in the guarantee include, in particular, the name and address of the guarantor.",
+    "quote": "The contents of the guarantee to be set out in it include, in particular— (a) the name and address of the guarantor"
+   },
+   {
+    "requirement": "The contents required to be set out in the guarantee include, in particular, the duration and territorial scope of the guarantee.",
+    "quote": "(b) the duration and territorial scope of the guarantee."
+   },
+   {
+    "requirement": "The guarantor and any other person offering to supply the guaranteed goods to consumers must, upon a consumer's request, provide the guarantee to the consumer in writing, in an accessible form, and within a reasonable time.",
+    "quote": "The guarantor and any other person who offers to supply to consumers the goods which are the subject of the guarantee must, on request by the consumer, make the guarantee available to the consumer within a reasonable time, in writing and in a form accessible to the consumer."
+   },
+   {
+    "requirement": "What constitutes a reasonable time for making the guarantee available is determined as a question of fact.",
+    "quote": "What is a reasonable time is a question of fact."
+   },
+   {
+    "requirement": "If a person fails to comply with any requirement under section 30, the enforcement authority may apply to the court for an injunction or, in Scotland, an order of specific implement against that person requiring compliance.",
+    "quote": "If a person fails to comply with a requirement of this section, the enforcement authority may apply to the court for an injunction or (in Scotland) an order of specific implement against that person requiring that person to comply."
+   },
+   {
+    "requirement": "Upon application by an enforcement authority, the court may grant an injunction or, in Scotland, an order of specific implement on such terms as the court considers appropriate.",
+    "quote": "On an application the court may grant an injunction or (in Scotland) an order of specific implement on such terms as it thinks appropriate."
+   },
+   {
+    "requirement": "In relation to England and Wales, the court means the High Court or the county court.",
+    "quote": "“court” means— in relation to England and Wales, the High Court or the county court"
+   },
+   {
+    "requirement": "In relation to Northern Ireland, the court means the High Court or a county court.",
+    "quote": "in relation to Northern Ireland, the High Court or a county court"
+   },
+   {
+    "requirement": "In relation to Scotland, the court means the Court of Session or the sheriff.",
+    "quote": "in relation to Scotland, the Court of Session or the sheriff"
+   },
+   {
+    "requirement": "An enforcement authority means the Competition and Markets Authority, a local weights and measures authority in Great Britain, or the Department of Enterprise, Trade and Investment in Northern Ireland.",
+    "quote": "“enforcement authority” means— the Competition and Markets Authority,a local weights and measures authority in Great Britain, andthe Department of Enterprise, Trade and Investment in Northern Ireland."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period within which the guarantor and any supplier must make the guarantee available to the consumer following a request",
+    "value": "a reasonable time",
+    "quote": "make the guarantee available to the consumer within a reasonable time"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 30 applies where there is a contract to supply goods and there is a guarantee in relation to those goods.",
+   "quote": "This section applies where— (a) there is a contract to supply goods, and (b) there is a guarantee in relation to the goods."
+  },
+  {
+   "requirement": "A guarantee means an undertaking to the consumer given without extra charge by a person acting in the course of business (the guarantor) that, if the goods fail to meet specifications set out in the guarantee statement or associated advertising, the consumer will be reimbursed for the price paid or the goods will be repaired, replaced, or handled in any way.",
+   "quote": "“Guarantee” here means an undertaking to the consumer given without extra charge by a person acting in the course of the person's business (the “guarantor”) that, if the goods do not meet the specifications set out in the guarantee statement or in any associated advertising— (a) the consumer will be reimbursed for the price paid for the goods, or (b) the goods will be repaired, replaced or handled in any way."
+  },
+  {
+   "requirement": "A guarantee takes effect at the time the goods are delivered as a contractual obligation owed by the guarantor under the conditions set out in the guarantee statement and any associated advertising.",
+   "quote": "The guarantee takes effect, at the time the goods are delivered, as a contractual obligation owed by the guarantor under the conditions set out in the guarantee statement and in any associated advertising."
+  },
+  {
+   "requirement": "The guarantor must ensure that the guarantee sets out in plain and intelligible language both the contents of the guarantee and the essential particulars for making claims under it.",
+   "quote": "The guarantor must ensure that— (a) the guarantee sets out in plain and intelligible language the contents of the guarantee and the essential particulars for making claims under the guarantee"
+  },
+  {
+   "requirement": "The guarantor must ensure that the guarantee states that the consumer has statutory rights regarding the goods and that those statutory rights are not affected by the guarantee.",
+   "quote": "the guarantee states that the consumer has statutory rights in relation to the goods and that those rights are not affected by the guarantee"
+  },
+  {
+   "requirement": "The guarantor must ensure that the guarantee is written in English where the goods are offered within the territory of the United Kingdom.",
+   "quote": "where the goods are offered within the territory of the United Kingdom, the guarantee is written in English."
+  },
+  {
+   "requirement": "The contents required to be set out in the guarantee include, in particular, the name and address of the guarantor.",
+   "quote": "The contents of the guarantee to be set out in it include, in particular— (a) the name and address of the guarantor"
+  },
+  {
+   "requirement": "The contents required to be set out in the guarantee include, in particular, the duration and territorial scope of the guarantee.",
+   "quote": "(b) the duration and territorial scope of the guarantee."
+  },
+  {
+   "requirement": "The guarantor and any other person offering to supply the guaranteed goods to consumers must, upon a consumer's request, provide the guarantee to the consumer in writing, in an accessible form, and within a reasonable time.",
+   "quote": "The guarantor and any other person who offers to supply to consumers the goods which are the subject of the guarantee must, on request by the consumer, make the guarantee available to the consumer within a reasonable time, in writing and in a form accessible to the consumer."
+  },
+  {
+   "requirement": "What constitutes a reasonable time for making the guarantee available is determined as a question of fact.",
+   "quote": "What is a reasonable time is a question of fact."
+  },
+  {
+   "requirement": "If a person fails to comply with any requirement under section 30, the enforcement authority may apply to the court for an injunction or, in Scotland, an order of specific implement against that person requiring compliance.",
+   "quote": "If a person fails to comply with a requirement of this section, the enforcement authority may apply to the court for an injunction or (in Scotland) an order of specific implement against that person requiring that person to comply."
+  },
+  {
+   "requirement": "Upon application by an enforcement authority, the court may grant an injunction or, in Scotland, an order of specific implement on such terms as the court considers appropriate.",
+   "quote": "On an application the court may grant an injunction or (in Scotland) an order of specific implement on such terms as it thinks appropriate."
+  },
+  {
+   "requirement": "In relation to England and Wales, the court means the High Court or the county court.",
+   "quote": "“court” means— in relation to England and Wales, the High Court or the county court"
+  },
+  {
+   "requirement": "In relation to Northern Ireland, the court means the High Court or a county court.",
+   "quote": "in relation to Northern Ireland, the High Court or a county court"
+  },
+  {
+   "requirement": "In relation to Scotland, the court means the Court of Session or the sheriff.",
+   "quote": "in relation to Scotland, the Court of Session or the sheriff"
+  },
+  {
+   "requirement": "An enforcement authority means the Competition and Markets Authority, a local weights and measures authority in Great Britain, or the Department of Enterprise, Trade and Investment in Northern Ireland.",
+   "quote": "“enforcement authority” means— the Competition and Markets Authority,a local weights and measures authority in Great Britain, andthe Department of Enterprise, Trade and Investment in Northern Ireland."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

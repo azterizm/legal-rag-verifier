@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/1984/60/s30@current",
+ "section": "uk/ukpga/1984/60/s30",
+ "version": "current",
+ "source_sha256": "0ba3cd90da50df7fc807eabd1b66498bcf2e105a5d4c3e839842600913dc6d2d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who is arrested for an offence by a constable, or taken into custody by a constable after being arrested for an offence by a person other than a constable, at any place other than a police station must be taken by a constable to a police station as soon as practicable after the arrest.",
+    "quote": "The person must be taken by a constable to a police station as soon as practicable after the arrest."
+   },
+   {
+    "requirement": "The duty to take an arrested person to a police station as soon as practicable is subject to section 30A (release elsewhere than at a police station) and to subsection (7) regarding release without bail.",
+    "quote": "Subsection (1A) has effect subject to section 30A (release of a person arrested elsewhere than at police station) and subsection (7)(release without bail)."
+   },
+   {
+    "requirement": "Subject to specified exceptions in subsections (3) and (5), the police station to which an arrested person is taken must be a designated police station.",
+    "quote": "the police station to which an arrested person is taken under subsection (1A) above shall be a designated police station."
+   },
+   {
+    "requirement": "A qualifying constable may take an arrested person to any police station unless it appears to the constable that it may be necessary to keep the arrested person in police detention for more than six hours.",
+    "quote": "A constable to whom this subsection applies may take an arrested person to any police station unless it appears to the constable that it may be necessary to keep the arrested person in police detention for more than six hours."
+   },
+   {
+    "requirement": "The authority to take an arrested person to any police station under subsection (3) applies to a constable who is working in a locality covered by a non-designated police station, or to a constable belonging to a body of constables maintained by an authority other than a local policing body.",
+    "quote": "Subsection (3) above applies— (a) to a constable who is working in a locality covered by a police station which is not a designated police station; and (b) to a constable belonging to a body of constables maintained by an authority other than a local policing body."
+   },
+   {
+    "requirement": "Any constable may take an arrested person to any police station if the constable acted without the assistance of another constable and no other constable is available to assist, and it appears to the constable that taking the person to a designated police station cannot be done without the person injuring himself, the constable, or someone else.",
+    "quote": "Any constable may take an arrested person to any police station if— (a) either of the following conditions is satisfied— (i) the constable has arrested him without the assistance of any other constable and no other constable is available to assist him; (ii) the constable has taken him into custody from a person other than a constable without the assistance of any other constable and no other constable is available to assist him; and (b) it appears to the constable that he will be unable to take the arrested person to a designated police station without the arrested person injuring himself, the constable or some other person."
+   },
+   {
+    "requirement": "If an arrested person is taken first to a non-designated police station, that person must be taken to a designated police station not more than six hours after arriving at the first police station, unless released previously.",
+    "quote": "he shall be taken to a designated police station not more than six hours after his arrival at the first police station unless he is released previously."
+   },
+   {
+    "requirement": "A person arrested by a constable at any place other than a police station must be released without bail if, before reaching a police station, a constable is satisfied that there are no grounds for keeping the person under arrest.",
+    "quote": "A person arrested by a constable at any place other than a police station must be released without bail if the condition in subsection (7A) is satisfied."
+   },
+   {
+    "requirement": "A constable who releases an arrested person without bail prior to reaching a police station must record the fact of the release as soon as is practicable after the release.",
+    "quote": "A constable who releases a person under subsection (7) above shall record the fact that he has done so."
+   },
+   {
+    "requirement": "A constable is permitted to delay taking an arrested person to a police station or releasing the person under section 30A if the person's presence at a place other than a police station is necessary to carry out investigations that are reasonable to carry out immediately.",
+    "quote": "Nothing in subsection (1A) or in section 30A prevents a constable delaying taking a person to a police station or releasing him under section 30A if the condition in subsection (10A) is satisfied."
+   },
+   {
+    "requirement": "Where there is any permitted delay in taking a person to a police station or releasing the person under section 30A, the reasons for that delay must be recorded when the person first arrives at a police station or is released under section 30A.",
+    "quote": "Where there is any such delay the reasons for the delay must be recorded when the person first arrives at the police station or (as the case may be) is released under section 30A."
+   },
+   {
+    "requirement": "Nothing in subsection (1A) or section 30A affects paragraphs 16(3) or 18(1) of Schedule 2 to the Immigration Act 1971, section 34(1) of the Criminal Justice Act 1972, any provision of the Terrorism Act 2000, or section 27 of and Schedule 6 to the National Security Act 2023.",
+    "quote": "Nothing in subsection (1A) or section 30A above shall be taken to affect— (a) paragraphs 16(3) or 18(1) of Schedule 2 to the Immigration Act 1971; (b) section 34(1) of the Criminal Justice Act 1972; ... (c) any provision of the Terrorism Act 2000 ; or (d) section 27 of and Schedule 6 to the National Security Act 2023."
+   },
+   {
+    "requirement": "Nothing in subsection (1) affects paragraph 18(3) of Schedule 2 to the Immigration Act 1971.",
+    "quote": "Nothing in subsection (1) above shall be taken to affect paragraph 18(3) of Schedule 2 to the Immigration Act 1971."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the expected duration of police detention that precludes a qualifying constable from taking an arrested person to any police station rather than a designated one",
+    "value": "more than six hours",
+    "quote": "it may be necessary to keep the arrested person in police detention for more than six hours"
+   },
+   {
+    "what": "the maximum period an arrested person may be kept at a non-designated first police station before being taken to a designated police station",
+    "value": "six hours",
+    "quote": "not more than six hours after his arrival at the first police station"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person who is arrested for an offence by a constable, or taken into custody by a constable after being arrested for an offence by a person other than a constable, at any place other than a police station must be taken by a constable to a police station as soon as practicable after the arrest.",
+   "quote": "The person must be taken by a constable to a police station as soon as practicable after the arrest."
+  },
+  {
+   "requirement": "The duty to take an arrested person to a police station as soon as practicable is subject to section 30A (release elsewhere than at a police station) and to subsection (7) regarding release without bail.",
+   "quote": "Subsection (1A) has effect subject to section 30A (release of a person arrested elsewhere than at police station) and subsection (7)(release without bail)."
+  },
+  {
+   "requirement": "Subject to specified exceptions in subsections (3) and (5), the police station to which an arrested person is taken must be a designated police station.",
+   "quote": "the police station to which an arrested person is taken under subsection (1A) above shall be a designated police station."
+  },
+  {
+   "requirement": "A qualifying constable may take an arrested person to any police station unless it appears to the constable that it may be necessary to keep the arrested person in police detention for more than six hours.",
+   "quote": "A constable to whom this subsection applies may take an arrested person to any police station unless it appears to the constable that it may be necessary to keep the arrested person in police detention for more than six hours."
+  },
+  {
+   "requirement": "The authority to take an arrested person to any police station under subsection (3) applies to a constable who is working in a locality covered by a non-designated police station, or to a constable belonging to a body of constables maintained by an authority other than a local policing body.",
+   "quote": "Subsection (3) above applies— (a) to a constable who is working in a locality covered by a police station which is not a designated police station; and (b) to a constable belonging to a body of constables maintained by an authority other than a local policing body."
+  },
+  {
+   "requirement": "Any constable may take an arrested person to any police station if the constable acted without the assistance of another constable and no other constable is available to assist, and it appears to the constable that taking the person to a designated police station cannot be done without the person injuring himself, the constable, or someone else.",
+   "quote": "Any constable may take an arrested person to any police station if— (a) either of the following conditions is satisfied— (i) the constable has arrested him without the assistance of any other constable and no other constable is available to assist him; (ii) the constable has taken him into custody from a person other than a constable without the assistance of any other constable and no other constable is available to assist him; and (b) it appears to the constable that he will be unable to take the arrested person to a designated police station without the arrested person injuring himself, the constable or some other person."
+  },
+  {
+   "requirement": "If an arrested person is taken first to a non-designated police station, that person must be taken to a designated police station not more than six hours after arriving at the first police station, unless released previously.",
+   "quote": "he shall be taken to a designated police station not more than six hours after his arrival at the first police station unless he is released previously."
+  },
+  {
+   "requirement": "A person arrested by a constable at any place other than a police station must be released without bail if, before reaching a police station, a constable is satisfied that there are no grounds for keeping the person under arrest.",
+   "quote": "A person arrested by a constable at any place other than a police station must be released without bail if the condition in subsection (7A) is satisfied."
+  },
+  {
+   "requirement": "A constable who releases an arrested person without bail prior to reaching a police station must record the fact of the release as soon as is practicable after the release.",
+   "quote": "A constable who releases a person under subsection (7) above shall record the fact that he has done so."
+  },
+  {
+   "requirement": "A constable is permitted to delay taking an arrested person to a police station or releasing the person under section 30A if the person's presence at a place other than a police station is necessary to carry out investigations that are reasonable to carry out immediately.",
+   "quote": "Nothing in subsection (1A) or in section 30A prevents a constable delaying taking a person to a police station or releasing him under section 30A if the condition in subsection (10A) is satisfied."
+  },
+  {
+   "requirement": "Where there is any permitted delay in taking a person to a police station or releasing the person under section 30A, the reasons for that delay must be recorded when the person first arrives at a police station or is released under section 30A.",
+   "quote": "Where there is any such delay the reasons for the delay must be recorded when the person first arrives at the police station or (as the case may be) is released under section 30A."
+  },
+  {
+   "requirement": "Nothing in subsection (1A) or section 30A affects paragraphs 16(3) or 18(1) of Schedule 2 to the Immigration Act 1971, section 34(1) of the Criminal Justice Act 1972, any provision of the Terrorism Act 2000, or section 27 of and Schedule 6 to the National Security Act 2023.",
+   "quote": "Nothing in subsection (1A) or section 30A above shall be taken to affect— (a) paragraphs 16(3) or 18(1) of Schedule 2 to the Immigration Act 1971; (b) section 34(1) of the Criminal Justice Act 1972; ... (c) any provision of the Terrorism Act 2000 ; or (d) section 27 of and Schedule 6 to the National Security Act 2023."
+  },
+  {
+   "requirement": "Nothing in subsection (1) affects paragraph 18(3) of Schedule 2 to the Immigration Act 1971.",
+   "quote": "Nothing in subsection (1) above shall be taken to affect paragraph 18(3) of Schedule 2 to the Immigration Act 1971."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the expected duration of police detention that precludes a qualifying constable from taking an arrested person to any police station rather than a designated one",
+   "value": "more than six hours",
+   "quote": "it may be necessary to keep the arrested person in police detention for more than six hours"
+  },
+  {
+   "what": "the maximum period an arrested person may be kept at a non-designated first police station before being taken to a designated police station",
+   "value": "six hours",
+   "quote": "not more than six hours after his arrival at the first police station"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/2010/15/s77@current",
+ "section": "uk/ukpga/2010/15/s77",
+ "version": "current",
+ "source_sha256": "44d6b594d813375488201a2a0cf51c91d5fe77ccae8c67462900dd090dbf5928",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A term of a person's work that purports to prevent or restrict that person from disclosing or seeking to disclose information about the terms of their work is unenforceable against them to the extent that they make or seek to make a relevant pay disclosure.",
+    "quote": "A term of a person's work that purports to prevent or restrict the person (P) from disclosing or seeking to disclose information about the terms of P's work is unenforceable against P in so far as P makes or seeks to make a relevant pay disclosure."
+   },
+   {
+    "requirement": "A term of a person's work that purports to prevent or restrict that person from seeking disclosure of information from a colleague about the terms of the colleague's work is unenforceable against them to the extent that they seek a relevant pay disclosure from the colleague.",
+    "quote": "A term of a person's work that purports to prevent or restrict the person (P) from seeking disclosure of information from a colleague about the terms of the colleague's work is unenforceable against P in so far as P seeks a relevant pay disclosure from the colleague"
+   },
+   {
+    "requirement": "For the purposes of restrictions on seeking disclosure from a colleague, a colleague includes a former colleague in relation to the work in question.",
+    "quote": "“colleague” includes a former colleague in relation to the work in question."
+   },
+   {
+    "requirement": "A disclosure qualifies as a relevant pay disclosure if it is made for the purpose of enabling the maker or recipient to find out whether or to what extent there is a connection, in relation to the work in question, between pay and having or not having a particular protected characteristic.",
+    "quote": "A disclosure is a relevant pay disclosure if made for the purpose of enabling the person who makes it, or the person to whom it is made, to find out whether or to what extent there is, in relation to the work in question, a connection between pay and having (or not having) a particular protected characteristic."
+   },
+   {
+    "requirement": "Seeking a disclosure that would be a relevant pay disclosure must be treated as a protected act for the purposes of the relevant victimisation provision.",
+    "quote": "seeking a disclosure that would be a relevant pay disclosure"
+   },
+   {
+    "requirement": "Making or seeking to make a relevant pay disclosure must be treated as a protected act for the purposes of the relevant victimisation provision.",
+    "quote": "making or seeking to make a relevant pay disclosure"
+   },
+   {
+    "requirement": "Receiving information disclosed in a relevant pay disclosure must be treated as a protected act for the purposes of the relevant victimisation provision.",
+    "quote": "receiving information disclosed in a relevant pay disclosure."
+   },
+   {
+    "requirement": "In relation to employment, the relevant victimisation provision is section 27 so far as it applies for the purposes of section 39(3) or (4).",
+    "quote": "Employment Section 39(3) or (4)"
+   },
+   {
+    "requirement": "In relation to appointment to a personal office, the relevant victimisation provision is section 27 so far as it applies for the purposes of section 49(5) or (8).",
+    "quote": "Appointment to a personal office Section 49(5) or (8)"
+   },
+   {
+    "requirement": "In relation to appointment to a public office, the relevant victimisation provision is section 27 so far as it applies for the purposes of section 50(5) or (9).",
+    "quote": "Appointment to a public office Section 50(5) or (9)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A term of a person's work that purports to prevent or restrict that person from disclosing or seeking to disclose information about the terms of their work is unenforceable against them to the extent that they make or seek to make a relevant pay disclosure.",
+   "quote": "A term of a person's work that purports to prevent or restrict the person (P) from disclosing or seeking to disclose information about the terms of P's work is unenforceable against P in so far as P makes or seeks to make a relevant pay disclosure."
+  },
+  {
+   "requirement": "A term of a person's work that purports to prevent or restrict that person from seeking disclosure of information from a colleague about the terms of the colleague's work is unenforceable against them to the extent that they seek a relevant pay disclosure from the colleague.",
+   "quote": "A term of a person's work that purports to prevent or restrict the person (P) from seeking disclosure of information from a colleague about the terms of the colleague's work is unenforceable against P in so far as P seeks a relevant pay disclosure from the colleague"
+  },
+  {
+   "requirement": "For the purposes of restrictions on seeking disclosure from a colleague, a colleague includes a former colleague in relation to the work in question.",
+   "quote": "“colleague” includes a former colleague in relation to the work in question."
+  },
+  {
+   "requirement": "A disclosure qualifies as a relevant pay disclosure if it is made for the purpose of enabling the maker or recipient to find out whether or to what extent there is a connection, in relation to the work in question, between pay and having or not having a particular protected characteristic.",
+   "quote": "A disclosure is a relevant pay disclosure if made for the purpose of enabling the person who makes it, or the person to whom it is made, to find out whether or to what extent there is, in relation to the work in question, a connection between pay and having (or not having) a particular protected characteristic."
+  },
+  {
+   "requirement": "Seeking a disclosure that would be a relevant pay disclosure must be treated as a protected act for the purposes of the relevant victimisation provision.",
+   "quote": "seeking a disclosure that would be a relevant pay disclosure"
+  },
+  {
+   "requirement": "Making or seeking to make a relevant pay disclosure must be treated as a protected act for the purposes of the relevant victimisation provision.",
+   "quote": "making or seeking to make a relevant pay disclosure"
+  },
+  {
+   "requirement": "Receiving information disclosed in a relevant pay disclosure must be treated as a protected act for the purposes of the relevant victimisation provision.",
+   "quote": "receiving information disclosed in a relevant pay disclosure."
+  },
+  {
+   "requirement": "In relation to employment, the relevant victimisation provision is section 27 so far as it applies for the purposes of section 39(3) or (4).",
+   "quote": "Employment Section 39(3) or (4)"
+  },
+  {
+   "requirement": "In relation to appointment to a personal office, the relevant victimisation provision is section 27 so far as it applies for the purposes of section 49(5) or (8).",
+   "quote": "Appointment to a personal office Section 49(5) or (8)"
+  },
+  {
+   "requirement": "In relation to appointment to a public office, the relevant victimisation provision is section 27 so far as it applies for the purposes of section 50(5) or (9).",
+   "quote": "Appointment to a public office Section 50(5) or (9)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "key": "uk/ukpga/1989/34/s1@current",
+ "section": "uk/ukpga/1989/34/s1",
+ "version": "current",
+ "source_sha256": "cbe3dd0e9ea8c8347a13e69f135aad19e2c97e511c0744157c5dc288acc9009b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any rule of law restricting the substances on which a deed may be written is abolished.",
+    "quote": "restricts the substances on which a deed may be written"
+   },
+   {
+    "requirement": "Any rule of law requiring a seal for the valid execution of an instrument as a deed by an individual is abolished.",
+    "quote": "requires a seal for the valid execution of an instrument as a deed by an individual"
+   },
+   {
+    "requirement": "Any rule of law requiring authority by one person to another to deliver an instrument as a deed on his behalf to be given by deed is abolished.",
+    "quote": "requires authority by one person to another to deliver an instrument as a deed on his behalf to be given by deed, is abolished"
+   },
+   {
+    "requirement": "An instrument shall not be a deed unless it makes it clear on its face that it is intended to be a deed by the person making it or by the parties to it, whether by describing itself as a deed, expressing itself to be executed or signed as a deed, or otherwise.",
+    "quote": "it makes it clear on its face that it is intended to be a deed by the person making it or, as the case may be, by the parties to it"
+   },
+   {
+    "requirement": "An instrument shall not be taken to make it clear on its face that it is intended to be a deed merely because it is executed under seal.",
+    "quote": "an instrument shall not be taken to make it clear on its face that it is intended to be a deed merely because it is executed under seal"
+   },
+   {
+    "requirement": "An instrument shall not be a deed unless it is validly executed as a deed by the person making it or by one or more of the parties to it.",
+    "quote": "it is validly executed as a deed by that person or, as the case may be, one or more of those parties"
+   },
+   {
+    "requirement": "An instrument is validly executed as a deed by an individual if, and only if, it is delivered as a deed and either signed by the individual in the presence of an attesting witness, or signed at the individual's direction, in the individual's presence, and in the presence of two witnesses who each attest the signature.",
+    "quote": "validly executed as a deed by an individual if, and only if— (a) it is signed— (i) by him in the presence of a witness who attests the signature; or (ii) at his direction and in his presence and the presence of two witnesses who each attest the signature; and (b) it is delivered as a deed"
+   },
+   {
+    "requirement": "In relation to an instrument, signing includes making one's mark on the instrument, and signature is construed accordingly.",
+    "quote": "“sign”, in relation to an instrument, includes making one’s mark on the instrument and “signature” is to be construed accordingly"
+   },
+   {
+    "requirement": "The individual deed execution requirements apply to an instrument executed by an individual in the name or on behalf of another person, regardless of whether that other person is an individual.",
+    "quote": "applies in the case of an instrument executed by an individual in the name or on behalf of another person whether or not that person is also an individual"
+   },
+   {
+    "requirement": "Where a relevant lawyer, or an agent or employee of a relevant lawyer, purports in the course of or in connection with a transaction to deliver an instrument as a deed on behalf of a party, authority to so deliver the instrument is conclusively presumed in favour of a purchaser.",
+    "quote": "it shall be conclusively presumed in favour of a purchaser that he is authorised so to deliver the instrument"
+   },
+   {
+    "requirement": "For the purpose of delivery presumptions, a purchaser has the same meaning as defined in the Law of Property Act 1925.",
+    "quote": "“purchaser” has the same meaning as in the Law of Property Act 1925"
+   },
+   {
+    "requirement": "For the purpose of delivery presumptions, a relevant lawyer means a person who is an authorised person under the Legal Services Act 2007 in relation to an activity constituting a reserved instrument activity within the meaning of that Act.",
+    "quote": "“ relevant lawyer ” means a person who, for the purposes of the Legal Services Act 2007, is an authorised person in relation to an activity which constitutes a reserved instrument activity"
+   },
+   {
+    "requirement": "Where an instrument under seal constituting a deed is required under an Act passed before section 1 comes into force, section 1 governs the signing, sealing, or delivery of the instrument by an individual in place of the prior Act's provisions.",
+    "quote": "this section shall have effect as to signing, sealing or delivery of an instrument by an individual in place of any provision of that Act as to signing, sealing or delivery"
+   },
+   {
+    "requirement": "The enactments listed in Schedule 1 to the Act have effect subject to the amendments specified in that Schedule.",
+    "quote": "The enactments mentioned in Schedule 1 to this Act ... shall have effect with the amendments specified in that Schedule"
+   },
+   {
+    "requirement": "The statutory rules on seal abolition, deed form, execution, and replacement of prior statutory execution requirements do not apply to deeds required or authorised to be made under the seal of the county palatine of Lancaster, the seal of the Duchy of Lancaster, or the seal of the Duchy of Cornwall.",
+    "quote": "Nothing in subsection (1)(b), (2), (3), (7) or (8) above applies in relation to deeds required or authorised to be made under— (a) the seal of the county palatine of Lancaster; (b) the seal of the Duchy of Lancaster; or (c) the seal of the Duchy of Cornwall"
+   },
+   {
+    "requirement": "Statutory references to the execution, signing, sealing, or delivery of an instrument by an individual do not include execution, signing, sealing, or delivery by a corporation sole.",
+    "quote": "references in this section to the execution of a deed by an individual do not include execution by a corporation sole and the reference in subsection (7) above to signing, sealing or delivery by an individual does not include signing, sealing or delivery by such a corporation"
+   },
+   {
+    "requirement": "Section 1 does not apply to any instrument delivered as a deed before the section comes into force.",
+    "quote": "Nothing in this section applies in relation to instruments delivered as deeds before this section comes into force"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of parties required to execute an instrument as a deed",
+    "value": "one",
+    "quote": "one or more of those parties"
+   },
+   {
+    "what": "number of persons giving authority to another person to deliver an instrument",
+    "value": "one",
+    "quote": "authority by one person to another"
+   },
+   {
+    "what": "number of attesting witnesses required when an instrument is signed at an individual's direction and in his presence",
+    "value": "two",
+    "quote": "the presence of two witnesses who each attest the signature"
+   },
+   {
+    "what": "Schedule number specifying enactments requiring amendments",
+    "value": "1",
+    "quote": "Schedule 1 to this Act"
+   },
+   {
+    "what": "year of the Law of Property Act governing the meaning of purchaser",
+    "value": "1925",
+    "quote": "Law of Property Act 1925"
+   },
+   {
+    "what": "year of the Legal Services Act governing authorised persons and reserved instrument activities",
+    "value": "2007",
+    "quote": "Legal Services Act 2007"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Any rule of law restricting the substances on which a deed may be written is abolished.",
+   "quote": "restricts the substances on which a deed may be written"
+  },
+  {
+   "requirement": "Any rule of law requiring a seal for the valid execution of an instrument as a deed by an individual is abolished.",
+   "quote": "requires a seal for the valid execution of an instrument as a deed by an individual"
+  },
+  {
+   "requirement": "Any rule of law requiring authority by one person to another to deliver an instrument as a deed on his behalf to be given by deed is abolished.",
+   "quote": "requires authority by one person to another to deliver an instrument as a deed on his behalf to be given by deed, is abolished"
+  },
+  {
+   "requirement": "An instrument shall not be a deed unless it makes it clear on its face that it is intended to be a deed by the person making it or by the parties to it, whether by describing itself as a deed, expressing itself to be executed or signed as a deed, or otherwise.",
+   "quote": "it makes it clear on its face that it is intended to be a deed by the person making it or, as the case may be, by the parties to it"
+  },
+  {
+   "requirement": "An instrument shall not be taken to make it clear on its face that it is intended to be a deed merely because it is executed under seal.",
+   "quote": "an instrument shall not be taken to make it clear on its face that it is intended to be a deed merely because it is executed under seal"
+  },
+  {
+   "requirement": "An instrument shall not be a deed unless it is validly executed as a deed by the person making it or by one or more of the parties to it.",
+   "quote": "it is validly executed as a deed by that person or, as the case may be, one or more of those parties"
+  },
+  {
+   "requirement": "An instrument is validly executed as a deed by an individual if, and only if, it is delivered as a deed and either signed by the individual in the presence of an attesting witness, or signed at the individual's direction, in the individual's presence, and in the presence of two witnesses who each attest the signature.",
+   "quote": "validly executed as a deed by an individual if, and only if— (a) it is signed— (i) by him in the presence of a witness who attests the signature; or (ii) at his direction and in his presence and the presence of two witnesses who each attest the signature; and (b) it is delivered as a deed"
+  },
+  {
+   "requirement": "In relation to an instrument, signing includes making one's mark on the instrument, and signature is construed accordingly.",
+   "quote": "“sign”, in relation to an instrument, includes making one’s mark on the instrument and “signature” is to be construed accordingly"
+  },
+  {
+   "requirement": "The individual deed execution requirements apply to an instrument executed by an individual in the name or on behalf of another person, regardless of whether that other person is an individual.",
+   "quote": "applies in the case of an instrument executed by an individual in the name or on behalf of another person whether or not that person is also an individual"
+  },
+  {
+   "requirement": "Where a relevant lawyer, or an agent or employee of a relevant lawyer, purports in the course of or in connection with a transaction to deliver an instrument as a deed on behalf of a party, authority to so deliver the instrument is conclusively presumed in favour of a purchaser.",
+   "quote": "it shall be conclusively presumed in favour of a purchaser that he is authorised so to deliver the instrument"
+  },
+  {
+   "requirement": "For the purpose of delivery presumptions, a purchaser has the same meaning as defined in the Law of Property Act 1925.",
+   "quote": "“purchaser” has the same meaning as in the Law of Property Act 1925"
+  },
+  {
+   "requirement": "For the purpose of delivery presumptions, a relevant lawyer means a person who is an authorised person under the Legal Services Act 2007 in relation to an activity constituting a reserved instrument activity within the meaning of that Act.",
+   "quote": "“ relevant lawyer ” means a person who, for the purposes of the Legal Services Act 2007, is an authorised person in relation to an activity which constitutes a reserved instrument activity"
+  },
+  {
+   "requirement": "Where an instrument under seal constituting a deed is required under an Act passed before section 1 comes into force, section 1 governs the signing, sealing, or delivery of the instrument by an individual in place of the prior Act's provisions.",
+   "quote": "this section shall have effect as to signing, sealing or delivery of an instrument by an individual in place of any provision of that Act as to signing, sealing or delivery"
+  },
+  {
+   "requirement": "The statutory rules on seal abolition, deed form, execution, and replacement of prior statutory execution requirements do not apply to deeds required or authorised to be made under the seal of the county palatine of Lancaster, the seal of the Duchy of Lancaster, or the seal of the Duchy of Cornwall.",
+   "quote": "Nothing in subsection (1)(b), (2), (3), (7) or (8) above applies in relation to deeds required or authorised to be made under— (a) the seal of the county palatine of Lancaster; (b) the seal of the Duchy of Lancaster; or (c) the seal of the Duchy of Cornwall"
+  },
+  {
+   "requirement": "Statutory references to the execution, signing, sealing, or delivery of an instrument by an individual do not include execution, signing, sealing, or delivery by a corporation sole.",
+   "quote": "references in this section to the execution of a deed by an individual do not include execution by a corporation sole and the reference in subsection (7) above to signing, sealing or delivery by an individual does not include signing, sealing or delivery by such a corporation"
+  },
+  {
+   "requirement": "Section 1 does not apply to any instrument delivered as a deed before the section comes into force.",
+   "quote": "Nothing in this section applies in relation to instruments delivered as deeds before this section comes into force"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 16,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 0
+ }
+}

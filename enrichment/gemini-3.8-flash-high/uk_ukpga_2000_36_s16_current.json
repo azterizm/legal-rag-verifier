@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/2000/36/s16@current",
+ "section": "uk/ukpga/2000/36/s16",
+ "version": "current",
+ "source_sha256": "6cbf59b1137f1bc7e7a4c986b75e238976aba508a40af41802b77825dcb9288e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A public authority has a duty to provide advice and assistance, so far as it would be reasonable to expect it to do so, to persons who propose to make, or have made, requests for information to that authority.",
+    "quote": "duty of a public authority to provide advice and assistance, so far as it would be reasonable to expect the authority to do so, to persons who propose to make, or have made, requests for information to it"
+   },
+   {
+    "requirement": "A public authority that conforms with the code of practice under section 45 in relation to the provision of advice or assistance in any case is taken to comply with the duty to provide advice and assistance in relation to that case.",
+    "quote": "conforms with the code of practice under section 45 is to be taken to comply with the duty imposed by subsection (1) in relation to that case"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A public authority has a duty to provide advice and assistance, so far as it would be reasonable to expect it to do so, to persons who propose to make, or have made, requests for information to that authority.",
+   "quote": "duty of a public authority to provide advice and assistance, so far as it would be reasonable to expect the authority to do so, to persons who propose to make, or have made, requests for information to it"
+  },
+  {
+   "requirement": "A public authority that conforms with the code of practice under section 45 in relation to the provision of advice or assistance in any case is taken to comply with the duty to provide advice and assistance in relation to that case.",
+   "quote": "conforms with the code of practice under section 45 is to be taken to comply with the duty imposed by subsection (1) in relation to that case"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

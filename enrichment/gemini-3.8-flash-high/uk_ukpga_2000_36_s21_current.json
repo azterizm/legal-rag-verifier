@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2000/36/s21@current",
+ "section": "uk/ukpga/2000/36/s21",
+ "version": "current",
+ "source_sha256": "af736f69154032c10a254bcf05d42a611a535c7bdf7b710514acce514a0a929c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Information is exempt information if it is reasonably accessible to the applicant otherwise than under section 1 of the Freedom of Information Act 2000.",
+    "quote": "Information which is reasonably accessible to the applicant otherwise than under section 1 is exempt information."
+   },
+   {
+    "requirement": "Information may be considered reasonably accessible to the applicant even if it is accessible only upon payment.",
+    "quote": "information may be reasonably accessible to the applicant even though it is accessible only on payment"
+   },
+   {
+    "requirement": "Information is to be taken as reasonably accessible to the applicant if a public authority or any other person is required by or under any enactment to communicate it to members of the public on request, whether free of charge or on payment, provided this obligation is not satisfied merely by making the information available for inspection.",
+    "quote": "obliged by or under any enactment to communicate (otherwise than by making the information available for inspection) to members of the public on request, whether free of charge or on payment."
+   },
+   {
+    "requirement": "Information held by a public authority that does not fall under section 21(2)(b) is not to be treated as reasonably accessible to the applicant solely because it can be requested from the public authority itself.",
+    "quote": "not to be regarded as reasonably accessible to the applicant merely because the information is available from the public authority itself on request"
+   },
+   {
+    "requirement": "Information held by a public authority that is available from the authority on request may be regarded as reasonably accessible to the applicant if it is made available under the authority's publication scheme and any required fee is specified in, or determined under, that scheme.",
+    "quote": "unless the information is made available in accordance with the authority’s publication scheme and any payment required is specified in, or determined in accordance with, the scheme."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Information is exempt information if it is reasonably accessible to the applicant otherwise than under section 1 of the Freedom of Information Act 2000.",
+   "quote": "Information which is reasonably accessible to the applicant otherwise than under section 1 is exempt information."
+  },
+  {
+   "requirement": "Information may be considered reasonably accessible to the applicant even if it is accessible only upon payment.",
+   "quote": "information may be reasonably accessible to the applicant even though it is accessible only on payment"
+  },
+  {
+   "requirement": "Information is to be taken as reasonably accessible to the applicant if a public authority or any other person is required by or under any enactment to communicate it to members of the public on request, whether free of charge or on payment, provided this obligation is not satisfied merely by making the information available for inspection.",
+   "quote": "obliged by or under any enactment to communicate (otherwise than by making the information available for inspection) to members of the public on request, whether free of charge or on payment."
+  },
+  {
+   "requirement": "Information held by a public authority that does not fall under section 21(2)(b) is not to be treated as reasonably accessible to the applicant solely because it can be requested from the public authority itself.",
+   "quote": "not to be regarded as reasonably accessible to the applicant merely because the information is available from the public authority itself on request"
+  },
+  {
+   "requirement": "Information held by a public authority that is available from the authority on request may be regarded as reasonably accessible to the applicant if it is made available under the authority's publication scheme and any required fee is specified in, or determined under, that scheme.",
+   "quote": "unless the information is made available in accordance with the authority’s publication scheme and any payment required is specified in, or determined in accordance with, the scheme."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

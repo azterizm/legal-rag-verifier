@@ -1,0 +1,282 @@
+{
+ "key": "uk/ukpga/1970/9/s12B@current",
+ "section": "uk/ukpga/1970/9/s12B",
+ "version": "current",
+ "source_sha256": "27f23976b7c8b7f6bbd8196da6dc3193ab4ef6e17e257c7e613ceb596699efc6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any person who may be required by a notice under section 8, 8A, or 12AA of the Taxes Management Act 1970 to make and deliver a return for a year of assessment or other period must keep all records requisite for enabling that person to make and deliver a correct and complete return for that year or period.",
+    "quote": "keep all such records as may be requisite"
+   },
+   {
+    "requirement": "Any person who may be required by a notice under section 8, 8A, or 12AA of the Taxes Management Act 1970 to make and deliver a return for a year of assessment or other period must preserve those records until the end of the relevant day.",
+    "quote": "preserve those records until the end of the relevant day"
+   },
+   {
+    "requirement": "Where a return is required by a notice given on or before the day specified in subsection (2) and an officer of the Board makes enquiries into the return, the relevant day until which records must be preserved is whichever is the latest of the day specified in subsection (2) and the day on which those enquiries are completed by virtue of section 28A(1B) or 28B(1B) of the Taxes Management Act 1970.",
+    "quote": "made by an officer of the Board"
+   },
+   {
+    "requirement": "Where a return is required by a notice given on or before the day specified in subsection (2) and no enquiries into the return are made by an officer of the Board, the relevant day until which records must be preserved is whichever is the latest of the day specified in subsection (2) and the day on which such an officer no longer has power to make enquiries.",
+    "quote": "the day on which such an officer no longer has power to make such enquiries"
+   },
+   {
+    "requirement": "In the case of a company or a person carrying on a trade, profession or business alone or in partnership, the preservation day referred to in subsection (1) is the fifth anniversary of the 31st January next following the year of assessment or the sixth anniversary of the end of the period, or such earlier day specified in writing by the Commissioners for Her Majesty's Revenue and Customs.",
+    "quote": "the fifth anniversary of the 31st January next following the year of assessment or (as the case may be) the sixth anniversary of the end of the period"
+   },
+   {
+    "requirement": "In cases other than a company or a person carrying on a trade, profession or business alone or in partnership, the preservation day referred to in subsection (1) is the first anniversary of the 31st January next following the year of assessment, or such earlier day specified in writing by the Commissioners for Her Majesty's Revenue and Customs.",
+    "quote": "the first anniversary of the 31st January next following the year of assessment"
+   },
+   {
+    "requirement": "The Commissioners for Her Majesty's Revenue and Customs may specify in writing different earlier preservation days for different cases.",
+    "quote": "different days may be specified for different cases"
+   },
+   {
+    "requirement": "Any person required to deliver a return by a notice mentioned in subsection (1) given after the end of the day mentioned in subsection (2), and who possesses at that time records requisite to deliver a correct and complete return, must preserve those records until the end of the day that would have been the relevant day under subsection (1) had the notice been given on or before the day mentioned in subsection (2).",
+    "quote": "given at any time after the end of the day mentioned in subsection (2) above"
+   },
+   {
+    "requirement": "In the case of a person carrying on a trade, profession or business alone or in partnership, the records required to be kept and preserved must include records of all amounts received and expended in the course of the trade, profession or business and the matters in respect of which those receipts and expenditures take place.",
+    "quote": "all amounts received and expended in the course of the trade, profession or business"
+   },
+   {
+    "requirement": "In the case of a person carrying on a trade involving dealing in goods alone or in partnership, the records required to be kept and preserved must include records of all sales and purchases of goods made in the course of the trade.",
+    "quote": "all sales and purchases of goods made in the course of the trade"
+   },
+   {
+    "requirement": "The Commissioners for Her Majesty's Revenue and Customs may by regulations provide that the records required to be kept and preserved under section 12B of the Taxes Management Act 1970 include, or do not include, records specified in the regulations.",
+    "quote": "include, or do not include, records specified in the regulations"
+   },
+   {
+    "requirement": "The Commissioners for Her Majesty's Revenue and Customs may by regulations provide that the records required to be kept and preserved under section 12B of the Taxes Management Act 1970 include supporting documents specified in the regulations.",
+    "quote": "provide that those records include supporting documents so specified"
+   },
+   {
+    "requirement": "The duty under subsection (1) or (2A) to preserve records may be discharged by preserving the records in any form and by any means.",
+    "quote": "by preserving them in any form and by any means"
+   },
+   {
+    "requirement": "The duty under subsection (1) or (2A) to preserve records may be discharged by preserving the information contained in the records in any form and by any means, subject to subsection (4A) and any conditions or further exceptions specified in writing by the Commissioners for Her Majesty's Revenue and Customs.",
+    "quote": "by preserving the information contained in them in any form and by any means"
+   },
+   {
+    "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any written statement mentioned in section 1100(1) of CTA 2010 or section 495(1) or 975(2) or (4) of ITA 2007 furnished by the company or person mentioned there, whether after a request or otherwise.",
+    "quote": "Subsection (4)(b) does not apply in the case of the following kinds of records"
+   },
+   {
+    "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any record required by regulations under section 70(1)(c) of the Finance Act 2004 to be given to a sub-contractor (within the meaning of section 58 of that Act) on making a payment to which section 61 of that Act applies.",
+    "quote": "required by regulations under section 70(1)(c) of the Finance Act 2004 to be given to a sub-contractor"
+   },
+   {
+    "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any record requisite for making a correct and complete claim or return relating to tax paid under the laws of a territory outside the United Kingdom.",
+    "quote": "paid under the laws of a territory outside the United Kingdom"
+   },
+   {
+    "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any record requisite for making a correct and complete claim or return relating to tax that would have been payable under the law of a territory outside the United Kingdom but for a development relief.",
+    "quote": "would have been payable under the law of a territory outside the United Kingdom (“territory F”) but for a development relief"
+   },
+   {
+    "requirement": "A development relief means a relief given under the law of an overseas territory with a view to promoting industrial, commercial, scientific, educational or other development outside the United Kingdom, and about which provision is made in double taxation relief arrangements having effect under section 2(1) of TIOPA 2010.",
+    "quote": "with a view to promoting industrial, commercial, scientific, educational or other development"
+   },
+   {
+    "requirement": "Subject to subsections (5A) and (5B), any person who fails to comply with subsection (1) or (2A) in relation to a year of assessment or accounting period is liable to a penalty not exceeding £3,000.",
+    "quote": "liable to a penalty not exceeding £3,000"
+   },
+   {
+    "requirement": "The penalty under subsection (5) does not apply where the records that a person fails to keep or preserve might have been requisite only for the purposes of claims, elections or notices not included in the return.",
+    "quote": "might have been requisite only for the purposes of claims, elections or notices which are not included in the return"
+   },
+   {
+    "requirement": "The penalty under subsection (5) does not apply where the unpreserved records fall within subsection (4A)(a) and an officer of the Board is satisfied that any facts reasonably required to be proved, and which would have been proved by the records, are proved by other documentary evidence furnished to the officer.",
+    "quote": "proved by other documentary evidence furnished to him"
+   },
+   {
+    "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make provision as to the form or manner in which specified or described relevant transfer pricing records are to be kept and preserved.",
+    "quote": "as to the form or manner in which those records are to be kept and preserved"
+   },
+   {
+    "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make provision in relation to specified or described relevant transfer pricing records by reference to things specified in the transfer pricing guidelines within the meaning of section 164 of TIOPA 2010.",
+    "quote": "by reference to things specified in the transfer pricing guidelines"
+   },
+   {
+    "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make different provision for different cases.",
+    "quote": "make different provision for different cases"
+   },
+   {
+    "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make provision by reference to things specified in a notice published by the Commissioners for Her Majesty's Revenue and Customs in accordance with the regulations and not withdrawn by a subsequent notice.",
+    "quote": "by reference to things specified in a notice published by the Commissioners for Her Majesty's Revenue and Customs"
+   },
+   {
+    "requirement": "For the purposes of section 12B of the Taxes Management Act 1970, a person engaged in the letting of property must be treated as carrying on a trade.",
+    "quote": "a person engaged in the letting of property shall be treated as carrying on a trade"
+   },
+   {
+    "requirement": "For the purposes of section 12B of the Taxes Management Act 1970, records are relevant transfer pricing records if the Commissioners for His Majesty's Revenue and Customs reasonably consider that the records may relate to the calculation of profits or losses in accordance with Part 4 of TIOPA 2010.",
+    "quote": "reasonably consider that the records may relate to the calculation of profits or losses in accordance with Part 4 of TIOPA 2010"
+   },
+   {
+    "requirement": "For the purposes of section 12B of the Taxes Management Act 1970, supporting documents includes accounts, books, deeds, contracts, vouchers and receipts.",
+    "quote": "“supporting documents” includes accounts, books, deeds, contracts, vouchers and receipts"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Preservation period for a person carrying on a trade, profession or business alone or in partnership or a company for a year of assessment",
+    "value": "fifth anniversary of the 31st January next following the year of assessment",
+    "quote": "the fifth anniversary of the 31st January next following the year of assessment"
+   },
+   {
+    "what": "Preservation period for a company for an accounting or other period",
+    "value": "sixth anniversary of the end of the period",
+    "quote": "the sixth anniversary of the end of the period"
+   },
+   {
+    "what": "Preservation period for a person not carrying on a trade, profession or business alone or in partnership or a company",
+    "value": "first anniversary of the 31st January next following the year of assessment",
+    "quote": "the first anniversary of the 31st January next following the year of assessment"
+   },
+   {
+    "what": "Maximum penalty for failing to comply with record-keeping or preservation duties under subsection (1) or (2A)",
+    "value": "£3,000",
+    "quote": "penalty not exceeding £3,000"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Any person who may be required by a notice under section 8, 8A, or 12AA of the Taxes Management Act 1970 to make and deliver a return for a year of assessment or other period must keep all records requisite for enabling that person to make and deliver a correct and complete return for that year or period.",
+   "quote": "keep all such records as may be requisite"
+  },
+  {
+   "requirement": "Any person who may be required by a notice under section 8, 8A, or 12AA of the Taxes Management Act 1970 to make and deliver a return for a year of assessment or other period must preserve those records until the end of the relevant day.",
+   "quote": "preserve those records until the end of the relevant day"
+  },
+  {
+   "requirement": "Where a return is required by a notice given on or before the day specified in subsection (2) and an officer of the Board makes enquiries into the return, the relevant day until which records must be preserved is whichever is the latest of the day specified in subsection (2) and the day on which those enquiries are completed by virtue of section 28A(1B) or 28B(1B) of the Taxes Management Act 1970.",
+   "quote": "made by an officer of the Board"
+  },
+  {
+   "requirement": "Where a return is required by a notice given on or before the day specified in subsection (2) and no enquiries into the return are made by an officer of the Board, the relevant day until which records must be preserved is whichever is the latest of the day specified in subsection (2) and the day on which such an officer no longer has power to make enquiries.",
+   "quote": "the day on which such an officer no longer has power to make such enquiries"
+  },
+  {
+   "requirement": "In the case of a company or a person carrying on a trade, profession or business alone or in partnership, the preservation day referred to in subsection (1) is the fifth anniversary of the 31st January next following the year of assessment or the sixth anniversary of the end of the period, or such earlier day specified in writing by the Commissioners for Her Majesty's Revenue and Customs.",
+   "quote": "the fifth anniversary of the 31st January next following the year of assessment or (as the case may be) the sixth anniversary of the end of the period"
+  },
+  {
+   "requirement": "In cases other than a company or a person carrying on a trade, profession or business alone or in partnership, the preservation day referred to in subsection (1) is the first anniversary of the 31st January next following the year of assessment, or such earlier day specified in writing by the Commissioners for Her Majesty's Revenue and Customs.",
+   "quote": "the first anniversary of the 31st January next following the year of assessment"
+  },
+  {
+   "requirement": "The Commissioners for Her Majesty's Revenue and Customs may specify in writing different earlier preservation days for different cases.",
+   "quote": "different days may be specified for different cases"
+  },
+  {
+   "requirement": "Any person required to deliver a return by a notice mentioned in subsection (1) given after the end of the day mentioned in subsection (2), and who possesses at that time records requisite to deliver a correct and complete return, must preserve those records until the end of the day that would have been the relevant day under subsection (1) had the notice been given on or before the day mentioned in subsection (2).",
+   "quote": "given at any time after the end of the day mentioned in subsection (2) above"
+  },
+  {
+   "requirement": "In the case of a person carrying on a trade, profession or business alone or in partnership, the records required to be kept and preserved must include records of all amounts received and expended in the course of the trade, profession or business and the matters in respect of which those receipts and expenditures take place.",
+   "quote": "all amounts received and expended in the course of the trade, profession or business"
+  },
+  {
+   "requirement": "In the case of a person carrying on a trade involving dealing in goods alone or in partnership, the records required to be kept and preserved must include records of all sales and purchases of goods made in the course of the trade.",
+   "quote": "all sales and purchases of goods made in the course of the trade"
+  },
+  {
+   "requirement": "The Commissioners for Her Majesty's Revenue and Customs may by regulations provide that the records required to be kept and preserved under section 12B of the Taxes Management Act 1970 include, or do not include, records specified in the regulations.",
+   "quote": "include, or do not include, records specified in the regulations"
+  },
+  {
+   "requirement": "The Commissioners for Her Majesty's Revenue and Customs may by regulations provide that the records required to be kept and preserved under section 12B of the Taxes Management Act 1970 include supporting documents specified in the regulations.",
+   "quote": "provide that those records include supporting documents so specified"
+  },
+  {
+   "requirement": "The duty under subsection (1) or (2A) to preserve records may be discharged by preserving the records in any form and by any means.",
+   "quote": "by preserving them in any form and by any means"
+  },
+  {
+   "requirement": "The duty under subsection (1) or (2A) to preserve records may be discharged by preserving the information contained in the records in any form and by any means, subject to subsection (4A) and any conditions or further exceptions specified in writing by the Commissioners for Her Majesty's Revenue and Customs.",
+   "quote": "by preserving the information contained in them in any form and by any means"
+  },
+  {
+   "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any written statement mentioned in section 1100(1) of CTA 2010 or section 495(1) or 975(2) or (4) of ITA 2007 furnished by the company or person mentioned there, whether after a request or otherwise.",
+   "quote": "Subsection (4)(b) does not apply in the case of the following kinds of records"
+  },
+  {
+   "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any record required by regulations under section 70(1)(c) of the Finance Act 2004 to be given to a sub-contractor (within the meaning of section 58 of that Act) on making a payment to which section 61 of that Act applies.",
+   "quote": "required by regulations under section 70(1)(c) of the Finance Act 2004 to be given to a sub-contractor"
+  },
+  {
+   "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any record requisite for making a correct and complete claim or return relating to tax paid under the laws of a territory outside the United Kingdom.",
+   "quote": "paid under the laws of a territory outside the United Kingdom"
+  },
+  {
+   "requirement": "The option to discharge record-preservation duties by preserving only the information contained in the records does not apply to any record requisite for making a correct and complete claim or return relating to tax that would have been payable under the law of a territory outside the United Kingdom but for a development relief.",
+   "quote": "would have been payable under the law of a territory outside the United Kingdom (“territory F”) but for a development relief"
+  },
+  {
+   "requirement": "A development relief means a relief given under the law of an overseas territory with a view to promoting industrial, commercial, scientific, educational or other development outside the United Kingdom, and about which provision is made in double taxation relief arrangements having effect under section 2(1) of TIOPA 2010.",
+   "quote": "with a view to promoting industrial, commercial, scientific, educational or other development"
+  },
+  {
+   "requirement": "Subject to subsections (5A) and (5B), any person who fails to comply with subsection (1) or (2A) in relation to a year of assessment or accounting period is liable to a penalty not exceeding £3,000.",
+   "quote": "liable to a penalty not exceeding £3,000"
+  },
+  {
+   "requirement": "The penalty under subsection (5) does not apply where the records that a person fails to keep or preserve might have been requisite only for the purposes of claims, elections or notices not included in the return.",
+   "quote": "might have been requisite only for the purposes of claims, elections or notices which are not included in the return"
+  },
+  {
+   "requirement": "The penalty under subsection (5) does not apply where the unpreserved records fall within subsection (4A)(a) and an officer of the Board is satisfied that any facts reasonably required to be proved, and which would have been proved by the records, are proved by other documentary evidence furnished to the officer.",
+   "quote": "proved by other documentary evidence furnished to him"
+  },
+  {
+   "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make provision as to the form or manner in which specified or described relevant transfer pricing records are to be kept and preserved.",
+   "quote": "as to the form or manner in which those records are to be kept and preserved"
+  },
+  {
+   "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make provision in relation to specified or described relevant transfer pricing records by reference to things specified in the transfer pricing guidelines within the meaning of section 164 of TIOPA 2010.",
+   "quote": "by reference to things specified in the transfer pricing guidelines"
+  },
+  {
+   "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make different provision for different cases.",
+   "quote": "make different provision for different cases"
+  },
+  {
+   "requirement": "Regulations under section 12B of the Taxes Management Act 1970 may make provision by reference to things specified in a notice published by the Commissioners for Her Majesty's Revenue and Customs in accordance with the regulations and not withdrawn by a subsequent notice.",
+   "quote": "by reference to things specified in a notice published by the Commissioners for Her Majesty's Revenue and Customs"
+  },
+  {
+   "requirement": "For the purposes of section 12B of the Taxes Management Act 1970, a person engaged in the letting of property must be treated as carrying on a trade.",
+   "quote": "a person engaged in the letting of property shall be treated as carrying on a trade"
+  },
+  {
+   "requirement": "For the purposes of section 12B of the Taxes Management Act 1970, records are relevant transfer pricing records if the Commissioners for His Majesty's Revenue and Customs reasonably consider that the records may relate to the calculation of profits or losses in accordance with Part 4 of TIOPA 2010.",
+   "quote": "reasonably consider that the records may relate to the calculation of profits or losses in accordance with Part 4 of TIOPA 2010"
+  },
+  {
+   "requirement": "For the purposes of section 12B of the Taxes Management Act 1970, supporting documents includes accounts, books, deeds, contracts, vouchers and receipts.",
+   "quote": "“supporting documents” includes accounts, books, deeds, contracts, vouchers and receipts"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Maximum penalty for failing to comply with record-keeping or preservation duties under subsection (1) or (2A)",
+   "value": "£3,000",
+   "quote": "penalty not exceeding £3,000"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 29,
+  "elements_verified": 29,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 1
+ }
+}

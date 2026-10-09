@@ -1,0 +1,183 @@
+{
+ "key": "uk/ukpga/1989/41/s2@current",
+ "section": "uk/ukpga/1989/41/s2",
+ "version": "current",
+ "source_sha256": "cd7c9a6be385b933a70b78f981e1e7465e695c41870052f7bf773fb39a57dc49",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a child's father and mother were married to, or civil partners of, each other at the time of the child's birth, each of them has parental responsibility for the child.",
+    "quote": "were married to , or civil partners of, each other at the time of his birth, they shall each have parental responsibility for the child"
+   },
+   {
+    "requirement": "Where a child has a parent by virtue of section 42 of the Human Fertilisation and Embryology Act 2008, the child's mother and the other parent each have parental responsibility for the child.",
+    "quote": "has a parent by virtue of section 42 of the Human Fertilisation and Embryology Act 2008; or"
+   },
+   {
+    "requirement": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the child's mother and the other parent each have parental responsibility for the child.",
+    "quote": "has a parent by virtue of section 43 of that Act and is a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the child's mother and the other parent shall each have parental responsibility for the child"
+   },
+   {
+    "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the mother has parental responsibility for the child.",
+    "quote": "Where a child’s father and mother were not married to , or civil partners of, each other at the time of his birth— (a) the mother shall have parental responsibility for the child"
+   },
+   {
+    "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father has parental responsibility for the child if he has acquired it (and has not ceased to have it) in accordance with the provisions of the Children Act 1989.",
+    "quote": "the father shall have parental responsibility for the child if he has acquired it (and has not ceased to have it) in accordance with the provisions of this Act"
+   },
+   {
+    "requirement": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is not a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the mother has parental responsibility for the child.",
+    "quote": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is not a person to whom section 1(3) of the Family Law Reform Act 1987 applies— (a) the mother shall have parental responsibility for the child"
+   },
+   {
+    "requirement": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is not a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the other parent has parental responsibility for the child if she has acquired it (and has not ceased to have it) in accordance with the provisions of the Children Act 1989.",
+    "quote": "the other parent shall have parental responsibility for the child if she has acquired it (and has not ceased to have it) in accordance with the provisions of this Act"
+   },
+   {
+    "requirement": "Statutory references in the Children Act 1989 to a child whose father and mother were, or were not, married to or civil partners of each other at the time of the child's birth must be read in conjunction with section 1 of the Family Law Reform Act 1987.",
+    "quote": "must be read with section 1 of the Family Law Reform Act 1987 (which extends their meaning)"
+   },
+   {
+    "requirement": "The common law rule of law that a father is the natural guardian of his legitimate child is abolished.",
+    "quote": "The rule of law that a father is the natural guardian of his legitimate child is abolished."
+   },
+   {
+    "requirement": "More than one person may hold parental responsibility for the same child concurrently.",
+    "quote": "More than one person may have parental responsibility for the same child at the same time."
+   },
+   {
+    "requirement": "A person holding parental responsibility for a child does not lose that responsibility merely because another person subsequently acquires parental responsibility for that child.",
+    "quote": "shall not cease to have that responsibility solely because some other person subsequently acquires parental responsibility for the child"
+   },
+   {
+    "requirement": "Where more than one person holds parental responsibility for a child, each holder may act independently without the consent or involvement of the other or others to meet that responsibility.",
+    "quote": "each of them may act alone and without the other (or others) in meeting that responsibility"
+   },
+   {
+    "requirement": "The ability of a person with parental responsibility to act alone does not affect the operation of any statutory enactment that requires the consent of more than one person in a matter affecting the child.",
+    "quote": "nothing in this Part shall be taken to affect the operation of any enactment which requires the consent of more than one person in a matter affecting the child"
+   },
+   {
+    "requirement": "Holding parental responsibility for a child does not entitle a person to act in any manner that is incompatible with any court order made with respect to the child under the Children Act 1989.",
+    "quote": "shall not entitle him to act in any way which would be incompatible with any order made with respect to the child under this Act"
+   },
+   {
+    "requirement": "A person who has parental responsibility for a child is prohibited from surrendering or transferring any part of that responsibility to another person.",
+    "quote": "may not surrender or transfer any part of that responsibility to another"
+   },
+   {
+    "requirement": "A person who has parental responsibility for a child may arrange for some or all of that responsibility to be met by one or more persons acting on their behalf.",
+    "quote": "may arrange for some or all of it to be met by one or more persons acting on his behalf"
+   },
+   {
+    "requirement": "An arrangement to meet parental responsibility on behalf of another may be made with a person who already holds parental responsibility for the child concerned.",
+    "quote": "The person with whom any such arrangement is made may himself be a person who already has parental responsibility for the child concerned."
+   },
+   {
+    "requirement": "Entering into an arrangement for another person to meet parental responsibility does not relieve the person making the arrangement from any liability arising from a failure to meet any part of their parental responsibility.",
+    "quote": "The making of any such arrangement shall not affect any liability of the person making it which may arise from any failure to meet any part of his parental responsibility for the child concerned."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of persons who may simultaneously hold parental responsibility for the same child",
+    "value": "More than one",
+    "quote": "More than one person may have parental responsibility for the same child at the same time."
+   },
+   {
+    "what": "Number of persons whose consent may be required by an enactment in a matter affecting the child",
+    "value": "more than one",
+    "quote": "requires the consent of more than one person in a matter affecting the child"
+   },
+   {
+    "what": "Number of persons who may be arranged to act on behalf of a person holding parental responsibility",
+    "value": "one or more",
+    "quote": "one or more persons acting on his behalf"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a child's father and mother were married to, or civil partners of, each other at the time of the child's birth, each of them has parental responsibility for the child.",
+   "quote": "were married to , or civil partners of, each other at the time of his birth, they shall each have parental responsibility for the child"
+  },
+  {
+   "requirement": "Where a child has a parent by virtue of section 42 of the Human Fertilisation and Embryology Act 2008, the child's mother and the other parent each have parental responsibility for the child.",
+   "quote": "has a parent by virtue of section 42 of the Human Fertilisation and Embryology Act 2008; or"
+  },
+  {
+   "requirement": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the child's mother and the other parent each have parental responsibility for the child.",
+   "quote": "has a parent by virtue of section 43 of that Act and is a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the child's mother and the other parent shall each have parental responsibility for the child"
+  },
+  {
+   "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the mother has parental responsibility for the child.",
+   "quote": "Where a child’s father and mother were not married to , or civil partners of, each other at the time of his birth— (a) the mother shall have parental responsibility for the child"
+  },
+  {
+   "requirement": "Where a child's father and mother were not married to, or civil partners of, each other at the time of the child's birth, the father has parental responsibility for the child if he has acquired it (and has not ceased to have it) in accordance with the provisions of the Children Act 1989.",
+   "quote": "the father shall have parental responsibility for the child if he has acquired it (and has not ceased to have it) in accordance with the provisions of this Act"
+  },
+  {
+   "requirement": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is not a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the mother has parental responsibility for the child.",
+   "quote": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is not a person to whom section 1(3) of the Family Law Reform Act 1987 applies— (a) the mother shall have parental responsibility for the child"
+  },
+  {
+   "requirement": "Where a child has a parent by virtue of section 43 of the Human Fertilisation and Embryology Act 2008 and is not a person to whom section 1(3) of the Family Law Reform Act 1987 applies, the other parent has parental responsibility for the child if she has acquired it (and has not ceased to have it) in accordance with the provisions of the Children Act 1989.",
+   "quote": "the other parent shall have parental responsibility for the child if she has acquired it (and has not ceased to have it) in accordance with the provisions of this Act"
+  },
+  {
+   "requirement": "Statutory references in the Children Act 1989 to a child whose father and mother were, or were not, married to or civil partners of each other at the time of the child's birth must be read in conjunction with section 1 of the Family Law Reform Act 1987.",
+   "quote": "must be read with section 1 of the Family Law Reform Act 1987 (which extends their meaning)"
+  },
+  {
+   "requirement": "The common law rule of law that a father is the natural guardian of his legitimate child is abolished.",
+   "quote": "The rule of law that a father is the natural guardian of his legitimate child is abolished."
+  },
+  {
+   "requirement": "More than one person may hold parental responsibility for the same child concurrently.",
+   "quote": "More than one person may have parental responsibility for the same child at the same time."
+  },
+  {
+   "requirement": "A person holding parental responsibility for a child does not lose that responsibility merely because another person subsequently acquires parental responsibility for that child.",
+   "quote": "shall not cease to have that responsibility solely because some other person subsequently acquires parental responsibility for the child"
+  },
+  {
+   "requirement": "Where more than one person holds parental responsibility for a child, each holder may act independently without the consent or involvement of the other or others to meet that responsibility.",
+   "quote": "each of them may act alone and without the other (or others) in meeting that responsibility"
+  },
+  {
+   "requirement": "The ability of a person with parental responsibility to act alone does not affect the operation of any statutory enactment that requires the consent of more than one person in a matter affecting the child.",
+   "quote": "nothing in this Part shall be taken to affect the operation of any enactment which requires the consent of more than one person in a matter affecting the child"
+  },
+  {
+   "requirement": "Holding parental responsibility for a child does not entitle a person to act in any manner that is incompatible with any court order made with respect to the child under the Children Act 1989.",
+   "quote": "shall not entitle him to act in any way which would be incompatible with any order made with respect to the child under this Act"
+  },
+  {
+   "requirement": "A person who has parental responsibility for a child is prohibited from surrendering or transferring any part of that responsibility to another person.",
+   "quote": "may not surrender or transfer any part of that responsibility to another"
+  },
+  {
+   "requirement": "A person who has parental responsibility for a child may arrange for some or all of that responsibility to be met by one or more persons acting on their behalf.",
+   "quote": "may arrange for some or all of it to be met by one or more persons acting on his behalf"
+  },
+  {
+   "requirement": "An arrangement to meet parental responsibility on behalf of another may be made with a person who already holds parental responsibility for the child concerned.",
+   "quote": "The person with whom any such arrangement is made may himself be a person who already has parental responsibility for the child concerned."
+  },
+  {
+   "requirement": "Entering into an arrangement for another person to meet parental responsibility does not relieve the person making the arrangement from any liability arising from a failure to meet any part of their parental responsibility.",
+   "quote": "The making of any such arrangement shall not affect any liability of the person making it which may arise from any failure to meet any part of his parental responsibility for the child concerned."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 18,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

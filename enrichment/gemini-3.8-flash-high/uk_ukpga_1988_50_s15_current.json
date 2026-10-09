@@ -1,0 +1,73 @@
+{
+ "key": "uk/ukpga/1988/50/s15@current",
+ "section": "uk/ukpga/1988/50/s15",
+ "version": "current",
+ "source_sha256": "4b3ef9ef559a36e434bb856676cf8d9018fbc578a33a5e76f3f407502cb9391e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to statutory exceptions, it is an implied term of every assured periodic tenancy that the tenant must not assign the tenancy in whole or in part without the consent of the landlord.",
+    "quote": "it shall be an implied term of every assured tenancy which is a periodic tenancy that, except with the consent of the landlord, the tenant shall not— (a) assign the tenancy (in whole or in part)"
+   },
+   {
+    "requirement": "Subject to statutory exceptions, it is an implied term of every assured periodic tenancy that the tenant must not sub-let or part with possession of the whole or any part of the dwelling-house let on the tenancy without the consent of the landlord.",
+    "quote": "it shall be an implied term of every assured tenancy which is a periodic tenancy that, except with the consent of the landlord, the tenant shall not— ... (b) sub-let or part with possession of the whole or any part of the dwelling-house let on the tenancy"
+   },
+   {
+    "requirement": "Section 19 of the Landlord and Tenant Act 1927 does not apply to any term implied into an assured tenancy under subsection (1).",
+    "quote": "Section 19 of the Landlord and Tenant Act 1927 (consents to assign not to be unreasonably withheld etc.) shall not apply to a term which is implied into an assured tenancy by subsection (1) above"
+   },
+   {
+    "requirement": "The statutory implied term against assigning, sub-letting, or parting with possession does not apply to a periodic tenancy that is not a statutory periodic tenancy or an assured periodic tenancy arising under Schedule 10 to the Local Government and Housing Act 1989 if there is an existing provision (contained in the tenancy or not) prohibiting or permitting the tenant (absolutely or conditionally) to assign, sub-let, or part with possession.",
+    "quote": "In the case of a periodic tenancy which is not a statutory periodic tenancy or an assured periodic tenancy arising under Schedule 10 to the Local Government and Housing Act 1989 subsection (1) above does not apply if— (a) there is a provision (whether contained in the tenancy or not) under which the tenant is prohibited (whether absolutely or conditionally) from assigning or sub-letting or parting with possession or is permitted (whether absolutely or conditionally) to assign, sub-let or part with possession"
+   },
+   {
+    "requirement": "The statutory implied term against assigning, sub-letting, or parting with possession does not apply to a periodic tenancy that is not a statutory periodic tenancy or an assured periodic tenancy arising under Schedule 10 to the Local Government and Housing Act 1989 if a premium must be paid on the grant or renewal of the tenancy.",
+    "quote": "In the case of a periodic tenancy which is not a statutory periodic tenancy or an assured periodic tenancy arising under Schedule 10 to the Local Government and Housing Act 1989 subsection (1) above does not apply if— ... (b) a premium is required to be paid on the grant or renewal of the tenancy"
+   },
+   {
+    "requirement": "For the purpose of periodic tenancies where a premium is required, a premium includes any fine or like sum and any other pecuniary consideration payable in addition to rent.",
+    "quote": "“premium” includes— (a) any fine or other like sum; (b) any other pecuniary consideration in addition to rent"
+   },
+   {
+    "requirement": "For the purpose of periodic tenancies where a premium is required, a premium includes any deposit paid, unless the deposit does not exceed one-sixth of the annual rent payable under the tenancy immediately following the relevant grant or renewal.",
+    "quote": "“premium” includes— ... (c) any sum paid by way of deposit, other than one which does not exceed one-sixth of the annual rent payable under the tenancy immediately after the grant or renewal in question"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum proportion of annual rent payable immediately after grant or renewal that a deposit may constitute without being classed as a premium",
+    "value": "one-sixth",
+    "quote": "one-sixth of the annual rent payable under the tenancy immediately after the grant or renewal in question"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to statutory exceptions, it is an implied term of every assured periodic tenancy that the tenant must not assign the tenancy in whole or in part without the consent of the landlord.",
+   "quote": "it shall be an implied term of every assured tenancy which is a periodic tenancy that, except with the consent of the landlord, the tenant shall not— (a) assign the tenancy (in whole or in part)"
+  },
+  {
+   "requirement": "Section 19 of the Landlord and Tenant Act 1927 does not apply to any term implied into an assured tenancy under subsection (1).",
+   "quote": "Section 19 of the Landlord and Tenant Act 1927 (consents to assign not to be unreasonably withheld etc.) shall not apply to a term which is implied into an assured tenancy by subsection (1) above"
+  },
+  {
+   "requirement": "The statutory implied term against assigning, sub-letting, or parting with possession does not apply to a periodic tenancy that is not a statutory periodic tenancy or an assured periodic tenancy arising under Schedule 10 to the Local Government and Housing Act 1989 if there is an existing provision (contained in the tenancy or not) prohibiting or permitting the tenant (absolutely or conditionally) to assign, sub-let, or part with possession.",
+   "quote": "In the case of a periodic tenancy which is not a statutory periodic tenancy or an assured periodic tenancy arising under Schedule 10 to the Local Government and Housing Act 1989 subsection (1) above does not apply if— (a) there is a provision (whether contained in the tenancy or not) under which the tenant is prohibited (whether absolutely or conditionally) from assigning or sub-letting or parting with possession or is permitted (whether absolutely or conditionally) to assign, sub-let or part with possession"
+  },
+  {
+   "requirement": "For the purpose of periodic tenancies where a premium is required, a premium includes any fine or like sum and any other pecuniary consideration payable in addition to rent.",
+   "quote": "“premium” includes— (a) any fine or other like sum; (b) any other pecuniary consideration in addition to rent"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}
