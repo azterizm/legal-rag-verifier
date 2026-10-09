@@ -1,0 +1,189 @@
+{
+ "key": "uk/ukpga/2010/15/s60@current",
+ "section": "uk/ukpga/2010/15/s60",
+ "version": "current",
+ "source_sha256": "5233810d11921cc77e5d6058fbf25a86406c3ce2ee11dd87f8ac1cde003ab39d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person to whom an application for work is made must not ask about the applicant's health before offering work to the applicant.",
+    "quote": "must not ask about the health of the applicant (B)— (a) before offering work to B"
+   },
+   {
+    "requirement": "Where a person to whom an application for work is made is not in a position to offer work to an applicant, that person must not ask about the applicant's health before including the applicant in a pool of applicants from whom the person intends, when in a position to do so, to select an individual to offer work to.",
+    "quote": "where A is not in a position to offer work to B, before including B in a pool of applicants from whom A intends (when in a position to do so) to select a person to whom to offer work"
+   },
+   {
+    "requirement": "A contravention of section 60(1) of the Equality Act 2010, or a contravention of section 111 or 112 relating to it, is enforceable as an unlawful act under Part 1 of the Equality Act 2006 and is enforceable solely by the Commission under that Part by virtue of section 120(8).",
+    "quote": "enforceable as an unlawful act under Part 1 of the Equality Act 2006 (and, by virtue of section 120(8), is enforceable only by the Commission under that Part)"
+   },
+   {
+    "requirement": "A person to whom an application for work is made does not contravene a relevant disability provision merely by inquiring about an applicant's health.",
+    "quote": "A does not contravene a relevant disability provision merely by asking about B's health"
+   },
+   {
+    "requirement": "Conduct by a person to whom an application for work is made in reliance on information provided in response to a question about an applicant's health may constitute a contravention of a relevant disability provision.",
+    "quote": "A's conduct in reliance on information given in response may be a contravention of a relevant disability provision"
+   },
+   {
+    "requirement": "If an applicant brings employment tribunal proceedings complaining that conduct by a person to whom an application for work was made in reliance on health information contravened a relevant disability provision, the particulars of that complaint must be treated under section 136(2) as facts from which the tribunal could decide that the provision was contravened.",
+    "quote": "the particulars of the complaint are to be treated for the purposes of subsection (2) of that section as facts from which the tribunal could decide that A contravened the provision"
+   },
+   {
+    "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary to establish whether the applicant can comply with a requirement to undergo an assessment or whether a duty to make reasonable adjustments is or will be imposed on the person in connection with an assessment requirement.",
+    "quote": "establishing whether B will be able to comply with a requirement to undergo an assessment or establishing whether a duty to make reasonable adjustments is or will be imposed on A in relation to B in connection with a requirement to undergo an assessment"
+   },
+   {
+    "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary to establish whether the applicant will be able to carry out a function intrinsic to the work concerned.",
+    "quote": "establishing whether B will be able to carry out a function that is intrinsic to the work concerned"
+   },
+   {
+    "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary for monitoring diversity among applicants for work.",
+    "quote": "monitoring diversity in the range of persons applying to A for work"
+   },
+   {
+    "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary for taking action to which section 158 would apply if references to sharing or not sharing a protected characteristic were references to disabled or non-disabled persons and the characteristic were disability.",
+    "quote": "taking action to which section 158 would apply if references in that section to persons who share (or do not share) a protected characteristic were references to disabled persons (or persons who are not disabled) and the reference to the characteristic were a reference to disability"
+   },
+   {
+    "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary to establish whether the applicant has a particular disability, where the person applies a requirement to have that particular disability in relation to the work.",
+    "quote": "if A applies in relation to the work a requirement to have a particular disability, establishing whether B has that disability"
+   },
+   {
+    "requirement": "Where a person to whom an application for work is made reasonably believes that a duty to make reasonable adjustments would be imposed in relation to the applicant in connection with the work, the intrinsic function exception refers to a function that would be intrinsic to the work once that duty was complied with.",
+    "quote": "the reference to a function that is intrinsic to the work is to be read as a reference to a function that would be intrinsic to the work once A complied with the duty"
+   },
+   {
+    "requirement": "The exception for establishing whether an applicant has a particular disability applies only if the person to whom an application for work is made shows that, having regard to the nature or context of the work, the requirement is an occupational requirement and applying it is a proportionate means of achieving a legitimate aim.",
+    "quote": "Subsection (6)(e) applies only if A shows that, having regard to the nature or context of the work— (a) the requirement is an occupational requirement, and (b) the application of the requirement is a proportionate means of achieving a legitimate aim."
+   },
+   {
+    "requirement": "Work is defined as employment, contract work, a position as a partner, a position as a member of an LLP, a pupillage or tenancy, being taken as a devil, membership of a stable, an appointment to a personal or public office, or the provision of an employment service.",
+    "quote": "“Work” means employment, contract work, a position as a partner, a position as a member of an LLP, a pupillage or tenancy, being taken as a devil, membership of a stable, an appointment to a personal or public office, or the provision of an employment service"
+   },
+   {
+    "requirement": "In relation to contract work, references in section 60(1) of the Equality Act 2010 to offering a person work are to be read as references to allowing a person to do the work.",
+    "quote": "the references in subsection (1) to offering a person work are, in relation to contract work, to be read as references to allowing a person to do the work"
+   },
+   {
+    "requirement": "A reference to offering work means making a conditional or unconditional offer of work, and in relation to contract work means allowing a person to do the work subject to the fulfilment of one or more conditions.",
+    "quote": "A reference to offering work is a reference to making a conditional or unconditional offer of work (and, in relation to contract work, is a reference to allowing a person to do the work subject to fulfilment of one or more conditions)."
+   },
+   {
+    "requirement": "Relevant disability provisions, so far as relating to discrimination within section 13 because of disability, are section 39(1)(a) or (c), section 41(1)(b), section 44(1)(a) or (c), section 45(1)(a) or (c), section 47(1)(a) or (c), section 48(1)(a) or (c), section 49(3)(a) or (c), section 50(3)(a) or (c), section 51(1), section 55(1)(a) or (c), and section 60A(1).",
+    "quote": "The following, so far as relating to discrimination within section 13 because of disability, are relevant disability provisions— (a) section 39(1)(a) or (c); (b) section 41(1)(b); (c) section 44(1)(a) or (c); (d) section 45(1)(a) or (c); (e) section 47(1)(a) or (c); (f) section 48(1)(a) or (c); (g) section 49(3)(a) or (c); (h) section 50(3)(a) or (c); (i) section 51(1); (j) section 55(1)(a) or (c); (k) section 60A(1)."
+   },
+   {
+    "requirement": "An assessment is defined as an interview or other process designed to give an indication of an individual's suitability for the work concerned.",
+    "quote": "An assessment is an interview or other process designed to give an indication of a person's suitability for the work concerned."
+   },
+   {
+    "requirement": "Whether or not an individual has a disability must be regarded as an aspect of that individual's health for the purposes of section 60 of the Equality Act 2010.",
+    "quote": "whether or not a person has a disability is to be regarded as an aspect of that person's health"
+   },
+   {
+    "requirement": "Section 60 of the Equality Act 2010 does not apply to anything done for the purpose of vetting applicants for work for reasons of national security.",
+    "quote": "This section does not apply to anything done for the purpose of vetting applicants for work for reasons of national security."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of conditions subject to which a person may be allowed to do contract work for it to constitute an offer of work",
+    "value": "one",
+    "quote": "subject to fulfilment of one or more conditions"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person to whom an application for work is made must not ask about the applicant's health before offering work to the applicant.",
+   "quote": "must not ask about the health of the applicant (B)— (a) before offering work to B"
+  },
+  {
+   "requirement": "Where a person to whom an application for work is made is not in a position to offer work to an applicant, that person must not ask about the applicant's health before including the applicant in a pool of applicants from whom the person intends, when in a position to do so, to select an individual to offer work to.",
+   "quote": "where A is not in a position to offer work to B, before including B in a pool of applicants from whom A intends (when in a position to do so) to select a person to whom to offer work"
+  },
+  {
+   "requirement": "A contravention of section 60(1) of the Equality Act 2010, or a contravention of section 111 or 112 relating to it, is enforceable as an unlawful act under Part 1 of the Equality Act 2006 and is enforceable solely by the Commission under that Part by virtue of section 120(8).",
+   "quote": "enforceable as an unlawful act under Part 1 of the Equality Act 2006 (and, by virtue of section 120(8), is enforceable only by the Commission under that Part)"
+  },
+  {
+   "requirement": "A person to whom an application for work is made does not contravene a relevant disability provision merely by inquiring about an applicant's health.",
+   "quote": "A does not contravene a relevant disability provision merely by asking about B's health"
+  },
+  {
+   "requirement": "Conduct by a person to whom an application for work is made in reliance on information provided in response to a question about an applicant's health may constitute a contravention of a relevant disability provision.",
+   "quote": "A's conduct in reliance on information given in response may be a contravention of a relevant disability provision"
+  },
+  {
+   "requirement": "If an applicant brings employment tribunal proceedings complaining that conduct by a person to whom an application for work was made in reliance on health information contravened a relevant disability provision, the particulars of that complaint must be treated under section 136(2) as facts from which the tribunal could decide that the provision was contravened.",
+   "quote": "the particulars of the complaint are to be treated for the purposes of subsection (2) of that section as facts from which the tribunal could decide that A contravened the provision"
+  },
+  {
+   "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary to establish whether the applicant can comply with a requirement to undergo an assessment or whether a duty to make reasonable adjustments is or will be imposed on the person in connection with an assessment requirement.",
+   "quote": "establishing whether B will be able to comply with a requirement to undergo an assessment or establishing whether a duty to make reasonable adjustments is or will be imposed on A in relation to B in connection with a requirement to undergo an assessment"
+  },
+  {
+   "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary to establish whether the applicant will be able to carry out a function intrinsic to the work concerned.",
+   "quote": "establishing whether B will be able to carry out a function that is intrinsic to the work concerned"
+  },
+  {
+   "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary for monitoring diversity among applicants for work.",
+   "quote": "monitoring diversity in the range of persons applying to A for work"
+  },
+  {
+   "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary for taking action to which section 158 would apply if references to sharing or not sharing a protected characteristic were references to disabled or non-disabled persons and the characteristic were disability.",
+   "quote": "taking action to which section 158 would apply if references in that section to persons who share (or do not share) a protected characteristic were references to disabled persons (or persons who are not disabled) and the reference to the characteristic were a reference to disability"
+  },
+  {
+   "requirement": "Section 60 of the Equality Act 2010 does not apply to a question asked by a person to whom an application for work is made to the extent necessary to establish whether the applicant has a particular disability, where the person applies a requirement to have that particular disability in relation to the work.",
+   "quote": "if A applies in relation to the work a requirement to have a particular disability, establishing whether B has that disability"
+  },
+  {
+   "requirement": "Where a person to whom an application for work is made reasonably believes that a duty to make reasonable adjustments would be imposed in relation to the applicant in connection with the work, the intrinsic function exception refers to a function that would be intrinsic to the work once that duty was complied with.",
+   "quote": "the reference to a function that is intrinsic to the work is to be read as a reference to a function that would be intrinsic to the work once A complied with the duty"
+  },
+  {
+   "requirement": "The exception for establishing whether an applicant has a particular disability applies only if the person to whom an application for work is made shows that, having regard to the nature or context of the work, the requirement is an occupational requirement and applying it is a proportionate means of achieving a legitimate aim.",
+   "quote": "Subsection (6)(e) applies only if A shows that, having regard to the nature or context of the work— (a) the requirement is an occupational requirement, and (b) the application of the requirement is a proportionate means of achieving a legitimate aim."
+  },
+  {
+   "requirement": "Work is defined as employment, contract work, a position as a partner, a position as a member of an LLP, a pupillage or tenancy, being taken as a devil, membership of a stable, an appointment to a personal or public office, or the provision of an employment service.",
+   "quote": "“Work” means employment, contract work, a position as a partner, a position as a member of an LLP, a pupillage or tenancy, being taken as a devil, membership of a stable, an appointment to a personal or public office, or the provision of an employment service"
+  },
+  {
+   "requirement": "In relation to contract work, references in section 60(1) of the Equality Act 2010 to offering a person work are to be read as references to allowing a person to do the work.",
+   "quote": "the references in subsection (1) to offering a person work are, in relation to contract work, to be read as references to allowing a person to do the work"
+  },
+  {
+   "requirement": "A reference to offering work means making a conditional or unconditional offer of work, and in relation to contract work means allowing a person to do the work subject to the fulfilment of one or more conditions.",
+   "quote": "A reference to offering work is a reference to making a conditional or unconditional offer of work (and, in relation to contract work, is a reference to allowing a person to do the work subject to fulfilment of one or more conditions)."
+  },
+  {
+   "requirement": "Relevant disability provisions, so far as relating to discrimination within section 13 because of disability, are section 39(1)(a) or (c), section 41(1)(b), section 44(1)(a) or (c), section 45(1)(a) or (c), section 47(1)(a) or (c), section 48(1)(a) or (c), section 49(3)(a) or (c), section 50(3)(a) or (c), section 51(1), section 55(1)(a) or (c), and section 60A(1).",
+   "quote": "The following, so far as relating to discrimination within section 13 because of disability, are relevant disability provisions— (a) section 39(1)(a) or (c); (b) section 41(1)(b); (c) section 44(1)(a) or (c); (d) section 45(1)(a) or (c); (e) section 47(1)(a) or (c); (f) section 48(1)(a) or (c); (g) section 49(3)(a) or (c); (h) section 50(3)(a) or (c); (i) section 51(1); (j) section 55(1)(a) or (c); (k) section 60A(1)."
+  },
+  {
+   "requirement": "An assessment is defined as an interview or other process designed to give an indication of an individual's suitability for the work concerned.",
+   "quote": "An assessment is an interview or other process designed to give an indication of a person's suitability for the work concerned."
+  },
+  {
+   "requirement": "Whether or not an individual has a disability must be regarded as an aspect of that individual's health for the purposes of section 60 of the Equality Act 2010.",
+   "quote": "whether or not a person has a disability is to be regarded as an aspect of that person's health"
+  },
+  {
+   "requirement": "Section 60 of the Equality Act 2010 does not apply to anything done for the purpose of vetting applicants for work for reasons of national security.",
+   "quote": "This section does not apply to anything done for the purpose of vetting applicants for work for reasons of national security."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 20,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

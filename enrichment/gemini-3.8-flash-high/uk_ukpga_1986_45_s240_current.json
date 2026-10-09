@@ -1,0 +1,141 @@
+{
+ "key": "uk/ukpga/1986/45/s240@current",
+ "section": "uk/ukpga/1986/45/s240",
+ "version": "current",
+ "source_sha256": "99b69f272b4131776e7e3d70153eb27b17514081585485c0a103da708a3bc350",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to subsection (2), the time at which a company enters into a transaction at an undervalue or gives a preference is a relevant time if the transaction is entered into or the preference is given at any of the times specified in paragraphs (a) to (d) of subsection (1).",
+    "quote": "Subject to the next subsection, the time at which a company enters into a transaction at an undervalue or gives a preference is a relevant time"
+   },
+   {
+    "requirement": "A company enters into a transaction at an undervalue or gives a preference to a person connected with the company (otherwise than by reason only of being its employee) at a relevant time if it does so at a time in the period of 2 years ending with the onset of insolvency.",
+    "quote": "in the case of a transaction at an undervalue or of a preference which is given to a person who is connected with the company (otherwise than by reason only of being its employee), at a time in the period of 2 years ending with the onset of insolvency"
+   },
+   {
+    "requirement": "A company gives a preference that is not a transaction at an undervalue and is not given to a person connected with the company (otherwise than by reason only of being its employee) at a relevant time if it does so at a time in the period of 6 months ending with the onset of insolvency.",
+    "quote": "in the case of a preference which is not such a transaction and is not so given, at a time in the period of 6 months ending with the onset of insolvency"
+   },
+   {
+    "requirement": "A company enters into a transaction at an undervalue or gives a preference at a relevant time if it does so at a time between the making of an administration application in respect of the company and the making of an administration order on that application.",
+    "quote": "in either case, at a time between the making of an administration application in respect of the company and the making of an administration order on that application"
+   },
+   {
+    "requirement": "A company enters into a transaction at an undervalue or gives a preference at a relevant time if it does so at a time between the filing with the court of a copy of notice of intention to appoint an administrator under paragraph 14 or 22 of Schedule B1 and the making of an appointment under that paragraph.",
+    "quote": "in either case, at a time between the filing with the court of a copy of notice of intention to appoint an administrator under paragraph 14 or 22 of Schedule B1 and the making of an appointment under that paragraph"
+   },
+   {
+    "requirement": "A time mentioned in subsection (1)(a) or (b) at which a company enters into a transaction at an undervalue or gives a preference is not a relevant time for the purposes of section 238 or 239 unless the company is at that time unable to pay its debts within the meaning of section 123 in Chapter VI of Part IV, or becomes unable to pay its debts within the meaning of that section in consequence of the transaction or preference.",
+    "quote": "that time is not a relevant time for the purposes of section 238 or 239 unless the company— (a) is at that time unable to pay its debts within the meaning of section 123 in Chapter VI of Part IV, or (b) becomes unable to pay its debts within the meaning of that section in consequence of the transaction or preference"
+   },
+   {
+    "requirement": "The insolvency requirements of subsection (2) are presumed to be satisfied, unless the contrary is shown, in relation to any transaction at an undervalue which is entered into by a company with a person who is connected with the company.",
+    "quote": "the requirements of this subsection are presumed to be satisfied, unless the contrary is shown, in relation to any transaction at an undervalue which is entered into by a company with a person who is connected with the company"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the administration application is made in a case where section 238 or 239 applies by reason of an administrator of a company being appointed by administration order.",
+    "quote": "in a case where section 238 or 239 applies by reason of an administrator of a company being appointed by administration order, the date on which the administration application is made"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the copy of the notice is filed in a case where section 238 or 239 applies by reason of an administrator of a company being appointed under paragraph 14 or 22 of Schedule B1 following filing with the court of a copy of a notice of intention to appoint under that paragraph.",
+    "quote": "in a case where section 238 or 239 applies by reason of an administrator of a company being appointed under paragraph 14 or 22 of Schedule B1 following filing with the court of a copy of a notice of intention to appoint under that paragraph, the date on which the copy of the notice is filed"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the appointment takes effect in a case where section 238 or 239 applies by reason of an administrator of a company being appointed otherwise than as mentioned in paragraph (a) or (b) of subsection (3).",
+    "quote": "in a case where section 238 or 239 applies by reason of an administrator of a company being appointed otherwise than as mentioned in paragraph (a) or (b), the date on which the appointment takes effect"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the company entered administration (or, if relevant, the date on which the application for the administration order was made or a copy of the notice of intention to appoint was filed) in a case where section 238 or 239 applies by reason of a company going into liquidation at the time when the appointment of an administrator ceases to have effect.",
+    "quote": "in a case where section 238 or 239 applies by reason of a company going into liquidation ... at the time when the appointment of an administrator ceases to have effect, the date on which the company entered administration (or, if relevant, the date on which the application for the administration order was made or a copy of the notice of intention to appoint was filed)"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the onset of insolvency is the date of the commencement of the winding up in a case where section 238 or 239 applies by reason of a company going into liquidation at any other time.",
+    "quote": "in a case where section 238 or 239 applies by reason of a company going into liquidation at any other time, the date of the commencement of the winding up"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period ending with the onset of insolvency for a transaction at an undervalue or a preference given to a connected person to be at a relevant time",
+    "value": "2 years",
+    "quote": "period of 2 years ending with the onset of insolvency"
+   },
+   {
+    "what": "period ending with the onset of insolvency for an unconnected preference not being a transaction at an undervalue to be at a relevant time",
+    "value": "6 months",
+    "quote": "period of 6 months ending with the onset of insolvency"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to subsection (2), the time at which a company enters into a transaction at an undervalue or gives a preference is a relevant time if the transaction is entered into or the preference is given at any of the times specified in paragraphs (a) to (d) of subsection (1).",
+   "quote": "Subject to the next subsection, the time at which a company enters into a transaction at an undervalue or gives a preference is a relevant time"
+  },
+  {
+   "requirement": "A company enters into a transaction at an undervalue or gives a preference to a person connected with the company (otherwise than by reason only of being its employee) at a relevant time if it does so at a time in the period of 2 years ending with the onset of insolvency.",
+   "quote": "in the case of a transaction at an undervalue or of a preference which is given to a person who is connected with the company (otherwise than by reason only of being its employee), at a time in the period of 2 years ending with the onset of insolvency"
+  },
+  {
+   "requirement": "A company gives a preference that is not a transaction at an undervalue and is not given to a person connected with the company (otherwise than by reason only of being its employee) at a relevant time if it does so at a time in the period of 6 months ending with the onset of insolvency.",
+   "quote": "in the case of a preference which is not such a transaction and is not so given, at a time in the period of 6 months ending with the onset of insolvency"
+  },
+  {
+   "requirement": "A company enters into a transaction at an undervalue or gives a preference at a relevant time if it does so at a time between the making of an administration application in respect of the company and the making of an administration order on that application.",
+   "quote": "in either case, at a time between the making of an administration application in respect of the company and the making of an administration order on that application"
+  },
+  {
+   "requirement": "A company enters into a transaction at an undervalue or gives a preference at a relevant time if it does so at a time between the filing with the court of a copy of notice of intention to appoint an administrator under paragraph 14 or 22 of Schedule B1 and the making of an appointment under that paragraph.",
+   "quote": "in either case, at a time between the filing with the court of a copy of notice of intention to appoint an administrator under paragraph 14 or 22 of Schedule B1 and the making of an appointment under that paragraph"
+  },
+  {
+   "requirement": "A time mentioned in subsection (1)(a) or (b) at which a company enters into a transaction at an undervalue or gives a preference is not a relevant time for the purposes of section 238 or 239 unless the company is at that time unable to pay its debts within the meaning of section 123 in Chapter VI of Part IV, or becomes unable to pay its debts within the meaning of that section in consequence of the transaction or preference.",
+   "quote": "that time is not a relevant time for the purposes of section 238 or 239 unless the company— (a) is at that time unable to pay its debts within the meaning of section 123 in Chapter VI of Part IV, or (b) becomes unable to pay its debts within the meaning of that section in consequence of the transaction or preference"
+  },
+  {
+   "requirement": "The insolvency requirements of subsection (2) are presumed to be satisfied, unless the contrary is shown, in relation to any transaction at an undervalue which is entered into by a company with a person who is connected with the company.",
+   "quote": "the requirements of this subsection are presumed to be satisfied, unless the contrary is shown, in relation to any transaction at an undervalue which is entered into by a company with a person who is connected with the company"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the administration application is made in a case where section 238 or 239 applies by reason of an administrator of a company being appointed by administration order.",
+   "quote": "in a case where section 238 or 239 applies by reason of an administrator of a company being appointed by administration order, the date on which the administration application is made"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the copy of the notice is filed in a case where section 238 or 239 applies by reason of an administrator of a company being appointed under paragraph 14 or 22 of Schedule B1 following filing with the court of a copy of a notice of intention to appoint under that paragraph.",
+   "quote": "in a case where section 238 or 239 applies by reason of an administrator of a company being appointed under paragraph 14 or 22 of Schedule B1 following filing with the court of a copy of a notice of intention to appoint under that paragraph, the date on which the copy of the notice is filed"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the appointment takes effect in a case where section 238 or 239 applies by reason of an administrator of a company being appointed otherwise than as mentioned in paragraph (a) or (b) of subsection (3).",
+   "quote": "in a case where section 238 or 239 applies by reason of an administrator of a company being appointed otherwise than as mentioned in paragraph (a) or (b), the date on which the appointment takes effect"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the onset of insolvency is the date on which the company entered administration (or, if relevant, the date on which the application for the administration order was made or a copy of the notice of intention to appoint was filed) in a case where section 238 or 239 applies by reason of a company going into liquidation at the time when the appointment of an administrator ceases to have effect.",
+   "quote": "in a case where section 238 or 239 applies by reason of a company going into liquidation ... at the time when the appointment of an administrator ceases to have effect, the date on which the company entered administration (or, if relevant, the date on which the application for the administration order was made or a copy of the notice of intention to appoint was filed)"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the onset of insolvency is the date of the commencement of the winding up in a case where section 238 or 239 applies by reason of a company going into liquidation at any other time.",
+   "quote": "in a case where section 238 or 239 applies by reason of a company going into liquidation at any other time, the date of the commencement of the winding up"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period ending with the onset of insolvency for a transaction at an undervalue or a preference given to a connected person to be at a relevant time",
+   "value": "2 years",
+   "quote": "period of 2 years ending with the onset of insolvency"
+  },
+  {
+   "what": "period ending with the onset of insolvency for an unconnected preference not being a transaction at an undervalue to be at a relevant time",
+   "value": "6 months",
+   "quote": "period of 6 months ending with the onset of insolvency"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "key": "uk/ukpga/1997/40/s4@current",
+ "section": "uk/ukpga/1997/40/s4",
+ "version": "current",
+ "source_sha256": "158b6229559c092a95deb4cc71b58bda83978c15bb0177f59a74950e8606a2dd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if their course of conduct causes another person to fear, on at least two occasions, that violence will be used against them, and the accused knows or ought to know that the course of conduct will cause such fear on each of those occasions.",
+    "quote": "causes another to fear, on at least two occasions, that violence will be used against him is guilty of an offence if he knows or ought to know"
+   },
+   {
+    "requirement": "A person whose course of conduct is in question is deemed to ought to know that it will cause another to fear that violence will be used against them on any occasion if a reasonable person possessing the same information would think the conduct would cause that fear on that occasion.",
+    "quote": "ought to know that it will cause another to fear that violence will be used against him on any occasion if a reasonable person in possession of the same information would think the course of conduct would cause the other so to fear"
+   },
+   {
+    "requirement": "A person charged with the offence has a defence if they show that their course of conduct was pursued for the purpose of preventing or detecting crime.",
+    "quote": "his course of conduct was pursued for the purpose of preventing or detecting crime"
+   },
+   {
+    "requirement": "A person charged with the offence has a defence if they show that their course of conduct was pursued under any enactment or rule of law, or to comply with any condition or requirement imposed by any person under any enactment.",
+    "quote": "his course of conduct was pursued under any enactment or rule of law or to comply with any condition or requirement imposed by any person under any enactment"
+   },
+   {
+    "requirement": "A person charged with the offence has a defence if they show that the pursuit of their course of conduct was reasonable for the protection of themselves or another, or for the protection of their own or another's property.",
+    "quote": "the pursuit of his course of conduct was reasonable for the protection of himself or another or for the protection of his or another’s property"
+   },
+   {
+    "requirement": "A person guilty of the offence is liable on conviction on indictment to imprisonment for a term not exceeding ten years, or a fine, or both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding ten years, or a fine, or both"
+   },
+   {
+    "requirement": "A person guilty of the offence is liable on summary conviction to imprisonment for a term not exceeding six months, or a fine not exceeding the statutory maximum, or both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding six months, or a fine not exceeding the statutory maximum, or both"
+   },
+   {
+    "requirement": "If a jury finds a person charged with this offence on indictment not guilty of the charged offence, the jury may find that person guilty of an offence under section 2 or 2A.",
+    "quote": "the jury find him not guilty of the offence charged, they may find him guilty of an offence under section 2 or 2A"
+   },
+   {
+    "requirement": "The Crown Court possesses the same powers and duties regarding a person convicted before it of an offence under section 2 or 2A following an alternative verdict as a magistrates' court would have upon convicting that person of the offence.",
+    "quote": "The Crown Court has the same powers and duties in relation to a person who is by virtue of subsection (5) convicted before it of an offence under section 2 or 2A as a magistrates’ court would have"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of occasions on which the course of conduct must cause another to fear that violence will be used against them",
+    "value": "at least two",
+    "quote": "on at least two occasions"
+   },
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "ten years",
+    "quote": "imprisonment for a term not exceeding ten years"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction",
+    "value": "six months",
+    "quote": "imprisonment for a term not exceeding six months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if their course of conduct causes another person to fear, on at least two occasions, that violence will be used against them, and the accused knows or ought to know that the course of conduct will cause such fear on each of those occasions.",
+   "quote": "causes another to fear, on at least two occasions, that violence will be used against him is guilty of an offence if he knows or ought to know"
+  },
+  {
+   "requirement": "A person whose course of conduct is in question is deemed to ought to know that it will cause another to fear that violence will be used against them on any occasion if a reasonable person possessing the same information would think the conduct would cause that fear on that occasion.",
+   "quote": "ought to know that it will cause another to fear that violence will be used against him on any occasion if a reasonable person in possession of the same information would think the course of conduct would cause the other so to fear"
+  },
+  {
+   "requirement": "A person charged with the offence has a defence if they show that their course of conduct was pursued for the purpose of preventing or detecting crime.",
+   "quote": "his course of conduct was pursued for the purpose of preventing or detecting crime"
+  },
+  {
+   "requirement": "A person charged with the offence has a defence if they show that their course of conduct was pursued under any enactment or rule of law, or to comply with any condition or requirement imposed by any person under any enactment.",
+   "quote": "his course of conduct was pursued under any enactment or rule of law or to comply with any condition or requirement imposed by any person under any enactment"
+  },
+  {
+   "requirement": "A person charged with the offence has a defence if they show that the pursuit of their course of conduct was reasonable for the protection of themselves or another, or for the protection of their own or another's property.",
+   "quote": "the pursuit of his course of conduct was reasonable for the protection of himself or another or for the protection of his or another’s property"
+  },
+  {
+   "requirement": "A person guilty of the offence is liable on conviction on indictment to imprisonment for a term not exceeding ten years, or a fine, or both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding ten years, or a fine, or both"
+  },
+  {
+   "requirement": "A person guilty of the offence is liable on summary conviction to imprisonment for a term not exceeding six months, or a fine not exceeding the statutory maximum, or both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding six months, or a fine not exceeding the statutory maximum, or both"
+  },
+  {
+   "requirement": "If a jury finds a person charged with this offence on indictment not guilty of the charged offence, the jury may find that person guilty of an offence under section 2 or 2A.",
+   "quote": "the jury find him not guilty of the offence charged, they may find him guilty of an offence under section 2 or 2A"
+  },
+  {
+   "requirement": "The Crown Court possesses the same powers and duties regarding a person convicted before it of an offence under section 2 or 2A following an alternative verdict as a magistrates' court would have upon convicting that person of the offence.",
+   "quote": "The Crown Court has the same powers and duties in relation to a person who is by virtue of subsection (5) convicted before it of an offence under section 2 or 2A as a magistrates’ court would have"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "ten years",
+   "quote": "imprisonment for a term not exceeding ten years"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction",
+   "value": "six months",
+   "quote": "imprisonment for a term not exceeding six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/2006/46/s157@current",
+ "section": "uk/ukpga/2006/46/s157",
+ "version": "current",
+ "source_sha256": "ca79fe342744bd22b85f22afeb31f4b1579dbe5c3195feb03850f53fd32e8a5a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person may not be appointed as a director of a company unless that person has attained the age of 16 years.",
+    "quote": "A person may not be appointed a director of a company unless he has attained the age of 16 years"
+   },
+   {
+    "requirement": "The minimum age requirement does not affect the validity of an appointment of a director that is not scheduled to take effect until the appointed person attains the age of 16 years.",
+    "quote": "does not affect the validity of an appointment that is not to take effect until the person appointed attains that age"
+   },
+   {
+    "requirement": "Where the office of director of a company is held by a corporation sole or otherwise by virtue of another office, appointing a person who has not attained the age of 16 years to that other office does not effectively make that person a director of the company until that person attains the age of 16 years.",
+    "quote": "appointment to that other office of a person who has not attained the age of 16 years is not effective also to make him a director of the company until he attains the age of 16 years"
+   },
+   {
+    "requirement": "Any appointment of a director made in contravention of section 157 is void.",
+    "quote": "An appointment made in contravention of this section is void"
+   },
+   {
+    "requirement": "Nothing in section 157 affects any liability of a person under any provision of the Companies Acts if that person purports to act as a director or acts as a shadow director, even though that person could not validly be appointed as a director by virtue of section 157.",
+    "quote": "Nothing in this section affects any liability of a person under any provision of the Companies Acts if he— (a) purports to act as director, or (b) acts as a shadow director, although he could not, by virtue of this section, be validly appointed as a director"
+   },
+   {
+    "requirement": "Section 157 has effect subject to section 158 concerning the power to provide for exceptions from the minimum age requirement.",
+    "quote": "This section has effect subject to section 158 (power to provide for exceptions from minimum age requirement)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum age for a person to be appointed a director of a company",
+    "value": "16 years",
+    "quote": "attained the age of 16 years"
+   },
+   {
+    "what": "age a person must attain before an appointment to another office effectively makes that person a director of a company when directorship is held by a corporation sole or by virtue of that other office",
+    "value": "16 years",
+    "quote": "until he attains the age of 16 years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person may not be appointed as a director of a company unless that person has attained the age of 16 years.",
+   "quote": "A person may not be appointed a director of a company unless he has attained the age of 16 years"
+  },
+  {
+   "requirement": "The minimum age requirement does not affect the validity of an appointment of a director that is not scheduled to take effect until the appointed person attains the age of 16 years.",
+   "quote": "does not affect the validity of an appointment that is not to take effect until the person appointed attains that age"
+  },
+  {
+   "requirement": "Where the office of director of a company is held by a corporation sole or otherwise by virtue of another office, appointing a person who has not attained the age of 16 years to that other office does not effectively make that person a director of the company until that person attains the age of 16 years.",
+   "quote": "appointment to that other office of a person who has not attained the age of 16 years is not effective also to make him a director of the company until he attains the age of 16 years"
+  },
+  {
+   "requirement": "Any appointment of a director made in contravention of section 157 is void.",
+   "quote": "An appointment made in contravention of this section is void"
+  },
+  {
+   "requirement": "Nothing in section 157 affects any liability of a person under any provision of the Companies Acts if that person purports to act as a director or acts as a shadow director, even though that person could not validly be appointed as a director by virtue of section 157.",
+   "quote": "Nothing in this section affects any liability of a person under any provision of the Companies Acts if he— (a) purports to act as director, or (b) acts as a shadow director, although he could not, by virtue of this section, be validly appointed as a director"
+  },
+  {
+   "requirement": "Section 157 has effect subject to section 158 concerning the power to provide for exceptions from the minimum age requirement.",
+   "quote": "This section has effect subject to section 158 (power to provide for exceptions from minimum age requirement)"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum age for a person to be appointed a director of a company",
+   "value": "16 years",
+   "quote": "attained the age of 16 years"
+  },
+  {
+   "what": "age a person must attain before an appointment to another office effectively makes that person a director of a company when directorship is held by a corporation sole or by virtue of that other office",
+   "value": "16 years",
+   "quote": "until he attains the age of 16 years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

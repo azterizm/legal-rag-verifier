@@ -1,0 +1,163 @@
+{
+ "key": "uk/ukpga/2015/15/s28@current",
+ "section": "uk/ukpga/2015/15/s28",
+ "version": "current",
+ "source_sha256": "3402c2714c557a010f4ff6a0af64fe639f5d506b69c4980635f453ae91cf0b55",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 28 applies to any sales contract.",
+    "quote": "This section applies to any sales contract."
+   },
+   {
+    "requirement": "Unless the trader and the consumer have agreed otherwise, a sales contract is treated as including a term requiring the trader to deliver the goods to the consumer.",
+    "quote": "Unless the trader and the consumer have agreed otherwise, the contract is to be treated as including a term that the trader must deliver the goods to the consumer."
+   },
+   {
+    "requirement": "Unless there is an agreed time or period, a sales contract is treated as including a term requiring the trader to deliver the goods without undue delay and not more than 30 days after the day the contract is entered into.",
+    "quote": "Unless there is an agreed time or period, the contract is to be treated as including a term that the trader must deliver the goods— (a) without undue delay, and (b) in any event, not more than 30 days after the day on which the contract is entered into."
+   },
+   {
+    "requirement": "For the purposes of section 28, an agreed time or period means a time or period agreed by the trader and the consumer for the delivery of the goods.",
+    "quote": "an “agreed” time or period means a time or period agreed by the trader and the consumer for delivery of the goods"
+   },
+   {
+    "requirement": "For the purposes of section 28, if an obligation exists to deliver the goods when the contract is entered into, that time counts as the agreed time.",
+    "quote": "if there is an obligation to deliver the goods at the time the contract is entered into, that time counts as the “agreed” time."
+   },
+   {
+    "requirement": "The statutory delivery failure remedies apply if the trader does not deliver the goods without undue delay and within 30 days or at the agreed time or within the agreed period.",
+    "quote": "Subsections (6) and (7) apply if the trader does not deliver the goods in accordance with subsection (3) or at the agreed time or within the agreed period."
+   },
+   {
+    "requirement": "The consumer may treat the contract as at an end if the trader refuses to deliver the goods, if delivery at or within the agreed time or period is essential considering all circumstances at contract formation, or if the consumer told the trader prior to contract formation that timely delivery was essential.",
+    "quote": "If the circumstances are that— (a) the trader has refused to deliver the goods, (b) delivery of the goods at the agreed time or within the agreed period is essential taking into account all the relevant circumstances at the time the contract was entered into, or (c) the consumer told the trader before the contract was entered into that delivery in accordance with subsection (3), or at the agreed time or within the agreed period, was essential, then the consumer may treat the contract as at an end."
+   },
+   {
+    "requirement": "In any circumstances other than those permitting the consumer to immediately treat the contract as at an end, the consumer may specify a period that is appropriate in the circumstances and require the trader to deliver the goods before the end of that period.",
+    "quote": "In any other circumstances, the consumer may specify a period that is appropriate in the circumstances and require the trader to deliver the goods before the end of that period."
+   },
+   {
+    "requirement": "If the consumer specifies an appropriate period for delivery and the goods are not delivered within that period, the consumer may treat the contract as at an end.",
+    "quote": "If the consumer specifies a period under subsection (7) but the goods are not delivered within that period, then the consumer may treat the contract as at an end."
+   },
+   {
+    "requirement": "If the consumer treats the contract as at an end due to non-delivery, the trader must reimburse all payments made under the contract without undue delay.",
+    "quote": "If the consumer treats the contract as at an end under subsection (6) or (8), the trader must without undue delay reimburse all payments made under the contract."
+   },
+   {
+    "requirement": "If the consumer is entitled to treat the contract as at an end but does not do so, the consumer is not prevented from cancelling the order for any of the goods or rejecting delivered goods.",
+    "quote": "If subsection (6) or (8) applies but the consumer does not treat the contract as at an end— (a) that does not prevent the consumer from cancelling the order for any of the goods or rejecting goods that have been delivered"
+   },
+   {
+    "requirement": "If the consumer cancels an order for any goods or rejects goods when entitled to end the contract, the trader must reimburse all payments made under the contract in respect of those goods without undue delay.",
+    "quote": "the trader must without undue delay reimburse all payments made under the contract in respect of any goods for which the consumer cancels the order or which the consumer rejects."
+   },
+   {
+    "requirement": "If any of the goods form a commercial unit, the consumer cannot reject or cancel the order for some of those goods without also rejecting or cancelling the order for the rest of them.",
+    "quote": "If any of the goods form a commercial unit, the consumer cannot reject or cancel the order for some of those goods without also rejecting or cancelling the order for the rest of them."
+   },
+   {
+    "requirement": "A unit is a commercial unit if division of the unit would materially impair the value of the goods or the character of the unit.",
+    "quote": "A unit is a “commercial unit” if division of the unit would materially impair the value of the goods or the character of the unit."
+   },
+   {
+    "requirement": "Section 28 does not prevent the consumer from seeking other remedies where it is open to the consumer to do so.",
+    "quote": "This section does not prevent the consumer seeking other remedies where it is open to the consumer to do so."
+   },
+   {
+    "requirement": "Where goods are sold at a public auction, the application of section 28 is subject to section 2(5) and (6).",
+    "quote": "See section 2(5) and (6) for the application of this section where goods are sold at public auction."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the default statutory maximum period after the contract is entered into within which the trader must deliver the goods in the absence of an agreed time or period",
+    "value": "30 days",
+    "quote": "not more than 30 days after the day on which the contract is entered into"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 28 applies to any sales contract.",
+   "quote": "This section applies to any sales contract."
+  },
+  {
+   "requirement": "Unless the trader and the consumer have agreed otherwise, a sales contract is treated as including a term requiring the trader to deliver the goods to the consumer.",
+   "quote": "Unless the trader and the consumer have agreed otherwise, the contract is to be treated as including a term that the trader must deliver the goods to the consumer."
+  },
+  {
+   "requirement": "Unless there is an agreed time or period, a sales contract is treated as including a term requiring the trader to deliver the goods without undue delay and not more than 30 days after the day the contract is entered into.",
+   "quote": "Unless there is an agreed time or period, the contract is to be treated as including a term that the trader must deliver the goods— (a) without undue delay, and (b) in any event, not more than 30 days after the day on which the contract is entered into."
+  },
+  {
+   "requirement": "For the purposes of section 28, an agreed time or period means a time or period agreed by the trader and the consumer for the delivery of the goods.",
+   "quote": "an “agreed” time or period means a time or period agreed by the trader and the consumer for delivery of the goods"
+  },
+  {
+   "requirement": "For the purposes of section 28, if an obligation exists to deliver the goods when the contract is entered into, that time counts as the agreed time.",
+   "quote": "if there is an obligation to deliver the goods at the time the contract is entered into, that time counts as the “agreed” time."
+  },
+  {
+   "requirement": "The statutory delivery failure remedies apply if the trader does not deliver the goods without undue delay and within 30 days or at the agreed time or within the agreed period.",
+   "quote": "Subsections (6) and (7) apply if the trader does not deliver the goods in accordance with subsection (3) or at the agreed time or within the agreed period."
+  },
+  {
+   "requirement": "The consumer may treat the contract as at an end if the trader refuses to deliver the goods, if delivery at or within the agreed time or period is essential considering all circumstances at contract formation, or if the consumer told the trader prior to contract formation that timely delivery was essential.",
+   "quote": "If the circumstances are that— (a) the trader has refused to deliver the goods, (b) delivery of the goods at the agreed time or within the agreed period is essential taking into account all the relevant circumstances at the time the contract was entered into, or (c) the consumer told the trader before the contract was entered into that delivery in accordance with subsection (3), or at the agreed time or within the agreed period, was essential, then the consumer may treat the contract as at an end."
+  },
+  {
+   "requirement": "In any circumstances other than those permitting the consumer to immediately treat the contract as at an end, the consumer may specify a period that is appropriate in the circumstances and require the trader to deliver the goods before the end of that period.",
+   "quote": "In any other circumstances, the consumer may specify a period that is appropriate in the circumstances and require the trader to deliver the goods before the end of that period."
+  },
+  {
+   "requirement": "If the consumer specifies an appropriate period for delivery and the goods are not delivered within that period, the consumer may treat the contract as at an end.",
+   "quote": "If the consumer specifies a period under subsection (7) but the goods are not delivered within that period, then the consumer may treat the contract as at an end."
+  },
+  {
+   "requirement": "If the consumer treats the contract as at an end due to non-delivery, the trader must reimburse all payments made under the contract without undue delay.",
+   "quote": "If the consumer treats the contract as at an end under subsection (6) or (8), the trader must without undue delay reimburse all payments made under the contract."
+  },
+  {
+   "requirement": "If the consumer is entitled to treat the contract as at an end but does not do so, the consumer is not prevented from cancelling the order for any of the goods or rejecting delivered goods.",
+   "quote": "If subsection (6) or (8) applies but the consumer does not treat the contract as at an end— (a) that does not prevent the consumer from cancelling the order for any of the goods or rejecting goods that have been delivered"
+  },
+  {
+   "requirement": "If the consumer cancels an order for any goods or rejects goods when entitled to end the contract, the trader must reimburse all payments made under the contract in respect of those goods without undue delay.",
+   "quote": "the trader must without undue delay reimburse all payments made under the contract in respect of any goods for which the consumer cancels the order or which the consumer rejects."
+  },
+  {
+   "requirement": "If any of the goods form a commercial unit, the consumer cannot reject or cancel the order for some of those goods without also rejecting or cancelling the order for the rest of them.",
+   "quote": "If any of the goods form a commercial unit, the consumer cannot reject or cancel the order for some of those goods without also rejecting or cancelling the order for the rest of them."
+  },
+  {
+   "requirement": "A unit is a commercial unit if division of the unit would materially impair the value of the goods or the character of the unit.",
+   "quote": "A unit is a “commercial unit” if division of the unit would materially impair the value of the goods or the character of the unit."
+  },
+  {
+   "requirement": "Section 28 does not prevent the consumer from seeking other remedies where it is open to the consumer to do so.",
+   "quote": "This section does not prevent the consumer seeking other remedies where it is open to the consumer to do so."
+  },
+  {
+   "requirement": "Where goods are sold at a public auction, the application of section 28 is subject to section 2(5) and (6).",
+   "quote": "See section 2(5) and (6) for the application of this section where goods are sold at public auction."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the default statutory maximum period after the contract is entered into within which the trader must deliver the goods in the absence of an agreed time or period",
+   "value": "30 days",
+   "quote": "not more than 30 days after the day on which the contract is entered into"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

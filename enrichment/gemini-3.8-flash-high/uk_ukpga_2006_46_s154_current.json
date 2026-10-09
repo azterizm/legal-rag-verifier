@@ -1,0 +1,50 @@
+{
+ "key": "uk/ukpga/2006/46/s154@current",
+ "section": "uk/ukpga/2006/46/s154",
+ "version": "current",
+ "source_sha256": "2509e564bac96ee9da88582d1de21ccfd98f67597d0caa3f62ab2218865aa202",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A private company must have at least one director.",
+    "quote": "A private company must have at least one director"
+   },
+   {
+    "requirement": "A public company must have at least two directors.",
+    "quote": "A public company must have at least two directors"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of directors required for a private company",
+    "value": "one",
+    "quote": "at least one director"
+   },
+   {
+    "what": "Minimum number of directors required for a public company",
+    "value": "two",
+    "quote": "at least two directors"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A private company must have at least one director.",
+   "quote": "A private company must have at least one director"
+  },
+  {
+   "requirement": "A public company must have at least two directors.",
+   "quote": "A public company must have at least two directors"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

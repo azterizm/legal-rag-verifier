@@ -1,0 +1,121 @@
+{
+ "key": "uk/ukpga/1988/50/s16A@current",
+ "section": "uk/ukpga/1988/50/s16A",
+ "version": "current",
+ "source_sha256": "7e68ce91a169d11a89c753353e742d3b85ec9bc918ee847e216ae28b8aeef554",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 16A applies to every assured tenancy other than a tenancy of social housing within the meaning of Part 2 of the Housing and Regeneration Act 2008.",
+    "quote": "applies to every assured tenancy other than a tenancy of social housing, within the meaning of Part 2 of the Housing and Regeneration Act 2008"
+   },
+   {
+    "requirement": "In every assured tenancy to which section 16A applies, it is an implied term that a tenant may keep a pet at the dwelling-house if the tenant asks to do so in accordance with this section and the landlord consents.",
+    "quote": "a tenant may keep a pet at the dwelling-house if the tenant asks to do so in accordance with this section and the landlord consents"
+   },
+   {
+    "requirement": "In every assured tenancy to which section 16A applies, it is an implied term that the landlord must not unreasonably refuse consent for the tenant to keep a pet.",
+    "quote": "such consent is not to be unreasonably refused by the landlord"
+   },
+   {
+    "requirement": "In every assured tenancy to which section 16A applies, it is an implied term that the landlord must give or refuse consent in writing on or before the 28th day after the date of the tenant's request, unless subsections (2) to (5) apply.",
+    "quote": "the landlord is to give or refuse consent in writing on or before the 28th day after the date of the request, except as provided by subsections (2) to (5)"
+   },
+   {
+    "requirement": "Where a landlord reasonably requests further information from a tenant about the pet on or before the 28th day after the date of the tenant’s request and the tenant provides that information, the landlord may delay giving or refusing consent until the 7th day after the date on which the tenant provides any further information that the landlord requests.",
+    "quote": "if the tenant provides that information, the landlord may delay giving or refusing consent until the 7th day after the date on which the tenant provides any further information that the landlord requests"
+   },
+   {
+    "requirement": "Where a landlord reasonably requests further information from a tenant about the pet on or before the 28th day after the date of the tenant’s request and the tenant does not provide that information, the landlord is not required to give or refuse consent.",
+    "quote": "if the tenant does not provide that information, the landlord is not required to give or refuse consent"
+   },
+   {
+    "requirement": "Where keeping the pet at the dwelling-house would require the landlord to obtain consent from a superior landlord under a superior tenancy and the landlord seeks that consent on or before the 28th day after the date of the tenant’s request, the landlord may delay giving or refusing consent until the 7th day after the date on which the landlord receives consent or refusal from the superior landlord.",
+    "quote": "the landlord may delay giving or refusing consent until the 7th day after the date on which the landlord receives consent or refusal from the superior landlord"
+   },
+   {
+    "requirement": "Where the landlord and tenant agree that the landlord may delay giving or refusing consent, the landlord may delay until whatever date is agreed between them.",
+    "quote": "the landlord may delay until whatever date is agreed between the landlord and the tenant"
+   },
+   {
+    "requirement": "Where more than one of subsections (2) to (4) apply, the landlord may delay giving or refusing consent until the latest date permitted under any of those applicable subsections.",
+    "quote": "the landlord may delay until the latest date to which the landlord may delay giving or refusing consent under any of the subsections"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Standard deadline after the tenant's request for the landlord to give or refuse consent in writing",
+    "value": "28th day",
+    "quote": "on or before the 28th day after the date of the request"
+   },
+   {
+    "what": "Deadline after the tenant's request for the landlord to reasonably request further information from the tenant about the pet",
+    "value": "28th day",
+    "quote": "on or before the 28th day after the date of the tenant’s request"
+   },
+   {
+    "what": "Permitted delay for the landlord to give or refuse consent after the tenant provides requested further information",
+    "value": "7th day",
+    "quote": "until the 7th day after the date on which the tenant provides any further information that the landlord requests"
+   },
+   {
+    "what": "Deadline after the tenant's request for the landlord to seek consent from a superior landlord",
+    "value": "28th day",
+    "quote": "on or before the 28th day after the date of the tenant’s request"
+   },
+   {
+    "what": "Permitted delay for the landlord to give or refuse consent after receiving consent or refusal from a superior landlord",
+    "value": "7th day",
+    "quote": "until the 7th day after the date on which the landlord receives consent or refusal from the superior landlord"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 16A applies to every assured tenancy other than a tenancy of social housing within the meaning of Part 2 of the Housing and Regeneration Act 2008.",
+   "quote": "applies to every assured tenancy other than a tenancy of social housing, within the meaning of Part 2 of the Housing and Regeneration Act 2008"
+  },
+  {
+   "requirement": "In every assured tenancy to which section 16A applies, it is an implied term that a tenant may keep a pet at the dwelling-house if the tenant asks to do so in accordance with this section and the landlord consents.",
+   "quote": "a tenant may keep a pet at the dwelling-house if the tenant asks to do so in accordance with this section and the landlord consents"
+  },
+  {
+   "requirement": "In every assured tenancy to which section 16A applies, it is an implied term that the landlord must not unreasonably refuse consent for the tenant to keep a pet.",
+   "quote": "such consent is not to be unreasonably refused by the landlord"
+  },
+  {
+   "requirement": "In every assured tenancy to which section 16A applies, it is an implied term that the landlord must give or refuse consent in writing on or before the 28th day after the date of the tenant's request, unless subsections (2) to (5) apply.",
+   "quote": "the landlord is to give or refuse consent in writing on or before the 28th day after the date of the request, except as provided by subsections (2) to (5)"
+  },
+  {
+   "requirement": "Where a landlord reasonably requests further information from a tenant about the pet on or before the 28th day after the date of the tenant’s request and the tenant provides that information, the landlord may delay giving or refusing consent until the 7th day after the date on which the tenant provides any further information that the landlord requests.",
+   "quote": "if the tenant provides that information, the landlord may delay giving or refusing consent until the 7th day after the date on which the tenant provides any further information that the landlord requests"
+  },
+  {
+   "requirement": "Where a landlord reasonably requests further information from a tenant about the pet on or before the 28th day after the date of the tenant’s request and the tenant does not provide that information, the landlord is not required to give or refuse consent.",
+   "quote": "if the tenant does not provide that information, the landlord is not required to give or refuse consent"
+  },
+  {
+   "requirement": "Where keeping the pet at the dwelling-house would require the landlord to obtain consent from a superior landlord under a superior tenancy and the landlord seeks that consent on or before the 28th day after the date of the tenant’s request, the landlord may delay giving or refusing consent until the 7th day after the date on which the landlord receives consent or refusal from the superior landlord.",
+   "quote": "the landlord may delay giving or refusing consent until the 7th day after the date on which the landlord receives consent or refusal from the superior landlord"
+  },
+  {
+   "requirement": "Where the landlord and tenant agree that the landlord may delay giving or refusing consent, the landlord may delay until whatever date is agreed between them.",
+   "quote": "the landlord may delay until whatever date is agreed between the landlord and the tenant"
+  },
+  {
+   "requirement": "Where more than one of subsections (2) to (4) apply, the landlord may delay giving or refusing consent until the latest date permitted under any of those applicable subsections.",
+   "quote": "the landlord may delay until the latest date to which the landlord may delay giving or refusing consent under any of the subsections"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 0
+ }
+}

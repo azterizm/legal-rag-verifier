@@ -1,0 +1,211 @@
+{
+ "key": "uk/ukpga/1968/60/s12@current",
+ "section": "uk/ukpga/1968/60/s12",
+ "version": "current",
+ "source_sha256": "2363d776d5566c5263acefd8f34f61ecd08f640bc73b2ea1b1f52551e414a669",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the exceptions in subsections (5) and (6), an individual commits an offence if that individual takes any conveyance for their own or another's use without having the consent of the owner or other lawful authority.",
+    "quote": "without having the consent of the owner or other lawful authority, he takes any conveyance for his own or another’s use"
+   },
+   {
+    "requirement": "Subject to the exceptions in subsections (5) and (6), an individual commits an offence if, knowing that any conveyance has been taken without lawful authority or the owner's consent, that individual drives that conveyance or allows themselves to be carried in or on it.",
+    "quote": "knowing that any conveyance has been taken without such authority, drives it or allows himself to be carried in or on it"
+   },
+   {
+    "requirement": "An offender guilty of taking a conveyance or driving or being carried in a taken conveyance under subsection (1) is liable on summary conviction to a fine not exceeding level 5 on the standard scale, imprisonment for a term not exceeding six months, or both.",
+    "quote": "liable on summary conviction to a fine not exceeding level 5 on the standard scale, to imprisonment for a term not exceeding six months, or to both"
+   },
+   {
+    "requirement": "If on the trial of an indictment for theft the jury are not satisfied that the accused committed theft but it is proved that the accused committed an offence under subsection (1), the jury may find the accused guilty of the offence under subsection (1).",
+    "quote": "the jury may find him guilty of the offence under subsection (1)"
+   },
+   {
+    "requirement": "An accused person found guilty by a jury under subsection (4) is liable as that person would have been liable on summary conviction under subsection (2).",
+    "quote": "shall be liable as he would have been liable under subsection (2) above on summary conviction"
+   },
+   {
+    "requirement": "Proceedings for an offence under subsection (1) in relation to a mechanically propelled vehicle, excluding alternative verdict proceedings under subsection (4), must not be commenced after the end of three years beginning with the day on which the offence was committed.",
+    "quote": "shall not be commenced after the end of the period of three years beginning with the day on which the offence was committed"
+   },
+   {
+    "requirement": "Subject to the three-year longstop, proceedings for an offence under subsection (1) in relation to a mechanically propelled vehicle may be commenced at any time within six months beginning with the relevant day.",
+    "quote": "may be commenced at any time within the period of six months beginning with the relevant day"
+   },
+   {
+    "requirement": "For a prosecution under subsection (1) commenced by a public prosecutor, the relevant day means the day on which sufficient evidence to justify the proceedings came to the knowledge of any person responsible for deciding whether to commence such a prosecution.",
+    "quote": "the day on which sufficient evidence to justify the proceedings came to the knowledge of any person responsible for deciding whether to commence any such prosecution"
+   },
+   {
+    "requirement": "For a prosecution under subsection (1) commenced by a person other than a public prosecutor after the discontinuance of a public prosecution relating to the same facts, the relevant day means the day on which sufficient evidence to justify the proceedings came to the knowledge of the person deciding to prosecute or, if later, the date of discontinuance of the other prosecution.",
+    "quote": "the day on which sufficient evidence to justify the proceedings came to the knowledge of the person who has decided to commence the prosecution or (if later) the discontinuance of the other prosecution"
+   },
+   {
+    "requirement": "For any other prosecution under subsection (1) not covered by subsection (4B)(a) or (b), the relevant day means the day on which sufficient evidence to justify the proceedings came to the knowledge of the person who has decided to commence the prosecution.",
+    "quote": "the day on which sufficient evidence to justify the proceedings came to the knowledge of the person who has decided to commence the prosecution"
+   },
+   {
+    "requirement": "A certificate of a person responsible for deciding whether to commence a public prosecution as to the date on which sufficient evidence came to the knowledge of any responsible decision-maker constitutes conclusive evidence of that fact.",
+    "quote": "shall be conclusive evidence of that fact"
+   },
+   {
+    "requirement": "The offence under subsection (1) does not apply in relation to pedal cycles.",
+    "quote": "Subsection (1) above shall not apply in relation to pedal cycles"
+   },
+   {
+    "requirement": "Subject to subsection (6), an individual who, without the owner's consent or other lawful authority, takes a pedal cycle for their own or another’s use, or rides a pedal cycle knowing it to have been taken without such authority, is liable on summary conviction to a fine not exceeding level 3 on the standard scale.",
+    "quote": "takes a pedal cycle for his own or another’s use, or rides a pedal cycle knowing it to have been taken without such authority, shall on summary conviction be liable to a fine not exceeding level 3 on the standard scale"
+   },
+   {
+    "requirement": "A person does not commit an offence under section 12 by anything done in the belief that they have lawful authority to do it.",
+    "quote": "done in the belief that he has lawful authority to do it"
+   },
+   {
+    "requirement": "A person does not commit an offence under section 12 by anything done in the belief that they would have the owner’s consent if the owner knew of the doing of it and the circumstances of it.",
+    "quote": "done in the belief that he has lawful authority to do it or that he would have the owner’s consent if the owner knew of his doing it and the circumstances of it"
+   },
+   {
+    "requirement": "For the purposes of section 12, a conveyance means any conveyance constructed or adapted for the carriage of one or more persons by land, water, or air, excluding any conveyance constructed or adapted for use only under the control of a person not carried in or on it, and the word drive must be construed accordingly.",
+    "quote": "“conveyance” means any conveyance constructed or adapted for the carriage of a person or persons whether by land, water or air, except that it does not include a conveyance constructed or adapted for use only under the control of a person not carried in or on it, and “drive” shall be construed accordingly"
+   },
+   {
+    "requirement": "For the purposes of section 12, the owner of a conveyance that is subject to a hiring agreement or hire-purchase agreement means the person in possession of the conveyance under that agreement.",
+    "quote": "“owner”, in relation to a conveyance which is the subject of a hiring agreement or hire-purchase agreement, means the person in possession of the conveyance under that agreement"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Maximum fine on summary conviction for taking or driving a conveyance without authority under subsection (1)",
+    "value": "level 5 on the standard scale",
+    "quote": "a fine not exceeding level 5 on the standard scale"
+   },
+   {
+    "what": "Maximum term of imprisonment on summary conviction for an offence under subsection (1)",
+    "value": "six months",
+    "quote": "imprisonment for a term not exceeding six months"
+   },
+   {
+    "what": "Maximum limitation period from commission of the offence to commence proceedings for taking a mechanically propelled vehicle",
+    "value": "three years",
+    "quote": "period of three years beginning with the day on which the offence was committed"
+   },
+   {
+    "what": "Limitation period from the relevant day to commence proceedings for taking a mechanically propelled vehicle",
+    "value": "six months",
+    "quote": "period of six months beginning with the relevant day"
+   },
+   {
+    "what": "Maximum fine on summary conviction for taking or riding a pedal cycle without authority",
+    "value": "level 3 on the standard scale",
+    "quote": "a fine not exceeding level 3 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the exceptions in subsections (5) and (6), an individual commits an offence if that individual takes any conveyance for their own or another's use without having the consent of the owner or other lawful authority.",
+   "quote": "without having the consent of the owner or other lawful authority, he takes any conveyance for his own or another’s use"
+  },
+  {
+   "requirement": "Subject to the exceptions in subsections (5) and (6), an individual commits an offence if, knowing that any conveyance has been taken without lawful authority or the owner's consent, that individual drives that conveyance or allows themselves to be carried in or on it.",
+   "quote": "knowing that any conveyance has been taken without such authority, drives it or allows himself to be carried in or on it"
+  },
+  {
+   "requirement": "An offender guilty of taking a conveyance or driving or being carried in a taken conveyance under subsection (1) is liable on summary conviction to a fine not exceeding level 5 on the standard scale, imprisonment for a term not exceeding six months, or both.",
+   "quote": "liable on summary conviction to a fine not exceeding level 5 on the standard scale, to imprisonment for a term not exceeding six months, or to both"
+  },
+  {
+   "requirement": "If on the trial of an indictment for theft the jury are not satisfied that the accused committed theft but it is proved that the accused committed an offence under subsection (1), the jury may find the accused guilty of the offence under subsection (1).",
+   "quote": "the jury may find him guilty of the offence under subsection (1)"
+  },
+  {
+   "requirement": "An accused person found guilty by a jury under subsection (4) is liable as that person would have been liable on summary conviction under subsection (2).",
+   "quote": "shall be liable as he would have been liable under subsection (2) above on summary conviction"
+  },
+  {
+   "requirement": "Proceedings for an offence under subsection (1) in relation to a mechanically propelled vehicle, excluding alternative verdict proceedings under subsection (4), must not be commenced after the end of three years beginning with the day on which the offence was committed.",
+   "quote": "shall not be commenced after the end of the period of three years beginning with the day on which the offence was committed"
+  },
+  {
+   "requirement": "Subject to the three-year longstop, proceedings for an offence under subsection (1) in relation to a mechanically propelled vehicle may be commenced at any time within six months beginning with the relevant day.",
+   "quote": "may be commenced at any time within the period of six months beginning with the relevant day"
+  },
+  {
+   "requirement": "For a prosecution under subsection (1) commenced by a public prosecutor, the relevant day means the day on which sufficient evidence to justify the proceedings came to the knowledge of any person responsible for deciding whether to commence such a prosecution.",
+   "quote": "the day on which sufficient evidence to justify the proceedings came to the knowledge of any person responsible for deciding whether to commence any such prosecution"
+  },
+  {
+   "requirement": "For a prosecution under subsection (1) commenced by a person other than a public prosecutor after the discontinuance of a public prosecution relating to the same facts, the relevant day means the day on which sufficient evidence to justify the proceedings came to the knowledge of the person deciding to prosecute or, if later, the date of discontinuance of the other prosecution.",
+   "quote": "the day on which sufficient evidence to justify the proceedings came to the knowledge of the person who has decided to commence the prosecution or (if later) the discontinuance of the other prosecution"
+  },
+  {
+   "requirement": "For any other prosecution under subsection (1) not covered by subsection (4B)(a) or (b), the relevant day means the day on which sufficient evidence to justify the proceedings came to the knowledge of the person who has decided to commence the prosecution.",
+   "quote": "the day on which sufficient evidence to justify the proceedings came to the knowledge of the person who has decided to commence the prosecution"
+  },
+  {
+   "requirement": "A certificate of a person responsible for deciding whether to commence a public prosecution as to the date on which sufficient evidence came to the knowledge of any responsible decision-maker constitutes conclusive evidence of that fact.",
+   "quote": "shall be conclusive evidence of that fact"
+  },
+  {
+   "requirement": "The offence under subsection (1) does not apply in relation to pedal cycles.",
+   "quote": "Subsection (1) above shall not apply in relation to pedal cycles"
+  },
+  {
+   "requirement": "Subject to subsection (6), an individual who, without the owner's consent or other lawful authority, takes a pedal cycle for their own or another’s use, or rides a pedal cycle knowing it to have been taken without such authority, is liable on summary conviction to a fine not exceeding level 3 on the standard scale.",
+   "quote": "takes a pedal cycle for his own or another’s use, or rides a pedal cycle knowing it to have been taken without such authority, shall on summary conviction be liable to a fine not exceeding level 3 on the standard scale"
+  },
+  {
+   "requirement": "A person does not commit an offence under section 12 by anything done in the belief that they have lawful authority to do it.",
+   "quote": "done in the belief that he has lawful authority to do it"
+  },
+  {
+   "requirement": "A person does not commit an offence under section 12 by anything done in the belief that they would have the owner’s consent if the owner knew of the doing of it and the circumstances of it.",
+   "quote": "done in the belief that he has lawful authority to do it or that he would have the owner’s consent if the owner knew of his doing it and the circumstances of it"
+  },
+  {
+   "requirement": "For the purposes of section 12, a conveyance means any conveyance constructed or adapted for the carriage of one or more persons by land, water, or air, excluding any conveyance constructed or adapted for use only under the control of a person not carried in or on it, and the word drive must be construed accordingly.",
+   "quote": "“conveyance” means any conveyance constructed or adapted for the carriage of a person or persons whether by land, water or air, except that it does not include a conveyance constructed or adapted for use only under the control of a person not carried in or on it, and “drive” shall be construed accordingly"
+  },
+  {
+   "requirement": "For the purposes of section 12, the owner of a conveyance that is subject to a hiring agreement or hire-purchase agreement means the person in possession of the conveyance under that agreement.",
+   "quote": "“owner”, in relation to a conveyance which is the subject of a hiring agreement or hire-purchase agreement, means the person in possession of the conveyance under that agreement"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Maximum fine on summary conviction for taking or driving a conveyance without authority under subsection (1)",
+   "value": "level 5 on the standard scale",
+   "quote": "a fine not exceeding level 5 on the standard scale"
+  },
+  {
+   "what": "Maximum term of imprisonment on summary conviction for an offence under subsection (1)",
+   "value": "six months",
+   "quote": "imprisonment for a term not exceeding six months"
+  },
+  {
+   "what": "Maximum limitation period from commission of the offence to commence proceedings for taking a mechanically propelled vehicle",
+   "value": "three years",
+   "quote": "period of three years beginning with the day on which the offence was committed"
+  },
+  {
+   "what": "Limitation period from the relevant day to commence proceedings for taking a mechanically propelled vehicle",
+   "value": "six months",
+   "quote": "period of six months beginning with the relevant day"
+  },
+  {
+   "what": "Maximum fine on summary conviction for taking or riding a pedal cycle without authority",
+   "value": "level 3 on the standard scale",
+   "quote": "a fine not exceeding level 3 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 5
+ }
+}

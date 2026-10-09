@@ -1,0 +1,126 @@
+{
+ "key": "uk/ukpga/1986/45/s89@current",
+ "section": "uk/ukpga/1986/45/s89",
+ "version": "current",
+ "source_sha256": "38de2d5fa20c4aaa6147e161d53893520852d5efd09985a0693b5756cc08e752",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a voluntary winding up of a company is proposed, the directors, or a majority of them if the company has more than two directors, may make a statutory declaration at a directors' meeting stating that they have made a full inquiry into the company's affairs and have formed the opinion that the company can pay its debts in full, with interest at the official rate, within a specified period not exceeding 12 months from the commencement of the winding up.",
+    "quote": "the directors (or, in the case of a company having more than two directors, the majority of them) may at a directors’ meeting make a statutory declaration"
+   },
+   {
+    "requirement": "A statutory declaration of solvency has no effect for the purposes of the Insolvency Act 1986 unless it is made within the five weeks immediately preceding the date of the passing of the resolution for winding up, or on that date before the resolution is passed.",
+    "quote": "made within the 5 weeks immediately preceding the date of the passing of the resolution for winding up, or on that date but before the passing of the resolution"
+   },
+   {
+    "requirement": "A statutory declaration of solvency has no effect for the purposes of the Insolvency Act 1986 unless it embodies a statement of the company's assets and liabilities as at the latest practicable date before the declaration is made.",
+    "quote": "it embodies a statement of the company’s assets and liabilities as at the latest practicable date before the making of the declaration"
+   },
+   {
+    "requirement": "A copy of the statutory declaration must be delivered to the registrar of companies before the expiration of 15 days immediately following the date on which the resolution for winding up is passed.",
+    "quote": "A copy of the declaration shall be delivered to the registrar of companies before the expiration of 15 days immediately following the date on which the resolution for winding up is passed."
+   },
+   {
+    "requirement": "A director who makes a statutory declaration without having reasonable grounds for the opinion that the company will be able to pay its debts in full, together with interest at the official rate, within the specified period is liable to imprisonment, a fine, or both.",
+    "quote": "A director making a declaration under this section without having reasonable grounds for the opinion that the company will be able to pay its debts in full, together with interest at the official rate, within the period specified is liable to imprisonment or a fine, or both."
+   },
+   {
+    "requirement": "If a company is wound up under a resolution passed within five weeks after the making of the declaration and its debts with official rate interest are not paid or provided for in full within the specified period, the director is presumed, unless the contrary is shown, not to have had reasonable grounds for the opinion.",
+    "quote": "it is to be presumed (unless the contrary is shown) that the director did not have reasonable grounds for his opinion"
+   },
+   {
+    "requirement": "If a copy of the statutory declaration is not delivered to the registrar within 15 days following the passing of the winding-up resolution, the company and every officer in default is liable to a fine and, for continued contravention, to a daily default fine.",
+    "quote": "the company and every officer in default is liable to a fine and, for continued contravention, to a daily default fine."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of directors above which a majority may make the statutory declaration",
+    "value": "two",
+    "quote": "in the case of a company having more than two directors"
+   },
+   {
+    "what": "maximum period specified in the statutory declaration for paying company debts in full from the commencement of the winding up",
+    "value": "12 months",
+    "quote": "not exceeding 12 months from the commencement of the winding up"
+   },
+   {
+    "what": "period immediately preceding the date of passing the winding-up resolution within which the statutory declaration must be made",
+    "value": "5 weeks",
+    "quote": "within the 5 weeks immediately preceding the date of the passing of the resolution for winding up"
+   },
+   {
+    "what": "time limit following the passing of the winding-up resolution within which a copy of the declaration must be delivered to the registrar of companies",
+    "value": "15 days",
+    "quote": "before the expiration of 15 days immediately following the date on which the resolution for winding up is passed"
+   },
+   {
+    "what": "period after the making of the declaration within which the passing of a winding-up resolution triggers the statutory presumption of lack of reasonable grounds if debts are unpaid",
+    "value": "5 weeks",
+    "quote": "resolution passed within 5 weeks after the making of the declaration"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a voluntary winding up of a company is proposed, the directors, or a majority of them if the company has more than two directors, may make a statutory declaration at a directors' meeting stating that they have made a full inquiry into the company's affairs and have formed the opinion that the company can pay its debts in full, with interest at the official rate, within a specified period not exceeding 12 months from the commencement of the winding up.",
+   "quote": "the directors (or, in the case of a company having more than two directors, the majority of them) may at a directors’ meeting make a statutory declaration"
+  },
+  {
+   "requirement": "A statutory declaration of solvency has no effect for the purposes of the Insolvency Act 1986 unless it is made within the five weeks immediately preceding the date of the passing of the resolution for winding up, or on that date before the resolution is passed.",
+   "quote": "made within the 5 weeks immediately preceding the date of the passing of the resolution for winding up, or on that date but before the passing of the resolution"
+  },
+  {
+   "requirement": "A statutory declaration of solvency has no effect for the purposes of the Insolvency Act 1986 unless it embodies a statement of the company's assets and liabilities as at the latest practicable date before the declaration is made.",
+   "quote": "it embodies a statement of the company’s assets and liabilities as at the latest practicable date before the making of the declaration"
+  },
+  {
+   "requirement": "A copy of the statutory declaration must be delivered to the registrar of companies before the expiration of 15 days immediately following the date on which the resolution for winding up is passed.",
+   "quote": "A copy of the declaration shall be delivered to the registrar of companies before the expiration of 15 days immediately following the date on which the resolution for winding up is passed."
+  },
+  {
+   "requirement": "A director who makes a statutory declaration without having reasonable grounds for the opinion that the company will be able to pay its debts in full, together with interest at the official rate, within the specified period is liable to imprisonment, a fine, or both.",
+   "quote": "A director making a declaration under this section without having reasonable grounds for the opinion that the company will be able to pay its debts in full, together with interest at the official rate, within the period specified is liable to imprisonment or a fine, or both."
+  },
+  {
+   "requirement": "If a company is wound up under a resolution passed within five weeks after the making of the declaration and its debts with official rate interest are not paid or provided for in full within the specified period, the director is presumed, unless the contrary is shown, not to have had reasonable grounds for the opinion.",
+   "quote": "it is to be presumed (unless the contrary is shown) that the director did not have reasonable grounds for his opinion"
+  },
+  {
+   "requirement": "If a copy of the statutory declaration is not delivered to the registrar within 15 days following the passing of the winding-up resolution, the company and every officer in default is liable to a fine and, for continued contravention, to a daily default fine.",
+   "quote": "the company and every officer in default is liable to a fine and, for continued contravention, to a daily default fine."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum period specified in the statutory declaration for paying company debts in full from the commencement of the winding up",
+   "value": "12 months",
+   "quote": "not exceeding 12 months from the commencement of the winding up"
+  },
+  {
+   "what": "period immediately preceding the date of passing the winding-up resolution within which the statutory declaration must be made",
+   "value": "5 weeks",
+   "quote": "within the 5 weeks immediately preceding the date of the passing of the resolution for winding up"
+  },
+  {
+   "what": "time limit following the passing of the winding-up resolution within which a copy of the declaration must be delivered to the registrar of companies",
+   "value": "15 days",
+   "quote": "before the expiration of 15 days immediately following the date on which the resolution for winding up is passed"
+  },
+  {
+   "what": "period after the making of the declaration within which the passing of a winding-up resolution triggers the statutory presumption of lack of reasonable grounds if debts are unpaid",
+   "value": "5 weeks",
+   "quote": "resolution passed within 5 weeks after the making of the declaration"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 4
+ }
+}

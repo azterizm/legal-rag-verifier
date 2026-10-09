@@ -1,0 +1,177 @@
+{
+ "key": "uk/ukpga/1970/9/s59B@current",
+ "section": "uk/ukpga/1970/9/s59B",
+ "version": "current",
+ "source_sha256": "193c21270565b35b2490c9d7c9d4592333ed85b0579bed1c91c082f96b6aa087",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to adjustments under subsection (2), the difference between the income tax and capital gains tax in a person's self-assessment under section 9 for a year of assessment and the aggregate of their payments on account and income tax deducted at source for that year is payable by or repayable to that person as provided in subsection (3) or (4).",
+    "quote": "difference between— (a) the amount of income tax and capital gains tax contained in a person’s self-assessment under section 9 of this Act for any year of assessment, and (b) the aggregate of any payments on account made by him"
+   },
+   {
+    "requirement": "Repayment is not required of any income tax treated as deducted or paid by virtue of section 246D(1) of the principal Act, section 626 of ITEPA 2003, or section 530(1) of ITTOIA 2005.",
+    "quote": "nothing in this subsection shall require the repayment of any income tax treated as deducted or paid by virtue of section ... 246D(1) ... of the principal Act, section 626 of ITEPA 2003 ... ... or 530(1) of ITTOIA 2005"
+   },
+   {
+    "requirement": "Any amount deducted at source under PAYE regulations in the year of assessment in respect of a previous year must be deducted from the aggregate of payments on account and tax deducted at source.",
+    "quote": "any amount which, in the year of assessment, is deducted at source under PAYE regulations in respect of a previous year"
+   },
+   {
+    "requirement": "Any amount to be deducted at source under PAYE regulations in a subsequent year in respect of the year of assessment must be added to the aggregate of payments on account and tax deducted at source.",
+    "quote": "any amount which, in respect of the year of assessment, is to be deducted at source under PAYE regulations in a subsequent year"
+   },
+   {
+    "requirement": "Where a person gave notice under section 7 within six months from the end of the year of assessment but was not given notice under section 8 or 8A until after 31st October next following that year, the difference is payable or repayable at the end of three months beginning with the day the notice under section 8 or 8A was given.",
+    "quote": "the difference shall be payable or repayable at the end of the period of three months beginning with the day on which the notice under section 8 or 8A was given"
+   },
+   {
+    "requirement": "In any case not falling within subsection (3), the difference between the self-assessed tax and the aggregate payments on account and deductions at source is payable or repayable on or before the 31st January next following the year of assessment.",
+    "quote": "In any other case, the difference shall be payable or repayable on or before the 31st January next following the year of assessment."
+   },
+   {
+    "requirement": "Where a person's notice under section 7 was given following receipt of a notice under section 8B, subsections (3) and (4) apply as if references to the notice under section 7 and notices under section 8 or 8A were references to the original notices given before the notice under section 8B.",
+    "quote": "subsections (3) and (4) apply as if— (a) the reference to the notice required by section 7 were a reference to the original notice required by that section, and (b) the references to notice under section 8 or 8A were references to the original notice under that section"
+   },
+   {
+    "requirement": "Where a person's return on which a self-assessment under section 9 was made is enquired into by an officer of the Board, repayment is not required before the day on which the enquiry is completed under section 28A(1B).",
+    "quote": "nothing in subsection (3) or (4) above shall require the repayment to be made before the day on which, by virtue of section 28A(1B) of this Act, the enquiry is completed"
+   },
+   {
+    "requirement": "An officer of the Board enquiring into a return on which a self-assessment was made may at any time before the enquiry is completed make the repayment on a provisional basis to such extent as the officer thinks fit.",
+    "quote": "the officer may at any time before that day make the repayment, on a provisional basis, to such extent as he thinks fit"
+   },
+   {
+    "requirement": "Tax payable or repayable as a result of amending or correcting a self-assessment under section 9ZA, 9ZB, 9C, 28A, 12ABZB(8), 12ABA(3)(a), 12ABB(6)(a), 28B(4)(a), 30B(2)(a), 33A(4)(a), or 50(9)(a) is payable or repayable on or before the day specified by the relevant provision of Schedule 3ZA.",
+    "quote": "is payable (or repayable) on or before the day specified by the relevant provision of Schedule 3ZA to this Act"
+   },
+   {
+    "requirement": "Where an assessment determination under section 28C is superseded by a person's self-assessment under section 9, any tax payable or repayable by virtue of that supersession is payable or repayable on or before the day given by subsection (3) or (4).",
+    "quote": "any amount of tax which is payable or repayable by virtue of the supersession shall be payable or (as the case may be) repayable on or before the day given by subsection (3) or (4) above"
+   },
+   {
+    "requirement": "Unless otherwise provided, any income tax or capital gains tax payable by virtue of an assessment made otherwise than under section 9, 28H, or 28I is payable on the day following the end of 30 days beginning with the day the notice of assessment is given.",
+    "quote": "payable on the day following the end of the period of 30 days beginning with the day on which the notice of assessment is given"
+   },
+   {
+    "requirement": "A reference to income tax deducted at source means tax deducted or treated as deducted or paid on any income, but excludes tax repaid on a claim treated as paid under section 520(4) of ITA 2007 or deducted at source from income to which section 532, 533, 536, or 537 of ITA 2007 applies.",
+    "quote": "reference to income tax deducted at source is a reference to income tax deducted or treated as deducted from any income or treated as paid on any income"
+   },
+   {
+    "requirement": "PAYE regulations may provide for necessary adjustments regarding prescribed matters to be made to the amount of tax deducted at source under PAYE regulations when determining the difference under subsection (1).",
+    "quote": "PAYE regulations may provide that, for the purpose of determining the amount of the difference mentioned in subsection (1) above, any necessary adjustments in respect of matters prescribed by the regulations shall be made to the amount of tax deducted at source under PAYE regulations"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period from the end of the year of assessment within which a person must give notice under section 7 for subsection (3) to apply",
+    "value": "six months",
+    "quote": "within six months from the end of the year of assessment"
+   },
+   {
+    "what": "Date next following the year of assessment after which notice under section 8 or 8A triggers subsection (3)",
+    "value": "31st October",
+    "quote": "until after the 31st October next following that year"
+   },
+   {
+    "what": "Period beginning with the day notice under section 8 or 8A was given at the end of which tax is payable or repayable under subsection (3)",
+    "value": "three months",
+    "quote": "period of three months beginning with the day on which the notice under section 8 or 8A was given"
+   },
+   {
+    "what": "Date next following the year of assessment on or before which tax is payable or repayable in any other case under subsection (4)",
+    "value": "31st January",
+    "quote": "on or before the 31st January next following the year of assessment"
+   },
+   {
+    "what": "Period beginning with the day notice of assessment is given after which tax assessed otherwise than under section 9, 28H, or 28I is payable",
+    "value": "30 days",
+    "quote": "period of 30 days beginning with the day on which the notice of assessment is given"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to adjustments under subsection (2), the difference between the income tax and capital gains tax in a person's self-assessment under section 9 for a year of assessment and the aggregate of their payments on account and income tax deducted at source for that year is payable by or repayable to that person as provided in subsection (3) or (4).",
+   "quote": "difference between— (a) the amount of income tax and capital gains tax contained in a person’s self-assessment under section 9 of this Act for any year of assessment, and (b) the aggregate of any payments on account made by him"
+  },
+  {
+   "requirement": "Repayment is not required of any income tax treated as deducted or paid by virtue of section 246D(1) of the principal Act, section 626 of ITEPA 2003, or section 530(1) of ITTOIA 2005.",
+   "quote": "nothing in this subsection shall require the repayment of any income tax treated as deducted or paid by virtue of section ... 246D(1) ... of the principal Act, section 626 of ITEPA 2003 ... ... or 530(1) of ITTOIA 2005"
+  },
+  {
+   "requirement": "Any amount deducted at source under PAYE regulations in the year of assessment in respect of a previous year must be deducted from the aggregate of payments on account and tax deducted at source.",
+   "quote": "any amount which, in the year of assessment, is deducted at source under PAYE regulations in respect of a previous year"
+  },
+  {
+   "requirement": "Any amount to be deducted at source under PAYE regulations in a subsequent year in respect of the year of assessment must be added to the aggregate of payments on account and tax deducted at source.",
+   "quote": "any amount which, in respect of the year of assessment, is to be deducted at source under PAYE regulations in a subsequent year"
+  },
+  {
+   "requirement": "Where a person gave notice under section 7 within six months from the end of the year of assessment but was not given notice under section 8 or 8A until after 31st October next following that year, the difference is payable or repayable at the end of three months beginning with the day the notice under section 8 or 8A was given.",
+   "quote": "the difference shall be payable or repayable at the end of the period of three months beginning with the day on which the notice under section 8 or 8A was given"
+  },
+  {
+   "requirement": "In any case not falling within subsection (3), the difference between the self-assessed tax and the aggregate payments on account and deductions at source is payable or repayable on or before the 31st January next following the year of assessment.",
+   "quote": "In any other case, the difference shall be payable or repayable on or before the 31st January next following the year of assessment."
+  },
+  {
+   "requirement": "Where a person's notice under section 7 was given following receipt of a notice under section 8B, subsections (3) and (4) apply as if references to the notice under section 7 and notices under section 8 or 8A were references to the original notices given before the notice under section 8B.",
+   "quote": "subsections (3) and (4) apply as if— (a) the reference to the notice required by section 7 were a reference to the original notice required by that section, and (b) the references to notice under section 8 or 8A were references to the original notice under that section"
+  },
+  {
+   "requirement": "Where a person's return on which a self-assessment under section 9 was made is enquired into by an officer of the Board, repayment is not required before the day on which the enquiry is completed under section 28A(1B).",
+   "quote": "nothing in subsection (3) or (4) above shall require the repayment to be made before the day on which, by virtue of section 28A(1B) of this Act, the enquiry is completed"
+  },
+  {
+   "requirement": "An officer of the Board enquiring into a return on which a self-assessment was made may at any time before the enquiry is completed make the repayment on a provisional basis to such extent as the officer thinks fit.",
+   "quote": "the officer may at any time before that day make the repayment, on a provisional basis, to such extent as he thinks fit"
+  },
+  {
+   "requirement": "Tax payable or repayable as a result of amending or correcting a self-assessment under section 9ZA, 9ZB, 9C, 28A, 12ABZB(8), 12ABA(3)(a), 12ABB(6)(a), 28B(4)(a), 30B(2)(a), 33A(4)(a), or 50(9)(a) is payable or repayable on or before the day specified by the relevant provision of Schedule 3ZA.",
+   "quote": "is payable (or repayable) on or before the day specified by the relevant provision of Schedule 3ZA to this Act"
+  },
+  {
+   "requirement": "Where an assessment determination under section 28C is superseded by a person's self-assessment under section 9, any tax payable or repayable by virtue of that supersession is payable or repayable on or before the day given by subsection (3) or (4).",
+   "quote": "any amount of tax which is payable or repayable by virtue of the supersession shall be payable or (as the case may be) repayable on or before the day given by subsection (3) or (4) above"
+  },
+  {
+   "requirement": "Unless otherwise provided, any income tax or capital gains tax payable by virtue of an assessment made otherwise than under section 9, 28H, or 28I is payable on the day following the end of 30 days beginning with the day the notice of assessment is given.",
+   "quote": "payable on the day following the end of the period of 30 days beginning with the day on which the notice of assessment is given"
+  },
+  {
+   "requirement": "A reference to income tax deducted at source means tax deducted or treated as deducted or paid on any income, but excludes tax repaid on a claim treated as paid under section 520(4) of ITA 2007 or deducted at source from income to which section 532, 533, 536, or 537 of ITA 2007 applies.",
+   "quote": "reference to income tax deducted at source is a reference to income tax deducted or treated as deducted from any income or treated as paid on any income"
+  },
+  {
+   "requirement": "PAYE regulations may provide for necessary adjustments regarding prescribed matters to be made to the amount of tax deducted at source under PAYE regulations when determining the difference under subsection (1).",
+   "quote": "PAYE regulations may provide that, for the purpose of determining the amount of the difference mentioned in subsection (1) above, any necessary adjustments in respect of matters prescribed by the regulations shall be made to the amount of tax deducted at source under PAYE regulations"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period from the end of the year of assessment within which a person must give notice under section 7 for subsection (3) to apply",
+   "value": "six months",
+   "quote": "within six months from the end of the year of assessment"
+  },
+  {
+   "what": "Period beginning with the day notice under section 8 or 8A was given at the end of which tax is payable or repayable under subsection (3)",
+   "value": "three months",
+   "quote": "period of three months beginning with the day on which the notice under section 8 or 8A was given"
+  },
+  {
+   "what": "Period beginning with the day notice of assessment is given after which tax assessed otherwise than under section 9, 28H, or 28I is payable",
+   "value": "30 days",
+   "quote": "period of 30 days beginning with the day on which the notice of assessment is given"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 3
+ }
+}

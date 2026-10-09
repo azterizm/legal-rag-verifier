@@ -1,0 +1,200 @@
+{
+ "key": "uk/ukpga/1996/18/s80F@current",
+ "section": "uk/ukpga/1996/18/s80F",
+ "version": "current",
+ "source_sha256": "d0dc7af808643a021963b71aa9700b66edaa34579aa8b3723860ba435bd6e8c8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to the hours they are required to work.",
+    "quote": "A qualifying employee may apply to his employer for a change in his terms and conditions of employment if— (a) the change relates to— (i) the hours he is required to work"
+   },
+   {
+    "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to the times when they are required to work.",
+    "quote": "the change relates to— (i) the hours he is required to work, (ii) the times when he is required to work"
+   },
+   {
+    "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to where, as between their home and a place of business of their employer, they are required to work.",
+    "quote": "(iii) where, as between his home and a place of business of his employer, he is required to work"
+   },
+   {
+    "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to such other aspect of their terms and conditions of employment as the Secretary of State may specify by regulations.",
+    "quote": "(iv) such other aspect of his terms and conditions of employment as the Secretary of State may specify by regulations"
+   },
+   {
+    "requirement": "An employee's application for a change in terms and conditions must state that it is an application under section 80F.",
+    "quote": "An application under this section must— (a) state that it is such an application"
+   },
+   {
+    "requirement": "An employee's application for a change in terms and conditions must specify the change applied for and the date on which it is proposed the change should become effective.",
+    "quote": "(b) specify the change applied for and the date on which it is proposed the change should become effective"
+   },
+   {
+    "requirement": "An employee may not make more than two applications under section 80F to the same employer during any period of 12 months.",
+    "quote": "An employee may not— (a) make more than two applications under this section to the same employer during any period of 12 months"
+   },
+   {
+    "requirement": "An employee may not make an application under section 80F to an employer if another application under section 80F to the same employer is proceeding.",
+    "quote": "(b) make an application under this section to an employer if another such application to the same employer is proceeding"
+   },
+   {
+    "requirement": "An application under section 80F is proceeding during the period beginning when the application is made and ending when the application is concluded.",
+    "quote": "an application is “proceeding” during any of these periods— (a) the period— (i) beginning when the application is made, and (ii) ending when the application is concluded"
+   },
+   {
+    "requirement": "An application under section 80F is proceeding during any period beginning when an appeal against a decision to refuse the application is brought and ending when the appeal is concluded.",
+    "quote": "(b) any period— (i) beginning when an appeal against a decision to refuse the application is brought, and (ii) ending when the appeal is concluded"
+   },
+   {
+    "requirement": "An application under section 80F is proceeding during any period beginning when, in accordance with section 80G(1C)(b), the decision period for an application or appeal is extended with retrospective effect, and ending when the application or appeal is concluded.",
+    "quote": "(c) any period— (i) beginning when, in accordance with section 80G(1C)(b), the decision period for an application or appeal is extended with retrospective effect, and (ii) ending when the application or appeal is concluded"
+   },
+   {
+    "requirement": "An application or appeal under section 80F is concluded when a decision is made on the application or appeal under section 80G.",
+    "quote": "an application or appeal is “concluded” when any of these events occurs— (a) a decision is made on the application or appeal under section 80G"
+   },
+   {
+    "requirement": "An application or appeal under section 80F is concluded when the application or appeal is withdrawn.",
+    "quote": "(b) the application or appeal is withdrawn"
+   },
+   {
+    "requirement": "An application or appeal under section 80F is concluded when the application or appeal is disposed of by agreement.",
+    "quote": "(c) the application or appeal is disposed of by agreement"
+   },
+   {
+    "requirement": "An application or appeal under section 80F is concluded when the decision period specified in section 80G for the application or appeal ends without a decision, withdrawal or agreed disposal.",
+    "quote": "(d) the decision period specified in section 80G for the application or appeal ends without a decision, withdrawal or agreed disposal"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision about the form of applications under section 80F.",
+    "quote": "The Secretary of State may by regulations make provision about— (a) the form of applications under this section"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision about when an application under section 80F is to be taken as made.",
+    "quote": "(b) when such an application is to be taken as made"
+   },
+   {
+    "requirement": "An employee is a qualifying employee for the purposes of section 80F if they satisfy such conditions as to duration of employment as the Secretary of State may specify by regulations and are not an agency worker, unless they are an agency worker returning to work from a period of parental leave under regulations under section 76.",
+    "quote": "a qualifying employee if he— (i) satisfies such conditions as to duration of employment as the Secretary of State may specify by regulations, and (ii) is not an agency worker (other than an agency worker who is returning to work from a period of parental leave under regulations under section 76)"
+   },
+   {
+    "requirement": "An employee is an agency worker for the purposes of section 80F if they are supplied by a person to do work for another under a contract or other arrangement made between those two persons.",
+    "quote": "an agency worker if he is supplied by a person (“ the agent ”) to do work for another (“ the principal ”) under a contract or other arrangement made between the agent and the principal"
+   },
+   {
+    "requirement": "Regulations made under section 80F may make different provision for different cases.",
+    "quote": "Regulations under this section may make different provision for different cases"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum number of applications under section 80F an employee may make to the same employer during any 12-month period",
+    "value": "two",
+    "quote": "make more than two applications under this section"
+   },
+   {
+    "what": "period during which an employee may not make more than two applications under section 80F to the same employer",
+    "value": "12 months",
+    "quote": "during any period of 12 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to the hours they are required to work.",
+   "quote": "A qualifying employee may apply to his employer for a change in his terms and conditions of employment if— (a) the change relates to— (i) the hours he is required to work"
+  },
+  {
+   "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to the times when they are required to work.",
+   "quote": "the change relates to— (i) the hours he is required to work, (ii) the times when he is required to work"
+  },
+  {
+   "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to where, as between their home and a place of business of their employer, they are required to work.",
+   "quote": "(iii) where, as between his home and a place of business of his employer, he is required to work"
+  },
+  {
+   "requirement": "A qualifying employee may apply to their employer for a change in their terms and conditions of employment if the change relates to such other aspect of their terms and conditions of employment as the Secretary of State may specify by regulations.",
+   "quote": "(iv) such other aspect of his terms and conditions of employment as the Secretary of State may specify by regulations"
+  },
+  {
+   "requirement": "An employee's application for a change in terms and conditions must state that it is an application under section 80F.",
+   "quote": "An application under this section must— (a) state that it is such an application"
+  },
+  {
+   "requirement": "An employee's application for a change in terms and conditions must specify the change applied for and the date on which it is proposed the change should become effective.",
+   "quote": "(b) specify the change applied for and the date on which it is proposed the change should become effective"
+  },
+  {
+   "requirement": "An employee may not make more than two applications under section 80F to the same employer during any period of 12 months.",
+   "quote": "An employee may not— (a) make more than two applications under this section to the same employer during any period of 12 months"
+  },
+  {
+   "requirement": "An employee may not make an application under section 80F to an employer if another application under section 80F to the same employer is proceeding.",
+   "quote": "(b) make an application under this section to an employer if another such application to the same employer is proceeding"
+  },
+  {
+   "requirement": "An application under section 80F is proceeding during the period beginning when the application is made and ending when the application is concluded.",
+   "quote": "an application is “proceeding” during any of these periods— (a) the period— (i) beginning when the application is made, and (ii) ending when the application is concluded"
+  },
+  {
+   "requirement": "An application under section 80F is proceeding during any period beginning when an appeal against a decision to refuse the application is brought and ending when the appeal is concluded.",
+   "quote": "(b) any period— (i) beginning when an appeal against a decision to refuse the application is brought, and (ii) ending when the appeal is concluded"
+  },
+  {
+   "requirement": "An application under section 80F is proceeding during any period beginning when, in accordance with section 80G(1C)(b), the decision period for an application or appeal is extended with retrospective effect, and ending when the application or appeal is concluded.",
+   "quote": "(c) any period— (i) beginning when, in accordance with section 80G(1C)(b), the decision period for an application or appeal is extended with retrospective effect, and (ii) ending when the application or appeal is concluded"
+  },
+  {
+   "requirement": "An application or appeal under section 80F is concluded when a decision is made on the application or appeal under section 80G.",
+   "quote": "an application or appeal is “concluded” when any of these events occurs— (a) a decision is made on the application or appeal under section 80G"
+  },
+  {
+   "requirement": "An application or appeal under section 80F is concluded when the application or appeal is withdrawn.",
+   "quote": "(b) the application or appeal is withdrawn"
+  },
+  {
+   "requirement": "An application or appeal under section 80F is concluded when the application or appeal is disposed of by agreement.",
+   "quote": "(c) the application or appeal is disposed of by agreement"
+  },
+  {
+   "requirement": "An application or appeal under section 80F is concluded when the decision period specified in section 80G for the application or appeal ends without a decision, withdrawal or agreed disposal.",
+   "quote": "(d) the decision period specified in section 80G for the application or appeal ends without a decision, withdrawal or agreed disposal"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision about the form of applications under section 80F.",
+   "quote": "The Secretary of State may by regulations make provision about— (a) the form of applications under this section"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision about when an application under section 80F is to be taken as made.",
+   "quote": "(b) when such an application is to be taken as made"
+  },
+  {
+   "requirement": "An employee is a qualifying employee for the purposes of section 80F if they satisfy such conditions as to duration of employment as the Secretary of State may specify by regulations and are not an agency worker, unless they are an agency worker returning to work from a period of parental leave under regulations under section 76.",
+   "quote": "a qualifying employee if he— (i) satisfies such conditions as to duration of employment as the Secretary of State may specify by regulations, and (ii) is not an agency worker (other than an agency worker who is returning to work from a period of parental leave under regulations under section 76)"
+  },
+  {
+   "requirement": "An employee is an agency worker for the purposes of section 80F if they are supplied by a person to do work for another under a contract or other arrangement made between those two persons.",
+   "quote": "an agency worker if he is supplied by a person (“ the agent ”) to do work for another (“ the principal ”) under a contract or other arrangement made between the agent and the principal"
+  },
+  {
+   "requirement": "Regulations made under section 80F may make different provision for different cases.",
+   "quote": "Regulations under this section may make different provision for different cases"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period during which an employee may not make more than two applications under section 80F to the same employer",
+   "value": "12 months",
+   "quote": "during any period of 12 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 20,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

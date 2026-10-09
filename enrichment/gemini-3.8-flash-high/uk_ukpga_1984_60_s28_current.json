@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1984/60/s28@current",
+ "section": "uk/ukpga/1984/60/s28",
+ "version": "current",
+ "source_sha256": "1b45ffc990a375e9d89fe3495d20e25b8386b965af1d532f31c71b1ba602af8e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the exception for escape, where a person is arrested otherwise than by being informed that he is under arrest, the arrest is not lawful unless the arrested person is informed that he is under arrest as soon as is practicable after his arrest.",
+    "quote": "where a person is arrested, otherwise than by being informed that he is under arrest, the arrest is not lawful unless the person arrested is informed that he is under arrest as soon as is practicable after his arrest"
+   },
+   {
+    "requirement": "Where a person is arrested by a constable, the requirement to inform the arrested person that he is under arrest applies regardless of whether the fact of the arrest is obvious.",
+    "quote": "Where a person is arrested by a constable, subsection (1) above applies regardless of whether the fact of the arrest is obvious."
+   },
+   {
+    "requirement": "Subject to the exception for escape, an arrest is not lawful unless the arrested person is informed of the ground for the arrest at the time of, or as soon as is practicable after, the arrest.",
+    "quote": "no arrest is lawful unless the person arrested is informed of the ground for the arrest at the time of, or as soon as is practicable after, the arrest"
+   },
+   {
+    "requirement": "Where a person is arrested by a constable, the requirement to inform the arrested person of the ground for the arrest applies regardless of whether the ground for the arrest is obvious.",
+    "quote": "Where a person is arrested by a constable, subsection (3) above applies regardless of whether the ground for the arrest is obvious."
+   },
+   {
+    "requirement": "There is no requirement to inform an arrested person that he is under arrest if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given.",
+    "quote": "Nothing in this section is to be taken to require a person to be informed— (a) that he is under arrest; or (b) of the ground for the arrest, if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given."
+   },
+   {
+    "requirement": "There is no requirement to inform an arrested person of the ground for the arrest if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given.",
+    "quote": "of the ground for the arrest, if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the exception for escape, where a person is arrested otherwise than by being informed that he is under arrest, the arrest is not lawful unless the arrested person is informed that he is under arrest as soon as is practicable after his arrest.",
+   "quote": "where a person is arrested, otherwise than by being informed that he is under arrest, the arrest is not lawful unless the person arrested is informed that he is under arrest as soon as is practicable after his arrest"
+  },
+  {
+   "requirement": "Where a person is arrested by a constable, the requirement to inform the arrested person that he is under arrest applies regardless of whether the fact of the arrest is obvious.",
+   "quote": "Where a person is arrested by a constable, subsection (1) above applies regardless of whether the fact of the arrest is obvious."
+  },
+  {
+   "requirement": "Subject to the exception for escape, an arrest is not lawful unless the arrested person is informed of the ground for the arrest at the time of, or as soon as is practicable after, the arrest.",
+   "quote": "no arrest is lawful unless the person arrested is informed of the ground for the arrest at the time of, or as soon as is practicable after, the arrest"
+  },
+  {
+   "requirement": "Where a person is arrested by a constable, the requirement to inform the arrested person of the ground for the arrest applies regardless of whether the ground for the arrest is obvious.",
+   "quote": "Where a person is arrested by a constable, subsection (3) above applies regardless of whether the ground for the arrest is obvious."
+  },
+  {
+   "requirement": "There is no requirement to inform an arrested person that he is under arrest if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given.",
+   "quote": "Nothing in this section is to be taken to require a person to be informed— (a) that he is under arrest; or (b) of the ground for the arrest, if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given."
+  },
+  {
+   "requirement": "There is no requirement to inform an arrested person of the ground for the arrest if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given.",
+   "quote": "of the ground for the arrest, if it was not reasonably practicable for him to be so informed by reason of his having escaped from arrest before the information could be given"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2010/15/s40A@current",
+ "section": "uk/ukpga/2010/15/s40A",
+ "version": "current",
+ "source_sha256": "486df256c739daa8e43506777bedced17a962cb3b1d3b17b7ef44f975aad0dc9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employer must take reasonable steps to prevent sexual harassment of its employees in the course of their employment.",
+    "quote": "An employer (A) must take reasonable steps to prevent sexual harassment of employees of A in the course of their employment."
+   },
+   {
+    "requirement": "For the purpose of subsection (1), sexual harassment means harassment of the kind described in section 26(2), namely unwanted conduct of a sexual nature.",
+    "quote": "“Sexual harassment” in subsection (1) means harassment of the kind described in section 26(2) (unwanted conduct of a sexual nature)."
+   },
+   {
+    "requirement": "A contravention of subsection (1), or a contravention of section 111 or 112 that relates to a contravention of subsection (1), is enforceable as an unlawful act under Part 1 of the Equality Act 2006.",
+    "quote": "A contravention of subsection (1) (or a contravention of section 111 or 112 that relates to a contravention of subsection (1)) is enforceable as an unlawful act under Part 1 of the Equality Act 2006"
+   },
+   {
+    "requirement": "By virtue of section 120(8) and (9), a contravention of subsection (1) (or an associated contravention of section 111 or 112) is enforceable only by the Commission under Part 1 of the Equality Act 2006 or by an employment tribunal in accordance with section 124A governing compensation uplift in employee sexual harassment cases.",
+    "quote": "is enforceable only by the Commission under that Part or by an employment tribunal in accordance with section 124A (compensation uplift in employee sexual harassment cases)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An employer must take reasonable steps to prevent sexual harassment of its employees in the course of their employment.",
+   "quote": "An employer (A) must take reasonable steps to prevent sexual harassment of employees of A in the course of their employment."
+  },
+  {
+   "requirement": "For the purpose of subsection (1), sexual harassment means harassment of the kind described in section 26(2), namely unwanted conduct of a sexual nature.",
+   "quote": "“Sexual harassment” in subsection (1) means harassment of the kind described in section 26(2) (unwanted conduct of a sexual nature)."
+  },
+  {
+   "requirement": "A contravention of subsection (1), or a contravention of section 111 or 112 that relates to a contravention of subsection (1), is enforceable as an unlawful act under Part 1 of the Equality Act 2006.",
+   "quote": "A contravention of subsection (1) (or a contravention of section 111 or 112 that relates to a contravention of subsection (1)) is enforceable as an unlawful act under Part 1 of the Equality Act 2006"
+  },
+  {
+   "requirement": "By virtue of section 120(8) and (9), a contravention of subsection (1) (or an associated contravention of section 111 or 112) is enforceable only by the Commission under Part 1 of the Equality Act 2006 or by an employment tribunal in accordance with section 124A governing compensation uplift in employee sexual harassment cases.",
+   "quote": "is enforceable only by the Commission under that Part or by an employment tribunal in accordance with section 124A (compensation uplift in employee sexual harassment cases)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

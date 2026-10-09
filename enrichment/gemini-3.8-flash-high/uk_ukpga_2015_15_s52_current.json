@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2015/15/s52@current",
+ "section": "uk/ukpga/2015/15/s52",
+ "version": "current",
+ "source_sha256": "804faff7a2852bfe82f9bd5ec11bb91e59b993d66f2b0bd4986593624524b272",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 52 applies to a contract to supply a service if the contract does not expressly fix the time for the service to be performed, does not say how it is to be fixed, and information treated under section 50 as included in the contract does not fix the time either.",
+    "quote": "applies to a contract to supply a service, if— (a) the contract does not expressly fix the time for the service to be performed, and does not say how it is to be fixed, and (b) information that is to be treated under section 50 as included in the contract does not fix the time either"
+   },
+   {
+    "requirement": "If section 52 applies, the contract to supply a service is to be treated as including a term that the trader must perform the service within a reasonable time.",
+    "quote": "the contract is to be treated as including a term that the trader must perform the service within a reasonable time"
+   },
+   {
+    "requirement": "Whether a period of time is a reasonable time for performing the service is a question of fact.",
+    "quote": "What is a reasonable time is a question of fact"
+   },
+   {
+    "requirement": "A consumer must refer to section 54 for their rights if the trader breaches the term that section 52 requires to be treated as included in the contract.",
+    "quote": "See section 54 for a consumer's rights if the trader is in breach of a term that this section requires to be treated as included in a contract"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 52 applies to a contract to supply a service if the contract does not expressly fix the time for the service to be performed, does not say how it is to be fixed, and information treated under section 50 as included in the contract does not fix the time either.",
+   "quote": "applies to a contract to supply a service, if— (a) the contract does not expressly fix the time for the service to be performed, and does not say how it is to be fixed, and (b) information that is to be treated under section 50 as included in the contract does not fix the time either"
+  },
+  {
+   "requirement": "If section 52 applies, the contract to supply a service is to be treated as including a term that the trader must perform the service within a reasonable time.",
+   "quote": "the contract is to be treated as including a term that the trader must perform the service within a reasonable time"
+  },
+  {
+   "requirement": "Whether a period of time is a reasonable time for performing the service is a question of fact.",
+   "quote": "What is a reasonable time is a question of fact"
+  },
+  {
+   "requirement": "A consumer must refer to section 54 for their rights if the trader breaches the term that section 52 requires to be treated as included in the contract.",
+   "quote": "See section 54 for a consumer's rights if the trader is in breach of a term that this section requires to be treated as included in a contract"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "key": "uk/ukpga/1996/18/s162@current",
+ "section": "uk/ukpga/1996/18/s162",
+ "version": "current",
+ "source_sha256": "bffff00898bb9a2e32a060b63e15b90592ce2ee694a954e68cf1f5238bd72137",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The amount of an employee's redundancy payment must be calculated by determining the period ending with the relevant date during which the employee has been continuously employed.",
+    "quote": "determining the period, ending with the relevant date, during which the employee has been continuously employed"
+   },
+   {
+    "requirement": "The redundancy payment calculation requires reckoning backwards from the end of the period of continuous employment the number of years of employment falling within that period.",
+    "quote": "reckoning backwards from the end of that period the number of years of employment falling within that period"
+   },
+   {
+    "requirement": "The redundancy payment calculation requires allowing the appropriate amount for each reckoned year of employment.",
+    "quote": "allowing the appropriate amount for each of those years of employment"
+   },
+   {
+    "requirement": "The appropriate amount allowed for a year of employment in which the employee was not below the age of forty-one is one and a half weeks' pay.",
+    "quote": "one and a half weeks’ pay for a year of employment in which the employee was not below the age of forty-one"
+   },
+   {
+    "requirement": "The appropriate amount allowed for a year of employment not covered by paragraph (a) in which the employee was not below the age of twenty-two is one week's pay.",
+    "quote": "one week’s pay for a year of employment (not within paragraph (a)) in which he was not below the age of twenty-two"
+   },
+   {
+    "requirement": "The appropriate amount allowed for each year of employment not falling within paragraph (a) or (b) is half a week's pay.",
+    "quote": "half a week’s pay for each year of employment not within paragraph (a) or (b)"
+   },
+   {
+    "requirement": "Where twenty years of employment have been reckoned in calculating a redundancy payment, no account shall be taken of any year of employment earlier than those twenty years.",
+    "quote": "Where twenty years of employment have been reckoned under subsection (1), no account shall be taken under that subsection of any year of employment earlier than those twenty years"
+   },
+   {
+    "requirement": "Subsections (1) to (3) apply where an employment tribunal determines an employer is liable to pay an employee the whole of the redundancy payment to which the employee would have had a right apart from some other provision, treating references to the amount of a redundancy payment as the amount to which the employee would have been entitled apart from that other provision.",
+    "quote": "an employment tribunal may determine that an employer is liable to pay to an employee— (a) the whole of the redundancy payment to which the employee would have had a right apart from some other provision"
+   },
+   {
+    "requirement": "Subsections (1) to (3) apply where an employment tribunal determines an employer is liable to pay an employee such part of the redundancy payment to which the employee would have had a right apart from some other provision as the tribunal thinks fit, treating references to the amount of a redundancy payment as the amount to which the employee would have been entitled apart from that other provision.",
+    "quote": "such part of the redundancy payment to which the employee would have had a right apart from some other provision as the tribunal thinks fit"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Appropriate amount of pay for a year of employment where the employee was not below the age of forty-one",
+    "value": "one and a half weeks’ pay",
+    "quote": "one and a half weeks’ pay for a year of employment in which the employee was not below the age of forty-one"
+   },
+   {
+    "what": "Minimum age threshold for a year of employment to qualify for one and a half weeks' pay",
+    "value": "forty-one",
+    "quote": "not below the age of forty-one"
+   },
+   {
+    "what": "Appropriate amount of pay for a year of employment not within paragraph (a) where the employee was not below the age of twenty-two",
+    "value": "one week’s pay",
+    "quote": "one week’s pay for a year of employment (not within paragraph (a)) in which he was not below the age of twenty-two"
+   },
+   {
+    "what": "Minimum age threshold for a year of employment to qualify for one week's pay",
+    "value": "twenty-two",
+    "quote": "not below the age of twenty-two"
+   },
+   {
+    "what": "Appropriate amount of pay for each year of employment not within paragraph (a) or (b)",
+    "value": "half a week’s pay",
+    "quote": "half a week’s pay for each year of employment not within paragraph (a) or (b)"
+   },
+   {
+    "what": "Maximum number of reckoned years of employment beyond which earlier years are not taken into account",
+    "value": "twenty years",
+    "quote": "Where twenty years of employment have been reckoned under subsection (1)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The amount of an employee's redundancy payment must be calculated by determining the period ending with the relevant date during which the employee has been continuously employed.",
+   "quote": "determining the period, ending with the relevant date, during which the employee has been continuously employed"
+  },
+  {
+   "requirement": "The redundancy payment calculation requires reckoning backwards from the end of the period of continuous employment the number of years of employment falling within that period.",
+   "quote": "reckoning backwards from the end of that period the number of years of employment falling within that period"
+  },
+  {
+   "requirement": "The redundancy payment calculation requires allowing the appropriate amount for each reckoned year of employment.",
+   "quote": "allowing the appropriate amount for each of those years of employment"
+  },
+  {
+   "requirement": "The appropriate amount allowed for a year of employment in which the employee was not below the age of forty-one is one and a half weeks' pay.",
+   "quote": "one and a half weeks’ pay for a year of employment in which the employee was not below the age of forty-one"
+  },
+  {
+   "requirement": "The appropriate amount allowed for a year of employment not covered by paragraph (a) in which the employee was not below the age of twenty-two is one week's pay.",
+   "quote": "one week’s pay for a year of employment (not within paragraph (a)) in which he was not below the age of twenty-two"
+  },
+  {
+   "requirement": "The appropriate amount allowed for each year of employment not falling within paragraph (a) or (b) is half a week's pay.",
+   "quote": "half a week’s pay for each year of employment not within paragraph (a) or (b)"
+  },
+  {
+   "requirement": "Where twenty years of employment have been reckoned in calculating a redundancy payment, no account shall be taken of any year of employment earlier than those twenty years.",
+   "quote": "Where twenty years of employment have been reckoned under subsection (1), no account shall be taken under that subsection of any year of employment earlier than those twenty years"
+  },
+  {
+   "requirement": "Subsections (1) to (3) apply where an employment tribunal determines an employer is liable to pay an employee the whole of the redundancy payment to which the employee would have had a right apart from some other provision, treating references to the amount of a redundancy payment as the amount to which the employee would have been entitled apart from that other provision.",
+   "quote": "an employment tribunal may determine that an employer is liable to pay to an employee— (a) the whole of the redundancy payment to which the employee would have had a right apart from some other provision"
+  },
+  {
+   "requirement": "Subsections (1) to (3) apply where an employment tribunal determines an employer is liable to pay an employee such part of the redundancy payment to which the employee would have had a right apart from some other provision as the tribunal thinks fit, treating references to the amount of a redundancy payment as the amount to which the employee would have been entitled apart from that other provision.",
+   "quote": "such part of the redundancy payment to which the employee would have had a right apart from some other provision as the tribunal thinks fit"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Appropriate amount of pay for a year of employment not within paragraph (a) where the employee was not below the age of twenty-two",
+   "value": "one week’s pay",
+   "quote": "one week’s pay for a year of employment (not within paragraph (a)) in which he was not below the age of twenty-two"
+  },
+  {
+   "what": "Maximum number of reckoned years of employment beyond which earlier years are not taken into account",
+   "value": "twenty years",
+   "quote": "Where twenty years of employment have been reckoned under subsection (1)"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 2
+ }
+}

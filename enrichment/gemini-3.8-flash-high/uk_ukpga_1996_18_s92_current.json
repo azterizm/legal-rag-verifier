@@ -1,0 +1,165 @@
+{
+ "key": "uk/ukpga/1996/18/s92@current",
+ "section": "uk/ukpga/1996/18/s92",
+ "version": "current",
+ "source_sha256": "b2aea31ed0d9122ff28ebaed1f253d01a67fa24e8a0314b435eabb4e2e108e95",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An employee is entitled to receive from their employer a written statement providing particulars of the reasons for dismissal if the employer gives them notice of termination of their contract of employment.",
+    "quote": "if the employee is given by the employer notice of termination of his contract of employment"
+   },
+   {
+    "requirement": "An employee is entitled to receive from their employer a written statement providing particulars of the reasons for dismissal if their contract of employment is terminated by the employer without notice.",
+    "quote": "if the employee’s contract of employment is terminated by the employer without notice"
+   },
+   {
+    "requirement": "An employee is entitled to receive from their employer a written statement providing particulars of the reasons for dismissal if they are employed under a limited-term contract that terminates by virtue of the limiting event without being renewed under the same contract.",
+    "quote": "if the employee is employed under a limited-term contract and the contract terminates by virtue of the limiting event without being renewed under the same contract"
+   },
+   {
+    "requirement": "Except where subsection (4) or (4A) applies, an employee is entitled to a written statement of reasons for dismissal only if they make a request for one.",
+    "quote": "an employee is entitled to a written statement under this section only if he makes a request for one"
+   },
+   {
+    "requirement": "An employer must provide the written statement of reasons for dismissal within fourteen days of an employee's request.",
+    "quote": "a statement shall be provided within fourteen days of such a request"
+   },
+   {
+    "requirement": "Except where subsection (4) or (4A) applies, an employee is not entitled to a written statement of reasons for dismissal unless on the effective date of termination they have been, or will have been, continuously employed for a period of not less than two years ending with that date.",
+    "quote": "unless on the effective date of termination he has been, or will have been, continuously employed for a period of not less than two years ending with that date"
+   },
+   {
+    "requirement": "A female employee dismissed at any time while pregnant is entitled to a written statement of reasons for dismissal without having to request it and irrespective of whether she has been continuously employed for any period.",
+    "quote": "without having to request it and irrespective of whether she has been continuously employed for any period if she is dismissed— (a) at any time while she is pregnant"
+   },
+   {
+    "requirement": "A female employee dismissed after childbirth in circumstances where her ordinary or additional maternity leave period ends by reason of the dismissal is entitled to a written statement of reasons for dismissal without having to request it and irrespective of whether she has been continuously employed for any period.",
+    "quote": "after childbirth in circumstances in which her ordinary or additional maternity leave period ends by reason of the dismissal"
+   },
+   {
+    "requirement": "An employee dismissed while absent from work during an ordinary or additional adoption leave period is entitled to a written statement of reasons for dismissal without having to request it and irrespective of length of continuous employment if dismissed in circumstances where that leave period ends by reason of the dismissal.",
+    "quote": "An employee who is dismissed while absent from work during an ordinary or additional adoption leave period is entitled to a written statement under this section without having to request it and irrespective of whether he has been continuously employed for any period if he is dismissed in circumstances in which that period ends by reason of the dismissal"
+   },
+   {
+    "requirement": "A written statement giving particulars of the reasons for dismissal is admissible in evidence in any proceedings.",
+    "quote": "A written statement under this section is admissible in evidence in any proceedings."
+   },
+   {
+    "requirement": "Subject to subsection (7), the effective date of termination for an employee whose contract of employment is terminated by notice is the date on which the notice expires.",
+    "quote": "in relation to an employee whose contract of employment is terminated by notice, means the date on which the notice expires"
+   },
+   {
+    "requirement": "Subject to subsection (7), the effective date of termination for an employee whose contract of employment is terminated without notice is the date on which the termination takes effect.",
+    "quote": "in relation to an employee whose contract of employment is terminated without notice, means the date on which the termination takes effect"
+   },
+   {
+    "requirement": "Subject to subsection (7), the effective date of termination for an employee under a limited-term contract terminating by virtue of the limiting event without being renewed under the same contract is the date on which the termination takes effect.",
+    "quote": "in relation to an employee who is employed under a limited-term contract which terminates by virtue of the limiting event without being renewed under the same contract, means the date on which the termination takes effect"
+   },
+   {
+    "requirement": "Where the contract of employment is terminated by the employer and the notice required by section 86 would expire on a later date if duly given on the material date, that later date is the effective date of termination.",
+    "quote": "the notice required by section 86 to be given by an employer would, if duly given on the material date, expire on a date later than the effective date of termination (as defined by subsection (6)), the later date is the effective date of termination"
+   },
+   {
+    "requirement": "For the statutory extension of the effective date of termination, the material date means the date when notice of termination was given by the employer, or the date when the contract was terminated by the employer if no notice was given.",
+    "quote": "“the material date” means— (a) the date when notice of termination was given by the employer, or (b) where no notice was given, the date when the contract of employment was terminated by the employer."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time limit for the employer to provide the written statement following an employee's request",
+    "value": "fourteen days",
+    "quote": "within fourteen days of such a request"
+   },
+   {
+    "what": "Minimum qualifying period of continuous employment required for an employee to be entitled to a written statement",
+    "value": "two years",
+    "quote": "period of not less than two years ending with that date"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An employee is entitled to receive from their employer a written statement providing particulars of the reasons for dismissal if the employer gives them notice of termination of their contract of employment.",
+   "quote": "if the employee is given by the employer notice of termination of his contract of employment"
+  },
+  {
+   "requirement": "An employee is entitled to receive from their employer a written statement providing particulars of the reasons for dismissal if their contract of employment is terminated by the employer without notice.",
+   "quote": "if the employee’s contract of employment is terminated by the employer without notice"
+  },
+  {
+   "requirement": "An employee is entitled to receive from their employer a written statement providing particulars of the reasons for dismissal if they are employed under a limited-term contract that terminates by virtue of the limiting event without being renewed under the same contract.",
+   "quote": "if the employee is employed under a limited-term contract and the contract terminates by virtue of the limiting event without being renewed under the same contract"
+  },
+  {
+   "requirement": "Except where subsection (4) or (4A) applies, an employee is entitled to a written statement of reasons for dismissal only if they make a request for one.",
+   "quote": "an employee is entitled to a written statement under this section only if he makes a request for one"
+  },
+  {
+   "requirement": "An employer must provide the written statement of reasons for dismissal within fourteen days of an employee's request.",
+   "quote": "a statement shall be provided within fourteen days of such a request"
+  },
+  {
+   "requirement": "Except where subsection (4) or (4A) applies, an employee is not entitled to a written statement of reasons for dismissal unless on the effective date of termination they have been, or will have been, continuously employed for a period of not less than two years ending with that date.",
+   "quote": "unless on the effective date of termination he has been, or will have been, continuously employed for a period of not less than two years ending with that date"
+  },
+  {
+   "requirement": "A female employee dismissed at any time while pregnant is entitled to a written statement of reasons for dismissal without having to request it and irrespective of whether she has been continuously employed for any period.",
+   "quote": "without having to request it and irrespective of whether she has been continuously employed for any period if she is dismissed— (a) at any time while she is pregnant"
+  },
+  {
+   "requirement": "A female employee dismissed after childbirth in circumstances where her ordinary or additional maternity leave period ends by reason of the dismissal is entitled to a written statement of reasons for dismissal without having to request it and irrespective of whether she has been continuously employed for any period.",
+   "quote": "after childbirth in circumstances in which her ordinary or additional maternity leave period ends by reason of the dismissal"
+  },
+  {
+   "requirement": "An employee dismissed while absent from work during an ordinary or additional adoption leave period is entitled to a written statement of reasons for dismissal without having to request it and irrespective of length of continuous employment if dismissed in circumstances where that leave period ends by reason of the dismissal.",
+   "quote": "An employee who is dismissed while absent from work during an ordinary or additional adoption leave period is entitled to a written statement under this section without having to request it and irrespective of whether he has been continuously employed for any period if he is dismissed in circumstances in which that period ends by reason of the dismissal"
+  },
+  {
+   "requirement": "A written statement giving particulars of the reasons for dismissal is admissible in evidence in any proceedings.",
+   "quote": "A written statement under this section is admissible in evidence in any proceedings."
+  },
+  {
+   "requirement": "Subject to subsection (7), the effective date of termination for an employee whose contract of employment is terminated by notice is the date on which the notice expires.",
+   "quote": "in relation to an employee whose contract of employment is terminated by notice, means the date on which the notice expires"
+  },
+  {
+   "requirement": "Subject to subsection (7), the effective date of termination for an employee whose contract of employment is terminated without notice is the date on which the termination takes effect.",
+   "quote": "in relation to an employee whose contract of employment is terminated without notice, means the date on which the termination takes effect"
+  },
+  {
+   "requirement": "Subject to subsection (7), the effective date of termination for an employee under a limited-term contract terminating by virtue of the limiting event without being renewed under the same contract is the date on which the termination takes effect.",
+   "quote": "in relation to an employee who is employed under a limited-term contract which terminates by virtue of the limiting event without being renewed under the same contract, means the date on which the termination takes effect"
+  },
+  {
+   "requirement": "Where the contract of employment is terminated by the employer and the notice required by section 86 would expire on a later date if duly given on the material date, that later date is the effective date of termination.",
+   "quote": "the notice required by section 86 to be given by an employer would, if duly given on the material date, expire on a date later than the effective date of termination (as defined by subsection (6)), the later date is the effective date of termination"
+  },
+  {
+   "requirement": "For the statutory extension of the effective date of termination, the material date means the date when notice of termination was given by the employer, or the date when the contract was terminated by the employer if no notice was given.",
+   "quote": "“the material date” means— (a) the date when notice of termination was given by the employer, or (b) where no notice was given, the date when the contract of employment was terminated by the employer."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Time limit for the employer to provide the written statement following an employee's request",
+   "value": "fourteen days",
+   "quote": "within fourteen days of such a request"
+  },
+  {
+   "what": "Minimum qualifying period of continuous employment required for an employee to be entitled to a written statement",
+   "value": "two years",
+   "quote": "period of not less than two years ending with that date"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

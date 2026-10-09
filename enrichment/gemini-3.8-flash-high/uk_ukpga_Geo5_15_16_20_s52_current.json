@@ -1,0 +1,155 @@
+{
+ "key": "uk/ukpga/Geo5/15-16/20/s52@current",
+ "section": "uk/ukpga/Geo5/15-16/20/s52",
+ "version": "current",
+ "source_sha256": "a2fda9fba5cafd09caffec9662b2308272a66c2e3088c44ee391db22221c7252",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "All conveyances of land or of any interest in land are void for the purpose of conveying or creating a legal estate unless they are made by deed.",
+    "quote": "All conveyances of land or of any interest therein are void for the purpose of conveying or creating a legal estate unless made by deed."
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to assents by a personal representative.",
+    "quote": "assents by a personal representative;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to disclaimers made in accordance with sections 178 to 180 or sections 315 to 319 of the Insolvency Act 1986, or to disclaimers not required to be evidenced in writing.",
+    "quote": "disclaimers made in accordance with sections 178 to 180 or sections 315 to 319 of the Insolvency Act 1986, or not required to be evidenced in writing;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to surrenders by operation of law, including surrenders that may by law be effected without writing.",
+    "quote": "surrenders by operation of law, including surrenders which may, by law, be effected without writing;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to leases, tenancies, or other assurances not required by law to be made in writing.",
+    "quote": "leases or tenancies or other assurances not required by law to be made in writing;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to flexible tenancies.",
+    "quote": "flexible tenancies;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to assured tenancies of dwelling-houses in England that are granted by private registered providers of social housing and are neither long tenancies nor shared ownership leases.",
+    "quote": "assured tenancies of dwelling-houses in England that are granted by private registered providers of social housing and are not long tenancies or shared ownership leases;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to receipts other than receipts falling within section 115 of the Law of Property Act 1925.",
+    "quote": "receipts other than those falling within section 115 below;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to vesting orders of the court or other competent authority.",
+    "quote": "vesting orders of the court or other competent authority;"
+   },
+   {
+    "requirement": "The requirement that conveyances be made by deed does not apply to conveyances taking effect by operation of law.",
+    "quote": "conveyances taking effect by operation of law."
+   },
+   {
+    "requirement": "The term 'assured tenancy' has the same meaning as in Part 1 of the Housing Act 1988.",
+    "quote": "“ assured tenancy ” has the same meaning as in Part 1 of the Housing Act 1988;"
+   },
+   {
+    "requirement": "The term 'dwelling-house' has the same meaning as in Part 1 of the Housing Act 1988.",
+    "quote": "“ dwelling-house ” has the same meaning as in Part 1 of the Housing Act 1988;"
+   },
+   {
+    "requirement": "The term 'flexible tenancy' has the meaning given by section 107A of the Housing Act 1985.",
+    "quote": "“ flexible tenancy ” has the meaning given by section 107A of the Housing Act 1985;"
+   },
+   {
+    "requirement": "A 'long tenancy' means a tenancy granted for a term certain of more than 21 years, regardless of whether it is or may become terminable before the end of that term by notice given by the tenant or by re-entry or forfeiture.",
+    "quote": "“ long tenancy ” means a tenancy granted for a term certain of more than 21 years, whether or not it is (or may become) terminable before the end of that term by notice given by the tenant or by re-entry or forfeiture;"
+   },
+   {
+    "requirement": "A 'shared ownership lease' means a lease of a dwelling-house granted on payment of a premium calculated by reference to a percentage of the value of the dwelling-house or of the cost of providing it, or under which the lessee or the lessee's personal representatives will or may be entitled to a sum calculated directly or indirectly by reference to the value of the dwelling-house.",
+    "quote": "“ shared ownership lease ” means a lease of a dwelling-house— granted on payment of a premium calculated by reference to a percentage of the value of the dwelling-house or of the cost of providing it, orunder which the lessee (or the lessee's personal representatives) will or may be entitled to a sum calculated by reference, directly or indirectly, to the value of the dwelling-house."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum term certain required for a tenancy to qualify as a long tenancy",
+    "value": "more than 21 years",
+    "quote": "term certain of more than 21 years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "All conveyances of land or of any interest in land are void for the purpose of conveying or creating a legal estate unless they are made by deed.",
+   "quote": "All conveyances of land or of any interest therein are void for the purpose of conveying or creating a legal estate unless made by deed."
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to assents by a personal representative.",
+   "quote": "assents by a personal representative;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to disclaimers made in accordance with sections 178 to 180 or sections 315 to 319 of the Insolvency Act 1986, or to disclaimers not required to be evidenced in writing.",
+   "quote": "disclaimers made in accordance with sections 178 to 180 or sections 315 to 319 of the Insolvency Act 1986, or not required to be evidenced in writing;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to surrenders by operation of law, including surrenders that may by law be effected without writing.",
+   "quote": "surrenders by operation of law, including surrenders which may, by law, be effected without writing;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to leases, tenancies, or other assurances not required by law to be made in writing.",
+   "quote": "leases or tenancies or other assurances not required by law to be made in writing;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to flexible tenancies.",
+   "quote": "flexible tenancies;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to assured tenancies of dwelling-houses in England that are granted by private registered providers of social housing and are neither long tenancies nor shared ownership leases.",
+   "quote": "assured tenancies of dwelling-houses in England that are granted by private registered providers of social housing and are not long tenancies or shared ownership leases;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to receipts other than receipts falling within section 115 of the Law of Property Act 1925.",
+   "quote": "receipts other than those falling within section 115 below;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to vesting orders of the court or other competent authority.",
+   "quote": "vesting orders of the court or other competent authority;"
+  },
+  {
+   "requirement": "The requirement that conveyances be made by deed does not apply to conveyances taking effect by operation of law.",
+   "quote": "conveyances taking effect by operation of law."
+  },
+  {
+   "requirement": "The term 'assured tenancy' has the same meaning as in Part 1 of the Housing Act 1988.",
+   "quote": "“ assured tenancy ” has the same meaning as in Part 1 of the Housing Act 1988;"
+  },
+  {
+   "requirement": "The term 'dwelling-house' has the same meaning as in Part 1 of the Housing Act 1988.",
+   "quote": "“ dwelling-house ” has the same meaning as in Part 1 of the Housing Act 1988;"
+  },
+  {
+   "requirement": "The term 'flexible tenancy' has the meaning given by section 107A of the Housing Act 1985.",
+   "quote": "“ flexible tenancy ” has the meaning given by section 107A of the Housing Act 1985;"
+  },
+  {
+   "requirement": "A 'long tenancy' means a tenancy granted for a term certain of more than 21 years, regardless of whether it is or may become terminable before the end of that term by notice given by the tenant or by re-entry or forfeiture.",
+   "quote": "“ long tenancy ” means a tenancy granted for a term certain of more than 21 years, whether or not it is (or may become) terminable before the end of that term by notice given by the tenant or by re-entry or forfeiture;"
+  },
+  {
+   "requirement": "A 'shared ownership lease' means a lease of a dwelling-house granted on payment of a premium calculated by reference to a percentage of the value of the dwelling-house or of the cost of providing it, or under which the lessee or the lessee's personal representatives will or may be entitled to a sum calculated directly or indirectly by reference to the value of the dwelling-house.",
+   "quote": "“ shared ownership lease ” means a lease of a dwelling-house— granted on payment of a premium calculated by reference to a percentage of the value of the dwelling-house or of the cost of providing it, orunder which the lessee (or the lessee's personal representatives) will or may be entitled to a sum calculated by reference, directly or indirectly, to the value of the dwelling-house."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum term certain required for a tenancy to qualify as a long tenancy",
+   "value": "more than 21 years",
+   "quote": "term certain of more than 21 years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}
