@@ -665,3 +665,12 @@ unique prompts. No grade, label or recorded verdict is sent to Modal or the rout
 - R5: every wrong text a judge passes and every right text it rolls back under Replace, with its reasons. Not
   reclassified.
 - R6: Qwen's agreement with itself on Part A at xhigh.
+
+### Stop 42: prompt frozen (2026-10-09, before the full run)
+
+Pilot on dev texts vdev-0001, 0002, 0003, 0006 and 0007, one clause each. Gemini and Qwen at both efforts gave
+valid JSON on the first ask, 15 of 15. All three supported the first three and contradicted the last two
+("must hear" against "may consider"; "never" against the late-claim exception). Gemini took 4 to 9 s per call.
+Qwen low took 6 to 10 s and 315 to 665 tokens. Qwen xhigh took 3 to 86 s and 197 to 6,921 tokens. The prompt
+is kept as written. Frozen prompt sha256 `72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b`.
+Pilot calls: 5 Gemini, 10 Qwen.
