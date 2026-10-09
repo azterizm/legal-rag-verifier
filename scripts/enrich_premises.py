@@ -14,10 +14,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 import re
 import sys
-import urllib.request
 from pathlib import Path
 from typing import Any
 
@@ -26,15 +24,15 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "batteries/verifier"))
 
 import premises  # noqa: E402
+from router import URL as ROUTER_URL  # type: ignore[import-not-found]  # noqa: E402, F401
+from router import _key  # noqa: E402, F401
 
 from legal_rag_verifier.citations import render_citation  # noqa: E402
 from legal_rag_verifier.enrichment import audit_entry  # noqa: E402
 from legal_rag_verifier.premise import PassageKind, Premise  # noqa: E402
 
-ROUTER_URL = "http://localhost:8317/v1/chat/completions"
 MODEL = "gemini-3.8-flash-high"
 OUT = ROOT / "enrichment" / MODEL
-KEY_FILE = ROOT / ".router_key"  # git-ignored, mode 600
 
 SYSTEM = (
     "You are a senior UK lawyer writing a public practice manual. Use ONLY the statutory text "
@@ -56,10 +54,6 @@ Return JSON with keys:
 PROMPT_SHA = hashlib.sha256((SYSTEM + USER).encode()).hexdigest()
 
 
-def _key() -> str:
-    return os.environ.get("LLM_ROUTER_KEY") or KEY_FILE.read_text(encoding="utf-8").strip()
-
-
 def _extract_json(text: str) -> dict[str, Any]:
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.MULTILINE).strip()
     start, end = text.find("{"), text.rfind("}")
@@ -70,15 +64,10 @@ def _extract_json(text: str) -> dict[str, Any]:
 
 
 def _chat(messages: list[dict[str, str]]) -> str:
-    body = json.dumps({"model": MODEL, "messages": messages, "temperature": 0}).encode()
-    request = urllib.request.Request(
-        ROUTER_URL,
-        data=body,
-        method="POST",
-        headers={"Content-Type": "application/json", "Authorization": f"Bearer {_key()}"},
-    )
-    with urllib.request.urlopen(request, timeout=300) as response:  # noqa: S310
-        content: str = json.loads(response.read())["choices"][0]["message"]["content"]
+    """One reply through ``router.chat`` (backoff and retries on rate limits and server errors)."""
+    from router import chat  # noqa: PLC0415
+
+    content: str = chat(MODEL, messages)["content"]
     return content
 
 
@@ -137,7 +126,7 @@ def main() -> None:
         for key, unit in units(premise).items():
             todo.setdefault(key, {**unit, "title": title})
     OUT.mkdir(parents=True, exist_ok=True)
-    calls = cached = 0
+    calls = cached = failed = 0
     for key, unit in sorted(todo.items()):
         text = "\n".join(unit["texts"])
         sha = hashlib.sha256(text.encode()).hexdigest()
@@ -153,7 +142,12 @@ def main() -> None:
         user = USER.format(
             citation=render_citation(tail), title=unit["title"], version=version, text=text
         )
-        raw, attempts = ask(user)
+        try:
+            raw, attempts = ask(user)
+        except (ValueError, RuntimeError) as exc:  # no JSON, or the router still failing
+            failed += 1
+            print(f"{key}: failed, retried on the next run ({exc})", flush=True)
+            continue
         calls += attempts
         audit = audit_entry(raw, text)
         entry = {
@@ -174,7 +168,8 @@ def main() -> None:
             f"thresholds {a['thresholds_verified']}/{a['thresholds_proposed']}",
             flush=True,
         )
-    print(json.dumps({"units": len(todo), "cached": cached, "router_calls": calls}))
+    summary = {"units": len(todo), "cached": cached, "router_calls": calls, "failed": failed}
+    print(json.dumps(summary))
 
 
 if __name__ == "__main__":

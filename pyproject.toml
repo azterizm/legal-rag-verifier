@@ -109,7 +109,7 @@ warn_unreachable = true
 enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
 mypy_path = "src"
 files = ["src", "tests", "scripts", "batteries"]
-exclude = ["^uk_scrap_data/", "^data/", "^batteries/router/", "^scripts/modal_m4\\.py$", "^scripts/modal_normalise\\.py$", "^scripts/modal_auditor_judge\\.py$"]  # modal_* run under `uv run --with modal`
+exclude = ["^uk_scrap_data/", "^data/", "^batteries/router/", "^scripts/modal_m4\\.py$", "^scripts/modal_normalise\\.py$", "^scripts/modal_auditor_judge\\.py$", "^scripts/modal_distill\\.py$"]  # modal_* run under `uv run --with modal`
 
 [[tool.mypy.overrides]]
 module = ["torch", "torch.*", "transformers", "transformers.*", "sglang", "sglang.*", "modal", "huggingface_hub", "legal_rag_router"]
