@@ -961,3 +961,29 @@ gave 4,433 unique clauses that reach the entailment check. Gemini labelled all 4
 Opus 5.5 labelled a random 500 of them: it agreed with Gemini on 410 (82 %). Of the 90 differences, Gemini said not
 stated where Opus said contradicted 47 times and supported 36 times; the other 7 split 5 and 2. So Gemini's labels
 lean to not stated, the same lean seen on the dev sets. Opus 5.5 spend so far $7.67 of $40; Gemini calls 5,600.
+
+### Stop 47: the fresh test (method fixed 2026-10-09, before any judge sees a fresh clause)
+
+360 sentences; 319 reach the entailment check, giving 323 per-clause prompts (stop 42's prompt) and 3,236
+(candidate, clause) pairs. The judges label them before your grades exist. No grade is in any prompt, and the code
+fails if a question appears in one. Scoring runs once, from the committed labels, after your grades are committed.
+Units are sentences; `unsure` is left out.
+
+Candidates and placements (Replace or Replace strict, whichever had the higher mean accuracy on Part A and Part B;
+ties go to Replace):
+- V0 (DeBERTa, scored on an L4 and replayed), claim check only, no auditor.
+- Gemini per clause, the teacher: Replace (dev 82.4 / 87.5 against 82.4 / 82.5).
+- Qwen3.8 27B low, thinking on, off the shelf (stop 42 settings, H100): Replace strict (94.1 / 87.5).
+- Qwen3.8 27B thinking off, untrained (L40S): Replace (tie).
+- K2 Horizon 7B low effort, untrained (L40S): Replace (tie).
+- The K2 student (L40S): placement chosen from its stop 46 dev numbers by the same rule.
+
+Readings, per domain (software, statutes) and in total:
+- F1: each candidate against V0 at the stop 40 bar (false rollbacks at most half, caught at least 90 %).
+- F2, the distillation reading: the student succeeds if its accuracy is within 3 points of Gemini's on each
+  domain and its p95 per clause one at a time is at most 2 s.
+- F3: the student against Qwen 27B low off the shelf.
+- F4: latency per clause, and time added per answer, from the bulk runs.
+- F5: every error of the teacher and the student, with its reason. Not reclassified.
+- Also reported: answers with the source and closed-book apart; agreement of each judge with your grades on
+  `contradicted` against `not_stated`.
