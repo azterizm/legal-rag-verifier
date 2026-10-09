@@ -111,10 +111,52 @@ def units(premise: Premise) -> dict[str, dict[str, Any]]:
     return groups
 
 
+def enrich_one(key: str, unit: dict[str, Any], *, dry_run: bool = False) -> str:
+    """One unit: ``cached``, ``called``, ``dry`` or ``failed`` (retried on the next run)."""
+    text = "\n".join(unit["texts"])
+    sha = hashlib.sha256(text.encode()).hexdigest()
+    path = OUT / (re.sub(r"[^A-Za-z0-9]+", "_", key) + ".json")
+    if path.exists() and json.loads(path.read_text(encoding="utf-8"))["source_sha256"] == sha:
+        return "cached"
+    if dry_run:
+        print("would call:", key, len(text), "chars")
+        return "dry"
+    tail = unit["section"].split("/")[-1]
+    version = "" if unit["version"] == "current" else f", as in force from {unit['version']}"
+    citation = render_citation(tail)
+    user = USER.format(citation=citation, title=unit["title"], version=version, text=text)
+    try:
+        raw, attempts = ask(user)
+    except (ValueError, RuntimeError) as exc:  # no JSON, or the router still failing
+        print(f"{key}: failed, retried on the next run ({exc})", flush=True)
+        return "failed"
+    audit = audit_entry(raw, text)
+    entry = {
+        "key": key,
+        "section": unit["section"],
+        "version": unit["version"],
+        "source_sha256": sha,
+        "model": MODEL,
+        "prompt_sha256": PROMPT_SHA,
+        "attempts": attempts,
+        "raw": raw,
+        **audit.to_dict(),
+    }
+    path.write_text(json.dumps(entry, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    a = entry["audit"]
+    print(
+        f"{key}: elements {a['elements_verified']}/{a['elements_proposed']}, "
+        f"thresholds {a['thresholds_verified']}/{a['thresholds_proposed']}",
+        flush=True,
+    )
+    return "called"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("battery", type=Path)
     parser.add_argument("--dry-run", action="store_true", help="list units, call nothing")
+    parser.add_argument("--workers", type=int, default=1, help="calls at a time")
     args = parser.parse_args()
     rows = [json.loads(line) for line in args.battery.read_text(encoding="utf-8").splitlines()]
     todo: dict[str, dict[str, Any]] = {}
@@ -126,50 +168,14 @@ def main() -> None:
         for key, unit in units(premise).items():
             todo.setdefault(key, {**unit, "title": title})
     OUT.mkdir(parents=True, exist_ok=True)
-    calls = cached = failed = 0
-    for key, unit in sorted(todo.items()):
-        text = "\n".join(unit["texts"])
-        sha = hashlib.sha256(text.encode()).hexdigest()
-        path = OUT / (re.sub(r"[^A-Za-z0-9]+", "_", key) + ".json")
-        if path.exists() and json.loads(path.read_text(encoding="utf-8"))["source_sha256"] == sha:
-            cached += 1
-            continue
-        if args.dry_run:
-            print("would call:", key, len(text), "chars")
-            continue
-        tail = unit["section"].split("/")[-1]
-        version = "" if unit["version"] == "current" else f", as in force from {unit['version']}"
-        user = USER.format(
-            citation=render_citation(tail), title=unit["title"], version=version, text=text
+    from collections import Counter  # noqa: PLC0415
+    from concurrent.futures import ThreadPoolExecutor  # noqa: PLC0415
+
+    with ThreadPoolExecutor(args.workers) as pool:
+        results = Counter(
+            pool.map(lambda kv: enrich_one(*kv, dry_run=args.dry_run), sorted(todo.items()))
         )
-        try:
-            raw, attempts = ask(user)
-        except (ValueError, RuntimeError) as exc:  # no JSON, or the router still failing
-            failed += 1
-            print(f"{key}: failed, retried on the next run ({exc})", flush=True)
-            continue
-        calls += attempts
-        audit = audit_entry(raw, text)
-        entry = {
-            "key": key,
-            "section": unit["section"],
-            "version": unit["version"],
-            "source_sha256": sha,
-            "model": MODEL,
-            "prompt_sha256": PROMPT_SHA,
-            "attempts": attempts,
-            "raw": raw,
-            **audit.to_dict(),
-        }
-        path.write_text(json.dumps(entry, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-        a = entry["audit"]
-        print(
-            f"{key}: elements {a['elements_verified']}/{a['elements_proposed']}, "
-            f"thresholds {a['thresholds_verified']}/{a['thresholds_proposed']}",
-            flush=True,
-        )
-    summary = {"units": len(todo), "cached": cached, "router_calls": calls, "failed": failed}
-    print(json.dumps(summary))
+    print(json.dumps({"units": len(todo), **results}))
 
 
 if __name__ == "__main__":

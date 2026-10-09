@@ -80,6 +80,7 @@ def download_k2() -> str:
 @app.local_entrypoint()
 def check_k2() -> None:
     print(probe.remote())
+    print(download_k2.remote())
 
 
 @app.cls(
@@ -177,4 +178,137 @@ def fresh_answers() -> None:
         startup_recorded = True
         ledger.record("stop43 fresh answers", "L4", seconds, f"{len(good)} answers")
         print(f"{len(good)}/{len(out['results'])} answers, {out['seconds']:.0f} s", flush=True)
+    print(f"Modal spent ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 44: untrained baselines
+
+CONTEXT = ("--context-length", "65536")
+QWEN27 = "Qwen/Qwen3.8-27B-FP8"
+QWEN27_REVISION = "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
+JUDGES: dict[str, dict[str, Any]] = {
+    "qwen27-nothink": {
+        "model": QWEN27,
+        "revision": QWEN27_REVISION,
+        "gpu": "L40S",
+        "args": ["--reasoning-parser", "qwen3", "--context-length", "65536"],
+        # the card's non-thinking sampling
+        "sampling": {
+            "temperature": 0.7,
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0.0,
+            "presence_penalty": 1.5,
+            "max_tokens": 1024,
+            "seed": 0,
+        },
+        "template": {"enable_thinking": False},
+    },
+    "k2-low": {
+        "model": K2,
+        "revision": K2_REVISION,
+        "gpu": "L40S",  # SGLang serves K2 in FP8 only from pre-quantised weights; bf16 here
+        "args": ["--reasoning-parser", "k2_horizon", *CONTEXT],
+        # the card's recommended sampling, low effort
+        "sampling": {"temperature": 1.0, "top_p": 0.95, "max_tokens": 16384, "seed": 0},
+        "template": {"reasoning_effort": "low"},
+    },
+}
+
+
+@app.cls(
+    image=judge_image,
+    gpu="L4",
+    volumes={"/hf": weights},
+    timeout=4 * 3600,
+    max_containers=1,
+    scaledown_window=60,
+)
+class Judge:
+    """One judge model behind SGLang, started once per container."""
+
+    name: str = modal.parameter()
+
+    @modal.enter()
+    def start(self) -> None:
+        spec = JUDGES[self.name]
+        self.started = time.time()
+        self.server = subprocess.Popen(  # noqa: S603
+            [
+                sys.executable, "-m", "sglang.launch_server",
+                "--model-path", spec["model"], "--revision", spec["revision"],
+                "--port", str(PORT), "--mem-fraction-static", "0.85", *spec["args"],
+            ]
+        )  # fmt: skip
+        self.url = f"http://127.0.0.1:{PORT}"
+        _wait(self.server, self.url)
+        self.startup = time.time() - self.started
+
+    @modal.exit()
+    def stop(self) -> None:
+        self.server.terminate()
+
+    @modal.method()
+    def judge(self, requests: dict[str, str], workers: int) -> dict[str, Any]:
+        from auditor_judge import judge_all, server_chat  # noqa: PLC0415
+
+        spec = JUDGES[self.name]
+        chat = server_chat(self.url, spec["model"], spec["sampling"], spec["template"])
+        t0 = time.time()
+        labels = judge_all(requests, chat, workers)
+        return {"labels": labels, "seconds": time.time() - t0, "startup": self.startup}
+
+
+def _judge_local() -> Any:
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import auditor_judge  # noqa: PLC0415
+    import modal_ledger  # noqa: PLC0415
+
+    return auditor_judge, modal_ledger
+
+
+def _append(aj: Any, name: str, labels: dict[str, Any]) -> None:
+    path = aj.OUT / "labels" / f"{name}.jsonl"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        for sha, label in labels.items():
+            if label.get("label") != "error" or label.get("attempts", 0) >= 3:  # noqa: PLR2004
+                f.write(json.dumps({"sha": sha, **label}, ensure_ascii=False) + "\n")
+
+
+@app.local_entrypoint()
+def baselines(name: str, sequential: int = 20) -> None:
+    """Every stop 42 per-clause prompt, 16 at a time in chunks of 40; then ``sequential`` Part A
+    prompts one at a time, for latency. Resumable: done prompts are skipped."""
+    aj, ledger = _judge_local()
+    spec = JUDGES[name]
+    texts, _, recorded = aj.recorded_sets()
+    asked = aj.requests(recorded)
+    aj.assert_prompts_clean(texts, asked)
+    have = aj.read_labels(name)
+    todo = {k: v for k, v in asked.items() if k not in have}
+    part_a = aj.requests([r for r, t in zip(recorded, texts, strict=True) if t["level"] == "A"])
+    seq_have = aj.read_labels(f"{name}-sequential")
+    seq_todo = {k: v for k, v in list(part_a.items())[:sequential] if k not in seq_have}
+    print(f"{name}: {len(todo)} to judge, {len(seq_todo)} one at a time", flush=True)
+    if not todo and not seq_todo:
+        return
+    ledger.check(spec["gpu"], 3600)
+    judge = Judge.with_options(gpu=spec["gpu"])(name=name)
+    items = list(todo.items())
+    chunks = [dict(items[i : i + CHUNK]) for i in range(0, len(items), CHUNK)]
+    startup_recorded = False
+    for out in judge.judge.map(chunks, kwargs={"workers": WORKERS}, return_exceptions=True):
+        if isinstance(out, Exception):
+            print(f"chunk failed, retried on the next run: {out!r}", flush=True)
+            continue
+        _append(aj, name, out["labels"])
+        seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+        startup_recorded = True
+        ledger.record(f"stop44 {name}", spec["gpu"], seconds, f"{len(out['labels'])} prompts")
+        print(f"{len(out['labels'])} prompts, {out['seconds']:.0f} s", flush=True)
+    if seq_todo:
+        out = judge.judge.remote(seq_todo, 1)
+        _append(aj, f"{name}-sequential", out["labels"])
+        ledger.record(f"stop44 {name} sequential", spec["gpu"], out["seconds"])
     print(f"Modal spent ${ledger.spent():.2f}")

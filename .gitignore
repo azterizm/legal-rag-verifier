@@ -69,3 +69,11 @@ results/fresh/key.json
 results/fresh/sheet.md
 results/distill/*.lock
 results/distill/*.tmp
+results/distill/pool.jsonl
+results/distill/pool_statutes.jsonl
+results/distill/pages/
+results/distill/questions.jsonl
+results/distill/answers.jsonl
+results/distill/units.jsonl
+results/distill/train.jsonl
+results/distill/validation.jsonl

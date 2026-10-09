@@ -7,7 +7,9 @@ estimate would take the ledger past the cap.
 
 from __future__ import annotations
 
+import fcntl
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -43,17 +45,19 @@ def check(gpu: str, estimate_seconds: float) -> None:
 
 
 def record(run: str, gpu: str, seconds: float, note: str = "") -> None:
-    data = entries()
-    data.append(
-        {
-            "run": run,
-            "gpu": gpu,
-            "seconds": round(seconds, 1),
-            "usd": usd(gpu, seconds),
-            "note": note,
-        }
-    )
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    tmp = LEDGER.with_suffix(".tmp")
-    tmp.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
-    tmp.replace(LEDGER)
+    with LEDGER.with_suffix(".lock").open("w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)  # several processes share the ledger
+        data = entries()
+        data.append(
+            {
+                "run": run,
+                "gpu": gpu,
+                "seconds": round(seconds, 1),
+                "usd": usd(gpu, seconds),
+                "note": note,
+            }
+        )
+        tmp = LEDGER.with_suffix(f".{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
+        tmp.replace(LEDGER)
