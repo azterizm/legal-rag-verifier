@@ -84,7 +84,12 @@ def _chat(messages: list[dict[str, str]]) -> str:
 
 def ask(user: str) -> tuple[dict[str, Any], int]:
     """One JSON reply; re-asks (at most twice) only when the reply is not JSON."""
-    messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
+    return ask_with(SYSTEM, user)
+
+
+def ask_with(system: str, user: str) -> tuple[dict[str, Any], int]:
+    """As ``ask`` with another system prompt (stop 41, ``normalise_sources.py``)."""
+    messages = [{"role": "system", "content": system}, {"role": "user", "content": user}]
     out = ""
     for attempt in range(1, 4):
         out = _chat(messages)
