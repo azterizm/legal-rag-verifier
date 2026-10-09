@@ -849,3 +849,16 @@ On stop 42's texts (Part A, Part B; statutes reported apart and circular for Cla
   off on an L40S, and K2 Horizon 7B @3b6ae39 at low effort on an L4 (FP8). Same replay as stop 42.
 - Reported: each arm on the stop 42 table (false rollbacks, caught, accuracy, bar), agreement between teachers,
   Opus 5.5 spend, latency per clause.
+
+### Stop 43: answers and sheet sealed (2026-10-09, before you grade)
+
+160 answers on a Modal L4 (4 chunks, all finished, $0.07 by the ledger): 360 sentences, 163 from answers with the
+source and 197 closed-book. Your sheet is `results/fresh/sheet.md` (git-ignored: it quotes statute text), your
+column is `correct` in `results/fresh/grades.csv`. Seal (`results/fresh/seal.json`), sha256:
+- `batteries/fresh/software.jsonl` `9c31235f2b023cbc7fc34c70ce8df9a64ca0a59646ce48dfd2295eed4bf28b6a`
+- `batteries/fresh/statutes.jsonl` `9e44bc8960fd1cdab5b7c68d510bb89c09480a41242bfb21e580a5497ed3aa3c`
+- `results/fresh/answers.jsonl` `36b687cb5e77dfbb2e54c43d3d4f6ca34a39d937c3c2cf7a6f02612e696e7e9d` (git-ignored)
+- `results/fresh/key.json` `9d052dcca678f94a3ee9010bd07e9251c5f615cbdac5e3947ef98afbc886497b` (git-ignored)
+- `results/fresh/sheet.md` `70cadb0bd6712c2dc23390e520ce2822f7ccb24d965ed7bf59119a575cad42f8` (git-ignored)
+
+No model sees these answers before stop 47. Training data in stop 45 excludes every fresh source by code.

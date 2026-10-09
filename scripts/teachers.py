@@ -81,13 +81,14 @@ def _write(name: str, batch: Mapping[str, Any], result: Mapping[str, Any]) -> No
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
-def label(name: str, todo_batches: Sequence[Mapping[str, Any]]) -> dict[str, int]:
+def label(name: str, teacher: str, todo_batches: Sequence[Mapping[str, Any]]) -> dict[str, int]:
     """Ask every batch not yet done; stop scheduling new ones once the cap is reached."""
     done = done_batches(name)
     todo = [b for b in todo_batches if b["key"] not in done]
     print(f"{name}: {len(todo_batches)} batches, {len(done)} done, {len(todo)} to ask", flush=True)
-    chat = router_chat(TEACHERS[name])
+    chat = router_chat(TEACHERS[teacher])
     stop = threading.Event()
+    workers = WORKERS[teacher]
     counts = {"ok": 0, "failed": 0, "skipped_cap": 0}
 
     def one(batch: Mapping[str, Any]) -> None:
@@ -109,7 +110,7 @@ def label(name: str, todo_batches: Sequence[Mapping[str, Any]]) -> dict[str, int
         if n % 20 == 0:
             print(f"{name}: {n}/{len(todo)}", flush=True)
 
-    with ThreadPoolExecutor(WORKERS[name]) as pool:
+    with ThreadPoolExecutor(workers) as pool:
         list(pool.map(one, todo))
     print(f"{name}: {counts}", flush=True)
     return counts
@@ -134,7 +135,7 @@ def main() -> None:
     args = parser.parse_args()
     if args.command == "dev":
         levels = ("A", "B") if args.teacher == "opus55" else ("A", "B", "S")
-        label(f"dev-{args.teacher}", dev_batches(levels))
+        label(f"dev-{args.teacher}", args.teacher, dev_batches(levels))
     else:
         from check44 import main as check  # type: ignore[import-not-found]  # noqa: PLC0415
 

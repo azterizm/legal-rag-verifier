@@ -67,3 +67,5 @@ results/auditor_judge/pilot/
 results/fresh/answers.jsonl
 results/fresh/key.json
 results/fresh/sheet.md
+results/distill/*.lock
+results/distill/*.tmp
