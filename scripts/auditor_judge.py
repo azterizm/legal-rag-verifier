@@ -176,6 +176,115 @@ def ask(chat: Callable[[list[dict[str, str]]], dict[str, Any]], user: str) -> di
     }
 
 
+# ---------------------------------------------------------------------- batched teacher calls
+
+_LABELS_BLOCK = USER[USER.index("Labels:") : USER.index("Return JSON")]
+BATCH_USER = (
+    """Passages:
+{passages}
+
+Answer so far. Use it only to work out what words such as "it" or "this" refer to. It is not \
+evidence.
+<<<
+{prefix}
+>>>
+
+Sentences to check, in the order they continue the answer. Each earlier sentence in this list \
+is context for the later ones in the same way, not evidence.
+{sentences}
+
+"""
+    + _LABELS_BLOCK
+    + """Return a JSON object with key "results": a list with one entry per numbered sentence, \
+in order, each with keys "sentence" (its number), "label" (one of the three), "passage" (the \
+number of the passage that decides it, or 0) and "reason" (one sentence)."""
+)
+BATCH_SHA = hashlib.sha256((SYSTEM + BATCH_USER).encode()).hexdigest()
+MAX_BATCH = 12
+
+
+def batch_prompt(clauses: Sequence[str], candidates: Sequence[str], prefix: str) -> str:
+    passages = "\n\n".join(f"[{n}] {text}" for n, text in enumerate(candidates, 1))
+    sentences = "\n".join(f"[{n}] {c}" for n, c in enumerate(clauses, 1))
+    return BATCH_USER.format(passages=passages, prefix=prefix or "(none)", sentences=sentences)
+
+
+def batches(units: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]:
+    """Group clauses for one call each. ``units`` are recorded texts in answer order, each with
+    ``group`` (the answer it belongs to), ``prefix`` and ``calls``. Consecutive clauses of one
+    answer with the same candidates share a call, up to ``MAX_BATCH``. Each clause keeps the key
+    of its stop 42 single-clause prompt, so labels map back unchanged."""
+    out: list[dict[str, Any]] = []
+    current: dict[str, Any] | None = None
+    for u in units:
+        for clause, candidates in u["calls"]:
+            single = prompt_key(user_prompt(clause, candidates, u["prefix"]))
+            same = (
+                current is not None
+                and current["group"] == u["group"]
+                and current["candidates"] == list(candidates)
+                and len(current["clauses"]) < MAX_BATCH
+            )
+            if not same:
+                current = {
+                    "group": u["group"],
+                    "prefix": u["prefix"],
+                    "candidates": list(candidates),
+                    "clauses": [],
+                    "keys": [],
+                }
+                out.append(current)
+            assert current is not None  # noqa: S101 - set above
+            if single not in current["keys"]:
+                current["clauses"].append(clause)
+                current["keys"].append(single)
+    for b in out:
+        b["user"] = batch_prompt(b["clauses"], b["candidates"], b["prefix"])
+        b["key"] = prompt_key(b["user"])
+    return out
+
+
+def parse_batch(text: str, n: int) -> list[dict[str, Any]]:
+    """A batched reply as ``n`` labels in order; ValueError unless every sentence has one."""
+    reply = extract_json(text)
+    results = reply.get("results")
+    if not isinstance(results, list) or len(results) != n:
+        raise ValueError(f"expected {n} results")
+    out = []
+    for item in results:
+        if not isinstance(item, dict):
+            raise ValueError("result is not an object")  # noqa: TRY004
+        out.append(parse_reply(json.dumps(item)))
+    return out
+
+
+BATCH_RETRY = (
+    'Reply with ONLY the JSON object {"results": [...]}, one entry per numbered sentence, in order.'
+)
+
+
+def ask_batch(
+    chat: Callable[[list[dict[str, str]]], dict[str, Any]], batch: Mapping[str, Any]
+) -> dict[str, Any]:
+    """At most 3 asks for a complete batched reply. Labels in clause order, or an error."""
+    messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": batch["user"]}]
+    ms = tokens = 0.0
+    content = ""
+    for attempt in range(1, 4):
+        reply = chat(messages)
+        ms += reply["ms"]
+        tokens += reply.get("tokens") or 0
+        content = reply["content"] or ""
+        try:
+            labels = parse_batch(content, len(batch["clauses"]))
+        except (ValueError, json.JSONDecodeError):
+            messages = [*messages[:2], {"role": "assistant", "content": content}]
+            messages.append({"role": "user", "content": BATCH_RETRY})
+            continue
+        return {"labels": labels, "attempts": attempt, "ms": ms, "tokens": tokens}
+    return {"labels": None, "error": content[-300:], "attempts": 3, "ms": ms, "tokens": tokens}
+
+
 def gemini_chat(messages: list[dict[str, str]]) -> dict[str, Any]:
     """One router call (``enrich_premises._chat``: chat/completions, gemini-3.8-flash-high, T 0)."""
     from enrich_premises import _chat  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -185,20 +294,18 @@ def gemini_chat(messages: list[dict[str, str]]) -> dict[str, Any]:
     return {"content": content, "ms": (time.perf_counter() - t0) * 1000, "tokens": None}
 
 
-def qwen_chat(url: str, effort: str, seed: int) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
-    """A chat function against the SGLang server (Modal), thinking on, the card's sampling."""
+def server_chat(
+    url: str, model: str, sampling: Mapping[str, Any], template: Mapping[str, Any]
+) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
+    """A chat function against an SGLang server on Modal, with given sampling and template
+    arguments (``chat_template_kwargs``)."""
 
     def chat(messages: list[dict[str, str]]) -> dict[str, Any]:
         body = {
-            "model": QWEN,
+            "model": model,
             "messages": messages,
-            "temperature": 1.0,
-            "top_p": 0.95,
-            "top_k": 20,
-            "min_p": 0.0,
-            "max_tokens": 16384,
-            "seed": seed,
-            "chat_template_kwargs": {"enable_thinking": True, "reasoning_effort": effort},
+            **sampling,
+            "chat_template_kwargs": dict(template),
         }
         request = urllib.request.Request(  # noqa: S310 - the Modal-local SGLang server
             f"{url}/v1/chat/completions",
@@ -219,6 +326,13 @@ def qwen_chat(url: str, effort: str, seed: int) -> Callable[[list[dict[str, str]
         }
 
     return chat
+
+
+def qwen_chat(url: str, effort: str, seed: int) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
+    """Qwen3.8 27B with thinking on at the card's sampling (stop 42)."""
+    sampling = {"temperature": 1.0, "top_p": 0.95, "top_k": 20, "min_p": 0.0}
+    sampling |= {"max_tokens": 16384, "seed": seed}
+    return server_chat(url, QWEN, sampling, {"enable_thinking": True, "reasoning_effort": effort})
 
 
 def judge_all(

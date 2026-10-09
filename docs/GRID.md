@@ -828,3 +828,24 @@ The with-source prompts are stop 37's software prompt and the engine's `SYSTEM_P
 in chunks of 40, written as each chunk returns; a rerun answers only what is missing. Modal list prices read
 2026-10-09: L4 $0.80, L40S $1.95, A100 80 GB $2.50, H100 $3.95 per hour, plus 15 % in the ledger
 (`results/distill/modal_ledger.json`).
+
+### Stop 44: teacher check and untrained baselines (method fixed 2026-10-09, before any teacher call)
+
+On stop 42's texts (Part A, Part B; statutes reported apart and circular for Claude teachers).
+- Batched teacher prompt: the passages once, the answer so far, then the clauses of one answer that share the same
+  candidates, numbered, each judged with the earlier ones as context only. The rule and labels text are stop 42's.
+  At most 12 clauses per call. Reply: `{"results": [...]}`, one `{sentence, label, passage, reason}` per clause, at
+  most 3 asks. Each label is stored under the clause's stop 42 single-clause prompt key. Batched prompt sha256
+  `57165b8fa735a5c4c736b008ffdc0f12f6226aaccb255aa7b4c58b6f6973509b`. Calls: Part A 32, Part B 39 (85 clauses),
+  statutes 172.
+- Runs: Gemini batched on all three sets; Opus 4.6 batched on all three; Opus 5.5 batched on Part A and B only.
+- Batching rule: used for the teachers if Gemini batched agrees with Gemini per clause (stop 42 labels) on at
+  least 90 % of clauses, and its Replace strict accuracy on Part A and on Part B each drops by at most one text.
+  Otherwise teachers are called per clause.
+- Consensus labels: Gemini and Opus 4.6 agree, kept; they disagree, Opus 5.5 decides (Part A and B). The students
+  train on consensus labels unless consensus is less accurate than Gemini alone on both Part A and Part B under
+  Replace strict.
+- Untrained baselines on the 280 per-clause prompts, one at a time after a bulk pass: Qwen3.8 27B FP8 with thinking
+  off on an L40S, and K2 Horizon 7B @3b6ae39 at low effort on an L4 (FP8). Same replay as stop 42.
+- Reported: each arm on the stop 42 table (false rollbacks, caught, accuracy, bar), agreement between teachers,
+  Opus 5.5 spend, latency per clause.
