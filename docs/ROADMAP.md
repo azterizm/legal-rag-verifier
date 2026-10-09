@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-09 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 46: K2 Horizon 7B student training on Gemini labels; then stop 47 (fresh test) once your grades are in |
-| Waiting on you | Grades for the fresh test: `results/fresh/grades.csv` (360 sentences; sheet in `results/fresh/sheet.md`) |
+| Next step | Halted at the stop 46 gate: your review before any Qwen 27B student. Stop 47 is ready to score once your grades are in and Gemini's last 123 fresh labels run (router limit lifts about 18:07 UTC) |
+| Waiting on you | (1) Train the Qwen 27B student or not (stop 46: K2 student 5.9 points below Gemini on Part A); (2) grades in `results/fresh/grades.csv` |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-09 (46): **K2 Horizon 7B student, halted at the gate.** One epoch on 4,018 Gemini labels (H100, 34 min).
+  Validation agreement 89 %. Part A strict 76.5 % against Gemini's 82.4 % (5.9 points, gate 3), Part B 80.0 % against
+  82.5 %. Untrained K2 scored 88.2 % and 80.0 %: the student learned Gemini's lean to not stated. Latency p95 1.7 s
+  on an L40S (target 2 s). Fresh-test labels done for V0, Qwen 27B low and no-think, K2 low and the student; Gemini
+  200 of 323 (router limit). **Resume:** your review; then stop 47 once grades are in.
 
 - 2026-10-09 (45): **Training data.** 472 sources disjoint from every test set (412 statute sections, 60 software
   sections); 1,416 questions by Gemini, 2,832 answers by Qwen 2.5 7B (L4), 4,433 clauses labelled by Gemini per
