@@ -694,3 +694,28 @@ entailment model a closely related candidate to misread as a contradiction. Of t
 20 had a fact on the judged passage, often one that says the same thing. Entailment time per sentence: 93 ms V0,
 87 ms S.
 
+
+## A reasoning LLM as the auditor's judge (stop 42, 2026-10-09; method in `docs/GRID.md`)
+
+The entailment check's model was replaced by a judge that reads the clause, the auditor's candidate passages and
+the answer so far, and says supported, contradicted or not stated. Judges: Gemini 3.8 flash high through the
+router, and Qwen3.8-27B-FP8 on one Modal H100 at low and xhigh effort. Replace lets the judge decide every clause.
+Strict also rolls back every not-stated sentence. Appeal keeps V0 and lifts an entailment-only rollback the judge
+supports. MiniCheck and ModernBERT-large NLI ran as single-pass controls, with thresholds from the dev battery.
+Raw: `results/auditor_judge/`.
+
+| Arm | Part A false rollbacks | Part A caught | Part A accuracy | Part B false rollbacks | Part B caught | Part B accuracy |
+|---|---|---|---|---|---|---|
+| V0 | 19 | 4 | 38 % | 9 | 4 | 68 % |
+| Claim check only | 1 | 2 | 85 % | 1 | 1 | 80 % |
+| MiniCheck | 9 | 2 | 62 % | 5 | 4 | 78 % |
+| ModernBERT-large | 4 | 4 | 82 % | 3 | 3 | 80 % |
+| Gemini, Replace | 5 | 5 | 82 % | 2 | 5 | 88 % |
+| Qwen low, Replace strict | 1 | 5 | 94 % | 1 | 4 | 88 % |
+| Qwen xhigh, Replace strict | 3 | 5 | 88 % | 3 | 6 | 88 % |
+
+Part A has 28 right and 6 wrong sentences, Part B 32 right and 8 wrong answers. These three judge arms pass the
+bar set before scoring on both levels. No Appeal arm and no control does. On statutes (Claude's labels) no arm
+passes, because the claim check gives half the false rollbacks. The judges raise accuracy there from 59 % (V0) to
+64 to 68 %. Latency per clause: Gemini p50 4.3 s, p95 12.5 s; Qwen low one at a time p50 2.6 s, p95 10.0 s;
+Qwen xhigh one at a time p50 4.0 s, p95 87.5 s. Replace adds 8.5 to 34 s per Part B answer, Appeal 1.4 to 9 s.

@@ -674,3 +674,104 @@ valid JSON on the first ask, 15 of 15. All three supported the first three and c
 Qwen low took 6 to 10 s and 315 to 665 tokens. Qwen xhigh took 3 to 86 s and 197 to 6,921 tokens. The prompt
 is kept as written. Frozen prompt sha256 `72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b`.
 Pilot calls: 5 Gemini, 10 Qwen.
+
+### Stop 42: results (2026-10-09)
+
+Raw: `results/auditor_judge/` (`labels/`, `scores/`, `report.json`, `r5.jsonl`). Gemini answered all 280 prompts
+on the first ask. Qwen needed a second or third ask on 3 of 280 at low and none at xhigh. No prompt ended without
+a label. The V0 replayed from the L4 table gave the verdict as run on every text: 34 of 34 on Part A, 87 of 87
+on Part B, 212 of 212 on statutes.
+
+Part A, 34 sentences (28 right, 6 wrong). Bar: at most 9 false rollbacks, at least 4 caught.
+
+| Arm | False rollbacks | Caught | Accuracy | Bar |
+|---|---|---|---|---|
+| V0 | 19 | 4 | 38 % | |
+| Claim check only | 1 | 2 | 85 % | |
+| No auditor | 0 | 0 | 82 % | |
+| MiniCheck | 9 | 2 | 62 % | no |
+| ModernBERT-large | 4 | 4 | 82 % | yes |
+| Gemini, Replace | 5 | 5 | 82 % | yes |
+| Gemini, Replace strict | 6 | 6 | 82 % | yes |
+| Gemini, Appeal | 5 | 4 | 79 % | yes |
+| Qwen low, Replace | 1 | 5 | 94 % | yes |
+| Qwen low, Replace strict | 1 | 5 | 94 % | yes |
+| Qwen low, Appeal | 1 | 4 | 91 % | yes |
+| Qwen xhigh, Replace | 2 | 5 | 91 % | yes |
+| Qwen xhigh, Replace strict | 3 | 5 | 88 % | yes |
+| Qwen xhigh, Appeal | 2 | 4 | 88 % | yes |
+
+Part B, 40 answers (32 right, 8 wrong). Bar: at most 4 false rollbacks, at least 4 caught.
+
+| Arm | False rollbacks | Caught | Accuracy | Bar |
+|---|---|---|---|---|
+| V0 | 9 | 4 | 68 % | |
+| Claim check only | 1 | 1 | 80 % | |
+| No auditor | 0 | 0 | 80 % | |
+| MiniCheck | 5 | 4 | 78 % | no |
+| ModernBERT-large | 3 | 3 | 80 % | no |
+| Gemini, Replace | 2 | 5 | 88 % | yes |
+| Gemini, Replace strict | 7 | 8 | 82 % | no |
+| Gemini, Appeal | 3 | 2 | 78 % | no |
+| Qwen low, Replace | 1 | 2 | 82 % | no |
+| Qwen low, Replace strict | 1 | 4 | 88 % | yes |
+| Qwen low, Appeal | 1 | 1 | 80 % | no |
+| Qwen xhigh, Replace | 1 | 3 | 85 % | no |
+| Qwen xhigh, Replace strict | 3 | 6 | 88 % | yes |
+| Qwen xhigh, Appeal | 1 | 1 | 80 % | no |
+
+R1: three arms pass on both levels: Gemini Replace, Qwen low Replace strict and Qwen xhigh Replace strict. By the
+rule set before scoring, the judge goes to a fresh test, then live. Each passing arm is more accurate than the
+claim check alone on both levels (Part A 82 to 94 % against 85 %, Part B 88 % against 80 %), except Gemini on
+Part A (82 %). Appeal passes Part A but fails Part B everywhere: it can only lift V0's rollbacks, and on Part B
+it lifts the ones that caught errors. Part A has 6 wrong texts and Part B 8, so one text moves a bar.
+
+R2, statutes (116 right, 73 wrong; Claude's labels). No arm passes. The claim check gives 28 of V0's 56 false
+rollbacks, and no judge touches those. Every judge arm is more accurate than V0 (59 %), claim check only (62 %) and
+no auditor (61 %). The best are Gemini Replace strict (54 false rollbacks, 67 caught, 68 %) and Qwen xhigh Replace
+strict (44, 56, 68 %). False rollbacks from the entailment check alone fall from 28 (V0) to 5 (Qwen low Replace)
+and 11 (Gemini Replace).
+
+R3, latency per judged clause:
+
+| Judge | How run | p50 | p95 | Generated tokens, mean |
+|---|---|---|---|---|
+| Gemini | router, 4 at a time | 4.3 s | 12.5 s | not returned |
+| Qwen low | one at a time, 20 Part A prompts | 2.6 s | 10.0 s | 301 |
+| Qwen xhigh | one at a time, 20 Part A prompts | 4.0 s | 87.5 s | 1,482 |
+| Qwen low | 16 at a time, all 280 | 7.8 s | 23.2 s | 526 |
+| Qwen xhigh | 16 at a time, all 280 | 10.4 s | 132.9 s | 1,832 |
+
+Time added per Part B answer, clauses judged one after another, from the bulk timings: Replace judges 85 of 87
+sentences and adds 8.5 s on average with Gemini (p95 19.0 s), 11.3 s with Qwen low (29.5 s) and 33.7 s with Qwen
+xhigh (187.3 s). Appeal judges 13 of 87 and adds 1.4 s, 2.2 s and 9.0 s. V0 takes about 0.1 s per sentence. The
+Qwen bulk figures include queueing behind 15 other requests, so they overstate one-at-a-time latency. Statute
+prompts are longer than the Part A prompts timed one at a time.
+
+R4, controls. MiniCheck: no dev configuration reached V0's failure recall (0.854). The highest, at 0.80 / 0.40,
+reached 0.746 with 9.9 % pass-class false rollbacks (V0 5.7 %). ModernBERT-large: 0.80 / 0.30 qualified, with
+11.4 % false rollbacks. Neither passes on both levels. ModernBERT passes Part A and catches 3 of 8 on Part B. AUC
+of the support score, right against wrong, with 95 % intervals:
+
+| Model | Part A (28 / 4) | Part B (32 / 7) | Statutes (104 / 59) |
+|---|---|---|---|
+| V0 | 0.48 (0.13 to 0.84) | 0.72 (0.49 to 0.91) | 0.60 (0.51 to 0.69) |
+| MiniCheck | 0.55 (0.14 to 0.97) | 0.77 (0.59 to 0.91) | 0.62 (0.53 to 0.71) |
+| ModernBERT-large | 0.69 (0.28 to 0.96) | 0.81 (0.60 to 0.97) | 0.64 (0.55 to 0.72) |
+
+ModernBERT ranks highest on every set, but the intervals overlap. The longer context does not close the gap on
+these sets.
+
+R5 lists 79 texts for Gemini, 77 for Qwen low and 78 for Qwen xhigh across the three sets (`r5.jsonl`). On Part A,
+Qwen low's one false rollback is A12C, a claim check rollback the judge supported. Gemini rolled back A04A and
+A04B as contradicted (the source says a counter can be reset to zero on restart) and A10A and A10B as not stated
+(the source says the loss expects unnormalised logits and does not mention softmax). On Part B, every judge
+supported every sentence of B01A, B27A and B38B, which are graded wrong. B38B and A04A both say "a Prometheus
+counter cannot go down" and carry opposite grades. Not reclassified.
+
+R6: Qwen xhigh gave the same label on 29 of 32 Part A prompts across two seeds.
+
+Reading: a reasoning judge fixes most of the entailment check's false rollbacks on these sets, which DeBERTa,
+MiniCheck and ModernBERT do not. Low effort did as well as xhigh at a fraction of the time. Its cost is seconds
+per answer against about 0.1 s. The claim check's own false rollbacks remain, and on statutes they are half the
+total.
