@@ -22,6 +22,7 @@ OUT = ROOT / "results/distill"
 LEVELS = ("A", "B", "S")
 BATCH_AGREE = 0.90  # rules fixed in GRID § Stop 44
 BATCH_DROP = 1
+_REC: dict[str, Any] = {}
 
 
 def arm(
@@ -35,6 +36,11 @@ def arm(
     out: dict[str, Any] = {}
     for level in levels:
         level_texts = [t for t in texts if t["level"] == level]
+        needed = aj.requests([_REC[t["key"]] for t in level_texts])
+        missing = sum(k not in labels for k in needed)
+        if missing:
+            out[f"{level} missing"] = missing
+            continue
         base = aj.counts(aj._units(level_texts, v0, level))
         for name, config in (("replace", aj.DEFAULT), ("strict", aj.STRICT)):
             verdicts = aj.replay(level_texts, built, aj.JudgeScorer(name, labels), config)
@@ -64,6 +70,7 @@ def agreement(a: Mapping[str, Any], b: Mapping[str, Any], keys: Sequence[str]) -
 def main() -> None:
     texts, built, recorded = aj.recorded_sets()
     rec = {t["key"]: r for t, r in zip(texts, recorded, strict=True)}
+    _REC.update(rec)
     keys_by_level = {
         lv: list(aj.requests([rec[t["key"]] for t in texts if t["level"] == lv])) for lv in LEVELS
     }
@@ -136,6 +143,8 @@ def main() -> None:
         row = "  ".join(
             f"{k}: {v['false_rollbacks']}/{v['caught']} {v['accuracy']}"
             + ("*" if v["passes_bar"] else "")
+            if isinstance(v, dict)
+            else f"{k}: {v}"
             for k, v in a.items()
         )
         print(f"{name:28} {row}")

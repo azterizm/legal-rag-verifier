@@ -11,6 +11,7 @@ import json
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -216,18 +217,10 @@ JUDGES: dict[str, dict[str, Any]] = {
 }
 
 
-@app.cls(
-    image=judge_image,
-    gpu="L4",
-    volumes={"/hf": weights},
-    timeout=4 * 3600,
-    max_containers=1,
-    scaledown_window=60,
-)
-class Judge:
+class _JudgeServer:
     """One judge model behind SGLang, started once per container."""
 
-    name: str = modal.parameter()
+    name: str
 
     @modal.enter()
     def start(self) -> None:
@@ -259,6 +252,76 @@ class Judge:
         return {"labels": labels, "seconds": time.time() - t0, "startup": self.startup}
 
 
+_JUDGE_OPTIONS: dict[str, Any] = {
+    "image": judge_image,
+    "volumes": {"/hf": weights},
+    "timeout": 4 * 3600,
+    "max_containers": 1,
+    "scaledown_window": 60,
+}
+
+
+@app.cls(gpu="L4", **_JUDGE_OPTIONS)
+class Judge(_JudgeServer):
+    name: str = modal.parameter()
+
+
+@app.cls(gpu="L40S", **_JUDGE_OPTIONS)
+class JudgeL40S(_JudgeServer):
+    name: str = modal.parameter()
+
+
+@app.function(image=judge_image, gpu="L40S", timeout=1800, volumes={"/hf": weights})
+def raw_replies(name: str, prompts: list[str]) -> list[dict[str, Any]]:
+    """Debug: the server's full reply to each per-clause prompt, first ask only."""
+    spec = JUDGES[name]
+    server = subprocess.Popen(  # noqa: S603
+        [
+            sys.executable, "-m", "sglang.launch_server",
+            "--model-path", spec["model"], "--revision", spec["revision"],
+            "--port", str(PORT), "--mem-fraction-static", "0.85", *spec["args"],
+        ]
+    )  # fmt: skip
+    url = f"http://127.0.0.1:{PORT}"
+    out = []
+    try:
+        _wait(server, url)
+        from auditor_judge import SYSTEM  # noqa: PLC0415
+
+        for user in prompts:
+            body = {
+                "model": spec["model"],
+                "messages": [
+                    {"role": "system", "content": SYSTEM},
+                    {"role": "user", "content": user},
+                ],
+                **spec["sampling"],
+                "chat_template_kwargs": spec["template"],
+            }
+            req = urllib.request.Request(  # noqa: S310 - the container's own server
+                f"{url}/v1/chat/completions",
+                data=json.dumps(body).encode(),
+                headers={"Content-Type": "application/json"},
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=900) as r:  # noqa: S310
+                    out.append(json.loads(r.read()))
+            except urllib.error.HTTPError as exc:
+                out.append({"status": exc.code, "body": exc.read().decode()[:2000]})
+    finally:
+        server.terminate()
+    return out
+
+
+@app.local_entrypoint()
+def debug_judge(name: str, n: int = 5) -> None:
+    aj, _ = _judge_local()
+    texts, _, recorded = aj.recorded_sets()
+    part_a = aj.requests([r for r, t in zip(recorded, texts, strict=True) if t["level"] == "A"])
+    for reply in raw_replies.remote(name, list(part_a.values())[:n]):
+        print(json.dumps(reply, ensure_ascii=False)[:1500])
+
+
 def _judge_local() -> Any:
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
     import auditor_judge  # noqa: PLC0415
@@ -285,16 +348,18 @@ def baselines(name: str, sequential: int = 20) -> None:
     texts, _, recorded = aj.recorded_sets()
     asked = aj.requests(recorded)
     aj.assert_prompts_clean(texts, asked)
-    have = aj.read_labels(name)
+    have = {k: v for k, v in aj.read_labels(name).items() if v["label"] != "error"}
     todo = {k: v for k, v in asked.items() if k not in have}
     part_a = aj.requests([r for r, t in zip(recorded, texts, strict=True) if t["level"] == "A"])
-    seq_have = aj.read_labels(f"{name}-sequential")
+    seq_have = {
+        k: v for k, v in aj.read_labels(f"{name}-sequential").items() if v["label"] != "error"
+    }
     seq_todo = {k: v for k, v in list(part_a.items())[:sequential] if k not in seq_have}
     print(f"{name}: {len(todo)} to judge, {len(seq_todo)} one at a time", flush=True)
     if not todo and not seq_todo:
         return
     ledger.check(spec["gpu"], 3600)
-    judge = Judge.with_options(gpu=spec["gpu"])(name=name)
+    judge = (JudgeL40S if spec["gpu"] == "L40S" else Judge)(name=name)
     items = list(todo.items())
     chunks = [dict(items[i : i + CHUNK]) for i in range(0, len(items), CHUNK)]
     startup_recorded = False
@@ -312,3 +377,191 @@ def baselines(name: str, sequential: int = 20) -> None:
         _append(aj, f"{name}-sequential", out["labels"])
         ledger.record(f"stop44 {name} sequential", spec["gpu"], out["seconds"])
     print(f"Modal spent ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 45: pool answers
+
+
+@app.local_entrypoint()
+def pool_answers() -> None:
+    """Every pool question, with source and closed-book. Resumable."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import distill_data  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    done = distill_data.answers()
+    todo = [r for r in distill_data.requests() if r["key"] not in done]
+    print(f"{len(done)} done, {len(todo)} to answer", flush=True)
+    if not todo:
+        return
+    ledger.check("L4", 3600)
+    chunks = [todo[i : i + CHUNK] for i in range(0, len(todo), CHUNK)]
+    startup_recorded = False
+    for out in Generator().answer.map(chunks, return_exceptions=True):
+        if isinstance(out, Exception):
+            print(f"chunk failed, retried on the next run: {out!r}", flush=True)
+            continue
+        good = [r for r in out["results"] if r.get("text") is not None]
+        distill_data.append_answers(good)
+        seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+        startup_recorded = True
+        ledger.record("stop45 pool answers", "L4", seconds, f"{len(good)} answers")
+    print(f"Modal spent ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 46: the student
+
+runs = modal.Volume.from_name("legal-rag-verifier-runs", create_if_missing=True)
+train_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install(
+        "torch==2.14.0",
+        "transformers==5.17.0",
+        "peft==0.21.0",
+        "trl==1.13.0",
+        "accelerate==1.15.0",
+        "datasets==5.0.1",
+        "bitsandbytes==0.50.2",
+    )
+    .env({"HF_HOME": "/hf"})
+)
+STUDENTS: dict[str, dict[str, Any]] = {
+    "k2": {"model": K2, "revision": K2_REVISION, "four_bit": False},
+}
+TRAIN_SEED = 20261009
+
+
+@app.function(
+    image=train_image, gpu="H100", timeout=8 * 3600, volumes={"/hf": weights, "/runs": runs}
+)
+def train(student: str, epochs: int = 1, max_tokens: int = 8192, *, smoke: bool = False) -> dict:
+    """LoRA on the teacher's replies, no reasoning. Checkpoints go to the runs volume and are
+    committed on every save, so a lost container resumes from the last one."""
+    import torch  # noqa: PLC0415
+    from datasets import Dataset  # noqa: PLC0415
+    from peft import LoraConfig  # noqa: PLC0415
+    from transformers import (  # noqa: PLC0415
+        AutoModelForCausalLM,
+        AutoTokenizer,
+        TrainerCallback,
+    )
+    from trl import SFTConfig, SFTTrainer  # noqa: PLC0415
+
+    spec = STUDENTS[student]
+    out = Path("/runs") / student / ("smoke" if smoke else "run")
+    tokenizer = AutoTokenizer.from_pretrained(
+        spec["model"], revision=spec["revision"], trust_remote_code=True
+    )
+
+    def load(split: str) -> list[dict[str, Any]]:
+        rows = [json.loads(x) for x in Path(f"/runs/data/{split}.jsonl").read_text().splitlines()]
+        kept = []
+        for r in rows:
+            system, user, reply = r["messages"]
+            messages = [system, user, {**reply, "reasoning_content": ""}]
+            ids = tokenizer.apply_chat_template(messages, tokenize=True)
+            if len(ids) <= max_tokens:
+                kept.append({"messages": messages})
+        return kept
+
+    train_rows = load("train")
+    dropped = sum(1 for _ in Path("/runs/data/train.jsonl").read_text().splitlines()) - len(
+        train_rows
+    )
+    if smoke:
+        train_rows = train_rows[:64]
+    quant: dict[str, Any] = {}
+    if spec["four_bit"]:
+        from transformers import BitsAndBytesConfig  # noqa: PLC0415
+
+        quant["quantization_config"] = BitsAndBytesConfig(
+            load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_quant_type="nf4"
+        )
+    model = AutoModelForCausalLM.from_pretrained(
+        spec["model"],
+        revision=spec["revision"],
+        dtype=torch.bfloat16,
+        trust_remote_code=True,
+        attn_implementation="sdpa",
+        **quant,
+    )
+
+    class Commit(TrainerCallback):  # type: ignore[misc]
+        def on_save(self, *args: Any, **kwargs: Any) -> None:
+            runs.commit()
+
+    config = SFTConfig(
+        output_dir=str(out / "checkpoints"),
+        num_train_epochs=epochs,
+        max_steps=10 if smoke else -1,
+        per_device_train_batch_size=1,
+        gradient_accumulation_steps=16,
+        learning_rate=1e-4,
+        lr_scheduler_type="cosine",
+        warmup_ratio=0.03,
+        bf16=True,
+        gradient_checkpointing=True,
+        logging_steps=5,
+        save_steps=5 if smoke else 50,
+        save_total_limit=2,
+        assistant_only_loss=True,
+        max_length=max_tokens,
+        report_to=[],
+        seed=TRAIN_SEED,
+    )
+    trainer = SFTTrainer(
+        model=model,
+        args=config,
+        train_dataset=Dataset.from_list(train_rows),
+        processing_class=tokenizer,
+        peft_config=LoraConfig(
+            r=16,
+            lora_alpha=32,
+            lora_dropout=0.05,
+            target_modules="all-linear",
+            task_type="CAUSAL_LM",
+        ),
+        callbacks=[Commit()],
+    )
+    t0 = time.time()
+    resume = any((out / "checkpoints").glob("checkpoint-*"))
+    result = trainer.train(resume_from_checkpoint=True if resume else None)
+    trainer.save_model(str(out / "adapter"))
+    runs.commit()
+    return {
+        "examples": len(train_rows),
+        "dropped_over_max_tokens": dropped,
+        "seconds": time.time() - t0,
+        "loss": result.training_loss,
+        "log": trainer.state.log_history[-20:],
+        "resumed": resume,
+    }
+
+
+@app.function(image=train_image, gpu="H100", timeout=3600, volumes={"/hf": weights, "/runs": runs})
+def merge(student: str, *, smoke: bool = False) -> str:
+    """The adapter merged into the base in bf16, with the base's code and tokenizer files."""
+    import shutil  # noqa: PLC0415
+
+    import torch  # noqa: PLC0415
+    from huggingface_hub import snapshot_download  # noqa: PLC0415
+    from peft import PeftModel  # noqa: PLC0415
+    from transformers import AutoModelForCausalLM, AutoTokenizer  # noqa: PLC0415
+
+    spec = STUDENTS[student]
+    run = Path("/runs") / student / ("smoke" if smoke else "run")
+    base = AutoModelForCausalLM.from_pretrained(
+        spec["model"], revision=spec["revision"], dtype=torch.bfloat16, trust_remote_code=True
+    )
+    merged = PeftModel.from_pretrained(base, str(run / "adapter")).merge_and_unload()
+    target = run / "merged"
+    merged.save_pretrained(str(target), safe_serialization=True)
+    AutoTokenizer.from_pretrained(
+        spec["model"], revision=spec["revision"], trust_remote_code=True
+    ).save_pretrained(str(target))
+    snapshot = Path(snapshot_download(spec["model"], revision=spec["revision"]))
+    for f in [*snapshot.glob("*.py"), *snapshot.glob("*.jinja"), snapshot / "config.json"]:
+        if f.exists():
+            shutil.copy(f, target / f.name)  # the base's config keeps auto_map and archs
+    runs.commit()
+    return str(target)

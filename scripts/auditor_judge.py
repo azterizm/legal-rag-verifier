@@ -294,6 +294,9 @@ def gemini_chat(messages: list[dict[str, str]]) -> dict[str, Any]:
     return {"content": content, "ms": (time.perf_counter() - t0) * 1000, "tokens": None}
 
 
+CLOSE_THINK = re.compile(r"</(?:ifm\|)?think[a-z_]*>")
+
+
 def server_chat(
     url: str, model: str, sampling: Mapping[str, Any], template: Mapping[str, Any]
 ) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
@@ -301,9 +304,11 @@ def server_chat(
     arguments (``chat_template_kwargs``)."""
 
     def chat(messages: list[dict[str, str]]) -> dict[str, Any]:
+        # Some templates (K2 Horizon) reject an assistant turn without a reasoning field.
+        sent = [{**m, "reasoning_content": ""} if m["role"] == "assistant" else m for m in messages]
         body = {
             "model": model,
-            "messages": messages,
+            "messages": sent,
             **sampling,
             "chat_template_kwargs": dict(template),
         }
@@ -318,8 +323,14 @@ def server_chat(
             out = json.loads(response.read())
         ms = (time.perf_counter() - t0) * 1000
         message = out["choices"][0]["message"]
+        content = message.get("content") or ""
+        reasoning = message.get("reasoning_content") or ""
+        if not content.strip() and CLOSE_THINK.search(reasoning):
+            # K2 at low effort opens <ifm|think_faster> but closes </ifm|think>, so the parser
+            # leaves the answer inside the reasoning: take what follows the last close tag.
+            content = CLOSE_THINK.split(reasoning)[-1]
         return {
-            "content": message.get("content") or "",
+            "content": content,
             "ms": ms,
             "tokens": out.get("usage", {}).get("completion_tokens"),
             "finish": out["choices"][0].get("finish_reason"),

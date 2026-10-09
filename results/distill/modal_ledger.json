@@ -26,5 +26,495 @@
   "seconds": 21.7,
   "usd": 0.0056,
   "note": "40 answers"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 215.1,
+  "usd": 0.134,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.4,
+  "usd": 0.0171,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 42.6,
+  "usd": 0.0265,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 52.1,
+  "usd": 0.0324,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 53.4,
+  "usd": 0.0333,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 194.7,
+  "usd": 0.1213,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 19.9,
+  "usd": 0.0124,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 52.6,
+  "usd": 0.0328,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 56.2,
+  "usd": 0.035,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 qwen27-nothink sequential",
+  "gpu": "L40S",
+  "seconds": 62.0,
+  "usd": 0.0386,
+  "note": ""
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 159.5,
+  "usd": 0.0994,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 50.3,
+  "usd": 0.0313,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 96.9,
+  "usd": 0.0604,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 116.9,
+  "usd": 0.0728,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 52.7,
+  "usd": 0.0329,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop44 k2-low sequential",
+  "gpu": "L40S",
+  "seconds": 103.4,
+  "usd": 0.0644,
+  "note": ""
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 216.1,
+  "usd": 0.0552,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 20.7,
+  "usd": 0.0053,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.2,
+  "usd": 0.0039,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 19.2,
+  "usd": 0.0049,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.3,
+  "usd": 0.0039,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.6,
+  "usd": 0.0048,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 20.8,
+  "usd": 0.0053,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.0,
+  "usd": 0.0046,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.3,
+  "usd": 0.0039,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.2,
+  "usd": 0.0039,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 181.0,
+  "usd": 0.1127,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.9,
+  "usd": 0.0048,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 19.9,
+  "usd": 0.0124,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.0,
+  "usd": 0.0041,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 21.0,
+  "usd": 0.0054,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 34.0,
+  "usd": 0.0212,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.5,
+  "usd": 0.0047,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 25.0,
+  "usd": 0.0156,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.0,
+  "usd": 0.0041,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.3,
+  "usd": 0.0042,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 33.9,
+  "usd": 0.0211,
+  "note": "40 prompts"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.1,
+  "usd": 0.0041,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low",
+  "gpu": "L40S",
+  "seconds": 15.2,
+  "usd": 0.0095,
+  "note": "32 prompts"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.3,
+  "usd": 0.0042,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 14.0,
+  "usd": 0.0036,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop44 k2-low sequential",
+  "gpu": "L40S",
+  "seconds": 24.6,
+  "usd": 0.0153,
+  "note": ""
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.9,
+  "usd": 0.0041,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.1,
+  "usd": 0.0046,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.4,
+  "usd": 0.0042,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 17.2,
+  "usd": 0.0044,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.5,
+  "usd": 0.004,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.2,
+  "usd": 0.0047,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.6,
+  "usd": 0.004,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.7,
+  "usd": 0.004,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.2,
+  "usd": 0.0039,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.2,
+  "usd": 0.0041,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.6,
+  "usd": 0.0048,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 17.5,
+  "usd": 0.0045,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 14.2,
+  "usd": 0.0036,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 17.5,
+  "usd": 0.0045,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 17.1,
+  "usd": 0.0044,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.7,
+  "usd": 0.0043,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 17.3,
+  "usd": 0.0044,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 18.4,
+  "usd": 0.0047,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 16.4,
+  "usd": 0.0042,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 14.7,
+  "usd": 0.0038,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.1,
+  "usd": 0.0039,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 13.5,
+  "usd": 0.0034,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 15.8,
+  "usd": 0.004,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 12.5,
+  "usd": 0.0032,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 11.2,
+  "usd": 0.0029,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 17.5,
+  "usd": 0.0045,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 13.1,
+  "usd": 0.0033,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop45 pool answers",
+  "gpu": "L4",
+  "seconds": 10.0,
+  "usd": 0.0026,
+  "note": "20 answers"
  }
 ]

@@ -884,3 +884,41 @@ on an L40S, not FP8 on an L4. The trained student's target GPU is decided in sto
   the $40 cap. Disputed clauses left after the cap are dropped and counted.
 - Examples: the stop 42 per-clause prompt and the label's JSON reply. Validation is 10 % of sources, chosen by a
   hash of the source id. Prompts over 8,192 tokens are dropped from training, kept in the counts.
+
+### Stop 44: results (2026-10-09)
+
+Raw: `results/distill/check44.json`, labels in `results/distill/labels/` and `results/auditor_judge/labels/`.
+
+Batching rule: not met. Gemini batched agreed with Gemini per clause on 270 of 291 clauses (92.8 %, rule 90 %), but
+Replace strict on Part A got 2 texts fewer right (rule: at most 1). Part B: 1 fewer. Teachers are called per clause
+from here.
+
+Opus 4.6 hit the router's limit after 167 calls (about 440k input tokens): HTTP 429 with Retry-After 13,155 s. It
+covered Part A and B fully and 96 of 174 statute clauses. Opus 5.5 covered Part A and B for $0.57.
+
+| Arm (Replace strict unless noted) | Part A FR / caught | Part A accuracy | Part B FR / caught | Part B accuracy |
+|---|---|---|---|---|
+| V0 | 19 / 4 | 38 % | 9 / 4 | 68 % |
+| Gemini per clause (stop 42) | 6 / 6 | 82 % | 7 / 8 | 82 % |
+| Gemini batched | 8 / 6 | 76 % | 8 / 8 | 80 % |
+| Opus 4.6 batched | 1 / 5 | 94 % | 1 / 3 | 85 % |
+| Opus 5.5 batched | 3 / 5 | 88 % | 3 / 3 | 80 % |
+| Consensus (Gemini per clause and Opus 4.6; Opus 5.5 on disagreement) | 2 / 5 | 91 % | 2 / 3 | 82 % |
+| Qwen 27B, thinking off, untrained | 1 / 5 | 94 % | 2 / 2 | 80 % |
+| K2 Horizon 7B, low effort, untrained | 1 / 3 | 88 % | 1 / 1 | 80 % |
+
+Part A has 28 right and 6 wrong sentences, Part B 32 right and 8 wrong answers. Consensus is not less accurate than
+Gemini alone on both levels, so by the rule the students train on consensus labels. Teacher agreement: Gemini and
+Opus 4.6 75 % (213 clauses), Gemini and Opus 5.5 83 %, Opus 4.6 and Opus 5.5 97 % (117 clauses). Nearly every
+disagreement is Gemini saying not stated where an Opus model says supported.
+
+Statutes (Claude's labels, Replace strict): Gemini 68 %, Qwen 27B thinking off 67 %, K2 low 67 %.
+
+Latency per clause, one at a time on an L40S: Qwen 27B thinking off p50 3.0 s, p95 4.8 s (62 tokens); K2 low p50
+1.5 s, p95 3.9 s (70 tokens, a short reasoning before the reply). K2's first run lost 232 replies: at low effort it
+opens `<ifm|think_faster>` but closes `</ifm|think>`, so SGLang's parser left the reply inside the reasoning. The
+client now takes the text after the last close tag, and the run was repeated before any reading. Router spend:
+Opus 5.5 $0.57 of $40. Modal $1.37 of $55.
+
+Pool for stop 45: 310 sources, 930 questions, 1,860 answers, 3,603 sentences, 3,004 unique clauses that reach the
+entailment check (mean 6,200 characters per prompt). Fewer than the 5,000 planned.

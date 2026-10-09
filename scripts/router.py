@@ -12,6 +12,7 @@ import fcntl
 import json
 import os
 import random
+import sys
 import threading
 import time
 import urllib.error
@@ -118,7 +119,7 @@ def chat(
     *,
     temperature: float = 0.0,
     attempts: int = 6,
-    timeout: float = 900,
+    timeout: float = 600,
 ) -> dict[str, Any]:
     """One reply: ``{content, usage, ms}``. Retries rate limits, server errors and timeouts."""
     if model not in MODELS:
@@ -141,11 +142,17 @@ def chat(
             if exc.code not in RETRY_STATUS:
                 raise RouterError(f"{model}: HTTP {exc.code}") from exc
             failure = f"HTTP {exc.code}"
-            time.sleep(_backoff(attempt, exc.headers.get("Retry-After")))
+            wait = _backoff(attempt, exc.headers.get("Retry-After"))
+            after = exc.headers.get("Retry-After")
+            note = f"{failure} (Retry-After {after})"
+            print(f"router {model}: {note}, retry in {wait:.0f} s", file=sys.stderr, flush=True)
+            time.sleep(wait)
             continue
         except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
             failure = repr(exc)
-            time.sleep(_backoff(attempt, None))
+            wait = _backoff(attempt, None)
+            print(f"router {model}: {failure}, retry in {wait:.0f} s", file=sys.stderr, flush=True)
+            time.sleep(wait)
             continue
         ms = (time.perf_counter() - t0) * 1000
         content = out["choices"][0]["message"].get("content") or ""

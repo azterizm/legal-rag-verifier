@@ -1,0 +1,23 @@
+{
+ "claude-opus-4-6-thinking": {
+  "calls": 167,
+  "estimated": 0,
+  "input_tokens": 443270.0,
+  "output_tokens": 21304.0,
+  "usd": 0.0
+ },
+ "claude-opus-5-5(high)": {
+  "calls": 70,
+  "estimated": 0,
+  "input_tokens": 51899.0,
+  "output_tokens": 18344.0,
+  "usd": 0.574476
+ },
+ "gemini-3.8-flash-high": {
+  "calls": 841,
+  "estimated": 0,
+  "input_tokens": 1068189.0,
+  "output_tokens": 1246813.0,
+  "usd": 0.0
+ }
+}
