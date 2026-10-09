@@ -456,3 +456,70 @@ model became more lenient overall; it did not separate right from wrong any bett
 now pass. In several, words from the question count as evidence (uk-concept-0046: the question says "bruising", the
 answer adds "such as bruising" to the statute text). The claim check accounts for about half the false rollbacks on
 statutes, and no change to the entailment input touches those.
+
+## Stop 41: derived facts for the entailment check (method fixed 2026-10-09, before any scoring)
+
+The entailment model rejects correct sentences it would need one step of reasoning to accept. In A01
+the source says the divisor is N - ddof and that ddof is zero by default. The answer says the divisor
+is N, and the model calls it a contradiction. Stop 40 showed that adding the question does not fix this.
+
+This stop tests whether facts written in advance fix it. At ingestion a strong model reads each source
+once and writes the facts that follow from it: defaults applied, definitions substituted, references
+between passages joined, unit equivalences stated, arithmetic done. The entailment model then only has
+to match a written fact. The approach is the teacher precompute of blind-counsel and blind-adapters.
+This repo has its own code for it, with no dependency on either.
+
+This is a viability check on the software battery of 40. The full run (statutes, then live) follows
+only if it passes.
+
+### Facts
+
+`gemini-3.8-flash-high` through the router, one call per source, temperature 0, at most 3 asks for
+valid JSON (`scripts/normalise_sources.py`). A source is the documentation passages of one battery
+row. Only documentation text is sent. No question, answer or label is sent, and the scoring script
+fails if any question or graded text appears in a stored prompt. Replies are cached by the source's
+sha256. Each fact names its passage, gives verbatim quotes and an optional calculation.
+
+Code drops a fact when:
+1. a quote is not verbatim in the source or is under 8 characters (after `enrichment.normalise`);
+2. a figure, date or citation in the fact is neither in its quotes nor the result of its calculation;
+3. the calculation uses a number not in its quotes or anything other than + - * / and brackets.
+
+This proves the anchoring and the arithmetic. It does not prove reasoning in words. A wrong fact of
+that kind shows up as a wrong text getting through, which R2 lists.
+
+The prompt is piloted on 3 statute dev provisions, not scored, then frozen. Its sha256 is recorded
+here before the battery run.
+
+### Arms
+
+The entailment model, thresholds and engine are unchanged (`scripts/nli_normalised.py`).
+- V0: today's auditor.
+- S: each fact added to its passage as an enrichment element, so it is one more entailment candidate.
+  It cannot override the claim check.
+- S-claims, a diagnostic: as S, and each fact is also a FACT passage, so the claim check sees it.
+
+### Texts and grades
+
+No new labels. Both levels use your stop 37 grades.
+- Part A: the 34 graded sentences (28 right, 6 wrong). V0 as recorded: 19 false rollbacks, 4 caught.
+- Part B: the plain answer to each of the 40 questions (32 correct, 8 wrong), split into sentences
+  with the engine's segmenter. Every sentence is audited. A correct answer with any rollback is a
+  false rollback. A wrong answer with at least one rollback is caught. This is loose, since the
+  flagged sentence may not be the wrong one.
+
+The audit runs on one Modal L4 (`scripts/modal_normalise.py`). It receives the documentation, the
+facts and the texts, never a grade. V0 is recomputed there and compared with the recorded Part A
+verdicts. If the GPU moves a borderline score, the Modal V0 is the baseline and every difference is
+listed. Scoring runs on the laptop from the committed output.
+
+### Readings, set now
+
+- R1: an arm is viable if, on both levels, it at most halves V0's false rollbacks and still catches at
+  least 90 % of what V0 catches (the stop 40 bar). For Part A that is at most 9 false rollbacks and at
+  least 4 caught. If S passes, the full run follows. At these sizes a pass is a signal, not proof.
+- R2: each wrong text that passes with a derived fact as its best entailing candidate, with that fact.
+- R3: the false rollbacks left in S, split into claim check, fact present on the judged passage but
+  entailment still failed, and no fact on that passage.
+- Also reported: facts proposed, kept and dropped by each rule, entailment time per sentence, and
+  accuracy against the claim check alone and against no auditor.
