@@ -17,12 +17,23 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-09 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 42 passed R1: a fresh blind test of the judge in the entailment check, then live (VERDICT item 1) |
-| Waiting on you | Which judge and placement go to the fresh test, and its design (stop 42: Gemini Replace, Qwen low and xhigh Replace strict pass) |
+| Next step | Stop 46: K2 Horizon 7B student training on Gemini labels; then stop 47 (fresh test) once your grades are in |
+| Waiting on you | Grades for the fresh test: `results/fresh/grades.csv` (360 sentences; sheet in `results/fresh/sheet.md`) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-09 (45): **Training data.** 472 sources disjoint from every test set (412 statute sections, 60 software
+  sections); 1,416 questions by Gemini, 2,832 answers by Qwen 2.5 7B (L4), 4,433 clauses labelled by Gemini per
+  clause (your decision: Gemini alone; Opus 4.6 hit the router limit). Opus 5.5 audit agrees on 410 of 500. Train
+  4,018, validation 415. **Resume:** stop 46 training.
+- 2026-10-09 (44): **Teacher check and untrained baselines.** Batching rule not met (Part A 2 texts lower); teachers
+  per clause. Opus 4.6 most accurate on Part A (94 %), rate-limited after 167 calls. Consensus not worse than Gemini.
+  Untrained Qwen 27B thinking off: Part A 94 %, Part B 80 %, 3.0 s p50 on an L40S. Untrained K2 low: 88 %, 80 %,
+  1.5 s p50. **Resume:** stop 45.
+- 2026-10-09 (43): **Fresh test sealed.** 80 new questions (40 software, 40 statutes), 160 answers by Qwen 2.5 7B
+  with source and closed-book, 360 sentences on your sheet. Hashes in GRID. **Resume:** your grades.
 
 - 2026-10-09 (42): **A reasoning LLM as the auditor's judge; passes on both graded levels.** Method and prompt fixed in
   GRID before any judge call. 280 clause prompts to Gemini (router) and Qwen3.8-27B-FP8 (Modal H100, low and xhigh).
