@@ -775,3 +775,42 @@ Reading: a reasoning judge fixes most of the entailment check's false rollbacks 
 MiniCheck and ModernBERT do not. Low effort did as well as xhigh at a fraction of the time. Its cost is seconds
 per answer against about 0.1 s. The claim check's own false rollbacks remain, and on statutes they are half the
 total.
+
+## Stops 43 to 47: a fast student of a frontier teacher (method fixed 2026-10-09, before any run)
+
+Stop 42 showed a reasoning judge fixes the entailment check, at seconds per clause. These stops test whether a
+fine-tuned student that answers without thinking gets close to a frontier teacher at no more than 2 s p95 per
+clause. Plan in brief:
+- Stop 43: a fresh blind test, built and sealed before any training data exists.
+- Stop 44: teacher check and untrained baselines on Part A, Part B and statutes.
+- Stop 45: training data from sources disjoint from every test set, labelled by the teachers.
+- Stop 46: K2 Horizon 7B fine-tuned. If it is more than 3 points below the teacher labels' accuracy on Part A
+  or Part B, work halts for your review before Qwen3.8 27B is trained.
+- Stop 47: the fresh test, run once.
+
+Router models, one endpoint: `gemini-3.8-flash-high` and `claude-opus-4-6-thinking` (teachers), and
+`claude-opus-5-5(high)` (teacher check and disagreements only, hard stop at $40 by a committed ledger). Modal has a
+hard stop at $55 by a ledger of GPU time at list prices. Every paid step is resumable: results are written per
+item as they arrive, reruns skip what is done, rate limits and server errors back off and retry, and items still
+failing are recorded and retried on the next run. Each stop is pre-registered below before it runs.
+
+### Stop 43: the fresh test
+
+- Software: 40 new questions, 8 per area as in stop 37, on documentation pages not in
+  `batteries/software/test.jsonl`. Passages quoted verbatim, with `source_url` and licence. Every question has
+  its answer in the premise.
+- Statutes: 40 new questions in plain words, about 3 per area of the grid battery, each on one UK provision from
+  `data/` that is in no battery (grid dev and test, verifier dev and held-out). Premise as run: the provision with
+  its enrichment layer, built by `enrich_premises.py` for the new provisions.
+- The questions are written by Claude Opus 5.5 from the source text, chosen for the question and not for the
+  auditor's patterns. Nothing is tuned on them.
+- Answers: Qwen 2.5 7B Instruct on a Modal L4, SGLang v0.5.21, greedy, at most 512 new tokens. Two per question:
+  - with source: the stop 37 software prompt or the engine's legislation prompt, source included;
+  - closed-book: the same prompt with the source sentence and the source removed (`You answer questions about
+    software.` or `You answer questions about legislation.`, then the same instructions with "the
+    documentation" or "the provisions" replaced by "what you know").
+- Your sheet: every sentence (engine segmenter), under its question, the source and the answer so far. Column
+  `correct`: yes if every claim in the sentence matches the source shown, no if any does not, unsure otherwise.
+  Questions in a seeded random order, the two answers per question shuffled and lettered. The key is git-ignored;
+  its sha256 and the battery files' sha256 are recorded here before you grade.
+- The sealed files do not change after that commit. Stop 47 reads them once.
