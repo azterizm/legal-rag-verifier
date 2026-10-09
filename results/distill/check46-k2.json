@@ -1,0 +1,201 @@
+{
+ "validation_agreement": {
+  "same": 370,
+  "of": 415,
+  "rate": 0.892,
+  "errors": 0,
+  "differ": {
+   "teacher not_stated / student supported": 14,
+   "teacher contradicted / student not_stated": 15,
+   "teacher supported / student contradicted": 1,
+   "teacher contradicted / student supported": 6,
+   "teacher not_stated / student contradicted": 5,
+   "teacher supported / student not_stated": 4
+  }
+ },
+ "student": {
+  "A replace": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 6,
+   "caught": 4,
+   "false_rollbacks_by_nli": 5,
+   "caught_by_nli": 2,
+   "accuracy": 0.765,
+   "passes_bar": true
+  },
+  "A strict": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 6,
+   "caught": 4,
+   "false_rollbacks_by_nli": 5,
+   "caught_by_nli": 2,
+   "accuracy": 0.765,
+   "passes_bar": true
+  },
+  "B replace": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 3,
+   "caught": 2,
+   "false_rollbacks_by_nli": 2,
+   "caught_by_nli": 1,
+   "accuracy": 0.775,
+   "passes_bar": false
+  },
+  "B strict": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 5,
+   "caught": 5,
+   "false_rollbacks_by_nli": 4,
+   "caught_by_nli": 4,
+   "accuracy": 0.8,
+   "passes_bar": false
+  },
+  "S replace": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 35,
+   "caught": 39,
+   "false_rollbacks_by_nli": 6,
+   "caught_by_nli": 12,
+   "accuracy": 0.635,
+   "passes_bar": false
+  },
+  "S strict": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 52,
+   "caught": 58,
+   "false_rollbacks_by_nli": 23,
+   "caught_by_nli": 31,
+   "accuracy": 0.646,
+   "passes_bar": false
+  }
+ },
+ "teacher (gemini per clause)": {
+  "A replace": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 5,
+   "caught": 5,
+   "false_rollbacks_by_nli": 4,
+   "caught_by_nli": 3,
+   "accuracy": 0.824,
+   "passes_bar": true
+  },
+  "A strict": {
+   "texts": 34,
+   "right": 28,
+   "wrong": 6,
+   "false_rollbacks": 6,
+   "caught": 6,
+   "false_rollbacks_by_nli": 5,
+   "caught_by_nli": 4,
+   "accuracy": 0.824,
+   "passes_bar": true
+  },
+  "B replace": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 2,
+   "caught": 5,
+   "false_rollbacks_by_nli": 1,
+   "caught_by_nli": 4,
+   "accuracy": 0.875,
+   "passes_bar": true
+  },
+  "B strict": {
+   "texts": 40,
+   "right": 32,
+   "wrong": 8,
+   "false_rollbacks": 7,
+   "caught": 8,
+   "false_rollbacks_by_nli": 6,
+   "caught_by_nli": 7,
+   "accuracy": 0.825,
+   "passes_bar": false
+  },
+  "S replace": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 41,
+   "caught": 46,
+   "false_rollbacks_by_nli": 11,
+   "caught_by_nli": 22,
+   "accuracy": 0.64,
+   "passes_bar": false
+  },
+  "S strict": {
+   "texts": 212,
+   "right": 116,
+   "wrong": 73,
+   "false_rollbacks": 54,
+   "caught": 67,
+   "false_rollbacks_by_nli": 24,
+   "caught_by_nli": 43,
+   "accuracy": 0.683,
+   "passes_bar": false
+  }
+ },
+ "latency": {
+  "bulk": {
+   "calls": 280,
+   "p50_ms": 3202,
+   "p95_ms": 6531,
+   "mean_tokens": 59
+  },
+  "one at a time": {
+   "calls": 20,
+   "p50_ms": 1226,
+   "p95_ms": 1713,
+   "mean_tokens": 51
+  }
+ },
+ "gate": {
+  "points_below_teacher": {
+   "A": 5.9,
+   "B": 2.5
+  },
+  "halt_for_review": true,
+  "p95_ms": 1713,
+  "meets_latency": true
+ },
+ "spend": {
+  "modal": 6.3303,
+  "router": {
+   "claude-opus-4-6-thinking": {
+    "calls": 167,
+    "estimated": 0,
+    "input_tokens": 443270.0,
+    "output_tokens": 21304.0,
+    "usd": 0.0
+   },
+   "claude-opus-5-5(high)": {
+    "calls": 571,
+    "estimated": 0,
+    "input_tokens": 1247284.0,
+    "output_tokens": 133798.0,
+    "usd": 7.665096
+   },
+   "gemini-3.8-flash-high": {
+    "calls": 5800,
+    "estimated": 0,
+    "input_tokens": 8647522.0,
+    "output_tokens": 3588121.0,
+    "usd": 0.0
+   }
+  }
+ }
+}
