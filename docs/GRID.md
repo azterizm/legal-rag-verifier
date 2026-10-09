@@ -985,5 +985,5 @@ Readings, per domain (software, statutes) and in total:
 - F3: the student against Qwen 27B low off the shelf.
 - F4: latency per clause, and time added per answer, from the bulk runs.
 - F5: every error of the teacher and the student, with its reason. Not reclassified.
-- Also reported: answers with the source and closed-book apart; agreement of each judge with your grades on
-  `contradicted` against `not_stated`.
+- Also reported: answers with the source and closed-book apart; for the sentences you grade wrong, how often each
+  judge says contradicted and how often not stated.
