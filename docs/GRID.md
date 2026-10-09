@@ -922,3 +922,29 @@ Opus 5.5 $0.57 of $40. Modal $1.37 of $55.
 
 Pool for stop 45: 310 sources, 930 questions, 1,860 answers, 3,603 sentences, 3,004 unique clauses that reach the
 entailment check (mean 6,200 characters per prompt). Fewer than the 5,000 planned.
+
+### Stop 45: changes before any training label (2026-10-09, your decisions)
+
+- Teacher: Gemini alone, per clause, on the stop 42 prompt. Opus 4.6 is dropped from training labels (router limit).
+  Opus 5.5 labels a random 500 training clauses (seed 20261009), per clause, to measure label quality; its labels
+  do not enter training. The stop 46 gate compares the student with Gemini's labels.
+- Pool topped up to about 5,000 clauses: statute sections raised from 250 to 460 requested, 412 available under
+  the per-Act cap (same seed, same order, so the first 250 and their ids are unchanged). Software stays at 60
+  sections.
+
+### Stop 46: the student (method fixed 2026-10-09, before any training)
+
+- Student: K2 Horizon 7B @3b6ae39. LoRA rank 16, alpha 32, dropout 0.05, all linear layers; learning rate 1e-4,
+  cosine, 3 % warm-up; batch 1 with 16 accumulation steps; one epoch; loss on the reply only; examples over 8,192
+  tokens dropped. The reply follows an empty reasoning block (`<ifm|think>\n</ifm|think>`), in training and at
+  inference, so the student never thinks. One H100; torch 2.14.0, transformers 5.17.0, peft 0.21.0, trl 1.13.0.
+  A second epoch runs only if the first epoch's validation agreement with Gemini is below 85 %, and is kept only
+  if agreement rises. A 10-step smoke run comes first. Checkpoints are committed to a Modal volume every 50 steps.
+- Serving: the adapter merged in bf16, SGLang 0.5.21 on an L40S (SGLang serves K2 in FP8 only from pre-quantised
+  weights, and bf16 does not fit an L4 with long statute prompts), temperature 0, at most 512 tokens.
+- Readings: label agreement with Gemini on validation; the stop 42 table on Part A, Part B and statutes (Replace
+  and Replace strict); latency per clause one at a time on 20 Part A prompts.
+- Gate: if the student's Replace strict accuracy on Part A or on Part B is more than 3 points below Gemini's
+  (stop 42 labels: Part A 82.4 %, Part B 82.5 %), work halts for your review before Qwen 27B is trained. Note:
+  K2 untrained at low effort already scores 88.2 % and 80.0 %.
+- Latency target: p95 at most 2 s per clause on the L40S.
