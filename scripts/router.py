@@ -8,6 +8,7 @@ has a hard cap: a call that could take the ledger past it is not made (``BudgetE
 
 from __future__ import annotations
 
+import fcntl
 import json
 import os
 import random
@@ -56,7 +57,7 @@ def ledger() -> dict[str, dict[str, float]]:
 
 def _write_ledger(data: dict[str, dict[str, float]]) -> None:
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    tmp = LEDGER.with_suffix(".tmp")
+    tmp = LEDGER.with_suffix(f".{os.getpid()}.tmp")
     tmp.write_text(json.dumps(data, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     tmp.replace(LEDGER)
 
@@ -89,7 +90,9 @@ def _record(
     estimated = not usage.get("prompt_tokens")
     tokens_in = float(usage.get("prompt_tokens") or 1.5 * _chars(messages) / 4)
     tokens_out = float(usage.get("completion_tokens") or 1.5 * len(text) / 4)
-    with _lock:
+    LEDGER.parent.mkdir(parents=True, exist_ok=True)
+    with _lock, LEDGER.with_suffix(".lock").open("w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)  # several processes share the ledger
         data = ledger()
         entry = data.setdefault(
             model,

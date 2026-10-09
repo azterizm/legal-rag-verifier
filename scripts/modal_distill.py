@@ -27,6 +27,14 @@ CHUNK = 40
 WORKERS = 16
 
 sglang_image = modal.Image.from_registry(SGLANG_IMAGE).env({"HF_HOME": "/hf"})
+judge_image = (
+    modal.Image.from_registry(SGLANG_IMAGE)
+    .env({"HF_HOME": "/hf", "PYTHONPATH": "/app/src:/app/scripts"})
+    .add_local_dir(ROOT / "src", "/app/src")
+    .add_local_file(ROOT / "scripts/auditor_judge.py", "/app/scripts/auditor_judge.py")
+)
+K2 = "IFM/K2-Horizon-7B"
+K2_REVISION = "3b6ae394c1b863c27a306d168b25555837955192"
 weights = modal.Volume.from_name("legal-rag-verifier-hf", create_if_missing=True)
 app = modal.App("legal-rag-verifier-distill")
 
@@ -43,6 +51,35 @@ def _wait(server: "subprocess.Popen[bytes]", url: str, limit: float = 1500) -> N
         if server.poll() is not None or time.time() > deadline:
             raise RuntimeError("SGLang server did not come up")
         time.sleep(5)
+
+
+@app.function(image=sglang_image, timeout=1800, volumes={"/hf": weights})
+def probe() -> dict[str, Any]:
+    """CPU: the SGLang version, and whether it registers K2 Horizon's architecture natively."""
+    import importlib.metadata  # noqa: PLC0415
+
+    from sglang.srt.models.registry import ModelRegistry  # noqa: PLC0415
+
+    archs = ModelRegistry.get_supported_archs()
+    return {
+        "sglang": importlib.metadata.version("sglang"),
+        "K2HorizonForCausalLM": "K2HorizonForCausalLM" in archs,
+        "k2_like": sorted(a for a in archs if "k2" in a.lower() or "horizon" in a.lower()),
+    }
+
+
+@app.function(image=sglang_image, timeout=3600, volumes={"/hf": weights})
+def download_k2() -> str:
+    from huggingface_hub import snapshot_download  # noqa: PLC0415
+
+    snapshot_download(K2, revision=K2_REVISION)
+    weights.commit()
+    return K2_REVISION
+
+
+@app.local_entrypoint()
+def check_k2() -> None:
+    print(probe.remote())
 
 
 @app.cls(
