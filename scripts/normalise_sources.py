@@ -57,22 +57,31 @@ USER = """Documentation, as numbered passages:
 
 {source}
 
-Go through the passages one by one. For each passage, write every fact that follows from it as a
-standalone plain sentence that names what it applies to (never "it" or "this parameter" alone).
-Write the facts a careful reader would work out, not only what the text says word for word:
-- defaults applied: when a result depends on a parameter that has a default, state the result at
-  the default;
-- definitions substituted: when a term is defined, state the facts with the definition in place;
-- references joined: when a passage refers to something stated in another passage, state the
-  combined fact;
-- unit equivalences: state a quantity in the other units a reader may use;
-- arithmetic done: state the result of any calculation the text implies.
-Also restate each rule, condition, exception and default the passage states directly.
+Go through the passages one by one. For each passage, write:
+1. each rule, condition, exception and default it states, restated as a standalone plain sentence
+   ("derived": false);
+2. every fact a careful reader would work out from it that the text does not say in so many words
+   ("derived": true). Look for each of these:
+   - a default applied: when a result depends on a parameter that has a default, state the result
+     at the default;
+   - a definition substituted: when a term is defined, state the fact with the definition in place;
+   - a reference joined: when a passage refers to something stated in another passage, state the
+     combined fact;
+   - a threshold restated: "not below the age of sixty" is "aged 60 or over";
+   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in
+     the text or follow from it by arithmetic;
+   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total
+     or a difference.
+   Examples (not from this documentation): "retries defaults to 3" and "each retry waits 2
+   seconds" give "By default the client waits 6 seconds in total across retries" (calc "3 * 2");
+   "size is in blocks" and "a block is 512 bytes" give "A size of 4 is 2048 bytes" only if 4 is in
+   the text (calc "4 * 512").
+Each sentence names what it applies to (never "it" or "this parameter" alone).
 
-Return JSON: {{"facts": [{{"fact": the sentence, "passage": the number of the passage it follows
-from, "quotes": [short phrases copied EXACTLY from the documentation that support it],
-"calc": an arithmetic expression using only numbers that appear in the quotes and + - * / ( ),
-whose result is a number in the fact, or "" when there is no calculation}}]}}
+Return JSON: {{"facts": [{{"fact": the sentence, "derived": true or false, "passage": the number of
+the passage it follows from, "quotes": [short phrases copied EXACTLY from the documentation that
+support it], "calc": an arithmetic expression using only numbers that appear in the quotes and
++ - * / ( ), whose result is a number in the fact, or "" when there is no calculation}}]}}
 Every number, date and version in a fact must appear in one of its quotes or be the result of
 its calc."""
 PROMPT_SHA = hashlib.sha256((SYSTEM + USER).encode()).hexdigest()
@@ -235,8 +244,8 @@ def checked(entry: Mapping[str, Any], passages: list[dict[str, str]]) -> dict[st
     proposed = [f for f in (entry["raw"].get("facts") or []) if isinstance(f, Mapping)]
     reasons = [check_fact(f, flat(passages)) for f in proposed]
     kept = [
-        {"fact": f["fact"].strip(), "passage": f["passage"], "quotes": f["quotes"],
-         "calc": f.get("calc") or ""}
+        {"fact": f["fact"].strip(), "derived": f.get("derived") is True,
+         "passage": f["passage"], "quotes": f["quotes"], "calc": f.get("calc") or ""}
         for f, why in zip(proposed, reasons, strict=True)
         if why is None
     ]  # fmt: skip
@@ -245,6 +254,7 @@ def checked(entry: Mapping[str, Any], passages: list[dict[str, str]]) -> dict[st
         "facts": kept,
         "proposed": len(proposed),
         "kept": len(kept),
+        "derived_kept": sum(f["derived"] for f in kept),
         "dropped": dict(Counter(r for r in reasons if r)),
     }
 
@@ -259,12 +269,17 @@ def main() -> None:
     for name, passages in sources.items():
         record = checked(normalise_source(name, passages), passages)
         records.append(record)
-        print(f"{name}: kept {record['kept']}/{record['proposed']} {record['dropped']}", flush=True)
+        print(
+            f"{name}: kept {record['kept']}/{record['proposed']}, derived "
+            f"{record['derived_kept']}, dropped {record['dropped']}",
+            flush=True,
+        )
     totals = {
         "prompt_sha256": PROMPT_SHA,
         "sources": len(records),
         "proposed": sum(r["proposed"] for r in records),
         "kept": sum(r["kept"] for r in records),
+        "derived_kept": sum(r["derived_kept"] for r in records),
         "dropped": dict(sum((Counter(r["dropped"]) for r in records), Counter())),
     }
     tag = "pilot-" if args.pilot else ""
