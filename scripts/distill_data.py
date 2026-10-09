@@ -214,8 +214,8 @@ def software_pool(rng: random.Random) -> list[dict[str, Any]]:
         found = sections(url)
         rng.shuffle(found)
         page = url.rstrip("/").split("/")[-1].removesuffix(".html")
-        for heading, text in found[:PER_PAGE]:
-            heading = heading if not heading.startswith(", ") else page + heading
+        for raw_heading, text in found[:PER_PAGE]:
+            heading = page + raw_heading if raw_heading.startswith(", ") else raw_heading
             out.append(
                 {
                     "domain": "software",
