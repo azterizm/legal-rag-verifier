@@ -523,3 +523,11 @@ listed. Scoring runs on the laptop from the committed output.
   entailment still failed, and no fact on that passage.
 - Also reported: facts proposed, kept and dropped by each rule, entailment time per sentence, and
   accuracy against the claim check alone and against no auditor.
+
+### Stop 41: prompt frozen (2026-10-09, before the battery run)
+
+The first pilot prompt mostly restated the text: 52 of 55 facts kept, none derived in a way that mattered. The
+prompt was revised once to ask for derived facts by name (defaults, definitions, references, thresholds,
+units, arithmetic), with two examples from neither battery, and to mark each fact as derived or not. Second
+pilot: 60 of 62 facts kept, 13 derived, 2 dropped for a citation not in the quotes, no arithmetic. Frozen
+prompt sha256 `10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a`. Pilot calls: 6.

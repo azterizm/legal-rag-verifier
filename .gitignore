@@ -56,3 +56,6 @@ results/grid/rollback/key.json
 
 # Stop 37 grading: the key would unblind your grades (its hash is in GRID.md)
 results/software/review/key.json
+
+# Stop 41 pilot: the stored prompts quote full statute text from data/ (pilot-facts.jsonl is the kept copy)
+results/normalise/gemini-3.8-flash-high/pilot_*
