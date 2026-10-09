@@ -987,3 +987,25 @@ Readings, per domain (software, statutes) and in total:
 - F5: every error of the teacher and the student, with its reason. Not reclassified.
 - Also reported: answers with the source and closed-book apart; for the sentences you grade wrong, how often each
   judge says contradicted and how often not stated.
+
+### Stop 46: results (2026-10-09)
+
+Training: 4,018 examples, none over 8,192 tokens, one epoch (252 steps) in 33.5 min on an H100, final loss 0.28.
+Two allocation warnings for memory at steps 33 and 156; the run continued. Validation agreement with Gemini: 370
+of 415 (89.2 %), so no second epoch (rule: below 85 %). Most differences: Gemini contradicted, student not stated
+(15); Gemini not stated, student supported (14).
+
+| Arm | Part A strict FR / caught | Part A accuracy | Part B strict FR / caught | Part B accuracy | Statutes strict |
+|---|---|---|---|---|---|
+| Teacher (Gemini per clause) | 6 / 6 | 82.4 % | 7 / 8 | 82.5 % | 68.3 % |
+| K2 student | 6 / 4 | 76.5 % | 5 / 5 | 80.0 % | 64.6 % |
+| K2 untrained, low effort (stop 44) | 1 / 3 | 88.2 % | 1 / 1 | 80.0 % | 66.7 % |
+
+Under Replace the student scores 76.5 % and 77.5 %. Latency one at a time on the L40S: p50 1.2 s, p95 1.7 s
+(51 tokens), within the 2 s target. Bulk (16 at a time): p50 3.2 s.
+
+Gate: the student is 5.9 points below the teacher on Part A (2 of 34 texts) and 2.5 on Part B. Work halts for
+your review before Qwen 27B is trained. The student is less accurate than the untrained K2 on Part A: it learned
+Gemini's lean to not stated, which rolls back right sentences (6 against 1). Modal spend $6.33 of $55. Router: Opus
+5.5 $7.67 of $40. Gemini is rate-limited until about 18:07 UTC (HTTP 429, Retry-After 5,808 s) with 200 of 323 fresh
+clauses labelled.

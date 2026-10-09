@@ -747,5 +747,348 @@
   "seconds": 3.5,
   "usd": 0.0022,
   "note": "3"
+ },
+ {
+  "run": "stop47 fresh v0",
+  "gpu": "L4",
+  "seconds": 74.0,
+  "usd": 0.0189,
+  "note": ""
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 376.8,
+  "usd": 0.4754,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 41.0,
+  "usd": 0.0518,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 32.2,
+  "usd": 0.0406,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 36.7,
+  "usd": 0.0463,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 21.2,
+  "usd": 0.0268,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 25.9,
+  "usd": 0.0326,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 19.0,
+  "usd": 0.024,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 27.1,
+  "usd": 0.0341,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-low",
+  "gpu": "H100",
+  "seconds": 3.7,
+  "usd": 0.0047,
+  "note": "3"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 234.5,
+  "usd": 0.1461,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 38.9,
+  "usd": 0.0242,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 36.6,
+  "usd": 0.0228,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 43.8,
+  "usd": 0.0273,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 30.5,
+  "usd": 0.019,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.7,
+  "usd": 0.0173,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 28.9,
+  "usd": 0.018,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 28.6,
+  "usd": 0.0178,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 3.8,
+  "usd": 0.0024,
+  "note": "3"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 156.0,
+  "usd": 0.0971,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 16.9,
+  "usd": 0.0105,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 21.6,
+  "usd": 0.0134,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 27.7,
+  "usd": 0.0172,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 10.0,
+  "usd": 0.0062,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 13.3,
+  "usd": 0.0083,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 15.1,
+  "usd": 0.0094,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.007,
+  "note": "40"
+ },
+ {
+  "run": "stop47 fresh k2-low",
+  "gpu": "L40S",
+  "seconds": 2.1,
+  "usd": 0.0013,
+  "note": "3"
+ },
+ {
+  "run": "stop46 train k2",
+  "gpu": "H100",
+  "seconds": 2067.5,
+  "usd": 2.6088,
+  "note": ""
+ },
+ {
+  "run": "stop46 merge k2",
+  "gpu": "H100",
+  "seconds": 146.5,
+  "usd": 0.1849,
+  "note": ""
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 138.8,
+  "usd": 0.0865,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 7.0,
+  "usd": 0.0044,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 6.8,
+  "usd": 0.0043,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 7.0,
+  "usd": 0.0044,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 7.6,
+  "usd": 0.0048,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 6.8,
+  "usd": 0.0043,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 7.6,
+  "usd": 0.0048,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 7.2,
+  "usd": 0.0045,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 6.5,
+  "usd": 0.0041,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 5.0,
+  "usd": 0.0031,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-validation",
+  "gpu": "L40S",
+  "seconds": 2.0,
+  "usd": 0.0012,
+  "note": "15"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 5.2,
+  "usd": 0.0032,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 5.4,
+  "usd": 0.0033,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 8.2,
+  "usd": 0.0051,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 13.6,
+  "usd": 0.0085,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 12.6,
+  "usd": 0.0079,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 13.9,
+  "usd": 0.0087,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student",
+  "gpu": "L40S",
+  "seconds": 8.3,
+  "usd": 0.0052,
+  "note": "40"
+ },
+ {
+  "run": "stop46 k2-student-sequential",
+  "gpu": "L40S",
+  "seconds": 24.4,
+  "usd": 0.0152,
+  "note": "20"
  }
 ]
