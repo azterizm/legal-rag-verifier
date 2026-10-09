@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/1996/25/s67@current",
+ "section": "uk/ukpga/1996/25/s67",
+ "version": "current",
+ "source_sha256": "1f3d06c21085964022c6e35d6a57fb9122aedd449012db0a2b8ec5b8f59d1521",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In section 4(1) of the Criminal Procedure (Attendance of Witnesses) Act 1965, the words “Crown Court” are substituted for the words “High Court”.",
+    "quote": "for the words “High Court” there shall be substituted “ Crown Court ”"
+   },
+   {
+    "requirement": "Section 67 of the Criminal Procedure and Investigations Act 1996 shall have effect in accordance with provision made by the Secretary of State by order.",
+    "quote": "shall have effect in accordance with provision made by the Secretary of State by order"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In section 4(1) of the Criminal Procedure (Attendance of Witnesses) Act 1965, the words “Crown Court” are substituted for the words “High Court”.",
+   "quote": "for the words “High Court” there shall be substituted “ Crown Court ”"
+  },
+  {
+   "requirement": "Section 67 of the Criminal Procedure and Investigations Act 1996 shall have effect in accordance with provision made by the Secretary of State by order.",
+   "quote": "shall have effect in accordance with provision made by the Secretary of State by order"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

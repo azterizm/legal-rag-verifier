@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2005/9/s47@current",
+ "section": "uk/ukpga/2005/9/s47",
+ "version": "current",
+ "source_sha256": "69079fe1db4297907f140620d7b20be3580b98be2987bad0992706fb980e5cd2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court has in connection with its jurisdiction the same powers, rights, privileges and authority as the High Court.",
+    "quote": "The court has in connection with its jurisdiction the same powers, rights, privileges and authority as the High Court."
+   },
+   {
+    "requirement": "Section 204 of the Law of Property Act 1925 applies in relation to orders and directions of the court as it applies to orders of the High Court.",
+    "quote": "Section 204 of the Law of Property Act 1925 (c. 20) (orders of High Court conclusive in favour of purchasers) applies in relation to orders and directions of the court as it applies to orders of the High Court."
+   },
+   {
+    "requirement": "Office copies of orders made, directions given or other instruments issued by the court and sealed with its official seal are admissible in all legal proceedings as evidence of the originals without any further proof.",
+    "quote": "Office copies of orders made, directions given or other instruments issued by the court and sealed with its official seal are admissible in all legal proceedings as evidence of the originals without any further proof."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The court has in connection with its jurisdiction the same powers, rights, privileges and authority as the High Court.",
+   "quote": "The court has in connection with its jurisdiction the same powers, rights, privileges and authority as the High Court."
+  },
+  {
+   "requirement": "Section 204 of the Law of Property Act 1925 applies in relation to orders and directions of the court as it applies to orders of the High Court.",
+   "quote": "Section 204 of the Law of Property Act 1925 (c. 20) (orders of High Court conclusive in favour of purchasers) applies in relation to orders and directions of the court as it applies to orders of the High Court."
+  },
+  {
+   "requirement": "Office copies of orders made, directions given or other instruments issued by the court and sealed with its official seal are admissible in all legal proceedings as evidence of the originals without any further proof.",
+   "quote": "Office copies of orders made, directions given or other instruments issued by the court and sealed with its official seal are admissible in all legal proceedings as evidence of the originals without any further proof."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,223 @@
+{
+ "key": "uk/ukpga/1996/25/s23@current",
+ "section": "uk/ukpga/1996/25/s23",
+ "version": "current",
+ "source_sha256": "cec9e5e1ffd1bb193e102f6117136803069a51672680ef4ae31ecc7e737965c2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State must prepare a code of practice containing provisions designed to secure that where a criminal investigation is conducted, all reasonable steps are taken for the purposes of the investigation and, in particular, all reasonable lines of inquiry are pursued.",
+    "quote": "The Secretary of State shall prepare a code of practice containing provisions designed to secure— (a) that where a criminal investigation is conducted all reasonable steps are taken for the purposes of the investigation and, in particular, all reasonable lines of inquiry are pursued"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that information obtained in the course of a criminal investigation that may be relevant to the investigation is recorded.",
+    "quote": "that information which is obtained in the course of a criminal investigation and may be relevant to the investigation is recorded"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that any record of relevant information obtained in the course of a criminal investigation is retained.",
+    "quote": "that any record of such information is retained"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that any other material obtained in the course of a criminal investigation that may be relevant to the investigation is retained.",
+    "quote": "that any other material which is obtained in the course of a criminal investigation and may be relevant to the investigation is retained"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that recorded relevant information and other relevant material obtained in a criminal investigation are revealed to a person involved in the prosecution of criminal proceedings arising out of or relating to the investigation who is identified in accordance with prescribed provisions.",
+    "quote": "that information falling within paragraph (b) and material falling within paragraph (d) is revealed to a person who is involved in the prosecution of criminal proceedings arising out of or relating to the investigation and who is identified in accordance with prescribed provisions"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that where a person involved in the prosecution inspects information or other material pursuant to a requirement that it be revealed to them and requests its disclosure to the accused, the accused is allowed to inspect it or is given a copy of it.",
+    "quote": "that where such a person inspects information or other material in pursuance of a requirement that it be revealed to him, and he requests that it be disclosed to the accused, the accused is allowed to inspect it or is given a copy of it"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that where a person involved in the prosecution is given a document indicating the nature of information or other material pursuant to a revelation requirement and requests disclosure to the accused, the accused is allowed to inspect it or is given a copy of it.",
+    "quote": "that where such a person is given a document indicating the nature of information or other material in pursuance of a requirement that it be revealed to him, and he requests that it be disclosed to the accused, the accused is allowed to inspect it or is given a copy of it"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that the person who is to allow the accused to inspect information or other material or give the accused a copy of it decides whether inspection or giving a copy is appropriate.",
+    "quote": "that the person who is to allow the accused to inspect information or other material or to give him a copy of it shall decide which of those (inspecting or giving a copy) is appropriate"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that where the accused is allowed to inspect material and requests a copy, the accused is given a copy unless the person allowing inspection considers that providing a copy is not practicable or not desirable.",
+    "quote": "that where the accused is allowed to inspect material as mentioned in paragraph (f) or (g) and he requests a copy, he is given one unless the person allowing the inspection is of opinion that it is not practicable or not desirable to give him one"
+   },
+   {
+    "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that a person involved in the prosecution identified under prescribed provisions is given a written statement confirming that prescribed activities required by the code have been carried out.",
+    "quote": "that a person mentioned in paragraph (e) is given a written statement that prescribed activities which the code requires have been carried out"
+   },
+   {
+    "requirement": "The code of practice may include provision requiring a police officer identified in accordance with prescribed provisions to carry out a prescribed activity required by the code.",
+    "quote": "that a police officer identified in accordance with prescribed provisions must carry out a prescribed activity which the code requires"
+   },
+   {
+    "requirement": "The code of practice may include provision requiring a police officer identified in accordance with prescribed provisions to take steps to secure the carrying out by another person, whether a police officer or not, of a prescribed activity required by the code.",
+    "quote": "that a police officer so identified must take steps to secure the carrying out by a person (whether or not a police officer) of a prescribed activity which the code requires"
+   },
+   {
+    "requirement": "The code of practice may include provision that a duty must be discharged by different people in succession in prescribed circumstances, such as where a person dies or retires.",
+    "quote": "that a duty must be discharged by different people in succession in prescribed circumstances (as where a person dies or retires)"
+   },
+   {
+    "requirement": "The code of practice may include provision concerning the form in which information is to be recorded.",
+    "quote": "The code may include provision about the form in which information is to be recorded"
+   },
+   {
+    "requirement": "The code of practice may include provision concerning the manner in which and the period for which a record of information is to be retained.",
+    "quote": "The code may include provision about the manner in which and the period for which— (a) a record of information is to be retained"
+   },
+   {
+    "requirement": "The code of practice may include provision concerning the manner in which and the period for which any other material is to be retained.",
+    "quote": "The code may include provision about the manner in which and the period for which— (a) a record of information is to be retained, and (b) any other material is to be retained"
+   },
+   {
+    "requirement": "If a person is charged with an offence, the retention period for records of information or other material under the code of practice may extend beyond a conviction or an acquittal.",
+    "quote": "if a person is charged with an offence the period may extend beyond a conviction or an acquittal"
+   },
+   {
+    "requirement": "The code of practice may include provision concerning the time when, the form in which, the way in which, and the extent to which information or other material is to be revealed to the person involved in the prosecution.",
+    "quote": "The code may include provision about the time when, the form in which, the way in which, and the extent to which, information or any other material is to be revealed to the person mentioned in subsection (1)(e)"
+   },
+   {
+    "requirement": "The code of practice must be framed so that it does not apply to material intercepted in obedience to a warrant issued under section 2 of the Interception of Communications Act 1985.",
+    "quote": "The code must be so framed that it does not apply to any of the following— (a) material intercepted in obedience to a warrant issued under section 2 of the Interception of Communications Act 1985"
+   },
+   {
+    "requirement": "The code of practice must be framed so that it does not apply to material intercepted under the authority of an interception warrant under section 5 of the Regulation of Investigatory Powers Act 2000.",
+    "quote": "material intercepted under the authority of an interception warrant under section 5 of the Regulation of Investigatory Powers Act 2000"
+   },
+   {
+    "requirement": "The code of practice must be framed so that it does not apply to material obtained under the authority of a warrant issued under Chapter 1 of Part 2 of the Investigatory Powers Act 2016.",
+    "quote": "material obtained under the authority of a warrant issued under Chapter 1 of Part 2 of the Investigatory Powers Act 2016"
+   },
+   {
+    "requirement": "The code of practice must be framed so that it does not apply to material obtained under the authority of a warrant issued under Chapter 1 of Part 6 of the Investigatory Powers Act 2016.",
+    "quote": "material obtained under the authority of a warrant issued under Chapter 1 of Part 6 of that Act"
+   },
+   {
+    "requirement": "The code of practice may make different provision in relation to different cases or descriptions of case.",
+    "quote": "The code may— (a) make different provision in relation to different cases or descriptions of case"
+   },
+   {
+    "requirement": "The code of practice may contain exceptions as regards prescribed cases or descriptions of case.",
+    "quote": "The code may— (a) make different provision in relation to different cases or descriptions of case; (b) contain exceptions as regards prescribed cases or descriptions of case"
+   },
+   {
+    "requirement": "For the purposes of section 23 of the Criminal Procedure and Investigations Act 1996, the term 'prescribed' means prescribed by the code of practice.",
+    "quote": "In this section “prescribed” means prescribed by the code"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State must prepare a code of practice containing provisions designed to secure that where a criminal investigation is conducted, all reasonable steps are taken for the purposes of the investigation and, in particular, all reasonable lines of inquiry are pursued.",
+   "quote": "The Secretary of State shall prepare a code of practice containing provisions designed to secure— (a) that where a criminal investigation is conducted all reasonable steps are taken for the purposes of the investigation and, in particular, all reasonable lines of inquiry are pursued"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that information obtained in the course of a criminal investigation that may be relevant to the investigation is recorded.",
+   "quote": "that information which is obtained in the course of a criminal investigation and may be relevant to the investigation is recorded"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that any record of relevant information obtained in the course of a criminal investigation is retained.",
+   "quote": "that any record of such information is retained"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that any other material obtained in the course of a criminal investigation that may be relevant to the investigation is retained.",
+   "quote": "that any other material which is obtained in the course of a criminal investigation and may be relevant to the investigation is retained"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that recorded relevant information and other relevant material obtained in a criminal investigation are revealed to a person involved in the prosecution of criminal proceedings arising out of or relating to the investigation who is identified in accordance with prescribed provisions.",
+   "quote": "that information falling within paragraph (b) and material falling within paragraph (d) is revealed to a person who is involved in the prosecution of criminal proceedings arising out of or relating to the investigation and who is identified in accordance with prescribed provisions"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that where a person involved in the prosecution inspects information or other material pursuant to a requirement that it be revealed to them and requests its disclosure to the accused, the accused is allowed to inspect it or is given a copy of it.",
+   "quote": "that where such a person inspects information or other material in pursuance of a requirement that it be revealed to him, and he requests that it be disclosed to the accused, the accused is allowed to inspect it or is given a copy of it"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that where a person involved in the prosecution is given a document indicating the nature of information or other material pursuant to a revelation requirement and requests disclosure to the accused, the accused is allowed to inspect it or is given a copy of it.",
+   "quote": "that where such a person is given a document indicating the nature of information or other material in pursuance of a requirement that it be revealed to him, and he requests that it be disclosed to the accused, the accused is allowed to inspect it or is given a copy of it"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that the person who is to allow the accused to inspect information or other material or give the accused a copy of it decides whether inspection or giving a copy is appropriate.",
+   "quote": "that the person who is to allow the accused to inspect information or other material or to give him a copy of it shall decide which of those (inspecting or giving a copy) is appropriate"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that where the accused is allowed to inspect material and requests a copy, the accused is given a copy unless the person allowing inspection considers that providing a copy is not practicable or not desirable.",
+   "quote": "that where the accused is allowed to inspect material as mentioned in paragraph (f) or (g) and he requests a copy, he is given one unless the person allowing the inspection is of opinion that it is not practicable or not desirable to give him one"
+  },
+  {
+   "requirement": "The code of practice prepared by the Secretary of State must contain provisions designed to secure that a person involved in the prosecution identified under prescribed provisions is given a written statement confirming that prescribed activities required by the code have been carried out.",
+   "quote": "that a person mentioned in paragraph (e) is given a written statement that prescribed activities which the code requires have been carried out"
+  },
+  {
+   "requirement": "The code of practice may include provision requiring a police officer identified in accordance with prescribed provisions to carry out a prescribed activity required by the code.",
+   "quote": "that a police officer identified in accordance with prescribed provisions must carry out a prescribed activity which the code requires"
+  },
+  {
+   "requirement": "The code of practice may include provision requiring a police officer identified in accordance with prescribed provisions to take steps to secure the carrying out by another person, whether a police officer or not, of a prescribed activity required by the code.",
+   "quote": "that a police officer so identified must take steps to secure the carrying out by a person (whether or not a police officer) of a prescribed activity which the code requires"
+  },
+  {
+   "requirement": "The code of practice may include provision that a duty must be discharged by different people in succession in prescribed circumstances, such as where a person dies or retires.",
+   "quote": "that a duty must be discharged by different people in succession in prescribed circumstances (as where a person dies or retires)"
+  },
+  {
+   "requirement": "The code of practice may include provision concerning the form in which information is to be recorded.",
+   "quote": "The code may include provision about the form in which information is to be recorded"
+  },
+  {
+   "requirement": "The code of practice may include provision concerning the manner in which and the period for which a record of information is to be retained.",
+   "quote": "The code may include provision about the manner in which and the period for which— (a) a record of information is to be retained"
+  },
+  {
+   "requirement": "The code of practice may include provision concerning the manner in which and the period for which any other material is to be retained.",
+   "quote": "The code may include provision about the manner in which and the period for which— (a) a record of information is to be retained, and (b) any other material is to be retained"
+  },
+  {
+   "requirement": "If a person is charged with an offence, the retention period for records of information or other material under the code of practice may extend beyond a conviction or an acquittal.",
+   "quote": "if a person is charged with an offence the period may extend beyond a conviction or an acquittal"
+  },
+  {
+   "requirement": "The code of practice may include provision concerning the time when, the form in which, the way in which, and the extent to which information or other material is to be revealed to the person involved in the prosecution.",
+   "quote": "The code may include provision about the time when, the form in which, the way in which, and the extent to which, information or any other material is to be revealed to the person mentioned in subsection (1)(e)"
+  },
+  {
+   "requirement": "The code of practice must be framed so that it does not apply to material intercepted in obedience to a warrant issued under section 2 of the Interception of Communications Act 1985.",
+   "quote": "The code must be so framed that it does not apply to any of the following— (a) material intercepted in obedience to a warrant issued under section 2 of the Interception of Communications Act 1985"
+  },
+  {
+   "requirement": "The code of practice must be framed so that it does not apply to material intercepted under the authority of an interception warrant under section 5 of the Regulation of Investigatory Powers Act 2000.",
+   "quote": "material intercepted under the authority of an interception warrant under section 5 of the Regulation of Investigatory Powers Act 2000"
+  },
+  {
+   "requirement": "The code of practice must be framed so that it does not apply to material obtained under the authority of a warrant issued under Chapter 1 of Part 2 of the Investigatory Powers Act 2016.",
+   "quote": "material obtained under the authority of a warrant issued under Chapter 1 of Part 2 of the Investigatory Powers Act 2016"
+  },
+  {
+   "requirement": "The code of practice must be framed so that it does not apply to material obtained under the authority of a warrant issued under Chapter 1 of Part 6 of the Investigatory Powers Act 2016.",
+   "quote": "material obtained under the authority of a warrant issued under Chapter 1 of Part 6 of that Act"
+  },
+  {
+   "requirement": "The code of practice may make different provision in relation to different cases or descriptions of case.",
+   "quote": "The code may— (a) make different provision in relation to different cases or descriptions of case"
+  },
+  {
+   "requirement": "The code of practice may contain exceptions as regards prescribed cases or descriptions of case.",
+   "quote": "The code may— (a) make different provision in relation to different cases or descriptions of case; (b) contain exceptions as regards prescribed cases or descriptions of case"
+  },
+  {
+   "requirement": "For the purposes of section 23 of the Criminal Procedure and Investigations Act 1996, the term 'prescribed' means prescribed by the code of practice.",
+   "quote": "In this section “prescribed” means prescribed by the code"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 25,
+  "elements_verified": 25,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

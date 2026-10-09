@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/1977/43/s9@current",
+ "section": "uk/ukpga/1977/43/s9",
+ "version": "current",
+ "source_sha256": "10fce99b0a316a1f9ea27c716bf1c89db1dd0dfab468770cd8e3b5f4b3ab7b58",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to section 9 of the Protection from Eviction Act 1977, the court for the purposes of Part I of the Act is the county court in relation to premises for which that court currently has jurisdiction in actions for the recovery of land.",
+    "quote": "the court for the purposes of Part I of this Act shall, subject to this section, be— (a) the county court, in relation to premises with respect to which the county court has for the time being jurisdiction in actions for the recovery of land"
+   },
+   {
+    "requirement": "Subject to section 9 of the Protection from Eviction Act 1977, the court for the purposes of Part I of the Act is the High Court in relation to premises other than those where the county court has jurisdiction for the recovery of land.",
+    "quote": "the High Court, in relation to other premises"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the jurisdiction of the High Court in proceedings to enforce a lessor's right of re-entry or forfeiture.",
+    "quote": "Nothing in this Act shall affect the jurisdiction of the High Court in proceedings to enforce a lessor’s right of re-entry or forfeiture"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the jurisdiction of the High Court in proceedings to enforce a mortgagee's right of possession where the former tenancy was not binding on the mortgagee.",
+    "quote": "to enforce a mortgagee’s right of possession in a case where the former tenancy was not binding on the mortgagee"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 59 of the Pluralities Act 1838.",
+    "quote": "Nothing in this Act shall affect the operation of— (a) section 59 of the Pluralities Act 1838"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 19 of the Defence Act 1842.",
+    "quote": "section 19 of the Defence Act 1842"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 6 of the Lecturers and Parish Clerks Act 1844.",
+    "quote": "section 6 of the Lecturers and Parish Clerks Act 1844"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of paragraph 3 of Schedule 1 to the Sexual Offences Act 1956.",
+    "quote": "paragraph 3 of Schedule 1 to the Sexual Offences Act 1956"
+   },
+   {
+    "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 13 of the Compulsory Purchase Act 1965.",
+    "quote": "section 13 of the Compulsory Purchase Act 1965"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to section 9 of the Protection from Eviction Act 1977, the court for the purposes of Part I of the Act is the county court in relation to premises for which that court currently has jurisdiction in actions for the recovery of land.",
+   "quote": "the court for the purposes of Part I of this Act shall, subject to this section, be— (a) the county court, in relation to premises with respect to which the county court has for the time being jurisdiction in actions for the recovery of land"
+  },
+  {
+   "requirement": "Subject to section 9 of the Protection from Eviction Act 1977, the court for the purposes of Part I of the Act is the High Court in relation to premises other than those where the county court has jurisdiction for the recovery of land.",
+   "quote": "the High Court, in relation to other premises"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the jurisdiction of the High Court in proceedings to enforce a lessor's right of re-entry or forfeiture.",
+   "quote": "Nothing in this Act shall affect the jurisdiction of the High Court in proceedings to enforce a lessor’s right of re-entry or forfeiture"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the jurisdiction of the High Court in proceedings to enforce a mortgagee's right of possession where the former tenancy was not binding on the mortgagee.",
+   "quote": "to enforce a mortgagee’s right of possession in a case where the former tenancy was not binding on the mortgagee"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 59 of the Pluralities Act 1838.",
+   "quote": "Nothing in this Act shall affect the operation of— (a) section 59 of the Pluralities Act 1838"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 19 of the Defence Act 1842.",
+   "quote": "section 19 of the Defence Act 1842"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 6 of the Lecturers and Parish Clerks Act 1844.",
+   "quote": "section 6 of the Lecturers and Parish Clerks Act 1844"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of paragraph 3 of Schedule 1 to the Sexual Offences Act 1956.",
+   "quote": "paragraph 3 of Schedule 1 to the Sexual Offences Act 1956"
+  },
+  {
+   "requirement": "Nothing in the Protection from Eviction Act 1977 affects the operation of section 13 of the Compulsory Purchase Act 1965.",
+   "quote": "section 13 of the Compulsory Purchase Act 1965"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

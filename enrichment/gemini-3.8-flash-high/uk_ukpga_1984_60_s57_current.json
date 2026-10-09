@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/1984/60/s57@current",
+ "section": "uk/ukpga/1984/60/s57",
+ "version": "current",
+ "source_sha256": "0fed3e7cb3b08fc1be80f835cca83fde1b713583e113e51d38e7a080361a21f2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 57 of the Police and Criminal Evidence Act 1984 substitutes new subsections (2) to (11) in place of section 34(2) of the Children and Young Persons Act 1933.",
+    "quote": "The following subsections shall be substituted for section 34(2) of the Children and Young Persons Act 1933"
+   },
+   {
+    "requirement": "Where a child or young person is in police detention, practicable steps must be taken to ascertain the identity of a person responsible for that child or young person's welfare.",
+    "quote": "such steps as are practicable shall be taken to ascertain the identity of a person responsible for his welfare."
+   },
+   {
+    "requirement": "If it is practicable to ascertain the identity of a person responsible for the welfare of the child or young person, that person must be informed that the child or young person has been arrested, why they have been arrested, and where they are being detained, unless it is not practicable to do so.",
+    "quote": "that person shall be informed, unless it is not practicable to do so— athat the child or young person has been arrested;bwhy he has been arrested; andcwhere he is being detained."
+   },
+   {
+    "requirement": "Where information is required to be given under subsection (3), that information must be given as soon as it is practicable to do so.",
+    "quote": "Where information falls to be given under subsection (3) above, it shall be given as soon as it is practicable to do so."
+   },
+   {
+    "requirement": "For the purposes of section 34 of the Children and Young Persons Act 1933, the persons who may be responsible for the welfare of a child or young person are their parent or guardian, or any other person who has for the time being assumed responsibility for their welfare.",
+    "quote": "his parent or guardian; orbany other person who has for the time being assumed responsibility for his welfare."
+   },
+   {
+    "requirement": "If it is practicable to give a person responsible for the welfare of the child or young person the information required by subsection (3), that person must be given it as soon as it is practicable to do so.",
+    "quote": "If it is practicable to give a person responsible for the welfare of the child or young person the information required by subsection (3) above, that person shall be given it as soon as it is practicable to do so."
+   },
+   {
+    "requirement": "If it appears that at the time of the child or young person's arrest a supervision order (as defined in section 11 of the Children and Young Persons Act 1969) is in force in respect of them, the person responsible for their supervision must also be informed of the arrest, the reason for it, and the place of detention as soon as it is reasonably practicable to do so.",
+    "quote": "If it appears that at the time of his arrest a supervision order, as defined in section 11 of the Children and Young Persons Act 1969, is in force in respect of him, the person responsible for his supervision shall also be informed as described in subsection (3) above as soon it is reasonably practicable to do so."
+   },
+   {
+    "requirement": "In the case of a child or young person in the care of a local authority, the statutory reference to a parent or guardian is a reference to that local authority.",
+    "quote": "in the case of a child or young person in the care of a local authority, a reference to that authority"
+   },
+   {
+    "requirement": "In the case of a child or young person in the care of a voluntary organisation in which parental rights and duties with respect to them are vested by virtue of a resolution under section 64(1) of the Child Care Act 1980, the statutory reference to a parent or guardian is a reference to that organisation.",
+    "quote": "in the case of a child or young person in the care of a voluntary organisation in which parental rights and duties with respect to him are vested by virtue of a resolution under section 64(1) of the Child Care Act 1980, a reference to that organisation."
+   },
+   {
+    "requirement": "The statutory rights conferred on a child or young person by subsections (2) to (8) of section 34 of the Children and Young Persons Act 1933 are in addition to their rights under section 56 of the Police and Criminal Evidence Act 1984.",
+    "quote": "The rights conferred on a child or young person by subsections (2) to (8) above are in addition to his rights under section 56 of the Police and Criminal Evidence Act 1984."
+   },
+   {
+    "requirement": "The reference to a child or young person in police detention includes a child or young person detained under the terrorism provisions, and in subsection (3) the term arrest includes such detention.",
+    "quote": "The reference in subsection (2) above to a child or young person who is in police detention includes a reference to a child or young person who has been detained under the terrorism provisions; and in subsection (3) above “arrest” includes such detention."
+   },
+   {
+    "requirement": "The term the terrorism provisions has the meaning assigned to it by section 65 of the Police and Criminal Evidence Act 1984.",
+    "quote": "In subsection (10) above “the terrorism provisions” has the meaning assigned to it by section 65 of the Police and Criminal Evidence Act 1984."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 57 of the Police and Criminal Evidence Act 1984 substitutes new subsections (2) to (11) in place of section 34(2) of the Children and Young Persons Act 1933.",
+   "quote": "The following subsections shall be substituted for section 34(2) of the Children and Young Persons Act 1933"
+  },
+  {
+   "requirement": "Where a child or young person is in police detention, practicable steps must be taken to ascertain the identity of a person responsible for that child or young person's welfare.",
+   "quote": "such steps as are practicable shall be taken to ascertain the identity of a person responsible for his welfare."
+  },
+  {
+   "requirement": "If it is practicable to ascertain the identity of a person responsible for the welfare of the child or young person, that person must be informed that the child or young person has been arrested, why they have been arrested, and where they are being detained, unless it is not practicable to do so.",
+   "quote": "that person shall be informed, unless it is not practicable to do so— athat the child or young person has been arrested;bwhy he has been arrested; andcwhere he is being detained."
+  },
+  {
+   "requirement": "Where information is required to be given under subsection (3), that information must be given as soon as it is practicable to do so.",
+   "quote": "Where information falls to be given under subsection (3) above, it shall be given as soon as it is practicable to do so."
+  },
+  {
+   "requirement": "For the purposes of section 34 of the Children and Young Persons Act 1933, the persons who may be responsible for the welfare of a child or young person are their parent or guardian, or any other person who has for the time being assumed responsibility for their welfare.",
+   "quote": "his parent or guardian; orbany other person who has for the time being assumed responsibility for his welfare."
+  },
+  {
+   "requirement": "If it is practicable to give a person responsible for the welfare of the child or young person the information required by subsection (3), that person must be given it as soon as it is practicable to do so.",
+   "quote": "If it is practicable to give a person responsible for the welfare of the child or young person the information required by subsection (3) above, that person shall be given it as soon as it is practicable to do so."
+  },
+  {
+   "requirement": "If it appears that at the time of the child or young person's arrest a supervision order (as defined in section 11 of the Children and Young Persons Act 1969) is in force in respect of them, the person responsible for their supervision must also be informed of the arrest, the reason for it, and the place of detention as soon as it is reasonably practicable to do so.",
+   "quote": "If it appears that at the time of his arrest a supervision order, as defined in section 11 of the Children and Young Persons Act 1969, is in force in respect of him, the person responsible for his supervision shall also be informed as described in subsection (3) above as soon it is reasonably practicable to do so."
+  },
+  {
+   "requirement": "In the case of a child or young person in the care of a local authority, the statutory reference to a parent or guardian is a reference to that local authority.",
+   "quote": "in the case of a child or young person in the care of a local authority, a reference to that authority"
+  },
+  {
+   "requirement": "In the case of a child or young person in the care of a voluntary organisation in which parental rights and duties with respect to them are vested by virtue of a resolution under section 64(1) of the Child Care Act 1980, the statutory reference to a parent or guardian is a reference to that organisation.",
+   "quote": "in the case of a child or young person in the care of a voluntary organisation in which parental rights and duties with respect to him are vested by virtue of a resolution under section 64(1) of the Child Care Act 1980, a reference to that organisation."
+  },
+  {
+   "requirement": "The statutory rights conferred on a child or young person by subsections (2) to (8) of section 34 of the Children and Young Persons Act 1933 are in addition to their rights under section 56 of the Police and Criminal Evidence Act 1984.",
+   "quote": "The rights conferred on a child or young person by subsections (2) to (8) above are in addition to his rights under section 56 of the Police and Criminal Evidence Act 1984."
+  },
+  {
+   "requirement": "The reference to a child or young person in police detention includes a child or young person detained under the terrorism provisions, and in subsection (3) the term arrest includes such detention.",
+   "quote": "The reference in subsection (2) above to a child or young person who is in police detention includes a reference to a child or young person who has been detained under the terrorism provisions; and in subsection (3) above “arrest” includes such detention."
+  },
+  {
+   "requirement": "The term the terrorism provisions has the meaning assigned to it by section 65 of the Police and Criminal Evidence Act 1984.",
+   "quote": "In subsection (10) above “the terrorism provisions” has the meaning assigned to it by section 65 of the Police and Criminal Evidence Act 1984."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

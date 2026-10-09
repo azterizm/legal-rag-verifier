@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1998/20/s7@current",
+ "section": "uk/ukpga/1998/20/s7",
+ "version": "current",
+ "source_sha256": "54929c08ddb0cd8ba9c61d41bf643d79d0fe2c1272f35628383bf2cd522e829c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "This Part deals with the extent to which the parties to a contract to which the Act applies may, by reference to contract terms, oust or vary the right to statutory interest that would otherwise apply when an unpaid qualifying debt created by the contract arises.",
+    "quote": "parties to a contract to which this Act applies may by reference to contract terms oust or vary the right to statutory interest"
+   },
+   {
+    "requirement": "A qualifying debt created by the contract that is not paid is referred to in this Part as “the debt”.",
+    "quote": "qualifying debt created by the contract (in this Part referred to as “the debt”)"
+   },
+   {
+    "requirement": "This Part applies strictly to contract terms that are agreed before the debt is created.",
+    "quote": "This Part applies to contract terms agreed before the debt is created"
+   },
+   {
+    "requirement": "The parties to the contract are free to agree terms dealing with the debt after the time the debt is created.",
+    "quote": "after that time the parties are free to agree terms dealing with the debt"
+   },
+   {
+    "requirement": "This Part operates without prejudice to any other ground that may affect the validity of a contract term.",
+    "quote": "without prejudice to any other ground which may affect the validity of a contract term"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "This Part deals with the extent to which the parties to a contract to which the Act applies may, by reference to contract terms, oust or vary the right to statutory interest that would otherwise apply when an unpaid qualifying debt created by the contract arises.",
+   "quote": "parties to a contract to which this Act applies may by reference to contract terms oust or vary the right to statutory interest"
+  },
+  {
+   "requirement": "A qualifying debt created by the contract that is not paid is referred to in this Part as “the debt”.",
+   "quote": "qualifying debt created by the contract (in this Part referred to as “the debt”)"
+  },
+  {
+   "requirement": "This Part applies strictly to contract terms that are agreed before the debt is created.",
+   "quote": "This Part applies to contract terms agreed before the debt is created"
+  },
+  {
+   "requirement": "The parties to the contract are free to agree terms dealing with the debt after the time the debt is created.",
+   "quote": "after that time the parties are free to agree terms dealing with the debt"
+  },
+  {
+   "requirement": "This Part operates without prejudice to any other ground that may affect the validity of a contract term.",
+   "quote": "without prejudice to any other ground which may affect the validity of a contract term"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

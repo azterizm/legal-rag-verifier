@@ -1,0 +1,90 @@
+{
+ "key": "uk/ukpga/1994/33/s115@current",
+ "section": "uk/ukpga/1994/33/s115",
+ "version": "current",
+ "source_sha256": "2ea6eecd92f88a90ff810b6557ed03148ddeebc3d84f4003b2ad53832fedf404",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person falls within the scope of the offence provision if that person is or has been employed, whether as a prisoner custody officer or otherwise, in pursuance of prisoner escort arrangements or at a contracted out prison.",
+    "quote": "is or has been employed (whether as a prisoner custody officer or otherwise) in pursuance of prisoner escort arrangements, or at a contracted out prison"
+   },
+   {
+    "requirement": "A person falls within the scope of the offence provision if that person is or has been employed to perform contracted out functions at a directly managed prison.",
+    "quote": "is or has been employed to perform contracted out functions at a directly managed prison"
+   },
+   {
+    "requirement": "A qualifying employed person commits an offence if that person discloses any information acquired in the course of employment that relates to a particular prisoner, unless the disclosure is made in the course of duty or as authorised by the Scottish Ministers.",
+    "quote": "shall be guilty of an offence if he discloses, otherwise than in the course of his duty or as authorised by the Scottish Ministers, any information which he acquired in the course of his employment and which relates to a particular prisoner"
+   },
+   {
+    "requirement": "A person guilty of the disclosure offence is liable on conviction on indictment to a term of imprisonment not exceeding two years, a fine, or both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding two years or a fine or both"
+   },
+   {
+    "requirement": "A person guilty of the disclosure offence is liable on summary conviction to a term of imprisonment not exceeding six months, a fine not exceeding the statutory maximum, or both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding six months or a fine not exceeding the statutory maximum or both"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "two years",
+    "quote": "imprisonment for a term not exceeding two years"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction",
+    "value": "six months",
+    "quote": "imprisonment for a term not exceeding six months"
+   },
+   {
+    "what": "maximum fine on summary conviction",
+    "value": "the statutory maximum",
+    "quote": "fine not exceeding the statutory maximum"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person falls within the scope of the offence provision if that person is or has been employed, whether as a prisoner custody officer or otherwise, in pursuance of prisoner escort arrangements or at a contracted out prison.",
+   "quote": "is or has been employed (whether as a prisoner custody officer or otherwise) in pursuance of prisoner escort arrangements, or at a contracted out prison"
+  },
+  {
+   "requirement": "A person falls within the scope of the offence provision if that person is or has been employed to perform contracted out functions at a directly managed prison.",
+   "quote": "is or has been employed to perform contracted out functions at a directly managed prison"
+  },
+  {
+   "requirement": "A qualifying employed person commits an offence if that person discloses any information acquired in the course of employment that relates to a particular prisoner, unless the disclosure is made in the course of duty or as authorised by the Scottish Ministers.",
+   "quote": "shall be guilty of an offence if he discloses, otherwise than in the course of his duty or as authorised by the Scottish Ministers, any information which he acquired in the course of his employment and which relates to a particular prisoner"
+  },
+  {
+   "requirement": "A person guilty of the disclosure offence is liable on conviction on indictment to a term of imprisonment not exceeding two years, a fine, or both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding two years or a fine or both"
+  },
+  {
+   "requirement": "A person guilty of the disclosure offence is liable on summary conviction to a term of imprisonment not exceeding six months, a fine not exceeding the statutory maximum, or both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding six months or a fine not exceeding the statutory maximum or both"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "two years",
+   "quote": "imprisonment for a term not exceeding two years"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction",
+   "value": "six months",
+   "quote": "imprisonment for a term not exceeding six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1986/46/s23@current",
+ "section": "uk/ukpga/1986/46/s23",
+ "version": "current",
+ "source_sha256": "472926929573a674a8d1d46b3e60fc9218f16b7fe2a0a09b00d7c89618134411",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The transitional provisions and savings contained in Schedule 3 to the Company Directors Disqualification Act 1986 have effect.",
+    "quote": "The transitional provisions and savings in Schedule 3 to this Act have effect"
+   },
+   {
+    "requirement": "The transitional provisions and savings in Schedule 3 to the Company Directors Disqualification Act 1986 operate without prejudice to anything in the Interpretation Act 1978 regarding the effect of repeals.",
+    "quote": "are without prejudice to anything in the Interpretation Act 1978 with regard to the effect of repeals"
+   },
+   {
+    "requirement": "The enactments specified in the second column of Schedule 4 to the Company Directors Disqualification Act 1986 are repealed to the extent specified in the third column of that Schedule.",
+    "quote": "The enactments specified in the second column of Schedule 4 to this Act are repealed to the extent specified in the third column of that Schedule"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The transitional provisions and savings contained in Schedule 3 to the Company Directors Disqualification Act 1986 have effect.",
+   "quote": "The transitional provisions and savings in Schedule 3 to this Act have effect"
+  },
+  {
+   "requirement": "The transitional provisions and savings in Schedule 3 to the Company Directors Disqualification Act 1986 operate without prejudice to anything in the Interpretation Act 1978 regarding the effect of repeals.",
+   "quote": "are without prejudice to anything in the Interpretation Act 1978 with regard to the effect of repeals"
+  },
+  {
+   "requirement": "The enactments specified in the second column of Schedule 4 to the Company Directors Disqualification Act 1986 are repealed to the extent specified in the third column of that Schedule.",
+   "quote": "The enactments specified in the second column of Schedule 4 to this Act are repealed to the extent specified in the third column of that Schedule"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

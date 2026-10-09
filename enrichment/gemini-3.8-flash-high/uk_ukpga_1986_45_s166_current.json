@@ -1,0 +1,107 @@
+{
+ "key": "uk/ukpga/1986/45/s166@current",
+ "section": "uk/ukpga/1986/45/s166",
+ "version": "current",
+ "source_sha256": "1d053b545f3474e8081aa0f064fb240b3d3ec02f94c283fdf7bb128b918899bf",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 166 applies where, in the case of a creditors' voluntary winding up, a liquidator has been nominated by the company.",
+    "quote": "in the case of a creditors’ voluntary winding up, a liquidator has been nominated by the company"
+   },
+   {
+    "requirement": "The exercise by the liquidator of the power to sell any of the company's property specified in paragraph 6 of Schedule 4 to this Act cannot be challenged on the ground of any prior inhibition.",
+    "quote": "shall not be challengeable on the ground of any prior inhibition"
+   },
+   {
+    "requirement": "The powers conferred on the liquidator by section 165 must not be exercised without the sanction of the court before the company's creditors under section 100 nominate a liquidator or before the creditors' nomination procedure concludes without a nomination being made.",
+    "quote": "powers conferred on the liquidator by section 165 shall not be exercised, except with the sanction of the court"
+   },
+   {
+    "requirement": "The restriction on exercising section 165 powers prior to creditors' nomination or conclusion of the nomination procedure does not apply to the liquidator's power to take into custody or control all property to which the company is or appears to be entitled.",
+    "quote": "to take into his custody or under his control all the property to which the company is or appears to be entitled"
+   },
+   {
+    "requirement": "The restriction on exercising section 165 powers prior to creditors' nomination or conclusion of the nomination procedure does not apply to the liquidator's power to dispose of perishable goods and other goods whose value is likely to diminish if not immediately disposed of.",
+    "quote": "to dispose of perishable goods and other goods the value of which is likely to diminish if they are not immediately disposed of"
+   },
+   {
+    "requirement": "The restriction on exercising section 165 powers prior to creditors' nomination or conclusion of the nomination procedure does not apply to the liquidator's power to do all other things necessary for protecting the company's assets.",
+    "quote": "to do all such other things as may be necessary for the protection of the company’s assets"
+   },
+   {
+    "requirement": "If the directors fail to comply with section 99(1), (2) or (2A), or section 100(1B), the liquidator must apply to the court within 7 days of the relevant day for directions on how to remedy that default.",
+    "quote": "the liquidator shall, within 7 days of the relevant day, apply to the court for directions as to the manner in which that default is to be remedied"
+   },
+   {
+    "requirement": "The relevant day means whichever is later between the day the liquidator was nominated by the company and the day the liquidator first became aware of the directors' default.",
+    "quote": "“The relevant day” means the day on which the liquidator was nominated by the company or the day on which he first became aware of the default, whichever is the later"
+   },
+   {
+    "requirement": "A liquidator who fails without reasonable excuse to comply with section 166 is liable to a fine.",
+    "quote": "If the liquidator without reasonable excuse fails to comply with this section, he is liable to a fine"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period after the relevant day within which the liquidator must apply to the court for directions if directors fail to comply with specified provisions",
+    "value": "7 days",
+    "quote": "within 7 days of the relevant day"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 166 applies where, in the case of a creditors' voluntary winding up, a liquidator has been nominated by the company.",
+   "quote": "in the case of a creditors’ voluntary winding up, a liquidator has been nominated by the company"
+  },
+  {
+   "requirement": "The exercise by the liquidator of the power to sell any of the company's property specified in paragraph 6 of Schedule 4 to this Act cannot be challenged on the ground of any prior inhibition.",
+   "quote": "shall not be challengeable on the ground of any prior inhibition"
+  },
+  {
+   "requirement": "The powers conferred on the liquidator by section 165 must not be exercised without the sanction of the court before the company's creditors under section 100 nominate a liquidator or before the creditors' nomination procedure concludes without a nomination being made.",
+   "quote": "powers conferred on the liquidator by section 165 shall not be exercised, except with the sanction of the court"
+  },
+  {
+   "requirement": "The restriction on exercising section 165 powers prior to creditors' nomination or conclusion of the nomination procedure does not apply to the liquidator's power to take into custody or control all property to which the company is or appears to be entitled.",
+   "quote": "to take into his custody or under his control all the property to which the company is or appears to be entitled"
+  },
+  {
+   "requirement": "The restriction on exercising section 165 powers prior to creditors' nomination or conclusion of the nomination procedure does not apply to the liquidator's power to dispose of perishable goods and other goods whose value is likely to diminish if not immediately disposed of.",
+   "quote": "to dispose of perishable goods and other goods the value of which is likely to diminish if they are not immediately disposed of"
+  },
+  {
+   "requirement": "The restriction on exercising section 165 powers prior to creditors' nomination or conclusion of the nomination procedure does not apply to the liquidator's power to do all other things necessary for protecting the company's assets.",
+   "quote": "to do all such other things as may be necessary for the protection of the company’s assets"
+  },
+  {
+   "requirement": "If the directors fail to comply with section 99(1), (2) or (2A), or section 100(1B), the liquidator must apply to the court within 7 days of the relevant day for directions on how to remedy that default.",
+   "quote": "the liquidator shall, within 7 days of the relevant day, apply to the court for directions as to the manner in which that default is to be remedied"
+  },
+  {
+   "requirement": "The relevant day means whichever is later between the day the liquidator was nominated by the company and the day the liquidator first became aware of the directors' default.",
+   "quote": "“The relevant day” means the day on which the liquidator was nominated by the company or the day on which he first became aware of the default, whichever is the later"
+  },
+  {
+   "requirement": "A liquidator who fails without reasonable excuse to comply with section 166 is liable to a fine.",
+   "quote": "If the liquidator without reasonable excuse fails to comply with this section, he is liable to a fine"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period after the relevant day within which the liquidator must apply to the court for directions if directors fail to comply with specified provisions",
+   "value": "7 days",
+   "quote": "within 7 days of the relevant day"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

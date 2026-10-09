@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2004/34/s250@current",
+ "section": "uk/ukpga/2004/34/s250",
+ "version": "current",
+ "source_sha256": "38b0164a87ccc5addb8f105457d02ae335a75dccd76f2c0bb29841746809f0dd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any power of the Secretary of State or the National Assembly for Wales to make an order or regulations under the Housing Act 2004 is exercisable by statutory instrument.",
+    "quote": "exercisable by statutory instrument"
+   },
+   {
+    "requirement": "Any power of the Secretary of State or the National Assembly for Wales to make an order or regulations under the Housing Act 2004 may be exercised to make different provision for different cases, descriptions of case, purposes, or areas.",
+    "quote": "may be exercised so as to make different provision for different cases or descriptions of case or different purposes or areas"
+   },
+   {
+    "requirement": "Any power of the Secretary of State or the National Assembly for Wales to make an order or regulations under the Housing Act 2004 includes the power to make such incidental, supplementary, consequential, transitory, transitional, or saving provision as the relevant authority considers appropriate.",
+    "quote": "includes power to make such incidental, supplementary, consequential, transitory, transitional or saving provision as the Secretary of State or (as the case may be) the National Assembly for Wales considers appropriate"
+   },
+   {
+    "requirement": "Orders or regulations made by the Secretary of State under the Housing Act 2004 are subject to annulment in pursuance of a resolution of either House of Parliament, subject to subsections (5) and (6).",
+    "quote": "Subject to subsections (5) and (6), any order or regulations made by the Secretary of State under this Act are to be subject to annulment in pursuance of a resolution of either House of Parliament."
+   },
+   {
+    "requirement": "The negative resolution procedure under subsection (4) does not apply to any order made under section 270 or paragraph 3 of Schedule 10.",
+    "quote": "Subsection (4) does not apply to any order under section 270 or paragraph 3 of Schedule 10."
+   },
+   {
+    "requirement": "The negative resolution procedure under subsection (4) does not apply to any order under section 55(3) making provision authorised by section 55(4), order under section 80(5) or (7), regulations under section 212A, order under section 216 or 229(3), regulations under section 237, order under section 265(2) modifying an Act, regulations under section 254(6), regulations under paragraph 3 of Schedule 4, order under paragraph 11 of Schedule 10, or regulations made by virtue of paragraph 11(3)(b) or 12(3)(b) of Schedule 13.",
+    "quote": "Subsection (4) also does not apply to— (a) any order under section 55(3) which makes the provision authorised by section 55(4), (b) any order under section 80(5) or (7), (ba) regulations under section 212A, (c) any order under section 216 or 229(3), (ca) regulations under section 237, (d) any order under section 265(2) which modifies any provision of an Act, (e) any regulations under section 254(6), (f) any regulations under paragraph 3 of Schedule 4 or orders under paragraph 11 of Schedule 10, or (g) any regulations made by virtue of paragraph 11(3)(b) or 12(3)(b) of Schedule 13"
+   },
+   {
+    "requirement": "The Secretary of State may not make any order or regulations listed in subsection (6) (whether alone or with other provisions) unless a draft of the statutory instrument containing them has been laid before, and approved by a resolution of, each House of Parliament.",
+    "quote": "no such order or regulations may be made by the Secretary of State (whether alone or with other provisions) unless a draft of the statutory instrument containing the order or regulations has been laid before, and approved by a resolution of, each House of Parliament"
+   },
+   {
+    "requirement": "In the Housing Act 2004, the term 'modify', in the context of a power to modify an enactment by order or regulations, includes repeal, and 'modifications' has a corresponding meaning.",
+    "quote": "“modify”, in the context of a power to modify an enactment by order or regulations, includes repeal (and “modifications” has a corresponding meaning)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any power of the Secretary of State or the National Assembly for Wales to make an order or regulations under the Housing Act 2004 is exercisable by statutory instrument.",
+   "quote": "exercisable by statutory instrument"
+  },
+  {
+   "requirement": "Any power of the Secretary of State or the National Assembly for Wales to make an order or regulations under the Housing Act 2004 may be exercised to make different provision for different cases, descriptions of case, purposes, or areas.",
+   "quote": "may be exercised so as to make different provision for different cases or descriptions of case or different purposes or areas"
+  },
+  {
+   "requirement": "Any power of the Secretary of State or the National Assembly for Wales to make an order or regulations under the Housing Act 2004 includes the power to make such incidental, supplementary, consequential, transitory, transitional, or saving provision as the relevant authority considers appropriate.",
+   "quote": "includes power to make such incidental, supplementary, consequential, transitory, transitional or saving provision as the Secretary of State or (as the case may be) the National Assembly for Wales considers appropriate"
+  },
+  {
+   "requirement": "Orders or regulations made by the Secretary of State under the Housing Act 2004 are subject to annulment in pursuance of a resolution of either House of Parliament, subject to subsections (5) and (6).",
+   "quote": "Subject to subsections (5) and (6), any order or regulations made by the Secretary of State under this Act are to be subject to annulment in pursuance of a resolution of either House of Parliament."
+  },
+  {
+   "requirement": "The negative resolution procedure under subsection (4) does not apply to any order made under section 270 or paragraph 3 of Schedule 10.",
+   "quote": "Subsection (4) does not apply to any order under section 270 or paragraph 3 of Schedule 10."
+  },
+  {
+   "requirement": "The negative resolution procedure under subsection (4) does not apply to any order under section 55(3) making provision authorised by section 55(4), order under section 80(5) or (7), regulations under section 212A, order under section 216 or 229(3), regulations under section 237, order under section 265(2) modifying an Act, regulations under section 254(6), regulations under paragraph 3 of Schedule 4, order under paragraph 11 of Schedule 10, or regulations made by virtue of paragraph 11(3)(b) or 12(3)(b) of Schedule 13.",
+   "quote": "Subsection (4) also does not apply to— (a) any order under section 55(3) which makes the provision authorised by section 55(4), (b) any order under section 80(5) or (7), (ba) regulations under section 212A, (c) any order under section 216 or 229(3), (ca) regulations under section 237, (d) any order under section 265(2) which modifies any provision of an Act, (e) any regulations under section 254(6), (f) any regulations under paragraph 3 of Schedule 4 or orders under paragraph 11 of Schedule 10, or (g) any regulations made by virtue of paragraph 11(3)(b) or 12(3)(b) of Schedule 13"
+  },
+  {
+   "requirement": "The Secretary of State may not make any order or regulations listed in subsection (6) (whether alone or with other provisions) unless a draft of the statutory instrument containing them has been laid before, and approved by a resolution of, each House of Parliament.",
+   "quote": "no such order or regulations may be made by the Secretary of State (whether alone or with other provisions) unless a draft of the statutory instrument containing the order or regulations has been laid before, and approved by a resolution of, each House of Parliament"
+  },
+  {
+   "requirement": "In the Housing Act 2004, the term 'modify', in the context of a power to modify an enactment by order or regulations, includes repeal, and 'modifications' has a corresponding meaning.",
+   "quote": "“modify”, in the context of a power to modify an enactment by order or regulations, includes repeal (and “modifications” has a corresponding meaning)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

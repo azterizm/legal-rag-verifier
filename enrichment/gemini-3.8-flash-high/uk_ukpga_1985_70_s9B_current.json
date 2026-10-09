@@ -1,0 +1,211 @@
+{
+ "key": "uk/ukpga/1985/70/s9B@current",
+ "section": "uk/ukpga/1985/70/s9B",
+ "version": "current",
+ "source_sha256": "93fb2c4897765b4aa950d4b8da4f7c1d37b692b877d97d8a6ea32bcbccc1a900",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 9A applies to a lease under which a dwelling is let wholly or mainly for human habitation if the lease is for a term of less than 7 years, subject to the other provisions of section 9B.",
+    "quote": "Section 9A applies to a lease under which a dwelling is let wholly or mainly for human habitation if either of the following applies— (a) the lease is for a term of less than 7 years"
+   },
+   {
+    "requirement": "Section 9A applies to a lease under which a dwelling is let wholly or mainly for human habitation if the lease is of a kind mentioned in subsection (1A), (1AA) or (1AB) of section 13, subject to the other provisions of section 9B.",
+    "quote": "the lease is of a kind mentioned in subsection (1A) , (1AA) or (1AB) of section 13 (certain leases to which section 11 applies)"
+   },
+   {
+    "requirement": "Section 9A does not apply to any lease of a kind mentioned in section 14.",
+    "quote": "Section 9A does not apply to any lease of a kind mentioned in section 14 (exceptions for leases to which section 11 applies)."
+   },
+   {
+    "requirement": "Except as provided in subsections (4), (5) and (6), section 9A does not apply to a lease granted before the commencement date.",
+    "quote": "Except as mentioned in subsections (4), (5) and (6), section 9A does not apply to a lease granted— (a) before the commencement date"
+   },
+   {
+    "requirement": "Except as provided in subsections (4), (5) and (6), section 9A does not apply to a lease granted on or after the commencement date in pursuance of an agreement entered into, or an order of a court made, before the commencement date.",
+    "quote": "on or after that date in pursuance of an agreement entered into, or an order of a court made, before the commencement date."
+   },
+   {
+    "requirement": "Section 9A applies to a periodic or secure tenancy in existence on the commencement date, but section 9A(1)(a) has effect as if the reference to the later of the times mentioned in it were a reference to the time beginning at the end of the period of 12 months beginning with the commencement date.",
+    "quote": "Section 9A applies to a periodic or secure tenancy that is in existence on the commencement date, but in the case of any such tenancy the covenant implied by that section has effect in the following way— (a) subsection (1)(a) of that section has effect as if the reference to the later of the times there mentioned were a reference to the time that begins at the end of the period of 12 months beginning with the commencement date"
+   },
+   {
+    "requirement": "For a periodic or secure tenancy in existence on the commencement date, section 9A(1)(b) has effect only in respect of times falling after the end of the 12 month period beginning with the commencement date.",
+    "quote": "subsection (1)(b) of that section has effect only in respect of times falling after the end of that 12 month period."
+   },
+   {
+    "requirement": "Section 9A applies to a periodic or secure tenancy that comes into existence after the commencement date on the expiry of a term of a lease granted before that date.",
+    "quote": "Section 9A applies to a periodic or secure tenancy that comes into existence after the commencement date on expiry of a term of a lease granted before that date."
+   },
+   {
+    "requirement": "Section 9A applies to a fixed-term lease that was granted or renewed before the commencement date and is renewed for a further fixed term on or after that date, treating the renewal on or after that date as a grant of the lease on or after that date.",
+    "quote": "Section 9A applies to a lease for a fixed term which— (a) is granted or renewed before the commencement date, and (b) is renewed for a further fixed term on or after that date, and for this purpose the renewal on or after the commencement date is to be treated as a grant of the lease on or after that date."
+   },
+   {
+    "requirement": "In determining whether section 9A applies under subsection (1), it is immaterial whether the dwelling is to be occupied under the lease or under an inferior lease derived out of it.",
+    "quote": "For the purposes of subsection (1) it is immaterial— (a) whether the dwelling is to be occupied under the lease or under an inferior lease derived out of it"
+   },
+   {
+    "requirement": "In determining whether section 9A applies under subsection (1), it is immaterial that the lease also demises other property, which may consist of or include one or more other dwellings.",
+    "quote": "that the lease also demises other property (which may consist of or include one or more other dwellings)."
+   },
+   {
+    "requirement": "In determining whether a lease is for a term of less than 7 years for the purposes of subsection (1)(a), any part of the term falling before the grant or creation is ignored and the lease is treated as commencing with the grant or creation.",
+    "quote": "any part of the term falling before the grant or creation is to be ignored and the lease is to be treated as a lease for a term commencing with the grant or creation"
+   },
+   {
+    "requirement": "A lease that is determinable at the option of the lessor before the expiry of 7 years from the commencement of the term is treated as a lease for a term of less than 7 years for the purposes of subsection (1)(a).",
+    "quote": "a lease which is determinable at the option of the lessor before the expiry of 7 years from the commencement of the term is to be treated as a lease for a term of less than 7 years"
+   },
+   {
+    "requirement": "A lease that is not determinable at the option of the lessor before 7 years is not treated as a lease for a term of less than 7 years if it confers on the lessee an option for renewal for a term that, together with the original term, amounts to 7 years or more.",
+    "quote": "a lease (other than one to which paragraph (b) applies) is not to be treated as a lease for a term of less than 7 years if it confers on the lessee an option for renewal for a term which, together with the original term, amounts to 7 years or more."
+   },
+   {
+    "requirement": "The term 'the commencement date' means the date on which the Homes (Fitness for Human Habitation) Act 2018 comes into force.",
+    "quote": "“the commencement date” means the date on which the Homes (Fitness for Human Habitation) Act 2018 comes into force"
+   },
+   {
+    "requirement": "The terms 'lease', 'lessee' and 'lessor' have the same meanings in section 9B as they have in section 9A.",
+    "quote": "“lease”, “lessee” and “lessor” have the same meanings as in section 9A"
+   },
+   {
+    "requirement": "The term 'secure tenancy' has the meaning given by section 79 of the Housing Act 1985.",
+    "quote": "“secure tenancy” has the meaning given by section 79 of the Housing Act 1985."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "lease term threshold for the application of section 9A under subsection (1)(a)",
+    "value": "less than 7 years",
+    "quote": "the lease is for a term of less than 7 years"
+   },
+   {
+    "what": "period beginning with the commencement date after which the implied covenant takes effect under section 9A(1)(a) for pre-existing periodic or secure tenancies",
+    "value": "12 months",
+    "quote": "period of 12 months beginning with the commencement date"
+   },
+   {
+    "what": "period after which section 9A(1)(b) takes effect for pre-existing periodic or secure tenancies",
+    "value": "12 month",
+    "quote": "after the end of that 12 month period"
+   },
+   {
+    "what": "period from the commencement of the term within which a lessor's option to determine causes the lease to be treated as less than 7 years",
+    "value": "7 years",
+    "quote": "before the expiry of 7 years from the commencement of the term"
+   },
+   {
+    "what": "combined duration of the original term and renewal option preventing a lease from being treated as less than 7 years",
+    "value": "7 years or more",
+    "quote": "amounts to 7 years or more"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 9A applies to a lease under which a dwelling is let wholly or mainly for human habitation if the lease is for a term of less than 7 years, subject to the other provisions of section 9B.",
+   "quote": "Section 9A applies to a lease under which a dwelling is let wholly or mainly for human habitation if either of the following applies— (a) the lease is for a term of less than 7 years"
+  },
+  {
+   "requirement": "Section 9A applies to a lease under which a dwelling is let wholly or mainly for human habitation if the lease is of a kind mentioned in subsection (1A), (1AA) or (1AB) of section 13, subject to the other provisions of section 9B.",
+   "quote": "the lease is of a kind mentioned in subsection (1A) , (1AA) or (1AB) of section 13 (certain leases to which section 11 applies)"
+  },
+  {
+   "requirement": "Section 9A does not apply to any lease of a kind mentioned in section 14.",
+   "quote": "Section 9A does not apply to any lease of a kind mentioned in section 14 (exceptions for leases to which section 11 applies)."
+  },
+  {
+   "requirement": "Except as provided in subsections (4), (5) and (6), section 9A does not apply to a lease granted before the commencement date.",
+   "quote": "Except as mentioned in subsections (4), (5) and (6), section 9A does not apply to a lease granted— (a) before the commencement date"
+  },
+  {
+   "requirement": "Except as provided in subsections (4), (5) and (6), section 9A does not apply to a lease granted on or after the commencement date in pursuance of an agreement entered into, or an order of a court made, before the commencement date.",
+   "quote": "on or after that date in pursuance of an agreement entered into, or an order of a court made, before the commencement date."
+  },
+  {
+   "requirement": "Section 9A applies to a periodic or secure tenancy in existence on the commencement date, but section 9A(1)(a) has effect as if the reference to the later of the times mentioned in it were a reference to the time beginning at the end of the period of 12 months beginning with the commencement date.",
+   "quote": "Section 9A applies to a periodic or secure tenancy that is in existence on the commencement date, but in the case of any such tenancy the covenant implied by that section has effect in the following way— (a) subsection (1)(a) of that section has effect as if the reference to the later of the times there mentioned were a reference to the time that begins at the end of the period of 12 months beginning with the commencement date"
+  },
+  {
+   "requirement": "For a periodic or secure tenancy in existence on the commencement date, section 9A(1)(b) has effect only in respect of times falling after the end of the 12 month period beginning with the commencement date.",
+   "quote": "subsection (1)(b) of that section has effect only in respect of times falling after the end of that 12 month period."
+  },
+  {
+   "requirement": "Section 9A applies to a periodic or secure tenancy that comes into existence after the commencement date on the expiry of a term of a lease granted before that date.",
+   "quote": "Section 9A applies to a periodic or secure tenancy that comes into existence after the commencement date on expiry of a term of a lease granted before that date."
+  },
+  {
+   "requirement": "Section 9A applies to a fixed-term lease that was granted or renewed before the commencement date and is renewed for a further fixed term on or after that date, treating the renewal on or after that date as a grant of the lease on or after that date.",
+   "quote": "Section 9A applies to a lease for a fixed term which— (a) is granted or renewed before the commencement date, and (b) is renewed for a further fixed term on or after that date, and for this purpose the renewal on or after the commencement date is to be treated as a grant of the lease on or after that date."
+  },
+  {
+   "requirement": "In determining whether section 9A applies under subsection (1), it is immaterial whether the dwelling is to be occupied under the lease or under an inferior lease derived out of it.",
+   "quote": "For the purposes of subsection (1) it is immaterial— (a) whether the dwelling is to be occupied under the lease or under an inferior lease derived out of it"
+  },
+  {
+   "requirement": "In determining whether section 9A applies under subsection (1), it is immaterial that the lease also demises other property, which may consist of or include one or more other dwellings.",
+   "quote": "that the lease also demises other property (which may consist of or include one or more other dwellings)."
+  },
+  {
+   "requirement": "In determining whether a lease is for a term of less than 7 years for the purposes of subsection (1)(a), any part of the term falling before the grant or creation is ignored and the lease is treated as commencing with the grant or creation.",
+   "quote": "any part of the term falling before the grant or creation is to be ignored and the lease is to be treated as a lease for a term commencing with the grant or creation"
+  },
+  {
+   "requirement": "A lease that is determinable at the option of the lessor before the expiry of 7 years from the commencement of the term is treated as a lease for a term of less than 7 years for the purposes of subsection (1)(a).",
+   "quote": "a lease which is determinable at the option of the lessor before the expiry of 7 years from the commencement of the term is to be treated as a lease for a term of less than 7 years"
+  },
+  {
+   "requirement": "A lease that is not determinable at the option of the lessor before 7 years is not treated as a lease for a term of less than 7 years if it confers on the lessee an option for renewal for a term that, together with the original term, amounts to 7 years or more.",
+   "quote": "a lease (other than one to which paragraph (b) applies) is not to be treated as a lease for a term of less than 7 years if it confers on the lessee an option for renewal for a term which, together with the original term, amounts to 7 years or more."
+  },
+  {
+   "requirement": "The term 'the commencement date' means the date on which the Homes (Fitness for Human Habitation) Act 2018 comes into force.",
+   "quote": "“the commencement date” means the date on which the Homes (Fitness for Human Habitation) Act 2018 comes into force"
+  },
+  {
+   "requirement": "The terms 'lease', 'lessee' and 'lessor' have the same meanings in section 9B as they have in section 9A.",
+   "quote": "“lease”, “lessee” and “lessor” have the same meanings as in section 9A"
+  },
+  {
+   "requirement": "The term 'secure tenancy' has the meaning given by section 79 of the Housing Act 1985.",
+   "quote": "“secure tenancy” has the meaning given by section 79 of the Housing Act 1985."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "lease term threshold for the application of section 9A under subsection (1)(a)",
+   "value": "less than 7 years",
+   "quote": "the lease is for a term of less than 7 years"
+  },
+  {
+   "what": "period beginning with the commencement date after which the implied covenant takes effect under section 9A(1)(a) for pre-existing periodic or secure tenancies",
+   "value": "12 months",
+   "quote": "period of 12 months beginning with the commencement date"
+  },
+  {
+   "what": "period after which section 9A(1)(b) takes effect for pre-existing periodic or secure tenancies",
+   "value": "12 month",
+   "quote": "after the end of that 12 month period"
+  },
+  {
+   "what": "period from the commencement of the term within which a lessor's option to determine causes the lease to be treated as less than 7 years",
+   "value": "7 years",
+   "quote": "before the expiry of 7 years from the commencement of the term"
+  },
+  {
+   "what": "combined duration of the original term and renewal option preventing a lease from being treated as less than 7 years",
+   "value": "7 years or more",
+   "quote": "amounts to 7 years or more"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 5
+ }
+}

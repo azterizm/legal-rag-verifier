@@ -1,0 +1,147 @@
+{
+ "key": "uk/ukpga/1968/60/s27@current",
+ "section": "uk/ukpga/1968/60/s27",
+ "version": "current",
+ "source_sha256": "d78472ff8a0735ca23fc50c939fecd6a1a4bf72ca88b6d0555c0f957b3e06313",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any number of persons may be charged in a single indictment in reference to the same theft for handling all or any of the stolen goods at the same time or at different times, and those persons may be tried together.",
+    "quote": "Any number of persons may be charged in one indictment, with reference to the same theft, with having at different times or at the same time handled all or any of the stolen goods, and the persons so charged may be tried together."
+   },
+   {
+    "requirement": "On the trial of two or more persons indicted for jointly handling stolen goods, the jury may convict any accused person if satisfied that the accused handled all or any of the stolen goods, whether done jointly with any other accused or not.",
+    "quote": "the jury may find any of the accused guilty if the jury are satisfied that he handled all or any of the stolen goods, whether or not he did so jointly with the other accused or any of them."
+   },
+   {
+    "requirement": "Where a person is prosecuted exclusively for handling stolen goods, once evidence is given that the accused had, or arranged to have, possession of the subject goods, or undertook, assisted in, or arranged to undertake or assist in their retention, removal, disposal, or realisation, evidence that the accused possessed or assisted with stolen goods from any theft occurring not earlier than twelve months before the charged offence is admissible to prove that the accused knew or believed the goods were stolen.",
+    "quote": "evidence that he has had in his possesion, or has undertaken or assisted in the retention, removal, disposal or realisation of, stolen goods from any theft taking place not earlier than twelve months before the offence charged"
+   },
+   {
+    "requirement": "Where a person is prosecuted exclusively for handling stolen goods, once the requisite preliminary evidence of possession or handling of the subject goods is given, evidence of the accused's conviction of theft or handling stolen goods within the five years preceding the charged offence is admissible to prove knowledge or belief, provided that seven days' written notice of the intention to prove the conviction was given to the accused.",
+    "quote": "(provided that seven days’ notice in writing has been given to him of the intention to prove the conviction) evidence that he has within the five years preceding the date of the offence charged been convicted of theft or of handling stolen goods."
+   },
+   {
+    "requirement": "In proceedings for the theft of anything in transmission or for handling stolen goods from such theft, a statutory declaration stating that a person despatched, received, or failed to receive goods or a postal packet, or stating its condition when despatched or received, is admissible as evidence of the stated facts.",
+    "quote": "a statutory declaration made by any person that he despatched or received or failed to receive any goods or postal packet, or that any goods or postal packet when despatched or received by him were in a particular state or condition, shall be admissible as evidence of the facts stated in the declaration"
+   },
+   {
+    "requirement": "A statutory declaration regarding items in transmission is admissible only where and to the extent that oral evidence to the same effect would be admissible in the proceedings.",
+    "quote": "a statutory declaration shall only be admissible where and to the extent to which oral evidence to the like effect would have been admissible in the proceedings"
+   },
+   {
+    "requirement": "A statutory declaration regarding items in transmission is admissible only if a copy was served on the person charged at least seven days before the hearing or trial, and the accused has not given written notice requiring the declarant's attendance at least three days before the hearing or trial or within any extended time allowed by the court in special circumstances.",
+    "quote": "a statutory declaration shall only be admissible if at least seven days before the hearing or trial a copy of it has been given to the person charged, and he has not, at least three days before the hearing or trial or within such further time as the court may in special circumstances allow, given the prosecutor written notice requiring the attendance at the hearing or trial of the person making the declaration."
+   },
+   {
+    "requirement": "Section 27 of the Theft Act 1968 must be construed in accordance with section 24 of the Theft Act 1968.",
+    "quote": "This section is to be construed in accordance with section 24 of this Act"
+   },
+   {
+    "requirement": "The reference to handling stolen goods in subsection (3)(b) includes any corresponding offence committed before the commencement of the Theft Act 1968.",
+    "quote": "the reference to handling stolen goods shall include any corresponding offence committed before the commencement of this Act."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum time window before the charged offence within which an earlier theft must have taken place for evidence of handling goods from that theft to be admissible",
+    "value": "twelve months",
+    "quote": "not earlier than twelve months before the offence charged"
+   },
+   {
+    "what": "The minimum period of written notice that must be given to the accused of the intention to prove a previous conviction",
+    "value": "seven days",
+    "quote": "seven days’ notice in writing has been given to him"
+   },
+   {
+    "what": "The maximum lookback period preceding the date of the offence charged for an admissible previous conviction of theft or handling stolen goods",
+    "value": "five years",
+    "quote": "within the five years preceding the date of the offence charged"
+   },
+   {
+    "what": "The minimum period before the hearing or trial by which a copy of a statutory declaration must be served on the person charged",
+    "value": "at least seven days",
+    "quote": "at least seven days before the hearing or trial"
+   },
+   {
+    "what": "The minimum period before the hearing or trial by which the accused must give written notice requiring the attendance of the person making the statutory declaration",
+    "value": "at least three days",
+    "quote": "at least three days before the hearing or trial"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Any number of persons may be charged in a single indictment in reference to the same theft for handling all or any of the stolen goods at the same time or at different times, and those persons may be tried together.",
+   "quote": "Any number of persons may be charged in one indictment, with reference to the same theft, with having at different times or at the same time handled all or any of the stolen goods, and the persons so charged may be tried together."
+  },
+  {
+   "requirement": "On the trial of two or more persons indicted for jointly handling stolen goods, the jury may convict any accused person if satisfied that the accused handled all or any of the stolen goods, whether done jointly with any other accused or not.",
+   "quote": "the jury may find any of the accused guilty if the jury are satisfied that he handled all or any of the stolen goods, whether or not he did so jointly with the other accused or any of them."
+  },
+  {
+   "requirement": "Where a person is prosecuted exclusively for handling stolen goods, once evidence is given that the accused had, or arranged to have, possession of the subject goods, or undertook, assisted in, or arranged to undertake or assist in their retention, removal, disposal, or realisation, evidence that the accused possessed or assisted with stolen goods from any theft occurring not earlier than twelve months before the charged offence is admissible to prove that the accused knew or believed the goods were stolen.",
+   "quote": "evidence that he has had in his possesion, or has undertaken or assisted in the retention, removal, disposal or realisation of, stolen goods from any theft taking place not earlier than twelve months before the offence charged"
+  },
+  {
+   "requirement": "Where a person is prosecuted exclusively for handling stolen goods, once the requisite preliminary evidence of possession or handling of the subject goods is given, evidence of the accused's conviction of theft or handling stolen goods within the five years preceding the charged offence is admissible to prove knowledge or belief, provided that seven days' written notice of the intention to prove the conviction was given to the accused.",
+   "quote": "(provided that seven days’ notice in writing has been given to him of the intention to prove the conviction) evidence that he has within the five years preceding the date of the offence charged been convicted of theft or of handling stolen goods."
+  },
+  {
+   "requirement": "In proceedings for the theft of anything in transmission or for handling stolen goods from such theft, a statutory declaration stating that a person despatched, received, or failed to receive goods or a postal packet, or stating its condition when despatched or received, is admissible as evidence of the stated facts.",
+   "quote": "a statutory declaration made by any person that he despatched or received or failed to receive any goods or postal packet, or that any goods or postal packet when despatched or received by him were in a particular state or condition, shall be admissible as evidence of the facts stated in the declaration"
+  },
+  {
+   "requirement": "A statutory declaration regarding items in transmission is admissible only where and to the extent that oral evidence to the same effect would be admissible in the proceedings.",
+   "quote": "a statutory declaration shall only be admissible where and to the extent to which oral evidence to the like effect would have been admissible in the proceedings"
+  },
+  {
+   "requirement": "A statutory declaration regarding items in transmission is admissible only if a copy was served on the person charged at least seven days before the hearing or trial, and the accused has not given written notice requiring the declarant's attendance at least three days before the hearing or trial or within any extended time allowed by the court in special circumstances.",
+   "quote": "a statutory declaration shall only be admissible if at least seven days before the hearing or trial a copy of it has been given to the person charged, and he has not, at least three days before the hearing or trial or within such further time as the court may in special circumstances allow, given the prosecutor written notice requiring the attendance at the hearing or trial of the person making the declaration."
+  },
+  {
+   "requirement": "Section 27 of the Theft Act 1968 must be construed in accordance with section 24 of the Theft Act 1968.",
+   "quote": "This section is to be construed in accordance with section 24 of this Act"
+  },
+  {
+   "requirement": "The reference to handling stolen goods in subsection (3)(b) includes any corresponding offence committed before the commencement of the Theft Act 1968.",
+   "quote": "the reference to handling stolen goods shall include any corresponding offence committed before the commencement of this Act."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum time window before the charged offence within which an earlier theft must have taken place for evidence of handling goods from that theft to be admissible",
+   "value": "twelve months",
+   "quote": "not earlier than twelve months before the offence charged"
+  },
+  {
+   "what": "The minimum period of written notice that must be given to the accused of the intention to prove a previous conviction",
+   "value": "seven days",
+   "quote": "seven days’ notice in writing has been given to him"
+  },
+  {
+   "what": "The maximum lookback period preceding the date of the offence charged for an admissible previous conviction of theft or handling stolen goods",
+   "value": "five years",
+   "quote": "within the five years preceding the date of the offence charged"
+  },
+  {
+   "what": "The minimum period before the hearing or trial by which a copy of a statutory declaration must be served on the person charged",
+   "value": "at least seven days",
+   "quote": "at least seven days before the hearing or trial"
+  },
+  {
+   "what": "The minimum period before the hearing or trial by which the accused must give written notice requiring the attendance of the person making the statutory declaration",
+   "value": "at least three days",
+   "quote": "at least three days before the hearing or trial"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 5
+ }
+}

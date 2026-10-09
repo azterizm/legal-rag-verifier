@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2003/44/s90@current",
+ "section": "uk/ukpga/2003/44/s90",
+ "version": "current",
+ "source_sha256": "2b3541b1f754bd59231cf13d103061b648a1a1bc57bb28d9014a5024349d63da",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "At any adjournment of the hearing of an application under section 76(1) or (2), the Court of Appeal may remand the person to whom the application relates on bail or in custody.",
+    "quote": "remand the person to whom the application relates on bail, or (b) remand him in custody"
+   },
+   {
+    "requirement": "At a hearing where the Court of Appeal makes an order under section 77, makes a declaration under section 77(4), or dismisses the application or makes a declaration under section 77(3), the court may make such order as it sees fit for the custody or bail of the acquitted person pending trial pursuant to the order or declaration, or pending determination of the appeal, if the court also gives the prosecutor leave to appeal against its decision or the prosecutor gives notice of intending to apply for such leave.",
+    "quote": "the court may make such order as it sees fit for the custody or bail of the acquitted person pending trial pursuant to the order or declaration, or pending determination of the appeal"
+   },
+   {
+    "requirement": "For the purpose of subsection (2), the determination of an appeal is pending until any application for leave to appeal is disposed of, or the time within which it must be made expires.",
+    "quote": "until any application for leave to appeal is disposed of, or the time within which it must be made expires"
+   },
+   {
+    "requirement": "For the purpose of subsection (2), if leave to appeal is granted, the determination of an appeal is pending until the appeal is disposed of.",
+    "quote": "if leave to appeal is granted, until the appeal is disposed of"
+   },
+   {
+    "requirement": "Section 4 of the Bail Act 1976 applies to the grant of bail under section 90 as if the reference in section 4(2) to the Crown Court included a reference to the Court of Appeal.",
+    "quote": "Section 4 of the Bail Act 1976 (c. 63) applies in relation to the grant of bail under this section as if in subsection (2) the reference to the Crown Court included a reference to the Court of Appeal."
+   },
+   {
+    "requirement": "The court may at any time, as it sees fit, revoke bail granted under section 90 and remand the person in custody.",
+    "quote": "revoke bail granted under this section and remand the person in custody"
+   },
+   {
+    "requirement": "The court may at any time, as it sees fit, vary an order made under subsection (2).",
+    "quote": "vary an order under subsection (2)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "At any adjournment of the hearing of an application under section 76(1) or (2), the Court of Appeal may remand the person to whom the application relates on bail or in custody.",
+   "quote": "remand the person to whom the application relates on bail, or (b) remand him in custody"
+  },
+  {
+   "requirement": "At a hearing where the Court of Appeal makes an order under section 77, makes a declaration under section 77(4), or dismisses the application or makes a declaration under section 77(3), the court may make such order as it sees fit for the custody or bail of the acquitted person pending trial pursuant to the order or declaration, or pending determination of the appeal, if the court also gives the prosecutor leave to appeal against its decision or the prosecutor gives notice of intending to apply for such leave.",
+   "quote": "the court may make such order as it sees fit for the custody or bail of the acquitted person pending trial pursuant to the order or declaration, or pending determination of the appeal"
+  },
+  {
+   "requirement": "For the purpose of subsection (2), the determination of an appeal is pending until any application for leave to appeal is disposed of, or the time within which it must be made expires.",
+   "quote": "until any application for leave to appeal is disposed of, or the time within which it must be made expires"
+  },
+  {
+   "requirement": "For the purpose of subsection (2), if leave to appeal is granted, the determination of an appeal is pending until the appeal is disposed of.",
+   "quote": "if leave to appeal is granted, until the appeal is disposed of"
+  },
+  {
+   "requirement": "Section 4 of the Bail Act 1976 applies to the grant of bail under section 90 as if the reference in section 4(2) to the Crown Court included a reference to the Court of Appeal.",
+   "quote": "Section 4 of the Bail Act 1976 (c. 63) applies in relation to the grant of bail under this section as if in subsection (2) the reference to the Crown Court included a reference to the Court of Appeal."
+  },
+  {
+   "requirement": "The court may at any time, as it sees fit, revoke bail granted under section 90 and remand the person in custody.",
+   "quote": "revoke bail granted under this section and remand the person in custody"
+  },
+  {
+   "requirement": "The court may at any time, as it sees fit, vary an order made under subsection (2).",
+   "quote": "vary an order under subsection (2)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

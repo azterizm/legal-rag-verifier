@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/2005/9/s33@current",
+ "section": "uk/ukpga/2005/9/s33",
+ "version": "current",
+ "source_sha256": "565dee923924ac2e55abeab4edafee1ac4cf244a3489fb063d91b58e3db12a71",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 33 applies in relation to a person who is taking part in an approved research project despite lacking capacity to consent to taking part.",
+    "quote": "applies in relation to a person who is taking part in an approved research project even though he lacks capacity to consent to taking part"
+   },
+   {
+    "requirement": "Nothing may be done to, or in relation to, a person taking part in an approved research project without capacity to consent in the course of the research to which that person appears to object (whether by showing signs of resistance or otherwise), unless what is being done is intended to protect the person from harm or to reduce or prevent pain or discomfort.",
+    "quote": "Nothing may be done to, or in relation to, him in the course of the research— (a) to which he appears to object (whether by showing signs of resistance or otherwise) except where what is being done is intended to protect him from harm or to reduce or prevent pain or discomfort"
+   },
+   {
+    "requirement": "Nothing may be done to, or in relation to, a person taking part in an approved research project without capacity to consent in the course of the research which would be contrary to an advance decision of that person which has effect.",
+    "quote": "which would be contrary to— (i) an advance decision of his which has effect"
+   },
+   {
+    "requirement": "Nothing may be done to, or in relation to, a person taking part in an approved research project without capacity to consent in the course of the research which would be contrary to any other form of statement made by that person and not subsequently withdrawn, of which R is aware.",
+    "quote": "or (ii) any other form of statement made by him and not subsequently withdrawn, of which R is aware"
+   },
+   {
+    "requirement": "The interests of a person taking part in an approved research project without capacity to consent must be assumed to outweigh those of science and society.",
+    "quote": "The interests of the person must be assumed to outweigh those of science and society."
+   },
+   {
+    "requirement": "A person taking part in an approved research project without capacity to consent must be withdrawn from the project without delay if he indicates in any way that he wishes to be withdrawn.",
+    "quote": "If he indicates (in any way) that he wishes to be withdrawn from the project he must be withdrawn without delay."
+   },
+   {
+    "requirement": "P must be withdrawn from the project without delay if at any time the person conducting the research has reasonable grounds for believing that one or more of the requirements set out in section 31(2) to (7) is no longer met in relation to research being carried out on, or in relation to, P.",
+    "quote": "P must be withdrawn from the project, without delay, if at any time the person conducting the research has reasonable grounds for believing that one or more of the requirements set out in section 31(2) to (7) is no longer met"
+   },
+   {
+    "requirement": "Neither subsection (4) nor subsection (5) requires treatment that P has been receiving as part of the project to be discontinued if R has reasonable grounds for believing that discontinuing it would pose a significant risk to P's health.",
+    "quote": "neither subsection (4) nor subsection (5) requires treatment that P has been receiving as part of the project to be discontinued if R has reasonable grounds for believing that there would be a significant risk to P's health if it were discontinued"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of requirements set out in section 31(2) to (7) that need no longer be met to trigger the withdrawal of P",
+    "value": "one",
+    "quote": "one or more of the requirements set out in section 31(2) to (7)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 33 applies in relation to a person who is taking part in an approved research project despite lacking capacity to consent to taking part.",
+   "quote": "applies in relation to a person who is taking part in an approved research project even though he lacks capacity to consent to taking part"
+  },
+  {
+   "requirement": "Nothing may be done to, or in relation to, a person taking part in an approved research project without capacity to consent in the course of the research to which that person appears to object (whether by showing signs of resistance or otherwise), unless what is being done is intended to protect the person from harm or to reduce or prevent pain or discomfort.",
+   "quote": "Nothing may be done to, or in relation to, him in the course of the research— (a) to which he appears to object (whether by showing signs of resistance or otherwise) except where what is being done is intended to protect him from harm or to reduce or prevent pain or discomfort"
+  },
+  {
+   "requirement": "Nothing may be done to, or in relation to, a person taking part in an approved research project without capacity to consent in the course of the research which would be contrary to an advance decision of that person which has effect.",
+   "quote": "which would be contrary to— (i) an advance decision of his which has effect"
+  },
+  {
+   "requirement": "Nothing may be done to, or in relation to, a person taking part in an approved research project without capacity to consent in the course of the research which would be contrary to any other form of statement made by that person and not subsequently withdrawn, of which R is aware.",
+   "quote": "or (ii) any other form of statement made by him and not subsequently withdrawn, of which R is aware"
+  },
+  {
+   "requirement": "The interests of a person taking part in an approved research project without capacity to consent must be assumed to outweigh those of science and society.",
+   "quote": "The interests of the person must be assumed to outweigh those of science and society."
+  },
+  {
+   "requirement": "A person taking part in an approved research project without capacity to consent must be withdrawn from the project without delay if he indicates in any way that he wishes to be withdrawn.",
+   "quote": "If he indicates (in any way) that he wishes to be withdrawn from the project he must be withdrawn without delay."
+  },
+  {
+   "requirement": "P must be withdrawn from the project without delay if at any time the person conducting the research has reasonable grounds for believing that one or more of the requirements set out in section 31(2) to (7) is no longer met in relation to research being carried out on, or in relation to, P.",
+   "quote": "P must be withdrawn from the project, without delay, if at any time the person conducting the research has reasonable grounds for believing that one or more of the requirements set out in section 31(2) to (7) is no longer met"
+  },
+  {
+   "requirement": "Neither subsection (4) nor subsection (5) requires treatment that P has been receiving as part of the project to be discontinued if R has reasonable grounds for believing that discontinuing it would pose a significant risk to P's health.",
+   "quote": "neither subsection (4) nor subsection (5) requires treatment that P has been receiving as part of the project to be discontinued if R has reasonable grounds for believing that there would be a significant risk to P's health if it were discontinued"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2005/9/s4A@current",
+ "section": "uk/ukpga/2005/9/s4A",
+ "version": "current",
+ "source_sha256": "fe1952598f5fe466a5919370ecb8bd08f53da816aae04ca0a0c23afa8762ccfe",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Mental Capacity Act 2005 does not authorise any person (“D”) to deprive any other person (“P”) of his liberty.",
+    "quote": "This Act does not authorise any person (“D”) to deprive any other person (“P”) of his liberty"
+   },
+   {
+    "requirement": "The general lack of authority under the Mental Capacity Act 2005 for a person (“D”) to deprive another person (“P”) of liberty is subject to the provisions of section 4A and section 4B.",
+    "quote": "subject to— (a) the following provisions of this section, and (b) section 4B"
+   },
+   {
+    "requirement": "A person (“D”) may deprive another person (“P”) of his liberty if, by doing so, D is giving effect to a relevant decision of the court.",
+    "quote": "D may deprive P of his liberty if, by doing so, D is giving effect to a relevant decision of the court"
+   },
+   {
+    "requirement": "A relevant decision of the court is defined as a decision made by an order under section 16(2)(a) in relation to a matter concerning the personal welfare of the person (“P”).",
+    "quote": "A relevant decision of the court is a decision made by an order under section 16(2)(a) in relation to a matter concerning P's personal welfare"
+   },
+   {
+    "requirement": "A person (“D”) may deprive another person (“P”) of his liberty if the deprivation is authorised by Schedule A1 concerning hospital and care home residents.",
+    "quote": "D may deprive P of his liberty if the deprivation is authorised by Schedule A1 (hospital and care home residents: deprivation of liberty)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Mental Capacity Act 2005 does not authorise any person (“D”) to deprive any other person (“P”) of his liberty.",
+   "quote": "This Act does not authorise any person (“D”) to deprive any other person (“P”) of his liberty"
+  },
+  {
+   "requirement": "The general lack of authority under the Mental Capacity Act 2005 for a person (“D”) to deprive another person (“P”) of liberty is subject to the provisions of section 4A and section 4B.",
+   "quote": "subject to— (a) the following provisions of this section, and (b) section 4B"
+  },
+  {
+   "requirement": "A person (“D”) may deprive another person (“P”) of his liberty if, by doing so, D is giving effect to a relevant decision of the court.",
+   "quote": "D may deprive P of his liberty if, by doing so, D is giving effect to a relevant decision of the court"
+  },
+  {
+   "requirement": "A relevant decision of the court is defined as a decision made by an order under section 16(2)(a) in relation to a matter concerning the personal welfare of the person (“P”).",
+   "quote": "A relevant decision of the court is a decision made by an order under section 16(2)(a) in relation to a matter concerning P's personal welfare"
+  },
+  {
+   "requirement": "A person (“D”) may deprive another person (“P”) of his liberty if the deprivation is authorised by Schedule A1 concerning hospital and care home residents.",
+   "quote": "D may deprive P of his liberty if the deprivation is authorised by Schedule A1 (hospital and care home residents: deprivation of liberty)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

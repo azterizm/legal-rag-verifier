@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1996/27/s63D@current",
+ "section": "uk/ukpga/1996/27/s63D",
+ "version": "current",
+ "source_sha256": "f20a83da806cb3e3d89b51479894f52d672cf61ec76be9ac05a428b036013002",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may make a forced marriage protection order even though the respondent has not been given such notice of the proceedings as would otherwise be required by rules of court, in any case where the court considers that it is just and convenient to do so.",
+    "quote": "The court may, in any case where it considers that it is just and convenient to do so, make a forced marriage protection order even though the respondent has not been given such notice of the proceedings as would otherwise be required by rules of court."
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to make a forced marriage protection order without notice, the court must have regard to all the circumstances.",
+    "quote": "In deciding whether to exercise its powers under subsection (1), the court must have regard to all the circumstances"
+   },
+   {
+    "requirement": "The circumstances the court must have regard to include any risk of significant harm to the person to be protected or another person if the order is not made immediately.",
+    "quote": "any risk of significant harm to the person to be protected or another person if the order is not made immediately"
+   },
+   {
+    "requirement": "The circumstances the court must have regard to include whether it is likely that an applicant will be deterred or prevented from pursuing an application if an order is not made immediately.",
+    "quote": "whether it is likely that an applicant will be deterred or prevented from pursuing an application if an order is not made immediately"
+   },
+   {
+    "requirement": "The circumstances the court must have regard to include whether there is reason to believe that the respondent is aware of the proceedings but is deliberately evading service and that the delay involved in effecting substituted service will cause serious prejudice to the person to be protected or, if a different person, an applicant.",
+    "quote": "whether there is reason to believe that— (i) the respondent is aware of the proceedings but is deliberately evading service; and (ii) the delay involved in effecting substituted service will cause serious prejudice to the person to be protected or (if a different person) an applicant."
+   },
+   {
+    "requirement": "The court must give the respondent an opportunity to make representations about any order made without notice under section 63D(1).",
+    "quote": "The court must give the respondent an opportunity to make representations about any order made by virtue of subsection (1)."
+   },
+   {
+    "requirement": "The opportunity for the respondent to make representations must be provided as soon as just and convenient.",
+    "quote": "The opportunity must be— (a) as soon as just and convenient"
+   },
+   {
+    "requirement": "The opportunity for the respondent to make representations must be at a hearing of which notice has been given to all the parties in accordance with rules of court.",
+    "quote": "at a hearing of which notice has been given to all the parties in accordance with rules of court."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The court may make a forced marriage protection order even though the respondent has not been given such notice of the proceedings as would otherwise be required by rules of court, in any case where the court considers that it is just and convenient to do so.",
+   "quote": "The court may, in any case where it considers that it is just and convenient to do so, make a forced marriage protection order even though the respondent has not been given such notice of the proceedings as would otherwise be required by rules of court."
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to make a forced marriage protection order without notice, the court must have regard to all the circumstances.",
+   "quote": "In deciding whether to exercise its powers under subsection (1), the court must have regard to all the circumstances"
+  },
+  {
+   "requirement": "The circumstances the court must have regard to include any risk of significant harm to the person to be protected or another person if the order is not made immediately.",
+   "quote": "any risk of significant harm to the person to be protected or another person if the order is not made immediately"
+  },
+  {
+   "requirement": "The circumstances the court must have regard to include whether it is likely that an applicant will be deterred or prevented from pursuing an application if an order is not made immediately.",
+   "quote": "whether it is likely that an applicant will be deterred or prevented from pursuing an application if an order is not made immediately"
+  },
+  {
+   "requirement": "The circumstances the court must have regard to include whether there is reason to believe that the respondent is aware of the proceedings but is deliberately evading service and that the delay involved in effecting substituted service will cause serious prejudice to the person to be protected or, if a different person, an applicant.",
+   "quote": "whether there is reason to believe that— (i) the respondent is aware of the proceedings but is deliberately evading service; and (ii) the delay involved in effecting substituted service will cause serious prejudice to the person to be protected or (if a different person) an applicant."
+  },
+  {
+   "requirement": "The court must give the respondent an opportunity to make representations about any order made without notice under section 63D(1).",
+   "quote": "The court must give the respondent an opportunity to make representations about any order made by virtue of subsection (1)."
+  },
+  {
+   "requirement": "The opportunity for the respondent to make representations must be provided as soon as just and convenient.",
+   "quote": "The opportunity must be— (a) as soon as just and convenient"
+  },
+  {
+   "requirement": "The opportunity for the respondent to make representations must be at a hearing of which notice has been given to all the parties in accordance with rules of court.",
+   "quote": "at a hearing of which notice has been given to all the parties in accordance with rules of court."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

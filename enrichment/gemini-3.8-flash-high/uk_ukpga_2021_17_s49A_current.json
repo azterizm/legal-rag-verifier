@@ -1,0 +1,151 @@
+{
+ "key": "uk/ukpga/2021/17/s49A@current",
+ "section": "uk/ukpga/2021/17/s49A",
+ "version": "current",
+ "source_sha256": "1766647da1e9a2013058ba67f204e85b8973f02a004fb4b2dda35ae87666f7ea",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A chief officer of police of a police force maintained for a police area must ensure that arrangements are in place to secure the objective that any relevant educational establishment is notified as soon as is reasonably practicable if a member of the force has reasonable grounds to believe a resident child may be a victim of domestic abuse.",
+    "quote": "A chief officer of police of a police force maintained for a police area must ensure that arrangements are in place to secure the objective in subsection (2)."
+   },
+   {
+    "requirement": "Any relevant educational establishment must be notified as soon as is reasonably practicable if a member of the police force has reasonable grounds to believe that a child residing in the police area may be a victim of domestic abuse.",
+    "quote": "if a member of the force has reasonable grounds to believe that a child who resides in the police area may be a victim of domestic abuse, any relevant educational establishment is notified as soon as is reasonably practicable"
+   },
+   {
+    "requirement": "Notification of a relevant educational establishment is not required in circumstances specified in regulations made by the Secretary of State.",
+    "quote": "except in such circumstances as may be specified in regulations made by the Secretary of State"
+   },
+   {
+    "requirement": "A school at which a child is a registered pupil constitutes a relevant educational establishment in relation to that child.",
+    "quote": "a school at which the child is a registered pupil"
+   },
+   {
+    "requirement": "If a child is not a registered pupil at a school and is receiving education at only one educational establishment, that establishment is a relevant educational establishment in relation to the child.",
+    "quote": "if the child is not a registered pupil at a school— (i) if the child is receiving education at only one educational establishment, that establishment"
+   },
+   {
+    "requirement": "If a child is not a registered pupil at a school and is receiving education at more than one educational establishment, any one or more of those establishments determined under the police force's arrangements for the police area in which the child resides constitutes a relevant educational establishment.",
+    "quote": "if the child is receiving education at more than one educational establishment, such one or more of those establishments as is determined in accordance with the arrangements in place under subsection (1) for the police area in which the child resides"
+   },
+   {
+    "requirement": "A child is defined as a person under the age of 18 years.",
+    "quote": "“child” means a person under the age of 18 years"
+   },
+   {
+    "requirement": "An educational establishment includes a school located in England or Wales.",
+    "quote": "“educational establishment” means— a school in England or Wales"
+   },
+   {
+    "requirement": "An educational establishment includes an institution within the further education sector within the meaning given by section 91(3) of the Further and Higher Education Act 1992.",
+    "quote": "an institution within the further education sector, within the meaning given by section 91(3) of the Further and Higher Education Act 1992"
+   },
+   {
+    "requirement": "In relation to England, an educational establishment includes a 16 to 19 Academy within the meaning given by section 1B of the Academies Act 2010.",
+    "quote": "in relation to England, a 16 to 19 Academy, within the meaning given by section 1B of the Academies Act 2010"
+   },
+   {
+    "requirement": "The term registered pupil in relation to a school has the meaning given by section 434 of the Education Act 1996.",
+    "quote": "“registered pupil”, in relation to a school, has the meaning given by section 434 of the Education Act 1996"
+   },
+   {
+    "requirement": "The term school has the meaning given by section 4 of the Education Act 1996.",
+    "quote": "“school” has the meaning given by section 4 of the Education Act 1996"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum age threshold to be considered a child",
+    "value": "18 years",
+    "quote": "under the age of 18 years"
+   },
+   {
+    "what": "number of educational establishments attended by a non-registered pupil triggering sole notification",
+    "value": "only one",
+    "quote": "receiving education at only one educational establishment"
+   },
+   {
+    "what": "number of educational establishments attended by a non-registered pupil triggering determination under police arrangements",
+    "value": "more than one",
+    "quote": "receiving education at more than one educational establishment"
+   },
+   {
+    "what": "age range of an Academy in England included as an educational establishment",
+    "value": "16 to 19",
+    "quote": "16 to 19 Academy"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A chief officer of police of a police force maintained for a police area must ensure that arrangements are in place to secure the objective that any relevant educational establishment is notified as soon as is reasonably practicable if a member of the force has reasonable grounds to believe a resident child may be a victim of domestic abuse.",
+   "quote": "A chief officer of police of a police force maintained for a police area must ensure that arrangements are in place to secure the objective in subsection (2)."
+  },
+  {
+   "requirement": "Any relevant educational establishment must be notified as soon as is reasonably practicable if a member of the police force has reasonable grounds to believe that a child residing in the police area may be a victim of domestic abuse.",
+   "quote": "if a member of the force has reasonable grounds to believe that a child who resides in the police area may be a victim of domestic abuse, any relevant educational establishment is notified as soon as is reasonably practicable"
+  },
+  {
+   "requirement": "Notification of a relevant educational establishment is not required in circumstances specified in regulations made by the Secretary of State.",
+   "quote": "except in such circumstances as may be specified in regulations made by the Secretary of State"
+  },
+  {
+   "requirement": "A school at which a child is a registered pupil constitutes a relevant educational establishment in relation to that child.",
+   "quote": "a school at which the child is a registered pupil"
+  },
+  {
+   "requirement": "If a child is not a registered pupil at a school and is receiving education at only one educational establishment, that establishment is a relevant educational establishment in relation to the child.",
+   "quote": "if the child is not a registered pupil at a school— (i) if the child is receiving education at only one educational establishment, that establishment"
+  },
+  {
+   "requirement": "If a child is not a registered pupil at a school and is receiving education at more than one educational establishment, any one or more of those establishments determined under the police force's arrangements for the police area in which the child resides constitutes a relevant educational establishment.",
+   "quote": "if the child is receiving education at more than one educational establishment, such one or more of those establishments as is determined in accordance with the arrangements in place under subsection (1) for the police area in which the child resides"
+  },
+  {
+   "requirement": "A child is defined as a person under the age of 18 years.",
+   "quote": "“child” means a person under the age of 18 years"
+  },
+  {
+   "requirement": "An educational establishment includes a school located in England or Wales.",
+   "quote": "“educational establishment” means— a school in England or Wales"
+  },
+  {
+   "requirement": "An educational establishment includes an institution within the further education sector within the meaning given by section 91(3) of the Further and Higher Education Act 1992.",
+   "quote": "an institution within the further education sector, within the meaning given by section 91(3) of the Further and Higher Education Act 1992"
+  },
+  {
+   "requirement": "In relation to England, an educational establishment includes a 16 to 19 Academy within the meaning given by section 1B of the Academies Act 2010.",
+   "quote": "in relation to England, a 16 to 19 Academy, within the meaning given by section 1B of the Academies Act 2010"
+  },
+  {
+   "requirement": "The term registered pupil in relation to a school has the meaning given by section 434 of the Education Act 1996.",
+   "quote": "“registered pupil”, in relation to a school, has the meaning given by section 434 of the Education Act 1996"
+  },
+  {
+   "requirement": "The term school has the meaning given by section 4 of the Education Act 1996.",
+   "quote": "“school” has the meaning given by section 4 of the Education Act 1996"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum age threshold to be considered a child",
+   "value": "18 years",
+   "quote": "under the age of 18 years"
+  },
+  {
+   "what": "age range of an Academy in England included as an educational establishment",
+   "value": "16 to 19",
+   "quote": "16 to 19 Academy"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 2
+ }
+}

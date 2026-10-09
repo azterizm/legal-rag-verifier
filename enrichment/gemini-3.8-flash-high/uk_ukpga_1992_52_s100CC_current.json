@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/1992/52/s100CC@current",
+ "section": "uk/ukpga/1992/52/s100CC",
+ "version": "current",
+ "source_sha256": "7da44d6a6f5c312bdbe7d8f294ca4efcc1b133a9a66e48a13e03d5411d140864",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "So far as is reasonably practicable, every person who is eligible to vote by postal voting must have a voting paper sent to them by post at their home address or another address which they have requested the trade union in writing to treat as their postal address.",
+    "quote": "So far as is reasonably practicable, every person who is eligible to vote by postal voting must have a voting paper sent to them by post at their home address or another address which they have requested the trade union in writing to treat as their postal address."
+   },
+   {
+    "requirement": "Each voting paper must state the name of the independent scrutineer.",
+    "quote": "state the name of the independent scrutineer"
+   },
+   {
+    "requirement": "Each voting paper must clearly specify the address to which, and the date by which, it is to be returned.",
+    "quote": "clearly specify the address to which, and the date by which, it is to be returned"
+   },
+   {
+    "requirement": "Each voting paper must be given one of a series of consecutive whole numbers, every one of which is used in giving a different number in that series to each voting paper printed or otherwise produced for the purposes of the ballot.",
+    "quote": "be given one of a series of consecutive whole numbers every one of which is used in giving a different number in that series to each voting paper printed or otherwise produced for the purposes of the ballot"
+   },
+   {
+    "requirement": "Each voting paper must be marked with its number.",
+    "quote": "be marked with its number."
+   },
+   {
+    "requirement": "Where a person chooses to vote by postal voting, that person votes by marking the voting paper sent to them.",
+    "quote": "Where a person chooses to vote by postal voting, the person votes by marking the voting paper sent to them."
+   },
+   {
+    "requirement": "A voting paper sent or otherwise provided to a person for voting must not have any other document enclosed with it, except for permitted statutory enclosures.",
+    "quote": "A voting paper which is sent or otherwise provided to a person for voting must not have enclosed with it any other document except—"
+   },
+   {
+    "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it the notice which, under section 99(1), is to accompany the voting paper.",
+    "quote": "the notice which, under section 99(1), is to accompany the voting paper"
+   },
+   {
+    "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it an addressed envelope.",
+    "quote": "an addressed envelope"
+   },
+   {
+    "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it a document containing instructions for the return of the voting paper.",
+    "quote": "a document containing instructions for the return of the voting paper"
+   },
+   {
+    "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it the provision required to be sent with the voting materials under section 100CA(2)(c), without any other statement.",
+    "quote": "the provision required to be sent with the voting materials under section 100CA(2)(c), without any other statement."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of consecutive whole numbers from the series that must be given to each voting paper",
+    "value": "one",
+    "quote": "one of a series of consecutive whole numbers"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "So far as is reasonably practicable, every person who is eligible to vote by postal voting must have a voting paper sent to them by post at their home address or another address which they have requested the trade union in writing to treat as their postal address.",
+   "quote": "So far as is reasonably practicable, every person who is eligible to vote by postal voting must have a voting paper sent to them by post at their home address or another address which they have requested the trade union in writing to treat as their postal address."
+  },
+  {
+   "requirement": "Each voting paper must state the name of the independent scrutineer.",
+   "quote": "state the name of the independent scrutineer"
+  },
+  {
+   "requirement": "Each voting paper must clearly specify the address to which, and the date by which, it is to be returned.",
+   "quote": "clearly specify the address to which, and the date by which, it is to be returned"
+  },
+  {
+   "requirement": "Each voting paper must be given one of a series of consecutive whole numbers, every one of which is used in giving a different number in that series to each voting paper printed or otherwise produced for the purposes of the ballot.",
+   "quote": "be given one of a series of consecutive whole numbers every one of which is used in giving a different number in that series to each voting paper printed or otherwise produced for the purposes of the ballot"
+  },
+  {
+   "requirement": "Each voting paper must be marked with its number.",
+   "quote": "be marked with its number."
+  },
+  {
+   "requirement": "Where a person chooses to vote by postal voting, that person votes by marking the voting paper sent to them.",
+   "quote": "Where a person chooses to vote by postal voting, the person votes by marking the voting paper sent to them."
+  },
+  {
+   "requirement": "A voting paper sent or otherwise provided to a person for voting must not have any other document enclosed with it, except for permitted statutory enclosures.",
+   "quote": "A voting paper which is sent or otherwise provided to a person for voting must not have enclosed with it any other document except—"
+  },
+  {
+   "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it the notice which, under section 99(1), is to accompany the voting paper.",
+   "quote": "the notice which, under section 99(1), is to accompany the voting paper"
+  },
+  {
+   "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it an addressed envelope.",
+   "quote": "an addressed envelope"
+  },
+  {
+   "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it a document containing instructions for the return of the voting paper.",
+   "quote": "a document containing instructions for the return of the voting paper"
+  },
+  {
+   "requirement": "A voting paper sent or otherwise provided to a person for voting may have enclosed with it the provision required to be sent with the voting materials under section 100CA(2)(c), without any other statement.",
+   "quote": "the provision required to be sent with the voting materials under section 100CA(2)(c), without any other statement."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

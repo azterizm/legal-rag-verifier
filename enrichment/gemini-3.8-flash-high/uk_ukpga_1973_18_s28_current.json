@@ -1,0 +1,135 @@
+{
+ "key": "uk/ukpga/1973/18/s28@current",
+ "section": "uk/ukpga/1973/18/s28",
+ "version": "current",
+ "source_sha256": "6dfafc5f66323769c62350c7355dcdf15d127d59302da394474e49195627a4ca",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the provisions of sections 25A(2) and 31(7) where an order is made on or after the making of a divorce or nullity of marriage order, the term specified in a periodical payments or secured periodical payments order in favour of a party to a marriage shall be such term as the court thinks fit, provided it does not begin before or extend beyond the statutory limits.",
+    "quote": "the term to be specified in a periodical payments or secured periodical payments order in favour of a party to a marriage shall be such term as the court thinks fit, except that the term shall not begin before or extend beyond the following limits"
+   },
+   {
+    "requirement": "The term of a periodical payments order in favour of a party to a marriage shall not begin earlier than the date of the making of an application for the order.",
+    "quote": "in the case of a periodical payments order, the term shall begin not earlier than the date of the making of an application for the order"
+   },
+   {
+    "requirement": "The term of a periodical payments order in favour of a party to a marriage must be defined so as not to extend beyond the death of either of the parties to the marriage.",
+    "quote": "shall be so defined as not to extend beyond the death of either of the parties to the marriage"
+   },
+   {
+    "requirement": "Where a periodical payments order in favour of a party to a marriage is made on or after the making of a divorce or nullity of marriage order, the term must be defined so as not to extend beyond the remarriage of, or formation of a civil partnership by, the party in whose favour the order is made.",
+    "quote": "where the order is made on or after the making of a divorce or nullity of marriage order, the remarriage of , or formation of a civil partnership by, the party in whose favour the periodical payments order is made"
+   },
+   {
+    "requirement": "The term of a secured periodical payments order in favour of a party to a marriage shall not begin earlier than the date of the making of an application for the order.",
+    "quote": "in the case of a secured periodical payments order, the term shall begin not earlier than the date of the making of an application for the order"
+   },
+   {
+    "requirement": "The term of a secured periodical payments order in favour of a party to a marriage must be defined so as not to extend beyond the death of the party in whose favour the order is made.",
+    "quote": "shall be so defined as not to extend beyond the death"
+   },
+   {
+    "requirement": "Where a secured periodical payments order in favour of a party to a marriage is made on or after the making of a divorce or nullity of marriage order, the term must be defined so as not to extend beyond the remarriage of, or formation of a civil partnership by, the party in whose favour the order is made.",
+    "quote": "where the order is made on or after the making of a divorce or nullity of marriage order, the remarriage of , or formation of a civil partnership by, the party in whose favour the secured periodical payments order is made"
+   },
+   {
+    "requirement": "Where a periodical payments or secured periodical payments order in favour of a party to a marriage is made on or after the making of a divorce or nullity of marriage order, the court may direct that the receiving party shall not be entitled to apply under section 31 for the extension of the term specified in that order.",
+    "quote": "the court may direct that that party shall not be entitled to apply under section 31 below for the extension of the term specified in the periodical payments or secured periodical payments order"
+   },
+   {
+    "requirement": "Where a periodical payments or secured periodical payments order in favour of a party to a marriage is made otherwise than on or after the making of a divorce or nullity of marriage order, and the marriage is subsequently dissolved or annulled but the order continues in force, the order ceases to have effect on the remarriage of, or formation of a civil partnership by, that party, notwithstanding anything in the order.",
+    "quote": "that order shall, notwithstanding anything in it, cease to have effect on the remarriage of , or formation of a civil partnership by, that party"
+   },
+   {
+    "requirement": "A periodical payments or secured periodical payments order that ceases to have effect upon remarriage or formation of a civil partnership following a subsequent dissolution or annulment does not cease to have effect in relation to any arrears due under it on the date of the remarriage or formation of the civil partnership.",
+    "quote": "except in relation to any arrears due under it on the date of the remarriage or formation of the civil partnership"
+   },
+   {
+    "requirement": "A party to a marriage who remarries (whether before or after the commencement of the Act) or forms a civil partnership after the grant or making of a decree or order dissolving or annulling the marriage is not entitled to apply, by reference to that decree or order, for a financial provision order in his or her favour or for a property adjustment order against the other party to the marriage.",
+    "quote": "that party shall not be entitled to apply, by reference to the grant or making of that decree or order, for a financial provision order in his or her favour, or for a property adjustment order, against the other party to that marriage"
+   },
+   {
+    "requirement": "Section 52A must be referenced for the interpretation of certain references to divorce orders, nullity of marriage orders, and judicial separation orders.",
+    "quote": "See also section 52A (interpretation of certain references to divorce orders, nullity of marriage orders and judicial separation orders)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Earliest allowable start date for the term of a periodical payments or secured periodical payments order",
+    "value": "date of the making of an application for the order",
+    "quote": "the term shall begin not earlier than the date of the making of an application for the order"
+   },
+   {
+    "what": "Date up to which arrears under a continuing order remain enforceable despite remarriage or formation of a civil partnership",
+    "value": "the date of the remarriage or formation of the civil partnership",
+    "quote": "arrears due under it on the date of the remarriage or formation of the civil partnership"
+   },
+   {
+    "what": "Timing of remarriage relative to the commencement of the Act that bars an application for financial provision or property adjustment orders",
+    "value": "at any time before or after the commencement of this Act",
+    "quote": "remarries whether at any time before or after the commencement of this Act"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the provisions of sections 25A(2) and 31(7) where an order is made on or after the making of a divorce or nullity of marriage order, the term specified in a periodical payments or secured periodical payments order in favour of a party to a marriage shall be such term as the court thinks fit, provided it does not begin before or extend beyond the statutory limits.",
+   "quote": "the term to be specified in a periodical payments or secured periodical payments order in favour of a party to a marriage shall be such term as the court thinks fit, except that the term shall not begin before or extend beyond the following limits"
+  },
+  {
+   "requirement": "The term of a periodical payments order in favour of a party to a marriage shall not begin earlier than the date of the making of an application for the order.",
+   "quote": "in the case of a periodical payments order, the term shall begin not earlier than the date of the making of an application for the order"
+  },
+  {
+   "requirement": "The term of a periodical payments order in favour of a party to a marriage must be defined so as not to extend beyond the death of either of the parties to the marriage.",
+   "quote": "shall be so defined as not to extend beyond the death of either of the parties to the marriage"
+  },
+  {
+   "requirement": "Where a periodical payments order in favour of a party to a marriage is made on or after the making of a divorce or nullity of marriage order, the term must be defined so as not to extend beyond the remarriage of, or formation of a civil partnership by, the party in whose favour the order is made.",
+   "quote": "where the order is made on or after the making of a divorce or nullity of marriage order, the remarriage of , or formation of a civil partnership by, the party in whose favour the periodical payments order is made"
+  },
+  {
+   "requirement": "The term of a secured periodical payments order in favour of a party to a marriage shall not begin earlier than the date of the making of an application for the order.",
+   "quote": "in the case of a secured periodical payments order, the term shall begin not earlier than the date of the making of an application for the order"
+  },
+  {
+   "requirement": "The term of a secured periodical payments order in favour of a party to a marriage must be defined so as not to extend beyond the death of the party in whose favour the order is made.",
+   "quote": "shall be so defined as not to extend beyond the death"
+  },
+  {
+   "requirement": "Where a secured periodical payments order in favour of a party to a marriage is made on or after the making of a divorce or nullity of marriage order, the term must be defined so as not to extend beyond the remarriage of, or formation of a civil partnership by, the party in whose favour the order is made.",
+   "quote": "where the order is made on or after the making of a divorce or nullity of marriage order, the remarriage of , or formation of a civil partnership by, the party in whose favour the secured periodical payments order is made"
+  },
+  {
+   "requirement": "Where a periodical payments or secured periodical payments order in favour of a party to a marriage is made on or after the making of a divorce or nullity of marriage order, the court may direct that the receiving party shall not be entitled to apply under section 31 for the extension of the term specified in that order.",
+   "quote": "the court may direct that that party shall not be entitled to apply under section 31 below for the extension of the term specified in the periodical payments or secured periodical payments order"
+  },
+  {
+   "requirement": "Where a periodical payments or secured periodical payments order in favour of a party to a marriage is made otherwise than on or after the making of a divorce or nullity of marriage order, and the marriage is subsequently dissolved or annulled but the order continues in force, the order ceases to have effect on the remarriage of, or formation of a civil partnership by, that party, notwithstanding anything in the order.",
+   "quote": "that order shall, notwithstanding anything in it, cease to have effect on the remarriage of , or formation of a civil partnership by, that party"
+  },
+  {
+   "requirement": "A periodical payments or secured periodical payments order that ceases to have effect upon remarriage or formation of a civil partnership following a subsequent dissolution or annulment does not cease to have effect in relation to any arrears due under it on the date of the remarriage or formation of the civil partnership.",
+   "quote": "except in relation to any arrears due under it on the date of the remarriage or formation of the civil partnership"
+  },
+  {
+   "requirement": "A party to a marriage who remarries (whether before or after the commencement of the Act) or forms a civil partnership after the grant or making of a decree or order dissolving or annulling the marriage is not entitled to apply, by reference to that decree or order, for a financial provision order in his or her favour or for a property adjustment order against the other party to the marriage.",
+   "quote": "that party shall not be entitled to apply, by reference to the grant or making of that decree or order, for a financial provision order in his or her favour, or for a property adjustment order, against the other party to that marriage"
+  },
+  {
+   "requirement": "Section 52A must be referenced for the interpretation of certain references to divorce orders, nullity of marriage orders, and judicial separation orders.",
+   "quote": "See also section 52A (interpretation of certain references to divorce orders, nullity of marriage orders and judicial separation orders)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

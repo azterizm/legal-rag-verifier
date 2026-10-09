@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/1988/52/s72@current",
+ "section": "uk/ukpga/1988/52/s72",
+ "version": "current",
+ "source_sha256": "1d9a6a9078d313eccc5511ece0890682eb1795c332b6e5334790fc53d240f03a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to the provisions of section 72, a prohibition under section 69 or 70 of the Road Traffic Act 1988 may be removed by any vehicle examiner or authorised constable if that examiner or constable is satisfied that the vehicle is fit for service.",
+    "quote": "a prohibition under section 69 or 70 of this Act may be removed by any vehicle examiner or authorised constable if he is satisfied that the vehicle is fit for service"
+   },
+   {
+    "requirement": "If a prohibition has been imposed with a direction under section 69A(1) or (2) of the Road Traffic Act 1988, the prohibition must not be removed unless and until the vehicle has been inspected in accordance with the direction.",
+    "quote": "the prohibition shall not be removed unless and until the vehicle has been inspected in accordance with the direction"
+   },
+   {
+    "requirement": "If a prohibition has been imposed with a direction under section 69A(3) of the Road Traffic Act 1988, section 72(1) does not apply, but the prohibition must be removed by such person as may be prescribed if and only if any prescribed requirements relating to the inspection of the vehicle and the issue and production of a test certificate have been complied with.",
+    "quote": "the prohibition shall be removed, by such person as may be prescribed, if (and only if) any prescribed requirements relating to the inspection of the vehicle and the issue and production of a test certificate have been complied with"
+   },
+   {
+    "requirement": "If a prohibition has been imposed with a direction under section 69A(4) of the Road Traffic Act 1988, the prohibition must not be removed unless and until any prescribed requirements relating to the inspection of the vehicle have been complied with.",
+    "quote": "the prohibition shall not be removed unless and until any prescribed requirements relating to the inspection of the vehicle have been complied with"
+   },
+   {
+    "requirement": "A person aggrieved by the refusal of a vehicle examiner or authorised constable to remove a prohibition may appeal to the Secretary of State within the prescribed time and in the prescribed manner.",
+    "quote": "A person aggrieved by the refusal of a vehicle examiner or authorised constable to remove a prohibition may, within the prescribed time and in the prescribed manner, appeal to the Secretary of State"
+   },
+   {
+    "requirement": "The Secretary of State may make such order on an appeal against a refusal to remove a prohibition as the Secretary of State thinks fit.",
+    "quote": "The Secretary of State may make such order on the appeal as he thinks fit"
+   },
+   {
+    "requirement": "Where a vehicle examiner or authorised constable removes a prohibition, that examiner or constable must forthwith give notice of the removal to the owner of the vehicle.",
+    "quote": "Where a vehicle examiner or authorised constable removes a prohibition, he must forthwith give notice of the removal to the owner of the vehicle"
+   },
+   {
+    "requirement": "The Secretary of State may require the payment of fees, in accordance with prescribed scales and rates, for the inspection of a vehicle with a view to the removal of a prohibition.",
+    "quote": "The Secretary of State may require the payment of fees, in accordance with prescribed scales and rates, for the inspection of a vehicle with a view to the removal of a prohibition"
+   },
+   {
+    "requirement": "Payment of fees for the inspection of a vehicle with a view to the removal of a prohibition may be required to be made in advance.",
+    "quote": "payment of fees may be required to be made in advance"
+   },
+   {
+    "requirement": "The Secretary of State must ensure that all scales and rates prescribed for the purposes of section 72(8) are reasonably comparable with the fees charged by virtue of section 51(1)(h) in respect of periodic examination in the case of goods vehicles, and the fees charged by virtue of section 46(c) in the case of other vehicles.",
+    "quote": "the Secretary of State must ensure that all the scales and rates prescribed for the purposes of this subsection are reasonably comparable with— (i) in the case of goods vehicles, the fees charged by virtue of section 51(1)(h) in respect of periodic examination, and (ii) in the case of other vehicles, the fees charged by virtue of section 46(c)"
+   },
+   {
+    "requirement": "The Secretary of State may make regulations for prescribing anything which may be prescribed under section 72 and for regulating the procedure and fees payable on appeals to the Secretary of State under section 72(5).",
+    "quote": "The Secretary of State may make regulations for prescribing anything which may be prescribed under this section and for regulating the procedure, and fees payable, on appeals to him under subsection (5) above"
+   },
+   {
+    "requirement": "An authorised constable means a constable authorised to act for the purposes of section 72 by or on behalf of a chief officer of police.",
+    "quote": "“authorised constable” means a constable authorised to act for the purposes of this section by or on behalf of a chief officer of police"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Subject to the provisions of section 72, a prohibition under section 69 or 70 of the Road Traffic Act 1988 may be removed by any vehicle examiner or authorised constable if that examiner or constable is satisfied that the vehicle is fit for service.",
+   "quote": "a prohibition under section 69 or 70 of this Act may be removed by any vehicle examiner or authorised constable if he is satisfied that the vehicle is fit for service"
+  },
+  {
+   "requirement": "If a prohibition has been imposed with a direction under section 69A(1) or (2) of the Road Traffic Act 1988, the prohibition must not be removed unless and until the vehicle has been inspected in accordance with the direction.",
+   "quote": "the prohibition shall not be removed unless and until the vehicle has been inspected in accordance with the direction"
+  },
+  {
+   "requirement": "If a prohibition has been imposed with a direction under section 69A(3) of the Road Traffic Act 1988, section 72(1) does not apply, but the prohibition must be removed by such person as may be prescribed if and only if any prescribed requirements relating to the inspection of the vehicle and the issue and production of a test certificate have been complied with.",
+   "quote": "the prohibition shall be removed, by such person as may be prescribed, if (and only if) any prescribed requirements relating to the inspection of the vehicle and the issue and production of a test certificate have been complied with"
+  },
+  {
+   "requirement": "If a prohibition has been imposed with a direction under section 69A(4) of the Road Traffic Act 1988, the prohibition must not be removed unless and until any prescribed requirements relating to the inspection of the vehicle have been complied with.",
+   "quote": "the prohibition shall not be removed unless and until any prescribed requirements relating to the inspection of the vehicle have been complied with"
+  },
+  {
+   "requirement": "A person aggrieved by the refusal of a vehicle examiner or authorised constable to remove a prohibition may appeal to the Secretary of State within the prescribed time and in the prescribed manner.",
+   "quote": "A person aggrieved by the refusal of a vehicle examiner or authorised constable to remove a prohibition may, within the prescribed time and in the prescribed manner, appeal to the Secretary of State"
+  },
+  {
+   "requirement": "The Secretary of State may make such order on an appeal against a refusal to remove a prohibition as the Secretary of State thinks fit.",
+   "quote": "The Secretary of State may make such order on the appeal as he thinks fit"
+  },
+  {
+   "requirement": "Where a vehicle examiner or authorised constable removes a prohibition, that examiner or constable must forthwith give notice of the removal to the owner of the vehicle.",
+   "quote": "Where a vehicle examiner or authorised constable removes a prohibition, he must forthwith give notice of the removal to the owner of the vehicle"
+  },
+  {
+   "requirement": "The Secretary of State may require the payment of fees, in accordance with prescribed scales and rates, for the inspection of a vehicle with a view to the removal of a prohibition.",
+   "quote": "The Secretary of State may require the payment of fees, in accordance with prescribed scales and rates, for the inspection of a vehicle with a view to the removal of a prohibition"
+  },
+  {
+   "requirement": "Payment of fees for the inspection of a vehicle with a view to the removal of a prohibition may be required to be made in advance.",
+   "quote": "payment of fees may be required to be made in advance"
+  },
+  {
+   "requirement": "The Secretary of State must ensure that all scales and rates prescribed for the purposes of section 72(8) are reasonably comparable with the fees charged by virtue of section 51(1)(h) in respect of periodic examination in the case of goods vehicles, and the fees charged by virtue of section 46(c) in the case of other vehicles.",
+   "quote": "the Secretary of State must ensure that all the scales and rates prescribed for the purposes of this subsection are reasonably comparable with— (i) in the case of goods vehicles, the fees charged by virtue of section 51(1)(h) in respect of periodic examination, and (ii) in the case of other vehicles, the fees charged by virtue of section 46(c)"
+  },
+  {
+   "requirement": "The Secretary of State may make regulations for prescribing anything which may be prescribed under section 72 and for regulating the procedure and fees payable on appeals to the Secretary of State under section 72(5).",
+   "quote": "The Secretary of State may make regulations for prescribing anything which may be prescribed under this section and for regulating the procedure, and fees payable, on appeals to him under subsection (5) above"
+  },
+  {
+   "requirement": "An authorised constable means a constable authorised to act for the purposes of section 72 by or on behalf of a chief officer of police.",
+   "quote": "“authorised constable” means a constable authorised to act for the purposes of this section by or on behalf of a chief officer of police"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/2013/29/s107@current",
+ "section": "uk/ukpga/2013/29/s107",
+ "version": "current",
+ "source_sha256": "c3c45500a91cd816d085b8e23c9aeedb7ea9a62134059e62f0ad21e601562b13",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of this Part, a chargeable interest means an estate, interest, right or power in or over land in the United Kingdom, or the benefit of an obligation, restriction or condition affecting the value of any such estate, interest, right or power.",
+    "quote": "“chargeable interest” means— (a) an estate, interest, right or power in or over land in the United Kingdom, or (b) the benefit of an obligation, restriction or condition affecting the value of any such estate, interest, right or power."
+   },
+   {
+    "requirement": "Where two or more persons are jointly entitled to a chargeable interest, that chargeable interest is not regarded for the purposes of this Part as consisting of separate interests corresponding to the shares (if any) held by virtue of their joint entitlement.",
+    "quote": "the chargeable interest is not regarded, for the purposes of this Part, as consisting of separate interests corresponding to the shares (if any) that those persons have by virtue of their joint entitlement."
+   },
+   {
+    "requirement": "An exempt interest is not treated as a chargeable interest for the purposes of this Part.",
+    "quote": "An exempt interest is not a chargeable interest for the purposes of this Part."
+   },
+   {
+    "requirement": "Any security interest is an exempt interest.",
+    "quote": "any security interest;"
+   },
+   {
+    "requirement": "A licence to use or occupy land is an exempt interest.",
+    "quote": "a licence to use or occupy land;"
+   },
+   {
+    "requirement": "A tenancy at will in England and Wales or Northern Ireland is an exempt interest.",
+    "quote": "in England and Wales or Northern Ireland, a tenancy at will."
+   },
+   {
+    "requirement": "A security interest means an interest or right (other than a rentcharge) held for the purpose of securing the payment of money or the performance of any other obligation.",
+    "quote": "“security interest” means an interest or right (other than a rentcharge) held for the purpose of securing the payment of money or the performance of any other obligation."
+   },
+   {
+    "requirement": "In the application of this Part in Scotland, the reference to a rentcharge in subsection (5) is to be read as a reference to a feu duty or a payment mentioned in section 56(1) of the Abolition of Feudal Tenure etc (Scotland) Act 2000 (asp 5).",
+    "quote": "the reference in subsection (5) to a rentcharge is to be read as a reference to a feu duty or a payment mentioned in section 56(1) of the Abolition of Feudal Tenure etc (Scotland) Act 2000 (asp 5)."
+   },
+   {
+    "requirement": "The Treasury may provide by regulations that any other description of interest or right in or over a dwelling is an exempt interest.",
+    "quote": "The Treasury may by regulations provide that any other description of interest or right in or over a dwelling is an exempt interest."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of persons jointly entitled to a chargeable interest to trigger the rule against treating it as separate share interests",
+    "value": "two",
+    "quote": "two or more persons"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of this Part, a chargeable interest means an estate, interest, right or power in or over land in the United Kingdom, or the benefit of an obligation, restriction or condition affecting the value of any such estate, interest, right or power.",
+   "quote": "“chargeable interest” means— (a) an estate, interest, right or power in or over land in the United Kingdom, or (b) the benefit of an obligation, restriction or condition affecting the value of any such estate, interest, right or power."
+  },
+  {
+   "requirement": "Where two or more persons are jointly entitled to a chargeable interest, that chargeable interest is not regarded for the purposes of this Part as consisting of separate interests corresponding to the shares (if any) held by virtue of their joint entitlement.",
+   "quote": "the chargeable interest is not regarded, for the purposes of this Part, as consisting of separate interests corresponding to the shares (if any) that those persons have by virtue of their joint entitlement."
+  },
+  {
+   "requirement": "An exempt interest is not treated as a chargeable interest for the purposes of this Part.",
+   "quote": "An exempt interest is not a chargeable interest for the purposes of this Part."
+  },
+  {
+   "requirement": "Any security interest is an exempt interest.",
+   "quote": "any security interest;"
+  },
+  {
+   "requirement": "A licence to use or occupy land is an exempt interest.",
+   "quote": "a licence to use or occupy land;"
+  },
+  {
+   "requirement": "A tenancy at will in England and Wales or Northern Ireland is an exempt interest.",
+   "quote": "in England and Wales or Northern Ireland, a tenancy at will."
+  },
+  {
+   "requirement": "A security interest means an interest or right (other than a rentcharge) held for the purpose of securing the payment of money or the performance of any other obligation.",
+   "quote": "“security interest” means an interest or right (other than a rentcharge) held for the purpose of securing the payment of money or the performance of any other obligation."
+  },
+  {
+   "requirement": "In the application of this Part in Scotland, the reference to a rentcharge in subsection (5) is to be read as a reference to a feu duty or a payment mentioned in section 56(1) of the Abolition of Feudal Tenure etc (Scotland) Act 2000 (asp 5).",
+   "quote": "the reference in subsection (5) to a rentcharge is to be read as a reference to a feu duty or a payment mentioned in section 56(1) of the Abolition of Feudal Tenure etc (Scotland) Act 2000 (asp 5)."
+  },
+  {
+   "requirement": "The Treasury may provide by regulations that any other description of interest or right in or over a dwelling is an exempt interest.",
+   "quote": "The Treasury may by regulations provide that any other description of interest or right in or over a dwelling is an exempt interest."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

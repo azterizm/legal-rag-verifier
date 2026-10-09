@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/2021/17/s13@current",
+ "section": "uk/ukpga/2021/17/s13",
+ "version": "current",
+ "source_sha256": "3c3193a8695dd4558e350b93d4313238f135786c05de9707f28ebe93b92d3da1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Commissioner must prepare and publish a strategic plan as soon as reasonably practicable after the Commissioner's appointment.",
+    "quote": "The Commissioner must, as soon as reasonably practicable after the Commissioner's appointment, prepare and publish a strategic plan."
+   },
+   {
+    "requirement": "A strategic plan is defined as a plan setting out how the Commissioner proposes to exercise the Commissioner's functions in the period to which the plan relates.",
+    "quote": "A strategic plan is a plan setting out how the Commissioner proposes to exercise the Commissioner's functions in the period to which the plan relates"
+   },
+   {
+    "requirement": "The period to which a strategic plan relates must be not less than one year and not more than three years.",
+    "quote": "which must be not less than one year and not more than three years"
+   },
+   {
+    "requirement": "A strategic plan must in particular state the Commissioner's objectives and priorities for the period to which the plan relates.",
+    "quote": "state the Commissioner's objectives and priorities for the period to which the plan relates"
+   },
+   {
+    "requirement": "A strategic plan must in particular state any matters on which the Commissioner proposes to report under section 8 during the period to which the plan relates.",
+    "quote": "state any matters on which the Commissioner proposes to report under section 8 during that period"
+   },
+   {
+    "requirement": "A strategic plan must in particular state any other activities the Commissioner proposes to undertake during that period in the exercise of the Commissioner's functions.",
+    "quote": "state any other activities the Commissioner proposes to undertake during that period in the exercise of the Commissioner's functions"
+   },
+   {
+    "requirement": "The Commissioner must, before the end of the period to which a strategic plan relates (referred to as 'the current period'), prepare a strategic plan for a period immediately following the current period.",
+    "quote": "The Commissioner must, before the end of the period to which a strategic plan relates (“the current period”)— (a) prepare a strategic plan for a period immediately following the current period"
+   },
+   {
+    "requirement": "The Commissioner must, before the end of the current period, publish the strategic plan prepared for the period immediately following the current period.",
+    "quote": "before the end of the period to which a strategic plan relates (“the current period”)— (a) prepare a strategic plan for a period immediately following the current period, and (b) publish that plan"
+   },
+   {
+    "requirement": "The Commissioner may revise the strategic plan at any time during the period to which the plan relates.",
+    "quote": "At any time during the period to which a strategic plan relates, the Commissioner— (a) may revise the strategic plan"
+   },
+   {
+    "requirement": "The Commissioner must publish any revised plan.",
+    "quote": "must publish any revised plan"
+   },
+   {
+    "requirement": "In preparing or revising a strategic plan, the Commissioner must consult the Secretary of State.",
+    "quote": "In preparing or revising a strategic plan, the Commissioner must consult— (a) the Secretary of State"
+   },
+   {
+    "requirement": "In preparing or revising a strategic plan, the Commissioner must consult the Advisory Board established under section 12.",
+    "quote": "the Advisory Board established under section 12"
+   },
+   {
+    "requirement": "In preparing or revising a strategic plan, the Commissioner must consult such other persons as the Commissioner considers appropriate.",
+    "quote": "such other persons as the Commissioner considers appropriate"
+   },
+   {
+    "requirement": "The Commissioner must arrange for a copy of any plan or revised plan published under section 13 of the Domestic Abuse Act 2021 to be laid before Parliament.",
+    "quote": "The Commissioner must arrange for a copy of any plan (or revised plan) published under this section to be laid before Parliament."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period to which a strategic plan must relate",
+    "value": "one year",
+    "quote": "not less than one year"
+   },
+   {
+    "what": "maximum period to which a strategic plan must relate",
+    "value": "three years",
+    "quote": "not more than three years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Commissioner must prepare and publish a strategic plan as soon as reasonably practicable after the Commissioner's appointment.",
+   "quote": "The Commissioner must, as soon as reasonably practicable after the Commissioner's appointment, prepare and publish a strategic plan."
+  },
+  {
+   "requirement": "A strategic plan is defined as a plan setting out how the Commissioner proposes to exercise the Commissioner's functions in the period to which the plan relates.",
+   "quote": "A strategic plan is a plan setting out how the Commissioner proposes to exercise the Commissioner's functions in the period to which the plan relates"
+  },
+  {
+   "requirement": "The period to which a strategic plan relates must be not less than one year and not more than three years.",
+   "quote": "which must be not less than one year and not more than three years"
+  },
+  {
+   "requirement": "A strategic plan must in particular state the Commissioner's objectives and priorities for the period to which the plan relates.",
+   "quote": "state the Commissioner's objectives and priorities for the period to which the plan relates"
+  },
+  {
+   "requirement": "A strategic plan must in particular state any matters on which the Commissioner proposes to report under section 8 during the period to which the plan relates.",
+   "quote": "state any matters on which the Commissioner proposes to report under section 8 during that period"
+  },
+  {
+   "requirement": "A strategic plan must in particular state any other activities the Commissioner proposes to undertake during that period in the exercise of the Commissioner's functions.",
+   "quote": "state any other activities the Commissioner proposes to undertake during that period in the exercise of the Commissioner's functions"
+  },
+  {
+   "requirement": "The Commissioner must, before the end of the period to which a strategic plan relates (referred to as 'the current period'), prepare a strategic plan for a period immediately following the current period.",
+   "quote": "The Commissioner must, before the end of the period to which a strategic plan relates (“the current period”)— (a) prepare a strategic plan for a period immediately following the current period"
+  },
+  {
+   "requirement": "The Commissioner must, before the end of the current period, publish the strategic plan prepared for the period immediately following the current period.",
+   "quote": "before the end of the period to which a strategic plan relates (“the current period”)— (a) prepare a strategic plan for a period immediately following the current period, and (b) publish that plan"
+  },
+  {
+   "requirement": "The Commissioner may revise the strategic plan at any time during the period to which the plan relates.",
+   "quote": "At any time during the period to which a strategic plan relates, the Commissioner— (a) may revise the strategic plan"
+  },
+  {
+   "requirement": "The Commissioner must publish any revised plan.",
+   "quote": "must publish any revised plan"
+  },
+  {
+   "requirement": "In preparing or revising a strategic plan, the Commissioner must consult the Secretary of State.",
+   "quote": "In preparing or revising a strategic plan, the Commissioner must consult— (a) the Secretary of State"
+  },
+  {
+   "requirement": "In preparing or revising a strategic plan, the Commissioner must consult the Advisory Board established under section 12.",
+   "quote": "the Advisory Board established under section 12"
+  },
+  {
+   "requirement": "In preparing or revising a strategic plan, the Commissioner must consult such other persons as the Commissioner considers appropriate.",
+   "quote": "such other persons as the Commissioner considers appropriate"
+  },
+  {
+   "requirement": "The Commissioner must arrange for a copy of any plan or revised plan published under section 13 of the Domestic Abuse Act 2021 to be laid before Parliament.",
+   "quote": "The Commissioner must arrange for a copy of any plan (or revised plan) published under this section to be laid before Parliament."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period to which a strategic plan must relate",
+   "value": "one year",
+   "quote": "not less than one year"
+  },
+  {
+   "what": "maximum period to which a strategic plan must relate",
+   "value": "three years",
+   "quote": "not more than three years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

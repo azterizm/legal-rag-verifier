@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1986/46/s9E@current",
+ "section": "uk/ukpga/1986/46/s9E",
+ "version": "current",
+ "source_sha256": "85bfd18e783195c6d5a71b2f70d625e3d4d9664833995c80c223458131383271",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 9E of the Company Directors Disqualification Act 1986 applies for the purposes of sections 9A to 9D.",
+    "quote": "This section applies for the purposes of sections 9A to 9D."
+   },
+   {
+    "requirement": "The Office of Communications is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "the Office of Communications"
+   },
+   {
+    "requirement": "The Gas and Electricity Markets Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "the Gas and Electricity Markets Authority"
+   },
+   {
+    "requirement": "The Water Services Regulation Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "the Water Services Regulation Authority"
+   },
+   {
+    "requirement": "The Office of Rail and Road is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "Office of Rail and Road"
+   },
+   {
+    "requirement": "The Civil Aviation Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "the Civil Aviation Authority"
+   },
+   {
+    "requirement": "The Payment Systems Regulator established under section 40 of the Financial Services (Banking Reform) Act 2013 is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "the Payment Systems Regulator established under section 40 of the Financial Services (Banking Reform) Act 2013"
+   },
+   {
+    "requirement": "The Financial Conduct Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+    "quote": "the Financial Conduct Authority"
+   },
+   {
+    "requirement": "For the purposes of sections 9A to 9D, the court is the High Court or, in Scotland, the Court of Session.",
+    "quote": "The court is the High Court or (in Scotland) the Court of Session."
+   },
+   {
+    "requirement": "For the purposes of sections 9A to 9D, conduct includes an omission.",
+    "quote": "Conduct includes omission."
+   },
+   {
+    "requirement": "For the purposes of sections 9A to 9D, director includes a shadow director.",
+    "quote": "Director includes shadow director."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 9E of the Company Directors Disqualification Act 1986 applies for the purposes of sections 9A to 9D.",
+   "quote": "This section applies for the purposes of sections 9A to 9D."
+  },
+  {
+   "requirement": "The Office of Communications is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "the Office of Communications"
+  },
+  {
+   "requirement": "The Gas and Electricity Markets Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "the Gas and Electricity Markets Authority"
+  },
+  {
+   "requirement": "The Water Services Regulation Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "the Water Services Regulation Authority"
+  },
+  {
+   "requirement": "The Office of Rail and Road is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "Office of Rail and Road"
+  },
+  {
+   "requirement": "The Civil Aviation Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "the Civil Aviation Authority"
+  },
+  {
+   "requirement": "The Payment Systems Regulator established under section 40 of the Financial Services (Banking Reform) Act 2013 is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "the Payment Systems Regulator established under section 40 of the Financial Services (Banking Reform) Act 2013"
+  },
+  {
+   "requirement": "The Financial Conduct Authority is a specified regulator for the purposes of a breach of competition law in relation to a matter in respect of which it has a function.",
+   "quote": "the Financial Conduct Authority"
+  },
+  {
+   "requirement": "For the purposes of sections 9A to 9D, the court is the High Court or, in Scotland, the Court of Session.",
+   "quote": "The court is the High Court or (in Scotland) the Court of Session."
+  },
+  {
+   "requirement": "For the purposes of sections 9A to 9D, conduct includes an omission.",
+   "quote": "Conduct includes omission."
+  },
+  {
+   "requirement": "For the purposes of sections 9A to 9D, director includes a shadow director.",
+   "quote": "Director includes shadow director."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

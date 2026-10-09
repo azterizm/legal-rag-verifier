@@ -1,0 +1,93 @@
+{
+ "key": "uk/ukpga/1997/40/s9@current",
+ "section": "uk/ukpga/1997/40/s9",
+ "version": "current",
+ "source_sha256": "f5ef0e7b6be638467562fe6bf861f9778edae81bbaed8c90b104fccab3acff72",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if that person is in breach of a non-harassment order made under section 8 or section 8A.",
+    "quote": "in breach of a non-harassment order made under section 8 or section 8A is guilty of an offence"
+   },
+   {
+    "requirement": "A person convicted on indictment of breaching a non-harassment order made under section 8 or section 8A is liable to imprisonment for a term not exceeding five years, to a fine, or to both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding five years or to a fine, or to both"
+   },
+   {
+    "requirement": "A person convicted summarily of breaching a non-harassment order made under section 8 or section 8A is liable to imprisonment for a period not exceeding six months, to a fine not exceeding the statutory maximum, or to both.",
+    "quote": "on summary conviction, to imprisonment for a period not exceeding six months or to a fine not exceeding the statutory maximum, or to both"
+   },
+   {
+    "requirement": "A breach of a non-harassment order is not punishable in any way other than in accordance with subsection (1).",
+    "quote": "shall not be punishable other than in accordance with subsection (1)"
+   },
+   {
+    "requirement": "A constable is permitted to arrest without warrant any person whom the constable reasonably believes is committing or has committed an offence of breaching a non-harassment order.",
+    "quote": "A constable may arrest without warrant any person he reasonably believes is committing or has committed an offence"
+   },
+   {
+    "requirement": "The constable's power of arrest without warrant under subsection (3) does not prejudice any other power of arrest conferred by law.",
+    "quote": "without prejudice to any power of arrest conferred by law apart from that subsection"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "five years",
+    "quote": "term not exceeding five years"
+   },
+   {
+    "what": "maximum period of imprisonment on summary conviction",
+    "value": "six months",
+    "quote": "period not exceeding six months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if that person is in breach of a non-harassment order made under section 8 or section 8A.",
+   "quote": "in breach of a non-harassment order made under section 8 or section 8A is guilty of an offence"
+  },
+  {
+   "requirement": "A person convicted on indictment of breaching a non-harassment order made under section 8 or section 8A is liable to imprisonment for a term not exceeding five years, to a fine, or to both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding five years or to a fine, or to both"
+  },
+  {
+   "requirement": "A person convicted summarily of breaching a non-harassment order made under section 8 or section 8A is liable to imprisonment for a period not exceeding six months, to a fine not exceeding the statutory maximum, or to both.",
+   "quote": "on summary conviction, to imprisonment for a period not exceeding six months or to a fine not exceeding the statutory maximum, or to both"
+  },
+  {
+   "requirement": "A breach of a non-harassment order is not punishable in any way other than in accordance with subsection (1).",
+   "quote": "shall not be punishable other than in accordance with subsection (1)"
+  },
+  {
+   "requirement": "A constable is permitted to arrest without warrant any person whom the constable reasonably believes is committing or has committed an offence of breaching a non-harassment order.",
+   "quote": "A constable may arrest without warrant any person he reasonably believes is committing or has committed an offence"
+  },
+  {
+   "requirement": "The constable's power of arrest without warrant under subsection (3) does not prejudice any other power of arrest conferred by law.",
+   "quote": "without prejudice to any power of arrest conferred by law apart from that subsection"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "five years",
+   "quote": "term not exceeding five years"
+  },
+  {
+   "what": "maximum period of imprisonment on summary conviction",
+   "value": "six months",
+   "quote": "period not exceeding six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

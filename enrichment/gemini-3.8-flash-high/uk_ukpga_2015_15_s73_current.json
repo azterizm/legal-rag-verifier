@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2015/15/s73@current",
+ "section": "uk/ukpga/2015/15/s73",
+ "version": "current",
+ "source_sha256": "c2f7f9b08174ae696caaf910b40ddc86c454770a7eff22fca2fc74dd29030b9f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "This Part does not apply to a term of a contract, or to a notice, to the extent that the term or notice reflects mandatory statutory or regulatory provisions.",
+    "quote": "This Part does not apply to a term of a contract, or to a notice, to the extent that it reflects— (a) mandatory statutory or regulatory provisions"
+   },
+   {
+    "requirement": "This Part does not apply to a term of a contract, or to a notice, to the extent that the term or notice reflects the provisions or principles of an international convention to which the United Kingdom is a party.",
+    "quote": "the provisions or principles of an international convention to which the United Kingdom ... is a party"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), mandatory statutory or regulatory provisions include rules which apply between the parties according to law on the basis that no other arrangements have been established.",
+    "quote": "“mandatory statutory or regulatory provisions” includes rules which, according to law, apply between the parties on the basis that no other arrangements have been established"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "This Part does not apply to a term of a contract, or to a notice, to the extent that the term or notice reflects mandatory statutory or regulatory provisions.",
+   "quote": "This Part does not apply to a term of a contract, or to a notice, to the extent that it reflects— (a) mandatory statutory or regulatory provisions"
+  },
+  {
+   "requirement": "This Part does not apply to a term of a contract, or to a notice, to the extent that the term or notice reflects the provisions or principles of an international convention to which the United Kingdom is a party.",
+   "quote": "the provisions or principles of an international convention to which the United Kingdom ... is a party"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), mandatory statutory or regulatory provisions include rules which apply between the parties according to law on the basis that no other arrangements have been established.",
+   "quote": "“mandatory statutory or regulatory provisions” includes rules which, according to law, apply between the parties on the basis that no other arrangements have been established"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

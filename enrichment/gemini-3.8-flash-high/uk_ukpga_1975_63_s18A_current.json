@@ -1,0 +1,69 @@
+{
+ "key": "uk/ukpga/1975/63/s18A@current",
+ "section": "uk/ukpga/1975/63/s18A",
+ "version": "current",
+ "source_sha256": "57b231ae7050f1a1d9e79c97e642bfcd0760ceb16a1aa912f26720e1cf382143",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a person against whom a secured periodical payments order was made under Schedule 5 to the Civil Partnership Act 2004 has died and an application is made under paragraph 60 of that Schedule for the variation or discharge of that order or for the revival of the operation of any suspended provision of the order, the court has the power to direct that the application shall be deemed to have been accompanied by an application for an order under section 2 of the Inheritance (Provision for Family and Dependants) Act 1975.",
+    "quote": "the court shall have power to direct that the application made under paragraph 60 or 73 of that Schedule shall be deemed to have been accompanied by an application for an order under section 2 of this Act"
+   },
+   {
+    "requirement": "Where a party to a maintenance agreement within the meaning of Part 13 of Schedule 5 to the Civil Partnership Act 2004 has died, the agreement provides for the continuation of payments after the death of one of the parties, and an application is made under paragraph 73 of that Schedule for the alteration of the agreement under paragraph 69 of that Schedule, the court has the power to direct that the application shall be deemed to have been accompanied by an application for an order under section 2 of the Inheritance (Provision for Family and Dependants) Act 1975.",
+    "quote": "the court shall have power to direct that the application made under paragraph 60 or 73 of that Schedule shall be deemed to have been accompanied by an application for an order under section 2 of this Act"
+   },
+   {
+    "requirement": "Where the court gives a direction under section 18A(1), the court has the power, in the proceedings on the application under paragraph 60 or 73 of Schedule 5 to the Civil Partnership Act 2004, to make any order which it would have had the power to make under the provisions of the Inheritance (Provision for Family and Dependants) Act 1975 if the application under that paragraph had been made jointly with an application for an order under section 2 of that Act.",
+    "quote": "to make any order which the court would have had power to make under the provisions of this Act if the application under that paragraph had been made jointly with an application for an order under section 2 of this Act"
+   },
+   {
+    "requirement": "Where the court gives a direction under section 18A(1), the court has the power to give such consequential directions as may be necessary for enabling it to exercise any of the powers available to it under the Inheritance (Provision for Family and Dependants) Act 1975 in the case of an application for an order under section 2 of that Act.",
+    "quote": "the court shall have power to give such consequential directions as may be necessary for enabling the court to exercise any of the powers available to the court under this Act in the case of an application for an order under section 2"
+   },
+   {
+    "requirement": "Where an order made under section 15ZA(1) of the Inheritance (Provision for Family and Dependants) Act 1975 is in force with respect to a civil partner, the court is prohibited from giving a direction under section 18A(1) with respect to any application made under paragraph 60 or 73 of Schedule 5 to the Civil Partnership Act 2004 by that civil partner on the death of the other civil partner.",
+    "quote": "the court shall not give a direction under subsection (1) above with respect to any application made under paragraph 60 or 73 of that Schedule by that civil partner on the death of the other civil partner"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the minimum number of parties whose death triggers the continuation of payments under the maintenance agreement",
+    "value": "one",
+    "quote": "after the death of one of the parties"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a person against whom a secured periodical payments order was made under Schedule 5 to the Civil Partnership Act 2004 has died and an application is made under paragraph 60 of that Schedule for the variation or discharge of that order or for the revival of the operation of any suspended provision of the order, the court has the power to direct that the application shall be deemed to have been accompanied by an application for an order under section 2 of the Inheritance (Provision for Family and Dependants) Act 1975.",
+   "quote": "the court shall have power to direct that the application made under paragraph 60 or 73 of that Schedule shall be deemed to have been accompanied by an application for an order under section 2 of this Act"
+  },
+  {
+   "requirement": "Where a party to a maintenance agreement within the meaning of Part 13 of Schedule 5 to the Civil Partnership Act 2004 has died, the agreement provides for the continuation of payments after the death of one of the parties, and an application is made under paragraph 73 of that Schedule for the alteration of the agreement under paragraph 69 of that Schedule, the court has the power to direct that the application shall be deemed to have been accompanied by an application for an order under section 2 of the Inheritance (Provision for Family and Dependants) Act 1975.",
+   "quote": "the court shall have power to direct that the application made under paragraph 60 or 73 of that Schedule shall be deemed to have been accompanied by an application for an order under section 2 of this Act"
+  },
+  {
+   "requirement": "Where the court gives a direction under section 18A(1), the court has the power, in the proceedings on the application under paragraph 60 or 73 of Schedule 5 to the Civil Partnership Act 2004, to make any order which it would have had the power to make under the provisions of the Inheritance (Provision for Family and Dependants) Act 1975 if the application under that paragraph had been made jointly with an application for an order under section 2 of that Act.",
+   "quote": "to make any order which the court would have had power to make under the provisions of this Act if the application under that paragraph had been made jointly with an application for an order under section 2 of this Act"
+  },
+  {
+   "requirement": "Where the court gives a direction under section 18A(1), the court has the power to give such consequential directions as may be necessary for enabling it to exercise any of the powers available to it under the Inheritance (Provision for Family and Dependants) Act 1975 in the case of an application for an order under section 2 of that Act.",
+   "quote": "the court shall have power to give such consequential directions as may be necessary for enabling the court to exercise any of the powers available to the court under this Act in the case of an application for an order under section 2"
+  },
+  {
+   "requirement": "Where an order made under section 15ZA(1) of the Inheritance (Provision for Family and Dependants) Act 1975 is in force with respect to a civil partner, the court is prohibited from giving a direction under section 18A(1) with respect to any application made under paragraph 60 or 73 of Schedule 5 to the Civil Partnership Act 2004 by that civil partner on the death of the other civil partner.",
+   "quote": "the court shall not give a direction under subsection (1) above with respect to any application made under paragraph 60 or 73 of that Schedule by that civil partner on the death of the other civil partner"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

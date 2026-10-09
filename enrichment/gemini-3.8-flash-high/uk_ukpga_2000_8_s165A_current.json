@@ -1,0 +1,199 @@
+{
+ "key": "uk/ukpga/2000/8/s165A@current",
+ "section": "uk/ukpga/2000/8/s165A",
+ "version": "current",
+ "source_sha256": "1c332411c5c1dba213c25000bb8ab1bf9269e00cf147d78b96153966812985c4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The PRA may, by written notice given to a person to whom section 165A applies, require that person to provide specified information or information of a specified description.",
+    "quote": "The PRA may, by notice in writing given to a person to whom this section applies, require the person— (a) to provide specified information or information of a specified description"
+   },
+   {
+    "requirement": "The PRA may, by written notice given to a person to whom section 165A applies, require that person to produce specified documents or documents of a specified description.",
+    "quote": "require the person— (a) to provide specified information or information of a specified description; or (b) to produce specified documents or documents of a specified description"
+   },
+   {
+    "requirement": "Section 165A applies to a person who has a legal or beneficial interest in any of the assets of a relevant investment fund.",
+    "quote": "a person who has a legal or beneficial interest in any of the assets of a relevant investment fund"
+   },
+   {
+    "requirement": "Section 165A applies to a person who is responsible for the management of a relevant investment fund.",
+    "quote": "a person who is responsible for the management of a relevant investment fund"
+   },
+   {
+    "requirement": "Section 165A applies to a service provider who provides any service to an authorised person.",
+    "quote": "a person (a “service provider”) who provides any service to an authorised person"
+   },
+   {
+    "requirement": "Section 165A applies to a person prescribed, or of a description prescribed, by an order made by the Treasury.",
+    "quote": "a person prescribed by an order made by the Treasury or any person of a description prescribed by such an order"
+   },
+   {
+    "requirement": "Section 165A applies to a person who is connected with any person to whom the section applies under paragraphs (a) to (d) of subsection (2).",
+    "quote": "a person who is connected with a person to whom this section applies as a result of any of the above paragraphs"
+   },
+   {
+    "requirement": "Section 165A applies only to information and documents that the PRA considers are, or might be, relevant to the stability of one or more aspects of the UK financial system, and information and documents reasonably required by the Bank of England in connection with the exercise of its functions in pursuance of its financial stability objective.",
+    "quote": "This section applies only to (a) information and documents that the PRA considers are, or might be, relevant to the stability of one or more aspects of the UK financial system , and (b) information and documents reasonably required by the Bank of England in connection with the exercise by the Bank of its functions in pursuance of its financial stability objective"
+   },
+   {
+    "requirement": "A notice under section 165A may be given to a service provider, or to a person connected with a service provider, only if the PRA considers that the service, the way it or any part of it is provided, or any failure to provide the service or any part of it, poses or would be likely to pose a serious threat to the stability of the UK financial system.",
+    "quote": "A notice may be given to a service provider, or to a person who is connected with a service provider, only if the PRA considers that— (a) the service or the way in which it (or any part of it) is provided, or (b) any failure to provide the service (or any part of it), poses, or would be likely to pose, a serious threat to the stability of the UK financial system"
+   },
+   {
+    "requirement": "Information or documents required under section 165A must be provided or produced before the end of such reasonable period as may be specified and at such place as may be specified.",
+    "quote": "Information or documents required under this section must be provided or produced— (a) before the end of such reasonable period as may be specified; and (b) at such place as may be specified"
+   },
+   {
+    "requirement": "The PRA may require any information provided under section 165A to be provided in such form as the PRA may reasonably require.",
+    "quote": "The PRA may require any information provided under this section to be provided in such form as it may reasonably require"
+   },
+   {
+    "requirement": "The PRA may require any information provided under section 165A, whether in a document or otherwise, to be verified in such manner as the PRA may reasonably require.",
+    "quote": "The PRA may require— (a) any information provided, whether in a document or otherwise, to be verified in such manner as it may reasonably require"
+   },
+   {
+    "requirement": "The PRA may require any document produced under section 165A to be authenticated in such manner as the PRA may reasonably require.",
+    "quote": "The PRA may require— (a) any information provided, whether in a document or otherwise, to be verified in such manner as it may reasonably require; or (b) any document produced to be authenticated in such manner as it may reasonably require"
+   },
+   {
+    "requirement": "In section 165A, management includes any of the activities listed in Schedule 6 to the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001.",
+    "quote": "“management” includes any of the activities listed in Schedule 6 to the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001"
+   },
+   {
+    "requirement": "In section 165A, a relevant investment fund means an investment fund whose assets consist of or include financial instruments which are traded in the United Kingdom or were issued by a body incorporated in the United Kingdom.",
+    "quote": "“relevant investment fund” means an investment fund whose assets consist of or include financial instruments which— are traded in the United Kingdom; orwere issued by a body incorporated in the United Kingdom"
+   },
+   {
+    "requirement": "In section 165A, service includes facility.",
+    "quote": "“service” includes facility"
+   },
+   {
+    "requirement": "In section 165A, specified means specified in the notice.",
+    "quote": "“specified” means specified in the notice"
+   },
+   {
+    "requirement": "For the purposes of the definition of relevant investment fund, arrangements may constitute an investment fund even if only one person participates in them.",
+    "quote": "arrangements may constitute an investment fund even if there is only one person participating in the arrangements"
+   },
+   {
+    "requirement": "For the purposes of the definition of relevant investment fund, financial instruments has the same meaning as in article 3(1) of the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001.",
+    "quote": "the reference to financial instruments has the same meaning as in the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 (see article 3(1) of that Order)"
+   },
+   {
+    "requirement": "For the purposes of section 165A, a person is connected with another person A if the person is or has at any relevant time been a member of A's group, a controller of A, any other member of a partnership of which A is a member, or a person mentioned in Part 1 of Schedule 15 reading references in that Part to the authorised person as references to A.",
+    "quote": "a person is connected with another person (“A”) if the person is or has at any relevant time been— (a) a member of A's group; (b) a controller of A; (c) any other member of a partnership of which A is a member; or (d) in relation to A, a person mentioned in Part 1 of Schedule 15 (reading references in that Part to the authorised person as references to A)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum number of aspects of the UK financial system to whose stability the information and documents must be considered relevant",
+    "value": "one or more",
+    "quote": "stability of one or more aspects of the UK financial system"
+   },
+   {
+    "what": "Timeframe within which required information or documents must be provided or produced",
+    "value": "such reasonable period as may be specified",
+    "quote": "before the end of such reasonable period as may be specified"
+   },
+   {
+    "what": "Minimum number of persons participating in arrangements that may constitute an investment fund",
+    "value": "one",
+    "quote": "even if there is only one person participating in the arrangements"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The PRA may, by written notice given to a person to whom section 165A applies, require that person to provide specified information or information of a specified description.",
+   "quote": "The PRA may, by notice in writing given to a person to whom this section applies, require the person— (a) to provide specified information or information of a specified description"
+  },
+  {
+   "requirement": "The PRA may, by written notice given to a person to whom section 165A applies, require that person to produce specified documents or documents of a specified description.",
+   "quote": "require the person— (a) to provide specified information or information of a specified description; or (b) to produce specified documents or documents of a specified description"
+  },
+  {
+   "requirement": "Section 165A applies to a person who has a legal or beneficial interest in any of the assets of a relevant investment fund.",
+   "quote": "a person who has a legal or beneficial interest in any of the assets of a relevant investment fund"
+  },
+  {
+   "requirement": "Section 165A applies to a person who is responsible for the management of a relevant investment fund.",
+   "quote": "a person who is responsible for the management of a relevant investment fund"
+  },
+  {
+   "requirement": "Section 165A applies to a service provider who provides any service to an authorised person.",
+   "quote": "a person (a “service provider”) who provides any service to an authorised person"
+  },
+  {
+   "requirement": "Section 165A applies to a person prescribed, or of a description prescribed, by an order made by the Treasury.",
+   "quote": "a person prescribed by an order made by the Treasury or any person of a description prescribed by such an order"
+  },
+  {
+   "requirement": "Section 165A applies to a person who is connected with any person to whom the section applies under paragraphs (a) to (d) of subsection (2).",
+   "quote": "a person who is connected with a person to whom this section applies as a result of any of the above paragraphs"
+  },
+  {
+   "requirement": "Section 165A applies only to information and documents that the PRA considers are, or might be, relevant to the stability of one or more aspects of the UK financial system, and information and documents reasonably required by the Bank of England in connection with the exercise of its functions in pursuance of its financial stability objective.",
+   "quote": "This section applies only to (a) information and documents that the PRA considers are, or might be, relevant to the stability of one or more aspects of the UK financial system , and (b) information and documents reasonably required by the Bank of England in connection with the exercise by the Bank of its functions in pursuance of its financial stability objective"
+  },
+  {
+   "requirement": "A notice under section 165A may be given to a service provider, or to a person connected with a service provider, only if the PRA considers that the service, the way it or any part of it is provided, or any failure to provide the service or any part of it, poses or would be likely to pose a serious threat to the stability of the UK financial system.",
+   "quote": "A notice may be given to a service provider, or to a person who is connected with a service provider, only if the PRA considers that— (a) the service or the way in which it (or any part of it) is provided, or (b) any failure to provide the service (or any part of it), poses, or would be likely to pose, a serious threat to the stability of the UK financial system"
+  },
+  {
+   "requirement": "Information or documents required under section 165A must be provided or produced before the end of such reasonable period as may be specified and at such place as may be specified.",
+   "quote": "Information or documents required under this section must be provided or produced— (a) before the end of such reasonable period as may be specified; and (b) at such place as may be specified"
+  },
+  {
+   "requirement": "The PRA may require any information provided under section 165A to be provided in such form as the PRA may reasonably require.",
+   "quote": "The PRA may require any information provided under this section to be provided in such form as it may reasonably require"
+  },
+  {
+   "requirement": "The PRA may require any information provided under section 165A, whether in a document or otherwise, to be verified in such manner as the PRA may reasonably require.",
+   "quote": "The PRA may require— (a) any information provided, whether in a document or otherwise, to be verified in such manner as it may reasonably require"
+  },
+  {
+   "requirement": "The PRA may require any document produced under section 165A to be authenticated in such manner as the PRA may reasonably require.",
+   "quote": "The PRA may require— (a) any information provided, whether in a document or otherwise, to be verified in such manner as it may reasonably require; or (b) any document produced to be authenticated in such manner as it may reasonably require"
+  },
+  {
+   "requirement": "In section 165A, management includes any of the activities listed in Schedule 6 to the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001.",
+   "quote": "“management” includes any of the activities listed in Schedule 6 to the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001"
+  },
+  {
+   "requirement": "In section 165A, a relevant investment fund means an investment fund whose assets consist of or include financial instruments which are traded in the United Kingdom or were issued by a body incorporated in the United Kingdom.",
+   "quote": "“relevant investment fund” means an investment fund whose assets consist of or include financial instruments which— are traded in the United Kingdom; orwere issued by a body incorporated in the United Kingdom"
+  },
+  {
+   "requirement": "In section 165A, service includes facility.",
+   "quote": "“service” includes facility"
+  },
+  {
+   "requirement": "In section 165A, specified means specified in the notice.",
+   "quote": "“specified” means specified in the notice"
+  },
+  {
+   "requirement": "For the purposes of the definition of relevant investment fund, arrangements may constitute an investment fund even if only one person participates in them.",
+   "quote": "arrangements may constitute an investment fund even if there is only one person participating in the arrangements"
+  },
+  {
+   "requirement": "For the purposes of the definition of relevant investment fund, financial instruments has the same meaning as in article 3(1) of the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001.",
+   "quote": "the reference to financial instruments has the same meaning as in the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 (see article 3(1) of that Order)"
+  },
+  {
+   "requirement": "For the purposes of section 165A, a person is connected with another person A if the person is or has at any relevant time been a member of A's group, a controller of A, any other member of a partnership of which A is a member, or a person mentioned in Part 1 of Schedule 15 reading references in that Part to the authorised person as references to A.",
+   "quote": "a person is connected with another person (“A”) if the person is or has at any relevant time been— (a) a member of A's group; (b) a controller of A; (c) any other member of a partnership of which A is a member; or (d) in relation to A, a person mentioned in Part 1 of Schedule 15 (reading references in that Part to the authorised person as references to A)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 20,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

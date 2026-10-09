@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2002/9/s100@current",
+ "section": "uk/ukpga/2002/9/s100",
+ "version": "current",
+ "source_sha256": "fc448e7f56d414f1946de8af3b3d049d6a1879c833ab753f1889728fd9d79eeb",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any function of the registrar may be carried out by any member of the land registry who is authorised for that purpose by the registrar.",
+    "quote": "Any function of the registrar may be carried out by any member of the land registry who is authorised for the purpose by the registrar"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision concerning the carrying out of functions during any vacancy in the office of registrar.",
+    "quote": "The Secretary of State may by regulations make provision about the carrying out of functions during any vacancy in the office of registrar"
+   },
+   {
+    "requirement": "Subsections (1) and (2) of section 100 apply to all functions of the registrar, whether or not those functions are conferred by the Land Registration Act 2002.",
+    "quote": "Subsections (1) and (2) apply to all functions of the registrar, whether or not conferred by this Act"
+   },
+   {
+    "requirement": "The Secretary of State may by order designate a particular office of the land registry as the proper office for receiving applications or any specified description of application.",
+    "quote": "The Secretary of State may by order designate a particular office of the land registry as the proper office for the receipt of applications or a specified description of application"
+   },
+   {
+    "requirement": "The registrar may prepare and publish any forms and directions that the registrar considers necessary or desirable for facilitating the conduct of the business of registration under the Land Registration Act 2002.",
+    "quote": "The registrar may prepare and publish such forms and directions as he considers necessary or desirable for facilitating the conduct of the business of registration under this Act"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any function of the registrar may be carried out by any member of the land registry who is authorised for that purpose by the registrar.",
+   "quote": "Any function of the registrar may be carried out by any member of the land registry who is authorised for the purpose by the registrar"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision concerning the carrying out of functions during any vacancy in the office of registrar.",
+   "quote": "The Secretary of State may by regulations make provision about the carrying out of functions during any vacancy in the office of registrar"
+  },
+  {
+   "requirement": "Subsections (1) and (2) of section 100 apply to all functions of the registrar, whether or not those functions are conferred by the Land Registration Act 2002.",
+   "quote": "Subsections (1) and (2) apply to all functions of the registrar, whether or not conferred by this Act"
+  },
+  {
+   "requirement": "The Secretary of State may by order designate a particular office of the land registry as the proper office for receiving applications or any specified description of application.",
+   "quote": "The Secretary of State may by order designate a particular office of the land registry as the proper office for the receipt of applications or a specified description of application"
+  },
+  {
+   "requirement": "The registrar may prepare and publish any forms and directions that the registrar considers necessary or desirable for facilitating the conduct of the business of registration under the Land Registration Act 2002.",
+   "quote": "The registrar may prepare and publish such forms and directions as he considers necessary or desirable for facilitating the conduct of the business of registration under this Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

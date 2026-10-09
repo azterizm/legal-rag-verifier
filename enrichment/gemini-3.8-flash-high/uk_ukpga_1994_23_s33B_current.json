@@ -1,0 +1,107 @@
+{
+ "key": "uk/ukpga/1994/23/s33B@current",
+ "section": "uk/ukpga/1994/23/s33B",
+ "version": "current",
+ "source_sha256": "60026763cf4f31de0a44c5a83c3f6cc5c5921bd1eb264f5682d9b22d998f2f97",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 33B applies where VAT is chargeable on the supply of goods or services to, or on the importation of goods by, the proprietor of an Academy, and the supply or importation is not for the purposes of any business carried on by that proprietor.",
+    "quote": "VAT is chargeable on the supply of goods or services to, or on the importation of goods by, the proprietor of an Academy, and (b) the supply... or importation is not for the purposes of any business carried on by the proprietor of the Academy"
+   },
+   {
+    "requirement": "The Commissioners must refund the amount of chargeable VAT to the proprietor of an Academy upon a claim made by that proprietor at such time and in such form and manner as the Commissioners may determine.",
+    "quote": "The Commissioners shall, on a claim made by the proprietor of the Academy at such time and in such form and manner as the Commissioners may determine, refund to that proprietor the amount of VAT so chargeable."
+   },
+   {
+    "requirement": "Subject to subsection (4), a claim for a VAT refund by the proprietor of an Academy must be made before the end of the period of 4 years beginning with the day on which the supply is made or the importation takes place.",
+    "quote": "Subject to subsection (4), the claim must be made before the end of the period of 4 years beginning with the day on which the supply is made or the ... importation takes place."
+   },
+   {
+    "requirement": "If the Commissioners so determine, the claim period for the proprietor of an Academy is such shorter period beginning with the day the supply is made or the importation takes place as the Commissioners may determine.",
+    "quote": "If the Commissioners so determine, the claim period is such shorter period beginning with that day as the Commissioners may determine."
+   },
+   {
+    "requirement": "Subsection (6) applies where goods or services supplied to or imported by the proprietor of an Academy cannot be conveniently distinguished from goods or services supplied to or imported by it for the purpose of a business carried on by that proprietor.",
+    "quote": "Subsection (6) applies where goods or services supplied to, ... or imported by, the proprietor of the Academy cannot be conveniently distinguished from goods or services supplied to, ... or imported by, it for the purpose of a business carried on by that proprietor."
+   },
+   {
+    "requirement": "Where goods or services supplied or imported cannot be conveniently distinguished, the amount refunded to the proprietor of an Academy is the amount remaining after deducting from the whole VAT chargeable such proportion as appears to the Commissioners to be attributable to the carrying on of the business.",
+    "quote": "The amount to be refunded under this section is such amount as remains after deducting from the whole of the VAT chargeable on any supply to, ... or importation by, the proprietor of the Academy such proportion of that VAT as appears to the Commissioners to be attributable to the carrying on of the business."
+   },
+   {
+    "requirement": "References in this section to VAT do not include any VAT that is excluded from credit under section 25 by virtue of an order under section 25(7).",
+    "quote": "References in this section to VAT do not include any VAT which, by virtue of an order under section 25(7), is excluded from credit under section 25."
+   },
+   {
+    "requirement": "References to the proprietor of an Academy apply to the proprietor of the Academy acting in that capacity.",
+    "quote": "references to the proprietor of an Academy are to the proprietor of the Academy acting in that capacity"
+   },
+   {
+    "requirement": "The terms “Academy” and “proprietor” have the same meaning as provided in section 579 of the Education Act 1996.",
+    "quote": "“Academy” and “proprietor” have the same meaning as in the Education Act 1996 (see section 579 of that Act)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the standard maximum period beginning with the day the supply is made or importation takes place within which a claim must be made",
+    "value": "4 years",
+    "quote": "period of 4 years beginning with the day on which the supply is made or the ... importation takes place"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 33B applies where VAT is chargeable on the supply of goods or services to, or on the importation of goods by, the proprietor of an Academy, and the supply or importation is not for the purposes of any business carried on by that proprietor.",
+   "quote": "VAT is chargeable on the supply of goods or services to, or on the importation of goods by, the proprietor of an Academy, and (b) the supply... or importation is not for the purposes of any business carried on by the proprietor of the Academy"
+  },
+  {
+   "requirement": "The Commissioners must refund the amount of chargeable VAT to the proprietor of an Academy upon a claim made by that proprietor at such time and in such form and manner as the Commissioners may determine.",
+   "quote": "The Commissioners shall, on a claim made by the proprietor of the Academy at such time and in such form and manner as the Commissioners may determine, refund to that proprietor the amount of VAT so chargeable."
+  },
+  {
+   "requirement": "Subject to subsection (4), a claim for a VAT refund by the proprietor of an Academy must be made before the end of the period of 4 years beginning with the day on which the supply is made or the importation takes place.",
+   "quote": "Subject to subsection (4), the claim must be made before the end of the period of 4 years beginning with the day on which the supply is made or the ... importation takes place."
+  },
+  {
+   "requirement": "If the Commissioners so determine, the claim period for the proprietor of an Academy is such shorter period beginning with the day the supply is made or the importation takes place as the Commissioners may determine.",
+   "quote": "If the Commissioners so determine, the claim period is such shorter period beginning with that day as the Commissioners may determine."
+  },
+  {
+   "requirement": "Subsection (6) applies where goods or services supplied to or imported by the proprietor of an Academy cannot be conveniently distinguished from goods or services supplied to or imported by it for the purpose of a business carried on by that proprietor.",
+   "quote": "Subsection (6) applies where goods or services supplied to, ... or imported by, the proprietor of the Academy cannot be conveniently distinguished from goods or services supplied to, ... or imported by, it for the purpose of a business carried on by that proprietor."
+  },
+  {
+   "requirement": "Where goods or services supplied or imported cannot be conveniently distinguished, the amount refunded to the proprietor of an Academy is the amount remaining after deducting from the whole VAT chargeable such proportion as appears to the Commissioners to be attributable to the carrying on of the business.",
+   "quote": "The amount to be refunded under this section is such amount as remains after deducting from the whole of the VAT chargeable on any supply to, ... or importation by, the proprietor of the Academy such proportion of that VAT as appears to the Commissioners to be attributable to the carrying on of the business."
+  },
+  {
+   "requirement": "References in this section to VAT do not include any VAT that is excluded from credit under section 25 by virtue of an order under section 25(7).",
+   "quote": "References in this section to VAT do not include any VAT which, by virtue of an order under section 25(7), is excluded from credit under section 25."
+  },
+  {
+   "requirement": "References to the proprietor of an Academy apply to the proprietor of the Academy acting in that capacity.",
+   "quote": "references to the proprietor of an Academy are to the proprietor of the Academy acting in that capacity"
+  },
+  {
+   "requirement": "The terms “Academy” and “proprietor” have the same meaning as provided in section 579 of the Education Act 1996.",
+   "quote": "“Academy” and “proprietor” have the same meaning as in the Education Act 1996 (see section 579 of that Act)."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the standard maximum period beginning with the day the supply is made or importation takes place within which a claim must be made",
+   "value": "4 years",
+   "quote": "period of 4 years beginning with the day on which the supply is made or the ... importation takes place"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

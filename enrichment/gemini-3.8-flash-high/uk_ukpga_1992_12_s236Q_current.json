@@ -1,0 +1,143 @@
+{
+ "key": "uk/ukpga/1992/12/s236Q@current",
+ "section": "uk/ukpga/1992/12/s236Q",
+ "version": "current",
+ "source_sha256": "33bf617563186cf6d827484c3ac638532b803b85cba6bb806d7451ecd2bd8dac",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 236Q applies where a deemed disposal arises under section 71(1) because the trustees of an acquiring settlement become absolutely entitled to settled property as against the transferring trustee.",
+    "quote": "a deemed disposal arises under section 71(1) by reason of the trustees of a settlement (“the acquiring settlement”) becoming absolutely entitled to settled property as against the trustee of that settled property (“the transferring trustee”)"
+   },
+   {
+    "requirement": "Section 236Q applies only where the settled property consists of ordinary share capital of a company.",
+    "quote": "that settled property consists of ordinary share capital of a company"
+   },
+   {
+    "requirement": "Section 236Q applies only where the relief requirements set out in section 236H(4)(za) to (c) and (d) are satisfied.",
+    "quote": "the relief requirements in section 236H(4)(za) to (c) and (d) are met"
+   },
+   {
+    "requirement": "Section 236Q applies only where the transferring trustee makes a claim under section 236Q.",
+    "quote": "the transferring trustee makes a claim under this section"
+   },
+   {
+    "requirement": "Section 17(1), which treats disposals and acquisitions as made at market value, does not apply to the deemed disposal under section 236Q.",
+    "quote": "Section 17(1) (disposals and acquisitions treated as made at market value) does not apply to the disposal"
+   },
+   {
+    "requirement": "The deemed disposal and acquisition by the transferring trustee under section 71(1) are treated for the purposes of the Taxation of Chargeable Gains Act 1992 as made for consideration that secures that neither a gain nor a loss accrues on the disposal.",
+    "quote": "treated for the purposes of this Act as being made for such consideration as to secure that neither a gain nor a loss accrues on the disposal"
+   },
+   {
+    "requirement": "For the purposes of section 236P, the trustees of the acquiring settlement are treated as acquiring the ordinary share capital from the transferring trustee at the time of the deemed disposal in circumstances where section 236H applies.",
+    "quote": "For the purposes of section 236P the trustees of the acquiring settlement are treated as acquiring the ordinary share capital from the transferring trustee, at the time of the deemed disposal, in circumstances where section 236H applies"
+   },
+   {
+    "requirement": "In applying sections 236H(4), 236I to 236P, and 236T for the purposes of section 236Q, references in those provisions to the settlement are to be read as references to the acquiring settlement.",
+    "quote": "references in those provisions to the settlement are to be read as references to the acquiring settlement"
+   },
+   {
+    "requirement": "In applying sections 236H(4), 236I to 236P, and 236T for the purposes of section 236Q, references in those provisions to C are to be read as references to the company whose ordinary share capital forms the settled property.",
+    "quote": "references in those provisions to C are to be read as references to the company mentioned in subsection (1)(b)"
+   },
+   {
+    "requirement": "A claim under section 236Q must include information to identify the acquiring settlement.",
+    "quote": "information to identify the acquiring settlement"
+   },
+   {
+    "requirement": "A claim under section 236Q must include the name of the company whose ordinary share capital is the settled property and the address of its registered office.",
+    "quote": "the name of the company mentioned in subsection (1)(b) and the address of its registered office"
+   },
+   {
+    "requirement": "A claim under section 236Q must include the number of persons who at the time of the disposal are employees of C, or, if C is the principal company of a trading group within the meaning of section 236I(3), any member of that group.",
+    "quote": "the number of persons who at the time of the disposal are employees of— (i) C, or (ii) if C is the principal company of a trading group (within the meaning of section 236I(3)), any member of that group"
+   },
+   {
+    "requirement": "A claim under section 236Q must include the date of the deemed disposal and the number of shares deemed to have been disposed of.",
+    "quote": "the date of the deemed disposal and the number of shares deemed to have been disposed of"
+   },
+   {
+    "requirement": "Where the person making the claim is unable to include the number of employees required by section 236Q(6)(ba) because they cannot ascertain it, that requirement is treated as met if that person has taken all reasonable steps to ascertain that number and the claim contains a statement confirming those steps have been taken.",
+    "quote": "where the person making the claim is unable to include the number of employees in the claim as required by subsection (6)(ba) because they have been unable to ascertain that number, that requirement is to be taken to be met if— (a) the person has taken all reasonable steps to ascertain that number, and— (b) the claim contains a statement that the person has taken such steps"
+   },
+   {
+    "requirement": "Section 236R provides for events that prevent a claim from being made under section 236Q and the circumstances under which such a claim is revoked.",
+    "quote": "Section 236R makes provision about events which prevent a claim being made under this section and circumstances in which a claim is revoked"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 236Q applies where a deemed disposal arises under section 71(1) because the trustees of an acquiring settlement become absolutely entitled to settled property as against the transferring trustee.",
+   "quote": "a deemed disposal arises under section 71(1) by reason of the trustees of a settlement (“the acquiring settlement”) becoming absolutely entitled to settled property as against the trustee of that settled property (“the transferring trustee”)"
+  },
+  {
+   "requirement": "Section 236Q applies only where the settled property consists of ordinary share capital of a company.",
+   "quote": "that settled property consists of ordinary share capital of a company"
+  },
+  {
+   "requirement": "Section 236Q applies only where the relief requirements set out in section 236H(4)(za) to (c) and (d) are satisfied.",
+   "quote": "the relief requirements in section 236H(4)(za) to (c) and (d) are met"
+  },
+  {
+   "requirement": "Section 236Q applies only where the transferring trustee makes a claim under section 236Q.",
+   "quote": "the transferring trustee makes a claim under this section"
+  },
+  {
+   "requirement": "Section 17(1), which treats disposals and acquisitions as made at market value, does not apply to the deemed disposal under section 236Q.",
+   "quote": "Section 17(1) (disposals and acquisitions treated as made at market value) does not apply to the disposal"
+  },
+  {
+   "requirement": "The deemed disposal and acquisition by the transferring trustee under section 71(1) are treated for the purposes of the Taxation of Chargeable Gains Act 1992 as made for consideration that secures that neither a gain nor a loss accrues on the disposal.",
+   "quote": "treated for the purposes of this Act as being made for such consideration as to secure that neither a gain nor a loss accrues on the disposal"
+  },
+  {
+   "requirement": "For the purposes of section 236P, the trustees of the acquiring settlement are treated as acquiring the ordinary share capital from the transferring trustee at the time of the deemed disposal in circumstances where section 236H applies.",
+   "quote": "For the purposes of section 236P the trustees of the acquiring settlement are treated as acquiring the ordinary share capital from the transferring trustee, at the time of the deemed disposal, in circumstances where section 236H applies"
+  },
+  {
+   "requirement": "In applying sections 236H(4), 236I to 236P, and 236T for the purposes of section 236Q, references in those provisions to the settlement are to be read as references to the acquiring settlement.",
+   "quote": "references in those provisions to the settlement are to be read as references to the acquiring settlement"
+  },
+  {
+   "requirement": "In applying sections 236H(4), 236I to 236P, and 236T for the purposes of section 236Q, references in those provisions to C are to be read as references to the company whose ordinary share capital forms the settled property.",
+   "quote": "references in those provisions to C are to be read as references to the company mentioned in subsection (1)(b)"
+  },
+  {
+   "requirement": "A claim under section 236Q must include information to identify the acquiring settlement.",
+   "quote": "information to identify the acquiring settlement"
+  },
+  {
+   "requirement": "A claim under section 236Q must include the name of the company whose ordinary share capital is the settled property and the address of its registered office.",
+   "quote": "the name of the company mentioned in subsection (1)(b) and the address of its registered office"
+  },
+  {
+   "requirement": "A claim under section 236Q must include the number of persons who at the time of the disposal are employees of C, or, if C is the principal company of a trading group within the meaning of section 236I(3), any member of that group.",
+   "quote": "the number of persons who at the time of the disposal are employees of— (i) C, or (ii) if C is the principal company of a trading group (within the meaning of section 236I(3)), any member of that group"
+  },
+  {
+   "requirement": "A claim under section 236Q must include the date of the deemed disposal and the number of shares deemed to have been disposed of.",
+   "quote": "the date of the deemed disposal and the number of shares deemed to have been disposed of"
+  },
+  {
+   "requirement": "Where the person making the claim is unable to include the number of employees required by section 236Q(6)(ba) because they cannot ascertain it, that requirement is treated as met if that person has taken all reasonable steps to ascertain that number and the claim contains a statement confirming those steps have been taken.",
+   "quote": "where the person making the claim is unable to include the number of employees in the claim as required by subsection (6)(ba) because they have been unable to ascertain that number, that requirement is to be taken to be met if— (a) the person has taken all reasonable steps to ascertain that number, and— (b) the claim contains a statement that the person has taken such steps"
+  },
+  {
+   "requirement": "Section 236R provides for events that prevent a claim from being made under section 236Q and the circumstances under which such a claim is revoked.",
+   "quote": "Section 236R makes provision about events which prevent a claim being made under this section and circumstances in which a claim is revoked"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

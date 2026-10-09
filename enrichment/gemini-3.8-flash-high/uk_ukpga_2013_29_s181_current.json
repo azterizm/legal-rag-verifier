@@ -1,0 +1,148 @@
+{
+ "key": "uk/ukpga/2013/29/s181@current",
+ "section": "uk/ukpga/2013/29/s181",
+ "version": "current",
+ "source_sha256": "9aebd5f7a53e9e29a97ce839da640934de07255a2acfe8dbe63527d78b0c2a60",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The table in Schedule 1 to the Tobacco Products Duty Act 1979 (TPDA 1979) is substituted with a new table specifying duty rates for tobacco products.",
+    "quote": "For the table in Schedule 1 to TPDA 1979 substitute"
+   },
+   {
+    "requirement": "The rate of duty on cigarettes is an amount equal to 16.5 per cent of the retail price plus £176.22 per thousand cigarettes.",
+    "quote": "1. CigarettesAn amount equal to 16.5 per cent of the retail price plus £176.22 per thousand cigarettes"
+   },
+   {
+    "requirement": "The rate of duty on cigars is £219.82 per kilogram.",
+    "quote": "2. Cigars£219.82 per kilogram"
+   },
+   {
+    "requirement": "The rate of duty on hand-rolling tobacco is £172.74 per kilogram.",
+    "quote": "3. Hand-rolling tobacco£172.74 per kilogram"
+   },
+   {
+    "requirement": "The rate of duty on other smoking tobacco and chewing tobacco is £96.64 per kilogram.",
+    "quote": "4. Other smoking tobacco and chewing tobacco£96.64 per kilogram"
+   },
+   {
+    "requirement": "The amendment substituting the table in Schedule 1 to TPDA 1979 is treated as having come into force at 6 pm on 20 March 2013.",
+    "quote": "The amendment made by this section is treated as having come into force at 6 pm on 20 March 2013."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Percentage of the retail price payable on cigarettes",
+    "value": "16.5 per cent",
+    "quote": "16.5 per cent of the retail price"
+   },
+   {
+    "what": "Specific duty rate payable per thousand cigarettes",
+    "value": "£176.22",
+    "quote": "£176.22 per thousand cigarettes"
+   },
+   {
+    "what": "Quantity of cigarettes to which the specific duty rate applies",
+    "value": "thousand",
+    "quote": "£176.22 per thousand cigarettes"
+   },
+   {
+    "what": "Duty rate payable per kilogram of cigars",
+    "value": "£219.82",
+    "quote": "£219.82 per kilogram"
+   },
+   {
+    "what": "Duty rate payable per kilogram of hand-rolling tobacco",
+    "value": "£172.74",
+    "quote": "£172.74 per kilogram"
+   },
+   {
+    "what": "Duty rate payable per kilogram of other smoking tobacco and chewing tobacco",
+    "value": "£96.64",
+    "quote": "£96.64 per kilogram"
+   },
+   {
+    "what": "Time at which the amendment is treated as having come into force",
+    "value": "6 pm",
+    "quote": "at 6 pm on 20 March 2013"
+   },
+   {
+    "what": "Date on which the amendment is treated as having come into force",
+    "value": "20 March 2013",
+    "quote": "at 6 pm on 20 March 2013"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The table in Schedule 1 to the Tobacco Products Duty Act 1979 (TPDA 1979) is substituted with a new table specifying duty rates for tobacco products.",
+   "quote": "For the table in Schedule 1 to TPDA 1979 substitute"
+  },
+  {
+   "requirement": "The rate of duty on cigarettes is an amount equal to 16.5 per cent of the retail price plus £176.22 per thousand cigarettes.",
+   "quote": "1. CigarettesAn amount equal to 16.5 per cent of the retail price plus £176.22 per thousand cigarettes"
+  },
+  {
+   "requirement": "The rate of duty on cigars is £219.82 per kilogram.",
+   "quote": "2. Cigars£219.82 per kilogram"
+  },
+  {
+   "requirement": "The rate of duty on hand-rolling tobacco is £172.74 per kilogram.",
+   "quote": "3. Hand-rolling tobacco£172.74 per kilogram"
+  },
+  {
+   "requirement": "The rate of duty on other smoking tobacco and chewing tobacco is £96.64 per kilogram.",
+   "quote": "4. Other smoking tobacco and chewing tobacco£96.64 per kilogram"
+  },
+  {
+   "requirement": "The amendment substituting the table in Schedule 1 to TPDA 1979 is treated as having come into force at 6 pm on 20 March 2013.",
+   "quote": "The amendment made by this section is treated as having come into force at 6 pm on 20 March 2013."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Percentage of the retail price payable on cigarettes",
+   "value": "16.5 per cent",
+   "quote": "16.5 per cent of the retail price"
+  },
+  {
+   "what": "Specific duty rate payable per thousand cigarettes",
+   "value": "£176.22",
+   "quote": "£176.22 per thousand cigarettes"
+  },
+  {
+   "what": "Duty rate payable per kilogram of cigars",
+   "value": "£219.82",
+   "quote": "£219.82 per kilogram"
+  },
+  {
+   "what": "Duty rate payable per kilogram of hand-rolling tobacco",
+   "value": "£172.74",
+   "quote": "£172.74 per kilogram"
+  },
+  {
+   "what": "Duty rate payable per kilogram of other smoking tobacco and chewing tobacco",
+   "value": "£96.64",
+   "quote": "£96.64 per kilogram"
+  },
+  {
+   "what": "Time at which the amendment is treated as having come into force",
+   "value": "6 pm",
+   "quote": "at 6 pm on 20 March 2013"
+  },
+  {
+   "what": "Date on which the amendment is treated as having come into force",
+   "value": "20 March 2013",
+   "quote": "at 6 pm on 20 March 2013"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 8,
+  "thresholds_verified": 7
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "train examples": 4018,
+ "train supported": 1755,
+ "train not_stated": 1850,
+ "train contradicted": 413,
+ "validation examples": 415,
+ "validation not_stated": 197,
+ "validation supported": 172,
+ "validation contradicted": 46,
+ "audit clauses": 500,
+ "audit agree": 410,
+ "audit gemini not_stated / opus55 contradicted": 47,
+ "audit gemini not_stated / opus55 supported": 36,
+ "audit gemini supported / opus55 not_stated": 2,
+ "audit gemini contradicted / opus55 supported": 5
+}

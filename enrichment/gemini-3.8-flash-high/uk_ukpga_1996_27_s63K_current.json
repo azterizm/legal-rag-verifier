@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1996/27/s63K@current",
+ "section": "uk/ukpga/1996/27/s63K",
+ "version": "current",
+ "source_sha256": "7f2290cb171a5e32b0e39cec3dc033b399ff758146eb34f81c331fd2a3565ddd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court before which an arrested person is brought by virtue of a warrant issued under section 63J may remand that person if the matter is not disposed of immediately.",
+    "quote": "if the matter is not then disposed of immediately, remand the person concerned"
+   },
+   {
+    "requirement": "Schedule 5 has effect with specified modifications in relation to the court's powers to remand a person under section 63K.",
+    "quote": "Schedule 5 has effect in relation to the powers of the court to remand a person by virtue of this section but as if the following modifications were made to the Schedule"
+   },
+   {
+    "requirement": "In paragraph 2(1) of Schedule 5, the reference to section 47 must be read as a reference to section 63K.",
+    "quote": "in paragraph 2(1) of Schedule 5, the reference to section 47 is to be read as a reference to this section"
+   },
+   {
+    "requirement": "In paragraph 2(5)(b) of Schedule 5, the reference to section 48(1) must be read as a reference to section 63L(1).",
+    "quote": "in paragraph 2(5)(b) of the Schedule, the reference to section 48(1) is to be read as a reference to section 63L(1)"
+   },
+   {
+    "requirement": "Subsection (5) applies if an individual remanded under section 63K is granted bail under Schedule 5 as modified.",
+    "quote": "Subsection (5) applies if a person remanded under this section is granted bail under Schedule 5 as modified above"
+   },
+   {
+    "requirement": "A person granted bail under Schedule 5 as modified may be required by the relevant judge to comply, either before release on bail or later, with such requirements as appear necessary to the relevant judge to secure that the person does not interfere with witnesses or otherwise obstruct the course of justice.",
+    "quote": "The person may be required by the relevant judge to comply, before release on bail or later, with such requirements as appear to the relevant judge to be necessary to secure that the person does not interfere with witnesses or otherwise obstruct the course of justice."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The court before which an arrested person is brought by virtue of a warrant issued under section 63J may remand that person if the matter is not disposed of immediately.",
+   "quote": "if the matter is not then disposed of immediately, remand the person concerned"
+  },
+  {
+   "requirement": "Schedule 5 has effect with specified modifications in relation to the court's powers to remand a person under section 63K.",
+   "quote": "Schedule 5 has effect in relation to the powers of the court to remand a person by virtue of this section but as if the following modifications were made to the Schedule"
+  },
+  {
+   "requirement": "In paragraph 2(1) of Schedule 5, the reference to section 47 must be read as a reference to section 63K.",
+   "quote": "in paragraph 2(1) of Schedule 5, the reference to section 47 is to be read as a reference to this section"
+  },
+  {
+   "requirement": "In paragraph 2(5)(b) of Schedule 5, the reference to section 48(1) must be read as a reference to section 63L(1).",
+   "quote": "in paragraph 2(5)(b) of the Schedule, the reference to section 48(1) is to be read as a reference to section 63L(1)"
+  },
+  {
+   "requirement": "Subsection (5) applies if an individual remanded under section 63K is granted bail under Schedule 5 as modified.",
+   "quote": "Subsection (5) applies if a person remanded under this section is granted bail under Schedule 5 as modified above"
+  },
+  {
+   "requirement": "A person granted bail under Schedule 5 as modified may be required by the relevant judge to comply, either before release on bail or later, with such requirements as appear necessary to the relevant judge to secure that the person does not interfere with witnesses or otherwise obstruct the course of justice.",
+   "quote": "The person may be required by the relevant judge to comply, before release on bail or later, with such requirements as appear to the relevant judge to be necessary to secure that the person does not interfere with witnesses or otherwise obstruct the course of justice."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

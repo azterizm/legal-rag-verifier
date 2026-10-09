@@ -1,0 +1,129 @@
+{
+ "key": "uk/ukpga/2013/29/s117@current",
+ "section": "uk/ukpga/2013/29/s117",
+ "version": "current",
+ "source_sha256": "39b8203b39873e61c3a758fbfe8870d2449503803449aa73f9eb7fe3c2965a19",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Two parts of a building are linked dwellings if each part counts as a dwelling, private access exists between them, they are not together used or suitable for use as a single dwelling, and both the common ownership condition and the use condition are satisfied.",
+    "quote": "Two parts of a building are “linked dwellings” if— (a) each of them counts as a dwelling, (b) there is private access between the two dwellings, (c) the two parts of the building are not (together) used or suitable for use as a single dwelling, and (d) the common ownership condition and the use condition are met."
+   },
+   {
+    "requirement": "The common ownership condition is met where a company holds an entitlement to a chargeable interest in one dwelling and that company or a connected person holds an entitlement to a chargeable interest in the other dwelling.",
+    "quote": "a company is entitled to a chargeable interest in one of the dwellings, and the company or a person connected with the company is entitled to a chargeable interest in the other dwelling"
+   },
+   {
+    "requirement": "The common ownership condition is alternatively met where a chargeable interest in one dwelling is held for the purposes of a collective investment scheme and a chargeable interest in the other dwelling is held for the purposes of that same collective investment scheme.",
+    "quote": "a chargeable interest in one of the dwellings is held for the purposes of a collective investment scheme, and a chargeable interest in the other dwelling is held for the purposes of the same collective investment scheme"
+   },
+   {
+    "requirement": "The common ownership condition applies regardless of whether the chargeable interests in the dwellings are held under the same title.",
+    "quote": "It does not matter whether or not the interests are held for the same title."
+   },
+   {
+    "requirement": "If two parts of a building constitute linked dwellings on a day in a chargeable period, this Part applies to the relevant chargeable interests as if the two parts were suitable for use as a single dwelling on that day.",
+    "quote": "this Part has effect in relation to the interests mentioned in paragraph (a) or (as the case may be) (b) of subsection (2) as if the two parts were, on the day in question, suitable for use as a single dwelling."
+   },
+   {
+    "requirement": "The single-dwelling deeming rule does not apply if the day in question is relievable in respect of a relevant chargeable interest under any of the relief provisions specified in section 117(5).",
+    "quote": "the day in question is, in relation to a chargeable interest mentioned in subsection (2)(a) or (as the case may be) (2)(b), relievable by virtue of a provision mentioned in subsection (5)"
+   },
+   {
+    "requirement": "The single-dwelling deeming rule does not apply where corporate ownership applies if the ownership condition is treated under section 151 (charitable companies) as not being met on that day for either chargeable interest.",
+    "quote": "(in a case where paragraph (a) of subsection (2) applies) the ownership condition is, by virtue of section 151 (charitable companies), regarded as not being met on that day with respect to one or other of the chargeable interests mentioned in that paragraph."
+   },
+   {
+    "requirement": "The relief provisions that prevent the single-dwelling deeming rule from applying are section 133, section 134, section 137, section 138, section 139, section 141, section 143, section 144A, section 145, section 147A, section 148, and section 150.",
+    "quote": "Those provisions are— section 133 (property rental businesses);section 134 (rental property: preparation for sale etc);section 137 (dwellings opened to the public);section 138 (property developers);section 139 (property developers: exchange of dwellings);section 141 (property traders);section 143 (financial institutions acquiring dwellings in the course of lending); section 144A (regulated home reversion plans); section 145 (occupation by employees or partners of a qualifying trade or property rental business ); section 147A (caretaker flat owned by management company); section 148 (farmhouses);section 150 (providers of social housing)."
+   },
+   {
+    "requirement": "A person connected with a company excludes any public body as defined in section 153 and any body established for national purposes listed in section 154(2).",
+    "quote": "The reference in subsection (2)(a) to a person connected with the company does not include a public body (as defined in section 153) or a body listed in section 154(2) (bodies established for national purposes)."
+   },
+   {
+    "requirement": "If two dwellings in a building are treated under section 117 as suitable for use as a single dwelling, and one of those dwellings and a third dwelling in the building are also so treated, all three dwellings (and any further dwellings linked in the same way) are treated as suitable for use as a single dwelling.",
+    "quote": "If two dwellings in a building (dwelling A and dwelling B) are treated under this section as suitable for use as a single dwelling, and dwelling B and a third dwelling in the building (“dwelling C”) are treated under this section as suitable for use as a single dwelling, all three are treated as suitable for use as a single dwelling (and so on)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Number of parts of a building required to constitute linked dwellings",
+    "value": "Two",
+    "quote": "Two parts of a building are “linked dwellings” if—"
+   },
+   {
+    "what": "Number of dwellings in which a chargeable interest is held under each limb of the common ownership test",
+    "value": "one",
+    "quote": "a company is entitled to a chargeable interest in one of the dwellings"
+   },
+   {
+    "what": "Period of time on which linked dwellings status and relief eligibility are evaluated",
+    "value": "a day",
+    "quote": "on a day in a chargeable period (“the day in question”)"
+   },
+   {
+    "what": "Ordinal count of an additional dwelling in an aggregation chain",
+    "value": "third",
+    "quote": "a third dwelling in the building (“dwelling C”)"
+   },
+   {
+    "what": "Number of aggregated dwellings treated together as suitable for use as a single dwelling",
+    "value": "three",
+    "quote": "all three are treated as suitable for use as a single dwelling"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Two parts of a building are linked dwellings if each part counts as a dwelling, private access exists between them, they are not together used or suitable for use as a single dwelling, and both the common ownership condition and the use condition are satisfied.",
+   "quote": "Two parts of a building are “linked dwellings” if— (a) each of them counts as a dwelling, (b) there is private access between the two dwellings, (c) the two parts of the building are not (together) used or suitable for use as a single dwelling, and (d) the common ownership condition and the use condition are met."
+  },
+  {
+   "requirement": "The common ownership condition is met where a company holds an entitlement to a chargeable interest in one dwelling and that company or a connected person holds an entitlement to a chargeable interest in the other dwelling.",
+   "quote": "a company is entitled to a chargeable interest in one of the dwellings, and the company or a person connected with the company is entitled to a chargeable interest in the other dwelling"
+  },
+  {
+   "requirement": "The common ownership condition is alternatively met where a chargeable interest in one dwelling is held for the purposes of a collective investment scheme and a chargeable interest in the other dwelling is held for the purposes of that same collective investment scheme.",
+   "quote": "a chargeable interest in one of the dwellings is held for the purposes of a collective investment scheme, and a chargeable interest in the other dwelling is held for the purposes of the same collective investment scheme"
+  },
+  {
+   "requirement": "The common ownership condition applies regardless of whether the chargeable interests in the dwellings are held under the same title.",
+   "quote": "It does not matter whether or not the interests are held for the same title."
+  },
+  {
+   "requirement": "If two parts of a building constitute linked dwellings on a day in a chargeable period, this Part applies to the relevant chargeable interests as if the two parts were suitable for use as a single dwelling on that day.",
+   "quote": "this Part has effect in relation to the interests mentioned in paragraph (a) or (as the case may be) (b) of subsection (2) as if the two parts were, on the day in question, suitable for use as a single dwelling."
+  },
+  {
+   "requirement": "The single-dwelling deeming rule does not apply if the day in question is relievable in respect of a relevant chargeable interest under any of the relief provisions specified in section 117(5).",
+   "quote": "the day in question is, in relation to a chargeable interest mentioned in subsection (2)(a) or (as the case may be) (2)(b), relievable by virtue of a provision mentioned in subsection (5)"
+  },
+  {
+   "requirement": "The single-dwelling deeming rule does not apply where corporate ownership applies if the ownership condition is treated under section 151 (charitable companies) as not being met on that day for either chargeable interest.",
+   "quote": "(in a case where paragraph (a) of subsection (2) applies) the ownership condition is, by virtue of section 151 (charitable companies), regarded as not being met on that day with respect to one or other of the chargeable interests mentioned in that paragraph."
+  },
+  {
+   "requirement": "The relief provisions that prevent the single-dwelling deeming rule from applying are section 133, section 134, section 137, section 138, section 139, section 141, section 143, section 144A, section 145, section 147A, section 148, and section 150.",
+   "quote": "Those provisions are— section 133 (property rental businesses);section 134 (rental property: preparation for sale etc);section 137 (dwellings opened to the public);section 138 (property developers);section 139 (property developers: exchange of dwellings);section 141 (property traders);section 143 (financial institutions acquiring dwellings in the course of lending); section 144A (regulated home reversion plans); section 145 (occupation by employees or partners of a qualifying trade or property rental business ); section 147A (caretaker flat owned by management company); section 148 (farmhouses);section 150 (providers of social housing)."
+  },
+  {
+   "requirement": "A person connected with a company excludes any public body as defined in section 153 and any body established for national purposes listed in section 154(2).",
+   "quote": "The reference in subsection (2)(a) to a person connected with the company does not include a public body (as defined in section 153) or a body listed in section 154(2) (bodies established for national purposes)."
+  },
+  {
+   "requirement": "If two dwellings in a building are treated under section 117 as suitable for use as a single dwelling, and one of those dwellings and a third dwelling in the building are also so treated, all three dwellings (and any further dwellings linked in the same way) are treated as suitable for use as a single dwelling.",
+   "quote": "If two dwellings in a building (dwelling A and dwelling B) are treated under this section as suitable for use as a single dwelling, and dwelling B and a third dwelling in the building (“dwelling C”) are treated under this section as suitable for use as a single dwelling, all three are treated as suitable for use as a single dwelling (and so on)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "key": "uk/ukpga/1996/40/s4@current",
+ "section": "uk/ukpga/1996/40/s4",
+ "version": "current",
+ "source_sha256": "029a2ef1af5dc1b8475f2344bd6eaf03effc7cd50efc116d4f9ba3690e70e330",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An adjoining owner who has been served with a party structure notice may serve on the building owner a counter notice.",
+    "quote": "adjoining owner may, having been served with a party structure notice serve on the building owner a notice (in this Act referred to as a “counter notice”)"
+   },
+   {
+    "requirement": "In respect of a party fence wall or party structure, an adjoining owner may set out in a counter notice a requirement that the building owner build in or on the wall or structure such chimney copings, breasts, jambs or flues, or such piers or recesses or other like works, as may reasonably be required for the convenience of the adjoining owner.",
+    "quote": "in respect of a party fence wall or party structure, a requirement that the building owner build in or on the wall or structure to which the notice relates such chimney copings, breasts, jambs or flues, or such piers or recesses or other like works, as may reasonably be required for the convenience of the adjoining owner"
+   },
+   {
+    "requirement": "In respect of special foundations to which the adjoining owner consents under section 7(4), an adjoining owner may set out in a counter notice a requirement that the special foundations be placed at a specified greater depth than that proposed by the building owner, be constructed of sufficient strength to bear the load to be carried by columns of any intended building of the adjoining owner, or both.",
+    "quote": "in respect of special foundations to which the adjoining owner consents under section 7(4) below, a requirement that the special foundations— (i) be placed at a specified greater depth than that proposed by the building owner; or (ii) be constructed of sufficient strength to bear the load to be carried by columns of any intended building of the adjoining owner, or both"
+   },
+   {
+    "requirement": "A counter notice served by an adjoining owner must specify the works required to be executed and must be accompanied by plans, sections and particulars of such works.",
+    "quote": "specify the works required by the notice to be executed and shall be accompanied by plans, sections and particulars of such works"
+   },
+   {
+    "requirement": "A counter notice must be served within the period of one month beginning with the day on which the party structure notice is served.",
+    "quote": "be served within the period of one month beginning with the day on which the party structure notice is served"
+   },
+   {
+    "requirement": "A building owner who has been served with a counter notice must comply with the requirements of that counter notice, subject to specified statutory exceptions.",
+    "quote": "building owner on whom a counter notice has been served shall comply with the requirements of the counter notice"
+   },
+   {
+    "requirement": "A building owner is not required to comply with the requirements of a counter notice if the execution of the works required by the counter notice would be injurious to the building owner.",
+    "quote": "unless the execution of the works required by the counter notice would— (a) be injurious to him"
+   },
+   {
+    "requirement": "A building owner is not required to comply with the requirements of a counter notice if the execution of the works required by the counter notice would cause unnecessary inconvenience to the building owner.",
+    "quote": "cause unnecessary inconvenience to him"
+   },
+   {
+    "requirement": "A building owner is not required to comply with the requirements of a counter notice if the execution of the works required by the counter notice would cause unnecessary delay in the execution of the works pursuant to the party structure notice.",
+    "quote": "cause unnecessary delay in the execution of the works pursuant to the party structure notice"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Period within which an adjoining owner must serve a counter notice following service of the party structure notice",
+    "value": "one month",
+    "quote": "within the period of one month beginning with the day on which the party structure notice is served"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An adjoining owner who has been served with a party structure notice may serve on the building owner a counter notice.",
+   "quote": "adjoining owner may, having been served with a party structure notice serve on the building owner a notice (in this Act referred to as a “counter notice”)"
+  },
+  {
+   "requirement": "In respect of a party fence wall or party structure, an adjoining owner may set out in a counter notice a requirement that the building owner build in or on the wall or structure such chimney copings, breasts, jambs or flues, or such piers or recesses or other like works, as may reasonably be required for the convenience of the adjoining owner.",
+   "quote": "in respect of a party fence wall or party structure, a requirement that the building owner build in or on the wall or structure to which the notice relates such chimney copings, breasts, jambs or flues, or such piers or recesses or other like works, as may reasonably be required for the convenience of the adjoining owner"
+  },
+  {
+   "requirement": "In respect of special foundations to which the adjoining owner consents under section 7(4), an adjoining owner may set out in a counter notice a requirement that the special foundations be placed at a specified greater depth than that proposed by the building owner, be constructed of sufficient strength to bear the load to be carried by columns of any intended building of the adjoining owner, or both.",
+   "quote": "in respect of special foundations to which the adjoining owner consents under section 7(4) below, a requirement that the special foundations— (i) be placed at a specified greater depth than that proposed by the building owner; or (ii) be constructed of sufficient strength to bear the load to be carried by columns of any intended building of the adjoining owner, or both"
+  },
+  {
+   "requirement": "A counter notice served by an adjoining owner must specify the works required to be executed and must be accompanied by plans, sections and particulars of such works.",
+   "quote": "specify the works required by the notice to be executed and shall be accompanied by plans, sections and particulars of such works"
+  },
+  {
+   "requirement": "A counter notice must be served within the period of one month beginning with the day on which the party structure notice is served.",
+   "quote": "be served within the period of one month beginning with the day on which the party structure notice is served"
+  },
+  {
+   "requirement": "A building owner who has been served with a counter notice must comply with the requirements of that counter notice, subject to specified statutory exceptions.",
+   "quote": "building owner on whom a counter notice has been served shall comply with the requirements of the counter notice"
+  },
+  {
+   "requirement": "A building owner is not required to comply with the requirements of a counter notice if the execution of the works required by the counter notice would be injurious to the building owner.",
+   "quote": "unless the execution of the works required by the counter notice would— (a) be injurious to him"
+  },
+  {
+   "requirement": "A building owner is not required to comply with the requirements of a counter notice if the execution of the works required by the counter notice would cause unnecessary inconvenience to the building owner.",
+   "quote": "cause unnecessary inconvenience to him"
+  },
+  {
+   "requirement": "A building owner is not required to comply with the requirements of a counter notice if the execution of the works required by the counter notice would cause unnecessary delay in the execution of the works pursuant to the party structure notice.",
+   "quote": "cause unnecessary delay in the execution of the works pursuant to the party structure notice"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period within which an adjoining owner must serve a counter notice following service of the party structure notice",
+   "value": "one month",
+   "quote": "within the period of one month beginning with the day on which the party structure notice is served"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "key": "uk/ukpga/2006/35/s7@current",
+ "section": "uk/ukpga/2006/35/s7",
+ "version": "current",
+ "source_sha256": "a9d316c8fd56a579cf218172c28d672da9514cc8acc3b138c7f1ebcd3ec10163",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if that person makes, adapts, supplies, or offers to supply any article knowing that it is designed or adapted for use in the course of or in connection with fraud.",
+    "quote": "A person is guilty of an offence if he makes, adapts, supplies or offers to supply any article— (a) knowing that it is designed or adapted for use in the course of or in connection with fraud"
+   },
+   {
+    "requirement": "A person commits an offence if that person makes, adapts, supplies, or offers to supply any article intending it to be used to commit, or assist in the commission of, fraud.",
+    "quote": "A person is guilty of an offence if he makes, adapts, supplies or offers to supply any article— (b) intending it to be used to commit, or assist in the commission of, fraud."
+   },
+   {
+    "requirement": "A person guilty of an offence under section 7 is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, or to a fine not exceeding the statutory maximum, or to both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 7 is liable on conviction on indictment to imprisonment for a term not exceeding 10 years, or to a fine, or to both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding 10 years or to a fine (or to both)"
+   },
+   {
+    "requirement": "In relation to Northern Ireland, subsection (2)(a) applies as if the reference to 12 months were a reference to 6 months.",
+    "quote": "Subsection (2)(a) applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "10 years",
+    "quote": "imprisonment for a term not exceeding 10 years"
+   },
+   {
+    "what": "the baseline period referred to in subsection (2)(a) for Northern Ireland application",
+    "value": "12 months",
+    "quote": "reference to 12 months"
+   },
+   {
+    "what": "the substituted period of reference for Northern Ireland application under subsection (2)(a)",
+    "value": "6 months",
+    "quote": "reference to 6 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if that person makes, adapts, supplies, or offers to supply any article knowing that it is designed or adapted for use in the course of or in connection with fraud.",
+   "quote": "A person is guilty of an offence if he makes, adapts, supplies or offers to supply any article— (a) knowing that it is designed or adapted for use in the course of or in connection with fraud"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 7 is liable on summary conviction to imprisonment for a term not exceeding the general limit in a magistrates’ court, or to a fine not exceeding the statutory maximum, or to both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding the general limit in a magistrates’ court or to a fine not exceeding the statutory maximum (or to both)"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 7 is liable on conviction on indictment to imprisonment for a term not exceeding 10 years, or to a fine, or to both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding 10 years or to a fine (or to both)"
+  },
+  {
+   "requirement": "In relation to Northern Ireland, subsection (2)(a) applies as if the reference to 12 months were a reference to 6 months.",
+   "quote": "Subsection (2)(a) applies in relation to Northern Ireland as if the reference to 12 months were a reference to 6 months."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "10 years",
+   "quote": "imprisonment for a term not exceeding 10 years"
+  },
+  {
+   "what": "the baseline period referred to in subsection (2)(a) for Northern Ireland application",
+   "value": "12 months",
+   "quote": "reference to 12 months"
+  },
+  {
+   "what": "the substituted period of reference for Northern Ireland application under subsection (2)(a)",
+   "value": "6 months",
+   "quote": "reference to 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 4,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

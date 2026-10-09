@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1987/43/s37@current",
+ "section": "uk/ukpga/1987/43/s37",
+ "version": "current",
+ "source_sha256": "e8c9d32bff20390ca937f731e43d4ad44ebbb1e541ae378612325bd45e71f271",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Commissioners for Her Majesty’s Revenue and Customs may authorise the disclosure of any information obtained or held for the exercise of their functions regarding imported goods to an enforcement authority or an officer of an enforcement authority, provided the Commissioners consider it appropriate for facilitating the exercise of functions conferred on that recipient by or under Part II of the Act, or by or under Part IV of the Act in its application for safety provisions.",
+    "quote": "Commissioners for Her Majesty’s Revenue and Customs may authorise the disclosure to that person of any information obtained or held for the purposes of the exercise by Her Majesty’s Revenue and Customs of their functions in relation to imported goods"
+   },
+   {
+    "requirement": "Subsection (2) applies specifically to an enforcement authority and to any officer of an enforcement authority.",
+    "quote": "applies to an enforcement authority and to any officer of an enforcement authority"
+   },
+   {
+    "requirement": "A disclosure of information made to an enforcement authority or officer under subsection (1) must be carried out in such manner as directed by the Commissioners for Her Majesty’s Revenue and Customs.",
+    "quote": "shall be made in such manner as may be directed by the Commissioners for Her Majesty’s Revenue and Customs"
+   },
+   {
+    "requirement": "A disclosure of information under subsection (1) may be made through persons acting on behalf of the recipient if so directed by the Commissioners for Her Majesty’s Revenue and Customs.",
+    "quote": "may be made through such persons acting on behalf of that person as may be so directed"
+   },
+   {
+    "requirement": "Information may be disclosed to an enforcement authority or officer under subsection (1) regardless of whether the disclosure was requested by or on behalf of that recipient.",
+    "quote": "whether or not the disclosure of the information has been requested by or on behalf of that person"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Commissioners for Her Majesty’s Revenue and Customs may authorise the disclosure of any information obtained or held for the exercise of their functions regarding imported goods to an enforcement authority or an officer of an enforcement authority, provided the Commissioners consider it appropriate for facilitating the exercise of functions conferred on that recipient by or under Part II of the Act, or by or under Part IV of the Act in its application for safety provisions.",
+   "quote": "Commissioners for Her Majesty’s Revenue and Customs may authorise the disclosure to that person of any information obtained or held for the purposes of the exercise by Her Majesty’s Revenue and Customs of their functions in relation to imported goods"
+  },
+  {
+   "requirement": "Subsection (2) applies specifically to an enforcement authority and to any officer of an enforcement authority.",
+   "quote": "applies to an enforcement authority and to any officer of an enforcement authority"
+  },
+  {
+   "requirement": "A disclosure of information made to an enforcement authority or officer under subsection (1) must be carried out in such manner as directed by the Commissioners for Her Majesty’s Revenue and Customs.",
+   "quote": "shall be made in such manner as may be directed by the Commissioners for Her Majesty’s Revenue and Customs"
+  },
+  {
+   "requirement": "A disclosure of information under subsection (1) may be made through persons acting on behalf of the recipient if so directed by the Commissioners for Her Majesty’s Revenue and Customs.",
+   "quote": "may be made through such persons acting on behalf of that person as may be so directed"
+  },
+  {
+   "requirement": "Information may be disclosed to an enforcement authority or officer under subsection (1) regardless of whether the disclosure was requested by or on behalf of that recipient.",
+   "quote": "whether or not the disclosure of the information has been requested by or on behalf of that person"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

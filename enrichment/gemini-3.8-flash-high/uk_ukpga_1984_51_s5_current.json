@@ -1,0 +1,161 @@
+{
+ "key": "uk/ukpga/1984/51/s5@current",
+ "section": "uk/ukpga/1984/51/s5",
+ "version": "current",
+ "source_sha256": "f38f7e8c979fd0f3382110f0b6bb7b6e2a0c780b0b7968301a92507654c429f5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of the Inheritance Tax Act 1984, a person's estate is generally the aggregate of all the property to which that person is beneficially entitled.",
+    "quote": "a person’s estate is the aggregate of all the property to which he is beneficially entitled"
+   },
+   {
+    "requirement": "A person's estate does not include an interest in possession in settled property to which section 71A or 71D applies.",
+    "quote": "does not include an interest in possession in settled property to which section 71A or 71D below applies"
+   },
+   {
+    "requirement": "A person's estate does not include an interest in possession falling within subsection (1A) unless that interest falls within subsection (1B).",
+    "quote": "does not include an interest in possession that falls within subsection (1A) below unless it falls within subsection (1B) below"
+   },
+   {
+    "requirement": "A person's estate immediately before death does not include excluded property.",
+    "quote": "the estate of a person immediately before his death does not include excluded property"
+   },
+   {
+    "requirement": "A person's estate immediately before death does not include a foreign-owned work of art situated in the United Kingdom solely for public display, cleaning, restoration, or any combination of those purposes.",
+    "quote": "a foreign-owned work of art which is situated in the United Kingdom for one or more of the purposes of public display, cleaning and restoration (and for no other purpose)"
+   },
+   {
+    "requirement": "An interest in possession falls within subsection (1A) if it is an interest in possession in settled property that is not property to which section 71A or 71D applies, the person is beneficially entitled to it, the person became beneficially entitled to it on or after 22nd March 2006, and it is not an immediate post-death interest, a disabled person's interest, or a transitional serial interest.",
+    "quote": "An interest in possession falls within this subsection if— (a) it is an interest in possession in settled property, (b) the settled property is not property to which section 71A or 71D below applies, (c) the person is beneficially entitled to the interest in possession, (d) the person became beneficially entitled to the interest in possession on or after 22nd March 2006, and (e) the interest in possession is— (i) not an immediate post-death interest, (ii) not a disabled person's interest, and (iii) not a transitional serial interest."
+   },
+   {
+    "requirement": "An interest in possession falls within subsection (1B) if the person became beneficially entitled to it on or after 9 December 2009 by virtue of a disposition prevented from being a transfer of value by section 10, and the person either has been a long-term UK resident at any time on or after 6 April 2025 while beneficially entitled to it, or became beneficially entitled to it before 6 April 2025 while domiciled in the United Kingdom.",
+    "quote": "An interest in possession falls within this subsection if— (a) the person became beneficially entitled to it on or after 9 December 2009 by virtue of a disposition that was prevented from being a transfer of value by section 10 (no gratuitous benefit), and (b) the person— (i) has been a long-term UK resident at any time on or after 6 April 2025 while beneficially entitled to it, or (ii) became beneficially entitled to it at a time before 6 April 2025 while domiciled in the United Kingdom."
+   },
+   {
+    "requirement": "A person who has a general power enabling that person, or that would enable that person if sui juris, to dispose of or charge money on non-settled property is treated as beneficially entitled to that property or money.",
+    "quote": "A person who has a general power which enables him, or would if he were sui juris enable him, to dispose of any property other than settled property, or to charge money on any property other than settled property, shall be treated as beneficially entitled to the property or money"
+   },
+   {
+    "requirement": "A general power is defined as a power or authority enabling the person by whom it is exercisable to appoint or dispose of property as that person thinks fit.",
+    "quote": "“general power” means a power or authority enabling the person by whom it is exercisable to appoint or dispose of property as he thinks fit"
+   },
+   {
+    "requirement": "A person's liabilities at any time must be taken into account when determining the value of the person's estate at that time, except as otherwise provided by the Act.",
+    "quote": "In determining the value of a person’s estate at any time his liabilities at that time shall be taken into account, except as otherwise provided by this Act."
+   },
+   {
+    "requirement": "When determining the value of a transferor's estate immediately after a transfer of value, the liabilities to be taken into account include the transferor's liability for inheritance tax on the value transferred, but exclude any liability for any other tax or duty resulting from the transfer.",
+    "quote": "The liabilities to be taken into account in determining the value of a transferor’s estate immediately after a transfer of value include his liability for inheritance tax on the value transferred but not his liability (if any) for any other tax or duty resulting from the transfer."
+   },
+   {
+    "requirement": "Except where a liability is imposed by law, a liability incurred by a transferor is taken into account only to the extent that it was incurred for consideration in money or money's worth.",
+    "quote": "Except in the case of a liability imposed by law, a liability incurred by a transferor shall be taken into account only to the extent that it was incurred for a consideration in money or money’s worth."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Date on or after which a person became beneficially entitled to an interest in possession for it to fall within subsection (1A)",
+    "value": "22nd March 2006",
+    "quote": "became beneficially entitled to the interest in possession on or after 22nd March 2006"
+   },
+   {
+    "what": "Date on or after which a person became beneficially entitled to an interest in possession by virtue of a relevant disposition for subsection (1B) to apply",
+    "value": "9 December 2009",
+    "quote": "became beneficially entitled to it on or after 9 December 2009"
+   },
+   {
+    "what": "Date on or after which being a long-term UK resident while beneficially entitled satisfies condition (b)(i) of subsection (1B)",
+    "value": "6 April 2025",
+    "quote": "at any time on or after 6 April 2025 while beneficially entitled to it"
+   },
+   {
+    "what": "Date before which becoming beneficially entitled while domiciled in the United Kingdom satisfies condition (b)(ii) of subsection (1B)",
+    "value": "6 April 2025",
+    "quote": "at a time before 6 April 2025 while domiciled in the United Kingdom"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of the Inheritance Tax Act 1984, a person's estate is generally the aggregate of all the property to which that person is beneficially entitled.",
+   "quote": "a person’s estate is the aggregate of all the property to which he is beneficially entitled"
+  },
+  {
+   "requirement": "A person's estate does not include an interest in possession in settled property to which section 71A or 71D applies.",
+   "quote": "does not include an interest in possession in settled property to which section 71A or 71D below applies"
+  },
+  {
+   "requirement": "A person's estate does not include an interest in possession falling within subsection (1A) unless that interest falls within subsection (1B).",
+   "quote": "does not include an interest in possession that falls within subsection (1A) below unless it falls within subsection (1B) below"
+  },
+  {
+   "requirement": "A person's estate immediately before death does not include excluded property.",
+   "quote": "the estate of a person immediately before his death does not include excluded property"
+  },
+  {
+   "requirement": "A person's estate immediately before death does not include a foreign-owned work of art situated in the United Kingdom solely for public display, cleaning, restoration, or any combination of those purposes.",
+   "quote": "a foreign-owned work of art which is situated in the United Kingdom for one or more of the purposes of public display, cleaning and restoration (and for no other purpose)"
+  },
+  {
+   "requirement": "An interest in possession falls within subsection (1A) if it is an interest in possession in settled property that is not property to which section 71A or 71D applies, the person is beneficially entitled to it, the person became beneficially entitled to it on or after 22nd March 2006, and it is not an immediate post-death interest, a disabled person's interest, or a transitional serial interest.",
+   "quote": "An interest in possession falls within this subsection if— (a) it is an interest in possession in settled property, (b) the settled property is not property to which section 71A or 71D below applies, (c) the person is beneficially entitled to the interest in possession, (d) the person became beneficially entitled to the interest in possession on or after 22nd March 2006, and (e) the interest in possession is— (i) not an immediate post-death interest, (ii) not a disabled person's interest, and (iii) not a transitional serial interest."
+  },
+  {
+   "requirement": "An interest in possession falls within subsection (1B) if the person became beneficially entitled to it on or after 9 December 2009 by virtue of a disposition prevented from being a transfer of value by section 10, and the person either has been a long-term UK resident at any time on or after 6 April 2025 while beneficially entitled to it, or became beneficially entitled to it before 6 April 2025 while domiciled in the United Kingdom.",
+   "quote": "An interest in possession falls within this subsection if— (a) the person became beneficially entitled to it on or after 9 December 2009 by virtue of a disposition that was prevented from being a transfer of value by section 10 (no gratuitous benefit), and (b) the person— (i) has been a long-term UK resident at any time on or after 6 April 2025 while beneficially entitled to it, or (ii) became beneficially entitled to it at a time before 6 April 2025 while domiciled in the United Kingdom."
+  },
+  {
+   "requirement": "A person who has a general power enabling that person, or that would enable that person if sui juris, to dispose of or charge money on non-settled property is treated as beneficially entitled to that property or money.",
+   "quote": "A person who has a general power which enables him, or would if he were sui juris enable him, to dispose of any property other than settled property, or to charge money on any property other than settled property, shall be treated as beneficially entitled to the property or money"
+  },
+  {
+   "requirement": "A general power is defined as a power or authority enabling the person by whom it is exercisable to appoint or dispose of property as that person thinks fit.",
+   "quote": "“general power” means a power or authority enabling the person by whom it is exercisable to appoint or dispose of property as he thinks fit"
+  },
+  {
+   "requirement": "A person's liabilities at any time must be taken into account when determining the value of the person's estate at that time, except as otherwise provided by the Act.",
+   "quote": "In determining the value of a person’s estate at any time his liabilities at that time shall be taken into account, except as otherwise provided by this Act."
+  },
+  {
+   "requirement": "When determining the value of a transferor's estate immediately after a transfer of value, the liabilities to be taken into account include the transferor's liability for inheritance tax on the value transferred, but exclude any liability for any other tax or duty resulting from the transfer.",
+   "quote": "The liabilities to be taken into account in determining the value of a transferor’s estate immediately after a transfer of value include his liability for inheritance tax on the value transferred but not his liability (if any) for any other tax or duty resulting from the transfer."
+  },
+  {
+   "requirement": "Except where a liability is imposed by law, a liability incurred by a transferor is taken into account only to the extent that it was incurred for consideration in money or money's worth.",
+   "quote": "Except in the case of a liability imposed by law, a liability incurred by a transferor shall be taken into account only to the extent that it was incurred for a consideration in money or money’s worth."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Date on or after which a person became beneficially entitled to an interest in possession for it to fall within subsection (1A)",
+   "value": "22nd March 2006",
+   "quote": "became beneficially entitled to the interest in possession on or after 22nd March 2006"
+  },
+  {
+   "what": "Date on or after which a person became beneficially entitled to an interest in possession by virtue of a relevant disposition for subsection (1B) to apply",
+   "value": "9 December 2009",
+   "quote": "became beneficially entitled to it on or after 9 December 2009"
+  },
+  {
+   "what": "Date on or after which being a long-term UK resident while beneficially entitled satisfies condition (b)(i) of subsection (1B)",
+   "value": "6 April 2025",
+   "quote": "at any time on or after 6 April 2025 while beneficially entitled to it"
+  },
+  {
+   "what": "Date before which becoming beneficially entitled while domiciled in the United Kingdom satisfies condition (b)(ii) of subsection (1B)",
+   "value": "6 April 2025",
+   "quote": "at a time before 6 April 2025 while domiciled in the United Kingdom"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 4
+ }
+}

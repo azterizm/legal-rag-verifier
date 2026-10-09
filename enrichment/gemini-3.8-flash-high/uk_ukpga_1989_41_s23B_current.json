@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/1989/41/s23B@current",
+ "section": "uk/ukpga/1989/41/s23B",
+ "version": "current",
+ "source_sha256": "a983d59ef35e99c43fecdc4eec682743f66fbf01267d3ac53d85bf3a4ddee1a8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Each local authority has a duty to take reasonable steps to keep in touch with a relevant child for whom they are the responsible authority, regardless of whether the child is within their area or not.",
+    "quote": "duty of each local authority to take reasonable steps to keep in touch with a relevant child for whom they are the responsible authority, whether he is within their area or not"
+   },
+   {
+    "requirement": "Each local authority must appoint a personal adviser for each relevant child, unless they have already appointed one under paragraph 19C of Schedule 2.",
+    "quote": "duty of each local authority to appoint a personal adviser for each relevant child (if they have not already done so under paragraph 19C of Schedule 2)"
+   },
+   {
+    "requirement": "A local authority must carry out an assessment of the needs of any relevant child who does not already have a pathway plan prepared for the purposes of paragraph 19B of Schedule 2, with a view to determining what advice, assistance and support it would be appropriate to provide under this Part.",
+    "quote": "carry out an assessment of his needs with a view to determining what advice, assistance and support it would be appropriate for them to provide him under this Part"
+   },
+   {
+    "requirement": "A local authority must prepare a pathway plan for any relevant child who does not already have a pathway plan prepared for the purposes of paragraph 19B of Schedule 2.",
+    "quote": "prepare a pathway plan for him"
+   },
+   {
+    "requirement": "The responsible local authority must safeguard and promote the relevant child's welfare.",
+    "quote": "The responsible local authority shall safeguard and promote the child’s welfare"
+   },
+   {
+    "requirement": "Unless satisfied that the child's welfare does not require it, the responsible local authority must support the relevant child by maintaining him, providing him with or maintaining him in suitable accommodation, and providing support of such other descriptions as may be prescribed.",
+    "quote": "unless they are satisfied that his welfare does not require it, support him by— (a) maintaining him; (b) providing him with or maintaining him in suitable accommodation; and (c) providing support of such other descriptions as may be prescribed"
+   },
+   {
+    "requirement": "Support provided by the responsible local authority to a relevant child under subsection (8) may be given in cash.",
+    "quote": "Support under subsection (8) may be in cash"
+   },
+   {
+    "requirement": "The Secretary of State may make provision by regulations concerning the meaning of “suitable accommodation” and specifically regarding the suitability of landlords or other accommodation providers.",
+    "quote": "The Secretary of State may by regulations make provision about the meaning of “ suitable accommodation ” and in particular about the suitability of landlords or other providers of accommodation"
+   },
+   {
+    "requirement": "If a local authority loses touch with a relevant child despite taking reasonable steps to keep in touch, the authority must without delay consider how to re-establish contact and take reasonable steps to do so.",
+    "quote": "must without delay— (a) consider how to re-establish contact; and (b) take reasonable steps to do so"
+   },
+   {
+    "requirement": "A local authority that has lost touch with a child must continue taking steps to re-establish contact until they succeed, for as long as the child remains a relevant child.",
+    "quote": "while the child is still a relevant child must continue to take such steps until they succeed"
+   },
+   {
+    "requirement": "Subsections (7) to (9) of section 17 apply to support given under section 23B in the same way as they apply to assistance given under section 17.",
+    "quote": "Subsections (7) to (9) of section 17 apply in relation to support given under this section as they apply in relation to assistance given under that section"
+   },
+   {
+    "requirement": "Subsections (4) and (5) of section 22 apply to any decision made by a local authority for the purposes of section 23B in the same way as they apply to decisions referred to in section 22.",
+    "quote": "Subsections (4) and (5) of section 22 apply in relation to any decision by a local authority for the purposes of this section as they apply in relation to the decisions referred to in that section"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Each local authority has a duty to take reasonable steps to keep in touch with a relevant child for whom they are the responsible authority, regardless of whether the child is within their area or not.",
+   "quote": "duty of each local authority to take reasonable steps to keep in touch with a relevant child for whom they are the responsible authority, whether he is within their area or not"
+  },
+  {
+   "requirement": "Each local authority must appoint a personal adviser for each relevant child, unless they have already appointed one under paragraph 19C of Schedule 2.",
+   "quote": "duty of each local authority to appoint a personal adviser for each relevant child (if they have not already done so under paragraph 19C of Schedule 2)"
+  },
+  {
+   "requirement": "A local authority must carry out an assessment of the needs of any relevant child who does not already have a pathway plan prepared for the purposes of paragraph 19B of Schedule 2, with a view to determining what advice, assistance and support it would be appropriate to provide under this Part.",
+   "quote": "carry out an assessment of his needs with a view to determining what advice, assistance and support it would be appropriate for them to provide him under this Part"
+  },
+  {
+   "requirement": "A local authority must prepare a pathway plan for any relevant child who does not already have a pathway plan prepared for the purposes of paragraph 19B of Schedule 2.",
+   "quote": "prepare a pathway plan for him"
+  },
+  {
+   "requirement": "The responsible local authority must safeguard and promote the relevant child's welfare.",
+   "quote": "The responsible local authority shall safeguard and promote the child’s welfare"
+  },
+  {
+   "requirement": "Unless satisfied that the child's welfare does not require it, the responsible local authority must support the relevant child by maintaining him, providing him with or maintaining him in suitable accommodation, and providing support of such other descriptions as may be prescribed.",
+   "quote": "unless they are satisfied that his welfare does not require it, support him by— (a) maintaining him; (b) providing him with or maintaining him in suitable accommodation; and (c) providing support of such other descriptions as may be prescribed"
+  },
+  {
+   "requirement": "Support provided by the responsible local authority to a relevant child under subsection (8) may be given in cash.",
+   "quote": "Support under subsection (8) may be in cash"
+  },
+  {
+   "requirement": "The Secretary of State may make provision by regulations concerning the meaning of “suitable accommodation” and specifically regarding the suitability of landlords or other accommodation providers.",
+   "quote": "The Secretary of State may by regulations make provision about the meaning of “ suitable accommodation ” and in particular about the suitability of landlords or other providers of accommodation"
+  },
+  {
+   "requirement": "If a local authority loses touch with a relevant child despite taking reasonable steps to keep in touch, the authority must without delay consider how to re-establish contact and take reasonable steps to do so.",
+   "quote": "must without delay— (a) consider how to re-establish contact; and (b) take reasonable steps to do so"
+  },
+  {
+   "requirement": "A local authority that has lost touch with a child must continue taking steps to re-establish contact until they succeed, for as long as the child remains a relevant child.",
+   "quote": "while the child is still a relevant child must continue to take such steps until they succeed"
+  },
+  {
+   "requirement": "Subsections (7) to (9) of section 17 apply to support given under section 23B in the same way as they apply to assistance given under section 17.",
+   "quote": "Subsections (7) to (9) of section 17 apply in relation to support given under this section as they apply in relation to assistance given under that section"
+  },
+  {
+   "requirement": "Subsections (4) and (5) of section 22 apply to any decision made by a local authority for the purposes of section 23B in the same way as they apply to decisions referred to in section 22.",
+   "quote": "Subsections (4) and (5) of section 22 apply in relation to any decision by a local authority for the purposes of this section as they apply in relation to the decisions referred to in that section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

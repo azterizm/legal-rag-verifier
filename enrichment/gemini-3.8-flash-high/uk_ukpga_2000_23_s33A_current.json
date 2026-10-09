@@ -1,0 +1,125 @@
+{
+ "key": "uk/ukpga/2000/23/s33A@current",
+ "section": "uk/ukpga/2000/23/s33A",
+ "version": "current",
+ "source_sha256": "4c76affd9fe19b70ffd9b3efa4f5639bd45dd0edbfd01128553780232663d469",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 33A applies where the Director General of the National Crime Agency has entered into a collaboration agreement with the chief officer of police of one or more police forces.",
+    "quote": "This section applies where the Director General of the National Crime Agency has made a collaboration agreement with the chief officer of police of one or more police forces"
+   },
+   {
+    "requirement": "A person who is a designated person for the purposes of section 28, 29 or 29B by reference to an office, rank or position with a collaborative police force is permitted to grant an authorisation under that section upon an application made by a National Crime Agency officer.",
+    "quote": "may grant an authorisation under that section on an application made by a National Crime Agency officer"
+   },
+   {
+    "requirement": "A person who is a designated person for the purposes of section 28, 29 or 29B by reference to their position as a National Crime Agency officer is permitted to grant an authorisation under that section upon an application made by a member of a collaborative police force.",
+    "quote": "may grant an authorisation under that section on an application made by a member of a collaborative police force"
+   },
+   {
+    "requirement": "Authorisations under section 28, 29 or 29B may be granted to National Crime Agency officers or members of a collaborative police force pursuant to subsection (2) or (3) only if those persons are permitted under the terms of the collaboration agreement to make such applications to the respective designated person.",
+    "quote": "Authorisations may be granted to persons by virtue of subsection (2) or (3) only if such persons are permitted under the terms of the collaboration agreement to make applications"
+   },
+   {
+    "requirement": "A person who is a senior authorising officer by reference to a collaborative police force may grant an authorisation for intrusive surveillance upon an application made by a National Crime Agency officer.",
+    "quote": "A person who is a senior authorising officer by reference to a collaborative police force may grant an authorisation for the carrying out of intrusive surveillance on an application made by a National Crime Agency officer."
+   },
+   {
+    "requirement": "The Director General of the National Crime Agency, or a person designated under section 32(6)(k) by that Director General, may grant an authorisation for intrusive surveillance upon an application made by a member of a collaborative police force.",
+    "quote": "The Director General of the National Crime Agency, or a person designated for the purposes of section 32(6)(k) by that Director General, may grant an authorisation for the carrying out of intrusive surveillance on an application made by a member of a collaborative police force."
+   },
+   {
+    "requirement": "Authorisations for intrusive surveillance may be granted pursuant to subsection (5) or (6) only if the applicant persons are permitted under the terms of the collaboration agreement to make applications for intrusive surveillance authorisations to the relevant senior authorising officer, Director General, or designated person.",
+    "quote": "Authorisations may be granted to persons by virtue of subsection (5) or (6) only if such persons are permitted under the terms of the collaboration agreement to make applications for authorisations for the carrying out of intrusive surveillance"
+   },
+   {
+    "requirement": "Where an application for intrusive surveillance concerning residential premises is made under subsection (5) or (6), authorisation may only be granted for premises situated in an area that is both the area of operation of a collaborative police force and specified in relation to members of that force in the collaboration agreement.",
+    "quote": "authorisation may be granted only in relation to premises in the area which is— (a) the area of operation of a collaborative police force, and (b) specified in relation to members of that force in the collaboration agreement."
+   },
+   {
+    "requirement": "The area of operation of a collaborative police force is defined as the area for which that police force is maintained.",
+    "quote": "the area of operation of a collaborative police force is the area for which that force is maintained."
+   },
+   {
+    "requirement": "A collaboration agreement means an agreement made under section 22A of the Police Act 1996.",
+    "quote": "“collaboration agreement” means an agreement made under section 22A of the Police Act 1996"
+   },
+   {
+    "requirement": "A collaborative police force has the meaning given by subsection (1) of section 33A.",
+    "quote": "“collaborative police force” has the meaning given by subsection (1)"
+   },
+   {
+    "requirement": "A police force has the meaning given by section 33(5A).",
+    "quote": "“police force” has the meaning given by section 33(5A)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of police forces with whose chief officer of police the Director General of the National Crime Agency has made a collaboration agreement",
+    "value": "one or more",
+    "quote": "one or more police forces"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 33A applies where the Director General of the National Crime Agency has entered into a collaboration agreement with the chief officer of police of one or more police forces.",
+   "quote": "This section applies where the Director General of the National Crime Agency has made a collaboration agreement with the chief officer of police of one or more police forces"
+  },
+  {
+   "requirement": "A person who is a designated person for the purposes of section 28, 29 or 29B by reference to an office, rank or position with a collaborative police force is permitted to grant an authorisation under that section upon an application made by a National Crime Agency officer.",
+   "quote": "may grant an authorisation under that section on an application made by a National Crime Agency officer"
+  },
+  {
+   "requirement": "A person who is a designated person for the purposes of section 28, 29 or 29B by reference to their position as a National Crime Agency officer is permitted to grant an authorisation under that section upon an application made by a member of a collaborative police force.",
+   "quote": "may grant an authorisation under that section on an application made by a member of a collaborative police force"
+  },
+  {
+   "requirement": "Authorisations under section 28, 29 or 29B may be granted to National Crime Agency officers or members of a collaborative police force pursuant to subsection (2) or (3) only if those persons are permitted under the terms of the collaboration agreement to make such applications to the respective designated person.",
+   "quote": "Authorisations may be granted to persons by virtue of subsection (2) or (3) only if such persons are permitted under the terms of the collaboration agreement to make applications"
+  },
+  {
+   "requirement": "A person who is a senior authorising officer by reference to a collaborative police force may grant an authorisation for intrusive surveillance upon an application made by a National Crime Agency officer.",
+   "quote": "A person who is a senior authorising officer by reference to a collaborative police force may grant an authorisation for the carrying out of intrusive surveillance on an application made by a National Crime Agency officer."
+  },
+  {
+   "requirement": "The Director General of the National Crime Agency, or a person designated under section 32(6)(k) by that Director General, may grant an authorisation for intrusive surveillance upon an application made by a member of a collaborative police force.",
+   "quote": "The Director General of the National Crime Agency, or a person designated for the purposes of section 32(6)(k) by that Director General, may grant an authorisation for the carrying out of intrusive surveillance on an application made by a member of a collaborative police force."
+  },
+  {
+   "requirement": "Authorisations for intrusive surveillance may be granted pursuant to subsection (5) or (6) only if the applicant persons are permitted under the terms of the collaboration agreement to make applications for intrusive surveillance authorisations to the relevant senior authorising officer, Director General, or designated person.",
+   "quote": "Authorisations may be granted to persons by virtue of subsection (5) or (6) only if such persons are permitted under the terms of the collaboration agreement to make applications for authorisations for the carrying out of intrusive surveillance"
+  },
+  {
+   "requirement": "Where an application for intrusive surveillance concerning residential premises is made under subsection (5) or (6), authorisation may only be granted for premises situated in an area that is both the area of operation of a collaborative police force and specified in relation to members of that force in the collaboration agreement.",
+   "quote": "authorisation may be granted only in relation to premises in the area which is— (a) the area of operation of a collaborative police force, and (b) specified in relation to members of that force in the collaboration agreement."
+  },
+  {
+   "requirement": "The area of operation of a collaborative police force is defined as the area for which that police force is maintained.",
+   "quote": "the area of operation of a collaborative police force is the area for which that force is maintained."
+  },
+  {
+   "requirement": "A collaboration agreement means an agreement made under section 22A of the Police Act 1996.",
+   "quote": "“collaboration agreement” means an agreement made under section 22A of the Police Act 1996"
+  },
+  {
+   "requirement": "A collaborative police force has the meaning given by subsection (1) of section 33A.",
+   "quote": "“collaborative police force” has the meaning given by subsection (1)"
+  },
+  {
+   "requirement": "A police force has the meaning given by section 33(5A).",
+   "quote": "“police force” has the meaning given by section 33(5A)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

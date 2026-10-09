@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1995/30/s7@current",
+ "section": "uk/ukpga/1995/30/s7",
+ "version": "current",
+ "source_sha256": "634facf05cf6f62f32c3cbe78e30373b9c91ce23d9196240acf58782496b79a2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The statutory release procedure applies where a landlord assigns the reversion in premises of which that landlord is the landlord under a tenancy, and immediately before the assignment a former landlord of the premises remains bound by a landlord covenant of the tenancy.",
+    "quote": "a landlord assigns the reversion in premises of which he is the landlord under a tenancy, and (b) immediately before the assignment a former landlord of the premises remains bound by a landlord covenant of the tenancy"
+   },
+   {
+    "requirement": "A landlord covenant of the tenancy by which a former landlord remains bound immediately before the assignment is defined as the relevant covenant.",
+    "quote": "a landlord covenant of the tenancy (“the relevant covenant”)"
+   },
+   {
+    "requirement": "A former landlord may apply in accordance with section 8 to be released from the relevant covenant if immediately before the assignment that former landlord does not remain the landlord of any other premises demised by the tenancy.",
+    "quote": "If immediately before the assignment the former landlord does not remain the landlord of any other premises demised by the tenancy, he may apply to be released from the relevant covenant in accordance with section 8."
+   },
+   {
+    "requirement": "A former landlord who remains the landlord of other premises demised by the tenancy may apply to be released from the relevant covenant to the extent that it falls to be complied with in relation to any premises comprised in the assignment.",
+    "quote": "In any other case the former landlord may apply to be so released from the relevant covenant to the extent that it falls to be complied with in relation to any premises comprised in the assignment."
+   },
+   {
+    "requirement": "A former landlord ceases to be entitled to the benefit of the tenant covenants of the tenancy if that former landlord is released from every landlord covenant by which that former landlord remained bound immediately before the assignment.",
+    "quote": "If the former landlord is so released from every landlord covenant by which he remained bound immediately before the assignment, he ceases to be entitled to the benefit of the tenant covenants of the tenancy."
+   },
+   {
+    "requirement": "A former landlord ceases to be entitled to the benefit of the tenant covenants of the tenancy to the extent that they fall to be complied with in relation to premises comprised in the assignment if that former landlord is released from every landlord covenant by which that former landlord remained bound immediately before the assignment to the extent that it falls to be complied with in relation to any premises comprised in the assignment.",
+    "quote": "If the former landlord is so released from every such landlord covenant to the extent that it falls to be complied with in relation to any premises comprised in the assignment, he ceases to be entitled to the benefit of the tenant covenants of the tenancy to the extent that they fall to be so complied with."
+   },
+   {
+    "requirement": "The rules governing the application for release apply whether or not the assigning landlord is the landlord of the whole of the premises comprised in the tenancy.",
+    "quote": "whether or not the landlord making the assignment is landlord of the whole of the premises comprised in the tenancy"
+   },
+   {
+    "requirement": "The rules governing the application for release apply whether or not the former landlord has previously applied (whether under section 6 or section 7) to be released from the relevant covenant.",
+    "quote": "whether or not the former landlord has previously applied (whether under section 6 or this section) to be released from the relevant covenant."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The statutory release procedure applies where a landlord assigns the reversion in premises of which that landlord is the landlord under a tenancy, and immediately before the assignment a former landlord of the premises remains bound by a landlord covenant of the tenancy.",
+   "quote": "a landlord assigns the reversion in premises of which he is the landlord under a tenancy, and (b) immediately before the assignment a former landlord of the premises remains bound by a landlord covenant of the tenancy"
+  },
+  {
+   "requirement": "A landlord covenant of the tenancy by which a former landlord remains bound immediately before the assignment is defined as the relevant covenant.",
+   "quote": "a landlord covenant of the tenancy (“the relevant covenant”)"
+  },
+  {
+   "requirement": "A former landlord may apply in accordance with section 8 to be released from the relevant covenant if immediately before the assignment that former landlord does not remain the landlord of any other premises demised by the tenancy.",
+   "quote": "If immediately before the assignment the former landlord does not remain the landlord of any other premises demised by the tenancy, he may apply to be released from the relevant covenant in accordance with section 8."
+  },
+  {
+   "requirement": "A former landlord who remains the landlord of other premises demised by the tenancy may apply to be released from the relevant covenant to the extent that it falls to be complied with in relation to any premises comprised in the assignment.",
+   "quote": "In any other case the former landlord may apply to be so released from the relevant covenant to the extent that it falls to be complied with in relation to any premises comprised in the assignment."
+  },
+  {
+   "requirement": "A former landlord ceases to be entitled to the benefit of the tenant covenants of the tenancy if that former landlord is released from every landlord covenant by which that former landlord remained bound immediately before the assignment.",
+   "quote": "If the former landlord is so released from every landlord covenant by which he remained bound immediately before the assignment, he ceases to be entitled to the benefit of the tenant covenants of the tenancy."
+  },
+  {
+   "requirement": "A former landlord ceases to be entitled to the benefit of the tenant covenants of the tenancy to the extent that they fall to be complied with in relation to premises comprised in the assignment if that former landlord is released from every landlord covenant by which that former landlord remained bound immediately before the assignment to the extent that it falls to be complied with in relation to any premises comprised in the assignment.",
+   "quote": "If the former landlord is so released from every such landlord covenant to the extent that it falls to be complied with in relation to any premises comprised in the assignment, he ceases to be entitled to the benefit of the tenant covenants of the tenancy to the extent that they fall to be so complied with."
+  },
+  {
+   "requirement": "The rules governing the application for release apply whether or not the assigning landlord is the landlord of the whole of the premises comprised in the tenancy.",
+   "quote": "whether or not the landlord making the assignment is landlord of the whole of the premises comprised in the tenancy"
+  },
+  {
+   "requirement": "The rules governing the application for release apply whether or not the former landlord has previously applied (whether under section 6 or section 7) to be released from the relevant covenant.",
+   "quote": "whether or not the former landlord has previously applied (whether under section 6 or this section) to be released from the relevant covenant."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

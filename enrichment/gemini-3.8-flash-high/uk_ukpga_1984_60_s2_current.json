@@ -1,0 +1,182 @@
+{
+ "key": "uk/ukpga/1984/60/s2@current",
+ "section": "uk/ukpga/1984/60/s2",
+ "version": "current",
+ "source_sha256": "cd3cc42efe01f71a581b7089835e91ad1aeff5b8c4d62f03136c2f1304e5a0b6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A constable who detains a person or vehicle under section 1 or under any other power to search a person or vehicle without arrest is not required to conduct a search if it subsequently appears to that constable that no search is required or that a search is impracticable.",
+    "quote": "need not conduct a search if it appears to him subsequently— (i) that no search is required; or (ii) that a search is impracticable."
+   },
+   {
+    "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must, if not in uniform, take reasonable steps before commencing the search to show documentary evidence of being a constable to the appropriate person.",
+    "quote": "if the constable is not in uniform, documentary evidence that he is a constable"
+   },
+   {
+    "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must take reasonable steps before commencing the search to bring to the attention of the appropriate person the constable's name and the name of the police station to which the constable is attached.",
+    "quote": "the constable’s name and the name of the police station to which he is attached"
+   },
+   {
+    "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must take reasonable steps before commencing the search to bring to the attention of the appropriate person the object of the proposed search.",
+    "quote": "the object of the proposed search"
+   },
+   {
+    "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must take reasonable steps before commencing the search to bring to the attention of the appropriate person the grounds for proposing to make the search.",
+    "quote": "the constable’s grounds for proposing to make it"
+   },
+   {
+    "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must, subject to subsection (4), take reasonable steps before commencing the search to bring to the attention of the appropriate person the effect of section 3(7) or 3(8), as appropriate.",
+    "quote": "the effect of section 3(7) or (8) below, as may be appropriate"
+   },
+   {
+    "requirement": "A constable must not commence the contemplated search of a person or an attended vehicle until the constable has performed the pre-search notification and identification duties.",
+    "quote": "and the constable shall not commence the search until he has performed that duty."
+   },
+   {
+    "requirement": "A constable is not required to bring the effect of section 3(7) or 3(8) to the attention of the appropriate person if it appears to the constable that making the record required by section 3(1) will not be practicable.",
+    "quote": "A constable need not bring the effect of section 3(7) or (8) below to the attention of the appropriate person if it appears to the constable that it will not be practicable to make the record in section 3(1) below."
+   },
+   {
+    "requirement": "For the purposes of section 2, the 'appropriate person' is the person to be searched where a search of a person is proposed.",
+    "quote": "if the constable proposes to search a person, that person"
+   },
+   {
+    "requirement": "For the purposes of section 2, the 'appropriate person' is the person in charge of the vehicle where a search of a vehicle or anything in or on a vehicle is proposed.",
+    "quote": "if he proposes to search a vehicle, or anything in or on a vehicle, the person in charge of the vehicle."
+   },
+   {
+    "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice stating that the vehicle has been searched.",
+    "quote": "stating that he has searched it"
+   },
+   {
+    "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice giving the name of the police station to which the constable is attached.",
+    "quote": "giving the name of the police station to which he is attached"
+   },
+   {
+    "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice stating that an application for compensation for any damage caused by the search may be made to the police station to which the constable is attached.",
+    "quote": "stating that an application for compensation for any damage caused by the search may be made to that police station"
+   },
+   {
+    "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice stating the effect of section 3(8).",
+    "quote": "stating the effect of section 3(8) below."
+   },
+   {
+    "requirement": "A constable must leave the notice inside the unattended vehicle unless it is not reasonably practicable to do so without damaging the vehicle.",
+    "quote": "The constable shall leave the notice inside the vehicle unless it is not reasonably practicable to do so without damaging the vehicle."
+   },
+   {
+    "requirement": "A person or vehicle may be detained for the purposes of a search only for such time as is reasonably required to permit the search to be carried out either at the place where the person or vehicle was first detained or nearby.",
+    "quote": "The time for which a person or vehicle may be detained for the purposes of such a search is such time as is reasonably required to permit a search to be carried out either at the place where the person or vehicle was first detained or nearby."
+   },
+   {
+    "requirement": "Neither the power under section 1 nor any other power to detain and search without arrest authorises a constable to require a person to remove any clothing in public other than an outer coat, jacket, or gloves.",
+    "quote": "authorising a constable to require a person to remove any of his clothing in public other than an outer coat, jacket or gloves"
+   },
+   {
+    "requirement": "Neither the power under section 1 nor any other power to detain and search without arrest authorises a constable who is not in uniform to stop a vehicle.",
+    "quote": "authorising a constable not in uniform to stop a vehicle."
+   },
+   {
+    "requirement": "Section 1 and section 2 apply to vessels, aircraft, and hovercraft in the same manner as they apply to vehicles.",
+    "quote": "This section and section 1 above apply to vessels, aircraft and hovercraft as they apply to vehicles."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the calendar year of the cited Aviation Security Act",
+    "value": "1982",
+    "quote": "Aviation Security Act 1982"
+   },
+   {
+    "what": "the permitted duration of detention of a person or vehicle for the purposes of a search",
+    "value": "such time as is reasonably required",
+    "quote": "such time as is reasonably required to permit a search to be carried out either at the place where the person or vehicle was first detained or nearby"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must, if not in uniform, take reasonable steps before commencing the search to show documentary evidence of being a constable to the appropriate person.",
+   "quote": "if the constable is not in uniform, documentary evidence that he is a constable"
+  },
+  {
+   "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must take reasonable steps before commencing the search to bring to the attention of the appropriate person the constable's name and the name of the police station to which the constable is attached.",
+   "quote": "the constable’s name and the name of the police station to which he is attached"
+  },
+  {
+   "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must take reasonable steps before commencing the search to bring to the attention of the appropriate person the object of the proposed search.",
+   "quote": "the object of the proposed search"
+  },
+  {
+   "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must take reasonable steps before commencing the search to bring to the attention of the appropriate person the grounds for proposing to make the search.",
+   "quote": "the constable’s grounds for proposing to make it"
+  },
+  {
+   "requirement": "A constable who contemplates searching a person or an attended vehicle under section 1 or under any other power to search without arrest (excluding the powers under section 6 of this Act and section 27(2) of the Aviation Security Act 1982) must, subject to subsection (4), take reasonable steps before commencing the search to bring to the attention of the appropriate person the effect of section 3(7) or 3(8), as appropriate.",
+   "quote": "the effect of section 3(7) or (8) below, as may be appropriate"
+  },
+  {
+   "requirement": "A constable must not commence the contemplated search of a person or an attended vehicle until the constable has performed the pre-search notification and identification duties.",
+   "quote": "and the constable shall not commence the search until he has performed that duty."
+  },
+  {
+   "requirement": "A constable is not required to bring the effect of section 3(7) or 3(8) to the attention of the appropriate person if it appears to the constable that making the record required by section 3(1) will not be practicable.",
+   "quote": "A constable need not bring the effect of section 3(7) or (8) below to the attention of the appropriate person if it appears to the constable that it will not be practicable to make the record in section 3(1) below."
+  },
+  {
+   "requirement": "For the purposes of section 2, the 'appropriate person' is the person to be searched where a search of a person is proposed.",
+   "quote": "if the constable proposes to search a person, that person"
+  },
+  {
+   "requirement": "For the purposes of section 2, the 'appropriate person' is the person in charge of the vehicle where a search of a vehicle or anything in or on a vehicle is proposed.",
+   "quote": "if he proposes to search a vehicle, or anything in or on a vehicle, the person in charge of the vehicle."
+  },
+  {
+   "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice stating that the vehicle has been searched.",
+   "quote": "stating that he has searched it"
+  },
+  {
+   "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice giving the name of the police station to which the constable is attached.",
+   "quote": "giving the name of the police station to which he is attached"
+  },
+  {
+   "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice stating that an application for compensation for any damage caused by the search may be made to the police station to which the constable is attached.",
+   "quote": "stating that an application for compensation for any damage caused by the search may be made to that police station"
+  },
+  {
+   "requirement": "On completing a search of an unattended vehicle or anything in or on it, a constable must leave a notice stating the effect of section 3(8).",
+   "quote": "stating the effect of section 3(8) below."
+  },
+  {
+   "requirement": "A constable must leave the notice inside the unattended vehicle unless it is not reasonably practicable to do so without damaging the vehicle.",
+   "quote": "The constable shall leave the notice inside the vehicle unless it is not reasonably practicable to do so without damaging the vehicle."
+  },
+  {
+   "requirement": "A person or vehicle may be detained for the purposes of a search only for such time as is reasonably required to permit the search to be carried out either at the place where the person or vehicle was first detained or nearby.",
+   "quote": "The time for which a person or vehicle may be detained for the purposes of such a search is such time as is reasonably required to permit a search to be carried out either at the place where the person or vehicle was first detained or nearby."
+  },
+  {
+   "requirement": "Neither the power under section 1 nor any other power to detain and search without arrest authorises a constable to require a person to remove any clothing in public other than an outer coat, jacket, or gloves.",
+   "quote": "authorising a constable to require a person to remove any of his clothing in public other than an outer coat, jacket or gloves"
+  },
+  {
+   "requirement": "Neither the power under section 1 nor any other power to detain and search without arrest authorises a constable who is not in uniform to stop a vehicle.",
+   "quote": "authorising a constable not in uniform to stop a vehicle."
+  },
+  {
+   "requirement": "Section 1 and section 2 apply to vessels, aircraft, and hovercraft in the same manner as they apply to vehicles.",
+   "quote": "This section and section 1 above apply to vessels, aircraft and hovercraft as they apply to vehicles."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 19,
+  "elements_verified": 18,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

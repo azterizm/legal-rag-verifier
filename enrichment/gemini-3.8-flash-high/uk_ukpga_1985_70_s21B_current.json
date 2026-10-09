@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1985/70/s21B@current",
+ "section": "uk/ukpga/1985/70/s21B",
+ "version": "current",
+ "source_sha256": "95c6114167e0dab691840d3e226494ce09d48e820478a42686b4e94eefa5d98b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A demand for the payment of a service charge must be accompanied by a summary of the rights and obligations of tenants of dwellings in relation to service charges.",
+    "quote": "A demand for the payment of a service charge must be accompanied by a summary of the rights and obligations of tenants of dwellings in relation to service charges."
+   },
+   {
+    "requirement": "The Secretary of State is permitted to make regulations that prescribe requirements regarding the form and content of summaries of rights and obligations.",
+    "quote": "The Secretary of State may make regulations prescribing requirements as to the form and content of such summaries of rights and obligations."
+   },
+   {
+    "requirement": "A tenant is permitted to withhold payment of a demanded service charge if the demand is not accompanied by the required summary of the rights and obligations of tenants of dwellings.",
+    "quote": "A tenant may withhold payment of a service charge which has been demanded from him if subsection (1) is not complied with in relation to the demand."
+   },
+   {
+    "requirement": "Where a tenant withholds a service charge due to non-compliance with the summary requirement, any terms of the lease concerning non-payment or late payment of service charges have no effect for the duration of that withholding period.",
+    "quote": "any provisions of the lease relating to non-payment or late payment of service charges do not have effect in relation to the period for which he so withholds it."
+   },
+   {
+    "requirement": "Regulations prescribing requirements as to the form and content of summaries of rights and obligations may make different provision for different purposes.",
+    "quote": "Regulations under subsection (2) may make different provision for different purposes."
+   },
+   {
+    "requirement": "Regulations prescribing requirements as to the form and content of summaries of rights and obligations must be made by statutory instrument and are subject to annulment pursuant to a resolution of either House of Parliament.",
+    "quote": "shall be made by statutory instrument which shall be subject to annulment in pursuance of a resolution of either House of Parliament."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A demand for the payment of a service charge must be accompanied by a summary of the rights and obligations of tenants of dwellings in relation to service charges.",
+   "quote": "A demand for the payment of a service charge must be accompanied by a summary of the rights and obligations of tenants of dwellings in relation to service charges."
+  },
+  {
+   "requirement": "The Secretary of State is permitted to make regulations that prescribe requirements regarding the form and content of summaries of rights and obligations.",
+   "quote": "The Secretary of State may make regulations prescribing requirements as to the form and content of such summaries of rights and obligations."
+  },
+  {
+   "requirement": "A tenant is permitted to withhold payment of a demanded service charge if the demand is not accompanied by the required summary of the rights and obligations of tenants of dwellings.",
+   "quote": "A tenant may withhold payment of a service charge which has been demanded from him if subsection (1) is not complied with in relation to the demand."
+  },
+  {
+   "requirement": "Where a tenant withholds a service charge due to non-compliance with the summary requirement, any terms of the lease concerning non-payment or late payment of service charges have no effect for the duration of that withholding period.",
+   "quote": "any provisions of the lease relating to non-payment or late payment of service charges do not have effect in relation to the period for which he so withholds it."
+  },
+  {
+   "requirement": "Regulations prescribing requirements as to the form and content of summaries of rights and obligations may make different provision for different purposes.",
+   "quote": "Regulations under subsection (2) may make different provision for different purposes."
+  },
+  {
+   "requirement": "Regulations prescribing requirements as to the form and content of summaries of rights and obligations must be made by statutory instrument and are subject to annulment pursuant to a resolution of either House of Parliament.",
+   "quote": "shall be made by statutory instrument which shall be subject to annulment in pursuance of a resolution of either House of Parliament."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "key": "uk/ukpga/2015/15/s9@current",
+ "section": "uk/ukpga/2015/15/s9",
+ "version": "current",
+ "source_sha256": "9563780ba82855373cdac0e1e0d7f0f6b3b3e6b5d35b841e6e13478a3dc5018e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Every contract to supply goods is to be treated as including an implied term that the quality of the goods is satisfactory.",
+    "quote": "Every contract to supply goods is to be treated as including a term that the quality of the goods is satisfactory."
+   },
+   {
+    "requirement": "Goods are of satisfactory quality if they meet the standard that a reasonable person would consider satisfactory, taking into account any description of the goods, the price or other consideration (if relevant), and all other relevant circumstances.",
+    "quote": "meet the standard that a reasonable person would consider satisfactory, taking account of— (a) any description of the goods, (b) the price or other consideration for the goods (if relevant), and (c) all the other relevant circumstances"
+   },
+   {
+    "requirement": "The quality of goods includes their state and condition.",
+    "quote": "The quality of goods includes their state and condition"
+   },
+   {
+    "requirement": "In appropriate cases, aspects of the quality of goods include fitness for all the purposes for which goods of that kind are usually supplied, appearance and finish, freedom from minor defects, safety, and durability.",
+    "quote": "the following aspects (among others) are in appropriate cases aspects of the quality of goods— (a) fitness for all the purposes for which goods of that kind are usually supplied; (b) appearance and finish; (c) freedom from minor defects; (d) safety; (e) durability."
+   },
+   {
+    "requirement": "The term requiring satisfactory quality does not cover anything making the quality of the goods unsatisfactory that is specifically drawn to the consumer's attention before the contract is made.",
+    "quote": "does not cover anything which makes the quality of the goods unsatisfactory— (a) which is specifically drawn to the consumer's attention before the contract is made"
+   },
+   {
+    "requirement": "The term requiring satisfactory quality does not cover anything making the quality of the goods unsatisfactory where the consumer examines the goods before the contract is made and that examination ought to reveal the issue.",
+    "quote": "where the consumer examines the goods before the contract is made, which that examination ought to reveal"
+   },
+   {
+    "requirement": "In a contract to supply goods by sample, the term requiring satisfactory quality does not cover anything making the quality unsatisfactory that would have been apparent on a reasonable examination of the sample.",
+    "quote": "in the case of a contract to supply goods by sample, which would have been apparent on a reasonable examination of the sample."
+   },
+   {
+    "requirement": "Relevant circumstances for assessing satisfactory quality include any public statement about the specific characteristics of the goods made by the trader, the producer, or any representative of the trader or the producer.",
+    "quote": "relevant circumstances mentioned in subsection (2)(c) include any public statement about the specific characteristics of the goods made by the trader, the producer or any representative of the trader or the producer."
+   },
+   {
+    "requirement": "Relevant public statements about specific characteristics of the goods include, in particular, any public statement made in advertising or labelling.",
+    "quote": "includes, in particular, any public statement made in advertising or labelling."
+   },
+   {
+    "requirement": "A public statement is not a relevant circumstance if the trader shows that, when the contract was made, the trader was not, and could not reasonably have been, aware of the statement.",
+    "quote": "a public statement is not a relevant circumstance for the purposes of subsection (2)(c) if the trader shows that— (a) when the contract was made, the trader was not, and could not reasonably have been, aware of the statement"
+   },
+   {
+    "requirement": "A public statement is not a relevant circumstance if the trader shows that, before the contract was made, the statement had been publicly withdrawn or, to the extent that it contained anything incorrect or misleading, it had been publicly corrected.",
+    "quote": "before the contract was made, the statement had been publicly withdrawn or, to the extent that it contained anything which was incorrect or misleading, it had been publicly corrected"
+   },
+   {
+    "requirement": "A public statement is not a relevant circumstance if the trader shows that the consumer's decision to contract for the goods could not have been influenced by the statement.",
+    "quote": "the consumer's decision to contract for the goods could not have been influenced by the statement."
+   },
+   {
+    "requirement": "In a contract to supply goods, a term about the quality of the goods may be treated as included as a matter of custom.",
+    "quote": "In a contract to supply goods a term about the quality of the goods may be treated as included as a matter of custom."
+   },
+   {
+    "requirement": "A consumer's rights where a trader breaches a statutory term required by section 9 are set out in section 19.",
+    "quote": "See section 19 for a consumer's rights if the trader is in breach of a term that this section requires to be treated as included in a contract."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Every contract to supply goods is to be treated as including an implied term that the quality of the goods is satisfactory.",
+   "quote": "Every contract to supply goods is to be treated as including a term that the quality of the goods is satisfactory."
+  },
+  {
+   "requirement": "Goods are of satisfactory quality if they meet the standard that a reasonable person would consider satisfactory, taking into account any description of the goods, the price or other consideration (if relevant), and all other relevant circumstances.",
+   "quote": "meet the standard that a reasonable person would consider satisfactory, taking account of— (a) any description of the goods, (b) the price or other consideration for the goods (if relevant), and (c) all the other relevant circumstances"
+  },
+  {
+   "requirement": "The quality of goods includes their state and condition.",
+   "quote": "The quality of goods includes their state and condition"
+  },
+  {
+   "requirement": "In appropriate cases, aspects of the quality of goods include fitness for all the purposes for which goods of that kind are usually supplied, appearance and finish, freedom from minor defects, safety, and durability.",
+   "quote": "the following aspects (among others) are in appropriate cases aspects of the quality of goods— (a) fitness for all the purposes for which goods of that kind are usually supplied; (b) appearance and finish; (c) freedom from minor defects; (d) safety; (e) durability."
+  },
+  {
+   "requirement": "The term requiring satisfactory quality does not cover anything making the quality of the goods unsatisfactory that is specifically drawn to the consumer's attention before the contract is made.",
+   "quote": "does not cover anything which makes the quality of the goods unsatisfactory— (a) which is specifically drawn to the consumer's attention before the contract is made"
+  },
+  {
+   "requirement": "The term requiring satisfactory quality does not cover anything making the quality of the goods unsatisfactory where the consumer examines the goods before the contract is made and that examination ought to reveal the issue.",
+   "quote": "where the consumer examines the goods before the contract is made, which that examination ought to reveal"
+  },
+  {
+   "requirement": "In a contract to supply goods by sample, the term requiring satisfactory quality does not cover anything making the quality unsatisfactory that would have been apparent on a reasonable examination of the sample.",
+   "quote": "in the case of a contract to supply goods by sample, which would have been apparent on a reasonable examination of the sample."
+  },
+  {
+   "requirement": "Relevant circumstances for assessing satisfactory quality include any public statement about the specific characteristics of the goods made by the trader, the producer, or any representative of the trader or the producer.",
+   "quote": "relevant circumstances mentioned in subsection (2)(c) include any public statement about the specific characteristics of the goods made by the trader, the producer or any representative of the trader or the producer."
+  },
+  {
+   "requirement": "Relevant public statements about specific characteristics of the goods include, in particular, any public statement made in advertising or labelling.",
+   "quote": "includes, in particular, any public statement made in advertising or labelling."
+  },
+  {
+   "requirement": "A public statement is not a relevant circumstance if the trader shows that, when the contract was made, the trader was not, and could not reasonably have been, aware of the statement.",
+   "quote": "a public statement is not a relevant circumstance for the purposes of subsection (2)(c) if the trader shows that— (a) when the contract was made, the trader was not, and could not reasonably have been, aware of the statement"
+  },
+  {
+   "requirement": "A public statement is not a relevant circumstance if the trader shows that, before the contract was made, the statement had been publicly withdrawn or, to the extent that it contained anything incorrect or misleading, it had been publicly corrected.",
+   "quote": "before the contract was made, the statement had been publicly withdrawn or, to the extent that it contained anything which was incorrect or misleading, it had been publicly corrected"
+  },
+  {
+   "requirement": "A public statement is not a relevant circumstance if the trader shows that the consumer's decision to contract for the goods could not have been influenced by the statement.",
+   "quote": "the consumer's decision to contract for the goods could not have been influenced by the statement."
+  },
+  {
+   "requirement": "In a contract to supply goods, a term about the quality of the goods may be treated as included as a matter of custom.",
+   "quote": "In a contract to supply goods a term about the quality of the goods may be treated as included as a matter of custom."
+  },
+  {
+   "requirement": "A consumer's rights where a trader breaches a statutory term required by section 9 are set out in section 19.",
+   "quote": "See section 19 for a consumer's rights if the trader is in breach of a term that this section requires to be treated as included in a contract."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

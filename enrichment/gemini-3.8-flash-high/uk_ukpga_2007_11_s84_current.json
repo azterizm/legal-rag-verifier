@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2007/11/s84@current",
+ "section": "uk/ukpga/2007/11/s84",
+ "version": "current",
+ "source_sha256": "9e6e237231ea8fa3b757251a514d3d5448472e914360988a24a3e1be5f1a6844",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Paragraph 7 (Police and Criminal Evidence Act 1984 (c. 60)) of Schedule 2 to CRCA 2005 is omitted.",
+    "quote": "In Schedule 2 to CRCA 2005 (restrictions on the exercise of functions), omit— (a) paragraph 7 (Police and Criminal Evidence Act 1984 (c. 60))"
+   },
+   {
+    "requirement": "Paragraph 9 (Police and Criminal Evidence (Northern Ireland) Order 1989 (S.I. 1989/1341 (N.I. 12))) of Schedule 2 to CRCA 2005 is omitted.",
+    "quote": "omit— ... (b) paragraph 9 (Police and Criminal Evidence (Northern Ireland) Order 1989 (S.I. 1989/1341 (N.I. 12)))"
+   },
+   {
+    "requirement": "Nothing in section 6 or 7 of CRCA 2005 restricts the functions in connection with which officers of Revenue and Customs may exercise a power under the Police and Criminal Evidence Act 1984 by virtue of section 114 of that Act as amended by section 82.",
+    "quote": "Nothing in section 6 or 7 of CRCA 2005 (initial functions) restricts the functions in connection with which officers of Revenue and Customs may exercise a power under— (a) the Police and Criminal Evidence Act 1984 by virtue of section 114 of that Act (as amended by section 82 above)"
+   },
+   {
+    "requirement": "Nothing in section 6 or 7 of CRCA 2005 restricts the functions in connection with which officers of Revenue and Customs may exercise a power under the Police and Criminal Evidence (Northern Ireland) Order 1989 by virtue of Article 85 of that Order as amended by section 83.",
+    "quote": "Nothing in section 6 or 7 of CRCA 2005 (initial functions) restricts the functions in connection with which officers of Revenue and Customs may exercise a power under— ... (b) the Police and Criminal Evidence (Northern Ireland) Order 1989 by virtue of Article 85 of that Order (as amended by section 83 above)"
+   },
+   {
+    "requirement": "Schedule 22 contains amendments and repeals consequential on the extension of police powers to Revenue and Customs.",
+    "quote": "Schedule 22 contains amendments and repeals consequential on extension of police powers to Revenue and Customs."
+   },
+   {
+    "requirement": "Section 82, section 83, and section 84 come into force in accordance with provision made by the Treasury by order.",
+    "quote": "Sections 82 and 83 and this section come into force in accordance with provision made by the Treasury by order."
+   },
+   {
+    "requirement": "The Treasury's power to make an order under subsection (5) is exercisable by statutory instrument.",
+    "quote": "The power to make an order under subsection (5) is exercisable by statutory instrument."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Paragraph 7 (Police and Criminal Evidence Act 1984 (c. 60)) of Schedule 2 to CRCA 2005 is omitted.",
+   "quote": "In Schedule 2 to CRCA 2005 (restrictions on the exercise of functions), omit— (a) paragraph 7 (Police and Criminal Evidence Act 1984 (c. 60))"
+  },
+  {
+   "requirement": "Nothing in section 6 or 7 of CRCA 2005 restricts the functions in connection with which officers of Revenue and Customs may exercise a power under the Police and Criminal Evidence Act 1984 by virtue of section 114 of that Act as amended by section 82.",
+   "quote": "Nothing in section 6 or 7 of CRCA 2005 (initial functions) restricts the functions in connection with which officers of Revenue and Customs may exercise a power under— (a) the Police and Criminal Evidence Act 1984 by virtue of section 114 of that Act (as amended by section 82 above)"
+  },
+  {
+   "requirement": "Schedule 22 contains amendments and repeals consequential on the extension of police powers to Revenue and Customs.",
+   "quote": "Schedule 22 contains amendments and repeals consequential on extension of police powers to Revenue and Customs."
+  },
+  {
+   "requirement": "Section 82, section 83, and section 84 come into force in accordance with provision made by the Treasury by order.",
+   "quote": "Sections 82 and 83 and this section come into force in accordance with provision made by the Treasury by order."
+  },
+  {
+   "requirement": "The Treasury's power to make an order under subsection (5) is exercisable by statutory instrument.",
+   "quote": "The power to make an order under subsection (5) is exercisable by statutory instrument."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

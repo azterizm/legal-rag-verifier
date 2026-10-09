@@ -1,0 +1,96 @@
+{
+ "key": "uk/ukpga/1993/28/s149@current",
+ "section": "uk/ukpga/1993/28/s149",
+ "version": "current",
+ "source_sha256": "ed264470ba25662f054cf45058d4edc1c8219b31002d438777ca6f29e9e76919",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Part I of the 1987 Act shall have effect, and be deemed always to have had effect, as if section 5A were inserted after section 5.",
+    "quote": "Part I of the 1987 Act shall have effect, and be deemed always to have had effect, as if after section 5 there were inserted the following section"
+   },
+   {
+    "requirement": "A local authority may provide in connection with housing accommodation provided by them (whether or not under Part I of the 1987 Act) welfare services—meaning services for promoting the welfare of the persons for whom the accommodation is so provided—that accord with the needs of those persons.",
+    "quote": "A local authority may provide in connection with housing accommodation provided by them (whether or not under this Part) such welfare services, that is to say services for promoting the welfare of the persons for whom the accommodation is so provided, as accord with the needs of those persons."
+   },
+   {
+    "requirement": "A local authority may make reasonable charges for welfare services provided by virtue of section 5A.",
+    "quote": "The local authority may make reasonable charges for welfare services provided by virtue of this section."
+   },
+   {
+    "requirement": "Notwithstanding the provisions of section 203, a local authority may attribute the income from and expenditure on welfare services provided under subsection (1) to a revenue account other than their housing revenue account.",
+    "quote": "Notwithstanding the provisions of section 203, a local authority may attribute the income from and the expenditure on the welfare services provided under subsection (1) to a revenue account other than their housing revenue account."
+   },
+   {
+    "requirement": "For the purposes of section 5A, 'welfare services' does not include the repair, maintenance, supervision or management of houses or other property.",
+    "quote": "In this section “welfare services” does not include the repair, maintenance, supervision or management of houses or other property."
+   },
+   {
+    "requirement": "The powers conferred by section 5A shall not be regarded as restricting the powers conferred by section 83 of the Local Government (Scotland) Act 1973 to incur expenditure for purposes not otherwise authorised.",
+    "quote": "The powers conferred by this section shall not be regarded as restricting those conferred by section 83 of the Local Government (Scotland) Act 1973 (power to incur expenditure for purposes not otherwise authorised)"
+   },
+   {
+    "requirement": "The reference in subsection (1) of section 83 of the Local Government (Scotland) Act 1973 to any other enactment shall not include a reference to section 5A.",
+    "quote": "the reference in subsection (1) of that section to any other enactment shall not include a reference to this section."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year identifying the 1987 Act",
+    "value": "1987",
+    "quote": "1987 Act"
+   },
+   {
+    "what": "calendar year identifying the Local Government (Scotland) Act 1973",
+    "value": "1973",
+    "quote": "Local Government (Scotland) Act 1973"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Part I of the 1987 Act shall have effect, and be deemed always to have had effect, as if section 5A were inserted after section 5.",
+   "quote": "Part I of the 1987 Act shall have effect, and be deemed always to have had effect, as if after section 5 there were inserted the following section"
+  },
+  {
+   "requirement": "A local authority may provide in connection with housing accommodation provided by them (whether or not under Part I of the 1987 Act) welfare services—meaning services for promoting the welfare of the persons for whom the accommodation is so provided—that accord with the needs of those persons.",
+   "quote": "A local authority may provide in connection with housing accommodation provided by them (whether or not under this Part) such welfare services, that is to say services for promoting the welfare of the persons for whom the accommodation is so provided, as accord with the needs of those persons."
+  },
+  {
+   "requirement": "A local authority may make reasonable charges for welfare services provided by virtue of section 5A.",
+   "quote": "The local authority may make reasonable charges for welfare services provided by virtue of this section."
+  },
+  {
+   "requirement": "Notwithstanding the provisions of section 203, a local authority may attribute the income from and expenditure on welfare services provided under subsection (1) to a revenue account other than their housing revenue account.",
+   "quote": "Notwithstanding the provisions of section 203, a local authority may attribute the income from and the expenditure on the welfare services provided under subsection (1) to a revenue account other than their housing revenue account."
+  },
+  {
+   "requirement": "For the purposes of section 5A, 'welfare services' does not include the repair, maintenance, supervision or management of houses or other property.",
+   "quote": "In this section “welfare services” does not include the repair, maintenance, supervision or management of houses or other property."
+  },
+  {
+   "requirement": "The powers conferred by section 5A shall not be regarded as restricting the powers conferred by section 83 of the Local Government (Scotland) Act 1973 to incur expenditure for purposes not otherwise authorised.",
+   "quote": "The powers conferred by this section shall not be regarded as restricting those conferred by section 83 of the Local Government (Scotland) Act 1973 (power to incur expenditure for purposes not otherwise authorised)"
+  },
+  {
+   "requirement": "The reference in subsection (1) of section 83 of the Local Government (Scotland) Act 1973 to any other enactment shall not include a reference to section 5A.",
+   "quote": "the reference in subsection (1) of that section to any other enactment shall not include a reference to this section."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "calendar year identifying the 1987 Act",
+   "value": "1987",
+   "quote": "1987 Act"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

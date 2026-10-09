@@ -1,0 +1,144 @@
+{
+ "key": "uk/ukpga/1988/50/s6@current",
+ "section": "uk/ukpga/1988/50/s6",
+ "version": "current",
+ "source_sha256": "5806f3666e691ea38104b98971b195a7b17dc691bbacbf81267cbfeaa6140d2b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In relation to a statutory periodic tenancy, 'the former tenancy' means the fixed term tenancy on the coming to an end of which the statutory periodic tenancy arises.",
+    "quote": "“the former tenancy” means the fixed term tenancy on the coming to an end of which the statutory periodic tenancy arises"
+   },
+   {
+    "requirement": "In relation to a statutory periodic tenancy, 'the implied terms' means the terms of the tenancy that have effect by virtue of section 5(3)(e), excluding terms as to the amount of the rent.",
+    "quote": "“the implied terms” means the terms of the tenancy which have effect by virtue of section 5(3)(e) above, other than terms as to the amount of the rent"
+   },
+   {
+    "requirement": "The statutory periodic tenancy provisions of this section do not apply to a statutory periodic tenancy at any time when it cannot be an assured tenancy by virtue of paragraph 11 or paragraph 12 in Part 1 of Schedule 1 to the Housing Act 1988.",
+    "quote": "nothing in the following provisions of this section applies to a statutory periodic tenancy at a time when, by virtue of paragraph 11 or paragraph 12 in Part 1 of Schedule 1 to this Act, it cannot be an assured tenancy"
+   },
+   {
+    "requirement": "A landlord may serve on the tenant, or a tenant may serve on the landlord, a notice in the prescribed form proposing terms of the statutory periodic tenancy different from the implied terms no later than the first anniversary of the day on which the former tenancy ended.",
+    "quote": "Not later than the first anniversary of the day on which the former tenancy came to an end, the landlord may serve on the tenant, or the tenant may serve on the landlord, a notice in the prescribed form proposing terms of the statutory periodic tenancy different from the implied terms"
+   },
+   {
+    "requirement": "A notice proposing new terms may also propose an adjustment of the amount of the rent to take account of the proposed terms if the landlord or the tenant considers it appropriate.",
+    "quote": "if the landlord or the tenant considers it appropriate, proposing an adjustment of the amount of the rent to take account of the proposed terms"
+   },
+   {
+    "requirement": "A landlord or tenant served with a notice proposing new terms may refer the notice to the appropriate tribunal by an application in the prescribed form within three months beginning on the date of service.",
+    "quote": "within the period of three months beginning on the date on which the notice was served on him, the landlord or the tenant, as the case may be, may, by an application in the prescribed form, refer the notice to the appropriate tribunal"
+   },
+   {
+    "requirement": "If a notice proposing terms is not referred to the appropriate tribunal within the three-month period, the proposed terms take effect in substitution for implied terms dealing with the same subject matter, and the rent is varied in accordance with any proposed adjustment, from the date specified in the notice (which cannot fall within the three-month period).",
+    "quote": "if the notice is not so referred, then, with effect from such date, not falling within the period referred to in paragraph (a) above, as may be specified in the notice, the terms proposed in the notice shall become terms of the tenancy in substitution for any of the implied terms dealing with the same subject matter and the amount of the rent shall be varied in accordance with any adjustment so proposed"
+   },
+   {
+    "requirement": "When a notice is referred to it, the appropriate tribunal must consider the proposed terms and determine whether those terms, or other terms covering the same subject matter, might reasonably be expected in an assured periodic tenancy of the dwelling-house granted by a willing landlord on the existing statutory periodic terms (other than the subject matter of the proposed terms) starting when the former tenancy ended.",
+    "quote": "the appropriate tribunal shall consider the terms proposed in the notice and shall determine whether those terms, or some other terms (dealing with the same subject matter as the proposed terms), are such as, in the appropriate tribunal’s opinion, might reasonably be expected to be found in an assured periodic tenancy of the dwelling-house concerned"
+   },
+   {
+    "requirement": "When determining terms following a notice referral, the appropriate tribunal must, if it considers it appropriate, specify a rent adjustment to reflect the determined terms, regardless of whether the notice originally proposed an adjustment of rent.",
+    "quote": "Whether or not a notice under subsection (2) above proposes an adjustment of the amount of the rent under the statutory periodic tenancy, where the appropriate tribunal determine any terms under subsection (4) above, they shall, if they consider it appropriate, specify such an adjustment to take account of the terms so determined"
+   },
+   {
+    "requirement": "The appropriate tribunal must disregard any effect on the terms or the rent amount attributable to granting a tenancy to a sitting tenant when making its determination or specifying a rent adjustment.",
+    "quote": "there shall be disregarded any effect on the terms or the amount of the rent attributable to the granting of a tenancy to a sitting tenant"
+   },
+   {
+    "requirement": "Unless the landlord and the tenant agree otherwise, the terms determined by the appropriate tribunal replace implied terms covering the same subject matter, and the rent is altered to reflect any specified adjustment, taking effect from a date directed by the tribunal.",
+    "quote": "unless the landlord and the tenant otherwise agree, with effect from such date as the appropriate tribunal may direct— (a) the terms determined by the appropriate tribunal shall become terms of the statutory periodic tenancy in substitution for any of the implied terms dealing with the same subject matter; and (b) the amount of the rent under the statutory periodic tenancy shall be altered to accord with any adjustment specified by the appropriate tribunal"
+   },
+   {
+    "requirement": "The appropriate tribunal cannot direct that a rent adjustment take effect on a date earlier than the date specified in the notice served by the landlord or tenant.",
+    "quote": "for the purposes of paragraph (b) above the appropriate tribunal shall not direct a date earlier than the date specified, in accordance with subsection (3)(b) above, in the notice referred to them"
+   },
+   {
+    "requirement": "The appropriate tribunal is not required to continue with a determination if the landlord and tenant provide written notice that they no longer require it, or if the tenancy has come to an end.",
+    "quote": "Nothing in this section requires the appropriate tribunal to continue with a determination under subsection (4) above if the landlord and tenant give notice in writing that they no longer require such a determination or if the tenancy has come to an end"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Time limit after the end of the former tenancy for serving a notice proposing different terms",
+    "value": "the first anniversary of the day on which the former tenancy came to an end",
+    "quote": "Not later than the first anniversary of the day on which the former tenancy came to an end"
+   },
+   {
+    "what": "Period within which the recipient of a notice proposing terms may refer it to the tribunal",
+    "value": "three months",
+    "quote": "within the period of three months beginning on the date on which the notice was served on him"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In relation to a statutory periodic tenancy, 'the former tenancy' means the fixed term tenancy on the coming to an end of which the statutory periodic tenancy arises.",
+   "quote": "“the former tenancy” means the fixed term tenancy on the coming to an end of which the statutory periodic tenancy arises"
+  },
+  {
+   "requirement": "In relation to a statutory periodic tenancy, 'the implied terms' means the terms of the tenancy that have effect by virtue of section 5(3)(e), excluding terms as to the amount of the rent.",
+   "quote": "“the implied terms” means the terms of the tenancy which have effect by virtue of section 5(3)(e) above, other than terms as to the amount of the rent"
+  },
+  {
+   "requirement": "The statutory periodic tenancy provisions of this section do not apply to a statutory periodic tenancy at any time when it cannot be an assured tenancy by virtue of paragraph 11 or paragraph 12 in Part 1 of Schedule 1 to the Housing Act 1988.",
+   "quote": "nothing in the following provisions of this section applies to a statutory periodic tenancy at a time when, by virtue of paragraph 11 or paragraph 12 in Part 1 of Schedule 1 to this Act, it cannot be an assured tenancy"
+  },
+  {
+   "requirement": "A landlord may serve on the tenant, or a tenant may serve on the landlord, a notice in the prescribed form proposing terms of the statutory periodic tenancy different from the implied terms no later than the first anniversary of the day on which the former tenancy ended.",
+   "quote": "Not later than the first anniversary of the day on which the former tenancy came to an end, the landlord may serve on the tenant, or the tenant may serve on the landlord, a notice in the prescribed form proposing terms of the statutory periodic tenancy different from the implied terms"
+  },
+  {
+   "requirement": "A notice proposing new terms may also propose an adjustment of the amount of the rent to take account of the proposed terms if the landlord or the tenant considers it appropriate.",
+   "quote": "if the landlord or the tenant considers it appropriate, proposing an adjustment of the amount of the rent to take account of the proposed terms"
+  },
+  {
+   "requirement": "A landlord or tenant served with a notice proposing new terms may refer the notice to the appropriate tribunal by an application in the prescribed form within three months beginning on the date of service.",
+   "quote": "within the period of three months beginning on the date on which the notice was served on him, the landlord or the tenant, as the case may be, may, by an application in the prescribed form, refer the notice to the appropriate tribunal"
+  },
+  {
+   "requirement": "If a notice proposing terms is not referred to the appropriate tribunal within the three-month period, the proposed terms take effect in substitution for implied terms dealing with the same subject matter, and the rent is varied in accordance with any proposed adjustment, from the date specified in the notice (which cannot fall within the three-month period).",
+   "quote": "if the notice is not so referred, then, with effect from such date, not falling within the period referred to in paragraph (a) above, as may be specified in the notice, the terms proposed in the notice shall become terms of the tenancy in substitution for any of the implied terms dealing with the same subject matter and the amount of the rent shall be varied in accordance with any adjustment so proposed"
+  },
+  {
+   "requirement": "When a notice is referred to it, the appropriate tribunal must consider the proposed terms and determine whether those terms, or other terms covering the same subject matter, might reasonably be expected in an assured periodic tenancy of the dwelling-house granted by a willing landlord on the existing statutory periodic terms (other than the subject matter of the proposed terms) starting when the former tenancy ended.",
+   "quote": "the appropriate tribunal shall consider the terms proposed in the notice and shall determine whether those terms, or some other terms (dealing with the same subject matter as the proposed terms), are such as, in the appropriate tribunal’s opinion, might reasonably be expected to be found in an assured periodic tenancy of the dwelling-house concerned"
+  },
+  {
+   "requirement": "When determining terms following a notice referral, the appropriate tribunal must, if it considers it appropriate, specify a rent adjustment to reflect the determined terms, regardless of whether the notice originally proposed an adjustment of rent.",
+   "quote": "Whether or not a notice under subsection (2) above proposes an adjustment of the amount of the rent under the statutory periodic tenancy, where the appropriate tribunal determine any terms under subsection (4) above, they shall, if they consider it appropriate, specify such an adjustment to take account of the terms so determined"
+  },
+  {
+   "requirement": "The appropriate tribunal must disregard any effect on the terms or the rent amount attributable to granting a tenancy to a sitting tenant when making its determination or specifying a rent adjustment.",
+   "quote": "there shall be disregarded any effect on the terms or the amount of the rent attributable to the granting of a tenancy to a sitting tenant"
+  },
+  {
+   "requirement": "Unless the landlord and the tenant agree otherwise, the terms determined by the appropriate tribunal replace implied terms covering the same subject matter, and the rent is altered to reflect any specified adjustment, taking effect from a date directed by the tribunal.",
+   "quote": "unless the landlord and the tenant otherwise agree, with effect from such date as the appropriate tribunal may direct— (a) the terms determined by the appropriate tribunal shall become terms of the statutory periodic tenancy in substitution for any of the implied terms dealing with the same subject matter; and (b) the amount of the rent under the statutory periodic tenancy shall be altered to accord with any adjustment specified by the appropriate tribunal"
+  },
+  {
+   "requirement": "The appropriate tribunal cannot direct that a rent adjustment take effect on a date earlier than the date specified in the notice served by the landlord or tenant.",
+   "quote": "for the purposes of paragraph (b) above the appropriate tribunal shall not direct a date earlier than the date specified, in accordance with subsection (3)(b) above, in the notice referred to them"
+  },
+  {
+   "requirement": "The appropriate tribunal is not required to continue with a determination if the landlord and tenant provide written notice that they no longer require it, or if the tenancy has come to an end.",
+   "quote": "Nothing in this section requires the appropriate tribunal to continue with a determination under subsection (4) above if the landlord and tenant give notice in writing that they no longer require such a determination or if the tenancy has come to an end"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Period within which the recipient of a notice proposing terms may refer it to the tribunal",
+   "value": "three months",
+   "quote": "within the period of three months beginning on the date on which the notice was served on him"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

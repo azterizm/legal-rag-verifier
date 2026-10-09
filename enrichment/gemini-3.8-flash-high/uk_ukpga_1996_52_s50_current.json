@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1996/52/s50@current",
+ "section": "uk/ukpga/1996/52/s50",
+ "version": "current",
+ "source_sha256": "b46062e6aa07575a5d1b389904f0dac138d4ed6d2a4f9c4710c2b307b29744e5",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The landlord or any creditor of the landlord may apply to the High Court on the ground that an action of the manager appointed under section 46 is not in accordance with the agreed proposals.",
+    "quote": "The landlord or any creditor of the landlord may apply to the High Court on the ground that an action of the manager appointed under section 46 is not in accordance with the agreed proposals."
+   },
+   {
+    "requirement": "On an application made by the landlord or any creditor of the landlord, the court may confirm, reverse or modify any act or decision of the manager, give the manager directions, or make such other order as the court thinks fit.",
+    "quote": "On such an application the court may confirm, reverse or modify any act or decision of the manager, give him directions or make such other order as it thinks fit."
+   },
+   {
+    "requirement": "The Relevant Authority or any other person bound by agreed proposals may apply to the High Court on the ground that any action, or proposed action, by another person bound by the proposals is not in accordance with those proposals.",
+    "quote": "The Relevant Authority or any other person bound by agreed proposals may apply to the High Court on the ground that any action, or proposed action, by another person bound by the proposals is not in accordance with those proposals."
+   },
+   {
+    "requirement": "On an application by the Relevant Authority or another person bound by agreed proposals, the court may declare any action that is not in accordance with the proposals to be ineffective.",
+    "quote": "declare any such action to be ineffective"
+   },
+   {
+    "requirement": "On an application by the Relevant Authority or another person bound by agreed proposals, the court may grant such relief by way of injunction, damages or otherwise as appears to the court appropriate.",
+    "quote": "grant such relief by way of injunction, damages or otherwise as appears to the court appropriate."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The landlord or any creditor of the landlord may apply to the High Court on the ground that an action of the manager appointed under section 46 is not in accordance with the agreed proposals.",
+   "quote": "The landlord or any creditor of the landlord may apply to the High Court on the ground that an action of the manager appointed under section 46 is not in accordance with the agreed proposals."
+  },
+  {
+   "requirement": "On an application made by the landlord or any creditor of the landlord, the court may confirm, reverse or modify any act or decision of the manager, give the manager directions, or make such other order as the court thinks fit.",
+   "quote": "On such an application the court may confirm, reverse or modify any act or decision of the manager, give him directions or make such other order as it thinks fit."
+  },
+  {
+   "requirement": "The Relevant Authority or any other person bound by agreed proposals may apply to the High Court on the ground that any action, or proposed action, by another person bound by the proposals is not in accordance with those proposals.",
+   "quote": "The Relevant Authority or any other person bound by agreed proposals may apply to the High Court on the ground that any action, or proposed action, by another person bound by the proposals is not in accordance with those proposals."
+  },
+  {
+   "requirement": "On an application by the Relevant Authority or another person bound by agreed proposals, the court may declare any action that is not in accordance with the proposals to be ineffective.",
+   "quote": "declare any such action to be ineffective"
+  },
+  {
+   "requirement": "On an application by the Relevant Authority or another person bound by agreed proposals, the court may grant such relief by way of injunction, damages or otherwise as appears to the court appropriate.",
+   "quote": "grant such relief by way of injunction, damages or otherwise as appears to the court appropriate."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

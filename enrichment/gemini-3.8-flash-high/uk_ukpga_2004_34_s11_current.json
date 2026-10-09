@@ -1,0 +1,125 @@
+{
+ "key": "uk/ukpga/2004/34/s11@current",
+ "section": "uk/ukpga/2004/34/s11",
+ "version": "current",
+ "source_sha256": "fb29475da42f635161349fa470abf2a6de96cc467c89ee1bdec54ba88d6c9e0f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Serving an improvement notice in respect of a category 1 hazard is an available course of enforcement action for a local housing authority under section 5 if the authority is satisfied that the hazard exists on any residential premises and no management order is in force in relation to the premises under Chapter 1 or 2 of Part 4.",
+    "quote": "serving an improvement notice under this section in respect of the hazard is a course of action available to the authority in relation to the hazard for the purposes of section 5"
+   },
+   {
+    "requirement": "An improvement notice served under section 11 requires the person on whom it is served to take the remedial action in respect of the hazard specified in the notice in accordance with subsections (3) to (5) and section 13.",
+    "quote": "requiring the person on whom it is served to take such remedial action in respect of the hazard concerned as is specified in the notice"
+   },
+   {
+    "requirement": "If the residential premises on which the hazard exists are a dwelling or HMO that is not a flat, the improvement notice may require remedial action to be taken in relation to that dwelling or HMO.",
+    "quote": "if the residential premises on which the hazard exists are a dwelling or HMO which is not a flat, it may require such action to be taken in relation to the dwelling or HMO"
+   },
+   {
+    "requirement": "Subject to subsection (4), if the residential premises on which the hazard exists are one or more flats, the improvement notice may require remedial action to be taken in relation to the building containing the flat or flats (or any part of the building) or any external common parts.",
+    "quote": "if those premises are one or more flats, it may require such action to be taken in relation to the building containing the flat or flats (or any part of the building) or any external common parts"
+   },
+   {
+    "requirement": "Subject to subsection (4), if the residential premises on which the hazard exists are the common parts of a building containing one or more flats, the improvement notice may require remedial action to be taken in relation to the building (or any part of the building) or any external common parts.",
+    "quote": "if those premises are the common parts of a building containing one or more flats, it may require such action to be taken in relation to the building (or any part of the building) or any external common parts"
+   },
+   {
+    "requirement": "An improvement notice cannot require remedial action to be taken in relation to any part of a building or its external common parts not included in the residential premises where the hazard exists unless the local housing authority is satisfied that the deficiency from which the hazard arises is situated there and that taking such action is necessary to protect the health or safety of any actual or potential occupiers of one or more of the flats.",
+    "quote": "The notice may not, by virtue of subsection (3)(b) or (c), require any remedial action to be taken in relation to any part of the building or its external common parts that is not included in any residential premises on which the hazard exists, unless the authority are satisfied"
+   },
+   {
+    "requirement": "The remedial action required by an improvement notice must, as a minimum, be sufficient to ensure that the hazard ceases to be a category 1 hazard, but it may extend beyond such action.",
+    "quote": "must, as a minimum, be such as to ensure that the hazard ceases to be a category 1 hazard; but (b) may extend beyond such action"
+   },
+   {
+    "requirement": "An improvement notice under section 11 may relate to more than one category 1 hazard on the same premises or in the same building containing one or more flats.",
+    "quote": "An improvement notice under this section may relate to more than one category 1 hazard on the same premises or in the same building containing one or more flats."
+   },
+   {
+    "requirement": "The operation of an improvement notice under section 11 may be suspended in accordance with section 14.",
+    "quote": "The operation of an improvement notice under this section may be suspended in accordance with section 14."
+   },
+   {
+    "requirement": "For the purposes of Part 1, 'remedial action' in relation to a hazard means action (whether by carrying out works or otherwise) that, in the opinion of the local housing authority, will remove or reduce the hazard.",
+    "quote": "“remedial action”, in relation to a hazard, means action (whether in the form of carrying out works or otherwise) which, in the opinion of the local housing authority, will remove or reduce the hazard"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the category of hazard triggering enforcement action",
+    "value": "1",
+    "quote": "category 1 hazard"
+   },
+   {
+    "what": "minimum number of flats in a building for provisions regarding external common parts and building-wide remedial actions",
+    "value": "one or more",
+    "quote": "one or more flats"
+   },
+   {
+    "what": "number of category 1 hazards that may be included in a single improvement notice",
+    "value": "more than one",
+    "quote": "more than one category 1 hazard"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Serving an improvement notice in respect of a category 1 hazard is an available course of enforcement action for a local housing authority under section 5 if the authority is satisfied that the hazard exists on any residential premises and no management order is in force in relation to the premises under Chapter 1 or 2 of Part 4.",
+   "quote": "serving an improvement notice under this section in respect of the hazard is a course of action available to the authority in relation to the hazard for the purposes of section 5"
+  },
+  {
+   "requirement": "An improvement notice served under section 11 requires the person on whom it is served to take the remedial action in respect of the hazard specified in the notice in accordance with subsections (3) to (5) and section 13.",
+   "quote": "requiring the person on whom it is served to take such remedial action in respect of the hazard concerned as is specified in the notice"
+  },
+  {
+   "requirement": "If the residential premises on which the hazard exists are a dwelling or HMO that is not a flat, the improvement notice may require remedial action to be taken in relation to that dwelling or HMO.",
+   "quote": "if the residential premises on which the hazard exists are a dwelling or HMO which is not a flat, it may require such action to be taken in relation to the dwelling or HMO"
+  },
+  {
+   "requirement": "Subject to subsection (4), if the residential premises on which the hazard exists are one or more flats, the improvement notice may require remedial action to be taken in relation to the building containing the flat or flats (or any part of the building) or any external common parts.",
+   "quote": "if those premises are one or more flats, it may require such action to be taken in relation to the building containing the flat or flats (or any part of the building) or any external common parts"
+  },
+  {
+   "requirement": "Subject to subsection (4), if the residential premises on which the hazard exists are the common parts of a building containing one or more flats, the improvement notice may require remedial action to be taken in relation to the building (or any part of the building) or any external common parts.",
+   "quote": "if those premises are the common parts of a building containing one or more flats, it may require such action to be taken in relation to the building (or any part of the building) or any external common parts"
+  },
+  {
+   "requirement": "An improvement notice cannot require remedial action to be taken in relation to any part of a building or its external common parts not included in the residential premises where the hazard exists unless the local housing authority is satisfied that the deficiency from which the hazard arises is situated there and that taking such action is necessary to protect the health or safety of any actual or potential occupiers of one or more of the flats.",
+   "quote": "The notice may not, by virtue of subsection (3)(b) or (c), require any remedial action to be taken in relation to any part of the building or its external common parts that is not included in any residential premises on which the hazard exists, unless the authority are satisfied"
+  },
+  {
+   "requirement": "The remedial action required by an improvement notice must, as a minimum, be sufficient to ensure that the hazard ceases to be a category 1 hazard, but it may extend beyond such action.",
+   "quote": "must, as a minimum, be such as to ensure that the hazard ceases to be a category 1 hazard; but (b) may extend beyond such action"
+  },
+  {
+   "requirement": "An improvement notice under section 11 may relate to more than one category 1 hazard on the same premises or in the same building containing one or more flats.",
+   "quote": "An improvement notice under this section may relate to more than one category 1 hazard on the same premises or in the same building containing one or more flats."
+  },
+  {
+   "requirement": "The operation of an improvement notice under section 11 may be suspended in accordance with section 14.",
+   "quote": "The operation of an improvement notice under this section may be suspended in accordance with section 14."
+  },
+  {
+   "requirement": "For the purposes of Part 1, 'remedial action' in relation to a hazard means action (whether by carrying out works or otherwise) that, in the opinion of the local housing authority, will remove or reduce the hazard.",
+   "quote": "“remedial action”, in relation to a hazard, means action (whether in the form of carrying out works or otherwise) which, in the opinion of the local housing authority, will remove or reduce the hazard"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the category of hazard triggering enforcement action",
+   "value": "1",
+   "quote": "category 1 hazard"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "key": "uk/ukpga/2018/12/s137@current",
+ "section": "uk/ukpga/2018/12/s137",
+ "version": "current",
+ "source_sha256": "d33996211e2ba7563159aa8719119e5d10550c80ca889bee7b8059ae7c8c70cd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State may by regulations require controllers to pay charges of an amount specified in the regulations to the Information Commissioner.",
+    "quote": "The Secretary of State may by regulations require controllers to pay charges of an amount specified in the regulations to the Commissioner."
+   },
+   {
+    "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may require a controller to pay a charge regardless of whether the Information Commissioner has provided, or proposes to provide, a service to the controller.",
+    "quote": "require a controller to pay a charge regardless of whether the Commissioner has provided, or proposes to provide, a service to the controller"
+   },
+   {
+    "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision concerning the time or times at which, or period or periods within which, a charge must be paid.",
+    "quote": "make provision about the time or times at which, or period or periods within which, a charge must be paid"
+   },
+   {
+    "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision for cases in which a discounted charge is payable.",
+    "quote": "make provision for cases in which a discounted charge is payable"
+   },
+   {
+    "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision for cases in which no charge is payable.",
+    "quote": "make provision for cases in which no charge is payable"
+   },
+   {
+    "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision for cases in which a charge that has been paid is to be refunded.",
+    "quote": "make provision for cases in which a charge which has been paid is to be refunded"
+   },
+   {
+    "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset expenses incurred by the Information Commissioner in discharging functions under the data protection legislation, under the Data Protection Act 1998, under or by virtue of sections 108 and 109 of the Digital Economy Act 2017, and under or by virtue of the Privacy and Electronic Communications (EC Directive) Regulations 2003 (S.I. 2003/2426).",
+    "quote": "must have regard to the desirability of securing that the charges payable to the Commissioner under such regulations are sufficient to offset— (a) expenses incurred by the Commissioner in discharging the Commissioner's functions"
+   },
+   {
+    "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset any expenses of the Secretary of State in respect of the Information Commissioner so far as attributable to those specified functions.",
+    "quote": "any expenses of the Secretary of State in respect of the Commissioner so far as attributable to those functions"
+   },
+   {
+    "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset, to the extent the Secretary of State considers appropriate, any deficit previously incurred (whether before or after the passing of this Act) in respect of the Information Commissioner's specified expenses.",
+    "quote": "to the extent that the Secretary of State considers appropriate, any deficit previously incurred (whether before or after the passing of this Act) in respect of the expenses mentioned in paragraph (a)"
+   },
+   {
+    "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset, to the extent the Secretary of State considers appropriate, expenses incurred by the Secretary of State in respect of the inclusion of any officers or staff of the Information Commissioner in any scheme under section 1 of the Superannuation Act 1972 or section 1 of the Public Service Pensions Act 2013.",
+    "quote": "to the extent that the Secretary of State considers appropriate, expenses incurred by the Secretary of State in respect of the inclusion of any officers or staff of the Commissioner in any scheme under section 1 of the Superannuation Act 1972 or section 1 of the Public Service Pensions Act 2013"
+   },
+   {
+    "requirement": "The Secretary of State may from time to time require the Information Commissioner to provide information about the expenses incurred by the Information Commissioner in discharging the specified statutory functions.",
+    "quote": "The Secretary of State may from time to time require the Commissioner to provide information about the expenses referred to in subsection (4)(a)."
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision requiring a controller to provide information to the Information Commissioner for the purpose of determining whether a charge is payable by the controller, determining the amount of a charge payable by the controller, or both.",
+    "quote": "requiring a controller to provide information to the Commissioner, or (b) enabling the Commissioner to require a controller to provide information to the Commissioner, for either or both of the purposes mentioned in subsection (7)"
+   },
+   {
+    "requirement": "The Secretary of State may by regulations make provision enabling the Information Commissioner to require a controller to provide information to the Information Commissioner for the purpose of determining whether a charge is payable by the controller, determining the amount of a charge payable by the controller, or both.",
+    "quote": "enabling the Commissioner to require a controller to provide information to the Commissioner, for either or both of the purposes mentioned in subsection (7)"
+   },
+   {
+    "requirement": "Regulations requiring a controller to provide information to the Information Commissioner may include provision requiring a controller to notify the Information Commissioner of a change in the controller's circumstances of a kind specified in the regulations.",
+    "quote": "includes provision requiring a controller to notify the Commissioner of a change in the controller's circumstances of a kind specified in the regulations"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State may by regulations require controllers to pay charges of an amount specified in the regulations to the Information Commissioner.",
+   "quote": "The Secretary of State may by regulations require controllers to pay charges of an amount specified in the regulations to the Commissioner."
+  },
+  {
+   "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may require a controller to pay a charge regardless of whether the Information Commissioner has provided, or proposes to provide, a service to the controller.",
+   "quote": "require a controller to pay a charge regardless of whether the Commissioner has provided, or proposes to provide, a service to the controller"
+  },
+  {
+   "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision concerning the time or times at which, or period or periods within which, a charge must be paid.",
+   "quote": "make provision about the time or times at which, or period or periods within which, a charge must be paid"
+  },
+  {
+   "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision for cases in which a discounted charge is payable.",
+   "quote": "make provision for cases in which a discounted charge is payable"
+  },
+  {
+   "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision for cases in which no charge is payable.",
+   "quote": "make provision for cases in which no charge is payable"
+  },
+  {
+   "requirement": "Regulations requiring controllers to pay charges to the Information Commissioner may make provision for cases in which a charge that has been paid is to be refunded.",
+   "quote": "make provision for cases in which a charge which has been paid is to be refunded"
+  },
+  {
+   "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset expenses incurred by the Information Commissioner in discharging functions under the data protection legislation, under the Data Protection Act 1998, under or by virtue of sections 108 and 109 of the Digital Economy Act 2017, and under or by virtue of the Privacy and Electronic Communications (EC Directive) Regulations 2003 (S.I. 2003/2426).",
+   "quote": "must have regard to the desirability of securing that the charges payable to the Commissioner under such regulations are sufficient to offset— (a) expenses incurred by the Commissioner in discharging the Commissioner's functions"
+  },
+  {
+   "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset any expenses of the Secretary of State in respect of the Information Commissioner so far as attributable to those specified functions.",
+   "quote": "any expenses of the Secretary of State in respect of the Commissioner so far as attributable to those functions"
+  },
+  {
+   "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset, to the extent the Secretary of State considers appropriate, any deficit previously incurred (whether before or after the passing of this Act) in respect of the Information Commissioner's specified expenses.",
+   "quote": "to the extent that the Secretary of State considers appropriate, any deficit previously incurred (whether before or after the passing of this Act) in respect of the expenses mentioned in paragraph (a)"
+  },
+  {
+   "requirement": "In making regulations requiring controllers to pay charges, the Secretary of State must have regard to the desirability of securing that charges payable to the Information Commissioner are sufficient to offset, to the extent the Secretary of State considers appropriate, expenses incurred by the Secretary of State in respect of the inclusion of any officers or staff of the Information Commissioner in any scheme under section 1 of the Superannuation Act 1972 or section 1 of the Public Service Pensions Act 2013.",
+   "quote": "to the extent that the Secretary of State considers appropriate, expenses incurred by the Secretary of State in respect of the inclusion of any officers or staff of the Commissioner in any scheme under section 1 of the Superannuation Act 1972 or section 1 of the Public Service Pensions Act 2013"
+  },
+  {
+   "requirement": "The Secretary of State may from time to time require the Information Commissioner to provide information about the expenses incurred by the Information Commissioner in discharging the specified statutory functions.",
+   "quote": "The Secretary of State may from time to time require the Commissioner to provide information about the expenses referred to in subsection (4)(a)."
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision requiring a controller to provide information to the Information Commissioner for the purpose of determining whether a charge is payable by the controller, determining the amount of a charge payable by the controller, or both.",
+   "quote": "requiring a controller to provide information to the Commissioner, or (b) enabling the Commissioner to require a controller to provide information to the Commissioner, for either or both of the purposes mentioned in subsection (7)"
+  },
+  {
+   "requirement": "The Secretary of State may by regulations make provision enabling the Information Commissioner to require a controller to provide information to the Information Commissioner for the purpose of determining whether a charge is payable by the controller, determining the amount of a charge payable by the controller, or both.",
+   "quote": "enabling the Commissioner to require a controller to provide information to the Commissioner, for either or both of the purposes mentioned in subsection (7)"
+  },
+  {
+   "requirement": "Regulations requiring a controller to provide information to the Information Commissioner may include provision requiring a controller to notify the Information Commissioner of a change in the controller's circumstances of a kind specified in the regulations.",
+   "quote": "includes provision requiring a controller to notify the Commissioner of a change in the controller's circumstances of a kind specified in the regulations"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

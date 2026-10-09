@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1998/20/s15@current",
+ "section": "uk/ukpga/1998/20/s15",
+ "version": "current",
+ "source_sha256": "e127e184c414a8c97ac9b9cbd150120679273d46edd81841bf2c7072930fcd37",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any power to make an order or regulations under the Late Payment of Commercial Debts (Interest) Act 1998 is exercisable by statutory instrument.",
+    "quote": "Any power to make an order or regulations under this Act is exercisable by statutory instrument"
+   },
+   {
+    "requirement": "Any statutory instrument containing an order or regulations under the Late Payment of Commercial Debts (Interest) Act 1998, other than an order under section 17(2), is subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "Any statutory instrument containing an order or regulations under this Act, other than an order under section 17(2), shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+   },
+   {
+    "requirement": "An order made under section 17(2) is excepted from being subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "other than an order under section 17(2)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any power to make an order or regulations under the Late Payment of Commercial Debts (Interest) Act 1998 is exercisable by statutory instrument.",
+   "quote": "Any power to make an order or regulations under this Act is exercisable by statutory instrument"
+  },
+  {
+   "requirement": "Any statutory instrument containing an order or regulations under the Late Payment of Commercial Debts (Interest) Act 1998, other than an order under section 17(2), is subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "Any statutory instrument containing an order or regulations under this Act, other than an order under section 17(2), shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+  },
+  {
+   "requirement": "An order made under section 17(2) is excepted from being subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "other than an order under section 17(2)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

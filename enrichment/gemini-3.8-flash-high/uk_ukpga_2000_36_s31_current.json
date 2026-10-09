@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/2000/36/s31@current",
+ "section": "uk/ukpga/2000/36/s31",
+ "version": "current",
+ "source_sha256": "ca2ff33602b84059f11d347eefcabb6a35e9395e6e63e99b66e24f2fc4f76461",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the prevention or detection of crime.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (a) the prevention or detection of crime"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the apprehension or prosecution of offenders.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (b) the apprehension or prosecution of offenders"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the administration of justice.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (c) the administration of justice"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the assessment or collection of any tax or duty or of any imposition of a similar nature.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (d) the assessment or collection of any tax or duty or of any imposition of a similar nature"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the operation of the immigration controls.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (e) the operation of the immigration controls"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the maintenance of security and good order in prisons or in other institutions where persons are lawfully detained.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (f) the maintenance of security and good order in prisons or in other institutions where persons are lawfully detained"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the exercise by any public authority of its functions for any of the purposes specified in section 31(2).",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (g) the exercise by any public authority of its functions for any of the purposes specified in subsection (2)"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice any civil proceedings brought by or on behalf of a public authority that arise out of an investigation conducted, for any of the purposes specified in section 31(2), by or on behalf of the authority by virtue of Her Majesty's prerogative or by virtue of powers conferred by or under an enactment.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (h) any civil proceedings which are brought by or on behalf of a public authority and arise out of an investigation conducted, for any of the purposes specified in subsection (2), by or on behalf of the authority by virtue of Her Majesty’s prerogative or by virtue of powers conferred by or under an enactment"
+   },
+   {
+    "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice any inquiry held under the Inquiries into Fatal Accidents and Sudden Deaths etc. (Scotland) Act 2016 to the extent that the inquiry arises out of an investigation conducted, for any of the purposes specified in section 31(2), by or on behalf of the authority by virtue of Her Majesty's prerogative or by virtue of powers conferred by or under an enactment.",
+    "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (i) any inquiry held under the Inquiries into Fatal Accidents and Sudden Deaths etc. (Scotland) Act 2016 to the extent that the inquiry arises out of an investigation conducted, for any of the purposes specified in subsection (2), by or on behalf of the authority by virtue of Her Majesty’s prerogative or by virtue of powers conferred by or under an enactment"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining whether any person has failed to comply with the law.",
+    "quote": "(a) the purpose of ascertaining whether any person has failed to comply with the law"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining whether any person is responsible for any conduct which is improper.",
+    "quote": "(b) the purpose of ascertaining whether any person is responsible for any conduct which is improper"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining whether circumstances exist or may arise that would justify regulatory action in pursuance of any enactment.",
+    "quote": "(c) the purpose of ascertaining whether circumstances which would justify regulatory action in pursuance of any enactment exist or may arise"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining a person's fitness or competence in relation to the management of bodies corporate or in relation to any profession or other activity which that person is, or seeks to become, authorised to carry on.",
+    "quote": "(d) the purpose of ascertaining a person’s fitness or competence in relation to the management of bodies corporate or in relation to any profession or other activity which he is, or seeks to become, authorised to carry on"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining the cause of an accident.",
+    "quote": "(e) the purpose of ascertaining the cause of an accident"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of protecting charities against misconduct or mismanagement (whether by trustees or other persons) in their administration.",
+    "quote": "(f) the purpose of protecting charities against misconduct or mismanagement (whether by trustees or other persons) in their administration"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of protecting the property of charities from loss or misapplication.",
+    "quote": "(g) the purpose of protecting the property of charities from loss or misapplication"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of recovering the property of charities.",
+    "quote": "(h) the purpose of recovering the property of charities"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of securing the health, safety and welfare of persons at work.",
+    "quote": "(i) the purpose of securing the health, safety and welfare of persons at work"
+   },
+   {
+    "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of protecting persons other than persons at work against risk to health or safety arising out of or in connection with the actions of persons at work.",
+    "quote": "(j) the purpose of protecting persons other than persons at work against risk to health or safety arising out of or in connection with the actions of persons at work"
+   },
+   {
+    "requirement": "A public authority's duty to confirm or deny does not arise if, or to the extent that, compliance with section 1(1)(a) would, or would be likely to, prejudice any of the matters mentioned in section 31(1).",
+    "quote": "The duty to confirm or deny does not arise if, or to the extent that, compliance with section 1(1)(a) would, or would be likely to, prejudice any of the matters mentioned in subsection (1)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the calendar year cited in the title of the Fatal Accidents and Sudden Deaths inquiry statute",
+    "value": "2016",
+    "quote": "Inquiries into Fatal Accidents and Sudden Deaths etc. (Scotland) Act 2016"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Information that is not exempt information by virtue of section 30 is exempt information if its disclosure under the Freedom of Information Act 2000 would, or would be likely to, prejudice the prevention or detection of crime.",
+   "quote": "Information which is not exempt information by virtue of section 30 is exempt information if its disclosure under this Act would, or would be likely to, prejudice— (a) the prevention or detection of crime"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining whether any person has failed to comply with the law.",
+   "quote": "(a) the purpose of ascertaining whether any person has failed to comply with the law"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining whether any person is responsible for any conduct which is improper.",
+   "quote": "(b) the purpose of ascertaining whether any person is responsible for any conduct which is improper"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining whether circumstances exist or may arise that would justify regulatory action in pursuance of any enactment.",
+   "quote": "(c) the purpose of ascertaining whether circumstances which would justify regulatory action in pursuance of any enactment exist or may arise"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining a person's fitness or competence in relation to the management of bodies corporate or in relation to any profession or other activity which that person is, or seeks to become, authorised to carry on.",
+   "quote": "(d) the purpose of ascertaining a person’s fitness or competence in relation to the management of bodies corporate or in relation to any profession or other activity which he is, or seeks to become, authorised to carry on"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of ascertaining the cause of an accident.",
+   "quote": "(e) the purpose of ascertaining the cause of an accident"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of protecting charities against misconduct or mismanagement (whether by trustees or other persons) in their administration.",
+   "quote": "(f) the purpose of protecting charities against misconduct or mismanagement (whether by trustees or other persons) in their administration"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of protecting the property of charities from loss or misapplication.",
+   "quote": "(g) the purpose of protecting the property of charities from loss or misapplication"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of recovering the property of charities.",
+   "quote": "(h) the purpose of recovering the property of charities"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of securing the health, safety and welfare of persons at work.",
+   "quote": "(i) the purpose of securing the health, safety and welfare of persons at work"
+  },
+  {
+   "requirement": "The statutory purposes referred to in section 31(1)(g) to (i) include the purpose of protecting persons other than persons at work against risk to health or safety arising out of or in connection with the actions of persons at work.",
+   "quote": "(j) the purpose of protecting persons other than persons at work against risk to health or safety arising out of or in connection with the actions of persons at work"
+  },
+  {
+   "requirement": "A public authority's duty to confirm or deny does not arise if, or to the extent that, compliance with section 1(1)(a) would, or would be likely to, prejudice any of the matters mentioned in section 31(1).",
+   "quote": "The duty to confirm or deny does not arise if, or to the extent that, compliance with section 1(1)(a) would, or would be likely to, prejudice any of the matters mentioned in subsection (1)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

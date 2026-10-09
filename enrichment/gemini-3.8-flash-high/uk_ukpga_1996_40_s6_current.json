@@ -1,0 +1,150 @@
+{
+ "key": "uk/ukpga/1996/40/s6@current",
+ "section": "uk/ukpga/1996/40/s6",
+ "version": "current",
+ "source_sha256": "c3214c1ed89f591dfc51baa63977fbd3d489f940d7f82e6433c00d0ebde7fbfa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 6 applies where a building owner proposes to excavate, or excavate for and erect a building or structure, within a distance of three metres measured horizontally from any part of an adjoining owner's building or structure, and any part of the proposed work will within those three metres extend to a lower level than the level of the bottom of the foundations of the adjoining owner's building or structure.",
+    "quote": "This section applies where"
+   },
+   {
+    "requirement": "Section 6 applies where a building owner proposes to excavate, or excavate for and erect a building or structure, within a distance of six metres measured horizontally from any part of an adjoining owner's building or structure, and any part of the proposed work will within those six metres meet a plane drawn downwards in the direction of the excavation, building or structure at an angle of forty-five degrees to the horizontal from the line formed by the intersection of the plane of the level of the bottom of the foundations of the adjoining owner's building or structure with the plane of the external face of its external wall.",
+    "quote": "This section also applies where"
+   },
+   {
+    "requirement": "The building owner may, and must if required by the adjoining owner, underpin or otherwise strengthen or safeguard the foundations of the adjoining owner's building or structure at the building owner's own expense so far as may be necessary.",
+    "quote": "The building owner may, and if required by the adjoining owner shall, at his own expense underpin or otherwise strengthen or safeguard the foundations of the building or structure of the adjoining owner so far as may be necessary."
+   },
+   {
+    "requirement": "Owners of buildings or structures that are within the respective distances of three metres or six metres are deemed to be adjoining owners for the purposes of section 6.",
+    "quote": "Where the buildings or structures of different owners are within the respective distances mentioned in subsections (1) and (2) the owners of those buildings or structures shall be deemed to be adjoining owners for the purposes of this section."
+   },
+   {
+    "requirement": "In any case where section 6 applies, the building owner must serve on the adjoining owner a notice indicating proposals and stating whether the building owner proposes to underpin or otherwise strengthen or safeguard the foundations of the adjoining owner's building or structure at least one month before beginning to excavate or excavate for and erect a building or structure.",
+    "quote": "the building owner shall, at least one month before beginning to excavate, or excavate for and erect a building or structure, serve on the adjoining owner a notice indicating his proposals and stating whether he proposes to underpin or otherwise strengthen or safeguard the foundations"
+   },
+   {
+    "requirement": "The building owner's notice must be accompanied by plans and sections showing the site and depth of any proposed excavation and, if proposing to erect a building or structure, its site.",
+    "quote": "The notice referred to in subsection (5) shall be accompanied by plans and sections showing— (a) the site and depth of any excavation the building owner proposes to make; (b) if he proposes to erect a building or structure, its site."
+   },
+   {
+    "requirement": "An owner served with the building owner's notice is deemed to have dissented from the notice and a dispute is deemed to have arisen between the parties if that owner does not serve a notice indicating consent within the period of fourteen days beginning with the day on which the notice was served.",
+    "quote": "If an owner on whom a notice referred to in subsection (5) has been served does not serve a notice indicating his consent to it within the period of fourteen days beginning with the day on which the notice referred to in subsection (5) was served, he shall be deemed to have dissented from the notice and a dispute shall be deemed to have arisen between the parties."
+   },
+   {
+    "requirement": "The notice served by the building owner ceases to have effect if the work to which it relates has not begun within the period of twelve months beginning with the day on which the notice was served and is not prosecuted with due diligence.",
+    "quote": "The notice referred to in subsection (5) shall cease to have effect if the work to which the notice relates— (a) has not begun within the period of twelve months beginning with the day on which the notice was served; and (b) is not prosecuted with due diligence."
+   },
+   {
+    "requirement": "The building owner must, if requested by the adjoining owner, supply that adjoining owner with particulars including plans and sections of the work on completion of any work executed in pursuance of section 6.",
+    "quote": "On completion of any work executed in pursuance of this section the building owner shall if so requested by the adjoining owner supply him with particulars including plans and sections of the work."
+   },
+   {
+    "requirement": "Nothing in section 6 relieves the building owner from any liability to which the building owner would otherwise be subject for injury to any adjoining owner or any adjoining occupier by reason of work executed by the building owner.",
+    "quote": "Nothing in this section shall relieve the building owner from any liability to which he would otherwise be subject for injury to any adjoining owner or any adjoining occupier by reason of work executed by him."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "horizontal distance from any part of an adjoining owner's building or structure within which excavation or erection work triggers subsection (1)",
+    "value": "three metres",
+    "quote": "within a distance of three metres measured horizontally"
+   },
+   {
+    "what": "horizontal distance from any part of an adjoining owner's building or structure within which excavation or erection work triggers subsection (2)",
+    "value": "six metres",
+    "quote": "within a distance of six metres measured horizontally"
+   },
+   {
+    "what": "angle to the horizontal of the downwards plane used to determine the application of subsection (2)",
+    "value": "forty-five degrees",
+    "quote": "an angle of forty-five degrees to the horizontal"
+   },
+   {
+    "what": "minimum time period before beginning excavation or erection works by which the building owner must serve notice on the adjoining owner",
+    "value": "one month",
+    "quote": "at least one month before beginning to excavate"
+   },
+   {
+    "what": "period beginning with the day of service of the notice within which the recipient must serve notice of consent to avoid deemed dissent and dispute",
+    "value": "fourteen days",
+    "quote": "period of fourteen days beginning with the day on which the notice referred to in subsection (5) was served"
+   },
+   {
+    "what": "period beginning with the day of service of the notice within which the work must begin to prevent the notice from ceasing to have effect",
+    "value": "twelve months",
+    "quote": "period of twelve months beginning with the day on which the notice was served"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 6 applies where a building owner proposes to excavate, or excavate for and erect a building or structure, within a distance of three metres measured horizontally from any part of an adjoining owner's building or structure, and any part of the proposed work will within those three metres extend to a lower level than the level of the bottom of the foundations of the adjoining owner's building or structure.",
+   "quote": "This section applies where"
+  },
+  {
+   "requirement": "Section 6 applies where a building owner proposes to excavate, or excavate for and erect a building or structure, within a distance of six metres measured horizontally from any part of an adjoining owner's building or structure, and any part of the proposed work will within those six metres meet a plane drawn downwards in the direction of the excavation, building or structure at an angle of forty-five degrees to the horizontal from the line formed by the intersection of the plane of the level of the bottom of the foundations of the adjoining owner's building or structure with the plane of the external face of its external wall.",
+   "quote": "This section also applies where"
+  },
+  {
+   "requirement": "The building owner may, and must if required by the adjoining owner, underpin or otherwise strengthen or safeguard the foundations of the adjoining owner's building or structure at the building owner's own expense so far as may be necessary.",
+   "quote": "The building owner may, and if required by the adjoining owner shall, at his own expense underpin or otherwise strengthen or safeguard the foundations of the building or structure of the adjoining owner so far as may be necessary."
+  },
+  {
+   "requirement": "Owners of buildings or structures that are within the respective distances of three metres or six metres are deemed to be adjoining owners for the purposes of section 6.",
+   "quote": "Where the buildings or structures of different owners are within the respective distances mentioned in subsections (1) and (2) the owners of those buildings or structures shall be deemed to be adjoining owners for the purposes of this section."
+  },
+  {
+   "requirement": "In any case where section 6 applies, the building owner must serve on the adjoining owner a notice indicating proposals and stating whether the building owner proposes to underpin or otherwise strengthen or safeguard the foundations of the adjoining owner's building or structure at least one month before beginning to excavate or excavate for and erect a building or structure.",
+   "quote": "the building owner shall, at least one month before beginning to excavate, or excavate for and erect a building or structure, serve on the adjoining owner a notice indicating his proposals and stating whether he proposes to underpin or otherwise strengthen or safeguard the foundations"
+  },
+  {
+   "requirement": "The building owner's notice must be accompanied by plans and sections showing the site and depth of any proposed excavation and, if proposing to erect a building or structure, its site.",
+   "quote": "The notice referred to in subsection (5) shall be accompanied by plans and sections showing— (a) the site and depth of any excavation the building owner proposes to make; (b) if he proposes to erect a building or structure, its site."
+  },
+  {
+   "requirement": "An owner served with the building owner's notice is deemed to have dissented from the notice and a dispute is deemed to have arisen between the parties if that owner does not serve a notice indicating consent within the period of fourteen days beginning with the day on which the notice was served.",
+   "quote": "If an owner on whom a notice referred to in subsection (5) has been served does not serve a notice indicating his consent to it within the period of fourteen days beginning with the day on which the notice referred to in subsection (5) was served, he shall be deemed to have dissented from the notice and a dispute shall be deemed to have arisen between the parties."
+  },
+  {
+   "requirement": "The notice served by the building owner ceases to have effect if the work to which it relates has not begun within the period of twelve months beginning with the day on which the notice was served and is not prosecuted with due diligence.",
+   "quote": "The notice referred to in subsection (5) shall cease to have effect if the work to which the notice relates— (a) has not begun within the period of twelve months beginning with the day on which the notice was served; and (b) is not prosecuted with due diligence."
+  },
+  {
+   "requirement": "The building owner must, if requested by the adjoining owner, supply that adjoining owner with particulars including plans and sections of the work on completion of any work executed in pursuance of section 6.",
+   "quote": "On completion of any work executed in pursuance of this section the building owner shall if so requested by the adjoining owner supply him with particulars including plans and sections of the work."
+  },
+  {
+   "requirement": "Nothing in section 6 relieves the building owner from any liability to which the building owner would otherwise be subject for injury to any adjoining owner or any adjoining occupier by reason of work executed by the building owner.",
+   "quote": "Nothing in this section shall relieve the building owner from any liability to which he would otherwise be subject for injury to any adjoining owner or any adjoining occupier by reason of work executed by him."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum time period before beginning excavation or erection works by which the building owner must serve notice on the adjoining owner",
+   "value": "one month",
+   "quote": "at least one month before beginning to excavate"
+  },
+  {
+   "what": "period beginning with the day of service of the notice within which the recipient must serve notice of consent to avoid deemed dissent and dispute",
+   "value": "fourteen days",
+   "quote": "period of fourteen days beginning with the day on which the notice referred to in subsection (5) was served"
+  },
+  {
+   "what": "period beginning with the day of service of the notice within which the work must begin to prevent the notice from ceasing to have effect",
+   "value": "twelve months",
+   "quote": "period of twelve months beginning with the day on which the notice was served"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 6,
+  "thresholds_verified": 3
+ }
+}

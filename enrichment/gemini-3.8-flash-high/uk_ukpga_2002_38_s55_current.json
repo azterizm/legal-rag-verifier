@@ -1,0 +1,61 @@
+{
+ "key": "uk/ukpga/2002/38/s55@current",
+ "section": "uk/ukpga/2002/38/s55",
+ "version": "current",
+ "source_sha256": "d800a26d16ac80241ef4b4d378519849002f8e3205aa860f0a43616bbb665a2f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The provision applies where a child was adopted by one natural parent acting as the sole adoptive parent.",
+    "quote": "child adopted by one natural parent as sole adoptive parent"
+   },
+   {
+    "requirement": "The adopted child must subsequently become a legitimated person upon the marriage of, or the formation of a civil partnership by, the child's natural parents.",
+    "quote": "subsequently becomes a legitimated person on the marriage of, or formation of a civil partnership by, the natural parents"
+   },
+   {
+    "requirement": "An application to revoke the adoption order must be made by any of the parties concerned.",
+    "quote": "on the application of any of the parties concerned"
+   },
+   {
+    "requirement": "The court by which the adoption order was made has the power to revoke the adoption order.",
+    "quote": "the court by which the adoption order was made may, on the application of any of the parties concerned, revoke the order"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of natural parents who adopted the child as sole adoptive parent",
+    "value": "one",
+    "quote": "one natural parent as sole adoptive parent"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The provision applies where a child was adopted by one natural parent acting as the sole adoptive parent.",
+   "quote": "child adopted by one natural parent as sole adoptive parent"
+  },
+  {
+   "requirement": "The adopted child must subsequently become a legitimated person upon the marriage of, or the formation of a civil partnership by, the child's natural parents.",
+   "quote": "subsequently becomes a legitimated person on the marriage of, or formation of a civil partnership by, the natural parents"
+  },
+  {
+   "requirement": "An application to revoke the adoption order must be made by any of the parties concerned.",
+   "quote": "on the application of any of the parties concerned"
+  },
+  {
+   "requirement": "The court by which the adoption order was made has the power to revoke the adoption order.",
+   "quote": "the court by which the adoption order was made may, on the application of any of the parties concerned, revoke the order"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

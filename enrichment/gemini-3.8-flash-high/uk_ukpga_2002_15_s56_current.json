@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2002/15/s56@current",
+ "section": "uk/ukpga/2002/15/s56",
+ "version": "current",
+ "source_sha256": "8584edd3afa1cde1755ed00d9575aa4e7e8b24e549583feb601363ad63afc23d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 39(4) ceases to have effect in relation to a commonhold association in respect of debts and liabilities accruing at any time if the court makes a winding-up order in respect of the association.",
+    "quote": "Section 39(4) shall cease to have effect in relation to a commonhold association (in respect of debts and liabilities accruing at any time) if— (a) the court makes a winding-up order in respect of the association"
+   },
+   {
+    "requirement": "Section 39(4) ceases to have effect in relation to a commonhold association in respect of debts and liabilities accruing at any time if the association passes a voluntary winding-up resolution.",
+    "quote": "the association passes a voluntary winding-up resolution"
+   },
+   {
+    "requirement": "Section 39(4) ceases to have effect in relation to a commonhold association in respect of debts and liabilities accruing at any time if the court makes an order by virtue of section 6(6)(c) or 40(3)(d) for all the land in relation to which the association exercises functions to cease to be commonhold land.",
+    "quote": "the court makes an order by virtue of section 6(6)(c) or 40(3)(d) for all the land in relation to which the association exercises functions to cease to be commonhold land"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 39(4) ceases to have effect in relation to a commonhold association in respect of debts and liabilities accruing at any time if the court makes a winding-up order in respect of the association.",
+   "quote": "Section 39(4) shall cease to have effect in relation to a commonhold association (in respect of debts and liabilities accruing at any time) if— (a) the court makes a winding-up order in respect of the association"
+  },
+  {
+   "requirement": "Section 39(4) ceases to have effect in relation to a commonhold association in respect of debts and liabilities accruing at any time if the association passes a voluntary winding-up resolution.",
+   "quote": "the association passes a voluntary winding-up resolution"
+  },
+  {
+   "requirement": "Section 39(4) ceases to have effect in relation to a commonhold association in respect of debts and liabilities accruing at any time if the court makes an order by virtue of section 6(6)(c) or 40(3)(d) for all the land in relation to which the association exercises functions to cease to be commonhold land.",
+   "quote": "the court makes an order by virtue of section 6(6)(c) or 40(3)(d) for all the land in relation to which the association exercises functions to cease to be commonhold land"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

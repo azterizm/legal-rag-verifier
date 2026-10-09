@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2010/23/s9@current",
+ "section": "uk/ukpga/2010/23/s9",
+ "version": "current",
+ "source_sha256": "48c1cd2ec2a319ada226218f512fa635a70a9fde012b55ba6cd0927c1939d993",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State must publish guidance regarding procedures that relevant commercial organisations can implement to prevent persons associated with them from bribing as mentioned in section 7(1).",
+    "quote": "must publish guidance about procedures that relevant commercial organisations can put in place to prevent persons associated with them from bribing"
+   },
+   {
+    "requirement": "The Secretary of State is permitted from time to time to publish revisions to guidance under section 9 of the Bribery Act 2010 or revised guidance.",
+    "quote": "may, from time to time, publish revisions to guidance under this section or revised guidance"
+   },
+   {
+    "requirement": "The Secretary of State must consult the Scottish Ministers and the Department of Justice in Northern Ireland prior to publishing anything under section 9 of the Bribery Act 2010.",
+    "quote": "must consult the Scottish Ministers and the Department of Justice in Northern Ireland before publishing anything under this section"
+   },
+   {
+    "requirement": "Publication under section 9 of the Bribery Act 2010 must be carried out in such manner as the Secretary of State considers appropriate.",
+    "quote": "Publication under this section is to be in such manner as the Secretary of State considers appropriate"
+   },
+   {
+    "requirement": "Expressions used in section 9 of the Bribery Act 2010 have the same meaning as they do in section 7.",
+    "quote": "Expressions used in this section have the same meaning as in section 7"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State must publish guidance regarding procedures that relevant commercial organisations can implement to prevent persons associated with them from bribing as mentioned in section 7(1).",
+   "quote": "must publish guidance about procedures that relevant commercial organisations can put in place to prevent persons associated with them from bribing"
+  },
+  {
+   "requirement": "The Secretary of State is permitted from time to time to publish revisions to guidance under section 9 of the Bribery Act 2010 or revised guidance.",
+   "quote": "may, from time to time, publish revisions to guidance under this section or revised guidance"
+  },
+  {
+   "requirement": "The Secretary of State must consult the Scottish Ministers and the Department of Justice in Northern Ireland prior to publishing anything under section 9 of the Bribery Act 2010.",
+   "quote": "must consult the Scottish Ministers and the Department of Justice in Northern Ireland before publishing anything under this section"
+  },
+  {
+   "requirement": "Publication under section 9 of the Bribery Act 2010 must be carried out in such manner as the Secretary of State considers appropriate.",
+   "quote": "Publication under this section is to be in such manner as the Secretary of State considers appropriate"
+  },
+  {
+   "requirement": "Expressions used in section 9 of the Bribery Act 2010 have the same meaning as they do in section 7.",
+   "quote": "Expressions used in this section have the same meaning as in section 7"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

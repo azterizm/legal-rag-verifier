@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2010/23/s15@current",
+ "section": "uk/ukpga/2010/23/s15",
+ "version": "current",
+ "source_sha256": "19eec48a384d30b9177f2ca084cbc882c8d1867354b6e7c71868624e15ecb5e7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Proceedings for an offence under section 7 alleged to have been committed by a partnership must be brought in the name of the partnership and not in that of any of the partners.",
+    "quote": "must be brought in the name of the partnership (and not in that of any of the partners)"
+   },
+   {
+    "requirement": "For the purposes of section 7 proceedings against a partnership, rules of court relating to the service of documents have effect as if the partnership were a body corporate.",
+    "quote": "rules of court relating to the service of documents have effect as if the partnership were a body corporate"
+   },
+   {
+    "requirement": "For the purposes of section 7 proceedings against a partnership, section 33 of the Criminal Justice Act 1925 and Schedule 3 to the Magistrates' Courts Act 1980 apply as they apply in relation to a body corporate.",
+    "quote": "section 33 of the Criminal Justice Act 1925 and Schedule 3 to the Magistrates' Courts Act 1980"
+   },
+   {
+    "requirement": "For the purposes of section 7 proceedings against a partnership, section 18 of the Criminal Justice Act (Northern Ireland) 1945 and Schedule 4 to the Magistrates' Courts (Northern Ireland) Order 1981 apply as they apply in relation to a body corporate.",
+    "quote": "section 18 of the Criminal Justice Act (Northern Ireland) 1945 (c. 15 (N.I.)) and Schedule 4 to the Magistrates' Courts (Northern Ireland) Order 1981 (S.I. 1981/1675 (N.I.26))"
+   },
+   {
+    "requirement": "For the purposes of section 7 proceedings against a partnership, section 70 of the Criminal Procedure (Scotland) Act 1995 applies as it applies in relation to a body corporate.",
+    "quote": "section 70 of the Criminal Procedure (Scotland) Act 1995"
+   },
+   {
+    "requirement": "A fine imposed on a partnership on its conviction for an offence under section 7 must be paid out of the partnership assets.",
+    "quote": "is to be paid out of the partnership assets"
+   },
+   {
+    "requirement": "The term “partnership” in section 15 has the same meaning as in section 7.",
+    "quote": "“partnership” has the same meaning as in section 7"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Proceedings for an offence under section 7 alleged to have been committed by a partnership must be brought in the name of the partnership and not in that of any of the partners.",
+   "quote": "must be brought in the name of the partnership (and not in that of any of the partners)"
+  },
+  {
+   "requirement": "For the purposes of section 7 proceedings against a partnership, rules of court relating to the service of documents have effect as if the partnership were a body corporate.",
+   "quote": "rules of court relating to the service of documents have effect as if the partnership were a body corporate"
+  },
+  {
+   "requirement": "For the purposes of section 7 proceedings against a partnership, section 33 of the Criminal Justice Act 1925 and Schedule 3 to the Magistrates' Courts Act 1980 apply as they apply in relation to a body corporate.",
+   "quote": "section 33 of the Criminal Justice Act 1925 and Schedule 3 to the Magistrates' Courts Act 1980"
+  },
+  {
+   "requirement": "For the purposes of section 7 proceedings against a partnership, section 18 of the Criminal Justice Act (Northern Ireland) 1945 and Schedule 4 to the Magistrates' Courts (Northern Ireland) Order 1981 apply as they apply in relation to a body corporate.",
+   "quote": "section 18 of the Criminal Justice Act (Northern Ireland) 1945 (c. 15 (N.I.)) and Schedule 4 to the Magistrates' Courts (Northern Ireland) Order 1981 (S.I. 1981/1675 (N.I.26))"
+  },
+  {
+   "requirement": "For the purposes of section 7 proceedings against a partnership, section 70 of the Criminal Procedure (Scotland) Act 1995 applies as it applies in relation to a body corporate.",
+   "quote": "section 70 of the Criminal Procedure (Scotland) Act 1995"
+  },
+  {
+   "requirement": "A fine imposed on a partnership on its conviction for an offence under section 7 must be paid out of the partnership assets.",
+   "quote": "is to be paid out of the partnership assets"
+  },
+  {
+   "requirement": "The term “partnership” in section 15 has the same meaning as in section 7.",
+   "quote": "“partnership” has the same meaning as in section 7"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

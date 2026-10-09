@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1996/18/s185@current",
+ "section": "uk/ukpga/1996/18/s185",
+ "version": "current",
+ "source_sha256": "90bb8ed3049228a2941ad75832e2511eeaa0ca805f1e9bfe7d887bf13e19131e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of this Part, in relation to arrears of pay (excluding remuneration under a protective award made under section 189 of the Trade Union and Labour Relations (Consolidation) Act 1992) and holiday pay, the appropriate date is defined as the date on which the employer became insolvent.",
+    "quote": "in relation to arrears of pay (not being remuneration under a protective award made under section 189 of the Trade Union and Labour Relations (Consolidation) Act 1992) and to holiday pay, means the date on which the employer became insolvent"
+   },
+   {
+    "requirement": "For the purposes of this Part, in relation to a basic award of compensation for unfair dismissal and remuneration under a protective award made under section 189 of the Trade Union and Labour Relations (Consolidation) Act 1992, the appropriate date is defined as whichever is the latest of the date the employer became insolvent, the date of termination of the employee's employment, and the date the award was made.",
+    "quote": "in relation to a basic award of compensation for unfair dismissal and to remuneration under a protective award so made, means whichever is the latest of— (i) the date on which the employer became insolvent, (ii) the date of the termination of the employee’s employment, and (iii) the date on which the award was made"
+   },
+   {
+    "requirement": "For the purposes of this Part, in relation to any other debt to which this Part applies, the appropriate date is defined as whichever is the later of the date on which the employer became insolvent and the date of termination of the employee's employment.",
+    "quote": "in relation to any other debt to which this Part applies, means whichever is the later of— (i) the date on which the employer became insolvent, and (ii) the date of the termination of the employee’s employment"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of this Part, in relation to arrears of pay (excluding remuneration under a protective award made under section 189 of the Trade Union and Labour Relations (Consolidation) Act 1992) and holiday pay, the appropriate date is defined as the date on which the employer became insolvent.",
+   "quote": "in relation to arrears of pay (not being remuneration under a protective award made under section 189 of the Trade Union and Labour Relations (Consolidation) Act 1992) and to holiday pay, means the date on which the employer became insolvent"
+  },
+  {
+   "requirement": "For the purposes of this Part, in relation to a basic award of compensation for unfair dismissal and remuneration under a protective award made under section 189 of the Trade Union and Labour Relations (Consolidation) Act 1992, the appropriate date is defined as whichever is the latest of the date the employer became insolvent, the date of termination of the employee's employment, and the date the award was made.",
+   "quote": "in relation to a basic award of compensation for unfair dismissal and to remuneration under a protective award so made, means whichever is the latest of— (i) the date on which the employer became insolvent, (ii) the date of the termination of the employee’s employment, and (iii) the date on which the award was made"
+  },
+  {
+   "requirement": "For the purposes of this Part, in relation to any other debt to which this Part applies, the appropriate date is defined as whichever is the later of the date on which the employer became insolvent and the date of termination of the employee's employment.",
+   "quote": "in relation to any other debt to which this Part applies, means whichever is the later of— (i) the date on which the employer became insolvent, and (ii) the date of the termination of the employee’s employment"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

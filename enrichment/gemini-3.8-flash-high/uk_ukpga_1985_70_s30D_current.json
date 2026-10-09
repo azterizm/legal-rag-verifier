@@ -1,0 +1,251 @@
+{
+ "key": "uk/ukpga/1985/70/s30D@current",
+ "section": "uk/ukpga/1985/70/s30D",
+ "version": "current",
+ "source_sha256": "115b559ca1e50099cb008a44492845a4f5b2d892525071febcb04c4e8aa00ee7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 30D applies to a relevant lease of premises that consist of or include a dwelling in a higher-risk building.",
+    "quote": "applies to a relevant lease of premises which consist of or include a dwelling in a higher-risk building"
+   },
+   {
+    "requirement": "A relevant lease is a lease granted for a term certain of 7 years or more, regardless of whether it is or may become terminable prior to the end of that term by tenant notice or by re-entry or forfeiture, and under which the tenant is liable to pay a service charge within the meaning of section 18.",
+    "quote": "granted for a term certain of 7 years or more, whether or not it is (or may become) terminable before the end of that term by notice given by the tenant or by re-entry or forfeiture, and (ii) under which the tenant is liable to pay a service charge"
+   },
+   {
+    "requirement": "A relevant lease does not include a relevant social housing tenancy.",
+    "quote": "does not include a relevant social housing tenancy"
+   },
+   {
+    "requirement": "A relevant lease has effect as if the matters for which the service charge is payable under the lease included the taking of building safety measures by or on behalf of a relevant person, insofar as this would not otherwise be the case.",
+    "quote": "as if the matters for which the service charge is payable under the lease included the taking of building safety measures by or on behalf of a relevant person"
+   },
+   {
+    "requirement": "Where a relevant lease contains different methods for apportioning different relevant costs within the meaning of section 18, the lease has effect as if it provided for any costs for which the tenant is liable solely by virtue of the deemed inclusion of building safety measures to be apportioned in the same way as costs incurred in connection with insuring the building.",
+    "quote": "as if it provided for any costs for which the tenant is liable by virtue only of paragraph (a) to be apportioned in the same way as costs incurred in connection with insuring the building"
+   },
+   {
+    "requirement": "A building safety measure includes applying for registration of a higher-risk building in accordance with section 78 of the Building Safety Act 2022.",
+    "quote": "applying for registration of a higher-risk building in accordance with section 78 of the Building Safety Act 2022"
+   },
+   {
+    "requirement": "A building safety measure includes applying for a building assessment certificate in accordance with section 79 of the Building Safety Act 2022.",
+    "quote": "applying for a building assessment certificate in accordance with section 79 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes displaying a building assessment certificate in accordance with section 82 of the Building Safety Act 2022.",
+    "quote": "displaying a building assessment certificate in accordance with section 82 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes assessing building safety risks in accordance with section 83 of the Building Safety Act 2022.",
+    "quote": "assessing building safety risks in accordance with section 83 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes taking reasonable steps in accordance with section 84 of the Building Safety Act 2022 regarding the management of building safety risks, excluding steps involving the carrying out of works as referred to in section 84(2) of that Act.",
+    "quote": "taking reasonable steps in accordance with section 84 of that Act (management of building safety risks), other than steps involving the carrying out of works as referred to in section 84(2)"
+   },
+   {
+    "requirement": "A building safety measure includes preparing and revising a safety case report in accordance with section 85 of the Building Safety Act 2022.",
+    "quote": "preparing and revising a safety case report in accordance with section 85 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes notifying the regulator of a safety case report, and giving a copy of a safety case report to the regulator, in accordance with section 86 of the Building Safety Act 2022.",
+    "quote": "notifying the regulator of a safety case report, and giving a copy of a safety case report to the regulator, in accordance with section 86 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes establishing and operating a mandatory occurrence reporting system, and giving information to the regulator, in accordance with section 87 of the Building Safety Act 2022.",
+    "quote": "establishing and operating a mandatory occurrence reporting system, and giving information to the regulator, in accordance with section 87 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes keeping information and documents in accordance with section 88 of the Building Safety Act 2022.",
+    "quote": "keeping information and documents in accordance with section 88 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes giving information and documents to any person in accordance with section 89, 90 or 92 of the Building Safety Act 2022.",
+    "quote": "giving information and documents to any person in accordance with section 89, 90 or 92 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes complying with any duty under section 91 of the Building Safety Act 2022 relating to a residents' engagement strategy.",
+    "quote": "complying with any duty under section 91 of that Act (residents’ engagement strategy)"
+   },
+   {
+    "requirement": "A building safety measure includes establishing and operating a system for the investigation of complaints in accordance with section 93 of the Building Safety Act 2022.",
+    "quote": "establishing and operating a system for the investigation of complaints in accordance with section 93 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes giving a contravention notice to a resident, and making an application to the county court, in accordance with section 96 of the Building Safety Act 2022.",
+    "quote": "giving a contravention notice to a resident, and making an application to the county court, in accordance with section 96 of that Act"
+   },
+   {
+    "requirement": "A building safety measure includes making a request to enter premises, or making an application to the county court, in accordance with section 97 of the Building Safety Act 2022 concerning access to premises.",
+    "quote": "making a request to enter premises, or making an application to the county court, in accordance with section 97 of that Act (access to premises)"
+   },
+   {
+    "requirement": "Legal and other professional fees, fees payable to the regulator, and management costs incurred in connection with the taking of a building safety measure are regarded as incurred in taking the measure.",
+    "quote": "any of the following incurred in connection with the taking of a building safety measure are to be regarded as incurred in taking the measure— (a) legal and other professional fees; (b) fees payable to the regulator; (c) management costs"
+   },
+   {
+    "requirement": "The term landlord includes any person who has a right under the lease to enforce payment of a service charge within the meaning of section 18.",
+    "quote": "“landlord” includes any person who has a right under the lease to enforce payment of a service charge (within the meaning of section 18)"
+   },
+   {
+    "requirement": "A relevant person means the landlord or a special measures manager for the building if the landlord is an accountable person for the building, and otherwise means any superior landlord who is an accountable person for the building or a special measures manager for the building.",
+    "quote": "“relevant person” means— if the landlord is an accountable person for the building, the landlord or a special measures manager for the building;otherwise, any superior landlord who is an accountable person for the building or a special measures manager for the building"
+   },
+   {
+    "requirement": "The term relevant social housing tenancy has the meaning given in section 132 of the Land Registration Act 2002.",
+    "quote": "“relevant social housing tenancy” has the meaning given in section 132 of the Land Registration Act 2002"
+   },
+   {
+    "requirement": "The term tenant includes any person who has an obligation under the lease to pay a service charge within the meaning of section 18.",
+    "quote": "“tenant” includes any person who has an obligation under the lease to pay a service charge (within the meaning of section 18)"
+   },
+   {
+    "requirement": "The Secretary of State may amend subsection (4) by regulations made by statutory instrument to add, remove, or modify a building safety measure.",
+    "quote": "The Secretary of State may by regulations made by statutory instrument amend subsection (4) so as to add, remove or modify a building safety measure"
+   },
+   {
+    "requirement": "Regulations made under subsection (7) may make incidental, transitional or saving provision.",
+    "quote": "The regulations may make incidental, transitional or saving provision"
+   },
+   {
+    "requirement": "A statutory instrument containing regulations under subsection (7) may not be made unless a draft of the instrument has been laid before and approved by a resolution of each House of Parliament.",
+    "quote": "may not be made unless a draft of the instrument has been laid before and approved by a resolution of each House of Parliament"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum term certain required for a lease to qualify as a relevant lease",
+    "value": "7 years",
+    "quote": "term certain of 7 years or more"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 30D applies to a relevant lease of premises that consist of or include a dwelling in a higher-risk building.",
+   "quote": "applies to a relevant lease of premises which consist of or include a dwelling in a higher-risk building"
+  },
+  {
+   "requirement": "A relevant lease is a lease granted for a term certain of 7 years or more, regardless of whether it is or may become terminable prior to the end of that term by tenant notice or by re-entry or forfeiture, and under which the tenant is liable to pay a service charge within the meaning of section 18.",
+   "quote": "granted for a term certain of 7 years or more, whether or not it is (or may become) terminable before the end of that term by notice given by the tenant or by re-entry or forfeiture, and (ii) under which the tenant is liable to pay a service charge"
+  },
+  {
+   "requirement": "A relevant lease does not include a relevant social housing tenancy.",
+   "quote": "does not include a relevant social housing tenancy"
+  },
+  {
+   "requirement": "A relevant lease has effect as if the matters for which the service charge is payable under the lease included the taking of building safety measures by or on behalf of a relevant person, insofar as this would not otherwise be the case.",
+   "quote": "as if the matters for which the service charge is payable under the lease included the taking of building safety measures by or on behalf of a relevant person"
+  },
+  {
+   "requirement": "Where a relevant lease contains different methods for apportioning different relevant costs within the meaning of section 18, the lease has effect as if it provided for any costs for which the tenant is liable solely by virtue of the deemed inclusion of building safety measures to be apportioned in the same way as costs incurred in connection with insuring the building.",
+   "quote": "as if it provided for any costs for which the tenant is liable by virtue only of paragraph (a) to be apportioned in the same way as costs incurred in connection with insuring the building"
+  },
+  {
+   "requirement": "A building safety measure includes applying for registration of a higher-risk building in accordance with section 78 of the Building Safety Act 2022.",
+   "quote": "applying for registration of a higher-risk building in accordance with section 78 of the Building Safety Act 2022"
+  },
+  {
+   "requirement": "A building safety measure includes applying for a building assessment certificate in accordance with section 79 of the Building Safety Act 2022.",
+   "quote": "applying for a building assessment certificate in accordance with section 79 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes displaying a building assessment certificate in accordance with section 82 of the Building Safety Act 2022.",
+   "quote": "displaying a building assessment certificate in accordance with section 82 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes assessing building safety risks in accordance with section 83 of the Building Safety Act 2022.",
+   "quote": "assessing building safety risks in accordance with section 83 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes taking reasonable steps in accordance with section 84 of the Building Safety Act 2022 regarding the management of building safety risks, excluding steps involving the carrying out of works as referred to in section 84(2) of that Act.",
+   "quote": "taking reasonable steps in accordance with section 84 of that Act (management of building safety risks), other than steps involving the carrying out of works as referred to in section 84(2)"
+  },
+  {
+   "requirement": "A building safety measure includes preparing and revising a safety case report in accordance with section 85 of the Building Safety Act 2022.",
+   "quote": "preparing and revising a safety case report in accordance with section 85 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes notifying the regulator of a safety case report, and giving a copy of a safety case report to the regulator, in accordance with section 86 of the Building Safety Act 2022.",
+   "quote": "notifying the regulator of a safety case report, and giving a copy of a safety case report to the regulator, in accordance with section 86 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes establishing and operating a mandatory occurrence reporting system, and giving information to the regulator, in accordance with section 87 of the Building Safety Act 2022.",
+   "quote": "establishing and operating a mandatory occurrence reporting system, and giving information to the regulator, in accordance with section 87 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes keeping information and documents in accordance with section 88 of the Building Safety Act 2022.",
+   "quote": "keeping information and documents in accordance with section 88 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes giving information and documents to any person in accordance with section 89, 90 or 92 of the Building Safety Act 2022.",
+   "quote": "giving information and documents to any person in accordance with section 89, 90 or 92 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes complying with any duty under section 91 of the Building Safety Act 2022 relating to a residents' engagement strategy.",
+   "quote": "complying with any duty under section 91 of that Act (residents’ engagement strategy)"
+  },
+  {
+   "requirement": "A building safety measure includes establishing and operating a system for the investigation of complaints in accordance with section 93 of the Building Safety Act 2022.",
+   "quote": "establishing and operating a system for the investigation of complaints in accordance with section 93 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes giving a contravention notice to a resident, and making an application to the county court, in accordance with section 96 of the Building Safety Act 2022.",
+   "quote": "giving a contravention notice to a resident, and making an application to the county court, in accordance with section 96 of that Act"
+  },
+  {
+   "requirement": "A building safety measure includes making a request to enter premises, or making an application to the county court, in accordance with section 97 of the Building Safety Act 2022 concerning access to premises.",
+   "quote": "making a request to enter premises, or making an application to the county court, in accordance with section 97 of that Act (access to premises)"
+  },
+  {
+   "requirement": "Legal and other professional fees, fees payable to the regulator, and management costs incurred in connection with the taking of a building safety measure are regarded as incurred in taking the measure.",
+   "quote": "any of the following incurred in connection with the taking of a building safety measure are to be regarded as incurred in taking the measure— (a) legal and other professional fees; (b) fees payable to the regulator; (c) management costs"
+  },
+  {
+   "requirement": "The term landlord includes any person who has a right under the lease to enforce payment of a service charge within the meaning of section 18.",
+   "quote": "“landlord” includes any person who has a right under the lease to enforce payment of a service charge (within the meaning of section 18)"
+  },
+  {
+   "requirement": "A relevant person means the landlord or a special measures manager for the building if the landlord is an accountable person for the building, and otherwise means any superior landlord who is an accountable person for the building or a special measures manager for the building.",
+   "quote": "“relevant person” means— if the landlord is an accountable person for the building, the landlord or a special measures manager for the building;otherwise, any superior landlord who is an accountable person for the building or a special measures manager for the building"
+  },
+  {
+   "requirement": "The term relevant social housing tenancy has the meaning given in section 132 of the Land Registration Act 2002.",
+   "quote": "“relevant social housing tenancy” has the meaning given in section 132 of the Land Registration Act 2002"
+  },
+  {
+   "requirement": "The term tenant includes any person who has an obligation under the lease to pay a service charge within the meaning of section 18.",
+   "quote": "“tenant” includes any person who has an obligation under the lease to pay a service charge (within the meaning of section 18)"
+  },
+  {
+   "requirement": "The Secretary of State may amend subsection (4) by regulations made by statutory instrument to add, remove, or modify a building safety measure.",
+   "quote": "The Secretary of State may by regulations made by statutory instrument amend subsection (4) so as to add, remove or modify a building safety measure"
+  },
+  {
+   "requirement": "Regulations made under subsection (7) may make incidental, transitional or saving provision.",
+   "quote": "The regulations may make incidental, transitional or saving provision"
+  },
+  {
+   "requirement": "A statutory instrument containing regulations under subsection (7) may not be made unless a draft of the instrument has been laid before and approved by a resolution of each House of Parliament.",
+   "quote": "may not be made unless a draft of the instrument has been laid before and approved by a resolution of each House of Parliament"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum term certain required for a lease to qualify as a relevant lease",
+   "value": "7 years",
+   "quote": "term certain of 7 years or more"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 27,
+  "elements_verified": 27,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

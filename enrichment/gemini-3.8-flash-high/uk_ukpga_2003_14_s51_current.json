@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2003/14/s51@current",
+ "section": "uk/ukpga/2003/14/s51",
+ "version": "current",
+ "source_sha256": "28bc36254fde70e8e34a30ef3a88c3e708c88ba347b9d34d193867ac30da76a3",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where the whole or part of the chargeable consideration for a transaction is contingent, the amount or value of the consideration must be determined for the purposes of this Part on the assumption that the outcome of the contingency will be such that the consideration is payable or, as the case may be, does not cease to be payable.",
+    "quote": "on the assumption that the outcome of the contingency will be such that the consideration is payable or, as the case may be, does not cease to be payable"
+   },
+   {
+    "requirement": "Where the whole or part of the chargeable consideration for a transaction is uncertain or unascertained, its amount or value must be determined for the purposes of this Part on the basis of a reasonable estimate.",
+    "quote": "determined for the purposes of this Part on the basis of a reasonable estimate"
+   },
+   {
+    "requirement": "Section 51 has effect subject to section 80 (adjustment where contingency ceases or consideration is ascertained) and section 90 (application to defer payment in case of contingent or uncertain consideration).",
+    "quote": "This section has effect subject to— section 80 (adjustment where contingency ceases or consideration is ascertained), andsection 90"
+   },
+   {
+    "requirement": "Section 51 applies in relation to chargeable consideration consisting of rent only to the extent that it is applied by paragraph 7 of Schedule 17A.",
+    "quote": "applies in relation to chargeable consideration consisting of rent only to the extent that it is applied by paragraph 7 of Schedule 17A"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where the whole or part of the chargeable consideration for a transaction is contingent, the amount or value of the consideration must be determined for the purposes of this Part on the assumption that the outcome of the contingency will be such that the consideration is payable or, as the case may be, does not cease to be payable.",
+   "quote": "on the assumption that the outcome of the contingency will be such that the consideration is payable or, as the case may be, does not cease to be payable"
+  },
+  {
+   "requirement": "Where the whole or part of the chargeable consideration for a transaction is uncertain or unascertained, its amount or value must be determined for the purposes of this Part on the basis of a reasonable estimate.",
+   "quote": "determined for the purposes of this Part on the basis of a reasonable estimate"
+  },
+  {
+   "requirement": "Section 51 has effect subject to section 80 (adjustment where contingency ceases or consideration is ascertained) and section 90 (application to defer payment in case of contingent or uncertain consideration).",
+   "quote": "This section has effect subject to— section 80 (adjustment where contingency ceases or consideration is ascertained), andsection 90"
+  },
+  {
+   "requirement": "Section 51 applies in relation to chargeable consideration consisting of rent only to the extent that it is applied by paragraph 7 of Schedule 17A.",
+   "quote": "applies in relation to chargeable consideration consisting of rent only to the extent that it is applied by paragraph 7 of Schedule 17A"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

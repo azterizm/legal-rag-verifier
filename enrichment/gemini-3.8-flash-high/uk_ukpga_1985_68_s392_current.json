@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/1985/68/s392@current",
+ "section": "uk/ukpga/1985/68/s392",
+ "version": "current",
+ "source_sha256": "688bfb8fe96d4f2f567dea35070e6c9cc6af9a07404b983157bd9c5b962882da",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A control order ceases to have effect at the expiry of five years beginning with the date on which the order came into force.",
+    "quote": "ceases to have effect at the expiry of the period of five years beginning with the date on which it came into force"
+   },
+   {
+    "requirement": "The local housing authority may revoke a control order by order at any earlier time, either on an application or on their own initiative.",
+    "quote": "may at any earlier time, either on application or on their own initiative, by order revoke a control order"
+   },
+   {
+    "requirement": "The local housing authority must serve notice of their intention to revoke a control order on the persons occupying any part of the house at least 21 days before revoking it.",
+    "quote": "serve notice of their intention to do so on— (a) the persons occupying any part of the house"
+   },
+   {
+    "requirement": "The local housing authority must serve notice of their intention to revoke a control order at least 21 days before revocation on every person who is known to the authority to be an owner, lessee or mortgagee of the house.",
+    "quote": "every person who is to the knowledge of the authority an owner, lessee or mortgagee of the house"
+   },
+   {
+    "requirement": "If a person applies to the local authority requesting revocation of a control order and provides grounds for the request, the authority must inform the applicant of their decision and their reasons for rejecting the grounds if they refuse the application.",
+    "quote": "inform the applicant of their decision and of their reasons for rejecting the grounds advanced by him"
+   },
+   {
+    "requirement": "Where the local housing authority propose to revoke a control order on their own initiative and apply to the county court, the court may approve the serving of a notice requiring execution of works under section 352 or 372, the giving of a direction limiting occupants under section 354, or the making of an order applying a management code under section 370, to take effect upon the revocation of the control order.",
+    "quote": "the court may approve the taking of any of the following steps to take effect on the revocation of the control order"
+   },
+   {
+    "requirement": "No appeal lies against a notice or order approved by the county court under subsection (5) to take effect upon the revocation of a control order.",
+    "quote": "no appeal lies against a notice or order so approved"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period after which a control order ceases to have effect",
+    "value": "five years",
+    "quote": "period of five years beginning with the date on which it came into force"
+   },
+   {
+    "what": "minimum advance notice required before the local housing authority revokes a control order",
+    "value": "21 days",
+    "quote": "at least 21 days before revoking a control order"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A control order ceases to have effect at the expiry of five years beginning with the date on which the order came into force.",
+   "quote": "ceases to have effect at the expiry of the period of five years beginning with the date on which it came into force"
+  },
+  {
+   "requirement": "The local housing authority may revoke a control order by order at any earlier time, either on an application or on their own initiative.",
+   "quote": "may at any earlier time, either on application or on their own initiative, by order revoke a control order"
+  },
+  {
+   "requirement": "The local housing authority must serve notice of their intention to revoke a control order on the persons occupying any part of the house at least 21 days before revoking it.",
+   "quote": "serve notice of their intention to do so on— (a) the persons occupying any part of the house"
+  },
+  {
+   "requirement": "The local housing authority must serve notice of their intention to revoke a control order at least 21 days before revocation on every person who is known to the authority to be an owner, lessee or mortgagee of the house.",
+   "quote": "every person who is to the knowledge of the authority an owner, lessee or mortgagee of the house"
+  },
+  {
+   "requirement": "If a person applies to the local authority requesting revocation of a control order and provides grounds for the request, the authority must inform the applicant of their decision and their reasons for rejecting the grounds if they refuse the application.",
+   "quote": "inform the applicant of their decision and of their reasons for rejecting the grounds advanced by him"
+  },
+  {
+   "requirement": "Where the local housing authority propose to revoke a control order on their own initiative and apply to the county court, the court may approve the serving of a notice requiring execution of works under section 352 or 372, the giving of a direction limiting occupants under section 354, or the making of an order applying a management code under section 370, to take effect upon the revocation of the control order.",
+   "quote": "the court may approve the taking of any of the following steps to take effect on the revocation of the control order"
+  },
+  {
+   "requirement": "No appeal lies against a notice or order approved by the county court under subsection (5) to take effect upon the revocation of a control order.",
+   "quote": "no appeal lies against a notice or order so approved"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period after which a control order ceases to have effect",
+   "value": "five years",
+   "quote": "period of five years beginning with the date on which it came into force"
+  },
+  {
+   "what": "minimum advance notice required before the local housing authority revokes a control order",
+   "value": "21 days",
+   "quote": "at least 21 days before revoking a control order"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

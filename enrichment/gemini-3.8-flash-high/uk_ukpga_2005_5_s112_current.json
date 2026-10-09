@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/2005/5/s112@current",
+ "section": "uk/ukpga/2005/5/s112",
+ "version": "current",
+ "source_sha256": "a1841a3dce042be5162fffb72631f954a6d6ebc13723b49ab88726ffe2d5e02b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of this Chapter, an animal is defined as any animal or other living creature.",
+    "quote": "“animal” means any animal or other living creature"
+   },
+   {
+    "requirement": "For the purposes of this Chapter, a herd includes a flock and any other collection of animals, regardless of how it is named.",
+    "quote": "“herd” includes a flock and any other collection of animals (however named)"
+   },
+   {
+    "requirement": "In relation to a farmer, a production herd means a herd of animals of the same species, regardless of breed, kept by the farmer wholly or mainly for products obtainable from the living animal that the animals produce for the farmer to sell.",
+    "quote": "“production herd” means, in relation to a farmer, a herd of animals of the same species (irrespective of breed) kept by the farmer wholly or mainly for the products obtainable from the living animal which the animals produce for the farmer to sell"
+   },
+   {
+    "requirement": "Products obtainable from the living animal are defined as the young of the animal or any other product obtainable from the animal without slaughtering it.",
+    "quote": "“the products obtainable from the living animal” means— (a) the young of the animal, or (b) any other product obtainable from the animal without slaughtering it"
+   },
+   {
+    "requirement": "As a general rule for the purposes of this Chapter, immature animals kept in a production herd are not part of the herd.",
+    "quote": "the general rule is that immature animals kept in a production herd are not part of the herd"
+   },
+   {
+    "requirement": "Immature animals are excepted from the general rule if the nature of the land where the herd is kept requires that animals that die or leave the herd can be replaced only by animals bred and reared on that land, the immature animals are bred and maintained in the herd to replace other animals, and maintaining them for that purpose is necessary.",
+    "quote": "animals which die or cease to be part of the herd can be replaced only by animals bred and reared on the land, (b) the immature animals in question are bred in the herd and are maintained in the herd for the purpose of replacing other animals, and (c) it is necessary to maintain the immature animals for that purpose"
+   },
+   {
+    "requirement": "Where the exception applies, immature animals are part of the herd for the purposes of this Chapter only to the extent that they are required to prevent a reduction in herd numbers.",
+    "quote": "the immature animals are part of the herd for the purposes of this Chapter, but only so far as they are required to prevent a fall in the numbers of the herd"
+   },
+   {
+    "requirement": "References in this Chapter to an animal being added to a herd include an immature animal that is not part of the herd reaching maturity.",
+    "quote": "References in this Chapter to an animal being added to a herd include references to an immature animal that is not part of the herd reaching maturity"
+   },
+   {
+    "requirement": "This Chapter applies to animals kept singly in the same manner as it applies to herds.",
+    "quote": "This Chapter applies— (a) in relation to animals kept singly as it applies in relation to herds"
+   },
+   {
+    "requirement": "This Chapter applies to shares in animals in the same manner as it applies to the animals themselves.",
+    "quote": "in relation to shares in animals as it applies in relation to animals themselves"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of this Chapter, an animal is defined as any animal or other living creature.",
+   "quote": "“animal” means any animal or other living creature"
+  },
+  {
+   "requirement": "For the purposes of this Chapter, a herd includes a flock and any other collection of animals, regardless of how it is named.",
+   "quote": "“herd” includes a flock and any other collection of animals (however named)"
+  },
+  {
+   "requirement": "In relation to a farmer, a production herd means a herd of animals of the same species, regardless of breed, kept by the farmer wholly or mainly for products obtainable from the living animal that the animals produce for the farmer to sell.",
+   "quote": "“production herd” means, in relation to a farmer, a herd of animals of the same species (irrespective of breed) kept by the farmer wholly or mainly for the products obtainable from the living animal which the animals produce for the farmer to sell"
+  },
+  {
+   "requirement": "Products obtainable from the living animal are defined as the young of the animal or any other product obtainable from the animal without slaughtering it.",
+   "quote": "“the products obtainable from the living animal” means— (a) the young of the animal, or (b) any other product obtainable from the animal without slaughtering it"
+  },
+  {
+   "requirement": "As a general rule for the purposes of this Chapter, immature animals kept in a production herd are not part of the herd.",
+   "quote": "the general rule is that immature animals kept in a production herd are not part of the herd"
+  },
+  {
+   "requirement": "Immature animals are excepted from the general rule if the nature of the land where the herd is kept requires that animals that die or leave the herd can be replaced only by animals bred and reared on that land, the immature animals are bred and maintained in the herd to replace other animals, and maintaining them for that purpose is necessary.",
+   "quote": "animals which die or cease to be part of the herd can be replaced only by animals bred and reared on the land, (b) the immature animals in question are bred in the herd and are maintained in the herd for the purpose of replacing other animals, and (c) it is necessary to maintain the immature animals for that purpose"
+  },
+  {
+   "requirement": "Where the exception applies, immature animals are part of the herd for the purposes of this Chapter only to the extent that they are required to prevent a reduction in herd numbers.",
+   "quote": "the immature animals are part of the herd for the purposes of this Chapter, but only so far as they are required to prevent a fall in the numbers of the herd"
+  },
+  {
+   "requirement": "References in this Chapter to an animal being added to a herd include an immature animal that is not part of the herd reaching maturity.",
+   "quote": "References in this Chapter to an animal being added to a herd include references to an immature animal that is not part of the herd reaching maturity"
+  },
+  {
+   "requirement": "This Chapter applies to animals kept singly in the same manner as it applies to herds.",
+   "quote": "This Chapter applies— (a) in relation to animals kept singly as it applies in relation to herds"
+  },
+  {
+   "requirement": "This Chapter applies to shares in animals in the same manner as it applies to the animals themselves.",
+   "quote": "in relation to shares in animals as it applies in relation to animals themselves"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

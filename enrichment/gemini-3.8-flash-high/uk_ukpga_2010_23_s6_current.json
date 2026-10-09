@@ -1,0 +1,143 @@
+{
+ "key": "uk/ukpga/2010/23/s6@current",
+ "section": "uk/ukpga/2010/23/s6",
+ "version": "current",
+ "source_sha256": "755922b3e149dd6d177626f604625362e41b505959591bbe0b8f996cd4141cd2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person (\"P\") who bribes a foreign public official (\"F\") commits an offence if P's intention is to influence F in F's capacity as a foreign public official.",
+    "quote": "guilty of an offence if P's intention is to influence F in F's capacity as a foreign public official"
+   },
+   {
+    "requirement": "To commit the offence, P must also intend to obtain or retain business or an advantage in the conduct of business.",
+    "quote": "P must also intend to obtain or retain— (a) business, or (b) an advantage in the conduct of business"
+   },
+   {
+    "requirement": "P bribes F if, and only if, directly or through a third party, P offers, promises, or gives any financial or other advantage to F, or to another person at F's request or with F's assent or acquiescence.",
+    "quote": "directly or through a third party, P offers, promises or gives any financial or other advantage"
+   },
+   {
+    "requirement": "P bribes F only if F is neither permitted nor required by the written law applicable to F to be influenced in F's capacity as a foreign public official by the offer, promise, or gift.",
+    "quote": "F is neither permitted nor required by the written law applicable to F to be influenced"
+   },
+   {
+    "requirement": "Influencing F in F's capacity as a foreign public official means influencing F in the performance of F's functions as such an official.",
+    "quote": "influencing F in the performance of F's functions as such an official"
+   },
+   {
+    "requirement": "Influencing F in the performance of F's functions as a foreign public official includes any omission to exercise those functions.",
+    "quote": "any omission to exercise those functions"
+   },
+   {
+    "requirement": "Influencing F in the performance of F's functions as a foreign public official includes any use of F's position as such an official, even if that use is not within F's authority.",
+    "quote": "any use of F's position as such an official, even if not within F's authority"
+   },
+   {
+    "requirement": "A foreign public official includes an individual who holds an appointed or elected legislative, administrative, or judicial position of any kind of a country or territory outside the United Kingdom, or of any subdivision of such a country or territory.",
+    "quote": "holds a legislative, administrative or judicial position of any kind, whether appointed or elected, of a country or territory outside the United Kingdom"
+   },
+   {
+    "requirement": "A foreign public official includes an individual who exercises a public function for or on behalf of a country or territory outside the United Kingdom (or any subdivision of it), or for any public agency or public enterprise of that country, territory, or subdivision.",
+    "quote": "exercises a public function— (i) for or on behalf of a country or territory outside the United Kingdom"
+   },
+   {
+    "requirement": "A foreign public official includes an individual who is an official or agent of a public international organisation.",
+    "quote": "is an official or agent of a public international organisation"
+   },
+   {
+    "requirement": "A public international organisation is an organisation whose members are countries or territories, governments of countries or territories, other public international organisations, or a mixture of any of these.",
+    "quote": "an organisation whose members are any of the following— (a) countries or territories, (b) governments of countries or territories, (c) other public international organisations, (d) a mixture of any of the above"
+   },
+   {
+    "requirement": "For the purpose of determining whether F is permitted or required to be influenced, the written law applicable to F is the law of any part of the United Kingdom where the performance of F's functions which P intends to influence would be subject to the law of that part of the United Kingdom.",
+    "quote": "where the performance of the functions of F which P intends to influence would be subject to the law of any part of the United Kingdom, the law of that part of the United Kingdom"
+   },
+   {
+    "requirement": "Where the performance of F's functions is not subject to United Kingdom law and F is an official or agent of a public international organisation, the written law applicable to F consists of the applicable written rules of that organisation.",
+    "quote": "where paragraph (a) does not apply and F is an official or agent of a public international organisation, the applicable written rules of that organisation"
+   },
+   {
+    "requirement": "Where UK law and public international organisation rules do not apply, the written law applicable to F is the law of the country or territory in relation to which F is a foreign public official so far as contained in any written constitution, legislative provision, or published judicial decision applicable to that country or territory.",
+    "quote": "the law of the country or territory in relation to which F is a foreign public official so far as that law is contained in— (i) any written constitution, or provision made by or under legislation, applicable to the country or territory concerned, or (ii) any judicial decision which is so applicable and is evidenced in published written sources"
+   },
+   {
+    "requirement": "For the purposes of Section 6 of the Bribery Act 2010, a trade or profession is treated as a business.",
+    "quote": "a trade or profession is a business"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person (\"P\") who bribes a foreign public official (\"F\") commits an offence if P's intention is to influence F in F's capacity as a foreign public official.",
+   "quote": "guilty of an offence if P's intention is to influence F in F's capacity as a foreign public official"
+  },
+  {
+   "requirement": "To commit the offence, P must also intend to obtain or retain business or an advantage in the conduct of business.",
+   "quote": "P must also intend to obtain or retain— (a) business, or (b) an advantage in the conduct of business"
+  },
+  {
+   "requirement": "P bribes F if, and only if, directly or through a third party, P offers, promises, or gives any financial or other advantage to F, or to another person at F's request or with F's assent or acquiescence.",
+   "quote": "directly or through a third party, P offers, promises or gives any financial or other advantage"
+  },
+  {
+   "requirement": "P bribes F only if F is neither permitted nor required by the written law applicable to F to be influenced in F's capacity as a foreign public official by the offer, promise, or gift.",
+   "quote": "F is neither permitted nor required by the written law applicable to F to be influenced"
+  },
+  {
+   "requirement": "Influencing F in F's capacity as a foreign public official means influencing F in the performance of F's functions as such an official.",
+   "quote": "influencing F in the performance of F's functions as such an official"
+  },
+  {
+   "requirement": "Influencing F in the performance of F's functions as a foreign public official includes any omission to exercise those functions.",
+   "quote": "any omission to exercise those functions"
+  },
+  {
+   "requirement": "Influencing F in the performance of F's functions as a foreign public official includes any use of F's position as such an official, even if that use is not within F's authority.",
+   "quote": "any use of F's position as such an official, even if not within F's authority"
+  },
+  {
+   "requirement": "A foreign public official includes an individual who holds an appointed or elected legislative, administrative, or judicial position of any kind of a country or territory outside the United Kingdom, or of any subdivision of such a country or territory.",
+   "quote": "holds a legislative, administrative or judicial position of any kind, whether appointed or elected, of a country or territory outside the United Kingdom"
+  },
+  {
+   "requirement": "A foreign public official includes an individual who exercises a public function for or on behalf of a country or territory outside the United Kingdom (or any subdivision of it), or for any public agency or public enterprise of that country, territory, or subdivision.",
+   "quote": "exercises a public function— (i) for or on behalf of a country or territory outside the United Kingdom"
+  },
+  {
+   "requirement": "A foreign public official includes an individual who is an official or agent of a public international organisation.",
+   "quote": "is an official or agent of a public international organisation"
+  },
+  {
+   "requirement": "A public international organisation is an organisation whose members are countries or territories, governments of countries or territories, other public international organisations, or a mixture of any of these.",
+   "quote": "an organisation whose members are any of the following— (a) countries or territories, (b) governments of countries or territories, (c) other public international organisations, (d) a mixture of any of the above"
+  },
+  {
+   "requirement": "For the purpose of determining whether F is permitted or required to be influenced, the written law applicable to F is the law of any part of the United Kingdom where the performance of F's functions which P intends to influence would be subject to the law of that part of the United Kingdom.",
+   "quote": "where the performance of the functions of F which P intends to influence would be subject to the law of any part of the United Kingdom, the law of that part of the United Kingdom"
+  },
+  {
+   "requirement": "Where the performance of F's functions is not subject to United Kingdom law and F is an official or agent of a public international organisation, the written law applicable to F consists of the applicable written rules of that organisation.",
+   "quote": "where paragraph (a) does not apply and F is an official or agent of a public international organisation, the applicable written rules of that organisation"
+  },
+  {
+   "requirement": "Where UK law and public international organisation rules do not apply, the written law applicable to F is the law of the country or territory in relation to which F is a foreign public official so far as contained in any written constitution, legislative provision, or published judicial decision applicable to that country or territory.",
+   "quote": "the law of the country or territory in relation to which F is a foreign public official so far as that law is contained in— (i) any written constitution, or provision made by or under legislation, applicable to the country or territory concerned, or (ii) any judicial decision which is so applicable and is evidenced in published written sources"
+  },
+  {
+   "requirement": "For the purposes of Section 6 of the Bribery Act 2010, a trade or profession is treated as a business.",
+   "quote": "a trade or profession is a business"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

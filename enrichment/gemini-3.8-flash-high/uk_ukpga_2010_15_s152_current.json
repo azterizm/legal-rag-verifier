@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/2010/15/s152@current",
+ "section": "uk/ukpga/2010/15/s152",
+ "version": "current",
+ "source_sha256": "07dd6ca4d035fd0c1ce17daf2a2ada231b4dc79fba4496d69b2ac01b8eeec8fd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Before making an order under a provision specified in the first column of the Table, a Minister of the Crown must consult the person or persons specified in the second column.",
+    "quote": "Before making an order under a provision specified in the first column of the Table, a Minister of the Crown must consult the person or persons specified in the second column."
+   },
+   {
+    "requirement": "A Minister of the Crown must consult the Commission before making an order under section 151(1).",
+    "quote": "Section 151(1)The Commission"
+   },
+   {
+    "requirement": "A Minister of the Crown must consult the Welsh Ministers before making an order under section 151(1) so far as relating to a relevant Welsh authority.",
+    "quote": "Section 151(1), so far as relating to a relevant Welsh authorityThe Welsh Ministers"
+   },
+   {
+    "requirement": "A Minister of the Crown must consult the Scottish Ministers before making an order under section 151(1) so far as relating to a relevant Scottish authority.",
+    "quote": "Section 151(1), so far as relating to a relevant Scottish authorityThe Scottish Ministers"
+   },
+   {
+    "requirement": "A Minister of the Crown must consult the Commission before making an order under section 151(5).",
+    "quote": "Section 151(5)The Commission"
+   },
+   {
+    "requirement": "A Minister of the Crown must consult the Welsh Ministers before making an order under section 151(5) so far as relating to a cross-border Welsh authority.",
+    "quote": "Section 151(5), so far as relating to a cross-border Welsh authorityThe Welsh Ministers"
+   },
+   {
+    "requirement": "A Minister of the Crown must consult the Scottish Ministers before making an order under section 151(5) so far as relating to a cross-border Scottish authority.",
+    "quote": "Section 151(5), so far as relating to a cross-border Scottish authorityThe Scottish Ministers"
+   },
+   {
+    "requirement": "Before making an order under section 151(2), the Welsh Ministers must consult the Commission.",
+    "quote": "Before making an order under section 151(2), the Welsh Ministers must consult the Commission"
+   },
+   {
+    "requirement": "After making an order under section 151(2), the Welsh Ministers must inform a Minister of the Crown.",
+    "quote": "after making such an order they must inform a Minister of the Crown."
+   },
+   {
+    "requirement": "Before making an order under section 151(3), the Scottish Ministers must consult the Commission.",
+    "quote": "Before making an order under section 151(3), the Scottish Ministers must consult the Commission"
+   },
+   {
+    "requirement": "After making an order under section 151(3), the Scottish Ministers must inform a Minister of the Crown.",
+    "quote": "after making such an order they must inform a Minister of the Crown."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Before making an order under a provision specified in the first column of the Table, a Minister of the Crown must consult the person or persons specified in the second column.",
+   "quote": "Before making an order under a provision specified in the first column of the Table, a Minister of the Crown must consult the person or persons specified in the second column."
+  },
+  {
+   "requirement": "A Minister of the Crown must consult the Commission before making an order under section 151(1).",
+   "quote": "Section 151(1)The Commission"
+  },
+  {
+   "requirement": "A Minister of the Crown must consult the Welsh Ministers before making an order under section 151(1) so far as relating to a relevant Welsh authority.",
+   "quote": "Section 151(1), so far as relating to a relevant Welsh authorityThe Welsh Ministers"
+  },
+  {
+   "requirement": "A Minister of the Crown must consult the Scottish Ministers before making an order under section 151(1) so far as relating to a relevant Scottish authority.",
+   "quote": "Section 151(1), so far as relating to a relevant Scottish authorityThe Scottish Ministers"
+  },
+  {
+   "requirement": "A Minister of the Crown must consult the Commission before making an order under section 151(5).",
+   "quote": "Section 151(5)The Commission"
+  },
+  {
+   "requirement": "A Minister of the Crown must consult the Welsh Ministers before making an order under section 151(5) so far as relating to a cross-border Welsh authority.",
+   "quote": "Section 151(5), so far as relating to a cross-border Welsh authorityThe Welsh Ministers"
+  },
+  {
+   "requirement": "A Minister of the Crown must consult the Scottish Ministers before making an order under section 151(5) so far as relating to a cross-border Scottish authority.",
+   "quote": "Section 151(5), so far as relating to a cross-border Scottish authorityThe Scottish Ministers"
+  },
+  {
+   "requirement": "Before making an order under section 151(2), the Welsh Ministers must consult the Commission.",
+   "quote": "Before making an order under section 151(2), the Welsh Ministers must consult the Commission"
+  },
+  {
+   "requirement": "After making an order under section 151(2), the Welsh Ministers must inform a Minister of the Crown.",
+   "quote": "after making such an order they must inform a Minister of the Crown."
+  },
+  {
+   "requirement": "Before making an order under section 151(3), the Scottish Ministers must consult the Commission.",
+   "quote": "Before making an order under section 151(3), the Scottish Ministers must consult the Commission"
+  },
+  {
+   "requirement": "After making an order under section 151(3), the Scottish Ministers must inform a Minister of the Crown.",
+   "quote": "after making such an order they must inform a Minister of the Crown."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

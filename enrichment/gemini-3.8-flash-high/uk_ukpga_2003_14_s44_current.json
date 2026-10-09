@@ -1,0 +1,178 @@
+{
+ "key": "uk/ukpga/2003/14/s44@current",
+ "section": "uk/ukpga/2003/14/s44",
+ "version": "current",
+ "source_sha256": "2ab9fb34a8940c8baa1282315363fbf944e7cbf89eca7f4a3e0aa47074d526c7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 44 of the Finance Act 2003 applies where a contract for a land transaction is entered into under which the transaction is to be completed by a conveyance.",
+    "quote": "applies where a contract for a land transaction is entered into under which the transaction is to be completed by a conveyance"
+   },
+   {
+    "requirement": "A person is not regarded as entering into a land transaction merely by entering into the contract, but the remaining provisions of section 44 have effect.",
+    "quote": "A person is not regarded as entering into a land transaction by reason of entering into the contract"
+   },
+   {
+    "requirement": "If a land transaction is completed without having previously been substantially performed, the contract and the transaction effected on completion are treated as parts of a single land transaction with the effective date being the date of completion.",
+    "quote": "the contract and the transaction effected on completion are treated as parts of a single land transaction"
+   },
+   {
+    "requirement": "If a contract for a land transaction is substantially performed without having been completed, the contract is treated as if it were itself the transaction provided for in the contract, and the effective date of the transaction is when the contract is substantially performed.",
+    "quote": "the contract is treated as if it were itself the transaction provided for in the contract"
+   },
+   {
+    "requirement": "A contract is substantially performed when the purchaser, or a person connected with the purchaser, takes possession of the whole, or substantially the whole, of the subject-matter of the contract, or when a substantial amount of the consideration is paid or provided.",
+    "quote": "takes possession of the whole, or substantially the whole, of the subject-matter of the contract, or (b) a substantial amount of the consideration is paid or provided"
+   },
+   {
+    "requirement": "For the purpose of taking possession under subsection (5)(a), possession includes receipt of rents and profits or the right to receive them.",
+    "quote": "possession includes receipt of rents and profits or the right to receive them"
+   },
+   {
+    "requirement": "For the purpose of taking possession under subsection (5)(a), it is immaterial whether possession is taken under the contract or under a licence or lease of a temporary character.",
+    "quote": "it is immaterial whether possession is taken under the contract or under a licence or lease of a temporary character"
+   },
+   {
+    "requirement": "Where none of the consideration is rent, a substantial amount of the consideration is paid or provided when the whole or substantially the whole of the consideration is paid or provided.",
+    "quote": "if none of the consideration is rent, where the whole or substantially the whole of the consideration is paid or provided"
+   },
+   {
+    "requirement": "Where the only consideration is rent, a substantial amount of the consideration is paid or provided when the first payment of rent is made.",
+    "quote": "if the only consideration is rent, when the first payment of rent is made"
+   },
+   {
+    "requirement": "Where the consideration includes both rent and other consideration, a substantial amount of the consideration is paid or provided when either the whole or substantially the whole of the consideration other than rent is paid or provided, or the first payment of rent is made.",
+    "quote": "when— (i) the whole or substantially the whole of the consideration other than rent is paid or provided, or (ii) the first payment of rent is made"
+   },
+   {
+    "requirement": "Where a contract has been substantially performed without having been completed and is subsequently completed by a conveyance, both the contract and the transaction effected on completion are notifiable transactions.",
+    "quote": "both the contract and the transaction effected on completion are notifiable transactions"
+   },
+   {
+    "requirement": "Where a contract has been substantially performed without completion and is subsequently completed by a conveyance, tax is chargeable on the transaction effected on completion only to the extent, if any, that the tax chargeable on it exceeds the tax chargeable on the contract.",
+    "quote": "tax is chargeable on the latter transaction to the extent (if any) that the amount of tax chargeable on it is greater than the amount of tax chargeable on the contract"
+   },
+   {
+    "requirement": "Where a substantially performed contract is afterwards rescinded, annulled, or not carried into effect to any extent, the Inland Revenue must repay the tax paid under subsection (4) to that extent.",
+    "quote": "the tax paid by virtue of that subsection shall (to that extent) be repaid by the Inland Revenue"
+   },
+   {
+    "requirement": "A claim for repayment of tax following the rescission, annulment, or non-performance of a contract must be made by amending the land transaction return submitted for that contract.",
+    "quote": "Repayment must be claimed by amendment of the land transaction return made in respect of the contract"
+   },
+   {
+    "requirement": "Where paragraph 12A of Schedule 17A applies regarding an agreement for lease, it applies in place of subsections (4), (8), and (9).",
+    "quote": "paragraph 12A of Schedule 17A applies (agreement for lease), or it applies in place of subsections (4), (8) and (9)"
+   },
+   {
+    "requirement": "References to completion mean completion of the proposed land transaction between the same parties in substantial conformity with the contract.",
+    "quote": "completion of the land transaction proposed, between the same parties, in substantial conformity with the contract"
+   },
+   {
+    "requirement": "In section 44, the term contract includes any agreement and the term conveyance includes any instrument.",
+    "quote": "“contract” includes any agreement and “conveyance” includes any instrument"
+   },
+   {
+    "requirement": "Section 1122 of the Corporation Tax Act 2010 applies to determine who is a connected person for the purposes of section 44.",
+    "quote": "Section 1122 of the Corporation Tax Act 2010 (connected persons) has effect for the purposes of this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The payment count of rent triggering substantial performance when the only consideration is rent",
+    "value": "first",
+    "quote": "when the first payment of rent is made"
+   },
+   {
+    "what": "The payment count of rent triggering substantial performance when consideration includes both rent and other consideration",
+    "value": "first",
+    "quote": "the first payment of rent is made"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 44 of the Finance Act 2003 applies where a contract for a land transaction is entered into under which the transaction is to be completed by a conveyance.",
+   "quote": "applies where a contract for a land transaction is entered into under which the transaction is to be completed by a conveyance"
+  },
+  {
+   "requirement": "A person is not regarded as entering into a land transaction merely by entering into the contract, but the remaining provisions of section 44 have effect.",
+   "quote": "A person is not regarded as entering into a land transaction by reason of entering into the contract"
+  },
+  {
+   "requirement": "If a land transaction is completed without having previously been substantially performed, the contract and the transaction effected on completion are treated as parts of a single land transaction with the effective date being the date of completion.",
+   "quote": "the contract and the transaction effected on completion are treated as parts of a single land transaction"
+  },
+  {
+   "requirement": "If a contract for a land transaction is substantially performed without having been completed, the contract is treated as if it were itself the transaction provided for in the contract, and the effective date of the transaction is when the contract is substantially performed.",
+   "quote": "the contract is treated as if it were itself the transaction provided for in the contract"
+  },
+  {
+   "requirement": "A contract is substantially performed when the purchaser, or a person connected with the purchaser, takes possession of the whole, or substantially the whole, of the subject-matter of the contract, or when a substantial amount of the consideration is paid or provided.",
+   "quote": "takes possession of the whole, or substantially the whole, of the subject-matter of the contract, or (b) a substantial amount of the consideration is paid or provided"
+  },
+  {
+   "requirement": "For the purpose of taking possession under subsection (5)(a), possession includes receipt of rents and profits or the right to receive them.",
+   "quote": "possession includes receipt of rents and profits or the right to receive them"
+  },
+  {
+   "requirement": "For the purpose of taking possession under subsection (5)(a), it is immaterial whether possession is taken under the contract or under a licence or lease of a temporary character.",
+   "quote": "it is immaterial whether possession is taken under the contract or under a licence or lease of a temporary character"
+  },
+  {
+   "requirement": "Where none of the consideration is rent, a substantial amount of the consideration is paid or provided when the whole or substantially the whole of the consideration is paid or provided.",
+   "quote": "if none of the consideration is rent, where the whole or substantially the whole of the consideration is paid or provided"
+  },
+  {
+   "requirement": "Where the only consideration is rent, a substantial amount of the consideration is paid or provided when the first payment of rent is made.",
+   "quote": "if the only consideration is rent, when the first payment of rent is made"
+  },
+  {
+   "requirement": "Where the consideration includes both rent and other consideration, a substantial amount of the consideration is paid or provided when either the whole or substantially the whole of the consideration other than rent is paid or provided, or the first payment of rent is made.",
+   "quote": "when— (i) the whole or substantially the whole of the consideration other than rent is paid or provided, or (ii) the first payment of rent is made"
+  },
+  {
+   "requirement": "Where a contract has been substantially performed without having been completed and is subsequently completed by a conveyance, both the contract and the transaction effected on completion are notifiable transactions.",
+   "quote": "both the contract and the transaction effected on completion are notifiable transactions"
+  },
+  {
+   "requirement": "Where a contract has been substantially performed without completion and is subsequently completed by a conveyance, tax is chargeable on the transaction effected on completion only to the extent, if any, that the tax chargeable on it exceeds the tax chargeable on the contract.",
+   "quote": "tax is chargeable on the latter transaction to the extent (if any) that the amount of tax chargeable on it is greater than the amount of tax chargeable on the contract"
+  },
+  {
+   "requirement": "Where a substantially performed contract is afterwards rescinded, annulled, or not carried into effect to any extent, the Inland Revenue must repay the tax paid under subsection (4) to that extent.",
+   "quote": "the tax paid by virtue of that subsection shall (to that extent) be repaid by the Inland Revenue"
+  },
+  {
+   "requirement": "A claim for repayment of tax following the rescission, annulment, or non-performance of a contract must be made by amending the land transaction return submitted for that contract.",
+   "quote": "Repayment must be claimed by amendment of the land transaction return made in respect of the contract"
+  },
+  {
+   "requirement": "Where paragraph 12A of Schedule 17A applies regarding an agreement for lease, it applies in place of subsections (4), (8), and (9).",
+   "quote": "paragraph 12A of Schedule 17A applies (agreement for lease), or it applies in place of subsections (4), (8) and (9)"
+  },
+  {
+   "requirement": "References to completion mean completion of the proposed land transaction between the same parties in substantial conformity with the contract.",
+   "quote": "completion of the land transaction proposed, between the same parties, in substantial conformity with the contract"
+  },
+  {
+   "requirement": "In section 44, the term contract includes any agreement and the term conveyance includes any instrument.",
+   "quote": "“contract” includes any agreement and “conveyance” includes any instrument"
+  },
+  {
+   "requirement": "Section 1122 of the Corporation Tax Act 2010 applies to determine who is a connected person for the purposes of section 44.",
+   "quote": "Section 1122 of the Corporation Tax Act 2010 (connected persons) has effect for the purposes of this section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 18,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

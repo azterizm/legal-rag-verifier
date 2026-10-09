@@ -1,0 +1,53 @@
+{
+ "key": "uk/ukpga/2013/29/s215@current",
+ "section": "uk/ukpga/2013/29/s215",
+ "version": "current",
+ "source_sha256": "c7d02602eec405d4476ccc0d7620444c5fa70ab03c3886dde8d20933f2e85b2d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The general anti-abuse rule has effect in relation to any tax arrangements entered into on or after the day on which the Act is passed.",
+    "quote": "The general anti-abuse rule has effect in relation to any tax arrangements entered into on or after the day on which this Act is passed."
+   },
+   {
+    "requirement": "Where tax arrangements form part of any other arrangements entered into before the day the Act is passed, those other arrangements are to be ignored for the purposes of section 207(3), subject to subsection (3).",
+    "quote": "Where the tax arrangements form part of any other arrangements entered into before that day those other arrangements are to be ignored for the purposes of section 207(3), subject to subsection (3)."
+   },
+   {
+    "requirement": "Account is to be taken of those other arrangements entered into before that day for the purposes of section 207(3) if, as a result, the tax arrangements would not be abusive.",
+    "quote": "Account is to be taken of those other arrangements for the purposes of section 207(3) if, as a result, the tax arrangements would not be abusive."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the commencement date on or after which tax arrangements must be entered into for the general anti-abuse rule to have effect",
+    "value": "the day on which this Act is passed",
+    "quote": "entered into on or after the day on which this Act is passed"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The general anti-abuse rule has effect in relation to any tax arrangements entered into on or after the day on which the Act is passed.",
+   "quote": "The general anti-abuse rule has effect in relation to any tax arrangements entered into on or after the day on which this Act is passed."
+  },
+  {
+   "requirement": "Where tax arrangements form part of any other arrangements entered into before the day the Act is passed, those other arrangements are to be ignored for the purposes of section 207(3), subject to subsection (3).",
+   "quote": "Where the tax arrangements form part of any other arrangements entered into before that day those other arrangements are to be ignored for the purposes of section 207(3), subject to subsection (3)."
+  },
+  {
+   "requirement": "Account is to be taken of those other arrangements entered into before that day for the purposes of section 207(3) if, as a result, the tax arrangements would not be abusive.",
+   "quote": "Account is to be taken of those other arrangements for the purposes of section 207(3) if, as a result, the tax arrangements would not be abusive."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

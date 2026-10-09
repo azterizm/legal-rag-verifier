@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2009/4/s46@current",
+ "section": "uk/ukpga/2009/4/s46",
+ "version": "current",
+ "source_sha256": "65495134626ee2efaf5648db3ea7786b9fc5ac6015ce6766fcaadd3a1048a708",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The profits of a trade must be calculated in accordance with generally accepted accounting practice, subject to any adjustment required or authorised by law in calculating profits for corporation tax purposes.",
+    "quote": "The profits of a trade must be calculated in accordance with generally accepted accounting practice, subject to any adjustment required or authorised by law in calculating profits for corporation tax purposes."
+   },
+   {
+    "requirement": "A company is not required to comply with the requirements of the Companies Act 2006 or subordinate legislation made under that Act except as to the basis of calculation.",
+    "quote": "require a company to comply with the requirements of the Companies Act 2006 (c. 46) or subordinate legislation made under that Act except as to the basis of calculation"
+   },
+   {
+    "requirement": "A company is not subject to any statutory requirements as to audit or disclosure under section 46 of the Corporation Tax Act 2009.",
+    "quote": "impose any requirements as to audit or disclosure"
+   },
+   {
+    "requirement": "Provisions of the Corporation Tax Acts relating to the calculation of the profits of Lloyd's underwriters are not affected by section 46 of the Corporation Tax Act 2009.",
+    "quote": "relating to the calculation of the profits of— (i) Lloyd's underwriters"
+   },
+   {
+    "requirement": "Provisions of the Corporation Tax Acts that otherwise lay down special rules for the calculation of the profits of a particular description of business are not affected by section 46 of the Corporation Tax Act 2009.",
+    "quote": "otherwise laying down special rules for the calculation of the profits of a particular description of business"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The profits of a trade must be calculated in accordance with generally accepted accounting practice, subject to any adjustment required or authorised by law in calculating profits for corporation tax purposes.",
+   "quote": "The profits of a trade must be calculated in accordance with generally accepted accounting practice, subject to any adjustment required or authorised by law in calculating profits for corporation tax purposes."
+  },
+  {
+   "requirement": "A company is not required to comply with the requirements of the Companies Act 2006 or subordinate legislation made under that Act except as to the basis of calculation.",
+   "quote": "require a company to comply with the requirements of the Companies Act 2006 (c. 46) or subordinate legislation made under that Act except as to the basis of calculation"
+  },
+  {
+   "requirement": "A company is not subject to any statutory requirements as to audit or disclosure under section 46 of the Corporation Tax Act 2009.",
+   "quote": "impose any requirements as to audit or disclosure"
+  },
+  {
+   "requirement": "Provisions of the Corporation Tax Acts relating to the calculation of the profits of Lloyd's underwriters are not affected by section 46 of the Corporation Tax Act 2009.",
+   "quote": "relating to the calculation of the profits of— (i) Lloyd's underwriters"
+  },
+  {
+   "requirement": "Provisions of the Corporation Tax Acts that otherwise lay down special rules for the calculation of the profits of a particular description of business are not affected by section 46 of the Corporation Tax Act 2009.",
+   "quote": "otherwise laying down special rules for the calculation of the profits of a particular description of business"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

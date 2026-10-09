@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1998/39/s38@current",
+ "section": "uk/ukpga/1998/39/s38",
+ "version": "current",
+ "source_sha256": "455d9e219123e8db73a0b2da4b158130f7f34c0d10c0f79c9d083e216a6f0527",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Except for section 21, the provisions of the National Minimum Wage Act 1998 apply to employment as a relevant member of the House of Lords staff in the same manner as they apply to other employment.",
+    "quote": "Apart from section 21 above, the provisions of this Act have effect in relation to employment as a relevant member of the House of Lords staff as they have effect in relation to other employment."
+   },
+   {
+    "requirement": "No rule of law or Parliamentary law or practice prevents a relevant member of the House of Lords staff from bringing any claim under the National Minimum Wage Act 1998 before the High Court or the county court.",
+    "quote": "Nothing in any rule of law or the law or practice of Parliament prevents a relevant member of the House of Lords staff from bringing before the High Court or the county court any claim under this Act."
+   },
+   {
+    "requirement": "A relevant member of the House of Lords staff is defined as any person who is employed under a worker’s contract with the Corporate Officer of the House of Lords.",
+    "quote": "“relevant member of the House of Lords staff” means any person who is employed under a worker’s contract with the Corporate Officer of the House of Lords."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Except for section 21, the provisions of the National Minimum Wage Act 1998 apply to employment as a relevant member of the House of Lords staff in the same manner as they apply to other employment.",
+   "quote": "Apart from section 21 above, the provisions of this Act have effect in relation to employment as a relevant member of the House of Lords staff as they have effect in relation to other employment."
+  },
+  {
+   "requirement": "No rule of law or Parliamentary law or practice prevents a relevant member of the House of Lords staff from bringing any claim under the National Minimum Wage Act 1998 before the High Court or the county court.",
+   "quote": "Nothing in any rule of law or the law or practice of Parliament prevents a relevant member of the House of Lords staff from bringing before the High Court or the county court any claim under this Act."
+  },
+  {
+   "requirement": "A relevant member of the House of Lords staff is defined as any person who is employed under a worker’s contract with the Corporate Officer of the House of Lords.",
+   "quote": "“relevant member of the House of Lords staff” means any person who is employed under a worker’s contract with the Corporate Officer of the House of Lords."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

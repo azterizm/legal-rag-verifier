@@ -1,0 +1,125 @@
+{
+ "key": "uk/ukpga/2000/23/s46@current",
+ "section": "uk/ukpga/2000/23/s46",
+ "version": "current",
+ "source_sha256": "92516ec1325266e0b7e4314368c2e82c85241dad97dce7f3a7046451723e41a9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An authorising person must not grant or renew an authorisation under Part II for the carrying out of any conduct if it appears to that person that the authorisation is not one for which Part II is the relevant statutory provision for all parts of the United Kingdom and that all the conduct authorised by the grant or renewal is likely to take place in Scotland.",
+    "quote": "No person shall grant or renew an authorisation under this Part for the carrying out of any conduct"
+   },
+   {
+    "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it is granted or renewed on the grounds that it is necessary in the interests of national security or in the interests of the economic well-being of the United Kingdom.",
+    "quote": "is granted or renewed on the grounds that it is necessary in the interests of national security or in the interests of the economic well-being of the United Kingdom"
+   },
+   {
+    "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it is granted or renewed by or on the application of a person holding any office, rank or position with any of the public authorities specified in subsection (3).",
+    "quote": "is granted or renewed by or on the application of a person holding any office, rank or position with any of the public authorities specified in subsection (3)"
+   },
+   {
+    "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it authorises conduct of a person holding an office, rank or position with any of the public authorities specified in subsection (3).",
+    "quote": "authorises conduct of a person holding an office, rank or position with any of the public authorities so specified"
+   },
+   {
+    "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it authorises conduct of or in relation to an individual acting as a covert human intelligence source for the benefit of any of the public authorities specified in subsection (3).",
+    "quote": "authorises conduct of or in relation to an individual acting as a covert human intelligence source for the benefit of any of the public authorities so specified"
+   },
+   {
+    "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it authorises conduct that is surveillance by virtue of section 48(4).",
+    "quote": "authorises conduct that is surveillance by virtue of section 48(4)"
+   },
+   {
+    "requirement": "The public authorities specified for the purposes of subsection (2) include the department of the Secretary of State by whom functions relating to immigration are exercisable.",
+    "quote": "the department of the Secretary of State by whom functions relating to immigration are exercisable"
+   },
+   {
+    "requirement": "The public authorities mentioned in subsection (2) are each of the intelligence services, Her Majesty’s forces, the Ministry of Defence, the Ministry of Defence Police, the Civil Nuclear Constabulary, the Service Police Complaints Commissioner, the CMA, the National Crime Agency, the Commissioners for Her Majesty's Revenue and Customs, and the British Transport Police.",
+    "quote": "The public authorities mentioned in subsection (2) are—"
+   },
+   {
+    "requirement": "A public authority having effect under Part II by virtue of being specified in Schedule 1 or by virtue of a designating order under section 41(1)(d) is treated as included within the authorities specified in subsection (3) to the extent that the Secretary of State directs by order that it is a relevant public authority or a designated authority for all parts of the United Kingdom.",
+    "quote": "the authorities specified in subsection (3) of this section shall be treated as including that authority to the extent that the Secretary of State by order directs that the authority is a relevant public authority or, as the case may be, is a designated authority for all parts of the United Kingdom"
+   },
+   {
+    "requirement": "A person must not grant or renew a section 29B(5)(b) authorisation if it appears to the person that all or some of the conduct authorised by the authorisation is likely to take place in Scotland.",
+    "quote": "No person may grant or renew a section 29B(5)(b) authorisation if it appears to the person that all or some of the conduct authorised by the section 29B(5)(b) authorisation is likely to take place in Scotland"
+   },
+   {
+    "requirement": "The restriction on granting or renewing a section 29B(5)(b) authorisation where conduct is likely to take place in Scotland does not apply if the grant or renewal is for a purpose relating to a reserved matter within the meaning of the Scotland Act 1998.",
+    "quote": "subsection (5) does not apply if the grant or renewal of the section 29B(5)(b) authorisation is for a purpose relating to a reserved matter (within the meaning of the Scotland Act 1998)"
+   },
+   {
+    "requirement": "For the purposes of subsections (5) and (6), a section 29B(5)(b) authorisation is defined as an authorisation under section 29B in so far as it is granted or renewed on the grounds that it is necessary on grounds falling within section 29B(5)(b).",
+    "quote": "“a section 29B(5)(b) authorisation” means an authorisation under section 29B in so far as it is granted or, as the case may be, renewed on the grounds that it is necessary on grounds falling within section 29B(5)(b)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Calendar year of the Scotland Act cited for the definition of a reserved matter",
+    "value": "1998",
+    "quote": "Scotland Act 1998"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An authorising person must not grant or renew an authorisation under Part II for the carrying out of any conduct if it appears to that person that the authorisation is not one for which Part II is the relevant statutory provision for all parts of the United Kingdom and that all the conduct authorised by the grant or renewal is likely to take place in Scotland.",
+   "quote": "No person shall grant or renew an authorisation under this Part for the carrying out of any conduct"
+  },
+  {
+   "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it is granted or renewed on the grounds that it is necessary in the interests of national security or in the interests of the economic well-being of the United Kingdom.",
+   "quote": "is granted or renewed on the grounds that it is necessary in the interests of national security or in the interests of the economic well-being of the United Kingdom"
+  },
+  {
+   "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it is granted or renewed by or on the application of a person holding any office, rank or position with any of the public authorities specified in subsection (3).",
+   "quote": "is granted or renewed by or on the application of a person holding any office, rank or position with any of the public authorities specified in subsection (3)"
+  },
+  {
+   "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it authorises conduct of a person holding an office, rank or position with any of the public authorities specified in subsection (3).",
+   "quote": "authorises conduct of a person holding an office, rank or position with any of the public authorities so specified"
+  },
+  {
+   "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it authorises conduct of or in relation to an individual acting as a covert human intelligence source for the benefit of any of the public authorities specified in subsection (3).",
+   "quote": "authorises conduct of or in relation to an individual acting as a covert human intelligence source for the benefit of any of the public authorities so specified"
+  },
+  {
+   "requirement": "Part II is the relevant statutory provision for all parts of the United Kingdom in relation to an authorisation in so far as it authorises conduct that is surveillance by virtue of section 48(4).",
+   "quote": "authorises conduct that is surveillance by virtue of section 48(4)"
+  },
+  {
+   "requirement": "The public authorities specified for the purposes of subsection (2) include the department of the Secretary of State by whom functions relating to immigration are exercisable.",
+   "quote": "the department of the Secretary of State by whom functions relating to immigration are exercisable"
+  },
+  {
+   "requirement": "The public authorities mentioned in subsection (2) are each of the intelligence services, Her Majesty’s forces, the Ministry of Defence, the Ministry of Defence Police, the Civil Nuclear Constabulary, the Service Police Complaints Commissioner, the CMA, the National Crime Agency, the Commissioners for Her Majesty's Revenue and Customs, and the British Transport Police.",
+   "quote": "The public authorities mentioned in subsection (2) are—"
+  },
+  {
+   "requirement": "A public authority having effect under Part II by virtue of being specified in Schedule 1 or by virtue of a designating order under section 41(1)(d) is treated as included within the authorities specified in subsection (3) to the extent that the Secretary of State directs by order that it is a relevant public authority or a designated authority for all parts of the United Kingdom.",
+   "quote": "the authorities specified in subsection (3) of this section shall be treated as including that authority to the extent that the Secretary of State by order directs that the authority is a relevant public authority or, as the case may be, is a designated authority for all parts of the United Kingdom"
+  },
+  {
+   "requirement": "A person must not grant or renew a section 29B(5)(b) authorisation if it appears to the person that all or some of the conduct authorised by the authorisation is likely to take place in Scotland.",
+   "quote": "No person may grant or renew a section 29B(5)(b) authorisation if it appears to the person that all or some of the conduct authorised by the section 29B(5)(b) authorisation is likely to take place in Scotland"
+  },
+  {
+   "requirement": "The restriction on granting or renewing a section 29B(5)(b) authorisation where conduct is likely to take place in Scotland does not apply if the grant or renewal is for a purpose relating to a reserved matter within the meaning of the Scotland Act 1998.",
+   "quote": "subsection (5) does not apply if the grant or renewal of the section 29B(5)(b) authorisation is for a purpose relating to a reserved matter (within the meaning of the Scotland Act 1998)"
+  },
+  {
+   "requirement": "For the purposes of subsections (5) and (6), a section 29B(5)(b) authorisation is defined as an authorisation under section 29B in so far as it is granted or renewed on the grounds that it is necessary on grounds falling within section 29B(5)(b).",
+   "quote": "“a section 29B(5)(b) authorisation” means an authorisation under section 29B in so far as it is granted or, as the case may be, renewed on the grounds that it is necessary on grounds falling within section 29B(5)(b)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

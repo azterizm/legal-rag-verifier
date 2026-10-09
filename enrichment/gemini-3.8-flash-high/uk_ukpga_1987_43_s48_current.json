@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1987/43/s48@current",
+ "section": "uk/ukpga/1987/43/s48",
+ "version": "current",
+ "source_sha256": "b5ea58f2cc916a5ed2bcd2f44f79165c6e6ff8a92696f6bef42b8776adf970a2",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The enactments mentioned in Schedule 4 to the Consumer Protection Act 1987 shall have effect subject to the amendments specified in that Schedule, which are minor amendments and amendments consequential on the provisions of the Act.",
+    "quote": "enactments mentioned in Schedule 4 to this Act shall have effect subject to the amendments specified in that Schedule (being minor amendments and amendments consequential on the provisions of this Act)"
+   },
+   {
+    "requirement": "The Trade Descriptions Act 1972 shall cease to have effect.",
+    "quote": "The following Acts shall cease to have effect, that is to say— (a) the Trade Descriptions Act 1972"
+   },
+   {
+    "requirement": "The Fabrics (Misdescription) Act 1913 shall cease to have effect.",
+    "quote": "The following Acts shall cease to have effect, that is to say— (a) the Trade Descriptions Act 1972; and (b) the Fabrics (Misdescription) Act 1913"
+   },
+   {
+    "requirement": "The enactments mentioned in Schedule 5 to the Consumer Protection Act 1987 are repealed to the extent specified in the third column of that Schedule.",
+    "quote": "enactments mentioned in Schedule 5 to this Act are hereby repealed to the extent specified in the third column of that Schedule"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Calendar year of the Trade Descriptions Act that ceases to have effect",
+    "value": "1972",
+    "quote": "Trade Descriptions Act 1972"
+   },
+   {
+    "what": "Calendar year of the Fabrics (Misdescription) Act that ceases to have effect",
+    "value": "1913",
+    "quote": "Fabrics (Misdescription) Act 1913"
+   },
+   {
+    "what": "Column number of Schedule 5 specifying the extent of enactments repealed",
+    "value": "third",
+    "quote": "third column of that Schedule"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The enactments mentioned in Schedule 4 to the Consumer Protection Act 1987 shall have effect subject to the amendments specified in that Schedule, which are minor amendments and amendments consequential on the provisions of the Act.",
+   "quote": "enactments mentioned in Schedule 4 to this Act shall have effect subject to the amendments specified in that Schedule (being minor amendments and amendments consequential on the provisions of this Act)"
+  },
+  {
+   "requirement": "The Trade Descriptions Act 1972 shall cease to have effect.",
+   "quote": "The following Acts shall cease to have effect, that is to say— (a) the Trade Descriptions Act 1972"
+  },
+  {
+   "requirement": "The Fabrics (Misdescription) Act 1913 shall cease to have effect.",
+   "quote": "The following Acts shall cease to have effect, that is to say— (a) the Trade Descriptions Act 1972; and (b) the Fabrics (Misdescription) Act 1913"
+  },
+  {
+   "requirement": "The enactments mentioned in Schedule 5 to the Consumer Protection Act 1987 are repealed to the extent specified in the third column of that Schedule.",
+   "quote": "enactments mentioned in Schedule 5 to this Act are hereby repealed to the extent specified in the third column of that Schedule"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

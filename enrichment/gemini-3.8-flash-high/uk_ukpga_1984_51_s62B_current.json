@@ -1,0 +1,155 @@
+{
+ "key": "uk/ukpga/1984/51/s62B@current",
+ "section": "uk/ukpga/1984/51/s62B",
+ "version": "current",
+ "source_sha256": "ce8c4b5f260fd4647b245f1c6814144fd4217d713bb8743ff149cbb19d4776b4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if, immediately after the transfer of value mentioned in section 62A(1)(a), all the property comprised in settlement A was held for charitable purposes only without limit of time (whether defined by a date or otherwise).",
+    "quote": "immediately after the transfer of value mentioned in section 62A(1)(a) all the property comprised in settlement A was held for charitable purposes only without limit of time"
+   },
+   {
+    "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if, immediately after the transfer of value mentioned in section 62A(1)(b), all the property comprised in settlement B was held for charitable purposes only without limit of time.",
+    "quote": "immediately after the transfer of value mentioned in section 62A(1)(b) all the property comprised in settlement B was so held"
+   },
+   {
+    "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if either settlement A, settlement B, or each of them is a protected settlement under section 62C.",
+    "quote": "either or each of settlement A and settlement B is a protected settlement (see section 62C)"
+   },
+   {
+    "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if the transfer of value, or either or each of the transfers of value, mentioned in section 62A(1)(a) and (b) results from the payment of a premium under a contract of life insurance whose terms provide for premiums to be due at regular intervals of one year or less throughout the contract term.",
+    "quote": "results from the payment of a premium under a contract of life insurance the terms of which provide for premiums to be due at regular intervals of one year or less throughout the contract term"
+   },
+   {
+    "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if the transfer of value, or either or each of the transfers of value, mentioned in section 62A(1)(a) and (b) is made to fund a premium payment under a contract of life insurance providing for regular premiums at intervals of one year or less throughout the contract term.",
+    "quote": "is made to fund such a payment"
+   },
+   {
+    "requirement": "If the transfer of value, or each of the transfers of value, mentioned in section 62A(1) is not the transfer of value under section 4 on the settlor's death, a same-day addition exists for the purposes of this Chapter only if both Condition A and Condition B are met.",
+    "quote": "there is a same-day addition for the purposes of this Chapter only if conditions A and B are met"
+   },
+   {
+    "requirement": "Condition A is satisfied where the difference between the two values mentioned in section 62A(1)(a) exceeds £5,000.",
+    "quote": "the difference between the two values mentioned in section 62A(1)(a) exceeds £5,000"
+   },
+   {
+    "requirement": "Where there has been more than one transfer of value within section 62A(1)(a) on the same day, Condition A is satisfied if the difference between the value of the property comprised in settlement A immediately before the first transfer and immediately after the last transfer exceeds £5,000.",
+    "quote": "the difference between— (i) the value of the property comprised in settlement A immediately before the first of those transfers, and (ii) the value of the property comprised in settlement A immediately after the last of those transfers, exceeds £5,000"
+   },
+   {
+    "requirement": "Condition B is satisfied where the difference between the two values mentioned in section 62A(1)(b) exceeds £5,000.",
+    "quote": "the difference between the two values mentioned in section 62A(1)(b) exceeds £5,000"
+   },
+   {
+    "requirement": "Where there has been more than one transfer of value within section 62A(1)(b), Condition B is satisfied if the difference between the value of the property comprised in settlement B immediately before the first transfer and immediately after the last transfer exceeds £5,000.",
+    "quote": "the difference between— (i) the value of the property comprised in settlement B immediately before the first of those transfers, and (ii) the value of the property comprised in settlement B immediately after the last of those transfers, exceeds £5,000"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum regular interval between life insurance premium due dates throughout the contract term",
+    "value": "one year",
+    "quote": "regular intervals of one year or less"
+   },
+   {
+    "what": "minimum difference between the two values mentioned in section 62A(1)(a) to satisfy Condition A",
+    "value": "£5,000",
+    "quote": "exceeds £5,000"
+   },
+   {
+    "what": "minimum difference between the value of property in settlement A immediately before the first transfer and immediately after the last transfer on the same day to satisfy Condition A",
+    "value": "£5,000",
+    "quote": "exceeds £5,000"
+   },
+   {
+    "what": "minimum difference between the two values mentioned in section 62A(1)(b) to satisfy Condition B",
+    "value": "£5,000",
+    "quote": "exceeds £5,000"
+   },
+   {
+    "what": "minimum difference between the value of property in settlement B immediately before the first transfer and immediately after the last transfer to satisfy Condition B",
+    "value": "£5,000",
+    "quote": "exceeds £5,000"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if, immediately after the transfer of value mentioned in section 62A(1)(a), all the property comprised in settlement A was held for charitable purposes only without limit of time (whether defined by a date or otherwise).",
+   "quote": "immediately after the transfer of value mentioned in section 62A(1)(a) all the property comprised in settlement A was held for charitable purposes only without limit of time"
+  },
+  {
+   "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if, immediately after the transfer of value mentioned in section 62A(1)(b), all the property comprised in settlement B was held for charitable purposes only without limit of time.",
+   "quote": "immediately after the transfer of value mentioned in section 62A(1)(b) all the property comprised in settlement B was so held"
+  },
+  {
+   "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if either settlement A, settlement B, or each of them is a protected settlement under section 62C.",
+   "quote": "either or each of settlement A and settlement B is a protected settlement (see section 62C)"
+  },
+  {
+   "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if the transfer of value, or either or each of the transfers of value, mentioned in section 62A(1)(a) and (b) results from the payment of a premium under a contract of life insurance whose terms provide for premiums to be due at regular intervals of one year or less throughout the contract term.",
+   "quote": "results from the payment of a premium under a contract of life insurance the terms of which provide for premiums to be due at regular intervals of one year or less throughout the contract term"
+  },
+  {
+   "requirement": "A transfer of value is not treated as a same-day addition for the purposes of this Chapter if the transfer of value, or either or each of the transfers of value, mentioned in section 62A(1)(a) and (b) is made to fund a premium payment under a contract of life insurance providing for regular premiums at intervals of one year or less throughout the contract term.",
+   "quote": "is made to fund such a payment"
+  },
+  {
+   "requirement": "If the transfer of value, or each of the transfers of value, mentioned in section 62A(1) is not the transfer of value under section 4 on the settlor's death, a same-day addition exists for the purposes of this Chapter only if both Condition A and Condition B are met.",
+   "quote": "there is a same-day addition for the purposes of this Chapter only if conditions A and B are met"
+  },
+  {
+   "requirement": "Condition A is satisfied where the difference between the two values mentioned in section 62A(1)(a) exceeds £5,000.",
+   "quote": "the difference between the two values mentioned in section 62A(1)(a) exceeds £5,000"
+  },
+  {
+   "requirement": "Where there has been more than one transfer of value within section 62A(1)(a) on the same day, Condition A is satisfied if the difference between the value of the property comprised in settlement A immediately before the first transfer and immediately after the last transfer exceeds £5,000.",
+   "quote": "the difference between— (i) the value of the property comprised in settlement A immediately before the first of those transfers, and (ii) the value of the property comprised in settlement A immediately after the last of those transfers, exceeds £5,000"
+  },
+  {
+   "requirement": "Condition B is satisfied where the difference between the two values mentioned in section 62A(1)(b) exceeds £5,000.",
+   "quote": "the difference between the two values mentioned in section 62A(1)(b) exceeds £5,000"
+  },
+  {
+   "requirement": "Where there has been more than one transfer of value within section 62A(1)(b), Condition B is satisfied if the difference between the value of the property comprised in settlement B immediately before the first transfer and immediately after the last transfer exceeds £5,000.",
+   "quote": "the difference between— (i) the value of the property comprised in settlement B immediately before the first of those transfers, and (ii) the value of the property comprised in settlement B immediately after the last of those transfers, exceeds £5,000"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum regular interval between life insurance premium due dates throughout the contract term",
+   "value": "one year",
+   "quote": "regular intervals of one year or less"
+  },
+  {
+   "what": "minimum difference between the two values mentioned in section 62A(1)(a) to satisfy Condition A",
+   "value": "£5,000",
+   "quote": "exceeds £5,000"
+  },
+  {
+   "what": "minimum difference between the value of property in settlement A immediately before the first transfer and immediately after the last transfer on the same day to satisfy Condition A",
+   "value": "£5,000",
+   "quote": "exceeds £5,000"
+  },
+  {
+   "what": "minimum difference between the two values mentioned in section 62A(1)(b) to satisfy Condition B",
+   "value": "£5,000",
+   "quote": "exceeds £5,000"
+  },
+  {
+   "what": "minimum difference between the value of property in settlement B immediately before the first transfer and immediately after the last transfer to satisfy Condition B",
+   "value": "£5,000",
+   "quote": "exceeds £5,000"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 5
+ }
+}

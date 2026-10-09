@@ -1,0 +1,67 @@
+{
+ "key": "uk/ukpga/1967/7/s6@current",
+ "section": "uk/ukpga/1967/7/s6",
+ "version": "current",
+ "source_sha256": "f8ce19271a8661be79e1437fa6333f6d37e7da8c87dc5f016e9cb67f91f1534d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Act may be cited as the Misrepresentation Act 1967.",
+    "quote": "This Act may be cited as the Misrepresentation Act 1967"
+   },
+   {
+    "requirement": "The Act shall come into operation at the expiration of the period of one month beginning with the date on which it is passed.",
+    "quote": "This Act shall come into operation at the expiration of the period of one month beginning with the date on which it is passed"
+   },
+   {
+    "requirement": "The Act does not extend to Scotland.",
+    "quote": "This Act does not extend to Scotland"
+   },
+   {
+    "requirement": "The Act does not extend to Northern Ireland.",
+    "quote": "This Act does not extend to Northern Ireland"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period beginning with the date on which the Act is passed at the expiration of which the Act shall come into operation",
+    "value": "one month",
+    "quote": "period of one month beginning with the date on which it is passed"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Act may be cited as the Misrepresentation Act 1967.",
+   "quote": "This Act may be cited as the Misrepresentation Act 1967"
+  },
+  {
+   "requirement": "The Act shall come into operation at the expiration of the period of one month beginning with the date on which it is passed.",
+   "quote": "This Act shall come into operation at the expiration of the period of one month beginning with the date on which it is passed"
+  },
+  {
+   "requirement": "The Act does not extend to Scotland.",
+   "quote": "This Act does not extend to Scotland"
+  },
+  {
+   "requirement": "The Act does not extend to Northern Ireland.",
+   "quote": "This Act does not extend to Northern Ireland"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period beginning with the date on which the Act is passed at the expiration of which the Act shall come into operation",
+   "value": "one month",
+   "quote": "period of one month beginning with the date on which it is passed"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

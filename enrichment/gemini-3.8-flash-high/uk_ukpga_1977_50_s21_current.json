@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1977/50/s21@current",
+ "section": "uk/ukpga/1977/50/s21",
+ "version": "current",
+ "source_sha256": "9e1d8c58b7441961bcf8b713a1a6050f29af81158665ee55e0aea1efeb1a1d10",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A contract term in a contract covered by section 21 of the Unfair Contract Terms Act 1977 that purports to exclude or restrict liability for breach of a business obligation implied by law under subsection (3) has no effect if it was not fair and reasonable to incorporate that term into the contract.",
+    "quote": "shall have no effect if it was not fair and reasonable to incorporate the term in the contract"
+   },
+   {
+    "requirement": "Section 21 of the Unfair Contract Terms Act 1977 applies to any contract only to the extent that the contract relates to any matter referred to in section 15(2)(a) of that Act.",
+    "quote": "applies to any contract to the extent that it relates to any such matter as is referred to in section 15(2)(a) of this Act"
+   },
+   {
+    "requirement": "Section 21 of the Unfair Contract Terms Act 1977 does not apply to a contract of sale of goods or a hire-purchase agreement.",
+    "quote": "does not apply to— (a) a contract of sale of goods or a hire-purchase agreement"
+   },
+   {
+    "requirement": "Section 21 of the Unfair Contract Terms Act 1977 does not apply to a charterparty of a ship or hovercraft.",
+    "quote": "a charterparty of a ship or hovercraft"
+   },
+   {
+    "requirement": "An obligation under subsection (3) is an obligation incurred under a contract in the course of a business that arises by implication of law from the nature of the contract and relates either to the correspondence of goods with description or sample, to the quality or fitness of goods for any particular purpose, to any right to transfer ownership or possession of goods, or to the enjoyment of quiet possession of goods.",
+    "quote": "obligation incurred under a contract in the course of a business and arising by implication of law from the nature of the contract"
+   },
+   {
+    "requirement": "Any contract term that purports to exclude or restrict liability for breach of the obligations arising under section 11B of the Supply of Goods and Services Act 1982 is void, notwithstanding any of the earlier provisions of section 21 of the Unfair Contract Terms Act 1977.",
+    "quote": "any term of a contract which purports to exclude or restrict liability for breach of the obligations arising under section 11B of the Supply of Goods and Services Act 1982 (implied terms about title, freedom from encumbrances and quiet possession in certain contracts for the transfer of property in goods) shall be void"
+   },
+   {
+    "requirement": "Section 21 of the Unfair Contract Terms Act 1977 does not apply to any consumer contract.",
+    "quote": "does not apply to a consumer contract"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A contract term in a contract covered by section 21 of the Unfair Contract Terms Act 1977 that purports to exclude or restrict liability for breach of a business obligation implied by law under subsection (3) has no effect if it was not fair and reasonable to incorporate that term into the contract.",
+   "quote": "shall have no effect if it was not fair and reasonable to incorporate the term in the contract"
+  },
+  {
+   "requirement": "Section 21 of the Unfair Contract Terms Act 1977 applies to any contract only to the extent that the contract relates to any matter referred to in section 15(2)(a) of that Act.",
+   "quote": "applies to any contract to the extent that it relates to any such matter as is referred to in section 15(2)(a) of this Act"
+  },
+  {
+   "requirement": "Section 21 of the Unfair Contract Terms Act 1977 does not apply to a contract of sale of goods or a hire-purchase agreement.",
+   "quote": "does not apply to— (a) a contract of sale of goods or a hire-purchase agreement"
+  },
+  {
+   "requirement": "Section 21 of the Unfair Contract Terms Act 1977 does not apply to a charterparty of a ship or hovercraft.",
+   "quote": "a charterparty of a ship or hovercraft"
+  },
+  {
+   "requirement": "An obligation under subsection (3) is an obligation incurred under a contract in the course of a business that arises by implication of law from the nature of the contract and relates either to the correspondence of goods with description or sample, to the quality or fitness of goods for any particular purpose, to any right to transfer ownership or possession of goods, or to the enjoyment of quiet possession of goods.",
+   "quote": "obligation incurred under a contract in the course of a business and arising by implication of law from the nature of the contract"
+  },
+  {
+   "requirement": "Any contract term that purports to exclude or restrict liability for breach of the obligations arising under section 11B of the Supply of Goods and Services Act 1982 is void, notwithstanding any of the earlier provisions of section 21 of the Unfair Contract Terms Act 1977.",
+   "quote": "any term of a contract which purports to exclude or restrict liability for breach of the obligations arising under section 11B of the Supply of Goods and Services Act 1982 (implied terms about title, freedom from encumbrances and quiet possession in certain contracts for the transfer of property in goods) shall be void"
+  },
+  {
+   "requirement": "Section 21 of the Unfair Contract Terms Act 1977 does not apply to any consumer contract.",
+   "quote": "does not apply to a consumer contract"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

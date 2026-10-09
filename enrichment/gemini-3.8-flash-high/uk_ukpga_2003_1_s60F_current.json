@@ -1,0 +1,81 @@
+{
+ "key": "uk/ukpga/2003/1/s60F@current",
+ "section": "uk/ukpga/2003/1/s60F",
+ "version": "current",
+ "source_sha256": "09fd68dc3a21e1513032602f480afb957e4a63c6e63463194e7bc8a67afc50a4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of Chapter 10, a person who is not a company, relevant undertaking or other undertaking qualifies as small for a tax year if that person's turnover for the last calendar year before the tax year is not more than the amount for the time being specified in the second column of item 1 of the Table in section 382(3) of the Companies Act 2006.",
+    "quote": "a person who is not a company, relevant undertaking or other undertaking qualifies as small for a tax year if the person's turnover for the last calendar year before the tax year is not more than the amount for the time being specified in the second column of item 1 of the Table in section 382(3) of the Companies Act 2006"
+   },
+   {
+    "requirement": "The terms \"company\" and \"undertaking\" have the same meaning as in the Companies Act 2006.",
+    "quote": "“company” and “undertaking” have the same meaning as in the Companies Act 2006"
+   },
+   {
+    "requirement": "The term \"relevant undertaking\" has the meaning given by section 60D.",
+    "quote": "“relevant undertaking” has the meaning given by section 60D"
+   },
+   {
+    "requirement": "In relation to a person, \"turnover\" means the amounts derived from the provision of goods or services after the deduction of trade discounts, value added tax and any other taxes based on the amounts so derived.",
+    "quote": "“turnover”, in relation to a person, means the amounts derived from the provision of goods or services after the deduction of trade discounts, value added tax and any other taxes based on the amounts so derived"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period for which a qualifying person qualifies as small",
+    "value": "a tax year",
+    "quote": "qualifies as small for a tax year"
+   },
+   {
+    "what": "period over which a person's turnover is measured",
+    "value": "the last calendar year before the tax year",
+    "quote": "turnover for the last calendar year before the tax year"
+   },
+   {
+    "what": "maximum turnover limit for qualifying as small",
+    "value": "the amount for the time being specified in the second column of item 1 of the Table in section 382(3) of the Companies Act 2006",
+    "quote": "not more than the amount for the time being specified in the second column of item 1 of the Table in section 382(3) of the Companies Act 2006"
+   },
+   {
+    "what": "item number of the Table in section 382(3) of the Companies Act 2006 specifying the turnover amount",
+    "value": "1",
+    "quote": "item 1 of the Table"
+   },
+   {
+    "what": "column of the Table in section 382(3) of the Companies Act 2006 specifying the turnover amount",
+    "value": "second",
+    "quote": "second column of item 1 of the Table"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of Chapter 10, a person who is not a company, relevant undertaking or other undertaking qualifies as small for a tax year if that person's turnover for the last calendar year before the tax year is not more than the amount for the time being specified in the second column of item 1 of the Table in section 382(3) of the Companies Act 2006.",
+   "quote": "a person who is not a company, relevant undertaking or other undertaking qualifies as small for a tax year if the person's turnover for the last calendar year before the tax year is not more than the amount for the time being specified in the second column of item 1 of the Table in section 382(3) of the Companies Act 2006"
+  },
+  {
+   "requirement": "The terms \"company\" and \"undertaking\" have the same meaning as in the Companies Act 2006.",
+   "quote": "“company” and “undertaking” have the same meaning as in the Companies Act 2006"
+  },
+  {
+   "requirement": "The term \"relevant undertaking\" has the meaning given by section 60D.",
+   "quote": "“relevant undertaking” has the meaning given by section 60D"
+  },
+  {
+   "requirement": "In relation to a person, \"turnover\" means the amounts derived from the provision of goods or services after the deduction of trade discounts, value added tax and any other taxes based on the amounts so derived.",
+   "quote": "“turnover”, in relation to a person, means the amounts derived from the provision of goods or services after the deduction of trade discounts, value added tax and any other taxes based on the amounts so derived"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1986/64/s10@current",
+ "section": "uk/ukpga/1986/64/s10",
+ "version": "current",
+ "source_sha256": "5c084491defecd6fdbd356125e58eadfccc01084c94c8a78f86e8ba60ecb3602",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In Schedule 1 to the Marine Insurance Act 1906, 'rioters' in rule 8 and 'riot' in rule 10 must, in the application of the rules to any policy taking effect on or after the coming into force of section 10, be construed in accordance with section 1 unless a different intention appears.",
+    "quote": "“rioters” in rule 8 and “riot” in rule 10 shall, in the application of the rules to any policy taking effect on or after the coming into force of this section, be construed in accordance with section 1 above unless a different intention appears."
+   },
+   {
+    "requirement": "In any enactment in force before the coming into force of section 10, other than the enactments mentioned in subsections (1) and (2), 'riot' and cognate expressions must be construed in accordance with section 1 if they would have been construed in accordance with the common law offence of riot apart from this Part.",
+    "quote": "“Riot” and cognate expressions in any enactment in force before the coming into force of this section (other than the enactments mentioned in subsections (1) and (2) above) shall be construed in accordance with section 1 above if they would have been construed in accordance with the common law offence of riot apart from this Part."
+   },
+   {
+    "requirement": "Subject to subsections (1) to (3) and unless a different intention appears, nothing in this Part affects the meaning of 'riot' or any cognate expression in any enactment in force, or other instrument taking effect, before the coming into force of section 10.",
+    "quote": "Subject to subsections (1) to (3) above and unless a different intention appears, nothing in this Part affects the meaning of “riot” or any cognate expression in any enactment in force, or other instrument taking effect, before the coming into force of this section."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In Schedule 1 to the Marine Insurance Act 1906, 'rioters' in rule 8 and 'riot' in rule 10 must, in the application of the rules to any policy taking effect on or after the coming into force of section 10, be construed in accordance with section 1 unless a different intention appears.",
+   "quote": "“rioters” in rule 8 and “riot” in rule 10 shall, in the application of the rules to any policy taking effect on or after the coming into force of this section, be construed in accordance with section 1 above unless a different intention appears."
+  },
+  {
+   "requirement": "In any enactment in force before the coming into force of section 10, other than the enactments mentioned in subsections (1) and (2), 'riot' and cognate expressions must be construed in accordance with section 1 if they would have been construed in accordance with the common law offence of riot apart from this Part.",
+   "quote": "“Riot” and cognate expressions in any enactment in force before the coming into force of this section (other than the enactments mentioned in subsections (1) and (2) above) shall be construed in accordance with section 1 above if they would have been construed in accordance with the common law offence of riot apart from this Part."
+  },
+  {
+   "requirement": "Subject to subsections (1) to (3) and unless a different intention appears, nothing in this Part affects the meaning of 'riot' or any cognate expression in any enactment in force, or other instrument taking effect, before the coming into force of section 10.",
+   "quote": "Subject to subsections (1) to (3) above and unless a different intention appears, nothing in this Part affects the meaning of “riot” or any cognate expression in any enactment in force, or other instrument taking effect, before the coming into force of this section."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1996/27/s63S@current",
+ "section": "uk/ukpga/1996/27/s63S",
+ "version": "current",
+ "source_sha256": "71d18086ab3c117140cb18bf7f5c18e54988f88fe6000a7806f1dab871c971a0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In this Part of the Family Law Act 1996, the term \"the court\" must be read with section 63M.",
+    "quote": "“the court” is to be read with section 63M"
+   },
+   {
+    "requirement": "In this Part of the Family Law Act 1996, \"force\" and related expressions in relation to a marriage must be read in accordance with section 63A(4) to (6).",
+    "quote": "“force” (and related expressions), in relation to a marriage, are to be read in accordance with section 63A(4) to (6)"
+   },
+   {
+    "requirement": "In this Part of the Family Law Act 1996, \"forced marriage protection order\" has the meaning specified in section 63A(6).",
+    "quote": "“forced marriage protection order” has the meaning given by section 63A(6)"
+   },
+   {
+    "requirement": "In this Part of the Family Law Act 1996, \"marriage\" means any religious or civil ceremony of marriage, whether or not that ceremony is legally binding.",
+    "quote": "“marriage” means any religious or civil ceremony of marriage (whether or not legally binding)"
+   },
+   {
+    "requirement": "In relation to any order under this Part of the Family Law Act 1996 that was made by the High Court, \"the relevant judge\" means a judge of the High Court.",
+    "quote": "where the order was made by the High Court, a judge of that court"
+   },
+   {
+    "requirement": "In relation to any order under this Part of the Family Law Act 1996 that was made by the family court, \"the relevant judge\" means a judge of the family court.",
+    "quote": "where the order was made by the family court, a judge of that court"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In this Part of the Family Law Act 1996, the term \"the court\" must be read with section 63M.",
+   "quote": "“the court” is to be read with section 63M"
+  },
+  {
+   "requirement": "In this Part of the Family Law Act 1996, \"force\" and related expressions in relation to a marriage must be read in accordance with section 63A(4) to (6).",
+   "quote": "“force” (and related expressions), in relation to a marriage, are to be read in accordance with section 63A(4) to (6)"
+  },
+  {
+   "requirement": "In this Part of the Family Law Act 1996, \"forced marriage protection order\" has the meaning specified in section 63A(6).",
+   "quote": "“forced marriage protection order” has the meaning given by section 63A(6)"
+  },
+  {
+   "requirement": "In this Part of the Family Law Act 1996, \"marriage\" means any religious or civil ceremony of marriage, whether or not that ceremony is legally binding.",
+   "quote": "“marriage” means any religious or civil ceremony of marriage (whether or not legally binding)"
+  },
+  {
+   "requirement": "In relation to any order under this Part of the Family Law Act 1996 that was made by the High Court, \"the relevant judge\" means a judge of the High Court.",
+   "quote": "where the order was made by the High Court, a judge of that court"
+  },
+  {
+   "requirement": "In relation to any order under this Part of the Family Law Act 1996 that was made by the family court, \"the relevant judge\" means a judge of the family court.",
+   "quote": "where the order was made by the family court, a judge of that court"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

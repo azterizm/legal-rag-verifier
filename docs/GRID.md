@@ -948,3 +948,16 @@ entailment check (mean 6,200 characters per prompt). Fewer than the 5,000 planne
   (stop 42 labels: Part A 82.4 %, Part B 82.5 %), work halts for your review before Qwen 27B is trained. Note:
   K2 untrained at low effort already scores 88.2 % and 80.0 %.
 - Latency target: p95 at most 2 s per clause on the L40S.
+
+### Stop 45: results (2026-10-09)
+
+Pool (`results/distill/pool_index.json`): 412 statute sections and 60 software sections, 472 sources, none in any
+test set (checked in code). Gemini wrote 3 questions per source (1,416; prompt sha256 in
+`distill_data.QUESTION_SHA`); Qwen 2.5 7B wrote 2,832 answers on an L4 (with source and closed-book); 5,393 sentences
+gave 4,433 unique clauses that reach the entailment check. Gemini labelled all 4,433 per clause, none failed:
+1,850 + 197 not stated, 1,755 + 172 supported, 413 + 46 contradicted (train + validation). Train 4,018 examples from
+425 sources, validation 415 from 47 sources.
+
+Opus 5.5 labelled a random 500 of them: it agreed with Gemini on 410 (82 %). Of the 90 differences, Gemini said not
+stated where Opus said contradicted 47 times and supported 36 times; the other 7 split 5 and 2. So Gemini's labels
+lean to not stated, the same lean seen on the dev sets. Opus 5.5 spend so far $7.67 of $40; Gemini calls 5,600.

@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2000/23/s78@current",
+ "section": "uk/ukpga/2000/23/s78",
+ "version": "current",
+ "source_sha256": "da0898bc91aa36bb8d6852930fabb0687801daf3b7ce027cb66904e45cbb325a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 78 applies to any power of the Secretary of State or the Lord Chancellor to make any order, regulations or rules under any provision of the Regulation of Investigatory Powers Act 2000.",
+    "quote": "applies to any power of the Secretary of State or the Lord Chancellor to make any order, regulations or rules under any provision of this Act"
+   },
+   {
+    "requirement": "Powers of the Secretary of State or the Lord Chancellor to make any order, regulations or rules under the Act must be exercisable by statutory instrument.",
+    "quote": "powers to which this section applies shall be exercisable by statutory instrument"
+   },
+   {
+    "requirement": "A statutory instrument containing any order made under an applicable power is subject to annulment in pursuance of a resolution of either House of Parliament, provided it is not an order appointing a day under section 83(2), does not contain an order whose draft has been approved under section 28(5), 29(6), 30(7), 32A(7), 35(5), 41(6), 47(2), 66(3), 67(11), 71(9) or 76A(9), and does not contain the order to which section 35(7) applies.",
+    "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+   },
+   {
+    "requirement": "A statutory instrument containing any regulations made under an applicable power, other than regulations under section 67A(5), is subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "regulations made in exercise of a power to which this section applies (other than regulations under section 67A(5)) shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+   },
+   {
+    "requirement": "A statutory instrument containing regulations under section 67A(5) cannot be made unless a draft of the instrument has been laid before, and approved by a resolution of, each House of Parliament.",
+    "quote": "may not be made unless a draft of the instrument has been laid before, and approved by a resolution of, each House of Parliament"
+   },
+   {
+    "requirement": "Any order, regulations or rules made under an applicable power may make different provisions for different cases.",
+    "quote": "make different provisions for different cases"
+   },
+   {
+    "requirement": "Any order, regulations or rules made under an applicable power may contain such incidental, supplemental, consequential and transitional provision as the Secretary of State or the Lord Chancellor (as the case may be) thinks fit.",
+    "quote": "contain such incidental, supplemental, consequential and transitional provision as the Secretary of State or (as the case may be) the Lord Chancellor thinks fit"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 78 applies to any power of the Secretary of State or the Lord Chancellor to make any order, regulations or rules under any provision of the Regulation of Investigatory Powers Act 2000.",
+   "quote": "applies to any power of the Secretary of State or the Lord Chancellor to make any order, regulations or rules under any provision of this Act"
+  },
+  {
+   "requirement": "Powers of the Secretary of State or the Lord Chancellor to make any order, regulations or rules under the Act must be exercisable by statutory instrument.",
+   "quote": "powers to which this section applies shall be exercisable by statutory instrument"
+  },
+  {
+   "requirement": "A statutory instrument containing any order made under an applicable power is subject to annulment in pursuance of a resolution of either House of Parliament, provided it is not an order appointing a day under section 83(2), does not contain an order whose draft has been approved under section 28(5), 29(6), 30(7), 32A(7), 35(5), 41(6), 47(2), 66(3), 67(11), 71(9) or 76A(9), and does not contain the order to which section 35(7) applies.",
+   "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+  },
+  {
+   "requirement": "A statutory instrument containing any regulations made under an applicable power, other than regulations under section 67A(5), is subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "regulations made in exercise of a power to which this section applies (other than regulations under section 67A(5)) shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+  },
+  {
+   "requirement": "A statutory instrument containing regulations under section 67A(5) cannot be made unless a draft of the instrument has been laid before, and approved by a resolution of, each House of Parliament.",
+   "quote": "may not be made unless a draft of the instrument has been laid before, and approved by a resolution of, each House of Parliament"
+  },
+  {
+   "requirement": "Any order, regulations or rules made under an applicable power may make different provisions for different cases.",
+   "quote": "make different provisions for different cases"
+  },
+  {
+   "requirement": "Any order, regulations or rules made under an applicable power may contain such incidental, supplemental, consequential and transitional provision as the Secretary of State or the Lord Chancellor (as the case may be) thinks fit.",
+   "quote": "contain such incidental, supplemental, consequential and transitional provision as the Secretary of State or (as the case may be) the Lord Chancellor thinks fit"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

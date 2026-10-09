@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/1992/52/s58@current",
+ "section": "uk/ukpga/1992/52/s58",
+ "version": "current",
+ "source_sha256": "54cef20464d8b9b682c4295b301db7ec14dcede29db8b5648966e4ead6059ecc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 46(1)(b) regarding the requirement of re-election does not apply to a person holding a position to which this Chapter applies if all statutory conditions specified in subsection (2) are satisfied.",
+    "quote": "Section 46(1)(b) (requirement of re-election) does not apply to a person holding a position to which this Chapter applies if the following conditions are satisfied."
+   },
+   {
+    "requirement": "A person holding the position must hold it by virtue of having been elected at an election in relation to which the requirements of this Chapter were satisfied.",
+    "quote": "he holds the position by virtue of having been elected at an election in relation to which the requirements of this Chapter were satisfied"
+   },
+   {
+    "requirement": "A person holding the position must be a full-time employee of the union by virtue of the position.",
+    "quote": "he is a full-time employee of the union by virtue of the position"
+   },
+   {
+    "requirement": "A person holding the position must be due to reach retirement age within five years.",
+    "quote": "he will reach retirement age within five years"
+   },
+   {
+    "requirement": "A person holding the position must be entitled under the rules of the union to continue as the holder of the position until retirement age without standing for re-election.",
+    "quote": "he is entitled under the rules of the union to continue as the holder of the position until retirement age without standing for re-election"
+   },
+   {
+    "requirement": "A person holding the position must have been a full-time employee of the union for a period, which need not be continuous, of at least ten years.",
+    "quote": "he has been a full-time employee of the union for a period (which need not be continuous) of at least ten years"
+   },
+   {
+    "requirement": "The period between the day on which the qualifying election took place and the day immediately preceding the day on which the condition of reaching retirement age within five years is first satisfied must not exceed five years.",
+    "quote": "the period between the day on which the election referred to in paragraph (a) took place and the day immediately preceding that on which paragraph (c) is first satisfied does not exceed five years"
+   },
+   {
+    "requirement": "For the purposes of section 58, 'retirement age' in relation to any person means the earlier of the age fixed by or in accordance with the rules of the union for that person to retire from the position in question, or the age which is for the time being pensionable age within the meaning given by the rules in paragraph 1 of Schedule 4 to the Pensions Act 1995.",
+    "quote": "“retirement age”, in relation to any person, means the earlier of— (a) the age fixed by, or in accordance with, the rules of the union for him to retire from the position in question, or (b) the age which is for the time being pensionable age"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum time within which the person holding the position will reach retirement age",
+    "value": "five years",
+    "quote": "within five years"
+   },
+   {
+    "what": "minimum aggregate period of full-time employment with the union (which need not be continuous)",
+    "value": "ten years",
+    "quote": "at least ten years"
+   },
+   {
+    "what": "maximum allowable period between the election date and the day immediately preceding the date the retirement age condition is first satisfied",
+    "value": "five years",
+    "quote": "does not exceed five years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 46(1)(b) regarding the requirement of re-election does not apply to a person holding a position to which this Chapter applies if all statutory conditions specified in subsection (2) are satisfied.",
+   "quote": "Section 46(1)(b) (requirement of re-election) does not apply to a person holding a position to which this Chapter applies if the following conditions are satisfied."
+  },
+  {
+   "requirement": "A person holding the position must hold it by virtue of having been elected at an election in relation to which the requirements of this Chapter were satisfied.",
+   "quote": "he holds the position by virtue of having been elected at an election in relation to which the requirements of this Chapter were satisfied"
+  },
+  {
+   "requirement": "A person holding the position must be a full-time employee of the union by virtue of the position.",
+   "quote": "he is a full-time employee of the union by virtue of the position"
+  },
+  {
+   "requirement": "A person holding the position must be due to reach retirement age within five years.",
+   "quote": "he will reach retirement age within five years"
+  },
+  {
+   "requirement": "A person holding the position must be entitled under the rules of the union to continue as the holder of the position until retirement age without standing for re-election.",
+   "quote": "he is entitled under the rules of the union to continue as the holder of the position until retirement age without standing for re-election"
+  },
+  {
+   "requirement": "A person holding the position must have been a full-time employee of the union for a period, which need not be continuous, of at least ten years.",
+   "quote": "he has been a full-time employee of the union for a period (which need not be continuous) of at least ten years"
+  },
+  {
+   "requirement": "The period between the day on which the qualifying election took place and the day immediately preceding the day on which the condition of reaching retirement age within five years is first satisfied must not exceed five years.",
+   "quote": "the period between the day on which the election referred to in paragraph (a) took place and the day immediately preceding that on which paragraph (c) is first satisfied does not exceed five years"
+  },
+  {
+   "requirement": "For the purposes of section 58, 'retirement age' in relation to any person means the earlier of the age fixed by or in accordance with the rules of the union for that person to retire from the position in question, or the age which is for the time being pensionable age within the meaning given by the rules in paragraph 1 of Schedule 4 to the Pensions Act 1995.",
+   "quote": "“retirement age”, in relation to any person, means the earlier of— (a) the age fixed by, or in accordance with, the rules of the union for him to retire from the position in question, or (b) the age which is for the time being pensionable age"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum time within which the person holding the position will reach retirement age",
+   "value": "five years",
+   "quote": "within five years"
+  },
+  {
+   "what": "minimum aggregate period of full-time employment with the union (which need not be continuous)",
+   "value": "ten years",
+   "quote": "at least ten years"
+  },
+  {
+   "what": "maximum allowable period between the election date and the day immediately preceding the date the retirement age condition is first satisfied",
+   "value": "five years",
+   "quote": "does not exceed five years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1988/50/s123@current",
+ "section": "uk/ukpga/1988/50/s123",
+ "version": "current",
+ "source_sha256": "2194044eb0f929a04736991396d0b4aa5d6b9574b56f85ea91121d4b62b3d92e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Schedule 5 of the Housing Act 1985, which sets out exceptions to the right to buy, must be amended in accordance with section 123 of the Housing Act 1988.",
+    "quote": "Schedule 5 of the Housing Act 1985 (exceptions to the right to buy) shall be amended in accordance with this section."
+   },
+   {
+    "requirement": "Paragraphs 6 and 8 of Schedule 5 to the Housing Act 1985 must be omitted.",
+    "quote": "Paragraphs 6 and 8 shall be omitted."
+   },
+   {
+    "requirement": "The repeal of paragraphs 6 and 8 of Schedule 5 by the Housing Act 1988 does not affect the operation of either paragraph where the tenant's notice claiming to exercise the right to buy was served before the repeal comes into force, unless at that time no notice in response had been served under section 124 of the Housing Act 1985 admitting or denying the right to buy.",
+    "quote": "The repeal by this Act of paragraphs 6 and 8 of Schedule 5 shall not affect the operation of either of those paragraphs in any case where the tenant’s notice claiming to exercise the right to buy was served before the repeal comes into force unless, at that time, no notice in response had been served under section 124 of the Housing Act 1985 (landlord’s notice admitting or denying right to buy)."
+   },
+   {
+    "requirement": "When determining whether the repeal of paragraphs 6 and 8 of Schedule 5 affects their operation under subsection (3), no account may be taken of any steps taken under section 177 of the Housing Act 1985 regarding the amendment or withdrawal and re-service of a notice to correct mistakes.",
+    "quote": "For the purposes of subsection (3) above, no account shall be taken of any steps taken under section 177 of the Housing Act 1985 (amendment or withdrawal and re-service of notice to correct mistakes)."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Schedule 5 of the Housing Act 1985, which sets out exceptions to the right to buy, must be amended in accordance with section 123 of the Housing Act 1988.",
+   "quote": "Schedule 5 of the Housing Act 1985 (exceptions to the right to buy) shall be amended in accordance with this section."
+  },
+  {
+   "requirement": "Paragraphs 6 and 8 of Schedule 5 to the Housing Act 1985 must be omitted.",
+   "quote": "Paragraphs 6 and 8 shall be omitted."
+  },
+  {
+   "requirement": "The repeal of paragraphs 6 and 8 of Schedule 5 by the Housing Act 1988 does not affect the operation of either paragraph where the tenant's notice claiming to exercise the right to buy was served before the repeal comes into force, unless at that time no notice in response had been served under section 124 of the Housing Act 1985 admitting or denying the right to buy.",
+   "quote": "The repeal by this Act of paragraphs 6 and 8 of Schedule 5 shall not affect the operation of either of those paragraphs in any case where the tenant’s notice claiming to exercise the right to buy was served before the repeal comes into force unless, at that time, no notice in response had been served under section 124 of the Housing Act 1985 (landlord’s notice admitting or denying right to buy)."
+  },
+  {
+   "requirement": "When determining whether the repeal of paragraphs 6 and 8 of Schedule 5 affects their operation under subsection (3), no account may be taken of any steps taken under section 177 of the Housing Act 1985 regarding the amendment or withdrawal and re-service of a notice to correct mistakes.",
+   "quote": "For the purposes of subsection (3) above, no account shall be taken of any steps taken under section 177 of the Housing Act 1985 (amendment or withdrawal and re-service of notice to correct mistakes)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

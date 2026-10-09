@@ -1,0 +1,104 @@
+{
+ "key": "uk/ukpga/1987/43/s12@current",
+ "section": "uk/ukpga/1987/43/s12",
+ "version": "current",
+ "source_sha256": "75f8ebbe93157fc65534ca312dfdb58397e20ba99fcc31e8fbe719b960183c20",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person is guilty of an offence if safety regulations prohibit that person from supplying, offering or agreeing to supply any goods, or from exposing or possessing any goods for supply, and that person contravenes the prohibition.",
+    "quote": "guilty of an offence if he contravenes the prohibition"
+   },
+   {
+    "requirement": "A person who makes or processes any goods in the course of carrying on a business is guilty of an offence if safety regulations require that person to carry out a particular test or use a particular procedure in connection with making or processing the goods to ascertain whether they satisfy any regulatory requirements, and that person does not comply with the requirement.",
+    "quote": "to carry out a particular test or use a particular procedure in connection with the making or processing of the goods"
+   },
+   {
+    "requirement": "A person who makes or processes any goods in the course of carrying on a business is guilty of an offence if safety regulations require that person to deal or not to deal in a particular way with a quantity of goods where the whole or part does not satisfy a required test or connected standards, and that person does not comply with the requirement.",
+    "quote": "to deal or not to deal in a particular way with a quantity of the goods"
+   },
+   {
+    "requirement": "A person is guilty of an offence if that person contravenes a provision of safety regulations that prohibits or requires the provision, by means of a mark or otherwise, of information of a particular kind in relation to goods.",
+    "quote": "prohibits or requires the provision, by means of a mark or otherwise, of information of a particular kind in relation to goods"
+   },
+   {
+    "requirement": "A person required by safety regulations to give information to another person to enable that other person to exercise any function is guilty of an offence if that person fails without reasonable cause to comply with the requirement.",
+    "quote": "fails without reasonable cause to comply with the requirement"
+   },
+   {
+    "requirement": "A person required by safety regulations to give information to another person to enable that other person to exercise any function is guilty of an offence if, in giving the required information, that person makes any statement that that person knows is false in a material particular.",
+    "quote": "makes any statement which he knows is false in a material particular"
+   },
+   {
+    "requirement": "A person required by safety regulations to give information to another person to enable that other person to exercise any function is guilty of an offence if, in giving the required information, that person recklessly makes any statement that is false in a material particular.",
+    "quote": "recklessly makes any statement which is false in a material particular"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 12 is liable on summary conviction to imprisonment for a term not exceeding sixmonths, to a fine not exceeding level 5 on the standard scale, or to both.",
+    "quote": "liable on summary conviction to imprisonment for a term not exceeding sixmonths or to a fine not exceeding level 5 on the standard scale or to both"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on summary conviction for an offence under this section",
+    "value": "sixmonths",
+    "quote": "imprisonment for a term not exceeding sixmonths"
+   },
+   {
+    "what": "maximum fine level on the standard scale on summary conviction for an offence under this section",
+    "value": "level 5",
+    "quote": "fine not exceeding level 5 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person is guilty of an offence if safety regulations prohibit that person from supplying, offering or agreeing to supply any goods, or from exposing or possessing any goods for supply, and that person contravenes the prohibition.",
+   "quote": "guilty of an offence if he contravenes the prohibition"
+  },
+  {
+   "requirement": "A person who makes or processes any goods in the course of carrying on a business is guilty of an offence if safety regulations require that person to carry out a particular test or use a particular procedure in connection with making or processing the goods to ascertain whether they satisfy any regulatory requirements, and that person does not comply with the requirement.",
+   "quote": "to carry out a particular test or use a particular procedure in connection with the making or processing of the goods"
+  },
+  {
+   "requirement": "A person who makes or processes any goods in the course of carrying on a business is guilty of an offence if safety regulations require that person to deal or not to deal in a particular way with a quantity of goods where the whole or part does not satisfy a required test or connected standards, and that person does not comply with the requirement.",
+   "quote": "to deal or not to deal in a particular way with a quantity of the goods"
+  },
+  {
+   "requirement": "A person is guilty of an offence if that person contravenes a provision of safety regulations that prohibits or requires the provision, by means of a mark or otherwise, of information of a particular kind in relation to goods.",
+   "quote": "prohibits or requires the provision, by means of a mark or otherwise, of information of a particular kind in relation to goods"
+  },
+  {
+   "requirement": "A person required by safety regulations to give information to another person to enable that other person to exercise any function is guilty of an offence if that person fails without reasonable cause to comply with the requirement.",
+   "quote": "fails without reasonable cause to comply with the requirement"
+  },
+  {
+   "requirement": "A person required by safety regulations to give information to another person to enable that other person to exercise any function is guilty of an offence if, in giving the required information, that person makes any statement that that person knows is false in a material particular.",
+   "quote": "makes any statement which he knows is false in a material particular"
+  },
+  {
+   "requirement": "A person required by safety regulations to give information to another person to enable that other person to exercise any function is guilty of an offence if, in giving the required information, that person recklessly makes any statement that is false in a material particular.",
+   "quote": "recklessly makes any statement which is false in a material particular"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 12 is liable on summary conviction to imprisonment for a term not exceeding sixmonths, to a fine not exceeding level 5 on the standard scale, or to both.",
+   "quote": "liable on summary conviction to imprisonment for a term not exceeding sixmonths or to a fine not exceeding level 5 on the standard scale or to both"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum fine level on the standard scale on summary conviction for an offence under this section",
+   "value": "level 5",
+   "quote": "fine not exceeding level 5 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

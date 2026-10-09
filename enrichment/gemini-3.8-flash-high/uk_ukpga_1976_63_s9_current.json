@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1976/63/s9@current",
+ "section": "uk/ukpga/1976/63/s9",
+ "version": "current",
+ "source_sha256": "602eaec4030b40f1ef64f58e48be61c28ae9aa5cd072f5645bd4efa78d510a1f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Both a person who agrees to indemnify another against liability incurred as a surety and that other person are guilty of an offence if the liability arises from securing the surrender to custody of an individual accused, convicted of, or under arrest for an offence.",
+    "quote": "he and that other person shall be guilty of an offence"
+   },
+   {
+    "requirement": "An offence of agreeing to indemnify a surety is committed regardless of whether the agreement is entered into before or after the indemnified party becomes a surety.",
+    "quote": "whether the agreement is made before or after the person to be indemnified becomes a surety"
+   },
+   {
+    "requirement": "An offence of agreeing to indemnify a surety is committed regardless of whether the indemnified party actually becomes a surety.",
+    "quote": "whether or not he becomes a surety"
+   },
+   {
+    "requirement": "An offence of agreeing to indemnify a surety is committed regardless of whether the agreement contemplates compensation in money or in money's worth.",
+    "quote": "whether the agreement contemplates compensation in money or in money’s worth"
+   },
+   {
+    "requirement": "A magistrates' court that convicts an individual of agreeing to indemnify a surety may commit that individual in custody or on bail to the Crown Court for sentence if it thinks greater punishment should be inflicted than the magistrates' court has power to inflict.",
+    "quote": "greater punishment should be inflicted for that offence than the court has power to inflict"
+   },
+   {
+    "requirement": "A magistrates' court that convicts an individual of agreeing to indemnify a surety may commit that individual in custody or on bail to the Crown Court for sentence if it sends that individual to the Crown Court for trial for another offence and thinks it appropriate for the surety indemnification offence to be dealt with by that court.",
+    "quote": "sends that person for trial to the Crown Court for another offence"
+   },
+   {
+    "requirement": "An individual guilty of agreeing to indemnify a surety is liable on summary conviction to imprisonment for a term not exceeding 3 months, to a fine not exceeding £400, or to both.",
+    "quote": "on summary conviction, to imprisonment for a term not exceeding 3 months or to a fine not exceeding £400 or to both"
+   },
+   {
+    "requirement": "An individual guilty of agreeing to indemnify a surety is liable on conviction on indictment, or if sentenced by the Crown Court following committal for sentence, to imprisonment for a term not exceeding 12 months, to a fine, or to both.",
+    "quote": "on conviction on indictment or if sentenced by the Crown Court on committal for sentence under subsection (3) above, to imprisonment for a term not exceeding 12 months or to a fine or to both"
+   },
+   {
+    "requirement": "Proceedings for the offence of agreeing to indemnify a surety cannot be instituted except by or with the consent of the Director of Public Prosecutions.",
+    "quote": "No proceedings for an offence under subsection (1) above shall be instituted except by or with the consent of the Director of Public Prosecutions."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on summary conviction",
+    "value": "3 months",
+    "quote": "imprisonment for a term not exceeding 3 months"
+   },
+   {
+    "what": "maximum fine on summary conviction",
+    "value": "£400",
+    "quote": "fine not exceeding £400"
+   },
+   {
+    "what": "maximum term of imprisonment on conviction on indictment or Crown Court committal for sentence",
+    "value": "12 months",
+    "quote": "imprisonment for a term not exceeding 12 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Both a person who agrees to indemnify another against liability incurred as a surety and that other person are guilty of an offence if the liability arises from securing the surrender to custody of an individual accused, convicted of, or under arrest for an offence.",
+   "quote": "he and that other person shall be guilty of an offence"
+  },
+  {
+   "requirement": "An offence of agreeing to indemnify a surety is committed regardless of whether the agreement is entered into before or after the indemnified party becomes a surety.",
+   "quote": "whether the agreement is made before or after the person to be indemnified becomes a surety"
+  },
+  {
+   "requirement": "An offence of agreeing to indemnify a surety is committed regardless of whether the indemnified party actually becomes a surety.",
+   "quote": "whether or not he becomes a surety"
+  },
+  {
+   "requirement": "An offence of agreeing to indemnify a surety is committed regardless of whether the agreement contemplates compensation in money or in money's worth.",
+   "quote": "whether the agreement contemplates compensation in money or in money’s worth"
+  },
+  {
+   "requirement": "A magistrates' court that convicts an individual of agreeing to indemnify a surety may commit that individual in custody or on bail to the Crown Court for sentence if it thinks greater punishment should be inflicted than the magistrates' court has power to inflict.",
+   "quote": "greater punishment should be inflicted for that offence than the court has power to inflict"
+  },
+  {
+   "requirement": "A magistrates' court that convicts an individual of agreeing to indemnify a surety may commit that individual in custody or on bail to the Crown Court for sentence if it sends that individual to the Crown Court for trial for another offence and thinks it appropriate for the surety indemnification offence to be dealt with by that court.",
+   "quote": "sends that person for trial to the Crown Court for another offence"
+  },
+  {
+   "requirement": "An individual guilty of agreeing to indemnify a surety is liable on summary conviction to imprisonment for a term not exceeding 3 months, to a fine not exceeding £400, or to both.",
+   "quote": "on summary conviction, to imprisonment for a term not exceeding 3 months or to a fine not exceeding £400 or to both"
+  },
+  {
+   "requirement": "An individual guilty of agreeing to indemnify a surety is liable on conviction on indictment, or if sentenced by the Crown Court following committal for sentence, to imprisonment for a term not exceeding 12 months, to a fine, or to both.",
+   "quote": "on conviction on indictment or if sentenced by the Crown Court on committal for sentence under subsection (3) above, to imprisonment for a term not exceeding 12 months or to a fine or to both"
+  },
+  {
+   "requirement": "Proceedings for the offence of agreeing to indemnify a surety cannot be instituted except by or with the consent of the Director of Public Prosecutions.",
+   "quote": "No proceedings for an offence under subsection (1) above shall be instituted except by or with the consent of the Director of Public Prosecutions."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on summary conviction",
+   "value": "3 months",
+   "quote": "imprisonment for a term not exceeding 3 months"
+  },
+  {
+   "what": "maximum fine on summary conviction",
+   "value": "£400",
+   "quote": "fine not exceeding £400"
+  },
+  {
+   "what": "maximum term of imprisonment on conviction on indictment or Crown Court committal for sentence",
+   "value": "12 months",
+   "quote": "imprisonment for a term not exceeding 12 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 3
+ }
+}

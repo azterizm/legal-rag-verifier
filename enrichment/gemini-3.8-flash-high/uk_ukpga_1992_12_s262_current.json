@@ -1,0 +1,234 @@
+{
+ "key": "uk/ukpga/1992/12/s262@current",
+ "section": "uk/ukpga/1992/12/s262",
+ "version": "current",
+ "source_sha256": "44d82accbc2aa091389aa5503c4dddbe29f9e993688bfd6c80c83e59753751b9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to section 262, a gain accruing on a disposal of an asset that is tangible movable property is not a chargeable gain if the amount or value of the consideration for the disposal does not exceed £6,000.",
+    "quote": "a gain accruing on a disposal of an asset which is tangible movable property shall not be a chargeable gain if the amount or value of the consideration for the disposal does not exceed £6,000"
+   },
+   {
+    "requirement": "Where the amount or value of the consideration for the disposal of an asset that is tangible movable property exceeds £6,000, any part of the chargeable gain that exceeds five-thirds of the difference between the consideration and £6,000 is excluded from the chargeable gain.",
+    "quote": "there shall be excluded from any chargeable gain accruing on the disposal so much of it as exceeds five-thirds of the difference between— (a) the amount or value of the consideration, and (b) £6,000"
+   },
+   {
+    "requirement": "Subsections (1) and (2) do not affect the amount of an allowable loss accruing on the disposal of an asset.",
+    "quote": "Subsections (1) and (2) above shall not affect the amount of an allowable loss accruing on the disposal of an asset"
+   },
+   {
+    "requirement": "For the purposes of computing under the Taxation of Chargeable Gains Act 1992 the amount of a loss accruing on the disposal of tangible movable property, the consideration for the disposal is deemed to be £6,000 if it is less than £6,000, and allowable losses are restricted accordingly.",
+    "quote": "the consideration for the disposal shall, if less than £6,000, be deemed to be £6,000 and the losses which are allowable losses shall be restricted accordingly"
+   },
+   {
+    "requirement": "Two or more transactions are treated as a single transaction disposing of a single asset (with any necessary apportionments of reductions in chargeable gains and allowable losses under subsections (2) and (3)) if two or more assets that formed part of a set of articles of any description, all owned at one time by one person, are disposed of by that person to the same person, whether on the same or different occasions.",
+    "quote": "the 2 or more transactions shall be treated as a single transaction disposing of a single asset, but with any necessary apportionments of the reductions in chargeable gains, and in allowable losses, under subsections (2) and (3) above"
+   },
+   {
+    "requirement": "Two or more transactions are treated as a single transaction disposing of a single asset (with any necessary apportionments of reductions in chargeable gains and allowable losses under subsections (2) and (3)) if two or more assets that formed part of a set of articles of any description, all owned at one time by one person, are disposed of by that person to persons who are acting in concert or who are connected persons, whether on the same or different occasions.",
+    "quote": "to persons who are acting in concert or who are connected persons, whether on the same or different occasions, the 2 or more transactions shall be treated as a single transaction disposing of a single asset"
+   },
+   {
+    "requirement": "If a disposal is of a right or interest in or over tangible movable property, subsections (1), (2), and (3) must in the first instance be applied in relation to the asset as a whole, taking the consideration as including the market value of what remains undisposed of in addition to the actual consideration.",
+    "quote": "in the first instance subsections (1), (2) and (3) above shall be applied in relation to the asset as a whole, taking the consideration as including the market value of what remains undisposed of, in addition to the actual consideration"
+   },
+   {
+    "requirement": "If a disposal is of a right or interest in or over tangible movable property and the sum of the actual consideration and the market value of what remains undisposed of exceeds £6,000, the excluded part of any chargeable gain is so much of the gain as exceeds five-thirds of the difference between that sum and £6,000 multiplied by the fraction equal to the actual consideration divided by that sum.",
+    "quote": "the part of any chargeable gain that is excluded from it under subsection (2) above shall be so much of the gain as exceeds five-thirds of the difference between that sum and £6,000 multiplied by the fraction equal to the actual consideration divided by the said sum"
+   },
+   {
+    "requirement": "If a disposal is of a right or interest in or over tangible movable property and the sum of the actual consideration and the market value of what remains undisposed of is less than £6,000, any loss is restricted under subsection (3) by deeming the consideration to be the actual consideration plus the fraction (actual consideration divided by the said sum) of the difference between that sum and £6,000.",
+    "quote": "where that sum is less than £6,000 any loss shall be restricted under subsection (3) above by deeming the consideration to be the actual consideration plus the said fraction of the difference between the said sum and £6,000"
+   },
+   {
+    "requirement": "Section 262 does not apply in relation to a disposal of commodities of any description by a person dealing on a terminal market or dealing with or through a person ordinarily engaged in dealing on a terminal market.",
+    "quote": "This section shall not apply— (a) in relation to a disposal of commodities of any description by a person dealing on a terminal market or dealing with or through a person ordinarily engaged in dealing on a terminal market"
+   },
+   {
+    "requirement": "Section 262 does not apply in relation to a disposal of currency of any description.",
+    "quote": "This section shall not apply— (b) in relation to a disposal of currency of any description"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum consideration for an asset of tangible movable property to qualify for full exemption from chargeable gains",
+    "value": "£6,000",
+    "quote": "does not exceed £6,000"
+   },
+   {
+    "what": "consideration threshold above which marginal relief applies on a disposal of tangible movable property",
+    "value": "£6,000",
+    "quote": "exceeds £6,000"
+   },
+   {
+    "what": "multiplier applied to the difference between consideration and £6,000 to determine chargeable gain exclusion",
+    "value": "five-thirds",
+    "quote": "five-thirds of the difference between— (a) the amount or value of the consideration, and (b) £6,000"
+   },
+   {
+    "what": "base amount subtracted from consideration to calculate the marginal relief exclusion",
+    "value": "£6,000",
+    "quote": "(b) £6,000"
+   },
+   {
+    "what": "consideration threshold below which consideration is deemed to be £6,000 for computing allowable losses on tangible movable property",
+    "value": "£6,000",
+    "quote": "if less than £6,000"
+   },
+   {
+    "what": "deemed consideration amount for computing allowable losses when actual consideration is less than £6,000",
+    "value": "£6,000",
+    "quote": "be deemed to be £6,000"
+   },
+   {
+    "what": "minimum number of assets forming part of a set of articles for the set rule to apply",
+    "value": "2",
+    "quote": "If 2 or more assets which have formed part of a set of articles"
+   },
+   {
+    "what": "single ownership count requirement for assets forming part of a set",
+    "value": "one",
+    "quote": "all owned at one time by one person"
+   },
+   {
+    "what": "number of transactions treated as a single transaction under the set rule",
+    "value": "2",
+    "quote": "the 2 or more transactions shall be treated as a single transaction"
+   },
+   {
+    "what": "threshold for the sum of actual consideration and market value of the undisposed part of a right or interest to calculate gain exclusion",
+    "value": "£6,000",
+    "quote": "where the sum of the actual consideration and that market value exceeds £6,000"
+   },
+   {
+    "what": "multiplier applied to the difference between the total sum and £6,000 for rights or interests over tangible movable property",
+    "value": "five-thirds",
+    "quote": "five-thirds of the difference between that sum and £6,000"
+   },
+   {
+    "what": "base amount subtracted from the sum of actual consideration and market value for rights or interests over tangible movable property",
+    "value": "£6,000",
+    "quote": "difference between that sum and £6,000 multiplied by the fraction"
+   },
+   {
+    "what": "threshold below which allowable loss restriction applies to the sum of actual consideration and market value for rights or interests",
+    "value": "£6,000",
+    "quote": "where that sum is less than £6,000"
+   },
+   {
+    "what": "base figure used to calculate the deemed consideration adjustment for losses on rights or interests",
+    "value": "£6,000",
+    "quote": "difference between the said sum and £6,000"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to section 262, a gain accruing on a disposal of an asset that is tangible movable property is not a chargeable gain if the amount or value of the consideration for the disposal does not exceed £6,000.",
+   "quote": "a gain accruing on a disposal of an asset which is tangible movable property shall not be a chargeable gain if the amount or value of the consideration for the disposal does not exceed £6,000"
+  },
+  {
+   "requirement": "Where the amount or value of the consideration for the disposal of an asset that is tangible movable property exceeds £6,000, any part of the chargeable gain that exceeds five-thirds of the difference between the consideration and £6,000 is excluded from the chargeable gain.",
+   "quote": "there shall be excluded from any chargeable gain accruing on the disposal so much of it as exceeds five-thirds of the difference between— (a) the amount or value of the consideration, and (b) £6,000"
+  },
+  {
+   "requirement": "Subsections (1) and (2) do not affect the amount of an allowable loss accruing on the disposal of an asset.",
+   "quote": "Subsections (1) and (2) above shall not affect the amount of an allowable loss accruing on the disposal of an asset"
+  },
+  {
+   "requirement": "For the purposes of computing under the Taxation of Chargeable Gains Act 1992 the amount of a loss accruing on the disposal of tangible movable property, the consideration for the disposal is deemed to be £6,000 if it is less than £6,000, and allowable losses are restricted accordingly.",
+   "quote": "the consideration for the disposal shall, if less than £6,000, be deemed to be £6,000 and the losses which are allowable losses shall be restricted accordingly"
+  },
+  {
+   "requirement": "Two or more transactions are treated as a single transaction disposing of a single asset (with any necessary apportionments of reductions in chargeable gains and allowable losses under subsections (2) and (3)) if two or more assets that formed part of a set of articles of any description, all owned at one time by one person, are disposed of by that person to the same person, whether on the same or different occasions.",
+   "quote": "the 2 or more transactions shall be treated as a single transaction disposing of a single asset, but with any necessary apportionments of the reductions in chargeable gains, and in allowable losses, under subsections (2) and (3) above"
+  },
+  {
+   "requirement": "Two or more transactions are treated as a single transaction disposing of a single asset (with any necessary apportionments of reductions in chargeable gains and allowable losses under subsections (2) and (3)) if two or more assets that formed part of a set of articles of any description, all owned at one time by one person, are disposed of by that person to persons who are acting in concert or who are connected persons, whether on the same or different occasions.",
+   "quote": "to persons who are acting in concert or who are connected persons, whether on the same or different occasions, the 2 or more transactions shall be treated as a single transaction disposing of a single asset"
+  },
+  {
+   "requirement": "If a disposal is of a right or interest in or over tangible movable property, subsections (1), (2), and (3) must in the first instance be applied in relation to the asset as a whole, taking the consideration as including the market value of what remains undisposed of in addition to the actual consideration.",
+   "quote": "in the first instance subsections (1), (2) and (3) above shall be applied in relation to the asset as a whole, taking the consideration as including the market value of what remains undisposed of, in addition to the actual consideration"
+  },
+  {
+   "requirement": "If a disposal is of a right or interest in or over tangible movable property and the sum of the actual consideration and the market value of what remains undisposed of exceeds £6,000, the excluded part of any chargeable gain is so much of the gain as exceeds five-thirds of the difference between that sum and £6,000 multiplied by the fraction equal to the actual consideration divided by that sum.",
+   "quote": "the part of any chargeable gain that is excluded from it under subsection (2) above shall be so much of the gain as exceeds five-thirds of the difference between that sum and £6,000 multiplied by the fraction equal to the actual consideration divided by the said sum"
+  },
+  {
+   "requirement": "If a disposal is of a right or interest in or over tangible movable property and the sum of the actual consideration and the market value of what remains undisposed of is less than £6,000, any loss is restricted under subsection (3) by deeming the consideration to be the actual consideration plus the fraction (actual consideration divided by the said sum) of the difference between that sum and £6,000.",
+   "quote": "where that sum is less than £6,000 any loss shall be restricted under subsection (3) above by deeming the consideration to be the actual consideration plus the said fraction of the difference between the said sum and £6,000"
+  },
+  {
+   "requirement": "Section 262 does not apply in relation to a disposal of commodities of any description by a person dealing on a terminal market or dealing with or through a person ordinarily engaged in dealing on a terminal market.",
+   "quote": "This section shall not apply— (a) in relation to a disposal of commodities of any description by a person dealing on a terminal market or dealing with or through a person ordinarily engaged in dealing on a terminal market"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum consideration for an asset of tangible movable property to qualify for full exemption from chargeable gains",
+   "value": "£6,000",
+   "quote": "does not exceed £6,000"
+  },
+  {
+   "what": "consideration threshold above which marginal relief applies on a disposal of tangible movable property",
+   "value": "£6,000",
+   "quote": "exceeds £6,000"
+  },
+  {
+   "what": "base amount subtracted from consideration to calculate the marginal relief exclusion",
+   "value": "£6,000",
+   "quote": "(b) £6,000"
+  },
+  {
+   "what": "consideration threshold below which consideration is deemed to be £6,000 for computing allowable losses on tangible movable property",
+   "value": "£6,000",
+   "quote": "if less than £6,000"
+  },
+  {
+   "what": "deemed consideration amount for computing allowable losses when actual consideration is less than £6,000",
+   "value": "£6,000",
+   "quote": "be deemed to be £6,000"
+  },
+  {
+   "what": "minimum number of assets forming part of a set of articles for the set rule to apply",
+   "value": "2",
+   "quote": "If 2 or more assets which have formed part of a set of articles"
+  },
+  {
+   "what": "number of transactions treated as a single transaction under the set rule",
+   "value": "2",
+   "quote": "the 2 or more transactions shall be treated as a single transaction"
+  },
+  {
+   "what": "threshold for the sum of actual consideration and market value of the undisposed part of a right or interest to calculate gain exclusion",
+   "value": "£6,000",
+   "quote": "where the sum of the actual consideration and that market value exceeds £6,000"
+  },
+  {
+   "what": "base amount subtracted from the sum of actual consideration and market value for rights or interests over tangible movable property",
+   "value": "£6,000",
+   "quote": "difference between that sum and £6,000 multiplied by the fraction"
+  },
+  {
+   "what": "threshold below which allowable loss restriction applies to the sum of actual consideration and market value for rights or interests",
+   "value": "£6,000",
+   "quote": "where that sum is less than £6,000"
+  },
+  {
+   "what": "base figure used to calculate the deemed consideration adjustment for losses on rights or interests",
+   "value": "£6,000",
+   "quote": "difference between the said sum and £6,000"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 10,
+  "thresholds_proposed": 14,
+  "thresholds_verified": 11
+ }
+}

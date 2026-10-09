@@ -1,0 +1,157 @@
+{
+ "key": "uk/ukpga/2006/46/s237@current",
+ "section": "uk/ukpga/2006/46/s237",
+ "version": "current",
+ "source_sha256": "7c36f5d776a8c3eab219c4e941a707b2f7f581edbdf47e8c356d6aec32b94caa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 237 has effect where qualifying indemnity provision is made for a director of a company and applies to the company of which he is a director, whether the provision is made by that company or an associated company.",
+    "quote": "applies— (a) to the company of which he is a director (whether the provision is made by that company or an associated company)"
+   },
+   {
+    "requirement": "Where qualifying indemnity provision is made for a director by an associated company, section 237 applies to that associated company.",
+    "quote": "where the provision is made by an associated company, to that company"
+   },
+   {
+    "requirement": "The company of which the director is a director, or where applicable each associated company and that company, must keep available for inspection a copy of the qualifying indemnity provision, or if the provision is not in writing, a written memorandum setting out its terms.",
+    "quote": "That company or, as the case may be, each of them must keep available for inspection— (a) a copy of the qualifying indemnity provision, or (b) if the provision is not in writing, a written memorandum setting out its terms"
+   },
+   {
+    "requirement": "The company must keep the copy or memorandum available for inspection at the company's registered office or a place specified in regulations under section 1136.",
+    "quote": "The copy or memorandum must be kept available for inspection at— (a) the company's registered office, or (b) a place specified in regulations under section 1136"
+   },
+   {
+    "requirement": "The company must retain the copy or memorandum and keep it available for inspection for at least one year from the date of termination or expiry of the provision.",
+    "quote": "retained by the company for at least one year from the date of termination or expiry of the provision and must be kept available for inspection during that time"
+   },
+   {
+    "requirement": "The company must give notice to the registrar of the place where the copy or memorandum is kept available for inspection, and of any change in that place, unless it has at all times been kept at the company's registered office.",
+    "quote": "The company must give notice to the registrar— (a) of the place at which the copy or memorandum is kept available for inspection, and (b) of any change in that place, unless it has at all times been kept at the company's registered office"
+   },
+   {
+    "requirement": "Every officer of the company who is in default commits an offence if default is made in complying with subsection (2), (3) or (4).",
+    "quote": "If default is made in complying with subsection (2), (3) or (4) ... an offence is committed by every officer of the company who is in default"
+   },
+   {
+    "requirement": "Every officer of the company who is in default commits an offence if default is made for 14 days in complying with subsection (5).",
+    "quote": "default is made for 14 days in complying with subsection (5), an offence is committed by every officer of the company who is in default"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 237 is liable on summary conviction to a fine not exceeding level 3 on the standard scale.",
+    "quote": "liable on summary conviction to a fine not exceeding level 3 on the standard scale"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 237 is liable, for continued contravention, to a daily default fine not exceeding one-tenth of level 3 on the standard scale.",
+    "quote": "for continued contravention, a daily default fine not exceeding one-tenth of level 3 on the standard scale"
+   },
+   {
+    "requirement": "The provisions of section 237 apply to a variation of a qualifying indemnity provision in the same manner as they apply to the original provision.",
+    "quote": "The provisions of this section apply to a variation of a qualifying indemnity provision as they apply to the original provision"
+   },
+   {
+    "requirement": "In section 237, qualifying indemnity provision means qualifying third party indemnity provision and qualifying pension scheme indemnity provision.",
+    "quote": "In this section “qualifying indemnity provision” means— (a) qualifying third party indemnity provision, and (b) qualifying pension scheme indemnity provision"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Minimum period for which the copy or memorandum must be retained and kept available for inspection by the company from the date of termination or expiry of the provision",
+    "value": "at least one year",
+    "quote": "at least one year from the date of termination or expiry of the provision"
+   },
+   {
+    "what": "Duration of default in giving notice to the registrar of the place of inspection or any change in that place that results in an offence",
+    "value": "14 days",
+    "quote": "default is made for 14 days in complying with subsection (5)"
+   },
+   {
+    "what": "Maximum fine on summary conviction for an offence under the section",
+    "value": "level 3 on the standard scale",
+    "quote": "fine not exceeding level 3 on the standard scale"
+   },
+   {
+    "what": "Maximum daily default fine for continued contravention",
+    "value": "one-tenth of level 3 on the standard scale",
+    "quote": "daily default fine not exceeding one-tenth of level 3 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 237 has effect where qualifying indemnity provision is made for a director of a company and applies to the company of which he is a director, whether the provision is made by that company or an associated company.",
+   "quote": "applies— (a) to the company of which he is a director (whether the provision is made by that company or an associated company)"
+  },
+  {
+   "requirement": "Where qualifying indemnity provision is made for a director by an associated company, section 237 applies to that associated company.",
+   "quote": "where the provision is made by an associated company, to that company"
+  },
+  {
+   "requirement": "The company of which the director is a director, or where applicable each associated company and that company, must keep available for inspection a copy of the qualifying indemnity provision, or if the provision is not in writing, a written memorandum setting out its terms.",
+   "quote": "That company or, as the case may be, each of them must keep available for inspection— (a) a copy of the qualifying indemnity provision, or (b) if the provision is not in writing, a written memorandum setting out its terms"
+  },
+  {
+   "requirement": "The company must keep the copy or memorandum available for inspection at the company's registered office or a place specified in regulations under section 1136.",
+   "quote": "The copy or memorandum must be kept available for inspection at— (a) the company's registered office, or (b) a place specified in regulations under section 1136"
+  },
+  {
+   "requirement": "The company must retain the copy or memorandum and keep it available for inspection for at least one year from the date of termination or expiry of the provision.",
+   "quote": "retained by the company for at least one year from the date of termination or expiry of the provision and must be kept available for inspection during that time"
+  },
+  {
+   "requirement": "The company must give notice to the registrar of the place where the copy or memorandum is kept available for inspection, and of any change in that place, unless it has at all times been kept at the company's registered office.",
+   "quote": "The company must give notice to the registrar— (a) of the place at which the copy or memorandum is kept available for inspection, and (b) of any change in that place, unless it has at all times been kept at the company's registered office"
+  },
+  {
+   "requirement": "Every officer of the company who is in default commits an offence if default is made for 14 days in complying with subsection (5).",
+   "quote": "default is made for 14 days in complying with subsection (5), an offence is committed by every officer of the company who is in default"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 237 is liable on summary conviction to a fine not exceeding level 3 on the standard scale.",
+   "quote": "liable on summary conviction to a fine not exceeding level 3 on the standard scale"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 237 is liable, for continued contravention, to a daily default fine not exceeding one-tenth of level 3 on the standard scale.",
+   "quote": "for continued contravention, a daily default fine not exceeding one-tenth of level 3 on the standard scale"
+  },
+  {
+   "requirement": "The provisions of section 237 apply to a variation of a qualifying indemnity provision in the same manner as they apply to the original provision.",
+   "quote": "The provisions of this section apply to a variation of a qualifying indemnity provision as they apply to the original provision"
+  },
+  {
+   "requirement": "In section 237, qualifying indemnity provision means qualifying third party indemnity provision and qualifying pension scheme indemnity provision.",
+   "quote": "In this section “qualifying indemnity provision” means— (a) qualifying third party indemnity provision, and (b) qualifying pension scheme indemnity provision"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Minimum period for which the copy or memorandum must be retained and kept available for inspection by the company from the date of termination or expiry of the provision",
+   "value": "at least one year",
+   "quote": "at least one year from the date of termination or expiry of the provision"
+  },
+  {
+   "what": "Duration of default in giving notice to the registrar of the place of inspection or any change in that place that results in an offence",
+   "value": "14 days",
+   "quote": "default is made for 14 days in complying with subsection (5)"
+  },
+  {
+   "what": "Maximum fine on summary conviction for an offence under the section",
+   "value": "level 3 on the standard scale",
+   "quote": "fine not exceeding level 3 on the standard scale"
+  },
+  {
+   "what": "Maximum daily default fine for continued contravention",
+   "value": "one-tenth of level 3 on the standard scale",
+   "quote": "daily default fine not exceeding one-tenth of level 3 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 4
+ }
+}

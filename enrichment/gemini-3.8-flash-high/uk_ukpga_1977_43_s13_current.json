@@ -1,0 +1,67 @@
+{
+ "key": "uk/ukpga/1977/43/s13@current",
+ "section": "uk/ukpga/1977/43/s13",
+ "version": "current",
+ "source_sha256": "24bc0d214fe42f4efe29fc22c73e5537ec4efb03137cb5da1d217060208ee399",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Protection from Eviction Act 1977 may be cited as the Protection from Eviction Act 1977.",
+    "quote": "This Act may be cited as the Protection from Eviction Act 1977"
+   },
+   {
+    "requirement": "The Protection from Eviction Act 1977 shall come into force upon the expiry of a period of one month beginning with the date on which it is passed.",
+    "quote": "This Act shall come into force on the expiry of the period of one month beginning with the date on which it is passed"
+   },
+   {
+    "requirement": "The Protection from Eviction Act 1977 does not extend to Scotland or Northern Ireland.",
+    "quote": "This Act does not extend to Scotland or Northern Ireland"
+   },
+   {
+    "requirement": "References in the Protection from Eviction Act 1977 to any enactment are references to that enactment as amended, and include references to that enactment as applied by any other enactment including, except where the context otherwise requires, the Protection from Eviction Act 1977.",
+    "quote": "References in this Act to any enactment are references to that enactment as amended, and include references thereto as applied by any other enactment including, except where the context otherwise requires, this Act"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period beginning with the date the Act is passed upon the expiry of which the Act comes into force",
+    "value": "one month",
+    "quote": "period of one month beginning with the date on which it is passed"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Protection from Eviction Act 1977 may be cited as the Protection from Eviction Act 1977.",
+   "quote": "This Act may be cited as the Protection from Eviction Act 1977"
+  },
+  {
+   "requirement": "The Protection from Eviction Act 1977 shall come into force upon the expiry of a period of one month beginning with the date on which it is passed.",
+   "quote": "This Act shall come into force on the expiry of the period of one month beginning with the date on which it is passed"
+  },
+  {
+   "requirement": "The Protection from Eviction Act 1977 does not extend to Scotland or Northern Ireland.",
+   "quote": "This Act does not extend to Scotland or Northern Ireland"
+  },
+  {
+   "requirement": "References in the Protection from Eviction Act 1977 to any enactment are references to that enactment as amended, and include references to that enactment as applied by any other enactment including, except where the context otherwise requires, the Protection from Eviction Act 1977.",
+   "quote": "References in this Act to any enactment are references to that enactment as amended, and include references thereto as applied by any other enactment including, except where the context otherwise requires, this Act"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the period beginning with the date the Act is passed upon the expiry of which the Act comes into force",
+   "value": "one month",
+   "quote": "period of one month beginning with the date on which it is passed"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "key": "uk/ukpga/1992/52/s87@current",
+ "section": "uk/ukpga/1992/52/s87",
+ "version": "current",
+ "source_sha256": "e52236f89622ef6880386175fbd7e7190077fd7e2af8100c3fccf837166c408b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person who claims that their employer has failed to comply with section 86 in deducting or refusing to deduct any amount from emoluments payable to them may present a complaint to an employment tribunal.",
+    "quote": "A person who claims his employer has failed to comply with section 86 in deducting or refusing to deduct any amount from emoluments payable to him may present a complaint to an employment tribunal."
+   },
+   {
+    "requirement": "An employment tribunal must not consider a complaint under subsection (1) unless it is presented within the period of three months beginning with the date of the payment of the emoluments or, if the complaint relates to more than one payment, the last of the payments.",
+    "quote": "A tribunal shall not consider a complaint under subsection (1) unless it is presented— (a) within the period of three months beginning with the date of the payment of the emoluments or (if the complaint relates to more than one payment) the last of the payments"
+   },
+   {
+    "requirement": "Where an employment tribunal is satisfied that it was not reasonably practicable for a complaint under subsection (1) to be presented within the three-month period, the tribunal may consider it if presented within such further period as the tribunal considers reasonable.",
+    "quote": "where the tribunal is satisfied that it was not reasonably practicable for the complaint to be presented within that period, within such further period as the tribunal considers reasonable."
+   },
+   {
+    "requirement": "Section 292A on the extension of time limits to facilitate conciliation before the institution of proceedings applies for the purposes of subsection (2)(a).",
+    "quote": "Section 292A (extension of time limits to facilitate conciliation before institution of proceedings) applies for the purposes of subsection (2)(a)."
+   },
+   {
+    "requirement": "On a complaint under subsection (1) arising out of section 86(3) concerning a refusal to deduct union dues, where the question arises whether the employer's refusal to deduct an amount was attributable to the giving of the certificate or was otherwise connected with the duty imposed by section 86(1), the burden is on the employer to satisfy the tribunal that it was not.",
+    "quote": "it is for the employer to satisfy the tribunal that it was not."
+   },
+   {
+    "requirement": "Where an employment tribunal finds that a complaint under subsection (1) is well-founded, the tribunal must make a declaration to that effect.",
+    "quote": "Where a tribunal finds that a complaint under subsection (1) is well-founded— (a) it shall make a declaration to that effect"
+   },
+   {
+    "requirement": "Where an employment tribunal finds that a complaint under subsection (1) arising out of section 86(1) is well-founded, the tribunal must order the employer to pay to the complainant the amount deducted in contravention of that subsection less any part of that amount already paid to the complainant by the employer.",
+    "quote": "and, where the complaint arises out of subsection (1) of section 86, order the employer to pay to the complainant the amount deducted in contravention of that subsection less any part of that amount already paid to him by the employer"
+   },
+   {
+    "requirement": "Where an employment tribunal finds that a complaint under subsection (1) is well-founded, the tribunal may make an order requiring the employer to take, within a specified time, specified steps in relation to emoluments payable by the employer to the complainant if the tribunal considers it appropriate to do so in order to prevent a repetition of the failure.",
+    "quote": "it may, if it considers it appropriate to do so in order to prevent a repetition of the failure, make an order requiring the employer to take, within a specified time, the steps specified in the order in relation to emoluments payable by him to the complainant."
+   },
+   {
+    "requirement": "A person who claims that their employer has failed to comply with an order made under subsection (4)(b) on a complaint presented by that person may present a further complaint to an employment tribunal.",
+    "quote": "A person who claims his employer has failed to comply with an order made under subsection (4)(b) on a complaint presented by him may present a further complaint to an employment tribunal"
+   },
+   {
+    "requirement": "Only one complaint may be presented under subsection (5) in relation to any single order made under subsection (4)(b).",
+    "quote": "but only one complaint may be presented under this subsection in relation to any order."
+   },
+   {
+    "requirement": "An employment tribunal must not consider a complaint under subsection (5) unless it is presented after the end of the period of four weeks beginning with the date of the order and before the end of the period of six months beginning with that date.",
+    "quote": "A tribunal shall not consider a complaint under subsection (5) unless it is presented— (a) after the end of the period of four weeks beginning with the date of the order, but (b) before the end of the period of six months beginning with that date."
+   },
+   {
+    "requirement": "Where on a complaint under subsection (5) an employment tribunal finds that an employer has, without reasonable excuse, failed to comply with an order made under subsection (4)(b), the tribunal must order the employer to pay to the complainant an amount equal to two weeks' pay.",
+    "quote": "Where on a complaint under subsection (5) a tribunal finds that an employer has, without reasonable excuse, failed to comply with an order made under subsection (4)(b), it shall order the employer to pay to the complainant an amount equal to two weeks’ pay."
+   },
+   {
+    "requirement": "Chapter II of Part XIV of the Employment Rights Act 1996 applies for calculating a week's pay for the purposes of subsection (7), with the substituted section 225 providing that the calculation date is the date of the payment, or the last of the payments if more than one, to which the complaint related.",
+    "quote": "Chapter II of Part XIV of the Employment Rights Act 1996 (calculation of a week’s pay) applies for the purposes of subsection (7) with the substitution for section 225 of the following— For the purposes of this Chapter in its application to subsection (7) of section 87 of the Trade Union and Labour Relations (Consolidation) Act 1992, the calculation date is the date of the payment, or (if more than one) the last of the payments, to which the complaint related."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "standard period for presenting a complaint under subsection (1) to an employment tribunal",
+    "value": "three months",
+    "quote": "within the period of three months beginning with the date of the payment of the emoluments"
+   },
+   {
+    "what": "minimum wait time after the date of an order before a complaint under subsection (5) may be presented",
+    "value": "four weeks",
+    "quote": "after the end of the period of four weeks beginning with the date of the order"
+   },
+   {
+    "what": "maximum time limit beginning with the date of an order within which a complaint under subsection (5) must be presented",
+    "value": "six months",
+    "quote": "before the end of the period of six months beginning with that date."
+   },
+   {
+    "what": "maximum number of complaints that may be presented under subsection (5) in relation to any order",
+    "value": "one",
+    "quote": "only one complaint may be presented under this subsection in relation to any order."
+   },
+   {
+    "what": "amount the tribunal must order the employer to pay to the complainant for failing to comply with an order under subsection (4)(b) without reasonable excuse",
+    "value": "two weeks’ pay",
+    "quote": "an amount equal to two weeks’ pay."
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person who claims that their employer has failed to comply with section 86 in deducting or refusing to deduct any amount from emoluments payable to them may present a complaint to an employment tribunal.",
+   "quote": "A person who claims his employer has failed to comply with section 86 in deducting or refusing to deduct any amount from emoluments payable to him may present a complaint to an employment tribunal."
+  },
+  {
+   "requirement": "An employment tribunal must not consider a complaint under subsection (1) unless it is presented within the period of three months beginning with the date of the payment of the emoluments or, if the complaint relates to more than one payment, the last of the payments.",
+   "quote": "A tribunal shall not consider a complaint under subsection (1) unless it is presented— (a) within the period of three months beginning with the date of the payment of the emoluments or (if the complaint relates to more than one payment) the last of the payments"
+  },
+  {
+   "requirement": "Where an employment tribunal is satisfied that it was not reasonably practicable for a complaint under subsection (1) to be presented within the three-month period, the tribunal may consider it if presented within such further period as the tribunal considers reasonable.",
+   "quote": "where the tribunal is satisfied that it was not reasonably practicable for the complaint to be presented within that period, within such further period as the tribunal considers reasonable."
+  },
+  {
+   "requirement": "Section 292A on the extension of time limits to facilitate conciliation before the institution of proceedings applies for the purposes of subsection (2)(a).",
+   "quote": "Section 292A (extension of time limits to facilitate conciliation before institution of proceedings) applies for the purposes of subsection (2)(a)."
+  },
+  {
+   "requirement": "On a complaint under subsection (1) arising out of section 86(3) concerning a refusal to deduct union dues, where the question arises whether the employer's refusal to deduct an amount was attributable to the giving of the certificate or was otherwise connected with the duty imposed by section 86(1), the burden is on the employer to satisfy the tribunal that it was not.",
+   "quote": "it is for the employer to satisfy the tribunal that it was not."
+  },
+  {
+   "requirement": "Where an employment tribunal finds that a complaint under subsection (1) is well-founded, the tribunal must make a declaration to that effect.",
+   "quote": "Where a tribunal finds that a complaint under subsection (1) is well-founded— (a) it shall make a declaration to that effect"
+  },
+  {
+   "requirement": "Where an employment tribunal finds that a complaint under subsection (1) arising out of section 86(1) is well-founded, the tribunal must order the employer to pay to the complainant the amount deducted in contravention of that subsection less any part of that amount already paid to the complainant by the employer.",
+   "quote": "and, where the complaint arises out of subsection (1) of section 86, order the employer to pay to the complainant the amount deducted in contravention of that subsection less any part of that amount already paid to him by the employer"
+  },
+  {
+   "requirement": "Where an employment tribunal finds that a complaint under subsection (1) is well-founded, the tribunal may make an order requiring the employer to take, within a specified time, specified steps in relation to emoluments payable by the employer to the complainant if the tribunal considers it appropriate to do so in order to prevent a repetition of the failure.",
+   "quote": "it may, if it considers it appropriate to do so in order to prevent a repetition of the failure, make an order requiring the employer to take, within a specified time, the steps specified in the order in relation to emoluments payable by him to the complainant."
+  },
+  {
+   "requirement": "A person who claims that their employer has failed to comply with an order made under subsection (4)(b) on a complaint presented by that person may present a further complaint to an employment tribunal.",
+   "quote": "A person who claims his employer has failed to comply with an order made under subsection (4)(b) on a complaint presented by him may present a further complaint to an employment tribunal"
+  },
+  {
+   "requirement": "Only one complaint may be presented under subsection (5) in relation to any single order made under subsection (4)(b).",
+   "quote": "but only one complaint may be presented under this subsection in relation to any order."
+  },
+  {
+   "requirement": "An employment tribunal must not consider a complaint under subsection (5) unless it is presented after the end of the period of four weeks beginning with the date of the order and before the end of the period of six months beginning with that date.",
+   "quote": "A tribunal shall not consider a complaint under subsection (5) unless it is presented— (a) after the end of the period of four weeks beginning with the date of the order, but (b) before the end of the period of six months beginning with that date."
+  },
+  {
+   "requirement": "Where on a complaint under subsection (5) an employment tribunal finds that an employer has, without reasonable excuse, failed to comply with an order made under subsection (4)(b), the tribunal must order the employer to pay to the complainant an amount equal to two weeks' pay.",
+   "quote": "Where on a complaint under subsection (5) a tribunal finds that an employer has, without reasonable excuse, failed to comply with an order made under subsection (4)(b), it shall order the employer to pay to the complainant an amount equal to two weeks’ pay."
+  },
+  {
+   "requirement": "Chapter II of Part XIV of the Employment Rights Act 1996 applies for calculating a week's pay for the purposes of subsection (7), with the substituted section 225 providing that the calculation date is the date of the payment, or the last of the payments if more than one, to which the complaint related.",
+   "quote": "Chapter II of Part XIV of the Employment Rights Act 1996 (calculation of a week’s pay) applies for the purposes of subsection (7) with the substitution for section 225 of the following— For the purposes of this Chapter in its application to subsection (7) of section 87 of the Trade Union and Labour Relations (Consolidation) Act 1992, the calculation date is the date of the payment, or (if more than one) the last of the payments, to which the complaint related."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "standard period for presenting a complaint under subsection (1) to an employment tribunal",
+   "value": "three months",
+   "quote": "within the period of three months beginning with the date of the payment of the emoluments"
+  },
+  {
+   "what": "minimum wait time after the date of an order before a complaint under subsection (5) may be presented",
+   "value": "four weeks",
+   "quote": "after the end of the period of four weeks beginning with the date of the order"
+  },
+  {
+   "what": "maximum time limit beginning with the date of an order within which a complaint under subsection (5) must be presented",
+   "value": "six months",
+   "quote": "before the end of the period of six months beginning with that date."
+  },
+  {
+   "what": "amount the tribunal must order the employer to pay to the complainant for failing to comply with an order under subsection (4)(b) without reasonable excuse",
+   "value": "two weeks’ pay",
+   "quote": "an amount equal to two weeks’ pay."
+  }
+ ],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 5,
+  "thresholds_verified": 4
+ }
+}

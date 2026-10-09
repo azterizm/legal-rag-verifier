@@ -1,0 +1,138 @@
+{
+ "key": "uk/ukpga/1997/40/s11@current",
+ "section": "uk/ukpga/1997/40/s11",
+ "version": "current",
+ "source_sha256": "4442cf545f782066ba780a6ec72e7abcfc552eca3cdef29a28f7589a7f5929c4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a person is convicted of an offence involving harassment of a victim, the prosecutor may apply to the court to make a non-harassment order against the offender requiring the offender to refrain from specified conduct towards the victim for a specified period (which includes an indeterminate period), in addition to any other disposal for the offence.",
+    "quote": "Where a person is convicted of an offence involving harassment of a person (“the victim”), the prosecutor may apply to the court to make a non-harassment order against the offender requiring him to refrain from such conduct in relation to the victim as may be specified in the order for such period (which includes an indeterminate period) as may be so specified, in addition to any other disposal which may be made in relation to the offence."
+   },
+   {
+    "requirement": "The court may make a non-harassment order on application if it is satisfied on a balance of probabilities that doing so is appropriate to protect the victim from further harassment.",
+    "quote": "the court may, if it is satisfied on a balance of probabilities that it is appropriate to do so in order to protect the victim from further harassment, make a non-harassment order."
+   },
+   {
+    "requirement": "A non-harassment order made by a criminal court, including any variation or revocation of such an order, is to be treated as a sentence for the purposes of any appeal.",
+    "quote": "A non-harassment order made by a criminal court shall be taken to be a sentence for the purposes of any appeal and, for the purposes of this subsection “order” includes any variation or revocation of such an order made under subsection (6) below."
+   },
+   {
+    "requirement": "Any person found to be in breach of a non-harassment order is guilty of a criminal offence.",
+    "quote": "Any person who is found to be in breach of a non-harassment order shall be guilty of an offence"
+   },
+   {
+    "requirement": "A person convicted on indictment of breaching a non-harassment order is liable to imprisonment for a term not exceeding 5 years, a fine, or both.",
+    "quote": "on conviction on indictment, to imprisonment for a term not exceeding 5 years or to a fine, or to both such imprisonment and such fine"
+   },
+   {
+    "requirement": "A person convicted summarily of breaching a non-harassment order is liable to imprisonment for a period not exceeding 6 months, a fine not exceeding the statutory maximum, or both.",
+    "quote": "on summary conviction, to imprisonment for a period not exceeding 6 months or to a fine not exceeding the statutory maximum, or to both such imprisonment and such fine."
+   },
+   {
+    "requirement": "The Lord Advocate in solemn proceedings, and the prosecutor in summary proceedings, may appeal to the High Court against a court's refusal to make a non-harassment order on an application.",
+    "quote": "The Lord Advocate, in solemn proceedings, and the prosecutor, in summary proceedings, may appeal to the High Court against any decision by a court to refuse an application under subsection (1) above"
+   },
+   {
+    "requirement": "On an appeal against a refusal to make a non-harassment order, the High Court may make any order it considers appropriate.",
+    "quote": "on any such appeal the High Court may make such order as it considers appropriate."
+   },
+   {
+    "requirement": "The person subject to a non-harassment order, or the prosecutor at whose instance it was made, may apply to the court that made the order to have it revoked or varied.",
+    "quote": "The person against whom a non-harassment order is made, or the prosecutor at whose instance the order is made, may apply to the court which made the order for its revocation or variation"
+   },
+   {
+    "requirement": "On an application for revocation or variation, the court may revoke or vary the non-harassment order as it thinks fit if satisfied on a balance of probabilities that it is appropriate, provided the variation does not increase the period for which the order runs.",
+    "quote": "the court concerned may, if it is satisfied on a balance of probabilities that it is appropriate to do so, revoke the order or vary it in such manner as it thinks fit, but not so as to increase the period for which the order is to run."
+   },
+   {
+    "requirement": "The term 'harassment' for the purposes of section 234A must be construed in accordance with section 8 of the Protection from Harassment Act 1997.",
+    "quote": "For the purposes of this section “harassment” shall be construed in accordance with section 8 of the Protection from Harassment Act 1997."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment for breach of a non-harassment order",
+    "value": "5 years",
+    "quote": "imprisonment for a term not exceeding 5 years"
+   },
+   {
+    "what": "maximum term of imprisonment on summary conviction for breach of a non-harassment order",
+    "value": "6 months",
+    "quote": "imprisonment for a period not exceeding 6 months"
+   },
+   {
+    "what": "maximum fine on summary conviction for breach of a non-harassment order",
+    "value": "statutory maximum",
+    "quote": "a fine not exceeding the statutory maximum"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a person is convicted of an offence involving harassment of a victim, the prosecutor may apply to the court to make a non-harassment order against the offender requiring the offender to refrain from specified conduct towards the victim for a specified period (which includes an indeterminate period), in addition to any other disposal for the offence.",
+   "quote": "Where a person is convicted of an offence involving harassment of a person (“the victim”), the prosecutor may apply to the court to make a non-harassment order against the offender requiring him to refrain from such conduct in relation to the victim as may be specified in the order for such period (which includes an indeterminate period) as may be so specified, in addition to any other disposal which may be made in relation to the offence."
+  },
+  {
+   "requirement": "The court may make a non-harassment order on application if it is satisfied on a balance of probabilities that doing so is appropriate to protect the victim from further harassment.",
+   "quote": "the court may, if it is satisfied on a balance of probabilities that it is appropriate to do so in order to protect the victim from further harassment, make a non-harassment order."
+  },
+  {
+   "requirement": "A non-harassment order made by a criminal court, including any variation or revocation of such an order, is to be treated as a sentence for the purposes of any appeal.",
+   "quote": "A non-harassment order made by a criminal court shall be taken to be a sentence for the purposes of any appeal and, for the purposes of this subsection “order” includes any variation or revocation of such an order made under subsection (6) below."
+  },
+  {
+   "requirement": "Any person found to be in breach of a non-harassment order is guilty of a criminal offence.",
+   "quote": "Any person who is found to be in breach of a non-harassment order shall be guilty of an offence"
+  },
+  {
+   "requirement": "A person convicted on indictment of breaching a non-harassment order is liable to imprisonment for a term not exceeding 5 years, a fine, or both.",
+   "quote": "on conviction on indictment, to imprisonment for a term not exceeding 5 years or to a fine, or to both such imprisonment and such fine"
+  },
+  {
+   "requirement": "A person convicted summarily of breaching a non-harassment order is liable to imprisonment for a period not exceeding 6 months, a fine not exceeding the statutory maximum, or both.",
+   "quote": "on summary conviction, to imprisonment for a period not exceeding 6 months or to a fine not exceeding the statutory maximum, or to both such imprisonment and such fine."
+  },
+  {
+   "requirement": "The Lord Advocate in solemn proceedings, and the prosecutor in summary proceedings, may appeal to the High Court against a court's refusal to make a non-harassment order on an application.",
+   "quote": "The Lord Advocate, in solemn proceedings, and the prosecutor, in summary proceedings, may appeal to the High Court against any decision by a court to refuse an application under subsection (1) above"
+  },
+  {
+   "requirement": "On an appeal against a refusal to make a non-harassment order, the High Court may make any order it considers appropriate.",
+   "quote": "on any such appeal the High Court may make such order as it considers appropriate."
+  },
+  {
+   "requirement": "The person subject to a non-harassment order, or the prosecutor at whose instance it was made, may apply to the court that made the order to have it revoked or varied.",
+   "quote": "The person against whom a non-harassment order is made, or the prosecutor at whose instance the order is made, may apply to the court which made the order for its revocation or variation"
+  },
+  {
+   "requirement": "On an application for revocation or variation, the court may revoke or vary the non-harassment order as it thinks fit if satisfied on a balance of probabilities that it is appropriate, provided the variation does not increase the period for which the order runs.",
+   "quote": "the court concerned may, if it is satisfied on a balance of probabilities that it is appropriate to do so, revoke the order or vary it in such manner as it thinks fit, but not so as to increase the period for which the order is to run."
+  },
+  {
+   "requirement": "The term 'harassment' for the purposes of section 234A must be construed in accordance with section 8 of the Protection from Harassment Act 1997.",
+   "quote": "For the purposes of this section “harassment” shall be construed in accordance with section 8 of the Protection from Harassment Act 1997."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment for breach of a non-harassment order",
+   "value": "5 years",
+   "quote": "imprisonment for a term not exceeding 5 years"
+  },
+  {
+   "what": "maximum term of imprisonment on summary conviction for breach of a non-harassment order",
+   "value": "6 months",
+   "quote": "imprisonment for a period not exceeding 6 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

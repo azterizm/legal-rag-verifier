@@ -1,0 +1,128 @@
+{
+ "key": "uk/ukpga/2005/5/s25B@current",
+ "section": "uk/ukpga/2005/5/s25B",
+ "version": "current",
+ "source_sha256": "ebb20695cfca591c60a827faa116e0633aad3f42b84415998ad5e89f3393c5b0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A trade is an excluded trade in relation to a tax year if the trade meets any of conditions A to G.",
+    "quote": "A trade is an excluded trade in relation to a tax year if the trade meets any of conditions A to G."
+   },
+   {
+    "requirement": "Condition A is met if the person who is or has been carrying on the trade is a firm and one or more of the persons who have been partners in the firm at any time during the tax year was not an individual at that time.",
+    "quote": "the person who is or has been carrying on the trade is a firm, and (b) one or more of the persons who have been partners in the firm at any time during the tax year was not an individual at that time."
+   },
+   {
+    "requirement": "Condition B is met if the person who is or has been carrying on the trade was a limited liability partnership at any time during the tax year.",
+    "quote": "the person who is or has been carrying on the trade was a limited liability partnership at any time during the tax year."
+   },
+   {
+    "requirement": "Condition C is met if an election under Chapter 8 (trade profits: herd basis rules) has effect in relation to the trade for the tax year.",
+    "quote": "an election under Chapter 8 (trade profits: herd basis rules) has effect in relation to the trade for the tax year."
+   },
+   {
+    "requirement": "Condition D is met if a claim under Chapter 16 (claim for averaging of fluctuating profits) has been made in relation to the trade for the tax year.",
+    "quote": "a claim under Chapter 16 (claim for averaging of fluctuating profits) has been made in relation to the trade for the tax year."
+   },
+   {
+    "requirement": "Condition E is met if, at any time within the period of 7 years ending immediately before the tax year, the person who is or has been carrying on the trade obtained an allowance under Part 3A of CAA 2001 (business premises renovation allowances) in relation to the trade.",
+    "quote": "at any time within the period of 7 years ending immediately before the tax year, the person who is or has been carrying on the trade obtained an allowance under Part 3A of CAA 2001 (business premises renovation allowances) in relation to the trade."
+   },
+   {
+    "requirement": "Condition F is met if the trade is or was at any time during the tax year a mineral extraction trade within the meaning of Part 5 of CAA 2001 (see section 394(2) of that Act).",
+    "quote": "the trade is or was at any time during the tax year a mineral extraction trade within the meaning of Part 5 of CAA 2001 (see section 394(2) of that Act)."
+   },
+   {
+    "requirement": "Condition G is met if at any time before the beginning of the tax year the person who is or has been carrying on the trade obtained an allowance under Part 6 of CAA 2001 (research and development allowances) in respect of qualifying expenditure incurred by that person in relation to the trade, and that person owns an asset representing the expenditure.",
+    "quote": "at any time before the beginning of the tax year the person who is or has been carrying on the trade obtained an allowance under Part 6 of CAA 2001 (research and development allowances) in respect of qualifying expenditure incurred by the person in relation to the trade, and (b) the person owns an asset representing the expenditure."
+   },
+   {
+    "requirement": "For the purposes of subsection (8), qualifying expenditure has the same meaning as in Part 6 of CAA 2001.",
+    "quote": "In this subsection “qualifying expenditure” has the same meaning as in Part 6 of CAA 2001."
+   },
+   {
+    "requirement": "The Treasury may by regulations amend section 25B of the Income Tax (Trading and Other Income) Act 2005.",
+    "quote": "The Treasury may by regulations amend this section."
+   },
+   {
+    "requirement": "A statutory instrument containing regulations under subsection (9) that restricts the circumstances in which an election may be made under section 25C may not be made unless a draft of the instrument containing the regulations has been laid before, and approved by a resolution of, the House of Commons.",
+    "quote": "A statutory instrument containing regulations under subsection (9) that restricts the circumstances in which an election may be made under section 25C may not be made unless a draft of the instrument containing the regulations has been laid before, and approved by a resolution of, the House of Commons."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of non-individual partners in a firm required during the tax year to satisfy condition A",
+    "value": "one or more",
+    "quote": "one or more of the persons who have been partners in the firm at any time during the tax year was not an individual"
+   },
+   {
+    "what": "period ending immediately before the tax year within which an allowance obtained under Part 3A of CAA 2001 satisfies condition E",
+    "value": "7 years",
+    "quote": "period of 7 years ending immediately before the tax year"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A trade is an excluded trade in relation to a tax year if the trade meets any of conditions A to G.",
+   "quote": "A trade is an excluded trade in relation to a tax year if the trade meets any of conditions A to G."
+  },
+  {
+   "requirement": "Condition A is met if the person who is or has been carrying on the trade is a firm and one or more of the persons who have been partners in the firm at any time during the tax year was not an individual at that time.",
+   "quote": "the person who is or has been carrying on the trade is a firm, and (b) one or more of the persons who have been partners in the firm at any time during the tax year was not an individual at that time."
+  },
+  {
+   "requirement": "Condition B is met if the person who is or has been carrying on the trade was a limited liability partnership at any time during the tax year.",
+   "quote": "the person who is or has been carrying on the trade was a limited liability partnership at any time during the tax year."
+  },
+  {
+   "requirement": "Condition C is met if an election under Chapter 8 (trade profits: herd basis rules) has effect in relation to the trade for the tax year.",
+   "quote": "an election under Chapter 8 (trade profits: herd basis rules) has effect in relation to the trade for the tax year."
+  },
+  {
+   "requirement": "Condition D is met if a claim under Chapter 16 (claim for averaging of fluctuating profits) has been made in relation to the trade for the tax year.",
+   "quote": "a claim under Chapter 16 (claim for averaging of fluctuating profits) has been made in relation to the trade for the tax year."
+  },
+  {
+   "requirement": "Condition E is met if, at any time within the period of 7 years ending immediately before the tax year, the person who is or has been carrying on the trade obtained an allowance under Part 3A of CAA 2001 (business premises renovation allowances) in relation to the trade.",
+   "quote": "at any time within the period of 7 years ending immediately before the tax year, the person who is or has been carrying on the trade obtained an allowance under Part 3A of CAA 2001 (business premises renovation allowances) in relation to the trade."
+  },
+  {
+   "requirement": "Condition F is met if the trade is or was at any time during the tax year a mineral extraction trade within the meaning of Part 5 of CAA 2001 (see section 394(2) of that Act).",
+   "quote": "the trade is or was at any time during the tax year a mineral extraction trade within the meaning of Part 5 of CAA 2001 (see section 394(2) of that Act)."
+  },
+  {
+   "requirement": "Condition G is met if at any time before the beginning of the tax year the person who is or has been carrying on the trade obtained an allowance under Part 6 of CAA 2001 (research and development allowances) in respect of qualifying expenditure incurred by that person in relation to the trade, and that person owns an asset representing the expenditure.",
+   "quote": "at any time before the beginning of the tax year the person who is or has been carrying on the trade obtained an allowance under Part 6 of CAA 2001 (research and development allowances) in respect of qualifying expenditure incurred by the person in relation to the trade, and (b) the person owns an asset representing the expenditure."
+  },
+  {
+   "requirement": "For the purposes of subsection (8), qualifying expenditure has the same meaning as in Part 6 of CAA 2001.",
+   "quote": "In this subsection “qualifying expenditure” has the same meaning as in Part 6 of CAA 2001."
+  },
+  {
+   "requirement": "The Treasury may by regulations amend section 25B of the Income Tax (Trading and Other Income) Act 2005.",
+   "quote": "The Treasury may by regulations amend this section."
+  },
+  {
+   "requirement": "A statutory instrument containing regulations under subsection (9) that restricts the circumstances in which an election may be made under section 25C may not be made unless a draft of the instrument containing the regulations has been laid before, and approved by a resolution of, the House of Commons.",
+   "quote": "A statutory instrument containing regulations under subsection (9) that restricts the circumstances in which an election may be made under section 25C may not be made unless a draft of the instrument containing the regulations has been laid before, and approved by a resolution of, the House of Commons."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period ending immediately before the tax year within which an allowance obtained under Part 3A of CAA 2001 satisfies condition E",
+   "value": "7 years",
+   "quote": "period of 7 years ending immediately before the tax year"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

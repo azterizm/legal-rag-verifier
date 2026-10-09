@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1970/9/s32@current",
+ "section": "uk/ukpga/1970/9/s32",
+ "version": "current",
+ "source_sha256": "37f66fbaca7acec93227389160a34b51e3906d7234183f40a4b9451fb93fc21d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "If, on a claim made to the Board, it appears to the satisfaction of the Board that a person has been assessed to tax more than once for the same cause and for the same chargeable period, the Board must direct the whole, or such part of any assessment as appears to be an overcharge, to be vacated.",
+    "quote": "they shall direct the whole, or such part of any assessment as appears to be an overcharge, to be vacated"
+   },
+   {
+    "requirement": "Upon a direction by the Board, the whole or part of the assessment directed to be vacated must be vacated accordingly.",
+    "quote": "thereupon the same shall be vacated accordingly"
+   },
+   {
+    "requirement": "An appeal may be brought against the refusal of a claim for relief from double assessment.",
+    "quote": "An appeal may be brought against the refusal of a claim under this section"
+   },
+   {
+    "requirement": "Notice of an appeal against the refusal of a claim must be given in writing.",
+    "quote": "Notice of appeal under subsection (2) must be given— (a) in writing"
+   },
+   {
+    "requirement": "Notice of an appeal against the refusal of a claim must be given within 30 days after the day on which notice of the refusal is given.",
+    "quote": "within 30 days after the day on which notice of the refusal is given"
+   },
+   {
+    "requirement": "Notice of an appeal against the refusal of a claim must be given to the officer of Revenue and Customs by whom the notice of refusal was given.",
+    "quote": "to the officer of Revenue and Customs by whom that notice was given"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period after the day on which notice of refusal is given within which notice of appeal must be given",
+    "value": "30 days",
+    "quote": "within 30 days after the day on which notice of the refusal is given"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "If, on a claim made to the Board, it appears to the satisfaction of the Board that a person has been assessed to tax more than once for the same cause and for the same chargeable period, the Board must direct the whole, or such part of any assessment as appears to be an overcharge, to be vacated.",
+   "quote": "they shall direct the whole, or such part of any assessment as appears to be an overcharge, to be vacated"
+  },
+  {
+   "requirement": "Upon a direction by the Board, the whole or part of the assessment directed to be vacated must be vacated accordingly.",
+   "quote": "thereupon the same shall be vacated accordingly"
+  },
+  {
+   "requirement": "An appeal may be brought against the refusal of a claim for relief from double assessment.",
+   "quote": "An appeal may be brought against the refusal of a claim under this section"
+  },
+  {
+   "requirement": "Notice of an appeal against the refusal of a claim must be given in writing.",
+   "quote": "Notice of appeal under subsection (2) must be given— (a) in writing"
+  },
+  {
+   "requirement": "Notice of an appeal against the refusal of a claim must be given within 30 days after the day on which notice of the refusal is given.",
+   "quote": "within 30 days after the day on which notice of the refusal is given"
+  },
+  {
+   "requirement": "Notice of an appeal against the refusal of a claim must be given to the officer of Revenue and Customs by whom the notice of refusal was given.",
+   "quote": "to the officer of Revenue and Customs by whom that notice was given"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period after the day on which notice of refusal is given within which notice of appeal must be given",
+   "value": "30 days",
+   "quote": "within 30 days after the day on which notice of the refusal is given"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

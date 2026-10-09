@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2002/38/s107@current",
+ "section": "uk/ukpga/2002/38/s107",
+ "version": "current",
+ "source_sha256": "c19eed582cd7a7abafc6bc774865d4731621fa591dbb6c8abee9f4ba15707e70",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any document receivable as evidence of any matter in Scotland under section 56(1) or (2) of the Adoption and Children (Scotland) Act 2007 (asp 4) (admissibility of extracts as evidence) is also receivable as evidence of that matter in England and Wales.",
+    "quote": "in Scotland under section 56(1) or (2) of the Adoption and Children (Scotland) Act 2007 (asp 4) (admissibility of extracts as evidence)"
+   },
+   {
+    "requirement": "Any document receivable as evidence of any matter in Northern Ireland under Article 63(1) of the Adoption (Northern Ireland) Order 1987 is also receivable as evidence of that matter in England and Wales.",
+    "quote": "in Northern Ireland under Article 63(1) of the Adoption (Northern Ireland) Order 1987"
+   },
+   {
+    "requirement": "Any document receivable as evidence of any matter in the Isle of Man or any of the Channel Islands under an enactment corresponding to section 77(3) of the Adoption and Children Act 2002 is also receivable as evidence of that matter in England and Wales.",
+    "quote": "in the Isle of Man or any of the Channel Islands under an enactment corresponding to section 77(3) of this Act"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any document receivable as evidence of any matter in Scotland under section 56(1) or (2) of the Adoption and Children (Scotland) Act 2007 (asp 4) (admissibility of extracts as evidence) is also receivable as evidence of that matter in England and Wales.",
+   "quote": "in Scotland under section 56(1) or (2) of the Adoption and Children (Scotland) Act 2007 (asp 4) (admissibility of extracts as evidence)"
+  },
+  {
+   "requirement": "Any document receivable as evidence of any matter in Northern Ireland under Article 63(1) of the Adoption (Northern Ireland) Order 1987 is also receivable as evidence of that matter in England and Wales.",
+   "quote": "in Northern Ireland under Article 63(1) of the Adoption (Northern Ireland) Order 1987"
+  },
+  {
+   "requirement": "Any document receivable as evidence of any matter in the Isle of Man or any of the Channel Islands under an enactment corresponding to section 77(3) of the Adoption and Children Act 2002 is also receivable as evidence of that matter in England and Wales.",
+   "quote": "in the Isle of Man or any of the Channel Islands under an enactment corresponding to section 77(3) of this Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "key": "uk/ukpga/1970/9/s70@current",
+ "section": "uk/ukpga/1970/9/s70",
+ "version": "current",
+ "source_sha256": "d915e504887f1d36ad88ee6b210bb0bd2b771646fe6f0da949add0116d28bcf0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A certificate from an inspector or other officer of the Board confirming that tax carries interest under section 88 of the Taxes Management Act 1970, accompanied by a collector's certificate stating that interest has not been paid to that collector or, to the best of their knowledge and belief, to any other collector or representative, constitutes sufficient evidence that interest is chargeable on the tax from the date it ought to have been paid under section 88.",
+    "quote": "shall be sufficient evidence— (a) that interest is chargeable on the tax from the date when for the purposes of section 88 of this Act the tax ought to have been paid"
+   },
+   {
+    "requirement": "A certificate from an inspector or other officer of the Board confirming that tax carries interest under section 88 of the Taxes Management Act 1970, accompanied by a collector's certificate of non-payment, constitutes sufficient evidence that the sum stated in the certificate is unpaid and due to the Crown.",
+    "quote": "shall be sufficient evidence— (b) that the sum mentioned in the certificate is unpaid and is due to the Crown"
+   },
+   {
+    "requirement": "Any document purporting to be an officer's or collector's certificate under subsection (3) is presumed to be such a certificate unless the contrary is proved.",
+    "quote": "any document purporting to be such a certificate as is mentioned in this subsection shall be deemed to be such a certificate unless the contrary is proved"
+   },
+   {
+    "requirement": "In recovery proceedings brought under section 65, 66 or 67 of the Taxes Management Act 1970, a written statement of wages, salaries, fees, and other earnings or amounts treated as earnings paid to the defendant, purporting to be signed by the employer for that period or by a responsible person in the employer's employment, constitutes prima facie evidence that those earnings or amounts were in fact paid to the defendant.",
+    "quote": "shall in such proceedings be prima facie evidence that the wages, salaries, fees and other earnings or amounts treated as earnings therein stated to have been paid to the person charged have in fact been so paid"
+   },
+   {
+    "requirement": "For the purposes of written statements of earnings in proceedings under subsection (4), 'earnings or amounts treated as earnings' is defined as earnings or amounts treated as earnings that constitute employment income under section 7(2)(a) or (b) of ITEPA 2003.",
+    "quote": "“earnings or amounts treated as earnings” means earnings or amounts treated as earnings which constitute employment income (see section 7(2)(a) or (b) of ITEPA 2003)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the date from which interest is chargeable on tax",
+    "value": "the date when for the purposes of section 88 of this Act the tax ought to have been paid",
+    "quote": "the date when for the purposes of section 88 of this Act the tax ought to have been paid"
+   },
+   {
+    "what": "the period for which earnings or amounts treated as earnings were paid to the person against whom proceedings are brought",
+    "value": "any period",
+    "quote": "paid for any period to the person against whom proceedings are brought"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A certificate from an inspector or other officer of the Board confirming that tax carries interest under section 88 of the Taxes Management Act 1970, accompanied by a collector's certificate stating that interest has not been paid to that collector or, to the best of their knowledge and belief, to any other collector or representative, constitutes sufficient evidence that interest is chargeable on the tax from the date it ought to have been paid under section 88.",
+   "quote": "shall be sufficient evidence— (a) that interest is chargeable on the tax from the date when for the purposes of section 88 of this Act the tax ought to have been paid"
+  },
+  {
+   "requirement": "Any document purporting to be an officer's or collector's certificate under subsection (3) is presumed to be such a certificate unless the contrary is proved.",
+   "quote": "any document purporting to be such a certificate as is mentioned in this subsection shall be deemed to be such a certificate unless the contrary is proved"
+  },
+  {
+   "requirement": "In recovery proceedings brought under section 65, 66 or 67 of the Taxes Management Act 1970, a written statement of wages, salaries, fees, and other earnings or amounts treated as earnings paid to the defendant, purporting to be signed by the employer for that period or by a responsible person in the employer's employment, constitutes prima facie evidence that those earnings or amounts were in fact paid to the defendant.",
+   "quote": "shall in such proceedings be prima facie evidence that the wages, salaries, fees and other earnings or amounts treated as earnings therein stated to have been paid to the person charged have in fact been so paid"
+  },
+  {
+   "requirement": "For the purposes of written statements of earnings in proceedings under subsection (4), 'earnings or amounts treated as earnings' is defined as earnings or amounts treated as earnings that constitute employment income under section 7(2)(a) or (b) of ITEPA 2003.",
+   "quote": "“earnings or amounts treated as earnings” means earnings or amounts treated as earnings which constitute employment income (see section 7(2)(a) or (b) of ITEPA 2003)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 4,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

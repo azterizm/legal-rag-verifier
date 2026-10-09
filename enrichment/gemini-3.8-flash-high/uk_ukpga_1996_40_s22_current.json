@@ -1,0 +1,69 @@
+{
+ "key": "uk/ukpga/1996/40/s22@current",
+ "section": "uk/ukpga/1996/40/s22",
+ "version": "current",
+ "source_sha256": "5914c2774ec00c28e2b01bd467465b012c31ba44e58830c1f4188f61ab1c3092",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Act may be cited as the Party Wall etc. Act 1996.",
+    "quote": "This Act may be cited as the Party Wall etc. Act 1996"
+   },
+   {
+    "requirement": "The Party Wall etc. Act 1996 shall come into force in accordance with provision made by the Secretary of State by order made by statutory instrument.",
+    "quote": "This Act shall come into force in accordance with provision made by the Secretary of State by order made by statutory instrument"
+   },
+   {
+    "requirement": "An order bringing the Act into force may contain such savings or transitional provisions as the Secretary of State thinks fit.",
+    "quote": "contain such savings or transitional provisions as the Secretary of State thinks fit"
+   },
+   {
+    "requirement": "An order bringing the Act into force may make different provision for different purposes.",
+    "quote": "make different provision for different purposes"
+   },
+   {
+    "requirement": "The Party Wall etc. Act 1996 extends to England and Wales only.",
+    "quote": "This Act extends to England and Wales only"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "year specified in the citation of the Act",
+    "value": "1996",
+    "quote": "Party Wall etc. Act 1996"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Act may be cited as the Party Wall etc. Act 1996.",
+   "quote": "This Act may be cited as the Party Wall etc. Act 1996"
+  },
+  {
+   "requirement": "The Party Wall etc. Act 1996 shall come into force in accordance with provision made by the Secretary of State by order made by statutory instrument.",
+   "quote": "This Act shall come into force in accordance with provision made by the Secretary of State by order made by statutory instrument"
+  },
+  {
+   "requirement": "An order bringing the Act into force may contain such savings or transitional provisions as the Secretary of State thinks fit.",
+   "quote": "contain such savings or transitional provisions as the Secretary of State thinks fit"
+  },
+  {
+   "requirement": "An order bringing the Act into force may make different provision for different purposes.",
+   "quote": "make different provision for different purposes"
+  },
+  {
+   "requirement": "The Party Wall etc. Act 1996 extends to England and Wales only.",
+   "quote": "This Act extends to England and Wales only"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

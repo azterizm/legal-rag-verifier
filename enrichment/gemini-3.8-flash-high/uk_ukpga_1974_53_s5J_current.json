@@ -1,0 +1,147 @@
+{
+ "key": "uk/ukpga/1974/53/s5J@current",
+ "section": "uk/ukpga/1974/53/s5J",
+ "version": "current",
+ "source_sha256": "6d8589cfb30a16eab53ff99b971b4d514c8d717e8cfbce715fa2afb8e0c6ee29",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "There is no disclosure period applicable to an order discharging a person absolutely for an offence.",
+    "quote": "There is no disclosure period applicable to— (a) an order discharging a person absolutely for an offence"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to the dismissal of a person with an admonition.",
+    "quote": "There is no disclosure period applicable to— (b) the dismissal of a person with an admonition"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to any sentence, other than an excepted sentence specified in subsection (1A), imposed on a person in respect of a conviction for an offence committed when that person was under 18 years of age.",
+    "quote": "any sentence other than an excepted sentence mentioned in subsection (1A) imposed on a person in respect of a conviction for an offence committed when the person was under 18 years of age"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to a guardianship order made under section 57(2)(c) of the Criminal Procedure (Scotland) Act 1995 where it arises by virtue of section 57(1)(b) of that Act, or made under section 58(1A) or (3) of that Act.",
+    "quote": "a guardianship order— (i) if arising by virtue of subsection (1)(b) of section 57 of the Criminal Procedure (Scotland) Act 1995, under subsection (2)(c) of that section, or (ii) under section 58(1A) or (3) of the Criminal Procedure (Scotland) Act 1995"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to the discharge by a children's hearing under section 69(1)(b) and (12) of the Children (Scotland) Act 1995 of the referral of a child's case.",
+    "quote": "the discharge by a children's hearing under section 69(1)(b) and (12) of the Children (Scotland) Act 1995 of the referral of a child's case"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to a supervision requirement under any provision of the Children (Scotland) Act 1995.",
+    "quote": "a supervision requirement under any provision of that Act"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to the discharge by a children's hearing or by the sheriff of the referral of a child's case to a children's hearing under section 91(3)(b), 93(2)(b) or 119(3)(b) of the Children's Hearings (Scotland) Act 2011.",
+    "quote": "the discharge by a children's hearing or, as the case may be, by the sheriff of the referral of a child's case to a children's hearing under section 91(3)(b), 93(2)(b) or 119(3)(b) of the Children's Hearings (Scotland) Act 2011"
+   },
+   {
+    "requirement": "There is no disclosure period applicable to a compulsory supervision order under any provision of the Children's Hearings (Scotland) Act 2011.",
+    "quote": "a compulsory supervision order under any provision of that Act"
+   },
+   {
+    "requirement": "An excluded sentence constitutes an excepted sentence for the purposes of subsection (1)(ba).",
+    "quote": "The excepted sentences referred to in subsection (1)(ba) are— (a) an excluded sentence"
+   },
+   {
+    "requirement": "For a conviction for an offence listed in any of paragraphs 52 to 59 of schedule 1 of the Disclosure (Scotland) Act 2020 (sexual offences), a custodial sentence (within the meaning of section 5(12)) for a term exceeding 12 months constitutes an excepted sentence for the purposes of subsection (1)(ba).",
+    "quote": "in the case of a conviction for an offence listed in any of paragraphs 52 to 59 of schedule 1 of the Disclosure (Scotland) Act 2020 (sexual offences), a custodial sentence (within the meaning of section 5(12)) for a term exceeding 12 months"
+   },
+   {
+    "requirement": "For the purposes of subsection (1)(ba), a person convicted of an offence is presumed, in the absence of evidence to the contrary, to have been of the same age at the time the offence was committed as the person was at the date of conviction.",
+    "quote": "it is to be presumed, in the absence of evidence to the contrary, that a person convicted of an offence was of the same age at the time the offence was committed as the person was at the date of conviction"
+   },
+   {
+    "requirement": "In relation to any of the cases mentioned in subsection (1), references in the Rehabilitation of Offenders Act 1974 to any disclosure period must be read as if the period of time were nil.",
+    "quote": "In relation to any of the cases mentioned in subsection (1), references in this Act to any disclosure period are to be read as if the period of time were nil."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum age of a person at the time of committing an offence to qualify under subsection (1)(ba)",
+    "value": "18 years of age",
+    "quote": "committed when the person was under 18 years of age"
+   },
+   {
+    "what": "schedule paragraphs listing sexual offences under the Disclosure (Scotland) Act 2020",
+    "value": "52 to 59",
+    "quote": "paragraphs 52 to 59 of schedule 1 of the Disclosure (Scotland) Act 2020"
+   },
+   {
+    "what": "custodial sentence term threshold for an excepted sexual offence sentence under subsection (1A)(b)",
+    "value": "12 months",
+    "quote": "custodial sentence (within the meaning of section 5(12)) for a term exceeding 12 months"
+   },
+   {
+    "what": "disclosure period length to be read for cases mentioned in subsection (1)",
+    "value": "nil",
+    "quote": "references in this Act to any disclosure period are to be read as if the period of time were nil"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "There is no disclosure period applicable to an order discharging a person absolutely for an offence.",
+   "quote": "There is no disclosure period applicable to— (a) an order discharging a person absolutely for an offence"
+  },
+  {
+   "requirement": "There is no disclosure period applicable to any sentence, other than an excepted sentence specified in subsection (1A), imposed on a person in respect of a conviction for an offence committed when that person was under 18 years of age.",
+   "quote": "any sentence other than an excepted sentence mentioned in subsection (1A) imposed on a person in respect of a conviction for an offence committed when the person was under 18 years of age"
+  },
+  {
+   "requirement": "There is no disclosure period applicable to a guardianship order made under section 57(2)(c) of the Criminal Procedure (Scotland) Act 1995 where it arises by virtue of section 57(1)(b) of that Act, or made under section 58(1A) or (3) of that Act.",
+   "quote": "a guardianship order— (i) if arising by virtue of subsection (1)(b) of section 57 of the Criminal Procedure (Scotland) Act 1995, under subsection (2)(c) of that section, or (ii) under section 58(1A) or (3) of the Criminal Procedure (Scotland) Act 1995"
+  },
+  {
+   "requirement": "There is no disclosure period applicable to the discharge by a children's hearing under section 69(1)(b) and (12) of the Children (Scotland) Act 1995 of the referral of a child's case.",
+   "quote": "the discharge by a children's hearing under section 69(1)(b) and (12) of the Children (Scotland) Act 1995 of the referral of a child's case"
+  },
+  {
+   "requirement": "There is no disclosure period applicable to a supervision requirement under any provision of the Children (Scotland) Act 1995.",
+   "quote": "a supervision requirement under any provision of that Act"
+  },
+  {
+   "requirement": "There is no disclosure period applicable to the discharge by a children's hearing or by the sheriff of the referral of a child's case to a children's hearing under section 91(3)(b), 93(2)(b) or 119(3)(b) of the Children's Hearings (Scotland) Act 2011.",
+   "quote": "the discharge by a children's hearing or, as the case may be, by the sheriff of the referral of a child's case to a children's hearing under section 91(3)(b), 93(2)(b) or 119(3)(b) of the Children's Hearings (Scotland) Act 2011"
+  },
+  {
+   "requirement": "There is no disclosure period applicable to a compulsory supervision order under any provision of the Children's Hearings (Scotland) Act 2011.",
+   "quote": "a compulsory supervision order under any provision of that Act"
+  },
+  {
+   "requirement": "An excluded sentence constitutes an excepted sentence for the purposes of subsection (1)(ba).",
+   "quote": "The excepted sentences referred to in subsection (1)(ba) are— (a) an excluded sentence"
+  },
+  {
+   "requirement": "For a conviction for an offence listed in any of paragraphs 52 to 59 of schedule 1 of the Disclosure (Scotland) Act 2020 (sexual offences), a custodial sentence (within the meaning of section 5(12)) for a term exceeding 12 months constitutes an excepted sentence for the purposes of subsection (1)(ba).",
+   "quote": "in the case of a conviction for an offence listed in any of paragraphs 52 to 59 of schedule 1 of the Disclosure (Scotland) Act 2020 (sexual offences), a custodial sentence (within the meaning of section 5(12)) for a term exceeding 12 months"
+  },
+  {
+   "requirement": "For the purposes of subsection (1)(ba), a person convicted of an offence is presumed, in the absence of evidence to the contrary, to have been of the same age at the time the offence was committed as the person was at the date of conviction.",
+   "quote": "it is to be presumed, in the absence of evidence to the contrary, that a person convicted of an offence was of the same age at the time the offence was committed as the person was at the date of conviction"
+  },
+  {
+   "requirement": "In relation to any of the cases mentioned in subsection (1), references in the Rehabilitation of Offenders Act 1974 to any disclosure period must be read as if the period of time were nil.",
+   "quote": "In relation to any of the cases mentioned in subsection (1), references in this Act to any disclosure period are to be read as if the period of time were nil."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum age of a person at the time of committing an offence to qualify under subsection (1)(ba)",
+   "value": "18 years of age",
+   "quote": "committed when the person was under 18 years of age"
+  },
+  {
+   "what": "custodial sentence term threshold for an excepted sexual offence sentence under subsection (1A)(b)",
+   "value": "12 months",
+   "quote": "custodial sentence (within the meaning of section 5(12)) for a term exceeding 12 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 2
+ }
+}

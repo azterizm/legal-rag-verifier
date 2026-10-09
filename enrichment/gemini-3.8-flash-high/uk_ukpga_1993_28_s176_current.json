@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/1993/28/s176@current",
+ "section": "uk/ukpga/1993/28/s176",
+ "version": "current",
+ "source_sha256": "21b784d24e81367a44c6a799d935f3516c28ab2624236ae596a330d74562986e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Local Government, Planning and Land Act 1980 is defined as 'the 1980 Act'.",
+    "quote": "Local Government, Planning and Land Act 1980 (“the 1980 Act”)"
+   },
+   {
+    "requirement": "In paragraph (a) of section 98(1) of the Local Government, Planning and Land Act 1980, the words 'for the time being satisfies the conditions specified in section 95(2) above' are substituted for the words 'is for the time being entered on a register maintained by him under section 95 above'.",
+    "quote": "for the words “is for the time being entered on a register maintained by him under section 95 above” there shall be substituted the words “ for the time being satisfies the conditions specified in section 95(2) above ”"
+   },
+   {
+    "requirement": "In paragraph (b) of section 98(1) of the Local Government, Planning and Land Act 1980, the words 'for the time being satisfies those conditions' are substituted for the words 'is for the time being entered on such a register'.",
+    "quote": "for the words “is for the time being entered on such a register” there shall be substituted the words “ for the time being satisfies those conditions ”"
+   },
+   {
+    "requirement": "Subsection (2) of section 99A of the Local Government, Planning and Land Act 1980, which precludes entry on land that is not for the time being entered on a register maintained under section 95, ceases to have effect.",
+    "quote": "subsection (2) (which precludes entry on land which is not for the time being entered on a register maintained under section 95) shall cease to have effect"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Local Government, Planning and Land Act 1980 is defined as 'the 1980 Act'.",
+   "quote": "Local Government, Planning and Land Act 1980 (“the 1980 Act”)"
+  },
+  {
+   "requirement": "In paragraph (a) of section 98(1) of the Local Government, Planning and Land Act 1980, the words 'for the time being satisfies the conditions specified in section 95(2) above' are substituted for the words 'is for the time being entered on a register maintained by him under section 95 above'.",
+   "quote": "for the words “is for the time being entered on a register maintained by him under section 95 above” there shall be substituted the words “ for the time being satisfies the conditions specified in section 95(2) above ”"
+  },
+  {
+   "requirement": "In paragraph (b) of section 98(1) of the Local Government, Planning and Land Act 1980, the words 'for the time being satisfies those conditions' are substituted for the words 'is for the time being entered on such a register'.",
+   "quote": "for the words “is for the time being entered on such a register” there shall be substituted the words “ for the time being satisfies those conditions ”"
+  },
+  {
+   "requirement": "Subsection (2) of section 99A of the Local Government, Planning and Land Act 1980, which precludes entry on land that is not for the time being entered on a register maintained under section 95, ceases to have effect.",
+   "quote": "subsection (2) (which precludes entry on land which is not for the time being entered on a register maintained under section 95) shall cease to have effect"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

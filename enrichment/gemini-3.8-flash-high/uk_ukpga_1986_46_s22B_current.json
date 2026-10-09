@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1986/46/s22B@current",
+ "section": "uk/ukpga/1986/46/s22B",
+ "version": "current",
+ "source_sha256": "0e0043712efbfa95fdadc46a86fe9e91d567a6686e4f37e4f1cae02dc4e8febe",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Company Directors Disqualification Act 1986 applies to incorporated friendly societies in the same manner as it applies to companies.",
+    "quote": "This Act applies to incorporated friendly societies as it applies to companies."
+   },
+   {
+    "requirement": "References in the Company Directors Disqualification Act 1986 to a company include references to an incorporated friendly society within the meaning of the Friendly Societies Act 1992.",
+    "quote": "References in this Act to a company, or to a director or an officer of a company include, respectively, references to an incorporated friendly society within the meaning of the Friendly Societies Act 1992"
+   },
+   {
+    "requirement": "References in the Company Directors Disqualification Act 1986 to a director or an officer of a company include references to a member of the committee of management or officer, within the meaning of the Friendly Societies Act 1992, of an incorporated friendly society.",
+    "quote": "to a member of the committee of management or officer, within the meaning of that Act, of an incorporated friendly society."
+   },
+   {
+    "requirement": "In relation to an incorporated friendly society, every reference in the Company Directors Disqualification Act 1986 to a shadow director must be omitted.",
+    "quote": "In relation to an incorporated friendly society every reference to a shadow director shall be omitted."
+   },
+   {
+    "requirement": "In relation to an incorporated friendly society, the Company Directors Disqualification Act 1986 applies as if sections 6(1)(a)(ii), 6(3)(d), 7(2)(b), 8ZA to 8ZE, and 11A were omitted.",
+    "quote": "sections 6(1)(a)(ii) and (3)(d), 7(2)(b) , 8ZA to 8ZE and 11A were omitted"
+   },
+   {
+    "requirement": "In relation to an incorporated friendly society, the Company Directors Disqualification Act 1986 applies as if references in sections 7(4)(a) and 15A(3)(b) to a company that has been dissolved without becoming insolvent were omitted.",
+    "quote": "references in sections 7(4)(a) and 15A(3)(b) to a company which has been dissolved without becoming insolvent were omitted."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Company Directors Disqualification Act 1986 applies to incorporated friendly societies in the same manner as it applies to companies.",
+   "quote": "This Act applies to incorporated friendly societies as it applies to companies."
+  },
+  {
+   "requirement": "References in the Company Directors Disqualification Act 1986 to a company include references to an incorporated friendly society within the meaning of the Friendly Societies Act 1992.",
+   "quote": "References in this Act to a company, or to a director or an officer of a company include, respectively, references to an incorporated friendly society within the meaning of the Friendly Societies Act 1992"
+  },
+  {
+   "requirement": "References in the Company Directors Disqualification Act 1986 to a director or an officer of a company include references to a member of the committee of management or officer, within the meaning of the Friendly Societies Act 1992, of an incorporated friendly society.",
+   "quote": "to a member of the committee of management or officer, within the meaning of that Act, of an incorporated friendly society."
+  },
+  {
+   "requirement": "In relation to an incorporated friendly society, every reference in the Company Directors Disqualification Act 1986 to a shadow director must be omitted.",
+   "quote": "In relation to an incorporated friendly society every reference to a shadow director shall be omitted."
+  },
+  {
+   "requirement": "In relation to an incorporated friendly society, the Company Directors Disqualification Act 1986 applies as if sections 6(1)(a)(ii), 6(3)(d), 7(2)(b), 8ZA to 8ZE, and 11A were omitted.",
+   "quote": "sections 6(1)(a)(ii) and (3)(d), 7(2)(b) , 8ZA to 8ZE and 11A were omitted"
+  },
+  {
+   "requirement": "In relation to an incorporated friendly society, the Company Directors Disqualification Act 1986 applies as if references in sections 7(4)(a) and 15A(3)(b) to a company that has been dissolved without becoming insolvent were omitted.",
+   "quote": "references in sections 7(4)(a) and 15A(3)(b) to a company which has been dissolved without becoming insolvent were omitted."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

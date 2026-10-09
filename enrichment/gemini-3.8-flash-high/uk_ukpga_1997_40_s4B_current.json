@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1997/40/s4B@current",
+ "section": "uk/ukpga/1997/40/s4B",
+ "version": "current",
+ "source_sha256": "245b7f6aa0179fe07e5b8fcdcc8edf81da85a51c6b81a7f823dc5ee88b9ef8fd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An individual is subject to extraterritorial liability if that individual's course of conduct consists of or includes conduct in a country outside the United Kingdom.",
+    "quote": "a person's course of conduct consists of or includes conduct in a country outside the United Kingdom"
+   },
+   {
+    "requirement": "An individual's extraterritorial course of conduct must be such that it would constitute an offence under section 4 or 4A if it occurred in England and Wales.",
+    "quote": "the course of conduct would constitute an offence under section 4 or 4A if it occurred in England and Wales"
+   },
+   {
+    "requirement": "An individual who engages in the extraterritorial course of conduct must be a United Kingdom national or be habitually resident in England and Wales.",
+    "quote": "the person is a United Kingdom national or is habitually resident in England and Wales"
+   },
+   {
+    "requirement": "An individual who satisfies the extraterritorial conduct, domestic offence equivalence, and nationality or residence requirements is guilty in England and Wales of that offence under section 4 or 4A.",
+    "quote": "the person is guilty in England and Wales of that offence"
+   },
+   {
+    "requirement": "For the purposes of the extraterritorial harassment provisions, the term country includes territory.",
+    "quote": "“country” includes territory"
+   },
+   {
+    "requirement": "An individual qualifies as a United Kingdom national if that individual is a British citizen, a British overseas territories citizen, a British National (Overseas) or a British Overseas citizen.",
+    "quote": "a British citizen, a British overseas territories citizen, a British National (Overseas) or a British Overseas citizen"
+   },
+   {
+    "requirement": "An individual qualifies as a United Kingdom national if that individual is a person who under the British Nationality Act 1981 is a British subject.",
+    "quote": "a person who under the British Nationality Act 1981 is a British subject"
+   },
+   {
+    "requirement": "An individual qualifies as a United Kingdom national if that individual is a British protected person within the meaning of the British Nationality Act 1981.",
+    "quote": "a British protected person within the meaning of that Act"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "An individual is subject to extraterritorial liability if that individual's course of conduct consists of or includes conduct in a country outside the United Kingdom.",
+   "quote": "a person's course of conduct consists of or includes conduct in a country outside the United Kingdom"
+  },
+  {
+   "requirement": "An individual's extraterritorial course of conduct must be such that it would constitute an offence under section 4 or 4A if it occurred in England and Wales.",
+   "quote": "the course of conduct would constitute an offence under section 4 or 4A if it occurred in England and Wales"
+  },
+  {
+   "requirement": "An individual who engages in the extraterritorial course of conduct must be a United Kingdom national or be habitually resident in England and Wales.",
+   "quote": "the person is a United Kingdom national or is habitually resident in England and Wales"
+  },
+  {
+   "requirement": "An individual who satisfies the extraterritorial conduct, domestic offence equivalence, and nationality or residence requirements is guilty in England and Wales of that offence under section 4 or 4A.",
+   "quote": "the person is guilty in England and Wales of that offence"
+  },
+  {
+   "requirement": "For the purposes of the extraterritorial harassment provisions, the term country includes territory.",
+   "quote": "“country” includes territory"
+  },
+  {
+   "requirement": "An individual qualifies as a United Kingdom national if that individual is a British citizen, a British overseas territories citizen, a British National (Overseas) or a British Overseas citizen.",
+   "quote": "a British citizen, a British overseas territories citizen, a British National (Overseas) or a British Overseas citizen"
+  },
+  {
+   "requirement": "An individual qualifies as a United Kingdom national if that individual is a person who under the British Nationality Act 1981 is a British subject.",
+   "quote": "a person who under the British Nationality Act 1981 is a British subject"
+  },
+  {
+   "requirement": "An individual qualifies as a United Kingdom national if that individual is a British protected person within the meaning of the British Nationality Act 1981.",
+   "quote": "a British protected person within the meaning of that Act"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

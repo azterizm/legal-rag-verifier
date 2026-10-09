@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/2009/4/s233@current",
+ "section": "uk/ukpga/2009/4/s233",
+ "version": "current",
+ "source_sha256": "c6e9a730724ea6e6f1c295480f14febecdfc494416b664d4e8436e9ab4bc0f2b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 233 of the Corporation Tax Act 2009 applies if there is a reduction by reference to a taxed receipt under section 228 in calculating a receipt under Chapter 4, or under section 288 of the Income Tax (Trading and Other Income) Act 2005 in calculating a receipt under Chapter 4 of Part 3 of that Act.",
+    "quote": "This section applies if— (a) in calculating the amount of a receipt under this Chapter there is a reduction under section 228 (the additional calculation rule) by reference to a taxed receipt, or (b) in calculating the amount of a receipt under Chapter 4 of Part 3 of ITTOIA 2005 (profits of a property business: lease premiums etc) there is a reduction under section 288 of that Act (the additional calculation rule) by reference to a taxed receipt."
+   },
+   {
+    "requirement": "A receipt that is reduced under section 228 or under section 288 of the Income Tax (Trading and Other Income) Act 2005 is defined as the 'lease premium receipt'.",
+    "quote": "The receipt that is so reduced is referred to in this section as the “lease premium receipt”."
+   },
+   {
+    "requirement": "Subsections (3) to (5) govern how section 232 applies for any qualifying day that falls within the receipt period of the lease premium receipt.",
+    "quote": "Subsections (3) to (5) provide for the application of section 232 for a qualifying day that falls within the receipt period of the lease premium receipt."
+   },
+   {
+    "requirement": "The tenant under the taxed lease is treated as incurring an expense under section 232 for a qualifying day by reference to the taxed receipt only if the daily amount of the taxed receipt exceeds the daily reduction of the lease premium receipt.",
+    "quote": "The tenant under the taxed lease is treated as incurring an expense under section 232 for the qualifying day by reference to the taxed receipt only if the daily amount of the taxed receipt exceeds the daily reduction of the lease premium receipt."
+   },
+   {
+    "requirement": "If the daily amount of the taxed receipt exceeds the daily reduction of the lease premium receipt, the amount of the expense incurred by the tenant under section 232 for the qualifying day by reference to the taxed receipt equals that excess.",
+    "quote": "If the condition in subsection (3) is met, the amount of the expense under section 232 for the qualifying day by reference to the taxed receipt is equal to that excess."
+   },
+   {
+    "requirement": "If a qualifying day falls within the receipt periods of more than one lease premium receipt, the daily reduction of the lease premium receipt is read as the total of the daily reductions of each lease premium receipt whose receipt period includes that qualifying day.",
+    "quote": "If the qualifying day falls within the receipt periods of more than one lease premium receipt, the reference in subsection (3) to the daily reduction of the lease premium receipt is to be read as a reference to the total of the daily reductions of each of the lease premium receipts whose receipt period includes the qualifying day."
+   },
+   {
+    "requirement": "The daily amount of a taxed receipt is calculated by dividing A (the unreduced amount of the taxed receipt) by TRP (the number of days in the receipt period of the taxed receipt).",
+    "quote": "the “daily amount” of the taxed receipt is given by the formula— ATRPwhere— A is the unreduced amount of the taxed receipt (see section 230(2) to (4)), andTRP is the number of days in the receipt period of the taxed receipt"
+   },
+   {
+    "requirement": "The daily reduction of a lease premium receipt is calculated by dividing AR (the reduction under section 228 or under section 288 of the Income Tax (Trading and Other Income) Act 2005 by reference to the taxed receipt) by RRP (the number of days in the receipt period of the lease premium receipt).",
+    "quote": "the “daily reduction” of a lease premium receipt is given by the formula— ARRRPwhere— AR is the reduction under section 228 above or section 288 of ITTOIA 2005 by reference to the taxed receipt (see section 230(6)), andRRP is the number of days in the receipt period of the lease premium receipt."
+   },
+   {
+    "requirement": "Section 234 explains the operation of section 233 if the lease premium receipt concerns a lease granted out of the taxed lease that does not extend to the entirety of the premises subject to the taxed lease.",
+    "quote": "Section 234 explains how this section operates if the lease premium receipt is in respect of a lease that has been granted out of the taxed lease and does not extend to the whole of the premises subject to the taxed lease."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of lease premium receipts whose receipt periods include the qualifying day to trigger reading the daily reduction as a total",
+    "value": "more than one",
+    "quote": "more than one lease premium receipt"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 233 of the Corporation Tax Act 2009 applies if there is a reduction by reference to a taxed receipt under section 228 in calculating a receipt under Chapter 4, or under section 288 of the Income Tax (Trading and Other Income) Act 2005 in calculating a receipt under Chapter 4 of Part 3 of that Act.",
+   "quote": "This section applies if— (a) in calculating the amount of a receipt under this Chapter there is a reduction under section 228 (the additional calculation rule) by reference to a taxed receipt, or (b) in calculating the amount of a receipt under Chapter 4 of Part 3 of ITTOIA 2005 (profits of a property business: lease premiums etc) there is a reduction under section 288 of that Act (the additional calculation rule) by reference to a taxed receipt."
+  },
+  {
+   "requirement": "A receipt that is reduced under section 228 or under section 288 of the Income Tax (Trading and Other Income) Act 2005 is defined as the 'lease premium receipt'.",
+   "quote": "The receipt that is so reduced is referred to in this section as the “lease premium receipt”."
+  },
+  {
+   "requirement": "Subsections (3) to (5) govern how section 232 applies for any qualifying day that falls within the receipt period of the lease premium receipt.",
+   "quote": "Subsections (3) to (5) provide for the application of section 232 for a qualifying day that falls within the receipt period of the lease premium receipt."
+  },
+  {
+   "requirement": "The tenant under the taxed lease is treated as incurring an expense under section 232 for a qualifying day by reference to the taxed receipt only if the daily amount of the taxed receipt exceeds the daily reduction of the lease premium receipt.",
+   "quote": "The tenant under the taxed lease is treated as incurring an expense under section 232 for the qualifying day by reference to the taxed receipt only if the daily amount of the taxed receipt exceeds the daily reduction of the lease premium receipt."
+  },
+  {
+   "requirement": "If the daily amount of the taxed receipt exceeds the daily reduction of the lease premium receipt, the amount of the expense incurred by the tenant under section 232 for the qualifying day by reference to the taxed receipt equals that excess.",
+   "quote": "If the condition in subsection (3) is met, the amount of the expense under section 232 for the qualifying day by reference to the taxed receipt is equal to that excess."
+  },
+  {
+   "requirement": "If a qualifying day falls within the receipt periods of more than one lease premium receipt, the daily reduction of the lease premium receipt is read as the total of the daily reductions of each lease premium receipt whose receipt period includes that qualifying day.",
+   "quote": "If the qualifying day falls within the receipt periods of more than one lease premium receipt, the reference in subsection (3) to the daily reduction of the lease premium receipt is to be read as a reference to the total of the daily reductions of each of the lease premium receipts whose receipt period includes the qualifying day."
+  },
+  {
+   "requirement": "The daily amount of a taxed receipt is calculated by dividing A (the unreduced amount of the taxed receipt) by TRP (the number of days in the receipt period of the taxed receipt).",
+   "quote": "the “daily amount” of the taxed receipt is given by the formula— ATRPwhere— A is the unreduced amount of the taxed receipt (see section 230(2) to (4)), andTRP is the number of days in the receipt period of the taxed receipt"
+  },
+  {
+   "requirement": "The daily reduction of a lease premium receipt is calculated by dividing AR (the reduction under section 228 or under section 288 of the Income Tax (Trading and Other Income) Act 2005 by reference to the taxed receipt) by RRP (the number of days in the receipt period of the lease premium receipt).",
+   "quote": "the “daily reduction” of a lease premium receipt is given by the formula— ARRRPwhere— AR is the reduction under section 228 above or section 288 of ITTOIA 2005 by reference to the taxed receipt (see section 230(6)), andRRP is the number of days in the receipt period of the lease premium receipt."
+  },
+  {
+   "requirement": "Section 234 explains the operation of section 233 if the lease premium receipt concerns a lease granted out of the taxed lease that does not extend to the entirety of the premises subject to the taxed lease.",
+   "quote": "Section 234 explains how this section operates if the lease premium receipt is in respect of a lease that has been granted out of the taxed lease and does not extend to the whole of the premises subject to the taxed lease."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

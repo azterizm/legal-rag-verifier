@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1990/18/s6@current",
+ "section": "uk/ukpga/1990/18/s6",
+ "version": "current",
+ "source_sha256": "8420a4d0a6b296d4eb80cd1062f3bbe06153f8b91bdf61064e070d1a518e7e91",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "On a charge of conspiracy to commit an offence under the Computer Misuse Act 1990, the question of where any person became a party to the conspiracy is immaterial to the accused's guilt.",
+    "quote": "the question where any person became a party to the conspiracy"
+   },
+   {
+    "requirement": "On a charge of conspiracy to commit an offence under the Computer Misuse Act 1990, the question of whether any act, omission or other event occurred in the home country concerned is immaterial to the accused's guilt.",
+    "quote": "the question whether any act, omission or other event occurred in the home country concerned"
+   },
+   {
+    "requirement": "On a charge of attempting to commit an offence under the Computer Misuse Act 1990, the question of where the attempt was made is immaterial to the accused's guilt.",
+    "quote": "the question where the attempt was made"
+   },
+   {
+    "requirement": "On a charge of attempting to commit an offence under the Computer Misuse Act 1990, the question of whether the attempt had an effect in the home country concerned is immaterial to the accused's guilt.",
+    "quote": "the question whether it had an effect in the home country concerned"
+   },
+   {
+    "requirement": "Section 6 of the Computer Misuse Act 1990 does not extend to Scotland.",
+    "quote": "This section does not extend to Scotland"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "On a charge of conspiracy to commit an offence under the Computer Misuse Act 1990, the question of where any person became a party to the conspiracy is immaterial to the accused's guilt.",
+   "quote": "the question where any person became a party to the conspiracy"
+  },
+  {
+   "requirement": "On a charge of conspiracy to commit an offence under the Computer Misuse Act 1990, the question of whether any act, omission or other event occurred in the home country concerned is immaterial to the accused's guilt.",
+   "quote": "the question whether any act, omission or other event occurred in the home country concerned"
+  },
+  {
+   "requirement": "On a charge of attempting to commit an offence under the Computer Misuse Act 1990, the question of where the attempt was made is immaterial to the accused's guilt.",
+   "quote": "the question where the attempt was made"
+  },
+  {
+   "requirement": "On a charge of attempting to commit an offence under the Computer Misuse Act 1990, the question of whether the attempt had an effect in the home country concerned is immaterial to the accused's guilt.",
+   "quote": "the question whether it had an effect in the home country concerned"
+  },
+  {
+   "requirement": "Section 6 of the Computer Misuse Act 1990 does not extend to Scotland.",
+   "quote": "This section does not extend to Scotland"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

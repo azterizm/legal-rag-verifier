@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1996/27/s63R@current",
+ "section": "uk/ukpga/1996/27/s63R",
+ "version": "current",
+ "source_sha256": "d25a70ba8916ec39e18f53ebc8e6cc9805b73ea245d1fcda388f79eeb98f944d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "This Part does not affect any other protection or assistance available to a person who is being, or may be, forced into a marriage, is subjected to an attempt to be forced into a marriage, or has been forced into a marriage.",
+    "quote": "This Part does not affect any other protection or assistance available to a person who"
+   },
+   {
+    "requirement": "In particular, this Part does not affect the inherent jurisdiction of the High Court.",
+    "quote": "the inherent jurisdiction of the High Court"
+   },
+   {
+    "requirement": "In particular, this Part does not affect any criminal liability.",
+    "quote": "any criminal liability"
+   },
+   {
+    "requirement": "In particular, this Part does not affect any civil remedies under the Protection from Harassment Act 1997 (c. 40).",
+    "quote": "any civil remedies under the Protection from Harassment Act 1997 (c. 40)"
+   },
+   {
+    "requirement": "In particular, this Part does not affect any right to an occupation order or a non-molestation order under Part 4 of this Act.",
+    "quote": "any right to an occupation order or a non-molestation order under Part 4 of this Act"
+   },
+   {
+    "requirement": "In particular, this Part does not affect any protection or assistance under the Children Act 1989 (c. 41).",
+    "quote": "any protection or assistance under the Children Act 1989 (c. 41)"
+   },
+   {
+    "requirement": "In particular, this Part does not affect any claim in tort.",
+    "quote": "any claim in tort"
+   },
+   {
+    "requirement": "In particular, this Part does not affect the law of marriage.",
+    "quote": "the law of marriage"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "This Part does not affect any other protection or assistance available to a person who is being, or may be, forced into a marriage, is subjected to an attempt to be forced into a marriage, or has been forced into a marriage.",
+   "quote": "This Part does not affect any other protection or assistance available to a person who"
+  },
+  {
+   "requirement": "In particular, this Part does not affect the inherent jurisdiction of the High Court.",
+   "quote": "the inherent jurisdiction of the High Court"
+  },
+  {
+   "requirement": "In particular, this Part does not affect any criminal liability.",
+   "quote": "any criminal liability"
+  },
+  {
+   "requirement": "In particular, this Part does not affect any civil remedies under the Protection from Harassment Act 1997 (c. 40).",
+   "quote": "any civil remedies under the Protection from Harassment Act 1997 (c. 40)"
+  },
+  {
+   "requirement": "In particular, this Part does not affect any right to an occupation order or a non-molestation order under Part 4 of this Act.",
+   "quote": "any right to an occupation order or a non-molestation order under Part 4 of this Act"
+  },
+  {
+   "requirement": "In particular, this Part does not affect any protection or assistance under the Children Act 1989 (c. 41).",
+   "quote": "any protection or assistance under the Children Act 1989 (c. 41)"
+  },
+  {
+   "requirement": "In particular, this Part does not affect any claim in tort.",
+   "quote": "any claim in tort"
+  },
+  {
+   "requirement": "In particular, this Part does not affect the law of marriage.",
+   "quote": "the law of marriage"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

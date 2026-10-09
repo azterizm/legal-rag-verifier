@@ -1,0 +1,59 @@
+{
+ "key": "uk/ukpga/1968/60/s19@current",
+ "section": "uk/ukpga/1968/60/s19",
+ "version": "current",
+ "source_sha256": "1c4dc9817ad276c79f29a643f60c0ea76656c7a749ef08525765cd0661ef4d9f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "An officer of a body corporate or unincorporated association, or a person purporting to act as such, who publishes or concurs in publishing a written statement or account which to his knowledge is or may be misleading, false or deceptive in a material particular, with intent to deceive members or creditors of the body corporate or association about its affairs, is liable on conviction on indictment to imprisonment for a term not exceeding seven years.",
+    "quote": "Where an officer of a body corporate or unincorporated association (or person purporting to act as such), with intent to deceive members or creditors of the body corporate or association about its affairs, publishes or concurs in publishing a written statement or account which to his knowledge is or may be misleading, false or deceptive in a material particular, he shall on conviction on indictment be liable to imprisonment for a term not exceeding seven years."
+   },
+   {
+    "requirement": "A person who has entered into a security for the benefit of a body corporate or unincorporated association is to be treated as a creditor of that body corporate or association for the purposes of section 19 of the Theft Act 1968.",
+    "quote": "a person who has entered into a security for the benefit of a body corporate or association is to be treated as a creditor of it."
+   },
+   {
+    "requirement": "Where the affairs of a body corporate or unincorporated association are managed by its members, section 19 of the Theft Act 1968 applies to any statement that a member publishes or concurs in publishing in connection with his functions of management as if that member were an officer of the body corporate or association.",
+    "quote": "Where the affairs of a body corporate or association are managed by its members, this section shall apply to any statement which a member publishes or concurs in publishing in connection with his functions of management as if he were an officer of the body corporate or association."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum term of imprisonment on conviction on indictment",
+    "value": "seven years",
+    "quote": "imprisonment for a term not exceeding seven years"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "An officer of a body corporate or unincorporated association, or a person purporting to act as such, who publishes or concurs in publishing a written statement or account which to his knowledge is or may be misleading, false or deceptive in a material particular, with intent to deceive members or creditors of the body corporate or association about its affairs, is liable on conviction on indictment to imprisonment for a term not exceeding seven years.",
+   "quote": "Where an officer of a body corporate or unincorporated association (or person purporting to act as such), with intent to deceive members or creditors of the body corporate or association about its affairs, publishes or concurs in publishing a written statement or account which to his knowledge is or may be misleading, false or deceptive in a material particular, he shall on conviction on indictment be liable to imprisonment for a term not exceeding seven years."
+  },
+  {
+   "requirement": "A person who has entered into a security for the benefit of a body corporate or unincorporated association is to be treated as a creditor of that body corporate or association for the purposes of section 19 of the Theft Act 1968.",
+   "quote": "a person who has entered into a security for the benefit of a body corporate or association is to be treated as a creditor of it."
+  },
+  {
+   "requirement": "Where the affairs of a body corporate or unincorporated association are managed by its members, section 19 of the Theft Act 1968 applies to any statement that a member publishes or concurs in publishing in connection with his functions of management as if that member were an officer of the body corporate or association.",
+   "quote": "Where the affairs of a body corporate or association are managed by its members, this section shall apply to any statement which a member publishes or concurs in publishing in connection with his functions of management as if he were an officer of the body corporate or association."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum term of imprisonment on conviction on indictment",
+   "value": "seven years",
+   "quote": "imprisonment for a term not exceeding seven years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

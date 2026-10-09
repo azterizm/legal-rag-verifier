@@ -1,0 +1,168 @@
+{
+ "key": "uk/ukpga/1990/18/s3ZA@current",
+ "section": "uk/ukpga/1990/18/s3ZA",
+ "version": "current",
+ "source_sha256": "c3988eb82f814b6cd2802814cb3cb9c6230637ad31893e774f2c848bdc1f46cc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if that person carries out any unauthorised act in relation to a computer.",
+    "quote": "the person does any unauthorised act in relation to a computer"
+   },
+   {
+    "requirement": "A person commits an offence only if, at the time of doing the act, that person knows that the act is unauthorised.",
+    "quote": "at the time of doing the act the person knows that it is unauthorised"
+   },
+   {
+    "requirement": "A person commits an offence only if the act causes, or creates a significant risk of, serious damage of a material kind.",
+    "quote": "the act causes, or creates a significant risk of, serious damage of a material kind"
+   },
+   {
+    "requirement": "A person commits an offence only if that person intends by doing the act to cause serious damage of a material kind or is reckless as to whether such damage is caused.",
+    "quote": "the person intends by doing the act to cause serious damage of a material kind or is reckless as to whether such damage is caused"
+   },
+   {
+    "requirement": "Damage qualifies as being of a material kind if it constitutes damage to human welfare in any place.",
+    "quote": "damage to human welfare in any place"
+   },
+   {
+    "requirement": "Damage qualifies as being of a material kind if it constitutes damage to the environment of any place.",
+    "quote": "damage to the environment of any place"
+   },
+   {
+    "requirement": "Damage qualifies as being of a material kind if it constitutes damage to the economy of any country.",
+    "quote": "damage to the economy of any country"
+   },
+   {
+    "requirement": "Damage qualifies as being of a material kind if it constitutes damage to the national security of any country.",
+    "quote": "damage to the national security of any country"
+   },
+   {
+    "requirement": "An act causes damage to human welfare only if it causes loss to human life, human illness or injury, disruption of a supply of money, food, water, energy or fuel, disruption of a system of communication, disruption of facilities for transport, or disruption of services relating to health.",
+    "quote": "an act causes damage to human welfare only if it causes— (a) loss to human life; (b) human illness or injury; (c) disruption of a supply of money, food, water, energy or fuel; (d) disruption of a system of communication; (e) disruption of facilities for transport; or (f) disruption of services relating to health"
+   },
+   {
+    "requirement": "In determining whether damage is of a material kind, it is immaterial whether or not an act causing damage does so directly.",
+    "quote": "whether or not an act causing damage— (a) does so directly"
+   },
+   {
+    "requirement": "In determining whether damage is of a material kind, it is immaterial whether or not an act causing damage is the only or main cause of the damage.",
+    "quote": "is the only or main cause of the damage"
+   },
+   {
+    "requirement": "Any reference in section 3ZA to doing an act includes a reference to causing an act to be done.",
+    "quote": "a reference to doing an act includes a reference to causing an act to be done"
+   },
+   {
+    "requirement": "The word act includes a series of acts.",
+    "quote": "“act” includes a series of acts"
+   },
+   {
+    "requirement": "Any reference in section 3ZA to a country includes a reference to a territory, and to any place in, or part or region of, a country or territory.",
+    "quote": "a reference to a country includes a reference to a territory, and to any place in, or part or region of, a country or territory"
+   },
+   {
+    "requirement": "Unless subsection (7) applies, a person guilty of an offence under section 3ZA is liable, on conviction on indictment, to imprisonment for a term not exceeding 14 years, or to a fine, or to both.",
+    "quote": "liable, on conviction on indictment, to imprisonment for a term not exceeding 14 years, or to a fine, or to both"
+   },
+   {
+    "requirement": "A person guilty of an offence under section 3ZA committed as a result of an act causing or creating a significant risk of serious damage to human welfare involving loss to human life or human illness or injury, or serious damage to national security, is liable, on conviction on indictment, to imprisonment for life, or to a fine, or to both.",
+    "quote": "liable, on conviction on indictment, to imprisonment for life, or to a fine, or to both"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Maximum term of imprisonment on conviction on indictment when subsection (7) does not apply",
+    "value": "14 years",
+    "quote": "imprisonment for a term not exceeding 14 years"
+   },
+   {
+    "what": "Maximum term of imprisonment on conviction on indictment when subsection (7) applies",
+    "value": "life",
+    "quote": "imprisonment for life"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if that person carries out any unauthorised act in relation to a computer.",
+   "quote": "the person does any unauthorised act in relation to a computer"
+  },
+  {
+   "requirement": "A person commits an offence only if, at the time of doing the act, that person knows that the act is unauthorised.",
+   "quote": "at the time of doing the act the person knows that it is unauthorised"
+  },
+  {
+   "requirement": "A person commits an offence only if the act causes, or creates a significant risk of, serious damage of a material kind.",
+   "quote": "the act causes, or creates a significant risk of, serious damage of a material kind"
+  },
+  {
+   "requirement": "A person commits an offence only if that person intends by doing the act to cause serious damage of a material kind or is reckless as to whether such damage is caused.",
+   "quote": "the person intends by doing the act to cause serious damage of a material kind or is reckless as to whether such damage is caused"
+  },
+  {
+   "requirement": "Damage qualifies as being of a material kind if it constitutes damage to human welfare in any place.",
+   "quote": "damage to human welfare in any place"
+  },
+  {
+   "requirement": "Damage qualifies as being of a material kind if it constitutes damage to the environment of any place.",
+   "quote": "damage to the environment of any place"
+  },
+  {
+   "requirement": "Damage qualifies as being of a material kind if it constitutes damage to the economy of any country.",
+   "quote": "damage to the economy of any country"
+  },
+  {
+   "requirement": "Damage qualifies as being of a material kind if it constitutes damage to the national security of any country.",
+   "quote": "damage to the national security of any country"
+  },
+  {
+   "requirement": "An act causes damage to human welfare only if it causes loss to human life, human illness or injury, disruption of a supply of money, food, water, energy or fuel, disruption of a system of communication, disruption of facilities for transport, or disruption of services relating to health.",
+   "quote": "an act causes damage to human welfare only if it causes— (a) loss to human life; (b) human illness or injury; (c) disruption of a supply of money, food, water, energy or fuel; (d) disruption of a system of communication; (e) disruption of facilities for transport; or (f) disruption of services relating to health"
+  },
+  {
+   "requirement": "In determining whether damage is of a material kind, it is immaterial whether or not an act causing damage does so directly.",
+   "quote": "whether or not an act causing damage— (a) does so directly"
+  },
+  {
+   "requirement": "In determining whether damage is of a material kind, it is immaterial whether or not an act causing damage is the only or main cause of the damage.",
+   "quote": "is the only or main cause of the damage"
+  },
+  {
+   "requirement": "Any reference in section 3ZA to doing an act includes a reference to causing an act to be done.",
+   "quote": "a reference to doing an act includes a reference to causing an act to be done"
+  },
+  {
+   "requirement": "The word act includes a series of acts.",
+   "quote": "“act” includes a series of acts"
+  },
+  {
+   "requirement": "Any reference in section 3ZA to a country includes a reference to a territory, and to any place in, or part or region of, a country or territory.",
+   "quote": "a reference to a country includes a reference to a territory, and to any place in, or part or region of, a country or territory"
+  },
+  {
+   "requirement": "Unless subsection (7) applies, a person guilty of an offence under section 3ZA is liable, on conviction on indictment, to imprisonment for a term not exceeding 14 years, or to a fine, or to both.",
+   "quote": "liable, on conviction on indictment, to imprisonment for a term not exceeding 14 years, or to a fine, or to both"
+  },
+  {
+   "requirement": "A person guilty of an offence under section 3ZA committed as a result of an act causing or creating a significant risk of serious damage to human welfare involving loss to human life or human illness or injury, or serious damage to national security, is liable, on conviction on indictment, to imprisonment for life, or to a fine, or to both.",
+   "quote": "liable, on conviction on indictment, to imprisonment for life, or to a fine, or to both"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Maximum term of imprisonment on conviction on indictment when subsection (7) does not apply",
+   "value": "14 years",
+   "quote": "imprisonment for a term not exceeding 14 years"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 16,
+  "elements_verified": 16,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

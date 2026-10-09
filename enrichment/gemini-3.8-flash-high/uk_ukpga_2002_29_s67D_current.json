@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2002/29/s67D@current",
+ "section": "uk/ukpga/2002/29/s67D",
+ "version": "current",
+ "source_sha256": "3159faf2d4d723b565e99144c81e303e54504118e9196d2b6f13bcac87f728fd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 67D applies to sums that are in the hands of an appropriate officer and are the proceeds of the realisation of property under section 67ZA or 67A.",
+    "quote": "applies to sums which— (a) are in the hands of an appropriate officer, and (b) are the proceeds of the realisation of property under section 67ZA or 67A"
+   },
+   {
+    "requirement": "Sums subject to section 67D must first be applied in payment of such expenses incurred by a person acting as an insolvency practitioner as are payable under subsection (2) by virtue of section 432.",
+    "quote": "first, they must be applied in payment of such expenses incurred by a person acting as an insolvency practitioner as are payable under this subsection by virtue of section 432"
+   },
+   {
+    "requirement": "Sums subject to section 67D must secondly be applied in making any payments directed by the magistrates' court or the Crown Court.",
+    "quote": "second, they must be applied in making any payments directed by the magistrates' court or the Crown Court"
+   },
+   {
+    "requirement": "Sums subject to section 67D must thirdly be paid to the appropriate designated officer on account of the amount payable under the confiscation order.",
+    "quote": "third, they must be paid to the appropriate designated officer on account of the amount payable under the confiscation order"
+   },
+   {
+    "requirement": "If the amount payable under the confiscation order has been fully paid and any sums remain in the appropriate officer's hands, the appropriate officer must distribute them among such persons who held (or hold) interests in the property represented by the proceeds and in such proportions as the magistrates' court or the Crown Court directs.",
+    "quote": "If the amount payable under the confiscation order has been fully paid and any sums remain in the appropriate officer's hands, the appropriate officer must distribute them— (a) among such persons who held (or hold) interests in the property represented by the proceeds as the magistrates' court or the Crown Court directs, and (b) in such proportions as it directs"
+   },
+   {
+    "requirement": "Before making a direction under subsection (3), the court must give persons who held (or hold) interests in the property a reasonable opportunity to make representations to it.",
+    "quote": "Before making a direction under subsection (3) the court must give persons who held (or hold) interests in the property a reasonable opportunity to make representations to it"
+   },
+   {
+    "requirement": "If the magistrates' court has made a direction under subsection (2)(b) or (3) in respect of the proceeds of realisation of any property, the Crown Court may not make a direction under either of those provisions in respect of the proceeds of realisation of that property, and vice versa.",
+    "quote": "If the magistrates' court has made a direction under subsection (2)(b) or (3) in respect of the proceeds of realisation of any property, the Crown Court may not make a direction under either of those provisions in respect of the proceeds of realisation of that property; and vice versa"
+   },
+   {
+    "requirement": "In section 67D, the term 'appropriate officer' has the same meaning as in section 41A.",
+    "quote": "“appropriate officer” has the same meaning as in section 41A"
+   },
+   {
+    "requirement": "In section 67D, the term 'appropriate designated officer' means the designated officer for the magistrates' court which, by virtue of section 35, is responsible for enforcing the confiscation order as if it were a fine.",
+    "quote": "“appropriate designated officer” means the designated officer for the magistrates' court which, by virtue of section 35, is responsible for enforcing the confiscation order as if it were a fine"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 67D applies to sums that are in the hands of an appropriate officer and are the proceeds of the realisation of property under section 67ZA or 67A.",
+   "quote": "applies to sums which— (a) are in the hands of an appropriate officer, and (b) are the proceeds of the realisation of property under section 67ZA or 67A"
+  },
+  {
+   "requirement": "Sums subject to section 67D must first be applied in payment of such expenses incurred by a person acting as an insolvency practitioner as are payable under subsection (2) by virtue of section 432.",
+   "quote": "first, they must be applied in payment of such expenses incurred by a person acting as an insolvency practitioner as are payable under this subsection by virtue of section 432"
+  },
+  {
+   "requirement": "Sums subject to section 67D must secondly be applied in making any payments directed by the magistrates' court or the Crown Court.",
+   "quote": "second, they must be applied in making any payments directed by the magistrates' court or the Crown Court"
+  },
+  {
+   "requirement": "Sums subject to section 67D must thirdly be paid to the appropriate designated officer on account of the amount payable under the confiscation order.",
+   "quote": "third, they must be paid to the appropriate designated officer on account of the amount payable under the confiscation order"
+  },
+  {
+   "requirement": "If the amount payable under the confiscation order has been fully paid and any sums remain in the appropriate officer's hands, the appropriate officer must distribute them among such persons who held (or hold) interests in the property represented by the proceeds and in such proportions as the magistrates' court or the Crown Court directs.",
+   "quote": "If the amount payable under the confiscation order has been fully paid and any sums remain in the appropriate officer's hands, the appropriate officer must distribute them— (a) among such persons who held (or hold) interests in the property represented by the proceeds as the magistrates' court or the Crown Court directs, and (b) in such proportions as it directs"
+  },
+  {
+   "requirement": "Before making a direction under subsection (3), the court must give persons who held (or hold) interests in the property a reasonable opportunity to make representations to it.",
+   "quote": "Before making a direction under subsection (3) the court must give persons who held (or hold) interests in the property a reasonable opportunity to make representations to it"
+  },
+  {
+   "requirement": "If the magistrates' court has made a direction under subsection (2)(b) or (3) in respect of the proceeds of realisation of any property, the Crown Court may not make a direction under either of those provisions in respect of the proceeds of realisation of that property, and vice versa.",
+   "quote": "If the magistrates' court has made a direction under subsection (2)(b) or (3) in respect of the proceeds of realisation of any property, the Crown Court may not make a direction under either of those provisions in respect of the proceeds of realisation of that property; and vice versa"
+  },
+  {
+   "requirement": "In section 67D, the term 'appropriate officer' has the same meaning as in section 41A.",
+   "quote": "“appropriate officer” has the same meaning as in section 41A"
+  },
+  {
+   "requirement": "In section 67D, the term 'appropriate designated officer' means the designated officer for the magistrates' court which, by virtue of section 35, is responsible for enforcing the confiscation order as if it were a fine.",
+   "quote": "“appropriate designated officer” means the designated officer for the magistrates' court which, by virtue of section 35, is responsible for enforcing the confiscation order as if it were a fine"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

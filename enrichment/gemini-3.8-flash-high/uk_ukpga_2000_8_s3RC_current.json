@@ -1,0 +1,131 @@
+{
+ "key": "uk/ukpga/2000/8/s3RC@current",
+ "section": "uk/ukpga/2000/8/s3RC",
+ "version": "current",
+ "source_sha256": "847b670291ff6c700183b52e60d2ec6ec3211ff5832b86bdcb0dc138af2c4b79",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Treasury may by direction require a regulator to carry out a review of specified rules if the rules have been in force for at least 12 months, the Treasury consider the review to be in the public interest, and it does not appear to the Treasury that the regulator is carrying out or proposing an effective review.",
+    "quote": "The Treasury may by direction require a regulator to carry out a review of specified rules"
+   },
+   {
+    "requirement": "The Treasury's power to require a regulator to review specified rules applies only to rules falling within section 3RA(1).",
+    "quote": "Subsection (1) only applies to rules falling within section 3RA(1)."
+   },
+   {
+    "requirement": "The Treasury must consult the regulator concerned before giving a direction requiring a review of specified rules.",
+    "quote": "The Treasury must consult the regulator concerned before giving a direction under subsection (1)."
+   },
+   {
+    "requirement": "In exercising the power to require a review, the Treasury must have regard to the desirability of minimising any adverse effect that carrying out the review may have on the regulator's exercise of any of its other functions.",
+    "quote": "the Treasury must have regard to the desirability of minimising any adverse effect that the carrying out of the review may have on the exercise by the regulator of any of its other functions"
+   },
+   {
+    "requirement": "A direction requiring a review may specify the period within which the review must be carried out.",
+    "quote": "specify the period within which a review must be carried out"
+   },
+   {
+    "requirement": "A direction requiring a review may determine the scope and conduct of the review.",
+    "quote": "determine the scope and conduct of a review"
+   },
+   {
+    "requirement": "A direction requiring a review may require the provision of interim reports during the carrying out of the review.",
+    "quote": "require the provision of interim reports during the carrying out of a review"
+   },
+   {
+    "requirement": "A direction determining the scope and conduct of a review may include a requirement for the review to be carried out by an independent person appointed by the regulator.",
+    "quote": "for a review to be carried out by a person appointed by the regulator who is independent of the regulator"
+   },
+   {
+    "requirement": "A direction determining the scope and conduct of a review may require that an independent appointment be made only with the approval of the Treasury.",
+    "quote": "for any such appointment to be made only with the approval of the Treasury"
+   },
+   {
+    "requirement": "As soon as practicable after giving a direction requiring a review, the Treasury must lay a copy of the direction before Parliament and publish it in such manner as the Treasury think fit.",
+    "quote": "As soon as practicable after giving a direction under subsection (1) the Treasury must— (a) lay before Parliament a copy of the direction, and (b) publish the direction in such manner as the Treasury think fit."
+   },
+   {
+    "requirement": "The Treasury is not required to lay before Parliament or publish a direction if the Treasury consider that publication of the direction would be against the public interest.",
+    "quote": "Subsection (7) does not apply where the Treasury consider that publication of the direction would be against the public interest."
+   },
+   {
+    "requirement": "A direction requiring a review may be varied or revoked by the giving of a further direction.",
+    "quote": "A direction under subsection (1) may be varied or revoked by the giving of a further direction."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period the specified rules must have been in force before the Treasury may direct a review",
+    "value": "12 months",
+    "quote": "the rules have been in force for at least 12 months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Treasury may by direction require a regulator to carry out a review of specified rules if the rules have been in force for at least 12 months, the Treasury consider the review to be in the public interest, and it does not appear to the Treasury that the regulator is carrying out or proposing an effective review.",
+   "quote": "The Treasury may by direction require a regulator to carry out a review of specified rules"
+  },
+  {
+   "requirement": "The Treasury's power to require a regulator to review specified rules applies only to rules falling within section 3RA(1).",
+   "quote": "Subsection (1) only applies to rules falling within section 3RA(1)."
+  },
+  {
+   "requirement": "The Treasury must consult the regulator concerned before giving a direction requiring a review of specified rules.",
+   "quote": "The Treasury must consult the regulator concerned before giving a direction under subsection (1)."
+  },
+  {
+   "requirement": "In exercising the power to require a review, the Treasury must have regard to the desirability of minimising any adverse effect that carrying out the review may have on the regulator's exercise of any of its other functions.",
+   "quote": "the Treasury must have regard to the desirability of minimising any adverse effect that the carrying out of the review may have on the exercise by the regulator of any of its other functions"
+  },
+  {
+   "requirement": "A direction requiring a review may specify the period within which the review must be carried out.",
+   "quote": "specify the period within which a review must be carried out"
+  },
+  {
+   "requirement": "A direction requiring a review may determine the scope and conduct of the review.",
+   "quote": "determine the scope and conduct of a review"
+  },
+  {
+   "requirement": "A direction requiring a review may require the provision of interim reports during the carrying out of the review.",
+   "quote": "require the provision of interim reports during the carrying out of a review"
+  },
+  {
+   "requirement": "A direction determining the scope and conduct of a review may include a requirement for the review to be carried out by an independent person appointed by the regulator.",
+   "quote": "for a review to be carried out by a person appointed by the regulator who is independent of the regulator"
+  },
+  {
+   "requirement": "A direction determining the scope and conduct of a review may require that an independent appointment be made only with the approval of the Treasury.",
+   "quote": "for any such appointment to be made only with the approval of the Treasury"
+  },
+  {
+   "requirement": "As soon as practicable after giving a direction requiring a review, the Treasury must lay a copy of the direction before Parliament and publish it in such manner as the Treasury think fit.",
+   "quote": "As soon as practicable after giving a direction under subsection (1) the Treasury must— (a) lay before Parliament a copy of the direction, and (b) publish the direction in such manner as the Treasury think fit."
+  },
+  {
+   "requirement": "The Treasury is not required to lay before Parliament or publish a direction if the Treasury consider that publication of the direction would be against the public interest.",
+   "quote": "Subsection (7) does not apply where the Treasury consider that publication of the direction would be against the public interest."
+  },
+  {
+   "requirement": "A direction requiring a review may be varied or revoked by the giving of a further direction.",
+   "quote": "A direction under subsection (1) may be varied or revoked by the giving of a further direction."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period the specified rules must have been in force before the Treasury may direct a review",
+   "value": "12 months",
+   "quote": "the rules have been in force for at least 12 months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

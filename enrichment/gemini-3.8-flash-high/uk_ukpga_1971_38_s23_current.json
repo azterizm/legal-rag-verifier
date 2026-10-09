@@ -1,0 +1,171 @@
+{
+ "key": "uk/ukpga/1971/38/s23@current",
+ "section": "uk/ukpga/1971/38/s23",
+ "version": "current",
+ "source_sha256": "954a9ec337b607ff747b104c8c47b9d04309e6d0661495a686a138a1455f9231",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A constable or a person authorised by a general or special order of the Secretary of State (or in Northern Ireland either of the Secretary of State or the Ministry of Home Affairs for Northern Ireland) has the power, for the execution of the Act, to enter the premises of a person carrying on business as a producer or supplier of any controlled drugs.",
+    "quote": "power to enter the premises of a person carrying on business as a producer or supplier of any controlled drugs"
+   },
+   {
+    "requirement": "A constable or authorised person has the power to demand production of and inspect any books or documents relating to dealings in controlled drugs and to inspect any stocks of controlled drugs.",
+    "quote": "demand the production of, and to inspect, any books or documents relating to dealings in any such drugs and to inspect any stocks of any such drugs"
+   },
+   {
+    "requirement": "A constable who has reasonable grounds to suspect that a person possesses a controlled drug in contravention of the Act or of regulations or orders made under it may search that person and detain that person for the purpose of searching them.",
+    "quote": "search that person, and detain him for the purpose of searching him"
+   },
+   {
+    "requirement": "A constable who has reasonable grounds to suspect that a person possesses a controlled drug in contravention of the Act or regulations or orders may search any vehicle or vessel suspected of containing the drug and may require the person in control of it to stop it.",
+    "quote": "search any vehicle or vessel in which the constable suspects that the drug may be found, and for that purpose require the person in control of the vehicle or vessel to stop it"
+   },
+   {
+    "requirement": "A constable carrying out a search under subsection (2) may seize and detain, for the purposes of proceedings under the Act, anything found that appears to the constable to be evidence of an offence under the Act.",
+    "quote": "seize and detain, for the purposes of proceedings under this Act, anything found in the course of the search which appears to the constable to be evidence of an offence under this Act"
+   },
+   {
+    "requirement": "For the purposes of vehicle and vessel searches under subsection (2), a vessel includes a hovercraft within the meaning of the Hovercraft Act 1968.",
+    "quote": "“vessel” includes a hovercraft within the meaning of the Hovercraft Act 1968"
+   },
+   {
+    "requirement": "Subsection (2) does not prejudice any separate power of search or power to seize or detain property exercisable by a constable apart from that subsection.",
+    "quote": "nothing in this subsection shall prejudice any power of search or any power to seize or detain property which is exercisable by a constable apart from this subsection"
+   },
+   {
+    "requirement": "A justice of the peace (or in Scotland a justice of the peace, magistrate, or sheriff) may grant a warrant if satisfied by information on oath that there is reasonable ground for suspecting controlled drugs are unlawfully possessed by a person on any premises.",
+    "quote": "satisfied by information on oath that there is reasonable ground for suspecting— (a) that any controlled drugs are, in contravention of this Act or of any regulations or orders made thereunder, in the possession of a person on any premises"
+   },
+   {
+    "requirement": "A justice of the peace (or in Scotland a justice of the peace, magistrate, or sheriff) may grant a warrant if satisfied by information on oath that a document relating to or connected with an offence (or an intended dealing that would be an offence) under the Act is possessed by a person on any premises.",
+    "quote": "a document directly or indirectly relating to, or connected with, a transaction or dealing which was, or an intended transaction or dealing which would if carried out be, an offence under this Act"
+   },
+   {
+    "requirement": "A justice of the peace (or in Scotland a justice of the peace, magistrate, or sheriff) may grant a warrant if satisfied by information on oath that a document relating to or connected with a transaction or dealing carried out or intended outside the United Kingdom that constitutes an offence against a corresponding law in force there is possessed by a person on any premises.",
+    "quote": "an offence against the provisions of a corresponding law in force in that place, is in the possession of a person on any premises"
+   },
+   {
+    "requirement": "A warrant granted under subsection (3) authorises a constable to enter named premises (by force if necessary) at any time or times within one month from the warrant date and search the premises and any persons found therein.",
+    "quote": "enter, if need be by force, the premises named in the warrant, and to search the premises and any persons found therein"
+   },
+   {
+    "requirement": "A constable executing a search warrant under subsection (3) may seize and detain drugs found if there is reasonable ground to suspect an offence under the Act was committed in relation to them, or seize and detain documents matching subsection (3)(b).",
+    "quote": "to seize and detain those drugs or that document, as the case may be"
+   },
+   {
+    "requirement": "The powers conferred by subsection (1) are also exercisable for the execution of Part II of the Criminal Justice (International Co-operation) Act 1990 or Article 47 of the Proceeds of Crime (Northern Ireland) Order 1996.",
+    "quote": "powers conferred by subsection (1) above shall be exercisable also for the purposes of the execution of Part II of the Criminal Justice (International Co-operation) Act 1990"
+   },
+   {
+    "requirement": "Subsection (3), excluding paragraph (a), applies to offences under section 12 or 13 of the Criminal Justice (International Co-operation) Act 1990, treating references to controlled drugs as references to scheduled substances within the meaning of Part II of that Act.",
+    "quote": "subsection (3) above (excluding paragraph (a)) shall apply also to offences under section 12 or 13 of that Act of 1990, taking references in those provisions to controlled drugs as references to scheduled substances within the meaning of that Part"
+   },
+   {
+    "requirement": "A person commits an offence if that person intentionally obstructs any person who is exercising powers under section 23.",
+    "quote": "intentionally obstructs a person in the exercise of his powers under this section"
+   },
+   {
+    "requirement": "A person commits an offence if that person conceals any relevant books, documents, stocks, or drugs from a person exercising powers under subsection (1).",
+    "quote": "conceals from a person acting in the exercise of his powers under subsection (1) above any such books, documents, stocks or drugs"
+   },
+   {
+    "requirement": "A person commits an offence if that person fails without reasonable excuse (the burden of proving which lies on that person) to produce books or documents demanded by a person exercising powers under subsection (1).",
+    "quote": "without reasonable excuse (proof of which shall lie on him) fails to produce any such books or documents as are so mentioned where their production is demanded by a person in the exercise of his power under that subsection"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The validity period of a search warrant from the date of the warrant during which a constable is authorised to enter and search the premises",
+    "value": "one month",
+    "quote": "within one month from the date of the warrant"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A constable or a person authorised by a general or special order of the Secretary of State (or in Northern Ireland either of the Secretary of State or the Ministry of Home Affairs for Northern Ireland) has the power, for the execution of the Act, to enter the premises of a person carrying on business as a producer or supplier of any controlled drugs.",
+   "quote": "power to enter the premises of a person carrying on business as a producer or supplier of any controlled drugs"
+  },
+  {
+   "requirement": "A constable or authorised person has the power to demand production of and inspect any books or documents relating to dealings in controlled drugs and to inspect any stocks of controlled drugs.",
+   "quote": "demand the production of, and to inspect, any books or documents relating to dealings in any such drugs and to inspect any stocks of any such drugs"
+  },
+  {
+   "requirement": "A constable who has reasonable grounds to suspect that a person possesses a controlled drug in contravention of the Act or of regulations or orders made under it may search that person and detain that person for the purpose of searching them.",
+   "quote": "search that person, and detain him for the purpose of searching him"
+  },
+  {
+   "requirement": "A constable who has reasonable grounds to suspect that a person possesses a controlled drug in contravention of the Act or regulations or orders may search any vehicle or vessel suspected of containing the drug and may require the person in control of it to stop it.",
+   "quote": "search any vehicle or vessel in which the constable suspects that the drug may be found, and for that purpose require the person in control of the vehicle or vessel to stop it"
+  },
+  {
+   "requirement": "A constable carrying out a search under subsection (2) may seize and detain, for the purposes of proceedings under the Act, anything found that appears to the constable to be evidence of an offence under the Act.",
+   "quote": "seize and detain, for the purposes of proceedings under this Act, anything found in the course of the search which appears to the constable to be evidence of an offence under this Act"
+  },
+  {
+   "requirement": "For the purposes of vehicle and vessel searches under subsection (2), a vessel includes a hovercraft within the meaning of the Hovercraft Act 1968.",
+   "quote": "“vessel” includes a hovercraft within the meaning of the Hovercraft Act 1968"
+  },
+  {
+   "requirement": "Subsection (2) does not prejudice any separate power of search or power to seize or detain property exercisable by a constable apart from that subsection.",
+   "quote": "nothing in this subsection shall prejudice any power of search or any power to seize or detain property which is exercisable by a constable apart from this subsection"
+  },
+  {
+   "requirement": "A justice of the peace (or in Scotland a justice of the peace, magistrate, or sheriff) may grant a warrant if satisfied by information on oath that there is reasonable ground for suspecting controlled drugs are unlawfully possessed by a person on any premises.",
+   "quote": "satisfied by information on oath that there is reasonable ground for suspecting— (a) that any controlled drugs are, in contravention of this Act or of any regulations or orders made thereunder, in the possession of a person on any premises"
+  },
+  {
+   "requirement": "A justice of the peace (or in Scotland a justice of the peace, magistrate, or sheriff) may grant a warrant if satisfied by information on oath that a document relating to or connected with an offence (or an intended dealing that would be an offence) under the Act is possessed by a person on any premises.",
+   "quote": "a document directly or indirectly relating to, or connected with, a transaction or dealing which was, or an intended transaction or dealing which would if carried out be, an offence under this Act"
+  },
+  {
+   "requirement": "A justice of the peace (or in Scotland a justice of the peace, magistrate, or sheriff) may grant a warrant if satisfied by information on oath that a document relating to or connected with a transaction or dealing carried out or intended outside the United Kingdom that constitutes an offence against a corresponding law in force there is possessed by a person on any premises.",
+   "quote": "an offence against the provisions of a corresponding law in force in that place, is in the possession of a person on any premises"
+  },
+  {
+   "requirement": "A warrant granted under subsection (3) authorises a constable to enter named premises (by force if necessary) at any time or times within one month from the warrant date and search the premises and any persons found therein.",
+   "quote": "enter, if need be by force, the premises named in the warrant, and to search the premises and any persons found therein"
+  },
+  {
+   "requirement": "A constable executing a search warrant under subsection (3) may seize and detain drugs found if there is reasonable ground to suspect an offence under the Act was committed in relation to them, or seize and detain documents matching subsection (3)(b).",
+   "quote": "to seize and detain those drugs or that document, as the case may be"
+  },
+  {
+   "requirement": "The powers conferred by subsection (1) are also exercisable for the execution of Part II of the Criminal Justice (International Co-operation) Act 1990 or Article 47 of the Proceeds of Crime (Northern Ireland) Order 1996.",
+   "quote": "powers conferred by subsection (1) above shall be exercisable also for the purposes of the execution of Part II of the Criminal Justice (International Co-operation) Act 1990"
+  },
+  {
+   "requirement": "Subsection (3), excluding paragraph (a), applies to offences under section 12 or 13 of the Criminal Justice (International Co-operation) Act 1990, treating references to controlled drugs as references to scheduled substances within the meaning of Part II of that Act.",
+   "quote": "subsection (3) above (excluding paragraph (a)) shall apply also to offences under section 12 or 13 of that Act of 1990, taking references in those provisions to controlled drugs as references to scheduled substances within the meaning of that Part"
+  },
+  {
+   "requirement": "A person commits an offence if that person intentionally obstructs any person who is exercising powers under section 23.",
+   "quote": "intentionally obstructs a person in the exercise of his powers under this section"
+  },
+  {
+   "requirement": "A person commits an offence if that person conceals any relevant books, documents, stocks, or drugs from a person exercising powers under subsection (1).",
+   "quote": "conceals from a person acting in the exercise of his powers under subsection (1) above any such books, documents, stocks or drugs"
+  },
+  {
+   "requirement": "A person commits an offence if that person fails without reasonable excuse (the burden of proving which lies on that person) to produce books or documents demanded by a person exercising powers under subsection (1).",
+   "quote": "without reasonable excuse (proof of which shall lie on him) fails to produce any such books or documents as are so mentioned where their production is demanded by a person in the exercise of his power under that subsection"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The validity period of a search warrant from the date of the warrant during which a constable is authorised to enter and search the premises",
+   "value": "one month",
+   "quote": "within one month from the date of the warrant"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 17,
+  "elements_verified": 17,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

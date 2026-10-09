@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1974/53/s10A@current",
+ "section": "uk/ukpga/1974/53/s10A",
+ "version": "current",
+ "source_sha256": "15cced4ec7aa35c1da3d923696792436f91f03b41f084c4403061806d5bc3962",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any power exercisable by the Scottish Ministers to make an order under the Rehabilitation of Offenders Act 1974 includes the power to make different provision for different purposes.",
+    "quote": "to make different provision for different purposes"
+   },
+   {
+    "requirement": "Any power exercisable by the Scottish Ministers to make an order under the Rehabilitation of Offenders Act 1974 includes the power to make incidental, supplementary, consequential, transitional, transitory or saving provision.",
+    "quote": "to make incidental, supplementary, consequential, transitional, transitory or saving provision"
+   },
+   {
+    "requirement": "To the extent that the power to make an order under section 5(11) is exercisable by the Scottish Ministers, that power includes the power exercisable by the Scottish Ministers to make consequential provision modifying any enactment, including the Rehabilitation of Offenders Act 1974.",
+    "quote": "that power includes power exercisable by the Scottish Ministers to make consequential provision modifying any enactment (including this Act)"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any power exercisable by the Scottish Ministers to make an order under the Rehabilitation of Offenders Act 1974 includes the power to make different provision for different purposes.",
+   "quote": "to make different provision for different purposes"
+  },
+  {
+   "requirement": "Any power exercisable by the Scottish Ministers to make an order under the Rehabilitation of Offenders Act 1974 includes the power to make incidental, supplementary, consequential, transitional, transitory or saving provision.",
+   "quote": "to make incidental, supplementary, consequential, transitional, transitory or saving provision"
+  },
+  {
+   "requirement": "To the extent that the power to make an order under section 5(11) is exercisable by the Scottish Ministers, that power includes the power exercisable by the Scottish Ministers to make consequential provision modifying any enactment, including the Rehabilitation of Offenders Act 1974.",
+   "quote": "that power includes power exercisable by the Scottish Ministers to make consequential provision modifying any enactment (including this Act)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1988/50/s74@current",
+ "section": "uk/ukpga/1988/50/s74",
+ "version": "current",
+ "source_sha256": "45ce169437e33efca5244f40070b00a4a4370f5a74a4ed785a95beccf28f9ad9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State may by order provide for the transfer from a local housing authority to a housing action trust of all or any of the authority's local authority housing situated in the designated area.",
+    "quote": "The Secretary of State may by order provide for the transfer from a local housing authority to a housing action trust of— (a) all or any of the authority’s local authority housing situated in the designated area"
+   },
+   {
+    "requirement": "The Secretary of State may by order provide for the transfer from a local housing authority to a housing action trust of any other land held or provided in connection with the authority's local authority housing situated in the designated area.",
+    "quote": "any other land held or provided in connection with that local authority housing"
+   },
+   {
+    "requirement": "The Secretary of State may by order provide for the transfer to a housing action trust of land held for whatever purpose by a local authority if it is situated in the designated area and, in the opinion of the Secretary of State, the trust requires it for the purposes of its functions.",
+    "quote": "if in the opinion of the Secretary of State a housing action trust requires for the purposes of its functions any land which, though not falling within that subsection, is situated in the designated area and held (for whatever purpose) by a local authority, the Secretary of State may by order provide for the transfer of that land to the trust"
+   },
+   {
+    "requirement": "The Secretary of State may by order transfer from a local housing authority or other local authority to a housing action trust so much as appears to the Secretary of State to be appropriate of any property held or used by the authority in connection with transferred housing or land.",
+    "quote": "The Secretary of State may by order transfer from a local housing authority or other local authority to a housing action trust so much as appears to him to be appropriate of any property which is held or used by the authority in connection with any local authority housing or other land transferred to the trust"
+   },
+   {
+    "requirement": "For the purposes of transfers under section 74, property includes chattels of any description as well as rights and liabilities, whether arising by contract or otherwise.",
+    "quote": "for this purpose “property” includes chattels of any description and rights and liabilities, whether arising by contract or otherwise"
+   },
+   {
+    "requirement": "A transfer of local authority housing or other land or property under section 74 must be on such terms, including financial terms, as the Secretary of State thinks fit.",
+    "quote": "A transfer of any local authority housing or other land or property under the preceding provisions of this section shall be on such terms, including financial terms, as the Secretary of State thinks fit"
+   },
+   {
+    "requirement": "An order under section 74 may provide that rent or any other sum arising under a tenancy of transferred housing or land falling due before the date of transfer continues to be recoverable by the local housing authority or local authority to the exclusion of the trust and any other person in whom the reversion vests, notwithstanding section 141 of the Law of Property Act 1925.",
+    "quote": "an order under this section may provide that, notwithstanding anything in section 141 of the Law of Property Act 1925 (rent and benefit of lessee’s covenants to run with the reversion), any rent or other sum which— (a) arises under a tenancy of any local authority housing or other land transferred to the housing action trust under subsection (1) or subsection (2) above, and (b) falls due before the date of the transfer, shall continue to be recoverable by the local housing authority or, as the case may be, the local authority to the exclusion of the trust and of any other person in whom the reversion on the tenancy may become vested"
+   },
+   {
+    "requirement": "The financial terms of a transfer may include provision for payments to be made by a local authority as well as or instead of payments made to a local authority.",
+    "quote": "the financial terms referred to in that subsection may include provision for payments by a local authority (as well as or instead of payments to a local authority)"
+   },
+   {
+    "requirement": "A transfer of any local authority housing or other land or property under section 74 does not give rise to any right to compensation.",
+    "quote": "the transfer from a local housing authority or other local authority of any local authority housing or other land or property by virtue of this section shall not be taken to give rise to any right to compensation"
+   },
+   {
+    "requirement": "Payments made by a local authority under the financial terms of a transfer order are capital expenditure for the purposes of Chapter 1 of Part 1 of the Local Government Act 2003.",
+    "quote": "payments made by a local authority as mentioned in subsection (5) above shall be capital expenditure for the purposes of Chapter 1 of Part 1 of the Local Government Act 2003 (capital finance)"
+   },
+   {
+    "requirement": "Unless the transfer order provides otherwise, payments made to a local authority under the financial terms of the order must be regarded for the purposes of section 9(1) of the Local Government Act 2003 as sums received by the authority in respect of the disposal by it of an interest in a capital asset.",
+    "quote": "unless the order otherwise provides, payments made to a local authority as mentioned in subsection (5) above shall be regarded for the purposes of section 9(1) of that Act as sums received by the authority in respect of the disposal by it of an interest in a capital asset"
+   },
+   {
+    "requirement": "Any power of the Secretary of State to make an order under section 74 is exercisable by statutory instrument subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "Any power to make an order under this section shall be exercisable by statutory instrument which shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+   },
+   {
+    "requirement": "In section 74, a local authority means a local housing authority, a county council, the Inner London Education Authority, an authority established by order under section 10(1) of the Local Government Act 1985, a joint authority under Part IV of that Act, a residuary body under Part VII of that Act, an economic prosperity board under section 88 of the Local Democracy, Economic Development and Construction Act 2009, a combined authority under section 103 of that Act, a fire and rescue authority created under section 4A of the Fire and Rescue Services Act 2004, a combined county authority established under section 9(1) of the Levelling-up and Regeneration Act 2023, or the London Fire Commissioner.",
+    "quote": "In this section “local authority” means any of the following— (a) a local housing authority; (b) the council of a county; (c) the Inner London Education Authority; (d) an authority established by an order under section 10(1) of the Local Government Act 1985 (waste disposal); (e) a joint authority established by Part IV of that Act; (f) a residuary body established by Part VII of that Act; (fa) an economic prosperity board established under section 88 of the Local Democracy, Economic Development and Construction Act 2009; (fb) a combined authority established under section 103 of that Act; (fc) a fire and rescue authority created by an order under section 4A of the Fire and Rescue Services Act 2004; (fd) a combined county authority established under section 9(1) of the Levelling-up and Regeneration Act 2023; (g) the London Fire Commissioner"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State may by order provide for the transfer from a local housing authority to a housing action trust of all or any of the authority's local authority housing situated in the designated area.",
+   "quote": "The Secretary of State may by order provide for the transfer from a local housing authority to a housing action trust of— (a) all or any of the authority’s local authority housing situated in the designated area"
+  },
+  {
+   "requirement": "The Secretary of State may by order provide for the transfer from a local housing authority to a housing action trust of any other land held or provided in connection with the authority's local authority housing situated in the designated area.",
+   "quote": "any other land held or provided in connection with that local authority housing"
+  },
+  {
+   "requirement": "The Secretary of State may by order provide for the transfer to a housing action trust of land held for whatever purpose by a local authority if it is situated in the designated area and, in the opinion of the Secretary of State, the trust requires it for the purposes of its functions.",
+   "quote": "if in the opinion of the Secretary of State a housing action trust requires for the purposes of its functions any land which, though not falling within that subsection, is situated in the designated area and held (for whatever purpose) by a local authority, the Secretary of State may by order provide for the transfer of that land to the trust"
+  },
+  {
+   "requirement": "The Secretary of State may by order transfer from a local housing authority or other local authority to a housing action trust so much as appears to the Secretary of State to be appropriate of any property held or used by the authority in connection with transferred housing or land.",
+   "quote": "The Secretary of State may by order transfer from a local housing authority or other local authority to a housing action trust so much as appears to him to be appropriate of any property which is held or used by the authority in connection with any local authority housing or other land transferred to the trust"
+  },
+  {
+   "requirement": "For the purposes of transfers under section 74, property includes chattels of any description as well as rights and liabilities, whether arising by contract or otherwise.",
+   "quote": "for this purpose “property” includes chattels of any description and rights and liabilities, whether arising by contract or otherwise"
+  },
+  {
+   "requirement": "A transfer of local authority housing or other land or property under section 74 must be on such terms, including financial terms, as the Secretary of State thinks fit.",
+   "quote": "A transfer of any local authority housing or other land or property under the preceding provisions of this section shall be on such terms, including financial terms, as the Secretary of State thinks fit"
+  },
+  {
+   "requirement": "An order under section 74 may provide that rent or any other sum arising under a tenancy of transferred housing or land falling due before the date of transfer continues to be recoverable by the local housing authority or local authority to the exclusion of the trust and any other person in whom the reversion vests, notwithstanding section 141 of the Law of Property Act 1925.",
+   "quote": "an order under this section may provide that, notwithstanding anything in section 141 of the Law of Property Act 1925 (rent and benefit of lessee’s covenants to run with the reversion), any rent or other sum which— (a) arises under a tenancy of any local authority housing or other land transferred to the housing action trust under subsection (1) or subsection (2) above, and (b) falls due before the date of the transfer, shall continue to be recoverable by the local housing authority or, as the case may be, the local authority to the exclusion of the trust and of any other person in whom the reversion on the tenancy may become vested"
+  },
+  {
+   "requirement": "The financial terms of a transfer may include provision for payments to be made by a local authority as well as or instead of payments made to a local authority.",
+   "quote": "the financial terms referred to in that subsection may include provision for payments by a local authority (as well as or instead of payments to a local authority)"
+  },
+  {
+   "requirement": "A transfer of any local authority housing or other land or property under section 74 does not give rise to any right to compensation.",
+   "quote": "the transfer from a local housing authority or other local authority of any local authority housing or other land or property by virtue of this section shall not be taken to give rise to any right to compensation"
+  },
+  {
+   "requirement": "Payments made by a local authority under the financial terms of a transfer order are capital expenditure for the purposes of Chapter 1 of Part 1 of the Local Government Act 2003.",
+   "quote": "payments made by a local authority as mentioned in subsection (5) above shall be capital expenditure for the purposes of Chapter 1 of Part 1 of the Local Government Act 2003 (capital finance)"
+  },
+  {
+   "requirement": "Unless the transfer order provides otherwise, payments made to a local authority under the financial terms of the order must be regarded for the purposes of section 9(1) of the Local Government Act 2003 as sums received by the authority in respect of the disposal by it of an interest in a capital asset.",
+   "quote": "unless the order otherwise provides, payments made to a local authority as mentioned in subsection (5) above shall be regarded for the purposes of section 9(1) of that Act as sums received by the authority in respect of the disposal by it of an interest in a capital asset"
+  },
+  {
+   "requirement": "Any power of the Secretary of State to make an order under section 74 is exercisable by statutory instrument subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "Any power to make an order under this section shall be exercisable by statutory instrument which shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+  },
+  {
+   "requirement": "In section 74, a local authority means a local housing authority, a county council, the Inner London Education Authority, an authority established by order under section 10(1) of the Local Government Act 1985, a joint authority under Part IV of that Act, a residuary body under Part VII of that Act, an economic prosperity board under section 88 of the Local Democracy, Economic Development and Construction Act 2009, a combined authority under section 103 of that Act, a fire and rescue authority created under section 4A of the Fire and Rescue Services Act 2004, a combined county authority established under section 9(1) of the Levelling-up and Regeneration Act 2023, or the London Fire Commissioner.",
+   "quote": "In this section “local authority” means any of the following— (a) a local housing authority; (b) the council of a county; (c) the Inner London Education Authority; (d) an authority established by an order under section 10(1) of the Local Government Act 1985 (waste disposal); (e) a joint authority established by Part IV of that Act; (f) a residuary body established by Part VII of that Act; (fa) an economic prosperity board established under section 88 of the Local Democracy, Economic Development and Construction Act 2009; (fb) a combined authority established under section 103 of that Act; (fc) a fire and rescue authority created by an order under section 4A of the Fire and Rescue Services Act 2004; (fd) a combined county authority established under section 9(1) of the Levelling-up and Regeneration Act 2023; (g) the London Fire Commissioner"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

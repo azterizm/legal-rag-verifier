@@ -1,0 +1,55 @@
+{
+ "key": "uk/ukpga/2003/1/s406@current",
+ "section": "uk/ukpga/2003/1/s406",
+ "version": "current",
+ "source_sha256": "014a17c6ec4e2d2915b19d776db03d22feef723a550f30af4f8b7f330c15d0d0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "This Chapter does not apply to a payment or other benefit provided in connection with the termination of an employee's employment by death.",
+    "quote": "does not apply to a payment or other benefit provided— (a) in connection with the termination of employment by the death of an employee"
+   },
+   {
+    "requirement": "This Chapter does not apply to a payment or other benefit provided on account of an employee's injury or disability.",
+    "quote": "on account of injury to, or disability of, an employee"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the term 'injury' includes psychiatric injury.",
+    "quote": "“injury” in subsection (1) includes psychiatric injury"
+   },
+   {
+    "requirement": "For the purposes of subsection (1), the term 'injury' does not include injured feelings.",
+    "quote": "it does not include injured feelings"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "This Chapter does not apply to a payment or other benefit provided in connection with the termination of an employee's employment by death.",
+   "quote": "does not apply to a payment or other benefit provided— (a) in connection with the termination of employment by the death of an employee"
+  },
+  {
+   "requirement": "This Chapter does not apply to a payment or other benefit provided on account of an employee's injury or disability.",
+   "quote": "on account of injury to, or disability of, an employee"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the term 'injury' includes psychiatric injury.",
+   "quote": "“injury” in subsection (1) includes psychiatric injury"
+  },
+  {
+   "requirement": "For the purposes of subsection (1), the term 'injury' does not include injured feelings.",
+   "quote": "it does not include injured feelings"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 4,
+  "elements_verified": 4,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

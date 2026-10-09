@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2002/9/s66@current",
+ "section": "uk/ukpga/2002/9/s66",
+ "version": "current",
+ "source_sha256": "3bc6441f4219725c27a6315551d9fe3a38814480a321f189f80b5a2017afdffa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Any person is permitted to inspect and make copies of, or of any part of, the register of title.",
+    "quote": "Any person may inspect and make copies of, or of any part of— (a) the register of title"
+   },
+   {
+    "requirement": "Any person is permitted to inspect and make copies of, or of any part of, any document kept by the registrar that is referred to in the register of title.",
+    "quote": "any document kept by the registrar which is referred to in the register of title"
+   },
+   {
+    "requirement": "Any person is permitted to inspect and make copies of, or of any part of, any other document kept by the registrar that relates to an application made to the registrar.",
+    "quote": "any other document kept by the registrar which relates to an application to him"
+   },
+   {
+    "requirement": "Any person is permitted to inspect and make copies of, or of any part of, the register of cautions against first registration.",
+    "quote": "the register of cautions against first registration"
+   },
+   {
+    "requirement": "The statutory right to inspect and make copies is subject to rules.",
+    "quote": "The right under subsection (1) is subject to rules"
+   },
+   {
+    "requirement": "Rules may provide for exceptions to the right to inspect and make copies.",
+    "quote": "provide for exceptions to the right"
+   },
+   {
+    "requirement": "Rules may impose conditions on the exercise of the right to inspect and make copies, including conditions that require the payment of fees.",
+    "quote": "impose conditions on its exercise, including conditions requiring the payment of fees"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Any person is permitted to inspect and make copies of, or of any part of, the register of title.",
+   "quote": "Any person may inspect and make copies of, or of any part of— (a) the register of title"
+  },
+  {
+   "requirement": "Any person is permitted to inspect and make copies of, or of any part of, any document kept by the registrar that is referred to in the register of title.",
+   "quote": "any document kept by the registrar which is referred to in the register of title"
+  },
+  {
+   "requirement": "Any person is permitted to inspect and make copies of, or of any part of, any other document kept by the registrar that relates to an application made to the registrar.",
+   "quote": "any other document kept by the registrar which relates to an application to him"
+  },
+  {
+   "requirement": "Any person is permitted to inspect and make copies of, or of any part of, the register of cautions against first registration.",
+   "quote": "the register of cautions against first registration"
+  },
+  {
+   "requirement": "The statutory right to inspect and make copies is subject to rules.",
+   "quote": "The right under subsection (1) is subject to rules"
+  },
+  {
+   "requirement": "Rules may provide for exceptions to the right to inspect and make copies.",
+   "quote": "provide for exceptions to the right"
+  },
+  {
+   "requirement": "Rules may impose conditions on the exercise of the right to inspect and make copies, including conditions that require the payment of fees.",
+   "quote": "impose conditions on its exercise, including conditions requiring the payment of fees"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

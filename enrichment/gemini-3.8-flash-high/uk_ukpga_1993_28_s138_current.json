@@ -1,0 +1,81 @@
+{
+ "key": "uk/ukpga/1993/28/s138@current",
+ "section": "uk/ukpga/1993/28/s138",
+ "version": "current",
+ "source_sha256": "7a0160ba782fa7071f37a896cb97a6f234d68b5db6fc32cc0672c3a8dcf0d26f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Paragraph (b) of section 157(8) of the Local Government and Housing Act 1989 is substituted with text applying to so much of any contributions in respect of an expense incurred on or after 1st April 1989 and before 1st April 1990 as have not been made before 1st April 1990.",
+    "quote": "for paragraph (b) there shall be substituted the following paragraph— bso much of any contributions in respect of an expense incurred on or after 1st April 1989 and before 1st April 1990 as have not been made before 1st April 1990."
+   },
+   {
+    "requirement": "Section 138 of the Leasehold Reform, Housing and Urban Development Act 1993 is deemed to have come into force on 1st January 1993.",
+    "quote": "This section shall be deemed to have come into force on 1st January 1993."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the earliest date on which an expense must be incurred for the specified contributions",
+    "value": "1st April 1989",
+    "quote": "on or after 1st April 1989"
+   },
+   {
+    "what": "the date before which an expense must be incurred for the specified contributions",
+    "value": "1st April 1990",
+    "quote": "before 1st April 1990"
+   },
+   {
+    "what": "the date before which the specified contributions have not been made",
+    "value": "1st April 1990",
+    "quote": "not been made before 1st April 1990"
+   },
+   {
+    "what": "the deemed commencement date of section 138",
+    "value": "1st January 1993",
+    "quote": "come into force on 1st January 1993"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Paragraph (b) of section 157(8) of the Local Government and Housing Act 1989 is substituted with text applying to so much of any contributions in respect of an expense incurred on or after 1st April 1989 and before 1st April 1990 as have not been made before 1st April 1990.",
+   "quote": "for paragraph (b) there shall be substituted the following paragraph— bso much of any contributions in respect of an expense incurred on or after 1st April 1989 and before 1st April 1990 as have not been made before 1st April 1990."
+  },
+  {
+   "requirement": "Section 138 of the Leasehold Reform, Housing and Urban Development Act 1993 is deemed to have come into force on 1st January 1993.",
+   "quote": "This section shall be deemed to have come into force on 1st January 1993."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the earliest date on which an expense must be incurred for the specified contributions",
+   "value": "1st April 1989",
+   "quote": "on or after 1st April 1989"
+  },
+  {
+   "what": "the date before which an expense must be incurred for the specified contributions",
+   "value": "1st April 1990",
+   "quote": "before 1st April 1990"
+  },
+  {
+   "what": "the date before which the specified contributions have not been made",
+   "value": "1st April 1990",
+   "quote": "not been made before 1st April 1990"
+  },
+  {
+   "what": "the deemed commencement date of section 138",
+   "value": "1st January 1993",
+   "quote": "come into force on 1st January 1993"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 4
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "key": "uk/ukpga/2000/8/s137FBC@current",
+ "section": "uk/ukpga/2000/8/s137FBC",
+ "version": "current",
+ "source_sha256": "0275fcee0a19eca01326efe223589aa8a04ddfc060aa9075e20704a741844b33",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Financial Conduct Authority may make general rules requiring the provider of an FCA-regulated pension scheme to notify the Financial Conduct Authority if it intends for the scheme to be a consolidator scheme, or for an arrangement under the scheme to be a consolidator arrangement, for the purposes of Chapter 2 of Part 2 of the Pension Schemes Act 2026.",
+    "quote": "The FCA may make general rules under which the provider of an FCA-regulated pension scheme is required to notify the FCA"
+   },
+   {
+    "requirement": "If the Financial Conduct Authority makes rules under subsection (1), it must make general rules regulating pension schemes that have given and not withdrawn a notice of the kind mentioned in subsection (1).",
+    "quote": "make general rules regulating pension schemes that have given (and not withdrawn) a notice of the kind mentioned in subsection (1)"
+   },
+   {
+    "requirement": "If the Financial Conduct Authority makes rules under subsection (1), it must publish and maintain a list of FCA-regulated pension schemes, and arrangements under such schemes, in accordance with subsections (3) and (4).",
+    "quote": "publish and maintain a list of FCA-regulated pension schemes, and arrangements under such schemes, in accordance with subsections (3) and (4)"
+   },
+   {
+    "requirement": "Subject to subsection (4), the published list must include each FCA-regulated pension scheme and each arrangement under an FCA-regulated scheme for which the Financial Conduct Authority has received a notification under subsection (1).",
+    "quote": "The list must, subject to subsection (4), include each FCA-regulated pension scheme, and each arrangement under an FCA-regulated scheme, in relation to which the FCA has received a notice by virtue of subsection (1)."
+   },
+   {
+    "requirement": "A scheme or arrangement must not be included on the list if the provider of the scheme has withdrawn the notice relating to it.",
+    "quote": "the notice in relation to it has been withdrawn by the provider of the scheme"
+   },
+   {
+    "requirement": "A scheme or arrangement must not be included on the list if the Financial Conduct Authority has determined that it is unlikely that rules made under subsection (1) or (2)(a) will be complied with in relation to the scheme or arrangement within such period as the Financial Conduct Authority considers reasonable.",
+    "quote": "the FCA has determined that it is unlikely that rules made under subsection (1) or (2)(a) will be complied with in relation to the scheme or arrangement within such period as the FCA considers reasonable"
+   },
+   {
+    "requirement": "When determining what provision to include in rules under subsection (2)(a), the Financial Conduct Authority must have regard to any provision contained in small pots regulations by virtue of section 29 of the Pension Schemes Act 2026.",
+    "quote": "the FCA must have regard to any provision contained in small pots regulations by virtue of section 29 of the Pension Schemes Act 2026"
+   },
+   {
+    "requirement": "For the purposes of section 137FBC, 'pension scheme' has the meaning given by section 1(5) of the Pension Schemes Act 1993.",
+    "quote": "“pension scheme” has the meaning given by section 1(5) of the Pension Schemes Act 1993"
+   },
+   {
+    "requirement": "For the purposes of section 137FBC, 'provider' in relation to an FCA-regulated pension scheme means the authorised person by whom the operation of the scheme is carried on in the United Kingdom.",
+    "quote": "“provider”, in relation to an FCA-regulated pension scheme, means the person referred to in subsection (7)(b)."
+   },
+   {
+    "requirement": "A pension scheme is FCA-regulated if the operation of the scheme is a regulated activity and is carried on in the United Kingdom by an authorised person.",
+    "quote": "A pension scheme is “FCA-regulated” if the operation of the scheme— (a) is a regulated activity, and (b) is carried on in the United Kingdom by an authorised person."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period within which the Financial Conduct Authority determines it is unlikely rules will be complied with in relation to a scheme or arrangement",
+    "value": "such period as the FCA considers reasonable",
+    "quote": "within such period as the FCA considers reasonable"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Financial Conduct Authority may make general rules requiring the provider of an FCA-regulated pension scheme to notify the Financial Conduct Authority if it intends for the scheme to be a consolidator scheme, or for an arrangement under the scheme to be a consolidator arrangement, for the purposes of Chapter 2 of Part 2 of the Pension Schemes Act 2026.",
+   "quote": "The FCA may make general rules under which the provider of an FCA-regulated pension scheme is required to notify the FCA"
+  },
+  {
+   "requirement": "If the Financial Conduct Authority makes rules under subsection (1), it must make general rules regulating pension schemes that have given and not withdrawn a notice of the kind mentioned in subsection (1).",
+   "quote": "make general rules regulating pension schemes that have given (and not withdrawn) a notice of the kind mentioned in subsection (1)"
+  },
+  {
+   "requirement": "If the Financial Conduct Authority makes rules under subsection (1), it must publish and maintain a list of FCA-regulated pension schemes, and arrangements under such schemes, in accordance with subsections (3) and (4).",
+   "quote": "publish and maintain a list of FCA-regulated pension schemes, and arrangements under such schemes, in accordance with subsections (3) and (4)"
+  },
+  {
+   "requirement": "Subject to subsection (4), the published list must include each FCA-regulated pension scheme and each arrangement under an FCA-regulated scheme for which the Financial Conduct Authority has received a notification under subsection (1).",
+   "quote": "The list must, subject to subsection (4), include each FCA-regulated pension scheme, and each arrangement under an FCA-regulated scheme, in relation to which the FCA has received a notice by virtue of subsection (1)."
+  },
+  {
+   "requirement": "A scheme or arrangement must not be included on the list if the provider of the scheme has withdrawn the notice relating to it.",
+   "quote": "the notice in relation to it has been withdrawn by the provider of the scheme"
+  },
+  {
+   "requirement": "A scheme or arrangement must not be included on the list if the Financial Conduct Authority has determined that it is unlikely that rules made under subsection (1) or (2)(a) will be complied with in relation to the scheme or arrangement within such period as the Financial Conduct Authority considers reasonable.",
+   "quote": "the FCA has determined that it is unlikely that rules made under subsection (1) or (2)(a) will be complied with in relation to the scheme or arrangement within such period as the FCA considers reasonable"
+  },
+  {
+   "requirement": "When determining what provision to include in rules under subsection (2)(a), the Financial Conduct Authority must have regard to any provision contained in small pots regulations by virtue of section 29 of the Pension Schemes Act 2026.",
+   "quote": "the FCA must have regard to any provision contained in small pots regulations by virtue of section 29 of the Pension Schemes Act 2026"
+  },
+  {
+   "requirement": "For the purposes of section 137FBC, 'pension scheme' has the meaning given by section 1(5) of the Pension Schemes Act 1993.",
+   "quote": "“pension scheme” has the meaning given by section 1(5) of the Pension Schemes Act 1993"
+  },
+  {
+   "requirement": "For the purposes of section 137FBC, 'provider' in relation to an FCA-regulated pension scheme means the authorised person by whom the operation of the scheme is carried on in the United Kingdom.",
+   "quote": "“provider”, in relation to an FCA-regulated pension scheme, means the person referred to in subsection (7)(b)."
+  },
+  {
+   "requirement": "A pension scheme is FCA-regulated if the operation of the scheme is a regulated activity and is carried on in the United Kingdom by an authorised person.",
+   "quote": "A pension scheme is “FCA-regulated” if the operation of the scheme— (a) is a regulated activity, and (b) is carried on in the United Kingdom by an authorised person."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

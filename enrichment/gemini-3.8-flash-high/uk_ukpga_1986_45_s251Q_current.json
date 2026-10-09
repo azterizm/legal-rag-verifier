@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1986/45/s251Q@current",
+ "section": "uk/ukpga/1986/45/s251Q",
+ "version": "current",
+ "source_sha256": "ff4030f64541d67fd02572fb31426f30041c126e5c5a880190360fa52a8b1d25",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person in respect of whom a debt relief order is made commits an offence if that person made or caused to be made any gift or transfer of their property between the start of the two-year period ending with the application date and the end of the moratorium period.",
+    "quote": "guilty of an offence if he made or caused to be made any gift or transfer of his property"
+   },
+   {
+    "requirement": "For a person subject to a debt relief order, making a transfer of property includes causing or conniving at the levying of any execution against that property.",
+    "quote": "making a transfer of any property includes causing or conniving at the levying of any execution against that property"
+   },
+   {
+    "requirement": "A person in respect of whom a debt relief order is made is not guilty of an offence if that person proves that, in respect of the conduct constituting the offence, they had no intent to defraud or to conceal the state of their affairs.",
+    "quote": "not guilty of an offence under this section if he proves that, in respect of the conduct constituting the offence, he had no intent to defraud or to conceal the state of his affairs"
+   },
+   {
+    "requirement": "A person is taken to have proved an absence of intent to defraud or conceal if sufficient evidence is adduced to raise an issue as to whether the person had such intent and the contrary is not proved beyond reasonable doubt.",
+    "quote": "sufficient evidence is adduced to raise an issue as to whether he had such intent; and (b) the contrary is not proved beyond reasonable doubt"
+   },
+   {
+    "requirement": "Whether a debt relief order is revoked after the conduct constituting an offence occurs is immaterial to a person's liability for that offence.",
+    "quote": "immaterial for the purposes of this section whether or not the debt relief order in question is revoked after the conduct constituting an offence takes place"
+   },
+   {
+    "requirement": "No offence is committed by a person by virtue of conduct that occurs after the relevant debt relief order is revoked.",
+    "quote": "no offence is committed by virtue of conduct occurring after the order is revoked"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period ending with the application date during which making or causing a gift or transfer of property can constitute an offence",
+    "value": "two years",
+    "quote": "period of two years ending with the application date"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A person in respect of whom a debt relief order is made commits an offence if that person made or caused to be made any gift or transfer of their property between the start of the two-year period ending with the application date and the end of the moratorium period.",
+   "quote": "guilty of an offence if he made or caused to be made any gift or transfer of his property"
+  },
+  {
+   "requirement": "For a person subject to a debt relief order, making a transfer of property includes causing or conniving at the levying of any execution against that property.",
+   "quote": "making a transfer of any property includes causing or conniving at the levying of any execution against that property"
+  },
+  {
+   "requirement": "A person in respect of whom a debt relief order is made is not guilty of an offence if that person proves that, in respect of the conduct constituting the offence, they had no intent to defraud or to conceal the state of their affairs.",
+   "quote": "not guilty of an offence under this section if he proves that, in respect of the conduct constituting the offence, he had no intent to defraud or to conceal the state of his affairs"
+  },
+  {
+   "requirement": "A person is taken to have proved an absence of intent to defraud or conceal if sufficient evidence is adduced to raise an issue as to whether the person had such intent and the contrary is not proved beyond reasonable doubt.",
+   "quote": "sufficient evidence is adduced to raise an issue as to whether he had such intent; and (b) the contrary is not proved beyond reasonable doubt"
+  },
+  {
+   "requirement": "Whether a debt relief order is revoked after the conduct constituting an offence occurs is immaterial to a person's liability for that offence.",
+   "quote": "immaterial for the purposes of this section whether or not the debt relief order in question is revoked after the conduct constituting an offence takes place"
+  },
+  {
+   "requirement": "No offence is committed by a person by virtue of conduct that occurs after the relevant debt relief order is revoked.",
+   "quote": "no offence is committed by virtue of conduct occurring after the order is revoked"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period ending with the application date during which making or causing a gift or transfer of property can constitute an offence",
+   "value": "two years",
+   "quote": "period of two years ending with the application date"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

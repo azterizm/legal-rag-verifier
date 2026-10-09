@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1970/9/s100D@current",
+ "section": "uk/ukpga/1970/9/s100D",
+ "version": "current",
+ "source_sha256": "a1f9fa468879fb2db759b7925c764b23b0807060a6d7f1200ce74faa8217872d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Proceedings for a penalty may be instituted before the High Court or, in Scotland, the Court of Session as the Court of Exchequer in Scotland where, in the opinion of the Board, the liability of any person for that penalty arises by reason of the fraud of that person or any other person.",
+    "quote": "proceedings for the penalty may be instituted before the High Court or, in Scotland, the Court of Session as the Court of Exchequer in Scotland"
+   },
+   {
+    "requirement": "Proceedings for a penalty arising from fraud in England and Wales that are not instituted under the Crown Proceedings Act 1947 by and in the name of the Board as an authorised department must be instituted in the name of the Attorney General.",
+    "quote": "in England and Wales, in the name of the Attorney General"
+   },
+   {
+    "requirement": "Proceedings for a penalty arising from fraud in Scotland that are not instituted under the Crown Proceedings Act 1947 by and in the name of the Board as an authorised department must be instituted in the name of the Lord Advocate.",
+    "quote": "in Scotland, in the name of the Lord Advocate"
+   },
+   {
+    "requirement": "Proceedings for a penalty arising from fraud in Northern Ireland that are not instituted under the Crown Proceedings Act 1947 by and in the name of the Board as an authorised department must be instituted in the name of the Attorney General for Northern Ireland.",
+    "quote": "in Northern Ireland, in the name of the Attorney General for Northern Ireland"
+   },
+   {
+    "requirement": "Any penalty proceedings instituted in England and Wales under section 100D of the Taxes Management Act 1970 are deemed to be civil proceedings by the Crown within the meaning of Part II of the Crown Proceedings Act 1947.",
+    "quote": "shall be deemed to be civil proceedings by the Crown within the meaning of Part II of the Crown Proceedings Act 1947"
+   },
+   {
+    "requirement": "Any penalty proceedings instituted in Northern Ireland under section 100D of the Taxes Management Act 1970 are deemed to be civil proceedings within the meaning of Part II of the Crown Proceedings Act 1947 as for the time being in force in Northern Ireland.",
+    "quote": "shall be deemed to be civil proceedings within the meaning of that Part of that Act as for the time being in force in Northern Ireland"
+   },
+   {
+    "requirement": "If in penalty proceedings under section 100D of the Taxes Management Act 1970 the court does not find fraud proved but considers that the person concerned is nevertheless liable to a penalty, the court may determine a penalty even if, but for the opinion of the Board as to fraud, the penalty would not have been a matter for the court.",
+    "quote": "the court may determine a penalty notwithstanding that, but for the opinion of the Board as to fraud, the penalty would not have been a matter for the court"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Proceedings for a penalty may be instituted before the High Court or, in Scotland, the Court of Session as the Court of Exchequer in Scotland where, in the opinion of the Board, the liability of any person for that penalty arises by reason of the fraud of that person or any other person.",
+   "quote": "proceedings for the penalty may be instituted before the High Court or, in Scotland, the Court of Session as the Court of Exchequer in Scotland"
+  },
+  {
+   "requirement": "Proceedings for a penalty arising from fraud in England and Wales that are not instituted under the Crown Proceedings Act 1947 by and in the name of the Board as an authorised department must be instituted in the name of the Attorney General.",
+   "quote": "in England and Wales, in the name of the Attorney General"
+  },
+  {
+   "requirement": "Proceedings for a penalty arising from fraud in Scotland that are not instituted under the Crown Proceedings Act 1947 by and in the name of the Board as an authorised department must be instituted in the name of the Lord Advocate.",
+   "quote": "in Scotland, in the name of the Lord Advocate"
+  },
+  {
+   "requirement": "Proceedings for a penalty arising from fraud in Northern Ireland that are not instituted under the Crown Proceedings Act 1947 by and in the name of the Board as an authorised department must be instituted in the name of the Attorney General for Northern Ireland.",
+   "quote": "in Northern Ireland, in the name of the Attorney General for Northern Ireland"
+  },
+  {
+   "requirement": "Any penalty proceedings instituted in England and Wales under section 100D of the Taxes Management Act 1970 are deemed to be civil proceedings by the Crown within the meaning of Part II of the Crown Proceedings Act 1947.",
+   "quote": "shall be deemed to be civil proceedings by the Crown within the meaning of Part II of the Crown Proceedings Act 1947"
+  },
+  {
+   "requirement": "Any penalty proceedings instituted in Northern Ireland under section 100D of the Taxes Management Act 1970 are deemed to be civil proceedings within the meaning of Part II of the Crown Proceedings Act 1947 as for the time being in force in Northern Ireland.",
+   "quote": "shall be deemed to be civil proceedings within the meaning of that Part of that Act as for the time being in force in Northern Ireland"
+  },
+  {
+   "requirement": "If in penalty proceedings under section 100D of the Taxes Management Act 1970 the court does not find fraud proved but considers that the person concerned is nevertheless liable to a penalty, the court may determine a penalty even if, but for the opinion of the Board as to fraud, the penalty would not have been a matter for the court.",
+   "quote": "the court may determine a penalty notwithstanding that, but for the opinion of the Board as to fraud, the penalty would not have been a matter for the court"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

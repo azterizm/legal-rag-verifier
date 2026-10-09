@@ -1,0 +1,207 @@
+{
+ "key": "uk/ukpga/1993/28/s38@current",
+ "section": "uk/ukpga/1993/28/s38",
+ "version": "current",
+ "source_sha256": "b09fb3728e878fc9f57a74d25c30fc8a3dee6acfd1ff5e81db110c174045d86a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In Chapter I of Part I of the Leasehold Reform, Housing and Urban Development Act 1993, the defined terms apply unless the context otherwise requires.",
+    "quote": "In this Chapter (unless the context otherwise requires)"
+   },
+   {
+    "requirement": "For premises in England, the appropriate tribunal means the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal.",
+    "quote": "“appropriate tribunal” means— in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal"
+   },
+   {
+    "requirement": "For premises in Wales, the appropriate tribunal means a leasehold valuation tribunal.",
+    "quote": "in relation to premises in Wales, a leasehold valuation tribunal"
+   },
+   {
+    "requirement": "The term conveyance includes assignment, transfer and surrender, and related expressions are construed accordingly.",
+    "quote": "“conveyance” includes assignment, transfer and surrender, and related expressions shall be construed accordingly"
+   },
+   {
+    "requirement": "The initial notice means the notice given under section 13 of the Act.",
+    "quote": "“the initial notice” means the notice given under section 13"
+   },
+   {
+    "requirement": "The term introductory standard contract has the same meaning given by section 16 of the Renting Homes (Wales) Act 2016 (anaw 1).",
+    "quote": "“introductory standard contract” has the same meaning given by section 16 of the Renting Homes (Wales) Act 2016 (anaw 1)"
+   },
+   {
+    "requirement": "The term introductory tenancy has the same meaning as in Chapter 1 of Part V of the Housing Act 1996.",
+    "quote": "“introductory tenancy” has the same meaning as in Chapter 1 of Part V of the Housing Act 1996"
+   },
+   {
+    "requirement": "The nominee purchaser is to be construed in accordance with section 15 of the Act.",
+    "quote": "“the nominee purchaser” shall be construed in accordance with section 15"
+   },
+   {
+    "requirement": "The participating tenants are to be construed in accordance with section 14 of the Act.",
+    "quote": "“the participating tenants” shall be construed in accordance with section 14"
+   },
+   {
+    "requirement": "Premises with a resident landlord are to be construed in accordance with section 10 of the Act.",
+    "quote": "“premises with a resident landlord” shall be construed in accordance with section 10"
+   },
+   {
+    "requirement": "A public sector landlord means any of the persons listed in section 171(2) of the Housing Act 1985.",
+    "quote": "“public sector landlord” means any of the persons listed in section 171(2) of the Housing Act 1985"
+   },
+   {
+    "requirement": "A qualifying tenant is to be construed in accordance with section 5 of the Act.",
+    "quote": "“qualifying tenant” shall be construed in accordance with section 5"
+   },
+   {
+    "requirement": "The relevant date has the meaning given by section 1(8) of the Act.",
+    "quote": "“the relevant date” has the meaning given by section 1(8)"
+   },
+   {
+    "requirement": "A relevant landlord and the reversioner are to be construed in accordance with section 9 of the Act.",
+    "quote": "“relevant landlord” and “the reversioner” shall be construed in accordance with section 9"
+   },
+   {
+    "requirement": "The right to collective enfranchisement means the right specified in section 1(1) of the Act.",
+    "quote": "“the right to collective enfranchisement” means the right specified in section 1(1)"
+   },
+   {
+    "requirement": "The term secure contract has the same meaning given by section 8 of the Renting Homes (Wales) Act 2016.",
+    "quote": "“secure contract” has the same meaning given by section 8 of the Renting Homes (Wales) Act 2016"
+   },
+   {
+    "requirement": "The term secure tenancy has the meaning given by section 79 of the Housing Act 1985.",
+    "quote": "“secure tenancy” has the meaning given by section 79 of the Housing Act 1985"
+   },
+   {
+    "requirement": "The specified premises are to be construed in accordance with section 13(12) of the Act.",
+    "quote": "“the specified premises” shall be construed in accordance with section 13(12)"
+   },
+   {
+    "requirement": "The terms of acquisition has the meaning given by section 24(8) of the Act.",
+    "quote": "“the terms of acquisition” has the meaning given by section 24(8)"
+   },
+   {
+    "requirement": "A unit means a flat, any other separate set of premises constructed or adapted for use for the purposes of a dwelling, or a separate set of premises let, or intended for letting, on a business lease.",
+    "quote": "“unit” means— a flat;any other separate set of premises which is constructed or adapted for use for the purposes of a dwelling; ora separate set of premises let, or intended for letting, on a business lease"
+   },
+   {
+    "requirement": "Any reference in Chapter I (however expressed) to the acquisition or proposed acquisition by the nominee purchaser refers to the acquisition or proposed acquisition by the nominee purchaser, on behalf of the participating tenants, of such freehold and other interests as fall to be so acquired under a contract entered into in pursuance of the initial notice.",
+    "quote": "Any reference in this Chapter (however expressed) to the acquisition or proposed acquisition by the nominee purchaser is a reference to the acquisition or proposed acquisition by the nominee purchaser, on behalf of the participating tenants, of such freehold and other interests as fall to be so acquired under a contract entered into in pursuance of the initial notice"
+   },
+   {
+    "requirement": "Any reference in Chapter I to the interest of a relevant landlord in the specified premises refers to the interest in those premises by virtue of which that person is, in accordance with section 9(2)(b) or (2A)(b), a relevant landlord.",
+    "quote": "Any reference in this Chapter to the interest of a relevant landlord in the specified premises is a reference to the interest in those premises by virtue of which he is, in accordance with section 9(2)(b) or (2A)(b), a relevant landlord"
+   },
+   {
+    "requirement": "Any reference in Chapter I to agreement in relation to all or any of the terms of acquisition refers to agreement subject to contract.",
+    "quote": "Any reference in this Chapter to agreement in relation to all or any of the terms of acquisition is a reference to agreement subject to contract"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "In Chapter I of Part I of the Leasehold Reform, Housing and Urban Development Act 1993, the defined terms apply unless the context otherwise requires.",
+   "quote": "In this Chapter (unless the context otherwise requires)"
+  },
+  {
+   "requirement": "For premises in England, the appropriate tribunal means the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal.",
+   "quote": "“appropriate tribunal” means— in relation to premises in England, the First-tier Tribunal or, where determined by or under Tribunal Procedure Rules, the Upper Tribunal"
+  },
+  {
+   "requirement": "For premises in Wales, the appropriate tribunal means a leasehold valuation tribunal.",
+   "quote": "in relation to premises in Wales, a leasehold valuation tribunal"
+  },
+  {
+   "requirement": "The term conveyance includes assignment, transfer and surrender, and related expressions are construed accordingly.",
+   "quote": "“conveyance” includes assignment, transfer and surrender, and related expressions shall be construed accordingly"
+  },
+  {
+   "requirement": "The initial notice means the notice given under section 13 of the Act.",
+   "quote": "“the initial notice” means the notice given under section 13"
+  },
+  {
+   "requirement": "The term introductory standard contract has the same meaning given by section 16 of the Renting Homes (Wales) Act 2016 (anaw 1).",
+   "quote": "“introductory standard contract” has the same meaning given by section 16 of the Renting Homes (Wales) Act 2016 (anaw 1)"
+  },
+  {
+   "requirement": "The term introductory tenancy has the same meaning as in Chapter 1 of Part V of the Housing Act 1996.",
+   "quote": "“introductory tenancy” has the same meaning as in Chapter 1 of Part V of the Housing Act 1996"
+  },
+  {
+   "requirement": "The nominee purchaser is to be construed in accordance with section 15 of the Act.",
+   "quote": "“the nominee purchaser” shall be construed in accordance with section 15"
+  },
+  {
+   "requirement": "The participating tenants are to be construed in accordance with section 14 of the Act.",
+   "quote": "“the participating tenants” shall be construed in accordance with section 14"
+  },
+  {
+   "requirement": "Premises with a resident landlord are to be construed in accordance with section 10 of the Act.",
+   "quote": "“premises with a resident landlord” shall be construed in accordance with section 10"
+  },
+  {
+   "requirement": "A public sector landlord means any of the persons listed in section 171(2) of the Housing Act 1985.",
+   "quote": "“public sector landlord” means any of the persons listed in section 171(2) of the Housing Act 1985"
+  },
+  {
+   "requirement": "A qualifying tenant is to be construed in accordance with section 5 of the Act.",
+   "quote": "“qualifying tenant” shall be construed in accordance with section 5"
+  },
+  {
+   "requirement": "The relevant date has the meaning given by section 1(8) of the Act.",
+   "quote": "“the relevant date” has the meaning given by section 1(8)"
+  },
+  {
+   "requirement": "A relevant landlord and the reversioner are to be construed in accordance with section 9 of the Act.",
+   "quote": "“relevant landlord” and “the reversioner” shall be construed in accordance with section 9"
+  },
+  {
+   "requirement": "The right to collective enfranchisement means the right specified in section 1(1) of the Act.",
+   "quote": "“the right to collective enfranchisement” means the right specified in section 1(1)"
+  },
+  {
+   "requirement": "The term secure contract has the same meaning given by section 8 of the Renting Homes (Wales) Act 2016.",
+   "quote": "“secure contract” has the same meaning given by section 8 of the Renting Homes (Wales) Act 2016"
+  },
+  {
+   "requirement": "The term secure tenancy has the meaning given by section 79 of the Housing Act 1985.",
+   "quote": "“secure tenancy” has the meaning given by section 79 of the Housing Act 1985"
+  },
+  {
+   "requirement": "The specified premises are to be construed in accordance with section 13(12) of the Act.",
+   "quote": "“the specified premises” shall be construed in accordance with section 13(12)"
+  },
+  {
+   "requirement": "The terms of acquisition has the meaning given by section 24(8) of the Act.",
+   "quote": "“the terms of acquisition” has the meaning given by section 24(8)"
+  },
+  {
+   "requirement": "A unit means a flat, any other separate set of premises constructed or adapted for use for the purposes of a dwelling, or a separate set of premises let, or intended for letting, on a business lease.",
+   "quote": "“unit” means— a flat;any other separate set of premises which is constructed or adapted for use for the purposes of a dwelling; ora separate set of premises let, or intended for letting, on a business lease"
+  },
+  {
+   "requirement": "Any reference in Chapter I (however expressed) to the acquisition or proposed acquisition by the nominee purchaser refers to the acquisition or proposed acquisition by the nominee purchaser, on behalf of the participating tenants, of such freehold and other interests as fall to be so acquired under a contract entered into in pursuance of the initial notice.",
+   "quote": "Any reference in this Chapter (however expressed) to the acquisition or proposed acquisition by the nominee purchaser is a reference to the acquisition or proposed acquisition by the nominee purchaser, on behalf of the participating tenants, of such freehold and other interests as fall to be so acquired under a contract entered into in pursuance of the initial notice"
+  },
+  {
+   "requirement": "Any reference in Chapter I to the interest of a relevant landlord in the specified premises refers to the interest in those premises by virtue of which that person is, in accordance with section 9(2)(b) or (2A)(b), a relevant landlord.",
+   "quote": "Any reference in this Chapter to the interest of a relevant landlord in the specified premises is a reference to the interest in those premises by virtue of which he is, in accordance with section 9(2)(b) or (2A)(b), a relevant landlord"
+  },
+  {
+   "requirement": "Any reference in Chapter I to agreement in relation to all or any of the terms of acquisition refers to agreement subject to contract.",
+   "quote": "Any reference in this Chapter to agreement in relation to all or any of the terms of acquisition is a reference to agreement subject to contract"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 23,
+  "elements_verified": 23,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

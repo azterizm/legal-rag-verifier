@@ -1,0 +1,75 @@
+{
+ "key": "uk/ukpga/1995/30/s30@current",
+ "section": "uk/ukpga/1995/30/s30",
+ "version": "current",
+ "source_sha256": "f94b8090ba35ba7204cd94e6afb5fb4bc7245c93a980e9d854069241afccc305",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The enactments specified in Schedule 1 are amended in accordance with that Schedule, with those amendments being consequential on the provisions of the Landlord and Tenant (Covenants) Act 1995.",
+    "quote": "enactments specified in Schedule 1 are amended in accordance with that Schedule, the amendments being consequential on the provisions of this Act"
+   },
+   {
+    "requirement": "The enactments specified in Schedule 2 are repealed to the extent specified in that Schedule.",
+    "quote": "enactments specified in Schedule 2 are repealed to the extent specified"
+   },
+   {
+    "requirement": "Section 30(1) and section 30(2) do not affect the operation of section 77 of, or Part IX or X of Schedule 2 to, the Law of Property Act 1925 in relation to tenancies that are not new tenancies.",
+    "quote": "Subsections (1) and (2) do not affect the operation of— (a) section 77 of, or Part IX or X of Schedule 2 to, the Law of Property Act 1925"
+   },
+   {
+    "requirement": "Section 30(1) and section 30(2) do not affect the operation of section 24(1)(b) or (2) of the Land Registration Act 1925 in relation to tenancies that are not new tenancies.",
+    "quote": "do not affect the operation of— ... (b) section 24(1)(b) or (2) of the Land Registration Act 1925, in relation to tenancies which are not new tenancies"
+   },
+   {
+    "requirement": "In consequence of the Landlord and Tenant (Covenants) Act 1995, nothing in sections 78 and 79 of the Law of Property Act 1925 concerning the benefit and burden of covenants relating to land shall apply in relation to new tenancies.",
+    "quote": "nothing in the following provisions, namely— (a) sections 78 and 79 of the Law of Property Act 1925 (benefit and burden of covenants relating to land) ... shall apply in relation to new tenancies"
+   },
+   {
+    "requirement": "In consequence of the Landlord and Tenant (Covenants) Act 1995, nothing in sections 141 and 142 of the Law of Property Act 1925 concerning the running of the benefit and burden of covenants with reversion shall apply in relation to new tenancies.",
+    "quote": "nothing in the following provisions, namely— ... (b) sections 141 and 142 of that Act (running of benefit and burden of covenants with reversion), shall apply in relation to new tenancies"
+   },
+   {
+    "requirement": "The Lord Chancellor may by order made by statutory instrument make, in the case of such enactments as may be specified in the order, such amendments or repeals in, or such modifications of, those enactments as appear to him to be necessary or expedient in consequence of any provision of the Landlord and Tenant (Covenants) Act 1995.",
+    "quote": "Lord Chancellor may by order made by statutory instrument make, in the case of such enactments as may be specified in the order, such amendments or repeals in, or such modifications of, those enactments as appear to him to be necessary or expedient in consequence of any provision of this Act"
+   },
+   {
+    "requirement": "Any statutory instrument made under section 30(5) is subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "Any statutory instrument made under subsection (5) shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The enactments specified in Schedule 1 are amended in accordance with that Schedule, with those amendments being consequential on the provisions of the Landlord and Tenant (Covenants) Act 1995.",
+   "quote": "enactments specified in Schedule 1 are amended in accordance with that Schedule, the amendments being consequential on the provisions of this Act"
+  },
+  {
+   "requirement": "The enactments specified in Schedule 2 are repealed to the extent specified in that Schedule.",
+   "quote": "enactments specified in Schedule 2 are repealed to the extent specified"
+  },
+  {
+   "requirement": "Section 30(1) and section 30(2) do not affect the operation of section 77 of, or Part IX or X of Schedule 2 to, the Law of Property Act 1925 in relation to tenancies that are not new tenancies.",
+   "quote": "Subsections (1) and (2) do not affect the operation of— (a) section 77 of, or Part IX or X of Schedule 2 to, the Law of Property Act 1925"
+  },
+  {
+   "requirement": "The Lord Chancellor may by order made by statutory instrument make, in the case of such enactments as may be specified in the order, such amendments or repeals in, or such modifications of, those enactments as appear to him to be necessary or expedient in consequence of any provision of the Landlord and Tenant (Covenants) Act 1995.",
+   "quote": "Lord Chancellor may by order made by statutory instrument make, in the case of such enactments as may be specified in the order, such amendments or repeals in, or such modifications of, those enactments as appear to him to be necessary or expedient in consequence of any provision of this Act"
+  },
+  {
+   "requirement": "Any statutory instrument made under section 30(5) is subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "Any statutory instrument made under subsection (5) shall be subject to annulment in pursuance of a resolution of either House of Parliament"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

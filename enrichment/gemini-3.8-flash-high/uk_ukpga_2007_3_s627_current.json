@@ -1,0 +1,90 @@
+{
+ "key": "uk/ukpga/2007/3/s627@current",
+ "section": "uk/ukpga/2007/3/s627",
+ "version": "current",
+ "source_sha256": "ea73a591264e451d9ff7602bbafcbf5e17395a85802d9496ee49fc83c4f1bb6a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Securities are variable rate securities for the purposes of this Chapter unless their terms of issue provide that throughout the period from issue to redemption, whenever redemption might occur, they are to carry interest at a rate falling into one, and one only, of the specified categories.",
+    "quote": "securities are “variable rate securities” unless their terms of issue provide that throughout the period from issue to redemption (whenever redemption might occur) they are to carry interest at a rate which falls into one, and one only, of the categories specified in subsection (2)"
+   },
+   {
+    "requirement": "One permitted category for interest rates is a fixed rate that remains the same throughout the period from issue to redemption.",
+    "quote": "a fixed rate which is the same throughout the period"
+   },
+   {
+    "requirement": "One permitted category for interest rates is a rate that maintains the same fixed relationship to a standard published base rate throughout the period from issue to redemption.",
+    "quote": "a rate which bears the same fixed relationship to a standard published base rate throughout the period"
+   },
+   {
+    "requirement": "One permitted category for interest rates is a rate that maintains the same fixed relationship to a published index of prices throughout the period from issue to redemption.",
+    "quote": "a rate which bears the same fixed relationship to a published index of prices throughout the period"
+   },
+   {
+    "requirement": "A published index of prices means the retail prices index or any similar general index of prices published by the government of any territory outside the United Kingdom or by an agent of such a government.",
+    "quote": "“published index of prices” means the retail prices index or any similar general index of prices which is published by the government of any territory outside the United Kingdom or by an agent of such a government"
+   },
+   {
+    "requirement": "When determining whether new securities within the meaning of section 649 are variable rate securities, interest payable on them on the first interest payment day after their issue is treated as payable in respect of the period beginning with the relevant period and ending with that day.",
+    "quote": "the interest payable on them on the first interest payment day after their issue is treated as payable in respect of the period beginning with the relevant period and ending with that day"
+   },
+   {
+    "requirement": "The term the relevant period in subsection (4) carries the meaning given by section 649(8).",
+    "quote": "“the relevant period” has the meaning given by section 649(8)"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the exact number of statutory interest rate categories into which an eligible rate must fall",
+    "value": "one, and one only",
+    "quote": "falls into one, and one only, of the categories specified in subsection (2)"
+   },
+   {
+    "what": "the interest payment day after issue on which payable interest is subject to the statutory timing treatment",
+    "value": "first",
+    "quote": "the first interest payment day after their issue"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Securities are variable rate securities for the purposes of this Chapter unless their terms of issue provide that throughout the period from issue to redemption, whenever redemption might occur, they are to carry interest at a rate falling into one, and one only, of the specified categories.",
+   "quote": "securities are “variable rate securities” unless their terms of issue provide that throughout the period from issue to redemption (whenever redemption might occur) they are to carry interest at a rate which falls into one, and one only, of the categories specified in subsection (2)"
+  },
+  {
+   "requirement": "One permitted category for interest rates is a fixed rate that remains the same throughout the period from issue to redemption.",
+   "quote": "a fixed rate which is the same throughout the period"
+  },
+  {
+   "requirement": "One permitted category for interest rates is a rate that maintains the same fixed relationship to a standard published base rate throughout the period from issue to redemption.",
+   "quote": "a rate which bears the same fixed relationship to a standard published base rate throughout the period"
+  },
+  {
+   "requirement": "One permitted category for interest rates is a rate that maintains the same fixed relationship to a published index of prices throughout the period from issue to redemption.",
+   "quote": "a rate which bears the same fixed relationship to a published index of prices throughout the period"
+  },
+  {
+   "requirement": "A published index of prices means the retail prices index or any similar general index of prices published by the government of any territory outside the United Kingdom or by an agent of such a government.",
+   "quote": "“published index of prices” means the retail prices index or any similar general index of prices which is published by the government of any territory outside the United Kingdom or by an agent of such a government"
+  },
+  {
+   "requirement": "When determining whether new securities within the meaning of section 649 are variable rate securities, interest payable on them on the first interest payment day after their issue is treated as payable in respect of the period beginning with the relevant period and ending with that day.",
+   "quote": "the interest payable on them on the first interest payment day after their issue is treated as payable in respect of the period beginning with the relevant period and ending with that day"
+  },
+  {
+   "requirement": "The term the relevant period in subsection (4) carries the meaning given by section 649(8).",
+   "quote": "“the relevant period” has the meaning given by section 649(8)"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

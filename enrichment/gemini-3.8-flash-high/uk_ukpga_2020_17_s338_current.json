@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/2020/17/s338@current",
+ "section": "uk/ukpga/2020/17/s338",
+ "version": "current",
+ "source_sha256": "bd8be0d79204a97e0d8891fd6e307aa3adfb218b3e8c1e6394c6bd0765a1a923",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A review under section 337 must be carried out by the chief officer of police of the police force maintained for the police area in which the offender resides or appears to be residing.",
+    "quote": "A review under section 337 is to be carried out by the chief officer of police of the police force maintained for the police area in which the offender resides or appears to be residing."
+   },
+   {
+    "requirement": "In carrying out a review under section 337, the chief officer of police must act in co-operation with the council for the local government area in which the offender resides or appears to be residing.",
+    "quote": "must act in co-operation with the council for the local government area in which the offender resides or appears to be residing"
+   },
+   {
+    "requirement": "The council for the local government area in which the offender resides or appears to be residing must co-operate in the carrying out of the review under section 337.",
+    "quote": "the council must co-operate in the carrying out of the review"
+   },
+   {
+    "requirement": "The chief officer carrying out the review may invite the participation of any other person or body in the review.",
+    "quote": "The chief officer may invite the participation in the review of any other person or body."
+   },
+   {
+    "requirement": "In section 338 of the Sentencing Act 2020, 'local government area' in relation to England means a district or London borough, the City of London, the Isle of Wight, and the Isles of Scilly.",
+    "quote": "in relation to England, a district or London borough, the City of London, the Isle of Wight and the Isles of Scilly"
+   },
+   {
+    "requirement": "In section 338 of the Sentencing Act 2020, 'local government area' in relation to Wales means a county or a county borough.",
+    "quote": "in relation to Wales, a county or a county borough"
+   },
+   {
+    "requirement": "For the purposes of section 338 of the Sentencing Act 2020, the Common Council of the City of London is the council for the Inner and Middle Temples.",
+    "quote": "the council for the Inner and Middle Temples is the Common Council of the City of London"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A review under section 337 must be carried out by the chief officer of police of the police force maintained for the police area in which the offender resides or appears to be residing.",
+   "quote": "A review under section 337 is to be carried out by the chief officer of police of the police force maintained for the police area in which the offender resides or appears to be residing."
+  },
+  {
+   "requirement": "In carrying out a review under section 337, the chief officer of police must act in co-operation with the council for the local government area in which the offender resides or appears to be residing.",
+   "quote": "must act in co-operation with the council for the local government area in which the offender resides or appears to be residing"
+  },
+  {
+   "requirement": "The council for the local government area in which the offender resides or appears to be residing must co-operate in the carrying out of the review under section 337.",
+   "quote": "the council must co-operate in the carrying out of the review"
+  },
+  {
+   "requirement": "The chief officer carrying out the review may invite the participation of any other person or body in the review.",
+   "quote": "The chief officer may invite the participation in the review of any other person or body."
+  },
+  {
+   "requirement": "In section 338 of the Sentencing Act 2020, 'local government area' in relation to England means a district or London borough, the City of London, the Isle of Wight, and the Isles of Scilly.",
+   "quote": "in relation to England, a district or London borough, the City of London, the Isle of Wight and the Isles of Scilly"
+  },
+  {
+   "requirement": "In section 338 of the Sentencing Act 2020, 'local government area' in relation to Wales means a county or a county borough.",
+   "quote": "in relation to Wales, a county or a county borough"
+  },
+  {
+   "requirement": "For the purposes of section 338 of the Sentencing Act 2020, the Common Council of the City of London is the council for the Inner and Middle Temples.",
+   "quote": "the council for the Inner and Middle Temples is the Common Council of the City of London"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

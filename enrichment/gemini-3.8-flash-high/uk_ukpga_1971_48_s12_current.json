@@ -1,0 +1,75 @@
+{
+ "key": "uk/ukpga/1971/48/s12@current",
+ "section": "uk/ukpga/1971/48/s12",
+ "version": "current",
+ "source_sha256": "c27ac52b8db6d8c47a68bfb182df87056335be271ef57a446a9e70d18a714112",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Criminal Damage Act 1971 comes into force at the expiration of the period of three months beginning with the day in which it is passed.",
+    "quote": "shall come into force at the expiration of the period of three months beginning with the day in which it is passed"
+   },
+   {
+    "requirement": "The Act may be cited as the Criminal Damage Act 1971.",
+    "quote": "may be cited as the Criminal Damage Act 1971"
+   },
+   {
+    "requirement": "Except as provided by subsections (4) to (6), the Act does not extend to Scotland or Northern Ireland.",
+    "quote": "Except as provided by subsections (4) to (6) below, this Act does not extend to Scotland or Northern Ireland"
+   },
+   {
+    "requirement": "Part II of the Schedule to the Act and so much of section 11(8) as relates thereto extend to Scotland.",
+    "quote": "Part II of the Schedule to this Act and so much of section 11(8) above as relates thereto extend to Scotland"
+   },
+   {
+    "requirement": "Section 11(2) of the Act, Part III of the Schedule, and so much of section 11(8) as relates thereto extend to Scotland and Northern Ireland.",
+    "quote": "section 11(2) of this Act, Part III of that Schedule and so much of section 11(8) as relates thereto extend to Scotland and Northern Ireland"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period following the day on which the Act is passed at the expiration of which the Act comes into force",
+    "value": "three months",
+    "quote": "period of three months beginning with the day in which it is passed"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Criminal Damage Act 1971 comes into force at the expiration of the period of three months beginning with the day in which it is passed.",
+   "quote": "shall come into force at the expiration of the period of three months beginning with the day in which it is passed"
+  },
+  {
+   "requirement": "The Act may be cited as the Criminal Damage Act 1971.",
+   "quote": "may be cited as the Criminal Damage Act 1971"
+  },
+  {
+   "requirement": "Except as provided by subsections (4) to (6), the Act does not extend to Scotland or Northern Ireland.",
+   "quote": "Except as provided by subsections (4) to (6) below, this Act does not extend to Scotland or Northern Ireland"
+  },
+  {
+   "requirement": "Part II of the Schedule to the Act and so much of section 11(8) as relates thereto extend to Scotland.",
+   "quote": "Part II of the Schedule to this Act and so much of section 11(8) above as relates thereto extend to Scotland"
+  },
+  {
+   "requirement": "Section 11(2) of the Act, Part III of the Schedule, and so much of section 11(8) as relates thereto extend to Scotland and Northern Ireland.",
+   "quote": "section 11(2) of this Act, Part III of that Schedule and so much of section 11(8) as relates thereto extend to Scotland and Northern Ireland"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period following the day on which the Act is passed at the expiration of which the Act comes into force",
+   "value": "three months",
+   "quote": "period of three months beginning with the day in which it is passed"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

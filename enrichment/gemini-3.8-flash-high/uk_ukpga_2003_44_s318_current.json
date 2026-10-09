@@ -1,0 +1,90 @@
+{
+ "key": "uk/ukpga/2003/44/s318@current",
+ "section": "uk/ukpga/2003/44/s318",
+ "version": "current",
+ "source_sha256": "7c901bd0c222ba9bc506eb862c609a6d110a5acd1cd81d57c7ef0486b29a2879",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Courts-Martial (Appeals) Act 1968 is amended by section 318.",
+    "quote": "The Courts-Martial (Appeals) Act 1968 (c. 20) is amended as follows."
+   },
+   {
+    "requirement": "In section 14(1) of the Courts-Martial (Appeals) Act 1968, the words ' to which he did not plead guilty ' are inserted after 'an offence'.",
+    "quote": "after “an offence” there is inserted “ to which he did not plead guilty ”"
+   },
+   {
+    "requirement": "Section 14A of the Courts-Martial (Appeals) Act 1968 applies where an appellant has been convicted of an offence to which the appellant pleaded guilty.",
+    "quote": "an appellant has been convicted of an offence to which he pleaded guilty"
+   },
+   {
+    "requirement": "Section 14A of the Courts-Martial (Appeals) Act 1968 applies where, if the appellant had not pleaded guilty, the appellant could lawfully have pleaded, or been found, guilty of some other offence.",
+    "quote": "if he had not so pleaded, he could lawfully have pleaded, or been found, guilty of some other offence"
+   },
+   {
+    "requirement": "Section 14A of the Courts-Martial (Appeals) Act 1968 applies where it appears to the Appeal Court on an appeal against conviction that the plea of guilty indicates an admission by the appellant of facts which prove the appellant guilty of that other offence.",
+    "quote": "it appears to the Appeal Court on an appeal against conviction that the plea of guilty indicates an admission by the appellant of facts which prove him guilty of that other offence"
+   },
+   {
+    "requirement": "Under section 14A of the Courts-Martial (Appeals) Act 1968, the Appeal Court may, instead of allowing or dismissing the appeal, substitute for the appellant’s plea of guilty a plea of guilty of the other offence.",
+    "quote": "The Appeal Court may, instead of allowing or dismissing the appeal, substitute for the appellant’s plea of guilty a plea of guilty of the other offence"
+   },
+   {
+    "requirement": "Upon substituting a plea of guilty under section 14A of the Courts-Martial (Appeals) Act 1968, the Appeal Court may pass on the appellant, in substitution for the sentence passed on the appellant by the court-martial, such sentence as they think proper, provided that the sentence is warranted by the relevant Service Act for that other offence and is not of greater severity.",
+    "quote": "may pass on the appellant, in substitution for the sentence passed on him by the court-martial, such sentence as they think proper, being a sentence warranted by the relevant Service Act for that other offence, but not a sentence of greater severity"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year of the amended Courts-Martial (Appeals) Act",
+    "value": "1968",
+    "quote": "Courts-Martial (Appeals) Act 1968"
+   },
+   {
+    "what": "chapter number of the Courts-Martial (Appeals) Act 1968",
+    "value": "20",
+    "quote": "(c. 20)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The Courts-Martial (Appeals) Act 1968 is amended by section 318.",
+   "quote": "The Courts-Martial (Appeals) Act 1968 (c. 20) is amended as follows."
+  },
+  {
+   "requirement": "In section 14(1) of the Courts-Martial (Appeals) Act 1968, the words ' to which he did not plead guilty ' are inserted after 'an offence'.",
+   "quote": "after “an offence” there is inserted “ to which he did not plead guilty ”"
+  },
+  {
+   "requirement": "Section 14A of the Courts-Martial (Appeals) Act 1968 applies where an appellant has been convicted of an offence to which the appellant pleaded guilty.",
+   "quote": "an appellant has been convicted of an offence to which he pleaded guilty"
+  },
+  {
+   "requirement": "Section 14A of the Courts-Martial (Appeals) Act 1968 applies where, if the appellant had not pleaded guilty, the appellant could lawfully have pleaded, or been found, guilty of some other offence.",
+   "quote": "if he had not so pleaded, he could lawfully have pleaded, or been found, guilty of some other offence"
+  },
+  {
+   "requirement": "Section 14A of the Courts-Martial (Appeals) Act 1968 applies where it appears to the Appeal Court on an appeal against conviction that the plea of guilty indicates an admission by the appellant of facts which prove the appellant guilty of that other offence.",
+   "quote": "it appears to the Appeal Court on an appeal against conviction that the plea of guilty indicates an admission by the appellant of facts which prove him guilty of that other offence"
+  },
+  {
+   "requirement": "Under section 14A of the Courts-Martial (Appeals) Act 1968, the Appeal Court may, instead of allowing or dismissing the appeal, substitute for the appellant’s plea of guilty a plea of guilty of the other offence.",
+   "quote": "The Appeal Court may, instead of allowing or dismissing the appeal, substitute for the appellant’s plea of guilty a plea of guilty of the other offence"
+  },
+  {
+   "requirement": "Upon substituting a plea of guilty under section 14A of the Courts-Martial (Appeals) Act 1968, the Appeal Court may pass on the appellant, in substitution for the sentence passed on the appellant by the court-martial, such sentence as they think proper, provided that the sentence is warranted by the relevant Service Act for that other offence and is not of greater severity.",
+   "quote": "may pass on the appellant, in substitution for the sentence passed on him by the court-martial, such sentence as they think proper, being a sentence warranted by the relevant Service Act for that other offence, but not a sentence of greater severity"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

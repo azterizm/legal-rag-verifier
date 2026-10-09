@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/2002/15/s80@current",
+ "section": "uk/ukpga/2002/15/s80",
+ "version": "current",
+ "source_sha256": "6380119f4b0b69423ee06c7cb4f26d031e7bff655ede0e32ebbb1c1855c38e7f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A claim notice must comply with the requirements set out in section 80.",
+    "quote": "The claim notice must comply with the following requirements"
+   },
+   {
+    "requirement": "A claim notice must specify the premises and contain a statement of the grounds on which it is claimed that they are premises to which this Chapter applies.",
+    "quote": "specify the premises and contain a statement of the grounds on which it is claimed that they are premises to which this Chapter applies"
+   },
+   {
+    "requirement": "A claim notice must state the full name and flat address of each person who is both a qualifying tenant of a flat contained in the premises and a member of the RTM company.",
+    "quote": "state the full name of each person who is both— (a) the qualifying tenant of a flat contained in the premises, and (b) a member of the RTM company, and the address of his flat"
+   },
+   {
+    "requirement": "A claim notice must contain, in relation to each qualifying tenant who is a member of the RTM company, lease particulars sufficient to identify the lease, including the date it was entered into, the term for which it was granted, and the date of commencement of the term.",
+    "quote": "contain, in relation to each such person, such particulars of his lease as are sufficient to identify it, including— (a) the date on which it was entered into, (b) the term for which it was granted, and (c) the date of the commencement of the term"
+   },
+   {
+    "requirement": "A claim notice must state the name and registered office of the RTM company.",
+    "quote": "state the name and registered office of the RTM company"
+   },
+   {
+    "requirement": "A claim notice must specify a date, not earlier than one month after the relevant date, by which each person who was given the notice under section 79(6) may respond by giving a counter-notice under section 84.",
+    "quote": "specify a date, not earlier than one month after the relevant date, by which each person who was given the notice under section 79(6) may respond to it by giving a counter-notice under section 84"
+   },
+   {
+    "requirement": "A claim notice must specify a date, at least three months after the counter-notice response date specified under subsection (6), on which the RTM company intends to acquire the right to manage the premises.",
+    "quote": "specify a date, at least three months after that specified under subsection (6), on which the RTM company intends to acquire the right to manage the premises"
+   },
+   {
+    "requirement": "A claim notice must contain such other particulars, if any, as may be required to be contained in claim notices by regulations made by the appropriate national authority.",
+    "quote": "contain such other particulars (if any) as may be required to be contained in claim notices by regulations made by the appropriate national authority"
+   },
+   {
+    "requirement": "A claim notice must comply with such form requirements, if any, as may be prescribed by regulations made by the appropriate national authority.",
+    "quote": "comply with such requirements (if any) about the form of claim notices as may be prescribed by regulations so made"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum period after the relevant date for the response date specified in the claim notice for giving a counter-notice",
+    "value": "one month",
+    "quote": "not earlier than one month after the relevant date"
+   },
+   {
+    "what": "minimum period after the counter-notice response date for the date on which the RTM company intends to acquire the right to manage the premises",
+    "value": "three months",
+    "quote": "at least three months after that specified under subsection (6)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A claim notice must comply with the requirements set out in section 80.",
+   "quote": "The claim notice must comply with the following requirements"
+  },
+  {
+   "requirement": "A claim notice must specify the premises and contain a statement of the grounds on which it is claimed that they are premises to which this Chapter applies.",
+   "quote": "specify the premises and contain a statement of the grounds on which it is claimed that they are premises to which this Chapter applies"
+  },
+  {
+   "requirement": "A claim notice must state the full name and flat address of each person who is both a qualifying tenant of a flat contained in the premises and a member of the RTM company.",
+   "quote": "state the full name of each person who is both— (a) the qualifying tenant of a flat contained in the premises, and (b) a member of the RTM company, and the address of his flat"
+  },
+  {
+   "requirement": "A claim notice must contain, in relation to each qualifying tenant who is a member of the RTM company, lease particulars sufficient to identify the lease, including the date it was entered into, the term for which it was granted, and the date of commencement of the term.",
+   "quote": "contain, in relation to each such person, such particulars of his lease as are sufficient to identify it, including— (a) the date on which it was entered into, (b) the term for which it was granted, and (c) the date of the commencement of the term"
+  },
+  {
+   "requirement": "A claim notice must state the name and registered office of the RTM company.",
+   "quote": "state the name and registered office of the RTM company"
+  },
+  {
+   "requirement": "A claim notice must specify a date, not earlier than one month after the relevant date, by which each person who was given the notice under section 79(6) may respond by giving a counter-notice under section 84.",
+   "quote": "specify a date, not earlier than one month after the relevant date, by which each person who was given the notice under section 79(6) may respond to it by giving a counter-notice under section 84"
+  },
+  {
+   "requirement": "A claim notice must specify a date, at least three months after the counter-notice response date specified under subsection (6), on which the RTM company intends to acquire the right to manage the premises.",
+   "quote": "specify a date, at least three months after that specified under subsection (6), on which the RTM company intends to acquire the right to manage the premises"
+  },
+  {
+   "requirement": "A claim notice must contain such other particulars, if any, as may be required to be contained in claim notices by regulations made by the appropriate national authority.",
+   "quote": "contain such other particulars (if any) as may be required to be contained in claim notices by regulations made by the appropriate national authority"
+  },
+  {
+   "requirement": "A claim notice must comply with such form requirements, if any, as may be prescribed by regulations made by the appropriate national authority.",
+   "quote": "comply with such requirements (if any) about the form of claim notices as may be prescribed by regulations so made"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum period after the relevant date for the response date specified in the claim notice for giving a counter-notice",
+   "value": "one month",
+   "quote": "not earlier than one month after the relevant date"
+  },
+  {
+   "what": "minimum period after the counter-notice response date for the date on which the RTM company intends to acquire the right to manage the premises",
+   "value": "three months",
+   "quote": "at least three months after that specified under subsection (6)"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 2
+ }
+}

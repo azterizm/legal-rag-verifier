@@ -1,0 +1,101 @@
+{
+ "key": "uk/ukpga/1973/18/s24@current",
+ "section": "uk/ukpga/1973/18/s24",
+ "version": "current",
+ "source_sha256": "b8bceb658b79d9dfbd8213e8e9e9a07006f3195bdc0668fd7dacfc056e601fe0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may make one or more specified property adjustment orders on making a divorce, nullity of marriage or judicial separation order, or at any time after making such an order, whether before or after a divorce or nullity of marriage order is made final.",
+    "quote": "On making a divorce, nullity of marriage or judicial separation order or at any time after making such an order (whether, in the case of a divorce or nullity of marriage order, before or after the order is made final), the court may make any one or more of the following orders"
+   },
+   {
+    "requirement": "The court may order a party to the marriage to transfer specified property to which that party is entitled, either in possession or reversion, to the other party, to any child of the family, or to a specified person for the benefit of such a child.",
+    "quote": "an order that a party to the marriage shall transfer to the other party, to any child of the family or to such person as may be specified in the order for the benefit of such a child such property as may be so specified, being property to which the first-mentioned party is entitled, either in possession or reversion"
+   },
+   {
+    "requirement": "An order for the transfer of property is subject to the statutory restrictions imposed on making orders in favour of children who have attained the age of eighteen.",
+    "quote": "subject, however, in the case of an order under paragraph (a) above, to the restrictions imposed by section 29(1) and (3) below on the making of orders for a transfer of property in favour of children who have attained the age of eighteen"
+   },
+   {
+    "requirement": "The court may order that a settlement of specified property to which a party to the marriage is entitled be made to the court's satisfaction for the benefit of the other party to the marriage and the children of the family, or either or any of them.",
+    "quote": "an order that a settlement of such property as may be so specified, being property to which a party to the marriage is so entitled, be made to the satisfaction of the court for the benefit of the other party to the marriage and of the children of the family or either or any of them"
+   },
+   {
+    "requirement": "The court may order the variation of any ante-nuptial or post-nuptial settlement made on the parties to the marriage, including one made by will or codicil, for the benefit of the parties and the children of the family or either or any of them, provided the settlement is not in the form of a pension arrangement.",
+    "quote": "an order varying for the benefit of the parties to the marriage and of the children of the family or either or any of them any ante-nuptial or post-nuptial settlement (including such a settlement made by will or codicil) made on the parties to the marriage ,other than one in the form of a pension arrangement (within the meaning of section 25D below)"
+   },
+   {
+    "requirement": "The court may make an order varying an ante-nuptial or post-nuptial settlement even if there are no children of the family.",
+    "quote": "The court may make an order under subsection (1)(c) above notwithstanding that there are no children of the family."
+   },
+   {
+    "requirement": "The court may order the extinguishment or reduction of the interest of either party to the marriage under an ante-nuptial or post-nuptial settlement, provided the settlement is not in the form of a pension arrangement.",
+    "quote": "an order extinguishing or reducing the interest of either of the parties to the marriage under any such settlement , other than one in the form of a pension arrangement (within the meaning of section 25D below)"
+   },
+   {
+    "requirement": "Where an order under section 24 is made on or after making a divorce or nullity of marriage order, neither that order nor any settlement made pursuant to it takes effect unless the divorce or nullity of marriage order has been made final, without prejudice to the court's power to direct the settlement of an instrument by conveyancing counsel.",
+    "quote": "Without prejudice to the power to give a direction under section 30 below for the settlement of an instrument by conveyancing counsel, where an order is made under this section on or after making a divorce or nullity of marriage order, neither the order under this section nor any settlement made in pursuance of it is to take effect unless the divorce or nullity of marriage order has been made final."
+   },
+   {
+    "requirement": "Certain references to divorce orders, nullity of marriage orders and judicial separation orders are subject to the statutory interpretation provision in section 52A.",
+    "quote": "See also section 52A (interpretation of certain references to divorce orders, nullity of marriage orders and judicial separation orders)."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "age limit threshold for children regarding statutory restrictions on property transfer orders",
+    "value": "eighteen",
+    "quote": "children who have attained the age of eighteen"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The court may make one or more specified property adjustment orders on making a divorce, nullity of marriage or judicial separation order, or at any time after making such an order, whether before or after a divorce or nullity of marriage order is made final.",
+   "quote": "On making a divorce, nullity of marriage or judicial separation order or at any time after making such an order (whether, in the case of a divorce or nullity of marriage order, before or after the order is made final), the court may make any one or more of the following orders"
+  },
+  {
+   "requirement": "The court may order a party to the marriage to transfer specified property to which that party is entitled, either in possession or reversion, to the other party, to any child of the family, or to a specified person for the benefit of such a child.",
+   "quote": "an order that a party to the marriage shall transfer to the other party, to any child of the family or to such person as may be specified in the order for the benefit of such a child such property as may be so specified, being property to which the first-mentioned party is entitled, either in possession or reversion"
+  },
+  {
+   "requirement": "An order for the transfer of property is subject to the statutory restrictions imposed on making orders in favour of children who have attained the age of eighteen.",
+   "quote": "subject, however, in the case of an order under paragraph (a) above, to the restrictions imposed by section 29(1) and (3) below on the making of orders for a transfer of property in favour of children who have attained the age of eighteen"
+  },
+  {
+   "requirement": "The court may order that a settlement of specified property to which a party to the marriage is entitled be made to the court's satisfaction for the benefit of the other party to the marriage and the children of the family, or either or any of them.",
+   "quote": "an order that a settlement of such property as may be so specified, being property to which a party to the marriage is so entitled, be made to the satisfaction of the court for the benefit of the other party to the marriage and of the children of the family or either or any of them"
+  },
+  {
+   "requirement": "The court may order the variation of any ante-nuptial or post-nuptial settlement made on the parties to the marriage, including one made by will or codicil, for the benefit of the parties and the children of the family or either or any of them, provided the settlement is not in the form of a pension arrangement.",
+   "quote": "an order varying for the benefit of the parties to the marriage and of the children of the family or either or any of them any ante-nuptial or post-nuptial settlement (including such a settlement made by will or codicil) made on the parties to the marriage ,other than one in the form of a pension arrangement (within the meaning of section 25D below)"
+  },
+  {
+   "requirement": "The court may make an order varying an ante-nuptial or post-nuptial settlement even if there are no children of the family.",
+   "quote": "The court may make an order under subsection (1)(c) above notwithstanding that there are no children of the family."
+  },
+  {
+   "requirement": "The court may order the extinguishment or reduction of the interest of either party to the marriage under an ante-nuptial or post-nuptial settlement, provided the settlement is not in the form of a pension arrangement.",
+   "quote": "an order extinguishing or reducing the interest of either of the parties to the marriage under any such settlement , other than one in the form of a pension arrangement (within the meaning of section 25D below)"
+  },
+  {
+   "requirement": "Where an order under section 24 is made on or after making a divorce or nullity of marriage order, neither that order nor any settlement made pursuant to it takes effect unless the divorce or nullity of marriage order has been made final, without prejudice to the court's power to direct the settlement of an instrument by conveyancing counsel.",
+   "quote": "Without prejudice to the power to give a direction under section 30 below for the settlement of an instrument by conveyancing counsel, where an order is made under this section on or after making a divorce or nullity of marriage order, neither the order under this section nor any settlement made in pursuance of it is to take effect unless the divorce or nullity of marriage order has been made final."
+  },
+  {
+   "requirement": "Certain references to divorce orders, nullity of marriage orders and judicial separation orders are subject to the statutory interpretation provision in section 52A.",
+   "quote": "See also section 52A (interpretation of certain references to divorce orders, nullity of marriage orders and judicial separation orders)."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

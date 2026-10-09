@@ -1,0 +1,39 @@
+{
+ "key": "uk/ukpga/1980/58/s39@current",
+ "section": "uk/ukpga/1980/58/s39",
+ "version": "current",
+ "source_sha256": "04e9bf927837222926af454fd42ae740323671cc660104fc2c14bce9316be93a",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Limitation Act 1980 does not apply to any action or arbitration for which a period of limitation is prescribed by or under any other enactment, regardless of whether that other enactment was passed before or after the passing of the Limitation Act 1980.",
+    "quote": "This Act shall not apply to any action or arbitration for which a period of limitation is prescribed by or under any other enactment (whether passed before or after the passing of this Act)"
+   },
+   {
+    "requirement": "The Limitation Act 1980 does not apply to any action or arbitration to which the Crown is a party if a period of limitation would be prescribed by or under another enactment had the action or arbitration been between subjects.",
+    "quote": "or to any action or arbitration to which the Crown is a party and for which, if it were between subjects, a period of limitation would be prescribed by or under any such other enactment"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Limitation Act 1980 does not apply to any action or arbitration for which a period of limitation is prescribed by or under any other enactment, regardless of whether that other enactment was passed before or after the passing of the Limitation Act 1980.",
+   "quote": "This Act shall not apply to any action or arbitration for which a period of limitation is prescribed by or under any other enactment (whether passed before or after the passing of this Act)"
+  },
+  {
+   "requirement": "The Limitation Act 1980 does not apply to any action or arbitration to which the Crown is a party if a period of limitation would be prescribed by or under another enactment had the action or arbitration been between subjects.",
+   "quote": "or to any action or arbitration to which the Crown is a party and for which, if it were between subjects, a period of limitation would be prescribed by or under any such other enactment"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 2,
+  "elements_verified": 2,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

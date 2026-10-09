@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/2015/15/s31@current",
+ "section": "uk/ukpga/2015/15/s31",
+ "version": "current",
+ "source_sha256": "e915c92ada4da4b9ed5e17c7f39f18f79b56c95495e8a8ee5ff18a030a767f59",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict the trader's liability arising under section 9, 10, 11, 12, 13, 14, 15, 16, 17, 28, or 29.",
+    "quote": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict the trader's liability arising under any of these provisions"
+   },
+   {
+    "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict a right or remedy in respect of a trader's liability under any of the statutory provisions listed in subsection (1).",
+    "quote": "exclude or restrict a right or remedy in respect of a liability under a provision listed in subsection (1)"
+   },
+   {
+    "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would make a right or remedy in respect of a trader's liability under any of the statutory provisions listed in subsection (1), or the enforcement of such a right or remedy, subject to a restrictive or onerous condition.",
+    "quote": "make such a right or remedy or its enforcement subject to a restrictive or onerous condition"
+   },
+   {
+    "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would allow a trader to put a person at a disadvantage as a result of pursuing a right or remedy in respect of a liability under any of the statutory provisions listed in subsection (1).",
+    "quote": "allow a trader to put a person at a disadvantage as a result of pursuing such a right or remedy"
+   },
+   {
+    "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict rules of evidence or procedure.",
+    "quote": "exclude or restrict rules of evidence or procedure"
+   },
+   {
+    "requirement": "The statutory reference to excluding or restricting a liability includes preventing an obligation or duty from arising or limiting the extent of an obligation or duty.",
+    "quote": "preventing an obligation or duty arising or limiting its extent"
+   },
+   {
+    "requirement": "An agreement in writing to submit present or future differences to arbitration is not to be regarded as excluding or restricting any liability for the purposes of section 31.",
+    "quote": "An agreement in writing to submit present or future differences to arbitration is not to be regarded as excluding or restricting any liability for the purposes of this section."
+   },
+   {
+    "requirement": "Subsection (1)(i), and subsection (2) to the extent that it relates to liability under section 17, do not apply to a term of a contract for the hire of goods.",
+    "quote": "Subsection (1)(i), and subsection (2) so far as it relates to liability under section 17, do not apply to a term of a contract for the hire of goods."
+   },
+   {
+    "requirement": "An express term of a contract for the hire of goods is not binding on the consumer to the extent that it would exclude or restrict a term that section 17 requires to be treated as included in the contract, unless the express term is inconsistent with that term.",
+    "quote": "an express term of a contract for the hire of goods is not binding on the consumer to the extent that it would exclude or restrict a term that section 17 requires to be treated as included in the contract, unless it is inconsistent with that term"
+   },
+   {
+    "requirement": "Provision concerning the enforcement of section 31 is set out in Schedule 3.",
+    "quote": "See Schedule 3 for provision about the enforcement of this section."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict the trader's liability arising under section 9, 10, 11, 12, 13, 14, 15, 16, 17, 28, or 29.",
+   "quote": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict the trader's liability arising under any of these provisions"
+  },
+  {
+   "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict a right or remedy in respect of a trader's liability under any of the statutory provisions listed in subsection (1).",
+   "quote": "exclude or restrict a right or remedy in respect of a liability under a provision listed in subsection (1)"
+  },
+  {
+   "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would make a right or remedy in respect of a trader's liability under any of the statutory provisions listed in subsection (1), or the enforcement of such a right or remedy, subject to a restrictive or onerous condition.",
+   "quote": "make such a right or remedy or its enforcement subject to a restrictive or onerous condition"
+  },
+  {
+   "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would allow a trader to put a person at a disadvantage as a result of pursuing a right or remedy in respect of a liability under any of the statutory provisions listed in subsection (1).",
+   "quote": "allow a trader to put a person at a disadvantage as a result of pursuing such a right or remedy"
+  },
+  {
+   "requirement": "A term of a contract to supply goods is not binding on the consumer to the extent that it would exclude or restrict rules of evidence or procedure.",
+   "quote": "exclude or restrict rules of evidence or procedure"
+  },
+  {
+   "requirement": "The statutory reference to excluding or restricting a liability includes preventing an obligation or duty from arising or limiting the extent of an obligation or duty.",
+   "quote": "preventing an obligation or duty arising or limiting its extent"
+  },
+  {
+   "requirement": "An agreement in writing to submit present or future differences to arbitration is not to be regarded as excluding or restricting any liability for the purposes of section 31.",
+   "quote": "An agreement in writing to submit present or future differences to arbitration is not to be regarded as excluding or restricting any liability for the purposes of this section."
+  },
+  {
+   "requirement": "Subsection (1)(i), and subsection (2) to the extent that it relates to liability under section 17, do not apply to a term of a contract for the hire of goods.",
+   "quote": "Subsection (1)(i), and subsection (2) so far as it relates to liability under section 17, do not apply to a term of a contract for the hire of goods."
+  },
+  {
+   "requirement": "An express term of a contract for the hire of goods is not binding on the consumer to the extent that it would exclude or restrict a term that section 17 requires to be treated as included in the contract, unless the express term is inconsistent with that term.",
+   "quote": "an express term of a contract for the hire of goods is not binding on the consumer to the extent that it would exclude or restrict a term that section 17 requires to be treated as included in the contract, unless it is inconsistent with that term"
+  },
+  {
+   "requirement": "Provision concerning the enforcement of section 31 is set out in Schedule 3.",
+   "quote": "See Schedule 3 for provision about the enforcement of this section."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

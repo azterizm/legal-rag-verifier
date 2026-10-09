@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1994/33/s116@current",
+ "section": "uk/ukpga/1994/33/s116",
+ "version": "current",
+ "source_sha256": "1a6f5594c6b1f8e3c638dc95d75c2b0dbcdc8c92d972e124c33be51e40093fce",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 33 of the relevant Act, which concerns miscellaneous duties of a prison governor, ceases to have effect.",
+    "quote": "Section 33 of that Act (miscellaneous duties of prison governor) shall cease to have effect"
+   },
+   {
+    "requirement": "Rules made under section 39 of the relevant Act may permit the governor of a prison to authorise an officer of the prison, or a class of such officers, to exercise on the governor's behalf such of the governor's functions as specified by the rules.",
+    "quote": "Rules made under section 39 of this Act may permit the governor of a prison to authorise an officer of the prison, or a class of such officers, to exercise on his behalf such of the governor’s functions as the rules may specify"
+   },
+   {
+    "requirement": "Section 39(1) of the relevant Act is amended to insert the words ' or any other enactment ' after the word 'Act'.",
+    "quote": "in subsection (1), after “Act” there shall be inserted “ or any other enactment ”"
+   },
+   {
+    "requirement": "Section 39(8) of the relevant Act is amended by substituting the words ' any purpose specified in the rules ' for the words 'the purpose so specified'.",
+    "quote": "in subsection (8), for “the purpose so specified” there shall be substituted “ any purpose specified in the rules ”"
+   },
+   {
+    "requirement": "Rules made under section 39 of the relevant Act may confer functions on a governor, without prejudice to the generality of subsection (1) of that section.",
+    "quote": "Rules made under this section may (without prejudice to the generality of subsection (1) above) confer functions on a governor"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 33 of the relevant Act, which concerns miscellaneous duties of a prison governor, ceases to have effect.",
+   "quote": "Section 33 of that Act (miscellaneous duties of prison governor) shall cease to have effect"
+  },
+  {
+   "requirement": "Rules made under section 39 of the relevant Act may permit the governor of a prison to authorise an officer of the prison, or a class of such officers, to exercise on the governor's behalf such of the governor's functions as specified by the rules.",
+   "quote": "Rules made under section 39 of this Act may permit the governor of a prison to authorise an officer of the prison, or a class of such officers, to exercise on his behalf such of the governor’s functions as the rules may specify"
+  },
+  {
+   "requirement": "Section 39(1) of the relevant Act is amended to insert the words ' or any other enactment ' after the word 'Act'.",
+   "quote": "in subsection (1), after “Act” there shall be inserted “ or any other enactment ”"
+  },
+  {
+   "requirement": "Section 39(8) of the relevant Act is amended by substituting the words ' any purpose specified in the rules ' for the words 'the purpose so specified'.",
+   "quote": "in subsection (8), for “the purpose so specified” there shall be substituted “ any purpose specified in the rules ”"
+  },
+  {
+   "requirement": "Rules made under section 39 of the relevant Act may confer functions on a governor, without prejudice to the generality of subsection (1) of that section.",
+   "quote": "Rules made under this section may (without prejudice to the generality of subsection (1) above) confer functions on a governor"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

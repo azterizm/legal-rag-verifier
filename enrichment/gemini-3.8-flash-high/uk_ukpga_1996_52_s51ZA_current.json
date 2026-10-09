@@ -1,0 +1,109 @@
+{
+ "key": "uk/ukpga/1996/52/s51ZA@current",
+ "section": "uk/ukpga/1996/52/s51ZA",
+ "version": "current",
+ "source_sha256": "3bb83aa52f77a30839f029a16996c84b7ded07dfc90874e0b4a8ecf3142f3579",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 51ZA applies where a scheme is approved by the Secretary of State under Schedule 2.",
+    "quote": "This section applies where a scheme is approved by the Secretary of State under Schedule 2."
+   },
+   {
+    "requirement": "The housing ombudsman may issue guidance to the members of the scheme regarding good practice in the carrying on of housing activities covered by the scheme.",
+    "quote": "The housing ombudsman may issue to the members of the scheme guidance as to good practice in the carrying on of housing activities covered by the scheme."
+   },
+   {
+    "requirement": "Before issuing, revising or replacing guidance, the housing ombudsman must consult the Regulator of Social Housing, members of the scheme, and individuals who may make complaints under the scheme.",
+    "quote": "Before issuing, revising or replacing guidance under this section, the housing ombudsman must consult— (a) the Regulator of Social Housing, (b) members of the scheme, and (c) individuals who may make complaints under the scheme."
+   },
+   {
+    "requirement": "If the housing ombudsman issues, revises or replaces guidance under this section, the housing ombudsman must publish that guidance, revised guidance, or replacement guidance.",
+    "quote": "If the housing ombudsman issues, revises or replaces guidance under this section, the housing ombudsman must publish the guidance, the revised guidance or (as the case may be) the replacement guidance."
+   },
+   {
+    "requirement": "The power of the housing ombudsman to make an order under subsection (7) applies if an individual makes a complaint against a member of the scheme, the complaint is made under the scheme or meets the conditions in subsection (6), and it appears to the housing ombudsman that the complaint relates to a matter covered by guidance issued by the ombudsman under this section.",
+    "quote": "Subsection (7) applies if— (a) an individual makes a complaint against a member of the scheme, (b) the complaint is made under the scheme or the conditions in subsection (6) are met in relation to the complaint, and (c) it appears to the housing ombudsman that the complaint relates to a matter to which guidance issued by the ombudsman under this section relates."
+   },
+   {
+    "requirement": "The conditions in subsection (6) are satisfied where the complaint is made to the member of the scheme, could subsequently be made by the individual under the scheme, and has been notified to the ombudsman by the individual.",
+    "quote": "The conditions referred to in subsection (5)(b) are that— (a) the complaint is made to the member of the scheme, (b) the complaint is one that the individual could subsequently make under the scheme, and (c) the individual has notified the ombudsman about the complaint."
+   },
+   {
+    "requirement": "The housing ombudsman may order a member of the scheme to assess whether its policies and practices concerning the matter are consistent with the ombudsman's guidance and to submit to the ombudsman a written statement of the results within a period specified in the order.",
+    "quote": "The housing ombudsman may order the member of the scheme to— (a) assess whether the member’s policies and practices in relation to the matter mentioned in subsection (5)(c) are consistent with the guidance issued by the ombudsman under this section in relation to that matter, and (b) within a period specified in the order, submit to the ombudsman a written statement of the results of the assessment."
+   },
+   {
+    "requirement": "If a member of the scheme fails to comply with an assessment order within the period specified in the order, the housing ombudsman may order the member to publish a statement of that failure in such manner as the ombudsman sees fit.",
+    "quote": "If a member of the scheme fails to comply with an order under subsection (7) within the period specified in the order, the housing ombudsman may order the member to publish in such manner as the ombudsman sees fit a statement that the member has failed to comply with the order."
+   },
+   {
+    "requirement": "If a member of the scheme fails to comply with an order to publish a statement of non-compliance, the housing ombudsman may take appropriate steps to publish what the member ought to have published and recover the costs of doing so from the member.",
+    "quote": "If a member of the scheme fails to comply with an order under subsection (8), the housing ombudsman may— (a) take such steps as the ombudsman considers appropriate to publish what the member ought to have published, and (b) recover from the member the costs of doing so."
+   },
+   {
+    "requirement": "In section 51ZA, the term 'the housing ombudsman' means the housing ombudsman appointed in accordance with the scheme.",
+    "quote": "In this section, “the housing ombudsman” means the housing ombudsman appointed in accordance with the scheme."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period within which the member of the scheme must submit a written statement of assessment results to the housing ombudsman",
+    "value": "period specified in the order",
+    "quote": "within a period specified in the order"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 51ZA applies where a scheme is approved by the Secretary of State under Schedule 2.",
+   "quote": "This section applies where a scheme is approved by the Secretary of State under Schedule 2."
+  },
+  {
+   "requirement": "The housing ombudsman may issue guidance to the members of the scheme regarding good practice in the carrying on of housing activities covered by the scheme.",
+   "quote": "The housing ombudsman may issue to the members of the scheme guidance as to good practice in the carrying on of housing activities covered by the scheme."
+  },
+  {
+   "requirement": "Before issuing, revising or replacing guidance, the housing ombudsman must consult the Regulator of Social Housing, members of the scheme, and individuals who may make complaints under the scheme.",
+   "quote": "Before issuing, revising or replacing guidance under this section, the housing ombudsman must consult— (a) the Regulator of Social Housing, (b) members of the scheme, and (c) individuals who may make complaints under the scheme."
+  },
+  {
+   "requirement": "If the housing ombudsman issues, revises or replaces guidance under this section, the housing ombudsman must publish that guidance, revised guidance, or replacement guidance.",
+   "quote": "If the housing ombudsman issues, revises or replaces guidance under this section, the housing ombudsman must publish the guidance, the revised guidance or (as the case may be) the replacement guidance."
+  },
+  {
+   "requirement": "The power of the housing ombudsman to make an order under subsection (7) applies if an individual makes a complaint against a member of the scheme, the complaint is made under the scheme or meets the conditions in subsection (6), and it appears to the housing ombudsman that the complaint relates to a matter covered by guidance issued by the ombudsman under this section.",
+   "quote": "Subsection (7) applies if— (a) an individual makes a complaint against a member of the scheme, (b) the complaint is made under the scheme or the conditions in subsection (6) are met in relation to the complaint, and (c) it appears to the housing ombudsman that the complaint relates to a matter to which guidance issued by the ombudsman under this section relates."
+  },
+  {
+   "requirement": "The conditions in subsection (6) are satisfied where the complaint is made to the member of the scheme, could subsequently be made by the individual under the scheme, and has been notified to the ombudsman by the individual.",
+   "quote": "The conditions referred to in subsection (5)(b) are that— (a) the complaint is made to the member of the scheme, (b) the complaint is one that the individual could subsequently make under the scheme, and (c) the individual has notified the ombudsman about the complaint."
+  },
+  {
+   "requirement": "The housing ombudsman may order a member of the scheme to assess whether its policies and practices concerning the matter are consistent with the ombudsman's guidance and to submit to the ombudsman a written statement of the results within a period specified in the order.",
+   "quote": "The housing ombudsman may order the member of the scheme to— (a) assess whether the member’s policies and practices in relation to the matter mentioned in subsection (5)(c) are consistent with the guidance issued by the ombudsman under this section in relation to that matter, and (b) within a period specified in the order, submit to the ombudsman a written statement of the results of the assessment."
+  },
+  {
+   "requirement": "If a member of the scheme fails to comply with an assessment order within the period specified in the order, the housing ombudsman may order the member to publish a statement of that failure in such manner as the ombudsman sees fit.",
+   "quote": "If a member of the scheme fails to comply with an order under subsection (7) within the period specified in the order, the housing ombudsman may order the member to publish in such manner as the ombudsman sees fit a statement that the member has failed to comply with the order."
+  },
+  {
+   "requirement": "If a member of the scheme fails to comply with an order to publish a statement of non-compliance, the housing ombudsman may take appropriate steps to publish what the member ought to have published and recover the costs of doing so from the member.",
+   "quote": "If a member of the scheme fails to comply with an order under subsection (8), the housing ombudsman may— (a) take such steps as the ombudsman considers appropriate to publish what the member ought to have published, and (b) recover from the member the costs of doing so."
+  },
+  {
+   "requirement": "In section 51ZA, the term 'the housing ombudsman' means the housing ombudsman appointed in accordance with the scheme.",
+   "quote": "In this section, “the housing ombudsman” means the housing ombudsman appointed in accordance with the scheme."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

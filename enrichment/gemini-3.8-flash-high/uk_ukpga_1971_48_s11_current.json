@@ -1,0 +1,103 @@
+{
+ "key": "uk/ukpga/1971/48/s11@current",
+ "section": "uk/ukpga/1971/48/s11",
+ "version": "current",
+ "source_sha256": "e0b6d78b4a1ce29e606d96bc6af0e29189d3a654c08d635e1897658bb25e1657",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The common law offence of arson is abolished.",
+    "quote": "The common law offence of arson is hereby abolished."
+   },
+   {
+    "requirement": "Paragraph (h), specifying the Criminal Damage Act 1971, is added after paragraph (g) in paragraph 3 of the Schedule to the Visiting Forces Act 1952.",
+    "quote": "after paragraph (g) (which was inserted by the Theft Act 1968 ) there shall be added the following paragraph:— “ (h) the Criminal Damage Act 1971. ”"
+   },
+   {
+    "requirement": "Paragraph 1 of Schedule 1 to the Firearms Act 1968 is substituted with offences under section 1 of the Criminal Damage Act 1971.",
+    "quote": "for paragraph 1 there shall be substituted the following paragraph:— “ 1. Offences under section 1 of the Criminal Damage Act 1971. ”"
+   },
+   {
+    "requirement": "The enactments listed in the Schedule to the Criminal Damage Act 1971 are repealed to the extent set out in column 3 of that Schedule.",
+    "quote": "The enactments mentioned in the Schedule to this Act are hereby repealed to the extent specified in column 3 of that Schedule"
+   },
+   {
+    "requirement": "Where an enactment repealed by the Criminal Damage Act 1971 has been applied by or incorporated into another Act, that enactment is also repealed as applied or incorporated.",
+    "quote": "where any such enactment has been applied by or incorporated in any other Act the repeal shall extend so as to repeal that enactment as so applied or incorporated."
+   },
+   {
+    "requirement": "The Secretary of State may, after consulting any person appearing to be concerned, by order amend or repeal a local statutory provision that appears to be inconsistent with or rendered unnecessary by the Criminal Damage Act 1971 to bring it into conformity with the Act.",
+    "quote": "Where it appears to the Secretary of State that a local statutory provision is inconsistent with or has become unnecessary in consequence of this Act he may, after consultation with any person appearing to him to be concerned with that provision, by order amend that provision so as to bring it into conformity with this Act or repeal it."
+   },
+   {
+    "requirement": "A local statutory provision is defined as a provision of a local Act (including an Act confirming a provisional order), a provision of a public general Act passed with respect only to a particular area or undertaking, a provision of an instrument made under any such local or public general Act, or a provision of an instrument in the nature of a local enactment made under any other Act.",
+    "quote": "“local statutory provision” means a provision of a local Act (including an Act confirming a provisional order) or a provision of a public general Act passed with respect only to a particular area or a particular undertaking or a provision of an instrument made under any such local or public general Act or of an instrument in the nature of a local enactment made under any other Act."
+   },
+   {
+    "requirement": "An order made by the Secretary of State under section 11 of the Criminal Damage Act 1971 must be made by statutory instrument.",
+    "quote": "An order made under this section shall be made by statutory instrument"
+   },
+   {
+    "requirement": "A statutory instrument made under section 11 of the Criminal Damage Act 1971 is subject to annulment in pursuance of a resolution of either House of Parliament.",
+    "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament."
+   },
+   {
+    "requirement": "The repeal of an enactment relating to procedure or jurisdictional powers of a court under section 11 of the Criminal Damage Act 1971 or an order made under it does not affect the enactment's operation regarding offences committed before the repeal takes effect or proceedings for those offences.",
+    "quote": "The repeal by this section or an order made thereunder of any enactment relating to procedure or to the jurisdictional powers of any court shall not affect the operation of that enactment in relation to offences committed before the repeal takes effect or to proceedings for any such offence."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The common law offence of arson is abolished.",
+   "quote": "The common law offence of arson is hereby abolished."
+  },
+  {
+   "requirement": "Paragraph (h), specifying the Criminal Damage Act 1971, is added after paragraph (g) in paragraph 3 of the Schedule to the Visiting Forces Act 1952.",
+   "quote": "after paragraph (g) (which was inserted by the Theft Act 1968 ) there shall be added the following paragraph:— “ (h) the Criminal Damage Act 1971. ”"
+  },
+  {
+   "requirement": "Paragraph 1 of Schedule 1 to the Firearms Act 1968 is substituted with offences under section 1 of the Criminal Damage Act 1971.",
+   "quote": "for paragraph 1 there shall be substituted the following paragraph:— “ 1. Offences under section 1 of the Criminal Damage Act 1971. ”"
+  },
+  {
+   "requirement": "The enactments listed in the Schedule to the Criminal Damage Act 1971 are repealed to the extent set out in column 3 of that Schedule.",
+   "quote": "The enactments mentioned in the Schedule to this Act are hereby repealed to the extent specified in column 3 of that Schedule"
+  },
+  {
+   "requirement": "Where an enactment repealed by the Criminal Damage Act 1971 has been applied by or incorporated into another Act, that enactment is also repealed as applied or incorporated.",
+   "quote": "where any such enactment has been applied by or incorporated in any other Act the repeal shall extend so as to repeal that enactment as so applied or incorporated."
+  },
+  {
+   "requirement": "The Secretary of State may, after consulting any person appearing to be concerned, by order amend or repeal a local statutory provision that appears to be inconsistent with or rendered unnecessary by the Criminal Damage Act 1971 to bring it into conformity with the Act.",
+   "quote": "Where it appears to the Secretary of State that a local statutory provision is inconsistent with or has become unnecessary in consequence of this Act he may, after consultation with any person appearing to him to be concerned with that provision, by order amend that provision so as to bring it into conformity with this Act or repeal it."
+  },
+  {
+   "requirement": "A local statutory provision is defined as a provision of a local Act (including an Act confirming a provisional order), a provision of a public general Act passed with respect only to a particular area or undertaking, a provision of an instrument made under any such local or public general Act, or a provision of an instrument in the nature of a local enactment made under any other Act.",
+   "quote": "“local statutory provision” means a provision of a local Act (including an Act confirming a provisional order) or a provision of a public general Act passed with respect only to a particular area or a particular undertaking or a provision of an instrument made under any such local or public general Act or of an instrument in the nature of a local enactment made under any other Act."
+  },
+  {
+   "requirement": "An order made by the Secretary of State under section 11 of the Criminal Damage Act 1971 must be made by statutory instrument.",
+   "quote": "An order made under this section shall be made by statutory instrument"
+  },
+  {
+   "requirement": "A statutory instrument made under section 11 of the Criminal Damage Act 1971 is subject to annulment in pursuance of a resolution of either House of Parliament.",
+   "quote": "shall be subject to annulment in pursuance of a resolution of either House of Parliament."
+  },
+  {
+   "requirement": "The repeal of an enactment relating to procedure or jurisdictional powers of a court under section 11 of the Criminal Damage Act 1971 or an order made under it does not affect the enactment's operation regarding offences committed before the repeal takes effect or proceedings for those offences.",
+   "quote": "The repeal by this section or an order made thereunder of any enactment relating to procedure or to the jurisdictional powers of any court shall not affect the operation of that enactment in relation to offences committed before the repeal takes effect or to proceedings for any such offence."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

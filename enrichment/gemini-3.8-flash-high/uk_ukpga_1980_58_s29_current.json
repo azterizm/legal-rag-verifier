@@ -1,0 +1,115 @@
+{
+ "key": "uk/ukpga/1980/58/s29@current",
+ "section": "uk/ukpga/1980/58/s29",
+ "version": "current",
+ "source_sha256": "4940c4fde9dd7fc798bb26dce2a116b15b59ceaabfd36d4658ef7337c3160096",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subsections (2) and (3) of section 29 apply where any right of action (including a foreclosure action) to recover land or an advowson or any right of a mortgagee of personal property to bring a foreclosure action in respect of the property has accrued.",
+    "quote": "Subsections (2) and (3) below apply where any right of action (including a foreclosure action) to recover land or an advowson"
+   },
+   {
+    "requirement": "If the person in possession of the land, benefice, or personal property in question acknowledges the title of the person to whom the right of action has accrued, that right shall be treated as having accrued on and not before the date of the acknowledgment.",
+    "quote": "the right shall be treated as having accrued on and not before the date of the acknowledgment"
+   },
+   {
+    "requirement": "In the case of a right of action to recover land that has accrued to a person entitled to an estate or interest taking effect on the determination of an entailed interest against whom time is running under section 27 of the Limitation Act 1980, section 27 ceases to apply to the land if the person in possession acknowledges the title.",
+    "quote": "section 27 shall thereupon cease to apply to the land"
+   },
+   {
+    "requirement": "In the case of a foreclosure or other action by a mortgagee, if the person in possession of the land, benefice, or personal property in question or the person liable for the mortgage debt makes any payment in respect of the debt (whether of principal or interest), the right of action shall be treated as having accrued on and not before the date of the payment.",
+    "quote": "the right shall be treated as having accrued on and not before the date of the payment"
+   },
+   {
+    "requirement": "Where a mortgagee is by virtue of the mortgage in possession of any mortgaged land and either receives any sum in respect of the principal or interest of the mortgage debt or acknowledges the title of the mortgagor or his equity of redemption, an action to redeem the land in the mortgagee's possession may be brought at any time before twelve years expire from the date of the payment or acknowledgment.",
+    "quote": "an action to redeem the land in his possession may be brought at any time before the expiration of twelve years from the date of the payment or acknowledgment"
+   },
+   {
+    "requirement": "Subject to subsection (6), where any right of action has accrued to recover any debt or other liquidated pecuniary claim, or any claim to the personal estate of a deceased person or to any share or interest in any such estate, and the person liable or accountable acknowledges the claim or makes any payment in respect of it, the right shall be treated as having accrued on and not before the date of the acknowledgment or payment.",
+    "quote": "the right shall be treated as having accrued on and not before the date of the acknowledgment or payment"
+   },
+   {
+    "requirement": "A payment of a part of the rent or interest due at any time shall not extend the limitation period for claiming the remainder then due.",
+    "quote": "A payment of a part of the rent or interest due at any time shall not extend the period for claiming the remainder then due"
+   },
+   {
+    "requirement": "Any payment of interest shall be treated as a payment in respect of the principal debt.",
+    "quote": "any payment of interest shall be treated as a payment in respect of the principal debt"
+   },
+   {
+    "requirement": "Subject to subsection (6), a current period of limitation may be repeatedly extended under section 29 by further acknowledgments or payments.",
+    "quote": "a current period of limitation may be repeatedly extended under this section by further acknowledgments or payments"
+   },
+   {
+    "requirement": "A right of action, once barred by the Limitation Act 1980, shall not be revived by any subsequent acknowledgment or payment.",
+    "quote": "a right of action, once barred by this Act, shall not be revived by any subsequent acknowledgment or payment"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period from the date of payment or acknowledgment within which an action to redeem mortgaged land in the mortgagee's possession may be brought",
+    "value": "twelve years",
+    "quote": "before the expiration of twelve years from the date of the payment or acknowledgment"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subsections (2) and (3) of section 29 apply where any right of action (including a foreclosure action) to recover land or an advowson or any right of a mortgagee of personal property to bring a foreclosure action in respect of the property has accrued.",
+   "quote": "Subsections (2) and (3) below apply where any right of action (including a foreclosure action) to recover land or an advowson"
+  },
+  {
+   "requirement": "If the person in possession of the land, benefice, or personal property in question acknowledges the title of the person to whom the right of action has accrued, that right shall be treated as having accrued on and not before the date of the acknowledgment.",
+   "quote": "the right shall be treated as having accrued on and not before the date of the acknowledgment"
+  },
+  {
+   "requirement": "In the case of a right of action to recover land that has accrued to a person entitled to an estate or interest taking effect on the determination of an entailed interest against whom time is running under section 27 of the Limitation Act 1980, section 27 ceases to apply to the land if the person in possession acknowledges the title.",
+   "quote": "section 27 shall thereupon cease to apply to the land"
+  },
+  {
+   "requirement": "In the case of a foreclosure or other action by a mortgagee, if the person in possession of the land, benefice, or personal property in question or the person liable for the mortgage debt makes any payment in respect of the debt (whether of principal or interest), the right of action shall be treated as having accrued on and not before the date of the payment.",
+   "quote": "the right shall be treated as having accrued on and not before the date of the payment"
+  },
+  {
+   "requirement": "Where a mortgagee is by virtue of the mortgage in possession of any mortgaged land and either receives any sum in respect of the principal or interest of the mortgage debt or acknowledges the title of the mortgagor or his equity of redemption, an action to redeem the land in the mortgagee's possession may be brought at any time before twelve years expire from the date of the payment or acknowledgment.",
+   "quote": "an action to redeem the land in his possession may be brought at any time before the expiration of twelve years from the date of the payment or acknowledgment"
+  },
+  {
+   "requirement": "Subject to subsection (6), where any right of action has accrued to recover any debt or other liquidated pecuniary claim, or any claim to the personal estate of a deceased person or to any share or interest in any such estate, and the person liable or accountable acknowledges the claim or makes any payment in respect of it, the right shall be treated as having accrued on and not before the date of the acknowledgment or payment.",
+   "quote": "the right shall be treated as having accrued on and not before the date of the acknowledgment or payment"
+  },
+  {
+   "requirement": "A payment of a part of the rent or interest due at any time shall not extend the limitation period for claiming the remainder then due.",
+   "quote": "A payment of a part of the rent or interest due at any time shall not extend the period for claiming the remainder then due"
+  },
+  {
+   "requirement": "Any payment of interest shall be treated as a payment in respect of the principal debt.",
+   "quote": "any payment of interest shall be treated as a payment in respect of the principal debt"
+  },
+  {
+   "requirement": "Subject to subsection (6), a current period of limitation may be repeatedly extended under section 29 by further acknowledgments or payments.",
+   "quote": "a current period of limitation may be repeatedly extended under this section by further acknowledgments or payments"
+  },
+  {
+   "requirement": "A right of action, once barred by the Limitation Act 1980, shall not be revived by any subsequent acknowledgment or payment.",
+   "quote": "a right of action, once barred by this Act, shall not be revived by any subsequent acknowledgment or payment"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "period from the date of payment or acknowledgment within which an action to redeem mortgaged land in the mortgagee's possession may be brought",
+   "value": "twelve years",
+   "quote": "before the expiration of twelve years from the date of the payment or acknowledgment"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 10,
+  "elements_verified": 10,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

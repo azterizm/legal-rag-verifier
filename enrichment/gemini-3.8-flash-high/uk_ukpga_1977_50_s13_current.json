@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1977/50/s13@current",
+ "section": "uk/ukpga/1977/50/s13",
+ "version": "current",
+ "source_sha256": "26004c351f8c7466b00ee453492285a1541df7c495f34a89a70d4ce6f01f394c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents making that liability or its enforcement subject to restrictive or onerous conditions.",
+    "quote": "making the liability or its enforcement subject to restrictive or onerous conditions"
+   },
+   {
+    "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents excluding or restricting any right or remedy in respect of that liability.",
+    "quote": "excluding or restricting any right or remedy in respect of the liability"
+   },
+   {
+    "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents subjecting a person to any prejudice in consequence of pursuing any right or remedy in respect of that liability.",
+    "quote": "subjecting a person to any prejudice in consequence of his pursuing any such right or remedy"
+   },
+   {
+    "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents excluding or restricting rules of evidence or procedure.",
+    "quote": "excluding or restricting rules of evidence or procedure"
+   },
+   {
+    "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of liability, sections 2, 6 and 7 also prevent excluding or restricting liability by reference to terms and notices that exclude or restrict the relevant obligation or duty.",
+    "quote": "sections 2 , 6 and 7 also prevent excluding or restricting liability by reference to terms and notices which exclude or restrict the relevant obligation or duty"
+   },
+   {
+    "requirement": "An agreement in writing to submit present or future differences to arbitration is not to be treated under Part I of the Act as excluding or restricting any liability.",
+    "quote": "an agreement in writing to submit present or future differences to arbitration is not to be treated under this Part of this Act as excluding or restricting any liability"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents making that liability or its enforcement subject to restrictive or onerous conditions.",
+   "quote": "making the liability or its enforcement subject to restrictive or onerous conditions"
+  },
+  {
+   "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents excluding or restricting any right or remedy in respect of that liability.",
+   "quote": "excluding or restricting any right or remedy in respect of the liability"
+  },
+  {
+   "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents subjecting a person to any prejudice in consequence of pursuing any right or remedy in respect of that liability.",
+   "quote": "subjecting a person to any prejudice in consequence of his pursuing any such right or remedy"
+  },
+  {
+   "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of any liability, it also prevents excluding or restricting rules of evidence or procedure.",
+   "quote": "excluding or restricting rules of evidence or procedure"
+  },
+  {
+   "requirement": "To the extent that Part I of the Act prevents the exclusion or restriction of liability, sections 2, 6 and 7 also prevent excluding or restricting liability by reference to terms and notices that exclude or restrict the relevant obligation or duty.",
+   "quote": "sections 2 , 6 and 7 also prevent excluding or restricting liability by reference to terms and notices which exclude or restrict the relevant obligation or duty"
+  },
+  {
+   "requirement": "An agreement in writing to submit present or future differences to arbitration is not to be treated under Part I of the Act as excluding or restricting any liability.",
+   "quote": "an agreement in writing to submit present or future differences to arbitration is not to be treated under this Part of this Act as excluding or restricting any liability"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

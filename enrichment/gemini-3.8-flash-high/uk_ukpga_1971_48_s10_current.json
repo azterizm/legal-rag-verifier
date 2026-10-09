@@ -1,0 +1,127 @@
+{
+ "key": "uk/ukpga/1971/48/s10@current",
+ "section": "uk/ukpga/1971/48/s10",
+ "version": "current",
+ "source_sha256": "67a258ce19bbdbabe0bf802b312064d12e67f87afea200f3c63a85d2282d5442",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of the Criminal Damage Act 1971, \"property\" means property of a tangible nature, whether real or personal, including money.",
+    "quote": "“property” means property of a tangible nature, whether real or personal, including money"
+   },
+   {
+    "requirement": "The definition of property includes wild creatures that have been tamed or are ordinarily kept in captivity.",
+    "quote": "including wild creatures which have been tamed or are ordinarily kept in captivity"
+   },
+   {
+    "requirement": "The definition of property includes other wild creatures or their carcasses if, but only if, they have been reduced into possession which has not been lost or abandoned, or are in the course of being reduced into possession.",
+    "quote": "any other wild creatures or their carcasses if, but only if, they have been reduced into possession which has not been lost or abandoned or are in the course of being reduced into possession"
+   },
+   {
+    "requirement": "The definition of property does not include mushrooms growing wild on any land.",
+    "quote": "not including mushrooms growing wild on any land"
+   },
+   {
+    "requirement": "The definition of property does not include flowers, fruit, or foliage of a plant growing wild on any land.",
+    "quote": "flowers, fruit or foliage of a plant growing wild on any land"
+   },
+   {
+    "requirement": "For the purposes of subsection (1) of section 10, \"mushroom\" includes any fungus.",
+    "quote": "“mushroom” includes any fungus"
+   },
+   {
+    "requirement": "For the purposes of subsection (1) of section 10, \"plant\" includes any shrub or tree.",
+    "quote": "“plant” includes any shrub or tree"
+   },
+   {
+    "requirement": "Property is treated for the purposes of the Criminal Damage Act 1971 as belonging to any person having custody or control of that property.",
+    "quote": "having the custody or control of it"
+   },
+   {
+    "requirement": "Property is treated for the purposes of the Criminal Damage Act 1971 as belonging to any person having any proprietary right or interest in that property, excluding an equitable interest that arises only from an agreement to transfer or grant an interest.",
+    "quote": "having in it any proprietary right or interest (not being an equitable interest arising only from an agreement to transfer or grant an interest)"
+   },
+   {
+    "requirement": "Property is treated for the purposes of the Criminal Damage Act 1971 as belonging to any person having a charge on that property.",
+    "quote": "having a charge on it"
+   },
+   {
+    "requirement": "Where property is subject to a trust, the persons to whom the property belongs are treated as including any person having a right to enforce the trust.",
+    "quote": "Where property is subject to a trust, the persons to whom it belongs shall be so treated as including any person having a right to enforce the trust"
+   },
+   {
+    "requirement": "Property of a corporation sole is treated as belonging to the corporation notwithstanding any vacancy in the corporation.",
+    "quote": "Property of a corporation sole shall be so treated as belonging to the corporation notwithstanding a vacancy in the corporation"
+   },
+   {
+    "requirement": "For the purposes of the Criminal Damage Act 1971, a modification of the contents of a computer shall not be regarded as damaging any computer or computer storage medium unless its effect on that computer or computer storage medium impairs its physical condition.",
+    "quote": "a modification of the contents of a computer shall not be regarded as damaging any computer or computer storage medium unless its effect on that computer or computer storage medium impairs its physical condition"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of the Criminal Damage Act 1971, \"property\" means property of a tangible nature, whether real or personal, including money.",
+   "quote": "“property” means property of a tangible nature, whether real or personal, including money"
+  },
+  {
+   "requirement": "The definition of property includes wild creatures that have been tamed or are ordinarily kept in captivity.",
+   "quote": "including wild creatures which have been tamed or are ordinarily kept in captivity"
+  },
+  {
+   "requirement": "The definition of property includes other wild creatures or their carcasses if, but only if, they have been reduced into possession which has not been lost or abandoned, or are in the course of being reduced into possession.",
+   "quote": "any other wild creatures or their carcasses if, but only if, they have been reduced into possession which has not been lost or abandoned or are in the course of being reduced into possession"
+  },
+  {
+   "requirement": "The definition of property does not include mushrooms growing wild on any land.",
+   "quote": "not including mushrooms growing wild on any land"
+  },
+  {
+   "requirement": "The definition of property does not include flowers, fruit, or foliage of a plant growing wild on any land.",
+   "quote": "flowers, fruit or foliage of a plant growing wild on any land"
+  },
+  {
+   "requirement": "For the purposes of subsection (1) of section 10, \"mushroom\" includes any fungus.",
+   "quote": "“mushroom” includes any fungus"
+  },
+  {
+   "requirement": "For the purposes of subsection (1) of section 10, \"plant\" includes any shrub or tree.",
+   "quote": "“plant” includes any shrub or tree"
+  },
+  {
+   "requirement": "Property is treated for the purposes of the Criminal Damage Act 1971 as belonging to any person having custody or control of that property.",
+   "quote": "having the custody or control of it"
+  },
+  {
+   "requirement": "Property is treated for the purposes of the Criminal Damage Act 1971 as belonging to any person having any proprietary right or interest in that property, excluding an equitable interest that arises only from an agreement to transfer or grant an interest.",
+   "quote": "having in it any proprietary right or interest (not being an equitable interest arising only from an agreement to transfer or grant an interest)"
+  },
+  {
+   "requirement": "Property is treated for the purposes of the Criminal Damage Act 1971 as belonging to any person having a charge on that property.",
+   "quote": "having a charge on it"
+  },
+  {
+   "requirement": "Where property is subject to a trust, the persons to whom the property belongs are treated as including any person having a right to enforce the trust.",
+   "quote": "Where property is subject to a trust, the persons to whom it belongs shall be so treated as including any person having a right to enforce the trust"
+  },
+  {
+   "requirement": "Property of a corporation sole is treated as belonging to the corporation notwithstanding any vacancy in the corporation.",
+   "quote": "Property of a corporation sole shall be so treated as belonging to the corporation notwithstanding a vacancy in the corporation"
+  },
+  {
+   "requirement": "For the purposes of the Criminal Damage Act 1971, a modification of the contents of a computer shall not be regarded as damaging any computer or computer storage medium unless its effect on that computer or computer storage medium impairs its physical condition.",
+   "quote": "a modification of the contents of a computer shall not be regarded as damaging any computer or computer storage medium unless its effect on that computer or computer storage medium impairs its physical condition"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

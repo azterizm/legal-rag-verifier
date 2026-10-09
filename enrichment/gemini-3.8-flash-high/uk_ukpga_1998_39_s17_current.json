@@ -1,0 +1,77 @@
+{
+ "key": "uk/ukpga/1998/39/s17@current",
+ "section": "uk/ukpga/1998/39/s17",
+ "version": "current",
+ "source_sha256": "294f944aec4a45de4b63ff4179b1f9611db6005d5d3ed4d28d6c6e8e664e32bc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A worker who qualifies for the national minimum wage and is remunerated by their employer for any pay reference period at a rate less than the national minimum wage is entitled under their contract to receive, as additional remuneration for that period at the time of determination, the higher of the amount described in subsection (2) and the amount described in subsection (4).",
+    "quote": "whichever is the higher of— (a) the amount described in subsection (2) below, and (b) the amount described in subsection (4) below"
+   },
+   {
+    "requirement": "The amount described in subsection (2) is calculated as the difference between the relevant remuneration received by the worker for the pay reference period and the relevant remuneration the worker would have received for that period had the employer paid them at a rate equal to the national minimum wage.",
+    "quote": "the difference between— (a) the relevant remuneration received by the worker for the pay reference period; and (b) the relevant remuneration which the worker would have received for that period had he been remunerated by the employer at a rate equal to the national minimum wage"
+   },
+   {
+    "requirement": "Relevant remuneration for the calculation under subsection (2) is defined as remuneration that falls to be brought into account for the purposes of regulations under section 2.",
+    "quote": "remuneration which falls to be brought into account for the purposes of regulations under section 2 above"
+   },
+   {
+    "requirement": "The amount described in subsection (4) is determined by the formula AR1×R2, where A is the subsection (2) amount, R1 is the national minimum wage rate payable for the worker during the pay reference period, and R2 is the national minimum wage rate that would have been payable for that period if determined by regulations under sections 1 and 3 in force at the time of determination.",
+    "quote": "determined by the formula— AR1×R2where— A is the amount described in subsection (2) above,R1 is the rate of national minimum wage which was payable in respect of the worker during the pay reference period, andR2 is the rate of national minimum wage which would have been payable in respect of the worker during that period"
+   },
+   {
+    "requirement": "Subsection (1) ceases to apply to a worker in respect of a pay reference period once the worker is paid the additional remuneration for that period to which they are entitled under that subsection.",
+    "quote": "ceases to apply to a worker in relation to any pay reference period when he is at any time paid the additional remuneration for that period to which he is at that time entitled under that subsection"
+   },
+   {
+    "requirement": "Where any additional remuneration is paid to a worker in respect of a pay reference period but subsection (1) has not ceased to apply, the amounts calculated under subsections (2) and (4) must be treated as reduced by the amount of remuneration already paid.",
+    "quote": "the amounts described in subsections (2) and (4) above shall be regarded as reduced by the amount of that remuneration"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the period of remuneration over which the rate of pay is evaluated",
+    "value": "pay reference period",
+    "quote": "remunerated for any pay reference period"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A worker who qualifies for the national minimum wage and is remunerated by their employer for any pay reference period at a rate less than the national minimum wage is entitled under their contract to receive, as additional remuneration for that period at the time of determination, the higher of the amount described in subsection (2) and the amount described in subsection (4).",
+   "quote": "whichever is the higher of— (a) the amount described in subsection (2) below, and (b) the amount described in subsection (4) below"
+  },
+  {
+   "requirement": "The amount described in subsection (2) is calculated as the difference between the relevant remuneration received by the worker for the pay reference period and the relevant remuneration the worker would have received for that period had the employer paid them at a rate equal to the national minimum wage.",
+   "quote": "the difference between— (a) the relevant remuneration received by the worker for the pay reference period; and (b) the relevant remuneration which the worker would have received for that period had he been remunerated by the employer at a rate equal to the national minimum wage"
+  },
+  {
+   "requirement": "Relevant remuneration for the calculation under subsection (2) is defined as remuneration that falls to be brought into account for the purposes of regulations under section 2.",
+   "quote": "remuneration which falls to be brought into account for the purposes of regulations under section 2 above"
+  },
+  {
+   "requirement": "The amount described in subsection (4) is determined by the formula AR1×R2, where A is the subsection (2) amount, R1 is the national minimum wage rate payable for the worker during the pay reference period, and R2 is the national minimum wage rate that would have been payable for that period if determined by regulations under sections 1 and 3 in force at the time of determination.",
+   "quote": "determined by the formula— AR1×R2where— A is the amount described in subsection (2) above,R1 is the rate of national minimum wage which was payable in respect of the worker during the pay reference period, andR2 is the rate of national minimum wage which would have been payable in respect of the worker during that period"
+  },
+  {
+   "requirement": "Subsection (1) ceases to apply to a worker in respect of a pay reference period once the worker is paid the additional remuneration for that period to which they are entitled under that subsection.",
+   "quote": "ceases to apply to a worker in relation to any pay reference period when he is at any time paid the additional remuneration for that period to which he is at that time entitled under that subsection"
+  },
+  {
+   "requirement": "Where any additional remuneration is paid to a worker in respect of a pay reference period but subsection (1) has not ceased to apply, the amounts calculated under subsections (2) and (4) must be treated as reduced by the amount of remuneration already paid.",
+   "quote": "the amounts described in subsections (2) and (4) above shall be regarded as reduced by the amount of that remuneration"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

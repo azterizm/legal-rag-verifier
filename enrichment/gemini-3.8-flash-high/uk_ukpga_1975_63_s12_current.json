@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1975/63/s12@current",
+ "section": "uk/ukpga/1975/63/s12",
+ "version": "current",
+ "source_sha256": "c2ccec3f05dc7c83804719a3500a2108b862edab6272c98da620f2d2cc7261db",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where the exercise of powers under section 10 or 11 of the Act is conditional on the court being satisfied that a disposition or contract was made by a deceased person with the intention of defeating an application for financial provision, that condition is fulfilled if the court is of the opinion that, on a balance of probabilities, the deceased's intention (though not necessarily the deceased's sole intention) in making the disposition or contract was to prevent an order for financial provision being made under the Act or to reduce the amount of provision that might otherwise be granted.",
+    "quote": "that condition shall be fulfilled if the court is of the opinion that, on a balance of probabilities, the intention of the deceased (though not necessarily his sole intention) in making the disposition or contract was to prevent an order for financial provision being made under this Act or to reduce the amount of the provision which might otherwise be granted by an order thereunder"
+   },
+   {
+    "requirement": "Where an application is made under section 11 of the Act regarding any contract made by the deceased and no valuable consideration was given or promised by any person for that contract, it shall be presumed, unless the contrary is shown, that the deceased made that contract with the intention of defeating an application for financial provision under the Act.",
+    "quote": "it shall be presumed, unless the contrary is shown, that the deceased made that contract with the intention of defeating an application for financial provision under this Act"
+   },
+   {
+    "requirement": "Where the court makes an order under section 10 or 11 of the Act, the court may give such consequential directions as it thinks fit (including directions requiring the making of any payment or the transfer of any property) for giving effect to the order or for securing a fair adjustment of the rights of the persons affected by it.",
+    "quote": "Where the court makes an order under section 10 or 11 of this Act it may give such consequential directions as it thinks fit (including directions requiring the making of any payment or the transfer of any property) for giving effect to the order or for securing a fair adjustment of the rights of the persons affected thereby"
+   },
+   {
+    "requirement": "Any power conferred on the court by section 10 or 11 of the Act to order a donee, in relation to any disposition or contract, to provide any sum of money or other property is exercisable in like manner in relation to the personal representative of the donee.",
+    "quote": "Any power conferred on the court by the said section 10 or 11 to order the donee, in relation to any disposition or contract, to provide any sum of money or other property shall be exercisable in like manner in relation to the personal representative of the donee"
+   },
+   {
+    "requirement": "Any reference in section 10(4) of the Act to the disposal of property by the donee includes a reference to disposal by the personal representative of the donee.",
+    "quote": "any reference in section 10(4) to the disposal of property by the donee shall include a reference to disposal by the personal representative of the donee"
+   },
+   {
+    "requirement": "Any reference in section 10(5) of the Act to an application by the donee under that subsection includes a reference to an application by the personal representative of the donee.",
+    "quote": "any reference in section 10(5) to an application by the donee under that subsection shall include a reference to an application by the personal representative of the donee"
+   },
+   {
+    "requirement": "The court does not have power under section 10 or 11 of the Act to make an order in respect of any property forming part of the estate of the donee which has been distributed by the personal representative.",
+    "quote": "the court shall not have power under the said section 10 or 11 to make an order in respect of any property forming part of the estate of the donee which has been distributed by the personal representative"
+   },
+   {
+    "requirement": "The personal representative of the donee shall not be liable for having distributed property forming part of the donee's estate before having notice of the making of an application under section 10 or 11 of the Act on the ground that the personal representative ought to have taken into account the possibility that such an application would be made.",
+    "quote": "the personal representative shall not be liable for having distributed any such property before he has notice of the making of an application under the said section 10 or 11 on the ground that he ought to have taken into account the possibility that such an application would be made"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Where the exercise of powers under section 10 or 11 of the Act is conditional on the court being satisfied that a disposition or contract was made by a deceased person with the intention of defeating an application for financial provision, that condition is fulfilled if the court is of the opinion that, on a balance of probabilities, the deceased's intention (though not necessarily the deceased's sole intention) in making the disposition or contract was to prevent an order for financial provision being made under the Act or to reduce the amount of provision that might otherwise be granted.",
+   "quote": "that condition shall be fulfilled if the court is of the opinion that, on a balance of probabilities, the intention of the deceased (though not necessarily his sole intention) in making the disposition or contract was to prevent an order for financial provision being made under this Act or to reduce the amount of the provision which might otherwise be granted by an order thereunder"
+  },
+  {
+   "requirement": "Where an application is made under section 11 of the Act regarding any contract made by the deceased and no valuable consideration was given or promised by any person for that contract, it shall be presumed, unless the contrary is shown, that the deceased made that contract with the intention of defeating an application for financial provision under the Act.",
+   "quote": "it shall be presumed, unless the contrary is shown, that the deceased made that contract with the intention of defeating an application for financial provision under this Act"
+  },
+  {
+   "requirement": "Where the court makes an order under section 10 or 11 of the Act, the court may give such consequential directions as it thinks fit (including directions requiring the making of any payment or the transfer of any property) for giving effect to the order or for securing a fair adjustment of the rights of the persons affected by it.",
+   "quote": "Where the court makes an order under section 10 or 11 of this Act it may give such consequential directions as it thinks fit (including directions requiring the making of any payment or the transfer of any property) for giving effect to the order or for securing a fair adjustment of the rights of the persons affected thereby"
+  },
+  {
+   "requirement": "Any power conferred on the court by section 10 or 11 of the Act to order a donee, in relation to any disposition or contract, to provide any sum of money or other property is exercisable in like manner in relation to the personal representative of the donee.",
+   "quote": "Any power conferred on the court by the said section 10 or 11 to order the donee, in relation to any disposition or contract, to provide any sum of money or other property shall be exercisable in like manner in relation to the personal representative of the donee"
+  },
+  {
+   "requirement": "Any reference in section 10(4) of the Act to the disposal of property by the donee includes a reference to disposal by the personal representative of the donee.",
+   "quote": "any reference in section 10(4) to the disposal of property by the donee shall include a reference to disposal by the personal representative of the donee"
+  },
+  {
+   "requirement": "Any reference in section 10(5) of the Act to an application by the donee under that subsection includes a reference to an application by the personal representative of the donee.",
+   "quote": "any reference in section 10(5) to an application by the donee under that subsection shall include a reference to an application by the personal representative of the donee"
+  },
+  {
+   "requirement": "The court does not have power under section 10 or 11 of the Act to make an order in respect of any property forming part of the estate of the donee which has been distributed by the personal representative.",
+   "quote": "the court shall not have power under the said section 10 or 11 to make an order in respect of any property forming part of the estate of the donee which has been distributed by the personal representative"
+  },
+  {
+   "requirement": "The personal representative of the donee shall not be liable for having distributed property forming part of the donee's estate before having notice of the making of an application under section 10 or 11 of the Act on the ground that the personal representative ought to have taken into account the possibility that such an application would be made.",
+   "quote": "the personal representative shall not be liable for having distributed any such property before he has notice of the making of an application under the said section 10 or 11 on the ground that he ought to have taken into account the possibility that such an application would be made"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

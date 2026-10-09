@@ -1,0 +1,112 @@
+{
+ "key": "uk/ukpga/1986/45/s136@current",
+ "section": "uk/ukpga/1986/45/s136",
+ "version": "current",
+ "source_sha256": "d429bf88611f162126ceb7bcafd7bb79e5a42d394df4492bd8071a492ff91b92",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Subject to section 140, the provisions of section 136 take effect upon a winding-up order being made by the court in England and Wales.",
+    "quote": "subject to section 140 below, on a winding-up order being made by the court in England and Wales"
+   },
+   {
+    "requirement": "The official receiver becomes the liquidator of the company by virtue of office and remains in office until another person becomes liquidator under the provisions of this Part.",
+    "quote": "The official receiver, by virtue of his office, becomes the liquidator of the company and continues in office until another person becomes liquidator under the provisions of this Part."
+   },
+   {
+    "requirement": "The official receiver serves as the liquidator of the company by virtue of office during any vacancy.",
+    "quote": "The official receiver is, by virtue of his office, the liquidator during any vacancy."
+   },
+   {
+    "requirement": "At any time while serving as liquidator of the company, the official receiver is permitted in accordance with the rules to seek nominations from the company's creditors and contributories to choose a person to replace the official receiver as liquidator.",
+    "quote": "seek nominations from the company’s creditors and contributories for the purpose of choosing a person to be liquidator of the company in place of the official receiver"
+   },
+   {
+    "requirement": "The official receiver must decide whether to seek nominations under subsection (4) as soon as practicable within the 12-week period beginning with the day the winding-up order was made.",
+    "quote": "as soon as practicable in the period of 12 weeks beginning with the day on which the winding-up order was made, to decide whether to exercise his power under sub-section (4)"
+   },
+   {
+    "requirement": "If the official receiver decides not to seek nominations, the official receiver must give notice of that decision to the court and to the company's creditors and contributories before the end of the 12-week period.",
+    "quote": "if in pursuance of paragraph (a) he decides not to exercise that power, to give notice of his decision, before the end of that period, to the court and to the company’s creditors and contributories"
+   },
+   {
+    "requirement": "Whether or not the official receiver has decided to seek nominations, the official receiver must exercise the power under subsection (4) if requested in accordance with rules at any time by one-quarter in value of the company's creditors.",
+    "quote": "to exercise his power ... under subsection (4) if he is at any time requested, in accordance with rules, to do so by one-quarter, in value, of the company’s creditors"
+   },
+   {
+    "requirement": "Where the official receiver's duty to seek nominations on request arises before performing the duty to decide or to give notice, the official receiver is relieved from performing the duty to decide or give notice.",
+    "quote": "where the duty imposed by paragraph (c) arises before the official receiver has performed a duty imposed by paragraph (a) or (b), he is not required to perform the latter duty"
+   },
+   {
+    "requirement": "Any notice of a decision not to seek nominations given to the company's creditors under subsection (5)(b) must contain an explanation of the creditors' power under subsection (5)(c) to require the official receiver to seek nominations from the creditors and contributories.",
+    "quote": "shall contain an explanation of the creditors’ power under subsection (5)(c) to require the official receiver to seek nominations from the company’s creditors and contributories"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The period following the winding-up order within which the official receiver must decide whether to seek nominations and, if deciding not to, give notice of the decision",
+    "value": "12 weeks",
+    "quote": "period of 12 weeks beginning with the day on which the winding-up order was made"
+   },
+   {
+    "what": "The minimum proportion in value of the company's creditors required to compel the official receiver to seek nominations",
+    "value": "one-quarter, in value",
+    "quote": "one-quarter, in value, of the company’s creditors"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Subject to section 140, the provisions of section 136 take effect upon a winding-up order being made by the court in England and Wales.",
+   "quote": "subject to section 140 below, on a winding-up order being made by the court in England and Wales"
+  },
+  {
+   "requirement": "The official receiver becomes the liquidator of the company by virtue of office and remains in office until another person becomes liquidator under the provisions of this Part.",
+   "quote": "The official receiver, by virtue of his office, becomes the liquidator of the company and continues in office until another person becomes liquidator under the provisions of this Part."
+  },
+  {
+   "requirement": "The official receiver serves as the liquidator of the company by virtue of office during any vacancy.",
+   "quote": "The official receiver is, by virtue of his office, the liquidator during any vacancy."
+  },
+  {
+   "requirement": "At any time while serving as liquidator of the company, the official receiver is permitted in accordance with the rules to seek nominations from the company's creditors and contributories to choose a person to replace the official receiver as liquidator.",
+   "quote": "seek nominations from the company’s creditors and contributories for the purpose of choosing a person to be liquidator of the company in place of the official receiver"
+  },
+  {
+   "requirement": "The official receiver must decide whether to seek nominations under subsection (4) as soon as practicable within the 12-week period beginning with the day the winding-up order was made.",
+   "quote": "as soon as practicable in the period of 12 weeks beginning with the day on which the winding-up order was made, to decide whether to exercise his power under sub-section (4)"
+  },
+  {
+   "requirement": "If the official receiver decides not to seek nominations, the official receiver must give notice of that decision to the court and to the company's creditors and contributories before the end of the 12-week period.",
+   "quote": "if in pursuance of paragraph (a) he decides not to exercise that power, to give notice of his decision, before the end of that period, to the court and to the company’s creditors and contributories"
+  },
+  {
+   "requirement": "Whether or not the official receiver has decided to seek nominations, the official receiver must exercise the power under subsection (4) if requested in accordance with rules at any time by one-quarter in value of the company's creditors.",
+   "quote": "to exercise his power ... under subsection (4) if he is at any time requested, in accordance with rules, to do so by one-quarter, in value, of the company’s creditors"
+  },
+  {
+   "requirement": "Where the official receiver's duty to seek nominations on request arises before performing the duty to decide or to give notice, the official receiver is relieved from performing the duty to decide or give notice.",
+   "quote": "where the duty imposed by paragraph (c) arises before the official receiver has performed a duty imposed by paragraph (a) or (b), he is not required to perform the latter duty"
+  },
+  {
+   "requirement": "Any notice of a decision not to seek nominations given to the company's creditors under subsection (5)(b) must contain an explanation of the creditors' power under subsection (5)(c) to require the official receiver to seek nominations from the creditors and contributories.",
+   "quote": "shall contain an explanation of the creditors’ power under subsection (5)(c) to require the official receiver to seek nominations from the company’s creditors and contributories"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The period following the winding-up order within which the official receiver must decide whether to seek nominations and, if deciding not to, give notice of the decision",
+   "value": "12 weeks",
+   "quote": "period of 12 weeks beginning with the day on which the winding-up order was made"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 1
+ }
+}

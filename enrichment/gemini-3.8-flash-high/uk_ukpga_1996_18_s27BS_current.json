@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1996/18/s27BS@current",
+ "section": "uk/ukpga/1996/18/s27BS",
+ "version": "current",
+ "source_sha256": "a55edef81dce79bf0c2d37a80e9a39b4c2e2acd8aebd50e1805361d8af06aafd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A worker's right to receive a payment from an employer under section 27BP(1) does not affect any right of the worker concerning remuneration under a worker’s contract entered into between the worker and the employer, which is referred to as contractual remuneration.",
+    "quote": "does not affect any right of the worker in relation to remuneration under a worker’s contract entered into between the worker and the employer (“contractual remuneration”)"
+   },
+   {
+    "requirement": "Any contractual remuneration paid by an employer to a worker for a number of hours goes towards discharging any liability of the employer to make a payment to the worker under section 27BP(1) for the same hours.",
+    "quote": "contractual remuneration paid to a worker by an employer in relation to a number of hours goes towards discharging any liability of the employer to make a payment to the worker under section 27BP(1) in relation to the same hours"
+   },
+   {
+    "requirement": "Any payment made by an employer to a worker under section 27BP(1) for a number of hours goes towards discharging any liability of the employer to pay contractual remuneration to the worker for the same hours.",
+    "quote": "payment made by an employer to a worker under section 27BP(1) in relation to a number of hours goes towards discharging any liability of the employer to pay contractual remuneration to the worker in relation to the same hours"
+   },
+   {
+    "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been cancelled, the hours to which a section 27BP(1) payment relates are the hours that would have been worked if the shift had not been cancelled.",
+    "quote": "where a shift has been cancelled, the hours that would have been worked if the shift had not been cancelled"
+   },
+   {
+    "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been moved, or moved and curtailed at the same time, and no part of that shift corresponds to the time of the original shift before it was moved or moved and curtailed, the hours to which a section 27BP(1) payment relates are the hours that would have been worked during the original shift.",
+    "quote": "no part of the shift as moved, or as moved and curtailed, corresponds to the time of the shift (“the original shift”) before it was moved, or moved and curtailed, the hours that would have been worked during the original shift"
+   },
+   {
+    "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been moved, or moved and curtailed at the same time, and part of that shift corresponds to the time of the original shift but part does not, the hours to which a section 27BP(1) payment relates are the hours that would have been worked during the part of the original shift that does not correspond to the shift as moved or as moved and curtailed.",
+    "quote": "part of the shift as moved, or as moved and curtailed, corresponds to the time of the original shift (but part does not), the hours that would have been worked during the part of the original shift that does not correspond to the shift as moved, or as moved and curtailed"
+   },
+   {
+    "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been curtailed but not moved, or moved and curtailed at the same time such that it is to start and end within the time of the original shift, the hours to which a section 27BP(1) payment relates are the hours that would have been worked if the shift had not been curtailed, or moved and curtailed.",
+    "quote": "where a shift has been— (i) curtailed but not moved, or (ii) moved and curtailed (at the same time) and the shift as moved and curtailed is to start and end within the time of the original shift, the hours that would have been worked if the shift had not been curtailed, or moved and curtailed"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A worker's right to receive a payment from an employer under section 27BP(1) does not affect any right of the worker concerning remuneration under a worker’s contract entered into between the worker and the employer, which is referred to as contractual remuneration.",
+   "quote": "does not affect any right of the worker in relation to remuneration under a worker’s contract entered into between the worker and the employer (“contractual remuneration”)"
+  },
+  {
+   "requirement": "Any contractual remuneration paid by an employer to a worker for a number of hours goes towards discharging any liability of the employer to make a payment to the worker under section 27BP(1) for the same hours.",
+   "quote": "contractual remuneration paid to a worker by an employer in relation to a number of hours goes towards discharging any liability of the employer to make a payment to the worker under section 27BP(1) in relation to the same hours"
+  },
+  {
+   "requirement": "Any payment made by an employer to a worker under section 27BP(1) for a number of hours goes towards discharging any liability of the employer to pay contractual remuneration to the worker for the same hours.",
+   "quote": "payment made by an employer to a worker under section 27BP(1) in relation to a number of hours goes towards discharging any liability of the employer to pay contractual remuneration to the worker in relation to the same hours"
+  },
+  {
+   "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been cancelled, the hours to which a section 27BP(1) payment relates are the hours that would have been worked if the shift had not been cancelled.",
+   "quote": "where a shift has been cancelled, the hours that would have been worked if the shift had not been cancelled"
+  },
+  {
+   "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been moved, or moved and curtailed at the same time, and no part of that shift corresponds to the time of the original shift before it was moved or moved and curtailed, the hours to which a section 27BP(1) payment relates are the hours that would have been worked during the original shift.",
+   "quote": "no part of the shift as moved, or as moved and curtailed, corresponds to the time of the shift (“the original shift”) before it was moved, or moved and curtailed, the hours that would have been worked during the original shift"
+  },
+  {
+   "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been moved, or moved and curtailed at the same time, and part of that shift corresponds to the time of the original shift but part does not, the hours to which a section 27BP(1) payment relates are the hours that would have been worked during the part of the original shift that does not correspond to the shift as moved or as moved and curtailed.",
+   "quote": "part of the shift as moved, or as moved and curtailed, corresponds to the time of the original shift (but part does not), the hours that would have been worked during the part of the original shift that does not correspond to the shift as moved, or as moved and curtailed"
+  },
+  {
+   "requirement": "For the purposes of offsetting statutory payments and contractual remuneration, where a shift has been curtailed but not moved, or moved and curtailed at the same time such that it is to start and end within the time of the original shift, the hours to which a section 27BP(1) payment relates are the hours that would have been worked if the shift had not been curtailed, or moved and curtailed.",
+   "quote": "where a shift has been— (i) curtailed but not moved, or (ii) moved and curtailed (at the same time) and the shift as moved and curtailed is to start and end within the time of the original shift, the hours that would have been worked if the shift had not been curtailed, or moved and curtailed"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

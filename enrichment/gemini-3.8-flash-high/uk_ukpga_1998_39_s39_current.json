@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1998/39/s39@current",
+ "section": "uk/ukpga/1998/39/s39",
+ "version": "current",
+ "source_sha256": "f3bda421f43c72e6235bc405fa2edfc9f6accc700b4543de542c867a2f47a9e7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "With the exception of section 21, the provisions of the National Minimum Wage Act 1998 apply to employment as a relevant member of the House of Commons staff in the same way as they apply to other employment.",
+    "quote": "Apart from section 21 above, the provisions of this Act have effect in relation to employment as a relevant member of the House of Commons staff as they have effect in relation to other employment."
+   },
+   {
+    "requirement": "No rule of law or law or practice of Parliament prevents a relevant member of the House of Commons staff from bringing a claim under the National Minimum Wage Act 1998 before the High Court or the county court.",
+    "quote": "Nothing in any rule of law or the law or practice of Parliament prevents a relevant member of the House of Commons staff from bringing before the High Court or the county court any claim under this Act."
+   },
+   {
+    "requirement": "A relevant member of the House of Commons staff is defined as any person who was appointed by the House of Commons Commission or who is a member of the Speaker's personal staff.",
+    "quote": "“relevant member of the House of Commons staff” means any person— (a) who was appointed by the House of Commons Commission; or (b) who is a member of the Speaker’s personal staff."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "With the exception of section 21, the provisions of the National Minimum Wage Act 1998 apply to employment as a relevant member of the House of Commons staff in the same way as they apply to other employment.",
+   "quote": "Apart from section 21 above, the provisions of this Act have effect in relation to employment as a relevant member of the House of Commons staff as they have effect in relation to other employment."
+  },
+  {
+   "requirement": "No rule of law or law or practice of Parliament prevents a relevant member of the House of Commons staff from bringing a claim under the National Minimum Wage Act 1998 before the High Court or the county court.",
+   "quote": "Nothing in any rule of law or the law or practice of Parliament prevents a relevant member of the House of Commons staff from bringing before the High Court or the county court any claim under this Act."
+  },
+  {
+   "requirement": "A relevant member of the House of Commons staff is defined as any person who was appointed by the House of Commons Commission or who is a member of the Speaker's personal staff.",
+   "quote": "“relevant member of the House of Commons staff” means any person— (a) who was appointed by the House of Commons Commission; or (b) who is a member of the Speaker’s personal staff."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

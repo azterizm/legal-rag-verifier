@@ -1,0 +1,107 @@
+{
+ "key": "uk/ukpga/2005/5/s481@current",
+ "section": "uk/ukpga/2005/5/s481",
+ "version": "current",
+ "source_sha256": "4434043afedd25911821f555a0f04afc46133ef713930708e946d77ae54f72b8",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Conditions A to D constitute the conditions referred to in the definition of an excepted group life policy under section 480(3)(a).",
+    "quote": "Conditions A to D are the conditions referred to in section 480(3)(a) (definition of “excepted group life policy”)."
+   },
+   {
+    "requirement": "Condition A requires that under the terms of the policy, a sum or other benefit of a capital nature must be payable or arise on the death in any circumstances of each individual insured under the policy who dies under an age specified in the policy that does not exceed 75.",
+    "quote": "on the death in any circumstances of each of the individuals insured under the policy who dies under an age specified in the policy that does not exceed 75"
+   },
+   {
+    "requirement": "Alternatively, Condition A allows that under the terms of the policy, a sum or other benefit of a capital nature is payable or arises on the death, except in the same specified circumstances, of each individual insured under the policy who dies under an age specified in the policy that does not exceed 75.",
+    "quote": "on the death, except in the same specified circumstances, of each of those individuals who dies under such an age."
+   },
+   {
+    "requirement": "Condition B requires that under the terms of the policy, the same method must be used to calculate the sums or other benefits of a capital nature payable or arising on each death.",
+    "quote": "the same method is to be used for calculating the sums or other benefits of a capital nature payable or arising on each death"
+   },
+   {
+    "requirement": "Condition B requires that under the terms of the policy, any limitation on the sums or other benefits of a capital nature payable or arising on death must be the same in the case of any death.",
+    "quote": "any limitation on those sums or other benefits is the same in the case of any death."
+   },
+   {
+    "requirement": "Condition C requires that the policy does not have, and is not capable of having, on any day a surrender value exceeding the proportion of the amount of premiums paid which, on a time apportionment, is referable to the unexpired paid-up period beginning with that day.",
+    "quote": "a surrender value that exceeds the proportion of the amount of premiums paid which, on a time apportionment, is referable to the unexpired paid-up period beginning with the day"
+   },
+   {
+    "requirement": "Condition C requires that if there is no unexpired paid-up period beginning with the day, the policy does not have, and is not capable of having, any surrender value on that day.",
+    "quote": "if there is no such period, any surrender value."
+   },
+   {
+    "requirement": "The unexpired paid-up period in relation to a period beginning with a day means the period beginning then and ending with the earliest subsequent day on which a premium payment falls due under the policy or the term of the policy ends.",
+    "quote": "means the period beginning then and ending with the earliest subsequent day on which a payment of premium falls due under the policy or the term of the policy ends."
+   },
+   {
+    "requirement": "Condition D requires that no sums or other benefits may be paid or conferred under the policy, except as specified in Condition A or Condition C.",
+    "quote": "no sums or other benefits may be paid or conferred under the policy, except as mentioned in condition A or C."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the maximum specified age under which an individual insured under the policy dies for Condition A to apply",
+    "value": "75",
+    "quote": "that does not exceed 75"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Conditions A to D constitute the conditions referred to in the definition of an excepted group life policy under section 480(3)(a).",
+   "quote": "Conditions A to D are the conditions referred to in section 480(3)(a) (definition of “excepted group life policy”)."
+  },
+  {
+   "requirement": "Condition A requires that under the terms of the policy, a sum or other benefit of a capital nature must be payable or arise on the death in any circumstances of each individual insured under the policy who dies under an age specified in the policy that does not exceed 75.",
+   "quote": "on the death in any circumstances of each of the individuals insured under the policy who dies under an age specified in the policy that does not exceed 75"
+  },
+  {
+   "requirement": "Alternatively, Condition A allows that under the terms of the policy, a sum or other benefit of a capital nature is payable or arises on the death, except in the same specified circumstances, of each individual insured under the policy who dies under an age specified in the policy that does not exceed 75.",
+   "quote": "on the death, except in the same specified circumstances, of each of those individuals who dies under such an age."
+  },
+  {
+   "requirement": "Condition B requires that under the terms of the policy, the same method must be used to calculate the sums or other benefits of a capital nature payable or arising on each death.",
+   "quote": "the same method is to be used for calculating the sums or other benefits of a capital nature payable or arising on each death"
+  },
+  {
+   "requirement": "Condition B requires that under the terms of the policy, any limitation on the sums or other benefits of a capital nature payable or arising on death must be the same in the case of any death.",
+   "quote": "any limitation on those sums or other benefits is the same in the case of any death."
+  },
+  {
+   "requirement": "Condition C requires that the policy does not have, and is not capable of having, on any day a surrender value exceeding the proportion of the amount of premiums paid which, on a time apportionment, is referable to the unexpired paid-up period beginning with that day.",
+   "quote": "a surrender value that exceeds the proportion of the amount of premiums paid which, on a time apportionment, is referable to the unexpired paid-up period beginning with the day"
+  },
+  {
+   "requirement": "Condition C requires that if there is no unexpired paid-up period beginning with the day, the policy does not have, and is not capable of having, any surrender value on that day.",
+   "quote": "if there is no such period, any surrender value."
+  },
+  {
+   "requirement": "The unexpired paid-up period in relation to a period beginning with a day means the period beginning then and ending with the earliest subsequent day on which a premium payment falls due under the policy or the term of the policy ends.",
+   "quote": "means the period beginning then and ending with the earliest subsequent day on which a payment of premium falls due under the policy or the term of the policy ends."
+  },
+  {
+   "requirement": "Condition D requires that no sums or other benefits may be paid or conferred under the policy, except as specified in Condition A or Condition C.",
+   "quote": "no sums or other benefits may be paid or conferred under the policy, except as mentioned in condition A or C."
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "the maximum specified age under which an individual insured under the policy dies for Condition A to apply",
+   "value": "75",
+   "quote": "that does not exceed 75"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

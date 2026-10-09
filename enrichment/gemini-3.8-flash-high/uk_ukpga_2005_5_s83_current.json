@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2005/5/s83@current",
+ "section": "uk/ukpga/2005/5/s83",
+ "version": "current",
+ "source_sha256": "db39af9d68a68cb0a6b7f9c887946d5dc4981803d9e67cffee1cce1b50e3ba04",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of section 82, a local enterprise organisation is defined as a local enterprise agency, a training and enterprise council, a Scottish local enterprise company, or a business link organisation.",
+    "quote": "For the purposes of section 82 “local enterprise organisation” means— (a) a local enterprise agency, (b) a training and enterprise council, (c) a Scottish local enterprise company, or (d) a business link organisation."
+   },
+   {
+    "requirement": "A local enterprise agency is defined as a body for the time being approved as a local enterprise agency for the purposes of section 82 by the relevant national authority.",
+    "quote": "“Local enterprise agency” means a body for the time being approved as a local enterprise agency for the purposes of section 82 by the relevant national authority"
+   },
+   {
+    "requirement": "For England or Northern Ireland, the relevant national authority with the power to approve a local enterprise agency is the Secretary of State.",
+    "quote": "the Secretary of State (in relation to England or Northern Ireland)"
+   },
+   {
+    "requirement": "For Scotland, the relevant national authority with the power to approve a local enterprise agency is the Scottish Ministers.",
+    "quote": "the Scottish Ministers (in relation to Scotland)"
+   },
+   {
+    "requirement": "For Wales, the relevant national authority with the power to approve a local enterprise agency is the National Assembly for Wales.",
+    "quote": "the National Assembly for Wales (in relation to Wales)"
+   },
+   {
+    "requirement": "Sections 84 and 85 provide further rules governing approvals of local enterprise agencies by the relevant national authority.",
+    "quote": "For further provision about approvals by the relevant national authority, see sections 84 and 85."
+   },
+   {
+    "requirement": "A training and enterprise council is defined as a body with which the Secretary of State has an agreement to carry out the functions of a training and enterprise council.",
+    "quote": "“Training and enterprise council” means a body with which the Secretary of State has an agreement under which the body is to carry out the functions of a training and enterprise council."
+   },
+   {
+    "requirement": "A Scottish local enterprise company is defined as a company with which Scottish Enterprise or Highlands and Islands Enterprise has an agreement to carry out the functions of a local enterprise company.",
+    "quote": "“Scottish local enterprise company” means a company with which— (a) Scottish Enterprise, or (b) Highlands and Islands Enterprise, has an agreement under which the company is to carry out the functions of a local enterprise company."
+   },
+   {
+    "requirement": "A business link organisation is defined as a person authorised by or on behalf of the Secretary of State to use a trade mark designated by the Secretary of State for the purposes of subsection 83(5).",
+    "quote": "“Business link organisation” means a person authorised by or on behalf of the Secretary of State to use a trade mark designated by the Secretary of State for the purposes of this subsection."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of section 82, a local enterprise organisation is defined as a local enterprise agency, a training and enterprise council, a Scottish local enterprise company, or a business link organisation.",
+   "quote": "For the purposes of section 82 “local enterprise organisation” means— (a) a local enterprise agency, (b) a training and enterprise council, (c) a Scottish local enterprise company, or (d) a business link organisation."
+  },
+  {
+   "requirement": "A local enterprise agency is defined as a body for the time being approved as a local enterprise agency for the purposes of section 82 by the relevant national authority.",
+   "quote": "“Local enterprise agency” means a body for the time being approved as a local enterprise agency for the purposes of section 82 by the relevant national authority"
+  },
+  {
+   "requirement": "For England or Northern Ireland, the relevant national authority with the power to approve a local enterprise agency is the Secretary of State.",
+   "quote": "the Secretary of State (in relation to England or Northern Ireland)"
+  },
+  {
+   "requirement": "For Scotland, the relevant national authority with the power to approve a local enterprise agency is the Scottish Ministers.",
+   "quote": "the Scottish Ministers (in relation to Scotland)"
+  },
+  {
+   "requirement": "For Wales, the relevant national authority with the power to approve a local enterprise agency is the National Assembly for Wales.",
+   "quote": "the National Assembly for Wales (in relation to Wales)"
+  },
+  {
+   "requirement": "Sections 84 and 85 provide further rules governing approvals of local enterprise agencies by the relevant national authority.",
+   "quote": "For further provision about approvals by the relevant national authority, see sections 84 and 85."
+  },
+  {
+   "requirement": "A training and enterprise council is defined as a body with which the Secretary of State has an agreement to carry out the functions of a training and enterprise council.",
+   "quote": "“Training and enterprise council” means a body with which the Secretary of State has an agreement under which the body is to carry out the functions of a training and enterprise council."
+  },
+  {
+   "requirement": "A Scottish local enterprise company is defined as a company with which Scottish Enterprise or Highlands and Islands Enterprise has an agreement to carry out the functions of a local enterprise company.",
+   "quote": "“Scottish local enterprise company” means a company with which— (a) Scottish Enterprise, or (b) Highlands and Islands Enterprise, has an agreement under which the company is to carry out the functions of a local enterprise company."
+  },
+  {
+   "requirement": "A business link organisation is defined as a person authorised by or on behalf of the Secretary of State to use a trade mark designated by the Secretary of State for the purposes of subsection 83(5).",
+   "quote": "“Business link organisation” means a person authorised by or on behalf of the Secretary of State to use a trade mark designated by the Secretary of State for the purposes of this subsection."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

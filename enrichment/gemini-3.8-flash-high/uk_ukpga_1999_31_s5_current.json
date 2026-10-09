@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/1999/31/s5@current",
+ "section": "uk/ukpga/1999/31/s5",
+ "version": "current",
+ "source_sha256": "c5b2f03097a035856ea267d415cf97850282e207449b012bbe369e6b276976d9",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A term of a contract must be enforceable by a third party under section 1.",
+    "quote": "under section 1 a term of a contract is enforceable by a third party"
+   },
+   {
+    "requirement": "The promisee must have recovered from the promisor a sum in respect of the third party's loss in respect of the contract term, or in respect of the expense incurred by the promisee in making good to the third party the promisor's default.",
+    "quote": "the promisee has recovered from the promisor a sum in respect of— (a) the third party’s loss in respect of the term, or (b) the expense to the promisee of making good to the third party the default of the promisor"
+   },
+   {
+    "requirement": "In any proceedings brought by the third party in reliance on section 1, the court or arbitral tribunal must reduce any award made to the third party to whatever extent it considers appropriate to account for the sum recovered by the promisee.",
+    "quote": "in any proceedings brought in reliance on that section by the third party, the court or arbitral tribunal shall reduce any award to the third party to such extent as it thinks appropriate to take account of the sum recovered by the promisee"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A term of a contract must be enforceable by a third party under section 1.",
+   "quote": "under section 1 a term of a contract is enforceable by a third party"
+  },
+  {
+   "requirement": "The promisee must have recovered from the promisor a sum in respect of the third party's loss in respect of the contract term, or in respect of the expense incurred by the promisee in making good to the third party the promisor's default.",
+   "quote": "the promisee has recovered from the promisor a sum in respect of— (a) the third party’s loss in respect of the term, or (b) the expense to the promisee of making good to the third party the default of the promisor"
+  },
+  {
+   "requirement": "In any proceedings brought by the third party in reliance on section 1, the court or arbitral tribunal must reduce any award made to the third party to whatever extent it considers appropriate to account for the sum recovered by the promisee.",
+   "quote": "in any proceedings brought in reliance on that section by the third party, the court or arbitral tribunal shall reduce any award to the third party to such extent as it thinks appropriate to take account of the sum recovered by the promisee"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

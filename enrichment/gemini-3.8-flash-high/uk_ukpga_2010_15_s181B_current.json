@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/2010/15/s181B@current",
+ "section": "uk/ukpga/2010/15/s181B",
+ "version": "current",
+ "source_sha256": "aec47798c6776d300ae613b94ed2ca887aceb96958a00bbc6af98d4b98fc62b0",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Secretary of State may by regulations make provision to secure that regulations under section 181A do not apply, or apply subject to specified modifications or exceptions, to public service vehicles of a prescribed description, operators of a prescribed description, or local services of a prescribed description.",
+    "quote": "The Secretary of State may by regulations make provision for securing that the provisions of regulations under section 181A do not apply or apply subject to such modifications or exceptions as the regulations may specify to— (a) public service vehicles of a prescribed description; (b) operators of a prescribed description; (c) local services of a prescribed description."
+   },
+   {
+    "requirement": "Regulations concerning operators of a prescribed description may, in particular, make provision by reference to an operator's size.",
+    "quote": "Regulations under subsection (1)(b) may, in particular, make provision by reference to an operator's size."
+   },
+   {
+    "requirement": "Regulations under section 181B may make provision to secure that regulations under section 181A do not apply, or apply subject to specified modifications or exceptions, to an individual prescribed public service vehicle, public service vehicles of a prescribed operator, or an individual prescribed local service.",
+    "quote": "Regulations under this section may also make provision for securing that the provisions of regulations under section 181A do not apply or apply subject to such modifications or exceptions as the regulations may specify to— (a) a prescribed public service vehicle; (b) public service vehicles of a prescribed operator; (c) a prescribed local service."
+   },
+   {
+    "requirement": "Regulations under subsection (1) or (3) may make provision subject to such restrictions and conditions as are specified within the regulations.",
+    "quote": "Regulations under subsection (1) or (3) may make the provision subject to such restrictions and conditions as are specified in the regulations."
+   },
+   {
+    "requirement": "Regulations under subsection (1) or (3) may specify the period during which provisions of those regulations are to have effect.",
+    "quote": "Regulations under subsection (1) or (3) may specify the period for which provisions of those regulations are to have effect."
+   },
+   {
+    "requirement": "Regulations under subsection (1) may make different provision for different areas.",
+    "quote": "Regulations under subsection (1) may make different provision for different areas."
+   },
+   {
+    "requirement": "Section 207(2) does not require regulations under section 181B to be made by statutory instrument if they apply only to a prescribed public service vehicle, public service vehicles of a prescribed operator, or a prescribed local service.",
+    "quote": "Section 207(2) does not require regulations under this section that apply only to— (a) a prescribed public service vehicle, (b) public service vehicles of a prescribed operator, or (c) a prescribed local service, to be made by statutory instrument"
+   },
+   {
+    "requirement": "Regulations applying only to a prescribed public service vehicle, public service vehicles of a prescribed operator, or a prescribed local service are as capable of being amended or revoked as regulations made by statutory instrument.",
+    "quote": "such regulations are as capable of being amended or revoked as regulations made by statutory instrument."
+   },
+   {
+    "requirement": "The Secretary of State must consult the Welsh Ministers and the Scottish Ministers prior to making regulations under section 181B.",
+    "quote": "Before making regulations under this section, the Secretary of State must consult— (a) the Welsh Ministers; (b) the Scottish Ministers."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Secretary of State may by regulations make provision to secure that regulations under section 181A do not apply, or apply subject to specified modifications or exceptions, to public service vehicles of a prescribed description, operators of a prescribed description, or local services of a prescribed description.",
+   "quote": "The Secretary of State may by regulations make provision for securing that the provisions of regulations under section 181A do not apply or apply subject to such modifications or exceptions as the regulations may specify to— (a) public service vehicles of a prescribed description; (b) operators of a prescribed description; (c) local services of a prescribed description."
+  },
+  {
+   "requirement": "Regulations concerning operators of a prescribed description may, in particular, make provision by reference to an operator's size.",
+   "quote": "Regulations under subsection (1)(b) may, in particular, make provision by reference to an operator's size."
+  },
+  {
+   "requirement": "Regulations under section 181B may make provision to secure that regulations under section 181A do not apply, or apply subject to specified modifications or exceptions, to an individual prescribed public service vehicle, public service vehicles of a prescribed operator, or an individual prescribed local service.",
+   "quote": "Regulations under this section may also make provision for securing that the provisions of regulations under section 181A do not apply or apply subject to such modifications or exceptions as the regulations may specify to— (a) a prescribed public service vehicle; (b) public service vehicles of a prescribed operator; (c) a prescribed local service."
+  },
+  {
+   "requirement": "Regulations under subsection (1) or (3) may make provision subject to such restrictions and conditions as are specified within the regulations.",
+   "quote": "Regulations under subsection (1) or (3) may make the provision subject to such restrictions and conditions as are specified in the regulations."
+  },
+  {
+   "requirement": "Regulations under subsection (1) or (3) may specify the period during which provisions of those regulations are to have effect.",
+   "quote": "Regulations under subsection (1) or (3) may specify the period for which provisions of those regulations are to have effect."
+  },
+  {
+   "requirement": "Regulations under subsection (1) may make different provision for different areas.",
+   "quote": "Regulations under subsection (1) may make different provision for different areas."
+  },
+  {
+   "requirement": "Section 207(2) does not require regulations under section 181B to be made by statutory instrument if they apply only to a prescribed public service vehicle, public service vehicles of a prescribed operator, or a prescribed local service.",
+   "quote": "Section 207(2) does not require regulations under this section that apply only to— (a) a prescribed public service vehicle, (b) public service vehicles of a prescribed operator, or (c) a prescribed local service, to be made by statutory instrument"
+  },
+  {
+   "requirement": "Regulations applying only to a prescribed public service vehicle, public service vehicles of a prescribed operator, or a prescribed local service are as capable of being amended or revoked as regulations made by statutory instrument.",
+   "quote": "such regulations are as capable of being amended or revoked as regulations made by statutory instrument."
+  },
+  {
+   "requirement": "The Secretary of State must consult the Welsh Ministers and the Scottish Ministers prior to making regulations under section 181B.",
+   "quote": "Before making regulations under this section, the Secretary of State must consult— (a) the Welsh Ministers; (b) the Scottish Ministers."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

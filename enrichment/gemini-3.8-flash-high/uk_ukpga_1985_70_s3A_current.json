@@ -1,0 +1,83 @@
+{
+ "key": "uk/ukpga/1985/70/s3A@current",
+ "section": "uk/ukpga/1985/70/s3A",
+ "version": "current",
+ "source_sha256": "1a6d5ee8920e5dab13af44ef8499b41d1483fc7d493b09d6db6844123e71787e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A new landlord required by section 3(1) to give notice to a tenant of an assignment must also give written notice to the tenant if the tenant is a qualifying tenant within the meaning of Part I of the Landlord and Tenant Act 1987 and the assignment was a relevant disposal within the meaning of that Part affecting premises to which that Part applied at the time of the disposal.",
+    "quote": "the landlord shall give also notice in writing to the tenant to the following effect"
+   },
+   {
+    "requirement": "The landlord's notice to the tenant must state that the disposal to the landlord was one to which Part I of the Landlord and Tenant Act 1987 applied.",
+    "quote": "that the disposal to the landlord was one to which Part I of the Landlord and Tenant Act 1987 applied"
+   },
+   {
+    "requirement": "The landlord's notice to the tenant must state that the tenant (together with other qualifying tenants) may have the right under Part I of the Landlord and Tenant Act 1987 to obtain information about the disposal and to acquire the landlord’s interest in the whole or part of the premises in which the tenant’s flat is situated.",
+    "quote": "that the tenant (together with other qualifying tenants) may have the right under that Part— (i) to obtain information about the disposal, and (ii) to acquire the landlord’s interest in the whole or part of the premises in which the tenant’s flat is situated"
+   },
+   {
+    "requirement": "The landlord's notice to the tenant must state the time within which any such right must be exercised, as well as the fact that the time runs from the date of receipt of notice under section 3A by the requisite majority of qualifying tenants within the meaning of Part I of the Landlord and Tenant Act 1987.",
+    "quote": "the time within which any such right must be exercised, and the fact that the time would run from the date of receipt of notice under this section by the requisite majority of qualifying tenants"
+   },
+   {
+    "requirement": "A person required to give notice under section 3A who fails, without reasonable excuse, to do so within the time allowed for giving notice under section 3(1) commits a summary offence.",
+    "quote": "fails, without reasonable excuse, to do so within the time allowed for giving notice under section 3(1) commits a summary offence"
+   },
+   {
+    "requirement": "A person convicted of an offence for failing to give the required notice under section 3A is liable to a fine not exceeding level 4 on the standard scale.",
+    "quote": "liable on conviction to a fine not exceeding level 4 on the standard scale"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "maximum fine upon conviction for failing to give the required notice without reasonable excuse within the allowed time",
+    "value": "level 4 on the standard scale",
+    "quote": "fine not exceeding level 4 on the standard scale"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A new landlord required by section 3(1) to give notice to a tenant of an assignment must also give written notice to the tenant if the tenant is a qualifying tenant within the meaning of Part I of the Landlord and Tenant Act 1987 and the assignment was a relevant disposal within the meaning of that Part affecting premises to which that Part applied at the time of the disposal.",
+   "quote": "the landlord shall give also notice in writing to the tenant to the following effect"
+  },
+  {
+   "requirement": "The landlord's notice to the tenant must state that the disposal to the landlord was one to which Part I of the Landlord and Tenant Act 1987 applied.",
+   "quote": "that the disposal to the landlord was one to which Part I of the Landlord and Tenant Act 1987 applied"
+  },
+  {
+   "requirement": "The landlord's notice to the tenant must state that the tenant (together with other qualifying tenants) may have the right under Part I of the Landlord and Tenant Act 1987 to obtain information about the disposal and to acquire the landlord’s interest in the whole or part of the premises in which the tenant’s flat is situated.",
+   "quote": "that the tenant (together with other qualifying tenants) may have the right under that Part— (i) to obtain information about the disposal, and (ii) to acquire the landlord’s interest in the whole or part of the premises in which the tenant’s flat is situated"
+  },
+  {
+   "requirement": "The landlord's notice to the tenant must state the time within which any such right must be exercised, as well as the fact that the time runs from the date of receipt of notice under section 3A by the requisite majority of qualifying tenants within the meaning of Part I of the Landlord and Tenant Act 1987.",
+   "quote": "the time within which any such right must be exercised, and the fact that the time would run from the date of receipt of notice under this section by the requisite majority of qualifying tenants"
+  },
+  {
+   "requirement": "A person required to give notice under section 3A who fails, without reasonable excuse, to do so within the time allowed for giving notice under section 3(1) commits a summary offence.",
+   "quote": "fails, without reasonable excuse, to do so within the time allowed for giving notice under section 3(1) commits a summary offence"
+  },
+  {
+   "requirement": "A person convicted of an offence for failing to give the required notice under section 3A is liable to a fine not exceeding level 4 on the standard scale.",
+   "quote": "liable on conviction to a fine not exceeding level 4 on the standard scale"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "maximum fine upon conviction for failing to give the required notice without reasonable excuse within the allowed time",
+   "value": "level 4 on the standard scale",
+   "quote": "fine not exceeding level 4 on the standard scale"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/1995/30/s6@current",
+ "section": "uk/ukpga/1995/30/s6",
+ "version": "current",
+ "source_sha256": "59d02020d74dfbb0dd90c10eac0007ae49128e5648c1743445bf4f68e7d7102e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 6 of the Landlord and Tenant (Covenants) Act 1995 applies where a landlord assigns the reversion in premises of which he is the landlord under a tenancy.",
+    "quote": "where a landlord assigns the reversion in premises of which he is the landlord under a tenancy"
+   },
+   {
+    "requirement": "Section 6 of the Landlord and Tenant (Covenants) Act 1995 applies to a landlord assigning the reversion whether or not that landlord is landlord of the whole of the premises comprised in the tenancy.",
+    "quote": "whether or not the landlord is landlord of the whole of the premises comprised in the tenancy"
+   },
+   {
+    "requirement": "A landlord who assigns the reversion in the whole of the premises of which he is the landlord may apply to be released from the landlord covenants of the tenancy in accordance with section 8.",
+    "quote": "he may apply to be released from the landlord covenants of the tenancy in accordance with section 8"
+   },
+   {
+    "requirement": "A landlord who assigns the reversion in the whole of the premises of which he is the landlord ceases to be entitled to the benefit of the tenant covenants of the tenancy as from the assignment if he is released from all of the landlord covenants of the tenancy.",
+    "quote": "if he is so released from all of those covenants, he ceases to be entitled to the benefit of the tenant covenants of the tenancy as from the assignment"
+   },
+   {
+    "requirement": "A landlord who assigns the reversion in part only of the premises of which he is the landlord may apply to be released from the landlord covenants of the tenancy to the extent that they fall to be complied with in relation to that part of those premises.",
+    "quote": "he may apply to be so released from the landlord covenants of the tenancy to the extent that they fall to be complied with in relation to that part of those premises"
+   },
+   {
+    "requirement": "A landlord who assigns the reversion in part only of the premises of which he is the landlord ceases, as from the assignment, to be entitled to the benefit of the tenant covenants only to the extent that they fall to be complied with in relation to that part of those premises if he is, to that extent, released from all of the landlord covenants.",
+    "quote": "as from the assignment he ceases to be entitled to the benefit of the tenant covenants only to the extent that they fall to be complied with in relation to that part of those premises"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 6 of the Landlord and Tenant (Covenants) Act 1995 applies where a landlord assigns the reversion in premises of which he is the landlord under a tenancy.",
+   "quote": "where a landlord assigns the reversion in premises of which he is the landlord under a tenancy"
+  },
+  {
+   "requirement": "Section 6 of the Landlord and Tenant (Covenants) Act 1995 applies to a landlord assigning the reversion whether or not that landlord is landlord of the whole of the premises comprised in the tenancy.",
+   "quote": "whether or not the landlord is landlord of the whole of the premises comprised in the tenancy"
+  },
+  {
+   "requirement": "A landlord who assigns the reversion in the whole of the premises of which he is the landlord may apply to be released from the landlord covenants of the tenancy in accordance with section 8.",
+   "quote": "he may apply to be released from the landlord covenants of the tenancy in accordance with section 8"
+  },
+  {
+   "requirement": "A landlord who assigns the reversion in the whole of the premises of which he is the landlord ceases to be entitled to the benefit of the tenant covenants of the tenancy as from the assignment if he is released from all of the landlord covenants of the tenancy.",
+   "quote": "if he is so released from all of those covenants, he ceases to be entitled to the benefit of the tenant covenants of the tenancy as from the assignment"
+  },
+  {
+   "requirement": "A landlord who assigns the reversion in part only of the premises of which he is the landlord may apply to be released from the landlord covenants of the tenancy to the extent that they fall to be complied with in relation to that part of those premises.",
+   "quote": "he may apply to be so released from the landlord covenants of the tenancy to the extent that they fall to be complied with in relation to that part of those premises"
+  },
+  {
+   "requirement": "A landlord who assigns the reversion in part only of the premises of which he is the landlord ceases, as from the assignment, to be entitled to the benefit of the tenant covenants only to the extent that they fall to be complied with in relation to that part of those premises if he is, to that extent, released from all of the landlord covenants.",
+   "quote": "as from the assignment he ceases to be entitled to the benefit of the tenant covenants only to the extent that they fall to be complied with in relation to that part of those premises"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

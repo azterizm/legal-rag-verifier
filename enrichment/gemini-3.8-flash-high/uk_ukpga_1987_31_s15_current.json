@@ -1,0 +1,132 @@
+{
+ "key": "uk/ukpga/1987/31/s15@current",
+ "section": "uk/ukpga/1987/31/s15",
+ "version": "current",
+ "source_sha256": "e614baf1d0b5e3aedf8485d07b2e001ad21f19de91a02918cb2ee1baf51e430d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A tenancy held by the landlord and surrendered by him as part of a relevant disposal is defined as the relevant tenancy.",
+    "quote": "the disposal consisted of the surrender by the landlord of a tenancy held by him (“the relevant tenancy”)"
+   },
+   {
+    "requirement": "The requisite majority of qualifying tenants of the constituent flats may serve a notice on the new landlord before the end of the period specified in section 12(2) if paragraphs (a) and (b) of section 11(1) apply to a relevant disposal affecting premises to which Part I applied at disposal, the disposal was the landlord's surrender of the relevant tenancy, and the premises are still premises to which Part I applies.",
+    "quote": "the requisite majority of qualifying tenants of the constituent flats may, before the end of the period specified in section 12(2), serve a notice on the new landlord"
+   },
+   {
+    "requirement": "A notice served on the new landlord requires him (except as provided by the provisions following section 15(1) in Part I) to grant a new tenancy of the premises subject to the relevant tenancy to a person or persons nominated for the purposes of section 15 by any requisite majority of qualifying tenants of the constituent flats.",
+    "quote": "requiring him (except as provided by the following provisions of this Part) to grant a new tenancy of the premises subject to the relevant tenancy, on the terms referred to in subsection (2) below and expiring on the date on which that tenancy would have expired, to a person or persons nominated for the purposes of this section by any such majority of qualifying tenants of those flats"
+   },
+   {
+    "requirement": "The terms of the new tenancy to be granted by the new landlord are the terms of the relevant tenancy, and, if the new landlord paid any amount to the landlord as consideration for the surrender of that tenancy, that any such amount is paid to the new landlord by the nominated person or persons.",
+    "quote": "Those terms are— (a) the terms of the relevant tenancy; and (b) if the new landlord paid any amount to the landlord as consideration for the surrender by him of that tenancy, that any such amount is paid to the new landlord by the person or persons so nominated."
+   },
+   {
+    "requirement": "Where the premises subject to the relevant tenancy included premises other than those to which Part I applied at the time of the original disposal, the notice must require the new landlord to grant a new tenancy only of the premises to which Part I applied, on the terms referred to in section 15(2) subject to necessary or expedient modifications.",
+    "quote": "shall, where the premises subject to the relevant tenancy included premises other than those to which this Part applied at the time of the original disposal— (i) require the new landlord to grant a new tenancy only of the premises to which this Part so applied, and (ii) require him to do so on the terms referred to in subsection (2) subject to such modifications as are necessary or expedient in the circumstances"
+   },
+   {
+    "requirement": "A notice served on the new landlord may, instead of specifying the premises to be demised or any particular terms on which the tenancy is to be granted, provide for those premises or terms to be determined by a rent assessment committee in accordance with section 13 as applied by section 15(4).",
+    "quote": "may, instead of specifying the premises to be demised under the new tenancy or any particular terms on which that tenancy is to be granted by the new landlord (whether doing so expressly or by reference to the relevant tenancy), provide for those premises, or (as the case may be) for any such terms, to be determined by a rent assessment committee in accordance with section 13 (as applied by subsection (4) below)"
+   },
+   {
+    "requirement": "Section 12(7) to (9), sections 13 and 14, and sections 16 and 17 apply in relation to a notice under section 15 as they apply in relation to a purchase notice, subject to the modifications specified in section 15(5).",
+    "quote": "The following provisions, namely— section 12(7) to (9),sections 13 and 14, andsections 16 and 17,shall apply in relation to a notice under this section as they apply in relation to a purchase notice (whether referred to as such or as a notice served under section 12(1)) but subject to the modifications specified in subsection (5) below."
+   },
+   {
+    "requirement": "In applying the specified provisions to a notice under section 15, any reference to the purposes of section 12 must be read as a reference to the purposes of section 15.",
+    "quote": "any reference to the purposes of section 12 shall be read as a reference to the purposes of this section"
+   },
+   {
+    "requirement": "In applying the specified provisions to a notice under section 15, the reference in section 13(1)(b) to section 12(3)(b) must be read as a reference to section 15(3)(b).",
+    "quote": "the reference in section 13(1)(b) to section 12(3)(b) shall be read as a reference to subsection (3)(b) above"
+   },
+   {
+    "requirement": "In applying section 16 to a notice under section 15, references to the estate or interest that was the subject-matter of the original disposal must be read as a reference to the estate or interest which, prior to the surrender of the relevant tenancy, constituted the reversion immediately expectant on it.",
+    "quote": "the references in section 16 to the estate or interest that was the subject-matter of the original disposal shall be read as a reference to the estate or interest which, prior to the surrender of the relevant tenancy, constituted the reversion immediately expectant on it"
+   },
+   {
+    "requirement": "In applying sections 16 and 17 to a notice under section 15, references to sections 12 to 14 must be read as references to sections 12(7) to (9), 13 and 14 (as applied by section 15(4)) and section 15.",
+    "quote": "the references in sections 16 and 17 to sections 12 to 14 shall be read as references to sections 12(7) to (9), 13 and 14 (as applied by subsection (4) above) and this section"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The time limit within which the requisite majority of qualifying tenants may serve a notice on the new landlord",
+    "value": "period specified in section 12(2)",
+    "quote": "before the end of the period specified in section 12(2)"
+   },
+   {
+    "what": "The expiry date of the new tenancy to be granted by the new landlord",
+    "value": "date on which that tenancy would have expired",
+    "quote": "expiring on the date on which that tenancy would have expired"
+   },
+   {
+    "what": "The consideration amount paid to the landlord for surrender of the relevant tenancy that must be paid to the new landlord",
+    "value": "any amount",
+    "quote": "if the new landlord paid any amount to the landlord as consideration for the surrender by him of that tenancy"
+   },
+   {
+    "what": "The proportion of qualifying tenants required to serve notice on the new landlord or nominate a person to take the new tenancy",
+    "value": "requisite majority",
+    "quote": "the requisite majority of qualifying tenants of the constituent flats"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A tenancy held by the landlord and surrendered by him as part of a relevant disposal is defined as the relevant tenancy.",
+   "quote": "the disposal consisted of the surrender by the landlord of a tenancy held by him (“the relevant tenancy”)"
+  },
+  {
+   "requirement": "The requisite majority of qualifying tenants of the constituent flats may serve a notice on the new landlord before the end of the period specified in section 12(2) if paragraphs (a) and (b) of section 11(1) apply to a relevant disposal affecting premises to which Part I applied at disposal, the disposal was the landlord's surrender of the relevant tenancy, and the premises are still premises to which Part I applies.",
+   "quote": "the requisite majority of qualifying tenants of the constituent flats may, before the end of the period specified in section 12(2), serve a notice on the new landlord"
+  },
+  {
+   "requirement": "A notice served on the new landlord requires him (except as provided by the provisions following section 15(1) in Part I) to grant a new tenancy of the premises subject to the relevant tenancy to a person or persons nominated for the purposes of section 15 by any requisite majority of qualifying tenants of the constituent flats.",
+   "quote": "requiring him (except as provided by the following provisions of this Part) to grant a new tenancy of the premises subject to the relevant tenancy, on the terms referred to in subsection (2) below and expiring on the date on which that tenancy would have expired, to a person or persons nominated for the purposes of this section by any such majority of qualifying tenants of those flats"
+  },
+  {
+   "requirement": "The terms of the new tenancy to be granted by the new landlord are the terms of the relevant tenancy, and, if the new landlord paid any amount to the landlord as consideration for the surrender of that tenancy, that any such amount is paid to the new landlord by the nominated person or persons.",
+   "quote": "Those terms are— (a) the terms of the relevant tenancy; and (b) if the new landlord paid any amount to the landlord as consideration for the surrender by him of that tenancy, that any such amount is paid to the new landlord by the person or persons so nominated."
+  },
+  {
+   "requirement": "Where the premises subject to the relevant tenancy included premises other than those to which Part I applied at the time of the original disposal, the notice must require the new landlord to grant a new tenancy only of the premises to which Part I applied, on the terms referred to in section 15(2) subject to necessary or expedient modifications.",
+   "quote": "shall, where the premises subject to the relevant tenancy included premises other than those to which this Part applied at the time of the original disposal— (i) require the new landlord to grant a new tenancy only of the premises to which this Part so applied, and (ii) require him to do so on the terms referred to in subsection (2) subject to such modifications as are necessary or expedient in the circumstances"
+  },
+  {
+   "requirement": "A notice served on the new landlord may, instead of specifying the premises to be demised or any particular terms on which the tenancy is to be granted, provide for those premises or terms to be determined by a rent assessment committee in accordance with section 13 as applied by section 15(4).",
+   "quote": "may, instead of specifying the premises to be demised under the new tenancy or any particular terms on which that tenancy is to be granted by the new landlord (whether doing so expressly or by reference to the relevant tenancy), provide for those premises, or (as the case may be) for any such terms, to be determined by a rent assessment committee in accordance with section 13 (as applied by subsection (4) below)"
+  },
+  {
+   "requirement": "Section 12(7) to (9), sections 13 and 14, and sections 16 and 17 apply in relation to a notice under section 15 as they apply in relation to a purchase notice, subject to the modifications specified in section 15(5).",
+   "quote": "The following provisions, namely— section 12(7) to (9),sections 13 and 14, andsections 16 and 17,shall apply in relation to a notice under this section as they apply in relation to a purchase notice (whether referred to as such or as a notice served under section 12(1)) but subject to the modifications specified in subsection (5) below."
+  },
+  {
+   "requirement": "In applying the specified provisions to a notice under section 15, any reference to the purposes of section 12 must be read as a reference to the purposes of section 15.",
+   "quote": "any reference to the purposes of section 12 shall be read as a reference to the purposes of this section"
+  },
+  {
+   "requirement": "In applying the specified provisions to a notice under section 15, the reference in section 13(1)(b) to section 12(3)(b) must be read as a reference to section 15(3)(b).",
+   "quote": "the reference in section 13(1)(b) to section 12(3)(b) shall be read as a reference to subsection (3)(b) above"
+  },
+  {
+   "requirement": "In applying section 16 to a notice under section 15, references to the estate or interest that was the subject-matter of the original disposal must be read as a reference to the estate or interest which, prior to the surrender of the relevant tenancy, constituted the reversion immediately expectant on it.",
+   "quote": "the references in section 16 to the estate or interest that was the subject-matter of the original disposal shall be read as a reference to the estate or interest which, prior to the surrender of the relevant tenancy, constituted the reversion immediately expectant on it"
+  },
+  {
+   "requirement": "In applying sections 16 and 17 to a notice under section 15, references to sections 12 to 14 must be read as references to sections 12(7) to (9), 13 and 14 (as applied by section 15(4)) and section 15.",
+   "quote": "the references in sections 16 and 17 to sections 12 to 14 shall be read as references to sections 12(7) to (9), 13 and 14 (as applied by subsection (4) above) and this section"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 4,
+  "thresholds_verified": 0
+ }
+}

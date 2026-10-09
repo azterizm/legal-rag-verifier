@@ -1,0 +1,215 @@
+{
+ "key": "uk/ukpga/1984/60/s45ZB@current",
+ "section": "uk/ukpga/1984/60/s45ZB",
+ "version": "current",
+ "source_sha256": "39d77c1a5c7e1b1b73d7b1817f501f52c2dc2f93d79eca0d6f758e9269efc930",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A magistrates’ court may give a live link direction for the purpose of the hearing of an application under section 43 for a warrant authorising further detention of a person, or the hearing of an application under section 44 for an extension of such a warrant, if all statutory conditions are met.",
+    "quote": "A magistrates’ court may give a live link direction for the purpose of the hearing of an application under section 43 for a warrant authorising further detention of a person, or the hearing of an application under section 44 for an extension of such a warrant"
+   },
+   {
+    "requirement": "A custody officer must consider that the use of a live link for the purpose of the warrant application hearing is appropriate.",
+    "quote": "a custody officer considers that the use of a live link for that purpose is appropriate"
+   },
+   {
+    "requirement": "The person to whom the warrant application relates must have had legal advice on the use of the live link.",
+    "quote": "the person to whom the application relates has had legal advice on the use of the live link"
+   },
+   {
+    "requirement": "The appropriate consent to the use of the live link must have been given.",
+    "quote": "the appropriate consent to the use of the live link has been given"
+   },
+   {
+    "requirement": "It must not be contrary to the interests of justice for the magistrates' court to give the live link direction.",
+    "quote": "it is not contrary to the interests of justice to give the direction"
+   },
+   {
+    "requirement": "For a person who has attained the age of 18, the appropriate consent required is the consent of that person.",
+    "quote": "in relation to a person who has attained the age of 18, the consent of that person"
+   },
+   {
+    "requirement": "For a person who has not attained the age of 18 but has attained the age of 14, the appropriate consent required is the consent of that person and of his or her parent or guardian.",
+    "quote": "in relation to a person who has not attained that age but has attained the age of 14, the consent of that person and of his or her parent or guardian"
+   },
+   {
+    "requirement": "For a person who has not attained the age of 14, the appropriate consent required is the consent of his or her parent or guardian.",
+    "quote": "in relation to a person who has not attained the age of 14, the consent of his or her parent or guardian"
+   },
+   {
+    "requirement": "Where a live link direction is given by the court, the requirement under section 43(2)(b) for the person to whom the application relates to be brought before the court for the hearing does not apply.",
+    "quote": "the requirement under section 43(2)(b) for the person to whom the application relates to be brought before the court for the hearing does not apply"
+   },
+   {
+    "requirement": "A live link direction is defined as a direction that a live link be used for the purposes of the hearing.",
+    "quote": "“live link direction” means a direction that a live link be used for the purposes of the hearing"
+   },
+   {
+    "requirement": "A live link is defined as an arrangement by which a person (when not in the place where the hearing is being held) is able to see and hear, and to be seen and heard by, the court during a hearing, disregarding any impairment of eyesight or hearing.",
+    "quote": "“live link” means an arrangement by which a person (when not in the place where the hearing is being held) is able to see and hear, and to be seen and heard by, the court during a hearing (and for this purpose any impairment of eyesight or hearing is to be disregarded)"
+   },
+   {
+    "requirement": "A vulnerable adult is defined as a person aged 18 or over who may have difficulty understanding the purpose of the hearing or what occurs at it, whether because of a mental disorder or for any other reason.",
+    "quote": "“vulnerable adult” means a person aged 18 or over who may have difficulty understanding the purpose of the hearing or what occurs at it (whether because of a mental disorder or for any other reason)"
+   },
+   {
+    "requirement": "For a person aged under 18, an appropriate adult is defined as that person’s parent or guardian or, if the person is in the care of a local authority or voluntary organisation, a person representing that authority or organisation; a social worker of a local authority; or, if no such person is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes.",
+    "quote": "“appropriate adult”, in relation to a person aged under 18, means— the person’s parent or guardian or, if the person is in the care of a local authority or voluntary organisation, a person representing that authority or organisation,a social worker of a local authority, orif no person falling within paragraph (a) or (b) is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes"
+   },
+   {
+    "requirement": "For a vulnerable adult, an appropriate adult is defined as a relative, guardian or other person responsible for the appropriate adult’s care; a person who is experienced in dealing with vulnerable adults but who is not a police officer or a person employed for, or engaged on, police purposes; or, if no such person is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes.",
+    "quote": "“appropriate adult”, in relation to a vulnerable adult, means— a relative, guardian or other person responsible for the appropriate adult’s care,a person who is experienced in dealing with vulnerable adults but who is not a police officer or a person employed for, or engaged on, police purposes, orif no person falling within paragraph (a) or (b) is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes"
+   },
+   {
+    "requirement": "In both definitions of appropriate adult, police purposes has the meaning given by section 101(2) of the Police Act 1996.",
+    "quote": "In subsection (4), in both definitions of “appropriate adult”, “police purposes” has the meaning given by section 101(2) of the Police Act 1996"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Age at or above which an individual's own consent alone constitutes the appropriate consent",
+    "value": "18",
+    "quote": "attained the age of 18"
+   },
+   {
+    "what": "Minimum age at which an individual's consent is required alongside parent or guardian consent",
+    "value": "14",
+    "quote": "attained the age of 14"
+   },
+   {
+    "what": "Age below which only the parent's or guardian's consent constitutes the appropriate consent",
+    "value": "14",
+    "quote": "not attained the age of 14"
+   },
+   {
+    "what": "Minimum age for a person to be classified as a vulnerable adult",
+    "value": "18",
+    "quote": "aged 18 or over"
+   },
+   {
+    "what": "Age limit defining the scope of an appropriate adult in relation to a young person",
+    "value": "18",
+    "quote": "aged under 18"
+   },
+   {
+    "what": "Minimum age for a responsible person acting as an appropriate adult for a person aged under 18",
+    "value": "18",
+    "quote": "responsible person aged 18 or over"
+   },
+   {
+    "what": "Minimum age for a responsible person acting as an appropriate adult for a vulnerable adult",
+    "value": "18",
+    "quote": "responsible person aged 18 or over"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A magistrates’ court may give a live link direction for the purpose of the hearing of an application under section 43 for a warrant authorising further detention of a person, or the hearing of an application under section 44 for an extension of such a warrant, if all statutory conditions are met.",
+   "quote": "A magistrates’ court may give a live link direction for the purpose of the hearing of an application under section 43 for a warrant authorising further detention of a person, or the hearing of an application under section 44 for an extension of such a warrant"
+  },
+  {
+   "requirement": "A custody officer must consider that the use of a live link for the purpose of the warrant application hearing is appropriate.",
+   "quote": "a custody officer considers that the use of a live link for that purpose is appropriate"
+  },
+  {
+   "requirement": "The person to whom the warrant application relates must have had legal advice on the use of the live link.",
+   "quote": "the person to whom the application relates has had legal advice on the use of the live link"
+  },
+  {
+   "requirement": "The appropriate consent to the use of the live link must have been given.",
+   "quote": "the appropriate consent to the use of the live link has been given"
+  },
+  {
+   "requirement": "It must not be contrary to the interests of justice for the magistrates' court to give the live link direction.",
+   "quote": "it is not contrary to the interests of justice to give the direction"
+  },
+  {
+   "requirement": "For a person who has attained the age of 18, the appropriate consent required is the consent of that person.",
+   "quote": "in relation to a person who has attained the age of 18, the consent of that person"
+  },
+  {
+   "requirement": "For a person who has not attained the age of 18 but has attained the age of 14, the appropriate consent required is the consent of that person and of his or her parent or guardian.",
+   "quote": "in relation to a person who has not attained that age but has attained the age of 14, the consent of that person and of his or her parent or guardian"
+  },
+  {
+   "requirement": "For a person who has not attained the age of 14, the appropriate consent required is the consent of his or her parent or guardian.",
+   "quote": "in relation to a person who has not attained the age of 14, the consent of his or her parent or guardian"
+  },
+  {
+   "requirement": "Where a live link direction is given by the court, the requirement under section 43(2)(b) for the person to whom the application relates to be brought before the court for the hearing does not apply.",
+   "quote": "the requirement under section 43(2)(b) for the person to whom the application relates to be brought before the court for the hearing does not apply"
+  },
+  {
+   "requirement": "A live link direction is defined as a direction that a live link be used for the purposes of the hearing.",
+   "quote": "“live link direction” means a direction that a live link be used for the purposes of the hearing"
+  },
+  {
+   "requirement": "A live link is defined as an arrangement by which a person (when not in the place where the hearing is being held) is able to see and hear, and to be seen and heard by, the court during a hearing, disregarding any impairment of eyesight or hearing.",
+   "quote": "“live link” means an arrangement by which a person (when not in the place where the hearing is being held) is able to see and hear, and to be seen and heard by, the court during a hearing (and for this purpose any impairment of eyesight or hearing is to be disregarded)"
+  },
+  {
+   "requirement": "A vulnerable adult is defined as a person aged 18 or over who may have difficulty understanding the purpose of the hearing or what occurs at it, whether because of a mental disorder or for any other reason.",
+   "quote": "“vulnerable adult” means a person aged 18 or over who may have difficulty understanding the purpose of the hearing or what occurs at it (whether because of a mental disorder or for any other reason)"
+  },
+  {
+   "requirement": "For a person aged under 18, an appropriate adult is defined as that person’s parent or guardian or, if the person is in the care of a local authority or voluntary organisation, a person representing that authority or organisation; a social worker of a local authority; or, if no such person is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes.",
+   "quote": "“appropriate adult”, in relation to a person aged under 18, means— the person’s parent or guardian or, if the person is in the care of a local authority or voluntary organisation, a person representing that authority or organisation,a social worker of a local authority, orif no person falling within paragraph (a) or (b) is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes"
+  },
+  {
+   "requirement": "For a vulnerable adult, an appropriate adult is defined as a relative, guardian or other person responsible for the appropriate adult’s care; a person who is experienced in dealing with vulnerable adults but who is not a police officer or a person employed for, or engaged on, police purposes; or, if no such person is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes.",
+   "quote": "“appropriate adult”, in relation to a vulnerable adult, means— a relative, guardian or other person responsible for the appropriate adult’s care,a person who is experienced in dealing with vulnerable adults but who is not a police officer or a person employed for, or engaged on, police purposes, orif no person falling within paragraph (a) or (b) is available, any responsible person aged 18 or over who is not a police officer or a person employed for, or engaged on, police purposes"
+  },
+  {
+   "requirement": "In both definitions of appropriate adult, police purposes has the meaning given by section 101(2) of the Police Act 1996.",
+   "quote": "In subsection (4), in both definitions of “appropriate adult”, “police purposes” has the meaning given by section 101(2) of the Police Act 1996"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "Age at or above which an individual's own consent alone constitutes the appropriate consent",
+   "value": "18",
+   "quote": "attained the age of 18"
+  },
+  {
+   "what": "Minimum age at which an individual's consent is required alongside parent or guardian consent",
+   "value": "14",
+   "quote": "attained the age of 14"
+  },
+  {
+   "what": "Age below which only the parent's or guardian's consent constitutes the appropriate consent",
+   "value": "14",
+   "quote": "not attained the age of 14"
+  },
+  {
+   "what": "Minimum age for a person to be classified as a vulnerable adult",
+   "value": "18",
+   "quote": "aged 18 or over"
+  },
+  {
+   "what": "Age limit defining the scope of an appropriate adult in relation to a young person",
+   "value": "18",
+   "quote": "aged under 18"
+  },
+  {
+   "what": "Minimum age for a responsible person acting as an appropriate adult for a person aged under 18",
+   "value": "18",
+   "quote": "responsible person aged 18 or over"
+  },
+  {
+   "what": "Minimum age for a responsible person acting as an appropriate adult for a vulnerable adult",
+   "value": "18",
+   "quote": "responsible person aged 18 or over"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 7,
+  "thresholds_verified": 7
+ }
+}

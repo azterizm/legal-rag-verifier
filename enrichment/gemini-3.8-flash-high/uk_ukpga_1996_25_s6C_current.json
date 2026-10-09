@@ -1,0 +1,79 @@
+{
+ "key": "uk/ukpga/1996/25/s6C@current",
+ "section": "uk/ukpga/1996/25/s6C",
+ "version": "current",
+ "source_sha256": "761ae8f1d513935e64f4ce7fb5a895298190abb6b959ea36a2229e0ed19b5a55",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The accused must give to the court and the prosecutor a notice indicating whether the accused intends to call any persons other than himself as witnesses at his trial.",
+    "quote": "The accused must give to the court and the prosecutor a notice indicating whether he intends to call any persons (other than himself) as witnesses at his trial"
+   },
+   {
+    "requirement": "If the accused intends to call any witnesses other than himself, the notice given to the court and the prosecutor must include the name, address, and date of birth of each proposed witness, or as many of those details as are known to the accused at the time the notice is given.",
+    "quote": "giving the name, address and date of birth of each such proposed witness, or as many of those details as are known to the accused when the notice is given"
+   },
+   {
+    "requirement": "If any of the name, address, or date of birth details of a proposed witness are not known to the accused when the notice is given, the accused must provide any information in his possession that might be of material assistance in identifying or finding that proposed witness.",
+    "quote": "providing any information in the accused’s possession which might be of material assistance in identifying or finding any such proposed witness in whose case any of the details mentioned in paragraph (a) are not known to the accused when the notice is given"
+   },
+   {
+    "requirement": "The accused is not required to provide details in the witness notice to the extent that those details have already been given under section 6A(2).",
+    "quote": "Details do not have to be given under this section to the extent that they have already been given under section 6A(2)."
+   },
+   {
+    "requirement": "The accused must give the witness notice during the period that is the relevant period for section 6C by virtue of section 12.",
+    "quote": "The accused must give a notice under this section during the period which, by virtue of section 12, is the relevant period for this section."
+   },
+   {
+    "requirement": "If, after giving the witness notice, the accused decides to call as a proposed witness a person other than himself who was not included in the notice, or decides not to call a person who was included, the accused must give an appropriately amended notice to the court and the prosecutor.",
+    "quote": "decides to call a person (other than himself) who is not included in the notice as a proposed witness, or decides not to call a person who is so included"
+   },
+   {
+    "requirement": "If, after giving the witness notice, the accused discovers any information that he would have been required under subsection (1) to include in the notice had he known it at that time, the accused must give an appropriately amended notice to the court and the prosecutor.",
+    "quote": "discovers any information which, under subsection (1), he would have had to include in the notice if he had been aware of it when giving the notice, he must give an appropriately amended notice to the court and the prosecutor"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The accused must give to the court and the prosecutor a notice indicating whether the accused intends to call any persons other than himself as witnesses at his trial.",
+   "quote": "The accused must give to the court and the prosecutor a notice indicating whether he intends to call any persons (other than himself) as witnesses at his trial"
+  },
+  {
+   "requirement": "If the accused intends to call any witnesses other than himself, the notice given to the court and the prosecutor must include the name, address, and date of birth of each proposed witness, or as many of those details as are known to the accused at the time the notice is given.",
+   "quote": "giving the name, address and date of birth of each such proposed witness, or as many of those details as are known to the accused when the notice is given"
+  },
+  {
+   "requirement": "If any of the name, address, or date of birth details of a proposed witness are not known to the accused when the notice is given, the accused must provide any information in his possession that might be of material assistance in identifying or finding that proposed witness.",
+   "quote": "providing any information in the accused’s possession which might be of material assistance in identifying or finding any such proposed witness in whose case any of the details mentioned in paragraph (a) are not known to the accused when the notice is given"
+  },
+  {
+   "requirement": "The accused is not required to provide details in the witness notice to the extent that those details have already been given under section 6A(2).",
+   "quote": "Details do not have to be given under this section to the extent that they have already been given under section 6A(2)."
+  },
+  {
+   "requirement": "The accused must give the witness notice during the period that is the relevant period for section 6C by virtue of section 12.",
+   "quote": "The accused must give a notice under this section during the period which, by virtue of section 12, is the relevant period for this section."
+  },
+  {
+   "requirement": "If, after giving the witness notice, the accused decides to call as a proposed witness a person other than himself who was not included in the notice, or decides not to call a person who was included, the accused must give an appropriately amended notice to the court and the prosecutor.",
+   "quote": "decides to call a person (other than himself) who is not included in the notice as a proposed witness, or decides not to call a person who is so included"
+  },
+  {
+   "requirement": "If, after giving the witness notice, the accused discovers any information that he would have been required under subsection (1) to include in the notice had he known it at that time, the accused must give an appropriately amended notice to the court and the prosecutor.",
+   "quote": "discovers any information which, under subsection (1), he would have had to include in the notice if he had been aware of it when giving the notice, he must give an appropriately amended notice to the court and the prosecutor"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 7,
+  "elements_verified": 7,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

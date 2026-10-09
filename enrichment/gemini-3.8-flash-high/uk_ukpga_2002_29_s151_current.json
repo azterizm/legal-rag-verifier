@@ -1,0 +1,149 @@
+{
+ "key": "uk/ukpga/2002/29/s151@current",
+ "section": "uk/ukpga/2002/29/s151",
+ "version": "current",
+ "source_sha256": "9772f0d411d62540816775e65c80d3ae0d72e2dadbc93d2a7b135af68cacbb0b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Proceedings for an offence are instituted against a person on that person's arrest without warrant.",
+    "quote": "on his arrest without warrant"
+   },
+   {
+    "requirement": "Proceedings for an offence are instituted against a person when that person is charged with the offence without being arrested.",
+    "quote": "when he is charged with the offence without being arrested"
+   },
+   {
+    "requirement": "Proceedings for an offence are instituted against a person when a warrant to arrest that person is granted.",
+    "quote": "when a warrant to arrest him is granted"
+   },
+   {
+    "requirement": "Proceedings for an offence are instituted against a person when a warrant to cite that person is granted.",
+    "quote": "when a warrant to cite him is granted"
+   },
+   {
+    "requirement": "Proceedings for an offence are instituted against a person when that person first appears on petition or when an indictment or complaint is served on that person.",
+    "quote": "when he first appears on petition or when an indictment or complaint is served on him"
+   },
+   {
+    "requirement": "If more than one institution time is found in relation to proceedings for an offence, the proceedings are instituted at the earliest of those times.",
+    "quote": "they are instituted at the earliest of those times"
+   },
+   {
+    "requirement": "Proceedings for an offence are concluded when the trial diet is deserted simpliciter.",
+    "quote": "the trial diet is deserted simpliciter"
+   },
+   {
+    "requirement": "Proceedings for an offence are concluded when the accused is acquitted or, under section 65 or 147 of the Procedure Act, discharged or liberated.",
+    "quote": "the accused is acquitted or, under section 65 or 147 of the Procedure Act, discharged or liberated"
+   },
+   {
+    "requirement": "Proceedings for an offence are concluded when the court sentences the accused without making a confiscation order and without postponing a decision as regards making such an order.",
+    "quote": "the court sentences the accused without making a confiscation order and without postponing a decision as regards making such an order"
+   },
+   {
+    "requirement": "Proceedings for an offence are concluded when the court decides, after postponing a decision as regards making a confiscation order, not to make a confiscation order.",
+    "quote": "the court decides, after such a postponement, not to make a confiscation order"
+   },
+   {
+    "requirement": "Proceedings for an offence are concluded when the accused's conviction is quashed.",
+    "quote": "the accused’s conviction is quashed"
+   },
+   {
+    "requirement": "Proceedings for an offence are concluded when the accused is pardoned.",
+    "quote": "the accused is pardoned"
+   },
+   {
+    "requirement": "If a confiscation order is made against the accused in proceedings for an offence, the proceedings are concluded when the order is satisfied or discharged.",
+    "quote": "when the order is satisfied or discharged"
+   },
+   {
+    "requirement": "If a confiscation order is made against the accused in proceedings for an offence, the proceedings are concluded when the order is quashed and there is no further possibility of an appeal against the decision to quash the order.",
+    "quote": "when the order is quashed and there is no further possibility of an appeal against the decision to quash the order"
+   },
+   {
+    "requirement": "If the accused is convicted in proceedings for an offence but the court decides not to make a confiscation order against the accused, and on appeal under section 108(1)(ca) or 175(4)(ca) of the Procedure Act the High Court of Justiciary refuses the appeal, the proceedings are concluded on the determination of the appeal.",
+    "quote": "the proceedings are concluded on the determination of the appeal"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the number of institution times found under subsection (1) in relation to proceedings above which the proceedings are instituted at the earliest time",
+    "value": "one",
+    "quote": "more than one time is found under subsection (1)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Proceedings for an offence are instituted against a person on that person's arrest without warrant.",
+   "quote": "on his arrest without warrant"
+  },
+  {
+   "requirement": "Proceedings for an offence are instituted against a person when that person is charged with the offence without being arrested.",
+   "quote": "when he is charged with the offence without being arrested"
+  },
+  {
+   "requirement": "Proceedings for an offence are instituted against a person when a warrant to arrest that person is granted.",
+   "quote": "when a warrant to arrest him is granted"
+  },
+  {
+   "requirement": "Proceedings for an offence are instituted against a person when a warrant to cite that person is granted.",
+   "quote": "when a warrant to cite him is granted"
+  },
+  {
+   "requirement": "Proceedings for an offence are instituted against a person when that person first appears on petition or when an indictment or complaint is served on that person.",
+   "quote": "when he first appears on petition or when an indictment or complaint is served on him"
+  },
+  {
+   "requirement": "If more than one institution time is found in relation to proceedings for an offence, the proceedings are instituted at the earliest of those times.",
+   "quote": "they are instituted at the earliest of those times"
+  },
+  {
+   "requirement": "Proceedings for an offence are concluded when the trial diet is deserted simpliciter.",
+   "quote": "the trial diet is deserted simpliciter"
+  },
+  {
+   "requirement": "Proceedings for an offence are concluded when the accused is acquitted or, under section 65 or 147 of the Procedure Act, discharged or liberated.",
+   "quote": "the accused is acquitted or, under section 65 or 147 of the Procedure Act, discharged or liberated"
+  },
+  {
+   "requirement": "Proceedings for an offence are concluded when the court sentences the accused without making a confiscation order and without postponing a decision as regards making such an order.",
+   "quote": "the court sentences the accused without making a confiscation order and without postponing a decision as regards making such an order"
+  },
+  {
+   "requirement": "Proceedings for an offence are concluded when the court decides, after postponing a decision as regards making a confiscation order, not to make a confiscation order.",
+   "quote": "the court decides, after such a postponement, not to make a confiscation order"
+  },
+  {
+   "requirement": "Proceedings for an offence are concluded when the accused's conviction is quashed.",
+   "quote": "the accused’s conviction is quashed"
+  },
+  {
+   "requirement": "Proceedings for an offence are concluded when the accused is pardoned.",
+   "quote": "the accused is pardoned"
+  },
+  {
+   "requirement": "If a confiscation order is made against the accused in proceedings for an offence, the proceedings are concluded when the order is satisfied or discharged.",
+   "quote": "when the order is satisfied or discharged"
+  },
+  {
+   "requirement": "If a confiscation order is made against the accused in proceedings for an offence, the proceedings are concluded when the order is quashed and there is no further possibility of an appeal against the decision to quash the order.",
+   "quote": "when the order is quashed and there is no further possibility of an appeal against the decision to quash the order"
+  },
+  {
+   "requirement": "If the accused is convicted in proceedings for an offence but the court decides not to make a confiscation order against the accused, and on appeal under section 108(1)(ca) or 175(4)(ca) of the Procedure Act the High Court of Justiciary refuses the appeal, the proceedings are concluded on the determination of the appeal.",
+   "quote": "the proceedings are concluded on the determination of the appeal"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 15,
+  "elements_verified": 15,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

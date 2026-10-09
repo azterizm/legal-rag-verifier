@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/1971/38/s9A@current",
+ "section": "uk/ukpga/1971/38/s9A",
+ "version": "current",
+ "source_sha256": "8612e7cfb5b1bf9f5d0d08c65fc5642dd3a1927ea3d44bde97c50e8a9877a8a7",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A person commits an offence if that person supplies or offers to supply any article that may be used or adapted to be used (whether by itself or in combination with another article or other articles) in the administration of a controlled drug by any person to himself or another, believing that the article (or the article as adapted) is to be so used in circumstances where the administration is unlawful.",
+    "quote": "A person who supplies or offers to supply any article which may be used or adapted to be used (whether by itself or in combination with another article or other articles) in the administration by any person of a controlled drug to himself or another, believing that the article (or the article as adapted) is to be so used in circumstances where the administration is unlawful, is guilty of an offence."
+   },
+   {
+    "requirement": "A person does not commit an offence under subsection (1) by supplying or offering to supply a hypodermic syringe, or any part of a hypodermic syringe.",
+    "quote": "It is not an offence under subsection (1) above to supply or offer to supply a hypodermic syringe, or any part of one."
+   },
+   {
+    "requirement": "A person commits an offence if that person supplies or offers to supply any article that may be used to prepare a controlled drug for administration by any person to himself or another, believing that the article is to be so used in circumstances where the administration is unlawful.",
+    "quote": "A person who supplies or offers to supply any article which may be used to prepare a controlled drug for administration by any person to himself or another believing that the article is to be so used in circumstances where the administration is unlawful is guilty of an offence."
+   },
+   {
+    "requirement": "For the purposes of section 9A, any administration of a controlled drug is unlawful unless a specified statutory exception applies.",
+    "quote": "For the purposes of this section, any administration of a controlled drug is unlawful except"
+   },
+   {
+    "requirement": "The administration by any person of a controlled drug to another person is not unlawful where the administration of the drug is not unlawful under section 4(1) of the Misuse of Drugs Act 1971.",
+    "quote": "the administration by any person of a controlled drug to another in circumstances where the administration of the drug is not unlawful under section 4(1) of this Act"
+   },
+   {
+    "requirement": "The administration by any person of a controlled drug, other than a temporary class drug, to himself is not unlawful where having the controlled drug in his possession is not unlawful under section 5(1) of the Misuse of Drugs Act 1971.",
+    "quote": "the administration by any person of a controlled drug , other than a temporary class drug, to himself in circumstances where having the controlled drug in his possession is not unlawful under section 5(1) of this Act."
+   },
+   {
+    "requirement": "The administration by any person of a temporary class drug to himself is not unlawful where having the drug in his possession is to be treated as excepted possession for the purposes of the Misuse of Drugs Act 1971 under section 7A(2)(c).",
+    "quote": "the administration by any person of a temporary class drug to himself in circumstances where having the drug in his possession is to be treated as excepted possession for the purposes of this Act (see section 7A(2)(c))."
+   },
+   {
+    "requirement": "Any reference in section 9A to the administration of a controlled drug by any person to himself includes administering the drug to himself with the assistance of another person.",
+    "quote": "In this section, references to administration by any person of a controlled drug to himself include a reference to his administering it to himself with the assistance of another"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A person commits an offence if that person supplies or offers to supply any article that may be used or adapted to be used (whether by itself or in combination with another article or other articles) in the administration of a controlled drug by any person to himself or another, believing that the article (or the article as adapted) is to be so used in circumstances where the administration is unlawful.",
+   "quote": "A person who supplies or offers to supply any article which may be used or adapted to be used (whether by itself or in combination with another article or other articles) in the administration by any person of a controlled drug to himself or another, believing that the article (or the article as adapted) is to be so used in circumstances where the administration is unlawful, is guilty of an offence."
+  },
+  {
+   "requirement": "A person does not commit an offence under subsection (1) by supplying or offering to supply a hypodermic syringe, or any part of a hypodermic syringe.",
+   "quote": "It is not an offence under subsection (1) above to supply or offer to supply a hypodermic syringe, or any part of one."
+  },
+  {
+   "requirement": "A person commits an offence if that person supplies or offers to supply any article that may be used to prepare a controlled drug for administration by any person to himself or another, believing that the article is to be so used in circumstances where the administration is unlawful.",
+   "quote": "A person who supplies or offers to supply any article which may be used to prepare a controlled drug for administration by any person to himself or another believing that the article is to be so used in circumstances where the administration is unlawful is guilty of an offence."
+  },
+  {
+   "requirement": "For the purposes of section 9A, any administration of a controlled drug is unlawful unless a specified statutory exception applies.",
+   "quote": "For the purposes of this section, any administration of a controlled drug is unlawful except"
+  },
+  {
+   "requirement": "The administration by any person of a controlled drug to another person is not unlawful where the administration of the drug is not unlawful under section 4(1) of the Misuse of Drugs Act 1971.",
+   "quote": "the administration by any person of a controlled drug to another in circumstances where the administration of the drug is not unlawful under section 4(1) of this Act"
+  },
+  {
+   "requirement": "The administration by any person of a controlled drug, other than a temporary class drug, to himself is not unlawful where having the controlled drug in his possession is not unlawful under section 5(1) of the Misuse of Drugs Act 1971.",
+   "quote": "the administration by any person of a controlled drug , other than a temporary class drug, to himself in circumstances where having the controlled drug in his possession is not unlawful under section 5(1) of this Act."
+  },
+  {
+   "requirement": "The administration by any person of a temporary class drug to himself is not unlawful where having the drug in his possession is to be treated as excepted possession for the purposes of the Misuse of Drugs Act 1971 under section 7A(2)(c).",
+   "quote": "the administration by any person of a temporary class drug to himself in circumstances where having the drug in his possession is to be treated as excepted possession for the purposes of this Act (see section 7A(2)(c))."
+  },
+  {
+   "requirement": "Any reference in section 9A to the administration of a controlled drug by any person to himself includes administering the drug to himself with the assistance of another person.",
+   "quote": "In this section, references to administration by any person of a controlled drug to himself include a reference to his administering it to himself with the assistance of another"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

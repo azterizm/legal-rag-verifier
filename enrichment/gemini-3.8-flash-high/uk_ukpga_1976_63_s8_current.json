@@ -1,0 +1,138 @@
+{
+ "key": "uk/ukpga/1976/63/s8@current",
+ "section": "uk/ukpga/1976/63/s8",
+ "version": "current",
+ "source_sha256": "6fb0f77850f30ec1649deffd2ba494ed83ae9f6ce4be2c230cb38acff734e360",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 8 of the Bail Act 1976 applies where a person is granted bail in criminal proceedings on condition that they provide one or more sureties to secure their surrender to custody.",
+    "quote": "granted bail in criminal proceedings on condition that he provides one or more surety or sureties for the purpose of securing that he surrenders to custody"
+   },
+   {
+    "requirement": "When considering the suitability of a proposed surety, regard may be had to the surety's financial resources, character, previous convictions, and proximity (whether by kinship, place of residence, or otherwise) to the person bailed, among other factors.",
+    "quote": "regard may be had (amongst other things) to— (a) the surety’s financial resources; (b) his character and any previous convictions of his; and (c) his proximity (whether in point of kinship, place of residence or otherwise) to the person for whom he is to be surety"
+   },
+   {
+    "requirement": "Where a court grants bail in criminal proceedings subject to a surety condition but cannot release the person because no suitable surety is available, the court must fix the amount in which the surety is to be bound to enable the recognizance to be entered into subsequently.",
+    "quote": "the court shall fix the amount in which the surety is to be bound and subsections (4) and (5) below, or in a case where the proposed surety resides in Scotland subsection (6) below, shall apply"
+   },
+   {
+    "requirement": "A surety's recognizance may be entered into before any persons or descriptions of persons specified by court order, or before statutory default persons if the court makes no such order.",
+    "quote": "the recognizance of the surety may be entered into before such of the following persons or descriptions of persons as the court may by order specify or, if it makes no such order, before any of the following persons"
+   },
+   {
+    "requirement": "Where the bail decision was taken by a magistrates' court, the recognizance may be entered into before a justice of the peace, a police officer of the rank of inspector or above, a police officer in charge of a police station, or a person specified in Criminal Procedure Rules.",
+    "quote": "where the decision is taken by a magistrates’ court, before a justice of the peace ... or a police officer who either is of the rank of inspector or above or is in charge of a police station or, if Criminal Procedure Rules so provide, by a person of such other description as is specified in the rules"
+   },
+   {
+    "requirement": "Where the bail decision was taken by the Crown Court, the recognizance may be entered into before any person authorized for a magistrates' court decision or a person specified by Criminal Procedure Rules.",
+    "quote": "where the decision is taken by the Crown Court, before any of the persons specified in paragraph (a) above or, if Criminal Procedure Rules so provide, by a person of such other description as is specified in the rules"
+   },
+   {
+    "requirement": "Where the bail decision was taken by the High Court or the Court of Appeal, the recognizance may be entered into before any person authorized for a magistrates' court decision or a person specified by Civil Procedure Rules or Criminal Procedure Rules.",
+    "quote": "where the decision is taken by the High Court or the Court of Appeal, before any of the persons specified in paragraph (a) above or, if Civil Procedure Rules or Criminal Procedure Rules so provide, by a person of such other description as is specified in the rules"
+   },
+   {
+    "requirement": "Where the bail decision was taken by the Court Martial Appeal Court, the recognizance may be entered into before any person authorized for a magistrates' court decision or a person specified by Court Martial Appeal Rules.",
+    "quote": "where the decision is taken by the Court Martial Appeal Court, before any of the persons specified in paragraph (a) above or, if Court Martial Appeal Rules so provide, by a person of such other description as is specified in the rules"
+   },
+   {
+    "requirement": "Civil Procedure Rules, Criminal Procedure Rules, or Court Martial Appeal Rules may prescribe the manner of entering into a recognizance and the persons by whom and manner in which it may be enforced.",
+    "quote": "Civil Procedure Rules, Criminal Procedure Rules or Court Martial Appeal Rules may also prescribe the manner in which a recognizance which is to be entered into before such a person is to be entered into and the persons by whom and the manner in which the recognizance may be enforced"
+   },
+   {
+    "requirement": "If an authorized person declines to take a recognizance because they are not satisfied of the surety's suitability, the surety may apply to the court that fixed the recognizance amount or to a magistrates' court.",
+    "quote": "Where a surety seeks to enter into his recognizance before any person in accordance with subsection (4) above but that person declines to take his recognizance because he is not satisfied of the surety’s suitability, the surety may apply to— (a) the court which fixed the amount of the recognizance in which the surety was to be bound, or (b) a magistrates’ court"
+   },
+   {
+    "requirement": "A court applied to following a refusal to take a recognizance must take the surety's recognizance if it is satisfied of the surety's suitability.",
+    "quote": "for that court to take his recognizance and that court shall, if satisfied of his suitability, take his recognizance"
+   },
+   {
+    "requirement": "Where a proposed surety resides in Scotland, the court, if satisfied of the surety's suitability, may direct that arrangements be made for the recognizance to be entered into in Scotland before any constable in charge of any police office or station within the meaning of the Police and Fire Reform (Scotland) Act 2012 in like manner as in England or Wales.",
+    "quote": "the court, if satisfied of the suitability of the proposed surety, may direct that arrangements be made for the recognizance of the surety to be entered into in Scotland before any constable, within the meaning of the Police and Fire Reform (Scotland) Act 2012, having charge at any police office or station in like manner as the recognizance would be entered into in England or Wales"
+   },
+   {
+    "requirement": "Where a recognizance is entered into before an authorized person or in Scotland rather than before the court that fixed the amount, the exact same legal consequences follow as if it had been entered into before that court.",
+    "quote": "Where, in pursuance of subsection (4) or (6) above, a recognizance is entered into otherwise than before the court that fixed the amount of the recognizance, the same consequences shall follow as if it had been entered into before that court"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of sureties required as a bail condition",
+    "value": "one or more",
+    "quote": "one or more surety or sureties"
+   },
+   {
+    "what": "calendar year cited in the Scottish policing statute",
+    "value": "2012",
+    "quote": "Police and Fire Reform (Scotland) Act 2012"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 8 of the Bail Act 1976 applies where a person is granted bail in criminal proceedings on condition that they provide one or more sureties to secure their surrender to custody.",
+   "quote": "granted bail in criminal proceedings on condition that he provides one or more surety or sureties for the purpose of securing that he surrenders to custody"
+  },
+  {
+   "requirement": "When considering the suitability of a proposed surety, regard may be had to the surety's financial resources, character, previous convictions, and proximity (whether by kinship, place of residence, or otherwise) to the person bailed, among other factors.",
+   "quote": "regard may be had (amongst other things) to— (a) the surety’s financial resources; (b) his character and any previous convictions of his; and (c) his proximity (whether in point of kinship, place of residence or otherwise) to the person for whom he is to be surety"
+  },
+  {
+   "requirement": "Where a court grants bail in criminal proceedings subject to a surety condition but cannot release the person because no suitable surety is available, the court must fix the amount in which the surety is to be bound to enable the recognizance to be entered into subsequently.",
+   "quote": "the court shall fix the amount in which the surety is to be bound and subsections (4) and (5) below, or in a case where the proposed surety resides in Scotland subsection (6) below, shall apply"
+  },
+  {
+   "requirement": "A surety's recognizance may be entered into before any persons or descriptions of persons specified by court order, or before statutory default persons if the court makes no such order.",
+   "quote": "the recognizance of the surety may be entered into before such of the following persons or descriptions of persons as the court may by order specify or, if it makes no such order, before any of the following persons"
+  },
+  {
+   "requirement": "Where the bail decision was taken by a magistrates' court, the recognizance may be entered into before a justice of the peace, a police officer of the rank of inspector or above, a police officer in charge of a police station, or a person specified in Criminal Procedure Rules.",
+   "quote": "where the decision is taken by a magistrates’ court, before a justice of the peace ... or a police officer who either is of the rank of inspector or above or is in charge of a police station or, if Criminal Procedure Rules so provide, by a person of such other description as is specified in the rules"
+  },
+  {
+   "requirement": "Where the bail decision was taken by the Crown Court, the recognizance may be entered into before any person authorized for a magistrates' court decision or a person specified by Criminal Procedure Rules.",
+   "quote": "where the decision is taken by the Crown Court, before any of the persons specified in paragraph (a) above or, if Criminal Procedure Rules so provide, by a person of such other description as is specified in the rules"
+  },
+  {
+   "requirement": "Where the bail decision was taken by the High Court or the Court of Appeal, the recognizance may be entered into before any person authorized for a magistrates' court decision or a person specified by Civil Procedure Rules or Criminal Procedure Rules.",
+   "quote": "where the decision is taken by the High Court or the Court of Appeal, before any of the persons specified in paragraph (a) above or, if Civil Procedure Rules or Criminal Procedure Rules so provide, by a person of such other description as is specified in the rules"
+  },
+  {
+   "requirement": "Where the bail decision was taken by the Court Martial Appeal Court, the recognizance may be entered into before any person authorized for a magistrates' court decision or a person specified by Court Martial Appeal Rules.",
+   "quote": "where the decision is taken by the Court Martial Appeal Court, before any of the persons specified in paragraph (a) above or, if Court Martial Appeal Rules so provide, by a person of such other description as is specified in the rules"
+  },
+  {
+   "requirement": "Civil Procedure Rules, Criminal Procedure Rules, or Court Martial Appeal Rules may prescribe the manner of entering into a recognizance and the persons by whom and manner in which it may be enforced.",
+   "quote": "Civil Procedure Rules, Criminal Procedure Rules or Court Martial Appeal Rules may also prescribe the manner in which a recognizance which is to be entered into before such a person is to be entered into and the persons by whom and the manner in which the recognizance may be enforced"
+  },
+  {
+   "requirement": "If an authorized person declines to take a recognizance because they are not satisfied of the surety's suitability, the surety may apply to the court that fixed the recognizance amount or to a magistrates' court.",
+   "quote": "Where a surety seeks to enter into his recognizance before any person in accordance with subsection (4) above but that person declines to take his recognizance because he is not satisfied of the surety’s suitability, the surety may apply to— (a) the court which fixed the amount of the recognizance in which the surety was to be bound, or (b) a magistrates’ court"
+  },
+  {
+   "requirement": "A court applied to following a refusal to take a recognizance must take the surety's recognizance if it is satisfied of the surety's suitability.",
+   "quote": "for that court to take his recognizance and that court shall, if satisfied of his suitability, take his recognizance"
+  },
+  {
+   "requirement": "Where a proposed surety resides in Scotland, the court, if satisfied of the surety's suitability, may direct that arrangements be made for the recognizance to be entered into in Scotland before any constable in charge of any police office or station within the meaning of the Police and Fire Reform (Scotland) Act 2012 in like manner as in England or Wales.",
+   "quote": "the court, if satisfied of the suitability of the proposed surety, may direct that arrangements be made for the recognizance of the surety to be entered into in Scotland before any constable, within the meaning of the Police and Fire Reform (Scotland) Act 2012, having charge at any police office or station in like manner as the recognizance would be entered into in England or Wales"
+  },
+  {
+   "requirement": "Where a recognizance is entered into before an authorized person or in Scotland rather than before the court that fixed the amount, the exact same legal consequences follow as if it had been entered into before that court.",
+   "quote": "Where, in pursuance of subsection (4) or (6) above, a recognizance is entered into otherwise than before the court that fixed the amount of the recognizance, the same consequences shall follow as if it had been entered into before that court"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 13,
+  "elements_verified": 13,
+  "thresholds_proposed": 2,
+  "thresholds_verified": 0
+ }
+}

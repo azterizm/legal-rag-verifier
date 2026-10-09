@@ -1,0 +1,169 @@
+{
+ "key": "uk/ukpga/1996/27/s63C@current",
+ "section": "uk/ukpga/1996/27/s63C",
+ "version": "current",
+ "source_sha256": "354d571df180f5d47452b194544bdf8b7eddbff07bff89078930ce2bbff9b9dc",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may make a forced marriage protection order on an application being made to the court.",
+    "quote": "court may make a forced marriage protection order— (a) on an application being made to it"
+   },
+   {
+    "requirement": "The court may make a forced marriage protection order without an application being made to it in the circumstances specified in subsection (6).",
+    "quote": "without an application being made to it but in the circumstances mentioned in subsection (6)"
+   },
+   {
+    "requirement": "An application for a forced marriage protection order may be made by the person who is to be protected by the order.",
+    "quote": "An application may be made by— (a) the person who is to be protected by the order"
+   },
+   {
+    "requirement": "An application for a forced marriage protection order may be made by a relevant third party.",
+    "quote": "An application may be made by— ... (b) a relevant third party"
+   },
+   {
+    "requirement": "An application for a forced marriage protection order may be made by any other person with the leave of the court.",
+    "quote": "An application may be made by any other person with the leave of the court"
+   },
+   {
+    "requirement": "In deciding whether to grant leave to apply for a forced marriage protection order, the court must have regard to all the circumstances, including the applicant's connection with the person to be protected.",
+    "quote": "court must have regard to all the circumstances including— (a) the applicant's connection with the person to be protected"
+   },
+   {
+    "requirement": "In deciding whether to grant leave to apply for a forced marriage protection order, the court must have regard to the applicant's knowledge of the circumstances of the person to be protected.",
+    "quote": "the applicant's knowledge of the circumstances of the person to be protected"
+   },
+   {
+    "requirement": "In deciding whether to grant leave to apply for a forced marriage protection order, the court must have regard to the wishes and feelings of the person to be protected so far as they are reasonably ascertainable and so far as the court considers it appropriate to have regard to them in the light of that person's age and understanding.",
+    "quote": "the wishes and feelings of the person to be protected so far as they are reasonably ascertainable and so far as the court considers it appropriate, in the light of the person's age and understanding, to have regard to them"
+   },
+   {
+    "requirement": "An application for a forced marriage protection order may be made in other family proceedings or without any other family proceedings being instituted.",
+    "quote": "An application under this section may be made in other family proceedings or without any other family proceedings being instituted"
+   },
+   {
+    "requirement": "The court may make a forced marriage protection order without an application being made where other family proceedings are before the court.",
+    "quote": "any other family proceedings are before the court (“the current proceedings”)"
+   },
+   {
+    "requirement": "The court may make a forced marriage protection order without an application being made where the court considers that an order should be made to protect a person, regardless of whether that person is a party to the current family proceedings.",
+    "quote": "the court considers that a forced marriage protection order should be made to protect a person (whether or not a party to the current proceedings)"
+   },
+   {
+    "requirement": "The court may make a forced marriage protection order without an application being made where a person who would be a respondent to proceedings for the order is a party to the current family proceedings.",
+    "quote": "a person who would be a respondent to any such proceedings for a forced marriage protection order is a party to the current proceedings"
+   },
+   {
+    "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' has the same meaning as in Part 4 of that Act as set out in section 63(1) and (2).",
+    "quote": "“family proceedings” has the same meaning as in Part 4 (see section 63(1) and (2))"
+   },
+   {
+    "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' includes proceedings under the inherent jurisdiction of the High Court in relation to adults.",
+    "quote": "proceedings under the inherent jurisdiction of the High Court in relation to adults"
+   },
+   {
+    "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' includes proceedings in which the court has made an emergency protection order under section 44 of the Children Act 1989 that includes an exclusion requirement as defined in section 44A(3) of that Act.",
+    "quote": "proceedings in which the court has made an emergency protection order under section 44 of the Children Act 1989 (c. 41) which includes an exclusion requirement (as defined in section 44A(3) of that Act)"
+   },
+   {
+    "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' includes proceedings in which the court has made an order under section 50 of the Children Act 1989 for the recovery of abducted children.",
+    "quote": "proceedings in which the court has made an order under section 50 of the Act of 1989 (recovery of abducted children etc. )"
+   },
+   {
+    "requirement": "A 'relevant third party' means a person specified, or falling within a description of persons specified, by order of the Lord Chancellor.",
+    "quote": "“relevant third party” means a person specified, or falling within a description of persons specified, by order of the Lord Chancellor"
+   },
+   {
+    "requirement": "An order of the Lord Chancellor specifying a relevant third party may, in particular, specify the Secretary of State.",
+    "quote": "An order of the Lord Chancellor under subsection (7) may, in particular, specify the Secretary of State"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "calendar year of the Children Act referenced in the definition of family proceedings",
+    "value": "1989",
+    "quote": "Children Act 1989"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The court may make a forced marriage protection order on an application being made to the court.",
+   "quote": "court may make a forced marriage protection order— (a) on an application being made to it"
+  },
+  {
+   "requirement": "The court may make a forced marriage protection order without an application being made to it in the circumstances specified in subsection (6).",
+   "quote": "without an application being made to it but in the circumstances mentioned in subsection (6)"
+  },
+  {
+   "requirement": "An application for a forced marriage protection order may be made by the person who is to be protected by the order.",
+   "quote": "An application may be made by— (a) the person who is to be protected by the order"
+  },
+  {
+   "requirement": "An application for a forced marriage protection order may be made by any other person with the leave of the court.",
+   "quote": "An application may be made by any other person with the leave of the court"
+  },
+  {
+   "requirement": "In deciding whether to grant leave to apply for a forced marriage protection order, the court must have regard to all the circumstances, including the applicant's connection with the person to be protected.",
+   "quote": "court must have regard to all the circumstances including— (a) the applicant's connection with the person to be protected"
+  },
+  {
+   "requirement": "In deciding whether to grant leave to apply for a forced marriage protection order, the court must have regard to the applicant's knowledge of the circumstances of the person to be protected.",
+   "quote": "the applicant's knowledge of the circumstances of the person to be protected"
+  },
+  {
+   "requirement": "In deciding whether to grant leave to apply for a forced marriage protection order, the court must have regard to the wishes and feelings of the person to be protected so far as they are reasonably ascertainable and so far as the court considers it appropriate to have regard to them in the light of that person's age and understanding.",
+   "quote": "the wishes and feelings of the person to be protected so far as they are reasonably ascertainable and so far as the court considers it appropriate, in the light of the person's age and understanding, to have regard to them"
+  },
+  {
+   "requirement": "An application for a forced marriage protection order may be made in other family proceedings or without any other family proceedings being instituted.",
+   "quote": "An application under this section may be made in other family proceedings or without any other family proceedings being instituted"
+  },
+  {
+   "requirement": "The court may make a forced marriage protection order without an application being made where other family proceedings are before the court.",
+   "quote": "any other family proceedings are before the court (“the current proceedings”)"
+  },
+  {
+   "requirement": "The court may make a forced marriage protection order without an application being made where the court considers that an order should be made to protect a person, regardless of whether that person is a party to the current family proceedings.",
+   "quote": "the court considers that a forced marriage protection order should be made to protect a person (whether or not a party to the current proceedings)"
+  },
+  {
+   "requirement": "The court may make a forced marriage protection order without an application being made where a person who would be a respondent to proceedings for the order is a party to the current family proceedings.",
+   "quote": "a person who would be a respondent to any such proceedings for a forced marriage protection order is a party to the current proceedings"
+  },
+  {
+   "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' has the same meaning as in Part 4 of that Act as set out in section 63(1) and (2).",
+   "quote": "“family proceedings” has the same meaning as in Part 4 (see section 63(1) and (2))"
+  },
+  {
+   "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' includes proceedings under the inherent jurisdiction of the High Court in relation to adults.",
+   "quote": "proceedings under the inherent jurisdiction of the High Court in relation to adults"
+  },
+  {
+   "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' includes proceedings in which the court has made an emergency protection order under section 44 of the Children Act 1989 that includes an exclusion requirement as defined in section 44A(3) of that Act.",
+   "quote": "proceedings in which the court has made an emergency protection order under section 44 of the Children Act 1989 (c. 41) which includes an exclusion requirement (as defined in section 44A(3) of that Act)"
+  },
+  {
+   "requirement": "For the purposes of section 63C of the Family Law Act 1996, 'family proceedings' includes proceedings in which the court has made an order under section 50 of the Children Act 1989 for the recovery of abducted children.",
+   "quote": "proceedings in which the court has made an order under section 50 of the Act of 1989 (recovery of abducted children etc. )"
+  },
+  {
+   "requirement": "A 'relevant third party' means a person specified, or falling within a description of persons specified, by order of the Lord Chancellor.",
+   "quote": "“relevant third party” means a person specified, or falling within a description of persons specified, by order of the Lord Chancellor"
+  },
+  {
+   "requirement": "An order of the Lord Chancellor specifying a relevant third party may, in particular, specify the Secretary of State.",
+   "quote": "An order of the Lord Chancellor under subsection (7) may, in particular, specify the Secretary of State"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 18,
+  "elements_verified": 17,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "key": "uk/ukpga/1979/54/s37@current",
+ "section": "uk/ukpga/1979/54/s37",
+ "version": "current",
+ "source_sha256": "79a1c027010b6a539cdcc6c7cb32c9e728bdc185f20dca4dae0e987c879dd53e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A buyer is liable to the seller for any loss occasioned by the buyer's neglect or refusal to take delivery when the seller is ready and willing to deliver the goods, requests the buyer to take delivery, and the buyer does not take delivery within a reasonable time after such request.",
+    "quote": "he is liable to the seller for any loss occasioned by his neglect or refusal to take delivery"
+   },
+   {
+    "requirement": "A buyer is liable to the seller for a reasonable charge for the care and custody of the goods when the seller is ready and willing to deliver the goods, requests the buyer to take delivery, and the buyer does not take delivery within a reasonable time after such request.",
+    "quote": "and also for a reasonable charge for the care and custody of the goods"
+   },
+   {
+    "requirement": "The seller's rights are not affected where the buyer's neglect or refusal to take delivery amounts to a repudiation of the contract.",
+    "quote": "Nothing in this section affects the rights of the seller where the neglect or refusal of the buyer to take delivery amounts to a repudiation of the contract."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "period after the seller's request within which the buyer must take delivery of the goods",
+    "value": "a reasonable time",
+    "quote": "within a reasonable time after such request"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "A buyer is liable to the seller for any loss occasioned by the buyer's neglect or refusal to take delivery when the seller is ready and willing to deliver the goods, requests the buyer to take delivery, and the buyer does not take delivery within a reasonable time after such request.",
+   "quote": "he is liable to the seller for any loss occasioned by his neglect or refusal to take delivery"
+  },
+  {
+   "requirement": "A buyer is liable to the seller for a reasonable charge for the care and custody of the goods when the seller is ready and willing to deliver the goods, requests the buyer to take delivery, and the buyer does not take delivery within a reasonable time after such request.",
+   "quote": "and also for a reasonable charge for the care and custody of the goods"
+  },
+  {
+   "requirement": "The seller's rights are not affected where the buyer's neglect or refusal to take delivery amounts to a repudiation of the contract.",
+   "quote": "Nothing in this section affects the rights of the seller where the neglect or refusal of the buyer to take delivery amounts to a repudiation of the contract."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

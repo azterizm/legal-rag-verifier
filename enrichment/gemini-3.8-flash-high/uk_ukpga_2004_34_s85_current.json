@@ -1,0 +1,117 @@
+{
+ "key": "uk/ukpga/2004/34/s85@current",
+ "section": "uk/ukpga/2004/34/s85",
+ "version": "current",
+ "source_sha256": "584aadd660732c7cbef125f6f8fef8de307d09818b906bb09904628ea8a8535e",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Every Part 3 house must be licensed under Part 3 unless a statutory exception applies.",
+    "quote": "Every Part 3 house must be licensed under this Part unless"
+   },
+   {
+    "requirement": "A Part 3 house is exempt from the requirement to be licensed under Part 3 if it is an HMO to which Part 2 applies (see section 55(2)).",
+    "quote": "it is an HMO to which Part 2 applies (see section 55(2))"
+   },
+   {
+    "requirement": "A Part 3 house is exempt from the requirement to be licensed under Part 3 if a temporary exemption notice is in force in relation to it under section 86.",
+    "quote": "a temporary exemption notice is in force in relation to it under section 86"
+   },
+   {
+    "requirement": "A Part 3 house is exempt from the requirement to be licensed under Part 3 if a management order is in force in relation to it under Chapter 1 or 2 of Part 4.",
+    "quote": "a management order is in force in relation to it under Chapter 1 or 2 of Part 4"
+   },
+   {
+    "requirement": "A licence under Part 3 is defined as a licence authorising occupation of the house concerned under one or more tenancies or licences within section 79(2)(b).",
+    "quote": "A licence under this Part is a licence authorising occupation of the house concerned under one or more tenancies or licences within section 79(2)(b)"
+   },
+   {
+    "requirement": "Applications for licences, the granting or refusal of licences, and the imposition of licence conditions are dealt with under sections 87 to 90.",
+    "quote": "Sections 87 to 90 deal with applications for licences, the granting or refusal of licences and the imposition of licence conditions"
+   },
+   {
+    "requirement": "The local housing authority must take all reasonable steps to secure that applications for licences are made to them in respect of houses in their area which are required to be licensed under Part 3 but are not so licensed.",
+    "quote": "The local housing authority must take all reasonable steps to secure that applications for licences are made to them in respect of houses in their area which are required to be licensed under this Part but are not so licensed"
+   },
+   {
+    "requirement": "In Part 3, unless the context otherwise requires, references to a Part 3 house are to a house to which Part 3 applies (see section 79(2)).",
+    "quote": "references to a Part 3 house are to a house to which this Part applies (see section 79(2))"
+   },
+   {
+    "requirement": "In Part 3, unless the context otherwise requires, references to a licence are to a licence under Part 3.",
+    "quote": "references to a licence are to a licence under this Part"
+   },
+   {
+    "requirement": "In Part 3, unless the context otherwise requires, references to a licence holder are to be read accordingly.",
+    "quote": "references to a licence holder are to be read accordingly"
+   },
+   {
+    "requirement": "In Part 3, unless the context otherwise requires, references to a house being (or not being) licensed under Part 3 are to its being (or not being) a house in respect of which a licence is in force under Part 3.",
+    "quote": "references to a house being (or not being) licensed under this Part are to its being (or not being) a house in respect of which a licence is in force under this Part"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "number of tenancies or licences within section 79(2)(b) under which occupation of the house concerned is authorised",
+    "value": "one or more",
+    "quote": "one or more tenancies or licences within section 79(2)(b)"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Every Part 3 house must be licensed under Part 3 unless a statutory exception applies.",
+   "quote": "Every Part 3 house must be licensed under this Part unless"
+  },
+  {
+   "requirement": "A Part 3 house is exempt from the requirement to be licensed under Part 3 if it is an HMO to which Part 2 applies (see section 55(2)).",
+   "quote": "it is an HMO to which Part 2 applies (see section 55(2))"
+  },
+  {
+   "requirement": "A Part 3 house is exempt from the requirement to be licensed under Part 3 if a temporary exemption notice is in force in relation to it under section 86.",
+   "quote": "a temporary exemption notice is in force in relation to it under section 86"
+  },
+  {
+   "requirement": "A Part 3 house is exempt from the requirement to be licensed under Part 3 if a management order is in force in relation to it under Chapter 1 or 2 of Part 4.",
+   "quote": "a management order is in force in relation to it under Chapter 1 or 2 of Part 4"
+  },
+  {
+   "requirement": "A licence under Part 3 is defined as a licence authorising occupation of the house concerned under one or more tenancies or licences within section 79(2)(b).",
+   "quote": "A licence under this Part is a licence authorising occupation of the house concerned under one or more tenancies or licences within section 79(2)(b)"
+  },
+  {
+   "requirement": "Applications for licences, the granting or refusal of licences, and the imposition of licence conditions are dealt with under sections 87 to 90.",
+   "quote": "Sections 87 to 90 deal with applications for licences, the granting or refusal of licences and the imposition of licence conditions"
+  },
+  {
+   "requirement": "The local housing authority must take all reasonable steps to secure that applications for licences are made to them in respect of houses in their area which are required to be licensed under Part 3 but are not so licensed.",
+   "quote": "The local housing authority must take all reasonable steps to secure that applications for licences are made to them in respect of houses in their area which are required to be licensed under this Part but are not so licensed"
+  },
+  {
+   "requirement": "In Part 3, unless the context otherwise requires, references to a Part 3 house are to a house to which Part 3 applies (see section 79(2)).",
+   "quote": "references to a Part 3 house are to a house to which this Part applies (see section 79(2))"
+  },
+  {
+   "requirement": "In Part 3, unless the context otherwise requires, references to a licence are to a licence under Part 3.",
+   "quote": "references to a licence are to a licence under this Part"
+  },
+  {
+   "requirement": "In Part 3, unless the context otherwise requires, references to a licence holder are to be read accordingly.",
+   "quote": "references to a licence holder are to be read accordingly"
+  },
+  {
+   "requirement": "In Part 3, unless the context otherwise requires, references to a house being (or not being) licensed under Part 3 are to its being (or not being) a house in respect of which a licence is in force under Part 3.",
+   "quote": "references to a house being (or not being) licensed under this Part are to its being (or not being) a house in respect of which a licence is in force under this Part"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

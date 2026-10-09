@@ -1,0 +1,87 @@
+{
+ "key": "uk/ukpga/2010/15/s22@current",
+ "section": "uk/ukpga/2010/15/s22",
+ "version": "current",
+ "source_sha256": "165eb1b505ee68187c630c6813e4f89579264f7dd19e775fcde7c20b9f451e0d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Regulations may prescribe matters to be taken into account when deciding whether it is reasonable for A to take a step for the purposes of a prescribed provision of an applicable Schedule.",
+    "quote": "matters to be taken into account in deciding whether it is reasonable for A to take a step for the purposes of a prescribed provision of an applicable Schedule"
+   },
+   {
+    "requirement": "Regulations may prescribe descriptions of persons to whom the first, second, or third requirement does not apply.",
+    "quote": "descriptions of persons to whom the first, second or third requirement does not apply"
+   },
+   {
+    "requirement": "Regulations may make provision as to the circumstances in which it is, or in which it is not, reasonable for a person of a prescribed description to have to take steps of a prescribed description.",
+    "quote": "circumstances in which it is, or in which it is not, reasonable for a person of a prescribed description to have to take steps of a prescribed description"
+   },
+   {
+    "requirement": "Regulations may make provision as to what is, or what is not, a provision, criterion, or practice.",
+    "quote": "what is, or what is not, a provision, criterion or practice"
+   },
+   {
+    "requirement": "Regulations may make provision as to things which are, or which are not, to be treated as physical features.",
+    "quote": "things which are, or which are not, to be treated as physical features"
+   },
+   {
+    "requirement": "Regulations may make provision as to things which are, or which are not, to be treated as alterations of physical features.",
+    "quote": "things which are, or which are not, to be treated as alterations of physical features"
+   },
+   {
+    "requirement": "Regulations may make provision as to things which are, or which are not, to be treated as auxiliary aids.",
+    "quote": "things which are, or which are not, to be treated as auxiliary aids"
+   },
+   {
+    "requirement": "Provision made by virtue of section 22 may amend an applicable Schedule.",
+    "quote": "Provision made by virtue of this section may amend an applicable Schedule"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Regulations may prescribe matters to be taken into account when deciding whether it is reasonable for A to take a step for the purposes of a prescribed provision of an applicable Schedule.",
+   "quote": "matters to be taken into account in deciding whether it is reasonable for A to take a step for the purposes of a prescribed provision of an applicable Schedule"
+  },
+  {
+   "requirement": "Regulations may prescribe descriptions of persons to whom the first, second, or third requirement does not apply.",
+   "quote": "descriptions of persons to whom the first, second or third requirement does not apply"
+  },
+  {
+   "requirement": "Regulations may make provision as to the circumstances in which it is, or in which it is not, reasonable for a person of a prescribed description to have to take steps of a prescribed description.",
+   "quote": "circumstances in which it is, or in which it is not, reasonable for a person of a prescribed description to have to take steps of a prescribed description"
+  },
+  {
+   "requirement": "Regulations may make provision as to what is, or what is not, a provision, criterion, or practice.",
+   "quote": "what is, or what is not, a provision, criterion or practice"
+  },
+  {
+   "requirement": "Regulations may make provision as to things which are, or which are not, to be treated as physical features.",
+   "quote": "things which are, or which are not, to be treated as physical features"
+  },
+  {
+   "requirement": "Regulations may make provision as to things which are, or which are not, to be treated as alterations of physical features.",
+   "quote": "things which are, or which are not, to be treated as alterations of physical features"
+  },
+  {
+   "requirement": "Regulations may make provision as to things which are, or which are not, to be treated as auxiliary aids.",
+   "quote": "things which are, or which are not, to be treated as auxiliary aids"
+  },
+  {
+   "requirement": "Provision made by virtue of section 22 may amend an applicable Schedule.",
+   "quote": "Provision made by virtue of this section may amend an applicable Schedule"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 8,
+  "elements_verified": 8,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "key": "uk/ukpga/2000/8/s192I@current",
+ "section": "uk/ukpga/2000/8/s192I",
+ "version": "current",
+ "source_sha256": "6558d96666b33c75b6528a2b572ed9c33e84e64cb1a5c88318861000bd896293",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A regulator issuing a statement of policy under section 192H is referred to as the issuing regulator.",
+    "quote": "a regulator (“the issuing regulator”)"
+   },
+   {
+    "requirement": "Before issuing a statement of policy under section 192H, the issuing regulator must consult the other regulator.",
+    "quote": "consult the other regulator"
+   },
+   {
+    "requirement": "Before issuing a statement of policy under section 192H, where the issuing regulator is the FCA, it must consult the Bank of England.",
+    "quote": "where the issuing regulator is the FCA, the Bank of England"
+   },
+   {
+    "requirement": "Before issuing a statement of policy under section 192H, the issuing regulator must publish a draft of the proposed statement in the way appearing to it to be best calculated to bring it to the attention of the public.",
+    "quote": "publish a draft of the proposed statement in the way appearing to the issuing regulator to be best calculated to bring it to the attention of the public"
+   },
+   {
+    "requirement": "The published draft of the proposed statement must be accompanied by notice that representations about the proposal may be made to the issuing regulator within a specified time.",
+    "quote": "The draft must be accompanied by notice that representations about the proposal may be made to the issuing regulator within a specified time."
+   },
+   {
+    "requirement": "Before issuing the proposed statement, the issuing regulator must have regard to any representations made to it in accordance with subsection (2).",
+    "quote": "Before issuing the proposed statement, the issuing regulator must have regard to any representations made to it in accordance with subsection (2)."
+   },
+   {
+    "requirement": "If the issuing regulator issues the proposed statement, it must publish an account, in general terms, of the representations made to it in accordance with subsection (2).",
+    "quote": "publish an account, in general terms, of— (a) the representations made to it in accordance with subsection (2)"
+   },
+   {
+    "requirement": "If the issuing regulator issues the proposed statement, it must publish an account, in general terms, of its response to the representations made to it in accordance with subsection (2).",
+    "quote": "publish an account, in general terms, of— (a) the representations made to it in accordance with subsection (2), and (b) its response to them."
+   },
+   {
+    "requirement": "If the proposed statement differs from the published draft in a way which is, in the issuing regulator's opinion, significant, the issuing regulator must consult the other regulator again before issuing it.",
+    "quote": "must before issuing it consult the other regulator again"
+   },
+   {
+    "requirement": "If the proposed statement differs from the published draft in a way which is, in the issuing regulator's opinion, significant, the issuing regulator must, in addition to complying with subsection (4), publish details of the difference.",
+    "quote": "must (in addition to complying with subsection (4)), publish details of the difference."
+   },
+   {
+    "requirement": "The issuing regulator may charge a reasonable fee for providing a person with a draft published under subsection (1)(b).",
+    "quote": "The issuing regulator may charge a reasonable fee for providing a person with a draft published under subsection (1)(b)."
+   },
+   {
+    "requirement": "The provisions of section 192I apply to a proposal to alter or replace a statement.",
+    "quote": "This section also applies to a proposal to alter or replace a statement."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A regulator issuing a statement of policy under section 192H is referred to as the issuing regulator.",
+   "quote": "a regulator (“the issuing regulator”)"
+  },
+  {
+   "requirement": "Before issuing a statement of policy under section 192H, the issuing regulator must consult the other regulator.",
+   "quote": "consult the other regulator"
+  },
+  {
+   "requirement": "Before issuing a statement of policy under section 192H, where the issuing regulator is the FCA, it must consult the Bank of England.",
+   "quote": "where the issuing regulator is the FCA, the Bank of England"
+  },
+  {
+   "requirement": "Before issuing a statement of policy under section 192H, the issuing regulator must publish a draft of the proposed statement in the way appearing to it to be best calculated to bring it to the attention of the public.",
+   "quote": "publish a draft of the proposed statement in the way appearing to the issuing regulator to be best calculated to bring it to the attention of the public"
+  },
+  {
+   "requirement": "The published draft of the proposed statement must be accompanied by notice that representations about the proposal may be made to the issuing regulator within a specified time.",
+   "quote": "The draft must be accompanied by notice that representations about the proposal may be made to the issuing regulator within a specified time."
+  },
+  {
+   "requirement": "Before issuing the proposed statement, the issuing regulator must have regard to any representations made to it in accordance with subsection (2).",
+   "quote": "Before issuing the proposed statement, the issuing regulator must have regard to any representations made to it in accordance with subsection (2)."
+  },
+  {
+   "requirement": "If the issuing regulator issues the proposed statement, it must publish an account, in general terms, of the representations made to it in accordance with subsection (2).",
+   "quote": "publish an account, in general terms, of— (a) the representations made to it in accordance with subsection (2)"
+  },
+  {
+   "requirement": "If the issuing regulator issues the proposed statement, it must publish an account, in general terms, of its response to the representations made to it in accordance with subsection (2).",
+   "quote": "publish an account, in general terms, of— (a) the representations made to it in accordance with subsection (2), and (b) its response to them."
+  },
+  {
+   "requirement": "If the proposed statement differs from the published draft in a way which is, in the issuing regulator's opinion, significant, the issuing regulator must consult the other regulator again before issuing it.",
+   "quote": "must before issuing it consult the other regulator again"
+  },
+  {
+   "requirement": "If the proposed statement differs from the published draft in a way which is, in the issuing regulator's opinion, significant, the issuing regulator must, in addition to complying with subsection (4), publish details of the difference.",
+   "quote": "must (in addition to complying with subsection (4)), publish details of the difference."
+  },
+  {
+   "requirement": "The issuing regulator may charge a reasonable fee for providing a person with a draft published under subsection (1)(b).",
+   "quote": "The issuing regulator may charge a reasonable fee for providing a person with a draft published under subsection (1)(b)."
+  },
+  {
+   "requirement": "The provisions of section 192I apply to a proposal to alter or replace a statement.",
+   "quote": "This section also applies to a proposal to alter or replace a statement."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

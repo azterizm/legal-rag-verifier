@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2013/29/s120@current",
+ "section": "uk/ukpga/2013/29/s120",
+ "version": "current",
+ "source_sha256": "f9df5d8e0a8cbedf7aa58734648858d3e7c5671e2a0ac03961a2a022e7c6003f",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "References in this Part to the acquisition of a chargeable interest include any acquisition however effected, including an acquisition effected by the act of parties to a transaction, by order of a court or other authority, by or under any statutory provision, or by operation of law.",
+    "quote": "References in this Part to the acquisition of a chargeable interest include any acquisition however effected"
+   },
+   {
+    "requirement": "The surrender or release of a chargeable interest constitutes an acquisition of that interest by any person whose interest or right is benefited or enlarged by the transaction.",
+    "quote": "an acquisition of that interest by any person whose interest or right is benefited or enlarged by the transaction"
+   },
+   {
+    "requirement": "The surrender or release of a chargeable interest constitutes a disposal by the person ceasing to be entitled to that interest.",
+    "quote": "a disposal by the person ceasing to be entitled to that interest"
+   },
+   {
+    "requirement": "The variation of a chargeable interest constitutes an acquisition of a chargeable interest by the person benefiting from the variation.",
+    "quote": "an acquisition of a chargeable interest by the person benefiting from the variation"
+   },
+   {
+    "requirement": "The variation of a chargeable interest constitutes a disposal of a chargeable interest by the person whose interest is subject to or limited by the variation.",
+    "quote": "a disposal of a chargeable interest by the person whose interest is subject to or limited by the variation"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "References in this Part to the acquisition of a chargeable interest include any acquisition however effected, including an acquisition effected by the act of parties to a transaction, by order of a court or other authority, by or under any statutory provision, or by operation of law.",
+   "quote": "References in this Part to the acquisition of a chargeable interest include any acquisition however effected"
+  },
+  {
+   "requirement": "The surrender or release of a chargeable interest constitutes an acquisition of that interest by any person whose interest or right is benefited or enlarged by the transaction.",
+   "quote": "an acquisition of that interest by any person whose interest or right is benefited or enlarged by the transaction"
+  },
+  {
+   "requirement": "The surrender or release of a chargeable interest constitutes a disposal by the person ceasing to be entitled to that interest.",
+   "quote": "a disposal by the person ceasing to be entitled to that interest"
+  },
+  {
+   "requirement": "The variation of a chargeable interest constitutes an acquisition of a chargeable interest by the person benefiting from the variation.",
+   "quote": "an acquisition of a chargeable interest by the person benefiting from the variation"
+  },
+  {
+   "requirement": "The variation of a chargeable interest constitutes a disposal of a chargeable interest by the person whose interest is subject to or limited by the variation.",
+   "quote": "a disposal of a chargeable interest by the person whose interest is subject to or limited by the variation"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

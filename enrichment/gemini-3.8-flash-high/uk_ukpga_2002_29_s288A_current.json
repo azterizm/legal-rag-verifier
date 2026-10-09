@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2002/29/s288A@current",
+ "section": "uk/ukpga/2002/29/s288A",
+ "version": "current",
+ "source_sha256": "53dcfbf4ceb772d5cb23332be9310309700bc9f1d1ec0b01a9beda425eb8b142",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court may not make an order requiring any costs or, in Scotland, expenses of proceedings under this Chapter to be payable by the enforcement authority unless at least one statutory exception applies.",
+    "quote": "The court may not make an order that any costs or, in Scotland, expenses of proceedings under this Chapter are payable by the enforcement authority, unless"
+   },
+   {
+    "requirement": "The court may order the enforcement authority to pay costs or expenses if the enforcement authority acted unreasonably in taking the proceedings, making or opposing the application to which the proceedings relate, or supporting or opposing the making of the order to which the proceedings relate.",
+    "quote": "the authority acted unreasonably in taking the proceedings, making or opposing the application to which the proceedings relate, or supporting or opposing the making of the order to which the proceedings relate"
+   },
+   {
+    "requirement": "The court may order the enforcement authority to pay costs or expenses if the enforcement authority acted dishonestly or improperly in the course of the proceedings.",
+    "quote": "the authority acted dishonestly or improperly in the course of the proceedings"
+   },
+   {
+    "requirement": "The court may order the enforcement authority to pay costs or expenses if it would be just and reasonable to make such an order.",
+    "quote": "it would be just and reasonable to make such an order"
+   },
+   {
+    "requirement": "When determining whether it is just and reasonable to make an order against the enforcement authority, it must not be assumed that it is generally just and reasonable for the unsuccessful party to pay.",
+    "quote": "it is not to be assumed that it is generally just and reasonable for the unsuccessful party to pay"
+   },
+   {
+    "requirement": "A reference to proceedings under this Chapter includes any appeal arising out of proceedings under this Chapter.",
+    "quote": "proceedings under this Chapter includes any appeal arising out of proceedings under this Chapter"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The court may not make an order requiring any costs or, in Scotland, expenses of proceedings under this Chapter to be payable by the enforcement authority unless at least one statutory exception applies.",
+   "quote": "The court may not make an order that any costs or, in Scotland, expenses of proceedings under this Chapter are payable by the enforcement authority, unless"
+  },
+  {
+   "requirement": "The court may order the enforcement authority to pay costs or expenses if the enforcement authority acted unreasonably in taking the proceedings, making or opposing the application to which the proceedings relate, or supporting or opposing the making of the order to which the proceedings relate.",
+   "quote": "the authority acted unreasonably in taking the proceedings, making or opposing the application to which the proceedings relate, or supporting or opposing the making of the order to which the proceedings relate"
+  },
+  {
+   "requirement": "The court may order the enforcement authority to pay costs or expenses if the enforcement authority acted dishonestly or improperly in the course of the proceedings.",
+   "quote": "the authority acted dishonestly or improperly in the course of the proceedings"
+  },
+  {
+   "requirement": "The court may order the enforcement authority to pay costs or expenses if it would be just and reasonable to make such an order.",
+   "quote": "it would be just and reasonable to make such an order"
+  },
+  {
+   "requirement": "When determining whether it is just and reasonable to make an order against the enforcement authority, it must not be assumed that it is generally just and reasonable for the unsuccessful party to pay.",
+   "quote": "it is not to be assumed that it is generally just and reasonable for the unsuccessful party to pay"
+  },
+  {
+   "requirement": "A reference to proceedings under this Chapter includes any appeal arising out of proceedings under this Chapter.",
+   "quote": "proceedings under this Chapter includes any appeal arising out of proceedings under this Chapter"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

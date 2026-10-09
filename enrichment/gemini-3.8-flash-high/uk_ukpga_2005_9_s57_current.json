@@ -1,0 +1,71 @@
+{
+ "key": "uk/ukpga/2005/9/s57@current",
+ "section": "uk/ukpga/2005/9/s57",
+ "version": "current",
+ "source_sha256": "52bbba38669c79b6f55324bb9022e4735b23eb7d3e63bd568e026a0c1745affa",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "For the purposes of the Act, there must be an officer known as the Public Guardian.",
+    "quote": "there is to be an officer, to be known as the Public Guardian"
+   },
+   {
+    "requirement": "The Public Guardian must be appointed by the Lord Chancellor.",
+    "quote": "The Public Guardian is to be appointed by the Lord Chancellor"
+   },
+   {
+    "requirement": "The Public Guardian must be paid, out of money provided by Parliament, such salary as determined by the Lord Chancellor.",
+    "quote": "There is to be paid to the Public Guardian out of money provided by Parliament such salary as the Lord Chancellor may determine"
+   },
+   {
+    "requirement": "The Lord Chancellor may, after consulting the Public Guardian, provide the Public Guardian with such officers and staff as the Lord Chancellor thinks necessary for the proper discharge of the Public Guardian's functions.",
+    "quote": "The Lord Chancellor may, after consulting the Public Guardian— (a) provide him with such officers and staff"
+   },
+   {
+    "requirement": "The Lord Chancellor may, after consulting the Public Guardian, enter into contracts with other persons for the provision by them or their sub-contractors of officers, staff, or services as the Lord Chancellor thinks necessary for the proper discharge of the Public Guardian's functions.",
+    "quote": "enter into such contracts with other persons for the provision (by them or their sub-contractors) of officers, staff or services, as the Lord Chancellor thinks necessary for the proper discharge of the Public Guardian's functions"
+   },
+   {
+    "requirement": "Any functions of the Public Guardian may be performed by any of the Public Guardian's officers to the extent authorised by the Public Guardian.",
+    "quote": "Any functions of the Public Guardian may, to the extent authorised by him, be performed by any of his officers"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "For the purposes of the Act, there must be an officer known as the Public Guardian.",
+   "quote": "there is to be an officer, to be known as the Public Guardian"
+  },
+  {
+   "requirement": "The Public Guardian must be appointed by the Lord Chancellor.",
+   "quote": "The Public Guardian is to be appointed by the Lord Chancellor"
+  },
+  {
+   "requirement": "The Public Guardian must be paid, out of money provided by Parliament, such salary as determined by the Lord Chancellor.",
+   "quote": "There is to be paid to the Public Guardian out of money provided by Parliament such salary as the Lord Chancellor may determine"
+  },
+  {
+   "requirement": "The Lord Chancellor may, after consulting the Public Guardian, provide the Public Guardian with such officers and staff as the Lord Chancellor thinks necessary for the proper discharge of the Public Guardian's functions.",
+   "quote": "The Lord Chancellor may, after consulting the Public Guardian— (a) provide him with such officers and staff"
+  },
+  {
+   "requirement": "The Lord Chancellor may, after consulting the Public Guardian, enter into contracts with other persons for the provision by them or their sub-contractors of officers, staff, or services as the Lord Chancellor thinks necessary for the proper discharge of the Public Guardian's functions.",
+   "quote": "enter into such contracts with other persons for the provision (by them or their sub-contractors) of officers, staff or services, as the Lord Chancellor thinks necessary for the proper discharge of the Public Guardian's functions"
+  },
+  {
+   "requirement": "Any functions of the Public Guardian may be performed by any of the Public Guardian's officers to the extent authorised by the Public Guardian.",
+   "quote": "Any functions of the Public Guardian may, to the extent authorised by him, be performed by any of his officers"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

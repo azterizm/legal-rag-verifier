@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2002/38/s58@current",
+ "section": "uk/ukpga/2002/38/s58",
+ "version": "current",
+ "source_sha256": "ba435702db7dab1340b021cad90f52a1259cf118005e730f02fe278a1d133002",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 58 applies to any section 56 information other than protected information.",
+    "quote": "applies to any section 56 information other than protected information"
+   },
+   {
+    "requirement": "An adoption agency is permitted to disclose any information to which section 58 applies to any person in accordance with prescribed arrangements for the purposes of its functions.",
+    "quote": "An adoption agency may for the purposes of its functions disclose to any person in accordance with prescribed arrangements any information to which this section applies"
+   },
+   {
+    "requirement": "An adoption agency is required to disclose prescribed information to a prescribed person in prescribed circumstances.",
+    "quote": "An adoption agency must, in prescribed circumstances, disclose prescribed information to a prescribed person"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 58 applies to any section 56 information other than protected information.",
+   "quote": "applies to any section 56 information other than protected information"
+  },
+  {
+   "requirement": "An adoption agency is permitted to disclose any information to which section 58 applies to any person in accordance with prescribed arrangements for the purposes of its functions.",
+   "quote": "An adoption agency may for the purposes of its functions disclose to any person in accordance with prescribed arrangements any information to which this section applies"
+  },
+  {
+   "requirement": "An adoption agency is required to disclose prescribed information to a prescribed person in prescribed circumstances.",
+   "quote": "An adoption agency must, in prescribed circumstances, disclose prescribed information to a prescribed person"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

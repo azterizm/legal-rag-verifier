@@ -1,0 +1,47 @@
+{
+ "key": "uk/ukpga/2021/17/s74@current",
+ "section": "uk/ukpga/2021/17/s74",
+ "version": "current",
+ "source_sha256": "0cd6bee13575bb1ac0368fad05a881dd68688d7fbe42bc10a8445667bafb24c1",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Part 1 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of England and Wales.",
+    "quote": "Part 1 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of England and Wales"
+   },
+   {
+    "requirement": "Part 2 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain offences under the law of Scotland.",
+    "quote": "Part 2 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain offences under the law of Scotland"
+   },
+   {
+    "requirement": "Part 3 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of Northern Ireland.",
+    "quote": "Part 3 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of Northern Ireland"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Part 1 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of England and Wales.",
+   "quote": "Part 1 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of England and Wales"
+  },
+  {
+   "requirement": "Part 2 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain offences under the law of Scotland.",
+   "quote": "Part 2 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain offences under the law of Scotland"
+  },
+  {
+   "requirement": "Part 3 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of Northern Ireland.",
+   "quote": "Part 3 of Schedule 3 contains amendments to provide for extra-territorial jurisdiction over certain other offences under the law of Northern Ireland"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 3,
+  "elements_verified": 3,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

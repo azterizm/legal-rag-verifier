@@ -1,0 +1,162 @@
+{
+ "key": "uk/ukpga/1996/27/s38@current",
+ "section": "uk/ukpga/1996/27/s38",
+ "version": "current",
+ "source_sha256": "168c0237d8f6e9a1987aaabfd7f90bbdaf1ee1293d189e042c2fa384c4a3a8dd",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 38 applies where one cohabitant or former cohabitant and the other cohabitant or former cohabitant occupy a dwelling-house which is the home in which they cohabit or cohabited, but neither party is entitled to remain in occupation by virtue of a beneficial estate, interest, contract, or any enactment granting that right.",
+    "quote": "one cohabitant or former cohabitant and the other cohabitant or former cohabitant occupy a dwelling-house which is the home in which they cohabit or cohabited; but (b) neither of them is entitled to remain in occupation"
+   },
+   {
+    "requirement": "Either cohabitant or former cohabitant may apply to the court for an order against the other under section 38.",
+    "quote": "Either of the parties may apply to the court for an order against the other under this section."
+   },
+   {
+    "requirement": "An order under section 38 may require the respondent to permit the applicant to enter and remain in the dwelling-house or part of the dwelling-house.",
+    "quote": "require the respondent to permit the applicant to enter and remain in the dwelling-house or part of the dwelling-house"
+   },
+   {
+    "requirement": "An order under section 38 may regulate the occupation of the dwelling-house by either or both of the parties.",
+    "quote": "regulate the occupation of the dwelling-house by either or both of the parties"
+   },
+   {
+    "requirement": "An order under section 38 may require the respondent to leave the dwelling-house or part of the dwelling-house.",
+    "quote": "require the respondent to leave the dwelling-house or part of the dwelling-house"
+   },
+   {
+    "requirement": "An order under section 38 may exclude the respondent from a defined area in which the dwelling-house is included.",
+    "quote": "exclude the respondent from a defined area in which the dwelling-house is included"
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to all the circumstances, including the housing needs and housing resources of each of the parties and of any relevant child.",
+    "quote": "the housing needs and housing resources of each of the parties and of any relevant child"
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to the financial resources of each of the parties.",
+    "quote": "the financial resources of each of the parties"
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to the likely effect of any order, or of any decision not to exercise its powers, on the health, safety or well-being of the parties and of any relevant child.",
+    "quote": "the likely effect of any order, or of any decision by the court not to exercise its powers under subsection (3), on the health, safety or well-being of the parties and of any relevant child"
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to the conduct of the parties in relation to each other and otherwise.",
+    "quote": "the conduct of the parties in relation to each other and otherwise"
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must consider whether the applicant or any relevant child is likely to suffer significant harm attributable to conduct of the respondent if the provision is not included in the order.",
+    "quote": "whether the applicant or any relevant child is likely to suffer significant harm attributable to conduct of the respondent if the subsection (3) provision is not included in the order"
+   },
+   {
+    "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must consider whether the harm likely to be suffered by the respondent or child if the provision is included is as great as or greater than the harm attributable to conduct of the respondent which is likely to be suffered by the applicant or child if the provision is not included.",
+    "quote": "whether the harm likely to be suffered by the respondent or child if the provision is included is as great as or greater than the harm attributable to conduct of the respondent which is likely to be suffered by the applicant or child if the provision is not included"
+   },
+   {
+    "requirement": "An order under section 38 must be limited so as to have effect for a specified period not exceeding six months.",
+    "quote": "shall be limited so as to have effect for a specified period not exceeding six months"
+   },
+   {
+    "requirement": "An order under section 38 may be extended on one occasion for a further specified period not exceeding six months.",
+    "quote": "may be extended on one occasion for a further specified period not exceeding six months"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The maximum initial specified period for which an order under section 38 may have effect",
+    "value": "six months",
+    "quote": "specified period not exceeding six months"
+   },
+   {
+    "what": "The maximum number of occasions on which an order under section 38 may be extended",
+    "value": "one occasion",
+    "quote": "extended on one occasion"
+   },
+   {
+    "what": "The maximum further specified period for an extension of an order under section 38",
+    "value": "six months",
+    "quote": "further specified period not exceeding six months"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Section 38 applies where one cohabitant or former cohabitant and the other cohabitant or former cohabitant occupy a dwelling-house which is the home in which they cohabit or cohabited, but neither party is entitled to remain in occupation by virtue of a beneficial estate, interest, contract, or any enactment granting that right.",
+   "quote": "one cohabitant or former cohabitant and the other cohabitant or former cohabitant occupy a dwelling-house which is the home in which they cohabit or cohabited; but (b) neither of them is entitled to remain in occupation"
+  },
+  {
+   "requirement": "Either cohabitant or former cohabitant may apply to the court for an order against the other under section 38.",
+   "quote": "Either of the parties may apply to the court for an order against the other under this section."
+  },
+  {
+   "requirement": "An order under section 38 may require the respondent to permit the applicant to enter and remain in the dwelling-house or part of the dwelling-house.",
+   "quote": "require the respondent to permit the applicant to enter and remain in the dwelling-house or part of the dwelling-house"
+  },
+  {
+   "requirement": "An order under section 38 may regulate the occupation of the dwelling-house by either or both of the parties.",
+   "quote": "regulate the occupation of the dwelling-house by either or both of the parties"
+  },
+  {
+   "requirement": "An order under section 38 may require the respondent to leave the dwelling-house or part of the dwelling-house.",
+   "quote": "require the respondent to leave the dwelling-house or part of the dwelling-house"
+  },
+  {
+   "requirement": "An order under section 38 may exclude the respondent from a defined area in which the dwelling-house is included.",
+   "quote": "exclude the respondent from a defined area in which the dwelling-house is included"
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to all the circumstances, including the housing needs and housing resources of each of the parties and of any relevant child.",
+   "quote": "the housing needs and housing resources of each of the parties and of any relevant child"
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to the financial resources of each of the parties.",
+   "quote": "the financial resources of each of the parties"
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to the likely effect of any order, or of any decision not to exercise its powers, on the health, safety or well-being of the parties and of any relevant child.",
+   "quote": "the likely effect of any order, or of any decision by the court not to exercise its powers under subsection (3), on the health, safety or well-being of the parties and of any relevant child"
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must have regard to the conduct of the parties in relation to each other and otherwise.",
+   "quote": "the conduct of the parties in relation to each other and otherwise"
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must consider whether the applicant or any relevant child is likely to suffer significant harm attributable to conduct of the respondent if the provision is not included in the order.",
+   "quote": "whether the applicant or any relevant child is likely to suffer significant harm attributable to conduct of the respondent if the subsection (3) provision is not included in the order"
+  },
+  {
+   "requirement": "In deciding whether to exercise its powers to include one or more subsection (3) provisions and in what manner, the court must consider whether the harm likely to be suffered by the respondent or child if the provision is included is as great as or greater than the harm attributable to conduct of the respondent which is likely to be suffered by the applicant or child if the provision is not included.",
+   "quote": "whether the harm likely to be suffered by the respondent or child if the provision is included is as great as or greater than the harm attributable to conduct of the respondent which is likely to be suffered by the applicant or child if the provision is not included"
+  },
+  {
+   "requirement": "An order under section 38 must be limited so as to have effect for a specified period not exceeding six months.",
+   "quote": "shall be limited so as to have effect for a specified period not exceeding six months"
+  },
+  {
+   "requirement": "An order under section 38 may be extended on one occasion for a further specified period not exceeding six months.",
+   "quote": "may be extended on one occasion for a further specified period not exceeding six months"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "The maximum initial specified period for which an order under section 38 may have effect",
+   "value": "six months",
+   "quote": "specified period not exceeding six months"
+  },
+  {
+   "what": "The maximum further specified period for an extension of an order under section 38",
+   "value": "six months",
+   "quote": "further specified period not exceeding six months"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 14,
+  "elements_verified": 14,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 2
+ }
+}

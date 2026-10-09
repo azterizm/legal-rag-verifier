@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2015/15/s5@current",
+ "section": "uk/ukpga/2015/15/s5",
+ "version": "current",
+ "source_sha256": "4739f74336cb9718db5fc1f64cacb0c8f0c569f85517c629b637e336c1720a1d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A contract is a sales contract if under the contract the trader transfers or agrees to transfer ownership of goods to the consumer, and the consumer pays or agrees to pay the price.",
+    "quote": "the trader transfers or agrees to transfer ownership of goods to the consumer, and (b) the consumer pays or agrees to pay the price"
+   },
+   {
+    "requirement": "A contract is a sales contract, whether or not it would be one under subsection (1), if under the contract goods are to be manufactured or produced, the trader agrees to supply them to the consumer, the consumer will own the goods on being supplied, and the consumer pays or agrees to pay the price.",
+    "quote": "goods are to be manufactured or produced and the trader agrees to supply them to the consumer, (b) on being supplied, the goods will be owned by the consumer, and (c) the consumer pays or agrees to pay the price"
+   },
+   {
+    "requirement": "A sales contract entered into between a trader and a consumer may be conditional.",
+    "quote": "A sales contract may be conditional"
+   },
+   {
+    "requirement": "In this Part, a conditional sales contract means a sales contract under which the price for the goods or part of it is payable by instalments, and the trader retains ownership of the goods until the conditions specified in the contract (for the payment of instalments or otherwise) are met.",
+    "quote": "the price for the goods or part of it is payable by instalments, and (b) the trader retains ownership of the goods until the conditions specified in the contract (for the payment of instalments or otherwise) are met"
+   },
+   {
+    "requirement": "In determining whether a contract is a conditional sales contract, it makes no difference whether or not the consumer possesses the goods.",
+    "quote": "it makes no difference whether or not the consumer possesses the goods"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A contract is a sales contract if under the contract the trader transfers or agrees to transfer ownership of goods to the consumer, and the consumer pays or agrees to pay the price.",
+   "quote": "the trader transfers or agrees to transfer ownership of goods to the consumer, and (b) the consumer pays or agrees to pay the price"
+  },
+  {
+   "requirement": "A contract is a sales contract, whether or not it would be one under subsection (1), if under the contract goods are to be manufactured or produced, the trader agrees to supply them to the consumer, the consumer will own the goods on being supplied, and the consumer pays or agrees to pay the price.",
+   "quote": "goods are to be manufactured or produced and the trader agrees to supply them to the consumer, (b) on being supplied, the goods will be owned by the consumer, and (c) the consumer pays or agrees to pay the price"
+  },
+  {
+   "requirement": "A sales contract entered into between a trader and a consumer may be conditional.",
+   "quote": "A sales contract may be conditional"
+  },
+  {
+   "requirement": "In this Part, a conditional sales contract means a sales contract under which the price for the goods or part of it is payable by instalments, and the trader retains ownership of the goods until the conditions specified in the contract (for the payment of instalments or otherwise) are met.",
+   "quote": "the price for the goods or part of it is payable by instalments, and (b) the trader retains ownership of the goods until the conditions specified in the contract (for the payment of instalments or otherwise) are met"
+  },
+  {
+   "requirement": "In determining whether a contract is a conditional sales contract, it makes no difference whether or not the consumer possesses the goods.",
+   "quote": "it makes no difference whether or not the consumer possesses the goods"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

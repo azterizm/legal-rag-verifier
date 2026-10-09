@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/1997/40/s2B@current",
+ "section": "uk/ukpga/1997/40/s2B",
+ "version": "current",
+ "source_sha256": "2903d650db7bb2055f8a37cb45595088437139c6c536986e4bb2f38764d57019",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "A justice of the peace may, upon an application by a constable, issue a warrant authorising a constable to enter and search premises if the justice of the peace is satisfied that the statutory reasonable grounds for belief exist.",
+    "quote": "A justice of the peace may, on an application by a constable, issue a warrant authorising a constable to enter and search premises"
+   },
+   {
+    "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that an offence under section 2A has been, or is being, committed.",
+    "quote": "an offence under section 2A has been, or is being, committed"
+   },
+   {
+    "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that there is material on the premises likely to be of substantial value to the investigation of the offence, whether on its own or together with other material.",
+    "quote": "there is material on the premises which is likely to be of substantial value (whether by itself or together with other material) to the investigation of the offence"
+   },
+   {
+    "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that the material is likely to be admissible in evidence at a trial for the offence.",
+    "quote": "is likely to be admissible in evidence at a trial for the offence"
+   },
+   {
+    "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that the material does not consist of, or include, items subject to legal privilege, excluded material, or special procedure material within the meanings given by sections 10, 11, and 14 of the Police and Criminal Evidence Act 1984.",
+    "quote": "does not consist of, or include, items subject to legal privilege, excluded material or special procedure material (within the meanings given by sections 10, 11 and 14 of the Police and Criminal Evidence Act 1984)"
+   },
+   {
+    "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing either that entry to the premises will not be granted unless a warrant is produced, or that the purpose of a search may be frustrated or seriously prejudiced unless a constable arriving at the premises can secure immediate entry.",
+    "quote": "either— (i) entry to the premises will not be granted unless a warrant is produced, or (ii) the purpose of a search may be frustrated or seriously prejudiced unless a constable arriving at the premises can secure immediate entry to them"
+   },
+   {
+    "requirement": "A constable may seize and retain anything for which a search has been authorised under subsection (1).",
+    "quote": "A constable may seize and retain anything for which a search has been authorised under subsection (1)."
+   },
+   {
+    "requirement": "A constable may use reasonable force, if necessary, when exercising any power conferred by virtue of this section.",
+    "quote": "A constable may use reasonable force, if necessary, in the exercise of any power conferred by virtue of this section."
+   },
+   {
+    "requirement": "The term “premises” has the same meaning in section 2B as it has in section 23 of the Police and Criminal Evidence Act 1984.",
+    "quote": "“premises” has the same meaning as in section 23 of the Police and Criminal Evidence Act 1984."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "A justice of the peace may, upon an application by a constable, issue a warrant authorising a constable to enter and search premises if the justice of the peace is satisfied that the statutory reasonable grounds for belief exist.",
+   "quote": "A justice of the peace may, on an application by a constable, issue a warrant authorising a constable to enter and search premises"
+  },
+  {
+   "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that an offence under section 2A has been, or is being, committed.",
+   "quote": "an offence under section 2A has been, or is being, committed"
+  },
+  {
+   "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that there is material on the premises likely to be of substantial value to the investigation of the offence, whether on its own or together with other material.",
+   "quote": "there is material on the premises which is likely to be of substantial value (whether by itself or together with other material) to the investigation of the offence"
+  },
+  {
+   "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that the material is likely to be admissible in evidence at a trial for the offence.",
+   "quote": "is likely to be admissible in evidence at a trial for the offence"
+  },
+  {
+   "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing that the material does not consist of, or include, items subject to legal privilege, excluded material, or special procedure material within the meanings given by sections 10, 11, and 14 of the Police and Criminal Evidence Act 1984.",
+   "quote": "does not consist of, or include, items subject to legal privilege, excluded material or special procedure material (within the meanings given by sections 10, 11 and 14 of the Police and Criminal Evidence Act 1984)"
+  },
+  {
+   "requirement": "The justice of the peace must be satisfied that there are reasonable grounds for believing either that entry to the premises will not be granted unless a warrant is produced, or that the purpose of a search may be frustrated or seriously prejudiced unless a constable arriving at the premises can secure immediate entry.",
+   "quote": "either— (i) entry to the premises will not be granted unless a warrant is produced, or (ii) the purpose of a search may be frustrated or seriously prejudiced unless a constable arriving at the premises can secure immediate entry to them"
+  },
+  {
+   "requirement": "A constable may seize and retain anything for which a search has been authorised under subsection (1).",
+   "quote": "A constable may seize and retain anything for which a search has been authorised under subsection (1)."
+  },
+  {
+   "requirement": "A constable may use reasonable force, if necessary, when exercising any power conferred by virtue of this section.",
+   "quote": "A constable may use reasonable force, if necessary, in the exercise of any power conferred by virtue of this section."
+  },
+  {
+   "requirement": "The term “premises” has the same meaning in section 2B as it has in section 23 of the Police and Criminal Evidence Act 1984.",
+   "quote": "“premises” has the same meaning as in section 23 of the Police and Criminal Evidence Act 1984."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

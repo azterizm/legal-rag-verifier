@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2006/46/s1059A@current",
+ "section": "uk/ukpga/2006/46/s1059A",
+ "version": "current",
+ "source_sha256": "290f0afd2e9f08d4e55b2c093b6c2193e03c42b6fde4755b5ea0976e563c5904",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The scheme of this Part of the Act is structured according to the provisions set out in section 1059A.",
+    "quote": "The scheme of this Part is as follows"
+   },
+   {
+    "requirement": "Sections 1060(1) and (2), 1061 to 1063, 1068, 1067A to 1071, 1072 to 1076, 1080(1), (4) and (5), 1092, 1081A, 1083, 1084A, 1092A to 1092C, 1108 to 1110, 1110E to 1110G, 1111, 1114 to 1119, and 1112B apply generally—to the registrar, to any functions of the registrar, or to documents delivered to or issued by the registrar under any enactment, as the case may be.",
+    "quote": "The following provisions apply generally (to the registrar, to any functions of the registrar, or to documents delivered to or issued by the registrar under any enactment, as the case may be)"
+   },
+   {
+    "requirement": "Sections 1060(3) and (4), 1064, 1065, 1066, 1077 to 1079A, 1080(2) and (3), 1081, 1082, 1084, 1085 to 1091, 1093 to 1098, 1098A to 1098H, 1106, 1110A, 1110B, 1112, 1112A, and 1113 apply in relation to companies, whether to companies or for the purposes of the Companies Acts, as the case may be.",
+    "quote": "The following provisions apply in relation to companies (to companies or for the purposes of the Companies Acts, as the case may be)"
+   },
+   {
+    "requirement": "Section 1067, sections 1099 to 1101, sections 1102 to 1105 and 1107, section 1110C, and section 1110D apply as indicated in those respective provisions.",
+    "quote": "The following provisions apply as indicated in the provisions concerned"
+   },
+   {
+    "requirement": "Unless the context otherwise requires, the provisions of this Part apply to an overseas company in the same way as they apply to a company as defined in section 1.",
+    "quote": "Unless the context otherwise requires, the provisions of this Part apply to an overseas company as they apply to a company as defined in section 1."
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The scheme of this Part of the Act is structured according to the provisions set out in section 1059A.",
+   "quote": "The scheme of this Part is as follows"
+  },
+  {
+   "requirement": "Sections 1060(1) and (2), 1061 to 1063, 1068, 1067A to 1071, 1072 to 1076, 1080(1), (4) and (5), 1092, 1081A, 1083, 1084A, 1092A to 1092C, 1108 to 1110, 1110E to 1110G, 1111, 1114 to 1119, and 1112B apply generally—to the registrar, to any functions of the registrar, or to documents delivered to or issued by the registrar under any enactment, as the case may be.",
+   "quote": "The following provisions apply generally (to the registrar, to any functions of the registrar, or to documents delivered to or issued by the registrar under any enactment, as the case may be)"
+  },
+  {
+   "requirement": "Sections 1060(3) and (4), 1064, 1065, 1066, 1077 to 1079A, 1080(2) and (3), 1081, 1082, 1084, 1085 to 1091, 1093 to 1098, 1098A to 1098H, 1106, 1110A, 1110B, 1112, 1112A, and 1113 apply in relation to companies, whether to companies or for the purposes of the Companies Acts, as the case may be.",
+   "quote": "The following provisions apply in relation to companies (to companies or for the purposes of the Companies Acts, as the case may be)"
+  },
+  {
+   "requirement": "Section 1067, sections 1099 to 1101, sections 1102 to 1105 and 1107, section 1110C, and section 1110D apply as indicated in those respective provisions.",
+   "quote": "The following provisions apply as indicated in the provisions concerned"
+  },
+  {
+   "requirement": "Unless the context otherwise requires, the provisions of this Part apply to an overseas company in the same way as they apply to a company as defined in section 1.",
+   "quote": "Unless the context otherwise requires, the provisions of this Part apply to an overseas company as they apply to a company as defined in section 1."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

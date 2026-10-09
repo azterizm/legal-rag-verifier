@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/1989/41/s21@current",
+ "section": "uk/ukpga/1989/41/s21",
+ "version": "current",
+ "source_sha256": "92084d146770b49662a7615c4dbcc3baa23adb279c38263ae5ae611df909e575",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Every local authority must make provision for receiving and accommodating children who are removed or kept away from home under Part V.",
+    "quote": "Every local authority shall make provision for the reception and accommodation of children who are removed or kept away from home under Part V."
+   },
+   {
+    "requirement": "Every local authority must receive and provide accommodation for children in police protection whom the local authority is requested to receive under section 46(3)(f).",
+    "quote": "Every local authority shall receive, and provide accommodation for, children— (a) in police protection whom they are requested to receive under section 46(3)(f)"
+   },
+   {
+    "requirement": "Every local authority must receive and provide accommodation for children whom the local authority is requested to receive under section 38(6) of the Police and Criminal Evidence Act 1984.",
+    "quote": "whom they are requested to receive under section 38(6) of the Police and Criminal Evidence Act 1984"
+   },
+   {
+    "requirement": "Every local authority must receive and provide accommodation for children who are remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 5 of Schedule 4 or paragraph 7 of Schedule 5 to the Sentencing Code regarding breach etc. of referral orders and reparation orders.",
+    "quote": "remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 5 of Schedule 4 or paragraph 7 of Schedule 5 to the Sentencing Code (breach etc. of referral orders and reparation orders)"
+   },
+   {
+    "requirement": "Every local authority must receive and provide accommodation for children who are remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 25 of Schedule 7 to the Sentencing Code regarding breach etc. of youth rehabilitation orders.",
+    "quote": "remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 25 of Schedule 7 to that Code (breach etc. of youth rehabilitation orders)"
+   },
+   {
+    "requirement": "Every local authority must receive and provide accommodation for children who are remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 10 of the Schedule to the Street Offences Act 1959 regarding breach of orders under section 1(2A) of that Act.",
+    "quote": "remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 10 of the Schedule to the Street Offences Act 1959 (breach of orders under section 1(2A) of that Act)"
+   },
+   {
+    "requirement": "Every local authority must receive and provide accommodation for children who are the subject of a youth rehabilitation order imposing a local authority residence requirement or a youth rehabilitation order with fostering, and with respect to whom the local authority is the designated authority.",
+    "quote": "the subject of a youth rehabilitation order imposing a local authority residence requirement or a youth rehabilitation order with fostering, and with respect to whom they are the designated authority"
+   },
+   {
+    "requirement": "For the purposes of subsection (2)(c)(iii), a local authority residence requirement has the meaning given by paragraph 24 of Schedule 6 to the Sentencing Code.",
+    "quote": "“local authority residence requirement” has the meaning given by paragraph 24 of Schedule 6 to the Sentencing Code"
+   },
+   {
+    "requirement": "For the purposes of subsection (2)(c)(iii), a youth rehabilitation order has the meaning given by section 173 of the Sentencing Code.",
+    "quote": "“youth rehabilitation order” has the meaning given by section 173 of that Code"
+   },
+   {
+    "requirement": "For the purposes of subsection (2)(c)(iii), a youth rehabilitation order with fostering has the meaning given by section 176 of the Sentencing Code.",
+    "quote": "“youth rehabilitation order with fostering” has the meaning given by section 176 of that Code"
+   },
+   {
+    "requirement": "Where a child has been removed under Part V or detained under section 38 of the Police and Criminal Evidence Act 1984, and the child is not being provided with accommodation by a local authority, a local authority in Wales, or in a hospital vested in the Secretary of State or the Welsh Ministers, or otherwise made available pursuant to arrangements made by the Secretary of State, NHS England or an integrated care board under the National Health Service Act 2006 or a Health Authority Local Health Board, any reasonable expenses of accommodating the child are recoverable from the local authority or local authority in Wales in whose area the child is ordinarily resident.",
+    "quote": "any reasonable expenses of accommodating him shall be recoverable from the local authority , or local authority in Wales, in whose area he is ordinarily resident"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Every local authority must make provision for receiving and accommodating children who are removed or kept away from home under Part V.",
+   "quote": "Every local authority shall make provision for the reception and accommodation of children who are removed or kept away from home under Part V."
+  },
+  {
+   "requirement": "Every local authority must receive and provide accommodation for children in police protection whom the local authority is requested to receive under section 46(3)(f).",
+   "quote": "Every local authority shall receive, and provide accommodation for, children— (a) in police protection whom they are requested to receive under section 46(3)(f)"
+  },
+  {
+   "requirement": "Every local authority must receive and provide accommodation for children whom the local authority is requested to receive under section 38(6) of the Police and Criminal Evidence Act 1984.",
+   "quote": "whom they are requested to receive under section 38(6) of the Police and Criminal Evidence Act 1984"
+  },
+  {
+   "requirement": "Every local authority must receive and provide accommodation for children who are remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 5 of Schedule 4 or paragraph 7 of Schedule 5 to the Sentencing Code regarding breach etc. of referral orders and reparation orders.",
+   "quote": "remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 5 of Schedule 4 or paragraph 7 of Schedule 5 to the Sentencing Code (breach etc. of referral orders and reparation orders)"
+  },
+  {
+   "requirement": "Every local authority must receive and provide accommodation for children who are remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 25 of Schedule 7 to the Sentencing Code regarding breach etc. of youth rehabilitation orders.",
+   "quote": "remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 25 of Schedule 7 to that Code (breach etc. of youth rehabilitation orders)"
+  },
+  {
+   "requirement": "Every local authority must receive and provide accommodation for children who are remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 10 of the Schedule to the Street Offences Act 1959 regarding breach of orders under section 1(2A) of that Act.",
+   "quote": "remanded to accommodation provided by or on behalf of a local authority by virtue of paragraph 10 of the Schedule to the Street Offences Act 1959 (breach of orders under section 1(2A) of that Act)"
+  },
+  {
+   "requirement": "Every local authority must receive and provide accommodation for children who are the subject of a youth rehabilitation order imposing a local authority residence requirement or a youth rehabilitation order with fostering, and with respect to whom the local authority is the designated authority.",
+   "quote": "the subject of a youth rehabilitation order imposing a local authority residence requirement or a youth rehabilitation order with fostering, and with respect to whom they are the designated authority"
+  },
+  {
+   "requirement": "For the purposes of subsection (2)(c)(iii), a local authority residence requirement has the meaning given by paragraph 24 of Schedule 6 to the Sentencing Code.",
+   "quote": "“local authority residence requirement” has the meaning given by paragraph 24 of Schedule 6 to the Sentencing Code"
+  },
+  {
+   "requirement": "For the purposes of subsection (2)(c)(iii), a youth rehabilitation order has the meaning given by section 173 of the Sentencing Code.",
+   "quote": "“youth rehabilitation order” has the meaning given by section 173 of that Code"
+  },
+  {
+   "requirement": "For the purposes of subsection (2)(c)(iii), a youth rehabilitation order with fostering has the meaning given by section 176 of the Sentencing Code.",
+   "quote": "“youth rehabilitation order with fostering” has the meaning given by section 176 of that Code"
+  },
+  {
+   "requirement": "Where a child has been removed under Part V or detained under section 38 of the Police and Criminal Evidence Act 1984, and the child is not being provided with accommodation by a local authority, a local authority in Wales, or in a hospital vested in the Secretary of State or the Welsh Ministers, or otherwise made available pursuant to arrangements made by the Secretary of State, NHS England or an integrated care board under the National Health Service Act 2006 or a Health Authority Local Health Board, any reasonable expenses of accommodating the child are recoverable from the local authority or local authority in Wales in whose area the child is ordinarily resident.",
+   "quote": "any reasonable expenses of accommodating him shall be recoverable from the local authority , or local authority in Wales, in whose area he is ordinarily resident"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

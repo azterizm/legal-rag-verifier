@@ -1,0 +1,75 @@
+{
+ "key": "uk/ukpga/1986/64/s16@current",
+ "section": "uk/ukpga/1986/64/s16",
+ "version": "current",
+ "source_sha256": "373fa9883cb2d68684fef99646d0d1ec79e6c3ed2024823394baa6d95b00cc84",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "In this Part, \"the City of London\" is defined as the City as defined for the purposes of the Acts relating to the City of London police.",
+    "quote": "“the City of London” means the City as defined for the purposes of the Acts relating to the City of London police"
+   },
+   {
+    "requirement": "In this Part, \"the metropolitan police district\" is defined as that district as defined in section 76 of the London Government Act 1963.",
+    "quote": "“the metropolitan police district” means that district as defined in section 76 of the London Government Act 1963"
+   },
+   {
+    "requirement": "In this Part, a \"public assembly\" is defined as an assembly of 20 2 or more persons in a public place that is either wholly or partly open to the air, or within any of paragraphs (a) to (f) of section 31(1) of the Railways and Transport Safety Act 2003.",
+    "quote": "“public assembly” means an assembly of 20 2 or more persons in a public place which is — wholly or partly open to the air, orwithin any of paragraphs (a) to (f) of section 31(1) of the Railways and Transport Safety Act 2003"
+   },
+   {
+    "requirement": "In this Part, a \"public place\" is defined as any highway, or in Scotland any road within the meaning of the Roads (Scotland) Act 1984, and any place to which the public or any section of the public has access at the material time, whether on payment or otherwise, as of right or by virtue of express or implied permission.",
+    "quote": "“public place” means— any highway, or in Scotland any road within the meaning of the Roads (Scotland) Act 1984, andany place to which at the material time the public or any section of the public has access, on payment or otherwise, as of right or by virtue of express or implied permission"
+   },
+   {
+    "requirement": "In this Part, a \"public procession\" is defined as a procession in a public place.",
+    "quote": "“public procession” means a procession in a public place"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of persons required to constitute a public assembly",
+    "value": "20 2",
+    "quote": "assembly of 20 2 or more persons"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "In this Part, \"the City of London\" is defined as the City as defined for the purposes of the Acts relating to the City of London police.",
+   "quote": "“the City of London” means the City as defined for the purposes of the Acts relating to the City of London police"
+  },
+  {
+   "requirement": "In this Part, \"the metropolitan police district\" is defined as that district as defined in section 76 of the London Government Act 1963.",
+   "quote": "“the metropolitan police district” means that district as defined in section 76 of the London Government Act 1963"
+  },
+  {
+   "requirement": "In this Part, a \"public assembly\" is defined as an assembly of 20 2 or more persons in a public place that is either wholly or partly open to the air, or within any of paragraphs (a) to (f) of section 31(1) of the Railways and Transport Safety Act 2003.",
+   "quote": "“public assembly” means an assembly of 20 2 or more persons in a public place which is — wholly or partly open to the air, orwithin any of paragraphs (a) to (f) of section 31(1) of the Railways and Transport Safety Act 2003"
+  },
+  {
+   "requirement": "In this Part, a \"public place\" is defined as any highway, or in Scotland any road within the meaning of the Roads (Scotland) Act 1984, and any place to which the public or any section of the public has access at the material time, whether on payment or otherwise, as of right or by virtue of express or implied permission.",
+   "quote": "“public place” means— any highway, or in Scotland any road within the meaning of the Roads (Scotland) Act 1984, andany place to which at the material time the public or any section of the public has access, on payment or otherwise, as of right or by virtue of express or implied permission"
+  },
+  {
+   "requirement": "In this Part, a \"public procession\" is defined as a procession in a public place.",
+   "quote": "“public procession” means a procession in a public place"
+  }
+ ],
+ "thresholds": [
+  {
+   "what": "minimum number of persons required to constitute a public assembly",
+   "value": "20 2",
+   "quote": "assembly of 20 2 or more persons"
+  }
+ ],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 1
+ }
+}

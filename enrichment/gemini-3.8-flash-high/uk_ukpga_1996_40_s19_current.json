@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/1996/40/s19@current",
+ "section": "uk/ukpga/1996/40/s19",
+ "version": "current",
+ "source_sha256": "06a21454a0a39480a7f5ab918c94c9e97f7ea299d9847ef6001d2de65228d588",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The Party Wall etc. Act 1996 applies to land in which there is an interest belonging to Her Majesty in right of the Crown.",
+    "quote": "an interest belonging to Her Majesty in right of the Crown"
+   },
+   {
+    "requirement": "The Party Wall etc. Act 1996 applies to land in which there is an interest belonging to a government department.",
+    "quote": "an interest belonging to a government department"
+   },
+   {
+    "requirement": "The Party Wall etc. Act 1996 applies to land in which there is an interest held in trust for Her Majesty for the purposes of a government department.",
+    "quote": "an interest held in trust for Her Majesty for the purposes of any such department"
+   },
+   {
+    "requirement": "The Party Wall etc. Act 1996 applies to land that is vested in, but not occupied by, Her Majesty in right of the Duchy of Lancaster.",
+    "quote": "land which is vested in, but not occupied by, Her Majesty in right of the Duchy of Lancaster"
+   },
+   {
+    "requirement": "The Party Wall etc. Act 1996 applies to land that is vested in, but not occupied by, the possessor for the time being of the Duchy of Cornwall.",
+    "quote": "land which is vested in, but not occupied by, the possessor for the time being of the Duchy of Cornwall"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The Party Wall etc. Act 1996 applies to land in which there is an interest belonging to Her Majesty in right of the Crown.",
+   "quote": "an interest belonging to Her Majesty in right of the Crown"
+  },
+  {
+   "requirement": "The Party Wall etc. Act 1996 applies to land in which there is an interest belonging to a government department.",
+   "quote": "an interest belonging to a government department"
+  },
+  {
+   "requirement": "The Party Wall etc. Act 1996 applies to land in which there is an interest held in trust for Her Majesty for the purposes of a government department.",
+   "quote": "an interest held in trust for Her Majesty for the purposes of any such department"
+  },
+  {
+   "requirement": "The Party Wall etc. Act 1996 applies to land that is vested in, but not occupied by, Her Majesty in right of the Duchy of Lancaster.",
+   "quote": "land which is vested in, but not occupied by, Her Majesty in right of the Duchy of Lancaster"
+  },
+  {
+   "requirement": "The Party Wall etc. Act 1996 applies to land that is vested in, but not occupied by, the possessor for the time being of the Duchy of Cornwall.",
+   "quote": "land which is vested in, but not occupied by, the possessor for the time being of the Duchy of Cornwall"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

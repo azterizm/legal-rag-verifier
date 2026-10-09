@@ -1,0 +1,189 @@
+{
+ "key": "uk/ukpga/1986/46/s22H@current",
+ "section": "uk/ukpga/1986/46/s22H",
+ "version": "current",
+ "source_sha256": "be2755b7ff55619ecbfb27c7ae552f6cb88f28f9728600dfae14ea0a5ac8f44b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "So far as section 22H extends to England and Wales and Scotland, a protected cell company is defined as a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 that has its registered office in England and Wales (or Wales) or Scotland.",
+    "quote": "“protected cell company” means a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 which has its registered office in England and Wales (or Wales) or Scotland"
+   },
+   {
+    "requirement": "So far as section 22H extends to Northern Ireland, a protected cell company is defined as a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 that has its registered office in Northern Ireland.",
+    "quote": "“protected cell company” means a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 which has its registered office in Northern Ireland"
+   },
+   {
+    "requirement": "A reference to a part of a protected cell company means a reference to the core or a cell of that protected cell company under regulations 42 and 43 of the Risk Transformation Regulations 2017.",
+    "quote": "a reference to a part of a protected cell company is a reference to the core or a cell of the protected cell company"
+   },
+   {
+    "requirement": "The Company Directors Disqualification Act 1986 applies to protected cell companies in the same manner as it applies to companies.",
+    "quote": "This Act applies to protected cell companies as it applies to companies."
+   },
+   {
+    "requirement": "References to a company throughout the Company Directors Disqualification Act 1986 must be read as including references to a protected cell company.",
+    "quote": "references to a company are to be read as including references to a protected cell company."
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, sections 6(1)(a)(ii), 6(3)(d), 7(2)(b), and 11A are to be disregarded.",
+    "quote": "sections 6(1)(a)(ii) and (3)(d) , 7(2)(b) and 11A are to be disregarded"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references in sections 7(4)(a), 8ZB(2), and 15A(3)(b) to a company that has been dissolved without becoming insolvent are to be disregarded.",
+    "quote": "references in sections 7(4)(a), 8ZB(2) and 15A(3)(b) to a company which has been dissolved without becoming insolvent are to be disregarded"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the administration, insolvency, liquidation, or winding up of a company must be read as references to the administration, insolvency, liquidation, or winding up of a part of a protected cell company.",
+    "quote": "references to the administration, insolvency, liquidation or winding up of a company are to be read as references to the administration, insolvency, liquidation or winding up of a part of a protected cell company"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to striking off must be read as including references to dissolution.",
+    "quote": "references to striking off are to be read as including references to dissolution"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to a director of a company that is or has been insolvent must be read as references to the director of a protected cell company where a part of that protected cell company is or has been insolvent.",
+    "quote": "references to a director of a company which is or has been insolvent are to be read as references to the director of a protected cell company, a part of which is or has been insolvent"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to a director of a company that is being or has been wound up must be read as references to the director of a protected cell company where a part of that protected cell company is being or has been wound up.",
+    "quote": "references to a director of a company which is being or has been wound up are to be read as references to the director of a protected cell company, a part of which is being or has been wound up"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the court with jurisdiction to wind up a company must be read as references to the court with jurisdiction to wind up the parts of a protected cell company.",
+    "quote": "references to the court with jurisdiction to wind up a company are to be read as references to the court with jurisdiction to wind up the parts of a protected cell company"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the companies legislation must be read as references to Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017.",
+    "quote": "references to the companies legislation are to be read as references to Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the Insolvency Act 1986 must be read as references to that Act as applied by Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017.",
+    "quote": "references to the Insolvency Act 1986 are to be read as references to that Act as applied by Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to sections 452 and 456 of the Companies Act 2006 must be read as references to those sections as applied by regulation 163 of the Risk Transformation Regulations 2017.",
+    "quote": "references to section 452 and 456 of the Companies Act 2006 are to be read as references to those sections as applied by regulation 163 of the Risk Transformation Regulations 2017"
+   },
+   {
+    "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the registrar of companies must be read as references to the Financial Conduct Authority.",
+    "quote": "references to the registrar of companies are to be read as references to the Financial Conduct Authority"
+   },
+   {
+    "requirement": "So far as section 22H extends to England and Wales and Scotland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 that has its registered office in Northern Ireland.",
+    "quote": "so far as this section extends to England and Wales and Scotland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 which has its registered office in Northern Ireland"
+   },
+   {
+    "requirement": "So far as section 22H extends to Northern Ireland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 that has its registered office in England and Wales (or Wales) or Scotland.",
+    "quote": "so far as this section extends to Northern Ireland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 which has its registered office in England and Wales (or Wales) or Scotland."
+   },
+   {
+    "requirement": "Where two or more parts of a protected cell company are or have been insolvent, sections 6 to 7A and 8ZA to 8ZC apply separately in relation to each such part.",
+    "quote": "Where two or more parts of a protected cell company are or have been insolvent, then sections 6 to 7A and 8ZA to 8ZC apply in relation to each part separately."
+   },
+   {
+    "requirement": "A protected cell company must hold a contribution to its assets given under a compensation order pursuant to section 15A(1) or under a compensation undertaking pursuant to section 15A(2) on behalf of the part of the protected cell company specified in the order or undertaking.",
+    "quote": "A contribution to the assets of a protected cell company given in accordance with a compensation order under section 15A(1) or a compensation undertaking under section 15A(2) is to be held by the protected cell company on behalf of the part of the protected cell company specified in the order or undertaking."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "minimum number of insolvent parts of a protected cell company required for sections 6 to 7A and 8ZA to 8ZC to apply separately to each part",
+    "value": "two",
+    "quote": "Where two or more parts of a protected cell company are or have been insolvent"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "So far as section 22H extends to England and Wales and Scotland, a protected cell company is defined as a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 that has its registered office in England and Wales (or Wales) or Scotland.",
+   "quote": "“protected cell company” means a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 which has its registered office in England and Wales (or Wales) or Scotland"
+  },
+  {
+   "requirement": "So far as section 22H extends to Northern Ireland, a protected cell company is defined as a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 that has its registered office in Northern Ireland.",
+   "quote": "“protected cell company” means a protected cell company incorporated under Part 4 of the Risk Transformation Regulations 2017 which has its registered office in Northern Ireland"
+  },
+  {
+   "requirement": "A reference to a part of a protected cell company means a reference to the core or a cell of that protected cell company under regulations 42 and 43 of the Risk Transformation Regulations 2017.",
+   "quote": "a reference to a part of a protected cell company is a reference to the core or a cell of the protected cell company"
+  },
+  {
+   "requirement": "The Company Directors Disqualification Act 1986 applies to protected cell companies in the same manner as it applies to companies.",
+   "quote": "This Act applies to protected cell companies as it applies to companies."
+  },
+  {
+   "requirement": "References to a company throughout the Company Directors Disqualification Act 1986 must be read as including references to a protected cell company.",
+   "quote": "references to a company are to be read as including references to a protected cell company."
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, sections 6(1)(a)(ii), 6(3)(d), 7(2)(b), and 11A are to be disregarded.",
+   "quote": "sections 6(1)(a)(ii) and (3)(d) , 7(2)(b) and 11A are to be disregarded"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references in sections 7(4)(a), 8ZB(2), and 15A(3)(b) to a company that has been dissolved without becoming insolvent are to be disregarded.",
+   "quote": "references in sections 7(4)(a), 8ZB(2) and 15A(3)(b) to a company which has been dissolved without becoming insolvent are to be disregarded"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the administration, insolvency, liquidation, or winding up of a company must be read as references to the administration, insolvency, liquidation, or winding up of a part of a protected cell company.",
+   "quote": "references to the administration, insolvency, liquidation or winding up of a company are to be read as references to the administration, insolvency, liquidation or winding up of a part of a protected cell company"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to striking off must be read as including references to dissolution.",
+   "quote": "references to striking off are to be read as including references to dissolution"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to a director of a company that is or has been insolvent must be read as references to the director of a protected cell company where a part of that protected cell company is or has been insolvent.",
+   "quote": "references to a director of a company which is or has been insolvent are to be read as references to the director of a protected cell company, a part of which is or has been insolvent"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to a director of a company that is being or has been wound up must be read as references to the director of a protected cell company where a part of that protected cell company is being or has been wound up.",
+   "quote": "references to a director of a company which is being or has been wound up are to be read as references to the director of a protected cell company, a part of which is being or has been wound up"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the court with jurisdiction to wind up a company must be read as references to the court with jurisdiction to wind up the parts of a protected cell company.",
+   "quote": "references to the court with jurisdiction to wind up a company are to be read as references to the court with jurisdiction to wind up the parts of a protected cell company"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the companies legislation must be read as references to Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017.",
+   "quote": "references to the companies legislation are to be read as references to Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the Insolvency Act 1986 must be read as references to that Act as applied by Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017.",
+   "quote": "references to the Insolvency Act 1986 are to be read as references to that Act as applied by Part 4 of, and Schedules 1 to 3 to, the Risk Transformation Regulations 2017"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to sections 452 and 456 of the Companies Act 2006 must be read as references to those sections as applied by regulation 163 of the Risk Transformation Regulations 2017.",
+   "quote": "references to section 452 and 456 of the Companies Act 2006 are to be read as references to those sections as applied by regulation 163 of the Risk Transformation Regulations 2017"
+  },
+  {
+   "requirement": "As the provisions of the Company Directors Disqualification Act 1986 apply in relation to protected cell companies, references to the registrar of companies must be read as references to the Financial Conduct Authority.",
+   "quote": "references to the registrar of companies are to be read as references to the Financial Conduct Authority"
+  },
+  {
+   "requirement": "So far as section 22H extends to England and Wales and Scotland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 that has its registered office in Northern Ireland.",
+   "quote": "so far as this section extends to England and Wales and Scotland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 which has its registered office in Northern Ireland"
+  },
+  {
+   "requirement": "So far as section 22H extends to Northern Ireland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 that has its registered office in England and Wales (or Wales) or Scotland.",
+   "quote": "so far as this section extends to Northern Ireland, references to an overseas company include references to a protected cell company incorporated under the Risk Transformation Regulations 2017 which has its registered office in England and Wales (or Wales) or Scotland."
+  },
+  {
+   "requirement": "Where two or more parts of a protected cell company are or have been insolvent, sections 6 to 7A and 8ZA to 8ZC apply separately in relation to each such part.",
+   "quote": "Where two or more parts of a protected cell company are or have been insolvent, then sections 6 to 7A and 8ZA to 8ZC apply in relation to each part separately."
+  },
+  {
+   "requirement": "A protected cell company must hold a contribution to its assets given under a compensation order pursuant to section 15A(1) or under a compensation undertaking pursuant to section 15A(2) on behalf of the part of the protected cell company specified in the order or undertaking.",
+   "quote": "A contribution to the assets of a protected cell company given in accordance with a compensation order under section 15A(1) or a compensation undertaking under section 15A(2) is to be held by the protected cell company on behalf of the part of the protected cell company specified in the order or undertaking."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 20,
+  "elements_verified": 20,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "key": "uk/ukpga/2006/46/s920@current",
+ "section": "uk/ukpga/2006/46/s920",
+ "version": "current",
+ "source_sha256": "e8683a3ef862483d0f2f585a9abd22dbdc9e0d45fbacc4233cf7bbd6216ce053",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The directors of each company involved in a division must draw up and adopt a draft of the proposed terms of the scheme.",
+    "quote": "must be drawn up and adopted by the directors of each of the companies involved in the division"
+   },
+   {
+    "requirement": "The draft terms of the scheme must state the name, registered office address, and whether it is a company limited by shares or a company limited by guarantee and having a share capital, for the transferor company and each transferee company.",
+    "quote": "in respect of the transferor company and each transferee company— (i) its name, (ii) the address of its registered office, and (iii) whether it is a company limited by shares or a company limited by guarantee and having a share capital"
+   },
+   {
+    "requirement": "The draft terms of the scheme must state the number of shares in a transferee company to be allotted to members of the transferor company for a given number of their shares (the share exchange ratio) and the amount of any cash payment.",
+    "quote": "the number of shares in a transferee company to be allotted to members of the transferor company for a given number of their shares (the “share exchange ratio”) and the amount of any cash payment"
+   },
+   {
+    "requirement": "The draft terms of the scheme must specify the terms relating to the allotment of shares in a transferee company.",
+    "quote": "the terms relating to the allotment of shares in a transferee company"
+   },
+   {
+    "requirement": "The draft terms of the scheme must specify the date from which holding shares in a transferee company will entitle the holders to participate in profits, as well as any special conditions affecting that entitlement.",
+    "quote": "the date from which the holding of shares in a transferee company will entitle the holders to participate in profits, and any special conditions affecting that entitlement"
+   },
+   {
+    "requirement": "The draft terms of the scheme must state the date from which transactions of the transferor company are to be treated for accounting purposes as being those of a transferee company.",
+    "quote": "the date from which the transactions of the transferor company are to be treated for accounting purposes as being those of a transferee company"
+   },
+   {
+    "requirement": "The draft terms of the scheme must specify any rights or restrictions attaching to shares or other securities in a transferee company to be allotted under the scheme to holders of shares or other securities in the transferor company with special rights or restrictions, or the measures proposed concerning them.",
+    "quote": "any rights or restrictions attaching to shares or other securities in a transferee company to be allotted under the scheme to the holders of shares or other securities in the transferor company to which any special rights or restrictions attach, or the measures proposed concerning them"
+   },
+   {
+    "requirement": "The draft terms of the scheme must set out any amount of benefit paid, given, or intended to be paid or given to any expert referred to in section 924 or to any director of a company involved in the division, along with the consideration for the payment of that benefit.",
+    "quote": "any amount of benefit paid or given or intended to be paid or given— (i) to any of the experts referred to in section 924 (expert's report), or (ii) to any director of a company involved in the division, and the consideration for the payment of benefit"
+   },
+   {
+    "requirement": "The draft terms of the scheme must give particulars of the property and liabilities to be transferred, to the extent that these are known to the transferor company, and their allocation among the transferee companies.",
+    "quote": "give particulars of the property and liabilities to be transferred (to the extent that these are known to the transferor company) and their allocation among the transferee companies"
+   },
+   {
+    "requirement": "The draft terms of the scheme must make provision for the allocation among and transfer to the transferee companies of any other property and liabilities that the transferor company has acquired or may subsequently acquire.",
+    "quote": "make provision for the allocation among and transfer to the transferee companies of any other property and liabilities that the transferor company has acquired or may subsequently acquire"
+   },
+   {
+    "requirement": "The draft terms of the scheme must specify the allocation of shares in the transferee companies to members of the transferor company and the criteria upon which that allocation is based.",
+    "quote": "specify the allocation to members of the transferor company of shares in the transferee companies and the criteria upon which that allocation is based"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "The directors of each company involved in a division must draw up and adopt a draft of the proposed terms of the scheme.",
+   "quote": "must be drawn up and adopted by the directors of each of the companies involved in the division"
+  },
+  {
+   "requirement": "The draft terms of the scheme must state the name, registered office address, and whether it is a company limited by shares or a company limited by guarantee and having a share capital, for the transferor company and each transferee company.",
+   "quote": "in respect of the transferor company and each transferee company— (i) its name, (ii) the address of its registered office, and (iii) whether it is a company limited by shares or a company limited by guarantee and having a share capital"
+  },
+  {
+   "requirement": "The draft terms of the scheme must state the number of shares in a transferee company to be allotted to members of the transferor company for a given number of their shares (the share exchange ratio) and the amount of any cash payment.",
+   "quote": "the number of shares in a transferee company to be allotted to members of the transferor company for a given number of their shares (the “share exchange ratio”) and the amount of any cash payment"
+  },
+  {
+   "requirement": "The draft terms of the scheme must specify the terms relating to the allotment of shares in a transferee company.",
+   "quote": "the terms relating to the allotment of shares in a transferee company"
+  },
+  {
+   "requirement": "The draft terms of the scheme must specify the date from which holding shares in a transferee company will entitle the holders to participate in profits, as well as any special conditions affecting that entitlement.",
+   "quote": "the date from which the holding of shares in a transferee company will entitle the holders to participate in profits, and any special conditions affecting that entitlement"
+  },
+  {
+   "requirement": "The draft terms of the scheme must state the date from which transactions of the transferor company are to be treated for accounting purposes as being those of a transferee company.",
+   "quote": "the date from which the transactions of the transferor company are to be treated for accounting purposes as being those of a transferee company"
+  },
+  {
+   "requirement": "The draft terms of the scheme must specify any rights or restrictions attaching to shares or other securities in a transferee company to be allotted under the scheme to holders of shares or other securities in the transferor company with special rights or restrictions, or the measures proposed concerning them.",
+   "quote": "any rights or restrictions attaching to shares or other securities in a transferee company to be allotted under the scheme to the holders of shares or other securities in the transferor company to which any special rights or restrictions attach, or the measures proposed concerning them"
+  },
+  {
+   "requirement": "The draft terms of the scheme must set out any amount of benefit paid, given, or intended to be paid or given to any expert referred to in section 924 or to any director of a company involved in the division, along with the consideration for the payment of that benefit.",
+   "quote": "any amount of benefit paid or given or intended to be paid or given— (i) to any of the experts referred to in section 924 (expert's report), or (ii) to any director of a company involved in the division, and the consideration for the payment of benefit"
+  },
+  {
+   "requirement": "The draft terms of the scheme must give particulars of the property and liabilities to be transferred, to the extent that these are known to the transferor company, and their allocation among the transferee companies.",
+   "quote": "give particulars of the property and liabilities to be transferred (to the extent that these are known to the transferor company) and their allocation among the transferee companies"
+  },
+  {
+   "requirement": "The draft terms of the scheme must make provision for the allocation among and transfer to the transferee companies of any other property and liabilities that the transferor company has acquired or may subsequently acquire.",
+   "quote": "make provision for the allocation among and transfer to the transferee companies of any other property and liabilities that the transferor company has acquired or may subsequently acquire"
+  },
+  {
+   "requirement": "The draft terms of the scheme must specify the allocation of shares in the transferee companies to members of the transferor company and the criteria upon which that allocation is based.",
+   "quote": "specify the allocation to members of the transferor company of shares in the transferee companies and the criteria upon which that allocation is based"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 11,
+  "elements_verified": 11,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

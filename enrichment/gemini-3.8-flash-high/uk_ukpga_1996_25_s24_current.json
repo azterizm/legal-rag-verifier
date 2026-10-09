@@ -1,0 +1,95 @@
+{
+ "key": "uk/ukpga/1996/25/s24@current",
+ "section": "uk/ukpga/1996/25/s24",
+ "version": "current",
+ "source_sha256": "525b9b1ff15e9557d8e82efe2a7800e747805759ac253fc32af0755c95c2dca6",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Section 24 of the Criminal Procedure and Investigations Act 1996 provides examples of the kinds of provisions that may be included in the code of practice by virtue of section 23(5).",
+    "quote": "gives examples of the kinds of provision that may be included in the code by virtue of section 23(5)"
+   },
+   {
+    "requirement": "The code may provide that if a person required to reveal material possesses material that they believe is sensitive, they must give a document indicating the nature of that material and stating that they so believe.",
+    "quote": "he must give a document which— (a) indicates the nature of that material, and (b) states that he so believes"
+   },
+   {
+    "requirement": "The code may provide that if a person required to reveal material possesses material that is of a description prescribed under subsection (3) and which they do not believe is sensitive, they must give a document indicating the nature of that material and stating that they do not so believe.",
+    "quote": "he must give a document which— (a) indicates the nature of that material, and (b) states that he does not so believe"
+   },
+   {
+    "requirement": "The code may provide that if a document is given under subsection (2) and a person identified in accordance with prescribed provisions requests any of the material, the person giving the document must provide a copy of the requested material to the person asking for it or, depending on the circumstances, allow them to inspect it.",
+    "quote": "the person giving the document must give a copy of the material asked for to the person asking for it or (depending on the circumstances) must allow him to inspect it"
+   },
+   {
+    "requirement": "The code may provide that if a document is given under subsection (3), all or any of the material is of a description prescribed under subsection (5), and a person is identified in accordance with prescribed provisions as entitled to material of that description, the person giving the document must provide a copy of the material of that description to the identified person or, depending on the circumstances, allow them to inspect it.",
+    "quote": "the person giving the document must give a copy of the material of that description to the person so identified or (depending on the circumstances) must allow him to inspect it"
+   },
+   {
+    "requirement": "The code may provide that if a document is given under subsection (3), all or any of the material is not of a description prescribed under subsection (5), and a person identified in accordance with prescribed provisions requests any of the material not of that description, the person giving the document must provide a copy of the requested material to the person asking for it or, depending on the circumstances, allow them to inspect it.",
+    "quote": "the person giving the document must give a copy of the material asked for to the person asking for it or (depending on the circumstances) must allow him to inspect it"
+   },
+   {
+    "requirement": "The code may provide that if a person required to reveal material possesses material that they believe is sensitive and of such a nature that the code provision made under subsection (2) should not apply to it, that provision shall not apply to the material, the person must notify a person identified under prescribed provisions of the material's existence, and the person must allow the notified person to inspect the material.",
+    "quote": "that provision shall not apply with regard to the material, (b) he must notify a person identified in accordance with prescribed provisions of the existence of the material, and (c) he must allow the person so notified to inspect the material"
+   },
+   {
+    "requirement": "For the purposes of section 24, material is sensitive to the extent that its disclosure under Part I would be contrary to the public interest.",
+    "quote": "material is sensitive to the extent that its disclosure under Part I would be contrary to the public interest"
+   },
+   {
+    "requirement": "In section 24, the word 'prescribed' means prescribed by the code.",
+    "quote": "“prescribed” means prescribed by the code"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Section 24 of the Criminal Procedure and Investigations Act 1996 provides examples of the kinds of provisions that may be included in the code of practice by virtue of section 23(5).",
+   "quote": "gives examples of the kinds of provision that may be included in the code by virtue of section 23(5)"
+  },
+  {
+   "requirement": "The code may provide that if a person required to reveal material possesses material that they believe is sensitive, they must give a document indicating the nature of that material and stating that they so believe.",
+   "quote": "he must give a document which— (a) indicates the nature of that material, and (b) states that he so believes"
+  },
+  {
+   "requirement": "The code may provide that if a person required to reveal material possesses material that is of a description prescribed under subsection (3) and which they do not believe is sensitive, they must give a document indicating the nature of that material and stating that they do not so believe.",
+   "quote": "he must give a document which— (a) indicates the nature of that material, and (b) states that he does not so believe"
+  },
+  {
+   "requirement": "The code may provide that if a document is given under subsection (2) and a person identified in accordance with prescribed provisions requests any of the material, the person giving the document must provide a copy of the requested material to the person asking for it or, depending on the circumstances, allow them to inspect it.",
+   "quote": "the person giving the document must give a copy of the material asked for to the person asking for it or (depending on the circumstances) must allow him to inspect it"
+  },
+  {
+   "requirement": "The code may provide that if a document is given under subsection (3), all or any of the material is of a description prescribed under subsection (5), and a person is identified in accordance with prescribed provisions as entitled to material of that description, the person giving the document must provide a copy of the material of that description to the identified person or, depending on the circumstances, allow them to inspect it.",
+   "quote": "the person giving the document must give a copy of the material of that description to the person so identified or (depending on the circumstances) must allow him to inspect it"
+  },
+  {
+   "requirement": "The code may provide that if a document is given under subsection (3), all or any of the material is not of a description prescribed under subsection (5), and a person identified in accordance with prescribed provisions requests any of the material not of that description, the person giving the document must provide a copy of the requested material to the person asking for it or, depending on the circumstances, allow them to inspect it.",
+   "quote": "the person giving the document must give a copy of the material asked for to the person asking for it or (depending on the circumstances) must allow him to inspect it"
+  },
+  {
+   "requirement": "The code may provide that if a person required to reveal material possesses material that they believe is sensitive and of such a nature that the code provision made under subsection (2) should not apply to it, that provision shall not apply to the material, the person must notify a person identified under prescribed provisions of the material's existence, and the person must allow the notified person to inspect the material.",
+   "quote": "that provision shall not apply with regard to the material, (b) he must notify a person identified in accordance with prescribed provisions of the existence of the material, and (c) he must allow the person so notified to inspect the material"
+  },
+  {
+   "requirement": "For the purposes of section 24, material is sensitive to the extent that its disclosure under Part I would be contrary to the public interest.",
+   "quote": "material is sensitive to the extent that its disclosure under Part I would be contrary to the public interest"
+  },
+  {
+   "requirement": "In section 24, the word 'prescribed' means prescribed by the code.",
+   "quote": "“prescribed” means prescribed by the code"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 9,
+  "elements_verified": 9,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "key": "uk/ukpga/2018/12/s107@current",
+ "section": "uk/ukpga/2018/12/s107",
+ "version": "current",
+ "source_sha256": "25bd3d453ff0069b586b89579a88958072d9f4000ff98cfe127cea62756a1431",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Each controller and each processor must implement security measures that are appropriate to the risks arising from the processing of personal data.",
+    "quote": "Each controller and each processor must implement security measures appropriate to the risks arising from the processing of personal data."
+   },
+   {
+    "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to prevent unauthorised processing or unauthorised interference with the systems used in connection with that processing.",
+    "quote": "prevent unauthorised processing or unauthorised interference with the systems used in connection with it"
+   },
+   {
+    "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to ensure that it is possible to establish the precise details of any processing that takes place.",
+    "quote": "ensure that it is possible to establish the precise details of any processing that takes place"
+   },
+   {
+    "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to ensure that any systems used in connection with the processing function properly and may, in the case of interruption, be restored.",
+    "quote": "ensure that any systems used in connection with the processing function properly and may, in the case of interruption, be restored"
+   },
+   {
+    "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to ensure that stored personal data cannot be corrupted if a system used in connection with the processing malfunctions.",
+    "quote": "ensure that stored personal data cannot be corrupted if a system used in connection with the processing malfunctions"
+   }
+  ],
+  "thresholds": []
+ },
+ "elements": [
+  {
+   "requirement": "Each controller and each processor must implement security measures that are appropriate to the risks arising from the processing of personal data.",
+   "quote": "Each controller and each processor must implement security measures appropriate to the risks arising from the processing of personal data."
+  },
+  {
+   "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to prevent unauthorised processing or unauthorised interference with the systems used in connection with that processing.",
+   "quote": "prevent unauthorised processing or unauthorised interference with the systems used in connection with it"
+  },
+  {
+   "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to ensure that it is possible to establish the precise details of any processing that takes place.",
+   "quote": "ensure that it is possible to establish the precise details of any processing that takes place"
+  },
+  {
+   "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to ensure that any systems used in connection with the processing function properly and may, in the case of interruption, be restored.",
+   "quote": "ensure that any systems used in connection with the processing function properly and may, in the case of interruption, be restored"
+  },
+  {
+   "requirement": "In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to ensure that stored personal data cannot be corrupted if a system used in connection with the processing malfunctions.",
+   "quote": "ensure that stored personal data cannot be corrupted if a system used in connection with the processing malfunctions"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 0,
+  "thresholds_verified": 0
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "key": "uk/ukpga/1975/63/s9@current",
+ "section": "uk/ukpga/1975/63/s9",
+ "version": "current",
+ "source_sha256": "6c46d3f1780b6f6a39097ee93dfea79382afc5c605f826cf76a9484c9d13f3db",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Where a deceased person was immediately before death beneficially entitled to a joint tenancy of any property and an application is made for an order under section 2 of the Act, the court may order that the deceased's severable share of that property be treated as part of the net estate of the deceased to such extent as appears just in all the circumstances of the case to facilitate financial provision for the applicant.",
+    "quote": "the court for the purpose of facilitating the making of financial provision for the applicant under this Act may order that the deceased’s severable share of that property ... shall, to such extent as appears to the court to be just in all the circumstances of the case, be treated for the purposes of this Act as part of the net estate of the deceased."
+   },
+   {
+    "requirement": "Where an order is made under subsection (1), the value of the deceased's severable share of the property is taken to be the value that the share would have had at the date of the hearing of the application for an order under section 2 had it been severed immediately before the deceased's death, unless the court orders valuation at a different date.",
+    "quote": "the value of the deceased's severable share of the property concerned is taken for the purposes of this Act to be the value that the share would have had at the date of the hearing of the application for an order under section 2 had the share been severed immediately before the deceased's death, unless the court orders that the share is to be valued at a different date."
+   },
+   {
+    "requirement": "In determining the extent to which a severable share is to be treated as part of the deceased's net estate by virtue of an order under subsection (1), the court must have regard to any capital transfer tax payable in respect of that share.",
+    "quote": "the court shall have regard to any capital transfer tax payable in respect of that severable share."
+   },
+   {
+    "requirement": "Where an order is made under subsection (1), section 9 does not render any person liable for anything done by that person before the order was made.",
+    "quote": "the provisions of this section shall not render any person liable for anything done by him before the order was made."
+   },
+   {
+    "requirement": "For the purposes of section 9, property held in joint tenancy may include a chose in action.",
+    "quote": "for the purposes of this section there may be a joint tenancy of a chose in action."
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "Default valuation date for the deceased's severable share of the property where an order is made under subsection (1)",
+    "value": "the date of the hearing of the application for an order under section 2",
+    "quote": "at the date of the hearing of the application for an order under section 2"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Where a deceased person was immediately before death beneficially entitled to a joint tenancy of any property and an application is made for an order under section 2 of the Act, the court may order that the deceased's severable share of that property be treated as part of the net estate of the deceased to such extent as appears just in all the circumstances of the case to facilitate financial provision for the applicant.",
+   "quote": "the court for the purpose of facilitating the making of financial provision for the applicant under this Act may order that the deceased’s severable share of that property ... shall, to such extent as appears to the court to be just in all the circumstances of the case, be treated for the purposes of this Act as part of the net estate of the deceased."
+  },
+  {
+   "requirement": "Where an order is made under subsection (1), the value of the deceased's severable share of the property is taken to be the value that the share would have had at the date of the hearing of the application for an order under section 2 had it been severed immediately before the deceased's death, unless the court orders valuation at a different date.",
+   "quote": "the value of the deceased's severable share of the property concerned is taken for the purposes of this Act to be the value that the share would have had at the date of the hearing of the application for an order under section 2 had the share been severed immediately before the deceased's death, unless the court orders that the share is to be valued at a different date."
+  },
+  {
+   "requirement": "In determining the extent to which a severable share is to be treated as part of the deceased's net estate by virtue of an order under subsection (1), the court must have regard to any capital transfer tax payable in respect of that share.",
+   "quote": "the court shall have regard to any capital transfer tax payable in respect of that severable share."
+  },
+  {
+   "requirement": "Where an order is made under subsection (1), section 9 does not render any person liable for anything done by that person before the order was made.",
+   "quote": "the provisions of this section shall not render any person liable for anything done by him before the order was made."
+  },
+  {
+   "requirement": "For the purposes of section 9, property held in joint tenancy may include a chose in action.",
+   "quote": "for the purposes of this section there may be a joint tenancy of a chose in action."
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 5,
+  "elements_verified": 5,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}

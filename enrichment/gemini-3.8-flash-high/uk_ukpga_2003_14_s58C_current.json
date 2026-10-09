@@ -1,0 +1,135 @@
+{
+ "key": "uk/ukpga/2003/14/s58C@current",
+ "section": "uk/ukpga/2003/14/s58C",
+ "version": "current",
+ "source_sha256": "131fe3a202760e5d071860bd659c10226b680a7a961f6a7fb9e4631dc19a231b",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "Regulations under section 58B must include provision about the method of claiming relief, including documents or information to be provided.",
+    "quote": "shall include provision about the method of claiming relief (including documents or information to be provided)"
+   },
+   {
+    "requirement": "Regulations under section 58B must specifically include provision about the evidence to be adduced to show that a dwelling satisfies the definition of zero-carbon home.",
+    "quote": "shall include provision about the evidence to be adduced to show that a dwelling satisfies the definition of “zero-carbon home”"
+   },
+   {
+    "requirement": "Regulations made under subsection (1)(b) may refer to a scheme or process established by or for the purposes of an enactment about building.",
+    "quote": "refer to a scheme or process established by or for the purposes of an enactment about building"
+   },
+   {
+    "requirement": "Regulations made under subsection (1)(b) may establish or provide for the establishment of a scheme or process of certification.",
+    "quote": "establish or provide for the establishment of a scheme or process of certification"
+   },
+   {
+    "requirement": "Regulations made under subsection (1)(b) may specify, or provide for the approval of, one or more schemes or processes for certifying energy efficiency.",
+    "quote": "specify, or provide for the approval of, one or more schemes or processes for certifying energy efficiency"
+   },
+   {
+    "requirement": "Regulations made under subsection (1)(b) may provide for the charging of fees of a reasonable amount in respect of services provided as part of a scheme or process of certification.",
+    "quote": "provide for the charging of fees of a reasonable amount in respect of services provided as part of a scheme or process of certification"
+   },
+   {
+    "requirement": "In defining zero-carbon home, regulations under section 58B may include requirements that may be satisfied in relation to a dwelling either by features of the building which, or part of which, constitutes the dwelling, or by other installations or utilities.",
+    "quote": "In defining “zero-carbon home” regulations under section 58B may include requirements which may be satisfied in relation to a dwelling either— (a) by features of the building which, or part of which, constitutes the dwelling, or (b) by other installations or utilities"
+   },
+   {
+    "requirement": "Regulations under section 58B may modify the effect of section 108, or another provision of this Part about linked transactions, in relation to a set of transactions where at least one is the first acquisition of a dwelling which is a zero-carbon home.",
+    "quote": "Regulations under section 58B may modify the effect of section 108, or another provision of this Part about linked transactions, in relation to a set of transactions of which at least one is the first acquisition of a dwelling which is a zero-carbon home"
+   },
+   {
+    "requirement": "A transaction must be disregarded in determining whether section 116(7) applies, and in the application of section 116(7), if or in so far as it involves the first acquisition of a dwelling which is a zero-carbon home.",
+    "quote": "a transaction shall be disregarded if or in so far as it involves the first acquisition of a dwelling which is a zero-carbon home"
+   },
+   {
+    "requirement": "Regulations under section 58B may provide for relief to be wholly or partly withdrawn if a dwelling ceases to be a zero-carbon home.",
+    "quote": "may provide for relief to be wholly or partly withdrawn if a dwelling ceases to be a zero-carbon home"
+   },
+   {
+    "requirement": "Regulations under section 58B may provide for the reduction or withholding of relief where a person acquires more than one zero-carbon home within a specified period.",
+    "quote": "may provide for the reduction or withholding of relief where a person acquires more than one zero-carbon home within a specified period"
+   },
+   {
+    "requirement": "Regulations under section 58B may include provision for relief to be granted in respect of acquisitions occurring during a specified period before the regulations come into force.",
+    "quote": "Regulations under section 58B may include provision for relief to be granted in respect of acquisitions occurring during a specified period before the regulations come into force"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "the number of schemes or processes for certifying energy efficiency that regulations may specify or provide approval for",
+    "value": "one or more",
+    "quote": "one or more schemes or processes for certifying energy efficiency"
+   },
+   {
+    "what": "the minimum number of transactions in a set that must be the first acquisition of a dwelling which is a zero-carbon home for regulations to modify the effect of section 108 or another linked transactions provision",
+    "value": "at least one",
+    "quote": "at least one is the first acquisition of a dwelling which is a zero-carbon home"
+   },
+   {
+    "what": "the number of zero-carbon homes acquired by a person within a specified period that may trigger the reduction or withholding of relief",
+    "value": "more than one",
+    "quote": "acquires more than one zero-carbon home within a specified period"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "Regulations under section 58B must include provision about the method of claiming relief, including documents or information to be provided.",
+   "quote": "shall include provision about the method of claiming relief (including documents or information to be provided)"
+  },
+  {
+   "requirement": "Regulations under section 58B must specifically include provision about the evidence to be adduced to show that a dwelling satisfies the definition of zero-carbon home.",
+   "quote": "shall include provision about the evidence to be adduced to show that a dwelling satisfies the definition of “zero-carbon home”"
+  },
+  {
+   "requirement": "Regulations made under subsection (1)(b) may refer to a scheme or process established by or for the purposes of an enactment about building.",
+   "quote": "refer to a scheme or process established by or for the purposes of an enactment about building"
+  },
+  {
+   "requirement": "Regulations made under subsection (1)(b) may establish or provide for the establishment of a scheme or process of certification.",
+   "quote": "establish or provide for the establishment of a scheme or process of certification"
+  },
+  {
+   "requirement": "Regulations made under subsection (1)(b) may specify, or provide for the approval of, one or more schemes or processes for certifying energy efficiency.",
+   "quote": "specify, or provide for the approval of, one or more schemes or processes for certifying energy efficiency"
+  },
+  {
+   "requirement": "Regulations made under subsection (1)(b) may provide for the charging of fees of a reasonable amount in respect of services provided as part of a scheme or process of certification.",
+   "quote": "provide for the charging of fees of a reasonable amount in respect of services provided as part of a scheme or process of certification"
+  },
+  {
+   "requirement": "In defining zero-carbon home, regulations under section 58B may include requirements that may be satisfied in relation to a dwelling either by features of the building which, or part of which, constitutes the dwelling, or by other installations or utilities.",
+   "quote": "In defining “zero-carbon home” regulations under section 58B may include requirements which may be satisfied in relation to a dwelling either— (a) by features of the building which, or part of which, constitutes the dwelling, or (b) by other installations or utilities"
+  },
+  {
+   "requirement": "Regulations under section 58B may modify the effect of section 108, or another provision of this Part about linked transactions, in relation to a set of transactions where at least one is the first acquisition of a dwelling which is a zero-carbon home.",
+   "quote": "Regulations under section 58B may modify the effect of section 108, or another provision of this Part about linked transactions, in relation to a set of transactions of which at least one is the first acquisition of a dwelling which is a zero-carbon home"
+  },
+  {
+   "requirement": "A transaction must be disregarded in determining whether section 116(7) applies, and in the application of section 116(7), if or in so far as it involves the first acquisition of a dwelling which is a zero-carbon home.",
+   "quote": "a transaction shall be disregarded if or in so far as it involves the first acquisition of a dwelling which is a zero-carbon home"
+  },
+  {
+   "requirement": "Regulations under section 58B may provide for relief to be wholly or partly withdrawn if a dwelling ceases to be a zero-carbon home.",
+   "quote": "may provide for relief to be wholly or partly withdrawn if a dwelling ceases to be a zero-carbon home"
+  },
+  {
+   "requirement": "Regulations under section 58B may provide for the reduction or withholding of relief where a person acquires more than one zero-carbon home within a specified period.",
+   "quote": "may provide for the reduction or withholding of relief where a person acquires more than one zero-carbon home within a specified period"
+  },
+  {
+   "requirement": "Regulations under section 58B may include provision for relief to be granted in respect of acquisitions occurring during a specified period before the regulations come into force.",
+   "quote": "Regulations under section 58B may include provision for relief to be granted in respect of acquisitions occurring during a specified period before the regulations come into force"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 12,
+  "elements_verified": 12,
+  "thresholds_proposed": 3,
+  "thresholds_verified": 0
+ }
+}

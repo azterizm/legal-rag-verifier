@@ -1,0 +1,77 @@
+{
+ "key": "uk/ukpga/1975/63/s13@current",
+ "section": "uk/ukpga/1975/63/s13",
+ "version": "current",
+ "source_sha256": "84cf911c92ade6b264f7f61e6fa991aa5af0123ce58569ee24302abf4b9b1bc4",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "42197650339439fe7b3f8f0f96d7b87f60ffca8dbb3f37e90fdc9ae2dd4883f6",
+ "attempts": 1,
+ "raw": {
+  "elements": [
+   {
+    "requirement": "The court's powers under section 10 or section 11 of the Inheritance (Provision for Family and Dependants) Act 1975 to order a trustee to provide a sum of money or other property are subject to statutory limitation, in addition to any provision regarding the deduction of capital transfer tax in an application under section 10, where an application is made for an order under section 10 in respect of a disposition made by the deceased to a trustee or an order under section 11 in respect of any payment made or property transferred in accordance with a contract made by the deceased to a trustee.",
+    "quote": "the powers of the court under the said section 10 or 11 to order that trustee to provide a sum of money or other property shall be subject to the following limitation"
+   },
+   {
+    "requirement": "Where an application is made in respect of a disposition or contractual payment consisting of the payment of money to a trustee, the amount of any sum of money or the value of any property ordered to be provided must not exceed the aggregate of so much of that money as is in the trustee's hands at the date of the order and the value at that date of any property representing or derived from that money which is in the trustee's hands at that date.",
+    "quote": "shall not exceed the aggregate of so much of that money as is at the date of the order in the hands of the trustee and the value at that date of any property which represents that money or is derived therefrom and is at that date in the hands of the trustee"
+   },
+   {
+    "requirement": "Where an application is made in respect of a disposition or contractual transfer consisting of the transfer of property other than a sum of money to a trustee, the amount of any sum of money or the value of any property ordered to be provided must not exceed the aggregate of the value at the date of the order of so much of that property as is in the trustee's hands at that date and the value at that date of any property representing or derived from that property which is in the trustee's hands at that date.",
+    "quote": "shall not exceed the aggregate of the value at the date of the order of so much of that property as is at that date in the hands of the trustee and the value at that date of any property which represents the first-mentioned property or is derived therefrom and is at that date in the hands of the trustee"
+   },
+   {
+    "requirement": "A trustee is not liable for having distributed any money or other property on the ground that the trustee ought to have taken into account the possibility that an application would be made under section 10 or section 11, where such an application is made in respect of a disposition to the trustee or in respect of a payment made or property transferred to the trustee pursuant to a contract.",
+    "quote": "the trustee shall not be liable for having distributed any money or other property on the ground that he ought to have taken into account the possibility that such an application would be made"
+   },
+   {
+    "requirement": "Where an application under section 10 or section 11 is made in respect of a disposition to a trustee or in respect of a payment made or property transferred to a trustee in accordance with a contract, any reference in section 10 or section 11 to the donee must be construed as including a reference to the trustee or trustees for the time being of the trust in question.",
+    "quote": "any reference in the said section 10 or 11 to the donee shall be construed as including a reference to the trustee or trustees for the time being of the trust in question"
+   },
+   {
+    "requirement": "Where an application under section 10 or section 11 is made in respect of a disposition to a trustee or in respect of a payment made or property transferred to a trustee in accordance with a contract, any reference in section 13(1) or section 13(2) of the Inheritance (Provision for Family and Dependants) Act 1975 to a trustee must be construed as including a reference to the trustee or trustees for the time being of the trust in question.",
+    "quote": "any reference in subsection (1) or (2) above to a trustee shall be construed in the same way"
+   }
+  ],
+  "thresholds": [
+   {
+    "what": "The relevant date at which the money or property in the trustee's hands must be held and valued for the purpose of limiting the court's order",
+    "value": "the date of the order",
+    "quote": "at the date of the order in the hands of the trustee"
+   }
+  ]
+ },
+ "elements": [
+  {
+   "requirement": "The court's powers under section 10 or section 11 of the Inheritance (Provision for Family and Dependants) Act 1975 to order a trustee to provide a sum of money or other property are subject to statutory limitation, in addition to any provision regarding the deduction of capital transfer tax in an application under section 10, where an application is made for an order under section 10 in respect of a disposition made by the deceased to a trustee or an order under section 11 in respect of any payment made or property transferred in accordance with a contract made by the deceased to a trustee.",
+   "quote": "the powers of the court under the said section 10 or 11 to order that trustee to provide a sum of money or other property shall be subject to the following limitation"
+  },
+  {
+   "requirement": "Where an application is made in respect of a disposition or contractual payment consisting of the payment of money to a trustee, the amount of any sum of money or the value of any property ordered to be provided must not exceed the aggregate of so much of that money as is in the trustee's hands at the date of the order and the value at that date of any property representing or derived from that money which is in the trustee's hands at that date.",
+   "quote": "shall not exceed the aggregate of so much of that money as is at the date of the order in the hands of the trustee and the value at that date of any property which represents that money or is derived therefrom and is at that date in the hands of the trustee"
+  },
+  {
+   "requirement": "Where an application is made in respect of a disposition or contractual transfer consisting of the transfer of property other than a sum of money to a trustee, the amount of any sum of money or the value of any property ordered to be provided must not exceed the aggregate of the value at the date of the order of so much of that property as is in the trustee's hands at that date and the value at that date of any property representing or derived from that property which is in the trustee's hands at that date.",
+   "quote": "shall not exceed the aggregate of the value at the date of the order of so much of that property as is at that date in the hands of the trustee and the value at that date of any property which represents the first-mentioned property or is derived therefrom and is at that date in the hands of the trustee"
+  },
+  {
+   "requirement": "A trustee is not liable for having distributed any money or other property on the ground that the trustee ought to have taken into account the possibility that an application would be made under section 10 or section 11, where such an application is made in respect of a disposition to the trustee or in respect of a payment made or property transferred to the trustee pursuant to a contract.",
+   "quote": "the trustee shall not be liable for having distributed any money or other property on the ground that he ought to have taken into account the possibility that such an application would be made"
+  },
+  {
+   "requirement": "Where an application under section 10 or section 11 is made in respect of a disposition to a trustee or in respect of a payment made or property transferred to a trustee in accordance with a contract, any reference in section 10 or section 11 to the donee must be construed as including a reference to the trustee or trustees for the time being of the trust in question.",
+   "quote": "any reference in the said section 10 or 11 to the donee shall be construed as including a reference to the trustee or trustees for the time being of the trust in question"
+  },
+  {
+   "requirement": "Where an application under section 10 or section 11 is made in respect of a disposition to a trustee or in respect of a payment made or property transferred to a trustee in accordance with a contract, any reference in section 13(1) or section 13(2) of the Inheritance (Provision for Family and Dependants) Act 1975 to a trustee must be construed as including a reference to the trustee or trustees for the time being of the trust in question.",
+   "quote": "any reference in subsection (1) or (2) above to a trustee shall be construed in the same way"
+  }
+ ],
+ "thresholds": [],
+ "audit": {
+  "elements_proposed": 6,
+  "elements_verified": 6,
+  "thresholds_proposed": 1,
+  "thresholds_verified": 0
+ }
+}
