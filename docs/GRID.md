@@ -956,7 +956,7 @@ test set (checked in code). Gemini wrote 3 questions per source (1,416; prompt s
 `distill_data.QUESTION_SHA`); Qwen 2.5 7B wrote 2,832 answers on an L4 (with source and closed-book); 5,393 sentences
 gave 4,433 unique clauses that reach the entailment check. Gemini labelled all 4,433 per clause, none failed:
 1,850 + 197 not stated, 1,755 + 172 supported, 413 + 46 contradicted (train + validation). Train 4,018 examples from
-425 sources, validation 415 from 47 sources.
+426 sources, validation 415 from 46 sources.
 
 Opus 5.5 labelled a random 500 of them: it agreed with Gemini on 410 (82 %). Of the 90 differences, Gemini said not
 stated where Opus said contradicted 47 times and supported 36 times; the other 7 split 5 and 2. So Gemini's labels
