@@ -182,16 +182,22 @@ def blind(items: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]:
 
 
 def assert_prompts_clean(items: Sequence[Mapping[str, Any]]) -> int:
-    """No question, answer or graded sentence appears in any cached prompt."""
-    texts = {i["query"] for i in items} | {i["sentence"] for i in items}
-    prompts = [
-        json.loads(p.read_text(encoding="utf-8"))["prompt"]
-        for p in (OUT / "gemini-3.8-flash-high").glob("sw_*.json")
-    ]
-    leaks = [t for t in texts if len(t) > 20 and any(t in p for p in prompts)]  # noqa: PLR2004
-    if leaks:
-        raise RuntimeError(f"a question or answer is in a prompt: {leaks[:3]}")
-    return len(prompts)
+    """Each stored prompt is the frozen template filled with its source's documentation and
+    nothing else, and no question appears in it. (Answer sentences that copy the documentation
+    word for word are in it only through the documentation.)"""
+    import normalise_sources as ns  # noqa: PLC0415
+
+    sources = ns.software_sources()
+    queries = {i["query"] for i in items}
+    bad = []
+    for path in (OUT / ns.MODEL).glob("sw_*.json"):
+        entry = json.loads(path.read_text(encoding="utf-8"))
+        expected = ns.USER.format(source=ns.render(sources[entry["source"]]))
+        if entry["prompt"] != expected or any(q in entry["prompt"] for q in queries):
+            bad.append(entry["source"])
+    if bad:
+        raise RuntimeError(f"a prompt holds more than its documentation: {bad}")
+    return len(list((OUT / ns.MODEL).glob("sw_*.json")))
 
 
 # ---------------------------------------------------------------------- scoring (laptop)
