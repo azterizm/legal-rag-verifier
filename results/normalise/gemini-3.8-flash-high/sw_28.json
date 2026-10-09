@@ -1,0 +1,134 @@
+{
+ "source": "sw-28",
+ "source_sha256": "6cf4891a784251788094b88f2d27220fac7745a79750ab1df5f042ef194bb355",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] Kubernetes documentation, Deployments, Max Unavailable\n<<<\n.spec.strategy.rollingUpdate.maxUnavailable is an optional field that specifies the maximum number of Pods that can be unavailable during the update process. The value can be an absolute number (for example, 5) or a percentage of desired Pods (for example, 10%). The absolute number is calculated from percentage by rounding down. The value cannot be 0 if .spec.strategy.rollingUpdate.maxSurge is 0. The default value is 25%.\n>>>\n\n[2] Kubernetes documentation, Deployments, Max Surge\n<<<\n.spec.strategy.rollingUpdate.maxSurge is an optional field that specifies the maximum number of Pods that can be created over the desired number of Pods. The value can be an absolute number (for example, 5) or a percentage of desired Pods (for example, 10%). The value cannot be 0 if maxUnavailable is 0. The absolute number is calculated from the percentage by rounding up. The default value is 25%.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": ".spec.strategy.rollingUpdate.maxUnavailable is an optional field that specifies the maximum number of Pods that can be unavailable during the update process.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     ".spec.strategy.rollingUpdate.maxUnavailable is an optional field that specifies the maximum number of Pods that can be unavailable during the update process."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The value of .spec.strategy.rollingUpdate.maxUnavailable can be an absolute number or a percentage of desired Pods.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The value can be an absolute number",
+     "or a percentage of desired Pods"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The absolute number for .spec.strategy.rollingUpdate.maxUnavailable is calculated from percentage by rounding down.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The absolute number is calculated from percentage by rounding down."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The value of .spec.strategy.rollingUpdate.maxUnavailable cannot be 0 if .spec.strategy.rollingUpdate.maxSurge is 0.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The value cannot be 0 if .spec.strategy.rollingUpdate.maxSurge is 0."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The default value of .spec.strategy.rollingUpdate.maxUnavailable is 25%.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The default value is 25%."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The maximum number of Pods that can be unavailable during the update process defaults to 25%.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     ".spec.strategy.rollingUpdate.maxUnavailable is an optional field that specifies the maximum number of Pods that can be unavailable during the update process.",
+     "The default value is 25%."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": ".spec.strategy.rollingUpdate.maxSurge is an optional field that specifies the maximum number of Pods that can be created over the desired number of Pods.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     ".spec.strategy.rollingUpdate.maxSurge is an optional field that specifies the maximum number of Pods that can be created over the desired number of Pods."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The value of .spec.strategy.rollingUpdate.maxSurge can be an absolute number or a percentage of desired Pods.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "The value can be an absolute number",
+     "or a percentage of desired Pods"
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The value of .spec.strategy.rollingUpdate.maxSurge cannot be 0 if maxUnavailable is 0.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "The value cannot be 0 if maxUnavailable is 0."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The absolute number for .spec.strategy.rollingUpdate.maxSurge is calculated from the percentage by rounding up.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "The absolute number is calculated from the percentage by rounding up."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The default value of .spec.strategy.rollingUpdate.maxSurge is 25%.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "The default value is 25%."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The maximum number of Pods that can be created over the desired number of Pods defaults to 25%.",
+    "derived": true,
+    "passage": 2,
+    "quotes": [
+     ".spec.strategy.rollingUpdate.maxSurge is an optional field that specifies the maximum number of Pods that can be created over the desired number of Pods.",
+     "The default value is 25%."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The value of .spec.strategy.rollingUpdate.maxSurge cannot be 0 if .spec.strategy.rollingUpdate.maxUnavailable is 0.",
+    "derived": true,
+    "passage": 2,
+    "quotes": [
+     "The value cannot be 0 if maxUnavailable is 0.",
+     ".spec.strategy.rollingUpdate.maxUnavailable"
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

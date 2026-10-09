@@ -1,0 +1,87 @@
+{
+ "source": "sw-24",
+ "source_sha256": "6cc555ef5e391a7780313faebce89498b6fbd5bac372c74395eafedbc1f07a6c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] The Rust Programming Language, 3.2 Data Types, Integer Overflow\n<<<\nWhen you’re compiling in debug mode, Rust includes checks for integer overflow that cause your program to panic at runtime if this behavior occurs.\n\nWhen you’re compiling in release mode with the --release flag, Rust does not include checks for integer overflow that cause panics. Instead, if overflow occurs, Rust performs two’s complement wrapping. In short, values greater than the maximum value the type can hold “wrap around” to the minimum of the values the type can hold. In the case of a u8, the value 256 becomes 0, the value 257 becomes 1, and so on. The program won’t panic, but the variable will have a value that probably isn’t what you were expecting it to have. Relying on integer overflow’s wrapping behavior is considered an error.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "When compiling in debug mode, Rust includes checks for integer overflow that cause the program to panic at runtime if integer overflow occurs.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "When you’re compiling in debug mode, Rust includes checks for integer overflow that cause your program to panic at runtime if this behavior occurs."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "When compiling in release mode with the --release flag, Rust does not include checks for integer overflow that cause panics.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "When you’re compiling in release mode with the --release flag, Rust does not include checks for integer overflow that cause panics."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "If integer overflow occurs when compiling in release mode with the --release flag, Rust performs two’s complement wrapping.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "When you’re compiling in release mode with the --release flag",
+     "Instead, if overflow occurs, Rust performs two’s complement wrapping."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Under two’s complement wrapping, values greater than the maximum value the type can hold wrap around to the minimum of the values the type can hold.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "two’s complement wrapping. In short, values greater than the maximum value the type can hold “wrap around” to the minimum of the values the type can hold."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "In the case of a u8, two’s complement wrapping causes the value 256 to become 0 and the value 257 to become 1.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "In the case of a u8, the value 256 becomes 0, the value 257 becomes 1, and so on."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "When two’s complement wrapping occurs, the program will not panic, but the variable will have an unexpected value.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "The program won’t panic, but the variable will have a value that probably isn’t what you were expecting it to have."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Relying on the wrapping behavior of integer overflow is considered an error.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Relying on integer overflow’s wrapping behavior is considered an error."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "When compiling in release mode with the --release flag, if integer overflow occurs, Rust causes values greater than the maximum value the type can hold to wrap around to the minimum of the values the type can hold.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "When you’re compiling in release mode with the --release flag",
+     "if overflow occurs, Rust performs two’s complement wrapping",
+     "values greater than the maximum value the type can hold “wrap around” to the minimum of the values the type can hold"
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

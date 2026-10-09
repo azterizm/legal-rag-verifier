@@ -1,0 +1,31 @@
+{
+ "source": "sw-17",
+ "source_sha256": "6bfe7796e4e309f26eaa52b95b0412f13d7fdbcfd25645ba84ba5232aba1bb65",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] Python 3 documentation, Built-in Types, Mapping Types — dict\n<<<\nChanged in version 3.7: Dictionary order is guaranteed to be insertion order. This behavior was an implementation detail of CPython from 3.6.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "In Python, dictionary order is guaranteed to be insertion order starting in version 3.7.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Changed in version 3.7: Dictionary order is guaranteed to be insertion order."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Dictionary order being insertion order was an implementation detail of CPython from version 3.6.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Dictionary order is guaranteed to be insertion order.",
+     "This behavior was an implementation detail of CPython from 3.6."
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "source": "sw-31",
+ "source_sha256": "d4e7a092385444cb535fe564ff433b994b9790a3584030b500e330252b1b467d",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] Semantic Versioning 2.0.0, item 4\n<<<\nMajor version zero (0.y.z) is for initial development. Anything MAY change at any time. The public API SHOULD NOT be considered stable.\n>>>\n\n[2] Semantic Versioning 2.0.0, item 8\n<<<\nMajor version X (X.y.z | X > 0) MUST be incremented if any backward incompatible changes are introduced to the public API. It MAY also include minor and patch level changes. Patch and minor versions MUST be reset to 0 when major version is incremented.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "Major version zero (0.y.z) is for initial development.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Major version zero (0.y.z) is for initial development."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Anything may change at any time during major version zero (0.y.z).",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Major version zero (0.y.z)",
+     "Anything MAY change at any time."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The public API should not be considered stable during major version zero (0.y.z).",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Major version zero (0.y.z)",
+     "The public API SHOULD NOT be considered stable."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Major version X (X.y.z | X > 0) must be incremented if any backward incompatible changes are introduced to the public API.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "Major version X (X.y.z | X > 0) MUST be incremented if any backward incompatible changes are introduced to the public API."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Major version X (X.y.z | X > 0) may also include minor and patch level changes.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "Major version X (X.y.z | X > 0)",
+     "MAY also include minor and patch level changes."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Patch and minor versions must be reset to 0 when major version is incremented.",
+    "derived": false,
+    "passage": 2,
+    "quotes": [
+     "Patch and minor versions MUST be reset to 0 when major version is incremented."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "The mandate to increment the major version upon introducing backward incompatible changes to the public API applies only to major version X where X is greater than 0 (X > 0), and does not apply to initial development in major version zero (0.y.z).",
+    "derived": true,
+    "passage": 2,
+    "quotes": [
+     "Major version zero (0.y.z) is for initial development.",
+     "Major version X (X.y.z | X > 0) MUST be incremented if any backward incompatible changes are introduced to the public API."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "When major version X (X.y.z | X > 0) is incremented because backward incompatible changes are introduced to the public API, patch and minor versions must be reset to 0.",
+    "derived": true,
+    "passage": 2,
+    "quotes": [
+     "Major version X (X.y.z | X > 0) MUST be incremented if any backward incompatible changes are introduced to the public API.",
+     "Patch and minor versions MUST be reset to 0 when major version is incremented."
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}

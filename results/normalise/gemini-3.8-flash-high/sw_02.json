@@ -1,0 +1,68 @@
+{
+ "source": "sw-02",
+ "source_sha256": "32f1b220a095c086e0235435a762938f7580c6ac2f80de40ab12373e0b5c480c",
+ "model": "gemini-3.8-flash-high",
+ "prompt_sha256": "10f6251f4b36fa018e4c2e686897db9c193f865a885978661ed392e964d8f96a",
+ "attempts": 1,
+ "prompt": "Documentation, as numbered passages:\n\n[1] RFC 9110, section 9.2.2 (Idempotent Methods)\n<<<\nA request method is considered \"idempotent\" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request. Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent.\n\nIdempotent methods are distinguished because the request can be repeated automatically if a communication failure occurs before the client is able to read the server's response.\n\nA client SHOULD NOT automatically retry a request with a non-idempotent method unless it has some means to know that the request semantics are actually idempotent, regardless of the method, or some means to detect that the original request was never applied.\n>>>\n\nGo through the passages one by one. For each passage, write:\n1. each rule, condition, exception and default it states, restated as a standalone plain sentence\n   (\"derived\": false);\n2. every fact a careful reader would work out from it that the text does not say in so many words\n   (\"derived\": true). Look for each of these:\n   - a default applied: when a result depends on a parameter that has a default, state the result\n     at the default;\n   - a definition substituted: when a term is defined, state the fact with the definition in place;\n   - a reference joined: when a passage refers to something stated in another passage, state the\n     combined fact;\n   - a threshold restated: \"not below the age of sixty\" is \"aged 60 or over\";\n   - a unit equivalence: a quantity in the other unit a reader may use, when both figures are in\n     the text or follow from it by arithmetic;\n   - arithmetic done: the result of any calculation the text implies, such as a maximum, a total\n     or a difference.\n   Examples (not from this documentation): \"retries defaults to 3\" and \"each retry waits 2\n   seconds\" give \"By default the client waits 6 seconds in total across retries\" (calc \"3 * 2\");\n   \"size is in blocks\" and \"a block is 512 bytes\" give \"A size of 4 is 2048 bytes\" only if 4 is in\n   the text (calc \"4 * 512\").\nEach sentence names what it applies to (never \"it\" or \"this parameter\" alone).\n\nReturn JSON: {\"facts\": [{\"fact\": the sentence, \"derived\": true or false, \"passage\": the number of\nthe passage it follows from, \"quotes\": [short phrases copied EXACTLY from the documentation that\nsupport it], \"calc\": an arithmetic expression using only numbers that appear in the quotes and\n+ - * / ( ), whose result is a number in the fact, or \"\" when there is no calculation}]}\nEvery number, date and version in a fact must appear in one of its quotes or be the result of\nits calc.",
+ "raw": {
+  "facts": [
+   {
+    "fact": "A request method is considered idempotent if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "A request method is considered \"idempotent\" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Of the request methods defined by the specification, PUT, DELETE, and safe request methods are idempotent.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A request using an idempotent method can be repeated automatically if a communication failure occurs before the client is able to read the server's response.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "Idempotent methods are distinguished because the request can be repeated automatically if a communication failure occurs before the client is able to read the server's response."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A client should not automatically retry a request with a non-idempotent method unless the client has some means to know that the request semantics are actually idempotent, regardless of the method, or some means to detect that the original request was never applied.",
+    "derived": false,
+    "passage": 1,
+    "quotes": [
+     "A client SHOULD NOT automatically retry a request with a non-idempotent method unless it has some means to know that the request semantics are actually idempotent, regardless of the method, or some means to detect that the original request was never applied."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "Of the request methods defined by the specification, the intended effect on the server of multiple identical requests is the same as the effect for a single such request when using PUT, DELETE, or safe request methods.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "A request method is considered \"idempotent\" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request.",
+     "Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent."
+    ],
+    "calc": ""
+   },
+   {
+    "fact": "A request using PUT, DELETE, or a safe request method can be repeated automatically if a communication failure occurs before the client is able to read the server's response.",
+    "derived": true,
+    "passage": 1,
+    "quotes": [
+     "PUT, DELETE, and safe request methods are idempotent.",
+     "Idempotent methods are distinguished because the request can be repeated automatically if a communication failure occurs before the client is able to read the server's response."
+    ],
+    "calc": ""
+   }
+  ]
+ }
+}
