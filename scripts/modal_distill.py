@@ -205,6 +205,22 @@ JUDGES: dict[str, dict[str, Any]] = {
         },
         "template": {"enable_thinking": False},
     },
+    "qwen27-low": {
+        "model": QWEN27,
+        "revision": QWEN27_REVISION,
+        "gpu": "H100",
+        "args": ["--reasoning-parser", "qwen3", *CONTEXT],
+        # stop 42's settings: thinking on, low effort, the card's sampling
+        "sampling": {
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "top_k": 20,
+            "min_p": 0.0,
+            "max_tokens": 16384,
+            "seed": 0,
+        },
+        "template": {"enable_thinking": True, "reasoning_effort": "low"},
+    },
     "k2-low": {
         "model": K2,
         "revision": K2_REVISION,
@@ -268,6 +284,11 @@ class Judge(_JudgeServer):
 
 @app.cls(gpu="L40S", **_JUDGE_OPTIONS)
 class JudgeL40S(_JudgeServer):
+    name: str = modal.parameter()
+
+
+@app.cls(gpu="H100", **_JUDGE_OPTIONS)
+class JudgeH100(_JudgeServer):
     name: str = modal.parameter()
 
 
@@ -359,7 +380,7 @@ def baselines(name: str, sequential: int = 20) -> None:
     if not todo and not seq_todo:
         return
     ledger.check(spec["gpu"], 3600)
-    judge = (JudgeL40S if spec["gpu"] == "L40S" else Judge)(name=name)
+    judge = JUDGE_CLASSES[spec["gpu"]](name=name)
     items = list(todo.items())
     chunks = [dict(items[i : i + CHUNK]) for i in range(0, len(items), CHUNK)]
     startup_recorded = False
@@ -714,4 +735,97 @@ def student_eval(
             seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
             startup_recorded = True
             ledger.record(f"stop46 {label_name}", "L40S", seconds, f"{len(out['labels'])}")
+    print(f"Modal spent ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 47: the fresh test
+
+JUDGE_CLASSES = {"L4": Judge, "L40S": JudgeL40S, "H100": JudgeH100}
+classifier_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install("torch==2.14.1", "transformers==5.18.0")
+    .env({"PYTHONPATH": "/app/src", "HF_HOME": "/hf"})
+    .add_local_dir(ROOT / "src", "/app/src")
+)
+V0_MODEL = "cross-encoder/nli-deberta-v3-base"
+V0_REVISION = "6c749ce3425cd33b46d187e45b92bbf96ee12ec7"
+
+
+@app.function(image=classifier_image, gpu="L4", timeout=3600, volumes={"/hf": weights})
+def v0_table(pairs: dict[str, list[str]]) -> dict[str, Any]:
+    """V0's probabilities per (candidate, clause), with the verifier's own chunking."""
+    from legal_rag_verifier.nli import SentenceNLIVerifier  # noqa: PLC0415
+
+    scorer = SentenceNLIVerifier(V0_MODEL, "cuda", revision=V0_REVISION)
+    by_clause: dict[str, list[str]] = {}
+    for key, (_, clause) in pairs.items():
+        by_clause.setdefault(clause, []).append(key)
+    t0 = time.time()
+    table: dict[str, list[float]] = {}
+    for clause, keys in by_clause.items():
+        for k, p in zip(keys, scorer.score([pairs[k][0] for k in keys], clause), strict=True):
+            table[k] = [round(p.entailment, 6), round(p.neutral, 6), round(p.contradiction, 6)]
+    return {"model_id": scorer.model_id, "table": table, "seconds": time.time() - t0}
+
+
+def _fresh_local() -> Any:
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import auditor_judge  # noqa: PLC0415
+    import fresh_eval  # noqa: PLC0415
+    import modal_ledger  # noqa: PLC0415
+
+    return auditor_judge, fresh_eval, modal_ledger
+
+
+def _fresh_append(fe: Any, name: str, labels: dict[str, Any]) -> None:
+    path = fe.LABELS / f"{name}.jsonl"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        for sha, label in labels.items():
+            f.write(json.dumps({"sha": sha, **label}, ensure_ascii=False) + "\n")
+
+
+@app.local_entrypoint()
+def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
+    """Every fresh per-clause prompt to each named judge (``k2-student`` for the student).
+    Resumable: a rerun asks only prompts with no label or an error."""
+    aj, fe, ledger = _fresh_local()
+    us, _, rec = fe.recorded()
+    asked = aj.requests(rec)
+    fe.assert_blind(us, asked)
+    for name in names.split(","):
+        if name == "v0":
+            path = fe.OUT / "scores" / "v0.json"
+            if path.exists():
+                continue
+            ledger.check("L4", 1800)
+            t0 = time.time()
+            out = v0_table.remote(aj.pairs(rec))
+            ledger.record("stop47 fresh v0", "L4", time.time() - t0)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(out["table"], sort_keys=True) + "\n", encoding="utf-8")
+            print(f"v0: {len(out['table'])} pairs, {out['model_id']}", flush=True)
+            continue
+        have = {k for k, v in fe.read(name).items() if v["label"] != "error"}
+        items = [(k, v) for k, v in asked.items() if k not in have]
+        print(f"{name}: {len(items)} to judge", flush=True)
+        if not items:
+            continue
+        if name.endswith("-student"):
+            gpu = "L40S"
+            server = StudentL40S(path=f"/runs/{name.removesuffix('-student')}/run/merged")
+        else:
+            gpu = JUDGES[name]["gpu"]
+            server = JUDGE_CLASSES[gpu](name=name)
+        ledger.check(gpu, 3600)
+        chunks = [dict(items[i : i + CHUNK]) for i in range(0, len(items), CHUNK)]
+        startup_recorded = False
+        for out in server.judge.map(chunks, kwargs={"workers": WORKERS}, return_exceptions=True):
+            if isinstance(out, Exception):
+                print(f"{name}: chunk failed, retried on the next run: {out!r}", flush=True)
+                continue
+            _fresh_append(fe, name, out["labels"])
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            ledger.record(f"stop47 fresh {name}", gpu, seconds, f"{len(out['labels'])}")
     print(f"Modal spent ${ledger.spent():.2f}")
