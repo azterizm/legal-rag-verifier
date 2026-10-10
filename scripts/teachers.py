@@ -29,8 +29,13 @@ import auditor_judge as aj  # type: ignore[import-not-found]  # noqa: E402
 import router  # type: ignore[import-not-found]  # noqa: E402
 
 OUT = ROOT / "results/distill"
-TEACHERS = {"gemini": router.GEMINI, "opus46": router.OPUS46, "opus55": router.OPUS55}
-WORKERS = {"gemini": 6, "opus46": 2, "opus55": 2}
+TEACHERS = {
+    "gemini": router.GEMINI,
+    "opus46": router.OPUS46,
+    "opus55": router.OPUS55,
+    "pro": router.PRO,
+}
+WORKERS = {"gemini": 6, "opus46": 2, "opus55": 2, "pro": 4}
 _lock = threading.Lock()
 
 
@@ -58,8 +63,8 @@ def done_batches(name: str) -> set[str]:
     return {r["batch"] for r in rows if r["ok"]}
 
 
-def read_labels(name: str) -> dict[str, dict[str, Any]]:
-    path = label_path(name)
+def read_labels(name: str, path: Path | None = None) -> dict[str, dict[str, Any]]:
+    path = path or label_path(name)
     if not path.exists():
         return {}
     return {r["sha"]: r for r in map(json.loads, path.read_text(encoding="utf-8").splitlines())}
@@ -116,10 +121,13 @@ def label(name: str, teacher: str, todo_batches: Sequence[Mapping[str, Any]]) ->
     return counts
 
 
-def label_clauses(name: str, teacher: str, requests: Mapping[str, str]) -> dict[str, int]:
+def label_clauses(
+    name: str, teacher: str, requests: Mapping[str, str], path: Path | None = None
+) -> dict[str, int]:
     """Per-clause labels on the stop 42 prompt, written as each returns. A rerun asks only the
     prompts with no label yet or an error; it stops scheduling at a capped model's cap."""
-    have = {k for k, v in read_labels(name).items() if v["label"] in aj.LABELS}
+    path = path or label_path(name)
+    have = {k for k, v in read_labels(name, path).items() if v["label"] in aj.LABELS}
     todo = {k: v for k, v in requests.items() if k not in have}
     print(f"{name}: {len(requests)} prompts, {len(have)} done, {len(todo)} to ask", flush=True)
     chat = router_chat(TEACHERS[teacher])
@@ -139,8 +147,8 @@ def label_clauses(name: str, teacher: str, requests: Mapping[str, str]) -> dict[
         ok = result.get("label") in aj.LABELS
         counts["ok" if ok else "failed"] += 1
         with _lock:
-            label_path(name).parent.mkdir(parents=True, exist_ok=True)
-            with label_path(name).open("a", encoding="utf-8") as f:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with path.open("a", encoding="utf-8") as f:
                 f.write(json.dumps({"sha": sha, **result}, ensure_ascii=False) + "\n")
 
     def one(sha: str) -> None:
