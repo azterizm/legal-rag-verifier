@@ -77,3 +77,6 @@ results/distill/answers.jsonl
 results/distill/units.jsonl
 results/distill/train.jsonl
 results/distill/validation.jsonl
+
+# Stops 48 and 49: probe runs are not results
+results/awareness/probe/

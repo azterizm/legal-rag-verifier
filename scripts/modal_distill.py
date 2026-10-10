@@ -829,3 +829,350 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
             startup_recorded = True
             ledger.record(f"stop47 fresh {name}", gpu, seconds, f"{len(out['labels'])}")
     print(f"Modal spent ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stops 48 and 49: awareness
+
+aware_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install("torch==2.14.1", "transformers==5.18.0", "accelerate==1.15.0")
+    .env({"PYTHONPATH": "/app/src:/app/scripts", "HF_HOME": "/hf"})
+    .add_local_dir(ROOT / "src", "/app/src")
+    .add_local_file(ROOT / "scripts/auditor_judge.py", "/app/scripts/auditor_judge.py")
+    .add_local_file(ROOT / "scripts/attention_replay.py", "/app/scripts/attention_replay.py")
+    .add_local_file(ROOT / "scripts/awareness.py", "/app/scripts/awareness.py")
+    .add_local_file(ROOT / "scripts/awareness_replay.py", "/app/scripts/awareness_replay.py")
+)
+QWEN27_BF16 = "Qwen/Qwen3.8-27B"  # used only if transformers cannot load the FP8 weights
+AWARE: dict[str, dict[str, Any]] = {
+    "generator": {"model": GENERATOR, "revision": GENERATOR_REVISION, "gpu": "L4", "custom": False},
+    "k2-low": {
+        "model": K2,
+        "revision": K2_REVISION,
+        "gpu": "L40S",
+        "custom": True,
+        "sampling": {"temperature": 1.0, "top_p": 0.95},
+        "template": {"reasoning_effort": "low"},
+        "max_new": 2048,
+    },
+    "qwen27-nothink": {
+        "model": QWEN27,
+        "revision": QWEN27_REVISION,
+        "gpu": "H100",
+        "custom": False,
+        "sampling": {"temperature": 0.7, "top_p": 0.8, "top_k": 20, "presence_penalty": 1.5},
+        "template": {"enable_thinking": False},
+        "max_new": 512,
+    },
+}
+STAGE_STOPS = {"stop48": 12.0, "stop49": 15.0}
+AWARE_CHUNK = {"generator": 20, "k2-low": 16, "qwen27-nothink": 16}
+AWARE_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
+
+
+@app.function(image=aware_image, timeout=3 * 3600, volumes={"/hf": weights})
+def aware_weights(model: str, revision: str = "", *, fetch: bool = False) -> dict[str, Any]:
+    """CPU: what a model's repository holds (config keys, weight files, tensor types of the first
+    weight file), and with ``fetch`` its download to the volume."""
+    import struct  # noqa: PLC0415
+
+    from huggingface_hub import HfApi, hf_hub_download, snapshot_download  # noqa: PLC0415
+
+    info = HfApi().model_info(model, revision=revision or None, files_metadata=True)
+    files = {s.rfilename: s.size for s in info.siblings or []}
+    config = json.loads(Path(hf_hub_download(model, "config.json", revision=info.sha)).read_text())
+    out: dict[str, Any] = {
+        "model": model,
+        "sha": info.sha,
+        "weight_gb": round(
+            sum(v or 0 for k, v in files.items() if k.endswith(".safetensors")) / 1e9, 1
+        ),
+        "quantization_config": config.get("quantization_config"),
+        "architectures": config.get("architectures"),
+        "layers": config.get("num_hidden_layers"),
+        "auto_map": config.get("auto_map"),
+    }
+    text = config.get("text_config") or config
+    out["text"] = {
+        k: text.get(k)
+        for k in ("model_type", "num_hidden_layers", "num_attention_heads", "hidden_size")
+    }
+    import importlib.util  # noqa: PLC0415
+
+    import transformers  # noqa: PLC0415
+
+    out["triton"] = importlib.util.find_spec("triton") is not None
+    try:
+        loaded = transformers.AutoConfig.from_pretrained(
+            model, revision=info.sha, trust_remote_code=bool(config.get("auto_map"))
+        )
+        out["config_class"] = type(loaded).__name__
+        for auto in ("AutoModelForCausalLM", "AutoModelForImageTextToText"):
+            mapping = getattr(transformers, auto)._model_mapping
+            out[auto] = mapping[type(loaded)].__name__ if type(loaded) in mapping else None
+    except Exception as exc:  # noqa: BLE001 - a check: report, do not fail
+        out["config_error"] = repr(exc)[:400]
+    if fetch:
+        path = Path(snapshot_download(model, revision=info.sha))
+        weights.commit()
+        first = sorted(path.glob("*.safetensors"))[0]
+        with first.open("rb") as f:
+            header = json.loads(f.read(struct.unpack("<Q", f.read(8))[0]))
+        kinds: dict[str, int] = {}
+        for name, t in header.items():
+            if name != "__metadata__":
+                kinds[t["dtype"]] = kinds.get(t["dtype"], 0) + 1
+        out |= {"dtypes_first_file": kinds, "metadata": header.get("__metadata__")}
+    return out
+
+
+class _Aware:
+    """One model in transformers with eager attention, loaded once per container."""
+
+    name: str
+    model_id: str
+    revision: str
+
+    @modal.enter()
+    def start(self) -> None:
+        import transformers  # noqa: PLC0415
+        from awareness_replay import load  # noqa: PLC0415
+
+        self.started = time.time()
+        self.spec = AWARE[self.name]
+        model_id = self.model_id or self.spec["model"]
+        revision = self.revision or self.spec["revision"]
+        self.model, self.tokenizer, self.torch = load(
+            model_id, revision, custom=self.spec["custom"]
+        )
+        self.meta = {
+            "model": f"{model_id}@{revision}",
+            "transformers": transformers.__version__,
+            "torch": self.torch.__version__,
+            "class": type(self.model).__name__,
+        }
+        self.startup = time.time() - self.started
+
+    def _run(self, work: Any, items: list[dict[str, Any]]) -> dict[str, Any]:
+        t0 = time.time()
+        rows, errors = [], []
+        for item in items:
+            try:
+                rows += work(item)
+            except Exception as exc:  # noqa: BLE001 - one bad item must not lose the chunk
+                self.torch.cuda.empty_cache()
+                errors.append(
+                    {"item": item.get("sha") or item.get("key"), "error": repr(exc)[:500]}
+                )
+        return {
+            "rows": rows,
+            "errors": errors,
+            "meta": self.meta,
+            "seconds": time.time() - t0,
+            "startup": self.startup,
+        }
+
+    @modal.method()
+    def generator(self, items: list[dict[str, Any]]) -> dict[str, Any]:
+        from awareness_replay import generator_measure  # noqa: PLC0415
+
+        return self._run(
+            lambda item: [generator_measure(self.model, self.tokenizer, self.torch, item)], items
+        )
+
+    @modal.method()
+    def judge(self, items: list[dict[str, Any]], attempt: int = 0) -> dict[str, Any]:
+        from awareness_replay import judge_attempt  # noqa: PLC0415
+
+        return self._run(
+            lambda item: judge_attempt(
+                self.model, self.tokenizer, self.torch, item, self.spec, attempt=attempt
+            ),
+            items,
+        )
+
+    @modal.method()
+    def retry(self, items: list[dict[str, Any]]) -> dict[str, Any]:
+        from awareness_replay import judge_retry  # noqa: PLC0415
+
+        return self._run(
+            lambda item: judge_retry(self.model, self.tokenizer, self.torch, item, self.spec), items
+        )
+
+
+_AWARE_OPTIONS: dict[str, Any] = {
+    "image": aware_image,
+    "volumes": {"/hf": weights},
+    "timeout": 3600,
+    "max_containers": 1,
+    "scaledown_window": 120,
+}
+
+
+@app.cls(gpu="L4", **_AWARE_OPTIONS)
+class AwareL4(_Aware):
+    name: str = modal.parameter()
+    model_id: str = modal.parameter(default="")
+    revision: str = modal.parameter(default="")
+
+
+@app.cls(gpu="L40S", **_AWARE_OPTIONS)
+class AwareL40S(_Aware):
+    name: str = modal.parameter()
+    model_id: str = modal.parameter(default="")
+    revision: str = modal.parameter(default="")
+
+
+@app.cls(gpu="H100", **_AWARE_OPTIONS)
+class AwareH100(_Aware):
+    name: str = modal.parameter()
+    model_id: str = modal.parameter(default="")
+    revision: str = modal.parameter(default="")
+
+
+AWARE_CLASSES = {"L4": AwareL4, "L40S": AwareL40S, "H100": AwareH100}
+
+
+def _aware_local() -> Any:
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import awareness  # noqa: PLC0415
+    import modal_ledger  # noqa: PLC0415
+
+    return awareness, modal_ledger
+
+
+def _aware_chunks(
+    stage: str,
+    name: str,
+    call: Any,
+    items: list[dict[str, Any]],
+    path: Path,
+    *,
+    ledger: Any,
+    aw: Any,
+) -> None:
+    """Chunks one after another. Each is charged its wall-clock time, failed or not; the ledger
+    is checked before each; two failed chunks in a row end the job."""
+    gpu = AWARE[name]["gpu"]
+    size = AWARE_CHUNK[name]
+    failed = 0
+    for at in range(0, len(items), size):
+        chunk = items[at : at + size]
+        ledger.check_stage(stage, STAGE_STOPS[stage], gpu, AWARE_ESTIMATE)
+        t0 = time.time()
+        note = "failed"
+        try:
+            out = call(chunk)
+            aw.append_rows(path, [{**r, "run": out["meta"]} for r in out["rows"]])
+            note = f"{len(out['rows'])} rows, {len(out['errors'])} errors"
+            failed = 0
+            for e in out["errors"]:
+                print(f"{name}: {e}", flush=True)
+        except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+            failed += 1
+            print(f"{name}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+        finally:
+            ledger.record(f"{stage} {name}", gpu, time.time() - t0, note)
+        done = min(at + size, len(items))
+        print(f"{name}: {done}/{len(items)} ({note}, {time.time() - t0:.0f} s)", flush=True)
+        if failed >= 2:  # noqa: PLR2004
+            raise RuntimeError(f"{name}: two chunks failed in a row; stopped")
+
+
+@app.local_entrypoint()
+def aware_check(model: str = QWEN27, revision: str = QWEN27_REVISION, fetch: bool = False) -> None:  # noqa: FBT001, FBT002
+    """What a model's repository holds; ``--fetch`` downloads it to the volume (CPU)."""
+    _, ledger = _aware_local()
+    t0 = time.time()
+    try:
+        print(json.dumps(aware_weights.remote(model, revision, fetch=fetch), indent=1))
+    finally:
+        ledger.record("stop48 weights check", "CPU", time.time() - t0, model)
+
+
+@app.local_entrypoint()
+def awareness(
+    names: str = "generator,k2-low,qwen27-nothink",
+    limit: int = 0,
+    probe: bool = False,  # noqa: FBT001, FBT002
+    qwen_model: str = "",
+    qwen_revision: str = "",
+) -> None:
+    """Stop 48: one attempt per answer (generator) and per clause (judges). Resumable. ``--probe``
+    writes to ``results/awareness/probe/`` and is not a result."""
+    aw, ledger = _aware_local()
+    out = aw.OUT / "probe" if probe else aw.OUT
+    for name in names.split(","):
+        spec = AWARE[name]
+        path = out / f"{name}.jsonl"
+        have = aw.read_rows(path)
+        if name == "generator":
+            done = {r["key"] for r in have}
+            todo = [i for i in aw.generator_items() if i["key"] not in done]
+        else:
+            done = set(aw.attempts_of(have))
+            todo = [
+                {k: v for k, v in i.items() if k != "unit"}
+                for sha, i in aw.judge_items().items()
+                if sha not in done
+            ]
+        todo = todo[:limit] if limit else todo
+        print(f"{name}: {len(done)} done, {len(todo)} to run", flush=True)
+        if not todo:
+            continue
+        override = (qwen_model, qwen_revision) if name == "qwen27-nothink" else ("", "")
+        server = AWARE_CLASSES[spec["gpu"]](name=name, model_id=override[0], revision=override[1])
+        call = server.generator.remote if name == "generator" else server.judge.remote
+        _aware_chunks("stop48", name, call, todo, path, ledger=ledger, aw=aw)
+    print(f"Modal spent ${ledger.spent():.2f}, stop 48 ${ledger.stage_spent('stop48'):.2f}")
+
+
+@app.local_entrypoint()
+def awareness_retry(
+    names: str = "k2-low,qwen27-nothink", qwen_model: str = "", qwen_revision: str = ""
+) -> None:
+    """Stop 49, J loop: clauses under their threshold are asked again (seeds 1 to 5). Only for a
+    judge whose gate passed in ``results/awareness/report48.json``. Resumable per clause."""
+    aw, ledger = _aware_local()
+    for name in names.split(","):
+        plan = aw.retry_plan(name)
+        if not plan:
+            print(f"{name}: gate not passed, no loop", flush=True)
+            continue
+        path = aw.OUT / f"{name}-retry.jsonl"
+        done = {r["sha"] for r in aw.read_rows(path)}
+        items = aw.judge_items()
+        todo = [
+            {
+                **{k: v for k, v in items[sha].items() if k != "unit"},
+                "candidate": p["candidate"],
+                "threshold": p["threshold"],
+            }
+            for sha, p in plan.items()
+            if p["retry"] and sha not in done
+        ]
+        flagged = sum(p["retry"] for p in plan.values())
+        print(f"{name}: {flagged} of {len(plan)} under threshold, {len(todo)} to run", flush=True)
+        if not todo:
+            continue
+        override = (qwen_model, qwen_revision) if name == "qwen27-nothink" else ("", "")
+        gpu = AWARE[name]["gpu"]
+        server = AWARE_CLASSES[gpu](name=name, model_id=override[0], revision=override[1])
+        _aware_chunks("stop49", name, server.retry.remote, todo, path, ledger=ledger, aw=aw)
+    print(f"Modal spent ${ledger.spent():.2f}, stop 49 ${ledger.stage_spent('stop49'):.2f}")
+
+
+@app.function(image=aware_image, timeout=900, volumes={"/hf": weights})
+def aware_source(model: str, revision: str, name: str) -> str:
+    """CPU: one file of a model's repository (its custom code), to see how attention is computed."""
+    from huggingface_hub import hf_hub_download  # noqa: PLC0415
+
+    return Path(hf_hub_download(model, name, revision=revision)).read_text(encoding="utf-8")
+
+
+@app.local_entrypoint()
+def aware_code(name: str = "modeling_k2_horizon.py", out: str = "") -> None:
+    text = aware_source.remote(K2, K2_REVISION, name)
+    if out:
+        Path(out).write_text(text, encoding="utf-8")
+    print(len(text.splitlines()), "lines")

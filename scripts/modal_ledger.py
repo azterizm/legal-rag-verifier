@@ -44,6 +44,17 @@ def check(gpu: str, estimate_seconds: float) -> None:
         raise ModalBudgetError(f"Modal: ${spent():.2f} spent, cap ${CAP:.2f}")
 
 
+def stage_spent(stage: str) -> float:
+    """Spend of the runs whose name starts with ``stage`` (stops 48 and 49 have their own stops)."""
+    return round(sum(float(e["usd"]) for e in entries() if e["run"].startswith(stage)), 4)
+
+
+def check_stage(stage: str, cap: float, gpu: str, estimate_seconds: float) -> None:
+    check(gpu, estimate_seconds)
+    if stage_spent(stage) + usd(gpu, estimate_seconds) > cap:
+        raise ModalBudgetError(f"Modal {stage}: ${stage_spent(stage):.2f} spent, stop ${cap:.2f}")
+
+
 def record(run: str, gpu: str, seconds: float, note: str = "") -> None:
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
     with LEDGER.with_suffix(".lock").open("w") as lock:
