@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import pytest
 
+from scripts import router
 from scripts import teacher_opus as to
 from scripts import teacher_pro as tp
 
@@ -39,4 +40,4 @@ def test_better_needs_higher_accuracy_and_a_significant_sign_test() -> None:
     assert to.better(0.90, 0.88, 0.01)
     assert not to.better(0.90, 0.88, 0.20)
     assert not to.better(0.88, 0.90, 0.01)
-    assert to.router.CAPS[to.router.OPUS55] > to.STAGE_STOP
+    assert router.CAPS[router.OPUS55] > to.STAGE_STOP
