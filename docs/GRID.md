@@ -1373,3 +1373,26 @@ call: 1,755 in and 524 out. $10.81 at the list prices, $0.0098 per clause. Up to
 was restarted are not in the ledger (at most $0.05).
 
 Spend: Pro $10.81 of its $15 stop. Opus 5.5 unchanged at $7.67 of $40. Modal unchanged at $10.25 of $55.
+
+## Stop 51: Opus 5.5 as a per-clause judge on the fresh test (method fixed 2026-10-10, before any call)
+
+Your go: "proceed with opus 5.5 via router". This fills the row missing from stop 50.
+
+- Model: `claude-opus-5-5(high)` on the router. Prompt: the stop 42 per-clause prompt, unchanged (sha256
+  `72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b`). Temperature 0, one clause per call, at most 3 asks for a valid reply, 2 calls at a time.
+- Set: the 323 fresh clause prompts only.
+- Readings:
+  - D1: Opus 5.5 in the stop 47 table under Replace and Replace strict, in total, per domain and per kind of
+    answer, beside the recorded arms and Pro.
+  - D2: Opus 5.5 under strict against each arm: sentences only one of the two gets right, exact two-sided sign
+    test.
+  - D3: agreement of labels with Pro, Flash and the untrained Qwen 27B, and the count of each label.
+  - D4: time per clause through the router, tokens and cost per clause.
+- Reading fixed now: Opus 5.5 counts as a better judge than an arm only if its strict accuracy is higher and the
+  sign test gives p under 0.05. The arms that matter for the teacher decision are the untrained Qwen 27B, the
+  untrained K2 and Pro. No teacher is chosen by this stop.
+- A clause with no valid label after two reruns counts as not stated, and the count is reported.
+- Limits: the fresh test has been used since stop 47, so this is exploratory. One model and one set.
+- Fail safe: each label is appended as it returns, keyed by prompt hash; a rerun asks only what is missing.
+- Spend: expected $4 to $5. For this stop the Opus 5.5 ledger stops at $16 ($7.67 spent before it). The $40 cap
+  is unchanged. Modal: none.

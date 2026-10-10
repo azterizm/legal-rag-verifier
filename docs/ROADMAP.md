@@ -17,7 +17,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 50 is scored: Gemini 3.1 Pro low is a better per-clause judge than Flash on the fresh test (88.5 % against 82.1 % strict, p = 0.0001) and level with the untrained Qwen 27B (88.3 %). Halted for your decision on the teacher. No paid run is queued |
+| Next step | Stop 51 (your go): Opus 5.5 high per clause on the 323 fresh clause prompts, scored as stop 50. Method fixed in GRID before any call. Opus 5.5 ledger stops at $16 for this stop |
 | Waiting on you | (1) The teacher: Pro (about $43 for the 4,433 training clauses at list price), Opus 5.5, or no teacher; no candidate tested per clause is above the untrained Qwen 27B. (2) Still open: stop 49 stays not run unless you ask for an ungated test; list numbers split by the segmenter (`src/` change); a per-sentence judge that also sees the question and the source as written; Opus 5.5 per clause on the fresh test |
 | Blocked | Nothing |
 
