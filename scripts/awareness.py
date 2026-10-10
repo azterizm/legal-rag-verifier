@@ -6,6 +6,7 @@ container imports the helpers at the top.
 
   uv run --with modal modal run scripts/modal_distill.py::awareness         # stop 48 (paid)
   uv run python scripts/awareness.py report48     # → results/awareness/report48.json
+  uv run python scripts/awareness.py posthoc48    # readings added after the run
   uv run --with modal modal run scripts/modal_distill.py::awareness_retry   # stop 49 (paid)
   uv run python scripts/awareness.py report49     # → results/awareness/report49.json
 """
@@ -19,7 +20,7 @@ import random
 import statistics
 import sys
 from collections import Counter
-from collections.abc import Callable, Mapping, Sequence
+from collections.abc import Callable, Iterable, Mapping, Sequence
 from pathlib import Path
 from typing import Any, TypeVar
 
@@ -524,6 +525,13 @@ def judge_report(ctx: tuple[Any, ...], name: str) -> dict[str, Any]:
         "supported labels": separation(supported),
         "counts": {
             "total": [sum(i["right"] for i in items), sum(not i["right"] for i in items)],
+            **{
+                name: [
+                    sum(i["right"] for i in items if i["domain"] == d),
+                    sum(not i["right"] for i in items if i["domain"] == d),
+                ]
+                for name, d in (("software", "software"), ("statutes", "legal"))
+            },
             "supported labels": [
                 sum(i["right"] for i in supported),
                 sum(not i["right"] for i in supported),
@@ -542,6 +550,15 @@ def judge_report(ctx: tuple[Any, ...], name: str) -> dict[str, Any]:
         "attempt 1 (transformers)": _arm(ctx, name, first),
         "recorded (SGLang, stop 47)": _arm(ctx, name, recorded),
     }
+    # Added after the run, not pre-registered: what a second sample of the same prompt changes.
+    again = {i["sha"]: i["right"] for i in _clauses(units, recorded)}
+    changed = [i for i in items if first[i["sha"]]["label"] != recorded[i["sha"]]["label"]]
+    report["second_sample_not_preregistered"] = {
+        "labels_changed": len(changed),
+        "right_here_only": sum(i["right"] and not again[i["sha"]] for i in changed),
+        "right_recorded_only": sum(again[i["sha"]] and not i["right"] for i in changed),
+        "right_in_both_or_neither": sum(i["right"] == again[i["sha"]] for i in changed),
+    }
     report["A4"] = {
         "s_generate_per_clause": _percentiles([a["s_generate"] for a in first.values()]),
         "s_measure_per_clause": _percentiles([a["s_measure"] for a in first.values()]),
@@ -559,6 +576,77 @@ def report48() -> dict[str, Any]:
     }
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "report48.json").write_text(json.dumps(report, indent=1) + "\n", encoding="utf-8")
+    return report
+
+
+def _spearman(a: Sequence[float], b: Sequence[float]) -> float:
+    def rank(xs: Sequence[float]) -> list[float]:
+        out = [0.0] * len(xs)
+        for k, i in enumerate(sorted(range(len(xs)), key=lambda i: xs[i])):
+            out[i] = float(k)
+        return out
+
+    return round(statistics.correlation(rank(a), rank(b)), 3)
+
+
+def _mean(values: Iterable[float | None]) -> float | None:
+    known = [v for v in values if v is not None]
+    return round(statistics.fmean(known), 3) if known else None
+
+
+def posthoc48() -> dict[str, Any]:
+    """Readings added after stop 48 ran (not pre-registered): what the signal follows."""
+    units = _graded()[-1]
+    report: dict[str, Any] = {"judges": {}}
+    for name in JUDGES:
+        first = {sha: a[0] for sha, a in judge_labels(name).items()}
+        items = _clauses(units, first)
+        wrong = Counter(
+            f"{i['label']} on a {'right' if i['sentence_right'] else 'wrong'} sentence"
+            for i in items
+            if not i["right"]
+        )
+        by_label = {
+            label: {
+                "clauses": sum(i["label"] == label for i in items),
+                **{
+                    c: _mean(i["values"][c] for i in items if i["label"] == label)
+                    for c in ("att_all", "dep")
+                },
+            }
+            for label in ("supported", "not_stated", "contradicted")
+        }
+        length = {}
+        for domain, d in (("software", "software"), ("statutes", "legal")):
+            group = [i for i in items if i["domain"] == d]
+            tokens = [first[i["sha"]]["span_tokens"]["passages"] for i in group]
+            length[domain] = {
+                "passage_tokens_p50": sorted(tokens)[len(tokens) // 2],
+                "rho_attention_passage_tokens": _spearman(
+                    [i["values"]["att_all"] for i in group], tokens
+                ),
+            }
+        report["judges"][name] = {
+            "wrong_labels": dict(wrong),
+            "mean_by_label": by_label,
+            "by_domain": length,
+        }
+    rows = {r["key"]: r for r in read_rows(OUT / "generator.jsonl")}
+    report["generator"] = {}
+    for mode in ("source", "closed"):
+        for right in (True, False):
+            values = [
+                summarise(
+                    rows[u["key"].rsplit(":", 1)[0]]["sentences"][int(u["key"].rsplit(":", 1)[1])]
+                )
+                for u in units
+                if u["mode"] == mode and u["right"] == right
+            ]
+            report["generator"][f"{mode}, {'right' if right else 'wrong'}"] = {
+                "sentences": len(values),
+                **{c: _mean(v[c] for v in values) for c in ("att_mid", "dep")},
+            }
+    (OUT / "posthoc48.json").write_text(json.dumps(report, indent=1) + "\n", encoding="utf-8")
     return report
 
 
@@ -676,13 +764,15 @@ def _show(report: Mapping[str, Any]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["items", "report48", "report49"])
+    parser.add_argument("command", choices=["items", "report48", "posthoc48", "report49"])
     command = parser.parse_args().command
     if command == "items":
         g, j = generator_items(), judge_items()
         print(json.dumps({"answers": len(g), "clauses": len(j)}))
     elif command == "report48":
         _show(report48())
+    elif command == "posthoc48":
+        print(json.dumps(posthoc48(), indent=1))
     else:
         print(json.dumps(report49(), indent=1))
 
