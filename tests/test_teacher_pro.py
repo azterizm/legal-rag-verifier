@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import pytest
 
+from scripts import teacher_opus as to
 from scripts import teacher_pro as tp
 
 
@@ -32,3 +33,10 @@ def test_a_clause_without_a_valid_label_counts_as_not_stated() -> None:
     out, missing = tp.filled(labels, ["a", "b", "c"])
     assert missing == 2
     assert [out[k]["label"] for k in "abc"] == ["supported", "not_stated", "not_stated"]
+
+
+def test_better_needs_higher_accuracy_and_a_significant_sign_test() -> None:
+    assert to.better(0.90, 0.88, 0.01)
+    assert not to.better(0.90, 0.88, 0.20)
+    assert not to.better(0.88, 0.90, 0.01)
+    assert to.router.CAPS[to.router.OPUS55] > to.STAGE_STOP
