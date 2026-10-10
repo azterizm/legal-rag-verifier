@@ -1083,3 +1083,97 @@ Every judge under both placements, total (false rollbacks / caught, accuracy):
   91.9 %; Opus 5.5 2 / 145, 98.6 %. These are not candidates: they saw the question and the source as you saw it.
   The judge in the auditor sees one clause, the auditor's candidate passages and no question. The same Gemini model
   scores 82.1 % there.
+
+## Stops 48 and 49: an awareness signal for the auditor (method fixed 2026-10-10, before any run)
+
+Stop 47 showed that most wrong sentences are facts the generator added from memory. These stops test a signal read
+from the model itself: whether it was reading its input when it wrote. Your direction (2026-10-10). The fresh test
+was already used after stop 47 to compare placements, so these stops are exploratory on it. A result here needs a
+new graded set to confirm it. No student is trained. No router call is made. Nothing in `src/` changes.
+
+Two directions, both on the 358 graded fresh sentences, compared with the stop 47 table:
+- J, the judge. K2 Horizon 7B at low effort and Qwen3.8 27B with thinking off, both untrained, label each clause
+  with the stop 42 prompt. The signal says whether the judge read the passages. A label under the threshold is
+  asked again.
+- G, the generator. Qwen 2.5 7B only. The signal says whether each sentence it wrote came from the source. No
+  judge and no DeBERTa.
+
+### The signal
+
+Read in Hugging Face transformers (torch 2.14.1, transformers 5.18.0), eager attention, bf16, from the model that
+produced the text. Two measures:
+- Attention share. For each token of the text, the attention from its position to the input span, over all
+  attention except to the first token, mean over heads (stop 29's measure). Mean over the text's tokens. Four
+  summaries by layer: all layers, and the lower, middle and upper third.
+- Dependence on the input. Log-likelihood per token of the text with the input, minus the same without it.
+
+That is five candidates, in this order: attention all layers, lower, middle, upper, dependence. Higher means more
+aware. The sign is fixed.
+
+- G. Text: one sentence of an answer (a token belongs to the sentence in which it starts). Input span: the source
+  inside the with-source prompt of stop 43. With: that prompt and the answer so far. Without: the closed-book
+  prompt of stop 43 and the answer so far. Answers written with the source are measured as written. Closed-book
+  answers are fed under the with-source prompt, which is not how they were written.
+- J. Text: every token the judge generates (reasoning and reply). Input span: the passages and the sentence to
+  check. With: the stop 42 prompt. Without: the same prompt with the passages replaced by `(none)`.
+
+Folds: the 80 questions are split in two by question (seed 20261010), 20 software and 20 statutes in each. For
+each fold the candidate with the highest AUROC on that fold is chosen (ties go to the earlier in the order above),
+with its threshold. Both are applied to the other fold only. No sentence is scored with a choice made on its own
+grade.
+
+### Stop 48: offline check, one attempt per item
+
+- G: Qwen 2.5 7B (`a09a3545`) on an L4. 160 answers, each fed under both prompts.
+- J: K2 Horizon 7B (`3b6ae394`) on an L40S and Qwen3.8 27B on an H100. Each of the 323 fresh clause prompts is
+  answered once with the recorded sampling of stop 44 and seed 0. K2: temperature 1.0, top_p 0.95, low effort, at
+  most 2,048 new tokens. Qwen: temperature 0.7, top_p 0.8, top_k 20, presence penalty 1.5 on generated tokens,
+  thinking off, at most 512 new tokens. The measures are read in the same pass. A reply that does not parse is
+  sampled again with seed 100, then 200. After that it counts as not stated.
+- A label is right when it agrees with your grade of its sentence: supported on a right sentence, contradicted
+  or not stated on a wrong one. Sentences graded unsure are left out.
+
+Readings:
+- A1, generator: AUROC of each candidate, right sentences against wrong, in total, per domain, and per answer
+  kind (with source: 141 right, 22 wrong; closed-book: 69 and 126). Dependence separates the two kinds of answer by
+  construction, and the kind predicts the grade. So the gate for G uses the AUROC within kind: only pairs of a
+  right and a wrong sentence from the same kind of answer are compared. The total is reported beside it.
+- A2, judges: AUROC of each candidate, right labels against wrong labels. Supported labels apart: supported on a
+  right sentence against supported on a wrong one. Agreement of the labels with the recorded SGLang labels.
+- A3, the generator signal as the auditor: a sentence under the threshold is rolled back. Two arms: the signal
+  alone, and the claim check followed by the signal. Threshold: the value with the highest accuracy on the other
+  fold (ties go to the lower value). Scored as in stop 47 (false rollbacks, caught, accuracy), in total, per
+  domain and per answer kind. Also the with-source answers alone, with the threshold tuned on with-source
+  sentences of the other fold.
+- A4: seconds per sentence and per clause, and the share of it added by the measures.
+- Check: share of answer tokens equal to the model's top token under the prompt they were written with.
+
+Gate, fixed now. A direction goes to stop 49 if the candidate chosen on each fold scores an AUROC of at least
+0.65 on the other fold and at least 0.70 on average over the two. For G the AUROC is within kind. For J each
+judge is gated on its own. A direction that does not pass stops and is reported as failed.
+
+Fallbacks, recorded if used: if K2's custom code does not return attention weights, K2 runs on dependence only. If
+transformers cannot load the FP8 weights of Qwen3.8 27B, the bf16 weights of the same model are used, with the
+revision recorded here.
+
+### Stop 49: the retry loop (only for a direction that passes its gate)
+
+- J loop. Attempt 1 is stop 48's. Threshold: on the tuning fold, the value that flags the largest share of wrong
+  labels minus the share of right labels (ties go to the lower value). A clause whose awareness is under the
+  threshold of the other fold is asked again with seeds 1 to 5, same prompt and sampling. The first attempt at or
+  over the threshold is kept. If none is, the attempt with the highest awareness is kept and the clause is counted
+  as exhausted. No grade is used in the loop. Kept labels go through the stop 47 replay under Replace strict.
+  - B1: the retry arm against the attempt-1 arm, and against the stop 47 arms (K2 low strict 85.8 %, Qwen 27B
+    thinking off strict 88.3 %, K2 student 83.2 %, V0 68.7 %). A gain under 1.0 point in total (4 sentences)
+    counts as no gain.
+  - B2: clauses retried, exhausted, and labels changed to right and to wrong.
+  - B3: seconds added per clause.
+- G loop. Qwen 2.5 7B writes with the source; a sentence under the threshold is cut back and sampled again, at most
+  5 times, keeping the most aware. It writes new sentences, which need new grades. Work halts for you before it
+  runs.
+- Which direction wins: accuracy on the 358 sentences, G from A3 (claim check then signal) and J from B1.
+
+Spend and fail safe. Every GPU job runs in chunks. Each result is appended to JSONL under its prompt hash and seed,
+and a rerun skips what is done. A failed chunk is reported and retried on the next run. The Modal ledger is checked
+before each chunk and charged the wall-clock time of each chunk after it, failed or not. Stage stops in code: $12
+for stop 48, $15 for stop 49, inside the $55 cap ($6.46 spent).
