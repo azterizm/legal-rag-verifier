@@ -141,8 +141,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    best judge gained 3 sentences of 163 over no auditor. The judge pays where the generator answers from memory.
    Before a production trial: use the strict placement, train on labels better than Gemini's, and stop the
    segmenter splitting list numbers into sentences that the claim check then rejects as figures. Also test a
-   judge that sees the question and the whole source. In one prompt with both, Gemini agreed with the hand grades
-   on 91 % of sentences and Claude Opus 5.5 on 97 %, against 82 % for Gemini as the per-clause judge.
+   judge that sees the question and the source as written. The per-clause judge already receives the whole
+   source, cut into passages, but not the question. In one prompt with the question, the source as written and
+   both answers, Gemini agreed with the hand grades on 91 % of sentences and Claude Opus 5.5 on 97 %, against
+   82 % for Gemini as the per-clause judge.
    A signal read from the model itself does not replace or improve the judge as tested (stop 48). The share of
    attention on the input and the gain in likelihood from the input were measured for the generator and for two
    untrained judges. None separated right from wrong well enough on held-out questions (AUROC 0.42 to 0.62,

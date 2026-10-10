@@ -18,7 +18,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | Stop 48 is scored: the awareness signal fails all three gates, so stop 49 (the retry loop) did not run. Halted for your decision. No paid run is queued |
-| Waiting on you | (1) Stop 49: accept the stop, or run the judge loop anyway as an ungated test (about $5 to $10 of Modal; the second-sample reading says a retry is a coin toss); (2) a follow-up limited to software or to a length-normalised attention share needs a new graded set; (3) still open from stop 47: list numbers split by the segmenter (`src/` change), a judge that sees the question and the full source, an Opus 5.5 teacher check |
+| Waiting on you | (1) Stop 49: accept the stop, or run the judge loop anyway as an ungated test (about $5 to $10 of Modal; the second-sample reading says a retry is a coin toss); (2) a follow-up limited to software or to a length-normalised attention share needs a new graded set; (3) still open from stop 47: list numbers split by the segmenter (`src/` change), a judge that sees the question and the source as written (the per-clause judge already receives the whole source, cut into passages), an Opus 5.5 teacher check |
 | Blocked | Nothing |
 
 ### Stop log
