@@ -17,8 +17,8 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 47 is scored. Halted for your decisions below. No training or paid run is queued |
-| Waiting on you | (1) Qwen 27B student: recommended not to train on Gemini labels (the K2 student copied Gemini and fell below its untrained base); (2) go to stop list numbers being split into sentences and checked as figures (a change in `src/`, dev replays move); (3) whether to test a judge that sees the question and the full source (your whole-sheet experiment scored 92 to 99 % against 82 % per clause) |
+| Next step | Stops 48 and 49 (awareness signal; your direction and go, 2026-10-10). Method fixed in GRID. Next: code, probe, stop 48 runs on Modal |
+| Waiting on you | Nothing for stop 48. Still open from stop 47: (1) go to stop list numbers being split into sentences and checked as figures (a change in `src/`, dev replays move); (2) whether to test a judge that sees the question and the full source; (3) an Opus 5.5 teacher check. The Qwen 27B student is dropped (your decision) |
 | Blocked | Nothing |
 
 ### Stop log
