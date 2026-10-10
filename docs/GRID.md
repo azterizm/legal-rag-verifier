@@ -1083,6 +1083,11 @@ Every judge under both placements, total (false rollbacks / caught, accuracy):
   91.9 %; Opus 5.5 2 / 145, 98.6 %. These are not candidates: they saw the question and the source as you saw it.
   The judge in the auditor sees one clause, the auditor's candidate passages and no question. The same Gemini model
   scores 82.1 % there.
+- Checked after stop 48: the candidate passages hold the whole source in all 323 fresh prompts. Software: 1
+  passage. Statutes: 15 passages at the median and up to 59, about 4 times the source length, because joined and
+  derived passages repeat text. The gap to the whole sheet is not missing source. What differs: no question, the
+  source cut and repeated, one sentence per call, and a different rule (supported, contradicted or not stated
+  against your yes, no or unsure).
 
 ## Stops 48 and 49: an awareness signal for the auditor (method fixed 2026-10-10, before any run)
 
