@@ -719,3 +719,66 @@ bar set before scoring on both levels. No Appeal arm and no control does. On sta
 passes, because the claim check gives half the false rollbacks. The judges raise accuracy there from 59 % (V0) to
 64 to 68 %. Latency per clause: Gemini p50 4.3 s, p95 12.5 s; Qwen low one at a time p50 2.6 s, p95 10.0 s;
 Qwen xhigh one at a time p50 4.0 s, p95 87.5 s. Replace adds 8.5 to 34 s per Part B answer, Appeal 1.4 to 9 s.
+
+## A distilled judge and the fresh test (stops 43 to 47, 2026-10-09 and 2026-10-10; method in `docs/GRID.md`)
+
+Aim: a judge that answers without thinking, close to a frontier teacher, within 2 s p95 per clause.
+
+Teacher check on the stop 42 sets (stop 44), Replace strict accuracy:
+
+| Arm | Part A | Part B | Statutes |
+|---|---|---|---|
+| Gemini per clause | 82.4 % | 82.5 % | 68.3 % |
+| Opus 4.6 batched | 94 % | 85 % | not run in full |
+| Opus 5.5 batched | 88 % | 80 % | not run |
+| Qwen 27B thinking off, untrained | 94 % | 80 % | 67 % |
+| K2 Horizon 7B low effort, untrained | 88.2 % | 80.0 % | 66.7 % |
+
+Batched teacher calls agreed with per-clause calls on 92.8 % of clauses but lost 2 texts on Part A, so teachers
+ran per clause. Opus 4.6 hit the router limit after 167 calls. Gemini alone labelled the training data.
+
+Training data (stop 45): 472 sources disjoint from every test set, 1,416 questions, 2,832 answers by Qwen 2.5 7B,
+4,433 clauses labelled by Gemini. Train 4,018, validation 415. Opus 5.5 agreed with Gemini on 410 of 500 audited
+labels.
+
+Student (stop 46): K2 Horizon 7B, LoRA rank 16, one epoch, 34 min on an H100. Validation agreement with Gemini
+89.2 %. On the dev sets it scored 76.5 % on Part A and 80.0 % on Part B, against Gemini's 82.4 % and 82.5 %.
+Latency one at a time on an L40S: p50 1.2 s, p95 1.7 s. Untrained K2 at low effort: p50 1.5 s, p95 3.9 s.
+
+Fresh test (stop 47): 80 new questions, 160 answers (with the source and closed-book), 360 sentences graded by you:
+210 yes, 148 no, 2 unsure. Scored once. Each cell is false rollbacks / wrong sentences caught, then accuracy.
+
+| Arm | Software | Statutes | Total |
+|---|---|---|---|
+| No auditor | 0 / 0, 68.8 % | 0 / 0, 49.5 % | 0 / 0, 58.7 % |
+| Claim check only | 7 / 5, 67.6 % | 9 / 30, 60.6 % | 16 / 35, 64.0 % |
+| V0 | 22 / 18, 66.5 % | 20 / 60, 70.7 % | 42 / 78, 68.7 % |
+| Gemini, Replace | 12 / 21, 74.1 % | 18 / 62, 72.9 % | 30 / 83, 73.5 % |
+| Qwen 27B thinking off, untrained, Replace | 10 / 22, 75.9 % | 11 / 56, 73.4 % | 21 / 78, 74.6 % |
+| K2 low, untrained, Replace | 9 / 20, 75.3 % | 10 / 51, 71.3 % | 19 / 71, 73.2 % |
+| Qwen 27B low, Replace strict | 16 / 48, 87.6 % | 19 / 89, 86.7 % | 35 / 137, 87.2 % |
+| K2 student, Replace strict | 24 / 50, 84.1 % | 28 / 90, 82.4 % | 52 / 140, 83.2 % |
+
+The student meets the distillation reading: it is above Gemini on both domains and its p95 is 1.7 s. It is 4.0
+points below Qwen 27B low. Only the two untrained Replace arms pass the stop 40 bar, on software and in total. No
+arm passes it on statutes.
+
+Added after the run, not pre-registered. Every judge under both placements, total:
+
+| Judge | Replace | Replace strict |
+|---|---|---|
+| Gemini | 30 / 83, 73.5 % | 62 / 146, 82.1 % |
+| Qwen 27B low | 26 / 86, 75.4 % | 35 / 137, 87.2 % |
+| Qwen 27B thinking off, untrained | 21 / 78, 74.6 % | 26 / 132, 88.3 % |
+| K2 low, untrained | 19 / 71, 73.2 % | 22 / 119, 85.8 % |
+| K2 student | 28 / 78, 72.6 % | 52 / 140, 83.2 % |
+
+Strict adds 9 to 14 points for every judge, because most wrong sentences are not stated in the source. Under the
+same placement the student matches Gemini (83.2 % against 82.1 %) and is 2.6 points below the untrained K2, with
+more than twice its false rollbacks. On answers written with the source (141 right, 22 wrong) no auditor scores
+86.5 % and the best arm 88.3 %. On closed-book answers (69 right, 126 wrong) no auditor scores 35.4 % and the
+strict arms 83 to 89 %. The claim check rolls back 12 right sentences before any judge, 3 of them list numbers
+split off by the segmenter. One prompt with the whole sheet agreed with your grades on 329 of 360 sentences
+(Gemini) and 349 of 360 (Opus 5.5); the same Gemini model as the per-clause judge scores 82.1 %.
+
+Spend: Modal $6.46 of $55, Opus 5.5 $7.67 of $40. Raw: `results/distill/`, `results/fresh/`.

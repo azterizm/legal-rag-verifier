@@ -1,6 +1,6 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-08.
+legal-rag-verifier 0.1.0, 2026-10-08. Item 1 of the last section updated 2026-10-10.
 
 ## Question
 
@@ -130,7 +130,19 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    A reasoning LLM in the entailment check does fix it on these sets (stop 42). Gemini 3.8 flash high and
    Qwen3.8-27B cut Part A false rollbacks from 19 to between 1 and 5 and Part B from 9 to between 1 and 3, and kept or
    raised the errors caught. Single-pass controls (MiniCheck, ModernBERT-large) did not. The cost is seconds per answer,
-   and the claim check's own false rollbacks remain. Confirm on a fresh test before building on it.
+   and the claim check's own false rollbacks remain.
+   A fresh test confirmed the gain and showed its limits (stops 43 to 47): 358 sentences graded by hand, 148 of
+   them wrong, half from answers written without the source. With the judge rolling back every sentence the source
+   does not state, accuracy rose from 69 % (current auditor) to 82 to 88 %. A judge that only rolls back
+   contradictions reached 73 to 75 %, because most wrong sentences add related facts the source does not state. A
+   7B model trained on Gemini's labels scored 83 % at 1.7 s per clause, level with Gemini. The same 7B model
+   untrained scored 86 % at 3.9 s, so training bought speed, not accuracy, and it copied Gemini's wrong rollbacks.
+   Every strict judge still rolled back 22 to 62 of 210 right sentences. On answers written with the source the
+   best judge gained 3 sentences of 163 over no auditor. The judge pays where the generator answers from memory.
+   Before a production trial: use the strict placement, train on labels better than Gemini's, and stop the
+   segmenter splitting list numbers into sentences that the claim check then rejects as figures. Also test a
+   judge that sees the question and the whole source. In one prompt with both, Gemini agreed with the hand grades
+   on 91 % of sentences and Claude Opus 5.5 on 97 %, against 82 % for Gemini as the per-clause judge.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

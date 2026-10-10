@@ -14,15 +14,22 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-09 |
+| Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Halted at the stop 46 gate: your review before any Qwen 27B student. Stop 47 is ready to score once your grades are in and Gemini's last 123 fresh labels run (router limit lifts about 18:07 UTC) |
-| Waiting on you | (1) Train the Qwen 27B student or not (stop 46: K2 student 5.9 points below Gemini on Part A); (2) grades in `results/fresh/grades.csv` |
+| Next step | Stop 47 is scored. Halted for your decisions below. No training or paid run is queued |
+| Waiting on you | (1) Qwen 27B student: recommended not to train on Gemini labels (the K2 student copied Gemini and fell below its untrained base); (2) go to stop list numbers being split into sentences and checked as figures (a change in `src/`, dev replays move); (3) whether to test a judge that sees the question and the full source (your whole-sheet experiment scored 92 to 99 % against 82 % per clause) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-10 (47): **Fresh test scored once.** 358 graded sentences (210 right, 148 wrong). V0 68.7 %. Gemini
+  Replace 73.5 %, Qwen 27B low strict 87.2 %, K2 student strict 83.2 % at 1.7 s p95. The student meets the
+  distillation reading. Added after the run: placement decides more than the judge (strict adds 9 to 14 points);
+  under strict the untrained K2 scores 85.8 % and Gemini 82.1 %; the claim check rolls back 12 right sentences, 3 of
+  them list numbers split by the segmenter; one prompt with the whole sheet agrees with your grades on 329 (Gemini)
+  and 349 (Opus 5.5) of 360. VERDICT item 1 updated. **Resume:** your three decisions in Status.
 
 - 2026-10-09 (46): **K2 Horizon 7B student, halted at the gate.** One epoch on 4,018 Gemini labels (H100, 34 min).
   Validation agreement 89 %. Part A strict 76.5 % against Gemini's 82.4 % (5.9 points, gate 3), Part B 80.0 % against

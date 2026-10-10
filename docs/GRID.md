@@ -1009,3 +1009,77 @@ your review before Qwen 27B is trained. The student is less accurate than the un
 Gemini's lean to not stated, which rolls back right sentences (6 against 1). Modal spend $6.33 of $55. Router: Opus
 5.5 $7.67 of $40. Gemini is rate-limited until about 18:07 UTC (HTTP 429, Retry-After 5,808 s) with 200 of 323 fresh
 clauses labelled.
+
+### Stop 47: results (2026-10-10)
+
+Order of events: your grades were committed (`b8b3c4d`), Gemini labelled its last 123 fresh clauses, then the
+scoring ran once. One departure: those 123 Gemini labels were made after your grades existed. No grade is in any
+prompt and the prompt was unchanged. You graded 360 sentences: 210 yes, 148 no, 2 unsure. Units: 358 (software 117
+right and 53 wrong, statutes 93 right and 95 wrong). Raw: `results/fresh/report.json`, `errors.jsonl`.
+
+Each cell is false rollbacks / wrong sentences caught, then accuracy.
+
+| Arm | Software | Statutes | Total |
+|---|---|---|---|
+| No auditor | 0 / 0, 68.8 % | 0 / 0, 49.5 % | 0 / 0, 58.7 % |
+| Claim check only | 7 / 5, 67.6 % | 9 / 30, 60.6 % | 16 / 35, 64.0 % |
+| V0 | 22 / 18, 66.5 % | 20 / 60, 70.7 % | 42 / 78, 68.7 % |
+| Gemini, Replace | 12 / 21, 74.1 % | 18 / 62, 72.9 % | 30 / 83, 73.5 % |
+| Qwen 27B thinking off, untrained, Replace | 10 / 22, 75.9 % | 11 / 56, 73.4 % | 21 / 78, 74.6 % |
+| K2 low, untrained, Replace | 9 / 20, 75.3 % | 10 / 51, 71.3 % | 19 / 71, 73.2 % |
+| Qwen 27B low, Replace strict | 16 / 48, 87.6 % | 19 / 89, 86.7 % | 35 / 137, 87.2 % |
+| K2 student, Replace strict | 24 / 50, 84.1 % | 28 / 90, 82.4 % | 52 / 140, 83.2 % |
+
+- F1: the two untrained Replace arms pass the bar on software and in total. No arm passes on statutes. The two
+  strict arms fail the bar on false rollbacks and have the highest accuracy.
+- F2: the student is 10.0 points above Gemini on software and 9.5 above on statutes, with p95 1.7 s one at a
+  time. It succeeds as written. The two arms had different placements, so this gap is mostly the placement (see
+  below).
+- F3: the student is 4.0 points below Qwen 27B low (3.5 on software, 4.3 on statutes), with 17 more false
+  rollbacks and 3 more caught.
+- F4: latency per clause in the bulk runs (requests in parallel, so queueing is included): Gemini p50 6.1 s, p95
+  24.8 s; Qwen low 6.6 s, 19.4 s; Qwen thinking off 11.4 s, 17.8 s; K2 low 3.5 s, 11.1 s; student 2.1 s, 4.9 s.
+  Time added per answer (149 answers reach the judge): student p50 4.6 s, p95 10.8 s; K2 low 8.2 s, 24.2 s; Gemini
+  14.7 s, 53.1 s; Qwen low 15.6 s, 39.7 s. The scored report left the per-answer figure out; it is in
+  `posthoc.json`.
+- F5: 95 errors for Gemini (30 right sentences rolled back, 65 wrong passed) and 60 for the student (52 and 8),
+  listed in `results/fresh/errors.jsonl`.
+- With source and closed-book apart: answers with the source have 141 right and 22 wrong sentences, closed-book 69
+  and 126. On answers with the source: no auditor 86.5 %, V0 77.3 %, Gemini 82.8 %, Qwen low strict 88.3 %, student
+  81.6 %. Closed-book: no auditor 35.4 %, V0 61.5 %, Gemini 65.6 %, Qwen low strict 86.2 %, student 84.6 %.
+- Labels on the sentences you graded wrong (120 clauses): Gemini not stated 90, contradicted 28, supported 2;
+  student 91, 20, 9; Qwen low 71, 36, 13; K2 low 66, 24, 30.
+
+### Stop 47: readings added after the run (2026-10-10, not pre-registered)
+
+`scripts/fresh_posthoc.py`, raw in `results/fresh/posthoc.json`. They change no figure above.
+
+Every judge under both placements, total (false rollbacks / caught, accuracy):
+
+| Judge | Replace | Replace strict |
+|---|---|---|
+| Gemini | 30 / 83, 73.5 % | 62 / 146, 82.1 % |
+| Qwen 27B low | 26 / 86, 75.4 % | 35 / 137, 87.2 % |
+| Qwen 27B thinking off, untrained | 21 / 78, 74.6 % | 26 / 132, 88.3 % |
+| K2 low, untrained | 19 / 71, 73.2 % | 22 / 119, 85.8 % |
+| K2 student | 28 / 78, 72.6 % | 52 / 140, 83.2 % |
+
+- Placement decides more than the judge. Strict adds 9 to 14 points for every judge. Gemini labels 89 of the 148
+  wrong sentences not stated and 28 contradicted; the claim check stops 29 before the judge. Replace passes a
+  sentence that is not stated. The dev sets had few wrong sentences (6 of 34 and 8 of 40), so they picked Replace
+  for three arms.
+- Same placement: under strict the student is 4.7 points above Gemini on software and 2.2 below on statutes.
+  Under Replace it is 1.7 below and level. F2 holds either way.
+- Under strict the untrained K2 is 2.6 points above the student, with 22 false rollbacks against 52 and 119 caught
+  against 140. The student copied Gemini, which has the most false rollbacks (62).
+- The claim check rolls back 12 right sentences before any judge sees them (all `UNGROUNDED_FIGURE`). That is the
+  floor for every judge arm.
+- List numbers. The closed-book answer to fl-02 is a numbered list. The segmenter split "1.", "2.", "3." and "4."
+  into sentences. You graded them yes (no claim). The claim check rolls back "2.", "3." and "4." as figures not in
+  the source, and the strict judges roll back "1." as not stated. Without these 4 sentences every arm gains 0.5 to
+  1.0 point and the order is unchanged. This is a defect in the segmenter and the claim check, not in the judges.
+- Your side experiment: one prompt with the whole sheet (question, source, both answers). Gemini agrees with your
+  grades on 329 of 360 sentences, Opus 5.5 on 349. Read as an auditor (no or unsure means rollback): Gemini 17 / 136,
+  91.9 %; Opus 5.5 2 / 145, 98.6 %. These are not candidates: they saw the question and the source as you saw it.
+  The judge in the auditor sees one clause, the auditor's candidate passages and no question. The same Gemini model
+  scores 82.1 % there.
