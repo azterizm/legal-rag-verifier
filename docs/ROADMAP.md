@@ -17,8 +17,8 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 48 is scored: the awareness signal fails all three gates, so stop 49 (the retry loop) did not run. Halted for your decision. No paid run is queued |
-| Waiting on you | (1) Stop 49: accept the stop, or run the judge loop anyway as an ungated test (about $5 to $10 of Modal; the second-sample reading says a retry is a coin toss); (2) a follow-up limited to software or to a length-normalised attention share needs a new graded set; (3) still open from stop 47: list numbers split by the segmenter (`src/` change), a judge that sees the question and the source as written (the per-clause judge already receives the whole source, cut into passages), an Opus 5.5 teacher check |
+| Next step | Stop 50 (your direction): `gemini-3.1-pro-low` as a per-clause judge on the fresh test (323 prompts), the stop 42 sets (280) and the 500 clauses Opus 5.5 audited, beside Flash and Opus 5.5. Method fixed in GRID before any call. No whole-sheet prompt. Hard stop $15 in the ledger |
+| Waiting on you | After stop 50: which teacher to use. Still open: stop 49 stays not run unless you ask for an ungated test; list numbers split by the segmenter (`src/` change); a per-sentence judge that also sees the question and the source as written; Opus 5.5 per clause on the fresh test |
 | Blocked | Nothing |
 
 ### Stop log
