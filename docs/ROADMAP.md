@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 50 (your direction): `gemini-3.1-pro-low` as a per-clause judge on the fresh test (323 prompts), the stop 42 sets (280) and the 500 clauses Opus 5.5 audited, beside Flash and Opus 5.5. Method fixed in GRID before any call. No whole-sheet prompt. Hard stop $15 in the ledger |
-| Waiting on you | After stop 50: which teacher to use. Still open: stop 49 stays not run unless you ask for an ungated test; list numbers split by the segmenter (`src/` change); a per-sentence judge that also sees the question and the source as written; Opus 5.5 per clause on the fresh test |
+| Next step | Stop 50 is scored: Gemini 3.1 Pro low is a better per-clause judge than Flash on the fresh test (88.5 % against 82.1 % strict, p = 0.0001) and level with the untrained Qwen 27B (88.3 %). Halted for your decision on the teacher. No paid run is queued |
+| Waiting on you | (1) The teacher: Pro (about $43 for the 4,433 training clauses at list price), Opus 5.5, or no teacher; no candidate tested per clause is above the untrained Qwen 27B. (2) Still open: stop 49 stays not run unless you ask for an ungated test; list numbers split by the segmenter (`src/` change); a per-sentence judge that also sees the question and the source as written; Opus 5.5 per clause on the fresh test |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-10 (50): **Gemini 3.1 Pro low as a per-clause judge.** Your direction, one model, no whole-sheet prompt.
+  Method fixed in GRID before any call. 1,103 calls, all labels valid. Fresh test strict: Pro 35 / 142, 88.5 %;
+  Flash 62 / 146, 82.1 % (29 against 6 sentences, p = 0.0001); untrained Qwen 27B 88.3 % (14 against 13). Stop 42
+  sets strict: 94.1 %, 77.5 %, 67.7 %. On the 500 audited clauses Pro agrees with Opus 5.5 on 90.4 % and with Flash
+  on 90.2 %. $10.81 at list prices ($15 stop). **Resume:** your decision on the teacher in Status.
 
 - 2026-10-10 (48): **Awareness signal, offline; all gates fail.** Your direction. Method fixed in GRID before any
   run. Attention share on the input and likelihood gain from the input, read in transformers for Qwen 2.5 7B (L4,

@@ -1305,3 +1305,71 @@ Opus 5.5. No whole-sheet prompt: it cannot run in production. Stop 49 (the retry
 - Fail safe: each label is appended as it returns, keyed by prompt hash; a rerun asks only what is missing.
 - Spend: priced in the ledger at $2.00 and $12.00 per million input and output tokens (the list prices you gave;
   what the router bills is not known to this repo). Hard stop at $15 in code. Modal: none.
+
+### Stop 50: results (2026-10-10)
+
+`uv run python scripts/teacher_pro.py report`, raw in `results/teacher_pro/report.json`. 1,103 calls, every label
+valid, none counted as not stated. Two server errors were retried. The laptop slept once during the second set;
+the run was restarted and asked only what was missing.
+
+C1, fresh test, 358 graded sentences (false rollbacks / caught, accuracy):
+
+| Judge | Replace | Replace strict | Software, strict | Statutes, strict | With source, strict | Closed-book, strict |
+|---|---|---|---|---|---|---|
+| Gemini 3.1 Pro low | 22 / 87, 76.8 % | 35 / 142, 88.5 % | 15 / 49, 88.8 % | 20 / 93, 88.3 % | 15 / 20, 89.6 % | 20 / 122, 87.7 % |
+| Gemini 3.8 Flash high | 30 / 83, 73.5 % | 62 / 146, 82.1 % | 33 / 51, 79.4 % | 29 / 95, 84.6 % | 29 / 21, 81.6 % | 33 / 125, 82.6 % |
+| Qwen 27B thinking off, untrained | 21 / 78, 74.6 % | 26 / 132, 88.3 % | 11 / 48, 90.6 % | 15 / 84, 86.2 % | 12 / 13, 87.1 % | 14 / 119, 89.2 % |
+| Qwen 27B low | 26 / 86, 75.4 % | 35 / 137, 87.2 % | 16 / 48, 87.6 % | 19 / 89, 86.7 % | 14 / 17, 88.3 % | 21 / 120, 86.2 % |
+| K2 low, untrained | 19 / 71, 73.2 % | 22 / 119, 85.8 % | 10 / 43, 88.2 % | 12 / 76, 83.5 % | 10 / 12, 87.7 % | 12 / 107, 84.1 % |
+| K2 student | 28 / 78, 72.6 % | 52 / 140, 83.2 % | 24 / 50, 84.1 % | 28 / 90, 82.4 % | 25 / 17, 81.6 % | 27 / 123, 84.6 % |
+
+V0 42 / 78, 68.7 %. The recorded arms reproduce stop 47. No Opus 5.5 row: it has no per-clause labels here.
+
+Pro against each arm under strict (sentences only one of the two gets right, sign test):
+
+| Against | Only Pro right | Only the other right | p |
+|---|---|---|---|
+| Gemini 3.8 Flash high | 29 | 6 | 0.0001 |
+| K2 student | 24 | 5 | 0.0005 |
+| K2 low, untrained | 28 | 18 | 0.18 |
+| Qwen 27B low | 16 | 11 | 0.44 |
+| Qwen 27B thinking off, untrained | 14 | 13 | 1.0 |
+
+Reading fixed before the run: Pro is a better judge than Flash (higher strict accuracy, p under 0.05). It is not
+told apart from the untrained Qwen 27B or the untrained K2.
+
+C2, stop 42 sets (false rollbacks / caught, accuracy under Replace strict; other rows from stop 44):
+
+| Arm | Part A (28 right, 6 wrong) | Part B (32 right, 8 wrong) | Statutes (116 right, 73 wrong) |
+|---|---|---|---|
+| Gemini 3.1 Pro low, per clause | 1 / 5, 94.1 % | 4 / 3, 77.5 % | 45 / 57, 67.7 % |
+| Gemini 3.8 Flash high, per clause | 6 / 6, 82.4 % | 7 / 8, 82.5 % | 54 / 67, 68.3 % |
+| Opus 4.6, batched | 1 / 5, 94.1 % | 1 / 3, 85.0 % | not run in full |
+| Opus 5.5, batched | 3 / 5, 88.2 % | 3 / 3, 80.0 % | not run |
+| Qwen 27B thinking off, untrained | 1 / 5, 94.1 % | 2 / 2, 80.0 % | 34 / 45, 67.2 % |
+| K2 low, untrained | 1 / 3, 88.2 % | 1 / 1, 80.0 % | 32 / 42, 66.7 % |
+
+Pro under Replace: Part A 94.1 %, Part B 82.5 %, statutes 64.6 %.
+
+C3, agreement of labels:
+
+| Set | Pair | Same |
+|---|---|---|
+| Fresh, 323 | Pro and Flash | 276, 85.4 % |
+| Stop 42 sets, 280 | Pro and Flash | 232, 82.9 % |
+| Part A and B, 106 | Pro and Opus 5.5 batched | 98, 92.5 % |
+| Stop 42 sets, 202 labelled | Pro and Opus 4.6 batched | 180, 89.1 % |
+| Audited training clauses, 500 | Pro and Opus 5.5 | 452, 90.4 % |
+| Audited training clauses, 500 | Pro and Flash | 451, 90.2 % |
+| Audited training clauses, 500 | Flash and Opus 5.5 | 410, 82.0 % |
+
+On the 90 audited clauses where Flash and Opus 5.5 differ, Pro sides with Opus 5.5 on 44, with Flash on 43 and
+with neither on 3. Labels on the 500 (supported, contradicted, not stated): Flash 249, 49, 202; Pro 272, 69, 159;
+Opus 5.5 288, 91, 121. Pro sits between the two. On the fresh test Pro says not stated 95 times and Flash 134;
+31 of their 47 differences are supported for Pro and not stated for Flash.
+
+C4, time and cost. Through the router, 4 calls at a time: p50 5.4 to 6.1 s per clause, p95 15 to 34 s. Tokens per
+call: 1,755 in and 524 out. $10.81 at the list prices, $0.0098 per clause. Up to 4 calls in flight when the run
+was restarted are not in the ledger (at most $0.05).
+
+Spend: Pro $10.81 of its $15 stop. Opus 5.5 unchanged at $7.67 of $40. Modal unchanged at $10.25 of $55.

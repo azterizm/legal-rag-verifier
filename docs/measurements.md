@@ -811,3 +811,33 @@ closed-book answer from one written with the source. Within one kind of answer i
 Caveats: the fresh test was already used after stop 47. The transformers replay matches the recorded token at
 88 % of positions. Qwen 27B ran from bf16 weights, not the FP8 weights of stop 47. Spend: $3.79, Modal $10.25 of
 $55. Raw: `results/awareness/`.
+
+## Gemini 3.1 Pro as a per-clause judge (stop 50, 2026-10-10; method in `docs/GRID.md`)
+
+Aim: test one more teacher candidate on data already held. `gemini-3.1-pro-low` labelled the 323 fresh clauses,
+the 280 stop 42 clauses and the 500 training clauses Opus 5.5 audited, with the stop 42 prompt unchanged.
+
+Fresh test, 358 graded sentences, Replace strict (false rollbacks / caught, accuracy):
+
+| Judge | Total | With source | Closed-book |
+|---|---|---|---|
+| Gemini 3.1 Pro low | 35 / 142, 88.5 % | 15 / 20, 89.6 % | 20 / 122, 87.7 % |
+| Qwen 27B thinking off, untrained | 26 / 132, 88.3 % | 12 / 13, 87.1 % | 14 / 119, 89.2 % |
+| Qwen 27B low | 35 / 137, 87.2 % | 14 / 17, 88.3 % | 21 / 120, 86.2 % |
+| K2 low, untrained | 22 / 119, 85.8 % | 10 / 12, 87.7 % | 12 / 107, 84.1 % |
+| K2 student | 52 / 140, 83.2 % | 25 / 17, 81.6 % | 27 / 123, 84.6 % |
+| Gemini 3.8 Flash high | 62 / 146, 82.1 % | 29 / 21, 81.6 % | 33 / 125, 82.6 % |
+
+Pro beats Flash: only Pro is right on 29 sentences and only Flash on 6 (sign test p = 0.0001). Pro is not told
+apart from the untrained Qwen 27B (14 against 13) or the untrained K2 (28 against 18, p = 0.18).
+
+Stop 42 sets, Replace strict: Pro 94.1 % on Part A, 77.5 % on Part B and 67.7 % on statutes, against Flash's
+82.4 %, 82.5 % and 68.3 %. These sets are small (34 and 40 texts for Part A and B).
+
+On the 500 audited training clauses Pro agrees with Opus 5.5 on 90.4 % and with Flash on 90.2 %; Flash and Opus
+5.5 agree on 82.0 %. Where those two differ, Pro sides with each about half the time (44 and 43 of 90). Not stated
+labels: Flash 202, Pro 159, Opus 5.5 121.
+
+Cost at list prices: $0.0098 per clause, $10.81 for 1,103 calls. Time through the router: p50 5.4 to 6.1 s per
+clause. Caveats: the fresh test has been used since stop 47; Opus 5.5 has no per-clause labels on it. Raw:
+`results/teacher_pro/`.

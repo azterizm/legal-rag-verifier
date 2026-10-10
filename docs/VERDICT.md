@@ -150,6 +150,9 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    untrained judges. None separated right from wrong well enough on held-out questions (AUROC 0.42 to 0.62,
    gate 0.65). A judge that wrongly says supported is reading the passages, so its attention looks normal. The
    retry loop built on this signal was not run.
+   A stronger labeller was tested per clause (stop 50). Gemini 3.1 Pro at low effort scored 88.5 % against
+   Flash's 82.1 %, with 35 false rollbacks against 62. That is level with the untrained Qwen 27B (88.3 %), so no
+   teacher tested per clause is yet above the best untrained judge.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

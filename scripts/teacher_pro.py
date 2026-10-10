@@ -148,7 +148,7 @@ def fresh_report() -> dict[str, Any]:
         paired[arm] = {
             "only_pro_right": only_pro,
             "only_other_right": only_other,
-            "p": round(sign_test(only_pro, only_other), 4),
+            "p": float(f"{sign_test(only_pro, only_other):.3g}"),
         }
     scores = {arm: fr.score(units, v) for arm, v in arms.items()}
     pro_acc = scores[f"{NAME} (strict)"]["total"]["accuracy"]
@@ -174,8 +174,9 @@ def dev_report() -> dict[str, Any]:
         lv: list(aj.requests([rec[t["key"]] for t in texts if t["level"] == lv]))
         for lv in check44.LEVELS
     }
-    keys = [k for lv in check44.LEVELS for k in by_level[lv]]
-    ab = by_level["A"] + by_level["B"]
+    # A prompt shared by two sets is counted once.
+    keys = list(dict.fromkeys(k for lv in check44.LEVELS for k in by_level[lv]))
+    ab = list(dict.fromkeys(by_level["A"] + by_level["B"]))
     pro, missing = filled(aj.read_labels(NAME), keys)
     v0 = aj.replay(texts, built, aj.TableScorer("v0", aj.read_table("v0")))
     flash = aj.read_labels("gemini")
