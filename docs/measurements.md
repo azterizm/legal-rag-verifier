@@ -782,3 +782,32 @@ split off by the segmenter. One prompt with the whole sheet agreed with your gra
 (Gemini) and 349 of 360 (Opus 5.5); the same Gemini model as the per-clause judge scores 82.1 %.
 
 Spend: Modal $6.46 of $55, Opus 5.5 $7.67 of $40. Raw: `results/distill/`, `results/fresh/`.
+
+## An awareness signal for the auditor (stop 48, 2026-10-10; method in `docs/GRID.md`)
+
+Aim: read from the model itself whether it was using its input, and use that to catch wrong sentences
+(generator) or wrong labels (judge). Two measures: the share of attention on the input, and how much the input
+raises the likelihood of the text. Measured on the 358 graded fresh sentences. Candidate and threshold are chosen
+on half of the questions and scored on the other half.
+
+| Direction | Model | Best candidate on the other half (AUROC) | Gate (0.65 each, 0.70 mean) |
+|---|---|---|---|
+| Generator | Qwen 2.5 7B | 0.58 and 0.56, within the same kind of answer | Failed |
+| Judge | K2 Horizon 7B, low effort | 0.53 and 0.62 | Failed |
+| Judge | Qwen3.8 27B, thinking off (bf16) | 0.43 and 0.42 | Failed |
+
+The retry loop (stop 49) did not run. As an auditor the generator signal scores 68.7 % alone and 71.5 % after the
+claim check, against 68.7 % for V0 and 83 to 88 % for the strict judges of stop 47. On answers written with the
+source its best threshold rolls back nothing.
+
+Why it fails for the judges: 28 of K2's 37 wrong labels and 15 of Qwen's 29 are supported on a wrong sentence, and
+those attend to the passages as much as right supported labels do. The signal tracks the label and the length of
+the passages. On software, where passages are short, it separates (0.74 to 0.80 on 10 to 16 wrong labels). A second
+sample of the same prompt turns as many labels wrong as right (K2 9 and 11, Qwen 4 and 4).
+
+Why it fails for the generator: over all sentences the likelihood measure scores 0.82, but that mostly tells a
+closed-book answer from one written with the source. Within one kind of answer it scores 0.67.
+
+Caveats: the fresh test was already used after stop 47. The transformers replay matches the recorded token at
+88 % of positions. Qwen 27B ran from bf16 weights, not the FP8 weights of stop 47. Spend: $3.79, Modal $10.25 of
+$55. Raw: `results/awareness/`.

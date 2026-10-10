@@ -1,0 +1,94 @@
+{
+ "judges": {
+  "k2-low": {
+   "wrong_labels": {
+    "not_stated on a right sentence": 5,
+    "supported on a wrong sentence": 28,
+    "contradicted on a right sentence": 4
+   },
+   "mean_by_label": {
+    "supported": {
+     "clauses": 220,
+     "att_all": 0.207,
+     "dep": 0.806
+    },
+    "not_stated": {
+     "clauses": 71,
+     "att_all": 0.164,
+     "dep": 0.518
+    },
+    "contradicted": {
+     "clauses": 30,
+     "att_all": 0.186,
+     "dep": 0.778
+    }
+   },
+   "by_domain": {
+    "software": {
+     "passage_tokens_p50": 83,
+     "rho_attention_passage_tokens": 0.307
+    },
+    "statutes": {
+     "passage_tokens_p50": 1266,
+     "rho_attention_passage_tokens": 0.509
+    }
+   }
+  },
+  "qwen27-nothink": {
+   "wrong_labels": {
+    "not_stated on a right sentence": 9,
+    "supported on a wrong sentence": 15,
+    "contradicted on a right sentence": 5
+   },
+   "mean_by_label": {
+    "supported": {
+     "clauses": 202,
+     "att_all": 0.374,
+     "dep": 0.776
+    },
+    "not_stated": {
+     "clauses": 79,
+     "att_all": 0.305,
+     "dep": 0.683
+    },
+    "contradicted": {
+     "clauses": 40,
+     "att_all": 0.341,
+     "dep": 0.818
+    }
+   },
+   "by_domain": {
+    "software": {
+     "passage_tokens_p50": 89,
+     "rho_attention_passage_tokens": 0.284
+    },
+    "statutes": {
+     "passage_tokens_p50": 1352,
+     "rho_attention_passage_tokens": 0.343
+    }
+   }
+  }
+ },
+ "generator": {
+  "source, right": {
+   "sentences": 141,
+   "att_mid": 0.198,
+   "dep": 1.275
+  },
+  "source, wrong": {
+   "sentences": 22,
+   "att_mid": 0.177,
+   "dep": 0.862
+  },
+  "closed, right": {
+   "sentences": 69,
+   "att_mid": 0.163,
+   "dep": -0.816
+  },
+  "closed, wrong": {
+   "sentences": 126,
+   "att_mid": 0.141,
+   "dep": -1.299
+  }
+ }
+}

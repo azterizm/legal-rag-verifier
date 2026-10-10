@@ -1177,3 +1177,94 @@ Spend and fail safe. Every GPU job runs in chunks. Each result is appended to JS
 and a rerun skips what is done. A failed chunk is reported and retried on the next run. The Modal ledger is checked
 before each chunk and charged the wall-clock time of each chunk after it, failed or not. Stage stops in code: $12
 for stop 48, $15 for stop 49, inside the $55 cap ($6.46 spent).
+
+### Stop 48: results (2026-10-10)
+
+All three gates fail. Stop 49 does not run. Raw: `results/awareness/` (`generator.jsonl`, `k2-low.jsonl`,
+`qwen27-nothink.jsonl`, `report48.json`). Scored by `uv run python scripts/awareness.py report48`.
+
+Departures from the method:
+- Qwen3.8 27B ran from its bf16 weights (`Qwen/Qwen3.8-27B` at `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`), the
+  fallback fixed above. Transformers loads the FP8 file but cannot run it in this image: the FP8 kernel package is
+  missing and one group of weights is not matched. The labels of stop 47 came from the FP8 weights on SGLang.
+- Qwen3.8 27B has 64 layers, of which 16 are attention layers. The attention share uses those 16.
+- K2's code computes attention weights and drops them. They were read at its attention modules (36 layers). The
+  dependence-only fallback was not needed.
+- A retry rule detail not written above: a reply that never parses cannot be the kept attempt unless nothing else
+  exists. Not used, since no loop ran.
+
+Check on the replay: 88.4 % of answer tokens equal the model's top token under the prompt they were written with
+(stop 29 measured 92 to 94 %). The judges' labels in transformers agree with the recorded SGLang labels on 291 of
+323 clauses (K2, temperature 1.0) and 309 of 323 (Qwen). K2 needed a second sample for 2 replies. No reply stayed
+unparsed.
+
+A1, generator (Qwen 2.5 7B), AUROC of right against wrong sentences:
+
+| Sentences (right / wrong) | Attention all | Lower | Middle | Upper | Dependence |
+|---|---|---|---|---|---|
+| Total (210 / 148) | 0.66 | 0.56 | 0.71 | 0.66 | 0.82 |
+| Software (117 / 53) | 0.72 | 0.68 | 0.72 | 0.71 | 0.73 |
+| Statutes (93 / 95) | 0.80 | 0.69 | 0.84 | 0.77 | 0.87 |
+| With source (141 / 22) | 0.61 | 0.54 | 0.61 | 0.65 | 0.65 |
+| Closed-book (69 / 126) | 0.56 | 0.46 | 0.62 | 0.54 | 0.67 |
+| Within kind, the gate | 0.57 | 0.48 | 0.62 | 0.57 | 0.67 |
+
+Gate for G: fold 0 chose dependence, 0.58 on the other fold. Fold 1 chose attention middle, 0.56. Both are under
+0.65. Failed. Over all pairs, where the kind of answer helps, dependence scores 0.82 on each fold. That figure
+mostly tells a closed-book answer from one written with the source.
+
+A3, the generator signal as the auditor (false rollbacks / caught, accuracy), beside stop 47:
+
+| Arm | Software | Statutes | With source | Closed-book | Total |
+|---|---|---|---|---|---|
+| Signal alone | 27 / 24, 67.1 % | 9 / 48, 70.2 % | 4 / 2, 85.3 % | 32 / 70, 54.9 % | 36 / 72, 68.7 % |
+| Claim check then signal | 30 / 26, 66.5 % | 15 / 65, 76.1 % | 10 / 5, 83.4 % | 35 / 86, 61.5 % | 45 / 91, 71.5 % |
+| V0 (stop 47) | 22 / 18, 66.5 % | 20 / 60, 70.7 % | 77.3 % | 61.5 % | 42 / 78, 68.7 % |
+| K2 low, strict (stop 47) | | | | | 22 / 119, 85.8 % |
+
+With-source answers alone, threshold tuned on with-source sentences: the best threshold rolls back nothing (86.5 %,
+the same as no auditor).
+
+A2, judges, AUROC of right labels against wrong labels:
+
+| Judge, clauses (right / wrong labels) | Attention all | Lower | Middle | Upper | Dependence |
+|---|---|---|---|---|---|
+| K2 low, total (284 / 37) | 0.54 | 0.54 | 0.57 | 0.51 | 0.57 |
+| K2 low, software (144 / 16) | 0.74 | 0.74 | 0.76 | 0.68 | 0.72 |
+| K2 low, statutes (140 / 21) | 0.54 | 0.56 | 0.56 | 0.50 | 0.45 |
+| K2 low, supported labels (192 / 28) | 0.55 | 0.54 | 0.61 | 0.49 | 0.61 |
+| Qwen 27B, total (292 / 29) | 0.49 | 0.49 | 0.50 | 0.49 | 0.46 |
+| Qwen 27B, software (150 / 10) | 0.80 | 0.76 | 0.79 | 0.80 | 0.62 |
+| Qwen 27B, statutes (142 / 19) | 0.48 | 0.49 | 0.49 | 0.47 | 0.38 |
+| Qwen 27B, supported labels (187 / 15) | 0.44 | 0.44 | 0.46 | 0.41 | 0.42 |
+
+Gate for J. K2: both folds chose attention middle, 0.53 and 0.62 on the other fold. Failed. Qwen 27B: attention
+middle 0.43 and dependence 0.42. Failed.
+
+The attempt in transformers, scored as in stop 47 under Replace strict: K2 22 / 121, 86.3 % (recorded 22 / 119,
+85.8 %); Qwen 27B 27 / 134, 88.5 % (recorded 26 / 132, 88.3 %). The recorded arms reproduce stop 47.
+
+A4, time. Generator: 0.24 s per sentence at p50 for both passes; the pass without the source is 0.16 s per answer.
+K2: 3.3 s per clause at p50 and 9.6 s at p95 to generate token by token, and 0.09 s for the pass without passages.
+Qwen 27B: 5.5 s and 7.5 s, and 0.33 s. The attention share is read during generation at no extra pass. These
+times are from transformers and are not comparable with SGLang's.
+
+Spend: stop 48 $3.79 (stage stop $12). Modal $10.25 of $55. No router call.
+
+### Stop 48: readings added after the run (2026-10-10, not pre-registered)
+
+`uv run python scripts/awareness.py posthoc48`, raw in `results/awareness/posthoc48.json`.
+
+- The signal follows the label, not whether the label is right. Mean attention share by label, K2: supported 0.21,
+  contradicted 0.19, not stated 0.16. Qwen 27B: 0.37, 0.34, 0.31.
+- Most wrong labels are supported on a wrong sentence: 28 of 37 for K2 and 15 of 29 for Qwen 27B. These have
+  attention as high as right supported labels. The judge is reading the passages when it makes this error. It is
+  not falling back on memory.
+- The attention share rises with the length of the passages (rank correlation 0.28 to 0.51). Statute passages
+  are about 15 times longer than software passages (1,266 against 83 tokens at p50 for K2). On software alone the
+  signal separates (0.74 to 0.80), on 10 to 16 wrong labels.
+- A second sample of the same prompt changes 32 of K2's labels: 11 become right and 9 become wrong. For Qwen 27B 14
+  change, 4 each way. Asking again without a working signal is a coin toss.
+- Generator, means within kind. With source: dependence 1.28 for right sentences and 0.86 for wrong; attention
+  middle 0.20 and 0.18. Closed-book: -0.82 and -1.30; 0.16 and 0.14. The direction is as expected and the overlap
+  is large.

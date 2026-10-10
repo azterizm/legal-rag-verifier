@@ -143,6 +143,11 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    segmenter splitting list numbers into sentences that the claim check then rejects as figures. Also test a
    judge that sees the question and the whole source. In one prompt with both, Gemini agreed with the hand grades
    on 91 % of sentences and Claude Opus 5.5 on 97 %, against 82 % for Gemini as the per-clause judge.
+   A signal read from the model itself does not replace or improve the judge as tested (stop 48). The share of
+   attention on the input and the gain in likelihood from the input were measured for the generator and for two
+   untrained judges. None separated right from wrong well enough on held-out questions (AUROC 0.42 to 0.62,
+   gate 0.65). A judge that wrongly says supported is reading the passages, so its attention looks normal. The
+   retry loop built on this signal was not run.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

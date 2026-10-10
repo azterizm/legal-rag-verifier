@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stops 48 and 49 (awareness signal; your direction and go, 2026-10-10). Method fixed in GRID. Next: code, probe, stop 48 runs on Modal |
-| Waiting on you | Nothing for stop 48. Still open from stop 47: (1) go to stop list numbers being split into sentences and checked as figures (a change in `src/`, dev replays move); (2) whether to test a judge that sees the question and the full source; (3) an Opus 5.5 teacher check. The Qwen 27B student is dropped (your decision) |
+| Next step | Stop 48 is scored: the awareness signal fails all three gates, so stop 49 (the retry loop) did not run. Halted for your decision. No paid run is queued |
+| Waiting on you | (1) Stop 49: accept the stop, or run the judge loop anyway as an ungated test (about $5 to $10 of Modal; the second-sample reading says a retry is a coin toss); (2) a follow-up limited to software or to a length-normalised attention share needs a new graded set; (3) still open from stop 47: list numbers split by the segmenter (`src/` change), a judge that sees the question and the full source, an Opus 5.5 teacher check |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-10 (48): **Awareness signal, offline; all gates fail.** Your direction. Method fixed in GRID before any
+  run. Attention share on the input and likelihood gain from the input, read in transformers for Qwen 2.5 7B (L4,
+  160 answers), K2 low (L40S) and Qwen 27B thinking off (H100, bf16 fallback), 323 clauses each. AUROC on held-out
+  questions: generator 0.58 and 0.56 within kind, K2 0.53 and 0.62, Qwen 27B 0.43 and 0.42 (gate 0.65). Generator
+  signal as auditor 71.5 % after the claim check (strict judges 83 to 88 %). Wrong supported labels attend to the
+  passages like right ones. Stop 49 not run. Spend $3.79; Modal $10.25 of $55. **Resume:** your decision in Status.
 
 - 2026-10-10 (47): **Fresh test scored once.** 358 graded sentences (210 right, 148 wrong). V0 68.7 %. Gemini
   Replace 73.5 %, Qwen 27B low strict 87.2 %, K2 student strict 83.2 % at 1.7 s p95. The student meets the
