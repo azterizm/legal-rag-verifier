@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 51 (your go): Opus 5.5 high per clause on the 323 fresh clause prompts, scored as stop 50. Method fixed in GRID before any call. Opus 5.5 ledger stops at $16 for this stop |
-| Waiting on you | (1) The teacher: Pro (about $43 for the 4,433 training clauses at list price), Opus 5.5, or no teacher; no candidate tested per clause is above the untrained Qwen 27B. (2) Still open: stop 49 stays not run unless you ask for an ungated test; list numbers split by the segmenter (`src/` change); a per-sentence judge that also sees the question and the source as written; Opus 5.5 per clause on the fresh test |
+| Next step | Stop 51 is scored: Opus 5.5 high per clause scores 89.1 % strict on the fresh test, level with Pro (88.5 %) and the untrained Qwen 27B (88.3 %). No judge tested per clause is above the untrained Qwen 27B. Halted for your decision. No paid run is queued |
+| Waiting on you | (1) What to do with the auditor now that a per-clause teacher adds no accuracy: fix the claim check's 12 false rollbacks (`src/` change, includes list numbers split by the segmenter); test a per-sentence judge that also sees the question and the source as written; or train K2 on Opus 5.5 or Pro labels for speed only. (2) Stop 49 stays not run unless you ask for an ungated test |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-10 (51): **Opus 5.5 high as a per-clause judge on the fresh test.** Your go. Method fixed in GRID before
+  any call. 323 calls, all labels valid. Strict: Opus 5.5 23 / 132, 89.1 %; Pro 88.5 % (15 against 13 sentences);
+  untrained Qwen 27B 88.3 % (19 against 16); untrained K2 85.8 % (23 against 11, p = 0.058). Added after the run:
+  the claim check accounts for 12 of Opus 5.5's 23 false rollbacks; the majority label of the three best judges
+  scores 90.2 %. $3.90; Opus 5.5 $11.57 of $40. **Resume:** your decision in Status.
 
 - 2026-10-10 (50): **Gemini 3.1 Pro low as a per-clause judge.** Your direction, one model, no whole-sheet prompt.
   Method fixed in GRID before any call. 1,103 calls, all labels valid. Fresh test strict: Pro 35 / 142, 88.5 %;

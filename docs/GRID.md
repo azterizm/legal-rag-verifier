@@ -1396,3 +1396,65 @@ Your go: "proceed with opus 5.5 via router". This fills the row missing from sto
 - Fail safe: each label is appended as it returns, keyed by prompt hash; a rerun asks only what is missing.
 - Spend: expected $4 to $5. For this stop the Opus 5.5 ledger stops at $16 ($7.67 spent before it). The $40 cap
   is unchanged. Modal: none.
+
+### Stop 51: results (2026-10-10)
+
+`uv run python scripts/teacher_opus.py report`, raw in `results/teacher_opus/report.json`. 323 calls, every label
+valid, none counted as not stated, no retry.
+
+D1, fresh test, 358 graded sentences (false rollbacks / caught, accuracy):
+
+| Judge | Replace | Replace strict | Software, strict | Statutes, strict | With source, strict | Closed-book, strict |
+|---|---|---|---|---|---|---|
+| Opus 5.5 high | 20 / 91, 78.5 % | 23 / 132, 89.1 % | 12 / 45, 88.2 % | 11 / 87, 89.9 % | 12 / 19, 90.8 % | 11 / 113, 87.7 % |
+| Gemini 3.1 Pro low | 22 / 87, 76.8 % | 35 / 142, 88.5 % | 15 / 49, 88.8 % | 20 / 93, 88.3 % | 15 / 20, 89.6 % | 20 / 122, 87.7 % |
+| Qwen 27B thinking off, untrained | 21 / 78, 74.6 % | 26 / 132, 88.3 % | 11 / 48, 90.6 % | 15 / 84, 86.2 % | 12 / 13, 87.1 % | 14 / 119, 89.2 % |
+| Qwen 27B low | 26 / 86, 75.4 % | 35 / 137, 87.2 % | 16 / 48, 87.6 % | 19 / 89, 86.7 % | 14 / 17, 88.3 % | 21 / 120, 86.2 % |
+| K2 low, untrained | 19 / 71, 73.2 % | 22 / 119, 85.8 % | 10 / 43, 88.2 % | 12 / 76, 83.5 % | 10 / 12, 87.7 % | 12 / 107, 84.1 % |
+| K2 student | 28 / 78, 72.6 % | 52 / 140, 83.2 % | 24 / 50, 84.1 % | 28 / 90, 82.4 % | 25 / 17, 81.6 % | 27 / 123, 84.6 % |
+| Gemini 3.8 Flash high | 30 / 83, 73.5 % | 62 / 146, 82.1 % | 33 / 51, 79.4 % | 29 / 95, 84.6 % | 29 / 21, 81.6 % | 33 / 125, 82.6 % |
+
+V0 42 / 78, 68.7 %. The recorded arms and Pro reproduce stops 47 and 50.
+
+D2, Opus 5.5 against each arm under strict:
+
+| Against | Only Opus 5.5 right | Only the other right | p | Opus 5.5 better by the fixed reading |
+|---|---|---|---|---|
+| Gemini 3.1 Pro low | 15 | 13 | 0.85 | No |
+| Qwen 27B thinking off, untrained | 19 | 16 | 0.74 | No |
+| Qwen 27B low | 20 | 13 | 0.30 | No |
+| K2 low, untrained | 23 | 11 | 0.058 | No |
+| K2 student | 37 | 16 | 0.005 | Yes |
+| Gemini 3.8 Flash high | 40 | 15 | 0.001 | Yes |
+
+Opus 5.5 is not told apart from Pro, the untrained Qwen 27B or the untrained K2. No judge tested per clause is
+above the untrained Qwen 27B.
+
+D3, labels on the 323 clauses (supported, contradicted, not stated): Opus 5.5 209, 55, 59; Pro 187, 41, 95; Qwen
+27B thinking off 205, 36, 82; Flash 154, 35, 134. Opus 5.5 has the same label as Pro on 282 (87.3 %), as the
+untrained Qwen 27B on 271 (83.9 %) and as Flash on 243 (75.2 %).
+
+D4, time and cost. Through the router, 2 calls at a time: p50 3.0 s per clause, p95 6.9 s. Tokens per call: 1,823
+in and 239 out. $3.90 for the 323 calls, $0.0121 per clause.
+
+Spend: Opus 5.5 $11.57 of $40 (stop 51 $3.90, stage stop not reached). Pro $10.81 of $15. Modal $10.25 of $55.
+
+### Stop 51: readings added after the run (2026-10-10, not pre-registered)
+
+`uv run python scripts/teacher_opus.py posthoc`, raw in `results/teacher_opus/posthoc.json`. The three best strict
+judges are Opus 5.5, Pro and the untrained Qwen 27B.
+
+| Judge | False rollbacks | Of which by the claim check | Wrong sentences missed |
+|---|---|---|---|
+| Opus 5.5 high | 23 | 12 | 16 |
+| Gemini 3.1 Pro low | 35 | 12 | 6 |
+| Qwen 27B thinking off, untrained | 26 | 12 | 16 |
+
+- The claim check runs before the judge and rolls back the same 12 right sentences in every arm. That is half of
+  Opus 5.5's false rollbacks. A perfect judge behind it scores 96.6 %.
+- 21 sentences are wrong for all three judges: 16 right sentences rolled back (12 by the claim check) and 5 wrong
+  sentences passed.
+- At least one of the three is right on 337 sentences, 94.1 %. The majority label of the three scores 27 / 140,
+  90.2 % under strict.
+- The per-clause prompt tops out near 89 to 90 % on this test whatever the model. A frontier model does not lift
+  it. What is left is the claim check's 12 sentences and what the judge is shown.
