@@ -841,3 +841,29 @@ labels: Flash 202, Pro 159, Opus 5.5 121.
 Cost at list prices: $0.0098 per clause, $10.81 for 1,103 calls. Time through the router: p50 5.4 to 6.1 s per
 clause. Caveats: the fresh test has been used since stop 47; Opus 5.5 has no per-clause labels on it. Raw:
 `results/teacher_pro/`.
+
+## Opus 5.5 as a per-clause judge (stop 51, 2026-10-10; method in `docs/GRID.md`)
+
+Aim: fill the row missing from stop 50. `claude-opus-5-5(high)` labelled the 323 fresh clauses with the stop 42
+prompt unchanged.
+
+Fresh test, 358 graded sentences, Replace strict (false rollbacks / caught, accuracy):
+
+| Judge | Total | With source | Closed-book |
+|---|---|---|---|
+| Opus 5.5 high | 23 / 132, 89.1 % | 12 / 19, 90.8 % | 11 / 113, 87.7 % |
+| Gemini 3.1 Pro low | 35 / 142, 88.5 % | 15 / 20, 89.6 % | 20 / 122, 87.7 % |
+| Qwen 27B thinking off, untrained | 26 / 132, 88.3 % | 12 / 13, 87.1 % | 14 / 119, 89.2 % |
+| K2 low, untrained | 22 / 119, 85.8 % | 10 / 12, 87.7 % | 12 / 107, 84.1 % |
+| Gemini 3.8 Flash high | 62 / 146, 82.1 % | 29 / 21, 81.6 % | 33 / 125, 82.6 % |
+
+Opus 5.5 is not told apart from Pro (15 against 13 sentences), the untrained Qwen 27B (19 against 16) or the
+untrained K2 (23 against 11, p = 0.058). It beats Flash (40 against 15, p = 0.001) and the K2 student (37 against
+16, p = 0.005). No judge tested per clause is above the untrained Qwen 27B.
+
+Added after the run: the claim check rolls back the same 12 right sentences before every judge, half of Opus
+5.5's 23 false rollbacks. At least one of the three best judges is right on 94.1 % of sentences; their majority
+label scores 90.2 %. The per-clause prompt tops out near 89 to 90 % on this test whatever the model.
+
+Cost: $3.90 for 323 calls, $0.0121 per clause. Time through the router: p50 3.0 s, p95 6.9 s. Caveat: the fresh
+test has been used since stop 47. Raw: `results/teacher_opus/`.

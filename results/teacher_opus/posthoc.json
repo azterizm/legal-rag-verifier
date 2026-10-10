@@ -1,0 +1,44 @@
+{
+ "judges": [
+  "opus55",
+  "gemini-pro-low",
+  "qwen27-nothink"
+ ],
+ "errors": {
+  "opus55": {
+   "false_rollbacks": 23,
+   "of_which_claim_check": 12,
+   "missed": 16
+  },
+  "gemini-pro-low": {
+   "false_rollbacks": 35,
+   "of_which_claim_check": 12,
+   "missed": 6
+  },
+  "qwen27-nothink": {
+   "false_rollbacks": 26,
+   "of_which_claim_check": 12,
+   "missed": 16
+  }
+ },
+ "wrong_for_all_three": {
+  "sentences": 21,
+  "right_sentences": 16,
+  "wrong_sentences": 5,
+  "by_claim_check": 12
+ },
+ "at_least_one_right": {
+  "sentences": 337,
+  "rate": 0.941
+ },
+ "majority_of_three_strict": {
+  "texts": 358,
+  "right": 210,
+  "wrong": 148,
+  "false_rollbacks": 27,
+  "caught": 140,
+  "false_rollbacks_by_nli": 0,
+  "caught_by_nli": 0,
+  "accuracy": 0.902
+ }
+}

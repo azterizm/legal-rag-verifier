@@ -150,9 +150,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    untrained judges. None separated right from wrong well enough on held-out questions (AUROC 0.42 to 0.62,
    gate 0.65). A judge that wrongly says supported is reading the passages, so its attention looks normal. The
    retry loop built on this signal was not run.
-   A stronger labeller was tested per clause (stop 50). Gemini 3.1 Pro at low effort scored 88.5 % against
-   Flash's 82.1 %, with 35 false rollbacks against 62. That is level with the untrained Qwen 27B (88.3 %), so no
-   teacher tested per clause is yet above the best untrained judge.
+   Stronger labellers were tested per clause (stops 50 and 51). Gemini 3.1 Pro at low effort scored 88.5 % and
+   Claude Opus 5.5 89.1 %, against Flash's 82.1 %. Both are level with the untrained Qwen 27B (88.3 %), so a
+   frontier teacher adds no accuracy with this prompt. The per-clause judge tops out near 89 to 90 % on this
+   test. Half of Opus 5.5's 23 false rollbacks come from the claim check, which runs before the judge.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

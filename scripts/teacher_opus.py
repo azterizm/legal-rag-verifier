@@ -6,6 +6,7 @@ returns; a rerun asks only what is missing, and the model stops cleanly at this 
   uv run python scripts/teacher_opus.py smoke     # one call
   uv run python scripts/teacher_opus.py fresh     # 323 fresh clause prompts
   uv run python scripts/teacher_opus.py report    # → results/teacher_opus/report.json
+  uv run python scripts/teacher_opus.py posthoc   # readings added after the run → posthoc.json
 """
 
 from __future__ import annotations
@@ -13,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -35,6 +37,11 @@ STAGE_STOP = 16.0  # the Opus 5.5 ledger stops here for this stop (GRID § Stop 
 BEFORE = {"calls": 571, "input_tokens": 1247284.0, "output_tokens": 133798.0, "usd": 7.665096}
 OTHERS = (tp.NAME, *fp.JUDGES)
 PEERS = (tp.NAME, "gemini", "qwen27-nothink")
+TOP = (
+    NAME,
+    tp.NAME,
+    "qwen27-nothink",
+)  # the three best strict judges, for the readings after the run
 
 
 def better(mine: float, theirs: float, p: float) -> bool:
@@ -123,12 +130,75 @@ def report() -> None:
     print("no valid label:", missing)
 
 
+def majority(
+    labels: dict[str, dict[str, dict[str, Any]]], keys: list[str]
+) -> dict[str, dict[str, Any]]:
+    """The label two of the three judges give, with one of their passages; else not stated."""
+    out = {}
+    for k in keys:
+        label, n = Counter(labels[name][k]["label"] for name in TOP).most_common(1)[0]
+        if n < 2:  # noqa: PLR2004 - two of three
+            out[k] = {"label": "not_stated", "passage": 0}
+            continue
+        source = next(name for name in TOP if labels[name][k]["label"] == label)
+        out[k] = {"label": label, "passage": labels[source][k]["passage"]}
+    return out
+
+
+def posthoc() -> None:
+    """Not pre-registered: where the three best strict judges fail together."""
+    graded = fe.grades()
+    us, built, rec = fe.recorded()
+    by_key = {u["key"]: u for u in us}
+    units = [
+        {**by_key[k], "right": g == "yes", "wrong": g == "no"}
+        for k, g in graded.items()
+        if g != "unsure"
+    ]
+    keys = list(aj.requests(rec))
+    labels = {name: tp.filled(fe.read(name), keys)[0] for name in TOP}
+    verdicts = {
+        name: aj.replay(us, built, aj.JudgeScorer(name, labels[name]), aj.STRICT) for name in TOP
+    }
+    by_claim_check = {r["key"] for r in rec if r["claim_rollback"]}
+    out: dict[str, Any] = {"judges": list(TOP), "errors": {}}
+    for name in TOP:
+        rolled = {u["key"] for u in units if fr._rolled(verdicts[name][u["key"]])}
+        false = [u for u in units if u["right"] and u["key"] in rolled]
+        out["errors"][name] = {
+            "false_rollbacks": len(false),
+            "of_which_claim_check": sum(u["key"] in by_claim_check for u in false),
+            "missed": sum(u["wrong"] and u["key"] not in rolled for u in units),
+        }
+    ok = {
+        name: {u["key"]: fr._rolled(verdicts[name][u["key"]]) == u["wrong"] for u in units}
+        for name in TOP
+    }
+    shared = [u for u in units if not any(ok[name][u["key"]] for name in TOP)]
+    out["wrong_for_all_three"] = {
+        "sentences": len(shared),
+        "right_sentences": sum(u["right"] for u in shared),
+        "wrong_sentences": sum(u["wrong"] for u in shared),
+        "by_claim_check": sum(u["key"] in by_claim_check for u in shared),
+    }
+    any_right = sum(any(ok[name][u["key"]] for name in TOP) for u in units)
+    out["at_least_one_right"] = {"sentences": any_right, "rate": round(any_right / len(units), 3)}
+    vote = aj.replay(us, built, aj.JudgeScorer("vote", majority(labels, keys)), aj.STRICT)
+    out["majority_of_three_strict"] = fr.score(units, vote)["total"]
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "posthoc.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps(out, indent=1))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["smoke", "fresh", "report"])
+    parser.add_argument("command", choices=["smoke", "fresh", "report", "posthoc"])
     command = parser.parse_args().command
     if command == "report":
         report()
+        return
+    if command == "posthoc":
+        posthoc()
         return
     router.CAPS[router.OPUS55] = min(router.CAPS[router.OPUS55], STAGE_STOP)
     asked = tp.fresh_prompts()
