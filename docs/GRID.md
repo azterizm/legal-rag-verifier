@@ -1273,3 +1273,35 @@ Spend: stop 48 $3.79 (stage stop $12). Modal $10.25 of $55. No router call.
 - Generator, means within kind. With source: dependence 1.28 for right sentences and 0.86 for wrong; attention
   middle 0.20 and 0.18. Closed-book: -0.82 and -1.30; 0.16 and 0.14. The direction is as expected and the overlap
   is large.
+
+## Stop 50: Gemini 3.1 Pro as a per-clause judge (method fixed 2026-10-10, before any call)
+
+Your direction: test one more teacher candidate on data we already hold, and put it beside Gemini 3.8 Flash and
+Opus 5.5. No whole-sheet prompt: it cannot run in production. Stop 49 (the retry loop) stays not run.
+
+- Model: `gemini-3.1-pro-low` on the router, the id you gave. No other new model is called.
+- Prompt: the stop 42 per-clause prompt, unchanged (sha256 `72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b`). Temperature 0, one clause per
+  call, at most 3 asks for a valid reply, as for Flash.
+- Sets, in this order:
+  1. The fresh test, 323 clause prompts. Scored with your grades in the stop 47 table, under Replace and Replace
+     strict, beside the recorded arms.
+  2. The stop 42 sets, 280 clause prompts (Part A, Part B, statutes). Scored in the stop 44 table beside Flash per
+     clause, Opus 4.6 batched, Opus 5.5 batched (Part A and B only) and the two untrained judges.
+  3. The 500 training clauses that Opus 5.5 audited in stop 45. No grades exist for these.
+- Readings:
+  - C1, fresh: false rollbacks, caught and accuracy in total, per domain and per kind of answer. Pro against each
+    recorded arm under strict: sentences only one of the two gets right, and an exact two-sided sign test.
+  - C2, stop 42 sets: accuracy under Replace and Replace strict per set.
+  - C3, agreement of labels: Pro with Flash on all three sets, Pro with Opus 5.5 on Part A, Part B and the 500.
+    On the 500, where Flash and Opus 5.5 differ, which of the two Pro sides with.
+  - C4: time per clause through the router (p50, p95), tokens and cost per clause.
+- Reading fixed now: Pro counts as a better judge than Flash only if its strict accuracy on the fresh test is
+  higher and the sign test gives p under 0.05. Otherwise the two are not told apart. No teacher is chosen by this
+  stop; you decide after the figures.
+- A clause with no valid label after two reruns counts as not stated, and the count is reported.
+- Limits. Opus 5.5 has no per-clause labels on the fresh test, so the fresh table has no Opus 5.5 row. Its rows on
+  Part A and B come from batched calls and Pro's from per-clause calls. The fresh test has been used since stop 47;
+  this stop is exploratory on it.
+- Fail safe: each label is appended as it returns, keyed by prompt hash; a rerun asks only what is missing.
+- Spend: priced in the ledger at $2.00 and $12.00 per million input and output tokens (the list prices you gave;
+  what the router bills is not known to this repo). Hard stop at $15 in code. Modal: none.
