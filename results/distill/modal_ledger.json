@@ -2140,5 +2140,47 @@
   "seconds": 11.2,
   "usd": 0.007,
   "note": "40 answers"
+ },
+ {
+  "run": "stop57 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 472.3,
+  "usd": 0.2942,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop57 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 14.2,
+  "usd": 0.0088,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop57 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.2,
+  "usd": 0.0064,
+  "note": "p42: 34 labels, 0 errors"
+ },
+ {
+  "run": "stop57 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 20.2,
+  "usd": 0.0126,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop57 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 14.5,
+  "usd": 0.009,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop57 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.2,
+  "usd": 0.007,
+  "note": "notes2: 34 labels, 0 errors"
  }
 ]
