@@ -280,6 +280,48 @@ class _JudgeServer:
         self.server.terminate()
 
     @modal.method()
+    def generate(self, chunk: list[dict[str, Any]]) -> dict[str, Any]:
+        """Answers from this model with the generator's decoding (stop 43: temperature 0, at most
+        512 new tokens) and this judge's template (thinking off for Qwen 27B)."""
+        spec = JUDGES[self.name]
+
+        def one(request: dict[str, Any]) -> dict[str, Any]:
+            body = {
+                "model": spec["model"],
+                "messages": request["messages"],
+                "temperature": 0,
+                "max_tokens": 512,
+                "chat_template_kwargs": spec["template"],
+            }
+            error = ""
+            for attempt in range(3):
+                try:
+                    req = urllib.request.Request(  # noqa: S310 - the container's own server
+                        f"{self.url}/v1/chat/completions",
+                        data=json.dumps(body).encode(),
+                        headers={"Content-Type": "application/json"},
+                    )
+                    with urllib.request.urlopen(req, timeout=600) as r:  # noqa: S310
+                        out = json.loads(r.read())
+                    choice = out["choices"][0]
+                    return {
+                        "key": request["key"],
+                        "text": choice["message"]["content"],
+                        "finish": choice.get("finish_reason"),
+                        "tokens": out.get("usage", {}).get("completion_tokens"),
+                        "model": f"{spec['model']}@{spec['revision']}",
+                    }
+                except OSError as exc:
+                    error = repr(exc)
+                    time.sleep(5 * (attempt + 1))
+            return {"key": request["key"], "text": None, "error": error}
+
+        t0 = time.time()
+        with ThreadPoolExecutor(WORKERS) as pool:
+            results = list(pool.map(one, chunk))
+        return {"results": results, "seconds": time.time() - t0, "startup": self.startup}
+
+    @modal.method()
     def judge(self, requests: dict[str, str], workers: int) -> dict[str, Any]:
         from auditor_judge import judge_all, server_chat  # noqa: PLC0415
 
@@ -926,12 +968,50 @@ def quant_l4(name: str = "qwen27-ar4-l4") -> None:
 
 
 ARMS_STAGE = "stop52-53"
-ARMS_STOPS = {
+ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     ARMS_STAGE: 8.0,
     "stop54": 3.0,
     "stop55": 6.0,
     "stop56": 6.0,
-}  # USD, GRID § Stops 52 to 54
+    "stop57": 5.0,
+}
+
+
+@app.local_entrypoint()
+def fresh_answers_by(name: str = "qwen27-ar4", stage: str = "stop57") -> None:
+    """Stop 57: the fresh questions answered by a judge model as the generator. Needs a set named
+    for its generator (FRESH_SET=fresh2-q27), so the 7B's answers are never appended to."""
+    fresh, ledger = _local()
+    if "-" not in fresh.SET:
+        raise SystemExit("set FRESH_SET to a set named for its generator, such as fresh2-q27")
+    done = fresh.answers()
+    todo = [r for r in fresh.requests() if r["key"] not in done]
+    print(f"{fresh.SET}: {len(done)} done, {len(todo)} to answer", flush=True)
+    if not todo:
+        return
+    gpu = JUDGES[name]["gpu"]
+    server = JUDGE_CLASSES[gpu](name=name)
+    startup_recorded = False
+    for at in range(0, len(todo), CHUNK):
+        ledger.check_stage(stage, ARMS_STOPS[stage], gpu, ARMS_ESTIMATE)
+        t0 = time.time()
+        seconds, note = 0.0, "failed"
+        try:
+            out = server.generate.remote(todo[at : at + CHUNK])
+            good = [r for r in out["results"] if r.get("text") is not None]
+            fresh.append_answers(good)
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            note = f"{len(good)} answers"
+        except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+            seconds = time.time() - t0
+            print(f"{name}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+        finally:
+            ledger.record(f"{stage} answers {name}", gpu, seconds, note)
+        print(f"{name}: {min(at + CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
+
+
 ARMS_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
 
 
