@@ -402,6 +402,9 @@ def quant() -> None:
         base = read(QWEN, kind)
         for title, name in QUANT.items():
             labels = read(name, kind)
+            if not labels:  # the server could not load these weights (GRID § Stop 55)
+                out["not_served"] = sorted({*out.get("not_served", []), title})
+                continue
             out["no_valid_label"][f"{title} | {kind}"] = sum(k not in labels for k in asked)
             both = [k for k in asked if k in labels and k in base]
             out["labels"][f"{title} | {kind}"] = {
@@ -419,6 +422,8 @@ def quant() -> None:
         for title in list(QUANT)[1:]:
             for arm in configs:
                 a, b = f"{title} | {kind} | {arm}", f"{next(iter(QUANT))} | {kind} | {arm}"
+                if a not in correct:
+                    continue
                 test = paired(correct[a], correct[b])
                 drop = out["arms"][b]["total"]["accuracy"] - out["arms"][a]["total"]["accuracy"]
                 test["costs_little"] = bool(drop <= MARGIN and test["p"] >= ALPHA)

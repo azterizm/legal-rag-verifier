@@ -1909,5 +1909,215 @@
   "seconds": 24.5,
   "usd": 0.0153,
   "note": "notes2: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop55 probe qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 566.1,
+  "usd": 0.3526,
+  "note": "2 replies"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 444.9,
+  "usd": 0.2772,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 22.8,
+  "usd": 0.0142,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 18.2,
+  "usd": 0.0113,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 24.4,
+  "usd": 0.0152,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 16.1,
+  "usd": 0.01,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.6,
+  "usd": 0.0066,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.4,
+  "usd": 0.0065,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.1,
+  "usd": 0.0063,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.1,
+  "usd": 0.0063,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 20.3,
+  "usd": 0.0126,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 20.6,
+  "usd": 0.0128,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 16.2,
+  "usd": 0.0101,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 25.6,
+  "usd": 0.016,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 19.2,
+  "usd": 0.0119,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 12.2,
+  "usd": 0.0076,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.0071,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.9,
+  "usd": 0.0074,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.9,
+  "usd": 0.0068,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 73.1,
+  "usd": 0.0456,
+  "note": "seq: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 315.4,
+  "usd": 0.1965,
+  "note": "seq: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 453.8,
+  "usd": 0.2827,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 17.9,
+  "usd": 0.0112,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.4,
+  "usd": 0.0071,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.5,
+  "usd": 0.0066,
+  "note": "p42: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 17.2,
+  "usd": 0.0107,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 19.1,
+  "usd": 0.0119,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 12.0,
+  "usd": 0.0075,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.5,
+  "usd": 0.0066,
+  "note": "notes2: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop55 qwen27-ar4-l4",
+  "gpu": "L4",
+  "seconds": 567.9,
+  "usd": 0.1451,
+  "note": "server did not start on the L4"
  }
 ]

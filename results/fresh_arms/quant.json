@@ -1,0 +1,488 @@
+{
+ "units": 354,
+ "arms": {
+  "FP8, official | p42 | list fix": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 22,
+    "caught": 132,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.893
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 11,
+    "caught": 48,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.906
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 11,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.88
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 12,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.871
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 10,
+    "caught": 119,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.911
+   }
+  },
+  "FP8, official | p42 | figures to the judge": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 14,
+    "caught": 132,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.915
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 5,
+    "caught": 48,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.941
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 9,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.891
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 7,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.902
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 7,
+    "caught": 119,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.927
+   }
+  },
+  "AutoRound, 4-bit | p42 | list fix": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 20,
+    "caught": 135,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.907
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 12,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.906
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 8,
+    "caught": 86,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.908
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 9,
+    "caught": 14,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.896
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 11,
+    "caught": 121,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.916
+   }
+  },
+  "AutoRound, 4-bit | p42 | figures to the judge": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 14,
+    "caught": 135,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.924
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 8,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.929
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 6,
+    "caught": 86,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.918
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 6,
+    "caught": 14,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.914
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 8,
+    "caught": 121,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.932
+   }
+  },
+  "FP8, official | notes2 | list fix": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 15,
+    "caught": 133,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.915
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 9,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.924
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 6,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.908
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 9,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.89
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 6,
+    "caught": 120,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.937
+   }
+  },
+  "FP8, official | notes2 | figures to the judge": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 8,
+    "caught": 133,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.935
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 4,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.953
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 4,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.918
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 5,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.914
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 3,
+    "caught": 120,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.953
+   }
+  },
+  "AutoRound, 4-bit | notes2 | list fix": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 14,
+    "caught": 131,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.912
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 9,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.924
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 5,
+    "caught": 82,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.902
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 8,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.896
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 6,
+    "caught": 118,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.927
+   }
+  },
+  "AutoRound, 4-bit | notes2 | figures to the judge": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 8,
+    "caught": 130,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.927
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 5,
+    "caught": 48,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.941
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 3,
+    "caught": 82,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.913
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 5,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.914
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 3,
+    "caught": 117,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.937
+   }
+  }
+ },
+ "against_fp8": {
+  "AutoRound, 4-bit | p42 | list fix": {
+   "only_first": 9,
+   "only_second": 4,
+   "p": 0.267,
+   "costs_little": true
+  },
+  "AutoRound, 4-bit | p42 | figures to the judge": {
+   "only_first": 9,
+   "only_second": 6,
+   "p": 0.607,
+   "costs_little": true
+  },
+  "AutoRound, 4-bit | notes2 | list fix": {
+   "only_first": 3,
+   "only_second": 4,
+   "p": 1.0,
+   "costs_little": true
+  },
+  "AutoRound, 4-bit | notes2 | figures to the judge": {
+   "only_first": 3,
+   "only_second": 6,
+   "p": 0.508,
+   "costs_little": true
+  }
+ },
+ "labels": {
+  "FP8, official | p42": {
+   "same_as_fp8": 360,
+   "of": 360
+  },
+  "AutoRound, 4-bit | p42": {
+   "same_as_fp8": 334,
+   "of": 360
+  },
+  "FP8, official | notes2": {
+   "same_as_fp8": 360,
+   "of": 360
+  },
+  "AutoRound, 4-bit | notes2": {
+   "same_as_fp8": 343,
+   "of": 360
+  }
+ },
+ "no_valid_label": {
+  "FP8, official | p42": 0,
+  "AutoRound, 4-bit | p42": 0,
+  "FP8, official | notes2": 0,
+  "AutoRound, 4-bit | notes2": 0
+ },
+ "latency_one_at_a_time": {
+  "qwen27-nothink": {
+   "calls": 40,
+   "p50_ms": 3468,
+   "p95_ms": 4785,
+   "mean_tokens": 68
+  },
+  "qwen27-ar4": {
+   "calls": 40,
+   "p50_ms": 1769,
+   "p95_ms": 2838,
+   "mean_tokens": 64
+  }
+ },
+ "not_served": [
+  "AMD AWQ, 4-bit"
+ ]
+}

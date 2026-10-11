@@ -17,12 +17,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Your go on three items. (a) `VerifierConfig.ungrounded_figure` is in `src/` and reproduces stop 52's arm exactly. (b) Stop 55: AMD AWQ and AutoRound 4-bit weights of Qwen 27B against FP8, method fixed in GRID. (c) Stop 56: a new graded set, method to follow in GRID before any answer is generated |
-| Waiting on you | (1) A new graded set to confirm 93.5 % (the notes and the claim check arm were tuned on the fresh test). (2) Adopt "figures to the judge" as a verifier setting (`VerifierConfig`, public API) and the two notes as the judge prompt. (3) The 4-bit test for Qwen 27B: which third-party weights and GPU. (4) Four grades to check on fs-02. Stop 49 stays not run |
+| Next step | ⛔ Your grades. The second fresh test is sealed and every judge has labelled it: `results/fresh2/sheet.md` (40 questions, 151 sentences), your column `correct` in `results/fresh2/grades.csv`. Then `FRESH_SET=fresh2 uv run python scripts/fresh_arms.py confirm` scores it once (stop 56) |
+| Waiting on you | (1) Grade `results/fresh2/grades.csv`. (2) After stop 56: whether the 4-bit AutoRound weights replace FP8 (not told apart, twice as fast, third-party weights, no L4 fit). (3) Whether to try the AMD weights on another engine. (4) Four grades to check on fs-02 in the first test. Stop 49 stays not run |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (55, 56 to the halt): **Verifier setting, 4-bit test, second fresh test sealed.** Your go on all three.
+  `VerifierConfig.ungrounded_figure="judge"` is in `src/` (default unchanged) and reproduces stop 52's arm on
+  every sentence. Stop 55: AutoRound 4-bit against FP8 on the same prompts, 92.4 % against 91.5 % and 92.7 %
+  against 93.5 %, not told apart, 1.8 s against 3.5 s per clause; it does not fit an L4; SGLang cannot load the AMD
+  weights. Stop 56: 40 sources by seed, questions by Flash, 80 answers, 151 sentences, sealed; Qwen 27B FP8,
+  AutoRound, Opus 5.5 and Pro labelled it before any grade. Modal $13.53 of $55, Opus 5.5 $13.74 of $40, Pro $11.98
+  of $15. **Resume:** your grades in `results/fresh2/grades.csv`, then score once.
 
 - 2026-10-11 (54): **Where the judges fail; notes on applying the labels.** Reading recorded in GRID: Opus 5.5 rolls
   back 11 right sentences and passes 16 wrong ones, Pro 23 and 6, Flash 50 and 2; only 10 sentences are wrong for
