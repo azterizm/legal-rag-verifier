@@ -4,6 +4,17 @@ All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- `VerifierConfig.ungrounded_figure` (`"rollback"` by default, or `"judge"`): with `"judge"` a
+  sentence whose only failed claims are figures not found in the source goes to the entailment
+  check, which decides. Recorded in every trace's config.
+
+### Fixed
+- A list number followed by text ("1. The employee ...") no longer ends a sentence, and a list
+  number at the start of a text is not read as a figure claim.
+
 ## [0.1.0] - 2026-10-08
 
 The first release: sentence-level verification during generation for legal RAG, United Kingdom,

@@ -179,6 +179,10 @@ class VerifierConfig:
     #: A sentence the NLI head finds neither entailed nor contradicted, but whose figure or
     #: citation is grounded: "emit" (P2, the default since 2026-10-06) or "rollback".
     neutral_with_grounded_claim: Literal["emit", "rollback"] = "emit"
+    #: A sentence whose only failed claims are figures not found in the source: "rollback" (the
+    #: default) or "judge". With "judge" the entailment check decides: the sentence is emitted
+    #: only if it is entailed. Without an NLI scorer "judge" behaves as "rollback".
+    ungrounded_figure: Literal["rollback", "judge"] = "rollback"
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -188,6 +192,7 @@ class VerifierConfig:
             "top_k": self.top_k,
             "align_ratio": self.align_ratio,
             "neutral_with_grounded_claim": self.neutral_with_grounded_claim,
+            "ungrounded_figure": self.ungrounded_figure,
         }
 
 
@@ -265,7 +270,11 @@ class Verifier:
 
         results = [self._ground(c, index, query_claims) for c in claims]
         failed = [r for r in results if r.reason is not None]
-        if failed:
+        deferred = self._deferred(failed, index)
+        if deferred:
+            # The entailment check decides these figures; the other claims keep their checks.
+            results = [r for r in results if r.reason is None]
+        elif failed:
             first = min(failed, key=lambda r: r.claim.start)
             aligned = self._aligned_lexical(index, sentence)
             return SentenceVerdict(
@@ -308,6 +317,7 @@ class Verifier:
             if (
                 nli_reason is Reason.NLI_NOT_ENTAILED
                 and self.config.neutral_with_grounded_claim == "emit"
+                and not deferred  # a figure sent to the judge needs entailment
                 and any(
                     r.grounded_by not in {None, GroundedBy.QUERY} and r.claim.kind in _ANCHOR_KINDS
                     for r in found.results
@@ -328,14 +338,14 @@ class Verifier:
             len(sentence),
             verdict,
             tuple(reasons),
-            tuple(found.results),
+            tuple(sorted([*found.results, *deferred], key=lambda r: r.claim.start)),
             tuple(d.deontic.value for d in deontics),
             aligned,
             nli_result,
             found.repair if verdict is Verdict.ROLLBACK else None,
             claim_ns,
             nli_result.latency_ns if nli_result else 0,
-            tuple(found.details),
+            (*found.details, *(f"figure sent to the judge: {r.claim.text}" for r in deferred)),
         )
 
     def _window_checks(
@@ -455,6 +465,16 @@ class Verifier:
         if has_claims:
             return Reason.NLI_NOT_ENTAILED
         return Reason.NEUTRAL_STRICT if self.config.neutral_policy == "strict" else None
+
+    def _deferred(self, failed: list[ClaimResult], index: PremiseIndex) -> list[ClaimResult]:
+        """The failed claims the entailment check decides (``ungrounded_figure="judge"``): all of
+        them when every one is a figure, else none. A citation or an instrument that is not in
+        the source still rolls the sentence back."""
+        if self.config.ungrounded_figure != "judge" or self.nli is None or not index.windows:
+            return []
+        if any(r.reason is not Reason.UNGROUNDED_FIGURE for r in failed):
+            return []
+        return failed
 
     # ------------------------------------------------------------------ grounding
     def _ground(self, claim: Claim, index: PremiseIndex, query_claims: list[Claim]) -> ClaimResult:

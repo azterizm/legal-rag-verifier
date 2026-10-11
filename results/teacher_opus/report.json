@@ -912,15 +912,15 @@
  },
  "spend": {
   "this_stop": {
-   "calls": 323,
-   "input_tokens": 588780.0,
-   "output_tokens": 77336.0,
-   "usd": 3.9018
+   "calls": 363,
+   "input_tokens": 703483.0,
+   "output_tokens": 87185.0,
+   "usd": 4.5576
   },
-  "usd_per_call": 0.01208,
-  "input_tokens_per_call": 1823,
-  "output_tokens_per_call": 239,
-  "ledger_usd": 11.566936,
+  "usd_per_call": 0.01256,
+  "input_tokens_per_call": 1938,
+  "output_tokens_per_call": 240,
+  "ledger_usd": 12.222728,
   "prices_usd_per_million": [
    4.0,
    20.0

@@ -130,3 +130,56 @@ def test_leading_yes_or_no_is_not_judged() -> None:
         "The employer shall give written reasons.",
         "Nobody may order it.",
     ]
+
+
+FIGURES = Premise.from_text(
+    "The landlord is to give or refuse consent on or before the 28th day after the request.\n\n"
+    "A person convicted is liable to a fine under section 5 of the Housing Act 1988."
+)
+ENTAILED = [(0.95, 0.04, 0.01), (0.1, 0.8, 0.1)]
+NEUTRAL = [(0.2, 0.7, 0.1), (0.1, 0.8, 0.1)]
+SENTENCE = "The landlord has 21 days to give or refuse consent."
+
+
+def figures(probs: Sequence[tuple[float, float, float]], sentence: str, **config: Any) -> Any:
+    return Verifier(Scripted(probs), VerifierConfig(**config)).check_sentence(FIGURES, sentence)
+
+
+def test_an_ungrounded_figure_rolls_back_by_default_without_asking_the_judge() -> None:
+    v = figures(ENTAILED, SENTENCE)
+    assert v.verdict is Verdict.ROLLBACK
+    assert v.reasons == (Reason.UNGROUNDED_FIGURE,)
+    assert v.nli is None
+
+
+def test_with_judge_an_ungrounded_figure_is_emitted_only_if_entailed() -> None:
+    v = figures(ENTAILED, SENTENCE, ungrounded_figure="judge")
+    assert v.verdict is Verdict.EMIT
+    assert [c.reason for c in v.claims] == [Reason.UNGROUNDED_FIGURE]
+    assert v.details == ("figure sent to the judge: 21 days",)
+    v = figures(NEUTRAL, SENTENCE, ungrounded_figure="judge")
+    assert v.verdict is Verdict.ROLLBACK
+    assert v.reasons == (Reason.NLI_NOT_ENTAILED,)
+
+
+def test_with_judge_a_grounded_claim_does_not_carry_an_ungrounded_figure() -> None:
+    sentence = "Under section 5 of the Housing Act 1988 the landlord has 21 days."
+    v = figures(NEUTRAL, sentence, ungrounded_figure="judge")
+    assert v.verdict is Verdict.ROLLBACK
+    assert Reason.NLI_NOT_ENTAILED in v.reasons
+
+
+def test_with_judge_a_missing_citation_still_rolls_back_before_the_judge() -> None:
+    sentence = "Under section 99 of the Housing Act 1988 the landlord has 21 days."
+    v = figures(ENTAILED, sentence, ungrounded_figure="judge")
+    assert v.verdict is Verdict.ROLLBACK
+    assert Reason.UNGROUNDED_CITATION in v.reasons
+    assert v.nli is None
+
+
+def test_judge_without_a_scorer_behaves_as_rollback_and_the_setting_is_in_the_trace() -> None:
+    config = VerifierConfig(ungrounded_figure="judge")
+    v = Verifier(None, config).check_sentence(FIGURES, SENTENCE)
+    assert v.reasons == (Reason.UNGROUNDED_FIGURE,)
+    assert config.to_dict()["ungrounded_figure"] == "judge"
+    assert VerifierConfig().to_dict()["ungrounded_figure"] == "rollback"
