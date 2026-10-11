@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Your 9 grades. Stop 57: Qwen 27B 4-bit wrote the answers (114 sentences), the judges labelled them, and Opus 5.5 and Pro settled 105. Fill `correct` in `results/fresh2-q27/leftover.csv` from `results/fresh2-q27/leftover.md`. Then `fresh_grader.py fill`, the two tables and `scripts/self_judge.py` score it once |
-| Waiting on you | (1) The 9 sentences in `results/fresh2-q27/leftover.csv`. (2) On the second test both graders say yes where you said no on `Q37B1`, `Q40B1`, `Q40B2`; and two refusals you graded no (`Q13A2`, `Q33A1`). No grade was changed. Open: V0 on the second test; the four fs-02 grades |
+| Next step | Stop 57 is scored. Qwen 27B 4-bit as generator is wrong in 0 of 49 sentences with the source and 55 % closed-book (7B: 80 %). As judge of its own text it catches 35 of 36 wrong sentences and rolls back 18 right ones, 16 of them refusals. No self-judging limit found. Halted for your decision. No paid run is queued |
+| Waiting on you | What to do next. My recommendation: (1) decide how the auditor treats a sentence in which the generator declines (a `src/` change, or a prompt rule for the judge); (2) run the judge live in the loop with Qwen 27B 4-bit in both roles. Open: the grades the graders dispute on the second test (`Q37B1`, `Q40B1`, `Q40B2`, `Q13A2`, `Q33A1`); V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (57): **Qwen 27B as generator and judge.** Your 9 grades committed first. Generator, wrong sentences:
+  Qwen 27B 4-bit 0 of 49 with the source and 36 of 65 closed-book; the 7B 1 of 72 and 63 of 79. Judge on its own
+  text, strict: 18 / 35, 83.3 % (no auditor 68.4 %); on the 7B's text 10 / 61, 91.4 %. It passes none of its own
+  36 wrong sentences that Pro catches: no self-judging limit. 16 of its 18 false rollbacks are refusals, which the
+  rule grades right; without refusal sentences 96.8 %. The pair with Pro changes nothing on its own text.
+  **Resume:** your decision in Status.
 
 - 2026-10-11 (57, to your sheet): **Two graders pass their check; Qwen 27B answers graded up to 9 sentences.** Your
   change: keep Opus 5.5, add Pro, ask again where they differ, leave the rest to you. On the second test the two

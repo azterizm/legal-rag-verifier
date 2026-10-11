@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sys
 from collections.abc import Iterator, Mapping, Sequence
 from contextlib import contextmanager
@@ -547,6 +548,9 @@ def confirm() -> None:  # noqa: PLR0915 - one pass over the readings
 
 
 TABLE_JUDGES = (("qwen27-ar4", "p42"), ("qwen27-ar4", "notes2"), ("gemini-pro-low", "notes2"))
+# A refusal or a request for context, as Qwen 27B words them closed-book. Written after stop 57's
+# scoring, for the reading added there; it scores nothing by itself.
+REFUSAL = re.compile(r"\b(I do not (know|have)|Please (specify|provide)|If you are asking about)\b")
 
 
 def table() -> None:
@@ -568,6 +572,7 @@ def table() -> None:
             "mode": u["mode"],
             "domain": u["domain"],
             "grade": graded[u["key"]],
+            "refusal": bool(REFUSAL.search(u["sentence"])),
             # the two graders' grade where they settle it; your grade is used for the rest
             "graders": settled.get(u["key"]),
         }

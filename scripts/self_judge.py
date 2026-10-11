@@ -140,6 +140,23 @@ def main() -> None:
             "both must roll back": pair,
             "pair_against_qwen27": {**test4, "gain": bool(gain)},
         }
+    # Added after the scoring (not a fixed reading): refusals and requests for context.
+    out["after_refusals"] = {}
+    for title, name in SETS.items():
+        units = rows(name)
+        rolled = flags(units, f"{QWEN}|p42|figures")
+        refusals = [u for u in units if u["refusal"]]
+        rest = [u for u in units if not u["refusal"]]
+        out["after_refusals"][title] = {
+            "refusal_sentences": len(refusals),
+            "graded_right": sum(u["right"] for u in refusals),
+            "graded_wrong": sum(u["wrong"] for u in refusals),
+            "rolled_back": sum(rolled[u["key"]] for u in refusals),
+            "false_rollbacks_that_are_refusals": sum(
+                u["right"] and rolled[u["key"]] for u in refusals
+            ),
+            "without_refusal_sentences": score(rest, rolled),
+        }
     out["R1_generator"]["Qwen 2.5 7B, by your grades"] = {
         label: sum(
             u["wrong"] for u in rows("fresh2", by="you") if mode is None or u["mode"] == mode
