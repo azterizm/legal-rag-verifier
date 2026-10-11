@@ -1994,3 +1994,28 @@ its 95 % gate.
 - Step 2 runs only after G1 passes: answers, then judges, then graders, in that order.
 - Spend: Pro expected $2 for grading and $1 as judge, its $15 stop holds ($11.98 spent). Opus 5.5 expected $1,
   ledger stop $17. Modal expected $1.50, stage stop $5.
+
+### Stop 57: the two graders checked, and step 2 up to your sheet (2026-10-11)
+
+Check on the second test (`FRESH_SET=fresh2 uv run python scripts/fresh_grader.py pair`, raw in
+`results/fresh2_arms/graders.json`):
+
+- Pro alone gives your grade on 141 of 151 sentences (93.4 %); Opus 5.5 alone on 138 (91.4 %).
+- The first pass settles 137 sentences. 14 are asked again; 2 more are settled.
+- G1: of the 139 settled sentences 136 carry your grade, 97.8 %. The gate is 95 %. **Passed.** The three that do
+  not are `Q37B1`, `Q40B1` and `Q40B2`, all in answers written with the source: you no, both graders yes.
+- G2: 12 sentences would be left for you (7 where the two differ, 5 unsure). You graded 6 of them yes and 6 no.
+
+Step 2, in the fixed order:
+
+- Answers: Qwen 27B AutoRound 4-bit, 80 answers, 114 sentences (the 7B wrote 151 on the same questions), 52 new
+  tokens per answer at the mean. Sealed in `results/fresh2-q27/seal.json`.
+- Judges, before any grade: Qwen 27B AutoRound 4-bit on the stop 42 prompt and `notes2`, Pro on `notes2`. 114
+  prompts each, every label valid. The claim check holds 10 sentences, 2 for a figure only.
+- Graders: the first pass settles 102 sentences; 12 are asked again and 3 more are settled. 105 settled (76 yes,
+  29 no). **9 are left for you**, all in closed-book answers (7 unsure, 2 where the two differ).
+- Your sheet: `results/fresh2-q27/leftover.md`, your column `correct` in `results/fresh2-q27/leftover.csv`.
+  Nothing is scored until it is filled.
+
+Spend, stop 57 so far: Modal $0.72 plus $0.09 for the job I stopped ($14.25 of $55). Opus 5.5 $0.98 ($14.72 of
+$40). Pro $1.46 ($13.44 of $15).
