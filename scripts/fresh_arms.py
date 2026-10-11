@@ -253,7 +253,7 @@ def paired(a: Mapping[str, bool], b: Mapping[str, bool]) -> dict[str, Any]:
     }
 
 
-def report() -> None:
+def report() -> None:  # noqa: PLR0912 - one pass over the readings
     data = recorded()
     us, built = data["units"], data["built"]
     graded = fe.merged_grades(us)
@@ -327,6 +327,12 @@ def report() -> None:
     for arm in ARMS:
         a, b = f"{QWEN} | rule | {arm}", f"{QWEN} | view | {arm}"
         out["paired"][f"{a} vs view"] = paired(correct[a], correct[b])
+    for judge in JUDGES:  # the frontier judges against the untrained Qwen 27B, same arm
+        if judge == QWEN:
+            continue
+        for arm in ARMS[:2]:
+            a, b = f"{judge} | p42 | {arm}", f"{QWEN} | p42 | {arm}"
+            out["paired"][f"{a} vs {QWEN}"] = paired(correct[a], correct[b])
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "report.json").write_text(
         json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8"

@@ -1559,5 +1559,138 @@
   "seconds": 17.2,
   "usd": 0.0217,
   "note": "3 rows, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 228.8,
+  "usd": 0.1425,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 32.4,
+  "usd": 0.0202,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 34.3,
+  "usd": 0.0214,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 31.6,
+  "usd": 0.0197,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 35.4,
+  "usd": 0.0221,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 31.6,
+  "usd": 0.0197,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.4,
+  "usd": 0.0171,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.0,
+  "usd": 0.0168,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.7,
+  "usd": 0.0173,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 26.5,
+  "usd": 0.0165,
+  "note": "view: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 31.7,
+  "usd": 0.0197,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 32.1,
+  "usd": 0.02,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 31.3,
+  "usd": 0.0195,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 35.8,
+  "usd": 0.0223,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 30.4,
+  "usd": 0.0189,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 28.5,
+  "usd": 0.0178,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 26.8,
+  "usd": 0.0167,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.7,
+  "usd": 0.0173,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop52-53 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 26.1,
+  "usd": 0.0163,
+  "note": "rule: 40 labels, 0 errors"
  }
 ]

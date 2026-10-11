@@ -867,3 +867,29 @@ label scores 90.2 %. The per-clause prompt tops out near 89 to 90 % on this test
 
 Cost: $3.90 for 323 calls, $0.0121 per clause. Time through the router: p50 3.0 s, p95 6.9 s. Caveat: the fresh
 test has been used since stop 47. Raw: `results/teacher_opus/`.
+
+## The claim check behind an LLM judge, and the judge's view (stops 52 and 53, 2026-10-11; method in `docs/GRID.md`)
+
+Aim: remove the 12 right sentences the claim check rolled back before every judge, and test a judge prompt that
+holds the question and the source as written. Three judges only; K2 is dropped.
+
+The 12: 3 list numbers split off by the segmenter (fixed in `src/`), 4 figures worded differently from the source,
+5 that need reasoning. No pattern was added for the last two groups. Instead the judge was asked.
+
+Fresh test, 354 graded sentences after the list fix, Replace strict (false rollbacks / caught, accuracy):
+
+| Judge | List fix | Figures to the judge |
+|---|---|---|
+| Opus 5.5 high | 19 / 132, 90.1 % | 11 / 132, 92.4 % |
+| Gemini 3.1 Pro low | 31 / 142, 89.5 % | 25 / 142, 91.2 % |
+| Qwen 27B thinking off, untrained | 22 / 132, 89.3 % | 14 / 132, 91.5 % |
+
+Each judge catches all 29 wrong sentences the claim check holds and passes 6 to 8 of the 9 right ones (gains of
+6 to 8 sentences, none lost, p = 0.008 to 0.031). Turning the claim check off entirely gives the same verdicts.
+The three judges are not told apart.
+
+Qwen 27B with the question and the source as written scores 91.8 % and, with your grading rule added, 92.1 %,
+against 91.5 % for the stop 42 prompt. Neither is a gain (15 against 14 and 13 against 11 sentences).
+
+Caveats: the arms were designed after reading this test's failures, and the test has been used since stop 47. A
+clean figure needs a new graded set. Spend: Opus 5.5 $0.66, Pro $0.34, Modal $0.48. Raw: `results/fresh_arms/`.

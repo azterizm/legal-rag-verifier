@@ -1530,3 +1530,64 @@ fixed sentences reach the judge for the first time, so they need new labels (40 
   expected $3 to $4, stage stop $8.
 - Quantisation is not part of these stops. Stop 48 already gives one point: the FP8 weights score 88.3 % and the
   bf16 weights 88.5 %, with the same label on 309 of 323 clauses. A lower precision is a separate stop.
+
+### Stops 52 and 53: results (2026-10-11)
+
+`uv run python scripts/fresh_arms.py report`, raw in `results/fresh_arms/report.json`. Every prompt has a valid
+label; none counted as not stated. 354 graded sentences (206 right, 148 wrong).
+
+E1, Replace strict with the stop 42 prompt (false rollbacks / caught, accuracy):
+
+| Judge | As graded, 358 (stops 47 to 51) | List fix | Figures to the judge | No claim check |
+|---|---|---|---|---|
+| Opus 5.5 high | 23 / 132, 89.1 % | 19 / 132, 90.1 % | 11 / 132, 92.4 % | 11 / 132, 92.4 % |
+| Gemini 3.1 Pro low | 35 / 142, 88.5 % | 31 / 142, 89.5 % | 25 / 142, 91.2 % | 25 / 142, 91.2 % |
+| Qwen 27B thinking off, untrained | 26 / 132, 88.3 % | 22 / 132, 89.3 % | 14 / 132, 91.5 % | 14 / 132, 91.5 % |
+
+Figures to the judge, by group:
+
+| Judge | Software | Statutes | With source | Closed-book |
+|---|---|---|---|---|
+| Opus 5.5 high | 6 / 45, 91.8 % | 5 / 87, 92.9 % | 8 / 19, 93.3 % | 3 / 113, 91.6 % |
+| Gemini 3.1 Pro low | 10 / 49, 91.8 % | 15 / 93, 90.8 % | 12 / 20, 91.4 % | 13 / 122, 91.1 % |
+| Qwen 27B thinking off, untrained | 5 / 48, 94.1 % | 9 / 84, 89.1 % | 7 / 13, 90.2 % | 7 / 119, 92.7 % |
+
+E2, figures to the judge against the list fix: Opus 5.5 8 sentences gained and 0 lost (p = 0.008); Pro 6 and 0
+(p = 0.031); Qwen 27B 8 and 0 (p = 0.008). Each is a gain by the reading fixed before the run. No claim check
+gives the same verdicts as figures to the judge for all three.
+
+E3, the 38 sentences the claim check holds (9 right, 29 wrong), as the judge labels them:
+
+| Judge | Right passed, of 9 | Wrong caught, of 29 |
+|---|---|---|
+| Opus 5.5 high | 8 | 29 |
+| Gemini 3.1 Pro low | 6 | 29 |
+| Qwen 27B thinking off, untrained | 8 | 29 |
+
+The judge catches every wrong sentence the claim check catches, and passes most of the right ones it rolls back.
+Behind one of these judges the claim check adds no catch on this test and costs 6 to 8 right sentences.
+
+Between judges, same arm (not a fixed reading): Opus 5.5 against the untrained Qwen 27B 20 and 17 sentences
+(p = 0.74); Pro against it 14 and 15 (p = 1.0). The three are not told apart.
+
+F1, Qwen 27B with the question and the source as written:
+
+| Prompt | List fix | Figures to the judge | No claim check |
+|---|---|---|---|
+| Stop 42 prompt | 22 / 132, 89.3 % | 14 / 132, 91.5 % | 14 / 132, 91.5 % |
+| `view` | 23 / 136, 90.1 % | 16 / 135, 91.8 % | 16 / 135, 91.8 % |
+| `rule` | 24 / 137, 90.1 % | 17 / 137, 92.1 % | 17 / 137, 92.1 % |
+
+F2: `view` against the stop 42 prompt 15 and 12 sentences (p = 0.70) with the list fix, 15 and 14 (p = 1.0) with
+figures to the judge. `rule` against the stop 42 prompt 13 and 10 (p = 0.68), 13 and 11 (p = 0.84). `rule` against
+`view` 4 and 4. No gain by the fixed reading. Showing the judge the question and the source as written does not
+change its accuracy on this test.
+
+F3, time per clause in the bulk run (16 at a time, L40S): `view` p50 10.5 s and p95 14.0 s, `rule` 10.7 s and
+13.9 s, against 11.4 s and 17.8 s for the stop 42 prompt in stop 47's bulk run. Not one at a time.
+
+Spend: Opus 5.5 $0.66 ($12.22 of $40). Pro $0.34 ($11.15 of $15). Modal $0.48 by the ledger ($10.73 of $55).
+
+Reading. With the claim check's figure rollbacks sent to the judge, the untrained Qwen 27B scores 91.5 % against
+88.3 % at stop 47, level with Opus 5.5 (92.4 %). The whole-sheet gap found after stop 47 (82 % against 92 to 99 %)
+is not explained by the question or the form of the source.
