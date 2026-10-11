@@ -17,7 +17,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stops 52 and 53 are scored. With the claim check's figure rollbacks sent to the judge, the untrained Qwen 27B scores 91.5 % strict (88.3 % at stop 47), level with Opus 5.5 (92.4 %) and Pro (91.2 %). The prompt with the question and the source as written is not a gain. Halted for your decision. No paid run is queued |
+| Next step | Stop 54 (your go): the stop 42 prompt with notes on applying the labels, on Qwen 27B only (two notes as proposed, and a third on hedged sentences). Method fixed in GRID before any call, with the reading of where the judges fail |
 | Waiting on you | (1) Adopt "figures to the judge" as a verifier setting (a `src/` change to `VerifierConfig`, public API). (2) The quantisation test for Qwen 27B: which 4-bit weights (only third-party ones exist), which GPU, and the spend. (3) A new graded set for a clean figure. Stop 49 stays not run |
 | Blocked | Nothing |
 

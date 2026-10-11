@@ -1,0 +1,75 @@
+{
+ "sentences": 317,
+ "judges": {
+  "opus55": {
+   "false_rollbacks": 11,
+   "missed": 16,
+   "false_rollback_labels": {
+    "contradicted": 7,
+    "not_stated": 3
+   },
+   "missed_closed_book": 13,
+   "missed_with_source": 3
+  },
+  "gemini-pro-low": {
+   "false_rollbacks": 23,
+   "missed": 6,
+   "false_rollback_labels": {
+    "contradicted": 5,
+    "not_stated": 17
+   },
+   "missed_closed_book": 4,
+   "missed_with_source": 2
+  },
+  "gemini": {
+   "false_rollbacks": 50,
+   "missed": 2,
+   "false_rollback_labels": {
+    "not_stated": 42,
+    "contradicted": 7
+   },
+   "missed_closed_book": 1,
+   "missed_with_source": 1
+  },
+  "qwen27-nothink": {
+   "false_rollbacks": 14,
+   "missed": 16,
+   "false_rollback_labels": {
+    "contradicted": 5,
+    "not_stated": 8
+   },
+   "missed_closed_book": 7,
+   "missed_with_source": 9
+  }
+ },
+ "frontier_overlap": {
+  "wrong_for_one": 40,
+  "wrong_for_two": 19,
+  "wrong_for_three": 10,
+  "three_right_sentences": 8,
+  "three_wrong_sentences": 2,
+  "pro_and_flash_not_opus": 13
+ },
+ "grades_to_check": {
+  "fs-02:closed:1": {
+   "you": "no",
+   "gemini whole sheet": "yes",
+   "opus 5.5 whole sheet": "yes"
+  },
+  "fs-02:closed:2": {
+   "you": "no",
+   "gemini whole sheet": "no",
+   "opus 5.5 whole sheet": "unsure"
+  },
+  "fs-02:source:0": {
+   "you": "no",
+   "gemini whole sheet": "yes",
+   "opus 5.5 whole sheet": "yes"
+  },
+  "fs-02:source:1": {
+   "you": "no",
+   "gemini whole sheet": "yes",
+   "opus 5.5 whole sheet": "yes"
+  }
+ }
+}
