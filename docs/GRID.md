@@ -1880,3 +1880,72 @@ Added after the scoring (not fixed before it):
 
 Spend, stop 56: Modal $0.68, Opus 5.5 $1.52, Pro $0.83. Totals: Modal $13.53 of $55, Opus 5.5 $13.74 of $40, Pro
 $11.98 of $15.
+
+### The pair of judges on labels already held (reading added 2026-10-11, not pre-registered)
+
+Qwen 27B FP8 and Gemini 3.1 Pro as one auditor, Replace strict with figures to the judge. First test: the stop 42
+prompt, 354 sentences. Second test: `notes2`, 151 sentences. False rollbacks / caught, accuracy:
+
+| Auditor | First test | Second test |
+|---|---|---|
+| Qwen 27B alone | 14 / 132, 91.5 % | 8 / 60, 90.1 % |
+| Pro alone | 25 / 142, 91.2 % | 10 / 63, 90.7 % |
+| Rolled back if either rolls back | 28 / 143, 90.7 % | 13 / 64, 89.4 % |
+| Rolled back only if both roll back | 11 / 131, 92.1 % | 5 / 59, 91.4 % |
+
+Requiring both lowers the false rollbacks on both tests and loses one catch each time. On the second test's
+answers written with the source it scores 93.1 % (no auditor 94.4 %, Qwen 27B alone 88.9 %). Not established at
+these sizes.
+
+## Stop 57: Qwen 27B as generator and judge (method fixed 2026-10-11, before any run)
+
+Your go: "go on this plan". Decided by you: the AMD weights are left, the AutoRound 4-bit weights suffice, and you
+grade no new sheet.
+
+### Step 1: Opus 5.5 as the grader, checked against you
+
+- Opus 5.5 high grades the second test's sheet as you did: the same rule, the question, the source and both
+  answers lettered as on your sheet, one call per question (40 calls), temperature 0. It does not see your grades.
+  Prompt in `scripts/fresh_grader.py`.
+- Reading fixed now: Opus is used as the grader only if it gives your grade on at least 95 % of the 151 sentences
+  (144 or more). Otherwise step 2 does not run and I come back to you.
+- Reported: agreement, and each kind of disagreement.
+
+### Step 2: the new answers
+
+- Questions and sources: the 40 of the second fresh test, unchanged. Set name `fresh2-q27`.
+- Generator: Qwen 27B AutoRound 4-bit (`Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at `1b9d56b4`), SGLang on an
+  L40S, thinking off, temperature 0, at most 512 new tokens, stop 43's prompts: the same decoding as the 7B
+  generator. 80 answers, with the source and closed-book.
+- Judges, labelling before any grade of the new sentences exists:
+  - Qwen 27B AutoRound 4-bit, as stop 55: the stop 42 prompt and `notes2`.
+  - Gemini 3.1 Pro low: `notes2`. It has `notes2` labels on the 7B's answers already, so the pair can be compared
+    on both generators with the same prompt.
+- Grader: Opus 5.5 as in step 1, on a sheet built by the same code. Its grades go to
+  `results/fresh2-q27/grades.csv`, each row noted as graded by Opus 5.5. Your `results/fresh2/grades.csv` is not
+  touched.
+
+### Readings (every figure labelled "graded by Opus 5.5")
+
+- R1, the generator: wrong sentences as a share of all, for Qwen 27B and for Qwen 2.5 7B on the same questions,
+  both by Opus's grades, with the source and closed-book apart, with Wilson 95 % intervals. The 7B's share by your
+  grades is shown beside.
+- R2, Qwen 27B judging its own text: Replace strict with the stop 42 prompt, with figures to the judge and with the
+  claim check rolling back; false rollbacks, caught, accuracy, beside no auditor, in total and per kind of answer.
+- R3, self-judging: of the wrong sentences in Qwen 27B's own answers, how many the Qwen 27B judge passes and how
+  many Pro passes (both `notes2`, figures to the judge); the same on the 7B's answers. Fixed reading: evidence of
+  a self-judging limit only if, on its own wrong sentences, Qwen 27B passes at least 5 that Pro catches and the
+  sign test on the sentences where the two differ gives p under 0.05.
+- R4, the pair: rolled back only if both roll back, against Qwen 27B alone (sign test). A gain only if accuracy
+  is higher and p is under 0.05.
+
+### Limits
+
+- The grader is a model. On the first test it agreed with you on 97 % of sentences; step 1 measures it on the
+  second. An error of about 3 points is too coarse for answers written with the source, where few sentences are
+  wrong. R1 and R3 rest mostly on closed-book answers.
+- Opus 5.5 is not used as a judge here, because it is the grader.
+- Replay on finished answers, as every stop since 42. No rollback or retry runs.
+- Fail safe: answers, labels and grades are appended as they return; a rerun asks only what is missing.
+- Spend: Modal expected $1.50, stage stop $5. Opus 5.5 expected $2, ledger stop $17. Pro expected $1, its $15 stop
+  holds.
