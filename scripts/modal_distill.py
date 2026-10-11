@@ -233,6 +233,27 @@ JUDGES: dict[str, dict[str, Any]] = {
 }
 
 
+# Stop 55: third-party 4-bit weights of Qwen3.8 27B (safetensors only, no custom code), served
+# like the FP8 judge. The ``-l4`` entries time them on a 24 GB GPU with a shorter context.
+QUANT = {
+    "qwen27-awq4": (
+        "amd/Qwen3.8-27B-Quark-AWQ-INT4-W4A16",
+        "0f7ee2559e8dbc25879e1fe1677b2b10708b91a9",
+    ),
+    "qwen27-ar4": (
+        "Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ",
+        "1b9d56b428e9f841d7ad566f87660b5f47553c97",
+    ),
+}
+for _name, (_model, _revision) in QUANT.items():
+    JUDGES[_name] = {**JUDGES["qwen27-nothink"], "model": _model, "revision": _revision}
+    JUDGES[f"{_name}-l4"] = {
+        **JUDGES[_name],
+        "gpu": "L4",
+        "args": ["--reasoning-parser", "qwen3", "--context-length", "16384"],
+    }
+
+
 class _JudgeServer:
     """One judge model behind SGLang, started once per container."""
 
@@ -832,12 +853,19 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
 
 
 ARMS_STAGE = "stop52-53"
-ARMS_STOPS = {ARMS_STAGE: 8.0, "stop54": 3.0}  # USD, GRID § Stops 52 to 54
+ARMS_STOPS = {
+    ARMS_STAGE: 8.0,
+    "stop54": 3.0,
+    "stop55": 6.0,
+    "stop56": 6.0,
+}  # USD, GRID § Stops 52 to 54
 ARMS_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
 
 
 @app.local_entrypoint()
-def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0, stage: str = ARMS_STAGE) -> None:
+def fresh_arms(
+    kinds: str = "p42,view,rule", limit: int = 0, stage: str = ARMS_STAGE, name: str = ""
+) -> None:
     """Stops 52 and 53: the untrained Qwen 27B (thinking off, as stop 47) on the prompts of
     ``scripts/fresh_arms.py`` that have no valid label yet. Chunks run one after another; the
     stage stop is checked before each and each is charged its wall-clock time."""
@@ -845,7 +873,7 @@ def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0, stage: str = ARMS_S
     import fresh_arms as fa  # noqa: PLC0415
     import modal_ledger as ledger  # noqa: PLC0415
 
-    name = fa.QWEN
+    name = name or fa.QWEN
     gpu = JUDGES[name]["gpu"]
     data = fa.recorded()
     server = JUDGE_CLASSES[gpu](name=name)
@@ -855,6 +883,7 @@ def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0, stage: str = ARMS_S
         items = items[:limit] if limit else items
         print(f"{name} {kind}: {len(items)} to judge", flush=True)
         failed = 0
+        workers = 1 if kind == "seq" else WORKERS  # "seq": one at a time, for latency
         for at in range(0, len(items), CHUNK):
             chunk = dict(items[at : at + CHUNK])
             ledger.check_stage(stage, ARMS_STOPS[stage], gpu, ARMS_ESTIMATE)
@@ -862,7 +891,7 @@ def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0, stage: str = ARMS_S
             note = "failed"
             seconds = 0.0
             try:
-                out = server.judge.remote(chunk, WORKERS)
+                out = server.judge.remote(chunk, workers)
                 path = fa.path(name, kind)
                 path.parent.mkdir(parents=True, exist_ok=True)
                 with path.open("a", encoding="utf-8") as f:

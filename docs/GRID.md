@@ -1690,3 +1690,35 @@ Spend: Modal $0.49 ($11.22 of $55). Router: none.
 
 Limits as fixed before the run: the notes were written from this test's errors and scored on it, and stop 48
 found 14 of 323 Qwen 27B labels change on a second sample. The figure needs a new graded set to stand.
+
+## Stop 55: Qwen 27B at 4 bits (method fixed 2026-10-11, before any run)
+
+Your go, with the three models named by you. K2 is dropped; the question is whether a 4-bit Qwen 27B loses
+little, so that it can stand in a 7B model's place.
+
+| Model | Weights | Revision | Size |
+|---|---|---|---|
+| FP8, official (8-bit) | `Qwen/Qwen3.8-27B-FP8` | `017b9c7af6b5689d5dd426a76e0bc077eb5ca20a` | 30.9 GB |
+| AMD AWQ (4-bit) | `amd/Qwen3.8-27B-Quark-AWQ-INT4-W4A16` | `0f7ee2559e8dbc25879e1fe1677b2b10708b91a9` | 19.5 GB |
+| AutoRound (4-bit) | `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` | `1b9d56b428e9f841d7ad566f87660b5f47553c97` | 20.1 GB |
+
+- Both 4-bit repositories are third-party. Checked before use: weights are safetensors only, no Python file, no
+  custom code, Apache 2.0, base model `Qwen/Qwen3.8-27B`. Revisions are pinned.
+- FP8 is the baseline and does not run again for labels. Its labels on the same prompts exist.
+- Each 4-bit model: same server (SGLang 0.5.21), same GPU (L40S), same template (thinking off), same sampling and
+  seed as the FP8 judge. Prompts: the 360 stop 42 prompts of stop 52, and the 360 `notes2` prompts of stop 54.
+- Scored on the 354 graded sentences under Replace strict, with the list fix and with figures to the judge (the
+  verifier setting `ungrounded_figure="judge"`, which reproduces stop 52's arm exactly).
+- Readings: H1, each model in each arm for each prompt. H2, each 4-bit model against FP8 (sentences only one gets
+  right, exact two-sided sign test). H3, clauses with the same label as FP8. H4, time per clause one at a time on
+  an even spread of 40 stop 42 prompts: FP8 and both 4-bit models on the L40S, and both 4-bit models on an L4
+  (24 GB, context 16,384 tokens). H5, whether each 4-bit model starts on the L4.
+- Reading fixed now: a 4-bit model costs little if, with the stop 42 prompt and figures to the judge, its accuracy
+  is at most 1.5 points under FP8's (91.5 %) and the sign test gives p of 0.05 or more.
+- For scale: a second sample of the FP8 model itself changed 14 of 323 labels in stop 48, and bf16 against FP8
+  differed on 14 of 323.
+- If SGLang cannot serve a 4-bit model, that is recorded and the model is not scored. No other engine is tried
+  without your go, since times would not compare.
+- Size correction: I estimated 15 to 17 GB for 4 bits. The repositories are about 20 GB, because parts of the
+  model are not quantised. An L4 has 24 GB, so the fit is tight and is measured (H5).
+- Fail safe as stop 52. Spend: Modal expected $2 to $3, stage stop $6. Router: none.
