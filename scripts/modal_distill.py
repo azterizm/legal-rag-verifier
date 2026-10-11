@@ -852,6 +852,30 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
     print(f"Modal spent ${ledger.spent():.2f}")
 
 
+@app.local_entrypoint()
+def quant_probe(name: str, n: int = 2) -> None:
+    """Stop 55: does the server start with these weights and answer ``n`` prompts. One attempt:
+    a server that does not come up fails this call once, and its time goes to the ledger."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import fresh_arms as fa  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    prompts = list(fa.requests("seq").values())[:n]
+    ledger.check_stage("stop55", ARMS_STOPS["stop55"], "L40S", 900)
+    t0 = time.time()
+    note = "server did not start"
+    try:
+        replies = raw_replies.remote(name, prompts)
+        note = f"{len(replies)} replies"
+        for reply in replies:
+            print(json.dumps(reply, ensure_ascii=False)[:700], flush=True)
+    except Exception as exc:  # noqa: BLE001 - a probe: report, do not retry
+        print(f"{name}: {exc!r}"[:600], flush=True)
+    finally:
+        ledger.record(f"stop55 probe {name}", "L40S", time.time() - t0, note)
+    print(f"{name}: {note}; Modal stage ${ledger.stage_spent('stop55'):.2f}", flush=True)
+
+
 ARMS_STAGE = "stop52-53"
 ARMS_STOPS = {
     ARMS_STAGE: 8.0,
