@@ -921,3 +921,19 @@ and a dropped qualifier is not a contradiction. 354 sentences, Replace strict:
 Both are gains (8 sentences gained and 0 lost, p = 0.008; 8 and 1, p = 0.039). A third note on hedged sentences
 added nothing. Caveat: the notes were written from this test's errors and scored on it; the figure needs a new
 graded set. Spend: Modal $0.49. Raw: `results/fresh_arms/`.
+
+## Qwen 27B at 4 bits (stop 55, 2026-10-11; method in `docs/GRID.md`)
+
+Aim: see whether a 4-bit Qwen 27B loses accuracy against the official FP8 weights, on the same prompts.
+
+| | FP8, official | AutoRound 4-bit | AMD AWQ 4-bit |
+|---|---|---|---|
+| Stop 42 prompt, figures to the judge | 14 / 132, 91.5 % | 14 / 135, 92.4 % | not served |
+| Two notes, figures to the judge | 8 / 133, 93.5 % | 8 / 130, 92.7 % | not served |
+| Same label as FP8 | | 92.8 % and 95.3 % | |
+| Time per clause, one at a time, L40S | 3.5 s p50, 4.8 s p95 | 1.8 s p50, 2.8 s p95 | |
+| Weights on the GPU | about 31 GB | 18.1 GB | |
+
+AutoRound is not told apart from FP8 (9 against 6 and 3 against 6 sentences) and is about twice as fast. It does
+not start on a 24 GB L4. SGLang 0.5.21 cannot load the AMD weights. Spend: $1.61. Raw:
+`results/fresh_arms/quant.json`.

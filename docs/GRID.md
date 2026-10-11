@@ -1768,3 +1768,64 @@ tuned on it (list numbers, figures to the judge, two notes in the prompt): 93.5 
 - A clause with no valid label after two reruns counts as not stated. Sentences you grade unsure are left out.
 - Nothing is tuned on this set. Prompts, the verifier setting and the judges are fixed above.
 - Spend: Flash 40 calls. Modal expected $1.50, stage stop $6. Opus 5.5 expected $3, Pro $2.50 (its $15 stop holds).
+
+### The verifier setting (2026-10-11)
+
+`VerifierConfig.ungrounded_figure` is in `src/` (`"rollback"` by default, `"judge"` for stop 52's arm). A citation
+or an instrument that is not in the source still rolls back before the judge. A figure sent to the judge needs
+entailment: a grounded claim elsewhere in the sentence does not carry it. Checked on the first fresh test: the
+setting sends the same 347 prompts and gives the same verdict on every sentence as the arm scored in stops 52
+and 54, for all three judges and all five prompts. The reports of stops 47 to 54 reproduce unchanged.
+
+### Stop 55: results (2026-10-11)
+
+`uv run python scripts/fresh_arms.py quant`, raw in `results/fresh_arms/quant.json`. 354 graded sentences,
+Replace strict.
+
+- AMD AWQ: not served, so not scored. SGLang 0.5.21 stops at load with `NotImplementedError: No quark compatible
+  scheme was found` (int4, per group, group size 128). No other engine was tried, as fixed before the run.
+- AutoRound: served by SGLang with its `gptq_marlin` kernel. Every prompt has a valid label.
+
+H1 and H2 (false rollbacks / caught, accuracy; against FP8: sentences only AutoRound gets right, only FP8, p):
+
+| Prompt | Arm | FP8 | AutoRound 4-bit | Against FP8 |
+|---|---|---|---|---|
+| Stop 42 prompt | List fix | 22 / 132, 89.3 % | 20 / 135, 90.7 % | 9 and 4, p = 0.27 |
+| Stop 42 prompt | Figures to the judge | 14 / 132, 91.5 % | 14 / 135, 92.4 % | 9 and 6, p = 0.61 |
+| `notes2` | List fix | 15 / 133, 91.5 % | 14 / 131, 91.2 % | 3 and 4, p = 1.0 |
+| `notes2` | Figures to the judge | 8 / 133, 93.5 % | 8 / 130, 92.7 % | 3 and 6, p = 0.51 |
+
+Reading fixed before the run: with the stop 42 prompt and figures to the judge AutoRound is 0.9 points above FP8
+and the sign test gives p = 0.61. It costs little.
+
+H3: AutoRound gives the same label as FP8 on 334 of 360 clauses with the stop 42 prompt (92.8 %) and on 343 of 360
+with `notes2` (95.3 %). For scale, FP8 against bf16 was 309 of 323 (95.7 %).
+
+H4, one at a time on an L40S, the same 40 prompts:
+
+| Model | p50 | p95 | Tokens out |
+|---|---|---|---|
+| FP8, official | 3.5 s | 4.8 s | 68 |
+| AutoRound 4-bit | 1.8 s | 2.8 s | 64 |
+
+For reference from stop 46, on other prompts: the untrained K2 7B 1.5 s and 3.9 s, the K2 student 1.2 s and 1.7 s.
+
+H5: AutoRound does not start on an L4. Its weights take 18.1 GB on the GPU; the L4 has 22.0 GB usable and the
+server runs out of memory while it prepares its kernels (context 16,384 tokens, 93 % of memory to the server). No
+other setting was tried. On the L40S it leaves room for a 166,000-token cache. Start takes about 8 minutes on the
+L40S (90 s to load, 5.7 minutes to prepare kernels).
+
+Spend: stop 55 $1.61 of its $6 stop. $0.43 of it went on the AMD probe: Modal restarted the container 21 times
+before I stopped it. The probe now runs once and stops.
+
+### Stop 56: state on 2026-10-11, before grading
+
+- Drawn, answered and sealed: 40 questions, 80 answers, 151 sentences (`results/fresh2/seal.json`). The estimate
+  was about 180.
+- About 4 of the 20 software sections are thin, as the cutter gives them: a site menu (gs-02), two RFC title
+  pages (gs-17, gs-18), a list of links (gs-01). They were kept: the method fixes no filter.
+- Labelled before any grade, 153 prompts each, every label valid: Qwen 27B FP8 on the stop 42 prompt and `notes2`;
+  the AutoRound 4-bit model on both (it passed stop 55's reading); Opus 5.5 and Pro on `notes2`.
+- The claim check holds 22 sentences, 9 of them for a figure only.
+- Scoring: `FRESH_SET=fresh2 uv run python scripts/fresh_arms.py confirm`, once, after your grades are committed.
+- Spend so far: Modal $0.68 (answers $0.06, judges $0.62). Opus 5.5 $1.52. Pro $0.83. Flash 40 calls.

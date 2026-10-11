@@ -250,6 +250,7 @@ for _name, (_model, _revision) in QUANT.items():
     JUDGES[f"{_name}-l4"] = {
         **JUDGES[_name],
         "gpu": "L4",
+        "mem": "0.93",  # 18 GB of weights on a 24 GB card leave little for the cache
         "args": ["--reasoning-parser", "qwen3", "--context-length", "16384"],
     }
 
@@ -316,12 +317,22 @@ class JudgeH100(_JudgeServer):
 @app.function(image=judge_image, gpu="L40S", timeout=1800, volumes={"/hf": weights})
 def raw_replies(name: str, prompts: list[str]) -> list[dict[str, Any]]:
     """Debug: the server's full reply to each per-clause prompt, first ask only."""
+    return _raw_replies(name, prompts)
+
+
+@app.function(image=judge_image, gpu="L4", timeout=2700, volumes={"/hf": weights})
+def raw_replies_l4(name: str, prompts: list[str]) -> list[dict[str, Any]]:
+    """The same on a 24 GB GPU (stop 55): one attempt, no restart if the server does not fit."""
+    return _raw_replies(name, prompts)
+
+
+def _raw_replies(name: str, prompts: list[str]) -> list[dict[str, Any]]:
     spec = JUDGES[name]
     server = subprocess.Popen(  # noqa: S603
         [
             sys.executable, "-m", "sglang.launch_server",
             "--model-path", spec["model"], "--revision", spec["revision"],
-            "--port", str(PORT), "--mem-fraction-static", "0.85", *spec["args"],
+            "--port", str(PORT), "--mem-fraction-static", spec.get("mem", "0.85"), *spec["args"],
         ]
     )  # fmt: skip
     url = f"http://127.0.0.1:{PORT}"
@@ -345,9 +356,10 @@ def raw_replies(name: str, prompts: list[str]) -> list[dict[str, Any]]:
                 data=json.dumps(body).encode(),
                 headers={"Content-Type": "application/json"},
             )
+            t0 = time.perf_counter()
             try:
                 with urllib.request.urlopen(req, timeout=900) as r:  # noqa: S310
-                    out.append(json.loads(r.read()))
+                    out.append({**json.loads(r.read()), "ms": (time.perf_counter() - t0) * 1000})
             except urllib.error.HTTPError as exc:
                 out.append({"status": exc.code, "body": exc.read().decode()[:2000]})
     finally:
@@ -873,6 +885,43 @@ def quant_probe(name: str, n: int = 2) -> None:
         print(f"{name}: {exc!r}"[:600], flush=True)
     finally:
         ledger.record(f"stop55 probe {name}", "L40S", time.time() - t0, note)
+    print(f"{name}: {note}; Modal stage ${ledger.stage_spent('stop55'):.2f}", flush=True)
+
+
+@app.local_entrypoint()
+def quant_l4(name: str = "qwen27-ar4-l4") -> None:
+    """Stop 55, H4 and H5: the timing set one at a time on an L4. One attempt."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import auditor_judge as aj  # noqa: PLC0415
+    import fresh_arms as fa  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    asked = fa.requests("seq")
+    ledger.check_stage("stop55", ARMS_STOPS["stop55"], "L4", 2700)
+    t0 = time.time()
+    note = "server did not start on the L4"
+    try:
+        replies = raw_replies_l4.remote(name, list(asked.values()))
+        rows = []
+        for sha, reply in zip(asked, replies, strict=True):
+            if "choices" not in reply:
+                rows.append({"sha": sha, "label": "error", "reason": str(reply)[:300], "ms": 0})
+                continue
+            content = reply["choices"][0]["message"].get("content") or ""
+            try:
+                parsed = aj.parse_reply(content)
+            except (ValueError, json.JSONDecodeError):
+                parsed = {"label": "error", "passage": 0, "reason": content[-300:]}
+            tokens = reply.get("usage", {}).get("completion_tokens")
+            rows.append({"sha": sha, **parsed, "ms": reply["ms"], "tokens": tokens})
+        path = fa.path(name, "seq")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), "utf-8")
+        note = f"{sum(r['label'] != 'error' for r in rows)} of {len(rows)} replies"
+    except Exception as exc:  # noqa: BLE001 - one attempt: report, do not retry
+        print(f"{name}: {exc!r}"[:800], flush=True)
+    finally:
+        ledger.record(f"stop55 {name}", "L4", time.time() - t0, note)
     print(f"{name}: {note}; Modal stage ${ledger.stage_spent('stop55'):.2f}", flush=True)
 
 
