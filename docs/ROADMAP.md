@@ -18,7 +18,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | Stop 56 is scored. The tuned configuration is not confirmed: 90.1 % against 89.4 % for the stop 47 configuration on the second fresh test (4 gained, 3 lost). The level that holds for the untrained Qwen 27B is about 90 % on both tests. Halted for your decision. No paid run is queued |
-| Waiting on you | What to do next. My recommendation: (1) fix the judge as Qwen 27B, stop 42 prompt, strict, and drop `notes2`; (2) score V0 on the second test for the untouched comparison (about $0.05); (3) run the judge live in the loop with rollback and retry, which has not been done since stop 42. Open: whether the 4-bit AutoRound weights replace FP8; the four fs-02 grades |
+| Waiting on you | Your go on the next test. Decided by you on 2026-10-11: the AMD 4-bit weights are left; the AutoRound 4-bit weights suffice. Proposed: Qwen 27B as both generator and judge on the 40 questions of the second fresh test (new answers, your grades needed), with Opus 5.5 as an outside judge to read self-judging bias; then the judge live in the loop. Open: V0 on the second test (about $0.05); the four fs-02 grades |
 | Blocked | Nothing |
 
 ### Stop log
