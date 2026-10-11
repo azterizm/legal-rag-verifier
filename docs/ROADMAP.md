@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 54 (your go): the stop 42 prompt with notes on applying the labels, on Qwen 27B only (two notes as proposed, and a third on hedged sentences). Method fixed in GRID before any call, with the reading of where the judges fail |
-| Waiting on you | (1) Adopt "figures to the judge" as a verifier setting (a `src/` change to `VerifierConfig`, public API). (2) The quantisation test for Qwen 27B: which 4-bit weights (only third-party ones exist), which GPU, and the spend. (3) A new graded set for a clean figure. Stop 49 stays not run |
+| Next step | Stop 54 is scored. Two notes on applying the labels lift the untrained Qwen 27B from 91.5 % to 93.5 % strict with figures to the judge (88.3 % at stop 47); false rollbacks 14 to 8, caught 132 to 133. Tuned on the fresh test. Halted for your decision. No paid run is queued |
+| Waiting on you | (1) A new graded set to confirm 93.5 % (the notes and the claim check arm were tuned on the fresh test). (2) Adopt "figures to the judge" as a verifier setting (`VerifierConfig`, public API) and the two notes as the judge prompt. (3) The 4-bit test for Qwen 27B: which third-party weights and GPU. (4) Four grades to check on fs-02. Stop 49 stays not run |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (54): **Where the judges fail; notes on applying the labels.** Reading recorded in GRID: Opus 5.5 rolls
+  back 11 right sentences and passes 16 wrong ones, Pro 23 and 6, Flash 50 and 2; only 10 sentences are wrong for
+  all three. Your go for the test on Qwen 27B: two notes added to the stop 42 prompt (common background and an
+  obvious name count as support; a dropped qualifier is not a contradiction). Strict, 354 sentences: 89.3 % to
+  91.5 % with the list fix (8 gained, 0 lost), 91.5 % to 93.5 % with figures to the judge (8 and 1). A third note on
+  hedged sentences added nothing. Modal $0.49 ($11.22 of $55). **Resume:** your decisions in Status.
 
 - 2026-10-11 (52, 53): **Claim check behind the judge; judge shown the question.** Your direction: Opus 5.5, Pro and
   Qwen 27B only, K2 dropped. Of the 12 false rollbacks 3 were list numbers (fixed in `src/`: segmenter and claims;

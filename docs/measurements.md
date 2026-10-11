@@ -893,3 +893,31 @@ against 91.5 % for the stop 42 prompt. Neither is a gain (15 against 14 and 13 a
 
 Caveats: the arms were designed after reading this test's failures, and the test has been used since stop 47. A
 clean figure needs a new graded set. Spend: Opus 5.5 $0.66, Pro $0.34, Modal $0.48. Raw: `results/fresh_arms/`.
+
+## Where the judges fail, and notes on applying the labels (stop 54, 2026-10-11; method in `docs/GRID.md`)
+
+The judges' own errors on the 317 fresh sentences that reach them (strict, as stops 47 to 51 scored them):
+
+| Judge | Right sentences rolled back | Wrong sentences passed |
+|---|---|---|
+| Opus 5.5 high | 11 | 16 |
+| Gemini 3.1 Pro low | 23 | 6 |
+| Gemini 3.8 Flash high | 50 | 2 |
+| Qwen 27B thinking off, untrained | 14 | 16 |
+
+Only 10 sentences are wrong for all three frontier judges. Three patterns: not stated for a small gap the source
+leaves (Gemini's main failure, 42 of Flash's labels), contradicted for a dropped qualifier (most of Opus 5.5's
+false rollbacks), and supported on a wrong sentence, often a hedged one (16 for Opus 5.5 and for Qwen 27B). The
+judges read the passages correctly and differ from the hand grades on where supported ends.
+
+Two notes were added to the stop 42 prompt for Qwen 27B: common background and an obvious name count as support,
+and a dropped qualifier is not a contradiction. 354 sentences, Replace strict:
+
+| Prompt | List fix | Figures to the judge |
+|---|---|---|
+| Stop 42 prompt | 22 / 132, 89.3 % | 14 / 132, 91.5 % |
+| With the two notes | 15 / 133, 91.5 % | 8 / 133, 93.5 % |
+
+Both are gains (8 sentences gained and 0 lost, p = 0.008; 8 and 1, p = 0.039). A third note on hedged sentences
+added nothing. Caveat: the notes were written from this test's errors and scored on it; the figure needs a new
+graded set. Spend: Modal $0.49. Raw: `results/fresh_arms/`.

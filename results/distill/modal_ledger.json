@@ -1692,5 +1692,131 @@
   "seconds": 26.1,
   "usd": 0.0163,
   "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 197.0,
+  "usd": 0.1227,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 41.2,
+  "usd": 0.0257,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 35.7,
+  "usd": 0.0223,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 44.1,
+  "usd": 0.0275,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 34.2,
+  "usd": 0.0213,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.5,
+  "usd": 0.0184,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.8,
+  "usd": 0.0185,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.1,
+  "usd": 0.0182,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 27.0,
+  "usd": 0.0168,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 42.1,
+  "usd": 0.0262,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 43.3,
+  "usd": 0.0269,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 36.5,
+  "usd": 0.0227,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 43.8,
+  "usd": 0.0273,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 35.8,
+  "usd": 0.0223,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.9,
+  "usd": 0.0187,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.3,
+  "usd": 0.0183,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.7,
+  "usd": 0.0185,
+  "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop54 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 28.9,
+  "usd": 0.018,
+  "note": "notes3: 40 labels, 0 errors"
  }
 ]

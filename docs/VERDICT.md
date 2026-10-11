@@ -159,6 +159,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    Qwen 27B rose to 91.5 %, level with Opus 5.5 (92.4 %). Behind an LLM judge the claim check added no catch on
    this test. A prompt with the question and the source as written did not help (stop 53). These arms were
    designed on the test they were scored on and need a new graded set to confirm.
+   The judges' errors were then read (stop 54). The frontier models read the source correctly and differ from
+   the hand grades on where "supported" ends: Gemini too literal, Claude Opus 5.5 too lenient. Two notes that
+   state the grader's standard lifted the untrained Qwen 27B to 93.5 %, with 8 false rollbacks of 206 right
+   sentences and 133 of 148 wrong ones caught. This too was tuned on the test and needs a new graded set.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
