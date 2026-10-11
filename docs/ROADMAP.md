@@ -18,7 +18,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | Stop 57 is scored. Qwen 27B 4-bit as generator is wrong in 0 of 49 sentences with the source and 55 % closed-book (7B: 80 %). As judge of its own text it catches 35 of 36 wrong sentences and rolls back 18 right ones, 16 of them refusals. No self-judging limit found. Halted for your decision. No paid run is queued |
-| Waiting on you | What to do next. My recommendation: (1) decide how the auditor treats a sentence in which the generator declines (a `src/` change, or a prompt rule for the judge); (2) run the judge live in the loop with Qwen 27B 4-bit in both roles. Open: the grades the graders dispute on the second test (`Q37B1`, `Q40B1`, `Q40B2`, `Q13A2`, `Q33A1`); V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
+| Waiting on you | What to do next. My recommendation, revised 2026-10-11: (1) for refusals, test a judge-side rule first (the `rule` prompt of stop 53 on the 20 refusal sentences, about $0.40 of Modal) before any pattern in `src/`; the cause is strict placement, which rolls back every sentence that is not supported; (2) then the live loop, with the 27B judge fixed and both generators (7B and 27B) as candidates. Open: five disputed grades on the second test; V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
