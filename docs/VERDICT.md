@@ -154,6 +154,11 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    Claude Opus 5.5 89.1 %, against Flash's 82.1 %. Both are level with the untrained Qwen 27B (88.3 %), so a
    frontier teacher adds no accuracy with this prompt. The per-clause judge tops out near 89 to 90 % on this
    test. Half of Opus 5.5's 23 false rollbacks come from the claim check, which runs before the judge.
+   Sending the claim check's figure rollbacks to the judge was then tested (stop 52). Each of the three judges
+   caught all 29 wrong sentences the claim check had stopped and passed 6 to 8 of the 9 right ones. The untrained
+   Qwen 27B rose to 91.5 %, level with Opus 5.5 (92.4 %). Behind an LLM judge the claim check added no catch on
+   this test. A prompt with the question and the source as written did not help (stop 53). These arms were
+   designed on the test they were scored on and need a new graded set to confirm.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

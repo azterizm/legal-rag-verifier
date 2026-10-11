@@ -17,12 +17,20 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stops 52 and 53 (your direction): list numbers fixed in `src/`; three judges (Opus 5.5, Pro, Qwen 27B) scored with the fix, with figures sent to the judge and with no claim check; Qwen 27B alone on a prompt with the question and the source as written. Method fixed in GRID before any call. K2 dropped |
-| Waiting on you | After stops 52 and 53: whether to adopt a claim check setting, and the quantisation test for Qwen 27B (which precision and GPU). Stop 49 stays not run |
+| Next step | Stops 52 and 53 are scored. With the claim check's figure rollbacks sent to the judge, the untrained Qwen 27B scores 91.5 % strict (88.3 % at stop 47), level with Opus 5.5 (92.4 %) and Pro (91.2 %). The prompt with the question and the source as written is not a gain. Halted for your decision. No paid run is queued |
+| Waiting on you | (1) Adopt "figures to the judge" as a verifier setting (a `src/` change to `VerifierConfig`, public API). (2) The quantisation test for Qwen 27B: which 4-bit weights (only third-party ones exist), which GPU, and the spend. (3) A new graded set for a clean figure. Stop 49 stays not run |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (52, 53): **Claim check behind the judge; judge shown the question.** Your direction: Opus 5.5, Pro and
+  Qwen 27B only, K2 dropped. Of the 12 false rollbacks 3 were list numbers (fixed in `src/`: segmenter and claims;
+  stop 42 sets unchanged), 4 a figure worded differently, 5 need reasoning. Strict on 354 sentences, list fix then
+  figures to the judge: Opus 5.5 90.1 % then 92.4 %, Pro 89.5 % then 91.2 %, Qwen 27B 89.3 % then 91.5 %. Each judge
+  catches all 29 wrong sentences the claim check holds. Qwen 27B with the question and the source as written:
+  91.8 %, with the grading rule 92.1 %, no gain. Opus $0.66, Pro $0.34, Modal $0.48. **Resume:** your decisions in
+  Status.
 
 - 2026-10-10 (51): **Opus 5.5 high as a per-clause judge on the fresh test.** Your go. Method fixed in GRID before
   any call. 323 calls, all labels valid. Strict: Opus 5.5 23 / 132, 89.1 %; Pro 88.5 % (15 against 13 sentences);
