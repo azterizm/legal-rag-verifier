@@ -2126,5 +2126,19 @@
   "seconds": 150,
   "usd": 0.0934,
   "note": "started before the grader check finished; stopped when the check failed its gate; no answer written"
+ },
+ {
+  "run": "stop57 answers qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 452.6,
+  "usd": 0.2819,
+  "note": "40 answers"
+ },
+ {
+  "run": "stop57 answers qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.2,
+  "usd": 0.007,
+  "note": "40 answers"
  }
 ]

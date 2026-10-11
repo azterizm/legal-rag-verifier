@@ -546,6 +546,48 @@ def confirm() -> None:  # noqa: PLR0915 - one pass over the readings
     print(json.dumps({k: out[k] for k in (*keys, "held_as_judged", "no_valid_label")}, indent=1))
 
 
+TABLE_JUDGES = (("qwen27-ar4", "p42"), ("qwen27-ar4", "notes2"), ("gemini-pro-low", "notes2"))
+
+
+def table() -> None:
+    """Stop 57: one row per graded sentence of this set, with its grade and whether each judge
+    rolls it back, for ``scripts/self_judge.py``. → results/<set>_arms/table.json"""
+    import fresh_grader as fg  # type: ignore[import-not-found]  # noqa: PLC0415
+
+    data = recorded()
+    us, built = data["units"], data["built"]
+    graded = fe.merged_grades(us)
+    key = json.loads((fe.OUT / "key.json").read_text(encoding="utf-8"))
+    settled = {
+        f"{key[item]['id']}:{key[item]['mode']}:{key[item]['sentence']}": v.get("grade")
+        for item, v in fg.consensus().items()
+    }
+    rows = {
+        u["key"]: {
+            "id": u["id"],
+            "mode": u["mode"],
+            "domain": u["domain"],
+            "grade": graded[u["key"]],
+            # the two graders' grade where they settle it; your grade is used for the rest
+            "graders": settled.get(u["key"]),
+        }
+        for u in us
+    }
+    missing = {}
+    for judge, kind in TABLE_JUDGES:
+        labels = read(judge, kind)
+        missing[f"{judge} {kind}"] = sum(k not in labels for k in requests(kind, data))
+        for name, config in (("figures", aj.STRICT_FIGURES), ("claim", aj.STRICT)):
+            scorer = Scorer(judge, kind, labels, data["sources"])
+            verdicts = replay(us, built, scorer, set(), config)
+            for u in us:
+                rows[u["key"]][f"{judge}|{kind}|{name}"] = fr._rolled(verdicts[u["key"]])
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {"set": fb.SET, "no_valid_label": missing, "rows": rows}
+    (OUT / "table.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps({"set": fb.SET, "sentences": len(rows), "no_valid_label": missing}))
+
+
 def label(judge: str, kind: str = "p42") -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -561,7 +603,9 @@ def label(judge: str, kind: str = "p42") -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["requests", "label", "report", "quant", "confirm"])
+    parser.add_argument(
+        "command", choices=["requests", "label", "report", "quant", "confirm", "table"]
+    )
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
     parser.add_argument("--kind", default="p42", choices=PROMPTS)
     args = parser.parse_args()
@@ -571,6 +615,8 @@ def main() -> None:
         quant()
     elif args.command == "confirm":
         confirm()
+    elif args.command == "table":
+        table()
     elif args.command == "label":
         label(args.judge, args.kind)
     else:
