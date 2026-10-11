@@ -7,18 +7,18 @@
   "usd": 0.0
  },
  "claude-opus-5-5(high)": {
-  "calls": 1139,
+  "calls": 1190,
   "estimated": 0,
-  "input_tokens": 2223789.0,
-  "output_tokens": 266918.0,
-  "usd": 14.233516
+  "input_tokens": 2276732.0,
+  "output_tokens": 280543.0,
+  "usd": 14.717788
  },
  "gemini-3.1-pro-low": {
-  "calls": 1462,
+  "calls": 1513,
   "estimated": 0,
-  "input_tokens": 2300073.0,
-  "output_tokens": 703429.0,
-  "usd": 13.041294
+  "input_tokens": 2334136.0,
+  "output_tokens": 730614.0,
+  "usd": 13.43564
  },
  "gemini-3.8-flash-high": {
   "calls": 5963,

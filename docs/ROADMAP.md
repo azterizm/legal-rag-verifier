@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Stop 57 halted at its gate. Opus 5.5 gives your grade on 138 of 151 sentences of the second test (91.4 %); the gate fixed before the run is 95 %. Opus is not used as the grader and no Qwen 27B answer was generated |
-| Waiting on you | How to grade the Qwen 27B answers: (a) you grade the new sheet, about 150 sentences; (b) Opus grades and you decide only the sentences it marks unsure and those where it and the judge differ, about 20 to 25; (c) stop this test. Also: two refusals you graded no on the second test (Q13A2, Q33A1), which the rule grades yes. Open: V0 on the second test; the four fs-02 grades |
+| Next step | ⛔ Your 9 grades. Stop 57: Qwen 27B 4-bit wrote the answers (114 sentences), the judges labelled them, and Opus 5.5 and Pro settled 105. Fill `correct` in `results/fresh2-q27/leftover.csv` from `results/fresh2-q27/leftover.md`. Then `fresh_grader.py fill`, the two tables and `scripts/self_judge.py` score it once |
+| Waiting on you | (1) The 9 sentences in `results/fresh2-q27/leftover.csv`. (2) On the second test both graders say yes where you said no on `Q37B1`, `Q40B1`, `Q40B2`; and two refusals you graded no (`Q13A2`, `Q33A1`). No grade was changed. Open: V0 on the second test; the four fs-02 grades |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (57, to your sheet): **Two graders pass their check; Qwen 27B answers graded up to 9 sentences.** Your
+  change: keep Opus 5.5, add Pro, ask again where they differ, leave the rest to you. On the second test the two
+  settle 139 of 151 sentences and 136 carry your grade (97.8 %, gate 95 %). Qwen 27B 4-bit then answered the same
+  40 questions (114 sentences); Qwen 27B 4-bit and Pro labelled them; the graders settled 105 and left 9.
+  **Resume:** your column in `results/fresh2-q27/leftover.csv`, then score once.
 
 - 2026-10-11 (57, halted at step 1): **Opus 5.5 as grader fails its gate.** Your go on Qwen 27B as generator and
   judge, with Pro as second judge and Opus 5.5 as grader, no new sheet for you. Step 1: Opus grades the second
