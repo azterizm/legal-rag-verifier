@@ -1825,5 +1825,26 @@
   "seconds": 128.8,
   "usd": 0.0041,
   "note": "stop 55 AMD AWQ download; re-entered after this file was reverted by mistake"
+ },
+ {
+  "run": "stop48 weights check",
+  "gpu": "CPU",
+  "seconds": 188.7,
+  "usd": 0.006,
+  "note": "Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ"
+ },
+ {
+  "run": "fresh2 answers",
+  "gpu": "L4",
+  "seconds": 216.4,
+  "usd": 0.0553,
+  "note": "40 answers"
+ },
+ {
+  "run": "fresh2 answers",
+  "gpu": "L4",
+  "seconds": 17.7,
+  "usd": 0.0045,
+  "note": "40 answers"
  }
 ]

@@ -151,7 +151,7 @@ def build_sources() -> list[dict[str, Any]]:
         if r["domain"] == "software" and r["source_url"].split("#")[0] in pages:
             raise RuntimeError(f"{r['id']} is on a training page")
     OUT.mkdir(parents=True, exist_ok=True)
-    SOURCES.write_text("".join(json.dumps(r, ensure_ascii=False) + "\\n" for r in rows), "utf-8")
+    SOURCES.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), "utf-8")
     return rows
 
 
@@ -184,7 +184,7 @@ def write_questions() -> None:
             if asked:
                 done[row["id"]] = {"source": row["id"], "questions": asked[:3]}
                 with QUESTIONS.open("a", encoding="utf-8") as f:
-                    f.write(json.dumps(done[row["id"]], ensure_ascii=False) + "\\n")
+                    f.write(json.dumps(done[row["id"]], ensure_ascii=False) + "\n")
                 break
     missing = [r["id"] for r in sources() if r["id"] not in done]
     if missing:
@@ -205,7 +205,7 @@ def write_questions() -> None:
             line |= {"licence": row["licence"], "retrieved": "2026-10-11"}
             files["software"].append(json.dumps(line, ensure_ascii=False))
     for name, lines in files.items():
-        (BATTERY / f"{name}.jsonl").write_text("\\n".join(lines) + "\\n", encoding="utf-8")
+        (BATTERY / f"{name}.jsonl").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print({k: len(v) for k, v in files.items()})
 
 
