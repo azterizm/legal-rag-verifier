@@ -1967,3 +1967,30 @@ grade no new sheet.
   failed I stopped that job. It had written no answer. Cost $0.09.
 
 Spend: Opus 5.5 $0.36 ($14.10 of $40). Modal $0.09 ($13.62 of $55).
+
+### Stop 57: grading changed by you (method fixed 2026-10-11, before any further call)
+
+Your instruction after step 1: keep the Opus 5.5 run as it is, run the same sheet on Gemini 3.1 Pro, ask again
+where the two disagree, and leave to you what still disagrees or is unsure. This replaces the single grader and
+its 95 % gate.
+
+- Graders: Opus 5.5 high (grades of step 1 kept) and Gemini 3.1 Pro low, the same prompt, one call per question.
+- A sentence is settled at the first pass if both give yes or both give no.
+- Every other sentence is asked again of both graders: the same question, source and answers, only the open
+  sentences to grade, each with a one-sentence reason before the grade. Neither grader sees the other's grade.
+  Prompt in `scripts/fresh_grader.py`.
+- After the second ask a sentence is settled if both give yes or both give no. Otherwise it is left for you.
+- Check on the second test, where your grades exist (they are in no prompt):
+  - G1: of the sentences the two graders settle, the share with your grade. Fixed now: the procedure is used for
+    the new sheet only if this is at least 95 %. Otherwise I come back to you.
+  - G2: how many sentences are left for you, and what you graded them.
+- For the new sheet (`fresh2-q27`) the same procedure runs. Your sheet holds only the sentences left for you, with
+  their question, source and answers and without the graders' grades. Scoring waits for your column.
+- Every figure of step 2 is labelled "graded by Opus 5.5 and Gemini 3.1 Pro, open sentences by you".
+- A limit that is new: Pro is now a grader and also the second judge. Where the two graders agree, Pro as a
+  judge is scored partly against itself, so its figures and reading R3 lean in Pro's favour. Reading R4 (the pair
+  against Qwen 27B alone) is affected the same way. Both are reported with this note. Qwen 27B's own figures
+  (R1, R2) are not affected.
+- Step 2 runs only after G1 passes: answers, then judges, then graders, in that order.
+- Spend: Pro expected $2 for grading and $1 as judge, its $15 stop holds ($11.98 spent). Opus 5.5 expected $1,
+  ledger stop $17. Modal expected $1.50, stage stop $5.
