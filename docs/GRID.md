@@ -2074,3 +2074,34 @@ is learned there about catching. Replay only.
 
 Spend, stop 57: Modal $0.81, Opus 5.5 $0.98, Pro $1.46. Totals: Modal $14.25 of $55, Opus 5.5 $14.72 of $40, Pro
 $13.44 of $15.
+
+## Stop 58: a refusal rule on the judge's side (method fixed 2026-10-11, before any run)
+
+Your go: "go on judge side refusal rule on 27b". No pattern goes into `src/`.
+
+- Cause, from stop 57: strict placement rolls back every sentence the judge does not label supported, and a
+  sentence in which the generator declines is not supported by any passage.
+- Judge: Qwen 27B AutoRound 4-bit, as stops 55 and 57. Replace strict with figures to the judge.
+- Two prompts, both with one paragraph written in stop 53, before any refusal was seen: every claim must be
+  supported, and a sentence that makes no claim, such as a link, a refusal or a list number, is supported unless
+  it misstates the source.
+  - `rule`: stop 53's prompt as it is (the question and the source as written, plus the paragraph).
+  - `refusal`: the stop 42 prompt with only that paragraph added before the reply format ("the passages" for
+    "the source"). This isolates the paragraph.
+- Sets and grades:
+  - Qwen 27B's own answers (`fresh2-q27`, 114 sentences, graded as stop 57): both prompts.
+  - The 7B's answers (`fresh2`, 151 sentences, your grades): `refusal` only, as the check that the paragraph does
+    not let wrong sentences through. This check is my addition to what you asked; it doubles the Modal time.
+- Readings:
+  - S1, on its own answers, the 20 refusal sentences (16 right, 4 wrong): right ones passed and wrong ones caught
+    under each prompt, beside the stop 42 prompt (0 and 4).
+  - S2, on its own answers, all 114 sentences: false rollbacks, caught, accuracy; each prompt against the stop 42
+    prompt (sentences only one gets right, exact two-sided sign test). A gain only if accuracy is higher and p is
+    under 0.05.
+  - S3, on the 7B's answers: `refusal` against the stop 42 prompt. No harm if accuracy is at most 1.5 points lower
+    and the sign test gives p of 0.05 or more.
+- Limits. The refusal sentences are the ones the problem was found on; the paragraph predates them, but a fix
+  shown here still needs new answers to stand. The list of which sentences are refusals (`fresh_arms.REFUSAL`)
+  was written after stop 57 and is used for S1 only. All 20 refusals are closed-book; a refusal when the source
+  does not answer the question is not in any set.
+- Fail safe as stop 52. Spend: Modal expected $0.80, stage stop $3. Router: none.

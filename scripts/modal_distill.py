@@ -974,6 +974,7 @@ ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     "stop55": 6.0,
     "stop56": 6.0,
     "stop57": 5.0,
+    "stop58": 3.0,
 }
 
 
