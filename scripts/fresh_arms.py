@@ -118,14 +118,17 @@ _HEDGE = """- A hedged or general sentence ("may", "typically", "in some cases")
 support. If the passages do not establish it, it is "not_stated".
 """
 NOTES_SHA = hashlib.sha256((aj.SYSTEM + aj.USER + _NOTES + _HEDGE).encode()).hexdigest()
+# Stop 58: stop 53's paragraph on the stop 42 prompt ("the passages" for "the source").
+_REFUSAL = _RULE.replace("misstates the source", "misstates the passages")
+INSERTS = {"notes2": _NOTES, "notes3": _NOTES + _HEDGE, "refusal": _REFUSAL.rstrip("\n") + "\n"}
+REFUSAL_SHA = hashlib.sha256((aj.SYSTEM + aj.USER + _REFUSAL).encode()).hexdigest()
 
 
 def notes_prompt(kind: str, sentence: str, candidates: Sequence[str], prefix: str) -> str:
     """The stop 42 prompt with notes on how to apply the labels, before the reply format.
     ``notes3`` adds the note on hedged sentences to the two of ``notes2``."""
     head, tail = aj.user_prompt(sentence, candidates, prefix).rsplit("Return JSON", 1)
-    notes = _NOTES + (_HEDGE if kind == "notes3" else "")
-    return f"{head}{notes}\nReturn JSON{tail}"
+    return f"{head}{INSERTS[kind]}\nReturn JSON{tail}"
 
 
 def prompt(
@@ -133,7 +136,7 @@ def prompt(
 ) -> str:
     if kind == "p42":
         return str(aj.user_prompt(clause, candidates, unit["prefix"]))
-    if kind in NOTES:
+    if kind in INSERTS:
         return notes_prompt(kind, clause, candidates, unit["prefix"])
     return view_prompt(kind, clause, source, unit["query"], unit["prefix"])
 
@@ -189,7 +192,7 @@ def requests(kind: str, data: Mapping[str, Any] | None = None) -> dict[str, str]
             for clause, candidates in (r or {}).get("calls", []):
                 user = prompt(kind, clause, candidates, u, data["sources"][key])
                 out[aj.prompt_key(user)] = user
-    if kind == "p42" or kind in NOTES:
+    if kind == "p42" or kind in INSERTS:
         fe.assert_blind(data["units"], out)
     return out
 
@@ -237,7 +240,7 @@ class Scorer:
         if label is None:  # no valid label after the reruns: counted as not stated
             self.missing += 1
             return list(aj.one_hot("not_stated", 0, len(premises)))
-        passage = label["passage"] if self.kind in ("p42", *NOTES) else 0
+        passage = label["passage"] if self.kind == "p42" or self.kind in INSERTS else 0
         return list(aj.one_hot(label["label"], passage, len(premises)))
 
 
@@ -547,7 +550,13 @@ def confirm() -> None:  # noqa: PLR0915 - one pass over the readings
     print(json.dumps({k: out[k] for k in (*keys, "held_as_judged", "no_valid_label")}, indent=1))
 
 
-TABLE_JUDGES = (("qwen27-ar4", "p42"), ("qwen27-ar4", "notes2"), ("gemini-pro-low", "notes2"))
+TABLE_JUDGES = (
+    ("qwen27-ar4", "p42"),
+    ("qwen27-ar4", "notes2"),
+    ("gemini-pro-low", "notes2"),
+    ("qwen27-ar4", "rule"),  # stop 58; a column is written only where the labels exist
+    ("qwen27-ar4", "refusal"),
+)
 # A refusal or a request for context, as Qwen 27B words them closed-book. Written after stop 57's
 # scoring, for the reading added there; it scores nothing by itself.
 REFUSAL = re.compile(r"\b(I do not (know|have)|Please (specify|provide)|If you are asking about)\b")
@@ -581,6 +590,8 @@ def table() -> None:
     missing = {}
     for judge, kind in TABLE_JUDGES:
         labels = read(judge, kind)
+        if not labels:
+            continue
         missing[f"{judge} {kind}"] = sum(k not in labels for k in requests(kind, data))
         for name, config in (("figures", aj.STRICT_FIGURES), ("claim", aj.STRICT)):
             scorer = Scorer(judge, kind, labels, data["sources"])
