@@ -17,8 +17,8 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 51 is scored: Opus 5.5 high per clause scores 89.1 % strict on the fresh test, level with Pro (88.5 %) and the untrained Qwen 27B (88.3 %). No judge tested per clause is above the untrained Qwen 27B. Halted for your decision. No paid run is queued |
-| Waiting on you | (1) What to do with the auditor now that a per-clause teacher adds no accuracy: fix the claim check's 12 false rollbacks (`src/` change, includes list numbers split by the segmenter); test a per-sentence judge that also sees the question and the source as written; or train K2 on Opus 5.5 or Pro labels for speed only. (2) Stop 49 stays not run unless you ask for an ungated test |
+| Next step | Stops 52 and 53 (your direction): list numbers fixed in `src/`; three judges (Opus 5.5, Pro, Qwen 27B) scored with the fix, with figures sent to the judge and with no claim check; Qwen 27B alone on a prompt with the question and the source as written. Method fixed in GRID before any call. K2 dropped |
+| Waiting on you | After stops 52 and 53: whether to adopt a claim check setting, and the quantisation test for Qwen 27B (which precision and GPU). Stop 49 stays not run |
 | Blocked | Nothing |
 
 ### Stop log
