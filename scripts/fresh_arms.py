@@ -47,6 +47,10 @@ ARMS = ("list fix", "figures to the judge", "no claim check")
 FIGURE_ONLY = frozenset({"UNGROUNDED_FIGURE"})
 OPUS_STOP = 13.0  # the Opus 5.5 ledger stops here for stop 52 (GRID)
 ALPHA = 0.05
+#: Stop 55: the same Qwen 27B at three precisions (label → the name of its label files).
+QUANT = {"FP8, official": QWEN, "AMD AWQ, 4-bit": "qwen27-awq4", "AutoRound, 4-bit": "qwen27-ar4"}
+SEQUENTIAL = 40  # prompts timed one at a time
+MARGIN = 0.015  # stop 55: a 4-bit model within this of FP8, and not told apart, costs little
 
 _LABELS = """Labels:
 - "supported": the source states the sentence, or the sentence follows from the source by \
@@ -174,6 +178,9 @@ def requests(kind: str, data: Mapping[str, Any] | None = None) -> dict[str, str]
     """Every prompt of one kind, ``{sha: user prompt}``: the clauses on the normal path and the
     clauses of the held sentences with the claim check off."""
     data = data or recorded()
+    if kind == "seq":  # an even spread of the stop 42 prompts, for timing one at a time
+        items = list(requests("p42", data).items())
+        return dict(items[:: max(len(items) // SEQUENTIAL, 1)][:SEQUENTIAL])
     out: dict[str, str] = {}
     for u in data["units"]:
         key = u["key"]
@@ -238,9 +245,10 @@ def replay(
     built: Mapping[str, Premise],
     scorer: Scorer,
     free: frozenset[str] | set[str],
+    config: Any = aj.STRICT,
 ) -> dict[str, dict[str, Any]]:
     """Strict placement. A sentence in ``free`` is checked with the claim check off."""
-    verifier = Verifier(scorer, aj.STRICT)
+    verifier = Verifier(scorer, config)
     out = {}
     for u in us:
         scorer.unit = u
@@ -376,6 +384,59 @@ def report() -> None:  # noqa: PLR0912 - one pass over the readings
     print(json.dumps({k: out[k] for k in keys}, indent=1))
 
 
+def quant() -> None:
+    """Stop 55: each precision on the same prompts, against FP8. → results/fresh_arms/quant.json"""
+    data = recorded()
+    us, built = data["units"], data["built"]
+    graded = fe.merged_grades(us)
+    units = [
+        {**u, "right": graded[u["key"]] == "yes", "wrong": graded[u["key"]] == "no"} for u in us
+    ]
+    units = [u for u in units if u["right"] or u["wrong"]]
+    configs = {"list fix": aj.STRICT, "figures to the judge": aj.STRICT_FIGURES}
+    out: dict[str, Any] = {"units": len(units), "arms": {}, "against_fp8": {}, "labels": {}}
+    out |= {"no_valid_label": {}, "latency_one_at_a_time": {}}
+    correct: dict[str, dict[str, bool]] = {}
+    for kind in ("p42", "notes2"):
+        asked = requests(kind, data)
+        base = read(QWEN, kind)
+        for title, name in QUANT.items():
+            labels = read(name, kind)
+            out["no_valid_label"][f"{title} | {kind}"] = sum(k not in labels for k in asked)
+            both = [k for k in asked if k in labels and k in base]
+            out["labels"][f"{title} | {kind}"] = {
+                "same_as_fp8": sum(labels[k]["label"] == base[k]["label"] for k in both),
+                "of": len(both),
+            }
+            for arm, config in configs.items():
+                scorer = Scorer(name, kind, labels, data["sources"])
+                verdicts = replay(us, built, scorer, set(), config)
+                key = f"{title} | {kind} | {arm}"
+                out["arms"][key] = fr.score(units, verdicts)
+                correct[key] = {
+                    u["key"]: fr._rolled(verdicts[u["key"]]) == u["wrong"] for u in units
+                }
+        for title in list(QUANT)[1:]:
+            for arm in configs:
+                a, b = f"{title} | {kind} | {arm}", f"{next(iter(QUANT))} | {kind} | {arm}"
+                test = paired(correct[a], correct[b])
+                drop = out["arms"][b]["total"]["accuracy"] - out["arms"][a]["total"]["accuracy"]
+                test["costs_little"] = bool(drop <= MARGIN and test["p"] >= ALPHA)
+                out["against_fp8"][a] = test
+    for name in [*QUANT.values(), *(f"{n}-l4" for n in list(QUANT.values())[1:])]:
+        file = path(name, "seq")
+        if file.exists():
+            rows = [json.loads(x) for x in file.read_text("utf-8").splitlines()]
+            out["latency_one_at_a_time"][name] = aj.latency(rows)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "quant.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    for key, s in out["arms"].items():
+        t = s["total"]
+        print(f"{key:52} {t['false_rollbacks']}/{t['caught']} {t['accuracy']}")
+    keys = ("against_fp8", "labels", "no_valid_label", "latency_one_at_a_time")
+    print(json.dumps({k: out[k] for k in keys}, indent=1))
+
+
 def label(judge: str) -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -391,11 +452,13 @@ def label(judge: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["requests", "label", "report"])
+    parser.add_argument("command", choices=["requests", "label", "report", "quant"])
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
     args = parser.parse_args()
     if args.command == "report":
         report()
+    elif args.command == "quant":
+        quant()
     elif args.command == "label":
         label(args.judge)
     else:
