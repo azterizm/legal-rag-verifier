@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Your grades. The second fresh test is sealed and every judge has labelled it: `results/fresh2/sheet.md` (40 questions, 151 sentences), your column `correct` in `results/fresh2/grades.csv`. Then `FRESH_SET=fresh2 uv run python scripts/fresh_arms.py confirm` scores it once (stop 56) |
-| Waiting on you | (1) Grade `results/fresh2/grades.csv`. (2) After stop 56: whether the 4-bit AutoRound weights replace FP8 (not told apart, twice as fast, third-party weights, no L4 fit). (3) Whether to try the AMD weights on another engine. (4) Four grades to check on fs-02 in the first test. Stop 49 stays not run |
+| Next step | Stop 56 is scored. The tuned configuration is not confirmed: 90.1 % against 89.4 % for the stop 47 configuration on the second fresh test (4 gained, 3 lost). The level that holds for the untrained Qwen 27B is about 90 % on both tests. Halted for your decision. No paid run is queued |
+| Waiting on you | What to do next. My recommendation: (1) fix the judge as Qwen 27B, stop 42 prompt, strict, and drop `notes2`; (2) score V0 on the second test for the untouched comparison (about $0.05); (3) run the judge live in the loop with rollback and retry, which has not been done since stop 42. Open: whether the 4-bit AutoRound weights replace FP8; the four fs-02 grades |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (56): **Second fresh test scored; the tuned gains are not confirmed.** Your grades committed first (151
+  sentences, 84 right, 67 wrong). Qwen 27B FP8 as tuned (two notes, figures to the judge) 8 / 60, 90.1 %; stop 47
+  configuration 12 / 63, 89.4 % (4 gained, 3 lost, p = 1.0). Figures to the judge alone 90.7 % (3 and 1). Opus 5.5
+  92.1 %, Pro 90.7 %, AutoRound 4-bit 89.4 %: none told apart. No auditor 55.6 %. With source: every judge is below
+  no auditor (88.9 % against 94.4 %). `notes2` is not adopted. **Resume:** your decision in Status.
 
 - 2026-10-11 (55, 56 to the halt): **Verifier setting, 4-bit test, second fresh test sealed.** Your go on all three.
   `VerifierConfig.ungrounded_figure="judge"` is in `src/` (default unchanged) and reproduces stop 52's arm on

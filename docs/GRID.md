@@ -1829,3 +1829,54 @@ before I stopped it. The probe now runs once and stops.
 - The claim check holds 22 sentences, 9 of them for a figure only.
 - Scoring: `FRESH_SET=fresh2 uv run python scripts/fresh_arms.py confirm`, once, after your grades are committed.
 - Spend so far: Modal $0.68 (answers $0.06, judges $0.62). Opus 5.5 $1.52. Pro $0.83. Flash 40 calls.
+
+### Stop 56: results (2026-10-11)
+
+Your grades were committed first (`c2e1228`): 151 sentences, 84 right, 67 wrong, none unsure. The sealed files
+are unchanged. Scored once: `FRESH_SET=fresh2 uv run python scripts/fresh_arms.py confirm`, raw in
+`results/fresh2_arms/confirm.json`. Every prompt has a valid label.
+
+| Configuration | False rollbacks / caught | Accuracy | 95 % interval |
+|---|---|---|---|
+| P1: Qwen 27B FP8, `notes2`, figures to the judge | 8 / 60 | 90.1 % | 84.3 to 93.9 |
+| Stop 47 configuration: Qwen 27B FP8, stop 42 prompt, claim check rolling back | 12 / 63 | 89.4 % | 83.5 to 93.4 |
+| Qwen 27B FP8, stop 42 prompt, figures to the judge | 9 / 62 | 90.7 % | 85.0 to 94.4 |
+| Qwen 27B FP8, `notes2`, claim check rolling back | 11 / 61 | 88.7 % | 82.7 to 92.9 |
+| Opus 5.5, `notes2`, figures to the judge | 5 / 60 | 92.1 % | 86.6 to 95.4 |
+| Gemini 3.1 Pro, `notes2`, figures to the judge | 10 / 63 | 90.7 % | 85.0 to 94.4 |
+| AutoRound 4-bit, `notes2`, figures to the judge | 8 / 59 | 89.4 % | 83.5 to 93.4 |
+| No auditor | 0 / 0 | 55.6 % | |
+
+P1 by group: software 5 / 23, 89.7 %; statutes 3 / 37, 90.4 %; with source 5 / 1, 88.9 %; closed-book 3 / 59,
+91.1 %.
+
+- P2: P1 against the stop 47 configuration: 4 sentences gained, 3 lost, p = 1.0. **Not confirmed.** The three
+  changes tuned on the first test add 0.7 points here, against 4.2 points there (89.3 % to 93.5 %).
+- P3, each change alone against the stop 47 configuration: figures to the judge 3 gained and 1 lost (p = 0.63);
+  `notes2` 1 gained and 2 lost. `notes2` on top of figures to the judge: 1 and 2.
+- P4, against Qwen 27B FP8 in the P1 configuration: Opus 5.5 6 and 3 (p = 0.51); Pro 7 and 6; AutoRound 0 and 1.
+  None is told apart. AutoRound gives the same label as FP8 on 148 of 153 clauses.
+- P5: the claim check holds 22 sentences (6 right, 16 wrong). Qwen 27B passes all 6 and catches 15; Opus 5.5 and
+  Pro pass 6 and catch 16.
+
+Reading.
+
+- The level that holds is about 90 %. The untrained Qwen 27B in the stop 47 configuration scores 89.4 % here and
+  89.3 % on the first test. 93.5 % was a fit to the first test.
+- `notes2` does not help on new sentences. It is not adopted.
+- Figures to the judge points the same way on both tests (8 and 0 there, 3 and 1 here) and frees every right
+  sentence the claim check held, at the cost of 1 wrong sentence of 16. It is not settled at this size.
+- A frontier model is not a better judge here either, and the 4-bit model matches FP8 again.
+
+Added after the scoring (not fixed before it):
+
+- Composition: with source 68 right and 4 wrong; closed-book 16 right and 63 wrong.
+- On answers written with the source, no auditor scores 94.4 % (68 of 72). P1 scores 88.9 %: it rolls back 5 right
+  sentences and catches 1 of the 4 wrong ones. Opus 5.5 scores 91.7 %, Pro 87.5 %. Every judge is below no
+  auditor on this kind of answer in this test. On the first test the same configuration scored 91.4 % against
+  86.5 %. Over both tests it catches 14 of 26 wrong sentences and rolls back 10 of 209 right ones.
+- Without the 4 thin software sources (11 sentences): P1 89.3 %, the stop 47 configuration 88.6 %.
+- At least one of Qwen 27B, Opus 5.5 and Pro is right on 144 of 151 sentences; 7 are wrong for all three.
+
+Spend, stop 56: Modal $0.68, Opus 5.5 $1.52, Pro $0.83. Totals: Modal $13.53 of $55, Opus 5.5 $13.74 of $40, Pro
+$11.98 of $15.
