@@ -3,7 +3,8 @@
  "no_valid_label": {
   "qwen27-ar4 p42": 0,
   "qwen27-ar4 notes2": 0,
-  "gemini-pro-low notes2": 0
+  "gemini-pro-low notes2": 0,
+  "qwen27-ar4 refusal": 0
  },
  "rows": {
   "gl-01:closed:0": {
@@ -18,7 +19,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-01:source:0": {
    "id": "gl-01",
@@ -32,7 +35,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-02:closed:0": {
    "id": "gl-02",
@@ -46,7 +51,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-02:closed:1": {
    "id": "gl-02",
@@ -60,7 +67,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-02:closed:2": {
    "id": "gl-02",
@@ -74,7 +83,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-02:source:0": {
    "id": "gl-02",
@@ -88,7 +99,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-03:closed:0": {
    "id": "gl-03",
@@ -102,7 +115,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-03:source:0": {
    "id": "gl-03",
@@ -116,7 +131,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-04:closed:0": {
    "id": "gl-04",
@@ -130,7 +147,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-04:closed:1": {
    "id": "gl-04",
@@ -144,7 +163,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-04:source:0": {
    "id": "gl-04",
@@ -158,7 +179,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-04:source:1": {
    "id": "gl-04",
@@ -172,7 +195,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-04:source:2": {
    "id": "gl-04",
@@ -186,7 +211,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-04:source:3": {
    "id": "gl-04",
@@ -200,7 +227,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-05:closed:0": {
    "id": "gl-05",
@@ -214,7 +243,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-05:source:0": {
    "id": "gl-05",
@@ -228,7 +259,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-05:source:1": {
    "id": "gl-05",
@@ -242,7 +275,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-05:source:2": {
    "id": "gl-05",
@@ -256,7 +291,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-05:source:3": {
    "id": "gl-05",
@@ -270,7 +307,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-05:source:4": {
    "id": "gl-05",
@@ -284,7 +323,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-06:closed:0": {
    "id": "gl-06",
@@ -298,7 +339,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-06:closed:1": {
    "id": "gl-06",
@@ -312,7 +355,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-06:source:0": {
    "id": "gl-06",
@@ -326,7 +371,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-07:closed:0": {
    "id": "gl-07",
@@ -340,7 +387,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-07:closed:1": {
    "id": "gl-07",
@@ -354,7 +403,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-07:closed:2": {
    "id": "gl-07",
@@ -368,7 +419,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-07:source:0": {
    "id": "gl-07",
@@ -382,7 +435,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-08:closed:0": {
    "id": "gl-08",
@@ -396,7 +451,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-08:closed:1": {
    "id": "gl-08",
@@ -410,7 +467,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-08:source:0": {
    "id": "gl-08",
@@ -424,7 +483,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-09:closed:0": {
    "id": "gl-09",
@@ -438,7 +499,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-09:source:0": {
    "id": "gl-09",
@@ -452,7 +515,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-09:source:1": {
    "id": "gl-09",
@@ -466,7 +531,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-10:closed:0": {
    "id": "gl-10",
@@ -480,7 +547,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-10:closed:1": {
    "id": "gl-10",
@@ -494,7 +563,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-10:source:0": {
    "id": "gl-10",
@@ -508,7 +579,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-11:closed:0": {
    "id": "gl-11",
@@ -522,7 +595,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-11:closed:1": {
    "id": "gl-11",
@@ -536,7 +611,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-11:closed:2": {
    "id": "gl-11",
@@ -550,7 +627,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-11:source:0": {
    "id": "gl-11",
@@ -564,7 +643,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-12:closed:0": {
    "id": "gl-12",
@@ -578,7 +659,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-12:source:0": {
    "id": "gl-12",
@@ -592,7 +675,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-13:closed:0": {
    "id": "gl-13",
@@ -606,7 +691,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-13:closed:1": {
    "id": "gl-13",
@@ -620,7 +707,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-13:source:0": {
    "id": "gl-13",
@@ -634,7 +723,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-14:closed:0": {
    "id": "gl-14",
@@ -648,7 +739,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-14:closed:1": {
    "id": "gl-14",
@@ -662,7 +755,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-14:closed:2": {
    "id": "gl-14",
@@ -676,7 +771,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-14:closed:3": {
    "id": "gl-14",
@@ -690,7 +787,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-14:source:0": {
    "id": "gl-14",
@@ -704,7 +803,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-15:closed:0": {
    "id": "gl-15",
@@ -718,7 +819,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-15:closed:1": {
    "id": "gl-15",
@@ -732,7 +835,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-15:source:0": {
    "id": "gl-15",
@@ -746,7 +851,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-16:closed:0": {
    "id": "gl-16",
@@ -760,7 +867,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-16:closed:1": {
    "id": "gl-16",
@@ -774,7 +883,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-16:closed:2": {
    "id": "gl-16",
@@ -788,7 +899,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-16:source:0": {
    "id": "gl-16",
@@ -802,7 +915,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-16:source:1": {
    "id": "gl-16",
@@ -816,7 +931,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-17:closed:0": {
    "id": "gl-17",
@@ -830,7 +947,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-17:source:0": {
    "id": "gl-17",
@@ -844,7 +963,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-18:closed:0": {
    "id": "gl-18",
@@ -858,7 +979,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-18:closed:1": {
    "id": "gl-18",
@@ -872,7 +995,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-18:source:0": {
    "id": "gl-18",
@@ -886,7 +1011,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-19:closed:0": {
    "id": "gl-19",
@@ -900,7 +1027,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-19:closed:1": {
    "id": "gl-19",
@@ -914,7 +1043,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-19:closed:2": {
    "id": "gl-19",
@@ -928,7 +1059,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-19:closed:3": {
    "id": "gl-19",
@@ -942,7 +1075,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-19:source:0": {
    "id": "gl-19",
@@ -956,7 +1091,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-19:source:1": {
    "id": "gl-19",
@@ -970,7 +1107,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-20:closed:0": {
    "id": "gl-20",
@@ -984,7 +1123,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-20:closed:1": {
    "id": "gl-20",
@@ -998,7 +1139,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gl-20:source:0": {
    "id": "gl-20",
@@ -1012,7 +1155,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gl-20:source:1": {
    "id": "gl-20",
@@ -1026,7 +1171,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-01:closed:0": {
    "id": "gs-01",
@@ -1040,7 +1187,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-01:source:0": {
    "id": "gs-01",
@@ -1054,7 +1203,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-02:closed:0": {
    "id": "gs-02",
@@ -1068,7 +1219,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-02:closed:1": {
    "id": "gs-02",
@@ -1082,7 +1235,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-02:closed:2": {
    "id": "gs-02",
@@ -1096,7 +1251,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-02:source:0": {
    "id": "gs-02",
@@ -1110,7 +1267,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-03:closed:0": {
    "id": "gs-03",
@@ -1124,7 +1283,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-03:closed:1": {
    "id": "gs-03",
@@ -1138,7 +1299,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-03:source:0": {
    "id": "gs-03",
@@ -1152,7 +1315,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-03:source:1": {
    "id": "gs-03",
@@ -1166,7 +1331,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-04:closed:0": {
    "id": "gs-04",
@@ -1180,7 +1347,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-04:source:0": {
    "id": "gs-04",
@@ -1194,7 +1363,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-05:closed:0": {
    "id": "gs-05",
@@ -1208,7 +1379,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-05:source:0": {
    "id": "gs-05",
@@ -1222,7 +1395,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-06:closed:0": {
    "id": "gs-06",
@@ -1236,7 +1411,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-06:closed:1": {
    "id": "gs-06",
@@ -1250,7 +1427,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-06:source:0": {
    "id": "gs-06",
@@ -1264,7 +1443,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-07:closed:0": {
    "id": "gs-07",
@@ -1278,7 +1459,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-07:source:0": {
    "id": "gs-07",
@@ -1292,7 +1475,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-08:closed:0": {
    "id": "gs-08",
@@ -1306,7 +1491,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-08:closed:1": {
    "id": "gs-08",
@@ -1320,7 +1507,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-08:source:0": {
    "id": "gs-08",
@@ -1334,7 +1523,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-09:closed:0": {
    "id": "gs-09",
@@ -1348,7 +1539,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-09:source:0": {
    "id": "gs-09",
@@ -1362,7 +1555,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-09:source:1": {
    "id": "gs-09",
@@ -1376,7 +1571,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:closed:0": {
    "id": "gs-10",
@@ -1390,7 +1587,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-10:closed:1": {
    "id": "gs-10",
@@ -1404,7 +1603,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-10:closed:2": {
    "id": "gs-10",
@@ -1418,7 +1619,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-10:closed:3": {
    "id": "gs-10",
@@ -1432,7 +1635,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-10:closed:4": {
    "id": "gs-10",
@@ -1446,7 +1651,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:closed:5": {
    "id": "gs-10",
@@ -1460,7 +1667,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-10:source:0": {
    "id": "gs-10",
@@ -1474,7 +1683,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:1": {
    "id": "gs-10",
@@ -1488,7 +1699,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:2": {
    "id": "gs-10",
@@ -1502,7 +1715,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:3": {
    "id": "gs-10",
@@ -1516,7 +1731,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-10:source:4": {
    "id": "gs-10",
@@ -1530,7 +1747,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:5": {
    "id": "gs-10",
@@ -1544,7 +1763,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:6": {
    "id": "gs-10",
@@ -1558,7 +1779,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:7": {
    "id": "gs-10",
@@ -1572,7 +1795,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:8": {
    "id": "gs-10",
@@ -1586,7 +1811,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:9": {
    "id": "gs-10",
@@ -1600,7 +1827,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:10": {
    "id": "gs-10",
@@ -1614,7 +1843,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:11": {
    "id": "gs-10",
@@ -1628,7 +1859,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:12": {
    "id": "gs-10",
@@ -1642,7 +1875,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:13": {
    "id": "gs-10",
@@ -1656,7 +1891,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-10:source:14": {
    "id": "gs-10",
@@ -1670,7 +1907,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-11:closed:0": {
    "id": "gs-11",
@@ -1684,7 +1923,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-11:source:0": {
    "id": "gs-11",
@@ -1698,7 +1939,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-12:closed:0": {
    "id": "gs-12",
@@ -1712,7 +1955,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-12:closed:1": {
    "id": "gs-12",
@@ -1726,7 +1971,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-12:source:0": {
    "id": "gs-12",
@@ -1740,7 +1987,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-13:closed:0": {
    "id": "gs-13",
@@ -1754,7 +2003,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-13:closed:1": {
    "id": "gs-13",
@@ -1768,7 +2019,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-13:source:0": {
    "id": "gs-13",
@@ -1782,7 +2035,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-13:source:1": {
    "id": "gs-13",
@@ -1796,7 +2051,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-14:closed:0": {
    "id": "gs-14",
@@ -1810,7 +2067,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-14:closed:1": {
    "id": "gs-14",
@@ -1824,7 +2083,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-14:source:0": {
    "id": "gs-14",
@@ -1838,7 +2099,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-14:source:1": {
    "id": "gs-14",
@@ -1852,7 +2115,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-15:closed:0": {
    "id": "gs-15",
@@ -1866,7 +2131,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-15:closed:1": {
    "id": "gs-15",
@@ -1880,7 +2147,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-15:closed:2": {
    "id": "gs-15",
@@ -1894,7 +2163,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-15:source:0": {
    "id": "gs-15",
@@ -1908,7 +2179,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-16:closed:0": {
    "id": "gs-16",
@@ -1922,7 +2195,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-16:closed:1": {
    "id": "gs-16",
@@ -1936,7 +2211,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-16:source:0": {
    "id": "gs-16",
@@ -1950,7 +2227,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-16:source:1": {
    "id": "gs-16",
@@ -1964,7 +2243,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-17:closed:0": {
    "id": "gs-17",
@@ -1978,7 +2259,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-17:source:0": {
    "id": "gs-17",
@@ -1992,7 +2275,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-18:closed:0": {
    "id": "gs-18",
@@ -2006,7 +2291,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-18:source:0": {
    "id": "gs-18",
@@ -2020,7 +2307,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-18:source:1": {
    "id": "gs-18",
@@ -2034,7 +2323,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-19:closed:0": {
    "id": "gs-19",
@@ -2048,7 +2339,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-19:closed:1": {
    "id": "gs-19",
@@ -2062,7 +2355,9 @@
    "qwen27-ar4|notes2|figures": true,
    "qwen27-ar4|notes2|claim": true,
    "gemini-pro-low|notes2|figures": true,
-   "gemini-pro-low|notes2|claim": true
+   "gemini-pro-low|notes2|claim": true,
+   "qwen27-ar4|refusal|figures": true,
+   "qwen27-ar4|refusal|claim": true
   },
   "gs-19:source:0": {
    "id": "gs-19",
@@ -2076,7 +2371,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-19:source:1": {
    "id": "gs-19",
@@ -2090,7 +2387,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-20:closed:0": {
    "id": "gs-20",
@@ -2104,7 +2403,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   },
   "gs-20:source:0": {
    "id": "gs-20",
@@ -2118,7 +2419,9 @@
    "qwen27-ar4|notes2|figures": false,
    "qwen27-ar4|notes2|claim": false,
    "gemini-pro-low|notes2|figures": false,
-   "gemini-pro-low|notes2|claim": false
+   "gemini-pro-low|notes2|claim": false,
+   "qwen27-ar4|refusal|figures": false,
+   "qwen27-ar4|refusal|claim": false
   }
  }
 }

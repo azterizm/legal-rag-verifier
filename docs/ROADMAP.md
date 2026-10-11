@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 58 (your go): a refusal rule on the judge's side. Qwen 27B 4-bit with stop 53's paragraph, on its own answers (two prompts) and on the 7B's answers (one prompt, as the harm check). Method fixed in GRID before any run |
-| Waiting on you | What to do next. My recommendation, revised 2026-10-11: (1) for refusals, test a judge-side rule first (the `rule` prompt of stop 53 on the 20 refusal sentences, about $0.40 of Modal) before any pattern in `src/`; the cause is strict placement, which rolls back every sentence that is not supported; (2) then the live loop, with the 27B judge fixed and both generators (7B and 27B) as candidates. Open: five disputed grades on the second test; V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
+| Next step | Stop 58 is scored. The paragraph does not make the judge pass refusals (3 of 16). The judge reads a closed-book refusal with a reason as contradicted, because it has the source. On the 7B's answers the paragraph gains 6 sentences and loses none. Halted for your decision. No paid run is queued |
+| Waiting on you | What to do next. My recommendation: test the case that matters and that no set holds, a refusal when the source does not answer the question (the same 40 questions, each with another question's source, Qwen 27B 4-bit as generator and judge; about $1.50 of Modal, grading by the two graders with open sentences to you). Then the live loop. Open: five disputed grades on the second test; V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (58): **A refusal rule on the judge's side does not fix refusals.** Your go. Qwen 27B 4-bit with stop
+  53's paragraph (a sentence with no claim, such as a refusal, is supported). Its own answers: 3 of 16 right
+  refusals passed (stop 42 prompt 0); 16 / 35, 85.1 % against 18 / 35, 83.3 % (3 gained, 1 lost). The judge reads a
+  refusal with a reason as contradicted, because it has the source. The 7B's answers, your grades: 5 / 62, 93.4 %
+  against 10 / 61, 89.4 % (6 gained, 0 lost, p = 0.031). Modal $0.63. **Resume:** your decision in Status.
 
 - 2026-10-11 (57): **Qwen 27B as generator and judge.** Your 9 grades committed first. Generator, wrong sentences:
   Qwen 27B 4-bit 0 of 49 with the source and 36 of 65 closed-book; the 7B 1 of 72 and 63 of 79. Judge on its own
