@@ -102,6 +102,8 @@ _NUMERIC_ABBREVIATIONS = frozenset(
 _TERMINAL_ABBREVIATIONS = frozenset({"etc", "ltd", "plc", "inc", "corp", "co"})
 
 _WORD_BEFORE_DOT = re.compile(r"((?:[A-Za-z]\.)*[A-Za-z]+)$")
+# A list number on its own ("1.", "12.") opens a list item; it is not a sentence.
+_LIST_MARKER = re.compile(r"\d{1,3}\.")
 
 
 @dataclass(frozen=True, slots=True)
@@ -164,6 +166,8 @@ def find_boundary(text: str, start: int = 0, *, final: bool = False) -> int | No
         if decided is None:
             return None
         if decided:
+            if _LIST_MARKER.fullmatch(text[start : i + 1].strip()) and text[i + 1 :].strip():
+                continue  # "1. The employee ..." is one sentence
             j = i + 1
             while j < len(text) and text[j] in "\"'’”)]":
                 j += 1
