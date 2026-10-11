@@ -1,0 +1,30 @@
+{
+ "set": "fresh2",
+ "prompt_sha256": "692ed0fcc7c70935120cb8f574acba32e1f35f43ce59a10d1f03a45324aa2423",
+ "again_prompt_sha256": "e7ce95c8c93967ae758fc12cbcea264faad7784a2c6355011fae2579d3267760",
+ "sentences": 151,
+ "settled": 139,
+ "settled_at_first_pass": 137,
+ "settled_when_asked_again": 2,
+ "G1_same_as_you": 136,
+ "G1_rate": 0.978,
+ "G1_passes": true,
+ "settled_but_not_your_grade": {
+  "Q37B1": "you no / graders yes",
+  "Q40B1": "you no / graders yes",
+  "Q40B2": "you no / graders yes"
+ },
+ "G2_left_for_you": 12,
+ "left_why": {
+  "unsure": 5,
+  "the two differ": 7
+ },
+ "left_your_grades": {
+  "no": 6,
+  "yes": 6
+ },
+ "each_grader_alone": {
+  "opus55": 138,
+  "gemini-pro-low": 141
+ }
+}
