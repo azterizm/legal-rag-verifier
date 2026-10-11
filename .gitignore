@@ -72,6 +72,10 @@ results/fresh2/answers.jsonl
 results/fresh2/key.json
 results/fresh2/sheet.md
 results/fresh2/questions.jsonl
+# Stop 57: the same questions answered by Qwen 27B
+results/fresh2-q27/answers.jsonl
+results/fresh2-q27/key.json
+results/fresh2-q27/sheet.md
 results/distill/*.lock
 results/distill/*.tmp
 results/distill/pool.jsonl

@@ -34,7 +34,8 @@ from legal_rag_verifier.segmenter import split_sentences  # noqa: E402
 
 # The set in use: "fresh" (stop 43) by default, or the one named in FRESH_SET ("fresh2", stop 56).
 SET = os.environ.get("FRESH_SET", "fresh")
-BATTERY = ROOT / "batteries" / SET
+# A name such as "fresh2-q27" keeps the questions of "fresh2" and holds another generator's answers.
+BATTERY = ROOT / "batteries" / SET.partition("-")[0]
 OUT = ROOT / "results" / SET
 ANSWERS = OUT / "answers.jsonl"
 SEED = 20261009
