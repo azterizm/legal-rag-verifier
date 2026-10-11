@@ -1846,5 +1846,68 @@
   "seconds": 17.7,
   "usd": 0.0045,
   "note": "40 answers"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 222.3,
+  "usd": 0.1384,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 35.8,
+  "usd": 0.0223,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.8,
+  "usd": 0.0186,
+  "note": "p42: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 24.7,
+  "usd": 0.0154,
+  "note": "p42: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 37.2,
+  "usd": 0.0232,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop55 probe qwen27-awq4",
+  "gpu": "L40S",
+  "seconds": 685,
+  "usd": 0.4267,
+  "note": "SGLang 0.5.21 cannot load the weights (no quark scheme for int4 per group); the container start was retried 21 times before I stopped it"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 37.7,
+  "usd": 0.0235,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 29.3,
+  "usd": 0.0183,
+  "note": "notes2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop56 qwen27-nothink",
+  "gpu": "L40S",
+  "seconds": 24.5,
+  "usd": 0.0153,
+  "note": "notes2: 33 labels, 0 errors"
  }
 ]

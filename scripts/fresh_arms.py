@@ -437,6 +437,110 @@ def quant() -> None:
     print(json.dumps({k: out[k] for k in keys}, indent=1))
 
 
+def wilson(right: int, n: int, z: float = 1.96) -> list[float]:
+    """Wilson 95 % interval for a share."""
+    if n == 0:
+        return [0.0, 1.0]
+    p = right / n
+    centre = (p + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / (1 + z * z / n)
+    return [round(centre - half, 3), round(centre + half, 3)]
+
+
+def confirm() -> None:  # noqa: PLR0915 - one pass over the readings
+    """Stop 56, readings P1 to P5, scored once from the committed labels and your grades.
+    → results/<set>_arms/confirm.json"""
+    data = recorded()
+    us, built = data["units"], data["built"]
+    graded = fe.merged_grades(us)
+    if any(g not in {"yes", "no", "unsure"} for g in graded.values()):
+        raise SystemExit("grades.csv is not filled in yet")
+    units = [
+        {**u, "right": graded[u["key"]] == "yes", "wrong": graded[u["key"]] == "no"} for u in us
+    ]
+    units = [u for u in units if u["right"] or u["wrong"]]
+    held = data["reasons"]
+    out: dict[str, Any] = {
+        "set": fb.SET,
+        "sentences": len(us),
+        "graded": len(units),
+        "right": sum(u["right"] for u in units),
+        "wrong": sum(u["wrong"] for u in units),
+        "unsure": sum(g == "unsure" for g in graded.values()),
+        "held_by_claim_check": {
+            "right": sum(u["right"] for u in units if u["key"] in held),
+            "wrong": sum(u["wrong"] for u in units if u["key"] in held),
+        },
+        "arms": {},
+        "no_valid_label": {},
+        "held_as_judged": {},
+    }
+    correct: dict[str, dict[str, bool]] = {}
+
+    def arm(judge: str, kind: str, config: Any, name: str) -> bool:
+        labels = read(judge, kind)
+        missing = sum(k not in labels for k in requests(kind, data))
+        if missing == len(requests(kind, data)):
+            return False  # this judge did not label this prompt on this set
+        out["no_valid_label"][f"{judge} {kind}"] = missing
+        verdicts = replay(us, built, Scorer(judge, kind, labels, data["sources"]), set(), config)
+        score = fr.score(units, verdicts)
+        total = score["total"]
+        hits = total["right"] - total["false_rollbacks"] + total["caught"]
+        total["interval_95"] = wilson(hits, total["right"] + total["wrong"])
+        out["arms"][name] = score
+        correct[name] = {u["key"]: fr._rolled(verdicts[u["key"]]) == u["wrong"] for u in units}
+        return True
+
+    # P1 and P2: the configuration under test against the stop 47 configuration.
+    p1 = "P1 qwen27 FP8 | notes2 | figures to the judge"
+    base = "stop 47 configuration: qwen27 FP8 | stop 42 prompt | claim check"
+    figures, notes = (
+        "qwen27 FP8 | stop 42 prompt | figures to the judge",
+        "qwen27 FP8 | notes2 | claim check",
+    )
+    arm(QWEN, "notes2", aj.STRICT_FIGURES, p1)
+    arm(QWEN, "p42", aj.STRICT, base)
+    test = paired(correct[p1], correct[base])
+    gain = out["arms"][p1]["total"]["accuracy"] > out["arms"][base]["total"]["accuracy"]
+    out["P2"] = {**test, "confirmed": bool(gain and test["p"] < ALPHA)}
+    # P3: each change alone.
+    arm(QWEN, "p42", aj.STRICT_FIGURES, figures)
+    arm(QWEN, "notes2", aj.STRICT, notes)
+    out["P3"] = {
+        "figures to the judge alone": paired(correct[figures], correct[base]),
+        "notes2 alone": paired(correct[notes], correct[base]),
+    }
+    # P4: the other judges in the P1 configuration, each against Qwen 27B FP8.
+    out["P4"] = {}
+    for judge in ("opus55", "gemini-pro-low", *list(QUANT.values())[1:]):
+        name = f"{judge} | notes2 | figures to the judge"
+        if arm(judge, "notes2", aj.STRICT_FIGURES, name):
+            out["P4"][name] = paired(correct[name], correct[p1])
+    # P5: what each judge does with the sentences the claim check holds (claim check off).
+    for judge in (QWEN, "opus55", "gemini-pro-low"):
+        labels = read(judge, "notes2")
+        if not labels:
+            continue
+        scorer = Scorer(judge, "notes2", labels, data["sources"])
+        verdicts = replay(us, built, scorer, set(held))
+        kept = [u for u in units if u["key"] in held]
+        out["held_as_judged"][judge] = {
+            "right_passed": sum(u["right"] and not fr._rolled(verdicts[u["key"]]) for u in kept),
+            "wrong_caught": sum(u["wrong"] and fr._rolled(verdicts[u["key"]]) for u in kept),
+        }
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "confirm.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    for name, s in out["arms"].items():
+        cells = "  ".join(
+            f"{g}: {s[g]['false_rollbacks']}/{s[g]['caught']} {s[g]['accuracy']}"
+            for g in ("software", "statutes", "source answers", "closed answers", "total")
+        )
+        print(f"{name:66} {cells}  {s['total']['interval_95']}")
+    keys = ("graded", "right", "wrong", "unsure", "held_by_claim_check", "P2", "P3", "P4")
+    print(json.dumps({k: out[k] for k in (*keys, "held_as_judged", "no_valid_label")}, indent=1))
+
+
 def label(judge: str, kind: str = "p42") -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -452,7 +556,7 @@ def label(judge: str, kind: str = "p42") -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["requests", "label", "report", "quant"])
+    parser.add_argument("command", choices=["requests", "label", "report", "quant", "confirm"])
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
     parser.add_argument("--kind", default="p42", choices=PROMPTS)
     args = parser.parse_args()
@@ -460,6 +564,8 @@ def main() -> None:
         report()
     elif args.command == "quant":
         quant()
+    elif args.command == "confirm":
+        confirm()
     elif args.command == "label":
         label(args.judge, args.kind)
     else:
