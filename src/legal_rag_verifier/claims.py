@@ -117,6 +117,8 @@ _DURATION_RE = re.compile(
 )
 _NUMBER_RE = re.compile(rf"(?<![\w(/.])(?P<num>{NUMERAL_RE})(?![\w)/]|\.\d)")
 # A number that labels an entry ("item 7" in a schedule table) names it; it states no quantity.
+# The number of a list item at the start of a text ("2. For each year ...") is not a claim.
+_LIST_MARKER = re.compile(r"\s*(?P<num>\d{1,3})\.\s")
 _LABEL_BEFORE = re.compile(
     r"\b(?:item|entry|row|column|line|box|step|annex|appendix|table|form)\s+$", re.IGNORECASE
 )
@@ -261,7 +263,10 @@ def extract_claims(text: str) -> list[Claim]:
         ):
             chosen.append(claim)
             taken.append((claim.start, claim.end))
+    marker = _LIST_MARKER.match(text)
     for m in _NUMBER_RE.finditer(text):
+        if marker and m.start() == marker.start("num"):
+            continue
         number = parse_numeral(m["num"])
         claim = Claim(
             ClaimKind.NUMBER,

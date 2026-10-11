@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from collections.abc import Mapping, Sequence
 from pathlib import Path
@@ -34,26 +35,46 @@ OUT = ROOT / "results/fresh"
 LABELS = OUT / "labels"
 
 
-def units() -> list[dict[str, Any]]:
-    """Every sentence of every fresh answer, with the answer so far; ``key`` = ``id:mode:n``."""
+_LIST_ITEM = re.compile(r"(\d{1,3}\.)\s+(\S.*)", re.DOTALL)
+
+
+def as_graded(sentence: str) -> list[str]:
+    """The sentence as the sheet split it: until stop 52 the segmenter made a list number
+    ("1.") a sentence of its own."""
+    m = _LIST_ITEM.fullmatch(sentence)
+    return [m[1], m[2]] if m else [sentence]
+
+
+def units(*, merged: bool = False) -> list[dict[str, Any]]:
+    """Every sentence of every fresh answer, with the answer so far; ``key`` = ``id:mode:n``.
+
+    By default the units are the ones you graded. ``merged=True`` gives the segmenter's sentences
+    since stop 52 (a list number stays with its item), each with the graded units it covers in
+    ``parts``."""
     rows = {r["id"]: r for r in fb.rows()}
     out = []
     for key, a in sorted(fb.answers().items()):
         row_id, mode = key.split(":")
+        base = {
+            "id": row_id,
+            "mode": mode,
+            "domain": rows[row_id]["domain"],
+            "query": rows[row_id]["query"],
+        }
         done: list[str] = []
+        graded = 0
         for n, s in enumerate(split_sentences(a["text"])):
-            out.append(
-                {
-                    "key": f"{key}:{n}",
-                    "id": row_id,
-                    "mode": mode,
-                    "domain": rows[row_id]["domain"],
-                    "query": rows[row_id]["query"],
-                    "prefix": " ".join(done),
-                    "sentence": s.text,
-                }
-            )
-            done.append(s.text)
+            pieces = as_graded(s.text)
+            parts = [f"{key}:{graded + i}" for i in range(len(pieces))]
+            graded += len(pieces)
+            if merged:
+                unit = {"key": f"{key}:{n}", "prefix": " ".join(done), "sentence": s.text}
+                out.append({**base, **unit, "parts": parts})
+                done.append(s.text)
+                continue
+            for part, piece in zip(parts, pieces, strict=True):
+                out.append({**base, "key": part, "prefix": " ".join(done), "sentence": piece})
+                done.append(piece)
     return out
 
 
@@ -63,8 +84,10 @@ def premises(us: Sequence[Mapping[str, Any]]) -> dict[str, Premise]:
     return {u["key"]: built[u["id"]] for u in us}
 
 
-def recorded() -> tuple[list[dict[str, Any]], dict[str, Premise], list[dict[str, Any]]]:
-    us = units()
+def recorded(
+    *, merged: bool = False
+) -> tuple[list[dict[str, Any]], dict[str, Premise], list[dict[str, Any]]]:
+    us = units(merged=merged)
     built = premises(us)
     return us, built, aj.record(us, built)
 
@@ -112,6 +135,16 @@ def grades() -> dict[str, str]:
     for r in rows:
         k = key[r["item"]]
         out[f"{k['id']}:{k['mode']}:{k['sentence']}"] = r["correct"].strip().lower()
+    return out
+
+
+def merged_grades(us: Sequence[Mapping[str, Any]]) -> dict[str, str]:
+    """A grade per merged unit: no if any graded part is no, else unsure if any is, else yes."""
+    graded = grades()
+    out = {}
+    for u in us:
+        parts = {graded[k] for k in u["parts"]}
+        out[u["key"]] = "no" if "no" in parts else "unsure" if "unsure" in parts else "yes"
     return out
 
 

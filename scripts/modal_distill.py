@@ -831,6 +831,60 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
     print(f"Modal spent ${ledger.spent():.2f}")
 
 
+ARMS_STAGE = "stop52-53"
+ARMS_STOP = 8.0  # USD, GRID § Stops 52 and 53
+ARMS_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
+
+
+@app.local_entrypoint()
+def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0) -> None:
+    """Stops 52 and 53: the untrained Qwen 27B (thinking off, as stop 47) on the prompts of
+    ``scripts/fresh_arms.py`` that have no valid label yet. Chunks run one after another; the
+    stage stop is checked before each and each is charged its wall-clock time."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import fresh_arms as fa  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    name = fa.QWEN
+    gpu = JUDGES[name]["gpu"]
+    data = fa.recorded()
+    server = JUDGE_CLASSES[gpu](name=name)
+    startup_recorded = False
+    for kind in kinds.split(","):
+        items = list(fa.todo(name, kind, fa.requests(kind, data)).items())
+        items = items[:limit] if limit else items
+        print(f"{name} {kind}: {len(items)} to judge", flush=True)
+        failed = 0
+        for at in range(0, len(items), CHUNK):
+            chunk = dict(items[at : at + CHUNK])
+            ledger.check_stage(ARMS_STAGE, ARMS_STOP, gpu, ARMS_ESTIMATE)
+            t0 = time.time()
+            note = "failed"
+            seconds = 0.0
+            try:
+                out = server.judge.remote(chunk, WORKERS)
+                path = fa.path(name, kind)
+                path.parent.mkdir(parents=True, exist_ok=True)
+                with path.open("a", encoding="utf-8") as f:
+                    for sha, row in out["labels"].items():
+                        f.write(json.dumps({"sha": sha, **row}, ensure_ascii=False) + "\n")
+                seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+                startup_recorded = True
+                bad = sum(row["label"] == "error" for row in out["labels"].values())
+                note = f"{kind}: {len(out['labels'])} labels, {bad} errors"
+                failed = 0
+            except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+                failed += 1
+                seconds = time.time() - t0
+                print(f"{name}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+            finally:
+                ledger.record(f"{ARMS_STAGE} {name}", gpu, seconds, note)
+            print(f"{name} {kind}: {min(at + CHUNK, len(items))}/{len(items)} ({note})", flush=True)
+            if failed >= 2:  # noqa: PLR2004
+                raise RuntimeError(f"{name}: two chunks failed in a row; stopped")
+    print(f"Modal: stage ${ledger.stage_spent(ARMS_STAGE):.2f}, total ${ledger.spent():.2f}")
+
+
 # ------------------------------------------------------------------ stops 48 and 49: awareness
 
 aware_image = (
