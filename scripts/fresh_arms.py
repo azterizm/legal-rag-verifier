@@ -37,7 +37,7 @@ import legal_rag_verifier.verifier as verifier_module  # noqa: E402
 from legal_rag_verifier.premise import Premise  # noqa: E402
 from legal_rag_verifier.verifier import Verifier  # noqa: E402
 
-OUT = ROOT / "results/fresh_arms"
+OUT = ROOT / "results" / f"{fb.SET}_arms"
 QWEN = "qwen27-nothink"
 #: judge name (its label files) → the router teacher that labels it, or None for Modal.
 JUDGES: dict[str, str | None] = {"opus55": "opus55", "gemini-pro-low": "pro", QWEN: None}

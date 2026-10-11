@@ -1818,5 +1818,12 @@
   "seconds": 28.9,
   "usd": 0.018,
   "note": "notes3: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop48 weights check",
+  "gpu": "CPU",
+  "seconds": 128.8,
+  "usd": 0.0041,
+  "note": "stop 55 AMD AWQ download; re-entered after this file was reverted by mistake"
  }
 ]

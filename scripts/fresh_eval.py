@@ -31,7 +31,7 @@ import fresh_battery as fb  # type: ignore[import-not-found]  # noqa: E402
 from legal_rag_verifier.premise import Premise  # noqa: E402
 from legal_rag_verifier.segmenter import split_sentences  # noqa: E402
 
-OUT = ROOT / "results/fresh"
+OUT = fb.OUT
 LABELS = OUT / "labels"
 
 
@@ -41,7 +41,7 @@ _LIST_ITEM = re.compile(r"(\d{1,3}\.)\s+(\S.*)", re.DOTALL)
 def as_graded(sentence: str) -> list[str]:
     """The sentence as the sheet split it: until stop 52 the segmenter made a list number
     ("1.") a sentence of its own."""
-    m = _LIST_ITEM.fullmatch(sentence)
+    m = _LIST_ITEM.fullmatch(sentence) if fb.SET == "fresh" else None
     return [m[1], m[2]] if m else [sentence]
 
 

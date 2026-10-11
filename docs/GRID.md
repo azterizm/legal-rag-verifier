@@ -1722,3 +1722,49 @@ little, so that it can stand in a 7B model's place.
 - Size correction: I estimated 15 to 17 GB for 4 bits. The repositories are about 20 GB, because parts of the
   model are not quantised. An L4 has 24 GB, so the fit is tight and is measured (H5).
 - Fail safe as stop 52. Spend: Modal expected $2 to $3, stage stop $6. Router: none.
+
+## Stop 56: a second fresh test (method fixed 2026-10-11, before any source is drawn)
+
+Your go. Aim: confirm on sentences nobody has seen the figure the first fresh test gave after three changes were
+tuned on it (list numbers, figures to the judge, two notes in the prompt): 93.5 % for the untrained Qwen 27B.
+
+### The set (`batteries/fresh2/`, `scripts/fresh_set.py`)
+
+- No question is written by hand. I have read the first test's failures, so I neither write nor pick questions.
+- 40 sources drawn with seed 20261011:
+  - 20 UK provisions, one per Act, from the sections that no battery, the first fresh test or the training pool
+    uses; 400 to 6,000 characters as rendered (stop 45's bounds).
+  - 20 documentation sections, one per page, from 22 pages fixed in `scripts/fresh_set.py` before any fetch. None
+    is used by a battery, the first fresh test or the training pool. Sections as `scripts/page_sections.py` cuts
+    them, 300 to 2,500 characters. A page that cannot be fetched is skipped.
+- Questions: Gemini 3.8 Flash writes three per source with stop 45's question prompt, unchanged. One is drawn per
+  source with seed 20261012. Flash is not one of the judges.
+- Answers: Qwen 2.5 7B on an L4, with the source and closed-book, with stop 43's prompts and settings. 80 answers.
+- Grading: a sheet as in stop 43 (`results/fresh2/sheet.md`, your column in `results/fresh2/grades.csv`), same
+  rule, answers lettered at random. Battery, answers, key and sheet are sealed by sha256 before any judge runs.
+- The sheet shows the sentences as the segmenter cuts them since stop 52.
+
+### Judges, all before your grades exist
+
+- Qwen 27B FP8, thinking off, untrained (Modal, as stop 47): the stop 42 prompt and `notes2`.
+- A 4-bit model that costs little by stop 55's reading: `notes2` and the stop 42 prompt.
+- Opus 5.5 high and Gemini 3.1 Pro low (router): `notes2` only.
+- No grade is in any prompt. The prompts hold no question.
+
+### Readings, scored once after your grades are committed
+
+- P1, the configuration under test: Qwen 27B FP8, `notes2`, Replace strict with `ungrounded_figure="judge"`.
+  False rollbacks, caught, accuracy with a Wilson 95 % interval, in total, per domain and per kind of answer.
+- P2, against the stop 47 configuration on the same sentences (stop 42 prompt, claim check rolling back): sentences
+  only one gets right, exact two-sided sign test. The three changes count as confirmed if P1's accuracy is higher
+  and p is under 0.05.
+- P3, each change alone (figures to the judge with the stop 42 prompt; `notes2` with the claim check rolling
+  back): reported with its sign test. No fixed reading: at this size one change moves about 4 sentences.
+- P4, Opus 5.5, Pro and any 4-bit model in the P1 configuration, each against Qwen 27B FP8 (sign test).
+- P5, the claim check's held sentences: how many right ones each judge passes and wrong ones it catches.
+- Size: about 180 sentences are expected (the first test gave 4.5 per question). P2 can be settled at this size;
+  P3 cannot. If P2 is not settled, a second batch of 40 from the same seed sequence may be added before any
+  further change is made.
+- A clause with no valid label after two reruns counts as not stated. Sentences you grade unsure are left out.
+- Nothing is tuned on this set. Prompts, the verifier setting and the judges are fixed above.
+- Spend: Flash 40 calls. Modal expected $1.50, stage stop $6. Opus 5.5 expected $3, Pro $2.50 (its $15 stop holds).

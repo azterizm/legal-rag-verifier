@@ -16,6 +16,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import random
 import sys
 from collections.abc import Mapping, Sequence
@@ -31,8 +32,10 @@ from legal_rag_verifier.engine import SYSTEM_PROMPT  # noqa: E402
 from legal_rag_verifier.premise import Passage, Premise  # noqa: E402
 from legal_rag_verifier.segmenter import split_sentences  # noqa: E402
 
-BATTERY = ROOT / "batteries/fresh"
-OUT = ROOT / "results/fresh"
+# The set in use: "fresh" (stop 43) by default, or the one named in FRESH_SET ("fresh2", stop 56).
+SET = os.environ.get("FRESH_SET", "fresh")
+BATTERY = ROOT / "batteries" / SET
+OUT = ROOT / "results" / SET
 ANSWERS = OUT / "answers.jsonl"
 SEED = 20261009
 MODES = ("source", "closed")
@@ -130,7 +133,7 @@ def sheet() -> None:
     order = list(by_id)
     rng.shuffle(order)
     lines = [
-        "# Fresh test: your grading sheet (stop 43)",
+        f"# Fresh test: your grading sheet ({SET})",
         "",
         (
             "For each numbered sentence, fill `correct` in `grades.csv`: yes if every claim in the "

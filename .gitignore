@@ -67,6 +67,11 @@ results/auditor_judge/pilot/
 results/fresh/answers.jsonl
 results/fresh/key.json
 results/fresh/sheet.md
+# Stop 56, the second fresh test: same rule
+results/fresh2/answers.jsonl
+results/fresh2/key.json
+results/fresh2/sheet.md
+results/fresh2/questions.jsonl
 results/distill/*.lock
 results/distill/*.tmp
 results/distill/pool.jsonl

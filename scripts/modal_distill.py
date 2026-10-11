@@ -177,7 +177,7 @@ def fresh_answers() -> None:
         fresh.append_answers(good)
         seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
         startup_recorded = True
-        ledger.record("stop43 fresh answers", "L4", seconds, f"{len(good)} answers")
+        ledger.record(f"{fresh.SET} answers", "L4", seconds, f"{len(good)} answers")
         print(f"{len(good)}/{len(out['results'])} answers, {out['seconds']:.0f} s", flush=True)
     print(f"Modal spent ${ledger.spent():.2f}")
 
