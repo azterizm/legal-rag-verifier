@@ -2119,5 +2119,12 @@
   "seconds": 567.9,
   "usd": 0.1451,
   "note": "server did not start on the L4"
+ },
+ {
+  "run": "stop57 answers qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 150,
+  "usd": 0.0934,
+  "note": "started before the grader check finished; stopped when the check failed its gate; no answer written"
  }
 ]

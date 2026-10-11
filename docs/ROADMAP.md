@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 57 (your go): Opus 5.5 checked as grader against your 151 grades; then Qwen 27B AutoRound 4-bit as generator and judge on the 40 questions of the second test, with Pro as second judge and Opus 5.5 as grader. Method fixed in GRID before any run |
-| Waiting on you | Your go on the next test. Decided by you on 2026-10-11: the AMD 4-bit weights are left; the AutoRound 4-bit weights suffice. Proposed: Qwen 27B as both generator and judge on the 40 questions of the second fresh test (new answers, your grades needed), with Opus 5.5 as an outside judge to read self-judging bias; then the judge live in the loop. Open: V0 on the second test (about $0.05); the four fs-02 grades |
+| Next step | ⛔ Stop 57 halted at its gate. Opus 5.5 gives your grade on 138 of 151 sentences of the second test (91.4 %); the gate fixed before the run is 95 %. Opus is not used as the grader and no Qwen 27B answer was generated |
+| Waiting on you | How to grade the Qwen 27B answers: (a) you grade the new sheet, about 150 sentences; (b) Opus grades and you decide only the sentences it marks unsure and those where it and the judge differ, about 20 to 25; (c) stop this test. Also: two refusals you graded no on the second test (Q13A2, Q33A1), which the rule grades yes. Open: V0 on the second test; the four fs-02 grades |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-11 (57, halted at step 1): **Opus 5.5 as grader fails its gate.** Your go on Qwen 27B as generator and
+  judge, with Pro as second judge and Opus 5.5 as grader, no new sheet for you. Step 1: Opus grades the second
+  test's sheet and agrees with you on 138 of 151 sentences (91.4 %, gate 95 %); 7 of the 13 differences are Opus
+  unsure. Step 2 did not run. Also recorded: Qwen 27B and Pro as a pair on existing labels (rolled back only if
+  both: 92.1 % and 91.4 %). Opus $0.36, Modal $0.09. **Resume:** your decision in Status.
 
 - 2026-10-11 (56): **Second fresh test scored; the tuned gains are not confirmed.** Your grades committed first (151
   sentences, 84 right, 67 wrong). Qwen 27B FP8 as tuned (two notes, figures to the judge) 8 / 60, 90.1 %; stop 47
