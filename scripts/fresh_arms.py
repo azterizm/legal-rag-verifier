@@ -45,7 +45,7 @@ PROMPTS = ("p42", "view", "rule", "notes2", "notes3")  # stop 42's, stop 53's tw
 NOTES = ("notes2", "notes3")
 ARMS = ("list fix", "figures to the judge", "no claim check")
 FIGURE_ONLY = frozenset({"UNGROUNDED_FIGURE"})
-OPUS_STOP = 13.0  # the Opus 5.5 ledger stops here for stop 52 (GRID)
+OPUS_STOP = 16.0  # the Opus 5.5 ledger stops here (stop 52: 13.0; stop 56: 16.0, GRID)
 ALPHA = 0.05
 #: Stop 55: the same Qwen 27B at three precisions (label → the name of its label files).
 QUANT = {"FP8, official": QWEN, "AMD AWQ, 4-bit": "qwen27-awq4", "AutoRound, 4-bit": "qwen27-ar4"}
@@ -437,7 +437,7 @@ def quant() -> None:
     print(json.dumps({k: out[k] for k in keys}, indent=1))
 
 
-def label(judge: str) -> None:
+def label(judge: str, kind: str = "p42") -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
 
@@ -445,8 +445,8 @@ def label(judge: str) -> None:
     if teacher is None:
         raise SystemExit(f"{judge} is labelled on Modal")
     router.CAPS[router.OPUS55] = min(router.CAPS[router.OPUS55], OPUS_STOP)
-    asked = todo(judge, "p42", requests("p42"))
-    teachers.label_clauses(f"{judge}.arms", teacher, asked, path(judge, "p42"))
+    asked = todo(judge, kind, requests(kind))
+    teachers.label_clauses(f"{judge}.{kind}", teacher, asked, path(judge, kind))
     print(json.dumps(router.ledger().get(teachers.TEACHERS[teacher], {})))
 
 
@@ -454,13 +454,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["requests", "label", "report", "quant"])
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
+    parser.add_argument("--kind", default="p42", choices=PROMPTS)
     args = parser.parse_args()
     if args.command == "report":
         report()
     elif args.command == "quant":
         quant()
     elif args.command == "label":
-        label(args.judge)
+        label(args.judge, args.kind)
     else:
         data = recorded()
         for kind in PROMPTS:
