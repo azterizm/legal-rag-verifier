@@ -2105,3 +2105,47 @@ Your go: "go on judge side refusal rule on 27b". No pattern goes into `src/`.
   was written after stop 57 and is used for S1 only. All 20 refusals are closed-book; a refusal when the source
   does not answer the question is not in any set.
 - Fail safe as stop 52. Spend: Modal expected $0.80, stage stop $3. Router: none.
+
+### Stop 58: results (2026-10-11)
+
+`uv run python scripts/refusal_rule.py`, raw in `results/fresh2-q27_arms/refusal.json`. Every prompt has a valid
+label. Qwen 27B AutoRound 4-bit, Replace strict with figures to the judge.
+
+S1, the 20 refusal sentences in its own answers (16 right, 4 wrong):
+
+| Prompt | Right ones passed, of 16 | Wrong ones caught, of 4 |
+|---|---|---|
+| Stop 42 prompt | 0 | 4 |
+| `rule` | 1 | 4 |
+| `refusal` | 3 | 4 |
+
+The paragraph does not make the judge pass refusals. 13 of the 16 are still rolled back.
+
+S2, all 114 sentences of its own answers (false rollbacks / caught, accuracy):
+
+| Prompt | Total | Against the stop 42 prompt |
+|---|---|---|
+| Stop 42 prompt | 18 / 35, 83.3 % | |
+| `rule` | 19 / 36, 83.3 % | 2 gained, 2 lost, p = 1.0 |
+| `refusal` | 16 / 35, 85.1 % | 3 gained, 1 lost, p = 0.63 |
+
+No gain by the fixed reading.
+
+S3, the 7B's 151 sentences, your grades: the stop 42 prompt 10 / 61, 89.4 %; `refusal` 5 / 62, 93.4 % (6 gained, 0
+lost, p = 0.031). The paragraph does no harm; accuracy is 4.0 points higher. The reading as I wrote it ("at most
+1.5 points lower and p of 0.05 or more") did not allow for a prompt that is better, so its second clause fails
+by its letter. That was a flaw in my wording, not a harm.
+
+Added after the scoring (not fixed before it):
+
+- Why the refusals are still rolled back. Under `refusal` the judge labels the 16 right ones contradicted 7
+  times, not stated 6 times and supported 3 times. It passes a bare refusal ("I do not know the specific answer
+  to this question."). It does not pass one that gives a reason ("..., as the answer depends on which Act and
+  jurisdiction"): the judge has the source, the source states the answer, so it reads the reason as contradicted.
+- This is a property of the closed-book test. There the generator has no source and the judge has it. In use
+  both see the same source, and a refusal means the source does not answer the question. No set holds that case.
+- What the paragraph changes on the 7B's answers: 3 of the 6 gained sentences are fragments with no claim that the
+  segmenter cut from code examples ("For example:", a closing code fence). This reading was the harm check, so
+  the gain is exploratory.
+
+Spend: Modal $0.63 ($14.87 of $55). Router: none.

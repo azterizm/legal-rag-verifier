@@ -979,3 +979,20 @@ The judge catches 35 of the 36 wrong sentences in its own answers, and Pro catch
 of a self-judging limit. Its accuracy is lower on its own text because it rolls back 18 right sentences, 16 of
 them honest refusals in closed-book answers. Without refusal sentences it scores 96.8 % (2 false rollbacks, 31
 of 32 caught). Requiring Pro to agree changes no verdict on its own text. Raw: `results/fresh2-q27_arms/`.
+
+## A refusal rule on the judge's side (stop 58, 2026-10-11; method in `docs/GRID.md`)
+
+Aim: stop the strict judge rolling back a sentence in which the generator declines, with one paragraph in the
+prompt and no pattern in `src/`. Qwen 27B 4-bit as the judge.
+
+| | Stop 42 prompt | With the paragraph |
+|---|---|---|
+| Right refusals passed, of 16 (its own answers) | 0 | 3 |
+| Its own answers, 114 sentences | 18 / 35, 83.3 % | 16 / 35, 85.1 % |
+| The 7B's answers, 151 sentences, hand grades | 10 / 61, 89.4 % | 5 / 62, 93.4 % |
+
+The paragraph does not fix refusals. The judge passes a bare refusal but reads a refusal with a reason ("it
+depends on the jurisdiction") as contradicted, because it has the source and the source states the answer. That
+is specific to closed-book answers. On the 7B's answers the paragraph gains 6 sentences and loses none
+(p = 0.031), half of them fragments with no claim; this was the harm check, so the gain is exploratory. Raw:
+`results/fresh2-q27_arms/refusal.json`.

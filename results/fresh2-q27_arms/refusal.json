@@ -1,0 +1,283 @@
+{
+ "judge": "qwen27-ar4",
+ "S1_refusal_sentences": {
+  "p42": {
+   "right": 16,
+   "wrong": 4,
+   "right_passed": 0,
+   "wrong_caught": 4
+  },
+  "rule": {
+   "right": 16,
+   "wrong": 4,
+   "right_passed": 1,
+   "wrong_caught": 4
+  },
+  "refusal": {
+   "right": 16,
+   "wrong": 4,
+   "right_passed": 3,
+   "wrong_caught": 4
+  }
+ },
+ "S2_own_answers": {
+  "rule": {
+   "stop 42 prompt": {
+    "sentences": 114,
+    "right": 78,
+    "wrong": 36,
+    "false_rollbacks": 18,
+    "caught": 35,
+    "accuracy": 0.833,
+    "interval_95": [
+     0.754,
+     0.891
+    ]
+   },
+   "rule": {
+    "sentences": 114,
+    "right": 78,
+    "wrong": 36,
+    "false_rollbacks": 19,
+    "caught": 36,
+    "accuracy": 0.833,
+    "interval_95": [
+     0.754,
+     0.891
+    ]
+   },
+   "against_stop_42_prompt": {
+    "only_first": 2,
+    "only_second": 2,
+    "p": 1.0
+   },
+   "change_in_points": 0.0,
+   "gain": false,
+   "no_harm": true,
+   "without_refusal_sentences": {
+    "p42": {
+     "sentences": 94,
+     "right": 62,
+     "wrong": 32,
+     "false_rollbacks": 2,
+     "caught": 31,
+     "accuracy": 0.968,
+     "interval_95": [
+      0.91,
+      0.989
+     ]
+    },
+    "rule": {
+     "sentences": 94,
+     "right": 62,
+     "wrong": 32,
+     "false_rollbacks": 4,
+     "caught": 32,
+     "accuracy": 0.957,
+     "interval_95": [
+      0.896,
+      0.983
+     ]
+    }
+   },
+   "with source": {
+    "p42": {
+     "sentences": 49,
+     "right": 49,
+     "wrong": 0,
+     "false_rollbacks": 1,
+     "caught": 0,
+     "accuracy": 0.98,
+     "interval_95": [
+      0.893,
+      0.996
+     ]
+    },
+    "rule": {
+     "sentences": 49,
+     "right": 49,
+     "wrong": 0,
+     "false_rollbacks": 2,
+     "caught": 0,
+     "accuracy": 0.959,
+     "interval_95": [
+      0.863,
+      0.989
+     ]
+    }
+   },
+   "closed-book": {
+    "p42": {
+     "sentences": 65,
+     "right": 29,
+     "wrong": 36,
+     "false_rollbacks": 17,
+     "caught": 35,
+     "accuracy": 0.723,
+     "interval_95": [
+      0.604,
+      0.817
+     ]
+    },
+    "rule": {
+     "sentences": 65,
+     "right": 29,
+     "wrong": 36,
+     "false_rollbacks": 17,
+     "caught": 36,
+     "accuracy": 0.738,
+     "interval_95": [
+      0.62,
+      0.83
+     ]
+    }
+   }
+  },
+  "refusal": {
+   "stop 42 prompt": {
+    "sentences": 114,
+    "right": 78,
+    "wrong": 36,
+    "false_rollbacks": 18,
+    "caught": 35,
+    "accuracy": 0.833,
+    "interval_95": [
+     0.754,
+     0.891
+    ]
+   },
+   "refusal": {
+    "sentences": 114,
+    "right": 78,
+    "wrong": 36,
+    "false_rollbacks": 16,
+    "caught": 35,
+    "accuracy": 0.851,
+    "interval_95": [
+     0.774,
+     0.905
+    ]
+   },
+   "against_stop_42_prompt": {
+    "only_first": 3,
+    "only_second": 1,
+    "p": 0.625
+   },
+   "change_in_points": 1.8,
+   "gain": false,
+   "no_harm": true,
+   "without_refusal_sentences": {
+    "p42": {
+     "sentences": 94,
+     "right": 62,
+     "wrong": 32,
+     "false_rollbacks": 2,
+     "caught": 31,
+     "accuracy": 0.968,
+     "interval_95": [
+      0.91,
+      0.989
+     ]
+    },
+    "refusal": {
+     "sentences": 94,
+     "right": 62,
+     "wrong": 32,
+     "false_rollbacks": 3,
+     "caught": 31,
+     "accuracy": 0.957,
+     "interval_95": [
+      0.896,
+      0.983
+     ]
+    }
+   },
+   "with source": {
+    "p42": {
+     "sentences": 49,
+     "right": 49,
+     "wrong": 0,
+     "false_rollbacks": 1,
+     "caught": 0,
+     "accuracy": 0.98,
+     "interval_95": [
+      0.893,
+      0.996
+     ]
+    },
+    "refusal": {
+     "sentences": 49,
+     "right": 49,
+     "wrong": 0,
+     "false_rollbacks": 1,
+     "caught": 0,
+     "accuracy": 0.98,
+     "interval_95": [
+      0.893,
+      0.996
+     ]
+    }
+   },
+   "closed-book": {
+    "p42": {
+     "sentences": 65,
+     "right": 29,
+     "wrong": 36,
+     "false_rollbacks": 17,
+     "caught": 35,
+     "accuracy": 0.723,
+     "interval_95": [
+      0.604,
+      0.817
+     ]
+    },
+    "refusal": {
+     "sentences": 65,
+     "right": 29,
+     "wrong": 36,
+     "false_rollbacks": 15,
+     "caught": 35,
+     "accuracy": 0.754,
+     "interval_95": [
+      0.637,
+      0.842
+     ]
+    }
+   }
+  }
+ },
+ "S3_the_7b_answers": {
+  "stop 42 prompt": {
+   "sentences": 151,
+   "right": 84,
+   "wrong": 67,
+   "false_rollbacks": 10,
+   "caught": 61,
+   "accuracy": 0.894,
+   "interval_95": [
+    0.835,
+    0.934
+   ]
+  },
+  "refusal": {
+   "sentences": 151,
+   "right": 84,
+   "wrong": 67,
+   "false_rollbacks": 5,
+   "caught": 62,
+   "accuracy": 0.934,
+   "interval_95": [
+    0.882,
+    0.964
+   ]
+  },
+  "against_stop_42_prompt": {
+   "only_first": 6,
+   "only_second": 0,
+   "p": 0.0312
+  },
+  "change_in_points": 4.0,
+  "gain": true,
+  "no_harm": false
+ }
+}

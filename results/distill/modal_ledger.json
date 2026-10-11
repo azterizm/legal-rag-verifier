@@ -2182,5 +2182,75 @@
   "seconds": 11.2,
   "usd": 0.007,
   "note": "notes2: 34 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 439.6,
+  "usd": 0.2738,
+  "note": "refusal: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 459.6,
+  "usd": 0.2863,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 17.9,
+  "usd": 0.0111,
+  "note": "refusal: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 13.0,
+  "usd": 0.0081,
+  "note": "rule: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.6,
+  "usd": 0.0072,
+  "note": "refusal: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.007,
+  "note": "rule: 34 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.6,
+  "usd": 0.0066,
+  "note": "refusal: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 20.0,
+  "usd": 0.0124,
+  "note": "refusal: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 14.9,
+  "usd": 0.0093,
+  "note": "refusal: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop58 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 10.6,
+  "usd": 0.0066,
+  "note": "refusal: 34 labels, 0 errors"
  }
 ]
