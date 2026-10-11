@@ -31,8 +31,16 @@ v.check_text(premise, text, *, query=None) -> list[SentenceVerdict]     # post-h
 v.check_sentence(premise, sentence, *, query=None) -> SentenceVerdict   # in-flight, per sentence
 
 VerifierConfig(entail_threshold=0.70, contradict_threshold=0.40,
-               neutral_policy="connective" | "strict", top_k=2, align_ratio=0.5)
+               neutral_policy="connective" | "strict", top_k=2, align_ratio=0.5,
+               neutral_with_grounded_claim="emit" | "rollback",
+               ungrounded_figure="rollback" | "judge")
 ```
+
+`ungrounded_figure` (since stop 54): what happens to a sentence whose only failed claims are figures not found
+in the source. `"rollback"` is the default and the behaviour of 0.1.0. With `"judge"` the entailment check
+decides: the sentence is emitted only if it is entailed, and its other claims keep their checks. A citation or
+an instrument that is not in the source still rolls back. The figure stays in `claims` with its reason, and
+`details` names it. Without an NLI scorer `"judge"` behaves as `"rollback"`.
 
 `SentenceVerdict`: `text, start, end, verdict (EMIT|ROLLBACK), reasons, claims: [ClaimResult], deontics,
 aligned (window indices), nli: NLIResult | None, repair: Repair | None, claim_latency_ns, nli_latency_ns,

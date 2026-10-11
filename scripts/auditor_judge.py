@@ -77,6 +77,10 @@ CONTRADICTS = (0.3, 0.4, 0.5, 0.6, 0.7)
 NLI_REASONS = frozenset({"NLI_CONTRADICTION", "NLI_NOT_ENTAILED", "NEUTRAL_STRICT"})
 DEFAULT = VerifierConfig()
 STRICT = VerifierConfig(neutral_policy="strict", neutral_with_grounded_claim="rollback")
+# Strict, with a figure the claim check cannot find sent to the judge (stop 52's arm, in ``src``).
+STRICT_FIGURES = VerifierConfig(
+    neutral_policy="strict", neutral_with_grounded_claim="rollback", ungrounded_figure="judge"
+)
 BOOTSTRAP = 2000
 SEED = 42
 
@@ -483,14 +487,20 @@ def dev_rows() -> tuple[list[dict[str, Any]], dict[str, Premise]]:
 
 
 def record(
-    units: Sequence[Mapping[str, Any]], built: Mapping[str, Premise], *, dev: bool = False
+    units: Sequence[Mapping[str, Any]],
+    built: Mapping[str, Premise],
+    *,
+    dev: bool = False,
+    config: VerifierConfig | None = None,
 ) -> list[dict[str, Any]]:
     """Per text: the claim check verdict when it rolls back, else the calls to the entailment
     check (the clauses and candidates do not depend on the scores)."""
     out = []
     for u in units:
         scorer = RecordingScorer()
-        v = Verifier(scorer).check_sentence(built[u["key"]], u["sentence"], query=u["query"])
+        v = Verifier(scorer, config).check_sentence(
+            built[u["key"]], u["sentence"], query=u["query"]
+        )
         out.append(
             {
                 "key": u["id"] if dev else u["key"],
