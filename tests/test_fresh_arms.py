@@ -75,3 +75,15 @@ def test_a_missing_label_counts_as_not_stated() -> None:
     probs = scorer.score(["passage one", "passage two"], "A sentence.")
     assert scorer.missing == 1
     assert [p.neutral for p in probs] == [1.0, 1.0]
+
+
+def test_the_notes_sit_before_the_reply_format_and_leave_the_stop_42_prompt_intact() -> None:
+    base = aj.user_prompt("It is 10 seconds.", ["default = 10s"], "")
+    two = fa.notes_prompt("notes2", "It is 10 seconds.", ["default = 10s"], "")
+    three = fa.notes_prompt("notes3", "It is 10 seconds.", ["default = 10s"], "")
+    assert two.replace(fa._NOTES + "\n", "") == base
+    assert three.replace(fa._NOTES + fa._HEDGE + "\n", "") == base
+    assert "hedged" in three
+    assert "hedged" not in two
+    assert two.index("How to apply the labels") < two.index("Return JSON")
+    assert fa.prompt("p42", "It is 10 seconds.", ["default = 10s"], {"prefix": ""}, "") == base

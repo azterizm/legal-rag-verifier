@@ -1591,3 +1591,62 @@ Spend: Opus 5.5 $0.66 ($12.22 of $40). Pro $0.34 ($11.15 of $15). Modal $0.48 by
 Reading. With the claim check's figure rollbacks sent to the judge, the untrained Qwen 27B scores 91.5 % against
 88.3 % at stop 47, level with Opus 5.5 (92.4 %). The whole-sheet gap found after stop 47 (82 % against 92 to 99 %)
 is not explained by the question or the form of the source.
+
+### Where the judges fail (reading added 2026-10-11, not pre-registered)
+
+`uv run python scripts/fresh_errors.py`, raw in `results/fresh_arms/errors.json`. The 358 graded sentences as
+stops 47 to 51 scored them, Replace strict. The 41 sentences the claim check rolls back before the judge are left
+out, so these are the judge's own errors on 317 sentences. Patterns were read by hand from the judges' reasons.
+
+| Judge | Right sentences rolled back | Labelled not stated | Labelled contradicted | Wrong sentences passed |
+|---|---|---|---|---|
+| Opus 5.5 high | 11 | 3 | 7 | 16 |
+| Gemini 3.1 Pro low | 23 | 17 | 5 | 6 |
+| Gemini 3.8 Flash high | 50 | 42 | 7 | 2 |
+| Qwen 27B thinking off, untrained | 14 | 8 | 5 | 16 |
+
+Label counts are per clause, so they do not always sum to the sentences.
+
+- Overlap of the three frontier judges: 69 sentences are wrong for at least one, 40 for one only, 19 for two and
+  10 for all three (8 right sentences rolled back, 2 wrong sentences passed). Pro and Flash share 13 errors that
+  Opus 5.5 does not make, all on right sentences.
+- The three sit at different points of one trade-off. Flash is strict, Opus 5.5 is lenient, Pro is between. Opus
+  5.5 and Pro make about the same number of errors (27 and 29) in opposite directions.
+- Pattern 1, too literal. Not stated on a right sentence because the source leaves a small gap: a name the passage
+  does not spell out (the country, the product, the kind of winding up), or a step of common knowledge (what a
+  floor function is, that a ping frame is a control frame). This is Gemini's main failure. The prompt says to use
+  only the passages.
+- Pattern 2, too exact. Contradicted on a right sentence that leaves out a qualifier (a limit on the payload given
+  as a limit on the frame; a duty given without its exception). You graded these right as simplifications. All
+  three do it; it is most of Opus 5.5's false rollbacks.
+- Pattern 3, too generous. Supported on a wrong sentence. Opus 5.5 does this 16 times, 13 of them closed-book;
+  about half are hedged sentences ("can vary", "typically", "in some jurisdictions"). The untrained Qwen 27B also
+  passes 16, 9 of them in answers written with the source.
+- The judges' reasons quote the right passage. They differ from your grades on where supported ends, not on what
+  the source says. This agrees with stop 48: a wrong label is made while reading the passages.
+- Four grades to check. All three frontier judges pass `fs-02:closed:1`, `fs-02:source:1` and (Opus 5.5 and Pro)
+  `fs-02:closed:2` and `fs-02:source:0`, which you graded wrong. The whole-sheet graders of stop 47 also said yes
+  to three of them (Opus 5.5 was unsure on `fs-02:closed:2`, Gemini said no). No grade was changed.
+
+## Stop 54: notes on applying the labels, Qwen 27B (method fixed 2026-10-11, before any call)
+
+Your go: "test the rule on qwen 27b".
+
+- Model and server as stop 47 (Qwen 27B FP8, SGLang, L40S, thinking off, the card's sampling, seed 0).
+- Two prompts. Each is the stop 42 prompt with notes inserted before the reply format; nothing else changes.
+  - `notes2`, the rule as proposed: (1) common background and the plain name of what the passages are about do
+    not need to be in the passages; (2) a simplification that leaves out a condition or an exception is supported
+    if what it says is correct, and contradicted is only for something the passages make false.
+  - `notes3`: `notes2` plus (3) a hedged or general sentence still needs support, else it is not stated.
+  Template sha256 `8350eee46d418ee31e0fa0565739e4fa47f2649e96285ca47f1191287f8ab6f9` (`scripts/fresh_arms.py`).
+- The first two notes follow how you graded. I had called both your decision; you asked for the test, so they
+  take your grades as the standard. The third note was not in what I proposed. It is a separate prompt because
+  the first two can only make the judge more lenient, and Qwen 27B already passes 16 wrong sentences.
+- No test sentence or source is quoted in the notes.
+- 360 prompts per kind. Arms as stop 52: list fix, figures to the judge, no claim check.
+- Readings: G1, each prompt in each arm (false rollbacks, caught, accuracy). G2, each against the stop 42 prompt
+  and `notes3` against `notes2` (sentences only one gets right, exact two-sided sign test).
+- Reading fixed now: a gain only if accuracy is higher and the sign test gives p under 0.05.
+- Limits. The notes were written from the errors of Opus 5.5, Pro and Flash on this test, and are scored on the
+  same test. This is exploratory; a clean figure needs a new graded set. One sample per prompt.
+- Fail safe as stop 52. Spend: Modal expected $0.30, stage stop $3. Router: none.

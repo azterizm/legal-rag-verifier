@@ -41,7 +41,8 @@ OUT = ROOT / "results/fresh_arms"
 QWEN = "qwen27-nothink"
 #: judge name (its label files) → the router teacher that labels it, or None for Modal.
 JUDGES: dict[str, str | None] = {"opus55": "opus55", "gemini-pro-low": "pro", QWEN: None}
-PROMPTS = ("p42", "view", "rule")  # the stop 42 prompt and the two of stop 53
+PROMPTS = ("p42", "view", "rule", "notes2", "notes3")  # stop 42's, stop 53's two, stop 54's two
+NOTES = ("notes2", "notes3")
 ARMS = ("list fix", "figures to the judge", "no claim check")
 FIGURE_ONLY = frozenset({"UNGROUNDED_FIGURE"})
 OPUS_STOP = 13.0  # the Opus 5.5 ledger stops here for stop 52 (GRID)
@@ -100,6 +101,38 @@ def view_prompt(kind: str, sentence: str, source: str, question: str, prefix: st
     )
 
 
+_NOTES = """How to apply the labels:
+- The passages need not repeat what any reader of them already knows. A sentence is still \
+"supported" when it adds only common background, such as what a standard term means, or names what \
+the passages are plainly about, such as the Act, the country, the product or the standard.
+- A sentence that simplifies the passages by leaving out a condition or an exception is still \
+"supported" if what it does say is correct. Use "contradicted" only when the sentence says \
+something the passages make false.
+"""
+_HEDGE = """- A hedged or general sentence ("may", "typically", "in some cases") still needs \
+support. If the passages do not establish it, it is "not_stated".
+"""
+NOTES_SHA = hashlib.sha256((aj.SYSTEM + aj.USER + _NOTES + _HEDGE).encode()).hexdigest()
+
+
+def notes_prompt(kind: str, sentence: str, candidates: Sequence[str], prefix: str) -> str:
+    """The stop 42 prompt with notes on how to apply the labels, before the reply format.
+    ``notes3`` adds the note on hedged sentences to the two of ``notes2``."""
+    head, tail = aj.user_prompt(sentence, candidates, prefix).rsplit("Return JSON", 1)
+    notes = _NOTES + (_HEDGE if kind == "notes3" else "")
+    return f"{head}{notes}\nReturn JSON{tail}"
+
+
+def prompt(
+    kind: str, clause: str, candidates: Sequence[str], unit: Mapping[str, Any], source: str
+) -> str:
+    if kind == "p42":
+        return str(aj.user_prompt(clause, candidates, unit["prefix"]))
+    if kind in NOTES:
+        return notes_prompt(kind, clause, candidates, unit["prefix"])
+    return view_prompt(kind, clause, source, unit["query"], unit["prefix"])
+
+
 @contextmanager
 def no_claims() -> Iterator[None]:
     """The verifier with the claim check off: no claim is read from the sentence or the
@@ -146,12 +179,9 @@ def requests(kind: str, data: Mapping[str, Any] | None = None) -> dict[str, str]
         key = u["key"]
         for r in (data["calls"][key], data["free"].get(key)):
             for clause, candidates in (r or {}).get("calls", []):
-                if kind == "p42":
-                    user = aj.user_prompt(clause, candidates, u["prefix"])
-                else:
-                    user = view_prompt(kind, clause, data["sources"][key], u["query"], u["prefix"])
+                user = prompt(kind, clause, candidates, u, data["sources"][key])
                 out[aj.prompt_key(user)] = user
-    if kind == "p42":
+    if kind == "p42" or kind in NOTES:
         fe.assert_blind(data["units"], out)
     return out
 
@@ -194,17 +224,12 @@ class Scorer:
 
     def score(self, premises: Sequence[str], hypothesis: str) -> list[Any]:
         u = self.unit
-        if self.kind == "p42":
-            user = aj.user_prompt(hypothesis, premises, u["prefix"])
-        else:
-            user = view_prompt(
-                self.kind, hypothesis, self.sources[u["key"]], u["query"], u["prefix"]
-            )
+        user = prompt(self.kind, hypothesis, premises, u, self.sources.get(u["key"], ""))
         label = self.labels.get(aj.prompt_key(user))
         if label is None:  # no valid label after the reruns: counted as not stated
             self.missing += 1
             return list(aj.one_hot("not_stated", 0, len(premises)))
-        passage = label["passage"] if self.kind == "p42" else 0
+        passage = label["passage"] if self.kind in ("p42", *NOTES) else 0
         return list(aj.one_hot(label["label"], passage, len(premises)))
 
 
@@ -280,6 +305,7 @@ def report() -> None:  # noqa: PLR0912 - one pass over the readings
             ),
         },
         "view_prompt_sha256": VIEW_SHA,
+        "notes_prompt_sha256": NOTES_SHA,
         "arms": {},
         "held_as_judged": {},
         "no_valid_label": {},
@@ -320,13 +346,15 @@ def report() -> None:  # noqa: PLR0912 - one pass over the readings
         for arm in ARMS[1:]:
             name = f"{judge} | p42 | {arm}"
             out["paired"][f"{name} vs list fix"] = paired(correct[name], correct[base])
-    for kind in ("view", "rule"):
+    for kind in PROMPTS[1:]:
         for arm in ARMS:
             a, b = f"{QWEN} | {kind} | {arm}", f"{QWEN} | p42 | {arm}"
             out["paired"][f"{a} vs p42"] = paired(correct[a], correct[b])
     for arm in ARMS:
         a, b = f"{QWEN} | rule | {arm}", f"{QWEN} | view | {arm}"
         out["paired"][f"{a} vs view"] = paired(correct[a], correct[b])
+        a, b = f"{QWEN} | notes3 | {arm}", f"{QWEN} | notes2 | {arm}"
+        out["paired"][f"{a} vs notes2"] = paired(correct[a], correct[b])
     for judge in JUDGES:  # the frontier judges against the untrained Qwen 27B, same arm
         if judge == QWEN:
             continue

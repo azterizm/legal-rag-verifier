@@ -832,12 +832,12 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
 
 
 ARMS_STAGE = "stop52-53"
-ARMS_STOP = 8.0  # USD, GRID § Stops 52 and 53
+ARMS_STOPS = {ARMS_STAGE: 8.0, "stop54": 3.0}  # USD, GRID § Stops 52 to 54
 ARMS_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
 
 
 @app.local_entrypoint()
-def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0) -> None:
+def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0, stage: str = ARMS_STAGE) -> None:
     """Stops 52 and 53: the untrained Qwen 27B (thinking off, as stop 47) on the prompts of
     ``scripts/fresh_arms.py`` that have no valid label yet. Chunks run one after another; the
     stage stop is checked before each and each is charged its wall-clock time."""
@@ -857,7 +857,7 @@ def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0) -> None:
         failed = 0
         for at in range(0, len(items), CHUNK):
             chunk = dict(items[at : at + CHUNK])
-            ledger.check_stage(ARMS_STAGE, ARMS_STOP, gpu, ARMS_ESTIMATE)
+            ledger.check_stage(stage, ARMS_STOPS[stage], gpu, ARMS_ESTIMATE)
             t0 = time.time()
             note = "failed"
             seconds = 0.0
@@ -878,11 +878,11 @@ def fresh_arms(kinds: str = "p42,view,rule", limit: int = 0) -> None:
                 seconds = time.time() - t0
                 print(f"{name}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
             finally:
-                ledger.record(f"{ARMS_STAGE} {name}", gpu, seconds, note)
+                ledger.record(f"{stage} {name}", gpu, seconds, note)
             print(f"{name} {kind}: {min(at + CHUNK, len(items))}/{len(items)} ({note})", flush=True)
             if failed >= 2:  # noqa: PLR2004
                 raise RuntimeError(f"{name}: two chunks failed in a row; stopped")
-    print(f"Modal: stage ${ledger.stage_spent(ARMS_STAGE):.2f}, total ${ledger.spent():.2f}")
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
 
 
 # ------------------------------------------------------------------ stops 48 and 49: awareness
