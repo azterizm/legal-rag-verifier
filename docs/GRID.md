@@ -1949,3 +1949,21 @@ grade no new sheet.
 - Fail safe: answers, labels and grades are appended as they return; a rerun asks only what is missing.
 - Spend: Modal expected $1.50, stage stop $5. Opus 5.5 expected $2, ledger stop $17. Pro expected $1, its $15 stop
   holds.
+
+### Stop 57: step 1 result (2026-10-11)
+
+`FRESH_SET=fresh2 uv run python scripts/fresh_grader.py check`, raw in `results/fresh2_arms/grader.json` and
+`results/fresh2/grader-opus55.jsonl`. 40 calls, every sentence graded.
+
+- Opus 5.5 gives your grade on 138 of 151 sentences, 91.4 %. The gate is 95 % (144). **Opus is not used as the
+  grader and step 2 did not run.**
+- The 13 differences: you no and Opus yes, 6; you no and Opus unsure, 4; you yes and Opus unsure, 3. None is on a
+  thin source. 9 are in closed-book answers and 4 in answers written with the source.
+- Where Opus is not unsure it agrees on 138 of 144, 95.8 %. This was not the fixed reading and does not pass the
+  gate.
+- Two of the 6 are refusals in closed-book answers ("it is not possible to provide an exact answer"), which you
+  graded no. The sheet's rule grades a refusal yes unless it misstates the source. No grade was changed.
+- A departure, repaired: I started the Qwen 27B answers on Modal while the check was still running. When the check
+  failed I stopped that job. It had written no answer. Cost $0.09.
+
+Spend: Opus 5.5 $0.36 ($14.10 of $40). Modal $0.09 ($13.62 of $55).

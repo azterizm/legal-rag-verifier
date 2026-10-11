@@ -1,0 +1,28 @@
+{
+ "set": "fresh2",
+ "prompt_sha256": "692ed0fcc7c70935120cb8f574acba32e1f35f43ce59a10d1f03a45324aa2423",
+ "sentences": 151,
+ "same": 138,
+ "rate": 0.914,
+ "differ": {
+  "you no / opus unsure": 4,
+  "you no / opus yes": 6,
+  "you yes / opus unsure": 3
+ },
+ "used_as_grader": false,
+ "items_differing": [
+  "Q03B2",
+  "Q13A2",
+  "Q19A1",
+  "Q19A2",
+  "Q23A2",
+  "Q33A1",
+  "Q34A1",
+  "Q36B1",
+  "Q36B2",
+  "Q37B1",
+  "Q39A1",
+  "Q40B1",
+  "Q40B2"
+ ]
+}
