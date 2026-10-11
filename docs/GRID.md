@@ -1458,3 +1458,75 @@ judges are Opus 5.5, Pro and the untrained Qwen 27B.
   90.2 % under strict.
 - The per-clause prompt tops out near 89 to 90 % on this test whatever the model. A frontier model does not lift
   it. What is left is the claim check's 12 sentences and what the judge is shown.
+
+## Stops 52 and 53: the claim check's false rollbacks, and a judge shown the question (method fixed 2026-10-11, before any call)
+
+Your direction: three judges only for stop 52 (Opus 5.5, Gemini 3.1 Pro low, Qwen 27B thinking off, untrained);
+stop 53 for Qwen 27B only. K2 is dropped. Flash and the other arms are left as they stand.
+
+### What the 12 false rollbacks are
+
+Read before any change. All 12 are `UNGROUNDED_FIGURE` on a sentence you graded right.
+
+- 3 are list numbers ("2.", "3.", "4.") that the segmenter split off as sentences.
+- 4 are a figure worded differently from the source: "28 days" for "the 28th day after", "20 working days" for
+  "the twentieth working day", "1 minute" for `1m`, "10 seconds" for `10s`.
+- 5 need reasoning: three results of Python arithmetic, a value of 0 for "a non-negative integer", and an example
+  date.
+
+Only the first group is a defect with a general fix. I told you rescoring would cost nothing. That was wrong: the
+fixed sentences reach the judge for the first time, so they need new labels (40 prompts per judge).
+
+### Stop 52
+
+- Change in `src/`, the list numbers only: a list number followed by text does not end a sentence
+  (`segmenter.find_boundary`), and a list number at the start of a text is not a claim (`claims.extract_claims`).
+  No change to the public API, verdict names or trace. Checked before any call: the stop 42 sets keep the same
+  333 sentences, the same 44 claim check rollbacks and the same 280 prompts; 240 tests pass.
+- No pattern is added for the second group. Writing patterns from this test's failures would fit the claim check
+  to the test.
+- Units. The fresh test becomes 356 sentences, 354 graded (206 right, 148 wrong). Only the closed-book answer to
+  fl-02 changes. A merged sentence takes your grades: wrong if any part was graded wrong. The reports of stops 47
+  to 51 still run on the units you graded and reproduce unchanged.
+- The claim check holds 38 sentences before any judge: 9 right and 29 wrong. 25 are held for a figure only (9
+  right, 16 wrong); the other 13 for a citation or an instrument (all wrong).
+- Arms, each judge under Replace strict with the stop 42 prompt unchanged:
+  1. List fix: the auditor as it is after the change.
+  2. Figures to the judge: a sentence held for a figure only goes to the judge instead of being rolled back.
+  3. No claim check: every held sentence goes to the judge.
+  Arms 2 and 3 are computed in `scripts/fresh_arms.py` by turning the claim check off for those sentences. They
+  change nothing in `src/`. Adopting one would be a new verifier setting and needs your go.
+- New labels: 40 stop 42 prompts per judge (2 from the merged sentences, 38 for the held sentences). Opus 5.5 and
+  Pro on the router as in stops 50 and 51; Qwen 27B on Modal as in stop 47 (FP8, SGLang, L40S, thinking off, the
+  card's sampling, seed 0).
+- Readings: E1, each arm in the stop 47 table (total, per domain, per kind of answer). E2, arms 2 and 3 against
+  arm 1 per judge (sentences only one gets right, exact two-sided sign test). E3, of the 9 right and 29 wrong held
+  sentences, how many each judge passes and catches.
+
+### Stop 53
+
+- Qwen 27B only, same server and sampling. Two new prompts, one clause per call, same system text and same three
+  labels as stop 42:
+  - `view`: the question (marked as context, not evidence) and the source as the generator and your sheet showed
+    it, in place of the auditor's candidate passages.
+  - `rule`: `view` plus one paragraph from your grading rule: every claim must be supported, and a sentence with no
+    claim (a link, a refusal, a list number) is supported unless it misstates the source.
+  Template sha256 `3dd26b9c59ba848455f44c92842ecc680cbc2744d0c7a5211289cc91cd5ec916` (`scripts/fresh_arms.py`).
+- 360 prompts per kind (the clauses on the normal path and those of the held sentences).
+- Readings: F1, `view` and `rule` in each of the three arms, beside the stop 42 prompt. F2, each against the stop 42
+  prompt and `rule` against `view` (sign test). F3, time per clause in the bulk run, beside the stop 42 prompt's.
+
+### For both
+
+- Reading fixed now: a change counts as a gain only if accuracy is higher and the sign test gives p under 0.05.
+  Otherwise the two are not told apart.
+- A clause with no valid label after two reruns counts as not stated, and the count is reported.
+- Limits. The fresh test has been used since stop 47. The arms and the `rule` paragraph were written after reading
+  its failures, so these stops are exploratory; a clean figure needs a new graded set. Qwen 27B samples at
+  temperature 0.7 with one seed; stop 48 found 14 of 323 labels change on a second sample.
+- Fail safe: labels are appended as they return, keyed by prompt hash, in their own files
+  (`results/fresh/labels/<judge>.arms.jsonl`, `.view.jsonl`, `.rule.jsonl`); a rerun asks only what is missing.
+- Spend: Opus 5.5 expected $0.60, ledger stop $13 for this stop. Pro expected $0.50 (at $10.81 of $15). Modal
+  expected $3 to $4, stage stop $8.
+- Quantisation is not part of these stops. Stop 48 already gives one point: the FP8 weights score 88.3 % and the
+  bf16 weights 88.5 %, with the same label on 309 of 323 clauses. A lower precision is a separate stop.
