@@ -2019,3 +2019,58 @@ Step 2, in the fixed order:
 
 Spend, stop 57 so far: Modal $0.72 plus $0.09 for the job I stopped ($14.25 of $55). Opus 5.5 $0.98 ($14.72 of
 $40). Pro $1.46 ($13.44 of $15).
+
+### Stop 57: results (2026-10-11)
+
+Your 9 grades were committed first (`815f2b8`: 2 right, 7 wrong). Then `fresh_grader.py fill`, the two tables and
+`uv run python scripts/self_judge.py`, once. Raw in `results/fresh2-q27_arms/selfjudge.json`. Every figure below
+is graded by Opus 5.5 and Gemini 3.1 Pro, open sentences by you. The 7B's answers are regraded the same way, so
+both generators are on one standard.
+
+R1, the generator, wrong sentences of all:
+
+| Generator | With source | Closed-book | Total |
+|---|---|---|---|
+| Qwen 27B 4-bit | 0 of 49 | 36 of 65, 55.4 % | 36 of 114, 31.6 % |
+| Qwen 2.5 7B | 1 of 72, 1.4 % | 63 of 79, 79.7 % | 64 of 151, 42.4 % |
+
+By your grades alone the 7B has 4 wrong sentences with the source and 67 in total. The graders settled three of
+those four as right (`Q37B1`, `Q40B1`, `Q40B2`).
+
+R2, the Qwen 27B 4-bit judge with the stop 42 prompt, Replace strict (false rollbacks / caught, accuracy):
+
+| Text judged | No auditor | Figures to the judge | Claim check rolling back |
+|---|---|---|---|
+| Its own answers, total (78 right, 36 wrong) | 68.4 % | 18 / 35, 83.3 % | 19 / 35, 82.5 % |
+| Its own answers, with source (49 right, 0 wrong) | 100 % | 1 / 0, 98.0 % | 1 / 0, 98.0 % |
+| Its own answers, closed-book (29 right, 36 wrong) | 44.6 % | 17 / 35, 72.3 % | 18 / 35, 70.8 % |
+| The 7B's answers, total (87 right, 64 wrong) | 57.6 % | 10 / 61, 91.4 % | 13 / 62, 90.1 % |
+
+R3, self-judging (both judges with `notes2`, figures to the judge): of the 36 wrong sentences in its own answers
+the Qwen 27B judge passes 0 and Pro passes 0. On the 7B's 64 wrong sentences it passes 5 and Pro 1 (4 that only
+Pro catches, p = 0.125). Fixed reading: **no evidence of a self-judging limit.** Pro is also a grader here, which
+leans this reading in Pro's favour; it still finds nothing.
+
+R4, the pair (rolled back only if both roll back) against Qwen 27B alone: on its own answers the pair gives the
+same verdict on every sentence, 18 / 36, 84.2 %. On the 7B's answers 5 / 59, 93.4 % against 8 / 59, 91.4 % (3
+gained, 0 lost, p = 0.25). No gain by the fixed reading.
+
+Added after the scoring (not fixed before it):
+
+- 16 of the 18 right sentences the judge rolls back in its own answers are refusals or requests for context in
+  closed-book answers ("I do not know the specific time limit...", "Please specify the software..."). The rule
+  grades a refusal right. The judge labels it not stated or contradicted, so strict placement rolls it back. Qwen
+  27B wrote 20 such sentences; the 7B wrote none that match.
+- Without those 20 sentences: 2 false rollbacks of 62 right sentences and 31 caught of 32 wrong, 96.8 % on 94
+  sentences.
+- `src/` has no rule for a sentence in which the generator itself declines. The engine only writes its own
+  refusal after the retries are used up. In the live loop an honest "I do not know" would be rolled back and
+  retried.
+- Qwen 27B's answers are shorter: 114 sentences against 151 on the same 40 questions.
+
+Limits: the grader is two models plus you on 9 sentences; on the second test that procedure matched your grade
+on 97.8 % of what it settled. 40 questions. Answers written with the source hold no wrong sentence, so nothing
+is learned there about catching. Replay only.
+
+Spend, stop 57: Modal $0.81, Opus 5.5 $0.98, Pro $1.46. Totals: Modal $14.25 of $55, Opus 5.5 $14.72 of $40, Pro
+$13.44 of $15.

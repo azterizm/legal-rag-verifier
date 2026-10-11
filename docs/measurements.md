@@ -960,3 +960,22 @@ No judge is told apart from another, and the 4-bit model matches FP8 (same label
 
 On answers written with the source every judge is below no auditor in this test (88.9 % against 94.4 %): 4 wrong
 sentences in 72, of which the judge catches 1 while rolling back 5 right ones. Raw: `results/fresh2_arms/`.
+
+## Qwen 27B as generator and judge (stop 57, 2026-10-11; method in `docs/GRID.md`)
+
+Aim: one model for both roles. Qwen 27B AutoRound 4-bit answered the 40 questions of the second fresh test and
+judged its own sentences. Graded by Opus 5.5 and Gemini 3.1 Pro where they agree (checked on the hand-graded set:
+97.8 % of what they settle carries the hand grade), and by hand for the 9 sentences they left open.
+
+| | Qwen 27B 4-bit | Qwen 2.5 7B |
+|---|---|---|
+| Sentences | 114 | 151 |
+| Wrong, with the source | 0 of 49 | 1 of 72 |
+| Wrong, closed-book | 36 of 65, 55 % | 63 of 79, 80 % |
+| No auditor | 68.4 % | 57.6 % |
+| Qwen 27B 4-bit judge, strict | 18 / 35, 83.3 % | 10 / 61, 91.4 % |
+
+The judge catches 35 of the 36 wrong sentences in its own answers, and Pro catches no error it passes: no sign
+of a self-judging limit. Its accuracy is lower on its own text because it rolls back 18 right sentences, 16 of
+them honest refusals in closed-book answers. Without refusal sentences it scores 96.8 % (2 false rollbacks, 31
+of 32 caught). Requiring Pro to agree changes no verdict on its own text. Raw: `results/fresh2-q27_arms/`.

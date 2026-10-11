@@ -170,6 +170,12 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    model matched the 8-bit one at half the time per clause (stop 55). On answers written with the source the
    judge was below no auditor in this test (88.9 % against 94.4 %): the generator was wrong in 4 sentences of
    72, and the judge caught 1 while rolling back 5 right ones. The judge pays for answers from memory.
+   One model in both roles was then tested (stop 57): a 4-bit Qwen 27B wrote the answers and judged them. As
+   generator it was wrong in none of 49 sentences written with the source and in 55 % of closed-book ones,
+   against 80 % for the 7B. As judge of its own text it caught 35 of 36 wrong sentences, and a second model
+   caught none it passed, so judging its own text was not a weakness here. It rolled back 18 right sentences,
+   16 of them honest refusals. The auditor has no rule for a generator that declines; that needs one before
+   the live loop.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
