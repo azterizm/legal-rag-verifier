@@ -163,6 +163,13 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    the hand grades on where "supported" ends: Gemini too literal, Claude Opus 5.5 too lenient. Two notes that
    state the grader's standard lifted the untrained Qwen 27B to 93.5 %, with 8 false rollbacks of 206 right
    sentences and 133 of 148 wrong ones caught. This too was tuned on the test and needs a new graded set.
+   A second test of 151 unseen sentences did not confirm the tuned figure (stop 56). The tuned configuration
+   scored 90.1 % and the untuned one 89.4 %, the same as on the first test (89.3 %). About 90 % is the level
+   that holds for an untrained Qwen 27B as the judge, against 56 % with no auditor. The two notes are dropped.
+   Claude Opus 5.5 (92.1 %) and Gemini 3.1 Pro (90.7 %) were not told apart from it, and a 4-bit copy of the
+   model matched the 8-bit one at half the time per clause (stop 55). On answers written with the source the
+   judge was below no auditor in this test (88.9 % against 94.4 %): the generator was wrong in 4 sentences of
+   72, and the judge caught 1 while rolling back 5 right ones. The judge pays for answers from memory.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

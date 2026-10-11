@@ -937,3 +937,26 @@ Aim: see whether a 4-bit Qwen 27B loses accuracy against the official FP8 weight
 AutoRound is not told apart from FP8 (9 against 6 and 3 against 6 sentences) and is about twice as fast. It does
 not start on a 24 GB L4. SGLang 0.5.21 cannot load the AMD weights. Spend: $1.61. Raw:
 `results/fresh_arms/quant.json`.
+
+## The second fresh test (stop 56, 2026-10-11; method in `docs/GRID.md`)
+
+Aim: confirm on unseen sentences the 93.5 % that three changes gave on the first fresh test. 40 sources drawn by
+seed, questions by Gemini Flash, 151 graded sentences (84 right, 67 wrong). Judges labelled before the grades.
+
+| Configuration | False rollbacks / caught | Accuracy |
+|---|---|---|
+| Qwen 27B FP8, two notes, figures to the judge (as tuned) | 8 / 60 | 90.1 % |
+| Qwen 27B FP8, stop 47 configuration | 12 / 63 | 89.4 % |
+| Qwen 27B FP8, stop 42 prompt, figures to the judge | 9 / 62 | 90.7 % |
+| Opus 5.5, as tuned | 5 / 60 | 92.1 % |
+| Gemini 3.1 Pro, as tuned | 10 / 63 | 90.7 % |
+| Qwen 27B AutoRound 4-bit, as tuned | 8 / 59 | 89.4 % |
+| No auditor | | 55.6 % |
+
+The tuned configuration is not better than the stop 47 one (4 sentences gained, 3 lost, p = 1.0). The level that
+holds is about 90 %: 89.4 % here and 89.3 % on the first test for the same untrained judge. The two notes do not
+help. Sending figures to the judge frees all 6 right sentences the claim check held and loses 1 wrong one of 16.
+No judge is told apart from another, and the 4-bit model matches FP8 (same label on 148 of 153 clauses).
+
+On answers written with the source every judge is below no auditor in this test (88.9 % against 94.4 %): 4 wrong
+sentences in 72, of which the judge catches 1 while rolling back 5 right ones. Raw: `results/fresh2_arms/`.
