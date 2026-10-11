@@ -1650,3 +1650,43 @@ Your go: "test the rule on qwen 27b".
 - Limits. The notes were written from the errors of Opus 5.5, Pro and Flash on this test, and are scored on the
   same test. This is exploratory; a clean figure needs a new graded set. One sample per prompt.
 - Fail safe as stop 52. Spend: Modal expected $0.30, stage stop $3. Router: none.
+
+### Stop 54: results (2026-10-11)
+
+`uv run python scripts/fresh_arms.py report`, raw in `results/fresh_arms/report.json`. 720 prompts, every label
+valid. 354 graded sentences (206 right, 148 wrong). Qwen 27B thinking off, untrained, Replace strict.
+
+G1 (false rollbacks / caught, accuracy):
+
+| Prompt | List fix | Figures to the judge | No claim check |
+|---|---|---|---|
+| Stop 42 prompt | 22 / 132, 89.3 % | 14 / 132, 91.5 % | 14 / 132, 91.5 % |
+| `notes2` | 15 / 133, 91.5 % | 8 / 133, 93.5 % | 8 / 133, 93.5 % |
+| `notes3` | 16 / 134, 91.5 % | 9 / 133, 93.2 % | 9 / 133, 93.2 % |
+
+`notes2` with figures to the judge, by group: software 4 / 49, 95.3 %; statutes 4 / 84, 91.8 %; with source
+5 / 13, 91.4 %; closed-book 3 / 120, 95.3 %.
+
+G2, against the stop 42 prompt in the same arm:
+
+| Prompt | Arm | Gained | Lost | p | Gain by the fixed reading |
+|---|---|---|---|---|---|
+| `notes2` | List fix | 8 | 0 | 0.008 | Yes |
+| `notes2` | Figures to the judge | 8 | 1 | 0.039 | Yes |
+| `notes3` | List fix | 8 | 0 | 0.008 | Yes |
+| `notes3` | Figures to the judge | 8 | 2 | 0.11 | No |
+
+`notes3` against `notes2`: 2 and 2 with the list fix, 2 and 3 with figures to the judge. The note on hedged
+sentences adds nothing.
+
+- The two notes cut the false rollbacks from 22 to 15, and from 14 to 8 with figures to the judge. The wrong
+  sentences caught go from 132 to 133. The judge did not become more lenient on wrong sentences.
+- With both changes of stops 52 and 54 the untrained Qwen 27B scores 93.5 %, against 88.3 % at stop 47.
+- Still missed: 15 of the 148 wrong sentences, 9 of them among the 22 in answers written with the source.
+- Time per clause in the bulk run (16 at a time, L40S): `notes2` p50 11.6 s and p95 17.0 s, level with the stop 42
+  prompt's 11.4 s and 17.8 s. Not one at a time.
+
+Spend: Modal $0.49 ($11.22 of $55). Router: none.
+
+Limits as fixed before the run: the notes were written from this test's errors and scored on it, and stop 48
+found 14 of 323 Qwen 27B labels change on a second sample. The figure needs a new graded set to stand.
