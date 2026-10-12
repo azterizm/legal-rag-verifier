@@ -18,7 +18,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | Stop 58 is scored. The paragraph does not make the judge pass refusals (3 of 16). The judge reads a closed-book refusal with a reason as contradicted, because it has the source. On the 7B's answers the paragraph gains 6 sentences and loses none. Halted for your decision. No paid run is queued |
-| Waiting on you | What to do next. My recommendation: test the case that matters and that no set holds, a refusal when the source does not answer the question (the same 40 questions, each with another question's source, Qwen 27B 4-bit as generator and judge; about $1.50 of Modal, grading by the two graders with open sentences to you). Then the live loop. Open: five disputed grades on the second test; V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
+| Waiting on you | Your go on the live loop. Decided by you on 2026-10-12: refusals are the router's job, so no refusal rule here and the mismatched-source test is dropped. Proposed next: the judge inside the loop (Qwen 27B 4-bit), rollback and retry with the source inserted, on answers that start without the source. Open: five disputed grades on the second test; V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
