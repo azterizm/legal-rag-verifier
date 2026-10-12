@@ -24,6 +24,13 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-12 (65): **The live loop with the short reply.** The wrap-up run you approved, run while stop 64's
+  teacher labels. 80 answers, no error. Mechanics as stop 59. Seconds per answer, p50: 1.87 with the source in
+  the prompt (stop 59: 3.18) and 3.05 from memory (5.21); a judge call 0.56 s (1.7 s); the judge is 35 to 38 % of
+  the time (58 to 61 %). Fixed reading passes: the short reply saves time in the loop. 97 of 99 sentences repeat
+  stop 59's and keep their grades; 2 new ones graded right by both graders; nothing left for you. 0 of 49 and 3 of
+  50 wrong (the same 3 refusals). Modal $0.41, router $0.02. **Resume:** stop 64.
+
 - 2026-10-12 (63, MiniCPM done, Gemma waits): **A 1B judge trained on Qwen 27B's labels.** Your go on training
   both; MiniCPM against the drop rule of stop 62, by your decision. Teacher: 4,433 clauses labelled, all valid.
   MiniCPM5-1B, LoRA, one epoch, 30 min: agrees with its teacher on 84 % of 415 held-out clauses; 29 / 125, 85.3 %

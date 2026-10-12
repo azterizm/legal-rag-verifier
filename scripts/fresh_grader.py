@@ -33,6 +33,9 @@ AGREE = 0.95  # GRID § Stop 57: the gate of step 1, and of the two graders toge
 OPUS_STOP = 17.0  # the Opus 5.5 ledger stops here for stop 57
 NOTE = "graded by Opus 5.5"
 GRADERS = ("opus55", "gemini-pro-low")  # file names; the router models are in ``_model``
+# Stop 65: a sentence that is word for word a sentence of the same question and arm in the earlier
+# set keeps the grade it got there; only the others are graded.
+CARRY_FROM = {"fresh2-short-live": "fresh2-live"}
 SETTLED = {"first": "Opus 5.5 and Gemini 3.1 Pro agree", "again": "they agree when asked again"}
 AGAIN_USER = """Grade the sentences listed at the end against the source shown: "yes" if every \
 claim in the sentence matches the source, "no" if any claim does not, "unsure" otherwise. A \
@@ -106,6 +109,30 @@ def parse_again(text: str, items: list[str]) -> tuple[dict[str, str], dict[str, 
     return grades, reasons
 
 
+def carried() -> dict[str, dict[str, str]]:
+    """Item → the grade and note of the same sentence in the earlier set, where there is one."""
+    earlier = CARRY_FROM.get(fb.SET)
+    if earlier is None:
+        return {}
+    source = ROOT / "results" / earlier
+    old_key = json.loads((source / "key.json").read_text(encoding="utf-8"))
+    with (source / "grades.csv").open(encoding="utf-8") as f:
+        old = {r["item"]: r for r in csv.DictReader(f)}
+    known = {
+        (v["id"], v["mode"], v["text"]): old[item]
+        for item, v in old_key.items()
+        if old[item]["correct"].strip().lower() in GRADES
+    }
+    key = json.loads((Path(fb.OUT) / "key.json").read_text(encoding="utf-8"))
+    out = {}
+    for item, v in key.items():
+        row = known.get((v["id"], v["mode"], v["text"]))
+        if row is not None:
+            note = f"as in {earlier}: {row['note']}"
+            out[item] = {"grade": row["correct"].strip().lower(), "note": note}
+    return out
+
+
 def open_items() -> list[str]:
     """Sentences the first pass does not settle: the two differ, or either is unsure."""
     first = [done(g) for g in GRADERS]
@@ -120,7 +147,8 @@ def grade(grader: str = "opus55", *, again: bool = False) -> None:
     router.CAPS[router.OPUS55] = min(router.CAPS[router.OPUS55], OPUS_STOP)
     model = _model(grader)
     have = done(grader, again=again)
-    wanted = set(open_items()) if again else None
+    kept = carried()
+    wanted = set(open_items()) if again else {k for k in hand() if k not in kept} if kept else None
     todo = {}
     for q, block in blocks().items():
         items = [k for k in _ITEM.findall(block) if wanted is None or k in wanted]
@@ -286,11 +314,14 @@ def fill() -> None:
     row says who graded it. Only for a set named for its generator (``fresh2-q27``)."""
     if "-" not in fb.SET:
         raise SystemExit("this set is graded by hand; its grades are never overwritten")
-    agreed = consensus()
+    agreed, kept = consensus(), carried()
     with (Path(fb.OUT) / "leftover.csv").open(encoding="utf-8") as f:
         yours = {r["item"]: r["correct"].strip().lower() for r in csv.DictReader(f)}
     rows = []
     for k in hand():
+        if k in kept:
+            rows.append({"item": k, "correct": kept[k]["grade"], "note": kept[k]["note"]})
+            continue
         v = agreed[k]
         if "grade" in v:
             rows.append({"item": k, "correct": v["grade"], "note": SETTLED[v["by"]]})
@@ -302,12 +333,13 @@ def fill() -> None:
         writer = csv.DictWriter(f, fieldnames=["item", "correct", "note"])
         writer.writeheader()
         writer.writerows(rows)
-    print(json.dumps({"set": fb.SET, "by": dict(Counter(r["note"].split(" (")[0] for r in rows))}))
+    by = Counter(r["note"].split(" (")[0].split(":")[0] for r in rows)
+    print(json.dumps({"set": fb.SET, "by": dict(by)}))
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    commands = ["grade", "again", "check", "pair", "leftover", "fill"]
+    commands = ["grade", "again", "check", "pair", "leftover", "fill", "carried"]
     parser.add_argument("command", choices=commands)
     parser.add_argument("grader", nargs="?", default="opus55", choices=GRADERS)
     args = parser.parse_args()
@@ -315,6 +347,9 @@ def main() -> None:
         grade(args.grader)
     elif args.command == "again":
         grade(args.grader, again=True)
+    elif args.command == "carried":
+        kept = carried()
+        print(json.dumps({"set": fb.SET, "sentences": len(hand()), "carried": len(kept)}))
     else:
         {"check": check, "pair": check_pair, "leftover": leftover, "fill": fill}[args.command]()
 

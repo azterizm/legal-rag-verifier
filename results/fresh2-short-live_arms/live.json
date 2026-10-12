@@ -1,0 +1,173 @@
+{
+ "set": "fresh2-short-live",
+ "arms": {
+  "source: source in the prompt": {
+   "T1_mechanics": {
+    "answers": 40,
+    "stop_reasons": {
+     "eos": 40
+    },
+    "sentences": 49,
+    "committed_at_first_try": 48,
+    "committed_after_a_retry": {
+     "ban": 1
+    },
+    "replaced_by_the_refusal": 0,
+    "rollbacks": 3,
+    "answers_with_no_rollback": 39,
+    "rollbacks_per_answer_max": 3,
+    "tokens_in_final_answers": 1892,
+    "tokens_discarded": 194,
+    "injections": 0,
+    "tokens_injected": 0,
+    "first_attempt_reasons": {
+     "UNGROUNDED_CITATION": 1
+    }
+   },
+   "T2_cache": {
+    "first_sentence_first_attempt_p50": 0.48,
+    "retry_attempts": 3,
+    "retry_p50": 1.05,
+    "retry_min": 0.98
+   },
+   "T3_time": {
+    "seconds_per_answer_p50": 1.87,
+    "seconds_per_answer_p95": 6.89,
+    "generation_seconds_per_answer_p50": 1.2,
+    "judge_seconds_per_answer_p50": 0.6,
+    "judge_share_of_time": 0.35,
+    "judge_calls": 50,
+    "judge_calls_per_answer": 1.2,
+    "seconds_per_judge_call_p50": 0.56,
+    "seconds_per_judge_call_p95": 0.9,
+    "judge_labels": {
+     "supported": 49,
+     "contradicted": 1
+    },
+    "seconds_total": 86.0,
+    "mean_seconds_per_answer": 2.15
+   },
+   "T3_against_the_long_reply": {
+    "long_reply": {
+     "seconds_per_answer_p50": 3.18,
+     "judge_seconds_per_answer_p50": 1.85,
+     "judge_share_of_time": 0.58,
+     "seconds_per_judge_call_p50": 1.73
+    },
+    "seconds_per_answer_p50_ratio": 0.588,
+    "saves_time": true
+   },
+   "T4_outcome": {
+    "sentences": 49,
+    "matched_to_the_trace": 49,
+    "wrong": 0,
+    "share_wrong": 0.0,
+    "interval_95": [
+     0.0,
+     0.073
+    ],
+    "baseline_without_a_loop": {
+     "wrong": 0,
+     "sentences": 49,
+     "share_wrong": 0.0
+    },
+    "committed_after_a_rollback": 1,
+    "of_which_right": 1,
+    "wrong_that_are_the_engine_refusal": 0,
+    "wrong_among_generated_sentences": 0,
+    "generated_sentences": 49,
+    "refusal_sentences": 0,
+    "refusals_graded_right": 0,
+    "share_replaced_by_the_refusal": 0.0,
+    "costs_little": true
+   }
+  },
+  "closed: from memory, source on rollback": {
+   "T1_mechanics": {
+    "answers": 40,
+    "stop_reasons": {
+     "eos": 40
+    },
+    "sentences": 50,
+    "committed_at_first_try": 15,
+    "committed_after_a_retry": {
+     "inject": 31,
+     "ban": 1
+    },
+    "replaced_by_the_refusal": 3,
+    "rollbacks": 47,
+    "answers_with_no_rollback": 5,
+    "rollbacks_per_answer_max": 4,
+    "tokens_in_final_answers": 1563,
+    "tokens_discarded": 1872,
+    "injections": 38,
+    "tokens_injected": 9964,
+    "first_attempt_reasons": {
+     "NEUTRAL_STRICT": 16,
+     "NLI_CONTRADICTION": 10,
+     "NLI_NOT_ENTAILED": 3,
+     "UNGROUNDED_CITATION": 5,
+     "UNGROUNDED_INSTRUMENT": 3,
+     "UNGROUNDED_FIGURE": 1
+    }
+   },
+   "T2_cache": {
+    "first_sentence_first_attempt_p50": 0.41,
+    "retry_attempts": 44,
+    "retry_p50": 2.56,
+    "retry_min": 0.75
+   },
+   "T3_time": {
+    "seconds_per_answer_p50": 3.05,
+    "seconds_per_answer_p95": 7.21,
+    "generation_seconds_per_answer_p50": 1.92,
+    "judge_seconds_per_answer_p50": 1.12,
+    "judge_share_of_time": 0.38,
+    "judge_calls": 85,
+    "judge_calls_per_answer": 2.1,
+    "seconds_per_judge_call_p50": 0.56,
+    "seconds_per_judge_call_p95": 0.91,
+    "judge_labels": {
+     "not_stated": 23,
+     "supported": 47,
+     "contradicted": 15
+    },
+    "seconds_total": 133.8,
+    "mean_seconds_per_answer": 3.35
+   },
+   "T3_against_the_long_reply": {
+    "long_reply": {
+     "seconds_per_answer_p50": 5.21,
+     "judge_seconds_per_answer_p50": 3.21,
+     "judge_share_of_time": 0.613,
+     "seconds_per_judge_call_p50": 1.65
+    },
+    "seconds_per_answer_p50_ratio": 0.585
+   },
+   "T4_outcome": {
+    "sentences": 50,
+    "matched_to_the_trace": 50,
+    "wrong": 3,
+    "share_wrong": 0.06,
+    "interval_95": [
+     0.021,
+     0.162
+    ],
+    "baseline_without_a_loop": {
+     "wrong": 36,
+     "sentences": 65,
+     "share_wrong": 0.554
+    },
+    "committed_after_a_rollback": 32,
+    "of_which_right": 31,
+    "wrong_that_are_the_engine_refusal": 2,
+    "wrong_among_generated_sentences": 1,
+    "generated_sentences": 47,
+    "refusal_sentences": 3,
+    "refusals_graded_right": 1,
+    "share_replaced_by_the_refusal": 0.06,
+    "repairs": true
+   }
+  }
+ }
+}
