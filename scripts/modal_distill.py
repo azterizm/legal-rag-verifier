@@ -975,7 +975,135 @@ ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     "stop56": 6.0,
     "stop57": 5.0,
     "stop58": 3.0,
+    "stop59": 8.0,
 }
+
+
+live_image = judge_image.add_local_file(ROOT / "scripts/live_loop.py", "/app/scripts/live_loop.py")
+LIVE_CHUNK = 4  # answers per call, one at a time inside the container
+
+
+@app.cls(
+    image=live_image,
+    gpu="L40S",
+    volumes={"/hf": weights},
+    timeout=4 * 3600,
+    max_containers=1,
+    scaledown_window=120,
+)
+class LiveLoop:
+    """Stop 59: one SGLang server as generator and judge, with the engine driving it. A server
+    that does not start is reported by ``answer`` instead of failing the container, so Modal does
+    not restart it in a loop."""
+
+    name: str = modal.parameter(default="qwen27-ar4")
+
+    @modal.enter()
+    def start(self) -> None:
+        self.error = ""
+        self.started = time.time()
+        spec = JUDGES[self.name]
+        self.server = subprocess.Popen(  # noqa: S603
+            [
+                sys.executable, "-m", "sglang.launch_server",
+                "--model-path", spec["model"], "--revision", spec["revision"],
+                "--port", str(PORT), "--mem-fraction-static", "0.85",
+                "--enable-custom-logit-processor", *spec["args"],
+            ]
+        )  # fmt: skip
+        url = f"http://127.0.0.1:{PORT}"
+        try:
+            _wait(self.server, url)
+            import live_loop as ll  # noqa: PLC0415
+            from auditor_judge import server_chat  # noqa: PLC0415
+
+            self.backend = ll.ThinkingOff.connect(url, spec["model"], revision=spec["revision"])
+            chat = server_chat(url, spec["model"], spec["sampling"], spec["template"])
+            judge = ll.LiveJudge(chat, f"{spec['model']}@{spec['revision']}")
+            self.verifier = ll.LoopVerifier(judge)
+        except Exception as exc:  # noqa: BLE001 - reported by ``answer``
+            self.error = repr(exc)[:600]
+        self.startup = time.time() - self.started
+
+    @modal.exit()
+    def stop(self) -> None:
+        self.server.terminate()
+
+    @modal.method()
+    def answer(self, arm: str, items: list[dict[str, Any]]) -> dict[str, Any]:
+        if self.error:
+            return {"error": self.error, "seconds": 0.0, "startup": self.startup}
+        import live_loop as ll  # noqa: PLC0415
+
+        t0 = time.time()
+        records, errors = [], []
+        for item in items:
+            try:
+                records.append(ll.answer(self.backend, self.verifier, arm, item))
+            except Exception as exc:  # noqa: BLE001 - one answer, retried on the next run
+                errors.append(f"{item['id']}:{arm}: {exc!r}"[:400])
+        out = {"records": records, "errors": errors}
+        return {**out, "seconds": time.time() - t0, "startup": self.startup}
+
+
+@app.local_entrypoint()
+def live_loop(arms: str = "source,closed", limit: int = 0, stage: str = "stop59") -> None:
+    """Stop 59: the fresh questions answered inside the loop. Needs FRESH_SET=fresh2-live. Each
+    answer and its trace are appended as its chunk returns; a rerun asks only what is missing."""
+    fresh, ledger = _local()
+    if not fresh.SET.endswith("-live"):
+        raise SystemExit("set FRESH_SET to a live set, such as fresh2-live")
+    rows = fresh.rows()[: limit or None]
+    traces = fresh.OUT / "traces.jsonl"
+    runner = LiveLoop()
+    startup_recorded = False
+    for arm in arms.split(","):
+        done = fresh.answers()
+        todo = [r for r in rows if f"{r['id']}:{arm}" not in done]
+        print(f"{fresh.SET} {arm}: {len(rows) - len(todo)} done, {len(todo)} to answer", flush=True)
+        failed = 0
+        for at in range(0, len(todo), LIVE_CHUNK):
+            items = [
+                {
+                    "id": r["id"],
+                    "query": r["query"],
+                    "domain": r["domain"],
+                    "premise": fresh.premise(r),
+                }
+                for r in todo[at : at + LIVE_CHUNK]
+            ]
+            ledger.check_stage(stage, ARMS_STOPS[stage], "L40S", ARMS_ESTIMATE)
+            t0 = time.time()
+            seconds, note = 0.0, "failed"
+            try:
+                out = runner.answer.remote(arm, items)
+                seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+                startup_recorded = True
+                if out.get("error"):
+                    raise RuntimeError(f"the server did not start: {out['error']}")  # noqa: TRY301
+                fresh.append_answers(
+                    [{k: r[k] for k in ("key", "text", "model", "seconds")} for r in out["records"]]
+                )
+                fresh.OUT.mkdir(parents=True, exist_ok=True)
+                with traces.open("a", encoding="utf-8") as f:
+                    for r in out["records"]:
+                        f.write(json.dumps(r, ensure_ascii=False) + "\n")
+                for e in out["errors"]:
+                    print(f"{arm}: {e}", flush=True)
+                note = f"{arm}: {len(out['records'])} answers, {len(out['errors'])} errors"
+                failed = 0
+            except RuntimeError:
+                ledger.record(f"{stage} live", "L40S", seconds or time.time() - t0, "no server")
+                raise
+            except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+                failed += 1
+                seconds = time.time() - t0
+                print(f"{arm}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+            ledger.record(f"{stage} live", "L40S", seconds, note)
+            print(f"{arm}: {min(at + LIVE_CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
+            if failed >= 2:  # noqa: PLR2004
+                raise RuntimeError("two chunks failed in a row; stopped")
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
 
 
 @app.local_entrypoint()
