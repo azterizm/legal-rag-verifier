@@ -96,6 +96,8 @@ results/distill/validation.jsonl
 # Stop 63: the students' training examples (the prompts quote statute text)
 results/distill/students/train.jsonl
 results/distill/students/validation.jsonl
+# Stop 64: the second pool, same rule as the first (sources, questions, answers and clauses stay local)
+results/distill/pool2/
 
 # Stops 48 and 49: probe runs are not results
 results/awareness/probe/

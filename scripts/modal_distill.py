@@ -272,6 +272,11 @@ for _base in SMALL_BASES:
         "revision": None,
         "sampling": {"temperature": 0, "max_tokens": 1024, "seed": 0},
     }
+# Stop 64: MiniCPM5-1B trained on both pools.
+JUDGES["minicpm5-1b-student2"] = {
+    **JUDGES["minicpm5-1b-student"],
+    "model": "/runs/minicpm5-1b/run2/merged",
+}
 for _name, (_model, _revision) in QUANT.items():
     JUDGES[_name] = {**JUDGES["qwen27-nothink"], "model": _model, "revision": _revision}
     JUDGES[f"{_name}-l4"] = {
@@ -540,6 +545,35 @@ def pool_answers() -> None:
         startup_recorded = True
         ledger.record("stop45 pool answers", "L4", seconds, f"{len(good)} answers")
     print(f"Modal spent ${ledger.spent():.2f}")
+
+
+@app.local_entrypoint()
+def pool2_answers(stage: str = "stop64", limit: int = 0) -> None:
+    """Stop 64: every question of the second pool, with the source and closed-book, by the 7B
+    generator. Chunks are appended as they return; a rerun asks only what is missing."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import modal_ledger as ledger  # noqa: PLC0415
+    from pool2 import dd  # noqa: PLC0415 - importing pool2 points distill_data at the second pool
+
+    done = dd.answers()
+    todo = [r for r in dd.requests() if r["key"] not in done][: limit or None]
+    print(f"pool 2: {len(done)} done, {len(todo)} to answer", flush=True)
+    if not todo:
+        return
+    ledger.check_stage(stage, ARMS_STOPS[stage], "L4", 3600)
+    chunks = [todo[i : i + CHUNK] for i in range(0, len(todo), CHUNK)]
+    startup_recorded = False
+    for out in Generator().answer.map(chunks, return_exceptions=True):
+        if isinstance(out, Exception):
+            print(f"chunk failed, retried on the next run: {out!r}"[:300], flush=True)
+            continue
+        good = [r for r in out["results"] if r.get("text") is not None]
+        dd.append_answers(good)
+        seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+        startup_recorded = True
+        ledger.record(f"{stage} pool2 answers", "L4", seconds, f"{len(good)} answers")
+    print(f"pool 2: {len(dd.answers())} answers")
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
 
 
 # ------------------------------------------------------------------ stop 46: the student
@@ -1019,6 +1053,7 @@ ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     "stop61": 3.0,
     "stop62": 5.0,
     "stop63": 10.0,
+    "stop64": 10.0,
 }
 
 
@@ -1033,7 +1068,11 @@ small_train_image = (
 
 @app.local_entrypoint()
 def pool_labels(
-    name: str = "qwen27-ar4", split: str = "", limit: int = 0, stage: str = "stop63"
+    name: str = "qwen27-ar4",
+    split: str = "",
+    limit: int = 0,
+    stage: str = "stop63",
+    workers: int = WORKERS,
 ) -> None:
     """Stop 63: one model's labels on the training pool's short prompts (the teacher on all of
     it, a student on ``--split validation``). Chunks run one after another; each is appended as
@@ -1051,13 +1090,14 @@ def pool_labels(
     path = st.label_path(name)
     path.parent.mkdir(parents=True, exist_ok=True)
     startup_recorded, failed = False, 0
-    for at in range(0, len(items), POOL_CHUNK):
-        chunk = dict(items[at : at + POOL_CHUNK])
+    size = POOL_CHUNK * max(workers // WORKERS, 1)
+    for at in range(0, len(items), size):
+        chunk = dict(items[at : at + size])
         ledger.check_stage(stage, ARMS_STOPS[stage], gpu, ARMS_ESTIMATE)
         t0 = time.time()
         seconds, note = 0.0, "failed"
         try:
-            out = server.judge.remote(chunk, WORKERS)
+            out = server.judge.remote(chunk, workers)
             with path.open("a", encoding="utf-8") as f:
                 for sha, row in out["labels"].items():
                     f.write(json.dumps({"sha": sha, **row}, ensure_ascii=False) + "\n")
@@ -1072,7 +1112,7 @@ def pool_labels(
             print(f"{name}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
         finally:
             ledger.record(f"{stage} pool {name}", gpu, seconds, note)
-        print(f"{name}: {min(at + POOL_CHUNK, len(items))}/{len(items)} ({note})", flush=True)
+        print(f"{name}: {min(at + size, len(items))}/{len(items)} ({note})", flush=True)
         if failed >= 2:  # noqa: PLR2004
             raise RuntimeError(f"{name}: two chunks failed in a row; stopped")
     print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
@@ -1081,8 +1121,15 @@ def pool_labels(
 @app.function(
     image=small_train_image, gpu="H100", timeout=6 * 3600, volumes={"/hf": weights, "/runs": runs}
 )
-def train_small(
-    student: str, epochs: int = 1, max_tokens: int = 8192, *, smoke: bool = False
+def train_small(  # noqa: PLR0915
+    student: str,
+    epochs: int = 1,
+    max_tokens: int = 8192,
+    *,
+    smoke: bool = False,
+    run: str = "run",
+    batch_tokens: int = 0,
+    budget_seconds: float = 0.0,
 ) -> dict:
     """Stop 63: LoRA on the teacher's short replies. Each example is the prompt as the model
     sees it with thinking off, then the reply and the end-of-turn text; the loss is on the reply
@@ -1098,7 +1145,7 @@ def train_small(
     )
 
     spec = JUDGES[student]
-    out = Path("/runs") / student / ("smoke" if smoke else "run")
+    out = Path("/runs") / student / ("smoke" if smoke else run)
     tokenizer = AutoTokenizer.from_pretrained(spec["model"], revision=spec["revision"])
     marker = "\x00REPLY\x00"
     probe = [
@@ -1121,8 +1168,8 @@ def train_small(
     lines = Path("/runs/data-small/train.jsonl").read_text(encoding="utf-8").splitlines()
     rows = [encode(json.loads(x)["messages"]) for x in lines]
     kept = [r for r in rows if len(r["input_ids"]) <= max_tokens]
-    if smoke:
-        kept = kept[:64]
+    if smoke and not batch_tokens:
+        kept = kept[:64]  # with batches the timing run draws from every length instead
 
     def collate(batch: list[dict[str, list[int]]]) -> dict[str, Any]:
         width = max(len(b["input_ids"]) for b in batch)
@@ -1139,8 +1186,9 @@ def train_small(
     model = AutoModelForCausalLM.from_pretrained(
         spec["model"], revision=spec["revision"], dtype=torch.bfloat16, device_map={"": 0}
     )
-    model.gradient_checkpointing_enable()
-    model.enable_input_require_grads()
+    if not batch_tokens:  # stop 63's memory setting; batches under a token budget do not need it
+        model.gradient_checkpointing_enable()
+        model.enable_input_require_grads()
     # The attention and MLP projections of the text model only: Gemma's image and audio towers
     # use other layer types under the same names, and take no part in this task.
     targets = [
@@ -1160,16 +1208,38 @@ def train_small(
     model = get_peft_model(model, config)
     trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
 
+    started = time.time()
+    stopped_early: list[int] = []
+
     class Commit(TrainerCallback):  # type: ignore[misc]
         def on_save(self, *args: Any, **kwargs: Any) -> None:
             runs.commit()
 
+        def on_step_end(self, args: Any, state: Any, control: Any, **kwargs: Any) -> None:
+            if budget_seconds and time.time() - started > budget_seconds:
+                stopped_early.append(state.global_step)
+                control.should_training_stop = True
+
+    # Stop 64: batches built by length under a token budget (examples x longest example), at
+    # most 16 examples, four batches per update. Stop 63: one example at a time, 16 per update.
+    data: list[Any] = kept
+    if batch_tokens:
+        order = sorted(range(len(kept)), key=lambda i: len(kept[i]["input_ids"]))
+        batches: list[list[int]] = [[]]
+        for i in order:  # ascending, so the current example is the longest of its batch
+            last = batches[-1]
+            full = len(last) >= 16 or (len(last) + 1) * len(kept[i]["input_ids"]) > batch_tokens  # noqa: PLR2004
+            if last and full:
+                batches.append([i])
+            else:
+                last.append(i)
+        data = [collate([kept[i] for i in batch]) for batch in batches if batch]
     args = TrainingArguments(
         output_dir=str(out / "checkpoints"),
         num_train_epochs=epochs,
-        max_steps=10 if smoke else -1,
+        max_steps=(40 if batch_tokens else 10) if smoke else -1,
         per_device_train_batch_size=1,
-        gradient_accumulation_steps=16,
+        gradient_accumulation_steps=4 if batch_tokens else 16,
         learning_rate=1e-4,
         lr_scheduler_type="cosine",
         warmup_steps=0.03,  # a float below 1 is a ratio of total steps
@@ -1181,8 +1251,35 @@ def train_small(
         seed=TRAIN_SEED,
         remove_unused_columns=False,
     )
-    trainer = Trainer(
-        model=model, args=args, train_dataset=kept, data_collator=collate, callbacks=[Commit()]
+
+    class ReplyOnly(Trainer):  # type: ignore[misc]
+        """The same loss as the default (cross-entropy on the reply tokens), with the output
+        layer applied only at the reply's positions. Over a whole batch of long prompts the
+        full table of scores (tokens x 130,560 words) does not fit in memory."""
+
+        def compute_loss(
+            self,
+            model: Any,
+            inputs: Any,
+            return_outputs: bool = False,  # noqa: FBT001, FBT002 - the library's signature
+            **kwargs: Any,
+        ) -> Any:
+            core = model.get_base_model()
+            hidden = core.model(
+                input_ids=inputs["input_ids"], attention_mask=inputs["attention_mask"]
+            ).last_hidden_state
+            targets = inputs["labels"][:, 1:]  # position t predicts token t + 1
+            keep = targets != -100  # noqa: PLR2004
+            scores = core.lm_head(hidden[:, :-1][keep])
+            loss = torch.nn.functional.cross_entropy(scores.float(), targets[keep])
+            return (loss, None) if return_outputs else loss
+
+    trainer = (ReplyOnly if batch_tokens else Trainer)(
+        model=model,
+        args=args,
+        train_dataset=data,
+        data_collator=(lambda items: items[0]) if batch_tokens else collate,
+        callbacks=[Commit()],
     )
     t0 = time.time()
     resume = any((out / "checkpoints").glob("checkpoint-*"))
@@ -1196,6 +1293,9 @@ def train_small(
         - len([r for r in rows if len(r["input_ids"]) <= max_tokens]),
         "trainable_parameters": trainable,
         "lora_layers": len(targets),
+        "batches": len(data) if batch_tokens else None,
+        "stopped_at_step": stopped_early[0] if stopped_early else None,
+        "steps": trainer.state.global_step,
         "end_of_turn": end,
         "seconds": time.time() - t0,
         "loss": result.training_loss,
@@ -1207,7 +1307,7 @@ def train_small(
 @app.function(
     image=small_train_image, gpu="H100", timeout=3600, volumes={"/hf": weights, "/runs": runs}
 )
-def merge_small(student: str, *, smoke: bool = False) -> str:
+def merge_small(student: str, *, smoke: bool = False, run: str = "run") -> str:
     """The adapter merged into the base in bf16, with every other file of the base beside it
     (tokenizer, chat template, processor settings), so the server loads it like the base."""
     import shutil  # noqa: PLC0415
@@ -1218,12 +1318,12 @@ def merge_small(student: str, *, smoke: bool = False) -> str:
     from transformers import AutoModelForCausalLM  # noqa: PLC0415
 
     spec = JUDGES[student]
-    run = Path("/runs") / student / ("smoke" if smoke else "run")
+    folder = Path("/runs") / student / ("smoke" if smoke else run)
     base = AutoModelForCausalLM.from_pretrained(
         spec["model"], revision=spec["revision"], dtype=torch.bfloat16
     )
-    merged = PeftModel.from_pretrained(base, str(run / "adapter")).merge_and_unload()
-    target = run / "merged"
+    merged = PeftModel.from_pretrained(base, str(folder / "adapter")).merge_and_unload()
+    target = folder / "merged"
     if target.exists():
         shutil.rmtree(target)
     merged.save_pretrained(str(target), safe_serialization=True)
@@ -1237,7 +1337,15 @@ def merge_small(student: str, *, smoke: bool = False) -> str:
 
 
 @app.local_entrypoint()
-def train_small_student(student: str, smoke: bool = False, stage: str = "stop63") -> None:  # noqa: FBT001, FBT002
+def train_small_student(  # noqa: PLR0917
+    student: str,
+    smoke: bool = False,  # noqa: FBT001, FBT002
+    stage: str = "stop63",
+    run: str = "run",
+    epochs: int = 1,
+    batch_tokens: int = 0,
+    budget_usd: float = 0.0,
+) -> None:
     """Stop 63: upload the examples, train (resumes from the last checkpoint), merge. Ledgered."""
     sys.path[:0] = [str(ROOT / "scripts")]
     import modal_ledger as ledger  # noqa: PLC0415
@@ -1248,10 +1356,19 @@ def train_small_student(student: str, smoke: bool = False, stage: str = "stop63"
     with runs.batch_upload(force=True) as batch:
         for split in ("train", "validation"):
             batch.put_file(str(data / f"{split}.jsonl"), f"/data-small/{split}.jsonl")
-    ledger.check_stage(stage, ARMS_STOPS[stage], "H100", 1200 if smoke else 3600)
+    per_second = ledger.PER_HOUR["H100"] * ledger.OVERHEAD / 3600
+    budget = budget_usd / per_second if budget_usd else 0.0  # the seconds that amount buys
+    ledger.check_stage(stage, ARMS_STOPS[stage], "H100", 600 if smoke else budget or 3600)
     t0 = time.time()
     try:
-        out = train_small.remote(student, smoke=smoke)
+        out = train_small.remote(
+            student,
+            epochs,
+            smoke=smoke,
+            run=run,
+            batch_tokens=batch_tokens,
+            budget_seconds=budget,
+        )
     finally:
         ledger.record(
             f"{stage} train {student}{' smoke' if smoke else ''}", "H100", time.time() - t0
@@ -1261,7 +1378,7 @@ def train_small_student(student: str, smoke: bool = False, stage: str = "stop63"
         print(row)
     t0 = time.time()
     try:
-        print(merge_small.remote(student, smoke=smoke))
+        print(merge_small.remote(student, smoke=smoke, run=run))
     finally:
         ledger.record(f"{stage} merge {student}", "H100", time.time() - t0)
     print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")

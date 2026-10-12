@@ -315,6 +315,17 @@
    "mean_tokens": 23
   }
  },
+ "two_step": {
+  "MiniCPM5-1B, trained": {
+   "false_rollbacks": 4,
+   "caught": 120,
+   "accuracy": 0.91,
+   "qwen27_asked_on": 154,
+   "share_asked": 0.435,
+   "points_under_qwen27": 2.8,
+   "works": true
+  }
+ },
  "trained_against_untrained": {
   "MiniCPM5-1B, trained": {
    "only_first": 151,

@@ -26,7 +26,8 @@ import distill_data as dd  # type: ignore[import-not-found]  # noqa: E402
 import teachers  # type: ignore[import-not-found]  # noqa: E402
 
 TEACHER = "qwen27-ar4"
-STUDENTS = ("minicpm5-1b-student", "gemma4-e4b-student")
+STUDENTS = ("minicpm5-1b-student", "minicpm5-1b-student2", "gemma4-e4b-student")
+POOL2_UNITS = ROOT / "results/distill/pool2/units.jsonl"  # stop 64; every clause of it trains
 OUT = ROOT / "results/distill/students"
 
 
@@ -37,16 +38,21 @@ def label_path(name: str) -> Path:
 
 def clauses() -> list[dict[str, str]]:
     """Every pool clause once: its short prompt, the prompt's hash, its source and its split."""
-    out, seen = [], set()
-    for u in dd.units():
-        for clause, candidates in u["calls"]:
-            user = aj.short_prompt(clause, candidates, u["prefix"])
-            sha = aj.prompt_key(user)
-            if sha not in seen:
-                seen.add(sha)
-                out.append(
-                    {"sha": sha, "user": user, "source": u["id"], "split": dd.split_of(u["id"])}
-                )
+    out: list[dict[str, str]] = []
+    seen: set[str] = set()
+    second = []
+    if POOL2_UNITS.exists():
+        second = [json.loads(x) for x in POOL2_UNITS.read_text(encoding="utf-8").splitlines()]
+    for pool, units in (("first", dd.units()), ("second", second)):
+        for u in units:
+            split = dd.split_of(u["id"]) if pool == "first" else "train"
+            for clause, candidates in u["calls"]:
+                user = aj.short_prompt(clause, candidates, u["prefix"])
+                sha = aj.prompt_key(user)
+                if sha not in seen:
+                    seen.add(sha)
+                    row = {"sha": sha, "user": user, "source": u["id"], "split": split}
+                    out.append({**row, "pool": pool})
     return out
 
 
@@ -95,6 +101,7 @@ def dataset() -> dict[str, Any]:
             }
         )
         stats[f"{c['split']} {label['label']}"] += 1
+        stats[f"{c['split']} from the {c['pool']} pool"] += 1
     OUT.mkdir(parents=True, exist_ok=True)
     for split, examples in rows.items():
         text = "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in examples)
