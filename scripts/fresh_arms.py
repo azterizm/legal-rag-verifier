@@ -131,11 +131,27 @@ def notes_prompt(kind: str, sentence: str, candidates: Sequence[str], prefix: st
     return f"{head}{INSERTS[kind]}\nReturn JSON{tail}"
 
 
+# Stop 61: the stop 42 prompt asking for no reason. Only its last sentence differs.
+_REPLY = aj.USER[aj.USER.index("Return JSON") :]
+SHORT_REPLY = (
+    'Return JSON with keys "label" (one of the three) and "passage" (the number of the passage '
+    "that decides it, or 0). Give no reason."
+)
+SHORT_SHA = hashlib.sha256((aj.SYSTEM + aj.USER.replace(_REPLY, SHORT_REPLY)).encode()).hexdigest()
+
+
+def short_prompt(sentence: str, candidates: Sequence[str], prefix: str) -> str:
+    head, _ = aj.user_prompt(sentence, candidates, prefix).rsplit("Return JSON", 1)
+    return str(head) + SHORT_REPLY
+
+
 def prompt(
     kind: str, clause: str, candidates: Sequence[str], unit: Mapping[str, Any], source: str
 ) -> str:
     if kind == "p42":
         return str(aj.user_prompt(clause, candidates, unit["prefix"]))
+    if kind == "short":
+        return short_prompt(clause, candidates, unit["prefix"])
     if kind in INSERTS:
         return notes_prompt(kind, clause, candidates, unit["prefix"])
     return view_prompt(kind, clause, source, unit["query"], unit["prefix"])
@@ -182,8 +198,10 @@ def requests(kind: str, data: Mapping[str, Any] | None = None) -> dict[str, str]
     """Every prompt of one kind, ``{sha: user prompt}``: the clauses on the normal path and the
     clauses of the held sentences with the claim check off."""
     data = data or recorded()
-    if kind == "seq":  # an even spread of the stop 42 prompts, for timing one at a time
-        items = list(requests("p42", data).items())
+    if kind.startswith("seq"):  # an even spread of the prompts, for timing one at a time
+        # "seq" and "seq-again": the stop 42 prompt; "seq-short": the same clauses, short reply
+        base = "short" if kind == "seq-short" else "p42"
+        items = list(requests(base, data).items())
         return dict(items[:: max(len(items) // SEQUENTIAL, 1)][:SEQUENTIAL])
     out: dict[str, str] = {}
     for u in data["units"]:
@@ -192,7 +210,7 @@ def requests(kind: str, data: Mapping[str, Any] | None = None) -> dict[str, str]
             for clause, candidates in (r or {}).get("calls", []):
                 user = prompt(kind, clause, candidates, u, data["sources"][key])
                 out[aj.prompt_key(user)] = user
-    if kind == "p42" or kind in INSERTS:
+    if kind in ("p42", "short") or kind in INSERTS:
         fe.assert_blind(data["units"], out)
     return out
 
@@ -240,7 +258,7 @@ class Scorer:
         if label is None:  # no valid label after the reruns: counted as not stated
             self.missing += 1
             return list(aj.one_hot("not_stated", 0, len(premises)))
-        passage = label["passage"] if self.kind == "p42" or self.kind in INSERTS else 0
+        passage = label["passage"] if self.kind in ("p42", "short", *INSERTS) else 0
         return list(aj.one_hot(label["label"], passage, len(premises)))
 
 
@@ -662,6 +680,56 @@ def v0() -> None:
     print(json.dumps({k: out[k] for k in ("against_v0", "v0_run") if k in out}, indent=1))
 
 
+def short(judge: str = "qwen27-ar4") -> None:
+    """Stop 61: the reply without a reason against the stop 42 prompt, on this set and your
+    grades. → results/<set>_arms/short.json"""
+    data = recorded()
+    us, built = data["units"], data["built"]
+    graded = fe.merged_grades(us)
+    units = [
+        {**u, "right": graded[u["key"]] == "yes", "wrong": graded[u["key"]] == "no"} for u in us
+    ]
+    units = [u for u in units if u["right"] or u["wrong"]]
+    out: dict[str, Any] = {"set": fb.SET, "judge": judge, "prompt_sha256": SHORT_SHA}
+    out |= {"sentences": len(units), "arms": {}, "against_stop_42_prompt": {}, "time": {}}
+    labels = {kind: read(judge, kind) for kind in ("p42", "short")}
+    asked = {kind: requests(kind, data) for kind in labels}
+    out["no_valid_label"] = {k: sum(s not in labels[k] for s in asked[k]) for k in labels}
+    pairs = list(zip(asked["p42"], asked["short"], strict=True))  # same clauses, same order
+    both = [(a, b) for a, b in pairs if a in labels["p42"] and b in labels["short"]]
+    out["W1_same_label"] = {
+        "same": sum(labels["p42"][a]["label"] == labels["short"][b]["label"] for a, b in both),
+        "of": len(both),
+    }
+    correct: dict[str, dict[str, bool]] = {}
+    for arm, config in (("figures to the judge", aj.STRICT_FIGURES), ("claim check", aj.STRICT)):
+        for kind, table in labels.items():
+            scorer = Scorer(judge, kind, table, data["sources"])
+            verdicts = replay(us, built, scorer, set(), config)
+            name = f"{kind} | {arm}"
+            out["arms"][name] = fr.score(units, verdicts)["total"]
+            correct[name] = {u["key"]: fr._rolled(verdicts[u["key"]]) == u["wrong"] for u in units}
+        test = paired(correct[f"short | {arm}"], correct[f"p42 | {arm}"])
+        drop = out["arms"][f"p42 | {arm}"]["accuracy"] - out["arms"][f"short | {arm}"]["accuracy"]
+        out["against_stop_42_prompt"][arm] = {
+            **test,
+            "change_in_points": round(-100 * drop, 1),
+            "costs_nothing": bool(drop <= MARGIN),
+        }
+    for kind in ("seq-again", "seq-short"):
+        file = path(judge, kind)
+        if file.exists():
+            rows = [json.loads(x) for x in file.read_text("utf-8").splitlines()]
+            out["time"][kind] = aj.latency([r for r in rows if r["label"] in aj.LABELS])
+    if len(out["time"]) == 2:  # noqa: PLR2004
+        ratio = out["time"]["seq-short"]["p50_ms"] / out["time"]["seq-again"]["p50_ms"]
+        out["time"]["short_over_stop_42_p50"] = round(ratio, 2)
+        out["time"]["saves_time"] = bool(ratio <= 2 / 3)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "short.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps(out, indent=1))
+
+
 def label(judge: str, kind: str = "p42") -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -678,7 +746,8 @@ def label(judge: str, kind: str = "p42") -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "command", choices=["requests", "label", "report", "quant", "confirm", "table", "v0"]
+        "command",
+        choices=["requests", "label", "report", "quant", "confirm", "table", "v0", "short"],
     )
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
     parser.add_argument("--kind", default="p42", choices=PROMPTS)
@@ -693,6 +762,8 @@ def main() -> None:
         table()
     elif args.command == "v0":
         v0()
+    elif args.command == "short":
+        short()
     elif args.command == "label":
         label(args.judge, args.kind)
     else:

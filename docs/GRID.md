@@ -2336,3 +2336,31 @@ cost and not catching. `closed` is a stress path. The graders are two models and
 
 Spend, stop 59: Modal $0.81, Opus 5.5 $0.32, Pro $0.30. Totals: Modal $15.73 of $55, Opus 5.5 $15.04 of $40, Pro
 $13.74 of $15.
+
+### Decisions on 2026-10-12
+
+Yours: Qwen 27B AutoRound 4-bit stays in both roles. No 7B model is tried as the judge. The judge is most of the
+loop's time (58 to 61 %), so the next work is on the judge's time.
+
+## Stop 61: a judge reply without the reason (method fixed 2026-10-12, before any run)
+
+Your go ("do 1 and 2"). The judge writes a label, a passage number and a one-sentence reason: about 65 tokens, of
+which the reason is about 50. The label comes first, so the reason cannot inform it.
+
+- Prompt `short`: the stop 42 prompt with only its last sentence changed, to: return JSON with keys "label" (one
+  of the three) and "passage" (the number of the passage that decides it, or 0), and no reason. Everything else is
+  the same, including the sampling.
+- Judge: Qwen 27B AutoRound 4-bit, as stops 55 to 59 (SGLang, one L40S).
+- Sets, both with grades that exist: the first fresh test (360 prompts, 354 sentences, your grades) and the second
+  (153 prompts, 151 sentences, your grades). No new grading.
+- Readings:
+  - W1, clauses with the same label as the reply with a reason.
+  - W2, Replace strict with figures to the judge: false rollbacks, caught, accuracy, `short` against the stop 42
+    prompt on each test (sentences only one gets right, exact two-sided sign test).
+  - W3, time per clause one at a time on the 40 timing prompts of stop 55, for `short` and again for the stop 42
+    prompt in the same container, with tokens written.
+- Fixed now: the short reply costs nothing if on each test its accuracy is at most 1.5 points under the stop 42
+  prompt's, or higher. It saves time if its median time per clause is at most two thirds of the stop 42 prompt's.
+- Limits: one sample per prompt, and stop 48 found 14 of 323 labels change on a second sample of the same prompt,
+  so W1 below about 96 % is within that noise. The first test has been used since stop 47.
+- Fail safe as stop 52. Spend: Modal expected $0.80, stage stop $3. Router: none.
