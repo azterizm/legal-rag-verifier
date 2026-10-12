@@ -1169,7 +1169,7 @@ def fresh_arms(
         items = items[:limit] if limit else items
         print(f"{name} {kind}: {len(items)} to judge", flush=True)
         failed = 0
-        workers = 1 if kind == "seq" else WORKERS  # "seq": one at a time, for latency
+        workers = 1 if kind.startswith("seq") else WORKERS  # one at a time, for latency
         for at in range(0, len(items), CHUNK):
             chunk = dict(items[at : at + CHUNK])
             ledger.check_stage(stage, ARMS_STOPS[stage], gpu, ARMS_ESTIMATE)
