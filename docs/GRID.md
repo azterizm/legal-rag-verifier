@@ -2525,3 +2525,50 @@ Your go: "go on training both".
   test has been used since stop 47. No hand grade is in any training example.
 - Fail safe: labels, checkpoints and student labels are appended or saved as they come; a rerun continues.
 - Spend: Modal expected $5 to $6, stage stop $10. Router: none.
+
+### Stop 63: MiniCPM5-1B, results, and the state for Gemma (2026-10-12)
+
+Teacher labels: 4,433 clauses, every reply valid at the first ask (supported 2,305, not stated 1,616, contradicted
+512). Train 4,018 clauses from 426 sources, validation 415 from 46.
+
+MiniCPM5-1B training: 4,018 examples, none over 8,192 tokens, 11.2 million trainable parameters, one epoch in 30
+minutes on an H100, loss 0.071. End-of-turn text `<|im_end|>`.
+
+Y1, validation: the student gives its teacher's label on 348 of 415 clauses, 83.9 % (the K2 student: 89 %). It
+writes contradicted 19 times against the teacher's 49.
+
+Y2 and Y3, both tests, your grades, Replace strict with figures to the judge (false rollbacks / caught, accuracy):
+
+| Judge | First test, 354 sentences | Second test, 151 sentences |
+|---|---|---|
+| Qwen 27B 4-bit (the teacher) | 7 / 133, 93.8 % | 8 / 60, 90.1 % |
+| MiniCPM5-1B, trained | 29 / 125, 85.3 % | 17 / 54, 80.1 % |
+| MiniCPM5-1B, untrained | 153 / 117, 48.0 % | 64 / 57, 51.0 % |
+| Gemma 4 E4B, untrained | 16 / 116, 86.4 % | 9 / 54, 85.4 % |
+| V0, as scored | 68.7 % | 58.3 % |
+
+- Trained against untrained: 151 sentences gained and 19 lost on the first test, 57 and 13 on the second
+  (+37.3 and +29.1 points).
+- Against the Qwen 27B judge: 8 and 38 on the first test, 2 and 17 on the second. It gives the 27B's label on 280
+  of 360 and 115 of 153 clauses. Every reply parsed.
+- Fixed readings: 8.5 and 10.0 points under the 27B, so not near it; 16.6 and 21.8 points above V0, so clearly
+  above DeBERTa.
+
+Y4, one at a time on the 40 timing prompts (L40S): 0.062 s at p50 and 0.077 s at p95, 15 tokens written. The Qwen
+27B judge: 0.54 s and 1.25 s.
+
+Added after the scoring (not fixed before it): on answers written with the source the trained student scores
+85.3 % on the first test (no auditor 86.5 %) and 79.2 % on the second (no auditor 94.4 %); there it rolls back 11
+of 68 right sentences and catches none of the 4 wrong ones.
+
+Gemma 4 E4B, state. A 10-step smoke run trained and merged it (258 LoRA layers on the text model, 34.9 million
+trainable parameters, end-of-turn text `<turn|>`) at 0.945 examples per second. One epoch on 4,018 examples is
+then about 71 minutes on an H100, about $6, against the $2 to $3 I had estimated. With the stage at $4.16 that
+passes the $10 stop fixed for this stop, so the full run waits for your decision.
+
+Departures, all repaired: the first training attempt stopped on a setting name (`warmup_ratio`); the merge copied
+the base's shard index beside the merged weights, so the server could not load them; LoRA first matched layers in
+Gemma's image and audio towers. A judge server that does not start is now reported by the call and no longer
+restarted in a loop (one loop was stopped by hand after 2.5 minutes, $0.09).
+
+Spend so far, stop 63: Modal $4.16 ($21.45 of $55). Router: none.

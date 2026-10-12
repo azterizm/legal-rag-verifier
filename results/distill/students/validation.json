@@ -1,0 +1,26 @@
+{
+ "validation_clauses": 415,
+ "teacher_labels": {
+  "supported": 212,
+  "not_stated": 154,
+  "contradicted": 49
+ },
+ "minicpm5-1b-student": {
+  "labelled": 415,
+  "same_label": 348,
+  "same_label_and_passage": 302,
+  "labels": {
+   "not_stated": 184,
+   "supported": 212,
+   "contradicted": 19
+  },
+  "differ": {
+   "teacher supported / student not_stated": 11,
+   "teacher supported / student contradicted": 8,
+   "teacher contradicted / student supported": 13,
+   "teacher contradicted / student not_stated": 27,
+   "teacher not_stated / student contradicted": 2,
+   "teacher not_stated / student supported": 6
+  }
+ }
+}

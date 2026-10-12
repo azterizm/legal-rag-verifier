@@ -3008,5 +3008,138 @@
   "seconds": 147,
   "usd": 0.0916,
   "note": "the server could not load the merged weights (a stray index file); restarts stopped by hand; no label written"
+ },
+ {
+  "run": "stop63 pool minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 108.4,
+  "usd": 0.0675,
+  "note": "160 labels, 0 errors"
+ },
+ {
+  "run": "stop63 pool minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 2.1,
+  "usd": 0.0013,
+  "note": "160 labels, 0 errors"
+ },
+ {
+  "run": "stop63 pool minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 1.0,
+  "usd": 0.0006,
+  "note": "95 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 112.0,
+  "usd": 0.0698,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.8,
+  "usd": 0.0005,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.6,
+  "usd": 0.0004,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.9,
+  "usd": 0.0006,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.5,
+  "usd": 0.0003,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.3,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.3,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.3,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.3,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 2.5,
+  "usd": 0.0016,
+  "note": "seq-short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 117.2,
+  "usd": 0.073,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.6,
+  "usd": 0.0004,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.5,
+  "usd": 0.0003,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop63 minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 0.4,
+  "usd": 0.0002,
+  "note": "short: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop63 train gemma4-e4b smoke",
+  "gpu": "H100",
+  "seconds": 206.5,
+  "usd": 0.2606,
+  "note": ""
+ },
+ {
+  "run": "stop63 merge gemma4-e4b",
+  "gpu": "H100",
+  "seconds": 97.1,
+  "usd": 0.1225,
+  "note": ""
  }
 ]

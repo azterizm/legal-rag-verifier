@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 63 (your go): Qwen 27B 4-bit labels the 4,433 training clauses with the short reply; MiniCPM5-1B and Gemma 4 E4B are trained on them (LoRA, one epoch) and scored on both fresh tests with the grades that exist. Method fixed in GRID before any run. MiniCPM is trained by your decision, against the drop rule of stop 62 |
-| Waiting on you | Your go on training. By the fixed rule Gemma 4 E4B is trained on Qwen 27B's labels and MiniCPM5-1B is dropped. You questioned the rule for a 1B model; training MiniCPM too would be your decision made after the result, and is recorded as such. Proposed: one stop that labels the 4,433 training clauses once with the 27B and trains both (about $5 of Modal). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | ⛔ Stop 63, halted on cost. MiniCPM5-1B trained on Qwen 27B's labels scores 85.3 % and 80.1 % (untrained 48.0 % and 51.0 %; the 27B 93.8 % and 90.1 %) at 0.06 s per call. Gemma's training is measured at about 71 minutes and $6, which passes this stop's $10 limit ($4.16 spent) |
+| Waiting on you | Gemma 4 E4B: train it in full (about $6, stop raised to $12), train it on part of the data to stay under $10, or skip it (untrained it scores 86.4 % and 85.4 %). Also open: more training data for the 1B student (the teacher is our own model); five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-12 (63, MiniCPM done, Gemma waits): **A 1B judge trained on Qwen 27B's labels.** Your go on training
+  both; MiniCPM against the drop rule of stop 62, by your decision. Teacher: 4,433 clauses labelled, all valid.
+  MiniCPM5-1B, LoRA, one epoch, 30 min: agrees with its teacher on 84 % of 415 held-out clauses; 29 / 125, 85.3 %
+  and 17 / 54, 80.1 % on the two tests (+37 and +29 points on itself untrained; 8.5 and 10 under the 27B; 17 and 22
+  above V0); 0.062 s per call. Gemma's smoke run works; its full training is measured at about $6 and waits for
+  your decision. Three bugs of mine repaired. Modal $4.16. **Resume:** your decision in Status.
 
 - 2026-10-12 (62): **Two smaller judges, untrained.** Your go; decided the same day: the short reply is the judge's
   reply in the live loop. Both models load in our server. Gemma 4 E4B: 16 / 116, 86.4 % and 9 / 54, 85.4 %, 0.41 s

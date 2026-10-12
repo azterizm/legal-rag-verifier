@@ -1066,3 +1066,21 @@ hand grades.
 Gemma 4 E4B is 5 to 7 points under the 27B and well above DeBERTa. MiniCPM5-1B is below no auditor: it labels
 almost every clause not stated. Neither is near the 27B untrained. Raw: `results/fresh_arms/small.json`,
 `results/fresh2_arms/small.json`.
+
+## A 1B judge trained on the Qwen 27B's labels (stop 63, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: near the Qwen 27B's accuracy at a much lower time per call. Qwen 27B 4-bit labelled 4,433 training clauses
+with the short reply; MiniCPM5-1B was trained on 4,018 of them (LoRA rank 16, one epoch, 30 minutes on an H100).
+
+| Judge | First test | Second test | Time per call, p50 |
+|---|---|---|---|
+| Qwen 27B 4-bit (the teacher) | 93.8 % | 90.1 % | 0.54 s |
+| MiniCPM5-1B, trained | 85.3 % | 80.1 % | 0.06 s |
+| MiniCPM5-1B, untrained | 48.0 % | 51.0 % | 0.07 s |
+| Gemma 4 E4B, untrained | 86.4 % | 85.4 % | 0.41 s |
+| V0 (DeBERTa) | 68.7 % | 58.3 % | 0.09 s |
+
+Training lifts the 1B by 37 and 29 points and it agrees with its teacher on 84 % of held-out clauses. It stays 8.5
+and 10 points under the 27B, and 17 to 22 points above DeBERTa, at about a ninth of the 27B's time per call.
+Raw: `results/fresh_arms/small.json`, `results/fresh2_arms/small.json`,
+`results/distill/students/validation.json`.
