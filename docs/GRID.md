@@ -2572,3 +2572,51 @@ Gemma's image and audio towers. A judge server that does not start is now report
 restarted in a loop (one loop was stopped by hand after 2.5 minutes, $0.09).
 
 Spend so far, stop 63: Modal $4.16 ($21.45 of $55). Router: none.
+
+### Stop 63: closed (2026-10-12)
+
+Your decisions: Gemma 4 E4B is not trained (untrained it scores 86.4 % and 85.4 %; trained it would save neither
+time nor memory against the Qwen 27B). No further judge model is tried. Stop 63 ends at $4.16.
+
+Added the same day, not a fixed reading: the trained 1B and the 27B as a two-step judge, from labels held. The 1B
+decides first and the 27B is asked only when the 1B rolls back: 4 / 120, 91.0 % on the first test with the 27B
+asked on 44 % of sentences, and 8 / 52, 84.8 % on the second with 47 %.
+
+## Stop 64: the 1B judge trained on more data (method fixed 2026-10-12, before any run)
+
+Your instruction: train the 1B extensively within $10, then wrap up. The first student saw 4,018 clauses, 13 % of
+them from software sources, and is weakest on software (82.4 % and 76.9 %, against 88.0 % and 83.6 % on statutes).
+
+### More data (`scripts/pool2.py`)
+
+- A second pool, drawn with seed 20261013 by stop 45's code: up to 900 UK provisions (at most 30 per Act) and up to
+  500 documentation sections (at most 4 per page) from a page list fixed in the script before any fetch.
+- Disjoint by code from every battery, both fresh tests and the first pool: no provision and no page is shared.
+- Questions: Gemini 3.8 Flash, stop 45's prompt, three per source. Answers: Qwen 2.5 7B with the source and
+  closed-book, stop 43's prompts, as the first pool. No question or answer is written or picked by hand.
+- Teacher labels: Qwen 27B AutoRound 4-bit, the `short` prompt, as stop 63.
+- All new clauses go to training. The validation set stays the 415 clauses of stop 63, so the two students compare.
+
+### Training
+
+- MiniCPM5-1B at `87179e5c`, LoRA as stop 63 (rank 16, alpha 32, dropout 0.05, learning rate 1e-4, cosine, 3 %
+  warm-up, seed 20261009), from the base, on the first pool's training clauses and all the new ones.
+- Batches are built by length with a token budget, so the GPU is used fully; about 16 examples per update as
+  before. A short timing run sets the cost per example.
+- Epochs: two if the timing run shows two fit in $4 of training, else one. The training call stops itself at the
+  time that amount buys and keeps what it has; that would be reported.
+
+### Scoring, as stop 63, both tests with your grades
+
+- Z1, validation: clauses with the teacher's label (the first student: 348 of 415).
+- Z2, the student alone, Replace strict with figures to the judge. Fixed now: near the 27B if at most 3 points
+  under it on both tests (93.8 % and 90.1 %).
+- Z3, the two-step judge: the student first, the 27B only when the student rolls back. Fixed now: it works if it is
+  at most 3 points under the 27B on both tests with the 27B asked on under half of the sentences.
+- Z4, against the first student (sentences only one gets right, exact two-sided sign test), in total and on
+  software.
+- Z5, time per clause one at a time on the 40 timing prompts.
+- Limits: one teacher sample per clause; the student copies its teacher; software sections are cut without
+  selection, so some are thin; the first test has been used since stop 47.
+- Fail safe: every step appends or checkpoints and continues on a rerun.
+- Spend: a hard stop of $10 of Modal for this stop, in code. Flash about 1,400 calls. No Opus or Pro call.
