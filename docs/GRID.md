@@ -2214,3 +2214,17 @@ is generated, the judge checks it, and it is committed or rolled back and retrie
   of 2 questions per arm runs first.
 - Spend: Modal expected $2 to $3, stage stop $8. Opus 5.5 expected $1, ledger stop $17. Pro expected $0.50, its
   $15 stop holds ($13.44 spent).
+
+## Stop 60: DeBERTa (V0) on the second test (method fixed 2026-10-12, before any run)
+
+Your instruction: score V0 on the second test, beside the live loop. Nothing was tuned on that set.
+
+- V0 as in stop 47: the claim check, then `cross-encoder/nli-deberta-v3-base` at `6c749ce3`, the verifier's default
+  configuration, scores from the same replay (`modal_distill.py::fresh_judges --names v0`, one L4).
+- Sentences and grades: the 151 of the second fresh test, your grades.
+- Readings: U1, V0, the claim check alone and no auditor (false rollbacks, caught, accuracy; total, per domain and
+  per kind of answer). U2, beside them the untrained Qwen 27B FP8 in the stop 47 configuration and with figures to
+  the judge, and the AutoRound 4-bit model with figures to the judge, from the labels of stops 56 and 57. U3, V0
+  against each judge arm (sentences only one gets right, exact two-sided sign test).
+- Fixed now: the judge counts as better than V0 on this set if its accuracy is higher and p is under 0.05.
+- Spend: Modal expected $0.05. Router: none.

@@ -604,6 +604,64 @@ def table() -> None:
     print(json.dumps({"set": fb.SET, "sentences": len(rows), "no_valid_label": missing}))
 
 
+def v0() -> None:
+    """Stop 60: V0 (the claim check and DeBERTa) on this set, scored as in stop 47, beside the
+    Qwen 27B judge. Your grades. → results/<set>_arms/v0.json"""
+    graded = fe.grades()
+    us, built, _ = fe.recorded()
+    units = [
+        {**u, "right": graded[u["key"]] == "yes", "wrong": graded[u["key"]] == "no"} for u in us
+    ]
+    units = [u for u in units if u["right"] or u["wrong"]]
+    table = json.loads((fe.OUT / "scores/v0.json").read_text(encoding="utf-8"))
+    first = aj.replay(us, built, aj.TableScorer("v0", table))
+    arms: dict[str, dict[str, dict[str, Any]]] = {"V0 (claim check and DeBERTa)": first}
+    arms["claim check only"] = {
+        k: {"verdict": "EMIT", "reasons": []} if set(v["reasons"]) <= aj.NLI_REASONS else v
+        for k, v in first.items()
+    }
+    arms["no auditor"] = {k: {"verdict": "EMIT", "reasons": []} for k in first}
+    judges = {
+        "Qwen 27B FP8, stop 47 configuration": (QWEN, aj.STRICT),
+        "Qwen 27B FP8, figures to the judge": (QWEN, aj.STRICT_FIGURES),
+        "Qwen 27B 4-bit, figures to the judge": ("qwen27-ar4", aj.STRICT_FIGURES),
+    }
+    sources: dict[str, str] = {}
+    for title, (judge, config) in judges.items():
+        labels = read(judge, "p42")
+        if labels:
+            arms[title] = replay(us, built, Scorer(judge, "p42", labels, sources), set(), config)
+    correct = {
+        name: {u["key"]: fr._rolled(v[u["key"]]) == u["wrong"] for u in units}
+        for name, v in arms.items()
+    }
+    out: dict[str, Any] = {"set": fb.SET, "sentences": len(units), "arms": {}, "against_v0": {}}
+    for name, verdicts in arms.items():
+        score = fr.score(units, verdicts)
+        total = score["total"]
+        hits = total["right"] - total["false_rollbacks"] + total["caught"]
+        total["interval_95"] = wilson(hits, len(units))
+        out["arms"][name] = score
+    base = next(iter(arms))
+    for title in judges:
+        if title in arms:
+            test = paired(correct[title], correct[base])
+            gain = out["arms"][title]["total"]["accuracy"] > out["arms"][base]["total"]["accuracy"]
+            out["against_v0"][title] = {**test, "better_than_v0": bool(gain and test["p"] < ALPHA)}
+    meta = fe.OUT / "scores/v0.meta.json"
+    if meta.exists():
+        out["v0_run"] = json.loads(meta.read_text(encoding="utf-8"))
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "v0.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    for name, s in out["arms"].items():
+        cells = "  ".join(
+            f"{g}: {s[g]['false_rollbacks']}/{s[g]['caught']} {s[g]['accuracy']}"
+            for g in ("software", "statutes", "source answers", "closed answers", "total")
+        )
+        print(f"{name:42} {cells}  {s['total']['interval_95']}")
+    print(json.dumps({k: out[k] for k in ("against_v0", "v0_run") if k in out}, indent=1))
+
+
 def label(judge: str, kind: str = "p42") -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -620,7 +678,7 @@ def label(judge: str, kind: str = "p42") -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "command", choices=["requests", "label", "report", "quant", "confirm", "table"]
+        "command", choices=["requests", "label", "report", "quant", "confirm", "table", "v0"]
     )
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
     parser.add_argument("--kind", default="p42", choices=PROMPTS)
@@ -633,6 +691,8 @@ def main() -> None:
         confirm()
     elif args.command == "table":
         table()
+    elif args.command == "v0":
+        v0()
     elif args.command == "label":
         label(args.judge, args.kind)
     else:
