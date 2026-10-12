@@ -1,0 +1,239 @@
+{
+ "set": "fresh",
+ "sentences": 354,
+ "v0_as_scored": 0.687,
+ "arms": {
+  "Qwen 27B 4-bit": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 7,
+    "caught": 133,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.938,
+    "interval_95": [
+     0.908,
+     0.959
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 4,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.953
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 3,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.924
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 3,
+    "caught": 14,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.933
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 4,
+    "caught": 119,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.942
+   }
+  },
+  "MiniCPM5-1B, untrained": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 153,
+    "caught": 117,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.48,
+    "interval_95": [
+     0.429,
+     0.532
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 95,
+    "caught": 45,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.394
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 58,
+    "caught": 72,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.56
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 102,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.319
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 51,
+    "caught": 104,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.618
+   }
+  },
+  "Gemma 4 E4B, untrained": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 16,
+    "caught": 116,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.864,
+    "interval_95": [
+     0.825,
+     0.896
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 7,
+    "caught": 38,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.871
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 9,
+    "caught": 78,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.859
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 7,
+    "caught": 11,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.89
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 9,
+    "caught": 105,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.843
+   }
+  }
+ },
+ "against_qwen27": {
+  "MiniCPM5-1B, untrained": {
+   "only_first": 12,
+   "only_second": 174,
+   "p": 5.45e-38,
+   "points_under_qwen27": 45.8,
+   "near_qwen27": false,
+   "points_above_v0": -20.7,
+   "clearly_above_v0": false
+  },
+  "Gemma 4 E4B, untrained": {
+   "only_first": 2,
+   "only_second": 28,
+   "p": 8.68e-07,
+   "points_under_qwen27": 7.4,
+   "near_qwen27": false,
+   "points_above_v0": 17.7,
+   "clearly_above_v0": true
+  }
+ },
+ "same_label_as_qwen27": {
+  "MiniCPM5-1B, untrained": {
+   "same": 137,
+   "of": 360
+  },
+  "Gemma 4 E4B, untrained": {
+   "same": 310,
+   "of": 360
+  }
+ },
+ "replies": {
+  "Qwen 27B 4-bit": {
+   "prompts": 360,
+   "never_parsed": 0
+  },
+  "MiniCPM5-1B, untrained": {
+   "prompts": 360,
+   "never_parsed": 0
+  },
+  "Gemma 4 E4B, untrained": {
+   "prompts": 360,
+   "never_parsed": 0
+  }
+ },
+ "time": {
+  "Qwen 27B 4-bit": {
+   "calls": 40,
+   "p50_ms": 537,
+   "p95_ms": 1245,
+   "mean_tokens": 19
+  },
+  "MiniCPM5-1B, untrained": {
+   "calls": 40,
+   "p50_ms": 70,
+   "p95_ms": 82,
+   "mean_tokens": 17
+  },
+  "Gemma 4 E4B, untrained": {
+   "calls": 40,
+   "p50_ms": 411,
+   "p95_ms": 443,
+   "mean_tokens": 23
+  }
+ }
+}
