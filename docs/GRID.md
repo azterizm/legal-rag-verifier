@@ -2165,3 +2165,52 @@ the verifier is not asked to handle a source that does not answer; that is an op
   rule and is not sent to the support judge.
 - Left as a known limit: the router matches a provision that is related but does not answer the question, and the
   generator says so. Its frequency depends on the router's precision, which is measured in that repository.
+
+## Stop 59: the judge inside the loop (method fixed 2026-10-12, before any run)
+
+Your go: "go on the live loop". Every stop since 42 replayed finished answers. This one runs the engine: a sentence
+is generated, the judge checks it, and it is committed or rolled back and retried.
+
+### Setup
+
+- One model in both roles, on one L40S: Qwen 27B AutoRound 4-bit (`Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at
+  `1b9d56b4`), one SGLang 0.5.21 server. Generation goes through the engine's SGLang backend (greedy, thinking
+  off); the judge is asked through the same server with the stop 42 prompt and stop 47's sampling.
+- Verifier: `VerifierConfig(neutral_policy="strict", neutral_with_grounded_claim="rollback",
+  ungrounded_figure="judge")`, the configuration of stops 52 to 57. The judge sees the answer so far as the
+  sentences already committed.
+- Engine: `InFlightGenerator` as in 0.1.0: at most 3 retries per sentence and 8 rollbacks per answer, then the
+  fixed refusal; at most 512 new tokens. The server's cache is emptied before each answer. Answers run one at a
+  time.
+- Questions and sources: the 40 of the second fresh test. Set name `fresh2-live`.
+- Two arms, 40 answers each:
+  - `source`, the path in use: the source is in the prompt from the start (stop 43's prompts). Retries use the
+    engine's default steering.
+  - `closed`, the stress path: the answer starts from memory (stop 43's closed-book prompts). On a rollback the
+    passages the rejected sentence was checked against are written into the context as a user turn that restates
+    the question (stop 30's wording, in this model's chat format), and the sentence is regenerated
+    (`steering="inject"`).
+- Baselines, no new run: the same model's answers to the same questions without a loop, graded in stop 57 (with
+  the source 0 wrong of 49; closed-book 36 wrong of 65).
+
+### Readings
+
+- T1, mechanics: answers that finish; sentences committed at the first try, after a retry, or replaced by the
+  refusal; rollbacks per answer; why each answer stopped; tokens discarded.
+- T2, the cache: on a retry, the share of the committed prefix the server reuses.
+- T3, time: seconds per answer (p50, p95), split into generation and judge; seconds per judge call.
+- T4, outcome, graded as stop 57 (Opus 5.5 and Gemini 3.1 Pro, open sentences by you), judges not involved:
+  - `closed`: wrong sentences as a share of all in the final answers, beside the closed-book baseline (55.4 %).
+    Fixed now: the loop counts as repairing answers from memory if that share is at most half the baseline's
+    (27.7 %).
+  - `closed`: of the sentences committed after a rollback, how many are right.
+  - `source`: wrong sentences and right sentences lost, beside the baseline (0 wrong of 49). Fixed now: the loop
+    costs little on the path in use if it replaces at most 5 % of sentences by the refusal.
+- The engine's refusal sentence is counted apart and graded by the abstention rule; it is not sent to a judge.
+- Limits: 40 questions and one model. `closed` is not how the system is meant to be used; it shows whether the
+  loop repairs. In `source` the generator was wrong in none of 49 sentences, so that arm measures cost, not
+  catching. Greedy generation and one judge sample per clause.
+- Fail safe: each answer and its trace are appended as they return; a rerun asks only the answers missing. A probe
+  of 2 questions per arm runs first.
+- Spend: Modal expected $2 to $3, stage stop $8. Opus 5.5 expected $1, ledger stop $17. Pro expected $0.50, its
+  $15 stop holds ($13.44 spent).
