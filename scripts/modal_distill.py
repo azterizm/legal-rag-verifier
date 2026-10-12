@@ -301,7 +301,11 @@ class _JudgeServer:
             ]
         )  # fmt: skip
         self.url = f"http://127.0.0.1:{PORT}"
-        _wait(self.server, self.url)
+        self.error = ""
+        try:
+            _wait(self.server, self.url)
+        except RuntimeError as exc:  # raised by the first call, not here: no restart loop
+            self.error = repr(exc)
         self.startup = time.time() - self.started
 
     @modal.exit()
@@ -312,6 +316,8 @@ class _JudgeServer:
     def generate(self, chunk: list[dict[str, Any]]) -> dict[str, Any]:
         """Answers from this model with the generator's decoding (stop 43: temperature 0, at most
         512 new tokens) and this judge's template (thinking off for Qwen 27B)."""
+        if self.error:
+            raise RuntimeError(self.error)
         spec = JUDGES[self.name]
 
         def one(request: dict[str, Any]) -> dict[str, Any]:
@@ -354,6 +360,8 @@ class _JudgeServer:
     def judge(self, requests: dict[str, str], workers: int) -> dict[str, Any]:
         from auditor_judge import judge_all, server_chat  # noqa: PLC0415
 
+        if self.error:
+            raise RuntimeError(self.error)
         spec = JUDGES[self.name]
         chat = server_chat(self.url, spec["model"], spec["sampling"], spec["template"])
         t0 = time.time()
@@ -1133,11 +1141,20 @@ def train_small(
     )
     model.gradient_checkpointing_enable()
     model.enable_input_require_grads()
+    # The attention and MLP projections of the text model only: Gemma's image and audio towers
+    # use other layer types under the same names, and take no part in this task.
+    targets = [
+        name
+        for name, module in model.named_modules()
+        if type(module) is torch.nn.Linear
+        and name.rsplit(".", 1)[-1] in TRAIN_SMALL_TARGETS
+        and not any(part in name for part in ("vision", "audio"))
+    ]
     config = LoraConfig(
         r=16,
         lora_alpha=32,
         lora_dropout=0.05,
-        target_modules=TRAIN_SMALL_TARGETS,
+        target_modules=targets,
         task_type="CAUSAL_LM",
     )
     model = get_peft_model(model, config)
@@ -1155,7 +1172,7 @@ def train_small(
         gradient_accumulation_steps=16,
         learning_rate=1e-4,
         lr_scheduler_type="cosine",
-        warmup_ratio=0.03,
+        warmup_steps=0.03,  # a float below 1 is a ratio of total steps
         bf16=True,
         logging_steps=5,
         save_steps=5 if smoke else 50,
@@ -1178,6 +1195,7 @@ def train_small(
         "dropped_over_max_tokens": len(rows)
         - len([r for r in rows if len(r["input_ids"]) <= max_tokens]),
         "trainable_parameters": trainable,
+        "lora_layers": len(targets),
         "end_of_turn": end,
         "seconds": time.time() - t0,
         "loss": result.training_loss,
@@ -1211,7 +1229,8 @@ def merge_small(student: str, *, smoke: bool = False) -> str:
     merged.save_pretrained(str(target), safe_serialization=True)
     snapshot = Path(snapshot_download(spec["model"], revision=spec["revision"]))
     for f in snapshot.iterdir():
-        if f.is_file() and f.suffix != ".safetensors" and not (target / f.name).exists():
+        weights_file = f.suffix == ".safetensors" or f.name == "model.safetensors.index.json"
+        if f.is_file() and not weights_file and not (target / f.name).exists():
             shutil.copy(f, target / f.name)
     runs.commit()
     return str(target)
