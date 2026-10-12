@@ -133,16 +133,12 @@ def notes_prompt(kind: str, sentence: str, candidates: Sequence[str], prefix: st
 
 # Stop 61: the stop 42 prompt asking for no reason. Only its last sentence differs.
 _REPLY = aj.USER[aj.USER.index("Return JSON") :]
-SHORT_REPLY = (
-    'Return JSON with keys "label" (one of the three) and "passage" (the number of the passage '
-    "that decides it, or 0). Give no reason."
-)
+SHORT_REPLY = aj.SHORT_REPLY
 SHORT_SHA = hashlib.sha256((aj.SYSTEM + aj.USER.replace(_REPLY, SHORT_REPLY)).encode()).hexdigest()
 
 
 def short_prompt(sentence: str, candidates: Sequence[str], prefix: str) -> str:
-    head, _ = aj.user_prompt(sentence, candidates, prefix).rsplit("Return JSON", 1)
-    return str(head) + SHORT_REPLY
+    return str(aj.short_prompt(sentence, candidates, prefix))
 
 
 def prompt(
@@ -730,6 +726,84 @@ def short(judge: str = "qwen27-ar4") -> None:
     print(json.dumps(out, indent=1))
 
 
+SMALL = {"MiniCPM5-1B, untrained": "minicpm5-1b", "Gemma 4 E4B, untrained": "gemma4-e4b"}
+TEACHER = "qwen27-ar4"
+NEAR = 0.03  # stop 62: at most this under the Qwen 27B judge on a test
+ABOVE_V0 = 0.10  # stop 62: at least this above V0 on a test
+V0_AS_SCORED = {"fresh": 0.687, "fresh2": 0.583}  # stops 47 and 60
+
+
+def small() -> None:
+    """Stop 62: smaller judges with the short reply, beside the Qwen 27B judge and V0, on this
+    set and your grades. → results/<set>_arms/small.json"""
+    data = recorded()
+    us, built = data["units"], data["built"]
+    graded = fe.merged_grades(us)
+    units = [
+        {**u, "right": graded[u["key"]] == "yes", "wrong": graded[u["key"]] == "no"} for u in us
+    ]
+    units = [u for u in units if u["right"] or u["wrong"]]
+    asked = requests("short", data)
+    teacher = read(TEACHER, "short")
+    v0 = V0_AS_SCORED[fb.SET]
+    out: dict[str, Any] = {"set": fb.SET, "sentences": len(units), "v0_as_scored": v0}
+    out |= {"arms": {}, "against_qwen27": {}, "same_label_as_qwen27": {}, "replies": {}, "time": {}}
+    correct: dict[str, dict[str, bool]] = {}
+
+    def arm(title: str, name: str) -> bool:
+        labels = read(name, "short")
+        if not labels:
+            return False
+        out["replies"][title] = {
+            "prompts": len(asked),
+            "never_parsed": len(todo(name, "short", asked)),
+        }
+        verdicts = replay(us, built, Scorer(name, "short", labels, {}), set(), aj.STRICT_FIGURES)
+        score = fr.score(units, verdicts)
+        total = score["total"]
+        hits = total["right"] - total["false_rollbacks"] + total["caught"]
+        total["interval_95"] = wilson(hits, len(units))
+        out["arms"][title] = score
+        correct[title] = {u["key"]: fr._rolled(verdicts[u["key"]]) == u["wrong"] for u in units}
+        return True
+
+    base = "Qwen 27B 4-bit"
+    arm(base, TEACHER)
+    for title, name in SMALL.items():
+        if not arm(title, name):
+            continue
+        labels = read(name, "short")
+        both = [k for k in asked if k in labels and k in teacher]
+        out["same_label_as_qwen27"][title] = {
+            "same": sum(labels[k]["label"] == teacher[k]["label"] for k in both),
+            "of": len(both),
+        }
+        accuracy = out["arms"][title]["total"]["accuracy"]
+        gap = out["arms"][base]["total"]["accuracy"] - accuracy
+        out["against_qwen27"][title] = {
+            **paired(correct[title], correct[base]),
+            "points_under_qwen27": round(100 * gap, 1),
+            "near_qwen27": bool(gap <= NEAR),
+            "points_above_v0": round(100 * (accuracy - v0), 1),
+            "clearly_above_v0": bool(accuracy - v0 >= ABOVE_V0),
+        }
+    for title, name in {base: TEACHER, **SMALL}.items():
+        file = path(name, "seq-short")
+        if file.exists():
+            rows = [json.loads(x) for x in file.read_text("utf-8").splitlines()]
+            out["time"][title] = aj.latency([r for r in rows if r["label"] in aj.LABELS])
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "small.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    for title, s in out["arms"].items():
+        cells = "  ".join(
+            f"{g}: {s[g]['false_rollbacks']}/{s[g]['caught']} {s[g]['accuracy']}"
+            for g in ("software", "statutes", "source answers", "closed answers", "total")
+        )
+        print(f"{title:26} {cells}  {s['total']['interval_95']}")
+    keys = ("against_qwen27", "same_label_as_qwen27", "replies", "time")
+    print(json.dumps({k: out[k] for k in keys}, indent=1))
+
+
 def label(judge: str, kind: str = "p42") -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
     import teachers  # type: ignore[import-not-found]  # noqa: PLC0415
@@ -747,7 +821,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "command",
-        choices=["requests", "label", "report", "quant", "confirm", "table", "v0", "short"],
+        choices=[
+            "requests",
+            "label",
+            "report",
+            "quant",
+            "confirm",
+            "table",
+            "v0",
+            "short",
+            "small",
+        ],
     )
     parser.add_argument("judge", nargs="?", choices=[j for j, t in JUDGES.items() if t])
     parser.add_argument("--kind", default="p42", choices=PROMPTS)
@@ -764,6 +848,8 @@ def main() -> None:
         v0()
     elif args.command == "short":
         short()
+    elif args.command == "small":
+        small()
     elif args.command == "label":
         label(args.judge, args.kind)
     else:

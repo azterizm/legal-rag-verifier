@@ -83,18 +83,24 @@ class ThinkingOff(SGLangBackend):
 
 class LiveJudge:
     """The judge as the verifier's entailment scorer: one call per clause, the stop 42 prompt.
-    ``prefix`` is the answer so far. A reply that never parses counts as not stated."""
+    ``prefix`` is the answer so far. A reply that never parses counts as not stated. ``reply``:
+    ``"short"`` asks for no reason (stop 61, the default by your decision of 2026-10-12);
+    ``"reason"`` is the prompt as stop 59 ran it."""
 
-    def __init__(self, chat: Chat, model_id: str) -> None:
+    def __init__(self, chat: Chat, model_id: str, reply: str = "short") -> None:
+        if reply not in {"short", "reason"}:
+            raise ValueError(reply)
         self.chat = chat
         self.model_id = model_id
+        self.reply = reply
         self.prefix = ""
         self.calls: list[dict[str, Any]] = []
 
     def score(self, premises: Sequence[str], hypothesis: str) -> list[NLIProbs]:
         t0 = time.perf_counter()
         try:
-            reply = aj.ask(self.chat, aj.user_prompt(hypothesis, premises, self.prefix))
+            build = aj.short_prompt if self.reply == "short" else aj.user_prompt
+            reply = aj.ask(self.chat, build(hypothesis, premises, self.prefix))
         except (urllib.error.URLError, TimeoutError, KeyError) as exc:
             reply = {"label": "error", "passage": 0, "reason": repr(exc), "attempts": 0}
         label = reply["label"] if reply["label"] in aj.LABELS else "not_stated"

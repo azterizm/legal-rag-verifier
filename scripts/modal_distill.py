@@ -245,6 +245,23 @@ QUANT = {
         "1b9d56b428e9f841d7ad566f87660b5f47553c97",
     ),
 }
+# Stop 62: two smaller judges, untrained, with each card's sampling for thinking off.
+JUDGES["minicpm5-1b"] = {
+    "model": "openbmb/MiniCPM5-1B",
+    "revision": "87179e5c1f455ef22e6223592d2d61351b525bfc",
+    "gpu": "L40S",  # the same GPU as the Qwen 27B judge, so times compare
+    "args": ["--context-length", "65536"],
+    "sampling": {"temperature": 0.7, "top_p": 0.95, "max_tokens": 1024, "seed": 0},
+    "template": {"enable_thinking": False},
+}
+JUDGES["gemma4-e4b"] = {
+    "model": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "gpu": "L40S",
+    "args": ["--context-length", "65536"],
+    "sampling": {"temperature": 1.0, "top_p": 0.95, "top_k": 64, "max_tokens": 1024, "seed": 0},
+    "template": {"enable_thinking": False},
+}
 for _name, (_model, _revision) in QUANT.items():
     JUDGES[_name] = {**JUDGES["qwen27-nothink"], "model": _model, "revision": _revision}
     JUDGES[f"{_name}-l4"] = {
@@ -910,15 +927,16 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
 
 
 @app.local_entrypoint()
-def quant_probe(name: str, n: int = 2) -> None:
-    """Stop 55: does the server start with these weights and answer ``n`` prompts. One attempt:
-    a server that does not come up fails this call once, and its time goes to the ledger."""
+def quant_probe(name: str, n: int = 2, stage: str = "stop55") -> None:
+    """Does the server start with these weights and answer ``n`` prompts (stops 55 and 62). One
+    attempt: a server that does not come up fails this call once, and its time goes to the
+    ledger."""
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
     import fresh_arms as fa  # noqa: PLC0415
     import modal_ledger as ledger  # noqa: PLC0415
 
-    prompts = list(fa.requests("seq").values())[:n]
-    ledger.check_stage("stop55", ARMS_STOPS["stop55"], "L40S", 900)
+    prompts = list(fa.requests("seq-short" if stage != "stop55" else "seq").values())[:n]
+    ledger.check_stage(stage, ARMS_STOPS[stage], "L40S", 900)
     t0 = time.time()
     note = "server did not start"
     try:
@@ -929,8 +947,8 @@ def quant_probe(name: str, n: int = 2) -> None:
     except Exception as exc:  # noqa: BLE001 - a probe: report, do not retry
         print(f"{name}: {exc!r}"[:600], flush=True)
     finally:
-        ledger.record(f"stop55 probe {name}", "L40S", time.time() - t0, note)
-    print(f"{name}: {note}; Modal stage ${ledger.stage_spent('stop55'):.2f}", flush=True)
+        ledger.record(f"{stage} probe {name}", "L40S", time.time() - t0, note)
+    print(f"{name}: {note}; Modal stage ${ledger.stage_spent(stage):.2f}", flush=True)
 
 
 @app.local_entrypoint()
@@ -980,6 +998,7 @@ ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     "stop58": 3.0,
     "stop59": 8.0,
     "stop61": 3.0,
+    "stop62": 5.0,
 }
 
 

@@ -133,3 +133,14 @@ def test_closed_arm_rolls_back_a_judged_sentence_and_regenerates_after_the_sourc
     assert sentence["recovered_by"] == "inject"
     assert [c["label"] for c in out["judge_calls"]] == ["not_stated", "supported"]
     assert out["trace"]["verifier"]["nli"] == "judge@rev"
+
+
+def test_the_judge_asks_for_the_short_reply_by_default() -> None:
+    chat = Chat("supported")
+    ll.LiveJudge(chat, "judge@rev").score(["a passage"], "A sentence.")
+    assert chat.users[0].endswith("Give no reason.")
+    assert '"reason"' not in chat.users[0]
+    longer = Chat("supported")
+    ll.LiveJudge(longer, "judge@rev", reply="reason").score(["a passage"], "A sentence.")
+    assert longer.users[0].endswith('"reason" (one sentence).')
+    assert chat.users[0].rsplit("Return JSON", 1)[0] == longer.users[0].rsplit("Return JSON", 1)[0]
