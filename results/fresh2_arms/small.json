@@ -171,6 +171,62 @@
     "accuracy": 0.81
    }
   },
+  "MiniCPM5-1B, trained on more": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 15,
+    "caught": 55,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.821,
+    "interval_95": [
+     0.752,
+     0.874
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 9,
+    "caught": 19,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.795
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 6,
+    "caught": 36,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.849
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 10,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.806
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 5,
+    "caught": 55,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.835
+   }
+  },
   "Gemma 4 E4B, untrained": {
    "total": {
     "texts": 151,
@@ -247,6 +303,15 @@
    "points_above_v0": 21.8,
    "clearly_above_v0": true
   },
+  "MiniCPM5-1B, trained on more": {
+   "only_first": 2,
+   "only_second": 14,
+   "p": 0.00418,
+   "points_under_qwen27": 8.0,
+   "near_qwen27": false,
+   "points_above_v0": 23.8,
+   "clearly_above_v0": true
+  },
   "Gemma 4 E4B, untrained": {
    "only_first": 4,
    "only_second": 11,
@@ -264,6 +329,10 @@
   },
   "MiniCPM5-1B, trained": {
    "same": 115,
+   "of": 153
+  },
+  "MiniCPM5-1B, trained on more": {
+   "same": 124,
    "of": 153
   },
   "Gemma 4 E4B, untrained": {
@@ -284,6 +353,10 @@
    "prompts": 153,
    "never_parsed": 0
   },
+  "MiniCPM5-1B, trained on more": {
+   "prompts": 153,
+   "never_parsed": 0
+  },
   "Gemma 4 E4B, untrained": {
    "prompts": 153,
    "never_parsed": 0
@@ -299,6 +372,27 @@
    "share_asked": 0.47,
    "points_under_qwen27": 5.3,
    "works": false
+  },
+  "MiniCPM5-1B, trained on more": {
+   "false_rollbacks": 8,
+   "caught": 53,
+   "accuracy": 0.854,
+   "qwen27_asked_on": 70,
+   "share_asked": 0.464,
+   "points_under_qwen27": 4.7,
+   "works": false
+  }
+ },
+ "more_against_first": {
+  "total": {
+   "only_first": 4,
+   "only_second": 1,
+   "p": 0.375
+  },
+  "software": {
+   "only_first": 3,
+   "only_second": 1,
+   "p": 0.625
   }
  },
  "trained_against_untrained": {

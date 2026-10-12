@@ -14,15 +14,24 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-10 |
+| Last updated | 2026-10-12 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 64 (your instruction): the 1B judge trained on more data, within $10 of Modal. A second pool of up to 1,400 sources, labelled by Qwen 27B, then MiniCPM5-1B retrained and scored alone and as a two-step judge with the 27B. Method fixed in GRID before any run. Then the wrap-up: the live loop once more with the short reply, and the artefacts brought home |
-| Waiting on you | Nothing until stop 64 reports. Decided by you on 2026-10-12: no further judge model; Gemma 4 E4B is not trained; after stop 64 the work on Modal is wrapped up. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | None planned. Stops 64 and 65 are done and the Modal work is wrapped up. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %) |
+| Waiting on you | Your go, each separately: publishing the two 1B adapters in `artefacts/minicpm5-1b-judge/` (Apache-2.0 base; training data stays local); rewriting the opening verdict paragraph of `docs/VERDICT.md`, which still states the 2026-10-08 finding; anything to delete on Modal (nothing has been deleted). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.25 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-12 (64, wrap-up): **The 1B judge trained on more data.** Your instruction, within $10. Second pool:
+  1,400 sources, 14,134 new clauses labelled by Qwen 27B, no invalid reply. MiniCPM5-1B trained on 18,152 clauses,
+  two epochs, 30 min. Agrees with the teacher on 360 of 415 held-out clauses (first student 348). 16 / 125, 89.0 %
+  and 15 / 55, 82.1 % (first student 85.3 % and 80.1 %; the 27B 93.8 % and 90.1 %). Fixed readings: the student
+  alone is not near the 27B (4.8 and 8.0 points under, limit 3); the two-step judge passes on the first test
+  (91.0 %) and not on the second (85.4 %), so it does not pass. Better than the first student on the first test
+  (p = 0.019), not shown on the second. 0.062 s per call. One departure of mine: about 40 examples per update, not
+  16. Modal $6.03. Both adapters are on this machine in `artefacts/`. **Resume:** your decisions in Status.
 
 - 2026-10-12 (65): **The live loop with the short reply.** The wrap-up run you approved, run while stop 64's
   teacher labels. 80 answers, no error. Mechanics as stop 59. Seconds per answer, p50: 1.87 with the source in

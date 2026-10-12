@@ -1105,3 +1105,22 @@ one SGLang server, one L40S, 40 questions, two arms), with the judge's short rep
 repeat stop 59's and keep their grades; the 2 new ones were graded right by both graders. Raw:
 `results/fresh2-short-live_arms/live.json`.
 
+## The 1B judge trained on more data (stop 64, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: see how far more training data takes the 1B judge. A second pool of 1,400 sources gave 14,134 more clauses,
+labelled by Qwen 27B 4-bit. MiniCPM5-1B was trained from the base on 18,152 clauses for two epochs (30 minutes on
+an H100).
+
+| Judge | First test | Second test | Time per call, p50 |
+|---|---|---|---|
+| Qwen 27B 4-bit (the teacher) | 93.8 % | 90.1 % | 0.54 s |
+| MiniCPM5-1B, trained on 18,152 clauses | 89.0 % | 82.1 % | 0.06 s |
+| MiniCPM5-1B, trained on 4,018 clauses | 85.3 % | 80.1 % | 0.06 s |
+| 1B first, 27B only when the 1B rolls back | 91.0 % (27B on 40 %) | 85.4 % (27B on 46 %) | |
+| V0 (DeBERTa) | 68.7 % | 58.3 % | 0.09 s |
+
+4.5 times the data gave 3.7 and 2.0 points. The 1B stays 4.8 and 8.0 points under its teacher, so neither it
+alone nor the two-step judge meets the limit of 3 points on both tests. It agrees with the teacher on 86.7 % of
+held-out clauses (83.9 % before). Raw: `results/fresh_arms/small.json`, `results/fresh2_arms/small.json`,
+`results/distill/students/validation.json`.
+

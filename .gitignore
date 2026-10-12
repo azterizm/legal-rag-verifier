@@ -107,3 +107,6 @@ results/distill/pool2/
 
 # Stops 48 and 49: probe runs are not results
 results/awareness/probe/
+
+# Trained judge adapters brought home from Modal (stops 63 and 64); weights are not kept in git
+artefacts/

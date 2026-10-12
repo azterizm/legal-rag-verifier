@@ -171,6 +171,62 @@
     "accuracy": 0.853
    }
   },
+  "MiniCPM5-1B, trained on more": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 16,
+    "caught": 125,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.89,
+    "interval_95": [
+     0.853,
+     0.918
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 11,
+    "caught": 41,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.865
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 5,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.913
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 6,
+    "caught": 9,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.883
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 10,
+    "caught": 116,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.895
+   }
+  },
   "Gemma 4 E4B, untrained": {
    "total": {
     "texts": 354,
@@ -247,6 +303,15 @@
    "points_above_v0": 16.6,
    "clearly_above_v0": true
   },
+  "MiniCPM5-1B, trained on more": {
+   "only_first": 8,
+   "only_second": 25,
+   "p": 0.00455,
+   "points_under_qwen27": 4.8,
+   "near_qwen27": false,
+   "points_above_v0": 20.3,
+   "clearly_above_v0": true
+  },
   "Gemma 4 E4B, untrained": {
    "only_first": 2,
    "only_second": 28,
@@ -266,6 +331,10 @@
    "same": 280,
    "of": 360
   },
+  "MiniCPM5-1B, trained on more": {
+   "same": 304,
+   "of": 360
+  },
   "Gemma 4 E4B, untrained": {
    "same": 310,
    "of": 360
@@ -281,6 +350,10 @@
    "never_parsed": 0
   },
   "MiniCPM5-1B, trained": {
+   "prompts": 360,
+   "never_parsed": 0
+  },
+  "MiniCPM5-1B, trained on more": {
    "prompts": 360,
    "never_parsed": 0
   },
@@ -308,6 +381,12 @@
    "p95_ms": 77,
    "mean_tokens": 15
   },
+  "MiniCPM5-1B, trained on more": {
+   "calls": 40,
+   "p50_ms": 62,
+   "p95_ms": 74,
+   "mean_tokens": 15
+  },
   "Gemma 4 E4B, untrained": {
    "calls": 40,
    "p50_ms": 411,
@@ -324,6 +403,27 @@
    "share_asked": 0.435,
    "points_under_qwen27": 2.8,
    "works": true
+  },
+  "MiniCPM5-1B, trained on more": {
+   "false_rollbacks": 4,
+   "caught": 120,
+   "accuracy": 0.91,
+   "qwen27_asked_on": 141,
+   "share_asked": 0.398,
+   "points_under_qwen27": 2.8,
+   "works": true
+  }
+ },
+ "more_against_first": {
+  "total": {
+   "only_first": 20,
+   "only_second": 7,
+   "p": 0.0192
+  },
+  "software": {
+   "only_first": 12,
+   "only_second": 5,
+   "p": 0.143
   }
  },
  "trained_against_untrained": {
