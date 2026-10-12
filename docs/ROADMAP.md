@@ -17,8 +17,8 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Stop 63, halted on cost. MiniCPM5-1B trained on Qwen 27B's labels scores 85.3 % and 80.1 % (untrained 48.0 % and 51.0 %; the 27B 93.8 % and 90.1 %) at 0.06 s per call. Gemma's training is measured at about 71 minutes and $6, which passes this stop's $10 limit ($4.16 spent) |
-| Waiting on you | Gemma 4 E4B: train it in full (about $6, stop raised to $12), train it on part of the data to stay under $10, or skip it (untrained it scores 86.4 % and 85.4 %). Also open: more training data for the 1B student (the teacher is our own model); five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | Stop 64 (your instruction): the 1B judge trained on more data, within $10 of Modal. A second pool of up to 1,400 sources, labelled by Qwen 27B, then MiniCPM5-1B retrained and scored alone and as a two-step judge with the 27B. Method fixed in GRID before any run. Then the wrap-up: the live loop once more with the short reply, and the artefacts brought home |
+| Waiting on you | Nothing until stop 64 reports. Decided by you on 2026-10-12: no further judge model; Gemma 4 E4B is not trained; after stop 64 the work on Modal is wrapped up. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
