@@ -2553,5 +2553,229 @@
   "seconds": 26.3,
   "usd": 0.0164,
   "note": "seq-short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop48 weights check",
+  "gpu": "CPU",
+  "seconds": 22.8,
+  "usd": 0.0007,
+  "note": "openbmb/MiniCPM5-1B"
+ },
+ {
+  "run": "stop48 weights check",
+  "gpu": "CPU",
+  "seconds": 155.3,
+  "usd": 0.005,
+  "note": "google/gemma-4-E4B-it"
+ },
+ {
+  "run": "stop62 probe minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 119.6,
+  "usd": 0.0745,
+  "note": "2 replies"
+ },
+ {
+  "run": "stop62 probe gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 174.5,
+  "usd": 0.1087,
+  "note": "2 replies"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 107.3,
+  "usd": 0.0668,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 107.1,
+  "usd": 0.0667,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.7,
+  "usd": 0.0005,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.7,
+  "usd": 0.0004,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.6,
+  "usd": 0.0004,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.5,
+  "usd": 0.0003,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 1.0,
+  "usd": 0.0006,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.4,
+  "usd": 0.0002,
+  "note": "short: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.6,
+  "usd": 0.0004,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.4,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.4,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.4,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 0.4,
+  "usd": 0.0002,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 minicpm5-1b",
+  "gpu": "L40S",
+  "seconds": 2.8,
+  "usd": 0.0017,
+  "note": "seq-short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 192.1,
+  "usd": 0.1196,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 5.0,
+  "usd": 0.0031,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 3.6,
+  "usd": 0.0023,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 5.4,
+  "usd": 0.0034,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 3.5,
+  "usd": 0.0022,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 2.0,
+  "usd": 0.0012,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 2.0,
+  "usd": 0.0012,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 1.9,
+  "usd": 0.0012,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 1.8,
+  "usd": 0.0011,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 15.7,
+  "usd": 0.0098,
+  "note": "seq-short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 179.5,
+  "usd": 0.1118,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 3.4,
+  "usd": 0.0021,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 2.2,
+  "usd": 0.0013,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop62 gemma4-e4b",
+  "gpu": "L40S",
+  "seconds": 2.1,
+  "usd": 0.0013,
+  "note": "short: 33 labels, 0 errors"
  }
 ]

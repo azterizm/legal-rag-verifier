@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 62 (your go): Gemma 4 E4B and MiniCPM5-1B as the judge, untrained, short reply, on both fresh tests with the grades that exist. Method fixed in GRID before any run. Decided by you: the short reply is the judge's reply in the live loop |
-| Waiting on you | After stop 62: whether a smaller judge is trained on Qwen 27B's labels, and the live loop rerun with the short reply. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | Stop 62 is scored. Untrained, Gemma 4 E4B is 86.4 % and 85.4 % (the 27B: 93.8 % and 90.1 %) at 0.41 s per call; MiniCPM5-1B is 48.0 % and 51.0 % at 0.07 s, below no auditor. Neither is near the 27B. Halted for your decision. No paid run is queued |
+| Waiting on you | Your go on training. By the fixed rule Gemma 4 E4B is trained on Qwen 27B's labels and MiniCPM5-1B is dropped. You questioned the rule for a 1B model; training MiniCPM too would be your decision made after the result, and is recorded as such. Proposed: one stop that labels the 4,433 training clauses once with the 27B and trains both (about $5 of Modal). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-12 (62): **Two smaller judges, untrained.** Your go; decided the same day: the short reply is the judge's
+  reply in the live loop. Both models load in our server. Gemma 4 E4B: 16 / 116, 86.4 % and 9 / 54, 85.4 %, 0.41 s
+  per call. MiniCPM5-1B: 153 / 117, 48.0 % and 64 / 57, 51.0 %, 0.07 s; it labels 262 of 360 clauses not stated.
+  The 27B: 93.8 % and 90.1 %, 0.54 s. By the fixed rule Gemma goes to training and MiniCPM is dropped. Modal $0.58.
+  **Resume:** your decision in Status.
 
 - 2026-10-12 (61): **A judge reply without the reason.** Your go; decided the same day: Qwen 27B 4-bit stays in
   both roles, no 7B judge test. Short reply against the reply with a reason, Qwen 27B 4-bit, your grades: first

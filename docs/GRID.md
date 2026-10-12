@@ -2432,3 +2432,52 @@ Your go: Gemma 4 E4B and MiniCPM5-1B, untrained first; MiniCPM5-2B and Qwen3.8-F
 - Limits: one sample per prompt; the first test has been used since stop 47; the short reply was chosen on the
   Qwen 27B and is not tuned for these models.
 - Fail safe as stop 52. Spend: Modal expected $1.50, stage stop $5. Router: none.
+
+### Stop 62: results (2026-10-12)
+
+`uv run python scripts/fresh_arms.py small` under each set, raw in `results/fresh_arms/small.json` and
+`results/fresh2_arms/small.json`. Both models loaded in SGLang 0.5.21 at the probe. Every reply parsed. Replace
+strict with figures to the judge, the short reply, your grades.
+
+X1 (false rollbacks / caught, accuracy):
+
+| Judge | First test, 354 sentences | Second test, 151 sentences |
+|---|---|---|
+| Qwen 27B 4-bit | 7 / 133, 93.8 % | 8 / 60, 90.1 % |
+| Gemma 4 E4B, untrained | 16 / 116, 86.4 % | 9 / 54, 85.4 % |
+| MiniCPM5-1B, untrained | 153 / 117, 48.0 % | 64 / 57, 51.0 % |
+| V0, as scored | 68.7 % | 58.3 % |
+| No auditor | 58.7 % | 55.6 % |
+
+X2, against the Qwen 27B judge:
+
+| Judge | First test: only it right, only the 27B right, p | Second test | Same label as the 27B |
+|---|---|---|---|
+| Gemma 4 E4B | 2 and 28, p = 9e-07 | 4 and 11, p = 0.12 | 310 of 360 and 125 of 153 |
+| MiniCPM5-1B | 12 and 174 | 6 and 65 | 137 of 360 and 56 of 153 |
+
+X3, one at a time on the 40 timing prompts, L40S:
+
+| Judge | p50 | p95 | Tokens written |
+|---|---|---|---|
+| Qwen 27B 4-bit | 0.54 s | 1.25 s | 19 |
+| Gemma 4 E4B | 0.41 s | 0.44 s | 23 |
+| MiniCPM5-1B | 0.07 s | 0.08 s | 17 |
+
+Fixed readings:
+
+- Gemma 4 E4B: 7.4 and 4.7 points under the 27B, so not near it; 17.7 and 27.1 points above V0, so clearly above
+  DeBERTa. By the rule it is trained on Qwen 27B's labels in a later stop.
+- MiniCPM5-1B: 45.8 and 39.1 points under the 27B, and below V0 and below no auditor. By the rule it is dropped.
+
+Added after the scoring (not fixed before it):
+
+- MiniCPM5-1B labels 262 of 360 clauses not stated on the first test (the 27B: 101). It rolls back 153 of the 206
+  right sentences. Its failure is a lean to one label, with the format followed on every reply.
+- Gemma 4 E4B passes more wrong sentences than the 27B (32 against 15 on the first test) and rolls back more right
+  ones (16 against 7).
+- Gemma at full precision is only a quarter faster than the 4-bit 27B at the median, though steadier at p95.
+- Four jobs started at once hit the account's limit on creating apps; the two Gemma jobs did not start and were
+  run again a minute apart. No GPU time was lost.
+
+Spend: Modal $0.58 ($17.29 of $55). Router: none.

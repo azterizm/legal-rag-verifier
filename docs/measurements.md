@@ -1050,3 +1050,19 @@ only. Qwen 27B 4-bit, both fresh tests, hand grades.
 
 Accuracy is not lower on either test and the two are not told apart. The call takes a third of the time. Raw:
 `results/fresh_arms/short.json`, `results/fresh2_arms/short.json`.
+
+## Two smaller judges, untrained (stop 62, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: a judge near the Qwen 27B's accuracy at a lower time per call. Short reply, strict, figures to the judge,
+hand grades.
+
+| Judge | First test | Second test | Time per call, p50 | Weights |
+|---|---|---|---|---|
+| Qwen 27B 4-bit | 93.8 % | 90.1 % | 0.54 s | 18 GB |
+| Gemma 4 E4B, untrained | 86.4 % | 85.4 % | 0.41 s | 16 GB |
+| MiniCPM5-1B, untrained | 48.0 % | 51.0 % | 0.07 s | 2 GB |
+| V0 (DeBERTa) | 68.7 % | 58.3 % | 0.09 s | under 1 GB |
+
+Gemma 4 E4B is 5 to 7 points under the 27B and well above DeBERTa. MiniCPM5-1B is below no auditor: it labels
+almost every clause not stated. Neither is near the 27B untrained. Raw: `results/fresh_arms/small.json`,
+`results/fresh2_arms/small.json`.
