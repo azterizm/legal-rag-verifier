@@ -17,8 +17,8 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 59 is scored. The live loop works with Qwen 27B 4-bit as generator and judge: with the source in the prompt 0 wrong of 49 sentences and no refusal, 3.2 s per answer; starting from memory 3 of 50 graded wrong (all refusals) against 36 of 65 without a loop. Both fixed readings pass. Halted for your decision. No paid run is queued |
-| Waiting on you | What to do next. Options: (1) write up 0.1.x with the LLM judge as the recommended auditor and DeBERTa as the low-cost one; (2) a larger live run (the 80 questions of the first test) to tighten the figures; (3) the 7B as generator with the 27B judge in the loop, for the two-model cost comparison. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | Stop 61 (your go): a judge reply without the reason, Qwen 27B 4-bit, on both fresh tests with the grades that exist; time per clause measured in the same container. Method fixed in GRID before any run |
+| Waiting on you | Your go on a small student judge. Decided by you on 2026-10-12: Qwen 27B 4-bit stays generator and judge; no 7B judge test. Considered at your request: MiniCPM5-1B trained on Qwen 27B labels as the judge (my assessment follows stop 61). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
