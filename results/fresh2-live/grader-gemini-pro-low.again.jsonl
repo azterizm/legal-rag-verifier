@@ -1,0 +1,5 @@
+{"q": "Q11", "grades": {"Q11B1": "no"}, "reasons": {"Q11B1": "While the source mentions applying changes without committing and changing your work before committing, it does not state that it gives you the opportunity to review staged changes or add more files."}}
+{"q": "Q19", "grades": {"Q19A1": "yes"}, "reasons": {"Q19A1": "The source explicitly states that you must handle the case when the value is null and convert an Option<T> to a T before performing T operations on it."}}
+{"q": "Q22", "grades": {"Q22B1": "no"}, "reasons": {"Q22B1": "The source identifies the author as Julian F. Reschke, not merely Julian F."}}
+{"q": "Q25", "grades": {"Q25B1": "no"}, "reasons": {"Q25B1": "The source explicitly states in section 1218ZCE(5) that amendments or assessments may be made despite any limitation on time, so claiming this cannot be known from the text misstates the source."}}
+{"q": "Q29", "grades": {"Q29B1": "no"}, "reasons": {"Q29B1": "The sentence incorrectly claims the information cannot be stated from the provided provisions, whereas section 1(1)(b) explicitly states that the person must have attained the age of 18."}}
