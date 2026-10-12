@@ -157,6 +157,10 @@ def outcome(arm: str, records: list[dict[str, Any]]) -> dict[str, Any] | None:
         },
         "committed_after_a_rollback": len(retried),
         "of_which_right": sum(r["grade"] == "yes" for r in retried),
+        # The engine's refusal is counted apart (GRID § Stop 59): a lost point, not a wrong claim.
+        "wrong_that_are_the_engine_refusal": sum(r["grade"] == "no" for r in refusals),
+        "wrong_among_generated_sentences": wrong - sum(r["grade"] == "no" for r in refusals),
+        "generated_sentences": len(rows) - len(refusals),
         "refusal_sentences": len(refusals),
         "refusals_graded_right": sum(r["grade"] == "yes" for r in refusals),
         "share_replaced_by_the_refusal": round(len(refusals) / max(len(rows), 1), 3),

@@ -174,8 +174,15 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    generator it was wrong in none of 49 sentences written with the source and in 55 % of closed-book ones,
    against 80 % for the 7B. As judge of its own text it caught 35 of 36 wrong sentences, and a second model
    caught none it passed, so judging its own text was not a weakness here. It rolled back 18 right sentences,
-   16 of them honest refusals. The auditor has no rule for a generator that declines; that needs one before
-   the live loop.
+   16 of them honest refusals in closed-book answers. Refusal is the router's job, which runs before
+   generation, so no rule was added.
+   The loop was then run live with that model in both roles on one server (stop 59). With the source in the
+   prompt it changed almost nothing: 48 of 49 sentences were committed at the first try, none was wrong, and an
+   answer took 3.2 s at the median. When the answer started from memory, the judge rejected most first
+   sentences, the engine inserted the source and regenerated, and 31 of the 32 sentences committed that way
+   were right; 36 of 65 sentences were wrong without the loop and no wrong statement of fact remained with it.
+   On every retry the server reused the committed prefix. DeBERTa on the same untouched questions scored 58 %
+   as an auditor against 89 % for the judge (stop 60).
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

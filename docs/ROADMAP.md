@@ -17,12 +17,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | ⛔ Your 3 grades. Stop 59: the live loop ran (80 answers, no error; `source` 48 of 49 sentences committed at the first try in 3.2 s per answer; `closed` 32 of 50 committed after the source was inserted, 3 refused). The graders settled 96 of 99 sentences. Fill `correct` in `results/fresh2-live/leftover.csv` from `results/fresh2-live/leftover.md`; then `fresh_grader.py fill` and `live_report.py` score the outcome once |
-| Waiting on you | (1) The 3 sentences in `results/fresh2-live/leftover.csv`. (2) Still open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | Stop 59 is scored. The live loop works with Qwen 27B 4-bit as generator and judge: with the source in the prompt 0 wrong of 49 sentences and no refusal, 3.2 s per answer; starting from memory 3 of 50 graded wrong (all refusals) against 36 of 65 without a loop. Both fixed readings pass. Halted for your decision. No paid run is queued |
+| Waiting on you | What to do next. Options: (1) write up 0.1.x with the LLM judge as the recommended auditor and DeBERTa as the low-cost one; (2) a larger live run (the 80 questions of the first test) to tighten the figures; (3) the 7B as generator with the 27B judge in the loop, for the two-model cost comparison. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-12 (59): **The live loop, scored.** Your 3 grades committed first. `source`: 0 wrong of 49 sentences (the
+  same without a loop), no refusal, 1 sentence retried and right, 36 of 40 answers unchanged. `closed`: 3 of 50
+  graded wrong, 6.0 %, against 36 of 65 without a loop; all 3 are refusals (2 by the engine, 1 by the model); 31 of
+  32 sentences committed after a rollback are right. Both fixed readings pass. Modal $0.81, Opus 5.5 $0.32, Pro
+  $0.30. **Resume:** your decision in Status.
 
 - 2026-10-12 (59 to your sheet, 60): **The judge inside the loop; DeBERTa on the second test.** Your go on both.
   Stop 60: V0 27 / 31, 58.3 % on the second test (no auditor 55.6 %, the claim check alone 62.3 %, Qwen 27B 89.4 %;
