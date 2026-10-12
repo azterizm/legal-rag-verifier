@@ -2149,3 +2149,19 @@ Added after the scoring (not fixed before it):
   the gain is exploratory.
 
 Spend: Modal $0.63 ($14.87 of $55). Router: none.
+
+### Refusals are the router's job (decided by you, 2026-10-12)
+
+`legal-rag-router` runs before generation and refuses when no provision matches the question. In the grid run it
+refused exactly the 11 questions about provisions that do not exist and no other (`docs/VERDICT.md`, item 3). So
+the verifier is not asked to handle a source that does not answer; that is an optional improvement, not a gap.
+
+- No refusal rule goes into `src/` or the judge's prompt. The test I proposed with mismatched sources is dropped.
+- The 16 false rollbacks on refusals in stop 57 come from closed-book answers, a path the router closes. For Qwen
+  27B judging its own text the figures to read are 96.8 % without refusal sentences (2 false rollbacks, 31 of 32
+  caught) and, with the source, 1 false rollback in 49 sentences with nothing wrong to catch.
+- One thing carries over to scoring. A support judge marks a refusal wrong: this judge did in stop 58, and the
+  grid's judge marked all 11 router refusals incorrect. In any later run a refusal is scored by the abstention
+  rule and is not sent to the support judge.
+- Left as a known limit: the router matches a provision that is related but does not answer the question, and the
+  generator says so. Its frequency depends on the router's precision, which is measured in that repository.
