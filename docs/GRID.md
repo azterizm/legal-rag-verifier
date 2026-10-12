@@ -2257,3 +2257,50 @@ fixed reading.
   points there and 31 here.
 - A first attempt failed because the DeBERTa weights were not on the volume; they were downloaded and the run
   repeated. Spend: Modal $0.06.
+
+### Stop 59: the run, and readings T1 to T3 (2026-10-12)
+
+The weights were confirmed on the volume before any run. A probe of 2 questions per arm ran first, then the rest.
+80 answers, no error, every answer ended by the model. `FRESH_SET=fresh2-live uv run python
+scripts/live_report.py`, raw in `results/fresh2-live_arms/live.json`.
+
+T1, mechanics:
+
+| | `source` | `closed` |
+|---|---|---|
+| Answers | 40 | 40 |
+| Sentences in the final answers | 49 | 50 |
+| Committed at the first try | 48 | 15 |
+| Committed after a retry | 1 (ban) | 32 (source inserted) |
+| Replaced by the refusal | 0 | 3 |
+| Rollbacks | 3, all in one answer | 47 |
+| Answers with no rollback | 39 | 5 |
+| Tokens in the final answers | 1,892 | 1,518 |
+| Tokens discarded | 194 | 1,884 |
+| Source insertions, tokens inserted | 0 | 39, 10,161 |
+
+First rejections in `closed`: the judge on 29 sentences (not stated 15, contradicted 10, not entailed with a
+claim 4), the claim check on 9 (citation 5, instrument 3, figure 1). In `source` the one rejected sentence failed
+the claim check on a citation.
+
+T2, the cache. On a retry the server reused, per decode call, a number of tokens equal to 1.05 times the prompt
+at the median in `source` (lowest 0.98) and 2.56 times in `closed` (lowest 0.75; its prompt is short and the
+inserted source is reused too). The committed prefix is not computed again.
+
+T3, time:
+
+| | `source` | `closed` |
+|---|---|---|
+| Seconds per answer, p50 and p95 | 3.2 and 11.8 | 5.2 and 13.6 |
+| Generation per answer, p50 | 1.3 s | 2.1 s |
+| Judge per answer, p50 | 1.9 s | 3.2 s |
+| Judge share of the time | 58 % | 61 % |
+| Judge calls per answer | 1.2 | 2.1 |
+| Seconds per judge call, p50 and p95 | 1.7 and 2.3 | 1.7 and 2.3 |
+
+T4 waits for the grades. The sheet is sealed (99 sentences). Opus 5.5 and Gemini 3.1 Pro settled 96 of them (94
+right, 2 wrong; 94 at the first pass, 2 when asked again). **3 are left for you**: `Q11B1`, `Q22B1`, `Q25B1`, in
+`results/fresh2-live/leftover.md`, your column in `results/fresh2-live/leftover.csv`.
+
+Spend so far, stop 59: Modal $0.81 ($15.73 of $55 with stop 60). Opus 5.5 $0.32 ($15.04 of $40). Pro $0.30
+($13.74 of $15).

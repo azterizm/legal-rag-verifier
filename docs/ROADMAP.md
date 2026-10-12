@@ -17,12 +17,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 59 (your go): the judge inside the loop. Qwen 27B 4-bit as generator and judge on one server, two arms on the 40 questions of the second test (source in the prompt; start from memory with the source inserted on rollback). Method fixed in GRID before any run |
-| Waiting on you | Your go on the live loop. Decided by you on 2026-10-12: refusals are the router's job, so no refusal rule here and the mismatched-source test is dropped. Proposed next: the judge inside the loop (Qwen 27B 4-bit), rollback and retry with the source inserted, on answers that start without the source. Open: five disputed grades on the second test; V0 on the second test; the four fs-02 grades. Pro has $1.56 left under its stop |
+| Next step | ⛔ Your 3 grades. Stop 59: the live loop ran (80 answers, no error; `source` 48 of 49 sentences committed at the first try in 3.2 s per answer; `closed` 32 of 50 committed after the source was inserted, 3 refused). The graders settled 96 of 99 sentences. Fill `correct` in `results/fresh2-live/leftover.csv` from `results/fresh2-live/leftover.md`; then `fresh_grader.py fill` and `live_report.py` score the outcome once |
+| Waiting on you | (1) The 3 sentences in `results/fresh2-live/leftover.csv`. (2) Still open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-12 (59 to your sheet, 60): **The judge inside the loop; DeBERTa on the second test.** Your go on both.
+  Stop 60: V0 27 / 31, 58.3 % on the second test (no auditor 55.6 %, the claim check alone 62.3 %, Qwen 27B 89.4 %;
+  51 against 4 sentences). Stop 59: Qwen 27B 4-bit as generator and judge on one server, 80 answers, no error.
+  `source`: 48 of 49 sentences committed at the first try, 3 rollbacks in one answer, 3.2 s per answer at p50.
+  `closed`: 47 rollbacks, 32 sentences committed after the source was inserted, 3 refused, 5.2 s. The committed
+  prefix is reused on every retry. Graders settled 96 of 99 sentences. **Resume:** your 3 grades, then score once.
 
 - 2026-10-11 (58): **A refusal rule on the judge's side does not fix refusals.** Your go. Qwen 27B 4-bit with stop
   53's paragraph (a sentence with no claim, such as a refusal, is supported). Its own answers: 3 of 16 right
