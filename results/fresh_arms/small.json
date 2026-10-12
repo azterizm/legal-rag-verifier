@@ -115,6 +115,62 @@
     "accuracy": 0.618
    }
   },
+  "MiniCPM5-1B, trained": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 29,
+    "caught": 125,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.853,
+    "interval_95": [
+     0.812,
+     0.886
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 16,
+    "caught": 39,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.824
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 13,
+    "caught": 86,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.88
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 12,
+    "caught": 10,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.853
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 17,
+    "caught": 115,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.853
+   }
+  },
   "Gemma 4 E4B, untrained": {
    "total": {
     "texts": 354,
@@ -182,6 +238,15 @@
    "points_above_v0": -20.7,
    "clearly_above_v0": false
   },
+  "MiniCPM5-1B, trained": {
+   "only_first": 8,
+   "only_second": 38,
+   "p": 9.25e-06,
+   "points_under_qwen27": 8.5,
+   "near_qwen27": false,
+   "points_above_v0": 16.6,
+   "clearly_above_v0": true
+  },
   "Gemma 4 E4B, untrained": {
    "only_first": 2,
    "only_second": 28,
@@ -197,6 +262,10 @@
    "same": 137,
    "of": 360
   },
+  "MiniCPM5-1B, trained": {
+   "same": 280,
+   "of": 360
+  },
   "Gemma 4 E4B, untrained": {
    "same": 310,
    "of": 360
@@ -208,6 +277,10 @@
    "never_parsed": 0
   },
   "MiniCPM5-1B, untrained": {
+   "prompts": 360,
+   "never_parsed": 0
+  },
+  "MiniCPM5-1B, trained": {
    "prompts": 360,
    "never_parsed": 0
   },
@@ -229,6 +302,12 @@
    "p95_ms": 82,
    "mean_tokens": 17
   },
+  "MiniCPM5-1B, trained": {
+   "calls": 40,
+   "p50_ms": 62,
+   "p95_ms": 77,
+   "mean_tokens": 15
+  },
   "Gemma 4 E4B, untrained": {
    "calls": 40,
    "p50_ms": 411,
@@ -236,5 +315,12 @@
    "mean_tokens": 23
   }
  },
- "trained_against_untrained": {}
+ "trained_against_untrained": {
+  "MiniCPM5-1B, trained": {
+   "only_first": 151,
+   "only_second": 19,
+   "p": 1.05e-26,
+   "change_in_points": 37.3
+  }
+ }
 }

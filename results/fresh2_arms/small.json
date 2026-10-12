@@ -115,6 +115,62 @@
     "accuracy": 0.747
    }
   },
+  "MiniCPM5-1B, trained": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 17,
+    "caught": 54,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.801,
+    "interval_95": [
+     0.731,
+     0.857
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 10,
+    "caught": 18,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.769
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 7,
+    "caught": 36,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.836
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 11,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.792
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 6,
+    "caught": 54,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.81
+   }
+  },
   "Gemma 4 E4B, untrained": {
    "total": {
     "texts": 151,
@@ -182,6 +238,15 @@
    "points_above_v0": -7.3,
    "clearly_above_v0": false
   },
+  "MiniCPM5-1B, trained": {
+   "only_first": 2,
+   "only_second": 17,
+   "p": 0.000729,
+   "points_under_qwen27": 10.0,
+   "near_qwen27": false,
+   "points_above_v0": 21.8,
+   "clearly_above_v0": true
+  },
   "Gemma 4 E4B, untrained": {
    "only_first": 4,
    "only_second": 11,
@@ -195,6 +260,10 @@
  "same_label_as_qwen27": {
   "MiniCPM5-1B, untrained": {
    "same": 56,
+   "of": 153
+  },
+  "MiniCPM5-1B, trained": {
+   "same": 115,
    "of": 153
   },
   "Gemma 4 E4B, untrained": {
@@ -211,10 +280,22 @@
    "prompts": 153,
    "never_parsed": 0
   },
+  "MiniCPM5-1B, trained": {
+   "prompts": 153,
+   "never_parsed": 0
+  },
   "Gemma 4 E4B, untrained": {
    "prompts": 153,
    "never_parsed": 0
   }
  },
- "time": {}
+ "time": {},
+ "trained_against_untrained": {
+  "MiniCPM5-1B, trained": {
+   "only_first": 57,
+   "only_second": 13,
+   "p": 1.03e-07,
+   "change_in_points": 29.1
+  }
+ }
 }
