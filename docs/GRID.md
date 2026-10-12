@@ -2679,3 +2679,61 @@ Limits as fixed. The answers repeat stop 59's, so T4 confirms it and adds no new
 figures are the new evidence: 40 questions, one L40S, answers one at a time.
 
 Spend, stop 65: Modal $0.41, Opus 5.5 $0.01, Pro $0.01. Raw: `results/fresh2-short-live_arms/live.json`.
+
+### Stop 64: results (2026-10-12)
+
+Written after stop 65's results because its teacher run finished later. Scored once.
+
+Data and training, as run:
+
+- Second pool: 1,400 sources (900 provisions from 62 Acts; 500 sections from 161 of the 164 listed pages). 4,200
+  questions, 8,400 answers, 16,029 sentences. 14,169 clauses reach the check, 14,134 of them new.
+- Teacher: all 14,134 labelled, no invalid reply. Training set: 18,152 clauses from 1,826 sources (9,339
+  supported, 6,771 not stated, 2,042 contradicted). The first student had 4,018.
+- Training: two epochs, 30 minutes on an H100, 906 updates, final loss 0.114. No example dropped. The budget
+  stop was not reached.
+
+| Reading | Trained on more | First student (stop 63) | Qwen 27B (teacher) |
+|---|---|---|---|
+| Z1, validation clauses with the teacher's label | 360 of 415, 86.7 % | 348, 83.9 % | |
+| Z2, first test: false rollbacks / caught / accuracy | 16 / 125 / 89.0 % | 29 / 125 / 85.3 % | 7 / 133 / 93.8 % |
+| Z2, second test | 15 / 55 / 82.1 % | 17 / 54 / 80.1 % | 8 / 60 / 90.1 % |
+| Software, first and second test | 86.5 % and 79.5 % | 82.4 % and 76.9 % | 95.3 % and 89.7 % |
+| Statutes, first and second test | 91.3 % and 84.9 % | 88.0 % and 83.6 % | 92.4 % and 90.4 % |
+| Z3, two-step, first test: accuracy, 27B asked on | 91.0 %, 39.8 % | 91.0 %, 43.5 % | |
+| Z3, two-step, second test | 85.4 %, 46.4 % | 84.8 %, 47.0 % | |
+| Z5, seconds per call, p50 | 0.062 | 0.062 | 0.54 |
+
+- Z1: 12 more clauses with the teacher's label. It now gives contradicted 32 times (teacher 49, first student 19).
+- Z2, fixed reading: 4.8 and 8.0 points under the 27B (limit 3 on both). **The student alone is not near the
+  27B.** It is 20 and 24 points above DeBERTa.
+- Z3, fixed reading: 2.8 points under on the first test and 4.7 on the second, the 27B asked on under half both
+  times. The limit is 3 on both tests. **The two-step judge does not pass.** It passes on the first test only.
+- Z4, against the first student, sentences only one gets right: first test 20 against 7 (p = 0.019), on software
+  12 against 5 (p = 0.14); second test 4 against 1 (p = 0.38), on software 3 against 1 (p = 0.63). The gain is
+  clear on the first test and not shown on the second.
+- Z5: time per call unchanged.
+
+Reading: 4.5 times the data and a second epoch gave 3.7 and 2.0 points. The gap to the teacher is still 5 to 8
+points. More data of this kind is not the way to close it.
+
+Departures and my mistakes:
+
+- Examples per update: the method says about 16. The run used four batches of up to 16 per update, about 40
+  examples. I set this at the timing run and did not bring it back to 16. Not rerun.
+- Two timing runs at a 24,000 token budget ran out of memory. The third, at 12,000 tokens without gradient
+  checkpointing, ran at 19.5 examples a second and was used.
+- The loss is the same as stop 63 (the reply tokens). The output layer is applied only at those positions, so a
+  batch fits in memory.
+- Questions were asked 24 at a time, not 6. No prompt changed.
+- I committed the second pool's files, which hold source text, in three local commits. They were replaced by one
+  commit without the files before anything left this machine, and the folder is git-ignored. Nothing was pushed.
+
+Spend, stop 64: Modal $6.03 of the $10 stop (answers $0.91, teacher $2.08, training $2.72 with the three timing
+runs, merge $0.11, scoring $0.22). Flash 1,400 calls at no charge on the router. No Opus or Pro call. Totals:
+Modal $27.90 of $55, Opus 5.5 $15.05 of $40, Pro $13.75 of $15.
+
+Kept: the adapter of each student is on this machine under `artefacts/minicpm5-1b-judge/` (git-ignored; 45 MB
+each; sha256 `c98d837e…2988` for the first, `50755fb5…1f5e` for the second). The base model is Apache-2.0.
+Publishing them waits for your go.
+

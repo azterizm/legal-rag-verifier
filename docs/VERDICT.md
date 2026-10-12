@@ -1,6 +1,6 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-08. Item 1 of the last section updated 2026-10-10.
+legal-rag-verifier 0.1.0, 2026-10-08. Item 1 of the last section updated 2026-10-12.
 
 ## Question
 
@@ -183,6 +183,13 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    were right; 36 of 65 sentences were wrong without the loop and no wrong statement of fact remained with it.
    On every retry the server reused the committed prefix. DeBERTa on the same untouched questions scored 58 %
    as an auditor against 89 % for the judge (stop 60).
+   The judge's time was then cut (stops 61 and 65). A reply without the reason scored no lower (93.8 % and
+   90.1 %, against 92.4 % and 89.4 %) at a third of the time per call. In the live loop it took an answer from 3.2 s to 1.9 s at the
+   median with the source in the prompt, with the same sentences committed and the same grades.
+   A smaller judge was tested last (stops 62 to 64). A 1B model trained on the 27B's labels reached 85 % and
+   80 % on the two tests from 4,018 clauses, and 89 % and 82 % from 18,152, at 0.06 s per call. It stays 5 to
+   8 points under the 27B. Asking the 27B only when the 1B rolls back scored 91 % and 85 %, within 3 points of
+   the 27B on one test and not on the other. The 27B remains the judge.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
