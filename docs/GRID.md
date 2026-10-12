@@ -2304,3 +2304,35 @@ right, 2 wrong; 94 at the first pass, 2 when asked again). **3 are left for you*
 
 Spend so far, stop 59: Modal $0.81 ($15.73 of $55 with stop 60). Opus 5.5 $0.32 ($15.04 of $40). Pro $0.30
 ($13.74 of $15).
+
+### Stop 59: outcome (T4) (2026-10-12)
+
+Your 3 grades were committed first (`5e59832`: 2 right, 1 wrong). Then `fresh_grader.py fill` and
+`live_report.py`, once. Graded by Opus 5.5 and Gemini 3.1 Pro (96 sentences), open sentences by you (3). Every
+graded sentence was matched to its point in the trace.
+
+| | `source` | `closed` |
+|---|---|---|
+| Sentences in the final answers | 49 | 50 |
+| Graded wrong | 0 | 3, 6.0 % (95 % interval 2.1 to 16.2) |
+| The same model without a loop (stop 57) | 0 of 49 | 36 of 65, 55.4 % |
+| Committed after a rollback, and right | 1 of 1 | 31 of 32 |
+| Replaced by the refusal | 0 | 3, 6.0 % |
+
+- Fixed reading, `closed`: 6.0 % is under half the baseline (27.7 %). **The loop repairs answers that start from
+  memory.**
+- Fixed reading, `source`: no sentence was replaced by the refusal (limit 5 %). **The loop costs little on the
+  path in use.**
+- The 3 sentences graded wrong in `closed` are all refusals, not claims. Two are the engine's own refusal after
+  4 failed tries (`Q03B1`, `Q29B1`); the graders marked them wrong because the source does answer. One is the
+  model declining after the source was inserted, which the judge passed and you graded wrong (`Q25B1`). No wrong
+  statement of fact reached a final answer in either arm.
+- Counted apart as the method fixes: 1 wrong among 47 generated sentences in `closed`, and 3 points lost to the
+  refusal, 1 of them graded right.
+- In `source` 36 of the 40 answers are word for word the model's answers without a loop.
+
+Limits as fixed: 40 questions, one model, greedy generation. `source` held nothing wrong to catch, so it shows
+cost and not catching. `closed` is a stress path. The graders are two models and you on 3 sentences.
+
+Spend, stop 59: Modal $0.81, Opus 5.5 $0.32, Pro $0.30. Totals: Modal $15.73 of $55, Opus 5.5 $15.04 of $40, Pro
+$13.74 of $15.

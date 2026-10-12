@@ -1012,3 +1012,26 @@ Aim: the first auditor against the LLM judge on a set nothing was tuned on. 151 
 The judge is right on 51 sentences where V0 is wrong, and V0 on 4 where the judge is wrong (p = 2e-11). V0 is
 barely above no auditor here and below the claim check alone: DeBERTa rolls back 23 of 68 right sentences in
 answers written with the source and catches none of the 4 wrong ones. Raw: `results/fresh2_arms/v0.json`.
+
+## The judge inside the loop (stop 59, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: run the architecture, not replay it. Qwen 27B AutoRound 4-bit is generator and judge on one SGLang server
+(one L40S). The engine generates a sentence, the judge checks it, and it is committed or rolled back and retried.
+40 questions, two arms. Graded by Opus 5.5 and Gemini 3.1 Pro, 3 open sentences by hand.
+
+| | Source in the prompt | From memory, source inserted on rollback |
+|---|---|---|
+| Sentences | 49 | 50 |
+| Committed at the first try | 48 | 15 |
+| Committed after a retry | 1 | 32 |
+| Replaced by the refusal | 0 | 3 |
+| Graded wrong | 0 | 3, all refusals |
+| Same model without a loop | 0 of 49 wrong | 36 of 65 wrong |
+| Seconds per answer, p50 and p95 | 3.2 and 11.8 | 5.2 and 13.6 |
+| Seconds per judge call, p50 | 1.7 | 1.7 |
+
+80 answers, no error. On a retry the server reuses the committed prefix (at least 98 % of the prompt per decode
+call with the source in the prompt). The judge takes about 60 % of the time. With the source in the prompt the
+loop changes almost nothing: 39 of 40 answers have no rollback. Starting from memory it cuts 47 drafts, inserts
+the source 39 times, and 31 of the 32 sentences it then commits are right; no wrong statement of fact reaches a
+final answer. Raw: `results/fresh2-live_arms/live.json`.
