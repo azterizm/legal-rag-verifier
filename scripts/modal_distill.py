@@ -37,6 +37,7 @@ judge_image = (
 K2 = "IFM/K2-Horizon-7B"
 K2_REVISION = "3b6ae394c1b863c27a306d168b25555837955192"
 weights = modal.Volume.from_name("legal-rag-verifier-hf", create_if_missing=True)
+runs = modal.Volume.from_name("legal-rag-verifier-runs", create_if_missing=True)
 app = modal.App("legal-rag-verifier-distill")
 
 
@@ -262,6 +263,15 @@ JUDGES["gemma4-e4b"] = {
     "sampling": {"temperature": 1.0, "top_p": 0.95, "top_k": 64, "max_tokens": 1024, "seed": 0},
     "template": {"enable_thinking": False},
 }
+# Stop 63: the same two models after training, merged on the runs volume, decoding greedily.
+SMALL_BASES = ("minicpm5-1b", "gemma4-e4b")
+for _base in SMALL_BASES:
+    JUDGES[f"{_base}-student"] = {
+        **JUDGES[_base],
+        "model": f"/runs/{_base}/run/merged",
+        "revision": None,
+        "sampling": {"temperature": 0, "max_tokens": 1024, "seed": 0},
+    }
 for _name, (_model, _revision) in QUANT.items():
     JUDGES[_name] = {**JUDGES["qwen27-nothink"], "model": _model, "revision": _revision}
     JUDGES[f"{_name}-l4"] = {
@@ -281,10 +291,12 @@ class _JudgeServer:
     def start(self) -> None:
         spec = JUDGES[self.name]
         self.started = time.time()
+        # A trained student is served from its merged weights on the runs volume: no revision.
+        revision = ["--revision", spec["revision"]] if spec["revision"] else []
         self.server = subprocess.Popen(  # noqa: S603
             [
                 sys.executable, "-m", "sglang.launch_server",
-                "--model-path", spec["model"], "--revision", spec["revision"],
+                "--model-path", spec["model"], *revision,
                 "--port", str(PORT), "--mem-fraction-static", "0.85", *spec["args"],
             ]
         )  # fmt: skip
@@ -351,7 +363,7 @@ class _JudgeServer:
 
 _JUDGE_OPTIONS: dict[str, Any] = {
     "image": judge_image,
-    "volumes": {"/hf": weights},
+    "volumes": {"/hf": weights, "/runs": runs},
     "timeout": 4 * 3600,
     "max_containers": 1,
     "scaledown_window": 60,
@@ -524,7 +536,6 @@ def pool_answers() -> None:
 
 # ------------------------------------------------------------------ stop 46: the student
 
-runs = modal.Volume.from_name("legal-rag-verifier-runs", create_if_missing=True)
 train_image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
@@ -999,7 +1010,242 @@ ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     "stop59": 8.0,
     "stop61": 3.0,
     "stop62": 5.0,
+    "stop63": 10.0,
 }
+
+
+POOL_CHUNK = 160  # prompts per call, 16 at a time inside the container
+TRAIN_SMALL_TARGETS = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+small_train_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install("torch==2.14.1", "transformers==5.18.0", "peft==0.21.0", "accelerate==1.15.0")
+    .env({"HF_HOME": "/hf"})
+)
+
+
+@app.local_entrypoint()
+def pool_labels(
+    name: str = "qwen27-ar4", split: str = "", limit: int = 0, stage: str = "stop63"
+) -> None:
+    """Stop 63: one model's labels on the training pool's short prompts (the teacher on all of
+    it, a student on ``--split validation``). Chunks run one after another; each is appended as
+    it returns and a rerun asks only what is missing."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import modal_ledger as ledger  # noqa: PLC0415
+    import students as st  # noqa: PLC0415
+
+    items = list(st.todo(name, split).items())[: limit or None]
+    print(f"{name}: {len(items)} pool prompts to label", flush=True)
+    if not items:
+        return
+    gpu = JUDGES[name]["gpu"]
+    server = JUDGE_CLASSES[gpu](name=name)
+    path = st.label_path(name)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    startup_recorded, failed = False, 0
+    for at in range(0, len(items), POOL_CHUNK):
+        chunk = dict(items[at : at + POOL_CHUNK])
+        ledger.check_stage(stage, ARMS_STOPS[stage], gpu, ARMS_ESTIMATE)
+        t0 = time.time()
+        seconds, note = 0.0, "failed"
+        try:
+            out = server.judge.remote(chunk, WORKERS)
+            with path.open("a", encoding="utf-8") as f:
+                for sha, row in out["labels"].items():
+                    f.write(json.dumps({"sha": sha, **row}, ensure_ascii=False) + "\n")
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            bad = sum(row["label"] == "error" for row in out["labels"].values())
+            note = f"{len(out['labels'])} labels, {bad} errors"
+            failed = 0
+        except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+            failed += 1
+            seconds = time.time() - t0
+            print(f"{name}: chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+        finally:
+            ledger.record(f"{stage} pool {name}", gpu, seconds, note)
+        print(f"{name}: {min(at + POOL_CHUNK, len(items))}/{len(items)} ({note})", flush=True)
+        if failed >= 2:  # noqa: PLR2004
+            raise RuntimeError(f"{name}: two chunks failed in a row; stopped")
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
+
+
+@app.function(
+    image=small_train_image, gpu="H100", timeout=6 * 3600, volumes={"/hf": weights, "/runs": runs}
+)
+def train_small(
+    student: str, epochs: int = 1, max_tokens: int = 8192, *, smoke: bool = False
+) -> dict:
+    """Stop 63: LoRA on the teacher's short replies. Each example is the prompt as the model
+    sees it with thinking off, then the reply and the end-of-turn text; the loss is on the reply
+    only. Checkpoints are committed to the runs volume, so a lost container resumes."""
+    import torch  # noqa: PLC0415
+    from peft import LoraConfig, get_peft_model  # noqa: PLC0415
+    from transformers import (  # noqa: PLC0415
+        AutoModelForCausalLM,
+        AutoTokenizer,
+        Trainer,
+        TrainerCallback,
+        TrainingArguments,
+    )
+
+    spec = JUDGES[student]
+    out = Path("/runs") / student / ("smoke" if smoke else "run")
+    tokenizer = AutoTokenizer.from_pretrained(spec["model"], revision=spec["revision"])
+    marker = "\x00REPLY\x00"
+    probe = [
+        {"role": "system", "content": "s"},
+        {"role": "user", "content": "u"},
+        {"role": "assistant", "content": marker},
+    ]
+    full = tokenizer.apply_chat_template(probe, tokenize=False, enable_thinking=False)
+    end = full[full.index(marker) + len(marker) :].strip() or tokenizer.eos_token
+
+    def encode(messages: list[dict[str, str]]) -> dict[str, list[int]]:
+        system, user, reply = messages
+        prompt = tokenizer.apply_chat_template(
+            [system, user], add_generation_prompt=True, return_dict=True, enable_thinking=False
+        )["input_ids"]
+        target = tokenizer(reply["content"] + end, add_special_tokens=False)["input_ids"]
+        ids = [*prompt, *target]
+        return {"input_ids": ids, "labels": [-100] * len(prompt) + list(target)}
+
+    lines = Path("/runs/data-small/train.jsonl").read_text(encoding="utf-8").splitlines()
+    rows = [encode(json.loads(x)["messages"]) for x in lines]
+    kept = [r for r in rows if len(r["input_ids"]) <= max_tokens]
+    if smoke:
+        kept = kept[:64]
+
+    def collate(batch: list[dict[str, list[int]]]) -> dict[str, Any]:
+        width = max(len(b["input_ids"]) for b in batch)
+        pad = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else 0
+        ids = [b["input_ids"] + [pad] * (width - len(b["input_ids"])) for b in batch]
+        labels = [b["labels"] + [-100] * (width - len(b["labels"])) for b in batch]
+        mask = [[1] * len(b["input_ids"]) + [0] * (width - len(b["input_ids"])) for b in batch]
+        return {
+            "input_ids": torch.tensor(ids),
+            "labels": torch.tensor(labels),
+            "attention_mask": torch.tensor(mask),
+        }
+
+    model = AutoModelForCausalLM.from_pretrained(
+        spec["model"], revision=spec["revision"], dtype=torch.bfloat16, device_map={"": 0}
+    )
+    model.gradient_checkpointing_enable()
+    model.enable_input_require_grads()
+    config = LoraConfig(
+        r=16,
+        lora_alpha=32,
+        lora_dropout=0.05,
+        target_modules=TRAIN_SMALL_TARGETS,
+        task_type="CAUSAL_LM",
+    )
+    model = get_peft_model(model, config)
+    trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+    class Commit(TrainerCallback):  # type: ignore[misc]
+        def on_save(self, *args: Any, **kwargs: Any) -> None:
+            runs.commit()
+
+    args = TrainingArguments(
+        output_dir=str(out / "checkpoints"),
+        num_train_epochs=epochs,
+        max_steps=10 if smoke else -1,
+        per_device_train_batch_size=1,
+        gradient_accumulation_steps=16,
+        learning_rate=1e-4,
+        lr_scheduler_type="cosine",
+        warmup_ratio=0.03,
+        bf16=True,
+        logging_steps=5,
+        save_steps=5 if smoke else 50,
+        save_total_limit=2,
+        report_to=[],
+        seed=TRAIN_SEED,
+        remove_unused_columns=False,
+    )
+    trainer = Trainer(
+        model=model, args=args, train_dataset=kept, data_collator=collate, callbacks=[Commit()]
+    )
+    t0 = time.time()
+    resume = any((out / "checkpoints").glob("checkpoint-*"))
+    result = trainer.train(resume_from_checkpoint=True if resume else None)
+    model.save_pretrained(str(out / "adapter"))
+    runs.commit()
+    return {
+        "student": student,
+        "examples": len(kept),
+        "dropped_over_max_tokens": len(rows)
+        - len([r for r in rows if len(r["input_ids"]) <= max_tokens]),
+        "trainable_parameters": trainable,
+        "end_of_turn": end,
+        "seconds": time.time() - t0,
+        "loss": result.training_loss,
+        "log": trainer.state.log_history[-12:],
+        "resumed": resume,
+    }
+
+
+@app.function(
+    image=small_train_image, gpu="H100", timeout=3600, volumes={"/hf": weights, "/runs": runs}
+)
+def merge_small(student: str, *, smoke: bool = False) -> str:
+    """The adapter merged into the base in bf16, with every other file of the base beside it
+    (tokenizer, chat template, processor settings), so the server loads it like the base."""
+    import shutil  # noqa: PLC0415
+
+    import torch  # noqa: PLC0415
+    from huggingface_hub import snapshot_download  # noqa: PLC0415
+    from peft import PeftModel  # noqa: PLC0415
+    from transformers import AutoModelForCausalLM  # noqa: PLC0415
+
+    spec = JUDGES[student]
+    run = Path("/runs") / student / ("smoke" if smoke else "run")
+    base = AutoModelForCausalLM.from_pretrained(
+        spec["model"], revision=spec["revision"], dtype=torch.bfloat16
+    )
+    merged = PeftModel.from_pretrained(base, str(run / "adapter")).merge_and_unload()
+    target = run / "merged"
+    if target.exists():
+        shutil.rmtree(target)
+    merged.save_pretrained(str(target), safe_serialization=True)
+    snapshot = Path(snapshot_download(spec["model"], revision=spec["revision"]))
+    for f in snapshot.iterdir():
+        if f.is_file() and f.suffix != ".safetensors" and not (target / f.name).exists():
+            shutil.copy(f, target / f.name)
+    runs.commit()
+    return str(target)
+
+
+@app.local_entrypoint()
+def train_small_student(student: str, smoke: bool = False, stage: str = "stop63") -> None:  # noqa: FBT001, FBT002
+    """Stop 63: upload the examples, train (resumes from the last checkpoint), merge. Ledgered."""
+    sys.path[:0] = [str(ROOT / "scripts")]
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    if student not in SMALL_BASES:
+        raise SystemExit(f"student is one of {SMALL_BASES}")
+    data = ROOT / "results/distill/students"
+    with runs.batch_upload(force=True) as batch:
+        for split in ("train", "validation"):
+            batch.put_file(str(data / f"{split}.jsonl"), f"/data-small/{split}.jsonl")
+    ledger.check_stage(stage, ARMS_STOPS[stage], "H100", 1200 if smoke else 3600)
+    t0 = time.time()
+    try:
+        out = train_small.remote(student, smoke=smoke)
+    finally:
+        ledger.record(
+            f"{stage} train {student}{' smoke' if smoke else ''}", "H100", time.time() - t0
+        )
+    print(json.dumps({k: v for k, v in out.items() if k != "log"}, indent=1))
+    for row in out["log"][-4:]:
+        print(row)
+    t0 = time.time()
+    try:
+        print(merge_small.remote(student, smoke=smoke))
+    finally:
+        ledger.record(f"{stage} merge {student}", "H100", time.time() - t0)
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
 
 
 live_image = judge_image.add_local_file(ROOT / "scripts/live_loop.py", "/app/scripts/live_loop.py")
