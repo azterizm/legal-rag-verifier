@@ -2252,5 +2252,12 @@
   "seconds": 10.6,
   "usd": 0.0066,
   "note": "refusal: 34 labels, 0 errors"
+ },
+ {
+  "run": "stop48 weights check",
+  "gpu": "CPU",
+  "seconds": 132.7,
+  "usd": 0.0042,
+  "note": "Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ"
  }
 ]

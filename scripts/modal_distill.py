@@ -876,9 +876,12 @@ def fresh_judges(names: str = "v0,qwen27-low,qwen27-nothink,k2-low") -> None:
             ledger.check("L4", 1800)
             t0 = time.time()
             out = v0_table.remote(aj.pairs(rec))
-            ledger.record("stop47 fresh v0", "L4", time.time() - t0)
+            ledger.record(f"{fe.fb.SET} v0", "L4", time.time() - t0)
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(out["table"], sort_keys=True) + "\n", encoding="utf-8")
+            meta = {"model_id": out["model_id"], "pairs": len(out["table"])}
+            meta["seconds"] = round(out["seconds"], 2)
+            path.with_name("v0.meta.json").write_text(json.dumps(meta) + "\n", encoding="utf-8")
             print(f"v0: {len(out['table'])} pairs, {out['model_id']}", flush=True)
             continue
         have = {k for k, v in fe.read(name).items() if v["label"] != "error"}
