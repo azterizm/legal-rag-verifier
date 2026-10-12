@@ -2638,3 +2638,44 @@ been measured on finished answers only.
   confirms it.
 - Spend: Modal expected $1, stage stop $3. Opus 5.5 and Pro only for new sentences (Pro has $1.26 left under its
   stop; if that is not enough, the open sentences go to you).
+
+### Stop 65: results (2026-10-12)
+
+One run, `fresh2-short-live`: 80 answers, no error, every answer ended by the model. Method as fixed; no
+departure.
+
+| | `source`, short reply | `source`, stop 59 | `closed`, short reply | `closed`, stop 59 |
+|---|---|---|---|---|
+| Sentences in the final answers | 49 | 49 | 50 | 50 |
+| Committed at the first try | 48 | 48 | 15 | 15 |
+| Committed after a retry | 1 | 1 | 32 | 32 |
+| Replaced by the refusal | 0 | 0 | 3 | 3 |
+| Rollbacks | 3 | 3 | 47 | 47 |
+| Source insertions | 0 | 0 | 38 | 39 |
+| Prefix reused on a retry, p50 (share of the prompt) | 1.05 | 1.05 | 2.56 | 2.56 |
+| Seconds per answer, p50 | 1.87 | 3.18 | 3.05 | 5.21 |
+| Seconds per answer, p95 | 6.89 | 11.84 | 7.21 | 13.61 |
+| Judge seconds per answer, p50 | 0.60 | 1.85 | 1.12 | 3.21 |
+| Seconds per judge call, p50 | 0.56 | 1.73 | 0.56 | 1.65 |
+| Judge's share of the time | 35 % | 58 % | 38 % | 61 % |
+| Graded wrong | 0 | 0 | 3, 6.0 % | 3, 6.0 % |
+
+- T1, mechanics: the same as stop 59 in `source`. In `closed` one judge label differs (85 calls: 23 not stated
+  and 15 contradicted, against 24 and 14), one insertion fewer, and one sentence is recovered by the ban instead
+  of the insertion.
+- T2, cache: unchanged.
+- T3, fixed reading: the median time per answer in `source` is 1.87 s, 59 % of stop 59's 3.18 s (limit 80 %).
+  **The short reply saves time in the loop.** `closed` is at 59 % too. A judge call takes 0.56 s at the median.
+  Generation is now the larger part of the time.
+- T4, grades: 97 of the 99 sentences are word for word a sentence of stop 59 and keep its grade. `source`: all
+  40 answers are the same as in stop 59. `closed`: 38 of 40; the 2 new sentences (`Q27A1`, `Q30A1`, both
+  committed after a rollback) were graded right by Opus 5.5 and Gemini 3.1 Pro at the first pass. Nothing was
+  left for you. Each grader was shown the whole question as in stop 57; only the new sentence's grade is used.
+- Fixed reading, `closed`: 3 of 50 wrong, 6.0 %, under half the baseline (36 of 65). **The loop repairs.** The 3
+  are the same refusals as in stop 59.
+- Fixed reading, `source`: no sentence replaced by the refusal. **The loop costs little on the path in use.**
+
+Limits as fixed. The answers repeat stop 59's, so T4 confirms it and adds no new evidence on outcome. The time
+figures are the new evidence: 40 questions, one L40S, answers one at a time.
+
+Spend, stop 65: Modal $0.41, Opus 5.5 $0.01, Pro $0.01. Raw: `results/fresh2-short-live_arms/live.json`.

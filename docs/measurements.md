@@ -1084,3 +1084,24 @@ Training lifts the 1B by 37 and 29 points and it agrees with its teacher on 84 %
 and 10 points under the 27B, and 17 to 22 points above DeBERTa, at about a ninth of the 27B's time per call.
 Raw: `results/fresh_arms/small.json`, `results/fresh2_arms/small.json`,
 `results/distill/students/validation.json`.
+
+## The loop with the short judge reply (stop 65, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: the configuration that stands, run live once. As stop 59 (Qwen 27B AutoRound 4-bit as generator and judge,
+one SGLang server, one L40S, 40 questions, two arms), with the judge's short reply of stop 61.
+
+| | Source in the prompt | From memory, source inserted on rollback |
+|---|---|---|
+| Sentences | 49 | 50 |
+| Committed at the first try | 48 | 15 |
+| Committed after a retry | 1 | 32 |
+| Replaced by the refusal | 0 | 3 |
+| Graded wrong | 0 | 3, all refusals |
+| Seconds per answer, p50 and p95 | 1.9 and 6.9 (stop 59: 3.2 and 11.8) | 3.1 and 7.2 (stop 59: 5.2 and 13.6) |
+| Seconds per judge call, p50 | 0.56 (stop 59: 1.7) | 0.56 (stop 59: 1.7) |
+| Judge's share of the time | 35 % (stop 59: 58 %) | 38 % (stop 59: 61 %) |
+
+80 answers, no error. The loop behaves as in stop 59 and takes 59 % of the time per answer. 97 of 99 sentences
+repeat stop 59's and keep their grades; the 2 new ones were graded right by both graders. Raw:
+`results/fresh2-short-live_arms/live.json`.
+

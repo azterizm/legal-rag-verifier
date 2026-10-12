@@ -30,6 +30,27 @@ REPAIR = 0.5  # T4: the closed arm repairs if its wrong share is at most this ti
 REFUSED = 0.05  # T4: the source arm costs little if at most this share is replaced by the refusal
 # The same model's answers without a loop, graded in stop 57 (wrong sentences, all sentences).
 BASELINE = {"source": (0, 49), "closed": (36, 65)}
+# Stop 65: the short reply saves time in the loop if the median time per answer in ``source`` is
+# at most this share of the same figure with the long reply (stop 59's set).
+LONG_REPLY = {"fresh2-short-live": "fresh2-live"}
+SAVES = 0.8
+
+
+def against_long_reply(arm: str, now: dict[str, Any]) -> dict[str, Any] | None:
+    earlier = LONG_REPLY.get(fb.SET)
+    if earlier is None:
+        return None
+    path = ROOT / "results" / f"{earlier}_arms" / "live.json"
+    arms = json.loads(path.read_text(encoding="utf-8"))["arms"]
+    before = next(v for k, v in arms.items() if k.startswith(f"{arm}:"))["T3_time"]
+    fields = ("seconds_per_answer_p50", "judge_seconds_per_answer_p50", "judge_share_of_time")
+    out: dict[str, Any] = {"long_reply": {k: before[k] for k in fields}}
+    out["long_reply"]["seconds_per_judge_call_p50"] = before["seconds_per_judge_call_p50"]
+    ratio = now["seconds_per_answer_p50"] / before["seconds_per_answer_p50"]
+    out["seconds_per_answer_p50_ratio"] = round(ratio, 3)
+    if arm == "source":
+        out["saves_time"] = bool(ratio <= SAVES)
+    return out
 
 
 def traces() -> dict[str, dict[str, Any]]:
@@ -181,6 +202,9 @@ def main() -> None:
             continue
         result: dict[str, Any] = {"T1_mechanics": mechanics(records), "T2_cache": cache(records)}
         result["T3_time"] = times(records)
+        beside = against_long_reply(arm, result["T3_time"])
+        if beside is not None:
+            result["T3_against_the_long_reply"] = beside
         try:
             result["T4_outcome"] = outcome(arm, records)
         except FileNotFoundError:  # no sheet yet
