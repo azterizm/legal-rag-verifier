@@ -2364,3 +2364,35 @@ which the reason is about 50. The label comes first, so the reason cannot inform
 - Limits: one sample per prompt, and stop 48 found 14 of 323 labels change on a second sample of the same prompt,
   so W1 below about 96 % is within that noise. The first test has been used since stop 47.
 - Fail safe as stop 52. Spend: Modal expected $0.80, stage stop $3. Router: none.
+
+### Stop 61: results (2026-10-12)
+
+`uv run python scripts/fresh_arms.py short` under each set, raw in `results/fresh_arms/short.json` and
+`results/fresh2_arms/short.json`. Every prompt has a valid label. Qwen 27B AutoRound 4-bit, your grades.
+
+W1: the short reply gives the same label as the reply with a reason on 339 of 360 clauses of the first test
+(94.2 %) and 146 of 153 of the second (95.4 %).
+
+W2, Replace strict with figures to the judge (false rollbacks / caught, accuracy):
+
+| Test | With a reason | Without a reason | Gained and lost |
+|---|---|---|---|
+| First, 354 sentences | 14 / 135, 92.4 % | 7 / 133, 93.8 % | 9 and 4, p = 0.27 |
+| Second, 151 sentences | 10 / 61, 89.4 % | 8 / 60, 90.1 % | 2 and 1, p = 1.0 |
+
+With the claim check rolling back: 90.7 % and 91.8 % on the first test, 88.1 % and 88.7 % on the second.
+
+W3, one at a time on the 40 timing prompts, same container:
+
+| Reply | p50 | p95 | Tokens written |
+|---|---|---|---|
+| With a reason | 1.64 s | 2.81 s | 61 |
+| Without a reason | 0.54 s | 1.25 s | 19 |
+
+- Fixed readings: the short reply costs nothing on either test (accuracy is not lower), and it saves time (its
+  median is 0.33 of the other's, limit two thirds). Both pass.
+- The two replies are not told apart on accuracy, so no gain is claimed.
+- A departure, repaired: the first timing pass sent the prompts 16 at a time, because the one-at-a-time switch
+  matched only the old timing name. Those figures were discarded and the timing was run again one at a time.
+
+Spend: Modal $0.97 ($16.70 of $55), of which about $0.35 for the timing rerun. Router: none.

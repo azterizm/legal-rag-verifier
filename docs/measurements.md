@@ -1035,3 +1035,18 @@ call with the source in the prompt). The judge takes about 60 % of the time. Wit
 loop changes almost nothing: 39 of 40 answers have no rollback. Starting from memory it cuts 47 drafts, inserts
 the source 39 times, and 31 of the 32 sentences it then commits are right; no wrong statement of fact reaches a
 final answer. Raw: `results/fresh2-live_arms/live.json`.
+
+## A judge reply without the reason (stop 61, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: cut the judge's time, which is about 60 % of the loop's. The judge is asked for a label and a passage number
+only. Qwen 27B 4-bit, both fresh tests, hand grades.
+
+| | With a reason | Without a reason |
+|---|---|---|
+| First test, 354 sentences | 14 / 135, 92.4 % | 7 / 133, 93.8 % |
+| Second test, 151 sentences | 10 / 61, 89.4 % | 8 / 60, 90.1 % |
+| Time per clause, p50 and p95 | 1.64 s and 2.81 s | 0.54 s and 1.25 s |
+| Tokens written | 61 | 19 |
+
+Accuracy is not lower on either test and the two are not told apart. The call takes a third of the time. Raw:
+`results/fresh_arms/short.json`, `results/fresh2_arms/short.json`.

@@ -1,0 +1,73 @@
+{
+ "set": "fresh2",
+ "judge": "qwen27-ar4",
+ "prompt_sha256": "7748f874db902456700c3ff64c1b4e37621e951ed0c3c65495b8b3c5911be149",
+ "sentences": 151,
+ "arms": {
+  "p42 | figures to the judge": {
+   "texts": 151,
+   "right": 84,
+   "wrong": 67,
+   "false_rollbacks": 10,
+   "caught": 61,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.894
+  },
+  "short | figures to the judge": {
+   "texts": 151,
+   "right": 84,
+   "wrong": 67,
+   "false_rollbacks": 8,
+   "caught": 60,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.901
+  },
+  "p42 | claim check": {
+   "texts": 151,
+   "right": 84,
+   "wrong": 67,
+   "false_rollbacks": 13,
+   "caught": 62,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.881
+  },
+  "short | claim check": {
+   "texts": 151,
+   "right": 84,
+   "wrong": 67,
+   "false_rollbacks": 11,
+   "caught": 61,
+   "false_rollbacks_by_nli": 0,
+   "caught_by_nli": 0,
+   "accuracy": 0.887
+  }
+ },
+ "against_stop_42_prompt": {
+  "figures to the judge": {
+   "only_first": 2,
+   "only_second": 1,
+   "p": 1.0,
+   "change_in_points": 0.7,
+   "costs_nothing": true
+  },
+  "claim check": {
+   "only_first": 2,
+   "only_second": 1,
+   "p": 1.0,
+   "change_in_points": 0.6,
+   "costs_nothing": true
+  }
+ },
+ "time": {},
+ "no_valid_label": {
+  "p42": 0,
+  "short": 0
+ },
+ "W1_same_label": {
+  "same": 146,
+  "of": 153
+ }
+}

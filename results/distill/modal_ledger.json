@@ -2434,5 +2434,124 @@
   "seconds": 15.3,
   "usd": 0.0095,
   "note": "closed: 2 answers, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 441.6,
+  "usd": 0.2751,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 439.5,
+  "usd": 0.2738,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 19.2,
+  "usd": 0.012,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 15.1,
+  "usd": 0.0094,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 6.5,
+  "usd": 0.004,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 6.7,
+  "usd": 0.0042,
+  "note": "short: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 14.3,
+  "usd": 0.0089,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 21.1,
+  "usd": 0.0132,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 12.4,
+  "usd": 0.0077,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 6.5,
+  "usd": 0.0041,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 6.3,
+  "usd": 0.0039,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 6.1,
+  "usd": 0.0038,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 6.1,
+  "usd": 0.0038,
+  "note": "short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 20.7,
+  "usd": 0.0129,
+  "note": "seq-again: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 15.6,
+  "usd": 0.0097,
+  "note": "seq-short: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 496.9,
+  "usd": 0.3095,
+  "note": "seq-again: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop61 qwen27-ar4",
+  "gpu": "L40S",
+  "seconds": 26.3,
+  "usd": 0.0164,
+  "note": "seq-short: 40 labels, 0 errors"
  }
 ]
