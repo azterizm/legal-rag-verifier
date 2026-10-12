@@ -996,3 +996,19 @@ depends on the jurisdiction") as contradicted, because it has the source and the
 is specific to closed-book answers. On the 7B's answers the paragraph gains 6 sentences and loses none
 (p = 0.031), half of them fragments with no claim; this was the harm check, so the gain is exploratory. Raw:
 `results/fresh2-q27_arms/refusal.json`.
+
+## DeBERTa (V0) on the second fresh test (stop 60, 2026-10-12; method in `docs/GRID.md`)
+
+Aim: the first auditor against the LLM judge on a set nothing was tuned on. 151 sentences, hand grades.
+
+| Auditor | False rollbacks / caught | Accuracy | With source |
+|---|---|---|---|
+| No auditor | | 55.6 % | 94.4 % |
+| Claim check only | 6 / 16 | 62.3 % | 87.5 % |
+| V0 (claim check and DeBERTa) | 27 / 31 | 58.3 % | 62.5 % |
+| Qwen 27B FP8, stop 47 configuration | 12 / 63 | 89.4 % | 84.7 % |
+| Qwen 27B 4-bit, figures to the judge | 10 / 61 | 89.4 % | 87.5 % |
+
+The judge is right on 51 sentences where V0 is wrong, and V0 on 4 where the judge is wrong (p = 2e-11). V0 is
+barely above no auditor here and below the claim check alone: DeBERTa rolls back 23 of 68 right sentences in
+answers written with the source and catches none of the 4 wrong ones. Raw: `results/fresh2_arms/v0.json`.
