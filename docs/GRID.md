@@ -2481,3 +2481,47 @@ Added after the scoring (not fixed before it):
   run again a minute apart. No GPU time was lost.
 
 Spend: Modal $0.58 ($17.29 of $55). Router: none.
+
+## Stop 63: two smaller judges trained on Qwen 27B's labels (method fixed 2026-10-12, before any run)
+
+Your go: "go on training both".
+
+- A departure from the rule fixed in stop 62, by your decision after its result: MiniCPM5-1B is trained although
+  the rule said to drop it. Your reason: a 1B model is meant to be taught before use, and its failure was a lean to
+  one label. Gemma 4 E4B is trained as the rule says.
+
+### Teacher labels
+
+- Teacher: Qwen 27B AutoRound 4-bit, as stops 55 to 62, thinking off, the card's sampling, seed 0.
+- Clauses: the 4,433 of stop 45's training pool (472 sources, Qwen 2.5 7B answers with the source and
+  closed-book). No source is shared with either fresh test: the pool excluded the first test's sources by code,
+  and the second test was drawn outside the pool.
+- Prompt: `short` (stop 61). The target a student learns is the teacher's reply, a label and a passage number.
+- Split by source as in stop 45: train and validation (about 10 % of sources).
+
+### Training
+
+- Students: `openbmb/MiniCPM5-1B` at `87179e5c` and `google/gemma-4-E4B-it` at `ee0ef602`.
+- Recipe, the K2 student's (stop 46) where it applies: LoRA rank 16, alpha 32, dropout 0.05, on the attention and
+  MLP projections; one epoch; batch 1 with 16 accumulated; learning rate 1e-4, cosine, 3 % warm-up; bf16; examples
+  over 8,192 tokens dropped; seed 20261009.
+- Each example is the prompt as the model sees it with thinking off, then the reply and the end-of-turn token. The
+  loss is on the reply only.
+- Checkpoints go to the runs volume; a lost container resumes. The adapter is merged into the base for serving.
+
+### Scoring
+
+- Students are served by SGLang 0.5.21 on one L40S and decode greedily, as the K2 student did. The untrained runs
+  of stop 62 used each card's sampling, so trained against untrained differs in training and in decoding.
+- Y1, validation: clauses where the student gives the teacher's label.
+- Y2, both fresh tests, your grades, Replace strict with figures to the judge: false rollbacks, caught, accuracy;
+  replies that never parse.
+- Y3, each student against the Qwen 27B judge and against itself untrained (sentences only one gets right, exact
+  two-sided sign test).
+- Y4, time per clause one at a time on the 40 timing prompts.
+- Fixed now, per student: near the 27B if at most 3 points under it on both tests (93.8 % and 90.1 %); clearly
+  above DeBERTa if at least 10 points above V0 on both (68.7 % and 58.3 %).
+- Limits: one teacher sample per clause; a student copies its teacher's errors (stop 46); 4,433 clauses; the first
+  test has been used since stop 47. No hand grade is in any training example.
+- Fail safe: labels, checkpoints and student labels are appended or saved as they come; a rerun continues.
+- Spend: Modal expected $5 to $6, stage stop $10. Router: none.
