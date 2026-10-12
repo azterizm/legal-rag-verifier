@@ -2620,3 +2620,21 @@ them from software sources, and is weakest on software (82.4 % and 76.9 %, again
   selection, so some are thin; the first test has been used since stop 47.
 - Fail safe: every step appends or checkpoints and continues on a rerun.
 - Spend: a hard stop of $10 of Modal for this stop, in code. Flash about 1,400 calls. No Opus or Pro call.
+
+## Stop 65: the live loop with the short reply (method fixed 2026-10-12, before any run)
+
+Your instruction: wrap up with this run. The short reply is the judge's reply by your decision (stop 61); it has
+been measured on finished answers only.
+
+- Everything as stop 59 except the judge's reply: one SGLang 0.5.21 server on one L40S, Qwen 27B AutoRound 4-bit
+  as generator and judge, the same engine and verifier settings, the same 40 questions and two arms. Set name
+  `fresh2-short-live`.
+- Readings: T1 to T3 of stop 59 (mechanics, cache, time), beside stop 59's figures. Fixed now: the short reply
+  saves time in the loop if the median time per answer in `source` is at most 80 % of stop 59's (3.18 s).
+- T4, outcome, with the same two fixed readings as stop 59. Grades: a sentence that is word for word a sentence
+  of the same question and arm in stop 59 keeps the grade it got there. Any other sentence goes to the two
+  graders as in stop 57, and what they leave open goes to you.
+- Limits as stop 59. One more: with greedy generation most sentences should repeat stop 59's, so T4 mostly
+  confirms it.
+- Spend: Modal expected $1, stage stop $3. Opus 5.5 and Pro only for new sentences (Pro has $1.26 left under its
+  stop; if that is not enough, the open sentences go to you).
