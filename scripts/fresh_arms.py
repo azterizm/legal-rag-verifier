@@ -729,6 +729,7 @@ def short(judge: str = "qwen27-ar4") -> None:
 SMALL = {
     "MiniCPM5-1B, untrained": "minicpm5-1b",
     "MiniCPM5-1B, trained": "minicpm5-1b-student",  # stop 63
+    "MiniCPM5-1B, trained on more": "minicpm5-1b-student2",  # stop 64
     "Gemma 4 E4B, untrained": "gemma4-e4b",
     "Gemma 4 E4B, trained": "gemma4-e4b-student",
 }
@@ -738,7 +739,7 @@ ABOVE_V0 = 0.10  # stop 62: at least this above V0 on a test
 V0_AS_SCORED = {"fresh": 0.687, "fresh2": 0.583}  # stops 47 and 60
 
 
-def small() -> None:
+def small() -> None:  # noqa: PLR0915 - one pass over the readings
     """Stop 62: smaller judges with the short reply, beside the Qwen 27B judge and V0, on this
     set and your grades. → results/<set>_arms/small.json"""
     data = recorded()
@@ -773,6 +774,7 @@ def small() -> None:
         return True
 
     base = "Qwen 27B 4-bit"
+    units_wrong = {u["key"]: u["wrong"] for u in units}
     arm(base, TEACHER)
     for title, name in SMALL.items():
         if not arm(title, name):
@@ -791,6 +793,41 @@ def small() -> None:
             "near_qwen27": bool(gap <= NEAR),
             "points_above_v0": round(100 * (accuracy - v0), 1),
             "clearly_above_v0": bool(accuracy - v0 >= ABOVE_V0),
+        }
+    # Stop 64: the student first, the 27B asked only when the student rolls back.
+    out["two_step"] = {}
+    # a verdict is right when it rolls back a wrong sentence or passes a right one
+    rolled = {
+        name: {k: (v == units_wrong[k]) for k, v in ok.items()} for name, ok in correct.items()
+    }
+    for title in SMALL:
+        if title not in correct or ", untrained" in title:
+            continue
+        agreed = {k: rolled[title][k] and rolled[base][k] for k in rolled[title]}
+        false = sum(agreed[u["key"]] and u["right"] for u in units)
+        caught = sum(agreed[u["key"]] and u["wrong"] for u in units)
+        right = sum(u["right"] for u in units)
+        accuracy = round((right - false + caught) / len(units), 3)
+        asked = sum(rolled[title].values())
+        gap = out["arms"][base]["total"]["accuracy"] - accuracy
+        out["two_step"][title] = {
+            "false_rollbacks": false,
+            "caught": caught,
+            "accuracy": accuracy,
+            "qwen27_asked_on": asked,
+            "share_asked": round(asked / len(units), 3),
+            "points_under_qwen27": round(100 * gap, 1),
+            "works": bool(gap <= NEAR and asked / len(units) < 0.5),  # noqa: PLR2004
+        }
+    first = "MiniCPM5-1B, trained"
+    more = "MiniCPM5-1B, trained on more"
+    if first in correct and more in correct:
+        software = [u["key"] for u in units if u["domain"] == "software"]
+        out["more_against_first"] = {
+            "total": paired(correct[more], correct[first]),
+            "software": paired(
+                {k: correct[more][k] for k in software}, {k: correct[first][k] for k in software}
+            ),
         }
     out["trained_against_untrained"] = {}
     for trained in (t for t in SMALL if t.endswith(", trained")):
@@ -819,6 +856,7 @@ def small() -> None:
         print(f"{title:26} {cells}  {s['total']['interval_95']}")
     keys = (
         "against_qwen27",
+        "two_step",
         "trained_against_untrained",
         "same_label_as_qwen27",
         "replies",

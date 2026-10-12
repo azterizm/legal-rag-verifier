@@ -290,6 +290,17 @@
   }
  },
  "time": {},
+ "two_step": {
+  "MiniCPM5-1B, trained": {
+   "false_rollbacks": 8,
+   "caught": 52,
+   "accuracy": 0.848,
+   "qwen27_asked_on": 71,
+   "share_asked": 0.47,
+   "points_under_qwen27": 5.3,
+   "works": false
+  }
+ },
  "trained_against_untrained": {
   "MiniCPM5-1B, trained": {
    "only_first": 57,
