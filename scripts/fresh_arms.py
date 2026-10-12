@@ -726,7 +726,12 @@ def short(judge: str = "qwen27-ar4") -> None:
     print(json.dumps(out, indent=1))
 
 
-SMALL = {"MiniCPM5-1B, untrained": "minicpm5-1b", "Gemma 4 E4B, untrained": "gemma4-e4b"}
+SMALL = {
+    "MiniCPM5-1B, untrained": "minicpm5-1b",
+    "MiniCPM5-1B, trained": "minicpm5-1b-student",  # stop 63
+    "Gemma 4 E4B, untrained": "gemma4-e4b",
+    "Gemma 4 E4B, trained": "gemma4-e4b-student",
+}
 TEACHER = "qwen27-ar4"
 NEAR = 0.03  # stop 62: at most this under the Qwen 27B judge on a test
 ABOVE_V0 = 0.10  # stop 62: at least this above V0 on a test
@@ -787,6 +792,18 @@ def small() -> None:
             "points_above_v0": round(100 * (accuracy - v0), 1),
             "clearly_above_v0": bool(accuracy - v0 >= ABOVE_V0),
         }
+    out["trained_against_untrained"] = {}
+    for trained in (t for t in SMALL if t.endswith(", trained")):
+        before = trained.replace(", trained", ", untrained")
+        if trained in correct and before in correct:
+            test = paired(correct[trained], correct[before])
+            gain = (
+                out["arms"][trained]["total"]["accuracy"] - out["arms"][before]["total"]["accuracy"]
+            )
+            out["trained_against_untrained"][trained] = {
+                **test,
+                "change_in_points": round(100 * gain, 1),
+            }
     for title, name in {base: TEACHER, **SMALL}.items():
         file = path(name, "seq-short")
         if file.exists():
@@ -800,7 +817,13 @@ def small() -> None:
             for g in ("software", "statutes", "source answers", "closed answers", "total")
         )
         print(f"{title:26} {cells}  {s['total']['interval_95']}")
-    keys = ("against_qwen27", "same_label_as_qwen27", "replies", "time")
+    keys = (
+        "against_qwen27",
+        "trained_against_untrained",
+        "same_label_as_qwen27",
+        "replies",
+        "time",
+    )
     print(json.dumps({k: out[k] for k in keys}, indent=1))
 
 

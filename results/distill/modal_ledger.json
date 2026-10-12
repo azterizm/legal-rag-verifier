@@ -2973,5 +2973,40 @@
   "seconds": 20.2,
   "usd": 0.0126,
   "note": "113 labels, 0 errors"
+ },
+ {
+  "run": "stop63 train minicpm5-1b",
+  "gpu": "H100",
+  "seconds": 36.3,
+  "usd": 0.0459,
+  "note": ""
+ },
+ {
+  "run": "stop63 train minicpm5-1b",
+  "gpu": "H100",
+  "seconds": 1823.2,
+  "usd": 2.3006,
+  "note": ""
+ },
+ {
+  "run": "stop63 merge minicpm5-1b",
+  "gpu": "H100",
+  "seconds": 53.1,
+  "usd": 0.0669,
+  "note": ""
+ },
+ {
+  "run": "stop63 train gemma4-e4b smoke",
+  "gpu": "H100",
+  "seconds": 30.2,
+  "usd": 0.0381,
+  "note": ""
+ },
+ {
+  "run": "stop63 pool minicpm5-1b-student",
+  "gpu": "L40S",
+  "seconds": 147,
+  "usd": 0.0916,
+  "note": "the server could not load the merged weights (a stray index file); restarts stopped by hand; no label written"
  }
 ]
