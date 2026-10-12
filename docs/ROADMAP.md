@@ -17,7 +17,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 62 is scored. Untrained, Gemma 4 E4B is 86.4 % and 85.4 % (the 27B: 93.8 % and 90.1 %) at 0.41 s per call; MiniCPM5-1B is 48.0 % and 51.0 % at 0.07 s, below no auditor. Neither is near the 27B. Halted for your decision. No paid run is queued |
+| Next step | Stop 63 (your go): Qwen 27B 4-bit labels the 4,433 training clauses with the short reply; MiniCPM5-1B and Gemma 4 E4B are trained on them (LoRA, one epoch) and scored on both fresh tests with the grades that exist. Method fixed in GRID before any run. MiniCPM is trained by your decision, against the drop rule of stop 62 |
 | Waiting on you | Your go on training. By the fixed rule Gemma 4 E4B is trained on Qwen 27B's labels and MiniCPM5-1B is dropped. You questioned the rule for a 1B model; training MiniCPM too would be your decision made after the result, and is recorded as such. Proposed: one stop that labels the 4,433 training clauses once with the 27B and trains both (about $5 of Modal). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 

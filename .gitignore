@@ -93,6 +93,9 @@ results/distill/answers.jsonl
 results/distill/units.jsonl
 results/distill/train.jsonl
 results/distill/validation.jsonl
+# Stop 63: the students' training examples (the prompts quote statute text)
+results/distill/students/train.jsonl
+results/distill/students/validation.jsonl
 
 # Stops 48 and 49: probe runs are not results
 results/awareness/probe/
