@@ -17,8 +17,8 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-10 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 61 is scored. The judge reply without the reason costs no accuracy on either test (93.8 % and 90.1 % against 92.4 % and 89.4 %) and takes a third of the time (0.54 s against 1.64 s per clause). Halted for your decision. No paid run is queued |
-| Waiting on you | (1) Which smaller judges to test untrained first, on both tests with the grades that exist: MiniCPM5-1B, Gemma 4 E4B, MiniCPM5-2B. Qwen3.8-Flash-Next was considered at your request: 185 GB of weights and a non-Apache licence, so it does not fit the goal of a smaller judge. (2) Whether to adopt the short reply as the judge prompt and rerun the live loop with it. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
+| Next step | Stop 62 (your go): Gemma 4 E4B and MiniCPM5-1B as the judge, untrained, short reply, on both fresh tests with the grades that exist. Method fixed in GRID before any run. Decided by you: the short reply is the judge's reply in the live loop |
+| Waiting on you | After stop 62: whether a smaller judge is trained on Qwen 27B's labels, and the live loop rerun with the short reply. Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.26 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log

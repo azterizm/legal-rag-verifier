@@ -124,6 +124,18 @@ def user_prompt(sentence: str, candidates: Sequence[str], prefix: str) -> str:
     return USER.format(passages=passages, prefix=prefix or "(none)", sentence=sentence)
 
 
+# Stop 61: the same prompt asking for no reason. Only its last sentence differs.
+SHORT_REPLY = (
+    'Return JSON with keys "label" (one of the three) and "passage" (the number of the passage '
+    "that decides it, or 0). Give no reason."
+)
+
+
+def short_prompt(sentence: str, candidates: Sequence[str], prefix: str) -> str:
+    head, _ = user_prompt(sentence, candidates, prefix).rsplit("Return JSON", 1)
+    return head + SHORT_REPLY
+
+
 def prompt_key(user: str) -> str:
     return hashlib.sha256(f"{SYSTEM}\n{user}".encode()).hexdigest()
 

@@ -2396,3 +2396,39 @@ W3, one at a time on the 40 timing prompts, same container:
   matched only the old timing name. Those figures were discarded and the timing was run again one at a time.
 
 Spend: Modal $0.97 ($16.70 of $55), of which about $0.35 for the timing rerun. Router: none.
+
+### Decision on 2026-10-12: the short reply is the judge's reply
+
+Yours: the reply without the reason (stop 61) is used in the live loop from now on. `scripts/live_loop.py` asks
+for it by default. Stop 59 ran with the reason and stands as recorded.
+
+## Stop 62: two smaller judges, untrained (method fixed 2026-10-12, before any run)
+
+Your go: Gemma 4 E4B and MiniCPM5-1B, untrained first; MiniCPM5-2B and Qwen3.8-Flash-Next are left.
+
+| Model | Weights | Revision | Size | Licence | Sampling, thinking off (its card) |
+|---|---|---|---|---|---|
+| MiniCPM5-1B | `openbmb/MiniCPM5-1B` | `87179e5c1f455ef22e6223592d2d61351b525bfc` | 2.2 GB | Apache 2.0 | temperature 0.7, top_p 0.95 |
+| Gemma 4 E4B | `google/gemma-4-E4B-it` | `ee0ef6023621cff504d758262d4e04895a5af4a2` | 16.0 GB | Apache 2.0 | temperature 1.0, top_p 0.95, top_k 64 |
+
+- Both: safetensors only, no custom code, not gated. Served by SGLang 0.5.21 on one L40S, the same GPU as the
+  Qwen 27B judge, thinking off, seed 0, at most 1,024 new tokens.
+- A probe runs first for each model: one attempt, 2 prompts. If the server cannot load a model, that is recorded
+  and the model is not scored. No other engine is tried without your go.
+- Prompt: `short` (stop 61), unchanged. Sets: the first fresh test (360 prompts, 354 sentences) and the second
+  (153 prompts, 151 sentences), your grades. No new grading.
+- Reference rows from labels that exist: Qwen 27B AutoRound 4-bit with the same prompt (93.8 % and 90.1 %), and V0
+  as scored (68.7 % and 58.3 %).
+- Readings, Replace strict with figures to the judge:
+  - X1, false rollbacks, caught, accuracy on each test; replies that never parse.
+  - X2, against the Qwen 27B judge: sentences only one gets right, exact two-sided sign test; clauses with the same
+    label.
+  - X3, time per clause one at a time on the 40 timing prompts, and tokens written.
+- Fixed now, per model:
+  - Near the 27B: accuracy at most 3 points under the 27B's on both tests. Then it needs no training.
+  - Clearly above DeBERTa: accuracy at least 10 points above V0's on both tests. If it is this but not near the
+    27B, it is trained on Qwen 27B's labels in a later stop.
+  - Otherwise it is dropped.
+- Limits: one sample per prompt; the first test has been used since stop 47; the short reply was chosen on the
+  Qwen 27B and is not tuned for these models.
+- Fail safe as stop 52. Spend: Modal expected $1.50, stage stop $5. Router: none.
