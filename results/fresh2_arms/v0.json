@@ -1,0 +1,367 @@
+{
+ "set": "fresh2",
+ "sentences": 151,
+ "arms": {
+  "V0 (claim check and DeBERTa)": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 27,
+    "caught": 31,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.583,
+    "interval_95": [
+     0.503,
+     0.658
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 18,
+    "caught": 8,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.538
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 9,
+    "caught": 23,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.63
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 23,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.625
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 4,
+    "caught": 31,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.544
+   }
+  },
+  "claim check only": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 6,
+    "caught": 16,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.623,
+    "interval_95": [
+     0.543,
+     0.696
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 0,
+    "caught": 3,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.705
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 6,
+    "caught": 13,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.534
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 5,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.875
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 1,
+    "caught": 16,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.392
+   }
+  },
+  "no auditor": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 0,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.556,
+    "interval_95": [
+     0.477,
+     0.633
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 0,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.667
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 0,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.438
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 0,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.944
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 0,
+    "caught": 0,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.203
+   }
+  },
+  "Qwen 27B FP8, stop 47 configuration": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 12,
+    "caught": 63,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.894,
+    "interval_95": [
+     0.835,
+     0.934
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 5,
+    "caught": 24,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.91
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 7,
+    "caught": 39,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.877
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 8,
+    "caught": 1,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.847
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 4,
+    "caught": 62,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.937
+   }
+  },
+  "Qwen 27B FP8, figures to the judge": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 9,
+    "caught": 62,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.907,
+    "interval_95": [
+     0.85,
+     0.944
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 5,
+    "caught": 24,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.91
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 4,
+    "caught": 38,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.904
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 5,
+    "caught": 1,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.889
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 4,
+    "caught": 61,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.924
+   }
+  },
+  "Qwen 27B 4-bit, figures to the judge": {
+   "total": {
+    "texts": 151,
+    "right": 84,
+    "wrong": 67,
+    "false_rollbacks": 10,
+    "caught": 61,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.894,
+    "interval_95": [
+     0.835,
+     0.934
+    ]
+   },
+   "software": {
+    "texts": 78,
+    "right": 52,
+    "wrong": 26,
+    "false_rollbacks": 6,
+    "caught": 24,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.897
+   },
+   "statutes": {
+    "texts": 73,
+    "right": 32,
+    "wrong": 41,
+    "false_rollbacks": 4,
+    "caught": 37,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.89
+   },
+   "source answers": {
+    "texts": 72,
+    "right": 68,
+    "wrong": 4,
+    "false_rollbacks": 6,
+    "caught": 1,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.875
+   },
+   "closed answers": {
+    "texts": 79,
+    "right": 16,
+    "wrong": 63,
+    "false_rollbacks": 4,
+    "caught": 60,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.911
+   }
+  }
+ },
+ "against_v0": {
+  "Qwen 27B FP8, stop 47 configuration": {
+   "only_first": 51,
+   "only_second": 4,
+   "p": 2.05e-11,
+   "better_than_v0": true
+  },
+  "Qwen 27B FP8, figures to the judge": {
+   "only_first": 54,
+   "only_second": 5,
+   "p": 1.91e-11,
+   "better_than_v0": true
+  },
+  "Qwen 27B 4-bit, figures to the judge": {
+   "only_first": 54,
+   "only_second": 7,
+   "p": 4.32e-10,
+   "better_than_v0": true
+  }
+ },
+ "v0_run": {
+  "model_id": "cross-encoder/nli-deberta-v3-base@6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "pairs": 449,
+  "seconds": 31.26
+ }
+}

@@ -2228,3 +2228,32 @@ Your instruction: score V0 on the second test, beside the live loop. Nothing was
   against each judge arm (sentences only one gets right, exact two-sided sign test).
 - Fixed now: the judge counts as better than V0 on this set if its accuracy is higher and p is under 0.05.
 - Spend: Modal expected $0.05. Router: none.
+
+### Stop 60: results (2026-10-12)
+
+`FRESH_SET=fresh2 uv run python scripts/fresh_arms.py v0`, raw in `results/fresh2_arms/v0.json`. 449 pairs scored
+in 31 s on an L4. 151 sentences (84 right, 67 wrong), your grades.
+
+U1 and U2 (false rollbacks / caught, accuracy):
+
+| Auditor | Total | Software | Statutes | With source | Closed-book |
+|---|---|---|---|---|---|
+| No auditor | 55.6 % | 66.7 % | 43.8 % | 94.4 % | 20.3 % |
+| Claim check only | 6 / 16, 62.3 % | 0 / 3, 70.5 % | 6 / 13, 53.4 % | 5 / 0, 87.5 % | 1 / 16, 39.2 % |
+| V0 (claim check and DeBERTa) | 27 / 31, 58.3 % | 18 / 8, 53.8 % | 9 / 23, 63.0 % | 23 / 0, 62.5 % | 4 / 31, 54.4 % |
+| Qwen 27B FP8, stop 47 configuration | 12 / 63, 89.4 % | 5 / 24, 91.0 % | 7 / 39, 87.7 % | 8 / 1, 84.7 % | 4 / 62, 93.7 % |
+| Qwen 27B FP8, figures to the judge | 9 / 62, 90.7 % | 5 / 24, 91.0 % | 4 / 38, 90.4 % | 5 / 1, 88.9 % | 4 / 61, 92.4 % |
+| Qwen 27B 4-bit, figures to the judge | 10 / 61, 89.4 % | 6 / 24, 89.7 % | 4 / 37, 89.0 % | 6 / 1, 87.5 % | 4 / 60, 91.1 % |
+
+U3, each judge arm against V0: the stop 47 configuration 51 sentences only the judge gets right and 4 only V0
+(p = 2e-11); FP8 with figures to the judge 54 and 5; the 4-bit model 54 and 7. Each is better than V0 by the
+fixed reading.
+
+- V0 scores 58.3 % on this set, 2.7 points above no auditor and below the claim check alone (62.3 %). DeBERTa
+  adds 21 false rollbacks and 15 catches to the claim check.
+- On answers written with the source V0 rolls back 23 of 68 right sentences and catches none of the 4 wrong
+  ones: 62.5 % against 94.4 % with no auditor.
+- On the first test V0 scored 68.7 % (no auditor 58.7 %) and the same judge 88.3 %. The gap to the judge is 20
+  points there and 31 here.
+- A first attempt failed because the DeBERTa weights were not on the volume; they were downloaded and the run
+  repeated. Spend: Modal $0.06.

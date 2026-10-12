@@ -2259,5 +2259,40 @@
   "seconds": 132.7,
   "usd": 0.0042,
   "note": "Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ"
+ },
+ {
+  "run": "fresh2 v0",
+  "gpu": "L4",
+  "seconds": 90,
+  "usd": 0.023,
+  "note": "failed: the DeBERTa weights were not on the volume; estimated time"
+ },
+ {
+  "run": "stop48 weights check",
+  "gpu": "CPU",
+  "seconds": 39.5,
+  "usd": 0.0013,
+  "note": "cross-encoder/nli-deberta-v3-base"
+ },
+ {
+  "run": "stop59 live",
+  "gpu": "L40S",
+  "seconds": 460.9,
+  "usd": 0.2871,
+  "note": "source: 2 answers, 0 errors"
+ },
+ {
+  "run": "stop59 live",
+  "gpu": "L40S",
+  "seconds": 9.4,
+  "usd": 0.0059,
+  "note": "closed: 2 answers, 0 errors"
+ },
+ {
+  "run": "fresh2 v0",
+  "gpu": "L4",
+  "seconds": 52.7,
+  "usd": 0.0135,
+  "note": ""
  }
 ]
