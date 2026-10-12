@@ -1,0 +1,14 @@
+{
+ "teacher": "qwen27-ar4",
+ "prompt": "short",
+ "train contradicted": 463,
+ "train examples": 4018,
+ "train not_stated": 1462,
+ "train sources": 426,
+ "train supported": 2093,
+ "validation contradicted": 49,
+ "validation examples": 415,
+ "validation not_stated": 154,
+ "validation sources": 46,
+ "validation supported": 212
+}
