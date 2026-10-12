@@ -1,0 +1,107 @@
+{
+ "set": "fresh2-live",
+ "arms": {
+  "source: source in the prompt": {
+   "T1_mechanics": {
+    "answers": 40,
+    "stop_reasons": {
+     "eos": 40
+    },
+    "sentences": 49,
+    "committed_at_first_try": 48,
+    "committed_after_a_retry": {
+     "ban": 1
+    },
+    "replaced_by_the_refusal": 0,
+    "rollbacks": 3,
+    "answers_with_no_rollback": 39,
+    "rollbacks_per_answer_max": 3,
+    "tokens_in_final_answers": 1892,
+    "tokens_discarded": 194,
+    "injections": 0,
+    "tokens_injected": 0,
+    "first_attempt_reasons": {
+     "UNGROUNDED_CITATION": 1
+    }
+   },
+   "T2_cache": {
+    "first_sentence_first_attempt_p50": 0.48,
+    "retry_attempts": 3,
+    "retry_p50": 1.05,
+    "retry_min": 0.98
+   },
+   "T3_time": {
+    "seconds_per_answer_p50": 3.18,
+    "seconds_per_answer_p95": 11.84,
+    "generation_seconds_per_answer_p50": 1.32,
+    "judge_seconds_per_answer_p50": 1.85,
+    "judge_share_of_time": 0.58,
+    "judge_calls": 50,
+    "judge_calls_per_answer": 1.2,
+    "seconds_per_judge_call_p50": 1.73,
+    "seconds_per_judge_call_p95": 2.26,
+    "judge_labels": {
+     "supported": 49,
+     "contradicted": 1
+    },
+    "seconds_total": 147.5,
+    "mean_seconds_per_answer": 3.69
+   },
+   "T4_outcome": null
+  },
+  "closed: from memory, source on rollback": {
+   "T1_mechanics": {
+    "answers": 40,
+    "stop_reasons": {
+     "eos": 40
+    },
+    "sentences": 50,
+    "committed_at_first_try": 15,
+    "committed_after_a_retry": {
+     "inject": 32
+    },
+    "replaced_by_the_refusal": 3,
+    "rollbacks": 47,
+    "answers_with_no_rollback": 5,
+    "rollbacks_per_answer_max": 4,
+    "tokens_in_final_answers": 1518,
+    "tokens_discarded": 1884,
+    "injections": 39,
+    "tokens_injected": 10161,
+    "first_attempt_reasons": {
+     "NEUTRAL_STRICT": 15,
+     "NLI_CONTRADICTION": 10,
+     "NLI_NOT_ENTAILED": 4,
+     "UNGROUNDED_CITATION": 5,
+     "UNGROUNDED_INSTRUMENT": 3,
+     "UNGROUNDED_FIGURE": 1
+    }
+   },
+   "T2_cache": {
+    "first_sentence_first_attempt_p50": 0.41,
+    "retry_attempts": 44,
+    "retry_p50": 2.56,
+    "retry_min": 0.75
+   },
+   "T3_time": {
+    "seconds_per_answer_p50": 5.21,
+    "seconds_per_answer_p95": 13.61,
+    "generation_seconds_per_answer_p50": 2.09,
+    "judge_seconds_per_answer_p50": 3.21,
+    "judge_share_of_time": 0.613,
+    "judge_calls": 85,
+    "judge_calls_per_answer": 2.1,
+    "seconds_per_judge_call_p50": 1.65,
+    "seconds_per_judge_call_p95": 2.29,
+    "judge_labels": {
+     "not_stated": 24,
+     "supported": 47,
+     "contradicted": 14
+    },
+    "seconds_total": 233.5,
+    "mean_seconds_per_answer": 5.84
+   },
+   "T4_outcome": null
+  }
+ }
+}
