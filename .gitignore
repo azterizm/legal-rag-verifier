@@ -83,6 +83,12 @@ results/fresh2-live/key.json
 results/fresh2-live/sheet.md
 results/fresh2-live/leftover.md
 results/fresh2-live/traces.jsonl
+# Stop 65: the same, with the short reply
+results/fresh2-short-live/answers.jsonl
+results/fresh2-short-live/key.json
+results/fresh2-short-live/sheet.md
+results/fresh2-short-live/leftover.md
+results/fresh2-short-live/traces.jsonl
 results/distill/*.lock
 results/distill/*.tmp
 results/distill/pool.jsonl
