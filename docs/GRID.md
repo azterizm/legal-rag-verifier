@@ -1012,7 +1012,7 @@ clauses labelled.
 
 ### Stop 47: results (2026-10-10)
 
-Order of events: your grades were committed (`b8b3c4d`), Gemini labelled its last 123 fresh clauses, then the
+Order of events: your grades were committed (commit "Stop 47: your grades for the fresh test", 2026-10-10), Gemini labelled its last 123 fresh clauses, then the
 scoring ran once. One departure: those 123 Gemini labels were made after your grades existed. No grade is in any
 prompt and the prompt was unchanged. You graded 360 sentences: 210 yes, 148 no, 2 unsure. Units: 358 (software 117
 right and 53 wrong, statutes 93 right and 95 wrong). Raw: `results/fresh/report.json`, `errors.jsonl`.
@@ -1833,7 +1833,7 @@ before I stopped it. The probe now runs once and stops.
 
 ### Stop 56: results (2026-10-11)
 
-Your grades were committed first (`c2e1228`): 151 sentences, 84 right, 67 wrong, none unsure. The sealed files
+Your grades were committed first (commit "Stop 56: your grades for the second fresh test", 2026-10-11): 151 sentences, 84 right, 67 wrong, none unsure. The sealed files
 are unchanged. Scored once: `FRESH_SET=fresh2 uv run python scripts/fresh_arms.py confirm`, raw in
 `results/fresh2_arms/confirm.json`. Every prompt has a valid label.
 
@@ -2023,7 +2023,7 @@ $40). Pro $1.46 ($13.44 of $15).
 
 ### Stop 57: results (2026-10-11)
 
-Your 9 grades were committed first (`815f2b8`: 2 right, 7 wrong). Then `fresh_grader.py fill`, the two tables and
+Your 9 grades were committed first (commit "Stop 57: your grades for the 9 open sentences", 2026-10-11: 2 right, 7 wrong). Then `fresh_grader.py fill`, the two tables and
 `uv run python scripts/self_judge.py`, once. Raw in `results/fresh2-q27_arms/selfjudge.json`. Every figure below
 is graded by Opus 5.5 and Gemini 3.1 Pro, open sentences by you. The 7B's answers are regraded the same way, so
 both generators are on one standard.
@@ -2310,7 +2310,7 @@ Spend so far, stop 59: Modal $0.81 ($15.73 of $55 with stop 60). Opus 5.5 $0.32 
 
 ### Stop 59: outcome (T4) (2026-10-12)
 
-Your 3 grades were committed first (`5e59832`: 2 right, 1 wrong). Then `fresh_grader.py fill` and
+Your 3 grades were committed first (commit "Stop 59: your grades for the 3 open sentences", 2026-10-12: 2 right, 1 wrong). Then `fresh_grader.py fill` and
 `live_report.py`, once. Graded by Opus 5.5 and Gemini 3.1 Pro (96 sentences), open sentences by you (3). Every
 graded sentence was matched to its point in the trace.
 
