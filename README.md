@@ -15,8 +15,10 @@ rejected sentence is rolled back and regenerated on the inference server's prefi
 that sentence is thrown away. The retry can insert the provision the sentence was checked against
 at the cut point, which makes a small model's retry pass the check far more often.
 
-**Status: proof of concept.** The mechanism holds on a production inference server; the full loop is
-not yet production-ready. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
+**Status: proof of concept.** The mechanism holds on a production inference server. With the
+DeBERTa head as the auditor the loop did not improve answers. With an LLM judge in its place it
+did, on the tests run so far. The package ships the DeBERTa head; the LLM judge is in `scripts/`.
+The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
 what is required first.
 
 Built by [Abdullah Memon](https://memonsystems.com) at [Memon Systems Ltd](https://memonsystems.com).
@@ -110,11 +112,25 @@ turn without the provision, 14. With the provision inserted, the regenerated sen
 likely in 46 of 46 states, the rejected sentence less likely in 45 of 46, and attention on
 provision text rose in 46 of 46.
 
-**Open:** on live model output the auditor's rejections were mostly wrong: 1 of 12 by hand on
+**Live output, DeBERTa head as the auditor:** its rejections were mostly wrong: 1 of 12 by hand on
 software questions, 18 of 46 by a frontier model's labels on statutes. Graded by hand, the loop's
 answers were no better than one plain answer from the same model. Inserting the provision makes
-the retry pass the auditor; it does not make it better. See
-[`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) for the proof-of-concept verdict and its limits.
+the retry pass the auditor; it does not make it better.
+
+**An LLM judge in the auditor's place** (Qwen 27B at 4 bits as generator and judge on one SGLang
+server; the judge is the entailment scorer, in `scripts/live_loop.py`): right on 93.8 % and 90.1 %
+of the sentences of two hand-graded tests (354 and 151 sentences), against 68.7 % and 58.3 % for
+the DeBERTa head. Run live on 40 questions with the source in the prompt, 48 of 49 sentences were
+committed at the first try, none wrong, at 1.9 s per answer at the median. When the answer started
+from memory, 36 of 65 sentences were wrong without the loop and 3 of 50 with it, all three
+refusals.
+
+**Other judges on the same two tests:** a 1B model trained on the 27B's labels, 89.0 % and 82.1 %
+at 0.06 s per call ([adapters](https://huggingface.co/azterizm/minicpm5-1b-clause-judge)); Jev
+1.13, 90.7 % and 88.1 %; the OpenAI Decisions API, 89.0 % and 86.8 %. None is within 3 points of
+the 27B on both tests.
+
+See [`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) for the proof-of-concept verdict and its limits.
 
 ## Reproduce the evidence
 
