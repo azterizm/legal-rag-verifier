@@ -24,6 +24,12 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-13 (citation): **`CITATION.cff` covers the evaluation.** Your go. The abstract gains one sentence: the
+  repository also holds the evaluation with an LLM judge, which is not part of the package. The adapters are
+  added under `references` with their DOI, and `llm judge` to the keywords. The file validates against CFF
+  1.2.0. The 0.2.0 files on PyPI and in the GitHub release keep the earlier abstract. **Resume:** nothing
+  planned.
+
 - 2026-10-13 (DOI): **The adapters have a DOI.** You minted it on the Hub: `10.57967/hf/10885`, registered at
   DataCite for revision `55f64fb` (author Abdullah Memon, publisher Hugging Face). It resolves to the repository.
   Before minting, the model card gained a link to this repository and to the method and figures. After, the DOI
