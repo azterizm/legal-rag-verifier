@@ -18,11 +18,19 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | None planned. Stops 64 to 66 are done, the adapters are published and Modal storage is cleared. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
-| Waiting on you | Nothing is needed to continue. Open: five disputed grades on the second test; the four fs-02 grades; a DOI for the adapters, minted on the Hub when the name is final. Not done and needing your go: push, tag, release. Pro has $1.25 left under its stop |
+| Waiting on you | Nothing is needed to continue. Open: a DOI for the adapters, minted on the Hub when the name is final. Not done and needing your go: push, tag, release. Pro has $1.25 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-13 (grades confirmed): **The nine disputed grades stand.** Your decision after rechecking each against
+  its question and source: your grades are correct and not slips. First test: `fs-02:source:0`, `fs-02:source:1`,
+  `fs-02:closed:1`, `fs-02:closed:2` (items `Q09B1`, `Q09B2`, `Q09A2`, `Q09A3`), all wrong. Second test: `Q37B1`,
+  `Q40B1`, `Q40B2`, `Q13A2`, `Q33A1`, all wrong. No grade file changed and no figure was recomputed. The stop 57
+  generator table keeps both readings as written (the two graders count `Q37B1`, `Q40B1` and `Q40B2` as right;
+  by your grades the 7B is wrong in 4 of 72 sentences written with the source). This item is closed.
+  **Resume:** nothing planned.
 
 - 2026-10-13 (wrap-up, docs): **Verdict and README brought up to date; Modal storage cleared.** Your go. The
   opening verdict of `docs/VERDICT.md` now states both findings: the loop did not improve answers with the
