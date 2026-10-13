@@ -1,6 +1,6 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-08. Item 1 of the last section updated 2026-10-12.
+legal-rag-verifier 0.1.0, 2026-10-08. The verdict and item 1 of the last section updated 2026-10-13.
 
 ## Question
 
@@ -11,12 +11,27 @@ recovery were out of scope.
 
 ## Verdict
 
-The architecture holds as a mechanism. Rollback, cache reuse and insertion of the source run on a production
-inference server at low cost. It does not improve answers as built. The auditor decides when to roll back, and on
-live output most of its rejections were wrong: 1 of 12 by hand on software questions, 18 of 46 by a frontier
-model's labels on statutes. Graded by hand, the loop's final answers were no better than one plain answer from
-the same model: 29 and 30 good against 32 of 40. Inserting the source makes retries pass the auditor. It does
-not make them better. The changes required before a production trial are listed at the end.
+The architecture holds, with an LLM as the judge. Rollback, cache reuse and insertion of the source run on a
+production inference server at low cost.
+
+As first built, with a small entailment model as the auditor, the loop did not improve answers. On live output
+most of its rejections were wrong: 1 of 12 by hand on software questions, 18 of 46 by a frontier model's labels
+on statutes. Graded by hand, the loop's final answers were no better than one plain answer from the same model:
+29 and 30 good against 32 of 40. That finding of 2026-10-08 stands for that auditor. The sections below describe
+that system.
+
+With Qwen 27B at 4 bits as generator and judge on one server, the loop improved answers on the tests run since.
+The judge was right on 93.8 % and 90.1 % of the sentences of two hand-graded tests. The entailment model scored
+68.7 % and 58.3 %, and no auditor 55.6 % on the second. Run live on 40 questions with the source in the prompt,
+the loop committed 48 of 49 sentences at the first try, none wrong, at 1.9 s per answer at the median. When the
+answer started from memory, 36 of 65 sentences were wrong without the loop and 3 of 50 with it, all three
+refusals. The gain is where the generator answers from memory. With the source in the prompt there is almost
+nothing to catch.
+
+This rests on 40 live questions, one model, one server and greedy decoding. The live answers were graded by two
+frontier models, with 3 sentences by hand. A trained 1B model and two hosted decision APIs were tested as the
+judge and scored 2 to 8 points under the 27B. Item 1 of the last section gives the steps in order. The changes
+required before a production trial are listed there.
 
 ## What was tested
 
@@ -62,6 +77,8 @@ Most of it went to the inserted copy, and attention to the original copy halved.
 sentence in all 18 states that had one.
 
 ## What does not hold yet
+
+This section describes the system of 2026-10-08, with the entailment model as the auditor.
 
 On live output the auditor's rejections were mostly wrong. On 40 software questions graded by hand, with
 documentation quoted verbatim as the source, 1 of 12 rejected sentences was an error. The loop did not roll back on 5 of
@@ -190,6 +207,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    80 % on the two tests from 4,018 clauses, and 89 % and 82 % from 18,152, at 0.06 s per call. It stays 5 to
    8 points under the 27B. Asking the 27B only when the 1B rolls back scored 91 % and 85 %, within 3 points of
    the 27B on one test and not on the other. The 27B remains the judge.
+   Two hosted decision APIs were tested as the judge (stop 66). They return a typed answer with
+   probabilities and no text, and need no training and no server. Jev 1.13 scored 90.7 % and 88.1 % and the
+   OpenAI Decisions API 89.0 % and 86.8 %. Jev is 3.1 and 2.0 points under the 27B and OpenAI 4.8 and 3.3,
+   so neither met the limit of 3 points on both tests. Neither was run inside the loop.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
@@ -202,5 +223,5 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 5. Set the latency target from the measured cost of 69 to 117 ms per retry, or move to faster hardware.
 6. Tune each change on the development set, then re-run the 103 test questions with the judge prompt fixed in advance.
 
-Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/grid/`. Decisions:
-`docs/ROADMAP.md`.
+Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/`. Decisions:
+`docs/ROADMAP.md`. The trained 1B adapters: `huggingface.co/azterizm/minicpm5-1b-clause-judge`.

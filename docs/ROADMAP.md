@@ -17,12 +17,21 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-13 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | None planned. Stops 64 and 65 are done and the Modal work is wrapped up. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
-| Waiting on you | Your go, each separately: rewriting the opening verdict paragraph of `docs/VERDICT.md`, which still states the 2026-10-08 finding; the remaining Modal clean-up (you said you will set it up). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.25 left under its stop |
+| Next step | None planned. Stops 64 to 66 are done, the adapters are published and Modal storage is cleared. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
+| Waiting on you | Nothing is needed to continue. Open: five disputed grades on the second test; the four fs-02 grades; a DOI for the adapters, minted on the Hub when the name is final. Not done and needing your go: push, tag, release. Pro has $1.25 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-13 (wrap-up, docs): **Verdict and README brought up to date; Modal storage cleared.** Your go. The
+  opening verdict of `docs/VERDICT.md` now states both findings: the loop did not improve answers with the
+  entailment model as the auditor (2026-10-08), and it did with Qwen 27B as generator and judge (stops 56 to
+  65). Item 1 gains stop 66. The README's status and evidence say the same and link the published adapters. No
+  API, verdict name, trace or method change. On Modal the remaining storage was deleted after the K2 student
+  adapter and its training history were brought home (`artefacts/k2-horizon-7b-judge/`, git-ignored, sha256
+  `e9838c06…f8f6`; every file the same size as on the volume) and the first training set was checked against
+  the local copy. No Modal volume is left. **Resume:** nothing planned.
 
 - 2026-10-13 (wrap-up): **Adapters published, Modal volumes deleted.** Your go. Both 1B adapters, their training
   histories and the model card are public at `huggingface.co/azterizm/minicpm5-1b-clause-judge` (Apache-2.0,
