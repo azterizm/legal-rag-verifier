@@ -224,4 +224,5 @@ states. Concurrency, failure recovery and cost per answer were not measured.
 6. Tune each change on the development set, then re-run the 103 test questions with the judge prompt fixed in advance.
 
 Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/`. Decisions:
-`docs/ROADMAP.md`. The trained 1B adapters: `huggingface.co/azterizm/minicpm5-1b-clause-judge`.
+`docs/ROADMAP.md`. The trained 1B adapters: `huggingface.co/azterizm/minicpm5-1b-clause-judge`,
+DOI `10.57967/hf/10885`.

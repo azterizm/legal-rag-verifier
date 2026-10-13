@@ -126,7 +126,8 @@ from memory, 36 of 65 sentences were wrong without the loop and 3 of 50 with it,
 refusals.
 
 **Other judges on the same two tests:** a 1B model trained on the 27B's labels, 89.0 % and 82.1 %
-at 0.06 s per call ([adapters](https://huggingface.co/azterizm/minicpm5-1b-clause-judge)); Jev
+at 0.06 s per call ([adapters](https://huggingface.co/azterizm/minicpm5-1b-clause-judge),
+DOI [10.57967/hf/10885](https://doi.org/10.57967/hf/10885)); Jev
 1.13, 90.7 % and 88.1 %; the OpenAI Decisions API, 89.0 % and 86.8 %. None is within 3 points of
 the 27B on both tests.
 
