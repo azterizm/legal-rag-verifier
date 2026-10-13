@@ -1627,6 +1627,7 @@ Label counts are per clause, so they do not always sum to the sentences.
 - Four grades to check. All three frontier judges pass `fs-02:closed:1`, `fs-02:source:1` and (Opus 5.5 and Pro)
   `fs-02:closed:2` and `fs-02:source:0`, which you graded wrong. The whole-sheet graders of stop 47 also said yes
   to three of them (Opus 5.5 was unsure on `fs-02:closed:2`, Gemini said no). No grade was changed.
+  Confirmed by you on 2026-10-13 after a recheck: the four grades are correct and stand.
 
 ## Stop 54: notes on applying the labels, Qwen 27B (method fixed 2026-10-11, before any call)
 
@@ -2036,6 +2037,8 @@ R1, the generator, wrong sentences of all:
 
 By your grades alone the 7B has 4 wrong sentences with the source and 67 in total. The graders settled three of
 those four as right (`Q37B1`, `Q40B1`, `Q40B2`).
+Confirmed by you on 2026-10-13 after a recheck: your grades on these three, and on `Q13A2` and `Q33A1`, are
+correct and stand.
 
 R2, the Qwen 27B 4-bit judge with the stop 42 prompt, Replace strict (false rollbacks / caught, accuracy):
 
