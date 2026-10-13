@@ -1124,3 +1124,21 @@ alone nor the two-step judge meets the limit of 3 points on both tests. It agree
 held-out clauses (83.9 % before). Raw: `results/fresh_arms/small.json`, `results/fresh2_arms/small.json`,
 `results/distill/students/validation.json`.
 
+
+## Two hosted decision APIs as the judge (stop 66, 2026-10-13; method in `docs/GRID.md`)
+
+Aim: compare the current judge with two hosted APIs that return a typed answer with probabilities and no text.
+Each clause of the short-reply arm was sent once to each, with the same text and the same two questions (label
+and deciding passage). The label is the returned choice, no threshold. Same replay, placement and grades.
+
+| Judge | First test | Second test | Seconds per call |
+|---|---|---|---|
+| Qwen 27B 4-bit | 93.8 % | 90.1 % | 0.54 s (next to its server) |
+| Jev 1.13 (OpenRouter) | 90.7 % | 88.1 % | 0.64 to 0.72 s (over the network) |
+| OpenAI Decisions (gpt-6-luna) | 89.0 % | 86.8 % | 0.23 to 0.25 s (over the network) |
+| MiniCPM5-1B, trained on 18,152 clauses | 89.0 % | 82.1 % | 0.06 s |
+
+Jev is 3.1 and 2.0 points under the 27B, OpenAI 4.8 and 3.3. Neither meets the limit of 3 points on both tests.
+The 27B is ahead on the first test (p = 0.013 and 0.005); the second does not show a difference. A threshold
+chosen on the first test changes nothing on the second. Cost is $0.07 and $0.13 per 1,000 calls. Raw:
+`results/fresh_arms/decisions.json`, `results/fresh2_arms/decisions.json`.
