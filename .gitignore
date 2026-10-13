@@ -110,3 +110,7 @@ results/awareness/probe/
 
 # Trained judge adapters brought home from Modal (stops 63 and 64); weights are not kept in git
 artefacts/
+
+# Stop 66: lock and temp files of the decision APIs ledger
+results/decisions/*.lock
+results/decisions/*.tmp

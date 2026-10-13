@@ -14,15 +14,25 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-12 |
+| Last updated | 2026-10-13 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | None planned. Stops 64 and 65 are done and the Modal work is wrapped up. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %) |
+| Next step | None planned. Stops 64 and 65 are done and the Modal work is wrapped up. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
 | Waiting on you | Your go, each separately: publishing the two 1B adapters in `artefacts/minicpm5-1b-judge/` (Apache-2.0 base; training data stays local); rewriting the opening verdict paragraph of `docs/VERDICT.md`, which still states the 2026-10-08 finding; anything to delete on Modal (nothing has been deleted). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.25 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-13 (66): **Two hosted decision APIs as the judge.** Your instruction. Jev 1.13 through OpenRouter and
+  the OpenAI Decisions API (gpt-6-luna), one request per clause of the short-reply arm on both tests, two typed
+  questions (label and passage), no threshold. 513 clauses each, every reply valid. Jev 10 / 125, 90.7 % and
+  8 / 57, 88.1 %. OpenAI 21 / 130, 89.0 % and 12 / 59, 86.8 %. The 27B 93.8 % and 90.1 %. Fixed reading: neither
+  is near the 27B (Jev 3.1 and 2.0 points under, OpenAI 4.8 and 3.3, limit 3 on both tests). The 27B is ahead on
+  test 1 (p = 0.013 and 0.005); test 2 does not show a difference. A threshold from test 1 changes nothing on
+  test 2. Seconds per call over the network: OpenAI 0.25, Jev 0.64 to 0.72. Cost per 1,000 calls: $0.13 and
+  $0.07. Spend: OpenAI $0.08, OpenRouter $0.04. Neither was run inside the loop. **Resume:** your decisions in
+  Status.
 
 - 2026-10-12 (64, wrap-up): **The 1B judge trained on more data.** Your instruction, within $10. Second pool:
   1,400 sources, 14,134 new clauses labelled by Qwen 27B, no invalid reply. MiniCPM5-1B trained on 18,152 clauses,

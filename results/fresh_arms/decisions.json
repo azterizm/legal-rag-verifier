@@ -1,0 +1,366 @@
+{
+ "set": "fresh",
+ "sentences": 354,
+ "prompts": 360,
+ "arms": {
+  "Qwen 27B 4-bit": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 7,
+    "caught": 133,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.938,
+    "interval_95": [
+     0.908,
+     0.959
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 4,
+    "caught": 49,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.953
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 3,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.924
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 3,
+    "caught": 14,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.933
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 4,
+    "caught": 119,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.942
+   }
+  },
+  "MiniCPM5-1B, trained on more": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 16,
+    "caught": 125,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.89,
+    "interval_95": [
+     0.853,
+     0.918
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 11,
+    "caught": 41,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.865
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 5,
+    "caught": 84,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.913
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 6,
+    "caught": 9,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.883
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 10,
+    "caught": 116,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.895
+   }
+  },
+  "OpenAI Decisions (gpt-6-luna)": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 21,
+    "caught": 130,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.89,
+    "interval_95": [
+     0.853,
+     0.918
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 10,
+    "caught": 43,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.882
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 11,
+    "caught": 87,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.897
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 12,
+    "caught": 15,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.883
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 9,
+    "caught": 115,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.895
+   }
+  },
+  "Jev 1.13 (OpenRouter)": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 10,
+    "caught": 125,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.907,
+    "interval_95": [
+     0.872,
+     0.933
+    ]
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 6,
+    "caught": 45,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.918
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 4,
+    "caught": 80,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.897
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 4,
+    "caught": 12,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.914
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 6,
+    "caught": 113,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.901
+   }
+  }
+ },
+ "against_qwen27": {
+  "OpenAI Decisions (gpt-6-luna)": {
+   "only_first": 8,
+   "only_second": 25,
+   "p": 0.00455,
+   "points_under_qwen27": 4.8,
+   "near_qwen27": false,
+   "better_than_qwen27": false
+  },
+  "Jev 1.13 (OpenRouter)": {
+   "only_first": 3,
+   "only_second": 14,
+   "p": 0.0127,
+   "points_under_qwen27": 3.1,
+   "near_qwen27": false,
+   "better_than_qwen27": false
+  }
+ },
+ "same_label_as_qwen27": {
+  "OpenAI Decisions (gpt-6-luna)": {
+   "same": 314,
+   "of": 360
+  },
+  "Jev 1.13 (OpenRouter)": {
+   "same": 326,
+   "of": 360
+  }
+ },
+ "replies": {
+  "OpenAI Decisions (gpt-6-luna)": {
+   "valid": 360,
+   "refused": 0,
+   "failed": 0,
+   "not_asked": 0,
+   "models": [
+    "gpt-6-luna"
+   ]
+  },
+  "Jev 1.13 (OpenRouter)": {
+   "valid": 360,
+   "refused": 0,
+   "failed": 0,
+   "not_asked": 0,
+   "models": [
+    "typesafe/jev-1.13-20260917"
+   ]
+  }
+ },
+ "time": {
+  "OpenAI Decisions (gpt-6-luna)": {
+   "calls": 40,
+   "p50_ms": 248,
+   "p95_ms": 1162,
+   "mean_tokens": 1366,
+   "server_p50_ms": 100.0
+  },
+  "Jev 1.13 (OpenRouter)": {
+   "calls": 40,
+   "p50_ms": 642,
+   "p95_ms": 944,
+   "mean_tokens": 1651
+  },
+  "Qwen 27B 4-bit": {
+   "calls": 40,
+   "p50_ms": 537,
+   "p95_ms": 1245,
+   "mean_tokens": 19
+  }
+ },
+ "usd_per_1000_calls": {
+  "OpenAI Decisions (gpt-6-luna)": 0.1525,
+  "Jev 1.13 (OpenRouter)": 0.077
+ },
+ "threshold": {
+  "OpenAI Decisions (gpt-6-luna)": {
+   "sweep": {
+    "0.05": 0.895,
+    "0.10": 0.904,
+    "0.15": 0.91,
+    "0.20": 0.912,
+    "0.25": 0.91,
+    "0.30": 0.904,
+    "0.35": 0.904,
+    "0.40": 0.895,
+    "0.45": 0.893,
+    "0.50": 0.89,
+    "0.55": 0.884,
+    "0.60": 0.887,
+    "0.65": 0.884,
+    "0.70": 0.884,
+    "0.75": 0.884,
+    "0.80": 0.881,
+    "0.85": 0.873,
+    "0.90": 0.833,
+    "0.95": 0.766
+   },
+   "chosen": 0.2
+  },
+  "Jev 1.13 (OpenRouter)": {
+   "sweep": {
+    "0.05": 0.814,
+    "0.10": 0.845,
+    "0.15": 0.859,
+    "0.20": 0.873,
+    "0.25": 0.887,
+    "0.30": 0.907,
+    "0.35": 0.904,
+    "0.40": 0.91,
+    "0.45": 0.91,
+    "0.50": 0.907,
+    "0.55": 0.907,
+    "0.60": 0.918,
+    "0.65": 0.918,
+    "0.70": 0.918,
+    "0.75": 0.912,
+    "0.80": 0.904,
+    "0.85": 0.893,
+    "0.90": 0.856,
+    "0.95": 0.822
+   },
+   "chosen": 0.6
+  }
+ },
+ "ledger": {
+  "jev-decisions": {
+   "calls": 593,
+   "input_tokens": 960452.0,
+   "usd": 0.04033891
+  },
+  "luna-decisions": {
+   "calls": 593,
+   "input_tokens": 797527.0,
+   "usd": 0.0797527
+  }
+ }
+}

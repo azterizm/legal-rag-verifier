@@ -2777,3 +2777,45 @@ OpenAI Decisions API. Both return a typed answer with probabilities and no text.
   OpenRouter is sent `data_collection: deny`.
 - Before the method was fixed: one request to each API with the vendor's own example text, to confirm the
   request and reply shape. No test clause was sent.
+
+### Stop 66: results (2026-10-13)
+
+One run per API per test. 513 clauses each, every reply valid, none refused. Jev dropped the connection 5
+times; each clause was answered on a retry. Method as fixed; no departure. The 27B and the 1B reproduce their
+committed figures in the same report.
+
+False rollbacks / wrong sentences caught, then accuracy (test 1: 206 right, 148 wrong; test 2: 84 right, 67
+wrong):
+
+| Judge | Test 1 | Test 2 | Seconds per call, p50 | Cost per 1,000 calls |
+|---|---|---|---|---|
+| Qwen 27B 4-bit, short reply | 7 / 133, 93.8 % | 8 / 60, 90.1 % | 0.54 (next to its server) | rented GPU |
+| Jev 1.13 (OpenRouter) | 10 / 125, 90.7 % | 8 / 57, 88.1 % | 0.64 and 0.72 | $0.07 |
+| OpenAI Decisions (gpt-6-luna) | 21 / 130, 89.0 % | 12 / 59, 86.8 % | 0.25 and 0.23 | $0.13 |
+| MiniCPM5-1B, trained on 18,152 clauses | 16 / 125, 89.0 % | 15 / 55, 82.1 % | 0.06 | rented GPU |
+
+- D1, by domain. Jev: software 91.8 % and 89.7 %, statutes 89.7 % and 86.3 %. OpenAI: software 88.2 % and
+  84.6 %, statutes 89.7 % and 89.0 %. The 27B: software 95.3 % and 89.7 %, statutes 92.4 % and 90.4 %. On answers
+  written with the source, false rollbacks on test 1 are 3 for the 27B, 4 for Jev and 12 for OpenAI (141 right
+  sentences).
+- D2, fixed reading. Jev is 3.1 and 2.0 points under the 27B. OpenAI is 4.8 and 3.3 under. The limit is 3 on
+  both tests. **Neither API is near the 27B, and neither is better.** Jev misses the limit by 0.1 point on test
+  1. Paired against the 27B: Jev 3 against 14 on test 1 (p = 0.013) and 4 against 7 on test 2 (p = 0.55);
+  OpenAI 8 against 25 (p = 0.005) and 2 against 7 (p = 0.18). The 27B is ahead on test 1; on test 2 the
+  difference is not shown.
+- D3, same label as the 27B. Jev 326 of 360 and 130 of 153. OpenAI 314 of 360 and 137 of 153.
+- D4, time from this machine, 40 clauses one at a time. OpenAI 0.25 s and 0.23 s at the median (p95 1.16 and
+  1.06; its own processing time 0.10 and 0.09 s). Jev 0.64 s and 0.72 s (p95 0.94 and 1.21). Both include the
+  network. The 27B's 0.54 s does not.
+- D5, cost. OpenAI $0.080 for 593 calls at the list price, Jev $0.040 for 593 calls as returned. Mean input per
+  call is about 1,350 tokens for OpenAI and 1,620 for Jev.
+- D6, threshold from test 1. OpenAI t = 0.20, Jev t = 0.60. On test 2 OpenAI stays at 86.8 % (9 / 56) and Jev
+  at 88.1 % (10 / 59). The threshold gives nothing on the unseen test. On test 1, where it was chosen, it reads
+  91.2 % and 91.8 %.
+
+Reading: both APIs judge at the level of the trained 1B or above with no training and no server to run. Jev is
+the closer one, 2 to 3 points under the 27B. OpenAI is the faster one. The 27B stays the judge on accuracy. The
+limits of the method apply: finished answers only, one prompt wording, neither API tried inside the loop.
+
+Spend: OpenAI $0.08, OpenRouter $0.04. Raw: `results/fresh_arms/decisions.json`,
+`results/fresh2_arms/decisions.json`, `results/decisions/ledger.json`, labels in `results/<set>/labels/`.
