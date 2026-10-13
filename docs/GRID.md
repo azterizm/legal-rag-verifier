@@ -2737,3 +2737,43 @@ Kept: the adapter of each student is on this machine under `artefacts/minicpm5-1
 each; sha256 `c98d837e…2988` for the first, `50755fb5…1f5e` for the second). The base model is Apache-2.0.
 Publishing them waits for your go.
 
+
+## Stop 66: two hosted decision APIs as the judge (method fixed 2026-10-13, before any run)
+
+Your instruction: benchmark the current best judge against two decision APIs, Jev through OpenRouter and the
+OpenAI Decisions API. Both return a typed answer with probabilities and no text.
+
+- Judges. OpenAI Decisions API, `POST api.openai.com/v1/decisions`, model `gpt-6-luna`. Jev,
+  `POST openrouter.ai/api/alpha/decisions`, model `typesafe/jev-1.13` (the pinned release, not `jev-latest`).
+  The model string each reply returns is recorded.
+- Clauses. Every clause of the short-reply arm on both tests: 360 on test 1, 153 on test 2. One request per
+  clause per API. Nothing is tuned on these replies for the main arm.
+- What is sent. The stop 42 prompt up to its label list: the passages, the answer so far, the sentence to check.
+  No question, no grade. Two `choice` questions in the same request, as the 27B gives both in one reply:
+  - `label`: supported, contradicted or not_stated, each with its definition word for word from the stop 42
+    prompt.
+  - `passage`: 0 or the number of a passage. It is asked because the passage number changes the verdict of 8
+    sentences on test 1 and 2 on test 2 (checked locally on the 27B's labels, no API call).
+- Main arm. The label is the returned choice. No threshold. A refused or failed reply counts as not_stated, as
+  for any judge, and is counted.
+- Scoring. As stop 62 (`scripts/decisions.py report`): the same replay, strict placement with figures to the
+  judge, your grades, beside the Qwen 27B 4-bit short reply (93.8 % and 90.1 %) and the trained 1B.
+- Readings, fixed now:
+  - D1: false rollbacks, caught and accuracy per test and per domain.
+  - D2: an API is near the 27B if it is at most 3 points under it on both tests (the stop 62 limit). It is
+    better if it is above it on both tests with p < 0.05 on the paired sign test on each.
+  - D3: clauses with the same label as the 27B.
+  - D4: seconds per call, 40 clauses one at a time on an open connection, from this machine. The 27B's 0.54 s
+    was measured next to its server, so the two are not like for like. Reported, no pass or fail.
+  - D5: cost per 1,000 calls, from the tokens and cost each reply returns.
+  - D6: one threshold reading from the same replies. Supported only if its probability is at least t, otherwise
+    the likelier of the other two. t is chosen on test 1 (most accurate; of equals the nearest to 0.5) and
+    applied to test 2. Both vendors say to set thresholds on labelled examples.
+- Limits. Finished answers only; neither API runs inside the loop. One prompt wording, written before any reply
+  was seen. The predicate question type is not tested. Test 1 has been used for choices since stop 47.
+- Fail safe. Each reply is appended as it returns; a rerun asks only what is missing. Rate limits, server errors
+  and timeouts back off and retry, 6 attempts.
+- Spend. Expected under $0.50 in total (about 0.75 M input tokens per API). Stop in code at $2 per API.
+  OpenRouter is sent `data_collection: deny`.
+- Before the method was fixed: one request to each API with the vendor's own example text, to confirm the
+  request and reply shape. No test clause was sent.
