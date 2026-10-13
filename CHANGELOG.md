@@ -6,6 +6,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-13
+
 ### Added
 - `VerifierConfig.ungrounded_figure` (`"rollback"` by default, or `"judge"`): with `"judge"` a
   sentence whose only failed claims are figures not found in the source goes to the entailment
@@ -14,6 +16,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - A list number followed by text ("1. The employee ...") no longer ends a sentence, and a list
   number at the start of a text is not read as a figure claim.
+
+### Evaluation
+- An LLM judge in the entailment check's place, in `scripts/` and not in the package: Qwen 27B at
+  4 bits as generator and judge on one SGLang server. Two hand-graded tests (354 and 151
+  sentences), the live loop on 40 questions, a 1B judge trained on its labels
+  ([adapters](https://huggingface.co/azterizm/minicpm5-1b-clause-judge)) and two hosted decision
+  APIs as the judge. Figures in `docs/measurements.md`, methods in `docs/GRID.md`.
+- `docs/VERDICT.md` now states both findings: the loop with the DeBERTa head as the auditor, and
+  with the LLM judge.
 
 ## [0.1.0] - 2026-10-08
 
@@ -45,4 +56,5 @@ English.
   injection A/B; the placement and attention replay; injection v2 (question restated in the inserted
   turn, `legal-rag-router` as the abstention gate). Proof-of-concept verdict: `docs/VERDICT.md`.
 
+[0.2.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.2.0
 [0.1.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.1.0
