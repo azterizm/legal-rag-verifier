@@ -6,7 +6,8 @@ abstract: >-
   A verifier that checks each sentence of a legal RAG answer against the supplied statutory
   provisions while the model generates: a deterministic claim check and a DeBERTa-v3 NLI head.
   A rejected sentence is rolled back on the inference server's prefix cache and regenerated,
-  optionally with the provision inserted at the cut point.
+  optionally with the provision inserted at the cut point. The repository also holds the
+  evaluation with an LLM judge in the NLI head's place, which is not part of the package.
 authors:
   - given-names: Abdullah
     family-names: Memon
@@ -22,4 +23,17 @@ keywords:
   - retrieval-augmented generation
   - hallucination
   - natural language inference
+  - llm judge
   - kv-cache
+references:
+  - type: generic
+    title: "minicpm5-1b-clause-judge (Revision 55f64fb)"
+    authors:
+      - given-names: Abdullah
+        family-names: Memon
+    year: 2026
+    doi: 10.57967/hf/10885
+    url: "https://huggingface.co/azterizm/minicpm5-1b-clause-judge"
+    publisher:
+      name: Hugging Face
+    notes: "LoRA adapters of the 1B clause judge trained in the evaluation."
