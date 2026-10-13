@@ -2738,7 +2738,7 @@ Modal $27.90 of $55, Opus 5.5 $15.05 of $40, Pro $13.75 of $15.
 
 Kept: the adapter of each student is on this machine under `artefacts/minicpm5-1b-judge/` (git-ignored; 45 MB
 each; sha256 `c98d837e…2988` for the first, `50755fb5…1f5e` for the second). The base model is Apache-2.0.
-Published 2026-10-13 at `huggingface.co/azterizm/minicpm5-1b-clause-judge`.
+Published 2026-10-13 at `huggingface.co/azterizm/minicpm5-1b-clause-judge`, DOI `10.57967/hf/10885`.
 
 
 ## Stop 66: two hosted decision APIs as the judge (method fixed 2026-10-13, before any run)

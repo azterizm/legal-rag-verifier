@@ -18,11 +18,18 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | None planned. 0.2.0 is released. Stops 64 to 66 are done, the adapters are published and Modal storage is cleared. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
-| Waiting on you | Nothing is needed to continue. Open: a DOI for the adapters, minted on the Hub when the name is final. Pro has $1.25 left under its stop |
+| Waiting on you | Nothing. No item is open. Pro has $1.25 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-13 (DOI): **The adapters have a DOI.** You minted it on the Hub: `10.57967/hf/10885`, registered at
+  DataCite for revision `55f64fb` (author Abdullah Memon, publisher Hugging Face). It resolves to the repository.
+  Before minting, the model card gained a link to this repository and to the method and figures. After, the DOI
+  and its citation were added to the card (revision `7cd8ee5`); the adapter files are unchanged. The repository
+  is now locked on the Hub against deletion, renaming and a visibility change. The DOI is in `README.md`,
+  `docs/VERDICT.md` and GRID. The 0.2.0 changelog section is left as released. **Resume:** nothing planned.
 
 - 2026-10-13 (release 0.2.0): **Pushed, tagged and released.** Your go; version 0.2.0 and a rebase merge by your
   choice. Before the push the 108 local commits were checked: no key, token or account name in any commit, nothing
