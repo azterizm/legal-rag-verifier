@@ -18,11 +18,21 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | None planned. Stops 64 and 65 are done and the Modal work is wrapped up. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
-| Waiting on you | Your go, each separately: publishing the two 1B adapters in `artefacts/minicpm5-1b-judge/` (Apache-2.0 base; training data stays local); rewriting the opening verdict paragraph of `docs/VERDICT.md`, which still states the 2026-10-08 finding; anything to delete on Modal (nothing has been deleted). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.25 left under its stop |
+| Waiting on you | Your go, each separately: rewriting the opening verdict paragraph of `docs/VERDICT.md`, which still states the 2026-10-08 finding; the remaining Modal clean-up (you said you will set it up). Open: five disputed grades on the second test; the four fs-02 grades. Pro has $1.25 left under its stop |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
+
+- 2026-10-13 (wrap-up): **Adapters published, Modal volumes deleted.** Your go. Both 1B adapters, their training
+  histories and the model card are public at `huggingface.co/azterizm/minicpm5-1b-clause-judge` (Apache-2.0,
+  author Abdullah Memon, Memon Systems; commit `748d7cd`). The published sha256 of each adapter equals the one in
+  GRID. Checked before publishing: `run2`, loaded from the same folder layout on this machine, gives the same
+  label and passage as the Modal run on 411 of 415 held-out clauses (362 agree with the teacher; Modal 360).
+  Checked after: both adapters load from the Hub without a token. Then the runs volume and the model cache were
+  deleted on Modal. Before that, both adapters were downloaded again and matched the local copies, and the
+  training data on the volume had the same size as the local files. Not kept: merged models, checkpoints, smoke
+  runs, downloaded base weights. No Modal run, no spend. **Resume:** your decisions in Status.
 
 - 2026-10-13 (66): **Two hosted decision APIs as the judge.** Your instruction. Jev 1.13 through OpenRouter and
   the OpenAI Decisions API (gpt-6-luna), one request per clause of the short-reply arm on both tests, two typed
