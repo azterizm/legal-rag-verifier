@@ -3175,3 +3175,44 @@ answer failed when its server ran out of memory and was asked again. Modal $10.0
   first pass, 117 more when asked again with a reason first. **303 are left for you**:
   `results/live68/leftover.md` (git-ignored), your column file `results/live68/leftover.csv` (`correct`: yes,
   no or unsure). Then `scripts/live68_grade.py report`. Opus 5.5 $8.50 for this stop ($27.08 of $40).
+
+### Stop 68: results (2026-10-14)
+
+Your 303 grades were taken as written. You graded them first with Gemini 4 Argon High in six parts, outside this
+repository, then refined them by hand. A second header line from joining the parts was removed; nothing else
+was changed. Then `live68_grade.py report`, once. Raw: `results/live68_report.json`. Grades: Opus 5.5 and
+Gemini 3.8 Flash (2,665), you (303), carried (474). The engine's refusal is not graded.
+
+Closed-book, 240 questions per generator, every arm on every question.
+
+| Generator | Arm | Answers with a wrong sentence | Wrong sentences (95 % interval) | Right per answer | The refusal | Seconds, p50 |
+|---|---|---|---|---|---|---|
+| Qwen 27B | none | 132 | 225 / 428, 52.6 % (47.8 to 57.3) | 0.85 | 0 % | 1.2 |
+| Qwen 27B | turn | 23 | 25 / 330, 7.6 % (5.2 to 10.9) | 1.27 | 4 % | 3.1 |
+| Qwen 27B | plain | 25 | 29 / 260, 11.2 % (7.9 to 15.6) | 0.96 | 30 % | 2.4 |
+| Qwen 2.5 7B | none | 198 | 384 / 523, 73.4 % (69.5 to 77.0) | 0.57 | 0 % | 1.1 |
+| Qwen 2.5 7B | turn | 28 | 34 / 578, 5.9 % (4.2 to 8.1) | 2.27 | 7 % | 4.1 |
+| Qwen 2.5 7B | plain | 32 | 42 / 358, 11.7 % (8.8 to 15.5) | 1.32 | 19 % | 3.2 |
+| MiniCPM5-1B | none | 92 | 172 / 603, 28.5 % (25.1 to 32.3) | 1.80 | 0 % | 0.2 |
+| MiniCPM5-1B | turn | 53 | 78 / 775, 10.1 % (8.1 to 12.4) | 2.90 | 16 % | 3.6 |
+| MiniCPM5-1B | plain | 21 | 46 / 503, 9.1 % (6.9 to 12.0) | 1.90 | 48 % | 1.8 |
+
+- Fixed reading, `plain` against `turn` (answers with a wrong sentence, only plain and only turn, Holm p):
+  27B 7 and 5, p = 1.0; 7B 16 and 12, p = 1.0; 1B 12 and 44, p = 0.00006. **`plain` is better for none of
+  the three.** For the 1B it has fewer wrong answers, but its share of the refusal is 48 % against 16 %, over
+  the 5-point limit fixed in advance.
+- For the 27B, the answer to "does it improve accuracy further": **no.** The plain-text passage is not told
+  apart from the turn on wrong answers, and it refuses 30 % of points against 4 %.
+- Each loop against no loop (answers with a wrong sentence, only the loop and only none): 27B turn 3 and 112,
+  plain 5 and 112; 7B turn 1 and 171, plain 1 and 167; 1B turn 34 and 73, plain 8 and 79. Every p under 0.001.
+- By set, the loops hold on the 120 new pool questions: answers with a wrong sentence, none against turn, 27B
+  61 and 9, 7B 101 and 11, 1B 31 and 28 of 120. The 1B's no-loop answers on the pool are mostly "I do not have
+  that information", which the sheet's rule grades right.
+
+Reading: the turn loop stays the better loop with all three generators. It cuts the answers that hold a wrong
+statement from memory to a ninth for the 27B and a seventh for the 7B, and keeps more right statements than the
+plain loop. The plain-text passage, best on stop 67's first retry, does not carry into the live loop: after it
+the model often ends the answer, the engine refuses, and fewer right statements remain. Limits as fixed:
+closed-book only, one greedy run, graders are two models and you with a third model's help.
+
+Spend, stop 68: Modal $10.03, Opus 5.5 $8.50. Totals: Modal $40.05 of $55, Opus 5.5 $27.08 of $40.

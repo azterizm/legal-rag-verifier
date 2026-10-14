@@ -217,6 +217,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    current user turn (26 good against 19, not told apart). The passage as plain tokens beat the turn (40 against
    19). Raising attention on the passage made retries worse. Retries with the source in the prompt were too few
    to read (11).
+   The plain-text passage was then run inside the live loop (stop 68), closed-book, on 240 questions with three
+   generators. The loop with the source as a turn cut answers holding a wrong sentence from 132 to 23 for the 27B,
+   198 to 28 for Qwen 2.5 7B and 92 to 53 for MiniCPM5-1B. The plain-text passage was better for none of them.
+   After it the model often ended the answer and the engine refused: 30 % of the 27B's points against 4 %.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
