@@ -344,12 +344,18 @@ def premises_for(states: Sequence[Mapping[str, Any]]) -> dict[str, Premise]:
 
         by_id = {r["id"]: r for r in rows("test")}
         out |= {s["hash"]: premise(by_id[s["id"]]) for s in pilot_rows}
-    fresh = [s for s in states if s["set"] != "pilot"]
-    if fresh:
+    sets = sorted({s["set"] for s in states} - {"pilot"})
+    if sets:
         import fresh_battery as fb  # noqa: PLC0415
 
-        by_id = {r["id"]: r for r in fb.rows()}
-        out |= {s["hash"]: fb.premise(by_id[s["id"]]) for s in fresh}
+        keep = fb.BATTERY
+        try:
+            for name in sets:  # each set's questions, whatever FRESH_SET was at import
+                fb.BATTERY = ROOT / "batteries" / name.partition("-")[0]
+                by_id = {r["id"]: r for r in fb.rows()}
+                out |= {s["hash"]: fb.premise(by_id[s["id"]]) for s in states if s["set"] == name}
+        finally:
+            fb.BATTERY = keep
     return out
 
 
