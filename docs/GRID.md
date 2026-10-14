@@ -2940,3 +2940,11 @@ Written with the code, before any GPU call.
 - Code: `scripts/retry_states.py` (states, the judge's prompts, the factor), `scripts/kv_retry.py` (the arms),
   entrypoints `retry_*` in `scripts/modal_distill.py`; tests in `tests/test_kv_retry.py` and
   `tests/test_retry_states.py`.
+- Probe (2026-10-14, not a result). Rotation on the real 7B, a 180-token passage moved by 1,500 positions:
+  relative error of the rotated keys against keys computed at that position is 0.1 % in layer 0 and 2 to 16 %
+  in deeper layers in bf16, against 0.02 to 3 % for a control moved by one position. In float32 it is at most
+  1.2e-5 in every layer. The rotation is exact; the bf16 gap is rounding of the rotary angles at large
+  positions, which changes the attention inside the passage and grows with depth. The run stays in bf16 as
+  fixed. K and K-far carry it alike; P does not, since it computes the passage in context.
+- Probe, the arms on 3 states: every arm ran. K and KA ended the answer at once (EOS, no token) on one state;
+  an empty retry counts as not good, as fixed.
