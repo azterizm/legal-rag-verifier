@@ -1160,3 +1160,18 @@ from the same state. Graded by Opus 5.5 and Gemini 3.8 Flash, open items by hand
 Plain tokens beat the user turn on good retries (33 against 12, Holm p = 0.015). The spliced KV does not beat the
 turn (p = 0.60). Nearness cuts wrong retries (42 against 4) and makes the rejected sentence less likely (86 of 95)
 but does not add good ones. More attention on the passage makes retries worse. With the source, 11 states only.
+
+## The plain-text passage in the live loop, three generators (stop 68, 2026-10-14; method in `docs/GRID.md`)
+
+Closed-book, 240 questions per generator (120 fresh, 120 new). Answers that hold at least one sentence graded
+wrong, and wrong sentences among those graded. The engine's refusal is counted apart.
+
+| Generator | No loop | Loop, source as a turn | Loop, plain-text passage |
+|---|---|---|---|
+| Qwen 27B | 132 answers, 52.6 % | 23 answers, 7.6 %, refusal 4 % | 25 answers, 11.2 %, refusal 30 % |
+| Qwen 2.5 7B | 198 answers, 73.4 % | 28 answers, 5.9 %, refusal 7 % | 32 answers, 11.7 %, refusal 19 % |
+| MiniCPM5-1B | 92 answers, 28.5 % | 53 answers, 10.1 %, refusal 16 % | 21 answers, 9.1 %, refusal 48 % |
+
+The turn loop cuts wrong answers for every generator (p < 0.001 against no loop). The plain-text passage is
+better for none: not told apart for the two Qwen models, and for the 1B fewer wrong answers bought with 48 %
+refusals.
