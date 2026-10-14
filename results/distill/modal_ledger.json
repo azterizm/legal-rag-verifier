@@ -7474,5 +7474,26 @@
   "seconds": 27.1,
   "usd": 0.0169,
   "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen27",
+  "gpu": "L40S",
+  "seconds": 54.0,
+  "usd": 0.0337,
+  "note": "pool plain: 6 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 460.8,
+  "usd": 0.287,
+  "note": "no server"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 471.2,
+  "usd": 0.2935,
+  "note": "no server"
  }
 ]

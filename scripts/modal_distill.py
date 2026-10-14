@@ -2285,8 +2285,8 @@ LIVE68 = {  # generator → (model, revision, extra server arguments)
 LIVE68_JUDGE = "qwen27-ar4"
 GENERATOR_PORT = 30001
 # Your choice of 2026-10-14: the 7B and the 1B share the judge's L40S (judge share, GPU, generator
-# share of the card's memory).
-LIVE68_SHARED = {"qwen7": ("0.48", "0", "0.40"), "minicpm1": ("0.70", "0", "0.18")}
+# share of the memory free when it starts: SGLang sizes from that).
+LIVE68_SHARED = {"qwen7": ("0.48", "0", "0.90"), "minicpm1": ("0.70", "0", "0.80")}
 
 
 def _sglang(
