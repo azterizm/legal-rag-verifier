@@ -2284,6 +2284,9 @@ LIVE68 = {  # generator → (model, revision, extra server arguments)
 }
 LIVE68_JUDGE = "qwen27-ar4"
 GENERATOR_PORT = 30001
+# Your choice of 2026-10-14: the 7B and the 1B share the judge's L40S (judge share, GPU, generator
+# share of the card's memory).
+LIVE68_SHARED = {"qwen7": ("0.48", "0", "0.40"), "minicpm1": ("0.70", "0", "0.18")}
 
 
 def _sglang(
@@ -2308,6 +2311,7 @@ class _Live68:
     the judge's server (stops 59 and 65); the others run on a second GPU."""
 
     gen: str
+    shared = False  # the generator on the judge's GPU (stop 68, from the 7B's and 1B's middle on)
 
     @modal.enter()
     def start(self) -> None:
@@ -2315,18 +2319,26 @@ class _Live68:
         self.started = time.time()
         spec = JUDGES[LIVE68_JUDGE]
         model, revision, args = LIVE68[self.gen]
-        self.servers = [
-            _sglang(spec["model"], spec["revision"], PORT, spec["args"], gpu="0", mem="0.85")
-        ]
+        judge_mem, gen_gpu, gen_mem = "0.85", "1", "0.85"
+        if self.shared:
+            judge_mem, gen_gpu, gen_mem = LIVE68_SHARED[self.gen]
         judge_url = f"http://127.0.0.1:{PORT}"
         gen_url = judge_url
-        if self.gen != "qwen27":
-            self.servers.append(_sglang(model, revision, GENERATOR_PORT, args, gpu="1", mem="0.85"))
-            gen_url = f"http://127.0.0.1:{GENERATOR_PORT}"
+        self.servers: list[Any] = []
         self.gen_url, self.model = gen_url, model
         try:
-            for server, url in zip(self.servers, [judge_url, gen_url], strict=False):
-                _wait(server, url)
+            # one server at a time: each sizes its cache from the memory free when it starts
+            self.servers.append(
+                _sglang(spec["model"], spec["revision"], PORT, spec["args"], gpu="0", mem=judge_mem)
+            )
+            _wait(self.servers[0], judge_url)
+            if self.gen != "qwen27":
+                gen_url = f"http://127.0.0.1:{GENERATOR_PORT}"
+                self.gen_url = gen_url
+                self.servers.append(
+                    _sglang(model, revision, GENERATOR_PORT, args, gpu=gen_gpu, mem=gen_mem)
+                )
+                _wait(self.servers[1], gen_url)
             import live_loop as ll  # noqa: PLC0415
             from auditor_judge import server_chat  # noqa: PLC0415
 
@@ -2416,6 +2428,12 @@ class Live68Two(_Live68):
     gen: str = modal.parameter()
 
 
+@app.cls(gpu="L40S", **_LIVE68_OPTIONS)
+class Live68Shared(_Live68):
+    gen: str = modal.parameter()
+    shared = True
+
+
 @app.function(image=retry_image, timeout=3 * 3600, volumes={"/hf": weights})
 def live68_weights(*, fetch: bool = False) -> dict[str, str]:
     """CPU: whether each model of stop 68 is on the volume, and with ``fetch`` its download."""
@@ -2448,14 +2466,15 @@ def live68(
     sets: str = "fresh,fresh2,pool",
     arms: str = "none,turn,plain",
     limit: int = 0,
+    shared: bool = False,  # noqa: FBT001, FBT002
 ) -> None:
     """Stop 68: closed-book answers of one generator, per arm; resumable."""
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
     import live68 as l68  # noqa: PLC0415
     import modal_ledger as ledger  # noqa: PLC0415
 
-    two = gen != "qwen27"
-    runner = (Live68Two if two else Live68One)(gen=gen)
+    two = gen != "qwen27" and not shared
+    runner = (Live68Shared if shared else Live68Two if two else Live68One)(gen=gen)
     gpus = 2 if two else 1
     startup_recorded, failed = False, 0
     for set_name in sets.split(","):

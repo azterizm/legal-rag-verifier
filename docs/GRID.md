@@ -3137,3 +3137,8 @@ questions; two model graders and you on what they leave open.
 - Each answer and its trace are appended as their chunk returns, keyed by set, question and arm; a rerun asks
   only what is missing.
 - Nothing changes in `src/`: the `plain` arm is a subclass of the engine in `scripts/live_loop.py`.
+- Change during the run (2026-10-14), your choice: at about 20 % of the run the pace pointed to about $20, over
+  the $14 stop. From then on the 7B and the 1B run on one L40S shared with the 27B judge (judge 48 % and
+  generator 40 % of the card for the 7B; 70 % and 18 % for the 1B), the judge's server started first. Same
+  models, decoding, judge and engine. Answers made on two GPUs before the change are kept. The two stopped
+  containers ran about three minutes after their runs were stopped; that time is in the ledger as an estimate.
