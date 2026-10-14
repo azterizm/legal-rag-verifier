@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
+from legal_rag_verifier.engine import INJECT_TEMPLATE
 from legal_rag_verifier.premise import Premise
 from legal_rag_verifier.verifier import Verdict
 from scripts import live_loop as ll
@@ -144,3 +145,46 @@ def test_the_judge_asks_for_the_short_reply_by_default() -> None:
     ll.LiveJudge(longer, "judge@rev", reply="reason").score(["a passage"], "A sentence.")
     assert longer.users[0].endswith('"reason" (one sentence).')
     assert chat.users[0].rsplit("Return JSON", 1)[0] == longer.users[0].rsplit("Return JSON", 1)[0]
+
+
+def test_plain_arm_writes_the_source_for_the_retry_only() -> None:
+    class ByContent:
+        def __call__(self, messages: list[dict[str, str]]) -> dict[str, Any]:
+            sentence = (
+                messages[1]["content"].split("Sentence to check:\n<<<\n")[1].split("\n>>>")[0]
+            )
+            label = "supported" if "123,543" in sentence else "not_stated"
+            reply = json.dumps({"label": label, "passage": 1, "reason": "r"})
+            return {"content": reply, "ms": 3.0, "tokens": 5}
+
+    verifier = ll.LoopVerifier(ll.LiveJudge(ByContent(), "judge@rev"))
+    generator = ll.engine(ScriptedBackend([]), verifier, "plain", "legal")
+    assert isinstance(generator, ll.PlainGenerator)
+    note = generator.backend.decode(generator._source(SOURCE, [0], set())[0])
+    assert note.startswith("\n\n(Source: ")
+    generator.backend = ScriptedBackend(
+        [
+            "I do not know the limit.",
+            note + "The limit is £123,543. Still from the note.",
+            # what follows the retry when the note has left the context
+            "The limit is £123,543. The award is capped at £123,543.",
+        ]
+    )
+    out = generator.generate_verified(QUERY, SOURCE)
+    assert out.text == "The limit is £123,543. The award is capped at £123,543."
+    assert "(Source" not in out.text
+    assert generator.removed == 1
+    first = out.trace["sentences"][0]
+    assert [a["steering"] for a in first["attempts"]] == [None, "inject"]
+    assert out.trace["engine"]["inject_template"] == INJECT_TEMPLATE
+
+
+def test_the_turn_is_built_from_the_model_s_chat_template() -> None:
+    class Tokenizer:
+        def apply_chat_template(self, messages: list[dict[str, str]], **kwargs: Any) -> str:
+            assert kwargs["enable_thinking"] is False
+            return "".join(f"<{m['role']}>{m['content']}</{m['role']}>" for m in messages) + "<a>"
+
+    turn = ll.turn_template(Tokenizer(), "software")
+    assert turn.startswith("</assistant><user>The documentation relevant to the question")
+    assert turn.format(query="Q?", source="S").endswith("from exactly where it stops.</user><a>")
