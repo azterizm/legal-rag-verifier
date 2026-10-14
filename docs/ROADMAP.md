@@ -14,16 +14,17 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 
 | Field | Value |
 |---|---|
-| Last updated | 2026-10-13 |
+| Last updated | 2026-10-14 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | None planned. 0.2.0 is released. Stops 64 to 66 are done, the adapters are published and Modal storage is cleared. The configuration that stands: Qwen 27B AutoRound 4-bit as generator and judge on one SGLang server, the short judge reply, strict placement, `ungrounded_figure="judge"` optional (about 90 % on unseen sentences; 1.9 s per answer at the median with the source in the prompt). Lower-cost judges, both below it: the trained MiniCPM5-1B (89.0 % and 82.1 %, 0.06 s per call) and DeBERTa (68.7 % and 58.3 %). Hosted decision APIs as the judge, both below it too (stop 66): Jev 1.13 (90.7 % and 88.1 %) and OpenAI Decisions (89.0 % and 86.8 %) |
-| Waiting on you | Nothing. No item is open. Pro has $1.25 left under its stop |
+| Next step | Stop 67 (does the retry repeat the error, and the KV cache edit): the run and the readings that need no grade are done (GRID § Stop 67). Next: grade the 596 retries on `results/retry/sheet.md`, then `scripts/retry_report.py report`. Stop 68 (MiniCPM5-1B as generator) follows with its own halt |
+| Waiting on you | Who grades the 596 stop 67 retries: you, or model graders (Pro has $1.25 left under its stop) |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-14 (stop 67): **Retries after a real error, and the KV cache edit.** Your go. Method fixed and committed before any run, with two notes before any label (the turn in Qwen 2.5's format; KA against T added to the corrected comparisons). 117 states from the graded fresh answers of the 7B (106 with X wrong). Rotation exact in float32. Factor f = 4 set on the stop 29 states. Six arms ran on every state; the 27B labelled every retry. Nearness shown on log P(X) (86 of 95 closed-book, 11 of 11 with the source); the boost acted on 117 of 117. T copies the passage in half its retries; K ends the answer at once in 25 of 95. Modal $2.12. **Resume:** the grader for 596 retries, then `scripts/retry_report.py report`
 - 2026-10-13 (citation): **`CITATION.cff` covers the evaluation.** Your go. The abstract gains one sentence: the
   repository also holds the evaluation with an LLM judge, which is not part of the package. The adapters are
   added under `references` with their DOI, and `llm judge` to the keywords. The file validates against CFF

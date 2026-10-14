@@ -2955,3 +2955,40 @@ Written with the code, before any GPU call.
 - Correction, before any retry is labelled or graded: the reading "K or KA has more good retries than T with a
   corrected p" needs KA against T, which the five comparisons left out. The Holm family is six: K against T,
   KA against T, KA against K, K against K-far, P against T, T against B.
+
+### Stop 67: the run, readings that need no grade (2026-10-14)
+
+All 117 states ran every arm, no error. The 27B labelled 1,060 prompts (711 and 349), no error. `uv run
+python scripts/retry_report.py mechanics`, raw in `results/retry/mechanics.json`. Parity: greedy decoding from
+the state gives X's first token on 80 of 117 states and all of X on 7, so the state is close to, not the same
+as, what the server held (a limit fixed above).
+
+Primary set, closed-book, 95 states (X wrong). Judge passed: the 27B's verdict on the retry under the stop 65
+settings. Copied: 80 % or more of the retry's word 5-grams are in the passage. log P(X): change against the
+state with nothing added (in T, X without its leading space after the turn).
+
+| Arm | Empty | Judge passed | Copied | Attention share | log P(X) change | Seconds, p50 |
+|---|---|---|---|---|---|---|
+| B | 2 | 18 | 0 | | 0 | 0.69 |
+| T | 0 | 77 | 49 | 0.24 | -41.6 | 1.09 |
+| P | 19 | 46 | 0 | 0.28 | -24.3 | 0.89 |
+| K | 25 | 36 | 0 | 0.43 | -22.8 | 0.60 |
+| K-far | 0 | 44 | 0 | 0.34 | -10.2 | 1.03 |
+| KA | 17 | 33 | 0 | 0.68 | -33.7 | 0.80 |
+
+With the source, 11 states: judge passed B 6, T 8 (5 copied), P 3, K 5, K-far 4, KA 4; empty P 1, K 2, KA 2.
+
+- The boost acted: KA's share on the passage is above K's on 117 of 117 states.
+- Nearness on log P(X): the passage next to the cursor makes X less likely than the same passage far from it on
+  86 of 95 closed-book states (sign test p < 1e-6) and on 11 of 11 with the source (p = 0.001). **Nearness is
+  shown for the KV edit** by the reading fixed above.
+- T passes the judge most often, but half its retries copy the passage, as in stop 36. Empty retries are the
+  model ending the answer at once after a spliced or fed passage: K 25, P 19, KA 17 of 95.
+- Good and wrong retries wait for the grades. Sentences to grade: 702 retries, 79 empty, 13 carried as right
+  from an earlier sheet, **596 to grade** (4 of them carried as wrong, needing "repeats the error" only). The
+  sheet is `results/retry/sheet.md` (git-ignored), the key `results/retry/key.json` (git-ignored), the column
+  file `results/retry/grades.csv`. **Halt for you**: who grades.
+
+Spend, stop 67: Modal $2.12 ($30.02 of $55). Router: none.
+- Key sha256 `35f05357bd14d3aa02c03702a0d14af1f6c9ddab83bb8d5f28bf78c2ce804adf`, sheet sha256
+  `d971b4e0e6184888250ea8899ff57295a8e8a6d51a7d2f78a9acf58c2e8a7047`, recorded before any grade.
