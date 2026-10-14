@@ -1947,3 +1947,268 @@ def aware_code(name: str = "modeling_k2_horizon.py", out: str = "") -> None:
     if out:
         Path(out).write_text(text, encoding="utf-8")
     print(len(text.splitlines()), "lines")
+
+
+# ------------------------------------------------------------------ stop 67: the retry arms
+
+retry_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install("torch==2.14.1", "transformers==5.18.0", "accelerate==1.15.0")
+    .env({"PYTHONPATH": "/app/src:/app/scripts", "HF_HOME": "/hf"})
+    .add_local_dir(ROOT / "src", "/app/src")
+    .add_local_file(ROOT / "scripts/kv_retry.py", "/app/scripts/kv_retry.py")
+)
+RETRY_STAGE = "stop67"
+RETRY_STOP = 12.0  # USD, GRID § Stop 67
+RETRY_CHUNK = 5  # states per remote call
+RETRY_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
+RETRY_JUDGE = "qwen27-ar4"
+RETRY_MODELS = {GENERATOR: GENERATOR_REVISION, QUANT[RETRY_JUDGE][0]: QUANT[RETRY_JUDGE][1]}
+
+
+@app.function(image=retry_image, timeout=3 * 3600, volumes={"/hf": weights})
+def retry_weights(*, fetch: bool = False) -> dict[str, str]:
+    """CPU: whether each model of stop 67 is on the volume, and with ``fetch`` its download."""
+    from huggingface_hub import snapshot_download  # noqa: PLC0415
+
+    out = {}
+    for model, revision in RETRY_MODELS.items():
+        try:
+            snapshot_download(model, revision=revision, local_files_only=True)
+            out[model] = "on the volume"
+        except Exception:  # noqa: BLE001 - not cached
+            if not fetch:
+                out[model] = "missing"
+                continue
+            snapshot_download(model, revision=revision)
+            weights.commit()
+            out[model] = "downloaded"
+    return out
+
+
+@app.cls(
+    image=retry_image,
+    gpu="L40S",
+    volumes={"/hf": weights},
+    timeout=3600,
+    max_containers=1,
+    scaledown_window=120,
+)
+class RetryGenerator:
+    """Qwen 2.5 7B in transformers with the stop 67 attention, loaded once per container."""
+
+    @modal.enter()
+    def start(self) -> None:
+        import torch  # noqa: PLC0415
+        import transformers  # noqa: PLC0415
+        from kv_retry import load  # noqa: PLC0415
+
+        self.started = time.time()
+        self.backend = load(GENERATOR, GENERATOR_REVISION)
+        self.meta = {
+            "model": f"{GENERATOR}@{GENERATOR_REVISION}",
+            "transformers": transformers.__version__,
+            "torch": torch.__version__,
+            "gpu": torch.cuda.get_device_name(),
+        }
+        self.startup = time.time() - self.started
+
+    @modal.method()
+    def run(
+        self, states: list[dict[str, Any]], arms: list[str], factors: list[float]
+    ) -> dict[str, Any]:
+        """Each state's retries. Several ``factors`` run KA once per factor (the pilot)."""
+        import kv_retry  # noqa: PLC0415
+
+        t0 = time.time()
+        rows, errors = [], []
+        for state in states:
+            try:
+                if len(factors) > 1:
+                    out = {"hash": state["hash"], "arms": {}}
+                    for f in factors:
+                        out["arms"][f"KA@{f}"] = kv_retry.run_arm(self.backend, state, "KA", f)
+                    rows.append(out)
+                else:
+                    rows.append(kv_retry.run_state(self.backend, state, arms, factors[0]))
+            except Exception as exc:  # noqa: BLE001 - one bad state must not lose the chunk
+                import torch  # noqa: PLC0415
+
+                torch.cuda.empty_cache()
+                errors.append({"hash": state["hash"], "error": repr(exc)[:500]})
+        return {
+            "rows": rows,
+            "errors": errors,
+            "meta": self.meta,
+            "seconds": time.time() - t0,
+            "startup": self.startup,
+        }
+
+    @modal.method()
+    def rotation(self, tokens: list[int], delta: int) -> dict[str, Any]:
+        """Keys computed alone and rotated by ``delta`` against keys computed at that position."""
+        import kv_retry  # noqa: PLC0415
+
+        b = self.backend
+        alone = b.alone(tokens)
+        b.reset()
+        b.pos = delta
+        b.feed(tokens)
+        worst = 0.0
+        for (k, _), layer in zip(alone, b._cache.layers, strict=True):
+            diff = (kv_retry.rotate(b.model, k, delta).float() - layer.keys.float()).abs().max()
+            worst = max(worst, float(diff.item()))
+        b.reset()
+        return {"max_abs_diff": worst, "tokens": len(tokens), "delta": delta}
+
+
+def _retry_local() -> tuple[Any, Any]:
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import modal_ledger  # noqa: PLC0415
+    import retry_states  # noqa: PLC0415
+
+    return retry_states, modal_ledger
+
+
+def _retry_generate(kind: str, arms: list[str], factors: list[float], limit: int = 0) -> None:
+    """Every state of ``kind`` without retries yet, in chunks; each chunk appended as it returns."""
+    rs, ledger = _retry_local()
+    states = rs.read_jsonl(rs.OUT / f"states.{kind}.jsonl")
+    if not states:
+        raise SystemExit(f"no states for {kind}: run scripts/retry_states.py first")
+    path = rs.OUT / f"retries.{kind}.jsonl"
+    done = {r["hash"] for r in rs.read_jsonl(path)}
+    todo = [s for s in states if s["hash"] not in done]
+    todo = todo[:limit] if limit else todo
+    print(f"{kind}: {len(states)} states, {len(todo)} to run", flush=True)
+    generator = RetryGenerator()
+    startup_recorded = False
+    failed = 0
+    for at in range(0, len(todo), RETRY_CHUNK):
+        chunk = todo[at : at + RETRY_CHUNK]
+        ledger.check_stage(RETRY_STAGE, RETRY_STOP, "L40S", RETRY_ESTIMATE)
+        t0 = time.time()
+        seconds, note = 0.0, "failed"
+        try:
+            out = generator.run.remote(chunk, arms, factors)
+            with path.open("a", encoding="utf-8") as f:
+                for row in out["rows"]:
+                    f.write(json.dumps({**row, "meta": out["meta"]}, ensure_ascii=False) + "\n")
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            note = f"{kind}: {len(out['rows'])} states, {len(out['errors'])} errors"
+            for error in out["errors"]:
+                print(f"  {error['hash']}: {error['error']}", flush=True)
+            failed = 0
+        except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+            failed += 1
+            seconds = time.time() - t0
+            print(f"chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+        finally:
+            ledger.record(f"{RETRY_STAGE} generator", "L40S", seconds, note)
+        print(f"{kind}: {min(at + RETRY_CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
+        if failed >= 2:  # noqa: PLR2004
+            raise RuntimeError("two chunks failed in a row; stopped")
+    print(f"Modal: stage ${ledger.stage_spent(RETRY_STAGE):.2f}, total ${ledger.spent():.2f}")
+
+
+@app.local_entrypoint()
+def retry_check(fetch: bool = False) -> None:  # noqa: FBT001, FBT002
+    """Stop 67: are the generator and the judge on the volume; with ``--fetch``, download them."""
+    print(json.dumps(retry_weights.remote(fetch=fetch), indent=1))
+
+
+@app.local_entrypoint()
+def retry_probe() -> None:
+    """Stop 67 probe, not a result: the rotation on the real model, and every arm on 3 states."""
+    rs, ledger = _retry_local()
+    states = rs.read_jsonl(rs.OUT / "states.fresh.jsonl")
+    picks = [
+        next(s for s in states if s["mode"] == "closed" and s["x_grade"] == "no"),
+        next(s for s in states if s["mode"] == "source" and s["x_grade"] == "no"),
+        next(s for s in states if s["x_grade"] == "yes"),
+    ]
+    ledger.check_stage(RETRY_STAGE, RETRY_STOP, "L40S", RETRY_ESTIMATE)
+    generator = RetryGenerator()
+    t0 = time.time()
+    try:
+        rotation = generator.rotation.remote(picks[0]["passage"], 1500)
+        out = generator.run.remote(picks, list(KV_ARMS), [2.0])
+    finally:
+        ledger.record(f"{RETRY_STAGE} probe", "L40S", time.time() - t0, "probe")
+    probe = rs.OUT / "probe"
+    probe.mkdir(parents=True, exist_ok=True)
+    report = {"rotation": rotation, **out}
+    (probe / "probe.json").write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n")
+    print(json.dumps({"rotation": rotation, "errors": out["errors"], "meta": out["meta"]}))
+    for row in out["rows"]:
+        print(row["hash"], json.dumps(row["parity"], ensure_ascii=False)[:300])
+        for arm, r in row["arms"].items():
+            print(f"  {arm}: share={r['share']} logp={r['logp_x']} {r['retry'][:110]!r}")
+    print(f"Modal: stage ${ledger.stage_spent(RETRY_STAGE):.2f}, total ${ledger.spent():.2f}")
+
+
+KV_ARMS = ("B", "T", "P", "K", "K-far", "KA")
+
+
+@app.local_entrypoint()
+def retry_pilot(limit: int = 0) -> None:
+    """Stop 67: KA at the three factors on the stop 29 states."""
+    rs, _ = _retry_local()
+    _retry_generate("pilot", ["KA"], list(rs.FACTORS), limit)
+
+
+@app.local_entrypoint()
+def retry_run(sets: str = "fresh,fresh2", limit: int = 0) -> None:
+    """Stop 67: the six arms on the test states, with the factor written in GRID."""
+    rs, _ = _retry_local()
+    factor = json.loads((rs.OUT / "factor.json").read_text(encoding="utf-8"))["factor"]
+    for kind in sets.split(","):
+        _retry_generate(kind, list(KV_ARMS), [float(factor)], limit)
+
+
+@app.local_entrypoint()
+def retry_judge(kind: str = "pilot") -> None:
+    """Stop 67: the 27B's short-reply labels on every retry and follow-on sentence of ``kind``."""
+    import os  # noqa: PLC0415
+
+    if kind != "pilot":
+        os.environ["FRESH_SET"] = kind  # before fresh_battery is imported: its rows and premises
+    rs, ledger = _retry_local()
+    states = rs.read_jsonl(rs.OUT / f"states.{kind}.jsonl")
+    retries = rs.read_jsonl(rs.OUT / f"retries.{kind}.jsonl")
+    if kind == "pilot":  # the pilot's arms are KA at each factor
+        retries = [{**r, "arms": dict(r["arms"])} for r in retries]
+    units = rs.sentence_units(states, retries)
+    asked = rs.judge_requests(units, rs.premises_for(states))
+    path = rs.labels_path(kind)
+    have = {
+        r["sha"]
+        for r in rs.read_jsonl(path)
+        if r["label"] in ("supported", "contradicted", "not_stated")
+    }
+    todo = [(k, v) for k, v in asked.items() if k not in have]
+    print(f"{kind}: {len(units)} sentences, {len(asked)} prompts, {len(todo)} to judge", flush=True)
+    server = JudgeL40S(name=RETRY_JUDGE)
+    startup_recorded = False
+    for at in range(0, len(todo), CHUNK):
+        chunk = dict(todo[at : at + CHUNK])
+        ledger.check_stage(RETRY_STAGE, RETRY_STOP, "L40S", ARMS_ESTIMATE)
+        t0 = time.time()
+        seconds, note = 0.0, "failed"
+        try:
+            out = server.judge.remote(chunk, WORKERS)
+            with path.open("a", encoding="utf-8") as f:
+                for sha, row in out["labels"].items():
+                    f.write(json.dumps({"sha": sha, **row}, ensure_ascii=False) + "\n")
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            bad = sum(row["label"] == "error" for row in out["labels"].values())
+            note = f"{kind}: {len(out['labels'])} labels, {bad} errors"
+        except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+            seconds = time.time() - t0
+            print(f"chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+        finally:
+            ledger.record(f"{RETRY_STAGE} judge", "L40S", seconds, note)
+        print(f"{kind}: {min(at + CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
+    print(f"Modal: stage ${ledger.stage_spent(RETRY_STAGE):.2f}, total ${ledger.spent():.2f}")

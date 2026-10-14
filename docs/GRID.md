@@ -2921,3 +2921,22 @@ is the answer before X, tokenized again.
 - Each state and arm is appended to JSONL under the state's hash and the arm; a rerun skips what is done. Raw
   retries quote statute text and stay git-ignored; counts and hashes are committed.
 - Router: none. Nothing changes in `src/`: no public API, verdict, reason or trace change.
+
+### Stop 67: notes fixed before any run (2026-10-14)
+
+Written with the code, before any GPU call.
+
+- T uses stop 30's turn in Qwen 2.5's chat format (`scripts/grid_qwen.py`, `v2`; "documentation" in place of
+  "provision" for software), not `live_loop.INJECT`, which is in the 27B's chat format.
+- In P, K, K-far and KA the passage sits before the last committed token, which is fed after it. That token
+  decodes the retry's first token, so the four arms share it and its position, and differ only in the
+  passage's KV (computed in context or alone), its place (near or far) and the bias.
+- The attention share counts the token that decodes the retry's first token, and every retry token after it.
+- A stream is fed in pieces of 2,048 tokens, because eager attention scores grow with length times context.
+- States built: test 1, 79 (73 with X wrong: 63 closed-book, 10 with the source; 6 with X right, all of them,
+  under the cap of 40); test 2, 38 (33 wrong: 32 closed-book, 1 with the source; 5 right). Primary set 106
+  (95 closed-book, 11 with the source). One X graded unsure is left out. No state lacks an aligned window; the
+  committed text round-trips through the tokenizer in all 117. The pilot has its 46 states.
+- Code: `scripts/retry_states.py` (states, the judge's prompts, the factor), `scripts/kv_retry.py` (the arms),
+  entrypoints `retry_*` in `scripts/modal_distill.py`; tests in `tests/test_kv_retry.py` and
+  `tests/test_retry_states.py`.
