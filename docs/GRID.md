@@ -2948,3 +2948,7 @@ Written with the code, before any GPU call.
   fixed. K and K-far carry it alike; P does not, since it computes the passage in context.
 - Probe, the arms on 3 states: every arm ran. K and KA ended the answer at once (EOS, no token) on one state;
   an empty retry counts as not good, as fixed.
+- Factor for KA, set on the 46 stop 29 states before any test state ran (`results/retry/factor.json`):
+  **f = 4**. Retries the 27B judge passed and that do not copy the passage: 11 at f = 1.5, 15 at f = 2, 18 at
+  f = 4. Empty retries (the model ended the answer): 13, 10 and 6. Copies: 0, 0 and 1. Mean attention share on
+  the passage: 0.40, 0.46 and 0.58. Spend so far $0.62.
