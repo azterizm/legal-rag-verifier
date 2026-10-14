@@ -2265,3 +2265,247 @@ def retry_judge(kind: str = "pilot") -> None:
             ledger.record(f"{RETRY_STAGE} judge", "L40S", seconds, note)
         print(f"{kind}: {min(at + CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
     print(f"Modal: stage ${ledger.stage_spent(RETRY_STAGE):.2f}, total ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 68: three generators live
+
+LIVE68_STAGE = "stop68"
+LIVE68_STOP = 14.0  # USD, GRID § Stop 68
+LIVE68_CHUNK = 8  # answers per call, one at a time inside the container
+LIVE68_ESTIMATE = 900  # seconds a chunk may take, for the ledger check before it runs
+LIVE68 = {  # generator → (model, revision, extra server arguments)
+    "qwen27": (QUANT["qwen27-ar4"][0], QUANT["qwen27-ar4"][1], []),
+    "qwen7": (GENERATOR, GENERATOR_REVISION, []),
+    "minicpm1": (
+        JUDGES["minicpm5-1b"]["model"],
+        JUDGES["minicpm5-1b"]["revision"],
+        ["--context-length", "65536"],
+    ),
+}
+LIVE68_JUDGE = "qwen27-ar4"
+GENERATOR_PORT = 30001
+
+
+def _sglang(
+    model: str, revision: str, port: int, args: list[str], *, gpu: str, mem: str
+) -> "subprocess.Popen[bytes]":
+    import os  # noqa: PLC0415
+
+    env = {**os.environ, "CUDA_VISIBLE_DEVICES": gpu}
+    return subprocess.Popen(  # noqa: S603
+        [
+            sys.executable, "-m", "sglang.launch_server",
+            "--model-path", model, "--revision", revision,
+            "--port", str(port), "--mem-fraction-static", mem,
+            "--enable-custom-logit-processor", *args,
+        ],
+        env=env,
+    )  # fmt: skip
+
+
+class _Live68:
+    """Stop 68: the generator and the 27B judge, each behind SGLang. The 27B as generator shares
+    the judge's server (stops 59 and 65); the others run on a second GPU."""
+
+    gen: str
+
+    @modal.enter()
+    def start(self) -> None:
+        self.error = ""
+        self.started = time.time()
+        spec = JUDGES[LIVE68_JUDGE]
+        model, revision, args = LIVE68[self.gen]
+        self.servers = [
+            _sglang(spec["model"], spec["revision"], PORT, spec["args"], gpu="0", mem="0.85")
+        ]
+        judge_url = f"http://127.0.0.1:{PORT}"
+        gen_url = judge_url
+        if self.gen != "qwen27":
+            self.servers.append(_sglang(model, revision, GENERATOR_PORT, args, gpu="1", mem="0.85"))
+            gen_url = f"http://127.0.0.1:{GENERATOR_PORT}"
+        self.gen_url, self.model = gen_url, model
+        try:
+            for server, url in zip(self.servers, [judge_url, gen_url], strict=False):
+                _wait(server, url)
+            import live_loop as ll  # noqa: PLC0415
+            from auditor_judge import server_chat  # noqa: PLC0415
+
+            self.backend = ll.ThinkingOff.connect(gen_url, model, revision=revision)
+            chat = server_chat(judge_url, spec["model"], spec["sampling"], spec["template"])
+            judge = ll.LiveJudge(chat, f"{spec['model']}@{spec['revision']}")
+            self.verifier = ll.LoopVerifier(judge)
+            self.turns = {d: ll.turn_template(self.backend.tokenizer, d) for d in ll.CLOSED}
+            self.meta = {"model": f"{model}@{revision}", "turns": self.turns}
+        except Exception as exc:  # noqa: BLE001 - reported by ``answer``
+            self.error = repr(exc)[:600]
+        self.startup = time.time() - self.started
+
+    @modal.exit()
+    def stop(self) -> None:
+        for server in self.servers:
+            server.terminate()
+
+    def _none(self, item: dict[str, Any]) -> dict[str, Any]:
+        """One greedy answer, no loop (stop 43's decoding), thinking off."""
+        import live_loop as ll  # noqa: PLC0415
+
+        body = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": ll.CLOSED[item["domain"]]},
+                {"role": "user", "content": item["query"]},
+            ],
+            "temperature": 0,
+            "max_tokens": 512,
+            "chat_template_kwargs": {"enable_thinking": False},
+        }
+        req = urllib.request.Request(  # noqa: S310 - the container's own server
+            f"{self.gen_url}/v1/chat/completions",
+            data=json.dumps(body).encode(),
+            headers={"Content-Type": "application/json"},
+        )
+        t0 = time.perf_counter()
+        with urllib.request.urlopen(req, timeout=600) as r:  # noqa: S310
+            out = json.loads(r.read())
+        return {
+            "text": out["choices"][0]["message"]["content"],
+            "finish": out["choices"][0].get("finish_reason"),
+            "seconds": round(time.perf_counter() - t0, 3),
+        }
+
+    @modal.method()
+    def answer(self, arm: str, items: list[dict[str, Any]]) -> dict[str, Any]:
+        if self.error:
+            return {"error": self.error, "seconds": 0.0, "startup": self.startup}
+        import live_loop as ll  # noqa: PLC0415
+
+        t0 = time.time()
+        records, errors = [], []
+        for item in items:
+            try:
+                if arm == "none":
+                    record = self._none(item)
+                else:
+                    engine_arm = "closed" if arm == "turn" else "plain"
+                    turn = self.turns[item["domain"]]
+                    record = ll.answer(self.backend, self.verifier, engine_arm, item, turn)
+                    record.pop("key")
+                records.append({"id": item["id"], **record})
+            except Exception as exc:  # noqa: BLE001 - one answer, retried on the next run
+                errors.append(f"{item['id']}:{arm}: {exc!r}"[:400])
+        out = {"records": records, "errors": errors, "meta": self.meta}
+        return {**out, "seconds": time.time() - t0, "startup": self.startup}
+
+
+_LIVE68_OPTIONS: dict[str, Any] = {
+    "image": live_image,
+    "volumes": {"/hf": weights},
+    "timeout": 4 * 3600,
+    "max_containers": 1,
+    "scaledown_window": 120,
+}
+
+
+@app.cls(gpu="L40S", **_LIVE68_OPTIONS)
+class Live68One(_Live68):
+    gen: str = modal.parameter()
+
+
+@app.cls(gpu="L40S:2", **_LIVE68_OPTIONS)
+class Live68Two(_Live68):
+    gen: str = modal.parameter()
+
+
+@app.function(image=retry_image, timeout=3 * 3600, volumes={"/hf": weights})
+def live68_weights(*, fetch: bool = False) -> dict[str, str]:
+    """CPU: whether each model of stop 68 is on the volume, and with ``fetch`` its download."""
+    from huggingface_hub import snapshot_download  # noqa: PLC0415
+
+    out = {}
+    for model, revision, _ in LIVE68.values():
+        try:
+            snapshot_download(model, revision=revision, local_files_only=True)
+            out[model] = "on the volume"
+        except Exception:  # noqa: BLE001 - not cached
+            if not fetch:
+                out[model] = "missing"
+                continue
+            snapshot_download(model, revision=revision)
+            weights.commit()
+            out[model] = "downloaded"
+    return out
+
+
+@app.local_entrypoint()
+def live68_check(fetch: bool = False) -> None:  # noqa: FBT001, FBT002
+    """Stop 68: are the three generators on the volume; with ``--fetch``, download them."""
+    print(json.dumps(live68_weights.remote(fetch=fetch), indent=1))
+
+
+@app.local_entrypoint()
+def live68(
+    gen: str = "qwen27",
+    sets: str = "fresh,fresh2,pool",
+    arms: str = "none,turn,plain",
+    limit: int = 0,
+) -> None:
+    """Stop 68: closed-book answers of one generator, per arm; resumable."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import live68 as l68  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    two = gen != "qwen27"
+    runner = (Live68Two if two else Live68One)(gen=gen)
+    gpus = 2 if two else 1
+    startup_recorded, failed = False, 0
+    for set_name in sets.split(","):
+        all_items = l68.items(set_name)[: limit or None]
+        for arm in arms.split(","):
+            have = l68.done(gen)
+            todo = [i for i in all_items if l68.key(set_name, i["id"], arm) not in have]
+            print(f"{gen} {set_name} {arm}: {len(todo)} to answer", flush=True)
+            for at in range(0, len(todo), LIVE68_CHUNK):
+                chunk = todo[at : at + LIVE68_CHUNK]
+                ledger.check_stage(LIVE68_STAGE, LIVE68_STOP, "L40S", gpus * LIVE68_ESTIMATE)
+                t0 = time.time()
+                seconds, note = 0.0, "failed"
+                try:
+                    out = runner.answer.remote(arm, chunk)
+                    seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+                    startup_recorded = True
+                    if out.get("error"):
+                        raise RuntimeError(f"a server did not start: {out['error']}")  # noqa: TRY301
+                    l68.append(
+                        gen,
+                        [
+                            {
+                                "key": l68.key(set_name, r["id"], arm),
+                                "set": set_name,
+                                "arm": arm,
+                                **r,
+                                "meta": out["meta"]["model"],
+                            }
+                            for r in out["records"]
+                        ],
+                    )
+                    for e in out["errors"]:
+                        print(f"  {e}", flush=True)
+                    n, bad = len(out["records"]), len(out["errors"])
+                    note = f"{set_name} {arm}: {n} answers, {bad} errors"
+                    failed = 0
+                except RuntimeError:
+                    ledger.record(
+                        f"{LIVE68_STAGE} {gen}", "L40S", gpus * (time.time() - t0), "no server"
+                    )
+                    raise
+                except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+                    failed += 1
+                    seconds = time.time() - t0
+                    print(f"chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+                ledger.record(f"{LIVE68_STAGE} {gen}", "L40S", gpus * seconds, note)
+                print(
+                    f"{gen}: {min(at + LIVE68_CHUNK, len(todo))}/{len(todo)} ({note})", flush=True
+                )
+                if failed >= 2:  # noqa: PLR2004
+                    raise RuntimeError("two chunks failed in a row; stopped")
+    print(f"Modal: stage ${ledger.stage_spent(LIVE68_STAGE):.2f}, total ${ledger.spent():.2f}")
