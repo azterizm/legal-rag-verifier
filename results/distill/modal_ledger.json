@@ -5542,5 +5542,488 @@
   "seconds": 0.3,
   "usd": 0.0002,
   "note": "short: 33 labels, 0 errors"
+ },
+ {
+  "run": "stop67 download",
+  "gpu": "CPU",
+  "seconds": 175,
+  "usd": 0.0056,
+  "note": "generator and judge weights to the volume"
+ },
+ {
+  "run": "stop67 probe",
+  "gpu": "L40S",
+  "seconds": 67.2,
+  "usd": 0.0419,
+  "note": "probe"
+ },
+ {
+  "run": "stop67 probe",
+  "gpu": "L40S",
+  "seconds": 18.5,
+  "usd": 0.0115,
+  "note": "probe"
+ },
+ {
+  "run": "stop67 probe",
+  "gpu": "L40S",
+  "seconds": 46.8,
+  "usd": 0.0292,
+  "note": "probe"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 62.4,
+  "usd": 0.0388,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 24.8,
+  "usd": 0.0154,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 28.4,
+  "usd": 0.0177,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 30.6,
+  "usd": 0.0191,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 39.4,
+  "usd": 0.0245,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 28.0,
+  "usd": 0.0174,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 22.6,
+  "usd": 0.0141,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 49.1,
+  "usd": 0.0306,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 41.3,
+  "usd": 0.0257,
+  "note": "pilot: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 5.4,
+  "usd": 0.0033,
+  "note": "pilot: 1 states, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 445.1,
+  "usd": 0.2773,
+  "note": "pilot: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 18.8,
+  "usd": 0.0117,
+  "note": "pilot: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 27.9,
+  "usd": 0.0174,
+  "note": "pilot: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 29.3,
+  "usd": 0.0182,
+  "note": "pilot: 20 labels, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 84.7,
+  "usd": 0.0527,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 60.0,
+  "usd": 0.0374,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 58.9,
+  "usd": 0.0367,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 64.2,
+  "usd": 0.04,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 47.5,
+  "usd": 0.0296,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 66.7,
+  "usd": 0.0415,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 74.4,
+  "usd": 0.0463,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 51.3,
+  "usd": 0.032,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 71.7,
+  "usd": 0.0446,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 45.4,
+  "usd": 0.0283,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 40.4,
+  "usd": 0.0252,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 58.9,
+  "usd": 0.0367,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 46.0,
+  "usd": 0.0286,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 49.5,
+  "usd": 0.0308,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 56.9,
+  "usd": 0.0355,
+  "note": "fresh: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 43.5,
+  "usd": 0.0271,
+  "note": "fresh: 4 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 70.9,
+  "usd": 0.0441,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 67.0,
+  "usd": 0.0417,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 55.9,
+  "usd": 0.0348,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 53.2,
+  "usd": 0.0331,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 41.1,
+  "usd": 0.0256,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 41.3,
+  "usd": 0.0257,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 48.9,
+  "usd": 0.0305,
+  "note": "fresh2: 5 states, 0 errors"
+ },
+ {
+  "run": "stop67 generator",
+  "gpu": "L40S",
+  "seconds": 21.2,
+  "usd": 0.0132,
+  "note": "fresh2: 3 states, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 436.8,
+  "usd": 0.2721,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 15.0,
+  "usd": 0.0094,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 14.9,
+  "usd": 0.0093,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 13.0,
+  "usd": 0.0081,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 12.1,
+  "usd": 0.0076,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 10.8,
+  "usd": 0.0067,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 15.4,
+  "usd": 0.0096,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 8.7,
+  "usd": 0.0054,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 10.6,
+  "usd": 0.0066,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 6.0,
+  "usd": 0.0037,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 6.1,
+  "usd": 0.0038,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 6.1,
+  "usd": 0.0038,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 5.5,
+  "usd": 0.0034,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 6.0,
+  "usd": 0.0038,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 5.8,
+  "usd": 0.0036,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 5.6,
+  "usd": 0.0035,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 8.1,
+  "usd": 0.005,
+  "note": "fresh: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 6.5,
+  "usd": 0.004,
+  "note": "fresh: 31 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 433.6,
+  "usd": 0.2701,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 7.7,
+  "usd": 0.0048,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 10.3,
+  "usd": 0.0064,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 10.2,
+  "usd": 0.0063,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 7.0,
+  "usd": 0.0044,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 6.9,
+  "usd": 0.0043,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 7.2,
+  "usd": 0.0045,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 7.0,
+  "usd": 0.0044,
+  "note": "fresh2: 40 labels, 0 errors"
+ },
+ {
+  "run": "stop67 judge",
+  "gpu": "L40S",
+  "seconds": 5.9,
+  "usd": 0.0037,
+  "note": "fresh2: 29 labels, 0 errors"
  }
 ]
