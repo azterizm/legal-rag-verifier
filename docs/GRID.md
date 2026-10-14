@@ -3062,3 +3062,78 @@ answer at once (17 to 25 of 95). Limits as fixed: first retry only, one generato
 source too few states.
 
 Spend, stop 67: Modal $2.12, Opus 5.5 $3.53. Totals: Modal $30.02 of $55, Opus 5.5 $18.58 of $40.
+
+## Stop 68: the plain-text passage in the live loop, three generators (method fixed 2026-10-14, before any run)
+
+Your request: test stop 67's best retry (the passage as plain text at the cut, removed after) in the live loop,
+with Qwen 27B as generator (does it improve on today's loop), with the 7B on an extended test, and with
+MiniCPM5-1B. Your choices: on SGLang as text; closed-book only, three arms; both the fresh questions and new pool
+questions; two model graders and you on what they leave open.
+
+### Questions, 240
+
+- The 120 fresh questions (80 of test 1, 40 of test 2), sources as before.
+- 120 new questions from the stop 64 pool (`results/distill/pool2/`): 60 statute and 60 software sources drawn
+  with seed 20261016, the first question of each. Never graded, never in a test. Set name `pool`.
+
+### Generators and servers
+
+- Qwen 27B AutoRound 4-bit (`Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at `1b9d56b4`): one SGLang 0.5.21
+  server on one L40S in both roles, as stops 59 and 65.
+- Qwen 2.5 7B Instruct (`a09a3545`) and MiniCPM5-1B (`openbmb/MiniCPM5-1B` at `87179e5c`): the generator on its
+  own SGLang server, the 27B judge on a second GPU of the same container (two L40S).
+- Generation greedy, thinking off where the model has it. The judge as stop 65: short reply, stop 47's
+  sampling, seed 0, `VerifierConfig(neutral_policy="strict", neutral_with_grounded_claim="rollback",
+  ungrounded_figure="judge")`, the answer so far as the committed sentences.
+- Prompts: stop 43's closed-book prompts. The server's cache is emptied before each answer; answers one at a time.
+
+### Arms, closed-book
+
+- `none`: one greedy answer, no loop, at most 512 tokens (stop 43's decoding).
+- `turn`: the loop as stop 59's closed arm: on a rollback the aligned windows (at most 2, cut at 800 tokens)
+  are written as a user turn restating the question (stop 30's wording, in the generator's own chat format),
+  kept to the end of the answer.
+- `plain`: the same loop, but the windows are written as plain text (`engine.INJECT_TEMPLATE`, "(Source: …)")
+  at the cut for the retry only. Once the sentence is committed or refused, the text is taken out of the
+  context; a window may be written again at a later point. Two differences from stop 67's arm P, both from
+  running on SGLang as text: the passage comes after the last committed token, and after removal the server
+  recomputes the retried sentence without the passage.
+- Engine as 0.1.0: at most 3 retries per sentence and 8 rollbacks per answer, then the fixed refusal, at most
+  512 new tokens, refusals worded per domain.
+- Reused, not run again (same model, server, decoding and judge): the 7B's `none` answers on both fresh tests
+  (stop 43, graded by you), the 27B's `none` answers on test 2 (stop 57) and its `turn` answers on test 2
+  (stop 65, short reply).
+
+### Grades
+
+- Every sentence of every final answer, by the segmenter. The engine's fixed refusal is not graded; it is
+  counted apart.
+- A sentence word for word equal to a graded sentence of the same question keeps its grade (sheets of
+  `fresh`, `fresh2`, `fresh2-q27`, `fresh2-live`, `fresh2-short-live`).
+- The rest: one blind sheet per question, its arms' answers lettered at random, the fresh sheets' rule (yes,
+  no, unsure). Opus 5.5 and Gemini 3.8 Flash grade per question; settled when both give the same yes or no;
+  otherwise both are asked again with a reason first; what is left goes to you. **Halt for you** with the
+  count and the expected cost before any grading call.
+
+### Readings, fixed now
+
+- Primary, per generator, on the 240 questions: `plain` against `turn`, answers with at least one sentence
+  graded wrong, paired by question, exact McNemar, Holm over the three generators. `plain` is better if it has
+  fewer such answers with a corrected p under 0.05 and its share of sentences replaced by the refusal is at
+  most 5 points above `turn`'s.
+- For the 27B this is the answer to "does it improve accuracy further".
+- Secondary: each loop against `none` (the same count and test); per set (fresh, fresh2, pool) and per domain;
+  share of graded sentences wrong with a 95 % Wilson interval; right sentences per answer; refusals; answers
+  that are only the refusal; rollbacks, insertions, time per answer at the median.
+- Limits: closed-book only (the path where the generator answers from memory); one greedy run; the fresh
+  questions have been read since stop 47; pool questions were written by a model from one source each.
+
+### Spend and fail safe
+
+- Modal, run `stop68`: expected $8 to $11 (about 45 minutes on one L40S for the 27B, about 40 minutes each on two
+  L40S for the 7B and the 1B); stage stop $14 ($24.98 left of $55).
+- Router, for grading only after the halt: Opus 5.5 expected $10 to $15, stop $39 ($21.42 left of $40); Flash is
+  not charged on this router.
+- Each answer and its trace are appended as their chunk returns, keyed by set, question and arm; a rerun asks
+  only what is missing.
+- Nothing changes in `src/`: the `plain` arm is a subclass of the engine in `scripts/live_loop.py`.
