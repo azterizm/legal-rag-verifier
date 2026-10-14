@@ -2992,3 +2992,18 @@ With the source, 11 states: judge passed B 6, T 8 (5 copied), P 3, K 5, K-far 4,
 Spend, stop 67: Modal $2.12 ($30.02 of $55). Router: none.
 - Key sha256 `35f05357bd14d3aa02c03702a0d14af1f6c9ddab83bb8d5f28bf78c2ce804adf`, sheet sha256
   `d971b4e0e6184888250ea8899ff57295a8e8a6d51a7d2f78a9acf58c2e8a7047`, recorded before any grade.
+
+### Stop 67: grading (method fixed 2026-10-14, before any grading call)
+
+Yours: Opus 5.5 and Gemini 3.1 Pro grade, you settle where they differ (stop 57's method).
+
+- One call per state block of the sheet, as you would see it: the question, the source, the answer so far, X, and
+  the lettered retries. No arm, no judge label and no other grade is in any prompt. The sheet's own instruction
+  is the rule; each grader returns, per item, `grounding`, `on_question`, `reads_on` and `same_error`.
+- Each item reduces to one outcome: good (supported, on the question, reads on), wrong and repeats X's error,
+  wrong otherwise, or neither (no claim, or supported but off the question or not reading on). An item carried
+  as wrong is asked "repeats X's error" only.
+- Settled when both give the same outcome. Otherwise both are asked again on that item with a reason first;
+  settled if they then agree. What is left goes to you on a short sheet.
+- Spend: Pro's stop rises by $1, to $16, by your choice; Opus 5.5 stop for this stop $19. Expected about $1.80
+  each, plus the second ask.
