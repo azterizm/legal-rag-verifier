@@ -3143,5 +3143,5 @@ questions; two model graders and you on what they leave open.
   models, decoding, judge and engine. Answers made on two GPUs before the change are kept. The two stopped
   containers ran about three minutes after their runs were stopped; that time is in the ledger as an estimate.
 - The first shared start failed: SGLang reads the generator's share against the memory free when it starts, not
-  the whole card. The generator's share is now 90 % (7B) and 80 % (1B) of the memory the judge leaves free.
+  the whole card. The generator's share is now 80 % of the memory the judge leaves free (the 7B at 90 % ran out of memory at start).
   The failed starts are in the ledger.
