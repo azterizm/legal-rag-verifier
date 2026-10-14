@@ -17,13 +17,14 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-14 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 67: the run, the mechanics and the model grading are done (GRID § Stop 67). Next: your 49 grades, then `scripts/retry_grader.py fill` and `scripts/retry_report.py report`. Stop 68 (MiniCPM5-1B as generator) follows with its own halt |
-| Waiting on you | Your grades for the 49 stop 67 retries the two graders left open: `results/retry/leftover.md`, fill `results/retry/leftover.csv` |
+| Next step | Stop 67 is done (GRID § Stop 67: results). The default retry repeats the error; a passage next to the cursor stops most repeats; the spliced KV is not better than the text turn; plain tokens at the cut beat the turn (40 against 19 good of 95). Stop 68 (MiniCPM5-1B) waits for your go |
+| Waiting on you | Nothing. Stop 68 (MiniCPM5-1B as generator) needs new answers and grades and waits for your go |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-14 (stop 67 results): your 49 grades taken as written. Closed-book, 95 wrong drafts: good B 10, T 19, P 40, K 26, K-far 34, KA 15; wrong B 71, T 16, P 25, K 16, K-far 54, KA 29. Editing the cache helps: not shown. Nearness: shown on log P(X), not on good retries. P beats T (Holm p = 0.015). **Resume:** stop 68 on your go
 - 2026-10-14 (stop 67 grading): Opus 5.5 and Gemini 3.8 Flash (the router no longer serves Pro; Flash by your choice) graded 596 retries: 512 settled at once, 35 when asked again, 49 left for you. Opus 5.5 $3.53. **Resume:** your grades in `results/retry/leftover.csv`, then fill and report
 - 2026-10-14 (stop 67): **Retries after a real error, and the KV cache edit.** Your go. Method fixed and committed before any run, with two notes before any label (the turn in Qwen 2.5's format; KA against T added to the corrected comparisons). 117 states from the graded fresh answers of the 7B (106 with X wrong). Rotation exact in float32. Factor f = 4 set on the stop 29 states. Six arms ran on every state; the 27B labelled every retry. Nearness shown on log P(X) (86 of 95 closed-book, 11 of 11 with the source); the boost acted on 117 of 117. T copies the passage in half its retries; K ends the answer at once in 25 of 95. Modal $2.12. **Resume:** the grader for 596 retries, then `scripts/retry_report.py report`
 - 2026-10-13 (citation): **`CITATION.cff` covers the evaluation.** Your go. The abstract gains one sentence: the
