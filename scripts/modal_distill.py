@@ -2046,20 +2046,69 @@ class RetryGenerator:
 
     @modal.method()
     def rotation(self, tokens: list[int], delta: int) -> dict[str, Any]:
-        """Keys computed alone and rotated by ``delta`` against keys computed at that position."""
+        """Keys computed alone and rotated by ``delta``, against keys computed at that position;
+        beside a control with the same bf16 noise: keys computed one position later, rotated
+        back by one. Relative error per layer (norm of the difference over norm of the keys)."""
         import kv_retry  # noqa: PLC0415
 
         b = self.backend
-        alone = b.alone(tokens)
+
+        def at(position: int) -> list[Any]:
+            b.reset()
+            b.pos = position
+            b.feed(tokens)
+            return [layer.keys.float() for layer in b._cache.layers]
+
+        alone = [k for k, _ in b.alone(tokens)]
+        there, later = at(delta), at(delta + 1)
+
+        def relative(a: Any, ref: Any) -> float:
+            return float(((a - ref).norm() / ref.norm()).item())
+
+        spliced = [
+            relative(kv_retry.rotate(b.model, k, delta).float(), t)
+            for k, t in zip(alone, there, strict=True)
+        ]
+        control = [
+            relative(kv_retry.rotate(b.model, k, -1).float(), t)
+            for k, t in zip(later, there, strict=True)
+        ]
         b.reset()
-        b.pos = delta
-        b.feed(tokens)
-        worst = 0.0
-        for (k, _), layer in zip(alone, b._cache.layers, strict=True):
-            diff = (kv_retry.rotate(b.model, k, delta).float() - layer.keys.float()).abs().max()
-            worst = max(worst, float(diff.item()))
-        b.reset()
-        return {"max_abs_diff": worst, "tokens": len(tokens), "delta": delta}
+        return {
+            "tokens": len(tokens),
+            "delta": delta,
+            "spliced_relative": [round(x, 5) for x in spliced],
+            "control_relative": [round(x, 5) for x in control],
+        }
+
+
+@app.function(image=retry_image, gpu="L40S", timeout=1800, volumes={"/hf": weights})
+def retry_rotation_fp32(tokens: list[int], delta: int) -> dict[str, Any]:
+    """The rotation check in float32: if the bf16 drift of the deep layers is rounding, it goes."""
+    import torch  # noqa: PLC0415
+    from kv_retry import ArmBackend, install, rotate  # noqa: PLC0415
+    from transformers import AutoModelForCausalLM, AutoTokenizer  # noqa: PLC0415
+
+    tokenizer = AutoTokenizer.from_pretrained(GENERATOR, revision=GENERATOR_REVISION)
+    model = AutoModelForCausalLM.from_pretrained(
+        GENERATOR,
+        revision=GENERATOR_REVISION,
+        dtype=torch.float32,
+        device_map="cuda",
+        attn_implementation="eager",
+    )
+    install(model)
+    b = ArmBackend(model, tokenizer, model_id=GENERATOR)
+    alone = [k for k, _ in b.alone(tokens)]
+    b.reset()
+    b.pos = delta
+    b.feed(tokens)
+    there = [layer.keys for layer in b._cache.layers]
+    spliced = [
+        float(((rotate(model, k, delta) - t).norm() / t.norm()).item())
+        for k, t in zip(alone, there, strict=True)
+    ]
+    return {"tokens": len(tokens), "delta": delta, "spliced_relative_fp32": spliced}
 
 
 def _retry_local() -> tuple[Any, Any]:
@@ -2119,7 +2168,7 @@ def retry_check(fetch: bool = False) -> None:  # noqa: FBT001, FBT002
 
 
 @app.local_entrypoint()
-def retry_probe() -> None:
+def retry_probe(only_rotation: bool = False) -> None:  # noqa: FBT001, FBT002
     """Stop 67 probe, not a result: the rotation on the real model, and every arm on 3 states."""
     rs, ledger = _retry_local()
     states = rs.read_jsonl(rs.OUT / "states.fresh.jsonl")
@@ -2133,6 +2182,10 @@ def retry_probe() -> None:
     t0 = time.time()
     try:
         rotation = generator.rotation.remote(picks[0]["passage"], 1500)
+        if only_rotation:
+            print(json.dumps(rotation))
+            print(json.dumps(retry_rotation_fp32.remote(picks[0]["passage"], 1500)))
+            return
         out = generator.run.remote(picks, list(KV_ARMS), [2.0])
     finally:
         ledger.record(f"{RETRY_STAGE} probe", "L40S", time.time() - t0, "probe")
