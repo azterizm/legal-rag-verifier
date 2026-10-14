@@ -1,10 +1,11 @@
-"""Stop 67 grading (docs/GRID.md § Stop 67: grading): Opus 5.5 and Gemini 3.1 Pro grade the retry
-sheet; you settle what they leave open.
+"""Stop 67 grading (docs/GRID.md § Stop 67: grading): Opus 5.5 and Gemini 3.8 Flash grade the retry
+sheet; you settle what they leave open. (Gemini 3.1 Pro was fixed first; the router no longer
+serves it.)
 
   uv run python scripts/retry_grader.py grade opus55            # first pass, one call per state
-  uv run python scripts/retry_grader.py grade gemini-pro-low
+  uv run python scripts/retry_grader.py grade flash
   uv run python scripts/retry_grader.py grade opus55 --again    # items they differ on, reason first
-  uv run python scripts/retry_grader.py grade gemini-pro-low --again
+  uv run python scripts/retry_grader.py grade flash --again
   uv run python scripts/retry_grader.py leftover                # → leftover.md and leftover.csv
   uv run python scripts/retry_grader.py fill                    # → grades.csv
 
@@ -31,9 +32,9 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import auditor_judge as aj  # type: ignore[import-not-found]  # noqa: E402
 
 OUT = ROOT / "results/retry"
-GRADERS = ("opus55", "gemini-pro-low")
-NAMES = {"opus55": "Opus 5.5", "gemini-pro-low": "Gemini 3.1 Pro"}
-STOPS = {"opus55": 19.0, "gemini-pro-low": 16.0}  # USD, GRID § Stop 67: grading
+GRADERS = ("opus55", "flash")
+NAMES = {"opus55": "Opus 5.5", "flash": "Gemini 3.8 Flash"}
+STOPS = {"opus55": 19.0}  # USD, GRID § Stop 67: grading
 GROUNDING = ("supported", "unsupported", "contradicted", "no_claim")
 YES_NO = ("yes", "no")
 WORKERS = 4
@@ -112,8 +113,9 @@ def open_items() -> list[str]:
 def grade(grader: str, *, again: bool = False) -> None:
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
 
-    model = {"opus55": router.OPUS55, "gemini-pro-low": router.PRO}[grader]
-    router.CAPS[model] = STOPS[grader]
+    model = {"opus55": router.OPUS55, "flash": router.GEMINI}[grader]
+    if grader in STOPS:  # Flash is not charged on this router
+        router.CAPS[model] = STOPS[grader]
     rule, blocks = sheet()
     have = done(grader, again=again)
     wanted = set(open_items()) if again else None
@@ -233,7 +235,7 @@ def fill() -> None:
     for k, v in settled.items():
         if "grade" in v:
             g = v["grade"]
-            note = "Opus 5.5 and Gemini 3.1 Pro agree" + (
+            note = "Opus 5.5 and Gemini 3.8 Flash agree" + (
                 "" if v["by"] == "first" else " when asked again"
             )
         else:
