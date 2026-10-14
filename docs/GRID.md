@@ -2822,3 +2822,102 @@ limits of the method apply: finished answers only, one prompt wording, neither A
 
 Spend: OpenAI $0.08, OpenRouter $0.04. Raw: `results/fresh_arms/decisions.json`,
 `results/fresh2_arms/decisions.json`, `results/decisions/ledger.json`, labels in `results/<set>/labels/`.
+
+## Stop 67: does the retry repeat the error, and does editing the KV cache help (method fixed 2026-10-14, before any run)
+
+Your go: "go on these". Question: after the judge rolls back a sentence that is wrong, does the retry avoid the
+error? And does a passage written into the KV cache next to the cursor, with or without more attention on it,
+do better than the retries the engine has now? Qwen 2.5 7B writes, Qwen 27B judges. MiniCPM5-1B follows in a
+later stop.
+
+What is known before this stop. With the 27B in both roles and the source in the prompt there was nothing to fix
+(stop 59). Stop 36's labels, read again for this stop: on the 18 rejected drafts of the 7B that were real errors,
+the engine's default retry (ban or allow-list) was wrong again 14 times; the source inserted at the cut was wrong
+3 times and good 5 times (it mostly copied the provision); the source at the top was good 10 times. Those
+rejections came from DeBERTa and the labels from Opus 5.5.
+
+### States, from what is already graded
+
+- Both fresh tests: the 7B's answers with and without the source (SGLang, greedy), graded by you. Merged units
+  as since stop 52 (`fresh_eval.units(merged=True)`, `merged_grades`).
+- The judge's verdict on each sentence: the 27B's short-reply labels already recorded
+  (`results/<set>/labels/qwen27-ar4.short.jsonl`), replayed through `VerifierConfig(neutral_policy="strict",
+  neutral_with_grounded_claim="rollback", ungrounded_figure="judge")`, the configuration of stop 65.
+- A state is the first rolled-back sentence of an answer (X) and everything before it, which the judge passed.
+  One state per answer at most. X graded unsure: the state is left out.
+- Primary set: X graded wrong. Secondary set: X graded right (a false rollback), at most 40 drawn with seed
+  20261014.
+- Passage: the windows the verifier aligned X to, the first 2, cut at 800 tokens, as the engine's injection
+  (`InFlightGenerator._source_text`). A state with no aligned window is left out and counted.
+
+### The six retries, from the same state
+
+Qwen 2.5 7B Instruct at `a09a3545`, Hugging Face transformers 5.18.0, torch 2.14.1, bf16, one L40S. Every arm runs
+through the same attention function (eager, written for this stop), so the arms differ only in what they change.
+Greedy. The retry ends where the engine's segmenter ends a sentence (`InFlightGenerator._draft`, at most 160
+tokens). The prompt is the one the 7B answered (`fresh_battery.requests`), in its chat template; the committed text
+is the answer before X, tokenized again.
+
+| Arm | What the retry sees |
+|---|---|
+| B | The engine's default steering: an allow-list of the source's values if the claim check has one, else X's first token banned |
+| T | Stop 30's user turn at the cut (`live_loop.INJECT`), kept in the context: the current inject path |
+| P | The passage as plain text (`engine.INJECT_TEMPLATE`) fed at the cut by a forward pass, with no chat turn |
+| K | The same text's KV computed alone, keys rotated to the cursor positions, appended at the cut |
+| K-far | The same KV placed right after the system turn: its keys rotated to that position, the keys of every later token rotated forward by its length; the retry starts at the same position as in K |
+| KA | K, with the attention scores on the passage keys raised by ln(f) for the retry's tokens, all layers and heads |
+
+- After the retry, one follow-on sentence is decoded with no check. In P, K, K-far and KA the passage is removed
+  from the cache before it; the retry's own keys stay. In T the turn stays, as in the engine.
+- The factor f is set before any test state runs, on the 46 parity states of stop 29 (other questions, the 7B
+  with the provisions in the prompt): f = 1.5, 2 or 4, the one whose retries the 27B judge passes most often,
+  not counting retries that copy the passage (80 % or more of their word 5-grams are in it). A tie goes to the
+  smaller f. No grade is used. The factor is written here before the test.
+- The judge labels each retry after generation, not inside it: the 27B (`Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ`
+  at `1b9d56b4`), SGLang 0.5.21, one L40S, thinking off, stop 47's sampling, seed 0, the short reply, the
+  answer so far as the committed text. The same verifier settings as above.
+
+### Readings, fixed now
+
+- Primary, on the primary set, by condition (with the source, closed-book): retries that are good (supported, on
+  the question, reads on) and retries wrong again (not supported or contradicted). Paired exact McNemar,
+  Holm-corrected at 0.05 over five comparisons: K against T, KA against K, K against K-far, P against T, T
+  against B. An empty retry is not good.
+- Editing the cache helps if K or KA has more good retries than T with a corrected p under 0.05, and no more
+  retries wrong again. With the source there are at most 26 wrong drafts; that condition is reported as counts and
+  not tested.
+- The boost acted if KA's attention share on the passage is above K's on at least two thirds of states.
+  Otherwise KA is reported as a boost that did not act, and its outcome is not read as a test of more attention.
+- Nearness is shown for the KV edit if K beats K-far on good retries with a corrected p under 0.05, or on log P(X)
+  by the exact sign test at 0.05.
+- Mechanism, no grade: log P(X) in each arm's context against the state with nothing added; the attention share
+  from the retry's tokens to the passage (attention to its keys over all attention except to the first token,
+  mean over heads, layers and tokens; stop 29's measure); tokens computed and time per retry.
+- Secondary: the false-rollback set (does the retry keep a right sentence right); the judge's verdict on each
+  retry; follow-on sentences that copy the passage or leave the question.
+- Parity, reported: how often greedy decoding from the state reproduces X's first token, and all of X.
+- Repeats the error: for every retry graded wrong, whether it makes the same wrong claim as X.
+
+### Grades
+
+- A retry word for word equal to a graded sentence of the same question keeps its grade: both fresh tests
+  (the 7B), `fresh2-q27`, `fresh2-live` and `fresh2-short-live` (the 27B). A carried right grade counts as on the
+  question and reading on, unless it repeats a sentence of the committed text.
+- Every other retry, and "repeats the error" for every wrong one, needs a grade. **Halt for you** with the count
+  before any grading call.
+
+### Limits
+
+- The fresh tests have been read since stop 47. Retries were never tuned on them; the factor is set on other
+  questions.
+- X is the 7B's sentence as SGLang wrote it. The retry runs in transformers from the text tokenized again, so
+  the state is close to, not the same as, what the engine would hold. Parity is reported.
+- One generator, one judge, greedy, first retry only. A win here is a reason for a live loop, not a result of one.
+
+### Spend and fail safe
+
+- Modal, run `stop67`: the 7B on one L40S, the 27B on another for labels. Expected $6 to $9; stage stop $12
+  ($27.10 left of $55). `modal_ledger.check_stage` before each chunk, `record` after.
+- Each state and arm is appended to JSONL under the state's hash and the arm; a rerun skips what is done. Raw
+  retries quote statute text and stay git-ignored; counts and hashes are committed.
+- Router: none. Nothing changes in `src/`: no public API, verdict, reason or trace change.

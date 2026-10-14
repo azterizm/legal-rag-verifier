@@ -114,3 +114,8 @@ artefacts/
 # Stop 66: lock and temp files of the decision APIs ledger
 results/decisions/*.lock
 results/decisions/*.tmp
+
+# Stop 67: states and retries quote statute text (counts and hashes are in results/retry/report*.json)
+results/retry/states*.jsonl
+results/retry/retries*.jsonl
+results/retry/probe/
