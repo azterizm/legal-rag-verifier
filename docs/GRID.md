@@ -3007,3 +3007,7 @@ Yours: Opus 5.5 and Gemini 3.1 Pro grade, you settle where they differ (stop 57'
   settled if they then agree. What is left goes to you on a short sheet.
 - Spend: Pro's stop rises by $1, to $16, by your choice; Opus 5.5 stop for this stop $19. Expected about $1.80
   each, plus the second ask.
+- Change before Pro graded anything (2026-10-14): the router answers "unknown provider for model
+  gemini-3.1-pro-low". By your choice the second grader is `gemini-3.8-flash-high` (temperature 0, the same
+  prompt). Everything else as fixed. Opus 5.5 had graded 3 states when the change was made; it grades the same
+  sheet either way.
