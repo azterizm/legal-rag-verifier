@@ -3171,3 +3171,7 @@ answer failed when its server ran out of memory and was asked again. Modal $10.0
   615 repeats graded once. Sheet and key are git-ignored. sha256 before any grade: sheet
   `b699f34e4828e028ce543c38cde1f8795744b4cc95f93e7c81ff03305e5617df`, key
   `6acd0b21400c74f89e44fca702a33b294f9efa3065a0f9e1bb9ef1f41038570d`. **Halt for you** before any grading call.
+- Grading run (2026-10-14): Opus 5.5 and Gemini 3.8 Flash graded all 2,968 sentences. Same grade on 2,548 at the
+  first pass, 117 more when asked again with a reason first. **303 are left for you**:
+  `results/live68/leftover.md` (git-ignored), your column file `results/live68/leftover.csv` (`correct`: yes,
+  no or unsure). Then `scripts/live68_grade.py report`. Opus 5.5 $8.50 for this stop ($27.08 of $40).
