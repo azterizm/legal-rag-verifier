@@ -241,7 +241,15 @@ def fill() -> None:
         else:
             if k not in yours:
                 raise SystemExit(f"{k} is left for you and has no grade in leftover.csv")
-            g = check(yours[k], carried[k])
+            row = dict(yours[k])
+            both = set(row["grounding"].strip().lower().split("/"))
+            if len(both) > 1 and both <= {"unsupported", "contradicted"}:  # wrong either way
+                g = {
+                    **check({**row, "grounding": "unsupported"}, carried[k]),
+                    "grounding": "/".join(sorted(both)),
+                }
+            else:
+                g = check(row, carried[k])
             note = "yours"
         rows.append(
             {

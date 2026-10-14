@@ -3017,3 +3017,48 @@ Yours: Opus 5.5 and Gemini 3.1 Pro grade, you settle where they differ (stop 57'
   contradicted / no_claim, `on_question` and `reads_on` yes / no, `same_error` yes / no when not supported).
   Then `scripts/retry_grader.py fill` and `scripts/retry_report.py report`. Opus 5.5 $3.53 for this stop
   ($18.58 of $40); Flash is not charged on this router.
+
+### Stop 67: results (2026-10-14)
+
+Your 49 grades were taken as written. One (`S002A`) reads "unsupported/contradicted"; both mean wrong and you
+marked the same error, so it counts as wrong with the same error, and the text is kept. Then
+`retry_grader.py fill` and `retry_report.py report`, once. Raw: `results/retry/report.json`,
+`results/retry/grades.csv`. Graders: Opus 5.5 and Gemini 3.8 Flash (547), you (49); 13 carried as right.
+
+Primary set, closed-book, 95 states where X was wrong. Good: supported, on the question, reads on. Same error:
+wrong and makes X's wrong claim again.
+
+| Arm | Good | Wrong | Same error | Empty |
+|---|---|---|---|---|
+| B, ban or allow-list (the default) | 10 | 71 | 33 | 2 |
+| T, the source as a user turn (the current inject) | 19 | 16 | 5 | 0 |
+| P, the passage as plain tokens at the cut, removed after | 40 | 25 | 9 | 19 |
+| K, the passage's KV spliced at the cut | 26 | 16 | 3 | 25 |
+| K-far, the same KV after the system turn | 34 | 54 | 24 | 0 |
+| KA, K with attention on the passage times 4 | 15 | 29 | 4 | 17 |
+
+Paired, good retries (only the first arm, only the second, Holm p): K against T 19 and 12, p = 0.60; KA against
+T 10 and 14, p = 0.60; KA against K 6 and 17, p = 0.17; K against K-far 11 and 19, p = 0.60; **P against T 33
+and 12, p = 0.015**; T against B 16 and 7, p = 0.37. Wrong retries (exact p, not corrected, not a fixed
+reading): T against B 3 and 58, p < 1e-6; K against K-far 4 and 42, p < 1e-6; KA against K 19 and 6, p = 0.015.
+
+- Fixed reading, editing the cache: **not shown.** Neither K nor KA has more good retries than T.
+- Fixed reading, nearness: **shown on log P(X)** (stop 67 run above), **not shown on good retries**. Near the
+  cursor the passage cuts wrong retries from 54 to 16 and repeated errors from 24 to 3, but adds 25 empty ones.
+- The boost acted and made retries worse: fewer good (15 against 26) and more wrong (29 against 16) than K.
+- The one comparison that passes: the passage as plain tokens at the cut (P) gives more good retries than the
+  current user turn (T). T is rarely wrong, but 60 of its 95 retries are neither good nor wrong, mostly the
+  passage pasted back (49 copies by the rule).
+- The default retry repeats the error: B is wrong on 71 of 95, and 33 make X's claim again.
+- With the source, 11 states: good B 6, T 5, P 3, K 3, K-far 3, KA 2; wrong B 5, T 3, P 6, K 5, K-far 8, KA 4.
+  Too few to read.
+- False rollbacks, 11 states: good B 3, T 3, P 1, K 2, K-far 5, KA 2.
+
+Reading: after a wrong sentence written from memory, the retry without the passage repeats the error. Putting the
+passage next to the cursor stops most repeats. How it is put there matters less than the fixed readings could
+tell: the spliced KV is no better than the text turn, plain tokens beat the turn on good retries, and more
+attention on the passage makes things worse. Every arm with a passage near the cursor sometimes ends the
+answer at once (17 to 25 of 95). Limits as fixed: first retry only, one generator, finished states, with the
+source too few states.
+
+Spend, stop 67: Modal $2.12, Opus 5.5 $3.53. Totals: Modal $30.02 of $55, Opus 5.5 $18.58 of $40.

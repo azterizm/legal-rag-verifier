@@ -1142,3 +1142,21 @@ Jev is 3.1 and 2.0 points under the 27B, OpenAI 4.8 and 3.3. Neither meets the l
 The 27B is ahead on the first test (p = 0.013 and 0.005); the second does not show a difference. A threshold
 chosen on the first test changes nothing on the second. Cost is $0.07 and $0.13 per 1,000 calls. Raw:
 `results/fresh_arms/decisions.json`, `results/fresh2_arms/decisions.json`.
+
+## Retries after a real error, and the KV cache edit (stop 67, 2026-10-14; method in `docs/GRID.md`)
+
+Qwen 2.5 7B retried 95 closed-book sentences that were wrong and that the Qwen 27B judge rolled back, six ways
+from the same state. Graded by Opus 5.5 and Gemini 3.8 Flash, open items by hand.
+
+| Retry | Good | Wrong | Same error | Empty |
+|---|---|---|---|---|
+| Ban the first token (default) | 10 | 71 | 33 | 2 |
+| Source as a user turn (current inject) | 19 | 16 | 5 | 0 |
+| Passage as plain tokens at the cut | 40 | 25 | 9 | 19 |
+| Passage KV spliced at the cut | 26 | 16 | 3 | 25 |
+| Same KV far from the cut | 34 | 54 | 24 | 0 |
+| Spliced KV, attention times 4 | 15 | 29 | 4 | 17 |
+
+Plain tokens beat the user turn on good retries (33 against 12, Holm p = 0.015). The spliced KV does not beat the
+turn (p = 0.60). Nearness cuts wrong retries (42 against 4) and makes the rejected sentence less likely (86 of 95)
+but does not add good ones. More attention on the passage makes retries worse. With the source, 11 states only.

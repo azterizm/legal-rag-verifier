@@ -211,6 +211,12 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    probabilities and no text, and need no training and no server. Jev 1.13 scored 90.7 % and 88.1 % and the
    OpenAI Decisions API 89.0 % and 86.8 %. Jev is 3.1 and 2.0 points under the 27B and OpenAI 4.8 and 3.3,
    so neither met the limit of 3 points on both tests. Neither was run inside the loop.
+   Retries were then tested on 95 wrong closed-book sentences of the 7B (stop 67). The default retry, which
+   bans the first token, was wrong again 71 times and repeated the same claim 33 times. With the passage next to
+   the cursor, wrong retries fell to 16 to 25. The passage written into the KV cache was no better than the
+   current user turn (26 good against 19, not told apart). The passage as plain tokens beat the turn (40 against
+   19). Raising attention on the passage made retries worse. Retries with the source in the prompt were too few
+   to read (11).
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance

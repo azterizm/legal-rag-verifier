@@ -337,9 +337,14 @@ def outcomes(
         if item["carried"] == "no":
             wrong, good = True, False
         else:
-            if g["grounding"] not in ("supported", "unsupported", "contradicted", "no_claim"):
+            parts = set(g["grounding"].split("/"))
+            if not parts <= {"supported", "unsupported", "contradicted", "no_claim"}:
                 raise RuntimeError(f"{code}: grounding missing")
-            wrong = g["grounding"] in ("unsupported", "contradicted")
+            # wrong also when a grade names both wrong labels ("contradicted/unsupported")
+            wrong = bool(g["grounding"]) and set(g["grounding"].split("/")) <= {
+                "unsupported",
+                "contradicted",
+            }
             good = g["grounding"] == "supported" and g["on_question"] == g["reads_on"] == "yes"
         if wrong and g["same_error"] not in ("yes", "no"):
             raise RuntimeError(f"{code}: same_error missing")
