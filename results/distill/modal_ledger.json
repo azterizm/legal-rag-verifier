@@ -7502,5 +7502,327 @@
   "seconds": 510.2,
   "usd": 0.3178,
   "note": "no server"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 574.7,
+  "usd": 0.358,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 28.5,
+  "usd": 0.0178,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 24.2,
+  "usd": 0.0151,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 22.6,
+  "usd": 0.0141,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 29.1,
+  "usd": 0.0182,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 30.3,
+  "usd": 0.0189,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 22.0,
+  "usd": 0.0137,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 15.4,
+  "usd": 0.0096,
+  "note": "pool plain: 7 answers, 1 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 12.2,
+  "usd": 0.0076,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.2,
+  "usd": 0.0057,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.9,
+  "usd": 0.0068,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.1,
+  "usd": 0.0063,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.4,
+  "usd": 0.0053,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.0,
+  "usd": 0.0056,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.8,
+  "usd": 0.0048,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.2,
+  "usd": 0.0045,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.3,
+  "usd": 0.0045,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.8,
+  "usd": 0.0049,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.4,
+  "usd": 0.0046,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.3,
+  "usd": 0.0045,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.2,
+  "usd": 0.0045,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.6,
+  "usd": 0.0066,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 585.6,
+  "usd": 0.3648,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 39.1,
+  "usd": 0.0243,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 58.5,
+  "usd": 0.0365,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 51.3,
+  "usd": 0.0319,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 19.4,
+  "usd": 0.0121,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 46.6,
+  "usd": 0.0291,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 24.0,
+  "usd": 0.015,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 23.8,
+  "usd": 0.0148,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 39.1,
+  "usd": 0.0244,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 53.2,
+  "usd": 0.0331,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 37.6,
+  "usd": 0.0234,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 40.7,
+  "usd": 0.0254,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 32.5,
+  "usd": 0.0203,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 38.2,
+  "usd": 0.0238,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 45.1,
+  "usd": 0.0281,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 50.5,
+  "usd": 0.0315,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 500.7,
+  "usd": 0.3119,
+  "note": "pool plain: 1 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 31.9,
+  "usd": 0.0199,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 35.5,
+  "usd": 0.0221,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 40.3,
+  "usd": 0.0251,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 15.7,
+  "usd": 0.0098,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 22.6,
+  "usd": 0.0141,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 20.6,
+  "usd": 0.0128,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 29.4,
+  "usd": 0.0183,
+  "note": "pool plain: 8 answers, 0 errors"
  }
 ]

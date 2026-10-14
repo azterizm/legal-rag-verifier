@@ -3145,3 +3145,29 @@ questions; two model graders and you on what they leave open.
 - The first shared start failed: SGLang reads the generator's share against the memory free when it starts, not
   the whole card. The generator's share is now 80 % of the memory the judge leaves free (the 7B at 90 % ran out of memory at start).
   The failed starts are in the ledger.
+
+### Stop 68: the run, readings that need no grade (2026-10-14)
+
+2,160 answers (3 generators, 3 arms, 240 questions), 200 of them reused as fixed. No answer is missing; one 1B
+answer failed when its server ran out of memory and was asked again. Modal $10.03 for the stage ($40.05 of $55).
+
+| Generator | Arm | Sentences | The refusal | Answers only the refusal | Rollbacks | Seconds, p50 |
+|---|---|---|---|---|---|---|
+| Qwen 27B | none | 428 | 0 | 0 | 0 | 1.2 |
+| Qwen 27B | turn | 343 | 13 | 10 | 195 | 3.1 |
+| Qwen 27B | plain | 371 | 111 | 89 | 287 | 2.4 |
+| Qwen 2.5 7B | none | 523 | 0 | 0 | 0 | 1.1 |
+| Qwen 2.5 7B | turn | 624 | 46 | 0 | 417 | 4.1 |
+| Qwen 2.5 7B | plain | 442 | 84 | 7 | 580 | 3.2 |
+| MiniCPM5-1B | none | 603 | 0 | 0 | 0 | 0.2 |
+| MiniCPM5-1B | turn | 925 | 150 | 17 | 599 | 3.6 |
+| MiniCPM5-1B | plain | 969 | 466 | 143 | 1,664 | 1.8 |
+
+- The plain-text loop ends far more points in the refusal than the turn loop: 30 % of the 27B's sentences
+  against 4 %, 19 % of the 7B's against 7 %, 48 % of the 1B's against 16 %. The fixed reading allows `plain` at most 5 points above `turn`,
+  so `plain` cannot pass it for these generators whatever the grades show. In the loop the model often ends the
+  answer right after the plain passage (stop 67 saw the same as empty retries), and the engine then refuses.
+- Sheet: 240 questions, **2,968 sentences to grade**; 474 carried from earlier sheets, 844 refusals not graded,
+  615 repeats graded once. Sheet and key are git-ignored. sha256 before any grade: sheet
+  `b699f34e4828e028ce543c38cde1f8795744b4cc95f93e7c81ff03305e5617df`, key
+  `6acd0b21400c74f89e44fca702a33b294f9efa3065a0f9e1bb9ef1f41038570d`. **Halt for you** before any grading call.
