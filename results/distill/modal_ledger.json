@@ -7495,5 +7495,12 @@
   "seconds": 471.2,
   "usd": 0.2935,
   "note": "no server"
+ },
+ {
+  "run": "stop68 qwen7",
+  "gpu": "L40S",
+  "seconds": 510.2,
+  "usd": 0.3178,
+  "note": "no server"
  }
 ]
