@@ -1,0 +1,26 @@
+{
+ "factor": 4.0,
+ "by_factor": {
+  "1.5": {
+   "states": 46,
+   "retries": 33,
+   "passed_not_copied": 11,
+   "copied": 0,
+   "share_mean": 0.4048
+  },
+  "2.0": {
+   "states": 46,
+   "retries": 36,
+   "passed_not_copied": 15,
+   "copied": 0,
+   "share_mean": 0.4594
+  },
+  "4.0": {
+   "states": 46,
+   "retries": 40,
+   "passed_not_copied": 18,
+   "copied": 1,
+   "share_mean": 0.5833
+  }
+ }
+}
