@@ -3011,3 +3011,9 @@ Yours: Opus 5.5 and Gemini 3.1 Pro grade, you settle where they differ (stop 57'
   gemini-3.1-pro-low". By your choice the second grader is `gemini-3.8-flash-high` (temperature 0, the same
   prompt). Everything else as fixed. Opus 5.5 had graded 3 states when the change was made; it grades the same
   sheet either way.
+- Grading run (2026-10-14): Opus 5.5 and Gemini 3.8 Flash graded all 596 items. Same outcome on 512 at the
+  first pass, 35 more when asked again with a reason first. **49 are left for you**: `results/retry/leftover.md`
+  (git-ignored), your column file `results/retry/leftover.csv` (`grounding` supported / unsupported /
+  contradicted / no_claim, `on_question` and `reads_on` yes / no, `same_error` yes / no when not supported).
+  Then `scripts/retry_grader.py fill` and `scripts/retry_report.py report`. Opus 5.5 $3.53 for this stop
+  ($18.58 of $40); Flash is not charged on this router.
