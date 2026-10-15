@@ -3328,3 +3328,11 @@ path unsettled (stop 47 gained 3 sentences, stop 56 lost 5.5 points).
   stops the run if it is down, so no answer is kept without a judge; the 1B's share of the free memory goes from
   80 % to 50 % (it needs about 3 GB). The 558 answers are moved to `minicpm1.invalid.jsonl` and made again; the
   new stop 68 answers are graded with stop 68's method and its report rerun.
+- After the redo (2026-10-15): stop 70's 1B answers and stop 68's 119 have only valid judge calls. The 1B's
+  share of sentences that are the refusal is now 28 % with `ban` and 16 % with `turn` (stop 70), and 17 % with
+  `plain` in stop 68 (it read 48 % with the dead judge). The redone stop 68 answers are graded on stop 70's
+  sheet, by the same method; stop 68's report is rerun with those grades. Modal: stop 70 $3.69, the stop 68 redo
+  $0.91 ($45.77 of $55).
+- Sheet: 240 questions, **1,233 sentences to grade** (stop 70's and the redone stop 68 answers), 419 carried, 352
+  refusals not graded, 403 repeats graded once. sha256 before any grade, sheet and key: `762979ebac5e1c7390fdaa8810527c4c84e144dceaf6f04aba3d6866f99ed7b4 0341e6c30a12c58e08d339e106db970fafb4d8c61cbb3bd1507b318e42083d3b`. Your grading plan
+  stands: Opus 5.5 and Gemini 3.8 Flash; if Opus 5.5 stops, the model you name takes its place.
