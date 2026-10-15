@@ -3318,3 +3318,13 @@ path unsettled (stop 47 gained 3 sentences, stop 56 lost 5.5 points).
   grades are carried by question and sentence, as fixed. A first version of the test for the clean stop
   patched the wrong copy of the router module and sent 18 real calls to Opus 5.5 ($0.06, written to a temporary
   folder, not used); the test now patches the module the grader imports and makes no call.
+- **A fault found before grading (2026-10-15), and it reaches back to stop 68.** On the shared GPU the 27B judge
+  in the 1B's container ran out of memory and died; the 1B's server lived on. The loop counts a failed judge
+  call as not stated, so every later sentence was rolled back and refused. Stop 70: 439 of the 1B's 479 loop
+  answers (all 240 `turn`, 199 `ban`) have only failed judge calls. Stop 68: 119 of the 1B's 120 `plain` answers
+  on the pool questions do too. The 7B and 27B runs have no failed judge call. Stop 68's 1B `plain` figures
+  (48 % refused, no wrong answer on the pool) are therefore partly the dead judge, and that reading is withdrawn
+  until the answers are made again. Fix: the container checks the judge before and after every loop answer and
+  stops the run if it is down, so no answer is kept without a judge; the 1B's share of the free memory goes from
+  80 % to 50 % (it needs about 3 GB). The 558 answers are moved to `minicpm1.invalid.jsonl` and made again; the
+  new stop 68 answers are graded with stop 68's method and its report rerun.
