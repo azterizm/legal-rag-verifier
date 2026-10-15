@@ -3389,3 +3389,35 @@ reading stands: the plain-text passage is better for no generator.
 
 Spend, stop 70: Modal $3.69 and the stop 68 redo $0.91; Opus 5.5 $3.22. Totals: Modal $45.77 of $55, Opus 5.5
 $39.06 of $40.
+
+## Stop 71: the loop with a 7B generator against two frontier models (method fixed 2026-10-15, before any call)
+
+Your question: does a small generator with the local 27B judge come near frontier models on grounded accuracy?
+Your choices: Gemini 3.8 Flash (high) and Claude Opus 4.6 (thinking) as the frontier models; each judges the
+other's answers; Opus 5.5 grades, its cap raised to $45.
+
+- Questions: stop 70's 240, the source in the prompt (stop 43's prompts, the engine's premise rendering).
+- Arms, all through the router, temperature 0, one answer per question:
+  - `flash`: Gemini 3.8 Flash answers.
+  - `opus46`: Opus 4.6 answers.
+  - `flash+opus46`: `flash`'s answer, each sentence checked by the package verifier with Opus 4.6 as the judge
+    (`STRICT_FIGURES`, the short reply, the answer so far as the sentences kept before it); a sentence it rolls
+    back is dropped. An answer with nothing left counts as a refusal.
+  - `opus46+flash`: the same with the roles swapped.
+  - The frontier arms check after writing; the in-flight loop needs control of the token stream, which the
+    router does not give. That difference is part of what is compared.
+- The local arm: stop 70's Qwen 2.5 7B with the turn loop and the 27B judge, as graded there. No new run.
+- Grades: every sentence of the frontier answers; a sentence word for word equal to one graded before for the
+  same question keeps its grade (stops 43 to 70). The rest: one blind sheet per question, the fresh sheets'
+  rule; Opus 5.5 grades each sentence once; what it marks unsure goes to you. Flash does not grade: it wrote
+  one arm. Opus 5.5 grading Opus 4.6's answers is a grader of the same family; this is reported.
+- Reading, fixed now: for each frontier arm, answers with at least one sentence graded wrong, the 7B loop minus
+  the frontier arm, paired by question, with a 95 % bootstrap interval (10,000 resamples over questions, seed
+  20261015). **The loop is near the frontier arm if the upper end of that interval is at most 4 points** (of
+  240 answers). Beside it: wrong sentences with Wilson intervals, refusals, right statements per answer, and
+  seconds per answer (the router's time for the frontier arms, the GPU's for the loop).
+- Limits: the loop arm and the frontier arms were graded by different mixes of graders; the share of Opus 5.5's
+  first-pass grades that match the final grades on stop 70's 7B sentences is reported as a check. One run per
+  arm. Fresh questions read since stop 47.
+- Spend: Modal none. Router: Flash and Opus 4.6 are not charged; Opus 5.5 grading expected $3 to $4 under the
+  raised cap of $45.
