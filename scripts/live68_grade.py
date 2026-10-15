@@ -76,11 +76,25 @@ def sentences(text: str) -> list[str]:
     return [s.text.strip() for s in split_sentences(text) if s.text.strip()]
 
 
+STORE: Any = l68  # the answers graded: stop 68's, or stop 70's after ``use(70)``
+EXTRA: dict[tuple[str, str], str] = {}  # further grades carried (stop 70: stop 68's)
+
+
+def use(stop: int) -> None:
+    """Point the sheet, the graders and the readings at stop 70's answers and files."""
+    global OUT, REPORT, STORE, EXTRA  # noqa: PLW0603 - one switch, as pool2.activate
+    if stop == 70:  # noqa: PLR2004
+        import live70  # type: ignore[import-not-found]  # noqa: PLC0415
+
+        EXTRA = grades_by_sentence()  # stop 68's grades, carried by question and sentence
+        OUT, REPORT, STORE = live70.OUT, ROOT / "results/live70_report.json", live70
+
+
 def answers() -> list[dict[str, Any]]:
     """Every final answer of every generator, with its generator."""
     out = []
-    for g in l68.GENERATORS:
-        out += [{**r, "gen": g} for r in l68.done(g).values()]
+    for g in STORE.GENERATORS:
+        out += [{**r, "gen": g} for r in STORE.done(g).values()]
     return out
 
 
@@ -97,6 +111,8 @@ def carried() -> dict[tuple[str, str], str]:
                 if grade in GRADES:
                     k = key[row["item"]]
                     seen.setdefault((k["id"], k["text"].strip()), set()).add(grade)
+    for k, g in EXTRA.items():
+        seen.setdefault(k, set()).add(g)
     return {k: next(iter(v)) for k, v in seen.items() if len(v) == 1}
 
 
@@ -196,12 +212,18 @@ def parse(reply: Mapping[str, Any], items: Sequence[str], *, again: bool) -> dic
     return out
 
 
-def grade(grader: str, *, again: bool = False) -> None:
+def grade(grader: str, *, again: bool = False, model: str = "") -> None:
+    """Ask ``grader``'s share, one call per question, appended as each returns. A rate limit that
+    outlasts the router's retries, or the model's ledger stop, ends the run cleanly: no further call
+    is made and what is done is kept. ``model`` puts another router model in this grader's place
+    (stop 70: Opus 5.5 is replaced if it stops); each row records the model that graded it."""
     import router  # type: ignore[import-not-found]  # noqa: PLC0415
 
-    model = {"opus55": router.OPUS55, "flash": router.GEMINI}[grader]
-    if grader == "opus55":
-        router.CAPS[model] = OPUS_STOP
+    model = model or {"opus55": router.OPUS55, "flash": router.GEMINI}[grader]
+    if model not in router.MODELS:
+        raise SystemExit(f"{model!r} is not a router model this repo may call")
+    if model == router.OPUS55:
+        router.CAPS[model] = min(router.CAPS[model], OPUS_STOP)
     have = done(grader, again=again)
     wanted = set(open_items()) if again else None
     todo = []
@@ -209,9 +231,12 @@ def grade(grader: str, *, again: bool = False) -> None:
         items = [k for k in _ITEM.findall(block) if wanted is None or k in wanted]
         if items and not set(items) <= set(have):
             todo.append((q, block, items))
-    print(f"{grader}{' again' if again else ''}: {len(todo)} questions to ask", flush=True)
+    print(f"{grader} ({model}){' again' if again else ''}: {len(todo)} questions", flush=True)
+    stopped: list[str] = []
 
     def one(job: tuple[str, str, list[str]]) -> None:
+        if stopped:
+            return
         q, block, items = job
         user = (
             AGAIN.format(rule=RULE, block=block, items=", ".join(items))
@@ -220,12 +245,17 @@ def grade(grader: str, *, again: bool = False) -> None:
         )
         messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
         for _ in range(3):
+            if stopped:
+                return
             try:
                 reply = aj.extract_json(router.chat(model, messages)["content"])
                 grades = parse(reply, items, again=again)
-            except (ValueError, json.JSONDecodeError, router.RouterError):
+            except (router.BudgetExceededError, router.RouterError) as exc:
+                stopped.append(repr(exc)[:300])  # the ledger stop, or a limit past every retry
+                return
+            except (ValueError, json.JSONDecodeError):
                 continue
-            row: dict[str, Any] = {"q": q, "grades": grades}
+            row: dict[str, Any] = {"q": q, "grades": grades, "model": model}
             if again:
                 row["reasons"] = {
                     k: str((reply.get(k) or {}).get("reason", ""))[:400] for k in items
@@ -237,7 +267,10 @@ def grade(grader: str, *, again: bool = False) -> None:
 
     with ThreadPoolExecutor(WORKERS) as pool:
         list(pool.map(one, todo))
-    print(json.dumps({"ledger": router.ledger().get(model, {})}))
+    left = sum(1 for q, _, items in todo if not set(items) <= set(done(grader, again=again)))
+    if stopped:
+        print(f"STOPPED: {stopped[0]}; {left} questions left for the next model", flush=True)
+    print(json.dumps({"left": left, "ledger": router.ledger().get(model, {})}))
 
 
 def consensus() -> dict[str, dict[str, Any]]:
@@ -422,20 +455,70 @@ def report() -> dict[str, Any]:
     return out
 
 
+RIGHT_FLOOR = 0.90  # GRID § Stop 70: right sentences per answer at least this share of none's
+REFUSAL_CAP = 0.05
+
+
+def report70() -> dict[str, Any]:
+    """Stop 70's readings: each loop against ``none`` per generator, Holm over the four."""
+    by = scored(grades_by_sentence())
+    out: dict[str, Any] = {"generators": {}, "primary": {}}
+    questions = [f"{s}:{r['id']}" for s in STORE.SETS for r in STORE.rows(s)]
+    tests: dict[str, dict[str, Any]] = {}
+    for gen in STORE.GENERATORS:
+        g: dict[str, Any] = {}
+        for arm in STORE.ARMS:
+            rows = [v for v in by.values() if v["gen"] == gen and v["arm"] == arm]
+            g[arm] = {"total": summary(rows)}
+            for s in STORE.SETS:
+                g[arm][s] = summary([r for r in rows if r["set"] == s])
+        have = [q for q in questions if all(f"{gen}:{q}:{arm}" in by for arm in STORE.ARMS)]
+        g["questions_with_all_arms"] = len(have)
+        g["turn_against_ban"] = paired(by, gen, "turn", "ban", have)
+        for arm in ("ban", "turn"):
+            tests[f"{gen} {arm}"] = paired(by, gen, arm, "none", have)
+        out["generators"][gen] = g
+    adjusted = holm({k: v["p"] for k, v in tests.items()})
+    for name, t in tests.items():
+        gen, arm = name.split()
+        loop, none = out["generators"][gen][arm]["total"], out["generators"][gen]["none"]["total"]
+        right_ok = (loop["right_per_answer"] or 0) >= RIGHT_FLOOR * (none["right_per_answer"] or 0)
+        out["primary"][name] = {
+            **t,
+            "holm_p": round(adjusted[name], 6),
+            "refusal_share": loop["refusal_share"],
+            "right_per_answer": loop["right_per_answer"],
+            "right_per_answer_none": none["right_per_answer"],
+            "better": bool(
+                t["only_a_wrong"] < t["only_b_wrong"]
+                and adjusted[name] < ALPHA
+                and (loop["refusal_share"] or 0) <= REFUSAL_CAP
+                and right_ok
+            ),
+        }
+    REPORT.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["sheet", "grade", "leftover", "report"])
     parser.add_argument("grader", nargs="?", choices=GRADERS)
     parser.add_argument("--again", action="store_true")
+    parser.add_argument("--stop", type=int, default=68, choices=[68, 70])
+    parser.add_argument("--model", default="", help="a router model in the grader's place")
     args = parser.parse_args()
+    use(args.stop)
     if args.command == "sheet":
         print(json.dumps(build(), indent=1))
     elif args.command == "grade":
         if args.grader is None:
             parser.error("grade needs a grader")
-        grade(args.grader, again=args.again)
+        grade(args.grader, again=args.again, model=args.model)
     elif args.command == "leftover":
         leftover()
+    elif args.stop == 70:  # noqa: PLR2004
+        print(json.dumps(report70()["primary"], indent=1))
     else:
         print(json.dumps(report()["primary"], indent=1))
 

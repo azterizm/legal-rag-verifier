@@ -3312,3 +3312,9 @@ path unsettled (stop 47 gained 3 sentences, stop 56 lost 5.5 points).
 - Limits: one greedy run; fresh questions read since stop 47; graders are models and you.
 - Spend: Modal, run `stop70`, expected $7 to $9, stage stop $11 ($13.83 left of $55). Router: Opus 5.5 within its
   cap, Flash not charged.
+- Notes before any grading call (2026-10-15). The grader now stops all its workers at the first refusal from the
+  router (Opus 5.5's ledger stop, or a rate limit past the router's retries), keeps what is done, and takes
+  `--model` to put another router model in the grader's place; each row records its model. Stop 68's final
+  grades are carried by question and sentence, as fixed. A first version of the test for the clean stop
+  patched the wrong copy of the router module and sent 18 real calls to Opus 5.5 ($0.06, written to a temporary
+  folder, not used); the test now patches the module the grader imports and makes no call.
