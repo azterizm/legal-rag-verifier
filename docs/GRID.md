@@ -3275,3 +3275,40 @@ and six a different sentence split left without a grade were left out: 1,630 sen
   judge did not make.
 
 Spend, stop 69: Modal $1.13, Opus 5.5 $8.76. Totals: Modal $41.17 of $55, Opus 5.5 $35.84 of $40.
+
+## Stop 70: the live loop with the source in the prompt, for generators that err (method fixed 2026-10-15, before any run)
+
+Your go: "go on test 2 with 7B and 1B". The council's first route: the path in production puts the source in the
+prompt, and it has never run live with a generator that errs there. Qwen 2.5 7B wrote 22 of 163 and 4 of 72
+sentences wrong with the source (stop 43, stop 56); replays of finished answers left the judge's value on that
+path unsettled (stop 47 gained 3 sentences, stop 56 lost 5.5 points).
+
+- Questions: stop 68's 240 (120 fresh, 120 from the pool).
+- Generators: Qwen 2.5 7B and MiniCPM5-1B. The judge as stop 68: the 27B AutoRound 4-bit, short reply, stop 47's
+  sampling, seed 0, `STRICT_FIGURES`, on the same L40S as the generator, with stop 68's final memory shares.
+  A Modal account other than stop 68's; weights downloaded again where missing.
+- Prompts: stop 43's with the source (the engine's `SYSTEM_PROMPT` for statutes, stop 37's software prompt),
+  greedy, thinking off where the model has it. The server's cache is emptied before each answer.
+- Arms:
+  - `none`: one greedy answer, no loop. The 7B's on the 120 fresh questions are reused (stops 43 and 56, graded
+    by you).
+  - `ban`: the loop with the engine's default steering (allow-list or ban), stop 59's `source` configuration.
+  - `turn`: the same loop, but a rollback writes the aligned windows as stop 30's user turn in the model's own
+    chat format, kept to the end of the answer.
+  - Engine as 0.1.0: 3 retries per sentence, 8 rollbacks per answer, then the fixed refusal.
+- Grades: every sentence of the final answers; the engine's refusal counted apart; a sentence word for word equal
+  to a graded one of the same question keeps its grade. The rest on one blind sheet per question. Your choice:
+  Opus 5.5 grades, with Gemini 3.8 Flash as the second grader as in stop 68; settled when both agree, else asked
+  again with a reason first. If Opus 5.5 stops (a rate limit, or its $40 cap: $4.16 is left), the run stops
+  cleanly, keeps what it has, and the rest of its share goes to the model you name then; the grader of each item
+  is recorded. **Halt for you** before grading with the count, and again with what is left open.
+- Readings, fixed now:
+  - Primary: each loop against `none`, answers with at least one sentence graded wrong, paired by question,
+    exact McNemar, Holm over the four (2 generators x 2 loops). A loop counts as better only if it has fewer
+    such answers with a corrected p under 0.05, its share of sentences replaced by the refusal is at most 5 %,
+    and its right sentences per answer are at least 90 % of `none`'s.
+  - Secondary: `turn` against `ban`; wrong sentences that passed at the first try against after a retry; share of
+    graded sentences wrong with a 95 % Wilson interval; per set and per domain; rollbacks, time per answer.
+- Limits: one greedy run; fresh questions read since stop 47; graders are models and you.
+- Spend: Modal, run `stop70`, expected $7 to $9, stage stop $11 ($13.83 left of $55). Router: Opus 5.5 within its
+  cap, Flash not charged.
