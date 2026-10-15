@@ -2528,3 +2528,51 @@ def live68(
                 if failed >= 2:  # noqa: PLR2004
                     raise RuntimeError("two chunks failed in a row; stopped")
     print(f"Modal: stage ${ledger.stage_spent(LIVE68_STAGE):.2f}, total ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 69: the judge re-asked
+
+JUDGE69_STAGE = "stop69"
+JUDGE69_STOP = 3.0  # USD, GRID § Stop 69
+for _seed in (1, 2):
+    JUDGES[f"qwen27-ar4-seed{_seed}"] = {
+        **JUDGES["qwen27-ar4"],
+        "sampling": {**JUDGES["qwen27-ar4"]["sampling"], "seed": _seed},
+    }
+
+
+@app.local_entrypoint()
+def judge69(seed: int = 1) -> None:
+    """Stop 69: the 27B's short-reply labels with ``seed`` on every prompt of stop 68's committed
+    turn-loop sentences; resumable."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import judge69 as j  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    name, source = f"qwen27-ar4-seed{seed}", f"seed{seed}"
+    us, premises = j.units()
+    asked = j.requests(us, premises)
+    have = j.read(source)
+    todo = [(k, v) for k, v in asked.items() if k not in have]
+    print(f"{source}: {len(asked)} prompts, {len(todo)} to judge", flush=True)
+    server = JudgeL40S(name=name)
+    startup_recorded = False
+    for at in range(0, len(todo), CHUNK):
+        chunk = dict(todo[at : at + CHUNK])
+        ledger.check_stage(JUDGE69_STAGE, JUDGE69_STOP, "L40S", ARMS_ESTIMATE)
+        t0 = time.time()
+        seconds, note = 0.0, "failed"
+        try:
+            out = server.judge.remote(chunk, WORKERS)
+            j.append(source, out["labels"])
+            seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
+            startup_recorded = True
+            bad = sum(row["label"] == "error" for row in out["labels"].values())
+            note = f"{source}: {len(out['labels'])} labels, {bad} errors"
+        except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
+            seconds = time.time() - t0
+            print(f"chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
+        finally:
+            ledger.record(f"{JUDGE69_STAGE} judge", "L40S", seconds, note)
+        print(f"{source}: {min(at + CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
+    print(f"Modal: stage ${ledger.stage_spent(JUDGE69_STAGE):.2f}, total ${ledger.spent():.2f}")
