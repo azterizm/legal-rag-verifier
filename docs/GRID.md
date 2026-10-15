@@ -3336,3 +3336,12 @@ path unsettled (stop 47 gained 3 sentences, stop 56 lost 5.5 points).
 - Sheet: 240 questions, **1,233 sentences to grade** (stop 70's and the redone stop 68 answers), 419 carried, 352
   refusals not graded, 403 repeats graded once. sha256 before any grade, sheet and key: `762979ebac5e1c7390fdaa8810527c4c84e144dceaf6f04aba3d6866f99ed7b4 0341e6c30a12c58e08d339e106db970fafb4d8c61cbb3bd1507b318e42083d3b`. Your grading plan
   stands: Opus 5.5 and Gemini 3.8 Flash; if Opus 5.5 stops, the model you name takes its place.
+- Grading run (2026-10-15): Opus 5.5 hit the router's rate limit at 124 questions and was resumed when it cleared;
+  it then stopped at its $39 stop with 12 questions left. By your choice the last 12 go to Opus 5.5 up to its $40
+  cap (`--opus-stop 40`). Flash graded every question.
+- Second ask (2026-10-15), your choice: claude-opus-4-6-thinking in Opus 5.5's place (Opus 5.5 at its $40 cap),
+  Gemini 3.8 Flash asked again on its side. One row from a stopped attempt, written by Flash into Opus 5.5's
+  place, was removed and that question asked again with Opus 4.6. Settled: 1,085 at the first pass, 33 when asked
+  again. **115 are left for you**: `results/live70/leftover.md` (git-ignored), your column file
+  `results/live70/leftover.csv` (`correct`: yes, no or unsure). Opus 5.5 $3.22 for this stop ($39.06 of $40);
+  Opus 4.6 and Flash are not charged.
