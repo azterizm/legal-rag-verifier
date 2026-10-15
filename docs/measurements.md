@@ -1182,3 +1182,17 @@ On 1,630 sentences the turn loop committed in stop 68 (136 graded wrong), asking
 more seeds and keeping a sentence only if every sample says supported drops 26 wrong and 32 right sentences. Opus
 5.5 as a second judge drops 50 wrong and 15 right on the 1,113 sentences it labelled, but Opus 5.5 also graded most
 of them; on the sentences you graded it drops 4 wrong and 7 right. Neither check is shown to help.
+
+## The live loop with the source in the prompt (stop 70, 2026-10-15; method in `docs/GRID.md`)
+
+240 questions per generator, source in the prompt. Answers holding at least one sentence graded wrong.
+
+| Generator | No loop | Loop, ban retry | Loop, source as a turn |
+|---|---|---|---|
+| Qwen 2.5 7B | 25, 9.3 % of sentences | 16, 4.9 %, refusal 5 % | 13, 3.7 %, refusal 4 % |
+| MiniCPM5-1B | 116, 41.3 % | 49, 15.9 %, refusal 28 % | 46, 12.2 %, refusal 16 % |
+
+The turn loop is better than no loop for the 7B (Holm p = 0.045) with fewer refusals than 5 % and more right
+statements. For the 1B the loops remove most wrong answers but refuse too often to pass the fixed reading.
+Stop 68's 1B figures were corrected the same day after a judge fault: plain 37 and turn 53 answers with a wrong
+sentence, not told apart.

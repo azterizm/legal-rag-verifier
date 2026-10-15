@@ -94,6 +94,16 @@ def use(stop: int) -> None:
         OUT, REPORT, STORE = live70.OUT, ROOT / "results/live70_report.json", live70
 
 
+def use68_with_70() -> None:
+    """Stop 68's readings, with the grades of stop 70's sheet carried too (the redone 1B answers
+    were graded there)."""
+    global OUT, REPORT, STORE, EXTRA
+    use(70)
+    seventy = grades_by_sentence()
+    OUT, REPORT, STORE = ROOT / "results/live68", ROOT / "results/live68_report.json", l68
+    EXTRA, EXTRA_ANSWERS[:] = seventy, []
+
+
 def answers() -> list[dict[str, Any]]:
     """Every final answer of every generator, with its generator."""
     out = []
@@ -523,8 +533,11 @@ def main() -> None:
     parser.add_argument("--stop", type=int, default=68, choices=[68, 70])
     parser.add_argument("--model", default="", help="a router model in the grader's place")
     parser.add_argument("--opus-stop", type=float, default=0.0, help="Opus 5.5's ledger stop, USD")
+    parser.add_argument("--with-70", action="store_true", help="stop 68 with stop 70's grades")
     args = parser.parse_args()
     use(args.stop)
+    if args.with_70:
+        use68_with_70()
     if args.command == "sheet":
         print(json.dumps(build(), indent=1))
     elif args.command == "grade":

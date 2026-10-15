@@ -221,6 +221,11 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    generators. The loop with the source as a turn cut answers holding a wrong sentence from 132 to 23 for the 27B,
    198 to 28 for Qwen 2.5 7B and 92 to 53 for MiniCPM5-1B. The plain-text passage was better for none of them.
    After it the model often ended the answer and the engine refused: 30 % of the 27B's points against 4 %.
+   The loop was then run live with the source in the prompt for two generators that do err there (stop 70).
+   For Qwen 2.5 7B the turn loop cut answers holding a wrong sentence from 25 to 13 of 240 (Holm p = 0.045), with
+   3.8 % refusals and more right statements. For MiniCPM5-1B the loops cut them from 116 to 46 to 49, but refused
+   16 to 28 % of points. The same day a fault was found: on a shared GPU the judge had died in the 1B's runs and
+   the loop refused everything after it; those answers were made again and stop 68's 1B figures corrected.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
