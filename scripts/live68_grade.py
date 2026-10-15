@@ -224,7 +224,7 @@ def parse(reply: Mapping[str, Any], items: Sequence[str], *, again: bool) -> dic
     return out
 
 
-def grade(grader: str, *, again: bool = False, model: str = "") -> None:
+def grade(grader: str, *, again: bool = False, model: str = "", opus_stop: float = 0.0) -> None:
     """Ask ``grader``'s share, one call per question, appended as each returns. A rate limit that
     outlasts the router's retries, or the model's ledger stop, ends the run cleanly: no further call
     is made and what is done is kept. ``model`` puts another router model in this grader's place
@@ -235,7 +235,7 @@ def grade(grader: str, *, again: bool = False, model: str = "") -> None:
     if model not in router.MODELS:
         raise SystemExit(f"{model!r} is not a router model this repo may call")
     if model == router.OPUS55:
-        router.CAPS[model] = min(router.CAPS[model], OPUS_STOP)
+        router.CAPS[model] = min(router.CAPS[model], opus_stop or OPUS_STOP)
     have = done(grader, again=again)
     wanted = set(open_items()) if again else None
     todo = []
@@ -522,6 +522,7 @@ def main() -> None:
     parser.add_argument("--again", action="store_true")
     parser.add_argument("--stop", type=int, default=68, choices=[68, 70])
     parser.add_argument("--model", default="", help="a router model in the grader's place")
+    parser.add_argument("--opus-stop", type=float, default=0.0, help="Opus 5.5's ledger stop, USD")
     args = parser.parse_args()
     use(args.stop)
     if args.command == "sheet":
@@ -529,7 +530,7 @@ def main() -> None:
     elif args.command == "grade":
         if args.grader is None:
             parser.error("grade needs a grader")
-        grade(args.grader, again=args.again, model=args.model)
+        grade(args.grader, again=args.again, model=args.model, opus_stop=args.opus_stop)
     elif args.command == "leftover":
         leftover()
     elif args.stop == 70:  # noqa: PLR2004

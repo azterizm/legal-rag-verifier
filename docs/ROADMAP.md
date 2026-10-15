@@ -17,13 +17,14 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-14 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 69 is done (GRID). The judge re-asked with more seeds drops as many right sentences as wrong; Opus 5.5 as a second judge looks strong only on sentences it also graded. No judge-side check is carried forward. Open option: the live loop with the source in the prompt for the 7B and the 1B (council route, not yet fixed) |
-| Waiting on you | Whether to run the live loop with the source in the prompt (Modal $13.83 and Opus 5.5 $4.16 left). Branches `stop-67` and `stop-68` are local |
+| Next step | Stop 70 (the live loop with the source in the prompt, 7B and 1B): run, judge-fault redo and model grading done. Next: your 115 grades, then `scripts/live68_grade.py report --stop 70` and stop 68's report again with the redone 1B grades |
+| Waiting on you | Your grades for the 115 stop 70 sentences left open: `results/live70/leftover.md`, fill `results/live70/leftover.csv` |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-15 (stop 70): **The live loop with the source in the prompt, 7B and 1B.** 1,440 answers. The 27B judge died on the 1B's shared GPU; 558 answers (439 here, 119 of stop 68's 1B plain) were set aside and made again with a judge check. Stop 68's 1B plain refusal was 17 %, not 48 %. Graders: Opus 5.5 (to its cap), Opus 4.6 for the second ask, Flash; 115 left for you. Modal $4.60 with the redo. **Resume:** your grades, then both reports
 - 2026-10-15 (stop 69): **The judge re-asked, and Opus 5.5 as a checker, on stop 68's committed sentences.** Seeds 1 and 2: 26 wrong and 32 right dropped. Opus 5.5 (stopped at its $36 stop, 1,113 sentences): 50 wrong and 15 right dropped, but it also graded most of them; on your grades 4 and 7. Nothing carried forward. Modal $1.13, Opus $8.76. **Resume:** your call on the source-in-prompt live loop
 - 2026-10-14 (stop 68 results): your 303 grades taken as written (graded with Gemini 4 Argon High in six parts outside the repository, refined by hand). Plain against turn, answers with a wrong sentence: 27B 7 and 5, 7B 16 and 12, 1B 12 and 44, but the 1B's plain refuses 48 % against 16 %. Plain is better for none. Every loop beats no loop (p < 0.001). **Resume:** nothing planned
 - 2026-10-14 (stop 68): **The plain-text passage in the live loop, three generators, closed-book.** Your go. 2,160 answers on 240 questions (120 fresh, 120 new from the pool). The 7B and the 1B moved to one shared GPU mid-run by your choice. Plain ends far more points in the refusal than the turn loop (27B 30 % against 4 %), so it cannot pass the fixed reading. Graders settled 2,665 of 2,968 sentences; 303 left for you. Modal $10.03, Opus 5.5 $8.50. **Resume:** your grades, then the report
