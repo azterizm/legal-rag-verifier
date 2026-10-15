@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import importlib
+
 import pytest
 
 from scripts import live68 as l68
@@ -48,3 +50,27 @@ def test_the_wilson_interval_holds_the_share() -> None:
     low, high = lg.wilson(6, 50)
     assert low < 0.12 < high
     assert lg.wilson(0, 0) == [0.0, 0.0]
+
+
+def test_the_grader_stops_cleanly_when_the_router_refuses(
+    monkeypatch: pytest.MonkeyPatch, tmp_path: object
+) -> None:
+    router = importlib.import_module("router")  # the module the grader imports by name
+
+    calls: list[str] = []
+
+    def refuse(model: str, messages: list[dict[str, str]], **_: object) -> dict[str, object]:
+        assert model == "claude-opus-5-5(high)"
+        calls.append(model)
+        raise router.BudgetExceededError("cap")
+
+    monkeypatch.setattr(router, "chat", refuse)
+    monkeypatch.setattr(lg, "OUT", tmp_path)
+    monkeypatch.setattr(
+        lg, "blocks", lambda: {f"Q{n:03d}": f"- **Q{n:03d}A1.** x" for n in range(9)}
+    )
+    lg.grade("opus55")
+    assert (
+        len(calls) <= lg.WORKERS
+    )  # each worker stops at its first refusal; no question asked again
+    assert lg.done("opus55") == {}
