@@ -3345,3 +3345,47 @@ path unsettled (stop 47 gained 3 sentences, stop 56 lost 5.5 points).
   again. **115 are left for you**: `results/live70/leftover.md` (git-ignored), your column file
   `results/live70/leftover.csv` (`correct`: yes, no or unsure). Opus 5.5 $3.22 for this stop ($39.06 of $40);
   Opus 4.6 and Flash are not charged.
+
+### Stop 70: results (2026-10-15)
+
+Your 115 grades were taken as written; you graded them first with Gemini 4 Argon High, outside this repository,
+then refined them by hand. Then `live68_grade.py report --stop 70`, once. Raw: `results/live70_report.json`.
+Grades: Opus 5.5 with Opus 4.6 on the second ask and Gemini 3.8 Flash (1,118), you (115), carried (419 plus
+stop 68's). The engine's refusal is not graded.
+
+Source in the prompt, 240 questions per generator, every arm on every question.
+
+| Generator | Arm | Answers with a wrong sentence | Wrong sentences (95 % interval) | Right per answer | The refusal | Seconds, p50 |
+|---|---|---|---|---|---|---|
+| Qwen 2.5 7B | none | 25 | 35 / 377, 9.3 % (6.8 to 12.6) | 1.43 | 0 % | 0.6 |
+| Qwen 2.5 7B | ban | 16 | 18 / 367, 4.9 % (3.1 to 7.6) | 1.45 | 5.2 % | 1.7 |
+| Qwen 2.5 7B | turn | 13 | 14 / 379, 3.7 % (2.2 to 6.1) | 1.52 | 3.8 % | 1.7 |
+| MiniCPM5-1B | none | 116 | 184 / 445, 41.3 % (36.9 to 46.0) | 1.09 | 0 % | 0.2 |
+| MiniCPM5-1B | ban | 49 | 56 / 353, 15.9 % (12.4 to 20.0) | 1.24 | 28 % | 1.6 |
+| MiniCPM5-1B | turn | 46 | 57 / 466, 12.2 % (9.6 to 15.5) | 1.70 | 16 % | 1.7 |
+
+- Fixed reading, each loop against `none` (answers with a wrong sentence, only the loop and only none, Holm p):
+  - 7B `turn`: 6 and 18, p = 0.045, refusal 3.8 %, right per answer 1.52 against 1.43. **Better.**
+  - 7B `ban`: 6 and 15, p = 0.078, refusal 5.2 %. Not better: p over 0.05 and refusal over 5 %.
+  - 1B `ban`: 3 and 70, p < 1e-6, but refusal 28 %. Not better by the reading.
+  - 1B `turn`: 4 and 74, p < 1e-6, but refusal 16 %. Not better by the reading, though it keeps more right
+    statements than no loop (1.70 against 1.09).
+- `turn` against `ban`: 7B 2 and 5 (p = 0.45), 1B 11 and 14 (p = 0.69). Not told apart.
+- By set, `none` against `turn`: 7B fresh 15 and 8, fresh2 3 and 4, pool 7 and 1; 1B fresh 50 and 17, fresh2 18
+  and 9, pool 48 and 20.
+
+Reading: on the path in production, with the source in the prompt, the turn loop cuts the 7B's answers holding a
+wrong sentence from 25 to 13 of 240, at 3.8 % refusals and with more right statements. This is the first live
+evidence that the loop pays where the generator has the source and still errs. For a 1B generator the loop
+removes most wrong answers but refuses a sixth of its points: the generator, not the loop, is the limit there.
+
+### Stop 68: the 1B reading again (2026-10-15)
+
+With the 119 redone `plain` answers graded on stop 70's sheet (`report --with-70`). MiniCPM5-1B, closed-book:
+`plain` 37 answers with a wrong sentence, 191 of 981 sentences wrong (19.5 %), refusal 17 %, right per answer 3.29;
+`turn` 53, 78 of 775 (10.1 %), 16 %, 2.90. Plain against turn: 25 and 41, Holm p = 0.19. **Not better**, now
+because the difference is not shown rather than because of refusals. The 27B and the 7B are unchanged. Stop 68's
+reading stands: the plain-text passage is better for no generator.
+
+Spend, stop 70: Modal $3.69 and the stop 68 redo $0.91; Opus 5.5 $3.22. Totals: Modal $45.77 of $55, Opus 5.5
+$39.06 of $40.

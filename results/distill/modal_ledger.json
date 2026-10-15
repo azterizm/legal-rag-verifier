@@ -8412,5 +8412,1685 @@
   "seconds": 5.9,
   "usd": 0.0037,
   "note": "seed1: 23 labels, 0 errors"
+ },
+ {
+  "run": "stop70 download",
+  "gpu": "CPU",
+  "seconds": 129,
+  "usd": 0.0041,
+  "note": "the three models to the new account volume"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 446.6,
+  "usd": 0.2782,
+  "note": "pool none: 2 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.9,
+  "usd": 0.0068,
+  "note": "pool ban: 2 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 4.8,
+  "usd": 0.003,
+  "note": "pool turn: 2 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 476.6,
+  "usd": 0.2969,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.6,
+  "usd": 0.001,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.6,
+  "usd": 0.001,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.4,
+  "usd": 0.0009,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.1,
+  "usd": 0.0007,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 2.1,
+  "usd": 0.0013,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.9,
+  "usd": 0.0012,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.5,
+  "usd": 0.0009,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.9,
+  "usd": 0.0012,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.9,
+  "usd": 0.0012,
+  "note": "fresh none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 497.1,
+  "usd": 0.3097,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 14.9,
+  "usd": 0.0093,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 22.4,
+  "usd": 0.014,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 18.2,
+  "usd": 0.0113,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 20.4,
+  "usd": 0.0127,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 33.5,
+  "usd": 0.0209,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 17.2,
+  "usd": 0.0107,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.8,
+  "usd": 0.0074,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 29.1,
+  "usd": 0.0182,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 14.5,
+  "usd": 0.009,
+  "note": "fresh ban: 7 answers, 1 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 12.9,
+  "usd": 0.008,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.7,
+  "usd": 0.0067,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.4,
+  "usd": 0.0059,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.2,
+  "usd": 0.0063,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 32.0,
+  "usd": 0.0199,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.0071,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.0,
+  "usd": 0.0056,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.1,
+  "usd": 0.0057,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 32.2,
+  "usd": 0.0201,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.2,
+  "usd": 0.0057,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.1,
+  "usd": 0.0057,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.8,
+  "usd": 0.0061,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 26.1,
+  "usd": 0.0162,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.0,
+  "usd": 0.0056,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.9,
+  "usd": 0.0062,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.8,
+  "usd": 0.0055,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.0,
+  "usd": 0.0056,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 36.0,
+  "usd": 0.0224,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.8,
+  "usd": 0.0067,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 0.7,
+  "usd": 0.0005,
+  "note": "fresh2 none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.7,
+  "usd": 0.001,
+  "note": "fresh2 none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.2,
+  "usd": 0.0008,
+  "note": "fresh2 none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.7,
+  "usd": 0.0011,
+  "note": "fresh2 none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 2.0,
+  "usd": 0.0013,
+  "note": "fresh2 none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.5,
+  "usd": 0.0053,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.2,
+  "usd": 0.0057,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.4,
+  "usd": 0.0059,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.1,
+  "usd": 0.0063,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 56.3,
+  "usd": 0.0351,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 12.0,
+  "usd": 0.0075,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.3,
+  "usd": 0.0052,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 20.7,
+  "usd": 0.0129,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.5,
+  "usd": 0.0053,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.1,
+  "usd": 0.0057,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 25.9,
+  "usd": 0.0161,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.007,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.4,
+  "usd": 0.0065,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.4,
+  "usd": 0.0009,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.8,
+  "usd": 0.0011,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 2.3,
+  "usd": 0.0014,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.6,
+  "usd": 0.001,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.8,
+  "usd": 0.0012,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.5,
+  "usd": 0.0009,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.0,
+  "usd": 0.0006,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.6,
+  "usd": 0.001,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.2,
+  "usd": 0.0007,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.0,
+  "usd": 0.0006,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 1.1,
+  "usd": 0.0007,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 0.9,
+  "usd": 0.0006,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 0.9,
+  "usd": 0.0005,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 0.7,
+  "usd": 0.0004,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 0.8,
+  "usd": 0.0005,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 42.8,
+  "usd": 0.0266,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.7,
+  "usd": 0.0066,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.8,
+  "usd": 0.0061,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.5,
+  "usd": 0.0072,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 31.9,
+  "usd": 0.0199,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.6,
+  "usd": 0.0072,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 12.9,
+  "usd": 0.008,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 12.3,
+  "usd": 0.0077,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 13.4,
+  "usd": 0.0084,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.9,
+  "usd": 0.0068,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 31.2,
+  "usd": 0.0194,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.7,
+  "usd": 0.006,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.5,
+  "usd": 0.0066,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.4,
+  "usd": 0.0059,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 33.0,
+  "usd": 0.0206,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.6,
+  "usd": 0.006,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.3,
+  "usd": 0.0052,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 25.4,
+  "usd": 0.0158,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.0,
+  "usd": 0.0062,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.3,
+  "usd": 0.0052,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.3,
+  "usd": 0.0058,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.5,
+  "usd": 0.0059,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 32.9,
+  "usd": 0.0205,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.5,
+  "usd": 0.0065,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.0071,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.3,
+  "usd": 0.007,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.7,
+  "usd": 0.0067,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 11.2,
+  "usd": 0.007,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 54.0,
+  "usd": 0.0336,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.5,
+  "usd": 0.0059,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.5,
+  "usd": 0.0059,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 10.2,
+  "usd": 0.0064,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.6,
+  "usd": 0.006,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 27.2,
+  "usd": 0.0169,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.8,
+  "usd": 0.0061,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.3,
+  "usd": 0.0058,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 17.8,
+  "usd": 0.0111,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 8.9,
+  "usd": 0.0055,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.5,
+  "usd": 0.0059,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 7.4,
+  "usd": 0.0046,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 21.6,
+  "usd": 0.0135,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 9.1,
+  "usd": 0.0057,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 19.4,
+  "usd": 0.0121,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.5,
+  "usd": 0.0059,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 20.3,
+  "usd": 0.0126,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 17.2,
+  "usd": 0.0107,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 21.7,
+  "usd": 0.0135,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 19.4,
+  "usd": 0.0121,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.7,
+  "usd": 0.006,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.4,
+  "usd": 0.0059,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 7.9,
+  "usd": 0.0049,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 6.8,
+  "usd": 0.0042,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.7,
+  "usd": 0.006,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 8.1,
+  "usd": 0.005,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 7.8,
+  "usd": 0.0049,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 5.5,
+  "usd": 0.0034,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 4.9,
+  "usd": 0.0031,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 4.7,
+  "usd": 0.0029,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 5.9,
+  "usd": 0.0037,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 3.9,
+  "usd": 0.0025,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 3.9,
+  "usd": 0.0024,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 4.3,
+  "usd": 0.0027,
+  "note": "pool none: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 2.8,
+  "usd": 0.0018,
+  "note": "pool none: 6 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 21.6,
+  "usd": 0.0134,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 17.5,
+  "usd": 0.0109,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 25.8,
+  "usd": 0.0161,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 12.9,
+  "usd": 0.008,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 15.6,
+  "usd": 0.0097,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 16.1,
+  "usd": 0.01,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 24.3,
+  "usd": 0.0152,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 17.1,
+  "usd": 0.0106,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.3,
+  "usd": 0.0064,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.5,
+  "usd": 0.0066,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 14.6,
+  "usd": 0.0091,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.8,
+  "usd": 0.0061,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.3,
+  "usd": 0.0064,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 14.6,
+  "usd": 0.0091,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 7.4,
+  "usd": 0.0046,
+  "note": "pool ban: 6 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 25.7,
+  "usd": 0.016,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 16.3,
+  "usd": 0.0102,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 15.7,
+  "usd": 0.0098,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 12.8,
+  "usd": 0.008,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 15.6,
+  "usd": 0.0097,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 21.0,
+  "usd": 0.0131,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 39.2,
+  "usd": 0.0244,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 21.2,
+  "usd": 0.0132,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.3,
+  "usd": 0.0064,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.3,
+  "usd": 0.0064,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 481.5,
+  "usd": 0.2999,
+  "note": "fresh ban: 0 answers, 1 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 14.5,
+  "usd": 0.0091,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 9.7,
+  "usd": 0.006,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 10.2,
+  "usd": 0.0064,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 11.2,
+  "usd": 0.007,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 qwen7",
+  "gpu": "L40S",
+  "seconds": 7.3,
+  "usd": 0.0046,
+  "note": "pool turn: 6 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 544.7,
+  "usd": 0.3393,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 35.8,
+  "usd": 0.0223,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 34.9,
+  "usd": 0.0217,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 31.7,
+  "usd": 0.0198,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 56.7,
+  "usd": 0.0353,
+  "note": "fresh ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 22.8,
+  "usd": 0.0142,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 28.2,
+  "usd": 0.0175,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 28.1,
+  "usd": 0.0175,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 26.7,
+  "usd": 0.0166,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 19.6,
+  "usd": 0.0122,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 44.9,
+  "usd": 0.028,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 37.0,
+  "usd": 0.0231,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 29.9,
+  "usd": 0.0186,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 41.7,
+  "usd": 0.026,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 48.1,
+  "usd": 0.0299,
+  "note": "fresh turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 16.0,
+  "usd": 0.01,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 28.8,
+  "usd": 0.0179,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 33.4,
+  "usd": 0.0208,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 30.1,
+  "usd": 0.0188,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 24.8,
+  "usd": 0.0155,
+  "note": "fresh2 ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 15.8,
+  "usd": 0.0098,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 28.8,
+  "usd": 0.0179,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 18.1,
+  "usd": 0.0113,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 27.1,
+  "usd": 0.0169,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 26.0,
+  "usd": 0.0162,
+  "note": "fresh2 turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 25.5,
+  "usd": 0.0159,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 38.3,
+  "usd": 0.0238,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 33.1,
+  "usd": 0.0206,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 23.6,
+  "usd": 0.0147,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 23.2,
+  "usd": 0.0144,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 17.9,
+  "usd": 0.0111,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 17.2,
+  "usd": 0.0107,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 26.9,
+  "usd": 0.0167,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 22.4,
+  "usd": 0.0139,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 18.3,
+  "usd": 0.0114,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 26.7,
+  "usd": 0.0166,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 17.2,
+  "usd": 0.0107,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 20.3,
+  "usd": 0.0127,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 16.6,
+  "usd": 0.0104,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 18.5,
+  "usd": 0.0115,
+  "note": "pool ban: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 25.0,
+  "usd": 0.0156,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 31.1,
+  "usd": 0.0194,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 38.7,
+  "usd": 0.0241,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 26.8,
+  "usd": 0.0167,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 23.4,
+  "usd": 0.0146,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 19.3,
+  "usd": 0.012,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 19.1,
+  "usd": 0.0119,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 23.8,
+  "usd": 0.0148,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 21.7,
+  "usd": 0.0135,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 19.4,
+  "usd": 0.0121,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 26.6,
+  "usd": 0.0165,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 20.4,
+  "usd": 0.0127,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 23.1,
+  "usd": 0.0144,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 15.4,
+  "usd": 0.0096,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop70 minicpm1",
+  "gpu": "L40S",
+  "seconds": 19.7,
+  "usd": 0.0122,
+  "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 546.1,
+  "usd": 0.3402,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 62.5,
+  "usd": 0.0389,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 61.7,
+  "usd": 0.0385,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 48.2,
+  "usd": 0.03,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 48.7,
+  "usd": 0.0303,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 68.5,
+  "usd": 0.0427,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 56.6,
+  "usd": 0.0352,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 48.0,
+  "usd": 0.0299,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 73.4,
+  "usd": 0.0457,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 40.1,
+  "usd": 0.025,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 84.7,
+  "usd": 0.0528,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 105.4,
+  "usd": 0.0657,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 61.0,
+  "usd": 0.038,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 58.6,
+  "usd": 0.0365,
+  "note": "pool plain: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop68 minicpm1",
+  "gpu": "L40S",
+  "seconds": 103.3,
+  "usd": 0.0644,
+  "note": "pool plain: 7 answers, 0 errors"
  }
 ]
