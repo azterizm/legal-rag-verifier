@@ -2286,7 +2286,7 @@ LIVE68_JUDGE = "qwen27-ar4"
 GENERATOR_PORT = 30001
 # Your choice of 2026-10-14: the 7B and the 1B share the judge's L40S (judge share, GPU, generator
 # share of the memory free when it starts: SGLang sizes from that).
-LIVE68_SHARED = {"qwen7": ("0.48", "0", "0.80"), "minicpm1": ("0.70", "0", "0.80")}
+LIVE68_SHARED = {"qwen7": ("0.48", "0", "0.80"), "minicpm1": ("0.70", "0", "0.50")}
 
 
 def _sglang(
@@ -2405,6 +2405,15 @@ class _Live68:
         t0 = time.time()
         records, errors = [], []
         for item in items:
+            if arm != "none" and not self._judge_up():
+                # A loop answer needs the judge: stop here rather than record refusals.
+                out = {"records": records, "errors": errors, "meta": self.meta}
+                return {
+                    **out,
+                    "error": "the judge server is down",
+                    "seconds": time.time() - t0,
+                    "startup": self.startup,
+                }
             try:
                 if arm == "none":
                     record = self._none(item, mode)
@@ -2413,11 +2422,25 @@ class _Live68:
                     turn = self.turns[item["domain"]]
                     record = ll.answer(self.backend, self.verifier, engine_arm, item, turn)
                     record.pop("key")
+                    if (
+                        any(c["label"] == "error" for c in record["judge_calls"])
+                        and not self._judge_up()
+                    ):
+                        errors.append(f"{item['id']}:{arm}: the judge went down during the answer")
+                        continue
                 records.append({"id": item["id"], **record})
             except Exception as exc:  # noqa: BLE001 - one answer, retried on the next run
                 errors.append(f"{item['id']}:{arm}: {exc!r}"[:400])
         out = {"records": records, "errors": errors, "meta": self.meta}
         return {**out, "seconds": time.time() - t0, "startup": self.startup}
+
+    def _judge_up(self) -> bool:
+        """The judge's server answers its health check (stop 70: it can die on a shared GPU)."""
+        try:
+            with urllib.request.urlopen(f"http://127.0.0.1:{PORT}/health", timeout=10) as r:
+                return bool(r.status == 200)  # noqa: PLR2004
+        except OSError:
+            return False
 
 
 _LIVE68_OPTIONS: dict[str, Any] = {
@@ -2530,8 +2553,8 @@ def _live_run(
                     out = runner.answer.remote(arm, chunk, mode)
                     seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
                     startup_recorded = True
-                    if out.get("error"):
-                        raise RuntimeError(f"a server did not start: {out['error']}")  # noqa: TRY301
+                    if out.get("error") and not out.get("records"):
+                        raise RuntimeError(f"a server is down: {out['error']}")  # noqa: TRY301
                     store.append(
                         gen,
                         [
@@ -2550,6 +2573,8 @@ def _live_run(
                     n, bad = len(out["records"]), len(out["errors"])
                     note = f"{set_name} {arm}: {n} answers, {bad} errors"
                     failed = 0
+                    if out.get("error"):
+                        raise RuntimeError(f"a server is down: {out['error']}")  # noqa: TRY301
                 except RuntimeError:
                     ledger.record(f"{stage} {gen}", "L40S", gpus * (time.time() - t0), "no server")
                     raise
