@@ -1175,3 +1175,10 @@ wrong, and wrong sentences among those graded. The engine's refusal is counted a
 The turn loop cuts wrong answers for every generator (p < 0.001 against no loop). The plain-text passage is
 better for none: not told apart for the two Qwen models, and for the 1B fewer wrong answers bought with 48 %
 refusals.
+
+## The judge re-asked, and a second judge, on the loop's committed sentences (stop 69, 2026-10-15; method in `docs/GRID.md`)
+
+On 1,630 sentences the turn loop committed in stop 68 (136 graded wrong), asking the 27B judge again with two
+more seeds and keeping a sentence only if every sample says supported drops 26 wrong and 32 right sentences. Opus
+5.5 as a second judge drops 50 wrong and 15 right on the 1,113 sentences it labelled, but Opus 5.5 also graded most
+of them; on the sentences you graded it drops 4 wrong and 7 right. Neither check is shown to help.
