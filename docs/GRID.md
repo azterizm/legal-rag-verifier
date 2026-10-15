@@ -3244,3 +3244,34 @@ the grades that already exist. Nothing is generated and nothing new is graded.
   refusal; this measures the drop decision only. One run per seed.
 - Spend: Modal, run `stop69`, expected $0.50 to $1, stage stop $3 ($14.95 left of $55). Opus 5.5 expected about
   $7.60 by your choice, stop $36 for this stop ($12.92 left under its $40). Router models only as named.
+
+### Stop 69: results (2026-10-15)
+
+The 27B was asked again with seeds 1 and 2 on all 1,663 prompts (the method's 1,689 counted three prompts shared
+across generators twice), no error, Modal $1.13. Opus 5.5 stopped at its $36 stop after 1,107 prompts ($8.76,
+more than the $7.60 expected); by your choice its rules are read on the 1,113 sentences whose prompts all have its
+label (every 27B and 7B sentence, 252 of the 1B's). Nine committed sentences with the engine's refusal wording
+and six a different sentence split left without a grade were left out: 1,630 sentences scored. Raw:
+`results/judge69/report.json`.
+
+| Rule | Sentences | Wrong among them | Wrong dropped | Right dropped | p | Kept, right |
+|---|---|---|---|---|---|---|
+| None (the loop as run) | 1,630 | 136 | | | | 91.7 % |
+| S1, seed 1 must agree | 1,630 | 136 | 21 | 21 | 1.0 | 92.8 % |
+| S12, seeds 1 and 2 must agree | 1,630 | 136 | 26 | 32 | 0.51 | 93.0 % |
+| O, Opus 5.5 must agree | 1,113 | 80 | 50 | 15 | 0.00002 | 97.1 % |
+| S12+O | 1,113 | 80 | 53 | 34 | 0.053 | 97.4 % |
+
+- The judge agreeing with itself does not help: a second or third sample drops as many right sentences as
+  wrong ones. Its doubt is not where its errors are.
+- Rule O passes the reading as fixed. **The pass does not stand as evidence**, and I did not see the reason when
+  fixing the method: Opus 5.5 is also one of the two graders of these sentences. Split by who graded them, the
+  gain sits where Opus graded: settled by both models at once, 39 wrong and 8 right dropped; asked again, 6 and 0;
+  graded by you, 4 wrong and 7 right dropped; carried from earlier sheets, 1 and 0. On the sentences Opus did
+  not grade it does not beat the 27B alone. The council's offline check on both fresh tests, which you graded,
+  points the same way: Opus as a checker on the 27B's supported verdicts scored 94.1 % and 91.4 % against 93.8 %
+  and 90.1 %.
+- Reading: neither check is carried into a live test. A second judge's gain can only be measured on grades that
+  judge did not make.
+
+Spend, stop 69: Modal $1.13, Opus 5.5 $8.76. Totals: Modal $41.17 of $55, Opus 5.5 $35.84 of $40.

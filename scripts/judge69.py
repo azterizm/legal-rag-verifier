@@ -36,6 +36,9 @@ ALPHA = 0.05
 def units() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     """Every sentence the turn loop committed (from the traces), with the answer so far, and the
     premise of each, keyed by the unit."""
+    import live_loop as ll  # type: ignore[import-not-found]  # noqa: PLC0415
+
+    refusal = set(ll.REFUSALS.values())
     out: list[dict[str, Any]] = []
     premises: dict[str, Any] = {}
     for gen in l68.GENERATORS:
@@ -47,7 +50,7 @@ def units() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                     continue
                 done: list[str] = []
                 for s in r["trace"]["sentences"]:
-                    if s["outcome"] != "emitted":
+                    if s["outcome"] != "emitted" or s["text"].strip() in refusal:
                         continue
                     key = f"{gen}:{r['key']}:{len(done)}"
                     out.append(
@@ -146,6 +149,18 @@ def rolled(
     return out, scorer.missing
 
 
+def covered_by(
+    us: Sequence[Mapping[str, Any]], premises: Mapping[str, Any], labels: Mapping[str, Any]
+) -> set[str]:
+    """Units whose every judge prompt has a label in ``labels`` (a unit with no call counts)."""
+    out = set()
+    for u, r in zip(us, aj.record(us, premises, config=aj.STRICT_FIGURES), strict=True):
+        keys = [aj.prompt_key(aj.short_prompt(c, cands, u["prefix"])) for c, cands in r["calls"]]
+        if all(k in labels for k in keys):
+            out.add(u["key"])
+    return out
+
+
 def sign_p(gains: int, losses: int) -> float:
     from retry_report import mcnemar  # type: ignore[import-not-found]  # noqa: PLC0415
 
@@ -176,18 +191,31 @@ def report() -> dict[str, Any]:
 
     us, premises = units()
     by_sentence = lg.grades_by_sentence()
+    graded = [u for u in us if (u["id"], u["sentence"].strip()) in by_sentence]
+    ungraded = len(us) - len(graded)
+    us = graded  # a trace sentence the answer's segmenter split differently has no grade
     grade = {u["key"]: by_sentence[(u["id"], u["sentence"].strip())] for u in us}
     drops: dict[str, set[str]] = {}
-    out: dict[str, Any] = {"missing_labels": {}, "rules": {}}
+    out: dict[str, Any] = {"missing_labels": {}, "rules": {}, "ungraded_left_out": ungraded}
     for source in SOURCES:
         drops[source], out["missing_labels"][source] = rolled(us, premises, source)
-    for rule, sources in RULES.items():
-        dropped = set().union(*(drops[s] for s in sources))
-        out["rules"][rule] = {"total": tally(us, grade, dropped)}
-        for gen in l68.GENERATORS:
-            out["rules"][rule][gen] = tally([u for u in us if u["gen"] == gen], grade, dropped)
-        t = out["rules"][rule]["total"]
-        t["passes"] = bool(t["wrong_dropped"] > t["right_dropped"] and t["sign_p"] < ALPHA)
+    # Opus 5.5 stopped at its ledger stop (your choice of 2026-10-15): rules with it are read on the
+    # sentences whose prompts all have its label, and the seed rules are read there too.
+    covered = covered_by(us, premises, read("opus55"))
+    out["opus_covered_sentences"] = len(covered)
+    scopes = {"all": us, "opus_covered": [u for u in us if u["key"] in covered]}
+    for scope, group in scopes.items():
+        for rule, sources in RULES.items():
+            if scope == "all" and "opus55" in sources:
+                continue
+            dropped = set().union(*(drops[s] for s in sources))
+            name = rule if scope == "all" else f"{rule} (Opus-covered)"
+            out["rules"][name] = {"total": tally(group, grade, dropped)}
+            for gen in l68.GENERATORS:
+                part = [u for u in group if u["gen"] == gen]
+                out["rules"][name][gen] = tally(part, grade, dropped)
+            t = out["rules"][name]["total"]
+            t["passes"] = bool(t["wrong_dropped"] > t["right_dropped"] and t["sign_p"] < ALPHA)
     out["baseline"] = {
         gen: tally([u for u in us if u["gen"] == gen], grade, set()) for gen in l68.GENERATORS
     }
