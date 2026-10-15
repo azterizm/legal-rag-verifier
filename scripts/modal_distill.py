@@ -2357,14 +2357,21 @@ class _Live68:
         for server in self.servers:
             server.terminate()
 
-    def _none(self, item: dict[str, Any]) -> dict[str, Any]:
-        """One greedy answer, no loop (stop 43's decoding), thinking off."""
+    def _none(self, item: dict[str, Any], mode: str = "closed") -> dict[str, Any]:
+        """One greedy answer, no loop (stop 43's decoding), thinking off; ``mode`` "source" puts
+        the source in the prompt as the engine does."""
         import live_loop as ll  # noqa: PLC0415
 
+        from legal_rag_verifier.engine import render_premise  # noqa: PLC0415
+
+        if mode == "source":
+            system = ll.PROMPTS[item["domain"]].format(premise=render_premise(item["premise"]))
+        else:
+            system = ll.CLOSED[item["domain"]]
         body = {
             "model": self.model,
             "messages": [
-                {"role": "system", "content": ll.CLOSED[item["domain"]]},
+                {"role": "system", "content": system},
                 {"role": "user", "content": item["query"]},
             ],
             "temperature": 0,
@@ -2386,19 +2393,23 @@ class _Live68:
         }
 
     @modal.method()
-    def answer(self, arm: str, items: list[dict[str, Any]]) -> dict[str, Any]:
+    def answer(self, arm: str, items: list[dict[str, Any]], mode: str = "closed") -> dict[str, Any]:
         if self.error:
             return {"error": self.error, "seconds": 0.0, "startup": self.startup}
         import live_loop as ll  # noqa: PLC0415
 
+        engines = {
+            "closed": {"turn": "closed", "plain": "plain"},
+            "source": {"ban": "source", "turn": "source-turn"},  # stop 70
+        }[mode]
         t0 = time.time()
         records, errors = [], []
         for item in items:
             try:
                 if arm == "none":
-                    record = self._none(item)
+                    record = self._none(item, mode)
                 else:
-                    engine_arm = "closed" if arm == "turn" else "plain"
+                    engine_arm = engines[arm]
                     turn = self.turns[item["domain"]]
                     record = ll.answer(self.backend, self.verifier, engine_arm, item, turn)
                     record.pop("key")
@@ -2471,6 +2482,33 @@ def live68(
     """Stop 68: closed-book answers of one generator, per arm; resumable."""
     sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
     import live68 as l68  # noqa: PLC0415
+
+    _live_run(
+        l68,
+        gen,
+        sets,
+        arms,
+        limit,
+        shared=shared,
+        mode="closed",
+        stage=LIVE68_STAGE,
+        stop=LIVE68_STOP,
+    )
+
+
+def _live_run(
+    store: Any,
+    gen: str,
+    sets: str,
+    arms: str,
+    limit: int,
+    *,
+    shared: bool,
+    mode: str,
+    stage: str,
+    stop: float,
+) -> None:
+    """Answers of one generator per set and arm, appended to ``store`` as each chunk returns."""
     import modal_ledger as ledger  # noqa: PLC0415
 
     two = gen != "qwen27" and not shared
@@ -2478,27 +2516,27 @@ def live68(
     gpus = 2 if two else 1
     startup_recorded, failed = False, 0
     for set_name in sets.split(","):
-        all_items = l68.items(set_name)[: limit or None]
+        all_items = store.items(set_name)[: limit or None]
         for arm in arms.split(","):
-            have = l68.done(gen)
-            todo = [i for i in all_items if l68.key(set_name, i["id"], arm) not in have]
+            have = store.done(gen)
+            todo = [i for i in all_items if store.key(set_name, i["id"], arm) not in have]
             print(f"{gen} {set_name} {arm}: {len(todo)} to answer", flush=True)
             for at in range(0, len(todo), LIVE68_CHUNK):
                 chunk = todo[at : at + LIVE68_CHUNK]
-                ledger.check_stage(LIVE68_STAGE, LIVE68_STOP, "L40S", gpus * LIVE68_ESTIMATE)
+                ledger.check_stage(stage, stop, "L40S", gpus * LIVE68_ESTIMATE)
                 t0 = time.time()
                 seconds, note = 0.0, "failed"
                 try:
-                    out = runner.answer.remote(arm, chunk)
+                    out = runner.answer.remote(arm, chunk, mode)
                     seconds = out["seconds"] + (0 if startup_recorded else out["startup"])
                     startup_recorded = True
                     if out.get("error"):
                         raise RuntimeError(f"a server did not start: {out['error']}")  # noqa: TRY301
-                    l68.append(
+                    store.append(
                         gen,
                         [
                             {
-                                "key": l68.key(set_name, r["id"], arm),
+                                "key": store.key(set_name, r["id"], arm),
                                 "set": set_name,
                                 "arm": arm,
                                 **r,
@@ -2513,21 +2551,49 @@ def live68(
                     note = f"{set_name} {arm}: {n} answers, {bad} errors"
                     failed = 0
                 except RuntimeError:
-                    ledger.record(
-                        f"{LIVE68_STAGE} {gen}", "L40S", gpus * (time.time() - t0), "no server"
-                    )
+                    ledger.record(f"{stage} {gen}", "L40S", gpus * (time.time() - t0), "no server")
                     raise
                 except Exception as exc:  # noqa: BLE001 - reported, retried on the next run
                     failed += 1
                     seconds = time.time() - t0
                     print(f"chunk failed, retried on the next run: {exc!r}"[:600], flush=True)
-                ledger.record(f"{LIVE68_STAGE} {gen}", "L40S", gpus * seconds, note)
+                ledger.record(f"{stage} {gen}", "L40S", gpus * seconds, note)
                 print(
                     f"{gen}: {min(at + LIVE68_CHUNK, len(todo))}/{len(todo)} ({note})", flush=True
                 )
                 if failed >= 2:  # noqa: PLR2004
                     raise RuntimeError("two chunks failed in a row; stopped")
-    print(f"Modal: stage ${ledger.stage_spent(LIVE68_STAGE):.2f}, total ${ledger.spent():.2f}")
+    print(f"Modal: stage ${ledger.stage_spent(stage):.2f}, total ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 70: source in the prompt
+
+LIVE70_STAGE = "stop70"
+LIVE70_STOP = 11.0  # USD, GRID § Stop 70
+
+
+@app.local_entrypoint()
+def live70(
+    gen: str = "qwen7",
+    sets: str = "fresh,fresh2,pool",
+    arms: str = "none,ban,turn",
+    limit: int = 0,
+) -> None:
+    """Stop 70: answers with the source in the prompt, generator and judge on one shared L40S."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import live70 as l70  # noqa: PLC0415
+
+    _live_run(
+        l70,
+        gen,
+        sets,
+        arms,
+        limit,
+        shared=True,
+        mode="source",
+        stage=LIVE70_STAGE,
+        stop=LIVE70_STOP,
+    )
 
 
 # ------------------------------------------------------------------ stop 69: the judge re-asked
