@@ -40,7 +40,7 @@ from legal_rag_verifier.segmenter import split_sentences  # noqa: E402
 OUT = ROOT / "results/live68"
 REPORT = ROOT / "results/live68_report.json"
 GRADES = ("yes", "no", "unsure")
-GRADERS = ("opus55", "flash")
+GRADERS: tuple[str, ...] = ("opus55", "flash")
 OPUS_STOP = 39.0  # USD, GRID § Stop 68
 SHEETS = ("fresh", "fresh2", "fresh2-q27", "fresh2-live", "fresh2-short-live")
 SHEET_SEED = 20261017
@@ -84,7 +84,7 @@ EXTRA_ANSWERS: list[dict[str, Any]] = []
 
 def use(stop: int) -> None:
     """Point the sheet, the graders and the readings at stop 70's answers and files."""
-    global OUT, REPORT, STORE, EXTRA  # noqa: PLW0603 - one switch, as pool2.activate
+    global OUT, REPORT, STORE, EXTRA, GRADERS  # noqa: PLW0603 - one switch, as pool2.activate
     if stop == 70:  # noqa: PLR2004
         import live70  # type: ignore[import-not-found]  # noqa: PLC0415
 
@@ -92,6 +92,13 @@ def use(stop: int) -> None:
         redone = [a for a in answers() if a["gen"] == "minicpm1" and a["key"] in REDONE_68]
         EXTRA_ANSWERS[:] = [{**a, "gen": "minicpm1-stop68"} for a in redone]
         OUT, REPORT, STORE = live70.OUT, ROOT / "results/live70_report.json", live70
+    if stop == 71:  # noqa: PLR2004 - Opus 5.5 alone; every earlier grade carried
+        import sota71  # type: ignore[import-not-found]  # noqa: PLC0415
+
+        use(70)
+        seventy = grades_by_sentence()
+        OUT, REPORT, STORE = sota71.OUT, sota71.REPORT, sota71
+        EXTRA, EXTRA_ANSWERS[:], GRADERS = seventy, [], ("opus55",)
 
 
 def use68_with_70() -> None:
@@ -301,6 +308,12 @@ def consensus() -> dict[str, dict[str, Any]]:
     key = json.loads((OUT / "key.json").read_text(encoding="utf-8"))
     out: dict[str, dict[str, Any]] = {}
     for k in key:
+        if len(GRADERS) == 1:  # stop 71: one grader; what it marks unsure goes to you
+            g = first[0].get(k)
+            if g is None:
+                raise SystemExit(f"{k} has not been graded yet")
+            out[k] = {"grade": g, "by": "first"} if g != "unsure" else {}
+            continue
         a, b = first[0].get(k), first[1].get(k)
         if a is None or b is None:
             raise SystemExit(f"{k} has not been graded by both yet")
@@ -315,7 +328,7 @@ def consensus() -> dict[str, dict[str, Any]]:
 def leftover() -> None:
     settled = consensus()
     left = {k for k, v in settled.items() if not v}
-    lines = ["# Stop 68: sentences left for you", "", RULE, ""]
+    lines = ["# Sentences left for you", "", RULE, ""]
     for block in blocks().values():
         mine = [k for k in _ITEM.findall(block) if k in left]
         if not mine:
@@ -530,7 +543,7 @@ def main() -> None:
     parser.add_argument("command", choices=["sheet", "grade", "leftover", "report"])
     parser.add_argument("grader", nargs="?", choices=GRADERS)
     parser.add_argument("--again", action="store_true")
-    parser.add_argument("--stop", type=int, default=68, choices=[68, 70])
+    parser.add_argument("--stop", type=int, default=68, choices=[68, 70, 71])
     parser.add_argument("--model", default="", help="a router model in the grader's place")
     parser.add_argument("--opus-stop", type=float, default=0.0, help="Opus 5.5's ledger stop, USD")
     parser.add_argument("--with-70", action="store_true", help="stop 68 with stop 70's grades")
