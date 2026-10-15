@@ -188,3 +188,13 @@ def test_the_turn_is_built_from_the_model_s_chat_template() -> None:
     turn = ll.turn_template(Tokenizer(), "software")
     assert turn.startswith("</assistant><user>The documentation relevant to the question")
     assert turn.format(query="Q?", source="S").endswith("from exactly where it stops.</user><a>")
+
+
+def test_source_turn_arm_keeps_the_source_prompt_and_writes_the_turn() -> None:
+    verifier = ll.LoopVerifier(ll.LiveJudge(Chat("supported"), "j"))
+    arm = ll.engine(None, verifier, "source-turn", "software", "<turn {query} {source}>")
+    assert "{premise}" in arm.system_prompt
+    assert "documentation" in arm.system_prompt
+    assert arm.steering == "inject"
+    assert arm.inject_template == "<turn {query} {source}>"
+    assert "documentation" in arm.refusal

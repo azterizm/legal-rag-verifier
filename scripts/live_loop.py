@@ -32,7 +32,7 @@ from legal_rag_verifier.engine import (
 from legal_rag_verifier.premise import Premise
 from legal_rag_verifier.verifier import NLIProbs, SentenceVerdict, Verifier
 
-ARMS = ("source", "closed", "plain")
+ARMS = ("source", "closed", "plain", "source-turn")
 MAX_NEW_TOKENS = 512
 # Stop 43's prompts (scripts/fresh_battery.py), repeated here so the container needs no battery.
 SOFTWARE_PROMPT = (
@@ -225,6 +225,16 @@ def engine(
             backend,
             verifier,
             max_new_tokens=MAX_NEW_TOKENS,
+            system_prompt=PROMPTS[domain],
+            refusal=REFUSALS[domain],
+        )
+    if arm == "source-turn":  # stop 70: the source in the prompt, and a rollback writes the turn
+        return InFlightGenerator(
+            backend,
+            verifier,
+            max_new_tokens=MAX_NEW_TOKENS,
+            steering="inject",
+            inject_template=turn or INJECT[domain],
             system_prompt=PROMPTS[domain],
             refusal=REFUSALS[domain],
         )
