@@ -3216,3 +3216,31 @@ the model often ends the answer, the engine refuses, and fewer right statements 
 closed-book only, one greedy run, graders are two models and you with a third model's help.
 
 Spend, stop 68: Modal $10.03, Opus 5.5 $8.50. Totals: Modal $40.05 of $55, Opus 5.5 $27.08 of $40.
+
+## Stop 69: does the judge agreeing with itself, or a second judge, catch the wrong sentences the loop kept (method fixed 2026-10-15, before any call)
+
+Your go: "go on test 1". The council of 2026-10-15 found that every wrong sentence left in stop 68's turn-loop
+answers passed the 27B judge (136 sentences), most of them general statements written from memory, and that no
+vote of the judges already labelled beats the 27B alone. This stop measures two checks on those answers, with
+the grades that already exist. Nothing is generated and nothing new is graded.
+
+- Sentences: every sentence the turn loop committed in stop 68, the engine's refusal left out. The 27B's 40
+  answers reused from stop 65 have no trace and are left out. 283 (27B), 578 (7B) and 778 (1B), 1,639 in all.
+  Each keeps its stop 68 grade (yes, no or unsure).
+- Prompts: each sentence's calls to the judge are rebuilt with the verifier as in the loop (`STRICT_FIGURES`,
+  the answer so far as the sentences committed before it), with the short reply. 1,689 prompts.
+- Asked again: the 27B (AutoRound 4-bit, SGLang, one L40S, thinking off, stop 47's sampling) with seed 1 and
+  with seed 2; Opus 5.5 through the router, temperature 0, the same prompt, at most 3 asks. The loop's own call
+  was seed 0 and passed every sentence by construction.
+- Rules, each sentence replayed through the verifier with the new labels:
+  - S1: drop if the seed 1 labels roll it back.
+  - S12: drop if seed 1 or seed 2 rolls it back (supported must hold on all three samples).
+  - O: drop if the Opus 5.5 labels roll it back.
+  - S12+O: drop if either does.
+- Readings, fixed now: per rule, per generator and in total, wrong sentences dropped (gains) and right
+  sentences dropped (losses); unsure dropped, reported apart; accuracy of the sentences kept. A rule goes on to
+  test 2 if, over the three generators, gains exceed losses with an exact sign test p under 0.05.
+- Limits: a sentence dropped in the loop would be retried, not deleted, and the retry may be right, wrong or a
+  refusal; this measures the drop decision only. One run per seed.
+- Spend: Modal, run `stop69`, expected $0.50 to $1, stage stop $3 ($14.95 left of $55). Opus 5.5 expected about
+  $7.60 by your choice, stop $36 for this stop ($12.92 left under its $40). Router models only as named.
