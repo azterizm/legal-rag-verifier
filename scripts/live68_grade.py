@@ -78,6 +78,8 @@ def sentences(text: str) -> list[str]:
 
 STORE: Any = l68  # the answers graded: stop 68's, or stop 70's after ``use(70)``
 EXTRA: dict[tuple[str, str], str] = {}  # further grades carried (stop 70: stop 68's)
+# Stop 68's 1B answers made again after the judge fault are graded on stop 70's sheet.
+EXTRA_ANSWERS: list[dict[str, Any]] = []
 
 
 def use(stop: int) -> None:
@@ -86,7 +88,9 @@ def use(stop: int) -> None:
     if stop == 70:  # noqa: PLR2004
         import live70  # type: ignore[import-not-found]  # noqa: PLC0415
 
-        EXTRA = grades_by_sentence()  # stop 68's grades, carried by question and sentence
+        EXTRA = grades_by_sentence(partial=True)  # stop 68's grades, by question and sentence
+        redone = [a for a in answers() if a["gen"] == "minicpm1" and a["key"] in REDONE_68]
+        EXTRA_ANSWERS[:] = [{**a, "gen": "minicpm1-stop68"} for a in redone]
         OUT, REPORT, STORE = live70.OUT, ROOT / "results/live70_report.json", live70
 
 
@@ -95,7 +99,15 @@ def answers() -> list[dict[str, Any]]:
     out = []
     for g in STORE.GENERATORS:
         out += [{**r, "gen": g} for r in STORE.done(g).values()]
-    return out
+    return out + EXTRA_ANSWERS
+
+
+def _redone_68() -> set[str]:
+    file = ROOT / "results/live68/minicpm1.invalid.jsonl"
+    return {r["key"] for r in l68.read_jsonl(file)} if file.exists() else set()
+
+
+REDONE_68 = _redone_68()
 
 
 def carried() -> dict[tuple[str, str], str]:
@@ -331,8 +343,9 @@ def holm(p: Mapping[str, float]) -> dict[str, float]:
     return dict(adjust(p))
 
 
-def grades_by_sentence() -> dict[tuple[str, str], str]:
-    """(question id, sentence) → yes / no / unsure: carried, the graders, then yours."""
+def grades_by_sentence(*, partial: bool = False) -> dict[tuple[str, str], str]:
+    """(question id, sentence) → yes / no / unsure: carried, the graders, then yours. With
+    ``partial`` an item not yet graded is left out instead of stopping."""
     key = json.loads((OUT / "key.json").read_text(encoding="utf-8"))
     settled = consensus()
     yours: dict[str, str] = {}
@@ -344,6 +357,8 @@ def grades_by_sentence() -> dict[tuple[str, str], str]:
     for code, item in key.items():
         g = settled[code].get("grade") if settled[code] else yours.get(code, "")
         if g not in GRADES:
+            if partial:
+                continue
             raise SystemExit(f"{code} has no grade")
         out[(item["id"], item["text"])] = g
     return out
