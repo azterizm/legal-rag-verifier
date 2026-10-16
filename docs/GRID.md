@@ -3433,3 +3433,12 @@ other's answers; Opus 5.5 grades, its cap raised to $45.
 - Sheet: 240 questions, **847 sentences to grade**, 89 carried, 0 refusals, 196 repeats graded once. sha256
   before any grade, sheet and key: `861570e67a5f66296914c1940f7d2082da666db624f2ffa5c1c7d48ebb984f9e f144c752fbe52a284777768ac56685746aac91b9a4cdad5e57ea1fa712a58a6d`.
 - Spend so far: router, Flash and Opus 4.6 $0. Opus 5.5 $39.06 of the $45 cap; grading not started.
+- Grading (2026-10-16): Opus 5.5 graded all 847 sentences: 834 right, 5 wrong, 8 unsure. It first stopped at
+  $39.86: the router's own Opus 5.5 cap was still $40 and `--opus-stop` can only lower it. The router cap was
+  raised to $45 (your choice for this stop) and the run resumed. **8 are left for you**:
+  `results/sota71/leftover.md` (git-ignored), your column file `results/sota71/leftover.csv`. Opus 5.5 $1.87
+  for this stop ($40.94 of $45).
+- Before your grades, the 8 counted all right and then all wrong: the upper end of the interval is at least 5
+  points for every frontier arm either way, so no arm reads near. Your grades set the final counts.
+- Report additions, no change to the reading: answers with no sentence are counted per arm (`empty`); the
+  grader check (Opus 5.5's first pass against the final grades on stop 70's 7B sentences) is in the report.
