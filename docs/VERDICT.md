@@ -1,6 +1,6 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-08. The verdict and item 1 of the last section updated 2026-10-16.
+legal-rag-verifier 0.1.0, 2026-10-08. The verdict, the tests since 0.1.0 and item 1 of the last section updated 2026-10-16.
 
 ## Question
 
@@ -21,19 +21,40 @@ on statutes. Graded by hand, the loop's final answers were no better than one pl
 that system.
 
 With Qwen 27B at 4 bits as generator and judge on one server, the loop improved answers on the tests run since.
-The judge was right on 93.8 % and 90.1 % of the sentences of two hand-graded tests. The entailment model scored
-68.7 % and 58.3 %, and no auditor 55.6 % on the second. Run live on 40 questions with the source in the prompt,
-the loop committed 48 of 49 sentences at the first try, none wrong, at 1.9 s per answer at the median. When the
-answer started from memory, 36 of 65 sentences were wrong without the loop and 3 of 50 with it, all three
-refusals. The gain is where the generator answers from memory. With the source in the prompt there is almost
-nothing to catch. On 240 questions with the source in the prompt, the 27B held a wrong sentence in 4 answers,
-against 3 for Gemini 3.8 Flash and 8 for Claude Opus 4.6 (stop 72).
+The gain is where the generator answers from memory. With the source in the prompt there is almost nothing to
+catch.
 
-This rests on 40 live questions for the loop above (stop 59) and 240 for the later runs (stops 68 to 72), on one
-server type, with greedy decoding and one run per arm. Frontier models graded most sentences; the ones they left
-unsure or disagreed on were graded by hand. A trained 1B model and two hosted decision APIs were tested as the
-judge and scored 2 to 8 points under the 27B. Item 1 of the last section gives the steps in order. The changes
-required before a production trial are listed there.
+Share of hand-graded sentences each auditor judged right:
+
+| Auditor | First test, 358 sentences | Second test, 151 sentences |
+|---|---|---|
+| Qwen 27B judge | 93.8 % | 90.1 % |
+| Entailment model | 68.7 % | 58.3 % |
+| No auditor | 58.7 % | 55.6 % |
+
+The 27B loop run live:
+
+| Run | Questions | Wrong without the loop | Wrong with the loop |
+|---|---|---|---|
+| Source in the prompt (stop 59) | 40 | 0 of 49 sentences | 0 of 49 sentences |
+| Answer from memory (stop 59) | 40 | 36 of 65 sentences | 3 of 50 sentences, all refusals |
+| Source in the prompt (stop 72) | 240 | 4 answers | 4 answers |
+
+With the source in the prompt the loop took 1.9 s per answer at the median. On the 240 questions of stop 72,
+answers holding a wrong sentence:
+
+| Generator | Answers |
+|---|---|
+| Qwen 27B loop | 4 |
+| Qwen 2.5 7B loop (stop 71) | 13 |
+| Gemini 3.8 Flash | 3 |
+| Claude Opus 4.6 | 8 |
+
+This rests on 40 live questions for stop 59 and 240 for stops 68 to 72, on one server type, with greedy decoding
+and one run per arm. Frontier models graded most sentences. The ones they left unsure or disagreed on were graded
+by hand. A trained 1B model and two hosted decision APIs were tested as the judge and scored 2 to 8 points under
+the 27B. The section Tests since 0.1.0 lists each step. The last section lists the changes required before a
+production trial.
 
 ## What was tested
 
@@ -137,105 +158,41 @@ to 94 % of the time, below the 95 % set in advance. Attention shows where the mo
 it wrote. The likelihood figures carry the conclusion, and every effect pointed the same way in 45 or 46 of 46
 states. Concurrency, failure recovery and cost per answer were not measured.
 
+## Tests since 0.1.0
+
+In order. Judge accuracy is the share of hand-graded sentences judged right, on the first test (358 sentences)
+and the second (151). Wrong answers are answers holding a wrong sentence, of 240.
+
+| Stop | Test | Result |
+|---|---|---|
+| 40 | Entailment model given the question | Passed right and wrong text alike. |
+| 41 | Entailment model given facts derived from the source | Still failed on paraphrases. The claim check alone was more accurate. |
+| 42 | Reasoning LLM as the entailment check | Gemini 3.8 Flash and Qwen 27B cut false rollbacks from 19 to 1 to 5 (Part A) and from 9 to 1 to 3 (Part B), and caught as many errors or more. MiniCheck and ModernBERT did not. |
+| 43 to 47 | First test, 358 sentences graded by hand, 148 wrong | A judge that rolls back every sentence the source does not state scored 82 to 88 %, against 69 % for the entailment auditor and 73 to 75 % for a judge that rolls back only contradictions. A 7B trained on Gemini's labels scored 83 % at 1.7 s per clause, untrained 86 % at 3.9 s. On answers written with the source the best judge gained 3 of 163 sentences. |
+| 48 | Signals read from the model: attention and likelihood | Did not separate right from wrong (AUROC 0.42 to 0.62, gate 0.65). |
+| 50, 51 | Frontier models as the judge | Gemini 3.1 Pro 88.5 %, Claude Opus 5.5 89.1 %, Gemini 3.8 Flash 82.1 %, untrained Qwen 27B 88.3 %. |
+| 52 | Figure rollbacks of the claim check sent to the judge | Qwen 27B 91.5 %, Opus 5.5 92.4 %. The claim check caught nothing the judge missed. Tuned on the test. |
+| 53 | Question and source as written in the judge prompt | No gain. |
+| 54 | Two notes stating the grader's standard | Qwen 27B 93.5 %. Tuned on the test. |
+| 55, 56 | Second test, 151 unseen sentences | Tuned 90.1 %, untuned 89.4 %, no auditor 55.6 %. The notes are dropped. The 4-bit 27B matched 8-bit at half the time. On answers with the source the judge scored 88.9 % against 94.4 % for no auditor. |
+| 57 | Qwen 27B as generator and judge | Wrong in 0 of 49 sentences with the source and 55 % closed-book, against 80 % for the 7B. Caught 35 of 36 wrong sentences. Rolled back 18 right ones, 16 of them refusals. |
+| 59, 60 | The 27B loop live, 40 questions | See the verdict. The server reused the committed prefix on every retry. DeBERTa scored 58 % against 89 % for the judge. |
+| 61, 65 | Judge reply without the reason | 93.8 % and 90.1 % at a third of the time per call. A live answer fell from 3.2 s to 1.9 s. |
+| 62 to 64 | 1B judge trained on the 27B's labels | 89 % and 82 % at 0.06 s per call, 5 to 8 points under the 27B. With the 27B asked on each 1B rollback, 91 % and 85 %. |
+| 66 | Hosted decision APIs as the judge | Jev 1.13 90.7 % and 88.1 %, OpenAI Decisions 89.0 % and 86.8 %. Neither within 3 points of the 27B on both tests. |
+| 67 | Retries on 95 wrong closed-book sentences of the 7B | The default retry, which bans the first token, was wrong again 71 times. With the passage at the cursor, 16 to 25. The passage written into the KV cache was no better than a user turn. More attention on the passage made retries worse. |
+| 68 | Closed-book loop, 3 generators | Wrong answers with the source as a turn: 27B 132 to 23, 7B 198 to 28, MiniCPM5-1B 92 to 53. The plain-text passage ended answers early. |
+| 70 | Loop with the source in the prompt, 7B and 1B | 7B 25 to 13 (p = 0.045), 3.8 % refusals. 1B 116 to 46 to 49, 16 to 28 % refusals. A judge fault in the 1B runs was found and stop 68's 1B figures corrected. |
+| 71 | 7B loop against frontier models | 7B loop 13, Claude Opus 4.6 8, Gemini 3.8 Flash 3, each checked by the other 1 or 2. Near none by the 4 point margin. The loop was fastest, 1.7 s against 3.1 to 9.0 s. |
+| 72 | 27B loop against frontier models | 4, near every frontier arm. 2.0 s per answer. 1.35 right sentences per answer, against 1.79 and 2.12. The loop neither added nor removed errors. |
+
 ## Required before production
 
-1. Raise the auditor's precision on live model output before anything else, and measure it on real generations
-   graded by people, not on planted errors. The sealed battery's 89 % did not carry over: 8 % by hand on software,
-   39 % by model labels on statutes. A rollback loop is only as good as its rejections.
-   Giving the entailment model the question, in the answer or in the source, does not fix this (stop 40): it
-   passes right and wrong text alike. Facts derived from the source in advance do not fix it either (stop 41):
-   they remove the reasoning gap in cases like the ddof default, but the entailment model still fails on
-   paraphrases of facts it is given, and the claim check alone was more accurate.
-   A reasoning LLM in the entailment check does fix it on these sets (stop 42). Gemini 3.8 flash high and
-   Qwen3.8-27B cut Part A false rollbacks from 19 to between 1 and 5 and Part B from 9 to between 1 and 3, and kept or
-   raised the errors caught. Single-pass controls (MiniCheck, ModernBERT-large) did not. The cost is seconds per answer,
-   and the claim check's own false rollbacks remain.
-   A fresh test confirmed the gain and showed its limits (stops 43 to 47): 358 sentences graded by hand, 148 of
-   them wrong, half from answers written without the source. With the judge rolling back every sentence the source
-   does not state, accuracy rose from 69 % (current auditor) to 82 to 88 %. A judge that only rolls back
-   contradictions reached 73 to 75 %, because most wrong sentences add related facts the source does not state. A
-   7B model trained on Gemini's labels scored 83 % at 1.7 s per clause, level with Gemini. The same 7B model
-   untrained scored 86 % at 3.9 s, so training bought speed, not accuracy, and it copied Gemini's wrong rollbacks.
-   Every strict judge still rolled back 22 to 62 of 210 right sentences. On answers written with the source the
-   best judge gained 3 sentences of 163 over no auditor. The judge pays where the generator answers from memory.
-   Before a production trial: use the strict placement, train on labels better than Gemini's, and stop the
-   segmenter splitting list numbers into sentences that the claim check then rejects as figures. Also test a
-   judge that sees the question and the source as written. The per-clause judge already receives the whole
-   source, cut into passages, but not the question. In one prompt with the question, the source as written and
-   both answers, Gemini agreed with the hand grades on 91 % of sentences and Claude Opus 5.5 on 97 %, against
-   82 % for Gemini as the per-clause judge.
-   A signal read from the model itself does not replace or improve the judge as tested (stop 48). The share of
-   attention on the input and the gain in likelihood from the input were measured for the generator and for two
-   untrained judges. None separated right from wrong well enough on held-out questions (AUROC 0.42 to 0.62,
-   gate 0.65). A judge that wrongly says supported is reading the passages, so its attention looks normal. The
-   retry loop built on this signal was not run.
-   Stronger labellers were tested per clause (stops 50 and 51). Gemini 3.1 Pro at low effort scored 88.5 % and
-   Claude Opus 5.5 89.1 %, against Flash's 82.1 %. Both are level with the untrained Qwen 27B (88.3 %), so a
-   frontier teacher adds no accuracy with this prompt. The per-clause judge tops out near 89 to 90 % on this
-   test. Half of Opus 5.5's 23 false rollbacks come from the claim check, which runs before the judge.
-   Sending the claim check's figure rollbacks to the judge was then tested (stop 52). Each of the three judges
-   caught all 29 wrong sentences the claim check had stopped and passed 6 to 8 of the 9 right ones. The untrained
-   Qwen 27B rose to 91.5 %, level with Opus 5.5 (92.4 %). Behind an LLM judge the claim check added no catch on
-   this test. A prompt with the question and the source as written did not help (stop 53). These arms were
-   designed on the test they were scored on and need a new graded set to confirm.
-   The judges' errors were then read (stop 54). The frontier models read the source correctly and differ from
-   the hand grades on where "supported" ends: Gemini too literal, Claude Opus 5.5 too lenient. Two notes that
-   state the grader's standard lifted the untrained Qwen 27B to 93.5 %, with 8 false rollbacks of 206 right
-   sentences and 133 of 148 wrong ones caught. This too was tuned on the test and needs a new graded set.
-   A second test of 151 unseen sentences did not confirm the tuned figure (stop 56). The tuned configuration
-   scored 90.1 % and the untuned one 89.4 %, the same as on the first test (89.3 %). About 90 % is the level
-   that holds for an untrained Qwen 27B as the judge, against 56 % with no auditor. The two notes are dropped.
-   Claude Opus 5.5 (92.1 %) and Gemini 3.1 Pro (90.7 %) were not told apart from it, and a 4-bit copy of the
-   model matched the 8-bit one at half the time per clause (stop 55). On answers written with the source the
-   judge was below no auditor in this test (88.9 % against 94.4 %): the generator was wrong in 4 sentences of
-   72, and the judge caught 1 while rolling back 5 right ones. The judge pays for answers from memory.
-   One model in both roles was then tested (stop 57): a 4-bit Qwen 27B wrote the answers and judged them. As
-   generator it was wrong in none of 49 sentences written with the source and in 55 % of closed-book ones,
-   against 80 % for the 7B. As judge of its own text it caught 35 of 36 wrong sentences, and a second model
-   caught none it passed, so judging its own text was not a weakness here. It rolled back 18 right sentences,
-   16 of them honest refusals in closed-book answers. Refusal is the router's job, which runs before
-   generation, so no rule was added.
-   The loop was then run live with that model in both roles on one server (stop 59). With the source in the
-   prompt it changed almost nothing: 48 of 49 sentences were committed at the first try, none was wrong, and an
-   answer took 3.2 s at the median. When the answer started from memory, the judge rejected most first
-   sentences, the engine inserted the source and regenerated, and 31 of the 32 sentences committed that way
-   were right; 36 of 65 sentences were wrong without the loop and no wrong statement of fact remained with it.
-   On every retry the server reused the committed prefix. DeBERTa on the same untouched questions scored 58 %
-   as an auditor against 89 % for the judge (stop 60).
-   The judge's time was then cut (stops 61 and 65). A reply without the reason scored no lower (93.8 % and
-   90.1 %, against 92.4 % and 89.4 %) at a third of the time per call. In the live loop it took an answer from 3.2 s to 1.9 s at the
-   median with the source in the prompt, with the same sentences committed and the same grades.
-   A smaller judge was tested last (stops 62 to 64). A 1B model trained on the 27B's labels reached 85 % and
-   80 % on the two tests from 4,018 clauses, and 89 % and 82 % from 18,152, at 0.06 s per call. It stays 5 to
-   8 points under the 27B. Asking the 27B only when the 1B rolls back scored 91 % and 85 %, within 3 points of
-   the 27B on one test and not on the other. The 27B remains the judge.
-   Two hosted decision APIs were tested as the judge (stop 66). They return a typed answer with
-   probabilities and no text, and need no training and no server. Jev 1.13 scored 90.7 % and 88.1 % and the
-   OpenAI Decisions API 89.0 % and 86.8 %. Jev is 3.1 and 2.0 points under the 27B and OpenAI 4.8 and 3.3,
-   so neither met the limit of 3 points on both tests. Neither was run inside the loop.
-   Retries were then tested on 95 wrong closed-book sentences of the 7B (stop 67). The default retry, which
-   bans the first token, was wrong again 71 times and repeated the same claim 33 times. With the passage next to
-   the cursor, wrong retries fell to 16 to 25. The passage written into the KV cache was no better than the
-   current user turn (26 good against 19, not told apart). The passage as plain tokens beat the turn (40 against
-   19). Raising attention on the passage made retries worse. Retries with the source in the prompt were too few
-   to read (11).
-   The plain-text passage was then run inside the live loop (stop 68), closed-book, on 240 questions with three
-   generators. The loop with the source as a turn cut answers holding a wrong sentence from 132 to 23 for the 27B,
-   198 to 28 for Qwen 2.5 7B and 92 to 53 for MiniCPM5-1B. The plain-text passage was better for none of them.
-   After it the model often ended the answer and the engine refused: 30 % of the 27B's points against 4 %.
-   The loop was then run live with the source in the prompt for two generators that do err there (stop 70).
-   For Qwen 2.5 7B the turn loop cut answers holding a wrong sentence from 25 to 13 of 240 (Holm p = 0.045), with
-   3.8 % refusals and more right statements. For MiniCPM5-1B the loops cut them from 116 to 46 to 49, but refused
-   16 to 28 % of points. The same day a fault was found: on a shared GPU the judge had died in the 1B's runs and
-   the loop refused everything after it; those answers were made again and stop 68's 1B figures corrected.
-   The 7B loop was then set against two frontier models with the same source in the prompt (stop 71). It held
-   a wrong sentence in 13 answers of 240; Claude Opus 4.6 in 8, Gemini 3.8 Flash in 3, and either one checked
-   sentence by sentence by the other in 1 or 2. By the fixed margin of 4 points the loop is near none of them.
-   Checking after writing emptied up to 14 answers. The loop answered fastest, 1.7 s against 3.1 to 9.0 s.
-   The 27B was then run as generator and judge on the same questions (stop 72). It held a wrong sentence in 4
-   answers of 240, near every frontier arm by the same margin, at 2.0 s per answer. It states less per answer
-   (1.35 right sentences against 1.79 and 2.12). With the source in the prompt the loop neither added nor
-   removed its errors.
+1. Use an LLM as the judge. 89 % of the entailment auditor's rejections were right on planted errors. On live
+   output it was 8 % by hand on software and 39 % by model labels on statutes. An untrained Qwen 27B is right on about 90 % of
+   unseen sentences. Roll back every sentence the source does not state. Stop the segmenter splitting list
+   numbers into sentences that the claim check rejects as figures. Confirm on a new graded set that figure
+   rollbacks go to the judge (stop 52). Measure on real answers graded by people.
 2. Insert the source as a user turn at the cut when the judge is an LLM. With the entailment model as the
    auditor, inserted retries were not better than a plain retry, and on statutes the model pasted the source.
    With the 27B judge the default retry, which bans the first token, was wrong again in 71 of 95 retries
