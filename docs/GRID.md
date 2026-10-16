@@ -3421,3 +3421,15 @@ other's answers; Opus 5.5 grades, its cap raised to $45.
   arm. Fresh questions read since stop 47.
 - Spend: Modal none. Router: Flash and Opus 4.6 are not charged; Opus 5.5 grading expected $3 to $4 under the
   raised cap of $45.
+
+### Stop 71: run (2026-10-15 to 2026-10-16)
+
+- Answers: Flash and Opus 4.6 answered all 240 questions. One Flash answer is empty (`pool:qpl-649`, 4 s); it is
+  kept as returned, as the method fixes one answer per question.
+- Checks: Flash checked Opus 4.6's 240 answers and dropped 86 sentences; 14 answers have nothing left. Opus 4.6
+  checked Flash's 240 answers and dropped 24 sentences; 6 answers have nothing left. Opus 4.6 hit the router's
+  rate limit after 53 answers; the check stopped cleanly and was resumed the next day. Judge labels: Opus 4.6
+  421 supported, 6 not stated, 6 contradicted; Flash 463, 63 and 6.
+- Sheet: 240 questions, **847 sentences to grade**, 89 carried, 0 refusals, 196 repeats graded once. sha256
+  before any grade, sheet and key: `861570e67a5f66296914c1940f7d2082da666db624f2ffa5c1c7d48ebb984f9e f144c752fbe52a284777768ac56685746aac91b9a4cdad5e57ea1fa712a58a6d`.
+- Spend so far: router, Flash and Opus 4.6 $0. Opus 5.5 $39.06 of the $45 cap; grading not started.
