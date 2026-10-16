@@ -29,8 +29,9 @@ refusals. The gain is where the generator answers from memory. With the source i
 nothing to catch. On 240 questions with the source in the prompt, the 27B held a wrong sentence in 4 answers,
 against 3 for Gemini 3.8 Flash and 8 for Claude Opus 4.6 (stop 72).
 
-This rests on 40 live questions, one model, one server and greedy decoding. The live answers were graded by two
-frontier models, with 3 sentences by hand. A trained 1B model and two hosted decision APIs were tested as the
+This rests on 40 live questions for the loop above (stop 59) and 240 for the later runs (stops 68 to 72), on one
+server type, with greedy decoding and one run per arm. Frontier models graded most sentences; the ones they left
+unsure or disagreed on were graded by hand. A trained 1B model and two hosted decision APIs were tested as the
 judge and scored 2 to 8 points under the 27B. Item 1 of the last section gives the steps in order. The changes
 required before a production trial are listed there.
 
@@ -235,11 +236,14 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    answers of 240, near every frontier arm by the same margin, at 2.0 s per answer. It states less per answer
    (1.35 right sentences against 1.79 and 2.12). With the source in the prompt the loop neither added nor
    removed its errors.
-2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
-   a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
-   injected turn, as in the second version. Do not add a per-sentence relevance
-   check. A single sentence of a correct answer often does not address the question on its own, so the check
-   would reject correct text and exhaust the retries. Judge relevance on the whole answer.
+2. Insert the source as a user turn at the cut when the judge is an LLM. With the entailment model as the
+   auditor, inserted retries were not better than a plain retry, and on statutes the model pasted the source.
+   With the 27B judge the default retry, which bans the first token, was wrong again in 71 of 95 retries
+   against 16 with the turn (stop 67), and the turn loop cut closed-book answers holding a wrong sentence from
+   198 to 28 for the 7B (stop 68). The plain-text passage did better on retries but ended answers early in the
+   live loop. Restate the question in the injected turn, as in the second version. Do not add a per-sentence
+   relevance check. A single sentence of a correct answer often does not address the question on its own, so
+   the check would reject correct text and exhaust the retries. Judge relevance on the whole answer.
 3. Keep the router gate for abstention. Before the next run, fix a judge prompt that scores a refusal of a
    provision that does not exist as correct.
 4. Reduce entailment errors on statutory drafting, starting with dropped qualifiers and rules judged against their

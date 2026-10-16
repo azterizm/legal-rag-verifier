@@ -24,6 +24,7 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-16 (verdict): the verdict's limits paragraph and item 2 of the required changes brought up to stops 67 to 72: 240 live questions, and the source as a turn at the cut is backed with the LLM judge. **Resume:** nothing planned
 - 2026-10-16 (push): **Stops 67 to 72 to `main`.** Your go. 41 commits checked first: no key, token or account name, nothing tracked from the protected folders; committed grader files hold codes, grades and one-sentence reasons, as on `main` before. README evidence and the changelog's Unreleased section gain stops 67 to 72; no package change, no release. Merged through a pull request with the 8 CI checks. **Resume:** nothing planned
 - 2026-10-16 (stop 72 results): your 3 grades taken as written (all wrong). Answers with a wrong sentence: 27B loop 4, 27B no loop 4, Flash 3, Opus 4.6 8, checked arms 1 and 2, 7B loop 13. The 27B loop is near every frontier arm (upper ends 1.2 to 3.3 points). It states less per answer (1.35 right sentences against 1.79 and 2.12). Against the 7B loop 3 and 12 (p = 0.035). **Resume:** nothing planned
 - 2026-10-16 (stop 72 grading): your go. Opus 5.5 graded 245 sentences: 237 right, 5 wrong, 3 unsure, all 3 the 27B's. Opus 5.5 $0.92. **Resume:** your 3 grades, then `scripts/live72.py report`
