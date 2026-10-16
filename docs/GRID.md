@@ -3511,3 +3511,12 @@ either frontier model, and the 27B as generator was never run on these questions
   loop were graded by different mixes of graders (stop 71's check applies).
 - Spend: Modal run `stop72`, one L40S, expected $1.50 to $2.50 from stop 68's 27B run, stage stop $4 ($9.23 left
   of $55). Router: Opus 5.5 within its $45 cap ($4.06 left), expected $1 to $2.
+
+### Stop 72: run (2026-10-16)
+
+- Answers: the 27B answered all 240 questions in both arms, 480 answers, none empty. No judge call failed. A probe
+  of 2 questions ran first and is kept. `turn`: 332 sentences, 32 rollbacks, 4 refusals. Seconds per answer,
+  p50: `none` 1.1, `turn` 2.0.
+- Sheet: 240 questions, **245 sentences to grade**, 126 carried, 4 refusals, 6 repeats graded once. sha256
+  before any grade, sheet and key: `041fd35f98d1ef1586c4920972722fff4fcc0cc184bd8c5ae04014641e2009fa a806824ef2797c0e0496bb20a7acb5a66131bf8e21375b08ec3afb1163937085`.
+- Spend: Modal $1.24 ($47.02 of $55). Grading not started.
