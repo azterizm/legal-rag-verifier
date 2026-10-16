@@ -209,22 +209,66 @@ def bootstrap(diffs: Sequence[int], resamples: int = RESAMPLES, seed: int = SEED
     return [round(means[int(0.025 * resamples)], 4), round(means[int(0.975 * resamples) - 1], 4)]
 
 
+def agreement(
+    first: Mapping[str, str], key: Mapping[str, Mapping[str, Any]], final: Mapping[Any, str]
+) -> dict[str, Any]:
+    """Opus 5.5's first-pass grades against the final grades, on the 7B's sentences of stop 70
+    (every arm, and the turn arm alone). Its unsure grades are counted apart."""
+    out: dict[str, Any] = {}
+    for scope, arms in {"qwen7": None, "qwen7 turn": {"qwen7:turn"}}.items():
+        codes = [
+            c
+            for c, k in key.items()
+            if c in first
+            and any(a.startswith("qwen7:") and (arms is None or a in arms) for a in k["answers"])
+        ]
+        sure = [c for c in codes if first[c] != "unsure"]
+        same = sum(first[c] == final[(key[c]["id"], key[c]["text"])] for c in sure)
+        out[scope] = {
+            "sentences": len(codes),
+            "unsure": len(codes) - len(sure),
+            "match": same,
+            "match_share": round(same / len(sure), 4) if sure else None,
+            "wrong_by_opus_right_final": sum(
+                first[c] == "no" and final[(key[c]["id"], key[c]["text"])] == "yes" for c in sure
+            ),
+            "right_by_opus_wrong_final": sum(
+                first[c] == "yes" and final[(key[c]["id"], key[c]["text"])] == "no" for c in sure
+            ),
+        }
+    return out
+
+
+def opus_first_pass(folder: Path) -> dict[str, str]:
+    import router  # noqa: PLC0415
+
+    out: dict[str, str] = {}
+    for row in read_jsonl(folder / "grader-opus55.jsonl"):
+        if row.get("model") == router.OPUS55:
+            out |= row["grades"]
+    return out
+
+
 def report() -> dict[str, Any]:
     import live68_grade as lg  # type: ignore[import-not-found]  # noqa: PLC0415
     import live70  # type: ignore[import-not-found]  # noqa: PLC0415
 
-    lg.use(71)
+    lg.use(71)  # lg.EXTRA now holds stop 70's final grades
+    seventy_key = json.loads((live70.OUT / "key.json").read_text(encoding="utf-8"))
+    checked = agreement(opus_first_pass(live70.OUT), seventy_key, lg.EXTRA)
     grades = lg.grades_by_sentence()
     frontier = lg.scored(grades)
     lg.STORE = live70  # the 7B loop, scored with the same grades
     loop = {k: v for k, v in lg.scored(grades).items() if k.startswith("qwen7:")}
     questions = [f"{s}:{r['id']}" for s in SETS for r in rows(s)]
-    out: dict[str, Any] = {"arms": {}, "against_loop": {}}
+    out: dict[str, Any] = {"arms": {}, "against_loop": {}, "grader_check": checked}
     arms = {"7B loop (stop 70)": ("qwen7", "turn", loop)} | {
         g: (g, "none", frontier) for g in GENERATORS
     }
     for title, (gen, arm, table) in arms.items():
-        out["arms"][title] = lg.summary([table[f"{gen}:{q}:{arm}"] for q in questions])
+        rows_ = [table[f"{gen}:{q}:{arm}"] for q in questions]
+        # an answer with no sentence (a checked answer with nothing kept) counts as a refusal
+        out["arms"][title] = {**lg.summary(rows_), "empty": sum(r["sentences"] == 0 for r in rows_)}
     loop_wrong = [loop[f"qwen7:{q}:turn"]["wrong"] > 0 for q in questions]
     for g in GENERATORS:
         theirs = [frontier[f"{g}:{q}:none"]["wrong"] > 0 for q in questions]

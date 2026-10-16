@@ -31,7 +31,7 @@ PRO = "gemini-3.1-pro-low"  # stop 50
 MODELS = frozenset({GEMINI, OPUS46, OPUS55, PRO})
 # USD per million input and output tokens, for capped models only.
 PRICES = {OPUS55: (4.0, 20.0), PRO: (2.0, 12.0)}
-CAPS = {OPUS55: 40.0, PRO: 15.0}
+CAPS = {OPUS55: 45.0, PRO: 15.0}  # Opus 5.5: $40, raised to $45 for stop 71 by your choice
 LEDGER = ROOT / "results/distill/router_ledger.json"
 RETRY_STATUS = frozenset({408, 409, 425, 429, 500, 502, 503, 504, 529})
 MAX_OUTPUT_GUESS = 8000  # tokens reserved per call when checking the cap
