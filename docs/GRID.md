@@ -3526,3 +3526,38 @@ either frontier model, and the 27B as generator was never run on these questions
 - Before your grades, the 3 counted all right and then all wrong: the 27B `turn` holds a wrong sentence in 3 or
   4 answers of 240, and the upper end of the interval is at most 3.3 points against every frontier arm either
   way. Your grades set the final counts.
+
+### Stop 72: results (2026-10-16)
+
+Your 3 grades were taken as written: all 3 wrong. Then `live72.py report`, once. Raw: `results/live72_report.json`.
+Grades: Opus 5.5 (242), you (3), carried (126, plus stops 70 and 71 for the other arms).
+
+Source in the prompt, 240 questions per arm, every arm on every question.
+
+| Arm | Answers with a wrong sentence | Wrong sentences (95 % interval) | Right per answer | Empty answers | Seconds, p50 |
+|---|---|---|---|---|---|
+| 27B `turn` | 4 | 5 / 328, 1.5 % (0.7 to 3.5) | 1.35 | 0, refusal 1.2 % | 2.0 |
+| 27B `none` | 4 | 4 / 334, 1.2 % (0.5 to 3.0) | 1.38 | 0 | 1.1 |
+| 7B loop (stop 70, turn) | 13 | 14 / 379, 3.7 % (2.2 to 6.1) | 1.52 | 0, refusal 3.8 % | 1.7 |
+| Flash | 3 | 3 / 432, 0.7 % (0.2 to 2.0) | 1.79 | 1 | 4.4 |
+| Opus 4.6 | 8 | 10 / 519, 1.9 % (1.1 to 3.5) | 2.12 | 0 | 3.1 |
+| Flash, Opus 4.6 checking | 1 | 1 / 408, 0.2 % (0.0 to 1.4) | 1.70 | 6 | 8.7 |
+| Opus 4.6, Flash checking | 2 | 2 / 431, 0.5 % (0.1 to 1.7) | 1.79 | 14 | 9.0 |
+
+- Fixed reading, the 27B `turn` minus each frontier arm (answers with a wrong sentence, points of 240, 95 %
+  interval; only the 27B wrong and only the frontier arm wrong):
+  - Flash: 0.4 (-1.7 to 2.5); 4 and 3. **Near.**
+  - Opus 4.6: -1.7 (-4.6 to 1.2); 4 and 8. **Near.**
+  - Flash, Opus 4.6 checking: 1.2 (-0.4 to 3.3); 4 and 1. **Near.**
+  - Opus 4.6, Flash checking: 0.8 (-1.2 to 2.9); 4 and 2. **Near.**
+- The 3 sentences left for you, counted all right or all wrong before your grades, gave the same reading.
+- Secondary: the 27B `turn` against `none`, 1 and 1 (p = 1.0): the loop changes nothing here, with 32 rollbacks
+  and 4 refusals over 240 answers. The 27B `turn` against the 7B loop, 3 and 12 (p = 0.035).
+- The 27B writes shorter answers: 1.35 right sentences per answer against 1.79 for Flash and 2.12 for Opus 4.6.
+
+Reading: with the source in the prompt, the 27B with the turn loop is near both frontier models and both checked
+arms by the fixed margin. It holds a wrong sentence in 4 answers of 240, against 3 for Flash and 8 for Opus 4.6,
+at 2.0 s per answer. It states less per answer. With the source in the prompt the 27B rarely errs, and the loop
+neither adds nor removes errors.
+
+Spend, stop 72: Modal $1.24 ($47.02 of $55). Opus 5.5 $0.92 ($41.86 of $45).

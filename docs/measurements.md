@@ -1214,3 +1214,18 @@ The loop is not near any frontier arm by the fixed margin (upper end of the pair
 the upper ends are 5.4 to 7.9 points. Against Opus 4.6 the difference is 2.1 points (-0.8 to 5.4). The loop is
 the fastest arm. Opus 5.5 graded; it was softer on Opus 4.6's sentences, and those it left unsure were graded by
 hand.
+
+## The 27B loop against two frontier models (stop 72, 2026-10-16; method in `docs/GRID.md`)
+
+Stop 71's 240 questions, source in the prompt. Qwen 27B at 4 bits as generator and judge on one L40S.
+
+| Arm | Wrong answers | Wrong sentences | Right per answer | Empty answers | Seconds, p50 |
+|---|---|---|---|---|---|
+| Qwen 27B, turn loop | 4 | 1.5 % | 1.35 | 0, refusal 1.2 % | 2.0 |
+| Qwen 27B, no loop | 4 | 1.2 % | 1.38 | 0 | 1.1 |
+| Qwen 2.5 7B, turn loop (stop 70) | 13 | 3.7 % | 1.52 | 0, refusal 3.8 % | 1.7 |
+| Gemini 3.8 Flash | 3 | 0.7 % | 1.79 | 1 | 4.4 |
+| Claude Opus 4.6 | 8 | 1.9 % | 2.12 | 0 | 3.1 |
+
+The 27B loop is near every frontier arm by the fixed margin: the upper ends are 1.2 to 3.3 points. It states
+less per answer. The loop does not change the 27B's errors with the source in the prompt (1 and 1).
