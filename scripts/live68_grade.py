@@ -99,6 +99,13 @@ def use(stop: int) -> None:
         seventy = grades_by_sentence()
         OUT, REPORT, STORE = sota71.OUT, sota71.REPORT, sota71
         EXTRA, EXTRA_ANSWERS[:], GRADERS = seventy, [], ("opus55",)
+    if stop == 72:  # noqa: PLR2004 - as stop 71; stop 71's grades carried too
+        import live72  # type: ignore[import-not-found]  # noqa: PLC0415
+
+        use(71)
+        seventy_one = grades_by_sentence()
+        OUT, REPORT, STORE = live72.OUT, live72.REPORT, live72
+        EXTRA = seventy_one
 
 
 def use68_with_70() -> None:
@@ -543,7 +550,7 @@ def main() -> None:
     parser.add_argument("command", choices=["sheet", "grade", "leftover", "report"])
     parser.add_argument("grader", nargs="?", choices=GRADERS)
     parser.add_argument("--again", action="store_true")
-    parser.add_argument("--stop", type=int, default=68, choices=[68, 70, 71])
+    parser.add_argument("--stop", type=int, default=68, choices=[68, 70, 71, 72])
     parser.add_argument("--model", default="", help="a router model in the grader's place")
     parser.add_argument("--opus-stop", type=float, default=0.0, help="Opus 5.5's ledger stop, USD")
     parser.add_argument("--with-70", action="store_true", help="stop 68 with stop 70's grades")

@@ -2621,6 +2621,31 @@ def live70(
     )
 
 
+# ------------------------------------------------------------------ stop 72: the 27B, source
+
+LIVE72_STAGE = "stop72"
+LIVE72_STOP = 4.0  # USD, GRID § Stop 72
+
+
+@app.local_entrypoint()
+def live72(sets: str = "fresh,fresh2,pool", arms: str = "none,turn", limit: int = 0) -> None:
+    """Stop 72: the 27B as generator and judge on one L40S, the source in the prompt."""
+    sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "batteries/verifier")]
+    import live72 as l72  # noqa: PLC0415
+
+    _live_run(
+        l72,
+        "qwen27",
+        sets,
+        arms,
+        limit,
+        shared=False,
+        mode="source",
+        stage=LIVE72_STAGE,
+        stop=LIVE72_STOP,
+    )
+
+
 # ------------------------------------------------------------------ stop 69: the judge re-asked
 
 JUDGE69_STAGE = "stop69"
