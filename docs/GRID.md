@@ -3520,3 +3520,9 @@ either frontier model, and the 27B as generator was never run on these questions
 - Sheet: 240 questions, **245 sentences to grade**, 126 carried, 4 refusals, 6 repeats graded once. sha256
   before any grade, sheet and key: `041fd35f98d1ef1586c4920972722fff4fcc0cc184bd8c5ae04014641e2009fa a806824ef2797c0e0496bb20a7acb5a66131bf8e21375b08ec3afb1163937085`.
 - Spend: Modal $1.24 ($47.02 of $55). Grading not started.
+- Grading (2026-10-16), your go: Opus 5.5 graded all 245 sentences: 237 right, 5 wrong, 3 unsure. **3 are left
+  for you**: `results/live72/leftover.md` (git-ignored), your column file `results/live72/leftover.csv`. All 3
+  are the 27B's: two from `turn`, one from `none`. Opus 5.5 $0.92 for this stop ($41.86 of $45).
+- Before your grades, the 3 counted all right and then all wrong: the 27B `turn` holds a wrong sentence in 3 or
+  4 answers of 240, and the upper end of the interval is at most 3.3 points against every frontier arm either
+  way. Your grades set the final counts.

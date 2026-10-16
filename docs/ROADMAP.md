@@ -17,13 +17,14 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Last updated | 2026-10-16 |
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
-| Next step | Stop 72 (GRID): the 27B loop on stop 71's questions has run. 245 sentences to grade with Opus 5.5; halted for your go |
-| Waiting on you | Your go to grade stop 72's 245 sentences with Opus 5.5. Branches `stop-67`, `stop-68` (stops 67 to 70), `stop-71` and the stop 72 commits on it are local, not pushed. Modal $7.98 and Opus 5.5 $4.06 left |
+| Next step | Stop 72 (GRID): Opus 5.5 graded 242 of 245; 3 left for you in `results/live72/leftover.csv`, then the report |
+| Waiting on you | Your 3 grades for stop 72. Branches `stop-67`, `stop-68` (stops 67 to 70), `stop-71` and the stop 72 commits on it are local, not pushed. Modal $7.98 and Opus 5.5 $3.14 left |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-16 (stop 72 grading): your go. Opus 5.5 graded 245 sentences: 237 right, 5 wrong, 3 unsure, all 3 the 27B's. Opus 5.5 $0.92. **Resume:** your 3 grades, then `scripts/live72.py report`
 - 2026-10-16 (stop 72): **The 27B loop, source in the prompt, on stop 71's questions.** Your go. Method fixed and committed first. 480 answers (`none` and `turn`), no judge failure, none empty. 245 sentences to grade, 126 carried. Modal $1.24. **Resume:** your go for Opus 5.5 grading, then the report
 - 2026-10-16 (stop 71 results): **The 7B loop against two frontier models, source in the prompt.** Flash and Opus 4.6 answered the 240 questions through the router, alone and each checked by the other with the package verifier. Opus 5.5 graded 839 of 847 sentences; your 8 grades taken as written (7 wrong). Answers with a wrong sentence: loop 13, Opus 4.6 8, Flash 3, checked arms 1 and 2. Not near by the fixed margin. Opus 5.5 was softer on Opus 4.6. Router cap for Opus 5.5 raised to $45; spend $1.87. **Resume:** nothing planned
 - 2026-10-15 (stop 70 results): your 115 grades taken as written (Gemini 4 Argon High first, refined by hand). 7B: turn loop 13 answers with a wrong sentence against 25 without (p = 0.045), better by the fixed reading; ban 16 (p = 0.078). 1B: 46 to 49 against 116 but refusal 16 to 28 %. Stop 68's 1B plain against turn now 37 and 53, not told apart. **Resume:** nothing planned
