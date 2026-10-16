@@ -119,7 +119,7 @@ def rotate(model: Any, keys: Any, delta: int) -> Any:
     k = keys.float()
     ids = torch.full((1, k.shape[-2]), delta, device=k.device, dtype=torch.long)
     cos, sin = model.model.rotary_emb(k, ids)
-    out = k * cos.unsqueeze(1) + rotate_half(k) * sin.unsqueeze(1)  # type: ignore[no-untyped-call]
+    out = k * cos.unsqueeze(1) + rotate_half(k) * sin.unsqueeze(1)  # type: ignore[no-untyped-call,unused-ignore]
     return out.to(keys.dtype)
 
 
@@ -232,7 +232,7 @@ class ArmBackend(HFBackend):
         with torch.inference_mode():
             self.model(input_ids=ids, position_ids=pos, past_key_values=cache, use_cache=True)
         self.computed += len(tokens)
-        return [(layer.keys, layer.values) for layer in cache.layers]  # type: ignore[union-attr]
+        return [(layer.keys, layer.values) for layer in cache.layers]  # type: ignore[union-attr,unused-ignore]
 
     def splice(self, kv: Sequence[tuple[Any, Any]], at: int) -> None:
         """Insert a passage computed alone before stream token ``at``: its keys rotated to that
