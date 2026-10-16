@@ -18,12 +18,13 @@ Legend: 🧑 = needs you (an account, hardware, money or approval) · ⛔ = halt
 | Current stage | Phase 3, Mac session (M1–M3) |
 | Current milestone | M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ (SGLang + Modal L4 spike) |
 | Next step | Stop 72 is done (GRID). With the source in the prompt the 27B turn loop holds a wrong sentence in 4 answers of 240; Flash 3, Opus 4.6 8. Near every frontier arm by the fixed 4-point margin. Nothing planned |
-| Waiting on you | Nothing. Branches `stop-67`, `stop-68` (stops 67 to 70) and `stop-71` (stops 71 and 72) are local, not pushed. Modal $7.98 and Opus 5.5 $3.14 left |
+| Waiting on you | Nothing. Stops 67 to 72 are on `main`. Modal $7.98 and Opus 5.5 $3.14 left |
 | Blocked | Nothing |
 
 ### Stop log
 Newest first. One line per stop: what was finished, and where to resume.
 
+- 2026-10-16 (push): **Stops 67 to 72 to `main`.** Your go. 41 commits checked first: no key, token or account name, nothing tracked from the protected folders; committed grader files hold codes, grades and one-sentence reasons, as on `main` before. README evidence and the changelog's Unreleased section gain stops 67 to 72; no package change, no release. Merged through a pull request with the 8 CI checks. **Resume:** nothing planned
 - 2026-10-16 (stop 72 results): your 3 grades taken as written (all wrong). Answers with a wrong sentence: 27B loop 4, 27B no loop 4, Flash 3, Opus 4.6 8, checked arms 1 and 2, 7B loop 13. The 27B loop is near every frontier arm (upper ends 1.2 to 3.3 points). It states less per answer (1.35 right sentences against 1.79 and 2.12). Against the 7B loop 3 and 12 (p = 0.035). **Resume:** nothing planned
 - 2026-10-16 (stop 72 grading): your go. Opus 5.5 graded 245 sentences: 237 right, 5 wrong, 3 unsure, all 3 the 27B's. Opus 5.5 $0.92. **Resume:** your 3 grades, then `scripts/live72.py report`
 - 2026-10-16 (stop 72): **The 27B loop, source in the prompt, on stop 71's questions.** Your go. Method fixed and committed first. 480 answers (`none` and `turn`), no judge failure, none empty. 245 sentences to grade, 126 carried. Modal $1.24. **Resume:** your go for Opus 5.5 grading, then the report

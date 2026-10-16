@@ -125,6 +125,15 @@ committed at the first try, none wrong, at 1.9 s per answer at the median. When 
 from memory, 36 of 65 sentences were wrong without the loop and 3 of 50 with it, all three
 refusals.
 
+**The loop on 240 questions** (the 27B as judge): closed-book, it cut answers holding a wrong
+sentence from 132 to 23 for the 27B, 198 to 28 for Qwen 2.5 7B and 92 to 53 for MiniCPM5-1B. With
+the source in the prompt it cut the 7B's from 25 to 13 (Holm p = 0.045).
+
+**Against frontier models** (the same 240 questions, source in the prompt): answers holding a wrong
+sentence, Qwen 27B with the loop 4, Gemini 3.8 Flash 3, Claude Opus 4.6 8, Qwen 2.5 7B with the
+loop 13. The 27B is within the fixed margin of 4 points of both frontier models; the 7B is not.
+The 27B answers in 2.0 s at the median against 3.1 to 4.4 s, and states less per answer.
+
 **Other judges on the same two tests:** a 1B model trained on the 27B's labels, 89.0 % and 82.1 %
 at 0.06 s per call ([adapters](https://huggingface.co/azterizm/minicpm5-1b-clause-judge),
 DOI [10.57967/hf/10885](https://doi.org/10.57967/hf/10885)); Jev
