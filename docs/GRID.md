@@ -3442,3 +3442,41 @@ other's answers; Opus 5.5 grades, its cap raised to $45.
   points for every frontier arm either way, so no arm reads near. Your grades set the final counts.
 - Report additions, no change to the reading: answers with no sentence are counted per arm (`empty`); the
   grader check (Opus 5.5's first pass against the final grades on stop 70's 7B sentences) is in the report.
+
+### Stop 71: results (2026-10-16)
+
+Your 8 grades were taken as written: 7 wrong, 1 right. Then `sota71.py report`, once. Raw:
+`results/sota71_report.json`. Grades: Opus 5.5 (839), you (8), carried (89 plus stop 70's for the loop).
+
+Source in the prompt, 240 questions per arm, every arm on every question.
+
+| Arm | Answers with a wrong sentence | Wrong sentences (95 % interval) | Right per answer | Empty answers | Seconds, p50 |
+|---|---|---|---|---|---|
+| 7B loop (stop 70, turn) | 13 | 14 / 379, 3.7 % (2.2 to 6.1) | 1.52 | 0, refusal 3.8 % | 1.7 |
+| Flash | 3 | 3 / 432, 0.7 % (0.2 to 2.0) | 1.79 | 1 | 4.4 |
+| Opus 4.6 | 8 | 10 / 519, 1.9 % (1.1 to 3.5) | 2.12 | 0 | 3.1 |
+| Flash, Opus 4.6 checking | 1 | 1 / 408, 0.2 % (0.0 to 1.4) | 1.70 | 6 | 8.7 |
+| Opus 4.6, Flash checking | 2 | 2 / 431, 0.5 % (0.1 to 1.7) | 1.79 | 14 | 9.0 |
+
+- Fixed reading, the loop minus each frontier arm (answers with a wrong sentence, points of 240, 95 % interval;
+  only the loop wrong and only the frontier arm wrong):
+  - Flash: 4.2 (1.3 to 7.1); 12 and 2. **Not near.**
+  - Opus 4.6: 2.1 (-0.8 to 5.4); 10 and 5. **Not near**: the upper end is over 4 points.
+  - Flash, Opus 4.6 checking: 5.0 (2.5 to 7.9); 12 and 0. **Not near.**
+  - Opus 4.6, Flash checking: 4.6 (1.7 to 7.9); 13 and 2. **Not near.**
+- The 8 sentences left for you, counted all right or all wrong before your grades, gave the same reading.
+- Checking after writing removes most of what is left wrong but empties answers: Flash checking Opus 4.6 left 14
+  of 240 answers with nothing (5.8 %), Opus 4.6 checking Flash 6 (2.5 %).
+- Grader check: on stop 70's 7B sentences, Opus 5.5's first pass matches the final grades on 307 of 311 it was
+  sure of (98.7 %; 7 unsure); on the turn arm's, 203 of 204 (99.5 %).
+- Same family: all 8 sentences Opus 5.5 left unsure were Opus 4.6's, and you graded 7 of them wrong. Opus 5.5
+  marked 2 of Opus 4.6's sentences wrong itself. It left none of Flash's sentences unsure. Opus 5.5 is
+  softer on Opus 4.6; the unsure step sent those sentences to you, so the final counts carry your grades.
+
+Reading: with the source in the prompt, the 7B with the turn loop and the 27B judge is not near either frontier
+model by the fixed margin. It holds a wrong sentence in 13 answers of 240; Opus 4.6 alone in 8, Flash alone in 3,
+and either one checked by the other in 1 or 2. Against Opus 4.6 the interval reaches 5.4 points, so the gap is
+not shown to be large, but it is not shown to be small. The loop is the fastest arm: 1.7 s per answer against 3.1
+to 9.0 s.
+
+Spend, stop 71: Modal none. Opus 5.5 $1.87 ($40.94 of $45); Flash and Opus 4.6 not charged.
