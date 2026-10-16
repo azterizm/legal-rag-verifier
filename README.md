@@ -146,9 +146,10 @@ See [`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main
 
 The repository, not the package, holds everything behind the figures: the batteries and their
 seals (`batteries/`), the per-provision enrichment (`enrichment/`), every answer, trace and
-judgement (`results/`) and the scripts that produced them (`scripts/`). The rollback-point tables
-and the placement and attention report re-derive from the committed results, with no GPU or API
-key:
+judgement (`results/`) and the scripts that produced them (`scripts/`).
+[`docs/RESEARCH.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/RESEARCH.md)
+maps each test to its method, figures, scripts and results. The rollback-point tables and the
+placement and attention report re-derive from the committed results, with no GPU or API key:
 
 ```bash
 git clone https://github.com/azterizm/legal-rag-verifier && cd legal-rag-verifier && uv sync

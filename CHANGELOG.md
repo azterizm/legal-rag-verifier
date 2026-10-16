@@ -12,6 +12,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - Python 3.14 is tested in CI and listed in the classifiers.
 
+### Added
+- `docs/RESEARCH.md`: an index of the evaluation. Each test with its method, figures, scripts and
+  results.
+
 ### Evaluation
 - Stops 67 to 72, in `scripts/` and not in the package: retries after a real error and edits to the
   KV cache; the live loop on 240 questions with three generators, closed-book and with the source
