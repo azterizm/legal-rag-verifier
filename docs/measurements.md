@@ -1196,3 +1196,21 @@ The turn loop is better than no loop for the 7B (Holm p = 0.045) with fewer refu
 statements. For the 1B the loops remove most wrong answers but refuse too often to pass the fixed reading.
 Stop 68's 1B figures were corrected the same day after a judge fault: plain 37 and turn 53 answers with a wrong
 sentence, not told apart.
+
+## The 7B loop against two frontier models (stop 71, 2026-10-16; method in `docs/GRID.md`)
+
+240 questions, source in the prompt. Answers holding at least one sentence graded wrong. Frontier models through
+the router, temperature 0; a checked arm drops the sentences the other model's verifier rolls back.
+
+| Arm | Wrong answers | Wrong sentences | Empty answers | Seconds, p50 |
+|---|---|---|---|---|
+| Qwen 2.5 7B, turn loop, 27B judge (stop 70) | 13 | 3.7 % | 0, refusal 3.8 % | 1.7 |
+| Gemini 3.8 Flash | 3 | 0.7 % | 1 | 4.4 |
+| Claude Opus 4.6 | 8 | 1.9 % | 0 | 3.1 |
+| Flash, Opus 4.6 checking | 1 | 0.2 % | 6 | 8.7 |
+| Opus 4.6, Flash checking | 2 | 0.5 % | 14 | 9.0 |
+
+The loop is not near any frontier arm by the fixed margin (upper end of the paired interval at most 4 points):
+the upper ends are 5.4 to 7.9 points. Against Opus 4.6 the difference is 2.1 points (-0.8 to 5.4). The loop is
+the fastest arm. Opus 5.5 graded; it was softer on Opus 4.6's sentences, and those it left unsure were graded by
+hand.

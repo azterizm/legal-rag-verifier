@@ -226,6 +226,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    3.8 % refusals and more right statements. For MiniCPM5-1B the loops cut them from 116 to 46 to 49, but refused
    16 to 28 % of points. The same day a fault was found: on a shared GPU the judge had died in the 1B's runs and
    the loop refused everything after it; those answers were made again and stop 68's 1B figures corrected.
+   The 7B loop was then set against two frontier models with the same source in the prompt (stop 71). It held
+   a wrong sentence in 13 answers of 240; Claude Opus 4.6 in 8, Gemini 3.8 Flash in 3, and either one checked
+   sentence by sentence by the other in 1 or 2. By the fixed margin of 4 points the loop is near none of them.
+   Checking after writing emptied up to 14 answers. The loop answered fastest, 1.7 s against 3.1 to 9.0 s.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
