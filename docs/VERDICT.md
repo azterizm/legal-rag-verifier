@@ -26,11 +26,13 @@ catch.
 
 Share of hand-graded sentences each auditor judged right:
 
-| Auditor | First test, 358 sentences | Second test, 151 sentences |
+| Auditor | First test | Second test, 151 sentences |
 |---|---|---|
 | Qwen 27B judge | 93.8 % | 90.1 % |
 | Entailment model | 68.7 % | 58.3 % |
 | No auditor | 58.7 % | 55.6 % |
+
+The first test has 358 graded sentences. The judge figure is on the 354 it scored.
 
 The 27B loop run live:
 
@@ -208,6 +210,5 @@ and the second (151). Wrong answers are answers holding a wrong sentence, of 240
 5. Set the latency target from the measured cost of 69 to 117 ms per retry, or move to faster hardware.
 6. Tune each change on the development set, then re-run the 103 test questions with the judge prompt fixed in advance.
 
-Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/`. Decisions:
-`docs/ROADMAP.md`. The trained 1B adapters: `huggingface.co/azterizm/minicpm5-1b-clause-judge`,
+Method: `docs/GRID.md`. Figures: `docs/measurements.md`. Raw results: `results/`. The trained 1B adapters: `huggingface.co/azterizm/minicpm5-1b-clause-judge`,
 DOI `10.57967/hf/10885`.

@@ -152,7 +152,7 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
    Vault 04 used `UNGROUNDED_CLAIM` and `DEONTIC_DOWNGRADE`; these are split by claim kind, and
    `DEONTIC_SHIFT` covers upgrades (may→must) as well as downgrades.
 2. **`GroundedBy`**: `window premise fact metadata query` (trace field `grounded_by`).
-3. **`align_ratio=0.5`**: new parameter (not in the plan), see ROADMAP stop 1.
+3. **`align_ratio=0.5`**: new parameter (not in the plan).
 4. **Verdict names** `EMIT` / `ROLLBACK` (as in 04).
 5. **Module names**: `premise`, `verifier`, `claims`, `citations`, `deontic`, `qualifiers`, `segmenter`, `index`,
    `align`, `corpus`, `numbers`. Vault 05's imports (`nli.SentenceNLIVerifier`, `engine.InFlightGenerator`) landed in M2/M3; vault 05

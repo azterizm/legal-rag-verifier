@@ -123,9 +123,16 @@ results/retry/sheet.md
 results/retry/key.json
 results/retry/leftover.md
 results/retry/*.log
-results/live68/
+results/live68/*
+!results/live68/grader-*.jsonl
+!results/live68/leftover.csv
 results/judge69/*.log
-results/live70/
-results/live70/leftover.md
+results/live70/*
+!results/live70/grader-*.jsonl
+!results/live70/leftover.csv
 results/sota71/
 results/live72/
+
+# Internal working files: agent instructions and the progress log stay local
+CLAUDE.md
+docs/ROADMAP.md

@@ -4,22 +4,22 @@
 
 [![PyPI](https://img.shields.io/pypi/v/legal-rag-verifier)](https://pypi.org/project/legal-rag-verifier/)
 [![CI](https://github.com/azterizm/legal-rag-verifier/actions/workflows/ci.yml/badge.svg)](https://github.com/azterizm/legal-rag-verifier/actions/workflows/ci.yml)
-[![Python 3.11–3.13](https://img.shields.io/badge/python-3.11%E2%80%933.13-blue)](https://github.com/azterizm/legal-rag-verifier/blob/main/pyproject.toml)
+[![Python 3.11–3.14](https://img.shields.io/badge/python-3.11%E2%80%933.14-blue)](https://github.com/azterizm/legal-rag-verifier/blob/main/pyproject.toml)
 [![Licence: AGPL-3.0-only](https://img.shields.io/badge/licence-AGPL--3.0--only-blue)](https://github.com/azterizm/legal-rag-verifier/blob/main/LICENSE)
 ![Runtime dependencies: none](https://img.shields.io/badge/runtime%20dependencies-none-brightgreen)
 
+**Status: proof of concept.** The mechanism holds on a production inference server. The loop
+improved answers with an LLM judge as the auditor. It did not with the DeBERTa head the package
+ships. The LLM judge is in `scripts/`, not in the package. The
+[verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
+what is required first.
+
 `legal-rag-verifier` checks each sentence of an answer against the statutory provisions it was
 given, as the sentence is written. A deterministic claim check covers figures, dates, citations,
-instrument titles, modal verbs and qualifiers; an NLI head (DeBERTa-v3) covers the prose. A
-rejected sentence is rolled back and regenerated on the inference server's prefix cache, so only
-that sentence is thrown away. The retry can insert the provision the sentence was checked against
-at the cut point, which makes a small model's retry pass the check far more often.
-
-**Status: proof of concept.** The mechanism holds on a production inference server. With the
-DeBERTa head as the auditor the loop did not improve answers. With an LLM judge in its place it
-did, on the tests run so far. The package ships the DeBERTa head; the LLM judge is in `scripts/`.
-The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
-what is required first.
+instrument titles, modal verbs and qualifiers. An entailment check covers the prose. A rejected
+sentence is rolled back and regenerated on the inference server's prefix cache, so only that
+sentence is thrown away. The retry can insert the provision the sentence was checked against at
+the cut point.
 
 Built by [Abdullah Memon](https://memonsystems.com) at [Memon Systems Ltd](https://memonsystems.com).
 Layer 4 of the Memon Systems hosted reference architecture, after
@@ -35,7 +35,7 @@ pip install "legal-rag-verifier[sglang]"  # + client for an SGLang server (token
 pip install "legal-rag-verifier[hf]"      # + in-process Hugging Face generation
 ```
 
-Python 3.11 or later. English and United Kingdom legislation in 0.1.0.
+Python 3.11 or later. English and United Kingdom legislation only.
 
 ## Check a sentence
 
@@ -167,8 +167,7 @@ uv sync
 uv run ruff check && uv run ruff format --check && uv run mypy && uv run pytest
 ```
 
-Progress and decisions: [`docs/ROADMAP.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/ROADMAP.md). Contributing:
-[`CONTRIBUTING.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/CONTRIBUTING.md). Security: [`SECURITY.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/SECURITY.md).
+Contributing: [`CONTRIBUTING.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/CONTRIBUTING.md). Security: [`SECURITY.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/SECURITY.md).
 
 ## Citation
 

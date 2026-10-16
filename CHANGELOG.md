@@ -6,6 +6,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Fixed
+- `legal_rag_verifier.__version__` reads the installed package version. It said `0.1.0.dev0` in 0.2.0.
+
+### Changed
+- Python 3.14 is tested in CI and listed in the classifiers.
+
 ### Evaluation
 - Stops 67 to 72, in `scripts/` and not in the package: retries after a real error and edits to the
   KV cache; the live loop on 240 questions with three generators, closed-book and with the source
