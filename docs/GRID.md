@@ -3480,3 +3480,34 @@ not shown to be large, but it is not shown to be small. The loop is the fastest 
 to 9.0 s.
 
 Spend, stop 71: Modal none. Opus 5.5 $1.87 ($40.94 of $45); Flash and Opus 4.6 not charged.
+
+## Stop 72: the loop with the 27B as generator against the frontier models (method fixed 2026-10-16, before any run)
+
+Your go: "run the 27B loop on stop 71's questions". Stop 71 left one question open: the 7B loop is not near
+either frontier model, and the 27B as generator was never run on these questions with the source in the prompt
+(it was wrong in none of 49 sentences in stop 57, on other questions).
+
+- Questions: stop 70's and stop 71's 240, the source in the prompt (stop 43's prompts, the engine's premise
+  rendering).
+- Generator and judge: the 27B AutoRound 4-bit in both roles on one L40S behind one SGLang server (stops 59 and
+  65), thinking off, greedy. The judge as stop 70: short reply, stop 47's sampling, seed 0, `STRICT_FIGURES`.
+  The server's cache is emptied before each answer.
+- Arms, as stop 70:
+  - `none`: one greedy answer, no loop.
+  - `turn`: the loop; a rollback writes the aligned windows as stop 30's user turn, kept to the end of the
+    answer. Engine as 0.1.0: 3 retries per sentence, 8 rollbacks per answer, then the fixed refusal.
+- The frontier arms and the 7B loop: stop 71's answers and grades. No new call.
+- Grades: as stop 71. A sentence word for word equal to one graded before for the same question keeps its grade
+  (stops 43 to 71). The rest on one blind sheet per question; Opus 5.5 grades each sentence once; what it marks
+  unsure goes to you. **Halt for you** before grading with the count.
+- Reading, fixed now: for each frontier arm, answers with at least one sentence graded wrong, the 27B `turn`
+  minus the frontier arm, paired by question, with a 95 % bootstrap interval (10,000 resamples over questions,
+  seed 20261015). **The 27B loop is near the frontier arm if the upper end is at most 4 points** (of 240
+  answers). Beside it, as stop 71: wrong sentences with Wilson intervals, refusals, empty answers, right
+  statements per answer, seconds per answer.
+- Secondary: 27B `turn` against 27B `none` and against the 7B loop, the same count, exact McNemar, no
+  correction; rollbacks per answer.
+- Limits: one greedy run; fresh questions read since stop 47; Opus 5.5 grades alone; the 27B loop and the 7B
+  loop were graded by different mixes of graders (stop 71's check applies).
+- Spend: Modal run `stop72`, one L40S, expected $1.50 to $2.50 from stop 68's 27B run, stage stop $4 ($9.23 left
+  of $55). Router: Opus 5.5 within its $45 cap ($4.06 left), expected $1 to $2.
