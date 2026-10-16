@@ -1,6 +1,6 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-08. The verdict and item 1 of the last section updated 2026-10-13.
+legal-rag-verifier 0.1.0, 2026-10-08. The verdict and item 1 of the last section updated 2026-10-16.
 
 ## Question
 
@@ -26,7 +26,8 @@ The judge was right on 93.8 % and 90.1 % of the sentences of two hand-graded tes
 the loop committed 48 of 49 sentences at the first try, none wrong, at 1.9 s per answer at the median. When the
 answer started from memory, 36 of 65 sentences were wrong without the loop and 3 of 50 with it, all three
 refusals. The gain is where the generator answers from memory. With the source in the prompt there is almost
-nothing to catch.
+nothing to catch. On 240 questions with the source in the prompt, the 27B held a wrong sentence in 4 answers,
+against 3 for Gemini 3.8 Flash and 8 for Claude Opus 4.6 (stop 72).
 
 This rests on 40 live questions, one model, one server and greedy decoding. The live answers were graded by two
 frontier models, with 3 sentences by hand. A trained 1B model and two hosted decision APIs were tested as the
@@ -230,6 +231,10 @@ states. Concurrency, failure recovery and cost per answer were not measured.
    a wrong sentence in 13 answers of 240; Claude Opus 4.6 in 8, Gemini 3.8 Flash in 3, and either one checked
    sentence by sentence by the other in 1 or 2. By the fixed margin of 4 points the loop is near none of them.
    Checking after writing emptied up to 14 answers. The loop answered fastest, 1.7 s against 3.1 to 9.0 s.
+   The 27B was then run as generator and judge on the same questions (stop 72). It held a wrong sentence in 4
+   answers of 240, near every frontier arm by the same margin, at 2.0 s per answer. It states less per answer
+   (1.35 right sentences against 1.79 and 2.12). With the source in the prompt the loop neither added nor
+   removed its errors.
 2. Treat insertion of the source as unproven: by hand and by model labels, inserted retries were not better than
    a plain retry, and on statutes the model pasted the source. If it is kept, restate the question in the
    injected turn, as in the second version. Do not add a per-sentence relevance
