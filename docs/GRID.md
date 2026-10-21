@@ -3690,3 +3690,90 @@ while reading the source scores as grounded. Within the kind of answer it scores
 0.660 on the second, against 0.67 for stop 48's dependence read from the generator.
 
 Spend, stop 73: Modal $0.10 ($47.12 of $55).
+
+
+## Stop 75: French figure formats in the claim check (method fixed 2026-10-21, before the code)
+
+Your go on R8 (2026-10-21): the claim check reads French number, currency, date and duration formats, so that a
+French product listing can ground an English answer (the product test in a separate repository needs it). Prose
+checks stay English only: modal verbs, qualifiers and number words are not widened. Only `numbers.py` and
+`claims.py` change; no signature, `Claim` field, verdict, reason or trace field changes. Plan R8 is otherwise
+unchanged.
+
+What fails on 0.2.0 (spot check, no battery row): "279,99 €" reads as the two numbers 279 and 99; a trailing "€" or
+"EUR" is not a currency; "30 heures" is not a duration; French month names are not dates; "1 299,99 €" splits at
+the space. The code of `claims.py` and `numbers.py` at the start of this stop is that of `v0.2.0`.
+
+Rules:
+
+1. **Decimal comma.** A comma followed by exactly 1 or 2 digits and no further digit is a decimal point: "279,99"
+   → 279.99, "1,2 kg" → 1.2. Not when those digits are followed by a comma and a digit (a list, "2,4,6"), a prime
+   (`'` or `’`) or a hyphen and a letter (a chemical locant, "1,3-butadiene"): there the comma separates, as
+   today. A range ("279,99-329,99") still reads as decimals. Reason for the guard, from a read-only scan of the
+   local corpus (`data/uk`) during planning: 7,049 matches of a comma with 1 or 2 digits after it, many in
+   chemical names ("2,4,6-trinitrotoluene", "3,3'-dichlorobenzidine", "1,2,3,4-tetrahydro"), some in lists
+   ("paragraphs 18,19 and 20", which the rule still reads as 18.19: a limit), some decimals in EU-derived text
+   ("< 0,25 % of carbon", now read right).
+2. **A comma with 3 digits stays thousands** ("1,234" → 1234), as today. A French "1,234 kg" is read wrong; this
+   is a stated limit (`docs/API.md` §6). Carrying both readings would change the `Claim` dataclass.
+3. **Space thousands.** A no-break space (U+00A0) or narrow no-break space (U+202F) between digit groups always
+   groups. A plain space groups only when a decimal comma or a currency marker (symbol, code or word) follows:
+   "1 299,99 €", "1 299 €", "1 299 euros". The first group has 1 to 3 digits and no digit before it, so "in 2024
+   300 people" stays 2024 and 300. The corpus scan found no U+00A0 or U+202F in `data/uk`.
+4. **Trailing currency.** €, £, $, EUR, USD or GBP after the number (codes in capitals), with or without a space
+   of any of the three kinds: "279,99 €", "279.99 €", "279,99 EUR", "279.99 USD". A symbol written against the
+   next digit ("€20", "£100") belongs to that number; otherwise a number before the symbol takes it, and on
+   overlap a trailing match ranks ahead of a leading one. So "10 € 20 €" is EUR 10 and EUR 20, "section 5 £100" is
+   GBP 100, "€10 €20" is EUR 10 and EUR 20.
+5. **French duration units**, mapped to the existing units: heure(s) → hour, jour(s) → day (with "ouvrés" or
+   "ouvrables" after it, read as working days), semaine(s) → week, mois → month, an(s) and année(s) → year. "30
+   heures" = "30 hours" = `30:hour`. Working days already read as days ("3 working days" = `3:day`, a stated
+   limit), so "3 jours ouvrés" = `3:day`. Known risk, left to the gate by your choice: "an" after any number, so
+   an English "In 2024 an employee" would read as `2024:year`.
+6. **French dates:** janvier to décembre, with the unaccented spellings fevrier, aout and decembre; the ordinal
+   "1er"; "5 novembre 2026", "1er mars 2026", "novembre 2026". French abbreviations ("janv.", "févr.") are not
+   read.
+7. **Out of scope:** French number words, modal verbs and qualifiers; French answers; currency codes before the
+   number ("EUR 279,99"); a magnitude before a trailing currency ("1,2 M€"); accents in decomposed (NFD) form.
+
+Tests, written before the code and run once on the 0.2.0 code to see them fail:
+
+- Golden pairs, a French-format listing as the source and an English sentence as the answer, each expected EMIT
+  with GROUNDED: the four money forms "€279.99", "279,99 €", "279.99 euros", "279,99 EUR", each as listing against
+  each as answer (16 pairs); "1 299,99 €" with each of the three spaces against "€1,299.99", both ways (6); "30
+  heures" against "30 hours", "5 novembre 2026" against "5 November 2026", "1er mars 2026" against "1 March
+  2026", "Garantie 2 ans" against "a 2-year warranty", "3 à 5 jours ouvrés" against "3 to 5 working days", "1,2
+  kg" against "1.2 kg".
+- Negative pairs, expected ROLLBACK with UNGROUNDED_FIGURE: "279,99 €" against "€289.99", "30 heures" against "40
+  hours", "5 novembre 2026" against "6 November 2026".
+- Readings: each new form's value; "1,234" and "1,234 kg" stay 1234; "in 2024 300 people" stays 2024 and 300;
+  "2,4,6-trinitrotoluene" and "1,3-butadiene" keep today's numbers; "section 5 £100", "10 € 20 €" and "€10 €20"
+  as in rule 4.
+- The hypothesis tests: the claim check never raises on text drawn from French-format pieces; a French-format
+  amount gives the same value as the English form, and reading that value again gives it back.
+- The pairs live in `scripts/claims75.py` (`PAIRS`), shared by the tests and the spot check.
+
+**Regression gate.** `extract_claims` runs on every text below on the 0.2.0 code (snapshot `before`, taken after
+this method is committed and before any code changes) and on the new code (`after`). Each text's claims are
+compared as (kind, value, start, end).
+
+- Tier 1: the detector dev (271 rows) and held-out (346) batteries: each row's sentence, query and excerpt, and
+  every passage text, heading, list item and enrichment element of its premise (`premises.build` with `data/` and
+  the enrichment layer `enrichment/gemini-3.8-flash-high`); the first fresh test (80 questions) and the second
+  (40): queries, premises (`fresh_battery.premise`) and every sentence of the 160 and 80 answers
+  (`results/fresh/answers.jsonl`, `results/fresh2/answers.jsonl`, local); the software battery (40): queries,
+  passages and every sentence of the three committed answer sets (`results/software/4B.jsonl`, `4D.jsonl`,
+  `4B-inject-v2.jsonl`).
+- Tier 2, by your choice: every sentence of stop 71's 960 answers from Gemini 3.8 Flash and Claude Opus 4.6
+  (`results/sota71/flash.jsonl`, `opus46.jsonl`, `flash_opus46.jsonl`, `opus46_flash.jsonl`, local), the
+  generators of the product test.
+- Sentences are those of `segmenter.split_sentences`. The snapshots (`results/raw/claims75/`, git-ignored) hold a
+  hash of each text, never the text; `results/claims75.json` (committed) holds the counts and each changed text by
+  set, row and field, with its claims before and after.
+- **Pass: no text changes its claims.** Each change is listed and either fixed or justified here before the code
+  is committed. If changes take more than an hour, the scope narrows to the trailing currency and the decimal
+  comma only, and the reason is logged.
+
+Then the full checks (`ruff`, `mypy`, `pytest`). Records: `docs/measurements.md` (the gate's counts, the pairs on
+0.2.0 and on the new code), the changelog's Unreleased section, `docs/API.md` §6 limits. CPU only, no spend. No
+release in this stop: 0.3.0 follows the product test, on your go.
