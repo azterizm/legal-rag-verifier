@@ -102,11 +102,12 @@ def test_the_sample_is_seeded_and_capped_per_rule() -> None:
     assert first[0]["excerpt"] == "[1,5]"
 
 
-def test_the_second_run_keeps_the_first_runs_files_and_draws_a_fresh_sample() -> None:
-    first, second = claims75.RUNS["75"], claims75.RUNS["76"]
-    assert (first.seed, second.seed) == (75, 76)
+def test_each_run_keeps_its_own_files_and_draws_a_fresh_sample() -> None:
+    runs = list(claims75.RUNS.values())
+    first = claims75.RUNS["75"]
+    assert [r.seed for r in runs] == [75, 76, 77]
     for field in ("snapshot", "gate", "raw", "report", "grades"):
-        assert getattr(first, field) != getattr(second, field)
+        assert len({getattr(r, field) for r in runs}) == len(runs)
     assert first.report == claims75.CORPUS_REPORT
 
 

@@ -19,6 +19,9 @@ The narrower rules (GRID § Stop 75: the narrower rules), checked the same way:
   uv run python scripts/claims75.py diff --run 76     # → results/claims75_narrow.json
   uv run python scripts/claims75.py corpus --run 76   # → results/claims75_corpus76.json
 
+And "an" before listed punctuation only: ``snapshot narrow2``, ``diff --run 77``,
+``corpus --run 77``.
+
 Snapshots (``results/raw/claims75/``, git-ignored) hold a hash of each text, never the text: the
 premises quote statute text and the fresh and stop 71 answers stay local. The corpus diff there
 holds excerpts and stays local too; the committed sample quotes short excerpts with coordinates.
@@ -351,6 +354,14 @@ RUNS = {
         ROOT / "results/claims75_grades76.csv",
         76,
     ),
+    "77": Run(
+        "narrow2",
+        ROOT / "results/claims75_narrow2.json",
+        RAW / "corpus77.jsonl",
+        ROOT / "results/claims75_corpus77.json",
+        ROOT / "results/claims75_grades77.csv",
+        77,
+    ),
 }
 
 Reading = list[tuple[str, str, int, int]]
@@ -581,14 +592,14 @@ def corpus_report(run: Run, counts: Mapping[str, Any] | None = None) -> dict[str
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["snapshot", "diff", "corpus", "corpus-report"])
-    parser.add_argument("name", nargs="?", choices=["before", "after", "narrow"])
+    parser.add_argument("name", nargs="?", choices=["before", "after", "narrow", "narrow2"])
     parser.add_argument("--run", choices=sorted(RUNS), default="75")
     parser.add_argument("--workers", type=int, default=10)
     args = parser.parse_args()
     run = RUNS[args.run]
     if args.command == "snapshot":
         if args.name is None:
-            parser.error("snapshot needs a name: before, after or narrow")
+            parser.error("snapshot needs a name: before, after, narrow or narrow2")
         print(snapshot(args.name))
     elif args.command == "diff":
         out = diff(run)

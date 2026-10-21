@@ -3973,3 +3973,19 @@ run once more. The trailing currency and the decimal comma need no further chang
 stated limits.
 
 Spend: none (CPU).
+
+
+### Stop 75: "an" before listed punctuation only (method fixed 2026-10-21, before the code)
+
+Your choice (2026-10-21): option (b) above. The singular "an" is a year only before the end of the text, a line
+break, ".", ",", ";", ":", ")" or "de" / "d’" (spaces allowed before them), and not after a hyphen. So "Garantie
+1 an", "1 an.", "1 an de garantie" read; "2 An “SDR policy statement” is" and "ES-ECO-029-AN," do not. Nothing
+else changes.
+
+This rule was fitted to the second run's 69 "an" claims, so it is checked once more, the same way: tests first
+(the quoted definition and the code added to the English "an" cases), the gate (`snapshot narrow2` against
+`before`, `results/claims75_narrow2.json`), and the corpus run (`corpus --run 77`, a fresh sample with seed 77,
+graded by me; `results/claims75_corpus77.json`, `results/claims75_grades77.csv`). Reading, fixed now: the counts
+and grades are reported as they come; any "an" claim left is listed in full.
+
+CPU only, no spend.
