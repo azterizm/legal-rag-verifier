@@ -3933,3 +3933,43 @@ Reading, fixed now: a rule whose sample is mostly wrong stays proposed for remov
 narrowing is fitted to this sample in this run.
 
 CPU only, no spend.
+
+
+### Stop 75: the narrower rules, results (2026-10-21)
+
+**The gate:** no change in the 31,850 texts of tiers 1 and 2 (`results/claims75_narrow.json`); the 31 pairs as
+expected. The new tests failed on the code before the change (16) and pass after; full suite 393 passed.
+
+**The corpus run again** (0.2.0 against the narrowed code, same texts): 8,148,103 claims on 0.2.0 and 8,146,908
+now. **643 texts changed (0.01 %)**, against 4,573 in the first run. Report and fresh sample (seed 76):
+`results/claims75_corpus76.json`; my grades `results/claims75_grades76.csv`.
+
+| Rule | Changed claims, first run | Now | Texts now | Sample graded by me | Right | Wrong | Unclear |
+|---|---|---|---|---|---|---|---|
+| French unit | 6,744 | 79 | 71 | 40 | 8 | 32 | 0 |
+| Trailing currency | 1,963 | 11 | 11 | 11 | 11 | 0 | 0 |
+| Decimal comma | 1,808 | 1,187 | 551 | 40 | 28 | 11 | 1 |
+| Other | 390 | 0 | 0 | 0 | | | |
+| French date | 9 | 9 | 7 | 9 | 9 | 0 | 0 |
+| Space groups | 2 | 2 | 2 | 2 | 2 | 0 | 0 |
+
+- **Trailing currency: all right.** The 11 left are spaced "EUR" amounts quoted from EU text ("for “10 000 000 EUR”
+  substitute “£8,700,000”"). The table "£", its knock-ons and the glued codes are gone.
+- **Decimal comma: mostly right now** (28 of 40, from 17). 1,808 claims fell to 1,187; 631 were
+  projected from the first run's diff. Wrong still: lists without a space ("Articles 4, 6, 7,11, 12"), lists of codes ("05-006,05-007",
+  4), glued table cells ("Ra-2260,04", 3), a locant before a space and a bracket ("2,2 [bis"), a CAS number glued
+  to a locant primed with U+2032 ("01,1′"), and a flattened power of ten ("100,1 LWA"). These are the stated
+  limit.
+- **French unit: "an" is still wrong.** Of the 79 claims, the 10 "six mois" (French carriage conventions) are right;
+  all 69 "an" are wrong: 66 open a definition, where a quotation mark follows ("2 An “SDR policy statement” is"),
+  which rule 1 counts as punctuation; 3 are codes ("ES-ECO-029-AN,").
+- French dates and space groups: unchanged, all right.
+
+Reading, as fixed: the French-unit sample is mostly wrong, and every wrong one is the singular "an". Proposed for
+your go, not fitted further in this run: (a) drop the singular "an" ("Garantie 1 an" is then not read), or (b)
+read "an" only before the end, a line break, ".", ",", ";", ":", ")" or "de" / "d’", so not before a quotation
+mark or after a hyphen; (b) removes the 69 here but is fitted to this run, so it needs the gate and the corpus
+run once more. The trailing currency and the decimal comma need no further change; their remaining errors are
+stated limits.
+
+Spend: none (CPU).

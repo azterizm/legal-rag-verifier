@@ -1307,3 +1307,20 @@ none.
 4,573 texts changed (0.07 %); the gate's texts changed none. The 35 right trailing-currency claims keep their value
 only by taking the next table cell's "£", which then reads as a bare number (the "other" row). Narrower rules are
 proposed in GRID, for your go. Raw: `results/claims75_corpus.json`, `results/claims75_grades.csv`.
+
+With the narrower rules (your go, 2026-10-21; "an" only when no word follows, no trailing "£" or "$", a wider
+decimal-comma guard), the same run again, with a fresh sample (seed 76). Gate: 0 of 31,850 texts changed, 31 of 31
+pairs as expected.
+
+| Rule | Changed claims, first run | Now | Texts now | Graded (by Claude) | Right | Wrong | Unclear |
+|---|---|---|---|---|---|---|---|
+| French unit ("an": 69, "six mois": 10) | 6,744 | 79 | 71 | 40 | 8 | 32 | 0 |
+| Trailing currency (spaced "EUR") | 1,963 | 11 | 11 | 11 | 11 | 0 | 0 |
+| Decimal comma | 1,808 | 1,187 | 551 | 40 | 28 | 11 | 1 |
+| Other | 390 | 0 | 0 | 0 | | | |
+| French date | 9 | 9 | 7 | 9 | 9 | 0 | 0 |
+| Space groups | 2 | 2 | 2 | 2 | 2 | 0 | 0 |
+
+643 texts changed (0.01 %), from 4,573. All 69 "an" left are wrong (66 open a quoted definition, "2 An “SDR policy
+statement” is"; 3 are codes); dropping or narrowing "an" again is proposed in GRID. Raw:
+`results/claims75_corpus76.json`, `results/claims75_grades76.csv`.

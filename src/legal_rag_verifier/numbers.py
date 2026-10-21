@@ -55,16 +55,20 @@ _WORD = "(?:" + "|".join(sorted([*_UNITS, *_SCALES], key=len, reverse=True)) + "
 NUMBER_WORDS_RE = rf"\b{_WORD}(?:(?:[\s-]+(?:and[\s-]+)?){_WORD})*\b"
 
 # A decimal comma: 1 or 2 digits and no digit after them ("279,99", "1,2 kg"). Not a list of
-# numbers ("2,4,6"), a primed or hyphenated chemical locant ("3,3'-", "1,3-butadiene").
-_DECIMAL_COMMA = r",\d{1,2}(?!\d|,\d|['’]|[-‐]\s?[^\W\d_])"
+# numbers ("2,4,6"), nor a chemical locant: primed, bracketed or followed by a dash (any kind)
+# and a letter ("3,3'-", "[1,2,4]triazolo", "2,2(bis", "1,3,5,-triazine", "1,3-butadiene").
+_DECIMAL_COMMA = r",\d{1,2}(?!\d|,\d|,-|['’]|[\]()]|[-‐–—]\s?[^\W\d_])"
+# Nor a number right after "[" or a comma ("[1,4]", the "2,4" of "1,2,4").
+_DECIMAL_START = r"(?<![\[,\d])"
 #: A numeral with optional thousands separators and decimals ("68,400", "12.5", "68400"); in
 #: French formats a decimal comma ("279,99") and digit groups split by a no-break or narrow
 #: no-break space ("1 299"), or by a plain space before a decimal comma ("1 299,99").
 NUMERAL_RE = (
     r"(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?"
     rf"|(?<!\d)\d{{1,3}}(?:[\u00a0\u202f]\d{{3}})+(?!\d)(?:{_DECIMAL_COMMA}|\.\d+)?"
-    rf"|(?<!\d)\d{{1,3}}(?: \d{{3}})+{_DECIMAL_COMMA}"
-    rf"|\d+(?:\.\d+|{_DECIMAL_COMMA})?)"
+    rf"|{_DECIMAL_START}\d{{1,3}}(?: \d{{3}})+{_DECIMAL_COMMA}"
+    rf"|{_DECIMAL_START}\d+{_DECIMAL_COMMA}"
+    r"|\d+(?:\.\d+)?)"
 )
 
 _GROUP_SPACES = str.maketrans("", "", " \u00a0\u202f")

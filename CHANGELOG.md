@@ -28,8 +28,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   against the LLM judge on the second fresh test. No package change.
 - Stop 75, in `scripts/claims75.py`: the French formats change no claim in the 31,850 English
   texts of the batteries and answers, but change 4,573 of the 6.4 million texts of the UK corpus,
-  mostly wrongly ("an" after a number, "£" in flattened tables, chemical locants). Narrower
-  rules are proposed before any release.
+  mostly wrongly ("an" after a number, "£" in flattened tables, chemical locants). With
+  narrower rules ("an" only when no word follows, no trailing "£" or "$", a wider guard on the
+  decimal comma) 643 change; the rest of "an" is still wrong and goes to a further decision.
 
 ## [0.2.0] - 2026-10-13
 

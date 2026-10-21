@@ -79,10 +79,12 @@ _SPACED = r"(?<!\d)\d{1,3}(?: \d{3})+(?!\d)"
 _MONEY_SYMBOL_RE = re.compile(
     rf"(?P<sym>[£€$])\s?(?P<num>{NUMERAL_RE})(?:\s?(?P<mag>{_MAG})\b)?", re.IGNORECASE
 )
-# The currency after the number ("279,99 €", "279.99 USD"); a symbol written against the next
-# digit ("10 €20") belongs to that number instead.
+# The currency after the number: the euro sign, or a code after a space ("279,99 €", "279.99 USD").
+# Not "£" or "$", which lead their number in English and run into the cell before in a flattened
+# table ("£ 8,100£ 9,315"); a symbol written against the next digit ("10 €20") belongs to it.
 _MONEY_AFTER_RE = re.compile(
-    rf"(?<![\w.,])(?P<num>{_SPACED}|{NUMERAL_RE})\s?(?P<cur>[£€$]|{'|'.join(_CURRENCY_CODES)})(?!\w)"
+    rf"(?<![\w.,])(?P<num>{_SPACED}|{NUMERAL_RE})\s?"
+    rf"(?P<cur>€|(?<=\s)(?:{'|'.join(_CURRENCY_CODES)}))(?!\w)"
 )
 _MONEY_WORD_RE = re.compile(
     rf"\b(?P<num>{_SPACED}|{NUMERAL_RE})(?:\s?(?P<mag>{_MAG}))?\s"
@@ -122,6 +124,8 @@ _DATE_RES = [
     re.compile(rf"\b{_MONTH}\s+(?P<year>\d{{4}})\b", re.I),
 ]
 # French units map to the English ones; working days ("jours ouvrés") read as days, as in English.
+# The singular "an" is a year only when no word follows it on its line, or "de" does ("1 an",
+# "1 an de garantie"): after a number, English "an" starts a phrase ("3 An application").
 _UNITS_FR = {
     "heure": "hour",
     "heures": "hour",
@@ -137,7 +141,8 @@ _UNITS_FR = {
 }
 _UNIT = (
     r"(?:(?P<unit>day|week|month|year|hour)s?(?:['’])?"
-    r"|(?P<unit_fr>heures?|jours?(?:\s+(?:ouvrés|ouvrables))?|semaines?|mois|années?|ans?))"
+    r"|(?P<unit_fr>heures?|jours?(?:\s+(?:ouvrés|ouvrables))?|semaines?|mois|années?|ans"
+    r"|an(?=[^\S\n]*(?:$|\n|[^\w\s])|\s+(?:de\b|d['’]))))"
 )
 _DURATION_RE = re.compile(
     rf"\b(?P<num>{NUMERAL_RE}|{NUMBER_WORDS_RE})(?:\s|-)(?:(?:calendar|working|clear|complete)\s)?{_UNIT}(?!\w)",

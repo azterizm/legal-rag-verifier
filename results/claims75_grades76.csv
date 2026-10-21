@@ -1,0 +1,103 @@
+id,grade,note
+cur-01,right,"EUR amount quoted from EU text, a space before the code"
+cur-02,right,"EUR amount quoted from EU text, a space before the code"
+cur-03,right,"EUR amount quoted from EU text, a space before the code"
+cur-04,right,"EUR amount quoted from EU text, a space before the code"
+cur-05,right,"EUR amount quoted from EU text, a space before the code"
+cur-06,right,"EUR amount quoted from EU text, a space before the code"
+cur-07,right,"EUR amount quoted from EU text, a space before the code"
+cur-08,right,"EUR amount quoted from EU text, a space before the code"
+cur-09,right,"EUR amount quoted from EU text, a space before the code"
+cur-10,right,"EUR amount quoted from EU text, a space before the code"
+cur-11,right,"EUR amount quoted from EU text, a space before the code"
+unit-01,right,French text of a carriage convention: six mois
+unit-02,right,French text of a carriage convention: six mois
+unit-03,right,French text of a carriage convention: six mois
+unit-04,right,French text of a carriage convention: six mois
+unit-05,right,French text of a carriage convention: six mois
+unit-06,right,French text of a carriage convention: six mois
+unit-07,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-08,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-09,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-10,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-11,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-12,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-13,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-14,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-15,right,French text of a carriage convention: six mois
+unit-16,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-17,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-18,right,French text of a carriage convention: six mois
+unit-19,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-20,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-21,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-22,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-23,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-24,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-25,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-26,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-27,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-28,wrong,"a code number, 029-AN"
+unit-29,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-30,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-31,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-32,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-33,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-34,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-35,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-36,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-37,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-38,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-39,wrong,"English ""An"" opening a definition, a quotation mark after it"
+unit-40,wrong,"English ""An"" opening a definition, a quotation mark after it"
+date-01,right,a French or Welsh date quoted in the text
+date-02,right,a French or Welsh date quoted in the text
+date-03,right,a French or Welsh date quoted in the text
+date-04,right,"a street name, boulevard du 11 Novembre 1918; the date is as written"
+date-05,right,a French or Welsh date quoted in the text
+date-06,right,a French or Welsh date quoted in the text
+date-07,right,a French or Welsh date quoted in the text
+date-08,right,a French or Welsh date quoted in the text
+date-09,right,a French or Welsh date quoted in the text
+space-01,right,"a temperature in kelvin, 1 273,15 K"
+space-02,right,"a temperature in kelvin, 1 273,15 K"
+dec-01,right,a decimal comma in EU-derived text
+dec-02,right,a decimal comma in EU-derived text
+dec-03,right,a decimal comma in EU-derived text
+dec-04,right,a decimal comma in EU-derived text
+dec-05,right,a decimal comma in EU-derived text
+dec-06,right,a decimal comma in EU-derived text
+dec-07,right,a decimal comma in EU-derived text
+dec-08,right,"£175,00, the old reading split off 00"
+dec-09,right,a decimal comma in EU-derived text
+dec-10,wrong,"a chemical locant, 2,2 before a space and a bracket"
+dec-11,unclear,"a flattened fee table mixing £24,350 and £3,90; the cell cannot be told"
+dec-12,right,"0,1 g in a flattened table; the old reading also took the zeros before it"
+dec-13,right,"£33,30 in a row of £33.30"
+dec-14,right,a decimal comma in EU-derived text
+dec-15,right,a decimal comma in EU-derived text
+dec-16,right,a decimal comma in EU-derived text
+dec-17,right,a decimal comma in EU-derived text
+dec-18,wrong,"a flattened power of ten, 10 to the 0,1 LWA"
+dec-19,right,a decimal comma in EU-derived text
+dec-20,right,"section 10,1 in a list of 10.2, 10.3: read as the dotted ones are"
+dec-21,right,"an address, km 9,5"
+dec-22,wrong,"table cells glued: Ra-226 and 0,04"
+dec-23,right,a decimal comma in EU-derived text
+dec-24,right,a decimal comma in EU-derived text
+dec-25,right,a decimal comma in EU-derived text
+dec-26,wrong,"a list of article numbers without a space, 7,11"
+dec-27,wrong,"a list of codes, 11-014,12-001"
+dec-28,wrong,"a list of codes, 16-004,16-005"
+dec-29,right,a decimal comma in EU-derived text
+dec-30,wrong,"a list of codes, 05-006,05-007"
+dec-31,wrong,"a list of codes, 39-006,39-010"
+dec-32,right,a decimal comma in EU-derived text
+dec-33,right,a decimal comma in EU-derived text
+dec-34,wrong,"a CAS number glued to a locant with the prime U+2032, 1,1′"
+dec-35,right,a decimal comma in EU-derived text
+dec-36,right,a decimal comma in EU-derived text
+dec-37,right,a decimal comma in EU-derived text
+dec-38,right,a decimal comma in EU-derived text
+dec-39,wrong,"table cells glued: Ra-226 and 0,5"
+dec-40,wrong,"table cells glued: Co-60 and 0,5"

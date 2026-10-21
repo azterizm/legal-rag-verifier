@@ -168,7 +168,11 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
   "1,234 kg" reads as 1234; a comma before 1 or 2 digits is a decimal point, so "pages 18,19 and 20" reads
   as 18.19 and 20 (a citation, "paragraphs 18,19", is read first). A plain space groups digits only before
   a decimal comma or a currency ("5 000 mAh" is 5 and 0; a no-break space groups always). Currency codes
-  are read after the number only: "EUR 279,99" is the bare number 279.99. "an" after a number is a year
-  ("2 ans", and an English "In 2024 an employee"). A "£" after a number is read as its currency, which
-  in a flattened table ("£ 8,100£ 9,315") takes the next cell's "£". French number words, modal verbs
-  and qualifiers are not read. Measured on the corpus in stop 75; narrower rules are proposed.
+  are read after the number only, and only after a space: "EUR 279,99" is the bare number 279.99,
+  "279,99EUR" is not money. Only "€" is read after a number; a trailing "£" or "$" is not ("279,99 £" is
+  the bare number 279.99). A comma is not a decimal point in a chemical locant (primed, bracketed, or
+  before a dash and a letter), but a list without a space ("Units 1,2 and 3") or glued table cells
+  ("Ra-2260,04") still read as decimals. "an" after a number is a year only when no word follows it
+  ("Garantie 1 an", "1 an de garantie"; not "1 an environ"), but a quotation mark counts as punctuation, so
+  "2 An “term” is" reads as two years. French number words, modal verbs and qualifiers are not read.
+  Measured on the corpus in stop 75.

@@ -220,8 +220,6 @@ def test_a_label_number_is_not_a_claim() -> None:
         ("279,99 €", "EUR:279.99"),
         ("279,99 EUR", "EUR:279.99"),
         ("279.99 USD", "USD:279.99"),
-        ("279,99 £", "GBP:279.99"),
-        ("279,99 $", "USD:279.99"),
         ("1 299,99 €", "EUR:1299.99"),
         ("1 299,99 €", "EUR:1299.99"),
         ("1 299,99 €", "EUR:1299.99"),
@@ -231,6 +229,20 @@ def test_a_label_number_is_not_a_claim() -> None:
 )
 def test_french_money_forms(text: str, expected: str) -> None:
     assert values(f"Prix : {text}.", ClaimKind.MONEY) == [expected]
+
+
+def test_only_the_euro_and_spaced_codes_are_read_after_a_number() -> None:
+    assert values("Prix : 279,99 £.", ClaimKind.MONEY) == []
+    assert values("Prix : 279,99 $.", ClaimKind.MONEY) == []
+    assert values("Prix : 279,99 £.", ClaimKind.NUMBER) == ["279.99"]
+    assert values("Regulation (EU) No 3/2008EUR", ClaimKind.MONEY) == []
+    assert values("Prix : 279,99EUR.", ClaimKind.MONEY) == []
+    assert values("for “3 EUR” substitute “£3”", ClaimKind.MONEY) == ["EUR:3", "GBP:3"]
+
+
+def test_a_flattened_fee_table_keeps_each_pound_with_its_own_cell() -> None:
+    assert values("Band A£ 8,100£ 9,315", ClaimKind.MONEY) == ["GBP:8100", "GBP:9315"]
+    assert values("Band A£ 8,100£ 9,315", ClaimKind.NUMBER) == []
 
 
 def test_decimal_comma_and_no_break_groups() -> None:
@@ -253,12 +265,32 @@ def test_decimal_comma_and_no_break_groups() -> None:
         ("2 semaines", "2:week"),
         ("6 mois", "6:month"),
         ("2 ans", "2:year"),
-        ("1 an", "1:year"),
         ("3 années", "3:year"),
     ],
 )
 def test_french_durations(text: str, expected: str) -> None:
     assert values(f"Autonomie : {text} environ", ClaimKind.DURATION) == [expected]
+
+
+@pytest.mark.parametrize(
+    "text", ["Garantie 1 an", "Garantie : 1 an.", "1 an de garantie", "1 an d’essai", "1 an\nLivré"]
+)
+def test_an_is_a_year_when_no_word_follows(text: str) -> None:
+    assert values(text, ClaimKind.DURATION) == ["1:year"]
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "3 An application under paragraph (1)",
+        "In 2024 an employee",
+        "categories 3 to 11 an amount",
+        "Act 1883 an assignment",
+        "postcode 7600 AN Almelo",
+    ],
+)
+def test_english_an_after_a_number_is_not_a_year(text: str) -> None:
+    assert values(text, ClaimKind.DURATION) == []
 
 
 def test_french_duration_range() -> None:
@@ -292,6 +324,33 @@ def test_english_readings_kept_beside_french_formats() -> None:
     assert values("2,4,6-trinitrotoluene", ClaimKind.NUMBER) == ["2", "4", "6"]
     assert values("1,3-butadiene", ClaimKind.NUMBER) == ["1", "3"]
     assert values("3,3'-dichlorobenzidine", ClaimKind.NUMBER) == ["3", "3"]
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepine", ["1", "2", "4", "4", "3", "1", "4"]),
+        ("Gamma–butyrolactone and 1,4–butanediol", ["1", "4"]),
+        ("tetraazabicyclo-[3,3,0]-octanone", ["3", "3", "0"]),
+        ("Titanium IV, 2,2(bis 2-propenolato", ["2", "2", "2"]),
+        ("2,4-Diamino-6-phenyl-1,3,5,-triazine", ["2", "4", "6", "1", "3", "5"]),
+        ("[1,4]dioxino", ["1", "4"]),
+        ("chromen-[3,2]—g", ["3", "2"]),
+    ],
+)
+def test_the_wider_guard_keeps_locants_apart(text: str, expected: list[str]) -> None:
+    """As on 0.2.0."""
+    assert values(text, ClaimKind.NUMBER) == expected
+
+
+def test_decimals_beside_the_wider_guard() -> None:
+    assert values("de 279,99–329,99 €", ClaimKind.NUMBER) == ["279.99"]
+    assert values("de 279,99–329,99 €", ClaimKind.MONEY) == ["EUR:329.99"]
+    assert values("for “0,9” substitute “0.9”", ClaimKind.NUMBER) == ["0.9", "0.9"]
+    assert values("in the range 1,2 μm-2,0 μm", ClaimKind.NUMBER) == ["1.2", "2"]
+    assert values("Ra-226 0,5 Bq/1", ClaimKind.NUMBER) == ["226", "0.5"]
+    # A list without a space is still read as a decimal: a stated limit.
+    assert values("Units 1,2 and 3", ClaimKind.NUMBER) == ["1.2", "3"]
 
 
 def test_a_currency_symbol_belongs_to_one_number() -> None:
