@@ -173,6 +173,6 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
   the bare number 279.99). A comma is not a decimal point in a chemical locant (primed, bracketed, or
   before a dash and a letter), but a list without a space ("Units 1,2 and 3") or glued table cells
   ("Ra-2260,04") still read as decimals. "an" after a number is a year only when no word follows it
-  ("Garantie 1 an", "1 an de garantie"; not "1 an environ"), but a quotation mark counts as punctuation, so
-  "2 An “term” is" reads as two years. French number words, modal verbs and qualifiers are not read.
-  Measured on the corpus in stop 75.
+  ("Garantie 1 an", "1 an de garantie"; not "1 an environ" or "2 An “term” is"): before the end of a
+  line, ". , ; : )" or "de" / "d’", and not after a hyphen. French number words, modal verbs and
+  qualifiers are not read. Measured on the corpus in stop 75.

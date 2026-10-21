@@ -1,0 +1,73 @@
+id,grade,note
+cur-01,right,"EUR amount quoted from EU text, a space before the code"
+cur-02,right,"EUR amount quoted from EU text, a space before the code"
+cur-03,right,"EUR amount quoted from EU text, a space before the code"
+cur-04,right,"EUR amount quoted from EU text, a space before the code"
+cur-05,right,"EUR amount quoted from EU text, a space before the code"
+cur-06,right,"EUR amount quoted from EU text, a space before the code"
+cur-07,right,"EUR amount quoted from EU text, a space before the code"
+cur-08,right,"EUR amount quoted from EU text, a space before the code"
+cur-09,right,"EUR amount quoted from EU text, a space before the code"
+cur-10,right,"EUR amount quoted from EU text, a space before the code"
+cur-11,right,"EUR amount quoted from EU text, a space before the code"
+unit-01,right,French text of a carriage convention: six mois
+unit-02,right,French text of a carriage convention: six mois
+unit-03,right,French text of a carriage convention: six mois
+unit-04,right,French text of a carriage convention: six mois
+unit-05,right,French text of a carriage convention: six mois
+unit-06,right,French text of a carriage convention: six mois
+unit-07,right,French text of a carriage convention: six mois
+unit-08,right,French text of a carriage convention: six mois
+unit-09,right,French text of a carriage convention: six mois
+unit-10,right,French text of a carriage convention: six mois
+date-01,right,a French or Welsh date quoted in the text
+date-02,right,a French or Welsh date quoted in the text
+date-03,right,a French or Welsh date quoted in the text
+date-04,right,"a street name, boulevard du 11 Novembre 1918; the date is as written"
+date-05,right,a French or Welsh date quoted in the text
+date-06,right,a French or Welsh date quoted in the text
+date-07,right,a French or Welsh date quoted in the text
+date-08,right,a French or Welsh date quoted in the text
+date-09,right,a French or Welsh date quoted in the text
+space-01,right,a temperature in kelvin
+space-02,right,a temperature in kelvin
+dec-01,wrong,"a chemical locant between spaced en dashes, – 1,4 –"
+dec-02,right,a decimal comma in EU-derived text
+dec-03,right,a decimal comma in EU-derived text
+dec-04,right,a decimal comma in EU-derived text
+dec-05,right,a decimal comma in EU-derived text
+dec-06,right,a decimal comma in EU-derived text
+dec-07,right,a decimal comma in EU-derived text
+dec-08,right,a decimal comma in EU-derived text
+dec-09,wrong,"a chemical locant after a hyphen and before a colon, -1,4:5,8-"
+dec-10,right,a decimal comma in EU-derived text
+dec-11,wrong,"a chemical locant before a bracket, 2,2[bis"
+dec-12,unclear,"a flattened fee table mixing £24,350 and £3,90; the cell cannot be told"
+dec-13,right,a decimal comma in EU-derived text
+dec-14,wrong,"a list of house numbers without a space, Nos 24,14 & 12"
+dec-15,right,a decimal comma in EU-derived text
+dec-16,right,"an address, km 9,5"
+dec-17,right,a decimal comma in EU-derived text
+dec-18,wrong,"table cells glued: Ra-226 and 0,04"
+dec-19,right,a decimal comma in EU-derived text
+dec-20,right,a decimal comma in EU-derived text
+dec-21,right,a decimal comma in EU-derived text
+dec-22,right,a decimal comma in EU-derived text
+dec-23,right,a decimal comma in EU-derived text
+dec-24,right,a decimal comma in EU-derived text
+dec-25,wrong,"a polyamide name, -6,10"
+dec-26,right,a decimal comma in EU-derived text
+dec-27,wrong,"a list of codes, 10-008,10-010"
+dec-28,wrong,"a list of codes, 21-001,21-002"
+dec-29,wrong,"a list of codes, 34-009,34-010"
+dec-30,right,a decimal comma in EU-derived text
+dec-31,right,a decimal comma in EU-derived text
+dec-32,right,a decimal comma in EU-derived text
+dec-33,right,a decimal comma in EU-derived text
+dec-34,right,a decimal comma in EU-derived text
+dec-35,right,a decimal comma in EU-derived text
+dec-36,right,a decimal comma in EU-derived text
+dec-37,wrong,"table cells glued: Sr-90 and 0,4"
+dec-38,wrong,"table cells glued: Pb-210 and 0,2"
+dec-39,right,a decimal comma in EU-derived text
+dec-40,wrong,"a chemical locant before a space and a word, 1,2 propyleneglycol"

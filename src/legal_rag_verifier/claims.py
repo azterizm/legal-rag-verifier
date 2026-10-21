@@ -124,8 +124,9 @@ _DATE_RES = [
     re.compile(rf"\b{_MONTH}\s+(?P<year>\d{{4}})\b", re.I),
 ]
 # French units map to the English ones; working days ("jours ouvrés") read as days, as in English.
-# The singular "an" is a year only when no word follows it on its line, or "de" does ("1 an",
-# "1 an de garantie"): after a number, English "an" starts a phrase ("3 An application").
+# The singular "an" is a year only at the end of its line, before ". , ; : )" or before "de"
+# ("1 an", "1 an de garantie"): after a number, English "an" starts a phrase ("3 An application",
+# "2 An “term” is") or ends a code ("029-AN").
 _UNITS_FR = {
     "heure": "hour",
     "heures": "hour",
@@ -142,7 +143,7 @@ _UNITS_FR = {
 _UNIT = (
     r"(?:(?P<unit>day|week|month|year|hour)s?(?:['’])?"
     r"|(?P<unit_fr>heures?|jours?(?:\s+(?:ouvrés|ouvrables))?|semaines?|mois|années?|ans"
-    r"|an(?=[^\S\n]*(?:$|\n|[^\w\s])|\s+(?:de\b|d['’]))))"
+    r"|(?<!-)an(?=[^\S\n]*(?:$|\n|[.,;:)])|\s+(?:de\b|d['’]))))"
 )
 _DURATION_RE = re.compile(
     rf"\b(?P<num>{NUMERAL_RE}|{NUMBER_WORDS_RE})(?:\s|-)(?:(?:calendar|working|clear|complete)\s)?{_UNIT}(?!\w)",

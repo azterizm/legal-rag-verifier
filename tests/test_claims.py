@@ -273,7 +273,17 @@ def test_french_durations(text: str, expected: str) -> None:
 
 
 @pytest.mark.parametrize(
-    "text", ["Garantie 1 an", "Garantie : 1 an.", "1 an de garantie", "1 an d’essai", "1 an\nLivré"]
+    "text",
+    [
+        "Garantie 1 an",
+        "Garantie : 1 an.",
+        "Garantie 1 an, pièces",
+        "(garantie 1 an)",
+        "Garantie : 1 an ; retour",
+        "1 an de garantie",
+        "1 an d’essai",
+        "1 an\nLivré",
+    ],
 )
 def test_an_is_a_year_when_no_word_follows(text: str) -> None:
     assert values(text, ClaimKind.DURATION) == ["1:year"]
@@ -287,6 +297,10 @@ def test_an_is_a_year_when_no_word_follows(text: str) -> None:
         "categories 3 to 11 an amount",
         "Act 1883 an assignment",
         "postcode 7600 AN Almelo",
+        "2 An “SDR policy statement” is a statement",
+        "5 An ‘app’ is a software application",
+        "code number ES-ECO-029-AN, for the name",
+        "code number ES-ECO-005-AN; omit the row",
     ],
 )
 def test_english_an_after_a_number_is_not_a_year(text: str) -> None:

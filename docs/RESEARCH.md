@@ -99,7 +99,7 @@ files are.
 
 | Stop | Question | Method | Figures | Scripts | Results |
 |---|---|---|---|---|---|
-| 75 | French figure formats, with every English claim read as before | [method](GRID.md#stop-75-french-figure-formats-in-the-claim-check-method-fixed-2026-10-21-before-the-code) | [figures](measurements.md#french-figure-formats-stop-75-2026-10-21-method-in-docsgridmd) | [`claims75.py`](../scripts/claims75.py) | [`results/claims75.json`](../results/claims75.json), [`results/claims75_corpus.json`](../results/claims75_corpus.json), [`results/claims75_grades.csv`](../results/claims75_grades.csv), [`results/claims75_narrow.json`](../results/claims75_narrow.json), [`results/claims75_corpus76.json`](../results/claims75_corpus76.json), [`results/claims75_grades76.csv`](../results/claims75_grades76.csv) |
+| 75 | French figure formats, with every English claim read as before | [method](GRID.md#stop-75-french-figure-formats-in-the-claim-check-method-fixed-2026-10-21-before-the-code) | [figures](measurements.md#french-figure-formats-stop-75-2026-10-21-method-in-docsgridmd) | [`claims75.py`](../scripts/claims75.py) | [`results/claims75.json`](../results/claims75.json), [`results/claims75_corpus.json`](../results/claims75_corpus.json), [`results/claims75_grades.csv`](../results/claims75_grades.csv), [`results/claims75_narrow.json`](../results/claims75_narrow.json), [`results/claims75_corpus76.json`](../results/claims75_corpus76.json), [`results/claims75_grades76.csv`](../results/claims75_grades76.csv), [`results/claims75_narrow2.json`](../results/claims75_narrow2.json), [`results/claims75_corpus77.json`](../results/claims75_corpus77.json), [`results/claims75_grades77.csv`](../results/claims75_grades77.csv) |
 
 ## Shared scripts
 

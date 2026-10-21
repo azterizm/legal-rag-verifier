@@ -1,0 +1,1705 @@
+{
+ "counts": {
+  "files": 134219,
+  "texts": 6449504,
+  "claims_before": 8148103,
+  "claims_after": 8146907,
+  "guard": {
+   "decimal": 2609,
+   "comma and digit": 3309,
+   "hyphen and letter": 4650,
+   "prime": 505
+  }
+ },
+ "changed_texts": 579,
+ "removed_only": 1,
+ "by_rule": {
+  "trailing currency": {
+   "claims": 11,
+   "texts": 11
+  },
+  "French unit": {
+   "claims": 10,
+   "texts": 7
+  },
+  "French date": {
+   "claims": 9,
+   "texts": 7
+  },
+  "space groups": {
+   "claims": 2,
+   "texts": 2
+  },
+  "decimal comma": {
+   "claims": 1187,
+   "texts": 551
+  },
+  "other": {
+   "claims": 0,
+   "texts": 0
+  }
+ },
+ "graded": {
+  "trailing currency": {
+   "right": 11
+  },
+  "French unit": {
+   "right": 10
+  },
+  "French date": {
+   "right": 9
+  },
+  "space groups": {
+   "right": 2
+  },
+  "decimal comma": {
+   "wrong": 12,
+   "right": 27,
+   "unclear": 1
+  }
+ },
+ "sample": [
+  {
+   "id": "cur-01",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/1409/sch2/para11/5/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/1409/schedule/2/paragraph/11/5/b",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "in point (c), for “[3 EUR]” substitute “ £3 ”.",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-02",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/1409/sch2/para16/2/a/i",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/1409/schedule/2/paragraph/16/2/a/i",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:30"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "30"
+    ]
+   ],
+   "excerpt": "for “[30 EUR]” in both places it occurs substitute “ ",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-03",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/1409/sch2/para16/2/a/ii",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/1409/schedule/2/paragraph/16/2/a/ii",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "for “[1 EUR]” substitute “ £1 ”;",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-04",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/1409/sch2/para16/3/a",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/1409/schedule/2/paragraph/16/3/a",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "in Section A, for “[3 EUR]”, in both places it occurs, substitute ",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-05",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/419/sch1/para62/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/419/schedule/1/paragraph/62/4",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:10000000"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "10"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "In paragraph 4, for “[10 000 000 EUR]” substitute “ £8,700,000 ”.",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-06",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/419/sch1/para62/5/a",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/419/schedule/1/paragraph/62/5/a",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:20000000"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "20"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "for “[20 000 000 EUR]” substitute “ £17,500,000 ”;",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-07",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/419/sch1/para62/6/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/419/schedule/1/paragraph/62/6/b",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:20000000"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "20"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "for “[20 000 000 EUR]” substitute “ £17,500,000 ”.",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-08",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2019/47/reg12/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/47/regulation/12/2",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:1000"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "In Annex I, paragraph (j) for “[1 000 EUR]” substitute “ £873 ”.",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-09",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2020/1402/reg8/2/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1402/regulation/8/2/b",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:4250"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "4"
+    ],
+    [
+     "NUMBER",
+     "250"
+    ]
+   ],
+   "excerpt": "in point (a) for “[4 250 EUR]” substitute “£3,830”;",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-10",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2020/1402/reg8/2/c",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1402/regulation/8/2/c",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:6800"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "6"
+    ],
+    [
+     "NUMBER",
+     "800"
+    ]
+   ],
+   "excerpt": "in point (b) for “[6 800 EUR]” substitute “£6,130”.",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "cur-11",
+   "rule": "trailing currency",
+   "coordinate": "uk/wsi/2021/400/reg5/8/d/ii",
+   "source_url": "https://www.legislation.gov.uk/wsi/2021/400/regulation/5/8/d/ii",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:40000"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "40"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "for “[40 000 EUR]” substitute “£40 000”.",
+   "grade": "right",
+   "note": "EUR amount quoted from EU text, a space before the code"
+  },
+  {
+   "id": "unit-01",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/Eliz2/9-10/27/schFIRST/ptII/ch3",
+   "source_url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/27/schedule/FIRST/part/II/chapter/3",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-02",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/Eliz2/9-10/27/sch1/ptII/chCHAPITRE/III",
+   "source_url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/27/schedule/1/part/II/chapter/CHAPITRE/III",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": " transporteur n’a pas, dans un délai de [six mois] à compter de la réception de cette dema",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-03",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/Eliz2/9-10/27/sch1/ptII/chCHAPITRE/III",
+   "source_url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/27/schedule/1/part/II/chapter/CHAPITRE/III",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-04",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/Eliz2/9-10/27/sch1A/ptII/ch6",
+   "source_url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/27/schedule/1A/part/II/chapter/6",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-05",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/Eliz2/9-10/27/sch1A/ptII/chArticle/22",
+   "source_url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/27/schedule/1A/part/II/chapter/Article/22",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-06",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/1979/28/sch1/ptChapitre/III",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1979/28/schedule/1/part/Chapitre/III",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": " transporteur n’a pas, dans un délai de [six mois] à compter de la réception de cette dema",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-07",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/1979/28/sch1/ptChapitre/III",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1979/28/schedule/1/part/Chapitre/III",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-08",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1999/1312/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/1312/schedule",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-09",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2002/263/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2002/263/schedule/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "unit-10",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2002/263/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2002/263/schedule/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:month"
+   ],
+   "old": [],
+   "excerpt": "par écrit au demandeur dans un délai de [six mois] à dater du fait qui a causé le dommage ",
+   "grade": "right",
+   "note": "French text of a carriage convention: six mois"
+  },
+  {
+   "id": "date-01",
+   "rule": "French date",
+   "coordinate": "uk/ukpga/1982/11/sch4/para25/a",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1982/11/schedule/4/paragraph/25/a",
+   "field": "text",
+   "new": [
+    "DATE",
+    "1763-10-07"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "7"
+    ],
+    [
+     "NUMBER",
+     "1763"
+    ]
+   ],
+   "excerpt": " reconnus par la Proclamation royale du [7 octobre 1763];",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-02",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2006/937/reg11/2/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2006/937/regulation/11/2/b",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2007-05-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2007"
+    ]
+   ],
+   "excerpt": "sh text, for “1 Medi 2006”, substitute “[15 Mai 2007]”.",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-03",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2006/937/reg11/3/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2006/937/regulation/11/3/b",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2007-05-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2007"
+    ]
+   ],
+   "excerpt": "sh text, for “1 Medi 2006”, substitute “[15 Mai 2007]”.",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-04",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2018/217/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/2018/217/schedule",
+   "field": "text",
+   "new": [
+    "DATE",
+    "1918-11-11"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "11"
+    ],
+    [
+     "NUMBER",
+     "1918"
+    ]
+   ],
+   "excerpt": "ernard University Lyon 143 boulevard du [11 Novembre 1918], 69622 Villeurbanne cedex, France11 Oct",
+   "grade": "right",
+   "note": "a street name, boulevard du 11 Novembre 1918; the date is as written"
+  },
+  {
+   "id": "date-05",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2022/500/reg5/3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2022/500/regulation/5/3",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2022-05-02"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "2022"
+    ]
+   ],
+   "excerpt": "ry in column 2 of the table substitute “[2 Mai 2022]”.",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-06",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/2",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2023-12-22"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "22"
+    ],
+    [
+     "NUMBER",
+     "2023"
+    ]
+   ],
+   "excerpt": "Gesetz)1st January 2024LuxembourgLoi du [22 décembre 2023] relative à l’imposition minimale effect",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-07",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/2",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2022-12-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2022"
+    ]
+   ],
+   "excerpt": " directive (UE) 2022/2523 du Conseil du [15 décembre 2022] visant à assurer un niveau minimum d’im",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-08",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/3",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2023-12-22"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "22"
+    ],
+    [
+     "NUMBER",
+     "2023"
+    ]
+   ],
+   "excerpt": "Gesetz)1st January 2024LuxembourgLoi du [22 décembre 2023] relative à l’imposition minimale effect",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "date-09",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/3",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2022-12-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2022"
+    ]
+   ],
+   "excerpt": " directive (UE) 2022/2523 du Conseil du [15 décembre 2022] visant à assurer un niveau minimum d’im",
+   "grade": "right",
+   "note": "a French or Welsh date quoted in the text"
+  },
+  {
+   "id": "space-01",
+   "rule": "space groups",
+   "coordinate": "uk/uksi/2025/1197/reg8/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/8/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1273.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "273"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ed to measure temperatures greater than [1 273,15] K (1 000°C); or3.Radiometer or spectrom",
+   "grade": "right",
+   "note": "a temperature in kelvin"
+  },
+  {
+   "id": "space-02",
+   "rule": "space groups",
+   "coordinate": "uk/uksi/2025/1197/reg8/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/8/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1373.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "373"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ed to operate at temperatures exceeding [1 373,15] K (1 100°C). Technical Note: For the pu",
+   "grade": "right",
+   "note": "a temperature in kelvin"
+  },
+  {
+   "id": "dec-01",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1983/1182/art2",
+   "source_url": "https://www.legislation.gov.uk/uksi/1983/1182/article/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "exachloro – 1,4,4a,5,8,8a – hexahydro – [1,4] – endo – 5,8 – exo – dimethanonaphthale",
+   "grade": "wrong",
+   "note": "a chemical locant between spaced en dashes, – 1,4 –"
+  },
+  {
+   "id": "dec-02",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1987/2183/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2183/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "5.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "5"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": " of not less than 4,7 and not more than [5,5] micrometres ex 7019.10.59 Yarns of 33 t",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-03",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1987/2183/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2183/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "168.78"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "168"
+    ],
+    [
+     "NUMBER",
+     "78"
+    ]
+   ],
+   "excerpt": "t less than 168,28 mm and not more than [168,78] mm ex 7606.12.91, ex 7606.12.93 and ex ",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-04",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1987/2183/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2183/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.64"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "64"
+    ]
+   ],
+   "excerpt": "o-ordinates for the colour dots: red: X=[0,64] and Y=0,33 or X=0,64 and =0,34: green: ",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-05",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1987/2183/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2183/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.07"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "7"
+    ]
+   ],
+   "excerpt": "lue: X=0,15 and Y=0,06 or X=0,155 and Y=[0,07] ex 8540.30.00 Colour cathode ray tubes ",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-06",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1988/1261/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1988/1261/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "7.1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "7"
+    ],
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": " not less than 5,8 μm and not more than [7,1] μm ex 8506.19.10 Unit consisting of not",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-07",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1988/1261/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1988/1261/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "requency ranges between 5 and 11 kHz or [2,2] and 2,5 mHz, in the form of a hybrid in",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-08",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1989/2014/sch/ptII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1989/2014/schedule/part/II",
+   "field": "text_after",
+   "new": [
+    "PERCENT",
+    "22.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "22"
+    ],
+    [
+     "PERCENT",
+     "4"
+    ]
+   ],
+   "excerpt": "and their hydrolysatesL-Lysine: minimum [22,4%] [NH2-(CH2)4-CH(NH2)-COOH]2-H2SO4Sugar s",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-09",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1989/2233/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1989/2233/schedule/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "0,10-Hexachloro-1,4,4a,5,8,8a-hexahydro-[1,4]:5,8-dimethanonaphthalene388198353Hexaet",
+   "grade": "wrong",
+   "note": "a chemical locant after a hyphen and before a colon, -1,4:5,8-"
+  },
+  {
+   "id": "dec-10",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1991/702/sch2/para1/b/ii",
+   "source_url": "https://www.legislation.gov.uk/uksi/1991/702/schedule/2/paragraph/1/b/ii",
+   "field": "text",
+   "new": [
+    "PERCENT",
+    "0.75"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "PERCENT",
+     "75"
+    ]
+   ],
+   "excerpt": "[0,75%] in aggregate by a number of steps in an",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-11",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1994/1191/sch1/ptIII/ch1/para1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/1191/schedule/1/part/III/chapter/1/paragraph/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "to titanate; also known as titanium IV, [2,2][bis 2-propenolato-methyl, butanolate or",
+   "grade": "wrong",
+   "note": "a chemical locant before a bracket, 2,2[bis"
+  },
+  {
+   "id": "dec-12",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1994/1382/reg2",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/1382/regulation/2",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:3.9"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:3"
+    ],
+    [
+     "NUMBER",
+     "90"
+    ]
+   ],
+   "excerpt": "550£24,35043.50p47p7£45,150£48,75093p£18[£3,90]£4,15£115£124,50 (in all cases)£2,00£2,1",
+   "grade": "unclear",
+   "note": "a flattened fee table mixing £24,350 and £3,90; the cell cannot be told"
+  },
+  {
+   "id": "dec-13",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1995/1012/reg5/ii",
+   "source_url": "https://www.legislation.gov.uk/uksi/1995/1012/regulation/5/ii",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "[0,1] mg in total of N-nitrosatable substance",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-14",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1998/3252/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1998/3252/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "24.14"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "24"
+    ],
+    [
+     "NUMBER",
+     "14"
+    ]
+   ],
+   "excerpt": "ard along the western curtilages of Nos [24,14] & 12 Park Drive and Nos 63/65 Johnstone",
+   "grade": "wrong",
+   "note": "a list of house numbers without a space, Nos 24,14 & 12"
+  },
+  {
+   "id": "dec-15",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2001/1701/sch6/ptBn1",
+   "source_url": "https://www.legislation.gov.uk/uksi/2001/1701/schedule/6/part/Bn1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "30"
+    ]
+   ],
+   "excerpt": "ock so that the bottom of the rammer is [0,30] m from the upper face of the block (see",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-16",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2014/2366/sch/para20",
+   "source_url": "https://www.legislation.gov.uk/uksi/2014/2366/schedule/paragraph/20",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "9.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "9"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "Direct Charcoal Limited at Ruta 25, km. [9,5] –Pilar (cp.1629) Buenos Aires, Argentin",
+   "grade": "right",
+   "note": "an address, km 9,5"
+  },
+  {
+   "id": "dec-17",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2016/618/sch3/para7/3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/618/schedule/3/paragraph/7/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": " levels are in compliance with an ID of [0,1] mSv.",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-18",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2016/618/sch3/para9",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/618/schedule/3/paragraph/9",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2260.04"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2260"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "q/1Note 4U-2380,02 Bq/1U-2340,02 Bq/1Ra-[2260,04] Bq/1Ra-2280,02 Bq/1Note 5Pb-2100,02 Bq/",
+   "grade": "wrong",
+   "note": "table cells glued: Ra-226 and 0,04"
+  },
+  {
+   "id": "dec-19",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2019/1393/sch/para3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/1393/schedule/paragraph/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "stitute “1.5”. 3 In paragraph 3— a for “[1,5]” substitute “1.5”; b for “Agency” subst",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-20",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2019/696/sch26/para45",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/696/schedule/26/paragraph/45",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "000 e < m ≤ 10 000 e200 e < m ≤1 000 e± [1,5] e4The maximum permissible errors in ser",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-21",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch3/para35/e",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/3/paragraph/35/e",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "51"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "51"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "for “[51,0]” (in both places it occurs) substitute ",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-22",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch3/para38/4/i",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/3/paragraph/38/4/i",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "10"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "10"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "for “[10,0]” substitute “10.0”.",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-23",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch3/para40/3/d",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/3/paragraph/40/3/d",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "for “[1,15]” substitute “1.15”.",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-24",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/818/sch1/pt4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/818/schedule/1/part/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.04"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "7.3.1.4.2 is to be read as though, for “[2,04] m as per section 4.4 of Annex I to Dire",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-25",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2022/850/reg26",
+   "source_url": "https://www.legislation.gov.uk/uksi/2022/850/regulation/26",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "6.1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "6"
+    ],
+    [
+     "NUMBER",
+     "10"
+    ]
+   ],
+   "excerpt": "l. polyamides-6, -11, -12, -6,6, -6,9, -[6,10] and -6,12)3909 20 melamine resins, in p",
+   "grade": "wrong",
+   "note": "a polyamide name, -6,10"
+  },
+  {
+   "id": "dec-26",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2022/850/reg26",
+   "source_url": "https://www.legislation.gov.uk/uksi/2022/850/regulation/26",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "714.29"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "714"
+    ],
+    [
+     "NUMBER",
+     "29"
+    ]
+   ],
+   "excerpt": " weight and with a linear density of >= [714,29] decitex ‘<= mn 14’ (excl. sewing thread",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-27",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2024/564/sch7",
+   "source_url": "https://www.legislation.gov.uk/uksi/2024/564/schedule/7",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "8.1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "8"
+    ],
+    [
+     "NUMBER",
+     "10"
+    ]
+   ],
+   "excerpt": "001, 10-002, 10-004, 10-005, 10-007, 10-[008,10]-010, 10-011, 10-012, 10-013, 10-014, 11",
+   "grade": "wrong",
+   "note": "a list of codes, 10-008,10-010"
+  },
+  {
+   "id": "dec-28",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2024/564/sch7",
+   "source_url": "https://www.legislation.gov.uk/uksi/2024/564/schedule/7",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.21"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "21"
+    ]
+   ],
+   "excerpt": "006, 19-007, 19-010, 20-001, 20-003, 21-[001,21]-002, 21-004, 21-005, 21-006, 21-013, 22",
+   "grade": "wrong",
+   "note": "a list of codes, 21-001,21-002"
+  },
+  {
+   "id": "dec-29",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2024/564/sch7",
+   "source_url": "https://www.legislation.gov.uk/uksi/2024/564/schedule/7",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "9.34"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "9"
+    ],
+    [
+     "NUMBER",
+     "34"
+    ]
+   ],
+   "excerpt": "016, 33-017, 34-001, 34-002, 34-006, 34-[009,34]-010, 35-001, 35-002, 35-003, 35-006, 35",
+   "grade": "wrong",
+   "note": "a list of codes, 34-009,34-010"
+  },
+  {
+   "id": "dec-30",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2025/1197/reg9/2/e",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/9/2/e",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "4.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "4"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "l to 1,5 W at or below a temperature of [4,2] K (-268,95°C). .",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-31",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2025/1197/reg9/3/d",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/9/3/d",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "773.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "773"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ter than 373,15 K (100°C) and less than [773,15] K (500°C); andb.Surface treatment plasm",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-32",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2025/532/reg9/4/q",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/532/regulation/9/4/q",
+   "field": "text",
+   "new": [
+    "PERCENT",
+    "0.03"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "PERCENT",
+     "3"
+    ]
+   ],
+   "excerpt": "carbon content of less than or equal to [0,03%] by weight,”;",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-33",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2016/410/sch3",
+   "source_url": "https://www.legislation.gov.uk/wsi/2016/410/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": " Ra-226 0,5 Bq/1 Ra-228 0,2 Bq/1 Pb-210 [0,2] Bq/1 Po-210 0,1 Bq/1 ArtificialC-14 240",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-34",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2016/410/sch3",
+   "source_url": "https://www.legislation.gov.uk/wsi/2016/410/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.6"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "6"
+    ]
+   ],
+   "excerpt": "4 240 Bq/1 Sr-90 4,9 Bq/1 Pu-239/Pu-240 [0,6] Bq/1 Am-241 0,7 Bq/1 Co-60 40 Bq/1 Cs-1",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-35",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2016/410/sch3",
+   "source_url": "https://www.legislation.gov.uk/wsi/2016/410/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.06"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "6"
+    ]
+   ],
+   "excerpt": "0,4 Bq/1 Pu-239/Pu-240 0,04 Bq/1 Am-241 [0,06] Bq/1 Co-60 0,5 Bq/1 Cs-134 0,5 Bq/1 Cs-",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-36",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2016/410/sch3",
+   "source_url": "https://www.legislation.gov.uk/wsi/2016/410/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": " Am-241 0,06 Bq/1 Co-60 0,5 Bq/1 Cs-134 [0,5] Bq/1 Cs-137 0,5 Bq/1 I-131 0,5 Bq/1 Not",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-37",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2017/1041/sch4/para15",
+   "source_url": "https://www.legislation.gov.uk/wsi/2017/1041/schedule/4/paragraph/15",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "900.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "900"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "100,02 Bq/lPo-2100,01 Bq/lC-1420 Bq/lSr-[900,4] Bq/lPu-239/Pu-2400,04 Bq/1Am-2410,06 Bq",
+   "grade": "wrong",
+   "note": "table cells glued: Sr-90 and 0,4"
+  },
+  {
+   "id": "dec-38",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2018/647/sch4/para4/2",
+   "source_url": "https://www.legislation.gov.uk/wsi/2018/647/schedule/4/paragraph/4/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2100.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2100"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "4 12,8 Bq/1Ra-2260,5 Bq/1Ra-228Ra-228Pb-[2100,2] Bq/1Po-2100,1 Bq/1ArtificialC-14240 Bq/",
+   "grade": "wrong",
+   "note": "table cells glued: Pb-210 and 0,2"
+  },
+  {
+   "id": "dec-39",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2018/647/sch5",
+   "source_url": "https://www.legislation.gov.uk/wsi/2018/647/schedule/5",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "ement must be estimated at the level of [1,0] NTU in accordance with European standar",
+   "grade": "right",
+   "note": "a decimal comma in EU-derived text"
+  },
+  {
+   "id": "dec-40",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2022/1362/sch1",
+   "source_url": "https://www.legislation.gov.uk/wsi/2022/1362/schedule/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "utanediol— Glycerol— 1,2-propanediol [= [1,2] propyleneglycol]— Polyethylene oxide [=",
+   "grade": "wrong",
+   "note": "a chemical locant before a space and a word, 1,2 propyleneglycol"
+  }
+ ]
+}

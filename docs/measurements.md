@@ -1324,3 +1324,17 @@ pairs as expected.
 643 texts changed (0.01 %), from 4,573. All 69 "an" left are wrong (66 open a quoted definition, "2 An “SDR policy
 statement” is"; 3 are codes); dropping or narrowing "an" again is proposed in GRID. Raw:
 `results/claims75_corpus76.json`, `results/claims75_grades76.csv`.
+
+With "an" read only before the end of a line, ". , ; : )" or "de" / "d’", and not after a hyphen (your choice,
+2026-10-21), once more with a fresh sample (seed 77). Gate: 0 of 31,850 changed, 31 of 31 pairs.
+
+| Rule | Changed claims now | Texts | Graded (by Claude) | Right | Wrong | Unclear |
+|---|---|---|---|---|---|---|
+| French unit (all "six mois") | 10 | 7 | 10 | 10 | 0 | 0 |
+| Trailing currency (spaced "EUR") | 11 | 11 | 11 | 11 | 0 | 0 |
+| Decimal comma | 1,187 | 551 | 40 | 27 | 12 | 1 |
+| French date | 9 | 7 | 9 | 9 | 0 | 0 |
+| Space groups | 2 | 2 | 2 | 2 | 0 | 0 |
+
+579 texts changed (0.01 %), from 4,573 in the first run. Raw: `results/claims75_corpus77.json`,
+`results/claims75_grades77.csv`.

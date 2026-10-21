@@ -3989,3 +3989,37 @@ graded by me; `results/claims75_corpus77.json`, `results/claims75_grades77.csv`)
 and grades are reported as they come; any "an" claim left is listed in full.
 
 CPU only, no spend.
+
+
+### Stop 75: "an" before listed punctuation only, results (2026-10-21)
+
+**The gate:** no change in the 31,850 texts (`results/claims75_narrow2.json`); the 31 pairs as expected. The 4 new
+tests failed before the change; full suite 400 passed.
+
+**The corpus run again** (0.2.0 against this code): 8,146,907 claims now. **579 texts changed (0.01 %)**, from 643
+in the second run and 4,573 in the first. Report and fresh sample (seed 77): `results/claims75_corpus77.json`; my
+grades `results/claims75_grades77.csv`.
+
+| Rule | First run | Second | Now | Texts now | Sample graded by me | Right | Wrong | Unclear |
+|---|---|---|---|---|---|---|---|---|
+| French unit | 6,744 | 79 | 10 | 7 | 10 | 10 | 0 | 0 |
+| Trailing currency | 1,963 | 11 | 11 | 11 | 11 | 11 | 0 | 0 |
+| Decimal comma | 1,808 | 1,187 | 1,187 | 551 | 40 | 27 | 12 | 1 |
+| Other | 390 | 0 | 0 | 0 | 0 | | | |
+| French date | 9 | 9 | 9 | 7 | 9 | 9 | 0 | 0 |
+| Space groups | 2 | 2 | 2 | 2 | 2 | 2 | 0 | 0 |
+
+- **"an": none left.** Every remaining French-unit claim, listed in full, is "dans un délai de six mois" in the
+  French text of the carriage conventions (ukpga Eliz2/9-10/27 schedules FIRST, 1 and 1A; ukpga 1979/28 sch1;
+  uksi 1999/1312 sch; uksi 2002/263 sch2), read right as 6 months.
+- Decimal comma: unchanged by this rule (1,187 claims); a fresh sample reads 27 right, 12 wrong, 1 unclear, as in
+  the second run (28, 11, 1). The wrong are the stated limit: lists of codes (3), glued table cells (3), locants
+  the guard does not see (4: between spaced dashes, before ":" or a word, "2,2[bis"), a polyamide name ("-6,10"),
+  house numbers ("Nos 24,14 & 12").
+- Trailing currency, French dates and space groups: unchanged, all right.
+
+Reading: on English legislation the French rules now change 579 of 6.4 million texts; outside the decimal comma
+every changed claim is right; the decimal comma is about two-thirds right, its errors in lists, codes, glued
+tables and chemical names, written in API.md §6. No further rule is proposed.
+
+Spend: none (CPU).

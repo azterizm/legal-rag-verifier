@@ -30,7 +30,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   texts of the batteries and answers, but change 4,573 of the 6.4 million texts of the UK corpus,
   mostly wrongly ("an" after a number, "£" in flattened tables, chemical locants). With
   narrower rules ("an" only when no word follows, no trailing "£" or "$", a wider guard on the
-  decimal comma) 643 change; the rest of "an" is still wrong and goes to a further decision.
+  decimal comma), and "an" read only before the end of a line, punctuation or "de", 579 change:
+  every one right outside the decimal comma, which is about two-thirds right (lists, codes, glued
+  tables and chemical names still misread).
 
 ## [0.2.0] - 2026-10-13
 
