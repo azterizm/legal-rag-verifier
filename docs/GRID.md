@@ -3839,3 +3839,60 @@ legislation. It changes no code; it fixes nothing beforehand.
 
 Raw: every changed text with its coordinate, claims and excerpts in `results/raw/claims75/corpus.jsonl`
 (git-ignored). CPU only, no spend.
+
+
+### Stop 75: the guard on the corpus, results (2026-10-21)
+
+One run, 9.5 minutes on 10 processes: 134,219 files, 6,449,504 texts, 8,148,103 claims on 0.2.0 and 8,146,177 on
+the new code. **4,573 texts changed (0.07 %)**, against none in the gate. Report and graded sample:
+`results/claims75_corpus.json`; my grades `results/claims75_grades.csv`.
+
+| Rule | Changed claims | Texts | Sample graded by me | Right | Wrong |
+|---|---|---|---|---|---|
+| French unit | 6,744 | 3,576 | 40 | 0 | 40 |
+| Trailing currency | 1,963 | 240 | 40 | 35 | 5 |
+| Decimal comma | 1,808 | 753 | 40 | 17 | 23 |
+| Other | 390 | 94 | 40 | 1 | 39 |
+| French date | 9 | 7 | 9 | 9 | 0 |
+| Space groups | 2 | 2 | 2 | 2 | 0 |
+
+One text only lost claims. What each rule caught:
+
+- **French unit: the English article "an".** 6,734 of the 6,744 are "an" after a number, 6,662 of them followed by
+  a word: "3 An application under paragraph (1)", "1883 an assignment", "categories 3 to 11 an amount", "One thousand
+  eight hundred and seven an Act", a Dutch postcode "7600 AN". The other 10 are "six mois" in the French text of
+  the carriage conventions, read right. This is the risk named in rule 5 and left to the gate; the gate's texts
+  held one case, which money outranked.
+- **Trailing currency: "£" in flattened tables.** 1,938 "£", 24 "EUR", 1 "$". Fee tables lose their cell breaks:
+  "£ 8,100£ 9,315". The new rule gives the "£" of the next cell to the number before it: that number's value is
+  still right (35 of 40), and the next number loses its currency, which is the "other" rule (387 of its 390 claims
+  are a £ amount become a bare number; 39 of 40 wrong). Wrong also: a page count ("first 10 £ 0.30"), category
+  numbers, years in dates ("13th April 2005 £3.70" loses its date), "3/2008EUR". The 24 "EUR" include 11 with a
+  space, from EU-exit amendments ("for “3 EUR” substitute “£3”", "10 000 000 EUR"), read right, and 13 glued to a
+  number.
+- **Decimal comma: half wrong.** Right: decimals in EU-derived text, mostly amendments replacing them ("for “0,9”
+  substitute “0.9”"), and measurements ("1,5 mg/l", "773,15 K"). Wrong: chemical locants the guard misses (15 of
+  23: "[1,2,4]triazolo", "1,4–butanediol" with an en dash, "1,3,5,-triazine", "[3,3,0]", "2,2(bis"), lists without
+  a space (3: "for “4,5 or 6”", "Units 1,2 and 3"), table cells glued together (4: "Sr-90" and "0,4" read as
+  900.4), and a list of codes (1).
+- French dates and space groups: all right (French and Welsh dates quoted in statutes, "1 273,15 K").
+- The guard: of 11,073 commas with 1 or 2 digits after them, it kept 8,464 apart as on 0.2.0 (a comma and a digit
+  after, 3,309; a hyphen and a letter, 4,650; a prime, 505); 2,609 passed it.
+
+Reading: on English legislation the new rules change 0.07 % of texts, and most of the change is wrong. "an" and the
+trailing "£" do most of the harm; the decimal comma is half right. The gate's zero did not show this because its
+texts hold almost none of these forms. Nothing is changed in this run.
+
+Proposed for your go, each to be checked by rerunning the gate and this corpus run, with a fresh sample (seed 76)
+graded, since the numbers below were read off this run's diff and the guard extension was fitted to this sample:
+
+1. "an" only when no word follows it (the end, punctuation, or French "de" / "d’"): "Garantie 1 an", "1 an de
+   garantie" still read. Removes 6,662 of the 6,734 "an" claims.
+2. No trailing "£" or "$"; "€" and the codes stay, the codes only after a space. Removes 1,939 trailing claims,
+   their 387 knock-ons and the 13 glued codes; keeps the 11 spaced "EUR".
+3. The decimal-comma guard also when the number follows "[" or a comma, or the digits are followed by "]", "(",
+   ")", an en or em dash, or a comma and a hyphen. In this sample it blocks 16 of the 23 wrong and none of the 17
+   right; on this run's diff, 631 of the 1,808 claims. Lists without a space and glued table cells stay wrong (a
+   stated limit).
+
+Spend: none (CPU).

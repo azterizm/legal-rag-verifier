@@ -1,0 +1,3838 @@
+{
+ "counts": {
+  "files": 134219,
+  "texts": 6449504,
+  "claims_before": 8148103,
+  "claims_after": 8146177,
+  "guard": {
+   "decimal": 2609,
+   "comma and digit": 3309,
+   "hyphen and letter": 4650,
+   "prime": 505
+  }
+ },
+ "changed_texts": 4573,
+ "removed_only": 1,
+ "by_rule": {
+  "trailing currency": {
+   "claims": 1963,
+   "texts": 240
+  },
+  "French unit": {
+   "claims": 6744,
+   "texts": 3576
+  },
+  "French date": {
+   "claims": 9,
+   "texts": 7
+  },
+  "space groups": {
+   "claims": 2,
+   "texts": 2
+  },
+  "decimal comma": {
+   "claims": 1808,
+   "texts": 753
+  },
+  "other": {
+   "claims": 390,
+   "texts": 94
+  }
+ },
+ "graded": {
+  "trailing currency": {
+   "right": 35,
+   "wrong": 5
+  },
+  "French unit": {
+   "wrong": 40
+  },
+  "French date": {
+   "right": 9
+  },
+  "space groups": {
+   "right": 2
+  },
+  "decimal comma": {
+   "wrong": 23,
+   "right": 17
+  },
+  "other": {
+   "right": 1,
+   "wrong": 39
+  }
+ },
+ "sample": [
+  {
+   "id": "cur-01",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1987/2269/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2269/schedule",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:8100"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:8100"
+    ],
+    [
+     "MONEY",
+     "GBP:9315"
+    ]
+   ],
+   "excerpt": "s for a fire escape for certain works)£ [8,100£] 9,315All casesSection 249(3)(b) (Maximu",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-02",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1987/365/sch3/para4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/365/schedule/3/paragraph/4",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:38.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:38.5"
+    ],
+    [
+     "MONEY",
+     "GBP:5.5"
+    ]
+   ],
+   "excerpt": "£ 71.50 £ 22.00£ 49.50 £ 16.50£ 16.50 £ [38.50 £] 5.50£ 55.00 £ 5.50 £ 71.50£ 93.50 £142.",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-03",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1987/771/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/771/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:9"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:9"
+    ],
+    [
+     "MONEY",
+     "GBP:9"
+    ]
+   ],
+   "excerpt": "00£ 13.00in sheriff court appointments£ [9.00£] 9.00 0.333% of the value of the estate ",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-04",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1987/771/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/771/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:0.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:0.5"
+    ],
+    [
+     "MONEY",
+     "GBP:0.5"
+    ]
+   ],
+   "excerpt": "or every £100 or part thereof uplifted£ [0.50£] 0.50maximum fee payable£ 25.00£ 25.00IV",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-05",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1990/472/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/472/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:23"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:23"
+    ],
+    [
+     "MONEY",
+     "GBP:25"
+    ]
+   ],
+   "excerpt": " and various other proceedings £ 25.00£ [23.00 £] 25.00£ 23.00Bankruptcy proceedings £ 25",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-06",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1990/472/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/472/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:10"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:10"
+    ],
+    [
+     "MONEY",
+     "GBP:25"
+    ]
+   ],
+   "excerpt": "00Miscellaneous £ 11.00£ 10.00 £ 11.00£ [10.00 £] 25.00£ 23.00 £ 25.00£ 23.00 £ 25.00£ 6.",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-07",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1990/472/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/472/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:3.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:3.5"
+    ],
+    [
+     "MONEY",
+     "GBP:3"
+    ]
+   ],
+   "excerpt": "IFF COURT PROCEEDINGS – MISCELLANEOUS £ [3.50£] 3.00 First copy–each of first 10 pages£",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-08",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1990/476/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/476/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:12"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:12"
+    ],
+    [
+     "MONEY",
+     "GBP:13"
+    ]
+   ],
+   "excerpt": "0£ 50.00G. EXTRACTS DEPARTMENT £ 13.00£ [12.00 £] 13.00£ 11.00 £ 13.00£ 11.00 £ 13.00£ 6.",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-09",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1990/476/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/476/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:2"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:2"
+    ],
+    [
+     "MONEY",
+     "GBP:2"
+    ]
+   ],
+   "excerpt": "ITOR OF THE COURT OF SESSION under £50£ [2.00£] 2.00for every additional £50 or part of",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-10",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1990/476/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/476/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:6.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:6.5"
+    ],
+    [
+     "MONEY",
+     "GBP:6"
+    ]
+   ],
+   "excerpt": "FFICESJ. MISCELLANEOUS £ 55.00£ 50.00 £ [6.50£] 6.00 £ 3.50£ 3.00 first copy: each of f",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-11",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/2957/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/2957/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:26"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:26"
+    ],
+    [
+     "MONEY",
+     "GBP:23"
+    ]
+   ],
+   "excerpt": "£ 13.00 £ 16.00£ 20.00 £ 16.00£ 20.00 £ [26.00£] 23.00 £ 26.00£ 20.00Service of heirs £1",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-12",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/296/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/296/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:500"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:500"
+    ],
+    [
+     "MONEY",
+     "GBP:60"
+    ]
+   ],
+   "excerpt": " not £100,000.00 £300.00£300.00 £500.00£[500.00 £] 60.00£ 55.00 £ 60.00 £55.00 £ 42.00£ 40",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-13",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/3116/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/3116/schedule",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:2.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:2.5"
+    ],
+    [
+     "MONEY",
+     "GBP:2.5"
+    ]
+   ],
+   "excerpt": "entry in registers kept by registrars £ [2.50£] 2.50Section 33(1) Short certificate of ",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-14",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/418/reg3/1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/418/regulation/3/1",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:23.7"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:23.7"
+    ],
+    [
+     "MONEY",
+     "GBP:24.4"
+    ]
+   ],
+   "excerpt": " Column 1Column 2Old AmountNew Amount £ [23.70£] 24.40£ 37.40£ 38.40£ 51.00£ 52.40£100.0",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-15",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/427/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/427/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:31"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:31"
+    ],
+    [
+     "MONEY",
+     "GBP:29.5"
+    ]
+   ],
+   "excerpt": "£ 73.00 £ 40.00£ 40.00 £ 40.00£ 40.00 £ [31.00£] 29.50 £ 40.00£ 40.00 £ 77.00£ 73.00 £ 3",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-16",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/427/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/427/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:54"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:54"
+    ],
+    [
+     "MONEY",
+     "GBP:57"
+    ]
+   ],
+   "excerpt": " £ 45.00£ 43.00 £ 57.00£ 54.00 £ 57.00£ [54.00 £] 57.00£ 54.00 £ 57.00£ 54.00 £ 77.00£ 73",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-17",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/427/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/427/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:14"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:14"
+    ],
+    [
+     "MONEY",
+     "GBP:15"
+    ]
+   ],
+   "excerpt": " 73.00 £ 38.50£ 36.50 £ 20.00— £ 15.00£ [14.00 £] 15.00£ 14.00 £ 8.00£ 8.00 Appeal — incl",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-18",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1993/427/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/427/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:18"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:18"
+    ],
+    [
+     "MONEY",
+     "GBP:17"
+    ]
+   ],
+   "excerpt": "£ 10.00 £ 11.00£ 10.00 £ 11.00£ 10.00 £ [18.00£] 17.00 £ 18.00£ 17.00PART II — FEES IN T",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-19",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1994/3265/sch/ptI",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/3265/schedule/part/I",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:19"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:19"
+    ],
+    [
+     "MONEY",
+     "GBP:89"
+    ]
+   ],
+   "excerpt": "00 £ 9.00£ 8.00 £ 22.00£ 19.00 £ 22.00£ [19.00 £] 89.00£ 77.00 £ 89.00£ 77.00 £ 21.00£ 18",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-20",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1994/3265/sch/ptII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/3265/schedule/part/II",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:41"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:41"
+    ],
+    [
+     "MONEY",
+     "GBP:36"
+    ]
+   ],
+   "excerpt": "eof uplifted £ 1.00£ 1.00 maximum fee £ [41.00£] 36.00 £ 4.00£ 3.00",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-21",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:17"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:17"
+    ],
+    [
+     "MONEY",
+     "GBP:16"
+    ]
+   ],
+   "excerpt": "ents £ 12.00£ 11.00Criminal Procedure £ [17.00£] 16.00Road Traffic Offenders Act 1988 £ ",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-22",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:22"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:22"
+    ],
+    [
+     "MONEY",
+     "GBP:21"
+    ]
+   ],
+   "excerpt": "ary cause £ 6.00£ 6.00 £ 34.00£ 32.00 £ [22.00£] 21.00 £ 27.00£ 26.00Actions of divorce ",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-23",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:17"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:17"
+    ],
+    [
+     "MONEY",
+     "GBP:16"
+    ]
+   ],
+   "excerpt": "00£ 16.00Miscellaneous £ 17.00£ 16.00 £ [17.00£] 16.00 £ 34.00£ 32.00 £ 34.00£ 32.00 £ 3",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-24",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:34"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:34"
+    ],
+    [
+     "MONEY",
+     "GBP:32"
+    ]
+   ],
+   "excerpt": "£ 16.00 £ 17.00£ 16.00 £ 34.00£ 32.00 £ [34.00£] 32.00 £ 34.00£ 32.00 £ 34.00£ 32.00 £ 1",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-25",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:34"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:34"
+    ],
+    [
+     "MONEY",
+     "GBP:32"
+    ]
+   ],
+   "excerpt": "£ 16.00 £ 34.00£ 32.00 £ 34.00£ 32.00 £ [34.00£] 32.00 £ 34.00£ 32.00 £ 12.00£ 11.00 £ 3",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-26",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:10"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "10"
+    ],
+    [
+     "MONEY",
+     "GBP:0.3"
+    ]
+   ],
+   "excerpt": "ages £ 1.00£ 1.00 each page after first [10 £] 0.30£ 0.30 Subsequent copies: each page",
+   "grade": "wrong",
+   "note": "10 is a page count; the £ is the next cell's"
+  },
+  {
+   "id": "cur-27",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:53"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:53"
+    ],
+    [
+     "MONEY",
+     "GBP:32"
+    ]
+   ],
+   "excerpt": " £ 56.00£ 53.00 £ 22.00£ 21.00 £ 56.00£ [53.00 £] 32.00£ 30.00",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-28",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1999/754/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/754/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:3"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:3"
+    ],
+    [
+     "MONEY",
+     "GBP:5"
+    ]
+   ],
+   "excerpt": ".00 each subsequent certificate £ 3.00£ [3.00 £] 5.00£ 5.00 £ 11.00£ 11.00 each subseque",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-29",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1999/754/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/754/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:45"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:45"
+    ],
+    [
+     "MONEY",
+     "GBP:74"
+    ]
+   ],
+   "excerpt": "T II-SHERIFF COURT PROCEEDINGS £ 46.00£ [45.00 £] 74.00£ 72.00 £ 57.00£ 56.00 £ 36.00£ 35",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-30",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1999/754/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/754/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:5"
+    ],
+    [
+     "MONEY",
+     "GBP:5"
+    ]
+   ],
+   "excerpt": "ged as in paragraph 39 of this Table. £ [5.00£] 5.00NOTE: Recording and extracting to b",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-31",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1999/754/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/754/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:4"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:4"
+    ],
+    [
+     "MONEY",
+     "GBP:4"
+    ]
+   ],
+   "excerpt": "F COURT £ 12.00£ 12.00 £ 12.00£ 12.00 £ [4.00£] 4.00NOTE: Fee to be determined by audit",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-32",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/1999/755/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/755/schedule",
+   "field": "text_after",
+   "new": [
+    "MONEY",
+    "GBP:16"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:16"
+    ],
+    [
+     "MONEY",
+     "GBP:16"
+    ]
+   ],
+   "excerpt": "2.00£ 28.00 to £129.00 £ 70.00£ 68.00 £ [16.00£] 16.00 additional fee for each £1,000 (e",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-33",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2005/832/s3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2005/832/section/3",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:2005"
+   ],
+   "old": [
+    [
+     "DATE",
+     "2005-04-13"
+    ]
+   ],
+   "excerpt": "er incapacity allowance from 13th April [2005 £]£3.703.809.9010.2016.7517.2524.2525.0034",
+   "grade": "wrong",
+   "note": "a year; the date 13th April 2005 is lost"
+  },
+  {
+   "id": "cur-34",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2008/1328/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/2008/1328/schedule",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:651"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:651"
+    ]
+   ],
+   "excerpt": "£266£798£154£462Clinical Negligence£217£[651£]-£-Community Care£296£888£179£537Consume",
+   "grade": "right",
+   "note": "value right; same as on 0.2.0"
+  },
+  {
+   "id": "cur-35",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2013/2804/art3/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2013/2804/article/3/2",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "ates)Category 1 £ Category 2 £ Category [3 £] Category 4 £ CounselQC106.7583.3066.856",
+   "grade": "wrong",
+   "note": "a category number under a £ column header"
+  },
+  {
+   "id": "cur-36",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2016/257/reg28",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/257/regulation/28",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:2015"
+   ],
+   "old": [
+    [
+     "DATE",
+     "2015-04"
+    ],
+    [
+     "MONEY",
+     "GBP:8400000"
+    ]
+   ],
+   "excerpt": "£ 6.00m£ 1.80m£ 12.00m£ 3.60m30th April [2015£] 8.40m£ 2.40m£ 16.80m£ 4.80m31st July 20",
+   "grade": "wrong",
+   "note": "a year in a date; the £ is the next cell's"
+  },
+  {
+   "id": "cur-37",
+   "rule": "trailing currency",
+   "coordinate": "uk/uksi/2023/1143/sch1/pt3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2023/1143/schedule/1/part/3",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "EUR:2008"
+   ],
+   "old": [],
+   "excerpt": " repealing Council Regulation (EC) No 3/[2008EUR] 1144/2014Commission Delegated Regulatio",
+   "grade": "wrong",
+   "note": "a regulation number (3/2008) glued to the next text"
+  },
+  {
+   "id": "cur-38",
+   "rule": "trailing currency",
+   "coordinate": "uk/wsi/2000/978/reg5/1",
+   "source_url": "https://www.legislation.gov.uk/wsi/2000/978/regulation/5/1",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:150.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:150.5"
+    ],
+    [
+     "MONEY",
+     "GBP:42"
+    ]
+   ],
+   "excerpt": "7.50 (in both places where it appears)£ [150.50£] 42.00£ 42.80",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-39",
+   "rule": "trailing currency",
+   "coordinate": "uk/wsi/2003/955/reg6/1",
+   "source_url": "https://www.legislation.gov.uk/wsi/2003/955/regulation/6/1",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:44.6"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:44.6"
+    ],
+    [
+     "MONEY",
+     "GBP:45.7"
+    ]
+   ],
+   "excerpt": " both places where it appears)£ 160.90£ [44.60£] 45.70",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "cur-40",
+   "rule": "trailing currency",
+   "coordinate": "uk/wsi/2004/1014/reg5/1",
+   "source_url": "https://www.legislation.gov.uk/wsi/2004/1014/regulation/5/1",
+   "field": "text",
+   "new": [
+    "MONEY",
+    "GBP:32.1"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:32.1"
+    ],
+    [
+     "MONEY",
+     "GBP:47.6"
+    ]
+   ],
+   "excerpt": "le. (1)(2)Old amountNew amount £ 31.30£ [32.10£] 47.60£ 48.80£ 64.80£ 71.30£ 146.30£ 161",
+   "grade": "right",
+   "note": "value right; the £ is the next cell's, which loses its currency"
+  },
+  {
+   "id": "unit-01",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/2003/26/sch7/para25/2",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2003/26/schedule/7/paragraph/25/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "15:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ade by the National Assembly for Wales. [15 An] order made under sub-paragraph (3) abov",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-02",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/2024/22/s62/7/b",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2024/22/section/62/7/b",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "any of the landlord’s litigation costs. [3 An] order may be made only in respect of an",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-03",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/2024/3/sch10/para5",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2024/3/schedule/10/paragraph/5",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "2:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "ractice (instead of on the cash basis). [2 An] election made in relation to a trade un",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-04",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/2025/10/sch4/para6/5",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2025/10/schedule/4/paragraph/6/5",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "n this paragraph “the compliant plan”). [3 An] application under sub-paragraph (2) mus",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-05",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/2025/34/s103/8",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2025/34/section/103/8",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "elation to infrastructure: England 136A [1 An] urban development corporation establish",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-06",
+   "rule": "French unit",
+   "coordinate": "uk/ukpga/2026/20/s83/1",
+   "source_url": "https://www.legislation.gov.uk/ukpga/2026/20/section/83/1",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "ourt that the offence is so aggravated. [3 An] offence is “aggravated by grooming” if—",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-07",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1971/1269/art42",
+   "source_url": "https://www.legislation.gov.uk/uksi/1971/1269/article/42",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "2:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "nvolving a claim for personal injuries. [2 An] application for an order under the said",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-08",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1978/1844/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1978/1844/schedule",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "2:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "(2) and (4) there shall be substituted— [2 An] application under section 1 of the 1841",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-09",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1986/477/reg5",
+   "source_url": "https://www.legislation.gov.uk/uksi/1986/477/regulation/5",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "n 15A by a person who was his employer. [3 An] employer who issues a statement to an e",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-10",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1988/2160/art2",
+   "source_url": "https://www.legislation.gov.uk/uksi/1988/2160/article/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "chedule 5 or a form to the like effect. [3 An] application under paragraph (1) shall b",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-11",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1990/503/reg2/2/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/503/regulation/2/2/b",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "tuting for paragraph (3) the following— [3 An] individual adjustment is any percentage",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-12",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1992/2918/reg4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/2918/regulation/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "with the Schedule to these Regulations. [3 An] application for a Community premium may",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-13",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1992/3270/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/3270/schedule/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "6"
+    ]
+   ],
+   "excerpt": " been agreed or had been so determined. [6 An] amount which apart from this sub-paragr",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-14",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1992/638/art4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/638/article/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "opriate) shall be modified accordingly. [3 An] applicant for an injunction under parag",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-15",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1997/10/sch/para12/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1997/10/schedule/paragraph/12/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "11:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "11"
+    ]
+   ],
+   "excerpt": "one or more than one of categories 3 to [11 an] amount shall be calculated in accordanc",
+   "grade": "wrong",
+   "note": "'categories 3 to 11 an amount': the English article"
+  },
+  {
+   "id": "unit-16",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1998/2838/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1998/2838/schedule/1",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "to whom the existing condition applies. [3 An] application for the purposes of paragra",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-17",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1998/2838/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1998/2838/schedule/1",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "9:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "9"
+    ]
+   ],
+   "excerpt": "more other persons, to hear the appeal. [9 An] oral hearing shall take place at such t",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-18",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1999/3264/reg7",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/3264/regulation/7",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "e inserted the following regulation– 4B [1 An] accountable person in relation to a cha",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-19",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1999/787/sch6/ptII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/787/schedule/6/part/II",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "122:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "122"
+    ]
+   ],
+   "excerpt": "n petition) For the section substitute– [122 An] election petition shall be presented wi",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-20",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/1999/962/sch/para3/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/1999/962/schedule/paragraph/3/b",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "7:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "7"
+    ]
+   ],
+   "excerpt": "for paragraph (7) substitute– [7 An] inmate shall not be entitled under this",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-21",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2001/3649/art401",
+   "source_url": "https://www.legislation.gov.uk/uksi/2001/3649/article/401",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "4:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "ng of administration order) substitute— [4 An] administration order shall not be made ",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-22",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2003/30/art2/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2003/30/article/2/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "ed by the licence. Specific licences 8A [1 An] animal moved under a specific licence s",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-23",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2004/2992/art2/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2004/2992/article/2/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "4:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "e of appeal is given in any other case. [4 An] appellant’s application to exclude bad ",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-24",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2006/2910/reg12",
+   "source_url": "https://www.legislation.gov.uk/uksi/2006/2910/regulation/12",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "tion: applications and declarations 31G [1 An] application for an anonymous entry must",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-25",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2008/3090/sch2/para5",
+   "source_url": "https://www.legislation.gov.uk/uksi/2008/3090/schedule/2/paragraph/5",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "quirements of an in-year scheme General [1 An] in-year scheme must— a ensure, so far a",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-26",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2008/3092/reg6",
+   "source_url": "https://www.legislation.gov.uk/uksi/2008/3092/regulation/6",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "6:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "6"
+    ]
+   ],
+   "excerpt": "ng out the grounds on which it is made. [6 An] appeal shall give the appellant an oppo",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-27",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2008/558/art2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2008/558/article/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "2:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "2 or 3 other officers of the Authority. [2 An] officer of the Authority, other than th",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-28",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2009/2399/reg13",
+   "source_url": "https://www.legislation.gov.uk/uksi/2009/2399/regulation/13",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": " for paragraphs (1) and (2) substitute— [1 An] EEIG shall not be registered in the Uni",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-29",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2011/88/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2011/88/schedule/2",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "8:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "8"
+    ]
+   ],
+   "excerpt": "mediation settlement enforcement order. [8 An] application under paragraph (1) will be",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-30",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2013/262/rule5/h",
+   "source_url": "https://www.legislation.gov.uk/uksi/2013/262/rule/5/h",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3.21:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3.21"
+    ]
+   ],
+   "excerpt": "plication to vary a costs capping order [3.21 An] application to vary a costs capping ord",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-31",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2015/1769/art5",
+   "source_url": "https://www.legislation.gov.uk/uksi/2015/1769/article/5",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "3:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ]
+   ],
+   "excerpt": "ontinued airworthiness of the aircraft. [3 An] airworthiness directive may— a require ",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-32",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2016/340/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/340/schedule/1",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "ph 4 or 8. Relaxation of restrictions 8 [1 An] application may be made to the court fo",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-33",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2017/1309/art4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2017/1309/article/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "ications for permission in principle 5G [1 An] application for permission in principle",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-34",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2019/384/reg4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/384/regulation/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "hat security. Notice of requirement 17D [1 An] officer of Revenue and Customs must giv",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-35",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2021/1048/art2/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2021/1048/article/2/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": " Challenge to monitor’s remuneration 28 [1 An] administrator or liquidator of a releva",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-36",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2021/1048/art2/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2021/1048/article/2/4",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": " Challenge to monitor’s remuneration 65 [1 An] administrator or liquidator of a releva",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-37",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2021/511/reg8/16",
+   "source_url": "https://www.legislation.gov.uk/uksi/2021/511/regulation/8/16",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "4:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "s in the Registry may be an instrument. [4 An] entity receiving information in accorda",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-38",
+   "rule": "French unit",
+   "coordinate": "uk/uksi/2023/1406/reg10/8",
+   "source_url": "https://www.legislation.gov.uk/uksi/2023/1406/regulation/10/8",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "1:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ]
+   ],
+   "excerpt": "he meaning of “qualifying attestor” 26I [1 An] attestation of previous residence pursu",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-39",
+   "rule": "French unit",
+   "coordinate": "uk/wsi/2014/3254/sch/para11/11",
+   "source_url": "https://www.legislation.gov.uk/wsi/2014/3254/schedule/paragraph/11/11",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "13:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "13"
+    ]
+   ],
+   "excerpt": "n applicable to the period in question. [13 An] election under paragraph (5) must be ma",
+   "grade": "wrong",
+   "note": "the English article 'an' after a paragraph or other number"
+  },
+  {
+   "id": "unit-40",
+   "rule": "French unit",
+   "coordinate": "uk/wsi/2019/51/sch",
+   "source_url": "https://www.legislation.gov.uk/wsi/2019/51/schedule",
+   "field": "text",
+   "new": [
+    "DURATION",
+    "7600:year"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "7600"
+    ]
+   ],
+   "excerpt": "KARA Energy Systems B.V., P.O. Box 570, [7600 AN] Almelo, Plesmanweg 27, 7602 PD Almelo, ",
+   "grade": "wrong",
+   "note": "a Dutch postcode (7600 AN)"
+  },
+  {
+   "id": "date-01",
+   "rule": "French date",
+   "coordinate": "uk/ukpga/1982/11/sch4/para25/a",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1982/11/schedule/4/paragraph/25/a",
+   "field": "text",
+   "new": [
+    "DATE",
+    "1763-10-07"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "7"
+    ],
+    [
+     "NUMBER",
+     "1763"
+    ]
+   ],
+   "excerpt": " reconnus par la Proclamation royale du [7 octobre 1763];",
+   "grade": "right",
+   "note": ""
+  },
+  {
+   "id": "date-02",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2006/937/reg11/2/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2006/937/regulation/11/2/b",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2007-05-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2007"
+    ]
+   ],
+   "excerpt": "sh text, for “1 Medi 2006”, substitute “[15 Mai 2007]”.",
+   "grade": "right",
+   "note": "Welsh 'Mai' is May"
+  },
+  {
+   "id": "date-03",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2006/937/reg11/3/b",
+   "source_url": "https://www.legislation.gov.uk/uksi/2006/937/regulation/11/3/b",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2007-05-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2007"
+    ]
+   ],
+   "excerpt": "sh text, for “1 Medi 2006”, substitute “[15 Mai 2007]”.",
+   "grade": "right",
+   "note": "Welsh 'Mai' is May"
+  },
+  {
+   "id": "date-04",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2018/217/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/2018/217/schedule",
+   "field": "text",
+   "new": [
+    "DATE",
+    "1918-11-11"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "11"
+    ],
+    [
+     "NUMBER",
+     "1918"
+    ]
+   ],
+   "excerpt": "ernard University Lyon 143 boulevard du [11 Novembre 1918], 69622 Villeurbanne cedex, France11 Oct",
+   "grade": "right",
+   "note": "a street named for the date; the date is as written"
+  },
+  {
+   "id": "date-05",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2022/500/reg5/3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2022/500/regulation/5/3",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2022-05-02"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "2022"
+    ]
+   ],
+   "excerpt": "ry in column 2 of the table substitute “[2 Mai 2022]”.",
+   "grade": "right",
+   "note": "Welsh 'Mai' is May"
+  },
+  {
+   "id": "date-06",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/2",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2023-12-22"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "22"
+    ],
+    [
+     "NUMBER",
+     "2023"
+    ]
+   ],
+   "excerpt": "Gesetz)1st January 2024LuxembourgLoi du [22 décembre 2023] relative à l’imposition minimale effect",
+   "grade": "right",
+   "note": ""
+  },
+  {
+   "id": "date-07",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/2",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2022-12-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2022"
+    ]
+   ],
+   "excerpt": " directive (UE) 2022/2523 du Conseil du [15 décembre 2022] visant à assurer un niveau minimum d’im",
+   "grade": "right",
+   "note": ""
+  },
+  {
+   "id": "date-08",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/3",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2023-12-22"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "22"
+    ],
+    [
+     "NUMBER",
+     "2023"
+    ]
+   ],
+   "excerpt": "Gesetz)1st January 2024LuxembourgLoi du [22 décembre 2023] relative à l’imposition minimale effect",
+   "grade": "right",
+   "note": ""
+  },
+  {
+   "id": "date-09",
+   "rule": "French date",
+   "coordinate": "uk/uksi/2025/406/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/406/schedule/3",
+   "field": "text",
+   "new": [
+    "DATE",
+    "2022-12-15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "15"
+    ],
+    [
+     "NUMBER",
+     "2022"
+    ]
+   ],
+   "excerpt": " directive (UE) 2022/2523 du Conseil du [15 décembre 2022] visant à assurer un niveau minimum d’im",
+   "grade": "right",
+   "note": ""
+  },
+  {
+   "id": "space-01",
+   "rule": "space groups",
+   "coordinate": "uk/uksi/2025/1197/reg8/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/8/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1273.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "273"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ed to measure temperatures greater than [1 273,15] K (1 000°C); or3.Radiometer or spectrom",
+   "grade": "right",
+   "note": "kelvin, written with a space and a decimal comma"
+  },
+  {
+   "id": "space-02",
+   "rule": "space groups",
+   "coordinate": "uk/uksi/2025/1197/reg8/4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/8/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1373.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "373"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ed to operate at temperatures exceeding [1 373,15] K (1 100°C). Technical Note: For the pu",
+   "grade": "right",
+   "note": "kelvin, written with a space and a decimal comma"
+  },
+  {
+   "id": "dec-01",
+   "rule": "decimal comma",
+   "coordinate": "uk/ukpga/1971/38/sch2/para1/a",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/paragraph/1/a",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "(2-Chlorophenyl)-1-methyl-8-nitro-4H-[1,[2,4]]triazolo[4,3-a][1,4] benzodiazepine). C",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,2,4], preceded by a comma)"
+  },
+  {
+   "id": "dec-02",
+   "rule": "decimal comma",
+   "coordinate": "uk/ukpga/1971/38/sch2/para1/a",
+   "source_url": "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/paragraph/1/a",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "ethyl-8-nitro-4H-[1,2,4]triazolo[4,3-a][[1,4]]benzodiazepine). Flurazepam. Fonazepam ",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,4])"
+  },
+  {
+   "id": "dec-03",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1987/2183/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2183/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.6"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "60"
+    ]
+   ],
+   "excerpt": " X=0,64 and Y=0,34; green: X=0,29 and Y=[0,60] or X=0,31 and Y=0,595; blue: X=0,15 and",
+   "grade": "right",
+   "note": "a colour coordinate, decimal comma"
+  },
+  {
+   "id": "dec-04",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1989/2233/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1989/2233/schedule/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "4532924379-(3-Methylbut-2-enyloxy)furo-[[3,2]—g]chromen-7-one381344382-Methyl-6-chlor",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([3,2—g])"
+  },
+  {
+   "id": "dec-05",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1994/1191/sch2/pt2",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/1191/schedule/2/part/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "elation equipment6A001a.2.cTitanium IV, [2,2](bis 2-propenolato-methyl, butanolate (L",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses (2,2 then a bracket)"
+  },
+  {
+   "id": "dec-06",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/1996/2817/sch2",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/2817/schedule/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "515310000091-76-92,4-Diamino-6-phenyl-1,[3,5],-triazine2615370003236-53-11,6-Diamino-",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses (1,3,5,- )"
+  },
+  {
+   "id": "dec-07",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2001/3998/reg4B/1",
+   "source_url": "https://www.legislation.gov.uk/uksi/2001/3998/regulation/4B/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "Gamma–butyrolactone and [1,4]–butanediol are excepted from sections 3",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses (an en dash: 1,4–butanediol)"
+  },
+  {
+   "id": "dec-08",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2001/3998/sch1/para1/a",
+   "source_url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/1/paragraph/1/a",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "Adinazolam (1-(8-Chloro-6-phenyl-4H-[1,[2,4]]triazolo[4,3-a][1,4]benzodiazepin-1-yl)",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,2,4])"
+  },
+  {
+   "id": "dec-09",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2001/3998/sch1/para1/a",
+   "source_url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/1/paragraph/1/a",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "Bromo-6-(2-fluorophenyl)-1-methyl-4H-[1,[2,4]]triazolo[4,3-a][1,4] benzodiazepine) Fl",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,2,4])"
+  },
+  {
+   "id": "dec-10",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2002/2059/sch/para5n7",
+   "source_url": "https://www.legislation.gov.uk/uksi/2002/2059/schedule/paragraph/5n7",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "5.7"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "5"
+    ],
+    [
+     "NUMBER",
+     "7"
+    ]
+   ],
+   "excerpt": "TAT (1,3,5,7 tetraacetyl-1,3,[5,7],-tetraaza cyclo-octane) (CAS 41378-98-7",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses (1,3,5,7,- )"
+  },
+  {
+   "id": "dec-11",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2008/1281/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/2008/1281/schedule/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "8-tetranitro-2,4,6,8-tetraazabicyclo-[3,[3,0]]-octanone-3, tetranitrosemiglycouril or",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([3,3,0])"
+  },
+  {
+   "id": "dec-12",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2009/3209/art2/3/b/iv",
+   "source_url": "https://www.legislation.gov.uk/uksi/2009/3209/article/2/3/b/iv",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "after “Bolmantalate.”, insert “[1,4]–Butanediol.”;",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses (an en dash: 1,4–Butanediol)"
+  },
+  {
+   "id": "dec-13",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2012/874/reg5/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2012/874/regulation/5/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "4.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "4"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "nts to take part in an interview), for “[4,5] or 6” in both places, substitute “4”.",
+   "grade": "wrong",
+   "note": "a list of numbers (4,5 or 6)"
+  },
+  {
+   "id": "dec-14",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2013/428/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/2013/428/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "8-tetranitro-2,4,6,8-tetraazabicyclo-[3,[3,0]]-octanone-3, tetranitrosemiglycouril or",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([3,3,0])"
+  },
+  {
+   "id": "dec-15",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2015/704/sch1/para1/a",
+   "source_url": "https://www.legislation.gov.uk/uksi/2015/704/schedule/1/paragraph/1/a",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "bromo-6-(2-chlorophenyl)-1-methyl-4H-[1,[2,4]]triazolo[4,3-a][1,4]benzodiazepine) Clo",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,2,4])"
+  },
+  {
+   "id": "dec-16",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2016/362/sch6/pt2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/362/schedule/6/part/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3.13"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ],
+    [
+     "NUMBER",
+     "13"
+    ]
+   ],
+   "excerpt": "onjunction with thesymbol at item 1, 2, [3,13] or 146Parking place reserved for busesM",
+   "grade": "wrong",
+   "note": "a list of item numbers (3,13)"
+  },
+  {
+   "id": "dec-17",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2016/618/sch3/para8/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/618/schedule/3/paragraph/8/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1316.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1316"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "o-6040 Bq/1Cs-1347,2 Bq/1Cs-13711 Bq/11-[1316,2] Bq/1",
+   "grade": "wrong",
+   "note": "table cells glued: I-131 and 6,2"
+  },
+  {
+   "id": "dec-18",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2016/618/sch3/para9",
+   "source_url": "https://www.legislation.gov.uk/uksi/2016/618/schedule/3/paragraph/9",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "900.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "900"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "100,02 Bq/1Po-2100,01 Bq/1C-1420 Bq/1Sr-[900,4] Bq/1Pu-239/Pu-2400,04 Bq/1Am-2410,06 Bq",
+   "grade": "wrong",
+   "note": "table cells glued: Sr-90 and 0,4"
+  },
+  {
+   "id": "dec-19",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2017/737/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/2017/737/schedule/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "81.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "81"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": " PN<37000,155,80,9≤ SV< 1,2PN<37000,145,[81,2]≤ SV< 2,50,125,82,5≤ SV< 3,50,125,83,5≤ ",
+   "grade": "wrong",
+   "note": "table cells glued: 8 and 1,2"
+  },
+  {
+   "id": "dec-20",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2018/574/sch4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2018/574/schedule/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "11.07"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "11"
+    ],
+    [
+     "NUMBER",
+     "7"
+    ]
+   ],
+   "excerpt": "a, 06-098a, 07-005, 07-007b, 07-010, 07-[011,07]-012, 07-016, 07-026, 07-027 and 07-028",
+   "grade": "wrong",
+   "note": "a list of codes (07-011,07-012)"
+  },
+  {
+   "id": "dec-21",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2019/411/sch2/para67/2",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/411/schedule/2/paragraph/67/2",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "r diodes with a wavelength in the range [1,2] μm-2,0 μm.",
+   "grade": "right",
+   "note": "1,2 µm"
+  },
+  {
+   "id": "dec-22",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2019/704/reg6",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/704/regulation/6",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "ng a capacity of more than three litres [1,5] mg/l 0,1 mg/l.5However, where a ceramic",
+   "grade": "right",
+   "note": "1,5 mg/l"
+  },
+  {
+   "id": "dec-23",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2019/855/sch3C/pt4",
+   "source_url": "https://www.legislation.gov.uk/uksi/2019/855/schedule/3C/part/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "]benzaldehyde oxime433239-24-8Hexahydro[[1,4]]dioxino[2,3-b]-1,4-dioxin-2,3,6,7-tetro",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,4])"
+  },
+  {
+   "id": "dec-24",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch1/para13/2/c/vii",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/1/paragraph/13/2/c/vii",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "52"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "52"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "for “[52,0]” substitute “52.0”;",
+   "grade": "right",
+   "note": "an amendment replacing 52,0 by 52.0"
+  },
+  {
+   "id": "dec-25",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch1/para14/2/a/vii",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/1/paragraph/14/2/a/vii",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.9"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "9"
+    ]
+   ],
+   "excerpt": "for “[0,9]” (in both places it occurs) substitute ",
+   "grade": "right",
+   "note": "an amendment replacing 0,9 by 0.9"
+  },
+  {
+   "id": "dec-26",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch1/para16/2/d/iii/bb",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/1/paragraph/16/2/d/iii/bb",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.05"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "for “[1,05]” (in both places it occurs) substitute ",
+   "grade": "right",
+   "note": "an amendment replacing 1,05 by 1.05"
+  },
+  {
+   "id": "dec-27",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch1/para16/2/d/iii/cc",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/1/paragraph/16/2/d/iii/cc",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.1"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "10"
+    ]
+   ],
+   "excerpt": "for “[1,10]” substitute “1.10”;",
+   "grade": "right",
+   "note": "an amendment replacing 1,10 by 1.10"
+  },
+  {
+   "id": "dec-28",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch1/para27",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/1/paragraph/27",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.6"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "6"
+    ]
+   ],
+   "excerpt": " in paragraph 2, in point (c)(ii), for “[0,6]” substitute “0.6”.",
+   "grade": "right",
+   "note": "an amendment replacing 0,6 by 0.6"
+  },
+  {
+   "id": "dec-29",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch2/para25/c/vi",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/2/paragraph/25/c/vi",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "51.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "51"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "for [51,5]” (in both places it occurs) substitute ",
+   "grade": "right",
+   "note": "an amendment replacing 51,5 by 51.5"
+  },
+  {
+   "id": "dec-30",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch3/para37/3/c/ii",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/3/paragraph/37/3/c/ii",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.05"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "for “[1,05]” (in both places it occurs) substitute ",
+   "grade": "right",
+   "note": "an amendment replacing 1,05 by 1.05"
+  },
+  {
+   "id": "dec-31",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch3/para38/2/g",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/3/paragraph/38/2/g",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.6"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "6"
+    ]
+   ],
+   "excerpt": "for “-[0,6]” substitute “-0.6”;",
+   "grade": "right",
+   "note": "an amendment replacing -0,6 by -0.6 (the sign is not a claim)"
+  },
+  {
+   "id": "dec-32",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2020/1006/sch3/para38/2/q",
+   "source_url": "https://www.legislation.gov.uk/uksi/2020/1006/schedule/3/paragraph/38/2/q",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "for “[0,5]” substitute “0.5”;",
+   "grade": "right",
+   "note": "an amendment replacing 0,5 by 0.5"
+  },
+  {
+   "id": "dec-33",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2024/248/reg3/2/j",
+   "source_url": "https://www.legislation.gov.uk/uksi/2024/248/regulation/3/2/j",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2"
+    ],
+    [
+     "NUMBER",
+     "4"
+    ]
+   ],
+   "excerpt": "hlorophenyl)-2-ethyl-6H-thieno[3,2-f][1,[2,4]]triazolo[4,3-a][1,4] diazepine)” insert",
+   "grade": "wrong",
+   "note": "a chemical locant the guard misses ([1,2,4])"
+  },
+  {
+   "id": "dec-34",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2025/1073/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1073/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": ". Environmental correction K2A If K2A ≤ [0,5] dB, it can be neglected. (b) Electric-m",
+   "grade": "right",
+   "note": "0,5 dB"
+  },
+  {
+   "id": "dec-35",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2025/1197/reg9/3/d",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/1197/regulation/9/3/d",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "773.15"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "773"
+    ],
+    [
+     "NUMBER",
+     "15"
+    ]
+   ],
+   "excerpt": "ater than 313,15 K (40°C) and less than [773,15] K (500°C); and3.Deposition of a tungste",
+   "grade": "right",
+   "note": "773,15 K"
+  },
+  {
+   "id": "dec-36",
+   "rule": "decimal comma",
+   "coordinate": "uk/uksi/2025/407/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/2025/407/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.4"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "40"
+    ]
+   ],
+   "excerpt": "ower packs shall be placed on a support [0,40] m high, unless otherwise required by th",
+   "grade": "right",
+   "note": "0,40 m"
+  },
+  {
+   "id": "dec-37",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2007/2971/reg12/3/a/i",
+   "source_url": "https://www.legislation.gov.uk/wsi/2007/2971/regulation/12/3/a/i",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "3"
+    ],
+    [
+     "NUMBER",
+     "0"
+    ]
+   ],
+   "excerpt": "lly sealed container with a Fo value of [3,00] or more;",
+   "grade": "right",
+   "note": "an Fo value of 3,00"
+  },
+  {
+   "id": "dec-38",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2016/410/sch3",
+   "source_url": "https://www.legislation.gov.uk/wsi/2016/410/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "0.5"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "0"
+    ],
+    [
+     "NUMBER",
+     "5"
+    ]
+   ],
+   "excerpt": "ralU-238 3,0 Bq/1 U-234 2,8 Bq/1 Ra-226 [0,5] Bq/1 Ra-228 0,2 Bq/1 Pb-210 0,2 Bq/1 Po",
+   "grade": "right",
+   "note": "0,5 Bq/l"
+  },
+  {
+   "id": "dec-39",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2017/1041/sch4/para15",
+   "source_url": "https://www.legislation.gov.uk/wsi/2017/1041/schedule/4/paragraph/15",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "2280.02"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "2280"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": ",02 Bq/lU-2340,02 Bq/lRa-2260,04 Bq/lRa-[2280,02] Bq/lNote 5Pb-2100,02 Bq/lPo-2100,01 Bq/",
+   "grade": "wrong",
+   "note": "table cells glued: Ra-228 and 0,02"
+  },
+  {
+   "id": "dec-40",
+   "rule": "decimal comma",
+   "coordinate": "uk/wsi/2019/51/sch",
+   "source_url": "https://www.legislation.gov.uk/wsi/2019/51/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "1.2"
+   ],
+   "old": [
+    [
+     "NUMBER",
+     "1"
+    ],
+    [
+     "NUMBER",
+     "2"
+    ]
+   ],
+   "excerpt": "ed by Wood Waste Technology Ltd., Units [1,2] and 3 Drummond Road, Astonfields Indust",
+   "grade": "wrong",
+   "note": "a list of unit numbers (Units 1,2 and 3)"
+  },
+  {
+   "id": "other-01",
+   "rule": "other",
+   "coordinate": "uk/uksi/1984/887/sch/ptIII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1984/887/schedule/part/III",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "9"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:9"
+    ]
+   ],
+   "excerpt": "Column 1Column 2Column 3£ [9]. On an account transmitted by a trustee",
+   "grade": "right",
+   "note": "an entry number (9.) under a £ column header; 0.2.0 read it as £9"
+  },
+  {
+   "id": "other-02",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/191/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/191/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "11.6"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:11.6"
+    ]
+   ],
+   "excerpt": "ect of each child under the age of 15 £ [11.60] per week 7 Pensions under Article 34(1)",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-03",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/2269/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/2269/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:5500"
+    ]
+   ],
+   "excerpt": " which the application relates)£ 4,800£ [5],500All casesSection 249(3)(a) (Maximum ",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-04",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/771/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/771/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "10"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:10"
+    ]
+   ],
+   "excerpt": " £ 25.00£ 25.00 £ 10.00£ 10.00 £ 10.00£ [10.00] percentage fee on amount to be divided ",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-05",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/771/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/771/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "20"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:20"
+    ]
+   ],
+   "excerpt": "payable£180.00£180.00 basic fee£ 20.00£ [20.00] fee per person per hour or part thereof",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-06",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "15.7"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:15.7"
+    ]
+   ],
+   "excerpt": ".20£109.402.£ 58.40£ 61.903.(a)£ 14.80£ [15.70](b)£ 21.50£ 22.80(c)£ 27.20£ 28.854A.(a)",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-07",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "76.957"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:76.957"
+    ]
+   ],
+   "excerpt": "£ 24.40£ 25.85(b)£ 7.40£ 7.856.£ 72.60£ [76.957].£ 23.25£ 24.65PART IIA.1. Table A. 1. C",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-08",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "31.502"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:31.502"
+    ]
+   ],
+   "excerpt": "n 3£264.90£280.803. Table C. 1.£ 29.70£ [31.502].£ 33.90£ 35.953.£ 63.60£ 67.45PART III.",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-09",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "19.205"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:19.205"
+    ]
+   ],
+   "excerpt": "212.10£224.852.£103.20£109.404.£ 18.10£ [19.205].£ 18.10£ 19.20PART IV. 1.(a)£142.90£151",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-10",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "33.7"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:33.7"
+    ]
+   ],
+   "excerpt": "3.40£ 3.605.£ 14.70£ 15.606.(a)£ 31.80£ [33.70](b)£ 4.50£ 4.807.(a)£ 30.10£ 31.90(b)£ 1",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-11",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "15.6"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:15.6"
+    ]
+   ],
+   "excerpt": ".50£ 4.807.(a)£ 30.10£ 31.90(b)£ 14.70£ [15.60](c)£ 7.40£ 7.85(d)£ 11.90£ 12.608.(a)£ 6",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-12",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "31.9"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:31.9"
+    ]
+   ],
+   "excerpt": ".50£ 4.809.(a)£ 66.90£ 70.90(b)£ 30.10£ [31.90](c)£ 7.40£ 7.8510.(a)£ 7.90£ 8.40(b)£ 22",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-13",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "7.851"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:7.851"
+    ]
+   ],
+   "excerpt": "66.90£ 70.90(b)£ 30.10£ 31.90(c)£ 7.40£ [7.8510].(a)£ 7.90£ 8.40(b)£ 22.70£ 24.05(c)£ 7.",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-14",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "57.6519"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:57.6519"
+    ]
+   ],
+   "excerpt": " 77.70£ 82.3517.£ 7.40£ 7.8518.£ 54.40£ [57.6519].£ 11.30£ 12.0020.(a)£ 60.70£ 64.35(b)£ ",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-15",
+   "rule": "other",
+   "coordinate": "uk/uksi/1987/871/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1987/871/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "47.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:47.5"
+    ]
+   ],
+   "excerpt": "35(b)£ 18.10£ 19.20PART V.1.(a)£ 44.80£ [47.50](b)£ 22.70£ 24.05(c)£ 18.70£ 19.802.(a)£",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-16",
+   "rule": "other",
+   "coordinate": "uk/uksi/1988/423/sch1/para4/3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1988/423/schedule/1/paragraph/4/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "75.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:75.5"
+    ]
+   ],
+   "excerpt": "£106Committals for sentence£ 32.50£ 40£ [75.50]£110London rate£ 34.50£ 42£ 79.50£114ADV",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-17",
+   "rule": "other",
+   "coordinate": "uk/uksi/1990/449/reg4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/449/regulation/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "8.25"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:8.25"
+    ]
+   ],
+   "excerpt": "20(1)(b)(ii)£25.25£26.5023(2)(a)£ 7.75£ [8.25]",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-18",
+   "rule": "other",
+   "coordinate": "uk/uksi/1990/470/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/470/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "6"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:6"
+    ]
+   ],
+   "excerpt": " copies: each page.£ 0.25£ 0.25 £ 6.50£ [6.00] £13.00£12.00 £ 3.50£ 3.00 £ 3.50£ 3.00",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-19",
+   "rule": "other",
+   "coordinate": "uk/uksi/1990/474/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/474/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "89"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:89"
+    ]
+   ],
+   "excerpt": "ion or conviction and sentence £ 68.50£ [89.00] e Any appeal against sentence including",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-20",
+   "rule": "other",
+   "coordinate": "uk/uksi/1990/476/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/476/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "17"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:17"
+    ]
+   ],
+   "excerpt": " allowed) 17½% 17½% £ 19.00 to £ 88.00£ [17.00] to £ 81.00 £ 47.00£ 43.00 basic fee£ 11",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-21",
+   "rule": "other",
+   "coordinate": "uk/uksi/1990/476/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/476/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "17"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:17"
+    ]
+   ],
+   "excerpt": "ary creditors 5% 5% £ 19.00 to £ 88.00£ [17.00] to £ 81.00 basic fee£ 6.00£ 5.00additio",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-22",
+   "rule": "other",
+   "coordinate": "uk/uksi/1990/476/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1990/476/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "6"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:6"
+    ]
+   ],
+   "excerpt": "% £ 21.00£ 19.00 £ 16.00£ 15.00 £ 7.00£ [6.00] basic fee£ 12.00£ 11.00additional fee f",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-23",
+   "rule": "other",
+   "coordinate": "uk/uksi/1991/454/reg3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1991/454/regulation/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "8.0041"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:8.0041"
+    ]
+   ],
+   "excerpt": "1.00£11.7034(1)£11.75£12.9034(2)£ 7.50£ [8.0041](1)£ 8.25£ 8.80",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-24",
+   "rule": "other",
+   "coordinate": "uk/uksi/1991/566/sch3",
+   "source_url": "https://www.legislation.gov.uk/uksi/1991/566/schedule/3",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "60"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:60"
+    ]
+   ],
+   "excerpt": ", including any note of appeal £ 42.50£ [60.00] b Hearing in appeal against conviction ",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-25",
+   "rule": "other",
+   "coordinate": "uk/uksi/1992/1228/sch2/para4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/1228/schedule/2/paragraph/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "46.502"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:46.502"
+    ]
+   ],
+   "excerpt": "payable in these circumstances.£ 31.50£ [46.502]. Hearing (other than described in parag",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-26",
+   "rule": "other",
+   "coordinate": "uk/uksi/1992/1228/sch2/para4",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/1228/schedule/2/paragraph/4",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "8.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:8.5"
+    ]
+   ],
+   "excerpt": "Additional fee if held in prison£ 8.50£ [8.50](b) Elswhere within 60 miles journey by ",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-27",
+   "rule": "other",
+   "coordinate": "uk/uksi/1992/371/sch1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/371/schedule/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "61.95"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:61.95"
+    ]
+   ],
+   "excerpt": "cluding sending extract decree £ 41.35£ [61.95] 4 All work to and including sending ext",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-28",
+   "rule": "other",
+   "coordinate": "uk/uksi/1992/753/reg9",
+   "source_url": "https://www.legislation.gov.uk/uksi/1992/753/regulation/9",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "801"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:801"
+    ]
+   ],
+   "excerpt": " Up to £350£35,000£ 351 — £ 800£30,000£ [801] — £1,200£25,000£1,201 — £1,600£20,000£1",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-29",
+   "rule": "other",
+   "coordinate": "uk/uksi/1993/296/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/296/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "50"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:50"
+    ]
+   ],
+   "excerpt": "d not exceeding in any case £4,000.00 £ [50.00] in respect of every £500.00 or part of ",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-30",
+   "rule": "other",
+   "coordinate": "uk/uksi/1993/418/reg3/1",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/418/regulation/3/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "36.9"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:36.9"
+    ]
+   ],
+   "excerpt": "places where it appears)£113.00£ 35.90£ [36.90]",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-31",
+   "rule": "other",
+   "coordinate": "uk/uksi/1993/486/sch/ptII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1993/486/schedule/part/II",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "50"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:50"
+    ]
+   ],
+   "excerpt": "14.00 £ 14.00 £100.00 £150.00 £ 50.00 £ [50.00] 5% of the sum of the outlays and remune",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-32",
+   "rule": "other",
+   "coordinate": "uk/uksi/1994/3265/sch/ptII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/3265/schedule/part/II",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "18"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:18"
+    ]
+   ],
+   "excerpt": "£ 21.00£ [18.00] in Sheriff Cour appointments £ 15.00£ 1",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-33",
+   "rule": "other",
+   "coordinate": "uk/uksi/1994/3265/sch/ptII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1994/3265/schedule/part/II",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "14"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:14"
+    ]
+   ],
+   "excerpt": "ur appointments £ 15.00£ 13.00 £ 16.00£ [14.00] maximum fee payable £390.00£340.00 £ 9.",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-34",
+   "rule": "other",
+   "coordinate": "uk/uksi/1996/1444/reg3/a",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/1444/regulation/3/a",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "3.5"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:3.5"
+    ]
+   ],
+   "excerpt": "y 2£15.00(ii)entry 3£10.00(iii)entry 4£ [3.50](iv)entry 5£ 3.50(v)entry 6£ 3.50(vi)ent",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-35",
+   "rule": "other",
+   "coordinate": "uk/uksi/1996/2447/sch3/ptVIII",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/2447/schedule/3/part/VIII",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "191.42"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:191.42"
+    ]
+   ],
+   "excerpt": " waiting is 2 hours or less; or£143.93£ [191.42](b) where aggregate time engaged or wait",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-36",
+   "rule": "other",
+   "coordinate": "uk/uksi/1996/628/sch",
+   "source_url": "https://www.legislation.gov.uk/uksi/1996/628/schedule",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "70"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:70"
+    ]
+   ],
+   "excerpt": "o feeNo fee up to £3,000£50,000£ 70.00£ [70.00] where the amount of the said estate exc",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-37",
+   "rule": "other",
+   "coordinate": "uk/uksi/1997/2505/sch1/ptI",
+   "source_url": "https://www.legislation.gov.uk/uksi/1997/2505/schedule/1/part/I",
+   "field": "text_after",
+   "new": [
+    "NUMBER",
+    "187"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:187"
+    ]
+   ],
+   "excerpt": "89£506£56 £364£223£56 £364£223£56 £187£ [187]£56",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-38",
+   "rule": "other",
+   "coordinate": "uk/uksi/2005/676/sch8/pt1A",
+   "source_url": "https://www.legislation.gov.uk/uksi/2005/676/schedule/8/part/1A",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "115"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:115"
+    ]
+   ],
+   "excerpt": "ate nor relating to on-site mixing£557£ [115] per hour workedLicence to manufacture a",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-39",
+   "rule": "other",
+   "coordinate": "uk/wsi/2000/978/reg5/1",
+   "source_url": "https://www.legislation.gov.uk/wsi/2000/978/regulation/5/1",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "42.8"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:42.8"
+    ]
+   ],
+   "excerpt": "laces where it appears)£ 150.50£ 42.00£ [42.80]",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  },
+  {
+   "id": "other-40",
+   "rule": "other",
+   "coordinate": "uk/wsi/2004/1605/sch",
+   "source_url": "https://www.legislation.gov.uk/wsi/2004/1605/schedule",
+   "field": "text",
+   "new": [
+    "NUMBER",
+    "71.83"
+   ],
+   "old": [
+    [
+     "MONEY",
+     "GBP:71.83"
+    ]
+   ],
+   "excerpt": "4 months£ 31.40£ 26.1612 months£ 84.60£ [71.83]",
+   "grade": "wrong",
+   "note": "a £ amount read as a bare number: the number before took its £"
+  }
+ ]
+}

@@ -1287,3 +1287,23 @@ UNGROUNDED_FIGURE for the 3 negative pairs):
 On 0.2.0, "279,99 €" read as the numbers 279 and 99, "30 heures" as 30, "5 novembre 2026" as 5 and 2026, "1er
 mars 2026" as 2026. On the new code each reads as its English twin: `EUR:279.99`, `30:hour`, `2026-11-05`,
 `2026-03-01`. Raw: `results/claims75.json`.
+
+
+## French figure formats on the corpus (stop 75, 2026-10-21; method in `docs/GRID.md`)
+
+Aim: what the new rules change on English legislation, beyond the gate. Every text field of `data/uk` (134,219
+files, 6,449,504 texts) read by 0.2.0 and by the new code. Machine: this Mac, 10 processes, 9.5 minutes. Spend:
+none.
+
+| Rule | Changed claims | Texts | Graded (by Claude) | Right | Wrong |
+|---|---|---|---|---|---|
+| French unit ("an" after a number: 6,734) | 6,744 | 3,576 | 40 | 0 | 40 |
+| Trailing currency ("£" in tables: 1,938) | 1,963 | 240 | 40 | 35 | 5 |
+| Decimal comma | 1,808 | 753 | 40 | 17 | 23 |
+| Other (a £ amount become a bare number: 387) | 390 | 94 | 40 | 1 | 39 |
+| French date | 9 | 7 | 9 | 9 | 0 |
+| Space groups | 2 | 2 | 2 | 2 | 0 |
+
+4,573 texts changed (0.07 %); the gate's texts changed none. The 35 right trailing-currency claims keep their value
+only by taking the next table cell's "£", which then reads as a bare number (the "other" row). Narrower rules are
+proposed in GRID, for your go. Raw: `results/claims75_corpus.json`, `results/claims75_grades.csv`.

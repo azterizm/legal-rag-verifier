@@ -27,7 +27,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Stop 73, in `scripts/consens.py`: Iris.ai's ConSens per sentence, Llama 3.2 1B on one L40S,
   against the LLM judge on the second fresh test. No package change.
 - Stop 75, in `scripts/claims75.py`: the French formats change no claim in the 31,850 English
-  texts of the batteries and answers.
+  texts of the batteries and answers, but change 4,573 of the 6.4 million texts of the UK corpus,
+  mostly wrongly ("an" after a number, "£" in flattened tables, chemical locants). Narrower
+  rules are proposed before any release.
 
 ## [0.2.0] - 2026-10-13
 

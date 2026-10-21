@@ -169,5 +169,6 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
   as 18.19 and 20 (a citation, "paragraphs 18,19", is read first). A plain space groups digits only before
   a decimal comma or a currency ("5 000 mAh" is 5 and 0; a no-break space groups always). Currency codes
   are read after the number only: "EUR 279,99" is the bare number 279.99. "an" after a number is a year
-  ("2 ans", and an English "In 2024 an employee"). French number words, modal verbs and qualifiers are
-  not read.
+  ("2 ans", and an English "In 2024 an employee"). A "£" after a number is read as its currency, which
+  in a flattened table ("£ 8,100£ 9,315") takes the next cell's "£". French number words, modal verbs
+  and qualifiers are not read. Measured on the corpus in stop 75; narrower rules are proposed.

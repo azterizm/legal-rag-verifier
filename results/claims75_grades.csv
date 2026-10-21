@@ -1,0 +1,172 @@
+id,grade,note
+cur-01,right,"value right; the £ is the next cell's, which loses its currency"
+cur-02,right,"value right; the £ is the next cell's, which loses its currency"
+cur-03,right,"value right; the £ is the next cell's, which loses its currency"
+cur-04,right,"value right; the £ is the next cell's, which loses its currency"
+cur-05,right,"value right; the £ is the next cell's, which loses its currency"
+cur-06,right,"value right; the £ is the next cell's, which loses its currency"
+cur-07,right,"value right; the £ is the next cell's, which loses its currency"
+cur-08,right,"value right; the £ is the next cell's, which loses its currency"
+cur-09,right,"value right; the £ is the next cell's, which loses its currency"
+cur-10,right,"value right; the £ is the next cell's, which loses its currency"
+cur-11,right,"value right; the £ is the next cell's, which loses its currency"
+cur-12,right,"value right; the £ is the next cell's, which loses its currency"
+cur-13,right,"value right; the £ is the next cell's, which loses its currency"
+cur-14,right,"value right; the £ is the next cell's, which loses its currency"
+cur-15,right,"value right; the £ is the next cell's, which loses its currency"
+cur-16,right,"value right; the £ is the next cell's, which loses its currency"
+cur-17,right,"value right; the £ is the next cell's, which loses its currency"
+cur-18,right,"value right; the £ is the next cell's, which loses its currency"
+cur-19,right,"value right; the £ is the next cell's, which loses its currency"
+cur-20,right,"value right; the £ is the next cell's, which loses its currency"
+cur-21,right,"value right; the £ is the next cell's, which loses its currency"
+cur-22,right,"value right; the £ is the next cell's, which loses its currency"
+cur-23,right,"value right; the £ is the next cell's, which loses its currency"
+cur-24,right,"value right; the £ is the next cell's, which loses its currency"
+cur-25,right,"value right; the £ is the next cell's, which loses its currency"
+cur-26,wrong,10 is a page count; the £ is the next cell's
+cur-27,right,"value right; the £ is the next cell's, which loses its currency"
+cur-28,right,"value right; the £ is the next cell's, which loses its currency"
+cur-29,right,"value right; the £ is the next cell's, which loses its currency"
+cur-30,right,"value right; the £ is the next cell's, which loses its currency"
+cur-31,right,"value right; the £ is the next cell's, which loses its currency"
+cur-32,right,"value right; the £ is the next cell's, which loses its currency"
+cur-33,wrong,a year; the date 13th April 2005 is lost
+cur-34,right,value right; same as on 0.2.0
+cur-35,wrong,a category number under a £ column header
+cur-36,wrong,a year in a date; the £ is the next cell's
+cur-37,wrong,a regulation number (3/2008) glued to the next text
+cur-38,right,"value right; the £ is the next cell's, which loses its currency"
+cur-39,right,"value right; the £ is the next cell's, which loses its currency"
+cur-40,right,"value right; the £ is the next cell's, which loses its currency"
+date-01,right,
+date-02,right,Welsh 'Mai' is May
+date-03,right,Welsh 'Mai' is May
+date-04,right,a street named for the date; the date is as written
+date-05,right,Welsh 'Mai' is May
+date-06,right,
+date-07,right,
+date-08,right,
+date-09,right,
+dec-01,wrong,"a chemical locant the guard misses ([1,2,4], preceded by a comma)"
+dec-02,wrong,"a chemical locant the guard misses ([1,4])"
+dec-03,right,"a colour coordinate, decimal comma"
+dec-04,wrong,"a chemical locant the guard misses ([3,2—g])"
+dec-05,wrong,"a chemical locant the guard misses (2,2 then a bracket)"
+dec-06,wrong,"a chemical locant the guard misses (1,3,5,- )"
+dec-07,wrong,"a chemical locant the guard misses (an en dash: 1,4–butanediol)"
+dec-08,wrong,"a chemical locant the guard misses ([1,2,4])"
+dec-09,wrong,"a chemical locant the guard misses ([1,2,4])"
+dec-10,wrong,"a chemical locant the guard misses (1,3,5,7,- )"
+dec-11,wrong,"a chemical locant the guard misses ([3,3,0])"
+dec-12,wrong,"a chemical locant the guard misses (an en dash: 1,4–Butanediol)"
+dec-13,wrong,"a list of numbers (4,5 or 6)"
+dec-14,wrong,"a chemical locant the guard misses ([3,3,0])"
+dec-15,wrong,"a chemical locant the guard misses ([1,2,4])"
+dec-16,wrong,"a list of item numbers (3,13)"
+dec-17,wrong,"table cells glued: I-131 and 6,2"
+dec-18,wrong,"table cells glued: Sr-90 and 0,4"
+dec-19,wrong,"table cells glued: 8 and 1,2"
+dec-20,wrong,"a list of codes (07-011,07-012)"
+dec-21,right,"1,2 µm"
+dec-22,right,"1,5 mg/l"
+dec-23,wrong,"a chemical locant the guard misses ([1,4])"
+dec-24,right,"an amendment replacing 52,0 by 52.0"
+dec-25,right,"an amendment replacing 0,9 by 0.9"
+dec-26,right,"an amendment replacing 1,05 by 1.05"
+dec-27,right,"an amendment replacing 1,10 by 1.10"
+dec-28,right,"an amendment replacing 0,6 by 0.6"
+dec-29,right,"an amendment replacing 51,5 by 51.5"
+dec-30,right,"an amendment replacing 1,05 by 1.05"
+dec-31,right,"an amendment replacing -0,6 by -0.6 (the sign is not a claim)"
+dec-32,right,"an amendment replacing 0,5 by 0.5"
+dec-33,wrong,"a chemical locant the guard misses ([1,2,4])"
+dec-34,right,"0,5 dB"
+dec-35,right,"773,15 K"
+dec-36,right,"0,40 m"
+dec-37,right,"an Fo value of 3,00"
+dec-38,right,"0,5 Bq/l"
+dec-39,wrong,"table cells glued: Ra-228 and 0,02"
+dec-40,wrong,"a list of unit numbers (Units 1,2 and 3)"
+other-01,right,an entry number (9.) under a £ column header; 0.2.0 read it as £9
+other-02,wrong,a £ amount read as a bare number: the number before took its £
+other-03,wrong,a £ amount read as a bare number: the number before took its £
+other-04,wrong,a £ amount read as a bare number: the number before took its £
+other-05,wrong,a £ amount read as a bare number: the number before took its £
+other-06,wrong,a £ amount read as a bare number: the number before took its £
+other-07,wrong,a £ amount read as a bare number: the number before took its £
+other-08,wrong,a £ amount read as a bare number: the number before took its £
+other-09,wrong,a £ amount read as a bare number: the number before took its £
+other-10,wrong,a £ amount read as a bare number: the number before took its £
+other-11,wrong,a £ amount read as a bare number: the number before took its £
+other-12,wrong,a £ amount read as a bare number: the number before took its £
+other-13,wrong,a £ amount read as a bare number: the number before took its £
+other-14,wrong,a £ amount read as a bare number: the number before took its £
+other-15,wrong,a £ amount read as a bare number: the number before took its £
+other-16,wrong,a £ amount read as a bare number: the number before took its £
+other-17,wrong,a £ amount read as a bare number: the number before took its £
+other-18,wrong,a £ amount read as a bare number: the number before took its £
+other-19,wrong,a £ amount read as a bare number: the number before took its £
+other-20,wrong,a £ amount read as a bare number: the number before took its £
+other-21,wrong,a £ amount read as a bare number: the number before took its £
+other-22,wrong,a £ amount read as a bare number: the number before took its £
+other-23,wrong,a £ amount read as a bare number: the number before took its £
+other-24,wrong,a £ amount read as a bare number: the number before took its £
+other-25,wrong,a £ amount read as a bare number: the number before took its £
+other-26,wrong,a £ amount read as a bare number: the number before took its £
+other-27,wrong,a £ amount read as a bare number: the number before took its £
+other-28,wrong,a £ amount read as a bare number: the number before took its £
+other-29,wrong,a £ amount read as a bare number: the number before took its £
+other-30,wrong,a £ amount read as a bare number: the number before took its £
+other-31,wrong,a £ amount read as a bare number: the number before took its £
+other-32,wrong,a £ amount read as a bare number: the number before took its £
+other-33,wrong,a £ amount read as a bare number: the number before took its £
+other-34,wrong,a £ amount read as a bare number: the number before took its £
+other-35,wrong,a £ amount read as a bare number: the number before took its £
+other-36,wrong,a £ amount read as a bare number: the number before took its £
+other-37,wrong,a £ amount read as a bare number: the number before took its £
+other-38,wrong,a £ amount read as a bare number: the number before took its £
+other-39,wrong,a £ amount read as a bare number: the number before took its £
+other-40,wrong,a £ amount read as a bare number: the number before took its £
+space-01,right,"kelvin, written with a space and a decimal comma"
+space-02,right,"kelvin, written with a space and a decimal comma"
+unit-01,wrong,the English article 'an' after a paragraph or other number
+unit-02,wrong,the English article 'an' after a paragraph or other number
+unit-03,wrong,the English article 'an' after a paragraph or other number
+unit-04,wrong,the English article 'an' after a paragraph or other number
+unit-05,wrong,the English article 'an' after a paragraph or other number
+unit-06,wrong,the English article 'an' after a paragraph or other number
+unit-07,wrong,the English article 'an' after a paragraph or other number
+unit-08,wrong,the English article 'an' after a paragraph or other number
+unit-09,wrong,the English article 'an' after a paragraph or other number
+unit-10,wrong,the English article 'an' after a paragraph or other number
+unit-11,wrong,the English article 'an' after a paragraph or other number
+unit-12,wrong,the English article 'an' after a paragraph or other number
+unit-13,wrong,the English article 'an' after a paragraph or other number
+unit-14,wrong,the English article 'an' after a paragraph or other number
+unit-15,wrong,'categories 3 to 11 an amount': the English article
+unit-16,wrong,the English article 'an' after a paragraph or other number
+unit-17,wrong,the English article 'an' after a paragraph or other number
+unit-18,wrong,the English article 'an' after a paragraph or other number
+unit-19,wrong,the English article 'an' after a paragraph or other number
+unit-20,wrong,the English article 'an' after a paragraph or other number
+unit-21,wrong,the English article 'an' after a paragraph or other number
+unit-22,wrong,the English article 'an' after a paragraph or other number
+unit-23,wrong,the English article 'an' after a paragraph or other number
+unit-24,wrong,the English article 'an' after a paragraph or other number
+unit-25,wrong,the English article 'an' after a paragraph or other number
+unit-26,wrong,the English article 'an' after a paragraph or other number
+unit-27,wrong,the English article 'an' after a paragraph or other number
+unit-28,wrong,the English article 'an' after a paragraph or other number
+unit-29,wrong,the English article 'an' after a paragraph or other number
+unit-30,wrong,the English article 'an' after a paragraph or other number
+unit-31,wrong,the English article 'an' after a paragraph or other number
+unit-32,wrong,the English article 'an' after a paragraph or other number
+unit-33,wrong,the English article 'an' after a paragraph or other number
+unit-34,wrong,the English article 'an' after a paragraph or other number
+unit-35,wrong,the English article 'an' after a paragraph or other number
+unit-36,wrong,the English article 'an' after a paragraph or other number
+unit-37,wrong,the English article 'an' after a paragraph or other number
+unit-38,wrong,the English article 'an' after a paragraph or other number
+unit-39,wrong,the English article 'an' after a paragraph or other number
+unit-40,wrong,a Dutch postcode (7600 AN)
