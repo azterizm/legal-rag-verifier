@@ -3569,8 +3569,8 @@ on the second fresh test, with the threshold fixed on the first test before the 
 compares the perplexity of an answer after its source with its perplexity after an empty source, read from a small
 evaluator model, with no judge reply. The paper scores whole answers; here each sentence is scored after the
 question and the answer so far. Stop 48 measured the same contrast from the generator itself (log-likelihood per
-token with and without the source) and failed its gate: 0.82 over all sentences, 0.56 to 0.58 within one kind of
-answer. ConSens differs in four ways: a separate 1B evaluator, perplexity as the mean of 1 / p, closed-class and
+token with and without the source) and failed its gate: that measure scored 0.82 over all sentences of the first
+test and 0.67 within one kind of answer; the gate's readings on the held-out folds were 0.58 and 0.56. ConSens differs in four ways: a separate 1B evaluator, perplexity as the mean of 1 / p, closed-class and
 question words left out, and the source emptied inside one template. The sigmoid does not change an AUROC.
 
 - Sets: the first fresh test, 354 graded segmenter sentences (356 with the 2 unsure), for the thresholds only; the
@@ -3632,3 +3632,21 @@ question words left out, and the source emptied inside one template. The sigmoid
   evaluator is a second model, read in two passes; the generator reading its own likelihood was stop 48.
 - Spend: Modal run `stop73`, one L40S, expected about $0.40 (about 10 GPU minutes with the download), stage stop
   $1.50 in code ($7.98 left of $55).
+
+### Stop 73: thresholds fixed on the first test (2026-10-21)
+
+- Smoke run: 5 sentences, finite on both sides, timed; not a result, not kept. It carried the image build and
+  the download ($0.07).
+- First test: 356 sentences in one call on one L40S, 10.8 s after 8.0 s of loading, no failure; 2 sentences
+  scored all their words, none had no word. Raw: `results/fresh/scores/consens.json`.
+- Thresholds, `results/fresh_arms/consens.json`, sha256
+  `6f58655018293ed3122bb850896dfb39f2c375ad237d97114f57036eb3241a11` (set in `consens.py`; `report` refuses
+  another file):
+  - claim check then ConSens, and ConSens alone: **-0.006** (the paper's natural cut is 0);
+  - from the with-source sentences only, both arms: -0.733.
+- On the first test itself, in-sample and not a result: AUROC 0.755 (0.705 to 0.803) over all sentences and
+  **0.578 within the kind of answer** (with source 0.693, closed-book 0.535), against 0.82 and 0.67 for stop 48's
+  dependence read from the generator. Accuracy: claim check then ConSens 71.2 % (51 false rollbacks, 97 caught),
+  ConSens alone 69.2 %, against 93.8 % for the judge and 68.7 % for V0 on this test.
+- Spend so far: Modal $0.09 ($47.10 of $55).
+

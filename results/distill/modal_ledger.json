@@ -10526,5 +10526,19 @@
   "seconds": 19.7,
   "usd": 0.0122,
   "note": "pool turn: 8 answers, 0 errors"
+ },
+ {
+  "run": "stop73 fresh consens",
+  "gpu": "L40S",
+  "seconds": 111.6,
+  "usd": 0.0695,
+  "note": "fresh probe: 5 sentences"
+ },
+ {
+  "run": "stop73 fresh consens",
+  "gpu": "L40S",
+  "seconds": 26.0,
+  "usd": 0.0162,
+  "note": "fresh: 356 sentences"
  }
 ]

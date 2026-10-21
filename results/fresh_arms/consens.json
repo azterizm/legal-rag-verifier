@@ -1,0 +1,133 @@
+{
+ "set": "fresh",
+ "sentences": 354,
+ "thresholds": {
+  "claim check then ConSens": {
+   "all": -0.005983,
+   "with source": -0.733039
+  },
+  "ConSens alone": {
+   "all": -0.005983,
+   "with source": -0.733039
+  }
+ },
+ "arms": {
+  "claim check then ConSens": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 51,
+    "caught": 97,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.712
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 33,
+    "caught": 32,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.682
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 18,
+    "caught": 65,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.739
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 13,
+    "caught": 7,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.828
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 38,
+    "caught": 90,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.613
+   }
+  },
+  "ConSens alone": {
+   "total": {
+    "texts": 354,
+    "right": 206,
+    "wrong": 148,
+    "false_rollbacks": 47,
+    "caught": 86,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.692
+   },
+   "software": {
+    "texts": 170,
+    "right": 117,
+    "wrong": 53,
+    "false_rollbacks": 30,
+    "caught": 31,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.694
+   },
+   "statutes": {
+    "texts": 184,
+    "right": 89,
+    "wrong": 95,
+    "false_rollbacks": 17,
+    "caught": 55,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.69
+   },
+   "source answers": {
+    "texts": 163,
+    "right": 141,
+    "wrong": 22,
+    "false_rollbacks": 10,
+    "caught": 6,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.84
+   },
+   "closed answers": {
+    "texts": 191,
+    "right": 65,
+    "wrong": 126,
+    "false_rollbacks": 37,
+    "caught": 80,
+    "false_rollbacks_by_nli": 0,
+    "caught_by_nli": 0,
+    "accuracy": 0.565
+   }
+  }
+ },
+ "auroc": {
+  "total": {
+   "auc": 0.755,
+   "low": 0.705,
+   "high": 0.803,
+   "right": 206,
+   "wrong": 148
+  },
+  "within kind": 0.5783,
+  "source answers": 0.6928,
+  "closed answers": 0.5349
+ },
+ "scores_sha256": "b6770be4c7dcf139fe63ce8242b894877f6c14ef4699a01a3afec2d17dedb8cc"
+}

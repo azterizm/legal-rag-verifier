@@ -69,7 +69,7 @@ JUDGE = "qwen27-ar4"  # stop 61: short reply, figures to the judge
 # The committed figures the comparison rows must reproduce (stops 60 and 61), second test.
 AS_COMMITTED = {"judge": 0.901, "V0": 0.583, "claim check only": 0.623, "no auditor": 0.556}
 # sha256 of results/fresh_arms/consens.json once the thresholds are fixed (commit 2, GRID).
-THRESHOLDS_SHA = ""
+THRESHOLDS_SHA = "6f58655018293ed3122bb850896dfb39f2c375ad237d97114f57036eb3241a11"
 
 
 # ---------------------------------------------------------------------- helpers (also on Modal)
