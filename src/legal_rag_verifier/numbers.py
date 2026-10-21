@@ -1,4 +1,8 @@
-"""Number parsing shared by the claim extractors: digits, magnitudes and English number words."""
+"""Number parsing shared by the claim extractors: digits, magnitudes and English number words.
+
+Numerals are read in English and French formats: ``68,400`` and ``12.5``, and ``279,99`` (decimal
+comma) and ``1 299,99`` (digit groups split by a space).
+"""
 
 from __future__ import annotations
 
@@ -50,8 +54,20 @@ _WORD = "(?:" + "|".join(sorted([*_UNITS, *_SCALES], key=len, reverse=True)) + "
 #: One or more English number words ("fifty-two", "one hundred and twenty").
 NUMBER_WORDS_RE = rf"\b{_WORD}(?:(?:[\s-]+(?:and[\s-]+)?){_WORD})*\b"
 
-#: A numeral with optional thousands separators and decimals ("68,400", "12.5", "68400").
-NUMERAL_RE = r"(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?"
+# A decimal comma: 1 or 2 digits and no digit after them ("279,99", "1,2 kg"). Not a list of
+# numbers ("2,4,6"), a primed or hyphenated chemical locant ("3,3'-", "1,3-butadiene").
+_DECIMAL_COMMA = r",\d{1,2}(?!\d|,\d|['’]|[-‐]\s?[^\W\d_])"
+#: A numeral with optional thousands separators and decimals ("68,400", "12.5", "68400"); in
+#: French formats a decimal comma ("279,99") and digit groups split by a no-break or narrow
+#: no-break space ("1 299"), or by a plain space before a decimal comma ("1 299,99").
+NUMERAL_RE = (
+    r"(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?"
+    rf"|(?<!\d)\d{{1,3}}(?:[\u00a0\u202f]\d{{3}})+(?!\d)(?:{_DECIMAL_COMMA}|\.\d+)?"
+    rf"|(?<!\d)\d{{1,3}}(?: \d{{3}})+{_DECIMAL_COMMA}"
+    rf"|\d+(?:\.\d+|{_DECIMAL_COMMA})?)"
+)
+
+_GROUP_SPACES = str.maketrans("", "", " \u00a0\u202f")
 
 _MAGNITUDES = {
     "k": Decimal(1_000),
@@ -73,9 +89,11 @@ def canonical_decimal(value: Decimal) -> str:
 
 
 def parse_numeral(text: str) -> Decimal | None:
-    """Parse ``68,400`` / ``12.5``; ``None`` when the text is not a numeral."""
+    """Parse ``68,400`` / ``12.5`` / ``279,99`` / ``1 299,99``; ``None`` when not a numeral."""
+    text = text.translate(_GROUP_SPACES)
+    text = text.replace(",", ".") if re.fullmatch(r"\d+,\d{1,2}", text) else text.replace(",", "")
     try:
-        return Decimal(text.replace(",", ""))
+        return Decimal(text)
     except InvalidOperation:
         return None
 

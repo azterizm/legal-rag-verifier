@@ -3777,3 +3777,33 @@ compared as (kind, value, start, end).
 Then the full checks (`ruff`, `mypy`, `pytest`). Records: `docs/measurements.md` (the gate's counts, the pairs on
 0.2.0 and on the new code), the changelog's Unreleased section, `docs/API.md` §6 limits. CPU only, no spend. No
 release in this stop: 0.3.0 follows the product test, on your go.
+
+
+### Stop 75: results (2026-10-21)
+
+- **Gate: no text changed its claims.** 31,850 texts, 49,292 claims, the same before and after in every set
+  (tier 1: dev 11,967 texts, held-out 15,390, first fresh test 1,761, second 524, software 418; tier 2: stop 71's
+  answers 1,790 sentences). Nothing to fix or justify. Report: `results/claims75.json`; snapshot `before` sha256
+  `12d30b59cac31b77df2721ff1c16a3427c6280fb8f6c352eb9745c4d3c0ba02f`, taken twice (before and after the method
+  commit), identical.
+- **How much the gate tests the new rules: little.** Read after the run, these texts hold only 4 of the forms the
+  new rules act on: a comma before 1 or 2 digits twice (`np.arange(3,7)`, `np.arange(3,7,2)` in a software
+  passage, where the bare-number rule already skips a number after a bracket); a number before "an" once ("£12.21
+  an hour", where money ranks above duration); plain-space digit groups once ("HTTP/1.1 405", not grouped since no
+  currency follows). No trailing currency, no no-break space between digits, no French month or unit word. The
+  zero shows that English figures in the batteries and in the generators' answers read as before; it does not test
+  the guards against the corpus's 7,049 comma forms.
+- Pairs: 31 of 31 as expected on the new code; 11 of 31 on 0.2.0 (the 3 negative pairs, and the 8 money pairs
+  whose listing and answer share one format, which read alike as two bare numbers or as English money). Every
+  French unit, date, decimal comma and space-grouped pair rolled back on 0.2.0.
+- Tests: 57 of the new tests failed on the 0.2.0 code and pass now; the readings that must not change, the
+  never-raises property and the claim spans passed on both. Full checks green: 369 tests.
+- Correction to the method's rule 1: "paragraphs 18,19 and 20" reads as three citations, since citations rank
+  above figures; the 18.19 reading holds for a list no citation covers ("pages 18,19 and 20" → 18.19 and 20).
+  Read after the run, on that phrase only; the rule is unchanged. Stated in `docs/API.md` §6 with the other
+  limits.
+- One rule shape changed in the code against the method's wording, not its meaning: in `NUMERAL_RE` the English
+  thousands branch comes first and the plain-digits branch last, so that "279,99" is not read as "279" before the
+  decimal-comma branch is tried.
+
+Spend: none (CPU).

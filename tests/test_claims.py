@@ -208,3 +208,97 @@ def test_title_with_a_listed_comma_is_kept_whole() -> None:
 
 def test_a_label_number_is_not_a_claim() -> None:
     assert values("See item 7 of the table: 3 conditions apply.", ClaimKind.NUMBER) == ["3"]
+
+
+# ---------------------------------------------------------------- French formats (stop 75)
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("279,99 €", "EUR:279.99"),
+        ("279.99 €", "EUR:279.99"),
+        ("279,99€", "EUR:279.99"),
+        ("279,99 €", "EUR:279.99"),
+        ("279,99 EUR", "EUR:279.99"),
+        ("279.99 USD", "USD:279.99"),
+        ("279,99 £", "GBP:279.99"),
+        ("279,99 $", "USD:279.99"),
+        ("1 299,99 €", "EUR:1299.99"),
+        ("1 299,99 €", "EUR:1299.99"),
+        ("1 299,99 €", "EUR:1299.99"),
+        ("1 299 €", "EUR:1299"),
+        ("1 299 euros", "EUR:1299"),
+    ],
+)
+def test_french_money_forms(text: str, expected: str) -> None:
+    assert values(f"Prix : {text}.", ClaimKind.MONEY) == [expected]
+
+
+def test_decimal_comma_and_no_break_groups() -> None:
+    assert values("Poids : 1,2 kg", ClaimKind.NUMBER) == ["1.2"]
+    assert values("un taux de 12,5 %", ClaimKind.PERCENT) == ["12.5"]
+    assert values("Batterie : 5 000 mAh", ClaimKind.NUMBER) == ["5000"]
+    assert values("de 279,99-329,99", ClaimKind.NUMBER) == ["279.99", "329.99"]
+    assert values("329,99 € → 279,99 €", ClaimKind.MONEY) == ["EUR:329.99", "EUR:279.99"]
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("30 heures", "30:hour"),
+        ("30 heures", "30:hour"),
+        ("1 heure", "1:hour"),
+        ("14 jours", "14:day"),
+        ("5 jours ouvrés", "5:day"),
+        ("5 jours ouvrables", "5:day"),
+        ("2 semaines", "2:week"),
+        ("6 mois", "6:month"),
+        ("2 ans", "2:year"),
+        ("1 an", "1:year"),
+        ("3 années", "3:year"),
+    ],
+)
+def test_french_durations(text: str, expected: str) -> None:
+    assert values(f"Autonomie : {text} environ", ClaimKind.DURATION) == [expected]
+
+
+def test_french_duration_range() -> None:
+    text = "Livraison sous 3 à 5 jours ouvrés."
+    assert values(text, ClaimKind.DURATION) == ["5:day"]
+    assert values(text, ClaimKind.NUMBER) == ["3"]
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("5 novembre 2026", "2026-11-05"),
+        ("1er mars 2026", "2026-03-01"),
+        ("2 janvier 2027", "2027-01-02"),
+        ("3 février 2026", "2026-02-03"),
+        ("3 fevrier 2026", "2026-02-03"),
+        ("15 aout 2026", "2026-08-15"),
+        ("31 décembre 2026", "2026-12-31"),
+        ("novembre 2026", "2026-11"),
+        ("Août 2026", "2026-08"),
+    ],
+)
+def test_french_dates(text: str, expected: str) -> None:
+    assert values(f"Livré le {text}.", ClaimKind.DATE) == [expected]
+
+
+def test_english_readings_kept_beside_french_formats() -> None:
+    assert values("1,234", ClaimKind.NUMBER) == ["1234"]
+    assert values("a load of 1,234 kg", ClaimKind.NUMBER) == ["1234"]
+    assert values("in 2024 300 people", ClaimKind.NUMBER) == ["2024", "300"]
+    assert values("2,4,6-trinitrotoluene", ClaimKind.NUMBER) == ["2", "4", "6"]
+    assert values("1,3-butadiene", ClaimKind.NUMBER) == ["1", "3"]
+    assert values("3,3'-dichlorobenzidine", ClaimKind.NUMBER) == ["3", "3"]
+
+
+def test_a_currency_symbol_belongs_to_one_number() -> None:
+    claims = extract_claims("Under section 5 £100 is payable.")
+    assert [(c.kind, c.value) for c in claims] == [
+        (ClaimKind.CITATION, "s5"),
+        (ClaimKind.MONEY, "GBP:100"),
+    ]
+    assert values("10 € 20 €", ClaimKind.MONEY) == ["EUR:10", "EUR:20"]
+    assert values("€10 €20", ClaimKind.MONEY) == ["EUR:10", "EUR:20"]

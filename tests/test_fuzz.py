@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+from decimal import Decimal
+
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
 from legal_rag_verifier.citations import find_citations, render_citation
 from legal_rag_verifier.claims import ClaimKind, extract_claims, normalise_title
+from legal_rag_verifier.numbers import canonical_decimal
 from legal_rag_verifier.premise import Premise
 from legal_rag_verifier.segmenter import find_boundary, split_sentences
 from legal_rag_verifier.verifier import Verifier
@@ -17,6 +20,27 @@ LEGALISH = st.lists(
     ),
     max_size=80,
 ).map("".join)
+FRENCHISH = st.lists(
+    st.sampled_from(
+        [
+            *"0123456789,.  €£$%-",
+            "\u00a0",
+            "\u202f",
+            "EUR",
+            "USD",
+            " euros",
+            " heures",
+            " jours ouvrés",
+            " mois",
+            " an",
+            " ans",
+            " novembre ",
+            "1er ",
+            " 2026",
+        ]
+    ),
+    max_size=60,
+).map("".join)
 PREMISE = Premise.from_text(
     "(1ZA) The amount specified in this subsection is the lower of— (a) £123,543, and (b) 52 "
     "multiplied by a week’s pay of the person concerned.",
@@ -26,7 +50,7 @@ PREMISE = Premise.from_text(
 
 
 @settings(max_examples=300)
-@given(st.one_of(st.text(max_size=200), LEGALISH))
+@given(st.one_of(st.text(max_size=200), LEGALISH, FRENCHISH))
 def test_check_text_never_raises(text: str) -> None:
     verdicts = Verifier().check_text(PREMISE, text)
     for v in verdicts:
@@ -72,3 +96,26 @@ def test_citation_render_round_trips(number: int, labels: list[str], style: str)
 def test_title_normalisation_is_idempotent(title: str) -> None:
     once = normalise_title(title)
     assert normalise_title(once) == once
+
+
+@settings(max_examples=300)
+@given(FRENCHISH)
+def test_claim_spans_hold_on_french_formats(text: str) -> None:
+    for claim in extract_claims(text):
+        assert text[claim.start : claim.end] == claim.text
+
+
+@given(
+    st.integers(min_value=0, max_value=10**11),
+    st.sampled_from([" ", "\u00a0", "\u202f"]),
+    st.sampled_from(["€", "EUR", "euros"]),
+)
+def test_french_money_round_trips(cents: int, space: str, marker: str) -> None:
+    euros, rest = divmod(cents, 100)
+    french = f"{euros:,}".replace(",", space) + f",{rest:02d}{space}{marker}"
+    (claim,) = [c for c in extract_claims(french) if c.kind is ClaimKind.MONEY]
+    (english,) = [c for c in extract_claims(f"€{euros:,}.{rest:02d}") if c.kind is ClaimKind.MONEY]
+    assert claim.value == english.value == f"EUR:{canonical_decimal(Decimal(cents) / 100)}"
+    _, value = claim.value.split(":")
+    (again,) = [c for c in extract_claims(f"€{value}") if c.kind is ClaimKind.MONEY]
+    assert again.value == claim.value

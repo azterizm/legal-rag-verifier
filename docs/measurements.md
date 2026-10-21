@@ -1252,3 +1252,38 @@ written with the source: it tells closed-book answers from grounded ones, and ca
 written with the source. p95 43 ms; prompts 446 tokens at p50. The judge's time is per call on an L40S (stop 61).
 Caveat: the second test has been read since stop 56; no ConSens choice was made on it. Spend: Modal $0.10. Raw:
 `results/fresh2_arms/consens.json`.
+
+
+## French figure formats (stop 75, 2026-10-21; method in `docs/GRID.md`)
+
+Aim: the claim check reads French number, currency, date and duration formats, with every English claim read as
+before. Machine: this Mac, CPU only. Spend: none.
+
+Regression gate, `extract_claims` on the 0.2.0 code and on the new code, claims compared as (kind, value, start,
+end):
+
+| Set | Tier | Texts | Claims | Texts changed |
+|---|---|---|---|---|
+| Detector dev (271 rows, with premises) | 1 | 11,967 | 18,502 | 0 |
+| Detector held-out (346 rows, with premises) | 1 | 15,390 | 25,393 | 0 |
+| First fresh test (80 questions, premises, 160 answers) | 1 | 1,761 | 2,193 | 0 |
+| Second fresh test (40 questions, premises, 80 answers) | 1 | 524 | 676 | 0 |
+| Software battery (40 questions, passages, 3 answer sets) | 1 | 418 | 202 | 0 |
+| Stop 71's answers, Gemini 3.8 Flash and Claude Opus 4.6 (960) | 2 | 1,790 | 2,326 | 0 |
+
+These texts hold only 4 of the forms the new rules act on (GRID, stop 75 results), so the zero shows that English
+reads as before on them, not that the guards hold on the corpus.
+
+Spot-check pairs, a French listing against an English answer, as expected (EMIT with GROUNDED, or ROLLBACK with
+UNGROUNDED_FIGURE for the 3 negative pairs):
+
+| Pairs | 0.2.0 | New code |
+|---|---|---|
+| Money, 4 forms × 4 ("€279.99", "279,99 €", "279.99 euros", "279,99 EUR") | 8 / 16 | 16 / 16 |
+| "1 299,99 €" with a space, no-break or narrow no-break space, both ways | 0 / 6 | 6 / 6 |
+| "30 heures", "5 novembre 2026", "1er mars 2026", "Garantie 2 ans", "3 à 5 jours ouvrés", "1,2 kg" | 0 / 6 | 6 / 6 |
+| Negative: "€289.99", "40 hours", "6 November 2026" against the French listing | 3 / 3 | 3 / 3 |
+
+On 0.2.0, "279,99 €" read as the numbers 279 and 99, "30 heures" as 30, "5 novembre 2026" as 5 and 2026, "1er
+mars 2026" as 2026. On the new code each reads as its English twin: `EUR:279.99`, `30:hour`, `2026-11-05`,
+`2026-03-01`. Raw: `results/claims75.json`.

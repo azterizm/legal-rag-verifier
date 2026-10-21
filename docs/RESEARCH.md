@@ -95,6 +95,12 @@ files are.
 | 71 | The 7B loop against Gemini 3.8 Flash and Claude Opus 4.6 | [method](GRID.md#stop-71-the-loop-with-a-7b-generator-against-two-frontier-models-method-fixed-2026-10-15-before-any-call) | [figures](measurements.md#the-7b-loop-against-two-frontier-models-stop-71-2026-10-16-method-in-docsgridmd) | [`sota71.py`](../scripts/sota71.py) | [`sota71_report.json`](../results/sota71_report.json) |
 | 72 | The 27B loop against the same frontier models | [method](GRID.md#stop-72-the-loop-with-the-27b-as-generator-against-the-frontier-models-method-fixed-2026-10-16-before-any-run) | [figures](measurements.md#the-27b-loop-against-two-frontier-models-stop-72-2026-10-16-method-in-docsgridmd) | [`live72.py`](../scripts/live72.py) | [`live72_report.json`](../results/live72_report.json) |
 
+## The claim check
+
+| Stop | Question | Method | Figures | Scripts | Results |
+|---|---|---|---|---|---|
+| 75 | French figure formats, with every English claim read as before | [method](GRID.md#stop-75-french-figure-formats-in-the-claim-check-method-fixed-2026-10-21-before-the-code) | [figures](measurements.md#french-figure-formats-stop-75-2026-10-21-method-in-docsgridmd) | [`claims75.py`](../scripts/claims75.py) | [`results/claims75.json`](../results/claims75.json) |
+
 ## Shared scripts
 
 These are used by many stops.

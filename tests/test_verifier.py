@@ -10,6 +10,7 @@ import pytest
 
 from legal_rag_verifier.premise import PassageKind, Premise
 from legal_rag_verifier.verifier import GroundedBy, Reason, Verdict, Verifier, VerifierConfig
+from scripts import claims75
 
 V = Verifier()
 QUERY = "My salary is £40,000 a year. What is the most I can get for unfair dismissal?"
@@ -391,3 +392,11 @@ def test_parenthetical_does_not_hide_a_modal() -> None:
     assert check(premise, "A disabled person cannot be made to pay A's costs.").verdict is (
         Verdict.EMIT
     )
+
+
+# ---------------------------------------------------------------- French formats (stop 75)
+@pytest.mark.parametrize("pair", claims75.PAIRS, ids=lambda p: p.id)
+def test_french_listing_against_english_answer(pair: claims75.Pair) -> None:
+    verdict = check(Premise.from_text(pair.listing), pair.answer)
+    assert verdict.verdict is Verdict[pair.verdict]
+    assert verdict.reasons == (Reason[pair.reason],)

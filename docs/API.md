@@ -164,3 +164,10 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
 - Bare numbers are claims ("3 conditions" with a premise listing (a)–(c) and no "3" is ungrounded).
 - "working days" vs "days" are not distinguished; durations compare number + unit only.
 - Epistemic "may" ("you may be entitled") counts as PERMISSION; "may be able / wish / want" does not.
+- French figure formats (stop 75): a comma before exactly 3 digits is a thousands separator, so a French
+  "1,234 kg" reads as 1234; a comma before 1 or 2 digits is a decimal point, so "pages 18,19 and 20" reads
+  as 18.19 and 20 (a citation, "paragraphs 18,19", is read first). A plain space groups digits only before
+  a decimal comma or a currency ("5 000 mAh" is 5 and 0; a no-break space groups always). Currency codes
+  are read after the number only: "EUR 279,99" is the bare number 279.99. "an" after a number is a year
+  ("2 ans", and an English "In 2024 an employee"). French number words, modal verbs and qualifiers are
+  not read.

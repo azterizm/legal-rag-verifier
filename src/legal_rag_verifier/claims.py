@@ -3,7 +3,9 @@
 Two surface forms of the same claim normalise to the same value, so grounding is a set lookup:
 ``£68,400`` = ``£68400`` = ``£68.4k`` → ``GBP:68400``; ``three months`` = ``3 months`` →
 ``3:month``; ``6th April 2026`` = ``06/04/2026`` → ``2026-04-06``; ``section 124(1ZA)`` =
-``s.124(1ZA)`` → ``s124/1ZA``. Modal verbs are handled by :mod:`legal_rag_verifier.deontic`.
+``s.124(1ZA)`` → ``s124/1ZA``. Figures are also read in French formats: ``279,99 €`` = ``€279.99``
+→ ``EUR:279.99``; ``30 heures`` = ``30 hours`` → ``30:hour``; ``5 novembre 2026`` → ``2026-11-05``.
+Modal verbs are handled by :mod:`legal_rag_verifier.deontic`.
 """
 
 from __future__ import annotations
@@ -70,12 +72,21 @@ _CURRENCY_WORDS = {
     "dollar": "USD",
     "dollars": "USD",
 }
+_CURRENCY_CODES = ("EUR", "USD", "GBP")
 _MAG = r"(?:k|mn|m|bn|thousand|million|billion)"
+# Digit groups split by a plain space ("1 299"), read as one number only before a currency.
+_SPACED = r"(?<!\d)\d{1,3}(?: \d{3})+(?!\d)"
 _MONEY_SYMBOL_RE = re.compile(
     rf"(?P<sym>[£€$])\s?(?P<num>{NUMERAL_RE})(?:\s?(?P<mag>{_MAG})\b)?", re.IGNORECASE
 )
+# The currency after the number ("279,99 €", "279.99 USD"); a symbol written against the next
+# digit ("10 €20") belongs to that number instead.
+_MONEY_AFTER_RE = re.compile(
+    rf"(?<![\w.,])(?P<num>{_SPACED}|{NUMERAL_RE})\s?(?P<cur>[£€$]|{'|'.join(_CURRENCY_CODES)})(?!\w)"
+)
 _MONEY_WORD_RE = re.compile(
-    rf"\b(?P<num>{NUMERAL_RE})(?:\s?(?P<mag>{_MAG}))?\s(?P<cur>pounds?(?:\s+sterling)?|euros?|dollars?)\b",
+    rf"\b(?P<num>{_SPACED}|{NUMERAL_RE})(?:\s?(?P<mag>{_MAG}))?\s"
+    r"(?P<cur>pounds?(?:\s+sterling)?|euros?|dollars?)\b",
     re.IGNORECASE,
 )
 _PERCENT_RE = re.compile(
@@ -85,24 +96,24 @@ _MONTHS = {
     m: i + 1
     for i, names in enumerate(
         [
-            ("january", "jan"),
-            ("february", "feb"),
-            ("march", "mar"),
-            ("april", "apr"),
-            ("may",),
-            ("june", "jun"),
-            ("july", "jul"),
-            ("august", "aug"),
-            ("september", "sep", "sept"),
-            ("october", "oct"),
-            ("november", "nov"),
-            ("december", "dec"),
+            ("january", "jan", "janvier"),
+            ("february", "feb", "février", "fevrier"),
+            ("march", "mar", "mars"),
+            ("april", "apr", "avril"),
+            ("may", "mai"),
+            ("june", "jun", "juin"),
+            ("july", "jul", "juillet"),
+            ("august", "aug", "août", "aout"),
+            ("september", "sep", "sept", "septembre"),
+            ("october", "oct", "octobre"),
+            ("november", "nov", "novembre"),
+            ("december", "dec", "décembre", "decembre"),
         ]
     )
     for m in names
 }
 _MONTH = r"(?P<month>" + "|".join(sorted(_MONTHS, key=len, reverse=True)) + r")\.?"
-_ORD = r"(?:st|nd|rd|th)?"
+_ORD = r"(?:st|nd|rd|th|er)?"
 _DATE_RES = [
     re.compile(rf"\b(?P<day>\d{{1,2}}){_ORD}\s+(?:of\s+)?{_MONTH},?\s+(?P<year>\d{{4}})\b", re.I),
     re.compile(rf"\b{_MONTH}\s+(?P<day>\d{{1,2}}){_ORD},?\s+(?P<year>\d{{4}})\b", re.I),
@@ -110,7 +121,24 @@ _DATE_RES = [
     re.compile(r"\b(?P<day>\d{1,2})/(?P<mon>\d{1,2})/(?P<year>\d{4})\b"),
     re.compile(rf"\b{_MONTH}\s+(?P<year>\d{{4}})\b", re.I),
 ]
-_UNIT = r"(?P<unit>day|week|month|year|hour)s?(?:['’])?"
+# French units map to the English ones; working days ("jours ouvrés") read as days, as in English.
+_UNITS_FR = {
+    "heure": "hour",
+    "heures": "hour",
+    "jour": "day",
+    "jours": "day",
+    "semaine": "week",
+    "semaines": "week",
+    "mois": "month",
+    "an": "year",
+    "ans": "year",
+    "année": "year",
+    "années": "year",
+}
+_UNIT = (
+    r"(?:(?P<unit>day|week|month|year|hour)s?(?:['’])?"
+    r"|(?P<unit_fr>heures?|jours?(?:\s+(?:ouvrés|ouvrables))?|semaines?|mois|années?|ans?))"
+)
 _DURATION_RE = re.compile(
     rf"\b(?P<num>{NUMERAL_RE}|{NUMBER_WORDS_RE})(?:\s|-)(?:(?:calendar|working|clear|complete)\s)?{_UNIT}(?!\w)",
     re.IGNORECASE,
@@ -174,13 +202,18 @@ def _quantity(text: str) -> Decimal | None:
     return None if words is None else Decimal(words)
 
 
-def _figures(text: str) -> list[Claim]:
+def _figures(text: str) -> tuple[list[Claim], set[Claim]]:
+    """Figure claims, and those of them with the currency after the number (ranked first)."""
     claims: list[Claim] = []
 
     def add(kind: ClaimKind, value: str | None, m: re.Match[str]) -> None:
         if value is not None:
             claims.append(Claim(kind, value, m.group(0), m.start(), m.end()))
 
+    for m in _MONEY_AFTER_RE.finditer(text):
+        currency = _CURRENCY_SYMBOLS.get(m["cur"], m["cur"])
+        add(ClaimKind.MONEY, _money_value(currency, m["num"], None), m)
+    trailing = set(claims)
     for m in _MONEY_SYMBOL_RE.finditer(text):
         add(ClaimKind.MONEY, _money_value(_CURRENCY_SYMBOLS[m["sym"]], m["num"], m["mag"]), m)
     for m in _MONEY_WORD_RE.finditer(text):
@@ -194,12 +227,13 @@ def _figures(text: str) -> list[Claim]:
             add(ClaimKind.DATE, _date_value(m), m)
     for m in _DURATION_RE.finditer(text):
         q = _quantity(m["num"])
+        unit = m["unit"] or _UNITS_FR[m["unit_fr"].split()[0].lower()]
         add(
             ClaimKind.DURATION,
-            None if q is None else f"{canonical_decimal(q)}:{m['unit'].lower()}",
+            None if q is None else f"{canonical_decimal(q)}:{unit.lower()}",
             m,
         )
-    return claims
+    return claims, trailing
 
 
 def _date_value(m: re.Match[str]) -> str | None:
@@ -243,17 +277,20 @@ def _overlaps(claim: Claim, taken: list[tuple[int, int]]) -> bool:
 def extract_claims(text: str) -> list[Claim]:
     """All claims in ``text``, longest-first without overlaps, in reading order.
 
-    Priority on overlap: instruments, citations, money, dates, percentages, durations, then any
-    bare number left over (``52`` in "52 multiplied by a week's pay"). Numbers inside a citation
-    ("section 124"), an instrument title ("Act 1996") or a date are never counted twice.
+    Priority on overlap: instruments, citations, money (with the currency after the number first),
+    dates, percentages, durations, then any bare number left over (``52`` in "52 multiplied by a
+    week's pay"). Numbers inside a citation ("section 124"), an instrument title ("Act 1996") or a
+    date are never counted twice.
     """
     candidates: list[Claim] = _instruments(text)
     candidates += [
         Claim(ClaimKind.CITATION, c.canonical, c.text, c.start, c.end) for c in find_citations(text)
     ]
-    figures = _figures(text)
+    figures, trailing = _figures(text)
     order = [ClaimKind.MONEY, ClaimKind.DATE, ClaimKind.PERCENT, ClaimKind.DURATION]
-    candidates += sorted(figures, key=lambda c: (order.index(c.kind), -(c.end - c.start)))
+    candidates += sorted(
+        figures, key=lambda c: (order.index(c.kind), c not in trailing, -(c.end - c.start))
+    )
 
     chosen: list[Claim] = []
     taken: list[tuple[int, int]] = []

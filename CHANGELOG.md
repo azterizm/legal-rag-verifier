@@ -11,6 +11,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 - Python 3.14 is tested in CI and listed in the classifiers.
+- The claim check reads French number, currency, date and duration formats: "279,99 €",
+  "1 299,99 €", "30 heures", "5 novembre 2026" read as "€279.99", "€1,299.99", "30 hours",
+  "5 November 2026". Modal verbs, qualifiers and number words stay English only.
 
 ### Added
 - `docs/RESEARCH.md`: an index of the evaluation. Each test with its method, figures, scripts and
@@ -23,6 +26,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   change. Figures in `docs/measurements.md`, methods in `docs/GRID.md`.
 - Stop 73, in `scripts/consens.py`: Iris.ai's ConSens per sentence, Llama 3.2 1B on one L40S,
   against the LLM judge on the second fresh test. No package change.
+- Stop 75, in `scripts/claims75.py`: the French formats change no claim in the 31,850 English
+  texts of the batteries and answers.
 
 ## [0.2.0] - 2026-10-13
 
