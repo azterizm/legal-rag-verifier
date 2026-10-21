@@ -2712,7 +2712,6 @@ CONSENS_ESTIMATE = 900  # seconds the call may take, for the ledger check before
     gpu="L40S",  # the 27B judge's GPU (stops 59 to 72), so the times compare
     timeout=1800,
     volumes={"/hf": weights},
-    secrets=[modal.Secret.from_name("huggingface")],  # Llama 3.2 is gated
 )
 def consens_scores(items: list[dict[str, Any]]) -> dict[str, Any]:
     """Stop 73: both log-likelihoods of every sentence, Llama 3.2 1B Instruct in bf16."""

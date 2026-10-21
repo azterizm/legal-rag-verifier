@@ -3576,9 +3576,16 @@ question words left out, and the source emptied inside one template. The sigmoid
 - Sets: the first fresh test, 354 graded segmenter sentences (356 with the 2 unsure), for the thresholds only; the
   second fresh test, 151 sentences (84 right, 67 wrong; 72 from answers written with the source, 4 of them wrong),
   scored once. Grades and units as stop 61 (`fresh_arms.recorded`, `merged_grades`).
-- Evaluator: `meta-llama/Llama-3.2-1B-Instruct` at `9213176726f574b556790deb65791e0c5aa438b6` (the paper's
-  footnote 1), bf16 on one L40S, logits in fp32 for the log-softmax, torch 2.14.1 and transformers 5.18.0. Weights
-  through your Modal secret `huggingface`.
+- Evaluator: Llama 3.2 1B Instruct (the paper's footnote 1), from the ungated copy
+  `unsloth/Llama-3.2-1B-Instruct` at `5a8abab4a5d6f164389b1079fb721cfab8d7126c`, bf16 on one L40S, logits in fp32
+  for the log-softmax, torch 2.14.1 and transformers 5.18.0. Changed before any run, your call (2026-10-21), from
+  `meta-llama/Llama-3.2-1B-Instruct` at `9213176726f574b556790deb65791e0c5aa438b6`, whose access was then awaiting
+  Meta's review. Checked first, nothing downloaded from Meta: `model.safetensors` has the same sha256 as Meta's
+  (`1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f`); unsloth's tokenizer gives the same token
+  ids and offsets as Meta's tokenizer files on all 1,014 texts of this stop (712 first test, 302 second; Meta's
+  files read from `alpindale/Llama-3.2-1B-Instruct` at `f92201d8`, whose tokenizer, config and weights carry
+  Meta's hashes); the configs differ only in end and padding tokens and version strings, which a forward pass at
+  batch 1 does not use.
 - Prompt: the paper's template (§ 3) as raw text, no chat template, the answer after `Answer: `:
   `Consider the following context:\nContext:\n{context}\nPlease answer the following question:\n{question}\nAnswer: `
   then the answer so far and a space, then the sentence. Context: the source the generator was shown with the

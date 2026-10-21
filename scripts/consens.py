@@ -34,8 +34,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import awareness as aw  # type: ignore[import-not-found]  # noqa: E402
 
-MODEL = "meta-llama/Llama-3.2-1B-Instruct"  # the paper's footnote 1
-REVISION = "9213176726f574b556790deb65791e0c5aa438b6"  # read from the Hub on 2026-10-21
+# The paper's footnote 1 is meta-llama/Llama-3.2-1B-Instruct (gated). This ungated copy holds the
+# same model.safetensors (sha256 1ff795ff…538f) and tokenises every text of stop 73 to the same ids
+# and offsets as Meta's tokenizer files (GRID § Stop 73).
+MODEL = "unsloth/Llama-3.2-1B-Instruct"
+REVISION = "5a8abab4a5d6f164389b1079fb721cfab8d7126c"  # read from the Hub on 2026-10-21
 # The paper's template (§ 3, six lines in the arXiv HTML), as raw text; the answer after "Answer:".
 TEMPLATE = (
     "Consider the following context:\nContext:\n{context}\n"
