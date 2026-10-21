@@ -13,6 +13,12 @@ The guard on the corpus: every text of ``data/uk`` read by the 0.2.0 code and by
   uv run python scripts/claims75.py corpus            # → results/claims75_corpus.json
   uv run python scripts/claims75.py corpus-report     # again, with results/claims75_grades.csv
 
+The narrower rules (GRID § Stop 75: the narrower rules), checked the same way:
+
+  uv run python scripts/claims75.py snapshot narrow   # on the narrowed code
+  uv run python scripts/claims75.py diff --run 76     # → results/claims75_narrow.json
+  uv run python scripts/claims75.py corpus --run 76   # → results/claims75_corpus76.json
+
 Snapshots (``results/raw/claims75/``, git-ignored) hold a hash of each text, never the text: the
 premises quote statute text and the fresh and stop 71 answers stay local. The corpus diff there
 holds excerpts and stays local too; the committed sample quotes short excerpts with coordinates.
@@ -293,9 +299,9 @@ def _pair_view(record: Mapping[str, Any] | None) -> dict[str, Any] | None:
     return {k: record[k] for k in ("verdict", "reasons", "listing", "answer")}
 
 
-def diff() -> dict[str, Any]:
-    out = compare(read_jsonl(RAW / "before.jsonl"), read_jsonl(RAW / "after.jsonl"))
-    REPORT.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+def diff(run: Run) -> dict[str, Any]:
+    out = compare(read_jsonl(RAW / "before.jsonl"), read_jsonl(RAW / f"{run.snapshot}.jsonl"))
+    run.gate.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return out
 
 
@@ -322,6 +328,30 @@ SAMPLE = 40
 SEED = 75
 EXCERPT = 60  # characters kept each side of a changed claim in the local diff
 SHORT = 40  # and in the committed sample
+
+
+class Run(NamedTuple):
+    """One check of a build against 0.2.0: its gate snapshot, its corpus diff, report and grades."""
+
+    snapshot: str
+    gate: Path
+    raw: Path
+    report: Path
+    grades: Path
+    seed: int
+
+
+RUNS = {
+    "75": Run("after", REPORT, CORPUS_RAW, CORPUS_REPORT, GRADES, SEED),
+    "76": Run(
+        "narrow",
+        ROOT / "results/claims75_narrow.json",
+        RAW / "corpus76.jsonl",
+        ROOT / "results/claims75_corpus76.json",
+        ROOT / "results/claims75_grades76.csv",
+        76,
+    ),
+}
 
 Reading = list[tuple[str, str, int, int]]
 
@@ -457,12 +487,12 @@ def compare_file(path: str) -> dict[str, Any]:
     }
 
 
-def corpus(workers: int) -> dict[str, Any]:
+def corpus(run: Run, workers: int) -> dict[str, Any]:
     files = sorted(str(p) for p in (ROOT / "data/uk").rglob("*.jsonl"))
     totals: Counter[str] = Counter()
     guard: Counter[str] = Counter()
     RAW.mkdir(parents=True, exist_ok=True)
-    with CORPUS_RAW.open("w", encoding="utf-8") as raw, ProcessPoolExecutor(workers) as pool:
+    with run.raw.open("w", encoding="utf-8") as raw, ProcessPoolExecutor(workers) as pool:
         for result in pool.map(compare_file, files, chunksize=64):
             totals["files"] += 1
             for key in ("texts", "claims_before", "claims_after"):
@@ -472,7 +502,7 @@ def corpus(workers: int) -> dict[str, Any]:
                 raw.write(json.dumps(c, ensure_ascii=False) + "\n")
     counts = {"files": totals["files"], "texts": totals["texts"]}
     counts |= {"claims_before": totals["claims_before"], "claims_after": totals["claims_after"]}
-    return corpus_report(counts | {"guard": dict(guard)})
+    return corpus_report(run, counts | {"guard": dict(guard)})
 
 
 def read_grades(path: Path = GRADES) -> dict[str, dict[str, str]]:
@@ -485,13 +515,13 @@ def read_grades(path: Path = GRADES) -> dict[str, dict[str, str]]:
     return rows
 
 
-def sample_items(changed: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]:
-    """Up to ``SAMPLE`` changed claims under each rule, drawn with ``SEED``."""
+def sample_items(changed: Sequence[Mapping[str, Any]], seed: int = SEED) -> list[dict[str, Any]]:
+    """Up to ``SAMPLE`` changed claims under each rule, drawn with ``seed``."""
     pools: dict[str, list[tuple[Mapping[str, Any], Mapping[str, Any]]]] = {r: [] for r in RULES}
     for record in changed:
         for added in record["added"]:
             pools[added["rule"]].append((record, added))
-    rng = random.Random(SEED)  # noqa: S311 - a seeded sample, not a secret
+    rng = random.Random(seed)  # noqa: S311 - a seeded sample, not a secret
     items = []
     for rule, code in RULES.items():
         pool = pools[rule]
@@ -514,11 +544,11 @@ def sample_items(changed: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]:
     return items
 
 
-def corpus_report(counts: Mapping[str, Any] | None = None) -> dict[str, Any]:
+def corpus_report(run: Run, counts: Mapping[str, Any] | None = None) -> dict[str, Any]:
     """Counts by rule, the graded sample and the grades' tally; rewrites the committed report."""
     if counts is None:
-        counts = json.loads(CORPUS_REPORT.read_text(encoding="utf-8"))["counts"]
-    changed = read_jsonl(CORPUS_RAW)
+        counts = json.loads(run.report.read_text(encoding="utf-8"))["counts"]
+    changed = read_jsonl(run.raw)
     by_rule: dict[str, dict[str, int]] = {r: {"claims": 0, "texts": 0} for r in RULES}
     for record in changed:
         rules = {a["rule"] for a in record["added"]}
@@ -527,8 +557,8 @@ def corpus_report(counts: Mapping[str, Any] | None = None) -> dict[str, Any]:
         for rule in rules:
             by_rule[rule]["texts"] += 1
     removed_only = sum(not r["added"] for r in changed)
-    grades = read_grades()
-    items = sample_items(changed)
+    grades = read_grades(run.grades)
+    items = sample_items(changed, run.seed)
     tally: dict[str, Counter[str]] = {r: Counter() for r in RULES}
     for item in items:
         graded = grades.get(item["id"])
@@ -544,25 +574,27 @@ def corpus_report(counts: Mapping[str, Any] | None = None) -> dict[str, Any]:
         "graded": {r: dict(t) for r, t in tally.items() if t},
         "sample": items,
     }
-    CORPUS_REPORT.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    run.report.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return out
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["snapshot", "diff", "corpus", "corpus-report"])
-    parser.add_argument("name", nargs="?", choices=["before", "after"])
+    parser.add_argument("name", nargs="?", choices=["before", "after", "narrow"])
+    parser.add_argument("--run", choices=sorted(RUNS), default="75")
     parser.add_argument("--workers", type=int, default=10)
     args = parser.parse_args()
+    run = RUNS[args.run]
     if args.command == "snapshot":
         if args.name is None:
-            parser.error("snapshot needs a name: before or after")
+            parser.error("snapshot needs a name: before, after or narrow")
         print(snapshot(args.name))
     elif args.command == "diff":
-        out = diff()
+        out = diff(run)
         print(json.dumps({"sets": out["sets"], "changed_texts": out["changed_texts"]}, indent=1))
     else:
-        out = corpus(args.workers) if args.command == "corpus" else corpus_report()
+        out = corpus(run, args.workers) if args.command == "corpus" else corpus_report(run)
         keys = ("counts", "changed_texts", "removed_only", "by_rule", "graded")
         print(json.dumps({k: out[k] for k in keys}, indent=1, ensure_ascii=False))
 

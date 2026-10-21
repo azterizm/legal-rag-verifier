@@ -3896,3 +3896,40 @@ graded, since the numbers below were read off this run's diff and the guard exte
    stated limit).
 
 Spend: none (CPU).
+
+
+### Stop 75: the narrower rules (method fixed 2026-10-21, before the code)
+
+Your go (2026-10-21) on the three narrower rules proposed after the corpus run. They change rules 1, 4 and 5 of
+the method above; nothing else changes (no signature, `Claim` field, verdict, reason or trace).
+
+1. **"an" (rule 5).** The singular "an" is a year only when no word follows it on its line: the end of the text,
+   a line break, punctuation, or the French "de" / "d’" ("Garantie 1 an", "1 an.", "1 an de garantie"). "ans",
+   "année(s)" and the other French units are unchanged.
+2. **Trailing currency (rule 4).** Only "€" and the codes EUR, USD and GBP are read after a number; a trailing
+   "£" or "$" is not. A code needs a space before it ("279,99 EUR", not "3/2008EUR"); "€" may be glued
+   ("279,99€"). A leading "£" or "$" is read as on 0.2.0, so "£ 8,100£ 9,315" gives back GBP:8100 and GBP:9315.
+3. **Decimal-comma guard (rule 1).** A comma is also not a decimal point when the number follows "[" or a
+   comma, or the digits are followed by "]", "(", ")", a comma and a hyphen (",-"), or an en or em dash and a
+   letter. One change from the proposal: the dash blocks only before a letter, as the hyphen already does
+   ("1,4–butanediol"), so a range written with an en dash ("279,99–329,99 €") still reads as decimals. In the
+   first run's sample this blocks the same 16 of 23 wrong readings as the proposal. Lists without a space ("4,5
+   or 6", "Units 1,2 and 3") and table cells glued together stay misread: a stated limit in API.md §6.
+
+Tests, written before the code and run once to see them fail: the forms above in `tests/test_claims.py`,
+including English "an" after a number ("3 An application", "In 2024 an employee"), the glued table "£", "3/2008EUR",
+the locants "[1,2,4]triazolo", "1,4–butanediol", "2,2(bis", "1,3,5,-triazine", and the en dash range. The tests of
+"279,99 £" and "279,99 $" as money are turned round: they are bare numbers now.
+
+Checks, the same as before, both reported as they come:
+
+- The gate: `snapshot narrow` on the new code against the `before` snapshot (0.2.0), compared as before
+  (`results/claims75_narrow.json`). Pass: no change, the 31 pairs as expected.
+- The corpus run again, 0.2.0 against the new code, on the same texts (`corpus --run 76`): changed claims per
+  rule, the guard forms, and a fresh sample under each rule (seed 76, up to 40), graded by me as before
+  (`results/claims75_corpus76.json`, `results/claims75_grades76.csv`). The first run's report stays as it is.
+
+Reading, fixed now: a rule whose sample is mostly wrong stays proposed for removal, for your go; no further
+narrowing is fitted to this sample in this run.
+
+CPU only, no spend.

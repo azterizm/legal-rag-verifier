@@ -102,6 +102,14 @@ def test_the_sample_is_seeded_and_capped_per_rule() -> None:
     assert first[0]["excerpt"] == "[1,5]"
 
 
+def test_the_second_run_keeps_the_first_runs_files_and_draws_a_fresh_sample() -> None:
+    first, second = claims75.RUNS["75"], claims75.RUNS["76"]
+    assert (first.seed, second.seed) == (75, 76)
+    for field in ("snapshot", "gate", "raw", "report", "grades"):
+        assert getattr(first, field) != getattr(second, field)
+    assert first.report == claims75.CORPUS_REPORT
+
+
 def test_grades_outside_the_three_names_are_refused(tmp_path: Path) -> None:
     path = tmp_path / "grades.csv"
     path.write_text("id,grade,note\ndec-01,right,\ndec-02,maybe,\n", encoding="utf-8")
