@@ -10540,5 +10540,12 @@
   "seconds": 26.0,
   "usd": 0.0162,
   "note": "fresh: 356 sentences"
+ },
+ {
+  "run": "stop73 fresh2 consens",
+  "gpu": "L40S",
+  "seconds": 26.2,
+  "usd": 0.0163,
+  "note": "fresh2: 151 sentences"
  }
 ]

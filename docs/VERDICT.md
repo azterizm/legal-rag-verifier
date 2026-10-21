@@ -187,6 +187,7 @@ and the second (151). Wrong answers are answers holding a wrong sentence, of 240
 | 70 | Loop with the source in the prompt, 7B and 1B | 7B 25 to 13 (p = 0.045), 3.8 % refusals. 1B 116 to 46 to 49, 16 to 28 % refusals. A judge fault in the 1B runs was found and stop 68's 1B figures corrected. |
 | 71 | 7B loop against frontier models | 7B loop 13, Claude Opus 4.6 8, Gemini 3.8 Flash 3, each checked by the other 1 or 2. Near none by the 4 point margin. The loop was fastest, 1.7 s against 3.1 to 9.0 s. |
 | 72 | 27B loop against frontier models | 4, near every frontier arm. 2.0 s per answer. 1.35 right sentences per answer, against 1.79 and 2.12. The loop neither added nor removed errors. |
+| 73 | ConSens (Iris.ai) with Llama 3.2 1B, no judge reply | Second test 81.5 %, threshold fixed on the first: 8.6 points under the 27B judge and told apart, 23 above the entailment model, at 30 ms per sentence against 0.54 s. It tells closed-book answers from grounded ones; it caught none of the 4 wrong sentences written with the source. |
 
 ## Required before production
 

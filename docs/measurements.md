@@ -1229,3 +1229,26 @@ Stop 71's 240 questions, source in the prompt. Qwen 27B at 4 bits as generator a
 
 The 27B loop is near every frontier arm by the fixed margin: the upper ends are 1.2 to 3.3 points. It states
 less per answer. The loop does not change the 27B's errors with the source in the prompt (1 and 1).
+
+## ConSens per sentence (stop 73, 2026-10-21; method in `docs/GRID.md`)
+
+Aim: Iris.ai's ConSens (Vankov et al. 2025), a metric with no judge reply, against the LLM judge on the second
+fresh test. Llama 3.2 1B Instruct (bf16, weights hash-identical to Meta's) reads each sentence after the question
+and the answer so far, with and without the source; ConSens = tanh(ln(P_E / P_C) / 2), over content words.
+Threshold fixed on the first test (-0.006) before the run; 151 sentences, hand grades. Machine: one Modal NVIDIA
+L40S, torch 2.14.1+cu130, transformers 5.18.0.
+
+| Auditor | False rollbacks / caught | Accuracy | With source | Time per sentence, p50 |
+|---|---|---|---|---|
+| Qwen 27B judge (stop 61) | 8 / 60 | 90.1 % | 88.9 % | 0.54 s |
+| ConSens alone | 11 / 50 | 81.5 % | 90.3 % | 30 ms |
+| Claim check then ConSens | 16 / 53 | 80.1 % | 84.7 % | 30 ms |
+| V0 (claim check and DeBERTa) | 27 / 31 | 58.3 % | 62.5 % | |
+| No auditor | | 55.6 % | 94.4 % | |
+
+ConSens is not near the judge (8.6 and 10.0 points under, p = 0.029 and 0.008) and is clearly above V0 (by 23.2 and
+21.8 points, p = 3e-5). AUROC 0.898 over all sentences, 0.660 within the kind of answer, 0.444 within answers
+written with the source: it tells closed-book answers from grounded ones, and catches none of the 4 wrong sentences
+written with the source. p95 43 ms; prompts 446 tokens at p50. The judge's time is per call on an L40S (stop 61).
+Caveat: the second test has been read since stop 56; no ConSens choice was made on it. Spend: Modal $0.10. Raw:
+`results/fresh2_arms/consens.json`.

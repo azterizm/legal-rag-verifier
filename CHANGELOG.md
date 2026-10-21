@@ -21,6 +21,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   KV cache; the live loop on 240 questions with three generators, closed-book and with the source
   in the prompt; the 7B and 27B loops against Gemini 3.8 Flash and Claude Opus 4.6. No package
   change. Figures in `docs/measurements.md`, methods in `docs/GRID.md`.
+- Stop 73, in `scripts/consens.py`: Iris.ai's ConSens per sentence, Llama 3.2 1B on one L40S,
+  against the LLM judge on the second fresh test. No package change.
 
 ## [0.2.0] - 2026-10-13
 

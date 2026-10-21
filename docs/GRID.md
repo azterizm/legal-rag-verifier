@@ -3650,3 +3650,43 @@ question words left out, and the source emptied inside one template. The sigmoid
   ConSens alone 69.2 %, against 93.8 % for the judge and 68.7 % for V0 on this test.
 - Spend so far: Modal $0.09 ($47.10 of $55).
 
+
+### Stop 73: results (2026-10-21)
+
+The second test, 151 sentences, scored once in one call: 6.9 s after 7.3 s of loading, no failure. Thresholds as
+sealed. The four comparison arms rebuilt their committed figures. Raw: `results/fresh2/scores/consens.json`;
+report `results/fresh2_arms/consens.json` (`FRESH_SET=fresh2 uv run python scripts/consens.py report`).
+
+| Arm | False rollbacks / caught | Accuracy (95 % interval) | With source (68 right, 4 wrong) | Closed-book (16 right, 63 wrong) |
+|---|---|---|---|---|
+| ConSens alone | 11 / 50 | 81.5 % (74.5 to 86.8) | 3 / 0, 90.3 % | 8 / 50, 73.4 % |
+| Claim check then ConSens | 16 / 53 | 80.1 % (73.1 to 85.7) | 7 / 0, 84.7 % | 9 / 53, 75.9 % |
+| Qwen 27B judge (stop 61) | 8 / 60 | 90.1 % (84.3 to 93.9) | 5 / 1, 88.9 % | 3 / 59, 91.1 % |
+| Claim check only | 6 / 16 | 62.3 % | 5 / 0, 87.5 % | 1 / 16, 39.2 % |
+| V0 | 27 / 31 | 58.3 % | 23 / 0, 62.5 % | 4 / 31, 54.4 % |
+| No auditor | | 55.6 % | 94.4 % | 20.3 % |
+
+- Fixed readings: **neither arm is near the judge.** The claim check then ConSens is 10.0 points under it (only
+  ConSens right on 7 sentences, only the judge on 22, p = 0.008); ConSens alone 8.6 points under (9 and 22,
+  p = 0.029). **Both are clearly above V0**: 21.8 points (47 and 14, p = 3e-5) and 23.2 points (52 and 17,
+  p = 3e-5). Both beat the claim check alone and no auditor (p ≤ 0.0002).
+- AUROC, right above wrong: 0.898 (0.841 to 0.948) over all sentences; **0.660 within the kind of answer**; 0.444
+  within answers written with the source (4 wrong), 0.722 within closed-book answers. The total rests on telling
+  closed-book answers from answers written with the source.
+- With the source in the prompt, the production loop's setting: ConSens catches none of the 4 wrong sentences at
+  either threshold. Under the with-source threshold (-0.733) ConSens alone rolls back nothing (94.4 %, as no
+  auditor); the claim check before it adds 5 false rollbacks (87.5 %).
+- The paper's cut of 0: the claim check then ConSens the same, 80.1 %; ConSens alone 82.1 % (one more caught).
+- Time on one L40S: **30 ms per sentence at p50, 43 ms at p95**, both passes, for prompts of 446 tokens at p50
+  (822 at p95). The judge takes 0.54 s per call at p50 on the same GPU type, about 18 times as long. 8.9 tokens
+  scored per sentence on average; 2 sentences (code fences) have no value; none needed the fallback.
+
+Reading: ConSens with a threshold fixed on the first test is 8.6 to 10.0 points under the 27B judge, told apart
+from it, and more than 20 points above the entailment auditor, at about an eighteenth of the judge's time. Its
+gain is in closed-book answers, where it detects that the answer did not lean on the source. Within answers
+written with the source it does not separate right from wrong (0.44 on 4 wrong sentences). As its authors say, it
+measures how much a sentence relies on the source, not whether the sentence is right: a wrong sentence written
+while reading the source scores as grounded. Within the kind of answer it scores 0.578 on the first test and
+0.660 on the second, against 0.67 for stop 48's dependence read from the generator.
+
+Spend, stop 73: Modal $0.10 ($47.12 of $55).

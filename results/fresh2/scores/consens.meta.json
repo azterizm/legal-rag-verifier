@@ -1,0 +1,16 @@
+{
+ "runs": [
+  {
+   "model": "unsloth/Llama-3.2-1B-Instruct@5a8abab4a5d6f164389b1079fb721cfab8d7126c",
+   "dtype": "bfloat16",
+   "gpu": "NVIDIA L40S",
+   "torch": "2.14.1+cu130",
+   "transformers": "5.18.0",
+   "template_sha256": "29ce1b5d45c01b3a31739ef748f8cad1f2a4735d0332caf11c6ef0097a155229",
+   "warmup": 10,
+   "sentences": 151,
+   "startup_s": 7.3,
+   "seconds": 6.9
+  }
+ ]
+}

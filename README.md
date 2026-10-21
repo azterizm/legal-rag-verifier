@@ -138,7 +138,9 @@ The 27B answers in 2.0 s at the median against 3.1 to 4.4 s, and states less per
 at 0.06 s per call ([adapters](https://huggingface.co/azterizm/minicpm5-1b-clause-judge),
 DOI [10.57967/hf/10885](https://doi.org/10.57967/hf/10885)); Jev
 1.13, 90.7 % and 88.1 %; the OpenAI Decisions API, 89.0 % and 86.8 %. None is within 3 points of
-the 27B on both tests.
+the 27B on both tests. ConSens, Iris.ai's context-reliance metric with Llama 3.2 1B and no judge reply,
+scored 81.5 % on the second test (threshold fixed on the first) at 30 ms per sentence. It tells
+closed-book answers from grounded ones, and caught none of the 4 wrong sentences written with the source.
 
 See [`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) for the proof-of-concept verdict and its limits.
 
