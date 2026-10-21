@@ -8,17 +8,31 @@ shared with the tests.
   uv run python scripts/claims75.py snapshot after    # on the new code
   uv run python scripts/claims75.py diff              # → results/claims75.json
 
+The guard on the corpus: every text of ``data/uk`` read by the 0.2.0 code and by the new code.
+
+  uv run python scripts/claims75.py corpus            # → results/claims75_corpus.json
+  uv run python scripts/claims75.py corpus-report     # again, with results/claims75_grades.csv
+
 Snapshots (``results/raw/claims75/``, git-ignored) hold a hash of each text, never the text: the
-premises quote statute text and the fresh and stop 71 answers stay local.
+premises quote statute text and the fresh and stop 71 answers stay local. The corpus diff there
+holds excerpts and stays local too; the committed sample quotes short excerpts with coordinates.
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
+import functools
 import hashlib
 import json
+import random
+import re
+import subprocess
 import sys
-from collections.abc import Iterator, Mapping, Sequence
+import types
+from collections import Counter
+from collections.abc import Callable, Iterator, Mapping, Sequence
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from typing import Any, NamedTuple
 
@@ -285,18 +299,272 @@ def diff() -> dict[str, Any]:
     return out
 
 
+# ---------------------------------------------------------------- the guard on the corpus
+CORPUS_RAW = RAW / "corpus.jsonl"
+CORPUS_REPORT = ROOT / "results/claims75_corpus.json"
+GRADES = ROOT / "results/claims75_grades.csv"
+# claims.py and numbers.py of v0.2.0; citations.py has not changed since.
+OLD_BLOBS = {
+    "numbers": "59d9a489e905fe94bcb93f59e4ff07fcbacd09fc",
+    "claims": "91827b81d5d0257325ef0d71a2980f3585530094",
+}
+CORPUS_FIELDS = ("text", "text_after", "title", "crossheading", "long_title")
+RULES = {
+    "trailing currency": "cur",
+    "French unit": "unit",
+    "French date": "date",
+    "space groups": "space",
+    "decimal comma": "dec",
+    "other": "other",
+}
+GRADE_NAMES = ("right", "wrong", "unclear")
+SAMPLE = 40
+SEED = 75
+EXCERPT = 60  # characters kept each side of a changed claim in the local diff
+SHORT = 40  # and in the committed sample
+
+Reading = list[tuple[str, str, int, int]]
+
+# Rule 1's form, overlapping: a digit, a comma, 1 or 2 digits and no further digit.
+_RULE_1 = re.compile(r"(?=\d(,\d{1,2})(?!\d))")
+_TRAILING = re.compile(r"\d\s?(?:[€£$]|EUR|USD|GBP)$")
+_FRENCH_UNIT = re.compile(r"\b(?:heures?|jours?|semaines?|mois|années?|ans?)\b", re.IGNORECASE)
+_FRENCH_DATE = re.compile(
+    r"\b(?:janvier|f[ée]vrier|mars|avril|mai|juin|juillet|ao[uû]t|septembre|octobre|novembre|"
+    r"d[ée]cembre)\b|\der\b",
+    re.IGNORECASE,
+)
+_SPACE_GROUP = re.compile(r"\d[ \u00a0\u202f]\d")
+_DECIMAL = re.compile(r"\d,\d{1,2}(?!\d)")
+
+
+@functools.cache
+def old_extractor() -> Callable[[str], list[Any]]:
+    """``extract_claims`` of 0.2.0, built from its git blobs."""
+
+    def source(blob: str) -> str:
+        return subprocess.run(  # noqa: S603
+            ["git", "cat-file", "blob", blob],  # noqa: S607
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout
+
+    numbers = types.ModuleType("claims75_numbers_020")
+    sys.modules[numbers.__name__] = numbers
+    exec(compile(source(OLD_BLOBS["numbers"]), "numbers.py@0.2.0", "exec"), numbers.__dict__)  # noqa: S102
+    claims = types.ModuleType("claims75_claims_020")
+    sys.modules[claims.__name__] = claims
+    text = source(OLD_BLOBS["claims"])
+    target = "from legal_rag_verifier.numbers import"
+    if text.count(target) != 1:
+        raise ValueError("unexpected imports in claims.py@0.2.0")
+    text = text.replace(target, f"from {numbers.__name__} import")
+    exec(compile(text, "claims.py@0.2.0", "exec"), claims.__dict__)  # noqa: S102
+    extract: Callable[[str], list[Any]] = claims.extract_claims
+    return extract
+
+
+def reading(claims: Sequence[Any]) -> Reading:
+    return [(c.kind.value, c.value, c.start, c.end) for c in claims]
+
+
+def rule_of(kind: str, span: str) -> str:
+    """The new rule that made a claim, read from the claim's own text; first match wins."""
+    if _TRAILING.search(span):
+        return "trailing currency"
+    if kind == "DURATION" and _FRENCH_UNIT.search(span):
+        return "French unit"
+    if kind == "DATE" and _FRENCH_DATE.search(span):
+        return "French date"
+    if _SPACE_GROUP.search(span):
+        return "space groups"
+    if _DECIMAL.search(span):
+        return "decimal comma"
+    return "other"
+
+
+def guard_forms(text: str) -> Counter[str]:
+    """Rule 1's forms by what follows the digits: the guard keeps the first three apart."""
+    out: Counter[str] = Counter()
+    for m in _RULE_1.finditer(text):
+        after = text[m.end(1) :]
+        if re.match(r",\d", after):
+            out["comma and digit"] += 1
+        elif after.startswith(("'", "’")):
+            out["prime"] += 1
+        elif re.match(r"[-‐]\s?[^\W\d_]", after):
+            out["hyphen and letter"] += 1
+        else:
+            out["decimal"] += 1
+    return out
+
+
+def changed_record(
+    record: Mapping[str, Any], field: str, text: str, before: Reading, after: Reading
+) -> dict[str, Any]:
+    old = set(before)
+    added = [
+        {
+            "claim": list(c),
+            "rule": rule_of(c[0], text[c[2] : c[3]]),
+            "excerpt": [
+                text[max(0, c[2] - EXCERPT) : c[2]],
+                text[c[2] : c[3]],
+                text[c[3] : c[3] + EXCERPT],
+            ],
+            "before": [list(b) for b in before if b[2] < c[3] and c[2] < b[3]],
+        }
+        for c in after
+        if c not in old
+    ]
+    return {
+        "coordinate": record.get("coordinate"),
+        "field": field,
+        "source_url": record.get("source_url"),
+        "before": [list(b) for b in before],
+        "after": [list(a) for a in after],
+        "added": added,
+    }
+
+
+def compare_file(path: str) -> dict[str, Any]:
+    """Both readings of every text in one instrument file; the texts whose claims differ."""
+    old = old_extractor()
+    texts = claims_before = claims_after = 0
+    guard: Counter[str] = Counter()
+    changed = []
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        record = json.loads(line)
+        for field in CORPUS_FIELDS:
+            text = record.get(field)
+            if not isinstance(text, str) or not text:
+                continue
+            texts += 1
+            guard.update(guard_forms(text))
+            before, after = reading(old(text)), reading(extract_claims(text))
+            claims_before += len(before)
+            claims_after += len(after)
+            if before != after:
+                changed.append(changed_record(record, field, text, before, after))
+    return {
+        "texts": texts,
+        "claims_before": claims_before,
+        "claims_after": claims_after,
+        "guard": dict(guard),
+        "changed": changed,
+    }
+
+
+def corpus(workers: int) -> dict[str, Any]:
+    files = sorted(str(p) for p in (ROOT / "data/uk").rglob("*.jsonl"))
+    totals: Counter[str] = Counter()
+    guard: Counter[str] = Counter()
+    RAW.mkdir(parents=True, exist_ok=True)
+    with CORPUS_RAW.open("w", encoding="utf-8") as raw, ProcessPoolExecutor(workers) as pool:
+        for result in pool.map(compare_file, files, chunksize=64):
+            totals["files"] += 1
+            for key in ("texts", "claims_before", "claims_after"):
+                totals[key] += result[key]
+            guard.update(result["guard"])
+            for c in result["changed"]:
+                raw.write(json.dumps(c, ensure_ascii=False) + "\n")
+    counts = {"files": totals["files"], "texts": totals["texts"]}
+    counts |= {"claims_before": totals["claims_before"], "claims_after": totals["claims_after"]}
+    return corpus_report(counts | {"guard": dict(guard)})
+
+
+def read_grades(path: Path = GRADES) -> dict[str, dict[str, str]]:
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8", newline="") as f:
+        rows = {r["id"]: r for r in csv.DictReader(f)}
+    if bad := [i for i, r in rows.items() if r["grade"] not in GRADE_NAMES]:
+        raise ValueError(f"unknown grades for {bad}")
+    return rows
+
+
+def sample_items(changed: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]:
+    """Up to ``SAMPLE`` changed claims under each rule, drawn with ``SEED``."""
+    pools: dict[str, list[tuple[Mapping[str, Any], Mapping[str, Any]]]] = {r: [] for r in RULES}
+    for record in changed:
+        for added in record["added"]:
+            pools[added["rule"]].append((record, added))
+    rng = random.Random(SEED)  # noqa: S311 - a seeded sample, not a secret
+    items = []
+    for rule, code in RULES.items():
+        pool = pools[rule]
+        picked = sorted(rng.sample(range(len(pool)), min(SAMPLE, len(pool))))
+        for k, i in enumerate(picked, 1):
+            record, added = pool[i]
+            left, span, right = added["excerpt"]
+            items.append(
+                {
+                    "id": f"{code}-{k:02d}",
+                    "rule": rule,
+                    "coordinate": record["coordinate"],
+                    "source_url": record["source_url"],
+                    "field": record["field"],
+                    "new": added["claim"][:2],
+                    "old": [b[:2] for b in added["before"]],
+                    "excerpt": left[-SHORT:] + "[" + span + "]" + right[:SHORT],
+                }
+            )
+    return items
+
+
+def corpus_report(counts: Mapping[str, Any] | None = None) -> dict[str, Any]:
+    """Counts by rule, the graded sample and the grades' tally; rewrites the committed report."""
+    if counts is None:
+        counts = json.loads(CORPUS_REPORT.read_text(encoding="utf-8"))["counts"]
+    changed = read_jsonl(CORPUS_RAW)
+    by_rule: dict[str, dict[str, int]] = {r: {"claims": 0, "texts": 0} for r in RULES}
+    for record in changed:
+        rules = {a["rule"] for a in record["added"]}
+        for added in record["added"]:
+            by_rule[added["rule"]]["claims"] += 1
+        for rule in rules:
+            by_rule[rule]["texts"] += 1
+    removed_only = sum(not r["added"] for r in changed)
+    grades = read_grades()
+    items = sample_items(changed)
+    tally: dict[str, Counter[str]] = {r: Counter() for r in RULES}
+    for item in items:
+        graded = grades.get(item["id"])
+        item["grade"] = graded["grade"] if graded else None
+        item["note"] = graded["note"] if graded else ""
+        if graded:
+            tally[item["rule"]][graded["grade"]] += 1
+    out = {
+        "counts": dict(counts),
+        "changed_texts": len(changed),
+        "removed_only": removed_only,
+        "by_rule": by_rule,
+        "graded": {r: dict(t) for r, t in tally.items() if t},
+        "sample": items,
+    }
+    CORPUS_REPORT.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["snapshot", "diff"])
+    parser.add_argument("command", choices=["snapshot", "diff", "corpus", "corpus-report"])
     parser.add_argument("name", nargs="?", choices=["before", "after"])
+    parser.add_argument("--workers", type=int, default=10)
     args = parser.parse_args()
     if args.command == "snapshot":
         if args.name is None:
             parser.error("snapshot needs a name: before or after")
         print(snapshot(args.name))
-    else:
+    elif args.command == "diff":
         out = diff()
         print(json.dumps({"sets": out["sets"], "changed_texts": out["changed_texts"]}, indent=1))
+    else:
+        out = corpus(args.workers) if args.command == "corpus" else corpus_report()
+        keys = ("counts", "changed_texts", "removed_only", "by_rule", "graded")
+        print(json.dumps({k: out[k] for k in keys}, indent=1, ensure_ascii=False))
 
 
 if __name__ == "__main__":

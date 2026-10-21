@@ -3807,3 +3807,35 @@ release in this stop: 0.3.0 follows the product test, on your go.
   decimal-comma branch is tried.
 
 Spend: none (CPU).
+
+
+### Stop 75: the guard on the corpus (method fixed 2026-10-21, before the run)
+
+Your go (2026-10-21), after the gate: the gate's texts held only 4 of the forms the new rules act on, while the
+local corpus holds 7,049 commas before 1 or 2 digits alone. This run measures what the new rules change on English
+legislation. It changes no code; it fixes nothing beforehand.
+
+- Texts: every non-empty string field `text`, `text_after`, `title`, `crossheading` and `long_title` of every record
+  in `data/uk` (134,219 instrument files, 5,564,149 provision records; local, never published). No filter.
+- Readings: `extract_claims` of 0.2.0 and of the new code (`b84dc5f`), compared as (kind, value, start, end), as in
+  the gate. The 0.2.0 reader is `claims.py` and `numbers.py` loaded from their `v0.2.0` blobs (`91827b8`,
+  `59d9a48`); `citations.py` has not changed since.
+- Changed claims: those in the new reading and not in the old, each put under the rule that made it, read from
+  the claim's own text, first match wins: trailing currency (a symbol or code after the number), French unit,
+  French month or "1er", space groups (a space of any kind between digits), decimal comma (a comma before 1 or 2
+  digits), other. A text whose claims only lost entries counts as "removed only".
+- The guard: every comma with a digit before it and 1 or 2 digits after it and no further digit (rule 1's form),
+  counted by what follows it: a comma and a digit, a prime, a hyphen and a letter (the three the guard keeps
+  apart, as on 0.2.0), or none of these (read as a decimal, unless a citation, date or other claim holds the
+  span).
+- Grading: under each rule, a seeded random sample (seed 75) of up to 40 changed claims, each read by me (Claude)
+  against its passage, the full provision where the excerpt is not enough: **right** (the new value is what the
+  text states), **wrong** (it is not: a list, a reference, a code or a table cell read as a decimal, a currency
+  or a duration), **unclear**. These are my grades, not yours; the sample is committed for your check, with
+  short excerpts, each with its coordinate and `source_url` (`results/claims75_corpus.json`; grades in
+  `results/claims75_grades.csv`).
+- Reading: none fixed beforehand. The counts and the graded sample are reported as they come. If wrong readings
+  are common under a rule, a narrower rule is proposed for your go; no code changes in this run.
+
+Raw: every changed text with its coordinate, claims and excerpts in `results/raw/claims75/corpus.jsonl`
+(git-ignored). CPU only, no spend.
