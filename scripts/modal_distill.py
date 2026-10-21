@@ -1055,6 +1055,7 @@ ARMS_STOPS = {  # USD, GRID § Stops 52 to 57
     "stop63": 10.0,
     "stop64": 10.0,
     "stop65": 3.0,
+    "stop73": 1.5,
 }
 
 
@@ -2692,3 +2693,81 @@ def judge69(seed: int = 1) -> None:
             ledger.record(f"{JUDGE69_STAGE} judge", "L40S", seconds, note)
         print(f"{source}: {min(at + CHUNK, len(todo))}/{len(todo)} ({note})", flush=True)
     print(f"Modal: stage ${ledger.stage_spent(JUDGE69_STAGE):.2f}, total ${ledger.spent():.2f}")
+
+
+# ------------------------------------------------------------------ stop 73: ConSens
+
+consens_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install("torch==2.14.1", "transformers==5.18.0", "accelerate==1.15.0")
+    .env({"PYTHONPATH": "/app/scripts", "HF_HOME": "/hf"})
+    .add_local_file(ROOT / "scripts/awareness.py", "/app/scripts/awareness.py")
+    .add_local_file(ROOT / "scripts/consens.py", "/app/scripts/consens.py")
+)
+CONSENS_ESTIMATE = 900  # seconds the call may take, for the ledger check before it runs
+
+
+@app.function(
+    image=consens_image,
+    gpu="L40S",  # the 27B judge's GPU (stops 59 to 72), so the times compare
+    timeout=1800,
+    volumes={"/hf": weights},
+    secrets=[modal.Secret.from_name("huggingface")],  # Llama 3.2 is gated
+)
+def consens_scores(items: list[dict[str, Any]]) -> dict[str, Any]:
+    """Stop 73: both log-likelihoods of every sentence, Llama 3.2 1B Instruct in bf16."""
+    import hashlib  # noqa: PLC0415
+
+    import consens  # noqa: PLC0415
+    import transformers  # noqa: PLC0415
+
+    t0 = time.time()
+    model, tokenizer, torch = consens.load()
+    weights.commit()
+    startup = time.time() - t0
+    rows = consens.measure_all(model, tokenizer, torch, items)
+    return {
+        "rows": rows,
+        "run": {
+            "model": f"{consens.MODEL}@{consens.REVISION}",
+            "dtype": "bfloat16",
+            "gpu": torch.cuda.get_device_name(),
+            "torch": torch.__version__,
+            "transformers": transformers.__version__,
+            "template_sha256": hashlib.sha256(consens.TEMPLATE.encode()).hexdigest(),
+            "warmup": min(consens.WARMUP, len(items)),
+            "sentences": len(rows),
+            "startup_s": round(startup, 1),
+            "seconds": round(time.time() - t0 - startup, 1),
+        },
+    }
+
+
+@app.local_entrypoint()
+def consens(limit: int = 0) -> None:
+    """Stop 73 on the set named in FRESH_SET, in one call. A rerun skips what is scored under the
+    same inputs. ``--limit`` is the smoke run: written apart, not a result."""
+    sys.path[:0] = [str(ROOT / "scripts")]
+    import consens as cs  # noqa: PLC0415
+    import modal_ledger as ledger  # noqa: PLC0415
+
+    probe = bool(limit)
+    have = cs.read_scores(probe=probe)
+    todo = [i for i in cs.items() if have.get(i["key"], {}).get("sha") != i["sha"]]
+    todo = todo[:limit] if limit else todo
+    print(f"{cs.SET}: {len(have)} scored, {len(todo)} to run", flush=True)
+    if not todo:
+        return
+    ledger.check_stage("stop73", ARMS_STOPS["stop73"], "L40S", CONSENS_ESTIMATE)
+    fallback = {i["key"]: i["fallback"] for i in todo}
+    t0 = time.time()
+    note = "failed"
+    try:
+        out = consens_scores.remote([{k: v for k, v in i.items() if k != "fallback"} for i in todo])
+        rows = {r["key"]: cs.entry(r, fallback=fallback[r["key"]]) for r in out["rows"]}
+        cs.write_scores(rows, out["run"], probe=probe)
+        note = f"{cs.SET}{' probe' if probe else ''}: {len(rows)} sentences"
+        print(json.dumps(out["run"], indent=1), flush=True)
+    finally:
+        ledger.record(f"stop73 {cs.SET} consens", "L40S", time.time() - t0, note)
+    print(f"Modal: stage ${ledger.stage_spent('stop73'):.2f}, total ${ledger.spent():.2f}")

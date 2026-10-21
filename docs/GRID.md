@@ -3561,3 +3561,67 @@ at 2.0 s per answer. It states less per answer. With the source in the prompt th
 neither adds nor removes errors.
 
 Spend, stop 72: Modal $1.24 ($47.02 of $55). Opus 5.5 $0.92 ($41.86 of $45).
+
+## Stop 73: ConSens per sentence beside the judge (method fixed 2026-10-21, before any run)
+
+Your go (2026-10-21): run Iris.ai's ConSens (Vankov, Ivanov, Correia and Botev 2025, arXiv 2505.00065) per sentence
+on the second fresh test, with the threshold fixed on the first test before the run, on one Modal L40S. ConSens
+compares the perplexity of an answer after its source with its perplexity after an empty source, read from a small
+evaluator model, with no judge reply. The paper scores whole answers; here each sentence is scored after the
+question and the answer so far. Stop 48 measured the same contrast from the generator itself (log-likelihood per
+token with and without the source) and failed its gate: 0.82 over all sentences, 0.56 to 0.58 within one kind of
+answer. ConSens differs in four ways: a separate 1B evaluator, perplexity as the mean of 1 / p, closed-class and
+question words left out, and the source emptied inside one template. The sigmoid does not change an AUROC.
+
+- Sets: the first fresh test, 354 graded segmenter sentences (356 with the 2 unsure), for the thresholds only; the
+  second fresh test, 151 sentences (84 right, 67 wrong; 72 from answers written with the source, 4 of them wrong),
+  scored once. Grades and units as stop 61 (`fresh_arms.recorded`, `merged_grades`).
+- Evaluator: `meta-llama/Llama-3.2-1B-Instruct` at `9213176726f574b556790deb65791e0c5aa438b6` (the paper's
+  footnote 1), bf16 on one L40S, logits in fp32 for the log-softmax, torch 2.14.1 and transformers 5.18.0. Weights
+  through your Modal secret `huggingface`.
+- Prompt: the paper's template (§ 3) as raw text, no chat template, the answer after `Answer: `:
+  `Consider the following context:\nContext:\n{context}\nPlease answer the following question:\n{question}\nAnswer: `
+  then the answer so far and a space, then the sentence. Context: the source the generator was shown with the
+  source in the prompt (`fresh_battery.source_text`). The empty condition: the same text with an empty context.
+  The tokenizer's BOS token is kept.
+- Words scored: words by the pattern `[A-Za-z0-9]+(?:['’.\-][A-Za-z0-9]+)*`, less closed-class words and the words
+  of the question (case-folded); punctuation is never a word. The tokens that overlap a kept word are scored. A
+  sentence with no word left scores all its words (counted). A sentence with no word at all has no value and is
+  never rolled back by ConSens (counted; 2 here, both code fences). The paper names pronouns, determiners and
+  conjunctions and publishes no list; prepositions are added as closed-class too; auxiliaries and negation stay,
+  since the paper's example drops "is" only because the question holds it. The list:
+  i me my mine myself we us our ours ourselves you your yours yourself yourselves he him his himself she her hers
+  herself it its itself they them their theirs themselves who whom whose which what whoever whatever whichever
+  anyone anything everyone everything someone something nobody nothing; a an the this that these those some any no
+  every each either neither all both another such; and or but nor so yet if because although though while whereas
+  unless until since whether than as when where; about above across after against along amid among around at
+  before behind below beneath beside besides between beyond by despite down during except for from in inside into
+  like near of off on onto out outside over past per regarding through throughout to toward towards under
+  underneath unlike up upon via with within without.
+- Formula (the paper's § 2, from the arXiv HTML): P = (1/N) Σ 1 / p(token), over the scored tokens; r = ln(P_E /
+  P_C); ConSens = 2 / (1 + e^-r) - 1. It reproduces the paper's 0.91 from the word perplexities of its Table 1.
+- Arms, a sentence rolled back when ConSens is under t: **A, the claim check then ConSens** (V0's placement, the
+  primary arm); B, ConSens alone.
+- Thresholds, from the first test only: per arm, the value with the highest accuracy, ties to the lower (stop 48's
+  A3 rule). A second threshold per arm from the first test's with-source sentences, for the with-source reading.
+  The thresholds file is committed with its sha256 here before the second test is scored; `consens.py report`
+  refuses another file.
+- Readings, second test: accuracy (false rollbacks / caught) with a Wilson interval, per domain and per kind of
+  answer; the paper's cut 0 beside it; the with-source sentences under their own threshold. AUROC, right above
+  wrong: in total with a bootstrap interval (2,000 resamples, seed 42), **within the kind of answer** (stop 48's
+  reading: the kind of answer predicts the grade and ConSens tells the kinds apart by construction), and per kind.
+- Against, paired by sentence (sign test): the judge as stop 61 (Qwen 27B 4-bit, short reply, figures to the
+  judge, 90.1 %), V0 (58.3 %), the claim check alone (62.3 %) and no auditor (55.6 %). `report` rebuilds each and
+  stops unless it gives the committed figure.
+- Fixed readings (stop 62's, for a cheap judge): ConSens is **near the judge** if it is at most 3 points under it
+  and not told apart (p ≥ 0.05); **clearly above V0** if at least 10 points above it. For arm A, then arm B.
+- Time: ms per sentence, p50 and p95, both forward passes at batch 1, tokenisation and log-softmax included,
+  CUDA-synchronised, after 10 warm-up calls; prompt tokens p50 and p95; model load apart. Beside it the judge's
+  0.54 s per call on the same GPU. A loop could keep the evaluator's cache of the source and score only the new
+  sentence; not measured.
+- Smoke run first: 5 first-test sentences, written apart (`consens.probe.json`), not a result.
+- Limits: ConSens measures how much a sentence relies on the source, not whether it is right. The second test has
+  been read since stop 56; no ConSens choice is made on it. The with-source stratum holds 4 wrong sentences. The
+  evaluator is a second model, read in two passes; the generator reading its own likelihood was stop 48.
+- Spend: Modal run `stop73`, one L40S, expected about $0.40 (about 10 GPU minutes with the download), stage stop
+  $1.50 in code ($7.98 left of $55).
