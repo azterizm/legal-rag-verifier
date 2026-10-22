@@ -4023,3 +4023,23 @@ every changed claim is right; the decimal comma is about two-thirds right, its e
 tables and chemical names, written in API.md §6. No further rule is proposed.
 
 Spend: none (CPU).
+
+
+### Stop 75: "0," and three digits is a decimal (method fixed 2026-10-22, before the code)
+
+Your choice (2026-10-22), from test 1's census of its French listings (`product-answer-checks`,
+`battery/census.json`): 18 French decimals with three places ("0,965 kWh", "0,048 W", "1,031") read as thousands
+under rule 2; one battery question asks for one ("0,965 kWh" per cycle).
+
+- **The rule.** A numeral of a single "0", a comma and exactly three digits is a decimal: "0,965" → 0.965. English
+  never writes a thousands group after a lone "0". The decimal-comma guard applies as to rule 1 (not after "[" or
+  a comma or another digit; not before a digit, a comma and a digit, ",-", a prime, a bracket or a dash and a
+  letter), so "0,100,200" stays a list. Rule 2 is unchanged otherwise: "1,031" and "3,584" stay thousands (a
+  stated limit; 5 of the 18).
+- Tests first, run once to see them fail: "0,965 kWh", "0,048 W", "0,302 cm³" as decimals; "1,031", "10,100,1000
+  Mbit/s", "0,100,200" unchanged.
+- Checks, as before: the gate (`snapshot narrow3` against `before`, `results/claims75_narrow3.json`) and the corpus
+  run (`corpus --run 78`, a fresh sample with seed 78 graded by me; `results/claims75_corpus78.json`,
+  `results/claims75_grades78.csv`). Any claim under the new rule is listed in full if there are 40 or fewer.
+
+CPU only, no spend.

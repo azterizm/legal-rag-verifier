@@ -20,7 +20,7 @@ The narrower rules (GRID § Stop 75: the narrower rules), checked the same way:
   uv run python scripts/claims75.py corpus --run 76   # → results/claims75_corpus76.json
 
 And "an" before listed punctuation only: ``snapshot narrow2``, ``diff --run 77``,
-``corpus --run 77``.
+``corpus --run 77``; "0," and three digits a decimal: ``narrow3``, ``--run 78``.
 
 Snapshots (``results/raw/claims75/``, git-ignored) hold a hash of each text, never the text: the
 premises quote statute text and the fresh and stop 71 answers stay local. The corpus diff there
@@ -323,6 +323,7 @@ RULES = {
     "French unit": "unit",
     "French date": "date",
     "space groups": "space",
+    "decimal three places": "dec3",
     "decimal comma": "dec",
     "other": "other",
 }
@@ -362,6 +363,14 @@ RUNS = {
         ROOT / "results/claims75_grades77.csv",
         77,
     ),
+    "78": Run(
+        "narrow3",
+        ROOT / "results/claims75_narrow3.json",
+        RAW / "corpus78.jsonl",
+        ROOT / "results/claims75_corpus78.json",
+        ROOT / "results/claims75_grades78.csv",
+        78,
+    ),
 }
 
 Reading = list[tuple[str, str, int, int]]
@@ -377,6 +386,7 @@ _FRENCH_DATE = re.compile(
 )
 _SPACE_GROUP = re.compile(r"\d[ \u00a0\u202f]\d")
 _DECIMAL = re.compile(r"\d,\d{1,2}(?!\d)")
+_DECIMAL_3 = re.compile(r"(?<![\d,])0,\d{3}(?!\d)")
 
 
 @functools.cache
@@ -413,17 +423,15 @@ def reading(claims: Sequence[Any]) -> Reading:
 
 def rule_of(kind: str, span: str) -> str:
     """The new rule that made a claim, read from the claim's own text; first match wins."""
-    if _TRAILING.search(span):
-        return "trailing currency"
-    if kind == "DURATION" and _FRENCH_UNIT.search(span):
-        return "French unit"
-    if kind == "DATE" and _FRENCH_DATE.search(span):
-        return "French date"
-    if _SPACE_GROUP.search(span):
-        return "space groups"
-    if _DECIMAL.search(span):
-        return "decimal comma"
-    return "other"
+    tests = (
+        ("trailing currency", bool(_TRAILING.search(span))),
+        ("French unit", kind == "DURATION" and bool(_FRENCH_UNIT.search(span))),
+        ("French date", kind == "DATE" and bool(_FRENCH_DATE.search(span))),
+        ("space groups", bool(_SPACE_GROUP.search(span))),
+        ("decimal three places", bool(_DECIMAL_3.search(span))),
+        ("decimal comma", bool(_DECIMAL.search(span))),
+    )
+    return next((rule for rule, hit in tests if hit), "other")
 
 
 def guard_forms(text: str) -> Counter[str]:
@@ -592,14 +600,15 @@ def corpus_report(run: Run, counts: Mapping[str, Any] | None = None) -> dict[str
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["snapshot", "diff", "corpus", "corpus-report"])
-    parser.add_argument("name", nargs="?", choices=["before", "after", "narrow", "narrow2"])
+    names = ["before", "after", "narrow", "narrow2", "narrow3"]
+    parser.add_argument("name", nargs="?", choices=names)
     parser.add_argument("--run", choices=sorted(RUNS), default="75")
     parser.add_argument("--workers", type=int, default=10)
     args = parser.parse_args()
     run = RUNS[args.run]
     if args.command == "snapshot":
         if args.name is None:
-            parser.error("snapshot needs a name: before, after, narrow or narrow2")
+            parser.error("snapshot needs a name: before, after or narrow, narrow2, narrow3")
         print(snapshot(args.name))
     elif args.command == "diff":
         out = diff(run)

@@ -66,6 +66,7 @@ def test_each_new_claim_is_put_under_its_rule() -> None:
     assert claims75.rule_of("DATE", "1er mars 2026") == "French date"
     assert claims75.rule_of("NUMBER", "5\u00a0000") == "space groups"
     assert claims75.rule_of("PERCENT", "0,25 %") == "decimal comma"
+    assert claims75.rule_of("NUMBER", "0,965") == "decimal three places"
     assert claims75.rule_of("NUMBER", "12") == "other"
 
 
@@ -105,7 +106,7 @@ def test_the_sample_is_seeded_and_capped_per_rule() -> None:
 def test_each_run_keeps_its_own_files_and_draws_a_fresh_sample() -> None:
     runs = list(claims75.RUNS.values())
     first = claims75.RUNS["75"]
-    assert [r.seed for r in runs] == [75, 76, 77]
+    assert [r.seed for r in runs] == [75, 76, 77, 78]
     for field in ("snapshot", "gate", "raw", "report", "grades"):
         assert len({getattr(r, field) for r in runs}) == len(runs)
     assert first.report == claims75.CORPUS_REPORT
