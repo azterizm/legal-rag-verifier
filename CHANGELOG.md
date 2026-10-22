@@ -6,6 +6,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-22
+
 ### Fixed
 - `legal_rag_verifier.__version__` reads the installed package version. It said `0.1.0.dev0` in 0.2.0.
 
@@ -34,6 +36,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   every one right outside the decimal comma, which is about two-thirds right (lists, codes, glued
   tables and chemical names still misread). "0,965 kWh" reads as 0.965 (from test 1's French
   listings); 614 texts change, the new readings all right in a sample of 40.
+- Test 1 of [`product-answer-checks`](https://github.com/azterizm/product-answer-checks) runs this
+  release's claim check on French and English product listings.
 
 ## [0.2.0] - 2026-10-13
 
@@ -85,5 +89,6 @@ English.
   injection A/B; the placement and attention replay; injection v2 (question restated in the inserted
   turn, `legal-rag-router` as the abstention gate). Proof-of-concept verdict: `docs/VERDICT.md`.
 
+[0.3.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.3.0
 [0.2.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.2.0
 [0.1.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.1.0

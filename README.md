@@ -35,7 +35,8 @@ pip install "legal-rag-verifier[sglang]"  # + client for an SGLang server (token
 pip install "legal-rag-verifier[hf]"      # + in-process Hugging Face generation
 ```
 
-Python 3.11 or later. English and United Kingdom legislation only.
+Python 3.11 or later. Built on United Kingdom legislation. Prose is read in English; figures (numbers,
+prices, dates and durations) in English and French formats.
 
 ## Check a sentence
 
