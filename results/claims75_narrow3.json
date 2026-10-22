@@ -1,0 +1,1527 @@
+{
+ "sets": {
+  "dev": {
+   "tier": 1,
+   "texts": 11967,
+   "claims_before": 18502,
+   "claims_after": 18502,
+   "changed": 0
+  },
+  "heldout": {
+   "tier": 1,
+   "texts": 15390,
+   "claims_before": 25393,
+   "claims_after": 25393,
+   "changed": 0
+  },
+  "fresh": {
+   "tier": 1,
+   "texts": 1761,
+   "claims_before": 2193,
+   "claims_after": 2193,
+   "changed": 0
+  },
+  "fresh2": {
+   "tier": 1,
+   "texts": 524,
+   "claims_before": 676,
+   "claims_after": 676,
+   "changed": 0
+  },
+  "software": {
+   "tier": 1,
+   "texts": 418,
+   "claims_before": 202,
+   "claims_after": 202,
+   "changed": 0
+  },
+  "sota71": {
+   "tier": 2,
+   "texts": 1790,
+   "claims_before": 2326,
+   "claims_after": 2326,
+   "changed": 0
+  }
+ },
+ "changed_texts": 0,
+ "changed": [],
+ "pairs": [
+  {
+   "id": "money-00",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-01",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-02",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-03",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-10",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-11",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-12",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-13",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-20",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-21",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-22",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-23",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-30",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-31",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-32",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "money-33",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spaced-space",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "299"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spaced-nbsp",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "299"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spaced-nnbsp",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "299"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spaced-space-answer",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "299"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spaced-nbsp-answer",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "299"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spaced-nnbsp-answer",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "299"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:1299.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "hours",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "30"
+     ]
+    ],
+    "answer": [
+     [
+      "DURATION",
+      "30:hour"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "DURATION",
+      "30:hour"
+     ]
+    ],
+    "answer": [
+     [
+      "DURATION",
+      "30:hour"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "date",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "5"
+     ],
+     [
+      "NUMBER",
+      "2026"
+     ]
+    ],
+    "answer": [
+     [
+      "DATE",
+      "2026-11-05"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "DATE",
+      "2026-11-05"
+     ]
+    ],
+    "answer": [
+     [
+      "DATE",
+      "2026-11-05"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "first",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "2026"
+     ]
+    ],
+    "answer": [
+     [
+      "DATE",
+      "2026-03-01"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "DATE",
+      "2026-03-01"
+     ]
+    ],
+    "answer": [
+     [
+      "DATE",
+      "2026-03-01"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "years",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "2"
+     ]
+    ],
+    "answer": [
+     [
+      "DURATION",
+      "2:year"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "DURATION",
+      "2:year"
+     ]
+    ],
+    "answer": [
+     [
+      "DURATION",
+      "2:year"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "working-days",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "3"
+     ],
+     [
+      "NUMBER",
+      "5"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "3"
+     ],
+     [
+      "DURATION",
+      "5:day"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "3"
+     ],
+     [
+      "DURATION",
+      "5:day"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "3"
+     ],
+     [
+      "DURATION",
+      "5:day"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "weight",
+   "expected": [
+    "EMIT",
+    "GROUNDED"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "1"
+     ],
+     [
+      "NUMBER",
+      "2"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "1.2"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "EMIT",
+    "reasons": [
+     "GROUNDED"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "1.2"
+     ]
+    ],
+    "answer": [
+     [
+      "NUMBER",
+      "1.2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "price-wrong",
+   "expected": [
+    "ROLLBACK",
+    "UNGROUNDED_FIGURE"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "279"
+     ],
+     [
+      "NUMBER",
+      "99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:289.99"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "MONEY",
+      "EUR:279.99"
+     ]
+    ],
+    "answer": [
+     [
+      "MONEY",
+      "EUR:289.99"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "hours-wrong",
+   "expected": [
+    "ROLLBACK",
+    "UNGROUNDED_FIGURE"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "30"
+     ]
+    ],
+    "answer": [
+     [
+      "DURATION",
+      "40:hour"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "DURATION",
+      "30:hour"
+     ]
+    ],
+    "answer": [
+     [
+      "DURATION",
+      "40:hour"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "date-wrong",
+   "expected": [
+    "ROLLBACK",
+    "UNGROUNDED_FIGURE"
+   ],
+   "before": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "NUMBER",
+      "5"
+     ],
+     [
+      "NUMBER",
+      "2026"
+     ]
+    ],
+    "answer": [
+     [
+      "DATE",
+      "2026-11-06"
+     ]
+    ]
+   },
+   "after": {
+    "verdict": "ROLLBACK",
+    "reasons": [
+     "UNGROUNDED_FIGURE"
+    ],
+    "listing": [
+     [
+      "DATE",
+      "2026-11-05"
+     ]
+    ],
+    "answer": [
+     [
+      "DATE",
+      "2026-11-06"
+     ]
+    ]
+   }
+  }
+ ]
+}

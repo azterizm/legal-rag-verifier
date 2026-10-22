@@ -1,0 +1,153 @@
+id,grade,note
+cur-01,right,"EUR amount quoted from EU text, a space before the code"
+cur-02,right,"EUR amount quoted from EU text, a space before the code"
+cur-03,right,"EUR amount quoted from EU text, a space before the code"
+cur-04,right,"EUR amount quoted from EU text, a space before the code"
+cur-05,right,"EUR amount quoted from EU text, a space before the code"
+cur-06,right,"EUR amount quoted from EU text, a space before the code"
+cur-07,right,"EUR amount quoted from EU text, a space before the code"
+cur-08,right,"EUR amount quoted from EU text, a space before the code"
+cur-09,right,"EUR amount quoted from EU text, a space before the code"
+cur-10,right,"EUR amount quoted from EU text, a space before the code"
+cur-11,right,"EUR amount quoted from EU text, a space before the code"
+unit-01,right,French text of a carriage convention: six mois
+unit-02,right,French text of a carriage convention: six mois
+unit-03,right,French text of a carriage convention: six mois
+unit-04,right,French text of a carriage convention: six mois
+unit-05,right,French text of a carriage convention: six mois
+unit-06,right,French text of a carriage convention: six mois
+unit-07,right,French text of a carriage convention: six mois
+unit-08,right,French text of a carriage convention: six mois
+unit-09,right,French text of a carriage convention: six mois
+unit-10,right,French text of a carriage convention: six mois
+date-01,right,a French or Welsh date quoted in the text
+date-02,right,a French or Welsh date quoted in the text
+date-03,right,a French or Welsh date quoted in the text
+date-04,right,"a street name, boulevard du 11 Novembre 1918; the date is as written"
+date-05,right,a French or Welsh date quoted in the text
+date-06,right,a French or Welsh date quoted in the text
+date-07,right,a French or Welsh date quoted in the text
+date-08,right,a French or Welsh date quoted in the text
+date-09,right,a French or Welsh date quoted in the text
+space-01,right,a temperature in kelvin
+space-02,right,a temperature in kelvin
+dec3-01,right,an EU-derived decimal with three places
+dec3-02,right,an EU-derived decimal with three places
+dec3-03,right,an EU-derived decimal with three places
+dec3-04,right,an EU-derived decimal with three places
+dec3-05,right,an EU decimal replaced by its English form
+dec3-06,right,an EU-derived decimal with three places
+dec3-07,right,"seconds of a coordinate, 0,ddd″"
+dec3-08,right,"seconds of a coordinate, 0,ddd″"
+dec3-09,right,"seconds of a coordinate, 0,ddd″"
+dec3-10,right,"seconds of a coordinate, 0,ddd″"
+dec3-11,right,"seconds of a coordinate, 0,ddd″"
+dec3-12,right,"seconds of a coordinate, 0,ddd″"
+dec3-13,right,"seconds of a coordinate, 0,ddd″"
+dec3-14,right,"seconds of a coordinate, 0,ddd″"
+dec3-15,right,"seconds of a coordinate, 0,ddd″"
+dec3-16,right,"seconds of a coordinate, 0,ddd″"
+dec3-17,right,"seconds of a coordinate, 0,ddd″"
+dec3-18,right,"seconds of a coordinate, 0,ddd″"
+dec3-19,right,"seconds of a coordinate, 0,ddd″"
+dec3-20,right,"seconds of a coordinate, 0,ddd″"
+dec3-21,right,"seconds of a coordinate, 0,ddd″"
+dec3-22,right,"seconds of a coordinate, 0,ddd″"
+dec3-23,right,"seconds of a coordinate, 0,ddd″"
+dec3-24,right,"seconds of a coordinate, 0,ddd″"
+dec3-25,right,"seconds of a coordinate, 0,ddd″"
+dec3-26,right,"seconds of a coordinate, 0,ddd″"
+dec3-27,right,"seconds of a coordinate, 0,ddd″"
+dec3-28,right,"seconds of a coordinate, 0,ddd″"
+dec3-29,right,"seconds of a coordinate, 0,ddd″"
+dec3-30,right,"seconds of a coordinate, 0,ddd″"
+dec3-31,right,"seconds of a coordinate, 0,ddd″"
+dec3-32,right,"seconds of a coordinate, 0,ddd″"
+dec3-33,right,"seconds of a coordinate, 0,ddd″"
+dec3-34,right,"seconds of a coordinate, 0,ddd″"
+dec3-35,right,"seconds of a coordinate, 0,ddd″"
+dec3-36,right,"seconds of a coordinate, 0,ddd″"
+dec3-37,right,"seconds of a coordinate, 0,ddd″"
+dec3-38,right,"seconds of a coordinate, 0,ddd″"
+dec3-39,right,"seconds of a coordinate, 0,ddd″"
+dec3-40,right,"seconds of a coordinate, 0,ddd″"
+dec-01,wrong,"a year and a section run together, Act, 1925,84 of"
+dec-02,right,a decimal comma in EU-derived text
+dec-03,right,a decimal comma in EU-derived text
+dec-04,right,a decimal comma in EU-derived text
+dec-05,right,a decimal comma in EU-derived text
+dec-06,right,a decimal comma in EU-derived text
+dec-07,right,a decimal comma in EU-derived text
+dec-08,wrong,"a locant primed with U+2032, 4,4′"
+dec-09,right,a decimal comma in EU-derived text
+dec-10,right,a decimal comma in EU-derived text
+dec-11,right,a decimal comma in EU-derived text
+dec-12,wrong,"a list without a space, Orders 3,4&5"
+dec-13,right,a decimal comma in EU-derived text
+dec-14,right,a decimal comma in EU-derived text
+dec-15,right,a decimal comma in EU-derived text
+dec-16,wrong,"a locant before a hyphen and a bracket, 2,2-[bis"
+dec-17,right,a decimal comma in EU-derived text
+dec-18,right,a decimal comma in EU-derived text
+dec-19,right,a decimal comma in EU-derived text
+dec-20,wrong,"table cells glued: Po-210 and 0,01"
+dec-21,wrong,"table cells glued: Am-241 and 0,06"
+dec-22,wrong,"a list of codes, 05-018,05-019"
+dec-23,right,a decimal comma in EU-derived text
+dec-24,right,a decimal comma in EU-derived text
+dec-25,right,a decimal comma in EU-derived text
+dec-26,right,a decimal comma in EU-derived text
+dec-27,right,a decimal comma in EU-derived text
+dec-28,wrong,"a clock time, 06,00"
+dec-29,right,a decimal comma in EU-derived text
+dec-30,right,a decimal comma in EU-derived text
+dec-31,right,a decimal comma in EU-derived text
+dec-32,wrong,"a list of codes, 05-006,05-007"
+dec-33,wrong,"a list of codes, 32-006,33-001"
+dec-34,right,a decimal comma in EU-derived text
+dec-35,right,a decimal comma in EU-derived text
+dec-36,wrong,"a list of plot codes, 5-65,5-68"
+dec-37,right,a decimal comma in EU-derived text
+dec-38,right,a decimal comma in EU-derived text
+dec-39,right,a decimal comma in EU-derived text
+dec-40,wrong,"a locant before a space and a word, 1,3 butanediol"
+other-01,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-02,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-03,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-04,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-05,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-06,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-07,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-08,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-09,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-10,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-11,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-12,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-13,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-14,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-15,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-16,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-17,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-18,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-19,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-20,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-21,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-22,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-23,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-24,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-25,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-26,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-27,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-28,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-29,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-30,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-31,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-32,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-33,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-34,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-35,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-36,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-37,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-38,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-39,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"
+other-40,right,"a colour list read value by value; 0.2.0 read ""0,100"" as 100"

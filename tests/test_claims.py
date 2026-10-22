@@ -363,6 +363,14 @@ def test_decimals_beside_the_wider_guard() -> None:
     assert values("for “0,9” substitute “0.9”", ClaimKind.NUMBER) == ["0.9", "0.9"]
     assert values("in the range 1,2 μm-2,0 μm", ClaimKind.NUMBER) == ["1.2", "2"]
     assert values("Ra-226 0,5 Bq/1", ClaimKind.NUMBER) == ["226", "0.5"]
+    assert values("Consommation : 0,965 kWh", ClaimKind.NUMBER) == ["0.965"]
+    assert values("Veille : 0,048 W", ClaimKind.NUMBER) == ["0.048"]
+    assert values("Volume : 0,302 cm³", ClaimKind.NUMBER) == ["0.302"]
+    assert values("taux : 10,100,1000 Mbit/s", ClaimKind.NUMBER) == ["10100", "1000"]
+    assert values("0,100,200", ClaimKind.NUMBER) == ["100200"]
+    assert "0.1" not in values("A-class: 100,0,100,0;", ClaimKind.NUMBER)
+    # "1,031" stays a thousands group, as does a list without a space: stated limits.
+    assert values("Indice : 1,031", ClaimKind.NUMBER) == ["1031"]
     # A list without a space is still read as a decimal: a stated limit.
     assert values("Units 1,2 and 3", ClaimKind.NUMBER) == ["1.2", "3"]
 

@@ -1338,3 +1338,9 @@ With "an" read only before the end of a line, ". , ; : )" or "de" / "d’", and 
 
 579 texts changed (0.01 %), from 4,573 in the first run. Raw: `results/claims75_corpus77.json`,
 `results/claims75_grades77.csv`.
+
+With "0," and three digits read as a decimal ("0,965 kWh", from test 1's census; 2026-10-22), once more with seed
+78. Gate: 0 of 31,850 changed, 31 of 31 pairs. 614 texts changed: the new rule 146 claims, 40 of 40 sampled right;
+colour lists now read value by value, 56 claims, 40 of 40 right; the other rules as before (decimal comma 28 of
+40 right). A first run found a fault (28 list values read as 0.1), fixed before these figures (GRID). Raw:
+`results/claims75_corpus78.json`, `results/claims75_grades78.csv`.

@@ -57,14 +57,18 @@ NUMBER_WORDS_RE = rf"\b{_WORD}(?:(?:[\s-]+(?:and[\s-]+)?){_WORD})*\b"
 # A decimal comma: 1 or 2 digits and no digit after them ("279,99", "1,2 kg"). Not a list of
 # numbers ("2,4,6"), nor a chemical locant: primed, bracketed or followed by a dash (any kind)
 # and a letter ("3,3'-", "[1,2,4]triazolo", "2,2(bis", "1,3,5,-triazine", "1,3-butadiene").
-_DECIMAL_COMMA = r",\d{1,2}(?!\d|,\d|,-|['’]|[\]()]|[-‐–—]\s?[^\W\d_])"
+_DECIMAL_GUARD = r"(?!\d|,\d|,-|['’]|[\]()]|[-‐–—]\s?[^\W\d_])"
+_DECIMAL_COMMA = rf",\d{{1,2}}{_DECIMAL_GUARD}"
 # Nor a number right after "[" or a comma ("[1,4]", the "2,4" of "1,2,4").
 _DECIMAL_START = r"(?<![\[,\d])"
+# A lone "0" before a comma and three digits is a decimal too ("0,965 kWh"): English writes no
+# thousands group after "0". In a list ("100,0,100,0") it is neither a decimal nor thousands.
 #: A numeral with optional thousands separators and decimals ("68,400", "12.5", "68400"); in
 #: French formats a decimal comma ("279,99") and digit groups split by a no-break or narrow
-#: no-break space ("1 299"), or by a plain space before a decimal comma ("1 299,99").
+#: no-break space ("1 299"), or by a plain space before a decimal comma ("1 299,99"); and "0,965".
 NUMERAL_RE = (
-    r"(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?"
+    rf"(?:{_DECIMAL_START}0,\d{{3}}{_DECIMAL_GUARD}"
+    r"|(?!0,\d{3}(?!,\d{3}))\d{1,3}(?:,\d{3})+(?:\.\d+)?"
     rf"|(?<!\d)\d{{1,3}}(?:[\u00a0\u202f]\d{{3}})+(?!\d)(?:{_DECIMAL_COMMA}|\.\d+)?"
     rf"|{_DECIMAL_START}\d{{1,3}}(?: \d{{3}})+{_DECIMAL_COMMA}"
     rf"|{_DECIMAL_START}\d+{_DECIMAL_COMMA}"
@@ -95,7 +99,8 @@ def canonical_decimal(value: Decimal) -> str:
 def parse_numeral(text: str) -> Decimal | None:
     """Parse ``68,400`` / ``12.5`` / ``279,99`` / ``1 299,99``; ``None`` when not a numeral."""
     text = text.translate(_GROUP_SPACES)
-    text = text.replace(",", ".") if re.fullmatch(r"\d+,\d{1,2}", text) else text.replace(",", "")
+    decimal = re.fullmatch(r"\d+,\d{1,2}|0,\d{3}", text)
+    text = text.replace(",", ".") if decimal else text.replace(",", "")
     try:
         return Decimal(text)
     except InvalidOperation:

@@ -4043,3 +4043,32 @@ under rule 2; one battery question asks for one ("0,965 kWh" per cycle).
   `results/claims75_grades78.csv`). Any claim under the new rule is listed in full if there are 40 or fewer.
 
 CPU only, no spend.
+
+
+### Stop 75: "0," and three digits a decimal, results (2026-10-22)
+
+**A fault found by the first corpus run, fixed before these results.** The first run (local
+`results/raw/claims75/corpus78-first.jsonl`) gave 174 claims under the new rule, 28 of them wrong: in colour
+lists ("A-class: 100,0,100,0") the thousands branch still matched a lone "0,100", which the new parsing then read
+as 0.1. The thousands branch now refuses a lone "0," and three digits unless another three-digit group follows, so
+"0,100,200" stays 100200 as on 0.2.0 and "100,0,100,0" reads 100, 0, 100, 0. Test added; the gate and the corpus
+run were run again on the fixed code, below.
+
+- **The gate:** no change in the 31,850 texts (`results/claims75_narrow3.json`); the 31 pairs as expected. The new
+  test failed before the change; full suite 400 passed.
+- **The corpus run** (0.2.0 against this code): 614 texts changed (579 before this rule). Fresh sample, seed 78:
+
+| Rule | Changed claims | Texts | Sample graded by me | Right | Wrong |
+|---|---|---|---|---|---|
+| Decimal three places (new) | 146 | 22 | 40 | 40 | 0 |
+| Other (the colour lists, read value by value) | 56 | 22 | 40 | 40 | 0 |
+| Decimal comma (unchanged) | 1,187 | 551 | 40 | 28 | 12 |
+| Trailing currency, French unit, French date, space groups (unchanged) | 32 | 27 | 32 | 32 | 0 |
+
+The new rule's claims are densities and limits from EU-derived text ("0,958 g/cm3", "0,005 milliwatts"), seconds of
+arc in coordinates ("57′ 0,102″"), and amendments ("for “0,225” substitute “0.225”"). The "other" claims are the
+colour lists, now read value by value where 0.2.0 read "0,100" as 100. The decimal comma's errors are as in the
+earlier runs (lists, codes, glued tables, locants, and a clock time "06,00"). "1,031" and "3,584" stay thousands:
+a stated limit.
+
+Spend: none (CPU).
