@@ -4142,3 +4142,16 @@ Qwen 3.8 27B, on Groq and Cloudflare in rotation; Modal only if the smoke test s
   budget or error and on the rotation giving up. Raw rewrites quote statute text and stay git-ignored
   (`results/rewrite74/`); counts in `results/rewrite74_report.json`. Keys come from the environment; the
   Cloudflare account id is passed in the environment and not written to the repository. Nothing changes in `src/`.
+
+### Stop 74: smoke test (2026-10-23)
+
+- Before any call, pair A's drop arm was walked again from stop 71's labels alone (`rewrite74.py rebuild`): 240 of
+  240 answers equal stop 71's `opus46+flash`, so its labels are reused exactly.
+- Each host alone, one judge prompt: Groq first refused the request (its limit on output tokens per minute is 1,000
+  and a request with no `max_tokens` reserves more). Judge calls now ask for at most 128 output tokens; the reply
+  is a 20-token JSON object. Then both hosts gave the same label with thinking off: Groq 0.2 to 1.3 s, Cloudflare
+  1.0 to 5.1 s. **Modal is not needed.**
+- Two questions per pair, kept in the run files: pair A `fresh2:gl-10` (first sentence rejected) and `fresh:fl-01`,
+  both kept at try 1; pair B `fresh2:gl-07` (first sentence rejected; Flash wrote X again at all 3 tries, dropped)
+  and `fresh2:gl-09` (nothing rejected). The question alone followed by the turn (nothing kept yet) is accepted by
+  the router. 6 Qwen labels, all from Groq, no host failure.

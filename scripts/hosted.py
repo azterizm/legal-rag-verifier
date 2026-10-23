@@ -24,6 +24,8 @@ from typing import Any
 
 ROUNDS = 6
 BACKOFF = (5.0, 15.0, 30.0, 60.0, 120.0, 240.0)  # seconds after a round where both hosts failed
+# A judge reply is a short JSON object; Groq counts the reserved output against a per-minute limit.
+MAX_TOKENS = 128
 _THINK = re.compile(r"<think>.*?</think>", re.DOTALL)
 
 
@@ -76,7 +78,12 @@ def call(
     key = os.environ.get(host.key_env, "")
     if not key:
         raise HostedError(f"{host.key_env} is not set")
-    body = {"model": host.model, "messages": list(messages), "temperature": temperature}
+    body = {
+        "model": host.model,
+        "messages": list(messages),
+        "temperature": temperature,
+        "max_tokens": MAX_TOKENS,
+    }
     body |= host.extra
     request = urllib.request.Request(  # noqa: S310 - https only, fixed hosts
         host.url(),
