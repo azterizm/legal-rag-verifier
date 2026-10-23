@@ -6,6 +6,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- `VerifierConfig(totals="line")`, off by default: a money figure equal to two money figures of
+  one currency on one line of the source, added, is grounded, unless either is inside brackets
+  on that line. An offer's price plus its shipping ("€903.99 + €4.99 = €908.98") is grounded;
+  its old price plus shipping, sums across lines and wrong totals are not. The config key is in
+  every trace.
+
+### Evaluation
+- Stop 76, in test 1 of `product-answer-checks` (arm 2t): on Claude Opus 4.6's answers the claim
+  check with totals removes 25 right sentences instead of 106 and leaves 2 answers empty instead
+  of 9, but keeps 30 wrong sentences instead of 21. Each of the 9 is a correct total inside a
+  wrong claim (wrong shop, or a budget). On Gemini 3.8 Flash's answers it removes 11 right
+  sentences instead of 75, and keeps no wrong one.
+
 ## [0.3.0] - 2026-10-22
 
 ### Fixed

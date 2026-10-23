@@ -33,7 +33,7 @@ v.check_sentence(premise, sentence, *, query=None) -> SentenceVerdict   # in-fli
 VerifierConfig(entail_threshold=0.70, contradict_threshold=0.40,
                neutral_policy="connective" | "strict", top_k=2, align_ratio=0.5,
                neutral_with_grounded_claim="emit" | "rollback",
-               ungrounded_figure="rollback" | "judge")
+               ungrounded_figure="rollback" | "judge", totals="off" | "line")
 ```
 
 `ungrounded_figure` (since stop 54): what happens to a sentence whose only failed claims are figures not found
@@ -41,6 +41,12 @@ in the source. `"rollback"` is the default and the behaviour of 0.1.0. With `"ju
 decides: the sentence is emitted only if it is entailed, and its other claims keep their checks. A citation or
 an instrument that is not in the source still rolls back. The figure stays in `claims` with its reason, and
 `details` names it. Without an NLI scorer `"judge"` behaves as `"rollback"`.
+
+`totals` (since stop 76): `"off"` is the default and the behaviour of 0.3.0. With `"line"`, a money figure that
+no window states is grounded when it equals two money figures of the same currency on one line of one window,
+added, neither inside brackets on that line: "Price: €279.99 (was €329.99) — Shipping: €4.99" grounds €284.98 and
+not €334.98. Sums across lines or windows, of three figures, and of other kinds are never grounded. `details`
+names the figure ("€284.98 is the sum of two figures on one line of the source").
 
 `SentenceVerdict`: `text, start, end, verdict (EMIT|ROLLBACK), reasons, claims: [ClaimResult], deontics,
 aligned (window indices), nli: NLIResult | None, repair: Repair | None, claim_latency_ns, nli_latency_ns,
@@ -176,3 +182,8 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
   ("Garantie 1 an", "1 an de garantie"; not "1 an environ" or "2 An “term” is"): before the end of a
   line, ". , ; : )" or "de" / "d’", and not after a hyphen. French number words, modal verbs and
   qualifiers are not read. Measured on the corpus in stop 75.
+- Totals (stop 76, `totals="line"`): the total of any one offer in the source grounds the figure, not only
+  that of the shop the sentence names (prices have the same limit, an offer list being one window). A right
+  total in a wrong claim ("the cheapest is Shop B at €105.98" when Shop A is cheaper) is kept. On
+  legislation a window is one line, so `"line"` would ground the sum of any two amounts in a provision; it
+  is off by default and was not measured there.

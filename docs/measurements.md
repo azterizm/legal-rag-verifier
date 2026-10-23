@@ -1369,3 +1369,33 @@ With "0," and three digits read as a decimal ("0,965 kWh", from test 1's census;
 colour lists now read value by value, 56 claims, 40 of 40 right; the other rules as before (decimal comma 28 of
 40 right). A first run found a fault (28 list values read as 0.1), fixed before these figures (GRID). Raw:
 `results/claims75_corpus78.json`, `results/claims75_grades78.csv`.
+
+
+## Totals (stop 76, 2026-10-23; method in `docs/GRID.md`)
+
+Aim: ground a euro total that is one offer's price plus its shipping (`VerifierConfig(totals="line")`, opt-in,
+build `9ab6603`), and still roll back a wrong total. Test 1 of `product-answer-checks`, arm 2t: dev first, then the
+sealed battery once. Machine: this Mac, CPU only. Spend: none. Grades are test 1's.
+
+| Opus 4.6, 288 sentences, 32 wrong | Wrong kept | Wrong prices kept | Right removed | Empty, of 120 | Median time |
+|---|---|---|---|---|---|
+| Claim check, 0.3.0 | 21 | 3 | 106 | 9 | 6.2 ms |
+| Claim check with totals | 30 | 12 | 25 | 2 | 6.5 ms |
+
+| Flash, 262 sentences, none wrong | Right removed | Empty | Median time |
+|---|---|---|---|
+| Claim check, 0.3.0 | 75 | 8 | 6.3 ms |
+| Claim check with totals | 11 | 1 | 6.6 ms |
+
+By half, Opus 4.6 (wrong kept, right removed, empty): French 7, 51, 5 → 13, 11, 1; English 14, 55, 4 → 17, 14, 1.
+Flash right removed: French 36 → 6, English 39 → 5.
+
+- Right sentences removed for a price plus shipping (read from the offers): Opus 4.6 94, of which 81 are kept with
+  totals; Flash 72, 64 kept. The rest are type B value-swap rollbacks (12 and 8) and one bare number.
+- Wrong sentences kept with totals and not without: 9 (Opus 4.6). Each states a right total in a wrong claim
+  (cheapest or dearest shop, 5; budget conclusion, 4).
+- Dev: "€316.99 (€311.00 + €4.99)" still rolls back; with totals off this build gives 0.3.0's verdicts on all 280
+  answers (dev and battery).
+
+Raw: `product-answer-checks` `results/report.json` (`totals`), checked answers local.
+

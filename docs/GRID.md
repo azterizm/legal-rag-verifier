@@ -4261,3 +4261,41 @@ plus shipping. The battery's sentences were not read for this rule.
 - Then the product repo's arm 2t (its METHOD, Changes 2026-10-23): dev first, then the sealed battery once.
 
 CPU only, no spend. No release in this stop.
+
+
+### Stop 76: results (2026-10-23)
+
+- **Code:** `9ab6603`. The 13 tests in `tests/test_totals.py` failed on 0.3.0 (no `totals` in the config) and pass
+  now; full suite 426 passed. The sums are a lazy property of the window index, so the default path never
+  computes them (a test checks it).
+- **Dev** (product repo, 40 answers): the control (this build, totals off) gave 0.3.0's verdicts on every
+  sentence. With `"line"`, 16 verdicts changed on Opus 4.6 and 12 on Flash, exactly the sentences 0.3.0 rolled
+  back with only offer totals failed, all to EMIT. "€316.99 (€311.00 + €4.99)" still rolls back. The 6 dev
+  rollbacks left fail on bare numbers ("November 5", "November 11") or the query's "30-day".
+- **Battery, once** (both generators, 240 answers; the control matched arm 2's stored verdicts). Test 1's grades,
+  nothing graded again:
+
+| Opus 4.6, 288 sentences, 32 wrong | Wrong kept | Wrong prices kept | Right removed | Empty, of 120 | Median time |
+|---|---|---|---|---|---|
+| Claim check, 0.3.0 (arm 2) | 21 | 3 | 106 | 9 | 6.2 ms |
+| Claim check with totals (arm 2t) | 30 | 12 | 25 | 2 | 6.5 ms |
+
+| Flash, 262 sentences, none wrong | Right removed | Empty | Median time |
+|---|---|---|---|
+| Claim check, 0.3.0 | 75 | 8 | 6.3 ms |
+| Claim check with totals | 11 | 1 | 6.6 ms |
+
+- **The sums gap** (right sentences arm 2 removed that state one offer's price plus non-free shipping, read from
+  the offers): Opus 4.6 **94, 81 recovered**; Flash 72, 64 recovered. Not recovered: 12 and 8 rolled back as
+  FIGURE_MISALIGNED, all in type B (three products, each offer its own window; the sentence aligns to other
+  windows, so the total, and in most of them the stated price too, reads as another product's), and 1 bare number
+  ("75") on Opus 4.6.
+- **Wrong sentences newly kept: 9, all Opus 4.6**, none newly removed right. Each states a total that is right;
+  the claim around it is wrong: which shop is cheapest (4, A06 and A11 in both languages), which is dearest (1,
+  A09-fr), the budget or criteria conclusion (4, B01-fr, B07-fr twice, B11-en). The claim check had caught them
+  only because their total was not in the listing: of the 32 wrong sentences it now rolls back 2 (11 before).
+- Reading (none fixed beforehand): on Opus 4.6 totals cut the right sentences removed from 106 to 25 and empty
+  answers from 9 to 2, and give back 9 wrong sentences, 9 of them prices. On Flash, 75 to 11 and 8 to 1, none
+  wrong. 0.3 ms more per answer.
+
+Spend: none (CPU). Not run: arm 3 with totals (the 1B judge after arm 2t, Modal about $0.25), on your go.
