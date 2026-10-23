@@ -4173,3 +4173,55 @@ Qwen 3.8 27B, on Groq and Cloudflare in rotation; Modal only if the smoke test s
   key: `2dce06a04f3e5f047a497a8c7249a12a013d645247bee627c7c04c9c55c9e6d6 1fce5d6e1c1c4e026ed60b700e5ae11b079b51bc8198033c4a42724e06a01ae2`.
 - Spend so far: Flash and the two hosts not charged; Opus 5.5 none ($41.86 of $45). Grading expected under $0.50.
   **Halt for you**: your go on Opus 5.5 grading.
+
+### Stop 74: results (2026-10-23)
+
+Your go on grading. Opus 5.5 first answered HTTP 503 on two runs (no grade, no spend); on the third it graded all
+67 sentences: 66 right, 1 wrong, none unsure, so none was left for you. Then `rewrite74.py report`, once. Raw:
+`results/rewrite74_report.json`. Grades: Opus 5.5 (67), carried (863, stops 43 to 72).
+
+Source in the prompt, 240 questions per arm, every arm on every question.
+
+| Pair | Arm | Answers with a wrong sentence | Wrong sentences (95 % interval) | Right sentences | Right lost against unchecked | Empty answers | Seconds, p50 |
+|---|---|---|---|---|---|---|---|
+| A | Opus 4.6 unchecked (stop 71) | 8 | 10 / 519, 1.9 % (1.1 to 3.5) | 509 | | 0 | 3.1 |
+| A | Flash checking, drop (stop 71) | 2 | 2 / 431, 0.5 % (0.1 to 1.7) | 429 | 80 | 14 | 9.0 |
+| A | Flash checking, rewrite | 3 | 3 / 503, 0.6 % (0.2 to 1.7) | 500 | 9 | 3 | 9.5 |
+| B | Flash unchecked (stop 71) | 3 | 3 / 432, 0.7 % (0.2 to 2.0) | 429 | | 1 | 4.4 |
+| B | Qwen checking, drop | 2 | 2 / 413, 0.5 % (0.1 to 1.7) | 411 | 18 | 5 | 6.4 |
+| B | Qwen checking, rewrite | 2 | 2 / 424, 0.5 % (0.1 to 1.7) | 422 | 7 | 4 | 6.6 |
+
+Seconds for the rewrite arms are the drop arm's seconds plus the time of the rewrite tries, per answer. The
+rewrite runs reused the drop arms' judge labels, so their own clocks leave out the judge's time on every sentence
+before a rejection (p50 0.005 s of checking) and are not comparable. This column was added to the report after the
+first report run; no reading changed.
+
+- Fixed readings, rewrite against drop, paired by question:
+  - Pair A. Wrong: 0.4 points (0.0 to 1.25); only the rewrite wrong 1, only the drop 0. **Keeps the wrong count.**
+    Empty: 3 against 14; only the drop empty 11, only the rewrite 0, p = 0.001. **Fewer.** Right: 0.30 more per
+    answer (0.22 to 0.38), 500 against 429. **More.** **Rewriting is better than dropping** by the fixed reading.
+  - Pair B. Wrong: 0.0 points (0.0 to 0.0); 2 and 2, the same answers. **Keeps.** Empty: 4 against 5, p = 1.0.
+    **Not shown.** Right: 0.05 more per answer (0.02 to 0.08), 422 against 411. **More.** **Not better** by the
+    fixed reading: the Qwen judge rejected only 19 sentences, and the one answer it emptied that the rewrite
+    filled is too few to show.
+- Rejections and tries. Pair A: 83 rejected (claim check 25, judge 58); kept at try 1 57, try 2 9, try 3 3, dropped
+  14; 126 tries, none empty. Pair B: 19 rejected (10, 9); kept at try 1 10, try 2 1, dropped 8; 36 tries.
+- Rewrites kept that copy the source (stop 67's rule): 7 of 69 in pair A, 1 of 11 in pair B. One kept rewrite in
+  pair A repeats a sentence already kept.
+- The one wrong rewrite (pair A, a software question): Flash, given the documentation, wrote that it does not
+  answer the question; Opus 5.5 graded that wrong.
+- Stop 71's drop arm, pair A, by cause: of its 86 dropped sentences, 26 were rolled back by the claim check and 60
+  by Flash's label (walked again from stop 71's labels, no call). The claim check rolls back a sentence before
+  any judge call, so those 26 have no label. Flash's 69 negative labels and the 60 judge rollbacks are not
+  matched one to one here; that is not looked into.
+- Qwen judge: 471 labels, Cloudflare 440, Groq 31 (stop 74 run).
+
+Reading: with Flash checking Opus 4.6's answers, rewriting a rejected sentence once to three times with the source
+as a user turn at the cut keeps the drop arm's wrong count (3 answers against 2, upper end 1.25 points), cuts
+empty answers from 14 to 3 and loses 9 right sentences against the unchecked answer instead of 80. The cost is
+about half a second per answer at the median over dropping. With the Qwen judge on Flash's answers there was
+little to fix: the rewrite adds 11 right sentences and changes no wrong count, and empty answers are not shown
+to fall. Limits as fixed: one run; in pair A the rewriter is the reviewing model, not the writer; Opus 5.5 grades
+alone, and it was softer on Opus 4.6 in stop 71 (its unsure sentences then went to you; here it marked none).
+
+Spend, stop 74: Opus 5.5 $0.37 ($42.23 of $45); Flash, Groq and Cloudflare not charged; Modal none.

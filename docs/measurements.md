@@ -1254,6 +1254,31 @@ Caveat: the second test has been read since stop 56; no ConSens choice was made 
 `results/fresh2_arms/consens.json`.
 
 
+## Rewrite instead of drop (stop 74, 2026-10-23; method in `docs/GRID.md`)
+
+Stop 71's 240 questions and unchecked answers, source in the prompt. A checked arm checks each sentence with the
+package verifier and the other model as judge. **Drop** leaves a rejected sentence out (stop 71). **Rewrite** asks
+Gemini 3.8 Flash for the sentence again, up to 3 times, with the source windows it was aligned to added as a user
+turn at the cut (temperature 0, then 1); a rewrite the verifier passes takes its place. Graded by Claude Opus 5.5
+(67 new sentences, none unsure), the rest carried from stop 71. Seconds for rewrite: the drop arm's plus the
+rewrite tries.
+
+| Answers, judge | Arm | Wrong answers | Wrong sentences | Right sentences | Right lost | Empty answers | Seconds, p50 |
+|---|---|---|---|---|---|---|---|
+| Claude Opus 4.6, Flash checking | none (unchecked) | 8 | 10 of 519 | 509 | | 0 | 3.1 |
+| | drop | 2 | 2 of 431 | 429 | 80 | 14 | 9.0 |
+| | rewrite | 3 | 3 of 503 | 500 | 9 | 3 | 9.5 |
+| Gemini 3.8 Flash, Qwen 3.8 27B checking | none (unchecked) | 3 | 3 of 432 | 429 | | 1 | 4.4 |
+| | drop | 2 | 2 of 413 | 411 | 18 | 5 | 6.4 |
+| | rewrite | 2 | 2 of 424 | 422 | 7 | 4 | 6.6 |
+
+Fixed reading, rewrite against drop, paired by question. Flash checking Opus 4.6: the wrong count is kept (0.4
+points, interval 0.0 to 1.25, margin 4), empty answers fall (3 against 14, p = 0.001), right sentences rise (0.30
+per answer, 0.22 to 0.38): **rewriting is better than dropping**. Qwen checking Flash: the wrong count is kept and
+right sentences rise (0.05 per answer, 0.02 to 0.08), but empty answers (4 against 5) are not shown to fall: **not
+better** by the fixed reading. One run; the Qwen judge ran on Groq and Cloudflare Workers AI in rotation (31 and
+440 labels).
+
 ## French figure formats (stop 75, 2026-10-21; method in `docs/GRID.md`)
 
 Aim: the claim check reads French number, currency, date and duration formats, with every English claim read as

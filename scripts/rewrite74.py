@@ -513,6 +513,22 @@ def points_summary(records: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
     }
 
 
+def seconds_drop_plus_rewrites(
+    drop: Mapping[str, Mapping[str, Any]], rewrite: Mapping[str, Mapping[str, Any]]
+) -> float:
+    """Per answer: the drop arm's seconds plus every rewrite try's seconds; the median."""
+    return float(
+        round(
+            statistics.median(
+                float(drop[k].get("seconds") or 0)
+                + sum(t["seconds"] for p in r["points"] for t in p["tries"])
+                for k, r in rewrite.items()
+            ),
+            3,
+        )
+    )
+
+
 def provider_split(judge: str) -> dict[str, int]:
     return dict(
         Counter(r.get("provider") or "?" for r in read_jsonl(OUT / f"labels.{judge}.jsonl"))
@@ -566,6 +582,12 @@ def report() -> dict[str, Any]:
                 }.items()
                 if recs
             },
+            # The rewrite arm reused the drop arm's labels, so its own seconds leave out the
+            # judge's time on every sentence before a rejection: comparable is the drop arm's
+            # seconds plus the time of the rewrite tries.
+            "seconds_p50_drop_plus_rewrites": seconds_drop_plus_rewrites(
+                (done(pair.drop) or sota71.done(pair.drop)), done(pair.rewrite)
+            ),
         }
     out["qwen_judge_providers"] = provider_split("qwen27")
     REPORT.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
