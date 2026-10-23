@@ -4072,3 +4072,73 @@ earlier runs (lists, codes, glued tables, locants, and a clock time "06,00"). "1
 a stated limit.
 
 Spend: none (CPU).
+
+## Stop 74: rewrite instead of drop, on hosted pairs (method fixed 2026-10-23, before any call)
+
+Your go (2026-10-23). Stop 71's checked arms drop a sentence the other model rejects: Flash checking Opus 4.6 lost
+80 right sentences and left 14 of 240 answers empty; Opus 4.6 checking Flash lost 22 and left 6. Question: does
+rewriting a rejected sentence, with the source added as a user turn at the cut, keep the drop arm's wrong count
+with fewer empty answers and more right sentences? Stop 67's T arm (the source as a user turn) needs no cache
+access and no prefill, so it runs on hosted APIs; its 16 of 95 wrong again is Qwen 2.5 7B's only.
+
+Your constraints: no Opus 4.6 call (its budget is spent); Opus 5.5 grades; Flash through the router; a new judge,
+Qwen 3.8 27B, on Groq and Cloudflare in rotation; Modal only if the smoke test shows it is needed.
+
+- Pairs, on stop 71's 240 questions, source in the prompt, stop 71's unchecked answers (no new answer):
+
+| Pair | Answers | Judge | Rewriter | Drop arm |
+|---|---|---|---|---|
+| A | Opus 4.6's | Flash, as stop 71 | Flash | stop 71's `opus46+flash`, not rerun |
+| B | Flash's | Qwen 3.8 27B | Flash | rerun with the Qwen judge: judge calls only, no new grade (every Flash sentence is graded in stop 71) |
+
+  In pair A the reviewing model rewrites another model's sentence; this is reported. Pair B's drop arm is new and
+  is not stop 71's `flash+opus46` (6 empty).
+- Verifier, as stop 71: `Verifier(judge, STRICT_FIGURES)`, the short reply, the answer so far as the sentences kept
+  before it. Judge labels are kept by prompt hash, so a prompt asked in stop 71 is not asked again: in pair A
+  every sentence before an answer's first rejection keeps stop 71's label.
+- Rewrite arm. The unchecked answer's sentences are checked in order (`split_sentences`). A sentence the verifier
+  does not emit (X) gets up to **3 tries**. Each try is one call to the rewriter with: the system prompt and the
+  question as stop 71's; an assistant message holding the sentences kept so far (left out when none is kept);
+  then a user message, stop 30's turn (`live_loop._TURN_USER`, "provision" for statutes, "documentation" for
+  software) with X's aligned windows, the first 2, rendered as the engine renders them
+  (`InFlightGenerator._source_text`). The engine cuts the source at 800 tokens; the hosted models have no
+  tokenizer here, so the cut is 3,200 characters at a word boundary, then " …". Every try sends the same turn
+  (your choice): try 1 at temperature 0, tries 2 and 3 at temperature 1. The rewrite is the reply's first sentence
+  by the segmenter; an empty reply is a failed try. The rewrite is checked like any sentence; emitted, it takes
+  X's place. After 3 failed tries X is dropped. X with no aligned window is dropped and counted. Later sentences
+  of the answer are checked with the new answer so far.
+- The Qwen judge: `qwen/qwen3.8-27b` on Groq and `@cf/qwen/qwen3.8-27b` on Cloudflare Workers AI, thinking off,
+  temperature 0, stop 71's judge prompt. A call goes to the current provider; on any error (HTTP, timeout, or no
+  valid label after the judge's own 3 asks) it rotates to the other and asks again; when both fail in turn it
+  backs off, and after its retry budget the run stops cleanly and resumes later. Each label records its
+  provider; the split is reported. Only these two model names are called; no listing or probing.
+- Smoke test first (2 questions per pair, one with its first sentence rejected, kept): each provider alone gives
+  a valid label with thinking off; Flash rewrites with the message shape above. **Modal is needed only if**
+  neither provider gives thinking-off labels, or their joint rate cannot finish pair B's judge calls by Mon 26
+  Oct. Then **halt for you**: the fallback is the 27B AutoRound judge of stops 67 to 72 on one Modal L40S.
+- Grades, as stop 71: a sentence word for word equal to one graded before for the same question keeps its grade
+  (stops 43 to 72); the rest on one blind sheet per question; Opus 5.5 grades each once; what it marks unsure goes
+  to you. **Halt for you** with the count before any grading call.
+- Readings, fixed now, per pair, the rewrite arm against the drop arm, paired by question (240):
+  - Wrong: answers with at least one sentence graded wrong, rewrite minus drop, 95 % bootstrap (10,000
+    resamples over questions, seed 20261015). **The rewrite keeps the wrong count if the upper end is at most 4
+    points** (stop 71's margin).
+  - Empty: answers with no sentence, exact McNemar. **Fewer if p < 0.05.**
+  - Right: right sentences per question, rewrite minus drop, the same bootstrap. **More if the lower end is
+    above 0.**
+  - **Rewriting is better than dropping only if all three hold.** Whatever comes out is reported, a rewrite worse
+    than dropping included.
+  - Beside them: right sentences lost against the unchecked answer (pair A against stop 71's 80); wrong sentences
+    with Wilson intervals; points kept at try 1, 2 or 3 and dropped after 3; rewrites that copy the source (80 %
+    or more of their word 5-grams in it, stop 67's rule); rewrites equal to a sentence already kept; rejections
+    by the claim check against the judge; the judge's provider split; seconds per answer, p50.
+- Limits: one run; hosted models are not deterministic, and pair A's drop arm is not rerun; the two hosts may
+  serve the Qwen weights at different precision; a 4-point margin is about 10 answers against baselines of 1 or
+  2, a weak bar, so the counts stand beside it; fresh questions read since stop 47; Opus 5.5 grades alone.
+- Spend: Flash not charged; Groq and Cloudflare on their included allowances; Opus 5.5 expected $0.40 to $1 for
+  about 100 to 150 sentences, within the $3.14 left under the router's $45 cap (`--opus-stop 45`); Modal none
+  unless the fallback, on your go.
+- Fail safe: answers appended to JSONL as each finishes, a rerun skips what is done; a clean stop on the router's
+  budget or error and on the rotation giving up. Raw rewrites quote statute text and stay git-ignored
+  (`results/rewrite74/`); counts in `results/rewrite74_report.json`. Keys come from the environment; the
+  Cloudflare account id is passed in the environment and not written to the repository. Nothing changes in `src/`.
