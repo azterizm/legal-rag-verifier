@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "legal-rag-verifier"
-version = "0.3.0"
+version = "0.4.0"
 description = "Sentence-level claim and NLI verification with KV-cache rollback during generation, for legal RAG"
 readme = "README.md"
 authors = [{ name = "Abdullah Memon", email = "abdullah@memonsystems.com" }]

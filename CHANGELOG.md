@@ -6,6 +6,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-23
+
 ### Added
 - `VerifierConfig(totals="line")`, off by default: a money figure equal to two money figures of
   one currency on one line of the source, added, is grounded, unless either is inside brackets
@@ -104,6 +106,7 @@ English.
   injection A/B; the placement and attention replay; injection v2 (question restated in the inserted
   turn, `legal-rag-router` as the abstention gate). Proof-of-concept verdict: `docs/VERDICT.md`.
 
+[0.4.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.4.0
 [0.3.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.3.0
 [0.2.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.2.0
 [0.1.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.1.0
