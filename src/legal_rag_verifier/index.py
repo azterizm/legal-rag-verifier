@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import functools
+import itertools
 import re
 from dataclasses import dataclass, field
 from datetime import date
+from decimal import Decimal
 
 from legal_rag_verifier.citations import is_relative, resolve_relative
 from legal_rag_verifier.claims import (
@@ -16,7 +18,7 @@ from legal_rag_verifier.claims import (
     normalise_title,
 )
 from legal_rag_verifier.deontic import Deontic, licensed_classes
-from legal_rag_verifier.numbers import NUMBER_WORDS_RE, parse_number_words
+from legal_rag_verifier.numbers import NUMBER_WORDS_RE, canonical_decimal, parse_number_words
 from legal_rag_verifier.premise import PassageKind, Premise
 
 __all__ = ["PremiseIndex", "WindowIndex", "build_index", "numeric_part"]
@@ -53,6 +55,12 @@ class WindowIndex:
     valid_from: date | None = None
     valid_to: date | None = None
     elements: tuple[str, ...] = ()
+
+    @functools.cached_property
+    def sums(self) -> frozenset[str]:
+        """Money values that are two money figures on one line of the window, added (stop 76).
+        Read only with ``VerifierConfig(totals="line")``."""
+        return _line_sums(self.text, self.claims)
 
     @property
     def nli_text(self) -> str:
@@ -139,6 +147,26 @@ def build_index(premise: Premise) -> PremiseIndex:
         sis=frozenset(sis),
         acronyms=frozenset(acronyms),
         declared_titles=premise.titles,
+    )
+
+
+def _line_sums(text: str, claims: tuple[Claim, ...]) -> frozenset[str]:
+    """Every sum of two money figures of one currency on one line, neither inside brackets on it:
+    "Price: €279.99 (was €329.99) — Shipping: €4.99" gives €284.98 and not €334.98."""
+    by_line: dict[tuple[int, str], list[Decimal]] = {}
+    for claim in claims:
+        if claim.kind is not ClaimKind.MONEY:
+            continue
+        line_start = text.rfind("\n", 0, claim.start) + 1
+        before = text[line_start : claim.start]
+        if before.count("(") > before.count(")"):
+            continue
+        currency, amount = claim.value.split(":", 1)
+        by_line.setdefault((line_start, currency), []).append(Decimal(amount))
+    return frozenset(
+        f"{currency}:{canonical_decimal(a + b)}"
+        for (_, currency), amounts in by_line.items()
+        for a, b in itertools.combinations(amounts, 2)
     )
 
 

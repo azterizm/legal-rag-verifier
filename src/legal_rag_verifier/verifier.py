@@ -183,6 +183,10 @@ class VerifierConfig:
     #: default) or "judge". With "judge" the entailment check decides: the sentence is emitted
     #: only if it is entailed. Without an NLI scorer "judge" behaves as "rollback".
     ungrounded_figure: Literal["rollback", "judge"] = "rollback"
+    #: Totals (stop 76): "line" also grounds a money figure equal to two money figures of one
+    #: currency on one line of the source, added, neither inside brackets on that line (an
+    #: offer's price plus its shipping); "off" (the default) does not.
+    totals: Literal["off", "line"] = "off"
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -193,6 +197,7 @@ class VerifierConfig:
             "align_ratio": self.align_ratio,
             "neutral_with_grounded_claim": self.neutral_with_grounded_claim,
             "ungrounded_figure": self.ungrounded_figure,
+            "totals": self.totals,
         }
 
 
@@ -303,7 +308,8 @@ class Verifier:
         claim_ns = time.perf_counter_ns() - t0 - (nli_result.latency_ns if nli_result else 0)
 
         aligned_windows = [index.windows[i] for i in aligned]
-        results = [_refine(r, aligned_windows) for r in results]
+        totals = self.config.totals == "line"
+        results = [_refine(r, aligned_windows, totals=totals) for r in results]
         found = self._window_checks(
             results, index, aligned, judged=judged, deontics=deontics, sentence=sentence
         )
@@ -345,7 +351,15 @@ class Verifier:
             found.repair if verdict is Verdict.ROLLBACK else None,
             claim_ns,
             nli_result.latency_ns if nli_result else 0,
-            (*found.details, *(f"figure sent to the judge: {r.claim.text}" for r in deferred)),
+            (
+                *found.details,
+                *(f"figure sent to the judge: {r.claim.text}" for r in deferred),
+                *(
+                    f"{r.claim.text} is the sum of two figures on one line of the source"
+                    for r in found.results
+                    if totals and _summed(r, index)
+                ),
+            ),
         )
 
     def _window_checks(
@@ -442,7 +456,9 @@ class Verifier:
                     for r in found.results
                 ]
                 found.repair = found.repair or Repair("ban", 0)
-        mismatch = _version_mismatch(found.results, index, sentence, query_claims)
+        mismatch = _version_mismatch(
+            found.results, index, sentence, query_claims, totals=self.config.totals == "line"
+        )
         if mismatch is not None:
             result, candidates, when = mismatch
             found.reasons.append(Reason.VERSION_MISMATCH)
@@ -478,7 +494,7 @@ class Verifier:
 
     # ------------------------------------------------------------------ grounding
     def _ground(self, claim: Claim, index: PremiseIndex, query_claims: list[Claim]) -> ClaimResult:
-        by = _grounded_in_premise(claim, index)
+        by = _grounded_in_premise(claim, index, totals=self.config.totals == "line")
         if by is None and _in_query(claim, query_claims):
             by = GroundedBy.QUERY
         if by is not None:
@@ -719,7 +735,12 @@ def _sentence_date(sentence: str, query_claims: list[Claim]) -> date | None:
 
 
 def _version_mismatch(
-    results: list[ClaimResult], index: PremiseIndex, sentence: str, query_claims: list[Claim]
+    results: list[ClaimResult],
+    index: PremiseIndex,
+    sentence: str,
+    query_claims: list[Claim],
+    *,
+    totals: bool = False,
 ) -> tuple[ClaimResult, tuple[str, ...], str] | None:
     """A figure that only appears in versions of the provision not in force on the date asked."""
     dated = [w for w in index.windows if w.valid_from or w.valid_to]
@@ -736,7 +757,7 @@ def _version_mismatch(
             or result.grounded_by is GroundedBy.QUERY
         ):
             continue
-        holders = [w for w in dated if _window_has(w, claim)]
+        holders = [w for w in dated if _window_has(w, claim, totals=totals)]
         if holders and not any(w in covering for w in holders):
             candidates = tuple(
                 dict.fromkeys(c.text for w in covering for c in w.values(claim.kind))
@@ -788,13 +809,15 @@ def _dropped_qualifiers(
     return out
 
 
-def _grounded_in_premise(claim: Claim, index: PremiseIndex) -> GroundedBy | None:
+def _grounded_in_premise(
+    claim: Claim, index: PremiseIndex, *, totals: bool = False
+) -> GroundedBy | None:
     kind, value = claim.kind, claim.value
     if kind is ClaimKind.CITATION:
         return _ground_citation(value, index)
     if kind is ClaimKind.INSTRUMENT:
         return _ground_instrument(value, index)
-    windows = [w for w in index.windows if _window_has(w, claim)]
+    windows = [w for w in index.windows if _window_has(w, claim, totals=totals)]
     if windows:
         return (
             GroundedBy.PREMISE
@@ -809,7 +832,9 @@ def _grounded_in_premise(claim: Claim, index: PremiseIndex) -> GroundedBy | None
     return None
 
 
-def _window_has(window: WindowIndex, claim: Claim) -> bool:
+def _window_has(window: WindowIndex, claim: Claim, *, totals: bool = False) -> bool:
+    if totals and claim.kind is ClaimKind.MONEY and claim.value in window.sums:
+        return True
     if claim.kind is ClaimKind.DATE:
         return any(
             c.kind is ClaimKind.DATE and c.value.startswith(claim.value) for c in window.claims
@@ -899,12 +924,23 @@ def _in_query(claim: Claim, query_claims: list[Claim]) -> bool:
     return False
 
 
-def _refine(result: ClaimResult, aligned: list[WindowIndex]) -> ClaimResult:
+def _refine(
+    result: ClaimResult, aligned: list[WindowIndex], *, totals: bool = False
+) -> ClaimResult:
     if result.grounded_by in {GroundedBy.PREMISE, GroundedBy.FACT} and any(
-        _window_has(w, result.claim) for w in aligned
+        _window_has(w, result.claim, totals=totals) for w in aligned
     ):
         return ClaimResult(result.claim, GroundedBy.WINDOW, result.reason)
     return result
+
+
+def _summed(result: ClaimResult, index: PremiseIndex) -> bool:
+    """A money figure grounded only as a sum of two figures on one line (``totals="line"``)."""
+    return (
+        result.claim.kind is ClaimKind.MONEY
+        and result.grounded_by in {GroundedBy.WINDOW, GroundedBy.PREMISE, GroundedBy.FACT}
+        and not any(_window_has(w, result.claim) for w in index.windows)
+    )
 
 
 def _first(results: Sequence[ClaimResult]) -> ClaimResult:
