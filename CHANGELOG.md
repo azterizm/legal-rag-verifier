@@ -18,7 +18,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   check with totals removes 25 right sentences instead of 106 and leaves 2 answers empty instead
   of 9, but keeps 30 wrong sentences instead of 21. Each of the 9 is a correct total inside a
   wrong claim (wrong shop, or a budget). On Gemini 3.8 Flash's answers it removes 11 right
-  sentences instead of 75, and keeps no wrong one.
+  sentences instead of 75, and keeps no wrong one. With the 1B judge after it, Opus 4.6's answers
+  keep 9 wrong sentences instead of 5 and lose 114 right ones instead of 148.
 
 ## [0.3.0] - 2026-10-22
 

@@ -4299,3 +4299,24 @@ CPU only, no spend. No release in this stop.
   wrong. 0.3 ms more per answer.
 
 Spend: none (CPU). Not run: arm 3 with totals (the 1B judge after arm 2t, Modal about $0.25), on your go.
+
+
+### Stop 76: arm 3t, the 1B judge after totals (2026-10-23)
+
+Your go on Modal. In the product repo (its METHOD, Changes 2026-10-23, fixed before any call): arm 3 on arm 2t's
+verdicts, the judge's verifier inside the container being `9ab6603` with `totals="line"` (the run stops otherwise).
+Dev smoke on Opus 4.6 passed; the battery's first Opus 4.6 attempt lost its client and returned nothing, then ran
+in full; Flash once.
+
+| Opus 4.6, 288 sentences, 32 wrong | Wrong kept | Wrong prices kept | Right removed | Empty | Median time |
+|---|---|---|---|---|---|
+| Claim check, then the 1B (arm 3) | 5 | 2 | 148 | 33 | 0.13 s |
+| Claim check with totals, then the 1B (arm 3t) | 9 | 5 | 114 | 21 | 0.19 s |
+
+Flash: right removed 108 → 87, empty 28 → 19, none wrong, 0.14 s both. The 1B removes 6 of the 9 wrong sentences
+totals let through (A06 in both languages and A09-fr stay). Of 3t's 9 wrong, 5 are arm 3's, 3 are those, and 1
+(B08-fr#0) is the judge's own noise: on the 306 sentences it saw with the same input in both runs its verdict
+differed on 4. The test 1 reading rule for 3t, as information: false (9 wrong against arm 1's 0).
+
+Spend: Modal $0.38 (smoke $0.09, the lost attempt about $0.11, the battery $0.18).
+

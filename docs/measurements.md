@@ -1399,3 +1399,13 @@ Flash right removed: French 36 → 6, English 39 → 5.
 
 Raw: `product-answer-checks` `results/report.json` (`totals`), checked answers local.
 
+With the 1B judge after it (arm 3t, one L40S, Modal $0.38 with a smoke run and a lost attempt):
+
+| Opus 4.6 | Wrong kept | Wrong prices kept | Right removed | Empty | Median time |
+|---|---|---|---|---|---|
+| Claim check, then the 1B | 5 | 2 | 148 | 33 | 0.13 s |
+| Claim check with totals, then the 1B | 9 | 5 | 114 | 21 | 0.19 s |
+
+Flash: right removed 108 → 87, empty 28 → 19, none wrong. The 1B removes 6 of the 9 wrong sentences totals let
+through. Its verdict differed between the two runs on 4 of 306 sentences it saw with the same input.
+
