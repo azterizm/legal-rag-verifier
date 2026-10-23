@@ -4225,3 +4225,39 @@ to fall. Limits as fixed: one run; in pair A the rewriter is the reviewing model
 alone, and it was softer on Opus 4.6 in stop 71 (its unsure sentences then went to you; here it marked none).
 
 Spend, stop 74: Opus 5.5 $0.37 ($42.23 of $45); Flash, Groq and Cloudflare not charged; Modal none.
+
+
+## Stop 76: totals in the claim check (method fixed 2026-10-23, before the code)
+
+Your go (2026-10-23). In test 1 of `product-answer-checks` the claim check removed 106 right sentences from Opus
+4.6; about 94 state one offer's price plus its shipping ("€908.98 (€903.99 + €4.99)"), a total the listing never
+prints. Read on test 1's 20 dev questions with 0.3.0 (both generators, 40 answers): 34 euro figures not grounded,
+33 of them one offer's price plus shipping and one a wrong total ("€316.99 (€311.00 + €4.99)"); none an old price
+plus shipping. The battery's sentences were not read for this rule.
+
+- **The rule, opt-in by your choice:** `VerifierConfig(totals="off" | "line")`, default `"off"`. With `"line"`, a
+  money figure that no window states is grounded when it equals a + b, where a and b are two money figures of the
+  same currency written on one line of one window, at different places, neither inside brackets on that line
+  (an unclosed "(" before it on the line). So "€279.99 (was €329.99) — Shipping: €4.99" grounds €284.98 and not
+  €334.98. Nothing wider: no sum across lines or windows, of three figures, no difference or product, no other
+  kind than money.
+- The total is grounded as a stated figure would be: `grounded_by` is `window` when its line is in an aligned
+  window and `premise` otherwise, so the value-swap check treats it as a stated price. `details` names it ("€908.98
+  is the sum of two figures on one line of the source"). No new verdict, reason or `GroundedBy` value; the config
+  key is recorded in every trace (`to_dict`), the API change you approved.
+- Limit, stated in `docs/API.md` §6: the total of any one offer in the source grounds the figure, not only the
+  offer of the shop the sentence names (prices have the same limit, since an offer list is one window). On
+  legislation a window is one line, so `"line"` would add any two amounts in a provision; it is off by default
+  and not measured there.
+- Tests first, run once on the 0.3.0 code to see them fail (`tests/test_totals.py`, offer lines written to the
+  product test's format, no battery row): "a total of €908.98" EMIT and GROUNDED with `"line"`, ROLLBACK with
+  UNGROUNDED_FIGURE by default; "€311.00 + €4.99 = €316.99" ROLLBACK; old price plus shipping ROLLBACK; one
+  offer's price plus another's shipping ROLLBACK; price plus shipping plus a third figure ROLLBACK; the same sum
+  in another currency ROLLBACK; a French line ("903,99 € … 4,99 €") grounds "€908.98"; free shipping, total =
+  price, EMIT as today; `VerifierConfig().to_dict()["totals"] == "off"`.
+- Gate: the default path does not read the sums (test), so every verdict is unchanged by construction; the full
+  suite stays green. In the product repo, this build with `"off"` must give arm 2's verdicts exactly, on dev and
+  on the battery.
+- Then the product repo's arm 2t (its METHOD, Changes 2026-10-23): dev first, then the sealed battery once.
+
+CPU only, no spend. No release in this stop.
