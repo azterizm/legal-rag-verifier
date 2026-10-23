@@ -4155,3 +4155,21 @@ Qwen 3.8 27B, on Groq and Cloudflare in rotation; Modal only if the smoke test s
   both kept at try 1; pair B `fresh2:gl-07` (first sentence rejected; Flash wrote X again at all 3 tries, dropped)
   and `fresh2:gl-09` (nothing rejected). The question alone followed by the turn (nothing kept yet) is accepted by
   the router. 6 Qwen labels, all from Groq, no host failure.
+
+### Stop 74: run (2026-10-23)
+
+- All three arms ran on all 240 answers, no clean stop: pair B drop (`flash+qwen27`), pair B rewrite
+  (`flash+qwen27~rw`), pair A rewrite (`opus46+flash~rw`).
+- Qwen judge: 471 labels (453 supported, 11 not stated, 7 contradicted), none without a valid label. Groq gave 31,
+  Cloudflare 440: Groq refused 4 calls on its limit of 7,000 input tokens per minute, and the rotation stays on a
+  host until it fails, so Cloudflare took the rest. Flash judge, pair A: 197 new labels beside stop 71's.
+- Rejected sentences, before any grade (claim check / judge):
+  - Pair B, drop: 19 (10 / 9), all dropped; 5 answers empty.
+  - Pair B, rewrite: 19 (10 / 9); kept at try 1 10, try 2 1, dropped 8; 4 answers empty.
+  - Pair A, rewrite: 83 (25 / 58); kept at try 1 57, try 2 9, try 3 3, dropped 14; 3 answers empty (stop 71's drop
+    arm: 86 dropped, 14 empty).
+- Sheet: 240 questions, **67 sentences to grade** (58 from pair A's rewrites, 9 from pair B's), 863 carried, 2
+  repeats graded once, no refusal. No sentence of either drop arm needs a grade. sha256 before any grade, sheet and
+  key: `2dce06a04f3e5f047a497a8c7249a12a013d645247bee627c7c04c9c55c9e6d6 1fce5d6e1c1c4e026ed60b700e5ae11b079b51bc8198033c4a42724e06a01ae2`.
+- Spend so far: Flash and the two hosts not charged; Opus 5.5 none ($41.86 of $45). Grading expected under $0.50.
+  **Halt for you**: your go on Opus 5.5 grading.
