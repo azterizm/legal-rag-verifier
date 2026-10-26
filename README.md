@@ -1,6 +1,6 @@
 # legal-rag-verifier
 
-**Sentence-level verification for legal RAG, while the model generates.**
+**Checks each sentence of an LLM answer against its source while the model writes it, and rewrites only the sentences that fail. Tested on UK law.**
 
 [![PyPI](https://img.shields.io/pypi/v/legal-rag-verifier)](https://pypi.org/project/legal-rag-verifier/)
 [![CI](https://github.com/azterizm/legal-rag-verifier/actions/workflows/ci.yml/badge.svg)](https://github.com/azterizm/legal-rag-verifier/actions/workflows/ci.yml)
@@ -8,10 +8,28 @@
 [![Licence: AGPL-3.0-only](https://img.shields.io/badge/licence-AGPL--3.0--only-blue)](https://github.com/azterizm/legal-rag-verifier/blob/main/LICENSE)
 ![Runtime dependencies: none](https://img.shields.io/badge/runtime%20dependencies-none-brightgreen)
 
-**Status: proof of concept.** The mechanism holds on a production inference server. The loop
-improved answers with an LLM judge as the auditor. It did not with the DeBERTa head the package
-ships. The LLM judge is in `scripts/`, not in the package. The
-[verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
+## Results
+
+240 UK law questions, Qwen 2.5 7B answering, a Qwen 27B judge. Answers containing at least one
+wrong sentence:
+
+| | No check | With the verifier | Refused |
+|---|---|---|---|
+| Answering from its own knowledge | 198 | 28 | 7 % |
+| Source documents in the prompt | 25 | 13 | 4 % |
+
+On Claude Opus 4.6, with Gemini 3.8 Flash checking, rewriting a rejected sentence instead of
+deleting it kept 71 of the 80 correct sentences that deleting lost, for one more wrong sentence
+across 240 answers.
+
+**How to check it.** Each test's method was written down and hashed before the run
+([`docs/GRID.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/GRID.md)). [`docs/RESEARCH.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/RESEARCH.md) maps every test
+to its figures, scripts and result files. The answers quote statute text and stay private; their
+grades, reports and hashes are committed.
+
+**What it does not show.** Status: proof of concept. The gains come from an LLM judge, which is
+in `scripts/`, not in the package. The DeBERTa head the package ships did not improve answers.
+UK statute questions only. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
 what is required first.
 
 `legal-rag-verifier` checks each sentence of an answer against the statutory provisions it was
@@ -22,9 +40,8 @@ sentence is thrown away. The retry can insert the provision the sentence was che
 the cut point.
 
 Built by [Abdullah Memon](https://memonsystems.com) at [Memon Systems Ltd](https://memonsystems.com).
-Layer 4 of the Memon Systems hosted reference architecture, after
-[`legal-rag-router`](https://github.com/azterizm/legal-rag-router), which can serve as its
-abstention gate.
+Pairs with [`legal-rag-router`](https://github.com/azterizm/legal-rag-router), which can refuse a
+question before it reaches the model.
 
 ## Install
 
@@ -180,13 +197,11 @@ Contributing: [`CONTRIBUTING.md`](https://github.com/azterizm/legal-rag-verifier
 If you use the verifier or its evaluation, cite it with [`CITATION.cff`](https://github.com/azterizm/legal-rag-verifier/blob/main/CITATION.cff)
 ("Cite this repository" on GitHub).
 
-## Consultancy
+## Contact
 
 `legal-rag-verifier` is built and maintained by **Abdullah Memon** at
-**[Memon Systems Ltd](https://memonsystems.com)**, which designs and audits retrieval systems for
-legal and other regulated domains. For help putting verification into production or testing your
-own legal RAG, see [engagements](https://memonsystems.com/engagements) or write to
-abdullah@memonsystems.com.
+**[Memon Systems Ltd](https://memonsystems.com)**. Bug reports and questions are welcome as
+[GitHub issues](https://github.com/azterizm/legal-rag-verifier/issues).
 
 ## Licence
 
