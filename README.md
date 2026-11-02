@@ -84,14 +84,14 @@ verdict.ungrounded  # ['£85,000']
 ```python
 from legal_rag_verifier.backends.sglang import SGLangBackend
 from legal_rag_verifier.engine import InFlightGenerator
-from legal_rag_verifier.nli import SentenceNLIVerifier
+from legal_rag_verifier.judge import Judge, JudgedVerifier
 
 backend = SGLangBackend.connect("http://127.0.0.1:30000", "Qwen/Qwen2.5-7B-Instruct")
-generator = InFlightGenerator(
-    backend,
-    Verifier(SentenceNLIVerifier("cross-encoder/nli-deberta-v3-base")),
-    steering="inject",
-)
+judge = Judge.from_preset("qwen27-ar4", "http://127.0.0.1:30001")  # the judge's own server
+verifier = JudgedVerifier(judge)
+generator = InFlightGenerator(backend, verifier, steering="inject")
+
+verifier.reset()  # before each answer: the engine does not reset the judge
 answer = generator.generate_verified("What is the cap on the compensatory award?", premise)
 answer.text  # the verified answer
 answer.trace  # per sentence: verdicts, retries, what was inserted, prefix-cache hits, timings
