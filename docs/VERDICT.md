@@ -198,8 +198,9 @@ and the second (151). Wrong answers are answers holding a wrong sentence, of 240
    numbers into sentences that the claim check rejects as figures. Confirm on a new graded set that figure
    rollbacks go to the judge (stop 52). Measure on real answers graded by people. From stop 77 the judge is in
    the package as `legal_rag_verifier.judge`, with the measured prompt fixed and one measured preset,
-   `qwen27-ar4`, for the next release. A replay test with no paid call gives the recorded verdicts and exactly
-   90.1 % (136/151) and 93.8 % (332/354). Still open: the live check against a real server
+   `qwen27-ar4`, for the next release. A replay test with no paid call gives the recorded label for every
+   prompt and the recorded accuracy exactly: 90.1 % (136/151) and 93.8 % (332/354). It runs only where the
+   local results and corpus exist. Still open: the live check against a real server
    (`docs/PLAN-judge-3-testing.md`). Hosted models are unmeasured.
 2. Insert the source as a user turn at the cut when the judge is an LLM. With the entailment model as the
    auditor, inserted retries were not better than a plain retry, and on statutes the model pasted the source.

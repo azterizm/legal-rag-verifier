@@ -1,7 +1,8 @@
 # Plan, phase 1 of 3: the LLM judge as a package module, release 0.5.0 (stop 77)
 
-Status: plan only, written 2026-11-01. Nothing is built. Every ⛔ needs your go, as `CLAUDE.md` requires for
-public API changes, releases and paid calls.
+Status: written 2026-11-01. Steps 0–6 are built in stop 77 (2026-11-02; `docs/GRID.md` stop 77). Step 7, the
+release of 0.5.0, awaits your go. Every ⛔ needs your go, as `CLAUDE.md` requires for public API changes, releases
+and paid calls.
 
 Phase 2 (the judge mode in `answer-check-mcp`) is planned in that repository's `docs/PLAN-judge-2-mode.md`.
 Phase 3 (testing) is split by repository: this repository's part is `docs/PLAN-judge-3-testing.md`.
@@ -97,7 +98,8 @@ dropped in stop 56), anything specific to one hosted provider, and any change to
     - `API.md` gains a judge section.
     - The README gains "Use the judge", with the measured presets in a table, the sentence "any other model is
       unmeasured", and the with-source limit next to the figure.
-    - `VERDICT.md` item 2 is updated.
+    - `VERDICT.md` item 2 is updated. (Built: item 1 was updated instead, because item 2 is about the source
+      turn.)
 6. Checks: `uv run ruff check && uv run ruff format --check && uv run mypy && uv run pytest`, then the wheel check
    in a clean worktree.
 7. Release 0.5.0 ⛔:

@@ -23,15 +23,17 @@ from __future__ import annotations
 
 import hashlib
 import http.client
+import io
 import json
 import os
 import re
 import time
+import types
 import urllib.error
 import urllib.request
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
-from typing import Any, Literal
+from typing import Any, Literal, cast
 
 from legal_rag_verifier.premise import Premise
 from legal_rag_verifier.segmenter import split_sentences
@@ -44,7 +46,6 @@ from legal_rag_verifier.verifier import (
 )
 
 __all__ = [
-    "CLOSE_THINK",
     "LABELS",
     "PRESETS",
     "PROMPT_SHA",
@@ -54,7 +55,6 @@ __all__ = [
     "STRICT_FIGURES",
     "SYSTEM",
     "USER",
-    "Chat",
     "Judge",
     "JudgedVerifier",
     "OpenAIChat",
@@ -118,7 +118,12 @@ SHORT_SHA = hashlib.sha256((SYSTEM + USER.replace(_REPLY, SHORT_REPLY)).encode()
 
 _MEASURED_PROMPT_SHA = "72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b"
 _MEASURED_SHORT_SHA = "7748f874db902456700c3ff64c1b4e37621e951ed0c3c65495b8b3c5911be149"
-if (PROMPT_SHA, SHORT_SHA) != (_MEASURED_PROMPT_SHA, _MEASURED_SHORT_SHA):  # pragma: no cover
+_MEASURED_RETRY_SHA = "6eddaf3f8be80a18061e3c700fe3a13b5d0c62c6a27aefcbe420e844c980e602"
+if (PROMPT_SHA, SHORT_SHA, hashlib.sha256(RETRY.encode()).hexdigest()) != (
+    _MEASURED_PROMPT_SHA,
+    _MEASURED_SHORT_SHA,
+    _MEASURED_RETRY_SHA,
+):  # pragma: no cover
     raise RuntimeError("the judge prompt differs from the measured one")
 
 #: A closing think tag, including K2's ``</ifm|think>``.
@@ -203,6 +208,33 @@ _TRANSPORT: tuple[type[BaseException], ...] = (
     KeyError,
     IndexError,
 )
+#: What :meth:`Judge.score` counts as a failed attempt before parsing: the above, and a reply that
+#: is not ``{"content": str | None, "ms": number, "tokens": int | None}``.
+_FAILED: tuple[type[BaseException], ...] = (*_TRANSPORT, TypeError)
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    """Follows no redirect: urllib's default would resend the ``Authorization`` header to any
+    ``Location`` (and turn the POST into a GET). The redirect is an ``HTTPError`` instead."""
+
+    def redirect_request(  # noqa: PLR0917 - urllib's signature
+        self,
+        req: urllib.request.Request,
+        fp: Any,
+        code: int,
+        msg: str,
+        headers: Any,
+        newurl: str,
+    ) -> urllib.request.Request | None:
+        fp.close()
+        raise urllib.error.HTTPError(req.full_url, code, msg, headers, io.BytesIO())
+
+
+_OPENER = urllib.request.build_opener(_NoRedirect)
+
+
+def _malformed(what: str) -> ValueError:
+    return ValueError(f"malformed chat completion: {what}")
 
 
 class OpenAIChat:
@@ -211,7 +243,8 @@ class OpenAIChat:
     The body is ``model``, the messages, ``sampling`` spread at the top level and
     ``chat_template_kwargs``; assistant turns carry ``"reasoning_content": ""``. When
     ``api_key_env`` names a variable that is set and non-empty at call time, its value is sent as
-    ``Authorization: Bearer``; the value is never stored. No retry: :class:`Judge` retries.
+    ``Authorization: Bearer`` (stripped of surrounding whitespace); the value is never stored. No
+    redirect is followed and no retry made: :class:`Judge` retries.
     """
 
     def __init__(
@@ -224,6 +257,8 @@ class OpenAIChat:
         template_kwargs: Mapping[str, Any] | None = None,
         timeout: float = 1800.0,
     ) -> None:
+        if not base_url.startswith(("http://", "https://")):
+            raise ValueError(f"not an http(s) URL: {base_url!r}")
         self.base_url = base_url.rstrip("/")
         self.model = model
         self.api_key_env = api_key_env
@@ -237,6 +272,18 @@ class OpenAIChat:
             f"api_key_env={self.api_key_env!r})"
         )
 
+    def _authorization(self) -> str | None:
+        """``Bearer <key>``, the key read now; None when no variable is named or it is empty."""
+        if not self.api_key_env:
+            return None
+        key = os.environ.get(self.api_key_env, "").strip()
+        if not key:
+            return None
+        if not (key.isprintable() and all(c <= "\xff" for c in key)):
+            # http.client would raise with the header value, the key, in the message.
+            raise ValueError(f"{self.api_key_env} holds an invalid header value") from None
+        return f"Bearer {key}"
+
     def __call__(self, messages: Sequence[Mapping[str, str]]) -> dict[str, Any]:
         sent = [
             {**m, "reasoning_content": ""} if m["role"] == "assistant" else dict(m)
@@ -249,9 +296,9 @@ class OpenAIChat:
             "chat_template_kwargs": dict(self.template_kwargs),
         }
         headers = {"Content-Type": "application/json"}
-        key = os.environ.get(self.api_key_env) if self.api_key_env else None
-        if key:
-            headers["Authorization"] = f"Bearer {key}"
+        authorization = self._authorization()
+        if authorization is not None:
+            headers["Authorization"] = authorization
         request = urllib.request.Request(  # noqa: S310 - the caller's endpoint
             f"{self.base_url}/v1/chat/completions",
             data=json.dumps(body).encode(),
@@ -259,13 +306,33 @@ class OpenAIChat:
             headers=headers,
         )
         t0 = time.perf_counter()
-        with urllib.request.urlopen(request, timeout=self.timeout) as response:  # noqa: S310
+        with _OPENER.open(request, timeout=self.timeout) as response:
             out = json.loads(response.read())
         ms = (time.perf_counter() - t0) * 1000
-        choice = out["choices"][0]
+        # Anything but the expected shape is a ValueError (KeyError, IndexError: no choices), so
+        # Judge counts it as a failed attempt.
+        if not isinstance(out, dict):
+            raise _malformed("the body is not an object")
+        choices = out["choices"]
+        if not isinstance(choices, list):
+            raise _malformed("choices is not a list")
+        choice = choices[0]
+        if not isinstance(choice, dict):
+            raise _malformed("a choice is not an object")
         message = choice["message"]
-        content = message.get("content") or ""
-        reasoning = message.get("reasoning_content") or ""
+        if not isinstance(message, dict):
+            raise _malformed("the message is not an object")
+        content = message.get("content")
+        reasoning = message.get("reasoning_content")
+        if not all(text is None or isinstance(text, str) for text in (content, reasoning)):
+            raise _malformed("the content is not text")
+        content, reasoning = content or "", reasoning or ""
+        usage = out.get("usage") or {}
+        if not isinstance(usage, dict):
+            raise _malformed("usage is not an object")
+        tokens = usage.get("completion_tokens")
+        if tokens is not None and (isinstance(tokens, bool) or not isinstance(tokens, int)):
+            raise _malformed("completion_tokens is not an integer")
         if not content.strip() and CLOSE_THINK.search(reasoning):
             # The reasoning parser left the answer inside the reasoning: take what follows the
             # last closing tag.
@@ -273,7 +340,7 @@ class OpenAIChat:
         return {
             "content": content,
             "ms": ms,
-            "tokens": out.get("usage", {}).get("completion_tokens"),
+            "tokens": tokens,
             "finish": choice.get("finish_reason"),
         }
 
@@ -316,7 +383,7 @@ class Judge:
             sampling=dict(preset.sampling),
             template_kwargs=dict(preset.template_kwargs),
         )
-        judge = cls(chat, reply="short" if preset.reply == "short" else "full")
+        judge = cls(chat, reply=cast(Literal["short", "full"], preset.reply))  # else ValueError
         judge.preset = name
         judge.model_id = f"{preset.model}@{preset.revision}"
         return judge
@@ -331,16 +398,23 @@ class Judge:
         for attempt in range(1, 4):  # noqa: B007 - the attempts used are recorded
             try:
                 reply = self.chat(messages)
-            except _TRANSPORT as exc:
+                content = reply["content"]
+                if content is None:
+                    content = ""
+                elif not isinstance(content, str):
+                    raise TypeError(f"content is {type(content).__name__}, not str")
+                took = float(reply.get("ms") or 0.0)
+                got = reply.get("tokens")
+                got = None if got is None else int(got)
+            except _FAILED as exc:
                 if isinstance(exc, urllib.error.HTTPError):
                     exc.close()
                 error = type(exc).__name__
                 continue
-            ms += float(reply["ms"])
-            if reply.get("tokens") is not None:
-                tokens += int(reply["tokens"])
+            ms += took
+            if got is not None:
+                tokens += got
                 counted = True
-            content = reply["content"] or ""
             try:
                 parsed = parse_reply(content)
             except ValueError as exc:  # json.JSONDecodeError included
@@ -432,8 +506,8 @@ class Preset:
     revision: str
     quantisation: str
     server: str
-    sampling: Mapping[str, float | int]
-    template_kwargs: Mapping[str, bool | str]
+    sampling: Mapping[str, float | int]  # read-only (MappingProxyType)
+    template_kwargs: Mapping[str, bool | str]  # read-only (MappingProxyType)
     reply: str
     prompt_sha256: str
     figure: str
@@ -449,16 +523,18 @@ PRESETS: dict[str, Preset] = {
             "SGLang 0.5.21 (lmsysorg/sglang:v0.5.21), --reasoning-parser qwen3 "
             "--context-length 65536 --mem-fraction-static 0.85, one L40S"
         ),
-        sampling={
-            "temperature": 0.7,
-            "top_p": 0.8,
-            "top_k": 20,
-            "min_p": 0.0,
-            "presence_penalty": 1.5,
-            "max_tokens": 1024,
-            "seed": 0,
-        },
-        template_kwargs={"enable_thinking": False},
+        sampling=types.MappingProxyType(
+            {
+                "temperature": 0.7,
+                "top_p": 0.8,
+                "top_k": 20,
+                "min_p": 0.0,
+                "presence_penalty": 1.5,
+                "max_tokens": 1024,
+                "seed": 0,
+            }
+        ),
+        template_kwargs=types.MappingProxyType({"enable_thinking": False}),
         reply="short",
         prompt_sha256=SHORT_SHA,
         figure=(

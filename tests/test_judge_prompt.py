@@ -21,6 +21,10 @@ from scripts import fresh_arms as fa
 
 SHORT_SHA = "7748f874db902456700c3ff64c1b4e37621e951ed0c3c65495b8b3c5911be149"
 PROMPT_SHA = "72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b"
+# Literals computed from scripts/auditor_judge.py at commit 70e689b, before the scripts imported
+# these names from the package: they guard against a drift the byte comparison above cannot see.
+RETRY_SHA = "6eddaf3f8be80a18061e3c700fe3a13b5d0c62c6a27aefcbe420e844c980e602"
+RENDERED_KEY = "69dfc7b7b8dc40b019445dace019820387983145a252227e4c4eb3f50044280e"
 RECORD_KEYS = {"sha", "label", "passage", "attempts", "ms", "tokens", "sentence", "preset", "error"}
 NEUTRAL = NLIProbs(0.0, 1.0, 0.0)
 ENTAIL = NLIProbs(1.0, 0.0, 0.0)
@@ -144,6 +148,46 @@ def test_a_one_byte_change_breaks_the_hash(name: str) -> None:
     assert short_sha(parts["SYSTEM"], parts["USER"], parts["SHORT_REPLY"]) != SHORT_SHA
     if name != "SHORT_REPLY":
         assert prompt_sha(parts["SYSTEM"], parts["USER"]) != PROMPT_SHA
+
+
+def test_retry_and_the_rendering_are_the_measured_bytes() -> None:
+    assert hashlib.sha256(judge.RETRY.encode()).hexdigest() == RETRY_SHA
+    assert judge.prompt_key(judge.short_prompt("It divides by N.", ["A.", "B."], "x")) == (
+        RENDERED_KEY
+    )
+
+
+@pytest.mark.parametrize("i", [0, len(judge.RETRY) // 2, len(judge.RETRY) - 1])
+def test_a_one_byte_change_to_retry_breaks_its_hash(i: int) -> None:
+    changed = flip(judge.RETRY, i)
+    assert len(changed.encode()) == len(judge.RETRY.encode())
+    assert hashlib.sha256(changed.encode()).hexdigest() != RETRY_SHA
+
+
+def test_the_public_names() -> None:
+    assert set(judge.__all__) == {
+        "LABELS",
+        "PRESETS",
+        "PROMPT_SHA",
+        "RETRY",
+        "SHORT_REPLY",
+        "SHORT_SHA",
+        "STRICT_FIGURES",
+        "SYSTEM",
+        "USER",
+        "Judge",
+        "JudgedVerifier",
+        "OpenAIChat",
+        "Preset",
+        "extract_json",
+        "one_hot",
+        "parse_reply",
+        "prompt_key",
+        "short_prompt",
+        "user_prompt",
+    }
+    assert all(hasattr(judge, name) for name in judge.__all__)
+    assert judge.CLOSE_THINK is aj.CLOSE_THINK  # still defined, for the scripts
 
 
 # ---------------------------------------------------------------------- pure functions
@@ -409,6 +453,46 @@ def test_three_transport_failures_give_error() -> None:
     assert rec["ms"] == 0.0
     assert rec["tokens"] is None
     assert out == [NEUTRAL, NEUTRAL]
+
+
+# Reply dicts a hand-written chat may return that are not ``{"content", "ms", "tokens", ...}``.
+MALFORMED_REPLIES: dict[str, Any] = {
+    "None": None,
+    "a list": [GOOD],
+    "no content": {"ms": 1.0, "tokens": 1},
+    "content a number": {"content": 5, "ms": 1.0, "tokens": 1},
+    "content zero": {"content": 0, "ms": 1.0, "tokens": 1},
+    "content a dict": {"content": {"label": "supported"}, "ms": 1.0, "tokens": 1},
+    "ms not a number": {"content": GOOD, "ms": "slow", "tokens": 1},
+    "ms a list": {"content": GOOD, "ms": [1.0], "tokens": 1},
+    "tokens not a number": {"content": GOOD, "ms": 1.0, "tokens": "many"},
+}
+
+
+@pytest.mark.parametrize("bad", MALFORMED_REPLIES.values(), ids=MALFORMED_REPLIES.keys())
+def test_a_malformed_reply_dict_counts_as_a_failed_attempt(bad: Any) -> None:
+    chat, _, out, rec = run([bad, reply(GOOD, ms=7.5, tokens=2)])
+    assert chat.sent == [first(USER), first(USER)]
+    assert (rec["label"], rec["attempts"], rec["error"]) == ("supported", 2, None)
+    assert (rec["ms"], rec["tokens"]) == (7.5, 2)
+    assert out == [NEUTRAL, ENTAIL]
+
+
+def test_three_malformed_reply_dicts_give_error() -> None:
+    steps: list[Any] = [{"ms": 1.0}, None, {"content": 5}]
+    _, _, out, rec = run(steps)
+    assert (rec["label"], rec["attempts"], rec["error"]) == ("error", 3, "TypeError")
+    assert (rec["ms"], rec["tokens"]) == (0.0, None)
+    assert out == [NEUTRAL, NEUTRAL]
+
+
+@pytest.mark.parametrize("ms", ["missing", None])
+def test_a_reply_without_ms_counts_zero_ms(ms: Any) -> None:
+    out: dict[str, Any] = {"content": GOOD, "tokens": 3}
+    if ms != "missing":
+        out["ms"] = ms
+    _, _, _, rec = run([out])
+    assert (rec["label"], rec["attempts"], rec["ms"], rec["tokens"]) == ("supported", 1, 0.0, 3)
 
 
 def test_the_error_is_the_class_name_not_the_message() -> None:

@@ -1,8 +1,8 @@
 # Plan, phase 3 of 3: testing the judge module (this repository's part)
 
-Status: plan only, written 2026-11-01. Phase 1 is `docs/PLAN-judge-1-module.md`. The MCP server's tests are in
-`answer-check-mcp/docs/PLAN-judge-3-testing.md`, and its live smoke runs during the live check below, at no extra
-spend.
+Status: written 2026-11-01. The free tests are written and green (stop 77); the live check awaits its go. Phase 1
+is `docs/PLAN-judge-1-module.md`. The MCP server's tests are in `answer-check-mcp/docs/PLAN-judge-3-testing.md`,
+and its live smoke runs during the live check below, at no extra spend.
 
 Two kinds of test. The free ones run on every push and need no model. The live check needs a model and costs money,
 so it runs once, with your go and a hard spend cap.

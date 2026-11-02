@@ -75,12 +75,14 @@ PREMISE = Premise(
 
 @dataclass(frozen=True)
 class Reply:
-    """One scripted response: a status with a JSON body, or a raw body, after an optional delay."""
+    """One scripted response: a status with a JSON body, or a raw body, after an optional delay,
+    with an optional ``Location`` header."""
 
     status: int = 200
     body: Any = None
     raw: bytes | None = None
     delay: float = 0.0
+    location: str | None = None
 
 
 @dataclass(frozen=True)
@@ -155,10 +157,14 @@ class _Server(http.server.ThreadingHTTPServer):
 
 
 class _Handler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self) -> None:
+        """Recorded too: urllib's default redirect turns the POST into a GET."""
+        self.do_POST()
+
     def do_POST(self) -> None:
         fake = cast(_Server, self.server).fake
         length = int(self.headers.get("Content-Length", "0"))
-        body = json.loads(self.rfile.read(length))
+        body = json.loads(self.rfile.read(length)) if length else {}
         headers = {name.lower(): value for name, value in self.headers.items()}
         reply = fake.take(Seen(self.path, self.command, headers, body))
         if reply.delay and fake.stop.wait(reply.delay):
@@ -168,6 +174,8 @@ class _Handler(http.server.BaseHTTPRequestHandler):
             self.send_response(reply.status)
             self.send_header("Content-Type", "application/json")
             self.send_header("Content-Length", str(len(data)))
+            if reply.location is not None:
+                self.send_header("Location", reply.location)
             self.end_headers()
             self.wfile.write(data)
         except OSError:
@@ -255,6 +263,17 @@ def test_the_request_is_the_scripts_server_chat_request(server: FakeHTTP) -> Non
     assert {k: v for k, v in ours.items() if k != "ms"} == {
         k: v for k, v in theirs.items() if k != "ms"
     }
+
+
+@pytest.mark.parametrize("url", ["localhost:30000", "file:///x", "ftp://h"])
+def test_a_url_that_is_not_http_is_refused(url: str) -> None:
+    with pytest.raises(ValueError, match="not an http"):
+        OpenAIChat(url, MODEL)
+
+
+@pytest.mark.parametrize("url", ["http://127.0.0.1:30000", "https://judge.example/"])
+def test_http_and_https_urls_are_accepted(url: str) -> None:
+    assert OpenAIChat(url, MODEL).base_url == url.rstrip("/")
 
 
 # ---------------------------------------------------------------------- the reply
@@ -391,6 +410,90 @@ def test_secret_absent_from_judged_verdicts(server: FakeHTTP, secret: str) -> No
     assert secret not in json.dumps(judge.calls)
 
 
+@pytest.mark.parametrize("tail", ["\n", "\r\n", " \t\n"])
+def test_a_key_with_trailing_whitespace_is_stripped(
+    server: FakeHTTP, monkeypatch: pytest.MonkeyPatch, tail: str
+) -> None:
+    value = f"sk-test-{uuid.uuid4().hex}"
+    monkeypatch.setenv(KEY_ENV, value + tail)
+    OpenAIChat(server.url, MODEL, api_key_env=KEY_ENV)(CONVERSATION[:2])
+    assert server.requests[0].headers["authorization"] == f"Bearer {value}"
+
+
+# A line break inside the value, control characters, a character beyond latin-1.
+INVALID_TAILS = ["\r\nX: y", "\nX: y", "\rX", "\x1b", "\x7f", "\u20ac"]
+
+
+@pytest.mark.parametrize("tail", INVALID_TAILS)
+def test_an_invalid_key_is_refused_without_leaking_it(
+    server: FakeHTTP, monkeypatch: pytest.MonkeyPatch, tail: str
+) -> None:
+    value = f"sk-test-{uuid.uuid4().hex}"
+    monkeypatch.setenv(KEY_ENV, value + tail)
+    chat = OpenAIChat(server.url, MODEL, api_key_env=KEY_ENV)
+    with pytest.raises(ValueError, match=f"^{KEY_ENV} holds an invalid header value$") as info:
+        chat(CONVERSATION[:2])
+    assert value not in exception_text(info.value)
+    assert info.value.__cause__ is None
+    assert info.value.__context__ is None or info.value.__suppress_context__
+    assert server.requests == []
+
+    judge = Judge(chat)
+    assert score_once(judge) == [NEUTRAL, NEUTRAL]
+    (call,) = judge.calls
+    assert (call["label"], call["attempts"], call["error"]) == ("error", 3, "ValueError")
+    assert value not in json.dumps(judge.calls)
+    assert value not in repr(judge)
+    assert server.requests == []
+
+
+@pytest.fixture
+def elsewhere() -> Iterator[FakeHTTP]:
+    """A second server, the target of a redirect."""
+    fake = FakeHTTP()
+    try:
+        yield fake
+    finally:
+        fake.close()
+
+
+def redirect(to: FakeHTTP, status: int = 302) -> Reply:
+    return Reply(status=status, body={}, location=f"{to.url}/v1/chat/completions")
+
+
+@pytest.mark.parametrize("status", [301, 302, 303, 307, 308])
+def test_a_redirect_is_not_followed(
+    server: FakeHTTP, elsewhere: FakeHTTP, secret: str, status: int
+) -> None:
+    server.script(redirect(elsewhere, status))
+    chat = OpenAIChat(server.url, MODEL, api_key_env=KEY_ENV)
+    with pytest.raises(urllib.error.HTTPError) as info:
+        chat(CONVERSATION[:2])
+    try:
+        assert info.value.code == status
+        assert secret not in exception_text(info.value)
+    finally:
+        info.value.close()
+    assert len(server.requests) == 1
+    assert elsewhere.requests == []  # the key never reaches the second server
+
+
+def test_a_redirect_counts_as_a_failed_attempt(
+    server: FakeHTTP, elsewhere: FakeHTTP, secret: str
+) -> None:
+    server.script(redirect(elsewhere), completion())
+    judge = Judge(OpenAIChat(server.url, MODEL, api_key_env=KEY_ENV))
+    score_once(judge)
+    server.script(redirect(elsewhere), redirect(elsewhere), redirect(elsewhere))
+    score_once(judge)
+    assert [(c["label"], c["attempts"], c["error"]) for c in judge.calls] == [
+        ("supported", 2, None),
+        ("error", 3, "HTTPError"),
+    ]
+    assert len(server.requests) == 5
+    assert elsewhere.requests == []
+
+
 # ---------------------------------------------------------------------- failures as attempts
 
 
@@ -456,6 +559,62 @@ def test_empty_choices_then_good_takes_two_attempts(server: FakeHTTP) -> None:
     (call,) = judge.calls
     assert (call["label"], call["attempts"], call["error"]) == ("supported", 2, None)
     assert len(server.requests) == 2
+
+
+def choices(*items: Any, **extra: Any) -> Reply:
+    return Reply(body={"choices": list(items), **extra})
+
+
+GOOD_CHOICE = {
+    "index": 0,
+    "message": {"role": "assistant", "content": GOOD},
+    "finish_reason": "stop",
+}
+MALFORMED = {
+    "a JSON list": Reply(body=[1, 2]),
+    "a JSON string": Reply(body="text"),
+    "a JSON null": Reply(body=None),
+    "choices null": Reply(body={"choices": None}),
+    "choices an object": Reply(body={"choices": {"0": GOOD_CHOICE}}),
+    "a choice not an object": choices("x"),
+    "message null": choices({"index": 0, "message": None}),
+    "message a string": choices({"index": 0, "message": GOOD}),
+    "content a number": choices({"index": 0, "message": {"content": 5}}),
+    "content a list": choices({"index": 0, "message": {"content": [GOOD]}}),
+    "content false": choices({"index": 0, "message": {"content": False}}),
+    "reasoning a number": choices(
+        {"index": 0, "message": {"content": None, "reasoning_content": 5}}
+    ),
+    "usage a string": choices(GOOD_CHOICE, usage="x"),
+    "tokens a string": choices(GOOD_CHOICE, usage={"completion_tokens": "many"}),
+}
+
+
+@pytest.mark.parametrize("body", MALFORMED.values(), ids=MALFORMED.keys())
+def test_a_malformed_body_raises_value_error(server: FakeHTTP, body: Reply) -> None:
+    server.script(body)
+    with pytest.raises(ValueError):  # noqa: PT011 - the type is what Judge counts
+        OpenAIChat(server.url, MODEL)(CONVERSATION[:2])
+
+
+@pytest.mark.parametrize("body", MALFORMED.values(), ids=MALFORMED.keys())
+def test_a_malformed_body_then_good_takes_two_attempts(server: FakeHTTP, body: Reply) -> None:
+    server.script(body, completion())
+    judge = Judge(OpenAIChat(server.url, MODEL))
+    score_once(judge)
+    (call,) = judge.calls
+    assert (call["label"], call["attempts"], call["error"]) == ("supported", 2, None)
+    assert len(server.requests) == 2
+
+
+def test_null_usage_is_no_tokens(server: FakeHTTP) -> None:
+    server.script(choices(GOOD_CHOICE, usage=None), choices(GOOD_CHOICE, usage=None))
+    out = OpenAIChat(server.url, MODEL)(CONVERSATION[:2])
+    assert (out["content"], out["tokens"], out["finish"]) == (GOOD, None, "stop")
+    judge = Judge(OpenAIChat(server.url, MODEL))
+    score_once(judge)
+    (call,) = judge.calls
+    assert (call["label"], call["attempts"], call["tokens"]) == ("supported", 1, None)
 
 
 def test_transport_failure_and_bad_reply_share_one_counter(server: FakeHTTP) -> None:

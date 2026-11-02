@@ -73,8 +73,8 @@ boundaries, then words); a premise's score is its most related chunk. The verifi
 heading: instrument, citation, section title) and each window joined with a window it cites, in one batch.
 
 Since stop 77, `SentenceNLIVerifier(...)` emits a `UserWarning`: the DeBERTa head did not improve answers
-(58.3–68.7 % accuracy on statute sentences, vs 90.1–93.8 % for the LLM judge; see `docs/VERDICT.md`). Use the
-judge of §2b instead.
+(58.3–68.7 % accuracy on two hand-graded tests, software and UK statutes, vs 90.1–93.8 % for the LLM judge; see
+`docs/VERDICT.md`). Use the judge of §2b instead.
 
 ## 2b. LLM judge (`legal_rag_verifier.judge`, stdlib)
 
@@ -111,10 +111,12 @@ mode too, as measured. `PROMPT_SHA` = sha256(`SYSTEM + USER`) =
 Answer so far: `check_text` starts a fresh call log and gives each sentence every earlier sentence of the text,
 rolled back or not, as measured at stop 61. `check_sentence` gives it the sentences emitted so far, and an emitted
 sentence joins them. The engine has no hook for `reset()`: with `InFlightGenerator(backend, JudgedVerifier(judge))`
-the caller calls it between answers.
+the caller calls it between answers. `Judge` and `JudgedVerifier` hold per-answer state (the answer so far, the
+call log) and are not thread-safe: use one per worker.
 
 `Preset(model, revision, quantisation, server, sampling, template_kwargs, reply, prompt_sha256, figure,
-measurements)` is frozen; `measurements` links into `docs/measurements.md`. `PRESETS["qwen27-ar4"]` is the only
+measurements)` is frozen, and its `sampling` and `template_kwargs` are read-only mappings; `measurements` links
+into `docs/measurements.md`. `PRESETS["qwen27-ar4"]` is the only
 measured configuration: `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at
 `1b9d56b428e9f841d7ad566f87660b5f47553c97` (W4A16 AutoRound, GPTQ format), SGLang 0.5.21 on one L40S, thinking
 off, temperature 0.7, top_p 0.8, top_k 20, min_p 0.0, presence_penalty 1.5, max_tokens 1024, seed 0, the short
@@ -133,15 +135,21 @@ exception, `None` on success). No trace change: the call log is read from `Judge
 into the engine trace or `SentenceVerdict`.
 
 Failures: one counter, at most 3 attempts in all, shared by transport failures (a timeout, a URL or HTTP error, a
-connection reset, a non-JSON body, a body with no choices) and replies that do not parse. A transport failure
+redirect, a connection reset, a malformed body such as a non-JSON body or one with no choices) and replies that do
+not parse. A transport failure
 re-sends the same messages; a reply that does not parse is re-asked with `RETRY`. After the third failure the
 label is `"error"`, scored not stated. `OpenAIChat` does not retry. Neither path was hit in the recorded runs.
 Limit: a judge that cannot be reached scores every sentence not stated, so under `STRICT_FIGURES` every sentence
 rolls back.
 
-Secrets: `api_key_env` names an environment variable, not a key. Its value is read at each call and sent as
-`Authorization: Bearer` only when set and non-empty; it is never stored, and never appears in a repr, call record,
-trace or error message.
+Endpoint: `OpenAIChat` raises `ValueError` unless `base_url` starts with `http://` or `https://`. It does not
+follow HTTP redirects: a redirect counts as a failed attempt, so the key is never sent to another host.
+
+Secrets: `api_key_env` names an environment variable, not a key. Its value is read at each call, stripped of
+surrounding whitespace, and sent as `Authorization: Bearer` only when set and non-empty; it is never stored, and
+never appears in a repr, call record, trace or error message. A value holding a control character raises
+`ValueError` naming the variable, not the value. The repr of `OpenAIChat` shows `base_url`, so never put a key in
+the URL.
 
 ```python
 from legal_rag_verifier.judge import Judge, JudgedVerifier

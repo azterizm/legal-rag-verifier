@@ -28,7 +28,8 @@ _BATCH = 16
 _PAD_MULTIPLE = 64
 _DEBERTA_WARNING = (
     "The DeBERTa NLI head did not improve answers: empirical research found 58.3%–68.7% "
-    "accuracy on statute sentences, vs 90.1%–93.8% for the LLM judge (see docs/VERDICT.md). "
+    "accuracy on two hand-graded tests (software and UK statutes), vs 90.1%–93.8% for the "
+    "LLM judge (see docs/VERDICT.md). "
     "Use legal_rag_verifier.judge instead."
 )
 

@@ -16,6 +16,7 @@ from legal_rag_verifier.judge import (
     STRICT_FIGURES,
     Judge,
     JudgedVerifier,
+    OpenAIChat,
     prompt_key,
 )
 from legal_rag_verifier.premise import Premise
@@ -217,8 +218,31 @@ def test_a_preset_is_frozen_and_an_unknown_name_is_refused() -> None:
     field = "reply"
     with pytest.raises(dataclasses.FrozenInstanceError):
         setattr(preset, field, "full")
+    with pytest.raises(TypeError):
+        preset.sampling["seed"] = 1  # type: ignore[index]
+    with pytest.raises(TypeError):
+        preset.template_kwargs["enable_thinking"] = True  # type: ignore[index]
+    assert preset.sampling["seed"] == 0
+    assert preset.template_kwargs["enable_thinking"] is False
     with pytest.raises(KeyError):
         Judge.from_preset("no-such-judge", "http://127.0.0.1:1")
+
+
+def test_a_preset_judge_gets_plain_dict_copies() -> None:
+    chat = Judge.from_preset("qwen27-ar4", "http://127.0.0.1:1").chat
+    assert isinstance(chat, OpenAIChat)
+    preset = PRESETS["qwen27-ar4"]
+    assert type(chat.sampling) is dict
+    assert type(chat.template_kwargs) is dict
+    assert chat.sampling == dict(preset.sampling)
+    assert chat.template_kwargs == dict(preset.template_kwargs)
+
+
+def test_a_preset_with_an_unknown_reply_is_refused(monkeypatch: pytest.MonkeyPatch) -> None:
+    odd = dataclasses.replace(PRESETS["qwen27-ar4"], reply="long")
+    monkeypatch.setitem(PRESETS, "odd", odd)
+    with pytest.raises(ValueError, match="reply"):
+        Judge.from_preset("odd", "http://127.0.0.1:1")
 
 
 # ---------------------------------------------------------------------- the engine's path

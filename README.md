@@ -28,8 +28,8 @@ to its figures, scripts and result files. The answers quote statute text and sta
 grades, reports and hashes are committed.
 
 **What it does not show.** Status: proof of concept. The gains come from an LLM judge, now in
-the package as `legal_rag_verifier.judge` ([Use the judge](#use-the-judge)). The DeBERTa head the package ships did not improve answers.
-UK statute questions only. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
+the package as `legal_rag_verifier.judge` ([Use the judge](#use-the-judge)). The DeBERTa head
+the package ships did not improve answers. UK statute questions only. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
 what is required first.
 
 `legal-rag-verifier` checks each sentence of an answer against the statutory provisions it was
@@ -123,6 +123,7 @@ Measured presets:
 |---|---|---|---|---|---|
 | `qwen27-ar4` | `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at `1b9d56b4` | W4A16 AutoRound; SGLang 0.5.21, thinking off; short reply | 93.8 % of 354 sentences, 90.1 % of 151 | 0.54 s | [`docs/measurements.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/measurements.md#a-judge-reply-without-the-reason-stop-61-2026-10-12-method-in-docsgridmd) |
 
+The 0.54 s per clause is from the first test only: a timing run of 40 prompts sent one at a time.
 Any other model is unmeasured. A judge built by hand, not from a preset, carries `preset: None` in
 its call log. On answers written with the source in the prompt, this judge scored below no auditor:
 88.9 % against 94.4 % on 72 sentences (stop 73).
@@ -140,6 +141,7 @@ Then check an answer against it:
 ```python
 from legal_rag_verifier.judge import Judge, JudgedVerifier
 
+# premise (a Premise, as in "Check a sentence"), answer and question come from your RAG pipeline
 judge = Judge.from_preset("qwen27-ar4", "http://localhost:30000")
 verifier = JudgedVerifier(judge)  # the measured config, STRICT_FIGURES
 verdicts = verifier.check_text(premise, answer, query=question)
