@@ -7,6 +7,7 @@ import copy
 import email.message
 import hashlib
 import http.client
+import io
 import re
 import urllib.error
 from collections.abc import Callable, Sequence
@@ -397,29 +398,66 @@ def test_the_chat_is_never_called_more_than_three_times() -> None:
 
 # ---------------------------------------------------------------------- transport failures
 
-TRANSPORT: list[Callable[[], BaseException]] = [
-    lambda: urllib.error.URLError("connection refused"),
-    lambda: urllib.error.HTTPError(
-        "http://127.0.0.1:1/v1/chat/completions", 503, "busy", email.message.Message(), None
-    ),
-    lambda: TimeoutError("timed out"),
-    lambda: ConnectionResetError("reset"),
-    lambda: OSError("down"),
-    lambda: http.client.RemoteDisconnected("gone"),
-    lambda: http.client.HTTPException("bad response"),
-    lambda: ValueError("non-JSON body"),
-    lambda: KeyError("choices"),
-    lambda: IndexError("list index out of range"),
-]
+
+def http_error() -> urllib.error.HTTPError:
+    """A 503 with an explicit body: from Python 3.14 an ``HTTPError`` built with ``fp=None``
+    holds a temporary file that warns (an error here) when collected unclosed."""
+    url = "http://127.0.0.1:1/v1/chat/completions"
+    return urllib.error.HTTPError(url, 503, "busy", email.message.Message(), io.BytesIO(b""))
 
 
-@pytest.mark.parametrize("make", TRANSPORT, ids=[type(m()).__name__ for m in TRANSPORT])
+def close(error: BaseException) -> None:
+    """Close ``error`` if it holds a response (closing twice is harmless)."""
+    if isinstance(error, urllib.error.HTTPError):
+        error.close()
+
+
+# Named by hand: building one to read its class name would leave an ``HTTPError`` unclosed.
+TRANSPORT: dict[str, Callable[[], BaseException]] = {
+    "URLError": lambda: urllib.error.URLError("connection refused"),
+    "HTTPError": http_error,
+    "TimeoutError": lambda: TimeoutError("timed out"),
+    "ConnectionResetError": lambda: ConnectionResetError("reset"),
+    "OSError": lambda: OSError("down"),
+    "RemoteDisconnected": lambda: http.client.RemoteDisconnected("gone"),
+    "HTTPException": lambda: http.client.HTTPException("bad response"),
+    "ValueError": lambda: ValueError("non-JSON body"),
+    "KeyError": lambda: KeyError("choices"),
+    "IndexError": lambda: IndexError("list index out of range"),
+}
+
+
+def test_the_transport_ids_name_their_class() -> None:
+    for name, make in TRANSPORT.items():
+        error = make()
+        try:
+            assert type(error).__name__ == name
+        finally:
+            close(error)
+
+
+@pytest.mark.parametrize("make", TRANSPORT.values(), ids=TRANSPORT.keys())
 def test_a_transport_failure_resends_the_same_messages(make: Callable[[], BaseException]) -> None:
-    chat, _, out, rec = run([make(), reply(GOOD, ms=7.5, tokens=None)])
+    error = make()
+    try:
+        chat, _, out, rec = run([error, reply(GOOD, ms=7.5, tokens=None)])
+    finally:
+        close(error)
     assert chat.sent == [first(USER), first(USER)]
     assert (rec["label"], rec["attempts"], rec["error"]) == ("supported", 2, None)
     assert (rec["ms"], rec["tokens"]) == (7.5, None)
     assert out == [NEUTRAL, ENTAIL]
+
+
+def test_the_judge_closes_every_http_error_it_catches() -> None:
+    errors = [http_error(), http_error(), http_error()]
+    try:
+        _, _, _, rec = run(errors)
+        assert (rec["label"], rec["attempts"], rec["error"]) == ("error", 3, "HTTPError")
+        assert [e.fp.closed for e in errors] == [True, True, True]  # the third, last one too
+    finally:
+        for error in errors:
+            close(error)
 
 
 def test_a_mix_of_failures_gives_error_named_by_the_last() -> None:
