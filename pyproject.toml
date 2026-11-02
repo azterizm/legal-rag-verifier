@@ -127,6 +127,8 @@ filterwarnings = [
     "error",
     # transformers' DeBERTa-v2 modelling code still calls torch.jit.script (third-party, harmless)
     "ignore:`torch.jit.script` is deprecated:FutureWarning",
+    # the DeBERTa warning is for users; tests that build the scorer on purpose ignore it (tests/test_nli_warning.py checks it)
+    "ignore:The DeBERTa NLI head did not improve answers:UserWarning",
 ]
 markers = [
     "full_data: needs the local corpus under data/ (skipped in CI)",

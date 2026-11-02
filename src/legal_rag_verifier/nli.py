@@ -10,6 +10,7 @@ the cross-encoder checkpoints use 0 = contradiction, 1 = entailment, 2 = neutral
 from __future__ import annotations
 
 import time
+import warnings
 from collections.abc import Sequence
 from typing import Any
 
@@ -25,6 +26,11 @@ _SPECIAL_TOKENS = 3  # [CLS] premise [SEP] hypothesis [SEP]
 # new graph per shape, and unbounded shapes made it compile instead of compute (stop 15).
 _BATCH = 16
 _PAD_MULTIPLE = 64
+_DEBERTA_WARNING = (
+    "The DeBERTa NLI head did not improve answers: empirical research found 58.3%–68.7% "
+    "accuracy on statute sentences, vs 90.1%–93.8% for the LLM judge (see docs/VERDICT.md). "
+    "Use legal_rag_verifier.judge instead."
+)
 
 
 def pick_device(preferred: str | None = None) -> str:
@@ -67,6 +73,7 @@ class SentenceNLIVerifier:
         max_length: int = 512,
         local_files_only: bool = True,
     ) -> None:
+        warnings.warn(_DEBERTA_WARNING, UserWarning, stacklevel=2)
         import torch  # noqa: PLC0415 - optional dependency
         from transformers import (  # noqa: PLC0415 - optional dependency
             AutoModelForSequenceClassification,
