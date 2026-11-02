@@ -6,6 +6,40 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-02
+
+### Added
+- `legal_rag_verifier.judge`: the LLM judge behind the README's results, as a package module. It
+  is stdlib only and calls any OpenAI-compatible `/v1/chat/completions` endpoint. The measured
+  prompt is fixed, and its hashes are checked at import.
+- `OpenAIChat`, the HTTP client; `Judge`, the entailment check, built by hand or with
+  `Judge.from_preset(name, base_url)`; `JudgedVerifier`, which gives each sentence's prompt all
+  earlier sentences in `check_text` (post-hoc) and only the emitted sentences in the engine path
+  (live), cleared by `reset()` between answers; `PRESETS`, with one measured preset,
+  `"qwen27-ar4"` (Qwen3.8 27B at 4 bits on SGLang); and `STRICT_FIGURES`, the config it was
+  measured with.
+- The judge keeps its own call log, one record per call, read from `JudgedVerifier.calls`. The
+  trace does not change.
+- At most 3 attempts per prompt, shared by transport failures and replies that do not parse. After
+  the third the sentence is scored not stated, so a judge that cannot be reached rolls back every
+  sentence under `STRICT_FIGURES`.
+- The API key is read from an environment variable at call time. It appears in no repr, call
+  record or exception text, and is never sent across a redirect: redirects are not followed.
+- Any other model, sampling, prompt or config is unmeasured.
+
+### Changed
+- Building `SentenceNLIVerifier` emits a `UserWarning`. The DeBERTa head did not improve answers:
+  58.3%–68.7% on two hand-graded tests (software and UK statutes), vs 90.1%–93.8% for the LLM
+  judge. See `docs/VERDICT.md`.
+
+### Evaluation
+- Stop 77, a free replay test (`tests/test_judge_replay.py`): a fake endpoint serves the recorded
+  labels by prompt hash, and the package's `JudgedVerifier` reproduces the published judge figures
+  exactly: 90.1% (136/151) on the second fresh test and 93.8% (332/354) on the first. Every prompt
+  the package sends is recorded (140 and 347 unique, none unknown). The test runs only where the
+  local results and corpus exist, and skips elsewhere.
+- The paid live check against a real server is not yet run.
+
 ## [0.4.0] - 2026-10-23
 
 ### Added
@@ -106,6 +140,7 @@ English.
   injection A/B; the placement and attention replay; injection v2 (question restated in the inserted
   turn, `legal-rag-router` as the abstention gate). Proof-of-concept verdict: `docs/VERDICT.md`.
 
+[0.5.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.5.0
 [0.4.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.4.0
 [0.3.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.3.0
 [0.2.0]: https://github.com/azterizm/legal-rag-verifier/releases/tag/v0.2.0
