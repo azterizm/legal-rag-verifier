@@ -1,7 +1,8 @@
 # `legal-rag-verifier` API (M1, for review ⛔)
 
 Everything below is stdlib-only (core wheel, zero runtime deps). M2 adds `legal_rag_verifier.nli`
-(`[nli]` extra), M3 adds `legal_rag_verifier.engine` and `legal_rag_verifier.backends` (`[hf]`).
+(`[nli]` extra), M3 adds `legal_rag_verifier.engine` and `legal_rag_verifier.backends` (`[hf]`), stop 77 adds
+`legal_rag_verifier.judge` (stdlib).
 
 ## 1. Premise
 
@@ -70,6 +71,85 @@ Verifier(nli=nli)
 Labels come from the model's `id2label`. A premise longer than the encoder budget is split into chunks (sentence
 boundaries, then words); a premise's score is its most related chunk. The verifier scores each window (with its
 heading: instrument, citation, section title) and each window joined with a window it cites, in one batch.
+
+Since stop 77, `SentenceNLIVerifier(...)` emits a `UserWarning`: the DeBERTa head did not improve answers
+(58.3–68.7 % accuracy on statute sentences, vs 90.1–93.8 % for the LLM judge; see `docs/VERDICT.md`). Use the
+judge of §2b instead.
+
+## 2b. LLM judge (`legal_rag_verifier.judge`, stdlib)
+
+```python
+from legal_rag_verifier.judge import OpenAIChat, Judge, JudgedVerifier, Preset, PRESETS, STRICT_FIGURES
+
+chat = OpenAIChat(base_url, model, *, api_key_env=None, sampling=None, template_kwargs=None, timeout=1800.0)
+chat(messages) -> {"content", "ms", "tokens", "finish"}   # one POST to {base_url}/v1/chat/completions
+judge = Judge(chat, *, reply="short" | "full")            # an NLIScorer: one call per sentence
+Judge.from_preset(name, base_url, *, api_key_env=None)    # the measured PRESETS[name] on that server
+judge.score(premises, hypothesis) -> list[NLIProbs]       # one-hot on the passage the reply names
+judge.model_id, judge.preset, judge.calls                 # "model@revision" for a preset, else the chat's model
+v = JudgedVerifier(judge, config=STRICT_FIGURES)          # a Verifier with the judge as its entailment check
+v.check_text(premise, text, *, query=None) -> list[SentenceVerdict]    # post-hoc
+v.check_sentence(premise, sentence, *, query=None) -> SentenceVerdict  # live (the engine's path)
+v.reset()                                                 # between answers
+v.calls                                                   # the judge's call records since the last reset
+```
+
+The judge takes the NLI head's place. Each sentence the claim check sends on goes to an OpenAI-compatible chat
+endpoint with the candidate windows as numbered passages and the answer so far (to resolve "it" or "this" only,
+not as evidence). The reply `supported`, `contradicted` or `not_stated` becomes one-hot `NLIProbs`: entailment
+or contradiction 1 on the passage it names (on every candidate when the number is out of range), neutral 1
+everywhere for `not_stated`.
+
+The prompt is fixed: `SYSTEM` + `USER` (stop 42), with the reply sentence replaced by `SHORT_REPLY` (stop 61)
+when `reply="short"`, the default. `RETRY` re-asks after a reply that does not parse; it names "reason" in short
+mode too, as measured. `PROMPT_SHA` = sha256(`SYSTEM + USER`) =
+`72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b`; `SHORT_SHA` = sha256 of the short template =
+`7748f874db902456700c3ff64c1b4e37621e951ed0c3c65495b8b3c5911be149`. The module raises at import if either differs.
+`prompt_key(user)` = sha256(`SYSTEM + "\n" + user`) is the key of one rendered prompt, not a template hash.
+`user_prompt`, `short_prompt`, `parse_reply`, `extract_json` and `one_hot` are exported for the scripts.
+
+Answer so far: `check_text` starts a fresh call log and gives each sentence every earlier sentence of the text,
+rolled back or not, as measured at stop 61. `check_sentence` gives it the sentences emitted so far, and an emitted
+sentence joins them. The engine has no hook for `reset()`: with `InFlightGenerator(backend, JudgedVerifier(judge))`
+the caller calls it between answers.
+
+`Preset(model, revision, quantisation, server, sampling, template_kwargs, reply, prompt_sha256, figure,
+measurements)` is frozen; `measurements` links into `docs/measurements.md`. `PRESETS["qwen27-ar4"]` is the only
+measured configuration: `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at
+`1b9d56b428e9f841d7ad566f87660b5f47553c97` (W4A16 AutoRound, GPTQ format), SGLang 0.5.21 on one L40S, thinking
+off, temperature 0.7, top_p 0.8, top_k 20, min_p 0.0, presence_penalty 1.5, max_tokens 1024, seed 0, the short
+reply, under `STRICT_FIGURES`. It scored 93.8 % (332/354) and 90.1 % (136/151) on the two fresh tests (stop 61).
+Any other model, endpoint, sampling, prompt or config is unmeasured, and a judge built by hand records
+`preset: None`. `from_preset` does not check the server at `base_url`; its records name the preset either way.
+
+`STRICT_FIGURES = VerifierConfig(neutral_policy="strict", neutral_with_grounded_claim="rollback",
+ungrounded_figure="judge")`, the default config of `JudgedVerifier`.
+
+Call record, one per `score`: `sha` (`prompt_key` of the prompt sent), `label` (raw, so `"error"` is kept),
+`passage` (the number the reply names, 0 for none), `attempts` (1–3), `ms` (summed over the replies received),
+`tokens` (summed completion tokens, `None` when the server reports none), `sentence` (0-based index in the
+answer), `preset` (the preset name, `None` for a judge built by hand) and `error` (the class name of the last
+exception, `None` on success). No trace change: the call log is read from `JudgedVerifier.calls`, not written
+into the engine trace or `SentenceVerdict`.
+
+Failures: one counter, at most 3 attempts in all, shared by transport failures (a timeout, a URL or HTTP error, a
+connection reset, a non-JSON body, a body with no choices) and replies that do not parse. A transport failure
+re-sends the same messages; a reply that does not parse is re-asked with `RETRY`. After the third failure the
+label is `"error"`, scored not stated. `OpenAIChat` does not retry. Neither path was hit in the recorded runs.
+Limit: a judge that cannot be reached scores every sentence not stated, so under `STRICT_FIGURES` every sentence
+rolls back.
+
+Secrets: `api_key_env` names an environment variable, not a key. Its value is read at each call and sent as
+`Authorization: Bearer` only when set and non-empty; it is never stored, and never appears in a repr, call record,
+trace or error message.
+
+```python
+from legal_rag_verifier.judge import Judge, JudgedVerifier
+
+# an SGLang server already serving the model
+judge = Judge.from_preset("qwen27-ar4", "http://localhost:30000")
+verdicts = JudgedVerifier(judge).check_text(premise, answer, query=question)
+```
 
 ## 3. Order of checks
 
@@ -163,6 +243,9 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
 5. **Module names**: `premise`, `verifier`, `claims`, `citations`, `deontic`, `qualifiers`, `segmenter`, `index`,
    `align`, `corpus`, `numbers`. Vault 05's imports (`nli.SentenceNLIVerifier`, `engine.InFlightGenerator`) landed in M2/M3; vault 05
    constructs the generator from `model_path=…`, the plan (and this API) from a backend: vault correction pending your go.
+6. **Judge names** (stop 77, confirmed at the H1 review, 2026-11-02): module `judge`; `OpenAIChat`, `Judge`,
+   `JudgedVerifier`, `PRESETS`; one preset key, `"qwen27-ar4"` (the name in `modal_distill.py` and the label
+   files); `Judge.from_preset`, a classmethod rather than a new top-level name. No FP8 preset.
 
 ## 6. Known limits (measured in M2, not fixed by guesswork)
 
@@ -187,3 +270,8 @@ On MPS it sets `HF_DEACTIVATE_ASYNC_LOAD=1` (transformers 5.18's threaded loader
   total in a wrong claim ("the cheapest is Shop B at €105.98" when Shop A is cheaper) is kept. On
   legislation a window is one line, so `"line"` would ground the sum of any two amounts in a provision; it
   is off by default and was not measured there.
+- Judge (§2b): with the source in the generator's prompt, the judge scored below no auditor, 88.9 % vs 94.4 % on
+  the second fresh test's 72 sentences written with the source (stop 73). Seed 0 does not make labels repeatable:
+  the scored requests ran 16 at a time at temperature 0.7, and stop 48 found 14 of 323 labels changed on a second
+  sample of the same prompt (the FP8 model; no repeat was measured on the 4-bit preset). A judge that cannot be
+  reached rolls back every sentence under `STRICT_FIGURES`.

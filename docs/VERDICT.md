@@ -1,6 +1,7 @@
 # Proof of concept verdict
 
-legal-rag-verifier 0.1.0, 2026-10-08. The verdict, the tests since 0.1.0 and item 1 of the last section updated 2026-10-16.
+legal-rag-verifier 0.1.0, 2026-10-08. The verdict, the tests since 0.1.0 and item 1 of the last section updated 2026-10-16;
+item 1 again 2026-11-02 (stop 77).
 
 ## Question
 
@@ -195,7 +196,11 @@ and the second (151). Wrong answers are answers holding a wrong sentence, of 240
    output it was 8 % by hand on software and 39 % by model labels on statutes. An untrained Qwen 27B is right on about 90 % of
    unseen sentences. Roll back every sentence the source does not state. Stop the segmenter splitting list
    numbers into sentences that the claim check rejects as figures. Confirm on a new graded set that figure
-   rollbacks go to the judge (stop 52). Measure on real answers graded by people.
+   rollbacks go to the judge (stop 52). Measure on real answers graded by people. From stop 77 the judge is in
+   the package as `legal_rag_verifier.judge`, with the measured prompt fixed and one measured preset,
+   `qwen27-ar4`, for the next release. A replay test with no paid call gives the recorded verdicts and exactly
+   90.1 % (136/151) and 93.8 % (332/354). Still open: the live check against a real server
+   (`docs/PLAN-judge-3-testing.md`). Hosted models are unmeasured.
 2. Insert the source as a user turn at the cut when the judge is an LLM. With the entailment model as the
    auditor, inserted retries were not better than a plain retry, and on statutes the model pasted the source.
    With the 27B judge the default retry, which bans the first token, was wrong again in 71 of 95 retries

@@ -27,8 +27,8 @@ across 240 answers.
 to its figures, scripts and result files. The answers quote statute text and stay private; their
 grades, reports and hashes are committed.
 
-**What it does not show.** Status: proof of concept. The gains come from an LLM judge, which is
-in `scripts/`, not in the package. The DeBERTa head the package ships did not improve answers.
+**What it does not show.** Status: proof of concept. The gains come from an LLM judge, now in
+the package as `legal_rag_verifier.judge` ([Use the judge](#use-the-judge)). The DeBERTa head the package ships did not improve answers.
 UK statute questions only. The [verdict](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md) states what holds, what does not and
 what is required first.
 
@@ -76,6 +76,9 @@ verdict.ungrounded  # ['£85,000']
 
 `check_text` runs the same checks over a whole answer, for post-hoc use.
 
+`SentenceNLIVerifier` now warns when built: the DeBERTa head did not improve answers, and the
+[judge](#use-the-judge) is recommended (see [`docs/VERDICT.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/VERDICT.md)).
+
 ## Generate with rollback
 
 ```python
@@ -107,6 +110,49 @@ refusal for that point and moves on. Retry modes:
 
 The SGLang server needs `--enable-custom-logit-processor` for `allow` and `ban`. Full API:
 [`docs/API.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/API.md).
+
+## Use the judge
+
+`legal_rag_verifier.judge` is the LLM judge behind the results above, now in the package: stdlib
+only, against any OpenAI-compatible endpoint (SGLang, vLLM). It takes the NLI head's place as the
+entailment check, with the measured prompt fixed.
+
+Measured presets:
+
+| Preset | Model and revision | Quantisation, server, reply | Right on (stop 61) | Per clause, p50 | Figures |
+|---|---|---|---|---|---|
+| `qwen27-ar4` | `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at `1b9d56b4` | W4A16 AutoRound; SGLang 0.5.21, thinking off; short reply | 93.8 % of 354 sentences, 90.1 % of 151 | 0.54 s | [`docs/measurements.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/measurements.md#a-judge-reply-without-the-reason-stop-61-2026-10-12-method-in-docsgridmd) |
+
+Any other model is unmeasured. A judge built by hand, not from a preset, carries `preset: None` in
+its call log. On answers written with the source in the prompt, this judge scored below no auditor:
+88.9 % against 94.4 % on 72 sentences (stop 73).
+
+Serve the preset (SGLang 0.5.21, one L40S-class GPU):
+
+```bash
+python -m sglang.launch_server --model-path Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ \
+  --revision 1b9d56b428e9f841d7ad566f87660b5f47553c97 \
+  --reasoning-parser qwen3 --context-length 65536 --mem-fraction-static 0.85
+```
+
+Then check an answer against it:
+
+```python
+from legal_rag_verifier.judge import Judge, JudgedVerifier
+
+judge = Judge.from_preset("qwen27-ar4", "http://localhost:30000")
+verifier = JudgedVerifier(judge)  # the measured config, STRICT_FIGURES
+verdicts = verifier.check_text(premise, answer, query=question)
+verifier.calls  # one record per judge call: label, passage, attempts, ms, tokens, sentence, preset
+```
+
+For a hosted endpoint, `api_key_env="NAME"` sends that environment variable as a bearer token; it
+is read at call time and never stored or logged. In the engine, pass the `JudgedVerifier` as the
+verifier and call `verifier.reset()` before each answer.
+
+A judge that cannot be reached scores every sentence not stated, so every sentence rolls back:
+check the endpoint before a run. Full interface:
+[`docs/API.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/API.md) §2b.
 
 ## Evidence
 
