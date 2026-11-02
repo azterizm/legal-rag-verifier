@@ -3,6 +3,13 @@
 Runs in the container beside one SGLang server that serves both roles. The engine and the
 verifier are the package's; this file only supplies the judge as the entailment scorer, the
 answer so far for its prompt, and this model's chat format.
+
+The judge's prompt, labels, ``one_hot`` and ``STRICT_FIGURES`` come from the package,
+``legal_rag_verifier.judge`` (stop 77); ``ask`` (the measured retry) from ``auditor_judge``.
+``LiveJudge`` and ``LoopVerifier`` stay here, as stops 59-70 ran them: ``LiveJudge`` gives up at
+the first network error with 0 attempts and keeps its own call record, and ``LoopVerifier`` takes
+a ``LiveJudge`` and keeps the base ``check_text``. The package's ``Judge`` and ``JudgedVerifier``
+differ there (GRID stop 77, decisions 2 and 3).
 """
 
 from __future__ import annotations
@@ -29,6 +36,7 @@ from legal_rag_verifier.engine import (
     _Retry,
     _Stream,
 )
+from legal_rag_verifier.judge import LABELS, STRICT_FIGURES, one_hot, short_prompt, user_prompt
 from legal_rag_verifier.premise import Premise
 from legal_rag_verifier.verifier import NLIProbs, SentenceVerdict, Verifier
 
@@ -154,7 +162,11 @@ class LiveJudge:
     """The judge as the verifier's entailment scorer: one call per clause, the stop 42 prompt.
     ``prefix`` is the answer so far. A reply that never parses counts as not stated. ``reply``:
     ``"short"`` asks for no reason (stop 61, the default by your decision of 2026-10-12);
-    ``"reason"`` is the prompt as stop 59 ran it."""
+    ``"reason"`` is the prompt as stop 59 ran it. The prompt, labels and ``one_hot`` are
+    ``legal_rag_verifier.judge``'s; the retry is ``auditor_judge.ask``. Unlike the package's
+    ``Judge``, a network error gives up at once (label ``"error"``, attempts 0), and each call
+    record is ``{label, attempts, tokens, ms}`` with ``ms`` the wall time, as the live runs
+    recorded it."""
 
     def __init__(self, chat: Chat, model_id: str, reply: str = "short") -> None:
         if reply not in {"short", "reason"}:
@@ -168,11 +180,11 @@ class LiveJudge:
     def score(self, premises: Sequence[str], hypothesis: str) -> list[NLIProbs]:
         t0 = time.perf_counter()
         try:
-            build = aj.short_prompt if self.reply == "short" else aj.user_prompt
+            build = short_prompt if self.reply == "short" else user_prompt
             reply = aj.ask(self.chat, build(hypothesis, premises, self.prefix))
         except (urllib.error.URLError, TimeoutError, KeyError) as exc:
             reply = {"label": "error", "passage": 0, "reason": repr(exc), "attempts": 0}
-        label = reply["label"] if reply["label"] in aj.LABELS else "not_stated"
+        label = reply["label"] if reply["label"] in LABELS else "not_stated"
         self.calls.append(
             {
                 "label": reply["label"],
@@ -181,14 +193,18 @@ class LiveJudge:
                 "ms": round((time.perf_counter() - t0) * 1000),
             }
         )
-        return list(aj.one_hot(label, int(reply.get("passage") or 0), len(premises)))
+        return list(one_hot(label, int(reply.get("passage") or 0), len(premises)))
 
 
 class LoopVerifier(Verifier):
-    """The package verifier, telling the judge which sentences are already committed."""
+    """The package verifier, telling the judge which sentences are already committed.
+
+    Kept apart from the package's ``JudgedVerifier``, whose live path matches it (plus the
+    sentence index): ``JudgedVerifier`` takes a package ``Judge``, and its ``check_text`` uses the
+    post-hoc prefix where this class keeps the base one."""
 
     def __init__(self, judge: LiveJudge) -> None:
-        super().__init__(judge, aj.STRICT_FIGURES)
+        super().__init__(judge, STRICT_FIGURES)
         self.judge = judge
         self.committed: list[str] = []
 

@@ -12,6 +12,13 @@ Controls: MiniCheck and ModernBERT-large NLI in DeBERTa's place, thresholds from
 model work is on Modal or the router; this machine records what is sent, replays the verifier
 from the returned labels and scores, and scores the result.
 
+The judge's measured pieces come from the package, ``legal_rag_verifier.judge`` (stop 77), and
+are re-exported here under their old names: the prompt (``SYSTEM``, ``USER``, ``SHORT_REPLY``,
+``RETRY``, ``PROMPT_SHA``), ``LABELS``, ``user_prompt``, ``short_prompt``, ``prompt_key``,
+``extract_json``, ``parse_reply``, ``one_hot``, ``CLOSE_THINK`` and ``STRICT_FIGURES``.
+``server_chat`` is the package's ``OpenAIChat``. The research paths (``ask``, ``judge_all``,
+the batched prompt, the scorers, replay and scoring) stay here.
+
   uv run python scripts/auditor_judge.py record   # what each text sends (counts; inputs to Modal)
   uv run python scripts/auditor_judge.py pilot    # 5 dev texts to Gemini (paid)
   uv run python scripts/auditor_judge.py gemini   # every clause to Gemini (paid)
@@ -24,12 +31,10 @@ import argparse
 import hashlib
 import json
 import random
-import re
 import statistics
 import sys
 import time
 import urllib.error
-import urllib.request
 from collections.abc import Callable, Mapping, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -40,11 +45,28 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "batteries/verifier"))
 
+from legal_rag_verifier import judge as _judge  # noqa: E402
 from legal_rag_verifier.premise import Premise  # noqa: E402
 from legal_rag_verifier.verifier import NLIProbs, NLIScorer, Verifier, VerifierConfig  # noqa: E402
 
+# The judge's measured pieces, shared with the package (stop 77, decision 6) and bound here under
+# their old names, the same objects: 26 scripts and 6 test files import them from this module.
+SYSTEM = _judge.SYSTEM
+USER = _judge.USER
+SHORT_REPLY = _judge.SHORT_REPLY
+RETRY = _judge.RETRY
+PROMPT_SHA = _judge.PROMPT_SHA
+LABELS = _judge.LABELS
+CLOSE_THINK = _judge.CLOSE_THINK
+STRICT_FIGURES = _judge.STRICT_FIGURES
+user_prompt = _judge.user_prompt
+short_prompt = _judge.short_prompt
+prompt_key = _judge.prompt_key
+extract_json = _judge.extract_json
+parse_reply = _judge.parse_reply
+one_hot = _judge.one_hot
+
 OUT = ROOT / "results/auditor_judge"
-LABELS = ("supported", "contradicted", "not_stated")
 GEMINI = "gemini-3.8-flash-high"
 QWEN = "Qwen/Qwen3.8-27B-FP8"
 QWEN_REVISION = "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
@@ -77,94 +99,17 @@ CONTRADICTS = (0.3, 0.4, 0.5, 0.6, 0.7)
 NLI_REASONS = frozenset({"NLI_CONTRADICTION", "NLI_NOT_ENTAILED", "NEUTRAL_STRICT"})
 DEFAULT = VerifierConfig()
 STRICT = VerifierConfig(neutral_policy="strict", neutral_with_grounded_claim="rollback")
-# Strict, with a figure the claim check cannot find sent to the judge (stop 52's arm, in ``src``).
-STRICT_FIGURES = VerifierConfig(
-    neutral_policy="strict", neutral_with_grounded_claim="rollback", ungrounded_figure="judge"
-)
+# ``STRICT_FIGURES`` (strict, with a figure the claim check cannot find sent to the judge, stop
+# 52's arm) is ``legal_rag_verifier.judge``'s, bound above.
 BOOTSTRAP = 2000
 SEED = 42
 
-SYSTEM = (
-    "You check whether a sentence is supported by source passages. Use only the passages, not "
-    "your own knowledge. Reply with a single JSON object."
-)
-USER = """Passages:
-{passages}
-
-Answer so far. Use it only to work out what words such as "it" or "this" refer to. It is not \
-evidence.
-<<<
-{prefix}
->>>
-
-Sentence to check:
-<<<
-{sentence}
->>>
-
-Labels:
-- "supported": a passage states the sentence, or the sentence follows from the passages by \
-reasoning, such as applying a default, substituting a definition, following a reference to another \
-passage, converting units or doing arithmetic.
-- "contradicted": the passages state or imply something incompatible with the sentence, such as a \
-different figure, condition, scope or outcome.
-- "not_stated": neither. Use this when the sentence may be true but the passages do not establish \
-it.
-
-Return JSON with keys "label" (one of the three), "passage" (the number of the passage that \
-decides it, or 0) and "reason" (one sentence)."""
-PROMPT_SHA = hashlib.sha256((SYSTEM + USER).encode()).hexdigest()
-
 
 # ---------------------------------------------------------------------- the judge prompt
-
-
-def user_prompt(sentence: str, candidates: Sequence[str], prefix: str) -> str:
-    passages = "\n\n".join(f"[{n}] {text}" for n, text in enumerate(candidates, 1))
-    return USER.format(passages=passages, prefix=prefix or "(none)", sentence=sentence)
-
-
-# Stop 61: the same prompt asking for no reason. Only its last sentence differs.
-SHORT_REPLY = (
-    'Return JSON with keys "label" (one of the three) and "passage" (the number of the passage '
-    "that decides it, or 0). Give no reason."
-)
-
-
-def short_prompt(sentence: str, candidates: Sequence[str], prefix: str) -> str:
-    head, _ = user_prompt(sentence, candidates, prefix).rsplit("Return JSON", 1)
-    return head + SHORT_REPLY
-
-
-def prompt_key(user: str) -> str:
-    return hashlib.sha256(f"{SYSTEM}\n{user}".encode()).hexdigest()
-
-
-def extract_json(text: str) -> dict[str, Any]:
-    text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.MULTILINE).strip()
-    start, end = text.find("{"), text.rfind("}")
-    if start < 0 or end <= start:
-        raise ValueError("no JSON object in output")
-    parsed = json.loads(text[start : end + 1])
-    if not isinstance(parsed, dict):
-        raise ValueError("not a JSON object")  # noqa: TRY004
-    return parsed
-
-
-def parse_reply(text: str) -> dict[str, Any]:
-    """A judge reply as ``{label, passage, reason}``; ValueError when it is not one."""
-    reply = extract_json(text)
-    label = str(reply.get("label", "")).strip().lower().replace(" ", "_")
-    if label not in LABELS:
-        raise ValueError(f"label {label!r}")
-    try:
-        passage = int(reply.get("passage") or 0)
-    except (TypeError, ValueError):
-        passage = 0
-    return {"label": label, "passage": passage, "reason": str(reply.get("reason", ""))}
-
-
-RETRY = "Reply with ONLY the JSON object, with keys label, passage and reason."
+#
+# ``SYSTEM``, ``USER`` (stop 42), ``SHORT_REPLY`` (stop 61), ``RETRY``, ``PROMPT_SHA``,
+# ``user_prompt``, ``short_prompt``, ``prompt_key``, ``extract_json`` and ``parse_reply`` are
+# ``legal_rag_verifier.judge``'s, bound above: byte for byte the definitions that stood here.
 
 
 def ask(chat: Callable[[list[dict[str, str]]], dict[str, Any]], user: str) -> dict[str, Any]:
@@ -310,49 +255,18 @@ def gemini_chat(messages: list[dict[str, str]]) -> dict[str, Any]:
     return {"content": content, "ms": (time.perf_counter() - t0) * 1000, "tokens": None}
 
 
-CLOSE_THINK = re.compile(r"</(?:ifm\|)?think[a-z_]*>")
-
-
 def server_chat(
     url: str, model: str, sampling: Mapping[str, Any], template: Mapping[str, Any]
 ) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
     """A chat function against an SGLang server on Modal, with given sampling and template
-    arguments (``chat_template_kwargs``)."""
+    arguments (``chat_template_kwargs``): the package's ``OpenAIChat``, no key, timeout 1800 s.
 
-    def chat(messages: list[dict[str, str]]) -> dict[str, Any]:
-        # Some templates (K2 Horizon) reject an assistant turn without a reasoning field.
-        sent = [{**m, "reasoning_content": ""} if m["role"] == "assistant" else m for m in messages]
-        body = {
-            "model": model,
-            "messages": sent,
-            **sampling,
-            "chat_template_kwargs": dict(template),
-        }
-        request = urllib.request.Request(  # noqa: S310 - the Modal-local SGLang server
-            f"{url}/v1/chat/completions",
-            data=json.dumps(body).encode(),
-            method="POST",
-            headers={"Content-Type": "application/json"},
-        )
-        t0 = time.perf_counter()
-        with urllib.request.urlopen(request, timeout=1800) as response:  # noqa: S310
-            out = json.loads(response.read())
-        ms = (time.perf_counter() - t0) * 1000
-        message = out["choices"][0]["message"]
-        content = message.get("content") or ""
-        reasoning = message.get("reasoning_content") or ""
-        if not content.strip() and CLOSE_THINK.search(reasoning):
-            # K2 at low effort opens <ifm|think_faster> but closes </ifm|think>, so the parser
-            # leaves the answer inside the reasoning: take what follows the last close tag.
-            content = CLOSE_THINK.split(reasoning)[-1]
-        return {
-            "content": content,
-            "ms": ms,
-            "tokens": out.get("usage", {}).get("completion_tokens"),
-            "finish": out["choices"][0].get("finish_reason"),
-        }
-
-    return chat
+    It sends the request this function sent before stop 77 (one POST to
+    ``{url}/v1/chat/completions``; assistant turns carry ``"reasoning_content": ""``, which some
+    templates, K2 Horizon's, require) and returns the same ``{content, ms, tokens, finish}``,
+    with an answer left in the reasoning after ``CLOSE_THINK`` recovered (K2 at low effort opens
+    ``<ifm|think_faster>`` but closes ``</ifm|think>``). It does not retry."""
+    return _judge.OpenAIChat(url, model, sampling=sampling, template_kwargs=template, timeout=1800)
 
 
 def qwen_chat(url: str, effort: str, seed: int) -> Callable[[list[dict[str, str]]], dict[str, Any]]:
@@ -392,20 +306,8 @@ def judge_all(
 # ---------------------------------------------------------------------- scorers
 
 
-def one_hot(label: str, passage: int, n: int) -> list[NLIProbs]:
-    """A judge label as entailment-model output over ``n`` candidates. Supported: entailment 1
-    on its passage; contradicted: contradiction 1 there; otherwise neutral 1 everywhere. A
-    passage number out of range applies the label to every candidate."""
-    neutral = NLIProbs(0.0, 1.0, 0.0)
-    if label == "supported":
-        hit = NLIProbs(1.0, 0.0, 0.0)
-    elif label == "contradicted":
-        hit = NLIProbs(0.0, 0.0, 1.0)
-    else:
-        return [neutral] * n
-    if not 1 <= passage <= n:
-        return [hit] * n
-    return [hit if i == passage - 1 else neutral for i in range(n)]
+# ``one_hot`` (a judge label as entailment-model output) is ``legal_rag_verifier.judge``'s, bound
+# above.
 
 
 class RecordingScorer:
