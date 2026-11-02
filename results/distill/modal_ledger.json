@@ -10547,5 +10547,12 @@
   "seconds": 26.2,
   "usd": 0.0163,
   "note": "fresh2: 151 sentences"
+ },
+ {
+  "run": "stop78-attempt1",
+  "gpu": "L40S",
+  "seconds": 1617,
+  "usd": 1.0073,
+  "note": "live check server crash-looped: Modal function startup limit 300 s < SGLang CUDA-graph capture; 5 containers, no judge call"
  }
 ]

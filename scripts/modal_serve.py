@@ -7,6 +7,8 @@ Guards against runaway spend:
 - exactly one container (max_containers=1);
 - idle scale-down after 120 seconds (scaledown_window=120);
 - pre-cached weights on product-answer-checks-hf volume with HF_HUB_OFFLINE=1 (no downloads);
+- startup_timeout=1800: SGLang loads the weights and captures CUDA graphs for several minutes;
+  Modal's default function startup limit of 300 s killed the first launch;
 - the operator runs under a wall-clock limit (45 minutes, checked in modal_ledger) and stops the
   server immediately after the live check and smoke runs finish.
 """
@@ -48,6 +50,7 @@ secret = modal.Secret.from_dict({"LIVE_JUDGE_API_KEY": os.environ.get("LIVE_JUDG
     gpu="L40S",
     max_containers=1,
     scaledown_window=120,
+    startup_timeout=1800,
     secrets=[secret],
 )
 @modal.web_server(port=PORT, startup_timeout=1500)
