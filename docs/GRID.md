@@ -4536,3 +4536,49 @@ existing scripts' loaders.
 
 Out of scope: the 1B student judge, the notes prompt, any hosted preset, and any change to verdict or reason names
 or the trace.
+
+
+### Stop 77: results (2026-11-02)
+
+- **Commits** (local, not pushed): `b0c4082` method; `7034820` tests and code; `ee9b226` scripts; `849305f` docs;
+  `d3d04c3` review fixes.
+- **Tests first:** 5 new test files, written before the code and run once to see them fail (4 collection errors
+  on the missing module, and 4 failing warning tests), while the 426 existing tests passed.
+- **Final checks:** ruff, ruff format (Markdown code blocks included) and mypy clean; pytest **589 passed**, none
+  skipped. No existing test was edited: only the five new files differ under `tests/`.
+- **Replay** (`tests/test_judge_replay.py`, `full_data`; it ran locally, and skips where the results or corpus are
+  absent):
+  - every prompt the package sends is recorded (140 unique on the second test, 347 on the first, 0 unknown);
+  - no judge errors;
+  - the replay gives exactly 136/151 (8 false rollbacks, 60 caught; software 5/23 of 78, statutes 3/37 of 73) and
+    332/354 (7, 133; software 4/49 of 170, statutes 3/84 of 184).
+  - Pass rule: met.
+- **Hashes:** `SHORT_SHA` = `7748f874…1be149` and `PROMPT_SHA` = `72ce7d05…437b`, checked at import against the
+  literals, with `RETRY`'s hash added after review. A one-byte change to `SYSTEM`, `USER`, `SHORT_REPLY` or `RETRY`
+  fails a test.
+- **Zero dependencies:** a wheel built in a clean worktree at `849305f` passed `scripts/check_wheel.py` ("code only,
+  zero runtime dependencies"), with `judge.py` inside. `judge.py` imports the stdlib and the package only.
+  Rechecked at `d3d04c3` in a fresh worktree: OK, `judge.py` inside.
+- **The DeBERTa warning:** `SentenceNLIVerifier(...)` emits a `UserWarning` before importing torch, naming
+  `docs/VERDICT.md` and `legal_rag_verifier.judge`; one `pyproject.toml` ignore entry. After review, its wording says
+  the 58.3%–68.7% are two hand-graded tests (software and UK statutes), not "statute sentences" as the plan had it.
+- **Scripts:** `scripts/auditor_judge.py` takes the prompt constants, prompt functions, parsing, `one_hot` and
+  `STRICT_FIGURES` from the package under the same names, and `server_chat` returns an `OpenAIChat`.
+- **Deviation, accepted pending the H2 review:** `LiveJudge` and `LoopVerifier` (`scripts/live_loop.py`) and
+  `ask`/`judge_all` stay script code, because:
+  - the live judge gives up on the first network error with 0 attempts, where the package retries;
+  - its call record has another shape, read by `live_report.py` and `modal_distill.py`;
+  - `tests/test_judge_prefix.py` uses `LoopVerifier` as the independent reference for the live prefix.
+
+  So "one implementation" holds for the prompt, parsing, scoring and the HTTP client, not for these two classes.
+- **Deviation: `VERDICT.md` item 1 was updated, not item 2** as the plan says. Item 2 is the source turn at the cut.
+- **Review** (one read-only agent, the whole diff against both plans and this method). Two security findings, both
+  confirmed against 127.0.0.1 and fixed tests-first in `d3d04c3`:
+  - a key with a CR/LF, e.g. from a `.env` file, appeared in the error urllib raised;
+  - urllib followed 301/302/303 redirects and forwarded the `Authorization` header to the new host.
+
+  Also fixed: http(s) URLs only; malformed bodies or replies count as attempts instead of crashing; preset mappings
+  read-only; `Chat` and `CLOSE_THINK` out of `__all__`. Open, for the H2 review: the README's "Generate with
+  rollback" example still builds the DeBERTa head, which now warns.
+
+No spend. No release: 0.5.0, the push and the paid live check (phase 3) each wait for their go.
