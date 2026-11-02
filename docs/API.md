@@ -229,6 +229,12 @@ stays in the context (cached like any prefix) but never in the answer; with no n
 tokenizer via `transformers`, the `[sglang]` extra): each call resubmits `committed` as `input_ids` to `/generate`
 and records `meta_info.cached_tokens` as `prefix_cache_hit_tokens`. Constraints run one token per request through
 a server-side logit mask (server flag `--enable-custom-logit-processor`), then one plain request with the stops.
+The mask (`allow`, `ban`) is built on the client by `legal_rag_verifier.backends._sglang_mask`, which imports
+`torch` and `sglang`; the `[sglang]` extra installs neither, and `inject` needs neither. Without them,
+`processor()` raises an `ImportError` naming three options: install them (`pip install torch sglang`); build the
+mask string where they are installed, e.g. on the server, with `MaskProcessor().to_str()` and pass it as
+`SGLangBackend(url, tokenizer, model_id=…, eos=…, processor=…)` (constructor only: `connect()` has no
+`processor=`); or use `steering="inject"`.
 
 Trace: `backend, model, verifier{config, nli}, engine{…}, prompt_tokens, answer_tokens, sentences[{text,
 outcome emitted|refused, rollbacks, recovered_by allow|ban|inject|null, attempts[{verdict, steering, constraint,

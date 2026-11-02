@@ -31,6 +31,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Building `SentenceNLIVerifier` emits a `UserWarning`. The DeBERTa head did not improve answers:
   58.3%–68.7% on two hand-graded tests (software and UK statutes), vs 90.1%–93.8% for the LLM
   judge. See `docs/VERDICT.md`.
+- `SGLangBackend` raises an `ImportError` when steering `allow` or `ban` cannot build its logit
+  mask. It says what to do: install `torch` and `sglang` on the client (the `[sglang]` extra
+  installs neither), pass a mask built elsewhere as `processor=`, or use `steering="inject"`.
+  Before, a bare `ModuleNotFoundError` was raised mid-answer. The README and `docs/API.md` now
+  state the requirement.
 
 ### Evaluation
 - Stop 77, a free replay test (`tests/test_judge_replay.py`): a fake endpoint serves the recorded

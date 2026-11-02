@@ -10,7 +10,9 @@ Constraints are applied one token per request through a server-side logit mask
 (:mod:`legal_rag_verifier.backends._sglang_mask`; the server needs
 ``--enable-custom-logit-processor``), with the same semantics as the HF backend; the free
 continuation after the span is one plain request with the stop strings. Greedy (temperature 0).
-The client is stdlib HTTP; the tokenizer is the model's Hugging Face tokenizer.
+The client is stdlib HTTP; the tokenizer is the model's Hugging Face tokenizer. Building that mask
+needs torch and sglang in this process (the ``[sglang]`` extra installs neither); pass a prebuilt
+``processor=`` or use ``steering='inject'`` to do without them.
 """
 
 from __future__ import annotations
@@ -27,6 +29,15 @@ from legal_rag_verifier.engine import Allow, Ban, Constraint, Segment
 __all__ = ["SGLangBackend"]
 
 Post = Callable[[dict[str, Any]], dict[str, Any]]
+
+_MASK_NEEDS = (
+    "steering 'allow' and 'ban' send a logit mask built by "
+    "legal_rag_verifier.backends._sglang_mask, which needs torch and sglang installed where "
+    "this client runs; the [sglang] extra installs neither. Install them "
+    "(pip install torch sglang), or build the mask where they are installed with "
+    "MaskProcessor().to_str() and pass it as SGLangBackend(..., processor=...), or use "
+    "steering='inject', which needs neither."
+)
 
 
 class SGLangBackend(TokenizerMixin):
@@ -82,8 +93,19 @@ class SGLangBackend(TokenizerMixin):
         return out
 
     def processor(self) -> str:
+        """The serialized logit mask sent with constrained requests (``steering`` allow/ban).
+
+        Returns the ``processor=`` given to the constructor, else builds it from
+        :mod:`legal_rag_verifier.backends._sglang_mask`, which needs torch and sglang here;
+        raises :class:`ImportError` saying so when either is missing.
+        """
         if self._processor is None:
-            from legal_rag_verifier.backends._sglang_mask import MaskProcessor  # noqa: PLC0415
+            try:
+                from legal_rag_verifier.backends._sglang_mask import (  # noqa: PLC0415
+                    MaskProcessor,
+                )
+            except ImportError as exc:
+                raise ImportError(_MASK_NEEDS) from exc
 
             self._processor = str(MaskProcessor().to_str())
         return self._processor

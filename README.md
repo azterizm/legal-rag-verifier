@@ -48,7 +48,7 @@ question before it reaches the model.
 ```bash
 pip install legal-rag-verifier            # claim check only: no runtime dependencies
 pip install "legal-rag-verifier[nli]"     # + DeBERTa-v3 NLI head (torch, transformers)
-pip install "legal-rag-verifier[sglang]"  # + client for an SGLang server (tokenizer only)
+pip install "legal-rag-verifier[sglang]"  # + SGLang client for inject (allow, ban: + torch, sglang)
 pip install "legal-rag-verifier[hf]"      # + in-process Hugging Face generation
 ```
 
@@ -108,7 +108,11 @@ refusal for that point and moves on. Retry modes:
   turn; `inject_template`, which may restate the question with `{query}`) and regenerate. The
   provision stays in the context and never enters the answer.
 
-The SGLang server needs `--enable-custom-logit-processor` for `allow` and `ban`. Full API:
+The SGLang server needs `--enable-custom-logit-processor` for `allow` and `ban`. They also need
+`torch` and `sglang` on the client, which the `[sglang]` extra does not install; without them the
+first `allow` or `ban` retry raises an `ImportError` that says what to do: install them, build the
+mask where they are installed (`MaskProcessor().to_str()`) and pass it as
+`SGLangBackend(..., processor=...)`, or use `inject`, which needs neither. Full API:
 [`docs/API.md`](https://github.com/azterizm/legal-rag-verifier/blob/main/docs/API.md).
 
 ## Use the judge
