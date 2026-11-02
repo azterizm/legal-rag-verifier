@@ -6,6 +6,7 @@ Paid run: run only on a go. Run as:
 Guards against runaway spend:
 - exactly one container (max_containers=1);
 - idle scale-down after 120 seconds (scaledown_window=120);
+- pre-cached weights on product-answer-checks-hf volume with HF_HUB_OFFLINE=1 (no downloads);
 - the operator runs under a wall-clock limit (45 minutes, checked in modal_ledger) and stops the
   server immediately after the live check and smoke runs finish.
 """
@@ -34,8 +35,10 @@ if modal.is_local():
         pass
 
 app = modal.App("legal-rag-verifier-live78")
-image = modal.Image.from_registry("lmsysorg/sglang:v0.5.21").env({"HF_HOME": "/hf"})
-weights = modal.Volume.from_name("legal-rag-verifier-hf")
+image = modal.Image.from_registry("lmsysorg/sglang:v0.5.21").env(
+    {"HF_HOME": "/hf", "HF_HUB_OFFLINE": "1"}
+)
+weights = modal.Volume.from_name("product-answer-checks-hf")
 secret = modal.Secret.from_dict({"LIVE_JUDGE_API_KEY": os.environ.get("LIVE_JUDGE_API_KEY", "")})
 
 

@@ -4590,6 +4590,7 @@ Aim: reproduce the measured judge on a real server, through the released 0.5.0 p
 
 Setup:
 - The server: Modal app `legal-rag-verifier-live78` (`scripts/modal_serve.py`), serving `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at `1b9d56b4` on SGLang 0.5.21 with one L40S, idle scale-down 120 s, max 1 container, behind an API key (`LIVE_JUDGE_API_KEY`).
+- Weights: the `product-answer-checks-hf` volume, which holds revision `1b9d56b4`; the `legal-rag-verifier-hf` volume no longer exists in this workspace. Offline (`HF_HUB_OFFLINE=1`): no download at start. Amended 2026-11-02 after a launch that failed before any container started (no spend).
 - The client: `scripts/live_check.py` calling the package's `JudgedVerifier` with the default preset (`PRESETS["qwen27-ar4"]`, `STRICT_FIGURES`) over fresh2's 151 graded sentences. The grades are reused from stop 61. Calls are sent one at a time from this Mac to Modal over HTTPS with the API key.
 - Before the run: 20 sequential `GET /v1/models` round trips to measure client-to-server baseline round-trip latency.
 
