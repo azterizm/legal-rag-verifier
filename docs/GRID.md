@@ -4320,3 +4320,219 @@ differed on 4. The test 1 reading rule for 3t, as information: false (9 wrong ag
 
 Spend: Modal $0.38 (smoke $0.09, the lost attempt about $0.11, the battery $0.18).
 
+
+## Stop 77: the judge as a package module (method fixed 2026-11-02, before the code)
+
+The README's judge figures come from code in `scripts/` (`auditor_judge.py`, `live_loop.py`, `fresh_arms.py`),
+which the wheel does not ship. This stop moves the judge into the package as `legal_rag_verifier.judge`, with the
+measured prompt fixed, and adds a warning on the DeBERTa head. Plan: `docs/PLAN-judge-1-module.md` (phase 1);
+tests: `docs/PLAN-judge-3-testing.md`. CPU only, no spend. The release (0.5.0) and the paid live check each wait
+for their own go.
+
+### The measured configuration (step 0)
+
+| Item | Value | Source |
+|---|---|---|
+| Model | `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` | `scripts/modal_distill.py:244-247` (`QUANT["qwen27-ar4"]`) |
+| Revision | `1b9d56b428e9f841d7ad566f87660b5f47553c97` | The same place. Also recorded per answer, in the `model` field of `results/fresh2-short-live/answers.jsonl` (stop 65, where one server was generator and judge) |
+| Quantisation | W4A16 AutoRound in GPTQ format, served by SGLang's `gptq_marlin` kernel | `GRID.md` ~1788. The code passes no `--quantization` flag; the format comes from the model repo |
+| Server | SGLang 0.5.21 (`lmsysorg/sglang:v0.5.21`), args `--reasoning-parser qwen3 --context-length 65536 --mem-fraction-static 0.85`, one L40S | `modal_distill.py:23`, `:195-196`, `:305`. The live runs add `--enable-custom-logit-processor` for the generator's steering, not the judge (`:1418`) |
+| Sampling | temperature 0.7, top_p 0.8, top_k 20, min_p 0.0, presence_penalty 1.5, max_tokens 1024, seed 0, all sent explicitly | `JUDGES["qwen27-nothink"]`, `modal_distill.py:192-208`, copied by `qwen27-ar4` at `:280-281` |
+| Chat template | `{"enable_thinking": False}`, no effort | `modal_distill.py:207` |
+| Request | One POST to `/v1/chat/completions` with `chat_template_kwargs`, timeout 1800 s. `content` is recovered from `reasoning_content` after the closing think tag when empty. Resent assistant turns carry `"reasoning_content": ""` | `scripts/auditor_judge.py:316-355` (`server_chat`) |
+| Prompt | `SYSTEM` and `USER` (stop 42) with `SHORT_REPLY` (stop 61) | See below |
+| Retry and give-up | At most 3 requests, then the label `"error"` | See below |
+| Config | `STRICT_FIGURES` = `VerifierConfig(neutral_policy="strict", neutral_with_grounded_claim="rollback", ungrounded_figure="judge")` | `auditor_judge.py:81-83` |
+| Answer so far, post-hoc | All earlier sentences of the answer, rolled back or not, joined by `" "`; `(none)` when empty | `scripts/fresh_eval.py:64-77`, `auditor_judge.py:124` |
+| Answer so far, live | Only the emitted sentences, joined by `" "`, reset by the caller at the start of each answer | `scripts/live_loop.py:195-205`, `:263` |
+
+The prompt:
+
+- The short prompt renders the stop 42 prompt with `user_prompt` (passages as `[n] text` joined by blank lines),
+  cuts it at the last "Return JSON" and appends `SHORT_REPLY` (`auditor_judge.py:122-136`).
+- Template hash `SHORT_SHA` = sha256(`SYSTEM` + `USER` with the reply sentence replaced) =
+  `7748f874db902456700c3ff64c1b4e37621e951ed0c3c65495b8b3c5911be149` (`scripts/fresh_arms.py:137`). It equals
+  `prompt_sha256` in both `results/fresh_arms/short.json` and `results/fresh2_arms/short.json`.
+- `PROMPT_SHA` = sha256(`SYSTEM` + `USER`) = `72ce7d0514311749ccdd1d9f4430f5beea7d8757eeb9bd73be16fe9eae0e437b`
+  (`auditor_judge.py:116`).
+- The per-prompt label key is a different hash: `prompt_key` = sha256(`SYSTEM` + `"\n"` + rendered user)
+  (`auditor_judge.py:139-140`).
+
+The retry and the give-up:
+
+- `ask` makes at most 3 requests. After a reply that does not parse, it re-asks with [system, user, last reply,
+  `RETRY`] (`auditor_judge.py:167-192`).
+- `RETRY` asks for "label, passage and reason" even in short mode. It is kept byte for byte.
+- After 3 failures the label is `"error"`, scored not stated: neutral on every candidate, which is a rollback
+  under `STRICT_FIGURES`.
+- `one_hot` (`auditor_judge.py:395-408`): a passage number out of range applies the label to every candidate.
+- No recorded label ever took the retry path. Every row in both label files (360 and 153) and all 135 live judge
+  calls of stop 65 (`results/fresh2-short-live/traces.jsonl`) parsed at the first attempt. So this path is the
+  code's rule, not an observed behaviour.
+
+### Figures and the configuration each belongs to
+
+The arm is `"short | figures to the judge"` unless noted. Accuracy = (right − false rollbacks + caught) / (right +
+wrong), computed at `auditor_judge.py:625`.
+
+| Figure | What it measures | Source |
+|---|---|---|
+| **93.8 %** | First fresh test (stop 61): 332/354; 7 false rollbacks, 133 caught. Software 4 / 49 of 170; statutes 3 / 84 of 184 | `results/fresh_arms/short.json`; domain cells in `results/fresh_arms/small.json`, arm "Qwen 27B 4-bit" |
+| **90.1 %** | Second fresh test (stop 61): 136/151; 8 false rollbacks, 60 caught. Software 5 / 23 of 78 (89.7 %); statutes 3 / 37 of 73 (90.4 %) | `results/fresh2_arms/short.json` and `small.json` |
+| **0.54 s per clause at p50** | 537 ms, p95 1245 ms. First test only: a separate timing run of 40 prompts sent one at a time. The scored labels were sent 16 at a time (`modal_distill.py:28`, `:1575`). Live: 0.56 s per judge call (stop 65) | `results/fresh_arms/short.json` `time["seq-short"]`; live, `GRID.md` ~2662 |
+| **With source: 88.9 %** | The limit to carry next to every figure. On the second test's 72 sentences written with the source, this judge scores 88.9 % against 94.4 % for no auditor. Stop 56 first found the same gap with other judges | `docs/measurements.md` ~1243 (stop 73 table, row "Qwen 27B judge (stop 61)"); raw `results/fresh2_arms/consens.json`, arms `judge` and `no auditor`, cell `source answers` (GRID stop 73, ~3658); stop 56, `GRID.md` ~1874-1878 |
+| **Stop 68, closed-book loop** | The 7B's answers holding a wrong sentence fell from 198 to 28 of 240, with 7.4 % refusals. This was the `turn` steering arm (the source written as a user turn), not the engine's default steering | `results/live68_report.json`; `GRID.md` ~3193-3207 |
+| **Stop 70, source in the prompt** | 25 to 13 of 240, Holm p = 0.045, `turn` arm. The default (`ban`) arm was not better (16/240, Holm p 0.078) | `results/live70_report.json`; `GRID.md` ~3360-3378 |
+
+- **Seed 0 does not make labels repeatable.** The scored requests ran 16 at a time at temperature 0.7. Stop 48
+  found 14 of 323 Qwen 27B labels changed on a second sample of the same prompt (`GRID.md` ~1271-1272, restated
+  at ~1719 and ~2367). That was the FP8 model, before stop 55's 4-bit model; no repeat was measured on the 4-bit.
+- The figures the plan calls "the stop 47 sampling" (`docs/PLAN-judge-1-module.md:32`) are
+  `JUDGES["qwen27-nothink"]`. Stop 47's headline Qwen arm (87.2 %) was `qwen27-low` with thinking on, and stop 47
+  never ran the 4-bit model.
+- The phrase "the configuration that stands" is in `docs/measurements.md:1090` (stop 65), not in stop 65's GRID
+  text.
+
+### Step 0 check: the package path reproduces every recorded prompt
+
+Facts from a read-only scratch run, made before any code. The scripts are not committed.
+
+- **Second test:**
+  - A `check_text` run (`STRICT_FIGURES`; prefix = all earlier sentences of the answer, rolled back or not;
+    `query` = the row's) sends 141 prompts with 140 unique keys. All are in
+    `results/fresh2/labels/qwen27-ar4.short.jsonl` (153 rows); 0 are unknown.
+  - All 151 graded units get a label.
+  - `requests("short")` recorded a claim-check-off prompt per held sentence; `check_text` (`STRICT_FIGURES`) sends one
+    only for figure-only failures: 13 keys unsent, 153 − 140 and 360 − 347 (`scripts/fresh_arms.py:172, 179-180, 205`).
+  - The segmenter gives exactly the graded sentences on all 80 answers.
+- **First test:**
+  - 347 of 347 prompts are recorded, of 360 recorded rows.
+  - On one answer, `fl-02:closed`, the stop 47 grading sheet splits list numbers off their items
+    (`fresh_eval.py:38-45`). Feeding those graded parts through `check_sentence` sends 8 keys that are not
+    recorded.
+  - So both replays go through `check_text` on the answers' own sentences. Grades come from
+    `fresh_eval.merged_grades` on the merged units.
+- **Both tests:** the replayed verdicts give exactly 136/151 (8, 60) and 332/354 (7, 133), and the domain cells
+  above.
+- **The prefix rule matters:** with only the emitted sentences as prefix, software matches fall to 56 of 80 on the
+  second test and 139 of 172 on the first.
+
+### Decisions
+
+Each awaits the H1 review.
+
+1. **Names:**
+   - `legal_rag_verifier.judge`, `OpenAIChat`, `Judge`, `JudgedVerifier` and `PRESETS`, recorded in `docs/API.md`
+     §5 when the docs are written.
+   - One preset, `"qwen27-ar4"`, the configuration in the table. Its name is the one used in `modal_distill.py`
+     and in the label file names.
+   - No FP8 preset. Stop 55's FP8 model matched on 148 of 153 clauses but is a different configuration.
+2. **Trace:**
+   - No trace change. The judge keeps its own call log, read from `JudgedVerifier`.
+   - One record per judge call: `sha` (the `prompt_key`), `label` (raw, so `"error"` is kept), `passage`,
+     `attempts`, `ms`, `tokens`, `sentence` (0-based index of the sentence in the answer) and `preset` (the preset
+     name, or `None` for a judge built by hand, which is unmeasured).
+   - On a give-up, `error` holds the exception's class name only.
+3. **Failures:**
+   - One counter, at most 3 attempts in all, shared by replies that do not parse and by transport failures.
+   - Transport failures are a timeout, a URL or HTTP error, a connection reset, a non-JSON body, or a body with
+     no choices.
+   - A transport failure re-sends the same messages; a reply that does not parse is re-asked with `RETRY`.
+   - After the third failure the label is `"error"`, scored not stated.
+   - This joins the two measured paths, which differ:
+     - post-hoc `judge_all` retried a network error up to 3 times, each a full `ask`
+       (`auditor_judge.py:365-389`);
+     - live `LiveJudge` gave up at once, with 0 attempts (`live_loop.py:168-184`).
+   - Neither path was hit in the recorded runs.
+   - Limit to state in the docs: a judge that cannot be reached scores every sentence not stated, so
+     `STRICT_FIGURES` rolls them all back (the stop 70 fault, `GRID.md` ~3321-3330).
+4. **Prefix:**
+   - `JudgedVerifier.check_text` builds the post-hoc prefix (all earlier sentences) and starts a fresh call log.
+   - `check_sentence`, the engine's path, uses the emitted sentences.
+   - `reset()` clears them and the call log. It is called by the caller between answers, as `live_loop.py` does.
+     The engine has no hook for it, and adding one would change the engine's API.
+   - Since the base `check_text` routes through `check_sentence` (`src/legal_rag_verifier/verifier.py` ~257-263),
+     `JudgedVerifier` must keep the two paths apart.
+5. **One documented command:** `Judge.from_preset(name, base_url, *, api_key_env=None)`. A classmethod, not a new
+   top-level name. A judge built this way records its preset name.
+6. **Scripts:**
+   - `scripts/auditor_judge.py` and `scripts/live_loop.py` import the shared pieces from the package, under the
+     same names, because 26 scripts and 6 test files import them.
+   - Pass rule: every existing test passes unedited, or the stop halts.
+7. **The DeBERTa warning:**
+   - `SentenceNLIVerifier(...)` emits a `UserWarning` that names `docs/VERDICT.md` and `legal_rag_verifier.judge`.
+   - `pyproject.toml` gets one `ignore` entry matching only that message, so `filterwarnings = ["error"]` keeps
+     working. A dedicated test checks the warning with `pytest.warns`.
+
+### Interface
+
+```python
+# src/legal_rag_verifier/judge.py — stdlib only (json, urllib, http.client, hashlib, os, re, time, dataclasses)
+SYSTEM: str; USER: str; SHORT_REPLY: str; RETRY: str      # byte-identical to scripts/auditor_judge.py
+LABELS = ("supported", "contradicted", "not_stated")
+PROMPT_SHA: str  # sha256(SYSTEM + USER)
+SHORT_SHA: str   # == "7748f874db902456700c3ff64c1b4e37621e951ed0c3c65495b8b3c5911be149"
+def user_prompt(sentence, candidates, prefix) -> str
+def short_prompt(sentence, candidates, prefix) -> str
+def prompt_key(user) -> str                                # sha256(SYSTEM + "\n" + user)
+def extract_json(text) -> dict; def parse_reply(text) -> dict
+def one_hot(label, passage, n) -> list[NLIProbs]
+STRICT_FIGURES: VerifierConfig
+
+class OpenAIChat:   # one POST to {base_url}/v1/chat/completions
+    def __init__(self, base_url, model, *, api_key_env=None, sampling=None, template_kwargs=None, timeout=1800.0): ...
+    def __call__(self, messages) -> dict   # {"content", "ms", "tokens", "finish"}
+    # key read from os.environ[api_key_env] at call time; "Authorization: Bearer" only when set;
+    # never in repr, logs, call records or exception text
+
+class Judge:        # implements NLIScorer
+    model_id: str; prefix: str; sentence: int | None; preset: str | None; calls: list[dict]
+    def __init__(self, chat, *, reply="short"): ...
+    @classmethod
+    def from_preset(cls, name, base_url, *, api_key_env=None) -> "Judge": ...
+    def score(self, premises, hypothesis) -> list[NLIProbs]
+
+class JudgedVerifier(Verifier):
+    def __init__(self, judge, config=STRICT_FIGURES): ...
+    # check_text: prefix = all earlier sentences of the text (post-hoc); starts a fresh call log
+    # check_sentence (engine path): prefix = sentences emitted so far; reset() clears them and the call log
+    def reset(self) -> None: ...
+    @property
+    def calls(self) -> list[dict]: ...
+
+@dataclass(frozen=True) class Preset: model, revision, quantisation, server, sampling, template_kwargs,
+    reply, prompt_sha256, figure, measurements   # link into docs/measurements.md
+PRESETS: dict[str, Preset]  # {"qwen27-ar4": ...}, values as the table above
+```
+
+### Pass rules for the free tests (written first, each seen failing)
+
+Based on the "Free tests" table of `docs/PLAN-judge-3-testing.md`, with the rules made exact.
+
+| Test | Pass rule |
+|---|---|
+| Prompt bytes and hashes | `SYSTEM`, `USER`, `SHORT_REPLY` and `RETRY` equal the script's bytes. `SHORT_SHA` and `PROMPT_SHA` equal the values above. A one-byte change to any constant fails a test |
+| Request body | Checked against a fake server built on `FakeServer` in `tests/test_sglang_backend.py`: the path, the model, the system and user messages, the sampling, `chat_template_kwargs`, and the `Authorization` header only when a key is set |
+| Reply parsing | Plain JSON, fenced JSON, JSON after a reasoning block, an answer left in `reasoning_content`, and a bad label |
+| Retries | A reply that does not parse is asked again with `RETRY`, at most 3 attempts in all, then scored not stated |
+| Scoring | `supported` and `contradicted` land on the named passage. A passage number out of range applies to every candidate, and `not_stated` is neutral everywhere |
+| Prefix | Post-hoc (`check_text`), each sentence's prompt carries all the sentences before it. Live (`check_sentence`), only the emitted sentences, as `LoopVerifier`; `reset()` clears them |
+| Secrets | The key appears in no repr, call record, trace, log line or exception text |
+| Failure | Three failures of any mix give label `"error"`, `attempts` 3, scored not stated. A success after failures reports the attempts used |
+| Replay | `tests/test_judge_replay.py`, marked `full_data`, skips when any input below is absent. A fake endpoint serves recorded labels by `prompt_key`; any unknown key fails the test. Exact counts: 136/151 (8, 60) and the two domain cells; 332/354 (7, 133) and the two domain cells |
+| DeBERTa warning | `SentenceNLIVerifier(...)` warns with a `UserWarning` naming `docs/VERDICT.md` and `legal_rag_verifier.judge` |
+| Scripts | Every existing test passes unedited, including `tests/test_auditor_judge.py` and `tests/test_live_loop.py` |
+| Zero dependencies | `scripts/check_wheel.py` passes on a wheel built in a clean worktree (zero runtime dependencies) |
+
+The replay's inputs, for each set:
+
+- `results/<set>/answers.jsonl`, `key.json`, `grades.csv` and `labels/qwen27-ar4.short.jsonl`;
+- `batteries/<set>/software.jsonl` and `statutes.jsonl`;
+- the statute files under `data/uk/`;
+- `enrichment/gemini-3.8-flash-high/`.
+
+The verifier under test is the package's `JudgedVerifier`. Rows, premises and grades may be loaded with the
+existing scripts' loaders.
+
+Out of scope: the 1B student judge, the notes prompt, any hosted preset, and any change to verdict or reason names
+or the trace.
