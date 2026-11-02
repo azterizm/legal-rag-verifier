@@ -4582,3 +4582,23 @@ or the trace.
   rollback" example still builds the DeBERTa head, which now warns.
 
 No spend. No release: 0.5.0, the push and the paid live check (phase 3) each wait for their go.
+
+
+## Stop 78: the live check (method fixed 2026-11-02, before any run)
+
+Aim: reproduce the measured judge on a real server, through the released 0.5.0 package; no new evidence.
+
+Setup:
+- The server: Modal app `legal-rag-verifier-live78` (`scripts/modal_serve.py`), serving `Vishva007/Qwen3.8-27B-W4A16-AutoRound-GPTQ` at `1b9d56b4` on SGLang 0.5.21 with one L40S, idle scale-down 120 s, max 1 container, behind an API key (`LIVE_JUDGE_API_KEY`).
+- The client: `scripts/live_check.py` calling the package's `JudgedVerifier` with the default preset (`PRESETS["qwen27-ar4"]`, `STRICT_FIGURES`) over fresh2's 151 graded sentences. The grades are reused from stop 61. Calls are sent one at a time from this Mac to Modal over HTTPS with the API key.
+- Before the run: 20 sequential `GET /v1/models` round trips to measure client-to-server baseline round-trip latency.
+
+Rules:
+- **A1 accuracy:** correct / 151 by `_cell` in [87.1 %, 93.1 %], i.e. 132 to 140 correct (stop 61/replay: 136).
+- **A2 validity:** the run counts only if fewer than 5 % of judge calls end in `error` after their retries.
+- **A3 time:** server-side p50 = (p50 of client time per call) − (p50 of the 20 `/v1/models` round trips) at most 0.81 s (1.5 × 0.54 s, stop 61's p50 measured inside the container). Client p50 and p95 are reported as they are.
+- **Reported, no threshold:** label agreement with the recorded labels (sampling at temperature 0.7 varies, stop 69), false rollbacks and caught, per-domain cells, errors.
+- **Spend:** `modal_ledger.check_stage("stop78", 5.0, "L40S", 2700)` before the server starts; the server runs under a 45-minute wall-clock limit and is stopped right after the runs; the time is recorded in the ledger.
+- **Same server:** answer-check-mcp's live smoke (its own plan and pass rule) runs on this server after the live check.
+- **What leaves the machine:** fresh2's prompts (questions' sentences and source passages); no grade or label.
+
