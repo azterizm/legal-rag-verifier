@@ -10,13 +10,16 @@
 
 ## Results
 
-240 UK law questions, Qwen 2.5 7B answering, a Qwen 27B judge. Answers containing at least one
-wrong sentence:
+Qwen 2.5 7B answered 240 UK law questions. A larger model, Qwen 27B, was the judge: it checked
+each sentence the 7B wrote. The table counts the 7B's answers that held at least one wrong sentence.
 
-| | No check | With the verifier | Refused |
+| How the 7B answered | Without the verifier | With the verifier | Questions refused with the verifier |
 |---|---|---|---|
-| Answering from its own knowledge | 198 | 28 | 7 % |
-| Source documents in the prompt | 25 | 13 | 4 % |
+| From its own knowledge | 198 | 28 | 7 % |
+| With the source documents in the prompt | 25 | 13 | 4 % |
+
+With the 27B both answering from its own knowledge and judging, answers holding a wrong sentence
+fell from 132 to 23.
 
 On Claude Opus 4.6, with Gemini 3.8 Flash checking, rewriting a rejected sentence instead of
 deleting it kept 71 of the 80 correct sentences that deleting lost, for one more wrong sentence
