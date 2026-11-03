@@ -1,8 +1,9 @@
 # Plan, phase 3 of 3: testing the judge module (this repository's part)
 
-Status: written 2026-11-01. The free tests are written and green (stop 77); the live check awaits its go. Phase 1
-is `docs/PLAN-judge-1-module.md`. The MCP server's tests are in `answer-check-mcp/docs/PLAN-judge-3-testing.md`,
-and its live smoke runs during the live check below, at no extra spend.
+Status: written 2026-11-01. The free tests are written and green (stop 77); the live check ran 2026-11-02 as
+stop 78, option A, PASS (see `docs/GRID.md`). Phase 1 is `docs/PLAN-judge-1-module.md`. The MCP server's tests are
+in `answer-check-mcp/docs/PLAN-judge-3-testing.md`, and its live smoke runs during the live check below, at no
+extra spend.
 
 Two kinds of test. The free ones run on every push and need no model. The live check needs a model and costs money,
 so it runs once, with your go and a hard spend cap.
@@ -72,5 +73,5 @@ GPU-free preset is wanted.
 1. All free tests green, including the replay test, before the release in phase 1, step 7.
 2. The live check after the release, against the installed 0.5.0 wheel from PyPI in a clean environment, with your
    go on the option and the cap.
-3. The result goes in `measurements.md` as stop 77 and in the `CHANGELOG`'s Evaluation section, including a
-   failure if it fails.
+3. The result goes in `measurements.md` as stop 78 (the number became 78 because 77 was the module stop) and in
+   the `CHANGELOG`'s Evaluation section, including a failure if it fails.

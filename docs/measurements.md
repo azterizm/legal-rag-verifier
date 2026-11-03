@@ -1409,3 +1409,18 @@ With the 1B judge after it (arm 3t, one L40S, Modal $0.38 with a smoke run and a
 Flash: right removed 108 → 87, empty 28 → 19, none wrong. The 1B removes 6 of the 9 wrong sentences totals let
 through. Its verdict differed between the two runs on 4 of 306 sentences it saw with the same input.
 
+
+## The judge live, through the released package (stop 78, 2026-11-02; method in `docs/GRID.md`)
+
+Aim: reproduce the measured judge on a real server, through the released 0.5.0 package; no new evidence.
+Default preset (`PRESETS["qwen27-ar4"]`, `STRICT_FIGURES`) on Modal (one L40S, SGLang 0.5.21), over the 151
+graded sentences of the second fresh test.
+
+| Run | Accuracy | Correct | False rollbacks | Caught | Time per call, p50 |
+|---|---|---|---|---|---|
+| Stop 61 (research, inside container) | 90.1 % | 136 / 151 | 8 | 60 | 0.54 s |
+| Stop 78 (released package, live) | 91.4 % | 138 / 151 | 8 | 62 | 0.58 s server-side (1.28 s client) |
+
+What it does not show: one run; the same 151 sentences; it reproduces, it adds no new evidence. Raw:
+`results/fresh2-live78/summary.json`, `results/fresh2-live78/calls.jsonl`.
+

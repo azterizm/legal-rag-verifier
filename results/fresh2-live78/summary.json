@@ -1,0 +1,97 @@
+{
+  "calls_total": 141,
+  "calls_unique": 140,
+  "rules": {
+    "A1": {
+      "name": "A1 accuracy",
+      "passed": true,
+      "correct": 138,
+      "units": 151,
+      "accuracy_pct": 91.4,
+      "threshold": "132 to 140 [87.1 %, 93.1 %]"
+    },
+    "A2": {
+      "name": "A2 validity",
+      "passed": true,
+      "error_calls": 0,
+      "total_calls": 141,
+      "error_rate_pct": 0.0,
+      "threshold": "< 5 % errors"
+    },
+    "A3": {
+      "name": "A3 time",
+      "passed": true,
+      "server_side_p50_s": 0.5761,
+      "client_p50_s": 1.2841,
+      "client_p95_s": 1.6307,
+      "models_p50_s": 0.708,
+      "threshold": "<= 0.81 s"
+    }
+  },
+  "cells": {
+    "total": {
+      "units": 151,
+      "correct": 138,
+      "false_rollbacks": 8,
+      "caught": 62
+    },
+    "software": {
+      "units": 78,
+      "correct": 71,
+      "false_rollbacks": 5,
+      "caught": 24
+    },
+    "statutes": {
+      "units": 73,
+      "correct": 67,
+      "false_rollbacks": 3,
+      "caught": 38
+    }
+  },
+  "agreement": {
+    "matched": 140,
+    "same_label": 131,
+    "different_label": 9,
+    "not_found": 0,
+    "unique_prompts": {
+      "matched": 140,
+      "same_label": 131,
+      "different_label": 9,
+      "not_found": 0
+    },
+    "all_calls": {
+      "matched": 141,
+      "same_label": 132,
+      "different_label": 9,
+      "not_found": 0
+    }
+  },
+  "timing": {
+    "models_roundtrips_ms": [
+      911.59,
+      815.86,
+      783.02,
+      811.1,
+      675.93,
+      698.24,
+      786.05,
+      748.09,
+      717.8,
+      771.24,
+      646.55,
+      734.64,
+      664.51,
+      673.93,
+      679.69,
+      793.86,
+      695.26,
+      660.62,
+      663.91,
+      695.5
+    ],
+    "client_p50_ms": 1284.09,
+    "client_p95_ms": 1630.75,
+    "models_p50_ms": 708.02,
+    "server_side_p50_s": 0.5761
+  }
+}

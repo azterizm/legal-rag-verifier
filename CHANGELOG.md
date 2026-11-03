@@ -6,6 +6,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Evaluation
+- Stop 78, the live check against a real Modal server (Qwen 3.8 27B 4-bit, L40S) through the released
+  0.5.0 package: PASS on all three rules. 91.4% accuracy (138/151 correct, 8 false rollbacks, 62 caught;
+  stop 61 was 136/151), 0 errors in 141 calls, server-side p50 0.58 s (client p50 1.28 s from Pakistan to
+  Modal us-east; baseline round trip 0.71 s). Spend $1.41. answer-check-mcp live smoke on the same server: PASS.
+
 ## [0.5.0] - 2026-11-02
 
 ### Added

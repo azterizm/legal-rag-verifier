@@ -4603,3 +4603,43 @@ Rules:
 - **Same server:** answer-check-mcp's live smoke (its own plan and pass rule) runs on this server after the live check.
 - **What leaves the machine:** fresh2's prompts (questions' sentences and source passages); no grade or label.
 
+
+### Stop 78: results (2026-11-02)
+
+Aim met: the live check reproduces the measured judge on a real server through the released package, PASS on all
+three rules.
+
+- **Rules:**
+  - **A1 accuracy: PASS.** 138 / 151 correct (91.4 %, threshold 132 to 140 [87.1 %, 93.1 %]).
+  - **A2 validity: PASS.** 0 error calls out of 141 (0.0 %, threshold < 5 %).
+  - **A3 time: PASS.** Server-side p50 = 0.576 s (threshold <= 0.81 s).
+- **Cells vs stop 61 / replay:**
+  - Total: 138 / 151 (8 false rollbacks, 62 caught) vs stop 61/replay's 136 / 151 (8 false rollbacks, 60 caught).
+  - Software: 71 / 78 (5 false rollbacks, 24 caught) vs stop 61/replay's 70 / 78 (5 false rollbacks, 23 caught).
+  - Statutes: 67 / 73 (3 false rollbacks, 38 caught) vs stop 61/replay's 66 / 73 (3 false rollbacks, 37 caught).
+- **Agreement:** 131 of 140 unique prompts agree with the recorded labels (9 differ, run-to-run sampling
+  variation at temperature 0.7, as in stop 69). Across all 141 calls, 132 agree, 9 differ.
+- **Timing:** calls ran from a Mac in Pakistan to Modal us-east over HTTPS.
+  - Client time per call: p50 = 1.284 s (1284.1 ms), p95 = 1.631 s (1630.8 ms).
+  - Baseline network round trip (20 sequential `GET /v1/models`): p50 = 0.708 s (708.0 ms).
+  - Server-side p50: 1.284 s − 0.708 s = 0.576 s, compared to stop 61's 0.54 s measured inside the container.
+- **Errors:** 0 across all 141 calls (140 unique prompts, 0 failed attempts).
+- **Attempts and spend:**
+  - Attempt 1 (app `ap-Bp43Pj1aSs5LtpKjAAkD6T`): the server crash-looped. Modal's default 300 s function startup
+    limit killed each container while SGLang captured CUDA graphs; 5 containers, about 27 min of L40S, $1.01, no
+    judge call. Fixed in commit `f662c6f` (`startup_timeout=1800`; the SGLang command unchanged). Before it, a launch
+    failed before any container started because the `legal-rag-verifier-hf` volume no longer exists (commit
+    `1ed3e93`), no spend.
+  - Attempt 2 (app `ap-sZYtT7wgJS7CvmQFtthR5L`): ready after 406 s; live check then `answer-check-mcp`'s smoke;
+    server stopped right after; 652 s wall, $0.41.
+  - Stop 78 total: $1.41 of the $5 cap; ledger total $48.53.
+- **Smoke test:** `answer-check-mcp`'s live smoke on the same server (its git main `65e7260`, launched in a clean
+  `uvx` environment, default preset, key via `--judge-api-key-env`): PASS.
+  - Wrong figure ("The Pro plan costs $25 a month."): unsupported, judge label contradicted, $20 suggested.
+  - Wrong prose ("Refunds have no time limit."): unsupported, contradicted.
+  - Correct two-sentence answer passed: both supported; `measured: true`; 4 judge calls, 0 failed; about 1.2–1.3 s
+    per call from the client.
+- **Departures from the method:** the weights volume amendment (`product-answer-checks-hf` instead of
+  `legal-rag-verifier-hf`, which no longer exists in this workspace); the `startup_timeout=1800` fix. No change to
+  the server's arguments or the client.
+

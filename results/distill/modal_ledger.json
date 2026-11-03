@@ -10554,5 +10554,12 @@
   "seconds": 1617,
   "usd": 1.0073,
   "note": "live check server crash-looped: Modal function startup limit 300 s < SGLang CUDA-graph capture; 5 containers, no judge call"
+ },
+ {
+  "run": "stop78-attempt2",
+  "gpu": "L40S",
+  "seconds": 652,
+  "usd": 0.4061,
+  "note": "live check 141 calls + answer-check-mcp smoke 4 calls; startup 406 s; stopped right after"
  }
 ]
